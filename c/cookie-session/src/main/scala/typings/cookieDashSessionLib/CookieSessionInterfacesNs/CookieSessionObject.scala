@@ -21,3 +21,20 @@ trait CookieSessionObject
   var isPopulated: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CookieSessionObject {
+  @scala.inline
+  def apply(
+    StringDictionary: /* propertyName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    isChanged: js.UndefOr[scala.Boolean] = js.undefined,
+    isNew: js.UndefOr[scala.Boolean] = js.undefined,
+    isPopulated: js.UndefOr[scala.Boolean] = js.undefined
+  ): CookieSessionObject = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(isChanged)) __obj.updateDynamic("isChanged")(isChanged)
+    if (!js.isUndefined(isNew)) __obj.updateDynamic("isNew")(isNew)
+    if (!js.isUndefined(isPopulated)) __obj.updateDynamic("isPopulated")(isPopulated)
+    __obj.asInstanceOf[CookieSessionObject]
+  }
+}
+

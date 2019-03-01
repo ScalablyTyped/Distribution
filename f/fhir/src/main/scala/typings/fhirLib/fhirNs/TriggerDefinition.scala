@@ -55,3 +55,43 @@ trait TriggerDefinition extends Element {
   var `type`: code
 }
 
+object TriggerDefinition {
+  @scala.inline
+  def apply(
+    `type`: code,
+    _eventName: Element = null,
+    _eventTimingDate: Element = null,
+    _eventTimingDateTime: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _type: Element = null,
+    eventData: DataRequirement = null,
+    eventName: java.lang.String = null,
+    eventTimingDate: date = null,
+    eventTimingDateTime: dateTime = null,
+    eventTimingReference: Reference = null,
+    eventTimingTiming: Timing = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null
+  ): TriggerDefinition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (_eventName != null) __obj.updateDynamic("_eventName")(_eventName)
+    if (_eventTimingDate != null) __obj.updateDynamic("_eventTimingDate")(_eventTimingDate)
+    if (_eventTimingDateTime != null) __obj.updateDynamic("_eventTimingDateTime")(_eventTimingDateTime)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (eventData != null) __obj.updateDynamic("eventData")(eventData)
+    if (eventName != null) __obj.updateDynamic("eventName")(eventName)
+    if (eventTimingDate != null) __obj.updateDynamic("eventTimingDate")(eventTimingDate)
+    if (eventTimingDateTime != null) __obj.updateDynamic("eventTimingDateTime")(eventTimingDateTime)
+    if (eventTimingReference != null) __obj.updateDynamic("eventTimingReference")(eventTimingReference)
+    if (eventTimingTiming != null) __obj.updateDynamic("eventTimingTiming")(eventTimingTiming)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[TriggerDefinition]
+  }
+}
+

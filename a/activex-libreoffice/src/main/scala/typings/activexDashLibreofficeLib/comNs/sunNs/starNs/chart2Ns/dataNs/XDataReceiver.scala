@@ -61,3 +61,42 @@ trait XDataReceiver
   ): scala.Unit
 }
 
+object XDataReceiver {
+  @scala.inline
+  def apply(
+    RangeHighlighter: XRangeHighlighter,
+    UsedData: XDataSource,
+    UsedRangeRepresentations: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    attachDataProvider: js.Function1[XDataProvider, scala.Unit],
+    attachNumberFormatsSupplier: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier, 
+      scala.Unit
+    ],
+    getRangeHighlighter: js.Function0[XRangeHighlighter],
+    getUsedData: js.Function0[XDataSource],
+    getUsedRangeRepresentations: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setArguments: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XDataReceiver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RangeHighlighter")(RangeHighlighter)
+    __obj.updateDynamic("UsedData")(UsedData)
+    __obj.updateDynamic("UsedRangeRepresentations")(UsedRangeRepresentations)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("attachDataProvider")(attachDataProvider)
+    __obj.updateDynamic("attachNumberFormatsSupplier")(attachNumberFormatsSupplier)
+    __obj.updateDynamic("getRangeHighlighter")(getRangeHighlighter)
+    __obj.updateDynamic("getUsedData")(getUsedData)
+    __obj.updateDynamic("getUsedRangeRepresentations")(getUsedRangeRepresentations)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setArguments")(setArguments)
+    __obj.asInstanceOf[XDataReceiver]
+  }
+}
+

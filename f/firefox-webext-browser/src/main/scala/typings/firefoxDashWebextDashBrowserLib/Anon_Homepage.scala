@@ -10,3 +10,13 @@ trait Anon_Homepage extends js.Object {
   var search_provider: js.UndefOr[Anon_Alternateurls] = js.undefined
 }
 
+object Anon_Homepage {
+  @scala.inline
+  def apply(homepage: java.lang.String = null, search_provider: Anon_Alternateurls = null): Anon_Homepage = {
+    val __obj = js.Dynamic.literal()
+    if (homepage != null) __obj.updateDynamic("homepage")(homepage)
+    if (search_provider != null) __obj.updateDynamic("search_provider")(search_provider)
+    __obj.asInstanceOf[Anon_Homepage]
+  }
+}
+

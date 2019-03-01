@@ -12,3 +12,13 @@ trait CreativeSettings extends js.Object {
   var iFrameHeader: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreativeSettings {
+  @scala.inline
+  def apply(iFrameFooter: java.lang.String = null, iFrameHeader: java.lang.String = null): CreativeSettings = {
+    val __obj = js.Dynamic.literal()
+    if (iFrameFooter != null) __obj.updateDynamic("iFrameFooter")(iFrameFooter)
+    if (iFrameHeader != null) __obj.updateDynamic("iFrameHeader")(iFrameHeader)
+    __obj.asInstanceOf[CreativeSettings]
+  }
+}
+

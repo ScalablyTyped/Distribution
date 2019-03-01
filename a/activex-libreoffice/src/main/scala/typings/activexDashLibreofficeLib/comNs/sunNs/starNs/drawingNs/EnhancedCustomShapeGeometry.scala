@@ -50,3 +50,34 @@ trait EnhancedCustomShapeGeometry extends js.Object {
   var ViewBox: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
 }
 
+object EnhancedCustomShapeGeometry {
+  @scala.inline
+  def apply(
+    AdjustmentValues: activexDashInteropLib.SafeArray[EnhancedCustomShapeAdjustmentValue],
+    Equations: activexDashInteropLib.SafeArray[java.lang.String],
+    Extrusion: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    Handles: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues],
+    MirroredX: scala.Boolean,
+    MirroredY: scala.Boolean,
+    Path: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    TextPath: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    TextRotateAngle: scala.Double,
+    Type: java.lang.String,
+    ViewBox: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
+  ): EnhancedCustomShapeGeometry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AdjustmentValues")(AdjustmentValues)
+    __obj.updateDynamic("Equations")(Equations)
+    __obj.updateDynamic("Extrusion")(Extrusion)
+    __obj.updateDynamic("Handles")(Handles)
+    __obj.updateDynamic("MirroredX")(MirroredX)
+    __obj.updateDynamic("MirroredY")(MirroredY)
+    __obj.updateDynamic("Path")(Path)
+    __obj.updateDynamic("TextPath")(TextPath)
+    __obj.updateDynamic("TextRotateAngle")(TextRotateAngle)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("ViewBox")(ViewBox)
+    __obj.asInstanceOf[EnhancedCustomShapeGeometry]
+  }
+}
+

@@ -7,3 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait ExplicitContext extends Context[TraceId]
 
+object ExplicitContext {
+  @scala.inline
+  def apply(
+    getContext: js.Function0[TraceId],
+    letContext: js.Function2[TraceId, js.Function0[js.Any], js.Any],
+    scoped: js.Function1[js.Function0[js.Any], js.Any],
+    setContext: js.Function1[TraceId, scala.Unit]
+  ): ExplicitContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getContext")(getContext)
+    __obj.updateDynamic("letContext")(letContext)
+    __obj.updateDynamic("scoped")(scoped)
+    __obj.updateDynamic("setContext")(setContext)
+    __obj.asInstanceOf[ExplicitContext]
+  }
+}
+

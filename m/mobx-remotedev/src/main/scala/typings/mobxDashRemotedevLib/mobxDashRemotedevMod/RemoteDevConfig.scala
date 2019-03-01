@@ -24,3 +24,26 @@ trait RemoteDevConfig extends js.Object {
   var remote: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RemoteDevConfig {
+  @scala.inline
+  def apply(
+    filters: js.Object = null,
+    global: js.UndefOr[scala.Boolean] = js.undefined,
+    hostname: java.lang.String = null,
+    name: java.lang.String = null,
+    onlyActions: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Int | scala.Double = null,
+    remote: js.UndefOr[scala.Boolean] = js.undefined
+  ): RemoteDevConfig = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(onlyActions)) __obj.updateDynamic("onlyActions")(onlyActions)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(remote)) __obj.updateDynamic("remote")(remote)
+    __obj.asInstanceOf[RemoteDevConfig]
+  }
+}
+

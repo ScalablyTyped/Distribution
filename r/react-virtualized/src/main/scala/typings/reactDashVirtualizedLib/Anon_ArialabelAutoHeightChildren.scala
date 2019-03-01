@@ -193,3 +193,114 @@ trait Anon_ArialabelAutoHeightChildren extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ArialabelAutoHeightChildren {
+  @scala.inline
+  def apply(
+    headerHeight: scala.Double,
+    rowCount: scala.Double,
+    rowHeight: scala.Double | (js.Function1[/* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, scala.Double]),
+    `aria-label`: java.lang.String = null,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    deferredMeasurementCache: reactDashVirtualizedLib.distEsCellMeasurerMod.CellMeasurerCache = null,
+    disableHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    estimatedRowSize: scala.Int | scala.Double = null,
+    gridClassName: java.lang.String = null,
+    gridStyle: js.Any = null,
+    headerClassName: java.lang.String = null,
+    headerRowRenderer: reactDashVirtualizedLib.distEsTableMod.TableHeaderRowRenderer = null,
+    headerStyle: js.Any = null,
+    height: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    noRowsRenderer: js.Function0[scala.Unit] = null,
+    onHeaderClick: js.Function1[
+      /* params */ reactDashVirtualizedLib.distEsTableMod.HeaderMouseEventHandlerParams, 
+      scala.Unit
+    ] = null,
+    onRowClick: js.Function1[
+      /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+      scala.Unit
+    ] = null,
+    onRowDoubleClick: js.Function1[
+      /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+      scala.Unit
+    ] = null,
+    onRowMouseOut: js.Function1[
+      /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+      scala.Unit
+    ] = null,
+    onRowMouseOver: js.Function1[
+      /* info */ reactDashVirtualizedLib.distEsTableMod.RowMouseEventHandlerParams, 
+      scala.Unit
+    ] = null,
+    onRowsRendered: js.Function1[
+      /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.IndexRange with reactDashVirtualizedLib.reactDashVirtualizedMod.OverscanIndexRange, 
+      scala.Unit
+    ] = null,
+    onScroll: js.Function1[
+      /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.ScrollEventData, 
+      scala.Unit
+    ] = null,
+    overscanRowCount: scala.Int | scala.Double = null,
+    rowClassName: java.lang.String | (js.Function1[/* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, java.lang.String]) = null,
+    rowGetter: js.Function1[/* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, _] = null,
+    rowRenderer: reactDashVirtualizedLib.distEsTableMod.TableRowRenderer = null,
+    rowStyle: reactLib.reactMod.ReactNs.CSSProperties | (js.Function1[
+      /* info */ reactDashVirtualizedLib.reactDashVirtualizedMod.Index, 
+      reactLib.reactMod.ReactNs.CSSProperties
+    ]) = null,
+    scrollToAlignment: java.lang.String = null,
+    scrollToIndex: scala.Int | scala.Double = null,
+    scrollTop: scala.Int | scala.Double = null,
+    sort: js.Function1[/* info */ Anon_SortBy, scala.Unit] = null,
+    sortBy: java.lang.String = null,
+    sortDirection: reactDashVirtualizedLib.distEsTableMod.SortDirectionType = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tabIndex: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_ArialabelAutoHeightChildren = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("headerHeight")(headerHeight)
+    __obj.updateDynamic("rowCount")(rowCount)
+    __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (deferredMeasurementCache != null) __obj.updateDynamic("deferredMeasurementCache")(deferredMeasurementCache)
+    if (!js.isUndefined(disableHeader)) __obj.updateDynamic("disableHeader")(disableHeader)
+    if (estimatedRowSize != null) __obj.updateDynamic("estimatedRowSize")(estimatedRowSize.asInstanceOf[js.Any])
+    if (gridClassName != null) __obj.updateDynamic("gridClassName")(gridClassName)
+    if (gridStyle != null) __obj.updateDynamic("gridStyle")(gridStyle)
+    if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName)
+    if (headerRowRenderer != null) __obj.updateDynamic("headerRowRenderer")(headerRowRenderer)
+    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (noRowsRenderer != null) __obj.updateDynamic("noRowsRenderer")(noRowsRenderer)
+    if (onHeaderClick != null) __obj.updateDynamic("onHeaderClick")(onHeaderClick)
+    if (onRowClick != null) __obj.updateDynamic("onRowClick")(onRowClick)
+    if (onRowDoubleClick != null) __obj.updateDynamic("onRowDoubleClick")(onRowDoubleClick)
+    if (onRowMouseOut != null) __obj.updateDynamic("onRowMouseOut")(onRowMouseOut)
+    if (onRowMouseOver != null) __obj.updateDynamic("onRowMouseOver")(onRowMouseOver)
+    if (onRowsRendered != null) __obj.updateDynamic("onRowsRendered")(onRowsRendered)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (overscanRowCount != null) __obj.updateDynamic("overscanRowCount")(overscanRowCount.asInstanceOf[js.Any])
+    if (rowClassName != null) __obj.updateDynamic("rowClassName")(rowClassName.asInstanceOf[js.Any])
+    if (rowGetter != null) __obj.updateDynamic("rowGetter")(rowGetter)
+    if (rowRenderer != null) __obj.updateDynamic("rowRenderer")(rowRenderer)
+    if (rowStyle != null) __obj.updateDynamic("rowStyle")(rowStyle.asInstanceOf[js.Any])
+    if (scrollToAlignment != null) __obj.updateDynamic("scrollToAlignment")(scrollToAlignment)
+    if (scrollToIndex != null) __obj.updateDynamic("scrollToIndex")(scrollToIndex.asInstanceOf[js.Any])
+    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
+    if (sortDirection != null) __obj.updateDynamic("sortDirection")(sortDirection)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ArialabelAutoHeightChildren]
+  }
+}
+

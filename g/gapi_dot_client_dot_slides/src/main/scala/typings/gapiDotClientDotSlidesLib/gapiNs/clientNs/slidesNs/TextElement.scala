@@ -39,3 +39,22 @@ trait TextElement extends js.Object {
   var textRun: js.UndefOr[TextRun] = js.undefined
 }
 
+object TextElement {
+  @scala.inline
+  def apply(
+    autoText: AutoText = null,
+    endIndex: scala.Int | scala.Double = null,
+    paragraphMarker: ParagraphMarker = null,
+    startIndex: scala.Int | scala.Double = null,
+    textRun: TextRun = null
+  ): TextElement = {
+    val __obj = js.Dynamic.literal()
+    if (autoText != null) __obj.updateDynamic("autoText")(autoText)
+    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex.asInstanceOf[js.Any])
+    if (paragraphMarker != null) __obj.updateDynamic("paragraphMarker")(paragraphMarker)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (textRun != null) __obj.updateDynamic("textRun")(textRun)
+    __obj.asInstanceOf[TextElement]
+  }
+}
+

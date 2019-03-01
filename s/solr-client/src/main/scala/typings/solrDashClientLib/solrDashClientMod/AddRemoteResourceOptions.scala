@@ -12,3 +12,20 @@ trait AddRemoteResourceOptions extends js.Object {
   var path: java.lang.String
 }
 
+object AddRemoteResourceOptions {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String,
+    format: java.lang.String,
+    parameters: js.Object,
+    path: java.lang.String
+  ): AddRemoteResourceOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[AddRemoteResourceOptions]
+  }
+}
+

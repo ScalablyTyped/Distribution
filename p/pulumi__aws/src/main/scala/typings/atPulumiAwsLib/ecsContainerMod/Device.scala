@@ -11,3 +11,18 @@ trait Device extends js.Object {
   var permissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    hostPath: java.lang.String,
+    containerPath: java.lang.String = null,
+    permissions: js.Array[java.lang.String] = null
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hostPath")(hostPath)
+    if (containerPath != null) __obj.updateDynamic("containerPath")(containerPath)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[Device]
+  }
+}
+

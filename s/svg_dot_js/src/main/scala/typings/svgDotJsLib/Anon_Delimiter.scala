@@ -26,3 +26,48 @@ trait Anon_Delimiter extends js.Object {
   var whitespace: stdLib.RegExp
 }
 
+object Anon_Delimiter {
+  @scala.inline
+  def apply(
+    delimiter: stdLib.RegExp,
+    dots: stdLib.RegExp,
+    hex: stdLib.RegExp,
+    hyphen: stdLib.RegExp,
+    isBlank: stdLib.RegExp,
+    isCss: stdLib.RegExp,
+    isHex: stdLib.RegExp,
+    isImage: stdLib.RegExp,
+    isNumber: stdLib.RegExp,
+    isPathLetter: stdLib.RegExp,
+    isPercent: stdLib.RegExp,
+    isRgb: stdLib.RegExp,
+    numberAndUnit: stdLib.RegExp,
+    pathLetters: stdLib.RegExp,
+    reference: stdLib.RegExp,
+    rgb: stdLib.RegExp,
+    transforms: stdLib.RegExp,
+    whitespace: stdLib.RegExp
+  ): Anon_Delimiter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delimiter")(delimiter)
+    __obj.updateDynamic("dots")(dots)
+    __obj.updateDynamic("hex")(hex)
+    __obj.updateDynamic("hyphen")(hyphen)
+    __obj.updateDynamic("isBlank")(isBlank)
+    __obj.updateDynamic("isCss")(isCss)
+    __obj.updateDynamic("isHex")(isHex)
+    __obj.updateDynamic("isImage")(isImage)
+    __obj.updateDynamic("isNumber")(isNumber)
+    __obj.updateDynamic("isPathLetter")(isPathLetter)
+    __obj.updateDynamic("isPercent")(isPercent)
+    __obj.updateDynamic("isRgb")(isRgb)
+    __obj.updateDynamic("numberAndUnit")(numberAndUnit)
+    __obj.updateDynamic("pathLetters")(pathLetters)
+    __obj.updateDynamic("reference")(reference)
+    __obj.updateDynamic("rgb")(rgb)
+    __obj.updateDynamic("transforms")(transforms)
+    __obj.updateDynamic("whitespace")(whitespace)
+    __obj.asInstanceOf[Anon_Delimiter]
+  }
+}
+

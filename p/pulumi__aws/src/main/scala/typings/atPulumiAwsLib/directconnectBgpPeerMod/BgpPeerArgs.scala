@@ -34,3 +34,24 @@ trait BgpPeerArgs extends js.Object {
   val virtualInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object BgpPeerArgs {
+  @scala.inline
+  def apply(
+    addressFamily: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    bgpAsn: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    virtualInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    amazonAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bgpAuthKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customerAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): BgpPeerArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
+    __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
+    __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])
+    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
+    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BgpPeerArgs]
+  }
+}
+

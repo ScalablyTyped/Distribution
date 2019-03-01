@@ -14,3 +14,13 @@ trait TestOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TestOptions {
+  @scala.inline
+  def apply(skip: js.UndefOr[scala.Boolean] = js.undefined, timeout: scala.Int | scala.Double = null): TestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TestOptions]
+  }
+}
+

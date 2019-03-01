@@ -13,3 +13,12 @@ trait LayoutDimensionOptions extends js.Object {
   var nodeDimensionsIncludeLabels: scala.Boolean
 }
 
+object LayoutDimensionOptions {
+  @scala.inline
+  def apply(nodeDimensionsIncludeLabels: scala.Boolean): LayoutDimensionOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nodeDimensionsIncludeLabels")(nodeDimensionsIncludeLabels)
+    __obj.asInstanceOf[LayoutDimensionOptions]
+  }
+}
+

@@ -29,3 +29,18 @@ trait LeaderboardPlayer extends js.Object {
   def getPhoto(): java.lang.String | scala.Null
 }
 
+object LeaderboardPlayer {
+  @scala.inline
+  def apply(
+    getID: js.Function0[java.lang.String | scala.Null],
+    getName: js.Function0[java.lang.String],
+    getPhoto: js.Function0[java.lang.String | scala.Null]
+  ): LeaderboardPlayer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getID")(getID)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getPhoto")(getPhoto)
+    __obj.asInstanceOf[LeaderboardPlayer]
+  }
+}
+

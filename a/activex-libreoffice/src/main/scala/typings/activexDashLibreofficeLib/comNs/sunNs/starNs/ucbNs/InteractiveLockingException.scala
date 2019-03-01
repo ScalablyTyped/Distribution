@@ -17,3 +17,20 @@ trait InteractiveLockingException
   var Url: java.lang.String
 }
 
+object InteractiveLockingException {
+  @scala.inline
+  def apply(
+    Classification: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.InteractionClassification,
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Url: java.lang.String
+  ): InteractiveLockingException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Classification")(Classification)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("Url")(Url)
+    __obj.asInstanceOf[InteractiveLockingException]
+  }
+}
+

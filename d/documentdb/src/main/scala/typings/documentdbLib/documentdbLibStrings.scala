@@ -7,88 +7,116 @@ import scala.scalajs.js.annotation._
 
 object documentdbLibStrings {
   @js.native
-  sealed trait All extends js.Object
+  sealed trait All
+    extends documentdbLib.documentdbMod.PermissionMode
+       with documentdbLib.documentdbMod.TriggerOperation
   
   @js.native
-  sealed trait BoundedStaleness extends js.Object
+  sealed trait BoundedStaleness
+    extends documentdbLib.documentdbMod.ConsistencyLevel
   
   @js.native
-  sealed trait Buffered extends js.Object
+  sealed trait Buffered
+    extends documentdbLib.documentdbMod.MediaReadMode
   
   @js.native
-  sealed trait Consistent extends js.Object
+  sealed trait Consistent
+    extends documentdbLib.documentdbMod.IndexingMode
   
   @js.native
-  sealed trait Create extends js.Object
+  sealed trait Create
+    extends documentdbLib.documentdbMod.TriggerOperation
   
   @js.native
-  sealed trait Delete extends js.Object
+  sealed trait Delete
+    extends documentdbLib.documentdbMod.TriggerOperation
   
   @js.native
-  sealed trait Eventual extends js.Object
+  sealed trait Eventual
+    extends documentdbLib.documentdbMod.ConsistencyLevel
   
   @js.native
-  sealed trait Hash extends js.Object
+  sealed trait Hash
+    extends documentdbLib.documentdbMod.IndexKind
   
   @js.native
   sealed trait Javascript extends js.Object
   
   @js.native
-  sealed trait Lazy extends js.Object
+  sealed trait Lazy
+    extends documentdbLib.documentdbMod.IndexingMode
   
   @js.native
-  sealed trait None extends js.Object
+  sealed trait None
+    extends documentdbLib.documentdbMod.PermissionMode
   
   @js.native
-  sealed trait Post extends js.Object
+  sealed trait Post
+    extends documentdbLib.documentdbMod.TriggerType
   
   @js.native
-  sealed trait Pre extends js.Object
+  sealed trait Pre
+    extends documentdbLib.documentdbMod.TriggerType
   
   @js.native
-  sealed trait Range extends js.Object
+  sealed trait Range
+    extends documentdbLib.documentdbMod.IndexKind
   
   @js.native
-  sealed trait Read extends js.Object
+  sealed trait Read
+    extends documentdbLib.documentdbMod.PermissionMode
   
   @js.native
-  sealed trait Replace extends js.Object
+  sealed trait Replace
+    extends documentdbLib.documentdbMod.TriggerOperation
   
   @js.native
-  sealed trait Session extends js.Object
+  sealed trait Session
+    extends documentdbLib.documentdbMod.ConsistencyLevel
   
   @js.native
-  sealed trait Spatial extends js.Object
+  sealed trait Spatial
+    extends documentdbLib.documentdbMod.IndexKind
   
   @js.native
-  sealed trait Streamed extends js.Object
+  sealed trait Streamed
+    extends documentdbLib.documentdbMod.MediaReadMode
   
   @js.native
-  sealed trait Strong extends js.Object
+  sealed trait Strong
+    extends documentdbLib.documentdbMod.ConsistencyLevel
   
   @js.native
-  sealed trait Update extends js.Object
+  sealed trait Update
+    extends documentdbLib.documentdbMod.TriggerOperation
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends documentdbLib.documentdbMod.TriggerOperation
   
   @js.native
-  sealed trait create extends js.Object
+  sealed trait create
+    extends documentdbLib.documentdbMod.TriggerOperation
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends documentdbLib.documentdbMod.TriggerOperation
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post
+    extends documentdbLib.documentdbMod.TriggerType
   
   @js.native
-  sealed trait pre extends js.Object
+  sealed trait pre
+    extends documentdbLib.documentdbMod.TriggerType
   
   @js.native
-  sealed trait replace extends js.Object
+  sealed trait replace
+    extends documentdbLib.documentdbMod.TriggerOperation
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update
+    extends documentdbLib.documentdbMod.TriggerOperation
   
   @scala.inline
   def All: All = "All".asInstanceOf[All]

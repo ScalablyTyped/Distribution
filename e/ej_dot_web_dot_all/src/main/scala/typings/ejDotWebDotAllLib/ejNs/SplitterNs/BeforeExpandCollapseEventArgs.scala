@@ -26,3 +26,24 @@ trait BeforeExpandCollapseEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeExpandCollapseEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsed: js.Any = null,
+    expanded: js.Any = null,
+    model: Model = null,
+    splitbarIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): BeforeExpandCollapseEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (splitbarIndex != null) __obj.updateDynamic("splitbarIndex")(splitbarIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeExpandCollapseEventArgs]
+  }
+}
+

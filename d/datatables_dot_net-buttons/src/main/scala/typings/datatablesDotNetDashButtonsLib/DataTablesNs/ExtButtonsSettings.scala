@@ -9,3 +9,12 @@ trait ExtButtonsSettings extends js.Object {
   var collection: ExtButtonsCollectionSettings
 }
 
+object ExtButtonsSettings {
+  @scala.inline
+  def apply(collection: ExtButtonsCollectionSettings): ExtButtonsSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collection")(collection)
+    __obj.asInstanceOf[ExtButtonsSettings]
+  }
+}
+

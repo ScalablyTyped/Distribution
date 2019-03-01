@@ -74,3 +74,30 @@ trait ChartLegendUpdateData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartLegendUpdateData {
+  @scala.inline
+  def apply(
+    format: ChartLegendFormatUpdateData = null,
+    height: scala.Int | scala.Double = null,
+    left: scala.Int | scala.Double = null,
+    overlay: js.UndefOr[scala.Boolean] = js.undefined,
+    position: officeDashJsLib.ExcelNs.ChartLegendPosition | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.Top | officeDashJsLib.officeDashJsLibStrings.Bottom | officeDashJsLib.officeDashJsLibStrings.Left | officeDashJsLib.officeDashJsLibStrings.Right | officeDashJsLib.officeDashJsLibStrings.Corner | officeDashJsLib.officeDashJsLibStrings.Custom = null,
+    showShadow: js.UndefOr[scala.Boolean] = js.undefined,
+    top: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): ChartLegendUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay)) __obj.updateDynamic("overlay")(overlay)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartLegendUpdateData]
+  }
+}
+

@@ -37,3 +37,36 @@ trait IHTMLSelectProps
   var value_IHTMLSelectProps: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IHTMLSelectProps {
+  @scala.inline
+  def apply(
+    IElementRefProps: atBlueprintjsCoreLib.libEsmComponentsHtmlHtmlMod.IElementRefProps[reactLib.HTMLSelectElement] = null,
+    SelectHTMLAttributes: reactLib.reactMod.ReactNs.SelectHTMLAttributes[reactLib.HTMLSelectElement] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    iconProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsIconIconMod.IIconProps] = null,
+    large: js.UndefOr[scala.Boolean] = js.undefined,
+    minimal: js.UndefOr[scala.Boolean] = js.undefined,
+    multiple: js.UndefOr[scala.Nothing] = js.undefined,
+    onChange: reactLib.reactMod.ReactNs.ChangeEventHandler[reactLib.HTMLSelectElement] = null,
+    options: js.Array[
+      java.lang.String | scala.Double | atBlueprintjsCoreLib.libEsmCommonPropsMod.IOptionProps
+    ] = null,
+    value: java.lang.String | scala.Double = null
+  ): IHTMLSelectProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IElementRefProps)
+    js.Dynamic.global.Object.assign(__obj, SelectHTMLAttributes)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (iconProps != null) __obj.updateDynamic("iconProps")(iconProps)
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IHTMLSelectProps]
+  }
+}
+

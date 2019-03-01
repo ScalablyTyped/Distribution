@@ -121,3 +121,89 @@ trait XLocale
   def setDefault(newLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): scala.Unit
 }
 
+object XLocale {
+  @scala.inline
+  def apply(
+    AvailableLocales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    Default: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    ISOCountries: activexDashInteropLib.SafeArray[java.lang.String],
+    ISOLanguages: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    create: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale
+    ],
+    equals: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean
+    ],
+    getAvailableLocales: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    getDefault: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getDisplayCountry: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getDisplayCountry_Default: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getDisplayLanguage: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getDisplayLanguage_Default: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getDisplayName: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getDisplayName_Default: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getDisplayVariant: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ],
+    getDisplayVariant_Default: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getISO3Country: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getISO3Language: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, java.lang.String],
+    getISOCountries: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getISOLanguages: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getLanguagesForCountry: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDefault: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit]
+  ): XLocale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AvailableLocales")(AvailableLocales)
+    __obj.updateDynamic("Default")(Default)
+    __obj.updateDynamic("ISOCountries")(ISOCountries)
+    __obj.updateDynamic("ISOLanguages")(ISOLanguages)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("getAvailableLocales")(getAvailableLocales)
+    __obj.updateDynamic("getDefault")(getDefault)
+    __obj.updateDynamic("getDisplayCountry")(getDisplayCountry)
+    __obj.updateDynamic("getDisplayCountry_Default")(getDisplayCountry_Default)
+    __obj.updateDynamic("getDisplayLanguage")(getDisplayLanguage)
+    __obj.updateDynamic("getDisplayLanguage_Default")(getDisplayLanguage_Default)
+    __obj.updateDynamic("getDisplayName")(getDisplayName)
+    __obj.updateDynamic("getDisplayName_Default")(getDisplayName_Default)
+    __obj.updateDynamic("getDisplayVariant")(getDisplayVariant)
+    __obj.updateDynamic("getDisplayVariant_Default")(getDisplayVariant_Default)
+    __obj.updateDynamic("getISO3Country")(getISO3Country)
+    __obj.updateDynamic("getISO3Language")(getISO3Language)
+    __obj.updateDynamic("getISOCountries")(getISOCountries)
+    __obj.updateDynamic("getISOLanguages")(getISOLanguages)
+    __obj.updateDynamic("getLanguagesForCountry")(getLanguagesForCountry)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDefault")(setDefault)
+    __obj.asInstanceOf[XLocale]
+  }
+}
+

@@ -58,3 +58,28 @@ trait CreateDomainOptions extends js.Object {
   var useLoaderExtensions: js.UndefOr[cqrsDashDomainLib.cqrsDashDomainLibNumbers.`true`] = js.undefined
 }
 
+object CreateDomainOptions {
+  @scala.inline
+  def apply(
+    domainPath: java.lang.String,
+    aggregateLock: cqrsDashDomainLib.Anon_Db = null,
+    commandRejectedEventName: java.lang.String = null,
+    deduplication: cqrsDashDomainLib.Anon_DbHost = null,
+    eventStore: cqrsDashDomainLib.Anon_AuthSource = null,
+    retryOnConcurrencyTimeout: scala.Int | scala.Double = null,
+    snapshotThreshold: scala.Int | scala.Double = null,
+    useLoaderExtensions: cqrsDashDomainLib.cqrsDashDomainLibNumbers.`true` = null
+  ): CreateDomainOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domainPath")(domainPath)
+    if (aggregateLock != null) __obj.updateDynamic("aggregateLock")(aggregateLock)
+    if (commandRejectedEventName != null) __obj.updateDynamic("commandRejectedEventName")(commandRejectedEventName)
+    if (deduplication != null) __obj.updateDynamic("deduplication")(deduplication)
+    if (eventStore != null) __obj.updateDynamic("eventStore")(eventStore)
+    if (retryOnConcurrencyTimeout != null) __obj.updateDynamic("retryOnConcurrencyTimeout")(retryOnConcurrencyTimeout.asInstanceOf[js.Any])
+    if (snapshotThreshold != null) __obj.updateDynamic("snapshotThreshold")(snapshotThreshold.asInstanceOf[js.Any])
+    if (useLoaderExtensions != null) __obj.updateDynamic("useLoaderExtensions")(useLoaderExtensions)
+    __obj.asInstanceOf[CreateDomainOptions]
+  }
+}
+

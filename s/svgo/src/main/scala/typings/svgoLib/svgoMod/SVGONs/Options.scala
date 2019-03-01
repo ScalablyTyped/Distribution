@@ -25,3 +25,24 @@ trait Options extends js.Object {
   var svg2js: js.UndefOr[svgoLib.svgoMod.Svg2JsOptions] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    datauri: svgoLib.svgoLibStrings.base64 | svgoLib.svgoLibStrings.enc | svgoLib.svgoLibStrings.unenc = null,
+    floatPrecision: scala.Int | scala.Double = null,
+    full: js.UndefOr[scala.Boolean] = js.undefined,
+    js2svg: svgoLib.svgoMod.Js2SvgOptions = null,
+    plugins: js.Array[svgoLib.PluginConfig] = null,
+    svg2js: svgoLib.svgoMod.Svg2JsOptions = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (datauri != null) __obj.updateDynamic("datauri")(datauri.asInstanceOf[js.Any])
+    if (floatPrecision != null) __obj.updateDynamic("floatPrecision")(floatPrecision.asInstanceOf[js.Any])
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
+    if (js2svg != null) __obj.updateDynamic("js2svg")(js2svg)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (svg2js != null) __obj.updateDynamic("svg2js")(svg2js)
+    __obj.asInstanceOf[Options]
+  }
+}
+

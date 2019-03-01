@@ -45,3 +45,86 @@ trait Anon_AccountMyWorkResult extends js.Object {
   var WorkItemUpdate: js.Any
 }
 
+object Anon_AccountMyWorkResult {
+  @scala.inline
+  def apply(
+    AccountMyWorkResult: js.Any,
+    AccountRecentActivityWorkItemModel: js.Any,
+    AccountRecentMentionWorkItemModel: js.Any,
+    AccountWorkWorkItemModel: js.Any,
+    CommentSortOrder: Anon_EnumValuesAnonAsc,
+    FieldType: Anon_EnumValuesAnonBooleanDateTimeDoubleGuid,
+    FieldUsage: Anon_EnumValuesAnonNoneTree,
+    GetFieldsExpand: Anon_EnumValuesAnonExtensionFields,
+    LinkChangeType: Anon_EnumValuesAnonCreateRemove,
+    LinkQueryMode: Anon_EnumValuesAnonLinksOneHopDoesNotContain,
+    LogicalOperation: Anon_EnumValuesAnonAND,
+    ProvisioningActionType: Anon_EnumValuesAnonImport,
+    QueryExpand: Anon_EnumValuesAnonAllClauses,
+    QueryHierarchyItem: js.Any,
+    QueryHierarchyItemsResult: js.Any,
+    QueryOption: Anon_EnumValuesAnonDoing,
+    QueryRecursionOption: Anon_EnumValuesAnonChildFirst,
+    QueryResultType: Anon_EnumValuesAnonWorkItem,
+    QueryType: Anon_EnumValuesAnonFlat,
+    ReportingRevisionsExpand: Anon_EnumValuesAnonFieldsNone,
+    ReportingWorkItemLink: js.Any,
+    TemplateType: Anon_EnumValuesAnonGlobalWorkflow,
+    TreeNodeStructureType: Anon_EnumValuesAnonArea,
+    TreeStructureGroup: Anon_EnumValuesAnonAreas,
+    WorkItemClassificationNode: js.Any,
+    WorkItemComment: js.Any,
+    WorkItemComments: js.Any,
+    WorkItemErrorPolicy: Anon_EnumValuesAnonFail,
+    WorkItemExpand: Anon_EnumValuesAnonAllFields,
+    WorkItemField: js.Any,
+    WorkItemHistory: js.Any,
+    WorkItemQueryClause: js.Any,
+    WorkItemQueryResult: js.Any,
+    WorkItemRecentActivityType: Anon_EnumValuesAnonDeleted,
+    WorkItemTypeFieldsExpandLevel: Anon_EnumValuesAnonAllAllowedValues,
+    WorkItemTypeTemplateUpdateModel: js.Any,
+    WorkItemUpdate: js.Any
+  ): Anon_AccountMyWorkResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccountMyWorkResult")(AccountMyWorkResult)
+    __obj.updateDynamic("AccountRecentActivityWorkItemModel")(AccountRecentActivityWorkItemModel)
+    __obj.updateDynamic("AccountRecentMentionWorkItemModel")(AccountRecentMentionWorkItemModel)
+    __obj.updateDynamic("AccountWorkWorkItemModel")(AccountWorkWorkItemModel)
+    __obj.updateDynamic("CommentSortOrder")(CommentSortOrder)
+    __obj.updateDynamic("FieldType")(FieldType)
+    __obj.updateDynamic("FieldUsage")(FieldUsage)
+    __obj.updateDynamic("GetFieldsExpand")(GetFieldsExpand)
+    __obj.updateDynamic("LinkChangeType")(LinkChangeType)
+    __obj.updateDynamic("LinkQueryMode")(LinkQueryMode)
+    __obj.updateDynamic("LogicalOperation")(LogicalOperation)
+    __obj.updateDynamic("ProvisioningActionType")(ProvisioningActionType)
+    __obj.updateDynamic("QueryExpand")(QueryExpand)
+    __obj.updateDynamic("QueryHierarchyItem")(QueryHierarchyItem)
+    __obj.updateDynamic("QueryHierarchyItemsResult")(QueryHierarchyItemsResult)
+    __obj.updateDynamic("QueryOption")(QueryOption)
+    __obj.updateDynamic("QueryRecursionOption")(QueryRecursionOption)
+    __obj.updateDynamic("QueryResultType")(QueryResultType)
+    __obj.updateDynamic("QueryType")(QueryType)
+    __obj.updateDynamic("ReportingRevisionsExpand")(ReportingRevisionsExpand)
+    __obj.updateDynamic("ReportingWorkItemLink")(ReportingWorkItemLink)
+    __obj.updateDynamic("TemplateType")(TemplateType)
+    __obj.updateDynamic("TreeNodeStructureType")(TreeNodeStructureType)
+    __obj.updateDynamic("TreeStructureGroup")(TreeStructureGroup)
+    __obj.updateDynamic("WorkItemClassificationNode")(WorkItemClassificationNode)
+    __obj.updateDynamic("WorkItemComment")(WorkItemComment)
+    __obj.updateDynamic("WorkItemComments")(WorkItemComments)
+    __obj.updateDynamic("WorkItemErrorPolicy")(WorkItemErrorPolicy)
+    __obj.updateDynamic("WorkItemExpand")(WorkItemExpand)
+    __obj.updateDynamic("WorkItemField")(WorkItemField)
+    __obj.updateDynamic("WorkItemHistory")(WorkItemHistory)
+    __obj.updateDynamic("WorkItemQueryClause")(WorkItemQueryClause)
+    __obj.updateDynamic("WorkItemQueryResult")(WorkItemQueryResult)
+    __obj.updateDynamic("WorkItemRecentActivityType")(WorkItemRecentActivityType)
+    __obj.updateDynamic("WorkItemTypeFieldsExpandLevel")(WorkItemTypeFieldsExpandLevel)
+    __obj.updateDynamic("WorkItemTypeTemplateUpdateModel")(WorkItemTypeTemplateUpdateModel)
+    __obj.updateDynamic("WorkItemUpdate")(WorkItemUpdate)
+    __obj.asInstanceOf[Anon_AccountMyWorkResult]
+  }
+}
+

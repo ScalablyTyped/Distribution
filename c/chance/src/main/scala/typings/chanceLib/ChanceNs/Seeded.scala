@@ -9,3 +9,12 @@ trait Seeded extends js.Object {
   var seed: Seed
 }
 
+object Seeded {
+  @scala.inline
+  def apply(seed: Seed): Seeded = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("seed")(seed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Seeded]
+  }
+}
+

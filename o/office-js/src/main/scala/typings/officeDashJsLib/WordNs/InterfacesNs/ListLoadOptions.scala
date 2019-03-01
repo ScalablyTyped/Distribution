@@ -37,3 +37,20 @@ trait ListLoadOptions extends js.Object {
   var levelTypes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ListLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    levelExistences: js.UndefOr[scala.Boolean] = js.undefined,
+    levelTypes: js.UndefOr[scala.Boolean] = js.undefined
+  ): ListLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(levelExistences)) __obj.updateDynamic("levelExistences")(levelExistences)
+    if (!js.isUndefined(levelTypes)) __obj.updateDynamic("levelTypes")(levelTypes)
+    __obj.asInstanceOf[ListLoadOptions]
+  }
+}
+

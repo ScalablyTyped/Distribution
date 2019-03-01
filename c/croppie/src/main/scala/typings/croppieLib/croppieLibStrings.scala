@@ -7,40 +7,50 @@ import scala.scalajs.js.annotation._
 
 object croppieLibStrings {
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends croppieLib.croppieMod.CroppieNs.Type
   
   @js.native
-  sealed trait blob extends js.Object
+  sealed trait blob
+    extends croppieLib.croppieMod.CroppieNs.Type
   
   @js.native
-  sealed trait canvas extends js.Object
+  sealed trait canvas
+    extends croppieLib.croppieMod.CroppieNs.Type
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle
+    extends croppieLib.croppieMod.CroppieNs.CropType
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait html
+    extends croppieLib.croppieMod.CroppieNs.Type
   
   @js.native
-  sealed trait jpeg extends js.Object
+  sealed trait jpeg
+    extends croppieLib.croppieMod.CroppieNs.Format
   
   @js.native
   sealed trait original extends js.Object
   
   @js.native
-  sealed trait png extends js.Object
+  sealed trait png
+    extends croppieLib.croppieMod.CroppieNs.Format
   
   @js.native
-  sealed trait rawcanvas extends js.Object
+  sealed trait rawcanvas
+    extends croppieLib.croppieMod.CroppieNs.Type
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends croppieLib.croppieMod.CroppieNs.CropType
   
   @js.native
   sealed trait viewport extends js.Object
   
   @js.native
-  sealed trait webp extends js.Object
+  sealed trait webp
+    extends croppieLib.croppieMod.CroppieNs.Format
   
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]

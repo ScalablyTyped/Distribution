@@ -10,3 +10,16 @@ trait MarkerOptions extends js.Object {
   var rotate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MarkerOptions {
+  @scala.inline
+  def apply(
+    markerOptions: leafletLib.leafletMod.MarkerOptions = null,
+    rotate: js.UndefOr[scala.Boolean] = js.undefined
+  ): MarkerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (markerOptions != null) __obj.updateDynamic("markerOptions")(markerOptions)
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate)
+    __obj.asInstanceOf[MarkerOptions]
+  }
+}
+

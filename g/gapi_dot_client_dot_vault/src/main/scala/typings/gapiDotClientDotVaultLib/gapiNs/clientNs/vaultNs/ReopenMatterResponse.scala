@@ -10,3 +10,12 @@ trait ReopenMatterResponse extends js.Object {
   var matter: js.UndefOr[Matter] = js.undefined
 }
 
+object ReopenMatterResponse {
+  @scala.inline
+  def apply(matter: Matter = null): ReopenMatterResponse = {
+    val __obj = js.Dynamic.literal()
+    if (matter != null) __obj.updateDynamic("matter")(matter)
+    __obj.asInstanceOf[ReopenMatterResponse]
+  }
+}
+

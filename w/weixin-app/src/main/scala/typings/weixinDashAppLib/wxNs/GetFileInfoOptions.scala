@@ -15,3 +15,22 @@ trait GetFileInfoOptions
   var success_GetFileInfoOptions: js.UndefOr[js.Function1[/* options */ GetFileInfoSuccess, scala.Unit]] = js.undefined
 }
 
+object GetFileInfoOptions {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    digestAlgorithm: java.lang.String = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[/* options */ GetFileInfoSuccess, scala.Unit] = null
+  ): GetFileInfoOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (digestAlgorithm != null) __obj.updateDynamic("digestAlgorithm")(digestAlgorithm)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[GetFileInfoOptions]
+  }
+}
+

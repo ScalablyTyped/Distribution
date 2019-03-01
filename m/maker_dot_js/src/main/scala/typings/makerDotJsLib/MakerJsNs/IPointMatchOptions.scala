@@ -15,3 +15,12 @@ trait IPointMatchOptions extends js.Object {
   var pointMatchingDistance: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IPointMatchOptions {
+  @scala.inline
+  def apply(pointMatchingDistance: scala.Int | scala.Double = null): IPointMatchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPointMatchOptions]
+  }
+}
+

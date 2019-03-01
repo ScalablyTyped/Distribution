@@ -73,3 +73,44 @@ trait RendererOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RendererOptions {
+  @scala.inline
+  def apply(
+    antialias: js.UndefOr[scala.Boolean] = js.undefined,
+    autoResize: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundColor: scala.Int | scala.Double = null,
+    clearBeforeRender: js.UndefOr[scala.Boolean] = js.undefined,
+    context: stdLib.WebGLRenderingContext = null,
+    forceCanvas: js.UndefOr[scala.Boolean] = js.undefined,
+    forceFXAA: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    legacy: js.UndefOr[scala.Boolean] = js.undefined,
+    powerPreference: pixiDotJsLib.pixiDotJsLibStrings.`high-performance` = null,
+    preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined,
+    resolution: scala.Int | scala.Double = null,
+    roundPixels: js.UndefOr[scala.Boolean] = js.undefined,
+    transparent: js.UndefOr[scala.Boolean] = js.undefined,
+    view: stdLib.HTMLCanvasElement = null,
+    width: scala.Int | scala.Double = null
+  ): RendererOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(clearBeforeRender)) __obj.updateDynamic("clearBeforeRender")(clearBeforeRender)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(forceCanvas)) __obj.updateDynamic("forceCanvas")(forceCanvas)
+    if (!js.isUndefined(forceFXAA)) __obj.updateDynamic("forceFXAA")(forceFXAA)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(legacy)) __obj.updateDynamic("legacy")(legacy)
+    if (powerPreference != null) __obj.updateDynamic("powerPreference")(powerPreference)
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
+    if (resolution != null) __obj.updateDynamic("resolution")(resolution.asInstanceOf[js.Any])
+    if (!js.isUndefined(roundPixels)) __obj.updateDynamic("roundPixels")(roundPixels)
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RendererOptions]
+  }
+}
+

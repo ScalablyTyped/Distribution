@@ -30,3 +30,18 @@ trait DocumentLoadOptions extends js.Object {
   var view: js.UndefOr[DocumentViewLoadOptions] = js.undefined
 }
 
+object DocumentLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    application: ApplicationLoadOptions = null,
+    view: DocumentViewLoadOptions = null
+  ): DocumentLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (application != null) __obj.updateDynamic("application")(application)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[DocumentLoadOptions]
+  }
+}
+

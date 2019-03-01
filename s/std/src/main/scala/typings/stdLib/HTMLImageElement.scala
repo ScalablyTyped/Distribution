@@ -6,7 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait HTMLImageElement extends HTMLElement {
+trait HTMLImageElement
+  extends HTMLElement
+     with HTMLOrSVGImageElement
+     with TexImageSource {
   /**
     * Sets or retrieves how the object is aligned with adjacent text.
     */
@@ -83,7 +86,27 @@ trait HTMLImageElement extends HTMLElement {
   var width: scala.Double = js.native
   val x: scala.Double = js.native
   val y: scala.Double = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: AddEventListenerOptions
+  ): scala.Unit = js.native
   def decode(): js.Promise[scala.Unit] = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): scala.Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
+    options: EventListenerOptions
+  ): scala.Unit = js.native
 }
 
 @JSGlobal("HTMLImageElement")

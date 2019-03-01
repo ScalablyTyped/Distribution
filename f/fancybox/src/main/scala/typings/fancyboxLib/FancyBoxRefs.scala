@@ -16,3 +16,28 @@ trait FancyBoxRefs extends js.Object {
   var toolbar: JQuery
 }
 
+object FancyBoxRefs {
+  @scala.inline
+  def apply(
+    bg: JQuery,
+    caption: JQuery,
+    container: JQuery,
+    infobar: JQuery,
+    inner: JQuery,
+    navigation: JQuery,
+    stage: JQuery,
+    toolbar: JQuery
+  ): FancyBoxRefs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bg")(bg)
+    __obj.updateDynamic("caption")(caption)
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("infobar")(infobar)
+    __obj.updateDynamic("inner")(inner)
+    __obj.updateDynamic("navigation")(navigation)
+    __obj.updateDynamic("stage")(stage)
+    __obj.updateDynamic("toolbar")(toolbar)
+    __obj.asInstanceOf[FancyBoxRefs]
+  }
+}
+

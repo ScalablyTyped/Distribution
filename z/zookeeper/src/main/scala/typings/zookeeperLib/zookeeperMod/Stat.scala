@@ -19,3 +19,34 @@ trait Stat extends js.Object {
   var version: scala.Double
 }
 
+object Stat {
+  @scala.inline
+  def apply(
+    aversion: scala.Double,
+    ctime: scala.Double,
+    cversion: scala.Double,
+    czxid: scala.Double,
+    dataLength: scala.Double,
+    ephemeralOwner: java.lang.String,
+    mtime: scala.Double,
+    mzxid: scala.Double,
+    numChildren: scala.Double,
+    pzxid: scala.Double,
+    version: scala.Double
+  ): Stat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aversion")(aversion)
+    __obj.updateDynamic("ctime")(ctime)
+    __obj.updateDynamic("cversion")(cversion)
+    __obj.updateDynamic("czxid")(czxid)
+    __obj.updateDynamic("dataLength")(dataLength)
+    __obj.updateDynamic("ephemeralOwner")(ephemeralOwner)
+    __obj.updateDynamic("mtime")(mtime)
+    __obj.updateDynamic("mzxid")(mzxid)
+    __obj.updateDynamic("numChildren")(numChildren)
+    __obj.updateDynamic("pzxid")(pzxid)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Stat]
+  }
+}
+

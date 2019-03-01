@@ -13,3 +13,20 @@ trait seriesTypeBase extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object seriesTypeBase {
+  @scala.inline
+  def apply(
+    fill: js.Any = null,
+    fillColor: js.Any = null,
+    lineWidth: scala.Int | scala.Double = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined
+  ): seriesTypeBase = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[seriesTypeBase]
+  }
+}
+

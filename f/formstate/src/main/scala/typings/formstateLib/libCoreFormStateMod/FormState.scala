@@ -40,7 +40,7 @@ class FormState[TValue /* <: ValidatableMapOrArray */] protected ()
     * Does form level validation have an error
     */
   val hasFormError: scala.Boolean = js.native
-  var mode: formstateLib.formstateLibStrings.array | formstateLib.formstateLibStrings.map = js.native
+  var mode: formstateLib.formstateLibStrings.`object` | formstateLib.formstateLibStrings.array | formstateLib.formstateLibStrings.map = js.native
   /**
     * You should only show the form error if there are no field errors
     */

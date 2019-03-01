@@ -13,3 +13,22 @@ trait Anon_BadRequest extends js.Object {
   var unsupportedConflictType: scala.Double
 }
 
+object Anon_BadRequest {
+  @scala.inline
+  def apply(
+    badRequest: scala.Double,
+    invalidResolution: scala.Double,
+    notFound: scala.Double,
+    succeeded: scala.Double,
+    unsupportedConflictType: scala.Double
+  ): Anon_BadRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("badRequest")(badRequest)
+    __obj.updateDynamic("invalidResolution")(invalidResolution)
+    __obj.updateDynamic("notFound")(notFound)
+    __obj.updateDynamic("succeeded")(succeeded)
+    __obj.updateDynamic("unsupportedConflictType")(unsupportedConflictType)
+    __obj.asInstanceOf[Anon_BadRequest]
+  }
+}
+

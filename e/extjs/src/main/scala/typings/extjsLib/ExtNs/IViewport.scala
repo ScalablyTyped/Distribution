@@ -14,3 +14,18 @@ trait IViewport
   var onRender_IViewport: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object IViewport {
+  @scala.inline
+  def apply(
+    IContainer: extjsLib.ExtNs.containerNs.IContainer = null,
+    isViewport: js.UndefOr[scala.Boolean] = js.undefined,
+    onRender: js.Function0[scala.Unit] = null
+  ): IViewport = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(isViewport)) __obj.updateDynamic("isViewport")(isViewport)
+    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    __obj.asInstanceOf[IViewport]
+  }
+}
+

@@ -38,3 +38,22 @@ trait Anon_ExcludePackages extends js.Object {
   var includePaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_ExcludePackages {
+  @scala.inline
+  def apply(
+    excludePackages: js.Array[java.lang.String] = null,
+    factoryFunc: atPulumiAwsLib.serverlessFunctionMod.HandlerFactory = null,
+    func: atPulumiAwsLib.serverlessFunctionMod.Handler = null,
+    includePackages: js.Array[java.lang.String] = null,
+    includePaths: js.Array[java.lang.String] = null
+  ): Anon_ExcludePackages = {
+    val __obj = js.Dynamic.literal()
+    if (excludePackages != null) __obj.updateDynamic("excludePackages")(excludePackages)
+    if (factoryFunc != null) __obj.updateDynamic("factoryFunc")(factoryFunc)
+    if (func != null) __obj.updateDynamic("func")(func)
+    if (includePackages != null) __obj.updateDynamic("includePackages")(includePackages)
+    if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths)
+    __obj.asInstanceOf[Anon_ExcludePackages]
+  }
+}
+

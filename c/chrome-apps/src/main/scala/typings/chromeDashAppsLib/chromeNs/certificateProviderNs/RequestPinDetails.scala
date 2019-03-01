@@ -49,3 +49,34 @@ trait RequestPinDetails extends js.Object {
   var signRequestId: scala.Double
 }
 
+object RequestPinDetails {
+  @scala.inline
+  def apply(
+    signRequestId: scala.Double,
+    attemptsLeft: scala.Int | scala.Double = null,
+    errorType: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_INVALIDPIN, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_INVALIDPIN[keyof chrome-apps.Anon_INVALIDPIN] */ js.Any
+      ]
+    ] = null,
+    requestType: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_PIN, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PIN[keyof chrome-apps.Anon_PIN] */ js.Any
+      ]
+    ] = null
+  ): RequestPinDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("signRequestId")(signRequestId)
+    if (attemptsLeft != null) __obj.updateDynamic("attemptsLeft")(attemptsLeft.asInstanceOf[js.Any])
+    if (errorType != null) __obj.updateDynamic("errorType")(errorType.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestPinDetails]
+  }
+}
+

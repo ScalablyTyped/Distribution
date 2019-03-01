@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object reactDashSplitterDashLayoutLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.TPrimaryIndex
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends reactDashSplitterDashLayoutLib.reactDashSplitterDashLayoutMod.TPrimaryIndex
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

@@ -30,3 +30,56 @@ trait Anon_ClockContextOptions extends js.Object {
   var useDefaultRenderLoop: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ClockContextOptions {
+  @scala.inline
+  def apply(
+    clock: cesiumLib.cesiumMod.CesiumNs.Clock = null,
+    contextOptions: js.Any = null,
+    creditContainer: stdLib.Element | java.lang.String = null,
+    creditViewport: stdLib.Element | java.lang.String = null,
+    globe: cesiumLib.cesiumMod.CesiumNs.Globe = null,
+    imageryProvider: cesiumLib.cesiumMod.CesiumNs.ImageryProvider = null,
+    mapMode2D: cesiumLib.cesiumMod.CesiumNs.MapMode2D = null,
+    mapProjection: cesiumLib.cesiumMod.CesiumNs.MapProjection = null,
+    maximumRenderTimeChange: scala.Int | scala.Double = null,
+    orderIndependentTranslucency: js.UndefOr[scala.Boolean] = js.undefined,
+    requestRenderMode: js.UndefOr[scala.Boolean] = js.undefined,
+    scene3DOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    sceneMode: cesiumLib.cesiumMod.CesiumNs.SceneMode = null,
+    shadows: js.UndefOr[scala.Boolean] = js.undefined,
+    showRenderLoopErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    skyAtmosphere: cesiumLib.cesiumMod.CesiumNs.SkyAtmosphere = null,
+    skyBox: cesiumLib.cesiumMod.CesiumNs.SkyBox = null,
+    targetFrameRate: scala.Int | scala.Double = null,
+    terrainExaggeration: scala.Int | scala.Double = null,
+    terrainProvider: cesiumLib.cesiumMod.CesiumNs.TerrainProvider = null,
+    terrainShadows: cesiumLib.cesiumMod.CesiumNs.ShadowMode = null,
+    useDefaultRenderLoop: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ClockContextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (clock != null) __obj.updateDynamic("clock")(clock)
+    if (contextOptions != null) __obj.updateDynamic("contextOptions")(contextOptions)
+    if (creditContainer != null) __obj.updateDynamic("creditContainer")(creditContainer.asInstanceOf[js.Any])
+    if (creditViewport != null) __obj.updateDynamic("creditViewport")(creditViewport.asInstanceOf[js.Any])
+    if (globe != null) __obj.updateDynamic("globe")(globe)
+    if (imageryProvider != null) __obj.updateDynamic("imageryProvider")(imageryProvider)
+    if (mapMode2D != null) __obj.updateDynamic("mapMode2D")(mapMode2D)
+    if (mapProjection != null) __obj.updateDynamic("mapProjection")(mapProjection)
+    if (maximumRenderTimeChange != null) __obj.updateDynamic("maximumRenderTimeChange")(maximumRenderTimeChange.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderIndependentTranslucency)) __obj.updateDynamic("orderIndependentTranslucency")(orderIndependentTranslucency)
+    if (!js.isUndefined(requestRenderMode)) __obj.updateDynamic("requestRenderMode")(requestRenderMode)
+    if (!js.isUndefined(scene3DOnly)) __obj.updateDynamic("scene3DOnly")(scene3DOnly)
+    if (sceneMode != null) __obj.updateDynamic("sceneMode")(sceneMode)
+    if (!js.isUndefined(shadows)) __obj.updateDynamic("shadows")(shadows)
+    if (!js.isUndefined(showRenderLoopErrors)) __obj.updateDynamic("showRenderLoopErrors")(showRenderLoopErrors)
+    if (skyAtmosphere != null) __obj.updateDynamic("skyAtmosphere")(skyAtmosphere)
+    if (skyBox != null) __obj.updateDynamic("skyBox")(skyBox)
+    if (targetFrameRate != null) __obj.updateDynamic("targetFrameRate")(targetFrameRate.asInstanceOf[js.Any])
+    if (terrainExaggeration != null) __obj.updateDynamic("terrainExaggeration")(terrainExaggeration.asInstanceOf[js.Any])
+    if (terrainProvider != null) __obj.updateDynamic("terrainProvider")(terrainProvider)
+    if (terrainShadows != null) __obj.updateDynamic("terrainShadows")(terrainShadows)
+    if (!js.isUndefined(useDefaultRenderLoop)) __obj.updateDynamic("useDefaultRenderLoop")(useDefaultRenderLoop)
+    __obj.asInstanceOf[Anon_ClockContextOptions]
+  }
+}
+

@@ -47,3 +47,24 @@ trait SagaMonitor extends js.Object {
   var rootSagaStarted: js.UndefOr[js.Function1[/* options */ atReduxDashSagaCoreLib.Anon_Args, scala.Unit]] = js.undefined
 }
 
+object SagaMonitor {
+  @scala.inline
+  def apply(
+    actionDispatched: js.Function1[/* action */ reduxLib.reduxMod.Action[_], scala.Unit] = null,
+    effectCancelled: js.Function1[/* effectId */ scala.Double, scala.Unit] = null,
+    effectRejected: js.Function2[/* effectId */ scala.Double, /* error */ js.Any, scala.Unit] = null,
+    effectResolved: js.Function2[/* effectId */ scala.Double, /* result */ js.Any, scala.Unit] = null,
+    effectTriggered: js.Function1[/* options */ atReduxDashSagaCoreLib.Anon_Effect, scala.Unit] = null,
+    rootSagaStarted: js.Function1[/* options */ atReduxDashSagaCoreLib.Anon_Args, scala.Unit] = null
+  ): SagaMonitor = {
+    val __obj = js.Dynamic.literal()
+    if (actionDispatched != null) __obj.updateDynamic("actionDispatched")(actionDispatched)
+    if (effectCancelled != null) __obj.updateDynamic("effectCancelled")(effectCancelled)
+    if (effectRejected != null) __obj.updateDynamic("effectRejected")(effectRejected)
+    if (effectResolved != null) __obj.updateDynamic("effectResolved")(effectResolved)
+    if (effectTriggered != null) __obj.updateDynamic("effectTriggered")(effectTriggered)
+    if (rootSagaStarted != null) __obj.updateDynamic("rootSagaStarted")(rootSagaStarted)
+    __obj.asInstanceOf[SagaMonitor]
+  }
+}
+

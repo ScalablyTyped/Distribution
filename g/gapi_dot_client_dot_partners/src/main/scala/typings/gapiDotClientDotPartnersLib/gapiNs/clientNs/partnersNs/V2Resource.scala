@@ -20,3 +20,27 @@ trait V2Resource extends js.Object {
   def updateLeads(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp): gapiDotClientLib.gapiNs.clientNs.Request[Lead]
 }
 
+object V2Resource {
+  @scala.inline
+  def apply(
+    getPartnersstatus: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetPartnersStatusResponse]
+    ],
+    updateCompanies: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Company]
+    ],
+    updateLeads: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Lead]
+    ]
+  ): V2Resource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getPartnersstatus")(getPartnersstatus)
+    __obj.updateDynamic("updateCompanies")(updateCompanies)
+    __obj.updateDynamic("updateLeads")(updateLeads)
+    __obj.asInstanceOf[V2Resource]
+  }
+}
+

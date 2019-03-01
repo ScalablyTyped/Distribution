@@ -13,3 +13,22 @@ trait PasswordRealmParams extends js.Object {
   var username: java.lang.String
 }
 
+object PasswordRealmParams {
+  @scala.inline
+  def apply(
+    password: java.lang.String,
+    realm: java.lang.String,
+    username: java.lang.String,
+    audience: java.lang.String = null,
+    scope: java.lang.String = null
+  ): PasswordRealmParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("realm")(realm)
+    __obj.updateDynamic("username")(username)
+    if (audience != null) __obj.updateDynamic("audience")(audience)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[PasswordRealmParams]
+  }
+}
+

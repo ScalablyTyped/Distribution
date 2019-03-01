@@ -30,3 +30,13 @@ trait DataViewMatrixGroupValue extends DataViewTreeNodeValue {
   var levelSourceIndex: scala.Double
 }
 
+object DataViewMatrixGroupValue {
+  @scala.inline
+  def apply(levelSourceIndex: scala.Double, value: PrimitiveValue = null): DataViewMatrixGroupValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("levelSourceIndex")(levelSourceIndex)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataViewMatrixGroupValue]
+  }
+}
+

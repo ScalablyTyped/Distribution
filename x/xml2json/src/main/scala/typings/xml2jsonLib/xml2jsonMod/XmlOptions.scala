@@ -24,3 +24,12 @@ trait XmlOptions extends js.Object {
   var sanitize: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object XmlOptions {
+  @scala.inline
+  def apply(sanitize: js.UndefOr[scala.Boolean] = js.undefined): XmlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)
+    __obj.asInstanceOf[XmlOptions]
+  }
+}
+

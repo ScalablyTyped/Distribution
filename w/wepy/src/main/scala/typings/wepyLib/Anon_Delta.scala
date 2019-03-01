@@ -9,3 +9,12 @@ trait Anon_Delta extends js.Object {
   var delta: scala.Double
 }
 
+object Anon_Delta {
+  @scala.inline
+  def apply(delta: scala.Double): Anon_Delta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delta")(delta)
+    __obj.asInstanceOf[Anon_Delta]
+  }
+}
+

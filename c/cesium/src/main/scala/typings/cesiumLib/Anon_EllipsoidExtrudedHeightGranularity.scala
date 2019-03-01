@@ -15,3 +15,26 @@ trait Anon_EllipsoidExtrudedHeightGranularity extends js.Object {
   var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.VertexFormat] = js.undefined
 }
 
+object Anon_EllipsoidExtrudedHeightGranularity {
+  @scala.inline
+  def apply(
+    polygonHierarchy: js.Any,
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    extrudedHeight: scala.Int | scala.Double = null,
+    granularity: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    perPositionHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
+  ): Anon_EllipsoidExtrudedHeightGranularity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("polygonHierarchy")(polygonHierarchy)
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (extrudedHeight != null) __obj.updateDynamic("extrudedHeight")(extrudedHeight.asInstanceOf[js.Any])
+    if (granularity != null) __obj.updateDynamic("granularity")(granularity.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(perPositionHeight)) __obj.updateDynamic("perPositionHeight")(perPositionHeight)
+    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat)
+    __obj.asInstanceOf[Anon_EllipsoidExtrudedHeightGranularity]
+  }
+}
+

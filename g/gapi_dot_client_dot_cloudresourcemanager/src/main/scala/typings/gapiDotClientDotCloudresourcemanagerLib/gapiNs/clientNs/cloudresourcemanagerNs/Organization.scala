@@ -37,3 +37,22 @@ trait Organization extends js.Object {
   var owner: js.UndefOr[OrganizationOwner] = js.undefined
 }
 
+object Organization {
+  @scala.inline
+  def apply(
+    creationTime: java.lang.String = null,
+    displayName: java.lang.String = null,
+    lifecycleState: java.lang.String = null,
+    name: java.lang.String = null,
+    owner: OrganizationOwner = null
+  ): Organization = {
+    val __obj = js.Dynamic.literal()
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (lifecycleState != null) __obj.updateDynamic("lifecycleState")(lifecycleState)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[Organization]
+  }
+}
+

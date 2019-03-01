@@ -37,3 +37,34 @@ trait subscribeConfig extends baseRequestConfig {
   var onSuccess: js.UndefOr[js.Function1[/* args */ subscribeSuccessArgs, scala.Unit]] = js.undefined
 }
 
+object subscribeConfig {
+  @scala.inline
+  def apply(
+    channel: java.lang.String = null,
+    channels: js.Array[java.lang.String] = null,
+    meta: js.Any = null,
+    onComplete: js.Function1[/* args */ subscribeCompleteArgs, scala.Unit] = null,
+    onFailure: js.Function1[/* args */ subscribeFailureArgs, scala.Unit] = null,
+    onReceive: js.Function1[/* args */ receiveArgs, scala.Unit] = null,
+    onSubscribersChange: js.Function1[/* args */ subscribersChangeArgs, scala.Unit] = null,
+    onSuccess: js.Function1[/* args */ subscribeSuccessArgs, scala.Unit] = null,
+    requestUrl: java.lang.String = null,
+    suppressErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    sync: js.UndefOr[scala.Boolean] = js.undefined
+  ): subscribeConfig = {
+    val __obj = js.Dynamic.literal()
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (onReceive != null) __obj.updateDynamic("onReceive")(onReceive)
+    if (onSubscribersChange != null) __obj.updateDynamic("onSubscribersChange")(onSubscribersChange)
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
+    if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors)
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    __obj.asInstanceOf[subscribeConfig]
+  }
+}
+

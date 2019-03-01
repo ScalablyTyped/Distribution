@@ -11,3 +11,14 @@ trait HashLike extends js.Object {
   var options: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object HashLike {
+  @scala.inline
+  def apply(algorithm: java.lang.String, digest: java.lang.String, options: js.Array[java.lang.String] = null): HashLike = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("algorithm")(algorithm)
+    __obj.updateDynamic("digest")(digest)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[HashLike]
+  }
+}
+

@@ -12,3 +12,12 @@ trait DidChangeWorkspaceFoldersParams extends js.Object {
   var event: WorkspaceFoldersChangeEvent
 }
 
+object DidChangeWorkspaceFoldersParams {
+  @scala.inline
+  def apply(event: WorkspaceFoldersChangeEvent): DidChangeWorkspaceFoldersParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.asInstanceOf[DidChangeWorkspaceFoldersParams]
+  }
+}
+

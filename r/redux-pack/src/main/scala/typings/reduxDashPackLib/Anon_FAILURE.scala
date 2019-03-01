@@ -11,3 +11,18 @@ trait Anon_FAILURE extends js.Object {
   val SUCCESS: reduxDashPackLib.reduxDashPackLibStrings.success
 }
 
+object Anon_FAILURE {
+  @scala.inline
+  def apply(
+    FAILURE: reduxDashPackLib.reduxDashPackLibStrings.failure,
+    START: reduxDashPackLib.reduxDashPackLibStrings.start,
+    SUCCESS: reduxDashPackLib.reduxDashPackLibStrings.success
+  ): Anon_FAILURE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FAILURE")(FAILURE)
+    __obj.updateDynamic("START")(START)
+    __obj.updateDynamic("SUCCESS")(SUCCESS)
+    __obj.asInstanceOf[Anon_FAILURE]
+  }
+}
+

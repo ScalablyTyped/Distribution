@@ -20,3 +20,13 @@ trait Options extends js.Object {
   var wait_FOptions: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(immediate: js.UndefOr[scala.Boolean] = js.undefined, wait: scala.Int | scala.Double = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (wait != null) __obj.updateDynamic("wait")(wait.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

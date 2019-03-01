@@ -91,3 +91,203 @@ trait UnoControlListBoxModel
   override def getPropertySetInfo(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo
 }
 
+object UnoControlListBoxModel {
+  @scala.inline
+  def apply(
+    Align: scala.Double,
+    AllItems: activexDashInteropLib.SafeArray[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
+    ],
+    BackgroundColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Border: scala.Double,
+    BorderColor: scala.Double,
+    DefaultControl: java.lang.String,
+    Dropdown: scala.Boolean,
+    Enabled: scala.Boolean,
+    FontDescriptor: FontDescriptor,
+    FontEmphasisMark: scala.Double,
+    FontRelief: scala.Double,
+    Height: scala.Double,
+    HelpText: java.lang.String,
+    HelpURL: java.lang.String,
+    ItemCount: scala.Double,
+    ItemSeparatorPos: scala.Double,
+    LineCount: scala.Double,
+    MouseWheelBehavior: scala.Double,
+    MultiSelection: scala.Boolean,
+    Name: java.lang.String,
+    PositionX: java.lang.String,
+    PositionY: java.lang.String,
+    Printable: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    ReadOnly: scala.Boolean,
+    SelectedItems: activexDashInteropLib.SafeArray[scala.Double],
+    ServiceName: java.lang.String,
+    Step: scala.Double,
+    StringItemList: activexDashInteropLib.SafeArray[java.lang.String],
+    TabIndex: scala.Double,
+    Tabstop: scala.Boolean,
+    Tag: java.lang.String,
+    TextColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    TextLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    Width: scala.Double,
+    WritingMode: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addItemListListener: js.Function1[XItemListListener, scala.Unit],
+    addPropertiesChangeListener: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    dispose: js.Function0[scala.Unit],
+    firePropertiesChangeEvent: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    getAllItems: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
+      ]
+    ],
+    getItemData: js.Function1[scala.Double, js.Any],
+    getItemImage: js.Function1[scala.Double, java.lang.String],
+    getItemText: js.Function1[scala.Double, java.lang.String],
+    getItemTextAndImage: js.Function1[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[java.lang.String, java.lang.String]
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getServiceName: js.Function0[java.lang.String],
+    insertItem: js.Function3[scala.Double, java.lang.String, java.lang.String, scala.Unit],
+    insertItemImage: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    insertItemText: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    read: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectInputStream, scala.Unit],
+    release: js.Function0[scala.Unit],
+    removeAllItems: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeItem: js.Function1[scala.Double, scala.Unit],
+    removeItemListListener: js.Function1[XItemListListener, scala.Unit],
+    removePropertiesChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setItemData: js.Function2[scala.Double, js.Any, scala.Unit],
+    setItemImage: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setItemText: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setItemTextAndImage: js.Function3[scala.Double, java.lang.String, java.lang.String, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ],
+    write: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XObjectOutputStream, scala.Unit]
+  ): UnoControlListBoxModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Align")(Align)
+    __obj.updateDynamic("AllItems")(AllItems)
+    __obj.updateDynamic("BackgroundColor")(BackgroundColor)
+    __obj.updateDynamic("Border")(Border)
+    __obj.updateDynamic("BorderColor")(BorderColor)
+    __obj.updateDynamic("DefaultControl")(DefaultControl)
+    __obj.updateDynamic("Dropdown")(Dropdown)
+    __obj.updateDynamic("Enabled")(Enabled)
+    __obj.updateDynamic("FontDescriptor")(FontDescriptor)
+    __obj.updateDynamic("FontEmphasisMark")(FontEmphasisMark)
+    __obj.updateDynamic("FontRelief")(FontRelief)
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("HelpText")(HelpText)
+    __obj.updateDynamic("HelpURL")(HelpURL)
+    __obj.updateDynamic("ItemCount")(ItemCount)
+    __obj.updateDynamic("ItemSeparatorPos")(ItemSeparatorPos)
+    __obj.updateDynamic("LineCount")(LineCount)
+    __obj.updateDynamic("MouseWheelBehavior")(MouseWheelBehavior)
+    __obj.updateDynamic("MultiSelection")(MultiSelection)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("PositionX")(PositionX)
+    __obj.updateDynamic("PositionY")(PositionY)
+    __obj.updateDynamic("Printable")(Printable)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("ReadOnly")(ReadOnly)
+    __obj.updateDynamic("SelectedItems")(SelectedItems)
+    __obj.updateDynamic("ServiceName")(ServiceName)
+    __obj.updateDynamic("Step")(Step)
+    __obj.updateDynamic("StringItemList")(StringItemList)
+    __obj.updateDynamic("TabIndex")(TabIndex)
+    __obj.updateDynamic("Tabstop")(Tabstop)
+    __obj.updateDynamic("Tag")(Tag)
+    __obj.updateDynamic("TextColor")(TextColor)
+    __obj.updateDynamic("TextLineColor")(TextLineColor)
+    __obj.updateDynamic("Width")(Width)
+    __obj.updateDynamic("WritingMode")(WritingMode)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addItemListListener")(addItemListListener)
+    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("createClone")(createClone)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
+    __obj.updateDynamic("getAllItems")(getAllItems)
+    __obj.updateDynamic("getItemData")(getItemData)
+    __obj.updateDynamic("getItemImage")(getItemImage)
+    __obj.updateDynamic("getItemText")(getItemText)
+    __obj.updateDynamic("getItemTextAndImage")(getItemTextAndImage)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
+    __obj.updateDynamic("getServiceName")(getServiceName)
+    __obj.updateDynamic("insertItem")(insertItem)
+    __obj.updateDynamic("insertItemImage")(insertItemImage)
+    __obj.updateDynamic("insertItemText")(insertItemText)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeAllItems")(removeAllItems)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removeItem")(removeItem)
+    __obj.updateDynamic("removeItemListListener")(removeItemListListener)
+    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setItemData")(setItemData)
+    __obj.updateDynamic("setItemImage")(setItemImage)
+    __obj.updateDynamic("setItemText")(setItemText)
+    __obj.updateDynamic("setItemTextAndImage")(setItemTextAndImage)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[UnoControlListBoxModel]
+  }
+}
+

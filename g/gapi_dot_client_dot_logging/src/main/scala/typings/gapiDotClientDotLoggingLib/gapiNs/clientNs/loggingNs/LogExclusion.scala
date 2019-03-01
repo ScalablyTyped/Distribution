@@ -26,3 +26,20 @@ trait LogExclusion extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogExclusion {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    filter: java.lang.String = null,
+    name: java.lang.String = null
+  ): LogExclusion = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[LogExclusion]
+  }
+}
+

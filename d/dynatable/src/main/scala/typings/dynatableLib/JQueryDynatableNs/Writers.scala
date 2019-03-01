@@ -87,3 +87,24 @@ trait Writers extends js.Object {
   ] = js.undefined
 }
 
+object Writers {
+  @scala.inline
+  def apply(
+    _attributeWriter: js.Function1[/* record */ js.Any, _] = null,
+    _cellWriter: js.Function2[/* column */ Column, /* record */ js.Any, java.lang.String] = null,
+    _rowWriter: js.Function4[
+      /* rowIndex */ scala.Double, 
+      /* record */ js.Any, 
+      /* columns */ js.Array[Column], 
+      /* cellWriter */ js.Function, 
+      java.lang.String
+    ] = null
+  ): Writers = {
+    val __obj = js.Dynamic.literal()
+    if (_attributeWriter != null) __obj.updateDynamic("_attributeWriter")(_attributeWriter)
+    if (_cellWriter != null) __obj.updateDynamic("_cellWriter")(_cellWriter)
+    if (_rowWriter != null) __obj.updateDynamic("_rowWriter")(_rowWriter)
+    __obj.asInstanceOf[Writers]
+  }
+}
+

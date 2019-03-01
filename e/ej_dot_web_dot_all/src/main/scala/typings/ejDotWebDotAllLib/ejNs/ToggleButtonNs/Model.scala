@@ -96,3 +96,60 @@ trait Model extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    activePrefixIcon: java.lang.String = null,
+    activeSuffixIcon: java.lang.String = null,
+    activeText: java.lang.String = null,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    click: js.Function1[/* e */ ClickEventArgs, scala.Unit] = null,
+    contentType: ejDotWebDotAllLib.ejNs.ContentType | java.lang.String = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    defaultPrefixIcon: java.lang.String = null,
+    defaultSuffixIcon: java.lang.String = null,
+    defaultText: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Double | java.lang.String = null,
+    htmlAttributes: js.Any = null,
+    imagePosition: ejDotWebDotAllLib.ejNs.ImagePosition | java.lang.String = null,
+    preventToggle: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    size: ejDotWebDotAllLib.ejNs.ButtonSize | java.lang.String = null,
+    toggleState: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: ejDotWebDotAllLib.ejNs.ButtonType | java.lang.String = null,
+    width: scala.Double | java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (activePrefixIcon != null) __obj.updateDynamic("activePrefixIcon")(activePrefixIcon)
+    if (activeSuffixIcon != null) __obj.updateDynamic("activeSuffixIcon")(activeSuffixIcon)
+    if (activeText != null) __obj.updateDynamic("activeText")(activeText)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (defaultPrefixIcon != null) __obj.updateDynamic("defaultPrefixIcon")(defaultPrefixIcon)
+    if (defaultSuffixIcon != null) __obj.updateDynamic("defaultSuffixIcon")(defaultSuffixIcon)
+    if (defaultText != null) __obj.updateDynamic("defaultText")(defaultText)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (imagePosition != null) __obj.updateDynamic("imagePosition")(imagePosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventToggle)) __obj.updateDynamic("preventToggle")(preventToggle)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggleState)) __obj.updateDynamic("toggleState")(toggleState)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

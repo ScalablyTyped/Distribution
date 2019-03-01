@@ -10,3 +10,17 @@ trait ProvisioningResource extends js.Object {
   def createAccountTicket(request: gapiDotClientDotAnalyticsLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[AccountTicket]
 }
 
+object ProvisioningResource {
+  @scala.inline
+  def apply(
+    createAccountTicket: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountTicket]
+    ]
+  ): ProvisioningResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createAccountTicket")(createAccountTicket)
+    __obj.asInstanceOf[ProvisioningResource]
+  }
+}
+

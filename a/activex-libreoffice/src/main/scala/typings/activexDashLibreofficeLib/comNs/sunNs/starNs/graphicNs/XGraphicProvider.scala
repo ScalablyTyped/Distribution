@@ -45,3 +45,31 @@ trait XGraphicProvider
   ): scala.Unit
 }
 
+object XGraphicProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryGraphic: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, XGraphic],
+    queryGraphicDescriptor: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    storeGraphic: js.Function2[
+      XGraphic, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      scala.Unit
+    ]
+  ): XGraphicProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryGraphic")(queryGraphic)
+    __obj.updateDynamic("queryGraphicDescriptor")(queryGraphicDescriptor)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("storeGraphic")(storeGraphic)
+    __obj.asInstanceOf[XGraphicProvider]
+  }
+}
+

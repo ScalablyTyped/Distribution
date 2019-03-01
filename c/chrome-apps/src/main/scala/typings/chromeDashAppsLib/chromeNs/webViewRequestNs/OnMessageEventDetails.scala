@@ -38,3 +38,31 @@ trait OnMessageEventDetails extends js.Object {
   var url: java.lang.String
 }
 
+object OnMessageEventDetails {
+  @scala.inline
+  def apply(
+    frameId: chromeDashAppsLib.chromeNs.integer,
+    message: java.lang.String,
+    method: java.lang.String,
+    parentFrameId: chromeDashAppsLib.chromeNs.integer,
+    requestId: java.lang.String,
+    stage: Stage,
+    tabId: chromeDashAppsLib.chromeNs.integer,
+    timeStamp: chromeDashAppsLib.chromeNs.double,
+    `type`: chromeDashAppsLib.chromeNs.webRequestNs.ResourceType,
+    url: java.lang.String
+  ): OnMessageEventDetails = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("frameId")(frameId)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("parentFrameId")(parentFrameId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("stage")(stage)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[OnMessageEventDetails]
+  }
+}
+

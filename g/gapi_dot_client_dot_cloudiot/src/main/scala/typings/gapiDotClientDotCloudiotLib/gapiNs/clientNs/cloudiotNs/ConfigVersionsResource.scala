@@ -13,3 +13,17 @@ trait ConfigVersionsResource extends js.Object {
   def list(request: gapiDotClientDotCloudiotLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListDeviceConfigVersionsResponse]
 }
 
+object ConfigVersionsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDeviceConfigVersionsResponse]
+    ]
+  ): ConfigVersionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ConfigVersionsResource]
+  }
+}
+

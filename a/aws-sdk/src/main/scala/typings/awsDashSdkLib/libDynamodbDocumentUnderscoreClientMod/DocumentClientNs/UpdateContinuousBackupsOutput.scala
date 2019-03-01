@@ -12,3 +12,12 @@ trait UpdateContinuousBackupsOutput extends js.Object {
   var ContinuousBackupsDescription: js.UndefOr[ContinuousBackupsDescription] = js.undefined
 }
 
+object UpdateContinuousBackupsOutput {
+  @scala.inline
+  def apply(ContinuousBackupsDescription: ContinuousBackupsDescription = null): UpdateContinuousBackupsOutput = {
+    val __obj = js.Dynamic.literal()
+    if (ContinuousBackupsDescription != null) __obj.updateDynamic("ContinuousBackupsDescription")(ContinuousBackupsDescription)
+    __obj.asInstanceOf[UpdateContinuousBackupsOutput]
+  }
+}
+

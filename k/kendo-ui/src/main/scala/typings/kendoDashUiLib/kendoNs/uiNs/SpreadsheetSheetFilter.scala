@@ -10,3 +10,13 @@ trait SpreadsheetSheetFilter extends js.Object {
   var ref: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SpreadsheetSheetFilter {
+  @scala.inline
+  def apply(columns: js.Array[SpreadsheetSheetFilterColumn] = null, ref: java.lang.String = null): SpreadsheetSheetFilter = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[SpreadsheetSheetFilter]
+  }
+}
+

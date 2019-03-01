@@ -18,3 +18,22 @@ trait LineBreakUserOptions extends js.Object {
   var forbiddenEndCharacters: java.lang.String
 }
 
+object LineBreakUserOptions {
+  @scala.inline
+  def apply(
+    allowHyphenateEnglish: scala.Boolean,
+    allowPunctuationOutsideMargin: scala.Boolean,
+    applyForbiddenRules: scala.Boolean,
+    forbiddenBeginCharacters: java.lang.String,
+    forbiddenEndCharacters: java.lang.String
+  ): LineBreakUserOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowHyphenateEnglish")(allowHyphenateEnglish)
+    __obj.updateDynamic("allowPunctuationOutsideMargin")(allowPunctuationOutsideMargin)
+    __obj.updateDynamic("applyForbiddenRules")(applyForbiddenRules)
+    __obj.updateDynamic("forbiddenBeginCharacters")(forbiddenBeginCharacters)
+    __obj.updateDynamic("forbiddenEndCharacters")(forbiddenEndCharacters)
+    __obj.asInstanceOf[LineBreakUserOptions]
+  }
+}
+

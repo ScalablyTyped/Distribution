@@ -60,3 +60,26 @@ trait ParagraphData extends js.Object {
   ] = js.undefined
 }
 
+object ParagraphData {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    image: ImageData = null,
+    inkWords: js.Array[InkWordData] = null,
+    paragraphs: js.Array[ParagraphData] = null,
+    richText: RichTextData = null,
+    table: TableData = null,
+    `type`: officeDashJsLib.OneNoteNs.ParagraphType | officeDashJsLib.officeDashJsLibStrings.RichText | officeDashJsLib.officeDashJsLibStrings.Image | officeDashJsLib.officeDashJsLibStrings.Table | officeDashJsLib.officeDashJsLibStrings.Ink | officeDashJsLib.officeDashJsLibStrings.Other = null
+  ): ParagraphData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (inkWords != null) __obj.updateDynamic("inkWords")(inkWords)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (richText != null) __obj.updateDynamic("richText")(richText)
+    if (table != null) __obj.updateDynamic("table")(table)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParagraphData]
+  }
+}
+

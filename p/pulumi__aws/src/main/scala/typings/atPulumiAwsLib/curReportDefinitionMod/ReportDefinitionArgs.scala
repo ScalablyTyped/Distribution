@@ -46,3 +46,30 @@ trait ReportDefinitionArgs extends js.Object {
   val timeUnit: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object ReportDefinitionArgs {
+  @scala.inline
+  def apply(
+    additionalSchemaElements: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    compression: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    format: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    reportName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    s3Bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    s3Region: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    timeUnit: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    additionalArtifacts: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    s3Prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ReportDefinitionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("additionalSchemaElements")(additionalSchemaElements.asInstanceOf[js.Any])
+    __obj.updateDynamic("compression")(compression.asInstanceOf[js.Any])
+    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    __obj.updateDynamic("reportName")(reportName.asInstanceOf[js.Any])
+    __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
+    __obj.updateDynamic("s3Region")(s3Region.asInstanceOf[js.Any])
+    __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
+    if (additionalArtifacts != null) __obj.updateDynamic("additionalArtifacts")(additionalArtifacts.asInstanceOf[js.Any])
+    if (s3Prefix != null) __obj.updateDynamic("s3Prefix")(s3Prefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReportDefinitionArgs]
+  }
+}
+

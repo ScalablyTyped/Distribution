@@ -21,3 +21,22 @@ trait Anon_Key extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    key: java.lang.String = null,
+    rects: js.Array[Anon_Height] = null,
+    secondary_rects: js.Array[Anon_Height] = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (rects != null) __obj.updateDynamic("rects")(rects)
+    if (secondary_rects != null) __obj.updateDynamic("secondary_rects")(secondary_rects)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

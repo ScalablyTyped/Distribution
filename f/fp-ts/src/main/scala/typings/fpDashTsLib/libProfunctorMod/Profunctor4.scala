@@ -14,3 +14,27 @@ trait Profunctor4[F /* <: fpDashTsLib.libHKTMod.URIS4 */]
   ): fpDashTsLib.libHKTMod.Type4[F, X, U, A, D]
 }
 
+object Profunctor4 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS4 */](
+    URI: F,
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]
+    ],
+    promap: js.Function3[
+      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type4[F, js.Any, js.Any, js.Any, js.Any]
+    ]
+  ): Profunctor4[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("promap")(promap)
+    __obj.asInstanceOf[Profunctor4[F]]
+  }
+}
+

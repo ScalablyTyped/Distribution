@@ -15,3 +15,13 @@ trait MetricShortId extends js.Object {
   var shortId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MetricShortId {
+  @scala.inline
+  def apply(metricIndex: scala.Int | scala.Double = null, shortId: java.lang.String = null): MetricShortId = {
+    val __obj = js.Dynamic.literal()
+    if (metricIndex != null) __obj.updateDynamic("metricIndex")(metricIndex.asInstanceOf[js.Any])
+    if (shortId != null) __obj.updateDynamic("shortId")(shortId)
+    __obj.asInstanceOf[MetricShortId]
+  }
+}
+

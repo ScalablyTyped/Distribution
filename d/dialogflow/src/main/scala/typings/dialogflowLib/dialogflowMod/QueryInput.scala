@@ -10,3 +10,13 @@ trait QueryInput extends js.Object {
   var text: js.UndefOr[TextInput] = js.undefined
 }
 
+object QueryInput {
+  @scala.inline
+  def apply(event: EventInput = null, text: TextInput = null): QueryInput = {
+    val __obj = js.Dynamic.literal()
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[QueryInput]
+  }
+}
+

@@ -20,3 +20,30 @@ trait IExtJSCore extends js.Object {
   def requireOk(args: js.Any*): scala.Unit
 }
 
+object IExtJSCore {
+  @scala.inline
+  def apply(
+    Ext: js.Function0[js.Any],
+    clickCQ: js.Function3[java.lang.String, js.Any, js.Function, js.Any],
+    clickComponentQuery: js.Function3[java.lang.String, js.Any, js.Function, js.Any],
+    compositeQuery: js.Function3[java.lang.String, js.Any, scala.Boolean, js.Array[stdLib.HTMLElement]],
+    cq: js.Function1[java.lang.String, js.Any],
+    cq1: js.Function1[java.lang.String, js.Any],
+    getExt: js.Function0[js.Any],
+    knownBugIn: js.Function3[java.lang.String, js.Function, java.lang.String, js.Any],
+    requireOk: js.Function1[/* repeated */ js.Any, scala.Unit]
+  ): IExtJSCore = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Ext")(Ext)
+    __obj.updateDynamic("clickCQ")(clickCQ)
+    __obj.updateDynamic("clickComponentQuery")(clickComponentQuery)
+    __obj.updateDynamic("compositeQuery")(compositeQuery)
+    __obj.updateDynamic("cq")(cq)
+    __obj.updateDynamic("cq1")(cq1)
+    __obj.updateDynamic("getExt")(getExt)
+    __obj.updateDynamic("knownBugIn")(knownBugIn)
+    __obj.updateDynamic("requireOk")(requireOk)
+    __obj.asInstanceOf[IExtJSCore]
+  }
+}
+

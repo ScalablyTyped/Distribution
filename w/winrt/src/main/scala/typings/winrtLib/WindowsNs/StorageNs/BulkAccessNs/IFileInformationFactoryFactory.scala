@@ -30,3 +30,42 @@ trait IFileInformationFactoryFactory extends js.Object {
   ): FileInformationFactory
 }
 
+object IFileInformationFactoryFactory {
+  @scala.inline
+  def apply(
+    createWithMode: js.Function2[
+      winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, 
+      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, 
+      FileInformationFactory
+    ],
+    createWithModeAndSize: js.Function3[
+      winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, 
+      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, 
+      scala.Double, 
+      FileInformationFactory
+    ],
+    createWithModeAndSizeAndOptions: js.Function4[
+      winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, 
+      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, 
+      scala.Double, 
+      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions, 
+      FileInformationFactory
+    ],
+    createWithModeAndSizeAndOptionsAndFlags: js.Function5[
+      winrtLib.WindowsNs.StorageNs.SearchNs.IStorageQueryResultBase, 
+      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailMode, 
+      scala.Double, 
+      winrtLib.WindowsNs.StorageNs.FilePropertiesNs.ThumbnailOptions, 
+      scala.Boolean, 
+      FileInformationFactory
+    ]
+  ): IFileInformationFactoryFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createWithMode")(createWithMode)
+    __obj.updateDynamic("createWithModeAndSize")(createWithModeAndSize)
+    __obj.updateDynamic("createWithModeAndSizeAndOptions")(createWithModeAndSizeAndOptions)
+    __obj.updateDynamic("createWithModeAndSizeAndOptionsAndFlags")(createWithModeAndSizeAndOptionsAndFlags)
+    __obj.asInstanceOf[IFileInformationFactoryFactory]
+  }
+}
+

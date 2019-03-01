@@ -13,3 +13,12 @@ trait FileReference extends js.Object {
   var gcsPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FileReference {
+  @scala.inline
+  def apply(gcsPath: java.lang.String = null): FileReference = {
+    val __obj = js.Dynamic.literal()
+    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath)
+    __obj.asInstanceOf[FileReference]
+  }
+}
+

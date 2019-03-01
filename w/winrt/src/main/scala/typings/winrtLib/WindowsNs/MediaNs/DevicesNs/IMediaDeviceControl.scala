@@ -13,3 +13,22 @@ trait IMediaDeviceControl extends js.Object {
   def trySetValue(value: scala.Double): scala.Boolean
 }
 
+object IMediaDeviceControl {
+  @scala.inline
+  def apply(
+    capabilities: MediaDeviceControlCapabilities,
+    tryGetAuto: js.Function0[winrtLib.Anon_SucceededValueBoolean],
+    tryGetValue: js.Function0[winrtLib.Anon_SucceededValue],
+    trySetAuto: js.Function1[scala.Boolean, scala.Boolean],
+    trySetValue: js.Function1[scala.Double, scala.Boolean]
+  ): IMediaDeviceControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("capabilities")(capabilities)
+    __obj.updateDynamic("tryGetAuto")(tryGetAuto)
+    __obj.updateDynamic("tryGetValue")(tryGetValue)
+    __obj.updateDynamic("trySetAuto")(trySetAuto)
+    __obj.updateDynamic("trySetValue")(trySetValue)
+    __obj.asInstanceOf[IMediaDeviceControl]
+  }
+}
+

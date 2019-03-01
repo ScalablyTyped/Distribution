@@ -15,3 +15,22 @@ trait TimeSeriesResource extends js.Object {
   def list(request: gapiDotClientDotMonitoringLib.Anon_AccesstokenAggregationalignmentPeriod): gapiDotClientLib.gapiNs.clientNs.Request[ListTimeSeriesResponse]
 }
 
+object TimeSeriesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_AccesstokenAggregationalignmentPeriod, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTimeSeriesResponse]
+    ]
+  ): TimeSeriesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[TimeSeriesResource]
+  }
+}
+

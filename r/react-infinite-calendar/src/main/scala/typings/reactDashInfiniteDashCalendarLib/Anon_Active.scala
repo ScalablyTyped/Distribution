@@ -10,3 +10,13 @@ trait Anon_Active extends js.Object {
   var default: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Active {
+  @scala.inline
+  def apply(active: java.lang.String = null, default: java.lang.String = null): Anon_Active = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (default != null) __obj.updateDynamic("default")(default)
+    __obj.asInstanceOf[Anon_Active]
+  }
+}
+

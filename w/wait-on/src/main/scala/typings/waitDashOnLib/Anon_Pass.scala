@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Pass extends js.Object {
+trait Anon_Pass
+  extends waitDashOnLib.waitDashOnMod.waitOnNs.WaitOnAuth {
   /**
     * Alias of password
     */
@@ -14,5 +15,15 @@ trait Anon_Pass extends js.Object {
     * Alias of username
     */
   var user: java.lang.String
+}
+
+object Anon_Pass {
+  @scala.inline
+  def apply(pass: java.lang.String, user: java.lang.String): Anon_Pass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pass")(pass)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[Anon_Pass]
+  }
 }
 

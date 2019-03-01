@@ -29,3 +29,42 @@ trait Identity extends js.Object {
   var uniqueUserId: scala.Double
 }
 
+object Identity {
+  @scala.inline
+  def apply(
+    customDisplayName: java.lang.String,
+    descriptor: IdentityDescriptor,
+    id: java.lang.String,
+    isActive: scala.Boolean,
+    isContainer: scala.Boolean,
+    masterId: java.lang.String,
+    memberIds: js.Array[java.lang.String],
+    memberOf: js.Array[IdentityDescriptor],
+    members: js.Array[IdentityDescriptor],
+    metaTypeId: scala.Double,
+    properties: js.Any,
+    providerDisplayName: java.lang.String,
+    resourceVersion: scala.Double,
+    subjectDescriptor: java.lang.String,
+    uniqueUserId: scala.Double
+  ): Identity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customDisplayName")(customDisplayName)
+    __obj.updateDynamic("descriptor")(descriptor)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("isContainer")(isContainer)
+    __obj.updateDynamic("masterId")(masterId)
+    __obj.updateDynamic("memberIds")(memberIds)
+    __obj.updateDynamic("memberOf")(memberOf)
+    __obj.updateDynamic("members")(members)
+    __obj.updateDynamic("metaTypeId")(metaTypeId)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("providerDisplayName")(providerDisplayName)
+    __obj.updateDynamic("resourceVersion")(resourceVersion)
+    __obj.updateDynamic("subjectDescriptor")(subjectDescriptor)
+    __obj.updateDynamic("uniqueUserId")(uniqueUserId)
+    __obj.asInstanceOf[Identity]
+  }
+}
+

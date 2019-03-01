@@ -48,3 +48,32 @@ trait ReplicationTaskState extends js.Object {
   val targetEndpointArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ReplicationTaskState {
+  @scala.inline
+  def apply(
+    cdcStartTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    migrationType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationInstanceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationTaskArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationTaskId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationTaskSettings: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sourceEndpointArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tableMappings: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    targetEndpointArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ReplicationTaskState = {
+    val __obj = js.Dynamic.literal()
+    if (cdcStartTime != null) __obj.updateDynamic("cdcStartTime")(cdcStartTime.asInstanceOf[js.Any])
+    if (migrationType != null) __obj.updateDynamic("migrationType")(migrationType.asInstanceOf[js.Any])
+    if (replicationInstanceArn != null) __obj.updateDynamic("replicationInstanceArn")(replicationInstanceArn.asInstanceOf[js.Any])
+    if (replicationTaskArn != null) __obj.updateDynamic("replicationTaskArn")(replicationTaskArn.asInstanceOf[js.Any])
+    if (replicationTaskId != null) __obj.updateDynamic("replicationTaskId")(replicationTaskId.asInstanceOf[js.Any])
+    if (replicationTaskSettings != null) __obj.updateDynamic("replicationTaskSettings")(replicationTaskSettings.asInstanceOf[js.Any])
+    if (sourceEndpointArn != null) __obj.updateDynamic("sourceEndpointArn")(sourceEndpointArn.asInstanceOf[js.Any])
+    if (tableMappings != null) __obj.updateDynamic("tableMappings")(tableMappings.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (targetEndpointArn != null) __obj.updateDynamic("targetEndpointArn")(targetEndpointArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReplicationTaskState]
+  }
+}
+

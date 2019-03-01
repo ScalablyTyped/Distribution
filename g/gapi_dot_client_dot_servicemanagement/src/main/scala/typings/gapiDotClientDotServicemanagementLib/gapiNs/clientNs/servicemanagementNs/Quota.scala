@@ -15,3 +15,13 @@ trait Quota extends js.Object {
   var metricRules: js.UndefOr[js.Array[MetricRule]] = js.undefined
 }
 
+object Quota {
+  @scala.inline
+  def apply(limits: js.Array[QuotaLimit] = null, metricRules: js.Array[MetricRule] = null): Quota = {
+    val __obj = js.Dynamic.literal()
+    if (limits != null) __obj.updateDynamic("limits")(limits)
+    if (metricRules != null) __obj.updateDynamic("metricRules")(metricRules)
+    __obj.asInstanceOf[Quota]
+  }
+}
+

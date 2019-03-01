@@ -22,3 +22,13 @@ trait Anon_01 extends js.Object {
   var `1`: js.UndefOr[Anon_CoordItemStyle] = js.undefined
 }
 
+object Anon_01 {
+  @scala.inline
+  def apply(`0`: Anon_CoordItemStyle = null, `1`: Anon_CoordItemStyle = null): Anon_01 = {
+    val __obj = js.Dynamic.literal()
+    if (`0` != null) __obj.updateDynamic("0")(`0`)
+    if (`1` != null) __obj.updateDynamic("1")(`1`)
+    __obj.asInstanceOf[Anon_01]
+  }
+}
+

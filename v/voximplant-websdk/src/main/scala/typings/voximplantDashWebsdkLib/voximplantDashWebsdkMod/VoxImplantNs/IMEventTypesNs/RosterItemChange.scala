@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when roster item changed
 		*/
-trait RosterItemChange extends js.Object {
+trait RosterItemChange
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			*	User display name
   			*/
@@ -29,5 +30,23 @@ trait RosterItemChange extends js.Object {
   			*	Roster item event type. See VoxImplant.RosterItemEvent enum
   			*/
   var `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.RosterItemEvent
+}
+
+object RosterItemChange {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    groups: js.Array[java.lang.String],
+    id: java.lang.String,
+    `type`: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.RosterItemEvent,
+    resource: java.lang.String = null
+  ): RosterItemChange = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("groups")(groups)
+    __obj.updateDynamic("id")(id)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[RosterItemChange]
+  }
 }
 

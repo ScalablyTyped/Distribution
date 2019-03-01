@@ -81,3 +81,32 @@ trait SplitterLayoutProps extends js.Object {
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SplitterLayoutProps {
+  @scala.inline
+  def apply(
+    customClassName: java.lang.String = null,
+    onDragEnd: js.Function0[scala.Unit] = null,
+    onDragStart: js.Function0[scala.Unit] = null,
+    onSecondaryPaneSizeChange: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    percentage: js.UndefOr[scala.Boolean] = js.undefined,
+    primaryIndex: TPrimaryIndex = null,
+    primaryMinSize: scala.Int | scala.Double = null,
+    secondaryInitialSize: scala.Int | scala.Double = null,
+    secondaryMinSize: scala.Int | scala.Double = null,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): SplitterLayoutProps = {
+    val __obj = js.Dynamic.literal()
+    if (customClassName != null) __obj.updateDynamic("customClassName")(customClassName)
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (onSecondaryPaneSizeChange != null) __obj.updateDynamic("onSecondaryPaneSizeChange")(onSecondaryPaneSizeChange)
+    if (!js.isUndefined(percentage)) __obj.updateDynamic("percentage")(percentage)
+    if (primaryIndex != null) __obj.updateDynamic("primaryIndex")(primaryIndex)
+    if (primaryMinSize != null) __obj.updateDynamic("primaryMinSize")(primaryMinSize.asInstanceOf[js.Any])
+    if (secondaryInitialSize != null) __obj.updateDynamic("secondaryInitialSize")(secondaryInitialSize.asInstanceOf[js.Any])
+    if (secondaryMinSize != null) __obj.updateDynamic("secondaryMinSize")(secondaryMinSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[SplitterLayoutProps]
+  }
+}
+

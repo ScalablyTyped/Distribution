@@ -42,3 +42,20 @@ trait Anon_AfterBreaks extends js.Object {
   ] = js.undefined
 }
 
+object Anon_AfterBreaks {
+  @scala.inline
+  def apply(
+    afterBreaks: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    afterSetExtremes: js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit] = null,
+    pointBreak: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    setExtremes: js.Function1[/* event */ highchartsLib.highchartsMod.HighchartsNs.AxisEvent, scala.Unit] = null
+  ): Anon_AfterBreaks = {
+    val __obj = js.Dynamic.literal()
+    if (afterBreaks != null) __obj.updateDynamic("afterBreaks")(afterBreaks)
+    if (afterSetExtremes != null) __obj.updateDynamic("afterSetExtremes")(afterSetExtremes)
+    if (pointBreak != null) __obj.updateDynamic("pointBreak")(pointBreak)
+    if (setExtremes != null) __obj.updateDynamic("setExtremes")(setExtremes)
+    __obj.asInstanceOf[Anon_AfterBreaks]
+  }
+}
+

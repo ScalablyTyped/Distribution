@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait W2Toolbar
   extends W2Common
-     with W2OnClickable {
+     with W2OnClickable
+     with W2Object {
   var items: js.Array[W2Item] = js.native
   var right: java.lang.String = js.native
   var routeData: java.lang.String = js.native

@@ -11,3 +11,16 @@ trait cssClasses
   var FILTER: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip-set--filter`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    CHOICE: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip-set--choice`,
+    FILTER: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip-set--filter`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CHOICE")(CHOICE)
+    __obj.updateDynamic("FILTER")(FILTER)
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

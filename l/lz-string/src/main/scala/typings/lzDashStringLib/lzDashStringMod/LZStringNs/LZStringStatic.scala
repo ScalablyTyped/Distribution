@@ -79,3 +79,32 @@ trait LZStringStatic extends js.Object {
   def decompressFromUint8Array(compressed: stdLib.Uint8Array): java.lang.String
 }
 
+object LZStringStatic {
+  @scala.inline
+  def apply(
+    compress: js.Function1[java.lang.String, java.lang.String],
+    compressToBase64: js.Function1[java.lang.String, java.lang.String],
+    compressToEncodedURIComponent: js.Function1[java.lang.String, java.lang.String],
+    compressToUTF16: js.Function1[java.lang.String, java.lang.String],
+    compressToUint8Array: js.Function1[java.lang.String, stdLib.Uint8Array],
+    decompress: js.Function1[java.lang.String, java.lang.String],
+    decompressFromBase64: js.Function1[java.lang.String, java.lang.String],
+    decompressFromEncodedURIComponent: js.Function1[java.lang.String, java.lang.String],
+    decompressFromUTF16: js.Function1[java.lang.String, java.lang.String],
+    decompressFromUint8Array: js.Function1[stdLib.Uint8Array, java.lang.String]
+  ): LZStringStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compress")(compress)
+    __obj.updateDynamic("compressToBase64")(compressToBase64)
+    __obj.updateDynamic("compressToEncodedURIComponent")(compressToEncodedURIComponent)
+    __obj.updateDynamic("compressToUTF16")(compressToUTF16)
+    __obj.updateDynamic("compressToUint8Array")(compressToUint8Array)
+    __obj.updateDynamic("decompress")(decompress)
+    __obj.updateDynamic("decompressFromBase64")(decompressFromBase64)
+    __obj.updateDynamic("decompressFromEncodedURIComponent")(decompressFromEncodedURIComponent)
+    __obj.updateDynamic("decompressFromUTF16")(decompressFromUTF16)
+    __obj.updateDynamic("decompressFromUint8Array")(decompressFromUint8Array)
+    __obj.asInstanceOf[LZStringStatic]
+  }
+}
+

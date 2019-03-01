@@ -14,3 +14,18 @@ trait GooglePrivacyDlpV2beta1Color extends js.Object {
   var red: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1Color {
+  @scala.inline
+  def apply(
+    blue: scala.Int | scala.Double = null,
+    green: scala.Int | scala.Double = null,
+    red: scala.Int | scala.Double = null
+  ): GooglePrivacyDlpV2beta1Color = {
+    val __obj = js.Dynamic.literal()
+    if (blue != null) __obj.updateDynamic("blue")(blue.asInstanceOf[js.Any])
+    if (green != null) __obj.updateDynamic("green")(green.asInstanceOf[js.Any])
+    if (red != null) __obj.updateDynamic("red")(red.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1Color]
+  }
+}
+

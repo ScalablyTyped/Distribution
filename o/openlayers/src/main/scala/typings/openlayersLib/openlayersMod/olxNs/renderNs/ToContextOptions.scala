@@ -10,3 +10,13 @@ trait ToContextOptions extends js.Object {
   var size: js.UndefOr[openlayersLib.openlayersMod.Size] = js.undefined
 }
 
+object ToContextOptions {
+  @scala.inline
+  def apply(pixelRatio: scala.Int | scala.Double = null, size: openlayersLib.openlayersMod.Size = null): ToContextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[ToContextOptions]
+  }
+}
+

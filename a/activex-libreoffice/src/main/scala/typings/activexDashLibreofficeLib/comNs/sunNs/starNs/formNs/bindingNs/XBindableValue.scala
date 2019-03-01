@@ -25,3 +25,24 @@ trait XBindableValue
   def setValueBinding(aBinding: XValueBinding): scala.Unit
 }
 
+object XBindableValue {
+  @scala.inline
+  def apply(
+    ValueBinding: XValueBinding,
+    acquire: js.Function0[scala.Unit],
+    getValueBinding: js.Function0[XValueBinding],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setValueBinding: js.Function1[XValueBinding, scala.Unit]
+  ): XBindableValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ValueBinding")(ValueBinding)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getValueBinding")(getValueBinding)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setValueBinding")(setValueBinding)
+    __obj.asInstanceOf[XBindableValue]
+  }
+}
+

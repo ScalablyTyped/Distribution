@@ -82,3 +82,52 @@ trait SinonFakeXMLHttpRequest extends js.Object {
   def setResponseHeaders(headers: js.Any): scala.Unit
 }
 
+object SinonFakeXMLHttpRequest {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    autoRespond: js.Function1[scala.Double, scala.Unit],
+    error: js.Function0[scala.Unit],
+    getAllResponseHeaders: js.Function0[js.Any],
+    getResponseHeader: js.Function1[java.lang.String, java.lang.String],
+    method: java.lang.String,
+    onerror: js.Function0[scala.Unit],
+    password: java.lang.String,
+    requestBody: java.lang.String,
+    requestHeaders: js.Any,
+    respond: js.Function3[scala.Double, js.Any, java.lang.String, scala.Unit],
+    responseXML: sinonLib.sinonMod.Document,
+    setResponseBody: js.Function1[java.lang.String, scala.Unit],
+    setResponseHeaders: js.Function1[js.Any, scala.Unit],
+    status: scala.Double,
+    statusText: java.lang.String,
+    upload: SinonFakeUploadProgress,
+    url: java.lang.String,
+    username: java.lang.String,
+    withCredentials: scala.Boolean
+  ): SinonFakeXMLHttpRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("async")(async)
+    __obj.updateDynamic("autoRespond")(autoRespond)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("getAllResponseHeaders")(getAllResponseHeaders)
+    __obj.updateDynamic("getResponseHeader")(getResponseHeader)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("onerror")(onerror)
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("requestBody")(requestBody)
+    __obj.updateDynamic("requestHeaders")(requestHeaders)
+    __obj.updateDynamic("respond")(respond)
+    __obj.updateDynamic("responseXML")(responseXML)
+    __obj.updateDynamic("setResponseBody")(setResponseBody)
+    __obj.updateDynamic("setResponseHeaders")(setResponseHeaders)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("statusText")(statusText)
+    __obj.updateDynamic("upload")(upload)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("username")(username)
+    __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[SinonFakeXMLHttpRequest]
+  }
+}
+

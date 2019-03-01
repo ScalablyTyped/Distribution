@@ -11,3 +11,18 @@ trait KnockoutComputedContext extends js.Object {
   def isInitial(): scala.Boolean
 }
 
+object KnockoutComputedContext {
+  @scala.inline
+  def apply(
+    getDependenciesCount: js.Function0[scala.Double],
+    isInitial: js.Function0[scala.Boolean],
+    isSleeping: scala.Boolean
+  ): KnockoutComputedContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getDependenciesCount")(getDependenciesCount)
+    __obj.updateDynamic("isInitial")(isInitial)
+    __obj.updateDynamic("isSleeping")(isSleeping)
+    __obj.asInstanceOf[KnockoutComputedContext]
+  }
+}
+

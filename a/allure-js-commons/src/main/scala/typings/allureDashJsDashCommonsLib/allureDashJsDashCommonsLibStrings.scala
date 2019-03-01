@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object allureDashJsDashCommonsLibStrings {
   @js.native
-  sealed trait broken extends js.Object
+  sealed trait broken
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
   
   @js.native
-  sealed trait passed extends js.Object
+  sealed trait passed
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
   
   @js.native
-  sealed trait skipped extends js.Object
+  sealed trait skipped
+    extends allureDashJsDashCommonsLib.allureDashJsDashCommonsMod.AllureNs.Status
   
   @scala.inline
   def broken: broken = "broken".asInstanceOf[broken]

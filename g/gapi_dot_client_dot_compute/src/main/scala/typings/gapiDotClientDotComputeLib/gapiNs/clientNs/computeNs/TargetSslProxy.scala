@@ -30,3 +30,30 @@ trait TargetSslProxy extends js.Object {
   var sslCertificates: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TargetSslProxy {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    proxyHeader: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    service: java.lang.String = null,
+    sslCertificates: js.Array[java.lang.String] = null
+  ): TargetSslProxy = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (sslCertificates != null) __obj.updateDynamic("sslCertificates")(sslCertificates)
+    __obj.asInstanceOf[TargetSslProxy]
+  }
+}
+

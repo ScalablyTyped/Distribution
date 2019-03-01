@@ -55,3 +55,28 @@ import scala.scalajs.js.annotation._
   var runtime: js.UndefOr[atPulumiAwsLib.lambdaRuntimesMod.Runtime] = js.undefined
 }
 
+object CallbackFunctionArgs {
+  @scala.inline
+  def apply[E, R](
+    callback: Callback[E, R] = null,
+    callbackFactory: CallbackFactory[E, R] = null,
+    code: js.UndefOr[scala.Nothing] = js.undefined,
+    codePathOptions: atPulumiPulumiLib.runtimeClosureCodePathsMod.CodePathOptions = null,
+    handler: js.UndefOr[scala.Nothing] = js.undefined,
+    policies: js.Array[atPulumiAwsLib.arnMod.ARN] = null,
+    role: atPulumiAwsLib.iamMod.Role = null,
+    runtime: atPulumiAwsLib.lambdaRuntimesMod.Runtime = null
+  ): CallbackFunctionArgs[E, R] = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callbackFactory != null) __obj.updateDynamic("callbackFactory")(callbackFactory)
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code)
+    if (codePathOptions != null) __obj.updateDynamic("codePathOptions")(codePathOptions)
+    if (!js.isUndefined(handler)) __obj.updateDynamic("handler")(handler)
+    if (policies != null) __obj.updateDynamic("policies")(policies)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (runtime != null) __obj.updateDynamic("runtime")(runtime)
+    __obj.asInstanceOf[CallbackFunctionArgs[E, R]]
+  }
+}
+

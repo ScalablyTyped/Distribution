@@ -17,3 +17,18 @@ trait CreateLeadRequest extends js.Object {
   var requestMetadata: js.UndefOr[RequestMetadata] = js.undefined
 }
 
+object CreateLeadRequest {
+  @scala.inline
+  def apply(
+    lead: Lead = null,
+    recaptchaChallenge: RecaptchaChallenge = null,
+    requestMetadata: RequestMetadata = null
+  ): CreateLeadRequest = {
+    val __obj = js.Dynamic.literal()
+    if (lead != null) __obj.updateDynamic("lead")(lead)
+    if (recaptchaChallenge != null) __obj.updateDynamic("recaptchaChallenge")(recaptchaChallenge)
+    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata)
+    __obj.asInstanceOf[CreateLeadRequest]
+  }
+}
+

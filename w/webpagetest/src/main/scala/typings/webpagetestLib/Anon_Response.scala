@@ -9,3 +9,12 @@ trait Anon_Response extends js.Object {
   var response: webpagetestLib.webpagetestMod.Response[Anon_Location]
 }
 
+object Anon_Response {
+  @scala.inline
+  def apply(response: webpagetestLib.webpagetestMod.Response[Anon_Location]): Anon_Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[Anon_Response]
+  }
+}
+

@@ -49,3 +49,43 @@ trait Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatch extend
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatch {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String,
+    `object`: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    generation: java.lang.String = null,
+    ifGenerationMatch: java.lang.String = null,
+    ifGenerationNotMatch: java.lang.String = null,
+    ifMetagenerationMatch: java.lang.String = null,
+    ifMetagenerationNotMatch: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    projection: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null,
+    userProject: java.lang.String = null
+  ): Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatch = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("bucket")(bucket)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (generation != null) __obj.updateDynamic("generation")(generation)
+    if (ifGenerationMatch != null) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch)
+    if (ifGenerationNotMatch != null) __obj.updateDynamic("ifGenerationNotMatch")(ifGenerationNotMatch)
+    if (ifMetagenerationMatch != null) __obj.updateDynamic("ifMetagenerationMatch")(ifMetagenerationMatch)
+    if (ifMetagenerationNotMatch != null) __obj.updateDynamic("ifMetagenerationNotMatch")(ifMetagenerationNotMatch)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    __obj.asInstanceOf[Anon_AltBucketFieldsGenerationIfGenerationMatchIfGenerationNotMatch]
+  }
+}
+

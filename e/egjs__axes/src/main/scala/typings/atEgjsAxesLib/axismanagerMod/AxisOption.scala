@@ -11,3 +11,18 @@ trait AxisOption extends js.Object {
   var range: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object AxisOption {
+  @scala.inline
+  def apply(
+    bounce: scala.Double | js.Array[scala.Double] = null,
+    circular: scala.Boolean | js.Array[scala.Boolean] = null,
+    range: js.Array[scala.Double] = null
+  ): AxisOption = {
+    val __obj = js.Dynamic.literal()
+    if (bounce != null) __obj.updateDynamic("bounce")(bounce.asInstanceOf[js.Any])
+    if (circular != null) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[AxisOption]
+  }
+}
+

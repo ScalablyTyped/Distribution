@@ -32,3 +32,24 @@ trait GroupOptions extends js.Object {
   var revertClone: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GroupOptions {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    pull: scala.Boolean | sortablejsLib.sortablejsLibStrings.clone | (js.Function2[
+      /* to */ sortablejsLib.sortablejsMod.Sortable, 
+      /* from */ sortablejsLib.sortablejsMod.Sortable, 
+      scala.Boolean | java.lang.String
+    ]) = null,
+    put: scala.Boolean | java.lang.String | js.Array[java.lang.String] | (js.Function1[/* to */ sortablejsLib.sortablejsMod.Sortable, scala.Boolean]) = null,
+    revertClone: js.UndefOr[scala.Boolean] = js.undefined
+  ): GroupOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (pull != null) __obj.updateDynamic("pull")(pull.asInstanceOf[js.Any])
+    if (put != null) __obj.updateDynamic("put")(put.asInstanceOf[js.Any])
+    if (!js.isUndefined(revertClone)) __obj.updateDynamic("revertClone")(revertClone)
+    __obj.asInstanceOf[GroupOptions]
+  }
+}
+

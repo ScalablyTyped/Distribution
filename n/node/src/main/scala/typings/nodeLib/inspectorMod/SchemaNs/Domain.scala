@@ -19,3 +19,13 @@ trait Domain extends js.Object {
   var version: java.lang.String
 }
 
+object Domain {
+  @scala.inline
+  def apply(name: java.lang.String, version: java.lang.String): Domain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Domain]
+  }
+}
+

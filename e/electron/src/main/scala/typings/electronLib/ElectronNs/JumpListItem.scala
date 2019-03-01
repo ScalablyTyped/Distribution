@@ -52,3 +52,28 @@ trait JumpListItem extends js.Object {
   ] = js.undefined
 }
 
+object JumpListItem {
+  @scala.inline
+  def apply(
+    args: java.lang.String = null,
+    description: java.lang.String = null,
+    iconIndex: scala.Int | scala.Double = null,
+    iconPath: java.lang.String = null,
+    path: java.lang.String = null,
+    program: java.lang.String = null,
+    title: java.lang.String = null,
+    `type`: electronLib.electronLibStrings.task | electronLib.electronLibStrings.separator | electronLib.electronLibStrings.file = null
+  ): JumpListItem = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (iconIndex != null) __obj.updateDynamic("iconIndex")(iconIndex.asInstanceOf[js.Any])
+    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (program != null) __obj.updateDynamic("program")(program)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JumpListItem]
+  }
+}
+

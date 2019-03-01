@@ -20,3 +20,20 @@ trait ChangeEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChangeEventArgs {
+  @scala.inline
+  def apply(
+    currentPage: scala.Int | scala.Double = null,
+    event: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): ChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ChangeEventArgs]
+  }
+}
+

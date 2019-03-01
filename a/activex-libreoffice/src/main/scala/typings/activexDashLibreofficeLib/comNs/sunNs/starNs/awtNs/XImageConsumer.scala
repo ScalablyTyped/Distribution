@@ -66,3 +66,54 @@ trait XImageConsumer
   ): scala.Unit
 }
 
+object XImageConsumer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    complete: js.Function2[scala.Double, XImageProducer, scala.Unit],
+    init: js.Function2[scala.Double, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setColorModel: js.Function6[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    setPixelsByBytes: js.Function7[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    setPixelsByLongs: js.Function7[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ]
+  ): XImageConsumer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setColorModel")(setColorModel)
+    __obj.updateDynamic("setPixelsByBytes")(setPixelsByBytes)
+    __obj.updateDynamic("setPixelsByLongs")(setPixelsByLongs)
+    __obj.asInstanceOf[XImageConsumer]
+  }
+}
+

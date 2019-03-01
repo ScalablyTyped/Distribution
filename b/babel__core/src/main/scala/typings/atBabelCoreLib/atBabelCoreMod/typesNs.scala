@@ -458,7 +458,7 @@ object typesNs extends js.Object {
   def awaitExpression(argument: atBabelTypesLib.atBabelTypesMod.Expression): atBabelTypesLib.atBabelTypesMod.AwaitExpression = js.native
   def bigIntLiteral(value: java.lang.String): atBabelTypesLib.atBabelTypesMod.BigIntLiteral = js.native
   def binaryExpression(
-    operator: atBabelCoreLib.atBabelCoreLibStrings.`+` | atBabelCoreLib.atBabelCoreLibStrings.`-` | atBabelCoreLib.atBabelCoreLibStrings.`/` | atBabelCoreLib.atBabelCoreLibStrings.`%` | atBabelCoreLib.atBabelCoreLibStrings.`*` | atBabelCoreLib.atBabelCoreLibStrings.`**` | atBabelCoreLib.atBabelCoreLibStrings.`&` | atBabelCoreLib.atBabelCoreLibStrings.`|` | atBabelCoreLib.atBabelCoreLibStrings.`>>` | atBabelCoreLib.atBabelCoreLibStrings.`>>>` | atBabelCoreLib.atBabelCoreLibStrings.`<<` | atBabelCoreLib.atBabelCoreLibStrings.`^` | atBabelCoreLib.atBabelCoreLibStrings.`==` | atBabelCoreLib.atBabelCoreLibStrings.`===` | atBabelCoreLib.atBabelCoreLibStrings.`!=` | atBabelCoreLib.atBabelCoreLibStrings.`!==` | atBabelCoreLib.atBabelCoreLibStrings.in | atBabelCoreLib.atBabelCoreLibStrings.instanceof | atBabelCoreLib.atBabelCoreLibStrings.`>` | atBabelCoreLib.atBabelCoreLibStrings.`<` | atBabelCoreLib.atBabelCoreLibStrings.`>=` | atBabelCoreLib.atBabelCoreLibStrings.`<=`,
+    operator: atBabelCoreLib.atBabelCoreLibStrings.`+` | atBabelCoreLib.atBabelCoreLibStrings.`-` | atBabelCoreLib.atBabelCoreLibStrings.`/` | atBabelCoreLib.atBabelCoreLibStrings.`%` | atBabelCoreLib.atBabelCoreLibStrings.`*` | atBabelCoreLib.atBabelCoreLibStrings.`**` | atBabelCoreLib.atBabelCoreLibStrings.`&` | atBabelCoreLib.atBabelCoreLibStrings.`|` | atBabelCoreLib.atBabelCoreLibStrings.`>>` | atBabelCoreLib.atBabelCoreLibStrings.`>>>` | atBabelCoreLib.atBabelCoreLibStrings.`<<` | atBabelCoreLib.atBabelCoreLibStrings.`_backtick^_backtick` | atBabelCoreLib.atBabelCoreLibStrings.`==` | atBabelCoreLib.atBabelCoreLibStrings.`===` | atBabelCoreLib.atBabelCoreLibStrings.`!=` | atBabelCoreLib.atBabelCoreLibStrings.`!==` | atBabelCoreLib.atBabelCoreLibStrings.in | atBabelCoreLib.atBabelCoreLibStrings.instanceof | atBabelCoreLib.atBabelCoreLibStrings.`>` | atBabelCoreLib.atBabelCoreLibStrings.`<` | atBabelCoreLib.atBabelCoreLibStrings.`>=` | atBabelCoreLib.atBabelCoreLibStrings.`<=`,
     left: atBabelTypesLib.atBabelTypesMod.Expression,
     right: atBabelTypesLib.atBabelTypesMod.Expression
   ): atBabelTypesLib.atBabelTypesMod.BinaryExpression = js.native
@@ -604,52 +604,104 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.ClassDeclaration = js.native
   def classExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ]
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ],
     mixins: js.Any
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ],
+    mixins: js.Any,
+    superTypeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ]
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ],
+    mixins: js.Any
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ],
+    mixins: js.Any,
+    superTypeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
@@ -708,55 +760,85 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: js.UndefOr[scala.Nothing],
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: js.UndefOr[scala.Nothing],
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: js.UndefOr[scala.Nothing],
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ]
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: js.UndefOr[scala.Nothing],
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ],
     mixins: js.Any
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: js.UndefOr[scala.Nothing],
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: js.UndefOr[scala.Nothing],
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: js.UndefOr[scala.Nothing],
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: js.UndefOr[scala.Nothing],
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: js.UndefOr[scala.Nothing],
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ]
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: js.UndefOr[scala.Nothing],
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ],
+    mixins: js.Any
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: js.UndefOr[atBabelTypesLib.atBabelTypesMod.Identifier | scala.Null],
@@ -772,6 +854,28 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: js.UndefOr[scala.Nothing],
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ],
+    mixins: js.Any,
+    superTypeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: js.UndefOr[scala.Nothing],
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ],
+    mixins: js.Any,
+    superTypeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: js.UndefOr[scala.Nothing],
     superClass: scala.Null,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
@@ -824,52 +928,104 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: scala.Null,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: scala.Null,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: scala.Null,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ]
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: scala.Null,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ],
     mixins: js.Any
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: scala.Null,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation
   ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
   def classExpression(
     id: scala.Null,
-    superClass: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    superClass: atBabelTypesLib.atBabelTypesMod.Expression,
     body: atBabelTypesLib.atBabelTypesMod.ClassBody,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
     _implements: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ClassImplements | atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ],
+    mixins: js.Any,
+    superTypeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: scala.Null,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: scala.Null,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: scala.Null,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ]
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: scala.Null,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ],
+    mixins: js.Any
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: scala.Null,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
+    ],
+    mixins: js.Any,
+    superTypeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.ClassExpression = js.native
+  def classExpression(
+    id: scala.Null,
+    superClass: js.UndefOr[scala.Nothing],
+    body: atBabelTypesLib.atBabelTypesMod.ClassBody,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator],
+    _implements: js.Array[
+      atBabelTypesLib.atBabelTypesMod.TSExpressionWithTypeArguments | atBabelTypesLib.atBabelTypesMod.ClassImplements
     ],
     mixins: js.Any,
     superTypeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
@@ -1573,15 +1729,28 @@ object typesNs extends js.Object {
   def exportDefaultDeclaration(declaration: atBabelTypesLib.atBabelTypesMod.TSDeclareFunction): atBabelTypesLib.atBabelTypesMod.ExportDefaultDeclaration = js.native
   def exportDefaultSpecifier(exported: atBabelTypesLib.atBabelTypesMod.Identifier): atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier = js.native
   def exportNamedDeclaration(
-    declaration: atBabelTypesLib.atBabelTypesMod.Declaration | js.UndefOr[scala.Nothing],
+    declaration: atBabelTypesLib.atBabelTypesMod.Declaration,
     specifiers: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier | atBabelTypesLib.atBabelTypesMod.ExportSpecifier
+      atBabelTypesLib.atBabelTypesMod.ExportSpecifier | atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier
     ]
   ): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
   def exportNamedDeclaration(
-    declaration: atBabelTypesLib.atBabelTypesMod.Declaration | js.UndefOr[scala.Nothing],
+    declaration: atBabelTypesLib.atBabelTypesMod.Declaration,
     specifiers: js.Array[
-      atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier | atBabelTypesLib.atBabelTypesMod.ExportSpecifier
+      atBabelTypesLib.atBabelTypesMod.ExportSpecifier | atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier
+    ],
+    source: atBabelTypesLib.atBabelTypesMod.StringLiteral
+  ): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
+  def exportNamedDeclaration(
+    declaration: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[
+      atBabelTypesLib.atBabelTypesMod.ExportSpecifier | atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier
+    ]
+  ): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
+  def exportNamedDeclaration(
+    declaration: js.UndefOr[scala.Nothing],
+    specifiers: js.Array[
+      atBabelTypesLib.atBabelTypesMod.ExportSpecifier | atBabelTypesLib.atBabelTypesMod.ExportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ExportNamespaceSpecifier
     ],
     source: atBabelTypesLib.atBabelTypesMod.StringLiteral
   ): atBabelTypesLib.atBabelTypesMod.ExportNamedDeclaration = js.native
@@ -4163,24 +4332,32 @@ object typesNs extends js.Object {
     decorators: scala.Null,
     typeAnnotation: atBabelTypesLib.atBabelTypesMod.TypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.ObjectPattern = js.native
+  def objectProperty(key: js.Any, value: atBabelTypesLib.atBabelTypesMod.Expression): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(key: js.Any, value: atBabelTypesLib.atBabelTypesMod.Expression, computed: scala.Boolean): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
   def objectProperty(
     key: js.Any,
-    value: atBabelTypesLib.atBabelTypesMod.Expression | atBabelTypesLib.atBabelTypesMod.PatternLike
-  ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
-  def objectProperty(
-    key: js.Any,
-    value: atBabelTypesLib.atBabelTypesMod.Expression | atBabelTypesLib.atBabelTypesMod.PatternLike,
-    computed: scala.Boolean
-  ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
-  def objectProperty(
-    key: js.Any,
-    value: atBabelTypesLib.atBabelTypesMod.Expression | atBabelTypesLib.atBabelTypesMod.PatternLike,
+    value: atBabelTypesLib.atBabelTypesMod.Expression,
     computed: scala.Boolean,
     shorthand: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
   def objectProperty(
     key: js.Any,
-    value: atBabelTypesLib.atBabelTypesMod.Expression | atBabelTypesLib.atBabelTypesMod.PatternLike,
+    value: atBabelTypesLib.atBabelTypesMod.Expression,
+    computed: scala.Boolean,
+    shorthand: scala.Boolean,
+    decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
+  ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(key: js.Any, value: atBabelTypesLib.atBabelTypesMod.PatternLike): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(key: js.Any, value: atBabelTypesLib.atBabelTypesMod.PatternLike, computed: scala.Boolean): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(
+    key: js.Any,
+    value: atBabelTypesLib.atBabelTypesMod.PatternLike,
+    computed: scala.Boolean,
+    shorthand: scala.Boolean
+  ): atBabelTypesLib.atBabelTypesMod.ObjectProperty = js.native
+  def objectProperty(
+    key: js.Any,
+    value: atBabelTypesLib.atBabelTypesMod.PatternLike,
     computed: scala.Boolean,
     shorthand: scala.Boolean,
     decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]
@@ -4701,7 +4878,13 @@ object typesNs extends js.Object {
   def opaqueType(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
-    supertype: atBabelTypesLib.atBabelTypesMod.FlowType | js.UndefOr[scala.Nothing],
+    supertype: atBabelTypesLib.atBabelTypesMod.FlowType,
+    impltype: atBabelTypesLib.atBabelTypesMod.FlowType
+  ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def opaqueType(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
+    supertype: js.UndefOr[scala.Nothing],
     impltype: atBabelTypesLib.atBabelTypesMod.FlowType
   ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
   def opaqueType(
@@ -4713,7 +4896,13 @@ object typesNs extends js.Object {
   def opaqueType(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
-    supertype: atBabelTypesLib.atBabelTypesMod.FlowType | js.UndefOr[scala.Nothing],
+    supertype: atBabelTypesLib.atBabelTypesMod.FlowType,
+    impltype: atBabelTypesLib.atBabelTypesMod.FlowType
+  ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def opaqueType(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    typeParameters: js.UndefOr[scala.Nothing],
+    supertype: js.UndefOr[scala.Nothing],
     impltype: atBabelTypesLib.atBabelTypesMod.FlowType
   ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
   def opaqueType(
@@ -4725,7 +4914,13 @@ object typesNs extends js.Object {
   def opaqueType(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: scala.Null,
-    supertype: atBabelTypesLib.atBabelTypesMod.FlowType | js.UndefOr[scala.Nothing],
+    supertype: atBabelTypesLib.atBabelTypesMod.FlowType,
+    impltype: atBabelTypesLib.atBabelTypesMod.FlowType
+  ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
+  def opaqueType(
+    id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    typeParameters: scala.Null,
+    supertype: js.UndefOr[scala.Nothing],
     impltype: atBabelTypesLib.atBabelTypesMod.FlowType
   ): atBabelTypesLib.atBabelTypesMod.OpaqueType = js.native
   def opaqueType(
@@ -4904,9 +5099,10 @@ object typesNs extends js.Object {
   def stringLiteralTypeAnnotation(value: java.lang.String): atBabelTypesLib.atBabelTypesMod.StringLiteralTypeAnnotation = js.native
   def stringTypeAnnotation(): atBabelTypesLib.atBabelTypesMod.StringTypeAnnotation = js.native
   def switchCase(
-    test: atBabelTypesLib.atBabelTypesMod.Expression | js.UndefOr[scala.Nothing],
+    test: atBabelTypesLib.atBabelTypesMod.Expression,
     consequent: js.Array[atBabelTypesLib.atBabelTypesMod.Statement]
   ): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
+  def switchCase(test: js.UndefOr[scala.Nothing], consequent: js.Array[atBabelTypesLib.atBabelTypesMod.Statement]): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
   def switchCase(test: scala.Null, consequent: js.Array[atBabelTypesLib.atBabelTypesMod.Statement]): atBabelTypesLib.atBabelTypesMod.SwitchCase = js.native
   def switchStatement(
     discriminant: atBabelTypesLib.atBabelTypesMod.Expression,

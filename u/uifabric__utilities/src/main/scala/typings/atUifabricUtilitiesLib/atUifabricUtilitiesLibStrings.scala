@@ -13,10 +13,12 @@ object atUifabricUtilitiesLibStrings {
   sealed trait ISettingsMap extends js.Object
   
   @js.native
-  sealed trait contain extends js.Object
+  sealed trait contain
+    extends atUifabricUtilitiesLib.libMathMod.FitMode
   
   @js.native
-  sealed trait cover extends js.Object
+  sealed trait cover
+    extends atUifabricUtilitiesLib.libMathMod.FitMode
   
   @js.native
   sealed trait `data-no-horizontal-wrap` extends js.Object

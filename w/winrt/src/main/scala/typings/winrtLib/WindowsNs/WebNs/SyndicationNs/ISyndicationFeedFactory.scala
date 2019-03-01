@@ -9,3 +9,19 @@ trait ISyndicationFeedFactory extends js.Object {
   def createSyndicationFeed(title: java.lang.String, subtitle: java.lang.String, uri: winrtLib.WindowsNs.FoundationNs.Uri): SyndicationFeed
 }
 
+object ISyndicationFeedFactory {
+  @scala.inline
+  def apply(
+    createSyndicationFeed: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      SyndicationFeed
+    ]
+  ): ISyndicationFeedFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createSyndicationFeed")(createSyndicationFeed)
+    __obj.asInstanceOf[ISyndicationFeedFactory]
+  }
+}
+

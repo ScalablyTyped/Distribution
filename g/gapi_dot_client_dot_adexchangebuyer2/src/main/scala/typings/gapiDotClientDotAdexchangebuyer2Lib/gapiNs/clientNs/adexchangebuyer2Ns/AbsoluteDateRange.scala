@@ -20,3 +20,13 @@ trait AbsoluteDateRange extends js.Object {
   var startDate: js.UndefOr[Date] = js.undefined
 }
 
+object AbsoluteDateRange {
+  @scala.inline
+  def apply(endDate: Date = null, startDate: Date = null): AbsoluteDateRange = {
+    val __obj = js.Dynamic.literal()
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    __obj.asInstanceOf[AbsoluteDateRange]
+  }
+}
+

@@ -9,3 +9,12 @@ trait NavMenuInstance extends js.Object {
   def addNavItem(navItemDescriptor: NavItemDescriptor): NavItemView
 }
 
+object NavMenuInstance {
+  @scala.inline
+  def apply(addNavItem: js.Function1[NavItemDescriptor, NavItemView]): NavMenuInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addNavItem")(addNavItem)
+    __obj.asInstanceOf[NavMenuInstance]
+  }
+}
+

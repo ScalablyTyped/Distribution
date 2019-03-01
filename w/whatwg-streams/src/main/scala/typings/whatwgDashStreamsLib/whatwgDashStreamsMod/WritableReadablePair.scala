@@ -10,3 +10,13 @@ trait WritableReadablePair[T /* <: WritableStream[_] */, U /* <: ReadableStream[
   var writable: T
 }
 
+object WritableReadablePair {
+  @scala.inline
+  def apply[T /* <: WritableStream[_] */, U /* <: ReadableStream[_] */](readable: U, writable: T): WritableReadablePair[T, U] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("readable")(readable.asInstanceOf[js.Any])
+    __obj.updateDynamic("writable")(writable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WritableReadablePair[T, U]]
+  }
+}
+

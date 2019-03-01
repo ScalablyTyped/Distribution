@@ -12,3 +12,15 @@ trait DateFormat extends js.Object {
   var year: java.lang.String
 }
 
+object DateFormat {
+  @scala.inline
+  def apply(day: java.lang.String, month: java.lang.String, weekday: java.lang.String, year: java.lang.String): DateFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("day")(day)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("weekday")(weekday)
+    __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[DateFormat]
+  }
+}
+

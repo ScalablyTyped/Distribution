@@ -24,3 +24,30 @@ trait IWorkingCopy extends js.Object {
   var uploadDateTime: scala.Double
 }
 
+object IWorkingCopy {
+  @scala.inline
+  def apply(
+    changed: scala.Boolean,
+    id: java.lang.String,
+    isCollaboration: scala.Boolean,
+    members: js.Array[java.lang.String],
+    metaData: IWorkingCopyMetaData,
+    mprFileName: java.lang.String,
+    mprMetaData: IMprMetaData,
+    uploadDateTime: scala.Double,
+    mergeData: ILockData = null
+  ): IWorkingCopy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changed")(changed)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isCollaboration")(isCollaboration)
+    __obj.updateDynamic("members")(members)
+    __obj.updateDynamic("metaData")(metaData)
+    __obj.updateDynamic("mprFileName")(mprFileName)
+    __obj.updateDynamic("mprMetaData")(mprMetaData)
+    __obj.updateDynamic("uploadDateTime")(uploadDateTime)
+    if (mergeData != null) __obj.updateDynamic("mergeData")(mergeData)
+    __obj.asInstanceOf[IWorkingCopy]
+  }
+}
+

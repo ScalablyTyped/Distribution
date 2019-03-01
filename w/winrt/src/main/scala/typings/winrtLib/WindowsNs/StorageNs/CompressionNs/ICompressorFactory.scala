@@ -14,3 +14,21 @@ trait ICompressorFactory extends js.Object {
   ): Compressor
 }
 
+object ICompressorFactory {
+  @scala.inline
+  def apply(
+    createCompressor: js.Function1[winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, Compressor],
+    createCompressorEx: js.Function3[
+      winrtLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, 
+      CompressAlgorithm, 
+      scala.Double, 
+      Compressor
+    ]
+  ): ICompressorFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createCompressor")(createCompressor)
+    __obj.updateDynamic("createCompressorEx")(createCompressorEx)
+    __obj.asInstanceOf[ICompressorFactory]
+  }
+}
+

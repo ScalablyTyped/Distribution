@@ -48,3 +48,22 @@ trait WriteLogEntriesRequest extends js.Object {
   var resource: js.UndefOr[MonitoredResource] = js.undefined
 }
 
+object WriteLogEntriesRequest {
+  @scala.inline
+  def apply(
+    entries: js.Array[LogEntry] = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    logName: java.lang.String = null,
+    partialSuccess: js.UndefOr[scala.Boolean] = js.undefined,
+    resource: MonitoredResource = null
+  ): WriteLogEntriesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (entries != null) __obj.updateDynamic("entries")(entries)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (logName != null) __obj.updateDynamic("logName")(logName)
+    if (!js.isUndefined(partialSuccess)) __obj.updateDynamic("partialSuccess")(partialSuccess)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[WriteLogEntriesRequest]
+  }
+}
+

@@ -40,3 +40,27 @@ trait PackageMetadata extends js.Object {
   var version: PackageVersion
 }
 
+object PackageMetadata {
+  @scala.inline
+  def apply(
+    createdOn: stdLib.Date,
+    downloadUrl: java.lang.String,
+    filename: java.lang.String,
+    hashValue: java.lang.String,
+    infoUrl: java.lang.String,
+    platform: java.lang.String,
+    `type`: java.lang.String,
+    version: PackageVersion
+  ): PackageMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("createdOn")(createdOn)
+    __obj.updateDynamic("downloadUrl")(downloadUrl)
+    __obj.updateDynamic("filename")(filename)
+    __obj.updateDynamic("hashValue")(hashValue)
+    __obj.updateDynamic("infoUrl")(infoUrl)
+    __obj.updateDynamic("platform")(platform)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PackageMetadata]
+  }
+}
+

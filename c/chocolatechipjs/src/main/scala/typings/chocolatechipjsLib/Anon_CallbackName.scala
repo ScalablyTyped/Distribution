@@ -23,3 +23,18 @@ trait Anon_CallbackName extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_CallbackName {
+  @scala.inline
+  def apply(
+    callbackName: java.lang.String = null,
+    clear: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null
+  ): Anon_CallbackName = {
+    val __obj = js.Dynamic.literal()
+    if (callbackName != null) __obj.updateDynamic("callbackName")(callbackName)
+    if (!js.isUndefined(clear)) __obj.updateDynamic("clear")(clear)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CallbackName]
+  }
+}
+

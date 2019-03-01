@@ -9,3 +9,12 @@ trait RavenInstrumentationOptions extends js.Object {
   var tryCatch: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RavenInstrumentationOptions {
+  @scala.inline
+  def apply(tryCatch: js.UndefOr[scala.Boolean] = js.undefined): RavenInstrumentationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(tryCatch)) __obj.updateDynamic("tryCatch")(tryCatch)
+    __obj.asInstanceOf[RavenInstrumentationOptions]
+  }
+}
+

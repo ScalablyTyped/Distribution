@@ -23,3 +23,22 @@ trait SharpOptions extends js.Object {
   var raw: js.UndefOr[Raw] = js.undefined
 }
 
+object SharpOptions {
+  @scala.inline
+  def apply(
+    create: Create = null,
+    density: scala.Int | scala.Double = null,
+    failOnError: js.UndefOr[scala.Boolean] = js.undefined,
+    page: scala.Int | scala.Double = null,
+    raw: Raw = null
+  ): SharpOptions = {
+    val __obj = js.Dynamic.literal()
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (!js.isUndefined(failOnError)) __obj.updateDynamic("failOnError")(failOnError)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[SharpOptions]
+  }
+}
+

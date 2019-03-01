@@ -32,3 +32,24 @@ trait Anon_AbsolutePath extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_AbsolutePath {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    absolutePath: java.lang.String = null,
+    hash: java.lang.String = null,
+    pathname: java.lang.String = null,
+    relativePath: java.lang.String = null,
+    search: java.lang.String = null
+  ): Anon_AbsolutePath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (absolutePath != null) __obj.updateDynamic("absolutePath")(absolutePath)
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
+    if (relativePath != null) __obj.updateDynamic("relativePath")(relativePath)
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[Anon_AbsolutePath]
+  }
+}
+

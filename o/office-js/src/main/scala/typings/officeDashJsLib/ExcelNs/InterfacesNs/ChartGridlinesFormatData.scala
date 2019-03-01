@@ -16,3 +16,12 @@ trait ChartGridlinesFormatData extends js.Object {
   var line: js.UndefOr[ChartLineFormatData] = js.undefined
 }
 
+object ChartGridlinesFormatData {
+  @scala.inline
+  def apply(line: ChartLineFormatData = null): ChartGridlinesFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (line != null) __obj.updateDynamic("line")(line)
+    __obj.asInstanceOf[ChartGridlinesFormatData]
+  }
+}
+

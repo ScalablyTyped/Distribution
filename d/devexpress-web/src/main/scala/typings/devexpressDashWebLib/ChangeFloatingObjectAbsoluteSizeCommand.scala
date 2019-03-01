@@ -20,3 +20,16 @@ trait ChangeFloatingObjectAbsoluteSizeCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeFloatingObjectAbsoluteSizeCommand {
+  @scala.inline
+  def apply(
+    execute: js.Function1[FloatingObjectAbsoluteSizeSettings, scala.Boolean],
+    getState: js.Function0[js.Any]
+  ): ChangeFloatingObjectAbsoluteSizeCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeFloatingObjectAbsoluteSizeCommand]
+  }
+}
+

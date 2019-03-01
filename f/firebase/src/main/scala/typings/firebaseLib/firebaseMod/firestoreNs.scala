@@ -90,6 +90,8 @@ object firestoreNs extends js.Object {
     val `type`: firebaseLib.firebaseMod.firebaseNs.firestoreNs.DocumentChangeType
   }
   
+  trait DocumentChangeType extends js.Object
+  
   trait DocumentData
     extends /* field */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
@@ -458,6 +460,8 @@ object firestoreNs extends js.Object {
     var stack: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  trait FirestoreErrorCode extends js.Object
+  
   @js.native
   class GeoPoint protected () extends js.Object {
     /**
@@ -503,6 +507,10 @@ object firestoreNs extends js.Object {
         firebaseLib.firebaseLibStrings.default | firebaseLib.firebaseLibStrings.server | firebaseLib.firebaseLibStrings.cache
       ] = js.undefined
   }
+  
+  trait LogLevel extends js.Object
+  
+  trait OrderByDirection extends js.Object
   
   trait PersistenceSettings extends js.Object {
     /**
@@ -1036,6 +1044,8 @@ object firestoreNs extends js.Object {
   trait UpdateData
     extends /* fieldPath */ org.scalablytyped.runtime.StringDictionary[js.Any]
   
+  trait WhereFilterOp extends js.Object
+  
   @js.native
   class WriteBatch protected () extends js.Object {
     /**
@@ -1206,10 +1216,5 @@ object firestoreNs extends js.Object {
     def now(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Timestamp = js.native
   }
   
-  type DocumentChangeType = firebaseLib.firebaseLibStrings.added | firebaseLib.firebaseLibStrings.removed | firebaseLib.firebaseLibStrings.modified
-  type FirestoreErrorCode = firebaseLib.firebaseLibStrings.cancelled | firebaseLib.firebaseLibStrings.unknown | firebaseLib.firebaseLibStrings.`invalid-argument` | firebaseLib.firebaseLibStrings.`deadline-exceeded` | firebaseLib.firebaseLibStrings.`not-found` | firebaseLib.firebaseLibStrings.`already-exists` | firebaseLib.firebaseLibStrings.`permission-denied` | firebaseLib.firebaseLibStrings.`resource-exhausted` | firebaseLib.firebaseLibStrings.`failed-precondition` | firebaseLib.firebaseLibStrings.aborted | firebaseLib.firebaseLibStrings.`out-of-range` | firebaseLib.firebaseLibStrings.unimplemented | firebaseLib.firebaseLibStrings.internal | firebaseLib.firebaseLibStrings.unavailable | firebaseLib.firebaseLibStrings.`data-loss` | firebaseLib.firebaseLibStrings.unauthenticated
-  type LogLevel = firebaseLib.firebaseLibStrings.debug | firebaseLib.firebaseLibStrings.error | firebaseLib.firebaseLibStrings.silent
-  type OrderByDirection = firebaseLib.firebaseLibStrings.desc | firebaseLib.firebaseLibStrings.asc
-  type WhereFilterOp = firebaseLib.firebaseLibStrings.`<` | firebaseLib.firebaseLibStrings.`<=` | firebaseLib.firebaseLibStrings.`==` | firebaseLib.firebaseLibStrings.`>=` | firebaseLib.firebaseLibStrings.`>` | firebaseLib.firebaseLibStrings.`array-contains`
 }
 

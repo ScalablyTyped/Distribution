@@ -12,3 +12,20 @@ trait ResponseInterceptorReturnValue extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResponseInterceptorReturnValue {
+  @scala.inline
+  def apply(
+    data: js.Any = null,
+    headers: Headers = null,
+    method: java.lang.String = null,
+    url: java.lang.String = null
+  ): ResponseInterceptorReturnValue = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ResponseInterceptorReturnValue]
+  }
+}
+

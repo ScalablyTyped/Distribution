@@ -9,3 +9,12 @@ trait ELEMENT_MARKER extends js.Object {
   var marker: atAngularCoreLib.atAngularCoreLibStrings.element
 }
 
+object ELEMENT_MARKER {
+  @scala.inline
+  def apply(marker: atAngularCoreLib.atAngularCoreLibStrings.element): ELEMENT_MARKER = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("marker")(marker)
+    __obj.asInstanceOf[ELEMENT_MARKER]
+  }
+}
+

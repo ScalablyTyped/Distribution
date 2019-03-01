@@ -28,3 +28,20 @@ trait PersonResponse extends js.Object {
   var status: js.UndefOr[Status] = js.undefined
 }
 
+object PersonResponse {
+  @scala.inline
+  def apply(
+    httpStatusCode: scala.Int | scala.Double = null,
+    person: Person = null,
+    requestedResourceName: java.lang.String = null,
+    status: Status = null
+  ): PersonResponse = {
+    val __obj = js.Dynamic.literal()
+    if (httpStatusCode != null) __obj.updateDynamic("httpStatusCode")(httpStatusCode.asInstanceOf[js.Any])
+    if (person != null) __obj.updateDynamic("person")(person)
+    if (requestedResourceName != null) __obj.updateDynamic("requestedResourceName")(requestedResourceName)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[PersonResponse]
+  }
+}
+

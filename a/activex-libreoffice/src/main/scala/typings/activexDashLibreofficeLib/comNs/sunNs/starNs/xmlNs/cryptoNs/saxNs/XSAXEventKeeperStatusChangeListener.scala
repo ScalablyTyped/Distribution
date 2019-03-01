@@ -29,3 +29,24 @@ trait XSAXEventKeeperStatusChangeListener
   def collectionStatusChanged(isInsideCollectedElement: scala.Boolean): scala.Unit
 }
 
+object XSAXEventKeeperStatusChangeListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    blockingStatusChanged: js.Function1[scala.Boolean, scala.Unit],
+    bufferStatusChanged: js.Function1[scala.Boolean, scala.Unit],
+    collectionStatusChanged: js.Function1[scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSAXEventKeeperStatusChangeListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("blockingStatusChanged")(blockingStatusChanged)
+    __obj.updateDynamic("bufferStatusChanged")(bufferStatusChanged)
+    __obj.updateDynamic("collectionStatusChanged")(collectionStatusChanged)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSAXEventKeeperStatusChangeListener]
+  }
+}
+

@@ -24,3 +24,13 @@ trait Anon_Coords extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Coords {
+  @scala.inline
+  def apply(coords: js.Array[scala.Double] = null, `type`: java.lang.String = null): Anon_Coords = {
+    val __obj = js.Dynamic.literal()
+    if (coords != null) __obj.updateDynamic("coords")(coords)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_Coords]
+  }
+}
+

@@ -68,3 +68,42 @@ trait StrictTransitionablePortalProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictTransitionablePortalProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    onClose: js.Function2[
+      /* nothing */ scala.Null, 
+      /* data */ semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalMod.PortalProps with TransitionablePortalState, 
+      scala.Unit
+    ] = null,
+    onHide: js.Function2[
+      /* nothing */ scala.Null, 
+      /* data */ semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionEventData with TransitionablePortalState, 
+      scala.Unit
+    ] = null,
+    onOpen: js.Function2[
+      /* nothing */ scala.Null, 
+      /* data */ semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalMod.PortalProps with TransitionablePortalState, 
+      scala.Unit
+    ] = null,
+    onStart: js.Function2[
+      /* nothing */ scala.Null, 
+      /* data */ semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionEventData with TransitionablePortalState, 
+      scala.Unit
+    ] = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    transition: semanticDashUiDashReactLib.distCommonjsModulesTransitionTransitionMod.TransitionProps = null
+  ): StrictTransitionablePortalProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    __obj.asInstanceOf[StrictTransitionablePortalProps]
+  }
+}
+

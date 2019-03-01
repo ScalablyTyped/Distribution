@@ -15,3 +15,17 @@ trait NonBillableWinningBidsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListNonBillableWinningBidsResponse]
 }
 
+object NonBillableWinningBidsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListNonBillableWinningBidsResponse]
+    ]
+  ): NonBillableWinningBidsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[NonBillableWinningBidsResource]
+  }
+}
+

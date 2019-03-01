@@ -9,3 +9,12 @@ trait Options extends js.Object {
   var plugins: js.Array[Plugin]
 }
 
+object Options {
+  @scala.inline
+  def apply(plugins: js.Array[Plugin]): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("plugins")(plugins)
+    __obj.asInstanceOf[Options]
+  }
+}
+

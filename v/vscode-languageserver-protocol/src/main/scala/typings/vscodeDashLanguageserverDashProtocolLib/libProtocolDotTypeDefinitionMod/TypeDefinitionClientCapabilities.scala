@@ -12,3 +12,12 @@ trait TypeDefinitionClientCapabilities extends js.Object {
   var textDocument: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_TypeDefinition] = js.undefined
 }
 
+object TypeDefinitionClientCapabilities {
+  @scala.inline
+  def apply(textDocument: vscodeDashLanguageserverDashProtocolLib.Anon_TypeDefinition = null): TypeDefinitionClientCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (textDocument != null) __obj.updateDynamic("textDocument")(textDocument)
+    __obj.asInstanceOf[TypeDefinitionClientCapabilities]
+  }
+}
+

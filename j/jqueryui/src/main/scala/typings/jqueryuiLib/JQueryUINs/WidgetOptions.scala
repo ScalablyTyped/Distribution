@@ -12,3 +12,14 @@ trait WidgetOptions extends js.Object {
   var show: js.UndefOr[js.Any] = js.undefined
 }
 
+object WidgetOptions {
+  @scala.inline
+  def apply(disabled: js.UndefOr[scala.Boolean] = js.undefined, hide: js.Any = null, show: js.Any = null): WidgetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (show != null) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[WidgetOptions]
+  }
+}
+

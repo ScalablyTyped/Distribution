@@ -14,3 +14,12 @@ trait ToolExecutionStep extends js.Object {
   var toolExecution: js.UndefOr[ToolExecution] = js.undefined
 }
 
+object ToolExecutionStep {
+  @scala.inline
+  def apply(toolExecution: ToolExecution = null): ToolExecutionStep = {
+    val __obj = js.Dynamic.literal()
+    if (toolExecution != null) __obj.updateDynamic("toolExecution")(toolExecution)
+    __obj.asInstanceOf[ToolExecutionStep]
+  }
+}
+

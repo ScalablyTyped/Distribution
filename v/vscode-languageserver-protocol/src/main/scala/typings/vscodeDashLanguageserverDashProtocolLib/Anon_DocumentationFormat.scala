@@ -21,3 +21,18 @@ trait Anon_DocumentationFormat extends js.Object {
   var parameterInformation: js.UndefOr[Anon_LabelOffsetSupport] = js.undefined
 }
 
+object Anon_DocumentationFormat {
+  @scala.inline
+  def apply(
+    documentationFormat: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.MarkupKind
+    ] = null,
+    parameterInformation: Anon_LabelOffsetSupport = null
+  ): Anon_DocumentationFormat = {
+    val __obj = js.Dynamic.literal()
+    if (documentationFormat != null) __obj.updateDynamic("documentationFormat")(documentationFormat)
+    if (parameterInformation != null) __obj.updateDynamic("parameterInformation")(parameterInformation)
+    __obj.asInstanceOf[Anon_DocumentationFormat]
+  }
+}
+

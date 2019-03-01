@@ -11,3 +11,14 @@ trait Anon_ContentTypeMessageBody extends js.Object {
   var statusCode: java.lang.String
 }
 
+object Anon_ContentTypeMessageBody {
+  @scala.inline
+  def apply(contentType: java.lang.String, statusCode: java.lang.String, messageBody: java.lang.String = null): Anon_ContentTypeMessageBody = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("statusCode")(statusCode)
+    if (messageBody != null) __obj.updateDynamic("messageBody")(messageBody)
+    __obj.asInstanceOf[Anon_ContentTypeMessageBody]
+  }
+}
+

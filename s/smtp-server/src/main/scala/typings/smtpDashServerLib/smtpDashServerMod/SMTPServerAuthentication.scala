@@ -29,3 +29,22 @@ trait SMTPServerAuthentication extends js.Object {
   def validatePassword(password: java.lang.String): scala.Boolean
 }
 
+object SMTPServerAuthentication {
+  @scala.inline
+  def apply(
+    method: smtpDashServerLib.smtpDashServerLibStrings.PLAIN | smtpDashServerLib.smtpDashServerLibStrings.LOGIN | smtpDashServerLib.smtpDashServerLibStrings.XOAUTH2,
+    validatePassword: js.Function1[java.lang.String, scala.Boolean],
+    accessToken: java.lang.String = null,
+    password: java.lang.String = null,
+    username: java.lang.String = null
+  ): SMTPServerAuthentication = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    __obj.updateDynamic("validatePassword")(validatePassword)
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[SMTPServerAuthentication]
+  }
+}
+

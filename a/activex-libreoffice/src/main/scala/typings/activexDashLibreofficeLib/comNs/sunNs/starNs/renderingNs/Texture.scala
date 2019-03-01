@@ -79,3 +79,30 @@ trait Texture extends js.Object {
   var RepeatModeY: scala.Double
 }
 
+object Texture {
+  @scala.inline
+  def apply(
+    AffineTransform: activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.AffineMatrix2D,
+    Alpha: scala.Double,
+    Bitmap: XBitmap,
+    Gradient: XParametricPolyPolygon2D,
+    HatchAttributes: StrokeAttributes,
+    Hatching: XParametricPolyPolygon2D,
+    NumberOfHatchPolygons: scala.Double,
+    RepeatModeX: scala.Double,
+    RepeatModeY: scala.Double
+  ): Texture = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AffineTransform")(AffineTransform)
+    __obj.updateDynamic("Alpha")(Alpha)
+    __obj.updateDynamic("Bitmap")(Bitmap)
+    __obj.updateDynamic("Gradient")(Gradient)
+    __obj.updateDynamic("HatchAttributes")(HatchAttributes)
+    __obj.updateDynamic("Hatching")(Hatching)
+    __obj.updateDynamic("NumberOfHatchPolygons")(NumberOfHatchPolygons)
+    __obj.updateDynamic("RepeatModeX")(RepeatModeX)
+    __obj.updateDynamic("RepeatModeY")(RepeatModeY)
+    __obj.asInstanceOf[Texture]
+  }
+}
+

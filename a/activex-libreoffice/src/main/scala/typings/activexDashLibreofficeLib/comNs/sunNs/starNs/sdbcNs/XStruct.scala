@@ -37,3 +37,27 @@ trait XStruct
   def getSQLTypeName(): java.lang.String
 }
 
+object XStruct {
+  @scala.inline
+  def apply(
+    SQLTypeName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getAttributes: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getSQLTypeName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStruct = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SQLTypeName")(SQLTypeName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAttributes")(getAttributes)
+    __obj.updateDynamic("getSQLTypeName")(getSQLTypeName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStruct]
+  }
+}
+

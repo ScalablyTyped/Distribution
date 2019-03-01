@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
   var msCaching: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object XHRFields {
+  @scala.inline
+  def apply(msCaching: java.lang.String = null): XHRFields = {
+    val __obj = js.Dynamic.literal()
+    if (msCaching != null) __obj.updateDynamic("msCaching")(msCaching)
+    __obj.asInstanceOf[XHRFields]
+  }
+}
+

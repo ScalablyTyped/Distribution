@@ -10,3 +10,16 @@ trait PartialModule extends js.Object {
   var statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
 }
 
+object PartialModule {
+  @scala.inline
+  def apply(
+    fileName: java.lang.String,
+    statements: js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement]
+  ): PartialModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("statements")(statements)
+    __obj.asInstanceOf[PartialModule]
+  }
+}
+

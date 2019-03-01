@@ -20,3 +20,14 @@ trait ChildGridRenderedEventUIParam extends js.Object {
   var parentrow: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChildGridRenderedEventUIParam {
+  @scala.inline
+  def apply(childgrid: js.Any = null, owner: js.Any = null, parentrow: java.lang.String = null): ChildGridRenderedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (childgrid != null) __obj.updateDynamic("childgrid")(childgrid)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (parentrow != null) __obj.updateDynamic("parentrow")(parentrow)
+    __obj.asInstanceOf[ChildGridRenderedEventUIParam]
+  }
+}
+

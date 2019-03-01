@@ -33,3 +33,34 @@ trait DumpOptions extends js.Object {
   var styles: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object DumpOptions {
+  @scala.inline
+  def apply(
+    condenseFlow: js.UndefOr[scala.Boolean] = js.undefined,
+    flowLevel: scala.Int | scala.Double = null,
+    indent: scala.Int | scala.Double = null,
+    lineWidth: scala.Int | scala.Double = null,
+    noArrayIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    noCompatMode: js.UndefOr[scala.Boolean] = js.undefined,
+    noRefs: js.UndefOr[scala.Boolean] = js.undefined,
+    schema: SchemaDefinition = null,
+    skipInvalid: js.UndefOr[scala.Boolean] = js.undefined,
+    sortKeys: scala.Boolean | (js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double]) = null,
+    styles: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): DumpOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(condenseFlow)) __obj.updateDynamic("condenseFlow")(condenseFlow)
+    if (flowLevel != null) __obj.updateDynamic("flowLevel")(flowLevel.asInstanceOf[js.Any])
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(noArrayIndent)) __obj.updateDynamic("noArrayIndent")(noArrayIndent)
+    if (!js.isUndefined(noCompatMode)) __obj.updateDynamic("noCompatMode")(noCompatMode)
+    if (!js.isUndefined(noRefs)) __obj.updateDynamic("noRefs")(noRefs)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (!js.isUndefined(skipInvalid)) __obj.updateDynamic("skipInvalid")(skipInvalid)
+    if (sortKeys != null) __obj.updateDynamic("sortKeys")(sortKeys.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[DumpOptions]
+  }
+}
+

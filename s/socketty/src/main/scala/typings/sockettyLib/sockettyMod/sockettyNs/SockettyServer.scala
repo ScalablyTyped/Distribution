@@ -13,3 +13,12 @@ trait SockettyServer extends js.Object {
   def connection(callback: js.Function1[/* socket */ SockettySocket, scala.Unit]): scala.Unit
 }
 
+object SockettyServer {
+  @scala.inline
+  def apply(connection: js.Function1[js.Function1[/* socket */ SockettySocket, scala.Unit], scala.Unit]): SockettyServer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.asInstanceOf[SockettyServer]
+  }
+}
+

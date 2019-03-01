@@ -69,3 +69,34 @@ trait PageOptions extends js.Object {
   var onUnload: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object PageOptions {
+  @scala.inline
+  def apply(
+    data: js.Any = null,
+    onHide: js.Function0[scala.Unit] = null,
+    onLoad: js.Function1[/* options */ js.Object, scala.Unit] = null,
+    onPageScroll: js.Function1[/* option */ weixinDashAppLib.Anon_ScrollTop, scala.Unit] = null,
+    onPullDownRefresh: js.Function0[scala.Unit] = null,
+    onReachBottom: js.Function0[scala.Unit] = null,
+    onReady: js.Function0[scala.Unit] = null,
+    onShareAppMessage: js.Function1[/* options */ js.UndefOr[PageShareAppMessageOptions], ShareAppMessage] = null,
+    onShow: js.Function0[scala.Unit] = null,
+    onTabItemTap: js.Function1[/* item */ js.Any, scala.Unit] = null,
+    onUnload: js.Function0[scala.Unit] = null
+  ): PageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onPageScroll != null) __obj.updateDynamic("onPageScroll")(onPageScroll)
+    if (onPullDownRefresh != null) __obj.updateDynamic("onPullDownRefresh")(onPullDownRefresh)
+    if (onReachBottom != null) __obj.updateDynamic("onReachBottom")(onReachBottom)
+    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
+    if (onShareAppMessage != null) __obj.updateDynamic("onShareAppMessage")(onShareAppMessage)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onTabItemTap != null) __obj.updateDynamic("onTabItemTap")(onTabItemTap)
+    if (onUnload != null) __obj.updateDynamic("onUnload")(onUnload)
+    __obj.asInstanceOf[PageOptions]
+  }
+}
+

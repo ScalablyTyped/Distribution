@@ -18,3 +18,27 @@ trait IPreallocatedWorkItemFactory extends js.Object {
   ): PreallocatedWorkItem
 }
 
+object IPreallocatedWorkItemFactory {
+  @scala.inline
+  def apply(
+    createWorkItem: js.Function1[winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler, PreallocatedWorkItem],
+    createWorkItemWithPriority: js.Function2[
+      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler, 
+      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemPriority, 
+      PreallocatedWorkItem
+    ],
+    createWorkItemWithPriorityAndOptions: js.Function3[
+      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemHandler, 
+      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemPriority, 
+      winrtLib.WindowsNs.SystemNs.ThreadingNs.WorkItemOptions, 
+      PreallocatedWorkItem
+    ]
+  ): IPreallocatedWorkItemFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createWorkItem")(createWorkItem)
+    __obj.updateDynamic("createWorkItemWithPriority")(createWorkItemWithPriority)
+    __obj.updateDynamic("createWorkItemWithPriorityAndOptions")(createWorkItemWithPriorityAndOptions)
+    __obj.asInstanceOf[IPreallocatedWorkItemFactory]
+  }
+}
+

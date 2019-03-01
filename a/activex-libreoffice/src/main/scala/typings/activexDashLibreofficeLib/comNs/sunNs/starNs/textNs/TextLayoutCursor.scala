@@ -18,3 +18,13 @@ trait TextLayoutCursor
   override def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
 }
 
+object TextLayoutCursor {
+  @scala.inline
+  def apply(TextCursor: TextCursor = null, XPageCursor: XPageCursor = null): TextLayoutCursor = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, TextCursor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XPageCursor)
+    __obj.asInstanceOf[TextLayoutCursor]
+  }
+}
+

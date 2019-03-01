@@ -10,3 +10,17 @@ trait UrlcrawlerrorscountsResource extends js.Object {
   def query(request: gapiDotClientDotWebmastersLib.Anon_AltCategory): gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsCountsQueryResponse]
 }
 
+object UrlcrawlerrorscountsResource {
+  @scala.inline
+  def apply(
+    query: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_AltCategory, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UrlCrawlErrorsCountsQueryResponse]
+    ]
+  ): UrlcrawlerrorscountsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[UrlcrawlerrorscountsResource]
+  }
+}
+

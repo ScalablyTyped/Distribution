@@ -13,3 +13,22 @@ trait R3QueryMetadataFacade extends js.Object {
   var read: js.Any | scala.Null
 }
 
+object R3QueryMetadataFacade {
+  @scala.inline
+  def apply(
+    descendants: scala.Boolean,
+    first: scala.Boolean,
+    predicate: js.Any | js.Array[java.lang.String],
+    propertyName: java.lang.String,
+    read: js.Any = null
+  ): R3QueryMetadataFacade = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("descendants")(descendants)
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("predicate")(predicate.asInstanceOf[js.Any])
+    __obj.updateDynamic("propertyName")(propertyName)
+    if (read != null) __obj.updateDynamic("read")(read)
+    __obj.asInstanceOf[R3QueryMetadataFacade]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Request extends js.Object {
   var logger: pinoLib.pinoMod.PNs.Logger
 }
 
+object Request {
+  @scala.inline
+  def apply(logger: pinoLib.pinoMod.PNs.Logger): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("logger")(logger)
+    __obj.asInstanceOf[Request]
+  }
+}
+

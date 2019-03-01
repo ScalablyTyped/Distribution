@@ -49,3 +49,22 @@ trait BindingSelectionChangedEventArgs extends js.Object {
   var startRow: scala.Double
 }
 
+object BindingSelectionChangedEventArgs {
+  @scala.inline
+  def apply(
+    binding: Binding,
+    columnCount: scala.Double,
+    rowCount: scala.Double,
+    startColumn: scala.Double,
+    startRow: scala.Double
+  ): BindingSelectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("binding")(binding)
+    __obj.updateDynamic("columnCount")(columnCount)
+    __obj.updateDynamic("rowCount")(rowCount)
+    __obj.updateDynamic("startColumn")(startColumn)
+    __obj.updateDynamic("startRow")(startRow)
+    __obj.asInstanceOf[BindingSelectionChangedEventArgs]
+  }
+}
+

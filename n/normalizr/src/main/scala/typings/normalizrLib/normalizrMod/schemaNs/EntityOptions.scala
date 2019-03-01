@@ -11,3 +11,18 @@ trait EntityOptions extends js.Object {
   var processStrategy: js.UndefOr[StrategyFunction] = js.undefined
 }
 
+object EntityOptions {
+  @scala.inline
+  def apply(
+    idAttribute: java.lang.String | SchemaFunction = null,
+    mergeStrategy: MergeFunction = null,
+    processStrategy: StrategyFunction = null
+  ): EntityOptions = {
+    val __obj = js.Dynamic.literal()
+    if (idAttribute != null) __obj.updateDynamic("idAttribute")(idAttribute.asInstanceOf[js.Any])
+    if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy)
+    if (processStrategy != null) __obj.updateDynamic("processStrategy")(processStrategy)
+    __obj.asInstanceOf[EntityOptions]
+  }
+}
+

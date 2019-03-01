@@ -68,3 +68,42 @@ trait options extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object options {
+  @scala.inline
+  def apply(
+    algorithm: java.lang.String = null,
+    failOverServers: java.lang.String | js.Array[java.lang.String] = null,
+    failures: scala.Int | scala.Double = null,
+    idle: scala.Int | scala.Double = null,
+    keyCompression: js.UndefOr[scala.Boolean] = js.undefined,
+    maxExpiration: scala.Int | scala.Double = null,
+    maxKeySize: scala.Int | scala.Double = null,
+    maxValue: scala.Int | scala.Double = null,
+    namespace: java.lang.String = null,
+    poolSize: scala.Int | scala.Double = null,
+    reconnect: scala.Int | scala.Double = null,
+    remove: js.UndefOr[scala.Boolean] = js.undefined,
+    retries: scala.Int | scala.Double = null,
+    retry: scala.Int | scala.Double = null,
+    timeout: scala.Int | scala.Double = null
+  ): options = {
+    val __obj = js.Dynamic.literal()
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (failOverServers != null) __obj.updateDynamic("failOverServers")(failOverServers.asInstanceOf[js.Any])
+    if (failures != null) __obj.updateDynamic("failures")(failures.asInstanceOf[js.Any])
+    if (idle != null) __obj.updateDynamic("idle")(idle.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyCompression)) __obj.updateDynamic("keyCompression")(keyCompression)
+    if (maxExpiration != null) __obj.updateDynamic("maxExpiration")(maxExpiration.asInstanceOf[js.Any])
+    if (maxKeySize != null) __obj.updateDynamic("maxKeySize")(maxKeySize.asInstanceOf[js.Any])
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
+    if (reconnect != null) __obj.updateDynamic("reconnect")(reconnect.asInstanceOf[js.Any])
+    if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
+    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (retry != null) __obj.updateDynamic("retry")(retry.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[options]
+  }
+}
+

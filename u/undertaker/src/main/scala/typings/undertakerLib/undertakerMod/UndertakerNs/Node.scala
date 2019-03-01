@@ -12,3 +12,20 @@ trait Node extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Node {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    nodes: js.Array[Node],
+    branch: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null
+  ): Node = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("nodes")(nodes)
+    if (!js.isUndefined(branch)) __obj.updateDynamic("branch")(branch)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Node]
+  }
+}
+

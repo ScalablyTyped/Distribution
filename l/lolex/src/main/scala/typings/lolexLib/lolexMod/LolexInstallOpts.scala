@@ -35,3 +35,24 @@ trait LolexInstallOpts extends js.Object {
   var toFake: js.UndefOr[js.Array[lolexLib.FakeMethod]] = js.undefined
 }
 
+object LolexInstallOpts {
+  @scala.inline
+  def apply(
+    advanceTimeDelta: scala.Int | scala.Double = null,
+    loopLimit: scala.Int | scala.Double = null,
+    now: scala.Double | stdLib.Date = null,
+    shouldAdvanceTime: js.UndefOr[scala.Boolean] = js.undefined,
+    target: js.Any = null,
+    toFake: js.Array[lolexLib.FakeMethod] = null
+  ): LolexInstallOpts = {
+    val __obj = js.Dynamic.literal()
+    if (advanceTimeDelta != null) __obj.updateDynamic("advanceTimeDelta")(advanceTimeDelta.asInstanceOf[js.Any])
+    if (loopLimit != null) __obj.updateDynamic("loopLimit")(loopLimit.asInstanceOf[js.Any])
+    if (now != null) __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldAdvanceTime)) __obj.updateDynamic("shouldAdvanceTime")(shouldAdvanceTime)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (toFake != null) __obj.updateDynamic("toFake")(toFake)
+    __obj.asInstanceOf[LolexInstallOpts]
+  }
+}
+

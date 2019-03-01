@@ -9,3 +9,12 @@ trait Anon_Connection extends js.Object {
   var connection: nodeLib.netMod.Socket
 }
 
+object Anon_Connection {
+  @scala.inline
+  def apply(connection: nodeLib.netMod.Socket): Anon_Connection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.asInstanceOf[Anon_Connection]
+  }
+}
+

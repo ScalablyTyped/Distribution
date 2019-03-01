@@ -10,3 +10,13 @@ trait Anon_DoNotRun extends js.Object {
   var none: scala.Double
 }
 
+object Anon_DoNotRun {
+  @scala.inline
+  def apply(doNotRun: scala.Double, none: scala.Double): Anon_DoNotRun = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("doNotRun")(doNotRun)
+    __obj.updateDynamic("none")(none)
+    __obj.asInstanceOf[Anon_DoNotRun]
+  }
+}
+

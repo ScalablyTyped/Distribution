@@ -16,3 +16,13 @@ trait ArtifactMetadata extends js.Object {
   var instanceReference: BuildVersion
 }
 
+object ArtifactMetadata {
+  @scala.inline
+  def apply(alias: java.lang.String, instanceReference: BuildVersion): ArtifactMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alias")(alias)
+    __obj.updateDynamic("instanceReference")(instanceReference)
+    __obj.asInstanceOf[ArtifactMetadata]
+  }
+}
+

@@ -10,3 +10,13 @@ trait VP8CodecSettings extends js.Object {
   var simulcast: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object VP8CodecSettings {
+  @scala.inline
+  def apply(name: VideoCodec, simulcast: js.UndefOr[scala.Boolean] = js.undefined): VP8CodecSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(simulcast)) __obj.updateDynamic("simulcast")(simulcast)
+    __obj.asInstanceOf[VP8CodecSettings]
+  }
+}
+

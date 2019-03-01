@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object createDashHashLibStrings {
   @js.native
-  sealed trait md5 extends js.Object
+  sealed trait md5
+    extends createDashHashLib.createDashHashMod.createHashNs.Algorithm
   
   @js.native
-  sealed trait ripemd160 extends js.Object
+  sealed trait ripemd160
+    extends createDashHashLib.createDashHashMod.createHashNs.Algorithm
   
   @js.native
-  sealed trait rmd160 extends js.Object
+  sealed trait rmd160
+    extends createDashHashLib.createDashHashMod.createHashNs.Algorithm
   
   @js.native
-  sealed trait sha extends js.Object
+  sealed trait sha
+    extends createDashHashLib.createDashHashMod.createHashNs.Algorithm
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait sha1
+    extends createDashHashLib.createDashHashMod.createHashNs.Algorithm
   
   @js.native
-  sealed trait sha224 extends js.Object
+  sealed trait sha224
+    extends createDashHashLib.createDashHashMod.createHashNs.Algorithm
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait sha256
+    extends createDashHashLib.createDashHashMod.createHashNs.Algorithm
   
   @js.native
-  sealed trait sha384 extends js.Object
+  sealed trait sha384
+    extends createDashHashLib.createDashHashMod.createHashNs.Algorithm
   
   @js.native
-  sealed trait sha512 extends js.Object
+  sealed trait sha512
+    extends createDashHashLib.createDashHashMod.createHashNs.Algorithm
   
   @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]

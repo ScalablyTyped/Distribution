@@ -6,7 +6,12 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait VariableDeclaration extends NamedDeclaration {
+trait VariableDeclaration
+  extends NamedDeclaration
+     with HasExpressionInitializer
+     with HasType
+     with VariableLikeDeclaration
+     with _BindingOrAssignmentElement {
   var exclamationToken: js.UndefOr[ExclamationToken] = js.native
   var initializer: js.UndefOr[Expression] = js.native
   @JSName("name")

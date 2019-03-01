@@ -12,3 +12,13 @@ trait JobMetrics extends js.Object {
   var metrics: js.UndefOr[js.Array[MetricUpdate]] = js.undefined
 }
 
+object JobMetrics {
+  @scala.inline
+  def apply(metricTime: java.lang.String = null, metrics: js.Array[MetricUpdate] = null): JobMetrics = {
+    val __obj = js.Dynamic.literal()
+    if (metricTime != null) __obj.updateDynamic("metricTime")(metricTime)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    __obj.asInstanceOf[JobMetrics]
+  }
+}
+

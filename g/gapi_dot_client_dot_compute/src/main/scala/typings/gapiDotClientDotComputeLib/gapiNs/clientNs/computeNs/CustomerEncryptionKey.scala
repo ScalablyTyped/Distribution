@@ -12,3 +12,13 @@ trait CustomerEncryptionKey extends js.Object {
   var sha256: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomerEncryptionKey {
+  @scala.inline
+  def apply(rawKey: java.lang.String = null, sha256: java.lang.String = null): CustomerEncryptionKey = {
+    val __obj = js.Dynamic.literal()
+    if (rawKey != null) __obj.updateDynamic("rawKey")(rawKey)
+    if (sha256 != null) __obj.updateDynamic("sha256")(sha256)
+    __obj.asInstanceOf[CustomerEncryptionKey]
+  }
+}
+

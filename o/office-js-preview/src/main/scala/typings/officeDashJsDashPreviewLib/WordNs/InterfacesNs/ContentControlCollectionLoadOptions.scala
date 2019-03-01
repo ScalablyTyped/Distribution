@@ -170,3 +170,58 @@ trait ContentControlCollectionLoadOptions extends js.Object {
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ContentControlCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    appearance: js.UndefOr[scala.Boolean] = js.undefined,
+    cannotDelete: js.UndefOr[scala.Boolean] = js.undefined,
+    cannotEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    color: js.UndefOr[scala.Boolean] = js.undefined,
+    font: FontLoadOptions = null,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    parentBody: BodyLoadOptions = null,
+    parentContentControl: ContentControlLoadOptions = null,
+    parentContentControlOrNullObject: ContentControlLoadOptions = null,
+    parentTable: TableLoadOptions = null,
+    parentTableCell: TableCellLoadOptions = null,
+    parentTableCellOrNullObject: TableCellLoadOptions = null,
+    parentTableOrNullObject: TableLoadOptions = null,
+    placeholderText: js.UndefOr[scala.Boolean] = js.undefined,
+    removeWhenEdited: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    styleBuiltIn: js.UndefOr[scala.Boolean] = js.undefined,
+    subtype: js.UndefOr[scala.Boolean] = js.undefined,
+    tag: js.UndefOr[scala.Boolean] = js.undefined,
+    text: js.UndefOr[scala.Boolean] = js.undefined,
+    title: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined
+  ): ContentControlCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(appearance)) __obj.updateDynamic("appearance")(appearance)
+    if (!js.isUndefined(cannotDelete)) __obj.updateDynamic("cannotDelete")(cannotDelete)
+    if (!js.isUndefined(cannotEdit)) __obj.updateDynamic("cannotEdit")(cannotEdit)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
+    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
+    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
+    if (!js.isUndefined(placeholderText)) __obj.updateDynamic("placeholderText")(placeholderText)
+    if (!js.isUndefined(removeWhenEdited)) __obj.updateDynamic("removeWhenEdited")(removeWhenEdited)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(styleBuiltIn)) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (!js.isUndefined(subtype)) __obj.updateDynamic("subtype")(subtype)
+    if (!js.isUndefined(tag)) __obj.updateDynamic("tag")(tag)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ContentControlCollectionLoadOptions]
+  }
+}
+

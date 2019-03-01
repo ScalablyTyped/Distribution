@@ -10,3 +10,13 @@ trait IClockIdentifiersStatics extends js.Object {
   var twentyFourHour: java.lang.String
 }
 
+object IClockIdentifiersStatics {
+  @scala.inline
+  def apply(twelveHour: java.lang.String, twentyFourHour: java.lang.String): IClockIdentifiersStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("twelveHour")(twelveHour)
+    __obj.updateDynamic("twentyFourHour")(twentyFourHour)
+    __obj.asInstanceOf[IClockIdentifiersStatics]
+  }
+}
+

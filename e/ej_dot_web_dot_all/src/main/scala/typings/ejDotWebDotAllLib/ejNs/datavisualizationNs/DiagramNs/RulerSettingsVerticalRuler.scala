@@ -36,3 +36,26 @@ trait RulerSettingsVerticalRuler extends js.Object {
   var tickAlignment: js.UndefOr[TickAlignment | java.lang.String] = js.undefined
 }
 
+object RulerSettingsVerticalRuler {
+  @scala.inline
+  def apply(
+    arrangeTick: js.Any = null,
+    interval: scala.Int | scala.Double = null,
+    length: scala.Int | scala.Double = null,
+    markerColor: java.lang.String = null,
+    segmentWidth: scala.Int | scala.Double = null,
+    thickness: scala.Int | scala.Double = null,
+    tickAlignment: TickAlignment | java.lang.String = null
+  ): RulerSettingsVerticalRuler = {
+    val __obj = js.Dynamic.literal()
+    if (arrangeTick != null) __obj.updateDynamic("arrangeTick")(arrangeTick)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (markerColor != null) __obj.updateDynamic("markerColor")(markerColor)
+    if (segmentWidth != null) __obj.updateDynamic("segmentWidth")(segmentWidth.asInstanceOf[js.Any])
+    if (thickness != null) __obj.updateDynamic("thickness")(thickness.asInstanceOf[js.Any])
+    if (tickAlignment != null) __obj.updateDynamic("tickAlignment")(tickAlignment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RulerSettingsVerticalRuler]
+  }
+}
+

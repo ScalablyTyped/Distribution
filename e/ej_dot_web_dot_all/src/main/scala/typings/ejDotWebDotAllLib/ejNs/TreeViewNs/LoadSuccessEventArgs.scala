@@ -26,3 +26,24 @@ trait LoadSuccessEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LoadSuccessEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    model: Model = null,
+    parentDetails: js.Any = null,
+    targetParent: js.Any = null,
+    `type`: java.lang.String = null
+  ): LoadSuccessEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (parentDetails != null) __obj.updateDynamic("parentDetails")(parentDetails)
+    if (targetParent != null) __obj.updateDynamic("targetParent")(targetParent)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[LoadSuccessEventArgs]
+  }
+}
+

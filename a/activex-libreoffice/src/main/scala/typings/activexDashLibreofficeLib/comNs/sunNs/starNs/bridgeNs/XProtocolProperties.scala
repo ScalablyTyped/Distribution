@@ -48,3 +48,26 @@ trait XProtocolProperties
   def requestChange(nRandomNumber: scala.Double): scala.Double
 }
 
+object XProtocolProperties {
+  @scala.inline
+  def apply(
+    Properties: activexDashInteropLib.SafeArray[ProtocolProperty],
+    acquire: js.Function0[scala.Unit],
+    commitChange: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[ProtocolProperty], scala.Unit],
+    getProperties: js.Function0[activexDashInteropLib.SafeArray[ProtocolProperty]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    requestChange: js.Function1[scala.Double, scala.Double]
+  ): XProtocolProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Properties")(Properties)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("commitChange")(commitChange)
+    __obj.updateDynamic("getProperties")(getProperties)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("requestChange")(requestChange)
+    __obj.asInstanceOf[XProtocolProperties]
+  }
+}
+

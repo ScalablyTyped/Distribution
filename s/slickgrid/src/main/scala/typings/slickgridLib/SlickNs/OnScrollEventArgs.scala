@@ -10,3 +10,14 @@ trait OnScrollEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
   var scrollTop: scala.Double
 }
 
+object OnScrollEventArgs {
+  @scala.inline
+  def apply[T /* <: SlickData */](grid: Grid[T], scrollLeft: scala.Double, scrollTop: scala.Double): OnScrollEventArgs[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("grid")(grid)
+    __obj.updateDynamic("scrollLeft")(scrollLeft)
+    __obj.updateDynamic("scrollTop")(scrollTop)
+    __obj.asInstanceOf[OnScrollEventArgs[T]]
+  }
+}
+

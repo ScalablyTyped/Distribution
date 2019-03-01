@@ -20,3 +20,13 @@ trait DataDiskAssignment extends js.Object {
   var vmInstance: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataDiskAssignment {
+  @scala.inline
+  def apply(dataDisks: js.Array[java.lang.String] = null, vmInstance: java.lang.String = null): DataDiskAssignment = {
+    val __obj = js.Dynamic.literal()
+    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks)
+    if (vmInstance != null) __obj.updateDynamic("vmInstance")(vmInstance)
+    __obj.asInstanceOf[DataDiskAssignment]
+  }
+}
+

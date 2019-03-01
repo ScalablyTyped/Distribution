@@ -13,3 +13,22 @@ trait AudioParamDescriptor extends js.Object {
   var name: java.lang.String
 }
 
+object AudioParamDescriptor {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    automationRate: AutomationRate = null,
+    defaultValue: scala.Int | scala.Double = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null
+  ): AudioParamDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (automationRate != null) __obj.updateDynamic("automationRate")(automationRate)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AudioParamDescriptor]
+  }
+}
+

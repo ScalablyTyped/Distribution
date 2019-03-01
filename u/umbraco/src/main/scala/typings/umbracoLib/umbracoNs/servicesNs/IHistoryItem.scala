@@ -17,3 +17,14 @@ trait IHistoryItem extends js.Object {
   var name: java.lang.String
 }
 
+object IHistoryItem {
+  @scala.inline
+  def apply(icon: java.lang.String, link: java.lang.String, name: java.lang.String): IHistoryItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("icon")(icon)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[IHistoryItem]
+  }
+}
+

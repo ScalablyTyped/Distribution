@@ -19,3 +19,13 @@ trait ServiceIntentOptions extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServiceIntentOptions {
+  @scala.inline
+  def apply(startMode: scala.Int | scala.Double = null, url: java.lang.String = null): ServiceIntentOptions = {
+    val __obj = js.Dynamic.literal()
+    if (startMode != null) __obj.updateDynamic("startMode")(startMode.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ServiceIntentOptions]
+  }
+}
+

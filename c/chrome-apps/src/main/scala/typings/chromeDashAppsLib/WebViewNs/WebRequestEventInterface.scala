@@ -76,3 +76,34 @@ trait WebRequestEventInterface extends js.Object {
   var onSendHeaders: WebRequestHeadersEvent
 }
 
+object WebRequestEventInterface {
+  @scala.inline
+  def apply(
+    onAuthRequired: WebAuthenticationChallengeEvent,
+    onBeforeRedirect: WebRedirectionResponseEvent,
+    onBeforeRequest: WebRequestBodyEvent,
+    onBeforeSendHeaders: WebRequestHeadersEvent,
+    onCompleted: WebResponseCacheEvent,
+    onErrorOccured: WebResponseErrorEvent,
+    onHeadersReceived: WebResponseHeadersEvent,
+    onMessage: chromeDashAppsLib.chromeNs.webViewRequestNs.OnMessageEvent,
+    onRequest: chromeDashAppsLib.chromeNs.webViewRequestNs.OnRequestEvent,
+    onResponseStarted: WebResponseCacheEvent,
+    onSendHeaders: WebRequestHeadersEvent
+  ): WebRequestEventInterface = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onAuthRequired")(onAuthRequired)
+    __obj.updateDynamic("onBeforeRedirect")(onBeforeRedirect)
+    __obj.updateDynamic("onBeforeRequest")(onBeforeRequest)
+    __obj.updateDynamic("onBeforeSendHeaders")(onBeforeSendHeaders)
+    __obj.updateDynamic("onCompleted")(onCompleted)
+    __obj.updateDynamic("onErrorOccured")(onErrorOccured)
+    __obj.updateDynamic("onHeadersReceived")(onHeadersReceived)
+    __obj.updateDynamic("onMessage")(onMessage)
+    __obj.updateDynamic("onRequest")(onRequest)
+    __obj.updateDynamic("onResponseStarted")(onResponseStarted)
+    __obj.updateDynamic("onSendHeaders")(onSendHeaders)
+    __obj.asInstanceOf[WebRequestEventInterface]
+  }
+}
+

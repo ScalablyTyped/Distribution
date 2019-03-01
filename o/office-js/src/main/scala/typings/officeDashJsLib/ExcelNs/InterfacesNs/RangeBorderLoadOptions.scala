@@ -44,3 +44,22 @@ trait RangeBorderLoadOptions extends js.Object {
   var weight: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RangeBorderLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    color: js.UndefOr[scala.Boolean] = js.undefined,
+    sideIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    weight: js.UndefOr[scala.Boolean] = js.undefined
+  ): RangeBorderLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(weight)) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[RangeBorderLoadOptions]
+  }
+}
+

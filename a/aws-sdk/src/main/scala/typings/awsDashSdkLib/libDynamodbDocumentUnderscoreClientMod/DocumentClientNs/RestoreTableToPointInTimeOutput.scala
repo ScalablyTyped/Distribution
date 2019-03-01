@@ -12,3 +12,12 @@ trait RestoreTableToPointInTimeOutput extends js.Object {
   var TableDescription: js.UndefOr[TableDescription] = js.undefined
 }
 
+object RestoreTableToPointInTimeOutput {
+  @scala.inline
+  def apply(TableDescription: TableDescription = null): RestoreTableToPointInTimeOutput = {
+    val __obj = js.Dynamic.literal()
+    if (TableDescription != null) __obj.updateDynamic("TableDescription")(TableDescription)
+    __obj.asInstanceOf[RestoreTableToPointInTimeOutput]
+  }
+}
+

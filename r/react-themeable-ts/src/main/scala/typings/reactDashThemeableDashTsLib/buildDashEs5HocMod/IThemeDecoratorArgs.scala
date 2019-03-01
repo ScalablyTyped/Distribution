@@ -12,3 +12,20 @@ trait IThemeDecoratorArgs extends js.Object {
   var themeProp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IThemeDecoratorArgs {
+  @scala.inline
+  def apply(
+    contextPath: java.lang.String | js.Array[java.lang.String] = null,
+    memoizeeOpts: js.Any = null,
+    themeKey: java.lang.String = null,
+    themeProp: java.lang.String = null
+  ): IThemeDecoratorArgs = {
+    val __obj = js.Dynamic.literal()
+    if (contextPath != null) __obj.updateDynamic("contextPath")(contextPath.asInstanceOf[js.Any])
+    if (memoizeeOpts != null) __obj.updateDynamic("memoizeeOpts")(memoizeeOpts)
+    if (themeKey != null) __obj.updateDynamic("themeKey")(themeKey)
+    if (themeProp != null) __obj.updateDynamic("themeProp")(themeProp)
+    __obj.asInstanceOf[IThemeDecoratorArgs]
+  }
+}
+

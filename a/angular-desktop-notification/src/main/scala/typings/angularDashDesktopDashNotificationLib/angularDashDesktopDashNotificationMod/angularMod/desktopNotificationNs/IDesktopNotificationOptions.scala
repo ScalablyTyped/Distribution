@@ -12,3 +12,18 @@ trait IDesktopNotificationOptions extends js.Object {
   var showOnPageHidden: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IDesktopNotificationOptions {
+  @scala.inline
+  def apply(
+    autoClose: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    showOnPageHidden: js.UndefOr[scala.Boolean] = js.undefined
+  ): IDesktopNotificationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(showOnPageHidden)) __obj.updateDynamic("showOnPageHidden")(showOnPageHidden)
+    __obj.asInstanceOf[IDesktopNotificationOptions]
+  }
+}
+

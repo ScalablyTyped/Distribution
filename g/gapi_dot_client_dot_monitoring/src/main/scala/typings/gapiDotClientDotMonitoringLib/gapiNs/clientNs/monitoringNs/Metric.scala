@@ -12,3 +12,13 @@ trait Metric extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Metric {
+  @scala.inline
+  def apply(labels: stdLib.Record[java.lang.String, java.lang.String] = null, `type`: java.lang.String = null): Metric = {
+    val __obj = js.Dynamic.literal()
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Metric]
+  }
+}
+

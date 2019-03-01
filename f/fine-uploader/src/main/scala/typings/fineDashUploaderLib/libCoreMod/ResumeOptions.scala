@@ -34,3 +34,20 @@ trait ResumeOptions extends js.Object {
   var recordsExpireIn: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ResumeOptions {
+  @scala.inline
+  def apply(
+    customKeys: js.Function = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    paramNames: ParamNamesOptions = null,
+    recordsExpireIn: scala.Int | scala.Double = null
+  ): ResumeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customKeys != null) __obj.updateDynamic("customKeys")(customKeys)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (paramNames != null) __obj.updateDynamic("paramNames")(paramNames)
+    if (recordsExpireIn != null) __obj.updateDynamic("recordsExpireIn")(recordsExpireIn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResumeOptions]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_Domain extends js.Object {
   var message: java.lang.String
 }
 
+object Anon_Domain {
+  @scala.inline
+  def apply(domain: java.lang.String, message: java.lang.String): Anon_Domain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Anon_Domain]
+  }
+}
+

@@ -30,3 +30,34 @@ trait Userinfoplus extends js.Object {
   var verified_email: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Userinfoplus {
+  @scala.inline
+  def apply(
+    email: java.lang.String = null,
+    family_name: java.lang.String = null,
+    gender: java.lang.String = null,
+    given_name: java.lang.String = null,
+    hd: java.lang.String = null,
+    id: java.lang.String = null,
+    link: java.lang.String = null,
+    locale: java.lang.String = null,
+    name: java.lang.String = null,
+    picture: java.lang.String = null,
+    verified_email: js.UndefOr[scala.Boolean] = js.undefined
+  ): Userinfoplus = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (family_name != null) __obj.updateDynamic("family_name")(family_name)
+    if (gender != null) __obj.updateDynamic("gender")(gender)
+    if (given_name != null) __obj.updateDynamic("given_name")(given_name)
+    if (hd != null) __obj.updateDynamic("hd")(hd)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (picture != null) __obj.updateDynamic("picture")(picture)
+    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email)
+    __obj.asInstanceOf[Userinfoplus]
+  }
+}
+

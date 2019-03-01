@@ -19,3 +19,34 @@ trait SiemaOptions extends js.Object {
   var threshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SiemaOptions {
+  @scala.inline
+  def apply(
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    easing: java.lang.String = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    multipleDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: js.Function0[scala.Unit] = null,
+    onInit: js.Function0[scala.Unit] = null,
+    perPage: scala.Double | PageInterface = null,
+    selector: java.lang.String | stdLib.HTMLElement = null,
+    startIndex: scala.Int | scala.Double = null,
+    threshold: scala.Int | scala.Double = null
+  ): SiemaOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(multipleDrag)) __obj.updateDynamic("multipleDrag")(multipleDrag)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (perPage != null) __obj.updateDynamic("perPage")(perPage.asInstanceOf[js.Any])
+    if (selector != null) __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SiemaOptions]
+  }
+}
+

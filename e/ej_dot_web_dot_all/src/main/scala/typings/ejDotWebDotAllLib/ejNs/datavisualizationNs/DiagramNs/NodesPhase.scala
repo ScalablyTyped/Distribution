@@ -39,3 +39,28 @@ trait NodesPhase extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodesPhase {
+  @scala.inline
+  def apply(
+    label: js.Any = null,
+    lineColor: java.lang.String = null,
+    lineDashArray: java.lang.String = null,
+    lineWidth: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
+    orientation: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): NodesPhase = {
+    val __obj = js.Dynamic.literal()
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineDashArray != null) __obj.updateDynamic("lineDashArray")(lineDashArray)
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodesPhase]
+  }
+}
+

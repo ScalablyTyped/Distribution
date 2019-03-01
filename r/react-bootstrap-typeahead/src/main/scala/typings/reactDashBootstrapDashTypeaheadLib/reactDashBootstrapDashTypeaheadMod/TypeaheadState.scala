@@ -16,3 +16,28 @@ trait TypeaheadState[T /* <: TypeaheadModel */] extends js.Object {
   var text: java.lang.String
 }
 
+object TypeaheadState {
+  @scala.inline
+  def apply[T /* <: TypeaheadModel */](
+    isFocused: scala.Boolean,
+    selected: js.Array[T],
+    showMenu: scala.Boolean,
+    shownResults: scala.Double,
+    text: java.lang.String,
+    activeIndex: scala.Int | scala.Double = null,
+    activeItem: T = null,
+    initialItem: T = null
+  ): TypeaheadState[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isFocused")(isFocused)
+    __obj.updateDynamic("selected")(selected)
+    __obj.updateDynamic("showMenu")(showMenu)
+    __obj.updateDynamic("shownResults")(shownResults)
+    __obj.updateDynamic("text")(text)
+    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
+    if (activeItem != null) __obj.updateDynamic("activeItem")(activeItem.asInstanceOf[js.Any])
+    if (initialItem != null) __obj.updateDynamic("initialItem")(initialItem.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TypeaheadState[T]]
+  }
+}
+

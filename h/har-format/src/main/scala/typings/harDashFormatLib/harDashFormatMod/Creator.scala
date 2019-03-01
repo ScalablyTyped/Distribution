@@ -14,3 +14,14 @@ trait Creator extends js.Object {
   var version: java.lang.String
 }
 
+object Creator {
+  @scala.inline
+  def apply(name: java.lang.String, version: java.lang.String, comment: java.lang.String = null): Creator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("version")(version)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    __obj.asInstanceOf[Creator]
+  }
+}
+

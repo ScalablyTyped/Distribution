@@ -12,3 +12,13 @@ trait PlayerScoreResetAllResponse extends js.Object {
   var results: js.UndefOr[js.Array[PlayerScoreResetResponse]] = js.undefined
 }
 
+object PlayerScoreResetAllResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, results: js.Array[PlayerScoreResetResponse] = null): PlayerScoreResetAllResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (results != null) __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[PlayerScoreResetAllResponse]
+  }
+}
+

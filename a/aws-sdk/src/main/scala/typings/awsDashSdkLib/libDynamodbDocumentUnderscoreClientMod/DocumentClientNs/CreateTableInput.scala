@@ -44,3 +44,30 @@ trait CreateTableInput extends js.Object {
   var TableName: TableName
 }
 
+object CreateTableInput {
+  @scala.inline
+  def apply(
+    AttributeDefinitions: AttributeDefinitions,
+    KeySchema: KeySchema,
+    TableName: TableName,
+    BillingMode: BillingMode = null,
+    GlobalSecondaryIndexes: GlobalSecondaryIndexList = null,
+    LocalSecondaryIndexes: LocalSecondaryIndexList = null,
+    ProvisionedThroughput: ProvisionedThroughput = null,
+    SSESpecification: SSESpecification = null,
+    StreamSpecification: StreamSpecification = null
+  ): CreateTableInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AttributeDefinitions")(AttributeDefinitions)
+    __obj.updateDynamic("KeySchema")(KeySchema)
+    __obj.updateDynamic("TableName")(TableName)
+    if (BillingMode != null) __obj.updateDynamic("BillingMode")(BillingMode.asInstanceOf[js.Any])
+    if (GlobalSecondaryIndexes != null) __obj.updateDynamic("GlobalSecondaryIndexes")(GlobalSecondaryIndexes)
+    if (LocalSecondaryIndexes != null) __obj.updateDynamic("LocalSecondaryIndexes")(LocalSecondaryIndexes)
+    if (ProvisionedThroughput != null) __obj.updateDynamic("ProvisionedThroughput")(ProvisionedThroughput)
+    if (SSESpecification != null) __obj.updateDynamic("SSESpecification")(SSESpecification)
+    if (StreamSpecification != null) __obj.updateDynamic("StreamSpecification")(StreamSpecification)
+    __obj.asInstanceOf[CreateTableInput]
+  }
+}
+

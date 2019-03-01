@@ -83,3 +83,60 @@ trait ImagingStudySeries extends BackboneElement {
   var uid: oid
 }
 
+object ImagingStudySeries {
+  @scala.inline
+  def apply(
+    modality: Coding,
+    uid: oid,
+    _availability: Element = null,
+    _description: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _number: Element = null,
+    _numberOfInstances: Element = null,
+    _started: Element = null,
+    _uid: Element = null,
+    availability: code = null,
+    bodySite: Coding = null,
+    description: java.lang.String = null,
+    endpoint: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    instance: js.Array[ImagingStudySeriesInstance] = null,
+    laterality: Coding = null,
+    modifierExtension: js.Array[Extension] = null,
+    number: js.UndefOr[unsignedInt] = js.undefined,
+    numberOfInstances: js.UndefOr[unsignedInt] = js.undefined,
+    performer: js.Array[Reference] = null,
+    started: dateTime = null
+  ): ImagingStudySeries = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("modality")(modality)
+    __obj.updateDynamic("uid")(uid)
+    if (_availability != null) __obj.updateDynamic("_availability")(_availability)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_number != null) __obj.updateDynamic("_number")(_number)
+    if (_numberOfInstances != null) __obj.updateDynamic("_numberOfInstances")(_numberOfInstances)
+    if (_started != null) __obj.updateDynamic("_started")(_started)
+    if (_uid != null) __obj.updateDynamic("_uid")(_uid)
+    if (availability != null) __obj.updateDynamic("availability")(availability)
+    if (bodySite != null) __obj.updateDynamic("bodySite")(bodySite)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (laterality != null) __obj.updateDynamic("laterality")(laterality)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (!js.isUndefined(number)) __obj.updateDynamic("number")(number)
+    if (!js.isUndefined(numberOfInstances)) __obj.updateDynamic("numberOfInstances")(numberOfInstances)
+    if (performer != null) __obj.updateDynamic("performer")(performer)
+    if (started != null) __obj.updateDynamic("started")(started)
+    __obj.asInstanceOf[ImagingStudySeries]
+  }
+}
+

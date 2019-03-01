@@ -28,3 +28,34 @@ trait HeaderRendererContext[K, D] extends js.Object {
   var parentElement: stdLib.Element
 }
 
+object HeaderRendererContext {
+  @scala.inline
+  def apply[K, D](
+    columnIndex: scala.Double,
+    componentElement: stdLib.Element,
+    data: java.lang.String,
+    headerContext: atOracleOraclejetLib.Anon_DatasourceD[K, D],
+    parentElement: stdLib.Element,
+    columnHeaderDefaultRenderer: js.Function2[
+      /* param0 */ js.Object, 
+      /* param1 */ js.Function1[/* param0 */ js.Object, scala.Unit], 
+      scala.Unit
+    ] = null,
+    columnHeaderSortableIconRenderer: js.Function2[
+      /* param0 */ js.Object, 
+      /* param1 */ js.Function1[/* param0 */ js.Object, scala.Unit], 
+      scala.Unit
+    ] = null
+  ): HeaderRendererContext[K, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnIndex")(columnIndex)
+    __obj.updateDynamic("componentElement")(componentElement)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("headerContext")(headerContext)
+    __obj.updateDynamic("parentElement")(parentElement)
+    if (columnHeaderDefaultRenderer != null) __obj.updateDynamic("columnHeaderDefaultRenderer")(columnHeaderDefaultRenderer)
+    if (columnHeaderSortableIconRenderer != null) __obj.updateDynamic("columnHeaderSortableIconRenderer")(columnHeaderSortableIconRenderer)
+    __obj.asInstanceOf[HeaderRendererContext[K, D]]
+  }
+}
+

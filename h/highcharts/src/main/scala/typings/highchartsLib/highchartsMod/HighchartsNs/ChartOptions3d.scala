@@ -43,3 +43,24 @@ trait ChartOptions3d extends js.Object {
   var viewDistance: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartOptions3d {
+  @scala.inline
+  def apply(
+    alpha: scala.Int | scala.Double = null,
+    beta: scala.Int | scala.Double = null,
+    depth: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    frame: highchartsLib.Anon_Back = null,
+    viewDistance: scala.Int | scala.Double = null
+  ): ChartOptions3d = {
+    val __obj = js.Dynamic.literal()
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (beta != null) __obj.updateDynamic("beta")(beta.asInstanceOf[js.Any])
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (frame != null) __obj.updateDynamic("frame")(frame)
+    if (viewDistance != null) __obj.updateDynamic("viewDistance")(viewDistance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartOptions3d]
+  }
+}
+

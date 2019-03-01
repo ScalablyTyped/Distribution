@@ -32,3 +32,18 @@ trait ChartBorderData extends js.Object {
   var weight: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartBorderData {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    lineStyle: officeDashJsDashPreviewLib.ExcelNs.ChartLineStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Continuous | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashDotDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Grey25 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Grey50 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Grey75 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RoundDot = null,
+    weight: scala.Int | scala.Double = null
+  ): ChartBorderData = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartBorderData]
+  }
+}
+

@@ -27,3 +27,28 @@ trait Flag extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Flag {
+  @scala.inline
+  def apply(
+    allowedStringValues: js.Array[java.lang.String] = null,
+    appliesTo: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    maxValue: java.lang.String = null,
+    minValue: java.lang.String = null,
+    name: java.lang.String = null,
+    requiresRestart: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null
+  ): Flag = {
+    val __obj = js.Dynamic.literal()
+    if (allowedStringValues != null) __obj.updateDynamic("allowedStringValues")(allowedStringValues)
+    if (appliesTo != null) __obj.updateDynamic("appliesTo")(appliesTo)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(requiresRestart)) __obj.updateDynamic("requiresRestart")(requiresRestart)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Flag]
+  }
+}
+

@@ -20,3 +20,18 @@ trait ApolloUploadOptions extends js.Object {
   var maxFiles: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ApolloUploadOptions {
+  @scala.inline
+  def apply(
+    maxFieldSize: scala.Int | scala.Double = null,
+    maxFileSize: scala.Int | scala.Double = null,
+    maxFiles: scala.Int | scala.Double = null
+  ): ApolloUploadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (maxFieldSize != null) __obj.updateDynamic("maxFieldSize")(maxFieldSize.asInstanceOf[js.Any])
+    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
+    if (maxFiles != null) __obj.updateDynamic("maxFiles")(maxFiles.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApolloUploadOptions]
+  }
+}
+

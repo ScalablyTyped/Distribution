@@ -16,3 +16,24 @@ trait XSpreadsheetView
   def setActiveSheet(xActiveSheet: XSpreadsheet): scala.Unit
 }
 
+object XSpreadsheetView {
+  @scala.inline
+  def apply(
+    ActiveSheet: XSpreadsheet,
+    acquire: js.Function0[scala.Unit],
+    getActiveSheet: js.Function0[XSpreadsheet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setActiveSheet: js.Function1[XSpreadsheet, scala.Unit]
+  ): XSpreadsheetView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveSheet")(ActiveSheet)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getActiveSheet")(getActiveSheet)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setActiveSheet")(setActiveSheet)
+    __obj.asInstanceOf[XSpreadsheetView]
+  }
+}
+

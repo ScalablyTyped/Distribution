@@ -20,3 +20,18 @@ trait RepeatOptions extends js.Object {
   var tz: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RepeatOptions {
+  @scala.inline
+  def apply(
+    endDate: stdLib.Date | java.lang.String | scala.Double = null,
+    limit: scala.Int | scala.Double = null,
+    tz: java.lang.String = null
+  ): RepeatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (tz != null) __obj.updateDynamic("tz")(tz)
+    __obj.asInstanceOf[RepeatOptions]
+  }
+}
+

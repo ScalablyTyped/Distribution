@@ -29,3 +29,26 @@ trait UsageCharge
   var updated_at: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UsageCharge {
+  @scala.inline
+  def apply(
+    admin_graphql_api_id: java.lang.String = null,
+    created_at: java.lang.String = null,
+    description: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    price: scala.Int | scala.Double = null,
+    recurring_application_charge_id: scala.Int | scala.Double = null,
+    updated_at: java.lang.String = null
+  ): UsageCharge = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (recurring_application_charge_id != null) __obj.updateDynamic("recurring_application_charge_id")(recurring_application_charge_id.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[UsageCharge]
+  }
+}
+

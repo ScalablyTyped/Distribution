@@ -32,3 +32,52 @@ trait Props extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    allowResize: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    defaultSize: Size = null,
+    maxSize: Size = null,
+    minSize: Size = null,
+    onChange: js.Function1[/* newSize */ scala.Double, scala.Unit] = null,
+    onDragFinished: js.Function1[/* newSize */ scala.Double, scala.Unit] = null,
+    onDragStarted: js.Function0[scala.Unit] = null,
+    onResizerClick: js.Function1[/* event */ reactLib.MouseEvent, scala.Unit] = null,
+    onResizerDoubleClick: js.Function1[/* event */ reactLib.MouseEvent, scala.Unit] = null,
+    pane1Style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    pane2Style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    paneStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    primary: reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.first | reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.second = null,
+    resizerClassName: java.lang.String = null,
+    resizerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    size: Size = null,
+    split: reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.vertical | reactDashSplitDashPaneLib.reactDashSplitDashPaneLibStrings.horizontal = null,
+    step: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowResize)) __obj.updateDynamic("allowResize")(allowResize)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (defaultSize != null) __obj.updateDynamic("defaultSize")(defaultSize.asInstanceOf[js.Any])
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onDragFinished != null) __obj.updateDynamic("onDragFinished")(onDragFinished)
+    if (onDragStarted != null) __obj.updateDynamic("onDragStarted")(onDragStarted)
+    if (onResizerClick != null) __obj.updateDynamic("onResizerClick")(onResizerClick)
+    if (onResizerDoubleClick != null) __obj.updateDynamic("onResizerDoubleClick")(onResizerDoubleClick)
+    if (pane1Style != null) __obj.updateDynamic("pane1Style")(pane1Style)
+    if (pane2Style != null) __obj.updateDynamic("pane2Style")(pane2Style)
+    if (paneStyle != null) __obj.updateDynamic("paneStyle")(paneStyle)
+    if (primary != null) __obj.updateDynamic("primary")(primary.asInstanceOf[js.Any])
+    if (resizerClassName != null) __obj.updateDynamic("resizerClassName")(resizerClassName)
+    if (resizerStyle != null) __obj.updateDynamic("resizerStyle")(resizerStyle)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (split != null) __obj.updateDynamic("split")(split.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[Props]
+  }
+}
+

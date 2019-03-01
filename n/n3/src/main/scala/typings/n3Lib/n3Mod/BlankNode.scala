@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("n3", "BlankNode")
 @js.native
 class BlankNode protected ()
-  extends rdfDashJsLib.rdfDashJsMod.BlankNode {
+  extends rdfDashJsLib.rdfDashJsMod.BlankNode
+     with Quad_Graph
+     with Quad_Object
+     with Quad_Subject
+     with Term {
   def this(name: java.lang.String) = this()
   val id: java.lang.String = js.native
   /**

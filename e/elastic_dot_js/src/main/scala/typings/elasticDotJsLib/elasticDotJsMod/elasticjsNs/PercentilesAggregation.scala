@@ -61,3 +61,34 @@ trait PercentilesAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object PercentilesAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    compression: js.Function1[scala.Double, PercentilesAggregation],
+    field: js.Function1[java.lang.String, PercentilesAggregation],
+    keyed: js.Function1[scala.Boolean, PercentilesAggregation],
+    lang: js.Function1[java.lang.String, PercentilesAggregation],
+    params: js.Function1[js.Object, PercentilesAggregation],
+    percent: js.Function1[scala.Double, PercentilesAggregation],
+    percents: js.Function1[js.Array[scala.Double], PercentilesAggregation],
+    script: js.Function1[java.lang.String, PercentilesAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, PercentilesAggregation],
+    toJSON: js.Function0[js.Any]
+  ): PercentilesAggregation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("compression")(compression)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("keyed")(keyed)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("percent")(percent)
+    __obj.updateDynamic("percents")(percents)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("scriptValuesSorted")(scriptValuesSorted)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[PercentilesAggregation]
+  }
+}
+

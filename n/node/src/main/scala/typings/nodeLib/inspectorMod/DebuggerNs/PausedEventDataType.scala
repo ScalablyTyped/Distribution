@@ -39,3 +39,26 @@ trait PausedEventDataType extends js.Object {
   var reason: java.lang.String
 }
 
+object PausedEventDataType {
+  @scala.inline
+  def apply(
+    callFrames: js.Array[CallFrame],
+    reason: java.lang.String,
+    asyncCallStackTraceId: nodeLib.inspectorMod.RuntimeNs.StackTraceId = null,
+    asyncStackTrace: nodeLib.inspectorMod.RuntimeNs.StackTrace = null,
+    asyncStackTraceId: nodeLib.inspectorMod.RuntimeNs.StackTraceId = null,
+    data: js.Object = null,
+    hitBreakpoints: js.Array[java.lang.String] = null
+  ): PausedEventDataType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callFrames")(callFrames)
+    __obj.updateDynamic("reason")(reason)
+    if (asyncCallStackTraceId != null) __obj.updateDynamic("asyncCallStackTraceId")(asyncCallStackTraceId)
+    if (asyncStackTrace != null) __obj.updateDynamic("asyncStackTrace")(asyncStackTrace)
+    if (asyncStackTraceId != null) __obj.updateDynamic("asyncStackTraceId")(asyncStackTraceId)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (hitBreakpoints != null) __obj.updateDynamic("hitBreakpoints")(hitBreakpoints)
+    __obj.asInstanceOf[PausedEventDataType]
+  }
+}
+

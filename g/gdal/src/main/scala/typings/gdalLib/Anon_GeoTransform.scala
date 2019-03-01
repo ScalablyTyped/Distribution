@@ -10,3 +10,13 @@ trait Anon_GeoTransform extends js.Object {
   var rasterSize: js.Any
 }
 
+object Anon_GeoTransform {
+  @scala.inline
+  def apply(geoTransform: js.Any, rasterSize: js.Any): Anon_GeoTransform = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("geoTransform")(geoTransform)
+    __obj.updateDynamic("rasterSize")(rasterSize)
+    __obj.asInstanceOf[Anon_GeoTransform]
+  }
+}
+

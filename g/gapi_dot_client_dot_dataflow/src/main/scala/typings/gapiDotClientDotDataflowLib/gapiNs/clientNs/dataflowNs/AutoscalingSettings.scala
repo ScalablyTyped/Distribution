@@ -12,3 +12,13 @@ trait AutoscalingSettings extends js.Object {
   var maxNumWorkers: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AutoscalingSettings {
+  @scala.inline
+  def apply(algorithm: java.lang.String = null, maxNumWorkers: scala.Int | scala.Double = null): AutoscalingSettings = {
+    val __obj = js.Dynamic.literal()
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (maxNumWorkers != null) __obj.updateDynamic("maxNumWorkers")(maxNumWorkers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AutoscalingSettings]
+  }
+}
+

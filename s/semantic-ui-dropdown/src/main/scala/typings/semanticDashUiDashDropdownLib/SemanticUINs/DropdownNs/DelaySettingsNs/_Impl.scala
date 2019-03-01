@@ -24,3 +24,15 @@ trait _Impl extends js.Object {
   var touch: scala.Double
 }
 
+object _Impl {
+  @scala.inline
+  def apply(hide: scala.Double, search: scala.Double, show: scala.Double, touch: scala.Double): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("touch")(touch)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

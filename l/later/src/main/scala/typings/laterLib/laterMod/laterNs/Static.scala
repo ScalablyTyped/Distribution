@@ -95,3 +95,48 @@ trait Static extends js.Object {
   def setTimeout(callback: js.Function0[scala.Unit], time: ScheduleData): Timer
 }
 
+object Static {
+  @scala.inline
+  def apply(
+    date: DateProvider,
+    day: TimePeriod,
+    dayOfWeek: TimePeriod,
+    dayOfWeekCount: TimePeriod,
+    dayOfYear: TimePeriod,
+    hour: TimePeriod,
+    minute: TimePeriod,
+    modifier: ModifierStatic,
+    month: TimePeriod,
+    parse: ParseStatic,
+    schedule: js.Function1[js.Any, Schedule],
+    second: TimePeriod,
+    setInterval: js.Function2[js.Function0[scala.Unit], ScheduleData, Timer],
+    setTimeout: js.Function2[js.Function0[scala.Unit], ScheduleData, Timer],
+    time: TimePeriod,
+    weekOfMonth: TimePeriod,
+    weekOfYear: TimePeriod,
+    year: TimePeriod
+  ): Static = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("day")(day)
+    __obj.updateDynamic("dayOfWeek")(dayOfWeek)
+    __obj.updateDynamic("dayOfWeekCount")(dayOfWeekCount)
+    __obj.updateDynamic("dayOfYear")(dayOfYear)
+    __obj.updateDynamic("hour")(hour)
+    __obj.updateDynamic("minute")(minute)
+    __obj.updateDynamic("modifier")(modifier)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("schedule")(schedule)
+    __obj.updateDynamic("second")(second)
+    __obj.updateDynamic("setInterval")(setInterval)
+    __obj.updateDynamic("setTimeout")(setTimeout)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("weekOfMonth")(weekOfMonth)
+    __obj.updateDynamic("weekOfYear")(weekOfYear)
+    __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[Static]
+  }
+}
+

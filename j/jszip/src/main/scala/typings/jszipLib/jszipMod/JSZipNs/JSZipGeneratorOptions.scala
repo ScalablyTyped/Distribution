@@ -23,3 +23,28 @@ trait JSZipGeneratorOptions[T /* <: OutputType */] extends js.Object {
   var `type`: js.UndefOr[T] = js.undefined
 }
 
+object JSZipGeneratorOptions {
+  @scala.inline
+  def apply[T /* <: OutputType */](
+    comment: java.lang.String = null,
+    compression: jszipLib.Compression = null,
+    compressionOptions: jszipLib.Anon_Level = null,
+    encodeFileName: js.Function1[/* filename */ java.lang.String, java.lang.String] = null,
+    mimeType: java.lang.String = null,
+    platform: jszipLib.jszipLibStrings.DOS | jszipLib.jszipLibStrings.UNIX = null,
+    streamFiles: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: T = null
+  ): JSZipGeneratorOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (compression != null) __obj.updateDynamic("compression")(compression)
+    if (compressionOptions != null) __obj.updateDynamic("compressionOptions")(compressionOptions)
+    if (encodeFileName != null) __obj.updateDynamic("encodeFileName")(encodeFileName)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (platform != null) __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    if (!js.isUndefined(streamFiles)) __obj.updateDynamic("streamFiles")(streamFiles)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSZipGeneratorOptions[T]]
+  }
+}
+

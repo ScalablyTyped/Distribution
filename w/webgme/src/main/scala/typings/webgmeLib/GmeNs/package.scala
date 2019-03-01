@@ -29,6 +29,5 @@ package object GmeNs {
     * "Technical events" not used.
     */
   type TerritoryEventHandler = js.Function1[/* event */ js.Array[Event], scala.Unit]
-  type TerritoryEventType = webgmeLib.webgmeLibStrings.load | webgmeLib.webgmeLibStrings.unload | webgmeLib.webgmeLibStrings.update | webgmeLib.webgmeLibStrings.complete | webgmeLib.webgmeLibStrings.incomplete
   type TerritoryId = webgmeLib.CoreNs.GUID
 }

@@ -43,13 +43,15 @@ object engineDotIoLibStrings {
   sealed trait packetCreate extends js.Object
   
   @js.native
-  sealed trait polling extends js.Object
+  sealed trait polling
+    extends engineDotIoLib.engineDotIoMod.engineNs.Transport
   
   @js.native
   sealed trait uws extends js.Object
   
   @js.native
-  sealed trait websocket extends js.Object
+  sealed trait websocket
+    extends engineDotIoLib.engineDotIoMod.engineNs.Transport
   
   @js.native
   sealed trait ws extends js.Object

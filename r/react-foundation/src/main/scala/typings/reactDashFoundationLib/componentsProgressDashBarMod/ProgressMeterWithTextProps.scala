@@ -288,3 +288,18 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProgressMeterWithTextProps {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement] = null
+  ): ProgressMeterWithTextProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    __obj.asInstanceOf[ProgressMeterWithTextProps]
+  }
+}
+

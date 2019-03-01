@@ -14,3 +14,24 @@ trait RadioButtonProps extends js.Object {
   var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.undefined
 }
 
+object RadioButtonProps {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    onChange: js.Function1[/* repeated */ js.Any, _] = null
+  ): RadioButtonProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    __obj.asInstanceOf[RadioButtonProps]
+  }
+}
+

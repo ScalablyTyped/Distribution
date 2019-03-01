@@ -17,3 +17,30 @@ trait Anon_HeadersPreserveQueryParameters extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_HeadersPreserveQueryParameters {
+  @scala.inline
+  def apply(
+    headers: js.Any = null,
+    preserveQueryParameters: js.UndefOr[scala.Boolean] = js.undefined,
+    proxy: cesiumLib.cesiumMod.CesiumNs.DefaultProxy = null,
+    queryParameters: js.Any = null,
+    request: stdLib.Request = null,
+    retryAttempts: scala.Int | scala.Double = null,
+    retryCallback: cesiumLib.cesiumMod.CesiumNs.ResourceNs.RetryCallback = null,
+    templateValues: js.Any = null,
+    url: java.lang.String = null
+  ): Anon_HeadersPreserveQueryParameters = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(preserveQueryParameters)) __obj.updateDynamic("preserveQueryParameters")(preserveQueryParameters)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (retryAttempts != null) __obj.updateDynamic("retryAttempts")(retryAttempts.asInstanceOf[js.Any])
+    if (retryCallback != null) __obj.updateDynamic("retryCallback")(retryCallback)
+    if (templateValues != null) __obj.updateDynamic("templateValues")(templateValues)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_HeadersPreserveQueryParameters]
+  }
+}
+

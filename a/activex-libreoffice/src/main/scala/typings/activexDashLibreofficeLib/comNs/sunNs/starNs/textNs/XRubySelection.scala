@@ -27,3 +27,29 @@ trait XRubySelection
   ): scala.Unit
 }
 
+object XRubySelection {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getRubyList: js.Function1[
+      scala.Boolean, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setRubyList: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues], 
+      scala.Boolean, 
+      scala.Unit
+    ]
+  ): XRubySelection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getRubyList")(getRubyList)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setRubyList")(setRubyList)
+    __obj.asInstanceOf[XRubySelection]
+  }
+}
+

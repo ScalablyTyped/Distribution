@@ -56,3 +56,23 @@ trait PrintHandlers extends js.Object {
   var substituteNode: js.UndefOr[js.Function2[/* hint */ EmitHint, /* node */ Node, Node]] = js.undefined
 }
 
+object PrintHandlers {
+  @scala.inline
+  def apply(
+    hasGlobalName: js.Function1[/* name */ java.lang.String, scala.Boolean] = null,
+    onEmitNode: js.Function3[
+      /* hint */ EmitHint, 
+      /* node */ js.UndefOr[Node], 
+      /* emitCallback */ js.Function2[/* hint */ EmitHint, /* node */ js.UndefOr[Node], scala.Unit], 
+      scala.Unit
+    ] = null,
+    substituteNode: js.Function2[/* hint */ EmitHint, /* node */ Node, Node] = null
+  ): PrintHandlers = {
+    val __obj = js.Dynamic.literal()
+    if (hasGlobalName != null) __obj.updateDynamic("hasGlobalName")(hasGlobalName)
+    if (onEmitNode != null) __obj.updateDynamic("onEmitNode")(onEmitNode)
+    if (substituteNode != null) __obj.updateDynamic("substituteNode")(substituteNode)
+    __obj.asInstanceOf[PrintHandlers]
+  }
+}
+

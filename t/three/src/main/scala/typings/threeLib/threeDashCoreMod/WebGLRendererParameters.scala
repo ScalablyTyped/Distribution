@@ -54,3 +54,34 @@ trait WebGLRendererParameters extends js.Object {
   var stencil: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WebGLRendererParameters {
+  @scala.inline
+  def apply(
+    alpha: js.UndefOr[scala.Boolean] = js.undefined,
+    antialias: js.UndefOr[scala.Boolean] = js.undefined,
+    canvas: stdLib.HTMLCanvasElement = null,
+    context: stdLib.WebGLRenderingContext = null,
+    depth: js.UndefOr[scala.Boolean] = js.undefined,
+    logarithmicDepthBuffer: js.UndefOr[scala.Boolean] = js.undefined,
+    powerPreference: java.lang.String = null,
+    precision: java.lang.String = null,
+    premultipliedAlpha: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined,
+    stencil: js.UndefOr[scala.Boolean] = js.undefined
+  ): WebGLRendererParameters = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alpha)) __obj.updateDynamic("alpha")(alpha)
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(depth)) __obj.updateDynamic("depth")(depth)
+    if (!js.isUndefined(logarithmicDepthBuffer)) __obj.updateDynamic("logarithmicDepthBuffer")(logarithmicDepthBuffer)
+    if (powerPreference != null) __obj.updateDynamic("powerPreference")(powerPreference)
+    if (precision != null) __obj.updateDynamic("precision")(precision)
+    if (!js.isUndefined(premultipliedAlpha)) __obj.updateDynamic("premultipliedAlpha")(premultipliedAlpha)
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
+    if (!js.isUndefined(stencil)) __obj.updateDynamic("stencil")(stencil)
+    __obj.asInstanceOf[WebGLRendererParameters]
+  }
+}
+

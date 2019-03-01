@@ -24,3 +24,28 @@ trait MarketplaceNote extends js.Object {
   var timestampMs: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MarketplaceNote {
+  @scala.inline
+  def apply(
+    creatorRole: java.lang.String = null,
+    dealId: java.lang.String = null,
+    kind: java.lang.String = null,
+    note: java.lang.String = null,
+    noteId: java.lang.String = null,
+    proposalId: java.lang.String = null,
+    proposalRevisionNumber: java.lang.String = null,
+    timestampMs: java.lang.String = null
+  ): MarketplaceNote = {
+    val __obj = js.Dynamic.literal()
+    if (creatorRole != null) __obj.updateDynamic("creatorRole")(creatorRole)
+    if (dealId != null) __obj.updateDynamic("dealId")(dealId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (noteId != null) __obj.updateDynamic("noteId")(noteId)
+    if (proposalId != null) __obj.updateDynamic("proposalId")(proposalId)
+    if (proposalRevisionNumber != null) __obj.updateDynamic("proposalRevisionNumber")(proposalRevisionNumber)
+    if (timestampMs != null) __obj.updateDynamic("timestampMs")(timestampMs)
+    __obj.asInstanceOf[MarketplaceNote]
+  }
+}
+

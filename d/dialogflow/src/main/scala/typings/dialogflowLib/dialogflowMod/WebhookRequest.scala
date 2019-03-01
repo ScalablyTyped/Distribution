@@ -12,3 +12,20 @@ trait WebhookRequest extends js.Object {
   var session: java.lang.String
 }
 
+object WebhookRequest {
+  @scala.inline
+  def apply(
+    queryResult: QueryResult,
+    responseId: java.lang.String,
+    session: java.lang.String,
+    originalDetectIntentRequest: js.Any = null
+  ): WebhookRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("queryResult")(queryResult)
+    __obj.updateDynamic("responseId")(responseId)
+    __obj.updateDynamic("session")(session)
+    if (originalDetectIntentRequest != null) __obj.updateDynamic("originalDetectIntentRequest")(originalDetectIntentRequest)
+    __obj.asInstanceOf[WebhookRequest]
+  }
+}
+

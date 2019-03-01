@@ -10,7 +10,8 @@ object handsontableLibStrings {
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.SortOrderType
   
   @js.native
   sealed trait autoColumnSize extends js.Object
@@ -22,10 +23,12 @@ object handsontableLibStrings {
   sealed trait autofill extends js.Object
   
   @js.native
-  sealed trait begins_with extends js.Object
+  sealed trait begins_with
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
-  sealed trait between extends js.Object
+  sealed trait between
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
   sealed trait bindRowsWithHeaders extends js.Object
@@ -37,7 +40,8 @@ object handsontableLibStrings {
   sealed trait `bottom-left-corner` extends js.Object
   
   @js.native
-  sealed trait by_value extends js.Object
+  sealed trait by_value
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
   sealed trait collapsibleColumns extends js.Object
@@ -52,10 +56,12 @@ object handsontableLibStrings {
   sealed trait comments extends js.Object
   
   @js.native
-  sealed trait conjunction extends js.Object
+  sealed trait conjunction
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.OperationType
   
   @js.native
-  sealed trait contains extends js.Object
+  sealed trait contains
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
   sealed trait contextMenu extends js.Object
@@ -64,10 +70,12 @@ object handsontableLibStrings {
   sealed trait copyPaste extends js.Object
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends handsontableLib.handsontableMod.HandsontableNs.columnSortingNs.SortOrderType
   
   @js.native
-  sealed trait disjunction extends js.Object
+  sealed trait disjunction
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.OperationType
   
   @js.native
   sealed trait dragToScroll extends js.Object
@@ -76,13 +84,16 @@ object handsontableLibStrings {
   sealed trait dropdownMenu extends js.Object
   
   @js.native
-  sealed trait empty extends js.Object
+  sealed trait empty
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
-  sealed trait ends_with extends js.Object
+  sealed trait ends_with
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
-  sealed trait eq extends js.Object
+  sealed trait eq
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
   sealed trait exportFile extends js.Object
@@ -97,10 +108,12 @@ object handsontableLibStrings {
   sealed trait ganttChart extends js.Object
   
   @js.native
-  sealed trait gt extends js.Object
+  sealed trait gt
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
-  sealed trait gte extends js.Object
+  sealed trait gte
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
   sealed trait headerTooltips extends js.Object
@@ -121,10 +134,12 @@ object handsontableLibStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait lt extends js.Object
+  sealed trait lt
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
-  sealed trait lte extends js.Object
+  sealed trait lte
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
   sealed trait manualColumnFreeze extends js.Object
@@ -154,7 +169,8 @@ object handsontableLibStrings {
   sealed trait multipleSelectionHandles extends js.Object
   
   @js.native
-  sealed trait neq extends js.Object
+  sealed trait neq
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
   sealed trait nestedHeaders extends js.Object
@@ -163,19 +179,23 @@ object handsontableLibStrings {
   sealed trait nestedRows extends js.Object
   
   @js.native
-  sealed trait not_between extends js.Object
+  sealed trait not_between
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
-  sealed trait not_contains extends js.Object
+  sealed trait not_contains
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
-  sealed trait not_empty extends js.Object
+  sealed trait not_empty
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.FiltersPluginNs.ConditionName
   
   @js.native
   sealed trait observeChanges extends js.Object
   
   @js.native
-  sealed trait overwrite extends js.Object
+  sealed trait overwrite
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.PasteModeType
   
   @js.native
   sealed trait range extends js.Object
@@ -190,10 +210,12 @@ object handsontableLibStrings {
   sealed trait search extends js.Object
   
   @js.native
-  sealed trait shift_down extends js.Object
+  sealed trait shift_down
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.PasteModeType
   
   @js.native
-  sealed trait shift_right extends js.Object
+  sealed trait shift_right
+    extends handsontableLib.handsontableMod.HandsontableNs.pluginsNs.PasteModeType
   
   @js.native
   sealed trait single extends js.Object

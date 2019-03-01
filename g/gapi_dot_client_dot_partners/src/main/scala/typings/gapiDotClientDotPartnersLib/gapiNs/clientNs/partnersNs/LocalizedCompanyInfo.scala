@@ -20,3 +20,20 @@ trait LocalizedCompanyInfo extends js.Object {
   var overview: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LocalizedCompanyInfo {
+  @scala.inline
+  def apply(
+    countryCodes: js.Array[java.lang.String] = null,
+    displayName: java.lang.String = null,
+    languageCode: java.lang.String = null,
+    overview: java.lang.String = null
+  ): LocalizedCompanyInfo = {
+    val __obj = js.Dynamic.literal()
+    if (countryCodes != null) __obj.updateDynamic("countryCodes")(countryCodes)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (overview != null) __obj.updateDynamic("overview")(overview)
+    __obj.asInstanceOf[LocalizedCompanyInfo]
+  }
+}
+

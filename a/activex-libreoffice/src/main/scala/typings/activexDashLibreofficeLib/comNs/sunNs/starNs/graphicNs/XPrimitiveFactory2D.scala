@@ -34,3 +34,30 @@ trait XPrimitiveFactory2D
   ): activexDashInteropLib.SafeArray[XPrimitive2D]
 }
 
+object XPrimitiveFactory2D {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createPrimitivesFromXDrawPage: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashInteropLib.SafeArray[XPrimitive2D]
+    ],
+    createPrimitivesFromXShape: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashInteropLib.SafeArray[XPrimitive2D]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPrimitiveFactory2D = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createPrimitivesFromXDrawPage")(createPrimitivesFromXDrawPage)
+    __obj.updateDynamic("createPrimitivesFromXShape")(createPrimitivesFromXShape)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XPrimitiveFactory2D]
+  }
+}
+

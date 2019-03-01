@@ -21,3 +21,13 @@ trait Anon_ContentType extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ContentType {
+  @scala.inline
+  def apply(contentType: java.lang.String = null, url: java.lang.String = null): Anon_ContentType = {
+    val __obj = js.Dynamic.literal()
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_ContentType]
+  }
+}
+

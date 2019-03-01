@@ -21,3 +21,38 @@ trait KeyboardProps extends js.Object {
   var target: js.UndefOr[grommetLib.grommetLibStrings.component | grommetLib.grommetLibStrings.document] = js.undefined
 }
 
+object KeyboardProps {
+  @scala.inline
+  def apply(
+    onBackspace: js.Function1[/* repeated */ js.Any, _] = null,
+    onComma: js.Function1[/* repeated */ js.Any, _] = null,
+    onDown: js.Function1[/* repeated */ js.Any, _] = null,
+    onEnter: js.Function1[/* repeated */ js.Any, _] = null,
+    onEsc: js.Function1[/* repeated */ js.Any, _] = null,
+    onKeyDown: js.Function1[/* repeated */ js.Any, _] = null,
+    onLeft: js.Function1[/* repeated */ js.Any, _] = null,
+    onRight: js.Function1[/* repeated */ js.Any, _] = null,
+    onShift: js.Function1[/* repeated */ js.Any, _] = null,
+    onSpace: js.Function1[/* repeated */ js.Any, _] = null,
+    onTab: js.Function1[/* repeated */ js.Any, _] = null,
+    onUp: js.Function1[/* repeated */ js.Any, _] = null,
+    target: grommetLib.grommetLibStrings.component | grommetLib.grommetLibStrings.document = null
+  ): KeyboardProps = {
+    val __obj = js.Dynamic.literal()
+    if (onBackspace != null) __obj.updateDynamic("onBackspace")(onBackspace)
+    if (onComma != null) __obj.updateDynamic("onComma")(onComma)
+    if (onDown != null) __obj.updateDynamic("onDown")(onDown)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (onEsc != null) __obj.updateDynamic("onEsc")(onEsc)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onLeft != null) __obj.updateDynamic("onLeft")(onLeft)
+    if (onRight != null) __obj.updateDynamic("onRight")(onRight)
+    if (onShift != null) __obj.updateDynamic("onShift")(onShift)
+    if (onSpace != null) __obj.updateDynamic("onSpace")(onSpace)
+    if (onTab != null) __obj.updateDynamic("onTab")(onTab)
+    if (onUp != null) __obj.updateDynamic("onUp")(onUp)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyboardProps]
+  }
+}
+

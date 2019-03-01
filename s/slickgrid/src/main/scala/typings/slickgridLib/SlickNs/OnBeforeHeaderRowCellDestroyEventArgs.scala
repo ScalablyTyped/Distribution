@@ -11,3 +11,14 @@ trait OnBeforeHeaderRowCellDestroyEventArgs[T /* <: SlickData */] extends GridEv
   var node: stdLib.HTMLElement
 }
 
+object OnBeforeHeaderRowCellDestroyEventArgs {
+  @scala.inline
+  def apply[T /* <: SlickData */](column: Column[T], grid: Grid[T], node: stdLib.HTMLElement): OnBeforeHeaderRowCellDestroyEventArgs[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("grid")(grid)
+    __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[OnBeforeHeaderRowCellDestroyEventArgs[T]]
+  }
+}
+

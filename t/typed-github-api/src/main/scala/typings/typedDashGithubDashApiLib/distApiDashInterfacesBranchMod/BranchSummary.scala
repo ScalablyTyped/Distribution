@@ -13,3 +13,22 @@ trait BranchSummary extends js.Object {
   var user: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
 }
 
+object BranchSummary {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    ref: java.lang.String,
+    repo: typedDashGithubDashApiLib.distApiDashInterfacesRepositoryMod.Repository,
+    sha: java.lang.String,
+    user: typedDashGithubDashApiLib.distApiDashInterfacesUserMod.UserSummary
+  ): BranchSummary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("ref")(ref)
+    __obj.updateDynamic("repo")(repo)
+    __obj.updateDynamic("sha")(sha)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[BranchSummary]
+  }
+}
+

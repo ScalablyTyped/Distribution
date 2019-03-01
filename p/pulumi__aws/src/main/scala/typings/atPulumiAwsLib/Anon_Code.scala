@@ -37,3 +37,24 @@ trait Anon_Code extends js.Object {
   var runtime: js.UndefOr[atPulumiAwsLib.lambdaRuntimesMod.Runtime] = js.undefined
 }
 
+object Anon_Code {
+  @scala.inline
+  def apply(
+    code: js.UndefOr[scala.Nothing] = js.undefined,
+    codePathOptions: atPulumiPulumiLib.runtimeClosureCodePathsMod.CodePathOptions = null,
+    handler: js.UndefOr[scala.Nothing] = js.undefined,
+    policies: js.Array[atPulumiAwsLib.arnMod.ARN] = null,
+    role: atPulumiAwsLib.iamMod.Role = null,
+    runtime: atPulumiAwsLib.lambdaRuntimesMod.Runtime = null
+  ): Anon_Code = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(code)) __obj.updateDynamic("code")(code)
+    if (codePathOptions != null) __obj.updateDynamic("codePathOptions")(codePathOptions)
+    if (!js.isUndefined(handler)) __obj.updateDynamic("handler")(handler)
+    if (policies != null) __obj.updateDynamic("policies")(policies)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (runtime != null) __obj.updateDynamic("runtime")(runtime)
+    __obj.asInstanceOf[Anon_Code]
+  }
+}
+

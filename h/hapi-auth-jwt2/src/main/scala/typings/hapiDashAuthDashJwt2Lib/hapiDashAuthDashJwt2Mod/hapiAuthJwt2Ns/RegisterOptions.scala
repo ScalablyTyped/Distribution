@@ -18,3 +18,18 @@ trait RegisterOptions extends js.Object {
   ] = js.undefined
 }
 
+object RegisterOptions {
+  @scala.inline
+  def apply(
+    verify: js.Function2[
+      /* decoded */ js.Any, 
+      /* request */ hapiLib.hapiMod.Request, 
+      js.Promise[hapiDashAuthDashJwt2Lib.Anon_Credentials]
+    ] = null
+  ): RegisterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (verify != null) __obj.updateDynamic("verify")(verify)
+    __obj.asInstanceOf[RegisterOptions]
+  }
+}
+

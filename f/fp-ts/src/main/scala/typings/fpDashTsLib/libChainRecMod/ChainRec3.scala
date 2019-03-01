@@ -16,3 +16,41 @@ trait ChainRec3[F /* <: fpDashTsLib.libHKTMod.URIS3 */]
   ): fpDashTsLib.libHKTMod.Type3[F, U, L, B]
 }
 
+object ChainRec3 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
+    URI: F,
+    ap: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Function1[js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    chain: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    chainRec: js.Function2[
+      js.Any, 
+      js.Function1[
+        js.Any, 
+        fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]]
+      ], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ]
+  ): ChainRec3[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("ap")(ap)
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("chainRec")(chainRec)
+    __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[ChainRec3[F]]
+  }
+}
+

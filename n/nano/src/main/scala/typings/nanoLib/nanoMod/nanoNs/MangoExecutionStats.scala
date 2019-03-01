@@ -20,3 +20,22 @@ trait MangoExecutionStats extends js.Object {
   var total_quorum_docs_examined: scala.Double
 }
 
+object MangoExecutionStats {
+  @scala.inline
+  def apply(
+    execution_time_ms: scala.Double,
+    results_returned: scala.Double,
+    total_docs_examined: scala.Double,
+    total_keys_examined: scala.Double,
+    total_quorum_docs_examined: scala.Double
+  ): MangoExecutionStats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execution_time_ms")(execution_time_ms)
+    __obj.updateDynamic("results_returned")(results_returned)
+    __obj.updateDynamic("total_docs_examined")(total_docs_examined)
+    __obj.updateDynamic("total_keys_examined")(total_keys_examined)
+    __obj.updateDynamic("total_quorum_docs_examined")(total_quorum_docs_examined)
+    __obj.asInstanceOf[MangoExecutionStats]
+  }
+}
+

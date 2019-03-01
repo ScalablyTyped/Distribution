@@ -23,3 +23,13 @@ trait SupplementalGroupsStrategyOptions extends js.Object {
   val rule: java.lang.String
 }
 
+object SupplementalGroupsStrategyOptions {
+  @scala.inline
+  def apply(ranges: js.Array[IDRange], rule: java.lang.String): SupplementalGroupsStrategyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ranges")(ranges)
+    __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[SupplementalGroupsStrategyOptions]
+  }
+}
+

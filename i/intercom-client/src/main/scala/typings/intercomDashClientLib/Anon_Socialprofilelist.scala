@@ -10,3 +10,15 @@ trait Anon_Socialprofilelist extends js.Object {
   var `type`: intercomDashClientLib.intercomDashClientLibStrings.social_profileDOTlist
 }
 
+object Anon_Socialprofilelist {
+  @scala.inline
+  def apply(
+    social_profiles: js.Array[intercomDashClientLib.userMod.SocialProfile],
+    `type`: intercomDashClientLib.intercomDashClientLibStrings.social_profileDOTlist
+  ): Anon_Socialprofilelist = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("social_profiles")(social_profiles)
+    __obj.asInstanceOf[Anon_Socialprofilelist]
+  }
+}
+

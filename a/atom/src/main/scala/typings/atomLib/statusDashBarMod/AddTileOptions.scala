@@ -18,3 +18,13 @@ trait AddTileOptions extends js.Object {
   var priority: scala.Double
 }
 
+object AddTileOptions {
+  @scala.inline
+  def apply(item: js.Object, priority: scala.Double): AddTileOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("priority")(priority)
+    __obj.asInstanceOf[AddTileOptions]
+  }
+}
+

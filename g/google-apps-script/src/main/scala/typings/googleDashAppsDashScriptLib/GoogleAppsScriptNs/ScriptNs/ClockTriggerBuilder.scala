@@ -25,3 +25,43 @@ trait ClockTriggerBuilder extends js.Object {
   def onWeekDay(day: googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday): ClockTriggerBuilder
 }
 
+object ClockTriggerBuilder {
+  @scala.inline
+  def apply(
+    after: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ClockTriggerBuilder],
+    at: js.Function1[stdLib.Date, ClockTriggerBuilder],
+    atDate: js.Function3[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      ClockTriggerBuilder
+    ],
+    atHour: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ClockTriggerBuilder],
+    create: js.Function0[Trigger],
+    everyDays: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ClockTriggerBuilder],
+    everyHours: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ClockTriggerBuilder],
+    everyMinutes: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ClockTriggerBuilder],
+    everyWeeks: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ClockTriggerBuilder],
+    inTimezone: js.Function1[java.lang.String, ClockTriggerBuilder],
+    nearMinute: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ClockTriggerBuilder],
+    onMonthDay: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, ClockTriggerBuilder],
+    onWeekDay: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Weekday, ClockTriggerBuilder]
+  ): ClockTriggerBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("after")(after)
+    __obj.updateDynamic("at")(at)
+    __obj.updateDynamic("atDate")(atDate)
+    __obj.updateDynamic("atHour")(atHour)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("everyDays")(everyDays)
+    __obj.updateDynamic("everyHours")(everyHours)
+    __obj.updateDynamic("everyMinutes")(everyMinutes)
+    __obj.updateDynamic("everyWeeks")(everyWeeks)
+    __obj.updateDynamic("inTimezone")(inTimezone)
+    __obj.updateDynamic("nearMinute")(nearMinute)
+    __obj.updateDynamic("onMonthDay")(onMonthDay)
+    __obj.updateDynamic("onWeekDay")(onWeekDay)
+    __obj.asInstanceOf[ClockTriggerBuilder]
+  }
+}
+

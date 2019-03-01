@@ -32,3 +32,30 @@ trait PlaylistItemSnippet extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PlaylistItemSnippet {
+  @scala.inline
+  def apply(
+    channelId: java.lang.String = null,
+    channelTitle: java.lang.String = null,
+    description: java.lang.String = null,
+    playlistId: java.lang.String = null,
+    position: scala.Int | scala.Double = null,
+    publishedAt: java.lang.String = null,
+    resourceId: ResourceId = null,
+    thumbnails: ThumbnailDetails = null,
+    title: java.lang.String = null
+  ): PlaylistItemSnippet = {
+    val __obj = js.Dynamic.literal()
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (channelTitle != null) __obj.updateDynamic("channelTitle")(channelTitle)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt)
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[PlaylistItemSnippet]
+  }
+}
+

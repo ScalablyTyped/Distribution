@@ -16,3 +16,20 @@ trait Token extends js.Object {
   var text: js.UndefOr[TextSpan] = js.undefined
 }
 
+object Token {
+  @scala.inline
+  def apply(
+    dependencyEdge: DependencyEdge = null,
+    lemma: java.lang.String = null,
+    partOfSpeech: PartOfSpeech = null,
+    text: TextSpan = null
+  ): Token = {
+    val __obj = js.Dynamic.literal()
+    if (dependencyEdge != null) __obj.updateDynamic("dependencyEdge")(dependencyEdge)
+    if (lemma != null) __obj.updateDynamic("lemma")(lemma)
+    if (partOfSpeech != null) __obj.updateDynamic("partOfSpeech")(partOfSpeech)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Token]
+  }
+}
+

@@ -21,3 +21,18 @@ trait Diagnostics extends js.Object {
   var estimatedLowBatteryDate: js.UndefOr[Date] = js.undefined
 }
 
+object Diagnostics {
+  @scala.inline
+  def apply(
+    alerts: js.Array[java.lang.String] = null,
+    beaconName: java.lang.String = null,
+    estimatedLowBatteryDate: Date = null
+  ): Diagnostics = {
+    val __obj = js.Dynamic.literal()
+    if (alerts != null) __obj.updateDynamic("alerts")(alerts)
+    if (beaconName != null) __obj.updateDynamic("beaconName")(beaconName)
+    if (estimatedLowBatteryDate != null) __obj.updateDynamic("estimatedLowBatteryDate")(estimatedLowBatteryDate)
+    __obj.asInstanceOf[Diagnostics]
+  }
+}
+

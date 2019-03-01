@@ -9,3 +9,12 @@ trait Anon_KeyId extends js.Object {
   var keyId: java.lang.String
 }
 
+object Anon_KeyId {
+  @scala.inline
+  def apply(keyId: java.lang.String): Anon_KeyId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyId")(keyId)
+    __obj.asInstanceOf[Anon_KeyId]
+  }
+}
+

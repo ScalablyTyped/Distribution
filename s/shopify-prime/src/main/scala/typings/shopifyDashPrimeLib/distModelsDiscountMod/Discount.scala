@@ -77,3 +77,42 @@ trait Discount
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Discount {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    discount_type: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.fixed_amount | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.percentage | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.shipping | java.lang.String,
+    admin_graphql_api_id: java.lang.String = null,
+    applies_once: js.UndefOr[scala.Boolean] = js.undefined,
+    applies_once_per_customer: js.UndefOr[scala.Boolean] = js.undefined,
+    applies_to_id: scala.Int | scala.Double = null,
+    applies_to_resource: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.applies_to_resource | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.custom_collection | java.lang.String = null,
+    ends_at: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    minimum_order_amount: java.lang.String = null,
+    starts_at: java.lang.String = null,
+    status: java.lang.String = null,
+    times_used: scala.Int | scala.Double = null,
+    usage_limit: scala.Int | scala.Double = null,
+    value: java.lang.String = null
+  ): Discount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("discount_type")(discount_type.asInstanceOf[js.Any])
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (!js.isUndefined(applies_once)) __obj.updateDynamic("applies_once")(applies_once)
+    if (!js.isUndefined(applies_once_per_customer)) __obj.updateDynamic("applies_once_per_customer")(applies_once_per_customer)
+    if (applies_to_id != null) __obj.updateDynamic("applies_to_id")(applies_to_id.asInstanceOf[js.Any])
+    if (applies_to_resource != null) __obj.updateDynamic("applies_to_resource")(applies_to_resource.asInstanceOf[js.Any])
+    if (ends_at != null) __obj.updateDynamic("ends_at")(ends_at)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (minimum_order_amount != null) __obj.updateDynamic("minimum_order_amount")(minimum_order_amount)
+    if (starts_at != null) __obj.updateDynamic("starts_at")(starts_at)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (times_used != null) __obj.updateDynamic("times_used")(times_used.asInstanceOf[js.Any])
+    if (usage_limit != null) __obj.updateDynamic("usage_limit")(usage_limit.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Discount]
+  }
+}
+

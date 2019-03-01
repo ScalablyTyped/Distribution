@@ -22,3 +22,40 @@ trait MessagerOption extends js.Object {
   var `type`: js.UndefOr[MessagerTypeEnum | java.lang.String] = js.undefined
 }
 
+object MessagerOption {
+  @scala.inline
+  def apply(
+    actions: js.Array[Action] = null,
+    close: js.UndefOr[scala.Boolean] = js.undefined,
+    contentClass: java.lang.String = null,
+    cssClass: java.lang.String = null,
+    fade: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    message: java.lang.String = null,
+    onAction: OnActionFunc = null,
+    parent: java.lang.String = null,
+    placement: java.lang.String = null,
+    scale: js.UndefOr[scala.Boolean] = js.undefined,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    time: scala.Int | scala.Double = null,
+    `type`: MessagerTypeEnum | java.lang.String = null
+  ): MessagerOption = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close)
+    if (contentClass != null) __obj.updateDynamic("contentClass")(contentClass)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (onAction != null) __obj.updateDynamic("onAction")(onAction)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (!js.isUndefined(scale)) __obj.updateDynamic("scale")(scale)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MessagerOption]
+  }
+}
+

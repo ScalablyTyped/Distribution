@@ -44,3 +44,36 @@ trait Autoscaler extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Autoscaler {
+  @scala.inline
+  def apply(
+    autoscalingPolicy: AutoscalingPolicy = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    region: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    status: java.lang.String = null,
+    statusDetails: js.Array[AutoscalerStatusDetails] = null,
+    target: java.lang.String = null,
+    zone: java.lang.String = null
+  ): Autoscaler = {
+    val __obj = js.Dynamic.literal()
+    if (autoscalingPolicy != null) __obj.updateDynamic("autoscalingPolicy")(autoscalingPolicy)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusDetails != null) __obj.updateDynamic("statusDetails")(statusDetails)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[Autoscaler]
+  }
+}
+

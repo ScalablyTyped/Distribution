@@ -32,3 +32,28 @@ trait GetZoneArgs extends js.Object {
   val zoneId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetZoneArgs {
+  @scala.inline
+  def apply(
+    callerReference: java.lang.String = null,
+    comment: java.lang.String = null,
+    name: java.lang.String = null,
+    privateZone: js.UndefOr[scala.Boolean] = js.undefined,
+    resourceRecordSetCount: scala.Int | scala.Double = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    vpcId: java.lang.String = null,
+    zoneId: java.lang.String = null
+  ): GetZoneArgs = {
+    val __obj = js.Dynamic.literal()
+    if (callerReference != null) __obj.updateDynamic("callerReference")(callerReference)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(privateZone)) __obj.updateDynamic("privateZone")(privateZone)
+    if (resourceRecordSetCount != null) __obj.updateDynamic("resourceRecordSetCount")(resourceRecordSetCount.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId)
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId)
+    __obj.asInstanceOf[GetZoneArgs]
+  }
+}
+

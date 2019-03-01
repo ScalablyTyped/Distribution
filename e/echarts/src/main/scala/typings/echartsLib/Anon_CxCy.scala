@@ -38,3 +38,20 @@ trait Anon_CxCy extends js.Object {
   var r0: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_CxCy {
+  @scala.inline
+  def apply(
+    cx: scala.Int | scala.Double = null,
+    cy: scala.Int | scala.Double = null,
+    r: scala.Int | scala.Double = null,
+    r0: scala.Int | scala.Double = null
+  ): Anon_CxCy = {
+    val __obj = js.Dynamic.literal()
+    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
+    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (r0 != null) __obj.updateDynamic("r0")(r0.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CxCy]
+  }
+}
+

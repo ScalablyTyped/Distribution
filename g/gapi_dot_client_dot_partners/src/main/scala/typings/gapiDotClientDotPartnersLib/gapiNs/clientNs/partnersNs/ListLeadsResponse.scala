@@ -22,3 +22,20 @@ trait ListLeadsResponse extends js.Object {
   var totalSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListLeadsResponse {
+  @scala.inline
+  def apply(
+    leads: js.Array[Lead] = null,
+    nextPageToken: java.lang.String = null,
+    responseMetadata: ResponseMetadata = null,
+    totalSize: scala.Int | scala.Double = null
+  ): ListLeadsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (leads != null) __obj.updateDynamic("leads")(leads)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListLeadsResponse]
+  }
+}
+

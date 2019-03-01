@@ -12,3 +12,20 @@ trait SortOptions extends js.Object {
   var sortFunction: js.UndefOr[js.Function2[/* a */ js.Object, /* b */ js.Object, js.UndefOr[scala.Double]]] = js.undefined
 }
 
+object SortOptions {
+  @scala.inline
+  def apply(
+    alphabet: java.lang.String = null,
+    insensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    order: java.lang.String = null,
+    sortFunction: js.Function2[/* a */ js.Object, /* b */ js.Object, js.UndefOr[scala.Double]] = null
+  ): SortOptions = {
+    val __obj = js.Dynamic.literal()
+    if (alphabet != null) __obj.updateDynamic("alphabet")(alphabet)
+    if (!js.isUndefined(insensitive)) __obj.updateDynamic("insensitive")(insensitive)
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (sortFunction != null) __obj.updateDynamic("sortFunction")(sortFunction)
+    __obj.asInstanceOf[SortOptions]
+  }
+}
+

@@ -12,3 +12,13 @@ trait ClientErrorExtensions extends js.Object {
   var level: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientErrorExtensions {
+  @scala.inline
+  def apply(description: java.lang.String = null, level: java.lang.String = null): ClientErrorExtensions = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (level != null) __obj.updateDynamic("level")(level)
+    __obj.asInstanceOf[ClientErrorExtensions]
+  }
+}
+

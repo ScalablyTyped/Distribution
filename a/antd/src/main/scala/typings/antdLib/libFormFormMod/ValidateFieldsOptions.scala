@@ -16,3 +16,20 @@ trait ValidateFieldsOptions extends js.Object {
   var scroll: js.UndefOr[DomScrollIntoViewConfig] = js.undefined
 }
 
+object ValidateFieldsOptions {
+  @scala.inline
+  def apply(
+    first: js.UndefOr[scala.Boolean] = js.undefined,
+    firstFields: js.Array[java.lang.String] = null,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    scroll: DomScrollIntoViewConfig = null
+  ): ValidateFieldsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(first)) __obj.updateDynamic("first")(first)
+    if (firstFields != null) __obj.updateDynamic("firstFields")(firstFields)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
+    __obj.asInstanceOf[ValidateFieldsOptions]
+  }
+}
+

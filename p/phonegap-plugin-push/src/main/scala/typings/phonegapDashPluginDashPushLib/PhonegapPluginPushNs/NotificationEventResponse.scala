@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NotificationEventResponse extends js.Object {
+trait NotificationEventResponse extends _EventResponse {
   /**
   		 * An optional collection of data sent by the 3rd party push service that does not fit in the above properties.
   		 */
@@ -31,5 +31,26 @@ trait NotificationEventResponse extends js.Object {
   		 * The optional title of the push message sent from the 3rd party service.
   		 */
   var title: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object NotificationEventResponse {
+  @scala.inline
+  def apply(
+    additionalData: NotificationEventAdditionalData,
+    count: java.lang.String,
+    image: java.lang.String,
+    message: java.lang.String,
+    sound: java.lang.String,
+    title: java.lang.String = null
+  ): NotificationEventResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("additionalData")(additionalData)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("sound")(sound)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[NotificationEventResponse]
+  }
 }
 

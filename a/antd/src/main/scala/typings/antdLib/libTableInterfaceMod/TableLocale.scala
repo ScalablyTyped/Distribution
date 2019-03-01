@@ -17,3 +17,26 @@ trait TableLocale extends js.Object {
   var sortTitle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableLocale {
+  @scala.inline
+  def apply(
+    emptyText: reactLib.reactMod.ReactNs.ReactNode | js.Function0[reactLib.reactMod.ReactNs.ReactNode] = null,
+    filterConfirm: reactLib.reactMod.ReactNs.ReactNode = null,
+    filterReset: reactLib.reactMod.ReactNs.ReactNode = null,
+    filterTitle: java.lang.String = null,
+    selectAll: reactLib.reactMod.ReactNs.ReactNode = null,
+    selectInvert: reactLib.reactMod.ReactNs.ReactNode = null,
+    sortTitle: java.lang.String = null
+  ): TableLocale = {
+    val __obj = js.Dynamic.literal()
+    if (emptyText != null) __obj.updateDynamic("emptyText")(emptyText.asInstanceOf[js.Any])
+    if (filterConfirm != null) __obj.updateDynamic("filterConfirm")(filterConfirm.asInstanceOf[js.Any])
+    if (filterReset != null) __obj.updateDynamic("filterReset")(filterReset.asInstanceOf[js.Any])
+    if (filterTitle != null) __obj.updateDynamic("filterTitle")(filterTitle)
+    if (selectAll != null) __obj.updateDynamic("selectAll")(selectAll.asInstanceOf[js.Any])
+    if (selectInvert != null) __obj.updateDynamic("selectInvert")(selectInvert.asInstanceOf[js.Any])
+    if (sortTitle != null) __obj.updateDynamic("sortTitle")(sortTitle)
+    __obj.asInstanceOf[TableLocale]
+  }
+}
+

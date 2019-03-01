@@ -16,3 +16,13 @@ trait ASPxClientTreeListBatchEditConfirmShowingEventArgs extends ASPxClientCance
   var requestTriggerID: java.lang.String
 }
 
+object ASPxClientTreeListBatchEditConfirmShowingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, requestTriggerID: java.lang.String): ASPxClientTreeListBatchEditConfirmShowingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("requestTriggerID")(requestTriggerID)
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditConfirmShowingEventArgs]
+  }
+}
+

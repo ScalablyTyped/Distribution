@@ -14,3 +14,14 @@ trait IChannel extends js.Object {
   var users: java.lang.String
 }
 
+object IChannel {
+  @scala.inline
+  def apply(name: java.lang.String, topic: java.lang.String, users: java.lang.String): IChannel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("topic")(topic)
+    __obj.updateDynamic("users")(users)
+    __obj.asInstanceOf[IChannel]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Anon_CreditEllipsoidProxyRectangle extends js.Object {
   var url: java.lang.String
 }
 
+object Anon_CreditEllipsoidProxyRectangle {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    credit: cesiumLib.cesiumMod.CesiumNs.Credit | java.lang.String = null,
+    ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid = null,
+    proxy: js.Any = null,
+    rectangle: cesiumLib.cesiumMod.CesiumNs.Rectangle = null
+  ): Anon_CreditEllipsoidProxyRectangle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (credit != null) __obj.updateDynamic("credit")(credit.asInstanceOf[js.Any])
+    if (ellipsoid != null) __obj.updateDynamic("ellipsoid")(ellipsoid)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (rectangle != null) __obj.updateDynamic("rectangle")(rectangle)
+    __obj.asInstanceOf[Anon_CreditEllipsoidProxyRectangle]
+  }
+}
+

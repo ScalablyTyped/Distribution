@@ -20,3 +20,18 @@ trait PaceAjaxOptions extends js.Object {
   var trackWebSockets: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PaceAjaxOptions {
+  @scala.inline
+  def apply(
+    ignoreURLs: js.Array[java.lang.String | stdLib.RegExp] = null,
+    trackMethods: js.Array[java.lang.String] = null,
+    trackWebSockets: js.UndefOr[scala.Boolean] = js.undefined
+  ): PaceAjaxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ignoreURLs != null) __obj.updateDynamic("ignoreURLs")(ignoreURLs)
+    if (trackMethods != null) __obj.updateDynamic("trackMethods")(trackMethods)
+    if (!js.isUndefined(trackWebSockets)) __obj.updateDynamic("trackWebSockets")(trackWebSockets)
+    __obj.asInstanceOf[PaceAjaxOptions]
+  }
+}
+

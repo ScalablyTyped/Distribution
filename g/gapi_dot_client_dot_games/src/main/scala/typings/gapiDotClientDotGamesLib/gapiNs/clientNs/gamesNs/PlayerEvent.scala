@@ -21,3 +21,22 @@ trait PlayerEvent extends js.Object {
   var playerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PlayerEvent {
+  @scala.inline
+  def apply(
+    definitionId: java.lang.String = null,
+    formattedNumEvents: java.lang.String = null,
+    kind: java.lang.String = null,
+    numEvents: java.lang.String = null,
+    playerId: java.lang.String = null
+  ): PlayerEvent = {
+    val __obj = js.Dynamic.literal()
+    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId)
+    if (formattedNumEvents != null) __obj.updateDynamic("formattedNumEvents")(formattedNumEvents)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (numEvents != null) __obj.updateDynamic("numEvents")(numEvents)
+    if (playerId != null) __obj.updateDynamic("playerId")(playerId)
+    __obj.asInstanceOf[PlayerEvent]
+  }
+}
+

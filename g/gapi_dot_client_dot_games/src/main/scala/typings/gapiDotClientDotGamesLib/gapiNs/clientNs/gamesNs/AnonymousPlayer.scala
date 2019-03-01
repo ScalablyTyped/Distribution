@@ -14,3 +14,18 @@ trait AnonymousPlayer extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AnonymousPlayer {
+  @scala.inline
+  def apply(
+    avatarImageUrl: java.lang.String = null,
+    displayName: java.lang.String = null,
+    kind: java.lang.String = null
+  ): AnonymousPlayer = {
+    val __obj = js.Dynamic.literal()
+    if (avatarImageUrl != null) __obj.updateDynamic("avatarImageUrl")(avatarImageUrl)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[AnonymousPlayer]
+  }
+}
+

@@ -18,3 +18,16 @@ trait AccountState extends js.Object {
   val throttleSettings: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BurstLimitRateLimit]] = js.undefined
 }
 
+object AccountState {
+  @scala.inline
+  def apply(
+    cloudwatchRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    throttleSettings: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BurstLimitRateLimit] = null
+  ): AccountState = {
+    val __obj = js.Dynamic.literal()
+    if (cloudwatchRoleArn != null) __obj.updateDynamic("cloudwatchRoleArn")(cloudwatchRoleArn.asInstanceOf[js.Any])
+    if (throttleSettings != null) __obj.updateDynamic("throttleSettings")(throttleSettings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccountState]
+  }
+}
+

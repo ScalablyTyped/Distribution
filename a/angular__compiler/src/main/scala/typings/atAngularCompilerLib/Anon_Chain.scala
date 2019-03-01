@@ -10,3 +10,16 @@ trait Anon_Chain extends js.Object {
   var position: js.UndefOr[atAngularCompilerLib.srcAotFormattedUnderscoreErrorMod.Position] = js.undefined
 }
 
+object Anon_Chain {
+  @scala.inline
+  def apply(
+    chain: atAngularCompilerLib.srcAotFormattedUnderscoreErrorMod.FormattedMessageChain,
+    position: atAngularCompilerLib.srcAotFormattedUnderscoreErrorMod.Position = null
+  ): Anon_Chain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chain")(chain)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Anon_Chain]
+  }
+}
+

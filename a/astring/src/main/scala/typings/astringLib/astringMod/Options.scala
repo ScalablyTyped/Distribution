@@ -20,3 +20,24 @@ trait Options extends js.Object {
   var startingIndentLevel: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    comments: js.UndefOr[scala.Boolean] = js.undefined,
+    generator: js.Object = null,
+    indent: java.lang.String = null,
+    lineEnd: java.lang.String = null,
+    sourceMap: js.Any = null,
+    startingIndentLevel: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments)
+    if (generator != null) __obj.updateDynamic("generator")(generator)
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (lineEnd != null) __obj.updateDynamic("lineEnd")(lineEnd)
+    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (startingIndentLevel != null) __obj.updateDynamic("startingIndentLevel")(startingIndentLevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

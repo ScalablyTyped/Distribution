@@ -48,3 +48,22 @@ trait DataObject extends js.Object {
   var value: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object DataObject {
+  @scala.inline
+  def apply(
+    emphasis: echartsLib.Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColorOptional = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamilyFontSize = null,
+    name: java.lang.String = null,
+    value: js.Array[_] = null
+  ): DataObject = {
+    val __obj = js.Dynamic.literal()
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DataObject]
+  }
+}
+

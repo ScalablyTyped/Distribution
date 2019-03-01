@@ -26,3 +26,12 @@ trait XScriptInvocationContext extends js.Object {
   var ScriptContainer: XEmbeddedScripts
 }
 
+object XScriptInvocationContext {
+  @scala.inline
+  def apply(ScriptContainer: XEmbeddedScripts): XScriptInvocationContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ScriptContainer")(ScriptContainer)
+    __obj.asInstanceOf[XScriptInvocationContext]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Anon_BucketBucketPrefixEnabled extends js.Object {
   var interval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_BucketBucketPrefixEnabled {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String,
+    bucketPrefix: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    interval: scala.Int | scala.Double = null
+  ): Anon_BucketBucketPrefixEnabled = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucket")(bucket)
+    if (bucketPrefix != null) __obj.updateDynamic("bucketPrefix")(bucketPrefix)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BucketBucketPrefixEnabled]
+  }
+}
+

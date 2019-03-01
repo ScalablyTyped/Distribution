@@ -24,3 +24,13 @@ trait StreamEncoderOptions extends js.Object {
   var filters: js.UndefOr[Filters] = js.undefined
 }
 
+object StreamEncoderOptions {
+  @scala.inline
+  def apply(check: scala.Int | scala.Double = null, filters: Filters = null): StreamEncoderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    __obj.asInstanceOf[StreamEncoderOptions]
+  }
+}
+

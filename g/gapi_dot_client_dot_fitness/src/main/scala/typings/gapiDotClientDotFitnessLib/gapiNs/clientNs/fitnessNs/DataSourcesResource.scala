@@ -40,3 +40,46 @@ trait DataSourcesResource extends js.Object {
   def update(request: gapiDotClientDotFitnessLib.Anon_AltDataSourceIdFields): gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
 }
 
+object DataSourcesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
+    ],
+    dataPointChanges: DataPointChangesResource,
+    datasets: DatasetsResource,
+    delete: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltDataSourceIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
+    ],
+    get: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltDataSourceIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
+    ],
+    list: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltDataTypeName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDataSourcesResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltDataSourceIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
+    ],
+    update: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltDataSourceIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
+    ]
+  ): DataSourcesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("dataPointChanges")(dataPointChanges)
+    __obj.updateDynamic("datasets")(datasets)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[DataSourcesResource]
+  }
+}
+

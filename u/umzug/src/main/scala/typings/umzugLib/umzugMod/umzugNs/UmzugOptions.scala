@@ -35,3 +35,24 @@ trait UmzugOptions extends js.Object {
   var upName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UmzugOptions {
+  @scala.inline
+  def apply(
+    downName: java.lang.String = null,
+    logging: scala.Boolean | js.Function = null,
+    migrations: MigrationOptions = null,
+    storage: umzugLib.umzugLibStrings.json | umzugLib.umzugLibStrings.sequelize | umzugLib.umzugLibStrings.mongodb | Storage = null,
+    storageOptions: JSONStorageOptions | SequelizeStorageOptions | MongoDBStorageOptions | js.Object = null,
+    upName: java.lang.String = null
+  ): UmzugOptions = {
+    val __obj = js.Dynamic.literal()
+    if (downName != null) __obj.updateDynamic("downName")(downName)
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (migrations != null) __obj.updateDynamic("migrations")(migrations)
+    if (storage != null) __obj.updateDynamic("storage")(storage.asInstanceOf[js.Any])
+    if (storageOptions != null) __obj.updateDynamic("storageOptions")(storageOptions.asInstanceOf[js.Any])
+    if (upName != null) __obj.updateDynamic("upName")(upName)
+    __obj.asInstanceOf[UmzugOptions]
+  }
+}
+

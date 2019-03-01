@@ -17,3 +17,12 @@ trait GoogleSheetsOptions extends js.Object {
   var skipLeadingRows: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleSheetsOptions {
+  @scala.inline
+  def apply(skipLeadingRows: java.lang.String = null): GoogleSheetsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (skipLeadingRows != null) __obj.updateDynamic("skipLeadingRows")(skipLeadingRows)
+    __obj.asInstanceOf[GoogleSheetsOptions]
+  }
+}
+

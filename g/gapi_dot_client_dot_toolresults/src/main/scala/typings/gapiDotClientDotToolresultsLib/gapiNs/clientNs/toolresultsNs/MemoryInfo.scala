@@ -12,3 +12,13 @@ trait MemoryInfo extends js.Object {
   var memoryTotalInKibibyte: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MemoryInfo {
+  @scala.inline
+  def apply(memoryCapInKibibyte: java.lang.String = null, memoryTotalInKibibyte: java.lang.String = null): MemoryInfo = {
+    val __obj = js.Dynamic.literal()
+    if (memoryCapInKibibyte != null) __obj.updateDynamic("memoryCapInKibibyte")(memoryCapInKibibyte)
+    if (memoryTotalInKibibyte != null) __obj.updateDynamic("memoryTotalInKibibyte")(memoryTotalInKibibyte)
+    __obj.asInstanceOf[MemoryInfo]
+  }
+}
+

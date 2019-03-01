@@ -14,3 +14,14 @@ trait Anon_Active extends js.Object {
   var file: scala.Double
 }
 
+object Anon_Active {
+  @scala.inline
+  def apply(active: scala.Double, external: scala.Double, file: scala.Double): Anon_Active = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("external")(external)
+    __obj.updateDynamic("file")(file)
+    __obj.asInstanceOf[Anon_Active]
+  }
+}
+

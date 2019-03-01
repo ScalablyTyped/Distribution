@@ -43,3 +43,41 @@ trait IHttpContent
   def writeToStreamAsync(outputStream: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IOutputStream): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
 }
 
+object IHttpContent {
+  @scala.inline
+  def apply(
+    bufferAllAsync: js.Function0[
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
+    ],
+    close: js.Function0[scala.Unit],
+    headers: winrtDashUwpLib.WindowsNs.WebNs.HttpNs.HeadersNs.HttpContentHeaderCollection,
+    readAsBufferAsync: js.Function0[
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer, scala.Double]
+    ],
+    readAsInputStreamAsync: js.Function0[
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream, scala.Double]
+    ],
+    readAsStringAsync: js.Function0[
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[java.lang.String, scala.Double]
+    ],
+    toString: js.Function0[java.lang.String],
+    tryComputeLength: js.Function0[winrtDashUwpLib.Anon_Length],
+    writeToStreamAsync: js.Function1[
+      winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IOutputStream, 
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
+    ]
+  ): IHttpContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bufferAllAsync")(bufferAllAsync)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("readAsBufferAsync")(readAsBufferAsync)
+    __obj.updateDynamic("readAsInputStreamAsync")(readAsInputStreamAsync)
+    __obj.updateDynamic("readAsStringAsync")(readAsStringAsync)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("tryComputeLength")(tryComputeLength)
+    __obj.updateDynamic("writeToStreamAsync")(writeToStreamAsync)
+    __obj.asInstanceOf[IHttpContent]
+  }
+}
+

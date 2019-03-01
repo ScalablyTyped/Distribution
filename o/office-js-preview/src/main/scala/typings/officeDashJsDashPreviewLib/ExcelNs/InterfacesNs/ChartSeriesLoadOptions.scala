@@ -354,3 +354,104 @@ trait ChartSeriesLoadOptions extends js.Object {
   var yerrorBars: js.UndefOr[ChartErrorBarsLoadOptions] = js.undefined
 }
 
+object ChartSeriesLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    axisGroup: js.UndefOr[scala.Boolean] = js.undefined,
+    binOptions: ChartBinOptionsLoadOptions = null,
+    boxwhiskerOptions: ChartBoxwhiskerOptionsLoadOptions = null,
+    bubbleScale: js.UndefOr[scala.Boolean] = js.undefined,
+    chartType: js.UndefOr[scala.Boolean] = js.undefined,
+    dataLabels: ChartDataLabelsLoadOptions = null,
+    doughnutHoleSize: js.UndefOr[scala.Boolean] = js.undefined,
+    explosion: js.UndefOr[scala.Boolean] = js.undefined,
+    filtered: js.UndefOr[scala.Boolean] = js.undefined,
+    firstSliceAngle: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartSeriesFormatLoadOptions = null,
+    gapWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientMaximumColor: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientMaximumType: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientMaximumValue: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientMidpointColor: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientMidpointType: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientMidpointValue: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientMinimumColor: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientMinimumType: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientMinimumValue: js.UndefOr[scala.Boolean] = js.undefined,
+    gradientStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    hasDataLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    invertColor: js.UndefOr[scala.Boolean] = js.undefined,
+    invertIfNegative: js.UndefOr[scala.Boolean] = js.undefined,
+    mapOptions: ChartMapOptionsLoadOptions = null,
+    markerBackgroundColor: js.UndefOr[scala.Boolean] = js.undefined,
+    markerForegroundColor: js.UndefOr[scala.Boolean] = js.undefined,
+    markerSize: js.UndefOr[scala.Boolean] = js.undefined,
+    markerStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    overlap: js.UndefOr[scala.Boolean] = js.undefined,
+    parentLabelStrategy: js.UndefOr[scala.Boolean] = js.undefined,
+    plotOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    points: ChartPointsCollectionLoadOptions = null,
+    secondPlotSize: js.UndefOr[scala.Boolean] = js.undefined,
+    showConnectorLines: js.UndefOr[scala.Boolean] = js.undefined,
+    showLeaderLines: js.UndefOr[scala.Boolean] = js.undefined,
+    showShadow: js.UndefOr[scala.Boolean] = js.undefined,
+    smooth: js.UndefOr[scala.Boolean] = js.undefined,
+    splitType: js.UndefOr[scala.Boolean] = js.undefined,
+    splitValue: js.UndefOr[scala.Boolean] = js.undefined,
+    varyByCategories: js.UndefOr[scala.Boolean] = js.undefined,
+    xerrorBars: ChartErrorBarsLoadOptions = null,
+    yerrorBars: ChartErrorBarsLoadOptions = null
+  ): ChartSeriesLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(axisGroup)) __obj.updateDynamic("axisGroup")(axisGroup)
+    if (binOptions != null) __obj.updateDynamic("binOptions")(binOptions)
+    if (boxwhiskerOptions != null) __obj.updateDynamic("boxwhiskerOptions")(boxwhiskerOptions)
+    if (!js.isUndefined(bubbleScale)) __obj.updateDynamic("bubbleScale")(bubbleScale)
+    if (!js.isUndefined(chartType)) __obj.updateDynamic("chartType")(chartType)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (!js.isUndefined(doughnutHoleSize)) __obj.updateDynamic("doughnutHoleSize")(doughnutHoleSize)
+    if (!js.isUndefined(explosion)) __obj.updateDynamic("explosion")(explosion)
+    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered)
+    if (!js.isUndefined(firstSliceAngle)) __obj.updateDynamic("firstSliceAngle")(firstSliceAngle)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(gapWidth)) __obj.updateDynamic("gapWidth")(gapWidth)
+    if (!js.isUndefined(gradientMaximumColor)) __obj.updateDynamic("gradientMaximumColor")(gradientMaximumColor)
+    if (!js.isUndefined(gradientMaximumType)) __obj.updateDynamic("gradientMaximumType")(gradientMaximumType)
+    if (!js.isUndefined(gradientMaximumValue)) __obj.updateDynamic("gradientMaximumValue")(gradientMaximumValue)
+    if (!js.isUndefined(gradientMidpointColor)) __obj.updateDynamic("gradientMidpointColor")(gradientMidpointColor)
+    if (!js.isUndefined(gradientMidpointType)) __obj.updateDynamic("gradientMidpointType")(gradientMidpointType)
+    if (!js.isUndefined(gradientMidpointValue)) __obj.updateDynamic("gradientMidpointValue")(gradientMidpointValue)
+    if (!js.isUndefined(gradientMinimumColor)) __obj.updateDynamic("gradientMinimumColor")(gradientMinimumColor)
+    if (!js.isUndefined(gradientMinimumType)) __obj.updateDynamic("gradientMinimumType")(gradientMinimumType)
+    if (!js.isUndefined(gradientMinimumValue)) __obj.updateDynamic("gradientMinimumValue")(gradientMinimumValue)
+    if (!js.isUndefined(gradientStyle)) __obj.updateDynamic("gradientStyle")(gradientStyle)
+    if (!js.isUndefined(hasDataLabels)) __obj.updateDynamic("hasDataLabels")(hasDataLabels)
+    if (!js.isUndefined(invertColor)) __obj.updateDynamic("invertColor")(invertColor)
+    if (!js.isUndefined(invertIfNegative)) __obj.updateDynamic("invertIfNegative")(invertIfNegative)
+    if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions)
+    if (!js.isUndefined(markerBackgroundColor)) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor)
+    if (!js.isUndefined(markerForegroundColor)) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor)
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize)
+    if (!js.isUndefined(markerStyle)) __obj.updateDynamic("markerStyle")(markerStyle)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(overlap)) __obj.updateDynamic("overlap")(overlap)
+    if (!js.isUndefined(parentLabelStrategy)) __obj.updateDynamic("parentLabelStrategy")(parentLabelStrategy)
+    if (!js.isUndefined(plotOrder)) __obj.updateDynamic("plotOrder")(plotOrder)
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (!js.isUndefined(secondPlotSize)) __obj.updateDynamic("secondPlotSize")(secondPlotSize)
+    if (!js.isUndefined(showConnectorLines)) __obj.updateDynamic("showConnectorLines")(showConnectorLines)
+    if (!js.isUndefined(showLeaderLines)) __obj.updateDynamic("showLeaderLines")(showLeaderLines)
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
+    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth)
+    if (!js.isUndefined(splitType)) __obj.updateDynamic("splitType")(splitType)
+    if (!js.isUndefined(splitValue)) __obj.updateDynamic("splitValue")(splitValue)
+    if (!js.isUndefined(varyByCategories)) __obj.updateDynamic("varyByCategories")(varyByCategories)
+    if (xerrorBars != null) __obj.updateDynamic("xerrorBars")(xerrorBars)
+    if (yerrorBars != null) __obj.updateDynamic("yerrorBars")(yerrorBars)
+    __obj.asInstanceOf[ChartSeriesLoadOptions]
+  }
+}
+

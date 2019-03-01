@@ -24,3 +24,20 @@ trait XYFocusOptions extends js.Object {
   var referenceRect: js.UndefOr[IRect] = js.undefined
 }
 
+object XYFocusOptions {
+  @scala.inline
+  def apply(
+    focusRoot: stdLib.HTMLElement = null,
+    historyRect: IRect = null,
+    referenceElement: stdLib.HTMLElement = null,
+    referenceRect: IRect = null
+  ): XYFocusOptions = {
+    val __obj = js.Dynamic.literal()
+    if (focusRoot != null) __obj.updateDynamic("focusRoot")(focusRoot)
+    if (historyRect != null) __obj.updateDynamic("historyRect")(historyRect)
+    if (referenceElement != null) __obj.updateDynamic("referenceElement")(referenceElement)
+    if (referenceRect != null) __obj.updateDynamic("referenceRect")(referenceRect)
+    __obj.asInstanceOf[XYFocusOptions]
+  }
+}
+

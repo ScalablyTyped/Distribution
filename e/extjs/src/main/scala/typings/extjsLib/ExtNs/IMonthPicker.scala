@@ -35,3 +35,38 @@ trait IMonthPicker extends IComponent {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object IMonthPicker {
+  @scala.inline
+  def apply(
+    IComponent: IComponent = null,
+    adjustYear: js.Function1[/* offset */ js.UndefOr[scala.Double], scala.Unit] = null,
+    baseCls: java.lang.String = null,
+    cancelText: java.lang.String = null,
+    getValue: js.Function0[Array] = null,
+    hasSelection: js.Function0[scala.Boolean] = null,
+    okText: java.lang.String = null,
+    onDestroy: js.Function0[scala.Unit] = null,
+    renderTpl: js.Any = null,
+    selectedCls: java.lang.String = null,
+    setValue: js.Function1[/* value */ js.UndefOr[js.Any], extjsLib.ExtNs.pickerNs.IMonth] = null,
+    showButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.Any = null
+  ): IMonthPicker = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (adjustYear != null) __obj.updateDynamic("adjustYear")(adjustYear)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (hasSelection != null) __obj.updateDynamic("hasSelection")(hasSelection)
+    if (okText != null) __obj.updateDynamic("okText")(okText)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (selectedCls != null) __obj.updateDynamic("selectedCls")(selectedCls)
+    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (!js.isUndefined(showButtons)) __obj.updateDynamic("showButtons")(showButtons)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IMonthPicker]
+  }
+}
+

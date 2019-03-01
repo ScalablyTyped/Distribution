@@ -36,3 +36,26 @@ trait BuildDefinitionRevision extends js.Object {
   var revision: scala.Double
 }
 
+object BuildDefinitionRevision {
+  @scala.inline
+  def apply(
+    changeType: AuditAction,
+    changedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    changedDate: stdLib.Date,
+    comment: java.lang.String,
+    definitionUrl: java.lang.String,
+    name: java.lang.String,
+    revision: scala.Double
+  ): BuildDefinitionRevision = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeType")(changeType)
+    __obj.updateDynamic("changedBy")(changedBy)
+    __obj.updateDynamic("changedDate")(changedDate)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("definitionUrl")(definitionUrl)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("revision")(revision)
+    __obj.asInstanceOf[BuildDefinitionRevision]
+  }
+}
+

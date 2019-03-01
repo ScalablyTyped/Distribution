@@ -78,3 +78,28 @@ trait RouteOptionsValidate extends js.Object {
   var state: js.UndefOr[RouteOptionsResponseSchema] = js.undefined
 }
 
+object RouteOptionsValidate {
+  @scala.inline
+  def apply(
+    errorFields: js.Object = null,
+    failAction: hapiLib.hapiMod.LifecycleNs.FailAction = null,
+    headers: RouteOptionsResponseSchema = null,
+    options: joiLib.joiMod.ValidationOptions | js.Object = null,
+    params: RouteOptionsResponseSchema = null,
+    payload: RouteOptionsResponseSchema = null,
+    query: RouteOptionsResponseSchema = null,
+    state: RouteOptionsResponseSchema = null
+  ): RouteOptionsValidate = {
+    val __obj = js.Dynamic.literal()
+    if (errorFields != null) __obj.updateDynamic("errorFields")(errorFields)
+    if (failAction != null) __obj.updateDynamic("failAction")(failAction.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteOptionsValidate]
+  }
+}
+

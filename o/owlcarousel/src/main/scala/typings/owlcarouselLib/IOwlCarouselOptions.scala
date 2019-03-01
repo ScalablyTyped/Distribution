@@ -57,3 +57,106 @@ trait IOwlCarouselOptions extends js.Object {
   var transitionStyle: js.UndefOr[js.Any] = js.undefined
 }
 
+object IOwlCarouselOptions {
+  @scala.inline
+  def apply(
+    addClassActive: js.UndefOr[scala.Boolean] = js.undefined,
+    afterAction: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterInit: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterLazyLoad: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterMove: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterUpdate: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    autoPlay: js.Any = null,
+    baseClass: java.lang.String = null,
+    beforeInit: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeMove: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeUpdate: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    dragBeforeAnimFinish: js.UndefOr[scala.Boolean] = js.undefined,
+    items: scala.Int | scala.Double = null,
+    itemsCustom: js.Any = null,
+    itemsDesktop: js.Array[scala.Double] = null,
+    itemsDesktopSmall: js.Array[scala.Double] = null,
+    itemsMobile: js.Array[scala.Double] = null,
+    itemsScaleUp: js.UndefOr[scala.Boolean] = js.undefined,
+    itemsTablet: js.Array[scala.Double] = null,
+    itemsTabletSmall: js.Any = null,
+    jsonPath: js.Any = null,
+    jsonSuccess: js.Function1[/* data */ js.Any, scala.Unit] = null,
+    lazyEffect: js.Any = null,
+    lazyFollow: js.UndefOr[scala.Boolean] = js.undefined,
+    lazyLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    nav: js.UndefOr[scala.Boolean] = js.undefined,
+    navigation: js.UndefOr[scala.Boolean] = js.undefined,
+    navigationText: js.Any = null,
+    pagination: js.UndefOr[scala.Boolean] = js.undefined,
+    paginationNumbers: js.UndefOr[scala.Boolean] = js.undefined,
+    paginationSpeed: scala.Int | scala.Double = null,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    responsiveBaseWidth: JQuery | java.lang.String = null,
+    responsiveRefreshRate: scala.Int | scala.Double = null,
+    rewindNav: js.UndefOr[scala.Boolean] = js.undefined,
+    rewindSpeed: scala.Int | scala.Double = null,
+    scrollPerPage: js.UndefOr[scala.Boolean] = js.undefined,
+    singleItem: js.UndefOr[scala.Boolean] = js.undefined,
+    slideSpeed: scala.Int | scala.Double = null,
+    startDragging: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    stopOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: java.lang.String = null,
+    touchDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    transitionStyle: js.Any = null
+  ): IOwlCarouselOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addClassActive)) __obj.updateDynamic("addClassActive")(addClassActive)
+    if (afterAction != null) __obj.updateDynamic("afterAction")(afterAction)
+    if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
+    if (afterLazyLoad != null) __obj.updateDynamic("afterLazyLoad")(afterLazyLoad)
+    if (afterMove != null) __obj.updateDynamic("afterMove")(afterMove)
+    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(afterUpdate)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (autoPlay != null) __obj.updateDynamic("autoPlay")(autoPlay)
+    if (baseClass != null) __obj.updateDynamic("baseClass")(baseClass)
+    if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit)
+    if (beforeMove != null) __obj.updateDynamic("beforeMove")(beforeMove)
+    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(beforeUpdate)
+    if (!js.isUndefined(dragBeforeAnimFinish)) __obj.updateDynamic("dragBeforeAnimFinish")(dragBeforeAnimFinish)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (itemsCustom != null) __obj.updateDynamic("itemsCustom")(itemsCustom)
+    if (itemsDesktop != null) __obj.updateDynamic("itemsDesktop")(itemsDesktop)
+    if (itemsDesktopSmall != null) __obj.updateDynamic("itemsDesktopSmall")(itemsDesktopSmall)
+    if (itemsMobile != null) __obj.updateDynamic("itemsMobile")(itemsMobile)
+    if (!js.isUndefined(itemsScaleUp)) __obj.updateDynamic("itemsScaleUp")(itemsScaleUp)
+    if (itemsTablet != null) __obj.updateDynamic("itemsTablet")(itemsTablet)
+    if (itemsTabletSmall != null) __obj.updateDynamic("itemsTabletSmall")(itemsTabletSmall)
+    if (jsonPath != null) __obj.updateDynamic("jsonPath")(jsonPath)
+    if (jsonSuccess != null) __obj.updateDynamic("jsonSuccess")(jsonSuccess)
+    if (lazyEffect != null) __obj.updateDynamic("lazyEffect")(lazyEffect)
+    if (!js.isUndefined(lazyFollow)) __obj.updateDynamic("lazyFollow")(lazyFollow)
+    if (!js.isUndefined(lazyLoad)) __obj.updateDynamic("lazyLoad")(lazyLoad)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(mouseDrag)) __obj.updateDynamic("mouseDrag")(mouseDrag)
+    if (!js.isUndefined(nav)) __obj.updateDynamic("nav")(nav)
+    if (!js.isUndefined(navigation)) __obj.updateDynamic("navigation")(navigation)
+    if (navigationText != null) __obj.updateDynamic("navigationText")(navigationText)
+    if (!js.isUndefined(pagination)) __obj.updateDynamic("pagination")(pagination)
+    if (!js.isUndefined(paginationNumbers)) __obj.updateDynamic("paginationNumbers")(paginationNumbers)
+    if (paginationSpeed != null) __obj.updateDynamic("paginationSpeed")(paginationSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (responsiveBaseWidth != null) __obj.updateDynamic("responsiveBaseWidth")(responsiveBaseWidth.asInstanceOf[js.Any])
+    if (responsiveRefreshRate != null) __obj.updateDynamic("responsiveRefreshRate")(responsiveRefreshRate.asInstanceOf[js.Any])
+    if (!js.isUndefined(rewindNav)) __obj.updateDynamic("rewindNav")(rewindNav)
+    if (rewindSpeed != null) __obj.updateDynamic("rewindSpeed")(rewindSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollPerPage)) __obj.updateDynamic("scrollPerPage")(scrollPerPage)
+    if (!js.isUndefined(singleItem)) __obj.updateDynamic("singleItem")(singleItem)
+    if (slideSpeed != null) __obj.updateDynamic("slideSpeed")(slideSpeed.asInstanceOf[js.Any])
+    if (startDragging != null) __obj.updateDynamic("startDragging")(startDragging)
+    if (!js.isUndefined(stopOnHover)) __obj.updateDynamic("stopOnHover")(stopOnHover)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (!js.isUndefined(touchDrag)) __obj.updateDynamic("touchDrag")(touchDrag)
+    if (transitionStyle != null) __obj.updateDynamic("transitionStyle")(transitionStyle)
+    __obj.asInstanceOf[IOwlCarouselOptions]
+  }
+}
+

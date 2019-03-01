@@ -10,3 +10,12 @@ trait RealtimeTimeRange extends js.Object {
   var startTimestamp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RealtimeTimeRange {
+  @scala.inline
+  def apply(startTimestamp: java.lang.String = null): RealtimeTimeRange = {
+    val __obj = js.Dynamic.literal()
+    if (startTimestamp != null) __obj.updateDynamic("startTimestamp")(startTimestamp)
+    __obj.asInstanceOf[RealtimeTimeRange]
+  }
+}
+

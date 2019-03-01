@@ -17,3 +17,18 @@ trait CloneContext extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CloneContext {
+  @scala.inline
+  def apply(
+    binLogCoordinates: BinLogCoordinates = null,
+    destinationInstanceName: java.lang.String = null,
+    kind: java.lang.String = null
+  ): CloneContext = {
+    val __obj = js.Dynamic.literal()
+    if (binLogCoordinates != null) __obj.updateDynamic("binLogCoordinates")(binLogCoordinates)
+    if (destinationInstanceName != null) __obj.updateDynamic("destinationInstanceName")(destinationInstanceName)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[CloneContext]
+  }
+}
+

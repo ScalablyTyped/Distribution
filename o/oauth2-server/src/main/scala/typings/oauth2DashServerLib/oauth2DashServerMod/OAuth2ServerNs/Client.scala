@@ -17,3 +17,24 @@ trait Client
   var refreshTokenLifetime: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Client {
+  @scala.inline
+  def apply(
+    grants: java.lang.String | js.Array[java.lang.String],
+    id: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    accessTokenLifetime: scala.Int | scala.Double = null,
+    redirectUris: java.lang.String | js.Array[java.lang.String] = null,
+    refreshTokenLifetime: scala.Int | scala.Double = null
+  ): Client = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("grants")(grants.asInstanceOf[js.Any])
+    __obj.updateDynamic("id")(id)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (accessTokenLifetime != null) __obj.updateDynamic("accessTokenLifetime")(accessTokenLifetime.asInstanceOf[js.Any])
+    if (redirectUris != null) __obj.updateDynamic("redirectUris")(redirectUris.asInstanceOf[js.Any])
+    if (refreshTokenLifetime != null) __obj.updateDynamic("refreshTokenLifetime")(refreshTokenLifetime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Client]
+  }
+}
+

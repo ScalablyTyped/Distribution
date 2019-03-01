@@ -18,3 +18,13 @@ trait PrintJobEvent
   var State: PrintableState
 }
 
+object PrintJobEvent {
+  @scala.inline
+  def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, State: PrintableState): PrintJobEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("State")(State)
+    __obj.asInstanceOf[PrintJobEvent]
+  }
+}
+

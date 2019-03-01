@@ -12,3 +12,20 @@ trait Collection[T] extends js.Object {
   var hookOptions: meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.GlobalHookOptions
 }
 
+object Collection {
+  @scala.inline
+  def apply[T](
+    after: meteorDashCollectionDashHooksLib.Anon_CursorDoc[T],
+    before: meteorDashCollectionDashHooksLib.Anon_DocFieldNames[T],
+    direct: meteorDashCollectionDashHooksLib.Anon_CallbackDoc[T],
+    hookOptions: meteorDashCollectionDashHooksLib.meteorMongoMod.CollectionHooksNs.GlobalHookOptions
+  ): Collection[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("after")(after)
+    __obj.updateDynamic("before")(before)
+    __obj.updateDynamic("direct")(direct)
+    __obj.updateDynamic("hookOptions")(hookOptions)
+    __obj.asInstanceOf[Collection[T]]
+  }
+}
+

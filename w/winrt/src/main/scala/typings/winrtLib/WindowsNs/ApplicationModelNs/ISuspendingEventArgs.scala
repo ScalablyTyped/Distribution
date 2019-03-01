@@ -9,3 +9,12 @@ trait ISuspendingEventArgs extends js.Object {
   var suspendingOperation: SuspendingOperation
 }
 
+object ISuspendingEventArgs {
+  @scala.inline
+  def apply(suspendingOperation: SuspendingOperation): ISuspendingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("suspendingOperation")(suspendingOperation)
+    __obj.asInstanceOf[ISuspendingEventArgs]
+  }
+}
+

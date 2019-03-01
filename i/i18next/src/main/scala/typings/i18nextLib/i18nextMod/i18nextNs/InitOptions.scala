@@ -243,3 +243,105 @@ trait InitOptions extends js.Object {
   var whitelist: js.UndefOr[i18nextLib.i18nextLibNumbers.`false` | js.Array[java.lang.String]] = js.undefined
 }
 
+object InitOptions {
+  @scala.inline
+  def apply(
+    appendNamespaceToCIMode: js.UndefOr[scala.Boolean] = js.undefined,
+    appendNamespaceToMissingKey: js.UndefOr[scala.Boolean] = js.undefined,
+    backend: BackendPluginOptions = null,
+    cache: CachePluginOptions = null,
+    compatibilityJSON: java.lang.String = null,
+    contextSeparator: java.lang.String = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultNS: java.lang.String = null,
+    detection: DetectionPluginOptions = null,
+    fallbackLng: i18nextLib.i18nextLibNumbers.`false` | FallbackLng = null,
+    fallbackNS: i18nextLib.i18nextLibNumbers.`false` | java.lang.String | js.Array[java.lang.String] = null,
+    i18nFormat: js.Object = null,
+    initImmediate: js.UndefOr[scala.Boolean] = js.undefined,
+    interpolation: InterpolationOptions = null,
+    joinArrays: i18nextLib.i18nextLibNumbers.`false` | java.lang.String = null,
+    keySeparator: i18nextLib.i18nextLibNumbers.`false` | java.lang.String = null,
+    lng: java.lang.String = null,
+    load: i18nextLib.i18nextLibStrings.all | i18nextLib.i18nextLibStrings.currentOnly | i18nextLib.i18nextLibStrings.languageOnly = null,
+    lowerCaseLng: js.UndefOr[scala.Boolean] = js.undefined,
+    missingInterpolationHandler: js.Function2[/* text */ java.lang.String, /* value */ js.Any, _] = null,
+    missingKeyHandler: i18nextLib.i18nextLibNumbers.`false` | (js.Function4[
+      /* lngs */ js.Array[java.lang.String], 
+      /* ns */ java.lang.String, 
+      /* key */ java.lang.String, 
+      /* fallbackValue */ java.lang.String, 
+      scala.Unit
+    ]) = null,
+    nonExplicitWhitelist: js.UndefOr[scala.Boolean] = js.undefined,
+    ns: java.lang.String | js.Array[java.lang.String] = null,
+    nsSeparator: i18nextLib.i18nextLibNumbers.`false` | java.lang.String = null,
+    overloadTranslationOptionHandler: js.Function1[/* args */ js.Array[java.lang.String], TranslationOptions[js.Object]] = null,
+    parseMissingKeyHandler: js.Function1[/* key */ java.lang.String, _] = null,
+    partialBundledLanguages: js.UndefOr[scala.Boolean] = js.undefined,
+    pluralSeparator: java.lang.String = null,
+    postProcess: i18nextLib.i18nextLibNumbers.`false` | java.lang.String | js.Array[java.lang.String] = null,
+    preload: i18nextLib.i18nextLibNumbers.`false` | js.Array[java.lang.String] = null,
+    react: ReactOptions = null,
+    resources: Resource = null,
+    returnEmptyString: js.UndefOr[scala.Boolean] = js.undefined,
+    returnNull: js.UndefOr[scala.Boolean] = js.undefined,
+    returnObjects: js.UndefOr[scala.Boolean] = js.undefined,
+    returnedObjectHandler: js.Function3[
+      /* key */ java.lang.String, 
+      /* value */ java.lang.String, 
+      /* options */ js.Any, 
+      scala.Unit
+    ] = null,
+    saveMissing: js.UndefOr[scala.Boolean] = js.undefined,
+    saveMissingTo: i18nextLib.i18nextLibStrings.current | i18nextLib.i18nextLibStrings.all | i18nextLib.i18nextLibStrings.fallback = null,
+    simplifyPluralSuffix: js.UndefOr[scala.Boolean] = js.undefined,
+    updateMissing: js.UndefOr[scala.Boolean] = js.undefined,
+    whitelist: i18nextLib.i18nextLibNumbers.`false` | js.Array[java.lang.String] = null
+  ): InitOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(appendNamespaceToCIMode)) __obj.updateDynamic("appendNamespaceToCIMode")(appendNamespaceToCIMode)
+    if (!js.isUndefined(appendNamespaceToMissingKey)) __obj.updateDynamic("appendNamespaceToMissingKey")(appendNamespaceToMissingKey)
+    if (backend != null) __obj.updateDynamic("backend")(backend)
+    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (compatibilityJSON != null) __obj.updateDynamic("compatibilityJSON")(compatibilityJSON)
+    if (contextSeparator != null) __obj.updateDynamic("contextSeparator")(contextSeparator)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (defaultNS != null) __obj.updateDynamic("defaultNS")(defaultNS)
+    if (detection != null) __obj.updateDynamic("detection")(detection)
+    if (fallbackLng != null) __obj.updateDynamic("fallbackLng")(fallbackLng.asInstanceOf[js.Any])
+    if (fallbackNS != null) __obj.updateDynamic("fallbackNS")(fallbackNS.asInstanceOf[js.Any])
+    if (i18nFormat != null) __obj.updateDynamic("i18nFormat")(i18nFormat)
+    if (!js.isUndefined(initImmediate)) __obj.updateDynamic("initImmediate")(initImmediate)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (joinArrays != null) __obj.updateDynamic("joinArrays")(joinArrays.asInstanceOf[js.Any])
+    if (keySeparator != null) __obj.updateDynamic("keySeparator")(keySeparator.asInstanceOf[js.Any])
+    if (lng != null) __obj.updateDynamic("lng")(lng)
+    if (load != null) __obj.updateDynamic("load")(load.asInstanceOf[js.Any])
+    if (!js.isUndefined(lowerCaseLng)) __obj.updateDynamic("lowerCaseLng")(lowerCaseLng)
+    if (missingInterpolationHandler != null) __obj.updateDynamic("missingInterpolationHandler")(missingInterpolationHandler)
+    if (missingKeyHandler != null) __obj.updateDynamic("missingKeyHandler")(missingKeyHandler.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonExplicitWhitelist)) __obj.updateDynamic("nonExplicitWhitelist")(nonExplicitWhitelist)
+    if (ns != null) __obj.updateDynamic("ns")(ns.asInstanceOf[js.Any])
+    if (nsSeparator != null) __obj.updateDynamic("nsSeparator")(nsSeparator.asInstanceOf[js.Any])
+    if (overloadTranslationOptionHandler != null) __obj.updateDynamic("overloadTranslationOptionHandler")(overloadTranslationOptionHandler)
+    if (parseMissingKeyHandler != null) __obj.updateDynamic("parseMissingKeyHandler")(parseMissingKeyHandler)
+    if (!js.isUndefined(partialBundledLanguages)) __obj.updateDynamic("partialBundledLanguages")(partialBundledLanguages)
+    if (pluralSeparator != null) __obj.updateDynamic("pluralSeparator")(pluralSeparator)
+    if (postProcess != null) __obj.updateDynamic("postProcess")(postProcess.asInstanceOf[js.Any])
+    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (react != null) __obj.updateDynamic("react")(react)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (!js.isUndefined(returnEmptyString)) __obj.updateDynamic("returnEmptyString")(returnEmptyString)
+    if (!js.isUndefined(returnNull)) __obj.updateDynamic("returnNull")(returnNull)
+    if (!js.isUndefined(returnObjects)) __obj.updateDynamic("returnObjects")(returnObjects)
+    if (returnedObjectHandler != null) __obj.updateDynamic("returnedObjectHandler")(returnedObjectHandler)
+    if (!js.isUndefined(saveMissing)) __obj.updateDynamic("saveMissing")(saveMissing)
+    if (saveMissingTo != null) __obj.updateDynamic("saveMissingTo")(saveMissingTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(simplifyPluralSuffix)) __obj.updateDynamic("simplifyPluralSuffix")(simplifyPluralSuffix)
+    if (!js.isUndefined(updateMissing)) __obj.updateDynamic("updateMissing")(updateMissing)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InitOptions]
+  }
+}
+

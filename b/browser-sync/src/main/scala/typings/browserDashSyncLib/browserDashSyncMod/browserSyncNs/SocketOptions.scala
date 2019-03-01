@@ -14,3 +14,24 @@ trait SocketOptions extends js.Object {
   var port: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SocketOptions {
+  @scala.inline
+  def apply(
+    clientPath: java.lang.String = null,
+    clients: browserDashSyncLib.Anon_HeartbeatTimeout = null,
+    domain: java.lang.String = null,
+    namespace: java.lang.String = null,
+    path: java.lang.String = null,
+    port: scala.Int | scala.Double = null
+  ): SocketOptions = {
+    val __obj = js.Dynamic.literal()
+    if (clientPath != null) __obj.updateDynamic("clientPath")(clientPath)
+    if (clients != null) __obj.updateDynamic("clients")(clients)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SocketOptions]
+  }
+}
+

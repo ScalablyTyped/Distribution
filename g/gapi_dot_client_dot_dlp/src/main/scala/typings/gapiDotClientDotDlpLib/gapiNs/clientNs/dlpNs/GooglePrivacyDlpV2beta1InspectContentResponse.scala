@@ -13,3 +13,12 @@ trait GooglePrivacyDlpV2beta1InspectContentResponse extends js.Object {
   var results: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1InspectResult]] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1InspectContentResponse {
+  @scala.inline
+  def apply(results: js.Array[GooglePrivacyDlpV2beta1InspectResult] = null): GooglePrivacyDlpV2beta1InspectContentResponse = {
+    val __obj = js.Dynamic.literal()
+    if (results != null) __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectContentResponse]
+  }
+}
+

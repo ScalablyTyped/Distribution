@@ -16,3 +16,13 @@ trait DeleteBudgetRequest extends js.Object {
   var BudgetName: BudgetName
 }
 
+object DeleteBudgetRequest {
+  @scala.inline
+  def apply(AccountId: AccountId, BudgetName: BudgetName): DeleteBudgetRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccountId")(AccountId)
+    __obj.updateDynamic("BudgetName")(BudgetName)
+    __obj.asInstanceOf[DeleteBudgetRequest]
+  }
+}
+

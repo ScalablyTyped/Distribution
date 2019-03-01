@@ -16,3 +16,28 @@ trait Locals extends js.Object {
   var viewName: java.lang.String
 }
 
+object Locals {
+  @scala.inline
+  def apply(
+    directory: java.lang.String,
+    displayIcons: scala.Boolean,
+    fileList: js.Array[File],
+    name: java.lang.String,
+    path: java.lang.String,
+    stat: nodeLib.fsMod.Stats,
+    style: java.lang.String,
+    viewName: java.lang.String
+  ): Locals = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("directory")(directory)
+    __obj.updateDynamic("displayIcons")(displayIcons)
+    __obj.updateDynamic("fileList")(fileList)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("stat")(stat)
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("viewName")(viewName)
+    __obj.asInstanceOf[Locals]
+  }
+}
+

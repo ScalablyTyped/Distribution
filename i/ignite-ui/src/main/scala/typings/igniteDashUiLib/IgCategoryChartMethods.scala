@@ -99,3 +99,46 @@ trait IgCategoryChartMethods extends js.Object {
   def setItem(index: scala.Double, item: js.Object): js.Object
 }
 
+object IgCategoryChartMethods {
+  @scala.inline
+  def apply(
+    addItem: js.Function1[js.Object, js.Object],
+    chart: js.Function0[js.Object],
+    dataBind: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    exportVisualData: js.Function0[scala.Unit],
+    findIndexOfItem: js.Function1[js.Object, scala.Double],
+    flush: js.Function0[scala.Unit],
+    getData: js.Function0[js.Array[_]],
+    getDataItem: js.Function1[js.Object, js.Object],
+    id: js.Function0[scala.Unit],
+    insertItem: js.Function2[js.Object, scala.Double, js.Object],
+    notifyClearItems: js.Function1[js.Object, js.Object],
+    notifyInsertItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
+    notifyRemoveItem: js.Function3[js.Object, scala.Double, js.Object, js.Object],
+    notifySetItem: js.Function4[js.Object, scala.Double, js.Object, js.Object, js.Object],
+    removeItem: js.Function1[scala.Double, js.Object],
+    setItem: js.Function2[scala.Double, js.Object, js.Object]
+  ): IgCategoryChartMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addItem")(addItem)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("dataBind")(dataBind)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("exportVisualData")(exportVisualData)
+    __obj.updateDynamic("findIndexOfItem")(findIndexOfItem)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("getDataItem")(getDataItem)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("insertItem")(insertItem)
+    __obj.updateDynamic("notifyClearItems")(notifyClearItems)
+    __obj.updateDynamic("notifyInsertItem")(notifyInsertItem)
+    __obj.updateDynamic("notifyRemoveItem")(notifyRemoveItem)
+    __obj.updateDynamic("notifySetItem")(notifySetItem)
+    __obj.updateDynamic("removeItem")(removeItem)
+    __obj.updateDynamic("setItem")(setItem)
+    __obj.asInstanceOf[IgCategoryChartMethods]
+  }
+}
+

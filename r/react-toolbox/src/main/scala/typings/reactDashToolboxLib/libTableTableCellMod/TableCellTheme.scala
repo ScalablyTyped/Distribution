@@ -36,3 +36,26 @@ trait TableCellTheme extends js.Object {
   var tableCell: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableCellTheme {
+  @scala.inline
+  def apply(
+    asc: java.lang.String = null,
+    headCell: java.lang.String = null,
+    numeric: java.lang.String = null,
+    rowCell: java.lang.String = null,
+    sortIcon: java.lang.String = null,
+    sorted: java.lang.String = null,
+    tableCell: java.lang.String = null
+  ): TableCellTheme = {
+    val __obj = js.Dynamic.literal()
+    if (asc != null) __obj.updateDynamic("asc")(asc)
+    if (headCell != null) __obj.updateDynamic("headCell")(headCell)
+    if (numeric != null) __obj.updateDynamic("numeric")(numeric)
+    if (rowCell != null) __obj.updateDynamic("rowCell")(rowCell)
+    if (sortIcon != null) __obj.updateDynamic("sortIcon")(sortIcon)
+    if (sorted != null) __obj.updateDynamic("sorted")(sorted)
+    if (tableCell != null) __obj.updateDynamic("tableCell")(tableCell)
+    __obj.asInstanceOf[TableCellTheme]
+  }
+}
+

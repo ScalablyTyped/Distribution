@@ -11,3 +11,18 @@ trait Options extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    onTick: js.ThisFunction1[/* this */ Spinner, /* msg */ java.lang.String, scala.Unit] = null,
+    stream: nodeLib.NodeJSNs.WritableStream = null,
+    text: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (onTick != null) __obj.updateDynamic("onTick")(onTick)
+    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Options]
+  }
+}
+

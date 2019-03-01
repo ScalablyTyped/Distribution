@@ -62,3 +62,56 @@ trait Spreadsheet
   var TableLayout: scala.Double
 }
 
+object Spreadsheet {
+  @scala.inline
+  def apply(
+    AutomaticPrintArea: scala.Boolean,
+    ConditionalFormats: XConditionalFormats,
+    IsVisible: scala.Boolean,
+    PageStyle: java.lang.String,
+    Scenario: Scenario = null,
+    SheetCellRange: SheetCellRange = null,
+    TabColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    TableLayout: scala.Double,
+    XCellRangeMovement: XCellRangeMovement = null,
+    XDataPilotTablesSupplier: XDataPilotTablesSupplier = null,
+    XDrawPageSupplier: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPageSupplier = null,
+    XExternalSheetName: XExternalSheetName = null,
+    XPrintAreas: XPrintAreas = null,
+    XProtectable: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XProtectable = null,
+    XScenariosSupplier: XScenariosSupplier = null,
+    XSheetAnnotationsSupplier: XSheetAnnotationsSupplier = null,
+    XSheetAuditing: XSheetAuditing = null,
+    XSheetLinkable: XSheetLinkable = null,
+    XSheetOutline: XSheetOutline = null,
+    XSheetPageBreak: XSheetPageBreak = null,
+    XSpreadsheet: XSpreadsheet = null,
+    XTableChartsSupplier: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableChartsSupplier = null
+  ): Spreadsheet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutomaticPrintArea")(AutomaticPrintArea)
+    __obj.updateDynamic("ConditionalFormats")(ConditionalFormats)
+    __obj.updateDynamic("IsVisible")(IsVisible)
+    __obj.updateDynamic("PageStyle")(PageStyle)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Scenario)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, SheetCellRange)
+    __obj.updateDynamic("TabColor")(TabColor)
+    __obj.updateDynamic("TableLayout")(TableLayout)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellRangeMovement)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XDataPilotTablesSupplier)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XDrawPageSupplier)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XExternalSheetName)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XPrintAreas)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XProtectable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XScenariosSupplier)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetAnnotationsSupplier)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetAuditing)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetLinkable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetOutline)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetPageBreak)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSpreadsheet)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XTableChartsSupplier)
+    __obj.asInstanceOf[Spreadsheet]
+  }
+}
+

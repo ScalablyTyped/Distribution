@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object jqueryDashJcropLibStrings {
   @js.native
-  sealed trait e extends js.Object
+  sealed trait e
+    extends jqueryDashJcropLib.JQueryNs.JcropNs.CardinalDirection
   
   @js.native
-  sealed trait n extends js.Object
+  sealed trait n
+    extends jqueryDashJcropLib.JQueryNs.JcropNs.CardinalDirection
   
   @js.native
-  sealed trait ne extends js.Object
+  sealed trait ne
+    extends jqueryDashJcropLib.JQueryNs.JcropNs.IntermediateDirection
   
   @js.native
-  sealed trait nw extends js.Object
+  sealed trait nw
+    extends jqueryDashJcropLib.JQueryNs.JcropNs.IntermediateDirection
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s
+    extends jqueryDashJcropLib.JQueryNs.JcropNs.CardinalDirection
   
   @js.native
-  sealed trait se extends js.Object
+  sealed trait se
+    extends jqueryDashJcropLib.JQueryNs.JcropNs.IntermediateDirection
   
   @js.native
-  sealed trait sw extends js.Object
+  sealed trait sw
+    extends jqueryDashJcropLib.JQueryNs.JcropNs.IntermediateDirection
   
   @js.native
-  sealed trait w extends js.Object
+  sealed trait w
+    extends jqueryDashJcropLib.JQueryNs.JcropNs.CardinalDirection
   
   @scala.inline
   def e: e = "e".asInstanceOf[e]

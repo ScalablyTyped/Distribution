@@ -11,3 +11,14 @@ trait CityRecord extends js.Object {
   val names: Names
 }
 
+object CityRecord {
+  @scala.inline
+  def apply(geoname_id: scala.Double, names: Names, confidence: scala.Int | scala.Double = null): CityRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("geoname_id")(geoname_id)
+    __obj.updateDynamic("names")(names)
+    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CityRecord]
+  }
+}
+

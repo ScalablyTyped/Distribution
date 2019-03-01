@@ -78,3 +78,32 @@ trait LZMAFilter extends js.Object {
   var preset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LZMAFilter {
+  @scala.inline
+  def apply(
+    id: adoneLib.adoneLibStrings.LZMA_FILTER_LZMA1 | adoneLib.adoneLibStrings.LZMA_FILTER_LZMA2,
+    depth: scala.Int | scala.Double = null,
+    dict_size: scala.Int | scala.Double = null,
+    lc: scala.Int | scala.Double = null,
+    lp: scala.Int | scala.Double = null,
+    mf: scala.Int | scala.Double = null,
+    mode: scala.Int | scala.Double = null,
+    nice_len: scala.Int | scala.Double = null,
+    pb: scala.Int | scala.Double = null,
+    preset: scala.Int | scala.Double = null
+  ): LZMAFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (dict_size != null) __obj.updateDynamic("dict_size")(dict_size.asInstanceOf[js.Any])
+    if (lc != null) __obj.updateDynamic("lc")(lc.asInstanceOf[js.Any])
+    if (lp != null) __obj.updateDynamic("lp")(lp.asInstanceOf[js.Any])
+    if (mf != null) __obj.updateDynamic("mf")(mf.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (nice_len != null) __obj.updateDynamic("nice_len")(nice_len.asInstanceOf[js.Any])
+    if (pb != null) __obj.updateDynamic("pb")(pb.asInstanceOf[js.Any])
+    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LZMAFilter]
+  }
+}
+

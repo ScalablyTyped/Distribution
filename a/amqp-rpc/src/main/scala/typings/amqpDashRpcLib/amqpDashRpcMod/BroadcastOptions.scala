@@ -12,3 +12,20 @@ trait BroadcastOptions extends js.Object {
   var ttl: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BroadcastOptions {
+  @scala.inline
+  def apply(
+    context: js.Any = null,
+    onComplete: js.Any = null,
+    onResponse: js.Any = null,
+    ttl: scala.Int | scala.Double = null
+  ): BroadcastOptions = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onResponse != null) __obj.updateDynamic("onResponse")(onResponse)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BroadcastOptions]
+  }
+}
+

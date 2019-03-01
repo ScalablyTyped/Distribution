@@ -27,3 +27,38 @@ trait MapProps extends js.Object {
   var zoom: scala.Double
 }
 
+object MapProps {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    mapId: java.lang.String,
+    provider: reactDashCartographerLib.reactDashCartographerLibStrings.yahoo | reactDashCartographerLib.reactDashCartographerLibStrings.google | reactDashCartographerLib.reactDashCartographerLibStrings.bing,
+    providerKey: java.lang.String,
+    useBackgroundImageStyle: scala.Boolean,
+    width: scala.Double,
+    zoom: scala.Double,
+    addressLine1: java.lang.String = null,
+    city: java.lang.String = null,
+    country: java.lang.String = null,
+    latitude: scala.Int | scala.Double = null,
+    longitude: scala.Int | scala.Double = null,
+    state: java.lang.String = null
+  ): MapProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("mapId")(mapId)
+    __obj.updateDynamic("provider")(provider.asInstanceOf[js.Any])
+    __obj.updateDynamic("providerKey")(providerKey)
+    __obj.updateDynamic("useBackgroundImageStyle")(useBackgroundImageStyle)
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("zoom")(zoom)
+    if (addressLine1 != null) __obj.updateDynamic("addressLine1")(addressLine1)
+    if (city != null) __obj.updateDynamic("city")(city)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[MapProps]
+  }
+}
+

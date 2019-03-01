@@ -27,3 +27,22 @@ trait CheckResponse extends js.Object {
   var serviceConfigId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CheckResponse {
+  @scala.inline
+  def apply(
+    checkErrors: js.Array[CheckError] = null,
+    checkInfo: CheckInfo = null,
+    operationId: java.lang.String = null,
+    quotaInfo: QuotaInfo = null,
+    serviceConfigId: java.lang.String = null
+  ): CheckResponse = {
+    val __obj = js.Dynamic.literal()
+    if (checkErrors != null) __obj.updateDynamic("checkErrors")(checkErrors)
+    if (checkInfo != null) __obj.updateDynamic("checkInfo")(checkInfo)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (quotaInfo != null) __obj.updateDynamic("quotaInfo")(quotaInfo)
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    __obj.asInstanceOf[CheckResponse]
+  }
+}
+

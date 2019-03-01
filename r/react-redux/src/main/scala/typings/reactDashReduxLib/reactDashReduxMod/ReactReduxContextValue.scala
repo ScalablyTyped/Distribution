@@ -10,3 +10,13 @@ trait ReactReduxContextValue[SS, A /* <: reduxLib.reduxMod.Action[_] */] extends
   var storeState: SS
 }
 
+object ReactReduxContextValue {
+  @scala.inline
+  def apply[SS, A /* <: reduxLib.reduxMod.Action[_] */](store: reduxLib.reduxMod.Store[SS, A], storeState: SS): ReactReduxContextValue[SS, A] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("store")(store)
+    __obj.updateDynamic("storeState")(storeState.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReactReduxContextValue[SS, A]]
+  }
+}
+

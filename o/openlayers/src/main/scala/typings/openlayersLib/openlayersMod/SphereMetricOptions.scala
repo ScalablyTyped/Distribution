@@ -19,3 +19,16 @@ trait SphereMetricOptions extends js.Object {
   var radius: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SphereMetricOptions {
+  @scala.inline
+  def apply(
+    projection: openlayersLib.openlayersMod.projNs.Projection = null,
+    radius: scala.Int | scala.Double = null
+  ): SphereMetricOptions = {
+    val __obj = js.Dynamic.literal()
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SphereMetricOptions]
+  }
+}
+

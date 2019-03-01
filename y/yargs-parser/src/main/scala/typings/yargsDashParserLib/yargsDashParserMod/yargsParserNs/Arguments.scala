@@ -15,3 +15,18 @@ trait Arguments
   var `_`: js.Array[java.lang.String]
 }
 
+object Arguments {
+  @scala.inline
+  def apply(
+    $0: java.lang.String,
+    `_`: js.Array[java.lang.String],
+    StringDictionary: /** All remaining options */
+  /* argName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Arguments = {
+    val __obj = js.Dynamic.literal(`_` = `_`)
+    __obj.updateDynamic("$0")($0)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Arguments]
+  }
+}
+

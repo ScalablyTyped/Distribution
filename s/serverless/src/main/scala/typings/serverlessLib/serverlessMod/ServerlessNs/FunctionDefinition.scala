@@ -15,3 +15,25 @@ trait FunctionDefinition extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FunctionDefinition {
+  @scala.inline
+  def apply(
+    handler: java.lang.String,
+    name: java.lang.String,
+    `package`: Package,
+    environment: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    memorySize: scala.Int | scala.Double = null,
+    runtime: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null
+  ): FunctionDefinition = {
+    val __obj = js.Dynamic.literal(`package` = `package`)
+    __obj.updateDynamic("handler")(handler)
+    __obj.updateDynamic("name")(name)
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (memorySize != null) __obj.updateDynamic("memorySize")(memorySize.asInstanceOf[js.Any])
+    if (runtime != null) __obj.updateDynamic("runtime")(runtime)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FunctionDefinition]
+  }
+}
+

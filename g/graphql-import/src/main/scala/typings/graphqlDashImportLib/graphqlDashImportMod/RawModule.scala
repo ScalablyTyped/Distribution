@@ -10,3 +10,13 @@ trait RawModule extends js.Object {
   var imports: js.Array[java.lang.String]
 }
 
+object RawModule {
+  @scala.inline
+  def apply(from: java.lang.String, imports: js.Array[java.lang.String]): RawModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("imports")(imports)
+    __obj.asInstanceOf[RawModule]
+  }
+}
+

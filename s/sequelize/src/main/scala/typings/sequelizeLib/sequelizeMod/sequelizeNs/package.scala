@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object sequelizeNs {
-  type AddConstraintOptions = AddUniqueConstraintOptions | AddDefaultConstraintOptions | AddCheckConstraintOptions | AddPrimaryKeyConstraintOptions | AddForeignKeyConstraintOptions
   type AnyFindOptions = FindOptions[js.Any]
   /**
     * The createAssociation mixin applied to models with belongsTo.

@@ -21,3 +21,20 @@ trait ASPxClientTabControlTabCancelEventArgs extends ASPxClientProcessingModeCan
   var tab: ASPxClientTab
 }
 
+object ASPxClientTabControlTabCancelEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    processOnServer: scala.Boolean,
+    reloadContentOnCallback: scala.Boolean,
+    tab: ASPxClientTab
+  ): ASPxClientTabControlTabCancelEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.updateDynamic("reloadContentOnCallback")(reloadContentOnCallback)
+    __obj.updateDynamic("tab")(tab)
+    __obj.asInstanceOf[ASPxClientTabControlTabCancelEventArgs]
+  }
+}
+

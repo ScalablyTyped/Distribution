@@ -10,3 +10,13 @@ trait Edge[T] extends js.Object {
   var node: T
 }
 
+object Edge {
+  @scala.inline
+  def apply[T](cursor: ConnectionCursor, node: T): Edge[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cursor")(cursor)
+    __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Edge[T]]
+  }
+}
+

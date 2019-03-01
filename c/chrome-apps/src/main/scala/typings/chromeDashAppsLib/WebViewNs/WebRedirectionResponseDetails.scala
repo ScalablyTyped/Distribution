@@ -10,3 +10,41 @@ trait WebRedirectionResponseDetails extends WebResponseCacheDetails {
   var redirectUrl: java.lang.String
 }
 
+object WebRedirectionResponseDetails {
+  @scala.inline
+  def apply(
+    frameId: chromeDashAppsLib.chromeNs.integer,
+    fromCache: scala.Boolean,
+    method: java.lang.String,
+    parentFrameId: chromeDashAppsLib.chromeNs.integer,
+    redirectUrl: java.lang.String,
+    requestId: java.lang.String,
+    statusCode: chromeDashAppsLib.chromeNs.integer,
+    statusLine: java.lang.String,
+    tabId: chromeDashAppsLib.chromeNs.integer,
+    timeStamp: chromeDashAppsLib.chromeNs.double,
+    `type`: chromeDashAppsLib.chromeNs.webRequestNs.ResourceType,
+    url: java.lang.String,
+    initiator: java.lang.String = null,
+    ip: java.lang.String = null,
+    responseHeaders: js.Array[HttpHeader] = null
+  ): WebRedirectionResponseDetails = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("frameId")(frameId)
+    __obj.updateDynamic("fromCache")(fromCache)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("parentFrameId")(parentFrameId)
+    __obj.updateDynamic("redirectUrl")(redirectUrl)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.updateDynamic("statusLine")(statusLine)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("url")(url)
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
+    if (ip != null) __obj.updateDynamic("ip")(ip)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    __obj.asInstanceOf[WebRedirectionResponseDetails]
+  }
+}
+

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ICreateElementTreeDelta extends IDelta {
+trait ICreateElementTreeDelta
+  extends IDelta
+     with Delta {
   /**
     * Index where the element should be created. Only for listy properties.
     */
@@ -24,5 +26,26 @@ trait ICreateElementTreeDelta extends IDelta {
     * This must a property of PART kind with an element type compatible with `elementType`.
     */
   var parentPropertyName: java.lang.String
+}
+
+object ICreateElementTreeDelta {
+  @scala.inline
+  def apply(
+    deltaType: mendixmodelsdkLib.mendixmodelsdkLibStrings.CREATE_ELEMENT_TREE,
+    elementTree: IStructureJSON,
+    parentId: java.lang.String,
+    parentPropertyName: java.lang.String,
+    unitId: java.lang.String,
+    additionIndex: scala.Int | scala.Double = null
+  ): ICreateElementTreeDelta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deltaType")(deltaType)
+    __obj.updateDynamic("elementTree")(elementTree)
+    __obj.updateDynamic("parentId")(parentId)
+    __obj.updateDynamic("parentPropertyName")(parentPropertyName)
+    __obj.updateDynamic("unitId")(unitId)
+    if (additionIndex != null) __obj.updateDynamic("additionIndex")(additionIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICreateElementTreeDelta]
+  }
 }
 

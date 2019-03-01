@@ -33,3 +33,22 @@ trait MarkerState extends js.Object {
   var radius: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MarkerState {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fillColor: java.lang.String = null,
+    lineColor: java.lang.String | Gradient = null,
+    lineWidth: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null
+  ): MarkerState = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MarkerState]
+  }
+}
+

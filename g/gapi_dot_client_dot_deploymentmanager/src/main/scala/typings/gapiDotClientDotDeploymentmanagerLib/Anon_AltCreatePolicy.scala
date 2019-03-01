@@ -41,3 +41,36 @@ trait Anon_AltCreatePolicy extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltCreatePolicy {
+  @scala.inline
+  def apply(
+    deployment: java.lang.String,
+    project: java.lang.String,
+    alt: java.lang.String = null,
+    createPolicy: java.lang.String = null,
+    deletePolicy: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    preview: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltCreatePolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deployment")(deployment)
+    __obj.updateDynamic("project")(project)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (createPolicy != null) __obj.updateDynamic("createPolicy")(createPolicy)
+    if (deletePolicy != null) __obj.updateDynamic("deletePolicy")(deletePolicy)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (!js.isUndefined(preview)) __obj.updateDynamic("preview")(preview)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltCreatePolicy]
+  }
+}
+

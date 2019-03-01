@@ -39,3 +39,42 @@ trait XSimpleText extends XTextRange {
   def insertString(xRange: XTextRange, aString: java.lang.String, bAbsorb: scala.Boolean): scala.Unit
 }
 
+object XSimpleText {
+  @scala.inline
+  def apply(
+    End: XTextRange,
+    Start: XTextRange,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    createTextCursor: js.Function0[XTextCursor],
+    createTextCursorByRange: js.Function1[XTextRange, XTextCursor],
+    getEnd: js.Function0[XTextRange],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    insertControlCharacter: js.Function3[XTextRange, scala.Double, scala.Boolean, scala.Unit],
+    insertString: js.Function3[XTextRange, java.lang.String, scala.Boolean, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): XSimpleText = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("End")(End)
+    __obj.updateDynamic("Start")(Start)
+    __obj.updateDynamic("String")(String)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createTextCursor")(createTextCursor)
+    __obj.updateDynamic("createTextCursorByRange")(createTextCursorByRange)
+    __obj.updateDynamic("getEnd")(getEnd)
+    __obj.updateDynamic("getStart")(getStart)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("insertControlCharacter")(insertControlCharacter)
+    __obj.updateDynamic("insertString")(insertString)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setString")(setString)
+    __obj.asInstanceOf[XSimpleText]
+  }
+}
+

@@ -10,3 +10,13 @@ trait MxRecord extends js.Object {
   var priority: scala.Double
 }
 
+object MxRecord {
+  @scala.inline
+  def apply(exchange: java.lang.String, priority: scala.Double): MxRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exchange")(exchange)
+    __obj.updateDynamic("priority")(priority)
+    __obj.asInstanceOf[MxRecord]
+  }
+}
+

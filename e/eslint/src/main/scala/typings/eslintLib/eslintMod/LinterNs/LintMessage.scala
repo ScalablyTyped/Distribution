@@ -19,3 +19,34 @@ trait LintMessage extends js.Object {
   var source: java.lang.String | scala.Null
 }
 
+object LintMessage {
+  @scala.inline
+  def apply(
+    column: scala.Double,
+    line: scala.Double,
+    message: java.lang.String,
+    nodeType: java.lang.String,
+    severity: Severity,
+    endColumn: scala.Int | scala.Double = null,
+    endLine: scala.Int | scala.Double = null,
+    fatal: eslintLib.eslintLibNumbers.`true` = null,
+    fix: eslintLib.eslintMod.RuleNs.Fix = null,
+    ruleId: java.lang.String = null,
+    source: java.lang.String = null
+  ): LintMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("nodeType")(nodeType)
+    __obj.updateDynamic("severity")(severity)
+    if (endColumn != null) __obj.updateDynamic("endColumn")(endColumn.asInstanceOf[js.Any])
+    if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
+    if (fatal != null) __obj.updateDynamic("fatal")(fatal)
+    if (fix != null) __obj.updateDynamic("fix")(fix)
+    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[LintMessage]
+  }
+}
+

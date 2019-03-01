@@ -11,3 +11,12 @@ trait OpenEventArgs extends js.Object {
   var popup: js.UndefOr[js.Any] = js.undefined
 }
 
+object OpenEventArgs {
+  @scala.inline
+  def apply(popup: js.Any = null): OpenEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (popup != null) __obj.updateDynamic("popup")(popup)
+    __obj.asInstanceOf[OpenEventArgs]
+  }
+}
+

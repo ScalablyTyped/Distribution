@@ -10,3 +10,13 @@ trait Key extends js.Object {
   var shortKey: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Key {
+  @scala.inline
+  def apply(key: java.lang.String, shortKey: js.UndefOr[scala.Boolean] = js.undefined): Key = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(shortKey)) __obj.updateDynamic("shortKey")(shortKey)
+    __obj.asInstanceOf[Key]
+  }
+}
+

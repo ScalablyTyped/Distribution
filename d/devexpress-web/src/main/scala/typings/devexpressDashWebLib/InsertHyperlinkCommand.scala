@@ -20,3 +20,13 @@ trait InsertHyperlinkCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object InsertHyperlinkCommand {
+  @scala.inline
+  def apply(execute: js.Function1[HyperlinkSettings, scala.Boolean], getState: js.Function0[js.Any]): InsertHyperlinkCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[InsertHyperlinkCommand]
+  }
+}
+

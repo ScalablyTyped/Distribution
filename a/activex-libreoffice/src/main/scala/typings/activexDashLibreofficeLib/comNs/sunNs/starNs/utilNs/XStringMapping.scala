@@ -12,3 +12,23 @@ trait XStringMapping
   def mapStrings(Parameter: js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]]): scala.Boolean
 }
 
+object XStringMapping {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    mapStrings: js.Function1[
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStringMapping = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("mapStrings")(mapStrings)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStringMapping]
+  }
+}
+

@@ -12,3 +12,13 @@ trait AliasContext extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AliasContext {
+  @scala.inline
+  def apply(kind: java.lang.String = null, name: java.lang.String = null): AliasContext = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AliasContext]
+  }
+}
+

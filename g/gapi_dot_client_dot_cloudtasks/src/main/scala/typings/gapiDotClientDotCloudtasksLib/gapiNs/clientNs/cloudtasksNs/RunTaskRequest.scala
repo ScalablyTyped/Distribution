@@ -23,3 +23,12 @@ trait RunTaskRequest extends js.Object {
   var responseView: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RunTaskRequest {
+  @scala.inline
+  def apply(responseView: java.lang.String = null): RunTaskRequest = {
+    val __obj = js.Dynamic.literal()
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
+    __obj.asInstanceOf[RunTaskRequest]
+  }
+}
+

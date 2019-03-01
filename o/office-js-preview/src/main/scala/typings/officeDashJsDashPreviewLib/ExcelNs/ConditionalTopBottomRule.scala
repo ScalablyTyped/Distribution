@@ -28,3 +28,15 @@ trait ConditionalTopBottomRule extends js.Object {
   var `type`: ConditionalTopBottomCriterionType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TopItems | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TopPercent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BottomItems | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BottomPercent
 }
 
+object ConditionalTopBottomRule {
+  @scala.inline
+  def apply(
+    rank: scala.Double,
+    `type`: ConditionalTopBottomCriterionType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TopItems | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TopPercent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BottomItems | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.BottomPercent
+  ): ConditionalTopBottomRule = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("rank")(rank)
+    __obj.asInstanceOf[ConditionalTopBottomRule]
+  }
+}
+

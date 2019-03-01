@@ -5,19 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Record) */ @js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof any ]: any} */ @js.native
 trait ContentBlock extends js.Object {
   /**
-                   * Execute a callback for every contiguous range of entities within the block.
-                   */
+    * Execute a callback for every contiguous range of entities within the block.
+    */
   def findEntityRanges(
     filterFn: js.Function1[/* value */ CharacterMetadata, scala.Boolean],
     callback: js.Function2[/* start */ scala.Double, /* end */ scala.Double, scala.Unit]
   ): scala.Unit = js.native
   /**
-                   * Execute a callback for every contiguous range of styles within the block.
-                   */
+    * Execute a callback for every contiguous range of styles within the block.
+    */
   def findStyleRanges(
     filterFn: js.Function1[/* value */ CharacterMetadata, scala.Boolean],
     callback: js.Function2[/* start */ scala.Double, /* end */ scala.Double, scala.Unit]

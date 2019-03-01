@@ -14,3 +14,22 @@ trait XSQLErrorBroadcaster
   def removeSQLErrorListener(Listener: XSQLErrorListener): scala.Unit
 }
 
+object XSQLErrorBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addSQLErrorListener: js.Function1[XSQLErrorListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeSQLErrorListener: js.Function1[XSQLErrorListener, scala.Unit]
+  ): XSQLErrorBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addSQLErrorListener")(addSQLErrorListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeSQLErrorListener")(removeSQLErrorListener)
+    __obj.asInstanceOf[XSQLErrorBroadcaster]
+  }
+}
+

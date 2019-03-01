@@ -17,3 +17,30 @@ trait ITaskPane extends js.Object {
   def SetTheme(theme: ITheme): scala.Unit
 }
 
+object ITaskPane {
+  @scala.inline
+  def apply(
+    AddCustomCommandToGroup: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    Available: scala.Boolean,
+    CreateGroup: js.Function2[java.lang.String, scala.Double, scala.Double],
+    DeleteGroup: js.Function1[scala.Double, scala.Unit],
+    Events: ITaskPaneEvents,
+    RemoveCustomCommandFromGroup: js.Function2[scala.Double, scala.Double, scala.Unit],
+    SetLogo: js.Function1[java.lang.String, scala.Unit],
+    SetTheme: js.Function1[ITheme, scala.Unit],
+    Visible: scala.Boolean
+  ): ITaskPane = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AddCustomCommandToGroup")(AddCustomCommandToGroup)
+    __obj.updateDynamic("Available")(Available)
+    __obj.updateDynamic("CreateGroup")(CreateGroup)
+    __obj.updateDynamic("DeleteGroup")(DeleteGroup)
+    __obj.updateDynamic("Events")(Events)
+    __obj.updateDynamic("RemoveCustomCommandFromGroup")(RemoveCustomCommandFromGroup)
+    __obj.updateDynamic("SetLogo")(SetLogo)
+    __obj.updateDynamic("SetTheme")(SetTheme)
+    __obj.updateDynamic("Visible")(Visible)
+    __obj.asInstanceOf[ITaskPane]
+  }
+}
+

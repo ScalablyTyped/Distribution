@@ -13,3 +13,21 @@ trait Action extends js.Object {
   var `type`: java.lang.String
 }
 
+object Action {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    meta: Meta = null,
+    navKey: Nullable[java.lang.String] = null,
+    payload: Payload = null,
+    query: js.Object = null
+  ): Action = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[Action]
+  }
+}
+

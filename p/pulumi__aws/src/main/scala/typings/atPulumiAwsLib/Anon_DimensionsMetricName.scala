@@ -15,3 +15,22 @@ trait Anon_DimensionsMetricName extends js.Object {
   var unit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object Anon_DimensionsMetricName {
+  @scala.inline
+  def apply(
+    metricName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    statistic: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    dimensions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_NameValue]]] = null,
+    unit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_DimensionsMetricName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metricName")(metricName.asInstanceOf[js.Any])
+    __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    __obj.updateDynamic("statistic")(statistic.asInstanceOf[js.Any])
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions.asInstanceOf[js.Any])
+    if (unit != null) __obj.updateDynamic("unit")(unit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_DimensionsMetricName]
+  }
+}
+

@@ -41,3 +41,24 @@ trait Safe extends js.Object {
   var sizeMin: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Safe {
+  @scala.inline
+  def apply(
+    allow: SafeAllow = null,
+    safeProtocols: SafeProtocols = null,
+    safeRequire: SafeRequire = null,
+    safeStyles: SafeStyles = null,
+    sizeMax: scala.Int | scala.Double = null,
+    sizeMin: scala.Int | scala.Double = null
+  ): Safe = {
+    val __obj = js.Dynamic.literal()
+    if (allow != null) __obj.updateDynamic("allow")(allow)
+    if (safeProtocols != null) __obj.updateDynamic("safeProtocols")(safeProtocols)
+    if (safeRequire != null) __obj.updateDynamic("safeRequire")(safeRequire)
+    if (safeStyles != null) __obj.updateDynamic("safeStyles")(safeStyles)
+    if (sizeMax != null) __obj.updateDynamic("sizeMax")(sizeMax.asInstanceOf[js.Any])
+    if (sizeMin != null) __obj.updateDynamic("sizeMin")(sizeMin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Safe]
+  }
+}
+

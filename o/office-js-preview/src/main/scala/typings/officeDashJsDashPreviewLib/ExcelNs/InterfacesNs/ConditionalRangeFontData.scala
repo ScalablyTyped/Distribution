@@ -46,3 +46,22 @@ trait ConditionalRangeFontData extends js.Object {
   ] = js.undefined
 }
 
+object ConditionalRangeFontData {
+  @scala.inline
+  def apply(
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    strikethrough: js.UndefOr[scala.Boolean] = js.undefined,
+    underline: officeDashJsDashPreviewLib.ExcelNs.ConditionalRangeFontUnderlineStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Single | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Double = null
+  ): ConditionalRangeFontData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (!js.isUndefined(strikethrough)) __obj.updateDynamic("strikethrough")(strikethrough)
+    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConditionalRangeFontData]
+  }
+}
+

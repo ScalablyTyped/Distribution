@@ -13,3 +13,27 @@ trait ICustomRangeSlider extends ICustomControl {
   var step: scala.Double
 }
 
+object ICustomRangeSlider {
+  @scala.inline
+  def apply(
+    component: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.slider,
+    defaultValue: js.Array[scala.Double],
+    label: java.lang.String,
+    max: scala.Double,
+    min: scala.Double,
+    ref: java.lang.String,
+    step: scala.Double,
+    `type`: java.lang.String
+  ): ICustomRangeSlider = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("component")(component)
+    __obj.updateDynamic("defaultValue")(defaultValue)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("min")(min)
+    __obj.updateDynamic("ref")(ref)
+    __obj.updateDynamic("step")(step)
+    __obj.asInstanceOf[ICustomRangeSlider]
+  }
+}
+

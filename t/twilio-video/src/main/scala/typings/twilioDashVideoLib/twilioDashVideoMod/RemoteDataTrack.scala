@@ -7,7 +7,10 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio-video", "RemoteDataTrack")
 @js.native
-class RemoteDataTrack () extends Track {
+class RemoteDataTrack ()
+  extends Track
+     with DataTrack
+     with RemoteTrack {
   var isEnabled: scala.Boolean = js.native
   var isSubscribed: scala.Boolean = js.native
   @JSName("kind")

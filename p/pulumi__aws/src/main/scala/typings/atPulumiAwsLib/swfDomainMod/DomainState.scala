@@ -24,3 +24,20 @@ trait DomainState extends js.Object {
   val workflowExecutionRetentionPeriodInDays: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object DomainState {
+  @scala.inline
+  def apply(
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    workflowExecutionRetentionPeriodInDays: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): DomainState = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (workflowExecutionRetentionPeriodInDays != null) __obj.updateDynamic("workflowExecutionRetentionPeriodInDays")(workflowExecutionRetentionPeriodInDays.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DomainState]
+  }
+}
+

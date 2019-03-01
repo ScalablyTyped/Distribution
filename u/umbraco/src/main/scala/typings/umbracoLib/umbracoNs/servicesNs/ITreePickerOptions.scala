@@ -19,3 +19,20 @@ trait ITreePickerOptions extends js.Object {
   var treeAlias: java.lang.String
 }
 
+object ITreePickerOptions {
+  @scala.inline
+  def apply(
+    callback: angularLib.angularMod.Global.Function,
+    multiPicker: scala.Boolean,
+    section: java.lang.String,
+    treeAlias: java.lang.String
+  ): ITreePickerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("multiPicker")(multiPicker)
+    __obj.updateDynamic("section")(section)
+    __obj.updateDynamic("treeAlias")(treeAlias)
+    __obj.asInstanceOf[ITreePickerOptions]
+  }
+}
+

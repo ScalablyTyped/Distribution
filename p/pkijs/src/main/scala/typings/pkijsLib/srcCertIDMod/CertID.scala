@@ -28,3 +28,34 @@ trait CertID extends js.Object {
   def toSchema(): js.Any
 }
 
+object CertID {
+  @scala.inline
+  def apply(
+    createForCertificate: js.Function2[
+      pkijsLib.srcCertificateMod.default, 
+      CreateFroCertificateParams, 
+      js.Thenable[scala.Unit]
+    ],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    hashAlgorithm: pkijsLib.srcAlgorithmIdentifierMod.default,
+    isEqual: js.Function1[CertID, scala.Boolean],
+    issuerKeyHash: asn1jsLib.asn1jsMod.OctetString,
+    issuerNameHash: asn1jsLib.asn1jsMod.OctetString,
+    serialNumber: asn1jsLib.asn1jsMod.Integer,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): CertID = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createForCertificate")(createForCertificate)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("hashAlgorithm")(hashAlgorithm)
+    __obj.updateDynamic("isEqual")(isEqual)
+    __obj.updateDynamic("issuerKeyHash")(issuerKeyHash)
+    __obj.updateDynamic("issuerNameHash")(issuerNameHash)
+    __obj.updateDynamic("serialNumber")(serialNumber)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.asInstanceOf[CertID]
+  }
+}
+

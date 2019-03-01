@@ -12,3 +12,14 @@ trait Anon_ErrorMetaPayload[T /* <: typesafeDashActionsLib.distTypeDashHelpersMo
   var `type`: T
 }
 
+object Anon_ErrorMetaPayload {
+  @scala.inline
+  def apply[T /* <: typesafeDashActionsLib.distTypeDashHelpersMod.StringType */, P, M, E](error: E, meta: M, payload: P, `type`: T): Anon_ErrorMetaPayload[T, P, M, E] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ErrorMetaPayload[T, P, M, E]]
+  }
+}
+

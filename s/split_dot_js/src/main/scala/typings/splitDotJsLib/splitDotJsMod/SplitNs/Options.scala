@@ -55,3 +55,49 @@ trait Options extends js.Object {
   var snapOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    cursor: splitDotJsLib.splitDotJsLibStrings.`col-resize` | splitDotJsLib.splitDotJsLibStrings.`row-resize` = null,
+    direction: splitDotJsLib.splitDotJsLibStrings.horizontal | splitDotJsLib.splitDotJsLibStrings.vertical = null,
+    elementStyle: js.Function3[
+      /* dimension */ splitDotJsLib.splitDotJsLibStrings.width | splitDotJsLib.splitDotJsLibStrings.height, 
+      /* elementSize */ scala.Double, 
+      /* gutterSize */ scala.Double, 
+      CSSStyleDeclarationPartial
+    ] = null,
+    gutter: js.Function2[
+      /* index */ scala.Double, 
+      /* direction */ splitDotJsLib.splitDotJsLibStrings.horizontal | splitDotJsLib.splitDotJsLibStrings.vertical, 
+      stdLib.HTMLElement
+    ] = null,
+    gutterSize: scala.Int | scala.Double = null,
+    gutterStyle: js.Function2[
+      /* dimension */ splitDotJsLib.splitDotJsLibStrings.width | splitDotJsLib.splitDotJsLibStrings.height, 
+      /* gutterSize */ scala.Double, 
+      CSSStyleDeclarationPartial
+    ] = null,
+    minSize: scala.Double | js.Array[scala.Double] = null,
+    onDrag: js.Function0[scala.Unit] = null,
+    onDragEnd: js.Function0[scala.Unit] = null,
+    onDragStart: js.Function0[scala.Unit] = null,
+    sizes: js.Array[scala.Double] = null,
+    snapOffset: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (elementStyle != null) __obj.updateDynamic("elementStyle")(elementStyle)
+    if (gutter != null) __obj.updateDynamic("gutter")(gutter)
+    if (gutterSize != null) __obj.updateDynamic("gutterSize")(gutterSize.asInstanceOf[js.Any])
+    if (gutterStyle != null) __obj.updateDynamic("gutterStyle")(gutterStyle)
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (sizes != null) __obj.updateDynamic("sizes")(sizes)
+    if (snapOffset != null) __obj.updateDynamic("snapOffset")(snapOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

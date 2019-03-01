@@ -22,3 +22,16 @@ trait MailAttachment extends js.Object {
   var ReadableName: java.lang.String
 }
 
+object MailAttachment {
+  @scala.inline
+  def apply(
+    Data: activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable,
+    ReadableName: java.lang.String
+  ): MailAttachment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Data")(Data)
+    __obj.updateDynamic("ReadableName")(ReadableName)
+    __obj.asInstanceOf[MailAttachment]
+  }
+}
+

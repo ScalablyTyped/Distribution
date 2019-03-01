@@ -20,3 +20,14 @@ trait DefaultSettings extends js.Object {
   var node: js.UndefOr[js.Any] = js.undefined
 }
 
+object DefaultSettings {
+  @scala.inline
+  def apply(connector: js.Any = null, group: js.Any = null, node: js.Any = null): DefaultSettings = {
+    val __obj = js.Dynamic.literal()
+    if (connector != null) __obj.updateDynamic("connector")(connector)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (node != null) __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[DefaultSettings]
+  }
+}
+

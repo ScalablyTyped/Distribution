@@ -32,3 +32,30 @@ trait LeaderboardEntry extends js.Object {
   var writeTimestampMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LeaderboardEntry {
+  @scala.inline
+  def apply(
+    formattedScore: java.lang.String = null,
+    formattedScoreRank: java.lang.String = null,
+    kind: java.lang.String = null,
+    player: Player = null,
+    scoreRank: java.lang.String = null,
+    scoreTag: java.lang.String = null,
+    scoreValue: java.lang.String = null,
+    timeSpan: java.lang.String = null,
+    writeTimestampMillis: java.lang.String = null
+  ): LeaderboardEntry = {
+    val __obj = js.Dynamic.literal()
+    if (formattedScore != null) __obj.updateDynamic("formattedScore")(formattedScore)
+    if (formattedScoreRank != null) __obj.updateDynamic("formattedScoreRank")(formattedScoreRank)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (player != null) __obj.updateDynamic("player")(player)
+    if (scoreRank != null) __obj.updateDynamic("scoreRank")(scoreRank)
+    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag)
+    if (scoreValue != null) __obj.updateDynamic("scoreValue")(scoreValue)
+    if (timeSpan != null) __obj.updateDynamic("timeSpan")(timeSpan)
+    if (writeTimestampMillis != null) __obj.updateDynamic("writeTimestampMillis")(writeTimestampMillis)
+    __obj.asInstanceOf[LeaderboardEntry]
+  }
+}
+

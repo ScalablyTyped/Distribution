@@ -10,3 +10,12 @@ trait TranslationsListResponse extends js.Object {
   var translations: js.UndefOr[js.Array[TranslationsResource]] = js.undefined
 }
 
+object TranslationsListResponse {
+  @scala.inline
+  def apply(translations: js.Array[TranslationsResource] = null): TranslationsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (translations != null) __obj.updateDynamic("translations")(translations)
+    __obj.asInstanceOf[TranslationsListResponse]
+  }
+}
+

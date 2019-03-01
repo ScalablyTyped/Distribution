@@ -10,3 +10,16 @@ trait SchemaTimestampsConfig extends js.Object {
   var updatedAt: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object SchemaTimestampsConfig {
+  @scala.inline
+  def apply(
+    createdAt: scala.Boolean | java.lang.String = null,
+    updatedAt: scala.Boolean | java.lang.String = null
+  ): SchemaTimestampsConfig = {
+    val __obj = js.Dynamic.literal()
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt.asInstanceOf[js.Any])
+    if (updatedAt != null) __obj.updateDynamic("updatedAt")(updatedAt.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SchemaTimestampsConfig]
+  }
+}
+

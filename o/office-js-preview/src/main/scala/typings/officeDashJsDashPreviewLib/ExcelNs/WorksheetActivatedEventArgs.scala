@@ -28,3 +28,15 @@ trait WorksheetActivatedEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object WorksheetActivatedEventArgs {
+  @scala.inline
+  def apply(
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetActivated,
+    worksheetId: java.lang.String
+  ): WorksheetActivatedEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("worksheetId")(worksheetId)
+    __obj.asInstanceOf[WorksheetActivatedEventArgs]
+  }
+}
+

@@ -34,3 +34,27 @@ trait LiensResource extends js.Object {
   def list(request: gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListLiensResponse]
 }
 
+object LiensResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Lien]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudresourcemanagerLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListLiensResponse]
+    ]
+  ): LiensResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[LiensResource]
+  }
+}
+

@@ -16,3 +16,28 @@ trait i18nOptions extends js.Object {
   var translationsHeaders: js.UndefOr[nodeLib.httpMod.OutgoingHttpHeaders] = js.undefined
 }
 
+object i18nOptions {
+  @scala.inline
+  def apply(
+    close: java.lang.String = null,
+    defaultLocale: java.lang.String = null,
+    hideMissing: js.UndefOr[scala.Boolean] = js.undefined,
+    hostUrl: java.lang.String = null,
+    open: java.lang.String = null,
+    purify: js.Function0[scala.Unit] = null,
+    sameLocaleOnServerConnection: js.UndefOr[scala.Boolean] = js.undefined,
+    translationsHeaders: nodeLib.httpMod.OutgoingHttpHeaders = null
+  ): i18nOptions = {
+    val __obj = js.Dynamic.literal()
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (defaultLocale != null) __obj.updateDynamic("defaultLocale")(defaultLocale)
+    if (!js.isUndefined(hideMissing)) __obj.updateDynamic("hideMissing")(hideMissing)
+    if (hostUrl != null) __obj.updateDynamic("hostUrl")(hostUrl)
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (purify != null) __obj.updateDynamic("purify")(purify)
+    if (!js.isUndefined(sameLocaleOnServerConnection)) __obj.updateDynamic("sameLocaleOnServerConnection")(sameLocaleOnServerConnection)
+    if (translationsHeaders != null) __obj.updateDynamic("translationsHeaders")(translationsHeaders)
+    __obj.asInstanceOf[i18nOptions]
+  }
+}
+

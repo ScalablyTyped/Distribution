@@ -22,3 +22,22 @@ trait IncludeConditions extends js.Object {
   var segment: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IncludeConditions {
+  @scala.inline
+  def apply(
+    daysToLookBack: scala.Int | scala.Double = null,
+    isSmartList: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    membershipDurationDays: scala.Int | scala.Double = null,
+    segment: java.lang.String = null
+  ): IncludeConditions = {
+    val __obj = js.Dynamic.literal()
+    if (daysToLookBack != null) __obj.updateDynamic("daysToLookBack")(daysToLookBack.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSmartList)) __obj.updateDynamic("isSmartList")(isSmartList)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (membershipDurationDays != null) __obj.updateDynamic("membershipDurationDays")(membershipDurationDays.asInstanceOf[js.Any])
+    if (segment != null) __obj.updateDynamic("segment")(segment)
+    __obj.asInstanceOf[IncludeConditions]
+  }
+}
+

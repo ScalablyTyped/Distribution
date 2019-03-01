@@ -17,3 +17,18 @@ trait GetDebugConfigRequest extends js.Object {
   var workerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetDebugConfigRequest {
+  @scala.inline
+  def apply(
+    componentId: java.lang.String = null,
+    location: java.lang.String = null,
+    workerId: java.lang.String = null
+  ): GetDebugConfigRequest = {
+    val __obj = js.Dynamic.literal()
+    if (componentId != null) __obj.updateDynamic("componentId")(componentId)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (workerId != null) __obj.updateDynamic("workerId")(workerId)
+    __obj.asInstanceOf[GetDebugConfigRequest]
+  }
+}
+

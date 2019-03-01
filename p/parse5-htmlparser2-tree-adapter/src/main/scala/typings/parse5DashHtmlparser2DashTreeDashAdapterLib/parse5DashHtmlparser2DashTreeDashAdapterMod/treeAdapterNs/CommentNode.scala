@@ -27,3 +27,35 @@ trait CommentNode extends Node {
   var sourceCodeLocation: js.UndefOr[parse5Lib.parse5Mod.Location] = js.undefined
 }
 
+object CommentNode {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    name: parse5DashHtmlparser2DashTreeDashAdapterLib.parse5DashHtmlparser2DashTreeDashAdapterLibStrings.comment,
+    next: Node,
+    nextSibling: Node,
+    nodeType: scala.Double,
+    nodeValue: java.lang.String,
+    parent: ParentNode,
+    parentNode: ParentNode,
+    prev: Node,
+    previousSibling: Node,
+    `type`: java.lang.String,
+    sourceCodeLocation: parse5Lib.parse5Mod.Location = null
+  ): CommentNode = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("nextSibling")(nextSibling)
+    __obj.updateDynamic("nodeType")(nodeType)
+    __obj.updateDynamic("nodeValue")(nodeValue)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("parentNode")(parentNode)
+    __obj.updateDynamic("prev")(prev)
+    __obj.updateDynamic("previousSibling")(previousSibling)
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    __obj.asInstanceOf[CommentNode]
+  }
+}
+

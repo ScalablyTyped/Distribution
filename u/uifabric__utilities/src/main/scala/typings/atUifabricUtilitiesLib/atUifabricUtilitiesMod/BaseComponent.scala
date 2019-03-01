@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@uifabric/utilities", "BaseComponent")
 @js.native
-class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentMod.IBaseProps[_] */, TState] protected ()
+class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentDotTypesMod.IBaseProps[_] */, TState] protected ()
   extends atUifabricUtilitiesLib.libBaseComponentMod.BaseComponent[TProps, TState] {
   /**
     * BaseComponent constructor

@@ -28,3 +28,22 @@ trait GetUserResult extends js.Object {
   val userId: java.lang.String
 }
 
+object GetUserResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    id: java.lang.String,
+    path: java.lang.String,
+    permissionsBoundary: java.lang.String,
+    userId: java.lang.String
+  ): GetUserResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("permissionsBoundary")(permissionsBoundary)
+    __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[GetUserResult]
+  }
+}
+

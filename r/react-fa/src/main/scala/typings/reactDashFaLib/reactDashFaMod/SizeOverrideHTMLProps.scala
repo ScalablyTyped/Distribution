@@ -13,3 +13,13 @@ trait SizeOverrideHTMLProps[T]
   var size_SizeOverrideHTMLProps: js.UndefOr[js.Any] = js.undefined
 }
 
+object SizeOverrideHTMLProps {
+  @scala.inline
+  def apply[T](HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[T] = null, size: js.Any = null): SizeOverrideHTMLProps[T] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[SizeOverrideHTMLProps[T]]
+  }
+}
+

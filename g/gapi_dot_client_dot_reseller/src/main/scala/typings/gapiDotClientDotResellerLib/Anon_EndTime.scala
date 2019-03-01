@@ -12,3 +12,13 @@ trait Anon_EndTime extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_EndTime {
+  @scala.inline
+  def apply(endTime: java.lang.String = null, startTime: java.lang.String = null): Anon_EndTime = {
+    val __obj = js.Dynamic.literal()
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[Anon_EndTime]
+  }
+}
+

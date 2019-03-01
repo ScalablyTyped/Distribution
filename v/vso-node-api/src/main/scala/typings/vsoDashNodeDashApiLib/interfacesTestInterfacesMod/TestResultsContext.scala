@@ -11,3 +11,14 @@ trait TestResultsContext extends js.Object {
   var release: ReleaseReference
 }
 
+object TestResultsContext {
+  @scala.inline
+  def apply(build: BuildReference, contextType: TestResultsContextType, release: ReleaseReference): TestResultsContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("contextType")(contextType)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[TestResultsContext]
+  }
+}
+

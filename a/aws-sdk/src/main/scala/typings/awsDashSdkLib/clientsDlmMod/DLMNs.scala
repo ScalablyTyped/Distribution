@@ -355,12 +355,18 @@ object DLMNs extends js.Object {
   
   trait UpdateLifecyclePolicyResponse extends js.Object
   
+  trait _GettablePolicyStateValues extends js.Object
+  
+  trait _SettablePolicyStateValues extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CopyTags = scala.Boolean
   type Count = scala.Double
   type ExecutionRoleArn = java.lang.String
-  type GettablePolicyStateValues = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
+  type GettablePolicyStateValues = _GettablePolicyStateValues | java.lang.String
   type Interval = scala.Double
   type IntervalUnitValues = awsDashSdkLib.awsDashSdkLibStrings.HOURS | java.lang.String
   type LifecyclePolicySummaryList = js.Array[LifecyclePolicySummary]
@@ -371,7 +377,7 @@ object DLMNs extends js.Object {
   type ResourceTypeValuesList = js.Array[ResourceTypeValues]
   type ScheduleList = js.Array[Schedule]
   type ScheduleName = java.lang.String
-  type SettablePolicyStateValues = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type SettablePolicyStateValues = _SettablePolicyStateValues | java.lang.String
   type String = java.lang.String
   type TagFilter = java.lang.String
   type TagsToAddFilterList = js.Array[TagFilter]
@@ -381,6 +387,6 @@ object DLMNs extends js.Object {
   type Time = java.lang.String
   type TimesList = js.Array[Time]
   type Timestamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-01-12` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

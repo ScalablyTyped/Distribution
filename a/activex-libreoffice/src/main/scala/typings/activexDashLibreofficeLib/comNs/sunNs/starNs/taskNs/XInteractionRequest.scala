@@ -24,3 +24,26 @@ trait XInteractionRequest
   def getRequest(): js.Any
 }
 
+object XInteractionRequest {
+  @scala.inline
+  def apply(
+    Continuations: activexDashInteropLib.SafeArray[XInteractionContinuation],
+    Request: js.Any,
+    acquire: js.Function0[scala.Unit],
+    getContinuations: js.Function0[activexDashInteropLib.SafeArray[XInteractionContinuation]],
+    getRequest: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInteractionRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Continuations")(Continuations)
+    __obj.updateDynamic("Request")(Request)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getContinuations")(getContinuations)
+    __obj.updateDynamic("getRequest")(getRequest)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XInteractionRequest]
+  }
+}
+

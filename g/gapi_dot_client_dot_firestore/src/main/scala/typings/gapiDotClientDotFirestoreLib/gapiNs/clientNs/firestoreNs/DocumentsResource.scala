@@ -39,3 +39,77 @@ trait DocumentsResource extends js.Object {
   def write(request: gapiDotClientDotFirestoreLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[WriteResponse]
 }
 
+object DocumentsResource {
+  @scala.inline
+  def apply(
+    batchGet: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetDocumentsResponse]
+    ],
+    beginTransaction: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BeginTransactionResponse]
+    ],
+    commit: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CommitResponse]
+    ],
+    createDocument: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Document]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Document]
+    ],
+    list: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackCollectionId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDocumentsResponse]
+    ],
+    listCollectionIds: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListCollectionIdsResponse]
+    ],
+    listen: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListenResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackCurrentDocumentexists, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Document]
+    ],
+    rollback: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    runQuery: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RunQueryResponse]
+    ],
+    write: js.Function1[
+      gapiDotClientDotFirestoreLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WriteResponse]
+    ]
+  ): DocumentsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("batchGet")(batchGet)
+    __obj.updateDynamic("beginTransaction")(beginTransaction)
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("createDocument")(createDocument)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("listCollectionIds")(listCollectionIds)
+    __obj.updateDynamic("listen")(listen)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("rollback")(rollback)
+    __obj.updateDynamic("runQuery")(runQuery)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[DocumentsResource]
+  }
+}
+

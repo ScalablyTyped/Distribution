@@ -13,3 +13,14 @@ trait JSONStreamFile extends js.Object {
   var srcmap: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JSONStreamFile {
+  @scala.inline
+  def apply(path: java.lang.String, src: java.lang.String, srcmap: java.lang.String = null): JSONStreamFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("src")(src)
+    if (srcmap != null) __obj.updateDynamic("srcmap")(srcmap)
+    __obj.asInstanceOf[JSONStreamFile]
+  }
+}
+

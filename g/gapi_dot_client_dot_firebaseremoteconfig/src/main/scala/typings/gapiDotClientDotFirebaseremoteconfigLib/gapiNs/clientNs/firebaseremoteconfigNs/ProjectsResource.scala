@@ -35,3 +35,22 @@ trait ProjectsResource extends js.Object {
   def updateRemoteConfig(request: gapiDotClientDotFirebaseremoteconfigLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    getRemoteConfig: js.Function1[
+      gapiDotClientDotFirebaseremoteconfigLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
+    ],
+    updateRemoteConfig: js.Function1[
+      gapiDotClientDotFirebaseremoteconfigLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RemoteConfig]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getRemoteConfig")(getRemoteConfig)
+    __obj.updateDynamic("updateRemoteConfig")(updateRemoteConfig)
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

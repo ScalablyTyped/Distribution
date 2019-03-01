@@ -10,3 +10,12 @@ trait UpdateDeviceMetadataInBatchRequest extends js.Object {
   var updates: js.UndefOr[js.Array[UpdateMetadataArguments]] = js.undefined
 }
 
+object UpdateDeviceMetadataInBatchRequest {
+  @scala.inline
+  def apply(updates: js.Array[UpdateMetadataArguments] = null): UpdateDeviceMetadataInBatchRequest = {
+    val __obj = js.Dynamic.literal()
+    if (updates != null) __obj.updateDynamic("updates")(updates)
+    __obj.asInstanceOf[UpdateDeviceMetadataInBatchRequest]
+  }
+}
+

@@ -13,3 +13,18 @@ trait Tabulator extends js.Object {
   def toMatrix(datum: js.Object): js.Object
 }
 
+object Tabulator {
+  @scala.inline
+  def apply(
+    defaultShowAttribute: java.lang.String,
+    toHtmlTable: js.Function1[js.Object, js.Any],
+    toMatrix: js.Function1[js.Object, js.Object]
+  ): Tabulator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultShowAttribute")(defaultShowAttribute)
+    __obj.updateDynamic("toHtmlTable")(toHtmlTable)
+    __obj.updateDynamic("toMatrix")(toMatrix)
+    __obj.asInstanceOf[Tabulator]
+  }
+}
+

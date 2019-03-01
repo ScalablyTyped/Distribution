@@ -32,3 +32,42 @@ trait IVaultNamedACLOperations extends js.Object {
   def UpdateNamedACLWithPropagationAdmin(NamedACLAdmin: INamedACLAdmin, MaintainLinks: scala.Boolean, AllowPropagation: scala.Boolean): scala.Unit
 }
 
+object IVaultNamedACLOperations {
+  @scala.inline
+  def apply(
+    AddNamedACLAdmin: js.Function1[INamedACLAdmin, INamedACLAdmin],
+    GetMatchingNamedACLForAccessControlList: js.Function4[IAccessControlList, scala.Boolean, scala.Boolean, scala.Boolean, INamedACL],
+    GetMatchingNamedACLForAccessControlListComponent: js.Function3[IAccessControlListComponent, scala.Boolean, scala.Boolean, INamedACL],
+    GetNamedACL: js.Function1[scala.Double, INamedACL],
+    GetNamedACLAdmin: js.Function1[scala.Double, INamedACLAdmin],
+    GetNamedACLIDByAlias: js.Function1[java.lang.String, scala.Double],
+    GetNamedACLIDByGUID: js.Function1[java.lang.String, scala.Double],
+    GetNamedACLWithRefresh: js.Function2[scala.Double, scala.Boolean, INamedACL],
+    GetNamedACLs: js.Function0[INamedACLs],
+    GetNamedACLsByTypeAdmin: js.Function1[mfilesLib.MFilesNs.MFNamedACLType, INamedACLsAdmin],
+    GetNamedACLsWithRefresh: js.Function1[scala.Boolean, INamedACLs],
+    IsNamedACLUsedInAutomaticPermissionsAdmin: js.Function1[scala.Double, scala.Boolean],
+    RemoveNamedACLWithPropagationAdmin: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    UpdateNamedACLAdmin: js.Function1[INamedACLAdmin, scala.Unit],
+    UpdateNamedACLWithPropagationAdmin: js.Function3[INamedACLAdmin, scala.Boolean, scala.Boolean, scala.Unit]
+  ): IVaultNamedACLOperations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AddNamedACLAdmin")(AddNamedACLAdmin)
+    __obj.updateDynamic("GetMatchingNamedACLForAccessControlList")(GetMatchingNamedACLForAccessControlList)
+    __obj.updateDynamic("GetMatchingNamedACLForAccessControlListComponent")(GetMatchingNamedACLForAccessControlListComponent)
+    __obj.updateDynamic("GetNamedACL")(GetNamedACL)
+    __obj.updateDynamic("GetNamedACLAdmin")(GetNamedACLAdmin)
+    __obj.updateDynamic("GetNamedACLIDByAlias")(GetNamedACLIDByAlias)
+    __obj.updateDynamic("GetNamedACLIDByGUID")(GetNamedACLIDByGUID)
+    __obj.updateDynamic("GetNamedACLWithRefresh")(GetNamedACLWithRefresh)
+    __obj.updateDynamic("GetNamedACLs")(GetNamedACLs)
+    __obj.updateDynamic("GetNamedACLsByTypeAdmin")(GetNamedACLsByTypeAdmin)
+    __obj.updateDynamic("GetNamedACLsWithRefresh")(GetNamedACLsWithRefresh)
+    __obj.updateDynamic("IsNamedACLUsedInAutomaticPermissionsAdmin")(IsNamedACLUsedInAutomaticPermissionsAdmin)
+    __obj.updateDynamic("RemoveNamedACLWithPropagationAdmin")(RemoveNamedACLWithPropagationAdmin)
+    __obj.updateDynamic("UpdateNamedACLAdmin")(UpdateNamedACLAdmin)
+    __obj.updateDynamic("UpdateNamedACLWithPropagationAdmin")(UpdateNamedACLWithPropagationAdmin)
+    __obj.asInstanceOf[IVaultNamedACLOperations]
+  }
+}
+

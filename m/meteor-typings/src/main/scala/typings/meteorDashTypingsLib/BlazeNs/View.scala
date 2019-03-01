@@ -22,3 +22,43 @@ trait View extends js.Object {
   def templateInstance(): TemplateInstance
 }
 
+object View {
+  @scala.inline
+  def apply(
+    autorun: js.Function1[
+      js.Function1[/* computation */ meteorDashTypingsLib.TrackerNs.Computation, scala.Unit], 
+      meteorDashTypingsLib.TrackerNs.Computation
+    ],
+    firstNode: js.Function0[stdLib.Node],
+    isCreated: scala.Boolean,
+    isDestroyed: scala.Boolean,
+    isRendered: scala.Boolean,
+    lastNode: js.Function0[stdLib.Node],
+    name: java.lang.String,
+    onViewCreated: js.Function1[js.Function, scala.Unit],
+    onViewDestroyed: js.Function1[js.Function, scala.Unit],
+    onViewReady: js.Function1[js.Function, scala.Unit],
+    parentView: View,
+    renderCount: scala.Double,
+    template: Template,
+    templateInstance: js.Function0[TemplateInstance]
+  ): View = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autorun")(autorun)
+    __obj.updateDynamic("firstNode")(firstNode)
+    __obj.updateDynamic("isCreated")(isCreated)
+    __obj.updateDynamic("isDestroyed")(isDestroyed)
+    __obj.updateDynamic("isRendered")(isRendered)
+    __obj.updateDynamic("lastNode")(lastNode)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("onViewCreated")(onViewCreated)
+    __obj.updateDynamic("onViewDestroyed")(onViewDestroyed)
+    __obj.updateDynamic("onViewReady")(onViewReady)
+    __obj.updateDynamic("parentView")(parentView)
+    __obj.updateDynamic("renderCount")(renderCount)
+    __obj.updateDynamic("template")(template)
+    __obj.updateDynamic("templateInstance")(templateInstance)
+    __obj.asInstanceOf[View]
+  }
+}
+

@@ -12,3 +12,13 @@ trait JobPlacement extends js.Object {
   var clusterUuid: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JobPlacement {
+  @scala.inline
+  def apply(clusterName: java.lang.String = null, clusterUuid: java.lang.String = null): JobPlacement = {
+    val __obj = js.Dynamic.literal()
+    if (clusterName != null) __obj.updateDynamic("clusterName")(clusterName)
+    if (clusterUuid != null) __obj.updateDynamic("clusterUuid")(clusterUuid)
+    __obj.asInstanceOf[JobPlacement]
+  }
+}
+

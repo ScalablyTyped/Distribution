@@ -17,3 +17,13 @@ trait ICommandCall extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
 }
 
+object ICommandCall {
+  @scala.inline
+  def apply(command: java.lang.String, data: js.Any = null): ICommandCall = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("command")(command)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[ICommandCall]
+  }
+}
+

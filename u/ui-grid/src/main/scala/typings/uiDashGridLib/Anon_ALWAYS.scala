@@ -11,3 +11,14 @@ trait Anon_ALWAYS extends js.Object {
   var WHEN_NEEDED: scala.Double
 }
 
+object Anon_ALWAYS {
+  @scala.inline
+  def apply(ALWAYS: scala.Double, NEVER: scala.Double, WHEN_NEEDED: scala.Double): Anon_ALWAYS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ALWAYS")(ALWAYS)
+    __obj.updateDynamic("NEVER")(NEVER)
+    __obj.updateDynamic("WHEN_NEEDED")(WHEN_NEEDED)
+    __obj.asInstanceOf[Anon_ALWAYS]
+  }
+}
+

@@ -50,3 +50,30 @@ trait XResultSetUpdate
   def updateRow(): scala.Unit
 }
 
+object XResultSetUpdate {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    cancelRowUpdates: js.Function0[scala.Unit],
+    deleteRow: js.Function0[scala.Unit],
+    insertRow: js.Function0[scala.Unit],
+    moveToCurrentRow: js.Function0[scala.Unit],
+    moveToInsertRow: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateRow: js.Function0[scala.Unit]
+  ): XResultSetUpdate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("cancelRowUpdates")(cancelRowUpdates)
+    __obj.updateDynamic("deleteRow")(deleteRow)
+    __obj.updateDynamic("insertRow")(insertRow)
+    __obj.updateDynamic("moveToCurrentRow")(moveToCurrentRow)
+    __obj.updateDynamic("moveToInsertRow")(moveToInsertRow)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("updateRow")(updateRow)
+    __obj.asInstanceOf[XResultSetUpdate]
+  }
+}
+

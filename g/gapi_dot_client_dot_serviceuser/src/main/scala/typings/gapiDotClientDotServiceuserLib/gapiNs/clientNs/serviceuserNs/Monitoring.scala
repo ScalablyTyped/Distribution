@@ -22,3 +22,16 @@ trait Monitoring extends js.Object {
   var producerDestinations: js.UndefOr[js.Array[MonitoringDestination]] = js.undefined
 }
 
+object Monitoring {
+  @scala.inline
+  def apply(
+    consumerDestinations: js.Array[MonitoringDestination] = null,
+    producerDestinations: js.Array[MonitoringDestination] = null
+  ): Monitoring = {
+    val __obj = js.Dynamic.literal()
+    if (consumerDestinations != null) __obj.updateDynamic("consumerDestinations")(consumerDestinations)
+    if (producerDestinations != null) __obj.updateDynamic("producerDestinations")(producerDestinations)
+    __obj.asInstanceOf[Monitoring]
+  }
+}
+

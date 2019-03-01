@@ -22,3 +22,47 @@ trait SurveysResource extends js.Object {
   def update(request: gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Survey]
 }
 
+object SurveysResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SurveysDeleteResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Survey]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Survey]
+    ],
+    list: js.Function1[
+      gapiDotClientDotConsumersurveysLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SurveysListResponse]
+    ],
+    start: js.Function1[
+      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SurveysStartResponse]
+    ],
+    stop: js.Function1[
+      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SurveysStopResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotConsumersurveysLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Survey]
+    ]
+  ): SurveysResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stop")(stop)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[SurveysResource]
+  }
+}
+

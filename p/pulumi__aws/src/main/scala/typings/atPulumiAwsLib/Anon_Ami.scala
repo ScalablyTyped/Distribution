@@ -28,3 +28,52 @@ trait Anon_Ami extends js.Object {
   var weightedCapacity: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Ami {
+  @scala.inline
+  def apply(
+    ami: java.lang.String,
+    availabilityZone: java.lang.String,
+    ebsBlockDevices: js.Array[Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeSize],
+    ephemeralBlockDevices: js.Array[Anon_DeviceName],
+    instanceType: java.lang.String,
+    keyName: java.lang.String,
+    placementGroup: java.lang.String,
+    rootBlockDevices: js.Array[Anon_DeleteOnTerminationIopsVolumeSizeVolumeType],
+    subnetId: java.lang.String,
+    vpcSecurityGroupIds: js.Array[java.lang.String],
+    associatePublicIpAddress: js.UndefOr[scala.Boolean] = js.undefined,
+    ebsOptimized: js.UndefOr[scala.Boolean] = js.undefined,
+    iamInstanceProfile: java.lang.String = null,
+    iamInstanceProfileArn: java.lang.String = null,
+    monitoring: js.UndefOr[scala.Boolean] = js.undefined,
+    placementTenancy: java.lang.String = null,
+    spotPrice: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    userData: java.lang.String = null,
+    weightedCapacity: java.lang.String = null
+  ): Anon_Ami = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ami")(ami)
+    __obj.updateDynamic("availabilityZone")(availabilityZone)
+    __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices)
+    __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices)
+    __obj.updateDynamic("instanceType")(instanceType)
+    __obj.updateDynamic("keyName")(keyName)
+    __obj.updateDynamic("placementGroup")(placementGroup)
+    __obj.updateDynamic("rootBlockDevices")(rootBlockDevices)
+    __obj.updateDynamic("subnetId")(subnetId)
+    __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds)
+    if (!js.isUndefined(associatePublicIpAddress)) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress)
+    if (!js.isUndefined(ebsOptimized)) __obj.updateDynamic("ebsOptimized")(ebsOptimized)
+    if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile)
+    if (iamInstanceProfileArn != null) __obj.updateDynamic("iamInstanceProfileArn")(iamInstanceProfileArn)
+    if (!js.isUndefined(monitoring)) __obj.updateDynamic("monitoring")(monitoring)
+    if (placementTenancy != null) __obj.updateDynamic("placementTenancy")(placementTenancy)
+    if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (userData != null) __obj.updateDynamic("userData")(userData)
+    if (weightedCapacity != null) __obj.updateDynamic("weightedCapacity")(weightedCapacity)
+    __obj.asInstanceOf[Anon_Ami]
+  }
+}
+

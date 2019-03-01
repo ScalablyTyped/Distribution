@@ -13,3 +13,22 @@ trait IPerMessageDeflateOptions extends js.Object {
   var serverNoContextTakeover: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IPerMessageDeflateOptions {
+  @scala.inline
+  def apply(
+    clientMaxWindowBits: scala.Int | scala.Double = null,
+    clientNoContextTakeover: js.UndefOr[scala.Boolean] = js.undefined,
+    memLevel: scala.Int | scala.Double = null,
+    serverMaxWindowBits: scala.Int | scala.Double = null,
+    serverNoContextTakeover: js.UndefOr[scala.Boolean] = js.undefined
+  ): IPerMessageDeflateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (clientMaxWindowBits != null) __obj.updateDynamic("clientMaxWindowBits")(clientMaxWindowBits.asInstanceOf[js.Any])
+    if (!js.isUndefined(clientNoContextTakeover)) __obj.updateDynamic("clientNoContextTakeover")(clientNoContextTakeover)
+    if (memLevel != null) __obj.updateDynamic("memLevel")(memLevel.asInstanceOf[js.Any])
+    if (serverMaxWindowBits != null) __obj.updateDynamic("serverMaxWindowBits")(serverMaxWindowBits.asInstanceOf[js.Any])
+    if (!js.isUndefined(serverNoContextTakeover)) __obj.updateDynamic("serverNoContextTakeover")(serverNoContextTakeover)
+    __obj.asInstanceOf[IPerMessageDeflateOptions]
+  }
+}
+

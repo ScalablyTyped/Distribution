@@ -13,3 +13,22 @@ trait Options extends js.Object {
   var sep: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    basePath: java.lang.String = null,
+    deep: scala.Boolean | scala.Double | stdLib.RegExp | FilterFunction = null,
+    filter: java.lang.String | stdLib.RegExp | FilterFunction = null,
+    fs: FileSystem = null,
+    sep: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
+    if (deep != null) __obj.updateDynamic("deep")(deep.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (sep != null) __obj.updateDynamic("sep")(sep)
+    __obj.asInstanceOf[Options]
+  }
+}
+

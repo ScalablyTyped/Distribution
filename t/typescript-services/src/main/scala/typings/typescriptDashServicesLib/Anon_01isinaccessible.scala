@@ -443,3 +443,312 @@ trait Anon_01isinaccessible extends js.Object {
   var warning_TS_0_1: java.lang.String
 }
 
+object Anon_01isinaccessible {
+  @scala.inline
+  def apply(
+    A_class_may_only_extend_another_class: java.lang.String,
+    A_class_may_only_implement_another_class_or_interface: java.lang.String,
+    A_file_cannot_have_a_reference_to_itself: java.lang.String,
+    A_generic_type_may_not_reference_itself_with_a_wrapped_form_of_its_own_type_parameters: java.lang.String,
+    A_parameter_list_must_follow_a_generic_type_argument_list_expected: java.lang.String,
+    A_super_call_must_be_the_first_statement_in_the_constructor_when_a_class_contains_initialized_properties_or_has_parameter_properties: java.lang.String,
+    Accessibility_modifier_already_seen: java.lang.String,
+    Accessors_are_not_allowed_in_ambient_contexts: java.lang.String,
+    Accessors_are_only_available_when_targeting_ECMAScript_5_and_higher: java.lang.String,
+    Additional_locations: java.lang.String,
+    All_declarations_of_an_interface_must_have_identical_type_parameters: java.lang.String,
+    All_declarations_of_merged_declaration_0_must_be_exported_or_not_exported: java.lang.String,
+    All_named_properties_must_be_assignable_to_string_indexer_type_0: java.lang.String,
+    All_named_properties_must_be_assignable_to_string_indexer_type_0_NL_1: java.lang.String,
+    All_numerically_named_properties_must_be_assignable_to_numeric_indexer_type_0: java.lang.String,
+    All_numerically_named_properties_must_be_assignable_to_numeric_indexer_type_0_NL_1: java.lang.String,
+    All_symbols_within_a_with_block_will_be_resolved_to_any: java.lang.String,
+    Allow_use_of_deprecated_0_keyword_when_referencing_an_external_module: java.lang.String,
+    Ambient_enum_elements_can_only_have_integer_literal_initializers: java.lang.String,
+    Ambient_external_module_declaration_cannot_be_reopened: java.lang.String,
+    Ambient_external_module_declaration_cannot_specify_relative_module_name: java.lang.String,
+    Ambient_external_module_declaration_must_be_defined_in_global_context: java.lang.String,
+    An_interface_may_only_extend_another_class_or_interface: java.lang.String,
+    Array_Literal_implicitly_has_an_any_type_from_widening: java.lang.String,
+    AsteriskSlash_expected: java.lang.String,
+    Automatic_semicolon_insertion_not_allowed: java.lang.String,
+    Base64_value_0_finished_with_a_continuation_bit: java.lang.String,
+    Call_signature_expects_0_or_fewer_parameters: java.lang.String,
+    Call_signatures_of_types_0_and_1_are_incompatible: java.lang.String,
+    Call_signatures_of_types_0_and_1_are_incompatible_NL_2: java.lang.String,
+    Call_signatures_used_in_a_new_expression_must_have_a_void_return_type: java.lang.String,
+    Calls_to_super_are_only_valid_inside_a_class: java.lang.String,
+    Cannot_compile_external_modules_unless_the_module_flag_is_provided: java.lang.String,
+    Cannot_convert_0_to_1: java.lang.String,
+    Cannot_convert_0_to_1_NL_2: java.lang.String,
+    Cannot_find_the_common_subdirectory_path_for_the_input_files: java.lang.String,
+    Cannot_invoke_an_expression_whose_type_lacks_a_call_signature: java.lang.String,
+    Cannot_read_file_0_1: java.lang.String,
+    Cannot_resolve_referenced_file_0: java.lang.String,
+    Cannot_resolve_return_type_reference: java.lang.String,
+    Catch_clause_parameter_cannot_have_a_type_annotation: java.lang.String,
+    Class_0_cannot_extend_class_1_NL_2: java.lang.String,
+    Class_0_declares_class_1_as_an_interface_but_does_not_implement_it_NL_2: java.lang.String,
+    Class_0_declares_interface_1_but_does_not_implement_it_NL_2: java.lang.String,
+    Class_0_defines_instance_member_accessor_1_but_extended_class_2_defines_it_as_instance_member_function: java.lang.String,
+    Class_0_defines_instance_member_function_1_but_extended_class_2_defines_it_as_instance_member_accessor: java.lang.String,
+    Class_0_defines_instance_member_function_1_but_extended_class_2_defines_it_as_instance_member_property: java.lang.String,
+    Class_0_defines_instance_member_property_1_but_extended_class_2_defines_it_as_instance_member_function: java.lang.String,
+    Class_0_is_recursively_referenced_as_a_base_type_of_itself: java.lang.String,
+    Class_name_cannot_be_0: java.lang.String,
+    Classes_can_only_extend_a_single_class: java.lang.String,
+    Concatenate_and_emit_output_to_single_file: java.lang.String,
+    Constraint_of_a_type_parameter_cannot_reference_any_type_parameter_from_the_same_type_parameter_list: java.lang.String,
+    Construct_signatures_of_types_0_and_1_are_incompatible: java.lang.String,
+    Construct_signatures_of_types_0_and_1_are_incompatible_NL_2: java.lang.String,
+    Constructor_implementation_expected: java.lang.String,
+    Constructor_signature_which_lacks_return_type_annotation_implicitly_has_an_any_return_type: java.lang.String,
+    Constructors_cannot_have_a_return_type_of_void: java.lang.String,
+    Constructors_for_derived_classes_must_contain_a_super_call: java.lang.String,
+    Could_not_apply_type_0_to_argument_1_which_is_of_type_2: java.lang.String,
+    Could_not_create_directory_0: java.lang.String,
+    Could_not_delete_file_0: java.lang.String,
+    Could_not_find_enclosing_symbol_for_dotted_name_0: java.lang.String,
+    Could_not_find_file_0: java.lang.String,
+    Could_not_find_module_0_in_module_1: java.lang.String,
+    Could_not_find_symbol_0: java.lang.String,
+    Could_not_find_symbol_0_in_module_1: java.lang.String,
+    Could_not_find_the_best_common_type_of_types_of_all_return_statement_expressions: java.lang.String,
+    Could_not_select_overload_for_call_expression: java.lang.String,
+    Could_not_select_overload_for_new_expression: java.lang.String,
+    Current_host_does_not_support_0_option: java.lang.String,
+    DIRECTORY: java.lang.String,
+    Default_arguments_are_only_allowed_in_implementation: java.lang.String,
+    Do_not_emit_comments_to_output: java.lang.String,
+    Duplicate_constructor_overload_signature: java.lang.String,
+    Duplicate_identifier_0: java.lang.String,
+    Duplicate_identifier_0_Compiler_reserves_name_1_in_top_level_scope_of_an_external_module: java.lang.String,
+    Duplicate_identifier_arguments_Compiler_uses_arguments_to_initialize_rest_parameters: java.lang.String,
+    Duplicate_identifier_i_Compiler_uses_i_to_initialize_rest_parameter: java.lang.String,
+    Duplicate_identifier_super_Compiler_uses_super_to_capture_base_class_reference: java.lang.String,
+    Duplicate_identifier_this_Compiler_uses_variable_declaration_this_to_capture_this_reference: java.lang.String,
+    Duplicate_number_index_signature: java.lang.String,
+    Duplicate_overload_call_signature: java.lang.String,
+    Duplicate_overload_construct_signature: java.lang.String,
+    Duplicate_overload_signature_for_0: java.lang.String,
+    Duplicate_string_index_signature: java.lang.String,
+    ECMAScript_target_version_0_not_supported_Specify_a_valid_target_version_1_default_or_2: java.lang.String,
+    Emit_Error_0: java.lang.String,
+    Enum_member_must_have_initializer: java.lang.String,
+    Enum_name_cannot_be_0: java.lang.String,
+    Error_while_executing_file_0: java.lang.String,
+    Examples: java.lang.String,
+    Execution_Failed_NL: java.lang.String,
+    Expected_0_arguments_to_message_got_1_instead: java.lang.String,
+    Expected_the_message_0_to_have_1_arguments_but_it_had_2: java.lang.String,
+    Expected_var_class_interface_or_module: java.lang.String,
+    Export_assignment_cannot_be_used_in_internal_modules: java.lang.String,
+    Export_assignment_not_allowed_in_module_with_exported_element: java.lang.String,
+    Export_assignments_may_only_be_made_with_variables_functions_classes_interfaces_enums_and_internal_modules: java.lang.String,
+    Export_assignments_may_only_be_used_at_the_top_level_of_external_modules: java.lang.String,
+    Exported_class_0_extends_class_from_inaccessible_module_1: java.lang.String,
+    Exported_class_0_extends_private_class_1: java.lang.String,
+    Exported_class_0_implements_interface_from_inaccessible_module_1: java.lang.String,
+    Exported_class_0_implements_private_interface_1: java.lang.String,
+    Exported_import_declaration_0_is_assigned_container_that_is_or_is_using_inaccessible_module_1: java.lang.String,
+    Exported_import_declaration_0_is_assigned_type_that_has_or_is_using_private_type_1: java.lang.String,
+    Exported_import_declaration_0_is_assigned_type_that_is_using_inaccessible_module_1: java.lang.String,
+    Exported_import_declaration_0_is_assigned_value_with_type_that_has_or_is_using_private_type_1: java.lang.String,
+    Exported_import_declaration_0_is_assigned_value_with_type_that_is_using_inaccessible_module_1: java.lang.String,
+    Exported_interface_0_extends_interface_from_inaccessible_module_1: java.lang.String,
+    Exported_interface_0_extends_private_interface_1: java.lang.String,
+    Exported_variable_0_has_or_is_using_private_type_1: java.lang.String,
+    Exported_variable_0_is_using_inaccessible_module_1: java.lang.String,
+    Expression_resolves_to_super_that_compiler_uses_to_capture_base_class_reference: java.lang.String,
+    Expression_resolves_to_variable_declaration_i_that_compiler_uses_to_initialize_rest_parameter: java.lang.String,
+    Expression_resolves_to_variable_declaration_this_that_compiler_uses_to_capture_this_reference: java.lang.String,
+    Function_declared_a_non_void_return_type_but_has_no_return_expression: java.lang.String,
+    Function_expression_declared_a_non_void_return_type_but_has_no_return_expression: java.lang.String,
+    Function_expression_which_lacks_return_type_annotation_implicitly_has_an_any_return_type: java.lang.String,
+    Function_implementation_expected: java.lang.String,
+    Function_overload_must_be_static: java.lang.String,
+    Function_overload_must_not_be_static: java.lang.String,
+    Function_overload_name_must_be_0: java.lang.String,
+    Generates_corresponding_0_file: java.lang.String,
+    Generic_type_0_requires_1_type_argument_s: java.lang.String,
+    Generic_type_references_must_include_all_type_arguments: java.lang.String,
+    Getter_0_already_declared: java.lang.String,
+    Getter_and_setter_accessors_do_not_agree_in_visibility: java.lang.String,
+    Getters_must_return_a_value: java.lang.String,
+    Identifier_expected: java.lang.String,
+    Identifier_expected_0_is_a_keyword: java.lang.String,
+    Implementations_are_not_allowed_in_ambient_contexts: java.lang.String,
+    Import_declaration_cannot_refer_to_external_module_reference_when_noResolve_option_is_set: java.lang.String,
+    Import_declaration_in_an_ambient_external_module_declaration_cannot_reference_external_module_through_relative_external_module_name: java.lang.String,
+    Import_declaration_referencing_identifier_from_internal_module_can_only_be_made_with_variables_functions_classes_interfaces_enums_and_internal_modules: java.lang.String,
+    Import_declarations_in_an_internal_module_cannot_reference_an_external_module: java.lang.String,
+    In_enums_with_multiple_declarations_only_one_declaration_can_omit_an_initializer_for_the_first_enum_element: java.lang.String,
+    Index_signature_must_have_a_type_annotation: java.lang.String,
+    Index_signature_of_object_type_implicitly_has_an_any_type: java.lang.String,
+    Index_signature_parameter_cannot_have_a_question_mark: java.lang.String,
+    Index_signature_parameter_cannot_have_accessibility_modifiers: java.lang.String,
+    Index_signature_parameter_cannot_have_an_initializer: java.lang.String,
+    Index_signature_parameter_must_have_a_type_annotation: java.lang.String,
+    Index_signature_parameter_type_must_be_string_or_number: java.lang.String,
+    Index_signatures_cannot_have_rest_parameters: java.lang.String,
+    Index_signatures_of_types_0_and_1_are_incompatible: java.lang.String,
+    Index_signatures_of_types_0_and_1_are_incompatible_NL_2: java.lang.String,
+    Initializer_of_instance_member_variable_0_cannot_reference_identifier_1_declared_in_the_constructor: java.lang.String,
+    Initializer_of_parameter_0_cannot_reference_identifier_1_declared_after_it: java.lang.String,
+    Initializers_are_not_allowed_in_ambient_contexts: java.lang.String
+  ): Anon_01isinaccessible = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("A_class_may_only_extend_another_class")(A_class_may_only_extend_another_class)
+    __obj.updateDynamic("A_class_may_only_implement_another_class_or_interface")(A_class_may_only_implement_another_class_or_interface)
+    __obj.updateDynamic("A_file_cannot_have_a_reference_to_itself")(A_file_cannot_have_a_reference_to_itself)
+    __obj.updateDynamic("A_generic_type_may_not_reference_itself_with_a_wrapped_form_of_its_own_type_parameters")(A_generic_type_may_not_reference_itself_with_a_wrapped_form_of_its_own_type_parameters)
+    __obj.updateDynamic("A_parameter_list_must_follow_a_generic_type_argument_list_expected")(A_parameter_list_must_follow_a_generic_type_argument_list_expected)
+    __obj.updateDynamic("A_super_call_must_be_the_first_statement_in_the_constructor_when_a_class_contains_initialized_properties_or_has_parameter_properties")(A_super_call_must_be_the_first_statement_in_the_constructor_when_a_class_contains_initialized_properties_or_has_parameter_properties)
+    __obj.updateDynamic("Accessibility_modifier_already_seen")(Accessibility_modifier_already_seen)
+    __obj.updateDynamic("Accessors_are_not_allowed_in_ambient_contexts")(Accessors_are_not_allowed_in_ambient_contexts)
+    __obj.updateDynamic("Accessors_are_only_available_when_targeting_ECMAScript_5_and_higher")(Accessors_are_only_available_when_targeting_ECMAScript_5_and_higher)
+    __obj.updateDynamic("Additional_locations")(Additional_locations)
+    __obj.updateDynamic("All_declarations_of_an_interface_must_have_identical_type_parameters")(All_declarations_of_an_interface_must_have_identical_type_parameters)
+    __obj.updateDynamic("All_declarations_of_merged_declaration_0_must_be_exported_or_not_exported")(All_declarations_of_merged_declaration_0_must_be_exported_or_not_exported)
+    __obj.updateDynamic("All_named_properties_must_be_assignable_to_string_indexer_type_0")(All_named_properties_must_be_assignable_to_string_indexer_type_0)
+    __obj.updateDynamic("All_named_properties_must_be_assignable_to_string_indexer_type_0_NL_1")(All_named_properties_must_be_assignable_to_string_indexer_type_0_NL_1)
+    __obj.updateDynamic("All_numerically_named_properties_must_be_assignable_to_numeric_indexer_type_0")(All_numerically_named_properties_must_be_assignable_to_numeric_indexer_type_0)
+    __obj.updateDynamic("All_numerically_named_properties_must_be_assignable_to_numeric_indexer_type_0_NL_1")(All_numerically_named_properties_must_be_assignable_to_numeric_indexer_type_0_NL_1)
+    __obj.updateDynamic("All_symbols_within_a_with_block_will_be_resolved_to_any")(All_symbols_within_a_with_block_will_be_resolved_to_any)
+    __obj.updateDynamic("Allow_use_of_deprecated_0_keyword_when_referencing_an_external_module")(Allow_use_of_deprecated_0_keyword_when_referencing_an_external_module)
+    __obj.updateDynamic("Ambient_enum_elements_can_only_have_integer_literal_initializers")(Ambient_enum_elements_can_only_have_integer_literal_initializers)
+    __obj.updateDynamic("Ambient_external_module_declaration_cannot_be_reopened")(Ambient_external_module_declaration_cannot_be_reopened)
+    __obj.updateDynamic("Ambient_external_module_declaration_cannot_specify_relative_module_name")(Ambient_external_module_declaration_cannot_specify_relative_module_name)
+    __obj.updateDynamic("Ambient_external_module_declaration_must_be_defined_in_global_context")(Ambient_external_module_declaration_must_be_defined_in_global_context)
+    __obj.updateDynamic("An_interface_may_only_extend_another_class_or_interface")(An_interface_may_only_extend_another_class_or_interface)
+    __obj.updateDynamic("Array_Literal_implicitly_has_an_any_type_from_widening")(Array_Literal_implicitly_has_an_any_type_from_widening)
+    __obj.updateDynamic("AsteriskSlash_expected")(AsteriskSlash_expected)
+    __obj.updateDynamic("Automatic_semicolon_insertion_not_allowed")(Automatic_semicolon_insertion_not_allowed)
+    __obj.updateDynamic("Base64_value_0_finished_with_a_continuation_bit")(Base64_value_0_finished_with_a_continuation_bit)
+    __obj.updateDynamic("Call_signature_expects_0_or_fewer_parameters")(Call_signature_expects_0_or_fewer_parameters)
+    __obj.updateDynamic("Call_signatures_of_types_0_and_1_are_incompatible")(Call_signatures_of_types_0_and_1_are_incompatible)
+    __obj.updateDynamic("Call_signatures_of_types_0_and_1_are_incompatible_NL_2")(Call_signatures_of_types_0_and_1_are_incompatible_NL_2)
+    __obj.updateDynamic("Call_signatures_used_in_a_new_expression_must_have_a_void_return_type")(Call_signatures_used_in_a_new_expression_must_have_a_void_return_type)
+    __obj.updateDynamic("Calls_to_super_are_only_valid_inside_a_class")(Calls_to_super_are_only_valid_inside_a_class)
+    __obj.updateDynamic("Cannot_compile_external_modules_unless_the_module_flag_is_provided")(Cannot_compile_external_modules_unless_the_module_flag_is_provided)
+    __obj.updateDynamic("Cannot_convert_0_to_1")(Cannot_convert_0_to_1)
+    __obj.updateDynamic("Cannot_convert_0_to_1_NL_2")(Cannot_convert_0_to_1_NL_2)
+    __obj.updateDynamic("Cannot_find_the_common_subdirectory_path_for_the_input_files")(Cannot_find_the_common_subdirectory_path_for_the_input_files)
+    __obj.updateDynamic("Cannot_invoke_an_expression_whose_type_lacks_a_call_signature")(Cannot_invoke_an_expression_whose_type_lacks_a_call_signature)
+    __obj.updateDynamic("Cannot_read_file_0_1")(Cannot_read_file_0_1)
+    __obj.updateDynamic("Cannot_resolve_referenced_file_0")(Cannot_resolve_referenced_file_0)
+    __obj.updateDynamic("Cannot_resolve_return_type_reference")(Cannot_resolve_return_type_reference)
+    __obj.updateDynamic("Catch_clause_parameter_cannot_have_a_type_annotation")(Catch_clause_parameter_cannot_have_a_type_annotation)
+    __obj.updateDynamic("Class_0_cannot_extend_class_1_NL_2")(Class_0_cannot_extend_class_1_NL_2)
+    __obj.updateDynamic("Class_0_declares_class_1_as_an_interface_but_does_not_implement_it_NL_2")(Class_0_declares_class_1_as_an_interface_but_does_not_implement_it_NL_2)
+    __obj.updateDynamic("Class_0_declares_interface_1_but_does_not_implement_it_NL_2")(Class_0_declares_interface_1_but_does_not_implement_it_NL_2)
+    __obj.updateDynamic("Class_0_defines_instance_member_accessor_1_but_extended_class_2_defines_it_as_instance_member_function")(Class_0_defines_instance_member_accessor_1_but_extended_class_2_defines_it_as_instance_member_function)
+    __obj.updateDynamic("Class_0_defines_instance_member_function_1_but_extended_class_2_defines_it_as_instance_member_accessor")(Class_0_defines_instance_member_function_1_but_extended_class_2_defines_it_as_instance_member_accessor)
+    __obj.updateDynamic("Class_0_defines_instance_member_function_1_but_extended_class_2_defines_it_as_instance_member_property")(Class_0_defines_instance_member_function_1_but_extended_class_2_defines_it_as_instance_member_property)
+    __obj.updateDynamic("Class_0_defines_instance_member_property_1_but_extended_class_2_defines_it_as_instance_member_function")(Class_0_defines_instance_member_property_1_but_extended_class_2_defines_it_as_instance_member_function)
+    __obj.updateDynamic("Class_0_is_recursively_referenced_as_a_base_type_of_itself")(Class_0_is_recursively_referenced_as_a_base_type_of_itself)
+    __obj.updateDynamic("Class_name_cannot_be_0")(Class_name_cannot_be_0)
+    __obj.updateDynamic("Classes_can_only_extend_a_single_class")(Classes_can_only_extend_a_single_class)
+    __obj.updateDynamic("Concatenate_and_emit_output_to_single_file")(Concatenate_and_emit_output_to_single_file)
+    __obj.updateDynamic("Constraint_of_a_type_parameter_cannot_reference_any_type_parameter_from_the_same_type_parameter_list")(Constraint_of_a_type_parameter_cannot_reference_any_type_parameter_from_the_same_type_parameter_list)
+    __obj.updateDynamic("Construct_signatures_of_types_0_and_1_are_incompatible")(Construct_signatures_of_types_0_and_1_are_incompatible)
+    __obj.updateDynamic("Construct_signatures_of_types_0_and_1_are_incompatible_NL_2")(Construct_signatures_of_types_0_and_1_are_incompatible_NL_2)
+    __obj.updateDynamic("Constructor_implementation_expected")(Constructor_implementation_expected)
+    __obj.updateDynamic("Constructor_signature_which_lacks_return_type_annotation_implicitly_has_an_any_return_type")(Constructor_signature_which_lacks_return_type_annotation_implicitly_has_an_any_return_type)
+    __obj.updateDynamic("Constructors_cannot_have_a_return_type_of_void")(Constructors_cannot_have_a_return_type_of_void)
+    __obj.updateDynamic("Constructors_for_derived_classes_must_contain_a_super_call")(Constructors_for_derived_classes_must_contain_a_super_call)
+    __obj.updateDynamic("Could_not_apply_type_0_to_argument_1_which_is_of_type_2")(Could_not_apply_type_0_to_argument_1_which_is_of_type_2)
+    __obj.updateDynamic("Could_not_create_directory_0")(Could_not_create_directory_0)
+    __obj.updateDynamic("Could_not_delete_file_0")(Could_not_delete_file_0)
+    __obj.updateDynamic("Could_not_find_enclosing_symbol_for_dotted_name_0")(Could_not_find_enclosing_symbol_for_dotted_name_0)
+    __obj.updateDynamic("Could_not_find_file_0")(Could_not_find_file_0)
+    __obj.updateDynamic("Could_not_find_module_0_in_module_1")(Could_not_find_module_0_in_module_1)
+    __obj.updateDynamic("Could_not_find_symbol_0")(Could_not_find_symbol_0)
+    __obj.updateDynamic("Could_not_find_symbol_0_in_module_1")(Could_not_find_symbol_0_in_module_1)
+    __obj.updateDynamic("Could_not_find_the_best_common_type_of_types_of_all_return_statement_expressions")(Could_not_find_the_best_common_type_of_types_of_all_return_statement_expressions)
+    __obj.updateDynamic("Could_not_select_overload_for_call_expression")(Could_not_select_overload_for_call_expression)
+    __obj.updateDynamic("Could_not_select_overload_for_new_expression")(Could_not_select_overload_for_new_expression)
+    __obj.updateDynamic("Current_host_does_not_support_0_option")(Current_host_does_not_support_0_option)
+    __obj.updateDynamic("DIRECTORY")(DIRECTORY)
+    __obj.updateDynamic("Default_arguments_are_only_allowed_in_implementation")(Default_arguments_are_only_allowed_in_implementation)
+    __obj.updateDynamic("Do_not_emit_comments_to_output")(Do_not_emit_comments_to_output)
+    __obj.updateDynamic("Duplicate_constructor_overload_signature")(Duplicate_constructor_overload_signature)
+    __obj.updateDynamic("Duplicate_identifier_0")(Duplicate_identifier_0)
+    __obj.updateDynamic("Duplicate_identifier_0_Compiler_reserves_name_1_in_top_level_scope_of_an_external_module")(Duplicate_identifier_0_Compiler_reserves_name_1_in_top_level_scope_of_an_external_module)
+    __obj.updateDynamic("Duplicate_identifier_arguments_Compiler_uses_arguments_to_initialize_rest_parameters")(Duplicate_identifier_arguments_Compiler_uses_arguments_to_initialize_rest_parameters)
+    __obj.updateDynamic("Duplicate_identifier_i_Compiler_uses_i_to_initialize_rest_parameter")(Duplicate_identifier_i_Compiler_uses_i_to_initialize_rest_parameter)
+    __obj.updateDynamic("Duplicate_identifier_super_Compiler_uses_super_to_capture_base_class_reference")(Duplicate_identifier_super_Compiler_uses_super_to_capture_base_class_reference)
+    __obj.updateDynamic("Duplicate_identifier_this_Compiler_uses_variable_declaration_this_to_capture_this_reference")(Duplicate_identifier_this_Compiler_uses_variable_declaration_this_to_capture_this_reference)
+    __obj.updateDynamic("Duplicate_number_index_signature")(Duplicate_number_index_signature)
+    __obj.updateDynamic("Duplicate_overload_call_signature")(Duplicate_overload_call_signature)
+    __obj.updateDynamic("Duplicate_overload_construct_signature")(Duplicate_overload_construct_signature)
+    __obj.updateDynamic("Duplicate_overload_signature_for_0")(Duplicate_overload_signature_for_0)
+    __obj.updateDynamic("Duplicate_string_index_signature")(Duplicate_string_index_signature)
+    __obj.updateDynamic("ECMAScript_target_version_0_not_supported_Specify_a_valid_target_version_1_default_or_2")(ECMAScript_target_version_0_not_supported_Specify_a_valid_target_version_1_default_or_2)
+    __obj.updateDynamic("Emit_Error_0")(Emit_Error_0)
+    __obj.updateDynamic("Enum_member_must_have_initializer")(Enum_member_must_have_initializer)
+    __obj.updateDynamic("Enum_name_cannot_be_0")(Enum_name_cannot_be_0)
+    __obj.updateDynamic("Error_while_executing_file_0")(Error_while_executing_file_0)
+    __obj.updateDynamic("Examples")(Examples)
+    __obj.updateDynamic("Execution_Failed_NL")(Execution_Failed_NL)
+    __obj.updateDynamic("Expected_0_arguments_to_message_got_1_instead")(Expected_0_arguments_to_message_got_1_instead)
+    __obj.updateDynamic("Expected_the_message_0_to_have_1_arguments_but_it_had_2")(Expected_the_message_0_to_have_1_arguments_but_it_had_2)
+    __obj.updateDynamic("Expected_var_class_interface_or_module")(Expected_var_class_interface_or_module)
+    __obj.updateDynamic("Export_assignment_cannot_be_used_in_internal_modules")(Export_assignment_cannot_be_used_in_internal_modules)
+    __obj.updateDynamic("Export_assignment_not_allowed_in_module_with_exported_element")(Export_assignment_not_allowed_in_module_with_exported_element)
+    __obj.updateDynamic("Export_assignments_may_only_be_made_with_variables_functions_classes_interfaces_enums_and_internal_modules")(Export_assignments_may_only_be_made_with_variables_functions_classes_interfaces_enums_and_internal_modules)
+    __obj.updateDynamic("Export_assignments_may_only_be_used_at_the_top_level_of_external_modules")(Export_assignments_may_only_be_used_at_the_top_level_of_external_modules)
+    __obj.updateDynamic("Exported_class_0_extends_class_from_inaccessible_module_1")(Exported_class_0_extends_class_from_inaccessible_module_1)
+    __obj.updateDynamic("Exported_class_0_extends_private_class_1")(Exported_class_0_extends_private_class_1)
+    __obj.updateDynamic("Exported_class_0_implements_interface_from_inaccessible_module_1")(Exported_class_0_implements_interface_from_inaccessible_module_1)
+    __obj.updateDynamic("Exported_class_0_implements_private_interface_1")(Exported_class_0_implements_private_interface_1)
+    __obj.updateDynamic("Exported_import_declaration_0_is_assigned_container_that_is_or_is_using_inaccessible_module_1")(Exported_import_declaration_0_is_assigned_container_that_is_or_is_using_inaccessible_module_1)
+    __obj.updateDynamic("Exported_import_declaration_0_is_assigned_type_that_has_or_is_using_private_type_1")(Exported_import_declaration_0_is_assigned_type_that_has_or_is_using_private_type_1)
+    __obj.updateDynamic("Exported_import_declaration_0_is_assigned_type_that_is_using_inaccessible_module_1")(Exported_import_declaration_0_is_assigned_type_that_is_using_inaccessible_module_1)
+    __obj.updateDynamic("Exported_import_declaration_0_is_assigned_value_with_type_that_has_or_is_using_private_type_1")(Exported_import_declaration_0_is_assigned_value_with_type_that_has_or_is_using_private_type_1)
+    __obj.updateDynamic("Exported_import_declaration_0_is_assigned_value_with_type_that_is_using_inaccessible_module_1")(Exported_import_declaration_0_is_assigned_value_with_type_that_is_using_inaccessible_module_1)
+    __obj.updateDynamic("Exported_interface_0_extends_interface_from_inaccessible_module_1")(Exported_interface_0_extends_interface_from_inaccessible_module_1)
+    __obj.updateDynamic("Exported_interface_0_extends_private_interface_1")(Exported_interface_0_extends_private_interface_1)
+    __obj.updateDynamic("Exported_variable_0_has_or_is_using_private_type_1")(Exported_variable_0_has_or_is_using_private_type_1)
+    __obj.updateDynamic("Exported_variable_0_is_using_inaccessible_module_1")(Exported_variable_0_is_using_inaccessible_module_1)
+    __obj.updateDynamic("Expression_resolves_to_super_that_compiler_uses_to_capture_base_class_reference")(Expression_resolves_to_super_that_compiler_uses_to_capture_base_class_reference)
+    __obj.updateDynamic("Expression_resolves_to_variable_declaration_i_that_compiler_uses_to_initialize_rest_parameter")(Expression_resolves_to_variable_declaration_i_that_compiler_uses_to_initialize_rest_parameter)
+    __obj.updateDynamic("Expression_resolves_to_variable_declaration_this_that_compiler_uses_to_capture_this_reference")(Expression_resolves_to_variable_declaration_this_that_compiler_uses_to_capture_this_reference)
+    __obj.updateDynamic("Function_declared_a_non_void_return_type_but_has_no_return_expression")(Function_declared_a_non_void_return_type_but_has_no_return_expression)
+    __obj.updateDynamic("Function_expression_declared_a_non_void_return_type_but_has_no_return_expression")(Function_expression_declared_a_non_void_return_type_but_has_no_return_expression)
+    __obj.updateDynamic("Function_expression_which_lacks_return_type_annotation_implicitly_has_an_any_return_type")(Function_expression_which_lacks_return_type_annotation_implicitly_has_an_any_return_type)
+    __obj.updateDynamic("Function_implementation_expected")(Function_implementation_expected)
+    __obj.updateDynamic("Function_overload_must_be_static")(Function_overload_must_be_static)
+    __obj.updateDynamic("Function_overload_must_not_be_static")(Function_overload_must_not_be_static)
+    __obj.updateDynamic("Function_overload_name_must_be_0")(Function_overload_name_must_be_0)
+    __obj.updateDynamic("Generates_corresponding_0_file")(Generates_corresponding_0_file)
+    __obj.updateDynamic("Generic_type_0_requires_1_type_argument_s")(Generic_type_0_requires_1_type_argument_s)
+    __obj.updateDynamic("Generic_type_references_must_include_all_type_arguments")(Generic_type_references_must_include_all_type_arguments)
+    __obj.updateDynamic("Getter_0_already_declared")(Getter_0_already_declared)
+    __obj.updateDynamic("Getter_and_setter_accessors_do_not_agree_in_visibility")(Getter_and_setter_accessors_do_not_agree_in_visibility)
+    __obj.updateDynamic("Getters_must_return_a_value")(Getters_must_return_a_value)
+    __obj.updateDynamic("Identifier_expected")(Identifier_expected)
+    __obj.updateDynamic("Identifier_expected_0_is_a_keyword")(Identifier_expected_0_is_a_keyword)
+    __obj.updateDynamic("Implementations_are_not_allowed_in_ambient_contexts")(Implementations_are_not_allowed_in_ambient_contexts)
+    __obj.updateDynamic("Import_declaration_cannot_refer_to_external_module_reference_when_noResolve_option_is_set")(Import_declaration_cannot_refer_to_external_module_reference_when_noResolve_option_is_set)
+    __obj.updateDynamic("Import_declaration_in_an_ambient_external_module_declaration_cannot_reference_external_module_through_relative_external_module_name")(Import_declaration_in_an_ambient_external_module_declaration_cannot_reference_external_module_through_relative_external_module_name)
+    __obj.updateDynamic("Import_declaration_referencing_identifier_from_internal_module_can_only_be_made_with_variables_functions_classes_interfaces_enums_and_internal_modules")(Import_declaration_referencing_identifier_from_internal_module_can_only_be_made_with_variables_functions_classes_interfaces_enums_and_internal_modules)
+    __obj.updateDynamic("Import_declarations_in_an_internal_module_cannot_reference_an_external_module")(Import_declarations_in_an_internal_module_cannot_reference_an_external_module)
+    __obj.updateDynamic("In_enums_with_multiple_declarations_only_one_declaration_can_omit_an_initializer_for_the_first_enum_element")(In_enums_with_multiple_declarations_only_one_declaration_can_omit_an_initializer_for_the_first_enum_element)
+    __obj.updateDynamic("Index_signature_must_have_a_type_annotation")(Index_signature_must_have_a_type_annotation)
+    __obj.updateDynamic("Index_signature_of_object_type_implicitly_has_an_any_type")(Index_signature_of_object_type_implicitly_has_an_any_type)
+    __obj.updateDynamic("Index_signature_parameter_cannot_have_a_question_mark")(Index_signature_parameter_cannot_have_a_question_mark)
+    __obj.updateDynamic("Index_signature_parameter_cannot_have_accessibility_modifiers")(Index_signature_parameter_cannot_have_accessibility_modifiers)
+    __obj.updateDynamic("Index_signature_parameter_cannot_have_an_initializer")(Index_signature_parameter_cannot_have_an_initializer)
+    __obj.updateDynamic("Index_signature_parameter_must_have_a_type_annotation")(Index_signature_parameter_must_have_a_type_annotation)
+    __obj.updateDynamic("Index_signature_parameter_type_must_be_string_or_number")(Index_signature_parameter_type_must_be_string_or_number)
+    __obj.updateDynamic("Index_signatures_cannot_have_rest_parameters")(Index_signatures_cannot_have_rest_parameters)
+    __obj.updateDynamic("Index_signatures_of_types_0_and_1_are_incompatible")(Index_signatures_of_types_0_and_1_are_incompatible)
+    __obj.updateDynamic("Index_signatures_of_types_0_and_1_are_incompatible_NL_2")(Index_signatures_of_types_0_and_1_are_incompatible_NL_2)
+    __obj.updateDynamic("Initializer_of_instance_member_variable_0_cannot_reference_identifier_1_declared_in_the_constructor")(Initializer_of_instance_member_variable_0_cannot_reference_identifier_1_declared_in_the_constructor)
+    __obj.updateDynamic("Initializer_of_parameter_0_cannot_reference_identifier_1_declared_after_it")(Initializer_of_parameter_0_cannot_reference_identifier_1_declared_after_it)
+    __obj.updateDynamic("Initializers_are_not_allowed_in_ambient_contexts")(Initializers_are_not_allowed_in_ambient_contexts)
+    __obj.asInstanceOf[Anon_01isinaccessible]
+  }
+}
+

@@ -56,3 +56,36 @@ trait HostedPrivateVirtualInterfaceState extends js.Object {
   val vlan: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object HostedPrivateVirtualInterfaceState {
+  @scala.inline
+  def apply(
+    addressFamily: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    amazonAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bgpAsn: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    bgpAuthKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    connectionId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customerAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    jumboFrameCapable: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    mtu: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ownerAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vlan: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): HostedPrivateVirtualInterfaceState = {
+    val __obj = js.Dynamic.literal()
+    if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
+    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (bgpAsn != null) __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
+    if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
+    if (connectionId != null) __obj.updateDynamic("connectionId")(connectionId.asInstanceOf[js.Any])
+    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
+    if (jumboFrameCapable != null) __obj.updateDynamic("jumboFrameCapable")(jumboFrameCapable.asInstanceOf[js.Any])
+    if (mtu != null) __obj.updateDynamic("mtu")(mtu.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ownerAccountId != null) __obj.updateDynamic("ownerAccountId")(ownerAccountId.asInstanceOf[js.Any])
+    if (vlan != null) __obj.updateDynamic("vlan")(vlan.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HostedPrivateVirtualInterfaceState]
+  }
+}
+

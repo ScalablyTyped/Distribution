@@ -20,3 +20,18 @@ trait TouchBarColorPickerConstructorOptions extends js.Object {
   var selectedColor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TouchBarColorPickerConstructorOptions {
+  @scala.inline
+  def apply(
+    availableColors: js.Array[java.lang.String] = null,
+    change: js.Function1[/* color */ java.lang.String, scala.Unit] = null,
+    selectedColor: java.lang.String = null
+  ): TouchBarColorPickerConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (availableColors != null) __obj.updateDynamic("availableColors")(availableColors)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor)
+    __obj.asInstanceOf[TouchBarColorPickerConstructorOptions]
+  }
+}
+

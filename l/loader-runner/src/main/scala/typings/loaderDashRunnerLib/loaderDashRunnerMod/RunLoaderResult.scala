@@ -13,3 +13,22 @@ trait RunLoaderResult extends js.Object {
   var result: js.UndefOr[js.Array[nodeLib.Buffer | scala.Null]] = js.undefined
 }
 
+object RunLoaderResult {
+  @scala.inline
+  def apply(
+    cacheable: scala.Boolean,
+    contextDependencies: js.Array[java.lang.String],
+    fileDependencies: js.Array[java.lang.String],
+    resourceBuffer: nodeLib.Buffer = null,
+    result: js.Array[nodeLib.Buffer | scala.Null] = null
+  ): RunLoaderResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cacheable")(cacheable)
+    __obj.updateDynamic("contextDependencies")(contextDependencies)
+    __obj.updateDynamic("fileDependencies")(fileDependencies)
+    if (resourceBuffer != null) __obj.updateDynamic("resourceBuffer")(resourceBuffer)
+    if (result != null) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[RunLoaderResult]
+  }
+}
+

@@ -25,3 +25,13 @@ trait ShapeGroupData extends js.Object {
   var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
 }
 
+object ShapeGroupData {
+  @scala.inline
+  def apply(id: java.lang.String = null, shapes: js.Array[ShapeData] = null): ShapeGroupData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
+    __obj.asInstanceOf[ShapeGroupData]
+  }
+}
+

@@ -156,6 +156,8 @@ object projNs extends js.Object {
     def setWorldExtent(worldExtent: openlayersLib.openlayersMod.Extent): scala.Unit = js.native
   }
   
+  trait Units extends js.Object
+  
   /**
     * Registers coordinate transform functions to convert coordinates between the
     * source projection and the destination projection.
@@ -333,10 +335,5 @@ object projNs extends js.Object {
   object METERS_PER_UNIT
     extends /* k */ org.scalablytyped.runtime.StringDictionary[scala.Double]
   
-  /**
-    * Projection units: `'degrees'`, `'ft'`, `'m'`, `'pixels'`, `'tile-pixels'` or
-    * `'us-ft'`.
-    */
-  type Units = openlayersLib.openlayersLibStrings.degrees | openlayersLib.openlayersLibStrings.ft | openlayersLib.openlayersLibStrings.m | openlayersLib.openlayersLibStrings.pixels | openlayersLib.openlayersLibStrings.`tile-pixels` | openlayersLib.openlayersLibStrings.`us-ft`
 }
 

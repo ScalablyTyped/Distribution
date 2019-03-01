@@ -63,3 +63,58 @@ trait Proposal extends js.Object {
   var sellerContacts: js.UndefOr[js.Array[ContactInformation]] = js.undefined
 }
 
+object Proposal {
+  @scala.inline
+  def apply(
+    billedBuyer: Buyer = null,
+    buyer: Buyer = null,
+    buyerContacts: js.Array[ContactInformation] = null,
+    buyerPrivateData: PrivateData = null,
+    dbmAdvertiserIds: js.Array[java.lang.String] = null,
+    hasBuyerSignedOff: js.UndefOr[scala.Boolean] = js.undefined,
+    hasSellerSignedOff: js.UndefOr[scala.Boolean] = js.undefined,
+    inventorySource: java.lang.String = null,
+    isRenegotiating: js.UndefOr[scala.Boolean] = js.undefined,
+    isSetupComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    labels: js.Array[MarketplaceLabel] = null,
+    lastUpdaterOrCommentorRole: java.lang.String = null,
+    name: java.lang.String = null,
+    negotiationId: java.lang.String = null,
+    originatorRole: java.lang.String = null,
+    privateAuctionId: java.lang.String = null,
+    proposalId: java.lang.String = null,
+    proposalState: java.lang.String = null,
+    revisionNumber: java.lang.String = null,
+    revisionTimeMs: java.lang.String = null,
+    seller: Seller = null,
+    sellerContacts: js.Array[ContactInformation] = null
+  ): Proposal = {
+    val __obj = js.Dynamic.literal()
+    if (billedBuyer != null) __obj.updateDynamic("billedBuyer")(billedBuyer)
+    if (buyer != null) __obj.updateDynamic("buyer")(buyer)
+    if (buyerContacts != null) __obj.updateDynamic("buyerContacts")(buyerContacts)
+    if (buyerPrivateData != null) __obj.updateDynamic("buyerPrivateData")(buyerPrivateData)
+    if (dbmAdvertiserIds != null) __obj.updateDynamic("dbmAdvertiserIds")(dbmAdvertiserIds)
+    if (!js.isUndefined(hasBuyerSignedOff)) __obj.updateDynamic("hasBuyerSignedOff")(hasBuyerSignedOff)
+    if (!js.isUndefined(hasSellerSignedOff)) __obj.updateDynamic("hasSellerSignedOff")(hasSellerSignedOff)
+    if (inventorySource != null) __obj.updateDynamic("inventorySource")(inventorySource)
+    if (!js.isUndefined(isRenegotiating)) __obj.updateDynamic("isRenegotiating")(isRenegotiating)
+    if (!js.isUndefined(isSetupComplete)) __obj.updateDynamic("isSetupComplete")(isSetupComplete)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (lastUpdaterOrCommentorRole != null) __obj.updateDynamic("lastUpdaterOrCommentorRole")(lastUpdaterOrCommentorRole)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (negotiationId != null) __obj.updateDynamic("negotiationId")(negotiationId)
+    if (originatorRole != null) __obj.updateDynamic("originatorRole")(originatorRole)
+    if (privateAuctionId != null) __obj.updateDynamic("privateAuctionId")(privateAuctionId)
+    if (proposalId != null) __obj.updateDynamic("proposalId")(proposalId)
+    if (proposalState != null) __obj.updateDynamic("proposalState")(proposalState)
+    if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber)
+    if (revisionTimeMs != null) __obj.updateDynamic("revisionTimeMs")(revisionTimeMs)
+    if (seller != null) __obj.updateDynamic("seller")(seller)
+    if (sellerContacts != null) __obj.updateDynamic("sellerContacts")(sellerContacts)
+    __obj.asInstanceOf[Proposal]
+  }
+}
+

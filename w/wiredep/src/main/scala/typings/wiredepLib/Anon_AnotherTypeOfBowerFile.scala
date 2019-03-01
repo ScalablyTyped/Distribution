@@ -17,3 +17,16 @@ trait Anon_AnotherTypeOfBowerFile extends js.Object {
   def anotherTypeOfBowerFile(filePath: java.lang.String): java.lang.String
 }
 
+object Anon_AnotherTypeOfBowerFile {
+  @scala.inline
+  def apply(
+    anotherTypeOfBowerFile: js.Function1[java.lang.String, java.lang.String],
+    typeOfBowerFile: java.lang.String
+  ): Anon_AnotherTypeOfBowerFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("anotherTypeOfBowerFile")(anotherTypeOfBowerFile)
+    __obj.updateDynamic("typeOfBowerFile")(typeOfBowerFile)
+    __obj.asInstanceOf[Anon_AnotherTypeOfBowerFile]
+  }
+}
+

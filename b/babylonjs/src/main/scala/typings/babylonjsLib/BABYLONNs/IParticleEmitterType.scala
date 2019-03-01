@@ -51,3 +51,28 @@ trait IParticleEmitterType extends js.Object {
   def startPositionFunction(worldMatrix: Matrix, positionToUpdate: Vector3, particle: Particle): scala.Unit
 }
 
+object IParticleEmitterType {
+  @scala.inline
+  def apply(
+    applyToShader: js.Function1[Effect, scala.Unit],
+    clone: js.Function0[IParticleEmitterType],
+    getClassName: js.Function0[java.lang.String],
+    getEffectDefines: js.Function0[java.lang.String],
+    parse: js.Function1[js.Any, scala.Unit],
+    serialize: js.Function0[js.Any],
+    startDirectionFunction: js.Function3[Matrix, Vector3, Particle, scala.Unit],
+    startPositionFunction: js.Function3[Matrix, Vector3, Particle, scala.Unit]
+  ): IParticleEmitterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applyToShader")(applyToShader)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("getClassName")(getClassName)
+    __obj.updateDynamic("getEffectDefines")(getEffectDefines)
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("serialize")(serialize)
+    __obj.updateDynamic("startDirectionFunction")(startDirectionFunction)
+    __obj.updateDynamic("startPositionFunction")(startPositionFunction)
+    __obj.asInstanceOf[IParticleEmitterType]
+  }
+}
+

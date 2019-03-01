@@ -18,3 +18,19 @@ trait StoreInfosResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListStoreInfosResponse]
 }
 
+object StoreInfosResource {
+  @scala.inline
+  def apply(
+    country: CountryResource,
+    list: js.Function1[
+      gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertokenCallbackCountries, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListStoreInfosResponse]
+    ]
+  ): StoreInfosResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("country")(country)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[StoreInfosResource]
+  }
+}
+

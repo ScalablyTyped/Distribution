@@ -12,3 +12,13 @@ trait TiersListResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TiersListResponse {
+  @scala.inline
+  def apply(items: js.Array[Tier] = null, kind: java.lang.String = null): TiersListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[TiersListResponse]
+  }
+}
+

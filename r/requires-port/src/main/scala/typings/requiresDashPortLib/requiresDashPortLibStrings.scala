@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object requiresDashPortLibStrings {
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
   
   @js.native
-  sealed trait ftp extends js.Object
+  sealed trait ftp
+    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
   
   @js.native
-  sealed trait gopher extends js.Object
+  sealed trait gopher
+    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
   
   @js.native
-  sealed trait http extends js.Object
+  sealed trait http
+    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
   
   @js.native
-  sealed trait https extends js.Object
+  sealed trait https
+    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
   
   @js.native
-  sealed trait ws extends js.Object
+  sealed trait ws
+    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
   
   @js.native
-  sealed trait wss extends js.Object
+  sealed trait wss
+    extends requiresDashPortLib.requiresDashPortMod.requiresPortNs.Protocol
   
   @scala.inline
   def file: file = "file".asInstanceOf[file]

@@ -7,61 +7,82 @@ import scala.scalajs.js.annotation._
 
 object reactDashReconcilerLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.BundleType
+       with reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.BundleType
+       with reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `10` extends js.Object
+  sealed trait `10`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `11` extends js.Object
+  sealed trait `11`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `12` extends js.Object
+  sealed trait `12`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `13` extends js.Object
+  sealed trait `13`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `14` extends js.Object
+  sealed trait `14`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `15` extends js.Object
+  sealed trait `15`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `16` extends js.Object
+  sealed trait `16`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `17` extends js.Object
+  sealed trait `17`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `18` extends js.Object
+  sealed trait `18`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends reactDashReconcilerLib.reactDashReconcilerMod.ReactReconcilerNs.WorkTag
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

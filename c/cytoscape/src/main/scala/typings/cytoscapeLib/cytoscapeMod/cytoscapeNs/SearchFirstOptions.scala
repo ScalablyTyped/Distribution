@@ -20,3 +20,18 @@ trait SearchFirstOptions extends js.Object {
   var visit: js.UndefOr[SearchVisitFunction] = js.undefined
 }
 
+object SearchFirstOptions {
+  @scala.inline
+  def apply(
+    roots: Selector | CollectionArgument,
+    directed: js.UndefOr[scala.Boolean] = js.undefined,
+    visit: SearchVisitFunction = null
+  ): SearchFirstOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("roots")(roots.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (visit != null) __obj.updateDynamic("visit")(visit)
+    __obj.asInstanceOf[SearchFirstOptions]
+  }
+}
+

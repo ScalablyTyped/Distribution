@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("tableau.CategoricalFilter")
 @js.native
-class CategoricalFilter () extends Filter {
+class CategoricalFilter ()
+  extends Filter
+     with ConcreteFilter {
   /**
     * Gets the collection of values that are currently set on the filter.
     * This is a native JavaScript array and not a keyed collection.

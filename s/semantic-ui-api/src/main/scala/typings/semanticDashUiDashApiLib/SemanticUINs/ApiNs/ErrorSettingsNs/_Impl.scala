@@ -60,3 +60,38 @@ trait _Impl extends js.Object {
   var timeout: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    JSONParse: java.lang.String,
+    beforeSend: java.lang.String,
+    error: java.lang.String,
+    exitConditions: java.lang.String,
+    legacyParameters: java.lang.String,
+    missingAction: java.lang.String,
+    missingSerialize: java.lang.String,
+    missingURL: java.lang.String,
+    noReturnedValue: java.lang.String,
+    parseError: java.lang.String,
+    requiredParameter: java.lang.String,
+    statusMessage: java.lang.String,
+    timeout: java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("JSONParse")(JSONParse)
+    __obj.updateDynamic("beforeSend")(beforeSend)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("exitConditions")(exitConditions)
+    __obj.updateDynamic("legacyParameters")(legacyParameters)
+    __obj.updateDynamic("missingAction")(missingAction)
+    __obj.updateDynamic("missingSerialize")(missingSerialize)
+    __obj.updateDynamic("missingURL")(missingURL)
+    __obj.updateDynamic("noReturnedValue")(noReturnedValue)
+    __obj.updateDynamic("parseError")(parseError)
+    __obj.updateDynamic("requiredParameter")(requiredParameter)
+    __obj.updateDynamic("statusMessage")(statusMessage)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

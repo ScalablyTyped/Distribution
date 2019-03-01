@@ -49,3 +49,58 @@ trait XXPathObject
   def getString(): java.lang.String
 }
 
+object XXPathObject {
+  @scala.inline
+  def apply(
+    Boolean: scala.Boolean,
+    Byte: scala.Double,
+    Double: scala.Double,
+    Float: scala.Double,
+    Hyper: scala.Double,
+    Long: scala.Double,
+    NodeList: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList,
+    ObjectType: XPathObjectType,
+    Short: scala.Double,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getBoolean: js.Function0[scala.Boolean],
+    getByte: js.Function0[scala.Double],
+    getDouble: js.Function0[scala.Double],
+    getFloat: js.Function0[scala.Double],
+    getHyper: js.Function0[scala.Double],
+    getLong: js.Function0[scala.Double],
+    getNodeList: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.domNs.XNodeList],
+    getObjectType: js.Function0[XPathObjectType],
+    getShort: js.Function0[scala.Double],
+    getString: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XXPathObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Boolean")(Boolean)
+    __obj.updateDynamic("Byte")(Byte)
+    __obj.updateDynamic("Double")(Double)
+    __obj.updateDynamic("Float")(Float)
+    __obj.updateDynamic("Hyper")(Hyper)
+    __obj.updateDynamic("Long")(Long)
+    __obj.updateDynamic("NodeList")(NodeList)
+    __obj.updateDynamic("ObjectType")(ObjectType)
+    __obj.updateDynamic("Short")(Short)
+    __obj.updateDynamic("String")(String)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getBoolean")(getBoolean)
+    __obj.updateDynamic("getByte")(getByte)
+    __obj.updateDynamic("getDouble")(getDouble)
+    __obj.updateDynamic("getFloat")(getFloat)
+    __obj.updateDynamic("getHyper")(getHyper)
+    __obj.updateDynamic("getLong")(getLong)
+    __obj.updateDynamic("getNodeList")(getNodeList)
+    __obj.updateDynamic("getObjectType")(getObjectType)
+    __obj.updateDynamic("getShort")(getShort)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XXPathObject]
+  }
+}
+

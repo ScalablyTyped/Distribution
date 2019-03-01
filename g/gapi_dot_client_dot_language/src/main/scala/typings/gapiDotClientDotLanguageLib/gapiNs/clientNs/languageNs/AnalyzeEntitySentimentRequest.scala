@@ -12,3 +12,13 @@ trait AnalyzeEntitySentimentRequest extends js.Object {
   var encodingType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AnalyzeEntitySentimentRequest {
+  @scala.inline
+  def apply(document: Document = null, encodingType: java.lang.String = null): AnalyzeEntitySentimentRequest = {
+    val __obj = js.Dynamic.literal()
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (encodingType != null) __obj.updateDynamic("encodingType")(encodingType)
+    __obj.asInstanceOf[AnalyzeEntitySentimentRequest]
+  }
+}
+

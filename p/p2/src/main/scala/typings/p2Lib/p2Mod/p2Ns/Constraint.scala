@@ -16,3 +16,27 @@ trait Constraint extends js.Object {
   def update(): scala.Unit
 }
 
+object Constraint {
+  @scala.inline
+  def apply(
+    bodyA: Body,
+    bodyB: Body,
+    collideConnected: scala.Boolean,
+    equeations: js.Array[Equation],
+    setRelaxation: js.Function1[scala.Double, scala.Unit],
+    setStiffness: js.Function1[scala.Double, scala.Unit],
+    `type`: scala.Double,
+    update: js.Function0[scala.Unit]
+  ): Constraint = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bodyA")(bodyA)
+    __obj.updateDynamic("bodyB")(bodyB)
+    __obj.updateDynamic("collideConnected")(collideConnected)
+    __obj.updateDynamic("equeations")(equeations)
+    __obj.updateDynamic("setRelaxation")(setRelaxation)
+    __obj.updateDynamic("setStiffness")(setStiffness)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Constraint]
+  }
+}
+

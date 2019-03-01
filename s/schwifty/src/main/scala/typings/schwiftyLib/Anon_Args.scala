@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Args
-  extends org.scalablytyped.runtime.Instantiable0[objectionLib.objectionMod.Model] {
+  extends schwiftyLib.schwiftyMod.ModelClass
+     with org.scalablytyped.runtime.Instantiable0[objectionLib.objectionMod.Model] {
   var BelongsToOneRelation: objectionLib.objectionMod.ObjectionNs.Relation = js.native
   var HasManyRelation: objectionLib.objectionMod.ObjectionNs.Relation = js.native
   var HasOneRelation: objectionLib.objectionMod.ObjectionNs.Relation = js.native

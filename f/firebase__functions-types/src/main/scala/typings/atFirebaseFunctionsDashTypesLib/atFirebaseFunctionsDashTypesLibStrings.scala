@@ -7,55 +7,72 @@ import scala.scalajs.js.annotation._
 
 object atFirebaseFunctionsDashTypesLibStrings {
   @js.native
-  sealed trait aborted extends js.Object
+  sealed trait aborted
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait `already-exists` extends js.Object
+  sealed trait `already-exists`
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait cancelled extends js.Object
+  sealed trait cancelled
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait `data-loss` extends js.Object
+  sealed trait `data-loss`
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait `deadline-exceeded` extends js.Object
+  sealed trait `deadline-exceeded`
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait `failed-precondition` extends js.Object
+  sealed trait `failed-precondition`
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait internal extends js.Object
+  sealed trait internal
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait `invalid-argument` extends js.Object
+  sealed trait `invalid-argument`
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait `not-found` extends js.Object
+  sealed trait `not-found`
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait ok extends js.Object
+  sealed trait ok
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait `out-of-range` extends js.Object
+  sealed trait `out-of-range`
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait `permission-denied` extends js.Object
+  sealed trait `permission-denied`
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait `resource-exhausted` extends js.Object
+  sealed trait `resource-exhausted`
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait unauthenticated extends js.Object
+  sealed trait unauthenticated
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait unavailable extends js.Object
+  sealed trait unavailable
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait unimplemented extends js.Object
+  sealed trait unimplemented
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends atFirebaseFunctionsDashTypesLib.atFirebaseFunctionsDashTypesMod.FunctionsErrorCode
   
   @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]

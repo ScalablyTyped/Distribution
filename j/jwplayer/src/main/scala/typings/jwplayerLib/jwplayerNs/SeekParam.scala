@@ -10,3 +10,13 @@ trait SeekParam extends js.Object {
   var position: scala.Double
 }
 
+object SeekParam {
+  @scala.inline
+  def apply(offset: scala.Double, position: scala.Double): SeekParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[SeekParam]
+  }
+}
+

@@ -10,3 +10,12 @@ trait Anon_Mids extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Mids {
+  @scala.inline
+  def apply(mids: java.lang.String, `type`: java.lang.String): Anon_Mids = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("mids")(mids)
+    __obj.asInstanceOf[Anon_Mids]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_Options extends js.Object {
   def updateWith(options: stripeDashV3Lib.stripeNs.paymentRequestNs.UpdateDetails): scala.Unit
 }
 
+object Anon_Options {
+  @scala.inline
+  def apply(
+    shippingAddress: stripeDashV3Lib.stripeNs.paymentRequestNs.ShippingAddress,
+    updateWith: js.Function1[stripeDashV3Lib.stripeNs.paymentRequestNs.UpdateDetails, scala.Unit]
+  ): Anon_Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("shippingAddress")(shippingAddress)
+    __obj.updateDynamic("updateWith")(updateWith)
+    __obj.asInstanceOf[Anon_Options]
+  }
+}
+

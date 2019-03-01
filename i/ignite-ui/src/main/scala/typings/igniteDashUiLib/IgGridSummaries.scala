@@ -202,3 +202,89 @@ trait IgGridSummaries
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridSummaries {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridSummaries
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    calculateRenderMode: java.lang.String = null,
+    callee: js.Function = null,
+    columnSettings: js.Array[IgGridSummariesColumnSetting] = null,
+    compactRenderingMode: js.Any = null,
+    dialogButtonCancelText: java.lang.String = null,
+    dialogButtonOKText: java.lang.String = null,
+    dropDownCancelClicked: DropDownCancelClickedEvent = null,
+    dropDownClosed: DropDownClosedEvent = null,
+    dropDownClosing: DropDownClosingEvent = null,
+    dropDownDialogAnimationDuration: scala.Int | scala.Double = null,
+    dropDownHeight: scala.Int | scala.Double = null,
+    dropDownOKClicked: DropDownOKClickedEvent = null,
+    dropDownOpened: DropDownOpenedEvent = null,
+    dropDownOpening: DropDownOpeningEvent = null,
+    dropDownWidth: scala.Int | scala.Double = null,
+    emptyCellText: java.lang.String = null,
+    featureChooserText: java.lang.String = null,
+    featureChooserTextHide: java.lang.String = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    locale: IgGridSummariesLocale = null,
+    regional: java.lang.String | js.Object = null,
+    renderSummaryCellFunc: java.lang.String | js.Object = null,
+    resultTemplate: java.lang.String = null,
+    showDropDownButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showSummariesButton: js.UndefOr[scala.Boolean] = js.undefined,
+    summariesCalculated: SummariesCalculatedEvent = null,
+    summariesCalculating: SummariesCalculatingEvent = null,
+    summariesHeaderButtonTooltip: java.lang.String = null,
+    summariesMethodSelectionChanged: SummariesMethodSelectionChangedEvent = null,
+    summariesResponseKey: java.lang.String = null,
+    summariesToggled: SummariesToggledEvent = null,
+    summariesToggling: SummariesTogglingEvent = null,
+    summaryExecution: java.lang.String = null,
+    summaryExprUrlKey: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): IgGridSummaries = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (calculateRenderMode != null) __obj.updateDynamic("calculateRenderMode")(calculateRenderMode)
+    if (callee != null) __obj.updateDynamic("callee")(callee)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (compactRenderingMode != null) __obj.updateDynamic("compactRenderingMode")(compactRenderingMode)
+    if (dialogButtonCancelText != null) __obj.updateDynamic("dialogButtonCancelText")(dialogButtonCancelText)
+    if (dialogButtonOKText != null) __obj.updateDynamic("dialogButtonOKText")(dialogButtonOKText)
+    if (dropDownCancelClicked != null) __obj.updateDynamic("dropDownCancelClicked")(dropDownCancelClicked)
+    if (dropDownClosed != null) __obj.updateDynamic("dropDownClosed")(dropDownClosed)
+    if (dropDownClosing != null) __obj.updateDynamic("dropDownClosing")(dropDownClosing)
+    if (dropDownDialogAnimationDuration != null) __obj.updateDynamic("dropDownDialogAnimationDuration")(dropDownDialogAnimationDuration.asInstanceOf[js.Any])
+    if (dropDownHeight != null) __obj.updateDynamic("dropDownHeight")(dropDownHeight.asInstanceOf[js.Any])
+    if (dropDownOKClicked != null) __obj.updateDynamic("dropDownOKClicked")(dropDownOKClicked)
+    if (dropDownOpened != null) __obj.updateDynamic("dropDownOpened")(dropDownOpened)
+    if (dropDownOpening != null) __obj.updateDynamic("dropDownOpening")(dropDownOpening)
+    if (dropDownWidth != null) __obj.updateDynamic("dropDownWidth")(dropDownWidth.asInstanceOf[js.Any])
+    if (emptyCellText != null) __obj.updateDynamic("emptyCellText")(emptyCellText)
+    if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText)
+    if (featureChooserTextHide != null) __obj.updateDynamic("featureChooserTextHide")(featureChooserTextHide)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (renderSummaryCellFunc != null) __obj.updateDynamic("renderSummaryCellFunc")(renderSummaryCellFunc.asInstanceOf[js.Any])
+    if (resultTemplate != null) __obj.updateDynamic("resultTemplate")(resultTemplate)
+    if (!js.isUndefined(showDropDownButton)) __obj.updateDynamic("showDropDownButton")(showDropDownButton)
+    if (!js.isUndefined(showSummariesButton)) __obj.updateDynamic("showSummariesButton")(showSummariesButton)
+    if (summariesCalculated != null) __obj.updateDynamic("summariesCalculated")(summariesCalculated)
+    if (summariesCalculating != null) __obj.updateDynamic("summariesCalculating")(summariesCalculating)
+    if (summariesHeaderButtonTooltip != null) __obj.updateDynamic("summariesHeaderButtonTooltip")(summariesHeaderButtonTooltip)
+    if (summariesMethodSelectionChanged != null) __obj.updateDynamic("summariesMethodSelectionChanged")(summariesMethodSelectionChanged)
+    if (summariesResponseKey != null) __obj.updateDynamic("summariesResponseKey")(summariesResponseKey)
+    if (summariesToggled != null) __obj.updateDynamic("summariesToggled")(summariesToggled)
+    if (summariesToggling != null) __obj.updateDynamic("summariesToggling")(summariesToggling)
+    if (summaryExecution != null) __obj.updateDynamic("summaryExecution")(summaryExecution)
+    if (summaryExprUrlKey != null) __obj.updateDynamic("summaryExprUrlKey")(summaryExprUrlKey)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IgGridSummaries]
+  }
+}
+

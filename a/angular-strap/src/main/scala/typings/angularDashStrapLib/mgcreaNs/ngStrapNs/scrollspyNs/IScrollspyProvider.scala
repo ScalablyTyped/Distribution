@@ -9,3 +9,12 @@ trait IScrollspyProvider extends js.Object {
   var defaults: IScrollspyOptions
 }
 
+object IScrollspyProvider {
+  @scala.inline
+  def apply(defaults: IScrollspyOptions): IScrollspyProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaults")(defaults)
+    __obj.asInstanceOf[IScrollspyProvider]
+  }
+}
+

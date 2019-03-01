@@ -9,3 +9,12 @@ trait Anon_Error extends js.Object {
   var error: pouchdbDashCoreLib.PouchDBNs.CoreNs.Error
 }
 
+object Anon_Error {
+  @scala.inline
+  def apply(error: pouchdbDashCoreLib.PouchDBNs.CoreNs.Error): Anon_Error = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[Anon_Error]
+  }
+}
+

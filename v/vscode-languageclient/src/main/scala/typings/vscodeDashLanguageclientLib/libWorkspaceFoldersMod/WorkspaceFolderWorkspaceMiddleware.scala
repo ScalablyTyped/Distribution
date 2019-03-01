@@ -17,3 +17,19 @@ trait WorkspaceFolderWorkspaceMiddleware extends js.Object {
   ] = js.undefined
 }
 
+object WorkspaceFolderWorkspaceMiddleware {
+  @scala.inline
+  def apply(
+    didChangeWorkspaceFolders: vscodeDashLanguageclientLib.libClientMod.NextSignature[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify VWorkspaceFoldersChangeEvent */ _, 
+      scala.Unit
+    ] = null,
+    workspaceFolders: vscodeDashLanguageserverDashProtocolLib.libProtocolDotWorkspaceFoldersMod.WorkspaceFoldersRequestNs.MiddlewareSignature = null
+  ): WorkspaceFolderWorkspaceMiddleware = {
+    val __obj = js.Dynamic.literal()
+    if (didChangeWorkspaceFolders != null) __obj.updateDynamic("didChangeWorkspaceFolders")(didChangeWorkspaceFolders)
+    if (workspaceFolders != null) __obj.updateDynamic("workspaceFolders")(workspaceFolders)
+    __obj.asInstanceOf[WorkspaceFolderWorkspaceMiddleware]
+  }
+}
+

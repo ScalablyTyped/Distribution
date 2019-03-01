@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("typedoc/dist/lib/models", "UnionType")
 @js.native
 class UnionType protected ()
-  extends typedocLib.distLibModelsTypesMod.UnionType {
+  extends typedocLib.distLibModelsTypesMod.UnionType
+     with typedocLib.distLibSerializationSerializersTypesIntersectionDashUnionMod.IntersectionUnion {
   def this(types: js.Array[typedocLib.distLibModelsTypesAbstractMod.Type]) = this()
 }
 

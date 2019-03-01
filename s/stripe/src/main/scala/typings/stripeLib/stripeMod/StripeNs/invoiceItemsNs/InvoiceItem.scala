@@ -46,3 +46,43 @@ trait InvoiceItem
   var subscription: java.lang.String | stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription
 }
 
+object InvoiceItem {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    customer: java.lang.String,
+    date: scala.Double,
+    description: java.lang.String,
+    discountable: scala.Boolean,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.invoiceitem,
+    period: stripeLib.stripeMod.StripeNs.invoicesNs.IPeriod,
+    plan: stripeLib.stripeMod.StripeNs.plansNs.IPlan,
+    proration: scala.Boolean,
+    quantity: scala.Double,
+    subscription: java.lang.String | stripeLib.stripeMod.StripeNs.subscriptionsNs.ISubscription,
+    invoice: java.lang.String = null
+  ): InvoiceItem = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("customer")(customer)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("discountable")(discountable)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("period")(period)
+    __obj.updateDynamic("plan")(plan)
+    __obj.updateDynamic("proration")(proration)
+    __obj.updateDynamic("quantity")(quantity)
+    __obj.updateDynamic("subscription")(subscription.asInstanceOf[js.Any])
+    if (invoice != null) __obj.updateDynamic("invoice")(invoice)
+    __obj.asInstanceOf[InvoiceItem]
+  }
+}
+

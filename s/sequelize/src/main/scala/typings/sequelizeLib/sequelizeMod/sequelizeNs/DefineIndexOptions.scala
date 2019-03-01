@@ -34,3 +34,24 @@ trait DefineIndexOptions extends js.Object {
   var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 
+object DefineIndexOptions {
+  @scala.inline
+  def apply(
+    indexName: java.lang.String = null,
+    indexType: java.lang.String = null,
+    indicesType: sequelizeLib.sequelizeLibStrings.UNIQUE | sequelizeLib.sequelizeLibStrings.FULLTEXT | sequelizeLib.sequelizeLibStrings.SPATIAL = null,
+    logging: js.Function = null,
+    parser: java.lang.String = null,
+    where: AnyWhereOptions = null
+  ): DefineIndexOptions = {
+    val __obj = js.Dynamic.literal()
+    if (indexName != null) __obj.updateDynamic("indexName")(indexName)
+    if (indexType != null) __obj.updateDynamic("indexType")(indexType)
+    if (indicesType != null) __obj.updateDynamic("indicesType")(indicesType.asInstanceOf[js.Any])
+    if (logging != null) __obj.updateDynamic("logging")(logging)
+    if (parser != null) __obj.updateDynamic("parser")(parser)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[DefineIndexOptions]
+  }
+}
+

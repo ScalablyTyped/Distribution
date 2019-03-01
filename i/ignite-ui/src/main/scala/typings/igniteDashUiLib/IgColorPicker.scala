@@ -31,3 +31,23 @@ trait IgColorPicker
   var standardColors: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object IgColorPicker {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igColorPicker
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    colorSelected: ColorSelectedEvent = null,
+    colors: java.lang.String = null,
+    standardColors: js.Array[_] = null
+  ): IgColorPicker = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (colorSelected != null) __obj.updateDynamic("colorSelected")(colorSelected)
+    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (standardColors != null) __obj.updateDynamic("standardColors")(standardColors)
+    __obj.asInstanceOf[IgColorPicker]
+  }
+}
+

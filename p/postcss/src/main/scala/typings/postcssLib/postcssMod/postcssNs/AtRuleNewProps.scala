@@ -19,3 +19,20 @@ trait AtRuleNewProps extends ContainerNewProps {
   var raws_AtRuleNewProps: js.UndefOr[AtRuleRaws] = js.undefined
 }
 
+object AtRuleNewProps {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    nodes: js.Array[Node] = null,
+    params: java.lang.String | scala.Double = null,
+    raws: AtRuleRaws = null
+  ): AtRuleNewProps = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (params != null) __obj.updateDynamic("params")(params.asInstanceOf[js.Any])
+    if (raws != null) __obj.updateDynamic("raws")(raws)
+    __obj.asInstanceOf[AtRuleNewProps]
+  }
+}
+

@@ -40,3 +40,32 @@ trait CustomValidationContext extends js.Object {
   def siblingField(): js.Any
 }
 
+object CustomValidationContext {
+  @scala.inline
+  def apply(
+    addValidationErrors: js.Function1[SimpleSchemaValidationError, js.Any],
+    definition: SchemaDefinition,
+    field: js.Function0[js.Any],
+    genericKey: java.lang.String,
+    isSet: scala.Boolean,
+    key: java.lang.String,
+    operator: js.Any,
+    siblingField: js.Function0[js.Any],
+    validationContext: ValidationContext,
+    value: js.Any
+  ): CustomValidationContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addValidationErrors")(addValidationErrors)
+    __obj.updateDynamic("definition")(definition)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("genericKey")(genericKey)
+    __obj.updateDynamic("isSet")(isSet)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("operator")(operator)
+    __obj.updateDynamic("siblingField")(siblingField)
+    __obj.updateDynamic("validationContext")(validationContext)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CustomValidationContext]
+  }
+}
+

@@ -52,3 +52,28 @@ trait SetBindingDataOptions extends js.Object {
   var tableOptions: js.UndefOr[js.Object] = js.undefined
 }
 
+object SetBindingDataOptions {
+  @scala.inline
+  def apply(
+    asyncContext: js.Any = null,
+    cellFormat: js.Array[RangeFormatConfiguration] = null,
+    coercionType: CoercionType | java.lang.String = null,
+    columns: js.Array[java.lang.String] = null,
+    rows: java.lang.String = null,
+    startColumn: scala.Int | scala.Double = null,
+    startRow: scala.Int | scala.Double = null,
+    tableOptions: js.Object = null
+  ): SetBindingDataOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (cellFormat != null) __obj.updateDynamic("cellFormat")(cellFormat)
+    if (coercionType != null) __obj.updateDynamic("coercionType")(coercionType.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (startColumn != null) __obj.updateDynamic("startColumn")(startColumn.asInstanceOf[js.Any])
+    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (tableOptions != null) __obj.updateDynamic("tableOptions")(tableOptions)
+    __obj.asInstanceOf[SetBindingDataOptions]
+  }
+}
+

@@ -13,3 +13,12 @@ trait fn extends js.Object {
   var clone_Ffn: fnStatic
 }
 
+object fn {
+  @scala.inline
+  def apply(clone: fnStatic): fn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clone")(clone)
+    __obj.asInstanceOf[fn]
+  }
+}
+

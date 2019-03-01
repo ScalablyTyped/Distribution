@@ -15,3 +15,26 @@ trait Anon_Enabled extends js.Object {
   var width: scala.Double
 }
 
+object Anon_Enabled {
+  @scala.inline
+  def apply(
+    enabled: scala.Boolean,
+    fullHeight: scala.Double,
+    fullWidth: scala.Double,
+    height: scala.Double,
+    offsetX: scala.Double,
+    offsetY: scala.Double,
+    width: scala.Double
+  ): Anon_Enabled = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("fullHeight")(fullHeight)
+    __obj.updateDynamic("fullWidth")(fullWidth)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("offsetX")(offsetX)
+    __obj.updateDynamic("offsetY")(offsetY)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Anon_Enabled]
+  }
+}
+

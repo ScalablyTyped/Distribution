@@ -30,3 +30,28 @@ trait Template extends js.Object {
   var published: scala.Boolean
 }
 
+object Template {
+  @scala.inline
+  def apply(
+    content: TemplateContent | sparkpostLib.Anon_Emailrfc822,
+    description: java.lang.String,
+    id: java.lang.String,
+    last_update_time: java.lang.String,
+    name: java.lang.String,
+    options: TemplateOptions,
+    published: scala.Boolean,
+    last_use: java.lang.String = null
+  ): Template = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("last_update_time")(last_update_time)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("published")(published)
+    if (last_use != null) __obj.updateDynamic("last_use")(last_use)
+    __obj.asInstanceOf[Template]
+  }
+}
+

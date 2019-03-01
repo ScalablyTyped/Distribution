@@ -33,3 +33,24 @@ trait MountOptions extends js.Object {
   var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MountOptions {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    fileSystemId: java.lang.String,
+    openedFilesLimit: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    persistent: js.UndefOr[scala.Boolean] = js.undefined,
+    supportsNotifyTag: js.UndefOr[scala.Boolean] = js.undefined,
+    writable: js.UndefOr[scala.Boolean] = js.undefined
+  ): MountOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    if (!js.isUndefined(openedFilesLimit)) __obj.updateDynamic("openedFilesLimit")(openedFilesLimit)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    if (!js.isUndefined(supportsNotifyTag)) __obj.updateDynamic("supportsNotifyTag")(supportsNotifyTag)
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    __obj.asInstanceOf[MountOptions]
+  }
+}
+

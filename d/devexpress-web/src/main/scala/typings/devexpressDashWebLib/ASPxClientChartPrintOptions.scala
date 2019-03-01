@@ -110,3 +110,56 @@ trait ASPxClientChartPrintOptions extends js.Object {
   def SetSizeMode(sizeMode: java.lang.String): scala.Unit
 }
 
+object ASPxClientChartPrintOptions {
+  @scala.inline
+  def apply(
+    GetCustomPaperHeight: js.Function0[scala.Double],
+    GetCustomPaperName: js.Function0[java.lang.String],
+    GetCustomPaperWidth: js.Function0[scala.Double],
+    GetLandscape: js.Function0[scala.Boolean],
+    GetMarginBottom: js.Function0[scala.Double],
+    GetMarginLeft: js.Function0[scala.Double],
+    GetMarginRight: js.Function0[scala.Double],
+    GetMarginTop: js.Function0[scala.Double],
+    GetPaperKind: js.Function0[java.lang.String],
+    GetPrintCrosshair: js.Function0[scala.Boolean],
+    GetSizeMode: js.Function0[java.lang.String],
+    SetCustomPaperHeight: js.Function1[scala.Double, scala.Unit],
+    SetCustomPaperName: js.Function1[java.lang.String, scala.Unit],
+    SetCustomPaperWidth: js.Function1[scala.Double, scala.Unit],
+    SetLandscape: js.Function1[scala.Boolean, scala.Unit],
+    SetMarginBottom: js.Function1[scala.Double, scala.Unit],
+    SetMarginLeft: js.Function1[scala.Double, scala.Unit],
+    SetMarginRight: js.Function1[scala.Double, scala.Unit],
+    SetMarginTop: js.Function1[scala.Double, scala.Unit],
+    SetPaperKind: js.Function1[java.lang.String, scala.Unit],
+    SetPrintCrosshair: js.Function1[scala.Boolean, scala.Unit],
+    SetSizeMode: js.Function1[java.lang.String, scala.Unit]
+  ): ASPxClientChartPrintOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetCustomPaperHeight")(GetCustomPaperHeight)
+    __obj.updateDynamic("GetCustomPaperName")(GetCustomPaperName)
+    __obj.updateDynamic("GetCustomPaperWidth")(GetCustomPaperWidth)
+    __obj.updateDynamic("GetLandscape")(GetLandscape)
+    __obj.updateDynamic("GetMarginBottom")(GetMarginBottom)
+    __obj.updateDynamic("GetMarginLeft")(GetMarginLeft)
+    __obj.updateDynamic("GetMarginRight")(GetMarginRight)
+    __obj.updateDynamic("GetMarginTop")(GetMarginTop)
+    __obj.updateDynamic("GetPaperKind")(GetPaperKind)
+    __obj.updateDynamic("GetPrintCrosshair")(GetPrintCrosshair)
+    __obj.updateDynamic("GetSizeMode")(GetSizeMode)
+    __obj.updateDynamic("SetCustomPaperHeight")(SetCustomPaperHeight)
+    __obj.updateDynamic("SetCustomPaperName")(SetCustomPaperName)
+    __obj.updateDynamic("SetCustomPaperWidth")(SetCustomPaperWidth)
+    __obj.updateDynamic("SetLandscape")(SetLandscape)
+    __obj.updateDynamic("SetMarginBottom")(SetMarginBottom)
+    __obj.updateDynamic("SetMarginLeft")(SetMarginLeft)
+    __obj.updateDynamic("SetMarginRight")(SetMarginRight)
+    __obj.updateDynamic("SetMarginTop")(SetMarginTop)
+    __obj.updateDynamic("SetPaperKind")(SetPaperKind)
+    __obj.updateDynamic("SetPrintCrosshair")(SetPrintCrosshair)
+    __obj.updateDynamic("SetSizeMode")(SetSizeMode)
+    __obj.asInstanceOf[ASPxClientChartPrintOptions]
+  }
+}
+

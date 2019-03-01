@@ -28,3 +28,22 @@ trait WindowEventMap extends js.Object {
   var keyboardWillShow: stdLib.Event
 }
 
+object WindowEventMap {
+  @scala.inline
+  def apply(
+    keyboardDidHide: stdLib.Event,
+    keyboardDidShow: stdLib.Event,
+    keyboardHeightWillChange: CordovaKeyboardEvent,
+    keyboardWillHide: stdLib.Event,
+    keyboardWillShow: stdLib.Event
+  ): WindowEventMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyboardDidHide")(keyboardDidHide)
+    __obj.updateDynamic("keyboardDidShow")(keyboardDidShow)
+    __obj.updateDynamic("keyboardHeightWillChange")(keyboardHeightWillChange)
+    __obj.updateDynamic("keyboardWillHide")(keyboardWillHide)
+    __obj.updateDynamic("keyboardWillShow")(keyboardWillShow)
+    __obj.asInstanceOf[WindowEventMap]
+  }
+}
+

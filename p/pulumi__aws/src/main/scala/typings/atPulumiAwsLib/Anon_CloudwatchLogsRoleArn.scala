@@ -10,3 +10,13 @@ trait Anon_CloudwatchLogsRoleArn extends js.Object {
   var fieldLogLevel: java.lang.String
 }
 
+object Anon_CloudwatchLogsRoleArn {
+  @scala.inline
+  def apply(cloudwatchLogsRoleArn: java.lang.String, fieldLogLevel: java.lang.String): Anon_CloudwatchLogsRoleArn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cloudwatchLogsRoleArn")(cloudwatchLogsRoleArn)
+    __obj.updateDynamic("fieldLogLevel")(fieldLogLevel)
+    __obj.asInstanceOf[Anon_CloudwatchLogsRoleArn]
+  }
+}
+

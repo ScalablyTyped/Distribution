@@ -24,3 +24,20 @@ trait ClusterArgs extends js.Object {
   val vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcId]
 }
 
+object ClusterArgs {
+  @scala.inline
+  def apply(
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcId],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    version: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ClusterArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterArgs]
+  }
+}
+

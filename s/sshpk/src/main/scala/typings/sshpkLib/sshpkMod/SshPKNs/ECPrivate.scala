@@ -9,3 +9,12 @@ trait ECPrivate extends js.Object {
   def deriveSharedSecret(pk: Key): nodeLib.Buffer
 }
 
+object ECPrivate {
+  @scala.inline
+  def apply(deriveSharedSecret: js.Function1[Key, nodeLib.Buffer]): ECPrivate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deriveSharedSecret")(deriveSharedSecret)
+    __obj.asInstanceOf[ECPrivate]
+  }
+}
+

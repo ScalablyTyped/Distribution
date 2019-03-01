@@ -19,3 +19,13 @@ trait QueryTarget extends js.Object {
   var structuredQuery: js.UndefOr[StructuredQuery] = js.undefined
 }
 
+object QueryTarget {
+  @scala.inline
+  def apply(parent: java.lang.String = null, structuredQuery: StructuredQuery = null): QueryTarget = {
+    val __obj = js.Dynamic.literal()
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (structuredQuery != null) __obj.updateDynamic("structuredQuery")(structuredQuery)
+    __obj.asInstanceOf[QueryTarget]
+  }
+}
+

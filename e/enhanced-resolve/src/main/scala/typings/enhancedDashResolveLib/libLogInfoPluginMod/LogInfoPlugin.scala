@@ -11,3 +11,16 @@ trait LogInfoPlugin extends js.Object {
   def apply(resolver: enhancedDashResolveLib.libResolverMod.namespaced): scala.Unit
 }
 
+object LogInfoPlugin {
+  @scala.inline
+  def apply(
+    apply: js.Function1[enhancedDashResolveLib.libResolverMod.namespaced, scala.Unit],
+    source: java.lang.String
+  ): LogInfoPlugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apply")(apply)
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[LogInfoPlugin]
+  }
+}
+

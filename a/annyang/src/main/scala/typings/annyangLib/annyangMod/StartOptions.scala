@@ -16,3 +16,16 @@ trait StartOptions extends js.Object {
   var continuous: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StartOptions {
+  @scala.inline
+  def apply(
+    autoRestart: js.UndefOr[scala.Boolean] = js.undefined,
+    continuous: js.UndefOr[scala.Boolean] = js.undefined
+  ): StartOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoRestart)) __obj.updateDynamic("autoRestart")(autoRestart)
+    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous)
+    __obj.asInstanceOf[StartOptions]
+  }
+}
+

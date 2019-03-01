@@ -12,3 +12,20 @@ trait Anon_Charsets extends js.Object {
   var mediaTypes: js.Array[java.lang.String]
 }
 
+object Anon_Charsets {
+  @scala.inline
+  def apply(
+    charsets: js.Array[java.lang.String],
+    encodings: js.Array[java.lang.String],
+    languages: js.Array[java.lang.String],
+    mediaTypes: js.Array[java.lang.String]
+  ): Anon_Charsets = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("charsets")(charsets)
+    __obj.updateDynamic("encodings")(encodings)
+    __obj.updateDynamic("languages")(languages)
+    __obj.updateDynamic("mediaTypes")(mediaTypes)
+    __obj.asInstanceOf[Anon_Charsets]
+  }
+}
+

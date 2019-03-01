@@ -189,3 +189,72 @@ trait JQueryJqGridOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object JQueryJqGridOptions {
+  @scala.inline
+  def apply(
+    autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    autoencode: js.UndefOr[scala.Boolean] = js.undefined,
+    caption: java.lang.String = null,
+    colModel: js.Array[JQueryJqGridColumn] = null,
+    colNames: js.Array[java.lang.String] = null,
+    data: js.Array[_] = null,
+    datatype: jqgridLib.jqgridLibStrings.xml | jqgridLib.jqgridLibStrings.xmlstring | jqgridLib.jqgridLibStrings.json | jqgridLib.jqgridLibStrings.jsonstring | jqgridLib.jqgridLibStrings.local | jqgridLib.jqgridLibStrings.javascript | js.Function | jqgridLib.jqgridLibStrings.clientSide = null,
+    forceFit: js.UndefOr[scala.Boolean] = js.undefined,
+    gridComplete: js.Function0[scala.Unit] = null,
+    gridview: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Double | java.lang.String | jqgridLib.jqgridLibStrings.auto = null,
+    jsonReader: IJqGridJsonReader = null,
+    loadonce: js.UndefOr[scala.Boolean] = js.undefined,
+    mtype: jqgridLib.jqgridLibStrings.GET | jqgridLib.jqgridLibStrings.POST = null,
+    multiboxonly: js.UndefOr[scala.Boolean] = js.undefined,
+    multiselect: js.UndefOr[scala.Boolean] = js.undefined,
+    onRightClickRow: js.Function4[
+      /* rowid */ js.Any, 
+      /* iRow */ scala.Double, 
+      /* iCol */ scala.Double, 
+      /* e */ stdLib.Event, 
+      scala.Unit
+    ] = null,
+    onSelectRow: js.Function3[/* id */ java.lang.String, /* status */ js.Any, /* e */ stdLib.Event, scala.Unit] = null,
+    pager: java.lang.String = null,
+    rowList: js.Array[scala.Double] = null,
+    rowNum: scala.Int | scala.Double = null,
+    shrinkToFit: scala.Boolean | scala.Double = null,
+    sortname: java.lang.String = null,
+    sortorder: jqgridLib.jqgridLibStrings.asc | jqgridLib.jqgridLibStrings.desc = null,
+    url: java.lang.String | jqgridLib.jqgridLibStrings.clientArray = null,
+    viewrecords: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): JQueryJqGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
+    if (!js.isUndefined(autoencode)) __obj.updateDynamic("autoencode")(autoencode)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (colModel != null) __obj.updateDynamic("colModel")(colModel)
+    if (colNames != null) __obj.updateDynamic("colNames")(colNames)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (datatype != null) __obj.updateDynamic("datatype")(datatype.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFit)) __obj.updateDynamic("forceFit")(forceFit)
+    if (gridComplete != null) __obj.updateDynamic("gridComplete")(gridComplete)
+    if (!js.isUndefined(gridview)) __obj.updateDynamic("gridview")(gridview)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (jsonReader != null) __obj.updateDynamic("jsonReader")(jsonReader)
+    if (!js.isUndefined(loadonce)) __obj.updateDynamic("loadonce")(loadonce)
+    if (mtype != null) __obj.updateDynamic("mtype")(mtype.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiboxonly)) __obj.updateDynamic("multiboxonly")(multiboxonly)
+    if (!js.isUndefined(multiselect)) __obj.updateDynamic("multiselect")(multiselect)
+    if (onRightClickRow != null) __obj.updateDynamic("onRightClickRow")(onRightClickRow)
+    if (onSelectRow != null) __obj.updateDynamic("onSelectRow")(onSelectRow)
+    if (pager != null) __obj.updateDynamic("pager")(pager)
+    if (rowList != null) __obj.updateDynamic("rowList")(rowList)
+    if (rowNum != null) __obj.updateDynamic("rowNum")(rowNum.asInstanceOf[js.Any])
+    if (shrinkToFit != null) __obj.updateDynamic("shrinkToFit")(shrinkToFit.asInstanceOf[js.Any])
+    if (sortname != null) __obj.updateDynamic("sortname")(sortname)
+    if (sortorder != null) __obj.updateDynamic("sortorder")(sortorder.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(viewrecords)) __obj.updateDynamic("viewrecords")(viewrecords)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQueryJqGridOptions]
+  }
+}
+

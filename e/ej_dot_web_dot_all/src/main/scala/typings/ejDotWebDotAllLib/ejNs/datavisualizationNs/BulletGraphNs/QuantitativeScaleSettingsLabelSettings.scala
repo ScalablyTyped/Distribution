@@ -39,3 +39,28 @@ trait QuantitativeScaleSettingsLabelSettings extends js.Object {
   var stroke: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QuantitativeScaleSettingsLabelSettings {
+  @scala.inline
+  def apply(
+    font: QuantitativeScaleSettingsLabelSettingsFont = null,
+    labelPlacement: LabelPlacement | java.lang.String = null,
+    labelPrefix: java.lang.String = null,
+    labelSuffix: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
+    position: LabelPosition | java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    stroke: java.lang.String = null
+  ): QuantitativeScaleSettingsLabelSettings = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
+    if (labelPrefix != null) __obj.updateDynamic("labelPrefix")(labelPrefix)
+    if (labelSuffix != null) __obj.updateDynamic("labelSuffix")(labelSuffix)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    __obj.asInstanceOf[QuantitativeScaleSettingsLabelSettings]
+  }
+}
+

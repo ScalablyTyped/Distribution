@@ -14,3 +14,14 @@ trait DynamicLinkEventStat extends js.Object {
   var platform: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DynamicLinkEventStat {
+  @scala.inline
+  def apply(count: java.lang.String = null, event: java.lang.String = null, platform: java.lang.String = null): DynamicLinkEventStat = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    __obj.asInstanceOf[DynamicLinkEventStat]
+  }
+}
+

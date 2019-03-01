@@ -13,3 +13,12 @@ trait BaseOptions extends js.Object {
   var ignoreCase: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BaseOptions {
+  @scala.inline
+  def apply(ignoreCase: js.UndefOr[scala.Boolean] = js.undefined): BaseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    __obj.asInstanceOf[BaseOptions]
+  }
+}
+

@@ -12,3 +12,20 @@ trait ListChannelsResult extends js.Object {
   var res: NormalSuccessResponse
 }
 
+object ListChannelsResult {
+  @scala.inline
+  def apply(
+    channels: js.Array[Channel],
+    isTruncated: scala.Boolean,
+    res: NormalSuccessResponse,
+    nextMarker: java.lang.String = null
+  ): ListChannelsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channels")(channels)
+    __obj.updateDynamic("isTruncated")(isTruncated)
+    __obj.updateDynamic("res")(res)
+    if (nextMarker != null) __obj.updateDynamic("nextMarker")(nextMarker)
+    __obj.asInstanceOf[ListChannelsResult]
+  }
+}
+

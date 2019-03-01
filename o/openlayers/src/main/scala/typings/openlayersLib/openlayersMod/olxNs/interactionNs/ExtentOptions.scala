@@ -17,3 +17,22 @@ trait ExtentOptions extends js.Object {
   var wrapX: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ExtentOptions {
+  @scala.inline
+  def apply(
+    boxStyle: openlayersLib.openlayersMod.styleNs.Style | js.Array[openlayersLib.openlayersMod.styleNs.Style] | openlayersLib.openlayersMod.StyleFunction = null,
+    extent: openlayersLib.openlayersMod.Extent = null,
+    pixelTolerance: scala.Int | scala.Double = null,
+    pointerStyle: openlayersLib.openlayersMod.styleNs.Style | js.Array[openlayersLib.openlayersMod.styleNs.Style] | openlayersLib.openlayersMod.StyleFunction = null,
+    wrapX: js.UndefOr[scala.Boolean] = js.undefined
+  ): ExtentOptions = {
+    val __obj = js.Dynamic.literal()
+    if (boxStyle != null) __obj.updateDynamic("boxStyle")(boxStyle.asInstanceOf[js.Any])
+    if (extent != null) __obj.updateDynamic("extent")(extent)
+    if (pixelTolerance != null) __obj.updateDynamic("pixelTolerance")(pixelTolerance.asInstanceOf[js.Any])
+    if (pointerStyle != null) __obj.updateDynamic("pointerStyle")(pointerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapX)) __obj.updateDynamic("wrapX")(wrapX)
+    __obj.asInstanceOf[ExtentOptions]
+  }
+}
+

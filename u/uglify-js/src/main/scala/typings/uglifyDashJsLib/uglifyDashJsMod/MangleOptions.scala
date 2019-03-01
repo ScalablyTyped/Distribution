@@ -17,3 +17,22 @@ trait MangleOptions extends js.Object {
   var toplevel: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MangleOptions {
+  @scala.inline
+  def apply(
+    eval: js.UndefOr[scala.Boolean] = js.undefined,
+    keep_fnames: js.UndefOr[scala.Boolean] = js.undefined,
+    properties: scala.Boolean | ManglePropertiesOptions = null,
+    reserved: js.Array[java.lang.String] = null,
+    toplevel: js.UndefOr[scala.Boolean] = js.undefined
+  ): MangleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(eval)) __obj.updateDynamic("eval")(eval)
+    if (!js.isUndefined(keep_fnames)) __obj.updateDynamic("keep_fnames")(keep_fnames)
+    if (properties != null) __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (reserved != null) __obj.updateDynamic("reserved")(reserved)
+    if (!js.isUndefined(toplevel)) __obj.updateDynamic("toplevel")(toplevel)
+    __obj.asInstanceOf[MangleOptions]
+  }
+}
+

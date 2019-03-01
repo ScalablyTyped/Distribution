@@ -12,3 +12,20 @@ trait Anon_DownDegrees extends js.Object {
   var upDegrees: scala.Double
 }
 
+object Anon_DownDegrees {
+  @scala.inline
+  def apply(
+    downDegrees: scala.Double,
+    leftDegrees: scala.Double,
+    rightDegrees: scala.Double,
+    upDegrees: scala.Double
+  ): Anon_DownDegrees = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("downDegrees")(downDegrees)
+    __obj.updateDynamic("leftDegrees")(leftDegrees)
+    __obj.updateDynamic("rightDegrees")(rightDegrees)
+    __obj.updateDynamic("upDegrees")(upDegrees)
+    __obj.asInstanceOf[Anon_DownDegrees]
+  }
+}
+

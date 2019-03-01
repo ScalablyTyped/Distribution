@@ -18,3 +18,22 @@ trait OrderPromotionBenefit extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OrderPromotionBenefit {
+  @scala.inline
+  def apply(
+    discount: Price = null,
+    offerIds: js.Array[java.lang.String] = null,
+    subType: java.lang.String = null,
+    taxImpact: Price = null,
+    `type`: java.lang.String = null
+  ): OrderPromotionBenefit = {
+    val __obj = js.Dynamic.literal()
+    if (discount != null) __obj.updateDynamic("discount")(discount)
+    if (offerIds != null) __obj.updateDynamic("offerIds")(offerIds)
+    if (subType != null) __obj.updateDynamic("subType")(subType)
+    if (taxImpact != null) __obj.updateDynamic("taxImpact")(taxImpact)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[OrderPromotionBenefit]
+  }
+}
+

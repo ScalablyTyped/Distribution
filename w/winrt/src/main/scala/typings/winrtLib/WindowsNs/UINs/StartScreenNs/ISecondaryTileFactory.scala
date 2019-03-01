@@ -26,3 +26,35 @@ trait ISecondaryTileFactory extends js.Object {
   def createWithId(tileId: java.lang.String): SecondaryTile
 }
 
+object ISecondaryTileFactory {
+  @scala.inline
+  def apply(
+    createTile: js.Function6[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      TileOptions, 
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      SecondaryTile
+    ],
+    createWideTile: js.Function7[
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      java.lang.String, 
+      TileOptions, 
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      winrtLib.WindowsNs.FoundationNs.Uri, 
+      SecondaryTile
+    ],
+    createWithId: js.Function1[java.lang.String, SecondaryTile]
+  ): ISecondaryTileFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createTile")(createTile)
+    __obj.updateDynamic("createWideTile")(createWideTile)
+    __obj.updateDynamic("createWithId")(createWithId)
+    __obj.asInstanceOf[ISecondaryTileFactory]
+  }
+}
+

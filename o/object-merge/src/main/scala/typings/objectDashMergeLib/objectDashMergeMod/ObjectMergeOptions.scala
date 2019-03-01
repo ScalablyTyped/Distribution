@@ -10,3 +10,13 @@ trait ObjectMergeOptions extends js.Object {
   var throwOnCircularRef: scala.Boolean
 }
 
+object ObjectMergeOptions {
+  @scala.inline
+  def apply(depth: scala.Double | scala.Boolean, throwOnCircularRef: scala.Boolean): ObjectMergeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    __obj.updateDynamic("throwOnCircularRef")(throwOnCircularRef)
+    __obj.asInstanceOf[ObjectMergeOptions]
+  }
+}
+

@@ -12,3 +12,16 @@ trait ForwardingRulesScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object ForwardingRulesScopedList {
+  @scala.inline
+  def apply(
+    forwardingRules: js.Array[ForwardingRule] = null,
+    warning: gapiDotClientDotComputeLib.Anon_Code = null
+  ): ForwardingRulesScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (forwardingRules != null) __obj.updateDynamic("forwardingRules")(forwardingRules)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[ForwardingRulesScopedList]
+  }
+}
+

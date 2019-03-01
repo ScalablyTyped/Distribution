@@ -9,3 +9,12 @@ trait JQueryStatic extends js.Object {
   var ig: IgniteUIStatic
 }
 
+object JQueryStatic {
+  @scala.inline
+  def apply(ig: IgniteUIStatic): JQueryStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ig")(ig)
+    __obj.asInstanceOf[JQueryStatic]
+  }
+}
+

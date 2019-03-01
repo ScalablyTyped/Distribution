@@ -14,3 +14,18 @@ trait Anon_AspectRatio extends js.Object {
   var minWidth: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AspectRatio {
+  @scala.inline
+  def apply(
+    aspectRatio: java.lang.String = null,
+    minHeight: java.lang.String = null,
+    minWidth: java.lang.String = null
+  ): Anon_AspectRatio = {
+    val __obj = js.Dynamic.literal()
+    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio)
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight)
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth)
+    __obj.asInstanceOf[Anon_AspectRatio]
+  }
+}
+

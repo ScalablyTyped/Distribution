@@ -11,3 +11,14 @@ trait Anon_FADE extends js.Object {
   var SLIDE: java.lang.String
 }
 
+object Anon_FADE {
+  @scala.inline
+  def apply(FADE: java.lang.String, SCALE: java.lang.String, SLIDE: java.lang.String): Anon_FADE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FADE")(FADE)
+    __obj.updateDynamic("SCALE")(SCALE)
+    __obj.updateDynamic("SLIDE")(SLIDE)
+    __obj.asInstanceOf[Anon_FADE]
+  }
+}
+

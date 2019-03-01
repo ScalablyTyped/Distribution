@@ -10,3 +10,13 @@ trait AppSelection extends js.Object {
   var userPrompted: UserPrompted
 }
 
+object AppSelection {
+  @scala.inline
+  def apply(userChoice: UserChoice, userPrompted: UserPrompted): AppSelection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("userChoice")(userChoice)
+    __obj.updateDynamic("userPrompted")(userPrompted)
+    __obj.asInstanceOf[AppSelection]
+  }
+}
+

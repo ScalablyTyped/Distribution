@@ -28,3 +28,18 @@ trait ICookieStoreService extends js.Object {
   def remove(key: java.lang.String): scala.Unit
 }
 
+object ICookieStoreService {
+  @scala.inline
+  def apply(
+    get: js.Function1[java.lang.String, js.Any],
+    put: js.Function2[java.lang.String, js.Any, scala.Unit],
+    remove: js.Function1[java.lang.String, scala.Unit]
+  ): ICookieStoreService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("put")(put)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[ICookieStoreService]
+  }
+}
+

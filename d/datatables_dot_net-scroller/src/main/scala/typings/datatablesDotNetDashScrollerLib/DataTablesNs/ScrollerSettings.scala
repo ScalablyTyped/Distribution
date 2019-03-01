@@ -38,3 +38,24 @@ trait ScrollerSettings extends js.Object {
   var trace: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ScrollerSettings {
+  @scala.inline
+  def apply(
+    boundaryScale: scala.Int | scala.Double = null,
+    displayBuffer: scala.Int | scala.Double = null,
+    loadingIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    rowHeight: scala.Double | java.lang.String = null,
+    serverWait: scala.Int | scala.Double = null,
+    trace: js.UndefOr[scala.Boolean] = js.undefined
+  ): ScrollerSettings = {
+    val __obj = js.Dynamic.literal()
+    if (boundaryScale != null) __obj.updateDynamic("boundaryScale")(boundaryScale.asInstanceOf[js.Any])
+    if (displayBuffer != null) __obj.updateDynamic("displayBuffer")(displayBuffer.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadingIndicator)) __obj.updateDynamic("loadingIndicator")(loadingIndicator)
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (serverWait != null) __obj.updateDynamic("serverWait")(serverWait.asInstanceOf[js.Any])
+    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace)
+    __obj.asInstanceOf[ScrollerSettings]
+  }
+}
+

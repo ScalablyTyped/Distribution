@@ -11,3 +11,13 @@ trait ThemeProviderProps[T /* <: js.Object */, U /* <: js.Object */] extends js.
   var theme: T | (js.Function1[/* theme */ U, T])
 }
 
+object ThemeProviderProps {
+  @scala.inline
+  def apply[T /* <: js.Object */, U /* <: js.Object */](theme: T | (js.Function1[/* theme */ U, T]), children: reactLib.reactMod.ReactNs.ReactChild = null): ThemeProviderProps[T, U] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThemeProviderProps[T, U]]
+  }
+}
+

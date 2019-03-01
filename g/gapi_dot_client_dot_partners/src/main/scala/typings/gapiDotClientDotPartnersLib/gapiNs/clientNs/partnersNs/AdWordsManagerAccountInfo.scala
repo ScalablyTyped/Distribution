@@ -12,3 +12,13 @@ trait AdWordsManagerAccountInfo extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AdWordsManagerAccountInfo {
+  @scala.inline
+  def apply(customerName: java.lang.String = null, id: java.lang.String = null): AdWordsManagerAccountInfo = {
+    val __obj = js.Dynamic.literal()
+    if (customerName != null) __obj.updateDynamic("customerName")(customerName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[AdWordsManagerAccountInfo]
+  }
+}
+

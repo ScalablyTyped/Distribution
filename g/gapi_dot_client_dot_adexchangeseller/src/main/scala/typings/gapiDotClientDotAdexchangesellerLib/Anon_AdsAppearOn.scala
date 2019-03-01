@@ -20,3 +20,20 @@ trait Anon_AdsAppearOn extends js.Object {
   var siteLanguage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AdsAppearOn {
+  @scala.inline
+  def apply(
+    adsAppearOn: java.lang.String = null,
+    description: java.lang.String = null,
+    location: java.lang.String = null,
+    siteLanguage: java.lang.String = null
+  ): Anon_AdsAppearOn = {
+    val __obj = js.Dynamic.literal()
+    if (adsAppearOn != null) __obj.updateDynamic("adsAppearOn")(adsAppearOn)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (siteLanguage != null) __obj.updateDynamic("siteLanguage")(siteLanguage)
+    __obj.asInstanceOf[Anon_AdsAppearOn]
+  }
+}
+

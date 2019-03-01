@@ -155,3 +155,66 @@ trait SliderOptions extends js.Object {
   var value: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
 }
 
+object SliderOptions {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: js.UndefOr[scala.Boolean] = js.undefined,
+    formatter: js.Function1[/* val */ scala.Double, java.lang.String] = null,
+    handle: java.lang.String = null,
+    id: java.lang.String = null,
+    labelledby: java.lang.String | js.Array[java.lang.String] = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    natural_arrow_keys: js.UndefOr[scala.Boolean] = js.undefined,
+    orientation: java.lang.String = null,
+    precision: scala.Int | scala.Double = null,
+    range: js.UndefOr[scala.Boolean] = js.undefined,
+    rangeHighlights: js.Array[RangeHighlight] = null,
+    reversed: js.UndefOr[scala.Boolean] = js.undefined,
+    rtl: scala.Boolean | bootstrapDashSliderLib.bootstrapDashSliderLibStrings.auto = null,
+    scale: bootstrapDashSliderLib.bootstrapDashSliderLibStrings.linear | bootstrapDashSliderLib.bootstrapDashSliderLibStrings.logarithmic = null,
+    selection: java.lang.String = null,
+    step: scala.Int | scala.Double = null,
+    ticks: js.Array[scala.Double] = null,
+    ticks_labels: js.Array[java.lang.String] = null,
+    ticks_positions: js.Array[scala.Double] = null,
+    ticks_snap_bounds: scala.Int | scala.Double = null,
+    ticks_tooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltip: java.lang.String = null,
+    tooltip_position: bootstrapDashSliderLib.bootstrapDashSliderLibStrings.top | bootstrapDashSliderLib.bootstrapDashSliderLibStrings.bottom | bootstrapDashSliderLib.bootstrapDashSliderLibStrings.left | bootstrapDashSliderLib.bootstrapDashSliderLibStrings.right = null,
+    tooltip_split: js.UndefOr[scala.Boolean] = js.undefined,
+    value: scala.Double | js.Array[scala.Double] = null
+  ): SliderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (labelledby != null) __obj.updateDynamic("labelledby")(labelledby.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(natural_arrow_keys)) __obj.updateDynamic("natural_arrow_keys")(natural_arrow_keys)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(range)) __obj.updateDynamic("range")(range)
+    if (rangeHighlights != null) __obj.updateDynamic("rangeHighlights")(rangeHighlights)
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (rtl != null) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (selection != null) __obj.updateDynamic("selection")(selection)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (ticks_labels != null) __obj.updateDynamic("ticks_labels")(ticks_labels)
+    if (ticks_positions != null) __obj.updateDynamic("ticks_positions")(ticks_positions)
+    if (ticks_snap_bounds != null) __obj.updateDynamic("ticks_snap_bounds")(ticks_snap_bounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticks_tooltip)) __obj.updateDynamic("ticks_tooltip")(ticks_tooltip)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltip_position != null) __obj.updateDynamic("tooltip_position")(tooltip_position.asInstanceOf[js.Any])
+    if (!js.isUndefined(tooltip_split)) __obj.updateDynamic("tooltip_split")(tooltip_split)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SliderOptions]
+  }
+}
+

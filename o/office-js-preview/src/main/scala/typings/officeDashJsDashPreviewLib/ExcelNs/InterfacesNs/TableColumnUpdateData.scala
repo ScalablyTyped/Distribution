@@ -23,3 +23,13 @@ trait TableColumnUpdateData extends js.Object {
   var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
 }
 
+object TableColumnUpdateData {
+  @scala.inline
+  def apply(name: java.lang.String = null, values: js.Array[js.Array[_]] = null): TableColumnUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[TableColumnUpdateData]
+  }
+}
+

@@ -24,3 +24,28 @@ trait Playlist extends js.Object {
   var status: js.UndefOr[PlaylistStatus] = js.undefined
 }
 
+object Playlist {
+  @scala.inline
+  def apply(
+    contentDetails: PlaylistContentDetails = null,
+    etag: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    localizations: stdLib.Record[java.lang.String, PlaylistLocalization] = null,
+    player: PlaylistPlayer = null,
+    snippet: PlaylistSnippet = null,
+    status: PlaylistStatus = null
+  ): Playlist = {
+    val __obj = js.Dynamic.literal()
+    if (contentDetails != null) __obj.updateDynamic("contentDetails")(contentDetails)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (localizations != null) __obj.updateDynamic("localizations")(localizations)
+    if (player != null) __obj.updateDynamic("player")(player)
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Playlist]
+  }
+}
+

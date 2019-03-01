@@ -53,3 +53,28 @@ trait ClientCultures extends js.Object {
   var supportedCultures: js.Array[java.lang.String]
 }
 
+object ClientCultures {
+  @scala.inline
+  def apply(
+    DA_DK: java.lang.String,
+    DE_DE: java.lang.String,
+    EN_US: java.lang.String,
+    FR_FR: java.lang.String,
+    NL_NL: java.lang.String,
+    SV_SE: java.lang.String,
+    ZH_CN: java.lang.String,
+    supportedCultures: js.Array[java.lang.String]
+  ): ClientCultures = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DA_DK")(DA_DK)
+    __obj.updateDynamic("DE_DE")(DE_DE)
+    __obj.updateDynamic("EN_US")(EN_US)
+    __obj.updateDynamic("FR_FR")(FR_FR)
+    __obj.updateDynamic("NL_NL")(NL_NL)
+    __obj.updateDynamic("SV_SE")(SV_SE)
+    __obj.updateDynamic("ZH_CN")(ZH_CN)
+    __obj.updateDynamic("supportedCultures")(supportedCultures)
+    __obj.asInstanceOf[ClientCultures]
+  }
+}
+

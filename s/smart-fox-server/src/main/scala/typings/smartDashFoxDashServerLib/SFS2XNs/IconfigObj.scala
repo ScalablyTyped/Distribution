@@ -18,3 +18,22 @@ trait IconfigObj extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IconfigObj {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    host: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    useSSL: js.UndefOr[scala.Boolean] = js.undefined,
+    zone: java.lang.String = null
+  ): IconfigObj = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(useSSL)) __obj.updateDynamic("useSSL")(useSSL)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[IconfigObj]
+  }
+}
+

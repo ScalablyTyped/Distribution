@@ -12,3 +12,20 @@ trait DivOverlayOptions extends js.Object {
   var zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DivOverlayOptions {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    offset: PointExpression = null,
+    pane: java.lang.String = null,
+    zoomAnimation: js.UndefOr[scala.Boolean] = js.undefined
+  ): DivOverlayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (pane != null) __obj.updateDynamic("pane")(pane)
+    if (!js.isUndefined(zoomAnimation)) __obj.updateDynamic("zoomAnimation")(zoomAnimation)
+    __obj.asInstanceOf[DivOverlayOptions]
+  }
+}
+

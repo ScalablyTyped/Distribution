@@ -135,3 +135,80 @@ trait Column extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Column {
+  @scala.inline
+  def apply(
+    allowCellSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFilteringBlankContent: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFreezing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    angularTemplate: java.lang.String = null,
+    clipMode: ClipMode | java.lang.String = null,
+    commands: js.Array[ColumnsCommand] = null,
+    displayAsCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    dropdownData: java.lang.String = null,
+    editParams: js.Any = null,
+    editTemplate: js.Any = null,
+    editType: EditingType | java.lang.String = null,
+    field: java.lang.String = null,
+    filterEditType: EditingType | java.lang.String = null,
+    filterType: FilterType | java.lang.String = null,
+    format: js.Any = null,
+    headerTemplateID: java.lang.String = null,
+    headerText: java.lang.String = null,
+    headerTextAlign: ejDotWebDotAllLib.ejNs.TextAlign | java.lang.String = null,
+    headerTooltip: java.lang.String = null,
+    isFrozen: js.UndefOr[scala.Boolean] = js.undefined,
+    isTemplateColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    priority: scala.Int | scala.Double = null,
+    showCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    showInColumnChooser: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    templateID: java.lang.String = null,
+    textAlign: ejDotWebDotAllLib.ejNs.TextAlign | java.lang.String = null,
+    tooltip: java.lang.String = null,
+    validationRules: js.Any = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): Column = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowCellSelection)) __obj.updateDynamic("allowCellSelection")(allowCellSelection)
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering)
+    if (!js.isUndefined(allowFilteringBlankContent)) __obj.updateDynamic("allowFilteringBlankContent")(allowFilteringBlankContent)
+    if (!js.isUndefined(allowFreezing)) __obj.updateDynamic("allowFreezing")(allowFreezing)
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
+    if (angularTemplate != null) __obj.updateDynamic("angularTemplate")(angularTemplate)
+    if (clipMode != null) __obj.updateDynamic("clipMode")(clipMode.asInstanceOf[js.Any])
+    if (commands != null) __obj.updateDynamic("commands")(commands)
+    if (!js.isUndefined(displayAsCheckbox)) __obj.updateDynamic("displayAsCheckbox")(displayAsCheckbox)
+    if (dropdownData != null) __obj.updateDynamic("dropdownData")(dropdownData)
+    if (editParams != null) __obj.updateDynamic("editParams")(editParams)
+    if (editTemplate != null) __obj.updateDynamic("editTemplate")(editTemplate)
+    if (editType != null) __obj.updateDynamic("editType")(editType.asInstanceOf[js.Any])
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (filterEditType != null) __obj.updateDynamic("filterEditType")(filterEditType.asInstanceOf[js.Any])
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (headerTemplateID != null) __obj.updateDynamic("headerTemplateID")(headerTemplateID)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (headerTextAlign != null) __obj.updateDynamic("headerTextAlign")(headerTextAlign.asInstanceOf[js.Any])
+    if (headerTooltip != null) __obj.updateDynamic("headerTooltip")(headerTooltip)
+    if (!js.isUndefined(isFrozen)) __obj.updateDynamic("isFrozen")(isFrozen)
+    if (!js.isUndefined(isTemplateColumn)) __obj.updateDynamic("isTemplateColumn")(isTemplateColumn)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)
+    if (!js.isUndefined(showInColumnChooser)) __obj.updateDynamic("showInColumnChooser")(showInColumnChooser)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateID != null) __obj.updateDynamic("templateID")(templateID)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Column]
+  }
+}
+

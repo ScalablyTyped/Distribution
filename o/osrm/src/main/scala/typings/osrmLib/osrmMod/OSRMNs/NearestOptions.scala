@@ -19,3 +19,24 @@ trait NearestOptions extends Options {
   var number: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NearestOptions {
+  @scala.inline
+  def apply(
+    bearings: js.Array[Bearing] = null,
+    coordinates: js.Array[Coordinate] = null,
+    generate_hints: js.UndefOr[scala.Boolean] = js.undefined,
+    hints: js.Array[Hint] = null,
+    number: scala.Int | scala.Double = null,
+    radiuses: js.Array[Radius] = null
+  ): NearestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
+    if (hints != null) __obj.updateDynamic("hints")(hints)
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
+    __obj.asInstanceOf[NearestOptions]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_1Channels extends js.Object {
   def rgb(keyword: colorDashConvertLib.conversionsMod.KEYWORD): colorDashConvertLib.conversionsMod.RGB
 }
 
+object Anon_1Channels {
+  @scala.inline
+  def apply(
+    channels: colorDashConvertLib.colorDashConvertLibNumbers.`1`,
+    labels: js.Array[colorDashConvertLib.colorDashConvertLibStrings.keyword],
+    rgb: js.Function1[colorDashConvertLib.conversionsMod.KEYWORD, colorDashConvertLib.conversionsMod.RGB]
+  ): Anon_1Channels = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channels")(channels)
+    __obj.updateDynamic("labels")(labels)
+    __obj.updateDynamic("rgb")(rgb)
+    __obj.asInstanceOf[Anon_1Channels]
+  }
+}
+

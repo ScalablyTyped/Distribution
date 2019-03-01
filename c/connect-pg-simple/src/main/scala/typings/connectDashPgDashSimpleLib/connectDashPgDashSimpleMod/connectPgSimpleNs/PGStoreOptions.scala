@@ -21,3 +21,30 @@ trait PGStoreOptions extends js.Object {
   var ttl: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PGStoreOptions {
+  @scala.inline
+  def apply(
+    conObject: pgLib.pgMod.PoolConfig = null,
+    conString: java.lang.String = null,
+    errorLog: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    pgPromise: js.Object = null,
+    pool: pgLib.pgMod.Pool = null,
+    pruneSessionInterval: connectDashPgDashSimpleLib.connectDashPgDashSimpleLibNumbers.`false` | scala.Double = null,
+    schemaName: java.lang.String = null,
+    tableName: java.lang.String = null,
+    ttl: scala.Int | scala.Double = null
+  ): PGStoreOptions = {
+    val __obj = js.Dynamic.literal()
+    if (conObject != null) __obj.updateDynamic("conObject")(conObject)
+    if (conString != null) __obj.updateDynamic("conString")(conString)
+    if (errorLog != null) __obj.updateDynamic("errorLog")(errorLog)
+    if (pgPromise != null) __obj.updateDynamic("pgPromise")(pgPromise)
+    if (pool != null) __obj.updateDynamic("pool")(pool)
+    if (pruneSessionInterval != null) __obj.updateDynamic("pruneSessionInterval")(pruneSessionInterval.asInstanceOf[js.Any])
+    if (schemaName != null) __obj.updateDynamic("schemaName")(schemaName)
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PGStoreOptions]
+  }
+}
+

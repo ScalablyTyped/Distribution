@@ -9,3 +9,12 @@ trait Anon_NewGroup extends js.Object {
   val NewGroup: activexDashOutlookLib.OutlookNs.OutlookBarGroup
 }
 
+object Anon_NewGroup {
+  @scala.inline
+  def apply(NewGroup: activexDashOutlookLib.OutlookNs.OutlookBarGroup): Anon_NewGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NewGroup")(NewGroup)
+    __obj.asInstanceOf[Anon_NewGroup]
+  }
+}
+

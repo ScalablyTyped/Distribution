@@ -10,3 +10,13 @@ trait ServeCLIOptions extends js.Object {
   val port: scala.Double
 }
 
+object ServeCLIOptions {
+  @scala.inline
+  def apply(address: java.lang.String, port: scala.Double): ServeCLIOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("port")(port)
+    __obj.asInstanceOf[ServeCLIOptions]
+  }
+}
+

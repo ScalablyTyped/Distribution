@@ -11,3 +11,14 @@ trait SchedulerMessagesRecurrenceEditorWeekdays extends js.Object {
   var weekend: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SchedulerMessagesRecurrenceEditorWeekdays {
+  @scala.inline
+  def apply(day: java.lang.String = null, weekday: java.lang.String = null, weekend: java.lang.String = null): SchedulerMessagesRecurrenceEditorWeekdays = {
+    val __obj = js.Dynamic.literal()
+    if (day != null) __obj.updateDynamic("day")(day)
+    if (weekday != null) __obj.updateDynamic("weekday")(weekday)
+    if (weekend != null) __obj.updateDynamic("weekend")(weekend)
+    __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorWeekdays]
+  }
+}
+

@@ -15,3 +15,13 @@ trait GqlQueryParameter extends js.Object {
   var value: js.UndefOr[Value] = js.undefined
 }
 
+object GqlQueryParameter {
+  @scala.inline
+  def apply(cursor: java.lang.String = null, value: Value = null): GqlQueryParameter = {
+    val __obj = js.Dynamic.literal()
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[GqlQueryParameter]
+  }
+}
+

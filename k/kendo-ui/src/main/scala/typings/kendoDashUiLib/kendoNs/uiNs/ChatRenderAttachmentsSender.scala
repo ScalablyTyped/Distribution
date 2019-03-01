@@ -11,3 +11,14 @@ trait ChatRenderAttachmentsSender extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChatRenderAttachmentsSender {
+  @scala.inline
+  def apply(iconUrl: java.lang.String = null, id: js.Any = null, name: java.lang.String = null): ChatRenderAttachmentsSender = {
+    val __obj = js.Dynamic.literal()
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ChatRenderAttachmentsSender]
+  }
+}
+

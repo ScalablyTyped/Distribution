@@ -32,3 +32,24 @@ trait ServerArgs extends js.Object {
   val url: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ServerArgs {
+  @scala.inline
+  def apply(
+    forceDestroy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    identityProviderType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    invocationRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    loggingRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    url: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ServerArgs = {
+    val __obj = js.Dynamic.literal()
+    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
+    if (identityProviderType != null) __obj.updateDynamic("identityProviderType")(identityProviderType.asInstanceOf[js.Any])
+    if (invocationRole != null) __obj.updateDynamic("invocationRole")(invocationRole.asInstanceOf[js.Any])
+    if (loggingRole != null) __obj.updateDynamic("loggingRole")(loggingRole.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerArgs]
+  }
+}
+

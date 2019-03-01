@@ -16,3 +16,13 @@ trait VideoOptions extends js.Object {
   var limit: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VideoOptions {
+  @scala.inline
+  def apply(duration: scala.Int | scala.Double = null, limit: scala.Int | scala.Double = null): VideoOptions = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoOptions]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_ForegroundColor extends js.Object {
   var paragraphStyle: Anon_AllowsDefaultTighteningForTruncation
 }
 
+object Anon_ForegroundColor {
+  @scala.inline
+  def apply(
+    MSAttributedStringFontAttribute: Anon_Attributes,
+    foregroundColor: SketchMSKeyValueArchive,
+    paragraphStyle: Anon_AllowsDefaultTighteningForTruncation
+  ): Anon_ForegroundColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MSAttributedStringFontAttribute")(MSAttributedStringFontAttribute)
+    __obj.updateDynamic("foregroundColor")(foregroundColor)
+    __obj.updateDynamic("paragraphStyle")(paragraphStyle)
+    __obj.asInstanceOf[Anon_ForegroundColor]
+  }
+}
+

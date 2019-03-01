@@ -12,3 +12,20 @@ trait Props extends js.Object {
   var transition: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    isOpen: scala.Boolean,
+    className: java.lang.String = null,
+    onRest: js.Function0[scala.Unit] = null,
+    transition: java.lang.String = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isOpen")(isOpen)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (onRest != null) __obj.updateDynamic("onRest")(onRest)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    __obj.asInstanceOf[Props]
+  }
+}
+

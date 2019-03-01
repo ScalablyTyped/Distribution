@@ -28,3 +28,22 @@ trait GraphTraversal extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object GraphTraversal {
+  @scala.inline
+  def apply(
+    graphId: java.lang.String,
+    description: Message = null,
+    edgeTraversals: js.Array[EdgeTraversal] = null,
+    initialState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    properties: PropertyBag = null
+  ): GraphTraversal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("graphId")(graphId)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (edgeTraversals != null) __obj.updateDynamic("edgeTraversals")(edgeTraversals)
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[GraphTraversal]
+  }
+}
+

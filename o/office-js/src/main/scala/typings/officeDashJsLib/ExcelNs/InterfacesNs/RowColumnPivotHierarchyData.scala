@@ -37,3 +37,20 @@ trait RowColumnPivotHierarchyData extends js.Object {
   var position: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RowColumnPivotHierarchyData {
+  @scala.inline
+  def apply(
+    fields: js.Array[PivotFieldData] = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    position: scala.Int | scala.Double = null
+  ): RowColumnPivotHierarchyData = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RowColumnPivotHierarchyData]
+  }
+}
+

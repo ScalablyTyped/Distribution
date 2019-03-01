@@ -10,3 +10,22 @@ trait InlineCountSettings extends ISettings {
   var InlineCount: java.lang.String
 }
 
+object InlineCountSettings {
+  @scala.inline
+  def apply(
+    DefaultInlineCount: java.lang.String,
+    InlineCount: java.lang.String,
+    isSet: js.Function0[scala.Boolean],
+    reset: js.Function0[scala.Unit],
+    toString: js.Function0[java.lang.String]
+  ): InlineCountSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DefaultInlineCount")(DefaultInlineCount)
+    __obj.updateDynamic("InlineCount")(InlineCount)
+    __obj.updateDynamic("isSet")(isSet)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[InlineCountSettings]
+  }
+}
+

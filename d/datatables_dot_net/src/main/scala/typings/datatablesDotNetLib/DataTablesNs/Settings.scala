@@ -246,3 +246,124 @@ trait Settings extends js.Object {
   var tabIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    ajax: java.lang.String | AjaxSettings | FunctionAjax = null,
+    autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    columnDefs: js.Array[ColumnDefsSettings] = null,
+    columns: js.Array[ColumnSettings] = null,
+    createdRow: FunctionCreateRow = null,
+    data: js.Array[_] = null,
+    deferLoading: scala.Double | js.Array[scala.Double] = null,
+    deferRender: js.UndefOr[scala.Boolean] = js.undefined,
+    destroy: js.UndefOr[scala.Boolean] = js.undefined,
+    displayStart: scala.Int | scala.Double = null,
+    dom: java.lang.String = null,
+    drawCallback: FunctionDrawCallback = null,
+    footerCallback: FunctionFooterCallback = null,
+    formatNumber: FunctionFormatNumber = null,
+    headerCallback: FunctionHeaderCallback = null,
+    info: js.UndefOr[scala.Boolean] = js.undefined,
+    infoCallback: FunctionInfoCallback = null,
+    initComplete: FunctionInitComplete = null,
+    jQueryUI: js.UndefOr[scala.Boolean] = js.undefined,
+    language: LanguageSettings = null,
+    lengthChange: js.UndefOr[scala.Boolean] = js.undefined,
+    lengthMenu: (js.Array[scala.Double | java.lang.String]) | (js.Array[js.Array[scala.Double | java.lang.String]]) = null,
+    order: (js.Array[scala.Double | java.lang.String]) | (js.Array[js.Array[scala.Double | java.lang.String]]) = null,
+    orderCellsTop: js.UndefOr[scala.Boolean] = js.undefined,
+    orderClasses: js.UndefOr[scala.Boolean] = js.undefined,
+    orderFixed: (js.Array[scala.Double | java.lang.String]) | (js.Array[js.Array[scala.Double | java.lang.String]]) | js.Object = null,
+    orderMulti: js.UndefOr[scala.Boolean] = js.undefined,
+    ordering: js.UndefOr[scala.Boolean] = js.undefined,
+    pageLength: scala.Int | scala.Double = null,
+    paging: js.UndefOr[scala.Boolean] = js.undefined,
+    pagingType: java.lang.String = null,
+    preDrawCallback: FunctionPreDrawCallback = null,
+    processing: js.UndefOr[scala.Boolean] = js.undefined,
+    renderer: java.lang.String | RendererSettings = null,
+    responsive: scala.Boolean | js.Object = null,
+    retrieve: js.UndefOr[scala.Boolean] = js.undefined,
+    rowCallback: FunctionRowCallback = null,
+    rowId: java.lang.String = null,
+    scrollCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollX: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollY: java.lang.String = null,
+    search: SearchSettings | scala.Boolean = null,
+    searchCols: js.Array[SearchSettings] = null,
+    searchDelay: scala.Int | scala.Double = null,
+    searchPlaceholder: SearchSettings = null,
+    searching: js.UndefOr[scala.Boolean] = js.undefined,
+    serverSide: js.UndefOr[scala.Boolean] = js.undefined,
+    stateDuration: scala.Int | scala.Double = null,
+    stateLoadCallback: FunctionStateLoadCallback = null,
+    stateLoadParams: FunctionStateLoadParams = null,
+    stateLoaded: FunctionStateLoaded = null,
+    stateSave: js.UndefOr[scala.Boolean] = js.undefined,
+    stateSaveCallback: FunctionStateSaveCallback = null,
+    stateSaveParams: FunctionStateSaveParams = null,
+    stripeClasses: js.Array[java.lang.String] = null,
+    tabIndex: scala.Int | scala.Double = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (ajax != null) __obj.updateDynamic("ajax")(ajax.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
+    if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (createdRow != null) __obj.updateDynamic("createdRow")(createdRow)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (deferLoading != null) __obj.updateDynamic("deferLoading")(deferLoading.asInstanceOf[js.Any])
+    if (!js.isUndefined(deferRender)) __obj.updateDynamic("deferRender")(deferRender)
+    if (!js.isUndefined(destroy)) __obj.updateDynamic("destroy")(destroy)
+    if (displayStart != null) __obj.updateDynamic("displayStart")(displayStart.asInstanceOf[js.Any])
+    if (dom != null) __obj.updateDynamic("dom")(dom)
+    if (drawCallback != null) __obj.updateDynamic("drawCallback")(drawCallback)
+    if (footerCallback != null) __obj.updateDynamic("footerCallback")(footerCallback)
+    if (formatNumber != null) __obj.updateDynamic("formatNumber")(formatNumber)
+    if (headerCallback != null) __obj.updateDynamic("headerCallback")(headerCallback)
+    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info)
+    if (infoCallback != null) __obj.updateDynamic("infoCallback")(infoCallback)
+    if (initComplete != null) __obj.updateDynamic("initComplete")(initComplete)
+    if (!js.isUndefined(jQueryUI)) __obj.updateDynamic("jQueryUI")(jQueryUI)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (!js.isUndefined(lengthChange)) __obj.updateDynamic("lengthChange")(lengthChange)
+    if (lengthMenu != null) __obj.updateDynamic("lengthMenu")(lengthMenu.asInstanceOf[js.Any])
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderCellsTop)) __obj.updateDynamic("orderCellsTop")(orderCellsTop)
+    if (!js.isUndefined(orderClasses)) __obj.updateDynamic("orderClasses")(orderClasses)
+    if (orderFixed != null) __obj.updateDynamic("orderFixed")(orderFixed.asInstanceOf[js.Any])
+    if (!js.isUndefined(orderMulti)) __obj.updateDynamic("orderMulti")(orderMulti)
+    if (!js.isUndefined(ordering)) __obj.updateDynamic("ordering")(ordering)
+    if (pageLength != null) __obj.updateDynamic("pageLength")(pageLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(paging)) __obj.updateDynamic("paging")(paging)
+    if (pagingType != null) __obj.updateDynamic("pagingType")(pagingType)
+    if (preDrawCallback != null) __obj.updateDynamic("preDrawCallback")(preDrawCallback)
+    if (!js.isUndefined(processing)) __obj.updateDynamic("processing")(processing)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer.asInstanceOf[js.Any])
+    if (responsive != null) __obj.updateDynamic("responsive")(responsive.asInstanceOf[js.Any])
+    if (!js.isUndefined(retrieve)) __obj.updateDynamic("retrieve")(retrieve)
+    if (rowCallback != null) __obj.updateDynamic("rowCallback")(rowCallback)
+    if (rowId != null) __obj.updateDynamic("rowId")(rowId)
+    if (!js.isUndefined(scrollCollapse)) __obj.updateDynamic("scrollCollapse")(scrollCollapse)
+    if (!js.isUndefined(scrollX)) __obj.updateDynamic("scrollX")(scrollX)
+    if (scrollY != null) __obj.updateDynamic("scrollY")(scrollY)
+    if (search != null) __obj.updateDynamic("search")(search.asInstanceOf[js.Any])
+    if (searchCols != null) __obj.updateDynamic("searchCols")(searchCols)
+    if (searchDelay != null) __obj.updateDynamic("searchDelay")(searchDelay.asInstanceOf[js.Any])
+    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
+    if (!js.isUndefined(searching)) __obj.updateDynamic("searching")(searching)
+    if (!js.isUndefined(serverSide)) __obj.updateDynamic("serverSide")(serverSide)
+    if (stateDuration != null) __obj.updateDynamic("stateDuration")(stateDuration.asInstanceOf[js.Any])
+    if (stateLoadCallback != null) __obj.updateDynamic("stateLoadCallback")(stateLoadCallback)
+    if (stateLoadParams != null) __obj.updateDynamic("stateLoadParams")(stateLoadParams)
+    if (stateLoaded != null) __obj.updateDynamic("stateLoaded")(stateLoaded)
+    if (!js.isUndefined(stateSave)) __obj.updateDynamic("stateSave")(stateSave)
+    if (stateSaveCallback != null) __obj.updateDynamic("stateSaveCallback")(stateSaveCallback)
+    if (stateSaveParams != null) __obj.updateDynamic("stateSaveParams")(stateSaveParams)
+    if (stripeClasses != null) __obj.updateDynamic("stripeClasses")(stripeClasses)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Settings]
+  }
+}
+

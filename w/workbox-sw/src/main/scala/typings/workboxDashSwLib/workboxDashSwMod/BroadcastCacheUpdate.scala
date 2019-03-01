@@ -26,3 +26,14 @@ trait BroadcastCacheUpdate extends js.Object {
   ): scala.Unit
 }
 
+object BroadcastCacheUpdate {
+  @scala.inline
+  def apply(
+    notifyIfUpdated: js.Function4[stdLib.Response, stdLib.Response, java.lang.String, java.lang.String, scala.Unit]
+  ): BroadcastCacheUpdate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("notifyIfUpdated")(notifyIfUpdated)
+    __obj.asInstanceOf[BroadcastCacheUpdate]
+  }
+}
+

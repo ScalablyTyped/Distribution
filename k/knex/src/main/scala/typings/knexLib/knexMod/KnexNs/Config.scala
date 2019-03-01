@@ -33,3 +33,45 @@ trait Config extends js.Object {
   ] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    acquireConnectionTimeout: scala.Int | scala.Double = null,
+    asyncStackTraces: js.UndefOr[scala.Boolean] = js.undefined,
+    client: java.lang.String | (org.scalablytyped.runtime.Instantiable1[/* config */ Config, Client]) = null,
+    connection: java.lang.String | ConnectionConfig | MariaSqlConnectionConfig | MySqlConnectionConfig | MsSqlConnectionConfig | Sqlite3ConnectionConfig | SocketConnectionConfig = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    dialect: java.lang.String = null,
+    migrations: MigratorConfig = null,
+    pool: PoolConfig = null,
+    postProcessResponse: js.Function2[/* result */ js.Any, /* queryContext */ js.Any, _] = null,
+    searchPath: java.lang.String | js.Array[java.lang.String] = null,
+    seeds: SeedsConfig = null,
+    useNullAsDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    version: java.lang.String = null,
+    wrapIdentifier: js.Function3[
+      /* value */ java.lang.String, 
+      /* origImpl */ js.Function1[/* value */ java.lang.String, java.lang.String], 
+      /* queryContext */ js.Any, 
+      java.lang.String
+    ] = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (acquireConnectionTimeout != null) __obj.updateDynamic("acquireConnectionTimeout")(acquireConnectionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(asyncStackTraces)) __obj.updateDynamic("asyncStackTraces")(asyncStackTraces)
+    if (client != null) __obj.updateDynamic("client")(client.asInstanceOf[js.Any])
+    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (dialect != null) __obj.updateDynamic("dialect")(dialect)
+    if (migrations != null) __obj.updateDynamic("migrations")(migrations)
+    if (pool != null) __obj.updateDynamic("pool")(pool)
+    if (postProcessResponse != null) __obj.updateDynamic("postProcessResponse")(postProcessResponse)
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
+    if (seeds != null) __obj.updateDynamic("seeds")(seeds)
+    if (!js.isUndefined(useNullAsDefault)) __obj.updateDynamic("useNullAsDefault")(useNullAsDefault)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (wrapIdentifier != null) __obj.updateDynamic("wrapIdentifier")(wrapIdentifier)
+    __obj.asInstanceOf[Config]
+  }
+}
+

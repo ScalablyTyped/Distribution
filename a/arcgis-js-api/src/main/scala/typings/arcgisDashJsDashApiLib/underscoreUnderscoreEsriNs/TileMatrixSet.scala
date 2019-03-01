@@ -1,0 +1,31 @@
+package typings
+package arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@js.native
+trait TileMatrixSet
+  extends Accessor
+     with JSONSupport {
+  /**
+    * The full extent of the TileMatrixSet.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html#fullExtent)
+    */
+  var fullExtent: Extent = js.native
+  /**
+    * The unique ID assigned to the TileMatrixSet.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html#id)
+    */
+  var id: java.lang.String = js.native
+  /**
+    * The tiling scheme information for the layer.
+    *
+    * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html#tileInfo)
+    */
+  var tileInfo: TileInfo = js.native
+}
+

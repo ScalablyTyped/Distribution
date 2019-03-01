@@ -13,3 +13,22 @@ trait ILockerSettings extends js.Object {
   var separator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ILockerSettings {
+  @scala.inline
+  def apply(
+    driver: java.lang.String = null,
+    eventsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    extend: js.Object = null,
+    namespace: java.lang.String | scala.Boolean = null,
+    separator: java.lang.String = null
+  ): ILockerSettings = {
+    val __obj = js.Dynamic.literal()
+    if (driver != null) __obj.updateDynamic("driver")(driver)
+    if (!js.isUndefined(eventsEnabled)) __obj.updateDynamic("eventsEnabled")(eventsEnabled)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    __obj.asInstanceOf[ILockerSettings]
+  }
+}
+

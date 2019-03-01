@@ -20,3 +20,18 @@ trait ReceiptFilterArgs extends js.Object {
   val policy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object ReceiptFilterArgs {
+  @scala.inline
+  def apply(
+    cidr: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ReceiptFilterArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cidr")(cidr.asInstanceOf[js.Any])
+    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReceiptFilterArgs]
+  }
+}
+

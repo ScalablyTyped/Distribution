@@ -18,3 +18,17 @@ trait AnimationReferenceMetadata extends AnimationMetadata {
   var options: AnimationOptions | scala.Null
 }
 
+object AnimationReferenceMetadata {
+  @scala.inline
+  def apply(
+    animation: AnimationMetadata | js.Array[AnimationMetadata],
+    `type`: AnimationMetadataType,
+    options: AnimationOptions = null
+  ): AnimationReferenceMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[AnimationReferenceMetadata]
+  }
+}
+

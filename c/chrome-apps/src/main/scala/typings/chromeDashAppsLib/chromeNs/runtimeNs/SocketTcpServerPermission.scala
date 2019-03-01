@@ -13,3 +13,12 @@ trait SocketTcpServerPermission extends js.Object {
   var listen: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object SocketTcpServerPermission {
+  @scala.inline
+  def apply(listen: java.lang.String | js.Array[java.lang.String] = null): SocketTcpServerPermission = {
+    val __obj = js.Dynamic.literal()
+    if (listen != null) __obj.updateDynamic("listen")(listen.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SocketTcpServerPermission]
+  }
+}
+

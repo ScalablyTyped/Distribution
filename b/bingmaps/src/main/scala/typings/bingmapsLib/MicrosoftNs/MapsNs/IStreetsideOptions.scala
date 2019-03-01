@@ -37,3 +37,36 @@ trait IStreetsideOptions extends js.Object {
   var showZoomButtons: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IStreetsideOptions {
+  @scala.inline
+  def apply(
+    disablePanoramaNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    locationToLookAt: Location = null,
+    onErrorLoading: js.Function0[scala.Unit] = null,
+    onSuccessLoading: js.Function0[scala.Unit] = null,
+    overviewMapMode: OverviewMapMode = null,
+    panoramaInfo: IPanoramaInfo = null,
+    panoramaLookupRadius: scala.Int | scala.Double = null,
+    showCurrentAddress: js.UndefOr[scala.Boolean] = js.undefined,
+    showExitButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeadingCompass: js.UndefOr[scala.Boolean] = js.undefined,
+    showProblemReporting: js.UndefOr[scala.Boolean] = js.undefined,
+    showZoomButtons: js.UndefOr[scala.Boolean] = js.undefined
+  ): IStreetsideOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disablePanoramaNavigation)) __obj.updateDynamic("disablePanoramaNavigation")(disablePanoramaNavigation)
+    if (locationToLookAt != null) __obj.updateDynamic("locationToLookAt")(locationToLookAt)
+    if (onErrorLoading != null) __obj.updateDynamic("onErrorLoading")(onErrorLoading)
+    if (onSuccessLoading != null) __obj.updateDynamic("onSuccessLoading")(onSuccessLoading)
+    if (overviewMapMode != null) __obj.updateDynamic("overviewMapMode")(overviewMapMode)
+    if (panoramaInfo != null) __obj.updateDynamic("panoramaInfo")(panoramaInfo)
+    if (panoramaLookupRadius != null) __obj.updateDynamic("panoramaLookupRadius")(panoramaLookupRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCurrentAddress)) __obj.updateDynamic("showCurrentAddress")(showCurrentAddress)
+    if (!js.isUndefined(showExitButton)) __obj.updateDynamic("showExitButton")(showExitButton)
+    if (!js.isUndefined(showHeadingCompass)) __obj.updateDynamic("showHeadingCompass")(showHeadingCompass)
+    if (!js.isUndefined(showProblemReporting)) __obj.updateDynamic("showProblemReporting")(showProblemReporting)
+    if (!js.isUndefined(showZoomButtons)) __obj.updateDynamic("showZoomButtons")(showZoomButtons)
+    __obj.asInstanceOf[IStreetsideOptions]
+  }
+}
+

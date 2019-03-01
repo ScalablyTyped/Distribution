@@ -20,3 +20,18 @@ trait VpcLinkState extends js.Object {
   val targetArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object VpcLinkState {
+  @scala.inline
+  def apply(
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targetArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): VpcLinkState = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (targetArn != null) __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcLinkState]
+  }
+}
+

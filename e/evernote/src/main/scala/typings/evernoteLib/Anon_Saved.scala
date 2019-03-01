@@ -12,3 +12,20 @@ trait Anon_Saved extends js.Object {
   var updated: scala.Double
 }
 
+object Anon_Saved {
+  @scala.inline
+  def apply(
+    saved: scala.Double,
+    title: java.lang.String,
+    updateSequenceNum: scala.Double,
+    updated: scala.Double
+  ): Anon_Saved = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("saved")(saved)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("updateSequenceNum")(updateSequenceNum)
+    __obj.updateDynamic("updated")(updated)
+    __obj.asInstanceOf[Anon_Saved]
+  }
+}
+

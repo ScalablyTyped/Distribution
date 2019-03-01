@@ -24,3 +24,20 @@ trait SheetsChart extends js.Object {
   var spreadsheetId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SheetsChart {
+  @scala.inline
+  def apply(
+    chartId: scala.Int | scala.Double = null,
+    contentUrl: java.lang.String = null,
+    sheetsChartProperties: SheetsChartProperties = null,
+    spreadsheetId: java.lang.String = null
+  ): SheetsChart = {
+    val __obj = js.Dynamic.literal()
+    if (chartId != null) __obj.updateDynamic("chartId")(chartId.asInstanceOf[js.Any])
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    if (sheetsChartProperties != null) __obj.updateDynamic("sheetsChartProperties")(sheetsChartProperties)
+    if (spreadsheetId != null) __obj.updateDynamic("spreadsheetId")(spreadsheetId)
+    __obj.asInstanceOf[SheetsChart]
+  }
+}
+

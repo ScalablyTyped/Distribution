@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object atUirouterCoreLibStrings {
   @js.native
-  sealed trait EAGER extends js.Object
+  sealed trait EAGER
+    extends atUirouterCoreLib.libResolveInterfaceMod.PolicyWhen
   
   @js.native
-  sealed trait LAZY extends js.Object
+  sealed trait LAZY
+    extends atUirouterCoreLib.libResolveInterfaceMod.PolicyWhen
   
   @js.native
-  sealed trait NOWAIT extends js.Object
+  sealed trait NOWAIT
+    extends atUirouterCoreLib.libResolveInterfaceMod.PolicyAsync
   
   @js.native
-  sealed trait OTHER extends js.Object
+  sealed trait OTHER
+    extends atUirouterCoreLib.libUrlInterfaceMod.UrlRuleType
   
   @js.native
-  sealed trait RAW extends js.Object
+  sealed trait RAW
+    extends atUirouterCoreLib.libUrlInterfaceMod.UrlRuleType
   
   @js.native
-  sealed trait REGEXP extends js.Object
+  sealed trait REGEXP
+    extends atUirouterCoreLib.libUrlInterfaceMod.UrlRuleType
   
   @js.native
-  sealed trait RXWAIT extends js.Object
+  sealed trait RXWAIT
+    extends atUirouterCoreLib.libResolveInterfaceMod.PolicyAsync
   
   @js.native
-  sealed trait STATE extends js.Object
+  sealed trait STATE
+    extends atUirouterCoreLib.libUrlInterfaceMod.UrlRuleType
   
   @js.native
   sealed trait SameAsCurrent extends js.Object
@@ -37,10 +45,12 @@ object atUirouterCoreLibStrings {
   sealed trait SameAsPending extends js.Object
   
   @js.native
-  sealed trait URLMATCHER extends js.Object
+  sealed trait URLMATCHER
+    extends atUirouterCoreLib.libUrlInterfaceMod.UrlRuleType
   
   @js.native
-  sealed trait WAIT extends js.Object
+  sealed trait WAIT
+    extends atUirouterCoreLib.libResolveInterfaceMod.PolicyAsync
   
   @js.native
   sealed trait auto extends js.Object

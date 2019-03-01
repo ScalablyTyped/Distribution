@@ -13,3 +13,22 @@ trait DatastoreKey extends js.Object {
   val path: DatastoreKeyPath
 }
 
+object DatastoreKey {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    path: DatastoreKeyPath,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    parent: DatastoreKey = null
+  ): DatastoreKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("path")(path)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[DatastoreKey]
+  }
+}
+

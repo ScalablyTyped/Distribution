@@ -244,6 +244,10 @@ object MarketplaceMeteringNs extends js.Object {
     var UsageRecord: js.UndefOr[UsageRecord] = js.undefined
   }
   
+  trait _UsageRecordResultStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -257,8 +261,8 @@ object MarketplaceMeteringNs extends js.Object {
   type UsageQuantity = scala.Double
   type UsageRecordList = js.Array[UsageRecord]
   type UsageRecordResultList = js.Array[UsageRecordResult]
-  type UsageRecordResultStatus = awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.CustomerNotSubscribed | awsDashSdkLib.awsDashSdkLibStrings.DuplicateRecord | java.lang.String
+  type UsageRecordResultStatus = _UsageRecordResultStatus | java.lang.String
   type VersionInteger = scala.Double
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-01-14` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

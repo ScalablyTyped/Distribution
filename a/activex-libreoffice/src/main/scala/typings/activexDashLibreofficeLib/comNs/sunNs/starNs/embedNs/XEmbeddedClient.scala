@@ -21,3 +21,26 @@ trait XEmbeddedClient extends XComponentSupplier {
   def visibilityChanged(bVisible: scala.Boolean): scala.Unit
 }
 
+object XEmbeddedClient {
+  @scala.inline
+  def apply(
+    Component: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable,
+    acquire: js.Function0[scala.Unit],
+    getComponent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloseable],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    saveObject: js.Function0[scala.Unit],
+    visibilityChanged: js.Function1[scala.Boolean, scala.Unit]
+  ): XEmbeddedClient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Component")(Component)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getComponent")(getComponent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("saveObject")(saveObject)
+    __obj.updateDynamic("visibilityChanged")(visibilityChanged)
+    __obj.asInstanceOf[XEmbeddedClient]
+  }
+}
+

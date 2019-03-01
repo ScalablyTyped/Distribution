@@ -19,3 +19,16 @@ trait InconclusiveDetail extends js.Object {
   var infrastructureFailure: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InconclusiveDetail {
+  @scala.inline
+  def apply(
+    abortedByUser: js.UndefOr[scala.Boolean] = js.undefined,
+    infrastructureFailure: js.UndefOr[scala.Boolean] = js.undefined
+  ): InconclusiveDetail = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(abortedByUser)) __obj.updateDynamic("abortedByUser")(abortedByUser)
+    if (!js.isUndefined(infrastructureFailure)) __obj.updateDynamic("infrastructureFailure")(infrastructureFailure)
+    __obj.asInstanceOf[InconclusiveDetail]
+  }
+}
+

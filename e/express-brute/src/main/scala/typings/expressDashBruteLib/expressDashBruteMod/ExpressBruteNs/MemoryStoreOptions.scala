@@ -13,3 +13,12 @@ trait MemoryStoreOptions extends js.Object {
   var prefix: java.lang.String
 }
 
+object MemoryStoreOptions {
+  @scala.inline
+  def apply(prefix: java.lang.String): MemoryStoreOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[MemoryStoreOptions]
+  }
+}
+

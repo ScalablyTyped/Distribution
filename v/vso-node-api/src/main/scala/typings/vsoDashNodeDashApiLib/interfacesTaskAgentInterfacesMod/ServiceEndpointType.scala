@@ -19,3 +19,34 @@ trait ServiceEndpointType extends js.Object {
   var name: java.lang.String
 }
 
+object ServiceEndpointType {
+  @scala.inline
+  def apply(
+    authenticationSchemes: js.Array[ServiceEndpointAuthenticationScheme],
+    dataSources: js.Array[DataSource],
+    dependencyData: js.Array[DependencyData],
+    description: java.lang.String,
+    displayName: java.lang.String,
+    endpointUrl: EndpointUrl,
+    helpLink: HelpLink,
+    helpMarkDown: java.lang.String,
+    iconUrl: java.lang.String,
+    inputDescriptors: js.Array[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDescriptor],
+    name: java.lang.String
+  ): ServiceEndpointType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authenticationSchemes")(authenticationSchemes)
+    __obj.updateDynamic("dataSources")(dataSources)
+    __obj.updateDynamic("dependencyData")(dependencyData)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("endpointUrl")(endpointUrl)
+    __obj.updateDynamic("helpLink")(helpLink)
+    __obj.updateDynamic("helpMarkDown")(helpMarkDown)
+    __obj.updateDynamic("iconUrl")(iconUrl)
+    __obj.updateDynamic("inputDescriptors")(inputDescriptors)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ServiceEndpointType]
+  }
+}
+

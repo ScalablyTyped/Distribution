@@ -57,3 +57,48 @@ trait XTextTable extends XTextContent {
   def initialize(nRows: scala.Double, nColumns: scala.Double): scala.Unit
 }
 
+object XTextTable {
+  @scala.inline
+  def apply(
+    Anchor: XTextRange,
+    CellNames: activexDashInteropLib.SafeArray[java.lang.String],
+    Columns: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns,
+    Rows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attach: js.Function1[XTextRange, scala.Unit],
+    createCursorByCellName: js.Function1[java.lang.String, XTextTableCursor],
+    dispose: js.Function0[scala.Unit],
+    getAnchor: js.Function0[XTextRange],
+    getCellByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCell],
+    getCellNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableColumns],
+    getRows: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XTableRows],
+    initialize: js.Function2[scala.Double, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XTextTable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Anchor")(Anchor)
+    __obj.updateDynamic("CellNames")(CellNames)
+    __obj.updateDynamic("Columns")(Columns)
+    __obj.updateDynamic("Rows")(Rows)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("attach")(attach)
+    __obj.updateDynamic("createCursorByCellName")(createCursorByCellName)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getAnchor")(getAnchor)
+    __obj.updateDynamic("getCellByName")(getCellByName)
+    __obj.updateDynamic("getCellNames")(getCellNames)
+    __obj.updateDynamic("getColumns")(getColumns)
+    __obj.updateDynamic("getRows")(getRows)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[XTextTable]
+  }
+}
+

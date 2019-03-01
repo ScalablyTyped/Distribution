@@ -16,3 +16,12 @@ trait ASPxClientControlsInitializedEventArgs extends ASPxClientEventArgs {
   var isCallback: scala.Boolean
 }
 
+object ASPxClientControlsInitializedEventArgs {
+  @scala.inline
+  def apply(isCallback: scala.Boolean): ASPxClientControlsInitializedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isCallback")(isCallback)
+    __obj.asInstanceOf[ASPxClientControlsInitializedEventArgs]
+  }
+}
+

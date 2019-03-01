@@ -18,3 +18,14 @@ trait DataPilotFieldSortInfo extends js.Object {
   var Mode: scala.Double
 }
 
+object DataPilotFieldSortInfo {
+  @scala.inline
+  def apply(Field: java.lang.String, IsAscending: scala.Boolean, Mode: scala.Double): DataPilotFieldSortInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Field")(Field)
+    __obj.updateDynamic("IsAscending")(IsAscending)
+    __obj.updateDynamic("Mode")(Mode)
+    __obj.asInstanceOf[DataPilotFieldSortInfo]
+  }
+}
+

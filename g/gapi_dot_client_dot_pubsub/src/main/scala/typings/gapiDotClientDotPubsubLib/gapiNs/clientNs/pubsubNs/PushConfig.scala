@@ -37,3 +37,16 @@ trait PushConfig extends js.Object {
   var pushEndpoint: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PushConfig {
+  @scala.inline
+  def apply(
+    attributes: stdLib.Record[java.lang.String, java.lang.String] = null,
+    pushEndpoint: java.lang.String = null
+  ): PushConfig = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (pushEndpoint != null) __obj.updateDynamic("pushEndpoint")(pushEndpoint)
+    __obj.asInstanceOf[PushConfig]
+  }
+}
+

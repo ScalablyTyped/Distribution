@@ -25,3 +25,22 @@ trait PluginBase[T] extends js.Object {
   def register(server: Server, options: T): scala.Unit | js.Promise[scala.Unit]
 }
 
+object PluginBase {
+  @scala.inline
+  def apply[T](
+    register: js.Function2[Server, T, scala.Unit | js.Promise[scala.Unit]],
+    dependencies: Dependencies = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    once: js.UndefOr[scala.Boolean] = js.undefined,
+    requirements: hapiLib.Anon_Hapi = null
+  ): PluginBase[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("register")(register)
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
+    __obj.asInstanceOf[PluginBase[T]]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Anon_Ict extends js.Object {
   var nist: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesTransactionsMod.NonInviteServerTransaction]
 }
 
+object Anon_Ict {
+  @scala.inline
+  def apply(
+    ict: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesTransactionsMod.InviteClientTransaction],
+    ist: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesTransactionsMod.InviteServerTransaction],
+    nict: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesTransactionsMod.NonInviteClientTransaction],
+    nist: org.scalablytyped.runtime.StringDictionary[sipDotJsLib.typesTransactionsMod.NonInviteServerTransaction]
+  ): Anon_Ict = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ict")(ict)
+    __obj.updateDynamic("ist")(ist)
+    __obj.updateDynamic("nict")(nict)
+    __obj.updateDynamic("nist")(nist)
+    __obj.asInstanceOf[Anon_Ict]
+  }
+}
+

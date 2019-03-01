@@ -10,3 +10,16 @@ trait Anon_Current extends js.Object {
   var pending: nodeDashForgeLib.nodeDashForgeMod.tlsNs.ConnectionState | scala.Null
 }
 
+object Anon_Current {
+  @scala.inline
+  def apply(
+    current: nodeDashForgeLib.nodeDashForgeMod.tlsNs.ConnectionState,
+    pending: nodeDashForgeLib.nodeDashForgeMod.tlsNs.ConnectionState = null
+  ): Anon_Current = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("current")(current)
+    if (pending != null) __obj.updateDynamic("pending")(pending)
+    __obj.asInstanceOf[Anon_Current]
+  }
+}
+

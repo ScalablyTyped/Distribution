@@ -30,3 +30,20 @@ trait PrintWriter extends js.Object {
   def write(data: js.Array[_]): scala.Unit
 }
 
+object PrintWriter {
+  @scala.inline
+  def apply(
+    clear: js.Function0[scala.Unit],
+    close: js.Function0[scala.Unit],
+    print: js.Function1[js.Array[_], scala.Unit],
+    write: js.Function1[js.Array[_], scala.Unit]
+  ): PrintWriter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("print")(print)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[PrintWriter]
+  }
+}
+

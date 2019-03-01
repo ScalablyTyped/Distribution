@@ -16,3 +16,24 @@ trait IcalAttachment extends AttachmentLike {
   var method: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IcalAttachment {
+  @scala.inline
+  def apply(
+    content: java.lang.String | nodeLib.Buffer | nodeLib.streamMod.Readable = null,
+    encoding: java.lang.String = null,
+    filename: java.lang.String | nodemailerLib.nodemailerLibNumbers.`false` = null,
+    href: java.lang.String = null,
+    method: java.lang.String = null,
+    path: java.lang.String | nodeLib.urlMod.Url = null
+  ): IcalAttachment = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IcalAttachment]
+  }
+}
+

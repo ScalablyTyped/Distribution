@@ -18,3 +18,16 @@ trait DDEItemInfo extends js.Object {
   var Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
 }
 
+object DDEItemInfo {
+  @scala.inline
+  def apply(
+    Item: java.lang.String,
+    Results: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
+  ): DDEItemInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Item")(Item)
+    __obj.updateDynamic("Results")(Results)
+    __obj.asInstanceOf[DDEItemInfo]
+  }
+}
+

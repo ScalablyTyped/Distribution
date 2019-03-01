@@ -13,3 +13,28 @@ trait TreeListDropEvent extends TreeListEvent {
   var valid: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TreeListDropEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: TreeList,
+    destination: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null,
+    dropTarget: stdLib.Element = null,
+    setValid: js.UndefOr[scala.Boolean] = js.undefined,
+    source: kendoDashUiLib.kendoNs.dataNs.TreeListModel = null,
+    valid: js.UndefOr[scala.Boolean] = js.undefined
+  ): TreeListDropEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (dropTarget != null) __obj.updateDynamic("dropTarget")(dropTarget)
+    if (!js.isUndefined(setValid)) __obj.updateDynamic("setValid")(setValid)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    __obj.asInstanceOf[TreeListDropEvent]
+  }
+}
+

@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashSqliteDashStorageLibStrings {
   @js.native
-  sealed trait Documents extends js.Object
+  sealed trait Documents
+    extends reactDashNativeDashSqliteDashStorageLib.reactDashNativeDashSqliteDashStorageMod.Location
   
   @js.native
-  sealed trait Library extends js.Object
+  sealed trait Library
+    extends reactDashNativeDashSqliteDashStorageLib.reactDashNativeDashSqliteDashStorageMod.Location
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends reactDashNativeDashSqliteDashStorageLib.reactDashNativeDashSqliteDashStorageMod.Location
   
   @scala.inline
   def Documents: Documents = "Documents".asInstanceOf[Documents]

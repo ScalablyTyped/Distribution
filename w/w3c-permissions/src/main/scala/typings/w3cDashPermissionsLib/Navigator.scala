@@ -10,3 +10,12 @@ trait Navigator extends js.Object {
   val permissions: Permissions
 }
 
+object Navigator {
+  @scala.inline
+  def apply(permissions: Permissions): Navigator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

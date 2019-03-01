@@ -14,3 +14,18 @@ trait RestoreBackupContext extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RestoreBackupContext {
+  @scala.inline
+  def apply(
+    backupRunId: java.lang.String = null,
+    instanceId: java.lang.String = null,
+    kind: java.lang.String = null
+  ): RestoreBackupContext = {
+    val __obj = js.Dynamic.literal()
+    if (backupRunId != null) __obj.updateDynamic("backupRunId")(backupRunId)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[RestoreBackupContext]
+  }
+}
+

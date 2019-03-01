@@ -18,3 +18,14 @@ trait NodesClassAttribute extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodesClassAttribute {
+  @scala.inline
+  def apply(name: java.lang.String = null, scope: java.lang.String = null, `type`: java.lang.String = null): NodesClassAttribute = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodesClassAttribute]
+  }
+}
+

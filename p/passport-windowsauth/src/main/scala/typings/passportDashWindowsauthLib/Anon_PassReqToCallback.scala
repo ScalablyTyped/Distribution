@@ -9,3 +9,12 @@ trait Anon_PassReqToCallback extends js.Object {
   var passReqToCallback: passportDashWindowsauthLib.passportDashWindowsauthLibNumbers.`true`
 }
 
+object Anon_PassReqToCallback {
+  @scala.inline
+  def apply(passReqToCallback: passportDashWindowsauthLib.passportDashWindowsauthLibNumbers.`true`): Anon_PassReqToCallback = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("passReqToCallback")(passReqToCallback)
+    __obj.asInstanceOf[Anon_PassReqToCallback]
+  }
+}
+

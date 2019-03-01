@@ -25,3 +25,22 @@ trait NotificationArgs extends js.Object {
   val topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object NotificationArgs {
+  @scala.inline
+  def apply(
+    groupNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    notifications: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.autoscalingNotificationTypeMod.NotificationType]
+      ]
+    ],
+    topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): NotificationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("groupNames")(groupNames.asInstanceOf[js.Any])
+    __obj.updateDynamic("notifications")(notifications.asInstanceOf[js.Any])
+    __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NotificationArgs]
+  }
+}
+

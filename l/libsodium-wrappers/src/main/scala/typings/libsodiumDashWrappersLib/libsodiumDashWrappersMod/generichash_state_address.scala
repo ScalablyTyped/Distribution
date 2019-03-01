@@ -9,3 +9,12 @@ trait generichash_state_address extends js.Object {
   var name: java.lang.String
 }
 
+object generichash_state_address {
+  @scala.inline
+  def apply(name: java.lang.String): generichash_state_address = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[generichash_state_address]
+  }
+}
+

@@ -35,3 +35,22 @@ trait XContainer
   def removeContainerListener(xListener: XContainerListener): scala.Unit
 }
 
+object XContainer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addContainerListener: js.Function1[XContainerListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeContainerListener: js.Function1[XContainerListener, scala.Unit]
+  ): XContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addContainerListener")(addContainerListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
+    __obj.asInstanceOf[XContainer]
+  }
+}
+

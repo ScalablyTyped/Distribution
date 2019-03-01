@@ -13,3 +13,18 @@ trait Anon_Error
   var success: js.UndefOr[js.Function1[/* json */ js.UndefOr[js.Array[_]], scala.Unit]] = js.undefined
 }
 
+object Anon_Error {
+  @scala.inline
+  def apply(
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    error: js.Function3[/* xhr */ js.Any, /* status */ js.Any, /* error */ js.Any, scala.Unit] = null,
+    success: js.Function1[/* json */ js.UndefOr[js.Array[_]], scala.Unit] = null
+  ): Anon_Error = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_Error]
+  }
+}
+

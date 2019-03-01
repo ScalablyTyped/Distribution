@@ -23,3 +23,24 @@ import scala.scalajs.js.annotation._
   var ssr: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NextDynamicOptions {
+  @scala.inline
+  def apply[P](
+    loadableGenerated: nextDashServerLib.Anon_Modules = null,
+    loader: AsyncComponentLoader[P] = null,
+    loading: reactLib.reactMod.ReactNs.ComponentType[reactDashLoadableLib.LoadableExportNs.LoadingComponentProps] | js.Function0[scala.Null] = null,
+    modules: js.Function0[ModuleMapping] = null,
+    render: js.Function2[/* props */ P, /* loaded */ LoadedModuleMapping, reactLib.reactMod.ReactNs.ReactNode] = null,
+    ssr: js.UndefOr[scala.Boolean] = js.undefined
+  ): NextDynamicOptions[P] = {
+    val __obj = js.Dynamic.literal()
+    if (loadableGenerated != null) __obj.updateDynamic("loadableGenerated")(loadableGenerated)
+    if (loader != null) __obj.updateDynamic("loader")(loader)
+    if (loading != null) __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (!js.isUndefined(ssr)) __obj.updateDynamic("ssr")(ssr)
+    __obj.asInstanceOf[NextDynamicOptions[P]]
+  }
+}
+

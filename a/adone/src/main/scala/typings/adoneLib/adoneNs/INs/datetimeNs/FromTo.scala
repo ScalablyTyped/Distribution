@@ -10,3 +10,13 @@ trait FromTo extends js.Object {
   var to: DatetimeInput
 }
 
+object FromTo {
+  @scala.inline
+  def apply(from: DatetimeInput, to: DatetimeInput): FromTo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FromTo]
+  }
+}
+

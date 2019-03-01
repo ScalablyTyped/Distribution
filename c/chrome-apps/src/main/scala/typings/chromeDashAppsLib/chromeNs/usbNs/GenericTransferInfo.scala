@@ -32,3 +32,29 @@ trait GenericTransferInfo extends js.Object {
   var timeout: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object GenericTransferInfo {
+  @scala.inline
+  def apply(
+    direction: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_IN, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_IN[keyof chrome-apps.Anon_IN] */ js.Any
+      ]
+    ],
+    endpoint: chromeDashAppsLib.chromeNs.integer,
+    data: stdLib.ArrayBuffer = null,
+    length: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    timeout: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): GenericTransferInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    __obj.updateDynamic("endpoint")(endpoint)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(length)) __obj.updateDynamic("length")(length)
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[GenericTransferInfo]
+  }
+}
+

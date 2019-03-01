@@ -13,3 +13,22 @@ trait ChartBoxStyle extends js.Object {
   var strokeWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartBoxStyle {
+  @scala.inline
+  def apply(
+    gradient: googleDotVisualizationLib.Anon_Color1 = null,
+    rx: scala.Int | scala.Double = null,
+    ry: scala.Int | scala.Double = null,
+    stroke: java.lang.String = null,
+    strokeWidth: scala.Int | scala.Double = null
+  ): ChartBoxStyle = {
+    val __obj = js.Dynamic.literal()
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
+    if (ry != null) __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartBoxStyle]
+  }
+}
+

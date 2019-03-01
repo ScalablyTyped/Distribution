@@ -16,3 +16,16 @@ trait PresignerOptions extends js.Object {
   var service: js.UndefOr[awsDashSdkLib.clientsPollyMod.namespaced] = js.undefined
 }
 
+object PresignerOptions {
+  @scala.inline
+  def apply(
+    params: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    service: awsDashSdkLib.clientsPollyMod.namespaced = null
+  ): PresignerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (service != null) __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[PresignerOptions]
+  }
+}
+

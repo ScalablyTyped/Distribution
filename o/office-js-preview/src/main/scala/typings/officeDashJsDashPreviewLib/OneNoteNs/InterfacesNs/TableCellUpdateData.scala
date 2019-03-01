@@ -16,3 +16,12 @@ trait TableCellUpdateData extends js.Object {
   var shadingColor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableCellUpdateData {
+  @scala.inline
+  def apply(shadingColor: java.lang.String = null): TableCellUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (shadingColor != null) __obj.updateDynamic("shadingColor")(shadingColor)
+    __obj.asInstanceOf[TableCellUpdateData]
+  }
+}
+

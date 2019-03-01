@@ -69,3 +69,36 @@ trait IProgressData extends js.Object {
   var qUserInteractionWanted: scala.Boolean
 }
 
+object IProgressData {
+  @scala.inline
+  def apply(
+    qCompleted: scala.Double,
+    qErrorData: js.Array[IErrorData],
+    qFinished: scala.Boolean,
+    qKB: scala.Double,
+    qMillisecs: scala.Double,
+    qPersistentProgress: java.lang.String,
+    qPersistentProgressMessages: js.Array[IProgressMessage],
+    qStarted: scala.Boolean,
+    qTotal: scala.Double,
+    qTransientProgress: java.lang.String,
+    qTransientProgressMessage: IProgressMessage,
+    qUserInteractionWanted: scala.Boolean
+  ): IProgressData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qCompleted")(qCompleted)
+    __obj.updateDynamic("qErrorData")(qErrorData)
+    __obj.updateDynamic("qFinished")(qFinished)
+    __obj.updateDynamic("qKB")(qKB)
+    __obj.updateDynamic("qMillisecs")(qMillisecs)
+    __obj.updateDynamic("qPersistentProgress")(qPersistentProgress)
+    __obj.updateDynamic("qPersistentProgressMessages")(qPersistentProgressMessages)
+    __obj.updateDynamic("qStarted")(qStarted)
+    __obj.updateDynamic("qTotal")(qTotal)
+    __obj.updateDynamic("qTransientProgress")(qTransientProgress)
+    __obj.updateDynamic("qTransientProgressMessage")(qTransientProgressMessage)
+    __obj.updateDynamic("qUserInteractionWanted")(qUserInteractionWanted)
+    __obj.asInstanceOf[IProgressData]
+  }
+}
+

@@ -18,3 +18,12 @@ trait GridRowData extends js.Object {
   def getEntity(): GridEntity
 }
 
+object GridRowData {
+  @scala.inline
+  def apply(getEntity: js.Function0[GridEntity]): GridRowData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getEntity")(getEntity)
+    __obj.asInstanceOf[GridRowData]
+  }
+}
+

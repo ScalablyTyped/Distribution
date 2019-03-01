@@ -10,3 +10,13 @@ trait Anon_Debounce extends js.Object {
   var timestamps: scala.Boolean
 }
 
+object Anon_Debounce {
+  @scala.inline
+  def apply(debounce: scala.Boolean, timestamps: scala.Boolean): Anon_Debounce = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("debounce")(debounce)
+    __obj.updateDynamic("timestamps")(timestamps)
+    __obj.asInstanceOf[Anon_Debounce]
+  }
+}
+

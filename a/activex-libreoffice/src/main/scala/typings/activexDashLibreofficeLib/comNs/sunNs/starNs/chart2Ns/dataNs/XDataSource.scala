@@ -27,3 +27,22 @@ trait XDataSource
   def getDataSequences(): activexDashInteropLib.SafeArray[XLabeledDataSequence]
 }
 
+object XDataSource {
+  @scala.inline
+  def apply(
+    DataSequences: activexDashInteropLib.SafeArray[XLabeledDataSequence],
+    acquire: js.Function0[scala.Unit],
+    getDataSequences: js.Function0[activexDashInteropLib.SafeArray[XLabeledDataSequence]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DataSequences")(DataSequences)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDataSequences")(getDataSequences)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDataSource]
+  }
+}
+

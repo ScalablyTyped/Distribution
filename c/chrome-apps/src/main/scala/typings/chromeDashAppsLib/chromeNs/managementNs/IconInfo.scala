@@ -16,3 +16,13 @@ trait IconInfo extends js.Object {
   var url: java.lang.String
 }
 
+object IconInfo {
+  @scala.inline
+  def apply(size: chromeDashAppsLib.chromeNs.integer, url: java.lang.String): IconInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[IconInfo]
+  }
+}
+

@@ -23,3 +23,13 @@ trait CodeActionContext extends js.Object {
   var only: js.UndefOr[js.Array[CodeActionKind]] = js.undefined
 }
 
+object CodeActionContext {
+  @scala.inline
+  def apply(diagnostics: js.Array[Diagnostic], only: js.Array[CodeActionKind] = null): CodeActionContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("diagnostics")(diagnostics)
+    if (only != null) __obj.updateDynamic("only")(only)
+    __obj.asInstanceOf[CodeActionContext]
+  }
+}
+

@@ -30,3 +30,18 @@ trait PivotHierarchyData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PivotHierarchyData {
+  @scala.inline
+  def apply(
+    fields: js.Array[PivotFieldData] = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null
+  ): PivotHierarchyData = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[PivotHierarchyData]
+  }
+}
+

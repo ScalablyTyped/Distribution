@@ -13,3 +13,12 @@ trait ManualScaling extends js.Object {
   var instances: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ManualScaling {
+  @scala.inline
+  def apply(instances: scala.Int | scala.Double = null): ManualScaling = {
+    val __obj = js.Dynamic.literal()
+    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ManualScaling]
+  }
+}
+

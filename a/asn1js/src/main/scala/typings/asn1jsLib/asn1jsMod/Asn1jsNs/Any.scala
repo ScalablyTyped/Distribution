@@ -10,3 +10,13 @@ trait Any extends js.Object {
   var optional: scala.Boolean
 }
 
+object Any {
+  @scala.inline
+  def apply(name: java.lang.String, optional: scala.Boolean): Any = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[Any]
+  }
+}
+

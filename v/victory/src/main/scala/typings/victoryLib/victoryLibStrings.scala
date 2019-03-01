@@ -22,181 +22,240 @@ object victoryLibStrings {
   sealed trait axisLabel extends js.Object
   
   @js.native
-  sealed trait back extends js.Object
+  sealed trait back
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait backIn extends js.Object
+  sealed trait backIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait backInOut extends js.Object
+  sealed trait backInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait backOut extends js.Object
+  sealed trait backOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait basis extends js.Object
+  sealed trait basis
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait basisClosed extends js.Object
+  sealed trait basisClosed
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait basisOpen extends js.Object
+  sealed trait basisOpen
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait blue extends js.Object
+  sealed trait blue
+    extends victoryLib.victoryMod._ColorScalePropType
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends victoryLib.victoryMod.OrientationTypes
   
   @js.native
-  sealed trait bounce extends js.Object
+  sealed trait bounce
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait bounceIn extends js.Object
+  sealed trait bounceIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait bounceInOut extends js.Object
+  sealed trait bounceInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait bounceOut extends js.Object
+  sealed trait bounceOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait bundle extends js.Object
+  sealed trait bundle
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait cardinal extends js.Object
+  sealed trait cardinal
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait cardinalClosed extends js.Object
+  sealed trait cardinalClosed
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait cardinalOpen extends js.Object
+  sealed trait cardinalOpen
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait catmullRom extends js.Object
+  sealed trait catmullRom
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait catmullRomClosed extends js.Object
+  sealed trait catmullRomClosed
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait catmullRomOpen extends js.Object
+  sealed trait catmullRomOpen
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle
+    extends victoryLib.victoryMod.AnimationEasing
+       with victoryLib.victoryMod.ScatterSymbolType
   
   @js.native
-  sealed trait circleIn extends js.Object
+  sealed trait circleIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait circleInOut extends js.Object
+  sealed trait circleInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait circleOut extends js.Object
+  sealed trait circleOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait cool extends js.Object
+  sealed trait cool
+    extends victoryLib.victoryMod._ColorScalePropType
   
   @js.native
-  sealed trait cubic extends js.Object
+  sealed trait cubic
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait cubicIn extends js.Object
+  sealed trait cubicIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait cubicInOut extends js.Object
+  sealed trait cubicInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait cubicOut extends js.Object
+  sealed trait cubicOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
   sealed trait data extends js.Object
   
   @js.native
-  sealed trait diamond extends js.Object
+  sealed trait diamond
+    extends victoryLib.victoryMod.ScatterSymbolType
   
   @js.native
   sealed trait disable extends js.Object
   
   @js.native
-  sealed trait elastic extends js.Object
+  sealed trait elastic
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait elasticIn extends js.Object
+  sealed trait elasticIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait elasticInOut extends js.Object
+  sealed trait elasticInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait elasticOut extends js.Object
+  sealed trait elasticOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends victoryLib.victoryMod.TextAnchorType
+       with victoryLib.victoryMod.VerticalAnchorType
   
   @js.native
-  sealed trait exp extends js.Object
+  sealed trait exp
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait expIn extends js.Object
+  sealed trait expIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait expInOut extends js.Object
+  sealed trait expInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait expOut extends js.Object
+  sealed trait expOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait green extends js.Object
+  sealed trait green
+    extends victoryLib.victoryMod._ColorScalePropType
   
   @js.native
-  sealed trait greyscale extends js.Object
+  sealed trait greyscale
+    extends victoryLib.victoryMod._ColorScalePropType
   
   @js.native
   sealed trait grid extends js.Object
   
   @js.native
-  sealed trait heatmap extends js.Object
+  sealed trait heatmap
+    extends victoryLib.victoryMod._ColorScalePropType
   
   @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait inherit
+    extends victoryLib.victoryMod.TextAnchorType
   
   @js.native
   sealed trait labels extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends victoryLib.victoryMod.OrientationTypes
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends victoryLib.victoryMod.AnimationEasing
+       with victoryLib.victoryMod.InterpolationPropType
+       with victoryLib.victoryMod.ScalePropType
   
   @js.native
-  sealed trait linearClosed extends js.Object
+  sealed trait linearClosed
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait linearIn extends js.Object
+  sealed trait linearIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait linearInOut extends js.Object
+  sealed trait linearInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait linearOut extends js.Object
+  sealed trait linearOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log
+    extends victoryLib.victoryMod.ScalePropType
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle
+    extends victoryLib.victoryMod.TextAnchorType
+       with victoryLib.victoryMod.VerticalAnchorType
   
   @js.native
-  sealed trait monotoneX extends js.Object
+  sealed trait monotoneX
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait monotoneY extends js.Object
+  sealed trait monotoneY
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait natural extends js.Object
+  sealed trait natural
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
   sealed trait none extends js.Object
@@ -211,76 +270,101 @@ object victoryLibStrings {
   sealed trait perpendicular extends js.Object
   
   @js.native
-  sealed trait plus extends js.Object
+  sealed trait plus
+    extends victoryLib.victoryMod.ScatterSymbolType
   
   @js.native
-  sealed trait poly extends js.Object
+  sealed trait poly
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait polyIn extends js.Object
+  sealed trait polyIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait polyInOut extends js.Object
+  sealed trait polyInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait polyOut extends js.Object
+  sealed trait polyOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait quad extends js.Object
+  sealed trait quad
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait quadIn extends js.Object
+  sealed trait quadIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait quadInOut extends js.Object
+  sealed trait quadInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait quadOut extends js.Object
+  sealed trait quadOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait qualitative extends js.Object
+  sealed trait qualitative
+    extends victoryLib.victoryMod._ColorScalePropType
   
   @js.native
-  sealed trait radial extends js.Object
+  sealed trait radial
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait red extends js.Object
+  sealed trait red
+    extends victoryLib.victoryMod._ColorScalePropType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends victoryLib.victoryMod.OrientationTypes
   
   @js.native
-  sealed trait sin extends js.Object
+  sealed trait sin
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait sinIn extends js.Object
+  sealed trait sinIn
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait sinInOut extends js.Object
+  sealed trait sinInOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait sinOut extends js.Object
+  sealed trait sinOut
+    extends victoryLib.victoryMod.AnimationEasing
   
   @js.native
-  sealed trait sqrt extends js.Object
+  sealed trait sqrt
+    extends victoryLib.victoryMod.ScalePropType
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends victoryLib.victoryMod.ScatterSymbolType
   
   @js.native
-  sealed trait star extends js.Object
+  sealed trait star
+    extends victoryLib.victoryMod.ScatterSymbolType
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends victoryLib.victoryMod.TextAnchorType
+       with victoryLib.victoryMod.VerticalAnchorType
   
   @js.native
-  sealed trait step extends js.Object
+  sealed trait step
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait stepAfter extends js.Object
+  sealed trait stepAfter
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
-  sealed trait stepBefore extends js.Object
+  sealed trait stepBefore
+    extends victoryLib.victoryMod.InterpolationPropType
   
   @js.native
   sealed trait tickLabels extends js.Object
@@ -289,22 +373,27 @@ object victoryLibStrings {
   sealed trait ticks extends js.Object
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends victoryLib.victoryMod.ScalePropType
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends victoryLib.victoryMod.OrientationTypes
   
   @js.native
-  sealed trait triangleDown extends js.Object
+  sealed trait triangleDown
+    extends victoryLib.victoryMod.ScatterSymbolType
   
   @js.native
-  sealed trait triangleUp extends js.Object
+  sealed trait triangleUp
+    extends victoryLib.victoryMod.ScatterSymbolType
   
   @js.native
   sealed trait vertical extends js.Object
   
   @js.native
-  sealed trait warm extends js.Object
+  sealed trait warm
+    extends victoryLib.victoryMod._ColorScalePropType
   
   @js.native
   sealed trait x extends js.Object

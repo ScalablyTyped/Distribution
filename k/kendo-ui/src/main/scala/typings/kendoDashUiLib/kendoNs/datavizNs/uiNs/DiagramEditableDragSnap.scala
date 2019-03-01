@@ -9,3 +9,12 @@ trait DiagramEditableDragSnap extends js.Object {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DiagramEditableDragSnap {
+  @scala.inline
+  def apply(size: scala.Int | scala.Double = null): DiagramEditableDragSnap = {
+    val __obj = js.Dynamic.literal()
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DiagramEditableDragSnap]
+  }
+}
+

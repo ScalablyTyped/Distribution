@@ -37,3 +37,23 @@ trait RemovePassword extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RemovePassword {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    origin: java.lang.String = null,
+    password: java.lang.String = null,
+    realm: java.lang.String = null,
+    scheme: electronLib.electronLibStrings.basic | electronLib.electronLibStrings.digest | electronLib.electronLibStrings.ntlm | electronLib.electronLibStrings.negotiate = null,
+    username: java.lang.String = null
+  ): RemovePassword = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (realm != null) __obj.updateDynamic("realm")(realm)
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[RemovePassword]
+  }
+}
+

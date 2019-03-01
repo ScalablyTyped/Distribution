@@ -62,3 +62,30 @@ trait CircleMarkerOptions extends js.Object {
   var zIndexOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CircleMarkerOptions {
+  @scala.inline
+  def apply(
+    clickable: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    fillColor: java.lang.String = null,
+    fillOpacity: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    stroke: js.UndefOr[scala.Boolean] = js.undefined,
+    weight: scala.Int | scala.Double = null,
+    zIndexOffset: scala.Int | scala.Double = null
+  ): CircleMarkerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke)
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    if (zIndexOffset != null) __obj.updateDynamic("zIndexOffset")(zIndexOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CircleMarkerOptions]
+  }
+}
+

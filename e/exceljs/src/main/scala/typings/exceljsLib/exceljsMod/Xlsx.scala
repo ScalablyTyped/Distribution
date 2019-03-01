@@ -24,3 +24,20 @@ trait Xlsx extends js.Object {
   def writeFile(path: java.lang.String): js.Promise[scala.Unit]
 }
 
+object Xlsx {
+  @scala.inline
+  def apply(
+    createInputStream: js.Function0[nodeLib.streamMod.Writable],
+    readFile: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    write: js.Function1[nodeLib.streamMod.Stream, js.Promise[scala.Unit]],
+    writeFile: js.Function1[java.lang.String, js.Promise[scala.Unit]]
+  ): Xlsx = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createInputStream")(createInputStream)
+    __obj.updateDynamic("readFile")(readFile)
+    __obj.updateDynamic("write")(write)
+    __obj.updateDynamic("writeFile")(writeFile)
+    __obj.asInstanceOf[Xlsx]
+  }
+}
+

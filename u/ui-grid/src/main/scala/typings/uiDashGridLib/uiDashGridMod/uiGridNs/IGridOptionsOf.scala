@@ -353,3 +353,304 @@ trait IGridOptionsOf[TEntity]
   var wheelScrollThrottle: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IGridOptionsOf {
+  @scala.inline
+  def apply[TEntity](
+    aggregationCalcThrottle: scala.Int | scala.Double = null,
+    appScopeProvider: angularLib.angularMod.angularNs.IScope | js.Object = null,
+    cellEditableCondition: js.Any | uiDashGridLib.Anon_Scope = null,
+    columnDefs: js.Array[IColumnDefOf[TEntity]] = null,
+    columnFooterHeight: scala.Int | scala.Double = null,
+    columnVirtualizationThreshold: scala.Int | scala.Double = null,
+    data: js.Array[TEntity] | java.lang.String = null,
+    editableCellTemplate: java.lang.String = null,
+    enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCellEditOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnMenus: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnMoving: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    enableExpandable: js.UndefOr[scala.Boolean] = js.undefined,
+    enableExpandableRowHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFooterTotalSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFullRowSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGridMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGroupHeaderSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGrouping: js.UndefOr[scala.Boolean] = js.undefined,
+    enableHorizontalScrollbar: scala.Boolean | scala.Double = null,
+    enableImporter: js.UndefOr[scala.Boolean] = js.undefined,
+    enableInfiniteScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    enableMinHeightCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePagination: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePaginationControls: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePinning: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowHashing: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowHeaderSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSelectAll: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSelectionBatchEvent: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTreeView: js.UndefOr[scala.Boolean] = js.undefined,
+    enableVerticalScrollbar: scala.Boolean | scala.Double = null,
+    excessColumns: scala.Int | scala.Double = null,
+    excessRows: scala.Int | scala.Double = null,
+    excludeProperties: js.Array[java.lang.String] = null,
+    expandableRowHeaderWidth: scala.Int | scala.Double = null,
+    expandableRowHeight: scala.Int | scala.Double = null,
+    expandableRowScope: angularLib.angularMod.angularNs.IScope | js.Object = null,
+    expandableRowTemplate: java.lang.String = null,
+    exporterAllDataFn: js.Function0[angularLib.angularMod.angularNs.IPromise[js.Array[TEntity]]] = null,
+    exporterAllDataPromise: js.Function0[angularLib.angularMod.angularNs.IPromise[js.Array[TEntity]]] = null,
+    exporterCsvColumnSeparator: java.lang.String = null,
+    exporterCsvFilename: java.lang.String = null,
+    exporterFieldCallback: js.Function4[
+      /* grid */ IGridInstanceOf[TEntity], 
+      /* row */ IGridRowOf[TEntity], 
+      /* col */ IGridColumnOf[TEntity], 
+      /* value */ js.Any, 
+      _
+    ] = null,
+    exporterHeaderFilter: js.Function1[/* displayName */ java.lang.String, java.lang.String] = null,
+    exporterHeaderFilterUseName: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterMenuCsv: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterMenuExcel: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterMenuItemOrder: scala.Int | scala.Double = null,
+    exporterMenuLabel: java.lang.String = null,
+    exporterMenuPdf: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterOlderExcelCompatibility: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterPdfCustomFormatter: js.Function1[/* docDefinition */ js.Any, _] = null,
+    exporterPdfDefaultStyle: js.Any = null,
+    exporterPdfFilename: java.lang.String = null,
+    exporterPdfFooter: java.lang.String | js.Any | uiDashGridLib.Anon_CurrentPage = null,
+    exporterPdfHeader: java.lang.String | js.Any | uiDashGridLib.Anon_CurrentPage = null,
+    exporterPdfMaxGridWidth: scala.Int | scala.Double = null,
+    exporterPdfOrientation: java.lang.String = null,
+    exporterPdfPageSize: java.lang.String = null,
+    exporterPdfTableHeaderStyle: js.Any = null,
+    exporterPdfTableLayout: js.Any = null,
+    exporterPdfTableStyle: js.Any = null,
+    exporterSuppressColumns: js.Array[java.lang.String] = null,
+    exporterSuppressMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    fastWatch: js.UndefOr[scala.Boolean] = js.undefined,
+    flatEntityAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    footerTemplate: java.lang.String = null,
+    getRowIdentity: js.Function1[/* row */ IGridRowOf[TEntity], _] = null,
+    gridFooterTemplate: java.lang.String = null,
+    groupingNullLabel: java.lang.String = null,
+    groupingShowCounts: js.UndefOr[scala.Boolean] = js.undefined,
+    headerTemplate: java.lang.String = null,
+    horizontalScrollThreshold: scala.Int | scala.Double = null,
+    importerDataAddCallback: js.Function2[/* grid */ IGridInstanceOf[TEntity], /* newObjects */ js.Array[TEntity], scala.Unit] = null,
+    importerErrorCallback: js.Function4[
+      /* grid */ IGridInstanceOf[TEntity], 
+      /* errorKey */ java.lang.String, 
+      /* consoleMessage */ java.lang.String, 
+      /* context */ js.Any, 
+      scala.Unit
+    ] = null,
+    importerHeaderFilter: js.Function1[/* displayName */ java.lang.String, java.lang.String] = null,
+    importerNewObject: angularLib.angularMod.Global.Function = null,
+    importerObjectCallback: js.Function2[/* grid */ IGridInstanceOf[TEntity], TEntity, TEntity] = null,
+    importerProcessHeaders: js.Function2[
+      /* grid */ IGridInstanceOf[TEntity], 
+      /* headerArray */ js.Array[java.lang.String], 
+      js.Array[java.lang.String]
+    ] = null,
+    importerShowMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    infiniteScrollDown: js.UndefOr[scala.Boolean] = js.undefined,
+    infiniteScrollRowsFromEnd: scala.Int | scala.Double = null,
+    infiniteScrollUp: js.UndefOr[scala.Boolean] = js.undefined,
+    isRowSelectable: js.Function1[/* row */ uiDashGridLib.uiDashGridMod.uiGridNs.selectionNs.IGridRow, scala.Boolean] = null,
+    maxVisibleColumnCount: scala.Int | scala.Double = null,
+    minRowsToShow: scala.Int | scala.Double = null,
+    minimumColumnSize: scala.Int | scala.Double = null,
+    modifierKeysToMultiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    modifierKeysToMultiSelectCells: js.UndefOr[scala.Boolean] = js.undefined,
+    multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    noUnselect: js.UndefOr[scala.Boolean] = js.undefined,
+    onRegisterApi: js.Function1[/* gridApi */ IGridApiOf[TEntity], scala.Unit] = null,
+    paginationCurrentPage: scala.Int | scala.Double = null,
+    paginationPageSize: scala.Int | scala.Double = null,
+    paginationPageSizes: js.Array[scala.Double] = null,
+    paginationTemplate: java.lang.String = null,
+    rowEditWaitInterval: scala.Int | scala.Double = null,
+    rowEquality: js.Function2[/* entityA */ TEntity, /* entityB */ TEntity, scala.Boolean] = null,
+    rowHeight: scala.Int | scala.Double = null,
+    rowIdentity: js.Function1[/* row */ IGridRowOf[TEntity], _] = null,
+    rowTemplate: java.lang.String = null,
+    saveFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    saveFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    saveGrouping: js.UndefOr[scala.Boolean] = js.undefined,
+    saveGroupingExpandedStates: js.UndefOr[scala.Boolean] = js.undefined,
+    saveOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    savePinning: js.UndefOr[scala.Boolean] = js.undefined,
+    saveRowIdentity: js.UndefOr[scala.Boolean] = js.undefined,
+    saveScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    saveSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    saveSort: js.UndefOr[scala.Boolean] = js.undefined,
+    saveTreeView: js.UndefOr[scala.Boolean] = js.undefined,
+    saveVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    saveWidths: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollDebounce: scala.Int | scala.Double = null,
+    scrollThreshold: scala.Int | scala.Double = null,
+    selectionRowHeaderWidth: scala.Int | scala.Double = null,
+    showColumnFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    showGridFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    showTreeExpandNoChildren: js.UndefOr[scala.Boolean] = js.undefined,
+    showTreeRowHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    totalItems: scala.Int | scala.Double = null,
+    treeCustomAggregations: org.scalablytyped.runtime.StringDictionary[
+      uiDashGridLib.uiDashGridMod.uiGridNs.treeBaseNs.IGridTreeBaseCustomAggregation[TEntity]
+    ] = null,
+    treeIndent: scala.Int | scala.Double = null,
+    treeRowHeaderAlwaysVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    treeRowHeaderBaseWidth: scala.Int | scala.Double = null,
+    useExternalFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    useExternalPagination: js.UndefOr[scala.Boolean] = js.undefined,
+    useExternalSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    virtualizationThreshold: scala.Int | scala.Double = null,
+    wheelScrollThrottle: scala.Int | scala.Double = null
+  ): IGridOptionsOf[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    if (aggregationCalcThrottle != null) __obj.updateDynamic("aggregationCalcThrottle")(aggregationCalcThrottle.asInstanceOf[js.Any])
+    if (appScopeProvider != null) __obj.updateDynamic("appScopeProvider")(appScopeProvider.asInstanceOf[js.Any])
+    if (cellEditableCondition != null) __obj.updateDynamic("cellEditableCondition")(cellEditableCondition.asInstanceOf[js.Any])
+    if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs)
+    if (columnFooterHeight != null) __obj.updateDynamic("columnFooterHeight")(columnFooterHeight.asInstanceOf[js.Any])
+    if (columnVirtualizationThreshold != null) __obj.updateDynamic("columnVirtualizationThreshold")(columnVirtualizationThreshold.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate)
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
+    if (!js.isUndefined(enableCellEditOnFocus)) __obj.updateDynamic("enableCellEditOnFocus")(enableCellEditOnFocus)
+    if (!js.isUndefined(enableColumnMenus)) __obj.updateDynamic("enableColumnMenus")(enableColumnMenus)
+    if (!js.isUndefined(enableColumnMoving)) __obj.updateDynamic("enableColumnMoving")(enableColumnMoving)
+    if (!js.isUndefined(enableColumnResizing)) __obj.updateDynamic("enableColumnResizing")(enableColumnResizing)
+    if (!js.isUndefined(enableExpandable)) __obj.updateDynamic("enableExpandable")(enableExpandable)
+    if (!js.isUndefined(enableExpandableRowHeader)) __obj.updateDynamic("enableExpandableRowHeader")(enableExpandableRowHeader)
+    if (!js.isUndefined(enableFiltering)) __obj.updateDynamic("enableFiltering")(enableFiltering)
+    if (!js.isUndefined(enableFooterTotalSelected)) __obj.updateDynamic("enableFooterTotalSelected")(enableFooterTotalSelected)
+    if (!js.isUndefined(enableFullRowSelection)) __obj.updateDynamic("enableFullRowSelection")(enableFullRowSelection)
+    if (!js.isUndefined(enableGridMenu)) __obj.updateDynamic("enableGridMenu")(enableGridMenu)
+    if (!js.isUndefined(enableGroupHeaderSelection)) __obj.updateDynamic("enableGroupHeaderSelection")(enableGroupHeaderSelection)
+    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping)
+    if (enableHorizontalScrollbar != null) __obj.updateDynamic("enableHorizontalScrollbar")(enableHorizontalScrollbar.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableImporter)) __obj.updateDynamic("enableImporter")(enableImporter)
+    if (!js.isUndefined(enableInfiniteScroll)) __obj.updateDynamic("enableInfiniteScroll")(enableInfiniteScroll)
+    if (!js.isUndefined(enableMinHeightCheck)) __obj.updateDynamic("enableMinHeightCheck")(enableMinHeightCheck)
+    if (!js.isUndefined(enablePagination)) __obj.updateDynamic("enablePagination")(enablePagination)
+    if (!js.isUndefined(enablePaginationControls)) __obj.updateDynamic("enablePaginationControls")(enablePaginationControls)
+    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning)
+    if (!js.isUndefined(enableRowHashing)) __obj.updateDynamic("enableRowHashing")(enableRowHashing)
+    if (!js.isUndefined(enableRowHeaderSelection)) __obj.updateDynamic("enableRowHeaderSelection")(enableRowHeaderSelection)
+    if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection)
+    if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll)
+    if (!js.isUndefined(enableSelectionBatchEvent)) __obj.updateDynamic("enableSelectionBatchEvent")(enableSelectionBatchEvent)
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting)
+    if (!js.isUndefined(enableTreeView)) __obj.updateDynamic("enableTreeView")(enableTreeView)
+    if (enableVerticalScrollbar != null) __obj.updateDynamic("enableVerticalScrollbar")(enableVerticalScrollbar.asInstanceOf[js.Any])
+    if (excessColumns != null) __obj.updateDynamic("excessColumns")(excessColumns.asInstanceOf[js.Any])
+    if (excessRows != null) __obj.updateDynamic("excessRows")(excessRows.asInstanceOf[js.Any])
+    if (excludeProperties != null) __obj.updateDynamic("excludeProperties")(excludeProperties)
+    if (expandableRowHeaderWidth != null) __obj.updateDynamic("expandableRowHeaderWidth")(expandableRowHeaderWidth.asInstanceOf[js.Any])
+    if (expandableRowHeight != null) __obj.updateDynamic("expandableRowHeight")(expandableRowHeight.asInstanceOf[js.Any])
+    if (expandableRowScope != null) __obj.updateDynamic("expandableRowScope")(expandableRowScope.asInstanceOf[js.Any])
+    if (expandableRowTemplate != null) __obj.updateDynamic("expandableRowTemplate")(expandableRowTemplate)
+    if (exporterAllDataFn != null) __obj.updateDynamic("exporterAllDataFn")(exporterAllDataFn)
+    if (exporterAllDataPromise != null) __obj.updateDynamic("exporterAllDataPromise")(exporterAllDataPromise)
+    if (exporterCsvColumnSeparator != null) __obj.updateDynamic("exporterCsvColumnSeparator")(exporterCsvColumnSeparator)
+    if (exporterCsvFilename != null) __obj.updateDynamic("exporterCsvFilename")(exporterCsvFilename)
+    if (exporterFieldCallback != null) __obj.updateDynamic("exporterFieldCallback")(exporterFieldCallback)
+    if (exporterHeaderFilter != null) __obj.updateDynamic("exporterHeaderFilter")(exporterHeaderFilter)
+    if (!js.isUndefined(exporterHeaderFilterUseName)) __obj.updateDynamic("exporterHeaderFilterUseName")(exporterHeaderFilterUseName)
+    if (!js.isUndefined(exporterMenuCsv)) __obj.updateDynamic("exporterMenuCsv")(exporterMenuCsv)
+    if (!js.isUndefined(exporterMenuExcel)) __obj.updateDynamic("exporterMenuExcel")(exporterMenuExcel)
+    if (exporterMenuItemOrder != null) __obj.updateDynamic("exporterMenuItemOrder")(exporterMenuItemOrder.asInstanceOf[js.Any])
+    if (exporterMenuLabel != null) __obj.updateDynamic("exporterMenuLabel")(exporterMenuLabel)
+    if (!js.isUndefined(exporterMenuPdf)) __obj.updateDynamic("exporterMenuPdf")(exporterMenuPdf)
+    if (!js.isUndefined(exporterOlderExcelCompatibility)) __obj.updateDynamic("exporterOlderExcelCompatibility")(exporterOlderExcelCompatibility)
+    if (exporterPdfCustomFormatter != null) __obj.updateDynamic("exporterPdfCustomFormatter")(exporterPdfCustomFormatter)
+    if (exporterPdfDefaultStyle != null) __obj.updateDynamic("exporterPdfDefaultStyle")(exporterPdfDefaultStyle)
+    if (exporterPdfFilename != null) __obj.updateDynamic("exporterPdfFilename")(exporterPdfFilename)
+    if (exporterPdfFooter != null) __obj.updateDynamic("exporterPdfFooter")(exporterPdfFooter.asInstanceOf[js.Any])
+    if (exporterPdfHeader != null) __obj.updateDynamic("exporterPdfHeader")(exporterPdfHeader.asInstanceOf[js.Any])
+    if (exporterPdfMaxGridWidth != null) __obj.updateDynamic("exporterPdfMaxGridWidth")(exporterPdfMaxGridWidth.asInstanceOf[js.Any])
+    if (exporterPdfOrientation != null) __obj.updateDynamic("exporterPdfOrientation")(exporterPdfOrientation)
+    if (exporterPdfPageSize != null) __obj.updateDynamic("exporterPdfPageSize")(exporterPdfPageSize)
+    if (exporterPdfTableHeaderStyle != null) __obj.updateDynamic("exporterPdfTableHeaderStyle")(exporterPdfTableHeaderStyle)
+    if (exporterPdfTableLayout != null) __obj.updateDynamic("exporterPdfTableLayout")(exporterPdfTableLayout)
+    if (exporterPdfTableStyle != null) __obj.updateDynamic("exporterPdfTableStyle")(exporterPdfTableStyle)
+    if (exporterSuppressColumns != null) __obj.updateDynamic("exporterSuppressColumns")(exporterSuppressColumns)
+    if (!js.isUndefined(exporterSuppressMenu)) __obj.updateDynamic("exporterSuppressMenu")(exporterSuppressMenu)
+    if (!js.isUndefined(fastWatch)) __obj.updateDynamic("fastWatch")(fastWatch)
+    if (!js.isUndefined(flatEntityAccess)) __obj.updateDynamic("flatEntityAccess")(flatEntityAccess)
+    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate)
+    if (getRowIdentity != null) __obj.updateDynamic("getRowIdentity")(getRowIdentity)
+    if (gridFooterTemplate != null) __obj.updateDynamic("gridFooterTemplate")(gridFooterTemplate)
+    if (groupingNullLabel != null) __obj.updateDynamic("groupingNullLabel")(groupingNullLabel)
+    if (!js.isUndefined(groupingShowCounts)) __obj.updateDynamic("groupingShowCounts")(groupingShowCounts)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (horizontalScrollThreshold != null) __obj.updateDynamic("horizontalScrollThreshold")(horizontalScrollThreshold.asInstanceOf[js.Any])
+    if (importerDataAddCallback != null) __obj.updateDynamic("importerDataAddCallback")(importerDataAddCallback)
+    if (importerErrorCallback != null) __obj.updateDynamic("importerErrorCallback")(importerErrorCallback)
+    if (importerHeaderFilter != null) __obj.updateDynamic("importerHeaderFilter")(importerHeaderFilter)
+    if (importerNewObject != null) __obj.updateDynamic("importerNewObject")(importerNewObject)
+    if (importerObjectCallback != null) __obj.updateDynamic("importerObjectCallback")(importerObjectCallback)
+    if (importerProcessHeaders != null) __obj.updateDynamic("importerProcessHeaders")(importerProcessHeaders)
+    if (!js.isUndefined(importerShowMenu)) __obj.updateDynamic("importerShowMenu")(importerShowMenu)
+    if (!js.isUndefined(infiniteScrollDown)) __obj.updateDynamic("infiniteScrollDown")(infiniteScrollDown)
+    if (infiniteScrollRowsFromEnd != null) __obj.updateDynamic("infiniteScrollRowsFromEnd")(infiniteScrollRowsFromEnd.asInstanceOf[js.Any])
+    if (!js.isUndefined(infiniteScrollUp)) __obj.updateDynamic("infiniteScrollUp")(infiniteScrollUp)
+    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(isRowSelectable)
+    if (maxVisibleColumnCount != null) __obj.updateDynamic("maxVisibleColumnCount")(maxVisibleColumnCount.asInstanceOf[js.Any])
+    if (minRowsToShow != null) __obj.updateDynamic("minRowsToShow")(minRowsToShow.asInstanceOf[js.Any])
+    if (minimumColumnSize != null) __obj.updateDynamic("minimumColumnSize")(minimumColumnSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifierKeysToMultiSelect)) __obj.updateDynamic("modifierKeysToMultiSelect")(modifierKeysToMultiSelect)
+    if (!js.isUndefined(modifierKeysToMultiSelectCells)) __obj.updateDynamic("modifierKeysToMultiSelectCells")(modifierKeysToMultiSelectCells)
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
+    if (!js.isUndefined(noUnselect)) __obj.updateDynamic("noUnselect")(noUnselect)
+    if (onRegisterApi != null) __obj.updateDynamic("onRegisterApi")(onRegisterApi)
+    if (paginationCurrentPage != null) __obj.updateDynamic("paginationCurrentPage")(paginationCurrentPage.asInstanceOf[js.Any])
+    if (paginationPageSize != null) __obj.updateDynamic("paginationPageSize")(paginationPageSize.asInstanceOf[js.Any])
+    if (paginationPageSizes != null) __obj.updateDynamic("paginationPageSizes")(paginationPageSizes)
+    if (paginationTemplate != null) __obj.updateDynamic("paginationTemplate")(paginationTemplate)
+    if (rowEditWaitInterval != null) __obj.updateDynamic("rowEditWaitInterval")(rowEditWaitInterval.asInstanceOf[js.Any])
+    if (rowEquality != null) __obj.updateDynamic("rowEquality")(rowEquality)
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (rowIdentity != null) __obj.updateDynamic("rowIdentity")(rowIdentity)
+    if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate)
+    if (!js.isUndefined(saveFilter)) __obj.updateDynamic("saveFilter")(saveFilter)
+    if (!js.isUndefined(saveFocus)) __obj.updateDynamic("saveFocus")(saveFocus)
+    if (!js.isUndefined(saveGrouping)) __obj.updateDynamic("saveGrouping")(saveGrouping)
+    if (!js.isUndefined(saveGroupingExpandedStates)) __obj.updateDynamic("saveGroupingExpandedStates")(saveGroupingExpandedStates)
+    if (!js.isUndefined(saveOrder)) __obj.updateDynamic("saveOrder")(saveOrder)
+    if (!js.isUndefined(savePinning)) __obj.updateDynamic("savePinning")(savePinning)
+    if (!js.isUndefined(saveRowIdentity)) __obj.updateDynamic("saveRowIdentity")(saveRowIdentity)
+    if (!js.isUndefined(saveScroll)) __obj.updateDynamic("saveScroll")(saveScroll)
+    if (!js.isUndefined(saveSelection)) __obj.updateDynamic("saveSelection")(saveSelection)
+    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort)
+    if (!js.isUndefined(saveTreeView)) __obj.updateDynamic("saveTreeView")(saveTreeView)
+    if (!js.isUndefined(saveVisible)) __obj.updateDynamic("saveVisible")(saveVisible)
+    if (!js.isUndefined(saveWidths)) __obj.updateDynamic("saveWidths")(saveWidths)
+    if (scrollDebounce != null) __obj.updateDynamic("scrollDebounce")(scrollDebounce.asInstanceOf[js.Any])
+    if (scrollThreshold != null) __obj.updateDynamic("scrollThreshold")(scrollThreshold.asInstanceOf[js.Any])
+    if (selectionRowHeaderWidth != null) __obj.updateDynamic("selectionRowHeaderWidth")(selectionRowHeaderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnFooter)) __obj.updateDynamic("showColumnFooter")(showColumnFooter)
+    if (!js.isUndefined(showGridFooter)) __obj.updateDynamic("showGridFooter")(showGridFooter)
+    if (!js.isUndefined(showHeader)) __obj.updateDynamic("showHeader")(showHeader)
+    if (!js.isUndefined(showTreeExpandNoChildren)) __obj.updateDynamic("showTreeExpandNoChildren")(showTreeExpandNoChildren)
+    if (!js.isUndefined(showTreeRowHeader)) __obj.updateDynamic("showTreeRowHeader")(showTreeRowHeader)
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (treeCustomAggregations != null) __obj.updateDynamic("treeCustomAggregations")(treeCustomAggregations)
+    if (treeIndent != null) __obj.updateDynamic("treeIndent")(treeIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeRowHeaderAlwaysVisible)) __obj.updateDynamic("treeRowHeaderAlwaysVisible")(treeRowHeaderAlwaysVisible)
+    if (treeRowHeaderBaseWidth != null) __obj.updateDynamic("treeRowHeaderBaseWidth")(treeRowHeaderBaseWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalFiltering)) __obj.updateDynamic("useExternalFiltering")(useExternalFiltering)
+    if (!js.isUndefined(useExternalPagination)) __obj.updateDynamic("useExternalPagination")(useExternalPagination)
+    if (!js.isUndefined(useExternalSorting)) __obj.updateDynamic("useExternalSorting")(useExternalSorting)
+    if (virtualizationThreshold != null) __obj.updateDynamic("virtualizationThreshold")(virtualizationThreshold.asInstanceOf[js.Any])
+    if (wheelScrollThrottle != null) __obj.updateDynamic("wheelScrollThrottle")(wheelScrollThrottle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IGridOptionsOf[TEntity]]
+  }
+}
+

@@ -28,3 +28,22 @@ trait QuestMilestone extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QuestMilestone {
+  @scala.inline
+  def apply(
+    completionRewardData: java.lang.String = null,
+    criteria: js.Array[QuestCriterion] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    state: java.lang.String = null
+  ): QuestMilestone = {
+    val __obj = js.Dynamic.literal()
+    if (completionRewardData != null) __obj.updateDynamic("completionRewardData")(completionRewardData)
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[QuestMilestone]
+  }
+}
+

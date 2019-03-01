@@ -20,3 +20,18 @@ trait PageIndexChangingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object PageIndexChangingEventUIParam {
+  @scala.inline
+  def apply(
+    currentPageIndex: scala.Int | scala.Double = null,
+    newPageIndex: scala.Int | scala.Double = null,
+    owner: js.Any = null
+  ): PageIndexChangingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (currentPageIndex != null) __obj.updateDynamic("currentPageIndex")(currentPageIndex.asInstanceOf[js.Any])
+    if (newPageIndex != null) __obj.updateDynamic("newPageIndex")(newPageIndex.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[PageIndexChangingEventUIParam]
+  }
+}
+

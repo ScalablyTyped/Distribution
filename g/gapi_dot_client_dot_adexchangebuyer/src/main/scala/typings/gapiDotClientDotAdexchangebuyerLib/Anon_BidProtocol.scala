@@ -34,3 +34,20 @@ trait Anon_BidProtocol extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_BidProtocol {
+  @scala.inline
+  def apply(
+    bidProtocol: java.lang.String = null,
+    maximumQps: scala.Int | scala.Double = null,
+    region: java.lang.String = null,
+    url: java.lang.String = null
+  ): Anon_BidProtocol = {
+    val __obj = js.Dynamic.literal()
+    if (bidProtocol != null) __obj.updateDynamic("bidProtocol")(bidProtocol)
+    if (maximumQps != null) __obj.updateDynamic("maximumQps")(maximumQps.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_BidProtocol]
+  }
+}
+

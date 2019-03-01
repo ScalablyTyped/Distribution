@@ -10,3 +10,13 @@ trait ListTasksResponse extends js.Object {
   var tasks: js.Array[Task]
 }
 
+object ListTasksResponse {
+  @scala.inline
+  def apply(tasks: js.Array[Task], nextPageToken: java.lang.String = null): ListTasksResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tasks")(tasks)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListTasksResponse]
+  }
+}
+

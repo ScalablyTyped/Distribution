@@ -10,3 +10,13 @@ trait Anon_Data[T] extends js.Object {
   var partial: scala.Boolean
 }
 
+object Anon_Data {
+  @scala.inline
+  def apply[T](partial: scala.Boolean, data: T = null): Anon_Data[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("partial")(partial)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Data[T]]
+  }
+}
+

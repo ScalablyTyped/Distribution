@@ -21,3 +21,14 @@ trait IKinetics extends js.Object {
   def ease(p: scala.Double): scala.Double
 }
 
+object IKinetics {
+  @scala.inline
+  def apply(duration: scala.Double, ease: js.Function1[scala.Double, scala.Double], power: scala.Double): IKinetics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("ease")(ease)
+    __obj.updateDynamic("power")(power)
+    __obj.asInstanceOf[IKinetics]
+  }
+}
+

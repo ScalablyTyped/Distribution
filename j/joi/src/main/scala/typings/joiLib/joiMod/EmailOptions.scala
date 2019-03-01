@@ -20,3 +20,18 @@ trait EmailOptions extends js.Object {
   var tldWhitelist: js.UndefOr[js.Array[java.lang.String] | js.Object] = js.undefined
 }
 
+object EmailOptions {
+  @scala.inline
+  def apply(
+    errorLevel: scala.Double | scala.Boolean = null,
+    minDomainAtoms: scala.Int | scala.Double = null,
+    tldWhitelist: js.Array[java.lang.String] | js.Object = null
+  ): EmailOptions = {
+    val __obj = js.Dynamic.literal()
+    if (errorLevel != null) __obj.updateDynamic("errorLevel")(errorLevel.asInstanceOf[js.Any])
+    if (minDomainAtoms != null) __obj.updateDynamic("minDomainAtoms")(minDomainAtoms.asInstanceOf[js.Any])
+    if (tldWhitelist != null) __obj.updateDynamic("tldWhitelist")(tldWhitelist.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EmailOptions]
+  }
+}
+

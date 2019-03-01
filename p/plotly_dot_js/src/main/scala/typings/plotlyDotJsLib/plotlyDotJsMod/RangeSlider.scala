@@ -14,3 +14,24 @@ trait RangeSlider extends js.Object {
   var visible: scala.Boolean
 }
 
+object RangeSlider {
+  @scala.inline
+  def apply(
+    bgcolor: java.lang.String,
+    bordercolor: java.lang.String,
+    borderwidth: scala.Double,
+    range: js.Tuple2[Datum, Datum],
+    thickness: scala.Double,
+    visible: scala.Boolean
+  ): RangeSlider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bgcolor")(bgcolor)
+    __obj.updateDynamic("bordercolor")(bordercolor)
+    __obj.updateDynamic("borderwidth")(borderwidth)
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("thickness")(thickness)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[RangeSlider]
+  }
+}
+

@@ -14,3 +14,22 @@ trait strings
   var OPEN_DIALOG_SELECTOR: atMaterialDialogLib.atMaterialDialogLibStrings.`DOTmdc-dialog--open`
 }
 
+object strings {
+  @scala.inline
+  def apply(
+    ACCEPT_EVENT: atMaterialDialogLib.atMaterialDialogLibStrings.`MDCDialog:accept`,
+    ACCEPT_SELECTOR: atMaterialDialogLib.atMaterialDialogLibStrings.`DOTmdc-dialog__footer__button--accept`,
+    CANCEL_EVENT: atMaterialDialogLib.atMaterialDialogLibStrings.`MDCDialog:cancel`,
+    DIALOG_SURFACE_SELECTOR: atMaterialDialogLib.atMaterialDialogLibStrings.`DOTmdc-dialog__surface`,
+    OPEN_DIALOG_SELECTOR: atMaterialDialogLib.atMaterialDialogLibStrings.`DOTmdc-dialog--open`
+  ): strings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ACCEPT_EVENT")(ACCEPT_EVENT)
+    __obj.updateDynamic("ACCEPT_SELECTOR")(ACCEPT_SELECTOR)
+    __obj.updateDynamic("CANCEL_EVENT")(CANCEL_EVENT)
+    __obj.updateDynamic("DIALOG_SURFACE_SELECTOR")(DIALOG_SURFACE_SELECTOR)
+    __obj.updateDynamic("OPEN_DIALOG_SELECTOR")(OPEN_DIALOG_SELECTOR)
+    __obj.asInstanceOf[strings]
+  }
+}
+

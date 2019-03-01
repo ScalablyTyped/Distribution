@@ -12,3 +12,20 @@ trait Anon_ColorMargin extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ColorMargin {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    margin: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_ColorMargin = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ColorMargin]
+  }
+}
+

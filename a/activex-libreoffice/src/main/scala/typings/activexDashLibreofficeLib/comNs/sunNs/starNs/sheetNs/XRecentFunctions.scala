@@ -38,3 +38,28 @@ trait XRecentFunctions
   def setRecentFunctionIds(aRecentFunctionIds: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]): scala.Unit
 }
 
+object XRecentFunctions {
+  @scala.inline
+  def apply(
+    MaxRecentFunctions: scala.Double,
+    RecentFunctionIds: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    getMaxRecentFunctions: js.Function0[scala.Double],
+    getRecentFunctionIds: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setRecentFunctionIds: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit]
+  ): XRecentFunctions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MaxRecentFunctions")(MaxRecentFunctions)
+    __obj.updateDynamic("RecentFunctionIds")(RecentFunctionIds)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMaxRecentFunctions")(getMaxRecentFunctions)
+    __obj.updateDynamic("getRecentFunctionIds")(getRecentFunctionIds)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setRecentFunctionIds")(setRecentFunctionIds)
+    __obj.asInstanceOf[XRecentFunctions]
+  }
+}
+

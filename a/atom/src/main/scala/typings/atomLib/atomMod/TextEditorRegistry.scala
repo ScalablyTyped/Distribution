@@ -38,3 +38,30 @@ trait TextEditorRegistry extends js.Object {
   def setGrammarOverride(editor: TextEditor, scopeName: java.lang.String): scala.Unit
 }
 
+object TextEditorRegistry {
+  @scala.inline
+  def apply(
+    add: js.Function1[TextEditor, Disposable],
+    clear: js.Function0[scala.Unit],
+    clearGrammarOverride: js.Function1[TextEditor, scala.Unit],
+    getGrammarOverride: js.Function1[TextEditor, java.lang.String | scala.Null],
+    maintainConfig: js.Function1[TextEditor, Disposable],
+    maintainGrammar: js.Function1[TextEditor, Disposable],
+    observe: js.Function1[js.Function1[/* editor */ TextEditor, scala.Unit], Disposable],
+    remove: js.Function1[TextEditor, scala.Boolean],
+    setGrammarOverride: js.Function2[TextEditor, java.lang.String, scala.Unit]
+  ): TextEditorRegistry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("clearGrammarOverride")(clearGrammarOverride)
+    __obj.updateDynamic("getGrammarOverride")(getGrammarOverride)
+    __obj.updateDynamic("maintainConfig")(maintainConfig)
+    __obj.updateDynamic("maintainGrammar")(maintainGrammar)
+    __obj.updateDynamic("observe")(observe)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("setGrammarOverride")(setGrammarOverride)
+    __obj.asInstanceOf[TextEditorRegistry]
+  }
+}
+

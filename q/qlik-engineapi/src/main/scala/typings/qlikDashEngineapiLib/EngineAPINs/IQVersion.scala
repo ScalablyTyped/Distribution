@@ -9,3 +9,12 @@ trait IQVersion extends js.Object {
   var qComponentVersion: java.lang.String
 }
 
+object IQVersion {
+  @scala.inline
+  def apply(qComponentVersion: java.lang.String): IQVersion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qComponentVersion")(qComponentVersion)
+    __obj.asInstanceOf[IQVersion]
+  }
+}
+

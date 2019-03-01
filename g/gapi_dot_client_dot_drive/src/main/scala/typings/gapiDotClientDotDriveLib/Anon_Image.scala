@@ -12,3 +12,13 @@ trait Anon_Image extends js.Object {
   var mimeType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Image {
+  @scala.inline
+  def apply(image: java.lang.String = null, mimeType: java.lang.String = null): Anon_Image = {
+    val __obj = js.Dynamic.literal()
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    __obj.asInstanceOf[Anon_Image]
+  }
+}
+

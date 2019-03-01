@@ -53,3 +53,20 @@ trait Subscription extends js.Object {
   var topic: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Subscription {
+  @scala.inline
+  def apply(
+    ackDeadlineSeconds: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    pushConfig: PushConfig = null,
+    topic: java.lang.String = null
+  ): Subscription = {
+    val __obj = js.Dynamic.literal()
+    if (ackDeadlineSeconds != null) __obj.updateDynamic("ackDeadlineSeconds")(ackDeadlineSeconds.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pushConfig != null) __obj.updateDynamic("pushConfig")(pushConfig)
+    if (topic != null) __obj.updateDynamic("topic")(topic)
+    __obj.asInstanceOf[Subscription]
+  }
+}
+

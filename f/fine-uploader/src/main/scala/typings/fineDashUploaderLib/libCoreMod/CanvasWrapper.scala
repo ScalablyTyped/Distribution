@@ -24,3 +24,20 @@ trait CanvasWrapper extends js.Object {
   var `type`: js.UndefOr[stdLib.MimeType] = js.undefined
 }
 
+object CanvasWrapper {
+  @scala.inline
+  def apply(
+    canvas: stdLib.HTMLCanvasElement = null,
+    name: java.lang.String = null,
+    quality: scala.Int | scala.Double = null,
+    `type`: stdLib.MimeType = null
+  ): CanvasWrapper = {
+    val __obj = js.Dynamic.literal()
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CanvasWrapper]
+  }
+}
+

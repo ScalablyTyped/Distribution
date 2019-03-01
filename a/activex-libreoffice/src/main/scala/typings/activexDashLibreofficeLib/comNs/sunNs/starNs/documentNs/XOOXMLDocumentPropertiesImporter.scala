@@ -28,3 +28,24 @@ trait XOOXMLDocumentPropertiesImporter
   ): scala.Unit
 }
 
+object XOOXMLDocumentPropertiesImporter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    importProperties: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.embedNs.XStorage, 
+      XDocumentProperties, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XOOXMLDocumentPropertiesImporter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("importProperties")(importProperties)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XOOXMLDocumentPropertiesImporter]
+  }
+}
+

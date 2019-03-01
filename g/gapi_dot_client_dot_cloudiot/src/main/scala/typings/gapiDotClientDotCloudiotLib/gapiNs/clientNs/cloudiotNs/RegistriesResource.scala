@@ -36,3 +36,54 @@ trait RegistriesResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 
+object RegistriesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeviceRegistry]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    devices: DevicesResource,
+    get: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeviceRegistry]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDeviceRegistriesResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeviceRegistry]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotCloudiotLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ]
+  ): RegistriesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("devices")(devices)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.asInstanceOf[RegistriesResource]
+  }
+}
+

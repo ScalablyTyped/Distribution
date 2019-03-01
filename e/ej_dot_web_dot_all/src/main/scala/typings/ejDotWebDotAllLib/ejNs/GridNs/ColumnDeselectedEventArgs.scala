@@ -23,3 +23,22 @@ trait ColumnDeselectedEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColumnDeselectedEventArgs {
+  @scala.inline
+  def apply(
+    column: js.Any = null,
+    columnIndex: scala.Int | scala.Double = null,
+    headerCell: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): ColumnDeselectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (headerCell != null) __obj.updateDynamic("headerCell")(headerCell)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ColumnDeselectedEventArgs]
+  }
+}
+

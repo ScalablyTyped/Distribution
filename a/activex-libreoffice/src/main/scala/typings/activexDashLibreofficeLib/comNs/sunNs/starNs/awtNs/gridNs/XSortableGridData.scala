@@ -28,3 +28,22 @@ trait XSortableGridData extends js.Object {
   def sortByColumn(ColumnIndex: scala.Double, SortAscending: scala.Boolean): scala.Unit
 }
 
+object XSortableGridData {
+  @scala.inline
+  def apply(
+    CurrentSortOrder: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[scala.Double, scala.Boolean],
+    getCurrentSortOrder: js.Function0[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[scala.Double, scala.Boolean]
+    ],
+    removeColumnSort: js.Function0[scala.Unit],
+    sortByColumn: js.Function2[scala.Double, scala.Boolean, scala.Unit]
+  ): XSortableGridData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CurrentSortOrder")(CurrentSortOrder)
+    __obj.updateDynamic("getCurrentSortOrder")(getCurrentSortOrder)
+    __obj.updateDynamic("removeColumnSort")(removeColumnSort)
+    __obj.updateDynamic("sortByColumn")(sortByColumn)
+    __obj.asInstanceOf[XSortableGridData]
+  }
+}
+

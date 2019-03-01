@@ -48,3 +48,32 @@ trait SignaturePadOptions extends js.Object {
   var velocityFilterWeight: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SignaturePadOptions {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    dotSize: scala.Double | js.Function0[scala.Double] = null,
+    maxWidth: scala.Int | scala.Double = null,
+    minDistance: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    onBegin: js.Function1[/* event */ stdLib.MouseEvent, scala.Unit] = null,
+    onEnd: js.Function1[/* event */ stdLib.MouseEvent, scala.Unit] = null,
+    penColor: java.lang.String = null,
+    throttle: scala.Int | scala.Double = null,
+    velocityFilterWeight: scala.Int | scala.Double = null
+  ): SignaturePadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (dotSize != null) __obj.updateDynamic("dotSize")(dotSize.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minDistance != null) __obj.updateDynamic("minDistance")(minDistance.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (onBegin != null) __obj.updateDynamic("onBegin")(onBegin)
+    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
+    if (penColor != null) __obj.updateDynamic("penColor")(penColor)
+    if (throttle != null) __obj.updateDynamic("throttle")(throttle.asInstanceOf[js.Any])
+    if (velocityFilterWeight != null) __obj.updateDynamic("velocityFilterWeight")(velocityFilterWeight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SignaturePadOptions]
+  }
+}
+

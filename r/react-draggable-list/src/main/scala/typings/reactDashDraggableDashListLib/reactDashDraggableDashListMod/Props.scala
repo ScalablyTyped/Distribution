@@ -28,3 +28,42 @@ trait Props[I, C, T] extends js.Object {
   var unsetZIndex: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply[I, C, T](
+    itemKey: java.lang.String | (js.Function1[/* item */ I, java.lang.String]),
+    list: js.Array[I],
+    template: org.scalablytyped.runtime.Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[/* context */ js.Any], T],
+    autoScrollMaxSpeed: scala.Int | scala.Double = null,
+    autoScrollRegionSize: scala.Int | scala.Double = null,
+    commonProps: C = null,
+    constrainDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    container: js.Function0[js.UndefOr[reactLib.HTMLElement | scala.Null]] = null,
+    onMoveEnd: js.Function4[
+      /* newList */ js.Array[I], 
+      /* movedItem */ I, 
+      /* oldIndex */ scala.Double, 
+      /* newIndex */ scala.Double, 
+      scala.Unit
+    ] = null,
+    padding: scala.Int | scala.Double = null,
+    springConfig: js.Object = null,
+    unsetZIndex: js.UndefOr[scala.Boolean] = js.undefined
+  ): Props[I, C, T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("itemKey")(itemKey.asInstanceOf[js.Any])
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("template")(template)
+    if (autoScrollMaxSpeed != null) __obj.updateDynamic("autoScrollMaxSpeed")(autoScrollMaxSpeed.asInstanceOf[js.Any])
+    if (autoScrollRegionSize != null) __obj.updateDynamic("autoScrollRegionSize")(autoScrollRegionSize.asInstanceOf[js.Any])
+    if (commonProps != null) __obj.updateDynamic("commonProps")(commonProps.asInstanceOf[js.Any])
+    if (!js.isUndefined(constrainDrag)) __obj.updateDynamic("constrainDrag")(constrainDrag)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(onMoveEnd)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (springConfig != null) __obj.updateDynamic("springConfig")(springConfig)
+    if (!js.isUndefined(unsetZIndex)) __obj.updateDynamic("unsetZIndex")(unsetZIndex)
+    __obj.asInstanceOf[Props[I, C, T]]
+  }
+}
+

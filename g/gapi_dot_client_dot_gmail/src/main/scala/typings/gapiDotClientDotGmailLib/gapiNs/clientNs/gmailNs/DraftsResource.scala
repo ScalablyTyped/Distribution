@@ -20,3 +20,39 @@ trait DraftsResource extends js.Object {
   def update(request: gapiDotClientDotGmailLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[Draft]
 }
 
+object DraftsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[gapiDotClientDotGmailLib.Anon_Alt, gapiDotClientLib.gapiNs.clientNs.Request[Draft]],
+    delete: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsFormat, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Draft]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFieldsIncludeSpamTrash, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDraftsResponse]
+    ],
+    send: js.Function1[
+      gapiDotClientDotGmailLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Message]
+    ],
+    update: js.Function1[
+      gapiDotClientDotGmailLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Draft]
+    ]
+  ): DraftsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("send")(send)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[DraftsResource]
+  }
+}
+

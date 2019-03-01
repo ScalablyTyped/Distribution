@@ -14,3 +14,16 @@ trait ToolbarSettings extends js.Object {
   var toolbarItem: js.UndefOr[ToolbarItems | java.lang.String] = js.undefined
 }
 
+object ToolbarSettings {
+  @scala.inline
+  def apply(
+    showToolTip: js.UndefOr[scala.Boolean] = js.undefined,
+    toolbarItem: ToolbarItems | java.lang.String = null
+  ): ToolbarSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showToolTip)) __obj.updateDynamic("showToolTip")(showToolTip)
+    if (toolbarItem != null) __obj.updateDynamic("toolbarItem")(toolbarItem.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToolbarSettings]
+  }
+}
+

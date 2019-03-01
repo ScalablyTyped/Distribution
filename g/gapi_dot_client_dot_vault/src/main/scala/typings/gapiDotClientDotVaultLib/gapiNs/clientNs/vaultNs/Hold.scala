@@ -32,3 +32,26 @@ trait Hold extends js.Object {
   var updateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Hold {
+  @scala.inline
+  def apply(
+    accounts: js.Array[HeldAccount] = null,
+    corpus: java.lang.String = null,
+    holdId: java.lang.String = null,
+    name: java.lang.String = null,
+    orgUnit: HeldOrgUnit = null,
+    query: CorpusQuery = null,
+    updateTime: java.lang.String = null
+  ): Hold = {
+    val __obj = js.Dynamic.literal()
+    if (accounts != null) __obj.updateDynamic("accounts")(accounts)
+    if (corpus != null) __obj.updateDynamic("corpus")(corpus)
+    if (holdId != null) __obj.updateDynamic("holdId")(holdId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (orgUnit != null) __obj.updateDynamic("orgUnit")(orgUnit)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    __obj.asInstanceOf[Hold]
+  }
+}
+

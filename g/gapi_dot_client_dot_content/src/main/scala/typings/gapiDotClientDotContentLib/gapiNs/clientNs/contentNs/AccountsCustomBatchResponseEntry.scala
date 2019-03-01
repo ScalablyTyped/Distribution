@@ -16,3 +16,20 @@ trait AccountsCustomBatchResponseEntry extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccountsCustomBatchResponseEntry {
+  @scala.inline
+  def apply(
+    account: Account = null,
+    batchId: scala.Int | scala.Double = null,
+    errors: Errors = null,
+    kind: java.lang.String = null
+  ): AccountsCustomBatchResponseEntry = {
+    val __obj = js.Dynamic.literal()
+    if (account != null) __obj.updateDynamic("account")(account)
+    if (batchId != null) __obj.updateDynamic("batchId")(batchId.asInstanceOf[js.Any])
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[AccountsCustomBatchResponseEntry]
+  }
+}
+

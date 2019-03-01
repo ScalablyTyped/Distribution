@@ -140,3 +140,78 @@ trait GitPullRequest extends js.Object {
   var workItemRefs: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ResourceRef]
 }
 
+object GitPullRequest {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    artifactId: java.lang.String,
+    autoCompleteSetBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    closedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    closedDate: stdLib.Date,
+    codeReviewId: scala.Double,
+    commits: js.Array[GitCommitRef],
+    completionOptions: GitPullRequestCompletionOptions,
+    completionQueueTime: stdLib.Date,
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    creationDate: stdLib.Date,
+    description: java.lang.String,
+    forkSource: GitForkRef,
+    labels: js.Array[vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.WebApiTagDefinition],
+    lastMergeCommit: GitCommitRef,
+    lastMergeSourceCommit: GitCommitRef,
+    lastMergeTargetCommit: GitCommitRef,
+    mergeFailureMessage: java.lang.String,
+    mergeFailureType: PullRequestMergeFailureType,
+    mergeId: java.lang.String,
+    mergeOptions: GitPullRequestMergeOptions,
+    mergeStatus: PullRequestAsyncStatus,
+    pullRequestId: scala.Double,
+    remoteUrl: java.lang.String,
+    repository: GitRepository,
+    reviewers: js.Array[IdentityRefWithVote],
+    sourceRefName: java.lang.String,
+    status: PullRequestStatus,
+    supportsIterations: scala.Boolean,
+    targetRefName: java.lang.String,
+    title: java.lang.String,
+    url: java.lang.String,
+    workItemRefs: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ResourceRef]
+  ): GitPullRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("artifactId")(artifactId)
+    __obj.updateDynamic("autoCompleteSetBy")(autoCompleteSetBy)
+    __obj.updateDynamic("closedBy")(closedBy)
+    __obj.updateDynamic("closedDate")(closedDate)
+    __obj.updateDynamic("codeReviewId")(codeReviewId)
+    __obj.updateDynamic("commits")(commits)
+    __obj.updateDynamic("completionOptions")(completionOptions)
+    __obj.updateDynamic("completionQueueTime")(completionQueueTime)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("creationDate")(creationDate)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("forkSource")(forkSource)
+    __obj.updateDynamic("labels")(labels)
+    __obj.updateDynamic("lastMergeCommit")(lastMergeCommit)
+    __obj.updateDynamic("lastMergeSourceCommit")(lastMergeSourceCommit)
+    __obj.updateDynamic("lastMergeTargetCommit")(lastMergeTargetCommit)
+    __obj.updateDynamic("mergeFailureMessage")(mergeFailureMessage)
+    __obj.updateDynamic("mergeFailureType")(mergeFailureType)
+    __obj.updateDynamic("mergeId")(mergeId)
+    __obj.updateDynamic("mergeOptions")(mergeOptions)
+    __obj.updateDynamic("mergeStatus")(mergeStatus)
+    __obj.updateDynamic("pullRequestId")(pullRequestId)
+    __obj.updateDynamic("remoteUrl")(remoteUrl)
+    __obj.updateDynamic("repository")(repository)
+    __obj.updateDynamic("reviewers")(reviewers)
+    __obj.updateDynamic("sourceRefName")(sourceRefName)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("supportsIterations")(supportsIterations)
+    __obj.updateDynamic("targetRefName")(targetRefName)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("workItemRefs")(workItemRefs)
+    __obj.asInstanceOf[GitPullRequest]
+  }
+}
+

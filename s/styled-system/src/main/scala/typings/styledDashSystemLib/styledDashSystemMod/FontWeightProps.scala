@@ -16,3 +16,12 @@ trait FontWeightProps extends js.Object {
   var fontWeight: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.FontWeightProperty]] = js.undefined
 }
 
+object FontWeightProps {
+  @scala.inline
+  def apply(fontWeight: ResponsiveValue[csstypeLib.csstypeMod.FontWeightProperty] = null): FontWeightProps = {
+    val __obj = js.Dynamic.literal()
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FontWeightProps]
+  }
+}
+

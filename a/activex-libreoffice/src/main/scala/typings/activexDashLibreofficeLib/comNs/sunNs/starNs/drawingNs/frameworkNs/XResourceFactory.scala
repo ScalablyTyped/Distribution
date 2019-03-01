@@ -29,3 +29,16 @@ trait XResourceFactory extends js.Object {
   def releaseResource(xResource: XResource): scala.Unit
 }
 
+object XResourceFactory {
+  @scala.inline
+  def apply(
+    createResource: js.Function1[XResourceId, XResource],
+    releaseResource: js.Function1[XResource, scala.Unit]
+  ): XResourceFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createResource")(createResource)
+    __obj.updateDynamic("releaseResource")(releaseResource)
+    __obj.asInstanceOf[XResourceFactory]
+  }
+}
+

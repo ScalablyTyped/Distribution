@@ -16,3 +16,20 @@ trait ProductsListResponse extends js.Object {
   var tokenPagination: js.UndefOr[TokenPagination] = js.undefined
 }
 
+object ProductsListResponse {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    pageInfo: PageInfo = null,
+    product: js.Array[Product] = null,
+    tokenPagination: TokenPagination = null
+  ): ProductsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
+    if (product != null) __obj.updateDynamic("product")(product)
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
+    __obj.asInstanceOf[ProductsListResponse]
+  }
+}
+

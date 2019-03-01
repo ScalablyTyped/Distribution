@@ -24,3 +24,22 @@ trait Audience extends js.Object {
   var visibility: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Audience {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    item: PlusDomainsAclentryResource = null,
+    kind: java.lang.String = null,
+    memberCount: scala.Int | scala.Double = null,
+    visibility: java.lang.String = null
+  ): Audience = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (memberCount != null) __obj.updateDynamic("memberCount")(memberCount.asInstanceOf[js.Any])
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    __obj.asInstanceOf[Audience]
+  }
+}
+

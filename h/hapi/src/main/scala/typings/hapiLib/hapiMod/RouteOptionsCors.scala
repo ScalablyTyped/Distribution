@@ -41,3 +41,26 @@ trait RouteOptionsCors extends js.Object {
   ] = js.undefined
 }
 
+object RouteOptionsCors {
+  @scala.inline
+  def apply(
+    additionalExposedHeaders: js.Array[java.lang.String] = null,
+    additionalHeaders: js.Array[java.lang.String] = null,
+    credentials: js.UndefOr[scala.Boolean] = js.undefined,
+    exposedHeaders: js.Array[java.lang.String] = null,
+    headers: js.Array[java.lang.String] = null,
+    maxAge: scala.Int | scala.Double = null,
+    origin: js.Array[java.lang.String] | hapiLib.hapiLibStrings.`*` | hapiLib.hapiLibStrings.ignore = null
+  ): RouteOptionsCors = {
+    val __obj = js.Dynamic.literal()
+    if (additionalExposedHeaders != null) __obj.updateDynamic("additionalExposedHeaders")(additionalExposedHeaders)
+    if (additionalHeaders != null) __obj.updateDynamic("additionalHeaders")(additionalHeaders)
+    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials)
+    if (exposedHeaders != null) __obj.updateDynamic("exposedHeaders")(exposedHeaders)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteOptionsCors]
+  }
+}
+

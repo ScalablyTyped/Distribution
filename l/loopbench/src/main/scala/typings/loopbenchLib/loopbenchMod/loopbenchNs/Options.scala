@@ -17,3 +17,13 @@ trait Options extends js.Object {
   var sampleInterval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(limit: scala.Int | scala.Double = null, sampleInterval: scala.Int | scala.Double = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (sampleInterval != null) __obj.updateDynamic("sampleInterval")(sampleInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

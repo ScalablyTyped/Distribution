@@ -19,3 +19,13 @@ trait ISearchSuggestionResult extends js.Object {
   var qSuggestions: js.Array[ISearchSuggestItem]
 }
 
+object ISearchSuggestionResult {
+  @scala.inline
+  def apply(qFieldNames: js.Array[java.lang.String], qSuggestions: js.Array[ISearchSuggestItem]): ISearchSuggestionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFieldNames")(qFieldNames)
+    __obj.updateDynamic("qSuggestions")(qSuggestions)
+    __obj.asInstanceOf[ISearchSuggestionResult]
+  }
+}
+

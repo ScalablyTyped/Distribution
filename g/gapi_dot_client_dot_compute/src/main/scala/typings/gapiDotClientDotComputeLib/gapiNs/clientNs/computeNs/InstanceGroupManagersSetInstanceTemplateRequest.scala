@@ -13,3 +13,12 @@ trait InstanceGroupManagersSetInstanceTemplateRequest extends js.Object {
   var instanceTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstanceGroupManagersSetInstanceTemplateRequest {
+  @scala.inline
+  def apply(instanceTemplate: java.lang.String = null): InstanceGroupManagersSetInstanceTemplateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (instanceTemplate != null) __obj.updateDynamic("instanceTemplate")(instanceTemplate)
+    __obj.asInstanceOf[InstanceGroupManagersSetInstanceTemplateRequest]
+  }
+}
+

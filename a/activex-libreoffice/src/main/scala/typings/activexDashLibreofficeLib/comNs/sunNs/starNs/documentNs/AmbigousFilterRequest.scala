@@ -23,3 +23,22 @@ trait AmbigousFilterRequest
   var URL: java.lang.String
 }
 
+object AmbigousFilterRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    DetectedFilter: java.lang.String,
+    Message: java.lang.String,
+    SelectedFilter: java.lang.String,
+    URL: java.lang.String
+  ): AmbigousFilterRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("DetectedFilter")(DetectedFilter)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("SelectedFilter")(SelectedFilter)
+    __obj.updateDynamic("URL")(URL)
+    __obj.asInstanceOf[AmbigousFilterRequest]
+  }
+}
+

@@ -20,3 +20,13 @@ trait ObjectOrderFixed extends js.Object {
   var pre: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object ObjectOrderFixed {
+  @scala.inline
+  def apply(post: js.Array[_] = null, pre: js.Array[_] = null): ObjectOrderFixed = {
+    val __obj = js.Dynamic.literal()
+    if (post != null) __obj.updateDynamic("post")(post)
+    if (pre != null) __obj.updateDynamic("pre")(pre)
+    __obj.asInstanceOf[ObjectOrderFixed]
+  }
+}
+

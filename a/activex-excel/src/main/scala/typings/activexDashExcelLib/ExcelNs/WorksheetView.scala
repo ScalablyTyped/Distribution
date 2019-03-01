@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSGlobal("Excel.WorksheetView")
 @js.native
-class WorksheetView protected () extends js.Object {
+class WorksheetView protected () extends SheetView {
   val Application: Application = js.native
   val Creator: XlCreator = js.native
   var DisplayFormulas: scala.Boolean = js.native

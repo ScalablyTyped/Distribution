@@ -53,3 +53,22 @@ trait ChartErrorBarsData extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartErrorBarsData {
+  @scala.inline
+  def apply(
+    endStyleCap: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartErrorBarsFormatData = null,
+    include: officeDashJsDashPreviewLib.ExcelNs.ChartErrorBarsInclude | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Both | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MinusValues | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PlusValues = null,
+    `type`: officeDashJsDashPreviewLib.ExcelNs.ChartErrorBarsType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FixedValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StDev | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StError | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Custom = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartErrorBarsData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(endStyleCap)) __obj.updateDynamic("endStyleCap")(endStyleCap)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ChartErrorBarsData]
+  }
+}
+

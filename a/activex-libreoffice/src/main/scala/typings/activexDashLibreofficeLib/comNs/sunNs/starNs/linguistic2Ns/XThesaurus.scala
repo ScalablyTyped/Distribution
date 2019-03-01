@@ -28,3 +28,33 @@ trait XThesaurus extends XSupportedLocales {
   ): activexDashInteropLib.SafeArray[XMeaning]
 }
 
+object XThesaurus {
+  @scala.inline
+  def apply(
+    Locales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    acquire: js.Function0[scala.Unit],
+    getLocales: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    hasLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryMeanings: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      activexDashInteropLib.SafeArray[XMeaning]
+    ],
+    release: js.Function0[scala.Unit]
+  ): XThesaurus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Locales")(Locales)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLocales")(getLocales)
+    __obj.updateDynamic("hasLocale")(hasLocale)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("queryMeanings")(queryMeanings)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XThesaurus]
+  }
+}
+

@@ -10,3 +10,13 @@ trait IPageLangItems extends js.Object {
   var hu: js.UndefOr[IPageLabels] = js.undefined
 }
 
+object IPageLangItems {
+  @scala.inline
+  def apply(en: IPageLabels = null, hu: IPageLabels = null): IPageLangItems = {
+    val __obj = js.Dynamic.literal()
+    if (en != null) __obj.updateDynamic("en")(en)
+    if (hu != null) __obj.updateDynamic("hu")(hu)
+    __obj.asInstanceOf[IPageLangItems]
+  }
+}
+

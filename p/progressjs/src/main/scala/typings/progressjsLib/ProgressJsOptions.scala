@@ -20,3 +20,18 @@ trait ProgressJsOptions extends js.Object {
   var theme: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProgressJsOptions {
+  @scala.inline
+  def apply(
+    considerTransition: js.UndefOr[scala.Boolean] = js.undefined,
+    overlayMode: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: java.lang.String = null
+  ): ProgressJsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(considerTransition)) __obj.updateDynamic("considerTransition")(considerTransition)
+    if (!js.isUndefined(overlayMode)) __obj.updateDynamic("overlayMode")(overlayMode)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[ProgressJsOptions]
+  }
+}
+

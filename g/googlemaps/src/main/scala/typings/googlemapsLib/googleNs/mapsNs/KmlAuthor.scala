@@ -11,3 +11,14 @@ trait KmlAuthor extends js.Object {
   var uri: java.lang.String
 }
 
+object KmlAuthor {
+  @scala.inline
+  def apply(email: java.lang.String, name: java.lang.String, uri: java.lang.String): KmlAuthor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[KmlAuthor]
+  }
+}
+

@@ -15,3 +15,26 @@ trait MochaPhantomJS extends js.Object {
   def run(): scala.Unit
 }
 
+object MochaPhantomJS {
+  @scala.inline
+  def apply(
+    columns: scala.Double,
+    customizeMocha: js.Function1[MochaPhantomJSOptions, scala.Unit],
+    mochaStartWait: scala.Double,
+    output: js.Any,
+    run: js.Function0[scala.Unit],
+    startTime: stdLib.Date,
+    url: java.lang.String
+  ): MochaPhantomJS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columns")(columns)
+    __obj.updateDynamic("customizeMocha")(customizeMocha)
+    __obj.updateDynamic("mochaStartWait")(mochaStartWait)
+    __obj.updateDynamic("output")(output)
+    __obj.updateDynamic("run")(run)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[MochaPhantomJS]
+  }
+}
+

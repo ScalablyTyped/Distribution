@@ -27,3 +27,18 @@ trait launchOptions extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object launchOptions {
+  @scala.inline
+  def apply(
+    launchOptionsLocationKey: js.UndefOr[scala.Boolean] = js.undefined,
+    source: java.lang.String = null,
+    url: java.lang.String = null
+  ): launchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(launchOptionsLocationKey)) __obj.updateDynamic("launchOptionsLocationKey")(launchOptionsLocationKey)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[launchOptions]
+  }
+}
+

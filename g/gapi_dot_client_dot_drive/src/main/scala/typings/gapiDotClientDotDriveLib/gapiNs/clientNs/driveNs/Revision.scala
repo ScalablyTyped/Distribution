@@ -36,3 +36,36 @@ trait Revision extends js.Object {
   var size: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Revision {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    keepForever: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    lastModifyingUser: User = null,
+    md5Checksum: java.lang.String = null,
+    mimeType: java.lang.String = null,
+    modifiedTime: java.lang.String = null,
+    originalFilename: java.lang.String = null,
+    publishAuto: js.UndefOr[scala.Boolean] = js.undefined,
+    published: js.UndefOr[scala.Boolean] = js.undefined,
+    publishedOutsideDomain: js.UndefOr[scala.Boolean] = js.undefined,
+    size: java.lang.String = null
+  ): Revision = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(keepForever)) __obj.updateDynamic("keepForever")(keepForever)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastModifyingUser != null) __obj.updateDynamic("lastModifyingUser")(lastModifyingUser)
+    if (md5Checksum != null) __obj.updateDynamic("md5Checksum")(md5Checksum)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime)
+    if (originalFilename != null) __obj.updateDynamic("originalFilename")(originalFilename)
+    if (!js.isUndefined(publishAuto)) __obj.updateDynamic("publishAuto")(publishAuto)
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published)
+    if (!js.isUndefined(publishedOutsideDomain)) __obj.updateDynamic("publishedOutsideDomain")(publishedOutsideDomain)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Revision]
+  }
+}
+

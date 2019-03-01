@@ -14,3 +14,22 @@ trait Connection extends js.Object {
   var onClose: js.Function
 }
 
+object Connection {
+  @scala.inline
+  def apply(
+    clientAddress: java.lang.String,
+    close: js.Function,
+    httpHeaders: js.Object,
+    id: java.lang.String,
+    onClose: js.Function
+  ): Connection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientAddress")(clientAddress)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("httpHeaders")(httpHeaders)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("onClose")(onClose)
+    __obj.asInstanceOf[Connection]
+  }
+}
+

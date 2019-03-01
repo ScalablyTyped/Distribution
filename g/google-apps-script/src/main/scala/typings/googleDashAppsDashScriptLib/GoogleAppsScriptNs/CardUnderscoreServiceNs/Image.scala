@@ -15,3 +15,26 @@ trait Image extends js.Object {
   def setOpenLink(openLink: OpenLink): Image
 }
 
+object Image {
+  @scala.inline
+  def apply(
+    setAltText: js.Function1[java.lang.String, Image],
+    setAuthorizationAction: js.Function1[AuthorizationAction, Image],
+    setComposeAction: js.Function2[Action, ComposedEmailType, Image],
+    setImageUrl: js.Function1[java.lang.String, Image],
+    setOnClickAction: js.Function1[Action, Image],
+    setOnClickOpenLinkAction: js.Function1[Action, Image],
+    setOpenLink: js.Function1[OpenLink, Image]
+  ): Image = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setAltText")(setAltText)
+    __obj.updateDynamic("setAuthorizationAction")(setAuthorizationAction)
+    __obj.updateDynamic("setComposeAction")(setComposeAction)
+    __obj.updateDynamic("setImageUrl")(setImageUrl)
+    __obj.updateDynamic("setOnClickAction")(setOnClickAction)
+    __obj.updateDynamic("setOnClickOpenLinkAction")(setOnClickOpenLinkAction)
+    __obj.updateDynamic("setOpenLink")(setOpenLink)
+    __obj.asInstanceOf[Image]
+  }
+}
+

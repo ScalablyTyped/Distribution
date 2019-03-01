@@ -12,3 +12,13 @@ trait Anon_FilteringCount extends js.Object {
   var filteringStatus: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_FilteringCount {
+  @scala.inline
+  def apply(filteringCount: java.lang.String = null, filteringStatus: scala.Int | scala.Double = null): Anon_FilteringCount = {
+    val __obj = js.Dynamic.literal()
+    if (filteringCount != null) __obj.updateDynamic("filteringCount")(filteringCount)
+    if (filteringStatus != null) __obj.updateDynamic("filteringStatus")(filteringStatus.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FilteringCount]
+  }
+}
+

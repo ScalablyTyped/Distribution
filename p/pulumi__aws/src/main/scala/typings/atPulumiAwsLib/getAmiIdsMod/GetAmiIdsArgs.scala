@@ -36,3 +36,22 @@ trait GetAmiIdsArgs extends js.Object {
   val sortAscending: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GetAmiIdsArgs {
+  @scala.inline
+  def apply(
+    executableUsers: js.Array[java.lang.String] = null,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    nameRegex: java.lang.String = null,
+    owners: js.Array[java.lang.String] = null,
+    sortAscending: js.UndefOr[scala.Boolean] = js.undefined
+  ): GetAmiIdsArgs = {
+    val __obj = js.Dynamic.literal()
+    if (executableUsers != null) __obj.updateDynamic("executableUsers")(executableUsers)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (nameRegex != null) __obj.updateDynamic("nameRegex")(nameRegex)
+    if (owners != null) __obj.updateDynamic("owners")(owners)
+    if (!js.isUndefined(sortAscending)) __obj.updateDynamic("sortAscending")(sortAscending)
+    __obj.asInstanceOf[GetAmiIdsArgs]
+  }
+}
+

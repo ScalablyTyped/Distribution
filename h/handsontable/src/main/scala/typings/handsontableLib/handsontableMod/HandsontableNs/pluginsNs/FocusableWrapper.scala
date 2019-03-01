@@ -15,3 +15,26 @@ trait FocusableWrapper extends js.Object {
   def useSecondaryElement(): scala.Unit
 }
 
+object FocusableWrapper {
+  @scala.inline
+  def apply(
+    eventManager: EventManager,
+    focus: js.Function0[scala.Unit],
+    getFocusableElement: js.Function0[stdLib.HTMLElement],
+    listenersCount: stdLib.WeakSet[stdLib.HTMLElement],
+    mainElement: stdLib.HTMLElement,
+    setFocusableElement: js.Function1[stdLib.HTMLElement, scala.Unit],
+    useSecondaryElement: js.Function0[scala.Unit]
+  ): FocusableWrapper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventManager")(eventManager)
+    __obj.updateDynamic("focus")(focus)
+    __obj.updateDynamic("getFocusableElement")(getFocusableElement)
+    __obj.updateDynamic("listenersCount")(listenersCount)
+    __obj.updateDynamic("mainElement")(mainElement)
+    __obj.updateDynamic("setFocusableElement")(setFocusableElement)
+    __obj.updateDynamic("useSecondaryElement")(useSecondaryElement)
+    __obj.asInstanceOf[FocusableWrapper]
+  }
+}
+

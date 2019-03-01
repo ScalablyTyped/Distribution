@@ -11,3 +11,14 @@ trait State extends js.Object {
   var profile: Profile | scala.Null
 }
 
+object State {
+  @scala.inline
+  def apply(color: java.lang.String, isRunning: scala.Boolean, profile: Profile = null): State = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("isRunning")(isRunning)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    __obj.asInstanceOf[State]
+  }
+}
+

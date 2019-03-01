@@ -16,3 +16,13 @@ trait ListReposResponse extends js.Object {
   var repos: js.UndefOr[js.Array[Repo]] = js.undefined
 }
 
+object ListReposResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, repos: js.Array[Repo] = null): ListReposResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (repos != null) __obj.updateDynamic("repos")(repos)
+    __obj.asInstanceOf[ListReposResponse]
+  }
+}
+

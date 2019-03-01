@@ -9,3 +9,12 @@ trait Anon_Resolve extends js.Object {
   def resolve(): js.Any
 }
 
+object Anon_Resolve {
+  @scala.inline
+  def apply(resolve: js.Function0[js.Any]): Anon_Resolve = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resolve")(resolve)
+    __obj.asInstanceOf[Anon_Resolve]
+  }
+}
+

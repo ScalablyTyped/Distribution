@@ -15,3 +15,14 @@ trait ISlidingWindowSource extends js.Object {
   ): scala.Double
 }
 
+object ISlidingWindowSource {
+  @scala.inline
+  def apply(
+    fetchMoreItems: js.Function5[js.Any, scala.Double, js.Array[_], scala.Double, scala.Double, scala.Double]
+  ): ISlidingWindowSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fetchMoreItems")(fetchMoreItems)
+    __obj.asInstanceOf[ISlidingWindowSource]
+  }
+}
+

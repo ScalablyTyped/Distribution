@@ -10,3 +10,13 @@ trait Anon_Label extends js.Object {
   var value: java.lang.String | js.Any
 }
 
+object Anon_Label {
+  @scala.inline
+  def apply(label: java.lang.String | js.Any, value: java.lang.String | js.Any): Anon_Label = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Label]
+  }
+}
+

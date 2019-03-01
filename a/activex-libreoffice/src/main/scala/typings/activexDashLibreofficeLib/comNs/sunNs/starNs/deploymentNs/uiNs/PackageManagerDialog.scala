@@ -31,3 +31,35 @@ trait PackageManagerDialog
   def createDefault(): scala.Unit
 }
 
+object PackageManagerDialog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    create: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    createAndInstall: js.Function1[java.lang.String, scala.Unit],
+    createDefault: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setDialogTitle: js.Function1[java.lang.String, scala.Unit],
+    startExecuteModal: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.uiNs.dialogsNs.XDialogClosedListener, 
+      scala.Unit
+    ]
+  ): PackageManagerDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createAndInstall")(createAndInstall)
+    __obj.updateDynamic("createDefault")(createDefault)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setDialogTitle")(setDialogTitle)
+    __obj.updateDynamic("startExecuteModal")(startExecuteModal)
+    __obj.asInstanceOf[PackageManagerDialog]
+  }
+}
+

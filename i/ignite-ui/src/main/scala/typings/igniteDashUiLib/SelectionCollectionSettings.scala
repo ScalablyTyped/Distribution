@@ -15,3 +15,23 @@ trait SelectionCollectionSettings
   var subscribers: js.UndefOr[SelectionCollectionSettingsSubscribers] = js.undefined
 }
 
+object SelectionCollectionSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for SelectionCollectionSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    multipleSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    owner: js.Any = null,
+    subscribers: SelectionCollectionSettingsSubscribers = null
+  ): SelectionCollectionSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(multipleSelection)) __obj.updateDynamic("multipleSelection")(multipleSelection)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (subscribers != null) __obj.updateDynamic("subscribers")(subscribers)
+    __obj.asInstanceOf[SelectionCollectionSettings]
+  }
+}
+

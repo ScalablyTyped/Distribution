@@ -46,3 +46,88 @@ trait IMetadataCardControl extends js.Object {
   def SetValueItemState(itemID: java.lang.String, state: js.Any): scala.Unit
 }
 
+object IMetadataCardControl {
+  @scala.inline
+  def apply(
+    ActivateLink: js.Function1[js.Any, scala.Unit],
+    AddNewItem: js.Function1[java.lang.String, js.Any],
+    AddNewSubItem: js.Function2[java.lang.String, js.Any, js.Any],
+    AllowAdding: scala.Boolean,
+    AllowHitHighlighting: js.Function0[scala.Boolean],
+    CanActivateLink: js.Function1[js.Any, scala.Boolean],
+    CanAddNewSubItem: js.Function2[java.lang.String, js.Any, scala.Boolean],
+    CanEditItem: js.Function1[js.Any, scala.Boolean],
+    CreateSelectionList: js.Function0[IMetadataCardSelectionList],
+    CreateUnvalidatedValue: js.Function1[java.lang.String, IMetadataCardUnvalidatedValue],
+    EditItem: js.Function1[js.Any, js.Any],
+    Events: IEvents,
+    FindItem: js.Function1[java.lang.String, js.Any],
+    FindItemByID: js.Function1[scala.Double, js.Any],
+    GetSelectableValueItemStates: js.Function0[js.Any],
+    GetValueSuggestions: js.Function0[js.Any],
+    HasAutomaticValue: js.Function0[scala.Boolean],
+    HasInitialValue: js.Function0[scala.Boolean],
+    HasUncalculatedAutomaticValue: js.Function0[scala.Boolean],
+    Hierarchical: scala.Boolean,
+    ID: java.lang.String,
+    IsExternal: js.Function0[scala.Boolean],
+    Label: java.lang.String,
+    Linked: scala.Boolean,
+    Modified: scala.Boolean,
+    MustExist: scala.Boolean,
+    PropertyDef: mfilesLib.MFilesNs.MFBuiltInPropertyDef | scala.Double,
+    ReadOnly: scala.Boolean,
+    RealObjectType: scala.Boolean,
+    RefreshList: js.Function0[scala.Unit],
+    Remove: js.Function0[scala.Unit],
+    RevertToInitialValue: js.Function0[scala.Unit],
+    SetValueItemState: js.Function2[java.lang.String, js.Any, scala.Unit],
+    Type: java.lang.String,
+    Value: js.Any,
+    ValueRequired: scala.Boolean,
+    Valuelist: mfilesLib.MFilesNs.MFBuiltInValueList | scala.Double,
+    Visible: scala.Boolean
+  ): IMetadataCardControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActivateLink")(ActivateLink)
+    __obj.updateDynamic("AddNewItem")(AddNewItem)
+    __obj.updateDynamic("AddNewSubItem")(AddNewSubItem)
+    __obj.updateDynamic("AllowAdding")(AllowAdding)
+    __obj.updateDynamic("AllowHitHighlighting")(AllowHitHighlighting)
+    __obj.updateDynamic("CanActivateLink")(CanActivateLink)
+    __obj.updateDynamic("CanAddNewSubItem")(CanAddNewSubItem)
+    __obj.updateDynamic("CanEditItem")(CanEditItem)
+    __obj.updateDynamic("CreateSelectionList")(CreateSelectionList)
+    __obj.updateDynamic("CreateUnvalidatedValue")(CreateUnvalidatedValue)
+    __obj.updateDynamic("EditItem")(EditItem)
+    __obj.updateDynamic("Events")(Events)
+    __obj.updateDynamic("FindItem")(FindItem)
+    __obj.updateDynamic("FindItemByID")(FindItemByID)
+    __obj.updateDynamic("GetSelectableValueItemStates")(GetSelectableValueItemStates)
+    __obj.updateDynamic("GetValueSuggestions")(GetValueSuggestions)
+    __obj.updateDynamic("HasAutomaticValue")(HasAutomaticValue)
+    __obj.updateDynamic("HasInitialValue")(HasInitialValue)
+    __obj.updateDynamic("HasUncalculatedAutomaticValue")(HasUncalculatedAutomaticValue)
+    __obj.updateDynamic("Hierarchical")(Hierarchical)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("IsExternal")(IsExternal)
+    __obj.updateDynamic("Label")(Label)
+    __obj.updateDynamic("Linked")(Linked)
+    __obj.updateDynamic("Modified")(Modified)
+    __obj.updateDynamic("MustExist")(MustExist)
+    __obj.updateDynamic("PropertyDef")(PropertyDef.asInstanceOf[js.Any])
+    __obj.updateDynamic("ReadOnly")(ReadOnly)
+    __obj.updateDynamic("RealObjectType")(RealObjectType)
+    __obj.updateDynamic("RefreshList")(RefreshList)
+    __obj.updateDynamic("Remove")(Remove)
+    __obj.updateDynamic("RevertToInitialValue")(RevertToInitialValue)
+    __obj.updateDynamic("SetValueItemState")(SetValueItemState)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("Value")(Value)
+    __obj.updateDynamic("ValueRequired")(ValueRequired)
+    __obj.updateDynamic("Valuelist")(Valuelist.asInstanceOf[js.Any])
+    __obj.updateDynamic("Visible")(Visible)
+    __obj.asInstanceOf[IMetadataCardControl]
+  }
+}
+

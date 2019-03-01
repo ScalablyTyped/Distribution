@@ -20,3 +20,18 @@ trait Anon_Cwd extends js.Object {
   var mode: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object Anon_Cwd {
+  @scala.inline
+  def apply(
+    cwd: java.lang.String = null,
+    dirMode: scala.Int | scala.Double = null,
+    mode: scala.Double | java.lang.String = null
+  ): Anon_Cwd = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (dirMode != null) __obj.updateDynamic("dirMode")(dirMode.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Cwd]
+  }
+}
+

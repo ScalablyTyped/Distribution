@@ -40,3 +40,62 @@ trait PetFinder extends js.Object {
   ): scala.Unit
 }
 
+object PetFinder {
+  @scala.inline
+  def apply(
+    findPet: js.Function2[
+      js.Any, 
+      js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], scala.Unit], 
+      scala.Unit
+    ],
+    findShelter: js.Function3[
+      java.lang.String, 
+      js.Any, 
+      js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], scala.Unit], 
+      scala.Unit
+    ],
+    getBreedList: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ js.Any, /* breedArray */ js.Array[java.lang.String], scala.Unit], 
+      scala.Unit
+    ],
+    getPet: js.Function3[
+      scala.Double, 
+      js.Any, 
+      js.Function2[/* error */ js.Any, /* pet */ Pet, scala.Unit], 
+      scala.Unit
+    ],
+    getPetsInShelter: js.Function3[
+      java.lang.String, 
+      js.Any, 
+      js.Function2[/* error */ js.Any, /* pets */ js.Array[Pet], scala.Unit], 
+      scala.Unit
+    ],
+    getRandomPet: js.Function2[js.Any, js.Function2[/* error */ js.Any, /* pet */ Pet, scala.Unit], scala.Unit],
+    getShelter: js.Function3[
+      java.lang.String, 
+      js.Any, 
+      js.Function2[/* error */ js.Any, /* shelter */ Shelter, scala.Unit], 
+      scala.Unit
+    ],
+    getSheltersWithBreeds: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      js.Any, 
+      js.Function2[/* error */ js.Any, /* shelters */ js.Array[Shelter], scala.Unit], 
+      scala.Unit
+    ]
+  ): PetFinder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("findPet")(findPet)
+    __obj.updateDynamic("findShelter")(findShelter)
+    __obj.updateDynamic("getBreedList")(getBreedList)
+    __obj.updateDynamic("getPet")(getPet)
+    __obj.updateDynamic("getPetsInShelter")(getPetsInShelter)
+    __obj.updateDynamic("getRandomPet")(getRandomPet)
+    __obj.updateDynamic("getShelter")(getShelter)
+    __obj.updateDynamic("getSheltersWithBreeds")(getSheltersWithBreeds)
+    __obj.asInstanceOf[PetFinder]
+  }
+}
+

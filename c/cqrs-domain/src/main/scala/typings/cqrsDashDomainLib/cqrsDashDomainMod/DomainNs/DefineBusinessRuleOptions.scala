@@ -22,3 +22,18 @@ trait DefineBusinessRuleOptions extends js.Object {
   var priority: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DefineBusinessRuleOptions {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    name: java.lang.String = null,
+    priority: scala.Int | scala.Double = null
+  ): DefineBusinessRuleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefineBusinessRuleOptions]
+  }
+}
+

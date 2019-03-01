@@ -29,3 +29,52 @@ trait DataLabelContext extends js.Object {
   var z: scala.Double
 }
 
+object DataLabelContext {
+  @scala.inline
+  def apply(
+    close: scala.Double,
+    componentElement: stdLib.Element,
+    group: java.lang.String | js.Array[java.lang.String],
+    high: scala.Double,
+    id: js.Any,
+    label: java.lang.String,
+    low: scala.Double,
+    open: scala.Double,
+    series: java.lang.String,
+    targetValue: scala.Double,
+    totalValue: scala.Double,
+    value: scala.Double,
+    volume: scala.Double,
+    x: scala.Double | java.lang.String,
+    y: scala.Double,
+    z: scala.Double,
+    data: js.Object = null,
+    groupData: js.Object = null,
+    itemData: js.Object = null,
+    seriesData: js.Object = null
+  ): DataLabelContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("componentElement")(componentElement)
+    __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    __obj.updateDynamic("high")(high)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("low")(low)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("series")(series)
+    __obj.updateDynamic("targetValue")(targetValue)
+    __obj.updateDynamic("totalValue")(totalValue)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("volume")(volume)
+    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("z")(z)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (groupData != null) __obj.updateDynamic("groupData")(groupData)
+    if (itemData != null) __obj.updateDynamic("itemData")(itemData)
+    if (seriesData != null) __obj.updateDynamic("seriesData")(seriesData)
+    __obj.asInstanceOf[DataLabelContext]
+  }
+}
+

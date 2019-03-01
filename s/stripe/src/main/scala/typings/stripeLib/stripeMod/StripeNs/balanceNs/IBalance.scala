@@ -22,3 +22,19 @@ trait IBalance
   var pending: js.Array[ISourceType]
 }
 
+object IBalance {
+  @scala.inline
+  def apply(
+    available: js.Array[ISourceType],
+    livemode: scala.Boolean,
+    `object`: java.lang.String,
+    pending: js.Array[ISourceType]
+  ): IBalance = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("available")(available)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("pending")(pending)
+    __obj.asInstanceOf[IBalance]
+  }
+}
+

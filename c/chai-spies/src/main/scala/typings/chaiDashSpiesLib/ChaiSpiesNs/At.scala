@@ -30,3 +30,16 @@ trait At extends js.Object {
   def most(n: scala.Double): chaiDashSpiesLib.ChaiNs.Assertion
 }
 
+object At {
+  @scala.inline
+  def apply(
+    least: js.Function1[scala.Double, chaiDashSpiesLib.ChaiNs.Assertion],
+    most: js.Function1[scala.Double, chaiDashSpiesLib.ChaiNs.Assertion]
+  ): At = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("least")(least)
+    __obj.updateDynamic("most")(most)
+    __obj.asInstanceOf[At]
+  }
+}
+

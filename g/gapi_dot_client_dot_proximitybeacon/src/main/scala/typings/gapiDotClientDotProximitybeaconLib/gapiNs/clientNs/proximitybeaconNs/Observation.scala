@@ -25,3 +25,18 @@ trait Observation extends js.Object {
   var timestampMs: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Observation {
+  @scala.inline
+  def apply(
+    advertisedId: AdvertisedId = null,
+    telemetry: java.lang.String = null,
+    timestampMs: java.lang.String = null
+  ): Observation = {
+    val __obj = js.Dynamic.literal()
+    if (advertisedId != null) __obj.updateDynamic("advertisedId")(advertisedId)
+    if (telemetry != null) __obj.updateDynamic("telemetry")(telemetry)
+    if (timestampMs != null) __obj.updateDynamic("timestampMs")(timestampMs)
+    __obj.asInstanceOf[Observation]
+  }
+}
+

@@ -25,3 +25,20 @@ trait IStyleSheetConfig extends js.Object {
   var onInsertRule: js.UndefOr[js.Function1[/* rule */ java.lang.String, scala.Unit]] = js.undefined
 }
 
+object IStyleSheetConfig {
+  @scala.inline
+  def apply(
+    defaultPrefix: java.lang.String = null,
+    injectionMode: InjectionMode = null,
+    namespace: java.lang.String = null,
+    onInsertRule: js.Function1[/* rule */ java.lang.String, scala.Unit] = null
+  ): IStyleSheetConfig = {
+    val __obj = js.Dynamic.literal()
+    if (defaultPrefix != null) __obj.updateDynamic("defaultPrefix")(defaultPrefix)
+    if (injectionMode != null) __obj.updateDynamic("injectionMode")(injectionMode)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (onInsertRule != null) __obj.updateDynamic("onInsertRule")(onInsertRule)
+    __obj.asInstanceOf[IStyleSheetConfig]
+  }
+}
+

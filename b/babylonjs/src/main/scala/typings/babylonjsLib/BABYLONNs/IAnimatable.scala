@@ -15,3 +15,12 @@ trait IAnimatable extends js.Object {
   var animations: js.Array[Animation]
 }
 
+object IAnimatable {
+  @scala.inline
+  def apply(animations: js.Array[Animation]): IAnimatable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animations")(animations)
+    __obj.asInstanceOf[IAnimatable]
+  }
+}
+

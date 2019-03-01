@@ -16,3 +16,13 @@ trait BlobWrapper extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BlobWrapper {
+  @scala.inline
+  def apply(blob: stdLib.Blob = null, name: java.lang.String = null): BlobWrapper = {
+    val __obj = js.Dynamic.literal()
+    if (blob != null) __obj.updateDynamic("blob")(blob)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[BlobWrapper]
+  }
+}
+

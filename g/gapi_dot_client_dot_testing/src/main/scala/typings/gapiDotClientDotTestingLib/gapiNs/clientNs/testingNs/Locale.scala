@@ -32,3 +32,20 @@ trait Locale extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Locale {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    region: java.lang.String = null,
+    tags: js.Array[java.lang.String] = null
+  ): Locale = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[Locale]
+  }
+}
+

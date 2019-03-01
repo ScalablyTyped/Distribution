@@ -12,3 +12,13 @@ trait Anon_Primary extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Primary {
+  @scala.inline
+  def apply(primary: js.UndefOr[scala.Boolean] = js.undefined, value: java.lang.String = null): Anon_Primary = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Primary]
+  }
+}
+

@@ -25,3 +25,39 @@ trait ThemeOptions extends js.Object {
   var zIndex: js.UndefOr[atMaterialDashUiCoreLib.stylesZIndexMod.ZIndexOptions] = js.undefined
 }
 
+object ThemeOptions {
+  @scala.inline
+  def apply(
+    breakpoints: atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.BreakpointsOptions = null,
+    direction: Direction = null,
+    mixins: atMaterialDashUiCoreLib.stylesCreateMixinsMod.MixinsOptions = null,
+    overrides: atMaterialDashUiCoreLib.stylesOverridesMod.Overrides = null,
+    palette: atMaterialDashUiCoreLib.stylesCreatePaletteMod.PaletteOptions = null,
+    props: atMaterialDashUiCoreLib.stylesPropsMod.ComponentsProps = null,
+    shadows: atMaterialDashUiCoreLib.stylesShadowsMod.Shadows = null,
+    shape: atMaterialDashUiCoreLib.stylesShapeMod.ShapeOptions = null,
+    spacing: atMaterialDashUiCoreLib.stylesSpacingMod.SpacingOptions = null,
+    transitions: atMaterialDashUiCoreLib.stylesTransitionsMod.TransitionsOptions = null,
+    typography: atMaterialDashUiCoreLib.stylesCreateTypographyMod.TypographyOptions | (js.Function1[
+      /* palette */ atMaterialDashUiCoreLib.stylesCreatePaletteMod.Palette, 
+      atMaterialDashUiCoreLib.stylesCreateTypographyMod.TypographyOptions
+    ]) = null,
+    zIndex: atMaterialDashUiCoreLib.stylesZIndexMod.ZIndexOptions = null
+  ): ThemeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (overrides != null) __obj.updateDynamic("overrides")(overrides)
+    if (palette != null) __obj.updateDynamic("palette")(palette)
+    if (props != null) __obj.updateDynamic("props")(props)
+    if (shadows != null) __obj.updateDynamic("shadows")(shadows)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
+    if (transitions != null) __obj.updateDynamic("transitions")(transitions)
+    if (typography != null) __obj.updateDynamic("typography")(typography.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex)
+    __obj.asInstanceOf[ThemeOptions]
+  }
+}
+

@@ -14,3 +14,24 @@ trait GanttMessagesViews extends js.Object {
   var year: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GanttMessagesViews {
+  @scala.inline
+  def apply(
+    day: java.lang.String = null,
+    end: java.lang.String = null,
+    month: java.lang.String = null,
+    start: java.lang.String = null,
+    week: java.lang.String = null,
+    year: java.lang.String = null
+  ): GanttMessagesViews = {
+    val __obj = js.Dynamic.literal()
+    if (day != null) __obj.updateDynamic("day")(day)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (month != null) __obj.updateDynamic("month")(month)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (week != null) __obj.updateDynamic("week")(week)
+    if (year != null) __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[GanttMessagesViews]
+  }
+}
+

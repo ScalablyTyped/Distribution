@@ -13,3 +13,22 @@ trait ChartSeriesItemOutliers extends js.Object {
   var `type`: js.UndefOr[java.lang.String | js.Function] = js.undefined
 }
 
+object ChartSeriesItemOutliers {
+  @scala.inline
+  def apply(
+    background: java.lang.String | js.Function = null,
+    border: js.Function | ChartSeriesItemOutliersBorder = null,
+    rotation: scala.Double | js.Function = null,
+    size: scala.Double | js.Function = null,
+    `type`: java.lang.String | js.Function = null
+  ): ChartSeriesItemOutliers = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartSeriesItemOutliers]
+  }
+}
+

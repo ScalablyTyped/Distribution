@@ -16,3 +16,13 @@ trait LoginItemSettingsOptions extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LoginItemSettingsOptions {
+  @scala.inline
+  def apply(args: js.Array[java.lang.String] = null, path: java.lang.String = null): LoginItemSettingsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[LoginItemSettingsOptions]
+  }
+}
+

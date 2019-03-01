@@ -25,3 +25,45 @@ trait PermissionResource extends js.Object {
   var withLink: scala.Boolean
 }
 
+object PermissionResource {
+  @scala.inline
+  def apply(
+    additionalRoles: js.Array[java.lang.String],
+    authKey: java.lang.String,
+    deleted: scala.Boolean,
+    domain: java.lang.String,
+    emailAddress: java.lang.String,
+    etag: java.lang.String,
+    expirationDate: stdLib.Date,
+    id: java.lang.String,
+    kind: gapiDotDriveLib.gapiDotDriveLibStrings.`drive#permission`,
+    name: java.lang.String,
+    photoLink: java.lang.String,
+    role: java.lang.String,
+    selfLink: java.lang.String,
+    teamDrivePermissionDetails: js.Array[gapiDotDriveLib.Anon_AdditionalRoles],
+    `type`: java.lang.String,
+    value: java.lang.String,
+    withLink: scala.Boolean
+  ): PermissionResource = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("additionalRoles")(additionalRoles)
+    __obj.updateDynamic("authKey")(authKey)
+    __obj.updateDynamic("deleted")(deleted)
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("emailAddress")(emailAddress)
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("expirationDate")(expirationDate)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("photoLink")(photoLink)
+    __obj.updateDynamic("role")(role)
+    __obj.updateDynamic("selfLink")(selfLink)
+    __obj.updateDynamic("teamDrivePermissionDetails")(teamDrivePermissionDetails)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("withLink")(withLink)
+    __obj.asInstanceOf[PermissionResource]
+  }
+}
+

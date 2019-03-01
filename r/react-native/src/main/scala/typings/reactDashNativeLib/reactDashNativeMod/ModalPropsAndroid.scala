@@ -12,3 +12,12 @@ trait ModalPropsAndroid extends js.Object {
   var hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ModalPropsAndroid {
+  @scala.inline
+  def apply(hardwareAccelerated: js.UndefOr[scala.Boolean] = js.undefined): ModalPropsAndroid = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hardwareAccelerated)) __obj.updateDynamic("hardwareAccelerated")(hardwareAccelerated)
+    __obj.asInstanceOf[ModalPropsAndroid]
+  }
+}
+

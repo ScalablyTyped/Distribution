@@ -30,7 +30,7 @@ trait Anon_ScopedSettings extends js.Object {
     *  <Customizer scopedSettings={(currentScopedSettings) => ({ ...currentScopedSettings, ...myScopedSettings })} />
     * ```
     */
-  var scopedSettings: atUifabricUtilitiesLib.libCustomizationsMod.Settings | atUifabricUtilitiesLib.libCustomizationsMod.SettingsFunction
+  var scopedSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings | atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettingsFunction
   /**
     * @description
     * Settings are used as general settings for the React tree below.
@@ -46,6 +46,19 @@ trait Anon_ScopedSettings extends js.Object {
     *  <Customizer settings={(currentSettings) => ({ ...currentSettings, color: 'red' })} />
     * ```
     */
-  var settings: atUifabricUtilitiesLib.libCustomizationsMod.Settings | atUifabricUtilitiesLib.libCustomizationsMod.SettingsFunction
+  var settings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings | atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettingsFunction
+}
+
+object Anon_ScopedSettings {
+  @scala.inline
+  def apply(
+    scopedSettings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings | atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettingsFunction,
+    settings: atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettings | atUifabricUtilitiesLib.libCustomizationsCustomizationsMod.ISettingsFunction
+  ): Anon_ScopedSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scopedSettings")(scopedSettings.asInstanceOf[js.Any])
+    __obj.updateDynamic("settings")(settings.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ScopedSettings]
+  }
 }
 

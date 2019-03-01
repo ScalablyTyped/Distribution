@@ -10,3 +10,13 @@ trait Anon_As extends js.Object {
   var model: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _]
 }
 
+object Anon_As {
+  @scala.inline
+  def apply(model: sequelizeLib.sequelizeMod.sequelizeNs.Model[_, _], as: java.lang.String = null): Anon_As = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("model")(model)
+    if (as != null) __obj.updateDynamic("as")(as)
+    __obj.asInstanceOf[Anon_As]
+  }
+}
+

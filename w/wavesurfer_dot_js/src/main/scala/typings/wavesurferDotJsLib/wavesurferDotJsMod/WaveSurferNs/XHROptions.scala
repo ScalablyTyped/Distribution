@@ -10,3 +10,16 @@ trait XHROptions extends js.Object {
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object XHROptions {
+  @scala.inline
+  def apply(
+    requestHeaders: js.Array[XHRRequestHeader] = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): XHROptions = {
+    val __obj = js.Dynamic.literal()
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[XHROptions]
+  }
+}
+

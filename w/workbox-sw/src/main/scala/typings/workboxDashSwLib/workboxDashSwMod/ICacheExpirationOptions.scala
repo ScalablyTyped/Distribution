@@ -19,3 +19,13 @@ trait ICacheExpirationOptions extends js.Object {
   var maxEntries: scala.Double
 }
 
+object ICacheExpirationOptions {
+  @scala.inline
+  def apply(maxAgeSeconds: scala.Double, maxEntries: scala.Double): ICacheExpirationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds)
+    __obj.updateDynamic("maxEntries")(maxEntries)
+    __obj.asInstanceOf[ICacheExpirationOptions]
+  }
+}
+

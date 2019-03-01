@@ -13,3 +13,22 @@ trait Requester extends js.Object {
   var start: js.UndefOr[MetadataRequester] = js.undefined
 }
 
+object Requester {
+  @scala.inline
+  def apply(
+    cancel: CancelRequester = null,
+    getPeer: GetPeerRequester = null,
+    halfClose: CloseRequester = null,
+    sendMessage: MessageRequester = null,
+    start: MetadataRequester = null
+  ): Requester = {
+    val __obj = js.Dynamic.literal()
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (getPeer != null) __obj.updateDynamic("getPeer")(getPeer)
+    if (halfClose != null) __obj.updateDynamic("halfClose")(halfClose)
+    if (sendMessage != null) __obj.updateDynamic("sendMessage")(sendMessage)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Requester]
+  }
+}
+

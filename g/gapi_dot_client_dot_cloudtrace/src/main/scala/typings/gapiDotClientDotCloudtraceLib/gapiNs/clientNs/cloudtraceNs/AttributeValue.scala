@@ -14,3 +14,18 @@ trait AttributeValue extends js.Object {
   var stringValue: js.UndefOr[TruncatableString] = js.undefined
 }
 
+object AttributeValue {
+  @scala.inline
+  def apply(
+    boolValue: js.UndefOr[scala.Boolean] = js.undefined,
+    intValue: java.lang.String = null,
+    stringValue: TruncatableString = null
+  ): AttributeValue = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(boolValue)) __obj.updateDynamic("boolValue")(boolValue)
+    if (intValue != null) __obj.updateDynamic("intValue")(intValue)
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    __obj.asInstanceOf[AttributeValue]
+  }
+}
+

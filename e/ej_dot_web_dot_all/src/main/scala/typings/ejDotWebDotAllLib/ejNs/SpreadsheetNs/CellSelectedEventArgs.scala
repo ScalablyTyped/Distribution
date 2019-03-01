@@ -26,3 +26,24 @@ trait CellSelectedEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellSelectedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    selectedRange: js.Array[_] = null,
+    sheetIdx: scala.Int | scala.Double = null,
+    target: stdLib.HTMLElement = null,
+    `type`: java.lang.String = null
+  ): CellSelectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (selectedRange != null) __obj.updateDynamic("selectedRange")(selectedRange)
+    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CellSelectedEventArgs]
+  }
+}
+

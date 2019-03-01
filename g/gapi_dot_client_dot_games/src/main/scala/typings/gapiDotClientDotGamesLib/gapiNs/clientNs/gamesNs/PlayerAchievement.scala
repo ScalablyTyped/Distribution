@@ -31,3 +31,26 @@ trait PlayerAchievement extends js.Object {
   var lastUpdatedTimestamp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PlayerAchievement {
+  @scala.inline
+  def apply(
+    achievementState: java.lang.String = null,
+    currentSteps: scala.Int | scala.Double = null,
+    experiencePoints: java.lang.String = null,
+    formattedCurrentStepsString: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    lastUpdatedTimestamp: java.lang.String = null
+  ): PlayerAchievement = {
+    val __obj = js.Dynamic.literal()
+    if (achievementState != null) __obj.updateDynamic("achievementState")(achievementState)
+    if (currentSteps != null) __obj.updateDynamic("currentSteps")(currentSteps.asInstanceOf[js.Any])
+    if (experiencePoints != null) __obj.updateDynamic("experiencePoints")(experiencePoints)
+    if (formattedCurrentStepsString != null) __obj.updateDynamic("formattedCurrentStepsString")(formattedCurrentStepsString)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastUpdatedTimestamp != null) __obj.updateDynamic("lastUpdatedTimestamp")(lastUpdatedTimestamp)
+    __obj.asInstanceOf[PlayerAchievement]
+  }
+}
+

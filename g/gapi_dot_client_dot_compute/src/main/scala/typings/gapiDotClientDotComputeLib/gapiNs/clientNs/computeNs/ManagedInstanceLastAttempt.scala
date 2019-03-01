@@ -10,3 +10,12 @@ trait ManagedInstanceLastAttempt extends js.Object {
   var errors: js.UndefOr[gapiDotClientDotComputeLib.Anon_Errors] = js.undefined
 }
 
+object ManagedInstanceLastAttempt {
+  @scala.inline
+  def apply(errors: gapiDotClientDotComputeLib.Anon_Errors = null): ManagedInstanceLastAttempt = {
+    val __obj = js.Dynamic.literal()
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    __obj.asInstanceOf[ManagedInstanceLastAttempt]
+  }
+}
+

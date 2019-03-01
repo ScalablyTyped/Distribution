@@ -34,3 +34,34 @@ trait SignOptions extends js.Object {
   var subject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SignOptions {
+  @scala.inline
+  def apply(
+    algorithm: java.lang.String = null,
+    audience: java.lang.String | js.Array[java.lang.String] = null,
+    encoding: java.lang.String = null,
+    expiresIn: java.lang.String | scala.Double = null,
+    header: js.Object = null,
+    issuer: java.lang.String = null,
+    jwtid: java.lang.String = null,
+    keyid: java.lang.String = null,
+    noTimestamp: js.UndefOr[scala.Boolean] = js.undefined,
+    notBefore: java.lang.String | scala.Double = null,
+    subject: java.lang.String = null
+  ): SignOptions = {
+    val __obj = js.Dynamic.literal()
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (audience != null) __obj.updateDynamic("audience")(audience.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    if (jwtid != null) __obj.updateDynamic("jwtid")(jwtid)
+    if (keyid != null) __obj.updateDynamic("keyid")(keyid)
+    if (!js.isUndefined(noTimestamp)) __obj.updateDynamic("noTimestamp")(noTimestamp)
+    if (notBefore != null) __obj.updateDynamic("notBefore")(notBefore.asInstanceOf[js.Any])
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    __obj.asInstanceOf[SignOptions]
+  }
+}
+

@@ -20,3 +20,18 @@ trait VideoOrPlaylistSettings extends js.Object {
   var suggestedQuality: js.UndefOr[SuggestedVideoQuality] = js.undefined
 }
 
+object VideoOrPlaylistSettings {
+  @scala.inline
+  def apply(
+    endSeconds: scala.Int | scala.Double = null,
+    startSeconds: scala.Int | scala.Double = null,
+    suggestedQuality: SuggestedVideoQuality = null
+  ): VideoOrPlaylistSettings = {
+    val __obj = js.Dynamic.literal()
+    if (endSeconds != null) __obj.updateDynamic("endSeconds")(endSeconds.asInstanceOf[js.Any])
+    if (startSeconds != null) __obj.updateDynamic("startSeconds")(startSeconds.asInstanceOf[js.Any])
+    if (suggestedQuality != null) __obj.updateDynamic("suggestedQuality")(suggestedQuality.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoOrPlaylistSettings]
+  }
+}
+

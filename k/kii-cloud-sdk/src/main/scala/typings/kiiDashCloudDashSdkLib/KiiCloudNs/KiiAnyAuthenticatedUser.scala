@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("KiiCloud.KiiAnyAuthenticatedUser")
 @js.native
-class KiiAnyAuthenticatedUser () extends js.Object {
+class KiiAnyAuthenticatedUser () extends KiiACLSubject {
   /**
     * Returns the ID of AuthenticatedUser user.
     */

@@ -31,3 +31,20 @@ trait WebViewUriSource extends js.Object {
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WebViewUriSource {
+  @scala.inline
+  def apply(
+    body: java.lang.String = null,
+    headers: js.Any = null,
+    method: reactDashNativeLib.reactDashNativeLibStrings.GET | reactDashNativeLib.reactDashNativeLibStrings.POST = null,
+    uri: java.lang.String = null
+  ): WebViewUriSource = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[WebViewUriSource]
+  }
+}
+

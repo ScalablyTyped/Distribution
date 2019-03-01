@@ -20,3 +20,20 @@ trait AnnotationContextMenu extends js.Object {
   var isPropertiesEnable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AnnotationContextMenu {
+  @scala.inline
+  def apply(
+    isDeleteEnable: js.UndefOr[scala.Boolean] = js.undefined,
+    isEnable: js.UndefOr[scala.Boolean] = js.undefined,
+    isPopupEnable: js.UndefOr[scala.Boolean] = js.undefined,
+    isPropertiesEnable: js.UndefOr[scala.Boolean] = js.undefined
+  ): AnnotationContextMenu = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isDeleteEnable)) __obj.updateDynamic("isDeleteEnable")(isDeleteEnable)
+    if (!js.isUndefined(isEnable)) __obj.updateDynamic("isEnable")(isEnable)
+    if (!js.isUndefined(isPopupEnable)) __obj.updateDynamic("isPopupEnable")(isPopupEnable)
+    if (!js.isUndefined(isPropertiesEnable)) __obj.updateDynamic("isPropertiesEnable")(isPropertiesEnable)
+    __obj.asInstanceOf[AnnotationContextMenu]
+  }
+}
+

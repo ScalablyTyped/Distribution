@@ -20,3 +20,18 @@ trait RowsRequestingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowsRequestingEventUIParam {
+  @scala.inline
+  def apply(
+    chunkIndex: scala.Int | scala.Double = null,
+    chunkSize: scala.Int | scala.Double = null,
+    owner: js.Any = null
+  ): RowsRequestingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (chunkIndex != null) __obj.updateDynamic("chunkIndex")(chunkIndex.asInstanceOf[js.Any])
+    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[RowsRequestingEventUIParam]
+  }
+}
+

@@ -14,3 +14,14 @@ trait WebhookExpressOptions extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WebhookExpressOptions {
+  @scala.inline
+  def apply(host: java.lang.String = null, protocol: java.lang.String = null, url: java.lang.String = null): WebhookExpressOptions = {
+    val __obj = js.Dynamic.literal()
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WebhookExpressOptions]
+  }
+}
+

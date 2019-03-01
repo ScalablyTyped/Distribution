@@ -21,3 +21,38 @@ trait SparklineSeriesDefaults extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SparklineSeriesDefaults {
+  @scala.inline
+  def apply(
+    area: js.Any = null,
+    bar: js.Any = null,
+    border: SparklineSeriesDefaultsBorder = null,
+    column: js.Any = null,
+    gap: scala.Int | scala.Double = null,
+    labels: SparklineSeriesDefaultsLabels = null,
+    line: js.Any = null,
+    overlay: js.Any = null,
+    pie: js.Any = null,
+    spacing: scala.Int | scala.Double = null,
+    stack: scala.Boolean | SparklineSeriesDefaultsStack = null,
+    tooltip: SparklineSeriesDefaultsTooltip = null,
+    `type`: java.lang.String = null
+  ): SparklineSeriesDefaults = {
+    val __obj = js.Dynamic.literal()
+    if (area != null) __obj.updateDynamic("area")(area)
+    if (bar != null) __obj.updateDynamic("bar")(bar)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
+    if (pie != null) __obj.updateDynamic("pie")(pie)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SparklineSeriesDefaults]
+  }
+}
+

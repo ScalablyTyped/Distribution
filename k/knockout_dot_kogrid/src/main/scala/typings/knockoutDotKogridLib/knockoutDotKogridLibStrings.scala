@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object knockoutDotKogridLibStrings {
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends knockoutDotKogridLib.kgNs.Direction
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends knockoutDotKogridLib.kgNs.Direction
   
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]

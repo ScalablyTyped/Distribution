@@ -10,3 +10,17 @@ trait DimensionValuesResource extends js.Object {
   def query(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyMaxResults): gapiDotClientLib.gapiNs.clientNs.Request[DimensionValueList]
 }
 
+object DimensionValuesResource {
+  @scala.inline
+  def apply(
+    query: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKeyMaxResults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DimensionValueList]
+    ]
+  ): DimensionValuesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[DimensionValuesResource]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Spec extends js.Object {
   var rules: js.UndefOr[js.Array[Rule]] = js.undefined
 }
 
+object Spec {
+  @scala.inline
+  def apply(
+    branding: axeDashCoreLib.Anon_Application = null,
+    checks: js.Array[Check] = null,
+    locale: Locale = null,
+    reporter: ReporterVersion = null,
+    rules: js.Array[Rule] = null
+  ): Spec = {
+    val __obj = js.Dynamic.literal()
+    if (branding != null) __obj.updateDynamic("branding")(branding)
+    if (checks != null) __obj.updateDynamic("checks")(checks)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[Spec]
+  }
+}
+

@@ -9,3 +9,12 @@ trait TargetIds extends js.Object {
   var ids: ArrayOrString
 }
 
+object TargetIds {
+  @scala.inline
+  def apply(ids: ArrayOrString): TargetIds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ids")(ids.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetIds]
+  }
+}
+

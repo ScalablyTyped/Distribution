@@ -71,3 +71,70 @@ trait ASPxClientTabControlBase extends ASPxClientControl {
   def SetActiveTabIndex(index: scala.Double): scala.Unit
 }
 
+object ASPxClientTabControlBase {
+  @scala.inline
+  def apply(
+    ActiveTabChanged: ASPxClientEvent[ASPxClientTabControlTabEventHandler[ASPxClientTabControlBase]],
+    ActiveTabChanging: ASPxClientEvent[ASPxClientTabControlTabCancelEventHandler[ASPxClientTabControlBase]],
+    AdjustControl: js.Function0[scala.Unit],
+    AdjustSize: js.Function0[scala.Unit],
+    BeginCallback: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientTabControlBase]],
+    CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientTabControlBase]],
+    EndCallback: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientTabControlBase]],
+    GetActiveTab: js.Function0[ASPxClientTab],
+    GetActiveTabIndex: js.Function0[scala.Double],
+    GetClientVisible: js.Function0[scala.Boolean],
+    GetHeight: js.Function0[scala.Double],
+    GetMainElement: js.Function0[js.Object],
+    GetParentControl: js.Function0[js.Object],
+    GetTab: js.Function1[scala.Double, ASPxClientTab],
+    GetTabByName: js.Function1[java.lang.String, ASPxClientTab],
+    GetTabCount: js.Function0[scala.Double],
+    GetVisible: js.Function0[scala.Boolean],
+    GetWidth: js.Function0[scala.Double],
+    InCallback: js.Function0[scala.Boolean],
+    Init: ASPxClientEvent[ASPxClientEventHandler[ASPxClientControlBase]],
+    SendMessageToAssistiveTechnology: js.Function1[java.lang.String, scala.Unit],
+    SetActiveTab: js.Function1[ASPxClientTab, scala.Unit],
+    SetActiveTabIndex: js.Function1[scala.Double, scala.Unit],
+    SetClientVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetHeight: js.Function1[scala.Double, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    SetWidth: js.Function1[scala.Double, scala.Unit],
+    TabClick: ASPxClientEvent[ASPxClientTabControlTabClickEventHandler[ASPxClientTabControlBase]],
+    name: java.lang.String
+  ): ASPxClientTabControlBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveTabChanged")(ActiveTabChanged)
+    __obj.updateDynamic("ActiveTabChanging")(ActiveTabChanging)
+    __obj.updateDynamic("AdjustControl")(AdjustControl)
+    __obj.updateDynamic("AdjustSize")(AdjustSize)
+    __obj.updateDynamic("BeginCallback")(BeginCallback)
+    __obj.updateDynamic("CallbackError")(CallbackError)
+    __obj.updateDynamic("EndCallback")(EndCallback)
+    __obj.updateDynamic("GetActiveTab")(GetActiveTab)
+    __obj.updateDynamic("GetActiveTabIndex")(GetActiveTabIndex)
+    __obj.updateDynamic("GetClientVisible")(GetClientVisible)
+    __obj.updateDynamic("GetHeight")(GetHeight)
+    __obj.updateDynamic("GetMainElement")(GetMainElement)
+    __obj.updateDynamic("GetParentControl")(GetParentControl)
+    __obj.updateDynamic("GetTab")(GetTab)
+    __obj.updateDynamic("GetTabByName")(GetTabByName)
+    __obj.updateDynamic("GetTabCount")(GetTabCount)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("GetWidth")(GetWidth)
+    __obj.updateDynamic("InCallback")(InCallback)
+    __obj.updateDynamic("Init")(Init)
+    __obj.updateDynamic("SendMessageToAssistiveTechnology")(SendMessageToAssistiveTechnology)
+    __obj.updateDynamic("SetActiveTab")(SetActiveTab)
+    __obj.updateDynamic("SetActiveTabIndex")(SetActiveTabIndex)
+    __obj.updateDynamic("SetClientVisible")(SetClientVisible)
+    __obj.updateDynamic("SetHeight")(SetHeight)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("SetWidth")(SetWidth)
+    __obj.updateDynamic("TabClick")(TabClick)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientTabControlBase]
+  }
+}
+

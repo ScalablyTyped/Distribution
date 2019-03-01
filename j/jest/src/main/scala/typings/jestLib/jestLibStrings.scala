@@ -13,13 +13,16 @@ object jestLibStrings {
   sealed trait Mocked extends js.Object
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends jestLib.jestMod.jestNs.SnapshotUpdateState
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends jestLib.jestMod.jestNs.LogType
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends jestLib.jestMod.jestNs.Status
   
   @js.native
   sealed trait fake extends js.Object
@@ -31,22 +34,28 @@ object jestLibStrings {
   sealed trait incomplete extends js.Object
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends jestLib.jestMod.jestNs.LogType
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log
+    extends jestLib.jestMod.jestNs.LogType
   
   @js.native
-  sealed trait `new` extends js.Object
+  sealed trait `new`
+    extends jestLib.jestMod.jestNs.SnapshotUpdateState
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends jestLib.jestMod.jestNs.SnapshotUpdateState
   
   @js.native
-  sealed trait passed extends js.Object
+  sealed trait passed
+    extends jestLib.jestMod.jestNs.Status
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends jestLib.jestMod.jestNs.Status
   
   @js.native
   sealed trait real extends js.Object
@@ -58,13 +67,15 @@ object jestLibStrings {
   sealed trait set extends js.Object
   
   @js.native
-  sealed trait skipped extends js.Object
+  sealed trait skipped
+    extends jestLib.jestMod.jestNs.Status
   
   @js.native
   sealed trait `throw` extends js.Object
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends jestLib.jestMod.jestNs.LogType
   
   @scala.inline
   def Matchers: Matchers = "Matchers".asInstanceOf[Matchers]

@@ -48,3 +48,26 @@ trait SearchReadsRequest extends js.Object {
   var start: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchReadsRequest {
+  @scala.inline
+  def apply(
+    end: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    readGroupIds: js.Array[java.lang.String] = null,
+    readGroupSetIds: js.Array[java.lang.String] = null,
+    referenceName: java.lang.String = null,
+    start: java.lang.String = null
+  ): SearchReadsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (readGroupIds != null) __obj.updateDynamic("readGroupIds")(readGroupIds)
+    if (readGroupSetIds != null) __obj.updateDynamic("readGroupSetIds")(readGroupSetIds)
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[SearchReadsRequest]
+  }
+}
+

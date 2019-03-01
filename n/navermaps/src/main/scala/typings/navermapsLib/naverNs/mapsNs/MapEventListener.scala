@@ -15,3 +15,20 @@ trait MapEventListener extends js.Object {
   def listener(event: js.Any): js.Any
 }
 
+object MapEventListener {
+  @scala.inline
+  def apply(
+    eventName: java.lang.String,
+    listener: js.Function1[js.Any, js.Any],
+    listenerId: java.lang.String,
+    target: js.Any
+  ): MapEventListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventName")(eventName)
+    __obj.updateDynamic("listener")(listener)
+    __obj.updateDynamic("listenerId")(listenerId)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[MapEventListener]
+  }
+}
+

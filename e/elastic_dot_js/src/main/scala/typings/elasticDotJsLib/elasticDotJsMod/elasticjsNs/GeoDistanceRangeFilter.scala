@@ -98,3 +98,50 @@ trait GeoDistanceRangeFilter extends Filter {
   def unit(unit: java.lang.String): GeoDistanceRangeFilter
 }
 
+object GeoDistanceRangeFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, GeoDistanceRangeFilter],
+    cacheKey: js.Function1[java.lang.String, GeoDistanceRangeFilter],
+    distanceType: js.Function1[java.lang.String, GeoDistanceRangeFilter],
+    field: js.Function1[java.lang.String, GeoDistanceRangeFilter],
+    from: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
+    gt: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
+    gte: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
+    includeLower: js.Function1[scala.Boolean, GeoDistanceRangeFilter],
+    includeUpper: js.Function1[scala.Boolean, GeoDistanceRangeFilter],
+    lt: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
+    lte: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
+    name: js.Function1[java.lang.String, GeoDistanceRangeFilter],
+    normalize: js.Function1[java.lang.String, GeoDistanceRangeFilter],
+    optimizeBbox: js.Function1[java.lang.String, GeoDistanceRangeFilter],
+    point: js.Function1[GeoPoint, GeoDistanceRangeFilter],
+    to: js.Function1[stdLib.Number, GeoDistanceRangeFilter],
+    toJSON: js.Function0[GeoDistanceRangeFilter],
+    unit: js.Function1[java.lang.String, GeoDistanceRangeFilter]
+  ): GeoDistanceRangeFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("distanceType")(distanceType)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("gt")(gt)
+    __obj.updateDynamic("gte")(gte)
+    __obj.updateDynamic("includeLower")(includeLower)
+    __obj.updateDynamic("includeUpper")(includeUpper)
+    __obj.updateDynamic("lt")(lt)
+    __obj.updateDynamic("lte")(lte)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("optimizeBbox")(optimizeBbox)
+    __obj.updateDynamic("point")(point)
+    __obj.updateDynamic("to")(to)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[GeoDistanceRangeFilter]
+  }
+}
+

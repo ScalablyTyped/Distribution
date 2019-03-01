@@ -259,3 +259,130 @@ trait XPackage
   ): scala.Unit
 }
 
+object XPackage {
+  @scala.inline
+  def apply(
+    Description: java.lang.String,
+    DisplayName: java.lang.String,
+    Identifier: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
+    LicenseText: java.lang.String,
+    Name: java.lang.String,
+    PackageType: XPackageTypeInfo,
+    PublisherInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair,
+    RegistrationDataURL: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
+    RepositoryName: java.lang.String,
+    URL: java.lang.String,
+    UpdateInformationURLs: activexDashInteropLib.SafeArray[java.lang.String],
+    Version: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    checkDependencies: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Boolean
+    ],
+    checkPrerequisites: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Boolean, 
+      scala.Double
+    ],
+    createAbortChannel: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel],
+    dispose: js.Function0[scala.Unit],
+    exportTo: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Unit
+    ],
+    getBundle: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      activexDashInteropLib.SafeArray[XPackage]
+    ],
+    getDescription: js.Function0[java.lang.String],
+    getDisplayName: js.Function0[java.lang.String],
+    getIcon: js.Function1[scala.Boolean, activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic],
+    getIdentifier: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String]],
+    getLicenseText: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getPackageType: js.Function0[XPackageTypeInfo],
+    getPublisherInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair],
+    getRegistrationDataURL: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String]],
+    getRepositoryName: js.Function0[java.lang.String],
+    getURL: js.Function0[java.lang.String],
+    getUpdateInformationURLs: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getVersion: js.Function0[java.lang.String],
+    isBundle: js.Function0[scala.Boolean],
+    isRegistered: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Ambiguous[scala.Boolean]]
+    ],
+    isRemoved: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerPackage: js.Function3[
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    revokePackage: js.Function3[
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XAbortChannel, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs.XCommandEnvironment, 
+      scala.Unit
+    ]
+  ): XPackage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("DisplayName")(DisplayName)
+    __obj.updateDynamic("Identifier")(Identifier)
+    __obj.updateDynamic("LicenseText")(LicenseText)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("PackageType")(PackageType)
+    __obj.updateDynamic("PublisherInfo")(PublisherInfo)
+    __obj.updateDynamic("RegistrationDataURL")(RegistrationDataURL)
+    __obj.updateDynamic("RepositoryName")(RepositoryName)
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("UpdateInformationURLs")(UpdateInformationURLs)
+    __obj.updateDynamic("Version")(Version)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addModifyListener")(addModifyListener)
+    __obj.updateDynamic("checkDependencies")(checkDependencies)
+    __obj.updateDynamic("checkPrerequisites")(checkPrerequisites)
+    __obj.updateDynamic("createAbortChannel")(createAbortChannel)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("exportTo")(exportTo)
+    __obj.updateDynamic("getBundle")(getBundle)
+    __obj.updateDynamic("getDescription")(getDescription)
+    __obj.updateDynamic("getDisplayName")(getDisplayName)
+    __obj.updateDynamic("getIcon")(getIcon)
+    __obj.updateDynamic("getIdentifier")(getIdentifier)
+    __obj.updateDynamic("getLicenseText")(getLicenseText)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getPackageType")(getPackageType)
+    __obj.updateDynamic("getPublisherInfo")(getPublisherInfo)
+    __obj.updateDynamic("getRegistrationDataURL")(getRegistrationDataURL)
+    __obj.updateDynamic("getRepositoryName")(getRepositoryName)
+    __obj.updateDynamic("getURL")(getURL)
+    __obj.updateDynamic("getUpdateInformationURLs")(getUpdateInformationURLs)
+    __obj.updateDynamic("getVersion")(getVersion)
+    __obj.updateDynamic("isBundle")(isBundle)
+    __obj.updateDynamic("isRegistered")(isRegistered)
+    __obj.updateDynamic("isRemoved")(isRemoved)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerPackage")(registerPackage)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
+    __obj.updateDynamic("revokePackage")(revokePackage)
+    __obj.asInstanceOf[XPackage]
+  }
+}
+

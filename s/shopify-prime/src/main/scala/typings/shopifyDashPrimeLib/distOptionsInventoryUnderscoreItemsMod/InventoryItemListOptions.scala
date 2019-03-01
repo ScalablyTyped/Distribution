@@ -13,3 +13,18 @@ trait InventoryItemListOptions
   var ids: java.lang.String
 }
 
+object InventoryItemListOptions {
+  @scala.inline
+  def apply(
+    ids: java.lang.String,
+    limit: scala.Int | scala.Double = null,
+    page: scala.Int | scala.Double = null
+  ): InventoryItemListOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ids")(ids)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InventoryItemListOptions]
+  }
+}
+

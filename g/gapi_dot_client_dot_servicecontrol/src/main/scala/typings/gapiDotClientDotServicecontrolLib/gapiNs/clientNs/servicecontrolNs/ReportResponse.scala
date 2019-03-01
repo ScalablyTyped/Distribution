@@ -38,3 +38,18 @@ trait ReportResponse extends js.Object {
   var serviceConfigId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReportResponse {
+  @scala.inline
+  def apply(
+    reportErrors: js.Array[ReportError] = null,
+    reportInfos: js.Array[ReportInfo] = null,
+    serviceConfigId: java.lang.String = null
+  ): ReportResponse = {
+    val __obj = js.Dynamic.literal()
+    if (reportErrors != null) __obj.updateDynamic("reportErrors")(reportErrors)
+    if (reportInfos != null) __obj.updateDynamic("reportInfos")(reportInfos)
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    __obj.asInstanceOf[ReportResponse]
+  }
+}
+

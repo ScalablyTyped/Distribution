@@ -20,3 +20,42 @@ trait ForwardingRulesResource extends js.Object {
   def setTarget(request: gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRule): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object ForwardingRulesResource {
+  @scala.inline
+  def apply(
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRuleAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRule, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRuleKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRule]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ForwardingRuleList]
+    ],
+    setTarget: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsForwardingRule, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): ForwardingRulesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("setTarget")(setTarget)
+    __obj.asInstanceOf[ForwardingRulesResource]
+  }
+}
+

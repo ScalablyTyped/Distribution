@@ -19,3 +19,20 @@ trait IconComponentProps extends js.Object {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IconComponentProps {
+  @scala.inline
+  def apply(
+    iconBgStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    logoFillColor: java.lang.String = null,
+    round: js.UndefOr[scala.Boolean] = js.undefined,
+    size: scala.Int | scala.Double = null
+  ): IconComponentProps = {
+    val __obj = js.Dynamic.literal()
+    if (iconBgStyle != null) __obj.updateDynamic("iconBgStyle")(iconBgStyle)
+    if (logoFillColor != null) __obj.updateDynamic("logoFillColor")(logoFillColor)
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IconComponentProps]
+  }
+}
+

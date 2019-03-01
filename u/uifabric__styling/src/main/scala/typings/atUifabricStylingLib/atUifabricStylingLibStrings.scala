@@ -19,22 +19,26 @@ object atUifabricStylingLibStrings {
   sealed trait buildClassMap extends js.Object
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames
   
   @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait neutral extends js.Object
+  sealed trait neutral
+    extends atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames
   
   @js.native
   sealed trait relative extends js.Object
   
   @js.native
-  sealed trait soft extends js.Object
+  sealed trait soft
+    extends atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames
   
   @js.native
-  sealed trait strong extends js.Object
+  sealed trait strong
+    extends atUifabricStylingLib.libInterfacesIThemeMod.ISchemeNames
   
   @js.native
   sealed trait vertical extends js.Object

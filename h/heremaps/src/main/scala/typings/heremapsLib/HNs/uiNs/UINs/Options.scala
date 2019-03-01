@@ -29,3 +29,28 @@ trait Options extends js.Object {
   var zoomrectangle: js.UndefOr[heremapsLib.HNs.uiNs.ZoomRectangleNs.Options | scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    distancemeasurement: heremapsLib.HNs.uiNs.DistanceMeasurementNs.Options | scala.Boolean = null,
+    locale: heremapsLib.HNs.uiNs.i18nNs.Localization | java.lang.String = null,
+    mapsettings: heremapsLib.HNs.uiNs.MapSettingsControlNs.Options | scala.Boolean = null,
+    panorama: heremapsLib.HNs.uiNs.PanoNs.Options | scala.Boolean = null,
+    scalebar: heremapsLib.HNs.uiNs.ScaleBarNs.Options | scala.Boolean = null,
+    unitSystem: heremapsLib.HNs.uiNs.UnitSystem = null,
+    zoom: heremapsLib.HNs.uiNs.ZoomControlNs.Options | scala.Boolean = null,
+    zoomrectangle: heremapsLib.HNs.uiNs.ZoomRectangleNs.Options | scala.Boolean = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (distancemeasurement != null) __obj.updateDynamic("distancemeasurement")(distancemeasurement.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale.asInstanceOf[js.Any])
+    if (mapsettings != null) __obj.updateDynamic("mapsettings")(mapsettings.asInstanceOf[js.Any])
+    if (panorama != null) __obj.updateDynamic("panorama")(panorama.asInstanceOf[js.Any])
+    if (scalebar != null) __obj.updateDynamic("scalebar")(scalebar.asInstanceOf[js.Any])
+    if (unitSystem != null) __obj.updateDynamic("unitSystem")(unitSystem)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    if (zoomrectangle != null) __obj.updateDynamic("zoomrectangle")(zoomrectangle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

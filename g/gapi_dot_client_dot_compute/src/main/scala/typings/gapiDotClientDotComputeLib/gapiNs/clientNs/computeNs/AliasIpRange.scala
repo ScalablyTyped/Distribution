@@ -19,3 +19,13 @@ trait AliasIpRange extends js.Object {
   var subnetworkRangeName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AliasIpRange {
+  @scala.inline
+  def apply(ipCidrRange: java.lang.String = null, subnetworkRangeName: java.lang.String = null): AliasIpRange = {
+    val __obj = js.Dynamic.literal()
+    if (ipCidrRange != null) __obj.updateDynamic("ipCidrRange")(ipCidrRange)
+    if (subnetworkRangeName != null) __obj.updateDynamic("subnetworkRangeName")(subnetworkRangeName)
+    __obj.asInstanceOf[AliasIpRange]
+  }
+}
+

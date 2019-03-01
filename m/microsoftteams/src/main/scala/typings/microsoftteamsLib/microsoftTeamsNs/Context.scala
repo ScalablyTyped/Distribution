@@ -69,3 +69,38 @@ trait Context extends js.Object {
   var upn: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Context {
+  @scala.inline
+  def apply(
+    entityId: java.lang.String,
+    locale: java.lang.String,
+    channelId: java.lang.String = null,
+    channelName: java.lang.String = null,
+    groupId: java.lang.String = null,
+    isFullScreen: js.UndefOr[scala.Boolean] = js.undefined,
+    subEntityId: java.lang.String = null,
+    teamId: java.lang.String = null,
+    teamName: java.lang.String = null,
+    teamType: TeamType = null,
+    theme: java.lang.String = null,
+    tid: java.lang.String = null,
+    upn: java.lang.String = null
+  ): Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entityId")(entityId)
+    __obj.updateDynamic("locale")(locale)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (channelName != null) __obj.updateDynamic("channelName")(channelName)
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
+    if (!js.isUndefined(isFullScreen)) __obj.updateDynamic("isFullScreen")(isFullScreen)
+    if (subEntityId != null) __obj.updateDynamic("subEntityId")(subEntityId)
+    if (teamId != null) __obj.updateDynamic("teamId")(teamId)
+    if (teamName != null) __obj.updateDynamic("teamName")(teamName)
+    if (teamType != null) __obj.updateDynamic("teamType")(teamType)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tid != null) __obj.updateDynamic("tid")(tid)
+    if (upn != null) __obj.updateDynamic("upn")(upn)
+    __obj.asInstanceOf[Context]
+  }
+}
+

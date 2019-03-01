@@ -86,3 +86,50 @@ trait RuleSetRule extends js.Object {
   var use: js.UndefOr[RuleSetUse] = js.undefined
 }
 
+object RuleSetRule {
+  @scala.inline
+  def apply(
+    compiler: RuleSetCondition = null,
+    enforce: webpackLib.webpackLibStrings.pre | webpackLib.webpackLibStrings.post = null,
+    exclude: RuleSetCondition = null,
+    include: RuleSetCondition = null,
+    issuer: RuleSetCondition = null,
+    loader: RuleSetUse = null,
+    loaders: RuleSetUse = null,
+    oneOf: js.Array[RuleSetRule] = null,
+    options: RuleSetQuery = null,
+    parser: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    query: RuleSetQuery = null,
+    resolve: Resolve = null,
+    resource: RuleSetCondition = null,
+    resourceQuery: RuleSetCondition = null,
+    rules: js.Array[RuleSetRule] = null,
+    sideEffects: js.UndefOr[scala.Boolean] = js.undefined,
+    test: RuleSetCondition = null,
+    `type`: webpackLib.webpackLibStrings.`javascript/auto` | webpackLib.webpackLibStrings.`javascript/dynamic` | webpackLib.webpackLibStrings.`javascript/esm` | webpackLib.webpackLibStrings.json | webpackLib.webpackLibStrings.`webassembly/experimental` = null,
+    use: RuleSetUse = null
+  ): RuleSetRule = {
+    val __obj = js.Dynamic.literal()
+    if (compiler != null) __obj.updateDynamic("compiler")(compiler.asInstanceOf[js.Any])
+    if (enforce != null) __obj.updateDynamic("enforce")(enforce.asInstanceOf[js.Any])
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer.asInstanceOf[js.Any])
+    if (loader != null) __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
+    if (loaders != null) __obj.updateDynamic("loaders")(loaders.asInstanceOf[js.Any])
+    if (oneOf != null) __obj.updateDynamic("oneOf")(oneOf)
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (parser != null) __obj.updateDynamic("parser")(parser)
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (resource != null) __obj.updateDynamic("resource")(resource.asInstanceOf[js.Any])
+    if (resourceQuery != null) __obj.updateDynamic("resourceQuery")(resourceQuery.asInstanceOf[js.Any])
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (!js.isUndefined(sideEffects)) __obj.updateDynamic("sideEffects")(sideEffects)
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuleSetRule]
+  }
+}
+

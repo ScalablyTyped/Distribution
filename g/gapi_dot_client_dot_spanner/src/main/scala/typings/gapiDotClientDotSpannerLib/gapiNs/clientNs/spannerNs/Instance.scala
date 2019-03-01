@@ -78,3 +78,24 @@ trait Instance extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    config: java.lang.String = null,
+    displayName: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    name: java.lang.String = null,
+    nodeCount: scala.Int | scala.Double = null,
+    state: java.lang.String = null
+  ): Instance = {
+    val __obj = js.Dynamic.literal()
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nodeCount != null) __obj.updateDynamic("nodeCount")(nodeCount.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Instance]
+  }
+}
+

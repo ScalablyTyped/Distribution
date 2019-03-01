@@ -16,3 +16,22 @@ import scala.scalajs.js.annotation._
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InfoWindowProps {
+  @scala.inline
+  def apply(
+    google: googleDashMapsDashReactLib.Anon_Maps,
+    map: googlemapsLib.googleNs.mapsNs.Map,
+    marker: googlemapsLib.googleNs.mapsNs.Marker,
+    mapCenter: googlemapsLib.googleNs.mapsNs.LatLng | googlemapsLib.googleNs.mapsNs.LatLngLiteral = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): InfoWindowProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("google")(google)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("marker")(marker)
+    if (mapCenter != null) __obj.updateDynamic("mapCenter")(mapCenter.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[InfoWindowProps]
+  }
+}
+

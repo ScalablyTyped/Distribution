@@ -14,3 +14,18 @@ trait AdvertisersListResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AdvertisersListResponse {
+  @scala.inline
+  def apply(
+    advertisers: js.Array[Advertiser] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null
+  ): AdvertisersListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (advertisers != null) __obj.updateDynamic("advertisers")(advertisers)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[AdvertisersListResponse]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Compartment Definition for a resource
   */
-trait CompartmentDefinition extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait CompartmentDefinition extends DomainResource {
   /**
     * Contains extended information for property 'code'.
     */
@@ -113,5 +114,92 @@ trait CompartmentDefinition extends DomainResource {
     * Context the content is intended to support
     */
   var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
+}
+
+object CompartmentDefinition {
+  @scala.inline
+  def apply(
+    code: code,
+    name: java.lang.String,
+    search: scala.Boolean,
+    status: code,
+    url: uri,
+    _code: Element = null,
+    _date: Element = null,
+    _description: Element = null,
+    _experimental: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _name: Element = null,
+    _publisher: Element = null,
+    _purpose: Element = null,
+    _resourceType: Element = null,
+    _search: Element = null,
+    _status: Element = null,
+    _title: Element = null,
+    _url: Element = null,
+    contact: js.Array[ContactDetail] = null,
+    contained: js.Array[Resource] = null,
+    date: dateTime = null,
+    description: markdown = null,
+    experimental: js.UndefOr[scala.Boolean] = js.undefined,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    implicitRules: uri = null,
+    jurisdiction: js.Array[CodeableConcept] = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    publisher: java.lang.String = null,
+    purpose: markdown = null,
+    resource: js.Array[CompartmentDefinitionResource] = null,
+    resourceType: code = null,
+    text: Narrative = null,
+    title: java.lang.String = null,
+    useContext: js.Array[UsageContext] = null
+  ): CompartmentDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("url")(url)
+    if (_code != null) __obj.updateDynamic("_code")(_code)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher)
+    if (_purpose != null) __obj.updateDynamic("_purpose")(_purpose)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_search != null) __obj.updateDynamic("_search")(_search)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_title != null) __obj.updateDynamic("_title")(_title)
+    if (_url != null) __obj.updateDynamic("_url")(_url)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (useContext != null) __obj.updateDynamic("useContext")(useContext)
+    __obj.asInstanceOf[CompartmentDefinition]
+  }
 }
 

@@ -12,3 +12,17 @@ trait `Anon_` extends js.Object {
   def `>`(pos: scala.Double): scala.Double
 }
 
+object `Anon_` {
+  @scala.inline
+  def apply(
+    `-`: js.Function1[scala.Double, scala.Double],
+    `<`: js.Function1[scala.Double, scala.Double],
+    `<>`: js.Function1[scala.Double, scala.Double],
+    `>`: js.Function1[scala.Double, scala.Double]
+  ): `Anon_` = {
+    val __obj = js.Dynamic.literal(`-` = `-`, `<` = `<`, `<>` = `<>`, `>` = `>`)
+  
+    __obj.asInstanceOf[`Anon_`]
+  }
+}
+

@@ -32,3 +32,24 @@ trait NodesGradientRadialGradient extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodesGradientRadialGradient {
+  @scala.inline
+  def apply(
+    cx: scala.Int | scala.Double = null,
+    cy: scala.Int | scala.Double = null,
+    fx: scala.Int | scala.Double = null,
+    fy: scala.Int | scala.Double = null,
+    stops: js.Array[_] = null,
+    `type`: java.lang.String = null
+  ): NodesGradientRadialGradient = {
+    val __obj = js.Dynamic.literal()
+    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
+    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
+    if (fx != null) __obj.updateDynamic("fx")(fx.asInstanceOf[js.Any])
+    if (fy != null) __obj.updateDynamic("fy")(fy.asInstanceOf[js.Any])
+    if (stops != null) __obj.updateDynamic("stops")(stops)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodesGradientRadialGradient]
+  }
+}
+

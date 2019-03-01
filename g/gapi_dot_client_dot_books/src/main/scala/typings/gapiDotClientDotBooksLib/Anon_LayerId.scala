@@ -15,3 +15,13 @@ trait Anon_LayerId extends js.Object {
   var volumeAnnotationsVersion: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_LayerId {
+  @scala.inline
+  def apply(layerId: java.lang.String = null, volumeAnnotationsVersion: java.lang.String = null): Anon_LayerId = {
+    val __obj = js.Dynamic.literal()
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId)
+    if (volumeAnnotationsVersion != null) __obj.updateDynamic("volumeAnnotationsVersion")(volumeAnnotationsVersion)
+    __obj.asInstanceOf[Anon_LayerId]
+  }
+}
+

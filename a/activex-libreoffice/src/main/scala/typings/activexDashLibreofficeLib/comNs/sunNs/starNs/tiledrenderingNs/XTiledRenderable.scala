@@ -30,3 +30,29 @@ trait XTiledRenderable
   ): scala.Unit
 }
 
+object XTiledRenderable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    paintTile: js.Function7[
+      js.Any, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTiledRenderable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("paintTile")(paintTile)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTiledRenderable]
+  }
+}
+

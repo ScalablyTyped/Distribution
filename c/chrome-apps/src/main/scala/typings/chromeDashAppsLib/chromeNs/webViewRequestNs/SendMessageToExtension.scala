@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.webViewRequest.SendMessageToExtension")
 @js.native
-class SendMessageToExtension protected () extends js.Object {
+class SendMessageToExtension protected () extends OnRequestActions {
   def this(parameters: SendMessageParams) = this()
   val instanceType: java.lang.String = js.native
   val typeGuard: chromeDashAppsLib.chromeDashAppsLibStrings.SendMessageToExtension = js.native

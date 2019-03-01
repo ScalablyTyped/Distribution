@@ -10,3 +10,12 @@ trait RemoveCommand extends js.Object {
   var $remove: js.Array[java.lang.String]
 }
 
+object RemoveCommand {
+  @scala.inline
+  def apply($remove: js.Array[java.lang.String]): RemoveCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$remove")($remove)
+    __obj.asInstanceOf[RemoveCommand]
+  }
+}
+

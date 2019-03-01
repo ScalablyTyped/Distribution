@@ -162,3 +162,116 @@ trait ITable extends IView {
   ] = js.undefined
 }
 
+object ITable {
+  @scala.inline
+  def apply(
+    IView: IView = null,
+    addRowCls: js.Function2[/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    autoSizeColumn: js.Function1[/* header */ js.UndefOr[js.Any], scala.Unit] = null,
+    baseCls: java.lang.String = null,
+    beforeDestroy: js.Function0[scala.Unit] = null,
+    collectData: js.Function2[
+      /* records */ js.UndefOr[js.Any], 
+      /* startIndex */ js.UndefOr[js.Any], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    componentLayout: js.Any = null,
+    enableTextSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    expandToFit: js.Function1[/* header */ js.UndefOr[js.Any], scala.Unit] = null,
+    firstCls: java.lang.String = null,
+    focus: js.Function2[
+      /* selectText */ js.UndefOr[js.Any], 
+      /* delay */ js.UndefOr[js.Any], 
+      extjsLib.ExtNs.IComponent
+    ] = null,
+    focusRow: js.Function2[/* row */ js.UndefOr[js.Any], /* delay */ js.UndefOr[js.Any], scala.Unit] = null,
+    getBodySelector: js.Function0[scala.Unit] = null,
+    getCellSelector: js.Function1[/* header */ js.UndefOr[extjsLib.ExtNs.gridNs.columnNs.IColumn], scala.Unit] = null,
+    getColumnSizerSelector: js.Function1[/* header */ js.UndefOr[js.Any], scala.Unit] = null,
+    getDataRowSelector: js.Function0[scala.Unit] = null,
+    getFeature: js.Function1[/* id */ js.UndefOr[java.lang.String], extjsLib.ExtNs.gridNs.featureNs.IFeature] = null,
+    getItemSelector: js.Function0[scala.Unit] = null,
+    getNode: js.Function2[
+      /* nodeInfo */ js.UndefOr[js.Any], 
+      /* dataRow */ js.UndefOr[scala.Boolean], 
+      stdLib.HTMLElement
+    ] = null,
+    getNodeContainerSelector: js.Function0[scala.Unit] = null,
+    getPosition: js.Function2[
+      /* record */ js.UndefOr[js.Any], 
+      /* header */ js.UndefOr[js.Any], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    getRecord: js.Function1[/* node */ js.UndefOr[js.Any], extjsLib.ExtNs.dataNs.IModel] = null,
+    getRowClass: js.Function4[
+      /* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
+      /* index */ js.UndefOr[scala.Double], 
+      /* rowParams */ js.UndefOr[js.Any], 
+      /* store */ js.UndefOr[extjsLib.ExtNs.dataNs.IStore], 
+      java.lang.String
+    ] = null,
+    indexOf: js.Function1[/* node */ js.UndefOr[js.Any], scala.Double] = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    itemSelector: java.lang.String = null,
+    lastCls: java.lang.String = null,
+    markDirty: js.UndefOr[scala.Boolean] = js.undefined,
+    onDestroy: js.Function0[scala.Unit] = null,
+    overItemCls: java.lang.String = null,
+    refresh: js.Function0[scala.Unit] = null,
+    removeRowCls: js.Function2[/* rowInfo */ js.UndefOr[js.Any], /* cls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    selectedItemCls: java.lang.String = null,
+    stripeRows: js.UndefOr[scala.Boolean] = js.undefined,
+    trackOver: js.UndefOr[scala.Boolean] = js.undefined,
+    walkRecs: js.Function2[
+      /* startRec */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], 
+      /* distance */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    walkRows: js.Function2[
+      /* startRow */ js.UndefOr[scala.Double], 
+      /* distance */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null
+  ): ITable = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IView)
+    if (addRowCls != null) __obj.updateDynamic("addRowCls")(addRowCls)
+    if (autoSizeColumn != null) __obj.updateDynamic("autoSizeColumn")(autoSizeColumn)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (beforeDestroy != null) __obj.updateDynamic("beforeDestroy")(beforeDestroy)
+    if (collectData != null) __obj.updateDynamic("collectData")(collectData)
+    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (!js.isUndefined(enableTextSelection)) __obj.updateDynamic("enableTextSelection")(enableTextSelection)
+    if (expandToFit != null) __obj.updateDynamic("expandToFit")(expandToFit)
+    if (firstCls != null) __obj.updateDynamic("firstCls")(firstCls)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (focusRow != null) __obj.updateDynamic("focusRow")(focusRow)
+    if (getBodySelector != null) __obj.updateDynamic("getBodySelector")(getBodySelector)
+    if (getCellSelector != null) __obj.updateDynamic("getCellSelector")(getCellSelector)
+    if (getColumnSizerSelector != null) __obj.updateDynamic("getColumnSizerSelector")(getColumnSizerSelector)
+    if (getDataRowSelector != null) __obj.updateDynamic("getDataRowSelector")(getDataRowSelector)
+    if (getFeature != null) __obj.updateDynamic("getFeature")(getFeature)
+    if (getItemSelector != null) __obj.updateDynamic("getItemSelector")(getItemSelector)
+    if (getNode != null) __obj.updateDynamic("getNode")(getNode)
+    if (getNodeContainerSelector != null) __obj.updateDynamic("getNodeContainerSelector")(getNodeContainerSelector)
+    if (getPosition != null) __obj.updateDynamic("getPosition")(getPosition)
+    if (getRecord != null) __obj.updateDynamic("getRecord")(getRecord)
+    if (getRowClass != null) __obj.updateDynamic("getRowClass")(getRowClass)
+    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
+    if (lastCls != null) __obj.updateDynamic("lastCls")(lastCls)
+    if (!js.isUndefined(markDirty)) __obj.updateDynamic("markDirty")(markDirty)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (overItemCls != null) __obj.updateDynamic("overItemCls")(overItemCls)
+    if (refresh != null) __obj.updateDynamic("refresh")(refresh)
+    if (removeRowCls != null) __obj.updateDynamic("removeRowCls")(removeRowCls)
+    if (selectedItemCls != null) __obj.updateDynamic("selectedItemCls")(selectedItemCls)
+    if (!js.isUndefined(stripeRows)) __obj.updateDynamic("stripeRows")(stripeRows)
+    if (!js.isUndefined(trackOver)) __obj.updateDynamic("trackOver")(trackOver)
+    if (walkRecs != null) __obj.updateDynamic("walkRecs")(walkRecs)
+    if (walkRows != null) __obj.updateDynamic("walkRows")(walkRows)
+    __obj.asInstanceOf[ITable]
+  }
+}
+

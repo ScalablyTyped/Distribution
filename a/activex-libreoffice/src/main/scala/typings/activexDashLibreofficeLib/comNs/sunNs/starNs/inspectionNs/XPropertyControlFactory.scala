@@ -22,3 +22,12 @@ trait XPropertyControlFactory extends js.Object {
   def createPropertyControl(ControlType: scala.Double, CreateReadOnly: scala.Boolean): XPropertyControl
 }
 
+object XPropertyControlFactory {
+  @scala.inline
+  def apply(createPropertyControl: js.Function2[scala.Double, scala.Boolean, XPropertyControl]): XPropertyControlFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createPropertyControl")(createPropertyControl)
+    __obj.asInstanceOf[XPropertyControlFactory]
+  }
+}
+

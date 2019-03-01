@@ -26,3 +26,20 @@ trait XMessageBoxFactory
   ): XMessageBox
 }
 
+object XMessageBoxFactory {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createMessageBox: js.Function5[XWindowPeer, MessageBoxType, scala.Double, java.lang.String, java.lang.String, XMessageBox],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMessageBoxFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createMessageBox")(createMessageBox)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMessageBoxFactory]
+  }
+}
+

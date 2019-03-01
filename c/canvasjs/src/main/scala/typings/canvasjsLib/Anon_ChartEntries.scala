@@ -11,3 +11,18 @@ trait Anon_ChartEntries extends js.Object {
   var toolTip: this.type
 }
 
+object Anon_ChartEntries {
+  @scala.inline
+  def apply(
+    chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart,
+    entries: js.Array[Anon_DataPoint],
+    toolTip: Anon_ChartEntries
+  ): Anon_ChartEntries = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("entries")(entries)
+    __obj.updateDynamic("toolTip")(toolTip)
+    __obj.asInstanceOf[Anon_ChartEntries]
+  }
+}
+

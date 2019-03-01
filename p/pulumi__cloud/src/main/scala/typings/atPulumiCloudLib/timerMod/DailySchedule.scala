@@ -16,3 +16,13 @@ trait DailySchedule extends js.Object {
   var minuteUTC: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DailySchedule {
+  @scala.inline
+  def apply(hourUTC: scala.Int | scala.Double = null, minuteUTC: scala.Int | scala.Double = null): DailySchedule = {
+    val __obj = js.Dynamic.literal()
+    if (hourUTC != null) __obj.updateDynamic("hourUTC")(hourUTC.asInstanceOf[js.Any])
+    if (minuteUTC != null) __obj.updateDynamic("minuteUTC")(minuteUTC.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DailySchedule]
+  }
+}
+

@@ -14,3 +14,18 @@ trait ICacheArgs extends js.Object {
   var section: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ICacheArgs {
+  @scala.inline
+  def apply(
+    cacheKey: java.lang.String,
+    childrenOf: scala.Int | scala.Double = null,
+    section: java.lang.String = null
+  ): ICacheArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    if (childrenOf != null) __obj.updateDynamic("childrenOf")(childrenOf.asInstanceOf[js.Any])
+    if (section != null) __obj.updateDynamic("section")(section)
+    __obj.asInstanceOf[ICacheArgs]
+  }
+}
+

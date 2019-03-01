@@ -16,3 +16,13 @@ trait ASPxClientGridViewBatchEditRowInsertingEventArgs extends ASPxClientCancelE
   var visibleIndex: scala.Double
 }
 
+object ASPxClientGridViewBatchEditRowInsertingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, visibleIndex: scala.Double): ASPxClientGridViewBatchEditRowInsertingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[ASPxClientGridViewBatchEditRowInsertingEventArgs]
+  }
+}
+

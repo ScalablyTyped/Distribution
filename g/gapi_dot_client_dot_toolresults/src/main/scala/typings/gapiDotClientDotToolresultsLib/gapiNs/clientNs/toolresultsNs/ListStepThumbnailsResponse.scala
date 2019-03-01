@@ -22,3 +22,13 @@ trait ListStepThumbnailsResponse extends js.Object {
   var thumbnails: js.UndefOr[js.Array[Image]] = js.undefined
 }
 
+object ListStepThumbnailsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, thumbnails: js.Array[Image] = null): ListStepThumbnailsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (thumbnails != null) __obj.updateDynamic("thumbnails")(thumbnails)
+    __obj.asInstanceOf[ListStepThumbnailsResponse]
+  }
+}
+

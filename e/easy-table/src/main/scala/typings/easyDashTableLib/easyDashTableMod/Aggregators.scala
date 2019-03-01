@@ -25,3 +25,22 @@ trait Aggregators extends js.Object {
   def printer[T](prefix: java.lang.String, printer: easyDashTableLib.CellPrinter[T]): easyDashTableLib.CellPrinter[T]
 }
 
+object Aggregators {
+  @scala.inline
+  def apply(
+    avg: js.Any,
+    printer: js.Function2[
+      java.lang.String, 
+      easyDashTableLib.CellPrinter[js.Any], 
+      easyDashTableLib.CellPrinter[js.Any]
+    ],
+    sum: js.Any
+  ): Aggregators = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("avg")(avg)
+    __obj.updateDynamic("printer")(printer)
+    __obj.updateDynamic("sum")(sum)
+    __obj.asInstanceOf[Aggregators]
+  }
+}
+

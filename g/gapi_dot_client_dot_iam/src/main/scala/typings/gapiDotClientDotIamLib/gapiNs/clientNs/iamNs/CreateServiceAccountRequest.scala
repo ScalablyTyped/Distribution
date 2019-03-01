@@ -21,3 +21,13 @@ trait CreateServiceAccountRequest extends js.Object {
   var serviceAccount: js.UndefOr[ServiceAccount] = js.undefined
 }
 
+object CreateServiceAccountRequest {
+  @scala.inline
+  def apply(accountId: java.lang.String = null, serviceAccount: ServiceAccount = null): CreateServiceAccountRequest = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (serviceAccount != null) __obj.updateDynamic("serviceAccount")(serviceAccount)
+    __obj.asInstanceOf[CreateServiceAccountRequest]
+  }
+}
+

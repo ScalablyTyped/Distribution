@@ -34,3 +34,24 @@ trait Options extends js.Object {
   var stdio: js.UndefOr[java.lang.String | (js.Array[java.lang.String | scala.Double])] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[js.Array[java.lang.String]] = null,
+    env: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    jvmArgs: js.Array[java.lang.String] | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[js.Array[java.lang.String]] = null,
+    loopback: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Double | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IThenable[scala.Double] = null,
+    stdio: java.lang.String | (js.Array[java.lang.String | scala.Double]) = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (jvmArgs != null) __obj.updateDynamic("jvmArgs")(jvmArgs.asInstanceOf[js.Any])
+    if (!js.isUndefined(loopback)) __obj.updateDynamic("loopback")(loopback)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

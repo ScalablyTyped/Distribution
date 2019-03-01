@@ -14,3 +14,14 @@ trait UserDefined extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UserDefined {
+  @scala.inline
+  def apply(key: java.lang.String = null, metadata: FieldMetadata = null, value: java.lang.String = null): UserDefined = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[UserDefined]
+  }
+}
+

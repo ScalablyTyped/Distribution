@@ -36,3 +36,15 @@ trait Matrix2D extends js.Object {
   var m11: scala.Double
 }
 
+object Matrix2D {
+  @scala.inline
+  def apply(m00: scala.Double, m01: scala.Double, m10: scala.Double, m11: scala.Double): Matrix2D = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("m00")(m00)
+    __obj.updateDynamic("m01")(m01)
+    __obj.updateDynamic("m10")(m10)
+    __obj.updateDynamic("m11")(m11)
+    __obj.asInstanceOf[Matrix2D]
+  }
+}
+

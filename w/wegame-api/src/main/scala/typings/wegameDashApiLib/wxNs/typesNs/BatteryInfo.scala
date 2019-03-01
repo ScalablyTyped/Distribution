@@ -17,3 +17,13 @@ trait BatteryInfo extends js.Object {
   var level: java.lang.String
 }
 
+object BatteryInfo {
+  @scala.inline
+  def apply(isCharging: scala.Boolean, level: java.lang.String): BatteryInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isCharging")(isCharging)
+    __obj.updateDynamic("level")(level)
+    __obj.asInstanceOf[BatteryInfo]
+  }
+}
+

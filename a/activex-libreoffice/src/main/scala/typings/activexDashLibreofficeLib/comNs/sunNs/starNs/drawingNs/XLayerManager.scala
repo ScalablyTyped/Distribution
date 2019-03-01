@@ -36,3 +36,38 @@ trait XLayerManager
   def remove(xLayer: XLayer): scala.Unit
 }
 
+object XLayerManager {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    attachShapeToLayer: js.Function2[XShape, XLayer, scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getLayerForShape: js.Function1[XShape, XLayer],
+    hasElements: js.Function0[scala.Boolean],
+    insertNewByIndex: js.Function1[scala.Double, XLayer],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[XLayer, scala.Unit]
+  ): XLayerManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("attachShapeToLayer")(attachShapeToLayer)
+    __obj.updateDynamic("getByIndex")(getByIndex)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getLayerForShape")(getLayerForShape)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("insertNewByIndex")(insertNewByIndex)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[XLayerManager]
+  }
+}
+

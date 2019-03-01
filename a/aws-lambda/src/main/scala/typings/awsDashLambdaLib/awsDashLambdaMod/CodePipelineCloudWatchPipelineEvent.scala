@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CodePipelineCloudWatchPipelineEvent extends js.Object {
+trait CodePipelineCloudWatchPipelineEvent extends CodePipelineCloudWatchEvent {
   var account: java.lang.String
   var detail: awsDashLambdaLib.Anon_Executionid
   var `detail-type`: awsDashLambdaLib.awsDashLambdaLibStrings.`CodePipeline Pipeline Execution State Change`
@@ -15,5 +15,31 @@ trait CodePipelineCloudWatchPipelineEvent extends js.Object {
   var source: awsDashLambdaLib.awsDashLambdaLibStrings.awsDOTcodepipeline
   var time: java.lang.String
   var version: java.lang.String
+}
+
+object CodePipelineCloudWatchPipelineEvent {
+  @scala.inline
+  def apply(
+    account: java.lang.String,
+    detail: awsDashLambdaLib.Anon_Executionid,
+    `detail-type`: awsDashLambdaLib.awsDashLambdaLibStrings.`CodePipeline Pipeline Execution State Change`,
+    id: java.lang.String,
+    region: java.lang.String,
+    resources: js.Array[java.lang.String],
+    source: awsDashLambdaLib.awsDashLambdaLibStrings.awsDOTcodepipeline,
+    time: java.lang.String,
+    version: java.lang.String
+  ): CodePipelineCloudWatchPipelineEvent = {
+    val __obj = js.Dynamic.literal(`detail-type` = `detail-type`)
+    __obj.updateDynamic("account")(account)
+    __obj.updateDynamic("detail")(detail)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("region")(region)
+    __obj.updateDynamic("resources")(resources)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[CodePipelineCloudWatchPipelineEvent]
+  }
 }
 

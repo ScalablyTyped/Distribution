@@ -17,3 +17,12 @@ trait ModifyPushConfigRequest extends js.Object {
   var pushConfig: js.UndefOr[PushConfig] = js.undefined
 }
 
+object ModifyPushConfigRequest {
+  @scala.inline
+  def apply(pushConfig: PushConfig = null): ModifyPushConfigRequest = {
+    val __obj = js.Dynamic.literal()
+    if (pushConfig != null) __obj.updateDynamic("pushConfig")(pushConfig)
+    __obj.asInstanceOf[ModifyPushConfigRequest]
+  }
+}
+

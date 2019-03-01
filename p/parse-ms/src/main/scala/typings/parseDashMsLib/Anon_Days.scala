@@ -13,3 +13,22 @@ trait Anon_Days extends js.Object {
   var seconds: scala.Double
 }
 
+object Anon_Days {
+  @scala.inline
+  def apply(
+    days: scala.Double,
+    hours: scala.Double,
+    milliseconds: scala.Double,
+    minutes: scala.Double,
+    seconds: scala.Double
+  ): Anon_Days = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("days")(days)
+    __obj.updateDynamic("hours")(hours)
+    __obj.updateDynamic("milliseconds")(milliseconds)
+    __obj.updateDynamic("minutes")(minutes)
+    __obj.updateDynamic("seconds")(seconds)
+    __obj.asInstanceOf[Anon_Days]
+  }
+}
+

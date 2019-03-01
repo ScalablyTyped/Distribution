@@ -39,3 +39,43 @@ trait QueryNameDescriptorMap extends js.Object {
   var push: PushPermissionDescriptor
 }
 
+object QueryNameDescriptorMap {
+  @scala.inline
+  def apply(
+    accelerometer: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.accelerometer],
+    `accessibility-events`: PermissionDescriptor[
+      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`accessibility-events`
+    ],
+    `ambient-light-sensor`: PermissionDescriptor[
+      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`ambient-light-sensor`
+    ],
+    `background-sync`: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`background-sync`],
+    camera: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.camera],
+    `clipboard-read`: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-read`],
+    `clipboard-write`: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`clipboard-write`],
+    geolocation: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.geolocation],
+    gyroscope: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.gyroscope],
+    magnetometer: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.magnetometer],
+    microphone: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.microphone],
+    midi: MidiPermissionDescriptor,
+    notifications: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.notifications],
+    `payment-handler`: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`payment-handler`],
+    `persistent-storage`: PermissionDescriptor[
+      navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.`persistent-storage`
+    ],
+    push: PushPermissionDescriptor
+  ): QueryNameDescriptorMap = {
+    val __obj = js.Dynamic.literal(`accessibility-events` = `accessibility-events`, `ambient-light-sensor` = `ambient-light-sensor`, `background-sync` = `background-sync`, `clipboard-read` = `clipboard-read`, `clipboard-write` = `clipboard-write`, `payment-handler` = `payment-handler`, `persistent-storage` = `persistent-storage`)
+    __obj.updateDynamic("accelerometer")(accelerometer)
+    __obj.updateDynamic("camera")(camera)
+    __obj.updateDynamic("geolocation")(geolocation)
+    __obj.updateDynamic("gyroscope")(gyroscope)
+    __obj.updateDynamic("magnetometer")(magnetometer)
+    __obj.updateDynamic("microphone")(microphone)
+    __obj.updateDynamic("midi")(midi)
+    __obj.updateDynamic("notifications")(notifications)
+    __obj.updateDynamic("push")(push)
+    __obj.asInstanceOf[QueryNameDescriptorMap]
+  }
+}
+

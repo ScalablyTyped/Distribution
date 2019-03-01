@@ -15,3 +15,33 @@ trait ISyndicationText extends ISyndicationNode {
   var xml: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument
 }
 
+object ISyndicationText {
+  @scala.inline
+  def apply(
+    attributeExtensions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[SyndicationAttribute],
+    baseUri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri,
+    elementExtensions: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[ISyndicationNode],
+    getXmlDocument: js.Function1[SyndicationFormat, winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument],
+    language: java.lang.String,
+    nodeName: java.lang.String,
+    nodeNamespace: java.lang.String,
+    nodeValue: java.lang.String,
+    text: java.lang.String,
+    `type`: java.lang.String,
+    xml: winrtDashUwpLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument
+  ): ISyndicationText = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("attributeExtensions")(attributeExtensions)
+    __obj.updateDynamic("baseUri")(baseUri)
+    __obj.updateDynamic("elementExtensions")(elementExtensions)
+    __obj.updateDynamic("getXmlDocument")(getXmlDocument)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("nodeName")(nodeName)
+    __obj.updateDynamic("nodeNamespace")(nodeNamespace)
+    __obj.updateDynamic("nodeValue")(nodeValue)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("xml")(xml)
+    __obj.asInstanceOf[ISyndicationText]
+  }
+}
+

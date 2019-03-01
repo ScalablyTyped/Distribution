@@ -10,3 +10,13 @@ trait Anon_Params extends js.Object {
   var sql: java.lang.String
 }
 
+object Anon_Params {
+  @scala.inline
+  def apply(params: js.Array[_], sql: java.lang.String): Anon_Params = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("sql")(sql)
+    __obj.asInstanceOf[Anon_Params]
+  }
+}
+

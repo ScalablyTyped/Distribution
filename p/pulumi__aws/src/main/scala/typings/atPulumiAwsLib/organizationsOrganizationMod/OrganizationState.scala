@@ -34,3 +34,24 @@ trait OrganizationState extends js.Object {
   val masterAccountId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object OrganizationState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    awsServiceAccessPrincipals: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    featureSet: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    masterAccountArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    masterAccountEmail: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    masterAccountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): OrganizationState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (awsServiceAccessPrincipals != null) __obj.updateDynamic("awsServiceAccessPrincipals")(awsServiceAccessPrincipals.asInstanceOf[js.Any])
+    if (featureSet != null) __obj.updateDynamic("featureSet")(featureSet.asInstanceOf[js.Any])
+    if (masterAccountArn != null) __obj.updateDynamic("masterAccountArn")(masterAccountArn.asInstanceOf[js.Any])
+    if (masterAccountEmail != null) __obj.updateDynamic("masterAccountEmail")(masterAccountEmail.asInstanceOf[js.Any])
+    if (masterAccountId != null) __obj.updateDynamic("masterAccountId")(masterAccountId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OrganizationState]
+  }
+}
+

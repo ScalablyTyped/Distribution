@@ -19,3 +19,34 @@ trait IScheduledJobTrigger extends js.Object {
   def Clone(): IScheduledJobTrigger
 }
 
+object IScheduledJobTrigger {
+  @scala.inline
+  def apply(
+    BeginDay: scala.Double,
+    BeginMonth: scala.Double,
+    BeginYear: scala.Double,
+    Clone: js.Function0[IScheduledJobTrigger],
+    EndDay: scala.Double,
+    EndMonth: scala.Double,
+    EndYear: scala.Double,
+    StartHour: scala.Double,
+    StartMinute: scala.Double,
+    Type: ITriggerType,
+    ValidEndDate: scala.Boolean
+  ): IScheduledJobTrigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BeginDay")(BeginDay)
+    __obj.updateDynamic("BeginMonth")(BeginMonth)
+    __obj.updateDynamic("BeginYear")(BeginYear)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("EndDay")(EndDay)
+    __obj.updateDynamic("EndMonth")(EndMonth)
+    __obj.updateDynamic("EndYear")(EndYear)
+    __obj.updateDynamic("StartHour")(StartHour)
+    __obj.updateDynamic("StartMinute")(StartMinute)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("ValidEndDate")(ValidEndDate)
+    __obj.asInstanceOf[IScheduledJobTrigger]
+  }
+}
+

@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Frame extends js.Object {
+trait Frame
+  extends jpmLib.sdkUiToolbarMod.ToolbarItem {
   var url: stdLib.URL = js.native
   def destroy(): scala.Unit = js.native
   @JSName("off")

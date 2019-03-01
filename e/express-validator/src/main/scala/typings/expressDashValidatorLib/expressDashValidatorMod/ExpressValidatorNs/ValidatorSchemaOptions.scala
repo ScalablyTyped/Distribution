@@ -10,3 +10,13 @@ trait ValidatorSchemaOptions extends js.Object {
   var options: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object ValidatorSchemaOptions {
+  @scala.inline
+  def apply(errorMessage: js.Any = null, options: js.Array[_] = null): ValidatorSchemaOptions = {
+    val __obj = js.Dynamic.literal()
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[ValidatorSchemaOptions]
+  }
+}
+

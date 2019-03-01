@@ -16,3 +16,28 @@ trait Anon_BlogCategoryTitle extends js.Object {
   var Url: java.lang.String
 }
 
+object Anon_BlogCategoryTitle {
+  @scala.inline
+  def apply(
+    BlogCategoryTitle: java.lang.String,
+    BlogPostTitle: java.lang.String,
+    Description: java.lang.String,
+    RecycleBinEnabled: java.lang.String,
+    SiteOwnerName: java.lang.String,
+    SiteUrl: java.lang.String,
+    Title: java.lang.String,
+    Url: java.lang.String
+  ): Anon_BlogCategoryTitle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BlogCategoryTitle")(BlogCategoryTitle)
+    __obj.updateDynamic("BlogPostTitle")(BlogPostTitle)
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("RecycleBinEnabled")(RecycleBinEnabled)
+    __obj.updateDynamic("SiteOwnerName")(SiteOwnerName)
+    __obj.updateDynamic("SiteUrl")(SiteUrl)
+    __obj.updateDynamic("Title")(Title)
+    __obj.updateDynamic("Url")(Url)
+    __obj.asInstanceOf[Anon_BlogCategoryTitle]
+  }
+}
+

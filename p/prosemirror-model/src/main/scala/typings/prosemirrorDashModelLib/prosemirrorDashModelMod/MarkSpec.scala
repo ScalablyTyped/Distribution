@@ -56,3 +56,26 @@ trait MarkSpec extends js.Object {
   ] = js.undefined
 }
 
+object MarkSpec {
+  @scala.inline
+  def apply(
+    attrs: org.scalablytyped.runtime.StringDictionary[AttributeSpec] = null,
+    excludes: java.lang.String = null,
+    group: java.lang.String = null,
+    inclusive: js.UndefOr[scala.Boolean] = js.undefined,
+    parseDOM: js.Array[ParseRule] = null,
+    spanning: js.UndefOr[scala.Boolean] = js.undefined,
+    toDOM: js.Function2[/* mark */ Mark[_], /* inline */ scala.Boolean, DOMOutputSpec] = null
+  ): MarkSpec = {
+    val __obj = js.Dynamic.literal()
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (excludes != null) __obj.updateDynamic("excludes")(excludes)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (!js.isUndefined(inclusive)) __obj.updateDynamic("inclusive")(inclusive)
+    if (parseDOM != null) __obj.updateDynamic("parseDOM")(parseDOM)
+    if (!js.isUndefined(spanning)) __obj.updateDynamic("spanning")(spanning)
+    if (toDOM != null) __obj.updateDynamic("toDOM")(toDOM)
+    __obj.asInstanceOf[MarkSpec]
+  }
+}
+

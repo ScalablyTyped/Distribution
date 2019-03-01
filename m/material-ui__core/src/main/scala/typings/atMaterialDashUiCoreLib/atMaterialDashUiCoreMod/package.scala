@@ -11,7 +11,6 @@ package object atMaterialDashUiCoreMod {
     */ atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.ConsistentWith with js.Any
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type Overwrite[T, U] = (Omit[T, java.lang.String]) with U
-  type PaletteType = atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.light | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dark
   type PropInjector[InjectedProps, AdditionalProps] = js.Function1[
     /* component */ js.Any, 
     reactLib.reactMod.ReactNs.ComponentType[

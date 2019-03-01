@@ -22,3 +22,18 @@ trait ReplicaConfiguration extends js.Object {
   var mysqlReplicaConfiguration: js.UndefOr[MySqlReplicaConfiguration] = js.undefined
 }
 
+object ReplicaConfiguration {
+  @scala.inline
+  def apply(
+    failoverTarget: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    mysqlReplicaConfiguration: MySqlReplicaConfiguration = null
+  ): ReplicaConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(failoverTarget)) __obj.updateDynamic("failoverTarget")(failoverTarget)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (mysqlReplicaConfiguration != null) __obj.updateDynamic("mysqlReplicaConfiguration")(mysqlReplicaConfiguration)
+    __obj.asInstanceOf[ReplicaConfiguration]
+  }
+}
+

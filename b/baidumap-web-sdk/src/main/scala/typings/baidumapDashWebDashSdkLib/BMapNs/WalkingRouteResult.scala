@@ -13,3 +13,22 @@ trait WalkingRouteResult extends js.Object {
   def getStart(): LocalResultPoi
 }
 
+object WalkingRouteResult {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    getEnd: js.Function0[LocalResultPoi],
+    getNumPlans: js.Function0[scala.Double],
+    getPlan: js.Function1[scala.Double, RoutePlan],
+    getStart: js.Function0[LocalResultPoi]
+  ): WalkingRouteResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("city")(city)
+    __obj.updateDynamic("getEnd")(getEnd)
+    __obj.updateDynamic("getNumPlans")(getNumPlans)
+    __obj.updateDynamic("getPlan")(getPlan)
+    __obj.updateDynamic("getStart")(getStart)
+    __obj.asInstanceOf[WalkingRouteResult]
+  }
+}
+

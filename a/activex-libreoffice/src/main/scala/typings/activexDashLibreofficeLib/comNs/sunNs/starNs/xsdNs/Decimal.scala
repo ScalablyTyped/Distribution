@@ -45,3 +45,76 @@ trait Decimal extends XDataType {
   var TotalDigits: scala.Double
 }
 
+object Decimal {
+  @scala.inline
+  def apply(
+    FractionDigits: scala.Double,
+    IsBasic: scala.Boolean,
+    MaxExclusiveDouble: scala.Double,
+    MaxInclusiveDouble: scala.Double,
+    MinExclusiveDouble: scala.Double,
+    MinInclusiveDouble: scala.Double,
+    Name: java.lang.String,
+    Pattern: java.lang.String,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    TotalDigits: scala.Double,
+    TypeClass: scala.Double,
+    WhiteSpaceTreatment: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    explainInvalid: js.Function1[java.lang.String, java.lang.String],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    validate: js.Function1[java.lang.String, scala.Boolean]
+  ): Decimal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FractionDigits")(FractionDigits)
+    __obj.updateDynamic("IsBasic")(IsBasic)
+    __obj.updateDynamic("MaxExclusiveDouble")(MaxExclusiveDouble)
+    __obj.updateDynamic("MaxInclusiveDouble")(MaxInclusiveDouble)
+    __obj.updateDynamic("MinExclusiveDouble")(MinExclusiveDouble)
+    __obj.updateDynamic("MinInclusiveDouble")(MinInclusiveDouble)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Pattern")(Pattern)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("TotalDigits")(TotalDigits)
+    __obj.updateDynamic("TypeClass")(TypeClass)
+    __obj.updateDynamic("WhiteSpaceTreatment")(WhiteSpaceTreatment)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("explainInvalid")(explainInvalid)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[Decimal]
+  }
+}
+

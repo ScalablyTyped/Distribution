@@ -20,3 +20,24 @@ trait EntryMetadata extends js.Object {
   var thumbnail: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EntryMetadata {
+  @scala.inline
+  def apply(
+    isDirectory: scala.Boolean,
+    modificationTime: stdLib.Date,
+    name: java.lang.String,
+    size: scala.Double,
+    mimeType: java.lang.String = null,
+    thumbnail: java.lang.String = null
+  ): EntryMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDirectory")(isDirectory)
+    __obj.updateDynamic("modificationTime")(modificationTime)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("size")(size)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[EntryMetadata]
+  }
+}
+

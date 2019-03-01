@@ -350,3 +350,106 @@ trait Options extends RenderingOptions {
   var wrapCss: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    altImage: java.lang.String = null,
+    altImageFill: js.UndefOr[scala.Boolean] = js.undefined,
+    altImageOpacity: scala.Int | scala.Double = null,
+    altImageStroke: js.UndefOr[scala.Boolean] = js.undefined,
+    areas: js.Array[AreaRenderingOptions] = null,
+    boundList: imagemapsterLib.imagemapsterMod.Global.JQuery = null,
+    clickNavigate: js.UndefOr[scala.Boolean] = js.undefined,
+    configTimeout: scala.Int | scala.Double = null,
+    fade: js.UndefOr[scala.Boolean] = js.undefined,
+    fadeDuration: scala.Int | scala.Double = null,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    fillColor: java.lang.String = null,
+    fillColorMask: java.lang.String = null,
+    fillOpacity: scala.Int | scala.Double = null,
+    highlight: js.UndefOr[scala.Boolean] = js.undefined,
+    isDeselectable: js.UndefOr[scala.Boolean] = js.undefined,
+    isSelectable: js.UndefOr[scala.Boolean] = js.undefined,
+    listKey: java.lang.String = null,
+    listSelectedAttribute: java.lang.String = null,
+    listSelectedClass: java.lang.String = null,
+    mapKey: java.lang.String = null,
+    mapValue: java.lang.String = null,
+    mouseoutDelay: scala.Int | scala.Double = null,
+    noHrefIsMask: js.UndefOr[scala.Boolean] = js.undefined,
+    onClick: js.Function1[/* data */ OnClickData, scala.Unit] = null,
+    onConfigured: js.Function1[/* success */ scala.Boolean, scala.Unit] = null,
+    onGetList: js.Function1[/* data */ OnGetListData, imagemapsterLib.imagemapsterMod.Global.JQuery] = null,
+    onMouseout: js.Function1[/* data */ OnMouseData, scala.Unit] = null,
+    onMouseover: js.Function1[/* data */ OnMouseData, scala.Unit] = null,
+    onShowToolTip: js.Function1[/* data */ OnShowToolTipData, scala.Unit] = null,
+    onStateChange: js.Function1[/* data */ OnStateChangeData, scala.Unit] = null,
+    render_highlight: java.lang.String | RenderingOptions = null,
+    render_select: java.lang.String | RenderingOptions = null,
+    scaleMap: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    showToolTip: js.UndefOr[scala.Boolean] = js.undefined,
+    singleSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    sortList: scala.Boolean | imagemapsterLib.imagemapsterLibStrings.asc | imagemapsterLib.imagemapsterLibStrings.desc = null,
+    staticState: js.UndefOr[scala.Boolean] = js.undefined,
+    stroke: js.UndefOr[scala.Boolean] = js.undefined,
+    strokeColor: java.lang.String = null,
+    strokeOpacity: scala.Int | scala.Double = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    toolTipClose: js.Array[ToolTipCloseEvent] = null,
+    toolTipContainer: java.lang.String | imagemapsterLib.imagemapsterMod.Global.JQuery = null,
+    wrapClass: java.lang.String | scala.Boolean = null,
+    wrapCss: java.lang.String | scala.Boolean = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (altImage != null) __obj.updateDynamic("altImage")(altImage)
+    if (!js.isUndefined(altImageFill)) __obj.updateDynamic("altImageFill")(altImageFill)
+    if (altImageOpacity != null) __obj.updateDynamic("altImageOpacity")(altImageOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(altImageStroke)) __obj.updateDynamic("altImageStroke")(altImageStroke)
+    if (areas != null) __obj.updateDynamic("areas")(areas)
+    if (boundList != null) __obj.updateDynamic("boundList")(boundList)
+    if (!js.isUndefined(clickNavigate)) __obj.updateDynamic("clickNavigate")(clickNavigate)
+    if (configTimeout != null) __obj.updateDynamic("configTimeout")(configTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(fade)) __obj.updateDynamic("fade")(fade)
+    if (fadeDuration != null) __obj.updateDynamic("fadeDuration")(fadeDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillColorMask != null) __obj.updateDynamic("fillColorMask")(fillColorMask)
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (!js.isUndefined(isDeselectable)) __obj.updateDynamic("isDeselectable")(isDeselectable)
+    if (!js.isUndefined(isSelectable)) __obj.updateDynamic("isSelectable")(isSelectable)
+    if (listKey != null) __obj.updateDynamic("listKey")(listKey)
+    if (listSelectedAttribute != null) __obj.updateDynamic("listSelectedAttribute")(listSelectedAttribute)
+    if (listSelectedClass != null) __obj.updateDynamic("listSelectedClass")(listSelectedClass)
+    if (mapKey != null) __obj.updateDynamic("mapKey")(mapKey)
+    if (mapValue != null) __obj.updateDynamic("mapValue")(mapValue)
+    if (mouseoutDelay != null) __obj.updateDynamic("mouseoutDelay")(mouseoutDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(noHrefIsMask)) __obj.updateDynamic("noHrefIsMask")(noHrefIsMask)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onConfigured != null) __obj.updateDynamic("onConfigured")(onConfigured)
+    if (onGetList != null) __obj.updateDynamic("onGetList")(onGetList)
+    if (onMouseout != null) __obj.updateDynamic("onMouseout")(onMouseout)
+    if (onMouseover != null) __obj.updateDynamic("onMouseover")(onMouseover)
+    if (onShowToolTip != null) __obj.updateDynamic("onShowToolTip")(onShowToolTip)
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (render_highlight != null) __obj.updateDynamic("render_highlight")(render_highlight.asInstanceOf[js.Any])
+    if (render_select != null) __obj.updateDynamic("render_select")(render_select.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleMap)) __obj.updateDynamic("scaleMap")(scaleMap)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(showToolTip)) __obj.updateDynamic("showToolTip")(showToolTip)
+    if (!js.isUndefined(singleSelect)) __obj.updateDynamic("singleSelect")(singleSelect)
+    if (sortList != null) __obj.updateDynamic("sortList")(sortList.asInstanceOf[js.Any])
+    if (!js.isUndefined(staticState)) __obj.updateDynamic("staticState")(staticState)
+    if (!js.isUndefined(stroke)) __obj.updateDynamic("stroke")(stroke)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (toolTipClose != null) __obj.updateDynamic("toolTipClose")(toolTipClose)
+    if (toolTipContainer != null) __obj.updateDynamic("toolTipContainer")(toolTipContainer.asInstanceOf[js.Any])
+    if (wrapClass != null) __obj.updateDynamic("wrapClass")(wrapClass.asInstanceOf[js.Any])
+    if (wrapCss != null) __obj.updateDynamic("wrapCss")(wrapCss.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

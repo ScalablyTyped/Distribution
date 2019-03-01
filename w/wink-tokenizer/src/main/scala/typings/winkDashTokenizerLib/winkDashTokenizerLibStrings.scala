@@ -7,49 +7,64 @@ import scala.scalajs.js.annotation._
 
 object winkDashTokenizerLibStrings {
   @js.native
-  sealed trait alien extends js.Object
+  sealed trait alien
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait currency extends js.Object
+  sealed trait currency
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait emoji extends js.Object
+  sealed trait emoji
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait emoticon extends js.Object
+  sealed trait emoticon
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait hashtag extends js.Object
+  sealed trait hashtag
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait mention extends js.Object
+  sealed trait mention
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait ordinal extends js.Object
+  sealed trait ordinal
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait punctuation extends js.Object
+  sealed trait punctuation
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait quoted_phrase extends js.Object
+  sealed trait quoted_phrase
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait symbol extends js.Object
+  sealed trait symbol
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @js.native
-  sealed trait word extends js.Object
+  sealed trait word
+    extends winkDashTokenizerLib.winkDashTokenizerMod.TokenizerNs.Tag
   
   @scala.inline
   def alien: alien = "alien".asInstanceOf[alien]

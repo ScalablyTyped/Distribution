@@ -181,3 +181,98 @@ trait RoyalSliderOptions extends js.Object {
   var visibleNearby: js.UndefOr[RoyalSliderVisibleOptions] = js.undefined
 }
 
+object RoyalSliderOptions {
+  @scala.inline
+  def apply(
+    addActiveClass: js.UndefOr[scala.Boolean] = js.undefined,
+    allowCSS3: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowsNav: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowsNavAutoHide: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowsNavHideOnTouch: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    autoScaleSlider: js.UndefOr[scala.Boolean] = js.undefined,
+    autoScaleSliderHeight: scala.Int | scala.Double = null,
+    autoScaleSliderWidth: scala.Int | scala.Double = null,
+    autoplay: RoyalSliderAutoplayOptions = null,
+    block: RoyalSliderBlockOptions = null,
+    controlNavigation: java.lang.String = null,
+    controlsInside: js.UndefOr[scala.Boolean] = js.undefined,
+    deeplinking: RoyalSliderDeeplinkingOptions = null,
+    easeInOut: java.lang.String = null,
+    easeOut: java.lang.String = null,
+    fadeinLoadedSlide: js.UndefOr[scala.Boolean] = js.undefined,
+    fullscreen: RoyalSliderFullscreenOptions = null,
+    globalCaption: js.UndefOr[scala.Boolean] = js.undefined,
+    imageAlignCenter: js.UndefOr[scala.Boolean] = js.undefined,
+    imageScaleMode: java.lang.String = null,
+    imageScalePadding: scala.Int | scala.Double = null,
+    imgHeight: scala.Int | scala.Double = null,
+    imgWidth: scala.Int | scala.Double = null,
+    keyboardNavEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    loopRewind: js.UndefOr[scala.Boolean] = js.undefined,
+    minSlideOffset: scala.Int | scala.Double = null,
+    navigateByClick: js.UndefOr[scala.Boolean] = js.undefined,
+    numImagesToPreload: scala.Int | scala.Double = null,
+    randomizeSlides: js.UndefOr[scala.Boolean] = js.undefined,
+    sliderDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    sliderTouch: js.UndefOr[scala.Boolean] = js.undefined,
+    slides: stdLib.Element = null,
+    slidesOrientation: java.lang.String = null,
+    slidesSpacing: scala.Int | scala.Double = null,
+    startSlideId: scala.Int | scala.Double = null,
+    thumbs: RoyalSliderThumbsOptions = null,
+    transitionSpeed: scala.Int | scala.Double = null,
+    transitionType: java.lang.String = null,
+    usePreloader: js.UndefOr[scala.Boolean] = js.undefined,
+    video: RoyalSliderVideoOptions = null,
+    visibleNearby: RoyalSliderVisibleOptions = null
+  ): RoyalSliderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addActiveClass)) __obj.updateDynamic("addActiveClass")(addActiveClass)
+    if (!js.isUndefined(allowCSS3)) __obj.updateDynamic("allowCSS3")(allowCSS3)
+    if (!js.isUndefined(arrowsNav)) __obj.updateDynamic("arrowsNav")(arrowsNav)
+    if (!js.isUndefined(arrowsNavAutoHide)) __obj.updateDynamic("arrowsNavAutoHide")(arrowsNavAutoHide)
+    if (!js.isUndefined(arrowsNavHideOnTouch)) __obj.updateDynamic("arrowsNavHideOnTouch")(arrowsNavHideOnTouch)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (!js.isUndefined(autoScaleSlider)) __obj.updateDynamic("autoScaleSlider")(autoScaleSlider)
+    if (autoScaleSliderHeight != null) __obj.updateDynamic("autoScaleSliderHeight")(autoScaleSliderHeight.asInstanceOf[js.Any])
+    if (autoScaleSliderWidth != null) __obj.updateDynamic("autoScaleSliderWidth")(autoScaleSliderWidth.asInstanceOf[js.Any])
+    if (autoplay != null) __obj.updateDynamic("autoplay")(autoplay)
+    if (block != null) __obj.updateDynamic("block")(block)
+    if (controlNavigation != null) __obj.updateDynamic("controlNavigation")(controlNavigation)
+    if (!js.isUndefined(controlsInside)) __obj.updateDynamic("controlsInside")(controlsInside)
+    if (deeplinking != null) __obj.updateDynamic("deeplinking")(deeplinking)
+    if (easeInOut != null) __obj.updateDynamic("easeInOut")(easeInOut)
+    if (easeOut != null) __obj.updateDynamic("easeOut")(easeOut)
+    if (!js.isUndefined(fadeinLoadedSlide)) __obj.updateDynamic("fadeinLoadedSlide")(fadeinLoadedSlide)
+    if (fullscreen != null) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (!js.isUndefined(globalCaption)) __obj.updateDynamic("globalCaption")(globalCaption)
+    if (!js.isUndefined(imageAlignCenter)) __obj.updateDynamic("imageAlignCenter")(imageAlignCenter)
+    if (imageScaleMode != null) __obj.updateDynamic("imageScaleMode")(imageScaleMode)
+    if (imageScalePadding != null) __obj.updateDynamic("imageScalePadding")(imageScalePadding.asInstanceOf[js.Any])
+    if (imgHeight != null) __obj.updateDynamic("imgHeight")(imgHeight.asInstanceOf[js.Any])
+    if (imgWidth != null) __obj.updateDynamic("imgWidth")(imgWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboardNavEnabled)) __obj.updateDynamic("keyboardNavEnabled")(keyboardNavEnabled)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(loopRewind)) __obj.updateDynamic("loopRewind")(loopRewind)
+    if (minSlideOffset != null) __obj.updateDynamic("minSlideOffset")(minSlideOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(navigateByClick)) __obj.updateDynamic("navigateByClick")(navigateByClick)
+    if (numImagesToPreload != null) __obj.updateDynamic("numImagesToPreload")(numImagesToPreload.asInstanceOf[js.Any])
+    if (!js.isUndefined(randomizeSlides)) __obj.updateDynamic("randomizeSlides")(randomizeSlides)
+    if (!js.isUndefined(sliderDrag)) __obj.updateDynamic("sliderDrag")(sliderDrag)
+    if (!js.isUndefined(sliderTouch)) __obj.updateDynamic("sliderTouch")(sliderTouch)
+    if (slides != null) __obj.updateDynamic("slides")(slides)
+    if (slidesOrientation != null) __obj.updateDynamic("slidesOrientation")(slidesOrientation)
+    if (slidesSpacing != null) __obj.updateDynamic("slidesSpacing")(slidesSpacing.asInstanceOf[js.Any])
+    if (startSlideId != null) __obj.updateDynamic("startSlideId")(startSlideId.asInstanceOf[js.Any])
+    if (thumbs != null) __obj.updateDynamic("thumbs")(thumbs)
+    if (transitionSpeed != null) __obj.updateDynamic("transitionSpeed")(transitionSpeed.asInstanceOf[js.Any])
+    if (transitionType != null) __obj.updateDynamic("transitionType")(transitionType)
+    if (!js.isUndefined(usePreloader)) __obj.updateDynamic("usePreloader")(usePreloader)
+    if (video != null) __obj.updateDynamic("video")(video)
+    if (visibleNearby != null) __obj.updateDynamic("visibleNearby")(visibleNearby)
+    __obj.asInstanceOf[RoyalSliderOptions]
+  }
+}
+

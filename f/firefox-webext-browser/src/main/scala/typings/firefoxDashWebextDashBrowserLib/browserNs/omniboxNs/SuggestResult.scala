@@ -30,3 +30,20 @@ trait SuggestResult extends js.Object {
   var descriptionStylesRaw: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.Anon_Offset]] = js.undefined
 }
 
+object SuggestResult {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    description: java.lang.String,
+    descriptionStyles: js.Array[firefoxDashWebextDashBrowserLib.Anon_Length] = null,
+    descriptionStylesRaw: js.Array[firefoxDashWebextDashBrowserLib.Anon_Offset] = null
+  ): SuggestResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("description")(description)
+    if (descriptionStyles != null) __obj.updateDynamic("descriptionStyles")(descriptionStyles)
+    if (descriptionStylesRaw != null) __obj.updateDynamic("descriptionStylesRaw")(descriptionStylesRaw)
+    __obj.asInstanceOf[SuggestResult]
+  }
+}
+

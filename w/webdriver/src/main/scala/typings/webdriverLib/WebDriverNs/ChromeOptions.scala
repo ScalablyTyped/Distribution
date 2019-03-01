@@ -19,3 +19,34 @@ trait ChromeOptions extends js.Object {
   var windowTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ChromeOptions {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    binary: java.lang.String = null,
+    debuggerAddress: java.lang.String = null,
+    detach: js.UndefOr[scala.Boolean] = js.undefined,
+    excludeSwitches: js.Array[java.lang.String] = null,
+    extensions: js.Array[java.lang.String] = null,
+    localState: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    minidumpPath: java.lang.String = null,
+    mobileEmulation: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    perfLoggingPrefs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    windowTypes: js.Array[java.lang.String] = null
+  ): ChromeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (binary != null) __obj.updateDynamic("binary")(binary)
+    if (debuggerAddress != null) __obj.updateDynamic("debuggerAddress")(debuggerAddress)
+    if (!js.isUndefined(detach)) __obj.updateDynamic("detach")(detach)
+    if (excludeSwitches != null) __obj.updateDynamic("excludeSwitches")(excludeSwitches)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (localState != null) __obj.updateDynamic("localState")(localState)
+    if (minidumpPath != null) __obj.updateDynamic("minidumpPath")(minidumpPath)
+    if (mobileEmulation != null) __obj.updateDynamic("mobileEmulation")(mobileEmulation)
+    if (perfLoggingPrefs != null) __obj.updateDynamic("perfLoggingPrefs")(perfLoggingPrefs)
+    if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes)
+    __obj.asInstanceOf[ChromeOptions]
+  }
+}
+

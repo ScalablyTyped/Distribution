@@ -36,3 +36,33 @@ trait PolicyConfiguration extends VersionedPolicyConfigurationRef {
   var settings: js.Any
 }
 
+object PolicyConfiguration {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdDate: stdLib.Date,
+    id: scala.Double,
+    isBlocking: scala.Boolean,
+    isDeleted: scala.Boolean,
+    isEnabled: scala.Boolean,
+    revision: scala.Double,
+    settings: js.Any,
+    `type`: PolicyTypeRef,
+    url: java.lang.String
+  ): PolicyConfiguration = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isBlocking")(isBlocking)
+    __obj.updateDynamic("isDeleted")(isDeleted)
+    __obj.updateDynamic("isEnabled")(isEnabled)
+    __obj.updateDynamic("revision")(revision)
+    __obj.updateDynamic("settings")(settings)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[PolicyConfiguration]
+  }
+}
+

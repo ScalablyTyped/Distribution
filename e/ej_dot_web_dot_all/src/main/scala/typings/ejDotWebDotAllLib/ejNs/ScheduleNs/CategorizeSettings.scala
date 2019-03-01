@@ -35,3 +35,26 @@ trait CategorizeSettings extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CategorizeSettings {
+  @scala.inline
+  def apply(
+    allowMultiple: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    dataSource: js.Array[_] | js.Any = null,
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    fontColor: java.lang.String = null,
+    id: java.lang.String = null,
+    text: java.lang.String = null
+  ): CategorizeSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[CategorizeSettings]
+  }
+}
+

@@ -13,3 +13,12 @@ trait ListPartsQuery extends js.Object {
   var `part-number-marker`: scala.Double
 }
 
+object ListPartsQuery {
+  @scala.inline
+  def apply(`encoding-type`: java.lang.String, `max-parts`: scala.Double, `part-number-marker`: scala.Double): ListPartsQuery = {
+    val __obj = js.Dynamic.literal(`encoding-type` = `encoding-type`, `max-parts` = `max-parts`, `part-number-marker` = `part-number-marker`)
+  
+    __obj.asInstanceOf[ListPartsQuery]
+  }
+}
+

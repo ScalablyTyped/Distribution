@@ -24,3 +24,18 @@ trait SearchVariantSetsRequest extends js.Object {
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchVariantSetsRequest {
+  @scala.inline
+  def apply(
+    datasetIds: js.Array[java.lang.String] = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null
+  ): SearchVariantSetsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (datasetIds != null) __obj.updateDynamic("datasetIds")(datasetIds)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    __obj.asInstanceOf[SearchVariantSetsRequest]
+  }
+}
+

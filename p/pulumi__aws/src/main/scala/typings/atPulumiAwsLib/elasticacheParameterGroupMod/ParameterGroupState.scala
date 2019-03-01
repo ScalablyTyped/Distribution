@@ -26,3 +26,20 @@ trait ParameterGroupState extends js.Object {
   ] = js.undefined
 }
 
+object ParameterGroupState {
+  @scala.inline
+  def apply(
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    family: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    parameters: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameValue]]] = null
+  ): ParameterGroupState = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParameterGroupState]
+  }
+}
+

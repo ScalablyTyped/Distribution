@@ -126,3 +126,36 @@ trait GenerateAuthUrlOpts extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GenerateAuthUrlOpts {
+  @scala.inline
+  def apply(
+    access_type: java.lang.String = null,
+    client_id: java.lang.String = null,
+    code_challenge: java.lang.String = null,
+    code_challenge_method: CodeChallengeMethod = null,
+    hd: java.lang.String = null,
+    include_granted_scopes: js.UndefOr[scala.Boolean] = js.undefined,
+    login_hint: java.lang.String = null,
+    prompt: java.lang.String = null,
+    redirect_uri: java.lang.String = null,
+    response_type: java.lang.String = null,
+    scope: js.Array[java.lang.String] | java.lang.String = null,
+    state: java.lang.String = null
+  ): GenerateAuthUrlOpts = {
+    val __obj = js.Dynamic.literal()
+    if (access_type != null) __obj.updateDynamic("access_type")(access_type)
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
+    if (code_challenge != null) __obj.updateDynamic("code_challenge")(code_challenge)
+    if (code_challenge_method != null) __obj.updateDynamic("code_challenge_method")(code_challenge_method)
+    if (hd != null) __obj.updateDynamic("hd")(hd)
+    if (!js.isUndefined(include_granted_scopes)) __obj.updateDynamic("include_granted_scopes")(include_granted_scopes)
+    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[GenerateAuthUrlOpts]
+  }
+}
+

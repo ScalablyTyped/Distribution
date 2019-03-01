@@ -53,3 +53,36 @@ trait LegendSettings extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LegendSettings {
+  @scala.inline
+  def apply(
+    alignment: java.lang.String = null,
+    columnCount: scala.Int | scala.Double = null,
+    dockPosition: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    iconHeight: scala.Int | scala.Double = null,
+    iconWidth: scala.Int | scala.Double = null,
+    leftLabel: java.lang.String = null,
+    mode: java.lang.String = null,
+    rightLabel: java.lang.String = null,
+    template: java.lang.String = null,
+    title: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): LegendSettings = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (dockPosition != null) __obj.updateDynamic("dockPosition")(dockPosition)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (iconHeight != null) __obj.updateDynamic("iconHeight")(iconHeight.asInstanceOf[js.Any])
+    if (iconWidth != null) __obj.updateDynamic("iconWidth")(iconWidth.asInstanceOf[js.Any])
+    if (leftLabel != null) __obj.updateDynamic("leftLabel")(leftLabel)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (rightLabel != null) __obj.updateDynamic("rightLabel")(rightLabel)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LegendSettings]
+  }
+}
+

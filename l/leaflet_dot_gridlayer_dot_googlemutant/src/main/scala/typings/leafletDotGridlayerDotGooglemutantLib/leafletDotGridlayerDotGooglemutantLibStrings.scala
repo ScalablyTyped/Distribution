@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object leafletDotGridlayerDotGooglemutantLibStrings {
   @js.native
-  sealed trait hybrid extends js.Object
+  sealed trait hybrid
+    extends leafletDotGridlayerDotGooglemutantLib.leafletMod.gridLayerNs.GoogleMutantType
   
   @js.native
-  sealed trait roadmap extends js.Object
+  sealed trait roadmap
+    extends leafletDotGridlayerDotGooglemutantLib.leafletMod.gridLayerNs.GoogleMutantType
   
   @js.native
-  sealed trait satellite extends js.Object
+  sealed trait satellite
+    extends leafletDotGridlayerDotGooglemutantLib.leafletMod.gridLayerNs.GoogleMutantType
   
   @js.native
-  sealed trait terrain extends js.Object
+  sealed trait terrain
+    extends leafletDotGridlayerDotGooglemutantLib.leafletMod.gridLayerNs.GoogleMutantType
   
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]

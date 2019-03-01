@@ -21,4 +21,5 @@ trait EdgeSingular
      with EdgeSingularData
      with EdgeSingularPoints
      with EdgeSingularTraversing
+     with SingularElementArgument
 

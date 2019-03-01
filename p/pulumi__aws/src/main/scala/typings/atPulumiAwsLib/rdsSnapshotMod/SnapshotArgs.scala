@@ -20,3 +20,18 @@ trait SnapshotArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object SnapshotArgs {
+  @scala.inline
+  def apply(
+    dbInstanceIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    dbSnapshotIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): SnapshotArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dbInstanceIdentifier")(dbInstanceIdentifier.asInstanceOf[js.Any])
+    __obj.updateDynamic("dbSnapshotIdentifier")(dbSnapshotIdentifier.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotArgs]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_Path extends js.Object {
   var pkg: normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package
 }
 
+object Anon_Path {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    pkg: normalizeDashPackageDashDataLib.normalizeDashPackageDashDataMod.normalizeNs.Package
+  ): Anon_Path = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("pkg")(pkg)
+    __obj.asInstanceOf[Anon_Path]
+  }
+}
+

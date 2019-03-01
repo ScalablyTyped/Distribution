@@ -20,3 +20,18 @@ trait AcquisitionOperation extends js.Object {
   var reason: java.lang.String
 }
 
+object AcquisitionOperation {
+  @scala.inline
+  def apply(
+    operationState: AcquisitionOperationState,
+    operationType: AcquisitionOperationType,
+    reason: java.lang.String
+  ): AcquisitionOperation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("operationState")(operationState)
+    __obj.updateDynamic("operationType")(operationType)
+    __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[AcquisitionOperation]
+  }
+}
+

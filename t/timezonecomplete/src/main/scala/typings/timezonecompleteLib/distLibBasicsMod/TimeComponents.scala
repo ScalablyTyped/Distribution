@@ -36,3 +36,26 @@ trait TimeComponents extends js.Object {
   var year: scala.Double
 }
 
+object TimeComponents {
+  @scala.inline
+  def apply(
+    day: scala.Double,
+    hour: scala.Double,
+    milli: scala.Double,
+    minute: scala.Double,
+    month: scala.Double,
+    second: scala.Double,
+    year: scala.Double
+  ): TimeComponents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("day")(day)
+    __obj.updateDynamic("hour")(hour)
+    __obj.updateDynamic("milli")(milli)
+    __obj.updateDynamic("minute")(minute)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("second")(second)
+    __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[TimeComponents]
+  }
+}
+

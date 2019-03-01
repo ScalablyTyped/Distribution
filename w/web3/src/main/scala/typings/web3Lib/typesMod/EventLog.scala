@@ -17,3 +17,30 @@ trait EventLog extends js.Object {
   var transactionIndex: scala.Double
 }
 
+object EventLog {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    blockHash: java.lang.String,
+    blockNumber: scala.Double,
+    event: java.lang.String,
+    logIndex: scala.Double,
+    returnValues: js.Any,
+    transactionHash: java.lang.String,
+    transactionIndex: scala.Double,
+    raw: web3Lib.Anon_Data = null
+  ): EventLog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("blockHash")(blockHash)
+    __obj.updateDynamic("blockNumber")(blockNumber)
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("logIndex")(logIndex)
+    __obj.updateDynamic("returnValues")(returnValues)
+    __obj.updateDynamic("transactionHash")(transactionHash)
+    __obj.updateDynamic("transactionIndex")(transactionIndex)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[EventLog]
+  }
+}
+

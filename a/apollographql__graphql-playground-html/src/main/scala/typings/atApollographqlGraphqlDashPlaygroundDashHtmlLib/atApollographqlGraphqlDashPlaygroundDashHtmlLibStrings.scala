@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object atApollographqlGraphqlDashPlaygroundDashHtmlLibStrings {
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait dark
+    extends atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.Theme
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light
+    extends atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.Theme
   
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]

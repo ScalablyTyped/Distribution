@@ -11,3 +11,14 @@ trait WorkerStartInfo extends js.Object {
   var respawn: scala.Boolean
 }
 
+object WorkerStartInfo {
+  @scala.inline
+  def apply(id: scala.Double, pid: scala.Double, respawn: scala.Boolean): WorkerStartInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("pid")(pid)
+    __obj.updateDynamic("respawn")(respawn)
+    __obj.asInstanceOf[WorkerStartInfo]
+  }
+}
+

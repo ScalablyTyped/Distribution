@@ -76,3 +76,38 @@ trait ASPxClientHtmlEditorCommandStyleSettings extends js.Object {
   var width: java.lang.String
 }
 
+object ASPxClientHtmlEditorCommandStyleSettings {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    borderColor: java.lang.String,
+    borderStyle: java.lang.String,
+    borderWidth: java.lang.String,
+    className: java.lang.String,
+    height: java.lang.String,
+    marginBottom: java.lang.String,
+    marginLeft: java.lang.String,
+    marginRight: java.lang.String,
+    marginTop: java.lang.String,
+    textAlign: java.lang.String,
+    verticalAlign: java.lang.String,
+    width: java.lang.String
+  ): ASPxClientHtmlEditorCommandStyleSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("borderColor")(borderColor)
+    __obj.updateDynamic("borderStyle")(borderStyle)
+    __obj.updateDynamic("borderWidth")(borderWidth)
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("marginBottom")(marginBottom)
+    __obj.updateDynamic("marginLeft")(marginLeft)
+    __obj.updateDynamic("marginRight")(marginRight)
+    __obj.updateDynamic("marginTop")(marginTop)
+    __obj.updateDynamic("textAlign")(textAlign)
+    __obj.updateDynamic("verticalAlign")(verticalAlign)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ASPxClientHtmlEditorCommandStyleSettings]
+  }
+}
+

@@ -16,3 +16,13 @@ trait FieldsCollapsibleCards extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FieldsCollapsibleCards {
+  @scala.inline
+  def apply(field: java.lang.String = null, key: java.lang.String = null): FieldsCollapsibleCards = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[FieldsCollapsibleCards]
+  }
+}
+

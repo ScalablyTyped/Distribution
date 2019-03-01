@@ -12,3 +12,12 @@ trait IActivateOptions extends js.Object {
   var plugins: js.Array[workboxDashSwLib.Plugin]
 }
 
+object IActivateOptions {
+  @scala.inline
+  def apply(plugins: js.Array[workboxDashSwLib.Plugin]): IActivateOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("plugins")(plugins)
+    __obj.asInstanceOf[IActivateOptions]
+  }
+}
+

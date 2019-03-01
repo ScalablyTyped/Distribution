@@ -68,3 +68,39 @@ trait Anon_Array extends js.Object {
   var String: Anon_Key
 }
 
+object Anon_Array {
+  @scala.inline
+  def apply(
+    Array: Anon_Cast,
+    Boolean: Anon_Options,
+    Buffer: Anon_KeyOptionsSchemaNameAnyBuffer,
+    Date: Anon_KeyOptionsSchemaNameAny,
+    Decimal128: Anon_KeyOptionsSchemaNameAnyDecimal128,
+    DocumentArray: Anon_KeyOptions,
+    Embedded: org.scalablytyped.runtime.Instantiable3[
+      /* schema */ mongooseLib.mongooseMod.Schema[js.Any], 
+      /* key */ java.lang.String, 
+      /* options */ js.UndefOr[/* options */ js.Any], 
+      mongooseLib.mongooseMod.SchemaNs.TypesNs.Embedded
+    ],
+    Mixed: Anon_OptionsPath,
+    Number: Anon_KeyOptionsSchemaName,
+    ObjectId: Anon_KeyOptionsSchemaNameAnyObjectId,
+    String: Anon_Key
+  ): Anon_Array = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Array")(Array)
+    __obj.updateDynamic("Boolean")(Boolean)
+    __obj.updateDynamic("Buffer")(Buffer)
+    __obj.updateDynamic("Date")(Date)
+    __obj.updateDynamic("Decimal128")(Decimal128)
+    __obj.updateDynamic("DocumentArray")(DocumentArray)
+    __obj.updateDynamic("Embedded")(Embedded)
+    __obj.updateDynamic("Mixed")(Mixed)
+    __obj.updateDynamic("Number")(Number)
+    __obj.updateDynamic("ObjectId")(ObjectId)
+    __obj.updateDynamic("String")(String)
+    __obj.asInstanceOf[Anon_Array]
+  }
+}
+

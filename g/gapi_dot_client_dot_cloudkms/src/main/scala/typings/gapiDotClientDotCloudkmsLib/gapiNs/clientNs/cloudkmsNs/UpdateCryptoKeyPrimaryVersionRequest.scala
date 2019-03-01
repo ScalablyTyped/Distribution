@@ -10,3 +10,12 @@ trait UpdateCryptoKeyPrimaryVersionRequest extends js.Object {
   var cryptoKeyVersionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UpdateCryptoKeyPrimaryVersionRequest {
+  @scala.inline
+  def apply(cryptoKeyVersionId: java.lang.String = null): UpdateCryptoKeyPrimaryVersionRequest = {
+    val __obj = js.Dynamic.literal()
+    if (cryptoKeyVersionId != null) __obj.updateDynamic("cryptoKeyVersionId")(cryptoKeyVersionId)
+    __obj.asInstanceOf[UpdateCryptoKeyPrimaryVersionRequest]
+  }
+}
+

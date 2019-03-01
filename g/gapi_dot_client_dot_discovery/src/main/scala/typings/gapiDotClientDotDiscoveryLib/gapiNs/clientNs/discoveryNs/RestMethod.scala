@@ -41,3 +41,42 @@ trait RestMethod extends js.Object {
   var useMediaDownloadService: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RestMethod {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    etagRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    httpMethod: java.lang.String = null,
+    id: java.lang.String = null,
+    mediaUpload: gapiDotClientDotDiscoveryLib.Anon_Accept = null,
+    parameterOrder: js.Array[java.lang.String] = null,
+    parameters: stdLib.Record[java.lang.String, JsonSchema] = null,
+    path: java.lang.String = null,
+    request: gapiDotClientDotDiscoveryLib.Anon_ParameterName = null,
+    response: gapiDotClientDotDiscoveryLib.Anon_RefString = null,
+    scopes: js.Array[java.lang.String] = null,
+    supportsMediaDownload: js.UndefOr[scala.Boolean] = js.undefined,
+    supportsMediaUpload: js.UndefOr[scala.Boolean] = js.undefined,
+    supportsSubscription: js.UndefOr[scala.Boolean] = js.undefined,
+    useMediaDownloadService: js.UndefOr[scala.Boolean] = js.undefined
+  ): RestMethod = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(etagRequired)) __obj.updateDynamic("etagRequired")(etagRequired)
+    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (mediaUpload != null) __obj.updateDynamic("mediaUpload")(mediaUpload)
+    if (parameterOrder != null) __obj.updateDynamic("parameterOrder")(parameterOrder)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (!js.isUndefined(supportsMediaDownload)) __obj.updateDynamic("supportsMediaDownload")(supportsMediaDownload)
+    if (!js.isUndefined(supportsMediaUpload)) __obj.updateDynamic("supportsMediaUpload")(supportsMediaUpload)
+    if (!js.isUndefined(supportsSubscription)) __obj.updateDynamic("supportsSubscription")(supportsSubscription)
+    if (!js.isUndefined(useMediaDownloadService)) __obj.updateDynamic("useMediaDownloadService")(useMediaDownloadService)
+    __obj.asInstanceOf[RestMethod]
+  }
+}
+

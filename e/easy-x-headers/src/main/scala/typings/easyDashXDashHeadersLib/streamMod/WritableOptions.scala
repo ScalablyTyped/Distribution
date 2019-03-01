@@ -10,3 +10,16 @@ trait WritableOptions extends js.Object {
   var highWaterMark: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WritableOptions {
+  @scala.inline
+  def apply(
+    decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
+    highWaterMark: scala.Int | scala.Double = null
+  ): WritableOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
+    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WritableOptions]
+  }
+}
+

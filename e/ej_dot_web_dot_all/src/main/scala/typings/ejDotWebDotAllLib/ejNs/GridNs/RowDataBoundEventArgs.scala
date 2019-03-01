@@ -29,3 +29,26 @@ trait RowDataBoundEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RowDataBoundEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    foreignKeyData: js.Any = null,
+    model: js.Any = null,
+    row: js.Any = null,
+    rowData: js.Any = null,
+    `type`: java.lang.String = null
+  ): RowDataBoundEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (foreignKeyData != null) __obj.updateDynamic("foreignKeyData")(foreignKeyData)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RowDataBoundEventArgs]
+  }
+}
+

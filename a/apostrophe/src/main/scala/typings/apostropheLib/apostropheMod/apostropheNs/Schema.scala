@@ -58,3 +58,64 @@ trait Schema extends js.Object {
   def validate(schema: Schema, options: js.Any): scala.Unit
 }
 
+object Schema {
+  @scala.inline
+  def apply(
+    addFieldType: js.Function1[AposType, scala.Unit],
+    addFilters: js.Function3[Schema, js.Any, js.Any, scala.Unit],
+    addJoinSlugFilter: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    afterInit: js.Function0[scala.Unit],
+    compose: js.Function1[AposObject, scala.Unit],
+    convert: js.Function6[js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_], scala.Unit],
+    createRoutes: js.Function0[js.Array[_]],
+    cursorFilterInterested: js.Function2[js.Any, java.lang.String, scala.Unit],
+    empty: js.Function2[Schema, AposObject, scala.Unit],
+    export: js.Function6[js.Any, Schema, js.Any, AposObject, js.Any, js.Function0[_], scala.Unit],
+    getFieldType: js.Function1[java.lang.String, scala.Unit],
+    indexFields: js.Function3[Schema, AposObject, js.Any, scala.Unit],
+    isVisible: js.Function3[Schema, AposObject, java.lang.String, scala.Unit],
+    join: js.Function5[js.Any, Schema, js.Any, js.Any, js.Function0[_], scala.Unit],
+    joinDriver: js.Function9[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Function0[_], scala.Unit],
+    joinFilterChoices: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    newInstance: js.Function1[Schema, js.Any],
+    pageServe: js.Function1[js.Any, scala.Unit],
+    pushAssets: js.Function0[scala.Unit],
+    pushCreateSingleton: js.Function0[scala.Unit],
+    refine: js.Function2[Schema, AposObject, scala.Unit],
+    sortedDistinct: js.Function3[js.Any, js.Any, js.Function0[_], scala.Unit],
+    subset: js.Function2[Schema, Fields, Schema],
+    subsetInstance: js.Function2[Schema, AposObject, js.Any],
+    toGroups: js.Function1[Fields, scala.Unit],
+    validate: js.Function2[Schema, js.Any, scala.Unit]
+  ): Schema = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addFieldType")(addFieldType)
+    __obj.updateDynamic("addFilters")(addFilters)
+    __obj.updateDynamic("addJoinSlugFilter")(addJoinSlugFilter)
+    __obj.updateDynamic("afterInit")(afterInit)
+    __obj.updateDynamic("compose")(compose)
+    __obj.updateDynamic("convert")(convert)
+    __obj.updateDynamic("createRoutes")(createRoutes)
+    __obj.updateDynamic("cursorFilterInterested")(cursorFilterInterested)
+    __obj.updateDynamic("empty")(empty)
+    __obj.updateDynamic("export")(export)
+    __obj.updateDynamic("getFieldType")(getFieldType)
+    __obj.updateDynamic("indexFields")(indexFields)
+    __obj.updateDynamic("isVisible")(isVisible)
+    __obj.updateDynamic("join")(join)
+    __obj.updateDynamic("joinDriver")(joinDriver)
+    __obj.updateDynamic("joinFilterChoices")(joinFilterChoices)
+    __obj.updateDynamic("newInstance")(newInstance)
+    __obj.updateDynamic("pageServe")(pageServe)
+    __obj.updateDynamic("pushAssets")(pushAssets)
+    __obj.updateDynamic("pushCreateSingleton")(pushCreateSingleton)
+    __obj.updateDynamic("refine")(refine)
+    __obj.updateDynamic("sortedDistinct")(sortedDistinct)
+    __obj.updateDynamic("subset")(subset)
+    __obj.updateDynamic("subsetInstance")(subsetInstance)
+    __obj.updateDynamic("toGroups")(toGroups)
+    __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[Schema]
+  }
+}
+

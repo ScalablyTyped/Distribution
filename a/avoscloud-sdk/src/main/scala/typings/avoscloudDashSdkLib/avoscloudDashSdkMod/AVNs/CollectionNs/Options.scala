@@ -11,3 +11,18 @@ trait Options extends js.Object {
   var query: js.UndefOr[avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Query] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    comparator: java.lang.String = null,
+    model: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Object = null,
+    query: avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Query = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[Options]
+  }
+}
+

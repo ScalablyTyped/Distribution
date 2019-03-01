@@ -35,3 +35,28 @@ trait DataPoint extends js.Object {
   var value: js.UndefOr[js.Array[Value]] = js.undefined
 }
 
+object DataPoint {
+  @scala.inline
+  def apply(
+    computationTimeMillis: java.lang.String = null,
+    dataTypeName: java.lang.String = null,
+    endTimeNanos: java.lang.String = null,
+    modifiedTimeMillis: java.lang.String = null,
+    originDataSourceId: java.lang.String = null,
+    rawTimestampNanos: java.lang.String = null,
+    startTimeNanos: java.lang.String = null,
+    value: js.Array[Value] = null
+  ): DataPoint = {
+    val __obj = js.Dynamic.literal()
+    if (computationTimeMillis != null) __obj.updateDynamic("computationTimeMillis")(computationTimeMillis)
+    if (dataTypeName != null) __obj.updateDynamic("dataTypeName")(dataTypeName)
+    if (endTimeNanos != null) __obj.updateDynamic("endTimeNanos")(endTimeNanos)
+    if (modifiedTimeMillis != null) __obj.updateDynamic("modifiedTimeMillis")(modifiedTimeMillis)
+    if (originDataSourceId != null) __obj.updateDynamic("originDataSourceId")(originDataSourceId)
+    if (rawTimestampNanos != null) __obj.updateDynamic("rawTimestampNanos")(rawTimestampNanos)
+    if (startTimeNanos != null) __obj.updateDynamic("startTimeNanos")(startTimeNanos)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DataPoint]
+  }
+}
+

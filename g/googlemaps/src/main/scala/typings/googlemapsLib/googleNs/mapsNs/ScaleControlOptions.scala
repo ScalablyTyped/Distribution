@@ -10,3 +10,12 @@ trait ScaleControlOptions extends js.Object {
   var style: js.UndefOr[ScaleControlStyle] = js.undefined
 }
 
+object ScaleControlOptions {
+  @scala.inline
+  def apply(style: ScaleControlStyle = null): ScaleControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ScaleControlOptions]
+  }
+}
+

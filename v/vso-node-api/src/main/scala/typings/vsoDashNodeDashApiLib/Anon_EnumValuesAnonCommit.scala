@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonCommit extends js.Object {
   var enumValues: Anon_Commit
 }
 
+object Anon_EnumValuesAnonCommit {
+  @scala.inline
+  def apply(enumValues: Anon_Commit): Anon_EnumValuesAnonCommit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonCommit]
+  }
+}
+

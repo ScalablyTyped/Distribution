@@ -11,3 +11,18 @@ trait Anon_01 extends js.Object {
   var ok: monkLib.monkLibNumbers.`1` | monkLib.monkLibNumbers.`0`
 }
 
+object Anon_01 {
+  @scala.inline
+  def apply(
+    nIndexesWas: scala.Double,
+    ok: monkLib.monkLibNumbers.`1` | monkLib.monkLibNumbers.`0`,
+    msg: java.lang.String = null
+  ): Anon_01 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nIndexesWas")(nIndexesWas)
+    __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    if (msg != null) __obj.updateDynamic("msg")(msg)
+    __obj.asInstanceOf[Anon_01]
+  }
+}
+

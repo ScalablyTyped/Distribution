@@ -11,3 +11,18 @@ trait MultiColumnComboBoxPopup extends js.Object {
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MultiColumnComboBoxPopup {
+  @scala.inline
+  def apply(
+    appendTo: java.lang.String = null,
+    origin: java.lang.String = null,
+    position: java.lang.String = null
+  ): MultiColumnComboBoxPopup = {
+    val __obj = js.Dynamic.literal()
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[MultiColumnComboBoxPopup]
+  }
+}
+

@@ -26,3 +26,14 @@ trait ActiveViewChangingEventArgs extends ASPxClientEventArgs {
   var oldView: ASPxSchedulerViewType
 }
 
+object ActiveViewChangingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, newView: ASPxSchedulerViewType, oldView: ASPxSchedulerViewType): ActiveViewChangingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("newView")(newView)
+    __obj.updateDynamic("oldView")(oldView)
+    __obj.asInstanceOf[ActiveViewChangingEventArgs]
+  }
+}
+

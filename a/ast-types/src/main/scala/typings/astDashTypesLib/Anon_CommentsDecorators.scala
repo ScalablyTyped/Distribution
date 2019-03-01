@@ -17,3 +17,24 @@ trait Anon_CommentsDecorators extends js.Object {
   ] = js.undefined
 }
 
+object Anon_CommentsDecorators {
+  @scala.inline
+  def apply(
+    properties: js.Array[
+      astDashTypesLib.genKindsMod.PropertyKind | astDashTypesLib.genKindsMod.PropertyPatternKind | astDashTypesLib.genKindsMod.SpreadPropertyPatternKind | astDashTypesLib.genKindsMod.SpreadPropertyKind | astDashTypesLib.genKindsMod.ObjectPropertyKind | astDashTypesLib.genKindsMod.RestPropertyKind
+    ],
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    decorators: js.Array[astDashTypesLib.genKindsMod.DecoratorKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TypeAnnotationKind | astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null
+  ): Anon_CommentsDecorators = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("properties")(properties)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (decorators != null) __obj.updateDynamic("decorators")(decorators)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CommentsDecorators]
+  }
+}
+

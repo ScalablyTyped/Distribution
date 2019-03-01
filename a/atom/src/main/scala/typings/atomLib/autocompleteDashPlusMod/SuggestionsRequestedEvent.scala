@@ -18,3 +18,22 @@ trait SuggestionsRequestedEvent extends js.Object {
   var scopeDescriptor: atomLib.atomMod.ScopeDescriptor
 }
 
+object SuggestionsRequestedEvent {
+  @scala.inline
+  def apply(
+    activatedManually: scala.Boolean,
+    bufferPosition: atomLib.atomMod.Point,
+    editor: atomLib.atomMod.TextEditor,
+    prefix: java.lang.String,
+    scopeDescriptor: atomLib.atomMod.ScopeDescriptor
+  ): SuggestionsRequestedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activatedManually")(activatedManually)
+    __obj.updateDynamic("bufferPosition")(bufferPosition)
+    __obj.updateDynamic("editor")(editor)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("scopeDescriptor")(scopeDescriptor)
+    __obj.asInstanceOf[SuggestionsRequestedEvent]
+  }
+}
+

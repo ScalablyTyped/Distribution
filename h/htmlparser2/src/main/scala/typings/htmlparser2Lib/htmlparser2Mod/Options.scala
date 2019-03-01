@@ -37,3 +37,24 @@ trait Options extends js.Object {
   var xmlMode: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    decodeEntities: js.UndefOr[scala.Boolean] = js.undefined,
+    lowerCaseAttributeNames: js.UndefOr[scala.Boolean] = js.undefined,
+    lowerCaseTags: js.UndefOr[scala.Boolean] = js.undefined,
+    recognizeCDATA: js.UndefOr[scala.Boolean] = js.undefined,
+    recognizeSelfClosing: js.UndefOr[scala.Boolean] = js.undefined,
+    xmlMode: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(decodeEntities)) __obj.updateDynamic("decodeEntities")(decodeEntities)
+    if (!js.isUndefined(lowerCaseAttributeNames)) __obj.updateDynamic("lowerCaseAttributeNames")(lowerCaseAttributeNames)
+    if (!js.isUndefined(lowerCaseTags)) __obj.updateDynamic("lowerCaseTags")(lowerCaseTags)
+    if (!js.isUndefined(recognizeCDATA)) __obj.updateDynamic("recognizeCDATA")(recognizeCDATA)
+    if (!js.isUndefined(recognizeSelfClosing)) __obj.updateDynamic("recognizeSelfClosing")(recognizeSelfClosing)
+    if (!js.isUndefined(xmlMode)) __obj.updateDynamic("xmlMode")(xmlMode)
+    __obj.asInstanceOf[Options]
+  }
+}
+

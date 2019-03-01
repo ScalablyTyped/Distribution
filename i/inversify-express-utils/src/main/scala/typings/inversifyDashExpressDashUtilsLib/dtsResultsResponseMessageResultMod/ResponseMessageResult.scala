@@ -11,3 +11,20 @@ trait ResponseMessageResult
   var message: js.Any
 }
 
+object ResponseMessageResult {
+  @scala.inline
+  def apply(
+    apiController: js.Any,
+    executeAsync: js.Function0[
+      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
+    ],
+    message: js.Any
+  ): ResponseMessageResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiController")(apiController)
+    __obj.updateDynamic("executeAsync")(executeAsync)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[ResponseMessageResult]
+  }
+}
+

@@ -16,3 +16,13 @@ trait ListSkusResponse extends js.Object {
   var skus: js.UndefOr[js.Array[Sku]] = js.undefined
 }
 
+object ListSkusResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, skus: js.Array[Sku] = null): ListSkusResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (skus != null) __obj.updateDynamic("skus")(skus)
+    __obj.asInstanceOf[ListSkusResponse]
+  }
+}
+

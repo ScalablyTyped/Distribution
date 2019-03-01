@@ -15,3 +15,20 @@ trait Anon_CompleteFailKeyListSuccess extends js.Object {
   var success: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object Anon_CompleteFailKeyListSuccess {
+  @scala.inline
+  def apply(
+    keyList: js.Array[java.lang.String],
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    success: js.Function0[scala.Unit] = null
+  ): Anon_CompleteFailKeyListSuccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyList")(keyList)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_CompleteFailKeyListSuccess]
+  }
+}
+

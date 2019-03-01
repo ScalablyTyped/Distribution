@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashFirebaseLibStrings {
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryOperator
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryOperator
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait `=`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryOperator
   
   @js.native
-  sealed trait `==` extends js.Object
+  sealed trait `==`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryOperator
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryOperator
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryOperator
   
   @js.native
-  sealed trait ASC extends js.Object
+  sealed trait ASC
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryDirection
   
   @js.native
-  sealed trait CONNECT extends js.Object
+  sealed trait CONNECT
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.perfNs.HttpMethod
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.perfNs.HttpMethod
   
   @js.native
-  sealed trait DESC extends js.Object
+  sealed trait DESC
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryDirection
   
   @js.native
   sealed trait EMAIL_SIGNIN extends js.Object
@@ -43,25 +53,31 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait ERROR extends js.Object
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.perfNs.HttpMethod
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait HEAD
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.perfNs.HttpMethod
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait OPTIONS
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.perfNs.HttpMethod
   
   @js.native
   sealed trait PASSWORD_RESET extends js.Object
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.perfNs.HttpMethod
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.perfNs.HttpMethod
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.perfNs.HttpMethod
   
   @js.native
   sealed trait RECOVER_EMAIL extends js.Object
@@ -70,7 +86,8 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait SHORT extends js.Object
   
   @js.native
-  sealed trait TRACE extends js.Object
+  sealed trait TRACE
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.perfNs.HttpMethod
   
   @js.native
   sealed trait UNGUESSABLE extends js.Object
@@ -79,25 +96,30 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait VERIFY_EMAIL extends js.Object
   
   @js.native
-  sealed trait aborted extends js.Object
+  sealed trait aborted
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
   sealed trait added extends js.Object
   
   @js.native
-  sealed trait alarm extends js.Object
+  sealed trait alarm
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
-  sealed trait `already-exists` extends js.Object
+  sealed trait `already-exists`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
   sealed trait array extends js.Object
   
   @js.native
-  sealed trait `array-contains` extends js.Object
+  sealed trait `array-contains`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryOperator
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryDirection
   
   @js.native
   sealed trait boolean extends js.Object
@@ -106,31 +128,39 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait cache extends js.Object
   
   @js.native
-  sealed trait call extends js.Object
+  sealed trait call
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
-  sealed trait cancelled extends js.Object
+  sealed trait cancelled
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
-  sealed trait child_added extends js.Object
+  sealed trait child_added
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.databaseNs.QueryEventType
   
   @js.native
-  sealed trait child_changed extends js.Object
+  sealed trait child_changed
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.databaseNs.QueryEventType
   
   @js.native
-  sealed trait child_moved extends js.Object
+  sealed trait child_moved
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.databaseNs.QueryEventType
   
   @js.native
-  sealed trait child_removed extends js.Object
+  sealed trait child_removed
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.databaseNs.QueryEventType
   
   @js.native
-  sealed trait `data-loss` extends js.Object
+  sealed trait `data-loss`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
   sealed trait date extends js.Object
   
   @js.native
-  sealed trait `deadline-exceeded` extends js.Object
+  sealed trait `deadline-exceeded`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
   sealed trait debug extends js.Object
@@ -139,25 +169,30 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.TypesNs.QueryDirection
   
   @js.native
   sealed trait documentid extends js.Object
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
-  sealed trait err extends js.Object
+  sealed trait err
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait event extends js.Object
+  sealed trait event
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
-  sealed trait `failed-precondition` extends js.Object
+  sealed trait `failed-precondition`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
   sealed trait fieldpath extends js.Object
@@ -169,19 +204,23 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait geopoint extends js.Object
   
   @js.native
-  sealed trait internal extends js.Object
+  sealed trait internal
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
-  sealed trait `invalid-argument` extends js.Object
+  sealed trait `invalid-argument`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
   sealed trait modified extends js.Object
   
   @js.native
-  sealed trait msg extends js.Object
+  sealed trait msg
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
-  sealed trait `not-found` extends js.Object
+  sealed trait `not-found`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
   sealed trait `null` extends js.Object
@@ -193,34 +232,42 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait `object` extends js.Object
   
   @js.native
-  sealed trait ok extends js.Object
+  sealed trait ok
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
-  sealed trait `out-of-range` extends js.Object
+  sealed trait `out-of-range`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
-  sealed trait `permission-denied` extends js.Object
+  sealed trait `permission-denied`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
-  sealed trait promo extends js.Object
+  sealed trait promo
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
-  sealed trait recommendation extends js.Object
+  sealed trait recommendation
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
   sealed trait reference extends js.Object
   
   @js.native
-  sealed trait reminder extends js.Object
+  sealed trait reminder
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
   sealed trait removed extends js.Object
   
   @js.native
-  sealed trait `resource-exhausted` extends js.Object
+  sealed trait `resource-exhausted`
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
   sealed trait sent extends js.Object
@@ -229,43 +276,53 @@ object reactDashNativeDashFirebaseLibStrings {
   sealed trait server extends js.Object
   
   @js.native
-  sealed trait service extends js.Object
+  sealed trait service
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
   sealed trait silent extends js.Object
   
   @js.native
-  sealed trait social extends js.Object
+  sealed trait social
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
-  sealed trait status extends js.Object
+  sealed trait status
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait system extends js.Object
+  sealed trait system
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
   sealed trait timeout extends js.Object
   
   @js.native
-  sealed trait transport extends js.Object
+  sealed trait transport
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.notificationsNs.AndroidNs.Category
   
   @js.native
-  sealed trait unauthenticated extends js.Object
+  sealed trait unauthenticated
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
-  sealed trait unavailable extends js.Object
+  sealed trait unavailable
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
-  sealed trait unimplemented extends js.Object
+  sealed trait unimplemented
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.functionsNs.FunctionsErrorCode
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait value
+    extends reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.databaseNs.QueryEventType
   
   @js.native
   sealed trait verified extends js.Object

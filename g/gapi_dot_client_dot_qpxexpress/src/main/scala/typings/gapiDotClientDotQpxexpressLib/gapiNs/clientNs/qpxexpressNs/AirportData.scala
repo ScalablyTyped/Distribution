@@ -16,3 +16,20 @@ trait AirportData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AirportData {
+  @scala.inline
+  def apply(
+    city: java.lang.String = null,
+    code: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null
+  ): AirportData = {
+    val __obj = js.Dynamic.literal()
+    if (city != null) __obj.updateDynamic("city")(city)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[AirportData]
+  }
+}
+

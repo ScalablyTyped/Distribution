@@ -12,3 +12,12 @@ trait RestartFrameParameterType extends js.Object {
   var callFrameId: CallFrameId
 }
 
+object RestartFrameParameterType {
+  @scala.inline
+  def apply(callFrameId: CallFrameId): RestartFrameParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callFrameId")(callFrameId)
+    __obj.asInstanceOf[RestartFrameParameterType]
+  }
+}
+

@@ -14,3 +14,27 @@ trait InputEventObject extends AbstractEventObject {
   var renderedPosition: Position
 }
 
+object InputEventObject {
+  @scala.inline
+  def apply(
+    cy: Core,
+    namespace: java.lang.String,
+    originalEvent: EventObject,
+    position: Position,
+    renderedPosition: Position,
+    timeStamp: scala.Double,
+    `type`: UserInputDeviceEventName | UserInputDeviceEventNameExt,
+    target: js.Any = null
+  ): InputEventObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("cy")(cy)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("renderedPosition")(renderedPosition)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[InputEventObject]
+  }
+}
+

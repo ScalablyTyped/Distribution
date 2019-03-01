@@ -16,3 +16,13 @@ trait GeneratePrimaryKeyValueEventUIParam extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object GeneratePrimaryKeyValueEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null, value: js.Any = null): GeneratePrimaryKeyValueEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[GeneratePrimaryKeyValueEventUIParam]
+  }
+}
+

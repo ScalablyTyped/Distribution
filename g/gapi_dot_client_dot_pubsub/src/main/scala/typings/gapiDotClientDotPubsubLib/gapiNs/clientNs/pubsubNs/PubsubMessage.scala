@@ -25,3 +25,20 @@ trait PubsubMessage extends js.Object {
   var publishTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PubsubMessage {
+  @scala.inline
+  def apply(
+    attributes: stdLib.Record[java.lang.String, java.lang.String] = null,
+    data: java.lang.String = null,
+    messageId: java.lang.String = null,
+    publishTime: java.lang.String = null
+  ): PubsubMessage = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (publishTime != null) __obj.updateDynamic("publishTime")(publishTime)
+    __obj.asInstanceOf[PubsubMessage]
+  }
+}
+

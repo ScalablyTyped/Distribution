@@ -52,3 +52,34 @@ trait Page extends js.Object {
   var visible: scala.Boolean
 }
 
+object Page {
+  @scala.inline
+  def apply(
+    contribution: WitContribution,
+    id: java.lang.String,
+    inherited: scala.Boolean,
+    isContribution: scala.Boolean,
+    label: java.lang.String,
+    locked: scala.Boolean,
+    order: scala.Double,
+    overridden: scala.Boolean,
+    pageType: PageType,
+    sections: js.Array[Section],
+    visible: scala.Boolean
+  ): Page = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contribution")(contribution)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("inherited")(inherited)
+    __obj.updateDynamic("isContribution")(isContribution)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("locked")(locked)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("overridden")(overridden)
+    __obj.updateDynamic("pageType")(pageType)
+    __obj.updateDynamic("sections")(sections)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[Page]
+  }
+}
+

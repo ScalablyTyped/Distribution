@@ -30,3 +30,22 @@ trait DeploymentConfigState extends js.Object {
   ] = js.undefined
 }
 
+object DeploymentConfigState {
+  @scala.inline
+  def apply(
+    computePlatform: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    deploymentConfigId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    deploymentConfigName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    minimumHealthyHosts: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeValueInput] = null,
+    trafficRoutingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TimeBasedCanaryTimeBasedLinear] = null
+  ): DeploymentConfigState = {
+    val __obj = js.Dynamic.literal()
+    if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
+    if (deploymentConfigId != null) __obj.updateDynamic("deploymentConfigId")(deploymentConfigId.asInstanceOf[js.Any])
+    if (deploymentConfigName != null) __obj.updateDynamic("deploymentConfigName")(deploymentConfigName.asInstanceOf[js.Any])
+    if (minimumHealthyHosts != null) __obj.updateDynamic("minimumHealthyHosts")(minimumHealthyHosts.asInstanceOf[js.Any])
+    if (trafficRoutingConfig != null) __obj.updateDynamic("trafficRoutingConfig")(trafficRoutingConfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeploymentConfigState]
+  }
+}
+

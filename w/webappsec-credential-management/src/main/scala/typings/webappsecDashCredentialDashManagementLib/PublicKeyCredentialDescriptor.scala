@@ -14,3 +14,17 @@ trait PublicKeyCredentialDescriptor extends js.Object {
   var `type`: PublicKeyCredentialType
 }
 
+object PublicKeyCredentialDescriptor {
+  @scala.inline
+  def apply(
+    id: stdLib.BufferSource,
+    `type`: PublicKeyCredentialType,
+    transports: js.Array[AuthenticatorTransport] = null
+  ): PublicKeyCredentialDescriptor = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    if (transports != null) __obj.updateDynamic("transports")(transports)
+    __obj.asInstanceOf[PublicKeyCredentialDescriptor]
+  }
+}
+

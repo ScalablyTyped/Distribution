@@ -12,3 +12,20 @@ trait RemoteInfo extends js.Object {
   var size: scala.Double
 }
 
+object RemoteInfo {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    family: nodeLib.nodeLibStrings.IPv4 | nodeLib.nodeLibStrings.IPv6,
+    port: scala.Double,
+    size: scala.Double
+  ): RemoteInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[RemoteInfo]
+  }
+}
+

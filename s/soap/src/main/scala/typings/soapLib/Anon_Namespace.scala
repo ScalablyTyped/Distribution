@@ -10,3 +10,13 @@ trait Anon_Namespace extends js.Object {
   var xmlnsAttributes: js.UndefOr[js.Array[soapLib.soapMod.IXmlAttribute]] = js.undefined
 }
 
+object Anon_Namespace {
+  @scala.inline
+  def apply(namespace: java.lang.String, xmlnsAttributes: js.Array[soapLib.soapMod.IXmlAttribute] = null): Anon_Namespace = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("namespace")(namespace)
+    if (xmlnsAttributes != null) __obj.updateDynamic("xmlnsAttributes")(xmlnsAttributes)
+    __obj.asInstanceOf[Anon_Namespace]
+  }
+}
+

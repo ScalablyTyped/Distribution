@@ -28,3 +28,22 @@ trait LazyRepeatOptions extends js.Object {
   var destroyItem: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LazyRepeatOptions {
+  @scala.inline
+  def apply(
+    calculateItemHeight: scala.Int | scala.Double = null,
+    configureItemScope: scala.Int | scala.Double = null,
+    countItems: scala.Int | scala.Double = null,
+    createItemContent: stdLib.HTMLElement = null,
+    destroyItem: java.lang.String = null
+  ): LazyRepeatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (calculateItemHeight != null) __obj.updateDynamic("calculateItemHeight")(calculateItemHeight.asInstanceOf[js.Any])
+    if (configureItemScope != null) __obj.updateDynamic("configureItemScope")(configureItemScope.asInstanceOf[js.Any])
+    if (countItems != null) __obj.updateDynamic("countItems")(countItems.asInstanceOf[js.Any])
+    if (createItemContent != null) __obj.updateDynamic("createItemContent")(createItemContent)
+    if (destroyItem != null) __obj.updateDynamic("destroyItem")(destroyItem)
+    __obj.asInstanceOf[LazyRepeatOptions]
+  }
+}
+

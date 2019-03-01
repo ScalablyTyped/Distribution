@@ -10,3 +10,16 @@ trait PluginServiceStatic extends js.Object {
   def unregister(plugin: PluginServiceGlobalRegistration with PluginServiceRegistrationOptions): scala.Unit
 }
 
+object PluginServiceStatic {
+  @scala.inline
+  def apply(
+    register: js.Function1[PluginServiceGlobalRegistration with PluginServiceRegistrationOptions, scala.Unit],
+    unregister: js.Function1[PluginServiceGlobalRegistration with PluginServiceRegistrationOptions, scala.Unit]
+  ): PluginServiceStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("register")(register)
+    __obj.updateDynamic("unregister")(unregister)
+    __obj.asInstanceOf[PluginServiceStatic]
+  }
+}
+

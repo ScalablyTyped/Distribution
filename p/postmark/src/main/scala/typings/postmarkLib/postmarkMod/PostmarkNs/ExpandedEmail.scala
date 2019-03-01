@@ -10,3 +10,13 @@ trait ExpandedEmail extends js.Object {
   var Name: java.lang.String
 }
 
+object ExpandedEmail {
+  @scala.inline
+  def apply(Email: java.lang.String, Name: java.lang.String): ExpandedEmail = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Email")(Email)
+    __obj.updateDynamic("Name")(Name)
+    __obj.asInstanceOf[ExpandedEmail]
+  }
+}
+

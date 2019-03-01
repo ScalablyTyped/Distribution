@@ -11,3 +11,14 @@ trait Anon_Iterations extends js.Object {
   var workItems: scala.Double
 }
 
+object Anon_Iterations {
+  @scala.inline
+  def apply(iterations: scala.Double, none: scala.Double, workItems: scala.Double): Anon_Iterations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iterations")(iterations)
+    __obj.updateDynamic("none")(none)
+    __obj.updateDynamic("workItems")(workItems)
+    __obj.asInstanceOf[Anon_Iterations]
+  }
+}
+

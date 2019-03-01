@@ -19,3 +19,20 @@ trait RequestFilter extends js.Object {
   var windowId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object RequestFilter {
+  @scala.inline
+  def apply(
+    urls: js.Array[java.lang.String],
+    tabId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    types: js.Array[chromeDashAppsLib.chromeNs.webRequestNs.ResourceType] = null,
+    windowId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): RequestFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("urls")(urls)
+    if (!js.isUndefined(tabId)) __obj.updateDynamic("tabId")(tabId)
+    if (types != null) __obj.updateDynamic("types")(types)
+    if (!js.isUndefined(windowId)) __obj.updateDynamic("windowId")(windowId)
+    __obj.asInstanceOf[RequestFilter]
+  }
+}
+

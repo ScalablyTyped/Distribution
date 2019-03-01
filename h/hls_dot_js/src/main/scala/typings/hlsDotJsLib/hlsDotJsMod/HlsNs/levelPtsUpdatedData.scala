@@ -11,3 +11,14 @@ trait levelPtsUpdatedData extends js.Object {
   var level: scala.Double
 }
 
+object levelPtsUpdatedData {
+  @scala.inline
+  def apply(details: LevelDetails, drift: scala.Double, level: scala.Double): levelPtsUpdatedData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("drift")(drift)
+    __obj.updateDynamic("level")(level)
+    __obj.asInstanceOf[levelPtsUpdatedData]
+  }
+}
+

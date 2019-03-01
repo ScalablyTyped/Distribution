@@ -9,3 +9,18 @@ trait FunctorComposition11[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDash
   def map[A, B](fa: fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, A]], f: js.Function1[/* a */ A, B]): fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, B]]
 }
 
+object FunctorComposition11 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS */, G /* <: fpDashTsLib.libHKTMod.URIS */](
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, js.Any]], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type[F, fpDashTsLib.libHKTMod.Type[G, js.Any]]
+    ]
+  ): FunctorComposition11[F, G] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[FunctorComposition11[F, G]]
+  }
+}
+

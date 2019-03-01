@@ -830,6 +830,8 @@ object RNFirebaseNs extends js.Object {
       def toJSON(): js.Object = js.native
     }
     
+    trait QueryEventType extends js.Object
+    
     @js.native
     trait Reference extends Query {
       var key: java.lang.String | scala.Null = js.native
@@ -954,7 +956,6 @@ object RNFirebaseNs extends js.Object {
          with stdLib.Promise[T]
     
     type QueryErrorCallback = js.Function1[/* e */ stdLib.Error, scala.Unit]
-    type QueryEventType = reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.value | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.child_added | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.child_removed | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.child_changed | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.child_moved
     type QuerySuccessCallback = js.Function2[
         /* snapshot */ DataSnapshot, 
         /* previousChildId */ js.UndefOr[java.lang.String | scala.Null], 
@@ -1541,6 +1542,10 @@ object RNFirebaseNs extends js.Object {
         var path: java.lang.String
       }
       
+      trait QueryDirection extends js.Object
+      
+      trait QueryOperator extends js.Object
+      
       trait SetOptions extends js.Object {
         var merge: js.UndefOr[scala.Boolean] = js.undefined
       }
@@ -1555,8 +1560,6 @@ object RNFirebaseNs extends js.Object {
         var value: js.Any
       }
       
-      type QueryDirection = reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.asc | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.ASC | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.desc | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.DESC
-      type QueryOperator = reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`=` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`==` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`>` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`>=` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`<` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`<=` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`array-contains`
       /** The key in update() function for DocumentReference and WriteBatch. */
       type UpdateKey = java.lang.String | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.FieldPath
     }
@@ -1594,6 +1597,8 @@ object RNFirebaseNs extends js.Object {
       def useFunctionsEmulator(origin: java.lang.String): js.Promise[scala.Null]
     }
     
+    trait FunctionsErrorCode extends js.Object
+    
     /**
       * firebase.functions.X
       */
@@ -1627,46 +1632,6 @@ object RNFirebaseNs extends js.Object {
     trait HttpsErrorCode
       extends /* name */ org.scalablytyped.runtime.StringDictionary[FunctionsErrorCode]
     
-    /**
-      * The set of Firebase Functions status codes. The codes are the same at the
-      * ones exposed by gRPC here:
-      * https://github.com/grpc/grpc/blob/master/doc/statuscodes.md
-      *
-      * Possible values:
-      * - 'cancelled': The operation was cancelled (typically by the caller).
-      * - 'unknown': Unknown error or an error from a different error domain.
-      * - 'invalid-argument': Client specified an invalid argument. Note that this
-      *   differs from 'failed-precondition'. 'invalid-argument' indicates
-      *   arguments that are problematic regardless of the state of the system
-      *   (e.g. an invalid field name).
-      * - 'deadline-exceeded': Deadline expired before operation could complete.
-      *   For operations that change the state of the system, this error may be
-      *   returned even if the operation has completed successfully. For example,
-      *   a successful response from a server could have been delayed long enough
-      *   for the deadline to expire.
-      * - 'not-found': Some requested document was not found.
-      * - 'already-exists': Some document that we attempted to create already
-      *   exists.
-      * - 'permission-denied': The caller does not have permission to execute the
-      *   specified operation.
-      * - 'resource-exhausted': Some resource has been exhausted, perhaps a
-      *   per-user quota, or perhaps the entire file system is out of space.
-      * - 'failed-precondition': Operation was rejected because the system is not
-      *   in a state required for the operation's execution.
-      * - 'aborted': The operation was aborted, typically due to a concurrency
-      *   issue like transaction aborts, etc.
-      * - 'out-of-range': Operation was attempted past the valid range.
-      * - 'unimplemented': Operation is not implemented or not supported/enabled.
-      * - 'internal': Internal errors. Means some invariants expected by
-      *   underlying system has been broken. If you see one of these errors,
-      *   something is very broken.
-      * - 'unavailable': The service is currently unavailable. This is most likely
-      *   a transient condition and may be corrected by retrying with a backoff.
-      * - 'data-loss': Unrecoverable data loss or corruption.
-      * - 'unauthenticated': The request does not have valid authentication
-      *   credentials for the operation.
-      */
-    type FunctionsErrorCode = reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.ok | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.cancelled | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.unknown | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`invalid-argument` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`deadline-exceeded` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`not-found` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`already-exists` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`permission-denied` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`resource-exhausted` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`failed-precondition` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.aborted | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`out-of-range` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.unimplemented | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.internal | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.unavailable | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.`data-loss` | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.unauthenticated
     /**
       * An HttpsCallable is a reference to a "callable" http trigger in
       * Google Cloud Functions.
@@ -2136,6 +2101,8 @@ object RNFirebaseNs extends js.Object {
       @js.native
       sealed trait BadgeIconType extends js.Object
       
+      trait Category extends js.Object
+      
       @js.native
       class Channel protected () extends js.Object {
         def this(channelId: java.lang.String, name: java.lang.String, importance: Importance) = this()
@@ -2453,7 +2420,6 @@ object RNFirebaseNs extends js.Object {
               ] = js.native
       }
       
-      type Category = reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.alarm | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.call | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.email | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.err | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.event | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.msg | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.progress | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.promo | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.recommendation | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.reminder | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.service | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.social | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.status | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.system | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.transport
     }
     
     type BackgroundFetchResultValue = java.lang.String
@@ -2463,6 +2429,8 @@ object RNFirebaseNs extends js.Object {
   @JSName("perf")
   @js.native
   object perfNs extends js.Object {
+    trait HttpMethod extends js.Object
+    
     trait HttpMetric extends js.Object {
       /**
         * Return an attribute by name, or null if it does not exist.
@@ -2564,7 +2532,6 @@ object RNFirebaseNs extends js.Object {
       def stop(): js.Promise[scala.Null]
     }
     
-    type HttpMethod = reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.CONNECT | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.DELETE | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.GET | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.HEAD | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.OPTIONS | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.PATCH | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.POST | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.PUT | reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseLibStrings.TRACE
   }
   
   @JSName("storage")

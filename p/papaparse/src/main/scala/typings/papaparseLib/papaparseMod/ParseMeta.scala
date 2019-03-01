@@ -19,3 +19,24 @@ trait ParseMeta extends js.Object {
   var truncated: scala.Boolean
 }
 
+object ParseMeta {
+  @scala.inline
+  def apply(
+    aborted: scala.Boolean,
+    cursor: scala.Double,
+    delimiter: java.lang.String,
+    fields: js.Array[java.lang.String],
+    linebreak: java.lang.String,
+    truncated: scala.Boolean
+  ): ParseMeta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aborted")(aborted)
+    __obj.updateDynamic("cursor")(cursor)
+    __obj.updateDynamic("delimiter")(delimiter)
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("linebreak")(linebreak)
+    __obj.updateDynamic("truncated")(truncated)
+    __obj.asInstanceOf[ParseMeta]
+  }
+}
+

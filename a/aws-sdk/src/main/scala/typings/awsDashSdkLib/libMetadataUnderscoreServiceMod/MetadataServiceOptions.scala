@@ -24,3 +24,20 @@ trait MetadataServiceOptions extends js.Object {
   var retryDelayOptions: js.UndefOr[js.Any] = js.undefined
 }
 
+object MetadataServiceOptions {
+  @scala.inline
+  def apply(
+    host: java.lang.String = null,
+    httpOptions: awsDashSdkLib.Anon_Timeout = null,
+    maxRetries: scala.Int | scala.Double = null,
+    retryDelayOptions: js.Any = null
+  ): MetadataServiceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (httpOptions != null) __obj.updateDynamic("httpOptions")(httpOptions)
+    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (retryDelayOptions != null) __obj.updateDynamic("retryDelayOptions")(retryDelayOptions)
+    __obj.asInstanceOf[MetadataServiceOptions]
+  }
+}
+

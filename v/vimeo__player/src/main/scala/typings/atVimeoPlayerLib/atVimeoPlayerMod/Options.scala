@@ -27,3 +27,50 @@ trait Options extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    autopause: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    background: js.UndefOr[scala.Boolean] = js.undefined,
+    byline: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    id: scala.Int | scala.Double = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    maxheight: scala.Int | scala.Double = null,
+    maxwidth: scala.Int | scala.Double = null,
+    muted: js.UndefOr[scala.Boolean] = js.undefined,
+    playsinline: js.UndefOr[scala.Boolean] = js.undefined,
+    portrait: js.UndefOr[scala.Boolean] = js.undefined,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    speed: js.UndefOr[scala.Boolean] = js.undefined,
+    title: js.UndefOr[scala.Boolean] = js.undefined,
+    transparent: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autopause)) __obj.updateDynamic("autopause")(autopause)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
+    if (!js.isUndefined(byline)) __obj.updateDynamic("byline")(byline)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (maxheight != null) __obj.updateDynamic("maxheight")(maxheight.asInstanceOf[js.Any])
+    if (maxwidth != null) __obj.updateDynamic("maxwidth")(maxwidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (!js.isUndefined(playsinline)) __obj.updateDynamic("playsinline")(playsinline)
+    if (!js.isUndefined(portrait)) __obj.updateDynamic("portrait")(portrait)
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (!js.isUndefined(speed)) __obj.updateDynamic("speed")(speed)
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

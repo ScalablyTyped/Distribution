@@ -56,3 +56,40 @@ trait QuantitativeScaleSettings extends js.Object {
   var tickPosition: js.UndefOr[TickPosition | java.lang.String] = js.undefined
 }
 
+object QuantitativeScaleSettings {
+  @scala.inline
+  def apply(
+    comparativeMeasureSettings: QuantitativeScaleSettingsComparativeMeasureSettings = null,
+    featureMeasures: js.Array[QuantitativeScaleSettingsFeatureMeasure] = null,
+    featuredMeasureSettings: QuantitativeScaleSettingsFeaturedMeasureSettings = null,
+    fields: QuantitativeScaleSettingsFields = null,
+    interval: scala.Int | scala.Double = null,
+    labelSettings: QuantitativeScaleSettingsLabelSettings = null,
+    location: QuantitativeScaleSettingsLocation = null,
+    majorTickSettings: QuantitativeScaleSettingsMajorTickSettings = null,
+    maximum: scala.Int | scala.Double = null,
+    minimum: scala.Int | scala.Double = null,
+    minorTickSettings: QuantitativeScaleSettingsMinorTickSettings = null,
+    minorTicksPerInterval: scala.Int | scala.Double = null,
+    tickPlacement: TickPlacement | java.lang.String = null,
+    tickPosition: TickPosition | java.lang.String = null
+  ): QuantitativeScaleSettings = {
+    val __obj = js.Dynamic.literal()
+    if (comparativeMeasureSettings != null) __obj.updateDynamic("comparativeMeasureSettings")(comparativeMeasureSettings)
+    if (featureMeasures != null) __obj.updateDynamic("featureMeasures")(featureMeasures)
+    if (featuredMeasureSettings != null) __obj.updateDynamic("featuredMeasureSettings")(featuredMeasureSettings)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (labelSettings != null) __obj.updateDynamic("labelSettings")(labelSettings)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (majorTickSettings != null) __obj.updateDynamic("majorTickSettings")(majorTickSettings)
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (minorTickSettings != null) __obj.updateDynamic("minorTickSettings")(minorTickSettings)
+    if (minorTicksPerInterval != null) __obj.updateDynamic("minorTicksPerInterval")(minorTicksPerInterval.asInstanceOf[js.Any])
+    if (tickPlacement != null) __obj.updateDynamic("tickPlacement")(tickPlacement.asInstanceOf[js.Any])
+    if (tickPosition != null) __obj.updateDynamic("tickPosition")(tickPosition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QuantitativeScaleSettings]
+  }
+}
+

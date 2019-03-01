@@ -37,3 +37,13 @@ trait HostedFieldsCardCode extends js.Object {
   var size: scala.Double
 }
 
+object HostedFieldsCardCode {
+  @scala.inline
+  def apply(name: java.lang.String, size: scala.Double): HostedFieldsCardCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[HostedFieldsCardCode]
+  }
+}
+

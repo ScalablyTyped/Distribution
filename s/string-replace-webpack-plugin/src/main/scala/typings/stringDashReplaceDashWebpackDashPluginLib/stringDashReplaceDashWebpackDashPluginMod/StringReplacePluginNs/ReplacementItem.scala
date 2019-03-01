@@ -17,3 +17,16 @@ trait ReplacementItem extends js.Object {
   def replacement(substring: java.lang.String, args: js.Any*): java.lang.String
 }
 
+object ReplacementItem {
+  @scala.inline
+  def apply(
+    pattern: stdLib.RegExp,
+    replacement: js.Function2[java.lang.String, /* repeated */ js.Any, java.lang.String]
+  ): ReplacementItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pattern")(pattern)
+    __obj.updateDynamic("replacement")(replacement)
+    __obj.asInstanceOf[ReplacementItem]
+  }
+}
+

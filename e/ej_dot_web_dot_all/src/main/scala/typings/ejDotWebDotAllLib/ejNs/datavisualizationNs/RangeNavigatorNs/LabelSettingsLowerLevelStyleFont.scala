@@ -32,3 +32,24 @@ trait LabelSettingsLowerLevelStyleFont extends js.Object {
   var size: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LabelSettingsLowerLevelStyleFont {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    opacity: java.lang.String = null,
+    size: java.lang.String = null
+  ): LabelSettingsLowerLevelStyleFont = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[LabelSettingsLowerLevelStyleFont]
+  }
+}
+

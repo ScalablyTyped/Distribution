@@ -20,3 +20,18 @@ trait PlayerScoreResetResponse extends js.Object {
   var resetScoreTimeSpans: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object PlayerScoreResetResponse {
+  @scala.inline
+  def apply(
+    definitionId: java.lang.String = null,
+    kind: java.lang.String = null,
+    resetScoreTimeSpans: js.Array[java.lang.String] = null
+  ): PlayerScoreResetResponse = {
+    val __obj = js.Dynamic.literal()
+    if (definitionId != null) __obj.updateDynamic("definitionId")(definitionId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (resetScoreTimeSpans != null) __obj.updateDynamic("resetScoreTimeSpans")(resetScoreTimeSpans)
+    __obj.asInstanceOf[PlayerScoreResetResponse]
+  }
+}
+

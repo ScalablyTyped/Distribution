@@ -42,3 +42,22 @@ trait LogsOptions extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogsOptions {
+  @scala.inline
+  def apply(
+    indexName: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    offset: scala.Int | scala.Double = null,
+    onlyErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null
+  ): LogsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (indexName != null) __obj.updateDynamic("indexName")(indexName)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (!js.isUndefined(onlyErrors)) __obj.updateDynamic("onlyErrors")(onlyErrors)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[LogsOptions]
+  }
+}
+

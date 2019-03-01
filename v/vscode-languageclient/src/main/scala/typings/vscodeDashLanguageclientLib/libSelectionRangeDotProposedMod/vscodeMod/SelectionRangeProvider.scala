@@ -17,3 +17,19 @@ trait SelectionRangeProvider extends js.Object {
   ): js.Any
 }
 
+object SelectionRangeProvider {
+  @scala.inline
+  def apply(
+    provideSelectionRanges: js.Function3[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextDocument */ js.Any, 
+      stdLib.Position, 
+      vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
+      js.Any
+    ]
+  ): SelectionRangeProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("provideSelectionRanges")(provideSelectionRanges)
+    __obj.asInstanceOf[SelectionRangeProvider]
+  }
+}
+

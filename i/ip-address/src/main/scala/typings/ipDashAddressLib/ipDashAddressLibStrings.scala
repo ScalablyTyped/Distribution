@@ -7,85 +7,112 @@ import scala.scalajs.js.annotation._
 
 object ipDashAddressLibStrings {
   @js.native
-  sealed trait `Admin local` extends js.Object
+  sealed trait `Admin local`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Scope
   
   @js.native
-  sealed trait Global extends js.Object
+  sealed trait Global
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Scope
   
   @js.native
-  sealed trait `Interface local` extends js.Object
+  sealed trait `Interface local`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Scope
   
   @js.native
-  sealed trait `Link local` extends js.Object
+  sealed trait `Link local`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Scope
   
   @js.native
-  sealed trait `Link-local unicast` extends js.Object
+  sealed trait `Link-local unicast`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait Loopback extends js.Object
+  sealed trait Loopback
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait Multicast extends js.Object
+  sealed trait Multicast
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (All DHCP servers and relay agents in this site)` extends js.Object
+  sealed trait `Multicast (All DHCP servers and relay agents in this site)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (All DHCP servers and relay agents on this link)` extends js.Object
+  sealed trait `Multicast (All DHCP servers and relay agents on this link)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (All DHCP servers in this site)` extends js.Object
+  sealed trait `Multicast (All DHCP servers in this site)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (All DHCP servers on this link)` extends js.Object
+  sealed trait `Multicast (All DHCP servers on this link)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (All nodes on this interface)` extends js.Object
+  sealed trait `Multicast (All nodes on this interface)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (All nodes on this link)` extends js.Object
+  sealed trait `Multicast (All nodes on this link)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (All routers in this site)` extends js.Object
+  sealed trait `Multicast (All routers in this site)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (All routers on this interface)` extends js.Object
+  sealed trait `Multicast (All routers on this interface)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (All routers on this link)` extends js.Object
+  sealed trait `Multicast (All routers on this link)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (EIGRP routers)` extends js.Object
+  sealed trait `Multicast (EIGRP routers)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (MLDv2 reports)` extends js.Object
+  sealed trait `Multicast (MLDv2 reports)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (OSPFv3 AllDR routers)` extends js.Object
+  sealed trait `Multicast (OSPFv3 AllDR routers)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (OSPFv3 AllSPF routers)` extends js.Object
+  sealed trait `Multicast (OSPFv3 AllSPF routers)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (PIM routers)` extends js.Object
+  sealed trait `Multicast (PIM routers)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (RIP routers)` extends js.Object
+  sealed trait `Multicast (RIP routers)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Multicast (mDNSv6)` extends js.Object
+  sealed trait `Multicast (mDNSv6)`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @js.native
-  sealed trait `Organization local` extends js.Object
+  sealed trait `Organization local`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Scope
   
   @js.native
-  sealed trait Reserved extends js.Object
+  sealed trait Reserved
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Scope
   
   @js.native
-  sealed trait `Site local` extends js.Object
+  sealed trait `Site local`
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Scope
   
   @js.native
-  sealed trait Unspecified extends js.Object
+  sealed trait Unspecified
+    extends ipDashAddressLib.ipDashAddressMod.IPv6Type
   
   @scala.inline
   def `Admin local`: `Admin local` = "Admin local".asInstanceOf[`Admin local`]

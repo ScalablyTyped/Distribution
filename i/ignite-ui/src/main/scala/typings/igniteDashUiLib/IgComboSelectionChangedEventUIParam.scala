@@ -20,3 +20,14 @@ trait IgComboSelectionChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgComboSelectionChangedEventUIParam {
+  @scala.inline
+  def apply(items: js.Any = null, oldItems: js.Any = null, owner: js.Any = null): IgComboSelectionChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[IgComboSelectionChangedEventUIParam]
+  }
+}
+

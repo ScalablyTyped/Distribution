@@ -12,3 +12,13 @@ trait SeqMapTaskOutputInfo extends js.Object {
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SeqMapTaskOutputInfo {
+  @scala.inline
+  def apply(sink: Sink = null, tag: java.lang.String = null): SeqMapTaskOutputInfo = {
+    val __obj = js.Dynamic.literal()
+    if (sink != null) __obj.updateDynamic("sink")(sink)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[SeqMapTaskOutputInfo]
+  }
+}
+

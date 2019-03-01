@@ -14,3 +14,12 @@ trait AnimationAnimateChildMetadata extends AnimationMetadata {
   var options: AnimationOptions | scala.Null
 }
 
+object AnimationAnimateChildMetadata {
+  @scala.inline
+  def apply(`type`: AnimationMetadataType, options: AnimationOptions = null): AnimationAnimateChildMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[AnimationAnimateChildMetadata]
+  }
+}
+

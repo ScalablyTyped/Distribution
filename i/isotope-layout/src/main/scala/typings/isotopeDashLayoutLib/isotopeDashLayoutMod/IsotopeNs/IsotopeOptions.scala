@@ -120,3 +120,62 @@ trait IsotopeOptions extends js.Object {
   var visibleStyle: js.UndefOr[Style] = js.undefined
 }
 
+object IsotopeOptions {
+  @scala.inline
+  def apply(
+    cellsByColumn: CellsByColumn = null,
+    cellsByRow: CellsByRow = null,
+    containerStyle: Style = null,
+    filter: java.lang.String | (js.Function1[/* itemElement */ stdLib.HTMLElement, scala.Boolean]) = null,
+    fitRows: FitRows = null,
+    getSortData: Sorter = null,
+    hiddenStyle: Style = null,
+    horiz: Horizontal = null,
+    initLayout: js.UndefOr[scala.Boolean] = js.undefined,
+    itemSelector: java.lang.String = null,
+    layoutMode: LayoutModes = null,
+    masonry: Masonry = null,
+    masontryHorizontal: MasonryHorizontal = null,
+    originLeft: js.UndefOr[scala.Boolean] = js.undefined,
+    originTop: js.UndefOr[scala.Boolean] = js.undefined,
+    packery: Packery = null,
+    percentPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    resize: js.UndefOr[scala.Boolean] = js.undefined,
+    sortAscending: scala.Boolean | SortOrder = null,
+    sortBy: java.lang.String = null,
+    stagger: scala.Double | java.lang.String = null,
+    stamp: java.lang.String = null,
+    transitionDuration: scala.Double | java.lang.String = null,
+    vertical: Vertical = null,
+    visibleStyle: Style = null
+  ): IsotopeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cellsByColumn != null) __obj.updateDynamic("cellsByColumn")(cellsByColumn)
+    if (cellsByRow != null) __obj.updateDynamic("cellsByRow")(cellsByRow)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (fitRows != null) __obj.updateDynamic("fitRows")(fitRows)
+    if (getSortData != null) __obj.updateDynamic("getSortData")(getSortData)
+    if (hiddenStyle != null) __obj.updateDynamic("hiddenStyle")(hiddenStyle)
+    if (horiz != null) __obj.updateDynamic("horiz")(horiz)
+    if (!js.isUndefined(initLayout)) __obj.updateDynamic("initLayout")(initLayout)
+    if (itemSelector != null) __obj.updateDynamic("itemSelector")(itemSelector)
+    if (layoutMode != null) __obj.updateDynamic("layoutMode")(layoutMode)
+    if (masonry != null) __obj.updateDynamic("masonry")(masonry)
+    if (masontryHorizontal != null) __obj.updateDynamic("masontryHorizontal")(masontryHorizontal)
+    if (!js.isUndefined(originLeft)) __obj.updateDynamic("originLeft")(originLeft)
+    if (!js.isUndefined(originTop)) __obj.updateDynamic("originTop")(originTop)
+    if (packery != null) __obj.updateDynamic("packery")(packery)
+    if (!js.isUndefined(percentPosition)) __obj.updateDynamic("percentPosition")(percentPosition)
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    if (sortAscending != null) __obj.updateDynamic("sortAscending")(sortAscending.asInstanceOf[js.Any])
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy)
+    if (stagger != null) __obj.updateDynamic("stagger")(stagger.asInstanceOf[js.Any])
+    if (stamp != null) __obj.updateDynamic("stamp")(stamp)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical)
+    if (visibleStyle != null) __obj.updateDynamic("visibleStyle")(visibleStyle)
+    __obj.asInstanceOf[IsotopeOptions]
+  }
+}
+

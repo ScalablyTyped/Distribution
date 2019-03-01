@@ -20,3 +20,42 @@ trait RemarketingAudienceResource extends js.Object {
   def update(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintQuotaUser): gapiDotClientLib.gapiNs.clientNs.Request[RemarketingAudience]
 }
 
+object RemarketingAudienceResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingAudience]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingAudience]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingAudiences]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingAudience]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrintQuotaUser, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RemarketingAudience]
+    ]
+  ): RemarketingAudienceResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[RemarketingAudienceResource]
+  }
+}
+

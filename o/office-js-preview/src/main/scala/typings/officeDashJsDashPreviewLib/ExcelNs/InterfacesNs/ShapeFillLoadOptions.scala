@@ -41,3 +41,20 @@ trait ShapeFillLoadOptions extends js.Object {
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ShapeFillLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    foreColor: js.UndefOr[scala.Boolean] = js.undefined,
+    transparency: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined
+  ): ShapeFillLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(foreColor)) __obj.updateDynamic("foreColor")(foreColor)
+    if (!js.isUndefined(transparency)) __obj.updateDynamic("transparency")(transparency)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ShapeFillLoadOptions]
+  }
+}
+

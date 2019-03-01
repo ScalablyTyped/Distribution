@@ -45,3 +45,26 @@ trait XContentIdentifierMapping
   def mapRow(Value: js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]]): scala.Boolean
 }
 
+object XContentIdentifierMapping {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    mapContent: js.Function1[XContent, XContent],
+    mapContentIdentifier: js.Function1[XContentIdentifier, XContentIdentifier],
+    mapContentIdentifierString: js.Function1[java.lang.String, java.lang.String],
+    mapRow: js.Function1[js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_]], scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContentIdentifierMapping = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("mapContent")(mapContent)
+    __obj.updateDynamic("mapContentIdentifier")(mapContentIdentifier)
+    __obj.updateDynamic("mapContentIdentifierString")(mapContentIdentifierString)
+    __obj.updateDynamic("mapRow")(mapRow)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XContentIdentifierMapping]
+  }
+}
+

@@ -110,3 +110,56 @@ trait LaunchConfigurationState extends js.Object {
   ] = js.undefined
 }
 
+object LaunchConfigurationState {
+  @scala.inline
+  def apply(
+    associatePublicIpAddress: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    ebsBlockDevices: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncryptedIopsNoDeviceSnapshotId]
+      ]
+    ] = null,
+    ebsOptimized: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableMonitoring: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    ephemeralBlockDevices: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeviceNameVirtualName]]
+    ] = null,
+    iamInstanceProfile: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iamMod.InstanceProfile] = null,
+    imageId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    placementTenancy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rootBlockDevice: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeSizeVolumeTypeBoolean] = null,
+    securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    spotPrice: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    userData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    userDataBase64: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcClassicLinkId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcClassicLinkSecurityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): LaunchConfigurationState = {
+    val __obj = js.Dynamic.literal()
+    if (associatePublicIpAddress != null) __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress.asInstanceOf[js.Any])
+    if (ebsBlockDevices != null) __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices.asInstanceOf[js.Any])
+    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
+    if (enableMonitoring != null) __obj.updateDynamic("enableMonitoring")(enableMonitoring.asInstanceOf[js.Any])
+    if (ephemeralBlockDevices != null) __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices.asInstanceOf[js.Any])
+    if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
+    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
+    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (placementTenancy != null) __obj.updateDynamic("placementTenancy")(placementTenancy.asInstanceOf[js.Any])
+    if (rootBlockDevice != null) __obj.updateDynamic("rootBlockDevice")(rootBlockDevice.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    if (userDataBase64 != null) __obj.updateDynamic("userDataBase64")(userDataBase64.asInstanceOf[js.Any])
+    if (vpcClassicLinkId != null) __obj.updateDynamic("vpcClassicLinkId")(vpcClassicLinkId.asInstanceOf[js.Any])
+    if (vpcClassicLinkSecurityGroups != null) __obj.updateDynamic("vpcClassicLinkSecurityGroups")(vpcClassicLinkSecurityGroups.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LaunchConfigurationState]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Anon_AnimationEnd extends js.Object {
   def animationEnd(): scala.Unit
 }
 
+object Anon_AnimationEnd {
+  @scala.inline
+  def apply(
+    animationEnd: js.Function0[scala.Unit],
+    autoRotate: scala.Boolean,
+    destination: wepyLib.wxUnderscoreEnhancedMod.LagLng,
+    duration: scala.Double,
+    markerId: scala.Double
+  ): Anon_AnimationEnd = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animationEnd")(animationEnd)
+    __obj.updateDynamic("autoRotate")(autoRotate)
+    __obj.updateDynamic("destination")(destination)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("markerId")(markerId)
+    __obj.asInstanceOf[Anon_AnimationEnd]
+  }
+}
+

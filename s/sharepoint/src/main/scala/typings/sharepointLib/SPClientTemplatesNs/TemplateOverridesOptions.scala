@@ -23,3 +23,24 @@ trait TemplateOverridesOptions extends js.Object {
   var ViewStyle: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TemplateOverridesOptions {
+  @scala.inline
+  def apply(
+    BaseViewID: scala.Double | java.lang.String = null,
+    ListTemplateType: scala.Int | scala.Double = null,
+    OnPostRender: RenderCallback | js.Array[RenderCallback] = null,
+    OnPreRender: RenderCallback | js.Array[RenderCallback] = null,
+    Templates: TemplateOverrides = null,
+    ViewStyle: scala.Int | scala.Double = null
+  ): TemplateOverridesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (BaseViewID != null) __obj.updateDynamic("BaseViewID")(BaseViewID.asInstanceOf[js.Any])
+    if (ListTemplateType != null) __obj.updateDynamic("ListTemplateType")(ListTemplateType.asInstanceOf[js.Any])
+    if (OnPostRender != null) __obj.updateDynamic("OnPostRender")(OnPostRender.asInstanceOf[js.Any])
+    if (OnPreRender != null) __obj.updateDynamic("OnPreRender")(OnPreRender.asInstanceOf[js.Any])
+    if (Templates != null) __obj.updateDynamic("Templates")(Templates)
+    if (ViewStyle != null) __obj.updateDynamic("ViewStyle")(ViewStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TemplateOverridesOptions]
+  }
+}
+

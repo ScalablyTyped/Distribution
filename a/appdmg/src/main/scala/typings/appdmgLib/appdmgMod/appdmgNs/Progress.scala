@@ -13,3 +13,21 @@ trait Progress extends js.Object {
   var `type`: appdmgLib.appdmgLibStrings.`step-begin` | appdmgLib.appdmgLibStrings.`step-end`
 }
 
+object Progress {
+  @scala.inline
+  def apply(
+    current: scala.Double,
+    status: appdmgLib.appdmgLibStrings.ok | appdmgLib.appdmgLibStrings.skip | appdmgLib.appdmgLibStrings.fail,
+    title: java.lang.String,
+    total: scala.Double,
+    `type`: appdmgLib.appdmgLibStrings.`step-begin` | appdmgLib.appdmgLibStrings.`step-end`
+  ): Progress = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("current")(current)
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("total")(total)
+    __obj.asInstanceOf[Progress]
+  }
+}
+

@@ -32,3 +32,24 @@ trait VirtualNodeState extends js.Object {
   val spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BackendsListener]] = js.undefined
 }
 
+object VirtualNodeState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    createdDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    lastUpdatedDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    meshName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    spec: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BackendsListener] = null
+  ): VirtualNodeState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
+    if (lastUpdatedDate != null) __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate.asInstanceOf[js.Any])
+    if (meshName != null) __obj.updateDynamic("meshName")(meshName.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (spec != null) __obj.updateDynamic("spec")(spec.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VirtualNodeState]
+  }
+}
+

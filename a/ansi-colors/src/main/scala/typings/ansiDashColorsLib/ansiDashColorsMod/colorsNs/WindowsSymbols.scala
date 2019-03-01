@@ -23,3 +23,42 @@ trait WindowsSymbols extends js.Object {
   var warning: java.lang.String
 }
 
+object WindowsSymbols {
+  @scala.inline
+  def apply(
+    bullet: java.lang.String,
+    check: java.lang.String,
+    cross: java.lang.String,
+    ellipsis: java.lang.String,
+    heart: java.lang.String,
+    info: java.lang.String,
+    line: java.lang.String,
+    middot: java.lang.String,
+    minus: java.lang.String,
+    plus: java.lang.String,
+    pointer: java.lang.String,
+    pointerSmall: java.lang.String,
+    question: java.lang.String,
+    questionSmall: java.lang.String,
+    warning: java.lang.String
+  ): WindowsSymbols = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bullet")(bullet)
+    __obj.updateDynamic("check")(check)
+    __obj.updateDynamic("cross")(cross)
+    __obj.updateDynamic("ellipsis")(ellipsis)
+    __obj.updateDynamic("heart")(heart)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("middot")(middot)
+    __obj.updateDynamic("minus")(minus)
+    __obj.updateDynamic("plus")(plus)
+    __obj.updateDynamic("pointer")(pointer)
+    __obj.updateDynamic("pointerSmall")(pointerSmall)
+    __obj.updateDynamic("question")(question)
+    __obj.updateDynamic("questionSmall")(questionSmall)
+    __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[WindowsSymbols]
+  }
+}
+

@@ -25,3 +25,20 @@ trait GooglePrivacyDlpV2beta1LDiversityHistogramBucket extends js.Object {
   var sensitiveValueFrequencyUpperBound: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1LDiversityHistogramBucket {
+  @scala.inline
+  def apply(
+    bucketSize: java.lang.String = null,
+    bucketValues: js.Array[GooglePrivacyDlpV2beta1LDiversityEquivalenceClass] = null,
+    sensitiveValueFrequencyLowerBound: java.lang.String = null,
+    sensitiveValueFrequencyUpperBound: java.lang.String = null
+  ): GooglePrivacyDlpV2beta1LDiversityHistogramBucket = {
+    val __obj = js.Dynamic.literal()
+    if (bucketSize != null) __obj.updateDynamic("bucketSize")(bucketSize)
+    if (bucketValues != null) __obj.updateDynamic("bucketValues")(bucketValues)
+    if (sensitiveValueFrequencyLowerBound != null) __obj.updateDynamic("sensitiveValueFrequencyLowerBound")(sensitiveValueFrequencyLowerBound)
+    if (sensitiveValueFrequencyUpperBound != null) __obj.updateDynamic("sensitiveValueFrequencyUpperBound")(sensitiveValueFrequencyUpperBound)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1LDiversityHistogramBucket]
+  }
+}
+

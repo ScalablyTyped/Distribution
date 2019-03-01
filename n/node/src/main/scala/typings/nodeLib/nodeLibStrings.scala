@@ -385,115 +385,152 @@ object nodeLibStrings {
   sealed trait RuntimeDOTterminateExecution extends js.Object
   
   @js.native
-  sealed trait SIGABRT extends js.Object
+  sealed trait SIGABRT
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGALRM extends js.Object
+  sealed trait SIGALRM
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGBREAK extends js.Object
+  sealed trait SIGBREAK
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGBUS extends js.Object
+  sealed trait SIGBUS
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGCHLD extends js.Object
+  sealed trait SIGCHLD
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGCONT extends js.Object
+  sealed trait SIGCONT
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGFPE extends js.Object
+  sealed trait SIGFPE
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGHUP extends js.Object
+  sealed trait SIGHUP
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGILL extends js.Object
+  sealed trait SIGILL
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGINFO extends js.Object
+  sealed trait SIGINFO
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGINT extends js.Object
+  sealed trait SIGINT
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGIO extends js.Object
+  sealed trait SIGIO
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGIOT extends js.Object
+  sealed trait SIGIOT
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGKILL extends js.Object
+  sealed trait SIGKILL
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGLOST extends js.Object
+  sealed trait SIGLOST
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGPIPE extends js.Object
+  sealed trait SIGPIPE
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGPOLL extends js.Object
+  sealed trait SIGPOLL
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGPROF extends js.Object
+  sealed trait SIGPROF
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGPWR extends js.Object
+  sealed trait SIGPWR
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGQUIT extends js.Object
+  sealed trait SIGQUIT
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGSEGV extends js.Object
+  sealed trait SIGSEGV
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGSTKFLT extends js.Object
+  sealed trait SIGSTKFLT
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGSTOP extends js.Object
+  sealed trait SIGSTOP
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGSYS extends js.Object
+  sealed trait SIGSYS
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGTERM extends js.Object
+  sealed trait SIGTERM
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGTRAP extends js.Object
+  sealed trait SIGTRAP
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGTSTP extends js.Object
+  sealed trait SIGTSTP
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGTTIN extends js.Object
+  sealed trait SIGTTIN
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGTTOU extends js.Object
+  sealed trait SIGTTOU
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGUNUSED extends js.Object
+  sealed trait SIGUNUSED
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGURG extends js.Object
+  sealed trait SIGURG
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGUSR1 extends js.Object
+  sealed trait SIGUSR1
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGUSR2 extends js.Object
+  sealed trait SIGUSR2
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGVTALRM extends js.Object
+  sealed trait SIGVTALRM
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGWINCH extends js.Object
+  sealed trait SIGWINCH
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGXCPU extends js.Object
+  sealed trait SIGXCPU
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
-  sealed trait SIGXFSZ extends js.Object
+  sealed trait SIGXFSZ
+    extends nodeLib.NodeJSNs.Signals
   
   @js.native
   sealed trait SOA extends js.Object
@@ -505,13 +542,16 @@ object nodeLibStrings {
   sealed trait SchemaDOTgetDomains extends js.Object
   
   @js.native
-  sealed trait TLSv1 extends js.Object
+  sealed trait TLSv1
+    extends nodeLib.tlsMod.SecureVersion
   
   @js.native
-  sealed trait TLSv1DOT1 extends js.Object
+  sealed trait TLSv1DOT1
+    extends nodeLib.tlsMod.SecureVersion
   
   @js.native
-  sealed trait TLSv1DOT2 extends js.Object
+  sealed trait TLSv1DOT2
+    extends nodeLib.tlsMod.SecureVersion
   
   @js.native
   sealed trait TXT extends js.Object
@@ -520,46 +560,63 @@ object nodeLibStrings {
   sealed trait aborted extends js.Object
   
   @js.native
-  sealed trait `aes-128-ccm` extends js.Object
+  sealed trait `aes-128-ccm`
+    extends nodeLib.cryptoMod.CipherCCMTypes
   
   @js.native
-  sealed trait `aes-128-gcm` extends js.Object
+  sealed trait `aes-128-gcm`
+    extends nodeLib.cryptoMod.CipherGCMTypes
   
   @js.native
-  sealed trait `aes-192-ccm` extends js.Object
+  sealed trait `aes-192-ccm`
+    extends nodeLib.cryptoMod.CipherCCMTypes
   
   @js.native
-  sealed trait `aes-192-gcm` extends js.Object
+  sealed trait `aes-192-gcm`
+    extends nodeLib.cryptoMod.CipherGCMTypes
   
   @js.native
-  sealed trait `aes-256-ccm` extends js.Object
+  sealed trait `aes-256-ccm`
+    extends nodeLib.cryptoMod.CipherCCMTypes
   
   @js.native
-  sealed trait `aes-256-gcm` extends js.Object
+  sealed trait `aes-256-gcm`
+    extends nodeLib.cryptoMod.CipherGCMTypes
   
   @js.native
-  sealed trait aix extends js.Object
+  sealed trait aix
+    extends nodeLib.NodeJSNs.Platform
   
   @js.native
   sealed trait altsvc extends js.Object
   
   @js.native
-  sealed trait android extends js.Object
+  sealed trait android
+    extends nodeLib.NodeJSNs.Platform
   
   @js.native
-  sealed trait ascii extends js.Object
+  sealed trait ascii
+    extends BufferEncoding
+       with nodeLib.cryptoMod.Utf8AsciiBinaryEncoding
+       with nodeLib.cryptoMod.Utf8AsciiLatin1Encoding
   
   @js.native
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends BufferEncoding
+       with nodeLib.cryptoMod.HexBase64BinaryEncoding
+       with nodeLib.cryptoMod.HexBase64Latin1Encoding
   
   @js.native
   sealed trait beforeExit extends js.Object
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends BufferEncoding
+       with nodeLib.cryptoMod.HexBase64BinaryEncoding
+       with nodeLib.cryptoMod.Utf8AsciiBinaryEncoding
   
   @js.native
   sealed trait buffer extends js.Object
@@ -574,7 +631,8 @@ object nodeLibStrings {
   sealed trait close extends js.Object
   
   @js.native
-  sealed trait compressed extends js.Object
+  sealed trait compressed
+    extends nodeLib.cryptoMod.ECDHKeyFormat
   
   @js.native
   sealed trait connect extends js.Object
@@ -583,19 +641,23 @@ object nodeLibStrings {
   sealed trait connection extends js.Object
   
   @js.native
-  sealed trait cygwin extends js.Object
+  sealed trait cygwin
+    extends nodeLib.NodeJSNs.Platform
   
   @js.native
-  sealed trait darwin extends js.Object
+  sealed trait darwin
+    extends nodeLib.NodeJSNs.Platform
   
   @js.native
   sealed trait data extends js.Object
   
   @js.native
-  sealed trait der extends js.Object
+  sealed trait der
+    extends nodeLib.cryptoMod.KeyFormat
   
   @js.native
-  sealed trait dir extends js.Object
+  sealed trait dir
+    extends nodeLib.fsMod.symlinkNs.Type
   
   @js.native
   sealed trait disconnect extends js.Object
@@ -604,10 +666,12 @@ object nodeLibStrings {
   sealed trait drain extends js.Object
   
   @js.native
-  sealed trait dsa extends js.Object
+  sealed trait dsa
+    extends nodeLib.cryptoMod.KeyType
   
   @js.native
-  sealed trait ec extends js.Object
+  sealed trait ec
+    extends nodeLib.cryptoMod.KeyType
   
   @js.native
   sealed trait end extends js.Object
@@ -619,7 +683,8 @@ object nodeLibStrings {
   sealed trait exit extends js.Object
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends nodeLib.fsMod.symlinkNs.Type
   
   @js.native
   sealed trait finish extends js.Object
@@ -631,7 +696,8 @@ object nodeLibStrings {
   sealed trait frameError extends js.Object
   
   @js.native
-  sealed trait freebsd extends js.Object
+  sealed trait freebsd
+    extends nodeLib.NodeJSNs.Platform
   
   @js.native
   sealed trait get extends js.Object
@@ -643,16 +709,22 @@ object nodeLibStrings {
   sealed trait headers extends js.Object
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends BufferEncoding
+       with nodeLib.cryptoMod.HexBase64BinaryEncoding
+       with nodeLib.cryptoMod.HexBase64Latin1Encoding
   
   @js.native
-  sealed trait hybrid extends js.Object
+  sealed trait hybrid
+    extends nodeLib.cryptoMod.ECDHKeyFormat
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait ignore
+    extends nodeLib.childUnderscoreProcessMod._StdioOptions
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait inherit
+    extends nodeLib.childUnderscoreProcessMod._StdioOptions
   
   @js.native
   sealed trait inspectorNotification extends js.Object
@@ -661,16 +733,21 @@ object nodeLibStrings {
   sealed trait ipc extends js.Object
   
   @js.native
-  sealed trait junction extends js.Object
+  sealed trait junction
+    extends nodeLib.fsMod.symlinkNs.Type
   
   @js.native
-  sealed trait latin1 extends js.Object
+  sealed trait latin1
+    extends BufferEncoding
+       with nodeLib.cryptoMod.HexBase64Latin1Encoding
+       with nodeLib.cryptoMod.Utf8AsciiLatin1Encoding
   
   @js.native
   sealed trait line extends js.Object
   
   @js.native
-  sealed trait linux extends js.Object
+  sealed trait linux
+    extends nodeLib.NodeJSNs.Platform
   
   @js.native
   sealed trait listening extends js.Object
@@ -700,19 +777,22 @@ object nodeLibStrings {
   sealed trait open extends js.Object
   
   @js.native
-  sealed trait openbsd extends js.Object
+  sealed trait openbsd
+    extends nodeLib.NodeJSNs.Platform
   
   @js.native
   sealed trait pause extends js.Object
   
   @js.native
-  sealed trait pem extends js.Object
+  sealed trait pem
+    extends nodeLib.cryptoMod.KeyFormat
   
   @js.native
   sealed trait ping extends js.Object
   
   @js.native
-  sealed trait pipe extends js.Object
+  sealed trait pipe
+    extends nodeLib.childUnderscoreProcessMod._StdioOptions
   
   @js.native
   sealed trait pkcs1 extends js.Object
@@ -721,10 +801,12 @@ object nodeLibStrings {
   sealed trait pkcs8 extends js.Object
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait `private`
+    extends nodeLib.cryptoMod.KeyObjectType
   
   @js.native
-  sealed trait public extends js.Object
+  sealed trait public
+    extends nodeLib.cryptoMod.KeyObjectType
   
   @js.native
   sealed trait push extends js.Object
@@ -733,7 +815,8 @@ object nodeLibStrings {
   sealed trait readable extends js.Object
   
   @js.native
-  sealed trait reject extends js.Object
+  sealed trait reject
+    extends nodeLib.NodeJSNs.MultipleResolveType
   
   @js.native
   sealed trait rejectionHandled extends js.Object
@@ -754,7 +837,8 @@ object nodeLibStrings {
   sealed trait resize extends js.Object
   
   @js.native
-  sealed trait resolve extends js.Object
+  sealed trait resolve
+    extends nodeLib.NodeJSNs.MultipleResolveType
   
   @js.native
   sealed trait response extends js.Object
@@ -766,13 +850,15 @@ object nodeLibStrings {
   sealed trait resumeSession extends js.Object
   
   @js.native
-  sealed trait rsa extends js.Object
+  sealed trait rsa
+    extends nodeLib.cryptoMod.KeyType
   
   @js.native
   sealed trait sec1 extends js.Object
   
   @js.native
-  sealed trait secret extends js.Object
+  sealed trait secret
+    extends nodeLib.cryptoMod.KeyObjectType
   
   @js.native
   sealed trait secureConnect extends js.Object
@@ -799,7 +885,8 @@ object nodeLibStrings {
   sealed trait streamClosed extends js.Object
   
   @js.native
-  sealed trait sunos extends js.Object
+  sealed trait sunos
+    extends nodeLib.NodeJSNs.Platform
   
   @js.native
   sealed trait timeout extends js.Object
@@ -811,19 +898,22 @@ object nodeLibStrings {
   sealed trait trailers extends js.Object
   
   @js.native
-  sealed trait ucs2 extends js.Object
+  sealed trait ucs2 extends BufferEncoding
   
   @js.native
-  sealed trait udp4 extends js.Object
+  sealed trait udp4
+    extends nodeLib.dgramMod.SocketType
   
   @js.native
-  sealed trait udp6 extends js.Object
+  sealed trait udp6
+    extends nodeLib.dgramMod.SocketType
   
   @js.native
   sealed trait uncaughtException extends js.Object
   
   @js.native
-  sealed trait uncompressed extends js.Object
+  sealed trait uncompressed
+    extends nodeLib.cryptoMod.ECDHKeyFormat
   
   @js.native
   sealed trait unhandledRejection extends js.Object
@@ -835,10 +925,13 @@ object nodeLibStrings {
   sealed trait unpipe extends js.Object
   
   @js.native
-  sealed trait utf16le extends js.Object
+  sealed trait utf16le extends BufferEncoding
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends BufferEncoding
+       with nodeLib.cryptoMod.Utf8AsciiBinaryEncoding
+       with nodeLib.cryptoMod.Utf8AsciiLatin1Encoding
   
   @js.native
   sealed trait wantTrailers extends js.Object
@@ -847,7 +940,8 @@ object nodeLibStrings {
   sealed trait warning extends js.Object
   
   @js.native
-  sealed trait win32 extends js.Object
+  sealed trait win32
+    extends nodeLib.NodeJSNs.Platform
   
   @scala.inline
   def `/`: `/` = "/".asInstanceOf[`/`]

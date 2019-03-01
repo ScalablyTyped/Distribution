@@ -11,3 +11,12 @@ trait IWebUIBackgroundTaskInstance extends js.Object {
   var succeeded: scala.Boolean
 }
 
+object IWebUIBackgroundTaskInstance {
+  @scala.inline
+  def apply(succeeded: scala.Boolean): IWebUIBackgroundTaskInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("succeeded")(succeeded)
+    __obj.asInstanceOf[IWebUIBackgroundTaskInstance]
+  }
+}
+

@@ -10,3 +10,16 @@ trait MutationContext extends js.Object {
   var operations: lodashLib.lodashMod.Global.Map[java.lang.String, reactDashApolloLib.Anon_Query]
 }
 
+object MutationContext {
+  @scala.inline
+  def apply(
+    operations: lodashLib.lodashMod.Global.Map[java.lang.String, reactDashApolloLib.Anon_Query],
+    client: apolloDashClientLib.apolloDashClientMod.default[js.Object] = null
+  ): MutationContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("operations")(operations)
+    if (client != null) __obj.updateDynamic("client")(client)
+    __obj.asInstanceOf[MutationContext]
+  }
+}
+

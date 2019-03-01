@@ -16,3 +16,16 @@ trait SamlProviderArgs extends js.Object {
   val samlMetadataDocument: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object SamlProviderArgs {
+  @scala.inline
+  def apply(
+    samlMetadataDocument: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): SamlProviderArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("samlMetadataDocument")(samlMetadataDocument.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SamlProviderArgs]
+  }
+}
+

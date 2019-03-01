@@ -13,3 +13,17 @@ trait QuestMilestonesResource extends js.Object {
   def claim(request: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyMilestoneId): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object QuestMilestonesResource {
+  @scala.inline
+  def apply(
+    claim: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyMilestoneId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): QuestMilestonesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("claim")(claim)
+    __obj.asInstanceOf[QuestMilestonesResource]
+  }
+}
+

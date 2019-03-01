@@ -15,3 +15,12 @@ trait Consumer extends js.Object {
   def consume[T](queue: java.lang.String, callback: ConsumerCallback[T]): scala.Unit
 }
 
+object Consumer {
+  @scala.inline
+  def apply(consume: js.Function2[java.lang.String, ConsumerCallback[js.Any], scala.Unit]): Consumer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("consume")(consume)
+    __obj.asInstanceOf[Consumer]
+  }
+}
+

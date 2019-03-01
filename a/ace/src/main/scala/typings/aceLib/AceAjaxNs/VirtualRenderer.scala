@@ -278,3 +278,146 @@ trait VirtualRenderer extends OptionProvider {
   def visualizeFocus(): scala.Unit
 }
 
+object VirtualRenderer {
+  @scala.inline
+  def apply(
+    addGutterDecoration: js.Function0[scala.Unit],
+    adjustWrapLimit: js.Function0[scala.Unit],
+    characterWidth: scala.Double,
+    destroy: js.Function0[scala.Unit],
+    getAnimatedScroll: js.Function0[scala.Boolean],
+    getContainerElement: js.Function0[stdLib.HTMLElement],
+    getFirstFullyVisibleRow: js.Function0[scala.Double],
+    getFirstVisibleRow: js.Function0[scala.Double],
+    getHScrollBarAlwaysVisible: js.Function0[scala.Boolean],
+    getLastFullyVisibleRow: js.Function0[scala.Double],
+    getLastVisibleRow: js.Function0[scala.Double],
+    getMouseEventTarget: js.Function0[stdLib.HTMLElement],
+    getOption: js.Function1[java.lang.String, js.Any],
+    getOptions: js.Function0[js.Any],
+    getPrintMarginColumn: js.Function0[scala.Boolean],
+    getScrollBottomRow: js.Function0[scala.Double],
+    getScrollLeft: js.Function0[scala.Double],
+    getScrollTop: js.Function0[scala.Double],
+    getScrollTopRow: js.Function0[scala.Double],
+    getShowGutter: js.Function0[scala.Boolean],
+    getShowInvisibles: js.Function0[scala.Boolean],
+    getShowPrintMargin: js.Function0[scala.Boolean],
+    getTextAreaContainer: js.Function0[stdLib.HTMLElement],
+    getTheme: js.Function0[java.lang.String],
+    hideComposition: js.Function0[scala.Unit],
+    hideCursor: js.Function0[scala.Unit],
+    isScrollableBy: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    lineHeight: scala.Double,
+    onResize: js.Function4[scala.Boolean, scala.Double, scala.Double, scala.Double, scala.Unit],
+    removeGutterDecoration: js.Function0[scala.Unit],
+    screenToTextCoordinates: js.Function2[scala.Double, scala.Double, scala.Unit],
+    scrollBy: js.Function2[scala.Double, scala.Double, scala.Unit],
+    scrollCursorIntoView: js.Function0[scala.Unit],
+    scrollToLine: js.Function4[scala.Double, scala.Boolean, scala.Boolean, js.Function, scala.Unit],
+    scrollToRow: js.Function1[scala.Double, scala.Unit],
+    scrollToX: js.Function1[scala.Double, scala.Double],
+    scrollToY: js.Function1[scala.Double, scala.Double],
+    scroller: js.Any,
+    setAnimatedScroll: js.Function1[scala.Boolean, scala.Unit],
+    setAnnotations: js.Function1[js.Array[_], scala.Unit],
+    setCompositionText: js.Function1[java.lang.String, scala.Unit],
+    setHScrollBarAlwaysVisible: js.Function1[scala.Boolean, scala.Unit],
+    setOption: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setOptions: js.Function1[js.Any, scala.Unit],
+    setPadding: js.Function1[scala.Double, scala.Unit],
+    setPrintMarginColumn: js.Function1[scala.Boolean, scala.Unit],
+    setScrollMargin: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    setSession: js.Function1[IEditSession, scala.Unit],
+    setShowGutter: js.Function1[scala.Boolean, scala.Unit],
+    setShowInvisibles: js.Function1[scala.Boolean, scala.Unit],
+    setShowPrintMargin: js.Function1[scala.Boolean, scala.Unit],
+    setStyle: js.Function1[java.lang.String, scala.Unit],
+    setTheme: js.Function1[java.lang.String, scala.Unit],
+    showComposition: js.Function1[scala.Double, scala.Unit],
+    showCursor: js.Function0[scala.Unit],
+    textToScreenCoordinates: js.Function2[scala.Double, scala.Double, js.Any],
+    unsetStyle: js.Function1[java.lang.String, scala.Unit],
+    updateBackMarkers: js.Function0[scala.Unit],
+    updateBreakpoints: js.Function0[scala.Unit],
+    updateCursor: js.Function0[scala.Unit],
+    updateFontSize: js.Function0[scala.Unit],
+    updateFrontMarkers: js.Function0[scala.Unit],
+    updateFull: js.Function1[scala.Boolean, scala.Unit],
+    updateLines: js.Function2[scala.Double, scala.Double, scala.Unit],
+    updateText: js.Function0[scala.Unit],
+    visualizeBlur: js.Function0[scala.Unit],
+    visualizeFocus: js.Function0[scala.Unit]
+  ): VirtualRenderer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addGutterDecoration")(addGutterDecoration)
+    __obj.updateDynamic("adjustWrapLimit")(adjustWrapLimit)
+    __obj.updateDynamic("characterWidth")(characterWidth)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getAnimatedScroll")(getAnimatedScroll)
+    __obj.updateDynamic("getContainerElement")(getContainerElement)
+    __obj.updateDynamic("getFirstFullyVisibleRow")(getFirstFullyVisibleRow)
+    __obj.updateDynamic("getFirstVisibleRow")(getFirstVisibleRow)
+    __obj.updateDynamic("getHScrollBarAlwaysVisible")(getHScrollBarAlwaysVisible)
+    __obj.updateDynamic("getLastFullyVisibleRow")(getLastFullyVisibleRow)
+    __obj.updateDynamic("getLastVisibleRow")(getLastVisibleRow)
+    __obj.updateDynamic("getMouseEventTarget")(getMouseEventTarget)
+    __obj.updateDynamic("getOption")(getOption)
+    __obj.updateDynamic("getOptions")(getOptions)
+    __obj.updateDynamic("getPrintMarginColumn")(getPrintMarginColumn)
+    __obj.updateDynamic("getScrollBottomRow")(getScrollBottomRow)
+    __obj.updateDynamic("getScrollLeft")(getScrollLeft)
+    __obj.updateDynamic("getScrollTop")(getScrollTop)
+    __obj.updateDynamic("getScrollTopRow")(getScrollTopRow)
+    __obj.updateDynamic("getShowGutter")(getShowGutter)
+    __obj.updateDynamic("getShowInvisibles")(getShowInvisibles)
+    __obj.updateDynamic("getShowPrintMargin")(getShowPrintMargin)
+    __obj.updateDynamic("getTextAreaContainer")(getTextAreaContainer)
+    __obj.updateDynamic("getTheme")(getTheme)
+    __obj.updateDynamic("hideComposition")(hideComposition)
+    __obj.updateDynamic("hideCursor")(hideCursor)
+    __obj.updateDynamic("isScrollableBy")(isScrollableBy)
+    __obj.updateDynamic("lineHeight")(lineHeight)
+    __obj.updateDynamic("onResize")(onResize)
+    __obj.updateDynamic("removeGutterDecoration")(removeGutterDecoration)
+    __obj.updateDynamic("screenToTextCoordinates")(screenToTextCoordinates)
+    __obj.updateDynamic("scrollBy")(scrollBy)
+    __obj.updateDynamic("scrollCursorIntoView")(scrollCursorIntoView)
+    __obj.updateDynamic("scrollToLine")(scrollToLine)
+    __obj.updateDynamic("scrollToRow")(scrollToRow)
+    __obj.updateDynamic("scrollToX")(scrollToX)
+    __obj.updateDynamic("scrollToY")(scrollToY)
+    __obj.updateDynamic("scroller")(scroller)
+    __obj.updateDynamic("setAnimatedScroll")(setAnimatedScroll)
+    __obj.updateDynamic("setAnnotations")(setAnnotations)
+    __obj.updateDynamic("setCompositionText")(setCompositionText)
+    __obj.updateDynamic("setHScrollBarAlwaysVisible")(setHScrollBarAlwaysVisible)
+    __obj.updateDynamic("setOption")(setOption)
+    __obj.updateDynamic("setOptions")(setOptions)
+    __obj.updateDynamic("setPadding")(setPadding)
+    __obj.updateDynamic("setPrintMarginColumn")(setPrintMarginColumn)
+    __obj.updateDynamic("setScrollMargin")(setScrollMargin)
+    __obj.updateDynamic("setSession")(setSession)
+    __obj.updateDynamic("setShowGutter")(setShowGutter)
+    __obj.updateDynamic("setShowInvisibles")(setShowInvisibles)
+    __obj.updateDynamic("setShowPrintMargin")(setShowPrintMargin)
+    __obj.updateDynamic("setStyle")(setStyle)
+    __obj.updateDynamic("setTheme")(setTheme)
+    __obj.updateDynamic("showComposition")(showComposition)
+    __obj.updateDynamic("showCursor")(showCursor)
+    __obj.updateDynamic("textToScreenCoordinates")(textToScreenCoordinates)
+    __obj.updateDynamic("unsetStyle")(unsetStyle)
+    __obj.updateDynamic("updateBackMarkers")(updateBackMarkers)
+    __obj.updateDynamic("updateBreakpoints")(updateBreakpoints)
+    __obj.updateDynamic("updateCursor")(updateCursor)
+    __obj.updateDynamic("updateFontSize")(updateFontSize)
+    __obj.updateDynamic("updateFrontMarkers")(updateFrontMarkers)
+    __obj.updateDynamic("updateFull")(updateFull)
+    __obj.updateDynamic("updateLines")(updateLines)
+    __obj.updateDynamic("updateText")(updateText)
+    __obj.updateDynamic("visualizeBlur")(visualizeBlur)
+    __obj.updateDynamic("visualizeFocus")(visualizeFocus)
+    __obj.asInstanceOf[VirtualRenderer]
+  }
+}
+

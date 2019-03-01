@@ -16,3 +16,20 @@ trait RemarketingListShare extends js.Object {
   var sharedAdvertiserIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object RemarketingListShare {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    remarketingListId: java.lang.String = null,
+    sharedAccountIds: js.Array[java.lang.String] = null,
+    sharedAdvertiserIds: js.Array[java.lang.String] = null
+  ): RemarketingListShare = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (remarketingListId != null) __obj.updateDynamic("remarketingListId")(remarketingListId)
+    if (sharedAccountIds != null) __obj.updateDynamic("sharedAccountIds")(sharedAccountIds)
+    if (sharedAdvertiserIds != null) __obj.updateDynamic("sharedAdvertiserIds")(sharedAdvertiserIds)
+    __obj.asInstanceOf[RemarketingListShare]
+  }
+}
+

@@ -21,3 +21,13 @@ trait ImageFormatOptions extends js.Object {
   var Resolution: scala.Double
 }
 
+object ImageFormatOptions {
+  @scala.inline
+  def apply(Format: java.lang.String, Resolution: scala.Double): ImageFormatOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Format")(Format)
+    __obj.updateDynamic("Resolution")(Resolution)
+    __obj.asInstanceOf[ImageFormatOptions]
+  }
+}
+

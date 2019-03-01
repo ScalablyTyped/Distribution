@@ -7,40 +7,52 @@ import scala.scalajs.js.annotation._
 
 object pemLibStrings {
   @js.native
-  sealed trait aes128 extends js.Object
+  sealed trait aes128
+    extends pemLib.pemMod._PrivateKeyCipher
   
   @js.native
-  sealed trait aes192 extends js.Object
+  sealed trait aes192
+    extends pemLib.pemMod._PrivateKeyCipher
   
   @js.native
-  sealed trait aes256 extends js.Object
+  sealed trait aes256
+    extends pemLib.pemMod._PrivateKeyCipher
   
   @js.native
-  sealed trait camellia128 extends js.Object
+  sealed trait camellia128
+    extends pemLib.pemMod._PrivateKeyCipher
   
   @js.native
-  sealed trait camellia192 extends js.Object
+  sealed trait camellia192
+    extends pemLib.pemMod._PrivateKeyCipher
   
   @js.native
-  sealed trait camellia256 extends js.Object
+  sealed trait camellia256
+    extends pemLib.pemMod._PrivateKeyCipher
   
   @js.native
-  sealed trait des extends js.Object
+  sealed trait des
+    extends pemLib.pemMod._PrivateKeyCipher
   
   @js.native
-  sealed trait des3 extends js.Object
+  sealed trait des3
+    extends pemLib.pemMod._PrivateKeyCipher
   
   @js.native
-  sealed trait idea extends js.Object
+  sealed trait idea
+    extends pemLib.pemMod._PrivateKeyCipher
   
   @js.native
-  sealed trait md5 extends js.Object
+  sealed trait md5
+    extends pemLib.pemMod._HashFunction
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait sha1
+    extends pemLib.pemMod._HashFunction
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait sha256
+    extends pemLib.pemMod._HashFunction
   
   @scala.inline
   def aes128: aes128 = "aes128".asInstanceOf[aes128]

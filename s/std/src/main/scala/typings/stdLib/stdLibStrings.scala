@@ -10,10 +10,10 @@ object stdLibStrings {
   sealed trait `2d` extends js.Object
   
   @js.native
-  sealed trait `2x` extends js.Object
+  sealed trait `2x` extends OverSampleType
   
   @js.native
-  sealed trait `4x` extends js.Object
+  sealed trait `4x` extends OverSampleType
   
   @js.native
   sealed trait ANGLE_instanced_arrays extends js.Object
@@ -31,7 +31,7 @@ object stdLibStrings {
   sealed trait AudioProcessingEvent extends js.Object
   
   @js.native
-  sealed trait BT extends js.Object
+  sealed trait BT extends MSTransportType
   
   @js.native
   sealed trait BeforeUnloadEvent extends js.Object
@@ -85,10 +85,18 @@ object stdLibStrings {
   sealed trait EXT_texture_filter_anisotropic extends js.Object
   
   @js.native
-  sealed trait Embedded extends js.Object
+  sealed trait Embedded extends MSTransportType
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends CanPlayTypeResult
+       with DirectionSetting
+       with GamepadHand
+       with GamepadMappingType
+       with ReferrerPolicy
+       with RequestDestination
+       with ScrollSetting
+       with XMLHttpRequestResponseType
   
   @js.native
   sealed trait ErrorEvent extends js.Object
@@ -118,7 +126,7 @@ object stdLibStrings {
   sealed trait GamepadEvent extends js.Object
   
   @js.native
-  sealed trait HRTF extends js.Object
+  sealed trait HRTF extends PanningModelType
   
   @js.native
   sealed trait HashChangeEvent extends js.Object
@@ -250,7 +258,7 @@ object stdLibStrings {
   sealed trait MutationEvents extends js.Object
   
   @js.native
-  sealed trait NFC extends js.Object
+  sealed trait NFC extends MSTransportType
   
   @js.native
   sealed trait NFD extends js.Object
@@ -421,7 +429,7 @@ object stdLibStrings {
   sealed trait UInt8Array extends js.Object
   
   @js.native
-  sealed trait USB extends js.Object
+  sealed trait USB extends MSTransportType
   
   @js.native
   sealed trait Uint16Array extends js.Object
@@ -475,7 +483,7 @@ object stdLibStrings {
   sealed trait a extends js.Object
   
   @js.native
-  sealed trait `a-rate` extends js.Object
+  sealed trait `a-rate` extends AutomationRate
   
   @js.native
   sealed trait abbr extends js.Object
@@ -484,22 +492,29 @@ object stdLibStrings {
   sealed trait abort extends js.Object
   
   @js.native
-  sealed trait aborted extends js.Object
+  sealed trait aborted extends SpeechRecognitionErrorCode
   
   @js.native
-  sealed trait accumulate extends js.Object
+  sealed trait accumulate
+    extends CompositeOperation
+       with CompositeOperationOrAuto
+       with IterationCompositeOperation
   
   @js.native
-  sealed trait activated extends js.Object
+  sealed trait activated extends ServiceWorkerState
   
   @js.native
-  sealed trait activating extends js.Object
+  sealed trait activating extends ServiceWorkerState
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends ListeningState
+       with RTCIceTcpCandidateType
   
   @js.native
-  sealed trait add extends js.Object
+  sealed trait add
+    extends CompositeOperation
+       with CompositeOperationOrAuto
   
   @js.native
   sealed trait address extends js.Object
@@ -508,31 +523,35 @@ object stdLibStrings {
   sealed trait addtrack extends js.Object
   
   @js.native
-  sealed trait afterbegin extends js.Object
+  sealed trait afterbegin extends InsertPosition
   
   @js.native
-  sealed trait afterend extends js.Object
+  sealed trait afterend extends InsertPosition
   
   @js.native
   sealed trait afterprint extends js.Object
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends ClientTypes
+       with RTCIceGatherPolicy
+       with RTCIceTransportPolicy
+       with ServiceWorkerUpdateViaCache
   
   @js.native
-  sealed trait allow extends js.Object
+  sealed trait allow extends MSWebViewPermissionState
   
   @js.native
-  sealed trait allpass extends js.Object
+  sealed trait allpass extends BiquadFilterType
   
   @js.native
-  sealed trait alphabetic extends js.Object
+  sealed trait alphabetic extends CanvasTextBaseline
   
   @js.native
-  sealed trait alternate extends js.Object
+  sealed trait alternate extends PlaybackDirection
   
   @js.native
-  sealed trait `alternate-reverse` extends js.Object
+  sealed trait `alternate-reverse` extends PlaybackDirection
   
   @js.native
   sealed trait animationcancel extends js.Object
@@ -547,28 +566,30 @@ object stdLibStrings {
   sealed trait animationstart extends js.Object
   
   @js.native
-  sealed trait answer extends js.Object
+  sealed trait answer extends RTCSdpType
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any extends OrientationLockType
   
   @js.native
   sealed trait applet extends js.Object
   
   @js.native
-  sealed trait application extends js.Object
+  sealed trait application extends DisplayCaptureSurfaceType
   
   @js.native
-  sealed trait `application/xhtml+xml` extends js.Object
+  sealed trait `application/xhtml+xml` extends SupportedType
   
   @js.native
-  sealed trait `application/xml` extends js.Object
+  sealed trait `application/xml` extends SupportedType
   
   @js.native
   sealed trait area extends js.Object
   
   @js.native
-  sealed trait arraybuffer extends js.Object
+  sealed trait arraybuffer
+    extends BinaryType
+       with XMLHttpRequestResponseType
   
   @js.native
   sealed trait article extends js.Object
@@ -580,28 +601,28 @@ object stdLibStrings {
   sealed trait async extends js.Object
   
   @js.native
-  sealed trait attributes extends js.Object
+  sealed trait attributes extends MutationRecordType
   
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait audio extends RequestDestination
   
   @js.native
-  sealed trait `audio-busy` extends js.Object
+  sealed trait `audio-busy` extends SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait `audio-capture` extends js.Object
+  sealed trait `audio-capture` extends SpeechRecognitionErrorCode
   
   @js.native
-  sealed trait `audio-hardware` extends js.Object
+  sealed trait `audio-hardware` extends SpeechSynthesisErrorCode
   
   @js.native
   sealed trait audioend extends js.Object
   
   @js.native
-  sealed trait audioinput extends js.Object
+  sealed trait audioinput extends MediaDeviceKind
   
   @js.native
-  sealed trait audiooutput extends js.Object
+  sealed trait audiooutput extends MediaDeviceKind
   
   @js.native
   sealed trait audioprocess extends js.Object
@@ -610,13 +631,20 @@ object stdLibStrings {
   sealed trait audiostart extends js.Object
   
   @js.native
-  sealed trait audioworklet extends js.Object
+  sealed trait audioworklet extends RequestDestination
   
   @js.native
-  sealed trait auth extends js.Object
+  sealed trait auth extends PushEncryptionKeyName
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends CompositeOperationOrAuto
+       with FillMode
+       with NotificationDirection
+       with PositionAlignSetting
+       with RTCDtlsRole
+       with ScrollBehavior
+       with ScrollRestoration
   
   @js.native
   sealed trait auxclick extends js.Object
@@ -625,22 +653,25 @@ object stdLibStrings {
   sealed trait b extends js.Object
   
   @js.native
-  sealed trait back_forward extends js.Object
+  sealed trait back_forward extends NavigationType
   
   @js.native
   sealed trait backward extends js.Object
   
   @js.native
-  sealed trait backwards extends js.Object
+  sealed trait backwards extends FillMode
   
   @js.native
-  sealed trait `bad-grammar` extends js.Object
+  sealed trait `bad-grammar` extends SpeechRecognitionErrorCode
   
   @js.native
-  sealed trait balanced extends js.Object
+  sealed trait balanced
+    extends AudioContextLatencyCategory
+       with RTCBundlePolicy
+       with RTCDegradationPreference
   
   @js.native
-  sealed trait bandpass extends js.Object
+  sealed trait bandpass extends BiquadFilterType
   
   @js.native
   sealed trait base extends js.Object
@@ -649,16 +680,16 @@ object stdLibStrings {
   sealed trait basefont extends js.Object
   
   @js.native
-  sealed trait basic extends js.Object
+  sealed trait basic extends ResponseType
   
   @js.native
   sealed trait bdo extends js.Object
   
   @js.native
-  sealed trait beforebegin extends js.Object
+  sealed trait beforebegin extends InsertPosition
   
   @js.native
-  sealed trait beforeend extends js.Object
+  sealed trait beforeend extends InsertPosition
   
   @js.native
   sealed trait beforeprint extends js.Object
@@ -670,13 +701,15 @@ object stdLibStrings {
   sealed trait `best fit` extends js.Object
   
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait bevel extends CanvasLineJoin
   
   @js.native
-  sealed trait ble extends js.Object
+  sealed trait ble extends Transport
   
   @js.native
-  sealed trait blob extends js.Object
+  sealed trait blob
+    extends BinaryType
+       with XMLHttpRequestResponseType
   
   @js.native
   sealed trait blocked extends js.Object
@@ -691,10 +724,10 @@ object stdLibStrings {
   sealed trait body extends js.Object
   
   @js.native
-  sealed trait both extends js.Object
+  sealed trait both extends FillMode
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom extends CanvasTextBaseline
   
   @js.native
   sealed trait bounce extends js.Object
@@ -706,13 +739,13 @@ object stdLibStrings {
   sealed trait br extends js.Object
   
   @js.native
-  sealed trait browser extends js.Object
+  sealed trait browser extends DisplayCaptureSurfaceType
   
   @js.native
   sealed trait bufferedamountlow extends js.Object
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait butt extends CanvasLineCap
   
   @js.native
   sealed trait button extends js.Object
@@ -730,13 +763,13 @@ object stdLibStrings {
   sealed trait cancel extends js.Object
   
   @js.native
-  sealed trait canceled extends js.Object
+  sealed trait canceled extends SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait cancelled extends js.Object
+  sealed trait cancelled extends RTCStatsIceCandidatePairState
   
   @js.native
-  sealed trait candidatepair extends js.Object
+  sealed trait candidatepair extends RTCStatsType
   
   @js.native
   sealed trait canplay extends js.Object
@@ -751,28 +784,35 @@ object stdLibStrings {
   sealed trait caption extends js.Object
   
   @js.native
-  sealed trait captions extends js.Object
+  sealed trait captions extends TextTrackKind
   
   @js.native
   sealed trait cardinal extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends AlignSetting
+       with CanvasTextAlign
+       with LineAlignSetting
+       with PositionAlignSetting
+       with ScrollLogicalPosition
   
   @js.native
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait chapters extends js.Object
+  sealed trait chapters extends TextTrackKind
   
   @js.native
-  sealed trait characterData extends js.Object
+  sealed trait characterData extends MutationRecordType
   
   @js.native
-  sealed trait checking extends js.Object
+  sealed trait checking
+    extends RTCIceConnectionState
+       with RTCIceTransportState
   
   @js.native
-  sealed trait childList extends js.Object
+  sealed trait childList extends MutationRecordType
   
   @js.native
   sealed trait circle extends js.Object
@@ -781,16 +821,16 @@ object stdLibStrings {
   sealed trait cite extends js.Object
   
   @js.native
-  sealed trait `clamped-max` extends js.Object
+  sealed trait `clamped-max` extends ChannelCountMode
   
   @js.native
-  sealed trait classic extends js.Object
+  sealed trait classic extends WorkerType
   
   @js.native
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait client extends js.Object
+  sealed trait client extends RTCDtlsRole
   
   @js.native
   sealed trait clipPath extends js.Object
@@ -799,10 +839,20 @@ object stdLibStrings {
   sealed trait close extends js.Object
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait closed
+    extends AudioContextState
+       with RTCDataChannelState
+       with RTCDtlsTransportState
+       with RTCIceConnectionState
+       with RTCIceTransportState
+       with RTCPeerConnectionState
+       with RTCSctpTransportState
+       with RTCSignalingState
+       with ReadyState
+       with ShadowRootMode
   
   @js.native
-  sealed trait closing extends js.Object
+  sealed trait closing extends RTCDataChannelState
   
   @js.native
   sealed trait code extends js.Object
@@ -817,19 +867,33 @@ object stdLibStrings {
   sealed trait compassneedscalibration extends js.Object
   
   @js.native
-  sealed trait complete extends js.Object
+  sealed trait complete
+    extends DocumentReadyState
+       with RTCIceGathererState
+       with RTCIceGatheringState
   
   @js.native
-  sealed trait completed extends js.Object
+  sealed trait completed
+    extends RTCIceConnectionState
+       with RTCIceTransportState
   
   @js.native
   sealed trait componentTransferFunction extends js.Object
   
   @js.native
-  sealed trait connected extends js.Object
+  sealed trait connected
+    extends RTCDtlsTransportState
+       with RTCIceConnectionState
+       with RTCIceTransportState
+       with RTCPeerConnectionState
+       with RTCSctpTransportState
   
   @js.native
-  sealed trait connecting extends js.Object
+  sealed trait connecting
+    extends RTCDataChannelState
+       with RTCDtlsTransportState
+       with RTCPeerConnectionState
+       with RTCSctpTransportState
   
   @js.native
   sealed trait connectionstatechange extends js.Object
@@ -838,31 +902,34 @@ object stdLibStrings {
   sealed trait contextmenu extends js.Object
   
   @js.native
-  sealed trait controlled extends js.Object
+  sealed trait controlled extends RTCIceRole
   
   @js.native
   sealed trait controllerchange extends js.Object
   
   @js.native
-  sealed trait controlling extends js.Object
+  sealed trait controlling extends RTCIceRole
   
   @js.native
   sealed trait copy extends js.Object
   
   @js.native
-  sealed trait cors extends js.Object
+  sealed trait cors
+    extends RequestMode
+       with ResponseType
   
   @js.native
   sealed trait cuechange extends js.Object
   
   @js.native
-  sealed trait currency extends js.Object
+  sealed trait currency
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
   sealed trait cursor extends js.Object
   
   @js.native
-  sealed trait custom extends js.Object
+  sealed trait custom extends OscillatorType
   
   @js.native
   sealed trait cut extends js.Object
@@ -871,19 +938,21 @@ object stdLibStrings {
   sealed trait data extends js.Object
   
   @js.native
-  sealed trait `data-channel-failure` extends js.Object
+  sealed trait `data-channel-failure` extends RTCErrorDetailType
   
   @js.native
-  sealed trait datachannel extends js.Object
+  sealed trait datachannel extends RTCStatsType
   
   @js.native
   sealed trait datalist extends js.Object
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @js.native
-  sealed trait dayPeriod extends js.Object
+  sealed trait dayPeriod
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @js.native
   sealed trait dblclick extends js.Object
@@ -892,19 +961,24 @@ object stdLibStrings {
   sealed trait dd extends js.Object
   
   @js.native
-  sealed trait decimal extends js.Object
+  sealed trait decimal
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
-  sealed trait decode extends js.Object
+  sealed trait decode extends EndOfStreamError
   
   @js.native
-  sealed trait decrypt extends js.Object
+  sealed trait decrypt extends KeyUsage
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends NotificationPermission
+       with RequestCache
+       with ResponseType
+       with WebGLPowerPreference
   
   @js.native
-  sealed trait defer extends js.Object
+  sealed trait defer extends MSWebViewPermissionState
   
   @js.native
   sealed trait defs extends js.Object
@@ -913,25 +987,27 @@ object stdLibStrings {
   sealed trait del extends js.Object
   
   @js.native
-  sealed trait delivery extends js.Object
+  sealed trait delivery extends PaymentShippingType
   
   @js.native
-  sealed trait denied extends js.Object
+  sealed trait denied
+    extends NotificationPermission
+       with PushPermissionState
   
   @js.native
-  sealed trait deny extends js.Object
+  sealed trait deny extends MSWebViewPermissionState
   
   @js.native
-  sealed trait deriveBits extends js.Object
+  sealed trait deriveBits extends KeyUsage
   
   @js.native
-  sealed trait deriveKey extends js.Object
+  sealed trait deriveKey extends KeyUsage
   
   @js.native
   sealed trait desc extends js.Object
   
   @js.native
-  sealed trait descriptions extends js.Object
+  sealed trait descriptions extends TextTrackKind
   
   @js.native
   sealed trait details extends js.Object
@@ -958,19 +1034,24 @@ object stdLibStrings {
   sealed trait dir extends js.Object
   
   @js.native
-  sealed trait direct extends js.Object
+  sealed trait direct extends TouchType
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait disabled
+    extends RTCDtxStatus
+       with TextTrackMode
   
   @js.native
-  sealed trait disambiguation extends js.Object
+  sealed trait disambiguation extends ListeningState
   
   @js.native
-  sealed trait disconnected extends js.Object
+  sealed trait disconnected
+    extends RTCIceConnectionState
+       with RTCIceTransportState
+       with RTCPeerConnectionState
   
   @js.native
-  sealed trait discrete extends js.Object
+  sealed trait discrete extends ChannelInterpretation
   
   @js.native
   sealed trait div extends js.Object
@@ -979,13 +1060,15 @@ object stdLibStrings {
   sealed trait dl extends js.Object
   
   @js.native
-  sealed trait document extends js.Object
+  sealed trait document
+    extends RequestDestination
+       with XMLHttpRequestResponseType
   
   @js.native
-  sealed trait done extends js.Object
+  sealed trait done extends IDBRequestReadyState
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down extends NavigationReason
   
   @js.native
   sealed trait downloading extends js.Object
@@ -1018,7 +1101,7 @@ object stdLibStrings {
   sealed trait dt extends js.Object
   
   @js.native
-  sealed trait `dtls-failure` extends js.Object
+  sealed trait `dtls-failure` extends RTCErrorDetailType
   
   @js.native
   sealed trait durationchange extends js.Object
@@ -1030,43 +1113,53 @@ object stdLibStrings {
   sealed trait em extends js.Object
   
   @js.native
-  sealed trait embed extends js.Object
+  sealed trait embed extends RequestDestination
   
   @js.native
   sealed trait emptied extends js.Object
   
   @js.native
-  sealed trait enabled extends js.Object
+  sealed trait enabled extends RTCDtxStatus
   
   @js.native
-  sealed trait encrypt extends js.Object
+  sealed trait encrypt extends KeyUsage
   
   @js.native
   sealed trait encrypted extends js.Object
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends AlignSetting
+       with CanvasTextAlign
+       with LineAlignSetting
+       with ScrollLogicalPosition
+       with SelectionMode
   
   @js.native
-  sealed trait ended extends js.Object
+  sealed trait ended
+    extends MediaStreamTrackState
+       with ReadyState
   
   @js.native
   sealed trait enter extends js.Object
   
   @js.native
-  sealed trait environment extends js.Object
+  sealed trait environment extends VideoFacingModeEnum
   
   @js.native
-  sealed trait equalpower extends js.Object
+  sealed trait equalpower extends PanningModelType
   
   @js.native
-  sealed trait era extends js.Object
+  sealed trait era
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends RequestRedirect
+       with ResponseType
   
   @js.native
-  sealed trait evenodd extends js.Object
+  sealed trait evenodd extends CanvasFillRule
   
   @js.native
   sealed trait exit extends js.Object
@@ -1075,19 +1168,24 @@ object stdLibStrings {
   sealed trait `experimental-webgl` extends js.Object
   
   @js.native
-  sealed trait expired extends js.Object
+  sealed trait expired extends MediaKeyStatus
   
   @js.native
-  sealed trait explicit extends js.Object
+  sealed trait explicit extends ChannelCountMode
   
   @js.native
-  sealed trait exponential extends js.Object
+  sealed trait exponential extends DistanceModelType
   
   @js.native
-  sealed trait fail extends js.Object
+  sealed trait fail extends PaymentComplete
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends RTCDtlsTransportState
+       with RTCIceConnectionState
+       with RTCIceTransportState
+       with RTCPeerConnectionState
+       with RTCStatsIceCandidatePairState
   
   @js.native
   sealed trait feBlend extends js.Object
@@ -1174,13 +1272,13 @@ object stdLibStrings {
   sealed trait filter extends js.Object
   
   @js.native
-  sealed trait `fingerprint-failure` extends js.Object
+  sealed trait `fingerprint-failure` extends RTCErrorDetailType
   
   @js.native
   sealed trait finish extends js.Object
   
   @js.native
-  sealed trait finished extends js.Object
+  sealed trait finished extends AnimationPlayState
   
   @js.native
   sealed trait flipY extends js.Object
@@ -1189,16 +1287,16 @@ object stdLibStrings {
   sealed trait focus extends js.Object
   
   @js.native
-  sealed trait follow extends js.Object
+  sealed trait follow extends RequestRedirect
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait font extends RequestDestination
   
   @js.native
   sealed trait footer extends js.Object
   
   @js.native
-  sealed trait `force-cache` extends js.Object
+  sealed trait `force-cache` extends RequestCache
   
   @js.native
   sealed trait foreignObject extends js.Object
@@ -1210,10 +1308,11 @@ object stdLibStrings {
   sealed trait forward extends js.Object
   
   @js.native
-  sealed trait forwards extends js.Object
+  sealed trait forwards extends FillMode
   
   @js.native
-  sealed trait fraction extends js.Object
+  sealed trait fraction
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
   sealed trait frame extends js.Object
@@ -1222,7 +1321,7 @@ object stdLibStrings {
   sealed trait frameset extends js.Object
   
   @js.native
-  sealed trait frozen extends js.Object
+  sealed trait frozen extends RTCStatsIceCandidatePairState
   
   @js.native
   sealed trait fullscreenchange extends js.Object
@@ -1234,16 +1333,18 @@ object stdLibStrings {
   sealed trait g extends js.Object
   
   @js.native
-  sealed trait gamepad extends js.Object
+  sealed trait gamepad extends GamepadInputEmulationType
   
   @js.native
-  sealed trait gathering extends js.Object
+  sealed trait gathering
+    extends RTCIceGathererState
+       with RTCIceGatheringState
   
   @js.native
   sealed trait gatheringstatechange extends js.Object
   
   @js.native
-  sealed trait geolocation extends js.Object
+  sealed trait geolocation extends MSWebViewPermissionType
   
   @js.native
   sealed trait gotpointercapture extends js.Object
@@ -1252,10 +1353,13 @@ object stdLibStrings {
   sealed trait gradient extends js.Object
   
   @js.native
-  sealed trait granted extends js.Object
+  sealed trait granted
+    extends NotificationPermission
+       with PushPermissionState
   
   @js.native
-  sealed trait group extends js.Object
+  sealed trait group
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
   sealed trait h1 extends js.Object
@@ -1276,28 +1380,28 @@ object stdLibStrings {
   sealed trait h6 extends js.Object
   
   @js.native
-  sealed trait hanging extends js.Object
+  sealed trait hanging extends CanvasTextBaseline
   
   @js.native
-  sealed trait `hardware-encoder-error` extends js.Object
+  sealed trait `hardware-encoder-error` extends RTCErrorDetailType
   
   @js.native
-  sealed trait `hardware-encoder-not-available` extends js.Object
+  sealed trait `hardware-encoder-not-available` extends RTCErrorDetailType
   
   @js.native
   sealed trait hashchange extends js.Object
   
   @js.native
-  sealed trait `have-local-offer` extends js.Object
+  sealed trait `have-local-offer` extends RTCSignalingState
   
   @js.native
-  sealed trait `have-local-pranswer` extends js.Object
+  sealed trait `have-local-pranswer` extends RTCSignalingState
   
   @js.native
-  sealed trait `have-remote-offer` extends js.Object
+  sealed trait `have-remote-offer` extends RTCSignalingState
   
   @js.native
-  sealed trait `have-remote-pranswer` extends js.Object
+  sealed trait `have-remote-pranswer` extends RTCSignalingState
   
   @js.native
   sealed trait head extends js.Object
@@ -1309,25 +1413,32 @@ object stdLibStrings {
   sealed trait hgroup extends js.Object
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hidden
+    extends TextTrackMode
+       with VisibilityState
   
   @js.native
-  sealed trait high extends js.Object
+  sealed trait high
+    extends ImageSmoothingQuality
+       with RTCPriorityType
   
   @js.native
-  sealed trait `high-performance` extends js.Object
+  sealed trait `high-performance` extends WebGLPowerPreference
   
   @js.native
-  sealed trait highpass extends js.Object
+  sealed trait highpass extends BiquadFilterType
   
   @js.native
-  sealed trait highshelf extends js.Object
+  sealed trait highshelf extends BiquadFilterType
   
   @js.native
-  sealed trait host extends js.Object
+  sealed trait host
+    extends RTCIceCandidateType
+       with RTCStatsIceCandidateType
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait hour
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @js.native
   sealed trait hr extends js.Object
@@ -1357,70 +1468,73 @@ object stdLibStrings {
   sealed trait icegatheringstatechange extends js.Object
   
   @js.native
-  sealed trait ideographic extends js.Object
+  sealed trait ideographic extends CanvasTextBaseline
   
   @js.native
-  sealed trait idle extends js.Object
+  sealed trait idle extends AnimationPlayState
   
   @js.native
-  sealed trait `idp-bad-script-failure` extends js.Object
+  sealed trait `idp-bad-script-failure` extends RTCErrorDetailType
   
   @js.native
-  sealed trait `idp-execution-failure` extends js.Object
+  sealed trait `idp-execution-failure` extends RTCErrorDetailType
   
   @js.native
-  sealed trait `idp-load-failure` extends js.Object
+  sealed trait `idp-load-failure` extends RTCErrorDetailType
   
   @js.native
-  sealed trait `idp-need-login` extends js.Object
+  sealed trait `idp-need-login` extends RTCErrorDetailType
   
   @js.native
-  sealed trait `idp-timeout` extends js.Object
+  sealed trait `idp-timeout` extends RTCErrorDetailType
   
   @js.native
-  sealed trait `idp-tls-failure` extends js.Object
+  sealed trait `idp-tls-failure` extends RTCErrorDetailType
   
   @js.native
-  sealed trait `idp-token-expired` extends js.Object
+  sealed trait `idp-token-expired` extends RTCErrorDetailType
   
   @js.native
-  sealed trait `idp-token-invalid` extends js.Object
+  sealed trait `idp-token-invalid` extends RTCErrorDetailType
   
   @js.native
   sealed trait iframe extends js.Object
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image extends RequestDestination
   
   @js.native
-  sealed trait `image/svg+xml` extends js.Object
+  sealed trait `image/svg+xml` extends SupportedType
   
   @js.native
   sealed trait img extends js.Object
   
   @js.native
-  sealed trait imports extends js.Object
+  sealed trait imports extends ServiceWorkerUpdateViaCache
   
   @js.native
-  sealed trait inactive extends js.Object
+  sealed trait inactive
+    extends ListeningState
+       with RTCRtpTransceiverDirection
   
   @js.native
-  sealed trait inboundrtp extends js.Object
+  sealed trait inboundrtp extends RTCStatsType
   
   @js.native
-  sealed trait include extends js.Object
+  sealed trait include extends RequestCredentials
   
   @js.native
-  sealed trait `individualization-request` extends js.Object
+  sealed trait `individualization-request` extends MediaKeyMessageType
   
   @js.native
-  sealed trait infinity extends js.Object
+  sealed trait infinity
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait inherit extends CanvasDirection
   
   @js.native
-  sealed trait inprogress extends js.Object
+  sealed trait inprogress extends RTCStatsIceCandidatePairState
   
   @js.native
   sealed trait input extends js.Object
@@ -1429,49 +1543,52 @@ object stdLibStrings {
   sealed trait ins extends js.Object
   
   @js.native
-  sealed trait installed extends js.Object
+  sealed trait installed extends ServiceWorkerState
   
   @js.native
-  sealed trait installing extends js.Object
+  sealed trait installing extends ServiceWorkerState
   
   @js.native
-  sealed trait integer extends js.Object
+  sealed trait integer
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
-  sealed trait interactive extends js.Object
+  sealed trait interactive
+    extends AudioContextLatencyCategory
+       with DocumentReadyState
   
   @js.native
-  sealed trait `internal-error` extends js.Object
+  sealed trait `internal-error` extends MediaKeyStatus
   
   @js.native
-  sealed trait interrupted extends js.Object
+  sealed trait interrupted extends SpeechSynthesisErrorCode
   
   @js.native
   sealed trait invalid extends js.Object
   
   @js.native
-  sealed trait `invalid-argument` extends js.Object
+  sealed trait `invalid-argument` extends SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait inverse extends js.Object
+  sealed trait inverse extends DistanceModelType
   
   @js.native
   sealed trait isolationchange extends js.Object
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json extends XMLHttpRequestResponseType
   
   @js.native
-  sealed trait jwk extends js.Object
+  sealed trait jwk extends KeyFormat
   
   @js.native
-  sealed trait `k-rate` extends js.Object
+  sealed trait `k-rate` extends AutomationRate
   
   @js.native
   sealed trait kbd extends js.Object
   
   @js.native
-  sealed trait keyboard extends js.Object
+  sealed trait keyboard extends GamepadInputEmulationType
   
   @js.native
   sealed trait keydown extends js.Object
@@ -1486,25 +1603,34 @@ object stdLibStrings {
   sealed trait label extends js.Object
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape extends OrientationLockType
   
   @js.native
-  sealed trait `landscape-primary` extends js.Object
+  sealed trait `landscape-primary`
+    extends OrientationLockType
+       with OrientationType
   
   @js.native
-  sealed trait `landscape-secondary` extends js.Object
+  sealed trait `landscape-secondary`
+    extends OrientationLockType
+       with OrientationType
   
   @js.native
-  sealed trait `language-not-supported` extends js.Object
+  sealed trait `language-not-supported` extends SpeechRecognitionErrorCode
   
   @js.native
-  sealed trait `language-unavailable` extends js.Object
+  sealed trait `language-unavailable` extends SpeechSynthesisErrorCode
   
   @js.native
   sealed trait languagechange extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends AlignSetting
+       with CanvasTextAlign
+       with GamepadHand
+       with NavigationReason
+       with VideoFacingModeEnum
   
   @js.native
   sealed trait legend extends js.Object
@@ -1513,25 +1639,25 @@ object stdLibStrings {
   sealed trait li extends js.Object
   
   @js.native
-  sealed trait `license-release` extends js.Object
+  sealed trait `license-release` extends MediaKeyMessageType
   
   @js.native
-  sealed trait `license-renewal` extends js.Object
+  sealed trait `license-renewal` extends MediaKeyMessageType
   
   @js.native
-  sealed trait `license-request` extends js.Object
+  sealed trait `license-request` extends MediaKeyMessageType
   
   @js.native
   sealed trait line extends js.Object
   
   @js.native
-  sealed trait `line-left` extends js.Object
+  sealed trait `line-left` extends PositionAlignSetting
   
   @js.native
-  sealed trait `line-right` extends js.Object
+  sealed trait `line-right` extends PositionAlignSetting
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear extends DistanceModelType
   
   @js.native
   sealed trait linearGradient extends js.Object
@@ -1543,10 +1669,12 @@ object stdLibStrings {
   sealed trait listing extends js.Object
   
   @js.native
-  sealed trait literal extends js.Object
+  sealed trait literal
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
+       with stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
-  sealed trait live extends js.Object
+  sealed trait live extends MediaStreamTrackState
   
   @js.native
   sealed trait load extends js.Object
@@ -1561,13 +1689,13 @@ object stdLibStrings {
   sealed trait loadend extends js.Object
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait loading extends DocumentReadyState
   
   @js.native
   sealed trait loadstart extends js.Object
   
   @js.native
-  sealed trait localcandidate extends js.Object
+  sealed trait localcandidate extends RTCStatsType
   
   @js.native
   sealed trait lookup extends js.Object
@@ -1576,34 +1704,40 @@ object stdLibStrings {
   sealed trait lostpointercapture extends js.Object
   
   @js.native
-  sealed trait low extends js.Object
+  sealed trait low
+    extends ImageSmoothingQuality
+       with RTCPriorityType
   
   @js.native
-  sealed trait `low-power` extends js.Object
+  sealed trait `low-power` extends WebGLPowerPreference
   
   @js.native
-  sealed trait lowpass extends js.Object
+  sealed trait lowpass extends BiquadFilterType
   
   @js.native
-  sealed trait lowshelf extends js.Object
+  sealed trait lowshelf extends BiquadFilterType
   
   @js.native
-  sealed trait lr extends js.Object
+  sealed trait lr extends DirectionSetting
   
   @js.native
-  sealed trait ltr extends js.Object
+  sealed trait ltr
+    extends CanvasDirection
+       with NotificationDirection
   
   @js.native
-  sealed trait `maintain-framerate` extends js.Object
+  sealed trait `maintain-framerate` extends RTCDegradationPreference
   
   @js.native
-  sealed trait `maintain-resolution` extends js.Object
+  sealed trait `maintain-resolution` extends RTCDegradationPreference
   
   @js.native
-  sealed trait manifest extends js.Object
+  sealed trait manifest extends RequestDestination
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual
+    extends RequestRedirect
+       with ScrollRestoration
   
   @js.native
   sealed trait map extends js.Object
@@ -1621,22 +1755,24 @@ object stdLibStrings {
   sealed trait mask extends js.Object
   
   @js.native
-  sealed trait max extends js.Object
+  sealed trait max extends ChannelCountMode
   
   @js.native
-  sealed trait `max-bundle` extends js.Object
+  sealed trait `max-bundle` extends RTCBundlePolicy
   
   @js.native
-  sealed trait `max-compat` extends js.Object
+  sealed trait `max-compat` extends RTCBundlePolicy
   
   @js.native
-  sealed trait maybe extends js.Object
+  sealed trait maybe extends CanPlayTypeResult
   
   @js.native
-  sealed trait media extends js.Object
+  sealed trait media extends MSWebViewPermissionType
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait medium
+    extends ImageSmoothingQuality
+       with RTCPriorityType
   
   @js.native
   sealed trait menu extends js.Object
@@ -1651,37 +1787,40 @@ object stdLibStrings {
   sealed trait meta extends js.Object
   
   @js.native
-  sealed trait metadata extends js.Object
+  sealed trait metadata extends TextTrackKind
   
   @js.native
   sealed trait meter extends js.Object
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle extends CanvasTextBaseline
   
   @js.native
-  sealed trait minusSign extends js.Object
+  sealed trait minusSign
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait minute
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait miter extends CanvasLineJoin
   
   @js.native
-  sealed trait module extends js.Object
+  sealed trait module extends WorkerType
   
   @js.native
-  sealed trait monitor extends js.Object
+  sealed trait monitor extends DisplayCaptureSurfaceType
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @js.native
-  sealed trait mounted extends js.Object
+  sealed trait mounted extends VRDisplayEventReason
   
   @js.native
-  sealed trait mouse extends js.Object
+  sealed trait mouse extends GamepadInputEmulationType
   
   @js.native
   sealed trait mousedown extends js.Object
@@ -1714,91 +1853,108 @@ object stdLibStrings {
   sealed trait mute extends js.Object
   
   @js.native
-  sealed trait nan extends js.Object
+  sealed trait nan
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
-  sealed trait native extends js.Object
+  sealed trait native extends EndingType
   
   @js.native
-  sealed trait natural extends js.Object
+  sealed trait natural extends OrientationLockType
   
   @js.native
   sealed trait nav extends js.Object
   
   @js.native
-  sealed trait navigate extends js.Object
+  sealed trait navigate
+    extends NavigationType
+       with RequestMode
   
   @js.native
-  sealed trait navigation extends js.Object
+  sealed trait navigation extends VRDisplayEventReason
   
   @js.native
-  sealed trait nearest extends js.Object
+  sealed trait nearest extends ScrollLogicalPosition
   
   @js.native
-  sealed trait negotiate extends js.Object
+  sealed trait negotiate extends RTCRtcpMuxPolicy
   
   @js.native
   sealed trait negotiationneeded extends js.Object
   
   @js.native
-  sealed trait network extends js.Object
+  sealed trait network
+    extends EndOfStreamError
+       with SpeechRecognitionErrorCode
+       with SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait `new` extends js.Object
+  sealed trait `new`
+    extends RTCDtlsTransportState
+       with RTCIceConnectionState
+       with RTCIceGathererState
+       with RTCIceGatheringState
+       with RTCIceTransportState
+       with RTCPeerConnectionState
   
   @js.native
-  sealed trait next extends js.Object
+  sealed trait next extends IDBCursorDirection
   
   @js.native
-  sealed trait nextunique extends js.Object
+  sealed trait nextunique extends IDBCursorDirection
   
   @js.native
-  sealed trait nfc extends js.Object
+  sealed trait nfc extends Transport
   
   @js.native
-  sealed trait `no-cache` extends js.Object
+  sealed trait `no-cache` extends RequestCache
   
   @js.native
-  sealed trait `no-cors` extends js.Object
+  sealed trait `no-cors` extends RequestMode
   
   @js.native
-  sealed trait `no-referrer` extends js.Object
+  sealed trait `no-referrer` extends ReferrerPolicy
   
   @js.native
-  sealed trait `no-referrer-when-downgrade` extends js.Object
+  sealed trait `no-referrer-when-downgrade` extends ReferrerPolicy
   
   @js.native
-  sealed trait `no-speech` extends js.Object
+  sealed trait `no-speech` extends SpeechRecognitionErrorCode
   
   @js.native
-  sealed trait `no-store` extends js.Object
+  sealed trait `no-store` extends RequestCache
   
   @js.native
-  sealed trait nohost extends js.Object
+  sealed trait nohost extends RTCIceGatherPolicy
   
   @js.native
   sealed trait nomatch extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends FillMode
+       with OverSampleType
+       with ServiceWorkerUpdateViaCache
   
   @js.native
-  sealed trait nonzero extends js.Object
+  sealed trait nonzero extends CanvasFillRule
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal extends PlaybackDirection
   
   @js.native
   sealed trait noscript extends js.Object
   
   @js.native
-  sealed trait `not-allowed` extends js.Object
+  sealed trait `not-allowed`
+    extends MediaKeysRequirement
+       with SpeechRecognitionErrorCode
   
   @js.native
   sealed trait `not-equal` extends js.Object
   
   @js.native
-  sealed trait notch extends js.Object
+  sealed trait notch extends BiquadFilterType
   
   @js.native
   sealed trait noupdate extends js.Object
@@ -1807,16 +1963,16 @@ object stdLibStrings {
   sealed trait number extends js.Object
   
   @js.native
-  sealed trait oauth extends js.Object
+  sealed trait oauth extends RTCIceCredentialType
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object` extends RequestDestination
   
   @js.native
   sealed trait obsolete extends js.Object
   
   @js.native
-  sealed trait offer extends js.Object
+  sealed trait offer extends RTCSdpType
   
   @js.native
   sealed trait offline extends js.Object
@@ -1828,22 +1984,25 @@ object stdLibStrings {
   sealed trait ol extends js.Object
   
   @js.native
-  sealed trait omit extends js.Object
+  sealed trait omit extends RequestCredentials
   
   @js.native
   sealed trait online extends js.Object
   
   @js.native
-  sealed trait `only-if-cached` extends js.Object
+  sealed trait `only-if-cached` extends RequestCache
   
   @js.native
-  sealed trait opaque extends js.Object
+  sealed trait opaque extends ResponseType
   
   @js.native
-  sealed trait opaqueredirect extends js.Object
+  sealed trait opaqueredirect extends ResponseType
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open
+    extends RTCDataChannelState
+       with ReadyState
+       with ShadowRootMode
   
   @js.native
   sealed trait optgroup extends js.Object
@@ -1852,7 +2011,7 @@ object stdLibStrings {
   sealed trait option extends js.Object
   
   @js.native
-  sealed trait optional extends js.Object
+  sealed trait optional extends MediaKeysRequirement
   
   @js.native
   sealed trait ordinal extends js.Object
@@ -1861,22 +2020,22 @@ object stdLibStrings {
   sealed trait orientationchange extends js.Object
   
   @js.native
-  sealed trait `origin-only` extends js.Object
+  sealed trait `origin-only` extends ReferrerPolicy
   
   @js.native
-  sealed trait `origin-when-cross-origin` extends js.Object
+  sealed trait `origin-when-cross-origin` extends ReferrerPolicy
   
   @js.native
-  sealed trait outboundrtp extends js.Object
+  sealed trait outboundrtp extends RTCStatsType
   
   @js.native
   sealed trait output extends js.Object
   
   @js.native
-  sealed trait `output-downscaled` extends js.Object
+  sealed trait `output-downscaled` extends MediaKeyStatus
   
   @js.native
-  sealed trait `output-not-allowed` extends js.Object
+  sealed trait `output-not-allowed` extends MediaKeyStatus
   
   @js.native
   sealed trait overconstrained extends js.Object
@@ -1885,7 +2044,7 @@ object stdLibStrings {
   sealed trait p extends js.Object
   
   @js.native
-  sealed trait p256dh extends js.Object
+  sealed trait p256dh extends PushEncryptionKeyName
   
   @js.native
   sealed trait pagehide extends js.Object
@@ -1894,16 +2053,16 @@ object stdLibStrings {
   sealed trait pageshow extends js.Object
   
   @js.native
-  sealed trait paintworklet extends js.Object
+  sealed trait paintworklet extends RequestDestination
   
   @js.native
   sealed trait param extends js.Object
   
   @js.native
-  sealed trait passive extends js.Object
+  sealed trait passive extends RTCIceTcpCandidateType
   
   @js.native
-  sealed trait password extends js.Object
+  sealed trait password extends RTCIceCredentialType
   
   @js.native
   sealed trait paste extends js.Object
@@ -1918,28 +2077,29 @@ object stdLibStrings {
   sealed trait pause extends js.Object
   
   @js.native
-  sealed trait paused extends js.Object
+  sealed trait paused extends AnimationPlayState
   
   @js.native
-  sealed trait peaking extends js.Object
+  sealed trait peaking extends BiquadFilterType
   
   @js.native
-  sealed trait peerreflexive extends js.Object
+  sealed trait peerreflexive extends RTCStatsIceCandidateType
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending extends IDBRequestReadyState
   
   @js.native
-  sealed trait percentSign extends js.Object
+  sealed trait percentSign
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
-  sealed trait `persistent-license` extends js.Object
+  sealed trait `persistent-license` extends MediaKeySessionType
   
   @js.native
-  sealed trait `persistent-release-message` extends js.Object
+  sealed trait `persistent-release-message` extends MediaKeySessionType
   
   @js.native
-  sealed trait pickup extends js.Object
+  sealed trait pickup extends PaymentShippingType
   
   @js.native
   sealed trait picture extends js.Object
@@ -1948,19 +2108,20 @@ object stdLibStrings {
   sealed trait pixelated extends js.Object
   
   @js.native
-  sealed trait pkcs8 extends js.Object
+  sealed trait pkcs8 extends KeyFormat
   
   @js.native
   sealed trait play extends js.Object
   
   @js.native
-  sealed trait playback extends js.Object
+  sealed trait playback extends AudioContextLatencyCategory
   
   @js.native
   sealed trait playing extends js.Object
   
   @js.native
-  sealed trait plusSign extends js.Object
+  sealed trait plusSign
+    extends stdLib.IntlNs.NumberFormatPartTypes
   
   @js.native
   sealed trait pointercancel extends js.Object
@@ -1975,7 +2136,7 @@ object stdLibStrings {
   sealed trait pointerleave extends js.Object
   
   @js.native
-  sealed trait pointerlock extends js.Object
+  sealed trait pointerlock extends MSWebViewPermissionType
   
   @js.native
   sealed trait pointermove extends js.Object
@@ -1999,16 +2160,20 @@ object stdLibStrings {
   sealed trait popstate extends js.Object
   
   @js.native
-  sealed trait portrait extends js.Object
+  sealed trait portrait extends OrientationLockType
   
   @js.native
-  sealed trait `portrait-primary` extends js.Object
+  sealed trait `portrait-primary`
+    extends OrientationLockType
+       with OrientationType
   
   @js.native
-  sealed trait `portrait-secondary` extends js.Object
+  sealed trait `portrait-secondary`
+    extends OrientationLockType
+       with OrientationType
   
   @js.native
-  sealed trait pranswer extends js.Object
+  sealed trait pranswer extends RTCSdpType
   
   @js.native
   sealed trait pre extends js.Object
@@ -2017,25 +2182,27 @@ object stdLibStrings {
   sealed trait premultiply extends js.Object
   
   @js.native
-  sealed trait prerender extends js.Object
+  sealed trait prerender
+    extends NavigationType
+       with VisibilityState
   
   @js.native
-  sealed trait preserve extends js.Object
+  sealed trait preserve extends SelectionMode
   
   @js.native
-  sealed trait prev extends js.Object
+  sealed trait prev extends IDBCursorDirection
   
   @js.native
-  sealed trait prevunique extends js.Object
+  sealed trait prevunique extends IDBCursorDirection
   
   @js.native
-  sealed trait prflx extends js.Object
+  sealed trait prflx extends RTCIceCandidateType
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait `private` extends KeyType
   
   @js.native
-  sealed trait probably extends js.Object
+  sealed trait probably extends CanPlayTypeResult
   
   @js.native
   sealed trait processorerror extends js.Object
@@ -2044,10 +2211,10 @@ object stdLibStrings {
   sealed trait progress extends js.Object
   
   @js.native
-  sealed trait prompt extends js.Object
+  sealed trait prompt extends PushPermissionState
   
   @js.native
-  sealed trait public extends js.Object
+  sealed trait public extends KeyType
   
   @js.native
   sealed trait q extends js.Object
@@ -2059,13 +2226,13 @@ object stdLibStrings {
   sealed trait ratechange extends js.Object
   
   @js.native
-  sealed trait raw extends js.Object
+  sealed trait raw extends KeyFormat
   
   @js.native
-  sealed trait readonly extends js.Object
+  sealed trait readonly extends IDBTransactionMode
   
   @js.native
-  sealed trait readwrite extends js.Object
+  sealed trait readwrite extends IDBTransactionMode
   
   @js.native
   sealed trait readystatechange extends js.Object
@@ -2074,43 +2241,51 @@ object stdLibStrings {
   sealed trait rect extends js.Object
   
   @js.native
-  sealed trait recvonly extends js.Object
+  sealed trait recvonly extends RTCRtpTransceiverDirection
   
   @js.native
-  sealed trait redundant extends js.Object
+  sealed trait redundant extends ServiceWorkerState
   
   @js.native
   sealed trait rejectionhandled extends js.Object
   
   @js.native
-  sealed trait relay extends js.Object
+  sealed trait relay
+    extends RTCIceCandidateType
+       with RTCIceGatherPolicy
+       with RTCIceTransportPolicy
   
   @js.native
-  sealed trait relayed extends js.Object
+  sealed trait relayed extends RTCStatsIceCandidateType
   
   @js.native
-  sealed trait reload extends js.Object
+  sealed trait reload
+    extends NavigationType
+       with RequestCache
   
   @js.native
-  sealed trait remotecandidate extends js.Object
+  sealed trait remotecandidate extends RTCStatsType
   
   @js.native
   sealed trait removetrack extends js.Object
   
   @js.native
-  sealed trait replace extends js.Object
+  sealed trait replace
+    extends CompositeOperation
+       with CompositeOperationOrAuto
+       with IterationCompositeOperation
   
   @js.native
-  sealed trait report extends js.Object
+  sealed trait report extends RequestDestination
   
   @js.native
-  sealed trait requested extends js.Object
+  sealed trait requested extends VRDisplayEventReason
   
   @js.native
-  sealed trait require extends js.Object
+  sealed trait require extends RTCRtcpMuxPolicy
   
   @js.native
-  sealed trait required extends js.Object
+  sealed trait required extends MediaKeysRequirement
   
   @js.native
   sealed trait reset extends js.Object
@@ -2128,67 +2303,81 @@ object stdLibStrings {
   sealed trait resume extends js.Object
   
   @js.native
-  sealed trait reverse extends js.Object
+  sealed trait reverse extends PlaybackDirection
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends AlignSetting
+       with CanvasTextAlign
+       with GamepadHand
+       with NavigationReason
+       with VideoFacingModeEnum
   
   @js.native
-  sealed trait rl extends js.Object
+  sealed trait rl extends DirectionSetting
   
   @js.native
-  sealed trait rollback extends js.Object
+  sealed trait rollback extends RTCSdpType
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends CanvasLineCap
+       with CanvasLineJoin
   
   @js.native
   sealed trait rt extends js.Object
   
   @js.native
-  sealed trait rtcp extends js.Object
+  sealed trait rtcp extends RTCIceComponent
   
   @js.native
-  sealed trait rtl extends js.Object
+  sealed trait rtl
+    extends CanvasDirection
+       with NotificationDirection
   
   @js.native
-  sealed trait rtp extends js.Object
+  sealed trait rtp extends RTCIceComponent
   
   @js.native
   sealed trait ruby extends js.Object
   
   @js.native
-  sealed trait running extends js.Object
+  sealed trait running
+    extends AnimationPlayState
+       with AudioContextState
   
   @js.native
   sealed trait s extends js.Object
   
   @js.native
-  sealed trait `same-origin` extends js.Object
+  sealed trait `same-origin`
+    extends RequestCredentials
+       with RequestMode
   
   @js.native
   sealed trait samp extends js.Object
   
   @js.native
-  sealed trait sawtooth extends js.Object
+  sealed trait sawtooth extends OscillatorType
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait script extends RequestDestination
   
   @js.native
   sealed trait scroll extends js.Object
   
   @js.native
-  sealed trait `sctp-failure` extends js.Object
+  sealed trait `sctp-failure` extends RTCErrorDetailType
   
   @js.native
-  sealed trait `sdp-syntax-error` extends js.Object
+  sealed trait `sdp-syntax-error` extends RTCErrorDetailType
   
   @js.native
-  sealed trait second extends js.Object
+  sealed trait second
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @js.native
-  sealed trait secret extends js.Object
+  sealed trait secret extends KeyType
   
   @js.native
   sealed trait section extends js.Object
@@ -2203,40 +2392,42 @@ object stdLibStrings {
   sealed trait seeking extends js.Object
   
   @js.native
-  sealed trait segments extends js.Object
+  sealed trait segments extends AppendMode
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait select extends SelectionMode
   
   @js.native
   sealed trait selectedcandidatepairchange extends js.Object
   
   @js.native
-  sealed trait sendonly extends js.Object
+  sealed trait sendonly extends RTCRtpTransceiverDirection
   
   @js.native
-  sealed trait sendrecv extends js.Object
+  sealed trait sendrecv extends RTCRtpTransceiverDirection
   
   @js.native
-  sealed trait sequence extends js.Object
+  sealed trait sequence extends AppendMode
   
   @js.native
-  sealed trait server extends js.Object
+  sealed trait server extends RTCDtlsRole
   
   @js.native
-  sealed trait serverreflexive extends js.Object
+  sealed trait serverreflexive extends RTCStatsIceCandidateType
   
   @js.native
-  sealed trait `service-not-allowed` extends js.Object
+  sealed trait `service-not-allowed` extends SpeechRecognitionErrorCode
   
   @js.native
-  sealed trait session extends js.Object
+  sealed trait session extends RTCStatsType
   
   @js.native
-  sealed trait sharedworker extends js.Object
+  sealed trait sharedworker
+    extends ClientTypes
+       with RequestDestination
   
   @js.native
-  sealed trait shipping extends js.Object
+  sealed trait shipping extends PaymentShippingType
   
   @js.native
   sealed trait shippingaddresschange extends js.Object
@@ -2248,16 +2439,16 @@ object stdLibStrings {
   sealed trait show extends js.Object
   
   @js.native
-  sealed trait showing extends js.Object
+  sealed trait showing extends TextTrackMode
   
   @js.native
-  sealed trait sign extends js.Object
+  sealed trait sign extends KeyUsage
   
   @js.native
   sealed trait signalingstatechange extends js.Object
   
   @js.native
-  sealed trait sine extends js.Object
+  sealed trait sine extends OscillatorType
   
   @js.native
   sealed trait slot extends js.Object
@@ -2266,10 +2457,10 @@ object stdLibStrings {
   sealed trait small extends js.Object
   
   @js.native
-  sealed trait smooth extends js.Object
+  sealed trait smooth extends ScrollBehavior
   
   @js.native
-  sealed trait so extends js.Object
+  sealed trait so extends RTCIceTcpCandidateType
   
   @js.native
   sealed trait soundend extends js.Object
@@ -2284,7 +2475,7 @@ object stdLibStrings {
   sealed trait span extends js.Object
   
   @js.native
-  sealed trait speakers extends js.Object
+  sealed trait speakers extends ChannelInterpretation
   
   @js.native
   sealed trait speechend extends js.Object
@@ -2293,25 +2484,32 @@ object stdLibStrings {
   sealed trait speechstart extends js.Object
   
   @js.native
-  sealed trait spki extends js.Object
+  sealed trait spki extends KeyFormat
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends CanvasLineCap
+       with OscillatorType
   
   @js.native
-  sealed trait srflx extends js.Object
+  sealed trait srflx extends RTCIceCandidateType
   
   @js.native
-  sealed trait stable extends js.Object
+  sealed trait stable extends RTCSignalingState
   
   @js.native
   sealed trait stalled extends js.Object
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard extends GamepadMappingType
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends AlignSetting
+       with CanvasTextAlign
+       with LineAlignSetting
+       with ScrollLogicalPosition
+       with SelectionMode
   
   @js.native
   sealed trait statechange extends js.Object
@@ -2320,7 +2518,7 @@ object stdLibStrings {
   sealed trait statsended extends js.Object
   
   @js.native
-  sealed trait `status-pending` extends js.Object
+  sealed trait `status-pending` extends MediaKeyStatus
   
   @js.native
   sealed trait stop extends js.Object
@@ -2335,10 +2533,10 @@ object stdLibStrings {
   sealed trait strong extends js.Object
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait style extends RequestDestination
   
   @js.native
-  sealed trait stylus extends js.Object
+  sealed trait stylus extends TouchType
   
   @js.native
   sealed trait sub extends js.Object
@@ -2347,13 +2545,13 @@ object stdLibStrings {
   sealed trait submit extends js.Object
   
   @js.native
-  sealed trait subtitles extends js.Object
+  sealed trait subtitles extends TextTrackKind
   
   @js.native
-  sealed trait succeeded extends js.Object
+  sealed trait succeeded extends RTCStatsIceCandidatePairState
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success extends PaymentComplete
   
   @js.native
   sealed trait sup extends js.Object
@@ -2362,7 +2560,7 @@ object stdLibStrings {
   sealed trait suspend extends js.Object
   
   @js.native
-  sealed trait suspended extends js.Object
+  sealed trait suspended extends AudioContextState
   
   @js.native
   sealed trait svg extends js.Object
@@ -2377,10 +2575,10 @@ object stdLibStrings {
   sealed trait sync extends js.Object
   
   @js.native
-  sealed trait `synthesis-failed` extends js.Object
+  sealed trait `synthesis-failed` extends SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait `synthesis-unavailable` extends js.Object
+  sealed trait `synthesis-unavailable` extends SpeechSynthesisErrorCode
   
   @js.native
   sealed trait table extends js.Object
@@ -2389,7 +2587,7 @@ object stdLibStrings {
   sealed trait tbody extends js.Object
   
   @js.native
-  sealed trait tcp extends js.Object
+  sealed trait tcp extends RTCIceProtocol
   
   @js.native
   sealed trait td extends js.Object
@@ -2398,19 +2596,19 @@ object stdLibStrings {
   sealed trait template extends js.Object
   
   @js.native
-  sealed trait temporary extends js.Object
+  sealed trait temporary extends MediaKeySessionType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text extends XMLHttpRequestResponseType
   
   @js.native
-  sealed trait `text-too-long` extends js.Object
+  sealed trait `text-too-long` extends SpeechSynthesisErrorCode
   
   @js.native
-  sealed trait `text/html` extends js.Object
+  sealed trait `text/html` extends SupportedType
   
   @js.native
-  sealed trait `text/xml` extends js.Object
+  sealed trait `text/xml` extends SupportedType
   
   @js.native
   sealed trait textContent extends js.Object
@@ -2437,7 +2635,8 @@ object stdLibStrings {
   sealed trait time extends js.Object
   
   @js.native
-  sealed trait timeZoneName extends js.Object
+  sealed trait timeZoneName
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @js.native
   sealed trait `timed-out` extends js.Object
@@ -2458,7 +2657,7 @@ object stdLibStrings {
   sealed trait tonechange extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top extends CanvasTextBaseline
   
   @js.native
   sealed trait touchcancel extends js.Object
@@ -2476,7 +2675,9 @@ object stdLibStrings {
   sealed trait tr extends js.Object
   
   @js.native
-  sealed trait track extends js.Object
+  sealed trait track
+    extends RTCStatsType
+       with RequestDestination
   
   @js.native
   sealed trait transitioncancel extends js.Object
@@ -2491,13 +2692,13 @@ object stdLibStrings {
   sealed trait transitionstart extends js.Object
   
   @js.native
-  sealed trait transparent extends js.Object
+  sealed trait transparent extends EndingType
   
   @js.native
-  sealed trait transport extends js.Object
+  sealed trait transport extends RTCStatsType
   
   @js.native
-  sealed trait triangle extends js.Object
+  sealed trait triangle extends OscillatorType
   
   @js.native
   sealed trait tspan extends js.Object
@@ -2506,7 +2707,7 @@ object stdLibStrings {
   sealed trait u extends js.Object
   
   @js.native
-  sealed trait udp extends js.Object
+  sealed trait udp extends RTCIceProtocol
   
   @js.native
   sealed trait ul extends js.Object
@@ -2515,28 +2716,32 @@ object stdLibStrings {
   sealed trait unhandledrejection extends js.Object
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends MSWebViewPermissionState
+       with PaymentComplete
   
   @js.native
-  sealed trait unlimitedIndexedDBQuota extends js.Object
+  sealed trait unlimitedIndexedDBQuota extends MSWebViewPermissionType
   
   @js.native
   sealed trait unload extends js.Object
   
   @js.native
-  sealed trait unmounted extends js.Object
+  sealed trait unmounted extends VRDisplayEventReason
   
   @js.native
   sealed trait unmute extends js.Object
   
   @js.native
-  sealed trait `unsafe-url` extends js.Object
+  sealed trait `unsafe-url` extends ReferrerPolicy
   
   @js.native
-  sealed trait unwrapKey extends js.Object
+  sealed trait unwrapKey extends KeyUsage
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends NavigationReason
+       with ScrollSetting
   
   @js.native
   sealed trait updatefound extends js.Object
@@ -2548,37 +2753,37 @@ object stdLibStrings {
   sealed trait upgradeneeded extends js.Object
   
   @js.native
-  sealed trait usable extends js.Object
+  sealed trait usable extends MediaKeyStatus
   
   @js.native
-  sealed trait usb extends js.Object
+  sealed trait usb extends Transport
   
   @js.native
   sealed trait use extends js.Object
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user extends VideoFacingModeEnum
   
   @js.native
   sealed trait `var` extends js.Object
   
   @js.native
-  sealed trait verify extends js.Object
+  sealed trait verify extends KeyUsage
   
   @js.native
-  sealed trait versionchange extends js.Object
+  sealed trait versionchange extends IDBTransactionMode
   
   @js.native
-  sealed trait `very-low` extends js.Object
+  sealed trait `very-low` extends RTCPriorityType
   
   @js.native
   sealed trait vibration extends js.Object
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait video extends RequestDestination
   
   @js.native
-  sealed trait videoinput extends js.Object
+  sealed trait videoinput extends MediaDeviceKind
   
   @js.native
   sealed trait view extends js.Object
@@ -2587,10 +2792,10 @@ object stdLibStrings {
   sealed trait visibilitychange extends js.Object
   
   @js.native
-  sealed trait visible extends js.Object
+  sealed trait visible extends VisibilityState
   
   @js.native
-  sealed trait `voice-unavailable` extends js.Object
+  sealed trait `voice-unavailable` extends SpeechSynthesisErrorCode
   
   @js.native
   sealed trait voiceschanged extends js.Object
@@ -2626,7 +2831,7 @@ object stdLibStrings {
   sealed trait vrdisplaypresentchange extends js.Object
   
   @js.native
-  sealed trait waiting extends js.Object
+  sealed trait waiting extends RTCStatsIceCandidatePairState
   
   @js.native
   sealed trait wbr extends js.Object
@@ -2635,31 +2840,37 @@ object stdLibStrings {
   sealed trait webgl extends js.Object
   
   @js.native
-  sealed trait webnotifications extends js.Object
+  sealed trait webnotifications extends MSWebViewPermissionType
   
   @js.native
-  sealed trait weekday extends js.Object
+  sealed trait weekday
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @js.native
   sealed trait wheel extends js.Object
   
   @js.native
-  sealed trait window extends js.Object
+  sealed trait window
+    extends ClientTypes
+       with DisplayCaptureSurfaceType
   
   @js.native
-  sealed trait worker extends js.Object
+  sealed trait worker
+    extends ClientTypes
+       with RequestDestination
   
   @js.native
-  sealed trait wrapKey extends js.Object
+  sealed trait wrapKey extends KeyUsage
   
   @js.native
   sealed trait xmp extends js.Object
   
   @js.native
-  sealed trait xslt extends js.Object
+  sealed trait xslt extends RequestDestination
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends stdLib.IntlNs.DateTimeFormatPartTypes
   
   @scala.inline
   def `2d`: `2d` = "2d".asInstanceOf[`2d`]

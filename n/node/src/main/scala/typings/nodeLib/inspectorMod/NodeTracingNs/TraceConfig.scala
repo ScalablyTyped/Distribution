@@ -16,3 +16,13 @@ trait TraceConfig extends js.Object {
   var recordMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TraceConfig {
+  @scala.inline
+  def apply(includedCategories: js.Array[java.lang.String], recordMode: java.lang.String = null): TraceConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("includedCategories")(includedCategories)
+    if (recordMode != null) __obj.updateDynamic("recordMode")(recordMode)
+    __obj.asInstanceOf[TraceConfig]
+  }
+}
+

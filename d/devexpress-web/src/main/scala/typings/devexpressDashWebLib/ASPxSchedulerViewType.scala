@@ -46,3 +46,26 @@ trait ASPxSchedulerViewType extends js.Object {
   var WorkWeek: java.lang.String
 }
 
+object ASPxSchedulerViewType {
+  @scala.inline
+  def apply(
+    Agenda: java.lang.String,
+    Day: java.lang.String,
+    FullWeek: java.lang.String,
+    Month: java.lang.String,
+    Timeline: java.lang.String,
+    Week: java.lang.String,
+    WorkWeek: java.lang.String
+  ): ASPxSchedulerViewType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Agenda")(Agenda)
+    __obj.updateDynamic("Day")(Day)
+    __obj.updateDynamic("FullWeek")(FullWeek)
+    __obj.updateDynamic("Month")(Month)
+    __obj.updateDynamic("Timeline")(Timeline)
+    __obj.updateDynamic("Week")(Week)
+    __obj.updateDynamic("WorkWeek")(WorkWeek)
+    __obj.asInstanceOf[ASPxSchedulerViewType]
+  }
+}
+

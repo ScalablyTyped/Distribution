@@ -13,3 +13,12 @@ trait DeserializeOptions extends js.Object {
   var keepWsc: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DeserializeOptions {
+  @scala.inline
+  def apply(keepWsc: js.UndefOr[scala.Boolean] = js.undefined): DeserializeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(keepWsc)) __obj.updateDynamic("keepWsc")(keepWsc)
+    __obj.asInstanceOf[DeserializeOptions]
+  }
+}
+

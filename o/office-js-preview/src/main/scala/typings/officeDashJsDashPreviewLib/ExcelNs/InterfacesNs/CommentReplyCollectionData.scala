@@ -10,3 +10,12 @@ trait CommentReplyCollectionData extends js.Object {
   var items: js.UndefOr[js.Array[CommentReplyData]] = js.undefined
 }
 
+object CommentReplyCollectionData {
+  @scala.inline
+  def apply(items: js.Array[CommentReplyData] = null): CommentReplyCollectionData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[CommentReplyCollectionData]
+  }
+}
+

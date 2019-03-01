@@ -28,3 +28,32 @@ trait Notification extends js.Object {
   var timestampMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Notification {
+  @scala.inline
+  def apply(
+    appRestrictionsSchemaChangeEvent: AppRestrictionsSchemaChangeEvent = null,
+    appUpdateEvent: AppUpdateEvent = null,
+    enterpriseId: java.lang.String = null,
+    installFailureEvent: InstallFailureEvent = null,
+    newDeviceEvent: NewDeviceEvent = null,
+    newPermissionsEvent: NewPermissionsEvent = null,
+    notificationType: java.lang.String = null,
+    productApprovalEvent: ProductApprovalEvent = null,
+    productAvailabilityChangeEvent: ProductAvailabilityChangeEvent = null,
+    timestampMillis: java.lang.String = null
+  ): Notification = {
+    val __obj = js.Dynamic.literal()
+    if (appRestrictionsSchemaChangeEvent != null) __obj.updateDynamic("appRestrictionsSchemaChangeEvent")(appRestrictionsSchemaChangeEvent)
+    if (appUpdateEvent != null) __obj.updateDynamic("appUpdateEvent")(appUpdateEvent)
+    if (enterpriseId != null) __obj.updateDynamic("enterpriseId")(enterpriseId)
+    if (installFailureEvent != null) __obj.updateDynamic("installFailureEvent")(installFailureEvent)
+    if (newDeviceEvent != null) __obj.updateDynamic("newDeviceEvent")(newDeviceEvent)
+    if (newPermissionsEvent != null) __obj.updateDynamic("newPermissionsEvent")(newPermissionsEvent)
+    if (notificationType != null) __obj.updateDynamic("notificationType")(notificationType)
+    if (productApprovalEvent != null) __obj.updateDynamic("productApprovalEvent")(productApprovalEvent)
+    if (productAvailabilityChangeEvent != null) __obj.updateDynamic("productAvailabilityChangeEvent")(productAvailabilityChangeEvent)
+    if (timestampMillis != null) __obj.updateDynamic("timestampMillis")(timestampMillis)
+    __obj.asInstanceOf[Notification]
+  }
+}
+

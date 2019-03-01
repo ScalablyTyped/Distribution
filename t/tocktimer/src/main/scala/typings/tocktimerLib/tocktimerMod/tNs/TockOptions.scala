@@ -24,3 +24,20 @@ trait TockOptions extends js.Object {
   def complete(): scala.Unit
 }
 
+object TockOptions {
+  @scala.inline
+  def apply(
+    callback: js.Function0[scala.Unit],
+    complete: js.Function0[scala.Unit],
+    countdown: js.UndefOr[scala.Boolean] = js.undefined,
+    interval: scala.Int | scala.Double = null
+  ): TockOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("complete")(complete)
+    if (!js.isUndefined(countdown)) __obj.updateDynamic("countdown")(countdown)
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TockOptions]
+  }
+}
+

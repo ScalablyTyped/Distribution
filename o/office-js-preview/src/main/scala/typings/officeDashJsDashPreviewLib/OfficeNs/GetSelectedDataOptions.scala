@@ -24,3 +24,18 @@ trait GetSelectedDataOptions extends js.Object {
   var valueFormat: js.UndefOr[ValueFormat | java.lang.String] = js.undefined
 }
 
+object GetSelectedDataOptions {
+  @scala.inline
+  def apply(
+    asyncContext: js.Any = null,
+    filterType: FilterType | java.lang.String = null,
+    valueFormat: ValueFormat | java.lang.String = null
+  ): GetSelectedDataOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (valueFormat != null) __obj.updateDynamic("valueFormat")(valueFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetSelectedDataOptions]
+  }
+}
+

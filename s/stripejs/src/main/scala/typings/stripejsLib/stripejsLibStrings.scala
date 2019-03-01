@@ -37,22 +37,27 @@ object stripejsLibStrings {
   sealed trait account extends js.Object
   
   @js.native
-  sealed trait ach_credit_transfer extends js.Object
+  sealed trait ach_credit_transfer
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
-  sealed trait ach_debit extends js.Object
+  sealed trait ach_debit
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
-  sealed trait alipay extends js.Object
+  sealed trait alipay
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
   sealed trait android_pay extends js.Object
   
   @js.native
-  sealed trait api_connection_error extends js.Object
+  sealed trait api_connection_error
+    extends stripejsLib.stripejsMod.errorType
   
   @js.native
-  sealed trait api_error extends js.Object
+  sealed trait api_error
+    extends stripejsLib.stripejsMod.errorType
   
   @js.native
   sealed trait apple_pay extends js.Object
@@ -61,13 +66,15 @@ object stripejsLibStrings {
   sealed trait attempts_remaining extends js.Object
   
   @js.native
-  sealed trait authentication_error extends js.Object
+  sealed trait authentication_error
+    extends stripejsLib.stripejsMod.errorType
   
   @js.native
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait bancontact extends js.Object
+  sealed trait bancontact
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
   sealed trait bank_account extends js.Object
@@ -91,22 +98,29 @@ object stripejsLibStrings {
   sealed trait canceled extends js.Object
   
   @js.native
-  sealed trait card extends js.Object
+  sealed trait card
+    extends stripejsLib.elementMod.ElementType
+       with stripejsLib.sourceMod.paymentOptions
   
   @js.native
-  sealed trait cardCvc extends js.Object
+  sealed trait cardCvc
+    extends stripejsLib.elementMod.ElementType
   
   @js.native
-  sealed trait cardExpiry extends js.Object
+  sealed trait cardExpiry
+    extends stripejsLib.elementMod.ElementType
   
   @js.native
-  sealed trait cardNumber extends js.Object
+  sealed trait cardNumber
+    extends stripejsLib.elementMod.ElementType
   
   @js.native
-  sealed trait card_error extends js.Object
+  sealed trait card_error
+    extends stripejsLib.stripejsMod.errorType
   
   @js.native
-  sealed trait card_present extends js.Object
+  sealed trait card_present
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
   sealed trait change extends js.Object
@@ -157,7 +171,8 @@ object stripejsLibStrings {
   sealed trait en extends js.Object
   
   @js.native
-  sealed trait eps extends js.Object
+  sealed trait eps
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
   sealed trait errored extends js.Object
@@ -166,7 +181,9 @@ object stripejsLibStrings {
   sealed trait es extends js.Object
   
   @js.native
-  sealed trait fail extends js.Object
+  sealed trait fail
+    extends stripejsLib.customerMod.checkStatus
+       with stripejsLib.paymentMod.completeStatus
   
   @js.native
   sealed trait failed extends js.Object
@@ -181,13 +198,16 @@ object stripejsLibStrings {
   sealed trait fr extends js.Object
   
   @js.native
-  sealed trait giropay extends js.Object
+  sealed trait giropay
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
-  sealed trait ideal extends js.Object
+  sealed trait ideal
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
-  sealed trait idempotency_error extends js.Object
+  sealed trait idempotency_error
+    extends stripejsLib.stripejsMod.errorType
   
   @js.native
   sealed trait individual extends js.Object
@@ -202,19 +222,24 @@ object stripejsLibStrings {
   sealed trait instant extends js.Object
   
   @js.native
-  sealed trait invalid_payer_email extends js.Object
+  sealed trait invalid_payer_email
+    extends stripejsLib.paymentMod.completeStatus
   
   @js.native
-  sealed trait invalid_payer_name extends js.Object
+  sealed trait invalid_payer_name
+    extends stripejsLib.paymentMod.completeStatus
   
   @js.native
-  sealed trait invalid_payer_phone extends js.Object
+  sealed trait invalid_payer_phone
+    extends stripejsLib.paymentMod.completeStatus
   
   @js.native
-  sealed trait invalid_request_error extends js.Object
+  sealed trait invalid_request_error
+    extends stripejsLib.stripejsMod.errorType
   
   @js.native
-  sealed trait invalid_shipping_address extends js.Object
+  sealed trait invalid_shipping_address
+    extends stripejsLib.paymentMod.completeStatus
   
   @js.native
   sealed trait it extends js.Object
@@ -238,7 +263,8 @@ object stripejsLibStrings {
   sealed trait manual extends js.Object
   
   @js.native
-  sealed trait multibanco extends js.Object
+  sealed trait multibanco
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
   sealed trait `new` extends js.Object
@@ -262,16 +288,20 @@ object stripejsLibStrings {
   sealed trait oblique extends js.Object
   
   @js.native
-  sealed trait p24 extends js.Object
+  sealed trait p24
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
-  sealed trait paper_check extends js.Object
+  sealed trait paper_check
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
-  sealed trait pass extends js.Object
+  sealed trait pass
+    extends stripejsLib.customerMod.checkStatus
   
   @js.native
-  sealed trait paymentRequestButton extends js.Object
+  sealed trait paymentRequestButton
+    extends stripejsLib.elementMod.ElementType
   
   @js.native
   sealed trait pending extends js.Object
@@ -280,7 +310,8 @@ object stripejsLibStrings {
   sealed trait pii extends js.Object
   
   @js.native
-  sealed trait postalCode extends js.Object
+  sealed trait postalCode
+    extends stripejsLib.elementMod.ElementType
   
   @js.native
   sealed trait prepaid extends js.Object
@@ -289,7 +320,8 @@ object stripejsLibStrings {
   sealed trait processing_error extends js.Object
   
   @js.native
-  sealed trait rate_limit_error extends js.Object
+  sealed trait rate_limit_error
+    extends stripejsLib.stripejsMod.errorType
   
   @js.native
   sealed trait ready extends js.Object
@@ -310,10 +342,12 @@ object stripejsLibStrings {
   sealed trait revert extends js.Object
   
   @js.native
-  sealed trait sepa_credit_transfer extends js.Object
+  sealed trait sepa_credit_transfer
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
-  sealed trait sepa_debit extends js.Object
+  sealed trait sepa_debit
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
   sealed trait shippingaddresschange extends js.Object
@@ -325,7 +359,8 @@ object stripejsLibStrings {
   sealed trait single_use extends js.Object
   
   @js.native
-  sealed trait sofort extends js.Object
+  sealed trait sofort
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
   sealed trait solid extends js.Object
@@ -340,22 +375,26 @@ object stripejsLibStrings {
   sealed trait succeeded extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends stripejsLib.paymentMod.completeStatus
   
   @js.native
   sealed trait sv extends js.Object
   
   @js.native
-  sealed trait three_d_secure extends js.Object
+  sealed trait three_d_secure
+    extends stripejsLib.sourceMod.paymentOptions
   
   @js.native
   sealed trait token extends js.Object
   
   @js.native
-  sealed trait unavailable extends js.Object
+  sealed trait unavailable
+    extends stripejsLib.customerMod.checkStatus
   
   @js.native
-  sealed trait unchecked extends js.Object
+  sealed trait unchecked
+    extends stripejsLib.customerMod.checkStatus
   
   @js.native
   sealed trait unknown extends js.Object

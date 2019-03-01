@@ -65,3 +65,77 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
 }
 
+object InputBaseProps {
+  @scala.inline
+  def apply(
+    autoComplete: java.lang.String = null,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[InputBaseClassKey]] = null,
+    defaultValue: (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    endAdornment: reactLib.reactMod.ReactNs.ReactNode = null,
+    error: js.UndefOr[scala.Boolean] = js.undefined,
+    fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    inputComponent: reactLib.reactMod.ReactNs.ReactType[InputBaseComponentProps] = null,
+    inputProps: InputBaseComponentProps = null,
+    inputRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    margin: atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.dense | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.none = null,
+    multiline: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    onChange: reactLib.reactMod.ReactNs.ChangeEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement] = null,
+    onFilled: js.Function0[scala.Unit] = null,
+    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement] = null,
+    onKeyUp: reactLib.reactMod.ReactNs.KeyboardEventHandler[reactLib.HTMLTextAreaElement | reactLib.HTMLInputElement] = null,
+    placeholder: java.lang.String = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    renderPrefix: js.Function1[
+      /* state */ atMaterialDashUiCoreLib.Anon_Dense, 
+      reactLib.reactMod.ReactNs.ReactNode
+    ] = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    rows: java.lang.String | scala.Double = null,
+    rowsMax: java.lang.String | scala.Double = null,
+    startAdornment: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    `type`: java.lang.String = null,
+    value: (js.Array[java.lang.String | scala.Double | scala.Boolean | js.Object]) | java.lang.String | scala.Double | scala.Boolean | js.Object = null
+  ): InputBaseProps = {
+    val __obj = js.Dynamic.literal()
+    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (endAdornment != null) __obj.updateDynamic("endAdornment")(endAdornment.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (inputComponent != null) __obj.updateDynamic("inputComponent")(inputComponent.asInstanceOf[js.Any])
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onFilled != null) __obj.updateDynamic("onFilled")(onFilled)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (renderPrefix != null) __obj.updateDynamic("renderPrefix")(renderPrefix)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (rowsMax != null) __obj.updateDynamic("rowsMax")(rowsMax.asInstanceOf[js.Any])
+    if (startAdornment != null) __obj.updateDynamic("startAdornment")(startAdornment.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InputBaseProps]
+  }
+}
+

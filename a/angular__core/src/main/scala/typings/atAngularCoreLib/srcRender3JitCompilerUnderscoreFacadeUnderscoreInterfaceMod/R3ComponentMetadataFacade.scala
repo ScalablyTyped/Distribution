@@ -19,3 +19,63 @@ trait R3ComponentMetadataFacade extends R3DirectiveMetadataFacade {
   var viewQueries: js.Array[R3QueryMetadataFacade]
 }
 
+object R3ComponentMetadataFacade {
+  @scala.inline
+  def apply(
+    directives: js.Array[atAngularCoreLib.Anon_Expression],
+    encapsulation: ViewEncapsulation,
+    host: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    inputs: js.Array[java.lang.String],
+    lifecycle: atAngularCoreLib.Anon_UsesOnChanges,
+    name: java.lang.String,
+    outputs: js.Array[java.lang.String],
+    pipes: stdLib.Map[java.lang.String, _],
+    preserveWhitespaces: scala.Boolean,
+    propMetadata: org.scalablytyped.runtime.StringDictionary[js.Array[_]],
+    queries: js.Array[R3QueryMetadataFacade],
+    styles: js.Array[java.lang.String],
+    template: java.lang.String,
+    `type`: js.Any,
+    typeArgumentCount: scala.Double,
+    typeSourceSpan: scala.Null,
+    usesInheritance: scala.Boolean,
+    viewQueries: js.Array[R3QueryMetadataFacade],
+    animations: js.Array[_] = null,
+    changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined,
+    deps: js.Array[R3DependencyMetadataFacade] = null,
+    exportAs: java.lang.String = null,
+    interpolation: js.Tuple2[java.lang.String, java.lang.String] = null,
+    providers: js.Array[Provider] = null,
+    selector: java.lang.String = null,
+    viewProviders: js.Array[Provider] = null
+  ): R3ComponentMetadataFacade = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("directives")(directives)
+    __obj.updateDynamic("encapsulation")(encapsulation)
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("inputs")(inputs)
+    __obj.updateDynamic("lifecycle")(lifecycle)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("outputs")(outputs)
+    __obj.updateDynamic("pipes")(pipes)
+    __obj.updateDynamic("preserveWhitespaces")(preserveWhitespaces)
+    __obj.updateDynamic("propMetadata")(propMetadata)
+    __obj.updateDynamic("queries")(queries)
+    __obj.updateDynamic("styles")(styles)
+    __obj.updateDynamic("template")(template)
+    __obj.updateDynamic("typeArgumentCount")(typeArgumentCount)
+    __obj.updateDynamic("typeSourceSpan")(typeSourceSpan)
+    __obj.updateDynamic("usesInheritance")(usesInheritance)
+    __obj.updateDynamic("viewQueries")(viewQueries)
+    if (animations != null) __obj.updateDynamic("animations")(animations)
+    if (!js.isUndefined(changeDetection)) __obj.updateDynamic("changeDetection")(changeDetection)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (exportAs != null) __obj.updateDynamic("exportAs")(exportAs)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (viewProviders != null) __obj.updateDynamic("viewProviders")(viewProviders)
+    __obj.asInstanceOf[R3ComponentMetadataFacade]
+  }
+}
+

@@ -13,3 +13,22 @@ trait SwitcherCallBackParam extends js.Object {
   def valueAccessor(): js.Any
 }
 
+object SwitcherCallBackParam {
+  @scala.inline
+  def apply(
+    isInitial: scala.Boolean,
+    newViewModel: js.Any,
+    node: stdLib.Element,
+    oldViewModel: js.Any,
+    valueAccessor: js.Function0[js.Any]
+  ): SwitcherCallBackParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isInitial")(isInitial)
+    __obj.updateDynamic("newViewModel")(newViewModel)
+    __obj.updateDynamic("node")(node)
+    __obj.updateDynamic("oldViewModel")(oldViewModel)
+    __obj.updateDynamic("valueAccessor")(valueAccessor)
+    __obj.asInstanceOf[SwitcherCallBackParam]
+  }
+}
+

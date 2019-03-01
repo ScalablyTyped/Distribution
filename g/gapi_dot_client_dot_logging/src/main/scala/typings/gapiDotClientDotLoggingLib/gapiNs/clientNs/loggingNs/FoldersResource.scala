@@ -11,3 +11,14 @@ trait FoldersResource extends js.Object {
   var sinks: SinksResource
 }
 
+object FoldersResource {
+  @scala.inline
+  def apply(exclusions: ExclusionsResource, logs: LogsResource, sinks: SinksResource): FoldersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exclusions")(exclusions)
+    __obj.updateDynamic("logs")(logs)
+    __obj.updateDynamic("sinks")(sinks)
+    __obj.asInstanceOf[FoldersResource]
+  }
+}
+

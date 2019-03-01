@@ -50,3 +50,26 @@ trait IRison extends js.Object {
   def encode_uri(obj: js.Any): java.lang.String
 }
 
+object IRison {
+  @scala.inline
+  def apply(
+    decode: js.Function1[java.lang.String, js.Any],
+    decode_array: js.Function1[java.lang.String, js.Array[js.Any]],
+    decode_object: js.Function1[java.lang.String, js.Any],
+    encode: js.Function1[js.Any, java.lang.String],
+    encode_array: js.Function1[js.Array[js.Any], java.lang.String],
+    encode_object: js.Function1[js.Any, java.lang.String],
+    encode_uri: js.Function1[js.Any, java.lang.String]
+  ): IRison = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decode")(decode)
+    __obj.updateDynamic("decode_array")(decode_array)
+    __obj.updateDynamic("decode_object")(decode_object)
+    __obj.updateDynamic("encode")(encode)
+    __obj.updateDynamic("encode_array")(encode_array)
+    __obj.updateDynamic("encode_object")(encode_object)
+    __obj.updateDynamic("encode_uri")(encode_uri)
+    __obj.asInstanceOf[IRison]
+  }
+}
+

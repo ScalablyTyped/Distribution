@@ -10,3 +10,16 @@ trait Anon_Results extends js.Object {
   /** This method returns asynchronously. */ var returnValue: winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction
 }
 
+object Anon_Results {
+  @scala.inline
+  def apply(
+    results: winrtDashUwpLib.WindowsNs.FoundationNs.NumericsNs.Vector3,
+    returnValue: winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction
+  ): Anon_Results = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("results")(results)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_Results]
+  }
+}
+

@@ -25,3 +25,34 @@ trait ListrTask extends js.Object {
   def task(ctx: js.Any, task: ListrTaskWrapper): scala.Unit | java.lang.String | js.Promise[_] | nodeLib.streamMod.Readable | listrLib.listrMod.Listr
 }
 
+object ListrTask {
+  @scala.inline
+  def apply(
+    task: js.Function2[
+      js.Any, 
+      ListrTaskWrapper, 
+      scala.Unit | java.lang.String | js.Promise[_] | nodeLib.streamMod.Readable | listrLib.listrMod.Listr
+    ],
+    title: java.lang.String,
+    enabled: js.Function2[
+      /* ctx */ js.Any, 
+      /* task */ ListrTaskWrapper, 
+      scala.Boolean | js.Promise[scala.Boolean]
+    ] = null,
+    output: java.lang.String = null,
+    skip: js.Function2[
+      /* ctx */ js.Any, 
+      /* task */ ListrTaskWrapper, 
+      scala.Boolean | js.Promise[scala.Boolean] | java.lang.String | scala.Unit
+    ] = null
+  ): ListrTask = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("task")(task)
+    __obj.updateDynamic("title")(title)
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (skip != null) __obj.updateDynamic("skip")(skip)
+    __obj.asInstanceOf[ListrTask]
+  }
+}
+

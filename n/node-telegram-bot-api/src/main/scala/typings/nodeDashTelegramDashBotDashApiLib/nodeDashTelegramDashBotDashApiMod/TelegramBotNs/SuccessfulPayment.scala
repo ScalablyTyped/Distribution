@@ -15,3 +15,26 @@ trait SuccessfulPayment extends js.Object {
   var total_amount: scala.Double
 }
 
+object SuccessfulPayment {
+  @scala.inline
+  def apply(
+    currency: java.lang.String,
+    invoice_payload: java.lang.String,
+    provider_payment_charge_id: java.lang.String,
+    telegram_payment_charge_id: java.lang.String,
+    total_amount: scala.Double,
+    order_info: OrderInfo = null,
+    shipping_option_id: java.lang.String = null
+  ): SuccessfulPayment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("invoice_payload")(invoice_payload)
+    __obj.updateDynamic("provider_payment_charge_id")(provider_payment_charge_id)
+    __obj.updateDynamic("telegram_payment_charge_id")(telegram_payment_charge_id)
+    __obj.updateDynamic("total_amount")(total_amount)
+    if (order_info != null) __obj.updateDynamic("order_info")(order_info)
+    if (shipping_option_id != null) __obj.updateDynamic("shipping_option_id")(shipping_option_id)
+    __obj.asInstanceOf[SuccessfulPayment]
+  }
+}
+

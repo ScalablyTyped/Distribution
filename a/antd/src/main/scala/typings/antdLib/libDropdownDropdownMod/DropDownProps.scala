@@ -29,3 +29,48 @@ trait DropDownProps extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DropDownProps {
+  @scala.inline
+  def apply(
+    overlay: reactLib.reactMod.ReactNs.ReactNode | OverlayFunc,
+    align: js.Object = null,
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    forceRender: js.UndefOr[scala.Boolean] = js.undefined,
+    getPopupContainer: js.Function1[/* triggerNode */ reactLib.Element, reactLib.HTMLElement] = null,
+    mouseEnterDelay: scala.Int | scala.Double = null,
+    mouseLeaveDelay: scala.Int | scala.Double = null,
+    onVisibleChange: js.Function1[/* visible */ scala.Boolean, scala.Unit] = null,
+    openClassName: java.lang.String = null,
+    overlayClassName: java.lang.String = null,
+    overlayStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    placement: Placement = null,
+    prefixCls: java.lang.String = null,
+    transitionName: java.lang.String = null,
+    trigger: js.Array[
+      antdLib.antdLibStrings.click | antdLib.antdLibStrings.hover | antdLib.antdLibStrings.contextMenu
+    ] = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): DropDownProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
+    if (getPopupContainer != null) __obj.updateDynamic("getPopupContainer")(getPopupContainer)
+    if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
+    if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
+    if (onVisibleChange != null) __obj.updateDynamic("onVisibleChange")(onVisibleChange)
+    if (openClassName != null) __obj.updateDynamic("openClassName")(openClassName)
+    if (overlayClassName != null) __obj.updateDynamic("overlayClassName")(overlayClassName)
+    if (overlayStyle != null) __obj.updateDynamic("overlayStyle")(overlayStyle)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[DropDownProps]
+  }
+}
+

@@ -14,3 +14,14 @@ trait IdentitytoolkitRelyingpartyEmailLinkSigninRequest extends js.Object {
   var oobCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartyEmailLinkSigninRequest {
+  @scala.inline
+  def apply(email: java.lang.String = null, idToken: java.lang.String = null, oobCode: java.lang.String = null): IdentitytoolkitRelyingpartyEmailLinkSigninRequest = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartyEmailLinkSigninRequest]
+  }
+}
+

@@ -119,3 +119,49 @@ trait Options extends js.Object {
   var sourceMapRoot: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    data: java.lang.String = null,
+    file: java.lang.String = null,
+    functions: org.scalablytyped.runtime.StringDictionary[
+      js.Function1[
+        /* repeated */ sassLib.sassMod.typesNs.SassType, 
+        sassLib.sassMod.typesNs.SassType | scala.Unit
+      ]
+    ] = null,
+    importer: Importer | js.Array[Importer] = null,
+    includePaths: js.Array[java.lang.String] = null,
+    indentType: sassLib.sassLibStrings.space | sassLib.sassLibStrings.tab = null,
+    indentWidth: scala.Int | scala.Double = null,
+    indentedSyntax: js.UndefOr[scala.Boolean] = js.undefined,
+    linefeed: sassLib.sassLibStrings.cr | sassLib.sassLibStrings.crlf | sassLib.sassLibStrings.lf | sassLib.sassLibStrings.lfcr = null,
+    omitSourceMapUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    outFile: java.lang.String = null,
+    outputStyle: sassLib.sassLibStrings.compressed | sassLib.sassLibStrings.expanded = null,
+    sourceMap: scala.Boolean | java.lang.String = null,
+    sourceMapContents: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceMapEmbed: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceMapRoot: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (functions != null) __obj.updateDynamic("functions")(functions)
+    if (importer != null) __obj.updateDynamic("importer")(importer.asInstanceOf[js.Any])
+    if (includePaths != null) __obj.updateDynamic("includePaths")(includePaths)
+    if (indentType != null) __obj.updateDynamic("indentType")(indentType.asInstanceOf[js.Any])
+    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(indentedSyntax)) __obj.updateDynamic("indentedSyntax")(indentedSyntax)
+    if (linefeed != null) __obj.updateDynamic("linefeed")(linefeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(omitSourceMapUrl)) __obj.updateDynamic("omitSourceMapUrl")(omitSourceMapUrl)
+    if (outFile != null) __obj.updateDynamic("outFile")(outFile)
+    if (outputStyle != null) __obj.updateDynamic("outputStyle")(outputStyle.asInstanceOf[js.Any])
+    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap.asInstanceOf[js.Any])
+    if (!js.isUndefined(sourceMapContents)) __obj.updateDynamic("sourceMapContents")(sourceMapContents)
+    if (!js.isUndefined(sourceMapEmbed)) __obj.updateDynamic("sourceMapEmbed")(sourceMapEmbed)
+    if (sourceMapRoot != null) __obj.updateDynamic("sourceMapRoot")(sourceMapRoot)
+    __obj.asInstanceOf[Options]
+  }
+}
+

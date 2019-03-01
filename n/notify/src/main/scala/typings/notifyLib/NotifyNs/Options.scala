@@ -70,3 +70,40 @@ trait Options extends js.Object {
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    arrowShow: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowSize: scala.Int | scala.Double = null,
+    autoHide: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHideDelay: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    clickToHide: js.UndefOr[scala.Boolean] = js.undefined,
+    elementPosition: java.lang.String = null,
+    gap: scala.Int | scala.Double = null,
+    globalPosition: java.lang.String = null,
+    hideAnimation: java.lang.String = null,
+    hideDuration: scala.Int | scala.Double = null,
+    showAnimation: java.lang.String = null,
+    showDuration: scala.Int | scala.Double = null,
+    style: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(arrowShow)) __obj.updateDynamic("arrowShow")(arrowShow)
+    if (arrowSize != null) __obj.updateDynamic("arrowSize")(arrowSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
+    if (autoHideDelay != null) __obj.updateDynamic("autoHideDelay")(autoHideDelay.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(clickToHide)) __obj.updateDynamic("clickToHide")(clickToHide)
+    if (elementPosition != null) __obj.updateDynamic("elementPosition")(elementPosition)
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (globalPosition != null) __obj.updateDynamic("globalPosition")(globalPosition)
+    if (hideAnimation != null) __obj.updateDynamic("hideAnimation")(hideAnimation)
+    if (hideDuration != null) __obj.updateDynamic("hideDuration")(hideDuration.asInstanceOf[js.Any])
+    if (showAnimation != null) __obj.updateDynamic("showAnimation")(showAnimation)
+    if (showDuration != null) __obj.updateDynamic("showDuration")(showDuration.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[Options]
+  }
+}
+

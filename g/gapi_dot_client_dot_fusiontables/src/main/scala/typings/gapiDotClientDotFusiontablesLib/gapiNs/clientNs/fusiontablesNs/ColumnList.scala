@@ -16,3 +16,20 @@ trait ColumnList extends js.Object {
   var totalItems: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ColumnList {
+  @scala.inline
+  def apply(
+    items: js.Array[Column] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    totalItems: scala.Int | scala.Double = null
+  ): ColumnList = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnList]
+  }
+}
+

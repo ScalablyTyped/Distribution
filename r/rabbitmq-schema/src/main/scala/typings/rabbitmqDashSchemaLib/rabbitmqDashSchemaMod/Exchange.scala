@@ -11,3 +11,19 @@ trait Exchange extends Topology {
   var `type`: java.lang.String
 }
 
+object Exchange {
+  @scala.inline
+  def apply(
+    bindings: js.Array[Binding],
+    exchange: java.lang.String,
+    `type`: java.lang.String,
+    options: js.Object = null
+  ): Exchange = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bindings")(bindings)
+    __obj.updateDynamic("exchange")(exchange)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[Exchange]
+  }
+}
+

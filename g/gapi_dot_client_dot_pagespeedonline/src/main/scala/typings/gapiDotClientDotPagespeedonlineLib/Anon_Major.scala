@@ -12,3 +12,13 @@ trait Anon_Major extends js.Object {
   var minor: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Major {
+  @scala.inline
+  def apply(major: scala.Int | scala.Double = null, minor: scala.Int | scala.Double = null): Anon_Major = {
+    val __obj = js.Dynamic.literal()
+    if (major != null) __obj.updateDynamic("major")(major.asInstanceOf[js.Any])
+    if (minor != null) __obj.updateDynamic("minor")(minor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Major]
+  }
+}
+

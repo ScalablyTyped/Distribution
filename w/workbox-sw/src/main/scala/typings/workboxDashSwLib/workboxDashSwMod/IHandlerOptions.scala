@@ -14,3 +14,18 @@ trait IHandlerOptions extends js.Object {
   var url: java.lang.String
 }
 
+object IHandlerOptions {
+  @scala.inline
+  def apply(
+    event: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify FetchEvent */ js.Any,
+    params: stdLib.URLSearchParams,
+    url: java.lang.String
+  ): IHandlerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[IHandlerOptions]
+  }
+}
+

@@ -43,3 +43,38 @@ trait PricingInfo extends js.Object {
   var tax: js.UndefOr[js.Array[TaxInfo]] = js.undefined
 }
 
+object PricingInfo {
+  @scala.inline
+  def apply(
+    baseFareTotal: java.lang.String = null,
+    fare: js.Array[FareInfo] = null,
+    fareCalculation: java.lang.String = null,
+    kind: java.lang.String = null,
+    latestTicketingTime: java.lang.String = null,
+    passengers: PassengerCounts = null,
+    ptc: java.lang.String = null,
+    refundable: js.UndefOr[scala.Boolean] = js.undefined,
+    saleFareTotal: java.lang.String = null,
+    saleTaxTotal: java.lang.String = null,
+    saleTotal: java.lang.String = null,
+    segmentPricing: js.Array[SegmentPricing] = null,
+    tax: js.Array[TaxInfo] = null
+  ): PricingInfo = {
+    val __obj = js.Dynamic.literal()
+    if (baseFareTotal != null) __obj.updateDynamic("baseFareTotal")(baseFareTotal)
+    if (fare != null) __obj.updateDynamic("fare")(fare)
+    if (fareCalculation != null) __obj.updateDynamic("fareCalculation")(fareCalculation)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (latestTicketingTime != null) __obj.updateDynamic("latestTicketingTime")(latestTicketingTime)
+    if (passengers != null) __obj.updateDynamic("passengers")(passengers)
+    if (ptc != null) __obj.updateDynamic("ptc")(ptc)
+    if (!js.isUndefined(refundable)) __obj.updateDynamic("refundable")(refundable)
+    if (saleFareTotal != null) __obj.updateDynamic("saleFareTotal")(saleFareTotal)
+    if (saleTaxTotal != null) __obj.updateDynamic("saleTaxTotal")(saleTaxTotal)
+    if (saleTotal != null) __obj.updateDynamic("saleTotal")(saleTotal)
+    if (segmentPricing != null) __obj.updateDynamic("segmentPricing")(segmentPricing)
+    if (tax != null) __obj.updateDynamic("tax")(tax)
+    __obj.asInstanceOf[PricingInfo]
+  }
+}
+

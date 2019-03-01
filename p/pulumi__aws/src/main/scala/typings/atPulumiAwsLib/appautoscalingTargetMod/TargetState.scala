@@ -33,3 +33,24 @@ trait TargetState extends js.Object {
   val serviceNamespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object TargetState {
+  @scala.inline
+  def apply(
+    maxCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    minCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    resourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    scalableDimension: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    serviceNamespace: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): TargetState = {
+    val __obj = js.Dynamic.literal()
+    if (maxCapacity != null) __obj.updateDynamic("maxCapacity")(maxCapacity.asInstanceOf[js.Any])
+    if (minCapacity != null) __obj.updateDynamic("minCapacity")(minCapacity.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (scalableDimension != null) __obj.updateDynamic("scalableDimension")(scalableDimension.asInstanceOf[js.Any])
+    if (serviceNamespace != null) __obj.updateDynamic("serviceNamespace")(serviceNamespace.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetState]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_Query extends js.Object {
   var res: js.UndefOr[nodeDashVaultLib.nodeDashVaultMod.NodeVaultNs.Option] = js.undefined
 }
 
+object Anon_Query {
+  @scala.inline
+  def apply(
+    query: nodeDashVaultLib.nodeDashVaultMod.NodeVaultNs.Option = null,
+    req: nodeDashVaultLib.nodeDashVaultMod.NodeVaultNs.Option = null,
+    res: nodeDashVaultLib.nodeDashVaultMod.NodeVaultNs.Option = null
+  ): Anon_Query = {
+    val __obj = js.Dynamic.literal()
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (req != null) __obj.updateDynamic("req")(req)
+    if (res != null) __obj.updateDynamic("res")(res)
+    __obj.asInstanceOf[Anon_Query]
+  }
+}
+

@@ -11,3 +11,12 @@ trait SavedFileData extends js.Object {
   var apFilePath: java.lang.String
 }
 
+object SavedFileData {
+  @scala.inline
+  def apply(apFilePath: java.lang.String): SavedFileData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apFilePath")(apFilePath)
+    __obj.asInstanceOf[SavedFileData]
+  }
+}
+

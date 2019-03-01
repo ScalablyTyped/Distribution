@@ -14,3 +14,24 @@ trait ContentRect extends js.Object {
   var scroll: js.UndefOr[Rect] = js.undefined
 }
 
+object ContentRect {
+  @scala.inline
+  def apply(
+    bounds: BoundingRect = null,
+    client: Rect = null,
+    entry: js.Any = null,
+    margin: Margin = null,
+    offset: Rect = null,
+    scroll: Rect = null
+  ): ContentRect = {
+    val __obj = js.Dynamic.literal()
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (entry != null) __obj.updateDynamic("entry")(entry)
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (scroll != null) __obj.updateDynamic("scroll")(scroll)
+    __obj.asInstanceOf[ContentRect]
+  }
+}
+

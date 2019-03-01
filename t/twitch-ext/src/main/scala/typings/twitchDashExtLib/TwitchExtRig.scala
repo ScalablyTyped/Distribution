@@ -20,3 +20,12 @@ trait TwitchExtRig extends js.Object {
   def log(message: java.lang.String): scala.Unit
 }
 
+object TwitchExtRig {
+  @scala.inline
+  def apply(log: js.Function1[java.lang.String, scala.Unit]): TwitchExtRig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("log")(log)
+    __obj.asInstanceOf[TwitchExtRig]
+  }
+}
+

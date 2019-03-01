@@ -12,3 +12,18 @@ trait Anon_Persistent extends js.Object {
   var scripts: js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL]
 }
 
+object Anon_Persistent {
+  @scala.inline
+  def apply(
+    scripts: js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL],
+    persistent: js.UndefOr[
+      firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.PersistentBackgroundProperty
+    ] = js.undefined
+  ): Anon_Persistent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scripts")(scripts)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    __obj.asInstanceOf[Anon_Persistent]
+  }
+}
+

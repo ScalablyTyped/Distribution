@@ -19,3 +19,13 @@ trait ConfigSource extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConfigSource {
+  @scala.inline
+  def apply(files: js.Array[ConfigFile] = null, id: java.lang.String = null): ConfigSource = {
+    val __obj = js.Dynamic.literal()
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[ConfigSource]
+  }
+}
+

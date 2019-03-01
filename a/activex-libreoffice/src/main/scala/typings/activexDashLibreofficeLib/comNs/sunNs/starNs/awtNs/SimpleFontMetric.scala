@@ -41,3 +41,24 @@ trait SimpleFontMetric extends js.Object {
   var Slant: scala.Double
 }
 
+object SimpleFontMetric {
+  @scala.inline
+  def apply(
+    Ascent: scala.Double,
+    Descent: scala.Double,
+    FirstChar: java.lang.String,
+    LastChar: java.lang.String,
+    Leading: scala.Double,
+    Slant: scala.Double
+  ): SimpleFontMetric = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Ascent")(Ascent)
+    __obj.updateDynamic("Descent")(Descent)
+    __obj.updateDynamic("FirstChar")(FirstChar)
+    __obj.updateDynamic("LastChar")(LastChar)
+    __obj.updateDynamic("Leading")(Leading)
+    __obj.updateDynamic("Slant")(Slant)
+    __obj.asInstanceOf[SimpleFontMetric]
+  }
+}
+

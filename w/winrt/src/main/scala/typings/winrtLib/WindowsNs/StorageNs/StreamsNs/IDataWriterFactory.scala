@@ -9,3 +9,12 @@ trait IDataWriterFactory extends js.Object {
   def createDataWriter(outputStream: IOutputStream): DataWriter
 }
 
+object IDataWriterFactory {
+  @scala.inline
+  def apply(createDataWriter: js.Function1[IOutputStream, DataWriter]): IDataWriterFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createDataWriter")(createDataWriter)
+    __obj.asInstanceOf[IDataWriterFactory]
+  }
+}
+

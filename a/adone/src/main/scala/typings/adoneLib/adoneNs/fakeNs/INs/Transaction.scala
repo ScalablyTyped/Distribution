@@ -14,3 +14,23 @@ trait Transaction extends js.Object {
   var `type`: java.lang.String
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    account: java.lang.String,
+    amount: java.lang.String,
+    business: java.lang.String,
+    date: stdLib.Date,
+    name: java.lang.String,
+    `type`: java.lang.String
+  ): Transaction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("account")(account)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("business")(business)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

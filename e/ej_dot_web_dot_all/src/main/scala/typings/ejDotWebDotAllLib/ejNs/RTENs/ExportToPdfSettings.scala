@@ -14,3 +14,13 @@ trait ExportToPdfSettings extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExportToPdfSettings {
+  @scala.inline
+  def apply(fileName: java.lang.String = null, url: java.lang.String = null): ExportToPdfSettings = {
+    val __obj = js.Dynamic.literal()
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ExportToPdfSettings]
+  }
+}
+

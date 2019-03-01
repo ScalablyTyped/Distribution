@@ -49,3 +49,28 @@ trait MiscUtil extends js.Object {
   def toCamel(str: java.lang.String): java.lang.String
 }
 
+object MiscUtil {
+  @scala.inline
+  def apply(
+    contains: js.Function2[js.Array[_], js.Any, scala.Boolean],
+    defineProperty: js.Function4[js.Any, java.lang.String, js.Any, js.Any, js.Any],
+    each: js.Function2[
+      js.Any, 
+      js.Function2[/* item */ js.Any, /* index */ scala.Double, scala.Unit], 
+      scala.Unit
+    ],
+    extend: js.Function1[/* repeated */ js.Any, js.Any],
+    startsWith: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    toCamel: js.Function1[java.lang.String, java.lang.String]
+  ): MiscUtil = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("defineProperty")(defineProperty)
+    __obj.updateDynamic("each")(each)
+    __obj.updateDynamic("extend")(extend)
+    __obj.updateDynamic("startsWith")(startsWith)
+    __obj.updateDynamic("toCamel")(toCamel)
+    __obj.asInstanceOf[MiscUtil]
+  }
+}
+

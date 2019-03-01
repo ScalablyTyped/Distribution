@@ -26,3 +26,18 @@ trait UndoManagerEvent
   var UndoContextDepth: scala.Double
 }
 
+object UndoManagerEvent {
+  @scala.inline
+  def apply(
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    UndoActionTitle: java.lang.String,
+    UndoContextDepth: scala.Double
+  ): UndoManagerEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("UndoActionTitle")(UndoActionTitle)
+    __obj.updateDynamic("UndoContextDepth")(UndoContextDepth)
+    __obj.asInstanceOf[UndoManagerEvent]
+  }
+}
+

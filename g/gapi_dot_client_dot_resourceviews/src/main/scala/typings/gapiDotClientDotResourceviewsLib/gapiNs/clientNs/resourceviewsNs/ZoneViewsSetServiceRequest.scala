@@ -14,3 +14,18 @@ trait ZoneViewsSetServiceRequest extends js.Object {
   var resourceName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ZoneViewsSetServiceRequest {
+  @scala.inline
+  def apply(
+    endpoints: js.Array[ServiceEndpoint] = null,
+    fingerprint: java.lang.String = null,
+    resourceName: java.lang.String = null
+  ): ZoneViewsSetServiceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
+    __obj.asInstanceOf[ZoneViewsSetServiceRequest]
+  }
+}
+

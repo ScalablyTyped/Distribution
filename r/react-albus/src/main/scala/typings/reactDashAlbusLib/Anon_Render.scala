@@ -14,3 +14,17 @@ trait Anon_Render extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Render {
+  @scala.inline
+  def apply(
+    render: js.Function1[
+      /* wizard */ reactDashAlbusLib.reactDashAlbusMod.WizardContext, 
+      reactLib.reactMod.ReactNs.ReactNode
+    ] = null
+  ): Anon_Render = {
+    val __obj = js.Dynamic.literal()
+    if (render != null) __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[Anon_Render]
+  }
+}
+

@@ -30,3 +30,18 @@ trait PageUpdateData extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PageUpdateData {
+  @scala.inline
+  def apply(
+    inkAnalysisOrNull: InkAnalysisUpdateData = null,
+    pageLevel: scala.Int | scala.Double = null,
+    title: java.lang.String = null
+  ): PageUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (inkAnalysisOrNull != null) __obj.updateDynamic("inkAnalysisOrNull")(inkAnalysisOrNull)
+    if (pageLevel != null) __obj.updateDynamic("pageLevel")(pageLevel.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[PageUpdateData]
+  }
+}
+

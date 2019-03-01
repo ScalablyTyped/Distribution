@@ -37,3 +37,33 @@ trait ModelUpdateOptions
   var upsert: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ModelUpdateOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /** other options */
+  /* other */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    multi: js.UndefOr[scala.Boolean] = js.undefined,
+    multipleCastError: js.UndefOr[scala.Boolean] = js.undefined,
+    overwrite: js.UndefOr[scala.Boolean] = js.undefined,
+    runValidators: js.UndefOr[scala.Boolean] = js.undefined,
+    safe: js.UndefOr[scala.Boolean] = js.undefined,
+    session: ClientSession = null,
+    setDefaultsOnInsert: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    upsert: js.UndefOr[scala.Boolean] = js.undefined
+  ): ModelUpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    if (!js.isUndefined(multipleCastError)) __obj.updateDynamic("multipleCastError")(multipleCastError)
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (!js.isUndefined(runValidators)) __obj.updateDynamic("runValidators")(runValidators)
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
+    if (session != null) __obj.updateDynamic("session")(session)
+    if (!js.isUndefined(setDefaultsOnInsert)) __obj.updateDynamic("setDefaultsOnInsert")(setDefaultsOnInsert)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert)
+    __obj.asInstanceOf[ModelUpdateOptions]
+  }
+}
+

@@ -19,3 +19,20 @@ trait EmbedRequest extends js.Object {
   def deny(): scala.Unit
 }
 
+object EmbedRequest {
+  @scala.inline
+  def apply(
+    allow: js.Function1[java.lang.String, scala.Unit],
+    deny: js.Function0[scala.Unit],
+    embedderId: java.lang.String,
+    data: js.Any = null
+  ): EmbedRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allow")(allow)
+    __obj.updateDynamic("deny")(deny)
+    __obj.updateDynamic("embedderId")(embedderId)
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[EmbedRequest]
+  }
+}
+

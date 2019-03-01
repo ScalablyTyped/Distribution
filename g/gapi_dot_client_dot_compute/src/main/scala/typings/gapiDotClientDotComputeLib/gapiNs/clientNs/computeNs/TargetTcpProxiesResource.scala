@@ -28,3 +28,42 @@ trait TargetTcpProxiesResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object TargetTcpProxiesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetTcpProxy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserTargetTcpProxy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetTcpProxy]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetTcpProxyList]
+    ],
+    setBackendService: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetTcpProxy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setProxyHeader: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRequestIdTargetTcpProxy, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): TargetTcpProxiesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("setBackendService")(setBackendService)
+    __obj.updateDynamic("setProxyHeader")(setProxyHeader)
+    __obj.asInstanceOf[TargetTcpProxiesResource]
+  }
+}
+

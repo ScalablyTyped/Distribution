@@ -20,3 +20,18 @@ trait LogDestinationArgs extends js.Object {
   val targetArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object LogDestinationArgs {
+  @scala.inline
+  def apply(
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    targetArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): LogDestinationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("targetArn")(targetArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LogDestinationArgs]
+  }
+}
+

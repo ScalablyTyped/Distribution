@@ -35,3 +35,28 @@ trait ToastOptions extends js.Object {
   var `type`: js.UndefOr[ToastType] = js.undefined
 }
 
+object ToastOptions {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit] = null,
+    closeText: java.lang.String = null,
+    inEffectDuration: scala.Int | scala.Double = null,
+    position: ToastPosition = null,
+    stayTime: scala.Int | scala.Double = null,
+    sticky: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null,
+    `type`: ToastType = null
+  ): ToastOptions = {
+    val __obj = js.Dynamic.literal()
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (closeText != null) __obj.updateDynamic("closeText")(closeText)
+    if (inEffectDuration != null) __obj.updateDynamic("inEffectDuration")(inEffectDuration.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (stayTime != null) __obj.updateDynamic("stayTime")(stayTime.asInstanceOf[js.Any])
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ToastOptions]
+  }
+}
+

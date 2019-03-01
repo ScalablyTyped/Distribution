@@ -18,3 +18,16 @@ trait FlushOptions extends js.Object {
   var isAppCrashing: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FlushOptions {
+  @scala.inline
+  def apply(
+    callback: js.Function1[/* v */ java.lang.String, scala.Unit] = null,
+    isAppCrashing: js.UndefOr[scala.Boolean] = js.undefined
+  ): FlushOptions = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (!js.isUndefined(isAppCrashing)) __obj.updateDynamic("isAppCrashing")(isAppCrashing)
+    __obj.asInstanceOf[FlushOptions]
+  }
+}
+

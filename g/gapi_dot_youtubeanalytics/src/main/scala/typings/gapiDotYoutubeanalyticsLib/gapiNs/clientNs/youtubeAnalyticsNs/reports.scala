@@ -12,3 +12,14 @@ trait reports extends js.Object {
   def query(`object`: gapiDotYoutubeanalyticsLib.Anon_Dimensions): gapiLib.gapiNs.clientNs.HttpRequest[_]
 }
 
+object reports {
+  @scala.inline
+  def apply(
+    query: js.Function1[gapiDotYoutubeanalyticsLib.Anon_Dimensions, gapiLib.gapiNs.clientNs.HttpRequest[_]]
+  ): reports = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[reports]
+  }
+}
+

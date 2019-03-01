@@ -11,3 +11,14 @@ trait TraversalParams extends js.Object {
   var visitor: Visitor
 }
 
+object TraversalParams {
+  @scala.inline
+  def apply(digraph: DirectedGraph, visitor: Visitor, options: TraversalOptions = null): TraversalParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("digraph")(digraph)
+    __obj.updateDynamic("visitor")(visitor)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[TraversalParams]
+  }
+}
+

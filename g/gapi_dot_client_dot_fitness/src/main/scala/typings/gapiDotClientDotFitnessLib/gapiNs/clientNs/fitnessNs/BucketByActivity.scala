@@ -12,3 +12,13 @@ trait BucketByActivity extends js.Object {
   var minDurationMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BucketByActivity {
+  @scala.inline
+  def apply(activityDataSourceId: java.lang.String = null, minDurationMillis: java.lang.String = null): BucketByActivity = {
+    val __obj = js.Dynamic.literal()
+    if (activityDataSourceId != null) __obj.updateDynamic("activityDataSourceId")(activityDataSourceId)
+    if (minDurationMillis != null) __obj.updateDynamic("minDurationMillis")(minDurationMillis)
+    __obj.asInstanceOf[BucketByActivity]
+  }
+}
+

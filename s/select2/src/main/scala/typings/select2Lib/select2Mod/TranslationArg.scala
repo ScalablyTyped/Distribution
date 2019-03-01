@@ -11,3 +11,14 @@ trait TranslationArg extends js.Object {
   var minimum: scala.Double
 }
 
+object TranslationArg {
+  @scala.inline
+  def apply(input: java.lang.String, maximum: scala.Double, minimum: scala.Double): TranslationArg = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    __obj.updateDynamic("maximum")(maximum)
+    __obj.updateDynamic("minimum")(minimum)
+    __obj.asInstanceOf[TranslationArg]
+  }
+}
+

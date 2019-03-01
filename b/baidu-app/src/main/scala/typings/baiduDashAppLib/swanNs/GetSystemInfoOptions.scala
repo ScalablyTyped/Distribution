@@ -12,3 +12,18 @@ trait GetSystemInfoOptions
   def success_MGetSystemInfoOptions(res: SystemInfo): scala.Unit
 }
 
+object GetSystemInfoOptions {
+  @scala.inline
+  def apply(
+    success: js.Function1[SystemInfo, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): GetSystemInfoOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[GetSystemInfoOptions]
+  }
+}
+

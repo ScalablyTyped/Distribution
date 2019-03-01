@@ -18,3 +18,18 @@ trait CigarUnit extends js.Object {
   var referenceSequence: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CigarUnit {
+  @scala.inline
+  def apply(
+    operation: java.lang.String = null,
+    operationLength: java.lang.String = null,
+    referenceSequence: java.lang.String = null
+  ): CigarUnit = {
+    val __obj = js.Dynamic.literal()
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (operationLength != null) __obj.updateDynamic("operationLength")(operationLength)
+    if (referenceSequence != null) __obj.updateDynamic("referenceSequence")(referenceSequence)
+    __obj.asInstanceOf[CigarUnit]
+  }
+}
+

@@ -20,3 +20,24 @@ trait Anon_Cert extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Cert {
+  @scala.inline
+  def apply(
+    cert: java.lang.String = null,
+    host: java.lang.String = null,
+    key: java.lang.String = null,
+    maxConnections: scala.Int | scala.Double = null,
+    port: scala.Int | scala.Double = null,
+    url: java.lang.String = null
+  ): Anon_Cert = {
+    val __obj = js.Dynamic.literal()
+    if (cert != null) __obj.updateDynamic("cert")(cert)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_Cert]
+  }
+}
+

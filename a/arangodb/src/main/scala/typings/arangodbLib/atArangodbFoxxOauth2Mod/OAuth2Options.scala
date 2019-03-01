@@ -14,3 +14,24 @@ trait OAuth2Options extends js.Object {
   var tokenEndpoint: java.lang.String
 }
 
+object OAuth2Options {
+  @scala.inline
+  def apply(
+    authEndpoint: java.lang.String,
+    clientId: java.lang.String,
+    clientSecret: java.lang.String,
+    tokenEndpoint: java.lang.String,
+    activeUserEndpoint: java.lang.String = null,
+    refreshEndpoint: java.lang.String = null
+  ): OAuth2Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authEndpoint")(authEndpoint)
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("clientSecret")(clientSecret)
+    __obj.updateDynamic("tokenEndpoint")(tokenEndpoint)
+    if (activeUserEndpoint != null) __obj.updateDynamic("activeUserEndpoint")(activeUserEndpoint)
+    if (refreshEndpoint != null) __obj.updateDynamic("refreshEndpoint")(refreshEndpoint)
+    __obj.asInstanceOf[OAuth2Options]
+  }
+}
+

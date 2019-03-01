@@ -30,3 +30,20 @@ trait ItemListEvent
   var ItemText: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String]
 }
 
+object ItemListEvent {
+  @scala.inline
+  def apply(
+    ItemImageURL: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
+    ItemPosition: scala.Double,
+    ItemText: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ItemListEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ItemImageURL")(ItemImageURL)
+    __obj.updateDynamic("ItemPosition")(ItemPosition)
+    __obj.updateDynamic("ItemText")(ItemText)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[ItemListEvent]
+  }
+}
+

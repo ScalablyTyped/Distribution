@@ -62,3 +62,26 @@ trait VictoryContainerProps extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VictoryContainerProps {
+  @scala.inline
+  def apply(
+    desc: java.lang.String = null,
+    events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
+    height: scala.Int | scala.Double = null,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    title: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): VictoryContainerProps = {
+    val __obj = js.Dynamic.literal()
+    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryContainerProps]
+  }
+}
+

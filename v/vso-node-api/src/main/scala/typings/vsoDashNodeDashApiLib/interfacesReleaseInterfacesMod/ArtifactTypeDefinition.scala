@@ -12,3 +12,20 @@ trait ArtifactTypeDefinition extends js.Object {
   var uniqueSourceIdentifier: java.lang.String
 }
 
+object ArtifactTypeDefinition {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    inputDescriptors: js.Array[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDescriptor],
+    name: java.lang.String,
+    uniqueSourceIdentifier: java.lang.String
+  ): ArtifactTypeDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("inputDescriptors")(inputDescriptors)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("uniqueSourceIdentifier")(uniqueSourceIdentifier)
+    __obj.asInstanceOf[ArtifactTypeDefinition]
+  }
+}
+

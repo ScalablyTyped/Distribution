@@ -15,3 +15,14 @@ trait FilterFieldValue extends js.Object {
   var StringValue: java.lang.String
 }
 
+object FilterFieldValue {
+  @scala.inline
+  def apply(IsNumeric: scala.Boolean, NumericValue: scala.Double, StringValue: java.lang.String): FilterFieldValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IsNumeric")(IsNumeric)
+    __obj.updateDynamic("NumericValue")(NumericValue)
+    __obj.updateDynamic("StringValue")(StringValue)
+    __obj.asInstanceOf[FilterFieldValue]
+  }
+}
+

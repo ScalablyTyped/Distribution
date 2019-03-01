@@ -26,3 +26,20 @@ trait GeoLocationEllipse extends js.Object {
   var semiMinorAxis: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GeoLocationEllipse {
+  @scala.inline
+  def apply(
+    center: GeoLocationPoint = null,
+    orientation: scala.Int | scala.Double = null,
+    semiMajorAxis: scala.Int | scala.Double = null,
+    semiMinorAxis: scala.Int | scala.Double = null
+  ): GeoLocationEllipse = {
+    val __obj = js.Dynamic.literal()
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (semiMajorAxis != null) __obj.updateDynamic("semiMajorAxis")(semiMajorAxis.asInstanceOf[js.Any])
+    if (semiMinorAxis != null) __obj.updateDynamic("semiMinorAxis")(semiMinorAxis.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeoLocationEllipse]
+  }
+}
+

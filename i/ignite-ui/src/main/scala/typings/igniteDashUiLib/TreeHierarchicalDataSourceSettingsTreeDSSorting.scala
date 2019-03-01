@@ -20,3 +20,21 @@ trait TreeHierarchicalDataSourceSettingsTreeDSSorting
   var toLevel: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TreeHierarchicalDataSourceSettingsTreeDSSorting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for TreeHierarchicalDataSourceSettingsTreeDSSorting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    fromLevel: scala.Int | scala.Double = null,
+    toLevel: scala.Int | scala.Double = null
+  ): TreeHierarchicalDataSourceSettingsTreeDSSorting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (fromLevel != null) __obj.updateDynamic("fromLevel")(fromLevel.asInstanceOf[js.Any])
+    if (toLevel != null) __obj.updateDynamic("toLevel")(toLevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSSorting]
+  }
+}
+

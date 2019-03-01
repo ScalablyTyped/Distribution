@@ -18,3 +18,29 @@ trait ICertificateEnrollmentManagerStatics extends js.Object {
   def installCertificateAsync(certificate: java.lang.String, installOption: InstallOptions): winrtLib.WindowsNs.FoundationNs.IAsyncAction
 }
 
+object ICertificateEnrollmentManagerStatics {
+  @scala.inline
+  def apply(
+    createRequestAsync: js.Function1[
+      CertificateRequestProperties, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]
+    ],
+    importPfxDataAsync: js.Function6[
+      java.lang.String, 
+      java.lang.String, 
+      ExportOption, 
+      KeyProtectionLevel, 
+      InstallOptions, 
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncAction
+    ],
+    installCertificateAsync: js.Function2[java.lang.String, InstallOptions, winrtLib.WindowsNs.FoundationNs.IAsyncAction]
+  ): ICertificateEnrollmentManagerStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createRequestAsync")(createRequestAsync)
+    __obj.updateDynamic("importPfxDataAsync")(importPfxDataAsync)
+    __obj.updateDynamic("installCertificateAsync")(installCertificateAsync)
+    __obj.asInstanceOf[ICertificateEnrollmentManagerStatics]
+  }
+}
+

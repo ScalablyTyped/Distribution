@@ -12,3 +12,20 @@ trait StylesheetOption extends js.Object {
   var spritePath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StylesheetOption {
+  @scala.inline
+  def apply(
+    nameMapping: js.Function0[java.lang.String] = null,
+    pixelRatio: scala.Int | scala.Double = null,
+    prefix: java.lang.String = null,
+    spritePath: java.lang.String = null
+  ): StylesheetOption = {
+    val __obj = js.Dynamic.literal()
+    if (nameMapping != null) __obj.updateDynamic("nameMapping")(nameMapping)
+    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (spritePath != null) __obj.updateDynamic("spritePath")(spritePath)
+    __obj.asInstanceOf[StylesheetOption]
+  }
+}
+

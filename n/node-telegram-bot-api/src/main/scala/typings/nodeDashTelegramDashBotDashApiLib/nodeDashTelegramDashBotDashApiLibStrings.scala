@@ -7,43 +7,54 @@ import scala.scalajs.js.annotation._
 
 object nodeDashTelegramDashBotDashApiLibStrings {
   @js.native
-  sealed trait HTML extends js.Object
+  sealed trait HTML
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ParseMode
   
   @js.native
-  sealed trait Markdown extends js.Object
+  sealed trait Markdown
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ParseMode
   
   @js.native
-  sealed trait administrator extends js.Object
+  sealed trait administrator
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatMemberStatus
   
   @js.native
-  sealed trait animation extends js.Object
+  sealed trait animation
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait `application/pdf` extends js.Object
+  sealed trait `application/pdf`
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.DocumentMimeType
   
   @js.native
-  sealed trait `application/zip` extends js.Object
+  sealed trait `application/zip`
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.DocumentMimeType
   
   @js.native
   sealed trait article extends js.Object
   
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait audio
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait bold
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
-  sealed trait bot_command extends js.Object
+  sealed trait bot_command
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
   sealed trait callback_query extends js.Object
   
   @js.native
-  sealed trait channel extends js.Object
+  sealed trait channel
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatType
   
   @js.native
-  sealed trait channel_chat_created extends js.Object
+  sealed trait channel_chat_created
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
   sealed trait channel_post extends js.Object
@@ -52,19 +63,24 @@ object nodeDashTelegramDashBotDashApiLibStrings {
   sealed trait chosen_inline_result extends js.Object
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait code
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
-  sealed trait contact extends js.Object
+  sealed trait contact
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait creator extends js.Object
+  sealed trait creator
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatMemberStatus
   
   @js.native
-  sealed trait delete_chat_photo extends js.Object
+  sealed trait delete_chat_photo
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait document extends js.Object
+  sealed trait document
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
   sealed trait edited_channel_post extends js.Object
@@ -85,166 +101,211 @@ object nodeDashTelegramDashBotDashApiLibStrings {
   sealed trait edited_message_text extends js.Object
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait find_location extends js.Object
+  sealed trait find_location
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait game extends js.Object
+  sealed trait game
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
   sealed trait gif extends js.Object
   
   @js.native
-  sealed trait group extends js.Object
+  sealed trait group
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatType
   
   @js.native
-  sealed trait group_chat_created extends js.Object
+  sealed trait group_chat_created
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait hashtag extends js.Object
+  sealed trait hashtag
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
   sealed trait inline_query extends js.Object
   
   @js.native
-  sealed trait invoice extends js.Object
+  sealed trait invoice
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait italic extends js.Object
+  sealed trait italic
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
-  sealed trait kicked extends js.Object
+  sealed trait kicked
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatMemberStatus
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatMemberStatus
   
   @js.native
-  sealed trait left_chat_member extends js.Object
+  sealed trait left_chat_member
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait location extends js.Object
+  sealed trait location
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait member extends js.Object
+  sealed trait member
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatMemberStatus
   
   @js.native
-  sealed trait mention extends js.Object
+  sealed trait mention
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
   sealed trait message extends js.Object
   
   @js.native
-  sealed trait migrate_from_chat_id extends js.Object
+  sealed trait migrate_from_chat_id
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait migrate_to_chat_id extends js.Object
+  sealed trait migrate_to_chat_id
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
   sealed trait mpeg4_gif extends js.Object
   
   @js.native
-  sealed trait new_chat_members extends js.Object
+  sealed trait new_chat_members
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait new_chat_photo extends js.Object
+  sealed trait new_chat_photo
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait new_chat_title extends js.Object
+  sealed trait new_chat_title
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait passport_data extends js.Object
+  sealed trait passport_data
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait photo extends js.Object
+  sealed trait photo
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait pinned_message extends js.Object
+  sealed trait pinned_message
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
   sealed trait polling_error extends js.Object
   
   @js.native
-  sealed trait pre extends js.Object
+  sealed trait pre
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
   sealed trait pre_checkout_query extends js.Object
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait `private`
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatType
   
   @js.native
-  sealed trait record_audio extends js.Object
+  sealed trait record_audio
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait record_video extends js.Object
+  sealed trait record_video
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait record_video_note extends js.Object
+  sealed trait record_video_note
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait restricted extends js.Object
+  sealed trait restricted
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatMemberStatus
   
   @js.native
   sealed trait shipping_query extends js.Object
   
   @js.native
-  sealed trait sticker extends js.Object
+  sealed trait sticker
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait successful_payment extends js.Object
+  sealed trait successful_payment
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait supergroup extends js.Object
+  sealed trait supergroup
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatType
   
   @js.native
-  sealed trait supergroup_chat_created extends js.Object
+  sealed trait supergroup_chat_created
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait text_link extends js.Object
+  sealed trait text_link
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
-  sealed trait text_mention extends js.Object
+  sealed trait text_mention
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
-  sealed trait typing extends js.Object
+  sealed trait typing
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait upload_audio extends js.Object
+  sealed trait upload_audio
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait upload_document extends js.Object
+  sealed trait upload_document
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait upload_photo extends js.Object
+  sealed trait upload_photo
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait upload_video extends js.Object
+  sealed trait upload_video
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait upload_video_note extends js.Object
+  sealed trait upload_video_note
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.ChatAction
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageEntityType
   
   @js.native
   sealed trait venue extends js.Object
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait video
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait video_note extends js.Object
+  sealed trait video_note
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
-  sealed trait voice extends js.Object
+  sealed trait voice
+    extends nodeDashTelegramDashBotDashApiLib.nodeDashTelegramDashBotDashApiMod.TelegramBotNs.MessageType
   
   @js.native
   sealed trait webhook_error extends js.Object

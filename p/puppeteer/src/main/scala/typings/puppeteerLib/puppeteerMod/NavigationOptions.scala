@@ -13,3 +13,13 @@ trait NavigationOptions extends Timeoutable {
   var waitUntil: js.UndefOr[LoadEvent | js.Array[LoadEvent]] = js.undefined
 }
 
+object NavigationOptions {
+  @scala.inline
+  def apply(timeout: scala.Int | scala.Double = null, waitUntil: LoadEvent | js.Array[LoadEvent] = null): NavigationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (waitUntil != null) __obj.updateDynamic("waitUntil")(waitUntil.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NavigationOptions]
+  }
+}
+

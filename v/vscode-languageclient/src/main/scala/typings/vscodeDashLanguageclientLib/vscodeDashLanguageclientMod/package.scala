@@ -11,7 +11,7 @@ package object vscodeDashLanguageclientMod {
   type FoldingRangeKind = vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.FoldingRangeKind
   type RevealOutputChannelOn = vscodeDashLanguageclientLib.libClientMod.RevealOutputChannelOn
   type SelectionRangeKind = vscodeDashLanguageserverDashProtocolLib.libProtocolDotSelectionRangeMod.SelectionRangeKind
-  type ServerOptions = Executable | vscodeDashLanguageclientLib.Anon_Debug | vscodeDashLanguageclientLib.Anon_DebugRun | NodeModule | (js.Function0[
+  type ServerOptions = _ServerOptions | (js.Function0[
     vscodeDashJsonrpcLib.Thenable[
       nodeLib.childUnderscoreProcessMod.ChildProcess | StreamInfo | vscodeDashLanguageclientLib.libClientMod.MessageTransports | ChildProcessInfo
     ]
@@ -19,5 +19,4 @@ package object vscodeDashLanguageclientMod {
   type State = vscodeDashLanguageclientLib.libClientMod.State
   type Trace = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.Trace
   type TraceFormat = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.TraceFormat
-  type Transport = TransportKind | SocketTransport
 }

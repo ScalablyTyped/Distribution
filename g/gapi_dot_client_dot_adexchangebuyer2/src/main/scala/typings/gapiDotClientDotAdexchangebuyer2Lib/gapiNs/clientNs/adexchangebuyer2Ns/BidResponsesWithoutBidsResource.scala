@@ -15,3 +15,17 @@ trait BidResponsesWithoutBidsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListBidResponsesWithoutBidsResponse]
 }
 
+object BidResponsesWithoutBidsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListBidResponsesWithoutBidsResponse]
+    ]
+  ): BidResponsesWithoutBidsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[BidResponsesWithoutBidsResource]
+  }
+}
+

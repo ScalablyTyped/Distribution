@@ -12,3 +12,20 @@ trait Overrides extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Overrides {
+  @scala.inline
+  def apply(
+    headers: Headers = null,
+    method: HttpMethod = null,
+    postData: java.lang.String = null,
+    url: java.lang.String = null
+  ): Overrides = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (postData != null) __obj.updateDynamic("postData")(postData)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Overrides]
+  }
+}
+

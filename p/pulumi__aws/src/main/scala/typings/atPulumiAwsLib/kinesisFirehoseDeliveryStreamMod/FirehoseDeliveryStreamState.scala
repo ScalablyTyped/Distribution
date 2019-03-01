@@ -63,3 +63,38 @@ trait FirehoseDeliveryStreamState extends js.Object {
   val versionId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object FirehoseDeliveryStreamState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    destination: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    destinationId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    elasticsearchConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BufferingIntervalBufferingSize] = null,
+    extendedS3Configuration: atPulumiPulumiLib.outputMod.Input[
+      atPulumiAwsLib.Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptionsCompressionFormat
+    ] = null,
+    kinesisSourceConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KinesisStreamArnRoleArn] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    redshiftConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CloudwatchLoggingOptionsClusterJdbcurl] = null,
+    s3Configuration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketArnBufferIntervalBufferSizeCloudwatchLoggingOptions] = null,
+    splunkConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CloudwatchLoggingOptionsHecAcknowledgmentTimeoutHecEndpoint] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    versionId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): FirehoseDeliveryStreamState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (destinationId != null) __obj.updateDynamic("destinationId")(destinationId.asInstanceOf[js.Any])
+    if (elasticsearchConfiguration != null) __obj.updateDynamic("elasticsearchConfiguration")(elasticsearchConfiguration.asInstanceOf[js.Any])
+    if (extendedS3Configuration != null) __obj.updateDynamic("extendedS3Configuration")(extendedS3Configuration.asInstanceOf[js.Any])
+    if (kinesisSourceConfiguration != null) __obj.updateDynamic("kinesisSourceConfiguration")(kinesisSourceConfiguration.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (redshiftConfiguration != null) __obj.updateDynamic("redshiftConfiguration")(redshiftConfiguration.asInstanceOf[js.Any])
+    if (s3Configuration != null) __obj.updateDynamic("s3Configuration")(s3Configuration.asInstanceOf[js.Any])
+    if (splunkConfiguration != null) __obj.updateDynamic("splunkConfiguration")(splunkConfiguration.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FirehoseDeliveryStreamState]
+  }
+}
+

@@ -12,3 +12,13 @@ trait AccountstatusesCustomBatchResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccountstatusesCustomBatchResponse {
+  @scala.inline
+  def apply(entries: js.Array[AccountstatusesCustomBatchResponseEntry] = null, kind: java.lang.String = null): AccountstatusesCustomBatchResponse = {
+    val __obj = js.Dynamic.literal()
+    if (entries != null) __obj.updateDynamic("entries")(entries)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[AccountstatusesCustomBatchResponse]
+  }
+}
+

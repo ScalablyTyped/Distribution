@@ -17,3 +17,34 @@ trait ChronoZonedDateTime extends TemporalAccessor {
   def toInstant(): Instant
 }
 
+object ChronoZonedDateTime {
+  @scala.inline
+  def apply(
+    compareTo: js.Function1[ChronoZonedDateTime, scala.Double],
+    equals: js.Function1[js.Any, scala.Boolean],
+    format: js.Function1[DateTimeFormatter, java.lang.String],
+    get: js.Function1[TemporalField, scala.Double],
+    isAfter: js.Function1[ChronoZonedDateTime, scala.Boolean],
+    isBefore: js.Function1[ChronoZonedDateTime, scala.Boolean],
+    isEqual: js.Function1[ChronoZonedDateTime, scala.Boolean],
+    query: js.Function1[js.Any, js.Any],
+    range: js.Function1[TemporalField, ValueRange],
+    toEpochSecond: js.Function0[scala.Double],
+    toInstant: js.Function0[Instant]
+  ): ChronoZonedDateTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compareTo")(compareTo)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("isAfter")(isAfter)
+    __obj.updateDynamic("isBefore")(isBefore)
+    __obj.updateDynamic("isEqual")(isEqual)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("range")(range)
+    __obj.updateDynamic("toEpochSecond")(toEpochSecond)
+    __obj.updateDynamic("toInstant")(toInstant)
+    __obj.asInstanceOf[ChronoZonedDateTime]
+  }
+}
+

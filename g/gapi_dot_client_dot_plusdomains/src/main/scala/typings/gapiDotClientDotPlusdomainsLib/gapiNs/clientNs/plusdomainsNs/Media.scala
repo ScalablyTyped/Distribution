@@ -51,3 +51,48 @@ trait Media extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Media {
+  @scala.inline
+  def apply(
+    author: gapiDotClientDotPlusdomainsLib.Anon_DisplayName = null,
+    displayName: java.lang.String = null,
+    etag: java.lang.String = null,
+    exif: gapiDotClientDotPlusdomainsLib.Anon_Time = null,
+    height: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    mediaCreatedTime: java.lang.String = null,
+    mediaUrl: java.lang.String = null,
+    published: java.lang.String = null,
+    sizeBytes: java.lang.String = null,
+    streams: js.Array[Videostream] = null,
+    summary: java.lang.String = null,
+    updated: java.lang.String = null,
+    url: java.lang.String = null,
+    videoDuration: java.lang.String = null,
+    videoStatus: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Media = {
+    val __obj = js.Dynamic.literal()
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (exif != null) __obj.updateDynamic("exif")(exif)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (mediaCreatedTime != null) __obj.updateDynamic("mediaCreatedTime")(mediaCreatedTime)
+    if (mediaUrl != null) __obj.updateDynamic("mediaUrl")(mediaUrl)
+    if (published != null) __obj.updateDynamic("published")(published)
+    if (sizeBytes != null) __obj.updateDynamic("sizeBytes")(sizeBytes)
+    if (streams != null) __obj.updateDynamic("streams")(streams)
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (videoDuration != null) __obj.updateDynamic("videoDuration")(videoDuration)
+    if (videoStatus != null) __obj.updateDynamic("videoStatus")(videoStatus)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Media]
+  }
+}
+

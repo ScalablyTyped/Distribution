@@ -32,3 +32,22 @@ trait OptionsPreview extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object OptionsPreview {
+  @scala.inline
+  def apply(
+    actions: js.Array[OptionsPreviewAction] = null,
+    commit: js.UndefOr[scala.Boolean] = js.undefined,
+    height: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibNumbers.`100` = null,
+    reactTag: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): OptionsPreview = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (!js.isUndefined(commit)) __obj.updateDynamic("commit")(commit)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (reactTag != null) __obj.updateDynamic("reactTag")(reactTag.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OptionsPreview]
+  }
+}
+

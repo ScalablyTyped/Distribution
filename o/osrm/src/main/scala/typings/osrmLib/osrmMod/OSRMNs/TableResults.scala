@@ -11,3 +11,18 @@ trait TableResults extends js.Object {
   var sources: js.Array[Waypoint]
 }
 
+object TableResults {
+  @scala.inline
+  def apply(
+    destinations: js.Array[Waypoint],
+    durations: js.Array[js.Array[Duration]],
+    sources: js.Array[Waypoint]
+  ): TableResults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinations")(destinations)
+    __obj.updateDynamic("durations")(durations)
+    __obj.updateDynamic("sources")(sources)
+    __obj.asInstanceOf[TableResults]
+  }
+}
+

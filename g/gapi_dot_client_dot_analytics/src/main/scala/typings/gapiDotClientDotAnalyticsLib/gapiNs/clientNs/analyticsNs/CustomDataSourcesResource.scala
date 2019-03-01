@@ -10,3 +10,17 @@ trait CustomDataSourcesResource extends js.Object {
   def list(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults): gapiDotClientLib.gapiNs.clientNs.Request[CustomDataSources]
 }
 
+object CustomDataSourcesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomDataSources]
+    ]
+  ): CustomDataSourcesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[CustomDataSourcesResource]
+  }
+}
+

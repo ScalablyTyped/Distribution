@@ -26,3 +26,30 @@ trait CreateAuthUriResponse extends js.Object {
   var signinMethods: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CreateAuthUriResponse {
+  @scala.inline
+  def apply(
+    allProviders: js.Array[java.lang.String] = null,
+    authUri: java.lang.String = null,
+    captchaRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    forExistingProvider: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    providerId: java.lang.String = null,
+    registered: js.UndefOr[scala.Boolean] = js.undefined,
+    sessionId: java.lang.String = null,
+    signinMethods: js.Array[java.lang.String] = null
+  ): CreateAuthUriResponse = {
+    val __obj = js.Dynamic.literal()
+    if (allProviders != null) __obj.updateDynamic("allProviders")(allProviders)
+    if (authUri != null) __obj.updateDynamic("authUri")(authUri)
+    if (!js.isUndefined(captchaRequired)) __obj.updateDynamic("captchaRequired")(captchaRequired)
+    if (!js.isUndefined(forExistingProvider)) __obj.updateDynamic("forExistingProvider")(forExistingProvider)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (providerId != null) __obj.updateDynamic("providerId")(providerId)
+    if (!js.isUndefined(registered)) __obj.updateDynamic("registered")(registered)
+    if (sessionId != null) __obj.updateDynamic("sessionId")(sessionId)
+    if (signinMethods != null) __obj.updateDynamic("signinMethods")(signinMethods)
+    __obj.asInstanceOf[CreateAuthUriResponse]
+  }
+}
+

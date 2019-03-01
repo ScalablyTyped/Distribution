@@ -18,3 +18,20 @@ trait Stats extends js.Object {
   var time: scala.Double
 }
 
+object Stats {
+  @scala.inline
+  def apply(
+    ok: scala.Boolean,
+    req: requestDashStatsLib.Anon_Bytes,
+    res: requestDashStatsLib.Anon_BytesHeaders,
+    time: scala.Double
+  ): Stats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ok")(ok)
+    __obj.updateDynamic("req")(req)
+    __obj.updateDynamic("res")(res)
+    __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[Stats]
+  }
+}
+

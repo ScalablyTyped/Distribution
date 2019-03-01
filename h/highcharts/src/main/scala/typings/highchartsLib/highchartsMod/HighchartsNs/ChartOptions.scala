@@ -284,3 +284,104 @@ trait ChartOptions extends js.Object {
   var zoomType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChartOptions {
+  @scala.inline
+  def apply(
+    alignTicks: js.UndefOr[scala.Boolean] = js.undefined,
+    animation: scala.Boolean | Animation = null,
+    backgroundColor: java.lang.String | Gradient = null,
+    borderColor: java.lang.String | Gradient = null,
+    borderRadius: scala.Int | scala.Double = null,
+    borderWidth: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    colorCount: scala.Int | scala.Double = null,
+    defaultSeriesType: java.lang.String = null,
+    description: java.lang.String = null,
+    events: ChartEvents = null,
+    height: scala.Double | java.lang.String = null,
+    ignoreHiddenSeries: js.UndefOr[scala.Boolean] = js.undefined,
+    inverted: js.UndefOr[scala.Boolean] = js.undefined,
+    margin: scala.Double | js.Array[scala.Double] = null,
+    marginBottom: scala.Int | scala.Double = null,
+    marginLeft: scala.Int | scala.Double = null,
+    marginRight: scala.Int | scala.Double = null,
+    marginTop: scala.Int | scala.Double = null,
+    options3d: ChartOptions3d = null,
+    panKey: java.lang.String = null,
+    panning: js.UndefOr[scala.Boolean] = js.undefined,
+    pinchType: java.lang.String = null,
+    plotBackgroundColor: java.lang.String | Gradient = null,
+    plotBackgroundImage: java.lang.String = null,
+    plotBorderColor: java.lang.String = null,
+    plotBorderWidth: scala.Int | scala.Double = null,
+    plotShadow: scala.Boolean | Shadow = null,
+    polar: js.UndefOr[scala.Boolean] = js.undefined,
+    reflow: js.UndefOr[scala.Boolean] = js.undefined,
+    renderTo: java.lang.String | stdLib.HTMLElement = null,
+    resetZoomButton: ChartResetZoomButton = null,
+    scrollablePlotArea: ScrollablePropArea = null,
+    selectionMarkerFill: java.lang.String = null,
+    shadow: scala.Boolean | Shadow = null,
+    showAxes: js.UndefOr[scala.Boolean] = js.undefined,
+    spacing: js.Array[scala.Double] = null,
+    spacingBottom: scala.Int | scala.Double = null,
+    spacingLeft: scala.Int | scala.Double = null,
+    spacingRight: scala.Int | scala.Double = null,
+    spacingTop: scala.Int | scala.Double = null,
+    style: CSSObject = null,
+    `type`: java.lang.String = null,
+    typeDescription: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    zoomType: java.lang.String = null
+  ): ChartOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alignTicks)) __obj.updateDynamic("alignTicks")(alignTicks)
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderRadius != null) __obj.updateDynamic("borderRadius")(borderRadius.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (colorCount != null) __obj.updateDynamic("colorCount")(colorCount.asInstanceOf[js.Any])
+    if (defaultSeriesType != null) __obj.updateDynamic("defaultSeriesType")(defaultSeriesType)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreHiddenSeries)) __obj.updateDynamic("ignoreHiddenSeries")(ignoreHiddenSeries)
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (marginBottom != null) __obj.updateDynamic("marginBottom")(marginBottom.asInstanceOf[js.Any])
+    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
+    if (marginRight != null) __obj.updateDynamic("marginRight")(marginRight.asInstanceOf[js.Any])
+    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (options3d != null) __obj.updateDynamic("options3d")(options3d)
+    if (panKey != null) __obj.updateDynamic("panKey")(panKey)
+    if (!js.isUndefined(panning)) __obj.updateDynamic("panning")(panning)
+    if (pinchType != null) __obj.updateDynamic("pinchType")(pinchType)
+    if (plotBackgroundColor != null) __obj.updateDynamic("plotBackgroundColor")(plotBackgroundColor.asInstanceOf[js.Any])
+    if (plotBackgroundImage != null) __obj.updateDynamic("plotBackgroundImage")(plotBackgroundImage)
+    if (plotBorderColor != null) __obj.updateDynamic("plotBorderColor")(plotBorderColor)
+    if (plotBorderWidth != null) __obj.updateDynamic("plotBorderWidth")(plotBorderWidth.asInstanceOf[js.Any])
+    if (plotShadow != null) __obj.updateDynamic("plotShadow")(plotShadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar)
+    if (!js.isUndefined(reflow)) __obj.updateDynamic("reflow")(reflow)
+    if (renderTo != null) __obj.updateDynamic("renderTo")(renderTo.asInstanceOf[js.Any])
+    if (resetZoomButton != null) __obj.updateDynamic("resetZoomButton")(resetZoomButton)
+    if (scrollablePlotArea != null) __obj.updateDynamic("scrollablePlotArea")(scrollablePlotArea)
+    if (selectionMarkerFill != null) __obj.updateDynamic("selectionMarkerFill")(selectionMarkerFill)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAxes)) __obj.updateDynamic("showAxes")(showAxes)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
+    if (spacingBottom != null) __obj.updateDynamic("spacingBottom")(spacingBottom.asInstanceOf[js.Any])
+    if (spacingLeft != null) __obj.updateDynamic("spacingLeft")(spacingLeft.asInstanceOf[js.Any])
+    if (spacingRight != null) __obj.updateDynamic("spacingRight")(spacingRight.asInstanceOf[js.Any])
+    if (spacingTop != null) __obj.updateDynamic("spacingTop")(spacingTop.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (typeDescription != null) __obj.updateDynamic("typeDescription")(typeDescription)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zoomType != null) __obj.updateDynamic("zoomType")(zoomType)
+    __obj.asInstanceOf[ChartOptions]
+  }
+}
+

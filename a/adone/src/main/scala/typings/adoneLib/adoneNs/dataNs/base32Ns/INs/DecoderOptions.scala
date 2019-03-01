@@ -10,3 +10,15 @@ trait DecoderOptions extends js.Object {
   var `type`: adoneLib.adoneLibStrings.rfc4648 | adoneLib.adoneLibStrings.crockford | adoneLib.adoneLibStrings.base32hex
 }
 
+object DecoderOptions {
+  @scala.inline
+  def apply(
+    `type`: adoneLib.adoneLibStrings.rfc4648 | adoneLib.adoneLibStrings.crockford | adoneLib.adoneLibStrings.base32hex,
+    charmap: js.Object = null
+  ): DecoderOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (charmap != null) __obj.updateDynamic("charmap")(charmap)
+    __obj.asInstanceOf[DecoderOptions]
+  }
+}
+

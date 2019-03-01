@@ -13,3 +13,16 @@ trait CookieConfig extends js.Object {
   var nonPersistentCookies: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CookieConfig {
+  @scala.inline
+  def apply(
+    behavior: _CookieConfigBehavior = null,
+    nonPersistentCookies: js.UndefOr[scala.Boolean] = js.undefined
+  ): CookieConfig = {
+    val __obj = js.Dynamic.literal()
+    if (behavior != null) __obj.updateDynamic("behavior")(behavior)
+    if (!js.isUndefined(nonPersistentCookies)) __obj.updateDynamic("nonPersistentCookies")(nonPersistentCookies)
+    __obj.asInstanceOf[CookieConfig]
+  }
+}
+

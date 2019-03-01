@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * An association of a Patient with an Organization and  Healthcare Provider(s) for a period of time that the Organization assumes some level of responsibility
   */
-trait EpisodeOfCare extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait EpisodeOfCare extends DomainResource {
   /**
     * Contains extended information for property 'status'.
     */
@@ -61,5 +62,66 @@ trait EpisodeOfCare extends DomainResource {
     * Type/class  - e.g. specialist referral, disease management
     */
   var `type`: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
+}
+
+object EpisodeOfCare {
+  @scala.inline
+  def apply(
+    patient: Reference,
+    status: code,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    account: js.Array[Reference] = null,
+    careManager: Reference = null,
+    contained: js.Array[Resource] = null,
+    diagnosis: js.Array[EpisodeOfCareDiagnosis] = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    managingOrganization: Reference = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    period: Period = null,
+    referralRequest: js.Array[Reference] = null,
+    resourceType: code = null,
+    statusHistory: js.Array[EpisodeOfCareStatusHistory] = null,
+    team: js.Array[Reference] = null,
+    text: Narrative = null,
+    `type`: js.Array[CodeableConcept] = null
+  ): EpisodeOfCare = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("patient")(patient)
+    __obj.updateDynamic("status")(status)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (account != null) __obj.updateDynamic("account")(account)
+    if (careManager != null) __obj.updateDynamic("careManager")(careManager)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (diagnosis != null) __obj.updateDynamic("diagnosis")(diagnosis)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (managingOrganization != null) __obj.updateDynamic("managingOrganization")(managingOrganization)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (period != null) __obj.updateDynamic("period")(period)
+    if (referralRequest != null) __obj.updateDynamic("referralRequest")(referralRequest)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (statusHistory != null) __obj.updateDynamic("statusHistory")(statusHistory)
+    if (team != null) __obj.updateDynamic("team")(team)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[EpisodeOfCare]
+  }
 }
 

@@ -9,3 +9,12 @@ trait LogOptions extends js.Object {
   var log: webgmeLib.Anon_LevelString
 }
 
+object LogOptions {
+  @scala.inline
+  def apply(log: webgmeLib.Anon_LevelString): LogOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("log")(log)
+    __obj.asInstanceOf[LogOptions]
+  }
+}
+

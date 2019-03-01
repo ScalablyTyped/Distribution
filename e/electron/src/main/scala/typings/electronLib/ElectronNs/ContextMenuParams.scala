@@ -86,3 +86,48 @@ trait ContextMenuParams extends js.Object {
   var y: scala.Double
 }
 
+object ContextMenuParams {
+  @scala.inline
+  def apply(
+    editFlags: EditFlags,
+    frameCharset: java.lang.String,
+    frameURL: java.lang.String,
+    hasImageContents: scala.Boolean,
+    inputFieldType: java.lang.String,
+    isEditable: scala.Boolean,
+    linkText: java.lang.String,
+    linkURL: java.lang.String,
+    mediaFlags: MediaFlags,
+    mediaType: electronLib.electronLibStrings.none | electronLib.electronLibStrings.image | electronLib.electronLibStrings.audio | electronLib.electronLibStrings.video | electronLib.electronLibStrings.canvas | electronLib.electronLibStrings.file | electronLib.electronLibStrings.plugin,
+    menuSourceType: electronLib.electronLibStrings.none | electronLib.electronLibStrings.mouse | electronLib.electronLibStrings.keyboard | electronLib.electronLibStrings.touch | electronLib.electronLibStrings.touchMenu,
+    misspelledWord: java.lang.String,
+    pageURL: java.lang.String,
+    selectionText: java.lang.String,
+    srcURL: java.lang.String,
+    titleText: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): ContextMenuParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editFlags")(editFlags)
+    __obj.updateDynamic("frameCharset")(frameCharset)
+    __obj.updateDynamic("frameURL")(frameURL)
+    __obj.updateDynamic("hasImageContents")(hasImageContents)
+    __obj.updateDynamic("inputFieldType")(inputFieldType)
+    __obj.updateDynamic("isEditable")(isEditable)
+    __obj.updateDynamic("linkText")(linkText)
+    __obj.updateDynamic("linkURL")(linkURL)
+    __obj.updateDynamic("mediaFlags")(mediaFlags)
+    __obj.updateDynamic("mediaType")(mediaType.asInstanceOf[js.Any])
+    __obj.updateDynamic("menuSourceType")(menuSourceType.asInstanceOf[js.Any])
+    __obj.updateDynamic("misspelledWord")(misspelledWord)
+    __obj.updateDynamic("pageURL")(pageURL)
+    __obj.updateDynamic("selectionText")(selectionText)
+    __obj.updateDynamic("srcURL")(srcURL)
+    __obj.updateDynamic("titleText")(titleText)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[ContextMenuParams]
+  }
+}
+

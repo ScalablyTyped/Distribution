@@ -11,3 +11,18 @@ trait Anon_ClassNameDefaultPrefixCls extends js.Object {
   var size: propDashTypesLib.propDashTypesMod.Requireable[js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default]]
 }
 
+object Anon_ClassNameDefaultPrefixCls {
+  @scala.inline
+  def apply(
+    className: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    size: propDashTypesLib.propDashTypesMod.Requireable[js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default]]
+  ): Anon_ClassNameDefaultPrefixCls = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("prefixCls")(prefixCls)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Anon_ClassNameDefaultPrefixCls]
+  }
+}
+

@@ -16,3 +16,13 @@ trait ProvisionedThroughput extends js.Object {
   var WriteCapacityUnits: PositiveLongObject
 }
 
+object ProvisionedThroughput {
+  @scala.inline
+  def apply(ReadCapacityUnits: PositiveLongObject, WriteCapacityUnits: PositiveLongObject): ProvisionedThroughput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ReadCapacityUnits")(ReadCapacityUnits)
+    __obj.updateDynamic("WriteCapacityUnits")(WriteCapacityUnits)
+    __obj.asInstanceOf[ProvisionedThroughput]
+  }
+}
+

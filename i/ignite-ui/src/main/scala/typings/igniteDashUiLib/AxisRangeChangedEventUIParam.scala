@@ -32,3 +32,24 @@ trait AxisRangeChangedEventUIParam extends js.Object {
   var oldMinimumValue: js.UndefOr[js.Any] = js.undefined
 }
 
+object AxisRangeChangedEventUIParam {
+  @scala.inline
+  def apply(
+    axis: js.Any = null,
+    chart: js.Any = null,
+    newMaximumValue: js.Any = null,
+    newMinimumValue: js.Any = null,
+    oldMaximumValue: js.Any = null,
+    oldMinimumValue: js.Any = null
+  ): AxisRangeChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (chart != null) __obj.updateDynamic("chart")(chart)
+    if (newMaximumValue != null) __obj.updateDynamic("newMaximumValue")(newMaximumValue)
+    if (newMinimumValue != null) __obj.updateDynamic("newMinimumValue")(newMinimumValue)
+    if (oldMaximumValue != null) __obj.updateDynamic("oldMaximumValue")(oldMaximumValue)
+    if (oldMinimumValue != null) __obj.updateDynamic("oldMinimumValue")(oldMinimumValue)
+    __obj.asInstanceOf[AxisRangeChangedEventUIParam]
+  }
+}
+

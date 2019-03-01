@@ -13,3 +13,13 @@ trait ICollection[K, T] extends js.Object {
   var key: K
 }
 
+object ICollection {
+  @scala.inline
+  def apply[K, T](items: js.Array[T], key: K): ICollection[K, T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICollection[K, T]]
+  }
+}
+

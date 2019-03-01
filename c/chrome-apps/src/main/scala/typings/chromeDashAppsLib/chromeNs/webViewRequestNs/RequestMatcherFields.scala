@@ -58,3 +58,34 @@ trait RequestMatcherFields extends js.Object {
   var url: js.UndefOr[chromeDashAppsLib.chromeNs.eventsNs.UrlFilter] = js.undefined
 }
 
+object RequestMatcherFields {
+  @scala.inline
+  def apply(
+    contentType: js.Array[java.lang.String] = null,
+    excludeContentType: js.Array[java.lang.String] = null,
+    excludeRequestHeaders: js.Array[HeaderFilter] = null,
+    excludeResponseHeaders: js.Array[HeaderFilter] = null,
+    firstPartyForCookiesUrl: chromeDashAppsLib.chromeNs.eventsNs.UrlFilter = null,
+    requestHeaders: js.Array[HeaderFilter] = null,
+    resourceType: js.Array[chromeDashAppsLib.chromeNs.webRequestNs.ResourceType] = null,
+    responseHeaders: js.Array[HeaderFilter] = null,
+    stages: js.Array[Stage] = null,
+    thirdPartyForCookies: js.UndefOr[scala.Boolean] = js.undefined,
+    url: chromeDashAppsLib.chromeNs.eventsNs.UrlFilter = null
+  ): RequestMatcherFields = {
+    val __obj = js.Dynamic.literal()
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (excludeContentType != null) __obj.updateDynamic("excludeContentType")(excludeContentType)
+    if (excludeRequestHeaders != null) __obj.updateDynamic("excludeRequestHeaders")(excludeRequestHeaders)
+    if (excludeResponseHeaders != null) __obj.updateDynamic("excludeResponseHeaders")(excludeResponseHeaders)
+    if (firstPartyForCookiesUrl != null) __obj.updateDynamic("firstPartyForCookiesUrl")(firstPartyForCookiesUrl)
+    if (requestHeaders != null) __obj.updateDynamic("requestHeaders")(requestHeaders)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    if (stages != null) __obj.updateDynamic("stages")(stages)
+    if (!js.isUndefined(thirdPartyForCookies)) __obj.updateDynamic("thirdPartyForCookies")(thirdPartyForCookies)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[RequestMatcherFields]
+  }
+}
+

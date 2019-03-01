@@ -19,3 +19,34 @@ trait MessageOpens extends js.Object {
   var UserAgent: java.lang.String
 }
 
+object MessageOpens {
+  @scala.inline
+  def apply(
+    Client: VendorTrackingInfo,
+    FirstOpen: scala.Boolean,
+    Geo: GeoTrackingInfo,
+    MessageID: java.lang.String,
+    OS: VendorTrackingInfo,
+    Platform: java.lang.String,
+    ReadSeconds: scala.Double,
+    ReceivedAt: java.lang.String,
+    Recipient: java.lang.String,
+    Tag: java.lang.String,
+    UserAgent: java.lang.String
+  ): MessageOpens = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Client")(Client)
+    __obj.updateDynamic("FirstOpen")(FirstOpen)
+    __obj.updateDynamic("Geo")(Geo)
+    __obj.updateDynamic("MessageID")(MessageID)
+    __obj.updateDynamic("OS")(OS)
+    __obj.updateDynamic("Platform")(Platform)
+    __obj.updateDynamic("ReadSeconds")(ReadSeconds)
+    __obj.updateDynamic("ReceivedAt")(ReceivedAt)
+    __obj.updateDynamic("Recipient")(Recipient)
+    __obj.updateDynamic("Tag")(Tag)
+    __obj.updateDynamic("UserAgent")(UserAgent)
+    __obj.asInstanceOf[MessageOpens]
+  }
+}
+

@@ -33,3 +33,26 @@ trait PlaceReview extends js.Object {
   var time: java.lang.String
 }
 
+object PlaceReview {
+  @scala.inline
+  def apply(
+    aspects: js.Array[AspectRating],
+    author_name: java.lang.String,
+    language: java.lang.String,
+    rating: scala.Double,
+    text: java.lang.String,
+    time: java.lang.String,
+    author_url: java.lang.String = null
+  ): PlaceReview = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aspects")(aspects)
+    __obj.updateDynamic("author_name")(author_name)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("rating")(rating)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("time")(time)
+    if (author_url != null) __obj.updateDynamic("author_url")(author_url)
+    __obj.asInstanceOf[PlaceReview]
+  }
+}
+

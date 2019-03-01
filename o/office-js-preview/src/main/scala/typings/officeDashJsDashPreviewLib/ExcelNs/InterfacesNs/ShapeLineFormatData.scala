@@ -61,3 +61,24 @@ trait ShapeLineFormatData extends js.Object {
   var weight: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ShapeLineFormatData {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    dashStyle: officeDashJsDashPreviewLib.ExcelNs.ShapeLineDashStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DashDotDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LongDash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LongDashDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RoundDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Solid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SquareDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LongDashDotDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SystemDash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SystemDot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SystemDashDot = null,
+    style: officeDashJsDashPreviewLib.ExcelNs.ShapeLineStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Single | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThickBetweenThin | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThickThin | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThinThick | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThinThin = null,
+    transparency: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    weight: scala.Int | scala.Double = null
+  ): ShapeLineFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (weight != null) __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ShapeLineFormatData]
+  }
+}
+

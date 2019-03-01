@@ -27,3 +27,20 @@ trait ExecOptions extends js.Object {
   var windowsVerbatimArguments: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ExecOptions {
+  @scala.inline
+  def apply(
+    breakOnError: js.UndefOr[scala.Boolean] = js.undefined,
+    printStderr: js.UndefOr[scala.Boolean] = js.undefined,
+    printStdout: js.UndefOr[scala.Boolean] = js.undefined,
+    windowsVerbatimArguments: js.UndefOr[scala.Boolean] = js.undefined
+  ): ExecOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(breakOnError)) __obj.updateDynamic("breakOnError")(breakOnError)
+    if (!js.isUndefined(printStderr)) __obj.updateDynamic("printStderr")(printStderr)
+    if (!js.isUndefined(printStdout)) __obj.updateDynamic("printStdout")(printStdout)
+    if (!js.isUndefined(windowsVerbatimArguments)) __obj.updateDynamic("windowsVerbatimArguments")(windowsVerbatimArguments)
+    __obj.asInstanceOf[ExecOptions]
+  }
+}
+

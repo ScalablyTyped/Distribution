@@ -107,3 +107,72 @@ trait CarePlanActivityDetail extends BackboneElement {
   var statusReason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CarePlanActivityDetail {
+  @scala.inline
+  def apply(
+    status: code,
+    _description: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _prohibited: Element = null,
+    _scheduledString: Element = null,
+    _status: Element = null,
+    _statusReason: Element = null,
+    category: CodeableConcept = null,
+    code: CodeableConcept = null,
+    dailyAmount: Quantity = null,
+    definition: Reference = null,
+    description: java.lang.String = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    goal: js.Array[Reference] = null,
+    id: java.lang.String = null,
+    location: Reference = null,
+    modifierExtension: js.Array[Extension] = null,
+    performer: js.Array[Reference] = null,
+    productCodeableConcept: CodeableConcept = null,
+    productReference: Reference = null,
+    prohibited: js.UndefOr[scala.Boolean] = js.undefined,
+    quantity: Quantity = null,
+    reasonCode: js.Array[CodeableConcept] = null,
+    reasonReference: js.Array[Reference] = null,
+    scheduledPeriod: Period = null,
+    scheduledString: java.lang.String = null,
+    scheduledTiming: Timing = null,
+    statusReason: java.lang.String = null
+  ): CarePlanActivityDetail = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_prohibited != null) __obj.updateDynamic("_prohibited")(_prohibited)
+    if (_scheduledString != null) __obj.updateDynamic("_scheduledString")(_scheduledString)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_statusReason != null) __obj.updateDynamic("_statusReason")(_statusReason)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (dailyAmount != null) __obj.updateDynamic("dailyAmount")(dailyAmount)
+    if (definition != null) __obj.updateDynamic("definition")(definition)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (goal != null) __obj.updateDynamic("goal")(goal)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (performer != null) __obj.updateDynamic("performer")(performer)
+    if (productCodeableConcept != null) __obj.updateDynamic("productCodeableConcept")(productCodeableConcept)
+    if (productReference != null) __obj.updateDynamic("productReference")(productReference)
+    if (!js.isUndefined(prohibited)) __obj.updateDynamic("prohibited")(prohibited)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity)
+    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode)
+    if (reasonReference != null) __obj.updateDynamic("reasonReference")(reasonReference)
+    if (scheduledPeriod != null) __obj.updateDynamic("scheduledPeriod")(scheduledPeriod)
+    if (scheduledString != null) __obj.updateDynamic("scheduledString")(scheduledString)
+    if (scheduledTiming != null) __obj.updateDynamic("scheduledTiming")(scheduledTiming)
+    if (statusReason != null) __obj.updateDynamic("statusReason")(statusReason)
+    __obj.asInstanceOf[CarePlanActivityDetail]
+  }
+}
+

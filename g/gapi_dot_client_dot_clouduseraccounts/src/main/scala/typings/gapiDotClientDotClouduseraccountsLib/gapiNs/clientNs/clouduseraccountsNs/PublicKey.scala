@@ -18,3 +18,22 @@ trait PublicKey extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PublicKey {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    expirationTimestamp: java.lang.String = null,
+    fingerprint: java.lang.String = null,
+    key: java.lang.String = null
+  ): PublicKey = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (expirationTimestamp != null) __obj.updateDynamic("expirationTimestamp")(expirationTimestamp)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[PublicKey]
+  }
+}
+

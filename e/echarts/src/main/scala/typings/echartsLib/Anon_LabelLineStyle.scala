@@ -18,3 +18,16 @@ trait Anon_LabelLineStyle extends js.Object {
   var lineStyle: js.UndefOr[Anon_ColorOpacityShadowBlur] = js.undefined
 }
 
+object Anon_LabelLineStyle {
+  @scala.inline
+  def apply(
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter = null,
+    lineStyle: Anon_ColorOpacityShadowBlur = null
+  ): Anon_LabelLineStyle = {
+    val __obj = js.Dynamic.literal()
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    __obj.asInstanceOf[Anon_LabelLineStyle]
+  }
+}
+

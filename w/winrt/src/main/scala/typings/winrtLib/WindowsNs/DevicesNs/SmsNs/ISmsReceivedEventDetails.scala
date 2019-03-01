@@ -10,3 +10,13 @@ trait ISmsReceivedEventDetails extends js.Object {
   var messageIndex: scala.Double
 }
 
+object ISmsReceivedEventDetails {
+  @scala.inline
+  def apply(deviceId: java.lang.String, messageIndex: scala.Double): ISmsReceivedEventDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceId")(deviceId)
+    __obj.updateDynamic("messageIndex")(messageIndex)
+    __obj.asInstanceOf[ISmsReceivedEventDetails]
+  }
+}
+

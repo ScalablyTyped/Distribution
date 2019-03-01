@@ -25,3 +25,30 @@ trait XAxis
   def getMinorGrid(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object XAxis {
+  @scala.inline
+  def apply(
+    AxisTitle: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    MajorGrid: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    MinorGrid: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getAxisTitle: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getMajorGrid: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getMinorGrid: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAxis = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AxisTitle")(AxisTitle)
+    __obj.updateDynamic("MajorGrid")(MajorGrid)
+    __obj.updateDynamic("MinorGrid")(MinorGrid)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAxisTitle")(getAxisTitle)
+    __obj.updateDynamic("getMajorGrid")(getMajorGrid)
+    __obj.updateDynamic("getMinorGrid")(getMinorGrid)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAxis]
+  }
+}
+

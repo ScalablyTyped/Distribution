@@ -13,3 +13,22 @@ trait Anon_ItemKeyPreviousItem[K]
   var previousKey: K
 }
 
+object Anon_ItemKeyPreviousItem {
+  @scala.inline
+  def apply[K](
+    item: stdLib.Element,
+    key: K,
+    previousItem: stdLib.Element,
+    previousKey: K,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_ItemKeyPreviousItem[K] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("previousItem")(previousItem)
+    __obj.updateDynamic("previousKey")(previousKey.asInstanceOf[js.Any])
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_ItemKeyPreviousItem[K]]
+  }
+}
+

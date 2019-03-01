@@ -15,3 +15,17 @@ trait CountryResource extends js.Object {
   def get(request: gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[StoreInfo]
 }
 
+object CountryResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotPlaymoviespartnerLib.Anon_AccesstokenAccountIdAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StoreInfo]
+    ]
+  ): CountryResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[CountryResource]
+  }
+}
+

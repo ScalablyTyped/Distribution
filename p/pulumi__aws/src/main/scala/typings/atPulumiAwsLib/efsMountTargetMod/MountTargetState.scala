@@ -40,3 +40,26 @@ trait MountTargetState extends js.Object {
   val subnetId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object MountTargetState {
+  @scala.inline
+  def apply(
+    dnsName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    fileSystemArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    fileSystemId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): MountTargetState = {
+    val __obj = js.Dynamic.literal()
+    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
+    if (fileSystemArn != null) __obj.updateDynamic("fileSystemArn")(fileSystemArn.asInstanceOf[js.Any])
+    if (fileSystemId != null) __obj.updateDynamic("fileSystemId")(fileSystemId.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MountTargetState]
+  }
+}
+

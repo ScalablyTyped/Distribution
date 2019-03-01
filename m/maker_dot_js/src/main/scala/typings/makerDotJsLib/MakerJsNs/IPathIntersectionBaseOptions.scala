@@ -19,3 +19,16 @@ trait IPathIntersectionBaseOptions extends js.Object {
   var out_AreOverlapped: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IPathIntersectionBaseOptions {
+  @scala.inline
+  def apply(
+    excludeTangents: js.UndefOr[scala.Boolean] = js.undefined,
+    out_AreOverlapped: js.UndefOr[scala.Boolean] = js.undefined
+  ): IPathIntersectionBaseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(excludeTangents)) __obj.updateDynamic("excludeTangents")(excludeTangents)
+    if (!js.isUndefined(out_AreOverlapped)) __obj.updateDynamic("out_AreOverlapped")(out_AreOverlapped)
+    __obj.asInstanceOf[IPathIntersectionBaseOptions]
+  }
+}
+

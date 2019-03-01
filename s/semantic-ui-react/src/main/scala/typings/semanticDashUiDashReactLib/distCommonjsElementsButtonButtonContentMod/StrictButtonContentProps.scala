@@ -20,3 +20,24 @@ trait StrictButtonContentProps extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StrictButtonContentProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): StrictButtonContentProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[StrictButtonContentProps]
+  }
+}
+

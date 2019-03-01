@@ -36,3 +36,26 @@ trait LikeViewProps extends js.Object {
   var style: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ViewStyle] = js.undefined
 }
 
+object LikeViewProps {
+  @scala.inline
+  def apply(
+    objectIdAndType: ObjectIdAndType,
+    auxiliaryViewPosition: AuxiliaryViewPosition = null,
+    foregroundColor: scala.Int | scala.Double = null,
+    horizontalAlignment: HorizontalAlignment = null,
+    likeViewStyle: LikeViewStyle = null,
+    soundEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.ViewStyle = null
+  ): LikeViewProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("objectIdAndType")(objectIdAndType)
+    if (auxiliaryViewPosition != null) __obj.updateDynamic("auxiliaryViewPosition")(auxiliaryViewPosition)
+    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (likeViewStyle != null) __obj.updateDynamic("likeViewStyle")(likeViewStyle)
+    if (!js.isUndefined(soundEnabled)) __obj.updateDynamic("soundEnabled")(soundEnabled)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[LikeViewProps]
+  }
+}
+

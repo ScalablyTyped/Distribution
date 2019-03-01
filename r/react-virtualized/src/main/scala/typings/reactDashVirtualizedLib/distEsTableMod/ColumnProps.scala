@@ -55,3 +55,50 @@ trait ColumnProps extends js.Object {
   var width: scala.Double
 }
 
+object ColumnProps {
+  @scala.inline
+  def apply(
+    dataKey: js.Any,
+    width: scala.Double,
+    `aria-label`: java.lang.String = null,
+    cellDataGetter: TableCellDataGetter = null,
+    cellRenderer: TableCellRenderer = null,
+    className: java.lang.String = null,
+    columnData: js.Any = null,
+    defaultSortDirection: SortDirectionType = null,
+    disableSort: js.UndefOr[scala.Boolean] = js.undefined,
+    flexGrow: scala.Int | scala.Double = null,
+    flexShrink: scala.Int | scala.Double = null,
+    headerClassName: java.lang.String = null,
+    headerRenderer: TableHeaderRenderer = null,
+    headerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    id: java.lang.String = null,
+    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    maxWidth: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): ColumnProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataKey")(dataKey)
+    __obj.updateDynamic("width")(width)
+    if (`aria-label` != null) __obj.updateDynamic("aria-label")(`aria-label`)
+    if (cellDataGetter != null) __obj.updateDynamic("cellDataGetter")(cellDataGetter)
+    if (cellRenderer != null) __obj.updateDynamic("cellRenderer")(cellRenderer)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (columnData != null) __obj.updateDynamic("columnData")(columnData)
+    if (defaultSortDirection != null) __obj.updateDynamic("defaultSortDirection")(defaultSortDirection)
+    if (!js.isUndefined(disableSort)) __obj.updateDynamic("disableSort")(disableSort)
+    if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
+    if (flexShrink != null) __obj.updateDynamic("flexShrink")(flexShrink.asInstanceOf[js.Any])
+    if (headerClassName != null) __obj.updateDynamic("headerClassName")(headerClassName)
+    if (headerRenderer != null) __obj.updateDynamic("headerRenderer")(headerRenderer)
+    if (headerStyle != null) __obj.updateDynamic("headerStyle")(headerStyle)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ColumnProps]
+  }
+}
+

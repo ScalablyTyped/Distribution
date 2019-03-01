@@ -22,3 +22,18 @@ trait CertificateState extends js.Object {
   val csr: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object CertificateState {
+  @scala.inline
+  def apply(
+    active: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    csr: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): CertificateState = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (csr != null) __obj.updateDynamic("csr")(csr.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CertificateState]
+  }
+}
+

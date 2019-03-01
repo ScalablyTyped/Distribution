@@ -16,3 +16,20 @@ trait UserInfoResponse extends js.Object {
   var userInfo: UserInfo
 }
 
+object UserInfoResponse {
+  @scala.inline
+  def apply(
+    encryptData: java.lang.String,
+    rawData: java.lang.String,
+    signature: java.lang.String,
+    userInfo: UserInfo
+  ): UserInfoResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("encryptData")(encryptData)
+    __obj.updateDynamic("rawData")(rawData)
+    __obj.updateDynamic("signature")(signature)
+    __obj.updateDynamic("userInfo")(userInfo)
+    __obj.asInstanceOf[UserInfoResponse]
+  }
+}
+

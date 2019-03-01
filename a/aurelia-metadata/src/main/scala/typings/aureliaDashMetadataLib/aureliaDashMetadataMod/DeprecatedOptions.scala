@@ -16,3 +16,13 @@ trait DeprecatedOptions extends js.Object {
   var message: java.lang.String
 }
 
+object DeprecatedOptions {
+  @scala.inline
+  def apply(error: scala.Boolean, message: java.lang.String): DeprecatedOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[DeprecatedOptions]
+  }
+}
+

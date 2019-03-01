@@ -13,10 +13,12 @@ object nodemailerLibStrings {
   sealed trait B extends js.Object
   
   @js.native
-  sealed trait DELAY extends js.Object
+  sealed trait DELAY
+    extends nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.DSNOption
   
   @js.native
-  sealed trait FAILURE extends js.Object
+  sealed trait FAILURE
+    extends nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.DSNOption
   
   @js.native
   sealed trait Full extends js.Object
@@ -31,7 +33,8 @@ object nodemailerLibStrings {
   sealed trait Login extends js.Object
   
   @js.native
-  sealed trait NEVER extends js.Object
+  sealed trait NEVER
+    extends nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.DSNOption
   
   @js.native
   sealed trait OAUTH2 extends js.Object
@@ -43,7 +46,8 @@ object nodemailerLibStrings {
   sealed trait Q extends js.Object
   
   @js.native
-  sealed trait SUCCESS extends js.Object
+  sealed trait SUCCESS
+    extends nodemailerLib.libSmtpDashConnectionMod.SMTPConnectionNs.DSNOption
   
   @js.native
   sealed trait XOAUTH2 extends js.Object
@@ -52,7 +56,8 @@ object nodemailerLibStrings {
   sealed trait attachment extends js.Object
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends nodemailerLib.libMailerMod.MailNs.TextEncoding
   
   @js.native
   sealed trait connect extends js.Object
@@ -61,22 +66,26 @@ object nodemailerLibStrings {
   sealed trait connected extends js.Object
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends nodemailerLib.libSharedMod.LoggerLevel
   
   @js.native
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends nodemailerLib.libSharedMod.LoggerLevel
   
   @js.native
-  sealed trait fatal extends js.Object
+  sealed trait fatal
+    extends nodemailerLib.libSharedMod.LoggerLevel
   
   @js.native
   sealed trait idle extends js.Object
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends nodemailerLib.libSharedMod.LoggerLevel
   
   @js.native
   sealed trait init extends js.Object
@@ -112,16 +121,19 @@ object nodemailerLibStrings {
   sealed trait proxy_handler_socks5 extends js.Object
   
   @js.native
-  sealed trait `quoted-printable` extends js.Object
+  sealed trait `quoted-printable`
+    extends nodemailerLib.libMailerMod.MailNs.TextEncoding
   
   @js.native
   sealed trait token extends js.Object
   
   @js.native
-  sealed trait trace extends js.Object
+  sealed trait trace
+    extends nodemailerLib.libSharedMod.LoggerLevel
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends nodemailerLib.libSharedMod.LoggerLevel
   
   @scala.inline
   def `7bit`: `7bit` = "7bit".asInstanceOf[`7bit`]

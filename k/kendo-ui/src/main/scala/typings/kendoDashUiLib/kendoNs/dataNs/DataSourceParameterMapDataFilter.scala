@@ -13,3 +13,22 @@ trait DataSourceParameterMapDataFilter extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object DataSourceParameterMapDataFilter {
+  @scala.inline
+  def apply(
+    field: java.lang.String = null,
+    filters: js.Array[DataSourceParameterMapDataFilter] = null,
+    logic: java.lang.String = null,
+    operator: java.lang.String = null,
+    value: js.Any = null
+  ): DataSourceParameterMapDataFilter = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (logic != null) __obj.updateDynamic("logic")(logic)
+    if (operator != null) __obj.updateDynamic("operator")(operator)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DataSourceParameterMapDataFilter]
+  }
+}
+

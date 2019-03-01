@@ -27,3 +27,25 @@ trait FittingDef
   var `type`: js.UndefOr[FittingType] = js.undefined
 }
 
+object FittingDef {
+  @scala.inline
+  def apply(
+    StringDictionary: // allow other config settings
+  /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    config: js.Any = null,
+    input: js.Any = null,
+    name: java.lang.String = null,
+    output: js.Any = null,
+    `type`: FittingType = null
+  ): FittingDef = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FittingDef]
+  }
+}
+

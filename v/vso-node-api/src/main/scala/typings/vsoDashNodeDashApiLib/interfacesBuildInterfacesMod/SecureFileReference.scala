@@ -12,3 +12,13 @@ trait SecureFileReference extends ResourceReference {
   var id: java.lang.String
 }
 
+object SecureFileReference {
+  @scala.inline
+  def apply(alias: java.lang.String, id: java.lang.String): SecureFileReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alias")(alias)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[SecureFileReference]
+  }
+}
+

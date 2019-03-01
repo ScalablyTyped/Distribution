@@ -12,3 +12,20 @@ trait Anon_DisabledEModifierOnChange extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_DisabledEModifierOnChange {
+  @scala.inline
+  def apply(
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    modifier: java.lang.String = null,
+    onChange: js.Function1[/* e */ reactLib.Event, scala.Unit] = null,
+    value: scala.Int | scala.Double = null
+  ): Anon_DisabledEModifierOnChange = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_DisabledEModifierOnChange]
+  }
+}
+

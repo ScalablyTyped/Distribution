@@ -16,3 +16,13 @@ trait LoggingOptions extends js.Object {
   var logging: js.UndefOr[scala.Boolean | js.Function] = js.undefined
 }
 
+object LoggingOptions {
+  @scala.inline
+  def apply(benchmark: js.UndefOr[scala.Boolean] = js.undefined, logging: scala.Boolean | js.Function = null): LoggingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoggingOptions]
+  }
+}
+

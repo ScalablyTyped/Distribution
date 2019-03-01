@@ -21,3 +21,23 @@ trait IOutputStream
   def writeAsync(buffer: IBuffer): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
 }
 
+object IOutputStream {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    flushAsync: js.Function0[
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean]
+    ],
+    writeAsync: js.Function1[
+      IBuffer, 
+      winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperationWithProgress[scala.Double, scala.Double]
+    ]
+  ): IOutputStream = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("flushAsync")(flushAsync)
+    __obj.updateDynamic("writeAsync")(writeAsync)
+    __obj.asInstanceOf[IOutputStream]
+  }
+}
+

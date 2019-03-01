@@ -28,3 +28,22 @@ trait CloneStatistics extends js.Object {
   var totalTestCasesCount: scala.Double
 }
 
+object CloneStatistics {
+  @scala.inline
+  def apply(
+    clonedRequirementsCount: scala.Double,
+    clonedSharedStepsCount: scala.Double,
+    clonedTestCasesCount: scala.Double,
+    totalRequirementsCount: scala.Double,
+    totalTestCasesCount: scala.Double
+  ): CloneStatistics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clonedRequirementsCount")(clonedRequirementsCount)
+    __obj.updateDynamic("clonedSharedStepsCount")(clonedSharedStepsCount)
+    __obj.updateDynamic("clonedTestCasesCount")(clonedTestCasesCount)
+    __obj.updateDynamic("totalRequirementsCount")(totalRequirementsCount)
+    __obj.updateDynamic("totalTestCasesCount")(totalTestCasesCount)
+    __obj.asInstanceOf[CloneStatistics]
+  }
+}
+

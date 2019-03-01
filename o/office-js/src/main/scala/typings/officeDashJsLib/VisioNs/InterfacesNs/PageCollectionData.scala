@@ -10,3 +10,12 @@ trait PageCollectionData extends js.Object {
   var items: js.UndefOr[js.Array[PageData]] = js.undefined
 }
 
+object PageCollectionData {
+  @scala.inline
+  def apply(items: js.Array[PageData] = null): PageCollectionData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[PageCollectionData]
+  }
+}
+

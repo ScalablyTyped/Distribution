@@ -14,3 +14,18 @@ trait Options[T] extends BaseOptions {
   ): T
 }
 
+object Options {
+  @scala.inline
+  def apply[T](
+    transform: js.Function4[java.lang.String, java.lang.String, scala.Double, scala.Double, T],
+    headers: js.Array[java.lang.String] = null,
+    separator: java.lang.String = null
+  ): Options[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transform")(transform)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    __obj.asInstanceOf[Options[T]]
+  }
+}
+

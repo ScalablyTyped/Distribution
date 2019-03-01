@@ -44,3 +44,30 @@ trait Anon_ChannelIdForChannelId extends js.Object {
   var part: java.lang.String
 }
 
+object Anon_ChannelIdForChannelId {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    channelId: java.lang.String = null,
+    forChannelId: java.lang.String = null,
+    id: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    mine: js.UndefOr[scala.Boolean] = js.undefined,
+    mySubscripbers: js.UndefOr[scala.Boolean] = js.undefined,
+    order: java.lang.String = null,
+    pageToken: java.lang.String = null
+  ): Anon_ChannelIdForChannelId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (forChannelId != null) __obj.updateDynamic("forChannelId")(forChannelId)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
+    if (!js.isUndefined(mySubscripbers)) __obj.updateDynamic("mySubscripbers")(mySubscripbers)
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    __obj.asInstanceOf[Anon_ChannelIdForChannelId]
+  }
+}
+

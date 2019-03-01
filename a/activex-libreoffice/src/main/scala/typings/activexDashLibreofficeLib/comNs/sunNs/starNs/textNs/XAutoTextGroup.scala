@@ -28,3 +28,42 @@ trait XAutoTextGroup
   ): scala.Unit
 }
 
+object XAutoTextGroup {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    Titles: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getTitles: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    insertNewByName: js.Function3[java.lang.String, java.lang.String, XTextRange, XAutoTextEntry],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeByName: js.Function1[java.lang.String, scala.Unit],
+    renameByName: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit]
+  ): XAutoTextGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementNames")(ElementNames)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("Titles")(Titles)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getByName")(getByName)
+    __obj.updateDynamic("getElementNames")(getElementNames)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getTitles")(getTitles)
+    __obj.updateDynamic("hasByName")(hasByName)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("insertNewByName")(insertNewByName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeByName")(removeByName)
+    __obj.updateDynamic("renameByName")(renameByName)
+    __obj.asInstanceOf[XAutoTextGroup]
+  }
+}
+

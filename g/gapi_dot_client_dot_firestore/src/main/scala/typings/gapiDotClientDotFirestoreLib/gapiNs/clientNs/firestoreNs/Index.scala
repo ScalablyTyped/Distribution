@@ -20,3 +20,20 @@ trait Index extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Index {
+  @scala.inline
+  def apply(
+    collectionId: java.lang.String = null,
+    fields: js.Array[IndexField] = null,
+    name: java.lang.String = null,
+    state: java.lang.String = null
+  ): Index = {
+    val __obj = js.Dynamic.literal()
+    if (collectionId != null) __obj.updateDynamic("collectionId")(collectionId)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Index]
+  }
+}
+

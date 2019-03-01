@@ -45,3 +45,79 @@ trait IDialogPropTypes extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IDialogPropTypes {
+  @scala.inline
+  def apply(
+    afterClose: js.Function0[_] = null,
+    animation: js.Any = null,
+    bodyProps: js.Any = null,
+    bodyStyle: js.Object = null,
+    children: js.Any = null,
+    className: java.lang.String = null,
+    closable: js.UndefOr[scala.Boolean] = js.undefined,
+    closeIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
+    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    forceRender: js.UndefOr[scala.Boolean] = js.undefined,
+    getContainer: js.Function0[reactLib.HTMLElement] = null,
+    height: scala.Int | scala.Double = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    mask: js.UndefOr[scala.Boolean] = js.undefined,
+    maskAnimation: js.Any = null,
+    maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
+    maskProps: js.Any = null,
+    maskStyle: js.Object = null,
+    maskTransitionName: java.lang.String = null,
+    mousePosition: rcDashDialogLib.Anon_X = null,
+    onClose: js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event], 
+      _
+    ] = null,
+    prefixCls: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    transitionName: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null,
+    wrapClassName: java.lang.String = null,
+    wrapProps: js.Any = null,
+    wrapStyle: js.Object = null,
+    zIndex: scala.Int | scala.Double = null
+  ): IDialogPropTypes = {
+    val __obj = js.Dynamic.literal()
+    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (bodyProps != null) __obj.updateDynamic("bodyProps")(bodyProps)
+    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
+    if (closeIcon != null) __obj.updateDynamic("closeIcon")(closeIcon.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose)
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
+    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (maskAnimation != null) __obj.updateDynamic("maskAnimation")(maskAnimation)
+    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)
+    if (maskProps != null) __obj.updateDynamic("maskProps")(maskProps)
+    if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle)
+    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName)
+    if (mousePosition != null) __obj.updateDynamic("mousePosition")(mousePosition)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName)
+    if (wrapProps != null) __obj.updateDynamic("wrapProps")(wrapProps)
+    if (wrapStyle != null) __obj.updateDynamic("wrapStyle")(wrapStyle)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IDialogPropTypes]
+  }
+}
+

@@ -33,3 +33,18 @@ trait AutoFilterData extends js.Object {
   var isDataFiltered: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AutoFilterData {
+  @scala.inline
+  def apply(
+    criteria: js.Array[officeDashJsDashPreviewLib.ExcelNs.FilterCriteria] = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isDataFiltered: js.UndefOr[scala.Boolean] = js.undefined
+  ): AutoFilterData = {
+    val __obj = js.Dynamic.literal()
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(isDataFiltered)) __obj.updateDynamic("isDataFiltered")(isDataFiltered)
+    __obj.asInstanceOf[AutoFilterData]
+  }
+}
+

@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait JQuery extends js.Object {
+trait JQuery
+  extends overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbarsNs._Coordinates {
   def overlayScrollbars(): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def overlayScrollbars(filter: java.lang.String): js.UndefOr[OverlayScrollbars | js.Array[OverlayScrollbars]] = js.native
   def overlayScrollbars(

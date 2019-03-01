@@ -28,13 +28,16 @@ object bootstrapDotV3DotDatetimepickerLibStrings {
   sealed trait dpDOTchange extends js.Object
   
   @js.native
-  sealed trait dpDOTerror extends js.Object
+  sealed trait dpDOTerror
+    extends bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.EventName
   
   @js.native
-  sealed trait dpDOThide extends js.Object
+  sealed trait dpDOThide
+    extends bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.EventName
   
   @js.native
-  sealed trait dpDOTshow extends js.Object
+  sealed trait dpDOTshow
+    extends bootstrapDotV3DotDatetimepickerLib.bootstrapDotV3DotDatetimepickerMod.EventName
   
   @js.native
   sealed trait dpDOTupdate extends js.Object

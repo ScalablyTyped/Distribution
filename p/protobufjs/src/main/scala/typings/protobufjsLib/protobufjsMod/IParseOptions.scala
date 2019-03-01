@@ -12,3 +12,16 @@ trait IParseOptions extends js.Object {
   var keepCase: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IParseOptions {
+  @scala.inline
+  def apply(
+    alternateCommentMode: js.UndefOr[scala.Boolean] = js.undefined,
+    keepCase: js.UndefOr[scala.Boolean] = js.undefined
+  ): IParseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alternateCommentMode)) __obj.updateDynamic("alternateCommentMode")(alternateCommentMode)
+    if (!js.isUndefined(keepCase)) __obj.updateDynamic("keepCase")(keepCase)
+    __obj.asInstanceOf[IParseOptions]
+  }
+}
+

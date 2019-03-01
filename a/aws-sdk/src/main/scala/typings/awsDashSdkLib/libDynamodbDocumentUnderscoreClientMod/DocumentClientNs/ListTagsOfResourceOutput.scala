@@ -16,3 +16,13 @@ trait ListTagsOfResourceOutput extends js.Object {
   var Tags: js.UndefOr[TagList] = js.undefined
 }
 
+object ListTagsOfResourceOutput {
+  @scala.inline
+  def apply(NextToken: NextTokenString = null, Tags: TagList = null): ListTagsOfResourceOutput = {
+    val __obj = js.Dynamic.literal()
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (Tags != null) __obj.updateDynamic("Tags")(Tags)
+    __obj.asInstanceOf[ListTagsOfResourceOutput]
+  }
+}
+

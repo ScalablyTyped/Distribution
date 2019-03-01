@@ -28,3 +28,22 @@ trait UsagePlanKeyState extends js.Object {
   val value: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object UsagePlanKeyState {
+  @scala.inline
+  def apply(
+    keyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    usagePlanId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    value: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): UsagePlanKeyState = {
+    val __obj = js.Dynamic.literal()
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId.asInstanceOf[js.Any])
+    if (keyType != null) __obj.updateDynamic("keyType")(keyType.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (usagePlanId != null) __obj.updateDynamic("usagePlanId")(usagePlanId.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UsagePlanKeyState]
+  }
+}
+

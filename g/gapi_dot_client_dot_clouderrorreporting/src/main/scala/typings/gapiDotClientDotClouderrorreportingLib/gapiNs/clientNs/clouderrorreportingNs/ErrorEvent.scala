@@ -20,3 +20,20 @@ trait ErrorEvent extends js.Object {
   var serviceContext: js.UndefOr[ServiceContext] = js.undefined
 }
 
+object ErrorEvent {
+  @scala.inline
+  def apply(
+    context: ErrorContext = null,
+    eventTime: java.lang.String = null,
+    message: java.lang.String = null,
+    serviceContext: ServiceContext = null
+  ): ErrorEvent = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (serviceContext != null) __obj.updateDynamic("serviceContext")(serviceContext)
+    __obj.asInstanceOf[ErrorEvent]
+  }
+}
+

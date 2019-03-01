@@ -9,3 +9,12 @@ trait IROOM_CAPACITY_CHANGE extends js.Object {
   var room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom
 }
 
+object IROOM_CAPACITY_CHANGE {
+  @scala.inline
+  def apply(room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom): IROOM_CAPACITY_CHANGE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("room")(room)
+    __obj.asInstanceOf[IROOM_CAPACITY_CHANGE]
+  }
+}
+

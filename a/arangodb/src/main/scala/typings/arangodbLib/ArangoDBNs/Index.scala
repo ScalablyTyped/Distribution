@@ -17,3 +17,29 @@ trait Index[T /* <: js.Object */] extends js.Object {
   var unique: scala.Boolean
 }
 
+object Index {
+  @scala.inline
+  def apply[T /* <: js.Object */](
+    code: scala.Double,
+    deduplicate: scala.Boolean,
+    fields: js.Array[java.lang.String],
+    id: java.lang.String,
+    isNewlyCreated: scala.Boolean,
+    selectivityEstimate: scala.Double,
+    sparse: scala.Boolean,
+    `type`: IndexType,
+    unique: scala.Boolean
+  ): Index[T] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("deduplicate")(deduplicate)
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isNewlyCreated")(isNewlyCreated)
+    __obj.updateDynamic("selectivityEstimate")(selectivityEstimate)
+    __obj.updateDynamic("sparse")(sparse)
+    __obj.updateDynamic("unique")(unique)
+    __obj.asInstanceOf[Index[T]]
+  }
+}
+

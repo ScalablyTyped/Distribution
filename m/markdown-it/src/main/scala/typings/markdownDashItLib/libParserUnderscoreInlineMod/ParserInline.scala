@@ -18,3 +18,34 @@ trait ParserInline extends js.Object {
   def tokenize(state: markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced): scala.Unit
 }
 
+object ParserInline {
+  @scala.inline
+  def apply(
+    parse: js.Function4[
+      java.lang.String, 
+      markdownDashItLib.libMod.MarkdownIt, 
+      js.Any, 
+      js.Array[markdownDashItLib.libTokenMod.namespaced], 
+      scala.Unit
+    ],
+    ruler: markdownDashItLib.libMod.MarkdownItNs.RulerInline,
+    ruler2: markdownDashItLib.libMod.MarkdownItNs.RulerInline,
+    skipToken: js.Function1[
+      markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced, 
+      scala.Unit
+    ],
+    tokenize: js.Function1[
+      markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced, 
+      scala.Unit
+    ]
+  ): ParserInline = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("ruler")(ruler)
+    __obj.updateDynamic("ruler2")(ruler2)
+    __obj.updateDynamic("skipToken")(skipToken)
+    __obj.updateDynamic("tokenize")(tokenize)
+    __obj.asInstanceOf[ParserInline]
+  }
+}
+

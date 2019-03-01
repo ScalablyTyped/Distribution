@@ -30,3 +30,22 @@ trait Anon_ConfirmHold extends js.Object {
   var multiple: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ConfirmHold {
+  @scala.inline
+  def apply(
+    defaultValue: java.lang.String,
+    confirmHold: js.UndefOr[scala.Boolean] = js.undefined,
+    confirmType: wegameDashApiLib.wegameDashApiLibStrings.done | wegameDashApiLib.wegameDashApiLibStrings.next | wegameDashApiLib.wegameDashApiLibStrings.search | wegameDashApiLib.wegameDashApiLibStrings.go | wegameDashApiLib.wegameDashApiLibStrings.send = null,
+    maxLength: scala.Int | scala.Double = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ConfirmHold = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(confirmHold)) __obj.updateDynamic("confirmHold")(confirmHold)
+    if (confirmType != null) __obj.updateDynamic("confirmType")(confirmType.asInstanceOf[js.Any])
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    __obj.asInstanceOf[Anon_ConfirmHold]
+  }
+}
+

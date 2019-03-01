@@ -30,3 +30,22 @@ trait XBroadcaster
   def unlockBroadcasts(): scala.Unit
 }
 
+object XBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    lockBroadcasts: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    unlockBroadcasts: js.Function0[scala.Unit]
+  ): XBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("lockBroadcasts")(lockBroadcasts)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("unlockBroadcasts")(unlockBroadcasts)
+    __obj.asInstanceOf[XBroadcaster]
+  }
+}
+

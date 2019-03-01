@@ -49,3 +49,54 @@ trait NamedNodeMap
   def setNamedItemNS(node: Node): Node
 }
 
+object NamedNodeMap {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getLength: js.Function0[scala.Double],
+    getNamedItem: js.Function1[java.lang.String, Node],
+    getNamedItemNS: js.Function2[java.lang.String, java.lang.String, Node],
+    item: js.Function1[scala.Double, Node],
+    length: scala.Double,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    removeNamedItem: js.Function1[java.lang.String, Node],
+    removeNamedItemNS: js.Function2[java.lang.String, java.lang.String, Node],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setNamedItem: js.Function1[Node, Node],
+    setNamedItemNS: js.Function1[Node, Node],
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): NamedNodeMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getLength")(getLength)
+    __obj.updateDynamic("getNamedItem")(getNamedItem)
+    __obj.updateDynamic("getNamedItemNS")(getNamedItemNS)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removeNamedItem")(removeNamedItem)
+    __obj.updateDynamic("removeNamedItemNS")(removeNamedItemNS)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("setNamedItem")(setNamedItem)
+    __obj.updateDynamic("setNamedItemNS")(setNamedItemNS)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[NamedNodeMap]
+  }
+}
+

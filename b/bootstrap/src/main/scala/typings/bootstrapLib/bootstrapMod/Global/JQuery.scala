@@ -122,14 +122,43 @@ trait JQuery[TElement] extends js.Object {
   @JSName("modal")
   def modal_toggle(action: bootstrapLib.bootstrapLibStrings.toggle): this.type = js.native
   def on(
-    events: bootstrapLib.bootstrapMod.AlertEvent | bootstrapLib.bootstrapMod.CarouselEvent | bootstrapLib.bootstrapMod.CollapseEvent | bootstrapLib.bootstrapMod.DropdownEvent | bootstrapLib.bootstrapMod.ModalEvent | bootstrapLib.bootstrapMod.PopoverEvent | bootstrapLib.bootstrapMod.TapEvent | bootstrapLib.bootstrapMod.ToastEvent | bootstrapLib.bootstrapMod.TooltipEvent,
-    handler: (jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]) | (jqueryLib.JQueryNs.EventHandlerBase[
-      TElement, 
-      bootstrapLib.bootstrapMod.CarouselEventHandler[TElement] | bootstrapLib.bootstrapMod.DropdownsEventHandler[TElement] | bootstrapLib.bootstrapMod.ModalEventHandler[TElement] | bootstrapLib.bootstrapMod.TapEventHandler[TElement]
-    ])
+    events: bootstrapLib.bootstrapMod.AlertEvent,
+    handler: jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]
+  ): this.type = js.native
+  def on(
+    events: bootstrapLib.bootstrapMod.CarouselEvent,
+    handler: jqueryLib.JQueryNs.EventHandlerBase[TElement, bootstrapLib.bootstrapMod.CarouselEventHandler[TElement]]
+  ): this.type = js.native
+  def on(
+    events: bootstrapLib.bootstrapMod.CollapseEvent,
+    handler: jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]
+  ): this.type = js.native
+  def on(
+    events: bootstrapLib.bootstrapMod.DropdownEvent,
+    handler: jqueryLib.JQueryNs.EventHandlerBase[TElement, bootstrapLib.bootstrapMod.DropdownsEventHandler[TElement]]
+  ): this.type = js.native
+  def on(
+    events: bootstrapLib.bootstrapMod.ModalEvent,
+    handler: jqueryLib.JQueryNs.EventHandlerBase[TElement, bootstrapLib.bootstrapMod.ModalEventHandler[TElement]]
+  ): this.type = js.native
+  def on(
+    events: bootstrapLib.bootstrapMod.PopoverEvent,
+    handler: jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]
   ): this.type = js.native
   def on(
     events: bootstrapLib.bootstrapMod.ScrollspyEvent,
+    handler: jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]
+  ): this.type = js.native
+  def on(
+    events: bootstrapLib.bootstrapMod.TapEvent,
+    handler: jqueryLib.JQueryNs.EventHandlerBase[TElement, bootstrapLib.bootstrapMod.TapEventHandler[TElement]]
+  ): this.type = js.native
+  def on(
+    events: bootstrapLib.bootstrapMod.ToastEvent,
+    handler: jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]
+  ): this.type = js.native
+  def on(
+    events: bootstrapLib.bootstrapMod.TooltipEvent,
     handler: jqueryLib.JQueryNs.EventHandler[TElement, js.UndefOr[scala.Nothing]]
   ): this.type = js.native
   /**

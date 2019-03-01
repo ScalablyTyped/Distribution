@@ -13,3 +13,22 @@ trait ILicenseInformation extends js.Object {
   var productLicenses: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, ProductLicense]
 }
 
+object ILicenseInformation {
+  @scala.inline
+  def apply(
+    expirationDate: stdLib.Date,
+    isActive: scala.Boolean,
+    isTrial: scala.Boolean,
+    onlicensechanged: js.Any,
+    productLicenses: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, ProductLicense]
+  ): ILicenseInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expirationDate")(expirationDate)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("isTrial")(isTrial)
+    __obj.updateDynamic("onlicensechanged")(onlicensechanged)
+    __obj.updateDynamic("productLicenses")(productLicenses)
+    __obj.asInstanceOf[ILicenseInformation]
+  }
+}
+

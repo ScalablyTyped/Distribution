@@ -17,3 +17,24 @@ trait WebNavigationSourceCallbackDetails extends WebNavigationUrlCallbackDetails
   var sourceTabId: scala.Double
 }
 
+object WebNavigationSourceCallbackDetails {
+  @scala.inline
+  def apply(
+    sourceFrameId: scala.Double,
+    sourceProcessId: scala.Double,
+    sourceTabId: scala.Double,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    url: java.lang.String
+  ): WebNavigationSourceCallbackDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sourceFrameId")(sourceFrameId)
+    __obj.updateDynamic("sourceProcessId")(sourceProcessId)
+    __obj.updateDynamic("sourceTabId")(sourceTabId)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WebNavigationSourceCallbackDetails]
+  }
+}
+

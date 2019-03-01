@@ -12,3 +12,12 @@ trait Owner extends js.Object {
   var username: java.lang.String
 }
 
+object Owner {
+  @scala.inline
+  def apply(username: java.lang.String): Owner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[Owner]
+  }
+}
+

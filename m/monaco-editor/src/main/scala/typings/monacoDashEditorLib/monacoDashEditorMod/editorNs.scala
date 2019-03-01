@@ -19,6 +19,8 @@ object editorNs extends js.Object {
     val zoomLevel: scala.Double = js.native
   }
   
+  trait BuiltinTheme extends js.Object
+  
   @js.native
   sealed trait ContentWidgetPositionPreference extends js.Object
   
@@ -27,6 +29,10 @@ object editorNs extends js.Object {
   
   @js.native
   sealed trait DefaultEndOfLine extends js.Object
+  
+  trait EditorAutoClosingStrategy extends js.Object
+  
+  trait EditorAutoSurroundStrategy extends js.Object
   
   trait EditorContribOptions extends js.Object {
     val acceptSuggestionOnCommitCharacter: scala.Boolean
@@ -558,7 +564,7 @@ object editorNs extends js.Object {
     def setValue(newValue: java.lang.String): scala.Unit = js.native
   }
   
-  trait ICodeEditorViewState extends js.Object {
+  trait ICodeEditorViewState extends IEditorViewState {
     var contributionsState: org.scalablytyped.runtime.StringDictionary[js.Any]
     var cursorState: js.Array[ICursorState]
     var viewState: IViewState
@@ -777,7 +783,7 @@ object editorNs extends js.Object {
     var theme: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  trait IDiffEditorModel extends js.Object {
+  trait IDiffEditorModel extends IEditorModel {
     /**
       * Modified model.
       */
@@ -816,7 +822,7 @@ object editorNs extends js.Object {
     var renderSideBySide: js.UndefOr[scala.Boolean] = js.undefined
   }
   
-  trait IDiffEditorViewState extends js.Object {
+  trait IDiffEditorViewState extends IEditorViewState {
     var modified: ICodeEditorViewState
     var original: ICodeEditorViewState
   }
@@ -1183,6 +1189,8 @@ object editorNs extends js.Object {
         monacoDashEditorLib.monacoDashEditorLibStrings.right | monacoDashEditorLib.monacoDashEditorLibStrings.left
       ] = js.undefined
   }
+  
+  trait IEditorModel extends js.Object
   
   trait IEditorMouseEvent extends js.Object {
     val event: monacoDashEditorLib.monacoDashEditorMod.IMouseEvent
@@ -1747,6 +1755,8 @@ object editorNs extends js.Object {
     var verticalSliderSize: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait IEditorViewState extends js.Object
+  
   trait IIdentifiedSingleEditOperation extends js.Object {
     /**
       * This indicates that this operation has "insert" semantics.
@@ -2123,7 +2133,7 @@ object editorNs extends js.Object {
   }
   
   @js.native
-  trait ITextModel extends js.Object {
+  trait ITextModel extends IEditorModel {
     /**
       * A unique identifier associated with this model.
       */
@@ -3588,16 +3598,11 @@ object editorNs extends js.Object {
       ] = js.native
   }
   
-  type BuiltinTheme = monacoDashEditorLib.monacoDashEditorLibStrings.vs | monacoDashEditorLib.monacoDashEditorLibStrings.`vs-dark` | monacoDashEditorLib.monacoDashEditorLibStrings.`hc-black`
-  type EditorAutoClosingStrategy = monacoDashEditorLib.monacoDashEditorLibStrings.always | monacoDashEditorLib.monacoDashEditorLibStrings.languageDefined | monacoDashEditorLib.monacoDashEditorLibStrings.beforeWhitespace | monacoDashEditorLib.monacoDashEditorLibStrings.never
-  type EditorAutoSurroundStrategy = monacoDashEditorLib.monacoDashEditorLibStrings.languageDefined | monacoDashEditorLib.monacoDashEditorLibStrings.quotes | monacoDashEditorLib.monacoDashEditorLibStrings.brackets | monacoDashEditorLib.monacoDashEditorLibStrings.never
   type ICommandHandler = js.Function1[/* repeated */ js.Any, scala.Unit]
   type ICursorStateComputer = js.Function1[
     /* inverseEditOperations */ js.Array[IIdentifiedSingleEditOperation], 
     js.Array[monacoDashEditorLib.monacoDashEditorMod.Selection] | scala.Null
   ]
-  type IEditorModel = ITextModel | IDiffEditorModel
-  type IEditorViewState = ICodeEditorViewState | IDiffEditorViewState
   type IModel = ITextModel
   type IReadOnlyModel = ITextModel
 }

@@ -37,3 +37,36 @@ trait ColumnDef extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColumnDef {
+  @scala.inline
+  def apply(
+    field: java.lang.String,
+    cellClass: java.lang.String = null,
+    cellFormatter: js.Function1[/* val */ js.Any, java.lang.String] = null,
+    cellTemplate: java.lang.String | jqueryLib.JQueryGenericPromise[java.lang.String] = null,
+    displayName: java.lang.String = null,
+    headerCellTemplate: java.lang.String | jqueryLib.JQueryGenericPromise[java.lang.String] = null,
+    headerClass: java.lang.String = null,
+    maxWidth: scala.Int | scala.Double = null,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    sortFn: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = null,
+    sortable: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String = null
+  ): ColumnDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("field")(field)
+    if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass)
+    if (cellFormatter != null) __obj.updateDynamic("cellFormatter")(cellFormatter)
+    if (cellTemplate != null) __obj.updateDynamic("cellTemplate")(cellTemplate.asInstanceOf[js.Any])
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (headerCellTemplate != null) __obj.updateDynamic("headerCellTemplate")(headerCellTemplate.asInstanceOf[js.Any])
+    if (headerClass != null) __obj.updateDynamic("headerClass")(headerClass)
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (sortFn != null) __obj.updateDynamic("sortFn")(sortFn)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ColumnDef]
+  }
+}
+

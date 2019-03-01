@@ -14,3 +14,22 @@ trait XHandoutMasterSupplier
   def getHandoutMasterPage(): activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage
 }
 
+object XHandoutMasterSupplier {
+  @scala.inline
+  def apply(
+    HandoutMasterPage: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage,
+    acquire: js.Function0[scala.Unit],
+    getHandoutMasterPage: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XDrawPage],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XHandoutMasterSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("HandoutMasterPage")(HandoutMasterPage)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getHandoutMasterPage")(getHandoutMasterPage)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XHandoutMasterSupplier]
+  }
+}
+

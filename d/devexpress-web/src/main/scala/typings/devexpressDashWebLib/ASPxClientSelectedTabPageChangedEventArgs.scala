@@ -11,3 +11,14 @@ trait ASPxClientSelectedTabPageChangedEventArgs extends ASPxClientEventArgs {
   var TabContainerName: java.lang.String
 }
 
+object ASPxClientSelectedTabPageChangedEventArgs {
+  @scala.inline
+  def apply(PreviousPage: java.lang.String, SelectedPage: java.lang.String, TabContainerName: java.lang.String): ASPxClientSelectedTabPageChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PreviousPage")(PreviousPage)
+    __obj.updateDynamic("SelectedPage")(SelectedPage)
+    __obj.updateDynamic("TabContainerName")(TabContainerName)
+    __obj.asInstanceOf[ASPxClientSelectedTabPageChangedEventArgs]
+  }
+}
+

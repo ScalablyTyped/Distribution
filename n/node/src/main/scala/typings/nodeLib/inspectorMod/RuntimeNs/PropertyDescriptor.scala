@@ -55,3 +55,32 @@ trait PropertyDescriptor extends js.Object {
   var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PropertyDescriptor {
+  @scala.inline
+  def apply(
+    configurable: scala.Boolean,
+    enumerable: scala.Boolean,
+    name: java.lang.String,
+    get: RemoteObject = null,
+    isOwn: js.UndefOr[scala.Boolean] = js.undefined,
+    set: RemoteObject = null,
+    symbol: RemoteObject = null,
+    value: RemoteObject = null,
+    wasThrown: js.UndefOr[scala.Boolean] = js.undefined,
+    writable: js.UndefOr[scala.Boolean] = js.undefined
+  ): PropertyDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configurable")(configurable)
+    __obj.updateDynamic("enumerable")(enumerable)
+    __obj.updateDynamic("name")(name)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (!js.isUndefined(isOwn)) __obj.updateDynamic("isOwn")(isOwn)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(wasThrown)) __obj.updateDynamic("wasThrown")(wasThrown)
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    __obj.asInstanceOf[PropertyDescriptor]
+  }
+}
+

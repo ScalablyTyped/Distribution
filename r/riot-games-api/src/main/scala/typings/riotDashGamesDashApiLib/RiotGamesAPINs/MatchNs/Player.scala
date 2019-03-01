@@ -12,3 +12,20 @@ trait Player extends js.Object {
   var summonerName: java.lang.String
 }
 
+object Player {
+  @scala.inline
+  def apply(
+    matchHistoryUri: java.lang.String,
+    profileIcon: scala.Double,
+    summonerId: scala.Double,
+    summonerName: java.lang.String
+  ): Player = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("matchHistoryUri")(matchHistoryUri)
+    __obj.updateDynamic("profileIcon")(profileIcon)
+    __obj.updateDynamic("summonerId")(summonerId)
+    __obj.updateDynamic("summonerName")(summonerName)
+    __obj.asInstanceOf[Player]
+  }
+}
+

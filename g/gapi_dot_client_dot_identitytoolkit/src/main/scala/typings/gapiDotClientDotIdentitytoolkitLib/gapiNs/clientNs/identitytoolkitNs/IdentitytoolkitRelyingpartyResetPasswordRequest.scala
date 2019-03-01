@@ -16,3 +16,20 @@ trait IdentitytoolkitRelyingpartyResetPasswordRequest extends js.Object {
   var oobCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartyResetPasswordRequest {
+  @scala.inline
+  def apply(
+    email: java.lang.String = null,
+    newPassword: java.lang.String = null,
+    oldPassword: java.lang.String = null,
+    oobCode: java.lang.String = null
+  ): IdentitytoolkitRelyingpartyResetPasswordRequest = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (newPassword != null) __obj.updateDynamic("newPassword")(newPassword)
+    if (oldPassword != null) __obj.updateDynamic("oldPassword")(oldPassword)
+    if (oobCode != null) __obj.updateDynamic("oobCode")(oobCode)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartyResetPasswordRequest]
+  }
+}
+

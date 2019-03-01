@@ -16,3 +16,16 @@ trait NetworkAssociationArgs extends js.Object {
   val subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object NetworkAssociationArgs {
+  @scala.inline
+  def apply(
+    clientVpnEndpointId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): NetworkAssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientVpnEndpointId")(clientVpnEndpointId.asInstanceOf[js.Any])
+    __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkAssociationArgs]
+  }
+}
+

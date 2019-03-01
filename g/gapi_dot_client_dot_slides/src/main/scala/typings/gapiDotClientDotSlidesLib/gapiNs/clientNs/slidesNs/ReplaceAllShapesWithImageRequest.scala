@@ -35,3 +35,20 @@ trait ReplaceAllShapesWithImageRequest extends js.Object {
   var replaceMethod: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReplaceAllShapesWithImageRequest {
+  @scala.inline
+  def apply(
+    containsText: SubstringMatchCriteria = null,
+    imageUrl: java.lang.String = null,
+    pageObjectIds: js.Array[java.lang.String] = null,
+    replaceMethod: java.lang.String = null
+  ): ReplaceAllShapesWithImageRequest = {
+    val __obj = js.Dynamic.literal()
+    if (containsText != null) __obj.updateDynamic("containsText")(containsText)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (pageObjectIds != null) __obj.updateDynamic("pageObjectIds")(pageObjectIds)
+    if (replaceMethod != null) __obj.updateDynamic("replaceMethod")(replaceMethod)
+    __obj.asInstanceOf[ReplaceAllShapesWithImageRequest]
+  }
+}
+

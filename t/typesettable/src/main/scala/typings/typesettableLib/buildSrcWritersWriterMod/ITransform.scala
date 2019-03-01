@@ -16,3 +16,13 @@ trait ITransform extends js.Object {
   var translate: js.Tuple2[scala.Double, scala.Double]
 }
 
+object ITransform {
+  @scala.inline
+  def apply(rotate: scala.Double, translate: js.Tuple2[scala.Double, scala.Double]): ITransform = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("translate")(translate)
+    __obj.asInstanceOf[ITransform]
+  }
+}
+

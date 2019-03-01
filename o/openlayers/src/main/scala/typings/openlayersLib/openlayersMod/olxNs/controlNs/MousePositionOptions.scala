@@ -14,3 +14,24 @@ trait MousePositionOptions extends js.Object {
   var undefinedHTML: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MousePositionOptions {
+  @scala.inline
+  def apply(
+    projection: openlayersLib.openlayersMod.ProjectionLike,
+    className: java.lang.String = null,
+    coordinateFormat: openlayersLib.openlayersMod.CoordinateFormatType = null,
+    render: js.Function1[/* event */ openlayersLib.openlayersMod.MapEvent, _] = null,
+    target: stdLib.Element = null,
+    undefinedHTML: java.lang.String = null
+  ): MousePositionOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (coordinateFormat != null) __obj.updateDynamic("coordinateFormat")(coordinateFormat)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (undefinedHTML != null) __obj.updateDynamic("undefinedHTML")(undefinedHTML)
+    __obj.asInstanceOf[MousePositionOptions]
+  }
+}
+

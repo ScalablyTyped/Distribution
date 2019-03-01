@@ -11,3 +11,18 @@ trait Option extends js.Object {
   var run: js.UndefOr[Callback] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    cheerio: cheerioLib.CheerioStatic = null,
+    parserOptions: cheerioLib.CheerioOptionsInterface = null,
+    run: Callback = null
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    if (cheerio != null) __obj.updateDynamic("cheerio")(cheerio)
+    if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions)
+    if (run != null) __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[Option]
+  }
+}
+

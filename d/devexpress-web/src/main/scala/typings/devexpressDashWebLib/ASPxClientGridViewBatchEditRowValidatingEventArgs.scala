@@ -21,3 +21,13 @@ trait ASPxClientGridViewBatchEditRowValidatingEventArgs extends ASPxClientEventA
   var visibleIndex: scala.Double
 }
 
+object ASPxClientGridViewBatchEditRowValidatingEventArgs {
+  @scala.inline
+  def apply(validationInfo: js.Object, visibleIndex: scala.Double): ASPxClientGridViewBatchEditRowValidatingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("validationInfo")(validationInfo)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[ASPxClientGridViewBatchEditRowValidatingEventArgs]
+  }
+}
+

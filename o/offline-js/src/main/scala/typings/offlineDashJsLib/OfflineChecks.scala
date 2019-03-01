@@ -13,3 +13,14 @@ trait OfflineChecks extends js.Object {
   var xhr: js.UndefOr[OfflineCheck] = js.undefined
 }
 
+object OfflineChecks {
+  @scala.inline
+  def apply(active: java.lang.String = null, image: OfflineCheck = null, xhr: OfflineCheck = null): OfflineChecks = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[OfflineChecks]
+  }
+}
+

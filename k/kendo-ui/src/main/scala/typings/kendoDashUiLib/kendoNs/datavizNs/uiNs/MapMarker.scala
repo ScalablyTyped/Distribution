@@ -12,3 +12,20 @@ trait MapMarker extends js.Object {
   var tooltip: js.UndefOr[MapMarkerTooltip] = js.undefined
 }
 
+object MapMarker {
+  @scala.inline
+  def apply(
+    location: js.Any | kendoDashUiLib.kendoNs.datavizNs.mapNs.Location = null,
+    shape: java.lang.String = null,
+    title: java.lang.String = null,
+    tooltip: MapMarkerTooltip = null
+  ): MapMarker = {
+    val __obj = js.Dynamic.literal()
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[MapMarker]
+  }
+}
+

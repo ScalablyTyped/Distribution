@@ -5,7 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Hr extends js.Object {
+trait Hr
+  extends markedLib.markedMod.markedNs.Token {
   var `type`: markedLib.markedLibStrings.hr
+}
+
+object Hr {
+  @scala.inline
+  def apply(`type`: markedLib.markedLibStrings.hr): Hr = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Hr]
+  }
 }
 

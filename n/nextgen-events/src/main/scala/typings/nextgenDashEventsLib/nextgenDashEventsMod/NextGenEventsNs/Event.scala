@@ -15,3 +15,26 @@ trait Event extends js.Object {
   def callback(interrupt: js.Any): js.Any
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    args: js.Any,
+    callback: js.Function1[js.Any, js.Any],
+    emitter: nextgenDashEventsLib.nextgenDashEventsMod.NextGenEvents,
+    interrupt: scala.Null,
+    mice: scala.Double,
+    name: java.lang.String,
+    sync: scala.Boolean
+  ): Event = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("emitter")(emitter)
+    __obj.updateDynamic("interrupt")(interrupt)
+    __obj.updateDynamic("mice")(mice)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("sync")(sync)
+    __obj.asInstanceOf[Event]
+  }
+}
+

@@ -17,3 +17,28 @@ trait ItemContext[K, D] extends js.Object {
   var parentKey: js.UndefOr[K] = js.undefined
 }
 
+object ItemContext {
+  @scala.inline
+  def apply[K, D](
+    data: D,
+    datasource: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D],
+    index: scala.Double,
+    key: K,
+    parentElement: stdLib.Element,
+    depth: scala.Int | scala.Double = null,
+    leaf: js.UndefOr[scala.Boolean] = js.undefined,
+    parentKey: K = null
+  ): ItemContext[K, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("datasource")(datasource)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("parentElement")(parentElement)
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(leaf)) __obj.updateDynamic("leaf")(leaf)
+    if (parentKey != null) __obj.updateDynamic("parentKey")(parentKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ItemContext[K, D]]
+  }
+}
+

@@ -129,3 +129,58 @@ trait SimplePaginationOptions extends js.Object {
   var useStartEdge: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SimplePaginationOptions {
+  @scala.inline
+  def apply(
+    cssStyle: java.lang.String = null,
+    currentPage: scala.Int | scala.Double = null,
+    displayedPages: scala.Int | scala.Double = null,
+    edges: scala.Int | scala.Double = null,
+    ellipsePageSet: js.UndefOr[scala.Boolean] = js.undefined,
+    ellipseText: java.lang.String = null,
+    hrefTextPrefix: java.lang.String = null,
+    hrefTextSuffix: java.lang.String = null,
+    invertPageOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    items: scala.Int | scala.Double = null,
+    itemsOnPage: scala.Int | scala.Double = null,
+    labelMap: js.Array[_] = null,
+    listStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    nextAtFront: js.UndefOr[scala.Boolean] = js.undefined,
+    nextText: java.lang.String = null,
+    onInit: js.Function0[scala.Unit] = null,
+    onPageClick: js.Function2[/* page */ scala.Double, /* event */ js.Any, scala.Unit] = null,
+    pages: scala.Int | scala.Double = null,
+    prevText: java.lang.String = null,
+    selectOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    useAnchors: js.UndefOr[scala.Boolean] = js.undefined,
+    useEndEdge: js.UndefOr[scala.Boolean] = js.undefined,
+    useStartEdge: js.UndefOr[scala.Boolean] = js.undefined
+  ): SimplePaginationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cssStyle != null) __obj.updateDynamic("cssStyle")(cssStyle)
+    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (displayedPages != null) __obj.updateDynamic("displayedPages")(displayedPages.asInstanceOf[js.Any])
+    if (edges != null) __obj.updateDynamic("edges")(edges.asInstanceOf[js.Any])
+    if (!js.isUndefined(ellipsePageSet)) __obj.updateDynamic("ellipsePageSet")(ellipsePageSet)
+    if (ellipseText != null) __obj.updateDynamic("ellipseText")(ellipseText)
+    if (hrefTextPrefix != null) __obj.updateDynamic("hrefTextPrefix")(hrefTextPrefix)
+    if (hrefTextSuffix != null) __obj.updateDynamic("hrefTextSuffix")(hrefTextSuffix)
+    if (!js.isUndefined(invertPageOrder)) __obj.updateDynamic("invertPageOrder")(invertPageOrder)
+    if (items != null) __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    if (itemsOnPage != null) __obj.updateDynamic("itemsOnPage")(itemsOnPage.asInstanceOf[js.Any])
+    if (labelMap != null) __obj.updateDynamic("labelMap")(labelMap)
+    if (!js.isUndefined(listStyle)) __obj.updateDynamic("listStyle")(listStyle)
+    if (!js.isUndefined(nextAtFront)) __obj.updateDynamic("nextAtFront")(nextAtFront)
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
+    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (onPageClick != null) __obj.updateDynamic("onPageClick")(onPageClick)
+    if (pages != null) __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    if (prevText != null) __obj.updateDynamic("prevText")(prevText)
+    if (!js.isUndefined(selectOnClick)) __obj.updateDynamic("selectOnClick")(selectOnClick)
+    if (!js.isUndefined(useAnchors)) __obj.updateDynamic("useAnchors")(useAnchors)
+    if (!js.isUndefined(useEndEdge)) __obj.updateDynamic("useEndEdge")(useEndEdge)
+    if (!js.isUndefined(useStartEdge)) __obj.updateDynamic("useStartEdge")(useStartEdge)
+    __obj.asInstanceOf[SimplePaginationOptions]
+  }
+}
+

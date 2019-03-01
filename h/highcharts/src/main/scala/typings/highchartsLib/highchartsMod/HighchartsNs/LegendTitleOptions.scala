@@ -20,3 +20,13 @@ trait LegendTitleOptions extends js.Object {
   var text: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object LegendTitleOptions {
+  @scala.inline
+  def apply(style: CSSObject = null, text: java.lang.String = null): LegendTitleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[LegendTitleOptions]
+  }
+}
+

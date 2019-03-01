@@ -10,3 +10,13 @@ trait Anon_End extends js.Object {
   var start: js.Any
 }
 
+object Anon_End {
+  @scala.inline
+  def apply(end: js.Any, start: js.Any): Anon_End = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Anon_End]
+  }
+}
+

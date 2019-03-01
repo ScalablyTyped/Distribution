@@ -10,3 +10,22 @@ trait SchedulerResizeEvent extends SchedulerEvent {
   var slot: js.UndefOr[js.Any] = js.undefined
 }
 
+object SchedulerResizeEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Scheduler,
+    event: kendoDashUiLib.kendoNs.dataNs.SchedulerEvent = null,
+    slot: js.Any = null
+  ): SchedulerResizeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (slot != null) __obj.updateDynamic("slot")(slot)
+    __obj.asInstanceOf[SchedulerResizeEvent]
+  }
+}
+

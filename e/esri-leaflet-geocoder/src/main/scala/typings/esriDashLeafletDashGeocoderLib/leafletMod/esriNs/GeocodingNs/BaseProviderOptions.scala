@@ -12,3 +12,20 @@ trait BaseProviderOptions extends js.Object {
   var token: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object BaseProviderOptions {
+  @scala.inline
+  def apply(
+    attribution: java.lang.String = null,
+    label: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    token: java.lang.String = null
+  ): BaseProviderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attribution != null) __obj.updateDynamic("attribution")(attribution)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[BaseProviderOptions]
+  }
+}
+

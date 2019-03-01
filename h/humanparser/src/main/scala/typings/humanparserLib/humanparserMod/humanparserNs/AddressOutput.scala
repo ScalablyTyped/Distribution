@@ -13,3 +13,22 @@ trait AddressOutput extends js.Object {
   var zip: java.lang.String
 }
 
+object AddressOutput {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    city: java.lang.String,
+    fullAddress: java.lang.String,
+    state: java.lang.String,
+    zip: java.lang.String
+  ): AddressOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("city")(city)
+    __obj.updateDynamic("fullAddress")(fullAddress)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("zip")(zip)
+    __obj.asInstanceOf[AddressOutput]
+  }
+}
+

@@ -71,3 +71,38 @@ trait GetIosPostInstallAttributionResponse extends js.Object {
   var utmSource: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetIosPostInstallAttributionResponse {
+  @scala.inline
+  def apply(
+    appMinimumVersion: java.lang.String = null,
+    attributionConfidence: java.lang.String = null,
+    deepLink: java.lang.String = null,
+    externalBrowserDestinationLink: java.lang.String = null,
+    fallbackLink: java.lang.String = null,
+    invitationId: java.lang.String = null,
+    isStrongMatchExecutable: js.UndefOr[scala.Boolean] = js.undefined,
+    matchMessage: java.lang.String = null,
+    requestedLink: java.lang.String = null,
+    resolvedLink: java.lang.String = null,
+    utmCampaign: java.lang.String = null,
+    utmMedium: java.lang.String = null,
+    utmSource: java.lang.String = null
+  ): GetIosPostInstallAttributionResponse = {
+    val __obj = js.Dynamic.literal()
+    if (appMinimumVersion != null) __obj.updateDynamic("appMinimumVersion")(appMinimumVersion)
+    if (attributionConfidence != null) __obj.updateDynamic("attributionConfidence")(attributionConfidence)
+    if (deepLink != null) __obj.updateDynamic("deepLink")(deepLink)
+    if (externalBrowserDestinationLink != null) __obj.updateDynamic("externalBrowserDestinationLink")(externalBrowserDestinationLink)
+    if (fallbackLink != null) __obj.updateDynamic("fallbackLink")(fallbackLink)
+    if (invitationId != null) __obj.updateDynamic("invitationId")(invitationId)
+    if (!js.isUndefined(isStrongMatchExecutable)) __obj.updateDynamic("isStrongMatchExecutable")(isStrongMatchExecutable)
+    if (matchMessage != null) __obj.updateDynamic("matchMessage")(matchMessage)
+    if (requestedLink != null) __obj.updateDynamic("requestedLink")(requestedLink)
+    if (resolvedLink != null) __obj.updateDynamic("resolvedLink")(resolvedLink)
+    if (utmCampaign != null) __obj.updateDynamic("utmCampaign")(utmCampaign)
+    if (utmMedium != null) __obj.updateDynamic("utmMedium")(utmMedium)
+    if (utmSource != null) __obj.updateDynamic("utmSource")(utmSource)
+    __obj.asInstanceOf[GetIosPostInstallAttributionResponse]
+  }
+}
+

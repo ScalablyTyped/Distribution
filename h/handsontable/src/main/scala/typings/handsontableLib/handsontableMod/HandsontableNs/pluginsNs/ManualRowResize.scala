@@ -34,3 +34,90 @@ trait ManualRowResize extends Base {
   def setupHandlePosition(TH: stdLib.HTMLElement): scala.Boolean | scala.Unit
 }
 
+object ManualRowResize {
+  @scala.inline
+  def apply(
+    addHook: js.Function2[java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    autoresizeTimeout: js.Function0[scala.Unit] | scala.Unit,
+    callOnPluginsReady: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    checkIfRowHeader: js.Function1[stdLib.HTMLElement, scala.Boolean],
+    clearHooks: js.Function0[scala.Unit],
+    clearManualSize: js.Function1[scala.Double, scala.Unit],
+    currentRow: scala.Double | scala.Unit,
+    currentTH: stdLib.HTMLElement | scala.Unit,
+    currentWidth: scala.Double | scala.Unit,
+    dblclick: scala.Double,
+    destroy: js.Function0[scala.Unit],
+    disablePlugin: js.Function0[scala.Unit],
+    enablePlugin: js.Function0[scala.Unit],
+    enabled: scala.Boolean,
+    eventManager: EventManager,
+    getTHFromTargetElement: js.Function1[stdLib.HTMLElement, stdLib.HTMLElement],
+    guide: stdLib.HTMLElement,
+    handle: stdLib.HTMLElement,
+    hideHandleAndGuide: js.Function0[scala.Unit],
+    init: js.Function0[scala.Unit],
+    initialized: scala.Boolean,
+    isPluginsReady: scala.Boolean,
+    loadManualRowHeights: js.Function0[scala.Unit],
+    manualRowHeights: js.Array[_],
+    newSize: scala.Double | scala.Unit,
+    pluginName: java.lang.String,
+    pluginsInitializedCallback: js.Array[_],
+    pressed: handsontableLib.handsontableMod.underscoreHandsontableNs.Core | scala.Unit,
+    refreshGuidePosition: js.Function0[scala.Unit],
+    refreshHandlePosition: js.Function0[scala.Unit],
+    removeHook: js.Function1[java.lang.String, scala.Unit],
+    saveManualRowHeights: js.Function0[scala.Unit],
+    selectedRows: js.Array[_],
+    setManualSize: js.Function2[scala.Double, scala.Double, scala.Double],
+    setupGuidePosition: js.Function0[scala.Unit],
+    setupHandlePosition: js.Function1[stdLib.HTMLElement, scala.Boolean | scala.Unit],
+    startOffset: scala.Double | scala.Unit,
+    startWidth: scala.Double | scala.Unit,
+    startY: scala.Double | scala.Unit
+  ): ManualRowResize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addHook")(addHook)
+    __obj.updateDynamic("autoresizeTimeout")(autoresizeTimeout.asInstanceOf[js.Any])
+    __obj.updateDynamic("callOnPluginsReady")(callOnPluginsReady)
+    __obj.updateDynamic("checkIfRowHeader")(checkIfRowHeader)
+    __obj.updateDynamic("clearHooks")(clearHooks)
+    __obj.updateDynamic("clearManualSize")(clearManualSize)
+    __obj.updateDynamic("currentRow")(currentRow.asInstanceOf[js.Any])
+    __obj.updateDynamic("currentTH")(currentTH.asInstanceOf[js.Any])
+    __obj.updateDynamic("currentWidth")(currentWidth.asInstanceOf[js.Any])
+    __obj.updateDynamic("dblclick")(dblclick)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("disablePlugin")(disablePlugin)
+    __obj.updateDynamic("enablePlugin")(enablePlugin)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("eventManager")(eventManager)
+    __obj.updateDynamic("getTHFromTargetElement")(getTHFromTargetElement)
+    __obj.updateDynamic("guide")(guide)
+    __obj.updateDynamic("handle")(handle)
+    __obj.updateDynamic("hideHandleAndGuide")(hideHandleAndGuide)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("initialized")(initialized)
+    __obj.updateDynamic("isPluginsReady")(isPluginsReady)
+    __obj.updateDynamic("loadManualRowHeights")(loadManualRowHeights)
+    __obj.updateDynamic("manualRowHeights")(manualRowHeights)
+    __obj.updateDynamic("newSize")(newSize.asInstanceOf[js.Any])
+    __obj.updateDynamic("pluginName")(pluginName)
+    __obj.updateDynamic("pluginsInitializedCallback")(pluginsInitializedCallback)
+    __obj.updateDynamic("pressed")(pressed.asInstanceOf[js.Any])
+    __obj.updateDynamic("refreshGuidePosition")(refreshGuidePosition)
+    __obj.updateDynamic("refreshHandlePosition")(refreshHandlePosition)
+    __obj.updateDynamic("removeHook")(removeHook)
+    __obj.updateDynamic("saveManualRowHeights")(saveManualRowHeights)
+    __obj.updateDynamic("selectedRows")(selectedRows)
+    __obj.updateDynamic("setManualSize")(setManualSize)
+    __obj.updateDynamic("setupGuidePosition")(setupGuidePosition)
+    __obj.updateDynamic("setupHandlePosition")(setupHandlePosition)
+    __obj.updateDynamic("startOffset")(startOffset.asInstanceOf[js.Any])
+    __obj.updateDynamic("startWidth")(startWidth.asInstanceOf[js.Any])
+    __obj.updateDynamic("startY")(startY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ManualRowResize]
+  }
+}
+

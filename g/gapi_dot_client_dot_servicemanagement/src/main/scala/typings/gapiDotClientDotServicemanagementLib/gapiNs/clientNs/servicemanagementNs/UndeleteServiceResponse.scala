@@ -10,3 +10,12 @@ trait UndeleteServiceResponse extends js.Object {
   var service: js.UndefOr[ManagedService] = js.undefined
 }
 
+object UndeleteServiceResponse {
+  @scala.inline
+  def apply(service: ManagedService = null): UndeleteServiceResponse = {
+    val __obj = js.Dynamic.literal()
+    if (service != null) __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[UndeleteServiceResponse]
+  }
+}
+

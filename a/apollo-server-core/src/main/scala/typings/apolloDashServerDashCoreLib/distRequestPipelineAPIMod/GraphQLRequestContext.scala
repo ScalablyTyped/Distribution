@@ -17,3 +17,30 @@ trait GraphQLRequestContext[TContext] extends js.Object {
   val response: js.UndefOr[GraphQLResponse] = js.undefined
 }
 
+object GraphQLRequestContext {
+  @scala.inline
+  def apply[TContext](
+    cache: apolloDashServerDashCachingLib.distKeyValueCacheMod.KeyValueCache[java.lang.String],
+    context: TContext,
+    request: GraphQLRequest,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    document: graphqlLib.languageAstMod.DocumentNode = null,
+    operation: graphqlLib.languageAstMod.OperationDefinitionNode = null,
+    operationName: java.lang.String = null,
+    queryHash: java.lang.String = null,
+    response: GraphQLResponse = null
+  ): GraphQLRequestContext[TContext] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.updateDynamic("request")(request)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
+    if (queryHash != null) __obj.updateDynamic("queryHash")(queryHash)
+    if (response != null) __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[GraphQLRequestContext[TContext]]
+  }
+}
+

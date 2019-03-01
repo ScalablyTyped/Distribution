@@ -17,3 +17,30 @@ trait IssueData extends js.Object {
   var totalReconnectsSuccess: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IssueData {
+  @scala.inline
+  def apply(
+    messages: js.Array[java.lang.String],
+    server: java.lang.String,
+    tokens: js.Tuple2[java.lang.String, java.lang.String],
+    failures: scala.Int | scala.Double = null,
+    totalDownTime: scala.Int | scala.Double = null,
+    totalFailures: scala.Int | scala.Double = null,
+    totalReconnectsAttempted: scala.Int | scala.Double = null,
+    totalReconnectsFailed: scala.Int | scala.Double = null,
+    totalReconnectsSuccess: scala.Int | scala.Double = null
+  ): IssueData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("messages")(messages)
+    __obj.updateDynamic("server")(server)
+    __obj.updateDynamic("tokens")(tokens)
+    if (failures != null) __obj.updateDynamic("failures")(failures.asInstanceOf[js.Any])
+    if (totalDownTime != null) __obj.updateDynamic("totalDownTime")(totalDownTime.asInstanceOf[js.Any])
+    if (totalFailures != null) __obj.updateDynamic("totalFailures")(totalFailures.asInstanceOf[js.Any])
+    if (totalReconnectsAttempted != null) __obj.updateDynamic("totalReconnectsAttempted")(totalReconnectsAttempted.asInstanceOf[js.Any])
+    if (totalReconnectsFailed != null) __obj.updateDynamic("totalReconnectsFailed")(totalReconnectsFailed.asInstanceOf[js.Any])
+    if (totalReconnectsSuccess != null) __obj.updateDynamic("totalReconnectsSuccess")(totalReconnectsSuccess.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IssueData]
+  }
+}
+

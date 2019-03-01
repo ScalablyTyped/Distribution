@@ -11,3 +11,18 @@ trait HistoryAdapter extends js.Object {
   def trigger(element: js.Any, event: java.lang.String): scala.Unit
 }
 
+object HistoryAdapter {
+  @scala.inline
+  def apply(
+    bind: js.Function3[js.Any, java.lang.String, js.Function0[scala.Unit], scala.Unit],
+    onDomLoad: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    trigger: js.Function2[js.Any, java.lang.String, scala.Unit]
+  ): HistoryAdapter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bind")(bind)
+    __obj.updateDynamic("onDomLoad")(onDomLoad)
+    __obj.updateDynamic("trigger")(trigger)
+    __obj.asInstanceOf[HistoryAdapter]
+  }
+}
+

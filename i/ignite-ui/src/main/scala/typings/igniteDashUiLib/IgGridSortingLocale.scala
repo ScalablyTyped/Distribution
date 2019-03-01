@@ -87,3 +87,47 @@ trait IgGridSortingLocale
   var unsortedColumnTooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridSortingLocale {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridSortingLocale
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    ascending: java.lang.String = null,
+    descending: java.lang.String = null,
+    featureChooserSortAsc: java.lang.String = null,
+    featureChooserSortDesc: java.lang.String = null,
+    featureChooserText: java.lang.String = null,
+    modalDialogButtonApplyText: java.lang.String = null,
+    modalDialogButtonCancelText: java.lang.String = null,
+    modalDialogCaptionButtonAsc: java.lang.String = null,
+    modalDialogCaptionButtonDesc: java.lang.String = null,
+    modalDialogCaptionButtonUnsort: java.lang.String = null,
+    modalDialogCaptionText: java.lang.String = null,
+    modalDialogResetButton: java.lang.String = null,
+    modalDialogSortByButtonText: java.lang.String = null,
+    sortedColumnTooltip: java.lang.String = null,
+    unsortedColumnTooltip: java.lang.String = null
+  ): IgGridSortingLocale = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (ascending != null) __obj.updateDynamic("ascending")(ascending)
+    if (descending != null) __obj.updateDynamic("descending")(descending)
+    if (featureChooserSortAsc != null) __obj.updateDynamic("featureChooserSortAsc")(featureChooserSortAsc)
+    if (featureChooserSortDesc != null) __obj.updateDynamic("featureChooserSortDesc")(featureChooserSortDesc)
+    if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText)
+    if (modalDialogButtonApplyText != null) __obj.updateDynamic("modalDialogButtonApplyText")(modalDialogButtonApplyText)
+    if (modalDialogButtonCancelText != null) __obj.updateDynamic("modalDialogButtonCancelText")(modalDialogButtonCancelText)
+    if (modalDialogCaptionButtonAsc != null) __obj.updateDynamic("modalDialogCaptionButtonAsc")(modalDialogCaptionButtonAsc)
+    if (modalDialogCaptionButtonDesc != null) __obj.updateDynamic("modalDialogCaptionButtonDesc")(modalDialogCaptionButtonDesc)
+    if (modalDialogCaptionButtonUnsort != null) __obj.updateDynamic("modalDialogCaptionButtonUnsort")(modalDialogCaptionButtonUnsort)
+    if (modalDialogCaptionText != null) __obj.updateDynamic("modalDialogCaptionText")(modalDialogCaptionText)
+    if (modalDialogResetButton != null) __obj.updateDynamic("modalDialogResetButton")(modalDialogResetButton)
+    if (modalDialogSortByButtonText != null) __obj.updateDynamic("modalDialogSortByButtonText")(modalDialogSortByButtonText)
+    if (sortedColumnTooltip != null) __obj.updateDynamic("sortedColumnTooltip")(sortedColumnTooltip)
+    if (unsortedColumnTooltip != null) __obj.updateDynamic("unsortedColumnTooltip")(unsortedColumnTooltip)
+    __obj.asInstanceOf[IgGridSortingLocale]
+  }
+}
+

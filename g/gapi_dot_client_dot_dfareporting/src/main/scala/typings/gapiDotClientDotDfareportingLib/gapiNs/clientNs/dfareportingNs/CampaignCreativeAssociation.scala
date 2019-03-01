@@ -12,3 +12,13 @@ trait CampaignCreativeAssociation extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CampaignCreativeAssociation {
+  @scala.inline
+  def apply(creativeId: java.lang.String = null, kind: java.lang.String = null): CampaignCreativeAssociation = {
+    val __obj = js.Dynamic.literal()
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[CampaignCreativeAssociation]
+  }
+}
+

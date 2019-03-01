@@ -25,3 +25,40 @@ trait FancyThumbs extends js.Object {
   def update(): scala.Unit
 }
 
+object FancyThumbs {
+  @scala.inline
+  def apply(
+    create: js.Function0[scala.Unit],
+    focus: js.Function1[scala.Double, scala.Unit],
+    hide: js.Function0[scala.Unit],
+    init: js.Function1[FancyBoxInstance, scala.Unit],
+    instance: FancyBoxInstance,
+    isActive: scala.Boolean,
+    isVisible: scala.Boolean,
+    opts: FancyThumbsOptions,
+    show: js.Function0[scala.Unit],
+    toggle: js.Function0[scala.Unit],
+    update: js.Function0[scala.Unit],
+    $button: JQuery = null,
+    $grid: JQuery = null,
+    $list: JQuery = null
+  ): FancyThumbs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("focus")(focus)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("instance")(instance)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("isVisible")(isVisible)
+    __obj.updateDynamic("opts")(opts)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("toggle")(toggle)
+    __obj.updateDynamic("update")(update)
+    if ($button != null) __obj.updateDynamic("$button")($button)
+    if ($grid != null) __obj.updateDynamic("$grid")($grid)
+    if ($list != null) __obj.updateDynamic("$list")($list)
+    __obj.asInstanceOf[FancyThumbs]
+  }
+}
+

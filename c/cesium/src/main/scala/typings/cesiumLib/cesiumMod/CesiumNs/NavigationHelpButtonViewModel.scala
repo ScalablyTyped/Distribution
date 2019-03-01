@@ -13,3 +13,22 @@ trait NavigationHelpButtonViewModel extends js.Object {
   var tooltip: java.lang.String
 }
 
+object NavigationHelpButtonViewModel {
+  @scala.inline
+  def apply(
+    command: Command,
+    showClick: Command,
+    showInstructions: scala.Boolean,
+    showTouch: Command,
+    tooltip: java.lang.String
+  ): NavigationHelpButtonViewModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("showClick")(showClick)
+    __obj.updateDynamic("showInstructions")(showInstructions)
+    __obj.updateDynamic("showTouch")(showTouch)
+    __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[NavigationHelpButtonViewModel]
+  }
+}
+

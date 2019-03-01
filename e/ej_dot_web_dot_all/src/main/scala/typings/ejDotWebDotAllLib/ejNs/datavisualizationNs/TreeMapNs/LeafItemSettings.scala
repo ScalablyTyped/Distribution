@@ -44,3 +44,30 @@ trait LeafItemSettings extends js.Object {
   var textOverflow: js.UndefOr[TextOverflow | java.lang.String] = js.undefined
 }
 
+object LeafItemSettings {
+  @scala.inline
+  def apply(
+    borderBrush: java.lang.String = null,
+    borderThickness: scala.Int | scala.Double = null,
+    gap: scala.Int | scala.Double = null,
+    itemTemplate: java.lang.String = null,
+    labelPath: java.lang.String = null,
+    labelPosition: Position | java.lang.String = null,
+    labelVisibilityMode: VisibilityMode | java.lang.String = null,
+    showLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    textOverflow: TextOverflow | java.lang.String = null
+  ): LeafItemSettings = {
+    val __obj = js.Dynamic.literal()
+    if (borderBrush != null) __obj.updateDynamic("borderBrush")(borderBrush)
+    if (borderThickness != null) __obj.updateDynamic("borderThickness")(borderThickness.asInstanceOf[js.Any])
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate)
+    if (labelPath != null) __obj.updateDynamic("labelPath")(labelPath)
+    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition.asInstanceOf[js.Any])
+    if (labelVisibilityMode != null) __obj.updateDynamic("labelVisibilityMode")(labelVisibilityMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(showLabels)) __obj.updateDynamic("showLabels")(showLabels)
+    if (textOverflow != null) __obj.updateDynamic("textOverflow")(textOverflow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LeafItemSettings]
+  }
+}
+

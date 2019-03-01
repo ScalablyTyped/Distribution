@@ -21,3 +21,18 @@ trait MainRouteTableAssociationState extends js.Object {
   val vpcId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object MainRouteTableAssociationState {
+  @scala.inline
+  def apply(
+    originalRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    routeTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): MainRouteTableAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (originalRouteTableId != null) __obj.updateDynamic("originalRouteTableId")(originalRouteTableId.asInstanceOf[js.Any])
+    if (routeTableId != null) __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MainRouteTableAssociationState]
+  }
+}
+

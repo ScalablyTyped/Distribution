@@ -15,3 +15,16 @@ trait WriteTimeseriesRequest extends js.Object {
   var timeseries: js.UndefOr[js.Array[TimeseriesPoint]] = js.undefined
 }
 
+object WriteTimeseriesRequest {
+  @scala.inline
+  def apply(
+    commonLabels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    timeseries: js.Array[TimeseriesPoint] = null
+  ): WriteTimeseriesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (commonLabels != null) __obj.updateDynamic("commonLabels")(commonLabels)
+    if (timeseries != null) __obj.updateDynamic("timeseries")(timeseries)
+    __obj.asInstanceOf[WriteTimeseriesRequest]
+  }
+}
+

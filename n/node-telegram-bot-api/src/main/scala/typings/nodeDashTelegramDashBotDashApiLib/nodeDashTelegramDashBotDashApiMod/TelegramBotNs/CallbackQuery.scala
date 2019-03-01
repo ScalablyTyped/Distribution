@@ -15,3 +15,26 @@ trait CallbackQuery extends js.Object {
   var message: js.UndefOr[Message] = js.undefined
 }
 
+object CallbackQuery {
+  @scala.inline
+  def apply(
+    chat_instance: java.lang.String,
+    from: User,
+    id: java.lang.String,
+    data: java.lang.String = null,
+    game_short_name: java.lang.String = null,
+    inline_message_id: java.lang.String = null,
+    message: Message = null
+  ): CallbackQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chat_instance")(chat_instance)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("id")(id)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (game_short_name != null) __obj.updateDynamic("game_short_name")(game_short_name)
+    if (inline_message_id != null) __obj.updateDynamic("inline_message_id")(inline_message_id)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[CallbackQuery]
+  }
+}
+

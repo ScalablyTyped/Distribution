@@ -13,3 +13,22 @@ trait PDFRenderParams extends js.Object {
   var viewport: js.UndefOr[PDFPageViewport] = js.undefined
 }
 
+object PDFRenderParams {
+  @scala.inline
+  def apply(
+    canvasContext: stdLib.CanvasRenderingContext2D,
+    continueCallback: js.Function1[/* _continue */ js.Function0[scala.Unit], scala.Unit] = null,
+    imageLayer: PDFRenderImageLayer = null,
+    textLayer: PDFRenderTextLayer = null,
+    viewport: PDFPageViewport = null
+  ): PDFRenderParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canvasContext")(canvasContext)
+    if (continueCallback != null) __obj.updateDynamic("continueCallback")(continueCallback)
+    if (imageLayer != null) __obj.updateDynamic("imageLayer")(imageLayer)
+    if (textLayer != null) __obj.updateDynamic("textLayer")(textLayer)
+    if (viewport != null) __obj.updateDynamic("viewport")(viewport)
+    __obj.asInstanceOf[PDFRenderParams]
+  }
+}
+

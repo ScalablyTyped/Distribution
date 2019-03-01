@@ -20,3 +20,26 @@ trait Query extends js.Object {
   var sortBy: java.lang.String
 }
 
+object Query {
+  @scala.inline
+  def apply(
+    query: java.lang.String,
+    sortBy: java.lang.String,
+    after: java.lang.String = null,
+    before: java.lang.String = null,
+    first: java.lang.String = null,
+    last: java.lang.String = null,
+    reverse: js.UndefOr[scala.Boolean] = js.undefined
+  ): Query = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("sortBy")(sortBy)
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (first != null) __obj.updateDynamic("first")(first)
+    if (last != null) __obj.updateDynamic("last")(last)
+    if (!js.isUndefined(reverse)) __obj.updateDynamic("reverse")(reverse)
+    __obj.asInstanceOf[Query]
+  }
+}
+

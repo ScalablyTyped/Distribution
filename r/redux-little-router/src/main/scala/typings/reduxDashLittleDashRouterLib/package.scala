@@ -10,7 +10,6 @@ package object reduxDashLittleDashRouterLib {
     /* action */ js.UndefOr[HistoryAction], 
     java.lang.String
   ]
-  type HistoryAction = reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.PUSH | reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.POP | reduxDashLittleDashRouterLib.reduxDashLittleDashRouterLibStrings.REPLACE
   type ListenCallback = js.Function2[/* location */ stdLib.Location, /* action */ js.UndefOr[HistoryAction], scala.Unit]
   type Unsubscribe = js.Function0[scala.Unit]
 }

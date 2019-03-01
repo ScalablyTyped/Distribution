@@ -16,3 +16,45 @@ trait Directive extends Node {
   var type_Directive: yamlLib.yamlLibStrings.DIRECTIVE
 }
 
+object Directive {
+  @scala.inline
+  def apply(
+    anchor: scala.Null,
+    hasComment: scala.Boolean,
+    hasProps: scala.Boolean,
+    jsonLike: scala.Boolean,
+    name: java.lang.String,
+    parameters: js.Array[java.lang.String],
+    props: js.Array[Range],
+    tag: scala.Null,
+    `type`: yamlLib.yamlLibStrings.DIRECTIVE,
+    valueRangeContainsNewline: scala.Boolean,
+    comment: java.lang.String = null,
+    context: ParseContext = null,
+    error: yamlLib.yamlMod.YAMLSyntaxError = null,
+    range: Range = null,
+    rawValue: java.lang.String = null,
+    value: java.lang.String = null,
+    valueRange: Range = null
+  ): Directive = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("anchor")(anchor)
+    __obj.updateDynamic("hasComment")(hasComment)
+    __obj.updateDynamic("hasProps")(hasProps)
+    __obj.updateDynamic("jsonLike")(jsonLike)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("props")(props)
+    __obj.updateDynamic("tag")(tag)
+    __obj.updateDynamic("valueRangeContainsNewline")(valueRangeContainsNewline)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (rawValue != null) __obj.updateDynamic("rawValue")(rawValue)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    __obj.asInstanceOf[Directive]
+  }
+}
+

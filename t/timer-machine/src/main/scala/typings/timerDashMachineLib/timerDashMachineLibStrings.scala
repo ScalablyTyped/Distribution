@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object timerDashMachineLibStrings {
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends timerDashMachineLib.timerDashMachineMod.TimerNs.TimerEvent
   
   @js.native
-  sealed trait stop extends js.Object
+  sealed trait stop
+    extends timerDashMachineLib.timerDashMachineMod.TimerNs.TimerEvent
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends timerDashMachineLib.timerDashMachineMod.TimerNs.TimerEvent
   
   @scala.inline
   def start: start = "start".asInstanceOf[start]

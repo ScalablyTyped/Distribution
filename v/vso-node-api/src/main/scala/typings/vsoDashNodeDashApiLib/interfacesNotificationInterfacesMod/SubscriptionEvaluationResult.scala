@@ -24,3 +24,20 @@ trait SubscriptionEvaluationResult extends js.Object {
   var notifications: NotificationsEvaluationResult
 }
 
+object SubscriptionEvaluationResult {
+  @scala.inline
+  def apply(
+    evaluationJobStatus: EvaluationOperationStatus,
+    events: EventsEvaluationResult,
+    id: java.lang.String,
+    notifications: NotificationsEvaluationResult
+  ): SubscriptionEvaluationResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("evaluationJobStatus")(evaluationJobStatus)
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("notifications")(notifications)
+    __obj.asInstanceOf[SubscriptionEvaluationResult]
+  }
+}
+

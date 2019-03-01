@@ -75,3 +75,20 @@ trait Anon_Inputs[T] extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Inputs {
+  @scala.inline
+  def apply[T](
+    inputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? string | [string, string]}
+    */ atAngularCoreLib.atAngularCoreLibStrings.Anon_Inputs with js.Any = null,
+    outputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? string}
+    */ atAngularCoreLib.atAngularCoreLibStrings.Anon_Inputs with js.Any = null
+  ): Anon_Inputs[T] = {
+    val __obj = js.Dynamic.literal()
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    __obj.asInstanceOf[Anon_Inputs[T]]
+  }
+}
+

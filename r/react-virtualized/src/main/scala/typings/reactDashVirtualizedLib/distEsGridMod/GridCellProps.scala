@@ -15,3 +15,26 @@ trait GridCellProps extends js.Object {
   var style: reactLib.reactMod.ReactNs.CSSProperties
 }
 
+object GridCellProps {
+  @scala.inline
+  def apply(
+    columnIndex: scala.Double,
+    isScrolling: scala.Boolean,
+    isVisible: scala.Boolean,
+    key: java.lang.String,
+    parent: reactDashVirtualizedLib.distEsCellMeasurerMod.MeasuredCellParent,
+    rowIndex: scala.Double,
+    style: reactLib.reactMod.ReactNs.CSSProperties
+  ): GridCellProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnIndex")(columnIndex)
+    __obj.updateDynamic("isScrolling")(isScrolling)
+    __obj.updateDynamic("isVisible")(isVisible)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("rowIndex")(rowIndex)
+    __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[GridCellProps]
+  }
+}
+

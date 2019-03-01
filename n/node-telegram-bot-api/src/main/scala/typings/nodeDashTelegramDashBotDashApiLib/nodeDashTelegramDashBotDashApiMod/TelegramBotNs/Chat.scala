@@ -19,3 +19,33 @@ trait Chat extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Chat {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    `type`: ChatType,
+    all_members_are_administrators: js.UndefOr[scala.Boolean] = js.undefined,
+    description: java.lang.String = null,
+    first_name: java.lang.String = null,
+    invite_link: java.lang.String = null,
+    last_name: java.lang.String = null,
+    photo: ChatPhoto = null,
+    pinned_message: Message = null,
+    title: java.lang.String = null,
+    username: java.lang.String = null
+  ): Chat = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(all_members_are_administrators)) __obj.updateDynamic("all_members_are_administrators")(all_members_are_administrators)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (first_name != null) __obj.updateDynamic("first_name")(first_name)
+    if (invite_link != null) __obj.updateDynamic("invite_link")(invite_link)
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
+    if (photo != null) __obj.updateDynamic("photo")(photo)
+    if (pinned_message != null) __obj.updateDynamic("pinned_message")(pinned_message)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[Chat]
+  }
+}
+

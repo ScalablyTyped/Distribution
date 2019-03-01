@@ -14,3 +14,22 @@ trait IDonutOptions extends IChartOptions {
   var formatter: js.UndefOr[js.Function2[/* y */ scala.Double, /* data */ IDonutData, java.lang.String]] = js.undefined
 }
 
+object IDonutOptions {
+  @scala.inline
+  def apply(
+    data: js.Array[IDonutData],
+    element: js.Any,
+    colors: js.Array[java.lang.String] = null,
+    formatter: js.Function2[/* y */ scala.Double, /* data */ IDonutData, java.lang.String] = null,
+    resize: js.UndefOr[scala.Boolean] = js.undefined
+  ): IDonutOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("element")(element)
+    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (!js.isUndefined(resize)) __obj.updateDynamic("resize")(resize)
+    __obj.asInstanceOf[IDonutOptions]
+  }
+}
+

@@ -19,3 +19,24 @@ trait Anon_CommentsImportKind extends js.Object {
   ] = js.undefined
 }
 
+object Anon_CommentsImportKind {
+  @scala.inline
+  def apply(
+    source: astDashTypesLib.genKindsMod.LiteralKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    importKind: astDashTypesLib.astDashTypesLibStrings.value | astDashTypesLib.astDashTypesLibStrings.`type` = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    specifiers: js.Array[
+      astDashTypesLib.genKindsMod.ImportSpecifierKind | astDashTypesLib.genKindsMod.ImportNamespaceSpecifierKind | astDashTypesLib.genKindsMod.ImportDefaultSpecifierKind
+    ] = null
+  ): Anon_CommentsImportKind = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (importKind != null) __obj.updateDynamic("importKind")(importKind.asInstanceOf[js.Any])
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (specifiers != null) __obj.updateDynamic("specifiers")(specifiers)
+    __obj.asInstanceOf[Anon_CommentsImportKind]
+  }
+}
+

@@ -18,3 +18,18 @@ trait Anon_External extends js.Object {
   ] = js.undefined
 }
 
+object Anon_External {
+  @scala.inline
+  def apply(
+    external: js.UndefOr[scala.Boolean] = js.undefined,
+    file: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.ResolverOptions | scala.Boolean = null,
+    http: jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserMod.$RefParserNs.HTTPResolverOptions | scala.Boolean = null
+  ): Anon_External = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (http != null) __obj.updateDynamic("http")(http.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_External]
+  }
+}
+

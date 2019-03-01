@@ -10,3 +10,13 @@ trait Anon_ItemsReturnValueNumber extends js.Object {
   /** The number of timed metadata tracks retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueNumber {
+  @scala.inline
+  def apply(items: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.TimedMetadataTrack, returnValue: scala.Double): Anon_ItemsReturnValueNumber = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ItemsReturnValueNumber]
+  }
+}
+

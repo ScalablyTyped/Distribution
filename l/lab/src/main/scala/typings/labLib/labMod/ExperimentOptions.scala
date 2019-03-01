@@ -16,3 +16,20 @@ trait ExperimentOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ExperimentOptions {
+  @scala.inline
+  def apply(
+    only: js.UndefOr[scala.Boolean] = js.undefined,
+    parallel: js.UndefOr[scala.Boolean] = js.undefined,
+    skip: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null
+  ): ExperimentOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(only)) __obj.updateDynamic("only")(only)
+    if (!js.isUndefined(parallel)) __obj.updateDynamic("parallel")(parallel)
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExperimentOptions]
+  }
+}
+

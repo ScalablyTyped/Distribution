@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Schema because Already inherited */ @js.native
 trait ObjectSchema extends AnySchema {
   /**
     * Defines an all-or-nothing relationship between keys where if one of the peers is present, all of them are required as well.

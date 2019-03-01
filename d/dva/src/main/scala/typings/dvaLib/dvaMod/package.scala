@@ -12,7 +12,6 @@ package object dvaMod {
     /* effects */ EffectsCommandMap, 
     scala.Unit
   ]
-  type EffectType = dvaLib.dvaLibStrings.takeEvery | dvaLib.dvaLibStrings.takeLatest | dvaLib.dvaLibStrings.watcher | dvaLib.dvaLibStrings.throttle
   type EffectWithType = js.Tuple2[Effect, dvaLib.Anon_Type]
   type ReducerEnhancer = js.Function1[
     /* reducer */ reduxLib.reduxMod.Reducer[js.Any, reduxLib.reduxMod.AnyAction], 

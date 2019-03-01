@@ -12,3 +12,12 @@ trait CancellationTokenRegistration extends js.Object {
   def unregister(): scala.Unit
 }
 
+object CancellationTokenRegistration {
+  @scala.inline
+  def apply(unregister: js.Function0[scala.Unit]): CancellationTokenRegistration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("unregister")(unregister)
+    __obj.asInstanceOf[CancellationTokenRegistration]
+  }
+}
+

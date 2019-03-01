@@ -37,3 +37,24 @@ trait ASPxClientWebDocumentViewerEditingField extends js.Object {
   def pageIndex(): scala.Double
 }
 
+object ASPxClientWebDocumentViewerEditingField {
+  @scala.inline
+  def apply(
+    editValue: js.Any,
+    editorName: js.Function0[java.lang.String],
+    groupID: js.Function0[java.lang.String],
+    id: js.Function0[java.lang.String],
+    pageIndex: js.Function0[scala.Double],
+    readOnly: js.Any
+  ): ASPxClientWebDocumentViewerEditingField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editValue")(editValue)
+    __obj.updateDynamic("editorName")(editorName)
+    __obj.updateDynamic("groupID")(groupID)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("pageIndex")(pageIndex)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.asInstanceOf[ASPxClientWebDocumentViewerEditingField]
+  }
+}
+

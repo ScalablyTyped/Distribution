@@ -23,3 +23,14 @@ trait AttributeData extends js.Object {
   var Value: java.lang.String
 }
 
+object AttributeData {
+  @scala.inline
+  def apply(Namespace: java.lang.String, Type: java.lang.String, Value: java.lang.String): AttributeData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Namespace")(Namespace)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[AttributeData]
+  }
+}
+

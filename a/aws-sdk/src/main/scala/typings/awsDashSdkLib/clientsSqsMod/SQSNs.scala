@@ -934,6 +934,12 @@ object SQSNs extends js.Object {
     var TagKeys: TagKeyList
   }
   
+  trait _MessageSystemAttributeName extends js.Object
+  
+  trait _QueueAttributeName extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AWSAccountIdList = js.Array[String]
   type ActionNameList = js.Array[String]
@@ -951,8 +957,8 @@ object SQSNs extends js.Object {
   type MessageAttributeName = java.lang.String
   type MessageAttributeNameList = js.Array[MessageAttributeName]
   type MessageList = js.Array[Message]
-  type MessageSystemAttributeName = awsDashSdkLib.awsDashSdkLibStrings.SenderId | awsDashSdkLib.awsDashSdkLibStrings.SentTimestamp | awsDashSdkLib.awsDashSdkLibStrings.ApproximateReceiveCount | awsDashSdkLib.awsDashSdkLibStrings.ApproximateFirstReceiveTimestamp | awsDashSdkLib.awsDashSdkLibStrings.SequenceNumber | awsDashSdkLib.awsDashSdkLibStrings.MessageDeduplicationId | awsDashSdkLib.awsDashSdkLibStrings.MessageGroupId | java.lang.String
-  type QueueAttributeName = awsDashSdkLib.awsDashSdkLibStrings.All | awsDashSdkLib.awsDashSdkLibStrings.Policy | awsDashSdkLib.awsDashSdkLibStrings.VisibilityTimeout | awsDashSdkLib.awsDashSdkLibStrings.MaximumMessageSize | awsDashSdkLib.awsDashSdkLibStrings.MessageRetentionPeriod | awsDashSdkLib.awsDashSdkLibStrings.ApproximateNumberOfMessages | awsDashSdkLib.awsDashSdkLibStrings.ApproximateNumberOfMessagesNotVisible | awsDashSdkLib.awsDashSdkLibStrings.CreatedTimestamp | awsDashSdkLib.awsDashSdkLibStrings.LastModifiedTimestamp | awsDashSdkLib.awsDashSdkLibStrings.QueueArn | awsDashSdkLib.awsDashSdkLibStrings.ApproximateNumberOfMessagesDelayed | awsDashSdkLib.awsDashSdkLibStrings.DelaySeconds | awsDashSdkLib.awsDashSdkLibStrings.ReceiveMessageWaitTimeSeconds | awsDashSdkLib.awsDashSdkLibStrings.RedrivePolicy | awsDashSdkLib.awsDashSdkLibStrings.FifoQueue | awsDashSdkLib.awsDashSdkLibStrings.ContentBasedDeduplication | awsDashSdkLib.awsDashSdkLibStrings.KmsMasterKeyId | awsDashSdkLib.awsDashSdkLibStrings.KmsDataKeyReusePeriodSeconds | java.lang.String
+  type MessageSystemAttributeName = _MessageSystemAttributeName | java.lang.String
+  type QueueAttributeName = _QueueAttributeName | java.lang.String
   type QueueUrlList = js.Array[String]
   type SendMessageBatchRequestEntryList = js.Array[SendMessageBatchRequestEntry]
   type SendMessageBatchResultEntryList = js.Array[SendMessageBatchResultEntry]
@@ -961,6 +967,6 @@ object SQSNs extends js.Object {
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagValue = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2012-11-05` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

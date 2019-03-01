@@ -11,3 +11,14 @@ trait ValuableJSON extends js.Object {
   var notes: java.lang.String
 }
 
+object ValuableJSON {
+  @scala.inline
+  def apply(entries: js.Array[ValuableEntry], name: java.lang.String, notes: java.lang.String): ValuableJSON = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entries")(entries)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("notes")(notes)
+    __obj.asInstanceOf[ValuableJSON]
+  }
+}
+

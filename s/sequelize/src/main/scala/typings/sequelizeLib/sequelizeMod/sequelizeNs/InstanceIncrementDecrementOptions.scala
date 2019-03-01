@@ -35,3 +35,20 @@ trait InstanceIncrementDecrementOptions extends js.Object {
   var where: js.UndefOr[AnyWhereOptions | (js.Array[col | and | or | java.lang.String])] = js.undefined
 }
 
+object InstanceIncrementDecrementOptions {
+  @scala.inline
+  def apply(
+    by: scala.Int | scala.Double = null,
+    logging: scala.Boolean | js.Function = null,
+    transaction: Transaction = null,
+    where: AnyWhereOptions | (js.Array[col | and | or | java.lang.String]) = null
+  ): InstanceIncrementDecrementOptions = {
+    val __obj = js.Dynamic.literal()
+    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (where != null) __obj.updateDynamic("where")(where.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstanceIncrementDecrementOptions]
+  }
+}
+

@@ -28,3 +28,30 @@ trait DocumentGetResponse extends js.Object {
   var _revs_info: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object DocumentGetResponse {
+  @scala.inline
+  def apply(
+    _id: java.lang.String,
+    _rev: java.lang.String,
+    _attachments: js.Any = null,
+    _conflicts: js.Array[_] = null,
+    _deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    _deleted_conflicts: js.Array[_] = null,
+    _local_seq: java.lang.String = null,
+    _revisions: js.Any = null,
+    _revs_info: js.Array[_] = null
+  ): DocumentGetResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_id")(_id)
+    __obj.updateDynamic("_rev")(_rev)
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
+    if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts)
+    if (!js.isUndefined(_deleted)) __obj.updateDynamic("_deleted")(_deleted)
+    if (_deleted_conflicts != null) __obj.updateDynamic("_deleted_conflicts")(_deleted_conflicts)
+    if (_local_seq != null) __obj.updateDynamic("_local_seq")(_local_seq)
+    if (_revisions != null) __obj.updateDynamic("_revisions")(_revisions)
+    if (_revs_info != null) __obj.updateDynamic("_revs_info")(_revs_info)
+    __obj.asInstanceOf[DocumentGetResponse]
+  }
+}
+

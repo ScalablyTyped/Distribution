@@ -12,3 +12,18 @@ trait Anon_Cast extends js.Object {
   var merge: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Cast {
+  @scala.inline
+  def apply(
+    cast: js.UndefOr[scala.Boolean] = js.undefined,
+    clone: js.UndefOr[scala.Boolean] = js.undefined,
+    merge: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Cast = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cast)) __obj.updateDynamic("cast")(cast)
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
+    __obj.asInstanceOf[Anon_Cast]
+  }
+}
+

@@ -30,3 +30,22 @@ trait MarkerLabel extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MarkerLabel {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    text: java.lang.String = null
+  ): MarkerLabel = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[MarkerLabel]
+  }
+}
+

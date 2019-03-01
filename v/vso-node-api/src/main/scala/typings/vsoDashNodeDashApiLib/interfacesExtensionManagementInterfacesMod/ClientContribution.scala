@@ -32,3 +32,23 @@ trait ClientContribution extends js.Object {
   var `type`: java.lang.String
 }
 
+object ClientContribution {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: java.lang.String,
+    includes: js.Array[java.lang.String],
+    properties: js.Any,
+    targets: js.Array[java.lang.String],
+    `type`: java.lang.String
+  ): ClientContribution = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("includes")(includes)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("targets")(targets)
+    __obj.asInstanceOf[ClientContribution]
+  }
+}
+

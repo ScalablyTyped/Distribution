@@ -20,3 +20,24 @@ trait Anon_ExtraLarge extends js.Object {
   var thumbnail: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ExtraLarge {
+  @scala.inline
+  def apply(
+    extraLarge: java.lang.String = null,
+    large: java.lang.String = null,
+    medium: java.lang.String = null,
+    small: java.lang.String = null,
+    smallThumbnail: java.lang.String = null,
+    thumbnail: java.lang.String = null
+  ): Anon_ExtraLarge = {
+    val __obj = js.Dynamic.literal()
+    if (extraLarge != null) __obj.updateDynamic("extraLarge")(extraLarge)
+    if (large != null) __obj.updateDynamic("large")(large)
+    if (medium != null) __obj.updateDynamic("medium")(medium)
+    if (small != null) __obj.updateDynamic("small")(small)
+    if (smallThumbnail != null) __obj.updateDynamic("smallThumbnail")(smallThumbnail)
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[Anon_ExtraLarge]
+  }
+}
+

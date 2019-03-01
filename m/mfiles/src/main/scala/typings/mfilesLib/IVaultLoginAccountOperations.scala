@@ -17,3 +17,30 @@ trait IVaultLoginAccountOperations extends js.Object {
   def UpdateLoginPassword(AccountName: java.lang.String, NewPassword: java.lang.String): scala.Unit
 }
 
+object IVaultLoginAccountOperations {
+  @scala.inline
+  def apply(
+    AddLoginAccount: js.Function2[ILoginAccount, java.lang.String, scala.Unit],
+    ForceLogout: js.Function1[IStrings, scala.Unit],
+    GetLoginAccount: js.Function1[java.lang.String, ILoginAccount],
+    GetLoginAccounts: js.Function0[ILoginAccounts],
+    GetLoginAccountsWithSessions: js.Function0[ILoginAccounts],
+    GetPersonalInformationFromDomain: js.Function1[java.lang.String, ILoginAccountPersonalInformation],
+    ModifyLoginAccount: js.Function1[ILoginAccount, scala.Unit],
+    RemoveLoginAccount: js.Function1[java.lang.String, scala.Unit],
+    UpdateLoginPassword: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): IVaultLoginAccountOperations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AddLoginAccount")(AddLoginAccount)
+    __obj.updateDynamic("ForceLogout")(ForceLogout)
+    __obj.updateDynamic("GetLoginAccount")(GetLoginAccount)
+    __obj.updateDynamic("GetLoginAccounts")(GetLoginAccounts)
+    __obj.updateDynamic("GetLoginAccountsWithSessions")(GetLoginAccountsWithSessions)
+    __obj.updateDynamic("GetPersonalInformationFromDomain")(GetPersonalInformationFromDomain)
+    __obj.updateDynamic("ModifyLoginAccount")(ModifyLoginAccount)
+    __obj.updateDynamic("RemoveLoginAccount")(RemoveLoginAccount)
+    __obj.updateDynamic("UpdateLoginPassword")(UpdateLoginPassword)
+    __obj.asInstanceOf[IVaultLoginAccountOperations]
+  }
+}
+

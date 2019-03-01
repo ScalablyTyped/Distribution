@@ -82,6 +82,10 @@ object KinesisVideoMediaNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[GetMediaOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _StartSelectorType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ContentType = java.lang.String
@@ -89,9 +93,9 @@ object KinesisVideoMediaNs extends js.Object {
   type FragmentNumberString = java.lang.String
   type Payload = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsKinesisvideomediaMod.Blob | java.lang.String | nodeLib.streamMod.Readable
   type ResourceARN = java.lang.String
-  type StartSelectorType = awsDashSdkLib.awsDashSdkLibStrings.FRAGMENT_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.SERVER_TIMESTAMP | awsDashSdkLib.awsDashSdkLibStrings.PRODUCER_TIMESTAMP | awsDashSdkLib.awsDashSdkLibStrings.NOW | awsDashSdkLib.awsDashSdkLibStrings.EARLIEST | awsDashSdkLib.awsDashSdkLibStrings.CONTINUATION_TOKEN | java.lang.String
+  type StartSelectorType = _StartSelectorType | java.lang.String
   type StreamName = java.lang.String
   type Timestamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-09-30` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

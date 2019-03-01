@@ -19,3 +19,16 @@ trait CloudPushNotificationConfig extends js.Object {
   var success: js.UndefOr[js.Function1[/* param0 */ CloudPushNotificationSuccessArg, _]] = js.undefined
 }
 
+object CloudPushNotificationConfig {
+  @scala.inline
+  def apply(
+    error: js.Function1[/* param0 */ CloudPushNotificationErrorArg, _] = null,
+    success: js.Function1[/* param0 */ CloudPushNotificationSuccessArg, _] = null
+  ): CloudPushNotificationConfig = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[CloudPushNotificationConfig]
+  }
+}
+

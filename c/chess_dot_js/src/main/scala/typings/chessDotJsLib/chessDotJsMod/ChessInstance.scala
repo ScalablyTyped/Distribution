@@ -243,7 +243,14 @@ trait ChessInstance extends js.Object {
     * @returns "light" if a light square, "dark" if a dark square, or null if
     * not a valid square.
     */
-  def square_color(square: Square | java.lang.String): chessDotJsLib.chessDotJsLibStrings.light | chessDotJsLib.chessDotJsLibStrings.dark = js.native
+  def square_color(square: Square): chessDotJsLib.chessDotJsLibStrings.light | chessDotJsLib.chessDotJsLibStrings.dark = js.native
+  /**
+    * Returns the color of the square ('light' or 'dark').
+    * @param square the square to check if it is light or dark.
+    * @returns "light" if a light square, "dark" if a dark square, or null if
+    * not a valid square.
+    */
+  def square_color(square: java.lang.String): chessDotJsLib.chessDotJsLibStrings.light | chessDotJsLib.chessDotJsLibStrings.dark | scala.Null = js.native
   /**
     * Returns the current side to move.
     * @returns "b" if Black is the side to move, otherwise "w" for White.

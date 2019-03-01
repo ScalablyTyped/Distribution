@@ -20,3 +20,20 @@ trait DrawCategoryEventArgs extends js.Object {
   var scaleElement: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
+object DrawCategoryEventArgs {
+  @scala.inline
+  def apply(
+    Object: js.Any = null,
+    Value: java.lang.String = null,
+    categoryElement: stdLib.HTMLElement = null,
+    scaleElement: stdLib.HTMLElement = null
+  ): DrawCategoryEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Object != null) __obj.updateDynamic("Object")(Object)
+    if (Value != null) __obj.updateDynamic("Value")(Value)
+    if (categoryElement != null) __obj.updateDynamic("categoryElement")(categoryElement)
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    __obj.asInstanceOf[DrawCategoryEventArgs]
+  }
+}
+

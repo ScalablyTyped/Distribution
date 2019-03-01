@@ -89,3 +89,52 @@ trait IState extends js.Object {
   var views: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IState]] = js.undefined
 }
 
+object IState {
+  @scala.inline
+  def apply(
+    `abstract`: js.UndefOr[scala.Boolean] = js.undefined,
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    component: java.lang.String = null,
+    controller: angularLib.angularMod.Global.Function | java.lang.String | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) = null,
+    controllerAs: java.lang.String = null,
+    controllerProvider: angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) = null,
+    data: js.Any = null,
+    name: java.lang.String = null,
+    onEnter: angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) = null,
+    onExit: angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) = null,
+    params: js.Any = null,
+    parent: java.lang.String | IState = null,
+    redirectTo: java.lang.String | angularLib.angularMod.Global.Function | IState = null,
+    reloadOnSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    resolve: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    template: java.lang.String | angularDashUiDashRouterLib.Anon_Params = null,
+    templateProvider: angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) = null,
+    templateUrl: java.lang.String | angularDashUiDashRouterLib.Anon_Params = null,
+    url: java.lang.String | IUrlMatcher = null,
+    views: org.scalablytyped.runtime.StringDictionary[IState] = null
+  ): IState = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (controllerProvider != null) __obj.updateDynamic("controllerProvider")(controllerProvider.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter.asInstanceOf[js.Any])
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadOnSearch)) __obj.updateDynamic("reloadOnSearch")(reloadOnSearch)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateProvider != null) __obj.updateDynamic("templateProvider")(templateProvider.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (views != null) __obj.updateDynamic("views")(views)
+    __obj.asInstanceOf[IState]
+  }
+}
+

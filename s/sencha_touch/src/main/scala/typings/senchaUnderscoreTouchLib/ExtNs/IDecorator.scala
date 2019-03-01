@@ -18,3 +18,22 @@ trait IDecorator extends IComponent {
   var setComponent: js.UndefOr[js.Function1[/* component */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
 }
 
+object IDecorator {
+  @scala.inline
+  def apply(
+    IComponent: IComponent = null,
+    component: js.Any = null,
+    destroy: js.Function0[scala.Unit] = null,
+    getComponent: js.Function0[_] = null,
+    setComponent: js.Function1[/* component */ js.UndefOr[js.Any], scala.Unit] = null
+  ): IDecorator = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (getComponent != null) __obj.updateDynamic("getComponent")(getComponent)
+    if (setComponent != null) __obj.updateDynamic("setComponent")(setComponent)
+    __obj.asInstanceOf[IDecorator]
+  }
+}
+

@@ -16,3 +16,20 @@ trait CtorOptions extends js.Object {
   var plugins: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Object]] = js.undefined
 }
 
+object CtorOptions {
+  @scala.inline
+  def apply(
+    defs: js.Array[Def] = null,
+    ecmaVersion: ternLib.ternLibNumbers.`5` | ternLib.ternLibNumbers.`6` = null,
+    fetchTimeout: scala.Int | scala.Double = null,
+    plugins: org.scalablytyped.runtime.StringDictionary[js.Object] = null
+  ): CtorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defs != null) __obj.updateDynamic("defs")(defs)
+    if (ecmaVersion != null) __obj.updateDynamic("ecmaVersion")(ecmaVersion.asInstanceOf[js.Any])
+    if (fetchTimeout != null) __obj.updateDynamic("fetchTimeout")(fetchTimeout.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    __obj.asInstanceOf[CtorOptions]
+  }
+}
+

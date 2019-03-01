@@ -12,3 +12,20 @@ trait Anon_Actions[S] extends js.Object {
   var mutations: js.UndefOr[vuexLib.typesMod.MutationTree[S]] = js.undefined
 }
 
+object Anon_Actions {
+  @scala.inline
+  def apply[S](
+    actions: vuexLib.typesMod.ActionTree[S, S] = null,
+    getters: vuexLib.typesMod.GetterTree[S, S] = null,
+    modules: vuexLib.typesMod.ModuleTree[S] = null,
+    mutations: vuexLib.typesMod.MutationTree[S] = null
+  ): Anon_Actions[S] = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (getters != null) __obj.updateDynamic("getters")(getters)
+    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
+    __obj.asInstanceOf[Anon_Actions[S]]
+  }
+}
+

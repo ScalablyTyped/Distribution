@@ -37,3 +37,27 @@ trait IgGridResponsiveAllowedColumnWidthPerType
   var string: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgGridResponsiveAllowedColumnWidthPerType {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridResponsiveAllowedColumnWidthPerType
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    bool: scala.Int | scala.Double = null,
+    date: scala.Int | scala.Double = null,
+    number: scala.Int | scala.Double = null,
+    `object`: scala.Int | scala.Double = null,
+    string: scala.Int | scala.Double = null
+  ): IgGridResponsiveAllowedColumnWidthPerType = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (bool != null) __obj.updateDynamic("bool")(bool.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (`object` != null) __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    if (string != null) __obj.updateDynamic("string")(string.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgGridResponsiveAllowedColumnWidthPerType]
+  }
+}
+

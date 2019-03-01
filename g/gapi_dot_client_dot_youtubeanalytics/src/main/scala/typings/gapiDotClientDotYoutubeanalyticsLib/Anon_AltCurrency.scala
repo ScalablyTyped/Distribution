@@ -69,3 +69,46 @@ trait Anon_AltCurrency extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltCurrency {
+  @scala.inline
+  def apply(
+    `end-date`: java.lang.String,
+    ids: java.lang.String,
+    metrics: java.lang.String,
+    `start-date`: java.lang.String,
+    alt: java.lang.String = null,
+    currency: java.lang.String = null,
+    dimensions: java.lang.String = null,
+    fields: java.lang.String = null,
+    filters: java.lang.String = null,
+    `include-historical-channel-data`: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    `max-results`: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    sort: java.lang.String = null,
+    `start-index`: scala.Int | scala.Double = null,
+    userIp: java.lang.String = null
+  ): Anon_AltCurrency = {
+    val __obj = js.Dynamic.literal(`end-date` = `end-date`, `start-date` = `start-date`)
+    __obj.updateDynamic("ids")(ids)
+    __obj.updateDynamic("metrics")(metrics)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(`include-historical-channel-data`)) __obj.updateDynamic("include-historical-channel-data")(`include-historical-channel-data`)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (`start-index` != null) __obj.updateDynamic("start-index")(`start-index`.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltCurrency]
+  }
+}
+

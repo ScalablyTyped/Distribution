@@ -14,3 +14,24 @@ trait TableOptions extends js.Object {
   var temporary: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableOptions {
+  @scala.inline
+  def apply(
+    comment: java.lang.String = null,
+    constraints: ConstraintOptions = null,
+    ifNotExists: js.UndefOr[scala.Boolean] = js.undefined,
+    inherits: Name = null,
+    like: Name | nodeDashPgDashMigrateLib.Anon_Options = null,
+    temporary: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableOptions = {
+    val __obj = js.Dynamic.literal()
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (!js.isUndefined(ifNotExists)) __obj.updateDynamic("ifNotExists")(ifNotExists)
+    if (inherits != null) __obj.updateDynamic("inherits")(inherits.asInstanceOf[js.Any])
+    if (like != null) __obj.updateDynamic("like")(like.asInstanceOf[js.Any])
+    if (!js.isUndefined(temporary)) __obj.updateDynamic("temporary")(temporary)
+    __obj.asInstanceOf[TableOptions]
+  }
+}
+

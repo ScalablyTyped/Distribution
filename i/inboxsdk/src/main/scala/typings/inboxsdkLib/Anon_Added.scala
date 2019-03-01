@@ -10,3 +10,16 @@ trait Anon_Added extends js.Object {
   var removed: js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact]
 }
 
+object Anon_Added {
+  @scala.inline
+  def apply(
+    added: js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact],
+    removed: js.Array[inboxsdkLib.inboxsdkMod.InboxSDKNs.CommonNs.Contact]
+  ): Anon_Added = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("added")(added)
+    __obj.updateDynamic("removed")(removed)
+    __obj.asInstanceOf[Anon_Added]
+  }
+}
+

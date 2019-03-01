@@ -18,3 +18,16 @@ trait ShortRepresentation extends js.Object {
   var subqueries: js.UndefOr[stdLib.Record[java.lang.String, scala.Double]] = js.undefined
 }
 
+object ShortRepresentation {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    subqueries: stdLib.Record[java.lang.String, scala.Double] = null
+  ): ShortRepresentation = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (subqueries != null) __obj.updateDynamic("subqueries")(subqueries)
+    __obj.asInstanceOf[ShortRepresentation]
+  }
+}
+

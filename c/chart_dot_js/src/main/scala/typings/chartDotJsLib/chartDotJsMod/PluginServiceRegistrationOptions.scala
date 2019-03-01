@@ -146,3 +146,117 @@ trait PluginServiceRegistrationOptions extends js.Object {
   ] = js.undefined
 }
 
+object PluginServiceRegistrationOptions {
+  @scala.inline
+  def apply(
+    afterDatasetDraw: js.Function3[
+      /* chartInstance */ Chart, 
+      /* easing */ java.lang.String, 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    afterDatasetUpdate: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterDatasetsDraw: js.Function3[
+      /* chartInstance */ Chart, 
+      /* easing */ java.lang.String, 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    afterDatasetsUpdate: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterDraw: js.Function3[
+      /* chartInstance */ Chart, 
+      /* easing */ java.lang.String, 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    afterEvent: js.Function3[
+      /* chartInstance */ Chart, 
+      /* event */ stdLib.Event, 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    afterInit: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterLayout: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterRender: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterScaleUpdate: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterTooltipDraw: js.Function3[
+      /* chartInstance */ Chart, 
+      /* tooltipData */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    afterUpdate: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeDatasetDraw: js.Function3[
+      /* chartInstance */ Chart, 
+      /* easing */ java.lang.String, 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    beforeDatasetUpdate: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeDatasetsDraw: js.Function3[
+      /* chartInstance */ Chart, 
+      /* easing */ java.lang.String, 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    beforeDatasetsUpdate: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeDraw: js.Function3[
+      /* chartInstance */ Chart, 
+      /* easing */ java.lang.String, 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    beforeEvent: js.Function3[
+      /* chartInstance */ Chart, 
+      /* event */ stdLib.Event, 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    beforeInit: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeLayout: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeRender: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeTooltipDraw: js.Function3[
+      /* chartInstance */ Chart, 
+      /* tooltipData */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    beforeUpdate: js.Function2[/* chartInstance */ Chart, /* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    destroy: js.Function1[/* chartInstance */ Chart, scala.Unit] = null,
+    resize: js.Function3[
+      /* chartInstance */ Chart, 
+      /* newChartSize */ chartDotJsLib.chartDotJsMod.ChartNs.ChartSize, 
+      /* options */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null
+  ): PluginServiceRegistrationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterDatasetDraw != null) __obj.updateDynamic("afterDatasetDraw")(afterDatasetDraw)
+    if (afterDatasetUpdate != null) __obj.updateDynamic("afterDatasetUpdate")(afterDatasetUpdate)
+    if (afterDatasetsDraw != null) __obj.updateDynamic("afterDatasetsDraw")(afterDatasetsDraw)
+    if (afterDatasetsUpdate != null) __obj.updateDynamic("afterDatasetsUpdate")(afterDatasetsUpdate)
+    if (afterDraw != null) __obj.updateDynamic("afterDraw")(afterDraw)
+    if (afterEvent != null) __obj.updateDynamic("afterEvent")(afterEvent)
+    if (afterInit != null) __obj.updateDynamic("afterInit")(afterInit)
+    if (afterLayout != null) __obj.updateDynamic("afterLayout")(afterLayout)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (afterScaleUpdate != null) __obj.updateDynamic("afterScaleUpdate")(afterScaleUpdate)
+    if (afterTooltipDraw != null) __obj.updateDynamic("afterTooltipDraw")(afterTooltipDraw)
+    if (afterUpdate != null) __obj.updateDynamic("afterUpdate")(afterUpdate)
+    if (beforeDatasetDraw != null) __obj.updateDynamic("beforeDatasetDraw")(beforeDatasetDraw)
+    if (beforeDatasetUpdate != null) __obj.updateDynamic("beforeDatasetUpdate")(beforeDatasetUpdate)
+    if (beforeDatasetsDraw != null) __obj.updateDynamic("beforeDatasetsDraw")(beforeDatasetsDraw)
+    if (beforeDatasetsUpdate != null) __obj.updateDynamic("beforeDatasetsUpdate")(beforeDatasetsUpdate)
+    if (beforeDraw != null) __obj.updateDynamic("beforeDraw")(beforeDraw)
+    if (beforeEvent != null) __obj.updateDynamic("beforeEvent")(beforeEvent)
+    if (beforeInit != null) __obj.updateDynamic("beforeInit")(beforeInit)
+    if (beforeLayout != null) __obj.updateDynamic("beforeLayout")(beforeLayout)
+    if (beforeRender != null) __obj.updateDynamic("beforeRender")(beforeRender)
+    if (beforeTooltipDraw != null) __obj.updateDynamic("beforeTooltipDraw")(beforeTooltipDraw)
+    if (beforeUpdate != null) __obj.updateDynamic("beforeUpdate")(beforeUpdate)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (resize != null) __obj.updateDynamic("resize")(resize)
+    __obj.asInstanceOf[PluginServiceRegistrationOptions]
+  }
+}
+

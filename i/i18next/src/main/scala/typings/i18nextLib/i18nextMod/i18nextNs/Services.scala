@@ -16,3 +16,28 @@ trait Services extends js.Object {
   var resourceStore: Resource
 }
 
+object Services {
+  @scala.inline
+  def apply(
+    backendConnector: js.Any,
+    i18nFormat: js.Any,
+    interpolator: js.Any,
+    languageDetector: js.Any,
+    languageUtils: js.Any,
+    logger: js.Any,
+    pluralResolver: js.Any,
+    resourceStore: Resource
+  ): Services = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backendConnector")(backendConnector)
+    __obj.updateDynamic("i18nFormat")(i18nFormat)
+    __obj.updateDynamic("interpolator")(interpolator)
+    __obj.updateDynamic("languageDetector")(languageDetector)
+    __obj.updateDynamic("languageUtils")(languageUtils)
+    __obj.updateDynamic("logger")(logger)
+    __obj.updateDynamic("pluralResolver")(pluralResolver)
+    __obj.updateDynamic("resourceStore")(resourceStore)
+    __obj.asInstanceOf[Services]
+  }
+}
+

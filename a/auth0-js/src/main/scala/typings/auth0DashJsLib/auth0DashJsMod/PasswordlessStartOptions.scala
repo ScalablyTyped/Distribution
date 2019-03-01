@@ -13,3 +13,22 @@ trait PasswordlessStartOptions extends js.Object {
   var send: java.lang.String
 }
 
+object PasswordlessStartOptions {
+  @scala.inline
+  def apply(
+    connection: java.lang.String,
+    send: java.lang.String,
+    authParams: js.Any = null,
+    email: java.lang.String = null,
+    phoneNumber: java.lang.String = null
+  ): PasswordlessStartOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.updateDynamic("send")(send)
+    if (authParams != null) __obj.updateDynamic("authParams")(authParams)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    __obj.asInstanceOf[PasswordlessStartOptions]
+  }
+}
+

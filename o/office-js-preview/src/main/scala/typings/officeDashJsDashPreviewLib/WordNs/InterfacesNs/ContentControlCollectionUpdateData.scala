@@ -10,3 +10,12 @@ trait ContentControlCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[ContentControlData]] = js.undefined
 }
 
+object ContentControlCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[ContentControlData] = null): ContentControlCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[ContentControlCollectionUpdateData]
+  }
+}
+

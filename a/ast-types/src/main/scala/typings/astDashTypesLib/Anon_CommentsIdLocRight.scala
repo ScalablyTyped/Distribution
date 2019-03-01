@@ -13,3 +13,22 @@ trait Anon_CommentsIdLocRight extends js.Object {
   var typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | scala.Null
 }
 
+object Anon_CommentsIdLocRight {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    right: astDashTypesLib.genKindsMod.FlowTypeKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
+  ): Anon_CommentsIdLocRight = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("right")(right)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[Anon_CommentsIdLocRight]
+  }
+}
+

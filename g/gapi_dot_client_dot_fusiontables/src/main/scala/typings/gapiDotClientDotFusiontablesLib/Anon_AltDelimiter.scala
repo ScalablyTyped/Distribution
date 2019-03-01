@@ -43,3 +43,38 @@ trait Anon_AltDelimiter extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltDelimiter {
+  @scala.inline
+  def apply(
+    tableId: java.lang.String,
+    alt: java.lang.String = null,
+    delimiter: java.lang.String = null,
+    encoding: java.lang.String = null,
+    endLine: scala.Int | scala.Double = null,
+    fields: java.lang.String = null,
+    isStrict: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    startLine: scala.Int | scala.Double = null,
+    userIp: java.lang.String = null
+  ): Anon_AltDelimiter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tableId")(tableId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (endLine != null) __obj.updateDynamic("endLine")(endLine.asInstanceOf[js.Any])
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(isStrict)) __obj.updateDynamic("isStrict")(isStrict)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (startLine != null) __obj.updateDynamic("startLine")(startLine.asInstanceOf[js.Any])
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltDelimiter]
+  }
+}
+

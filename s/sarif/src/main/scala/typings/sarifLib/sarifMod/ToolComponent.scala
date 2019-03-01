@@ -58,3 +58,34 @@ trait ToolComponent extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ToolComponent {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    artifactIndex: scala.Int | scala.Double = null,
+    dottedQuadFileVersion: java.lang.String = null,
+    downloadUri: java.lang.String = null,
+    fullName: java.lang.String = null,
+    globalMessageStrings: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
+    notificationDescriptors: js.Array[ReportingDescriptor] = null,
+    properties: PropertyBag = null,
+    ruleDescriptors: js.Array[ReportingDescriptor] = null,
+    semanticVersion: java.lang.String = null,
+    version: java.lang.String = null
+  ): ToolComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (artifactIndex != null) __obj.updateDynamic("artifactIndex")(artifactIndex.asInstanceOf[js.Any])
+    if (dottedQuadFileVersion != null) __obj.updateDynamic("dottedQuadFileVersion")(dottedQuadFileVersion)
+    if (downloadUri != null) __obj.updateDynamic("downloadUri")(downloadUri)
+    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
+    if (globalMessageStrings != null) __obj.updateDynamic("globalMessageStrings")(globalMessageStrings)
+    if (notificationDescriptors != null) __obj.updateDynamic("notificationDescriptors")(notificationDescriptors)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (ruleDescriptors != null) __obj.updateDynamic("ruleDescriptors")(ruleDescriptors)
+    if (semanticVersion != null) __obj.updateDynamic("semanticVersion")(semanticVersion)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[ToolComponent]
+  }
+}
+

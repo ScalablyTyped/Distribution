@@ -10,3 +10,13 @@ trait ExitCodeException
   var exitCode: scala.Double
 }
 
+object ExitCodeException {
+  @scala.inline
+  def apply(exitCode: scala.Double, stack: java.lang.String = null): ExitCodeException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exitCode")(exitCode)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[ExitCodeException]
+  }
+}
+

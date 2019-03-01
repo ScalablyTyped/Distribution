@@ -17,3 +17,12 @@ trait NotificationAction extends js.Object {
   var `type`: electronLib.electronLibStrings.button
 }
 
+object NotificationAction {
+  @scala.inline
+  def apply(`type`: electronLib.electronLibStrings.button, text: java.lang.String = null): NotificationAction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[NotificationAction]
+  }
+}
+

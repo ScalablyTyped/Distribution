@@ -41,3 +41,30 @@ trait IAutosuggestOptions extends js.Object {
   var userLocation: js.UndefOr[Location] = js.undefined
 }
 
+object IAutosuggestOptions {
+  @scala.inline
+  def apply(
+    addressSuggestions: js.UndefOr[scala.Boolean] = js.undefined,
+    autoDetectLocation: js.UndefOr[scala.Boolean] = js.undefined,
+    bounds: LocationRect = null,
+    countryCode: java.lang.String = null,
+    map: Map = null,
+    maxResults: scala.Int | scala.Double = null,
+    placeSuggestions: js.UndefOr[scala.Boolean] = js.undefined,
+    useMapView: js.UndefOr[scala.Boolean] = js.undefined,
+    userLocation: Location = null
+  ): IAutosuggestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addressSuggestions)) __obj.updateDynamic("addressSuggestions")(addressSuggestions)
+    if (!js.isUndefined(autoDetectLocation)) __obj.updateDynamic("autoDetectLocation")(autoDetectLocation)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (countryCode != null) __obj.updateDynamic("countryCode")(countryCode)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(placeSuggestions)) __obj.updateDynamic("placeSuggestions")(placeSuggestions)
+    if (!js.isUndefined(useMapView)) __obj.updateDynamic("useMapView")(useMapView)
+    if (userLocation != null) __obj.updateDynamic("userLocation")(userLocation)
+    __obj.asInstanceOf[IAutosuggestOptions]
+  }
+}
+

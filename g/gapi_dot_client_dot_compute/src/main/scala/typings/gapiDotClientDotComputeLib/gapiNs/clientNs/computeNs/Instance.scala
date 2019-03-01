@@ -100,3 +100,58 @@ trait Instance extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    canIpForward: js.UndefOr[scala.Boolean] = js.undefined,
+    cpuPlatform: java.lang.String = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    disks: js.Array[AttachedDisk] = null,
+    guestAccelerators: js.Array[AcceleratorConfig] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    labelFingerprint: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    machineType: java.lang.String = null,
+    metadata: Metadata = null,
+    minCpuPlatform: java.lang.String = null,
+    name: java.lang.String = null,
+    networkInterfaces: js.Array[NetworkInterface] = null,
+    scheduling: Scheduling = null,
+    selfLink: java.lang.String = null,
+    serviceAccounts: js.Array[ServiceAccount] = null,
+    startRestricted: js.UndefOr[scala.Boolean] = js.undefined,
+    status: java.lang.String = null,
+    statusMessage: java.lang.String = null,
+    tags: Tags = null,
+    zone: java.lang.String = null
+  ): Instance = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canIpForward)) __obj.updateDynamic("canIpForward")(canIpForward)
+    if (cpuPlatform != null) __obj.updateDynamic("cpuPlatform")(cpuPlatform)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (disks != null) __obj.updateDynamic("disks")(disks)
+    if (guestAccelerators != null) __obj.updateDynamic("guestAccelerators")(guestAccelerators)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (minCpuPlatform != null) __obj.updateDynamic("minCpuPlatform")(minCpuPlatform)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces)
+    if (scheduling != null) __obj.updateDynamic("scheduling")(scheduling)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (serviceAccounts != null) __obj.updateDynamic("serviceAccounts")(serviceAccounts)
+    if (!js.isUndefined(startRestricted)) __obj.updateDynamic("startRestricted")(startRestricted)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[Instance]
+  }
+}
+

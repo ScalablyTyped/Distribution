@@ -20,3 +20,18 @@ trait ClientContributionNode extends js.Object {
   var parents: js.Array[java.lang.String]
 }
 
+object ClientContributionNode {
+  @scala.inline
+  def apply(
+    children: js.Array[java.lang.String],
+    contribution: ClientContribution,
+    parents: js.Array[java.lang.String]
+  ): ClientContributionNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("contribution")(contribution)
+    __obj.updateDynamic("parents")(parents)
+    __obj.asInstanceOf[ClientContributionNode]
+  }
+}
+

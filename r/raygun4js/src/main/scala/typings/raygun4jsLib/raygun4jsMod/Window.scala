@@ -9,3 +9,12 @@ trait Window extends js.Object {
   var Raygun: RaygunStatic
 }
 
+object Window {
+  @scala.inline
+  def apply(Raygun: RaygunStatic): Window = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Raygun")(Raygun)
+    __obj.asInstanceOf[Window]
+  }
+}
+

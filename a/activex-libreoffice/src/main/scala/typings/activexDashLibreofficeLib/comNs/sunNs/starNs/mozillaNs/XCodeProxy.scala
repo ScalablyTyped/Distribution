@@ -25,3 +25,28 @@ trait XCodeProxy
   def run(): scala.Double
 }
 
+object XCodeProxy {
+  @scala.inline
+  def apply(
+    ProductType: MozillaProductType,
+    ProfileName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getProductType: js.Function0[MozillaProductType],
+    getProfileName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    run: js.Function0[scala.Double]
+  ): XCodeProxy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ProductType")(ProductType)
+    __obj.updateDynamic("ProfileName")(ProfileName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getProductType")(getProductType)
+    __obj.updateDynamic("getProfileName")(getProfileName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[XCodeProxy]
+  }
+}
+

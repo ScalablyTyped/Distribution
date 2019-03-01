@@ -494,3 +494,315 @@ trait Options
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    animatedZooms: js.UndefOr[scala.Boolean] = js.undefined,
+    annotationClickHandler: js.Function4[
+      /* annotation */ Annotation, 
+      /* point */ Point, 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      /* event */ stdLib.MouseEvent, 
+      _
+    ] = null,
+    annotationDblClickHandler: js.Function4[
+      /* annotation */ Annotation, 
+      /* point */ Point, 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      /* event */ stdLib.MouseEvent, 
+      _
+    ] = null,
+    annotationMouseOutHandler: js.Function4[
+      /* annotation */ Annotation, 
+      /* point */ Point, 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      /* event */ stdLib.MouseEvent, 
+      _
+    ] = null,
+    annotationMouseOverHandler: js.Function4[
+      /* annotation */ Annotation, 
+      /* point */ Point, 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      /* event */ stdLib.MouseEvent, 
+      _
+    ] = null,
+    axes: dygraphsLib.Anon_X = null,
+    axis: dygraphsLib.dygraphsLibStrings.y1 | dygraphsLib.dygraphsLibStrings.y2 = null,
+    axisLabelColor: java.lang.String = null,
+    axisLabelFontSize: scala.Int | scala.Double = null,
+    axisLabelFormatter: js.Function4[
+      /* v */ scala.Double | stdLib.Date, 
+      /* granularity */ scala.Double, 
+      /* opts */ js.Function1[/* name */ java.lang.String, _], 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      _
+    ] = null,
+    axisLabelWidth: scala.Int | scala.Double = null,
+    axisLineColor: java.lang.String = null,
+    axisLineWidth: scala.Int | scala.Double = null,
+    axisTickSize: scala.Int | scala.Double = null,
+    clickCallback: js.Function3[/* e */ stdLib.MouseEvent, /* xval */ scala.Double, /* points */ js.Array[Point], _] = null,
+    color: java.lang.String = null,
+    colorSaturation: scala.Int | scala.Double = null,
+    colorValue: scala.Int | scala.Double = null,
+    colors: js.Array[java.lang.String] = null,
+    connectSeparatedPoints: js.UndefOr[scala.Boolean] = js.undefined,
+    customBars: js.UndefOr[scala.Boolean] = js.undefined,
+    dataHandler: js.Any = null,
+    dateWindow: js.Array[scala.Double] = null,
+    delimiter: java.lang.String = null,
+    digitsAfterDecimal: scala.Int | scala.Double = null,
+    displayAnnotations: js.UndefOr[scala.Boolean] = js.undefined,
+    drawAxesAtZero: js.UndefOr[scala.Boolean] = js.undefined,
+    drawAxis: js.UndefOr[scala.Boolean] = js.undefined,
+    drawCallback: js.Function2[/* dygraph */ dygraphsLib.Dygraph, /* is_initial */ scala.Boolean, _] = null,
+    drawGapEdgePoints: js.UndefOr[scala.Boolean] = js.undefined,
+    drawGrid: js.UndefOr[scala.Boolean] = js.undefined,
+    drawHighlightPointCallback: js.Function7[
+      /* g */ dygraphsLib.Dygraph, 
+      /* seriesName */ java.lang.String, 
+      /* canvasContext */ stdLib.CanvasRenderingContext2D, 
+      /* cx */ scala.Double, 
+      /* cy */ scala.Double, 
+      /* color */ java.lang.String, 
+      /* pointSize */ scala.Double, 
+      _
+    ] = null,
+    drawPointCallback: js.Function7[
+      /* g */ dygraphsLib.Dygraph, 
+      /* seriesName */ java.lang.String, 
+      /* canvasContext */ stdLib.CanvasRenderingContext2D, 
+      /* cx */ scala.Double, 
+      /* cy */ scala.Double, 
+      /* color */ java.lang.String, 
+      /* pointSize */ scala.Double, 
+      _
+    ] = null,
+    drawPoints: js.UndefOr[scala.Boolean] = js.undefined,
+    errorBars: js.UndefOr[scala.Boolean] = js.undefined,
+    file: Data = null,
+    fillAlpha: scala.Int | scala.Double = null,
+    fillGraph: js.UndefOr[scala.Boolean] = js.undefined,
+    fractions: js.UndefOr[scala.Boolean] = js.undefined,
+    gridLineColor: java.lang.String = null,
+    gridLinePattern: js.Array[scala.Double] = null,
+    gridLineWidth: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    hideOverlayOnMouseOut: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightCallback: js.Function5[
+      /* event */ stdLib.MouseEvent, 
+      /* xval */ scala.Double, 
+      /* points */ js.Array[Point], 
+      /* row */ scala.Double, 
+      /* seriesName */ java.lang.String, 
+      _
+    ] = null,
+    highlightCircleSize: scala.Int | scala.Double = null,
+    highlightSeriesBackgroundAlpha: scala.Int | scala.Double = null,
+    highlightSeriesBackgroundColor: java.lang.String = null,
+    highlightSeriesOpts: PerSeriesOptions = null,
+    includeZero: js.UndefOr[scala.Boolean] = js.undefined,
+    independentTicks: js.UndefOr[scala.Boolean] = js.undefined,
+    interactionModel: js.Any = null,
+    isZoomedIgnoreProgrammaticZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    labels: js.Array[java.lang.String] = null,
+    labelsDiv: java.lang.String | stdLib.HTMLElement = null,
+    labelsDivStyles: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    labelsDivWidth: scala.Int | scala.Double = null,
+    labelsKMB: js.UndefOr[scala.Boolean] = js.undefined,
+    labelsKMG2: js.UndefOr[scala.Boolean] = js.undefined,
+    labelsSeparateLines: js.UndefOr[scala.Boolean] = js.undefined,
+    labelsShowZeroValues: js.UndefOr[scala.Boolean] = js.undefined,
+    labelsUTC: js.UndefOr[scala.Boolean] = js.undefined,
+    legend: dygraphsLib.dygraphsLibStrings.always | dygraphsLib.dygraphsLibStrings.follow | dygraphsLib.dygraphsLibStrings.onmouseover | dygraphsLib.dygraphsLibStrings.never = null,
+    legendFormatter: js.Function1[/* legendData */ LegendData, java.lang.String] = null,
+    logscale: js.UndefOr[scala.Boolean] = js.undefined,
+    maxNumberWidth: scala.Int | scala.Double = null,
+    panEdgeFraction: scala.Int | scala.Double = null,
+    pixelsPerLabel: scala.Int | scala.Double = null,
+    plotter: js.Any = null,
+    plugins: js.Array[_] = null,
+    pointClickCallback: js.Function2[/* e */ stdLib.MouseEvent, /* point */ Point, _] = null,
+    pointSize: scala.Int | scala.Double = null,
+    rangeSelectorHeight: scala.Int | scala.Double = null,
+    rangeSelectorPlotFillColor: java.lang.String = null,
+    rangeSelectorPlotStrokeColor: java.lang.String = null,
+    rightGap: scala.Int | scala.Double = null,
+    rollPeriod: scala.Int | scala.Double = null,
+    series: org.scalablytyped.runtime.StringDictionary[PerSeriesOptions] = null,
+    showInRangeSelector: js.UndefOr[scala.Boolean] = js.undefined,
+    showLabelsOnHighlight: js.UndefOr[scala.Boolean] = js.undefined,
+    showRangeSelector: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoller: js.UndefOr[scala.Boolean] = js.undefined,
+    sigFigs: scala.Int | scala.Double = null,
+    sigma: scala.Int | scala.Double = null,
+    stackedGraph: js.UndefOr[scala.Boolean] = js.undefined,
+    stackedGraphNaNFill: java.lang.String = null,
+    stepPlot: js.UndefOr[scala.Boolean] = js.undefined,
+    strokeBorderColor: java.lang.String = null,
+    strokeBorderWidth: scala.Int | scala.Double = null,
+    strokePattern: js.Array[scala.Double] = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    ticker: js.Function6[
+      /* min */ scala.Double, 
+      /* max */ scala.Double, 
+      /* pixels */ scala.Double, 
+      /* opts */ js.Function1[/* name */ java.lang.String, _], 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      /* vals */ js.Array[scala.Double], 
+      js.Array[dygraphsLib.Anon_Label]
+    ] = null,
+    title: java.lang.String = null,
+    titleHeight: scala.Int | scala.Double = null,
+    underlayCallback: js.Function3[
+      /* context */ stdLib.CanvasRenderingContext2D, 
+      /* area */ Area, 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      _
+    ] = null,
+    unhighlightCallback: js.Function1[/* event */ stdLib.MouseEvent, _] = null,
+    valueFormatter: js.Function6[
+      /* v */ scala.Double, 
+      /* opts */ js.Function1[/* name */ java.lang.String, _], 
+      /* seriesName */ java.lang.String, 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      /* row */ scala.Double, 
+      /* col */ scala.Double, 
+      _
+    ] = null,
+    valueRange: js.Array[scala.Double] = null,
+    visibility: js.Array[scala.Boolean] = null,
+    width: scala.Int | scala.Double = null,
+    wilsonInterval: js.UndefOr[scala.Boolean] = js.undefined,
+    xAxisHeight: scala.Int | scala.Double = null,
+    xLabelHeight: scala.Int | scala.Double = null,
+    xRangePad: scala.Int | scala.Double = null,
+    xValueParser: js.Function1[/* val */ java.lang.String, scala.Double] = null,
+    xlabel: java.lang.String = null,
+    y2label: java.lang.String = null,
+    yLabelWidth: scala.Int | scala.Double = null,
+    yRangePad: scala.Int | scala.Double = null,
+    ylabel: java.lang.String = null,
+    zoomCallback: js.Function3[
+      /* minDate */ scala.Double, 
+      /* maxDate */ scala.Double, 
+      /* yRanges */ js.Array[js.Tuple2[scala.Double, scala.Double]], 
+      _
+    ] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animatedZooms)) __obj.updateDynamic("animatedZooms")(animatedZooms)
+    if (annotationClickHandler != null) __obj.updateDynamic("annotationClickHandler")(annotationClickHandler)
+    if (annotationDblClickHandler != null) __obj.updateDynamic("annotationDblClickHandler")(annotationDblClickHandler)
+    if (annotationMouseOutHandler != null) __obj.updateDynamic("annotationMouseOutHandler")(annotationMouseOutHandler)
+    if (annotationMouseOverHandler != null) __obj.updateDynamic("annotationMouseOverHandler")(annotationMouseOverHandler)
+    if (axes != null) __obj.updateDynamic("axes")(axes)
+    if (axis != null) __obj.updateDynamic("axis")(axis.asInstanceOf[js.Any])
+    if (axisLabelColor != null) __obj.updateDynamic("axisLabelColor")(axisLabelColor)
+    if (axisLabelFontSize != null) __obj.updateDynamic("axisLabelFontSize")(axisLabelFontSize.asInstanceOf[js.Any])
+    if (axisLabelFormatter != null) __obj.updateDynamic("axisLabelFormatter")(axisLabelFormatter)
+    if (axisLabelWidth != null) __obj.updateDynamic("axisLabelWidth")(axisLabelWidth.asInstanceOf[js.Any])
+    if (axisLineColor != null) __obj.updateDynamic("axisLineColor")(axisLineColor)
+    if (axisLineWidth != null) __obj.updateDynamic("axisLineWidth")(axisLineWidth.asInstanceOf[js.Any])
+    if (axisTickSize != null) __obj.updateDynamic("axisTickSize")(axisTickSize.asInstanceOf[js.Any])
+    if (clickCallback != null) __obj.updateDynamic("clickCallback")(clickCallback)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colorSaturation != null) __obj.updateDynamic("colorSaturation")(colorSaturation.asInstanceOf[js.Any])
+    if (colorValue != null) __obj.updateDynamic("colorValue")(colorValue.asInstanceOf[js.Any])
+    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (!js.isUndefined(connectSeparatedPoints)) __obj.updateDynamic("connectSeparatedPoints")(connectSeparatedPoints)
+    if (!js.isUndefined(customBars)) __obj.updateDynamic("customBars")(customBars)
+    if (dataHandler != null) __obj.updateDynamic("dataHandler")(dataHandler)
+    if (dateWindow != null) __obj.updateDynamic("dateWindow")(dateWindow)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (digitsAfterDecimal != null) __obj.updateDynamic("digitsAfterDecimal")(digitsAfterDecimal.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayAnnotations)) __obj.updateDynamic("displayAnnotations")(displayAnnotations)
+    if (!js.isUndefined(drawAxesAtZero)) __obj.updateDynamic("drawAxesAtZero")(drawAxesAtZero)
+    if (!js.isUndefined(drawAxis)) __obj.updateDynamic("drawAxis")(drawAxis)
+    if (drawCallback != null) __obj.updateDynamic("drawCallback")(drawCallback)
+    if (!js.isUndefined(drawGapEdgePoints)) __obj.updateDynamic("drawGapEdgePoints")(drawGapEdgePoints)
+    if (!js.isUndefined(drawGrid)) __obj.updateDynamic("drawGrid")(drawGrid)
+    if (drawHighlightPointCallback != null) __obj.updateDynamic("drawHighlightPointCallback")(drawHighlightPointCallback)
+    if (drawPointCallback != null) __obj.updateDynamic("drawPointCallback")(drawPointCallback)
+    if (!js.isUndefined(drawPoints)) __obj.updateDynamic("drawPoints")(drawPoints)
+    if (!js.isUndefined(errorBars)) __obj.updateDynamic("errorBars")(errorBars)
+    if (file != null) __obj.updateDynamic("file")(file.asInstanceOf[js.Any])
+    if (fillAlpha != null) __obj.updateDynamic("fillAlpha")(fillAlpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(fillGraph)) __obj.updateDynamic("fillGraph")(fillGraph)
+    if (!js.isUndefined(fractions)) __obj.updateDynamic("fractions")(fractions)
+    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
+    if (gridLinePattern != null) __obj.updateDynamic("gridLinePattern")(gridLinePattern)
+    if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOverlayOnMouseOut)) __obj.updateDynamic("hideOverlayOnMouseOut")(hideOverlayOnMouseOut)
+    if (highlightCallback != null) __obj.updateDynamic("highlightCallback")(highlightCallback)
+    if (highlightCircleSize != null) __obj.updateDynamic("highlightCircleSize")(highlightCircleSize.asInstanceOf[js.Any])
+    if (highlightSeriesBackgroundAlpha != null) __obj.updateDynamic("highlightSeriesBackgroundAlpha")(highlightSeriesBackgroundAlpha.asInstanceOf[js.Any])
+    if (highlightSeriesBackgroundColor != null) __obj.updateDynamic("highlightSeriesBackgroundColor")(highlightSeriesBackgroundColor)
+    if (highlightSeriesOpts != null) __obj.updateDynamic("highlightSeriesOpts")(highlightSeriesOpts)
+    if (!js.isUndefined(includeZero)) __obj.updateDynamic("includeZero")(includeZero)
+    if (!js.isUndefined(independentTicks)) __obj.updateDynamic("independentTicks")(independentTicks)
+    if (interactionModel != null) __obj.updateDynamic("interactionModel")(interactionModel)
+    if (!js.isUndefined(isZoomedIgnoreProgrammaticZoom)) __obj.updateDynamic("isZoomedIgnoreProgrammaticZoom")(isZoomedIgnoreProgrammaticZoom)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (labelsDiv != null) __obj.updateDynamic("labelsDiv")(labelsDiv.asInstanceOf[js.Any])
+    if (labelsDivStyles != null) __obj.updateDynamic("labelsDivStyles")(labelsDivStyles)
+    if (labelsDivWidth != null) __obj.updateDynamic("labelsDivWidth")(labelsDivWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(labelsKMB)) __obj.updateDynamic("labelsKMB")(labelsKMB)
+    if (!js.isUndefined(labelsKMG2)) __obj.updateDynamic("labelsKMG2")(labelsKMG2)
+    if (!js.isUndefined(labelsSeparateLines)) __obj.updateDynamic("labelsSeparateLines")(labelsSeparateLines)
+    if (!js.isUndefined(labelsShowZeroValues)) __obj.updateDynamic("labelsShowZeroValues")(labelsShowZeroValues)
+    if (!js.isUndefined(labelsUTC)) __obj.updateDynamic("labelsUTC")(labelsUTC)
+    if (legend != null) __obj.updateDynamic("legend")(legend.asInstanceOf[js.Any])
+    if (legendFormatter != null) __obj.updateDynamic("legendFormatter")(legendFormatter)
+    if (!js.isUndefined(logscale)) __obj.updateDynamic("logscale")(logscale)
+    if (maxNumberWidth != null) __obj.updateDynamic("maxNumberWidth")(maxNumberWidth.asInstanceOf[js.Any])
+    if (panEdgeFraction != null) __obj.updateDynamic("panEdgeFraction")(panEdgeFraction.asInstanceOf[js.Any])
+    if (pixelsPerLabel != null) __obj.updateDynamic("pixelsPerLabel")(pixelsPerLabel.asInstanceOf[js.Any])
+    if (plotter != null) __obj.updateDynamic("plotter")(plotter)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (pointClickCallback != null) __obj.updateDynamic("pointClickCallback")(pointClickCallback)
+    if (pointSize != null) __obj.updateDynamic("pointSize")(pointSize.asInstanceOf[js.Any])
+    if (rangeSelectorHeight != null) __obj.updateDynamic("rangeSelectorHeight")(rangeSelectorHeight.asInstanceOf[js.Any])
+    if (rangeSelectorPlotFillColor != null) __obj.updateDynamic("rangeSelectorPlotFillColor")(rangeSelectorPlotFillColor)
+    if (rangeSelectorPlotStrokeColor != null) __obj.updateDynamic("rangeSelectorPlotStrokeColor")(rangeSelectorPlotStrokeColor)
+    if (rightGap != null) __obj.updateDynamic("rightGap")(rightGap.asInstanceOf[js.Any])
+    if (rollPeriod != null) __obj.updateDynamic("rollPeriod")(rollPeriod.asInstanceOf[js.Any])
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (!js.isUndefined(showInRangeSelector)) __obj.updateDynamic("showInRangeSelector")(showInRangeSelector)
+    if (!js.isUndefined(showLabelsOnHighlight)) __obj.updateDynamic("showLabelsOnHighlight")(showLabelsOnHighlight)
+    if (!js.isUndefined(showRangeSelector)) __obj.updateDynamic("showRangeSelector")(showRangeSelector)
+    if (!js.isUndefined(showRoller)) __obj.updateDynamic("showRoller")(showRoller)
+    if (sigFigs != null) __obj.updateDynamic("sigFigs")(sigFigs.asInstanceOf[js.Any])
+    if (sigma != null) __obj.updateDynamic("sigma")(sigma.asInstanceOf[js.Any])
+    if (!js.isUndefined(stackedGraph)) __obj.updateDynamic("stackedGraph")(stackedGraph)
+    if (stackedGraphNaNFill != null) __obj.updateDynamic("stackedGraphNaNFill")(stackedGraphNaNFill)
+    if (!js.isUndefined(stepPlot)) __obj.updateDynamic("stepPlot")(stepPlot)
+    if (strokeBorderColor != null) __obj.updateDynamic("strokeBorderColor")(strokeBorderColor)
+    if (strokeBorderWidth != null) __obj.updateDynamic("strokeBorderWidth")(strokeBorderWidth.asInstanceOf[js.Any])
+    if (strokePattern != null) __obj.updateDynamic("strokePattern")(strokePattern)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (ticker != null) __obj.updateDynamic("ticker")(ticker)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleHeight != null) __obj.updateDynamic("titleHeight")(titleHeight.asInstanceOf[js.Any])
+    if (underlayCallback != null) __obj.updateDynamic("underlayCallback")(underlayCallback)
+    if (unhighlightCallback != null) __obj.updateDynamic("unhighlightCallback")(unhighlightCallback)
+    if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(valueFormatter)
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(wilsonInterval)) __obj.updateDynamic("wilsonInterval")(wilsonInterval)
+    if (xAxisHeight != null) __obj.updateDynamic("xAxisHeight")(xAxisHeight.asInstanceOf[js.Any])
+    if (xLabelHeight != null) __obj.updateDynamic("xLabelHeight")(xLabelHeight.asInstanceOf[js.Any])
+    if (xRangePad != null) __obj.updateDynamic("xRangePad")(xRangePad.asInstanceOf[js.Any])
+    if (xValueParser != null) __obj.updateDynamic("xValueParser")(xValueParser)
+    if (xlabel != null) __obj.updateDynamic("xlabel")(xlabel)
+    if (y2label != null) __obj.updateDynamic("y2label")(y2label)
+    if (yLabelWidth != null) __obj.updateDynamic("yLabelWidth")(yLabelWidth.asInstanceOf[js.Any])
+    if (yRangePad != null) __obj.updateDynamic("yRangePad")(yRangePad.asInstanceOf[js.Any])
+    if (ylabel != null) __obj.updateDynamic("ylabel")(ylabel)
+    if (zoomCallback != null) __obj.updateDynamic("zoomCallback")(zoomCallback)
+    __obj.asInstanceOf[Options]
+  }
+}
+

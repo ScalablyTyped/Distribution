@@ -55,3 +55,37 @@ trait Filter
   var nodata: scala.Boolean
 }
 
+object Filter {
+  @scala.inline
+  def apply(
+    autoApply: scala.Boolean,
+    autoExpand: scala.Boolean,
+    counter: scala.Boolean,
+    fuzzy: scala.Boolean,
+    hideExpandedCounter: scala.Boolean,
+    hideExpanders: scala.Boolean,
+    highlight: scala.Boolean,
+    leavesOnly: scala.Boolean,
+    mode: jqueryDotFancytreeLib.jqueryDotFancytreeLibStrings.dimm | jqueryDotFancytreeLib.jqueryDotFancytreeLibStrings.string,
+    nodata: scala.Boolean,
+    StringDictionary: /**
+    * Support misc options
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Filter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoApply")(autoApply)
+    __obj.updateDynamic("autoExpand")(autoExpand)
+    __obj.updateDynamic("counter")(counter)
+    __obj.updateDynamic("fuzzy")(fuzzy)
+    __obj.updateDynamic("hideExpandedCounter")(hideExpandedCounter)
+    __obj.updateDynamic("hideExpanders")(hideExpanders)
+    __obj.updateDynamic("highlight")(highlight)
+    __obj.updateDynamic("leavesOnly")(leavesOnly)
+    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.updateDynamic("nodata")(nodata)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Filter]
+  }
+}
+

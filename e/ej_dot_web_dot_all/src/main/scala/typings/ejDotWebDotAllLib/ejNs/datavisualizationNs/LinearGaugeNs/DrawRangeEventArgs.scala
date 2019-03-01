@@ -41,3 +41,34 @@ trait DrawRangeEventArgs extends js.Object {
   var `type`: js.UndefOr[js.Any] = js.undefined
 }
 
+object DrawRangeEventArgs {
+  @scala.inline
+  def apply(
+    Model: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    `object`: js.Any = null,
+    position: js.Any = null,
+    rangeElement: js.Any = null,
+    rangeIndex: scala.Int | scala.Double = null,
+    scaleElement: js.Any = null,
+    scaleIndex: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    `type`: js.Any = null
+  ): DrawRangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Model != null) __obj.updateDynamic("Model")(Model)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (rangeElement != null) __obj.updateDynamic("rangeElement")(rangeElement)
+    if (rangeIndex != null) __obj.updateDynamic("rangeIndex")(rangeIndex.asInstanceOf[js.Any])
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DrawRangeEventArgs]
+  }
+}
+

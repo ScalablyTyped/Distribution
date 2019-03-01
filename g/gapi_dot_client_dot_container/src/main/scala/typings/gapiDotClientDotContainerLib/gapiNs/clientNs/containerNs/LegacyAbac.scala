@@ -15,3 +15,12 @@ trait LegacyAbac extends js.Object {
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LegacyAbac {
+  @scala.inline
+  def apply(enabled: js.UndefOr[scala.Boolean] = js.undefined): LegacyAbac = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[LegacyAbac]
+  }
+}
+

@@ -20,3 +20,16 @@ trait Anon_AuthorizationMethod extends js.Object {
   ] = js.undefined
 }
 
+object Anon_AuthorizationMethod {
+  @scala.inline
+  def apply(
+    authorizationMethod: simpleDashOauth2Lib.simpleDashOauth2LibStrings.header | simpleDashOauth2Lib.simpleDashOauth2LibStrings.body = null,
+    bodyFormat: simpleDashOauth2Lib.simpleDashOauth2LibStrings.json | simpleDashOauth2Lib.simpleDashOauth2LibStrings.form = null
+  ): Anon_AuthorizationMethod = {
+    val __obj = js.Dynamic.literal()
+    if (authorizationMethod != null) __obj.updateDynamic("authorizationMethod")(authorizationMethod.asInstanceOf[js.Any])
+    if (bodyFormat != null) __obj.updateDynamic("bodyFormat")(bodyFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AuthorizationMethod]
+  }
+}
+

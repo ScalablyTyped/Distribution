@@ -93,3 +93,72 @@ trait TextProperties
   var TextWritingMode: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.WritingMode
 }
 
+object TextProperties {
+  @scala.inline
+  def apply(
+    CharacterProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterProperties = null,
+    CharacterPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesAsian = null,
+    CharacterPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesComplex = null,
+    IsNumbering: scala.Boolean,
+    NumberingRules: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexReplace,
+    ParagraphProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphProperties = null,
+    ParagraphPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesAsian = null,
+    ParagraphPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesComplex = null,
+    TextAnimationAmount: scala.Double,
+    TextAnimationCount: scala.Double,
+    TextAnimationDelay: scala.Double,
+    TextAnimationDirection: TextAnimationDirection,
+    TextAnimationKind: TextAnimationKind,
+    TextAnimationStartInside: scala.Boolean,
+    TextAnimationStopInside: scala.Boolean,
+    TextAutoGrowHeight: scala.Boolean,
+    TextAutoGrowWidth: scala.Boolean,
+    TextContourFrame: scala.Boolean,
+    TextFitToSize: TextFitToSizeType,
+    TextHorizontalAdjust: TextHorizontalAdjust,
+    TextLeftDistance: scala.Double,
+    TextLowerDistance: scala.Double,
+    TextMaximumFrameHeight: scala.Double,
+    TextMaximumFrameWidth: scala.Double,
+    TextMinimumFrameHeight: scala.Double,
+    TextMinimumFrameWidth: scala.Double,
+    TextRightDistance: scala.Double,
+    TextUpperDistance: scala.Double,
+    TextVerticalAdjust: TextVerticalAdjust,
+    TextWritingMode: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.WritingMode
+  ): TextProperties = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
+    __obj.updateDynamic("IsNumbering")(IsNumbering)
+    __obj.updateDynamic("NumberingRules")(NumberingRules)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesComplex)
+    __obj.updateDynamic("TextAnimationAmount")(TextAnimationAmount)
+    __obj.updateDynamic("TextAnimationCount")(TextAnimationCount)
+    __obj.updateDynamic("TextAnimationDelay")(TextAnimationDelay)
+    __obj.updateDynamic("TextAnimationDirection")(TextAnimationDirection)
+    __obj.updateDynamic("TextAnimationKind")(TextAnimationKind)
+    __obj.updateDynamic("TextAnimationStartInside")(TextAnimationStartInside)
+    __obj.updateDynamic("TextAnimationStopInside")(TextAnimationStopInside)
+    __obj.updateDynamic("TextAutoGrowHeight")(TextAutoGrowHeight)
+    __obj.updateDynamic("TextAutoGrowWidth")(TextAutoGrowWidth)
+    __obj.updateDynamic("TextContourFrame")(TextContourFrame)
+    __obj.updateDynamic("TextFitToSize")(TextFitToSize)
+    __obj.updateDynamic("TextHorizontalAdjust")(TextHorizontalAdjust)
+    __obj.updateDynamic("TextLeftDistance")(TextLeftDistance)
+    __obj.updateDynamic("TextLowerDistance")(TextLowerDistance)
+    __obj.updateDynamic("TextMaximumFrameHeight")(TextMaximumFrameHeight)
+    __obj.updateDynamic("TextMaximumFrameWidth")(TextMaximumFrameWidth)
+    __obj.updateDynamic("TextMinimumFrameHeight")(TextMinimumFrameHeight)
+    __obj.updateDynamic("TextMinimumFrameWidth")(TextMinimumFrameWidth)
+    __obj.updateDynamic("TextRightDistance")(TextRightDistance)
+    __obj.updateDynamic("TextUpperDistance")(TextUpperDistance)
+    __obj.updateDynamic("TextVerticalAdjust")(TextVerticalAdjust)
+    __obj.updateDynamic("TextWritingMode")(TextWritingMode)
+    __obj.asInstanceOf[TextProperties]
+  }
+}
+

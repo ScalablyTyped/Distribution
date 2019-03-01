@@ -58,3 +58,26 @@ trait NotebookData extends js.Object {
   var sections: js.UndefOr[js.Array[SectionData]] = js.undefined
 }
 
+object NotebookData {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String = null,
+    clientUrl: java.lang.String = null,
+    id: java.lang.String = null,
+    isVirtual: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    sectionGroups: js.Array[SectionGroupData] = null,
+    sections: js.Array[SectionData] = null
+  ): NotebookData = {
+    val __obj = js.Dynamic.literal()
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (clientUrl != null) __obj.updateDynamic("clientUrl")(clientUrl)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isVirtual)) __obj.updateDynamic("isVirtual")(isVirtual)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (sectionGroups != null) __obj.updateDynamic("sectionGroups")(sectionGroups)
+    if (sections != null) __obj.updateDynamic("sections")(sections)
+    __obj.asInstanceOf[NotebookData]
+  }
+}
+

@@ -11,3 +11,12 @@ trait Select extends js.Object {
   def format(): java.lang.String
 }
 
+object Select {
+  @scala.inline
+  def apply(format: js.Function0[java.lang.String]): Select = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.asInstanceOf[Select]
+  }
+}
+

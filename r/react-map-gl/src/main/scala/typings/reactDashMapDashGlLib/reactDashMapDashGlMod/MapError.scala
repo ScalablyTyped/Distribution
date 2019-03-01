@@ -10,3 +10,13 @@ trait MapError extends js.Object {
   var status: scala.Double
 }
 
+object MapError {
+  @scala.inline
+  def apply(status: scala.Double, error: reactDashMapDashGlLib.Anon_Message = null): MapError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[MapError]
+  }
+}
+

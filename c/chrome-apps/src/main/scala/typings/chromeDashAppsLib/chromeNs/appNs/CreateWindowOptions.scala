@@ -147,3 +147,69 @@ trait CreateWindowOptions extends ContentBounds {
   var visibleOnAllWorkspaces: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CreateWindowOptions {
+  @scala.inline
+  def apply(
+    alphaEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    alwaysOnTop: js.UndefOr[scala.Boolean] = js.undefined,
+    bounds: ContentBounds = null,
+    focused: js.UndefOr[scala.Boolean] = js.undefined,
+    frame: chromeDashAppsLib.chromeDashAppsLibStrings.none | chromeDashAppsLib.chromeDashAppsLibStrings.chrome | FrameOptions | FrameOptionsChrome = null,
+    height: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    id: java.lang.String = null,
+    ime: js.UndefOr[scala.Boolean] = js.undefined,
+    innerBounds: BoundsSpecification = null,
+    left: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    maxHeight: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    maxWidth: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    minHeight: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    minWidth: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    outerBounds: BoundsSpecification = null,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    showInShelf: js.UndefOr[scala.Boolean] = js.undefined,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    state: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_FULLSCREEN, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_FULLSCREEN[keyof chrome-apps.Anon_FULLSCREEN] */ js.Any
+      ]
+    ] = null,
+    top: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.shell = null,
+    visibleOnAllWorkspaces: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): CreateWindowOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alphaEnabled)) __obj.updateDynamic("alphaEnabled")(alphaEnabled)
+    if (!js.isUndefined(alwaysOnTop)) __obj.updateDynamic("alwaysOnTop")(alwaysOnTop)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
+    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(ime)) __obj.updateDynamic("ime")(ime)
+    if (innerBounds != null) __obj.updateDynamic("innerBounds")(innerBounds)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(maxHeight)) __obj.updateDynamic("maxHeight")(maxHeight)
+    if (!js.isUndefined(maxWidth)) __obj.updateDynamic("maxWidth")(maxWidth)
+    if (!js.isUndefined(minHeight)) __obj.updateDynamic("minHeight")(minHeight)
+    if (!js.isUndefined(minWidth)) __obj.updateDynamic("minWidth")(minWidth)
+    if (outerBounds != null) __obj.updateDynamic("outerBounds")(outerBounds)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (!js.isUndefined(showInShelf)) __obj.updateDynamic("showInShelf")(showInShelf)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(visibleOnAllWorkspaces)) __obj.updateDynamic("visibleOnAllWorkspaces")(visibleOnAllWorkspaces)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[CreateWindowOptions]
+  }
+}
+

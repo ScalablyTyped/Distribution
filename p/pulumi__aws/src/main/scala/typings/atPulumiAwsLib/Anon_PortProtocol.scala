@@ -10,3 +10,16 @@ trait Anon_PortProtocol extends js.Object {
   var protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_PortProtocol {
+  @scala.inline
+  def apply(
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): Anon_PortProtocol = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_PortProtocol]
+  }
+}
+

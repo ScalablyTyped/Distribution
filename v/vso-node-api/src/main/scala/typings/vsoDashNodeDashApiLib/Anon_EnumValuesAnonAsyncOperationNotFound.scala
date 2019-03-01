@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonAsyncOperationNotFound extends js.Object {
   var enumValues: Anon_AsyncOperationNotFound
 }
 
+object Anon_EnumValuesAnonAsyncOperationNotFound {
+  @scala.inline
+  def apply(enumValues: Anon_AsyncOperationNotFound): Anon_EnumValuesAnonAsyncOperationNotFound = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonAsyncOperationNotFound]
+  }
+}
+

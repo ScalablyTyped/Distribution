@@ -95,3 +95,54 @@ trait GetClusterResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetClusterResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    availabilityZone: java.lang.String,
+    cacheNodes: js.Array[atPulumiAwsLib.Anon_Address],
+    clusterAddress: java.lang.String,
+    configurationEndpoint: java.lang.String,
+    engine: java.lang.String,
+    engineVersion: java.lang.String,
+    id: java.lang.String,
+    maintenanceWindow: java.lang.String,
+    nodeType: java.lang.String,
+    notificationTopicArn: java.lang.String,
+    numCacheNodes: scala.Double,
+    parameterGroupName: java.lang.String,
+    port: scala.Double,
+    replicationGroupId: java.lang.String,
+    securityGroupIds: js.Array[java.lang.String],
+    securityGroupNames: js.Array[java.lang.String],
+    snapshotRetentionLimit: scala.Double,
+    snapshotWindow: java.lang.String,
+    subnetGroupName: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetClusterResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("availabilityZone")(availabilityZone)
+    __obj.updateDynamic("cacheNodes")(cacheNodes)
+    __obj.updateDynamic("clusterAddress")(clusterAddress)
+    __obj.updateDynamic("configurationEndpoint")(configurationEndpoint)
+    __obj.updateDynamic("engine")(engine)
+    __obj.updateDynamic("engineVersion")(engineVersion)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("maintenanceWindow")(maintenanceWindow)
+    __obj.updateDynamic("nodeType")(nodeType)
+    __obj.updateDynamic("notificationTopicArn")(notificationTopicArn)
+    __obj.updateDynamic("numCacheNodes")(numCacheNodes)
+    __obj.updateDynamic("parameterGroupName")(parameterGroupName)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("replicationGroupId")(replicationGroupId)
+    __obj.updateDynamic("securityGroupIds")(securityGroupIds)
+    __obj.updateDynamic("securityGroupNames")(securityGroupNames)
+    __obj.updateDynamic("snapshotRetentionLimit")(snapshotRetentionLimit)
+    __obj.updateDynamic("snapshotWindow")(snapshotWindow)
+    __obj.updateDynamic("subnetGroupName")(subnetGroupName)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetClusterResult]
+  }
+}
+

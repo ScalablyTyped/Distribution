@@ -93,3 +93,82 @@ trait GridOptions[EntityType] extends js.Object {
   var useExternalSorting: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GridOptions {
+  @scala.inline
+  def apply[EntityType](
+    displaySelectionCheckbox: scala.Boolean,
+    afterSelectionChange: js.Function1[/* row */ Row[EntityType], scala.Unit] = null,
+    beforeSelectionChange: js.Function1[/* row */ Row[EntityType], scala.Boolean] = null,
+    canSelectRows: js.UndefOr[scala.Boolean] = js.undefined,
+    columnDefs: js.Array[ColumnDef] | knockoutLib.KnockoutObservable[js.Array[ColumnDef]] = null,
+    columnWidth: scala.Int | scala.Double = null,
+    data: knockoutLib.KnockoutObservableArray[EntityType] = null,
+    enableColumnResize: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePaging: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowReordering: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    filterOptions: FilterOptions = null,
+    footerRowHeight: scala.Int | scala.Double = null,
+    footerVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    groups: js.Array[java.lang.String] = null,
+    headerRowHeight: scala.Int | scala.Double = null,
+    headerRowTemplate: java.lang.String | jqueryLib.JQueryGenericPromise[java.lang.String] = null,
+    jqueryUIDraggable: js.UndefOr[scala.Boolean] = js.undefined,
+    jqueryUITheme: js.UndefOr[scala.Boolean] = js.undefined,
+    keepLastSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    maintainColumnRatios: js.Any = null,
+    multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    pagingOptions: PagingOptions = null,
+    plugins: js.Array[Plugin[EntityType]] = null,
+    rowHeight: scala.Int | scala.Double = null,
+    rowTemplate: java.lang.String | jqueryLib.JQueryGenericPromise[java.lang.String] = null,
+    selectAllState: knockoutLib.KnockoutObservable[scala.Boolean] = null,
+    selectWithCheckboxOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedItems: knockoutLib.KnockoutObservableArray[_] = null,
+    showColumnMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    showFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    showGroupPanel: js.UndefOr[scala.Boolean] = js.undefined,
+    sortInfo: SortInfo | knockoutLib.KnockoutObservable[SortInfo] = null,
+    tabIndex: scala.Int | scala.Double = null,
+    useExternalSorting: js.UndefOr[scala.Boolean] = js.undefined
+  ): GridOptions[EntityType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displaySelectionCheckbox")(displaySelectionCheckbox)
+    if (afterSelectionChange != null) __obj.updateDynamic("afterSelectionChange")(afterSelectionChange)
+    if (beforeSelectionChange != null) __obj.updateDynamic("beforeSelectionChange")(beforeSelectionChange)
+    if (!js.isUndefined(canSelectRows)) __obj.updateDynamic("canSelectRows")(canSelectRows)
+    if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs.asInstanceOf[js.Any])
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(enableColumnResize)) __obj.updateDynamic("enableColumnResize")(enableColumnResize)
+    if (!js.isUndefined(enablePaging)) __obj.updateDynamic("enablePaging")(enablePaging)
+    if (!js.isUndefined(enableRowReordering)) __obj.updateDynamic("enableRowReordering")(enableRowReordering)
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting)
+    if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions)
+    if (footerRowHeight != null) __obj.updateDynamic("footerRowHeight")(footerRowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(footerVisible)) __obj.updateDynamic("footerVisible")(footerVisible)
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
+    if (headerRowTemplate != null) __obj.updateDynamic("headerRowTemplate")(headerRowTemplate.asInstanceOf[js.Any])
+    if (!js.isUndefined(jqueryUIDraggable)) __obj.updateDynamic("jqueryUIDraggable")(jqueryUIDraggable)
+    if (!js.isUndefined(jqueryUITheme)) __obj.updateDynamic("jqueryUITheme")(jqueryUITheme)
+    if (!js.isUndefined(keepLastSelected)) __obj.updateDynamic("keepLastSelected")(keepLastSelected)
+    if (maintainColumnRatios != null) __obj.updateDynamic("maintainColumnRatios")(maintainColumnRatios)
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
+    if (pagingOptions != null) __obj.updateDynamic("pagingOptions")(pagingOptions)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate.asInstanceOf[js.Any])
+    if (selectAllState != null) __obj.updateDynamic("selectAllState")(selectAllState)
+    if (!js.isUndefined(selectWithCheckboxOnly)) __obj.updateDynamic("selectWithCheckboxOnly")(selectWithCheckboxOnly)
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
+    if (!js.isUndefined(showColumnMenu)) __obj.updateDynamic("showColumnMenu")(showColumnMenu)
+    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter)
+    if (!js.isUndefined(showGroupPanel)) __obj.updateDynamic("showGroupPanel")(showGroupPanel)
+    if (sortInfo != null) __obj.updateDynamic("sortInfo")(sortInfo.asInstanceOf[js.Any])
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalSorting)) __obj.updateDynamic("useExternalSorting")(useExternalSorting)
+    __obj.asInstanceOf[GridOptions[EntityType]]
+  }
+}
+

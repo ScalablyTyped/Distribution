@@ -12,3 +12,20 @@ trait defaultOptions extends js.Object {
   def addEffect(name: java.lang.String, handler: js.Function0[_]): js.Any
 }
 
+object defaultOptions {
+  @scala.inline
+  def apply(
+    addEffect: js.Function2[java.lang.String, js.Function0[_], js.Any],
+    middlewares: js.Array[_],
+    historyMode: java.lang.String = null,
+    initialState: js.Object = null
+  ): defaultOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEffect")(addEffect)
+    __obj.updateDynamic("middlewares")(middlewares)
+    if (historyMode != null) __obj.updateDynamic("historyMode")(historyMode)
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
+    __obj.asInstanceOf[defaultOptions]
+  }
+}
+

@@ -21,3 +21,18 @@ trait UriOptions extends js.Object {
   var scheme: js.UndefOr[java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp])] = js.undefined
 }
 
+object UriOptions {
+  @scala.inline
+  def apply(
+    allowRelative: js.UndefOr[scala.Boolean] = js.undefined,
+    relativeOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    scheme: java.lang.String | stdLib.RegExp | (js.Array[java.lang.String | stdLib.RegExp]) = null
+  ): UriOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowRelative)) __obj.updateDynamic("allowRelative")(allowRelative)
+    if (!js.isUndefined(relativeOnly)) __obj.updateDynamic("relativeOnly")(relativeOnly)
+    if (scheme != null) __obj.updateDynamic("scheme")(scheme.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UriOptions]
+  }
+}
+

@@ -49,3 +49,38 @@ trait Anon_AltApproved extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltApproved {
+  @scala.inline
+  def apply(
+    enterpriseId: java.lang.String,
+    alt: java.lang.String = null,
+    approved: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    language: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    query: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    token: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltApproved = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enterpriseId")(enterpriseId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(approved)) __obj.updateDynamic("approved")(approved)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltApproved]
+  }
+}
+

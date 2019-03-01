@@ -21,3 +21,14 @@ trait GetAvailabilityZoneArgs extends js.Object {
   val zoneId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetAvailabilityZoneArgs {
+  @scala.inline
+  def apply(name: java.lang.String = null, state: java.lang.String = null, zoneId: java.lang.String = null): GetAvailabilityZoneArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId)
+    __obj.asInstanceOf[GetAvailabilityZoneArgs]
+  }
+}
+

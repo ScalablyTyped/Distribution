@@ -16,3 +16,12 @@ trait ASPxClientWebChartElement extends js.Object {
   var chart: ASPxClientWebChart
 }
 
+object ASPxClientWebChartElement {
+  @scala.inline
+  def apply(chart: ASPxClientWebChart): ASPxClientWebChartElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chart")(chart)
+    __obj.asInstanceOf[ASPxClientWebChartElement]
+  }
+}
+

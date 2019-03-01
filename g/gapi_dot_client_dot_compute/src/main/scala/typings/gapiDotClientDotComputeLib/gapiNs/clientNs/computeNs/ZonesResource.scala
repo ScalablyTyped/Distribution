@@ -14,3 +14,22 @@ trait ZonesResource extends js.Object {
   def list(request: gapiDotClientDotComputeLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[ZoneList]
 }
 
+object ZonesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserUserIpZone, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Zone]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ZoneList]
+    ]
+  ): ZonesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ZonesResource]
+  }
+}
+

@@ -30,3 +30,18 @@ trait PodAffinityTerm extends js.Object {
   val topologyKey: java.lang.String
 }
 
+object PodAffinityTerm {
+  @scala.inline
+  def apply(
+    labelSelector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    namespaces: js.Array[java.lang.String],
+    topologyKey: java.lang.String
+  ): PodAffinityTerm = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("labelSelector")(labelSelector)
+    __obj.updateDynamic("namespaces")(namespaces)
+    __obj.updateDynamic("topologyKey")(topologyKey)
+    __obj.asInstanceOf[PodAffinityTerm]
+  }
+}
+

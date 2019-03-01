@@ -39,3 +39,27 @@ trait IgTreeGridDataSourceSettings
   var propertyExpanded: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgTreeGridDataSourceSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgTreeGridDataSourceSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    dataLevelKey: java.lang.String = null,
+    expandedKey: java.lang.String = null,
+    initialFlatDataView: js.UndefOr[scala.Boolean] = js.undefined,
+    propertyDataLevel: js.Any = null,
+    propertyExpanded: js.Any = null
+  ): IgTreeGridDataSourceSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dataLevelKey != null) __obj.updateDynamic("dataLevelKey")(dataLevelKey)
+    if (expandedKey != null) __obj.updateDynamic("expandedKey")(expandedKey)
+    if (!js.isUndefined(initialFlatDataView)) __obj.updateDynamic("initialFlatDataView")(initialFlatDataView)
+    if (propertyDataLevel != null) __obj.updateDynamic("propertyDataLevel")(propertyDataLevel)
+    if (propertyExpanded != null) __obj.updateDynamic("propertyExpanded")(propertyExpanded)
+    __obj.asInstanceOf[IgTreeGridDataSourceSettings]
+  }
+}
+

@@ -36,3 +36,18 @@ trait Options[T] extends js.Object {
   var process: js.UndefOr[js.Function1[/* ownTrackingData */ T, T | reactDashTrackingLib.Falsy]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[T](
+    dispatch: js.Function1[/* data */ T, _] = null,
+    dispatchOnMount: scala.Boolean | (js.Function1[/* contextData */ T, T]) = null,
+    process: js.Function1[/* ownTrackingData */ T, T | reactDashTrackingLib.Falsy] = null
+  ): Options[T] = {
+    val __obj = js.Dynamic.literal()
+    if (dispatch != null) __obj.updateDynamic("dispatch")(dispatch)
+    if (dispatchOnMount != null) __obj.updateDynamic("dispatchOnMount")(dispatchOnMount.asInstanceOf[js.Any])
+    if (process != null) __obj.updateDynamic("process")(process)
+    __obj.asInstanceOf[Options[T]]
+  }
+}
+

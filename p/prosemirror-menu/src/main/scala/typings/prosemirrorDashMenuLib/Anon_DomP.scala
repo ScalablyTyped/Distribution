@@ -10,3 +10,16 @@ trait Anon_DomP[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
   def update(p: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Unit
 }
 
+object Anon_DomP {
+  @scala.inline
+  def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    dom: stdLib.Node,
+    update: js.Function1[prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], scala.Unit]
+  ): Anon_DomP[S] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dom")(dom)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Anon_DomP[S]]
+  }
+}
+

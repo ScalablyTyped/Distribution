@@ -12,3 +12,12 @@ trait HideLoadingOptions extends js.Object {
   var page: js.Any
 }
 
+object HideLoadingOptions {
+  @scala.inline
+  def apply(page: js.Any): HideLoadingOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("page")(page)
+    __obj.asInstanceOf[HideLoadingOptions]
+  }
+}
+

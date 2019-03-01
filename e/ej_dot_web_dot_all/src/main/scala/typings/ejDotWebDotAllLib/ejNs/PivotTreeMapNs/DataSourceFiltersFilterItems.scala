@@ -12,3 +12,12 @@ trait DataSourceFiltersFilterItems extends js.Object {
   var values: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object DataSourceFiltersFilterItems {
+  @scala.inline
+  def apply(values: js.Array[_] = null): DataSourceFiltersFilterItems = {
+    val __obj = js.Dynamic.literal()
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[DataSourceFiltersFilterItems]
+  }
+}
+

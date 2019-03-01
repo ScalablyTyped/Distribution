@@ -11,3 +11,13 @@ trait Anon_Result extends js.Object {
   var success: scala.Boolean
 }
 
+object Anon_Result {
+  @scala.inline
+  def apply(result: js.Array[aliDashAppLib.myNs.MultiLevelSelectItem], success: scala.Boolean): Anon_Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_Result]
+  }
+}
+

@@ -11,3 +11,14 @@ trait GraphQLObjectTypeConfig[TSource, TContext] extends js.Object {
   ] = js.undefined
 }
 
+object GraphQLObjectTypeConfig {
+  @scala.inline
+  def apply[TSource, TContext](
+    resolveObject: atApollographqlApolloDashToolsLib.libSchemaResolveObjectMod.GraphQLObjectResolver[TSource, TContext] = null
+  ): GraphQLObjectTypeConfig[TSource, TContext] = {
+    val __obj = js.Dynamic.literal()
+    if (resolveObject != null) __obj.updateDynamic("resolveObject")(resolveObject)
+    __obj.asInstanceOf[GraphQLObjectTypeConfig[TSource, TContext]]
+  }
+}
+

@@ -17,3 +17,20 @@ trait NumberingAlignment extends js.Object {
   var TextNumberingDistance: scala.Double
 }
 
+object NumberingAlignment {
+  @scala.inline
+  def apply(
+    Alignment: HorizontalAlignment,
+    Insertion: scala.Double,
+    TextMarginDistance: scala.Double,
+    TextNumberingDistance: scala.Double
+  ): NumberingAlignment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Alignment")(Alignment)
+    __obj.updateDynamic("Insertion")(Insertion)
+    __obj.updateDynamic("TextMarginDistance")(TextMarginDistance)
+    __obj.updateDynamic("TextNumberingDistance")(TextNumberingDistance)
+    __obj.asInstanceOf[NumberingAlignment]
+  }
+}
+

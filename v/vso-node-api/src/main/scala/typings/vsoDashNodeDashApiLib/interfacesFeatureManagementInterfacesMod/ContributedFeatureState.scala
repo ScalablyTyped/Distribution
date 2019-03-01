@@ -28,3 +28,22 @@ trait ContributedFeatureState extends js.Object {
   var state: ContributedFeatureEnabledValue
 }
 
+object ContributedFeatureState {
+  @scala.inline
+  def apply(
+    featureId: java.lang.String,
+    overridden: scala.Boolean,
+    reason: java.lang.String,
+    scope: ContributedFeatureSettingScope,
+    state: ContributedFeatureEnabledValue
+  ): ContributedFeatureState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("featureId")(featureId)
+    __obj.updateDynamic("overridden")(overridden)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ContributedFeatureState]
+  }
+}
+

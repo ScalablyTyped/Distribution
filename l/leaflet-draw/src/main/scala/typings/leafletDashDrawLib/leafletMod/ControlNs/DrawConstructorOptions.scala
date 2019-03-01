@@ -26,3 +26,14 @@ trait DrawConstructorOptions extends js.Object {
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DrawConstructorOptions {
+  @scala.inline
+  def apply(draw: DrawOptions = null, edit: EditOptions = null, position: java.lang.String = null): DrawConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (draw != null) __obj.updateDynamic("draw")(draw)
+    if (edit != null) __obj.updateDynamic("edit")(edit)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[DrawConstructorOptions]
+  }
+}
+

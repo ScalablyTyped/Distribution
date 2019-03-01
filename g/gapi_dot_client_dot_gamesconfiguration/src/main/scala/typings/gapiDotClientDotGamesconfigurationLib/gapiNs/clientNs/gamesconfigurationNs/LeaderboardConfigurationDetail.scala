@@ -18,3 +18,22 @@ trait LeaderboardConfigurationDetail extends js.Object {
   var sortRank: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LeaderboardConfigurationDetail {
+  @scala.inline
+  def apply(
+    iconUrl: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: LocalizedStringBundle = null,
+    scoreFormat: GamesNumberFormatConfiguration = null,
+    sortRank: scala.Int | scala.Double = null
+  ): LeaderboardConfigurationDetail = {
+    val __obj = js.Dynamic.literal()
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (scoreFormat != null) __obj.updateDynamic("scoreFormat")(scoreFormat)
+    if (sortRank != null) __obj.updateDynamic("sortRank")(sortRank.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LeaderboardConfigurationDetail]
+  }
+}
+

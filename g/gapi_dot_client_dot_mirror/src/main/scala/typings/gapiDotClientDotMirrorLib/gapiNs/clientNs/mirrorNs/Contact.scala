@@ -51,3 +51,36 @@ trait Contact extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Contact {
+  @scala.inline
+  def apply(
+    acceptCommands: js.Array[Command] = null,
+    acceptTypes: js.Array[java.lang.String] = null,
+    displayName: java.lang.String = null,
+    id: java.lang.String = null,
+    imageUrls: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    phoneNumber: java.lang.String = null,
+    priority: scala.Int | scala.Double = null,
+    sharingFeatures: js.Array[java.lang.String] = null,
+    source: java.lang.String = null,
+    speakableName: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Contact = {
+    val __obj = js.Dynamic.literal()
+    if (acceptCommands != null) __obj.updateDynamic("acceptCommands")(acceptCommands)
+    if (acceptTypes != null) __obj.updateDynamic("acceptTypes")(acceptTypes)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imageUrls != null) __obj.updateDynamic("imageUrls")(imageUrls)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (sharingFeatures != null) __obj.updateDynamic("sharingFeatures")(sharingFeatures)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (speakableName != null) __obj.updateDynamic("speakableName")(speakableName)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Contact]
+  }
+}
+

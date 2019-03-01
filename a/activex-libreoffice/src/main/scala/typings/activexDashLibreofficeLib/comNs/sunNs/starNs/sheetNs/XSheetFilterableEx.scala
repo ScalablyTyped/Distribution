@@ -16,3 +16,24 @@ trait XSheetFilterableEx extends XSheetFilterable {
   def createFilterDescriptorByObject(xObject: XSheetFilterable): XSheetFilterDescriptor
 }
 
+object XSheetFilterableEx {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createFilterDescriptor: js.Function1[scala.Boolean, XSheetFilterDescriptor],
+    createFilterDescriptorByObject: js.Function1[XSheetFilterable, XSheetFilterDescriptor],
+    filter: js.Function1[XSheetFilterDescriptor, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSheetFilterableEx = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createFilterDescriptor")(createFilterDescriptor)
+    __obj.updateDynamic("createFilterDescriptorByObject")(createFilterDescriptorByObject)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSheetFilterableEx]
+  }
+}
+

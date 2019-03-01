@@ -189,35 +189,35 @@ trait ApiGatewayV2
     * Creates an Integration.
     */
   def createIntegration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def createIntegration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Creates an Integration.
     */
   def createIntegration(params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def createIntegration(
     params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -294,35 +294,35 @@ trait ApiGatewayV2
     * Creates a Route for an API.
     */
   def createRoute(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def createRoute(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Creates a Route for an API.
     */
   def createRoute(params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def createRoute(
     params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.CreateRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -914,35 +914,35 @@ trait ApiGatewayV2
     * Gets an Integration.
     */
   def getIntegration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def getIntegration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Gets an Integration.
     */
   def getIntegration(params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def getIntegration(
     params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1159,35 +1159,35 @@ trait ApiGatewayV2
     * Gets a Route.
     */
   def getRoute(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def getRoute(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Gets a Route.
     */
   def getRoute(params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def getRoute(
     params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.GetRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1544,35 +1544,35 @@ trait ApiGatewayV2
     * Updates an Integration.
     */
   def updateIntegration(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def updateIntegration(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Updates an Integration.
     */
   def updateIntegration(params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def updateIntegration(
     params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateIntegrationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -1649,35 +1649,35 @@ trait ApiGatewayV2
     * Updates a Route.
     */
   def updateRoute(): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def updateRoute(
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
     * Updates a Route.
     */
   def updateRoute(params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteRequest): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   def updateRoute(
     params: awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteRequest,
     callback: js.Function2[
       /* err */ awsDashSdkLib.libErrorMod.AWSError, 
-      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResult, 
+      /* data */ awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResponse, 
       scala.Unit
     ]
   ): awsDashSdkLib.libRequestMod.Request[
-    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResult, 
+    awsDashSdkLib.clientsApigatewayv2Mod.ApiGatewayV2Ns.UpdateRouteResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

@@ -12,3 +12,14 @@ trait IndexedImpl extends js.Object {
   var indexedDB: stdLib.IDBFactory
 }
 
+object IndexedImpl {
+  @scala.inline
+  def apply(DOMException: stdLib.DOMException, IDBKeyRange: stdLib.IDBKeyRange, indexedDB: stdLib.IDBFactory): IndexedImpl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DOMException")(DOMException)
+    __obj.updateDynamic("IDBKeyRange")(IDBKeyRange)
+    __obj.updateDynamic("indexedDB")(indexedDB)
+    __obj.asInstanceOf[IndexedImpl]
+  }
+}
+

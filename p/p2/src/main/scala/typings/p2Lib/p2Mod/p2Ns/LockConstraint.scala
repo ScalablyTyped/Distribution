@@ -10,3 +10,31 @@ trait LockConstraint extends Constraint {
   def setMaxForce(force: scala.Double): scala.Unit
 }
 
+object LockConstraint {
+  @scala.inline
+  def apply(
+    bodyA: Body,
+    bodyB: Body,
+    collideConnected: scala.Boolean,
+    equeations: js.Array[Equation],
+    getMaxForce: js.Function0[scala.Double],
+    setMaxForce: js.Function1[scala.Double, scala.Unit],
+    setRelaxation: js.Function1[scala.Double, scala.Unit],
+    setStiffness: js.Function1[scala.Double, scala.Unit],
+    `type`: scala.Double,
+    update: js.Function0[scala.Unit]
+  ): LockConstraint = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("bodyA")(bodyA)
+    __obj.updateDynamic("bodyB")(bodyB)
+    __obj.updateDynamic("collideConnected")(collideConnected)
+    __obj.updateDynamic("equeations")(equeations)
+    __obj.updateDynamic("getMaxForce")(getMaxForce)
+    __obj.updateDynamic("setMaxForce")(setMaxForce)
+    __obj.updateDynamic("setRelaxation")(setRelaxation)
+    __obj.updateDynamic("setStiffness")(setStiffness)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[LockConstraint]
+  }
+}
+

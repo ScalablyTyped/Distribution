@@ -24,3 +24,21 @@ trait BridgeUptime extends js.Object {
   ] = js.undefined
 }
 
+object BridgeUptime {
+  @scala.inline
+  def apply(
+    fingerprint: java.lang.String,
+    uptime: stdLib.Partial[
+      stdLib.Record[
+        onionooLib.onionooLibStrings.`1_week` | onionooLib.onionooLibStrings.`1_month` | onionooLib.onionooLibStrings.`6_months` | onionooLib.onionooLibStrings.`1_year` | onionooLib.onionooLibStrings.`5_years`, 
+        Histogram
+      ]
+    ] = null
+  ): BridgeUptime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fingerprint")(fingerprint)
+    if (uptime != null) __obj.updateDynamic("uptime")(uptime)
+    __obj.asInstanceOf[BridgeUptime]
+  }
+}
+

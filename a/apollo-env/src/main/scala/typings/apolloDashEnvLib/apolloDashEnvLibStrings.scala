@@ -10,73 +10,98 @@ object apolloDashEnvLibStrings {
   sealed trait DeepPartial extends js.Object
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
   @js.native
-  sealed trait cors extends js.Object
+  sealed trait cors
+    extends apolloDashEnvLib.libFetchFetchMod.RequestMode
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends apolloDashEnvLib.libFetchFetchMod.RequestCache
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends apolloDashEnvLib.libFetchFetchMod.RequestRedirect
   
   @js.native
-  sealed trait follow extends js.Object
+  sealed trait follow
+    extends apolloDashEnvLib.libFetchFetchMod.RequestRedirect
   
   @js.native
-  sealed trait `force-cache` extends js.Object
+  sealed trait `force-cache`
+    extends apolloDashEnvLib.libFetchFetchMod.RequestCache
   
   @js.native
-  sealed trait include extends js.Object
+  sealed trait include
+    extends apolloDashEnvLib.libFetchFetchMod.RequestCredentials
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual
+    extends apolloDashEnvLib.libFetchFetchMod.RequestRedirect
   
   @js.native
-  sealed trait navigate extends js.Object
+  sealed trait navigate
+    extends apolloDashEnvLib.libFetchFetchMod.RequestMode
   
   @js.native
-  sealed trait `no-cache` extends js.Object
+  sealed trait `no-cache`
+    extends apolloDashEnvLib.libFetchFetchMod.RequestCache
   
   @js.native
-  sealed trait `no-cors` extends js.Object
+  sealed trait `no-cors`
+    extends apolloDashEnvLib.libFetchFetchMod.RequestMode
   
   @js.native
-  sealed trait `no-referrer` extends js.Object
+  sealed trait `no-referrer`
+    extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
   @js.native
-  sealed trait `no-referrer-when-downgrade` extends js.Object
+  sealed trait `no-referrer-when-downgrade`
+    extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
   @js.native
-  sealed trait `no-store` extends js.Object
+  sealed trait `no-store`
+    extends apolloDashEnvLib.libFetchFetchMod.RequestCache
   
   @js.native
-  sealed trait omit extends js.Object
+  sealed trait omit
+    extends apolloDashEnvLib.libFetchFetchMod.RequestCredentials
   
   @js.native
-  sealed trait `only-if-cached` extends js.Object
+  sealed trait `only-if-cached`
+    extends apolloDashEnvLib.libFetchFetchMod.RequestCache
   
   @js.native
-  sealed trait origin extends js.Object
+  sealed trait origin
+    extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
   @js.native
-  sealed trait `origin-when-cross-origin` extends js.Object
+  sealed trait `origin-when-cross-origin`
+    extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
   @js.native
-  sealed trait reload extends js.Object
+  sealed trait reload
+    extends apolloDashEnvLib.libFetchFetchMod.RequestCache
   
   @js.native
-  sealed trait `same-origin` extends js.Object
+  sealed trait `same-origin`
+    extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
+       with apolloDashEnvLib.libFetchFetchMod.RequestCredentials
+       with apolloDashEnvLib.libFetchFetchMod.RequestMode
   
   @js.native
-  sealed trait `strict-origin` extends js.Object
+  sealed trait `strict-origin`
+    extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
   @js.native
-  sealed trait `strict-origin-when-cross-origin` extends js.Object
+  sealed trait `strict-origin-when-cross-origin`
+    extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
   @js.native
-  sealed trait `unsafe-url` extends js.Object
+  sealed trait `unsafe-url`
+    extends apolloDashEnvLib.libFetchFetchMod.ReferrerPolicy
   
   @scala.inline
   def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]

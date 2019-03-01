@@ -38,3 +38,26 @@ trait VersionControlDetails extends js.Object {
   var revisionTag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VersionControlDetails {
+  @scala.inline
+  def apply(
+    repositoryUri: java.lang.String,
+    asOfTimeUtc: java.lang.String = null,
+    branch: java.lang.String = null,
+    mappedTo: ArtifactLocation = null,
+    properties: PropertyBag = null,
+    revisionId: java.lang.String = null,
+    revisionTag: java.lang.String = null
+  ): VersionControlDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("repositoryUri")(repositoryUri)
+    if (asOfTimeUtc != null) __obj.updateDynamic("asOfTimeUtc")(asOfTimeUtc)
+    if (branch != null) __obj.updateDynamic("branch")(branch)
+    if (mappedTo != null) __obj.updateDynamic("mappedTo")(mappedTo)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
+    if (revisionTag != null) __obj.updateDynamic("revisionTag")(revisionTag)
+    __obj.asInstanceOf[VersionControlDetails]
+  }
+}
+

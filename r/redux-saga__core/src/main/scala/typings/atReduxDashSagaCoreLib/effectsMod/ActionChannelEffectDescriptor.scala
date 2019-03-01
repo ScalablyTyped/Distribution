@@ -12,3 +12,16 @@ trait ActionChannelEffectDescriptor extends js.Object {
   var pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]]
 }
 
+object ActionChannelEffectDescriptor {
+  @scala.inline
+  def apply(
+    pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]],
+    buffer: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Buffer[reduxLib.reduxMod.Action[_]] = null
+  ): ActionChannelEffectDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    __obj.asInstanceOf[ActionChannelEffectDescriptor]
+  }
+}
+

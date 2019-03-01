@@ -12,3 +12,20 @@ trait SearchParameters extends js.Object {
   var query: java.lang.String
 }
 
+object SearchParameters {
+  @scala.inline
+  def apply(
+    query: java.lang.String,
+    language: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null
+  ): SearchParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    __obj.asInstanceOf[SearchParameters]
+  }
+}
+

@@ -55,3 +55,38 @@ trait LineItem extends GraphModel {
   var variant_title: java.lang.String
 }
 
+object LineItem {
+  @scala.inline
+  def apply(
+    compare_at_price: java.lang.String,
+    grams: scala.Double,
+    id: java.lang.String | scala.Double,
+    image: Image,
+    line_price: java.lang.String,
+    price: java.lang.String,
+    product_id: java.lang.String | scala.Double,
+    quantity: scala.Double,
+    title: java.lang.String,
+    variant_id: java.lang.String | scala.Double,
+    variant_title: java.lang.String,
+    attrs: js.Any = null,
+    onlineStoreUrl: java.lang.String = null
+  ): LineItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compare_at_price")(compare_at_price)
+    __obj.updateDynamic("grams")(grams)
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("line_price")(line_price)
+    __obj.updateDynamic("price")(price)
+    __obj.updateDynamic("product_id")(product_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("quantity")(quantity)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("variant_id")(variant_id.asInstanceOf[js.Any])
+    __obj.updateDynamic("variant_title")(variant_title)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    __obj.asInstanceOf[LineItem]
+  }
+}
+

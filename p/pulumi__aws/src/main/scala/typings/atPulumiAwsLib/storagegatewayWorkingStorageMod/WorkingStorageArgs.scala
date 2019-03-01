@@ -16,3 +16,16 @@ trait WorkingStorageArgs extends js.Object {
   val gatewayArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object WorkingStorageArgs {
+  @scala.inline
+  def apply(
+    diskId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    gatewayArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): WorkingStorageArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("diskId")(diskId.asInstanceOf[js.Any])
+    __obj.updateDynamic("gatewayArn")(gatewayArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorkingStorageArgs]
+  }
+}
+

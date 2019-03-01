@@ -10,3 +10,12 @@ trait ProjectsDisableXpnResourceRequest extends js.Object {
   var xpnResource: js.UndefOr[XpnResourceId] = js.undefined
 }
 
+object ProjectsDisableXpnResourceRequest {
+  @scala.inline
+  def apply(xpnResource: XpnResourceId = null): ProjectsDisableXpnResourceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (xpnResource != null) __obj.updateDynamic("xpnResource")(xpnResource)
+    __obj.asInstanceOf[ProjectsDisableXpnResourceRequest]
+  }
+}
+

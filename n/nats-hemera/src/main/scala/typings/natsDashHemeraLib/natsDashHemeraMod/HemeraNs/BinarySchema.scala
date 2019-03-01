@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Schema because Already inherited */ @js.native
 trait BinarySchema extends AnySchema {
   /**
     * Sets the string encoding format if a string input is converted to a buffer.

@@ -12,3 +12,13 @@ trait ThirdPartyAuthenticationToken extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ThirdPartyAuthenticationToken {
+  @scala.inline
+  def apply(name: java.lang.String = null, value: java.lang.String = null): ThirdPartyAuthenticationToken = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ThirdPartyAuthenticationToken]
+  }
+}
+

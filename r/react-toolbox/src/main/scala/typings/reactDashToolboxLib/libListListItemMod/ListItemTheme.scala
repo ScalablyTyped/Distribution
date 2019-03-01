@@ -12,3 +12,12 @@ trait ListItemTheme extends js.Object {
   var listItem: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListItemTheme {
+  @scala.inline
+  def apply(listItem: java.lang.String = null): ListItemTheme = {
+    val __obj = js.Dynamic.literal()
+    if (listItem != null) __obj.updateDynamic("listItem")(listItem)
+    __obj.asInstanceOf[ListItemTheme]
+  }
+}
+

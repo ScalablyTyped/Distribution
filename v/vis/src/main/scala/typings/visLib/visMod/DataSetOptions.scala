@@ -24,3 +24,14 @@ trait DataSetOptions extends DataSetQueueOptions {
   var `type`: js.UndefOr[js.Any] = js.undefined
 }
 
+object DataSetOptions {
+  @scala.inline
+  def apply(fieldId: java.lang.String = null, queue: js.Any | scala.Boolean = null, `type`: js.Any = null): DataSetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (fieldId != null) __obj.updateDynamic("fieldId")(fieldId)
+    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DataSetOptions]
+  }
+}
+

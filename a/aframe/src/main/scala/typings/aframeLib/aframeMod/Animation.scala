@@ -20,3 +20,34 @@ trait Animation extends js.Object {
   def easing(): scala.Unit
 }
 
+object Animation {
+  @scala.inline
+  def apply(
+    attribute: java.lang.String,
+    begin: java.lang.String | scala.Double,
+    delay: scala.Double,
+    direction: aframeLib.aframeLibStrings.alternate | aframeLib.aframeLibStrings.alternateReverse | aframeLib.aframeLibStrings.normal | aframeLib.aframeLibStrings.reverse,
+    dur: scala.Double,
+    easing: js.Function0[scala.Unit],
+    end: java.lang.String,
+    fill: aframeLib.aframeLibStrings.backwards | aframeLib.aframeLibStrings.both | aframeLib.aframeLibStrings.forwards | aframeLib.aframeLibStrings.none,
+    from: js.Any,
+    repeat: scala.Double | aframeLib.aframeLibStrings.indefinite,
+    to: scala.Double
+  ): Animation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attribute")(attribute)
+    __obj.updateDynamic("begin")(begin.asInstanceOf[js.Any])
+    __obj.updateDynamic("delay")(delay)
+    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    __obj.updateDynamic("dur")(dur)
+    __obj.updateDynamic("easing")(easing)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Animation]
+  }
+}
+

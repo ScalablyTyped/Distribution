@@ -1319,16 +1319,28 @@ object DAXNs extends js.Object {
     var SubnetGroup: js.UndefOr[SubnetGroup] = js.undefined
   }
   
+  trait _ChangeType extends js.Object
+  
+  trait _IsModifiable extends js.Object
+  
+  trait _ParameterType extends js.Object
+  
+  trait _SSEStatus extends js.Object
+  
+  trait _SourceType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AvailabilityZoneList = js.Array[String]
-  type ChangeType = awsDashSdkLib.awsDashSdkLibStrings.IMMEDIATE | awsDashSdkLib.awsDashSdkLibStrings.REQUIRES_REBOOT | java.lang.String
+  type ChangeType = _ChangeType | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClusterList = js.Array[Cluster]
   type ClusterNameList = js.Array[String]
   type EventList = js.Array[Event]
   type Integer = scala.Double
   type IntegerOptional = scala.Double
-  type IsModifiable = awsDashSdkLib.awsDashSdkLibStrings.TRUE | awsDashSdkLib.awsDashSdkLibStrings.FALSE | awsDashSdkLib.awsDashSdkLibStrings.CONDITIONAL | java.lang.String
+  type IsModifiable = _IsModifiable | java.lang.String
   type KeyList = js.Array[String]
   type NodeIdentifierList = js.Array[String]
   type NodeList = js.Array[Node]
@@ -1337,12 +1349,12 @@ object DAXNs extends js.Object {
   type ParameterGroupNameList = js.Array[String]
   type ParameterList = js.Array[Parameter]
   type ParameterNameValueList = js.Array[ParameterNameValue]
-  type ParameterType = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.NODE_TYPE_SPECIFIC | java.lang.String
+  type ParameterType = _ParameterType | java.lang.String
   type SSEEnabled = scala.Boolean
-  type SSEStatus = awsDashSdkLib.awsDashSdkLibStrings.ENABLING | awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLING | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type SSEStatus = _SSEStatus | java.lang.String
   type SecurityGroupIdentifierList = js.Array[String]
   type SecurityGroupMembershipList = js.Array[SecurityGroupMembership]
-  type SourceType = awsDashSdkLib.awsDashSdkLibStrings.CLUSTER | awsDashSdkLib.awsDashSdkLibStrings.PARAMETER_GROUP | awsDashSdkLib.awsDashSdkLibStrings.SUBNET_GROUP | java.lang.String
+  type SourceType = _SourceType | java.lang.String
   type String = java.lang.String
   type SubnetGroupList = js.Array[SubnetGroup]
   type SubnetGroupNameList = js.Array[String]
@@ -1350,6 +1362,6 @@ object DAXNs extends js.Object {
   type SubnetList = js.Array[Subnet]
   type TStamp = stdLib.Date
   type TagList = js.Array[Tag]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-04-19` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -49,3 +49,32 @@ trait ITelemetryContext extends js.Object {
   def track(envelope: IEnvelope): js.Any
 }
 
+object ITelemetryContext {
+  @scala.inline
+  def apply(
+    addTelemetryInitializer: js.Function1[js.Function1[/* envelope */ IEnvelope, scala.Boolean | scala.Unit], js.Any],
+    application: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IApplication,
+    device: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IDevice,
+    internal: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IInternal,
+    location: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.ILocation,
+    operation: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IOperation,
+    sample: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.ISample,
+    session: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.ISession,
+    track: js.Function1[IEnvelope, js.Any],
+    user: applicationinsightsDashJsLib.MicrosoftNs.ApplicationInsightsNs.ContextNs.IUser
+  ): ITelemetryContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addTelemetryInitializer")(addTelemetryInitializer)
+    __obj.updateDynamic("application")(application)
+    __obj.updateDynamic("device")(device)
+    __obj.updateDynamic("internal")(internal)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("operation")(operation)
+    __obj.updateDynamic("sample")(sample)
+    __obj.updateDynamic("session")(session)
+    __obj.updateDynamic("track")(track)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[ITelemetryContext]
+  }
+}
+

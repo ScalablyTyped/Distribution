@@ -80,3 +80,72 @@ trait Anon_AdvertiserIdsAltArchivedCampaignIds extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AdvertiserIdsAltArchivedCampaignIds {
+  @scala.inline
+  def apply(
+    profileId: java.lang.String,
+    advertiserIds: java.lang.String = null,
+    alt: java.lang.String = null,
+    archived: js.UndefOr[scala.Boolean] = js.undefined,
+    campaignIds: java.lang.String = null,
+    compatibilities: java.lang.String = null,
+    contentCategoryIds: java.lang.String = null,
+    directorySiteIds: java.lang.String = null,
+    fields: java.lang.String = null,
+    groupIds: java.lang.String = null,
+    ids: java.lang.String = null,
+    key: java.lang.String = null,
+    maxEndDate: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    maxStartDate: java.lang.String = null,
+    minEndDate: java.lang.String = null,
+    minStartDate: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    paymentSource: java.lang.String = null,
+    placementStrategyIds: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    pricingTypes: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    searchString: java.lang.String = null,
+    siteIds: java.lang.String = null,
+    sizeIds: java.lang.String = null,
+    sortField: java.lang.String = null,
+    sortOrder: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AdvertiserIdsAltArchivedCampaignIds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("profileId")(profileId)
+    if (advertiserIds != null) __obj.updateDynamic("advertiserIds")(advertiserIds)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived)
+    if (campaignIds != null) __obj.updateDynamic("campaignIds")(campaignIds)
+    if (compatibilities != null) __obj.updateDynamic("compatibilities")(compatibilities)
+    if (contentCategoryIds != null) __obj.updateDynamic("contentCategoryIds")(contentCategoryIds)
+    if (directorySiteIds != null) __obj.updateDynamic("directorySiteIds")(directorySiteIds)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (groupIds != null) __obj.updateDynamic("groupIds")(groupIds)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxEndDate != null) __obj.updateDynamic("maxEndDate")(maxEndDate)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (maxStartDate != null) __obj.updateDynamic("maxStartDate")(maxStartDate)
+    if (minEndDate != null) __obj.updateDynamic("minEndDate")(minEndDate)
+    if (minStartDate != null) __obj.updateDynamic("minStartDate")(minStartDate)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (paymentSource != null) __obj.updateDynamic("paymentSource")(paymentSource)
+    if (placementStrategyIds != null) __obj.updateDynamic("placementStrategyIds")(placementStrategyIds)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (pricingTypes != null) __obj.updateDynamic("pricingTypes")(pricingTypes)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (searchString != null) __obj.updateDynamic("searchString")(searchString)
+    if (siteIds != null) __obj.updateDynamic("siteIds")(siteIds)
+    if (sizeIds != null) __obj.updateDynamic("sizeIds")(sizeIds)
+    if (sortField != null) __obj.updateDynamic("sortField")(sortField)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AdvertiserIdsAltArchivedCampaignIds]
+  }
+}
+

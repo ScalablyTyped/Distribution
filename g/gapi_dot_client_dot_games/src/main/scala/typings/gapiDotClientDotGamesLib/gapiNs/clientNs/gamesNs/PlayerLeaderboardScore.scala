@@ -32,3 +32,30 @@ trait PlayerLeaderboardScore extends js.Object {
   var writeTimestamp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PlayerLeaderboardScore {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    leaderboard_id: java.lang.String = null,
+    publicRank: LeaderboardScoreRank = null,
+    scoreString: java.lang.String = null,
+    scoreTag: java.lang.String = null,
+    scoreValue: java.lang.String = null,
+    socialRank: LeaderboardScoreRank = null,
+    timeSpan: java.lang.String = null,
+    writeTimestamp: java.lang.String = null
+  ): PlayerLeaderboardScore = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (leaderboard_id != null) __obj.updateDynamic("leaderboard_id")(leaderboard_id)
+    if (publicRank != null) __obj.updateDynamic("publicRank")(publicRank)
+    if (scoreString != null) __obj.updateDynamic("scoreString")(scoreString)
+    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag)
+    if (scoreValue != null) __obj.updateDynamic("scoreValue")(scoreValue)
+    if (socialRank != null) __obj.updateDynamic("socialRank")(socialRank)
+    if (timeSpan != null) __obj.updateDynamic("timeSpan")(timeSpan)
+    if (writeTimestamp != null) __obj.updateDynamic("writeTimestamp")(writeTimestamp)
+    __obj.asInstanceOf[PlayerLeaderboardScore]
+  }
+}
+

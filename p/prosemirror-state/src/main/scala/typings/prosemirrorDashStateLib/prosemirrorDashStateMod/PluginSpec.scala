@@ -62,3 +62,32 @@ trait PluginSpec[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
   ] = js.undefined
 }
 
+object PluginSpec {
+  @scala.inline
+  def apply[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    appendTransaction: js.Function3[
+      /* transactions */ js.Array[Transaction[S]], 
+      /* oldState */ EditorState[S], 
+      /* newState */ EditorState[S], 
+      js.UndefOr[Transaction[S] | scala.Null | scala.Unit]
+    ] = null,
+    filterTransaction: js.Function2[/* p1 */ Transaction[S], /* p2 */ EditorState[S], scala.Boolean] = null,
+    key: PluginKey[T, S] = null,
+    props: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorProps[S] = null,
+    state: StateField[T, S] = null,
+    view: js.Function1[
+      /* p */ prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], 
+      prosemirrorDashStateLib.Anon_Destroy[S]
+    ] = null
+  ): PluginSpec[T, S] = {
+    val __obj = js.Dynamic.literal()
+    if (appendTransaction != null) __obj.updateDynamic("appendTransaction")(appendTransaction)
+    if (filterTransaction != null) __obj.updateDynamic("filterTransaction")(filterTransaction)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (props != null) __obj.updateDynamic("props")(props)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[PluginSpec[T, S]]
+  }
+}
+

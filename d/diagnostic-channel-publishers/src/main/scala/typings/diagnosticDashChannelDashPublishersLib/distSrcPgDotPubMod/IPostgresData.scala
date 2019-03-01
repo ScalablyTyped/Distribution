@@ -13,3 +13,22 @@ trait IPostgresData extends js.Object {
   var result: js.UndefOr[IPostgresResult] = js.undefined
 }
 
+object IPostgresData {
+  @scala.inline
+  def apply(
+    database: diagnosticDashChannelDashPublishersLib.Anon_HostPort,
+    duration: scala.Double,
+    query: diagnosticDashChannelDashPublishersLib.Anon_Plan,
+    error: stdLib.Error = null,
+    result: IPostgresResult = null
+  ): IPostgresData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("database")(database)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("query")(query)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (result != null) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[IPostgresData]
+  }
+}
+

@@ -19,3 +19,20 @@ trait Options extends js.Object {
   var tileSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    dataCacheSize: scala.Int | scala.Double = null,
+    pixelRatio: scala.Int | scala.Double = null,
+    tileCacheSize: scala.Int | scala.Double = null,
+    tileSize: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (dataCacheSize != null) __obj.updateDynamic("dataCacheSize")(dataCacheSize.asInstanceOf[js.Any])
+    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (tileCacheSize != null) __obj.updateDynamic("tileCacheSize")(tileCacheSize.asInstanceOf[js.Any])
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

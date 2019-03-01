@@ -11,3 +11,14 @@ trait Layout extends js.Object {
   var qSelectionInfo: Selectionobject
 }
 
+object Layout {
+  @scala.inline
+  def apply(qHyperCube: HyperCube, qInfo: NxInfo, qSelectionInfo: Selectionobject): Layout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qHyperCube")(qHyperCube)
+    __obj.updateDynamic("qInfo")(qInfo)
+    __obj.updateDynamic("qSelectionInfo")(qSelectionInfo)
+    __obj.asInstanceOf[Layout]
+  }
+}
+

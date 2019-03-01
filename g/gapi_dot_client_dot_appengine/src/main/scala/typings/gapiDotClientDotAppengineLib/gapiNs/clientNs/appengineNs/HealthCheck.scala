@@ -22,3 +22,26 @@ trait HealthCheck extends js.Object {
   var unhealthyThreshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HealthCheck {
+  @scala.inline
+  def apply(
+    checkInterval: java.lang.String = null,
+    disableHealthCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    healthyThreshold: scala.Int | scala.Double = null,
+    host: java.lang.String = null,
+    restartThreshold: scala.Int | scala.Double = null,
+    timeout: java.lang.String = null,
+    unhealthyThreshold: scala.Int | scala.Double = null
+  ): HealthCheck = {
+    val __obj = js.Dynamic.literal()
+    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval)
+    if (!js.isUndefined(disableHealthCheck)) __obj.updateDynamic("disableHealthCheck")(disableHealthCheck)
+    if (healthyThreshold != null) __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (restartThreshold != null) __obj.updateDynamic("restartThreshold")(restartThreshold.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    if (unhealthyThreshold != null) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HealthCheck]
+  }
+}
+

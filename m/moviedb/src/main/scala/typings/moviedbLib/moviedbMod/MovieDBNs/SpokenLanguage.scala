@@ -10,3 +10,13 @@ trait SpokenLanguage extends js.Object {
   var name: java.lang.String
 }
 
+object SpokenLanguage {
+  @scala.inline
+  def apply(iso_639_1: scala.Double, name: java.lang.String): SpokenLanguage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iso_639_1")(iso_639_1)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[SpokenLanguage]
+  }
+}
+

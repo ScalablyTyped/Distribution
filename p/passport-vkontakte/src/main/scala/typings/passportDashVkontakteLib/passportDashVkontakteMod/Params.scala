@@ -12,3 +12,20 @@ trait Params extends js.Object {
   var user_id: scala.Double
 }
 
+object Params {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String,
+    expires_in: scala.Double,
+    user_id: scala.Double,
+    email: java.lang.String = null
+  ): Params = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessToken")(accessToken)
+    __obj.updateDynamic("expires_in")(expires_in)
+    __obj.updateDynamic("user_id")(user_id)
+    if (email != null) __obj.updateDynamic("email")(email)
+    __obj.asInstanceOf[Params]
+  }
+}
+

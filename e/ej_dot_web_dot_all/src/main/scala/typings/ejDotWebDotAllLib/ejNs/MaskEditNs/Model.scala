@@ -121,3 +121,74 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    customCharacter: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
+    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    height: java.lang.String = null,
+    hidePromptOnLeave: js.UndefOr[scala.Boolean] = js.undefined,
+    htmlAttributes: js.Any = null,
+    inputMode: ejDotWebDotAllLib.ejNs.InputMode | java.lang.String = null,
+    keyPress: js.Function1[/* e */ KeyPressEventArgs, scala.Unit] = null,
+    keyUp: js.Function1[/* e */ KeyUpEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    maskFormat: java.lang.String = null,
+    mouseOut: js.Function1[/* e */ MouseOutEventArgs, scala.Unit] = null,
+    mouseOver: js.Function1[/* e */ MouseOverEventArgs, scala.Unit] = null,
+    name: java.lang.String = null,
+    onKeyDown: js.Function1[/* e */ OnKeyDownEventArgs, scala.Unit] = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    showError: js.UndefOr[scala.Boolean] = js.undefined,
+    showPromptChar: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    textAlign: ejDotWebDotAllLib.ejNs.TextAlign | java.lang.String = null,
+    validationMessage: js.Any = null,
+    validationRules: js.Any = null,
+    value: java.lang.String = null,
+    watermarkText: java.lang.String = null,
+    width: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customCharacter != null) __obj.updateDynamic("customCharacter")(customCharacter)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
+    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(hidePromptOnLeave)) __obj.updateDynamic("hidePromptOnLeave")(hidePromptOnLeave)
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (inputMode != null) __obj.updateDynamic("inputMode")(inputMode.asInstanceOf[js.Any])
+    if (keyPress != null) __obj.updateDynamic("keyPress")(keyPress)
+    if (keyUp != null) __obj.updateDynamic("keyUp")(keyUp)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maskFormat != null) __obj.updateDynamic("maskFormat")(maskFormat)
+    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut)
+    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(showError)) __obj.updateDynamic("showError")(showError)
+    if (!js.isUndefined(showPromptChar)) __obj.updateDynamic("showPromptChar")(showPromptChar)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (watermarkText != null) __obj.updateDynamic("watermarkText")(watermarkText)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Model]
+  }
+}
+

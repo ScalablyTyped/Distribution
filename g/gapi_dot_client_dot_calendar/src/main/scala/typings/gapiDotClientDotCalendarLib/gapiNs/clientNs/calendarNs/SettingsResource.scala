@@ -14,3 +14,27 @@ trait SettingsResource extends js.Object {
   def watch(request: gapiDotClientDotCalendarLib.Anon_AltFieldsKeyMaxResults): gapiDotClientLib.gapiNs.clientNs.Request[Channel]
 }
 
+object SettingsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Setting]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltFieldsKeyMaxResults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Settings]
+    ],
+    watch: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltFieldsKeyMaxResults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
+    ]
+  ): SettingsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[SettingsResource]
+  }
+}
+

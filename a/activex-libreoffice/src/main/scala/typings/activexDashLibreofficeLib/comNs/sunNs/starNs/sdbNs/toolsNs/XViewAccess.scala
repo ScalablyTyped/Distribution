@@ -27,3 +27,33 @@ trait XViewAccess extends XConnectionSupplier {
   def getCommand(view: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet): java.lang.String
 }
 
+object XViewAccess {
+  @scala.inline
+  def apply(
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    acquire: js.Function0[scala.Unit],
+    alterCommand: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    getCommand: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      java.lang.String
+    ],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XViewAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("alterCommand")(alterCommand)
+    __obj.updateDynamic("getCommand")(getCommand)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XViewAccess]
+  }
+}
+

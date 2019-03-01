@@ -18,3 +18,13 @@ trait StatusBarPropsAndroid extends js.Object {
   var translucent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StatusBarPropsAndroid {
+  @scala.inline
+  def apply(backgroundColor: java.lang.String = null, translucent: js.UndefOr[scala.Boolean] = js.undefined): StatusBarPropsAndroid = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (!js.isUndefined(translucent)) __obj.updateDynamic("translucent")(translucent)
+    __obj.asInstanceOf[StatusBarPropsAndroid]
+  }
+}
+

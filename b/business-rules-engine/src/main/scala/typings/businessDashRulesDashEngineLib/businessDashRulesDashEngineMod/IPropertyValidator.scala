@@ -11,3 +11,18 @@ trait IPropertyValidator extends js.Object {
   def isAcceptable(s: js.Any): scala.Boolean
 }
 
+object IPropertyValidator {
+  @scala.inline
+  def apply(
+    isAcceptable: js.Function1[js.Any, scala.Boolean],
+    customMessage: IErrorCustomMessage = null,
+    tagName: java.lang.String = null
+  ): IPropertyValidator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isAcceptable")(isAcceptable)
+    if (customMessage != null) __obj.updateDynamic("customMessage")(customMessage)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    __obj.asInstanceOf[IPropertyValidator]
+  }
+}
+

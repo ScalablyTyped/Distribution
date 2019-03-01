@@ -12,3 +12,12 @@ trait Anon_MaxAge extends js.Object {
   var maxAge: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_MaxAge {
+  @scala.inline
+  def apply(maxAge: scala.Int | scala.Double = null): Anon_MaxAge = {
+    val __obj = js.Dynamic.literal()
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_MaxAge]
+  }
+}
+

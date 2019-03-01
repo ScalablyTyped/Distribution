@@ -16,3 +16,12 @@ trait SectionUpdateData extends js.Object {
   var body: js.UndefOr[BodyUpdateData] = js.undefined
 }
 
+object SectionUpdateData {
+  @scala.inline
+  def apply(body: BodyUpdateData = null): SectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    __obj.asInstanceOf[SectionUpdateData]
+  }
+}
+

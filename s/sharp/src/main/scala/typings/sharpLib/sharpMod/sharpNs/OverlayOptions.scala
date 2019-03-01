@@ -24,3 +24,28 @@ trait OverlayOptions extends js.Object {
   var top: js.UndefOr[scala.Double] = js.undefined
 }
 
+object OverlayOptions {
+  @scala.inline
+  def apply(
+    create: Create = null,
+    cutout: js.UndefOr[scala.Boolean] = js.undefined,
+    density: scala.Int | scala.Double = null,
+    gravity: Gravity = null,
+    left: scala.Int | scala.Double = null,
+    raw: Raw = null,
+    tile: js.UndefOr[scala.Boolean] = js.undefined,
+    top: scala.Int | scala.Double = null
+  ): OverlayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (!js.isUndefined(cutout)) __obj.updateDynamic("cutout")(cutout)
+    if (density != null) __obj.updateDynamic("density")(density.asInstanceOf[js.Any])
+    if (gravity != null) __obj.updateDynamic("gravity")(gravity.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(tile)) __obj.updateDynamic("tile")(tile)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OverlayOptions]
+  }
+}
+

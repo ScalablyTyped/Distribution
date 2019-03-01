@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NoLogFilterAppender extends js.Object {
+trait NoLogFilterAppender extends Appender {
   // the name of an appender, defined in the same configuration, that you want to filter.
   var appender: java.lang.String
   // the regular expression (or the regular expressions if you provide an array of values)
@@ -13,5 +13,19 @@ trait NoLogFilterAppender extends js.Object {
   // The events, which will match the regular expression, will be excluded and so not logged. 
   var exclude: java.lang.String | js.Array[java.lang.String]
   var `type`: log4jsLib.log4jsLibStrings.noLogFilter
+}
+
+object NoLogFilterAppender {
+  @scala.inline
+  def apply(
+    appender: java.lang.String,
+    exclude: java.lang.String | js.Array[java.lang.String],
+    `type`: log4jsLib.log4jsLibStrings.noLogFilter
+  ): NoLogFilterAppender = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("appender")(appender)
+    __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NoLogFilterAppender]
+  }
 }
 

@@ -15,3 +15,13 @@ trait ClaimDeviceResponse extends js.Object {
   var deviceName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClaimDeviceResponse {
+  @scala.inline
+  def apply(deviceId: java.lang.String = null, deviceName: java.lang.String = null): ClaimDeviceResponse = {
+    val __obj = js.Dynamic.literal()
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
+    __obj.asInstanceOf[ClaimDeviceResponse]
+  }
+}
+

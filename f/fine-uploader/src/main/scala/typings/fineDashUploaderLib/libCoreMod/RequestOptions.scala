@@ -83,3 +83,36 @@ trait RequestOptions extends js.Object {
   var uuidName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply(
+    customHeaders: js.Any = null,
+    endpoint: java.lang.String = null,
+    filenameParam: java.lang.String = null,
+    forceMultipart: js.UndefOr[scala.Boolean] = js.undefined,
+    inputName: java.lang.String = null,
+    method: java.lang.String = null,
+    omitDefaultParams: js.UndefOr[scala.Boolean] = js.undefined,
+    params: js.Any = null,
+    paramsInBody: js.UndefOr[scala.Boolean] = js.undefined,
+    requireSuccessJson: js.UndefOr[scala.Boolean] = js.undefined,
+    totalFileSizeName: java.lang.String = null,
+    uuidName: java.lang.String = null
+  ): RequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (filenameParam != null) __obj.updateDynamic("filenameParam")(filenameParam)
+    if (!js.isUndefined(forceMultipart)) __obj.updateDynamic("forceMultipart")(forceMultipart)
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined(omitDefaultParams)) __obj.updateDynamic("omitDefaultParams")(omitDefaultParams)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (!js.isUndefined(paramsInBody)) __obj.updateDynamic("paramsInBody")(paramsInBody)
+    if (!js.isUndefined(requireSuccessJson)) __obj.updateDynamic("requireSuccessJson")(requireSuccessJson)
+    if (totalFileSizeName != null) __obj.updateDynamic("totalFileSizeName")(totalFileSizeName)
+    if (uuidName != null) __obj.updateDynamic("uuidName")(uuidName)
+    __obj.asInstanceOf[RequestOptions]
+  }
+}
+

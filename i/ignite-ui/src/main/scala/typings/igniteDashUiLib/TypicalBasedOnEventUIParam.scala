@@ -36,3 +36,26 @@ trait TypicalBasedOnEventUIParam extends js.Object {
   var supportingCalculations: js.UndefOr[js.Any] = js.undefined
 }
 
+object TypicalBasedOnEventUIParam {
+  @scala.inline
+  def apply(
+    basedOn: js.Any = null,
+    chart: js.Any = null,
+    count: js.Any = null,
+    dataSource: js.Any = null,
+    position: js.Any = null,
+    series: js.Any = null,
+    supportingCalculations: js.Any = null
+  ): TypicalBasedOnEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn)
+    if (chart != null) __obj.updateDynamic("chart")(chart)
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (supportingCalculations != null) __obj.updateDynamic("supportingCalculations")(supportingCalculations)
+    __obj.asInstanceOf[TypicalBasedOnEventUIParam]
+  }
+}
+

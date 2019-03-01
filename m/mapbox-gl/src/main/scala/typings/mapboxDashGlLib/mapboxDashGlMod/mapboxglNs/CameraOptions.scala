@@ -18,3 +18,22 @@ trait CameraOptions extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CameraOptions {
+  @scala.inline
+  def apply(
+    around: LngLatLike = null,
+    bearing: scala.Int | scala.Double = null,
+    center: LngLatLike = null,
+    pitch: scala.Int | scala.Double = null,
+    zoom: scala.Int | scala.Double = null
+  ): CameraOptions = {
+    val __obj = js.Dynamic.literal()
+    if (around != null) __obj.updateDynamic("around")(around.asInstanceOf[js.Any])
+    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
+    if (center != null) __obj.updateDynamic("center")(center.asInstanceOf[js.Any])
+    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CameraOptions]
+  }
+}
+

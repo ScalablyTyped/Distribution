@@ -35,3 +35,20 @@ trait IGridOptions extends js.Object {
   var groupingShowCounts: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(
+    enableGroupHeaderSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGrouping: js.UndefOr[scala.Boolean] = js.undefined,
+    groupingNullLabel: java.lang.String = null,
+    groupingShowCounts: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableGroupHeaderSelection)) __obj.updateDynamic("enableGroupHeaderSelection")(enableGroupHeaderSelection)
+    if (!js.isUndefined(enableGrouping)) __obj.updateDynamic("enableGrouping")(enableGrouping)
+    if (groupingNullLabel != null) __obj.updateDynamic("groupingNullLabel")(groupingNullLabel)
+    if (!js.isUndefined(groupingShowCounts)) __obj.updateDynamic("groupingShowCounts")(groupingShowCounts)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

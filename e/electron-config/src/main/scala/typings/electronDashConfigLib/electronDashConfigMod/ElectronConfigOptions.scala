@@ -16,3 +16,13 @@ trait ElectronConfigOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ElectronConfigOptions {
+  @scala.inline
+  def apply(defaults: js.Object = null, name: java.lang.String = null): ElectronConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ElectronConfigOptions]
+  }
+}
+

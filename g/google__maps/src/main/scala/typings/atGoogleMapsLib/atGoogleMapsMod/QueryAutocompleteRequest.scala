@@ -33,3 +33,22 @@ trait QueryAutocompleteRequest extends js.Object {
   var radius: js.UndefOr[scala.Double] = js.undefined
 }
 
+object QueryAutocompleteRequest {
+  @scala.inline
+  def apply(
+    input: java.lang.String,
+    language: Language = null,
+    location: LatLng = null,
+    offset: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null
+  ): QueryAutocompleteRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueryAutocompleteRequest]
+  }
+}
+

@@ -60,3 +60,26 @@ trait PageContentData extends js.Object {
   ] = js.undefined
 }
 
+object PageContentData {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    image: ImageData = null,
+    ink: FloatingInkData = null,
+    left: scala.Int | scala.Double = null,
+    outline: OutlineData = null,
+    top: scala.Int | scala.Double = null,
+    `type`: officeDashJsLib.OneNoteNs.PageContentType | officeDashJsLib.officeDashJsLibStrings.Outline | officeDashJsLib.officeDashJsLibStrings.Image | officeDashJsLib.officeDashJsLibStrings.Ink | officeDashJsLib.officeDashJsLibStrings.Other = null
+  ): PageContentData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (ink != null) __obj.updateDynamic("ink")(ink)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PageContentData]
+  }
+}
+

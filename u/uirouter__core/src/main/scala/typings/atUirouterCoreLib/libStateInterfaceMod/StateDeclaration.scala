@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait StateDeclaration extends js.Object {
+trait StateDeclaration
+  extends _StateDeclaration
+     with _StateOrName {
   /**
     * Gets the internal State object API
     *
@@ -588,5 +590,58 @@ trait StateDeclaration extends js.Object {
     * ```
     */
   var views: js.UndefOr[org.scalablytyped.runtime.StringDictionary[_ViewDeclaration]] = js.undefined
+}
+
+object StateDeclaration {
+  @scala.inline
+  def apply(
+    $$state: js.Function0[atUirouterCoreLib.libStateStateObjectMod.StateObject] = null,
+    `abstract`: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    dynamic: js.UndefOr[scala.Boolean] = js.undefined,
+    lazyLoad: js.Function2[
+      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
+      /* state */ StateDeclaration, 
+      js.Promise[LazyLoadResult]
+    ] = null,
+    name: java.lang.String = null,
+    onEnter: atUirouterCoreLib.libTransitionInterfaceMod.TransitionStateHookFn = null,
+    onExit: atUirouterCoreLib.libTransitionInterfaceMod.TransitionStateHookFn = null,
+    onRetain: atUirouterCoreLib.libTransitionInterfaceMod.TransitionStateHookFn = null,
+    params: org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libParamsInterfaceMod.ParamDeclaration | js.Any] = null,
+    parent: java.lang.String | StateDeclaration = null,
+    redirectTo: RedirectToResult | (js.Function1[
+      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
+      RedirectToResult
+    ]) | (js.Function1[
+      /* transition */ atUirouterCoreLib.libTransitionTransitionMod.Transition, 
+      js.Promise[RedirectToResult]
+    ]) = null,
+    reloadOnSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    resolve: js.Array[ResolveTypes] | org.scalablytyped.runtime.StringDictionary[atUirouterCoreLib.libCommonCommonMod.IInjectable] = null,
+    resolvePolicy: atUirouterCoreLib.libResolveInterfaceMod.ResolvePolicy = null,
+    url: java.lang.String = null,
+    views: org.scalablytyped.runtime.StringDictionary[_ViewDeclaration] = null
+  ): StateDeclaration = {
+    val __obj = js.Dynamic.literal()
+    if ($$state != null) __obj.updateDynamic("$$state")($$state)
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(dynamic)) __obj.updateDynamic("dynamic")(dynamic)
+    if (lazyLoad != null) __obj.updateDynamic("lazyLoad")(lazyLoad)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (onExit != null) __obj.updateDynamic("onExit")(onExit)
+    if (onRetain != null) __obj.updateDynamic("onRetain")(onRetain)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (redirectTo != null) __obj.updateDynamic("redirectTo")(redirectTo.asInstanceOf[js.Any])
+    if (!js.isUndefined(reloadOnSearch)) __obj.updateDynamic("reloadOnSearch")(reloadOnSearch)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve.asInstanceOf[js.Any])
+    if (resolvePolicy != null) __obj.updateDynamic("resolvePolicy")(resolvePolicy)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (views != null) __obj.updateDynamic("views")(views)
+    __obj.asInstanceOf[StateDeclaration]
+  }
 }
 

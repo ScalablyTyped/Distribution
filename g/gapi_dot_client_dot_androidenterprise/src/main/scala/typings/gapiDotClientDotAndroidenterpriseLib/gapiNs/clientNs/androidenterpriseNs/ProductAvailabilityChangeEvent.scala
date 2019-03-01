@@ -12,3 +12,13 @@ trait ProductAvailabilityChangeEvent extends js.Object {
   var productId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProductAvailabilityChangeEvent {
+  @scala.inline
+  def apply(availabilityStatus: java.lang.String = null, productId: java.lang.String = null): ProductAvailabilityChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    if (availabilityStatus != null) __obj.updateDynamic("availabilityStatus")(availabilityStatus)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    __obj.asInstanceOf[ProductAvailabilityChangeEvent]
+  }
+}
+

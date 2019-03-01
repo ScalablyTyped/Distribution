@@ -75,3 +75,36 @@ trait SignificantTermsAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object SignificantTermsAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    agg: js.Function1[Aggregation, SignificantTermsAggregation],
+    aggregation: js.Function1[Aggregation, SignificantTermsAggregation],
+    exclude: js.Function2[java.lang.String, java.lang.String, SignificantTermsAggregation],
+    executionHint: js.Function1[java.lang.String, SignificantTermsAggregation],
+    field: js.Function1[java.lang.String, SignificantTermsAggregation],
+    format: js.Function1[java.lang.String, SignificantTermsAggregation],
+    include: js.Function2[java.lang.String, java.lang.String, SignificantTermsAggregation],
+    minDocCount: js.Function1[scala.Double, SignificantTermsAggregation],
+    shardSize: js.Function1[scala.Double, SignificantTermsAggregation],
+    size: js.Function1[scala.Double, SignificantTermsAggregation],
+    toJSON: js.Function0[js.Any]
+  ): SignificantTermsAggregation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("agg")(agg)
+    __obj.updateDynamic("aggregation")(aggregation)
+    __obj.updateDynamic("exclude")(exclude)
+    __obj.updateDynamic("executionHint")(executionHint)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("include")(include)
+    __obj.updateDynamic("minDocCount")(minDocCount)
+    __obj.updateDynamic("shardSize")(shardSize)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[SignificantTermsAggregation]
+  }
+}
+

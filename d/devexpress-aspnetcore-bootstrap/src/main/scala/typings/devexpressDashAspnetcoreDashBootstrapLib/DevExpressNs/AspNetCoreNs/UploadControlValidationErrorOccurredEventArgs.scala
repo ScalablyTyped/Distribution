@@ -12,3 +12,22 @@ trait UploadControlValidationErrorOccurredEventArgs extends EventArgs {
   val validationSettings: BootstrapUploadControlValidationSettings
 }
 
+object UploadControlValidationErrorOccurredEventArgs {
+  @scala.inline
+  def apply(
+    errorText: java.lang.String,
+    invalidFiles: js.Array[BootstrapUploadControlInvalidFileInfo],
+    sender: Control,
+    showAlert: scala.Boolean,
+    validationSettings: BootstrapUploadControlValidationSettings
+  ): UploadControlValidationErrorOccurredEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorText")(errorText)
+    __obj.updateDynamic("invalidFiles")(invalidFiles)
+    __obj.updateDynamic("sender")(sender)
+    __obj.updateDynamic("showAlert")(showAlert)
+    __obj.updateDynamic("validationSettings")(validationSettings)
+    __obj.asInstanceOf[UploadControlValidationErrorOccurredEventArgs]
+  }
+}
+

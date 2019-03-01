@@ -20,3 +20,20 @@ trait ButtonText extends js.Object {
   var today: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ButtonText {
+  @scala.inline
+  def apply(
+    done: java.lang.String = null,
+    timeNow: java.lang.String = null,
+    timeTitle: java.lang.String = null,
+    today: java.lang.String = null
+  ): ButtonText = {
+    val __obj = js.Dynamic.literal()
+    if (done != null) __obj.updateDynamic("done")(done)
+    if (timeNow != null) __obj.updateDynamic("timeNow")(timeNow)
+    if (timeTitle != null) __obj.updateDynamic("timeTitle")(timeTitle)
+    if (today != null) __obj.updateDynamic("today")(today)
+    __obj.asInstanceOf[ButtonText]
+  }
+}
+

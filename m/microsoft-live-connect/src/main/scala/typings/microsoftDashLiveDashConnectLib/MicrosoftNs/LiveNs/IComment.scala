@@ -33,3 +33,15 @@ trait IComment extends js.Object {
   var message: java.lang.String
 }
 
+object IComment {
+  @scala.inline
+  def apply(created_time: java.lang.String, from: IUserInfo, id: java.lang.String, message: java.lang.String): IComment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("created_time")(created_time)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[IComment]
+  }
+}
+

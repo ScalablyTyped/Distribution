@@ -14,3 +14,18 @@ trait SponsorSnippet extends js.Object {
   var sponsorSince: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SponsorSnippet {
+  @scala.inline
+  def apply(
+    channelId: java.lang.String = null,
+    sponsorDetails: ChannelProfileDetails = null,
+    sponsorSince: java.lang.String = null
+  ): SponsorSnippet = {
+    val __obj = js.Dynamic.literal()
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (sponsorDetails != null) __obj.updateDynamic("sponsorDetails")(sponsorDetails)
+    if (sponsorSince != null) __obj.updateDynamic("sponsorSince")(sponsorSince)
+    __obj.asInstanceOf[SponsorSnippet]
+  }
+}
+

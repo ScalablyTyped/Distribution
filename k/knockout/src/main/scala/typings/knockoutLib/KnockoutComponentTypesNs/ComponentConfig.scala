@@ -13,3 +13,18 @@ trait ComponentConfig extends js.Object {
   ] = js.undefined
 }
 
+object ComponentConfig {
+  @scala.inline
+  def apply(
+    template: js.Any,
+    createViewModel: js.Any = null,
+    viewModel: ViewModelFunction | ViewModelSharedInstance | ViewModelFactoryFunction | AMDModule = null
+  ): ComponentConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("template")(template)
+    if (createViewModel != null) __obj.updateDynamic("createViewModel")(createViewModel)
+    if (viewModel != null) __obj.updateDynamic("viewModel")(viewModel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComponentConfig]
+  }
+}
+

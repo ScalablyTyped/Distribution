@@ -15,3 +15,26 @@ trait DatabaseAccount extends js.Object {
   var WritableLocations: js.Array[java.lang.String]
 }
 
+object DatabaseAccount {
+  @scala.inline
+  def apply(
+    ConsistencyPolicy: ConsistencyPolicy,
+    CurrentMediaStorageUsageInMB: scala.Double,
+    DatabasesLink: java.lang.String,
+    MaxMediaStorageUsageInMB: scala.Double,
+    MediaLink: java.lang.String,
+    ReadableLocations: js.Array[java.lang.String],
+    WritableLocations: js.Array[java.lang.String]
+  ): DatabaseAccount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ConsistencyPolicy")(ConsistencyPolicy)
+    __obj.updateDynamic("CurrentMediaStorageUsageInMB")(CurrentMediaStorageUsageInMB)
+    __obj.updateDynamic("DatabasesLink")(DatabasesLink)
+    __obj.updateDynamic("MaxMediaStorageUsageInMB")(MaxMediaStorageUsageInMB)
+    __obj.updateDynamic("MediaLink")(MediaLink)
+    __obj.updateDynamic("ReadableLocations")(ReadableLocations)
+    __obj.updateDynamic("WritableLocations")(WritableLocations)
+    __obj.asInstanceOf[DatabaseAccount]
+  }
+}
+

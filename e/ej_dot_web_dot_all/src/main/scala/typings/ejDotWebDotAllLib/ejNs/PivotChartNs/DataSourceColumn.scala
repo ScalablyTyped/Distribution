@@ -26,3 +26,22 @@ trait DataSourceColumn extends js.Object {
   var sortOrder: js.UndefOr[ejDotWebDotAllLib.ejNs.PivotAnalysisNs.SortOrder | java.lang.String] = js.undefined
 }
 
+object DataSourceColumn {
+  @scala.inline
+  def apply(
+    fieldCaption: java.lang.String = null,
+    fieldName: java.lang.String = null,
+    filterItems: DataSourceColumnsFilterItems = null,
+    isNamedSets: js.UndefOr[scala.Boolean] = js.undefined,
+    sortOrder: ejDotWebDotAllLib.ejNs.PivotAnalysisNs.SortOrder | java.lang.String = null
+  ): DataSourceColumn = {
+    val __obj = js.Dynamic.literal()
+    if (fieldCaption != null) __obj.updateDynamic("fieldCaption")(fieldCaption)
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems)
+    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataSourceColumn]
+  }
+}
+

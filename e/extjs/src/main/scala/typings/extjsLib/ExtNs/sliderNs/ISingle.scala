@@ -20,3 +20,22 @@ trait ISingle extends IMulti {
   ] = js.undefined
 }
 
+object ISingle {
+  @scala.inline
+  def apply(
+    IMulti: IMulti = null,
+    getValue: js.Function0[_] = null,
+    setValue: js.Function2[
+      /* value */ js.UndefOr[scala.Double], 
+      /* animate */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null
+  ): ISingle = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IMulti)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    __obj.asInstanceOf[ISingle]
+  }
+}
+

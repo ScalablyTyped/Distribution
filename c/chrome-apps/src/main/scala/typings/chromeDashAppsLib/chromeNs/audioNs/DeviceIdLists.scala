@@ -18,3 +18,13 @@ trait DeviceIdLists extends js.Object {
   var output: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object DeviceIdLists {
+  @scala.inline
+  def apply(input: js.Array[java.lang.String] = null, output: js.Array[java.lang.String] = null): DeviceIdLists = {
+    val __obj = js.Dynamic.literal()
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (output != null) __obj.updateDynamic("output")(output)
+    __obj.asInstanceOf[DeviceIdLists]
+  }
+}
+

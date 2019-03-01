@@ -86,3 +86,48 @@ trait OptionsLB extends js.Object {
   var normalization: java.lang.String | scala.Boolean | js.Any
 }
 
+object OptionsLB {
+  @scala.inline
+  def apply(
+    appConfigRootDir: java.lang.String,
+    appRootDir: java.lang.String,
+    bootDirs: js.Array[java.lang.String],
+    bootScripts: js.Array[java.lang.String],
+    componentRootDir: java.lang.String,
+    components: js.Any,
+    dataSources: js.Any,
+    dsRootDir: java.lang.String,
+    env: java.lang.String,
+    middleware: js.Any,
+    middlewareRootDir: java.lang.String,
+    mixinDirs: js.Array[java.lang.String],
+    mixinSources: js.Array[java.lang.String],
+    modelDefinitions: js.Array[_],
+    modelSources: js.Array[java.lang.String],
+    models: js.Any,
+    modelsRootDir: java.lang.String,
+    normalization: java.lang.String | scala.Boolean | js.Any
+  ): OptionsLB = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appConfigRootDir")(appConfigRootDir)
+    __obj.updateDynamic("appRootDir")(appRootDir)
+    __obj.updateDynamic("bootDirs")(bootDirs)
+    __obj.updateDynamic("bootScripts")(bootScripts)
+    __obj.updateDynamic("componentRootDir")(componentRootDir)
+    __obj.updateDynamic("components")(components)
+    __obj.updateDynamic("dataSources")(dataSources)
+    __obj.updateDynamic("dsRootDir")(dsRootDir)
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("middleware")(middleware)
+    __obj.updateDynamic("middlewareRootDir")(middlewareRootDir)
+    __obj.updateDynamic("mixinDirs")(mixinDirs)
+    __obj.updateDynamic("mixinSources")(mixinSources)
+    __obj.updateDynamic("modelDefinitions")(modelDefinitions)
+    __obj.updateDynamic("modelSources")(modelSources)
+    __obj.updateDynamic("models")(models)
+    __obj.updateDynamic("modelsRootDir")(modelsRootDir)
+    __obj.updateDynamic("normalization")(normalization.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OptionsLB]
+  }
+}
+

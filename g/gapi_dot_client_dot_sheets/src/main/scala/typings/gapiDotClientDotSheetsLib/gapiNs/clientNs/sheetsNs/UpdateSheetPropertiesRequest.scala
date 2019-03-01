@@ -16,3 +16,13 @@ trait UpdateSheetPropertiesRequest extends js.Object {
   var properties: js.UndefOr[SheetProperties] = js.undefined
 }
 
+object UpdateSheetPropertiesRequest {
+  @scala.inline
+  def apply(fields: java.lang.String = null, properties: SheetProperties = null): UpdateSheetPropertiesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[UpdateSheetPropertiesRequest]
+  }
+}
+

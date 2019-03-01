@@ -25,3 +25,22 @@ trait AchievementUpdateRequest extends js.Object {
   var updateType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AchievementUpdateRequest {
+  @scala.inline
+  def apply(
+    achievementId: java.lang.String = null,
+    incrementPayload: GamesAchievementIncrement = null,
+    kind: java.lang.String = null,
+    setStepsAtLeastPayload: GamesAchievementSetStepsAtLeast = null,
+    updateType: java.lang.String = null
+  ): AchievementUpdateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (achievementId != null) __obj.updateDynamic("achievementId")(achievementId)
+    if (incrementPayload != null) __obj.updateDynamic("incrementPayload")(incrementPayload)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (setStepsAtLeastPayload != null) __obj.updateDynamic("setStepsAtLeastPayload")(setStepsAtLeastPayload)
+    if (updateType != null) __obj.updateDynamic("updateType")(updateType)
+    __obj.asInstanceOf[AchievementUpdateRequest]
+  }
+}
+

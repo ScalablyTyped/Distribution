@@ -28,3 +28,22 @@ trait ActivePaneChangedEventUIParam extends js.Object {
   var visibleRange: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActivePaneChangedEventUIParam {
+  @scala.inline
+  def apply(
+    activeCell: java.lang.String = null,
+    newActivePane: js.Any = null,
+    oldActivePane: js.Any = null,
+    owner: js.Any = null,
+    visibleRange: java.lang.String = null
+  ): ActivePaneChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell)
+    if (newActivePane != null) __obj.updateDynamic("newActivePane")(newActivePane)
+    if (oldActivePane != null) __obj.updateDynamic("oldActivePane")(oldActivePane)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (visibleRange != null) __obj.updateDynamic("visibleRange")(visibleRange)
+    __obj.asInstanceOf[ActivePaneChangedEventUIParam]
+  }
+}
+

@@ -14,3 +14,18 @@ trait IPanelStackState extends js.Object {
   ]
 }
 
+object IPanelStackState {
+  @scala.inline
+  def apply(
+    direction: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.push | atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.pop,
+    stack: js.Array[
+      atBlueprintjsCoreLib.libEsmComponentsPanelDashStackPanelPropsMod.IPanel[js.Object]
+    ]
+  ): IPanelStackState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[IPanelStackState]
+  }
+}
+

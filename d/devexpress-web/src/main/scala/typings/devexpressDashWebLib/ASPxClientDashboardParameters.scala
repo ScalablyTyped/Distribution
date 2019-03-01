@@ -25,3 +25,18 @@ trait ASPxClientDashboardParameters extends js.Object {
   def GetParameterList(): js.Array[ASPxClientDashboardParameter]
 }
 
+object ASPxClientDashboardParameters {
+  @scala.inline
+  def apply(
+    GetParameterByIndex: js.Function1[scala.Double, ASPxClientDashboardParameter],
+    GetParameterByName: js.Function1[java.lang.String, ASPxClientDashboardParameter],
+    GetParameterList: js.Function0[js.Array[ASPxClientDashboardParameter]]
+  ): ASPxClientDashboardParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetParameterByIndex")(GetParameterByIndex)
+    __obj.updateDynamic("GetParameterByName")(GetParameterByName)
+    __obj.updateDynamic("GetParameterList")(GetParameterList)
+    __obj.asInstanceOf[ASPxClientDashboardParameters]
+  }
+}
+

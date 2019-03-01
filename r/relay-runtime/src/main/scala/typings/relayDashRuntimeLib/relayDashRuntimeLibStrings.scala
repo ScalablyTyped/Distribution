@@ -7,19 +7,23 @@ import scala.scalajs.js.annotation._
 
 object relayDashRuntimeLibStrings {
   @js.native
-  sealed trait ABORT extends js.Object
+  sealed trait ABORT
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerLoadingEventType
   
   @js.native
   sealed trait APPEND extends js.Object
   
   @js.native
-  sealed trait CACHE_RESTORED_REQUIRED extends js.Object
+  sealed trait CACHE_RESTORED_REQUIRED
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerLoadingEventType
   
   @js.native
-  sealed trait CACHE_RESTORE_FAILED extends js.Object
+  sealed trait CACHE_RESTORE_FAILED
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerErrorEventType
   
   @js.native
-  sealed trait CACHE_RESTORE_START extends js.Object
+  sealed trait CACHE_RESTORE_START
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerLoadingEventType
   
   @js.native
   sealed trait EXISTENT extends js.Object
@@ -31,16 +35,20 @@ object relayDashRuntimeLibStrings {
   sealed trait IGNORE extends js.Object
   
   @js.native
-  sealed trait NETWORK_QUERY_ERROR extends js.Object
+  sealed trait NETWORK_QUERY_ERROR
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerErrorEventType
   
   @js.native
-  sealed trait NETWORK_QUERY_RECEIVED_ALL extends js.Object
+  sealed trait NETWORK_QUERY_RECEIVED_ALL
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerLoadingEventType
   
   @js.native
-  sealed trait NETWORK_QUERY_RECEIVED_REQUIRED extends js.Object
+  sealed trait NETWORK_QUERY_RECEIVED_REQUIRED
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerLoadingEventType
   
   @js.native
-  sealed trait NETWORK_QUERY_START extends js.Object
+  sealed trait NETWORK_QUERY_START
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerLoadingEventType
   
   @js.native
   sealed trait NODE_DELETE extends js.Object
@@ -67,10 +75,12 @@ object relayDashRuntimeLibStrings {
   sealed trait REQUIRED_CHILDREN extends js.Object
   
   @js.native
-  sealed trait STORE_FOUND_ALL extends js.Object
+  sealed trait STORE_FOUND_ALL
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerLoadingEventType
   
   @js.native
-  sealed trait STORE_FOUND_REQUIRED extends js.Object
+  sealed trait STORE_FOUND_REQUIRED
+    extends relayDashRuntimeLib.relayDashRuntimeMod.RelayContainerLoadingEventType
   
   @js.native
   sealed trait UNKNOWN extends js.Object

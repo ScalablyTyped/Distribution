@@ -10,3 +10,16 @@ trait ICoreApplicationUseCount extends js.Object {
   def incrementApplicationUseCount(): scala.Unit
 }
 
+object ICoreApplicationUseCount {
+  @scala.inline
+  def apply(
+    decrementApplicationUseCount: js.Function0[scala.Unit],
+    incrementApplicationUseCount: js.Function0[scala.Unit]
+  ): ICoreApplicationUseCount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decrementApplicationUseCount")(decrementApplicationUseCount)
+    __obj.updateDynamic("incrementApplicationUseCount")(incrementApplicationUseCount)
+    __obj.asInstanceOf[ICoreApplicationUseCount]
+  }
+}
+

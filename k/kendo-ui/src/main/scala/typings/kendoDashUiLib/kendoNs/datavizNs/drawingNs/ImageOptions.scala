@@ -15,3 +15,26 @@ trait ImageOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ImageOptions {
+  @scala.inline
+  def apply(
+    clip: kendoDashUiLib.kendoNs.drawingNs.Path = null,
+    cursor: java.lang.String = null,
+    name: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    tooltip: kendoDashUiLib.kendoNs.drawingNs.TooltipOptions = null,
+    transform: kendoDashUiLib.kendoNs.geometryNs.Transformation = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ImageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (clip != null) __obj.updateDynamic("clip")(clip)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ImageOptions]
+  }
+}
+

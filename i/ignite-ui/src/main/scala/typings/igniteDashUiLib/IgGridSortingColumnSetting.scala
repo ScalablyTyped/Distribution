@@ -62,3 +62,29 @@ trait IgGridSortingColumnSetting
   var firstSortDirection: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridSortingColumnSetting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridSortingColumnSetting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    compareFunc: java.lang.String | js.Function = null,
+    currentSortDirection: java.lang.String = null,
+    firstSortDirection: java.lang.String = null
+  ): IgGridSortingColumnSetting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (compareFunc != null) __obj.updateDynamic("compareFunc")(compareFunc.asInstanceOf[js.Any])
+    if (currentSortDirection != null) __obj.updateDynamic("currentSortDirection")(currentSortDirection)
+    if (firstSortDirection != null) __obj.updateDynamic("firstSortDirection")(firstSortDirection)
+    __obj.asInstanceOf[IgGridSortingColumnSetting]
+  }
+}
+

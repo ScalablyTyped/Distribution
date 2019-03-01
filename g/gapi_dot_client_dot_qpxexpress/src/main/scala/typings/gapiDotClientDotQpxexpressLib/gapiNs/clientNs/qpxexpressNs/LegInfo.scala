@@ -48,3 +48,46 @@ trait LegInfo extends js.Object {
   var secure: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LegInfo {
+  @scala.inline
+  def apply(
+    aircraft: java.lang.String = null,
+    arrivalTime: java.lang.String = null,
+    changePlane: js.UndefOr[scala.Boolean] = js.undefined,
+    connectionDuration: scala.Int | scala.Double = null,
+    departureTime: java.lang.String = null,
+    destination: java.lang.String = null,
+    destinationTerminal: java.lang.String = null,
+    duration: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    meal: java.lang.String = null,
+    mileage: scala.Int | scala.Double = null,
+    onTimePerformance: scala.Int | scala.Double = null,
+    operatingDisclosure: java.lang.String = null,
+    origin: java.lang.String = null,
+    originTerminal: java.lang.String = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined
+  ): LegInfo = {
+    val __obj = js.Dynamic.literal()
+    if (aircraft != null) __obj.updateDynamic("aircraft")(aircraft)
+    if (arrivalTime != null) __obj.updateDynamic("arrivalTime")(arrivalTime)
+    if (!js.isUndefined(changePlane)) __obj.updateDynamic("changePlane")(changePlane)
+    if (connectionDuration != null) __obj.updateDynamic("connectionDuration")(connectionDuration.asInstanceOf[js.Any])
+    if (departureTime != null) __obj.updateDynamic("departureTime")(departureTime)
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (destinationTerminal != null) __obj.updateDynamic("destinationTerminal")(destinationTerminal)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (meal != null) __obj.updateDynamic("meal")(meal)
+    if (mileage != null) __obj.updateDynamic("mileage")(mileage.asInstanceOf[js.Any])
+    if (onTimePerformance != null) __obj.updateDynamic("onTimePerformance")(onTimePerformance.asInstanceOf[js.Any])
+    if (operatingDisclosure != null) __obj.updateDynamic("operatingDisclosure")(operatingDisclosure)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (originTerminal != null) __obj.updateDynamic("originTerminal")(originTerminal)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    __obj.asInstanceOf[LegInfo]
+  }
+}
+

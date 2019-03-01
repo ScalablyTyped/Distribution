@@ -21,3 +21,14 @@ trait ASPxClientImageGalleryCancelEventArgs extends ASPxClientCancelEventArgs {
   var name: java.lang.String
 }
 
+object ASPxClientImageGalleryCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, index: scala.Double, name: java.lang.String): ASPxClientImageGalleryCancelEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientImageGalleryCancelEventArgs]
+  }
+}
+

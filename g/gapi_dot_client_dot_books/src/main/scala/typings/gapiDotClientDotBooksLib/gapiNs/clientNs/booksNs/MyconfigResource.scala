@@ -21,3 +21,37 @@ trait MyconfigResource extends js.Object {
   def updateUserSettings(request: gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean): gapiDotClientLib.gapiNs.clientNs.Request[Usersettings]
 }
 
+object MyconfigResource {
+  @scala.inline
+  def apply(
+    getUserSettings: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Usersettings]
+    ],
+    releaseDownloadAccess: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltCpksverFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DownloadAccesses]
+    ],
+    requestAccess: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltCpksverFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RequestAccess]
+    ],
+    syncVolumeLicenses: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltCpksverFeatures, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Volumes]
+    ],
+    updateUserSettings: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyOauthtokenPrettyPrintQuotaUserUserIpBoolean, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Usersettings]
+    ]
+  ): MyconfigResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getUserSettings")(getUserSettings)
+    __obj.updateDynamic("releaseDownloadAccess")(releaseDownloadAccess)
+    __obj.updateDynamic("requestAccess")(requestAccess)
+    __obj.updateDynamic("syncVolumeLicenses")(syncVolumeLicenses)
+    __obj.updateDynamic("updateUserSettings")(updateUserSettings)
+    __obj.asInstanceOf[MyconfigResource]
+  }
+}
+

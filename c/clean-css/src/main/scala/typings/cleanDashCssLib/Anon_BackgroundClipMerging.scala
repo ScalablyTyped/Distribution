@@ -60,3 +60,38 @@ trait Anon_BackgroundClipMerging extends js.Object {
   var zeroUnits: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_BackgroundClipMerging {
+  @scala.inline
+  def apply(
+    backgroundClipMerging: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundOriginMerging: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundSizeMerging: js.UndefOr[scala.Boolean] = js.undefined,
+    colors: js.UndefOr[scala.Boolean] = js.undefined,
+    ieBangHack: js.UndefOr[scala.Boolean] = js.undefined,
+    ieFilters: js.UndefOr[scala.Boolean] = js.undefined,
+    iePrefixHack: js.UndefOr[scala.Boolean] = js.undefined,
+    ieSuffixHack: js.UndefOr[scala.Boolean] = js.undefined,
+    merging: js.UndefOr[scala.Boolean] = js.undefined,
+    shorterLengthUnits: cleanDashCssLib.cleanDashCssLibNumbers.`false` = null,
+    spaceAfterClosingBrace: cleanDashCssLib.cleanDashCssLibNumbers.`true` = null,
+    urlQuotes: js.UndefOr[scala.Boolean] = js.undefined,
+    zeroUnits: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_BackgroundClipMerging = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(backgroundClipMerging)) __obj.updateDynamic("backgroundClipMerging")(backgroundClipMerging)
+    if (!js.isUndefined(backgroundOriginMerging)) __obj.updateDynamic("backgroundOriginMerging")(backgroundOriginMerging)
+    if (!js.isUndefined(backgroundSizeMerging)) __obj.updateDynamic("backgroundSizeMerging")(backgroundSizeMerging)
+    if (!js.isUndefined(colors)) __obj.updateDynamic("colors")(colors)
+    if (!js.isUndefined(ieBangHack)) __obj.updateDynamic("ieBangHack")(ieBangHack)
+    if (!js.isUndefined(ieFilters)) __obj.updateDynamic("ieFilters")(ieFilters)
+    if (!js.isUndefined(iePrefixHack)) __obj.updateDynamic("iePrefixHack")(iePrefixHack)
+    if (!js.isUndefined(ieSuffixHack)) __obj.updateDynamic("ieSuffixHack")(ieSuffixHack)
+    if (!js.isUndefined(merging)) __obj.updateDynamic("merging")(merging)
+    if (shorterLengthUnits != null) __obj.updateDynamic("shorterLengthUnits")(shorterLengthUnits)
+    if (spaceAfterClosingBrace != null) __obj.updateDynamic("spaceAfterClosingBrace")(spaceAfterClosingBrace)
+    if (!js.isUndefined(urlQuotes)) __obj.updateDynamic("urlQuotes")(urlQuotes)
+    if (!js.isUndefined(zeroUnits)) __obj.updateDynamic("zeroUnits")(zeroUnits)
+    __obj.asInstanceOf[Anon_BackgroundClipMerging]
+  }
+}
+

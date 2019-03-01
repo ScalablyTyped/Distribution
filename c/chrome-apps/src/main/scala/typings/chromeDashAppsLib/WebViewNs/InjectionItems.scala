@@ -16,3 +16,13 @@ trait InjectionItems extends js.Object {
   var files: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object InjectionItems {
+  @scala.inline
+  def apply(code: java.lang.String = null, files: js.Array[_] = null): InjectionItems = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (files != null) __obj.updateDynamic("files")(files)
+    __obj.asInstanceOf[InjectionItems]
+  }
+}
+

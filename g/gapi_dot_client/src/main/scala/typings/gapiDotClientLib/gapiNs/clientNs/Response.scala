@@ -21,3 +21,22 @@ trait Response[T] extends js.Object {
   var statusText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply[T](
+    body: java.lang.String,
+    result: T,
+    headers: js.Array[_] = null,
+    status: scala.Int | scala.Double = null,
+    statusText: java.lang.String = null
+  ): Response[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("result")(result.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    __obj.asInstanceOf[Response[T]]
+  }
+}
+

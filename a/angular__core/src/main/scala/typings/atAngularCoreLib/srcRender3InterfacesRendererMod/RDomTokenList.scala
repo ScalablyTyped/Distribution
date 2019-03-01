@@ -10,3 +10,16 @@ trait RDomTokenList extends js.Object {
   def remove(token: java.lang.String): scala.Unit
 }
 
+object RDomTokenList {
+  @scala.inline
+  def apply(
+    add: js.Function1[java.lang.String, scala.Unit],
+    remove: js.Function1[java.lang.String, scala.Unit]
+  ): RDomTokenList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[RDomTokenList]
+  }
+}
+

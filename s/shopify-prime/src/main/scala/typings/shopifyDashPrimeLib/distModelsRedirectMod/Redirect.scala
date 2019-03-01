@@ -17,3 +17,20 @@ trait Redirect
   var target: java.lang.String
 }
 
+object Redirect {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    target: java.lang.String,
+    admin_graphql_api_id: java.lang.String = null,
+    id: scala.Int | scala.Double = null
+  ): Redirect = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("target")(target)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Redirect]
+  }
+}
+

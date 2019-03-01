@@ -10,3 +10,13 @@ trait Anon_Precision extends js.Object {
   var scale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Precision {
+  @scala.inline
+  def apply(precision: scala.Double, scale: scala.Int | scala.Double = null): Anon_Precision = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("precision")(precision)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Precision]
+  }
+}
+

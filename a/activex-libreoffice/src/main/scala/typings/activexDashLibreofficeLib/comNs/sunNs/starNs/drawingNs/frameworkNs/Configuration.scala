@@ -20,3 +20,35 @@ trait Configuration extends XConfiguration {
   def create(): scala.Unit
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addResource: js.Function1[XResourceId, scala.Unit],
+    create: js.Function0[scala.Unit],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    getResources: js.Function3[
+      XResourceId, 
+      java.lang.String, 
+      AnchorBindingMode, 
+      activexDashInteropLib.SafeArray[XResourceId]
+    ],
+    hasResource: js.Function1[XResourceId, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeResource: js.Function1[XResourceId, scala.Unit]
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addResource")(addResource)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createClone")(createClone)
+    __obj.updateDynamic("getResources")(getResources)
+    __obj.updateDynamic("hasResource")(hasResource)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeResource")(removeResource)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

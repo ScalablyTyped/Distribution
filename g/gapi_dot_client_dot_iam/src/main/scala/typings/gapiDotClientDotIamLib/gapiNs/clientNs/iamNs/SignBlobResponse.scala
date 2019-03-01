@@ -12,3 +12,13 @@ trait SignBlobResponse extends js.Object {
   var signature: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SignBlobResponse {
+  @scala.inline
+  def apply(keyId: java.lang.String = null, signature: java.lang.String = null): SignBlobResponse = {
+    val __obj = js.Dynamic.literal()
+    if (keyId != null) __obj.updateDynamic("keyId")(keyId)
+    if (signature != null) __obj.updateDynamic("signature")(signature)
+    __obj.asInstanceOf[SignBlobResponse]
+  }
+}
+

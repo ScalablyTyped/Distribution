@@ -24,3 +24,22 @@ trait PlayerScore extends js.Object {
   var timeSpan: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PlayerScore {
+  @scala.inline
+  def apply(
+    formattedScore: java.lang.String = null,
+    kind: java.lang.String = null,
+    score: java.lang.String = null,
+    scoreTag: java.lang.String = null,
+    timeSpan: java.lang.String = null
+  ): PlayerScore = {
+    val __obj = js.Dynamic.literal()
+    if (formattedScore != null) __obj.updateDynamic("formattedScore")(formattedScore)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (score != null) __obj.updateDynamic("score")(score)
+    if (scoreTag != null) __obj.updateDynamic("scoreTag")(scoreTag)
+    if (timeSpan != null) __obj.updateDynamic("timeSpan")(timeSpan)
+    __obj.asInstanceOf[PlayerScore]
+  }
+}
+

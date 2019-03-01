@@ -10,3 +10,16 @@ trait Anon_CellQuestion extends js.Object {
   def onCellQuestionUpdate(cellQuestion: js.Any, column: js.Any, question: js.Any, data: js.Any): scala.Unit
 }
 
+object Anon_CellQuestion {
+  @scala.inline
+  def apply(
+    onCellQuestionUpdate: js.Function4[js.Any, js.Any, js.Any, js.Any, scala.Unit],
+    properties: js.Array[java.lang.String]
+  ): Anon_CellQuestion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onCellQuestionUpdate")(onCellQuestionUpdate)
+    __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Anon_CellQuestion]
+  }
+}
+

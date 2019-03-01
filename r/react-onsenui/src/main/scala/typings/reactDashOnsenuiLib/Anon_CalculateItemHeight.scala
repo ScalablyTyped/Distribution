@@ -12,3 +12,20 @@ trait Anon_CalculateItemHeight extends js.Object {
   def renderRow(rowIndex: scala.Double): js.Any
 }
 
+object Anon_CalculateItemHeight {
+  @scala.inline
+  def apply(
+    calculateItemHeight: js.Function1[scala.Double, js.Any],
+    renderRow: js.Function1[scala.Double, js.Any],
+    length: scala.Int | scala.Double = null,
+    modifier: java.lang.String = null
+  ): Anon_CalculateItemHeight = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calculateItemHeight")(calculateItemHeight)
+    __obj.updateDynamic("renderRow")(renderRow)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    __obj.asInstanceOf[Anon_CalculateItemHeight]
+  }
+}
+

@@ -77,3 +77,66 @@ trait Product extends js.Object {
   var webPropertyCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Product {
+  @scala.inline
+  def apply(
+    billedBuyer: Buyer = null,
+    buyer: Buyer = null,
+    creationTimeMs: java.lang.String = null,
+    creatorContacts: js.Array[ContactInformation] = null,
+    creatorRole: java.lang.String = null,
+    deliveryControl: DeliveryControl = null,
+    flightEndTimeMs: java.lang.String = null,
+    flightStartTimeMs: java.lang.String = null,
+    hasCreatorSignedOff: js.UndefOr[scala.Boolean] = js.undefined,
+    inventorySource: java.lang.String = null,
+    kind: java.lang.String = null,
+    labels: js.Array[MarketplaceLabel] = null,
+    lastUpdateTimeMs: java.lang.String = null,
+    legacyOfferId: java.lang.String = null,
+    marketplacePublisherProfileId: java.lang.String = null,
+    name: java.lang.String = null,
+    privateAuctionId: java.lang.String = null,
+    productId: java.lang.String = null,
+    publisherProfileId: java.lang.String = null,
+    publisherProvidedForecast: PublisherProvidedForecast = null,
+    revisionNumber: java.lang.String = null,
+    seller: Seller = null,
+    sharedTargetings: js.Array[SharedTargeting] = null,
+    state: java.lang.String = null,
+    syndicationProduct: java.lang.String = null,
+    terms: DealTerms = null,
+    webPropertyCode: java.lang.String = null
+  ): Product = {
+    val __obj = js.Dynamic.literal()
+    if (billedBuyer != null) __obj.updateDynamic("billedBuyer")(billedBuyer)
+    if (buyer != null) __obj.updateDynamic("buyer")(buyer)
+    if (creationTimeMs != null) __obj.updateDynamic("creationTimeMs")(creationTimeMs)
+    if (creatorContacts != null) __obj.updateDynamic("creatorContacts")(creatorContacts)
+    if (creatorRole != null) __obj.updateDynamic("creatorRole")(creatorRole)
+    if (deliveryControl != null) __obj.updateDynamic("deliveryControl")(deliveryControl)
+    if (flightEndTimeMs != null) __obj.updateDynamic("flightEndTimeMs")(flightEndTimeMs)
+    if (flightStartTimeMs != null) __obj.updateDynamic("flightStartTimeMs")(flightStartTimeMs)
+    if (!js.isUndefined(hasCreatorSignedOff)) __obj.updateDynamic("hasCreatorSignedOff")(hasCreatorSignedOff)
+    if (inventorySource != null) __obj.updateDynamic("inventorySource")(inventorySource)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (lastUpdateTimeMs != null) __obj.updateDynamic("lastUpdateTimeMs")(lastUpdateTimeMs)
+    if (legacyOfferId != null) __obj.updateDynamic("legacyOfferId")(legacyOfferId)
+    if (marketplacePublisherProfileId != null) __obj.updateDynamic("marketplacePublisherProfileId")(marketplacePublisherProfileId)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (privateAuctionId != null) __obj.updateDynamic("privateAuctionId")(privateAuctionId)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (publisherProfileId != null) __obj.updateDynamic("publisherProfileId")(publisherProfileId)
+    if (publisherProvidedForecast != null) __obj.updateDynamic("publisherProvidedForecast")(publisherProvidedForecast)
+    if (revisionNumber != null) __obj.updateDynamic("revisionNumber")(revisionNumber)
+    if (seller != null) __obj.updateDynamic("seller")(seller)
+    if (sharedTargetings != null) __obj.updateDynamic("sharedTargetings")(sharedTargetings)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (syndicationProduct != null) __obj.updateDynamic("syndicationProduct")(syndicationProduct)
+    if (terms != null) __obj.updateDynamic("terms")(terms)
+    if (webPropertyCode != null) __obj.updateDynamic("webPropertyCode")(webPropertyCode)
+    __obj.asInstanceOf[Product]
+  }
+}
+

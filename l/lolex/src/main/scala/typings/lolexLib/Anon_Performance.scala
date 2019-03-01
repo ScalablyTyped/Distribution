@@ -12,3 +12,12 @@ trait Anon_Performance extends js.Object {
   var performance: Anon_Now
 }
 
+object Anon_Performance {
+  @scala.inline
+  def apply(performance: Anon_Now): Anon_Performance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("performance")(performance)
+    __obj.asInstanceOf[Anon_Performance]
+  }
+}
+

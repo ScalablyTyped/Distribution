@@ -47,3 +47,44 @@ trait Anon_AltFieldsIdsKeyMaxResults extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltFieldsIdsKeyMaxResults {
+  @scala.inline
+  def apply(
+    profileId: java.lang.String,
+    projectId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    ids: java.lang.String = null,
+    key: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    searchString: java.lang.String = null,
+    siteId: java.lang.String = null,
+    sortField: java.lang.String = null,
+    sortOrder: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltFieldsIdsKeyMaxResults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("profileId")(profileId)
+    __obj.updateDynamic("projectId")(projectId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (searchString != null) __obj.updateDynamic("searchString")(searchString)
+    if (siteId != null) __obj.updateDynamic("siteId")(siteId)
+    if (sortField != null) __obj.updateDynamic("sortField")(sortField)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltFieldsIdsKeyMaxResults]
+  }
+}
+

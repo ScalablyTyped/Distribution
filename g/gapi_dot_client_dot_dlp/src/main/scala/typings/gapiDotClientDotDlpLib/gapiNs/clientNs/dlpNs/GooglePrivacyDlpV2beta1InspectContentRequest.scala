@@ -16,3 +16,16 @@ trait GooglePrivacyDlpV2beta1InspectContentRequest extends js.Object {
   var items: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1ContentItem]] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1InspectContentRequest {
+  @scala.inline
+  def apply(
+    inspectConfig: GooglePrivacyDlpV2beta1InspectConfig = null,
+    items: js.Array[GooglePrivacyDlpV2beta1ContentItem] = null
+  ): GooglePrivacyDlpV2beta1InspectContentRequest = {
+    val __obj = js.Dynamic.literal()
+    if (inspectConfig != null) __obj.updateDynamic("inspectConfig")(inspectConfig)
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1InspectContentRequest]
+  }
+}
+

@@ -11,3 +11,19 @@ trait Anon_String extends js.Object {
   ]
 }
 
+object Anon_String {
+  @scala.inline
+  def apply(
+    toBits: js.Function1[
+      java.lang.String, 
+      js.Array[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_bitwise/types.Bit */ _
+      ]
+    ]
+  ): Anon_String = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toBits")(toBits)
+    __obj.asInstanceOf[Anon_String]
+  }
+}
+

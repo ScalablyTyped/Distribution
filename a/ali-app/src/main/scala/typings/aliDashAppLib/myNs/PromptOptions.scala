@@ -25,3 +25,30 @@ trait PromptOptions
   def success_MPromptOptions(result: aliDashAppLib.Anon_InputValue): scala.Unit
 }
 
+object PromptOptions {
+  @scala.inline
+  def apply(
+    cancelButtonText: java.lang.String,
+    okButtonText: java.lang.String,
+    success: js.Function1[aliDashAppLib.Anon_InputValue, scala.Unit],
+    align: aliDashAppLib.aliDashAppLibStrings.left | aliDashAppLib.aliDashAppLibStrings.center | aliDashAppLib.aliDashAppLibStrings.right | java.lang.String = null,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    message: java.lang.String = null,
+    placeholder: java.lang.String = null,
+    title: java.lang.String = null
+  ): PromptOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancelButtonText")(cancelButtonText)
+    __obj.updateDynamic("okButtonText")(okButtonText)
+    __obj.updateDynamic("success")(success)
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[PromptOptions]
+  }
+}
+

@@ -16,3 +16,13 @@ trait HostListener extends js.Object {
   var eventName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HostListener {
+  @scala.inline
+  def apply(args: js.Array[java.lang.String] = null, eventName: java.lang.String = null): HostListener = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (eventName != null) __obj.updateDynamic("eventName")(eventName)
+    __obj.asInstanceOf[HostListener]
+  }
+}
+

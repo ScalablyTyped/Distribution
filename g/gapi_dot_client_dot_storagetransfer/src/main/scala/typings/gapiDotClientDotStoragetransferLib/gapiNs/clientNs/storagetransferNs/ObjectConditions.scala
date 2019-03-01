@@ -66,3 +66,20 @@ trait ObjectConditions extends js.Object {
   var minTimeElapsedSinceLastModification: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ObjectConditions {
+  @scala.inline
+  def apply(
+    excludePrefixes: js.Array[java.lang.String] = null,
+    includePrefixes: js.Array[java.lang.String] = null,
+    maxTimeElapsedSinceLastModification: java.lang.String = null,
+    minTimeElapsedSinceLastModification: java.lang.String = null
+  ): ObjectConditions = {
+    val __obj = js.Dynamic.literal()
+    if (excludePrefixes != null) __obj.updateDynamic("excludePrefixes")(excludePrefixes)
+    if (includePrefixes != null) __obj.updateDynamic("includePrefixes")(includePrefixes)
+    if (maxTimeElapsedSinceLastModification != null) __obj.updateDynamic("maxTimeElapsedSinceLastModification")(maxTimeElapsedSinceLastModification)
+    if (minTimeElapsedSinceLastModification != null) __obj.updateDynamic("minTimeElapsedSinceLastModification")(minTimeElapsedSinceLastModification)
+    __obj.asInstanceOf[ObjectConditions]
+  }
+}
+

@@ -38,3 +38,26 @@ trait ListenerState extends js.Object {
   val sslPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ListenerState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultAction: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticateCognitoAuthenticateOidc] = null,
+    loadBalancerArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sslPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ListenerState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    if (defaultAction != null) __obj.updateDynamic("defaultAction")(defaultAction.asInstanceOf[js.Any])
+    if (loadBalancerArn != null) __obj.updateDynamic("loadBalancerArn")(loadBalancerArn.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (sslPolicy != null) __obj.updateDynamic("sslPolicy")(sslPolicy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListenerState]
+  }
+}
+

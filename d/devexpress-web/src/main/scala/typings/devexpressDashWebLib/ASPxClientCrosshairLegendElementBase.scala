@@ -23,3 +23,18 @@ trait ASPxClientCrosshairLegendElementBase extends js.Object {
   var visible: scala.Boolean
 }
 
+object ASPxClientCrosshairLegendElementBase {
+  @scala.inline
+  def apply(
+    AxisLabelElement: ASPxClientCrosshairAxisLabelElement,
+    LineElement: ASPxClientCrosshairLineElement,
+    visible: scala.Boolean
+  ): ASPxClientCrosshairLegendElementBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AxisLabelElement")(AxisLabelElement)
+    __obj.updateDynamic("LineElement")(LineElement)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ASPxClientCrosshairLegendElementBase]
+  }
+}
+

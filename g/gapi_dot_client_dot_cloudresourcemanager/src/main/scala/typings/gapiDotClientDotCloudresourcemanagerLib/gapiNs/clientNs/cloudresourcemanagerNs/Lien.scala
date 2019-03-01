@@ -48,3 +48,24 @@ trait Lien extends js.Object {
   var restrictions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Lien {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    name: java.lang.String = null,
+    origin: java.lang.String = null,
+    parent: java.lang.String = null,
+    reason: java.lang.String = null,
+    restrictions: js.Array[java.lang.String] = null
+  ): Lien = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions)
+    __obj.asInstanceOf[Lien]
+  }
+}
+

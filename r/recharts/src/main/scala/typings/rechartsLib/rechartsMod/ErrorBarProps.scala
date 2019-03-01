@@ -19,3 +19,32 @@ trait ErrorBarProps extends js.Object {
   var yAxis: js.UndefOr[js.Object] = js.undefined
 }
 
+object ErrorBarProps {
+  @scala.inline
+  def apply(
+    dataKey: DataKey,
+    data: js.Array[_] = null,
+    dataPointFormatter: DataPointFormatter = null,
+    layout: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
+    stroke: java.lang.String = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    xAxis: js.Object = null,
+    yAxis: js.Object = null
+  ): ErrorBarProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataKey")(dataKey.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataPointFormatter != null) __obj.updateDynamic("dataPointFormatter")(dataPointFormatter)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis)
+    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis)
+    __obj.asInstanceOf[ErrorBarProps]
+  }
+}
+

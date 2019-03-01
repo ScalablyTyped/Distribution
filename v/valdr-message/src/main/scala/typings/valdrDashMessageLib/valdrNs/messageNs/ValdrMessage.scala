@@ -38,3 +38,24 @@ trait ValdrMessage extends js.Object {
   def setTemplate(template: java.lang.String): scala.Unit
 }
 
+object ValdrMessage {
+  @scala.inline
+  def apply(
+    addMessages: js.Function1[org.scalablytyped.runtime.StringDictionary[java.lang.String], scala.Unit],
+    angularMessagesEnabled: scala.Boolean,
+    getMessage: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
+    setTemplate: js.Function1[java.lang.String, scala.Unit],
+    templateUrl: java.lang.String,
+    translateAvailable: scala.Boolean
+  ): ValdrMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addMessages")(addMessages)
+    __obj.updateDynamic("angularMessagesEnabled")(angularMessagesEnabled)
+    __obj.updateDynamic("getMessage")(getMessage)
+    __obj.updateDynamic("setTemplate")(setTemplate)
+    __obj.updateDynamic("templateUrl")(templateUrl)
+    __obj.updateDynamic("translateAvailable")(translateAvailable)
+    __obj.asInstanceOf[ValdrMessage]
+  }
+}
+

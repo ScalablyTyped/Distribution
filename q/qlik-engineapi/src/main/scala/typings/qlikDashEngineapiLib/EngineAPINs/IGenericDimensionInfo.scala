@@ -33,3 +33,22 @@ trait IGenericDimensionInfo extends js.Object {
   var qTags: js.Array[java.lang.String]
 }
 
+object IGenericDimensionInfo {
+  @scala.inline
+  def apply(
+    qAndMode: scala.Boolean,
+    qApprMaxGlyphCount: scala.Double,
+    qCardinal: scala.Double,
+    qIsSemantic: scala.Boolean,
+    qTags: js.Array[java.lang.String]
+  ): IGenericDimensionInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qAndMode")(qAndMode)
+    __obj.updateDynamic("qApprMaxGlyphCount")(qApprMaxGlyphCount)
+    __obj.updateDynamic("qCardinal")(qCardinal)
+    __obj.updateDynamic("qIsSemantic")(qIsSemantic)
+    __obj.updateDynamic("qTags")(qTags)
+    __obj.asInstanceOf[IGenericDimensionInfo]
+  }
+}
+

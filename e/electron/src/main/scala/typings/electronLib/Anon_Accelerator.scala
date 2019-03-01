@@ -94,3 +94,148 @@ trait Anon_Accelerator extends js.Object {
   val webviewTag: electronLib.ElectronNs.WebviewTag
 }
 
+object Anon_Accelerator {
+  @scala.inline
+  def apply(
+    Accelerator: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.Accelerator],
+    BrowserView: Anon_FromId,
+    BrowserWindow: Anon_AddDevToolsExtension,
+    BrowserWindowProxy: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.BrowserWindowProxy],
+    ClientRequest: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.electronLibStrings.method | electronLib.electronLibStrings.url | electronLib.electronLibStrings.session | electronLib.electronLibStrings.partition | electronLib.electronLibStrings.protocol | electronLib.electronLibStrings.host | electronLib.electronLibStrings.hostname | electronLib.electronLibStrings.port | electronLib.electronLibStrings.path | electronLib.electronLibStrings.redirect, 
+      electronLib.ElectronNs.ClientRequest
+    ],
+    Cookies: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.Cookies],
+    Debugger: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.Debugger],
+    DownloadItem: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.DownloadItem],
+    EventEmitter: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.EventEmitter],
+    IncomingMessage: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.IncomingMessage],
+    Menu: Anon_Action,
+    MenuItem: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.MenuItemConstructorOptions, 
+      electronLib.ElectronNs.MenuItem
+    ],
+    NativeImage: Anon_Buffer,
+    Notification: Anon_IsSupported,
+    Session: Anon_DefaultSession,
+    TouchBar: Anon_Options,
+    TouchBarButton: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.TouchBarButtonConstructorOptions, 
+      electronLib.ElectronNs.TouchBarButton
+    ],
+    TouchBarColorPicker: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.TouchBarColorPickerConstructorOptions, 
+      electronLib.ElectronNs.TouchBarColorPicker
+    ],
+    TouchBarGroup: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.TouchBarGroupConstructorOptions, 
+      electronLib.ElectronNs.TouchBarGroup
+    ],
+    TouchBarLabel: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.TouchBarLabelConstructorOptions, 
+      electronLib.ElectronNs.TouchBarLabel
+    ],
+    TouchBarPopover: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.TouchBarPopoverConstructorOptions, 
+      electronLib.ElectronNs.TouchBarPopover
+    ],
+    TouchBarScrubber: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.TouchBarScrubberConstructorOptions, 
+      electronLib.ElectronNs.TouchBarScrubber
+    ],
+    TouchBarSegmentedControl: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.TouchBarSegmentedControlConstructorOptions, 
+      electronLib.ElectronNs.TouchBarSegmentedControl
+    ],
+    TouchBarSlider: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.TouchBarSliderConstructorOptions, 
+      electronLib.ElectronNs.TouchBarSlider
+    ],
+    TouchBarSpacer: org.scalablytyped.runtime.Instantiable1[
+      /* options */ electronLib.ElectronNs.TouchBarSpacerConstructorOptions, 
+      electronLib.ElectronNs.TouchBarSpacer
+    ],
+    Tray: org.scalablytyped.runtime.Instantiable1[
+      /* image */ electronLib.ElectronNs.NativeImage | java.lang.String, 
+      electronLib.ElectronNs.Tray
+    ],
+    WebContents: Anon_FromIdGetAllWebContents,
+    WebRequest: org.scalablytyped.runtime.Instantiable0[electronLib.ElectronNs.WebRequest],
+    app: electronLib.ElectronNs.App,
+    autoUpdater: electronLib.ElectronNs.AutoUpdater,
+    clipboard: electronLib.ElectronNs.Clipboard,
+    contentTracing: electronLib.ElectronNs.ContentTracing,
+    crashReporter: electronLib.ElectronNs.CrashReporter,
+    desktopCapturer: electronLib.ElectronNs.DesktopCapturer,
+    dialog: electronLib.ElectronNs.Dialog,
+    globalShortcut: electronLib.ElectronNs.GlobalShortcut,
+    inAppPurchase: electronLib.ElectronNs.InAppPurchase,
+    ipcMain: electronLib.ElectronNs.IpcMain,
+    ipcRenderer: electronLib.ElectronNs.IpcRenderer,
+    net: electronLib.ElectronNs.Net,
+    netLog: electronLib.ElectronNs.NetLog,
+    powerMonitor: electronLib.ElectronNs.PowerMonitor,
+    powerSaveBlocker: electronLib.ElectronNs.PowerSaveBlocker,
+    protocol: electronLib.ElectronNs.Protocol,
+    remote: electronLib.ElectronNs.Remote,
+    screen: electronLib.ElectronNs.Screen,
+    shell: electronLib.ElectronNs.Shell,
+    systemPreferences: electronLib.ElectronNs.SystemPreferences,
+    webFrame: electronLib.ElectronNs.WebFrame,
+    webviewTag: electronLib.ElectronNs.WebviewTag
+  ): Anon_Accelerator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Accelerator")(Accelerator)
+    __obj.updateDynamic("BrowserView")(BrowserView)
+    __obj.updateDynamic("BrowserWindow")(BrowserWindow)
+    __obj.updateDynamic("BrowserWindowProxy")(BrowserWindowProxy)
+    __obj.updateDynamic("ClientRequest")(ClientRequest)
+    __obj.updateDynamic("Cookies")(Cookies)
+    __obj.updateDynamic("Debugger")(Debugger)
+    __obj.updateDynamic("DownloadItem")(DownloadItem)
+    __obj.updateDynamic("EventEmitter")(EventEmitter)
+    __obj.updateDynamic("IncomingMessage")(IncomingMessage)
+    __obj.updateDynamic("Menu")(Menu)
+    __obj.updateDynamic("MenuItem")(MenuItem)
+    __obj.updateDynamic("NativeImage")(NativeImage)
+    __obj.updateDynamic("Notification")(Notification)
+    __obj.updateDynamic("Session")(Session)
+    __obj.updateDynamic("TouchBar")(TouchBar)
+    __obj.updateDynamic("TouchBarButton")(TouchBarButton)
+    __obj.updateDynamic("TouchBarColorPicker")(TouchBarColorPicker)
+    __obj.updateDynamic("TouchBarGroup")(TouchBarGroup)
+    __obj.updateDynamic("TouchBarLabel")(TouchBarLabel)
+    __obj.updateDynamic("TouchBarPopover")(TouchBarPopover)
+    __obj.updateDynamic("TouchBarScrubber")(TouchBarScrubber)
+    __obj.updateDynamic("TouchBarSegmentedControl")(TouchBarSegmentedControl)
+    __obj.updateDynamic("TouchBarSlider")(TouchBarSlider)
+    __obj.updateDynamic("TouchBarSpacer")(TouchBarSpacer)
+    __obj.updateDynamic("Tray")(Tray)
+    __obj.updateDynamic("WebContents")(WebContents)
+    __obj.updateDynamic("WebRequest")(WebRequest)
+    __obj.updateDynamic("app")(app)
+    __obj.updateDynamic("autoUpdater")(autoUpdater)
+    __obj.updateDynamic("clipboard")(clipboard)
+    __obj.updateDynamic("contentTracing")(contentTracing)
+    __obj.updateDynamic("crashReporter")(crashReporter)
+    __obj.updateDynamic("desktopCapturer")(desktopCapturer)
+    __obj.updateDynamic("dialog")(dialog)
+    __obj.updateDynamic("globalShortcut")(globalShortcut)
+    __obj.updateDynamic("inAppPurchase")(inAppPurchase)
+    __obj.updateDynamic("ipcMain")(ipcMain)
+    __obj.updateDynamic("ipcRenderer")(ipcRenderer)
+    __obj.updateDynamic("net")(net)
+    __obj.updateDynamic("netLog")(netLog)
+    __obj.updateDynamic("powerMonitor")(powerMonitor)
+    __obj.updateDynamic("powerSaveBlocker")(powerSaveBlocker)
+    __obj.updateDynamic("protocol")(protocol)
+    __obj.updateDynamic("remote")(remote)
+    __obj.updateDynamic("screen")(screen)
+    __obj.updateDynamic("shell")(shell)
+    __obj.updateDynamic("systemPreferences")(systemPreferences)
+    __obj.updateDynamic("webFrame")(webFrame)
+    __obj.updateDynamic("webviewTag")(webviewTag)
+    __obj.asInstanceOf[Anon_Accelerator]
+  }
+}
+

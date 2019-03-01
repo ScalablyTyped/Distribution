@@ -12,3 +12,20 @@ trait AuthConfig extends js.Object {
   var username: java.lang.String
 }
 
+object AuthConfig {
+  @scala.inline
+  def apply(
+    password: java.lang.String,
+    serveraddress: java.lang.String,
+    username: java.lang.String,
+    email: java.lang.String = null
+  ): AuthConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("serveraddress")(serveraddress)
+    __obj.updateDynamic("username")(username)
+    if (email != null) __obj.updateDynamic("email")(email)
+    __obj.asInstanceOf[AuthConfig]
+  }
+}
+

@@ -10,3 +10,18 @@ trait PrimaryService extends js.Object {
   var uuid: java.lang.String
 }
 
+object PrimaryService {
+  @scala.inline
+  def apply(
+    characteristics: js.Array[Characteristic],
+    toString: js.Function0[java.lang.String],
+    uuid: java.lang.String
+  ): PrimaryService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("characteristics")(characteristics)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("uuid")(uuid)
+    __obj.asInstanceOf[PrimaryService]
+  }
+}
+

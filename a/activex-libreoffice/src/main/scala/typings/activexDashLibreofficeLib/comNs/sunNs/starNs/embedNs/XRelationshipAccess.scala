@@ -111,3 +111,65 @@ trait XRelationshipAccess
   def removeRelationshipByID(sID: java.lang.String): scala.Unit
 }
 
+object XRelationshipAccess {
+  @scala.inline
+  def apply(
+    AllRelationships: activexDashInteropLib.SafeArray[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+    ],
+    acquire: js.Function0[scala.Unit],
+    clearRelationships: js.Function0[scala.Unit],
+    getAllRelationships: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+      ]
+    ],
+    getRelationshipByID: js.Function1[
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+    ],
+    getRelationshipsByType: js.Function1[
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+      ]
+    ],
+    getTargetByID: js.Function1[java.lang.String, java.lang.String],
+    getTypeByID: js.Function1[java.lang.String, java.lang.String],
+    hasByID: js.Function1[java.lang.String, scala.Boolean],
+    insertRelationshipByID: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair], 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    insertRelationships: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[
+        activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+      ], 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeRelationshipByID: js.Function1[java.lang.String, scala.Unit]
+  ): XRelationshipAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AllRelationships")(AllRelationships)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("clearRelationships")(clearRelationships)
+    __obj.updateDynamic("getAllRelationships")(getAllRelationships)
+    __obj.updateDynamic("getRelationshipByID")(getRelationshipByID)
+    __obj.updateDynamic("getRelationshipsByType")(getRelationshipsByType)
+    __obj.updateDynamic("getTargetByID")(getTargetByID)
+    __obj.updateDynamic("getTypeByID")(getTypeByID)
+    __obj.updateDynamic("hasByID")(hasByID)
+    __obj.updateDynamic("insertRelationshipByID")(insertRelationshipByID)
+    __obj.updateDynamic("insertRelationships")(insertRelationships)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeRelationshipByID")(removeRelationshipByID)
+    __obj.asInstanceOf[XRelationshipAccess]
+  }
+}
+

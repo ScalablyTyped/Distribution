@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RouteNode extends js.Object {
+trait RouteNode extends Route {
   var absolute: scala.Boolean = js.native
   var children: js.Array[RouteNode] = js.native
   var name: java.lang.String = js.native

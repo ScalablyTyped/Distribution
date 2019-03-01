@@ -19,3 +19,20 @@ trait Anon_MaxAgeSeconds extends js.Object {
   var responseHeader: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_MaxAgeSeconds {
+  @scala.inline
+  def apply(
+    maxAgeSeconds: scala.Int | scala.Double = null,
+    method: js.Array[java.lang.String] = null,
+    origin: js.Array[java.lang.String] = null,
+    responseHeader: js.Array[java.lang.String] = null
+  ): Anon_MaxAgeSeconds = {
+    val __obj = js.Dynamic.literal()
+    if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (responseHeader != null) __obj.updateDynamic("responseHeader")(responseHeader)
+    __obj.asInstanceOf[Anon_MaxAgeSeconds]
+  }
+}
+

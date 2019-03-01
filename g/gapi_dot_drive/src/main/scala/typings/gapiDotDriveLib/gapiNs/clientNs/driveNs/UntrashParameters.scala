@@ -10,3 +10,13 @@ trait UntrashParameters extends js.Object {
   var supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UntrashParameters {
+  @scala.inline
+  def apply(fileId: java.lang.String, supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined): UntrashParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileId")(fileId)
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)
+    __obj.asInstanceOf[UntrashParameters]
+  }
+}
+

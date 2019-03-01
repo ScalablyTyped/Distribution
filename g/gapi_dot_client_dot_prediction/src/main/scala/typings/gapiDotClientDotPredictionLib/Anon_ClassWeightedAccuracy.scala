@@ -24,3 +24,24 @@ trait Anon_ClassWeightedAccuracy extends js.Object {
   var numberLabels: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ClassWeightedAccuracy {
+  @scala.inline
+  def apply(
+    classWeightedAccuracy: java.lang.String = null,
+    classificationAccuracy: java.lang.String = null,
+    meanSquaredError: java.lang.String = null,
+    modelType: java.lang.String = null,
+    numberInstances: java.lang.String = null,
+    numberLabels: java.lang.String = null
+  ): Anon_ClassWeightedAccuracy = {
+    val __obj = js.Dynamic.literal()
+    if (classWeightedAccuracy != null) __obj.updateDynamic("classWeightedAccuracy")(classWeightedAccuracy)
+    if (classificationAccuracy != null) __obj.updateDynamic("classificationAccuracy")(classificationAccuracy)
+    if (meanSquaredError != null) __obj.updateDynamic("meanSquaredError")(meanSquaredError)
+    if (modelType != null) __obj.updateDynamic("modelType")(modelType)
+    if (numberInstances != null) __obj.updateDynamic("numberInstances")(numberInstances)
+    if (numberLabels != null) __obj.updateDynamic("numberLabels")(numberLabels)
+    __obj.asInstanceOf[Anon_ClassWeightedAccuracy]
+  }
+}
+

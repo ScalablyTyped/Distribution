@@ -16,3 +16,12 @@ trait GridAreaProps extends js.Object {
   var gridArea: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.GridAreaProperty]] = js.undefined
 }
 
+object GridAreaProps {
+  @scala.inline
+  def apply(gridArea: ResponsiveValue[csstypeLib.csstypeMod.GridAreaProperty] = null): GridAreaProps = {
+    val __obj = js.Dynamic.literal()
+    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridAreaProps]
+  }
+}
+

@@ -27,3 +27,20 @@ trait baseRequestConfig extends js.Object {
   var sync: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object baseRequestConfig {
+  @scala.inline
+  def apply(
+    meta: js.Any = null,
+    requestUrl: java.lang.String = null,
+    suppressErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    sync: js.UndefOr[scala.Boolean] = js.undefined
+  ): baseRequestConfig = {
+    val __obj = js.Dynamic.literal()
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
+    if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors)
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    __obj.asInstanceOf[baseRequestConfig]
+  }
+}
+

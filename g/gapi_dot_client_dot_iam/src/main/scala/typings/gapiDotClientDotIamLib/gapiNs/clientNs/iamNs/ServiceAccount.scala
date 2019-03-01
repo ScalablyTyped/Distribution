@@ -39,3 +39,26 @@ trait ServiceAccount extends js.Object {
   var uniqueId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServiceAccount {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    email: java.lang.String = null,
+    etag: java.lang.String = null,
+    name: java.lang.String = null,
+    oauth2ClientId: java.lang.String = null,
+    projectId: java.lang.String = null,
+    uniqueId: java.lang.String = null
+  ): ServiceAccount = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (oauth2ClientId != null) __obj.updateDynamic("oauth2ClientId")(oauth2ClientId)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId)
+    __obj.asInstanceOf[ServiceAccount]
+  }
+}
+

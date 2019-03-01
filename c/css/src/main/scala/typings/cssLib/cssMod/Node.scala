@@ -14,3 +14,14 @@ trait Node extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Node {
+  @scala.inline
+  def apply(parent: Node = null, position: cssLib.Anon_Content = null, `type`: java.lang.String = null): Node = {
+    val __obj = js.Dynamic.literal()
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Node]
+  }
+}
+

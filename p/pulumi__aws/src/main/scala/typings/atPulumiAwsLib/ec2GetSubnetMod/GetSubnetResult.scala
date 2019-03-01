@@ -28,3 +28,40 @@ trait GetSubnetResult extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetSubnetResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    assignIpv6AddressOnCreation: scala.Boolean,
+    availabilityZone: java.lang.String,
+    availabilityZoneId: java.lang.String,
+    cidrBlock: java.lang.String,
+    defaultForAz: scala.Boolean,
+    id: java.lang.String,
+    ipv6CidrBlock: java.lang.String,
+    ipv6CidrBlockAssociationId: java.lang.String,
+    mapPublicIpOnLaunch: scala.Boolean,
+    ownerId: java.lang.String,
+    state: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    vpcId: java.lang.String
+  ): GetSubnetResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("assignIpv6AddressOnCreation")(assignIpv6AddressOnCreation)
+    __obj.updateDynamic("availabilityZone")(availabilityZone)
+    __obj.updateDynamic("availabilityZoneId")(availabilityZoneId)
+    __obj.updateDynamic("cidrBlock")(cidrBlock)
+    __obj.updateDynamic("defaultForAz")(defaultForAz)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock)
+    __obj.updateDynamic("ipv6CidrBlockAssociationId")(ipv6CidrBlockAssociationId)
+    __obj.updateDynamic("mapPublicIpOnLaunch")(mapPublicIpOnLaunch)
+    __obj.updateDynamic("ownerId")(ownerId)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("vpcId")(vpcId)
+    __obj.asInstanceOf[GetSubnetResult]
+  }
+}
+

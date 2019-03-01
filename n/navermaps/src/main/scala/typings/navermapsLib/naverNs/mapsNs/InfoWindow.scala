@@ -15,12 +15,14 @@ class InfoWindow protected () extends OverlayView {
   def getOptions(key: java.lang.String): InfoWindowOptions = js.native
   def getPosition(): Coord = js.native
   def getZIndex(): scala.Double = js.native
-  def open(map: Map, anchor: Coord | CoordLiteral): scala.Unit = js.native
+  def open(map: Map, anchor: Coord): scala.Unit = js.native
+  def open(map: Map, anchor: CoordLiteral): scala.Unit = js.native
   def open(map: Map, anchor: Marker): scala.Unit = js.native
   def setContent(content: java.lang.String): scala.Unit = js.native
   def setContent(content: stdLib.HTMLElement): scala.Unit = js.native
   def setOptions(options: InfoWindowOptions): scala.Unit = js.native
-  def setPosition(position: Coord | CoordLiteral): scala.Unit = js.native
+  def setPosition(position: Coord): scala.Unit = js.native
+  def setPosition(position: CoordLiteral): scala.Unit = js.native
   def setZIndex(zIndex: scala.Double): scala.Unit = js.native
 }
 

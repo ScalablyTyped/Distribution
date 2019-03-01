@@ -16,3 +16,16 @@ trait GatewayAssociationState extends js.Object {
   val vpnGatewayId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object GatewayAssociationState {
+  @scala.inline
+  def apply(
+    dxGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): GatewayAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (dxGatewayId != null) __obj.updateDynamic("dxGatewayId")(dxGatewayId.asInstanceOf[js.Any])
+    if (vpnGatewayId != null) __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GatewayAssociationState]
+  }
+}
+

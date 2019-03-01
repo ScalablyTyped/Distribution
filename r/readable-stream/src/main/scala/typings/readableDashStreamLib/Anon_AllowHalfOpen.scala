@@ -50,3 +50,52 @@ trait Anon_AllowHalfOpen extends js.Object {
   ] = js.undefined
 }
 
+object Anon_AllowHalfOpen {
+  @scala.inline
+  def apply(
+    allowHalfOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    destroy: js.ThisFunction2[
+      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* error */ nodeLib.Error | scala.Null, 
+      /* callback */ js.Function1[/* error */ nodeLib.Error | scala.Null, scala.Unit], 
+      scala.Unit
+    ] = null,
+    `final`: js.ThisFunction1[
+      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ] = null,
+    read: js.ThisFunction1[
+      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* size */ scala.Double, 
+      scala.Unit
+    ] = null,
+    readable: js.UndefOr[scala.Boolean] = js.undefined,
+    writable: js.UndefOr[scala.Boolean] = js.undefined,
+    write: js.ThisFunction3[
+      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* chunk */ js.Any, 
+      /* encoding */ java.lang.String, 
+      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ] = null,
+    writev: js.ThisFunction2[
+      /* this */ readableDashStreamLib.readableDashStreamMod.underscoreReadableNs.Duplex, 
+      /* chunks */ js.Array[Anon_Chunk], 
+      /* callback */ js.Function1[/* error */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
+      scala.Unit
+    ] = null
+  ): Anon_AllowHalfOpen = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowHalfOpen)) __obj.updateDynamic("allowHalfOpen")(allowHalfOpen)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (`final` != null) __obj.updateDynamic("final")(`final`)
+    if (read != null) __obj.updateDynamic("read")(read)
+    if (!js.isUndefined(readable)) __obj.updateDynamic("readable")(readable)
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    if (write != null) __obj.updateDynamic("write")(write)
+    if (writev != null) __obj.updateDynamic("writev")(writev)
+    __obj.asInstanceOf[Anon_AllowHalfOpen]
+  }
+}
+

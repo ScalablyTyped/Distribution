@@ -18,3 +18,18 @@ trait RemoteContentProviderChangeEvent
   var Identifier: java.lang.String
 }
 
+object RemoteContentProviderChangeEvent {
+  @scala.inline
+  def apply(
+    Action: RemoteContentProviderChangeAction,
+    Identifier: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): RemoteContentProviderChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Action")(Action)
+    __obj.updateDynamic("Identifier")(Identifier)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[RemoteContentProviderChangeEvent]
+  }
+}
+

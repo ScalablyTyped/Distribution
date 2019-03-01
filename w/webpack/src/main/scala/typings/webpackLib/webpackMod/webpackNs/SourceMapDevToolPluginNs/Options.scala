@@ -27,3 +27,36 @@ trait Options extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    append: webpackLib.webpackLibNumbers.`false` | java.lang.String = null,
+    columns: js.UndefOr[scala.Boolean] = js.undefined,
+    exclude: webpackLib.webpackMod.webpackNs.Condition | js.Array[webpackLib.webpackMod.webpackNs.Condition] = null,
+    fallbackModuleFilenameTemplate: java.lang.String = null,
+    filename: webpackLib.webpackLibNumbers.`false` | java.lang.String = null,
+    include: webpackLib.webpackMod.webpackNs.Condition | js.Array[webpackLib.webpackMod.webpackNs.Condition] = null,
+    lineToLine: scala.Boolean | webpackLib.Anon_Exclude = null,
+    module: js.UndefOr[scala.Boolean] = js.undefined,
+    moduleFilenameTemplate: java.lang.String = null,
+    noSources: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceRoot: java.lang.String = null,
+    test: webpackLib.webpackMod.webpackNs.Condition | js.Array[webpackLib.webpackMod.webpackNs.Condition] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (append != null) __obj.updateDynamic("append")(append.asInstanceOf[js.Any])
+    if (!js.isUndefined(columns)) __obj.updateDynamic("columns")(columns)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (fallbackModuleFilenameTemplate != null) __obj.updateDynamic("fallbackModuleFilenameTemplate")(fallbackModuleFilenameTemplate)
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (lineToLine != null) __obj.updateDynamic("lineToLine")(lineToLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(module)) __obj.updateDynamic("module")(module)
+    if (moduleFilenameTemplate != null) __obj.updateDynamic("moduleFilenameTemplate")(moduleFilenameTemplate)
+    if (!js.isUndefined(noSources)) __obj.updateDynamic("noSources")(noSources)
+    if (sourceRoot != null) __obj.updateDynamic("sourceRoot")(sourceRoot)
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

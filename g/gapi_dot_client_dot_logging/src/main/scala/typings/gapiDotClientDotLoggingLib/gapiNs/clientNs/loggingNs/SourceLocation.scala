@@ -18,3 +18,18 @@ trait SourceLocation extends js.Object {
   var line: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SourceLocation {
+  @scala.inline
+  def apply(
+    file: java.lang.String = null,
+    functionName: java.lang.String = null,
+    line: java.lang.String = null
+  ): SourceLocation = {
+    val __obj = js.Dynamic.literal()
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
+    if (line != null) __obj.updateDynamic("line")(line)
+    __obj.asInstanceOf[SourceLocation]
+  }
+}
+

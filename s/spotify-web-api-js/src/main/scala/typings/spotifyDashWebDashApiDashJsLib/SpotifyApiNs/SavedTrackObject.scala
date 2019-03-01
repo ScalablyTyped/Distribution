@@ -14,3 +14,13 @@ trait SavedTrackObject extends js.Object {
   var track: TrackObjectFull
 }
 
+object SavedTrackObject {
+  @scala.inline
+  def apply(added_at: java.lang.String, track: TrackObjectFull): SavedTrackObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("added_at")(added_at)
+    __obj.updateDynamic("track")(track)
+    __obj.asInstanceOf[SavedTrackObject]
+  }
+}
+

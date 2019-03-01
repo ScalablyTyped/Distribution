@@ -37,3 +37,20 @@ trait ConditionalRangeFormatData extends js.Object {
   var numberFormat: js.UndefOr[js.Any] = js.undefined
 }
 
+object ConditionalRangeFormatData {
+  @scala.inline
+  def apply(
+    borders: js.Array[ConditionalRangeBorderData] = null,
+    fill: ConditionalRangeFillData = null,
+    font: ConditionalRangeFontData = null,
+    numberFormat: js.Any = null
+  ): ConditionalRangeFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (borders != null) __obj.updateDynamic("borders")(borders)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    __obj.asInstanceOf[ConditionalRangeFormatData]
+  }
+}
+

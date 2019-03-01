@@ -11,3 +11,12 @@ trait RightClickEventArgs extends js.Object {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object RightClickEventArgs {
+  @scala.inline
+  def apply(originalEvent: js.Any = null): RightClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[RightClickEventArgs]
+  }
+}
+

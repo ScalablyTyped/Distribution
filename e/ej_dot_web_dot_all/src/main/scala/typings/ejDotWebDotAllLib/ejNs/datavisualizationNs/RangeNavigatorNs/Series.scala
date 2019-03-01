@@ -32,3 +32,24 @@ trait Series extends js.Object {
   var yName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Series {
+  @scala.inline
+  def apply(
+    dataSource: js.Any = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: java.lang.String = null,
+    `type`: Type | java.lang.String = null,
+    xName: java.lang.String = null,
+    yName: java.lang.String = null
+  ): Series = {
+    val __obj = js.Dynamic.literal()
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (xName != null) __obj.updateDynamic("xName")(xName)
+    if (yName != null) __obj.updateDynamic("yName")(yName)
+    __obj.asInstanceOf[Series]
+  }
+}
+

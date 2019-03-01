@@ -60,3 +60,40 @@ trait SeriesPointsMarkerDataLabel extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SeriesPointsMarkerDataLabel {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    border: SeriesPointsMarkerDataLabelBorder = null,
+    connectorLine: SeriesPointsMarkerDataLabelConnectorLine = null,
+    fill: java.lang.String = null,
+    font: SeriesPointsMarkerDataLabelFont = null,
+    horizontalTextAlignment: HorizontalTextAlignment | java.lang.String = null,
+    margin: SeriesPointsMarkerDataLabelMargin = null,
+    offset: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    shape: Shape | java.lang.String = null,
+    template: java.lang.String = null,
+    textPosition: TextPosition | java.lang.String = null,
+    verticalTextAlignment: VerticalTextAlignment | java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): SeriesPointsMarkerDataLabel = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (connectorLine != null) __obj.updateDynamic("connectorLine")(connectorLine)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (horizontalTextAlignment != null) __obj.updateDynamic("horizontalTextAlignment")(horizontalTextAlignment.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (textPosition != null) __obj.updateDynamic("textPosition")(textPosition.asInstanceOf[js.Any])
+    if (verticalTextAlignment != null) __obj.updateDynamic("verticalTextAlignment")(verticalTextAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[SeriesPointsMarkerDataLabel]
+  }
+}
+

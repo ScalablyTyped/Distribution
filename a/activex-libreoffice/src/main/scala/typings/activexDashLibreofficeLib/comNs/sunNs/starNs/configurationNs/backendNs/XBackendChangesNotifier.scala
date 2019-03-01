@@ -25,3 +25,22 @@ trait XBackendChangesNotifier
   def removeChangesListener(aListener: XBackendChangesListener, component: java.lang.String): scala.Unit
 }
 
+object XBackendChangesNotifier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addChangesListener: js.Function2[XBackendChangesListener, java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChangesListener: js.Function2[XBackendChangesListener, java.lang.String, scala.Unit]
+  ): XBackendChangesNotifier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addChangesListener")(addChangesListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeChangesListener")(removeChangesListener)
+    __obj.asInstanceOf[XBackendChangesNotifier]
+  }
+}
+

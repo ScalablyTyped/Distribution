@@ -16,3 +16,13 @@ trait LoggerOptions extends js.Object {
   var loggerLevel: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LoggerOptions {
+  @scala.inline
+  def apply(logger: log = null, loggerLevel: java.lang.String = null): LoggerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (loggerLevel != null) __obj.updateDynamic("loggerLevel")(loggerLevel)
+    __obj.asInstanceOf[LoggerOptions]
+  }
+}
+

@@ -50,3 +50,32 @@ trait Options extends js.Object {
   var sync: js.UndefOr[scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    async: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null,
+    custom: scriptDashExtDashHtmlDashWebpackDashPluginLib.scriptDashExtDashHtmlDashWebpackDashPluginMod.Custom | (js.Array[
+      scriptDashExtDashHtmlDashWebpackDashPluginLib.scriptDashExtDashHtmlDashWebpackDashPluginMod.Custom
+    ]) = null,
+    defaultAttribute: scriptDashExtDashHtmlDashWebpackDashPluginLib.scriptDashExtDashHtmlDashWebpackDashPluginLibStrings.sync | scriptDashExtDashHtmlDashWebpackDashPluginLib.scriptDashExtDashHtmlDashWebpackDashPluginLibStrings.async | scriptDashExtDashHtmlDashWebpackDashPluginLib.scriptDashExtDashHtmlDashWebpackDashPluginLibStrings.defer = null,
+    defer: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null,
+    `inline`: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null,
+    module: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null,
+    prefetch: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPatternPre = null,
+    preload: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPatternPre = null,
+    sync: scriptDashExtDashHtmlDashWebpackDashPluginLib.ScriptMatchingPattern = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (async != null) __obj.updateDynamic("async")(async.asInstanceOf[js.Any])
+    if (custom != null) __obj.updateDynamic("custom")(custom.asInstanceOf[js.Any])
+    if (defaultAttribute != null) __obj.updateDynamic("defaultAttribute")(defaultAttribute.asInstanceOf[js.Any])
+    if (defer != null) __obj.updateDynamic("defer")(defer.asInstanceOf[js.Any])
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (module != null) __obj.updateDynamic("module")(module.asInstanceOf[js.Any])
+    if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
+    if (preload != null) __obj.updateDynamic("preload")(preload.asInstanceOf[js.Any])
+    if (sync != null) __obj.updateDynamic("sync")(sync.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

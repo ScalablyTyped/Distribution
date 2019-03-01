@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object geetestLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0` extends Success
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1` extends Success
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

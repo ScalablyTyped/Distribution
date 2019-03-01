@@ -12,3 +12,20 @@ trait GetFileMatchersOptions extends js.Object {
   def macroExpander(pattern: java.lang.String): java.lang.String
 }
 
+object GetFileMatchersOptions {
+  @scala.inline
+  def apply(
+    customBuildOptions: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PlatformSpecificBuildOptions */ js.Any,
+    defaultSrc: java.lang.String,
+    globalOutDir: java.lang.String,
+    macroExpander: js.Function1[java.lang.String, java.lang.String]
+  ): GetFileMatchersOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customBuildOptions")(customBuildOptions)
+    __obj.updateDynamic("defaultSrc")(defaultSrc)
+    __obj.updateDynamic("globalOutDir")(globalOutDir)
+    __obj.updateDynamic("macroExpander")(macroExpander)
+    __obj.asInstanceOf[GetFileMatchersOptions]
+  }
+}
+

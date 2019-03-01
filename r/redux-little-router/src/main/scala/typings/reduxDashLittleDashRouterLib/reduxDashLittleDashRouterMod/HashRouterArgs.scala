@@ -12,3 +12,20 @@ trait HashRouterArgs extends js.Object {
   var routes: Routes
 }
 
+object HashRouterArgs {
+  @scala.inline
+  def apply(
+    routes: Routes,
+    basename: java.lang.String = null,
+    hashType: java.lang.String = null,
+    history: History = null
+  ): HashRouterArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("routes")(routes)
+    if (basename != null) __obj.updateDynamic("basename")(basename)
+    if (hashType != null) __obj.updateDynamic("hashType")(hashType)
+    if (history != null) __obj.updateDynamic("history")(history)
+    __obj.asInstanceOf[HashRouterArgs]
+  }
+}
+

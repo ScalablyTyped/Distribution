@@ -21,3 +21,13 @@ trait AnimationOptions extends js.Object {
   var easingFunction: EasingFunction
 }
 
+object AnimationOptions {
+  @scala.inline
+  def apply(duration: scala.Double, easingFunction: EasingFunction): AnimationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("easingFunction")(easingFunction)
+    __obj.asInstanceOf[AnimationOptions]
+  }
+}
+

@@ -13,7 +13,6 @@ package object lolexLib {
     * Clock object created by lolex.
     */
   type Clock = BrowserClock | NodeClock
-  type FakeMethod = lolexLib.lolexLibStrings.setTimeout | lolexLib.lolexLibStrings.clearTimeout | lolexLib.lolexLibStrings.setImmediate | lolexLib.lolexLibStrings.clearImmediate | lolexLib.lolexLibStrings.setInterval | lolexLib.lolexLibStrings.clearInterval | lolexLib.lolexLibStrings.Date | lolexLib.lolexLibStrings.nextTick | lolexLib.lolexLibStrings.hrtime
   /**
     * Clock object created by calling `install();`.
     *

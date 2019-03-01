@@ -20,3 +20,22 @@ trait XAutoStylesSupplier
   def getAutoStyles(): XAutoStyles
 }
 
+object XAutoStylesSupplier {
+  @scala.inline
+  def apply(
+    AutoStyles: XAutoStyles,
+    acquire: js.Function0[scala.Unit],
+    getAutoStyles: js.Function0[XAutoStyles],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAutoStylesSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoStyles")(AutoStyles)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAutoStyles")(getAutoStyles)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAutoStylesSupplier]
+  }
+}
+

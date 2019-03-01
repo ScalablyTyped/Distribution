@@ -71,3 +71,38 @@ trait ASPxClientNavBarGroup extends js.Object {
   def SetVisible(value: scala.Boolean): scala.Unit
 }
 
+object ASPxClientNavBarGroup {
+  @scala.inline
+  def apply(
+    GetEnabled: js.Function0[scala.Boolean],
+    GetExpanded: js.Function0[scala.Boolean],
+    GetItem: js.Function1[scala.Double, ASPxClientNavBarItem],
+    GetItemByName: js.Function1[java.lang.String, ASPxClientNavBarItem],
+    GetItemCount: js.Function0[scala.Double],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetExpanded: js.Function1[scala.Boolean, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    index: scala.Double,
+    name: java.lang.String,
+    navBar: ASPxClientNavBar
+  ): ASPxClientNavBarGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetEnabled")(GetEnabled)
+    __obj.updateDynamic("GetExpanded")(GetExpanded)
+    __obj.updateDynamic("GetItem")(GetItem)
+    __obj.updateDynamic("GetItemByName")(GetItemByName)
+    __obj.updateDynamic("GetItemCount")(GetItemCount)
+    __obj.updateDynamic("GetText")(GetText)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("SetExpanded")(SetExpanded)
+    __obj.updateDynamic("SetText")(SetText)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("navBar")(navBar)
+    __obj.asInstanceOf[ASPxClientNavBarGroup]
+  }
+}
+

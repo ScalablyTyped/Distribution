@@ -32,3 +32,22 @@ trait InstanceProfileArgs extends js.Object {
   ] = js.undefined
 }
 
+object InstanceProfileArgs {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    path: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    role: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamRoleMod.Role] = null,
+    roles: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamRoleMod.Role]]] = null
+  ): InstanceProfileArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (roles != null) __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstanceProfileArgs]
+  }
+}
+

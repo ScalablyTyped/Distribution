@@ -14,3 +14,13 @@ trait ContextMenuSettingsMenuItems extends js.Object {
   var cells: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object ContextMenuSettingsMenuItems {
+  @scala.inline
+  def apply(appointment: js.Array[_] = null, cells: js.Array[_] = null): ContextMenuSettingsMenuItems = {
+    val __obj = js.Dynamic.literal()
+    if (appointment != null) __obj.updateDynamic("appointment")(appointment)
+    if (cells != null) __obj.updateDynamic("cells")(cells)
+    __obj.asInstanceOf[ContextMenuSettingsMenuItems]
+  }
+}
+

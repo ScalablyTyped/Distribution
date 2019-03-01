@@ -37,3 +37,20 @@ trait PivotItemData extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PivotItemData {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    isExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): PivotItemData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[PivotItemData]
+  }
+}
+

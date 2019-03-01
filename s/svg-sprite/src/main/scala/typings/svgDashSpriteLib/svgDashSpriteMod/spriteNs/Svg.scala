@@ -54,3 +54,28 @@ trait Svg extends js.Object {
   var xmlDeclaration: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object Svg {
+  @scala.inline
+  def apply(
+    dimensionAttributes: js.UndefOr[scala.Boolean] = js.undefined,
+    doctypeDeclaration: scala.Boolean | java.lang.String = null,
+    namespaceClassnames: js.UndefOr[scala.Boolean] = js.undefined,
+    namespaceIDs: js.UndefOr[scala.Boolean] = js.undefined,
+    precision: scala.Int | scala.Double = null,
+    rootAttributes: js.Any = null,
+    transform: SvgTransformer | js.Array[SvgTransformer] = null,
+    xmlDeclaration: scala.Boolean | java.lang.String = null
+  ): Svg = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dimensionAttributes)) __obj.updateDynamic("dimensionAttributes")(dimensionAttributes)
+    if (doctypeDeclaration != null) __obj.updateDynamic("doctypeDeclaration")(doctypeDeclaration.asInstanceOf[js.Any])
+    if (!js.isUndefined(namespaceClassnames)) __obj.updateDynamic("namespaceClassnames")(namespaceClassnames)
+    if (!js.isUndefined(namespaceIDs)) __obj.updateDynamic("namespaceIDs")(namespaceIDs)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (rootAttributes != null) __obj.updateDynamic("rootAttributes")(rootAttributes)
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (xmlDeclaration != null) __obj.updateDynamic("xmlDeclaration")(xmlDeclaration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Svg]
+  }
+}
+

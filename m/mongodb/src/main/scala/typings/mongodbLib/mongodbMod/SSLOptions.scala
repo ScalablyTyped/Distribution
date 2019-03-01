@@ -60,3 +60,38 @@ trait SSLOptions extends js.Object {
   var sslValidate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SSLOptions {
+  @scala.inline
+  def apply(
+    checkServerIdentity: scala.Boolean | js.Function = null,
+    ciphers: java.lang.String = null,
+    ecdhCurve: java.lang.String = null,
+    minSize: scala.Int | scala.Double = null,
+    poolSize: scala.Int | scala.Double = null,
+    servername: java.lang.String = null,
+    ssl: js.UndefOr[scala.Boolean] = js.undefined,
+    sslCA: js.Array[nodeLib.Buffer | java.lang.String] = null,
+    sslCRL: js.Array[nodeLib.Buffer | java.lang.String] = null,
+    sslCert: nodeLib.Buffer | java.lang.String = null,
+    sslKey: nodeLib.Buffer | java.lang.String = null,
+    sslPass: nodeLib.Buffer | java.lang.String = null,
+    sslValidate: js.UndefOr[scala.Boolean] = js.undefined
+  ): SSLOptions = {
+    val __obj = js.Dynamic.literal()
+    if (checkServerIdentity != null) __obj.updateDynamic("checkServerIdentity")(checkServerIdentity.asInstanceOf[js.Any])
+    if (ciphers != null) __obj.updateDynamic("ciphers")(ciphers)
+    if (ecdhCurve != null) __obj.updateDynamic("ecdhCurve")(ecdhCurve)
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (poolSize != null) __obj.updateDynamic("poolSize")(poolSize.asInstanceOf[js.Any])
+    if (servername != null) __obj.updateDynamic("servername")(servername)
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    if (sslCA != null) __obj.updateDynamic("sslCA")(sslCA)
+    if (sslCRL != null) __obj.updateDynamic("sslCRL")(sslCRL)
+    if (sslCert != null) __obj.updateDynamic("sslCert")(sslCert.asInstanceOf[js.Any])
+    if (sslKey != null) __obj.updateDynamic("sslKey")(sslKey.asInstanceOf[js.Any])
+    if (sslPass != null) __obj.updateDynamic("sslPass")(sslPass.asInstanceOf[js.Any])
+    if (!js.isUndefined(sslValidate)) __obj.updateDynamic("sslValidate")(sslValidate)
+    __obj.asInstanceOf[SSLOptions]
+  }
+}
+

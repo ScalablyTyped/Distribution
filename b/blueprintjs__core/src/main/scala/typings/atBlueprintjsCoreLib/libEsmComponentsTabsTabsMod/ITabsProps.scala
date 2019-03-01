@@ -61,3 +61,35 @@ trait ITabsProps
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ITabsProps {
+  @scala.inline
+  def apply(
+    id: atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    defaultSelectedTabId: atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId = null,
+    large: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: js.Function3[
+      /* newTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, 
+      /* prevTabId */ atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId, 
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    renderActiveTabPanelOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedTabId: atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.TabId = null,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): ITabsProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (defaultSelectedTabId != null) __obj.updateDynamic("defaultSelectedTabId")(defaultSelectedTabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (!js.isUndefined(renderActiveTabPanelOnly)) __obj.updateDynamic("renderActiveTabPanelOnly")(renderActiveTabPanelOnly)
+    if (selectedTabId != null) __obj.updateDynamic("selectedTabId")(selectedTabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[ITabsProps]
+  }
+}
+

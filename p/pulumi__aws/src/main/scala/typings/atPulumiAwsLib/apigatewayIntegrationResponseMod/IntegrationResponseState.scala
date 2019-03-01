@@ -56,3 +56,34 @@ trait IntegrationResponseState extends js.Object {
   val statusCode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object IntegrationResponseState {
+  @scala.inline
+  def apply(
+    contentHandling: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    httpMethod: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    resourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    responseParameters: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null,
+    responseParametersInJson: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    responseTemplates: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null,
+    restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null,
+    selectionPattern: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    statusCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): IntegrationResponseState = {
+    val __obj = js.Dynamic.literal()
+    if (contentHandling != null) __obj.updateDynamic("contentHandling")(contentHandling.asInstanceOf[js.Any])
+    if (httpMethod != null) __obj.updateDynamic("httpMethod")(httpMethod.asInstanceOf[js.Any])
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId.asInstanceOf[js.Any])
+    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
+    if (responseParametersInJson != null) __obj.updateDynamic("responseParametersInJson")(responseParametersInJson.asInstanceOf[js.Any])
+    if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
+    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    if (selectionPattern != null) __obj.updateDynamic("selectionPattern")(selectionPattern.asInstanceOf[js.Any])
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntegrationResponseState]
+  }
+}
+

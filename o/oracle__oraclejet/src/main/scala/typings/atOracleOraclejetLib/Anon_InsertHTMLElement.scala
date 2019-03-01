@@ -9,3 +9,12 @@ trait Anon_InsertHTMLElement extends js.Object {
   var insert: stdLib.HTMLElement | java.lang.String
 }
 
+object Anon_InsertHTMLElement {
+  @scala.inline
+  def apply(insert: stdLib.HTMLElement | java.lang.String): Anon_InsertHTMLElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_InsertHTMLElement]
+  }
+}
+

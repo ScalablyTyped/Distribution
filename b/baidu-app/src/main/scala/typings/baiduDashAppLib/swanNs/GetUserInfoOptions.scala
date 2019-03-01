@@ -16,3 +16,22 @@ trait GetUserInfoOptions
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GetUserInfoOptions {
+  @scala.inline
+  def apply(
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    lang: java.lang.String = null,
+    success: js.Function1[/* res */ UserInfoResponse, scala.Unit] = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): GetUserInfoOptions = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[GetUserInfoOptions]
+  }
+}
+

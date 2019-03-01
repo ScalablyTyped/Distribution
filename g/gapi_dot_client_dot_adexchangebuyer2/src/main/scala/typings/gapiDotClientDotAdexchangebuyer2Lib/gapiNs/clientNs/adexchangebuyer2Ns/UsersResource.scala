@@ -20,3 +20,27 @@ trait UsersResource extends js.Object {
   def update(request: gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ClientUser]
 }
 
+object UsersResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ClientUser]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListClientUsersResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ClientUser]
+    ]
+  ): UsersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[UsersResource]
+  }
+}
+

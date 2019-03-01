@@ -24,3 +24,14 @@ trait IRenderingManagerAutoClearSetup extends js.Object {
   var stencil: scala.Boolean
 }
 
+object IRenderingManagerAutoClearSetup {
+  @scala.inline
+  def apply(autoClear: scala.Boolean, depth: scala.Boolean, stencil: scala.Boolean): IRenderingManagerAutoClearSetup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoClear")(autoClear)
+    __obj.updateDynamic("depth")(depth)
+    __obj.updateDynamic("stencil")(stencil)
+    __obj.asInstanceOf[IRenderingManagerAutoClearSetup]
+  }
+}
+

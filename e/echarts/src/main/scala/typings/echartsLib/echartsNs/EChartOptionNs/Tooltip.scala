@@ -302,3 +302,52 @@ trait Tooltip extends js.Object {
   ] = js.undefined
 }
 
+object Tooltip {
+  @scala.inline
+  def apply(
+    alwaysShowContent: js.UndefOr[scala.Boolean] = js.undefined,
+    axisPointer: echartsLib.Anon_Angle = null,
+    backgroundColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    confine: js.UndefOr[scala.Boolean] = js.undefined,
+    enterable: js.UndefOr[scala.Boolean] = js.undefined,
+    extraCssText: java.lang.String = null,
+    formatter: java.lang.String | echartsLib.echartsNs.EChartOptionNs.TooltipNs.Formatter = null,
+    hideDelay: scala.Int | scala.Double = null,
+    padding: scala.Int | scala.Double = null,
+    position: echartsLib.echartsNs.EChartOptionNs.TooltipNs.PositionNs.Type = null,
+    renderMode: echartsLib.echartsLibStrings.html = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    showContent: js.UndefOr[scala.Boolean] = js.undefined,
+    showDelay: scala.Int | scala.Double = null,
+    textStyle: js.Object = null,
+    transitionDuration: scala.Int | scala.Double = null,
+    trigger: echartsLib.echartsLibStrings.item | echartsLib.echartsLibStrings.axis | echartsLib.echartsLibStrings.none = null,
+    triggerOn: echartsLib.echartsLibStrings.mousemove | echartsLib.echartsLibStrings.click | echartsLib.echartsLibStrings.`mousemove|click` | echartsLib.echartsLibStrings.none = null
+  ): Tooltip = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alwaysShowContent)) __obj.updateDynamic("alwaysShowContent")(alwaysShowContent)
+    if (axisPointer != null) __obj.updateDynamic("axisPointer")(axisPointer)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine)
+    if (!js.isUndefined(enterable)) __obj.updateDynamic("enterable")(enterable)
+    if (extraCssText != null) __obj.updateDynamic("extraCssText")(extraCssText)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter.asInstanceOf[js.Any])
+    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(showContent)) __obj.updateDynamic("showContent")(showContent)
+    if (showDelay != null) __obj.updateDynamic("showDelay")(showDelay.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (triggerOn != null) __obj.updateDynamic("triggerOn")(triggerOn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tooltip]
+  }
+}
+

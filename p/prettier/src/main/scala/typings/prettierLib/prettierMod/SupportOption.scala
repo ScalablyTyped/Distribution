@@ -18,3 +18,31 @@ trait SupportOption extends js.Object {
   var `type`: prettierLib.prettierLibStrings.int | prettierLib.prettierLibStrings.boolean | prettierLib.prettierLibStrings.choice | prettierLib.prettierLibStrings.path
 }
 
+object SupportOption {
+  @scala.inline
+  def apply(
+    default: SupportOptionValue,
+    description: java.lang.String,
+    `type`: prettierLib.prettierLibStrings.int | prettierLib.prettierLibStrings.boolean | prettierLib.prettierLibStrings.choice | prettierLib.prettierLibStrings.path,
+    array: js.UndefOr[scala.Boolean] = js.undefined,
+    choices: SupportOptionChoice = null,
+    deprecated: java.lang.String = null,
+    oppositeDescription: java.lang.String = null,
+    range: SupportOptionRange = null,
+    redirect: SupportOptionRedirect = null,
+    since: java.lang.String = null
+  ): SupportOption = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(array)) __obj.updateDynamic("array")(array)
+    if (choices != null) __obj.updateDynamic("choices")(choices)
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
+    if (oppositeDescription != null) __obj.updateDynamic("oppositeDescription")(oppositeDescription)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (since != null) __obj.updateDynamic("since")(since)
+    __obj.asInstanceOf[SupportOption]
+  }
+}
+

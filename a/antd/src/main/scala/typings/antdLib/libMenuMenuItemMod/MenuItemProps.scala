@@ -18,3 +18,32 @@ trait MenuItemProps extends js.Object {
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object MenuItemProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    level: scala.Int | scala.Double = null,
+    onClick: js.Function1[/* param */ antdLib.libMenuMod.ClickParam, scala.Unit] = null,
+    onMouseEnter: js.Function1[/* e */ antdLib.Anon_DomEvent, scala.Unit] = null,
+    onMouseLeave: js.Function1[/* e */ antdLib.Anon_DomEvent, scala.Unit] = null,
+    rootPrefixCls: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null
+  ): MenuItemProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (rootPrefixCls != null) __obj.updateDynamic("rootPrefixCls")(rootPrefixCls)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MenuItemProps]
+  }
+}
+

@@ -27,3 +27,22 @@ trait XPropertySetRegistry
   def removePropertySet(key: java.lang.String): scala.Unit
 }
 
+object XPropertySetRegistry {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    openPropertySet: js.Function2[java.lang.String, scala.Boolean, XPersistentPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertySet: js.Function1[java.lang.String, scala.Unit]
+  ): XPropertySetRegistry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("openPropertySet")(openPropertySet)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertySet")(removePropertySet)
+    __obj.asInstanceOf[XPropertySetRegistry]
+  }
+}
+

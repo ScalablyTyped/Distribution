@@ -958,6 +958,12 @@ object QuickSightNs extends js.Object {
     var UserName: js.UndefOr[UserName] = js.undefined
   }
   
+  trait _IdentityType extends js.Object
+  
+  trait _UserRole extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Arn = java.lang.String
   type AwsAccountId = java.lang.String
@@ -969,7 +975,7 @@ object QuickSightNs extends js.Object {
   type GroupMemberList = js.Array[GroupMember]
   type GroupMemberName = java.lang.String
   type GroupName = java.lang.String
-  type IdentityType = awsDashSdkLib.awsDashSdkLibStrings.IAM | awsDashSdkLib.awsDashSdkLibStrings.QUICKSIGHT | java.lang.String
+  type IdentityType = _IdentityType | java.lang.String
   type MaxResults = scala.Double
   type Namespace = java.lang.String
   type SessionLifetimeInMinutes = scala.Double
@@ -977,7 +983,7 @@ object QuickSightNs extends js.Object {
   type String = java.lang.String
   type UserList = js.Array[User]
   type UserName = java.lang.String
-  type UserRole = awsDashSdkLib.awsDashSdkLibStrings.ADMIN | awsDashSdkLib.awsDashSdkLibStrings.AUTHOR | awsDashSdkLib.awsDashSdkLibStrings.READER | awsDashSdkLib.awsDashSdkLibStrings.RESTRICTED_AUTHOR | awsDashSdkLib.awsDashSdkLibStrings.RESTRICTED_READER | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-04-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type UserRole = _UserRole | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

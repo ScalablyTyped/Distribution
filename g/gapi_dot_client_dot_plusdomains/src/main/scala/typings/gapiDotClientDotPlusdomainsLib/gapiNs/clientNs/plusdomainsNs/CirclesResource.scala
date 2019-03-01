@@ -24,3 +24,52 @@ trait CirclesResource extends js.Object {
   def update(request: gapiDotClientDotPlusdomainsLib.Anon_AltCircleIdFields): gapiDotClientLib.gapiNs.clientNs.Request[Circle]
 }
 
+object CirclesResource {
+  @scala.inline
+  def apply(
+    addPeople: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltCircleId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Circle]
+    ],
+    get: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltCircleIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Circle]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Circle]
+    ],
+    list: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CircleFeed]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltCircleIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Circle]
+    ],
+    remove: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltCircleIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    removePeople: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltCircleId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    update: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltCircleIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Circle]
+    ]
+  ): CirclesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addPeople")(addPeople)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removePeople")(removePeople)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[CirclesResource]
+  }
+}
+

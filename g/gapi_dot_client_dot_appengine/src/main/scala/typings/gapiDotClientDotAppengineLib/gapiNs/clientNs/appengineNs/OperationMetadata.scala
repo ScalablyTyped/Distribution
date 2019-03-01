@@ -20,3 +20,24 @@ trait OperationMetadata extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OperationMetadata {
+  @scala.inline
+  def apply(
+    endTime: java.lang.String = null,
+    insertTime: java.lang.String = null,
+    method: java.lang.String = null,
+    operationType: java.lang.String = null,
+    target: java.lang.String = null,
+    user: java.lang.String = null
+  ): OperationMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[OperationMetadata]
+  }
+}
+

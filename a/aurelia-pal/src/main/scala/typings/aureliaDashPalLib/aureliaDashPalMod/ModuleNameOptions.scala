@@ -16,3 +16,13 @@ trait ModuleNameOptions extends js.Object {
   var exports: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ModuleNameOptions {
+  @scala.inline
+  def apply(chunk: java.lang.String = null, exports: js.Array[java.lang.String] = null): ModuleNameOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chunk != null) __obj.updateDynamic("chunk")(chunk)
+    if (exports != null) __obj.updateDynamic("exports")(exports)
+    __obj.asInstanceOf[ModuleNameOptions]
+  }
+}
+

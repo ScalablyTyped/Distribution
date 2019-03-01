@@ -28,3 +28,22 @@ trait Options extends js.Object {
   var radiuses: js.UndefOr[js.Array[Radius] | scala.Null] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    bearings: js.Array[Bearing] = null,
+    coordinates: js.Array[Coordinate] = null,
+    generate_hints: js.UndefOr[scala.Boolean] = js.undefined,
+    hints: js.Array[Hint] = null,
+    radiuses: js.Array[Radius] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
+    if (hints != null) __obj.updateDynamic("hints")(hints)
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -17,3 +17,14 @@ trait BeforeBatchSaveEventArgs extends js.Object {
   var sheetIdx: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BeforeBatchSaveEventArgs {
+  @scala.inline
+  def apply(batchChanges: js.Any = null, dataSetting: js.Any = null, sheetIdx: scala.Int | scala.Double = null): BeforeBatchSaveEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges)
+    if (dataSetting != null) __obj.updateDynamic("dataSetting")(dataSetting)
+    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BeforeBatchSaveEventArgs]
+  }
+}
+

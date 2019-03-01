@@ -14,7 +14,30 @@ trait IListItemsProps[T]
     * uncontrolled (managed by the component's state). Use `onActiveItemChange`
     * to listen for updates.
     */
-  var activeItem: js.UndefOr[T | scala.Null] = js.native
+  var activeItem: js.UndefOr[
+    T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null
+  ] = js.native
+  /**
+    * If provided, allows new items to be created using the current query
+    * string. This is invoked when user interaction causes a new item to be
+    * created, either by pressing the `Enter` key or by clicking on the "Create
+    * Item" option. It transforms a query string into an item type.
+    */
+  var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ java.lang.String, T]] = js.native
+  /**
+    * Custom renderer to transform the current query string into a selectable
+    * "Create Item" option. If this function is provided, a "Create Item"
+    * option will be rendered at the end of the list of items. If this function
+    * is not provided, a "Create Item" option will not be displayed.
+    */
+  var createNewItemRenderer: js.UndefOr[
+    js.Function3[
+      /* query */ java.lang.String, 
+      /* active */ scala.Boolean, 
+      /* handleClick */ reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLElement], 
+      js.UndefOr[reactLib.reactMod.Global.JSXNs.Element]
+    ]
+  ] = js.native
   /**
     * React content to render when query is empty.
     * If omitted, all items will be rendered (or result of `itemListPredicate` with empty query).
@@ -84,11 +107,23 @@ trait IListItemsProps[T]
     */
   var noResults: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.native
   /**
-    * Invoked when user interaction should change the active item: arrow keys move it up/down
-    * in the list, selecting an item makes it active, and changing the query may reset it to
-    * the first item in the list if it no longer matches the filter.
+    * Invoked when user interaction should change the active item: arrow keys
+    * move it up/down in the list, selecting an item makes it active, and
+    * changing the query may reset it to the first item in the list if it no
+    * longer matches the filter.
+    *
+    * If the "Create Item" option is displayed and currently active, then
+    * `isCreateNewItem` will be `true` and `activeItem` will be `null`. In this
+    * case, you should provide a valid `ICreateNewItem` object to the
+    * `activeItem` _prop_ in order for the "Create Item" option to appear as
+    * active.
+    *
+    * __Note:__ You can instantiate a `ICreateNewItem` object using the
+    * `getCreateNewItem()` utility exported from this package.
     */
-  var onActiveItemChange: js.UndefOr[js.Function1[/* activeItem */ T | scala.Null, scala.Unit]] = js.native
+  var onActiveItemChange: js.UndefOr[
+    js.Function2[/* activeItem */ T | scala.Null, /* isCreateNewItem */ scala.Boolean, scala.Unit]
+  ] = js.native
   /**
     * Callback invoked when the query string changes.
     */

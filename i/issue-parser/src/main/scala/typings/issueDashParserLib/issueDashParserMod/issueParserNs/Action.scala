@@ -13,3 +13,22 @@ trait Action extends js.Object {
   var slug: js.UndefOr[java.lang.String]
 }
 
+object Action {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    issue: java.lang.String,
+    raw: java.lang.String,
+    prefix: java.lang.String = null,
+    slug: java.lang.String = null
+  ): Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("issue")(issue)
+    __obj.updateDynamic("raw")(raw)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (slug != null) __obj.updateDynamic("slug")(slug)
+    __obj.asInstanceOf[Action]
+  }
+}
+

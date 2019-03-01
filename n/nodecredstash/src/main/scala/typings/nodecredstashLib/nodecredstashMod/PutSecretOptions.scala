@@ -13,3 +13,22 @@ trait PutSecretOptions extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PutSecretOptions {
+  @scala.inline
+  def apply(
+    context: CredstashContext,
+    name: java.lang.String,
+    secret: java.lang.String,
+    digest: java.lang.String = null,
+    version: scala.Int | scala.Double = null
+  ): PutSecretOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("secret")(secret)
+    if (digest != null) __obj.updateDynamic("digest")(digest)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PutSecretOptions]
+  }
+}
+

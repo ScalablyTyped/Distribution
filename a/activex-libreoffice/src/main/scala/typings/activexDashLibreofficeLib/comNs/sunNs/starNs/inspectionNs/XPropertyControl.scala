@@ -59,3 +59,26 @@ trait XPropertyControl extends js.Object {
   def notifyModifiedValue(): scala.Unit
 }
 
+object XPropertyControl {
+  @scala.inline
+  def apply(
+    ControlContext: XPropertyControlContext,
+    ControlType: scala.Double,
+    ControlWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    Value: js.Any,
+    ValueType: activexDashLibreofficeLib.`type`,
+    isModified: js.Function0[scala.Boolean],
+    notifyModifiedValue: js.Function0[scala.Unit]
+  ): XPropertyControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ControlContext")(ControlContext)
+    __obj.updateDynamic("ControlType")(ControlType)
+    __obj.updateDynamic("ControlWindow")(ControlWindow)
+    __obj.updateDynamic("Value")(Value)
+    __obj.updateDynamic("ValueType")(ValueType)
+    __obj.updateDynamic("isModified")(isModified)
+    __obj.updateDynamic("notifyModifiedValue")(notifyModifiedValue)
+    __obj.asInstanceOf[XPropertyControl]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Anon_CommentsLocRegexValue extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_CommentsLocRegexValue {
+  @scala.inline
+  def apply(
+    value: java.lang.String,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    regex: Anon_Flags = null
+  ): Anon_CommentsLocRegexValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    __obj.asInstanceOf[Anon_CommentsLocRegexValue]
+  }
+}
+

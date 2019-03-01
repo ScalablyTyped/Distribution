@@ -20,3 +20,35 @@ trait FileProperties extends js.Object {
   var `type`: java.lang.String
 }
 
+object FileProperties {
+  @scala.inline
+  def apply(
+    createdById: java.lang.String,
+    createdByName: java.lang.String,
+    createdDate: java.lang.String,
+    fileName: java.lang.String,
+    fullName: java.lang.String,
+    id: java.lang.String,
+    lastModifiedById: java.lang.String,
+    lastModifiedByName: java.lang.String,
+    lastModifiedDate: java.lang.String,
+    `type`: java.lang.String,
+    manageableState: java.lang.String = null,
+    namespacePrefix: java.lang.String = null
+  ): FileProperties = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("createdById")(createdById)
+    __obj.updateDynamic("createdByName")(createdByName)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("fullName")(fullName)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("lastModifiedById")(lastModifiedById)
+    __obj.updateDynamic("lastModifiedByName")(lastModifiedByName)
+    __obj.updateDynamic("lastModifiedDate")(lastModifiedDate)
+    if (manageableState != null) __obj.updateDynamic("manageableState")(manageableState)
+    if (namespacePrefix != null) __obj.updateDynamic("namespacePrefix")(namespacePrefix)
+    __obj.asInstanceOf[FileProperties]
+  }
+}
+

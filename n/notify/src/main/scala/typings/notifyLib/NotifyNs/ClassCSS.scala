@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
 trait ClassCSS
   extends /* propertyName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 
+object ClassCSS {
+  @scala.inline
+  def apply(
+    StringDictionary: /* propertyName */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): ClassCSS = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ClassCSS]
+  }
+}
+

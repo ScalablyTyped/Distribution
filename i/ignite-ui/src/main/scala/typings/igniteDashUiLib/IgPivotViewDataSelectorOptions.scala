@@ -28,3 +28,23 @@ trait IgPivotViewDataSelectorOptions
   var dropDownParent: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgPivotViewDataSelectorOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotViewDataSelectorOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    customMoveValidation: js.Function = null,
+    dragAndDropSettings: IgPivotViewDataSelectorOptionsDragAndDropSettings = null,
+    dropDownParent: js.Any = null
+  ): IgPivotViewDataSelectorOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (customMoveValidation != null) __obj.updateDynamic("customMoveValidation")(customMoveValidation)
+    if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings)
+    if (dropDownParent != null) __obj.updateDynamic("dropDownParent")(dropDownParent)
+    __obj.asInstanceOf[IgPivotViewDataSelectorOptions]
+  }
+}
+

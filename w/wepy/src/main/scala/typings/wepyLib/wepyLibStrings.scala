@@ -58,13 +58,15 @@ object wepyLibStrings {
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait promisify extends js.Object
+  sealed trait promisify
+    extends wepyLib.appMod.AddOn
   
   @js.native
   sealed trait redirectTo extends js.Object
   
   @js.native
-  sealed trait requestfix extends js.Object
+  sealed trait requestfix
+    extends wepyLib.appMod.AddOn
   
   @js.native
   sealed trait speech extends js.Object

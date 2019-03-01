@@ -12,3 +12,12 @@ trait PayPalTokenizeReturn extends js.Object {
   def close(): js.Any
 }
 
+object PayPalTokenizeReturn {
+  @scala.inline
+  def apply(close: js.Function0[js.Any]): PayPalTokenizeReturn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.asInstanceOf[PayPalTokenizeReturn]
+  }
+}
+

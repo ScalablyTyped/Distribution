@@ -372,3 +372,214 @@ trait Model extends js.Object {
   var userName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
+    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
+    activeSheetIndex: scala.Int | scala.Double = null,
+    allowAutoCellType: js.UndefOr[scala.Boolean] = js.undefined,
+    allowAutoFill: js.UndefOr[scala.Boolean] = js.undefined,
+    allowAutoSum: js.UndefOr[scala.Boolean] = js.undefined,
+    allowCellFormatting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowCellType: js.UndefOr[scala.Boolean] = js.undefined,
+    allowCharts: js.UndefOr[scala.Boolean] = js.undefined,
+    allowClear: js.UndefOr[scala.Boolean] = js.undefined,
+    allowClipboard: js.UndefOr[scala.Boolean] = js.undefined,
+    allowComments: js.UndefOr[scala.Boolean] = js.undefined,
+    allowConditionalFormats: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDataValidation: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDelete: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFormatAsTable: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFormatPainter: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFormulaBar: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFreezing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowHyperlink: js.UndefOr[scala.Boolean] = js.undefined,
+    allowImport: js.UndefOr[scala.Boolean] = js.undefined,
+    allowInsert: js.UndefOr[scala.Boolean] = js.undefined,
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    allowLockCell: js.UndefOr[scala.Boolean] = js.undefined,
+    allowMerging: js.UndefOr[scala.Boolean] = js.undefined,
+    allowOverflow: js.UndefOr[scala.Boolean] = js.undefined,
+    allowResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSearching: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSparkline: js.UndefOr[scala.Boolean] = js.undefined,
+    allowUndoRedo: js.UndefOr[scala.Boolean] = js.undefined,
+    allowWrap: js.UndefOr[scala.Boolean] = js.undefined,
+    apWidth: scala.Int | scala.Double = null,
+    autoFillBegin: js.Function1[/* e */ AutoFillBeginEventArgs, scala.Unit] = null,
+    autoFillComplete: js.Function1[/* e */ AutoFillCompleteEventArgs, scala.Unit] = null,
+    autoFillSettings: AutoFillSettings = null,
+    beforeBatchSave: js.Function1[/* e */ BeforeBatchSaveEventArgs, scala.Unit] = null,
+    beforeCellFormat: js.Function1[/* e */ BeforeCellFormatEventArgs, scala.Unit] = null,
+    beforeCellSelect: js.Function1[/* e */ BeforeCellSelectEventArgs, scala.Unit] = null,
+    beforeDrop: js.Function1[/* e */ BeforeDropEventArgs, scala.Unit] = null,
+    beforeEditComment: js.Function1[/* e */ BeforeEditCommentEventArgs, scala.Unit] = null,
+    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
+    beforePanelOpen: js.Function1[/* e */ BeforePanelOpenEventArgs, scala.Unit] = null,
+    cellClick: js.Function1[/* e */ CellClickEventArgs, scala.Unit] = null,
+    cellEdit: js.Function1[/* e */ CellEditEventArgs, scala.Unit] = null,
+    cellFormatting: js.Function1[/* e */ CellFormattingEventArgs, scala.Unit] = null,
+    cellHover: js.Function1[/* e */ CellHoverEventArgs, scala.Unit] = null,
+    cellSave: js.Function1[/* e */ CellSaveEventArgs, scala.Unit] = null,
+    cellSelected: js.Function1[/* e */ CellSelectedEventArgs, scala.Unit] = null,
+    chartSettings: ChartSettings = null,
+    columnCount: scala.Int | scala.Double = null,
+    columnWidth: scala.Int | scala.Double = null,
+    contextMenuClick: js.Function1[/* e */ ContextMenuClickEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    customFormulas: js.Array[_] = null,
+    drag: js.Function1[/* e */ DragEventArgs, scala.Unit] = null,
+    dragShape: js.Function1[/* e */ DragShapeEventArgs, scala.Unit] = null,
+    dragStart: js.Function1[/* e */ DragStartEventArgs, scala.Unit] = null,
+    drop: js.Function1[/* e */ DropEventArgs, scala.Unit] = null,
+    editRangeBegin: js.Function1[/* e */ EditRangeBeginEventArgs, scala.Unit] = null,
+    editRangeComplete: js.Function1[/* e */ EditRangeCompleteEventArgs, scala.Unit] = null,
+    enableContextMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePivotTable: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTouch: js.UndefOr[scala.Boolean] = js.undefined,
+    exportSettings: ExportSettings = null,
+    formatSettings: FormatSettings = null,
+    importSettings: ImportSettings = null,
+    isImport: js.UndefOr[scala.Boolean] = js.undefined,
+    isReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    keyDown: js.Function1[/* e */ KeyDownEventArgs, scala.Unit] = null,
+    keyUp: js.Function1[/* e */ KeyUpEventArgs, scala.Unit] = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    loadComplete: js.Function1[/* e */ LoadCompleteEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    menuClick: js.Function1[/* e */ MenuClickEventArgs, scala.Unit] = null,
+    nameManager: js.Array[NameManager] = null,
+    onImport: js.Function1[/* e */ OnImportEventArgs, scala.Unit] = null,
+    openFailure: js.Function1[/* e */ OpenFailureEventArgs, scala.Unit] = null,
+    pagerClick: js.Function1[/* e */ PagerClickEventArgs, scala.Unit] = null,
+    pictureSettings: PictureSettings = null,
+    printSettings: PrintSettings = null,
+    resizeEnd: js.Function1[/* e */ ResizeEndEventArgs, scala.Unit] = null,
+    resizeStart: js.Function1[/* e */ ResizeStartEventArgs, scala.Unit] = null,
+    ribbonClick: js.Function1[/* e */ RibbonClickEventArgs, scala.Unit] = null,
+    ribbonSettings: RibbonSettings = null,
+    rowCount: scala.Int | scala.Double = null,
+    rowHeight: scala.Int | scala.Double = null,
+    scrollSettings: ScrollSettings = null,
+    selectionSettings: SelectionSettings = null,
+    sheetCount: scala.Int | scala.Double = null,
+    sheets: js.Array[Sheet] = null,
+    showPager: js.UndefOr[scala.Boolean] = js.undefined,
+    showRibbon: js.UndefOr[scala.Boolean] = js.undefined,
+    tabClick: js.Function1[/* e */ TabClickEventArgs, scala.Unit] = null,
+    tabSelect: js.Function1[/* e */ TabSelectEventArgs, scala.Unit] = null,
+    undoRedoStep: scala.Int | scala.Double = null,
+    userName: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
+    if (activeSheetIndex != null) __obj.updateDynamic("activeSheetIndex")(activeSheetIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowAutoCellType)) __obj.updateDynamic("allowAutoCellType")(allowAutoCellType)
+    if (!js.isUndefined(allowAutoFill)) __obj.updateDynamic("allowAutoFill")(allowAutoFill)
+    if (!js.isUndefined(allowAutoSum)) __obj.updateDynamic("allowAutoSum")(allowAutoSum)
+    if (!js.isUndefined(allowCellFormatting)) __obj.updateDynamic("allowCellFormatting")(allowCellFormatting)
+    if (!js.isUndefined(allowCellType)) __obj.updateDynamic("allowCellType")(allowCellType)
+    if (!js.isUndefined(allowCharts)) __obj.updateDynamic("allowCharts")(allowCharts)
+    if (!js.isUndefined(allowClear)) __obj.updateDynamic("allowClear")(allowClear)
+    if (!js.isUndefined(allowClipboard)) __obj.updateDynamic("allowClipboard")(allowClipboard)
+    if (!js.isUndefined(allowComments)) __obj.updateDynamic("allowComments")(allowComments)
+    if (!js.isUndefined(allowConditionalFormats)) __obj.updateDynamic("allowConditionalFormats")(allowConditionalFormats)
+    if (!js.isUndefined(allowDataValidation)) __obj.updateDynamic("allowDataValidation")(allowDataValidation)
+    if (!js.isUndefined(allowDelete)) __obj.updateDynamic("allowDelete")(allowDelete)
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering)
+    if (!js.isUndefined(allowFormatAsTable)) __obj.updateDynamic("allowFormatAsTable")(allowFormatAsTable)
+    if (!js.isUndefined(allowFormatPainter)) __obj.updateDynamic("allowFormatPainter")(allowFormatPainter)
+    if (!js.isUndefined(allowFormulaBar)) __obj.updateDynamic("allowFormulaBar")(allowFormulaBar)
+    if (!js.isUndefined(allowFreezing)) __obj.updateDynamic("allowFreezing")(allowFreezing)
+    if (!js.isUndefined(allowHyperlink)) __obj.updateDynamic("allowHyperlink")(allowHyperlink)
+    if (!js.isUndefined(allowImport)) __obj.updateDynamic("allowImport")(allowImport)
+    if (!js.isUndefined(allowInsert)) __obj.updateDynamic("allowInsert")(allowInsert)
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (!js.isUndefined(allowLockCell)) __obj.updateDynamic("allowLockCell")(allowLockCell)
+    if (!js.isUndefined(allowMerging)) __obj.updateDynamic("allowMerging")(allowMerging)
+    if (!js.isUndefined(allowOverflow)) __obj.updateDynamic("allowOverflow")(allowOverflow)
+    if (!js.isUndefined(allowResizing)) __obj.updateDynamic("allowResizing")(allowResizing)
+    if (!js.isUndefined(allowSearching)) __obj.updateDynamic("allowSearching")(allowSearching)
+    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection)
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
+    if (!js.isUndefined(allowSparkline)) __obj.updateDynamic("allowSparkline")(allowSparkline)
+    if (!js.isUndefined(allowUndoRedo)) __obj.updateDynamic("allowUndoRedo")(allowUndoRedo)
+    if (!js.isUndefined(allowWrap)) __obj.updateDynamic("allowWrap")(allowWrap)
+    if (apWidth != null) __obj.updateDynamic("apWidth")(apWidth.asInstanceOf[js.Any])
+    if (autoFillBegin != null) __obj.updateDynamic("autoFillBegin")(autoFillBegin)
+    if (autoFillComplete != null) __obj.updateDynamic("autoFillComplete")(autoFillComplete)
+    if (autoFillSettings != null) __obj.updateDynamic("autoFillSettings")(autoFillSettings)
+    if (beforeBatchSave != null) __obj.updateDynamic("beforeBatchSave")(beforeBatchSave)
+    if (beforeCellFormat != null) __obj.updateDynamic("beforeCellFormat")(beforeCellFormat)
+    if (beforeCellSelect != null) __obj.updateDynamic("beforeCellSelect")(beforeCellSelect)
+    if (beforeDrop != null) __obj.updateDynamic("beforeDrop")(beforeDrop)
+    if (beforeEditComment != null) __obj.updateDynamic("beforeEditComment")(beforeEditComment)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (beforePanelOpen != null) __obj.updateDynamic("beforePanelOpen")(beforePanelOpen)
+    if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
+    if (cellEdit != null) __obj.updateDynamic("cellEdit")(cellEdit)
+    if (cellFormatting != null) __obj.updateDynamic("cellFormatting")(cellFormatting)
+    if (cellHover != null) __obj.updateDynamic("cellHover")(cellHover)
+    if (cellSave != null) __obj.updateDynamic("cellSave")(cellSave)
+    if (cellSelected != null) __obj.updateDynamic("cellSelected")(cellSelected)
+    if (chartSettings != null) __obj.updateDynamic("chartSettings")(chartSettings)
+    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (contextMenuClick != null) __obj.updateDynamic("contextMenuClick")(contextMenuClick)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customFormulas != null) __obj.updateDynamic("customFormulas")(customFormulas)
+    if (drag != null) __obj.updateDynamic("drag")(drag)
+    if (dragShape != null) __obj.updateDynamic("dragShape")(dragShape)
+    if (dragStart != null) __obj.updateDynamic("dragStart")(dragStart)
+    if (drop != null) __obj.updateDynamic("drop")(drop)
+    if (editRangeBegin != null) __obj.updateDynamic("editRangeBegin")(editRangeBegin)
+    if (editRangeComplete != null) __obj.updateDynamic("editRangeComplete")(editRangeComplete)
+    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu)
+    if (!js.isUndefined(enablePivotTable)) __obj.updateDynamic("enablePivotTable")(enablePivotTable)
+    if (!js.isUndefined(enableTouch)) __obj.updateDynamic("enableTouch")(enableTouch)
+    if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings)
+    if (formatSettings != null) __obj.updateDynamic("formatSettings")(formatSettings)
+    if (importSettings != null) __obj.updateDynamic("importSettings")(importSettings)
+    if (!js.isUndefined(isImport)) __obj.updateDynamic("isImport")(isImport)
+    if (!js.isUndefined(isReadOnly)) __obj.updateDynamic("isReadOnly")(isReadOnly)
+    if (keyDown != null) __obj.updateDynamic("keyDown")(keyDown)
+    if (keyUp != null) __obj.updateDynamic("keyUp")(keyUp)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loadComplete != null) __obj.updateDynamic("loadComplete")(loadComplete)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (menuClick != null) __obj.updateDynamic("menuClick")(menuClick)
+    if (nameManager != null) __obj.updateDynamic("nameManager")(nameManager)
+    if (onImport != null) __obj.updateDynamic("onImport")(onImport)
+    if (openFailure != null) __obj.updateDynamic("openFailure")(openFailure)
+    if (pagerClick != null) __obj.updateDynamic("pagerClick")(pagerClick)
+    if (pictureSettings != null) __obj.updateDynamic("pictureSettings")(pictureSettings)
+    if (printSettings != null) __obj.updateDynamic("printSettings")(printSettings)
+    if (resizeEnd != null) __obj.updateDynamic("resizeEnd")(resizeEnd)
+    if (resizeStart != null) __obj.updateDynamic("resizeStart")(resizeStart)
+    if (ribbonClick != null) __obj.updateDynamic("ribbonClick")(ribbonClick)
+    if (ribbonSettings != null) __obj.updateDynamic("ribbonSettings")(ribbonSettings)
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (scrollSettings != null) __obj.updateDynamic("scrollSettings")(scrollSettings)
+    if (selectionSettings != null) __obj.updateDynamic("selectionSettings")(selectionSettings)
+    if (sheetCount != null) __obj.updateDynamic("sheetCount")(sheetCount.asInstanceOf[js.Any])
+    if (sheets != null) __obj.updateDynamic("sheets")(sheets)
+    if (!js.isUndefined(showPager)) __obj.updateDynamic("showPager")(showPager)
+    if (!js.isUndefined(showRibbon)) __obj.updateDynamic("showRibbon")(showRibbon)
+    if (tabClick != null) __obj.updateDynamic("tabClick")(tabClick)
+    if (tabSelect != null) __obj.updateDynamic("tabSelect")(tabSelect)
+    if (undoRedoStep != null) __obj.updateDynamic("undoRedoStep")(undoRedoStep.asInstanceOf[js.Any])
+    if (userName != null) __obj.updateDynamic("userName")(userName)
+    __obj.asInstanceOf[Model]
+  }
+}
+

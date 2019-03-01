@@ -12,3 +12,13 @@ trait DeveloperComment extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeveloperComment {
+  @scala.inline
+  def apply(lastModified: Timestamp = null, text: java.lang.String = null): DeveloperComment = {
+    val __obj = js.Dynamic.literal()
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[DeveloperComment]
+  }
+}
+

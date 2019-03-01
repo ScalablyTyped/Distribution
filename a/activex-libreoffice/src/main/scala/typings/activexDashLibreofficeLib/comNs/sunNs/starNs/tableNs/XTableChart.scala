@@ -31,3 +31,36 @@ trait XTableChart
   def setRanges(aRanges: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CellRangeAddress]): scala.Unit
 }
 
+object XTableChart {
+  @scala.inline
+  def apply(
+    HasColumnHeaders: scala.Boolean,
+    HasRowHeaders: scala.Boolean,
+    Ranges: activexDashInteropLib.SafeArray[CellRangeAddress],
+    acquire: js.Function0[scala.Unit],
+    getHasColumnHeaders: js.Function0[scala.Boolean],
+    getHasRowHeaders: js.Function0[scala.Boolean],
+    getRanges: js.Function0[activexDashInteropLib.SafeArray[CellRangeAddress]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setHasColumnHeaders: js.Function1[scala.Boolean, scala.Unit],
+    setHasRowHeaders: js.Function1[scala.Boolean, scala.Unit],
+    setRanges: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[CellRangeAddress], scala.Unit]
+  ): XTableChart = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("HasColumnHeaders")(HasColumnHeaders)
+    __obj.updateDynamic("HasRowHeaders")(HasRowHeaders)
+    __obj.updateDynamic("Ranges")(Ranges)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getHasColumnHeaders")(getHasColumnHeaders)
+    __obj.updateDynamic("getHasRowHeaders")(getHasRowHeaders)
+    __obj.updateDynamic("getRanges")(getRanges)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setHasColumnHeaders")(setHasColumnHeaders)
+    __obj.updateDynamic("setHasRowHeaders")(setHasRowHeaders)
+    __obj.updateDynamic("setRanges")(setRanges)
+    __obj.asInstanceOf[XTableChart]
+  }
+}
+

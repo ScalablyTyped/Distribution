@@ -15,3 +15,12 @@ trait RightProps[TLength] extends js.Object {
   var right: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.RightProperty[TLength]]] = js.undefined
 }
 
+object RightProps {
+  @scala.inline
+  def apply[TLength](right: ResponsiveValue[csstypeLib.csstypeMod.RightProperty[TLength]] = null): RightProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RightProps[TLength]]
+  }
+}
+

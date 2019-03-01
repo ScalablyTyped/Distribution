@@ -12,3 +12,12 @@ trait AppProps extends js.Object {
   var onShouldQuit: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object AppProps {
+  @scala.inline
+  def apply(onShouldQuit: js.Function0[scala.Unit] = null): AppProps = {
+    val __obj = js.Dynamic.literal()
+    if (onShouldQuit != null) __obj.updateDynamic("onShouldQuit")(onShouldQuit)
+    __obj.asInstanceOf[AppProps]
+  }
+}
+

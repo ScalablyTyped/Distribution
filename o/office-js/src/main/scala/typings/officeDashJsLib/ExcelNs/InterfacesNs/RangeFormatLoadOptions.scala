@@ -108,3 +108,38 @@ trait RangeFormatLoadOptions extends js.Object {
   var wrapText: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RangeFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    borders: RangeBorderCollectionLoadOptions = null,
+    columnWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: RangeFillLoadOptions = null,
+    font: RangeFontLoadOptions = null,
+    horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    protection: FormatProtectionLoadOptions = null,
+    rowHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    textOrientation: js.UndefOr[scala.Boolean] = js.undefined,
+    useStandardHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    useStandardWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapText: js.UndefOr[scala.Boolean] = js.undefined
+  ): RangeFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (borders != null) __obj.updateDynamic("borders")(borders)
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (!js.isUndefined(rowHeight)) __obj.updateDynamic("rowHeight")(rowHeight)
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation)
+    if (!js.isUndefined(useStandardHeight)) __obj.updateDynamic("useStandardHeight")(useStandardHeight)
+    if (!js.isUndefined(useStandardWidth)) __obj.updateDynamic("useStandardWidth")(useStandardWidth)
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText)
+    __obj.asInstanceOf[RangeFormatLoadOptions]
+  }
+}
+

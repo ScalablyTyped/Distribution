@@ -65,3 +65,44 @@ trait Article
   var user_id: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Article {
+  @scala.inline
+  def apply(
+    admin_graphql_api_id: java.lang.String = null,
+    author: java.lang.String = null,
+    blog_id: scala.Int | scala.Double = null,
+    body_html: java.lang.String = null,
+    created_at: java.lang.String = null,
+    handle: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    image: shopifyDashPrimeLib.distModelsArticleUnderscoreImageMod.ArticleImage = null,
+    published: js.UndefOr[scala.Boolean] = js.undefined,
+    published_at: java.lang.String = null,
+    summary_html: java.lang.String = null,
+    tags: java.lang.String = null,
+    template_suffix: java.lang.String = null,
+    title: java.lang.String = null,
+    updated_at: java.lang.String = null,
+    user_id: scala.Int | scala.Double = null
+  ): Article = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (blog_id != null) __obj.updateDynamic("blog_id")(blog_id.asInstanceOf[js.Any])
+    if (body_html != null) __obj.updateDynamic("body_html")(body_html)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (!js.isUndefined(published)) __obj.updateDynamic("published")(published)
+    if (published_at != null) __obj.updateDynamic("published_at")(published_at)
+    if (summary_html != null) __obj.updateDynamic("summary_html")(summary_html)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Article]
+  }
+}
+

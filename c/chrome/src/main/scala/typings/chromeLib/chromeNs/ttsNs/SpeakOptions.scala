@@ -45,3 +45,34 @@ trait SpeakOptions extends js.Object {
   var volume: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SpeakOptions {
+  @scala.inline
+  def apply(
+    desiredEventTypes: js.Array[java.lang.String] = null,
+    enqueue: js.UndefOr[scala.Boolean] = js.undefined,
+    extensionId: java.lang.String = null,
+    gender: java.lang.String = null,
+    lang: java.lang.String = null,
+    onEvent: js.Function1[/* event */ TtsEvent, scala.Unit] = null,
+    pitch: scala.Int | scala.Double = null,
+    rate: scala.Int | scala.Double = null,
+    requiredEventTypes: js.Array[java.lang.String] = null,
+    voiceName: java.lang.String = null,
+    volume: scala.Int | scala.Double = null
+  ): SpeakOptions = {
+    val __obj = js.Dynamic.literal()
+    if (desiredEventTypes != null) __obj.updateDynamic("desiredEventTypes")(desiredEventTypes)
+    if (!js.isUndefined(enqueue)) __obj.updateDynamic("enqueue")(enqueue)
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    if (gender != null) __obj.updateDynamic("gender")(gender)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (onEvent != null) __obj.updateDynamic("onEvent")(onEvent)
+    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (requiredEventTypes != null) __obj.updateDynamic("requiredEventTypes")(requiredEventTypes)
+    if (voiceName != null) __obj.updateDynamic("voiceName")(voiceName)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpeakOptions]
+  }
+}
+

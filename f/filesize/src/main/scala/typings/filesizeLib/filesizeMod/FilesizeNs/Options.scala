@@ -58,3 +58,36 @@ trait Options extends js.Object {
   var unix: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    base: scala.Int | scala.Double = null,
+    bits: js.UndefOr[scala.Boolean] = js.undefined,
+    exponent: scala.Int | scala.Double = null,
+    fullform: js.UndefOr[scala.Boolean] = js.undefined,
+    fullforms: js.Array[java.lang.String] = null,
+    output: filesizeLib.filesizeLibStrings.array | filesizeLib.filesizeLibStrings.exponent | filesizeLib.filesizeLibStrings.`object` | filesizeLib.filesizeLibStrings.string = null,
+    round: scala.Int | scala.Double = null,
+    separator: java.lang.String = null,
+    spacer: java.lang.String = null,
+    standard: filesizeLib.filesizeLibStrings.iec | filesizeLib.filesizeLibStrings.jedec = null,
+    symbols: SiJedec = null,
+    unix: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (!js.isUndefined(bits)) __obj.updateDynamic("bits")(bits)
+    if (exponent != null) __obj.updateDynamic("exponent")(exponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullform)) __obj.updateDynamic("fullform")(fullform)
+    if (fullforms != null) __obj.updateDynamic("fullforms")(fullforms)
+    if (output != null) __obj.updateDynamic("output")(output.asInstanceOf[js.Any])
+    if (round != null) __obj.updateDynamic("round")(round.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (spacer != null) __obj.updateDynamic("spacer")(spacer)
+    if (standard != null) __obj.updateDynamic("standard")(standard.asInstanceOf[js.Any])
+    if (symbols != null) __obj.updateDynamic("symbols")(symbols)
+    if (!js.isUndefined(unix)) __obj.updateDynamic("unix")(unix)
+    __obj.asInstanceOf[Options]
+  }
+}
+

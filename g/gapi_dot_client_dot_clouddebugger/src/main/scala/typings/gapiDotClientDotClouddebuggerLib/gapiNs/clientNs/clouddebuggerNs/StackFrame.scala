@@ -22,3 +22,20 @@ trait StackFrame extends js.Object {
   var location: js.UndefOr[SourceLocation] = js.undefined
 }
 
+object StackFrame {
+  @scala.inline
+  def apply(
+    arguments: js.Array[Variable] = null,
+    function: java.lang.String = null,
+    locals: js.Array[Variable] = null,
+    location: SourceLocation = null
+  ): StackFrame = {
+    val __obj = js.Dynamic.literal()
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (function != null) __obj.updateDynamic("function")(function)
+    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (location != null) __obj.updateDynamic("location")(location)
+    __obj.asInstanceOf[StackFrame]
+  }
+}
+

@@ -13,3 +13,22 @@ trait MutationResult[TData] extends js.Object {
   var loading: scala.Boolean
 }
 
+object MutationResult {
+  @scala.inline
+  def apply[TData](
+    called: scala.Boolean,
+    client: apolloDashClientLib.apolloDashClientMod.default[js.Object],
+    loading: scala.Boolean,
+    data: TData = null,
+    error: apolloDashClientLib.apolloDashClientMod.ApolloError = null
+  ): MutationResult[TData] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("called")(called)
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("loading")(loading)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[MutationResult[TData]]
+  }
+}
+

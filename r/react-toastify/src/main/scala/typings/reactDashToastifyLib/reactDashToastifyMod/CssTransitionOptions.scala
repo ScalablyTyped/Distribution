@@ -23,3 +23,20 @@ trait CssTransitionOptions extends js.Object {
   var exit: java.lang.String
 }
 
+object CssTransitionOptions {
+  @scala.inline
+  def apply(
+    enter: java.lang.String,
+    exit: java.lang.String,
+    appendPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Double | js.Array[scala.Double] = null
+  ): CssTransitionOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enter")(enter)
+    __obj.updateDynamic("exit")(exit)
+    if (!js.isUndefined(appendPosition)) __obj.updateDynamic("appendPosition")(appendPosition)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CssTransitionOptions]
+  }
+}
+

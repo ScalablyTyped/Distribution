@@ -12,3 +12,13 @@ trait TitleDetails extends js.Object {
   var title: java.lang.String
 }
 
+object TitleDetails {
+  @scala.inline
+  def apply(tabId: scala.Double, title: java.lang.String): TitleDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[TitleDetails]
+  }
+}
+

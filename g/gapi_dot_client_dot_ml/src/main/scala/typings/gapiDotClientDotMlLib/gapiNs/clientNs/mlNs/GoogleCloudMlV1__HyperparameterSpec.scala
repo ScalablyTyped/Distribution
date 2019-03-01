@@ -45,3 +45,22 @@ trait GoogleCloudMlV1__HyperparameterSpec extends js.Object {
   var params: js.UndefOr[js.Array[GoogleCloudMlV1__ParameterSpec]] = js.undefined
 }
 
+object GoogleCloudMlV1__HyperparameterSpec {
+  @scala.inline
+  def apply(
+    goal: java.lang.String = null,
+    hyperparameterMetricTag: java.lang.String = null,
+    maxParallelTrials: scala.Int | scala.Double = null,
+    maxTrials: scala.Int | scala.Double = null,
+    params: js.Array[GoogleCloudMlV1__ParameterSpec] = null
+  ): GoogleCloudMlV1__HyperparameterSpec = {
+    val __obj = js.Dynamic.literal()
+    if (goal != null) __obj.updateDynamic("goal")(goal)
+    if (hyperparameterMetricTag != null) __obj.updateDynamic("hyperparameterMetricTag")(hyperparameterMetricTag)
+    if (maxParallelTrials != null) __obj.updateDynamic("maxParallelTrials")(maxParallelTrials.asInstanceOf[js.Any])
+    if (maxTrials != null) __obj.updateDynamic("maxTrials")(maxTrials.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[GoogleCloudMlV1__HyperparameterSpec]
+  }
+}
+

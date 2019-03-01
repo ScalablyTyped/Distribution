@@ -10,3 +10,13 @@ trait Anon_Faces extends js.Object {
   var vertices: scala.Double
 }
 
+object Anon_Faces {
+  @scala.inline
+  def apply(faces: scala.Double, vertices: scala.Double): Anon_Faces = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("faces")(faces)
+    __obj.updateDynamic("vertices")(vertices)
+    __obj.asInstanceOf[Anon_Faces]
+  }
+}
+

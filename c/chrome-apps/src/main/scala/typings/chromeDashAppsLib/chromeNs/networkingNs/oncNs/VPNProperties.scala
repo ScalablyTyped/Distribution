@@ -19,3 +19,14 @@ trait VPNProperties[M /* <: ManagedObject */, B, S] extends js.Object {
   var Type: js.UndefOr[S] = js.undefined
 }
 
+object VPNProperties {
+  @scala.inline
+  def apply[M /* <: ManagedObject */, B, S](AutoConnect: B = null, Host: S = null, Type: S = null): VPNProperties[M, B, S] = {
+    val __obj = js.Dynamic.literal()
+    if (AutoConnect != null) __obj.updateDynamic("AutoConnect")(AutoConnect.asInstanceOf[js.Any])
+    if (Host != null) __obj.updateDynamic("Host")(Host.asInstanceOf[js.Any])
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VPNProperties[M, B, S]]
+  }
+}
+

@@ -18,3 +18,32 @@ trait ISurveyElement extends js.Object {
   def setVisibleIndex(value: scala.Double): scala.Double
 }
 
+object ISurveyElement {
+  @scala.inline
+  def apply(
+    getType: js.Function0[java.lang.String],
+    isPage: scala.Boolean,
+    isReadOnly: scala.Boolean,
+    isVisible: scala.Boolean,
+    locStrsChanged: js.Function0[js.Any],
+    name: java.lang.String,
+    onFirstRendering: js.Function0[js.Any],
+    onSurveyLoad: js.Function0[js.Any],
+    setSurveyImpl: js.Function1[ISurveyImpl, js.Any],
+    setVisibleIndex: js.Function1[scala.Double, scala.Double]
+  ): ISurveyElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("isPage")(isPage)
+    __obj.updateDynamic("isReadOnly")(isReadOnly)
+    __obj.updateDynamic("isVisible")(isVisible)
+    __obj.updateDynamic("locStrsChanged")(locStrsChanged)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("onFirstRendering")(onFirstRendering)
+    __obj.updateDynamic("onSurveyLoad")(onSurveyLoad)
+    __obj.updateDynamic("setSurveyImpl")(setSurveyImpl)
+    __obj.updateDynamic("setVisibleIndex")(setVisibleIndex)
+    __obj.asInstanceOf[ISurveyElement]
+  }
+}
+

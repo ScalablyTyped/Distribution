@@ -16,3 +16,12 @@ trait ScopeSelector extends js.Object {
   val matchExpressions: js.Array[ScopedResourceSelectorRequirement]
 }
 
+object ScopeSelector {
+  @scala.inline
+  def apply(matchExpressions: js.Array[ScopedResourceSelectorRequirement]): ScopeSelector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("matchExpressions")(matchExpressions)
+    __obj.asInstanceOf[ScopeSelector]
+  }
+}
+

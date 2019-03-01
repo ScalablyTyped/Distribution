@@ -14,3 +14,18 @@ trait ListenRequest extends js.Object {
   var removeTarget: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListenRequest {
+  @scala.inline
+  def apply(
+    addTarget: Target = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    removeTarget: scala.Int | scala.Double = null
+  ): ListenRequest = {
+    val __obj = js.Dynamic.literal()
+    if (addTarget != null) __obj.updateDynamic("addTarget")(addTarget)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (removeTarget != null) __obj.updateDynamic("removeTarget")(removeTarget.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListenRequest]
+  }
+}
+

@@ -87,3 +87,60 @@ trait TernOptions extends js.Object {
   var workerScript: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TernOptions {
+  @scala.inline
+  def apply(
+    completionTip: js.Function1[
+      /* data */ ternLib.libTernMod.CompletionsQueryResult, 
+      java.lang.String | stdLib.HTMLElement | scala.Null
+    ] = null,
+    defs: js.Array[ternLib.libTernMod.Def] = null,
+    fileFilter: js.Function3[
+      /* value */ java.lang.String, 
+      /* docName */ java.lang.String, 
+      /* doc */ Doc, 
+      java.lang.String
+    ] = null,
+    getFile: js.Function2[
+      /* name */ java.lang.String, 
+      /* callback */ js.Function1[/* doc */ Doc | scala.Null, _], 
+      _
+    ] = null,
+    plugins: org.scalablytyped.runtime.StringDictionary[js.Object] = null,
+    responseFilter: js.Function5[
+      /* doc */ Doc, 
+      /* query */ ternLib.libTernMod.Query, 
+      /* request */ ternLib.libTernMod.Document, 
+      /* error */ js.UndefOr[stdLib.Error], 
+      /* data */ js.UndefOr[
+        /* import warning: ImportType.apply Failed type conversion: tern.tern/lib/tern.QueryRegistry[any]['result'] */ js.Any
+      ], 
+      _
+    ] = null,
+    showError: js.Function2[/* editor */ Editor, /* message */ stdLib.Error, _] = null,
+    switchToDoc: js.Function2[/* name */ java.lang.String, /* doc */ Doc, _] = null,
+    typeTip: js.Function1[
+      /* data */ ternLib.libTernMod.TypeQueryResult, 
+      java.lang.String | stdLib.HTMLElement | scala.Null
+    ] = null,
+    useWorker: js.UndefOr[scala.Boolean] = js.undefined,
+    workerDeps: js.Array[java.lang.String] = null,
+    workerScript: java.lang.String = null
+  ): TernOptions = {
+    val __obj = js.Dynamic.literal()
+    if (completionTip != null) __obj.updateDynamic("completionTip")(completionTip)
+    if (defs != null) __obj.updateDynamic("defs")(defs)
+    if (fileFilter != null) __obj.updateDynamic("fileFilter")(fileFilter)
+    if (getFile != null) __obj.updateDynamic("getFile")(getFile)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (responseFilter != null) __obj.updateDynamic("responseFilter")(responseFilter)
+    if (showError != null) __obj.updateDynamic("showError")(showError)
+    if (switchToDoc != null) __obj.updateDynamic("switchToDoc")(switchToDoc)
+    if (typeTip != null) __obj.updateDynamic("typeTip")(typeTip)
+    if (!js.isUndefined(useWorker)) __obj.updateDynamic("useWorker")(useWorker)
+    if (workerDeps != null) __obj.updateDynamic("workerDeps")(workerDeps)
+    if (workerScript != null) __obj.updateDynamic("workerScript")(workerScript)
+    __obj.asInstanceOf[TernOptions]
+  }
+}
+

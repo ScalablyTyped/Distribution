@@ -22,3 +22,34 @@ trait GenericCollection[T] extends js.Object {
   def update(): GenericCollection[T]
 }
 
+object GenericCollection {
+  @scala.inline
+  def apply[T](
+    each: js.Function1[
+      js.Function3[
+        /* element */ T, 
+        /* index */ js.UndefOr[scala.Double], 
+        /* elements */ js.UndefOr[js.Array[T]], 
+        scala.Unit
+      ], 
+      js.Any
+    ],
+    elements: js.Array[T],
+    randomize: js.Function1[js.Any, GenericCollection[T]],
+    rename: js.Function1[java.lang.String, GenericCollection[T]],
+    select: js.Function0[GenericCollection[T]],
+    toGrid: js.Function2[scala.Double, scala.Double, GenericCollection[T]],
+    update: js.Function0[GenericCollection[T]]
+  ): GenericCollection[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("each")(each)
+    __obj.updateDynamic("elements")(elements)
+    __obj.updateDynamic("randomize")(randomize)
+    __obj.updateDynamic("rename")(rename)
+    __obj.updateDynamic("select")(select)
+    __obj.updateDynamic("toGrid")(toGrid)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[GenericCollection[T]]
+  }
+}
+

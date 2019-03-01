@@ -16,3 +16,20 @@ trait Anon_Id[ClientIdName /* <: java.lang.String */] extends js.Object {
   var secretParamName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Id {
+  @scala.inline
+  def apply[ClientIdName /* <: java.lang.String */](
+    id: java.lang.String,
+    secret: java.lang.String,
+    idParamName: ClientIdName = null,
+    secretParamName: java.lang.String = null
+  ): Anon_Id[ClientIdName] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("secret")(secret)
+    if (idParamName != null) __obj.updateDynamic("idParamName")(idParamName.asInstanceOf[js.Any])
+    if (secretParamName != null) __obj.updateDynamic("secretParamName")(secretParamName)
+    __obj.asInstanceOf[Anon_Id[ClientIdName]]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Colors extends js.Object {
   var value: prettyDashFormatLib.Anon_Close
 }
 
+object Colors {
+  @scala.inline
+  def apply(
+    comment: prettyDashFormatLib.Anon_Close,
+    content: prettyDashFormatLib.Anon_Close,
+    prop: prettyDashFormatLib.Anon_Close,
+    tag: prettyDashFormatLib.Anon_Close,
+    value: prettyDashFormatLib.Anon_Close
+  ): Colors = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("prop")(prop)
+    __obj.updateDynamic("tag")(tag)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Colors]
+  }
+}
+

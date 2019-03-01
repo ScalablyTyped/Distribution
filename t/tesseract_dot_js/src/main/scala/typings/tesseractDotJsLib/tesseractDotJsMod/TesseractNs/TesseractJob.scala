@@ -13,3 +13,19 @@ trait TesseractJob extends js.Object {
   def `then`(callback: js.Function1[/* result */ Page, scala.Unit]): TesseractJob
 }
 
+object TesseractJob {
+  @scala.inline
+  def apply(
+    `catch`: js.Function1[js.Function1[/* error */ nodeLib.Error, scala.Unit], TesseractJob],
+    `finally`: js.Function1[js.Function1[/* resultOrError */ nodeLib.Error | Page, scala.Unit], TesseractJob],
+    progress: js.Function1[js.Function1[/* progress */ Progress, scala.Unit], TesseractJob],
+    `then`: js.Function1[js.Function1[/* result */ Page, scala.Unit], TesseractJob],
+    error: js.Function1[/* error */ nodeLib.Error, TesseractJob] = null
+  ): TesseractJob = {
+    val __obj = js.Dynamic.literal(`catch` = `catch`, `finally` = `finally`, `then` = `then`)
+    __obj.updateDynamic("progress")(progress)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[TesseractJob]
+  }
+}
+

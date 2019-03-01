@@ -10,3 +10,17 @@ trait ImageConfigurationsResource extends js.Object {
   def upload(request: gapiDotClientDotGamesconfigurationLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[ImageConfiguration]
 }
 
+object ImageConfigurationsResource {
+  @scala.inline
+  def apply(
+    upload: js.Function1[
+      gapiDotClientDotGamesconfigurationLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ImageConfiguration]
+    ]
+  ): ImageConfigurationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("upload")(upload)
+    __obj.asInstanceOf[ImageConfigurationsResource]
+  }
+}
+

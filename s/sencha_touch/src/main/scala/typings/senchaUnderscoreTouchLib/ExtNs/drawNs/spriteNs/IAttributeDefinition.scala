@@ -66,3 +66,80 @@ trait IAttributeDefinition
   var updaters: js.UndefOr[js.Any] = js.undefined
 }
 
+object IAttributeDefinition {
+  @scala.inline
+  def apply(
+    alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    aliases: js.Any = null,
+    alternateClassName: js.Any = null,
+    animationProcessors: js.Any = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    defaults: js.Any = null,
+    destroy: js.Function0[scala.Unit] = null,
+    dirty: js.Any = null,
+    extend: java.lang.String = null,
+    getAliases: js.Function0[_] = null,
+    getAnimationProcessors: js.Function0[_] = null,
+    getDefaults: js.Function0[_] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getProcessors: js.Function0[_] = null,
+    getUpdaters: js.Function0[_] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    mixins: js.Any = null,
+    normalize: js.Function1[/* changes */ js.UndefOr[js.Any], _] = null,
+    platformConfig: js.Any = null,
+    processors: js.Any = null,
+    self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
+    setAliases: js.Function1[/* aliases */ js.UndefOr[js.Any], scala.Unit] = null,
+    setAnimationProcessors: js.Function1[/* animationProcessors */ js.UndefOr[js.Any], scala.Unit] = null,
+    setDefaults: js.Function1[/* defaults */ js.UndefOr[js.Any], scala.Unit] = null,
+    setProcessors: js.Function1[/* processors */ js.UndefOr[js.Any], scala.Unit] = null,
+    setUpdaters: js.Function1[/* updaters */ js.UndefOr[js.Any], scala.Unit] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    updaters: js.Any = null,
+    uses: senchaUnderscoreTouchLib.ExtNs.Array = null
+  ): IAttributeDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (animationProcessors != null) __obj.updateDynamic("animationProcessors")(animationProcessors)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (dirty != null) __obj.updateDynamic("dirty")(dirty)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (getAliases != null) __obj.updateDynamic("getAliases")(getAliases)
+    if (getAnimationProcessors != null) __obj.updateDynamic("getAnimationProcessors")(getAnimationProcessors)
+    if (getDefaults != null) __obj.updateDynamic("getDefaults")(getDefaults)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getProcessors != null) __obj.updateDynamic("getProcessors")(getProcessors)
+    if (getUpdaters != null) __obj.updateDynamic("getUpdaters")(getUpdaters)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (normalize != null) __obj.updateDynamic("normalize")(normalize)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (processors != null) __obj.updateDynamic("processors")(processors)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (setAliases != null) __obj.updateDynamic("setAliases")(setAliases)
+    if (setAnimationProcessors != null) __obj.updateDynamic("setAnimationProcessors")(setAnimationProcessors)
+    if (setDefaults != null) __obj.updateDynamic("setDefaults")(setDefaults)
+    if (setProcessors != null) __obj.updateDynamic("setProcessors")(setProcessors)
+    if (setUpdaters != null) __obj.updateDynamic("setUpdaters")(setUpdaters)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (updaters != null) __obj.updateDynamic("updaters")(updaters)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IAttributeDefinition]
+  }
+}
+

@@ -46,3 +46,32 @@ trait Model extends js.Object {
   var scope: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    cursorAt: js.Any = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    distance: scala.Int | scala.Double = null,
+    handle: java.lang.String = null,
+    helper: js.Function1[/* e */ HelperEventArgs, scala.Unit] = null,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    minHeight: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    scope: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (cursorAt != null) __obj.updateDynamic("cursorAt")(cursorAt)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (helper != null) __obj.updateDynamic("helper")(helper)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Model]
+  }
+}
+

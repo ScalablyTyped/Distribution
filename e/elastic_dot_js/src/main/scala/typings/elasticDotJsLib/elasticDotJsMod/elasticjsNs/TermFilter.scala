@@ -38,3 +38,26 @@ trait TermFilter extends Filter {
   def toJSON(): TermFilter
 }
 
+object TermFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, TermFilter],
+    cacheKey: js.Function1[java.lang.String, TermFilter],
+    field: js.Function1[java.lang.String, TermFilter],
+    name: js.Function1[java.lang.String, TermFilter],
+    term: js.Function0[TermFilter],
+    toJSON: js.Function0[TermFilter]
+  ): TermFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("term")(term)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[TermFilter]
+  }
+}
+

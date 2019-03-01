@@ -12,3 +12,20 @@ trait PanOptions extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PanOptions {
+  @scala.inline
+  def apply(
+    source: openlayersLib.openlayersMod.Coordinate,
+    duration: scala.Int | scala.Double = null,
+    easing: js.Function1[/* t */ scala.Double, scala.Double] = null,
+    start: scala.Int | scala.Double = null
+  ): PanOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PanOptions]
+  }
+}
+

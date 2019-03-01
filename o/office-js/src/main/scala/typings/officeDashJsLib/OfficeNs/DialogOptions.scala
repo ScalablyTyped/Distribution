@@ -37,3 +37,22 @@ trait DialogOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DialogOptions {
+  @scala.inline
+  def apply(
+    asyncContext: js.Any = null,
+    displayInIframe: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    promptBeforeOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): DialogOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (!js.isUndefined(displayInIframe)) __obj.updateDynamic("displayInIframe")(displayInIframe)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(promptBeforeOpen)) __obj.updateDynamic("promptBeforeOpen")(promptBeforeOpen)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogOptions]
+  }
+}
+

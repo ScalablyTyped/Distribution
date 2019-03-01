@@ -14,3 +14,20 @@ trait Anon_DebugError extends js.Object {
   var shimPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DebugError {
+  @scala.inline
+  def apply(
+    logLevel: phantomLib.phantomLibStrings.debug | phantomLib.phantomLibStrings.info | phantomLib.phantomLibStrings.warn | phantomLib.phantomLibStrings.error = null,
+    logger: Anon_Debug = null,
+    phantomPath: java.lang.String = null,
+    shimPath: java.lang.String = null
+  ): Anon_DebugError = {
+    val __obj = js.Dynamic.literal()
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (phantomPath != null) __obj.updateDynamic("phantomPath")(phantomPath)
+    if (shimPath != null) __obj.updateDynamic("shimPath")(shimPath)
+    __obj.asInstanceOf[Anon_DebugError]
+  }
+}
+

@@ -19,3 +19,13 @@ trait SaveSettingsOptions extends js.Object {
   var overwriteIfStale: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SaveSettingsOptions {
+  @scala.inline
+  def apply(asyncContext: js.Any = null, overwriteIfStale: js.UndefOr[scala.Boolean] = js.undefined): SaveSettingsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (!js.isUndefined(overwriteIfStale)) __obj.updateDynamic("overwriteIfStale")(overwriteIfStale)
+    __obj.asInstanceOf[SaveSettingsOptions]
+  }
+}
+

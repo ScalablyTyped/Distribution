@@ -26,3 +26,30 @@ trait FlashFontItem extends js.Object {
   var size: scala.Double
 }
 
+object FlashFontItem {
+  @scala.inline
+  def apply(
+    bitmap: scala.Boolean,
+    bold: scala.Boolean,
+    embedRanges: java.lang.String,
+    embedVariantGlyphs: scala.Boolean,
+    embeddedCharacters: java.lang.String,
+    font: java.lang.String,
+    isDefineFont4Symbol: scala.Boolean,
+    italic: scala.Boolean,
+    size: scala.Double
+  ): FlashFontItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bitmap")(bitmap)
+    __obj.updateDynamic("bold")(bold)
+    __obj.updateDynamic("embedRanges")(embedRanges)
+    __obj.updateDynamic("embedVariantGlyphs")(embedVariantGlyphs)
+    __obj.updateDynamic("embeddedCharacters")(embeddedCharacters)
+    __obj.updateDynamic("font")(font)
+    __obj.updateDynamic("isDefineFont4Symbol")(isDefineFont4Symbol)
+    __obj.updateDynamic("italic")(italic)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[FlashFontItem]
+  }
+}
+

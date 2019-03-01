@@ -12,3 +12,20 @@ trait LoginResult extends js.Object {
   var isCancelled: scala.Boolean
 }
 
+object LoginResult {
+  @scala.inline
+  def apply(
+    error: js.Any,
+    isCancelled: scala.Boolean,
+    declinedPermissions: js.Array[Permissions] = null,
+    grantedPermissions: js.Array[Permissions] = null
+  ): LoginResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("isCancelled")(isCancelled)
+    if (declinedPermissions != null) __obj.updateDynamic("declinedPermissions")(declinedPermissions)
+    if (grantedPermissions != null) __obj.updateDynamic("grantedPermissions")(grantedPermissions)
+    __obj.asInstanceOf[LoginResult]
+  }
+}
+

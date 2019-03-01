@@ -16,3 +16,12 @@ trait ASPxClientImageSliderItemEventArgs extends ASPxClientEventArgs {
   var item: ASPxClientImageSliderItem
 }
 
+object ASPxClientImageSliderItemEventArgs {
+  @scala.inline
+  def apply(item: ASPxClientImageSliderItem): ASPxClientImageSliderItemEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[ASPxClientImageSliderItemEventArgs]
+  }
+}
+

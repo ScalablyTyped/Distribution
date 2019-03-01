@@ -29,3 +29,21 @@ trait ZoombarProviderDefaultSettings
   var zoomChangedCallback: js.UndefOr[js.Any] = js.undefined
 }
 
+object ZoombarProviderDefaultSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for ZoombarProviderDefaultSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    targetObject: js.Any = null,
+    zoomChangedCallback: js.Any = null
+  ): ZoombarProviderDefaultSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (targetObject != null) __obj.updateDynamic("targetObject")(targetObject)
+    if (zoomChangedCallback != null) __obj.updateDynamic("zoomChangedCallback")(zoomChangedCallback)
+    __obj.asInstanceOf[ZoombarProviderDefaultSettings]
+  }
+}
+

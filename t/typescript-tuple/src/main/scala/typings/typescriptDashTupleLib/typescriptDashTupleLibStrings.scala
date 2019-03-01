@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object typescriptDashTupleLibStrings {
   @js.native
-  sealed trait equal extends js.Object
+  sealed trait equal
+    extends typescriptDashTupleLib.libUtilsMod.CompareLength[js.Any, js.Any]
   
   @js.native
-  sealed trait shorterLeft extends js.Object
+  sealed trait shorterLeft
+    extends typescriptDashTupleLib.libUtilsMod.CompareLength[js.Any, js.Any]
   
   @js.native
-  sealed trait shorterRight extends js.Object
+  sealed trait shorterRight
+    extends typescriptDashTupleLib.libUtilsMod.CompareLength[js.Any, js.Any]
   
   @scala.inline
   def equal: equal = "equal".asInstanceOf[equal]

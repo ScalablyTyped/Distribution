@@ -11,3 +11,18 @@ trait StockChartNavigatorHint extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StockChartNavigatorHint {
+  @scala.inline
+  def apply(
+    format: java.lang.String = null,
+    template: java.lang.String | js.Function = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): StockChartNavigatorHint = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[StockChartNavigatorHint]
+  }
+}
+

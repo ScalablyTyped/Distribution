@@ -16,3 +16,12 @@ trait RuntimeData extends js.Object {
   var enableEvents: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RuntimeData {
+  @scala.inline
+  def apply(enableEvents: js.UndefOr[scala.Boolean] = js.undefined): RuntimeData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableEvents)) __obj.updateDynamic("enableEvents")(enableEvents)
+    __obj.asInstanceOf[RuntimeData]
+  }
+}
+

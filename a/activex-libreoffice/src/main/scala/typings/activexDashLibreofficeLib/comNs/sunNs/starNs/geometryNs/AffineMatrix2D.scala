@@ -36,3 +36,24 @@ trait AffineMatrix2D extends js.Object {
   var m12: scala.Double
 }
 
+object AffineMatrix2D {
+  @scala.inline
+  def apply(
+    m00: scala.Double,
+    m01: scala.Double,
+    m02: scala.Double,
+    m10: scala.Double,
+    m11: scala.Double,
+    m12: scala.Double
+  ): AffineMatrix2D = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("m00")(m00)
+    __obj.updateDynamic("m01")(m01)
+    __obj.updateDynamic("m02")(m02)
+    __obj.updateDynamic("m10")(m10)
+    __obj.updateDynamic("m11")(m11)
+    __obj.updateDynamic("m12")(m12)
+    __obj.asInstanceOf[AffineMatrix2D]
+  }
+}
+

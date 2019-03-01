@@ -12,3 +12,22 @@ trait RegionsResource extends js.Object {
   def list(request: gapiDotClientDotComputeLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[RegionList]
 }
 
+object RegionsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegion, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Region]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RegionList]
+    ]
+  ): RegionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[RegionsResource]
+  }
+}
+

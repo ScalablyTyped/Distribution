@@ -19,3 +19,16 @@ trait ConverterOptions extends js.Object {
   var wrapNumbers: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConverterOptions {
+  @scala.inline
+  def apply(
+    convertEmptyValues: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapNumbers: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConverterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(convertEmptyValues)) __obj.updateDynamic("convertEmptyValues")(convertEmptyValues)
+    if (!js.isUndefined(wrapNumbers)) __obj.updateDynamic("wrapNumbers")(wrapNumbers)
+    __obj.asInstanceOf[ConverterOptions]
+  }
+}
+

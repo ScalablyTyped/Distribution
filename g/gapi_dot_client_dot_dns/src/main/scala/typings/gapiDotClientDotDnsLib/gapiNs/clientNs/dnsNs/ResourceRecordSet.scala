@@ -18,3 +18,22 @@ trait ResourceRecordSet extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResourceRecordSet {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    rrdatas: js.Array[java.lang.String] = null,
+    ttl: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): ResourceRecordSet = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (rrdatas != null) __obj.updateDynamic("rrdatas")(rrdatas)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ResourceRecordSet]
+  }
+}
+

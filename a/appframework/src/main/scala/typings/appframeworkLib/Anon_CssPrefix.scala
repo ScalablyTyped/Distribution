@@ -12,3 +12,20 @@ trait Anon_CssPrefix extends js.Object {
   var nativeTouchScroll: scala.Boolean
 }
 
+object Anon_CssPrefix {
+  @scala.inline
+  def apply(
+    cssPrefix: java.lang.String,
+    cssTransformEnd: java.lang.String,
+    cssTransformStart: java.lang.String,
+    nativeTouchScroll: scala.Boolean
+  ): Anon_CssPrefix = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cssPrefix")(cssPrefix)
+    __obj.updateDynamic("cssTransformEnd")(cssTransformEnd)
+    __obj.updateDynamic("cssTransformStart")(cssTransformStart)
+    __obj.updateDynamic("nativeTouchScroll")(nativeTouchScroll)
+    __obj.asInstanceOf[Anon_CssPrefix]
+  }
+}
+

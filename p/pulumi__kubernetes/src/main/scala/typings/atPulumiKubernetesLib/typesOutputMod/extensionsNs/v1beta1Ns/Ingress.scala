@@ -42,3 +42,22 @@ trait Ingress extends js.Object {
   val status: IngressStatus
 }
 
+object Ingress {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`extensions/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Ingress,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: IngressSpec,
+    status: IngressStatus
+  ): Ingress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Ingress]
+  }
+}
+

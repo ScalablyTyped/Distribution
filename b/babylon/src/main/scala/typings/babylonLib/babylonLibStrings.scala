@@ -7,52 +7,66 @@ import scala.scalajs.js.annotation._
 
 object babylonLibStrings {
   @js.native
-  sealed trait asyncGenerators extends js.Object
+  sealed trait asyncGenerators
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait classConstructorCall extends js.Object
+  sealed trait classConstructorCall
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait classProperties extends js.Object
+  sealed trait classProperties
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait decorators extends js.Object
+  sealed trait decorators
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait doExpressions extends js.Object
+  sealed trait doExpressions
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait dynamicImport extends js.Object
+  sealed trait dynamicImport
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait estree extends js.Object
+  sealed trait estree
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait exportExtensions extends js.Object
+  sealed trait exportExtensions
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait flow extends js.Object
+  sealed trait flow
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait functionBind extends js.Object
+  sealed trait functionBind
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait functionSent extends js.Object
+  sealed trait functionSent
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
-  sealed trait jsx extends js.Object
+  sealed trait jsx
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
   sealed trait module extends js.Object
   
   @js.native
-  sealed trait objectRestSpread extends js.Object
+  sealed trait objectRestSpread
+    extends babylonLib.babylonMod.PluginName
   
   @js.native
   sealed trait script extends js.Object
   
   @js.native
-  sealed trait typescript extends js.Object
+  sealed trait typescript
+    extends babylonLib.babylonMod.PluginName
   
   @scala.inline
   def asyncGenerators: asyncGenerators = "asyncGenerators".asInstanceOf[asyncGenerators]

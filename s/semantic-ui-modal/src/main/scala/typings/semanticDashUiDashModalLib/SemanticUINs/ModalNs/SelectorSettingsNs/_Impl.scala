@@ -20,3 +20,14 @@ trait _Impl extends js.Object {
   var deny: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(approve: java.lang.String, close: java.lang.String, deny: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("approve")(approve)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("deny")(deny)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

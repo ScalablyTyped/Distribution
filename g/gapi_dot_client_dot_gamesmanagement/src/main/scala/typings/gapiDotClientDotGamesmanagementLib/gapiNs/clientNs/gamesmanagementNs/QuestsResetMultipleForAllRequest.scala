@@ -12,3 +12,13 @@ trait QuestsResetMultipleForAllRequest extends js.Object {
   var quest_ids: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object QuestsResetMultipleForAllRequest {
+  @scala.inline
+  def apply(kind: java.lang.String = null, quest_ids: js.Array[java.lang.String] = null): QuestsResetMultipleForAllRequest = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (quest_ids != null) __obj.updateDynamic("quest_ids")(quest_ids)
+    __obj.asInstanceOf[QuestsResetMultipleForAllRequest]
+  }
+}
+

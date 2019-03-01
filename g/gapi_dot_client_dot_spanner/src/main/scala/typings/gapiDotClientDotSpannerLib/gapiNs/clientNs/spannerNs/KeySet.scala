@@ -26,3 +26,18 @@ trait KeySet extends js.Object {
   var ranges: js.UndefOr[js.Array[KeyRange]] = js.undefined
 }
 
+object KeySet {
+  @scala.inline
+  def apply(
+    all: js.UndefOr[scala.Boolean] = js.undefined,
+    keys: js.Array[js.Array[_]] = null,
+    ranges: js.Array[KeyRange] = null
+  ): KeySet = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(all)) __obj.updateDynamic("all")(all)
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    __obj.asInstanceOf[KeySet]
+  }
+}
+

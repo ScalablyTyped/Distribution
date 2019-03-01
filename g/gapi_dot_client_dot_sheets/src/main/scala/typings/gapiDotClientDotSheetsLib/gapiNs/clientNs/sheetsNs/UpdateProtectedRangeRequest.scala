@@ -16,3 +16,13 @@ trait UpdateProtectedRangeRequest extends js.Object {
   var protectedRange: js.UndefOr[ProtectedRange] = js.undefined
 }
 
+object UpdateProtectedRangeRequest {
+  @scala.inline
+  def apply(fields: java.lang.String = null, protectedRange: ProtectedRange = null): UpdateProtectedRangeRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (protectedRange != null) __obj.updateDynamic("protectedRange")(protectedRange)
+    __obj.asInstanceOf[UpdateProtectedRangeRequest]
+  }
+}
+

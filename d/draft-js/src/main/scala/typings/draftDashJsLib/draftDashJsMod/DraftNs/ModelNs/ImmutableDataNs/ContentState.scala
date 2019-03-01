@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* RemoveDifficultInheritance: 
-- Lifted 1 members from Set(std.Record) */ @js.native
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in keyof any ]: any} */ @js.native
 trait ContentState extends js.Object {
   def addEntity(instance: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.EntityNs.DraftEntityInstance): ContentState = js.native
   def createEntity(
@@ -24,6 +24,7 @@ trait ContentState extends js.Object {
   def getBlockMap(): BlockMap = js.native
   def getBlocksAsArray(): js.Array[ContentBlock] = js.native
   def getEntity(key: java.lang.String): js.Any = js.native
+  def getEntityMap(): js.Any = js.native
   def getFirstBlock(): ContentBlock = js.native
   def getKeyAfter(key: java.lang.String): java.lang.String = js.native
   def getKeyBefore(key: java.lang.String): java.lang.String = js.native
@@ -34,7 +35,7 @@ trait ContentState extends js.Object {
   def getSelectionAfter(): SelectionState = js.native
   def getSelectionBefore(): SelectionState = js.native
   def hasText(): scala.Boolean = js.native
-  def mergeEntityData(key: java.lang.String, toMerge: ScalablyTyped.runtime.StringDictionary[js.Any]): ContentState = js.native
-  def replaceEntityData(key: java.lang.String, toMerge: ScalablyTyped.runtime.StringDictionary[js.Any]): ContentState = js.native
+  def mergeEntityData(key: java.lang.String, toMerge: org.scalablytyped.runtime.StringDictionary[js.Any]): ContentState = js.native
+  def replaceEntityData(key: java.lang.String, toMerge: org.scalablytyped.runtime.StringDictionary[js.Any]): ContentState = js.native
 }
 

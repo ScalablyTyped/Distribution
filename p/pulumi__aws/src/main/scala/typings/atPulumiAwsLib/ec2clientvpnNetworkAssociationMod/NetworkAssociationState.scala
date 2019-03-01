@@ -30,3 +30,22 @@ trait NetworkAssociationState extends js.Object {
   val vpcId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object NetworkAssociationState {
+  @scala.inline
+  def apply(
+    clientVpnEndpointId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): NetworkAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (clientVpnEndpointId != null) __obj.updateDynamic("clientVpnEndpointId")(clientVpnEndpointId.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    if (vpcId != null) __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkAssociationState]
+  }
+}
+

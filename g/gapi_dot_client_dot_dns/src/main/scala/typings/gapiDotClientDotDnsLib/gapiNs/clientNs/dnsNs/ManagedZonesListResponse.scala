@@ -21,3 +21,18 @@ trait ManagedZonesListResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ManagedZonesListResponse {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    managedZones: js.Array[ManagedZone] = null,
+    nextPageToken: java.lang.String = null
+  ): ManagedZonesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (managedZones != null) __obj.updateDynamic("managedZones")(managedZones)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ManagedZonesListResponse]
+  }
+}
+

@@ -47,3 +47,22 @@ trait ViewOpenParameters extends js.Object {
   var viewtype: xrmLib.XrmEnumNs.ViewType
 }
 
+object ViewOpenParameters {
+  @scala.inline
+  def apply(
+    etn: java.lang.String,
+    viewid: java.lang.String,
+    viewtype: xrmLib.XrmEnumNs.ViewType,
+    cmdbar: CmdBarDisplay = null,
+    navbar: NavBarDisplay = null
+  ): ViewOpenParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("etn")(etn)
+    __obj.updateDynamic("viewid")(viewid)
+    __obj.updateDynamic("viewtype")(viewtype)
+    if (cmdbar != null) __obj.updateDynamic("cmdbar")(cmdbar)
+    if (navbar != null) __obj.updateDynamic("navbar")(navbar)
+    __obj.asInstanceOf[ViewOpenParameters]
+  }
+}
+

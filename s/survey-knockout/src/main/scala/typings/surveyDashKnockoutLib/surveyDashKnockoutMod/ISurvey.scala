@@ -76,3 +76,146 @@ trait ISurvey
   def validateQuestion(question: IQuestion): SurveyError
 }
 
+object ISurvey {
+  @scala.inline
+  def apply(
+    afterRenderPage: js.Function1[js.Any, js.Any],
+    afterRenderPanel: js.Function2[IElement, js.Any, js.Any],
+    afterRenderQuestion: js.Function2[IQuestion, js.Any, js.Any],
+    areInvisibleElementsShowing: scala.Boolean,
+    clearFiles: js.Function4[
+      java.lang.String, 
+      js.Any, 
+      java.lang.String, 
+      js.Function2[/* status */ java.lang.String, /* data */ js.Any, _], 
+      js.Any
+    ],
+    clearValueOnDisableItems: scala.Boolean,
+    currentPage: IPage,
+    downloadFile: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      js.Function2[/* status */ java.lang.String, /* data */ js.Any, _], 
+      js.Any
+    ],
+    dragAndDropAllow: js.Function1[js.Any, scala.Boolean],
+    dynamicPanelAdded: js.Function1[IQuestion, js.Any],
+    dynamicPanelItemValueChanged: js.Function2[IQuestion, js.Any, js.Any],
+    dynamicPanelRemoved: js.Function2[IQuestion, scala.Double, js.Any],
+    getErrorCustomText: js.Function2[java.lang.String, SurveyError, java.lang.String],
+    getLocale: js.Function0[java.lang.String],
+    getMarkdownHtml: js.Function1[java.lang.String, java.lang.String],
+    getProcessedText: js.Function1[java.lang.String, java.lang.String],
+    getQuestionTitleTemplate: js.Function0[java.lang.String],
+    getSurveyMarkdownHtml: js.Function2[Base, java.lang.String, java.lang.String],
+    getUpdatedQuestionTitle: js.Function2[IQuestion, java.lang.String, java.lang.String],
+    hasVisibleQuestionByValueName: js.Function1[java.lang.String, scala.Boolean],
+    isDesignMode: scala.Boolean,
+    isDisplayMode: scala.Boolean,
+    isLoadingFromJson: scala.Boolean,
+    isPageStarted: js.Function1[IPage, scala.Boolean],
+    matrixAfterCellRender: js.Function2[IQuestion, js.Any, js.Any],
+    matrixBeforeRowAdded: js.Function1[surveyDashKnockoutLib.Anon_CanAddRow, js.Any],
+    matrixCellCreated: js.Function2[IQuestion, js.Any, js.Any],
+    matrixCellValidate: js.Function2[IQuestion, js.Any, SurveyError],
+    matrixCellValueChanged: js.Function2[IQuestion, js.Any, js.Any],
+    matrixCellValueChanging: js.Function2[IQuestion, js.Any, js.Any],
+    matrixRowAdded: js.Function1[IQuestion, js.Any],
+    matrixRowRemoved: js.Function3[IQuestion, scala.Double, js.Any, js.Any],
+    maxOthersLength: scala.Double,
+    maxTextLength: scala.Double,
+    pageVisibilityChanged: js.Function2[IPage, scala.Boolean, js.Any],
+    pages: js.Array[IPage],
+    panelAdded: js.Function4[IElement, scala.Double, js.Any, js.Any, js.Any],
+    panelRemoved: js.Function1[IElement, js.Any],
+    panelVisibilityChanged: js.Function2[IPanel, scala.Boolean, js.Any],
+    processHtml: js.Function1[java.lang.String, java.lang.String],
+    processText: js.Function2[java.lang.String, scala.Boolean, java.lang.String],
+    processTextEx: js.Function3[java.lang.String, scala.Boolean, scala.Boolean, js.Any],
+    questionAdded: js.Function4[IQuestion, scala.Double, js.Any, js.Any, js.Any],
+    questionCountByValueName: js.Function1[java.lang.String, scala.Double],
+    questionErrorLocation: java.lang.String,
+    questionRemoved: js.Function1[IQuestion, js.Any],
+    questionRenamed: js.Function3[IQuestion, java.lang.String, java.lang.String, js.Any],
+    questionStartIndex: java.lang.String,
+    questionTitleLocation: java.lang.String,
+    questionVisibilityChanged: js.Function2[IQuestion, scala.Boolean, js.Any],
+    questionsOrder: java.lang.String,
+    requiredText: java.lang.String,
+    storeOthersAsComment: scala.Boolean,
+    updateChoicesFromServer: js.Function3[IQuestion, js.Array[_], js.Any, js.Array[_]],
+    updatePanelCssClasses: js.Function2[IPanel, js.Any, js.Any],
+    updateQuestionCssClasses: js.Function2[IQuestion, js.Any, js.Any],
+    uploadFiles: js.Function3[
+      java.lang.String, 
+      js.Array[stdLib.File], 
+      js.Function2[/* status */ java.lang.String, /* data */ js.Any, _], 
+      js.Any
+    ],
+    validatePanel: js.Function1[IPanel, SurveyError],
+    validateQuestion: js.Function1[IQuestion, SurveyError]
+  ): ISurvey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("afterRenderPage")(afterRenderPage)
+    __obj.updateDynamic("afterRenderPanel")(afterRenderPanel)
+    __obj.updateDynamic("afterRenderQuestion")(afterRenderQuestion)
+    __obj.updateDynamic("areInvisibleElementsShowing")(areInvisibleElementsShowing)
+    __obj.updateDynamic("clearFiles")(clearFiles)
+    __obj.updateDynamic("clearValueOnDisableItems")(clearValueOnDisableItems)
+    __obj.updateDynamic("currentPage")(currentPage)
+    __obj.updateDynamic("downloadFile")(downloadFile)
+    __obj.updateDynamic("dragAndDropAllow")(dragAndDropAllow)
+    __obj.updateDynamic("dynamicPanelAdded")(dynamicPanelAdded)
+    __obj.updateDynamic("dynamicPanelItemValueChanged")(dynamicPanelItemValueChanged)
+    __obj.updateDynamic("dynamicPanelRemoved")(dynamicPanelRemoved)
+    __obj.updateDynamic("getErrorCustomText")(getErrorCustomText)
+    __obj.updateDynamic("getLocale")(getLocale)
+    __obj.updateDynamic("getMarkdownHtml")(getMarkdownHtml)
+    __obj.updateDynamic("getProcessedText")(getProcessedText)
+    __obj.updateDynamic("getQuestionTitleTemplate")(getQuestionTitleTemplate)
+    __obj.updateDynamic("getSurveyMarkdownHtml")(getSurveyMarkdownHtml)
+    __obj.updateDynamic("getUpdatedQuestionTitle")(getUpdatedQuestionTitle)
+    __obj.updateDynamic("hasVisibleQuestionByValueName")(hasVisibleQuestionByValueName)
+    __obj.updateDynamic("isDesignMode")(isDesignMode)
+    __obj.updateDynamic("isDisplayMode")(isDisplayMode)
+    __obj.updateDynamic("isLoadingFromJson")(isLoadingFromJson)
+    __obj.updateDynamic("isPageStarted")(isPageStarted)
+    __obj.updateDynamic("matrixAfterCellRender")(matrixAfterCellRender)
+    __obj.updateDynamic("matrixBeforeRowAdded")(matrixBeforeRowAdded)
+    __obj.updateDynamic("matrixCellCreated")(matrixCellCreated)
+    __obj.updateDynamic("matrixCellValidate")(matrixCellValidate)
+    __obj.updateDynamic("matrixCellValueChanged")(matrixCellValueChanged)
+    __obj.updateDynamic("matrixCellValueChanging")(matrixCellValueChanging)
+    __obj.updateDynamic("matrixRowAdded")(matrixRowAdded)
+    __obj.updateDynamic("matrixRowRemoved")(matrixRowRemoved)
+    __obj.updateDynamic("maxOthersLength")(maxOthersLength)
+    __obj.updateDynamic("maxTextLength")(maxTextLength)
+    __obj.updateDynamic("pageVisibilityChanged")(pageVisibilityChanged)
+    __obj.updateDynamic("pages")(pages)
+    __obj.updateDynamic("panelAdded")(panelAdded)
+    __obj.updateDynamic("panelRemoved")(panelRemoved)
+    __obj.updateDynamic("panelVisibilityChanged")(panelVisibilityChanged)
+    __obj.updateDynamic("processHtml")(processHtml)
+    __obj.updateDynamic("processText")(processText)
+    __obj.updateDynamic("processTextEx")(processTextEx)
+    __obj.updateDynamic("questionAdded")(questionAdded)
+    __obj.updateDynamic("questionCountByValueName")(questionCountByValueName)
+    __obj.updateDynamic("questionErrorLocation")(questionErrorLocation)
+    __obj.updateDynamic("questionRemoved")(questionRemoved)
+    __obj.updateDynamic("questionRenamed")(questionRenamed)
+    __obj.updateDynamic("questionStartIndex")(questionStartIndex)
+    __obj.updateDynamic("questionTitleLocation")(questionTitleLocation)
+    __obj.updateDynamic("questionVisibilityChanged")(questionVisibilityChanged)
+    __obj.updateDynamic("questionsOrder")(questionsOrder)
+    __obj.updateDynamic("requiredText")(requiredText)
+    __obj.updateDynamic("storeOthersAsComment")(storeOthersAsComment)
+    __obj.updateDynamic("updateChoicesFromServer")(updateChoicesFromServer)
+    __obj.updateDynamic("updatePanelCssClasses")(updatePanelCssClasses)
+    __obj.updateDynamic("updateQuestionCssClasses")(updateQuestionCssClasses)
+    __obj.updateDynamic("uploadFiles")(uploadFiles)
+    __obj.updateDynamic("validatePanel")(validatePanel)
+    __obj.updateDynamic("validateQuestion")(validateQuestion)
+    __obj.asInstanceOf[ISurvey]
+  }
+}
+

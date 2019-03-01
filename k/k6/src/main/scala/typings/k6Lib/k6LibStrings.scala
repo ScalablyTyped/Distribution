@@ -10,10 +10,12 @@ object k6LibStrings {
   sealed trait b extends js.Object
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends k6Lib.cryptoMod.OutputEncoding
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends k6Lib.cryptoMod.OutputEncoding
   
   @scala.inline
   def b: b = "b".asInstanceOf[b]

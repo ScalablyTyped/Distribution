@@ -14,3 +14,12 @@ trait UseDualstackConfigOptions extends js.Object {
   var useDualstack: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UseDualstackConfigOptions {
+  @scala.inline
+  def apply(useDualstack: js.UndefOr[scala.Boolean] = js.undefined): UseDualstackConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(useDualstack)) __obj.updateDynamic("useDualstack")(useDualstack)
+    __obj.asInstanceOf[UseDualstackConfigOptions]
+  }
+}
+

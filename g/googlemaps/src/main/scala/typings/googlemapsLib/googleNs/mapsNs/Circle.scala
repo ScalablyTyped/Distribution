@@ -11,7 +11,9 @@ import scala.scalajs.js.annotation._
   * Create a circle using the passed CircleOptions, which specify the
   * center, radius, and style.
   */
-class Circle () extends MVCObject {
+class Circle ()
+  extends MVCObject
+     with googlemapsLib.googleNs.mapsNs.placesNs._LocationBias {
   def this(opts: CircleOptions) = this()
   /** Gets the LatLngBounds of this Circle. */
   def getBounds(): LatLngBounds = js.native

@@ -82,3 +82,35 @@ trait XNamedGraph extends XURI {
   def removeStatements(Subject: XResource, Predicate: XURI, Object: XNode): scala.Unit
 }
 
+object XNamedGraph {
+  @scala.inline
+  def apply(
+    LocalName: java.lang.String,
+    Name: XURI,
+    Namespace: java.lang.String,
+    StringValue: java.lang.String,
+    addStatement: js.Function3[XResource, XURI, XNode, scala.Unit],
+    clear: js.Function0[scala.Unit],
+    getName: js.Function0[XURI],
+    getStatements: js.Function3[
+      XResource, 
+      XURI, 
+      XNode, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration
+    ],
+    removeStatements: js.Function3[XResource, XURI, XNode, scala.Unit]
+  ): XNamedGraph = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LocalName")(LocalName)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Namespace")(Namespace)
+    __obj.updateDynamic("StringValue")(StringValue)
+    __obj.updateDynamic("addStatement")(addStatement)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getStatements")(getStatements)
+    __obj.updateDynamic("removeStatements")(removeStatements)
+    __obj.asInstanceOf[XNamedGraph]
+  }
+}
+

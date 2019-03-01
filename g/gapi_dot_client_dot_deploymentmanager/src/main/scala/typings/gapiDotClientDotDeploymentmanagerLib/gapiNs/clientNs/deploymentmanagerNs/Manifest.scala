@@ -28,3 +28,28 @@ trait Manifest extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Manifest {
+  @scala.inline
+  def apply(
+    config: ConfigFile = null,
+    expandedConfig: java.lang.String = null,
+    id: java.lang.String = null,
+    imports: js.Array[ImportFile] = null,
+    insertTime: java.lang.String = null,
+    layout: java.lang.String = null,
+    name: java.lang.String = null,
+    selfLink: java.lang.String = null
+  ): Manifest = {
+    val __obj = js.Dynamic.literal()
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (expandedConfig != null) __obj.updateDynamic("expandedConfig")(expandedConfig)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imports != null) __obj.updateDynamic("imports")(imports)
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Manifest]
+  }
+}
+

@@ -27,3 +27,30 @@ trait Narrative extends Element {
   var status: code
 }
 
+object Narrative {
+  @scala.inline
+  def apply(
+    div: java.lang.String,
+    status: code,
+    _div: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _status: Element = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null
+  ): Narrative = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("div")(div)
+    __obj.updateDynamic("status")(status)
+    if (_div != null) __obj.updateDynamic("_div")(_div)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[Narrative]
+  }
+}
+

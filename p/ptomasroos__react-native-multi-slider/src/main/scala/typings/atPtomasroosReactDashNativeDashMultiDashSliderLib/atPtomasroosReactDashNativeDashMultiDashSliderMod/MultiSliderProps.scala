@@ -39,3 +39,74 @@ trait MultiSliderProps extends js.Object {
   var values: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object MultiSliderProps {
+  @scala.inline
+  def apply(
+    allowOverlap: js.UndefOr[scala.Boolean] = js.undefined,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    customMarker: reactLib.reactMod.ReactNs.ComponentType[MarkerProps] = null,
+    customMarkerLeft: reactLib.reactMod.ReactNs.ComponentType[MarkerProps] = null,
+    customMarkerRight: reactLib.reactMod.ReactNs.ComponentType[MarkerProps] = null,
+    enabledOne: js.UndefOr[scala.Boolean] = js.undefined,
+    enabledTwo: js.UndefOr[scala.Boolean] = js.undefined,
+    isMarkersSeparated: js.UndefOr[scala.Boolean] = js.undefined,
+    markerContainerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    markerOffsetX: scala.Int | scala.Double = null,
+    markerOffsetY: scala.Int | scala.Double = null,
+    markerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    onToggleOne: js.Function0[scala.Unit] = null,
+    onToggleTwo: js.Function0[scala.Unit] = null,
+    onValuesChange: js.Function1[/* values */ js.Array[scala.Double], scala.Unit] = null,
+    onValuesChangeFinish: js.Function1[/* values */ js.Array[scala.Double], scala.Unit] = null,
+    onValuesChangeStart: js.Function0[scala.Unit] = null,
+    optionsArray: js.Array[scala.Double] = null,
+    pressedMarkerStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    selectedStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    sliderLength: scala.Int | scala.Double = null,
+    snapped: js.UndefOr[scala.Boolean] = js.undefined,
+    step: scala.Int | scala.Double = null,
+    touchDimensions: atPtomasroosReactDashNativeDashMultiDashSliderLib.Anon_BorderRadius = null,
+    trackStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    unselectedStyle: reactDashNativeLib.reactDashNativeMod.ViewStyle = null,
+    valuePrefix: java.lang.String = null,
+    valueSuffix: java.lang.String = null,
+    values: js.Array[scala.Double] = null
+  ): MultiSliderProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowOverlap)) __obj.updateDynamic("allowOverlap")(allowOverlap)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
+    if (customMarker != null) __obj.updateDynamic("customMarker")(customMarker.asInstanceOf[js.Any])
+    if (customMarkerLeft != null) __obj.updateDynamic("customMarkerLeft")(customMarkerLeft.asInstanceOf[js.Any])
+    if (customMarkerRight != null) __obj.updateDynamic("customMarkerRight")(customMarkerRight.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabledOne)) __obj.updateDynamic("enabledOne")(enabledOne)
+    if (!js.isUndefined(enabledTwo)) __obj.updateDynamic("enabledTwo")(enabledTwo)
+    if (!js.isUndefined(isMarkersSeparated)) __obj.updateDynamic("isMarkersSeparated")(isMarkersSeparated)
+    if (markerContainerStyle != null) __obj.updateDynamic("markerContainerStyle")(markerContainerStyle)
+    if (markerOffsetX != null) __obj.updateDynamic("markerOffsetX")(markerOffsetX.asInstanceOf[js.Any])
+    if (markerOffsetY != null) __obj.updateDynamic("markerOffsetY")(markerOffsetY.asInstanceOf[js.Any])
+    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (onToggleOne != null) __obj.updateDynamic("onToggleOne")(onToggleOne)
+    if (onToggleTwo != null) __obj.updateDynamic("onToggleTwo")(onToggleTwo)
+    if (onValuesChange != null) __obj.updateDynamic("onValuesChange")(onValuesChange)
+    if (onValuesChangeFinish != null) __obj.updateDynamic("onValuesChangeFinish")(onValuesChangeFinish)
+    if (onValuesChangeStart != null) __obj.updateDynamic("onValuesChangeStart")(onValuesChangeStart)
+    if (optionsArray != null) __obj.updateDynamic("optionsArray")(optionsArray)
+    if (pressedMarkerStyle != null) __obj.updateDynamic("pressedMarkerStyle")(pressedMarkerStyle)
+    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle)
+    if (sliderLength != null) __obj.updateDynamic("sliderLength")(sliderLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(snapped)) __obj.updateDynamic("snapped")(snapped)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (touchDimensions != null) __obj.updateDynamic("touchDimensions")(touchDimensions)
+    if (trackStyle != null) __obj.updateDynamic("trackStyle")(trackStyle)
+    if (unselectedStyle != null) __obj.updateDynamic("unselectedStyle")(unselectedStyle)
+    if (valuePrefix != null) __obj.updateDynamic("valuePrefix")(valuePrefix)
+    if (valueSuffix != null) __obj.updateDynamic("valueSuffix")(valueSuffix)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[MultiSliderProps]
+  }
+}
+

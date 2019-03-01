@@ -10,3 +10,12 @@ trait GetOffersResponse extends js.Object {
   var products: js.UndefOr[js.Array[Product]] = js.undefined
 }
 
+object GetOffersResponse {
+  @scala.inline
+  def apply(products: js.Array[Product] = null): GetOffersResponse = {
+    val __obj = js.Dynamic.literal()
+    if (products != null) __obj.updateDynamic("products")(products)
+    __obj.asInstanceOf[GetOffersResponse]
+  }
+}
+

@@ -20,3 +20,22 @@ trait Levenshtein extends js.Object {
   def inspect(): java.lang.String
 }
 
+object Levenshtein {
+  @scala.inline
+  def apply(
+    distance: scala.Double,
+    getMatrix: js.Function0[js.Array[js.Array[scala.Double]]],
+    inspect: js.Function0[java.lang.String],
+    toString: js.Function0[java.lang.String],
+    valueOf: js.Function0[scala.Double]
+  ): Levenshtein = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("getMatrix")(getMatrix)
+    __obj.updateDynamic("inspect")(inspect)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("valueOf")(valueOf)
+    __obj.asInstanceOf[Levenshtein]
+  }
+}
+

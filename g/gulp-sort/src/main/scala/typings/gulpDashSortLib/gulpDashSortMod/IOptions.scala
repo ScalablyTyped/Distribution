@@ -18,3 +18,13 @@ trait IOptions extends js.Object {
   var comparator: js.UndefOr[IComparatorFunction] = js.undefined
 }
 
+object IOptions {
+  @scala.inline
+  def apply(asc: js.UndefOr[scala.Boolean] = js.undefined, comparator: IComparatorFunction = null): IOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(asc)) __obj.updateDynamic("asc")(asc)
+    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

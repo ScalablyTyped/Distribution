@@ -12,3 +12,14 @@ trait UserScriptable extends UniqueId {
   var serverScript: js.UndefOr[UserFunction] = js.undefined
 }
 
+object UserScriptable {
+  @scala.inline
+  def apply(id: java.lang.String, body: UserFunction = null, serverScript: UserFunction = null): UserScriptable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (serverScript != null) __obj.updateDynamic("serverScript")(serverScript.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserScriptable]
+  }
+}
+

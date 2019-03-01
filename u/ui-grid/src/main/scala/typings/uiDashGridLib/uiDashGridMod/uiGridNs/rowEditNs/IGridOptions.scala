@@ -14,3 +14,12 @@ trait IGridOptions extends js.Object {
   var rowEditWaitInterval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(rowEditWaitInterval: scala.Int | scala.Double = null): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (rowEditWaitInterval != null) __obj.updateDynamic("rowEditWaitInterval")(rowEditWaitInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

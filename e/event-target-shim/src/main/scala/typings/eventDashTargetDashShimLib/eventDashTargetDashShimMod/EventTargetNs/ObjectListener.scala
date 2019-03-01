@@ -9,3 +9,12 @@ trait ObjectListener[TEvent] extends js.Object {
   def handleEvent(event: TEvent): scala.Unit
 }
 
+object ObjectListener {
+  @scala.inline
+  def apply[TEvent](handleEvent: js.Function1[TEvent, scala.Unit]): ObjectListener[TEvent] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handleEvent")(handleEvent)
+    __obj.asInstanceOf[ObjectListener[TEvent]]
+  }
+}
+

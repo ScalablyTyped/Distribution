@@ -21,3 +21,32 @@ trait AccountInfo extends js.Object {
   var xpub: java.lang.String
 }
 
+object AccountInfo {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    addressIndex: scala.Double,
+    addressPath: js.Array[scala.Double],
+    addressSerializedPath: java.lang.String,
+    balance: scala.Double,
+    confirmed: scala.Double,
+    id: scala.Double,
+    path: js.Array[scala.Double],
+    serializedPath: java.lang.String,
+    xpub: java.lang.String
+  ): AccountInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("addressIndex")(addressIndex)
+    __obj.updateDynamic("addressPath")(addressPath)
+    __obj.updateDynamic("addressSerializedPath")(addressSerializedPath)
+    __obj.updateDynamic("balance")(balance)
+    __obj.updateDynamic("confirmed")(confirmed)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("serializedPath")(serializedPath)
+    __obj.updateDynamic("xpub")(xpub)
+    __obj.asInstanceOf[AccountInfo]
+  }
+}
+

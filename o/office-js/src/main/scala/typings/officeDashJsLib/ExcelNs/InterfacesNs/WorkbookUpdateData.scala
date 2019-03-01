@@ -16,3 +16,12 @@ trait WorkbookUpdateData extends js.Object {
   var properties: js.UndefOr[DocumentPropertiesUpdateData] = js.undefined
 }
 
+object WorkbookUpdateData {
+  @scala.inline
+  def apply(properties: DocumentPropertiesUpdateData = null): WorkbookUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[WorkbookUpdateData]
+  }
+}
+

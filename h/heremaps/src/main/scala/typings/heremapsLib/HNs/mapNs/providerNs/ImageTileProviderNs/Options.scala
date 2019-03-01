@@ -33,3 +33,30 @@ trait Options extends js.Object {
   def getURL(n1: scala.Double, n2: scala.Double, n3: scala.Double): java.lang.String
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    getURL: js.Function3[scala.Double, scala.Double, scala.Double, java.lang.String],
+    crossOrigin: java.lang.String | scala.Boolean = null,
+    getCopyrights: js.Function2[
+      /* rect */ heremapsLib.HNs.geoNs.Rect, 
+      /* n */ scala.Double, 
+      js.Array[heremapsLib.HNs.mapNs.ICopyright]
+    ] = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    tileSize: scala.Int | scala.Double = null,
+    uri: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getURL")(getURL)
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
+    if (getCopyrights != null) __obj.updateDynamic("getCopyrights")(getCopyrights)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[Options]
+  }
+}
+

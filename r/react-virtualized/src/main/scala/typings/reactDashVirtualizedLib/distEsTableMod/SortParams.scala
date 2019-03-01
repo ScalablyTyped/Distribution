@@ -11,3 +11,14 @@ trait SortParams extends js.Object {
   var sortBy: java.lang.String
 }
 
+object SortParams {
+  @scala.inline
+  def apply(defaultSortDirection: SortDirectionType, event: reactLib.MouseEvent, sortBy: java.lang.String): SortParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultSortDirection")(defaultSortDirection)
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("sortBy")(sortBy)
+    __obj.asInstanceOf[SortParams]
+  }
+}
+

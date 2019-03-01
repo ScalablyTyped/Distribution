@@ -7,43 +7,60 @@ import scala.scalajs.js.annotation._
 
 object reactDashMdLibStrings {
   @js.native
-  sealed trait `2-digit` extends js.Object
+  sealed trait `2-digit`
+    extends reactDashMdLib.libPickersMod.N2D
   
   @js.native
-  sealed trait ArrayBuffer extends js.Object
+  sealed trait ArrayBuffer
+    extends reactDashMdLib.libFileInputsFileInputMod.FileReaderTypes
   
   @js.native
-  sealed trait DataURL extends js.Object
+  sealed trait DataURL
+    extends reactDashMdLib.libFileInputsFileInputMod.FileReaderTypes
   
   @js.native
-  sealed trait Text extends js.Object
+  sealed trait Text
+    extends reactDashMdLib.libFileInputsFileInputMod.FileReaderTypes
   
   @js.native
-  sealed trait below extends js.Object
+  sealed trait below
+    extends reactDashMdLib.libHelpersLayoverMod.LayoverPositions
   
   @js.native
-  sealed trait bl extends js.Object
+  sealed trait bl
+    extends reactDashMdLib.libButtonsButtonMod.FixedPositions
+       with reactDashMdLib.libHelpersLayoverMod.LayoverPositions
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashMdLib.libTooltipsInjectTooltipMod.Positions
+       with reactDashMdLib.libHelpersLayoverMod.VerticalAnchors
   
   @js.native
-  sealed trait br extends js.Object
+  sealed trait br
+    extends reactDashMdLib.libButtonsButtonMod.FixedPositions
+       with reactDashMdLib.libHelpersLayoverMod.LayoverPositions
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button
+    extends reactDashMdLib.libButtonsButtonMod.ButtonTypes
   
   @js.native
   sealed trait calendar extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashMdLib.libHelpersLayoverMod.HorizontalAnchors
+       with reactDashMdLib.libTextFieldsTextFieldMod.TextFieldLineDirections
+       with reactDashMdLib.libHelpersLayoverMod.VerticalAnchors
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait checkbox
+    extends reactDashMdLib.libSelectionControlsSelectionControlMod.Types
   
   @js.native
-  sealed trait clipped extends js.Object
+  sealed trait clipped
+    extends reactDashMdLib.libDrawersDrawerMod.DrawerType
   
   @js.native
   sealed trait col extends js.Object
@@ -55,19 +72,23 @@ object reactDashMdLibStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait desktop extends js.Object
+  sealed trait desktop
+    extends reactDashMdLib.libDrawersDrawerMod.MediaType
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes
   
   @js.native
   sealed trait environment extends js.Object
   
   @js.native
-  sealed trait floating extends js.Object
+  sealed trait floating
+    extends reactDashMdLib.libDrawersDrawerMod.DrawerType
   
   @js.native
-  sealed trait `full-height` extends js.Object
+  sealed trait `full-height`
+    extends reactDashMdLib.libDrawersDrawerMod.DrawerType
   
   @js.native
   sealed trait hour extends js.Object
@@ -76,22 +97,30 @@ object reactDashMdLibStrings {
   sealed trait img extends js.Object
   
   @js.native
-  sealed trait `inner left` extends js.Object
+  sealed trait `inner left`
+    extends reactDashMdLib.libHelpersLayoverMod.HorizontalAnchors
   
   @js.native
-  sealed trait `inner right` extends js.Object
+  sealed trait `inner right`
+    extends reactDashMdLib.libHelpersLayoverMod.HorizontalAnchors
   
   @js.native
-  sealed trait keyboard extends js.Object
+  sealed trait keyboard
+    extends reactDashMdLib.libInksInjectInkMod.InteractionTypes
   
   @js.native
   sealed trait landscape extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashMdLib.libDrawersDrawerMod.DrawerPosition
+       with reactDashMdLib.libHelpersLayoverMod.HorizontalAnchors
+       with reactDashMdLib.libTooltipsInjectTooltipMod.Positions
+       with reactDashMdLib.libTextFieldsTextFieldMod.TextFieldLineDirections
   
   @js.native
-  sealed trait long extends js.Object
+  sealed trait long
+    extends reactDashMdLib.libPickersMod.NSL
   
   @js.native
   sealed trait middle extends js.Object
@@ -100,31 +129,40 @@ object reactDashMdLibStrings {
   sealed trait minute extends js.Object
   
   @js.native
-  sealed trait mobile extends js.Object
+  sealed trait mobile
+    extends reactDashMdLib.libDrawersDrawerMod.MediaType
   
   @js.native
-  sealed trait mouse extends js.Object
+  sealed trait mouse
+    extends reactDashMdLib.libInksInjectInkMod.InteractionTypes
   
   @js.native
-  sealed trait narrow extends js.Object
+  sealed trait narrow
+    extends reactDashMdLib.libPickersMod.NSL
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes
   
   @js.native
-  sealed trait numeric extends js.Object
+  sealed trait numeric
+    extends reactDashMdLib.libPickersMod.N2D
   
   @js.native
-  sealed trait overlap extends js.Object
+  sealed trait overlap
+    extends reactDashMdLib.libHelpersLayoverMod.VerticalAnchors
   
   @js.native
-  sealed trait password extends js.Object
+  sealed trait password
+    extends reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes
   
   @js.native
-  sealed trait persistent extends js.Object
+  sealed trait persistent
+    extends reactDashMdLib.libDrawersDrawerMod.DrawerType
   
   @js.native
-  sealed trait `persistent-mini` extends js.Object
+  sealed trait `persistent-mini`
+    extends reactDashMdLib.libDrawersDrawerMod.DrawerType
   
   @js.native
   sealed trait portrait extends js.Object
@@ -133,64 +171,87 @@ object reactDashMdLibStrings {
   sealed trait presentation extends js.Object
   
   @js.native
-  sealed trait radio extends js.Object
+  sealed trait radio
+    extends reactDashMdLib.libSelectionControlsSelectionControlMod.Types
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait reset
+    extends reactDashMdLib.libButtonsButtonMod.ButtonTypes
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashMdLib.libDrawersDrawerMod.DrawerPosition
+       with reactDashMdLib.libHelpersLayoverMod.HorizontalAnchors
+       with reactDashMdLib.libTooltipsInjectTooltipMod.Positions
+       with reactDashMdLib.libTextFieldsTextFieldMod.TextFieldLineDirections
   
   @js.native
   sealed trait row extends js.Object
   
   @js.native
-  sealed trait search extends js.Object
+  sealed trait search
+    extends reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes
   
   @js.native
-  sealed trait short extends js.Object
+  sealed trait short
+    extends reactDashMdLib.libPickersMod.NSL
   
   @js.native
   sealed trait stretch extends js.Object
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends reactDashMdLib.libButtonsButtonMod.ButtonTypes
   
   @js.native
-  sealed trait switch extends js.Object
+  sealed trait switch
+    extends reactDashMdLib.libSelectionControlsSelectionControlMod.Types
   
   @js.native
-  sealed trait tablet extends js.Object
+  sealed trait tablet
+    extends reactDashMdLib.libDrawersDrawerMod.MediaType
   
   @js.native
-  sealed trait tel extends js.Object
+  sealed trait tel
+    extends reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes
   
   @js.native
-  sealed trait temporary extends js.Object
+  sealed trait temporary
+    extends reactDashMdLib.libDrawersDrawerMod.MobileDrawerType
   
   @js.native
-  sealed trait `temporary-mini` extends js.Object
+  sealed trait `temporary-mini`
+    extends reactDashMdLib.libDrawersDrawerMod.MobileDrawerType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes
   
   @js.native
   sealed trait themed extends js.Object
   
   @js.native
-  sealed trait tl extends js.Object
+  sealed trait tl
+    extends reactDashMdLib.libButtonsButtonMod.FixedPositions
+       with reactDashMdLib.libHelpersLayoverMod.LayoverPositions
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashMdLib.libTooltipsInjectTooltipMod.Positions
+       with reactDashMdLib.libHelpersLayoverMod.VerticalAnchors
   
   @js.native
-  sealed trait touch extends js.Object
+  sealed trait touch
+    extends reactDashMdLib.libInksInjectInkMod.InteractionTypes
   
   @js.native
-  sealed trait tr extends js.Object
+  sealed trait tr
+    extends reactDashMdLib.libButtonsButtonMod.FixedPositions
+       with reactDashMdLib.libHelpersLayoverMod.LayoverPositions
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends reactDashMdLib.libTextFieldsTextFieldMod.TextFieldTypes
   
   @js.native
   sealed trait user extends js.Object

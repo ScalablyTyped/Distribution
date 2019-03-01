@@ -10,3 +10,16 @@ trait ReadyOptions extends js.Object {
   var success: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object ReadyOptions {
+  @scala.inline
+  def apply(
+    error: js.Function1[/* depsNotFound */ java.lang.String, scala.Unit] = null,
+    success: js.Function0[scala.Unit] = null
+  ): ReadyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ReadyOptions]
+  }
+}
+

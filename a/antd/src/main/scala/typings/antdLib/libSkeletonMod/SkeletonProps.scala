@@ -16,3 +16,28 @@ trait SkeletonProps extends js.Object {
   var title: js.UndefOr[antdLib.libSkeletonTitleMod.SkeletonTitleProps | scala.Boolean] = js.undefined
 }
 
+object SkeletonProps {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    avatar: antdLib.libSkeletonAvatarMod.SkeletonAvatarProps | scala.Boolean = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    loading: js.UndefOr[scala.Boolean] = js.undefined,
+    paragraph: antdLib.libSkeletonParagraphMod.SkeletonParagraphProps | scala.Boolean = null,
+    prefixCls: java.lang.String = null,
+    title: antdLib.libSkeletonTitleMod.SkeletonTitleProps | scala.Boolean = null
+  ): SkeletonProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph.asInstanceOf[js.Any])
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SkeletonProps]
+  }
+}
+

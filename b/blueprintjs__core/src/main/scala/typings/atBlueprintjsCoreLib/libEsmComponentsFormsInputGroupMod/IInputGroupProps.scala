@@ -44,3 +44,40 @@ trait IInputGroupProps
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IInputGroupProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    defaultValue: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    inputRef: js.Function1[/* ref */ reactLib.HTMLInputElement | scala.Null, _] = null,
+    intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    large: js.UndefOr[scala.Boolean] = js.undefined,
+    leftIcon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
+    onChange: reactLib.reactMod.ReactNs.FormEventHandler[reactLib.HTMLElement] = null,
+    placeholder: java.lang.String = null,
+    rightElement: reactLib.reactMod.Global.JSXNs.Element = null,
+    round: js.UndefOr[scala.Boolean] = js.undefined,
+    small: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): IInputGroupProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef)
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (rightElement != null) __obj.updateDynamic("rightElement")(rightElement)
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
+    if (!js.isUndefined(small)) __obj.updateDynamic("small")(small)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IInputGroupProps]
+  }
+}
+

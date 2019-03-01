@@ -32,3 +32,13 @@ trait VisibilityRule extends js.Object {
   var selector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VisibilityRule {
+  @scala.inline
+  def apply(restriction: java.lang.String = null, selector: java.lang.String = null): VisibilityRule = {
+    val __obj = js.Dynamic.literal()
+    if (restriction != null) __obj.updateDynamic("restriction")(restriction)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[VisibilityRule]
+  }
+}
+

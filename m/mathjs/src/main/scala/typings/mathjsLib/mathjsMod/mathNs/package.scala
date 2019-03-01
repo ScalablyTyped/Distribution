@@ -9,5 +9,5 @@ package object mathNs {
   type BigNumber = decimalDotJsLib.decimalDotJsMod.Decimal
   type MathArray = js.Array[scala.Double] | js.Array[js.Array[scala.Double]]
   type MathExpression = java.lang.String | js.Array[java.lang.String] | MathArray | Matrix
-  type MathType = scala.Double | BigNumber | Fraction | Complex | Unit | MathArray | Matrix
+  type MathType = _MathType | scala.Double | BigNumber | MathArray
 }

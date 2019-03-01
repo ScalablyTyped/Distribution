@@ -21,3 +21,16 @@ trait GooglePrivacyDlpV2beta1KAnonymityConfig extends js.Object {
   var quasiIds: js.UndefOr[js.Array[GooglePrivacyDlpV2beta1FieldId]] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1KAnonymityConfig {
+  @scala.inline
+  def apply(
+    entityId: GooglePrivacyDlpV2beta1EntityId = null,
+    quasiIds: js.Array[GooglePrivacyDlpV2beta1FieldId] = null
+  ): GooglePrivacyDlpV2beta1KAnonymityConfig = {
+    val __obj = js.Dynamic.literal()
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
+    if (quasiIds != null) __obj.updateDynamic("quasiIds")(quasiIds)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1KAnonymityConfig]
+  }
+}
+

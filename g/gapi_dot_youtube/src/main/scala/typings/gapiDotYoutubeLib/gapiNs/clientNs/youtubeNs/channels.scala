@@ -18,3 +18,24 @@ trait channels extends js.Object {
   def update(`object`: gapiDotYoutubeLib.Anon_OnBehalfOfContentOwnerPart): gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeChannelResource]
 }
 
+object channels {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotYoutubeLib.Anon_CategoryId, 
+      gapiLib.gapiNs.clientNs.HttpRequest[
+        gapiDotYoutubeLib.GoogleApiYouTubePaginationInfo[gapiDotYoutubeLib.GoogleApiYouTubeChannelResource]
+      ]
+    ],
+    update: js.Function1[
+      gapiDotYoutubeLib.Anon_OnBehalfOfContentOwnerPart, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeChannelResource]
+    ]
+  ): channels = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[channels]
+  }
+}
+

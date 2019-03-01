@@ -20,3 +20,18 @@ trait ComboBoxMessages extends js.Object {
   var open: java.lang.String | (js.Function1[/* props */ ComboBoxProps, java.lang.String])
 }
 
+object ComboBoxMessages {
+  @scala.inline
+  def apply(
+    emptyFilter: java.lang.String | (js.Function1[/* props */ ComboBoxProps, java.lang.String]),
+    emptyList: java.lang.String | (js.Function1[/* props */ ComboBoxProps, java.lang.String]),
+    open: java.lang.String | (js.Function1[/* props */ ComboBoxProps, java.lang.String])
+  ): ComboBoxMessages = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("emptyFilter")(emptyFilter.asInstanceOf[js.Any])
+    __obj.updateDynamic("emptyList")(emptyList.asInstanceOf[js.Any])
+    __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComboBoxMessages]
+  }
+}
+

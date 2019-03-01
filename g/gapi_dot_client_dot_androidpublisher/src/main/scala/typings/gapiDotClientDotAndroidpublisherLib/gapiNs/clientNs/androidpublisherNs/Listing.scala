@@ -18,3 +18,22 @@ trait Listing extends js.Object {
   var video: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Listing {
+  @scala.inline
+  def apply(
+    fullDescription: java.lang.String = null,
+    language: java.lang.String = null,
+    shortDescription: java.lang.String = null,
+    title: java.lang.String = null,
+    video: java.lang.String = null
+  ): Listing = {
+    val __obj = js.Dynamic.literal()
+    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (video != null) __obj.updateDynamic("video")(video)
+    __obj.asInstanceOf[Listing]
+  }
+}
+

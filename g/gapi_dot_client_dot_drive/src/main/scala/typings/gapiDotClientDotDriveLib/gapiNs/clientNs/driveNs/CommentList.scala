@@ -17,3 +17,18 @@ trait CommentList extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommentList {
+  @scala.inline
+  def apply(
+    comments: js.Array[Comment] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null
+  ): CommentList = {
+    val __obj = js.Dynamic.literal()
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[CommentList]
+  }
+}
+

@@ -34,3 +34,30 @@ trait NumberingLevel extends js.Object {
   var Suffix: java.lang.String
 }
 
+object NumberingLevel {
+  @scala.inline
+  def apply(
+    BulletFontName: java.lang.String,
+    BulletId: scala.Double,
+    CharStyleName: java.lang.String,
+    GraphicURL: java.lang.String,
+    NumberingType: scala.Double,
+    ParentNumbering: scala.Double,
+    Prefix: java.lang.String,
+    StartWith: scala.Double,
+    Suffix: java.lang.String
+  ): NumberingLevel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BulletFontName")(BulletFontName)
+    __obj.updateDynamic("BulletId")(BulletId)
+    __obj.updateDynamic("CharStyleName")(CharStyleName)
+    __obj.updateDynamic("GraphicURL")(GraphicURL)
+    __obj.updateDynamic("NumberingType")(NumberingType)
+    __obj.updateDynamic("ParentNumbering")(ParentNumbering)
+    __obj.updateDynamic("Prefix")(Prefix)
+    __obj.updateDynamic("StartWith")(StartWith)
+    __obj.updateDynamic("Suffix")(Suffix)
+    __obj.asInstanceOf[NumberingLevel]
+  }
+}
+

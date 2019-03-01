@@ -13,3 +13,20 @@ trait ResponseInit extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResponseInit {
+  @scala.inline
+  def apply(
+    headers: HeadersInit = null,
+    status: scala.Int | scala.Double = null,
+    statusText: java.lang.String = null,
+    url: java.lang.String = null
+  ): ResponseInit = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ResponseInit]
+  }
+}
+

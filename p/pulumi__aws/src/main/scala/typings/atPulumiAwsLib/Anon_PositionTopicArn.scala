@@ -10,3 +10,16 @@ trait Anon_PositionTopicArn extends js.Object {
   var topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_PositionTopicArn {
+  @scala.inline
+  def apply(
+    position: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    topicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): Anon_PositionTopicArn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.updateDynamic("topicArn")(topicArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_PositionTopicArn]
+  }
+}
+

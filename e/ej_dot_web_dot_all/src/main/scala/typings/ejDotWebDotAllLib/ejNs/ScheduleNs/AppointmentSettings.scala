@@ -86,3 +86,50 @@ trait AppointmentSettings extends js.Object {
   var tableName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppointmentSettings {
+  @scala.inline
+  def apply(
+    allDay: java.lang.String = null,
+    applyTimeOffset: js.UndefOr[scala.Boolean] = js.undefined,
+    categorize: java.lang.String = null,
+    dataSource: js.Any | js.Array[_] = null,
+    description: java.lang.String = null,
+    editFutureEventsOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    endTime: java.lang.String = null,
+    endTimeZone: java.lang.String = null,
+    id: java.lang.String = null,
+    location: java.lang.String = null,
+    priority: java.lang.String = null,
+    query: java.lang.String = null,
+    recurrence: java.lang.String = null,
+    recurrenceRule: java.lang.String = null,
+    resourceFields: java.lang.String = null,
+    startTime: java.lang.String = null,
+    startTimeZone: java.lang.String = null,
+    subject: java.lang.String = null,
+    tableName: java.lang.String = null
+  ): AppointmentSettings = {
+    val __obj = js.Dynamic.literal()
+    if (allDay != null) __obj.updateDynamic("allDay")(allDay)
+    if (!js.isUndefined(applyTimeOffset)) __obj.updateDynamic("applyTimeOffset")(applyTimeOffset)
+    if (categorize != null) __obj.updateDynamic("categorize")(categorize)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(editFutureEventsOnly)) __obj.updateDynamic("editFutureEventsOnly")(editFutureEventsOnly)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (endTimeZone != null) __obj.updateDynamic("endTimeZone")(endTimeZone)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (priority != null) __obj.updateDynamic("priority")(priority)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (recurrence != null) __obj.updateDynamic("recurrence")(recurrence)
+    if (recurrenceRule != null) __obj.updateDynamic("recurrenceRule")(recurrenceRule)
+    if (resourceFields != null) __obj.updateDynamic("resourceFields")(resourceFields)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (startTimeZone != null) __obj.updateDynamic("startTimeZone")(startTimeZone)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName)
+    __obj.asInstanceOf[AppointmentSettings]
+  }
+}
+

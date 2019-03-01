@@ -12,3 +12,20 @@ trait canvasPoint extends js.Object {
   var top: scala.Double
 }
 
+object canvasPoint {
+  @scala.inline
+  def apply(
+    left: scala.Double,
+    top: scala.Double,
+    bottom: scala.Int | scala.Double = null,
+    right: scala.Int | scala.Double = null
+  ): canvasPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("top")(top)
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    __obj.asInstanceOf[canvasPoint]
+  }
+}
+

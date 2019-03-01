@@ -58,3 +58,30 @@ trait WaypointProps extends js.Object {
   var topOffset: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object WaypointProps {
+  @scala.inline
+  def apply(
+    bottomOffset: java.lang.String | scala.Double = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    fireOnRapidScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    onEnter: js.Function1[/* args */ CallbackArgs, scala.Unit] = null,
+    onLeave: js.Function1[/* args */ CallbackArgs, scala.Unit] = null,
+    onPositionChange: js.Function1[/* args */ CallbackArgs, scala.Unit] = null,
+    scrollableAncestor: js.Any = null,
+    topOffset: java.lang.String | scala.Double = null
+  ): WaypointProps = {
+    val __obj = js.Dynamic.literal()
+    if (bottomOffset != null) __obj.updateDynamic("bottomOffset")(bottomOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(fireOnRapidScroll)) __obj.updateDynamic("fireOnRapidScroll")(fireOnRapidScroll)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (onLeave != null) __obj.updateDynamic("onLeave")(onLeave)
+    if (onPositionChange != null) __obj.updateDynamic("onPositionChange")(onPositionChange)
+    if (scrollableAncestor != null) __obj.updateDynamic("scrollableAncestor")(scrollableAncestor)
+    if (topOffset != null) __obj.updateDynamic("topOffset")(topOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WaypointProps]
+  }
+}
+

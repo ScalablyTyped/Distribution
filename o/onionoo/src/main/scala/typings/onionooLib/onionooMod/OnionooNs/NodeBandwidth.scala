@@ -43,3 +43,28 @@ trait NodeBandwidth extends js.Object {
   ] = js.undefined
 }
 
+object NodeBandwidth {
+  @scala.inline
+  def apply(
+    fingerprint: java.lang.String,
+    read_history: stdLib.Partial[
+      stdLib.Record[
+        onionooLib.onionooLibStrings.`3_days` | onionooLib.onionooLibStrings.`1_week` | onionooLib.onionooLibStrings.`1_month` | onionooLib.onionooLibStrings.`6_months` | onionooLib.onionooLibStrings.`1_year` | onionooLib.onionooLibStrings.`5_years`, 
+        Histogram
+      ]
+    ] = null,
+    write_history: stdLib.Partial[
+      stdLib.Record[
+        onionooLib.onionooLibStrings.`3_days` | onionooLib.onionooLibStrings.`1_week` | onionooLib.onionooLibStrings.`1_month` | onionooLib.onionooLibStrings.`6_months` | onionooLib.onionooLibStrings.`1_year` | onionooLib.onionooLibStrings.`5_years`, 
+        Histogram
+      ]
+    ] = null
+  ): NodeBandwidth = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fingerprint")(fingerprint)
+    if (read_history != null) __obj.updateDynamic("read_history")(read_history)
+    if (write_history != null) __obj.updateDynamic("write_history")(write_history)
+    __obj.asInstanceOf[NodeBandwidth]
+  }
+}
+

@@ -20,3 +20,24 @@ trait NetworkInfo extends js.Object {
   var Type: java.lang.String
 }
 
+object NetworkInfo {
+  @scala.inline
+  def apply(
+    Type: java.lang.String,
+    BSSID: java.lang.String = null,
+    GUID: java.lang.String = null,
+    HexSSID: java.lang.String = null,
+    SSID: java.lang.String = null,
+    Security: java.lang.String = null
+  ): NetworkInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Type")(Type)
+    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID)
+    if (GUID != null) __obj.updateDynamic("GUID")(GUID)
+    if (HexSSID != null) __obj.updateDynamic("HexSSID")(HexSSID)
+    if (SSID != null) __obj.updateDynamic("SSID")(SSID)
+    if (Security != null) __obj.updateDynamic("Security")(Security)
+    __obj.asInstanceOf[NetworkInfo]
+  }
+}
+

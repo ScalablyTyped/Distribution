@@ -14,3 +14,24 @@ trait Anon_DisplayName extends js.Object {
   var picture: Anon_Url
 }
 
+object Anon_DisplayName {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    emailAddress: java.lang.String,
+    isAuthenticatedUser: scala.Boolean,
+    kind: gapiDotDriveLib.gapiDotDriveLibStrings.`drive#user`,
+    permissionId: java.lang.String,
+    picture: Anon_Url
+  ): Anon_DisplayName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("emailAddress")(emailAddress)
+    __obj.updateDynamic("isAuthenticatedUser")(isAuthenticatedUser)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("permissionId")(permissionId)
+    __obj.updateDynamic("picture")(picture)
+    __obj.asInstanceOf[Anon_DisplayName]
+  }
+}
+

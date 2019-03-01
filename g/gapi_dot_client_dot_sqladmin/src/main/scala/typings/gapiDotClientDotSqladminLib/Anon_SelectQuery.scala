@@ -10,3 +10,12 @@ trait Anon_SelectQuery extends js.Object {
   var selectQuery: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_SelectQuery {
+  @scala.inline
+  def apply(selectQuery: java.lang.String = null): Anon_SelectQuery = {
+    val __obj = js.Dynamic.literal()
+    if (selectQuery != null) __obj.updateDynamic("selectQuery")(selectQuery)
+    __obj.asInstanceOf[Anon_SelectQuery]
+  }
+}
+

@@ -13,3 +13,22 @@ trait CheckResult extends js.Object {
   var relatedNodes: js.UndefOr[js.Array[RelatedNode]] = js.undefined
 }
 
+object CheckResult {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    id: java.lang.String,
+    impact: java.lang.String,
+    message: java.lang.String,
+    relatedNodes: js.Array[RelatedNode] = null
+  ): CheckResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("impact")(impact)
+    __obj.updateDynamic("message")(message)
+    if (relatedNodes != null) __obj.updateDynamic("relatedNodes")(relatedNodes)
+    __obj.asInstanceOf[CheckResult]
+  }
+}
+

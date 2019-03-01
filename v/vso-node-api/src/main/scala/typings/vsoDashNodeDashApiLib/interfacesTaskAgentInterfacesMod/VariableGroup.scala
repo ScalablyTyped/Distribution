@@ -16,3 +16,28 @@ trait VariableGroup extends js.Object {
   var variables: org.scalablytyped.runtime.StringDictionary[VariableValue]
 }
 
+object VariableGroup {
+  @scala.inline
+  def apply(
+    createdBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    createdOn: stdLib.Date,
+    description: java.lang.String,
+    id: scala.Double,
+    modifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    modifiedOn: stdLib.Date,
+    name: java.lang.String,
+    variables: org.scalablytyped.runtime.StringDictionary[VariableValue]
+  ): VariableGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("createdOn")(createdOn)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("modifiedBy")(modifiedBy)
+    __obj.updateDynamic("modifiedOn")(modifiedOn)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[VariableGroup]
+  }
+}
+

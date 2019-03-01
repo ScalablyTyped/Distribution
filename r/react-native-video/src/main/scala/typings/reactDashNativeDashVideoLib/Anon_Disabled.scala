@@ -10,3 +10,15 @@ trait Anon_Disabled extends js.Object {
   var value: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Anon_Disabled {
+  @scala.inline
+  def apply(
+    `type`: reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.system | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.disabled | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.title | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.language | reactDashNativeDashVideoLib.reactDashNativeDashVideoLibStrings.index,
+    value: java.lang.String | scala.Double = null
+  ): Anon_Disabled = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Disabled]
+  }
+}
+

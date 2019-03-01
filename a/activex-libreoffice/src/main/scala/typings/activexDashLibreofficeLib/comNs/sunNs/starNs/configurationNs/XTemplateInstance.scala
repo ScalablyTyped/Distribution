@@ -28,3 +28,22 @@ trait XTemplateInstance
   def getTemplateName(): java.lang.String
 }
 
+object XTemplateInstance {
+  @scala.inline
+  def apply(
+    TemplateName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getTemplateName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTemplateInstance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TemplateName")(TemplateName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getTemplateName")(getTemplateName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTemplateInstance]
+  }
+}
+

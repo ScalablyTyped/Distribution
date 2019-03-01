@@ -17,3 +17,18 @@ trait MergeVariantsRequest extends js.Object {
   var variants: js.UndefOr[js.Array[Variant]] = js.undefined
 }
 
+object MergeVariantsRequest {
+  @scala.inline
+  def apply(
+    infoMergeConfig: stdLib.Record[java.lang.String, java.lang.String] = null,
+    variantSetId: java.lang.String = null,
+    variants: js.Array[Variant] = null
+  ): MergeVariantsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (infoMergeConfig != null) __obj.updateDynamic("infoMergeConfig")(infoMergeConfig)
+    if (variantSetId != null) __obj.updateDynamic("variantSetId")(variantSetId)
+    if (variants != null) __obj.updateDynamic("variants")(variants)
+    __obj.asInstanceOf[MergeVariantsRequest]
+  }
+}
+

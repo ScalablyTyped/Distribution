@@ -14,3 +14,13 @@ trait PluginOptions extends js.Object {
   var filename: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PluginOptions {
+  @scala.inline
+  def apply(chunkFilename: java.lang.String = null, filename: java.lang.String = null): PluginOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chunkFilename != null) __obj.updateDynamic("chunkFilename")(chunkFilename)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    __obj.asInstanceOf[PluginOptions]
+  }
+}
+

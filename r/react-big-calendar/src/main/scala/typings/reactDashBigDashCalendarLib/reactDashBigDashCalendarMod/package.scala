@@ -30,10 +30,7 @@ package object reactDashBigDashCalendarMod {
     reactDashBigDashCalendarLib.Anon_ClassName
   ]
   type FormatInput = scala.Double | java.lang.String | stdLib.Date
-  type Navigate = reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.PREV | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.NEXT | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.TODAY | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.DATE
   type SlotPropGetter = js.Function1[/* date */ stdLib.Date, reactDashBigDashCalendarLib.Anon_ClassName]
-  type View = reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.month | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.week | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.work_week | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.day | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.agenda
-  type ViewKey = reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.MONTH | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.WEEK | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.WORK_WEEK | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.DAY | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.AGENDA
   type Views = js.Array[View] | reactDashBigDashCalendarLib.Anon_Month
   type stringOrDate = java.lang.String | stdLib.Date
 }

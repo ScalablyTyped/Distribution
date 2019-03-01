@@ -29,3 +29,25 @@ trait DataSchemaSchema
   var searchField: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataSchemaSchema {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for DataSchemaSchema
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    childDataProperty: java.lang.String = null,
+    fields: DataSchemaSchemaFields = null,
+    outputResultsName: java.lang.String = null,
+    searchField: java.lang.String = null
+  ): DataSchemaSchema = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (childDataProperty != null) __obj.updateDynamic("childDataProperty")(childDataProperty)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (outputResultsName != null) __obj.updateDynamic("outputResultsName")(outputResultsName)
+    if (searchField != null) __obj.updateDynamic("searchField")(searchField)
+    __obj.asInstanceOf[DataSchemaSchema]
+  }
+}
+

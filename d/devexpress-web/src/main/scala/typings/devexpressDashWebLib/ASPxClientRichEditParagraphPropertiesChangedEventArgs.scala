@@ -21,3 +21,13 @@ trait ASPxClientRichEditParagraphPropertiesChangedEventArgs extends ASPxClientEv
   var subDocumentId: scala.Double
 }
 
+object ASPxClientRichEditParagraphPropertiesChangedEventArgs {
+  @scala.inline
+  def apply(paragraphIndex: scala.Double, subDocumentId: scala.Double): ASPxClientRichEditParagraphPropertiesChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("paragraphIndex")(paragraphIndex)
+    __obj.updateDynamic("subDocumentId")(subDocumentId)
+    __obj.asInstanceOf[ASPxClientRichEditParagraphPropertiesChangedEventArgs]
+  }
+}
+

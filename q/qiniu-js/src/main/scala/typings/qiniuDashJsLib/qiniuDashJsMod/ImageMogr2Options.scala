@@ -25,3 +25,29 @@ trait ImageMogr2Options extends js.Object {
   var thumbnail: java.lang.String
 }
 
+object ImageMogr2Options {
+  @scala.inline
+  def apply(
+    `auto-orient`: scala.Boolean,
+    blur: java.lang.String,
+    crop: java.lang.String,
+    format: java.lang.String,
+    gravity: java.lang.String,
+    quality: scala.Double,
+    rotate: scala.Double,
+    strip: scala.Boolean,
+    thumbnail: java.lang.String
+  ): ImageMogr2Options = {
+    val __obj = js.Dynamic.literal(`auto-orient` = `auto-orient`)
+    __obj.updateDynamic("blur")(blur)
+    __obj.updateDynamic("crop")(crop)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("gravity")(gravity)
+    __obj.updateDynamic("quality")(quality)
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("strip")(strip)
+    __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[ImageMogr2Options]
+  }
+}
+

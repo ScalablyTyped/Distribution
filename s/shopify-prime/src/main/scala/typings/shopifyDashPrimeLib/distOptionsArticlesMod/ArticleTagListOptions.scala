@@ -16,3 +16,13 @@ trait ArticleTagListOptions extends js.Object {
   var popular: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ArticleTagListOptions {
+  @scala.inline
+  def apply(limit: scala.Int | scala.Double = null, popular: scala.Int | scala.Double = null): ArticleTagListOptions = {
+    val __obj = js.Dynamic.literal()
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (popular != null) __obj.updateDynamic("popular")(popular.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ArticleTagListOptions]
+  }
+}
+

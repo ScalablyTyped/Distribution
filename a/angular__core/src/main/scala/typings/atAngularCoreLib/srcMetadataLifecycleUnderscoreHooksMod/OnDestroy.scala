@@ -13,3 +13,12 @@ trait OnDestroy extends js.Object {
   def ngOnDestroy(): scala.Unit
 }
 
+object OnDestroy {
+  @scala.inline
+  def apply(ngOnDestroy: js.Function0[scala.Unit]): OnDestroy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ngOnDestroy")(ngOnDestroy)
+    __obj.asInstanceOf[OnDestroy]
+  }
+}
+

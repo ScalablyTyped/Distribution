@@ -28,3 +28,32 @@ trait Result extends js.Object {
   var version: js.UndefOr[gapiDotClientDotPagespeedonlineLib.Anon_Major] = js.undefined
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    formattedResults: gapiDotClientDotPagespeedonlineLib.Anon_Locale = null,
+    id: java.lang.String = null,
+    invalidRules: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    pageStats: gapiDotClientDotPagespeedonlineLib.Anon_CssResponseBytes = null,
+    responseCode: scala.Int | scala.Double = null,
+    ruleGroups: stdLib.Record[java.lang.String, gapiDotClientDotPagespeedonlineLib.Anon_Score] = null,
+    screenshot: PagespeedApiImageV2 = null,
+    title: java.lang.String = null,
+    version: gapiDotClientDotPagespeedonlineLib.Anon_Major = null
+  ): Result = {
+    val __obj = js.Dynamic.literal()
+    if (formattedResults != null) __obj.updateDynamic("formattedResults")(formattedResults)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (invalidRules != null) __obj.updateDynamic("invalidRules")(invalidRules)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (pageStats != null) __obj.updateDynamic("pageStats")(pageStats)
+    if (responseCode != null) __obj.updateDynamic("responseCode")(responseCode.asInstanceOf[js.Any])
+    if (ruleGroups != null) __obj.updateDynamic("ruleGroups")(ruleGroups)
+    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Result]
+  }
+}
+

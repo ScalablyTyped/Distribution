@@ -15,3 +15,12 @@ trait ITableRow extends js.Object {
   var vqValue: js.Array[IFieldValue]
 }
 
+object ITableRow {
+  @scala.inline
+  def apply(vqValue: js.Array[IFieldValue]): ITableRow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("vqValue")(vqValue)
+    __obj.asInstanceOf[ITableRow]
+  }
+}
+

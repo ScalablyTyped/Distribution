@@ -32,3 +32,34 @@ trait ITime
   var updateList: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object ITime {
+  @scala.inline
+  def apply(
+    IBoundList: extjsLib.ExtNs.viewNs.IBoundList = null,
+    componentCls: java.lang.String = null,
+    focusNode: js.Function1[/* rec */ js.UndefOr[js.Any], scala.Unit] = null,
+    format: java.lang.String = null,
+    increment: scala.Int | scala.Double = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    maxValue: js.Any = null,
+    minValue: js.Any = null,
+    setMaxValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    setMinValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    updateList: js.Function0[scala.Unit] = null
+  ): ITime = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IBoundList)
+    if (componentCls != null) __obj.updateDynamic("componentCls")(componentCls)
+    if (focusNode != null) __obj.updateDynamic("focusNode")(focusNode)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (increment != null) __obj.updateDynamic("increment")(increment.asInstanceOf[js.Any])
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue)
+    if (setMaxValue != null) __obj.updateDynamic("setMaxValue")(setMaxValue)
+    if (setMinValue != null) __obj.updateDynamic("setMinValue")(setMinValue)
+    if (updateList != null) __obj.updateDynamic("updateList")(updateList)
+    __obj.asInstanceOf[ITime]
+  }
+}
+

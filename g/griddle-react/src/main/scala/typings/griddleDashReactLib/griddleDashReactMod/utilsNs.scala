@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("griddle-react", "utils")
 @js.native
 object utilsNs extends js.Object {
-  
   trait SortProperties extends js.Object {
     var columnId: java.lang.String
     var sortProperty: griddleDashReactLib.griddleDashReactMod.GriddleSortKey

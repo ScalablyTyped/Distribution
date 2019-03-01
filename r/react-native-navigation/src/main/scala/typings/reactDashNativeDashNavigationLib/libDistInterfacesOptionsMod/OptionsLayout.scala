@@ -26,3 +26,20 @@ trait OptionsLayout extends js.Object {
   var topMargin: js.UndefOr[scala.Double] = js.undefined
 }
 
+object OptionsLayout {
+  @scala.inline
+  def apply(
+    backgroundColor: Color = null,
+    componentBackgroundColor: Color = null,
+    orientation: js.Array[LayoutOrientation] = null,
+    topMargin: scala.Int | scala.Double = null
+  ): OptionsLayout = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (componentBackgroundColor != null) __obj.updateDynamic("componentBackgroundColor")(componentBackgroundColor)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OptionsLayout]
+  }
+}
+

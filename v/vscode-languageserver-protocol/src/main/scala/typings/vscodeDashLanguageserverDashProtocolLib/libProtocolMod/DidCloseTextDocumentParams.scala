@@ -12,3 +12,14 @@ trait DidCloseTextDocumentParams extends js.Object {
   var textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
 }
 
+object DidCloseTextDocumentParams {
+  @scala.inline
+  def apply(
+    textDocument: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentIdentifier
+  ): DidCloseTextDocumentParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("textDocument")(textDocument)
+    __obj.asInstanceOf[DidCloseTextDocumentParams]
+  }
+}
+

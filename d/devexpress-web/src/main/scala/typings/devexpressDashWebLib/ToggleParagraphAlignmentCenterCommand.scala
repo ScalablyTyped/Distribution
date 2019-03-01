@@ -15,3 +15,13 @@ trait ToggleParagraphAlignmentCenterCommand extends CommandWithBooleanStateBase 
   def execute(): scala.Boolean
 }
 
+object ToggleParagraphAlignmentCenterCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[js.Any]): ToggleParagraphAlignmentCenterCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ToggleParagraphAlignmentCenterCommand]
+  }
+}
+

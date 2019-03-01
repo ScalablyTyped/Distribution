@@ -35,3 +35,36 @@ trait Anon_AltFieldsHeight extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AltFieldsHeight {
+  @scala.inline
+  def apply(
+    profileId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    iabStandard: js.UndefOr[scala.Boolean] = js.undefined,
+    ids: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_AltFieldsHeight = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("profileId")(profileId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(iabStandard)) __obj.updateDynamic("iabStandard")(iabStandard)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AltFieldsHeight]
+  }
+}
+

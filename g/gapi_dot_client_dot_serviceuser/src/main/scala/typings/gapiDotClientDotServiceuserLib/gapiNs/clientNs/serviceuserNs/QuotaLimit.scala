@@ -116,3 +116,32 @@ trait QuotaLimit extends js.Object {
   var values: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object QuotaLimit {
+  @scala.inline
+  def apply(
+    defaultLimit: java.lang.String = null,
+    description: java.lang.String = null,
+    displayName: java.lang.String = null,
+    duration: java.lang.String = null,
+    freeTier: java.lang.String = null,
+    maxLimit: java.lang.String = null,
+    metric: java.lang.String = null,
+    name: java.lang.String = null,
+    unit: java.lang.String = null,
+    values: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): QuotaLimit = {
+    val __obj = js.Dynamic.literal()
+    if (defaultLimit != null) __obj.updateDynamic("defaultLimit")(defaultLimit)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (duration != null) __obj.updateDynamic("duration")(duration)
+    if (freeTier != null) __obj.updateDynamic("freeTier")(freeTier)
+    if (maxLimit != null) __obj.updateDynamic("maxLimit")(maxLimit)
+    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[QuotaLimit]
+  }
+}
+

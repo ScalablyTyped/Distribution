@@ -9,3 +9,12 @@ trait BinaryCarrier extends js.Object {
   var buffer: stdLib.ArrayLike[scala.Double]
 }
 
+object BinaryCarrier {
+  @scala.inline
+  def apply(buffer: stdLib.ArrayLike[scala.Double]): BinaryCarrier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buffer")(buffer)
+    __obj.asInstanceOf[BinaryCarrier]
+  }
+}
+

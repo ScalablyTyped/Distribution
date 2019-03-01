@@ -47,3 +47,30 @@ trait VideoSettings extends js.Object {
   var width: js.UndefOr[scala.Double | js.Any] = js.undefined
 }
 
+object VideoSettings {
+  @scala.inline
+  def apply(
+    aspectRatio: scala.Double | js.Any = null,
+    deviceId: java.lang.String = null,
+    facingMode: java.lang.String | js.Any = null,
+    frameRate: scala.Double | js.Any = null,
+    groupId: java.lang.String = null,
+    height: scala.Double | js.Any = null,
+    mandatory: js.Object = null,
+    optional: js.Object = null,
+    width: scala.Double | js.Any = null
+  ): VideoSettings = {
+    val __obj = js.Dynamic.literal()
+    if (aspectRatio != null) __obj.updateDynamic("aspectRatio")(aspectRatio.asInstanceOf[js.Any])
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (facingMode != null) __obj.updateDynamic("facingMode")(facingMode.asInstanceOf[js.Any])
+    if (frameRate != null) __obj.updateDynamic("frameRate")(frameRate.asInstanceOf[js.Any])
+    if (groupId != null) __obj.updateDynamic("groupId")(groupId)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (mandatory != null) __obj.updateDynamic("mandatory")(mandatory)
+    if (optional != null) __obj.updateDynamic("optional")(optional)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VideoSettings]
+  }
+}
+

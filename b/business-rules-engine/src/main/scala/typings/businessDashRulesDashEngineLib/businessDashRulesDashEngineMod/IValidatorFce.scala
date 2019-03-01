@@ -11,3 +11,14 @@ trait IValidatorFce extends js.Object {
   var ValidationFce: js.UndefOr[IValidate] = js.undefined
 }
 
+object IValidatorFce {
+  @scala.inline
+  def apply(Name: java.lang.String, AsyncValidationFce: IAsyncValidate = null, ValidationFce: IValidate = null): IValidatorFce = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    if (AsyncValidationFce != null) __obj.updateDynamic("AsyncValidationFce")(AsyncValidationFce)
+    if (ValidationFce != null) __obj.updateDynamic("ValidationFce")(ValidationFce)
+    __obj.asInstanceOf[IValidatorFce]
+  }
+}
+

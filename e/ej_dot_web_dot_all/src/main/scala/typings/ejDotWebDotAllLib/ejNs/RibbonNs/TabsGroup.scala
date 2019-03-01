@@ -41,3 +41,28 @@ trait TabsGroup extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabsGroup {
+  @scala.inline
+  def apply(
+    alignType: AlignType | java.lang.String = null,
+    content: js.Array[TabsGroupsContent] = null,
+    contentID: java.lang.String = null,
+    customContent: java.lang.String = null,
+    enableGroupExpander: js.UndefOr[scala.Boolean] = js.undefined,
+    groupExpanderSettings: TabsGroupsGroupExpanderSettings = null,
+    text: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): TabsGroup = {
+    val __obj = js.Dynamic.literal()
+    if (alignType != null) __obj.updateDynamic("alignType")(alignType.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (contentID != null) __obj.updateDynamic("contentID")(contentID)
+    if (customContent != null) __obj.updateDynamic("customContent")(customContent)
+    if (!js.isUndefined(enableGroupExpander)) __obj.updateDynamic("enableGroupExpander")(enableGroupExpander)
+    if (groupExpanderSettings != null) __obj.updateDynamic("groupExpanderSettings")(groupExpanderSettings)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[TabsGroup]
+  }
+}
+

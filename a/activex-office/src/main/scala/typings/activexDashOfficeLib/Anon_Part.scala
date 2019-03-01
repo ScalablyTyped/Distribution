@@ -9,3 +9,12 @@ trait Anon_Part extends js.Object {
   val Part: activexDashOfficeLib.OfficeNs.CustomXMLPart
 }
 
+object Anon_Part {
+  @scala.inline
+  def apply(Part: activexDashOfficeLib.OfficeNs.CustomXMLPart): Anon_Part = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Part")(Part)
+    __obj.asInstanceOf[Anon_Part]
+  }
+}
+

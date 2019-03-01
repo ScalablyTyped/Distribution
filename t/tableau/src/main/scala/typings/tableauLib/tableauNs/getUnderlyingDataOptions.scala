@@ -16,3 +16,20 @@ trait getUnderlyingDataOptions extends js.Object {
   var maxRows: scala.Double
 }
 
+object getUnderlyingDataOptions {
+  @scala.inline
+  def apply(
+    maxRows: scala.Double,
+    ignoreAliases: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreAllColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreSelection: js.UndefOr[scala.Boolean] = js.undefined
+  ): getUnderlyingDataOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxRows")(maxRows)
+    if (!js.isUndefined(ignoreAliases)) __obj.updateDynamic("ignoreAliases")(ignoreAliases)
+    if (!js.isUndefined(ignoreAllColumns)) __obj.updateDynamic("ignoreAllColumns")(ignoreAllColumns)
+    if (!js.isUndefined(ignoreSelection)) __obj.updateDynamic("ignoreSelection")(ignoreSelection)
+    __obj.asInstanceOf[getUnderlyingDataOptions]
+  }
+}
+

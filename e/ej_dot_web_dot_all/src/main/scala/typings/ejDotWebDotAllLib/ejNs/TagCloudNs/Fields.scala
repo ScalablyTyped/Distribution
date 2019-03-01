@@ -20,3 +20,20 @@ trait Fields extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Fields {
+  @scala.inline
+  def apply(
+    frequency: java.lang.String = null,
+    htmlAttributes: java.lang.String = null,
+    text: java.lang.String = null,
+    url: java.lang.String = null
+  ): Fields = {
+    val __obj = js.Dynamic.literal()
+    if (frequency != null) __obj.updateDynamic("frequency")(frequency)
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Fields]
+  }
+}
+

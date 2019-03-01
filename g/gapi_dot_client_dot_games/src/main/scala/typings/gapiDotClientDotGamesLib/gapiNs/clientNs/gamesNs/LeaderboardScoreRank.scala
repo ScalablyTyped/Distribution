@@ -18,3 +18,22 @@ trait LeaderboardScoreRank extends js.Object {
   var rank: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LeaderboardScoreRank {
+  @scala.inline
+  def apply(
+    formattedNumScores: java.lang.String = null,
+    formattedRank: java.lang.String = null,
+    kind: java.lang.String = null,
+    numScores: java.lang.String = null,
+    rank: java.lang.String = null
+  ): LeaderboardScoreRank = {
+    val __obj = js.Dynamic.literal()
+    if (formattedNumScores != null) __obj.updateDynamic("formattedNumScores")(formattedNumScores)
+    if (formattedRank != null) __obj.updateDynamic("formattedRank")(formattedRank)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (numScores != null) __obj.updateDynamic("numScores")(numScores)
+    if (rank != null) __obj.updateDynamic("rank")(rank)
+    __obj.asInstanceOf[LeaderboardScoreRank]
+  }
+}
+

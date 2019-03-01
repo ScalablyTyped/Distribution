@@ -59,3 +59,60 @@ trait XMutableTreeNode extends XTreeNode {
   def setNodeGraphicURL(URL: java.lang.String): scala.Unit
 }
 
+object XMutableTreeNode {
+  @scala.inline
+  def apply(
+    ChildCount: scala.Double,
+    CollapsedGraphicURL: java.lang.String,
+    DataValue: js.Any,
+    DisplayValue: js.Any,
+    ExpandedGraphicURL: java.lang.String,
+    NodeGraphicURL: java.lang.String,
+    Parent: XTreeNode,
+    appendChild: js.Function1[XMutableTreeNode, scala.Unit],
+    getChildAt: js.Function1[scala.Double, XTreeNode],
+    getChildCount: js.Function0[scala.Double],
+    getCollapsedGraphicURL: js.Function0[java.lang.String],
+    getDisplayValue: js.Function0[js.Any],
+    getExpandedGraphicURL: js.Function0[java.lang.String],
+    getIndex: js.Function1[XTreeNode, scala.Double],
+    getNodeGraphicURL: js.Function0[java.lang.String],
+    getParent: js.Function0[XTreeNode],
+    hasChildrenOnDemand: js.Function0[scala.Boolean],
+    insertChildByIndex: js.Function2[scala.Double, XMutableTreeNode, scala.Unit],
+    removeChildByIndex: js.Function1[scala.Double, scala.Unit],
+    setCollapsedGraphicURL: js.Function1[java.lang.String, scala.Unit],
+    setDisplayValue: js.Function1[js.Any, scala.Unit],
+    setExpandedGraphicURL: js.Function1[java.lang.String, scala.Unit],
+    setHasChildrenOnDemand: js.Function1[scala.Boolean, scala.Unit],
+    setNodeGraphicURL: js.Function1[java.lang.String, scala.Unit]
+  ): XMutableTreeNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ChildCount")(ChildCount)
+    __obj.updateDynamic("CollapsedGraphicURL")(CollapsedGraphicURL)
+    __obj.updateDynamic("DataValue")(DataValue)
+    __obj.updateDynamic("DisplayValue")(DisplayValue)
+    __obj.updateDynamic("ExpandedGraphicURL")(ExpandedGraphicURL)
+    __obj.updateDynamic("NodeGraphicURL")(NodeGraphicURL)
+    __obj.updateDynamic("Parent")(Parent)
+    __obj.updateDynamic("appendChild")(appendChild)
+    __obj.updateDynamic("getChildAt")(getChildAt)
+    __obj.updateDynamic("getChildCount")(getChildCount)
+    __obj.updateDynamic("getCollapsedGraphicURL")(getCollapsedGraphicURL)
+    __obj.updateDynamic("getDisplayValue")(getDisplayValue)
+    __obj.updateDynamic("getExpandedGraphicURL")(getExpandedGraphicURL)
+    __obj.updateDynamic("getIndex")(getIndex)
+    __obj.updateDynamic("getNodeGraphicURL")(getNodeGraphicURL)
+    __obj.updateDynamic("getParent")(getParent)
+    __obj.updateDynamic("hasChildrenOnDemand")(hasChildrenOnDemand)
+    __obj.updateDynamic("insertChildByIndex")(insertChildByIndex)
+    __obj.updateDynamic("removeChildByIndex")(removeChildByIndex)
+    __obj.updateDynamic("setCollapsedGraphicURL")(setCollapsedGraphicURL)
+    __obj.updateDynamic("setDisplayValue")(setDisplayValue)
+    __obj.updateDynamic("setExpandedGraphicURL")(setExpandedGraphicURL)
+    __obj.updateDynamic("setHasChildrenOnDemand")(setHasChildrenOnDemand)
+    __obj.updateDynamic("setNodeGraphicURL")(setNodeGraphicURL)
+    __obj.asInstanceOf[XMutableTreeNode]
+  }
+}
+

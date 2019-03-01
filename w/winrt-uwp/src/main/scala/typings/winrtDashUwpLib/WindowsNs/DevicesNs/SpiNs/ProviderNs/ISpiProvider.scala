@@ -10,3 +10,12 @@ trait ISpiProvider extends js.Object {
   var getControllersAsync: js.Any
 }
 
+object ISpiProvider {
+  @scala.inline
+  def apply(getControllersAsync: js.Any): ISpiProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getControllersAsync")(getControllersAsync)
+    __obj.asInstanceOf[ISpiProvider]
+  }
+}
+

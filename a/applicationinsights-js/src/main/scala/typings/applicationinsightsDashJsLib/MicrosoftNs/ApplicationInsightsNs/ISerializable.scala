@@ -14,3 +14,12 @@ trait ISerializable extends js.Object {
   var aiDataContract: js.Any
 }
 
+object ISerializable {
+  @scala.inline
+  def apply(aiDataContract: js.Any): ISerializable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aiDataContract")(aiDataContract)
+    __obj.asInstanceOf[ISerializable]
+  }
+}
+

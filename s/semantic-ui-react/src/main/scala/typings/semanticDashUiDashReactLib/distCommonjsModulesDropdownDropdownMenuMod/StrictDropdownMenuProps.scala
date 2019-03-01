@@ -24,3 +24,26 @@ trait StrictDropdownMenuProps extends js.Object {
   var scrolling: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StrictDropdownMenuProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    direction: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    scrolling: js.UndefOr[scala.Boolean] = js.undefined
+  ): StrictDropdownMenuProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (!js.isUndefined(scrolling)) __obj.updateDynamic("scrolling")(scrolling)
+    __obj.asInstanceOf[StrictDropdownMenuProps]
+  }
+}
+

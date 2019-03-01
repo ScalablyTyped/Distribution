@@ -23,3 +23,16 @@ trait RuntimeLoadOptions extends js.Object {
   var enableEvents: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RuntimeLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    enableEvents: js.UndefOr[scala.Boolean] = js.undefined
+  ): RuntimeLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(enableEvents)) __obj.updateDynamic("enableEvents")(enableEvents)
+    __obj.asInstanceOf[RuntimeLoadOptions]
+  }
+}
+

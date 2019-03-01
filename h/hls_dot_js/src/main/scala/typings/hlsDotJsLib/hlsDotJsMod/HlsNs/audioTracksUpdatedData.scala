@@ -9,3 +9,12 @@ trait audioTracksUpdatedData extends js.Object {
   var audioTracks: js.Array[stdLib.AudioTrack]
 }
 
+object audioTracksUpdatedData {
+  @scala.inline
+  def apply(audioTracks: js.Array[stdLib.AudioTrack]): audioTracksUpdatedData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audioTracks")(audioTracks)
+    __obj.asInstanceOf[audioTracksUpdatedData]
+  }
+}
+

@@ -34,3 +34,20 @@ trait GooglePrivacyDlpV2beta1CharacterMaskConfig extends js.Object {
   var reverseOrder: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1CharacterMaskConfig {
+  @scala.inline
+  def apply(
+    charactersToIgnore: js.Array[GooglePrivacyDlpV2beta1CharsToIgnore] = null,
+    maskingCharacter: java.lang.String = null,
+    numberToMask: scala.Int | scala.Double = null,
+    reverseOrder: js.UndefOr[scala.Boolean] = js.undefined
+  ): GooglePrivacyDlpV2beta1CharacterMaskConfig = {
+    val __obj = js.Dynamic.literal()
+    if (charactersToIgnore != null) __obj.updateDynamic("charactersToIgnore")(charactersToIgnore)
+    if (maskingCharacter != null) __obj.updateDynamic("maskingCharacter")(maskingCharacter)
+    if (numberToMask != null) __obj.updateDynamic("numberToMask")(numberToMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(reverseOrder)) __obj.updateDynamic("reverseOrder")(reverseOrder)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1CharacterMaskConfig]
+  }
+}
+

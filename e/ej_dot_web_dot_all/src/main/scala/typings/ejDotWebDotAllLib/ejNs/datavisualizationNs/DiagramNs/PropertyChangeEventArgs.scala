@@ -29,3 +29,26 @@ trait PropertyChangeEventArgs extends js.Object {
   var propertyName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PropertyChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cause: java.lang.String = null,
+    diagramId: java.lang.String = null,
+    element: js.Any = null,
+    newValue: js.Any = null,
+    oldValue: js.Any = null,
+    propertyName: java.lang.String = null
+  ): PropertyChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cause != null) __obj.updateDynamic("cause")(cause)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
+    __obj.asInstanceOf[PropertyChangeEventArgs]
+  }
+}
+

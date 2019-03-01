@@ -21,3 +21,26 @@ trait XStarBasicDialogInfo
   def getName(): java.lang.String
 }
 
+object XStarBasicDialogInfo {
+  @scala.inline
+  def apply(
+    Data: activexDashInteropLib.SafeArray[scala.Double],
+    Name: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getData: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStarBasicDialogInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Data")(Data)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStarBasicDialogInfo]
+  }
+}
+

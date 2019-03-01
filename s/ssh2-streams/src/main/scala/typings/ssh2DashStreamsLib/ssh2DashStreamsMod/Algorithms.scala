@@ -13,3 +13,22 @@ trait Algorithms extends js.Object {
   var serverHostKey: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Algorithms {
+  @scala.inline
+  def apply(
+    cipher: js.Array[java.lang.String] = null,
+    compress: js.Array[java.lang.String] = null,
+    hmac: js.Array[java.lang.String] = null,
+    kex: js.Array[java.lang.String] = null,
+    serverHostKey: js.Array[java.lang.String] = null
+  ): Algorithms = {
+    val __obj = js.Dynamic.literal()
+    if (cipher != null) __obj.updateDynamic("cipher")(cipher)
+    if (compress != null) __obj.updateDynamic("compress")(compress)
+    if (hmac != null) __obj.updateDynamic("hmac")(hmac)
+    if (kex != null) __obj.updateDynamic("kex")(kex)
+    if (serverHostKey != null) __obj.updateDynamic("serverHostKey")(serverHostKey)
+    __obj.asInstanceOf[Algorithms]
+  }
+}
+

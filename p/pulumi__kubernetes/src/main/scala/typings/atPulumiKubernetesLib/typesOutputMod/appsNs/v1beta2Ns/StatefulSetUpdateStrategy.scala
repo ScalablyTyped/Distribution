@@ -22,3 +22,12 @@ trait StatefulSetUpdateStrategy extends js.Object {
   val `type`: java.lang.String
 }
 
+object StatefulSetUpdateStrategy {
+  @scala.inline
+  def apply(rollingUpdate: RollingUpdateStatefulSetStrategy, `type`: java.lang.String): StatefulSetUpdateStrategy = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("rollingUpdate")(rollingUpdate)
+    __obj.asInstanceOf[StatefulSetUpdateStrategy]
+  }
+}
+

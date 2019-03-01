@@ -18,3 +18,16 @@ trait TraversalMethods extends js.Object {
   def childNodes(): jscodeshiftLib.srcCollectionMod.Collection[JSXElementChild]
 }
 
+object TraversalMethods {
+  @scala.inline
+  def apply(
+    childElements: js.Function0[jscodeshiftLib.srcCollectionMod.Collection[JSXElement]],
+    childNodes: js.Function0[jscodeshiftLib.srcCollectionMod.Collection[JSXElementChild]]
+  ): TraversalMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("childElements")(childElements)
+    __obj.updateDynamic("childNodes")(childNodes)
+    __obj.asInstanceOf[TraversalMethods]
+  }
+}
+

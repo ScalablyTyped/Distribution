@@ -45,3 +45,28 @@ trait SearchAnalyticsQueryRequest extends js.Object {
   var startRow: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SearchAnalyticsQueryRequest {
+  @scala.inline
+  def apply(
+    aggregationType: java.lang.String = null,
+    dimensionFilterGroups: js.Array[ApiDimensionFilterGroup] = null,
+    dimensions: js.Array[java.lang.String] = null,
+    endDate: java.lang.String = null,
+    rowLimit: scala.Int | scala.Double = null,
+    searchType: java.lang.String = null,
+    startDate: java.lang.String = null,
+    startRow: scala.Int | scala.Double = null
+  ): SearchAnalyticsQueryRequest = {
+    val __obj = js.Dynamic.literal()
+    if (aggregationType != null) __obj.updateDynamic("aggregationType")(aggregationType)
+    if (dimensionFilterGroups != null) __obj.updateDynamic("dimensionFilterGroups")(dimensionFilterGroups)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (rowLimit != null) __obj.updateDynamic("rowLimit")(rowLimit.asInstanceOf[js.Any])
+    if (searchType != null) __obj.updateDynamic("searchType")(searchType)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchAnalyticsQueryRequest]
+  }
+}
+

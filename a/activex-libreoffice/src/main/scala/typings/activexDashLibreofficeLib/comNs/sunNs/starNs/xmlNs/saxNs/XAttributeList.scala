@@ -32,3 +32,32 @@ trait XAttributeList
   def getValueByName(aName: java.lang.String): java.lang.String
 }
 
+object XAttributeList {
+  @scala.inline
+  def apply(
+    Length: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getLength: js.Function0[scala.Double],
+    getNameByIndex: js.Function1[scala.Double, java.lang.String],
+    getTypeByIndex: js.Function1[scala.Double, java.lang.String],
+    getTypeByName: js.Function1[java.lang.String, java.lang.String],
+    getValueByIndex: js.Function1[scala.Double, java.lang.String],
+    getValueByName: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAttributeList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Length")(Length)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLength")(getLength)
+    __obj.updateDynamic("getNameByIndex")(getNameByIndex)
+    __obj.updateDynamic("getTypeByIndex")(getTypeByIndex)
+    __obj.updateDynamic("getTypeByName")(getTypeByName)
+    __obj.updateDynamic("getValueByIndex")(getValueByIndex)
+    __obj.updateDynamic("getValueByName")(getValueByName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAttributeList]
+  }
+}
+

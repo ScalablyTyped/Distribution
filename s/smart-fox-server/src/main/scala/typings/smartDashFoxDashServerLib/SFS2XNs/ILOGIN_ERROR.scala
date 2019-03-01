@@ -10,3 +10,13 @@ trait ILOGIN_ERROR extends js.Object {
   var errorMessage: java.lang.String
 }
 
+object ILOGIN_ERROR {
+  @scala.inline
+  def apply(errorCode: scala.Double, errorMessage: java.lang.String): ILOGIN_ERROR = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorCode")(errorCode)
+    __obj.updateDynamic("errorMessage")(errorMessage)
+    __obj.asInstanceOf[ILOGIN_ERROR]
+  }
+}
+

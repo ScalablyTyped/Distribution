@@ -13,3 +13,20 @@ trait InterceptorOptions extends js.Object {
   var token: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InterceptorOptions {
+  @scala.inline
+  def apply(
+    getToken: js.Function0[java.lang.String | js.Promise[java.lang.String]] = null,
+    header: java.lang.String = null,
+    headerFormatter: js.Function1[/* token */ java.lang.String, java.lang.String] = null,
+    token: java.lang.String = null
+  ): InterceptorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (getToken != null) __obj.updateDynamic("getToken")(getToken)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (headerFormatter != null) __obj.updateDynamic("headerFormatter")(headerFormatter)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[InterceptorOptions]
+  }
+}
+

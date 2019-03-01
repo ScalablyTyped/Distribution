@@ -13,3 +13,22 @@ trait Anon_CaFile extends js.Object {
   var rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_CaFile {
+  @scala.inline
+  def apply(
+    enabled: scala.Boolean,
+    caFile: java.lang.String = null,
+    certFile: java.lang.String = null,
+    keyFile: java.lang.String = null,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_CaFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enabled")(enabled)
+    if (caFile != null) __obj.updateDynamic("caFile")(caFile)
+    if (certFile != null) __obj.updateDynamic("certFile")(certFile)
+    if (keyFile != null) __obj.updateDynamic("keyFile")(keyFile)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    __obj.asInstanceOf[Anon_CaFile]
+  }
+}
+

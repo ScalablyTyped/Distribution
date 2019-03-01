@@ -48,3 +48,30 @@ trait GeoTransformPrototype extends js.Object {
   var sphere: js.UndefOr[js.ThisFunction0[/* this */ this.type with d3DashGeoLib.Anon_Stream, scala.Unit]] = js.undefined
 }
 
+object GeoTransformPrototype {
+  @scala.inline
+  def apply(
+    lineEnd: js.ThisFunction0[/* this */ GeoTransformPrototype with d3DashGeoLib.Anon_Stream, scala.Unit] = null,
+    lineStart: js.ThisFunction0[/* this */ GeoTransformPrototype with d3DashGeoLib.Anon_Stream, scala.Unit] = null,
+    point: js.ThisFunction3[
+      /* this */ GeoTransformPrototype with d3DashGeoLib.Anon_Stream, 
+      /* x */ scala.Double, 
+      /* y */ scala.Double, 
+      /* z */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    polygonEnd: js.ThisFunction0[/* this */ GeoTransformPrototype with d3DashGeoLib.Anon_Stream, scala.Unit] = null,
+    polygonStart: js.ThisFunction0[/* this */ GeoTransformPrototype with d3DashGeoLib.Anon_Stream, scala.Unit] = null,
+    sphere: js.ThisFunction0[/* this */ GeoTransformPrototype with d3DashGeoLib.Anon_Stream, scala.Unit] = null
+  ): GeoTransformPrototype = {
+    val __obj = js.Dynamic.literal()
+    if (lineEnd != null) __obj.updateDynamic("lineEnd")(lineEnd)
+    if (lineStart != null) __obj.updateDynamic("lineStart")(lineStart)
+    if (point != null) __obj.updateDynamic("point")(point)
+    if (polygonEnd != null) __obj.updateDynamic("polygonEnd")(polygonEnd)
+    if (polygonStart != null) __obj.updateDynamic("polygonStart")(polygonStart)
+    if (sphere != null) __obj.updateDynamic("sphere")(sphere)
+    __obj.asInstanceOf[GeoTransformPrototype]
+  }
+}
+

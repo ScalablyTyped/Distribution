@@ -12,3 +12,20 @@ trait TrackController extends js.Object {
   def update(): scala.Unit
 }
 
+object TrackController {
+  @scala.inline
+  def apply(
+    autoHideOnIdle: js.Function0[scala.Unit],
+    update: js.Function0[scala.Unit],
+    xAxis: ScrollbarTrack,
+    yAxis: ScrollbarTrack
+  ): TrackController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoHideOnIdle")(autoHideOnIdle)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("xAxis")(xAxis)
+    __obj.updateDynamic("yAxis")(yAxis)
+    __obj.asInstanceOf[TrackController]
+  }
+}
+

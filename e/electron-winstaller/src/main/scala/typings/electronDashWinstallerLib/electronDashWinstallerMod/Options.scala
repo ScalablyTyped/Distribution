@@ -118,3 +118,56 @@ trait Options extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    appDirectory: java.lang.String,
+    authors: java.lang.String = null,
+    certificateFile: java.lang.String = null,
+    certificatePassword: java.lang.String = null,
+    copyright: java.lang.String = null,
+    description: java.lang.String = null,
+    exe: java.lang.String = null,
+    iconUrl: java.lang.String = null,
+    loadingGif: java.lang.String = null,
+    name: java.lang.String = null,
+    noDelta: js.UndefOr[scala.Boolean] = js.undefined,
+    noMsi: js.UndefOr[scala.Boolean] = js.undefined,
+    outputDirectory: java.lang.String = null,
+    owners: java.lang.String = null,
+    remoteReleases: java.lang.String = null,
+    remoteToken: java.lang.String = null,
+    setupExe: java.lang.String = null,
+    setupIcon: java.lang.String = null,
+    setupMsi: java.lang.String = null,
+    signWithParams: java.lang.String = null,
+    title: java.lang.String = null,
+    version: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appDirectory")(appDirectory)
+    if (authors != null) __obj.updateDynamic("authors")(authors)
+    if (certificateFile != null) __obj.updateDynamic("certificateFile")(certificateFile)
+    if (certificatePassword != null) __obj.updateDynamic("certificatePassword")(certificatePassword)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (exe != null) __obj.updateDynamic("exe")(exe)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (loadingGif != null) __obj.updateDynamic("loadingGif")(loadingGif)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(noDelta)) __obj.updateDynamic("noDelta")(noDelta)
+    if (!js.isUndefined(noMsi)) __obj.updateDynamic("noMsi")(noMsi)
+    if (outputDirectory != null) __obj.updateDynamic("outputDirectory")(outputDirectory)
+    if (owners != null) __obj.updateDynamic("owners")(owners)
+    if (remoteReleases != null) __obj.updateDynamic("remoteReleases")(remoteReleases)
+    if (remoteToken != null) __obj.updateDynamic("remoteToken")(remoteToken)
+    if (setupExe != null) __obj.updateDynamic("setupExe")(setupExe)
+    if (setupIcon != null) __obj.updateDynamic("setupIcon")(setupIcon)
+    if (setupMsi != null) __obj.updateDynamic("setupMsi")(setupMsi)
+    if (signWithParams != null) __obj.updateDynamic("signWithParams")(signWithParams)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Options]
+  }
+}
+

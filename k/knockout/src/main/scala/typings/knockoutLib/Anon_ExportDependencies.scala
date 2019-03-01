@@ -9,3 +9,12 @@ trait Anon_ExportDependencies extends js.Object {
   var exportDependencies: scala.Boolean
 }
 
+object Anon_ExportDependencies {
+  @scala.inline
+  def apply(exportDependencies: scala.Boolean): Anon_ExportDependencies = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exportDependencies")(exportDependencies)
+    __obj.asInstanceOf[Anon_ExportDependencies]
+  }
+}
+

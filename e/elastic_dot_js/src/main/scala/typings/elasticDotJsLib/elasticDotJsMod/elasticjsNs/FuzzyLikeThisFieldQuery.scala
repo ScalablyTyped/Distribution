@@ -56,3 +56,34 @@ trait FuzzyLikeThisFieldQuery extends Query {
   def toJSON(): js.Any
 }
 
+object FuzzyLikeThisFieldQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    analyzer: js.Function1[java.lang.String, FuzzyLikeThisFieldQuery],
+    boost: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
+    failOnUnsupportedField: js.Function1[scala.Boolean, FuzzyLikeThisFieldQuery],
+    field: js.Function1[java.lang.String, FuzzyLikeThisFieldQuery],
+    ignoreTf: js.Function1[scala.Boolean, FuzzyLikeThisFieldQuery],
+    likeText: js.Function1[java.lang.String, FuzzyLikeThisFieldQuery],
+    maxQueryTerms: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
+    minSimilarity: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
+    prefixLength: js.Function1[scala.Double, FuzzyLikeThisFieldQuery],
+    toJSON: js.Function0[js.Any]
+  ): FuzzyLikeThisFieldQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("analyzer")(analyzer)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("failOnUnsupportedField")(failOnUnsupportedField)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("ignoreTf")(ignoreTf)
+    __obj.updateDynamic("likeText")(likeText)
+    __obj.updateDynamic("maxQueryTerms")(maxQueryTerms)
+    __obj.updateDynamic("minSimilarity")(minSimilarity)
+    __obj.updateDynamic("prefixLength")(prefixLength)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[FuzzyLikeThisFieldQuery]
+  }
+}
+

@@ -62,3 +62,106 @@ trait DatePickerProps extends js.Object {
   var value: js.UndefOr[stdLib.Date] = js.undefined
 }
 
+object DatePickerProps {
+  @scala.inline
+  def apply(
+    DateTimeFormat: stdLib.Anon_LocalesOptionsSupportedLocalesOfArray = null,
+    autoOk: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    container: materialDashUiLib.materialDashUiLibStrings.dialog | materialDashUiLib.materialDashUiLibStrings.`inline` = null,
+    defaultDate: stdLib.Date = null,
+    defaultValue: java.lang.String = null,
+    dialogContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    disableYearSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    errorStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    errorText: reactLib.reactMod.ReactNs.ReactNode = null,
+    firstDayOfWeek: scala.Int | scala.Double = null,
+    floatingLabelStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    floatingLabelText: reactLib.reactMod.ReactNs.ReactNode = null,
+    formatDate: js.Function1[/* date */ stdLib.Date, java.lang.String] = null,
+    fullWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    hideCalendarDate: js.UndefOr[scala.Boolean] = js.undefined,
+    hintStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    hintText: reactLib.reactMod.ReactNs.ReactNode = null,
+    id: java.lang.String = null,
+    inputStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    locale: java.lang.String = null,
+    maxDate: stdLib.Date = null,
+    minDate: stdLib.Date = null,
+    mode: materialDashUiLib.materialDashUiLibStrings.portrait | materialDashUiLib.materialDashUiLibStrings.landscape = null,
+    name: java.lang.String = null,
+    okLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    onBlur: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
+    onChange: js.Function2[/* e */ js.Any, /* date */ stdLib.Date, scala.Unit] = null,
+    onClick: reactLib.reactMod.ReactNs.TouchEventHandler[js.Object] = null,
+    onDismiss: js.Function0[scala.Unit] = null,
+    onFocus: reactLib.reactMod.ReactNs.FocusEventHandler[js.Object] = null,
+    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
+    onShow: js.Function0[scala.Unit] = null,
+    rows: scala.Int | scala.Double = null,
+    rowsMax: scala.Int | scala.Double = null,
+    shouldDisableDate: js.Function1[/* day */ stdLib.Date, scala.Boolean] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    textFieldStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    `type`: java.lang.String = null,
+    underlineDisabledStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    underlineFocusStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    underlineShow: js.UndefOr[scala.Boolean] = js.undefined,
+    underlineStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    utils: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.utils = null,
+    value: stdLib.Date = null
+  ): DatePickerProps = {
+    val __obj = js.Dynamic.literal()
+    if (DateTimeFormat != null) __obj.updateDynamic("DateTimeFormat")(DateTimeFormat)
+    if (!js.isUndefined(autoOk)) __obj.updateDynamic("autoOk")(autoOk)
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (dialogContainerStyle != null) __obj.updateDynamic("dialogContainerStyle")(dialogContainerStyle)
+    if (!js.isUndefined(disableYearSelection)) __obj.updateDynamic("disableYearSelection")(disableYearSelection)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (errorStyle != null) __obj.updateDynamic("errorStyle")(errorStyle)
+    if (errorText != null) __obj.updateDynamic("errorText")(errorText.asInstanceOf[js.Any])
+    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek.asInstanceOf[js.Any])
+    if (floatingLabelStyle != null) __obj.updateDynamic("floatingLabelStyle")(floatingLabelStyle)
+    if (floatingLabelText != null) __obj.updateDynamic("floatingLabelText")(floatingLabelText.asInstanceOf[js.Any])
+    if (formatDate != null) __obj.updateDynamic("formatDate")(formatDate)
+    if (!js.isUndefined(fullWidth)) __obj.updateDynamic("fullWidth")(fullWidth)
+    if (!js.isUndefined(hideCalendarDate)) __obj.updateDynamic("hideCalendarDate")(hideCalendarDate)
+    if (hintStyle != null) __obj.updateDynamic("hintStyle")(hintStyle)
+    if (hintText != null) __obj.updateDynamic("hintText")(hintText.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inputStyle != null) __obj.updateDynamic("inputStyle")(inputStyle)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel.asInstanceOf[js.Any])
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (rowsMax != null) __obj.updateDynamic("rowsMax")(rowsMax.asInstanceOf[js.Any])
+    if (shouldDisableDate != null) __obj.updateDynamic("shouldDisableDate")(shouldDisableDate)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (textFieldStyle != null) __obj.updateDynamic("textFieldStyle")(textFieldStyle)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (underlineDisabledStyle != null) __obj.updateDynamic("underlineDisabledStyle")(underlineDisabledStyle)
+    if (underlineFocusStyle != null) __obj.updateDynamic("underlineFocusStyle")(underlineFocusStyle)
+    if (!js.isUndefined(underlineShow)) __obj.updateDynamic("underlineShow")(underlineShow)
+    if (underlineStyle != null) __obj.updateDynamic("underlineStyle")(underlineStyle)
+    if (utils != null) __obj.updateDynamic("utils")(utils)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DatePickerProps]
+  }
+}
+

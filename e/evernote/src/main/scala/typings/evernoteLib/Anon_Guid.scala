@@ -12,3 +12,20 @@ trait Anon_Guid extends js.Object {
   var updateSequenceNum: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Guid {
+  @scala.inline
+  def apply(
+    guid: java.lang.String = null,
+    name: java.lang.String = null,
+    parentGuid: java.lang.String = null,
+    updateSequenceNum: scala.Int | scala.Double = null
+  ): Anon_Guid = {
+    val __obj = js.Dynamic.literal()
+    if (guid != null) __obj.updateDynamic("guid")(guid)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parentGuid != null) __obj.updateDynamic("parentGuid")(parentGuid)
+    if (updateSequenceNum != null) __obj.updateDynamic("updateSequenceNum")(updateSequenceNum.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Guid]
+  }
+}
+

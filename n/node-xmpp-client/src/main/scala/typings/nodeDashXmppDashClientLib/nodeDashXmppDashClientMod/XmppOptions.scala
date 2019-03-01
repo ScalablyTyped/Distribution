@@ -28,3 +28,38 @@ trait XmppOptions extends js.Object {
   var register: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object XmppOptions {
+  @scala.inline
+  def apply(
+    jid: java.lang.String,
+    password: java.lang.String,
+    actAs: java.lang.String = null,
+    autostart: js.UndefOr[scala.Boolean] = js.undefined,
+    bosh: Bosh = null,
+    credentials: js.Any = null,
+    disallowTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    host: java.lang.String = null,
+    legacySSL: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Int | scala.Double = null,
+    preferred: java.lang.String = null,
+    reconnect: js.UndefOr[scala.Boolean] = js.undefined,
+    register: js.UndefOr[scala.Boolean] = js.undefined
+  ): XmppOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jid")(jid)
+    __obj.updateDynamic("password")(password)
+    if (actAs != null) __obj.updateDynamic("actAs")(actAs)
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
+    if (bosh != null) __obj.updateDynamic("bosh")(bosh)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (!js.isUndefined(disallowTLS)) __obj.updateDynamic("disallowTLS")(disallowTLS)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(legacySSL)) __obj.updateDynamic("legacySSL")(legacySSL)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (preferred != null) __obj.updateDynamic("preferred")(preferred)
+    if (!js.isUndefined(reconnect)) __obj.updateDynamic("reconnect")(reconnect)
+    if (!js.isUndefined(register)) __obj.updateDynamic("register")(register)
+    __obj.asInstanceOf[XmppOptions]
+  }
+}
+

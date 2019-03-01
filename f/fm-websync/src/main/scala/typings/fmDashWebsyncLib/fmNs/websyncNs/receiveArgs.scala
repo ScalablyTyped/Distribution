@@ -20,3 +20,26 @@ trait receiveArgs extends baseResponseArgs {
   var publishingClient: publishingClient
 }
 
+object receiveArgs {
+  @scala.inline
+  def apply(
+    channel: java.lang.String,
+    client: client,
+    clientId: java.lang.String,
+    data: js.Any,
+    meta: js.Any,
+    publishingClient: publishingClient,
+    timestamp: stdLib.Date
+  ): receiveArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("publishingClient")(publishingClient)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[receiveArgs]
+  }
+}
+

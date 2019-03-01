@@ -54,3 +54,46 @@ trait Anon_AltCorpora extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltCorpora {
+  @scala.inline
+  def apply(
+    alt: java.lang.String = null,
+    corpora: java.lang.String = null,
+    corpus: java.lang.String = null,
+    fields: java.lang.String = null,
+    includeTeamDriveItems: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    orderBy: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    q: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    spaces: java.lang.String = null,
+    supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined,
+    teamDriveId: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltCorpora = {
+    val __obj = js.Dynamic.literal()
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (corpora != null) __obj.updateDynamic("corpora")(corpora)
+    if (corpus != null) __obj.updateDynamic("corpus")(corpus)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(includeTeamDriveItems)) __obj.updateDynamic("includeTeamDriveItems")(includeTeamDriveItems)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (q != null) __obj.updateDynamic("q")(q)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (spaces != null) __obj.updateDynamic("spaces")(spaces)
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)
+    if (teamDriveId != null) __obj.updateDynamic("teamDriveId")(teamDriveId)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltCorpora]
+  }
+}
+

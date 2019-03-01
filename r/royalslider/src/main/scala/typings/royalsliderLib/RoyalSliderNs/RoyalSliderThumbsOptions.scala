@@ -60,3 +60,38 @@ trait RoyalSliderThumbsOptions extends js.Object {
   var transitionSpeed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RoyalSliderThumbsOptions {
+  @scala.inline
+  def apply(
+    appendSpan: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowLeft: royalsliderLib.JQuery = null,
+    arrowRight: royalsliderLib.JQuery = null,
+    arrows: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowsAutoHide: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCenter: js.UndefOr[scala.Boolean] = js.undefined,
+    drag: js.UndefOr[scala.Boolean] = js.undefined,
+    firstMargin: js.UndefOr[scala.Boolean] = js.undefined,
+    fitInViewport: js.UndefOr[scala.Boolean] = js.undefined,
+    orientation: java.lang.String = null,
+    spacing: scala.Int | scala.Double = null,
+    touch: js.UndefOr[scala.Boolean] = js.undefined,
+    transitionSpeed: scala.Int | scala.Double = null
+  ): RoyalSliderThumbsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(appendSpan)) __obj.updateDynamic("appendSpan")(appendSpan)
+    if (arrowLeft != null) __obj.updateDynamic("arrowLeft")(arrowLeft)
+    if (arrowRight != null) __obj.updateDynamic("arrowRight")(arrowRight)
+    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows)
+    if (!js.isUndefined(arrowsAutoHide)) __obj.updateDynamic("arrowsAutoHide")(arrowsAutoHide)
+    if (!js.isUndefined(autoCenter)) __obj.updateDynamic("autoCenter")(autoCenter)
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag)
+    if (!js.isUndefined(firstMargin)) __obj.updateDynamic("firstMargin")(firstMargin)
+    if (!js.isUndefined(fitInViewport)) __obj.updateDynamic("fitInViewport")(fitInViewport)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch)
+    if (transitionSpeed != null) __obj.updateDynamic("transitionSpeed")(transitionSpeed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoyalSliderThumbsOptions]
+  }
+}
+

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- joiLib.joiMod._Schema because Already inherited */ @js.native
 trait FunctionSchema extends AnySchema {
   /**
     * Specifies the arity of the function where:

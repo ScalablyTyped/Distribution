@@ -21,3 +21,18 @@ trait AliasArgs extends js.Object {
   val targetKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object AliasArgs {
+  @scala.inline
+  def apply(
+    targetKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AliasArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("targetKeyId")(targetKeyId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AliasArgs]
+  }
+}
+

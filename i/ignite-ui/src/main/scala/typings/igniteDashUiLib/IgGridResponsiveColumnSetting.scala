@@ -32,3 +32,25 @@ trait IgGridResponsiveColumnSetting
   var configuration: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgGridResponsiveColumnSetting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridResponsiveColumnSetting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    classes: java.lang.String = null,
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    configuration: js.Any = null
+  ): IgGridResponsiveColumnSetting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    __obj.asInstanceOf[IgGridResponsiveColumnSetting]
+  }
+}
+

@@ -17,3 +17,18 @@ trait RowChangeEvent
   var Rows: scala.Double
 }
 
+object RowChangeEvent {
+  @scala.inline
+  def apply(
+    Action: scala.Double,
+    Rows: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): RowChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Action")(Action)
+    __obj.updateDynamic("Rows")(Rows)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[RowChangeEvent]
+  }
+}
+

@@ -61,3 +61,26 @@ trait APIServiceSpec extends js.Object {
   val versionPriority: scala.Double
 }
 
+object APIServiceSpec {
+  @scala.inline
+  def apply(
+    caBundle: java.lang.String,
+    group: java.lang.String,
+    groupPriorityMinimum: scala.Double,
+    insecureSkipTLSVerify: scala.Boolean,
+    service: ServiceReference,
+    version: java.lang.String,
+    versionPriority: scala.Double
+  ): APIServiceSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("caBundle")(caBundle)
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("groupPriorityMinimum")(groupPriorityMinimum)
+    __obj.updateDynamic("insecureSkipTLSVerify")(insecureSkipTLSVerify)
+    __obj.updateDynamic("service")(service)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("versionPriority")(versionPriority)
+    __obj.asInstanceOf[APIServiceSpec]
+  }
+}
+

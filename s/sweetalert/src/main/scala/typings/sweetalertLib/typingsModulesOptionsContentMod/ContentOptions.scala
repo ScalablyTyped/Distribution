@@ -10,3 +10,13 @@ trait ContentOptions extends js.Object {
   var element: java.lang.String | stdLib.Node
 }
 
+object ContentOptions {
+  @scala.inline
+  def apply(element: java.lang.String | stdLib.Node, attributes: js.Object = null): ContentOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    __obj.asInstanceOf[ContentOptions]
+  }
+}
+

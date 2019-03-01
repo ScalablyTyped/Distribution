@@ -22,3 +22,16 @@ trait ListCreativeStatusBreakdownByCreativeResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListCreativeStatusBreakdownByCreativeResponse {
+  @scala.inline
+  def apply(
+    filteredBidCreativeRows: js.Array[FilteredBidCreativeRow] = null,
+    nextPageToken: java.lang.String = null
+  ): ListCreativeStatusBreakdownByCreativeResponse = {
+    val __obj = js.Dynamic.literal()
+    if (filteredBidCreativeRows != null) __obj.updateDynamic("filteredBidCreativeRows")(filteredBidCreativeRows)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListCreativeStatusBreakdownByCreativeResponse]
+  }
+}
+

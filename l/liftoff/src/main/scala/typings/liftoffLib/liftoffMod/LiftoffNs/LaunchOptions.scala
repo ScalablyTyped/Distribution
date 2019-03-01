@@ -37,3 +37,22 @@ trait LaunchOptions extends js.Object {
   var require: js.UndefOr[java.lang.String | js.Array[_]] = js.undefined
 }
 
+object LaunchOptions {
+  @scala.inline
+  def apply(
+    completion: java.lang.String = null,
+    configPath: java.lang.String = null,
+    cwd: java.lang.String = null,
+    forcedFlags: java.lang.String | js.Array[java.lang.String] | (js.Function1[/* env */ LiftoffEnv, java.lang.String | js.Array[java.lang.String]]) = null,
+    require: java.lang.String | js.Array[_] = null
+  ): LaunchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (completion != null) __obj.updateDynamic("completion")(completion)
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (forcedFlags != null) __obj.updateDynamic("forcedFlags")(forcedFlags.asInstanceOf[js.Any])
+    if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LaunchOptions]
+  }
+}
+

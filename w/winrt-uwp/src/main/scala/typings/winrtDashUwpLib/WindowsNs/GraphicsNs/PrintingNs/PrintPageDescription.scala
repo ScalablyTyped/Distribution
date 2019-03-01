@@ -17,3 +17,20 @@ trait PrintPageDescription extends js.Object {
   var pageSize: winrtDashUwpLib.WindowsNs.FoundationNs.Size
 }
 
+object PrintPageDescription {
+  @scala.inline
+  def apply(
+    dpiX: scala.Double,
+    dpiY: scala.Double,
+    imageableRect: winrtDashUwpLib.WindowsNs.FoundationNs.Rect,
+    pageSize: winrtDashUwpLib.WindowsNs.FoundationNs.Size
+  ): PrintPageDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dpiX")(dpiX)
+    __obj.updateDynamic("dpiY")(dpiY)
+    __obj.updateDynamic("imageableRect")(imageableRect)
+    __obj.updateDynamic("pageSize")(pageSize)
+    __obj.asInstanceOf[PrintPageDescription]
+  }
+}
+

@@ -12,3 +12,12 @@ trait CodeLensOptions extends js.Object {
   var resolveProvider: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CodeLensOptions {
+  @scala.inline
+  def apply(resolveProvider: js.UndefOr[scala.Boolean] = js.undefined): CodeLensOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider)
+    __obj.asInstanceOf[CodeLensOptions]
+  }
+}
+

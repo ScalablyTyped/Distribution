@@ -21,3 +21,38 @@ trait Service extends js.Object {
   def validate(): Service
 }
 
+object Service {
+  @scala.inline
+  def apply(
+    custom: serverlessLib.classesServiceMod.ServiceNs.Custom,
+    getAllEventsInFunction: js.Function1[java.lang.String, js.Array[serverlessLib.serverlessMod.ServerlessNs.Event]],
+    getAllFunctions: js.Function0[js.Array[java.lang.String]],
+    getAllFunctionsNames: js.Function0[js.Array[java.lang.String]],
+    getEventInFunction: js.Function2[java.lang.String, java.lang.String, serverlessLib.serverlessMod.ServerlessNs.Event],
+    getFunction: js.Function1[java.lang.String, serverlessLib.serverlessMod.ServerlessNs.FunctionDefinition],
+    getServiceName: js.Function0[java.lang.String],
+    load: js.Function1[js.Object, js.Promise[_]],
+    mergeResourceArrays: js.Function0[scala.Unit],
+    provider: serverlessLib.Anon_CompiledCloudFormationTemplate,
+    setFunctionNames: js.Function1[js.Object, scala.Unit],
+    update: js.Function1[js.Object, js.Object],
+    validate: js.Function0[Service]
+  ): Service = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custom")(custom)
+    __obj.updateDynamic("getAllEventsInFunction")(getAllEventsInFunction)
+    __obj.updateDynamic("getAllFunctions")(getAllFunctions)
+    __obj.updateDynamic("getAllFunctionsNames")(getAllFunctionsNames)
+    __obj.updateDynamic("getEventInFunction")(getEventInFunction)
+    __obj.updateDynamic("getFunction")(getFunction)
+    __obj.updateDynamic("getServiceName")(getServiceName)
+    __obj.updateDynamic("load")(load)
+    __obj.updateDynamic("mergeResourceArrays")(mergeResourceArrays)
+    __obj.updateDynamic("provider")(provider)
+    __obj.updateDynamic("setFunctionNames")(setFunctionNames)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[Service]
+  }
+}
+

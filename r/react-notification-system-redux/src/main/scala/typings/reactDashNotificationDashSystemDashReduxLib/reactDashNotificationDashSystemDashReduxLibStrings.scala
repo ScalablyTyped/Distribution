@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object reactDashNotificationDashSystemDashReduxLibStrings {
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsNs.NotificationLevel
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsNs.NotificationLevel
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsNs.NotificationLevel
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends reactDashNotificationDashSystemDashReduxLib.reactDashNotificationDashSystemDashReduxMod.NotificationsNs.NotificationLevel
   
   @scala.inline
   def error: error = "error".asInstanceOf[error]

@@ -41,3 +41,80 @@ trait StackFrame extends js.Object {
   def setSource(): scala.Unit
 }
 
+object StackFrame {
+  @scala.inline
+  def apply(
+    getArgs: js.Function0[js.Array[_]],
+    getColumnNumber: js.Function0[scala.Double],
+    getEvalOrigin: js.Function0[StackFrame],
+    getFileName: js.Function0[java.lang.String],
+    getFunctionName: js.Function0[java.lang.String],
+    getIsConstructor: js.Function0[scala.Boolean],
+    getIsEval: js.Function0[scala.Boolean],
+    getIsNative: js.Function0[scala.Boolean],
+    getIsTopLevel: js.Function0[scala.Boolean],
+    getLineNumber: js.Function0[scala.Double],
+    getSource: js.Function0[java.lang.String],
+    setArgs: js.Function0[scala.Unit],
+    setColumnNumber: js.Function0[scala.Unit],
+    setEvalOrigin: js.Function0[scala.Unit],
+    setFileName: js.Function0[scala.Unit],
+    setFunctionName: js.Function0[scala.Unit],
+    setIsConstructor: js.Function0[scala.Unit],
+    setIsEval: js.Function0[scala.Unit],
+    setIsNative: js.Function0[scala.Unit],
+    setIsTopLevel: js.Function0[scala.Unit],
+    setLineNumber: js.Function0[scala.Unit],
+    setSource: js.Function0[scala.Unit],
+    toString: js.Function0[java.lang.String],
+    args: js.Array[_] = null,
+    columnNumber: scala.Int | scala.Double = null,
+    evalOrigin: StackFrame = null,
+    fileName: java.lang.String = null,
+    functionName: java.lang.String = null,
+    isConstructor: js.UndefOr[scala.Boolean] = js.undefined,
+    isEval: js.UndefOr[scala.Boolean] = js.undefined,
+    isNative: js.UndefOr[scala.Boolean] = js.undefined,
+    isTopLevel: js.UndefOr[scala.Boolean] = js.undefined,
+    lineNumber: scala.Int | scala.Double = null,
+    source: java.lang.String = null
+  ): StackFrame = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getArgs")(getArgs)
+    __obj.updateDynamic("getColumnNumber")(getColumnNumber)
+    __obj.updateDynamic("getEvalOrigin")(getEvalOrigin)
+    __obj.updateDynamic("getFileName")(getFileName)
+    __obj.updateDynamic("getFunctionName")(getFunctionName)
+    __obj.updateDynamic("getIsConstructor")(getIsConstructor)
+    __obj.updateDynamic("getIsEval")(getIsEval)
+    __obj.updateDynamic("getIsNative")(getIsNative)
+    __obj.updateDynamic("getIsTopLevel")(getIsTopLevel)
+    __obj.updateDynamic("getLineNumber")(getLineNumber)
+    __obj.updateDynamic("getSource")(getSource)
+    __obj.updateDynamic("setArgs")(setArgs)
+    __obj.updateDynamic("setColumnNumber")(setColumnNumber)
+    __obj.updateDynamic("setEvalOrigin")(setEvalOrigin)
+    __obj.updateDynamic("setFileName")(setFileName)
+    __obj.updateDynamic("setFunctionName")(setFunctionName)
+    __obj.updateDynamic("setIsConstructor")(setIsConstructor)
+    __obj.updateDynamic("setIsEval")(setIsEval)
+    __obj.updateDynamic("setIsNative")(setIsNative)
+    __obj.updateDynamic("setIsTopLevel")(setIsTopLevel)
+    __obj.updateDynamic("setLineNumber")(setLineNumber)
+    __obj.updateDynamic("setSource")(setSource)
+    __obj.updateDynamic("toString")(toString)
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (columnNumber != null) __obj.updateDynamic("columnNumber")(columnNumber.asInstanceOf[js.Any])
+    if (evalOrigin != null) __obj.updateDynamic("evalOrigin")(evalOrigin)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (functionName != null) __obj.updateDynamic("functionName")(functionName)
+    if (!js.isUndefined(isConstructor)) __obj.updateDynamic("isConstructor")(isConstructor)
+    if (!js.isUndefined(isEval)) __obj.updateDynamic("isEval")(isEval)
+    if (!js.isUndefined(isNative)) __obj.updateDynamic("isNative")(isNative)
+    if (!js.isUndefined(isTopLevel)) __obj.updateDynamic("isTopLevel")(isTopLevel)
+    if (lineNumber != null) __obj.updateDynamic("lineNumber")(lineNumber.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[StackFrame]
+  }
+}
+

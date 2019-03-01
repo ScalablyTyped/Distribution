@@ -14,3 +14,24 @@ trait CreateProgramOptions extends js.Object {
   var rootNames: js.Array[java.lang.String]
 }
 
+object CreateProgramOptions {
+  @scala.inline
+  def apply(
+    options: CompilerOptions,
+    rootNames: js.Array[java.lang.String],
+    configFileParsingDiagnostics: js.Array[Diagnostic] = null,
+    host: CompilerHost = null,
+    oldProgram: Program = null,
+    projectReferences: js.Array[ProjectReference] = null
+  ): CreateProgramOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("rootNames")(rootNames)
+    if (configFileParsingDiagnostics != null) __obj.updateDynamic("configFileParsingDiagnostics")(configFileParsingDiagnostics)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (oldProgram != null) __obj.updateDynamic("oldProgram")(oldProgram)
+    if (projectReferences != null) __obj.updateDynamic("projectReferences")(projectReferences)
+    __obj.asInstanceOf[CreateProgramOptions]
+  }
+}
+

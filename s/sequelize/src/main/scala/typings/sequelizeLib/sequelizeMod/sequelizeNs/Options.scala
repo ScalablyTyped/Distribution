@@ -173,3 +173,70 @@ trait Options extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    benchmark: js.UndefOr[scala.Boolean] = js.undefined,
+    database: java.lang.String = null,
+    databaseVersion: scala.Int | scala.Double = null,
+    define: DefineOptions[_] = null,
+    dialect: java.lang.String = null,
+    dialectModulePath: java.lang.String = null,
+    dialectOptions: js.Object = null,
+    host: java.lang.String = null,
+    isolationLevel: TransactionIsolationLevel = null,
+    logging: scala.Boolean | js.Function = null,
+    native: js.UndefOr[scala.Boolean] = js.undefined,
+    omitNull: js.UndefOr[scala.Boolean] = js.undefined,
+    operatorsAliases: scala.Boolean | OperatorsAliases = null,
+    password: java.lang.String = null,
+    pool: PoolOptions = null,
+    port: scala.Int | scala.Double = null,
+    protocol: java.lang.String = null,
+    query: QueryOptions = null,
+    quoteIdentifiers: js.UndefOr[scala.Boolean] = js.undefined,
+    replication: ReplicationOptions = null,
+    retry: RetryOptions = null,
+    set: SetOptions = null,
+    ssl: js.UndefOr[scala.Boolean] = js.undefined,
+    storage: java.lang.String = null,
+    sync: SyncOptions = null,
+    timezone: java.lang.String = null,
+    transactionType: TransactionType = null,
+    typeValidation: js.UndefOr[scala.Boolean] = js.undefined,
+    username: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (databaseVersion != null) __obj.updateDynamic("databaseVersion")(databaseVersion.asInstanceOf[js.Any])
+    if (define != null) __obj.updateDynamic("define")(define)
+    if (dialect != null) __obj.updateDynamic("dialect")(dialect)
+    if (dialectModulePath != null) __obj.updateDynamic("dialectModulePath")(dialectModulePath)
+    if (dialectOptions != null) __obj.updateDynamic("dialectOptions")(dialectOptions)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (isolationLevel != null) __obj.updateDynamic("isolationLevel")(isolationLevel.asInstanceOf[js.Any])
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (!js.isUndefined(native)) __obj.updateDynamic("native")(native)
+    if (!js.isUndefined(omitNull)) __obj.updateDynamic("omitNull")(omitNull)
+    if (operatorsAliases != null) __obj.updateDynamic("operatorsAliases")(operatorsAliases.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (pool != null) __obj.updateDynamic("pool")(pool)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(quoteIdentifiers)) __obj.updateDynamic("quoteIdentifiers")(quoteIdentifiers)
+    if (replication != null) __obj.updateDynamic("replication")(replication)
+    if (retry != null) __obj.updateDynamic("retry")(retry)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (sync != null) __obj.updateDynamic("sync")(sync)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (transactionType != null) __obj.updateDynamic("transactionType")(transactionType.asInstanceOf[js.Any])
+    if (!js.isUndefined(typeValidation)) __obj.updateDynamic("typeValidation")(typeValidation)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[Options]
+  }
+}
+

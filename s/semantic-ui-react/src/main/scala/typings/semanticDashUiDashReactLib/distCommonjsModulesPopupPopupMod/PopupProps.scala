@@ -9,3 +9,110 @@ trait PopupProps
   extends StrictPopupProps
      with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 
+object PopupProps {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    as: js.Any = null,
+    basic: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    closeOnDocumentClick: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnEscape: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnPortalMouseLeave: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnTriggerBlur: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnTriggerMouseLeave: js.UndefOr[scala.Boolean] = js.undefined,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[
+      semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps
+    ] = null,
+    context: js.Object = null,
+    defaultOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    eventPool: java.lang.String = null,
+    flowing: js.UndefOr[scala.Boolean] = js.undefined,
+    header: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[
+      semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
+    ] = null,
+    hideOnScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalOffset: scala.Int | scala.Double = null,
+    hoverable: js.UndefOr[scala.Boolean] = js.undefined,
+    inverted: js.UndefOr[scala.Boolean] = js.undefined,
+    keepInViewPort: js.UndefOr[scala.Boolean] = js.undefined,
+    mountNode: js.Any = null,
+    mouseEnterDelay: scala.Int | scala.Double = null,
+    mouseLeaveDelay: scala.Int | scala.Double = null,
+    on: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hover | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.click | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.focus | (js.Array[
+      semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.hover | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.click | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.focus
+    ]) = null,
+    onClose: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* data */ PopupProps, 
+      scala.Unit
+    ] = null,
+    onMount: js.Function2[/* nothing */ scala.Null, /* data */ PopupProps, scala.Unit] = null,
+    onOpen: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* data */ PopupProps, 
+      scala.Unit
+    ] = null,
+    onUnmount: js.Function2[/* nothing */ scala.Null, /* data */ PopupProps, scala.Unit] = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    openOnTriggerClick: js.UndefOr[scala.Boolean] = js.undefined,
+    openOnTriggerFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    openOnTriggerMouseEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    position: (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top left`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top right`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom right`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom left`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`right center`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`left center`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`top center`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`bottom center`) = null,
+    size: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.mini | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.tiny | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.small | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.large | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.huge = null,
+    style: js.Object = null,
+    trigger: reactLib.reactMod.ReactNs.ReactNode = null,
+    triggerRef: js.Function1[/* node */ reactLib.HTMLElement, scala.Unit] = null,
+    verticalOffset: scala.Int | scala.Double = null,
+    wide: scala.Boolean | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.very = null
+  ): PopupProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (!js.isUndefined(basic)) __obj.updateDynamic("basic")(basic)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(closeOnDocumentClick)) __obj.updateDynamic("closeOnDocumentClick")(closeOnDocumentClick)
+    if (!js.isUndefined(closeOnEscape)) __obj.updateDynamic("closeOnEscape")(closeOnEscape)
+    if (!js.isUndefined(closeOnPortalMouseLeave)) __obj.updateDynamic("closeOnPortalMouseLeave")(closeOnPortalMouseLeave)
+    if (!js.isUndefined(closeOnTriggerBlur)) __obj.updateDynamic("closeOnTriggerBlur")(closeOnTriggerBlur)
+    if (!js.isUndefined(closeOnTriggerClick)) __obj.updateDynamic("closeOnTriggerClick")(closeOnTriggerClick)
+    if (!js.isUndefined(closeOnTriggerMouseLeave)) __obj.updateDynamic("closeOnTriggerMouseLeave")(closeOnTriggerMouseLeave)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(defaultOpen)) __obj.updateDynamic("defaultOpen")(defaultOpen)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (eventPool != null) __obj.updateDynamic("eventPool")(eventPool)
+    if (!js.isUndefined(flowing)) __obj.updateDynamic("flowing")(flowing)
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideOnScroll)) __obj.updateDynamic("hideOnScroll")(hideOnScroll)
+    if (horizontalOffset != null) __obj.updateDynamic("horizontalOffset")(horizontalOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverable)) __obj.updateDynamic("hoverable")(hoverable)
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
+    if (!js.isUndefined(keepInViewPort)) __obj.updateDynamic("keepInViewPort")(keepInViewPort)
+    if (mountNode != null) __obj.updateDynamic("mountNode")(mountNode)
+    if (mouseEnterDelay != null) __obj.updateDynamic("mouseEnterDelay")(mouseEnterDelay.asInstanceOf[js.Any])
+    if (mouseLeaveDelay != null) __obj.updateDynamic("mouseLeaveDelay")(mouseLeaveDelay.asInstanceOf[js.Any])
+    if (on != null) __obj.updateDynamic("on")(on.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onMount != null) __obj.updateDynamic("onMount")(onMount)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onUnmount != null) __obj.updateDynamic("onUnmount")(onUnmount)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (!js.isUndefined(openOnTriggerClick)) __obj.updateDynamic("openOnTriggerClick")(openOnTriggerClick)
+    if (!js.isUndefined(openOnTriggerFocus)) __obj.updateDynamic("openOnTriggerFocus")(openOnTriggerFocus)
+    if (!js.isUndefined(openOnTriggerMouseEnter)) __obj.updateDynamic("openOnTriggerMouseEnter")(openOnTriggerMouseEnter)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (triggerRef != null) __obj.updateDynamic("triggerRef")(triggerRef)
+    if (verticalOffset != null) __obj.updateDynamic("verticalOffset")(verticalOffset.asInstanceOf[js.Any])
+    if (wide != null) __obj.updateDynamic("wide")(wide.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PopupProps]
+  }
+}
+

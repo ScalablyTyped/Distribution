@@ -29,3 +29,22 @@ trait XTimeStamped
   def getTimestamp(): java.lang.String
 }
 
+object XTimeStamped {
+  @scala.inline
+  def apply(
+    Timestamp: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getTimestamp: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTimeStamped = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Timestamp")(Timestamp)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getTimestamp")(getTimestamp)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTimeStamped]
+  }
+}
+

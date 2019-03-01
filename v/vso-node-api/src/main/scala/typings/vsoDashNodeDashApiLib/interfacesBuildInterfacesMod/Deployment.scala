@@ -9,3 +9,12 @@ trait Deployment extends js.Object {
   var `type`: java.lang.String
 }
 
+object Deployment {
+  @scala.inline
+  def apply(`type`: java.lang.String): Deployment = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Deployment]
+  }
+}
+

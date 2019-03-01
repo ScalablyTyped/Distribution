@@ -64,3 +64,45 @@ trait ICustomer
   var subscriptions: ICustomerSubscriptions
 }
 
+object ICustomer {
+  @scala.inline
+  def apply(
+    created: scala.Double,
+    delinquent: scala.Boolean,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.customer,
+    subscriptions: ICustomerSubscriptions,
+    account_balance: scala.Int | scala.Double = null,
+    cards: stripeLib.stripeMod.StripeNs.resourcesNs.CustomerCards = null,
+    currency: java.lang.String = null,
+    default_source: java.lang.String | stripeLib.stripeMod.StripeNs.cardsNs.ICard | stripeLib.stripeMod.StripeNs.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.StripeNs.bankAccountsNs.IBankAccount = null,
+    description: java.lang.String = null,
+    discount: stripeLib.stripeMod.StripeNs.couponsNs.IDiscount = null,
+    email: java.lang.String = null,
+    shipping: stripeLib.stripeMod.StripeNs.IShippingInformation = null,
+    sources: stripeLib.stripeMod.StripeNs.IList[
+      stripeLib.stripeMod.StripeNs.cardsNs.ICard | stripeLib.stripeMod.StripeNs.bitcoinReceiversNs.IBitcoinReceiver | stripeLib.stripeMod.StripeNs.bankAccountsNs.IBankAccount
+    ] = null
+  ): ICustomer = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("delinquent")(delinquent)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("subscriptions")(subscriptions)
+    if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
+    if (cards != null) __obj.updateDynamic("cards")(cards)
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (default_source != null) __obj.updateDynamic("default_source")(default_source.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (discount != null) __obj.updateDynamic("discount")(discount)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    __obj.asInstanceOf[ICustomer]
+  }
+}
+

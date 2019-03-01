@@ -43,3 +43,20 @@ trait SlicerItemData extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SlicerItemData {
+  @scala.inline
+  def apply(
+    hasData: js.UndefOr[scala.Boolean] = js.undefined,
+    isSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    name: java.lang.String = null
+  ): SlicerItemData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hasData)) __obj.updateDynamic("hasData")(hasData)
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[SlicerItemData]
+  }
+}
+

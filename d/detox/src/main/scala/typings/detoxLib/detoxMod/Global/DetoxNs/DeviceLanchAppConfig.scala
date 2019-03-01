@@ -45,3 +45,28 @@ trait DeviceLanchAppConfig extends js.Object {
   var userNotification: js.UndefOr[js.Any] = js.undefined
 }
 
+object DeviceLanchAppConfig {
+  @scala.inline
+  def apply(
+    delete: js.UndefOr[scala.Boolean] = js.undefined,
+    languageAndLocale: LanguageAndLocale = null,
+    launchArgs: js.Any = null,
+    newInstance: js.UndefOr[scala.Boolean] = js.undefined,
+    permissions: js.Any = null,
+    url: js.Any = null,
+    userActivity: js.Any = null,
+    userNotification: js.Any = null
+  ): DeviceLanchAppConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(delete)) __obj.updateDynamic("delete")(delete)
+    if (languageAndLocale != null) __obj.updateDynamic("languageAndLocale")(languageAndLocale)
+    if (launchArgs != null) __obj.updateDynamic("launchArgs")(launchArgs)
+    if (!js.isUndefined(newInstance)) __obj.updateDynamic("newInstance")(newInstance)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (userActivity != null) __obj.updateDynamic("userActivity")(userActivity)
+    if (userNotification != null) __obj.updateDynamic("userNotification")(userNotification)
+    __obj.asInstanceOf[DeviceLanchAppConfig]
+  }
+}
+

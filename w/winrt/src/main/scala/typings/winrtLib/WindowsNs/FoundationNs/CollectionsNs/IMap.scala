@@ -15,3 +15,28 @@ trait IMap[K, V] extends IIterable[IKeyValuePair[K, V]] {
   def remove(key: K): scala.Unit
 }
 
+object IMap {
+  @scala.inline
+  def apply[K, V](
+    clear: js.Function0[scala.Unit],
+    first: js.Function0[IIterator[IKeyValuePair[K, V]]],
+    getView: js.Function0[IMapView[K, V]],
+    hasKey: js.Function1[K, scala.Boolean],
+    insert: js.Function2[K, V, scala.Boolean],
+    lookup: js.Function1[K, V],
+    remove: js.Function1[K, scala.Unit],
+    size: scala.Double
+  ): IMap[K, V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("getView")(getView)
+    __obj.updateDynamic("hasKey")(hasKey)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("lookup")(lookup)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[IMap[K, V]]
+  }
+}
+

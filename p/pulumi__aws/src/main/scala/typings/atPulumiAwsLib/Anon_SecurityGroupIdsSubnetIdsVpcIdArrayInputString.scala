@@ -11,3 +11,18 @@ trait Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString extends js.Object {
   var vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString {
+  @scala.inline
+  def apply(
+    securityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("securityGroupIds")(securityGroupIds.asInstanceOf[js.Any])
+    __obj.updateDynamic("subnetIds")(subnetIds.asInstanceOf[js.Any])
+    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInputString]
+  }
+}
+

@@ -43,3 +43,24 @@ trait RouteLeg extends js.Object {
   var weight: scala.Double
 }
 
+object RouteLeg {
+  @scala.inline
+  def apply(
+    annotation: Annotation,
+    distance: scala.Double,
+    duration: scala.Double,
+    steps: js.Array[RouteStep],
+    summary: java.lang.String,
+    weight: scala.Double
+  ): RouteLeg = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotation")(annotation)
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("steps")(steps)
+    __obj.updateDynamic("summary")(summary)
+    __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[RouteLeg]
+  }
+}
+

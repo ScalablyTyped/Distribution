@@ -10,3 +10,16 @@ trait IBackgroundTransferContentPartFactory extends js.Object {
   def createWithNameAndFileName(name: java.lang.String, fileName: java.lang.String): BackgroundTransferContentPart
 }
 
+object IBackgroundTransferContentPartFactory {
+  @scala.inline
+  def apply(
+    createWithName: js.Function1[java.lang.String, BackgroundTransferContentPart],
+    createWithNameAndFileName: js.Function2[java.lang.String, java.lang.String, BackgroundTransferContentPart]
+  ): IBackgroundTransferContentPartFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createWithName")(createWithName)
+    __obj.updateDynamic("createWithNameAndFileName")(createWithNameAndFileName)
+    __obj.asInstanceOf[IBackgroundTransferContentPartFactory]
+  }
+}
+

@@ -35,3 +35,26 @@ trait VariantSetMetadata extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VariantSetMetadata {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    info: stdLib.Record[java.lang.String, js.Array[_]] = null,
+    key: java.lang.String = null,
+    number: java.lang.String = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): VariantSetMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (number != null) __obj.updateDynamic("number")(number)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[VariantSetMetadata]
+  }
+}
+

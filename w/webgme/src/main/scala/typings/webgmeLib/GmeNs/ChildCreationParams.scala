@@ -10,3 +10,13 @@ trait ChildCreationParams extends js.Object {
   var parentId: java.lang.String
 }
 
+object ChildCreationParams {
+  @scala.inline
+  def apply(baseId: java.lang.String, parentId: java.lang.String): ChildCreationParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseId")(baseId)
+    __obj.updateDynamic("parentId")(parentId)
+    __obj.asInstanceOf[ChildCreationParams]
+  }
+}
+

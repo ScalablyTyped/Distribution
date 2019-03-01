@@ -10,3 +10,20 @@ trait ProjectDetailsMultiAppResult extends ProjectDetailsResultBase {
   val id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProjectDetailsMultiAppResult {
+  @scala.inline
+  def apply(
+    context: ionicLib.ionicLibStrings.multiapp,
+    errors: js.Array[ProjectDetailsError],
+    id: java.lang.String = null,
+    `type`: ionicLib.definitionsMod.ProjectType = null
+  ): ProjectDetailsMultiAppResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("errors")(errors)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ProjectDetailsMultiAppResult]
+  }
+}
+

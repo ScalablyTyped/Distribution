@@ -15,3 +15,13 @@ trait QueryTestablePermissionsResponse extends js.Object {
   var permissions: js.UndefOr[js.Array[Permission]] = js.undefined
 }
 
+object QueryTestablePermissionsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, permissions: js.Array[Permission] = null): QueryTestablePermissionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[QueryTestablePermissionsResponse]
+  }
+}
+

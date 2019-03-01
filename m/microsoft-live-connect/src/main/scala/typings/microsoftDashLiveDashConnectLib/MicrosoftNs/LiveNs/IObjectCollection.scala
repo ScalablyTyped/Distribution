@@ -16,3 +16,12 @@ trait IObjectCollection[T] extends js.Object {
   var data: js.Array[T]
 }
 
+object IObjectCollection {
+  @scala.inline
+  def apply[T](data: js.Array[T]): IObjectCollection[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[IObjectCollection[T]]
+  }
+}
+

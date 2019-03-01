@@ -25,3 +25,20 @@ trait SetVariableValueParameterType extends js.Object {
   var variableName: java.lang.String
 }
 
+object SetVariableValueParameterType {
+  @scala.inline
+  def apply(
+    callFrameId: CallFrameId,
+    newValue: nodeLib.inspectorMod.RuntimeNs.CallArgument,
+    scopeNumber: scala.Double,
+    variableName: java.lang.String
+  ): SetVariableValueParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callFrameId")(callFrameId)
+    __obj.updateDynamic("newValue")(newValue)
+    __obj.updateDynamic("scopeNumber")(scopeNumber)
+    __obj.updateDynamic("variableName")(variableName)
+    __obj.asInstanceOf[SetVariableValueParameterType]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_Length extends js.Object {
   var length: scala.Double
 }
 
+object Anon_Length {
+  @scala.inline
+  def apply(length: scala.Double): Anon_Length = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("length")(length)
+    __obj.asInstanceOf[Anon_Length]
+  }
+}
+

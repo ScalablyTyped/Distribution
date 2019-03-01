@@ -12,3 +12,20 @@ trait Anon_EPHEMERAL extends js.Object {
   var PERSISTENT_SEQUENTIAL: scala.Double
 }
 
+object Anon_EPHEMERAL {
+  @scala.inline
+  def apply(
+    EPHEMERAL: scala.Double,
+    EPHEMERAL_SEQUENTIAL: scala.Double,
+    PERSISTENT: scala.Double,
+    PERSISTENT_SEQUENTIAL: scala.Double
+  ): Anon_EPHEMERAL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EPHEMERAL")(EPHEMERAL)
+    __obj.updateDynamic("EPHEMERAL_SEQUENTIAL")(EPHEMERAL_SEQUENTIAL)
+    __obj.updateDynamic("PERSISTENT")(PERSISTENT)
+    __obj.updateDynamic("PERSISTENT_SEQUENTIAL")(PERSISTENT_SEQUENTIAL)
+    __obj.asInstanceOf[Anon_EPHEMERAL]
+  }
+}
+

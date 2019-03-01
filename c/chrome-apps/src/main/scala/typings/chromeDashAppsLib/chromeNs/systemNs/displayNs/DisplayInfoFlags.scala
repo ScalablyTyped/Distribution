@@ -18,3 +18,12 @@ trait DisplayInfoFlags extends js.Object {
   var singleUnified: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DisplayInfoFlags {
+  @scala.inline
+  def apply(singleUnified: js.UndefOr[scala.Boolean] = js.undefined): DisplayInfoFlags = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(singleUnified)) __obj.updateDynamic("singleUnified")(singleUnified)
+    __obj.asInstanceOf[DisplayInfoFlags]
+  }
+}
+

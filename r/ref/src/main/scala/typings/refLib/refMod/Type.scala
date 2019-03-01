@@ -20,3 +20,24 @@ trait Type extends js.Object {
   def set(buffer: nodeLib.Buffer, offset: scala.Double, value: js.Any): scala.Unit
 }
 
+object Type {
+  @scala.inline
+  def apply(
+    get: js.Function2[nodeLib.Buffer, scala.Double, js.Any],
+    indirection: scala.Double,
+    set: js.Function3[nodeLib.Buffer, scala.Double, js.Any, scala.Unit],
+    size: scala.Double,
+    alignment: scala.Int | scala.Double = null,
+    name: java.lang.String = null
+  ): Type = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("indirection")(indirection)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("size")(size)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Type]
+  }
+}
+

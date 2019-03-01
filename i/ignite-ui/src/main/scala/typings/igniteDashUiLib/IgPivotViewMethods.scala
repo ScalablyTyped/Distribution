@@ -42,3 +42,26 @@ trait IgPivotViewMethods extends js.Object {
   def splitter(): js.Object
 }
 
+object IgPivotViewMethods {
+  @scala.inline
+  def apply(
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    dataSelector: js.Function0[js.Object],
+    destroy: js.Function0[scala.Unit],
+    pivotGrid: js.Function0[js.Object],
+    splitter: js.Function0[js.Object]
+  ): IgPivotViewMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("dataSelector")(dataSelector)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("pivotGrid")(pivotGrid)
+    __obj.updateDynamic("splitter")(splitter)
+    __obj.asInstanceOf[IgPivotViewMethods]
+  }
+}
+

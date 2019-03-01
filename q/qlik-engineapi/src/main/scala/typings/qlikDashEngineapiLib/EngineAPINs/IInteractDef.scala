@@ -69,3 +69,34 @@ trait IInteractDef extends js.Object {
   var qType: js.UndefOr[InteractionType] = js.undefined
 }
 
+object IInteractDef {
+  @scala.inline
+  def apply(
+    qResult: scala.Double,
+    qButtons: scala.Int | scala.Double = null,
+    qHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    qInput: java.lang.String = null,
+    qLine: java.lang.String = null,
+    qMsg: java.lang.String = null,
+    qNewLineNr: scala.Int | scala.Double = null,
+    qOldLineNr: scala.Int | scala.Double = null,
+    qPath: java.lang.String = null,
+    qTitle: java.lang.String = null,
+    qType: InteractionType = null
+  ): IInteractDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qResult")(qResult)
+    if (qButtons != null) __obj.updateDynamic("qButtons")(qButtons.asInstanceOf[js.Any])
+    if (!js.isUndefined(qHidden)) __obj.updateDynamic("qHidden")(qHidden)
+    if (qInput != null) __obj.updateDynamic("qInput")(qInput)
+    if (qLine != null) __obj.updateDynamic("qLine")(qLine)
+    if (qMsg != null) __obj.updateDynamic("qMsg")(qMsg)
+    if (qNewLineNr != null) __obj.updateDynamic("qNewLineNr")(qNewLineNr.asInstanceOf[js.Any])
+    if (qOldLineNr != null) __obj.updateDynamic("qOldLineNr")(qOldLineNr.asInstanceOf[js.Any])
+    if (qPath != null) __obj.updateDynamic("qPath")(qPath)
+    if (qTitle != null) __obj.updateDynamic("qTitle")(qTitle)
+    if (qType != null) __obj.updateDynamic("qType")(qType)
+    __obj.asInstanceOf[IInteractDef]
+  }
+}
+

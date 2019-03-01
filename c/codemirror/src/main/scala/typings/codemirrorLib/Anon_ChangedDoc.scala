@@ -11,3 +11,18 @@ trait Anon_ChangedDoc extends js.Object {
   var name: java.lang.String
 }
 
+object Anon_ChangedDoc {
+  @scala.inline
+  def apply(
+    doc: codemirrorLib.codemirrorMod.CodeMirrorNs.Doc,
+    name: java.lang.String,
+    changed: Anon_FromTo = null
+  ): Anon_ChangedDoc = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("doc")(doc)
+    __obj.updateDynamic("name")(name)
+    if (changed != null) __obj.updateDynamic("changed")(changed)
+    __obj.asInstanceOf[Anon_ChangedDoc]
+  }
+}
+

@@ -16,3 +16,13 @@ trait ReleaseNoteInfo extends js.Object {
   val version: java.lang.String
 }
 
+object ReleaseNoteInfo {
+  @scala.inline
+  def apply(version: java.lang.String, note: java.lang.String = null): ReleaseNoteInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("version")(version)
+    if (note != null) __obj.updateDynamic("note")(note)
+    __obj.asInstanceOf[ReleaseNoteInfo]
+  }
+}
+

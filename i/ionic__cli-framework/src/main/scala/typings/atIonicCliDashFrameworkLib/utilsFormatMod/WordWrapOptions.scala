@@ -11,3 +11,18 @@ trait WordWrapOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WordWrapOptions {
+  @scala.inline
+  def apply(
+    append: java.lang.String = null,
+    indentation: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): WordWrapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (append != null) __obj.updateDynamic("append")(append)
+    if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WordWrapOptions]
+  }
+}
+

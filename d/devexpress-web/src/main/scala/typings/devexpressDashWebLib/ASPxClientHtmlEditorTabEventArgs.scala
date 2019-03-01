@@ -16,3 +16,12 @@ trait ASPxClientHtmlEditorTabEventArgs extends ASPxClientEventArgs {
   var name: java.lang.String
 }
 
+object ASPxClientHtmlEditorTabEventArgs {
+  @scala.inline
+  def apply(name: java.lang.String): ASPxClientHtmlEditorTabEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientHtmlEditorTabEventArgs]
+  }
+}
+

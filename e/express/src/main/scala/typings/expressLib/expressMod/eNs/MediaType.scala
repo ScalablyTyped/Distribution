@@ -8,3 +8,19 @@ import scala.scalajs.js.annotation._
 trait MediaType
   extends expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.MediaType
 
+object MediaType {
+  @scala.inline
+  def apply(
+    quality: scala.Double,
+    subtype: java.lang.String,
+    `type`: java.lang.String,
+    value: java.lang.String
+  ): MediaType = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("quality")(quality)
+    __obj.updateDynamic("subtype")(subtype)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[MediaType]
+  }
+}
+

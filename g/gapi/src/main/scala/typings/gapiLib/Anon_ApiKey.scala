@@ -25,3 +25,22 @@ trait Anon_ApiKey extends js.Object {
   var scope: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ApiKey {
+  @scala.inline
+  def apply(
+    apiKey: java.lang.String = null,
+    clientId: java.lang.String = null,
+    discoveryDocs: js.Array[java.lang.String] = null,
+    hosted_domain: java.lang.String = null,
+    scope: java.lang.String = null
+  ): Anon_ApiKey = {
+    val __obj = js.Dynamic.literal()
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (discoveryDocs != null) __obj.updateDynamic("discoveryDocs")(discoveryDocs)
+    if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Anon_ApiKey]
+  }
+}
+

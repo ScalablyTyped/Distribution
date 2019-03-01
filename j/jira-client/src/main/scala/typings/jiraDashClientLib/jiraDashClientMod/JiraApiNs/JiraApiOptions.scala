@@ -23,3 +23,42 @@ trait JiraApiOptions extends js.Object {
   var webhookVersion: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JiraApiOptions {
+  @scala.inline
+  def apply(
+    host: java.lang.String,
+    apiVersion: java.lang.String = null,
+    base: java.lang.String = null,
+    bearer: java.lang.String = null,
+    greenhopperVersion: java.lang.String = null,
+    intermediatePath: java.lang.String = null,
+    oauth: OAuth = null,
+    password: java.lang.String = null,
+    port: java.lang.String = null,
+    protocol: java.lang.String = null,
+    request: js.Any = null,
+    strictSSL: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    username: java.lang.String = null,
+    webhookVersion: java.lang.String = null
+  ): JiraApiOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("host")(host)
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (bearer != null) __obj.updateDynamic("bearer")(bearer)
+    if (greenhopperVersion != null) __obj.updateDynamic("greenhopperVersion")(greenhopperVersion)
+    if (intermediatePath != null) __obj.updateDynamic("intermediatePath")(intermediatePath)
+    if (oauth != null) __obj.updateDynamic("oauth")(oauth)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (port != null) __obj.updateDynamic("port")(port)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (!js.isUndefined(strictSSL)) __obj.updateDynamic("strictSSL")(strictSSL)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username)
+    if (webhookVersion != null) __obj.updateDynamic("webhookVersion")(webhookVersion)
+    __obj.asInstanceOf[JiraApiOptions]
+  }
+}
+

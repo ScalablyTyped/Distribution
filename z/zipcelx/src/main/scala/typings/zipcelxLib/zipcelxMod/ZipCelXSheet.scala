@@ -12,3 +12,12 @@ trait ZipCelXSheet extends js.Object {
   var data: ZipCelXDataSet
 }
 
+object ZipCelXSheet {
+  @scala.inline
+  def apply(data: ZipCelXDataSet): ZipCelXSheet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[ZipCelXSheet]
+  }
+}
+

@@ -29,3 +29,22 @@ trait Rule[T /* <: js.Object */, K /* <: js.Object */] extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Rule {
+  @scala.inline
+  def apply[T /* <: js.Object */, K /* <: js.Object */](
+    actions: js.Array[K],
+    conditions: js.Array[T],
+    id: java.lang.String = null,
+    priority: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    tags: js.Array[java.lang.String] = null
+  ): Rule[T, K] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actions")(actions)
+    __obj.updateDynamic("conditions")(conditions)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(priority)) __obj.updateDynamic("priority")(priority)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[Rule[T, K]]
+  }
+}
+

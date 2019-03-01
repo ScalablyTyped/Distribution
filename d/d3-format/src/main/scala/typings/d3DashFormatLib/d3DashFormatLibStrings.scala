@@ -43,7 +43,7 @@ object d3DashFormatLibStrings {
   sealed trait X extends js.Object
   
   @js.native
-  sealed trait `^` extends js.Object
+  sealed trait `_backtick^_backtick` extends js.Object
   
   @js.native
   sealed trait b extends js.Object
@@ -106,7 +106,7 @@ object d3DashFormatLibStrings {
   @scala.inline
   def X: X = "X".asInstanceOf[X]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   @scala.inline

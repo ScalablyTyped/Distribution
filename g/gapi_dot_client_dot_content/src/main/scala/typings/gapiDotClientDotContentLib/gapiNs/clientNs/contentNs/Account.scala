@@ -36,3 +36,32 @@ trait Account extends js.Object {
   var youtubeChannelLinks: js.UndefOr[js.Array[AccountYouTubeChannelLink]] = js.undefined
 }
 
+object Account {
+  @scala.inline
+  def apply(
+    adultContent: js.UndefOr[scala.Boolean] = js.undefined,
+    adwordsLinks: js.Array[AccountAdwordsLink] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    reviewsUrl: java.lang.String = null,
+    sellerId: java.lang.String = null,
+    users: js.Array[AccountUser] = null,
+    websiteUrl: java.lang.String = null,
+    youtubeChannelLinks: js.Array[AccountYouTubeChannelLink] = null
+  ): Account = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(adultContent)) __obj.updateDynamic("adultContent")(adultContent)
+    if (adwordsLinks != null) __obj.updateDynamic("adwordsLinks")(adwordsLinks)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (reviewsUrl != null) __obj.updateDynamic("reviewsUrl")(reviewsUrl)
+    if (sellerId != null) __obj.updateDynamic("sellerId")(sellerId)
+    if (users != null) __obj.updateDynamic("users")(users)
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    if (youtubeChannelLinks != null) __obj.updateDynamic("youtubeChannelLinks")(youtubeChannelLinks)
+    __obj.asInstanceOf[Account]
+  }
+}
+

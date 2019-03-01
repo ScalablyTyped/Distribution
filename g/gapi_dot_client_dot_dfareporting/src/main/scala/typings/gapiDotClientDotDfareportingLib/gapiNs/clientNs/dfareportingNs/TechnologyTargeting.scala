@@ -40,3 +40,24 @@ trait TechnologyTargeting extends js.Object {
   var platformTypes: js.UndefOr[js.Array[PlatformType]] = js.undefined
 }
 
+object TechnologyTargeting {
+  @scala.inline
+  def apply(
+    browsers: js.Array[Browser] = null,
+    connectionTypes: js.Array[ConnectionType] = null,
+    mobileCarriers: js.Array[MobileCarrier] = null,
+    operatingSystemVersions: js.Array[OperatingSystemVersion] = null,
+    operatingSystems: js.Array[OperatingSystem] = null,
+    platformTypes: js.Array[PlatformType] = null
+  ): TechnologyTargeting = {
+    val __obj = js.Dynamic.literal()
+    if (browsers != null) __obj.updateDynamic("browsers")(browsers)
+    if (connectionTypes != null) __obj.updateDynamic("connectionTypes")(connectionTypes)
+    if (mobileCarriers != null) __obj.updateDynamic("mobileCarriers")(mobileCarriers)
+    if (operatingSystemVersions != null) __obj.updateDynamic("operatingSystemVersions")(operatingSystemVersions)
+    if (operatingSystems != null) __obj.updateDynamic("operatingSystems")(operatingSystems)
+    if (platformTypes != null) __obj.updateDynamic("platformTypes")(platformTypes)
+    __obj.asInstanceOf[TechnologyTargeting]
+  }
+}
+

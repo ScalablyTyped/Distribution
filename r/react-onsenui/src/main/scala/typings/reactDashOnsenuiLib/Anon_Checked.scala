@@ -22,3 +22,40 @@ trait Anon_Checked extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Checked {
+  @scala.inline
+  def apply(
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultValue: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    float: js.UndefOr[scala.Boolean] = js.undefined,
+    inputId: java.lang.String = null,
+    modifier: java.lang.String = null,
+    name: java.lang.String = null,
+    onBlur: js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[_], scala.Unit] = null,
+    onChange: js.Function1[/* e */ reactLib.reactMod.ReactNs.ChangeEvent[_], scala.Unit] = null,
+    onFocus: js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[_], scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): Anon_Checked = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float)
+    if (inputId != null) __obj.updateDynamic("inputId")(inputId)
+    if (modifier != null) __obj.updateDynamic("modifier")(modifier)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Checked]
+  }
+}
+

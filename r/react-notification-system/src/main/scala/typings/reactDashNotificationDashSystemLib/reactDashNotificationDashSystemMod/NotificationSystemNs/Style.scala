@@ -16,3 +16,28 @@ trait Style extends js.Object {
   var Wrapper: js.UndefOr[js.Any] = js.undefined
 }
 
+object Style {
+  @scala.inline
+  def apply(
+    Action: ItemStyle = null,
+    ActionWrapper: WrapperStyle = null,
+    Containers: ContainersStyle = null,
+    Dismiss: ItemStyle = null,
+    MessageWrapper: WrapperStyle = null,
+    NotificationItem: ItemStyle = null,
+    Title: ItemStyle = null,
+    Wrapper: js.Any = null
+  ): Style = {
+    val __obj = js.Dynamic.literal()
+    if (Action != null) __obj.updateDynamic("Action")(Action)
+    if (ActionWrapper != null) __obj.updateDynamic("ActionWrapper")(ActionWrapper)
+    if (Containers != null) __obj.updateDynamic("Containers")(Containers)
+    if (Dismiss != null) __obj.updateDynamic("Dismiss")(Dismiss)
+    if (MessageWrapper != null) __obj.updateDynamic("MessageWrapper")(MessageWrapper)
+    if (NotificationItem != null) __obj.updateDynamic("NotificationItem")(NotificationItem)
+    if (Title != null) __obj.updateDynamic("Title")(Title)
+    if (Wrapper != null) __obj.updateDynamic("Wrapper")(Wrapper)
+    __obj.asInstanceOf[Style]
+  }
+}
+

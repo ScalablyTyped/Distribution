@@ -14,3 +14,19 @@ trait SimpleFillSymbol extends Symbol {
   var type_SimpleFillSymbol: arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.esriSFS
 }
 
+object SimpleFillSymbol {
+  @scala.inline
+  def apply(
+    `type`: arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.esriSFS,
+    color: Color = null,
+    outline: SimpleLineSymbol = null,
+    style: SimpleFillSymbolStyle = null
+  ): SimpleFillSymbol = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[SimpleFillSymbol]
+  }
+}
+

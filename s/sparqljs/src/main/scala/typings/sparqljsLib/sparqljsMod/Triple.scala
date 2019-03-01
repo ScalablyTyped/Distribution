@@ -11,3 +11,13 @@ trait Triple extends js.Object {
   var subject: Term
 }
 
+object Triple {
+  @scala.inline
+  def apply(`object`: Term, predicate: PropertyPath | Term, subject: Term): Triple = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("predicate")(predicate.asInstanceOf[js.Any])
+    __obj.updateDynamic("subject")(subject)
+    __obj.asInstanceOf[Triple]
+  }
+}
+

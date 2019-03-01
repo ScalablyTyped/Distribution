@@ -10,3 +10,17 @@ trait CreativeAssetsResource extends js.Object {
   def insert(request: gapiDotClientDotDfareportingLib.Anon_AdvertiserId): gapiDotClientLib.gapiNs.clientNs.Request[CreativeAssetMetadata]
 }
 
+object CreativeAssetsResource {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AdvertiserId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreativeAssetMetadata]
+    ]
+  ): CreativeAssetsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.asInstanceOf[CreativeAssetsResource]
+  }
+}
+

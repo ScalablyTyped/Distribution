@@ -12,3 +12,18 @@ trait ojFilePickerSettableProperties
   var selectionMode: atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple | atOracleOraclejetLib.atOracleOraclejetLibStrings.single
 }
 
+object ojFilePickerSettableProperties {
+  @scala.inline
+  def apply(
+    selectOn: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.click | atOracleOraclejetLib.atOracleOraclejetLibStrings.drop | atOracleOraclejetLib.atOracleOraclejetLibStrings.clickAndDrop,
+    selectionMode: atOracleOraclejetLib.atOracleOraclejetLibStrings.multiple | atOracleOraclejetLib.atOracleOraclejetLibStrings.single,
+    accept: js.Array[java.lang.String] = null
+  ): ojFilePickerSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("selectOn")(selectOn.asInstanceOf[js.Any])
+    __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    if (accept != null) __obj.updateDynamic("accept")(accept)
+    __obj.asInstanceOf[ojFilePickerSettableProperties]
+  }
+}
+

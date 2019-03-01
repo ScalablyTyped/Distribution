@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 trait IModelMap
   extends /* id */ org.scalablytyped.runtime.StringDictionary[IModel]
 
+object IModelMap {
+  @scala.inline
+  def apply(StringDictionary: /* id */ org.scalablytyped.runtime.StringDictionary[IModel] = null): IModelMap = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IModelMap]
+  }
+}
+

@@ -18,3 +18,13 @@ trait ModifyCloudToDeviceConfigRequest extends js.Object {
   var versionToUpdate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ModifyCloudToDeviceConfigRequest {
+  @scala.inline
+  def apply(binaryData: java.lang.String = null, versionToUpdate: java.lang.String = null): ModifyCloudToDeviceConfigRequest = {
+    val __obj = js.Dynamic.literal()
+    if (binaryData != null) __obj.updateDynamic("binaryData")(binaryData)
+    if (versionToUpdate != null) __obj.updateDynamic("versionToUpdate")(versionToUpdate)
+    __obj.asInstanceOf[ModifyCloudToDeviceConfigRequest]
+  }
+}
+

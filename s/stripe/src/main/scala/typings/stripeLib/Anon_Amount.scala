@@ -19,3 +19,21 @@ trait Anon_Amount extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Amount {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    application: java.lang.String,
+    currency: java.lang.String,
+    description: java.lang.String,
+    `type`: java.lang.String
+  ): Anon_Amount = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("application")(application)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[Anon_Amount]
+  }
+}
+

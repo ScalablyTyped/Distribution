@@ -96,3 +96,56 @@ trait ReceiptRuleArgs extends js.Object {
   ] = js.undefined
 }
 
+object ReceiptRuleArgs {
+  @scala.inline
+  def apply(
+    ruleSetName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    addHeaderActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HeaderNameHeaderValue]]
+    ] = null,
+    after: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bounceActions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MessagePosition]]] = null,
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    lambdaActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FunctionArnInvocationTypePosition]
+      ]
+    ] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    recipients: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    s3Actions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnObjectKeyPrefix]
+      ]
+    ] = null,
+    scanEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    snsActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_PositionTopicArn]]
+    ] = null,
+    stopActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_PositionScopeTopicArn]]
+    ] = null,
+    tlsPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    workmailActions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_OrganizationArnPosition]]
+    ] = null
+  ): ReceiptRuleArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ruleSetName")(ruleSetName.asInstanceOf[js.Any])
+    if (addHeaderActions != null) __obj.updateDynamic("addHeaderActions")(addHeaderActions.asInstanceOf[js.Any])
+    if (after != null) __obj.updateDynamic("after")(after.asInstanceOf[js.Any])
+    if (bounceActions != null) __obj.updateDynamic("bounceActions")(bounceActions.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (lambdaActions != null) __obj.updateDynamic("lambdaActions")(lambdaActions.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
+    if (s3Actions != null) __obj.updateDynamic("s3Actions")(s3Actions.asInstanceOf[js.Any])
+    if (scanEnabled != null) __obj.updateDynamic("scanEnabled")(scanEnabled.asInstanceOf[js.Any])
+    if (snsActions != null) __obj.updateDynamic("snsActions")(snsActions.asInstanceOf[js.Any])
+    if (stopActions != null) __obj.updateDynamic("stopActions")(stopActions.asInstanceOf[js.Any])
+    if (tlsPolicy != null) __obj.updateDynamic("tlsPolicy")(tlsPolicy.asInstanceOf[js.Any])
+    if (workmailActions != null) __obj.updateDynamic("workmailActions")(workmailActions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReceiptRuleArgs]
+  }
+}
+

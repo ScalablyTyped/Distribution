@@ -7,25 +7,33 @@ import scala.scalajs.js.annotation._
 
 object atCkeditorCkeditor5DashEngineLibStrings {
   @js.native
-  sealed trait after extends js.Object
+  sealed trait after
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.PositionRelation
+       with atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.PositionRelation
   
   @js.native
   sealed trait attributeElement extends js.Object
   
   @js.native
-  sealed trait attributes extends js.Object
+  sealed trait attributes
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.ChangeType
   
   @js.native
-  sealed trait backward extends js.Object
+  sealed trait backward
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerDirection
   
   @js.native
-  sealed trait before extends js.Object
+  sealed trait before
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.PositionRelation
+       with atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.PositionRelation
   
   @js.native
-  sealed trait character extends js.Object
+  sealed trait character
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.TreeWalkerValueType
   
   @js.native
-  sealed trait children extends js.Object
+  sealed trait children
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.ChangeType
   
   @js.native
   sealed trait codePoint extends js.Object
@@ -37,7 +45,8 @@ object atCkeditorCkeditor5DashEngineLibStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait different extends js.Object
+  sealed trait different
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.PositionRelation
   
   @js.native
   sealed trait documentFragment extends js.Object
@@ -46,10 +55,14 @@ object atCkeditorCkeditor5DashEngineLibStrings {
   sealed trait element extends js.Object
   
   @js.native
-  sealed trait elementEnd extends js.Object
+  sealed trait elementEnd
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.TreeWalkerValueType
+       with atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerValueType
   
   @js.native
-  sealed trait elementStart extends js.Object
+  sealed trait elementStart
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.TreeWalkerValueType
+       with atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerValueType
   
   @js.native
   sealed trait emptyElement extends js.Object
@@ -58,28 +71,37 @@ object atCkeditorCkeditor5DashEngineLibStrings {
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait forward extends js.Object
+  sealed trait forward
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerDirection
   
   @js.native
   sealed trait rootElement extends js.Object
   
   @js.native
-  sealed trait same extends js.Object
+  sealed trait same
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.PositionRelation
+       with atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.PositionRelation
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.ChangeType
+       with atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.TreeWalkerValueType
+       with atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.TreeWalkerValueType
   
   @js.native
   sealed trait textProxy extends js.Object
   
   @js.native
-  sealed trait toNext extends js.Object
+  sealed trait toNext
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.PositionStickiness
   
   @js.native
-  sealed trait toNone extends js.Object
+  sealed trait toNone
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.PositionStickiness
   
   @js.native
-  sealed trait toPrevious extends js.Object
+  sealed trait toPrevious
+    extends atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.PositionStickiness
   
   @js.native
   sealed trait transparent extends js.Object

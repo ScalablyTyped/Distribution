@@ -22,3 +22,22 @@ trait DragSourceDropEvent extends DragSourceEvent {
   var DropSuccess: scala.Boolean
 }
 
+object DragSourceDropEvent {
+  @scala.inline
+  def apply(
+    DragSource: XDragSource,
+    DragSourceContext: XDragSourceContext,
+    DropAction: scala.Double,
+    DropSuccess: scala.Boolean,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): DragSourceDropEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DragSource")(DragSource)
+    __obj.updateDynamic("DragSourceContext")(DragSourceContext)
+    __obj.updateDynamic("DropAction")(DropAction)
+    __obj.updateDynamic("DropSuccess")(DropSuccess)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[DragSourceDropEvent]
+  }
+}
+

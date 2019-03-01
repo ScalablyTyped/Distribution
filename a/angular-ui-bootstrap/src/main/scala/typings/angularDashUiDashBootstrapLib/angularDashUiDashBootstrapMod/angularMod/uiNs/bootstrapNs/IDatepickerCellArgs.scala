@@ -10,3 +10,13 @@ trait IDatepickerCellArgs extends js.Object {
   var mode: DatepickerMode
 }
 
+object IDatepickerCellArgs {
+  @scala.inline
+  def apply(date: stdLib.Date, mode: DatepickerMode): IDatepickerCellArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[IDatepickerCellArgs]
+  }
+}
+

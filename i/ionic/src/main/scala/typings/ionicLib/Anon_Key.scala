@@ -10,3 +10,16 @@ trait Anon_Key extends js.Object {
   var plugins: org.scalablytyped.runtime.StringDictionary[js.Object]
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    platforms: js.Array[java.lang.String],
+    plugins: org.scalablytyped.runtime.StringDictionary[js.Object]
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("platforms")(platforms)
+    __obj.updateDynamic("plugins")(plugins)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

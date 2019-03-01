@@ -15,3 +15,26 @@ trait IFileSavePickerUI extends js.Object {
   def trySetFileName(value: java.lang.String): SetFileNameResult
 }
 
+object IFileSavePickerUI {
+  @scala.inline
+  def apply(
+    allowedFileTypes: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String],
+    fileName: java.lang.String,
+    onfilenamechanged: js.Any,
+    ontargetfilerequested: js.Any,
+    settingsIdentifier: java.lang.String,
+    title: java.lang.String,
+    trySetFileName: js.Function1[java.lang.String, SetFileNameResult]
+  ): IFileSavePickerUI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowedFileTypes")(allowedFileTypes)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("onfilenamechanged")(onfilenamechanged)
+    __obj.updateDynamic("ontargetfilerequested")(ontargetfilerequested)
+    __obj.updateDynamic("settingsIdentifier")(settingsIdentifier)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("trySetFileName")(trySetFileName)
+    __obj.asInstanceOf[IFileSavePickerUI]
+  }
+}
+

@@ -20,3 +20,22 @@ trait MockjsRandomHelper extends js.Object {
   def upper(str: S): S
 }
 
+object MockjsRandomHelper {
+  @scala.inline
+  def apply(
+    capitalize: js.Function1[S, S],
+    lower: js.Function1[S, S],
+    pick: js.Function1[js.Array[_], js.Any],
+    shuffle: js.Function1[js.Array[_], js.Array[_]],
+    upper: js.Function1[S, S]
+  ): MockjsRandomHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("capitalize")(capitalize)
+    __obj.updateDynamic("lower")(lower)
+    __obj.updateDynamic("pick")(pick)
+    __obj.updateDynamic("shuffle")(shuffle)
+    __obj.updateDynamic("upper")(upper)
+    __obj.asInstanceOf[MockjsRandomHelper]
+  }
+}
+

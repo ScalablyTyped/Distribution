@@ -16,3 +16,16 @@ trait HeatMapCell extends js.Object {
   var showContent: js.UndefOr[CellVisibility | java.lang.String] = js.undefined
 }
 
+object HeatMapCell {
+  @scala.inline
+  def apply(
+    showColor: js.UndefOr[scala.Boolean] = js.undefined,
+    showContent: CellVisibility | java.lang.String = null
+  ): HeatMapCell = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showColor)) __obj.updateDynamic("showColor")(showColor)
+    if (showContent != null) __obj.updateDynamic("showContent")(showContent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeatMapCell]
+  }
+}
+

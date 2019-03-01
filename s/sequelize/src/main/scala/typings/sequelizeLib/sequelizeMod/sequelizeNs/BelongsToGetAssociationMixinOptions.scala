@@ -22,3 +22,12 @@ trait BelongsToGetAssociationMixinOptions extends js.Object {
   var scope: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
 }
 
+object BelongsToGetAssociationMixinOptions {
+  @scala.inline
+  def apply(scope: java.lang.String | scala.Boolean = null): BelongsToGetAssociationMixinOptions = {
+    val __obj = js.Dynamic.literal()
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BelongsToGetAssociationMixinOptions]
+  }
+}
+

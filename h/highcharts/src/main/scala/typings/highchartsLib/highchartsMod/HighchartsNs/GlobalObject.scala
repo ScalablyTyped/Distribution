@@ -60,3 +60,26 @@ trait GlobalObject extends js.Object {
   var useUTC: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GlobalObject {
+  @scala.inline
+  def apply(
+    Date: js.Any = null,
+    VMLRadialGradientURL: java.lang.String = null,
+    canvasToolsURL: java.lang.String = null,
+    getTimezoneOffset: js.Function1[/* timestamp */ scala.Double, scala.Double] = null,
+    timezone: java.lang.String = null,
+    timezoneOffset: scala.Int | scala.Double = null,
+    useUTC: js.UndefOr[scala.Boolean] = js.undefined
+  ): GlobalObject = {
+    val __obj = js.Dynamic.literal()
+    if (Date != null) __obj.updateDynamic("Date")(Date)
+    if (VMLRadialGradientURL != null) __obj.updateDynamic("VMLRadialGradientURL")(VMLRadialGradientURL)
+    if (canvasToolsURL != null) __obj.updateDynamic("canvasToolsURL")(canvasToolsURL)
+    if (getTimezoneOffset != null) __obj.updateDynamic("getTimezoneOffset")(getTimezoneOffset)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (timezoneOffset != null) __obj.updateDynamic("timezoneOffset")(timezoneOffset.asInstanceOf[js.Any])
+    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC)
+    __obj.asInstanceOf[GlobalObject]
+  }
+}
+

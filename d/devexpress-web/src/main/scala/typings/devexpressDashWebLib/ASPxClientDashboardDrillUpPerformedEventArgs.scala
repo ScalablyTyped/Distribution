@@ -16,3 +16,12 @@ trait ASPxClientDashboardDrillUpPerformedEventArgs extends ASPxClientEventArgs {
   var ItemName: java.lang.String
 }
 
+object ASPxClientDashboardDrillUpPerformedEventArgs {
+  @scala.inline
+  def apply(ItemName: java.lang.String): ASPxClientDashboardDrillUpPerformedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ItemName")(ItemName)
+    __obj.asInstanceOf[ASPxClientDashboardDrillUpPerformedEventArgs]
+  }
+}
+

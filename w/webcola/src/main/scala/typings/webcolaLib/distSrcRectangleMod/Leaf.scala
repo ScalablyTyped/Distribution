@@ -10,3 +10,13 @@ trait Leaf extends js.Object {
   var variable: webcolaLib.distSrcVpscMod.Variable
 }
 
+object Leaf {
+  @scala.inline
+  def apply(bounds: Rectangle, variable: webcolaLib.distSrcVpscMod.Variable): Leaf = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("variable")(variable)
+    __obj.asInstanceOf[Leaf]
+  }
+}
+

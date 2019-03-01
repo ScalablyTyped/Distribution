@@ -23,3 +23,22 @@ trait KeydownEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeydownEventArgs {
+  @scala.inline
+  def apply(
+    element: js.Any = null,
+    event: js.Any = null,
+    menuText: java.lang.String = null,
+    model: Model = null,
+    `type`: java.lang.String = null
+  ): KeydownEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (menuText != null) __obj.updateDynamic("menuText")(menuText)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[KeydownEventArgs]
+  }
+}
+

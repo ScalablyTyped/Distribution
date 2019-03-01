@@ -26,3 +26,22 @@ trait XFastTokenHandler
   def getUTF8Identifier(Token: scala.Double): activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object XFastTokenHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getTokenFromUTF8: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double],
+    getUTF8Identifier: js.Function1[scala.Double, activexDashInteropLib.SafeArray[scala.Double]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFastTokenHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getTokenFromUTF8")(getTokenFromUTF8)
+    __obj.updateDynamic("getUTF8Identifier")(getUTF8Identifier)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFastTokenHandler]
+  }
+}
+

@@ -22,3 +22,22 @@ trait Time extends js.Object {
   var Seconds: scala.Double
 }
 
+object Time {
+  @scala.inline
+  def apply(
+    Hours: scala.Double,
+    IsUTC: scala.Boolean,
+    Minutes: scala.Double,
+    NanoSeconds: scala.Double,
+    Seconds: scala.Double
+  ): Time = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Hours")(Hours)
+    __obj.updateDynamic("IsUTC")(IsUTC)
+    __obj.updateDynamic("Minutes")(Minutes)
+    __obj.updateDynamic("NanoSeconds")(NanoSeconds)
+    __obj.updateDynamic("Seconds")(Seconds)
+    __obj.asInstanceOf[Time]
+  }
+}
+

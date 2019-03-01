@@ -13,3 +13,13 @@ trait MouseDelta extends js.Object {
   var y: scala.Double
 }
 
+object MouseDelta {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): MouseDelta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[MouseDelta]
+  }
+}
+

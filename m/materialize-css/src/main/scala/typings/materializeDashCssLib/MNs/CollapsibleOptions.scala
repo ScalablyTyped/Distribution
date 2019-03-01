@@ -43,3 +43,26 @@ trait CollapsibleOptions extends js.Object {
   def onOpenStart(`this`: Collapsible, el: stdLib.Element): scala.Unit
 }
 
+object CollapsibleOptions {
+  @scala.inline
+  def apply(
+    accordion: scala.Boolean,
+    inDuration: scala.Double,
+    onCloseEnd: js.Function2[Collapsible, stdLib.Element, scala.Unit],
+    onCloseStart: js.Function2[Collapsible, stdLib.Element, scala.Unit],
+    onOpenEnd: js.Function2[Collapsible, stdLib.Element, scala.Unit],
+    onOpenStart: js.Function2[Collapsible, stdLib.Element, scala.Unit],
+    outDuration: scala.Double
+  ): CollapsibleOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accordion")(accordion)
+    __obj.updateDynamic("inDuration")(inDuration)
+    __obj.updateDynamic("onCloseEnd")(onCloseEnd)
+    __obj.updateDynamic("onCloseStart")(onCloseStart)
+    __obj.updateDynamic("onOpenEnd")(onOpenEnd)
+    __obj.updateDynamic("onOpenStart")(onOpenStart)
+    __obj.updateDynamic("outDuration")(outDuration)
+    __obj.asInstanceOf[CollapsibleOptions]
+  }
+}
+

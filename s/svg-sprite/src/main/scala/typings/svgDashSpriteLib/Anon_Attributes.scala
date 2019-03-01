@@ -24,3 +24,20 @@ trait Anon_Attributes extends js.Object {
   var precision: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Attributes {
+  @scala.inline
+  def apply(
+    attributes: js.UndefOr[scala.Boolean] = js.undefined,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    precision: scala.Int | scala.Double = null
+  ): Anon_Attributes = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(attributes)) __obj.updateDynamic("attributes")(attributes)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Attributes]
+  }
+}
+

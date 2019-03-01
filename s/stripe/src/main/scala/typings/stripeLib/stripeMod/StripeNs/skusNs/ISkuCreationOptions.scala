@@ -40,3 +40,36 @@ trait ISkuCreationOptions
   var product: java.lang.String
 }
 
+object ISkuCreationOptions {
+  @scala.inline
+  def apply(
+    currency: java.lang.String,
+    inventory: IInventory,
+    price: scala.Double,
+    product: java.lang.String,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    attributes: ISkuAttributes = null,
+    expand: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    image: java.lang.String = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    package_dimensions: stripeLib.stripeMod.StripeNs.productsNs.IPackageDimensions = null
+  ): ISkuCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("inventory")(inventory)
+    __obj.updateDynamic("price")(price)
+    __obj.updateDynamic("product")(product)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (package_dimensions != null) __obj.updateDynamic("package_dimensions")(package_dimensions)
+    __obj.asInstanceOf[ISkuCreationOptions]
+  }
+}
+

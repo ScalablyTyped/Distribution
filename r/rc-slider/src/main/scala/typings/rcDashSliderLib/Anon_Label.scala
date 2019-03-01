@@ -10,3 +10,13 @@ trait Anon_Label extends js.Object {
   var style: js.Any
 }
 
+object Anon_Label {
+  @scala.inline
+  def apply(label: java.lang.String | reactLib.reactMod.Global.JSXNs.Element, style: js.Any): Anon_Label = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[Anon_Label]
+  }
+}
+

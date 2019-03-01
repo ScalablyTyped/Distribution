@@ -40,3 +40,28 @@ trait ReplicaSettingsDescription extends js.Object {
   var ReplicaStatus: js.UndefOr[ReplicaStatus] = js.undefined
 }
 
+object ReplicaSettingsDescription {
+  @scala.inline
+  def apply(
+    RegionName: RegionName,
+    ReplicaBillingModeSummary: BillingModeSummary = null,
+    ReplicaGlobalSecondaryIndexSettings: ReplicaGlobalSecondaryIndexSettingsDescriptionList = null,
+    ReplicaProvisionedReadCapacityAutoScalingSettings: AutoScalingSettingsDescription = null,
+    ReplicaProvisionedReadCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined,
+    ReplicaProvisionedWriteCapacityAutoScalingSettings: AutoScalingSettingsDescription = null,
+    ReplicaProvisionedWriteCapacityUnits: js.UndefOr[NonNegativeLongObject] = js.undefined,
+    ReplicaStatus: ReplicaStatus = null
+  ): ReplicaSettingsDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RegionName")(RegionName)
+    if (ReplicaBillingModeSummary != null) __obj.updateDynamic("ReplicaBillingModeSummary")(ReplicaBillingModeSummary)
+    if (ReplicaGlobalSecondaryIndexSettings != null) __obj.updateDynamic("ReplicaGlobalSecondaryIndexSettings")(ReplicaGlobalSecondaryIndexSettings)
+    if (ReplicaProvisionedReadCapacityAutoScalingSettings != null) __obj.updateDynamic("ReplicaProvisionedReadCapacityAutoScalingSettings")(ReplicaProvisionedReadCapacityAutoScalingSettings)
+    if (!js.isUndefined(ReplicaProvisionedReadCapacityUnits)) __obj.updateDynamic("ReplicaProvisionedReadCapacityUnits")(ReplicaProvisionedReadCapacityUnits)
+    if (ReplicaProvisionedWriteCapacityAutoScalingSettings != null) __obj.updateDynamic("ReplicaProvisionedWriteCapacityAutoScalingSettings")(ReplicaProvisionedWriteCapacityAutoScalingSettings)
+    if (!js.isUndefined(ReplicaProvisionedWriteCapacityUnits)) __obj.updateDynamic("ReplicaProvisionedWriteCapacityUnits")(ReplicaProvisionedWriteCapacityUnits)
+    if (ReplicaStatus != null) __obj.updateDynamic("ReplicaStatus")(ReplicaStatus.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReplicaSettingsDescription]
+  }
+}
+

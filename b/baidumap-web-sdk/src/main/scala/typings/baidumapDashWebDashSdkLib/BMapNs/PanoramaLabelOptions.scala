@@ -10,3 +10,13 @@ trait PanoramaLabelOptions extends js.Object {
   var position: js.UndefOr[Point] = js.undefined
 }
 
+object PanoramaLabelOptions {
+  @scala.inline
+  def apply(altitude: scala.Int | scala.Double = null, position: Point = null): PanoramaLabelOptions = {
+    val __obj = js.Dynamic.literal()
+    if (altitude != null) __obj.updateDynamic("altitude")(altitude.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[PanoramaLabelOptions]
+  }
+}
+

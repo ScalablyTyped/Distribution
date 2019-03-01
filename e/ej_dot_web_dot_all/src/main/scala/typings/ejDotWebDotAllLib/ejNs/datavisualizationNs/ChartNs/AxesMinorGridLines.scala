@@ -20,3 +20,18 @@ trait AxesMinorGridLines extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AxesMinorGridLines {
+  @scala.inline
+  def apply(
+    dashArray: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): AxesMinorGridLines = {
+    val __obj = js.Dynamic.literal()
+    if (dashArray != null) __obj.updateDynamic("dashArray")(dashArray)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AxesMinorGridLines]
+  }
+}
+

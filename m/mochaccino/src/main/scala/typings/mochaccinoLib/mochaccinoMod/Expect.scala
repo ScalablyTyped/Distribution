@@ -25,3 +25,46 @@ trait Expect extends js.Object {
   def toThrowError(errType: js.Any): scala.Unit
 }
 
+object Expect {
+  @scala.inline
+  def apply(
+    not: Expect,
+    toBe: js.Function1[js.Any, scala.Unit],
+    toBeDefined: js.Function0[scala.Unit],
+    toBeFalsy: js.Function0[scala.Unit],
+    toBeGreaterThan: js.Function1[scala.Double, scala.Unit],
+    toBeLessThan: js.Function1[scala.Double, scala.Unit],
+    toBeNull: js.Function0[scala.Unit],
+    toBeTruthy: js.Function0[scala.Unit],
+    toBeUndefined: js.Function0[scala.Unit],
+    toContain: js.Function1[js.Any, scala.Unit],
+    toEqual: js.Function1[js.Any, scala.Unit],
+    toHaveBeenCalled: js.Function0[scala.Unit],
+    toHaveBeenCalledTimes: js.Function1[scala.Double, scala.Unit],
+    toHaveBeenCalledWith: js.Function1[/* repeated */ js.Any, scala.Unit],
+    toMatch: js.Function1[js.Any, scala.Unit],
+    toThrow: js.Function0[scala.Unit],
+    toThrowError: js.Function1[js.Any, scala.Unit]
+  ): Expect = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("not")(not)
+    __obj.updateDynamic("toBe")(toBe)
+    __obj.updateDynamic("toBeDefined")(toBeDefined)
+    __obj.updateDynamic("toBeFalsy")(toBeFalsy)
+    __obj.updateDynamic("toBeGreaterThan")(toBeGreaterThan)
+    __obj.updateDynamic("toBeLessThan")(toBeLessThan)
+    __obj.updateDynamic("toBeNull")(toBeNull)
+    __obj.updateDynamic("toBeTruthy")(toBeTruthy)
+    __obj.updateDynamic("toBeUndefined")(toBeUndefined)
+    __obj.updateDynamic("toContain")(toContain)
+    __obj.updateDynamic("toEqual")(toEqual)
+    __obj.updateDynamic("toHaveBeenCalled")(toHaveBeenCalled)
+    __obj.updateDynamic("toHaveBeenCalledTimes")(toHaveBeenCalledTimes)
+    __obj.updateDynamic("toHaveBeenCalledWith")(toHaveBeenCalledWith)
+    __obj.updateDynamic("toMatch")(toMatch)
+    __obj.updateDynamic("toThrow")(toThrow)
+    __obj.updateDynamic("toThrowError")(toThrowError)
+    __obj.asInstanceOf[Expect]
+  }
+}
+

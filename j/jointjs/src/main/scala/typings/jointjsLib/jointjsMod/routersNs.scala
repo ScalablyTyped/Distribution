@@ -46,6 +46,8 @@ object routersNs extends js.Object {
     var orthogonal: OrthogonalRouterArguments
   }
   
+  trait RouterType extends js.Object
+  
   var manhattan: GenericRouter[jointjsLib.jointjsLibStrings.manhattan] = js.native
   var metro: GenericRouter[jointjsLib.jointjsLibStrings.metro] = js.native
   var normal: GenericRouter[jointjsLib.jointjsLibStrings.normal] = js.native
@@ -61,6 +63,5 @@ object routersNs extends js.Object {
   type Router = GenericRouter[RouterType]
   type RouterArguments = GenericRouterArguments[RouterType]
   type RouterJSON = GenericRouterJSON[RouterType]
-  type RouterType = jointjsLib.jointjsLibStrings.normal | jointjsLib.jointjsLibStrings.manhattan | jointjsLib.jointjsLibStrings.metro | jointjsLib.jointjsLibStrings.orthogonal | jointjsLib.jointjsLibStrings.oneSide
 }
 

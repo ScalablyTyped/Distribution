@@ -9,3 +9,12 @@ trait GlobalLexicalScopeNamesReturnType extends js.Object {
   var names: js.Array[java.lang.String]
 }
 
+object GlobalLexicalScopeNamesReturnType {
+  @scala.inline
+  def apply(names: js.Array[java.lang.String]): GlobalLexicalScopeNamesReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("names")(names)
+    __obj.asInstanceOf[GlobalLexicalScopeNamesReturnType]
+  }
+}
+

@@ -10,3 +10,12 @@ trait UploadBeginCallbackResult extends js.Object {
   var jobId: scala.Double
 }
 
+object UploadBeginCallbackResult {
+  @scala.inline
+  def apply(jobId: scala.Double): UploadBeginCallbackResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jobId")(jobId)
+    __obj.asInstanceOf[UploadBeginCallbackResult]
+  }
+}
+

@@ -11,3 +11,12 @@ trait SaveReportEventArgs extends js.Object {
   var report: js.UndefOr[js.Any] = js.undefined
 }
 
+object SaveReportEventArgs {
+  @scala.inline
+  def apply(report: js.Any = null): SaveReportEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (report != null) __obj.updateDynamic("report")(report)
+    __obj.asInstanceOf[SaveReportEventArgs]
+  }
+}
+

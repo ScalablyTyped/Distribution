@@ -22,3 +22,16 @@ trait SearchBetweennessOptions extends js.Object {
   var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, scala.Double]] = js.undefined
 }
 
+object SearchBetweennessOptions {
+  @scala.inline
+  def apply(
+    directed: js.UndefOr[scala.Boolean] = js.undefined,
+    weight: js.Function1[/* edge */ EdgeSingular, scala.Double] = null
+  ): SearchBetweennessOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[SearchBetweennessOptions]
+  }
+}
+

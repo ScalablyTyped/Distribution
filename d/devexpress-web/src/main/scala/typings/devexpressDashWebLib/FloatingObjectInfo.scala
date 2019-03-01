@@ -21,3 +21,13 @@ trait FloatingObjectInfo extends js.Object {
   var position: scala.Double
 }
 
+object FloatingObjectInfo {
+  @scala.inline
+  def apply(parentSubDocument: SubDocument, position: scala.Double): FloatingObjectInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parentSubDocument")(parentSubDocument)
+    __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[FloatingObjectInfo]
+  }
+}
+

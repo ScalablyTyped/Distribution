@@ -12,3 +12,12 @@ trait Anon_Maxage extends js.Object {
   var maxage: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Maxage {
+  @scala.inline
+  def apply(maxage: scala.Int | scala.Double = null): Anon_Maxage = {
+    val __obj = js.Dynamic.literal()
+    if (maxage != null) __obj.updateDynamic("maxage")(maxage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Maxage]
+  }
+}
+

@@ -14,3 +14,22 @@ trait DataContext extends js.Object {
   var tooltip: java.lang.String
 }
 
+object DataContext {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    label: java.lang.String,
+    selected: scala.Boolean,
+    size: scala.Double,
+    tooltip: java.lang.String
+  ): DataContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("selected")(selected)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[DataContext]
+  }
+}
+

@@ -14,3 +14,14 @@ trait EditorChangedEvent extends js.Object {
   var start: Point
 }
 
+object EditorChangedEvent {
+  @scala.inline
+  def apply(newExtent: Point, oldExtent: Point, start: Point): EditorChangedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newExtent")(newExtent)
+    __obj.updateDynamic("oldExtent")(oldExtent)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[EditorChangedEvent]
+  }
+}
+

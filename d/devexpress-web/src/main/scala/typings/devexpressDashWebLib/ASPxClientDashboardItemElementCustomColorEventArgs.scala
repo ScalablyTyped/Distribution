@@ -33,3 +33,22 @@ trait ASPxClientDashboardItemElementCustomColorEventArgs extends ASPxClientEvent
   def SetColor(color: java.lang.String): scala.Unit
 }
 
+object ASPxClientDashboardItemElementCustomColorEventArgs {
+  @scala.inline
+  def apply(
+    GetColor: js.Function0[java.lang.String],
+    GetMeasures: js.Function0[js.Array[ASPxClientDashboardItemDataMeasure]],
+    GetTargetElement: js.Function0[ASPxClientDashboardItemDataAxisPointTuple],
+    ItemName: java.lang.String,
+    SetColor: js.Function1[java.lang.String, scala.Unit]
+  ): ASPxClientDashboardItemElementCustomColorEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetColor")(GetColor)
+    __obj.updateDynamic("GetMeasures")(GetMeasures)
+    __obj.updateDynamic("GetTargetElement")(GetTargetElement)
+    __obj.updateDynamic("ItemName")(ItemName)
+    __obj.updateDynamic("SetColor")(SetColor)
+    __obj.asInstanceOf[ASPxClientDashboardItemElementCustomColorEventArgs]
+  }
+}
+

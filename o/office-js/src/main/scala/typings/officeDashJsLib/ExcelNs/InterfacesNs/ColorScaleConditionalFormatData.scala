@@ -23,3 +23,16 @@ trait ColorScaleConditionalFormatData extends js.Object {
   var threeColorScale: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ColorScaleConditionalFormatData {
+  @scala.inline
+  def apply(
+    criteria: officeDashJsLib.ExcelNs.ConditionalColorScaleCriteria = null,
+    threeColorScale: js.UndefOr[scala.Boolean] = js.undefined
+  ): ColorScaleConditionalFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
+    if (!js.isUndefined(threeColorScale)) __obj.updateDynamic("threeColorScale")(threeColorScale)
+    __obj.asInstanceOf[ColorScaleConditionalFormatData]
+  }
+}
+

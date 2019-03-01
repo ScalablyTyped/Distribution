@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default[T] () extends Griddle[T]
 
+/* static members */
 @JSImport("griddle-react", JSImport.Default)
 @js.native
 object default extends js.Object {

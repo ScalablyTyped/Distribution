@@ -37,3 +37,24 @@ trait Target extends js.Object {
   var targetId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Target {
+  @scala.inline
+  def apply(
+    documents: DocumentsTarget = null,
+    once: js.UndefOr[scala.Boolean] = js.undefined,
+    query: QueryTarget = null,
+    readTime: java.lang.String = null,
+    resumeToken: java.lang.String = null,
+    targetId: scala.Int | scala.Double = null
+  ): Target = {
+    val __obj = js.Dynamic.literal()
+    if (documents != null) __obj.updateDynamic("documents")(documents)
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken)
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Target]
+  }
+}
+

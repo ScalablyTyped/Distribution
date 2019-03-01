@@ -7,100 +7,132 @@ import scala.scalajs.js.annotation._
 
 object reactDashMarkdownLibStrings {
   @js.native
-  sealed trait blockquote extends js.Object
+  sealed trait blockquote
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait break extends js.Object
+  sealed trait break
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs._AlignType
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait code
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait collapsed extends js.Object
+  sealed trait collapsed
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.ReferenceType
   
   @js.native
-  sealed trait definition extends js.Object
+  sealed trait definition
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait emphasis extends js.Object
+  sealed trait emphasis
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait full extends js.Object
+  sealed trait full
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.ReferenceType
   
   @js.native
-  sealed trait heading extends js.Object
+  sealed trait heading
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait html
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait imageReference extends js.Object
+  sealed trait imageReference
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait inlineCode extends js.Object
+  sealed trait inlineCode
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs._AlignType
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait linkReference extends js.Object
+  sealed trait linkReference
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait list
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait listItem extends js.Object
+  sealed trait listItem
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait paragraph extends js.Object
+  sealed trait paragraph
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs._AlignType
   
   @js.native
-  sealed trait root extends js.Object
+  sealed trait root
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait shortcut extends js.Object
+  sealed trait shortcut
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.ReferenceType
   
   @js.native
-  sealed trait strong extends js.Object
+  sealed trait strong
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait table extends js.Object
+  sealed trait table
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait tableBody extends js.Object
+  sealed trait tableBody
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait tableCell extends js.Object
+  sealed trait tableCell
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait tableHead extends js.Object
+  sealed trait tableHead
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait tableRow extends js.Object
+  sealed trait tableRow
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait thematicBreak extends js.Object
+  sealed trait thematicBreak
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @js.native
-  sealed trait virtualHtml extends js.Object
+  sealed trait virtualHtml
+    extends reactDashMarkdownLib.reactDashMarkdownMod.ReactMarkdownNs.NodeType
   
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]

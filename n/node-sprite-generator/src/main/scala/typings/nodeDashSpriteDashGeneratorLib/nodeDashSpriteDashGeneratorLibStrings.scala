@@ -7,64 +7,84 @@ import scala.scalajs.js.annotation._
 
 object nodeDashSpriteDashGeneratorLibStrings {
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
   
   @js.native
-  sealed trait average extends js.Object
+  sealed trait average
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
   
   @js.native
-  sealed trait canvas extends js.Object
+  sealed trait canvas
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinCompositors
   
   @js.native
-  sealed trait css extends js.Object
+  sealed trait css
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
   
   @js.native
-  sealed trait diagonal extends js.Object
+  sealed trait diagonal
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinLayouts
   
   @js.native
-  sealed trait gm extends js.Object
+  sealed trait gm
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinCompositors
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinLayouts
   
   @js.native
-  sealed trait javascript extends js.Object
+  sealed trait javascript
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
   
   @js.native
-  sealed trait jimp extends js.Object
+  sealed trait jimp
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinCompositors
   
   @js.native
-  sealed trait less extends js.Object
+  sealed trait less
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
   
   @js.native
-  sealed trait packed extends js.Object
+  sealed trait packed
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinLayouts
   
   @js.native
-  sealed trait paeth extends js.Object
+  sealed trait paeth
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
   
   @js.native
-  sealed trait `prefixed-css` extends js.Object
+  sealed trait `prefixed-css`
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
   
   @js.native
-  sealed trait sass extends js.Object
+  sealed trait sass
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
   
   @js.native
-  sealed trait scss extends js.Object
+  sealed trait scss
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
   
   @js.native
-  sealed trait stylus extends js.Object
+  sealed trait stylus
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinStylesheetFormats
   
   @js.native
-  sealed trait sub extends js.Object
+  sealed trait sub
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.CompositorFilters
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends nodeDashSpriteDashGeneratorLib.nodeDashSpriteDashGeneratorMod.NodeSpriteGeneratorNs.BuiltinLayouts
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

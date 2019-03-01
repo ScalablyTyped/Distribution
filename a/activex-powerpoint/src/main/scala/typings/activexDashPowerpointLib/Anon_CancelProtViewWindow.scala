@@ -11,3 +11,18 @@ trait Anon_CancelProtViewWindow extends js.Object {
   val ProtectedViewCloseReason: activexDashPowerpointLib.PowerPointNs.PpProtectedViewCloseReason
 }
 
+object Anon_CancelProtViewWindow {
+  @scala.inline
+  def apply(
+    Cancel: scala.Boolean,
+    ProtViewWindow: activexDashPowerpointLib.PowerPointNs.ProtectedViewWindow,
+    ProtectedViewCloseReason: activexDashPowerpointLib.PowerPointNs.PpProtectedViewCloseReason
+  ): Anon_CancelProtViewWindow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("ProtViewWindow")(ProtViewWindow)
+    __obj.updateDynamic("ProtectedViewCloseReason")(ProtectedViewCloseReason)
+    __obj.asInstanceOf[Anon_CancelProtViewWindow]
+  }
+}
+

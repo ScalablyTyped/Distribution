@@ -20,3 +20,13 @@ trait HostAlias extends js.Object {
   val ip: java.lang.String
 }
 
+object HostAlias {
+  @scala.inline
+  def apply(hostnames: js.Array[java.lang.String], ip: java.lang.String): HostAlias = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hostnames")(hostnames)
+    __obj.updateDynamic("ip")(ip)
+    __obj.asInstanceOf[HostAlias]
+  }
+}
+

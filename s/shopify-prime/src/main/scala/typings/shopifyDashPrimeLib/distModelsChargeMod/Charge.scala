@@ -43,3 +43,32 @@ trait Charge
   var updated_at: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Charge {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    admin_graphql_api_id: java.lang.String = null,
+    confirmation_url: java.lang.String = null,
+    created_at: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    price: java.lang.String | scala.Double = null,
+    return_url: java.lang.String = null,
+    status: shopifyDashPrimeLib.shopifyDashPrimeLibStrings.pending | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.accepted | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.active | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.cancelled | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.declined | shopifyDashPrimeLib.shopifyDashPrimeLibStrings.expired = null,
+    test: js.UndefOr[scala.Boolean] = js.undefined,
+    updated_at: java.lang.String = null
+  ): Charge = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (confirmation_url != null) __obj.updateDynamic("confirmation_url")(confirmation_url)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (return_url != null) __obj.updateDynamic("return_url")(return_url)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[Charge]
+  }
+}
+

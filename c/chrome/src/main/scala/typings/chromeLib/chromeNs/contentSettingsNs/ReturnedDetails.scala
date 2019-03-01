@@ -10,3 +10,12 @@ trait ReturnedDetails extends js.Object {
   var setting: js.Any
 }
 
+object ReturnedDetails {
+  @scala.inline
+  def apply(setting: js.Any): ReturnedDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setting")(setting)
+    __obj.asInstanceOf[ReturnedDetails]
+  }
+}
+

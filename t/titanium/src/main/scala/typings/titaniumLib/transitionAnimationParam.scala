@@ -23,3 +23,18 @@ trait transitionAnimationParam extends js.Object {
   var transitionTo: js.UndefOr[titaniumLib.TitaniumNs.UINs.Animation] = js.undefined
 }
 
+object transitionAnimationParam {
+  @scala.inline
+  def apply(
+    duration: scala.Int | scala.Double = null,
+    transitionFrom: titaniumLib.TitaniumNs.UINs.Animation = null,
+    transitionTo: titaniumLib.TitaniumNs.UINs.Animation = null
+  ): transitionAnimationParam = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (transitionFrom != null) __obj.updateDynamic("transitionFrom")(transitionFrom)
+    if (transitionTo != null) __obj.updateDynamic("transitionTo")(transitionTo)
+    __obj.asInstanceOf[transitionAnimationParam]
+  }
+}
+

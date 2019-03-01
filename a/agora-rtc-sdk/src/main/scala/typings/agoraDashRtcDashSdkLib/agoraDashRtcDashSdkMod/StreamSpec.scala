@@ -21,3 +21,34 @@ trait StreamSpec extends js.Object {
   var video: scala.Boolean
 }
 
+object StreamSpec {
+  @scala.inline
+  def apply(
+    audio: scala.Boolean,
+    screen: scala.Boolean,
+    streamID: scala.Double,
+    video: scala.Boolean,
+    attributes: agoraDashRtcDashSdkLib.Anon_MaxFrameRate = null,
+    audioProcessing: agoraDashRtcDashSdkLib.Anon_AGC = null,
+    cameraId: java.lang.String = null,
+    extensionid: java.lang.String = null,
+    mediaSource: agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibStrings.screen | agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibStrings.application | agoraDashRtcDashSdkLib.agoraDashRtcDashSdkLibStrings.window = null,
+    microphoneId: java.lang.String = null,
+    mirror: js.UndefOr[scala.Boolean] = js.undefined
+  ): StreamSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audio")(audio)
+    __obj.updateDynamic("screen")(screen)
+    __obj.updateDynamic("streamID")(streamID)
+    __obj.updateDynamic("video")(video)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (audioProcessing != null) __obj.updateDynamic("audioProcessing")(audioProcessing)
+    if (cameraId != null) __obj.updateDynamic("cameraId")(cameraId)
+    if (extensionid != null) __obj.updateDynamic("extensionid")(extensionid)
+    if (mediaSource != null) __obj.updateDynamic("mediaSource")(mediaSource.asInstanceOf[js.Any])
+    if (microphoneId != null) __obj.updateDynamic("microphoneId")(microphoneId)
+    if (!js.isUndefined(mirror)) __obj.updateDynamic("mirror")(mirror)
+    __obj.asInstanceOf[StreamSpec]
+  }
+}
+

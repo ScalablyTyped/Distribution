@@ -34,3 +34,24 @@ trait TurnBasedMatchParticipant extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TurnBasedMatchParticipant {
+  @scala.inline
+  def apply(
+    autoMatched: js.UndefOr[scala.Boolean] = js.undefined,
+    autoMatchedPlayer: AnonymousPlayer = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    player: Player = null,
+    status: java.lang.String = null
+  ): TurnBasedMatchParticipant = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoMatched)) __obj.updateDynamic("autoMatched")(autoMatched)
+    if (autoMatchedPlayer != null) __obj.updateDynamic("autoMatchedPlayer")(autoMatchedPlayer)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (player != null) __obj.updateDynamic("player")(player)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[TurnBasedMatchParticipant]
+  }
+}
+

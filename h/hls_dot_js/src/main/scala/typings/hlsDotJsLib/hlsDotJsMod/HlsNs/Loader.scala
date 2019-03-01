@@ -20,3 +20,18 @@ trait Loader extends js.Object {
   def load(context: LoaderContext, config: LoaderConfig, callbacks: LoaderCallbacks): scala.Unit
 }
 
+object Loader {
+  @scala.inline
+  def apply(
+    abort: js.Function0[scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    load: js.Function3[LoaderContext, LoaderConfig, LoaderCallbacks, scala.Unit]
+  ): Loader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abort")(abort)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("load")(load)
+    __obj.asInstanceOf[Loader]
+  }
+}
+

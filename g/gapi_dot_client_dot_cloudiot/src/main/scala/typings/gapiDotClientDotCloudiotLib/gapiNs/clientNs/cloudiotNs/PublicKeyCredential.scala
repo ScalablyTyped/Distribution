@@ -12,3 +12,13 @@ trait PublicKeyCredential extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PublicKeyCredential {
+  @scala.inline
+  def apply(format: java.lang.String = null, key: java.lang.String = null): PublicKeyCredential = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[PublicKeyCredential]
+  }
+}
+

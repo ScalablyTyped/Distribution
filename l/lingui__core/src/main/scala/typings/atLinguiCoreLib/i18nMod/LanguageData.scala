@@ -17,3 +17,20 @@ trait LanguageData extends js.Object {
   ] = js.undefined
 }
 
+object LanguageData {
+  @scala.inline
+  def apply(
+    plurals: js.Function2[
+      /* n */ scala.Double, 
+      /* pluralType */ js.UndefOr[
+        atLinguiCoreLib.atLinguiCoreLibStrings.cardinal | atLinguiCoreLib.atLinguiCoreLibStrings.ordinal
+      ], 
+      java.lang.String
+    ] = null
+  ): LanguageData = {
+    val __obj = js.Dynamic.literal()
+    if (plurals != null) __obj.updateDynamic("plurals")(plurals)
+    __obj.asInstanceOf[LanguageData]
+  }
+}
+

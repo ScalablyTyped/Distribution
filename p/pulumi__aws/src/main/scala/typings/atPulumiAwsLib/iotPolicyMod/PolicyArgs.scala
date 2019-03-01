@@ -16,3 +16,16 @@ trait PolicyArgs extends js.Object {
   val policy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object PolicyArgs {
+  @scala.inline
+  def apply(
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): PolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolicyArgs]
+  }
+}
+

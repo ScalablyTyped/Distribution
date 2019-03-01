@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "zen-observable-ts"
-version := "0.8.15-0ed4ab"
+version := "0.8.15-197aae"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-6cdd80")
+  "org.scalablytyped" %%% "std" % "3.3-6e4388",
+  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-5c7895")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

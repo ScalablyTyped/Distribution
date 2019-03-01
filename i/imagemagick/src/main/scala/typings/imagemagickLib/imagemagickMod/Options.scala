@@ -37,3 +37,42 @@ trait Options extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    colorspace: js.Any = null,
+    customArgs: js.Array[_] = null,
+    dstPath: java.lang.String = null,
+    filter: java.lang.String = null,
+    format: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    progressive: js.UndefOr[scala.Boolean] = js.undefined,
+    quality: scala.Int | scala.Double = null,
+    sharpening: scala.Int | scala.Double = null,
+    srcData: java.lang.String = null,
+    srcFormat: java.lang.String = null,
+    srcPath: java.lang.String = null,
+    strip: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (colorspace != null) __obj.updateDynamic("colorspace")(colorspace)
+    if (customArgs != null) __obj.updateDynamic("customArgs")(customArgs)
+    if (dstPath != null) __obj.updateDynamic("dstPath")(dstPath)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (sharpening != null) __obj.updateDynamic("sharpening")(sharpening.asInstanceOf[js.Any])
+    if (srcData != null) __obj.updateDynamic("srcData")(srcData)
+    if (srcFormat != null) __obj.updateDynamic("srcFormat")(srcFormat)
+    if (srcPath != null) __obj.updateDynamic("srcPath")(srcPath)
+    if (!js.isUndefined(strip)) __obj.updateDynamic("strip")(strip)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

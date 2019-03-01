@@ -10,22 +10,28 @@ object maquetteLibStrings {
   sealed trait `Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead` extends js.Object
   
   @js.native
-  sealed trait domEvent extends js.Object
+  sealed trait domEvent
+    extends maquetteLib.distInterfacesMod.PerformanceLoggerEvent
   
   @js.native
-  sealed trait domEventProcessed extends js.Object
+  sealed trait domEventProcessed
+    extends maquetteLib.distInterfacesMod.PerformanceLoggerEvent
   
   @js.native
-  sealed trait patched extends js.Object
+  sealed trait patched
+    extends maquetteLib.distInterfacesMod.PerformanceLoggerEvent
   
   @js.native
-  sealed trait renderDone extends js.Object
+  sealed trait renderDone
+    extends maquetteLib.distInterfacesMod.PerformanceLoggerEvent
   
   @js.native
-  sealed trait renderStart extends js.Object
+  sealed trait renderStart
+    extends maquetteLib.distInterfacesMod.PerformanceLoggerEvent
   
   @js.native
-  sealed trait rendered extends js.Object
+  sealed trait rendered
+    extends maquetteLib.distInterfacesMod.PerformanceLoggerEvent
   
   @scala.inline
   def `Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead`: `Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead` = "Hint: do not use `className`, use `class` instead".asInstanceOf[`Hint: do not use BACKTICKclassNameBACKTICK, use BACKTICKclassBACKTICK instead`]

@@ -23,3 +23,18 @@ trait EmailTemplate extends js.Object {
   def send(options: EmailOptions): js.Any
 }
 
+object EmailTemplate {
+  @scala.inline
+  def apply(
+    juiceResources: js.Function1[java.lang.String, js.Promise[java.lang.String]],
+    render: js.Function2[java.lang.String, js.Any, js.Promise[java.lang.String]],
+    send: js.Function1[EmailOptions, js.Any]
+  ): EmailTemplate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("juiceResources")(juiceResources)
+    __obj.updateDynamic("render")(render)
+    __obj.updateDynamic("send")(send)
+    __obj.asInstanceOf[EmailTemplate]
+  }
+}
+

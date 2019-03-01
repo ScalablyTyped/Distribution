@@ -16,3 +16,28 @@ trait OutputByType extends js.Object {
   var uint8array: stdLib.Uint8Array
 }
 
+object OutputByType {
+  @scala.inline
+  def apply(
+    array: js.Array[scala.Double],
+    arraybuffer: stdLib.ArrayBuffer,
+    base64: java.lang.String,
+    binarystring: java.lang.String,
+    blob: stdLib.Blob,
+    nodebuffer: nodeLib.Buffer,
+    text: java.lang.String,
+    uint8array: stdLib.Uint8Array
+  ): OutputByType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("array")(array)
+    __obj.updateDynamic("arraybuffer")(arraybuffer)
+    __obj.updateDynamic("base64")(base64)
+    __obj.updateDynamic("binarystring")(binarystring)
+    __obj.updateDynamic("blob")(blob)
+    __obj.updateDynamic("nodebuffer")(nodebuffer)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("uint8array")(uint8array)
+    __obj.asInstanceOf[OutputByType]
+  }
+}
+

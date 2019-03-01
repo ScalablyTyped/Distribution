@@ -16,3 +16,12 @@ trait BelongsToSetAssociationMixinOptions extends js.Object {
   var save: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BelongsToSetAssociationMixinOptions {
+  @scala.inline
+  def apply(save: js.UndefOr[scala.Boolean] = js.undefined): BelongsToSetAssociationMixinOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(save)) __obj.updateDynamic("save")(save)
+    __obj.asInstanceOf[BelongsToSetAssociationMixinOptions]
+  }
+}
+

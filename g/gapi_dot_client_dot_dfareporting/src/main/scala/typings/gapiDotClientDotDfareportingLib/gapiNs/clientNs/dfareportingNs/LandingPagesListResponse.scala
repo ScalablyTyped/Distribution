@@ -12,3 +12,13 @@ trait LandingPagesListResponse extends js.Object {
   var landingPages: js.UndefOr[js.Array[LandingPage]] = js.undefined
 }
 
+object LandingPagesListResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, landingPages: js.Array[LandingPage] = null): LandingPagesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (landingPages != null) __obj.updateDynamic("landingPages")(landingPages)
+    __obj.asInstanceOf[LandingPagesListResponse]
+  }
+}
+

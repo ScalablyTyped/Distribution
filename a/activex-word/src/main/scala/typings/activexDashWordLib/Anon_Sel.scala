@@ -9,3 +9,12 @@ trait Anon_Sel extends js.Object {
   val Sel: activexDashWordLib.WordNs.Selection
 }
 
+object Anon_Sel {
+  @scala.inline
+  def apply(Sel: activexDashWordLib.WordNs.Selection): Anon_Sel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Sel")(Sel)
+    __obj.asInstanceOf[Anon_Sel]
+  }
+}
+

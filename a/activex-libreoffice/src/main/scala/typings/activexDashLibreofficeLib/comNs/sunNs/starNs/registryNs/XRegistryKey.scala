@@ -251,3 +251,94 @@ trait XRegistryKey
   def setStringValue(value: java.lang.String): scala.Unit
 }
 
+object XRegistryKey {
+  @scala.inline
+  def apply(
+    AsciiListValue: activexDashInteropLib.SafeArray[java.lang.String],
+    AsciiValue: java.lang.String,
+    BinaryValue: activexDashInteropLib.SafeArray[scala.Double],
+    KeyName: java.lang.String,
+    KeyNames: activexDashInteropLib.SafeArray[java.lang.String],
+    LongListValue: activexDashInteropLib.SafeArray[scala.Double],
+    LongValue: scala.Double,
+    StringListValue: activexDashInteropLib.SafeArray[java.lang.String],
+    StringValue: java.lang.String,
+    ValueType: RegistryValueType,
+    acquire: js.Function0[scala.Unit],
+    closeKey: js.Function0[scala.Unit],
+    createKey: js.Function1[java.lang.String, XRegistryKey],
+    createLink: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    deleteKey: js.Function1[java.lang.String, scala.Unit],
+    deleteLink: js.Function1[java.lang.String, scala.Unit],
+    getAsciiListValue: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getAsciiValue: js.Function0[java.lang.String],
+    getBinaryValue: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getKeyNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getKeyType: js.Function1[java.lang.String, RegistryKeyType],
+    getLinkTarget: js.Function1[java.lang.String, java.lang.String],
+    getLongListValue: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getLongValue: js.Function0[scala.Double],
+    getResolvedName: js.Function1[java.lang.String, java.lang.String],
+    getStringListValue: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getStringValue: js.Function0[java.lang.String],
+    getValueType: js.Function0[RegistryValueType],
+    isReadOnly: js.Function0[scala.Boolean],
+    isValid: js.Function0[scala.Boolean],
+    openKey: js.Function1[java.lang.String, XRegistryKey],
+    openKeys: js.Function0[activexDashInteropLib.SafeArray[XRegistryKey]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setAsciiListValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setAsciiValue: js.Function1[java.lang.String, scala.Unit],
+    setBinaryValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    setLongListValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Unit],
+    setLongValue: js.Function1[scala.Double, scala.Unit],
+    setStringListValue: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setStringValue: js.Function1[java.lang.String, scala.Unit]
+  ): XRegistryKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AsciiListValue")(AsciiListValue)
+    __obj.updateDynamic("AsciiValue")(AsciiValue)
+    __obj.updateDynamic("BinaryValue")(BinaryValue)
+    __obj.updateDynamic("KeyName")(KeyName)
+    __obj.updateDynamic("KeyNames")(KeyNames)
+    __obj.updateDynamic("LongListValue")(LongListValue)
+    __obj.updateDynamic("LongValue")(LongValue)
+    __obj.updateDynamic("StringListValue")(StringListValue)
+    __obj.updateDynamic("StringValue")(StringValue)
+    __obj.updateDynamic("ValueType")(ValueType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("closeKey")(closeKey)
+    __obj.updateDynamic("createKey")(createKey)
+    __obj.updateDynamic("createLink")(createLink)
+    __obj.updateDynamic("deleteKey")(deleteKey)
+    __obj.updateDynamic("deleteLink")(deleteLink)
+    __obj.updateDynamic("getAsciiListValue")(getAsciiListValue)
+    __obj.updateDynamic("getAsciiValue")(getAsciiValue)
+    __obj.updateDynamic("getBinaryValue")(getBinaryValue)
+    __obj.updateDynamic("getKeyNames")(getKeyNames)
+    __obj.updateDynamic("getKeyType")(getKeyType)
+    __obj.updateDynamic("getLinkTarget")(getLinkTarget)
+    __obj.updateDynamic("getLongListValue")(getLongListValue)
+    __obj.updateDynamic("getLongValue")(getLongValue)
+    __obj.updateDynamic("getResolvedName")(getResolvedName)
+    __obj.updateDynamic("getStringListValue")(getStringListValue)
+    __obj.updateDynamic("getStringValue")(getStringValue)
+    __obj.updateDynamic("getValueType")(getValueType)
+    __obj.updateDynamic("isReadOnly")(isReadOnly)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("openKey")(openKey)
+    __obj.updateDynamic("openKeys")(openKeys)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setAsciiListValue")(setAsciiListValue)
+    __obj.updateDynamic("setAsciiValue")(setAsciiValue)
+    __obj.updateDynamic("setBinaryValue")(setBinaryValue)
+    __obj.updateDynamic("setLongListValue")(setLongListValue)
+    __obj.updateDynamic("setLongValue")(setLongValue)
+    __obj.updateDynamic("setStringListValue")(setStringListValue)
+    __obj.updateDynamic("setStringValue")(setStringValue)
+    __obj.asInstanceOf[XRegistryKey]
+  }
+}
+

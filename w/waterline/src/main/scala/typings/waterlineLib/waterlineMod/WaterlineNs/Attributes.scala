@@ -11,3 +11,18 @@ trait Attributes
   var toObject: js.UndefOr[js.Function0[_]] = js.undefined
 }
 
+object Attributes {
+  @scala.inline
+  def apply(
+    StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[Attribute] = null,
+    toJSON: js.Function0[java.lang.String] = null,
+    toObject: js.Function0[_] = null
+  ): Attributes = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (toJSON != null) __obj.updateDynamic("toJSON")(toJSON)
+    if (toObject != null) __obj.updateDynamic("toObject")(toObject)
+    __obj.asInstanceOf[Attributes]
+  }
+}
+

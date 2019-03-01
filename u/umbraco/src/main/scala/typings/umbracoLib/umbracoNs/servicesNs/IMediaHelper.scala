@@ -129,3 +129,30 @@ trait IMediaHelper extends js.Object {
   def scaleToMaxSize(maxSize: scala.Double, width: scala.Double, height: scala.Double): js.Any
 }
 
+object IMediaHelper {
+  @scala.inline
+  def apply(
+    detectIfImageByExtension: js.Function1[java.lang.String, scala.Boolean],
+    formatFileTypes: js.Function1[java.lang.String, java.lang.String],
+    getImagePropertyValue: js.Function1[IMediaOptions, java.lang.String],
+    getMediaPropertyValue: js.Function1[IMediaOptions, java.lang.String],
+    getThumbnail: js.Function1[IMediaOptions, java.lang.String],
+    getThumbnailFromPath: js.Function1[java.lang.String, java.lang.String],
+    resolveFile: js.Function2[IMediaEntity, scala.Boolean, java.lang.String],
+    resolveFileFromEntity: js.Function2[IMediaEntity, scala.Boolean, java.lang.String],
+    scaleToMaxSize: js.Function3[scala.Double, scala.Double, scala.Double, js.Any]
+  ): IMediaHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("detectIfImageByExtension")(detectIfImageByExtension)
+    __obj.updateDynamic("formatFileTypes")(formatFileTypes)
+    __obj.updateDynamic("getImagePropertyValue")(getImagePropertyValue)
+    __obj.updateDynamic("getMediaPropertyValue")(getMediaPropertyValue)
+    __obj.updateDynamic("getThumbnail")(getThumbnail)
+    __obj.updateDynamic("getThumbnailFromPath")(getThumbnailFromPath)
+    __obj.updateDynamic("resolveFile")(resolveFile)
+    __obj.updateDynamic("resolveFileFromEntity")(resolveFileFromEntity)
+    __obj.updateDynamic("scaleToMaxSize")(scaleToMaxSize)
+    __obj.asInstanceOf[IMediaHelper]
+  }
+}
+

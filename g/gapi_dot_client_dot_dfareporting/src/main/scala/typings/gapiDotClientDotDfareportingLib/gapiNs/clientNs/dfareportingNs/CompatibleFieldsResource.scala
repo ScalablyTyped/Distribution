@@ -13,3 +13,17 @@ trait CompatibleFieldsResource extends js.Object {
   def query(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[CompatibleFields]
 }
 
+object CompatibleFieldsResource {
+  @scala.inline
+  def apply(
+    query: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CompatibleFields]
+    ]
+  ): CompatibleFieldsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[CompatibleFieldsResource]
+  }
+}
+

@@ -107,3 +107,52 @@ trait HistogramFacet extends Facet {
   def valueScript(scriptCode: java.lang.String): HistogramFacet
 }
 
+object HistogramFacet {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cacheFilter: js.Function1[scala.Boolean, HistogramFacet],
+    facetFilter: js.Function1[js.Object, HistogramFacet],
+    field: js.Function1[java.lang.String, HistogramFacet],
+    from: js.Function1[stdLib.Number, HistogramFacet],
+    global: js.Function1[scala.Boolean, HistogramFacet],
+    interval: js.Function1[stdLib.Number, HistogramFacet],
+    keyField: js.Function1[java.lang.String, HistogramFacet],
+    keyScript: js.Function1[java.lang.String, HistogramFacet],
+    lang: js.Function1[java.lang.String, HistogramFacet],
+    mode: js.Function1[java.lang.String, HistogramFacet],
+    nested: js.Function1[java.lang.String, HistogramFacet],
+    order: js.Function1[java.lang.String, HistogramFacet],
+    params: js.Function1[js.Object, HistogramFacet],
+    scope: js.Function1[java.lang.String, HistogramFacet],
+    timeInterval: js.Function1[stdLib.Number, HistogramFacet],
+    to: js.Function1[stdLib.Number, HistogramFacet],
+    toJSON: js.Function0[js.Any],
+    valueField: js.Function1[java.lang.String, HistogramFacet],
+    valueScript: js.Function1[java.lang.String, HistogramFacet]
+  ): HistogramFacet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cacheFilter")(cacheFilter)
+    __obj.updateDynamic("facetFilter")(facetFilter)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("global")(global)
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("keyField")(keyField)
+    __obj.updateDynamic("keyScript")(keyScript)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("nested")(nested)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("timeInterval")(timeInterval)
+    __obj.updateDynamic("to")(to)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("valueField")(valueField)
+    __obj.updateDynamic("valueScript")(valueScript)
+    __obj.asInstanceOf[HistogramFacet]
+  }
+}
+

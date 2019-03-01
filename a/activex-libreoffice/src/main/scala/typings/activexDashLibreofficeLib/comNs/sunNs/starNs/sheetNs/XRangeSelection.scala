@@ -30,3 +30,33 @@ trait XRangeSelection
   ): scala.Unit
 }
 
+object XRangeSelection {
+  @scala.inline
+  def apply(
+    abortRangeSelection: js.Function0[scala.Unit],
+    acquire: js.Function0[scala.Unit],
+    addRangeSelectionChangeListener: js.Function1[XRangeSelectionChangeListener, scala.Unit],
+    addRangeSelectionListener: js.Function1[XRangeSelectionListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeRangeSelectionChangeListener: js.Function1[XRangeSelectionChangeListener, scala.Unit],
+    removeRangeSelectionListener: js.Function1[XRangeSelectionListener, scala.Unit],
+    startRangeSelection: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XRangeSelection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abortRangeSelection")(abortRangeSelection)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addRangeSelectionChangeListener")(addRangeSelectionChangeListener)
+    __obj.updateDynamic("addRangeSelectionListener")(addRangeSelectionListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeRangeSelectionChangeListener")(removeRangeSelectionChangeListener)
+    __obj.updateDynamic("removeRangeSelectionListener")(removeRangeSelectionListener)
+    __obj.updateDynamic("startRangeSelection")(startRangeSelection)
+    __obj.asInstanceOf[XRangeSelection]
+  }
+}
+

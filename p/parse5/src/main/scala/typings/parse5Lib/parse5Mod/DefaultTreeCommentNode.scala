@@ -25,3 +25,20 @@ trait DefaultTreeCommentNode extends DefaultTreeNode {
   var sourceCodeLocation: js.UndefOr[Location] = js.undefined
 }
 
+object DefaultTreeCommentNode {
+  @scala.inline
+  def apply(
+    data: java.lang.String,
+    nodeName: parse5Lib.parse5LibStrings.`#comment`,
+    parentNode: DefaultTreeParentNode,
+    sourceCodeLocation: Location = null
+  ): DefaultTreeCommentNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("nodeName")(nodeName)
+    __obj.updateDynamic("parentNode")(parentNode)
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    __obj.asInstanceOf[DefaultTreeCommentNode]
+  }
+}
+

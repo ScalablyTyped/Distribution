@@ -41,3 +41,24 @@ trait EipAssociationArgs extends js.Object {
   val publicIp: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object EipAssociationArgs {
+  @scala.inline
+  def apply(
+    allocationId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    allowReassociation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    instanceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    privateIpAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publicIp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): EipAssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    if (allocationId != null) __obj.updateDynamic("allocationId")(allocationId.asInstanceOf[js.Any])
+    if (allowReassociation != null) __obj.updateDynamic("allowReassociation")(allowReassociation.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    if (privateIpAddress != null) __obj.updateDynamic("privateIpAddress")(privateIpAddress.asInstanceOf[js.Any])
+    if (publicIp != null) __obj.updateDynamic("publicIp")(publicIp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EipAssociationArgs]
+  }
+}
+

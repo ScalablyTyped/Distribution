@@ -111,3 +111,52 @@ trait VictoryLabelProps extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VictoryLabelProps {
+  @scala.inline
+  def apply(
+    angle: java.lang.String | scala.Double = null,
+    capHeight: StringOrNumberOrCallback = null,
+    children: StringOrNumberOrCallback = null,
+    data: js.Array[_] = null,
+    datum: js.Object = null,
+    dx: StringOrNumberOrCallback = null,
+    dy: StringOrNumberOrCallback = null,
+    events: reactLib.reactMod.ReactNs.DOMAttributes[_] = null,
+    labelPlacement: victoryLib.victoryLibStrings.parallel | victoryLib.victoryLibStrings.perpendicular | victoryLib.victoryLibStrings.vertical = null,
+    lineHeight: StringOrNumberOrCallback = null,
+    origin: victoryLib.Anon_X = null,
+    polar: js.UndefOr[scala.Boolean] = js.undefined,
+    renderInPortal: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    text: js.Array[java.lang.String] | StringOrNumberOrCallback = null,
+    textAnchor: TextAnchorType | victoryLib.Anon_TextAnchorType = null,
+    transform: java.lang.String | js.Object | victoryLib.Anon_String = null,
+    verticalAnchor: VerticalAnchorType | victoryLib.Anon_VerticalAnchorType = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): VictoryLabelProps = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (capHeight != null) __obj.updateDynamic("capHeight")(capHeight.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (datum != null) __obj.updateDynamic("datum")(datum)
+    if (dx != null) __obj.updateDynamic("dx")(dx.asInstanceOf[js.Any])
+    if (dy != null) __obj.updateDynamic("dy")(dy.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (!js.isUndefined(polar)) __obj.updateDynamic("polar")(polar)
+    if (!js.isUndefined(renderInPortal)) __obj.updateDynamic("renderInPortal")(renderInPortal)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (textAnchor != null) __obj.updateDynamic("textAnchor")(textAnchor.asInstanceOf[js.Any])
+    if (transform != null) __obj.updateDynamic("transform")(transform.asInstanceOf[js.Any])
+    if (verticalAnchor != null) __obj.updateDynamic("verticalAnchor")(verticalAnchor.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryLabelProps]
+  }
+}
+

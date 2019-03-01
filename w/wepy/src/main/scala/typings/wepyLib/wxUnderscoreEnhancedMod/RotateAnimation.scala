@@ -13,3 +13,22 @@ trait RotateAnimation extends js.Object {
   def rotateZ(deg: scala.Double): Animation
 }
 
+object RotateAnimation {
+  @scala.inline
+  def apply(
+    rotate: js.Function1[scala.Double, Animation],
+    rotate3d: js.Function0[Animation],
+    rotateX: js.Function1[scala.Double, Animation],
+    rotateY: js.Function1[scala.Double, Animation],
+    rotateZ: js.Function1[scala.Double, Animation]
+  ): RotateAnimation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("rotate3d")(rotate3d)
+    __obj.updateDynamic("rotateX")(rotateX)
+    __obj.updateDynamic("rotateY")(rotateY)
+    __obj.updateDynamic("rotateZ")(rotateZ)
+    __obj.asInstanceOf[RotateAnimation]
+  }
+}
+

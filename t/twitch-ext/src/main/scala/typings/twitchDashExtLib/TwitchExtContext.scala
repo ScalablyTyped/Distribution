@@ -80,3 +80,44 @@ trait TwitchExtContext extends js.Object {
   var volume: scala.Double
 }
 
+object TwitchExtContext {
+  @scala.inline
+  def apply(
+    arePlayerControlsVisible: scala.Boolean,
+    bitrate: scala.Double,
+    bufferSize: scala.Double,
+    displayResolution: java.lang.String,
+    game: java.lang.String,
+    hlsLatencyBroadcaster: scala.Double,
+    isFullScreen: scala.Boolean,
+    isMuted: scala.Boolean,
+    isPaused: scala.Boolean,
+    isTheatreMode: scala.Boolean,
+    language: java.lang.String,
+    mode: twitchDashExtLib.twitchDashExtLibStrings.viewer | twitchDashExtLib.twitchDashExtLibStrings.dashboard | twitchDashExtLib.twitchDashExtLibStrings.config,
+    playbackMode: twitchDashExtLib.twitchDashExtLibStrings.video | twitchDashExtLib.twitchDashExtLibStrings.audio | twitchDashExtLib.twitchDashExtLibStrings.remote | twitchDashExtLib.twitchDashExtLibStrings.`chat-only`,
+    theme: twitchDashExtLib.twitchDashExtLibStrings.light | twitchDashExtLib.twitchDashExtLibStrings.dark,
+    videoResolution: java.lang.String,
+    volume: scala.Double
+  ): TwitchExtContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arePlayerControlsVisible")(arePlayerControlsVisible)
+    __obj.updateDynamic("bitrate")(bitrate)
+    __obj.updateDynamic("bufferSize")(bufferSize)
+    __obj.updateDynamic("displayResolution")(displayResolution)
+    __obj.updateDynamic("game")(game)
+    __obj.updateDynamic("hlsLatencyBroadcaster")(hlsLatencyBroadcaster)
+    __obj.updateDynamic("isFullScreen")(isFullScreen)
+    __obj.updateDynamic("isMuted")(isMuted)
+    __obj.updateDynamic("isPaused")(isPaused)
+    __obj.updateDynamic("isTheatreMode")(isTheatreMode)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.updateDynamic("playbackMode")(playbackMode.asInstanceOf[js.Any])
+    __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    __obj.updateDynamic("videoResolution")(videoResolution)
+    __obj.updateDynamic("volume")(volume)
+    __obj.asInstanceOf[TwitchExtContext]
+  }
+}
+

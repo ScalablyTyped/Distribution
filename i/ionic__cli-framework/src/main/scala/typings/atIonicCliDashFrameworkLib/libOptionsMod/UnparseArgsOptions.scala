@@ -12,3 +12,20 @@ trait UnparseArgsOptions extends js.Object {
   var useEquals: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UnparseArgsOptions {
+  @scala.inline
+  def apply(
+    allowCamelCase: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreFalse: js.UndefOr[scala.Boolean] = js.undefined,
+    useDoubleQuotes: js.UndefOr[scala.Boolean] = js.undefined,
+    useEquals: js.UndefOr[scala.Boolean] = js.undefined
+  ): UnparseArgsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowCamelCase)) __obj.updateDynamic("allowCamelCase")(allowCamelCase)
+    if (!js.isUndefined(ignoreFalse)) __obj.updateDynamic("ignoreFalse")(ignoreFalse)
+    if (!js.isUndefined(useDoubleQuotes)) __obj.updateDynamic("useDoubleQuotes")(useDoubleQuotes)
+    if (!js.isUndefined(useEquals)) __obj.updateDynamic("useEquals")(useEquals)
+    __obj.asInstanceOf[UnparseArgsOptions]
+  }
+}
+

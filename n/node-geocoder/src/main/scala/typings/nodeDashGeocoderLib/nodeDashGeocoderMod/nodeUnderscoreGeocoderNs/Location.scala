@@ -10,3 +10,13 @@ trait Location extends js.Object {
   var lon: scala.Double
 }
 
+object Location {
+  @scala.inline
+  def apply(lat: scala.Double, lon: scala.Double): Location = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lat")(lat)
+    __obj.updateDynamic("lon")(lon)
+    __obj.asInstanceOf[Location]
+  }
+}
+

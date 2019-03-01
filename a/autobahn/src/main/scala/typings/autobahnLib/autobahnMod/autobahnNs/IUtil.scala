@@ -9,3 +9,12 @@ trait IUtil extends js.Object {
   def assert(condition: scala.Boolean, message: java.lang.String): scala.Unit
 }
 
+object IUtil {
+  @scala.inline
+  def apply(assert: js.Function2[scala.Boolean, java.lang.String, scala.Unit]): IUtil = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("assert")(assert)
+    __obj.asInstanceOf[IUtil]
+  }
+}
+

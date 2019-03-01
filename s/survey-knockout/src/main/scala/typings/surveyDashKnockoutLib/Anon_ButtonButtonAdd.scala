@@ -15,3 +15,26 @@ trait Anon_ButtonButtonAdd extends js.Object {
   var title: java.lang.String
 }
 
+object Anon_ButtonButtonAdd {
+  @scala.inline
+  def apply(
+    button: java.lang.String,
+    buttonAdd: java.lang.String,
+    buttonNext: java.lang.String,
+    buttonPrev: java.lang.String,
+    buttonRemove: java.lang.String,
+    root: java.lang.String,
+    title: java.lang.String
+  ): Anon_ButtonButtonAdd = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("button")(button)
+    __obj.updateDynamic("buttonAdd")(buttonAdd)
+    __obj.updateDynamic("buttonNext")(buttonNext)
+    __obj.updateDynamic("buttonPrev")(buttonPrev)
+    __obj.updateDynamic("buttonRemove")(buttonRemove)
+    __obj.updateDynamic("root")(root)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_ButtonButtonAdd]
+  }
+}
+

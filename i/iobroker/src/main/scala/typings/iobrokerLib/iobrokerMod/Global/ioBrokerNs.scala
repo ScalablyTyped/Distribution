@@ -1808,7 +1808,9 @@ object ioBrokerNs extends js.Object {
     var desc: js.UndefOr[java.lang.String] = js.undefined
   }
   
-  trait ChannelObject extends BaseObject {
+  trait ChannelObject
+    extends BaseObject
+       with Object {
     @JSName("common")
     var common_ChannelObject: ChannelCommon
     @JSName("type")
@@ -1866,12 +1868,16 @@ object ioBrokerNs extends js.Object {
     var writeFile64: ObjectOrStatePermission
   }
   
+  trait CommonType extends js.Object
+  
   trait DeviceCommon extends ObjectCommon {
     // Only states can have common.custom
     var custom: js.UndefOr[scala.Nothing] = js.undefined
   }
   
-  trait DeviceObject extends BaseObject {
+  trait DeviceObject
+    extends BaseObject
+       with Object {
     @JSName("common")
     var common_DeviceObject: DeviceCommon
     @JSName("type")
@@ -1960,6 +1966,8 @@ object ioBrokerNs extends js.Object {
     var value: T
   }
   
+  trait LogLevel extends js.Object
+  
   trait Logger extends js.Object {
     /** Verbosity of the log output */
     var level: LogLevel
@@ -2000,6 +2008,8 @@ object ioBrokerNs extends js.Object {
     /** Timestamp of this message */
     var time: scala.Double
   }
+  
+  trait Object extends js.Object
   
   /** Defines access rights for a single object */
   trait ObjectACL extends js.Object {
@@ -2058,6 +2068,8 @@ object ioBrokerNs extends js.Object {
     /** The access rights for users/groups */
     var users: ObjectOperationPermissions
   }
+  
+  trait ObjectType extends js.Object
   
   /** Provides low-level access to the ioBroker objects db */
   @js.native
@@ -2442,7 +2454,9 @@ object ioBrokerNs extends js.Object {
     var custom: js.UndefOr[scala.Nothing] = js.undefined
   }
   
-  trait OtherObject extends BaseObject {
+  trait OtherObject
+    extends BaseObject
+       with Object {
     @JSName("common")
     var common_OtherObject: OtherCommon
     @JSName("type")
@@ -2457,22 +2471,24 @@ object ioBrokerNs extends js.Object {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.ChannelObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.ChannelObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialChannelObject extends js.Object {
+  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.ChannelObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.ChannelObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialChannelObject extends PartialObject {
     var common: js.UndefOr[stdLib.Partial[ChannelCommon]] = js.undefined
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialDeviceObject extends js.Object {
+  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialDeviceObject extends PartialObject {
     var common: js.UndefOr[stdLib.Partial[DeviceCommon]] = js.undefined
   }
   
+  trait PartialObject extends js.Object
+  
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.OtherObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.OtherObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialOtherObject extends js.Object {
+  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.OtherObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.OtherObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialOtherObject extends PartialObject {
     var common: js.UndefOr[stdLib.Partial[ObjectCommon]] = js.undefined
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.StateObject, '_id' | 'native' | 'enums' | 'type'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.StateObject, '_id' | 'native' | 'enums' | 'type'>[P]} */ trait PartialStateObject extends js.Object {
+  - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.StateObject, '_id' | 'native' | 'enums' | 'type'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.StateObject, '_id' | 'native' | 'enums' | 'type'>[P]} */ trait PartialStateObject extends PartialObject {
     var acl: js.UndefOr[stdLib.Partial[StateACL]] = js.undefined
     var common: js.UndefOr[stdLib.Partial[StateCommon]] = js.undefined
   }
@@ -2586,7 +2602,9 @@ object ioBrokerNs extends js.Object {
     var write: scala.Boolean
   }
   
-  trait StateObject extends BaseObject {
+  trait StateObject
+    extends BaseObject
+       with Object {
     @JSName("acl")
     var acl_StateObject: js.UndefOr[StateACL] = js.undefined
     @JSName("common")
@@ -2861,7 +2879,6 @@ object ioBrokerNs extends js.Object {
     /* list */ js.UndefOr[js.Array[Object]], 
     scala.Unit
   ]
-  type CommonType = iobrokerLib.iobrokerLibStrings.number | iobrokerLib.iobrokerLibStrings.string | iobrokerLib.iobrokerLibStrings.boolean | iobrokerLib.iobrokerLibStrings.array | iobrokerLib.iobrokerLibStrings.`object` | iobrokerLib.iobrokerLibStrings.mixed | iobrokerLib.iobrokerLibStrings.file
   type DeleteStateCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
     /* id */ js.UndefOr[java.lang.String], 
@@ -2967,21 +2984,16 @@ object ioBrokerNs extends js.Object {
     scala.Unit
   ]
   type Log = js.Any
-  // end interface Objects
-  type LogLevel = iobrokerLib.iobrokerLibStrings.silly | iobrokerLib.iobrokerLibStrings.debug | iobrokerLib.iobrokerLibStrings.info | iobrokerLib.iobrokerLibStrings.warn | iobrokerLib.iobrokerLibStrings.error
   type MessageCallback = js.Function1[/* response */ js.UndefOr[Message], scala.Unit]
   type MessageHandler = js.Function1[/* obj */ Message, scala.Unit | js.Promise[scala.Unit]]
   type MessagePayload = java.lang.String | (stdLib.Record[java.lang.String, js.Any])
   /** Infers the return type from a callback-style API and strips out null and undefined */
   type NonNullCallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ js.Any, _] */] = stdLib.Exclude[SecondParameterOf[T], js.UndefOr[scala.Null]]
-  type Object = StateObject | ChannelObject | DeviceObject | OtherObject
   type ObjectChangeHandler = js.Function2[
     /* id */ java.lang.String, 
     /* obj */ js.UndefOr[Object | scala.Null], 
     scala.Unit | js.Promise[scala.Unit]
   ]
-  type ObjectType = iobrokerLib.iobrokerLibStrings.state | iobrokerLib.iobrokerLibStrings.channel | iobrokerLib.iobrokerLibStrings.device
-  type PartialObject = PartialStateObject | PartialChannelObject | PartialDeviceObject | PartialOtherObject
   type ReadDirCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
     /* entries */ js.UndefOr[js.Array[ReadDirResult]], 

@@ -280,16 +280,20 @@ object activexDashShdocvwLibStrings {
   sealed trait WindowStateChanged extends js.Object
   
   @js.native
-  sealed trait _blank extends js.Object
+  sealed trait _blank
+    extends activexDashShdocvwLib.SHDocVwNs.TargetFrameValues
   
   @js.native
-  sealed trait _parent extends js.Object
+  sealed trait _parent
+    extends activexDashShdocvwLib.SHDocVwNs.TargetFrameValues
   
   @js.native
-  sealed trait _self extends js.Object
+  sealed trait _self
+    extends activexDashShdocvwLib.SHDocVwNs.TargetFrameValues
   
   @js.native
-  sealed trait _top extends js.Object
+  sealed trait _top
+    extends activexDashShdocvwLib.SHDocVwNs.TargetFrameValues
   
   @js.native
   sealed trait bImpacted extends js.Object

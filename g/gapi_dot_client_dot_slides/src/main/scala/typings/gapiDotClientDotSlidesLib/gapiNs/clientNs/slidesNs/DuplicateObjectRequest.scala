@@ -31,3 +31,16 @@ trait DuplicateObjectRequest extends js.Object {
   var objectIds: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object DuplicateObjectRequest {
+  @scala.inline
+  def apply(
+    objectId: java.lang.String = null,
+    objectIds: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): DuplicateObjectRequest = {
+    val __obj = js.Dynamic.literal()
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    __obj.asInstanceOf[DuplicateObjectRequest]
+  }
+}
+

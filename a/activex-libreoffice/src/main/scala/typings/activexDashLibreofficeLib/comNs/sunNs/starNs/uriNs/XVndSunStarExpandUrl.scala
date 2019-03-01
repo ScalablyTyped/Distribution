@@ -24,3 +24,17 @@ trait XVndSunStarExpandUrl extends js.Object {
   def expand(expander: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XMacroExpander): java.lang.String
 }
 
+object XVndSunStarExpandUrl {
+  @scala.inline
+  def apply(
+    expand: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XMacroExpander, 
+      java.lang.String
+    ]
+  ): XVndSunStarExpandUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expand")(expand)
+    __obj.asInstanceOf[XVndSunStarExpandUrl]
+  }
+}
+

@@ -57,3 +57,36 @@ trait Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize extends js.Object 
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize {
+  @scala.inline
+  def apply(
+    executionId: java.lang.String,
+    historyId: java.lang.String,
+    projectId: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("executionId")(executionId)
+    __obj.updateDynamic("historyId")(historyId)
+    __obj.updateDynamic("projectId")(projectId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltExecutionIdFieldsHistoryIdKeyOauthtokenPageSize]
+  }
+}
+

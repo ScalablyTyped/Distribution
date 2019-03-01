@@ -12,3 +12,20 @@ trait RevokeNameDescriptorMap extends js.Object {
   var push: PushPermissionDescriptor
 }
 
+object RevokeNameDescriptorMap {
+  @scala.inline
+  def apply(
+    geolocation: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.geolocation],
+    midi: MidiPermissionDescriptor,
+    notifications: PermissionDescriptor[navigatorDashPermissionsLib.navigatorDashPermissionsLibStrings.notifications],
+    push: PushPermissionDescriptor
+  ): RevokeNameDescriptorMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("geolocation")(geolocation)
+    __obj.updateDynamic("midi")(midi)
+    __obj.updateDynamic("notifications")(notifications)
+    __obj.updateDynamic("push")(push)
+    __obj.asInstanceOf[RevokeNameDescriptorMap]
+  }
+}
+

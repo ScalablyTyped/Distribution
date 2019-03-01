@@ -56,3 +56,38 @@ trait Iterator[K, V] extends js.Object {
   def update(value: V): adoneLib.adoneNs.collectionNs.RedBlackTree[K, V]
 }
 
+object Iterator {
+  @scala.inline
+  def apply[K, V](
+    clone: js.Function0[Iterator[K, V]],
+    hasNext: scala.Boolean,
+    hasPrev: scala.Boolean,
+    index: scala.Double,
+    next: js.Function0[scala.Unit],
+    prev: js.Function0[scala.Unit],
+    remove: js.Function0[adoneLib.adoneNs.collectionNs.RedBlackTree[K, V]],
+    tree: adoneLib.adoneNs.collectionNs.RedBlackTree[K, V],
+    update: js.Function1[V, adoneLib.adoneNs.collectionNs.RedBlackTree[K, V]],
+    valid: scala.Boolean,
+    key: K = null,
+    node: Node[K, V] = null,
+    value: V = null
+  ): Iterator[K, V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("hasNext")(hasNext)
+    __obj.updateDynamic("hasPrev")(hasPrev)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("prev")(prev)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("tree")(tree)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("valid")(valid)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Iterator[K, V]]
+  }
+}
+

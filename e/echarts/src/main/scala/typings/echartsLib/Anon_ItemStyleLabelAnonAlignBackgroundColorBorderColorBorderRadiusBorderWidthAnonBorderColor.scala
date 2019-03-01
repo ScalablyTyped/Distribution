@@ -16,3 +16,16 @@ trait Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWi
   var label: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth] = js.undefined
 }
 
+object Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColor {
+  @scala.inline
+  def apply(
+    itemStyle: Anon_BorderColor = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidth = null
+  ): Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColor = {
+    val __obj = js.Dynamic.literal()
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[Anon_ItemStyleLabelAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthAnonBorderColor]
+  }
+}
+

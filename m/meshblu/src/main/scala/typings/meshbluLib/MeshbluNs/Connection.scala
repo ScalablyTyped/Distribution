@@ -162,3 +162,100 @@ trait Connection extends js.Object {
   def whoami(data: js.Any, fn: js.Function1[/* result */ DeviceResponse, scala.Unit]): Connection
 }
 
+object Connection {
+  @scala.inline
+  def apply(
+    authenticate: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    bufferedSocketEmit: js.Function0[scala.Unit],
+    claimdevice: js.Function2[Device, js.Function1[/* result */ Device, scala.Unit], Connection],
+    close: js.Function1[js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    connect: js.Function0[scala.Unit],
+    data: js.Function2[DataInput, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    device: js.Function2[Device, js.Function1[/* result */ DeviceResponse, scala.Unit], Connection],
+    devices: js.Function2[Color, js.Function1[/* result */ js.Array[DeviceResponse], scala.Unit], Connection],
+    directText: js.Function1[js.Any, Connection],
+    encryptMessage: js.Function4[
+      java.lang.String, 
+      js.Any, 
+      ConnectionOptions, 
+      js.Function1[/* result */ js.Any, scala.Unit], 
+      Connection
+    ],
+    events: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    generateAndStoreToken: js.Function2[Device, js.Function1[/* result */ ConnectionOptions, scala.Unit], scala.Unit],
+    generateKeyPair: js.Function0[KeyPair],
+    getPublicKey: js.Function2[
+      java.lang.String, 
+      js.Function2[/* err */ nodeLib.Error, /* publicKey */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    getdata: js.Function2[GetDataInput, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    identify: js.Function0[Connection],
+    localdevices: js.Function1[js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    message: js.Function2[MessagePayload, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    mydevices: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    parseUrl: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    reconnect: js.Function0[scala.Unit],
+    register: js.Function2[RegisterData, js.Function1[/* result */ RegisterResponse, scala.Unit], Connection],
+    resetToken: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], scala.Unit],
+    revokeToken: js.Function2[ConnectionOptions, js.Function1[/* result */ Device, scala.Unit], scala.Unit],
+    send: js.Function1[java.lang.String, Connection],
+    setPrivateKey: js.Function1[java.lang.String, scala.Unit],
+    setup: js.Function0[Connection],
+    sign: js.Function1[js.Any, java.lang.String],
+    status: js.Function1[js.Any, Connection],
+    subscribe: js.Function2[SubscribeData, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    subscribeText: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    textBroadcast: js.Function1[js.Any, Connection],
+    unclaimeddevices: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    unregister: js.Function2[Device, js.Function1[/* result */ Device, scala.Unit], Connection],
+    unsubscribe: js.Function2[UnsubscribeData, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    unsubscribeText: js.Function2[js.Any, js.Function1[/* result */ js.Any, scala.Unit], Connection],
+    update: js.Function2[UpdateData, js.Function1[/* result */ UpdateSuccess, scala.Unit], Connection],
+    verify: js.Function2[js.Any, js.Any, js.Any],
+    whoami: js.Function2[js.Any, js.Function1[/* result */ DeviceResponse, scala.Unit], Connection]
+  ): Connection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authenticate")(authenticate)
+    __obj.updateDynamic("bufferedSocketEmit")(bufferedSocketEmit)
+    __obj.updateDynamic("claimdevice")(claimdevice)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("connect")(connect)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("device")(device)
+    __obj.updateDynamic("devices")(devices)
+    __obj.updateDynamic("directText")(directText)
+    __obj.updateDynamic("encryptMessage")(encryptMessage)
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("generateAndStoreToken")(generateAndStoreToken)
+    __obj.updateDynamic("generateKeyPair")(generateKeyPair)
+    __obj.updateDynamic("getPublicKey")(getPublicKey)
+    __obj.updateDynamic("getdata")(getdata)
+    __obj.updateDynamic("identify")(identify)
+    __obj.updateDynamic("localdevices")(localdevices)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("mydevices")(mydevices)
+    __obj.updateDynamic("parseUrl")(parseUrl)
+    __obj.updateDynamic("reconnect")(reconnect)
+    __obj.updateDynamic("register")(register)
+    __obj.updateDynamic("resetToken")(resetToken)
+    __obj.updateDynamic("revokeToken")(revokeToken)
+    __obj.updateDynamic("send")(send)
+    __obj.updateDynamic("setPrivateKey")(setPrivateKey)
+    __obj.updateDynamic("setup")(setup)
+    __obj.updateDynamic("sign")(sign)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("subscribe")(subscribe)
+    __obj.updateDynamic("subscribeText")(subscribeText)
+    __obj.updateDynamic("textBroadcast")(textBroadcast)
+    __obj.updateDynamic("unclaimeddevices")(unclaimeddevices)
+    __obj.updateDynamic("unregister")(unregister)
+    __obj.updateDynamic("unsubscribe")(unsubscribe)
+    __obj.updateDynamic("unsubscribeText")(unsubscribeText)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("verify")(verify)
+    __obj.updateDynamic("whoami")(whoami)
+    __obj.asInstanceOf[Connection]
+  }
+}
+

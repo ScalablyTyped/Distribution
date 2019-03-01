@@ -31,3 +31,20 @@ trait PublishConfiguration extends js.Object {
   val updaterCacheDirName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object PublishConfiguration {
+  @scala.inline
+  def apply(
+    provider: PublishProvider,
+    publishAutoUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    publisherName: js.Array[java.lang.String] = null,
+    updaterCacheDirName: java.lang.String = null
+  ): PublishConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("provider")(provider)
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)
+    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName)
+    __obj.asInstanceOf[PublishConfiguration]
+  }
+}
+

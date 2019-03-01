@@ -15,7 +15,6 @@ package object typescriptDashLogicMod {
     typescriptDashLogicLib.typescriptDashLogicLibNumbers.`false`
   ]
   type If[Boolean /* <: scala.Boolean */, WhenTrue, WhenFalse] = WhenFalse | WhenTrue
-  type Not[X /* <: scala.Boolean */] = typescriptDashLogicLib.typescriptDashLogicLibNumbers.`true` | typescriptDashLogicLib.typescriptDashLogicLibNumbers.`false`
   type Or[A /* <: scala.Boolean */, B /* <: scala.Boolean */] = typescriptDashLogicLib.LogicalTable[
     A, 
     B, 

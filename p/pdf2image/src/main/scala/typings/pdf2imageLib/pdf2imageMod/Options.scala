@@ -19,3 +19,30 @@ trait Options extends js.Object {
   var width: scala.Double
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    density: scala.Double,
+    height: scala.Double,
+    outputFormat: OutputFormat,
+    outputType: pdf2imageLib.pdf2imageLibStrings.jpg | pdf2imageLib.pdf2imageLibStrings.png | pdf2imageLib.pdf2imageLibStrings.DOTjpg | pdf2imageLib.pdf2imageLibStrings.DOTpng,
+    pages: pdf2imageLib.pdf2imageLibStrings.`*` | java.lang.String,
+    quality: scala.Double,
+    singleProcess: scala.Boolean,
+    width: scala.Double
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("density")(density)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
+    __obj.updateDynamic("outputType")(outputType.asInstanceOf[js.Any])
+    __obj.updateDynamic("pages")(pages.asInstanceOf[js.Any])
+    __obj.updateDynamic("quality")(quality)
+    __obj.updateDynamic("singleProcess")(singleProcess)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -32,3 +32,24 @@ trait ListBackupsInput extends js.Object {
   var TimeRangeUpperBound: js.UndefOr[TimeRangeUpperBound] = js.undefined
 }
 
+object ListBackupsInput {
+  @scala.inline
+  def apply(
+    BackupType: BackupTypeFilter = null,
+    ExclusiveStartBackupArn: BackupArn = null,
+    Limit: js.UndefOr[BackupsInputLimit] = js.undefined,
+    TableName: TableName = null,
+    TimeRangeLowerBound: TimeRangeLowerBound = null,
+    TimeRangeUpperBound: TimeRangeUpperBound = null
+  ): ListBackupsInput = {
+    val __obj = js.Dynamic.literal()
+    if (BackupType != null) __obj.updateDynamic("BackupType")(BackupType.asInstanceOf[js.Any])
+    if (ExclusiveStartBackupArn != null) __obj.updateDynamic("ExclusiveStartBackupArn")(ExclusiveStartBackupArn)
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (TableName != null) __obj.updateDynamic("TableName")(TableName)
+    if (TimeRangeLowerBound != null) __obj.updateDynamic("TimeRangeLowerBound")(TimeRangeLowerBound)
+    if (TimeRangeUpperBound != null) __obj.updateDynamic("TimeRangeUpperBound")(TimeRangeUpperBound)
+    __obj.asInstanceOf[ListBackupsInput]
+  }
+}
+

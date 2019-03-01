@@ -28,3 +28,22 @@ trait ThreatIntelSetArgs extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ThreatIntelSetArgs {
+  @scala.inline
+  def apply(
+    activate: atPulumiPulumiLib.outputMod.Input[scala.Boolean],
+    detectorId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    format: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    location: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ThreatIntelSetArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activate")(activate.asInstanceOf[js.Any])
+    __obj.updateDynamic("detectorId")(detectorId.asInstanceOf[js.Any])
+    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ThreatIntelSetArgs]
+  }
+}
+

@@ -20,3 +20,13 @@ trait Options extends js.Object {
   var mode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(fs: makeDashDirLib.Anon_AccessAccessSync = null, mode: scala.Int | scala.Double = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

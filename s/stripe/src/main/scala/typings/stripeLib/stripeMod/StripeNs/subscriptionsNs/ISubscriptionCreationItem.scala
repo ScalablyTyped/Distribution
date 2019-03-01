@@ -16,3 +16,13 @@ trait ISubscriptionCreationItem extends js.Object {
   var quantity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ISubscriptionCreationItem {
+  @scala.inline
+  def apply(plan: java.lang.String, quantity: scala.Int | scala.Double = null): ISubscriptionCreationItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("plan")(plan)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISubscriptionCreationItem]
+  }
+}
+

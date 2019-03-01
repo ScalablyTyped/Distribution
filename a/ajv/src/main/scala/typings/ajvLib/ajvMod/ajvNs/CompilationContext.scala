@@ -20,3 +20,36 @@ trait CompilationContext extends js.Object {
   def validate(schema: js.Object): scala.Boolean
 }
 
+object CompilationContext {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    baseId: java.lang.String,
+    compositeRule: scala.Boolean,
+    dataLevel: scala.Double,
+    formats: org.scalablytyped.runtime.StringDictionary[js.UndefOr[FormatDefinition]],
+    level: scala.Double,
+    opts: Options,
+    schema: js.Any,
+    schemaPath: java.lang.String,
+    self: Ajv,
+    util: ajvLib.Anon_Copy,
+    validate: js.Function1[js.Object, scala.Boolean]
+  ): CompilationContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("async")(async)
+    __obj.updateDynamic("baseId")(baseId)
+    __obj.updateDynamic("compositeRule")(compositeRule)
+    __obj.updateDynamic("dataLevel")(dataLevel)
+    __obj.updateDynamic("formats")(formats)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("opts")(opts)
+    __obj.updateDynamic("schema")(schema)
+    __obj.updateDynamic("schemaPath")(schemaPath)
+    __obj.updateDynamic("self")(self)
+    __obj.updateDynamic("util")(util)
+    __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[CompilationContext]
+  }
+}
+

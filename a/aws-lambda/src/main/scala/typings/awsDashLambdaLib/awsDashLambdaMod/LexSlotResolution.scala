@@ -9,3 +9,12 @@ trait LexSlotResolution extends js.Object {
   var value: java.lang.String
 }
 
+object LexSlotResolution {
+  @scala.inline
+  def apply(value: java.lang.String): LexSlotResolution = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[LexSlotResolution]
+  }
+}
+

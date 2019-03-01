@@ -35,3 +35,26 @@ trait ClusterConfig extends js.Object {
   var workerConfig: js.UndefOr[InstanceGroupConfig] = js.undefined
 }
 
+object ClusterConfig {
+  @scala.inline
+  def apply(
+    configBucket: java.lang.String = null,
+    gceClusterConfig: GceClusterConfig = null,
+    initializationActions: js.Array[NodeInitializationAction] = null,
+    masterConfig: InstanceGroupConfig = null,
+    secondaryWorkerConfig: InstanceGroupConfig = null,
+    softwareConfig: SoftwareConfig = null,
+    workerConfig: InstanceGroupConfig = null
+  ): ClusterConfig = {
+    val __obj = js.Dynamic.literal()
+    if (configBucket != null) __obj.updateDynamic("configBucket")(configBucket)
+    if (gceClusterConfig != null) __obj.updateDynamic("gceClusterConfig")(gceClusterConfig)
+    if (initializationActions != null) __obj.updateDynamic("initializationActions")(initializationActions)
+    if (masterConfig != null) __obj.updateDynamic("masterConfig")(masterConfig)
+    if (secondaryWorkerConfig != null) __obj.updateDynamic("secondaryWorkerConfig")(secondaryWorkerConfig)
+    if (softwareConfig != null) __obj.updateDynamic("softwareConfig")(softwareConfig)
+    if (workerConfig != null) __obj.updateDynamic("workerConfig")(workerConfig)
+    __obj.asInstanceOf[ClusterConfig]
+  }
+}
+

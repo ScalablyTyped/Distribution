@@ -17,3 +17,18 @@ trait ApplicationState extends js.Object {
   val uniqueId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApplicationState {
+  @scala.inline
+  def apply(
+    computePlatform: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    uniqueId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ApplicationState = {
+    val __obj = js.Dynamic.literal()
+    if (computePlatform != null) __obj.updateDynamic("computePlatform")(computePlatform.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (uniqueId != null) __obj.updateDynamic("uniqueId")(uniqueId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationState]
+  }
+}
+

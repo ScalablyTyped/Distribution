@@ -35,3 +35,36 @@ trait DataViewMatrixNode extends DataViewTreeNode {
   var values_DataViewMatrixNode: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[DataViewMatrixNodeValue]] = js.undefined
 }
 
+object DataViewMatrixNode {
+  @scala.inline
+  def apply(
+    childIdentityFields: js.Array[
+      powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr
+    ] = null,
+    children: js.Array[DataViewMatrixNode] = null,
+    identity: DataViewScopeIdentity = null,
+    isSubtotal: js.UndefOr[scala.Boolean] = js.undefined,
+    level: scala.Int | scala.Double = null,
+    levelSourceIndex: scala.Int | scala.Double = null,
+    levelValues: js.Array[DataViewMatrixGroupValue] = null,
+    name: PrimitiveValue = null,
+    objects: DataViewObjects = null,
+    value: PrimitiveValue = null,
+    values: org.scalablytyped.runtime.NumberDictionary[DataViewMatrixNodeValue] = null
+  ): DataViewMatrixNode = {
+    val __obj = js.Dynamic.literal()
+    if (childIdentityFields != null) __obj.updateDynamic("childIdentityFields")(childIdentityFields)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (identity != null) __obj.updateDynamic("identity")(identity)
+    if (!js.isUndefined(isSubtotal)) __obj.updateDynamic("isSubtotal")(isSubtotal)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (levelSourceIndex != null) __obj.updateDynamic("levelSourceIndex")(levelSourceIndex.asInstanceOf[js.Any])
+    if (levelValues != null) __obj.updateDynamic("levelValues")(levelValues)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (objects != null) __obj.updateDynamic("objects")(objects)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[DataViewMatrixNode]
+  }
+}
+

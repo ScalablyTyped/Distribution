@@ -33,3 +33,20 @@ trait Anon_EmphasisLengthLineStyle extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_EmphasisLengthLineStyle {
+  @scala.inline
+  def apply(
+    emphasis: Anon_LineStyle = null,
+    length: scala.Int | scala.Double = null,
+    lineStyle: Anon_ColorOpacityShadowBlur = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_EmphasisLengthLineStyle = {
+    val __obj = js.Dynamic.literal()
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[Anon_EmphasisLengthLineStyle]
+  }
+}
+

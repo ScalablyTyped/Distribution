@@ -54,3 +54,18 @@ trait DataObject extends js.Object {
   var value: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
 }
 
+object DataObject {
+  @scala.inline
+  def apply(
+    date: java.lang.String = null,
+    name: java.lang.String = null,
+    value: scala.Double | js.Array[scala.Double] = null
+  ): DataObject = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataObject]
+  }
+}
+

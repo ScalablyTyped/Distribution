@@ -17,3 +17,20 @@ trait Video extends js.Object {
   var video_properties: VideoProperties
 }
 
+object Video {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    source: VideoSource,
+    url: java.lang.String,
+    video_properties: VideoProperties
+  ): Video = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("video_properties")(video_properties)
+    __obj.asInstanceOf[Video]
+  }
+}
+

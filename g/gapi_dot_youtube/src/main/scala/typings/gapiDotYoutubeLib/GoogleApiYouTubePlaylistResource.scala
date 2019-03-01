@@ -36,3 +36,26 @@ trait GoogleApiYouTubePlaylistResource extends js.Object {
   var status: Anon_PrivacyStatus
 }
 
+object GoogleApiYouTubePlaylistResource {
+  @scala.inline
+  def apply(
+    contentDetails: Anon_ItemCount,
+    etag: java.lang.String,
+    id: java.lang.String,
+    kind: java.lang.String,
+    player: Anon_EmbedHtml,
+    snippet: Anon_ChannelIdChannelTitleDescriptionPublishedAt,
+    status: Anon_PrivacyStatus
+  ): GoogleApiYouTubePlaylistResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentDetails")(contentDetails)
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("player")(player)
+    __obj.updateDynamic("snippet")(snippet)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[GoogleApiYouTubePlaylistResource]
+  }
+}
+

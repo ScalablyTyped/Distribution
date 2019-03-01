@@ -18,3 +18,13 @@ trait CPUUsage extends js.Object {
   var percentCPUUsage: scala.Double
 }
 
+object CPUUsage {
+  @scala.inline
+  def apply(idleWakeupsPerSecond: scala.Double, percentCPUUsage: scala.Double): CPUUsage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("idleWakeupsPerSecond")(idleWakeupsPerSecond)
+    __obj.updateDynamic("percentCPUUsage")(percentCPUUsage)
+    __obj.asInstanceOf[CPUUsage]
+  }
+}
+

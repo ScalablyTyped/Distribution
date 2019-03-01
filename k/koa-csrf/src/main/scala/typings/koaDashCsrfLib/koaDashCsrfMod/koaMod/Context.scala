@@ -9,3 +9,12 @@ trait Context extends js.Object {
   var csrf: java.lang.String
 }
 
+object Context {
+  @scala.inline
+  def apply(csrf: java.lang.String): Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("csrf")(csrf)
+    __obj.asInstanceOf[Context]
+  }
+}
+

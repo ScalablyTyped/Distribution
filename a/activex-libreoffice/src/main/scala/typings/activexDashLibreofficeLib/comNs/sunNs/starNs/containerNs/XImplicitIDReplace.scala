@@ -12,3 +12,20 @@ trait XImplicitIDReplace
   def replaceByUniqueID(ID: java.lang.String, aNewElement: js.Any): scala.Unit
 }
 
+object XImplicitIDReplace {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    replaceByUniqueID: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): XImplicitIDReplace = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("replaceByUniqueID")(replaceByUniqueID)
+    __obj.asInstanceOf[XImplicitIDReplace]
+  }
+}
+

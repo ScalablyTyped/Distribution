@@ -89,3 +89,47 @@ trait Anon_Always extends js.Object {
   var warnOnFallback: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Always {
+  @scala.inline
+  def apply(
+    Headers: org.scalablytyped.runtime.Instantiable0[stdLib.Headers] = null,
+    Promise: org.scalablytyped.runtime.Instantiable1[
+      /* executor */ js.Function2[
+        /* resolve */ js.Function0[scala.Unit], 
+        /* reject */ js.Function0[scala.Unit], 
+        scala.Unit
+      ], 
+      js.Promise[stdLib.Response]
+    ] = null,
+    Request: org.scalablytyped.runtime.Instantiable2[
+      /* input */ java.lang.String | stdLib.Request, 
+      /* init */ js.UndefOr[/* init */ stdLib.RequestInit], 
+      stdLib.Request
+    ] = null,
+    Response: org.scalablytyped.runtime.Instantiable0[stdLib.Response] = null,
+    fallbackToNetwork: scala.Boolean | fetchDashMockLib.fetchDashMockLibStrings.always = null,
+    fetch: js.Function2[
+      /* input */ js.UndefOr[java.lang.String | stdLib.Request], 
+      /* init */ js.UndefOr[stdLib.RequestInit], 
+      js.Promise[stdLib.Response]
+    ] = null,
+    includeContentLength: js.UndefOr[scala.Boolean] = js.undefined,
+    overwriteRoutes: js.UndefOr[scala.Boolean] = js.undefined,
+    sendAsJson: js.UndefOr[scala.Boolean] = js.undefined,
+    warnOnFallback: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Always = {
+    val __obj = js.Dynamic.literal()
+    if (Headers != null) __obj.updateDynamic("Headers")(Headers)
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
+    if (Request != null) __obj.updateDynamic("Request")(Request)
+    if (Response != null) __obj.updateDynamic("Response")(Response)
+    if (fallbackToNetwork != null) __obj.updateDynamic("fallbackToNetwork")(fallbackToNetwork.asInstanceOf[js.Any])
+    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
+    if (!js.isUndefined(includeContentLength)) __obj.updateDynamic("includeContentLength")(includeContentLength)
+    if (!js.isUndefined(overwriteRoutes)) __obj.updateDynamic("overwriteRoutes")(overwriteRoutes)
+    if (!js.isUndefined(sendAsJson)) __obj.updateDynamic("sendAsJson")(sendAsJson)
+    if (!js.isUndefined(warnOnFallback)) __obj.updateDynamic("warnOnFallback")(warnOnFallback)
+    __obj.asInstanceOf[Anon_Always]
+  }
+}
+

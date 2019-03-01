@@ -43,3 +43,26 @@ trait FillBitmap extends js.Object {
   var bLogicalSize: scala.Boolean
 }
 
+object FillBitmap {
+  @scala.inline
+  def apply(
+    aBitmapMode: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.BitmapMode,
+    aOffset: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    aPositionOffset: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    aRectanglePoint: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.RectanglePoint,
+    aSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    aURL: java.lang.String,
+    bLogicalSize: scala.Boolean
+  ): FillBitmap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aBitmapMode")(aBitmapMode)
+    __obj.updateDynamic("aOffset")(aOffset)
+    __obj.updateDynamic("aPositionOffset")(aPositionOffset)
+    __obj.updateDynamic("aRectanglePoint")(aRectanglePoint)
+    __obj.updateDynamic("aSize")(aSize)
+    __obj.updateDynamic("aURL")(aURL)
+    __obj.updateDynamic("bLogicalSize")(bLogicalSize)
+    __obj.asInstanceOf[FillBitmap]
+  }
+}
+

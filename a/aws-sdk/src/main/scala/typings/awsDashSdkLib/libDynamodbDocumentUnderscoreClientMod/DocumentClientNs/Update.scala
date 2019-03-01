@@ -36,3 +36,26 @@ trait Update extends js.Object {
   var UpdateExpression: UpdateExpression
 }
 
+object Update {
+  @scala.inline
+  def apply(
+    Key: Key,
+    TableName: TableName,
+    UpdateExpression: UpdateExpression,
+    ConditionExpression: ConditionExpression = null,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
+    ReturnValuesOnConditionCheckFailure: ReturnValuesOnConditionCheckFailure = null
+  ): Update = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Key")(Key)
+    __obj.updateDynamic("TableName")(TableName)
+    __obj.updateDynamic("UpdateExpression")(UpdateExpression)
+    if (ConditionExpression != null) __obj.updateDynamic("ConditionExpression")(ConditionExpression)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
+    if (ReturnValuesOnConditionCheckFailure != null) __obj.updateDynamic("ReturnValuesOnConditionCheckFailure")(ReturnValuesOnConditionCheckFailure.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Update]
+  }
+}
+

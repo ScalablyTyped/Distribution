@@ -16,3 +16,13 @@ trait IInstallOptions extends js.Object {
   var suppressWarnings: scala.Boolean
 }
 
+object IInstallOptions {
+  @scala.inline
+  def apply(plugins: js.Array[workboxDashSwLib.Plugin], suppressWarnings: scala.Boolean): IInstallOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("plugins")(plugins)
+    __obj.updateDynamic("suppressWarnings")(suppressWarnings)
+    __obj.asInstanceOf[IInstallOptions]
+  }
+}
+

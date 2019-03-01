@@ -8,37 +8,27 @@ import scala.scalajs.js.annotation._
 package object reactDashNativeMod {
   type ART = ARTStatic
   type AccessibilityInfo = AccessibilityInfoStatic
-  type AccessibilityRole = reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.link | reactDashNativeLib.reactDashNativeLibStrings.search | reactDashNativeLib.reactDashNativeLibStrings.image | reactDashNativeLib.reactDashNativeLibStrings.keyboardkey | reactDashNativeLib.reactDashNativeLibStrings.text | reactDashNativeLib.reactDashNativeLibStrings.adjustable | reactDashNativeLib.reactDashNativeLibStrings.header | reactDashNativeLib.reactDashNativeLibStrings.summary | reactDashNativeLib.reactDashNativeLibStrings.imagebutton
-  type AccessibilityState = reactDashNativeLib.reactDashNativeLibStrings.selected | reactDashNativeLib.reactDashNativeLibStrings.disabled
   type ActionSheetIOS = ActionSheetIOSStatic
   type ActivityIndicatorComponent = reactLib.reactMod.Component[ActivityIndicatorProps, js.Object, js.Any]
   type AdSupportIOS = AdSupportIOSStatic
   type Alert = AlertStatic
   type AlertAndroid = AlertAndroidStatic
   type AlertIOS = AlertIOSStatic
-  type AlertType = reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.`plain-text` | reactDashNativeLib.reactDashNativeLibStrings.`secure-text` | reactDashNativeLib.reactDashNativeLibStrings.`login-password`
   type AppState = AppStateStatic
-  type AppStateEvent = reactDashNativeLib.reactDashNativeLibStrings.change | reactDashNativeLib.reactDashNativeLibStrings.memoryWarning
   type AppStateIOS = AppStateStatic
-  type AppStateStatus = reactDashNativeLib.reactDashNativeLibStrings.active | reactDashNativeLib.reactDashNativeLibStrings.background | reactDashNativeLib.reactDashNativeLibStrings.inactive
   type AsyncStorage = AsyncStorageStatic
   type BackAndroid = BackAndroidStatic
   type BackHandler = BackHandlerStatic
   type BackPressEventName = reactDashNativeLib.reactDashNativeLibStrings.hardwareBackPress
   type CameraRoll = CameraRollStatic
-  type CameraRollAssetType = reactDashNativeLib.reactDashNativeLibStrings.All | reactDashNativeLib.reactDashNativeLibStrings.Videos | reactDashNativeLib.reactDashNativeLibStrings.Photos
-  type CameraRollGroupType = reactDashNativeLib.reactDashNativeLibStrings.Album | reactDashNativeLib.reactDashNativeLibStrings.All | reactDashNativeLib.reactDashNativeLibStrings.Event | reactDashNativeLib.reactDashNativeLibStrings.Faces | reactDashNativeLib.reactDashNativeLibStrings.Library | reactDashNativeLib.reactDashNativeLibStrings.PhotoStream | reactDashNativeLib.reactDashNativeLibStrings.SavedPhotos
   type Clipboard = ClipboardStatic
   type ComponentProvider = js.Function0[reactLib.reactMod.ReactNs.ComponentType[js.Any]]
-  type ConnectionType = reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.wifi | reactDashNativeLib.reactDashNativeLibStrings.cell | reactDashNativeLib.reactDashNativeLibStrings.unknown | reactDashNativeLib.reactDashNativeLibStrings.NONE | reactDashNativeLib.reactDashNativeLibStrings.MOBILE | reactDashNativeLib.reactDashNativeLibStrings.WIFI | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_MMS | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_SUPL | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_DUN | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_HIPRI | reactDashNativeLib.reactDashNativeLibStrings.WIMAX | reactDashNativeLib.reactDashNativeLibStrings.BLUETOOTH | reactDashNativeLib.reactDashNativeLibStrings.DUMMY | reactDashNativeLib.reactDashNativeLibStrings.ETHERNET | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_FOTA | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_IMS | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_CBS | reactDashNativeLib.reactDashNativeLibStrings.WIFI_P2P | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_IA | reactDashNativeLib.reactDashNativeLibStrings.MOBILE_EMERGENCY | reactDashNativeLib.reactDashNativeLibStrings.PROXY | reactDashNativeLib.reactDashNativeLibStrings.VPN | reactDashNativeLib.reactDashNativeLibStrings.UNKNOWN
   type DatePickerAndroid = DatePickerAndroidStatic
-  type DatePickerAndroidOpenReturn = DatePickerAndroidDateSetAction | DatePickerAndroidDismissedAction
   type DatePickerIOSComponent = reactLib.reactMod.Component[DatePickerIOSProps, js.Object, js.Any]
   type DrawerLayoutAndroidComponent = reactLib.reactMod.Component[DrawerLayoutAndroidProps, js.Object, js.Any]
   type DrawerSlideEvent = NativeSyntheticEvent[NativeTouchEvent]
   type Easing = EasingStatic
   type EasingFunction = js.Function1[/* value */ scala.Double, scala.Double]
-  type EffectiveConnectionType = reactDashNativeLib.reactDashNativeLibStrings.`2g` | reactDashNativeLib.reactDashNativeLibStrings.`3g` | reactDashNativeLib.reactDashNativeLibStrings.`4g` | reactDashNativeLib.reactDashNativeLibStrings.unknown
   type Geolocation = GeolocationStatic
   type GestureResponderEvent = NativeSyntheticEvent[NativeTouchEvent]
   type Handle = scala.Double
@@ -49,7 +39,6 @@ package object reactDashNativeMod {
   type ImagePickerIOS = ImagePickerIOSStatic
   type ImagePickerResult = js.Tuple3[java.lang.String, scala.Double, scala.Double]
   type ImageRequireSource = scala.Double
-  type ImageResizeMode = reactDashNativeLib.reactDashNativeLibStrings.cover | reactDashNativeLib.reactDashNativeLibStrings.contain | reactDashNativeLib.reactDashNativeLibStrings.stretch | reactDashNativeLib.reactDashNativeLibStrings.repeat | reactDashNativeLib.reactDashNativeLibStrings.center
   type ImageSourcePropType = ImageURISource | js.Array[ImageURISource] | ImageRequireSource
   type ImageStore = ImageStoreStatic
   type IntentAndroid = IntentAndroidStatic
@@ -58,12 +47,8 @@ package object reactDashNativeMod {
     * It can automatically adjust either its position or bottom padding based on the position of the keyboard.
     */
   type KeyboardAvoidingViewComponent = reactLib.reactMod.Component[KeyboardAvoidingViewProps, js.Object, js.Any]
-  type KeyboardEventEasing = reactDashNativeLib.reactDashNativeLibStrings.easeIn | reactDashNativeLib.reactDashNativeLibStrings.easeInEaseOut | reactDashNativeLib.reactDashNativeLibStrings.easeOut | reactDashNativeLib.reactDashNativeLibStrings.linear | reactDashNativeLib.reactDashNativeLibStrings.keyboard
-  type KeyboardEventName = reactDashNativeLib.reactDashNativeLibStrings.keyboardWillShow | reactDashNativeLib.reactDashNativeLibStrings.keyboardDidShow | reactDashNativeLib.reactDashNativeLibStrings.keyboardWillHide | reactDashNativeLib.reactDashNativeLibStrings.keyboardDidHide | reactDashNativeLib.reactDashNativeLibStrings.keyboardWillChangeFrame | reactDashNativeLib.reactDashNativeLibStrings.keyboardDidChangeFrame
-  type KeyboardType = reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.`email-address` | reactDashNativeLib.reactDashNativeLibStrings.numeric | reactDashNativeLib.reactDashNativeLibStrings.`phone-pad`
   type KeyboardTypeAndroid = reactDashNativeLib.reactDashNativeLibStrings.`visible-password`
-  type KeyboardTypeIOS = reactDashNativeLib.reactDashNativeLibStrings.`ascii-capable` | reactDashNativeLib.reactDashNativeLibStrings.`numbers-and-punctuation` | reactDashNativeLib.reactDashNativeLibStrings.url | reactDashNativeLib.reactDashNativeLibStrings.`number-pad` | reactDashNativeLib.reactDashNativeLibStrings.`name-phone-pad` | reactDashNativeLib.reactDashNativeLibStrings.`decimal-pad` | reactDashNativeLib.reactDashNativeLibStrings.twitter | reactDashNativeLib.reactDashNativeLibStrings.`web-search`
-  type KeyboardTypeOptions = KeyboardType | KeyboardTypeAndroid | KeyboardTypeIOS
+  type KeyboardTypeOptions = _KeyboardTypeOptions | KeyboardTypeAndroid
   type LayoutAnimation = LayoutAnimationStatic
   type Linking = LinkingStatic
   type LinkingIOS = LinkingIOSStatic
@@ -110,22 +95,18 @@ package object reactDashNativeMod {
   type NativeSyntheticEvent[T] = reactLib.reactMod.ReactNs.BaseSyntheticEvent[T, reactDashNativeLib.NodeHandle, reactDashNativeLib.NodeHandle]
   type NetInfo = NetInfoStatic
   type PanResponder = PanResponderStatic
-  type Permission = reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTREAD_CALENDAR | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTWRITE_CALENDAR | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTCAMERA | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTREAD_CONTACTS | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTWRITE_CONTACTS | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTGET_ACCOUNTS | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTACCESS_FINE_LOCATION | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTACCESS_COARSE_LOCATION | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTRECORD_AUDIO | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTREAD_PHONE_STATE | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTCALL_PHONE | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTREAD_CALL_LOG | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTWRITE_CALL_LOG | reactDashNativeLib.reactDashNativeLibStrings.comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTUSE_SIP | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTPROCESS_OUTGOING_CALLS | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTBODY_SENSORS | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTSEND_SMS | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTRECEIVE_SMS | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTREAD_SMS | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTRECEIVE_WAP_PUSH | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTRECEIVE_MMS | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTREAD_EXTERNAL_STORAGE | reactDashNativeLib.reactDashNativeLibStrings.androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE
-  type PermissionStatus = reactDashNativeLib.reactDashNativeLibStrings.granted | reactDashNativeLib.reactDashNativeLibStrings.denied | reactDashNativeLib.reactDashNativeLibStrings.never_ask_again
   type PermissionsAndroid = PermissionsAndroidStatic
   /**
     * @see https://facebook.github.io/react-native/docs/pickerios.html
     * @see PickerIOS.ios.js
     */
   type PickerIOSComponent = reactLib.reactMod.Component[PickerIOSProps, js.Object, js.Any]
-  type PlatformOSType = reactDashNativeLib.reactDashNativeLibStrings.ios | reactDashNativeLib.reactDashNativeLibStrings.android | reactDashNativeLib.reactDashNativeLibStrings.macos | reactDashNativeLib.reactDashNativeLibStrings.windows | reactDashNativeLib.reactDashNativeLibStrings.web
   /**
     * React component that wraps the Android-only `ProgressBar`. This component is used to indicate
     * that the app is loading or there is some activity in the app.
     */
   type ProgressBarAndroidComponent = reactLib.reactMod.Component[ProgressBarAndroidProps, js.Object, js.Any]
   type ProgressViewIOSComponent = reactLib.reactMod.Component[ProgressViewIOSProps, js.Object, js.Any]
-  type PushNotificationEventName = reactDashNativeLib.reactDashNativeLibStrings.notification | reactDashNativeLib.reactDashNativeLibStrings.localNotification | reactDashNativeLib.reactDashNativeLibStrings.register | reactDashNativeLib.reactDashNativeLibStrings.registrationError
   type PushNotificationIOS = PushNotificationIOSStatic
   /**
     * Wrapper around android native recycler view.
@@ -152,10 +133,6 @@ package object reactDashNativeMod {
     * in the `onRefresh` function otherwise the refresh indicator will stop immediately.
     */
   type RefreshControlComponent = reactLib.reactMod.Component[RefreshControlProps, js.Object, js.Any]
-  type ReturnKeyType = reactDashNativeLib.reactDashNativeLibStrings.done | reactDashNativeLib.reactDashNativeLibStrings.go | reactDashNativeLib.reactDashNativeLibStrings.next | reactDashNativeLib.reactDashNativeLibStrings.search | reactDashNativeLib.reactDashNativeLibStrings.send
-  type ReturnKeyTypeAndroid = reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.previous
-  type ReturnKeyTypeIOS = reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.google | reactDashNativeLib.reactDashNativeLibStrings.join | reactDashNativeLib.reactDashNativeLibStrings.route | reactDashNativeLib.reactDashNativeLibStrings.yahoo | reactDashNativeLib.reactDashNativeLibStrings.`emergency-call`
-  type ReturnKeyTypeOptions = ReturnKeyType | ReturnKeyTypeAndroid | ReturnKeyTypeIOS
   type Runnable = js.Function1[/* appParameters */ js.Any, scala.Unit]
   /**
     * Renders nested content and automatically applies paddings reflect the portion of the view
@@ -194,18 +171,14 @@ package object reactDashNativeMod {
   type SegmentedControlIOSComponent = reactLib.reactMod.Component[SegmentedControlIOSProps, js.Object, js.Any]
   type Settings = SettingsStatic
   type Share = ShareStatic
-  type ShareAction = ShareSharedAction | ShareDismissedAction
-  type ShareContent = reactDashNativeLib.Anon_Message | reactDashNativeLib.Anon_Title
   /**
     * A component used to select a single value from a range of values.
     */
   type SliderComponent = reactLib.reactMod.Component[SliderProps, js.Object, js.Any]
   type SliderIOS = Slider
   type SnapshotViewIOSComponent = reactLib.reactMod.Component[SnapshotViewIOSProps, js.Object, js.Any]
-  type StatusBarAnimation = reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.fade | reactDashNativeLib.reactDashNativeLibStrings.slide
   type StatusBarIOS = StatusBarIOSStatic
   type StatusBarIOSStatic = NativeEventEmitter
-  type StatusBarStyle = reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.`light-content` | reactDashNativeLib.reactDashNativeLibStrings.`dark-content`
   type StyleProp[T] = T | reactDashNativeLib.RegisteredStyle[T] | (RecursiveArray[T | reactDashNativeLib.RegisteredStyle[T] | reactDashNativeLib.Falsy]) | reactDashNativeLib.Falsy
   /**
     * Renders a boolean input.
@@ -226,7 +199,6 @@ package object reactDashNativeMod {
     */
   type TextInputComponent = reactLib.reactMod.Component[TextInputProps, js.Object, js.Any]
   type TimePickerAndroid = TimePickerAndroidStatic
-  type TimePickerAndroidOpenReturn = TimePickerAndroidTimeSetAction | TimePickerAndroidDismissedAction
   type ToastAndroid = ToastAndroidStatic
   /**
     * React component that wraps the Android-only [`Toolbar` widget][0]. A Toolbar can display a logo,

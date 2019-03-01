@@ -10,3 +10,12 @@ trait ResolveModuleIdParams extends js.Object {
   var currentModuleId: java.lang.String
 }
 
+object ResolveModuleIdParams {
+  @scala.inline
+  def apply(currentModuleId: java.lang.String): ResolveModuleIdParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentModuleId")(currentModuleId)
+    __obj.asInstanceOf[ResolveModuleIdParams]
+  }
+}
+

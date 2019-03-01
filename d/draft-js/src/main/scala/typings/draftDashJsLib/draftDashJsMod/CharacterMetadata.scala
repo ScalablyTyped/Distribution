@@ -17,6 +17,7 @@ class CharacterMetadata ()
   override def hasStyle(style: java.lang.String): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("draft-js", "CharacterMetadata")
 @js.native
 object CharacterMetadata extends js.Object {
@@ -30,18 +31,12 @@ object CharacterMetadata extends js.Object {
     style: java.lang.String
   ): draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata = js.native
   /**
-                   * Use this function instead of the `CharacterMetadata` constructor.
-                   * Since most content generally uses only a very small number of
-                   * style/entity permutations, we can reuse these objects as often as
-                   * possible.
-                   */
+    * Use this function instead of the `CharacterMetadata` constructor.
+    * Since most content generally uses only a very small number of
+    * style/entity permutations, we can reuse these objects as often as
+    * possible.
+    */
   def create(): draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata = js.native
-  /**
-                   * Use this function instead of the `CharacterMetadata` constructor.
-                   * Since most content generally uses only a very small number of
-                   * style/entity permutations, we can reuse these objects as often as
-                   * possible.
-                   */
   def create(config: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadataConfig): draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata = js.native
   def removeStyle(
     record: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.CharacterMetadata,

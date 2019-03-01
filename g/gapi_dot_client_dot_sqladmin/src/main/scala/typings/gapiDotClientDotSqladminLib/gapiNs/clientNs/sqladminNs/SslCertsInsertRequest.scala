@@ -13,3 +13,12 @@ trait SslCertsInsertRequest extends js.Object {
   var commonName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SslCertsInsertRequest {
+  @scala.inline
+  def apply(commonName: java.lang.String = null): SslCertsInsertRequest = {
+    val __obj = js.Dynamic.literal()
+    if (commonName != null) __obj.updateDynamic("commonName")(commonName)
+    __obj.asInstanceOf[SslCertsInsertRequest]
+  }
+}
+

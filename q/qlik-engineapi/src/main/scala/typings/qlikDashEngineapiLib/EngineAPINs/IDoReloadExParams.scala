@@ -33,3 +33,18 @@ trait IDoReloadExParams extends js.Object {
   var qPartial: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IDoReloadExParams {
+  @scala.inline
+  def apply(
+    qDebug: js.UndefOr[scala.Boolean] = js.undefined,
+    qMode: scala.Int | scala.Double = null,
+    qPartial: js.UndefOr[scala.Boolean] = js.undefined
+  ): IDoReloadExParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(qDebug)) __obj.updateDynamic("qDebug")(qDebug)
+    if (qMode != null) __obj.updateDynamic("qMode")(qMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(qPartial)) __obj.updateDynamic("qPartial")(qPartial)
+    __obj.asInstanceOf[IDoReloadExParams]
+  }
+}
+

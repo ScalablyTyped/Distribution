@@ -40,3 +40,22 @@ trait Job extends js.Object {
   val status: JobStatus
 }
 
+object Job {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`batch/v1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Job,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: JobSpec,
+    status: JobStatus
+  ): Job = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Job]
+  }
+}
+

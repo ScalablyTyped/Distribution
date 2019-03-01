@@ -20,3 +20,18 @@ trait ConnectorsShapeMultiplicitySource extends js.Object {
   var upperBounds: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ConnectorsShapeMultiplicitySource {
+  @scala.inline
+  def apply(
+    lowerBounds: scala.Int | scala.Double = null,
+    optional: js.UndefOr[scala.Boolean] = js.undefined,
+    upperBounds: scala.Int | scala.Double = null
+  ): ConnectorsShapeMultiplicitySource = {
+    val __obj = js.Dynamic.literal()
+    if (lowerBounds != null) __obj.updateDynamic("lowerBounds")(lowerBounds.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (upperBounds != null) __obj.updateDynamic("upperBounds")(upperBounds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectorsShapeMultiplicitySource]
+  }
+}
+

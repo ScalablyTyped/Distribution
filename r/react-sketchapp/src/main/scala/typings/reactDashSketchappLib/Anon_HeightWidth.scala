@@ -10,3 +10,13 @@ trait Anon_HeightWidth extends js.Object {
   var width: scala.Double
 }
 
+object Anon_HeightWidth {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): Anon_HeightWidth = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Anon_HeightWidth]
+  }
+}
+

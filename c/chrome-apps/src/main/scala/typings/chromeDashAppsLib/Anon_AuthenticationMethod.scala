@@ -61,3 +61,32 @@ trait Anon_AuthenticationMethod extends js.Object {
   val terminateSession: js.Function
 }
 
+object Anon_AuthenticationMethod {
+  @scala.inline
+  def apply(
+    AuthenticationMethod: Anon_PBC,
+    ErrorType: Anon_CAPABILITIESNEGOTIATIONERROR,
+    SinkState: Anon_CONNECTED,
+    getAvailableSinks: js.Function,
+    onSessionErrorOccured: chromeDashAppsLib.chromeNs.eventsNs.Event[_],
+    onSessionTerminated: chromeDashAppsLib.chromeNs.eventsNs.Event[_],
+    onSinksUpdated: chromeDashAppsLib.chromeNs.eventsNs.Event[_],
+    requestAuthentication: js.Function,
+    startSession: js.Function,
+    terminateSession: js.Function
+  ): Anon_AuthenticationMethod = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AuthenticationMethod")(AuthenticationMethod)
+    __obj.updateDynamic("ErrorType")(ErrorType)
+    __obj.updateDynamic("SinkState")(SinkState)
+    __obj.updateDynamic("getAvailableSinks")(getAvailableSinks)
+    __obj.updateDynamic("onSessionErrorOccured")(onSessionErrorOccured)
+    __obj.updateDynamic("onSessionTerminated")(onSessionTerminated)
+    __obj.updateDynamic("onSinksUpdated")(onSinksUpdated)
+    __obj.updateDynamic("requestAuthentication")(requestAuthentication)
+    __obj.updateDynamic("startSession")(startSession)
+    __obj.updateDynamic("terminateSession")(terminateSession)
+    __obj.asInstanceOf[Anon_AuthenticationMethod]
+  }
+}
+

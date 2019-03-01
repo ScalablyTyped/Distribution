@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
   * any object in the room. However, its effectiveness highly depends on the
   * distance. Each action consumes energy.
   */
-trait StructureTower extends OwnedStructure[STRUCTURE_TOWER] {
+trait StructureTower
+  extends OwnedStructure[STRUCTURE_TOWER]
+     with AnyOwnedStructure {
   /**
     * The amount of energy containing in this structure.
     */
@@ -34,5 +36,46 @@ trait StructureTower extends OwnedStructure[STRUCTURE_TOWER] {
     * @param target The target structure.
     */
   def repair(target: Structure[StructureConstant]): ScreepsReturnCode
+}
+
+object StructureTower {
+  @scala.inline
+  def apply(
+    attack: js.Function1[Creep, ScreepsReturnCode],
+    destroy: js.Function0[ScreepsReturnCode],
+    energy: scala.Double,
+    energyCapacity: scala.Double,
+    heal: js.Function1[Creep, ScreepsReturnCode],
+    hits: scala.Double,
+    hitsMax: scala.Double,
+    id: java.lang.String,
+    isActive: js.Function0[scala.Boolean],
+    my: scala.Boolean,
+    notifyWhenAttacked: js.Function1[scala.Boolean, ScreepsReturnCode],
+    owner: Owner,
+    pos: RoomPosition,
+    repair: js.Function1[Structure[StructureConstant], ScreepsReturnCode],
+    room: Room,
+    structureType: STRUCTURE_TOWER
+  ): StructureTower = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attack")(attack)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("energy")(energy)
+    __obj.updateDynamic("energyCapacity")(energyCapacity)
+    __obj.updateDynamic("heal")(heal)
+    __obj.updateDynamic("hits")(hits)
+    __obj.updateDynamic("hitsMax")(hitsMax)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("my")(my)
+    __obj.updateDynamic("notifyWhenAttacked")(notifyWhenAttacked)
+    __obj.updateDynamic("owner")(owner)
+    __obj.updateDynamic("pos")(pos)
+    __obj.updateDynamic("repair")(repair)
+    __obj.updateDynamic("room")(room)
+    __obj.updateDynamic("structureType")(structureType)
+    __obj.asInstanceOf[StructureTower]
+  }
 }
 

@@ -13,5 +13,4 @@ package object TwitNs {
     scala.Unit
   ]
   type Response = js.Object
-  type StreamEndpoint = twitLib.twitLibStrings.`statuses/filter` | twitLib.twitLibStrings.`statuses/sample` | twitLib.twitLibStrings.`statuses/firehose` | twitLib.twitLibStrings.user | twitLib.twitLibStrings.site
 }

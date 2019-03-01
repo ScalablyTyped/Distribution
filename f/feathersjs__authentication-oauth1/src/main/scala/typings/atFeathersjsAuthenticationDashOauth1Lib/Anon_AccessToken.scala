@@ -11,3 +11,14 @@ trait Anon_AccessToken extends js.Object {
   var refreshToken: java.lang.String
 }
 
+object Anon_AccessToken {
+  @scala.inline
+  def apply(accessToken: java.lang.String, profile: js.Any, refreshToken: java.lang.String): Anon_AccessToken = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessToken")(accessToken)
+    __obj.updateDynamic("profile")(profile)
+    __obj.updateDynamic("refreshToken")(refreshToken)
+    __obj.asInstanceOf[Anon_AccessToken]
+  }
+}
+

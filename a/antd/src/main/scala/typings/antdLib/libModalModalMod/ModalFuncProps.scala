@@ -39,3 +39,70 @@ trait ModalFuncProps extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ModalFuncProps {
+  @scala.inline
+  def apply(
+    autoFocusButton: antdLib.antdLibStrings.ok | antdLib.antdLibStrings.cancel = null,
+    cancelButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
+    cancelText: reactLib.reactMod.ReactNs.ReactNode = null,
+    centered: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    content: reactLib.reactMod.ReactNs.ReactNode = null,
+    getContainer: js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, reactLib.HTMLElement] = null,
+    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    iconClassName: java.lang.String = null,
+    iconType: java.lang.String = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    mask: js.UndefOr[scala.Boolean] = js.undefined,
+    maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
+    maskStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    maskTransitionName: java.lang.String = null,
+    okButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
+    okCancel: js.UndefOr[scala.Boolean] = js.undefined,
+    okText: reactLib.reactMod.ReactNs.ReactNode = null,
+    okType: antdLib.libButtonButtonMod.ButtonType = null,
+    onCancel: js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]] = null,
+    onOk: js.Function1[/* repeated */ js.Any, _ | js.Thenable[_]] = null,
+    prefixCls: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null,
+    transitionName: java.lang.String = null,
+    `type`: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): ModalFuncProps = {
+    val __obj = js.Dynamic.literal()
+    if (autoFocusButton != null) __obj.updateDynamic("autoFocusButton")(autoFocusButton.asInstanceOf[js.Any])
+    if (cancelButtonProps != null) __obj.updateDynamic("cancelButtonProps")(cancelButtonProps)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconClassName != null) __obj.updateDynamic("iconClassName")(iconClassName)
+    if (iconType != null) __obj.updateDynamic("iconType")(iconType)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)
+    if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle)
+    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName)
+    if (okButtonProps != null) __obj.updateDynamic("okButtonProps")(okButtonProps)
+    if (!js.isUndefined(okCancel)) __obj.updateDynamic("okCancel")(okCancel)
+    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
+    if (okType != null) __obj.updateDynamic("okType")(okType)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
+    if (onOk != null) __obj.updateDynamic("onOk")(onOk)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ModalFuncProps]
+  }
+}
+

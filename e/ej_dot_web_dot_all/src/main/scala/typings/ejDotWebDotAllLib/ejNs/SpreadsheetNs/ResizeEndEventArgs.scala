@@ -38,3 +38,32 @@ trait ResizeEndEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ResizeEndEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    colIndex: scala.Int | scala.Double = null,
+    model: js.Any = null,
+    newHeight: scala.Int | scala.Double = null,
+    newWidth: scala.Int | scala.Double = null,
+    oldHeight: scala.Int | scala.Double = null,
+    oldWidth: scala.Int | scala.Double = null,
+    reqType: java.lang.String = null,
+    rowIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): ResizeEndEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (colIndex != null) __obj.updateDynamic("colIndex")(colIndex.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (newHeight != null) __obj.updateDynamic("newHeight")(newHeight.asInstanceOf[js.Any])
+    if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
+    if (oldHeight != null) __obj.updateDynamic("oldHeight")(oldHeight.asInstanceOf[js.Any])
+    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
+    if (reqType != null) __obj.updateDynamic("reqType")(reqType)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ResizeEndEventArgs]
+  }
+}
+

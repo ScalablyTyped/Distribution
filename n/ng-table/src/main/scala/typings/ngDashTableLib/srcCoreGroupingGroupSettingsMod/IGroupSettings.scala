@@ -17,3 +17,16 @@ trait IGroupSettings extends js.Object {
   var isExpanded: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGroupSettings {
+  @scala.inline
+  def apply(
+    defaultSort: ngDashTableLib.srcCoreSortingMod.SortDirection = null,
+    isExpanded: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGroupSettings = {
+    val __obj = js.Dynamic.literal()
+    if (defaultSort != null) __obj.updateDynamic("defaultSort")(defaultSort)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    __obj.asInstanceOf[IGroupSettings]
+  }
+}
+

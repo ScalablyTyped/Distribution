@@ -14,3 +14,23 @@ trait ListItem extends Parent {
   var type_ListItem: mdastLib.mdastLibStrings.listItem
 }
 
+object ListItem {
+  @scala.inline
+  def apply(
+    children: js.Array[BlockContent],
+    `type`: mdastLib.mdastLibStrings.listItem,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    data: unistLib.unistMod.Data = null,
+    position: unistLib.unistMod.Position = null,
+    spread: js.UndefOr[scala.Boolean] = js.undefined
+  ): ListItem = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(spread)) __obj.updateDynamic("spread")(spread)
+    __obj.asInstanceOf[ListItem]
+  }
+}
+

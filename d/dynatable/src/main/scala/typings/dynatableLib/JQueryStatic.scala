@@ -15,3 +15,12 @@ trait JQueryStatic extends js.Object {
   def dynatableSetup(options: dynatableLib.JQueryDynatableNs.Options): scala.Unit
 }
 
+object JQueryStatic {
+  @scala.inline
+  def apply(dynatableSetup: js.Function1[dynatableLib.JQueryDynatableNs.Options, scala.Unit]): JQueryStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dynatableSetup")(dynatableSetup)
+    __obj.asInstanceOf[JQueryStatic]
+  }
+}
+

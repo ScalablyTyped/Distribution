@@ -14,3 +14,12 @@ trait Visibility extends js.Object {
   var bVisible: scala.Boolean
 }
 
+object Visibility {
+  @scala.inline
+  def apply(bVisible: scala.Boolean): Visibility = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bVisible")(bVisible)
+    __obj.asInstanceOf[Visibility]
+  }
+}
+

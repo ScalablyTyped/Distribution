@@ -15,3 +15,13 @@ trait SetOptions extends js.Object {
   var muted: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SetOptions {
+  @scala.inline
+  def apply(format: java.lang.String = null, muted: js.UndefOr[scala.Boolean] = js.undefined): SetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    __obj.asInstanceOf[SetOptions]
+  }
+}
+

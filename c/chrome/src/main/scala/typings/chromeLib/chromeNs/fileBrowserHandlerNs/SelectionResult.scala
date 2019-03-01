@@ -12,3 +12,13 @@ trait SelectionResult extends js.Object {
   var success: scala.Boolean
 }
 
+object SelectionResult {
+  @scala.inline
+  def apply(success: scala.Boolean, entry: js.Object = null): SelectionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("success")(success)
+    if (entry != null) __obj.updateDynamic("entry")(entry)
+    __obj.asInstanceOf[SelectionResult]
+  }
+}
+

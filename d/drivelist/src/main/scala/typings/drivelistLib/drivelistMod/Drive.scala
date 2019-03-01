@@ -29,3 +29,52 @@ trait Drive extends js.Object {
   var size: scala.Double | scala.Null
 }
 
+object Drive {
+  @scala.inline
+  def apply(
+    busType: BusType,
+    description: java.lang.String,
+    device: java.lang.String,
+    enumerator: java.lang.String,
+    error: js.Any,
+    isReadOnly: scala.Boolean,
+    isSystem: scala.Boolean,
+    mountpoints: js.Array[MountPoint],
+    raw: java.lang.String,
+    blockSize: scala.Int | scala.Double = null,
+    busVersion: java.lang.String = null,
+    devicePath: java.lang.String = null,
+    isCard: js.UndefOr[scala.Boolean] = js.undefined,
+    isRemovable: js.UndefOr[scala.Boolean] = js.undefined,
+    isSCSI: js.UndefOr[scala.Boolean] = js.undefined,
+    isUAS: js.UndefOr[scala.Boolean] = js.undefined,
+    isUSB: js.UndefOr[scala.Boolean] = js.undefined,
+    isVirtual: js.UndefOr[scala.Boolean] = js.undefined,
+    logicalBlockSize: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null
+  ): Drive = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("busType")(busType)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("device")(device)
+    __obj.updateDynamic("enumerator")(enumerator)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("isReadOnly")(isReadOnly)
+    __obj.updateDynamic("isSystem")(isSystem)
+    __obj.updateDynamic("mountpoints")(mountpoints)
+    __obj.updateDynamic("raw")(raw)
+    if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
+    if (busVersion != null) __obj.updateDynamic("busVersion")(busVersion)
+    if (devicePath != null) __obj.updateDynamic("devicePath")(devicePath)
+    if (!js.isUndefined(isCard)) __obj.updateDynamic("isCard")(isCard)
+    if (!js.isUndefined(isRemovable)) __obj.updateDynamic("isRemovable")(isRemovable)
+    if (!js.isUndefined(isSCSI)) __obj.updateDynamic("isSCSI")(isSCSI)
+    if (!js.isUndefined(isUAS)) __obj.updateDynamic("isUAS")(isUAS)
+    if (!js.isUndefined(isUSB)) __obj.updateDynamic("isUSB")(isUSB)
+    if (!js.isUndefined(isVirtual)) __obj.updateDynamic("isVirtual")(isVirtual)
+    if (logicalBlockSize != null) __obj.updateDynamic("logicalBlockSize")(logicalBlockSize.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Drive]
+  }
+}
+

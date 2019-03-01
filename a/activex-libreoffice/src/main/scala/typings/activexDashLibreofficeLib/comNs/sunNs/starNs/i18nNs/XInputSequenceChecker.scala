@@ -26,3 +26,20 @@ trait XInputSequenceChecker
   ): scala.Boolean
 }
 
+object XInputSequenceChecker {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    checkInputSequence: js.Function4[java.lang.String, scala.Double, java.lang.String, scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XInputSequenceChecker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("checkInputSequence")(checkInputSequence)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XInputSequenceChecker]
+  }
+}
+

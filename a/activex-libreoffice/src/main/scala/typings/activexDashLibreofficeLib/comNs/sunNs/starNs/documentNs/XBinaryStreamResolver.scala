@@ -29,3 +29,24 @@ trait XBinaryStreamResolver
   def resolveOutputStream(aBinaryStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream): java.lang.String
 }
 
+object XBinaryStreamResolver {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createOutputStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream],
+    getInputStream: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    resolveOutputStream: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, java.lang.String]
+  ): XBinaryStreamResolver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createOutputStream")(createOutputStream)
+    __obj.updateDynamic("getInputStream")(getInputStream)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("resolveOutputStream")(resolveOutputStream)
+    __obj.asInstanceOf[XBinaryStreamResolver]
+  }
+}
+

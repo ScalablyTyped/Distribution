@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Buffer
-  extends stdLib.Uint8Array {
+  extends stdLib.Uint8Array
+     with pouchdbDashCoreLib.PouchDBNs.CoreNs._AttachmentData {
   def compare(otherBuffer: Buffer): scala.Double = js.native
   def compare(otherBuffer: Buffer, targetStart: scala.Double): scala.Double = js.native
   def compare(otherBuffer: Buffer, targetStart: scala.Double, targetEnd: scala.Double): scala.Double = js.native

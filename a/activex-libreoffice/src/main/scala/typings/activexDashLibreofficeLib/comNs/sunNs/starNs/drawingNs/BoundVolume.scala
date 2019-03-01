@@ -13,3 +13,13 @@ trait BoundVolume extends js.Object {
   var min: Position3D
 }
 
+object BoundVolume {
+  @scala.inline
+  def apply(max: Position3D, min: Position3D): BoundVolume = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("min")(min)
+    __obj.asInstanceOf[BoundVolume]
+  }
+}
+

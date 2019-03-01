@@ -36,3 +36,26 @@ trait TfvcShelvesetRequestData extends js.Object {
   var owner: java.lang.String
 }
 
+object TfvcShelvesetRequestData {
+  @scala.inline
+  def apply(
+    includeDetails: scala.Boolean,
+    includeLinks: scala.Boolean,
+    includeWorkItems: scala.Boolean,
+    maxChangeCount: scala.Double,
+    maxCommentLength: scala.Double,
+    name: java.lang.String,
+    owner: java.lang.String
+  ): TfvcShelvesetRequestData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("includeDetails")(includeDetails)
+    __obj.updateDynamic("includeLinks")(includeLinks)
+    __obj.updateDynamic("includeWorkItems")(includeWorkItems)
+    __obj.updateDynamic("maxChangeCount")(maxChangeCount)
+    __obj.updateDynamic("maxCommentLength")(maxCommentLength)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[TfvcShelvesetRequestData]
+  }
+}
+

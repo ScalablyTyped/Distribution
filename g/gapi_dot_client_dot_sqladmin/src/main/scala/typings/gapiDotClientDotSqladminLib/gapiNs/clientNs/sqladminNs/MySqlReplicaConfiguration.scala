@@ -34,3 +34,34 @@ trait MySqlReplicaConfiguration extends js.Object {
   var verifyServerCertificate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MySqlReplicaConfiguration {
+  @scala.inline
+  def apply(
+    caCertificate: java.lang.String = null,
+    clientCertificate: java.lang.String = null,
+    clientKey: java.lang.String = null,
+    connectRetryInterval: scala.Int | scala.Double = null,
+    dumpFilePath: java.lang.String = null,
+    kind: java.lang.String = null,
+    masterHeartbeatPeriod: java.lang.String = null,
+    password: java.lang.String = null,
+    sslCipher: java.lang.String = null,
+    username: java.lang.String = null,
+    verifyServerCertificate: js.UndefOr[scala.Boolean] = js.undefined
+  ): MySqlReplicaConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (caCertificate != null) __obj.updateDynamic("caCertificate")(caCertificate)
+    if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate)
+    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey)
+    if (connectRetryInterval != null) __obj.updateDynamic("connectRetryInterval")(connectRetryInterval.asInstanceOf[js.Any])
+    if (dumpFilePath != null) __obj.updateDynamic("dumpFilePath")(dumpFilePath)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (masterHeartbeatPeriod != null) __obj.updateDynamic("masterHeartbeatPeriod")(masterHeartbeatPeriod)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (sslCipher != null) __obj.updateDynamic("sslCipher")(sslCipher)
+    if (username != null) __obj.updateDynamic("username")(username)
+    if (!js.isUndefined(verifyServerCertificate)) __obj.updateDynamic("verifyServerCertificate")(verifyServerCertificate)
+    __obj.asInstanceOf[MySqlReplicaConfiguration]
+  }
+}
+

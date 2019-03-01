@@ -9,3 +9,12 @@ trait Anon_Contents extends js.Object {
   var contents: nodeLib.Buffer
 }
 
+object Anon_Contents {
+  @scala.inline
+  def apply(contents: nodeLib.Buffer): Anon_Contents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contents")(contents)
+    __obj.asInstanceOf[Anon_Contents]
+  }
+}
+

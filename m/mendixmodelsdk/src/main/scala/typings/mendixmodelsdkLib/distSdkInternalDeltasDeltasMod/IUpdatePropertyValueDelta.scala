@@ -5,9 +5,30 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IUpdatePropertyValueDelta extends IElementDelta {
+trait IUpdatePropertyValueDelta
+  extends IElementDelta
+     with Delta {
   var deltaType: mendixmodelsdkLib.mendixmodelsdkLibStrings.UPDATE_PROPERTY_VALUE
   var mutator: Mutator
   var propertyName: java.lang.String
+}
+
+object IUpdatePropertyValueDelta {
+  @scala.inline
+  def apply(
+    deltaType: mendixmodelsdkLib.mendixmodelsdkLibStrings.UPDATE_PROPERTY_VALUE,
+    elementId: java.lang.String,
+    mutator: Mutator,
+    propertyName: java.lang.String,
+    unitId: java.lang.String
+  ): IUpdatePropertyValueDelta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deltaType")(deltaType)
+    __obj.updateDynamic("elementId")(elementId)
+    __obj.updateDynamic("mutator")(mutator)
+    __obj.updateDynamic("propertyName")(propertyName)
+    __obj.updateDynamic("unitId")(unitId)
+    __obj.asInstanceOf[IUpdatePropertyValueDelta]
+  }
 }
 

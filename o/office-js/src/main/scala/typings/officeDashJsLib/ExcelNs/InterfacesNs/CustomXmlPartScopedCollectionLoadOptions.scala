@@ -32,3 +32,18 @@ trait CustomXmlPartScopedCollectionLoadOptions extends js.Object {
   var namespaceUri: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CustomXmlPartScopedCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    namespaceUri: js.UndefOr[scala.Boolean] = js.undefined
+  ): CustomXmlPartScopedCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(namespaceUri)) __obj.updateDynamic("namespaceUri")(namespaceUri)
+    __obj.asInstanceOf[CustomXmlPartScopedCollectionLoadOptions]
+  }
+}
+

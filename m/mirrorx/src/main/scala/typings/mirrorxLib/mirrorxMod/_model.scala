@@ -10,3 +10,13 @@ trait _model extends js.Object {
   var reducers: js.Any
 }
 
+object _model {
+  @scala.inline
+  def apply(name: java.lang.String, reducers: js.Any): _model = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("reducers")(reducers)
+    __obj.asInstanceOf[_model]
+  }
+}
+

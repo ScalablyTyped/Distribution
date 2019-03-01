@@ -31,7 +31,7 @@ object sparqljsLibStrings {
   sealed trait SELECT extends js.Object
   
   @js.native
-  sealed trait `^` extends js.Object
+  sealed trait `_backtick^_backtick` extends js.Object
   
   @js.native
   sealed trait add extends js.Object
@@ -134,7 +134,7 @@ object sparqljsLibStrings {
   @scala.inline
   def SELECT: SELECT = "SELECT".asInstanceOf[SELECT]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   @scala.inline

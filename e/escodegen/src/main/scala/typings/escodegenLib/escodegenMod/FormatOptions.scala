@@ -54,3 +54,38 @@ trait FormatOptions extends js.Object {
   var space: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FormatOptions {
+  @scala.inline
+  def apply(
+    compact: js.UndefOr[scala.Boolean] = js.undefined,
+    escapeless: js.UndefOr[scala.Boolean] = js.undefined,
+    hexadecimal: js.UndefOr[scala.Boolean] = js.undefined,
+    indent: IndentOptions = null,
+    json: js.UndefOr[scala.Boolean] = js.undefined,
+    newline: java.lang.String = null,
+    parentheses: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveBlankLines: js.UndefOr[scala.Boolean] = js.undefined,
+    quotes: java.lang.String = null,
+    renumber: js.UndefOr[scala.Boolean] = js.undefined,
+    safeConcatenation: js.UndefOr[scala.Boolean] = js.undefined,
+    semicolons: js.UndefOr[scala.Boolean] = js.undefined,
+    space: java.lang.String = null
+  ): FormatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(compact)) __obj.updateDynamic("compact")(compact)
+    if (!js.isUndefined(escapeless)) __obj.updateDynamic("escapeless")(escapeless)
+    if (!js.isUndefined(hexadecimal)) __obj.updateDynamic("hexadecimal")(hexadecimal)
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (!js.isUndefined(json)) __obj.updateDynamic("json")(json)
+    if (newline != null) __obj.updateDynamic("newline")(newline)
+    if (!js.isUndefined(parentheses)) __obj.updateDynamic("parentheses")(parentheses)
+    if (!js.isUndefined(preserveBlankLines)) __obj.updateDynamic("preserveBlankLines")(preserveBlankLines)
+    if (quotes != null) __obj.updateDynamic("quotes")(quotes)
+    if (!js.isUndefined(renumber)) __obj.updateDynamic("renumber")(renumber)
+    if (!js.isUndefined(safeConcatenation)) __obj.updateDynamic("safeConcatenation")(safeConcatenation)
+    if (!js.isUndefined(semicolons)) __obj.updateDynamic("semicolons")(semicolons)
+    if (space != null) __obj.updateDynamic("space")(space)
+    __obj.asInstanceOf[FormatOptions]
+  }
+}
+

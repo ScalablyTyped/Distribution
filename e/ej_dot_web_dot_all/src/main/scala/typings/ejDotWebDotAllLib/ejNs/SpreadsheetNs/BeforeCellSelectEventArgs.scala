@@ -23,3 +23,22 @@ trait BeforeCellSelectEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeCellSelectEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currRange: js.Array[_] = null,
+    model: Model = null,
+    prevRange: js.Array[_] = null,
+    `type`: java.lang.String = null
+  ): BeforeCellSelectEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currRange != null) __obj.updateDynamic("currRange")(currRange)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (prevRange != null) __obj.updateDynamic("prevRange")(prevRange)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeCellSelectEventArgs]
+  }
+}
+

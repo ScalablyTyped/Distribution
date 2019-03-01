@@ -76,3 +76,48 @@ trait ProjectArgs extends js.Object {
   val vpcConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnets]] = js.undefined
 }
 
+object ProjectArgs {
+  @scala.inline
+  def apply(
+    artifacts: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionDisabledLocation],
+    environment: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CertificateComputeType],
+    serviceRole: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    source: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthsBuildspecGitCloneDepthInsecureSsl],
+    badgeEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    buildTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    cache: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_LocationType] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    encryptionKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    secondaryArtifacts: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArtifactIdentifierEncryptionDisabled]
+      ]
+    ] = null,
+    secondarySources: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthsBuildspecGitCloneDepth]
+      ]
+    ] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnets] = null
+  ): ProjectArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifacts")(artifacts.asInstanceOf[js.Any])
+    __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    __obj.updateDynamic("serviceRole")(serviceRole.asInstanceOf[js.Any])
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (badgeEnabled != null) __obj.updateDynamic("badgeEnabled")(badgeEnabled.asInstanceOf[js.Any])
+    if (buildTimeout != null) __obj.updateDynamic("buildTimeout")(buildTimeout.asInstanceOf[js.Any])
+    if (cache != null) __obj.updateDynamic("cache")(cache.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (secondaryArtifacts != null) __obj.updateDynamic("secondaryArtifacts")(secondaryArtifacts.asInstanceOf[js.Any])
+    if (secondarySources != null) __obj.updateDynamic("secondarySources")(secondarySources.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProjectArgs]
+  }
+}
+

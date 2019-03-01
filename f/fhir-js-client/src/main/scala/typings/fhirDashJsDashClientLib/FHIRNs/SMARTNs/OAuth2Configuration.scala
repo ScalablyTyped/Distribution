@@ -31,3 +31,22 @@ trait OAuth2Configuration extends js.Object {
   var server: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OAuth2Configuration {
+  @scala.inline
+  def apply(
+    client: OAuth2ClientSettings = null,
+    fake_token_response: js.Any = null,
+    provider: OAuth2Provider = null,
+    response_type: java.lang.String = null,
+    server: java.lang.String = null
+  ): OAuth2Configuration = {
+    val __obj = js.Dynamic.literal()
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (fake_token_response != null) __obj.updateDynamic("fake_token_response")(fake_token_response)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (server != null) __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[OAuth2Configuration]
+  }
+}
+

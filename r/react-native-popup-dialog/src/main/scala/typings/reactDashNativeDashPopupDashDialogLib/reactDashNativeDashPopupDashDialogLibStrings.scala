@@ -7,25 +7,34 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashPopupDashDialogLibStrings {
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.OverlayPointerEventTypes
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.SlideFromTypes
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.AlignTypes
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.AlignTypes
+       with reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.SlideFromTypes
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.OverlayPointerEventTypes
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.AlignTypes
+       with reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.SlideFromTypes
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashNativeDashPopupDashDialogLib.reactDashNativeDashPopupDashDialogMod.SlideFromTypes
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]

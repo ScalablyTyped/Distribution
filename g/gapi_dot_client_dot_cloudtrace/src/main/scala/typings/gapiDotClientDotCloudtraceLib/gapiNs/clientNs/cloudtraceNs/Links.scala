@@ -15,3 +15,13 @@ trait Links extends js.Object {
   var link: js.UndefOr[js.Array[Link]] = js.undefined
 }
 
+object Links {
+  @scala.inline
+  def apply(droppedLinksCount: scala.Int | scala.Double = null, link: js.Array[Link] = null): Links = {
+    val __obj = js.Dynamic.literal()
+    if (droppedLinksCount != null) __obj.updateDynamic("droppedLinksCount")(droppedLinksCount.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link)
+    __obj.asInstanceOf[Links]
+  }
+}
+

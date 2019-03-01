@@ -28,3 +28,28 @@ trait ResizeOptions extends js.Object {
   var withoutEnlargement: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ResizeOptions {
+  @scala.inline
+  def apply(
+    background: Color = null,
+    fastShrinkOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    fit: sharpLib.sharpLibStrings.contain | sharpLib.sharpLibStrings.cover | sharpLib.sharpLibStrings.fill | sharpLib.sharpLibStrings.inside | sharpLib.sharpLibStrings.outside = null,
+    height: scala.Int | scala.Double = null,
+    kernel: sharpLib.sharpLibStrings.nearest | sharpLib.sharpLibStrings.cubic | sharpLib.sharpLibStrings.lanczos2 | sharpLib.sharpLibStrings.lanczos3 = null,
+    position: scala.Double | java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    withoutEnlargement: js.UndefOr[scala.Boolean] = js.undefined
+  ): ResizeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastShrinkOnLoad)) __obj.updateDynamic("fastShrinkOnLoad")(fastShrinkOnLoad)
+    if (fit != null) __obj.updateDynamic("fit")(fit.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (kernel != null) __obj.updateDynamic("kernel")(kernel.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(withoutEnlargement)) __obj.updateDynamic("withoutEnlargement")(withoutEnlargement)
+    __obj.asInstanceOf[ResizeOptions]
+  }
+}
+

@@ -14,3 +14,14 @@ trait Anon_Code extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Code {
+  @scala.inline
+  def apply(code: java.lang.String = null, data: js.Array[Anon_Key] = null, message: java.lang.String = null): Anon_Code = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Anon_Code]
+  }
+}
+

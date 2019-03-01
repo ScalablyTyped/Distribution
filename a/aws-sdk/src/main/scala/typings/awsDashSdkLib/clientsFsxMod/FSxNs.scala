@@ -823,14 +823,28 @@ object FSxNs extends js.Object {
     var WeeklyMaintenanceStartTime: js.UndefOr[WeeklyTime] = js.undefined
   }
   
+  trait _BackupLifecycle extends js.Object
+  
+  trait _BackupType extends js.Object
+  
+  trait _FileSystemLifecycle extends js.Object
+  
+  trait _FileSystemMaintenanceOperation extends js.Object
+  
+  trait _FileSystemType extends js.Object
+  
+  trait _FilterName extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AWSAccountId = java.lang.String
   type ArchivePath = java.lang.String
   type AutomaticBackupRetentionDays = scala.Double
   type BackupId = java.lang.String
   type BackupIds = js.Array[BackupId]
-  type BackupLifecycle = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
-  type BackupType = awsDashSdkLib.awsDashSdkLibStrings.AUTOMATIC | awsDashSdkLib.awsDashSdkLibStrings.USER_INITIATED | java.lang.String
+  type BackupLifecycle = _BackupLifecycle | java.lang.String
+  type BackupType = _BackupType | java.lang.String
   type Backups = js.Array[Backup]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientRequestToken = java.lang.String
@@ -841,12 +855,12 @@ object FSxNs extends js.Object {
   type ErrorMessage = java.lang.String
   type FileSystemId = java.lang.String
   type FileSystemIds = js.Array[FileSystemId]
-  type FileSystemLifecycle = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
-  type FileSystemMaintenanceOperation = awsDashSdkLib.awsDashSdkLibStrings.PATCHING | awsDashSdkLib.awsDashSdkLibStrings.BACKING_UP | java.lang.String
+  type FileSystemLifecycle = _FileSystemLifecycle | java.lang.String
+  type FileSystemMaintenanceOperation = _FileSystemMaintenanceOperation | java.lang.String
   type FileSystemMaintenanceOperations = js.Array[FileSystemMaintenanceOperation]
-  type FileSystemType = awsDashSdkLib.awsDashSdkLibStrings.WINDOWS | awsDashSdkLib.awsDashSdkLibStrings.LUSTRE | java.lang.String
+  type FileSystemType = _FileSystemType | java.lang.String
   type FileSystems = js.Array[FileSystem]
-  type FilterName = awsDashSdkLib.awsDashSdkLibStrings.`file-system-id` | awsDashSdkLib.awsDashSdkLibStrings.`backup-type` | java.lang.String
+  type FilterName = _FilterName | java.lang.String
   type FilterValue = java.lang.String
   type FilterValues = js.Array[FilterValue]
   type Filters = js.Array[Filter]
@@ -871,6 +885,6 @@ object FSxNs extends js.Object {
   type Tags = js.Array[Tag]
   type VpcId = java.lang.String
   type WeeklyTime = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-03-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

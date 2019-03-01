@@ -40,3 +40,28 @@ trait LocationServiceData extends js.Object {
   var serviceOwner: java.lang.String
 }
 
+object LocationServiceData {
+  @scala.inline
+  def apply(
+    accessMappings: js.Array[AccessMapping],
+    clientCacheFresh: scala.Boolean,
+    clientCacheTimeToLive: scala.Double,
+    defaultAccessMappingMoniker: java.lang.String,
+    lastChangeId: scala.Double,
+    lastChangeId64: scala.Double,
+    serviceDefinitions: js.Array[ServiceDefinition],
+    serviceOwner: java.lang.String
+  ): LocationServiceData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessMappings")(accessMappings)
+    __obj.updateDynamic("clientCacheFresh")(clientCacheFresh)
+    __obj.updateDynamic("clientCacheTimeToLive")(clientCacheTimeToLive)
+    __obj.updateDynamic("defaultAccessMappingMoniker")(defaultAccessMappingMoniker)
+    __obj.updateDynamic("lastChangeId")(lastChangeId)
+    __obj.updateDynamic("lastChangeId64")(lastChangeId64)
+    __obj.updateDynamic("serviceDefinitions")(serviceDefinitions)
+    __obj.updateDynamic("serviceOwner")(serviceOwner)
+    __obj.asInstanceOf[LocationServiceData]
+  }
+}
+

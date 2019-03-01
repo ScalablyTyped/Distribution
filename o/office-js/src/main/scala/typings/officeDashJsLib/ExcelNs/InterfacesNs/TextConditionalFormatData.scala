@@ -23,3 +23,16 @@ trait TextConditionalFormatData extends js.Object {
   var rule: js.UndefOr[officeDashJsLib.ExcelNs.ConditionalTextComparisonRule] = js.undefined
 }
 
+object TextConditionalFormatData {
+  @scala.inline
+  def apply(
+    format: ConditionalRangeFormatData = null,
+    rule: officeDashJsLib.ExcelNs.ConditionalTextComparisonRule = null
+  ): TextConditionalFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[TextConditionalFormatData]
+  }
+}
+

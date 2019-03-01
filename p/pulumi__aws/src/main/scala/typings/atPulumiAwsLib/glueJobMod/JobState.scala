@@ -54,3 +54,34 @@ trait JobState extends js.Object {
   val timeout: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object JobState {
+  @scala.inline
+  def apply(
+    allocatedCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    command: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameScriptLocationInput] = null,
+    connections: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    defaultArguments: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    executionProperty: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MaxConcurrentRunsInput] = null,
+    maxRetries: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityConfiguration: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    timeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): JobState = {
+    val __obj = js.Dynamic.literal()
+    if (allocatedCapacity != null) __obj.updateDynamic("allocatedCapacity")(allocatedCapacity.asInstanceOf[js.Any])
+    if (command != null) __obj.updateDynamic("command")(command.asInstanceOf[js.Any])
+    if (connections != null) __obj.updateDynamic("connections")(connections.asInstanceOf[js.Any])
+    if (defaultArguments != null) __obj.updateDynamic("defaultArguments")(defaultArguments.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (executionProperty != null) __obj.updateDynamic("executionProperty")(executionProperty.asInstanceOf[js.Any])
+    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (securityConfiguration != null) __obj.updateDynamic("securityConfiguration")(securityConfiguration.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JobState]
+  }
+}
+

@@ -11,3 +11,20 @@ trait Pbkdf2Params extends Algorithm {
   var salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
 }
 
+object Pbkdf2Params {
+  @scala.inline
+  def apply(
+    hash: HashAlgorithmIdentifier,
+    iterations: scala.Double,
+    name: java.lang.String,
+    salt: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
+  ): Pbkdf2Params = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    __obj.updateDynamic("iterations")(iterations)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("salt")(salt.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Pbkdf2Params]
+  }
+}
+

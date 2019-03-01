@@ -25,3 +25,28 @@ trait GetOptions extends Options {
   var revs_info: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GetOptions {
+  @scala.inline
+  def apply(
+    attachments: js.UndefOr[scala.Boolean] = js.undefined,
+    binary: js.UndefOr[scala.Boolean] = js.undefined,
+    conflicts: js.UndefOr[scala.Boolean] = js.undefined,
+    fetch: pouchdbDashCoreLib.Fetch = null,
+    latest: js.UndefOr[scala.Boolean] = js.undefined,
+    rev: RevisionId = null,
+    revs: js.UndefOr[scala.Boolean] = js.undefined,
+    revs_info: js.UndefOr[scala.Boolean] = js.undefined
+  ): GetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
+    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
+    if (!js.isUndefined(latest)) __obj.updateDynamic("latest")(latest)
+    if (rev != null) __obj.updateDynamic("rev")(rev)
+    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs)
+    if (!js.isUndefined(revs_info)) __obj.updateDynamic("revs_info")(revs_info)
+    __obj.asInstanceOf[GetOptions]
+  }
+}
+

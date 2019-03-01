@@ -25,3 +25,20 @@ trait Anon_Inline extends js.Object {
   var replace: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Inline {
+  @scala.inline
+  def apply(
+    `inline`: scala.Int | scala.Double = null,
+    merge: java.lang.String = null,
+    reduce: java.lang.String = null,
+    replace: java.lang.String = null
+  ): Anon_Inline = {
+    val __obj = js.Dynamic.literal()
+    if (`inline` != null) __obj.updateDynamic("inline")(`inline`.asInstanceOf[js.Any])
+    if (merge != null) __obj.updateDynamic("merge")(merge)
+    if (reduce != null) __obj.updateDynamic("reduce")(reduce)
+    if (replace != null) __obj.updateDynamic("replace")(replace)
+    __obj.asInstanceOf[Anon_Inline]
+  }
+}
+

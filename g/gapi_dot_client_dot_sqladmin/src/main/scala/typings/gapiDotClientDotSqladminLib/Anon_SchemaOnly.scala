@@ -12,3 +12,13 @@ trait Anon_SchemaOnly extends js.Object {
   var tables: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_SchemaOnly {
+  @scala.inline
+  def apply(schemaOnly: js.UndefOr[scala.Boolean] = js.undefined, tables: js.Array[java.lang.String] = null): Anon_SchemaOnly = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(schemaOnly)) __obj.updateDynamic("schemaOnly")(schemaOnly)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    __obj.asInstanceOf[Anon_SchemaOnly]
+  }
+}
+

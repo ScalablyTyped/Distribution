@@ -16,7 +16,8 @@ object ckeditorLibStrings {
   sealed trait html extends js.Object
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends ckeditorLib.CKEDITORNs.pluginsNs.notificationNs.`type`
   
   @js.native
   sealed trait left extends js.Object
@@ -25,7 +26,8 @@ object ckeditorLibStrings {
   sealed trait ltr extends js.Object
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress
+    extends ckeditorLib.CKEDITORNs.pluginsNs.notificationNs.`type`
   
   @js.native
   sealed trait right extends js.Object
@@ -34,7 +36,8 @@ object ckeditorLibStrings {
   sealed trait rtl extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends ckeditorLib.CKEDITORNs.pluginsNs.notificationNs.`type`
   
   @js.native
   sealed trait text extends js.Object
@@ -46,7 +49,8 @@ object ckeditorLibStrings {
   sealed trait vertical extends js.Object
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends ckeditorLib.CKEDITORNs.pluginsNs.notificationNs.`type`
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

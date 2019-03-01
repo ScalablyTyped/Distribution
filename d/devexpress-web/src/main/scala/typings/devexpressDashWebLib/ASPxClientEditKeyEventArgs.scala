@@ -16,3 +16,12 @@ trait ASPxClientEditKeyEventArgs extends ASPxClientEventArgs {
   var htmlEvent: js.Object
 }
 
+object ASPxClientEditKeyEventArgs {
+  @scala.inline
+  def apply(htmlEvent: js.Object): ASPxClientEditKeyEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.asInstanceOf[ASPxClientEditKeyEventArgs]
+  }
+}
+

@@ -24,3 +24,23 @@ trait ChooseAlipayContactOptions
   def success_MChooseAlipayContactOptions(result: aliDashAppLib.Anon_Avatar): scala.Unit
 }
 
+object ChooseAlipayContactOptions {
+  @scala.inline
+  def apply(
+    count: scala.Double,
+    success: js.Function1[aliDashAppLib.Anon_Avatar, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[
+      /* error */ aliDashAppLib.aliDashAppLibNumbers.`10` | aliDashAppLib.aliDashAppLibNumbers.`11`, 
+      scala.Unit
+    ] = null
+  ): ChooseAlipayContactOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[ChooseAlipayContactOptions]
+  }
+}
+

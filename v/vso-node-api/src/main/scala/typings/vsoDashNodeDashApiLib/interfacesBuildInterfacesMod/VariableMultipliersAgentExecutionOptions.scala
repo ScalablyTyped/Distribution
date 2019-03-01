@@ -17,3 +17,19 @@ trait VariableMultipliersAgentExecutionOptions extends AgentTargetExecutionOptio
   var multipliers: js.Array[java.lang.String]
 }
 
+object VariableMultipliersAgentExecutionOptions {
+  @scala.inline
+  def apply(
+    continueOnError: scala.Boolean,
+    maxConcurrency: scala.Double,
+    multipliers: js.Array[java.lang.String],
+    `type`: scala.Double
+  ): VariableMultipliersAgentExecutionOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("continueOnError")(continueOnError)
+    __obj.updateDynamic("maxConcurrency")(maxConcurrency)
+    __obj.updateDynamic("multipliers")(multipliers)
+    __obj.asInstanceOf[VariableMultipliersAgentExecutionOptions]
+  }
+}
+

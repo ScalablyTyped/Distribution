@@ -20,3 +20,42 @@ trait LandingPagesResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltCampaignId): gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
 }
 
+object LandingPagesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCampaignId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCampaignId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LandingPagesListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCampaignId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LandingPage]
+    ]
+  ): LandingPagesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[LandingPagesResource]
+  }
+}
+

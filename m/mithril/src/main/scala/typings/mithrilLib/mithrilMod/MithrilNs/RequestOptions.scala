@@ -46,3 +46,44 @@ trait RequestOptions[T] extends js.Object {
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RequestOptions {
+  @scala.inline
+  def apply[T](
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    background: js.UndefOr[scala.Boolean] = js.undefined,
+    config: js.Function2[
+      /* xhr */ stdLib.XMLHttpRequest, 
+      RequestOptions[T], 
+      stdLib.XMLHttpRequest | scala.Unit
+    ] = null,
+    data: js.Any = null,
+    deserialize: js.Function1[/* data */ java.lang.String, T] = null,
+    extract: js.Function2[/* xhr */ stdLib.XMLHttpRequest, RequestOptions[T], T] = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    method: java.lang.String = null,
+    password: java.lang.String = null,
+    serialize: js.Function1[/* data */ js.Any, _] = null,
+    `type`: org.scalablytyped.runtime.Instantiable1[/* o */ js.Any, js.Any] = null,
+    useBody: js.UndefOr[scala.Boolean] = js.undefined,
+    user: java.lang.String = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): RequestOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (!js.isUndefined(background)) __obj.updateDynamic("background")(background)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (deserialize != null) __obj.updateDynamic("deserialize")(deserialize)
+    if (extract != null) __obj.updateDynamic("extract")(extract)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (serialize != null) __obj.updateDynamic("serialize")(serialize)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(useBody)) __obj.updateDynamic("useBody")(useBody)
+    if (user != null) __obj.updateDynamic("user")(user)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[RequestOptions[T]]
+  }
+}
+

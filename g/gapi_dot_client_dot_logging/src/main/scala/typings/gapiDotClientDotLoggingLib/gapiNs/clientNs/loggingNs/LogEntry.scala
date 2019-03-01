@@ -63,3 +63,40 @@ trait LogEntry extends js.Object {
   var trace: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogEntry {
+  @scala.inline
+  def apply(
+    httpRequest: HttpRequest = null,
+    insertId: java.lang.String = null,
+    jsonPayload: stdLib.Record[java.lang.String, _] = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    logName: java.lang.String = null,
+    operation: LogEntryOperation = null,
+    protoPayload: stdLib.Record[java.lang.String, _] = null,
+    receiveTimestamp: java.lang.String = null,
+    resource: MonitoredResource = null,
+    severity: java.lang.String = null,
+    sourceLocation: LogEntrySourceLocation = null,
+    textPayload: java.lang.String = null,
+    timestamp: java.lang.String = null,
+    trace: java.lang.String = null
+  ): LogEntry = {
+    val __obj = js.Dynamic.literal()
+    if (httpRequest != null) __obj.updateDynamic("httpRequest")(httpRequest)
+    if (insertId != null) __obj.updateDynamic("insertId")(insertId)
+    if (jsonPayload != null) __obj.updateDynamic("jsonPayload")(jsonPayload)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (logName != null) __obj.updateDynamic("logName")(logName)
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (protoPayload != null) __obj.updateDynamic("protoPayload")(protoPayload)
+    if (receiveTimestamp != null) __obj.updateDynamic("receiveTimestamp")(receiveTimestamp)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (sourceLocation != null) __obj.updateDynamic("sourceLocation")(sourceLocation)
+    if (textPayload != null) __obj.updateDynamic("textPayload")(textPayload)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (trace != null) __obj.updateDynamic("trace")(trace)
+    __obj.asInstanceOf[LogEntry]
+  }
+}
+

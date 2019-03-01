@@ -44,3 +44,30 @@ trait RuntimeCacheOptions extends js.Object {
   var plugins: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object RuntimeCacheOptions {
+  @scala.inline
+  def apply(
+    backgroundSync: workboxDashWebpackDashPluginLib.Anon_Name = null,
+    broadcastUpdate: workboxDashWebpackDashPluginLib.Anon_ChannelName = null,
+    cacheName: java.lang.String = null,
+    cacheableResponse: workboxDashWebpackDashPluginLib.Anon_Header = null,
+    expiration: workboxDashWebpackDashPluginLib.Anon_MaxAgeSeconds = null,
+    fetchOptions: js.Any = null,
+    matchOptions: js.Any = null,
+    networkTimeoutSeconds: scala.Int | scala.Double = null,
+    plugins: js.Array[_] = null
+  ): RuntimeCacheOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundSync != null) __obj.updateDynamic("backgroundSync")(backgroundSync)
+    if (broadcastUpdate != null) __obj.updateDynamic("broadcastUpdate")(broadcastUpdate)
+    if (cacheName != null) __obj.updateDynamic("cacheName")(cacheName)
+    if (cacheableResponse != null) __obj.updateDynamic("cacheableResponse")(cacheableResponse)
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
+    if (fetchOptions != null) __obj.updateDynamic("fetchOptions")(fetchOptions)
+    if (matchOptions != null) __obj.updateDynamic("matchOptions")(matchOptions)
+    if (networkTimeoutSeconds != null) __obj.updateDynamic("networkTimeoutSeconds")(networkTimeoutSeconds.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    __obj.asInstanceOf[RuntimeCacheOptions]
+  }
+}
+

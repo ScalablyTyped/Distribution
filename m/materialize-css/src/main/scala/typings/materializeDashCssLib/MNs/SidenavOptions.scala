@@ -47,3 +47,28 @@ trait SidenavOptions extends js.Object {
   def onOpenStart(`this`: Sidenav, elem: stdLib.Element): scala.Unit
 }
 
+object SidenavOptions {
+  @scala.inline
+  def apply(
+    draggable: scala.Boolean,
+    edge: materializeDashCssLib.materializeDashCssLibStrings.left | materializeDashCssLib.materializeDashCssLibStrings.right,
+    inDuration: scala.Double,
+    onCloseEnd: js.Function2[Sidenav, stdLib.Element, scala.Unit],
+    onCloseStart: js.Function2[Sidenav, stdLib.Element, scala.Unit],
+    onOpenEnd: js.Function2[Sidenav, stdLib.Element, scala.Unit],
+    onOpenStart: js.Function2[Sidenav, stdLib.Element, scala.Unit],
+    outDuration: scala.Double
+  ): SidenavOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("draggable")(draggable)
+    __obj.updateDynamic("edge")(edge.asInstanceOf[js.Any])
+    __obj.updateDynamic("inDuration")(inDuration)
+    __obj.updateDynamic("onCloseEnd")(onCloseEnd)
+    __obj.updateDynamic("onCloseStart")(onCloseStart)
+    __obj.updateDynamic("onOpenEnd")(onOpenEnd)
+    __obj.updateDynamic("onOpenStart")(onOpenStart)
+    __obj.updateDynamic("outDuration")(outDuration)
+    __obj.asInstanceOf[SidenavOptions]
+  }
+}
+

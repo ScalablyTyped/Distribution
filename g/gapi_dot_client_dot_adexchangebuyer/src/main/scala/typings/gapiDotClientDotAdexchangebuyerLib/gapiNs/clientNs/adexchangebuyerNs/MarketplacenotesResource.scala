@@ -12,3 +12,22 @@ trait MarketplacenotesResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[GetOrderNotesResponse]
 }
 
+object MarketplacenotesResource {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AddOrderNotesResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GetOrderNotesResponse]
+    ]
+  ): MarketplacenotesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[MarketplacenotesResource]
+  }
+}
+

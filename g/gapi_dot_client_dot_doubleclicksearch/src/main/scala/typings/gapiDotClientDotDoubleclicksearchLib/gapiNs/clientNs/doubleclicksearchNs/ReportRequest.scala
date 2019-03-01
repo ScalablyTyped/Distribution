@@ -55,3 +55,40 @@ trait ReportRequest extends js.Object {
   var verifySingleTimeZone: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReportRequest {
+  @scala.inline
+  def apply(
+    columns: js.Array[ReportApiColumnSpec] = null,
+    downloadFormat: java.lang.String = null,
+    filters: js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_Column] = null,
+    includeDeletedEntities: js.UndefOr[scala.Boolean] = js.undefined,
+    includeRemovedEntities: js.UndefOr[scala.Boolean] = js.undefined,
+    maxRowsPerFile: scala.Int | scala.Double = null,
+    orderBy: js.Array[gapiDotClientDotDoubleclicksearchLib.Anon_ColumnSortOrder] = null,
+    reportScope: gapiDotClientDotDoubleclicksearchLib.Anon_AdGroupId = null,
+    reportType: java.lang.String = null,
+    rowCount: scala.Int | scala.Double = null,
+    startRow: scala.Int | scala.Double = null,
+    statisticsCurrency: java.lang.String = null,
+    timeRange: gapiDotClientDotDoubleclicksearchLib.Anon_ChangedAttributesSinceTimestamp = null,
+    verifySingleTimeZone: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReportRequest = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (downloadFormat != null) __obj.updateDynamic("downloadFormat")(downloadFormat)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(includeDeletedEntities)) __obj.updateDynamic("includeDeletedEntities")(includeDeletedEntities)
+    if (!js.isUndefined(includeRemovedEntities)) __obj.updateDynamic("includeRemovedEntities")(includeRemovedEntities)
+    if (maxRowsPerFile != null) __obj.updateDynamic("maxRowsPerFile")(maxRowsPerFile.asInstanceOf[js.Any])
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (reportScope != null) __obj.updateDynamic("reportScope")(reportScope)
+    if (reportType != null) __obj.updateDynamic("reportType")(reportType)
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (statisticsCurrency != null) __obj.updateDynamic("statisticsCurrency")(statisticsCurrency)
+    if (timeRange != null) __obj.updateDynamic("timeRange")(timeRange)
+    if (!js.isUndefined(verifySingleTimeZone)) __obj.updateDynamic("verifySingleTimeZone")(verifySingleTimeZone)
+    __obj.asInstanceOf[ReportRequest]
+  }
+}
+

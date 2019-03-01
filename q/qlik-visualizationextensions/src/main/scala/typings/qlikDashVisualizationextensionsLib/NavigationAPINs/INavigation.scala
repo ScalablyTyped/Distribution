@@ -80,3 +80,34 @@ trait INavigation extends js.Object {
   def switchMode(mode: NavigationModeType): NavigationResult
 }
 
+object INavigation {
+  @scala.inline
+  def apply(
+    analysis: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.analysis,
+    edit: qlikDashVisualizationextensionsLib.qlikDashVisualizationextensionsLibStrings.edit,
+    getCurrentSheetId: js.Function0[NavigationResult],
+    getMode: js.Function0[java.lang.String],
+    gotoSheet: js.Function1[java.lang.String, NavigationResult],
+    gotoStory: js.Function1[java.lang.String, NavigationResult],
+    isModeAllowed: js.Function1[NavigationModeType, scala.Boolean],
+    nextSheet: js.Function0[NavigationResult],
+    prevSheet: js.Function0[NavigationResult],
+    setMode: js.Function1[java.lang.String, NavigationResult],
+    switchMode: js.Function1[NavigationModeType, NavigationResult]
+  ): INavigation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("analysis")(analysis)
+    __obj.updateDynamic("edit")(edit)
+    __obj.updateDynamic("getCurrentSheetId")(getCurrentSheetId)
+    __obj.updateDynamic("getMode")(getMode)
+    __obj.updateDynamic("gotoSheet")(gotoSheet)
+    __obj.updateDynamic("gotoStory")(gotoStory)
+    __obj.updateDynamic("isModeAllowed")(isModeAllowed)
+    __obj.updateDynamic("nextSheet")(nextSheet)
+    __obj.updateDynamic("prevSheet")(prevSheet)
+    __obj.updateDynamic("setMode")(setMode)
+    __obj.updateDynamic("switchMode")(switchMode)
+    __obj.asInstanceOf[INavigation]
+  }
+}
+

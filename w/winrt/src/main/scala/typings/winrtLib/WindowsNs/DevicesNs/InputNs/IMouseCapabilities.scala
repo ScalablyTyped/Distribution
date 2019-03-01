@@ -13,3 +13,22 @@ trait IMouseCapabilities extends js.Object {
   var verticalWheelPresent: scala.Double
 }
 
+object IMouseCapabilities {
+  @scala.inline
+  def apply(
+    horizontalWheelPresent: scala.Double,
+    mousePresent: scala.Double,
+    numberOfButtons: scala.Double,
+    swapButtons: scala.Double,
+    verticalWheelPresent: scala.Double
+  ): IMouseCapabilities = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("horizontalWheelPresent")(horizontalWheelPresent)
+    __obj.updateDynamic("mousePresent")(mousePresent)
+    __obj.updateDynamic("numberOfButtons")(numberOfButtons)
+    __obj.updateDynamic("swapButtons")(swapButtons)
+    __obj.updateDynamic("verticalWheelPresent")(verticalWheelPresent)
+    __obj.asInstanceOf[IMouseCapabilities]
+  }
+}
+

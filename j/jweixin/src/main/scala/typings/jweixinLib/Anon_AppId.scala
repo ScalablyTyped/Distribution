@@ -19,3 +19,24 @@ trait Anon_AppId extends js.Object {
   var timestamp: scala.Double
 }
 
+object Anon_AppId {
+  @scala.inline
+  def apply(
+    appId: java.lang.String,
+    jsApiList: jweixinLib.jweixinMod.wxNs.jsApiList,
+    nonceStr: java.lang.String,
+    signature: java.lang.String,
+    timestamp: scala.Double,
+    debug: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AppId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appId")(appId)
+    __obj.updateDynamic("jsApiList")(jsApiList)
+    __obj.updateDynamic("nonceStr")(nonceStr)
+    __obj.updateDynamic("signature")(signature)
+    __obj.updateDynamic("timestamp")(timestamp)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    __obj.asInstanceOf[Anon_AppId]
+  }
+}
+

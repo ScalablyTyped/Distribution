@@ -22,3 +22,21 @@ trait IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    beforeSend: js.Function = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[IgPivotDataSelectorDataSourceOptionsXmlaOptionsRequestOptions]
+  }
+}
+

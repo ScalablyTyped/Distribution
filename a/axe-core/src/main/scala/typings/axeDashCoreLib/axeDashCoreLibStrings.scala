@@ -7,58 +7,76 @@ import scala.scalajs.js.annotation._
 
 object axeDashCoreLibStrings {
   @js.native
-  sealed trait `best-practice` extends js.Object
+  sealed trait `best-practice`
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.TagValue
   
   @js.native
-  sealed trait critical extends js.Object
+  sealed trait critical
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.ImpactValue
   
   @js.native
-  sealed trait inapplicable extends js.Object
+  sealed trait inapplicable
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.resultGroups
   
   @js.native
-  sealed trait incomplete extends js.Object
+  sealed trait incomplete
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.resultGroups
   
   @js.native
-  sealed trait minor extends js.Object
+  sealed trait minor
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.ImpactValue
   
   @js.native
-  sealed trait moderate extends js.Object
+  sealed trait moderate
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.ImpactValue
   
   @js.native
-  sealed trait passes extends js.Object
+  sealed trait passes
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.resultGroups
   
   @js.native
-  sealed trait rule extends js.Object
+  sealed trait rule
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.RunOnlyType
   
   @js.native
-  sealed trait rules extends js.Object
+  sealed trait rules
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.RunOnlyType
   
   @js.native
-  sealed trait section508 extends js.Object
+  sealed trait section508
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.TagValue
   
   @js.native
-  sealed trait serious extends js.Object
+  sealed trait serious
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.ImpactValue
   
   @js.native
-  sealed trait tag extends js.Object
+  sealed trait tag
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.RunOnlyType
   
   @js.native
-  sealed trait tags extends js.Object
+  sealed trait tags
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.RunOnlyType
   
   @js.native
-  sealed trait v1 extends js.Object
+  sealed trait v1
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.ReporterVersion
   
   @js.native
-  sealed trait v2 extends js.Object
+  sealed trait v2
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.ReporterVersion
   
   @js.native
-  sealed trait violations extends js.Object
+  sealed trait violations
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.resultGroups
   
   @js.native
-  sealed trait wcag2a extends js.Object
+  sealed trait wcag2a
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.TagValue
   
   @js.native
-  sealed trait wcag2aa extends js.Object
+  sealed trait wcag2aa
+    extends axeDashCoreLib.axeDashCoreMod.axeNs.TagValue
   
   @scala.inline
   def `best-practice`: `best-practice` = "best-practice".asInstanceOf[`best-practice`]

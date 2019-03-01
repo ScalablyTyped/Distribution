@@ -34,3 +34,24 @@ trait WorkspaceClientCapabilities extends js.Object {
   var workspaceEdit: js.UndefOr[vscodeDashLanguageserverDashProtocolLib.Anon_DocumentChanges] = js.undefined
 }
 
+object WorkspaceClientCapabilities {
+  @scala.inline
+  def apply(
+    applyEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    didChangeConfiguration: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    didChangeWatchedFiles: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    executeCommand: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistration = null,
+    symbol: vscodeDashLanguageserverDashProtocolLib.Anon_DynamicRegistrationSymbolKind = null,
+    workspaceEdit: vscodeDashLanguageserverDashProtocolLib.Anon_DocumentChanges = null
+  ): WorkspaceClientCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(applyEdit)) __obj.updateDynamic("applyEdit")(applyEdit)
+    if (didChangeConfiguration != null) __obj.updateDynamic("didChangeConfiguration")(didChangeConfiguration)
+    if (didChangeWatchedFiles != null) __obj.updateDynamic("didChangeWatchedFiles")(didChangeWatchedFiles)
+    if (executeCommand != null) __obj.updateDynamic("executeCommand")(executeCommand)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (workspaceEdit != null) __obj.updateDynamic("workspaceEdit")(workspaceEdit)
+    __obj.asInstanceOf[WorkspaceClientCapabilities]
+  }
+}
+

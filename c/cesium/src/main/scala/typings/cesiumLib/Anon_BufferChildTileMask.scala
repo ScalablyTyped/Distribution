@@ -14,3 +14,24 @@ trait Anon_BufferChildTileMask extends js.Object {
   var negativeElevationThreshold: scala.Double
 }
 
+object Anon_BufferChildTileMask {
+  @scala.inline
+  def apply(
+    buffer: stdLib.ArrayBuffer,
+    negativeAltitudeExponentBias: scala.Double,
+    negativeElevationThreshold: scala.Double,
+    childTileMask: scala.Int | scala.Double = null,
+    createdByUpsampling: js.UndefOr[scala.Boolean] = js.undefined,
+    credits: js.Array[cesiumLib.cesiumMod.CesiumNs.Credit] = null
+  ): Anon_BufferChildTileMask = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buffer")(buffer)
+    __obj.updateDynamic("negativeAltitudeExponentBias")(negativeAltitudeExponentBias)
+    __obj.updateDynamic("negativeElevationThreshold")(negativeElevationThreshold)
+    if (childTileMask != null) __obj.updateDynamic("childTileMask")(childTileMask.asInstanceOf[js.Any])
+    if (!js.isUndefined(createdByUpsampling)) __obj.updateDynamic("createdByUpsampling")(createdByUpsampling)
+    if (credits != null) __obj.updateDynamic("credits")(credits)
+    __obj.asInstanceOf[Anon_BufferChildTileMask]
+  }
+}
+

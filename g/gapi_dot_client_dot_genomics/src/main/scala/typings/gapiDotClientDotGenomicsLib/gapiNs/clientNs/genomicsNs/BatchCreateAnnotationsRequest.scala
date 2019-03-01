@@ -23,3 +23,13 @@ trait BatchCreateAnnotationsRequest extends js.Object {
   var requestId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BatchCreateAnnotationsRequest {
+  @scala.inline
+  def apply(annotations: js.Array[Annotation] = null, requestId: java.lang.String = null): BatchCreateAnnotationsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    __obj.asInstanceOf[BatchCreateAnnotationsRequest]
+  }
+}
+

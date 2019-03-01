@@ -10,3 +10,18 @@ trait EventException
   var code: scala.Double
 }
 
+object EventException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    code: scala.Double
+  ): EventException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("code")(code)
+    __obj.asInstanceOf[EventException]
+  }
+}
+

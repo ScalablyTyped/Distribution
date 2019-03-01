@@ -10,3 +10,13 @@ trait PatchUserParams[T] extends js.Object {
   var metadata: T
 }
 
+object PatchUserParams {
+  @scala.inline
+  def apply[T](id: java.lang.String, metadata: T): PatchUserParams[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PatchUserParams[T]]
+  }
+}
+

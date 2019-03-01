@@ -16,3 +16,28 @@ trait Dopri extends js.Object {
   def at(x: numericLib.Vector): numericLib.Vector | numericLib.Matrix
 }
 
+object Dopri {
+  @scala.inline
+  def apply(
+    at: js.Function1[numericLib.Vector, numericLib.Vector | numericLib.Matrix],
+    f: numericLib.Vector,
+    iterations: scala.Double,
+    msg: java.lang.String,
+    x: numericLib.Vector,
+    y: numericLib.Vector,
+    ymid: numericLib.Vector,
+    events: scala.Boolean | numericLib.VectorBoolean = null
+  ): Dopri = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("at")(at)
+    __obj.updateDynamic("f")(f)
+    __obj.updateDynamic("iterations")(iterations)
+    __obj.updateDynamic("msg")(msg)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("ymid")(ymid)
+    if (events != null) __obj.updateDynamic("events")(events.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Dopri]
+  }
+}
+

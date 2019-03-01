@@ -20,3 +20,18 @@ trait InputValue extends js.Object {
   var value: java.lang.String
 }
 
+object InputValue {
+  @scala.inline
+  def apply(
+    data: org.scalablytyped.runtime.StringDictionary[js.Any],
+    displayValue: java.lang.String,
+    value: java.lang.String
+  ): InputValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("displayValue")(displayValue)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[InputValue]
+  }
+}
+

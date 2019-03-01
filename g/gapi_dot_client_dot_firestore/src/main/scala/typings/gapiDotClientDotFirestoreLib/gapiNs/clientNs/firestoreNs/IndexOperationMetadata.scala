@@ -30,3 +30,24 @@ trait IndexOperationMetadata extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IndexOperationMetadata {
+  @scala.inline
+  def apply(
+    cancelled: js.UndefOr[scala.Boolean] = js.undefined,
+    documentProgress: Progress = null,
+    endTime: java.lang.String = null,
+    index: java.lang.String = null,
+    operationType: java.lang.String = null,
+    startTime: java.lang.String = null
+  ): IndexOperationMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancelled)) __obj.updateDynamic("cancelled")(cancelled)
+    if (documentProgress != null) __obj.updateDynamic("documentProgress")(documentProgress)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[IndexOperationMetadata]
+  }
+}
+

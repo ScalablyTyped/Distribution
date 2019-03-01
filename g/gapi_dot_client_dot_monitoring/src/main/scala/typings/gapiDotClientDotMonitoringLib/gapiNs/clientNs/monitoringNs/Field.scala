@@ -28,3 +28,32 @@ trait Field extends js.Object {
   var typeUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Field {
+  @scala.inline
+  def apply(
+    cardinality: java.lang.String = null,
+    defaultValue: java.lang.String = null,
+    jsonName: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    number: scala.Int | scala.Double = null,
+    oneofIndex: scala.Int | scala.Double = null,
+    options: js.Array[Option] = null,
+    packed: js.UndefOr[scala.Boolean] = js.undefined,
+    typeUrl: java.lang.String = null
+  ): Field = {
+    val __obj = js.Dynamic.literal()
+    if (cardinality != null) __obj.updateDynamic("cardinality")(cardinality)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (jsonName != null) __obj.updateDynamic("jsonName")(jsonName)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    if (oneofIndex != null) __obj.updateDynamic("oneofIndex")(oneofIndex.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(packed)) __obj.updateDynamic("packed")(packed)
+    if (typeUrl != null) __obj.updateDynamic("typeUrl")(typeUrl)
+    __obj.asInstanceOf[Field]
+  }
+}
+

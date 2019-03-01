@@ -31,3 +31,20 @@ trait CodePathOptions extends js.Object {
   var logResource: js.UndefOr[atPulumiPulumiLib.resourceMod.Resource] = js.undefined
 }
 
+object CodePathOptions {
+  @scala.inline
+  def apply(
+    extraExcludePackages: js.Array[java.lang.String] = null,
+    extraIncludePackages: js.Array[java.lang.String] = null,
+    extraIncludePaths: js.Array[java.lang.String] = null,
+    logResource: atPulumiPulumiLib.resourceMod.Resource = null
+  ): CodePathOptions = {
+    val __obj = js.Dynamic.literal()
+    if (extraExcludePackages != null) __obj.updateDynamic("extraExcludePackages")(extraExcludePackages)
+    if (extraIncludePackages != null) __obj.updateDynamic("extraIncludePackages")(extraIncludePackages)
+    if (extraIncludePaths != null) __obj.updateDynamic("extraIncludePaths")(extraIncludePaths)
+    if (logResource != null) __obj.updateDynamic("logResource")(logResource)
+    __obj.asInstanceOf[CodePathOptions]
+  }
+}
+

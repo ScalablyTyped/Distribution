@@ -10,3 +10,13 @@ trait args extends js.Object {
   var targets: js.Array[java.lang.String]
 }
 
+object args {
+  @scala.inline
+  def apply(options: org.scalablytyped.runtime.StringDictionary[js.Any], targets: js.Array[java.lang.String]): args = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("targets")(targets)
+    __obj.asInstanceOf[args]
+  }
+}
+

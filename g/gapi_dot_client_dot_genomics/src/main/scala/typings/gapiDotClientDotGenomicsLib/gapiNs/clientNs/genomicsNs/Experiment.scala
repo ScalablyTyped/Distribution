@@ -28,3 +28,20 @@ trait Experiment extends js.Object {
   var sequencingCenter: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Experiment {
+  @scala.inline
+  def apply(
+    instrumentModel: java.lang.String = null,
+    libraryId: java.lang.String = null,
+    platformUnit: java.lang.String = null,
+    sequencingCenter: java.lang.String = null
+  ): Experiment = {
+    val __obj = js.Dynamic.literal()
+    if (instrumentModel != null) __obj.updateDynamic("instrumentModel")(instrumentModel)
+    if (libraryId != null) __obj.updateDynamic("libraryId")(libraryId)
+    if (platformUnit != null) __obj.updateDynamic("platformUnit")(platformUnit)
+    if (sequencingCenter != null) __obj.updateDynamic("sequencingCenter")(sequencingCenter)
+    __obj.asInstanceOf[Experiment]
+  }
+}
+

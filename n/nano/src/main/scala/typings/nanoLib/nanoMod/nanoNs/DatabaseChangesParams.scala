@@ -58,3 +58,40 @@ trait DatabaseChangesParams extends js.Object {
   var view: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DatabaseChangesParams {
+  @scala.inline
+  def apply(
+    att_encoding_info: js.UndefOr[scala.Boolean] = js.undefined,
+    attachments: js.UndefOr[scala.Boolean] = js.undefined,
+    conflicts: js.UndefOr[scala.Boolean] = js.undefined,
+    descending: js.UndefOr[scala.Boolean] = js.undefined,
+    doc_ids: js.Array[java.lang.String] = null,
+    feed: nanoLib.nanoLibStrings.normal | nanoLib.nanoLibStrings.longpoll | nanoLib.nanoLibStrings.continuous | nanoLib.nanoLibStrings.eventsource = null,
+    filter: java.lang.String = null,
+    heartbeat: scala.Int | scala.Double = null,
+    include_docs: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null,
+    since: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    view: java.lang.String = null
+  ): DatabaseChangesParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(att_encoding_info)) __obj.updateDynamic("att_encoding_info")(att_encoding_info)
+    if (!js.isUndefined(attachments)) __obj.updateDynamic("attachments")(attachments)
+    if (!js.isUndefined(conflicts)) __obj.updateDynamic("conflicts")(conflicts)
+    if (!js.isUndefined(descending)) __obj.updateDynamic("descending")(descending)
+    if (doc_ids != null) __obj.updateDynamic("doc_ids")(doc_ids)
+    if (feed != null) __obj.updateDynamic("feed")(feed.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (heartbeat != null) __obj.updateDynamic("heartbeat")(heartbeat.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[DatabaseChangesParams]
+  }
+}
+

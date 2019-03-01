@@ -27,3 +27,22 @@ trait ListenResponse extends js.Object {
   var targetChange: js.UndefOr[TargetChange] = js.undefined
 }
 
+object ListenResponse {
+  @scala.inline
+  def apply(
+    documentChange: DocumentChange = null,
+    documentDelete: DocumentDelete = null,
+    documentRemove: DocumentRemove = null,
+    filter: ExistenceFilter = null,
+    targetChange: TargetChange = null
+  ): ListenResponse = {
+    val __obj = js.Dynamic.literal()
+    if (documentChange != null) __obj.updateDynamic("documentChange")(documentChange)
+    if (documentDelete != null) __obj.updateDynamic("documentDelete")(documentDelete)
+    if (documentRemove != null) __obj.updateDynamic("documentRemove")(documentRemove)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (targetChange != null) __obj.updateDynamic("targetChange")(targetChange)
+    __obj.asInstanceOf[ListenResponse]
+  }
+}
+

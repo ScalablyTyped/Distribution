@@ -54,3 +54,22 @@ trait BeaconAttachment extends js.Object {
   var namespacedType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeaconAttachment {
+  @scala.inline
+  def apply(
+    attachmentName: java.lang.String = null,
+    creationTimeMs: java.lang.String = null,
+    data: java.lang.String = null,
+    maxDistanceMeters: scala.Int | scala.Double = null,
+    namespacedType: java.lang.String = null
+  ): BeaconAttachment = {
+    val __obj = js.Dynamic.literal()
+    if (attachmentName != null) __obj.updateDynamic("attachmentName")(attachmentName)
+    if (creationTimeMs != null) __obj.updateDynamic("creationTimeMs")(creationTimeMs)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (maxDistanceMeters != null) __obj.updateDynamic("maxDistanceMeters")(maxDistanceMeters.asInstanceOf[js.Any])
+    if (namespacedType != null) __obj.updateDynamic("namespacedType")(namespacedType)
+    __obj.asInstanceOf[BeaconAttachment]
+  }
+}
+

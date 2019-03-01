@@ -109,3 +109,42 @@ trait CompletionItem extends js.Object {
   var textEdit: js.UndefOr[TextEdit] = js.undefined
 }
 
+object CompletionItem {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    additionalTextEdits: js.Array[TextEdit] = null,
+    command: Command = null,
+    commitCharacters: js.Array[java.lang.String] = null,
+    data: js.Any = null,
+    deprecated: js.UndefOr[scala.Boolean] = js.undefined,
+    detail: java.lang.String = null,
+    documentation: java.lang.String | MarkupContent = null,
+    filterText: java.lang.String = null,
+    insertText: java.lang.String = null,
+    insertTextFormat: InsertTextFormat = null,
+    kind: CompletionItemKind = null,
+    preselect: js.UndefOr[scala.Boolean] = js.undefined,
+    sortText: java.lang.String = null,
+    textEdit: TextEdit = null
+  ): CompletionItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    if (additionalTextEdits != null) __obj.updateDynamic("additionalTextEdits")(additionalTextEdits)
+    if (command != null) __obj.updateDynamic("command")(command)
+    if (commitCharacters != null) __obj.updateDynamic("commitCharacters")(commitCharacters)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation.asInstanceOf[js.Any])
+    if (filterText != null) __obj.updateDynamic("filterText")(filterText)
+    if (insertText != null) __obj.updateDynamic("insertText")(insertText)
+    if (insertTextFormat != null) __obj.updateDynamic("insertTextFormat")(insertTextFormat)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(preselect)) __obj.updateDynamic("preselect")(preselect)
+    if (sortText != null) __obj.updateDynamic("sortText")(sortText)
+    if (textEdit != null) __obj.updateDynamic("textEdit")(textEdit)
+    __obj.asInstanceOf[CompletionItem]
+  }
+}
+

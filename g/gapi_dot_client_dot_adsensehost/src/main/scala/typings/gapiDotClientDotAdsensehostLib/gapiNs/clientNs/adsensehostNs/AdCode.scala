@@ -12,3 +12,13 @@ trait AdCode extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AdCode {
+  @scala.inline
+  def apply(adCode: java.lang.String = null, kind: java.lang.String = null): AdCode = {
+    val __obj = js.Dynamic.literal()
+    if (adCode != null) __obj.updateDynamic("adCode")(adCode)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[AdCode]
+  }
+}
+

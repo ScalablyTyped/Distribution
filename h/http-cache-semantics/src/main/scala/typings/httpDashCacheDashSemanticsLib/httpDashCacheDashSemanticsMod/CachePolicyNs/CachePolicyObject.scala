@@ -22,3 +22,40 @@ trait CachePolicyObject extends js.Object {
   var v: scala.Double
 }
 
+object CachePolicyObject {
+  @scala.inline
+  def apply(
+    a: scala.Boolean,
+    ch: scala.Double,
+    imm: scala.Double,
+    m: java.lang.String,
+    reqcc: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    rescc: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    resh: Headers,
+    sh: scala.Boolean,
+    st: scala.Double,
+    t: scala.Double,
+    v: scala.Double,
+    h: java.lang.String = null,
+    reqh: Headers = null,
+    u: java.lang.String = null
+  ): CachePolicyObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("a")(a)
+    __obj.updateDynamic("ch")(ch)
+    __obj.updateDynamic("imm")(imm)
+    __obj.updateDynamic("m")(m)
+    __obj.updateDynamic("reqcc")(reqcc)
+    __obj.updateDynamic("rescc")(rescc)
+    __obj.updateDynamic("resh")(resh)
+    __obj.updateDynamic("sh")(sh)
+    __obj.updateDynamic("st")(st)
+    __obj.updateDynamic("t")(t)
+    __obj.updateDynamic("v")(v)
+    if (h != null) __obj.updateDynamic("h")(h)
+    if (reqh != null) __obj.updateDynamic("reqh")(reqh)
+    if (u != null) __obj.updateDynamic("u")(u)
+    __obj.asInstanceOf[CachePolicyObject]
+  }
+}
+

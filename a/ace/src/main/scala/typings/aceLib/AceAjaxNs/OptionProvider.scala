@@ -24,3 +24,20 @@ trait OptionProvider extends js.Object {
   def setOptions(keyValueTuples: js.Any): scala.Unit
 }
 
+object OptionProvider {
+  @scala.inline
+  def apply(
+    getOption: js.Function1[java.lang.String, js.Any],
+    getOptions: js.Function0[js.Any],
+    setOption: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setOptions: js.Function1[js.Any, scala.Unit]
+  ): OptionProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getOption")(getOption)
+    __obj.updateDynamic("getOptions")(getOptions)
+    __obj.updateDynamic("setOption")(setOption)
+    __obj.updateDynamic("setOptions")(setOptions)
+    __obj.asInstanceOf[OptionProvider]
+  }
+}
+

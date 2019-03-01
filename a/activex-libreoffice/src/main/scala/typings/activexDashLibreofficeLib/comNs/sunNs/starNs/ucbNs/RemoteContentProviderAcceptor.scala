@@ -10,3 +10,30 @@ trait RemoteContentProviderAcceptor
   extends XRemoteContentProviderAcceptor
      with XRemoteContentProviderActivator
 
+object RemoteContentProviderAcceptor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    activateRemoteContentProviders: js.Function0[XContentProviderManager],
+    addRemoteContentProvider: js.Function4[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XMultiServiceFactory, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      XRemoteContentProviderDoneListener, 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeRemoteContentProvider: js.Function1[java.lang.String, scala.Boolean]
+  ): RemoteContentProviderAcceptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("activateRemoteContentProviders")(activateRemoteContentProviders)
+    __obj.updateDynamic("addRemoteContentProvider")(addRemoteContentProvider)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeRemoteContentProvider")(removeRemoteContentProvider)
+    __obj.asInstanceOf[RemoteContentProviderAcceptor]
+  }
+}
+

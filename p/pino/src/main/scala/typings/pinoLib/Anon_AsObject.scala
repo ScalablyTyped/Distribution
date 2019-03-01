@@ -20,3 +20,16 @@ trait Anon_AsObject extends js.Object {
   var write: js.UndefOr[pinoLib.pinoMod.PNs.WriteFn | Anon_Debug] = js.undefined
 }
 
+object Anon_AsObject {
+  @scala.inline
+  def apply(
+    asObject: js.UndefOr[scala.Boolean] = js.undefined,
+    write: pinoLib.pinoMod.PNs.WriteFn | Anon_Debug = null
+  ): Anon_AsObject = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(asObject)) __obj.updateDynamic("asObject")(asObject)
+    if (write != null) __obj.updateDynamic("write")(write.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AsObject]
+  }
+}
+

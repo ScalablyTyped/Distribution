@@ -13,3 +13,21 @@ trait MessageEntity extends js.Object {
   var user: js.UndefOr[User] = js.undefined
 }
 
+object MessageEntity {
+  @scala.inline
+  def apply(
+    length: scala.Double,
+    offset: scala.Double,
+    `type`: MessageEntityType,
+    url: java.lang.String = null,
+    user: User = null
+  ): MessageEntity = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("offset")(offset)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[MessageEntity]
+  }
+}
+

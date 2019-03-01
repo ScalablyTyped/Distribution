@@ -39,3 +39,74 @@ trait ISizeModel
   var shrinkWrap: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ISizeModel {
+  @scala.inline
+  def apply(
+    alias: extjsLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    auto: js.UndefOr[scala.Boolean] = js.undefined,
+    calculated: js.UndefOr[scala.Boolean] = js.undefined,
+    calculatedFromConfigured: js.UndefOr[scala.Boolean] = js.undefined,
+    calculatedFromNatural: js.UndefOr[scala.Boolean] = js.undefined,
+    calculatedFromShrinkWrap: js.UndefOr[scala.Boolean] = js.undefined,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    configured: js.UndefOr[scala.Boolean] = js.undefined,
+    constrainedMax: js.UndefOr[scala.Boolean] = js.undefined,
+    constrainedMin: js.UndefOr[scala.Boolean] = js.undefined,
+    extend: java.lang.String = null,
+    fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], ISizeModel] = null,
+    mixins: js.Any = null,
+    name: java.lang.String = null,
+    names: js.Any = null,
+    natural: js.UndefOr[scala.Boolean] = js.undefined,
+    ordinal: scala.Int | scala.Double = null,
+    pairsByHeightOrdinal: extjsLib.ExtNs.Array = null,
+    requires: extjsLib.ExtNs.Array = null,
+    self: extjsLib.ExtNs.IClass = null,
+    shrinkWrap: js.UndefOr[scala.Boolean] = js.undefined,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    uses: extjsLib.ExtNs.Array = null
+  ): ISizeModel = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto)
+    if (!js.isUndefined(calculated)) __obj.updateDynamic("calculated")(calculated)
+    if (!js.isUndefined(calculatedFromConfigured)) __obj.updateDynamic("calculatedFromConfigured")(calculatedFromConfigured)
+    if (!js.isUndefined(calculatedFromNatural)) __obj.updateDynamic("calculatedFromNatural")(calculatedFromNatural)
+    if (!js.isUndefined(calculatedFromShrinkWrap)) __obj.updateDynamic("calculatedFromShrinkWrap")(calculatedFromShrinkWrap)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(configured)) __obj.updateDynamic("configured")(configured)
+    if (!js.isUndefined(constrainedMax)) __obj.updateDynamic("constrainedMax")(constrainedMax)
+    if (!js.isUndefined(constrainedMin)) __obj.updateDynamic("constrainedMin")(constrainedMin)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (!js.isUndefined(natural)) __obj.updateDynamic("natural")(natural)
+    if (ordinal != null) __obj.updateDynamic("ordinal")(ordinal.asInstanceOf[js.Any])
+    if (pairsByHeightOrdinal != null) __obj.updateDynamic("pairsByHeightOrdinal")(pairsByHeightOrdinal)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(shrinkWrap)) __obj.updateDynamic("shrinkWrap")(shrinkWrap)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[ISizeModel]
+  }
+}
+

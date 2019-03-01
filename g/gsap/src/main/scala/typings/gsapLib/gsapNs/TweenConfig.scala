@@ -78,3 +78,71 @@ trait TweenConfig
   var yoyo: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TweenConfig {
+  @scala.inline
+  def apply(
+    StringDictionary: /** Any tweenable property */
+  /* p */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    autoCSS: js.UndefOr[scala.Boolean] = js.undefined,
+    callbackScope: js.Object = null,
+    delay: scala.Int | scala.Double = null,
+    ease: Ease = null,
+    immediateRender: js.UndefOr[scala.Boolean] = js.undefined,
+    `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
+    onComplete: js.Function0[scala.Unit] = null,
+    onCompleteParams: js.Array[_] = null,
+    onCompleteScope: js.Object = null,
+    onOverwrite: js.Function0[scala.Unit] = null,
+    onRepeat: js.Function0[scala.Unit] = null,
+    onRepeatScope: js.Object = null,
+    onReverseComplete: js.Function0[scala.Unit] = null,
+    onReverseCompleteParams: js.Array[_] = null,
+    onReverseCompleteScope: js.Object = null,
+    onStart: js.Function0[scala.Unit] = null,
+    onStartParams: js.Array[_] = null,
+    onStartScope: js.Object = null,
+    onUpdate: js.Function0[scala.Unit] = null,
+    onUpdateParams: js.Array[_] = null,
+    onUpdateScope: js.Object = null,
+    overwrite: java.lang.String | scala.Double = null,
+    paused: js.UndefOr[scala.Boolean] = js.undefined,
+    repeat: scala.Int | scala.Double = null,
+    repeatDelay: scala.Int | scala.Double = null,
+    startAt: js.Object = null,
+    useFrames: js.UndefOr[scala.Boolean] = js.undefined,
+    yoyo: js.UndefOr[scala.Boolean] = js.undefined
+  ): TweenConfig = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(autoCSS)) __obj.updateDynamic("autoCSS")(autoCSS)
+    if (callbackScope != null) __obj.updateDynamic("callbackScope")(callbackScope)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (ease != null) __obj.updateDynamic("ease")(ease)
+    if (!js.isUndefined(immediateRender)) __obj.updateDynamic("immediateRender")(immediateRender)
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onCompleteParams != null) __obj.updateDynamic("onCompleteParams")(onCompleteParams)
+    if (onCompleteScope != null) __obj.updateDynamic("onCompleteScope")(onCompleteScope)
+    if (onOverwrite != null) __obj.updateDynamic("onOverwrite")(onOverwrite)
+    if (onRepeat != null) __obj.updateDynamic("onRepeat")(onRepeat)
+    if (onRepeatScope != null) __obj.updateDynamic("onRepeatScope")(onRepeatScope)
+    if (onReverseComplete != null) __obj.updateDynamic("onReverseComplete")(onReverseComplete)
+    if (onReverseCompleteParams != null) __obj.updateDynamic("onReverseCompleteParams")(onReverseCompleteParams)
+    if (onReverseCompleteScope != null) __obj.updateDynamic("onReverseCompleteScope")(onReverseCompleteScope)
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onStartParams != null) __obj.updateDynamic("onStartParams")(onStartParams)
+    if (onStartScope != null) __obj.updateDynamic("onStartScope")(onStartScope)
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (onUpdateParams != null) __obj.updateDynamic("onUpdateParams")(onUpdateParams)
+    if (onUpdateScope != null) __obj.updateDynamic("onUpdateScope")(onUpdateScope)
+    if (overwrite != null) __obj.updateDynamic("overwrite")(overwrite.asInstanceOf[js.Any])
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused)
+    if (repeat != null) __obj.updateDynamic("repeat")(repeat.asInstanceOf[js.Any])
+    if (repeatDelay != null) __obj.updateDynamic("repeatDelay")(repeatDelay.asInstanceOf[js.Any])
+    if (startAt != null) __obj.updateDynamic("startAt")(startAt)
+    if (!js.isUndefined(useFrames)) __obj.updateDynamic("useFrames")(useFrames)
+    if (!js.isUndefined(yoyo)) __obj.updateDynamic("yoyo")(yoyo)
+    __obj.asInstanceOf[TweenConfig]
+  }
+}
+

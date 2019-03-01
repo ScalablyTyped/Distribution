@@ -15,3 +15,18 @@ trait SystemShellExecuteException
   var PosixError: scala.Double
 }
 
+object SystemShellExecuteException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    PosixError: scala.Double
+  ): SystemShellExecuteException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("PosixError")(PosixError)
+    __obj.asInstanceOf[SystemShellExecuteException]
+  }
+}
+

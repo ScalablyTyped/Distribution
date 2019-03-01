@@ -169,3 +169,93 @@ trait DefineValidateOptions
   var notNull: js.UndefOr[scala.Boolean | sequelizeLib.Anon_MsgString] = js.undefined
 }
 
+object DefineValidateOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * custom validations are also possible
+    *
+    * Implementation notes :
+    *
+    * We can't enforce any other method to be a function, so :
+    *
+    * ```typescript
+    * [name: string] : ( value : any ) => boolean;
+    * ```
+    *
+    * doesn't work in combination with the properties above
+    *
+    * @see https://github.com/Microsoft/TypeScript/issues/1889
+    */
+  /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    contains: java.lang.String | sequelizeLib.Anon_MsgString = null,
+    equals: java.lang.String | sequelizeLib.Anon_MsgString = null,
+    is: java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) | stdLib.RegExp | sequelizeLib.Anon_Args = null,
+    isAfter: java.lang.String | sequelizeLib.Anon_ArgsMsgString = null,
+    isAlpha: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isAlphanumeric: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isArray: scala.Boolean | sequelizeLib.Anon_ArgsMsgBoolean = null,
+    isBefore: java.lang.String | sequelizeLib.Anon_ArgsMsgString = null,
+    isCreditCard: scala.Boolean | sequelizeLib.Anon_ArgsMsgBoolean = null,
+    isDate: scala.Boolean | sequelizeLib.Anon_ArgsMsgBoolean = null,
+    isDecimal: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isEmail: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isFloat: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isIP: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isIPv4: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isIPv6: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isIn: js.Array[js.Array[java.lang.String]] | sequelizeLib.Anon_ArgsMsg = null,
+    isInt: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isLowercase: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isNull: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isNumeric: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isUUID: sequelizeLib.sequelizeLibNumbers.`3` | sequelizeLib.sequelizeLibNumbers.`4` | sequelizeLib.sequelizeLibNumbers.`5` | sequelizeLib.sequelizeLibStrings.`3` | sequelizeLib.sequelizeLibStrings.`4` | sequelizeLib.sequelizeLibStrings.`5` | sequelizeLib.sequelizeLibStrings.all | sequelizeLib.Anon_ArgsMsgNumberString = null,
+    isUppercase: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    isUrl: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    len: (js.Tuple2[scala.Double, scala.Double]) | sequelizeLib.Anon_ArgsMsgNumber = null,
+    max: scala.Double | sequelizeLib.Anon_ArgsMsgNumberString = null,
+    min: scala.Double | sequelizeLib.Anon_ArgsMsgNumberString = null,
+    not: java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) | stdLib.RegExp | sequelizeLib.Anon_Args = null,
+    notContains: js.Array[java.lang.String] | java.lang.String | sequelizeLib.Anon_ArgsMsgArray = null,
+    notEmpty: scala.Boolean | sequelizeLib.Anon_MsgString = null,
+    notIn: js.Array[js.Array[java.lang.String]] | sequelizeLib.Anon_ArgsMsg = null,
+    notNull: scala.Boolean | sequelizeLib.Anon_MsgString = null
+  ): DefineValidateOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (contains != null) __obj.updateDynamic("contains")(contains.asInstanceOf[js.Any])
+    if (equals != null) __obj.updateDynamic("equals")(equals.asInstanceOf[js.Any])
+    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (isAfter != null) __obj.updateDynamic("isAfter")(isAfter.asInstanceOf[js.Any])
+    if (isAlpha != null) __obj.updateDynamic("isAlpha")(isAlpha.asInstanceOf[js.Any])
+    if (isAlphanumeric != null) __obj.updateDynamic("isAlphanumeric")(isAlphanumeric.asInstanceOf[js.Any])
+    if (isArray != null) __obj.updateDynamic("isArray")(isArray.asInstanceOf[js.Any])
+    if (isBefore != null) __obj.updateDynamic("isBefore")(isBefore.asInstanceOf[js.Any])
+    if (isCreditCard != null) __obj.updateDynamic("isCreditCard")(isCreditCard.asInstanceOf[js.Any])
+    if (isDate != null) __obj.updateDynamic("isDate")(isDate.asInstanceOf[js.Any])
+    if (isDecimal != null) __obj.updateDynamic("isDecimal")(isDecimal.asInstanceOf[js.Any])
+    if (isEmail != null) __obj.updateDynamic("isEmail")(isEmail.asInstanceOf[js.Any])
+    if (isFloat != null) __obj.updateDynamic("isFloat")(isFloat.asInstanceOf[js.Any])
+    if (isIP != null) __obj.updateDynamic("isIP")(isIP.asInstanceOf[js.Any])
+    if (isIPv4 != null) __obj.updateDynamic("isIPv4")(isIPv4.asInstanceOf[js.Any])
+    if (isIPv6 != null) __obj.updateDynamic("isIPv6")(isIPv6.asInstanceOf[js.Any])
+    if (isIn != null) __obj.updateDynamic("isIn")(isIn.asInstanceOf[js.Any])
+    if (isInt != null) __obj.updateDynamic("isInt")(isInt.asInstanceOf[js.Any])
+    if (isLowercase != null) __obj.updateDynamic("isLowercase")(isLowercase.asInstanceOf[js.Any])
+    if (isNull != null) __obj.updateDynamic("isNull")(isNull.asInstanceOf[js.Any])
+    if (isNumeric != null) __obj.updateDynamic("isNumeric")(isNumeric.asInstanceOf[js.Any])
+    if (isUUID != null) __obj.updateDynamic("isUUID")(isUUID.asInstanceOf[js.Any])
+    if (isUppercase != null) __obj.updateDynamic("isUppercase")(isUppercase.asInstanceOf[js.Any])
+    if (isUrl != null) __obj.updateDynamic("isUrl")(isUrl.asInstanceOf[js.Any])
+    if (len != null) __obj.updateDynamic("len")(len.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (not != null) __obj.updateDynamic("not")(not.asInstanceOf[js.Any])
+    if (notContains != null) __obj.updateDynamic("notContains")(notContains.asInstanceOf[js.Any])
+    if (notEmpty != null) __obj.updateDynamic("notEmpty")(notEmpty.asInstanceOf[js.Any])
+    if (notIn != null) __obj.updateDynamic("notIn")(notIn.asInstanceOf[js.Any])
+    if (notNull != null) __obj.updateDynamic("notNull")(notNull.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefineValidateOptions]
+  }
+}
+

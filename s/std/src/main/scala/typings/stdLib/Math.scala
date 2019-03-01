@@ -210,3 +210,100 @@ trait Math extends js.Object {
   def trunc(x: scala.Double): scala.Double
 }
 
+object Math {
+  @scala.inline
+  def apply(
+    E: scala.Double,
+    LN10: scala.Double,
+    LN2: scala.Double,
+    LOG10E: scala.Double,
+    LOG2E: scala.Double,
+    PI: scala.Double,
+    SQRT1_2: scala.Double,
+    SQRT2: scala.Double,
+    abs: js.Function1[scala.Double, scala.Double],
+    acos: js.Function1[scala.Double, scala.Double],
+    acosh: js.Function1[scala.Double, scala.Double],
+    asin: js.Function1[scala.Double, scala.Double],
+    asinh: js.Function1[scala.Double, scala.Double],
+    atan: js.Function1[scala.Double, scala.Double],
+    atan2: js.Function2[scala.Double, scala.Double, scala.Double],
+    atanh: js.Function1[scala.Double, scala.Double],
+    cbrt: js.Function1[scala.Double, scala.Double],
+    ceil: js.Function1[scala.Double, scala.Double],
+    clz32: js.Function1[scala.Double, scala.Double],
+    cos: js.Function1[scala.Double, scala.Double],
+    cosh: js.Function1[scala.Double, scala.Double],
+    exp: js.Function1[scala.Double, scala.Double],
+    expm1: js.Function1[scala.Double, scala.Double],
+    floor: js.Function1[scala.Double, scala.Double],
+    fround: js.Function1[scala.Double, scala.Double],
+    hypot: js.Function1[/* repeated */ scala.Double, scala.Double],
+    imul: js.Function2[scala.Double, scala.Double, scala.Double],
+    log: js.Function1[scala.Double, scala.Double],
+    log10: js.Function1[scala.Double, scala.Double],
+    log1p: js.Function1[scala.Double, scala.Double],
+    log2: js.Function1[scala.Double, scala.Double],
+    max: js.Function1[/* repeated */ scala.Double, scala.Double],
+    min: js.Function1[/* repeated */ scala.Double, scala.Double],
+    pow: js.Function2[scala.Double, scala.Double, scala.Double],
+    random: js.Function0[scala.Double],
+    round: js.Function1[scala.Double, scala.Double],
+    sign: js.Function1[scala.Double, scala.Double],
+    sin: js.Function1[scala.Double, scala.Double],
+    sinh: js.Function1[scala.Double, scala.Double],
+    sqrt: js.Function1[scala.Double, scala.Double],
+    tan: js.Function1[scala.Double, scala.Double],
+    tanh: js.Function1[scala.Double, scala.Double],
+    toStringTag: java.lang.String,
+    trunc: js.Function1[scala.Double, scala.Double]
+  ): Math = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("E")(E)
+    __obj.updateDynamic("LN10")(LN10)
+    __obj.updateDynamic("LN2")(LN2)
+    __obj.updateDynamic("LOG10E")(LOG10E)
+    __obj.updateDynamic("LOG2E")(LOG2E)
+    __obj.updateDynamic("PI")(PI)
+    __obj.updateDynamic("SQRT1_2")(SQRT1_2)
+    __obj.updateDynamic("SQRT2")(SQRT2)
+    __obj.updateDynamic("abs")(abs)
+    __obj.updateDynamic("acos")(acos)
+    __obj.updateDynamic("acosh")(acosh)
+    __obj.updateDynamic("asin")(asin)
+    __obj.updateDynamic("asinh")(asinh)
+    __obj.updateDynamic("atan")(atan)
+    __obj.updateDynamic("atan2")(atan2)
+    __obj.updateDynamic("atanh")(atanh)
+    __obj.updateDynamic("cbrt")(cbrt)
+    __obj.updateDynamic("ceil")(ceil)
+    __obj.updateDynamic("clz32")(clz32)
+    __obj.updateDynamic("cos")(cos)
+    __obj.updateDynamic("cosh")(cosh)
+    __obj.updateDynamic("exp")(exp)
+    __obj.updateDynamic("expm1")(expm1)
+    __obj.updateDynamic("floor")(floor)
+    __obj.updateDynamic("fround")(fround)
+    __obj.updateDynamic("hypot")(hypot)
+    __obj.updateDynamic("imul")(imul)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("log10")(log10)
+    __obj.updateDynamic("log1p")(log1p)
+    __obj.updateDynamic("log2")(log2)
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("min")(min)
+    __obj.updateDynamic("pow")(pow)
+    __obj.updateDynamic("random")(random)
+    __obj.updateDynamic("round")(round)
+    __obj.updateDynamic("sign")(sign)
+    __obj.updateDynamic("sin")(sin)
+    __obj.updateDynamic("sinh")(sinh)
+    __obj.updateDynamic("sqrt")(sqrt)
+    __obj.updateDynamic("tan")(tan)
+    __obj.updateDynamic("tanh")(tanh)
+    __obj.updateDynamic("toStringTag")(toStringTag)
+    __obj.updateDynamic("trunc")(trunc)
+    __obj.asInstanceOf[Math]
+  }
+}
+

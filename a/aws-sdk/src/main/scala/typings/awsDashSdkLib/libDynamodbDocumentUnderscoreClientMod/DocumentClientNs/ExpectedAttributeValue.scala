@@ -24,3 +24,20 @@ trait ExpectedAttributeValue extends js.Object {
   var Value: js.UndefOr[AttributeValue] = js.undefined
 }
 
+object ExpectedAttributeValue {
+  @scala.inline
+  def apply(
+    AttributeValueList: AttributeValueList = null,
+    ComparisonOperator: ComparisonOperator = null,
+    Exists: js.UndefOr[BooleanObject] = js.undefined,
+    Value: AttributeValue = null
+  ): ExpectedAttributeValue = {
+    val __obj = js.Dynamic.literal()
+    if (AttributeValueList != null) __obj.updateDynamic("AttributeValueList")(AttributeValueList)
+    if (ComparisonOperator != null) __obj.updateDynamic("ComparisonOperator")(ComparisonOperator.asInstanceOf[js.Any])
+    if (!js.isUndefined(Exists)) __obj.updateDynamic("Exists")(Exists)
+    if (Value != null) __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[ExpectedAttributeValue]
+  }
+}
+

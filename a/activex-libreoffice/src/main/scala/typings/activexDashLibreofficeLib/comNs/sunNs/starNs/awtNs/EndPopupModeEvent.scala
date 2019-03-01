@@ -17,3 +17,18 @@ trait EndPopupModeEvent
   var bTearoff: scala.Boolean
 }
 
+object EndPopupModeEvent {
+  @scala.inline
+  def apply(
+    FloatingPosition: Point,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    bTearoff: scala.Boolean
+  ): EndPopupModeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FloatingPosition")(FloatingPosition)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("bTearoff")(bTearoff)
+    __obj.asInstanceOf[EndPopupModeEvent]
+  }
+}
+

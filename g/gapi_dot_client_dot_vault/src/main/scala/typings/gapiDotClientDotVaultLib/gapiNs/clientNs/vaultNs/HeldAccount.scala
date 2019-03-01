@@ -15,3 +15,13 @@ trait HeldAccount extends js.Object {
   var holdTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HeldAccount {
+  @scala.inline
+  def apply(accountId: java.lang.String = null, holdTime: java.lang.String = null): HeldAccount = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (holdTime != null) __obj.updateDynamic("holdTime")(holdTime)
+    __obj.asInstanceOf[HeldAccount]
+  }
+}
+

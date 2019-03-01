@@ -13,3 +13,12 @@ trait ObjectClass extends js.Object {
   var schema: ObjectSchema
 }
 
+object ObjectClass {
+  @scala.inline
+  def apply(schema: ObjectSchema): ObjectClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[ObjectClass]
+  }
+}
+

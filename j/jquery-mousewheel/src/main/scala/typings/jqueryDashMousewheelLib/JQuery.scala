@@ -25,3 +25,33 @@ trait JQuery extends js.Object {
   def unmousewheel(): JQuery
 }
 
+object JQuery {
+  @scala.inline
+  def apply(
+    mousewheel: js.Function1[
+      js.Function2[
+        /* eventObject */ jqueryDashMousewheelLib.JQueryMousewheelNs.JQueryMousewheelEventObject, 
+        /* repeated */ js.Any, 
+        _
+      ], 
+      JQuery
+    ],
+    on_mousewheel: js.Function2[
+      jqueryDashMousewheelLib.jqueryDashMousewheelLibStrings.mousewheel, 
+      js.Function2[
+        /* eventObject */ jqueryDashMousewheelLib.JQueryMousewheelNs.JQueryMousewheelEventObject, 
+        /* repeated */ js.Any, 
+        _
+      ], 
+      JQuery
+    ],
+    unmousewheel: js.Function0[JQuery]
+  ): JQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mousewheel")(mousewheel)
+    __obj.updateDynamic("on")(on_mousewheel)
+    __obj.updateDynamic("unmousewheel")(unmousewheel)
+    __obj.asInstanceOf[JQuery]
+  }
+}
+

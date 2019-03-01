@@ -30,3 +30,37 @@ trait AchievementsResource extends js.Object {
   def resetMultipleForAllPlayers(request: gapiDotClientDotGamesmanagementLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object AchievementsResource {
+  @scala.inline
+  def apply(
+    reset: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_AchievementId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AchievementResetResponse]
+    ],
+    resetAll: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AchievementResetAllResponse]
+    ],
+    resetAllForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    resetForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_AchievementId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    resetMultipleForAllPlayers: js.Function1[
+      gapiDotClientDotGamesmanagementLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): AchievementsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("resetAll")(resetAll)
+    __obj.updateDynamic("resetAllForAllPlayers")(resetAllForAllPlayers)
+    __obj.updateDynamic("resetForAllPlayers")(resetForAllPlayers)
+    __obj.updateDynamic("resetMultipleForAllPlayers")(resetMultipleForAllPlayers)
+    __obj.asInstanceOf[AchievementsResource]
+  }
+}
+

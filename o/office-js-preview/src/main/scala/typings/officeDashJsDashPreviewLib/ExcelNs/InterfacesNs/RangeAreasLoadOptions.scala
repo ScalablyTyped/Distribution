@@ -99,3 +99,34 @@ trait RangeAreasLoadOptions extends js.Object {
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 
+object RangeAreasLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    address: js.UndefOr[scala.Boolean] = js.undefined,
+    addressLocal: js.UndefOr[scala.Boolean] = js.undefined,
+    areaCount: js.UndefOr[scala.Boolean] = js.undefined,
+    cellCount: js.UndefOr[scala.Boolean] = js.undefined,
+    dataValidation: DataValidationLoadOptions = null,
+    format: RangeFormatLoadOptions = null,
+    isEntireColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    isEntireRow: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    worksheet: WorksheetLoadOptions = null
+  ): RangeAreasLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address)
+    if (!js.isUndefined(addressLocal)) __obj.updateDynamic("addressLocal")(addressLocal)
+    if (!js.isUndefined(areaCount)) __obj.updateDynamic("areaCount")(areaCount)
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount)
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn)
+    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
+    __obj.asInstanceOf[RangeAreasLoadOptions]
+  }
+}
+

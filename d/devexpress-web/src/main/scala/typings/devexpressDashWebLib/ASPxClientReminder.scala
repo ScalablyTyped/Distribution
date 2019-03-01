@@ -37,3 +37,24 @@ trait ASPxClientReminder extends js.Object {
   def Snooze(remindAfter: scala.Double): scala.Unit
 }
 
+object ASPxClientReminder {
+  @scala.inline
+  def apply(
+    Dismiss: js.Function0[scala.Unit],
+    GetAlertTime: js.Function0[stdLib.Date],
+    GetCustomField: js.Function1[java.lang.String, js.Object],
+    GetId: js.Function0[java.lang.String],
+    GetTimeBeforeStart: js.Function0[stdLib.Date],
+    Snooze: js.Function1[scala.Double, scala.Unit]
+  ): ASPxClientReminder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Dismiss")(Dismiss)
+    __obj.updateDynamic("GetAlertTime")(GetAlertTime)
+    __obj.updateDynamic("GetCustomField")(GetCustomField)
+    __obj.updateDynamic("GetId")(GetId)
+    __obj.updateDynamic("GetTimeBeforeStart")(GetTimeBeforeStart)
+    __obj.updateDynamic("Snooze")(Snooze)
+    __obj.asInstanceOf[ASPxClientReminder]
+  }
+}
+

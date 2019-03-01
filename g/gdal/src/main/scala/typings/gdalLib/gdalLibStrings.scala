@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object gdalLibStrings {
   @js.native
-  sealed trait AVERAGE extends js.Object
+  sealed trait AVERAGE
+    extends gdalLib.gdalMod.Resampling
   
   @js.native
-  sealed trait AVERAGE_MAGPHASE extends js.Object
+  sealed trait AVERAGE_MAGPHASE
+    extends gdalLib.gdalMod.Resampling
   
   @js.native
-  sealed trait CUBIC extends js.Object
+  sealed trait CUBIC
+    extends gdalLib.gdalMod.Resampling
   
   @js.native
-  sealed trait GAUSS extends js.Object
+  sealed trait GAUSS
+    extends gdalLib.gdalMod.Resampling
   
   @js.native
-  sealed trait MODE extends js.Object
+  sealed trait MODE
+    extends gdalLib.gdalMod.Resampling
   
   @js.native
-  sealed trait NEAREST extends js.Object
+  sealed trait NEAREST
+    extends gdalLib.gdalMod.Resampling
   
   @js.native
-  sealed trait NONE extends js.Object
+  sealed trait NONE
+    extends gdalLib.gdalMod.Resampling
   
   @js.native
   sealed trait lat extends js.Object

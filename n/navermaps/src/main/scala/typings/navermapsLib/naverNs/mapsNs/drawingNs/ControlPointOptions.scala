@@ -10,3 +10,16 @@ trait ControlPointOptions extends js.Object {
   var midPointOptions: navermapsLib.naverNs.mapsNs.CircleOptions
 }
 
+object ControlPointOptions {
+  @scala.inline
+  def apply(
+    anchorPointOptions: navermapsLib.naverNs.mapsNs.CircleOptions,
+    midPointOptions: navermapsLib.naverNs.mapsNs.CircleOptions
+  ): ControlPointOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("anchorPointOptions")(anchorPointOptions)
+    __obj.updateDynamic("midPointOptions")(midPointOptions)
+    __obj.asInstanceOf[ControlPointOptions]
+  }
+}
+

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- fabricLib.fabricDashImplMod.IPathOptions because var conflicts: aCoords, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockUniScaling, minScaleLimit, name, oCoords, objectCaching, opacity, originX, originY, padding, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, shadow, skewX, skewY, stroke, strokeDashArray, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined path, minX, minY */ @JSImport("fabric/fabric-impl", "Path")
+- fabricLib.fabricDashImplMod.IPathOptions because var conflicts: aCoords, absolutePositioned, angle, backgroundColor, borderColor, borderDashArray, borderOpacityWhenMoving, borderScaleFactor, cacheProperties, centeredRotation, centeredScaling, clipPath, clipTo, cornerColor, cornerDashArray, cornerSize, cornerStrokeColor, cornerStyle, data, dirty, evented, excludeFromExport, fill, fillRule, flipX, flipY, globalCompositeOperation, hasBorders, hasControls, hasRotatingPoint, height, hoverCursor, includeDefaultValues, inverted, left, lockMovementX, lockMovementY, lockRotation, lockScalingFlip, lockScalingX, lockScalingY, lockSkewingX, lockSkewingY, lockUniScaling, matrixCache, minScaleLimit, moveCursor, name, noScaleCache, oCoords, objectCaching, opacity, originX, originY, ownMatrixCache, padding, paintFirst, perPixelTargetFind, rotatingPointOffset, scaleX, scaleY, selectable, selectionBackgroundColor, shadow, skewX, skewY, stateProperties, statefullCache, stroke, strokeDashArray, strokeDashOffset, strokeLineCap, strokeLineJoin, strokeMiterLimit, strokeUniform, strokeWidth, top, transformMatrix, transparentCorners, `type`, visible, width. Inlined path */ @JSImport("fabric/fabric-impl", "Path")
 @js.native
 /**
 	 * Constructor
@@ -15,32 +15,14 @@ import scala.scalajs.js.annotation._
 	 */
 class Path () extends Object {
   def this(path: java.lang.String) = this()
-  def this(path: js.Array[_]) = this()
+  def this(path: js.Array[Point]) = this()
   def this(path: java.lang.String, options: IPathOptions) = this()
-  def this(path: js.Array[_], options: IPathOptions) = this()
-  /**
-  	 * Minimum X from points values, necessary to offset points
-  	 */
-  var minX: js.UndefOr[scala.Double] = js.native
-  /**
-  	 * Minimum Y from points values, necessary to offset points
-  	 */
-  var minY: js.UndefOr[scala.Double] = js.native
+  def this(path: js.Array[Point], options: IPathOptions) = this()
   /**
   	 * Array of path points
   	 */
-  var path: js.UndefOr[js.Array[_]] = js.native
+  var path: js.UndefOr[js.Array[Point]] = js.native
   var pathOffset: Point = js.native
-  def initialize(): Path = js.native
-  def initialize(path: js.Array[_]): Path = js.native
-  def initialize(path: js.Array[_], options: IPathOptions): Path = js.native
-  /**
-  	 * Returns svg representation of an instance
-  	 * @param [reviver] Method for further parsing of svg representation.
-  	 * @return svg representation of an instance
-  	 */
-  def toSVG(): java.lang.String = js.native
-  def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
 /* static members */
@@ -48,21 +30,25 @@ class Path () extends Object {
 @js.native
 object Path extends js.Object {
   /**
+  	 * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
+  	 */
+  var ATTRIBUTE_NAMES: js.Array[java.lang.String] = js.native
+  /**
   	 * Creates an instance of fabric.Path from an SVG <path> element
   	 * @param element to parse
   	 * @param callback Callback to invoke when an fabric.Path instance is created
   	 * @param [options] Options object
   	 */
-  def fromElement(element: stdLib.SVGElement, callback: js.Function1[/* path */ this.type, _]): scala.Unit = js.native
+  def fromElement(element: stdLib.SVGElement, callback: js.Function): fabricLib.fabricDashImplMod.Path = js.native
   def fromElement(
     element: stdLib.SVGElement,
-    callback: js.Function1[/* path */ this.type, _],
+    callback: js.Function,
     options: fabricLib.fabricDashImplMod.IPathOptions
-  ): scala.Unit = js.native
+  ): fabricLib.fabricDashImplMod.Path = js.native
   /**
   	 * Creates an instance of fabric.Path from an object
   	 * @param callback Callback to invoke when an fabric.Path instance is created
   	 */
-  def fromObject(`object`: js.Any, callback: js.Function1[/* path */ this.type, _]): scala.Unit = js.native
+  def fromObject(`object`: js.Any, callback: js.Function): fabricLib.fabricDashImplMod.Path = js.native
 }
 

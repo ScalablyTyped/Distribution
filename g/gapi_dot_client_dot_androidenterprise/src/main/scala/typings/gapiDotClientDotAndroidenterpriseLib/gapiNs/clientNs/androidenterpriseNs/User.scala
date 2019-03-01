@@ -34,3 +34,26 @@ trait User extends js.Object {
   var primaryEmail: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object User {
+  @scala.inline
+  def apply(
+    accountIdentifier: java.lang.String = null,
+    accountType: java.lang.String = null,
+    displayName: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    managementType: java.lang.String = null,
+    primaryEmail: java.lang.String = null
+  ): User = {
+    val __obj = js.Dynamic.literal()
+    if (accountIdentifier != null) __obj.updateDynamic("accountIdentifier")(accountIdentifier)
+    if (accountType != null) __obj.updateDynamic("accountType")(accountType)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (managementType != null) __obj.updateDynamic("managementType")(managementType)
+    if (primaryEmail != null) __obj.updateDynamic("primaryEmail")(primaryEmail)
+    __obj.asInstanceOf[User]
+  }
+}
+

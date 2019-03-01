@@ -10,3 +10,20 @@ trait Unfoldable[F] extends js.Object {
   def unfoldr[A, B](b: B, f: js.Function1[/* b */ B, fpDashTsLib.libOptionMod.Option[js.Tuple2[A, B]]]): fpDashTsLib.libHKTMod.HKT[F, A]
 }
 
+object Unfoldable {
+  @scala.inline
+  def apply[F](
+    URI: F,
+    unfoldr: js.Function2[
+      js.Any, 
+      js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]], 
+      fpDashTsLib.libHKTMod.HKT[F, js.Any]
+    ]
+  ): Unfoldable[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("unfoldr")(unfoldr)
+    __obj.asInstanceOf[Unfoldable[F]]
+  }
+}
+

@@ -10,16 +10,20 @@ object googleDotAnalyticsLibStrings {
   sealed trait create extends js.Object
   
   @js.native
-  sealed trait event extends js.Object
+  sealed trait event
+    extends googleDotAnalyticsLib.UniversalAnalyticsNs.HitType
   
   @js.native
-  sealed trait exception extends js.Object
+  sealed trait exception
+    extends googleDotAnalyticsLib.UniversalAnalyticsNs.HitType
   
   @js.native
-  sealed trait item extends js.Object
+  sealed trait item
+    extends googleDotAnalyticsLib.UniversalAnalyticsNs.HitType
   
   @js.native
-  sealed trait pageview extends js.Object
+  sealed trait pageview
+    extends googleDotAnalyticsLib.UniversalAnalyticsNs.HitType
   
   @js.native
   sealed trait provide extends js.Object
@@ -31,19 +35,23 @@ object googleDotAnalyticsLibStrings {
   sealed trait require extends js.Object
   
   @js.native
-  sealed trait screenview extends js.Object
+  sealed trait screenview
+    extends googleDotAnalyticsLib.UniversalAnalyticsNs.HitType
   
   @js.native
   sealed trait send extends js.Object
   
   @js.native
-  sealed trait social extends js.Object
+  sealed trait social
+    extends googleDotAnalyticsLib.UniversalAnalyticsNs.HitType
   
   @js.native
-  sealed trait timing extends js.Object
+  sealed trait timing
+    extends googleDotAnalyticsLib.UniversalAnalyticsNs.HitType
   
   @js.native
-  sealed trait transaction extends js.Object
+  sealed trait transaction
+    extends googleDotAnalyticsLib.UniversalAnalyticsNs.HitType
   
   @scala.inline
   def create: create = "create".asInstanceOf[create]

@@ -12,3 +12,20 @@ trait Anon_Conflicts extends js.Object {
   var source: Anon_Index
 }
 
+object Anon_Conflicts {
+  @scala.inline
+  def apply(
+    dest: Anon_IndexOptype,
+    source: Anon_Index,
+    conflicts: java.lang.String = null,
+    script: Anon_Inline = null
+  ): Anon_Conflicts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dest")(dest)
+    __obj.updateDynamic("source")(source)
+    if (conflicts != null) __obj.updateDynamic("conflicts")(conflicts)
+    if (script != null) __obj.updateDynamic("script")(script)
+    __obj.asInstanceOf[Anon_Conflicts]
+  }
+}
+

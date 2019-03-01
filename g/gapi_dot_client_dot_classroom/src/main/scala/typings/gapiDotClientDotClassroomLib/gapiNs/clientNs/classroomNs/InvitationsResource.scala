@@ -72,3 +72,37 @@ trait InvitationsResource extends js.Object {
   def list(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[ListInvitationsResponse]
 }
 
+object InvitationsResource {
+  @scala.inline
+  def apply(
+    accept: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    create: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Invitation]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Invitation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackCourseIdFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListInvitationsResponse]
+    ]
+  ): InvitationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accept")(accept)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[InvitationsResource]
+  }
+}
+

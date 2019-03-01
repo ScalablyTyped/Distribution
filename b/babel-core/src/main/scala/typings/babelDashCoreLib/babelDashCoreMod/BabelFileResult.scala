@@ -13,3 +13,22 @@ trait BabelFileResult extends js.Object {
   var metadata: js.UndefOr[BabelFileMetadata] = js.undefined
 }
 
+object BabelFileResult {
+  @scala.inline
+  def apply(
+    ast: Node = null,
+    code: java.lang.String = null,
+    ignored: js.UndefOr[scala.Boolean] = js.undefined,
+    map: js.Object = null,
+    metadata: BabelFileMetadata = null
+  ): BabelFileResult = {
+    val __obj = js.Dynamic.literal()
+    if (ast != null) __obj.updateDynamic("ast")(ast)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (!js.isUndefined(ignored)) __obj.updateDynamic("ignored")(ignored)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[BabelFileResult]
+  }
+}
+

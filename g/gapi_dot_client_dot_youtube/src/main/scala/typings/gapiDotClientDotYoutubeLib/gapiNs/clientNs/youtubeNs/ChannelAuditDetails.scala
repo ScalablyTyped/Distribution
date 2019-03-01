@@ -20,3 +20,20 @@ trait ChannelAuditDetails extends js.Object {
   var overallGoodStanding: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChannelAuditDetails {
+  @scala.inline
+  def apply(
+    communityGuidelinesGoodStanding: js.UndefOr[scala.Boolean] = js.undefined,
+    contentIdClaimsGoodStanding: js.UndefOr[scala.Boolean] = js.undefined,
+    copyrightStrikesGoodStanding: js.UndefOr[scala.Boolean] = js.undefined,
+    overallGoodStanding: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChannelAuditDetails = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(communityGuidelinesGoodStanding)) __obj.updateDynamic("communityGuidelinesGoodStanding")(communityGuidelinesGoodStanding)
+    if (!js.isUndefined(contentIdClaimsGoodStanding)) __obj.updateDynamic("contentIdClaimsGoodStanding")(contentIdClaimsGoodStanding)
+    if (!js.isUndefined(copyrightStrikesGoodStanding)) __obj.updateDynamic("copyrightStrikesGoodStanding")(copyrightStrikesGoodStanding)
+    if (!js.isUndefined(overallGoodStanding)) __obj.updateDynamic("overallGoodStanding")(overallGoodStanding)
+    __obj.asInstanceOf[ChannelAuditDetails]
+  }
+}
+

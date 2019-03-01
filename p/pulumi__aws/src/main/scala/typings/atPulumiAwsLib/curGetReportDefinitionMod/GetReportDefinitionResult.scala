@@ -44,3 +44,30 @@ trait GetReportDefinitionResult extends js.Object {
   val timeUnit: java.lang.String
 }
 
+object GetReportDefinitionResult {
+  @scala.inline
+  def apply(
+    additionalArtifacts: js.Array[java.lang.String],
+    additionalSchemaElements: js.Array[java.lang.String],
+    compression: java.lang.String,
+    format: java.lang.String,
+    id: java.lang.String,
+    s3Bucket: java.lang.String,
+    s3Prefix: java.lang.String,
+    s3Region: java.lang.String,
+    timeUnit: java.lang.String
+  ): GetReportDefinitionResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("additionalArtifacts")(additionalArtifacts)
+    __obj.updateDynamic("additionalSchemaElements")(additionalSchemaElements)
+    __obj.updateDynamic("compression")(compression)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("s3Bucket")(s3Bucket)
+    __obj.updateDynamic("s3Prefix")(s3Prefix)
+    __obj.updateDynamic("s3Region")(s3Region)
+    __obj.updateDynamic("timeUnit")(timeUnit)
+    __obj.asInstanceOf[GetReportDefinitionResult]
+  }
+}
+

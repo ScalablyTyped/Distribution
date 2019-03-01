@@ -50,3 +50,32 @@ trait EventRegistration extends js.Object {
   def respondsTo(eventType: java.lang.String): scala.Boolean
 }
 
+object EventRegistration {
+  @scala.inline
+  def apply(
+    createCancelEvent: js.Function2[
+      stdLib.Error, 
+      atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, 
+      atFirebaseDatabaseLib.distSrcCoreViewEventMod.CancelEvent | scala.Null
+    ],
+    createEvent: js.Function2[
+      atFirebaseDatabaseLib.distSrcCoreViewChangeMod.Change, 
+      atFirebaseDatabaseLib.distSrcApiQueryMod.Query, 
+      atFirebaseDatabaseLib.distSrcCoreViewEventMod.Event
+    ],
+    getEventRunner: js.Function1[atFirebaseDatabaseLib.distSrcCoreViewEventMod.Event, js.Function0[scala.Unit]],
+    hasAnyCallback: js.Function0[scala.Boolean],
+    matches: js.Function1[EventRegistration, scala.Boolean],
+    respondsTo: js.Function1[java.lang.String, scala.Boolean]
+  ): EventRegistration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createCancelEvent")(createCancelEvent)
+    __obj.updateDynamic("createEvent")(createEvent)
+    __obj.updateDynamic("getEventRunner")(getEventRunner)
+    __obj.updateDynamic("hasAnyCallback")(hasAnyCallback)
+    __obj.updateDynamic("matches")(matches)
+    __obj.updateDynamic("respondsTo")(respondsTo)
+    __obj.asInstanceOf[EventRegistration]
+  }
+}
+

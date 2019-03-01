@@ -20,3 +20,16 @@ trait Anon_Key extends js.Object {
   var space: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    replacer: (js.Function2[/* key */ java.lang.String, /* value */ js.Any, _]) | js.Array[java.lang.String] = null,
+    space: java.lang.String = null
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
+    if (space != null) __obj.updateDynamic("space")(space)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

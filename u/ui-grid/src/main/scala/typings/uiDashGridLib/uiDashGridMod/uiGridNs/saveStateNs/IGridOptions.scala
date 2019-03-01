@@ -126,3 +126,38 @@ trait IGridOptions extends js.Object {
   var saveWidths: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(
+    saveFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    saveFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    saveGrouping: js.UndefOr[scala.Boolean] = js.undefined,
+    saveGroupingExpandedStates: js.UndefOr[scala.Boolean] = js.undefined,
+    saveOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    savePinning: js.UndefOr[scala.Boolean] = js.undefined,
+    saveRowIdentity: js.UndefOr[scala.Boolean] = js.undefined,
+    saveScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    saveSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    saveSort: js.UndefOr[scala.Boolean] = js.undefined,
+    saveTreeView: js.UndefOr[scala.Boolean] = js.undefined,
+    saveVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    saveWidths: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(saveFilter)) __obj.updateDynamic("saveFilter")(saveFilter)
+    if (!js.isUndefined(saveFocus)) __obj.updateDynamic("saveFocus")(saveFocus)
+    if (!js.isUndefined(saveGrouping)) __obj.updateDynamic("saveGrouping")(saveGrouping)
+    if (!js.isUndefined(saveGroupingExpandedStates)) __obj.updateDynamic("saveGroupingExpandedStates")(saveGroupingExpandedStates)
+    if (!js.isUndefined(saveOrder)) __obj.updateDynamic("saveOrder")(saveOrder)
+    if (!js.isUndefined(savePinning)) __obj.updateDynamic("savePinning")(savePinning)
+    if (!js.isUndefined(saveRowIdentity)) __obj.updateDynamic("saveRowIdentity")(saveRowIdentity)
+    if (!js.isUndefined(saveScroll)) __obj.updateDynamic("saveScroll")(saveScroll)
+    if (!js.isUndefined(saveSelection)) __obj.updateDynamic("saveSelection")(saveSelection)
+    if (!js.isUndefined(saveSort)) __obj.updateDynamic("saveSort")(saveSort)
+    if (!js.isUndefined(saveTreeView)) __obj.updateDynamic("saveTreeView")(saveTreeView)
+    if (!js.isUndefined(saveVisible)) __obj.updateDynamic("saveVisible")(saveVisible)
+    if (!js.isUndefined(saveWidths)) __obj.updateDynamic("saveWidths")(saveWidths)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

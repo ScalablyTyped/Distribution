@@ -10,3 +10,17 @@ trait ProductsResource extends js.Object {
   def get(request: gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrint): gapiDotClientLib.gapiNs.clientNs.Request[ProductPurchase]
 }
 
+object ProductsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltFieldsKeyOauthtokenPackageNamePrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductPurchase]
+    ]
+  ): ProductsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[ProductsResource]
+  }
+}
+

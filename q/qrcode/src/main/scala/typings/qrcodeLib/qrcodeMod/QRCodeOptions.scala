@@ -25,3 +25,18 @@ trait QRCodeOptions extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object QRCodeOptions {
+  @scala.inline
+  def apply(
+    errorCorrectionLevel: qrcodeLib.qrcodeLibStrings.low | qrcodeLib.qrcodeLibStrings.medium | qrcodeLib.qrcodeLibStrings.quartile | qrcodeLib.qrcodeLibStrings.high | qrcodeLib.qrcodeLibStrings.L | qrcodeLib.qrcodeLibStrings.M | qrcodeLib.qrcodeLibStrings.Q | qrcodeLib.qrcodeLibStrings.H = null,
+    toSJISFunc: js.Function1[/* codePoint */ java.lang.String, scala.Double] = null,
+    version: scala.Int | scala.Double = null
+  ): QRCodeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel.asInstanceOf[js.Any])
+    if (toSJISFunc != null) __obj.updateDynamic("toSJISFunc")(toSJISFunc)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QRCodeOptions]
+  }
+}
+

@@ -59,3 +59,110 @@ trait Props extends js.Object {
   var volume: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    autopause: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    blankVideo: java.lang.String = null,
+    captions: js.Array[reactDashPlyrLib.Anon_DefaultKey] = null,
+    className: java.lang.String = null,
+    clickToPlay: js.UndefOr[scala.Boolean] = js.undefined,
+    controls: js.Array[java.lang.String] = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    disableContextMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    displayDuration: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fullscreen: reactDashPlyrLib.Anon_Enabled = null,
+    hideControls: js.UndefOr[scala.Boolean] = js.undefined,
+    iconPrefix: java.lang.String = null,
+    iconUrl: java.lang.String = null,
+    invertTime: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboard: reactDashPlyrLib.Anon_Focused = null,
+    loadSprite: js.UndefOr[scala.Boolean] = js.undefined,
+    loop: reactDashPlyrLib.Anon_Active = null,
+    muted: js.UndefOr[scala.Boolean] = js.undefined,
+    onCaptionsDisabled: js.Function0[scala.Unit] = null,
+    onCaptionsEnabled: js.Function0[scala.Unit] = null,
+    onEnd: js.Function0[scala.Unit] = null,
+    onEnterFullscreen: js.Function0[scala.Unit] = null,
+    onExitFullscreen: js.Function0[scala.Unit] = null,
+    onLoadedData: js.Function0[scala.Unit] = null,
+    onPause: js.Function0[scala.Unit] = null,
+    onPlay: js.Function0[scala.Unit] = null,
+    onReady: js.Function1[/* player */ js.UndefOr[js.Any], scala.Unit] = null,
+    onSeeked: js.Function1[/* time */ js.UndefOr[scala.Double], scala.Unit] = null,
+    onTimeUpdate: js.Function1[/* time */ js.UndefOr[scala.Double], scala.Unit] = null,
+    onVolumeChange: js.Function1[/* params */ OnVolumeChangeParam, scala.Unit] = null,
+    poster: java.lang.String = null,
+    quality: reactDashPlyrLib.Anon_Default = null,
+    ratio: java.lang.String = null,
+    resetOnEnd: js.UndefOr[scala.Boolean] = js.undefined,
+    seekTime: scala.Int | scala.Double = null,
+    settings: js.Array[java.lang.String] = null,
+    sources: js.Array[reactDashPlyrLib.Anon_Size] = null,
+    speed: reactDashPlyrLib.Anon_Options = null,
+    storage: reactDashPlyrLib.Anon_EnabledKey = null,
+    title: java.lang.String = null,
+    toggleInvert: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltips: reactDashPlyrLib.Anon_Controls = null,
+    `type`: reactDashPlyrLib.reactDashPlyrLibStrings.youtube | reactDashPlyrLib.reactDashPlyrLibStrings.vimeo | reactDashPlyrLib.reactDashPlyrLibStrings.video | reactDashPlyrLib.reactDashPlyrLibStrings.audio = null,
+    url: java.lang.String = null,
+    videoId: java.lang.String = null,
+    volume: scala.Int | scala.Double = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autopause)) __obj.updateDynamic("autopause")(autopause)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (blankVideo != null) __obj.updateDynamic("blankVideo")(blankVideo)
+    if (captions != null) __obj.updateDynamic("captions")(captions)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(clickToPlay)) __obj.updateDynamic("clickToPlay")(clickToPlay)
+    if (controls != null) __obj.updateDynamic("controls")(controls)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(disableContextMenu)) __obj.updateDynamic("disableContextMenu")(disableContextMenu)
+    if (!js.isUndefined(displayDuration)) __obj.updateDynamic("displayDuration")(displayDuration)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (fullscreen != null) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (!js.isUndefined(hideControls)) __obj.updateDynamic("hideControls")(hideControls)
+    if (iconPrefix != null) __obj.updateDynamic("iconPrefix")(iconPrefix)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (!js.isUndefined(invertTime)) __obj.updateDynamic("invertTime")(invertTime)
+    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard)
+    if (!js.isUndefined(loadSprite)) __obj.updateDynamic("loadSprite")(loadSprite)
+    if (loop != null) __obj.updateDynamic("loop")(loop)
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (onCaptionsDisabled != null) __obj.updateDynamic("onCaptionsDisabled")(onCaptionsDisabled)
+    if (onCaptionsEnabled != null) __obj.updateDynamic("onCaptionsEnabled")(onCaptionsEnabled)
+    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
+    if (onEnterFullscreen != null) __obj.updateDynamic("onEnterFullscreen")(onEnterFullscreen)
+    if (onExitFullscreen != null) __obj.updateDynamic("onExitFullscreen")(onExitFullscreen)
+    if (onLoadedData != null) __obj.updateDynamic("onLoadedData")(onLoadedData)
+    if (onPause != null) __obj.updateDynamic("onPause")(onPause)
+    if (onPlay != null) __obj.updateDynamic("onPlay")(onPlay)
+    if (onReady != null) __obj.updateDynamic("onReady")(onReady)
+    if (onSeeked != null) __obj.updateDynamic("onSeeked")(onSeeked)
+    if (onTimeUpdate != null) __obj.updateDynamic("onTimeUpdate")(onTimeUpdate)
+    if (onVolumeChange != null) __obj.updateDynamic("onVolumeChange")(onVolumeChange)
+    if (poster != null) __obj.updateDynamic("poster")(poster)
+    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (ratio != null) __obj.updateDynamic("ratio")(ratio)
+    if (!js.isUndefined(resetOnEnd)) __obj.updateDynamic("resetOnEnd")(resetOnEnd)
+    if (seekTime != null) __obj.updateDynamic("seekTime")(seekTime.asInstanceOf[js.Any])
+    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (speed != null) __obj.updateDynamic("speed")(speed)
+    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(toggleInvert)) __obj.updateDynamic("toggleInvert")(toggleInvert)
+    if (tooltips != null) __obj.updateDynamic("tooltips")(tooltips)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props]
+  }
+}
+

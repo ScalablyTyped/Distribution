@@ -20,3 +20,14 @@ trait TextChangedEventUIParam extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TextChangedEventUIParam {
+  @scala.inline
+  def apply(oldText: java.lang.String = null, owner: js.Any = null, text: java.lang.String = null): TextChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (oldText != null) __obj.updateDynamic("oldText")(oldText)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextChangedEventUIParam]
+  }
+}
+

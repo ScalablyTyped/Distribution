@@ -77,6 +77,8 @@ object navigationNs extends js.Object {
   - mendixmodelsdkLib.distGenNavigationMod.navigationNs.INativeNavigationProfile because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined asLoaded, load, load, load, load */ @js.native
   class NativeNavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
+    @JSName("containerAsNavigationDocument")
+    val containerAsNavigationDocument_NativeNavigationProfile: NavigationDocument = js.native
     /**
       * NOTE: This property is experimental and is subject to change in newer Model SDK versions.
       */
@@ -92,6 +94,8 @@ object navigationNs extends js.Object {
   class NavigationDocument protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject) = this()
+    @JSName("containerAsProject")
+    val containerAsProject_NavigationDocument: mendixmodelsdkLib.distGenProjectsMod.projectsNs.Project = js.native
     /**
       * In version 7.2.0: deleted
       */
@@ -142,6 +146,8 @@ object navigationNs extends js.Object {
   class NavigationProfile protected () extends NavigationProfileBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     var applicationTitle: java.lang.String = js.native
+    @JSName("containerAsNavigationDocument")
+    val containerAsNavigationDocument_NavigationProfile: NavigationDocument = js.native
     /**
       * In version 7.2.0: deleted
       */

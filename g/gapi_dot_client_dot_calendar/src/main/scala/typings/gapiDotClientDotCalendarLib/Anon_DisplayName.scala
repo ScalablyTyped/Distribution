@@ -16,3 +16,20 @@ trait Anon_DisplayName extends js.Object {
   var self: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_DisplayName {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    email: java.lang.String = null,
+    id: java.lang.String = null,
+    self: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_DisplayName = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self)
+    __obj.asInstanceOf[Anon_DisplayName]
+  }
+}
+

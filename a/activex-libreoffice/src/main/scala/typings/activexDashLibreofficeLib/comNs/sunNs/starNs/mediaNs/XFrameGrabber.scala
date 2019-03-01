@@ -14,3 +14,14 @@ trait XFrameGrabber extends js.Object {
   def grabFrame(fMediaTime: scala.Double): activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic
 }
 
+object XFrameGrabber {
+  @scala.inline
+  def apply(
+    grabFrame: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.graphicNs.XGraphic]
+  ): XFrameGrabber = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("grabFrame")(grabFrame)
+    __obj.asInstanceOf[XFrameGrabber]
+  }
+}
+

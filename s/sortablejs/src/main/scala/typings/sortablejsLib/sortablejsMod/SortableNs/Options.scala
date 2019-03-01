@@ -159,3 +159,104 @@ trait Options extends js.Object {
   var store: js.UndefOr[sortablejsLib.Anon_Get] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    animation: scala.Int | scala.Double = null,
+    chosenClass: java.lang.String = null,
+    dataIdAttr: java.lang.String = null,
+    delay: scala.Int | scala.Double = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    dragClass: java.lang.String = null,
+    draggable: java.lang.String = null,
+    dragoverBubble: js.UndefOr[scala.Boolean] = js.undefined,
+    dropBubble: js.UndefOr[scala.Boolean] = js.undefined,
+    fallbackClass: java.lang.String = null,
+    fallbackOffset: sortablejsLib.Anon_X = null,
+    fallbackOnBody: js.UndefOr[scala.Boolean] = js.undefined,
+    fallbackTolerance: scala.Int | scala.Double = null,
+    filter: java.lang.String | (js.ThisFunction3[
+      /* this */ sortablejsLib.sortablejsMod.Sortable, 
+      /* event */ stdLib.Event | stdLib.TouchEvent, 
+      /* target */ stdLib.HTMLElement, 
+      /* sortable */ sortablejsLib.sortablejsMod.Sortable, 
+      scala.Boolean
+    ]) = null,
+    forceFallback: js.UndefOr[scala.Boolean] = js.undefined,
+    ghostClass: java.lang.String = null,
+    group: java.lang.String | GroupOptions = null,
+    handle: java.lang.String = null,
+    ignore: java.lang.String = null,
+    onAdd: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onChoose: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onClone: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onEnd: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onFilter: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onMove: js.Function1[/* event */ MoveEvent, scala.Boolean] = null,
+    onRemove: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onSort: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onStart: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onUnchoose: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    onUpdate: js.Function1[/* event */ SortableEvent, scala.Unit] = null,
+    preventOnFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    scroll: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollFn: js.ThisFunction3[
+      /* this */ sortablejsLib.sortablejsMod.Sortable, 
+      /* offsetX */ scala.Double, 
+      /* offsetY */ scala.Double, 
+      /* event */ stdLib.MouseEvent, 
+      scala.Unit
+    ] = null,
+    scrollSensitivity: scala.Int | scala.Double = null,
+    scrollSpeed: scala.Int | scala.Double = null,
+    setData: js.Function2[
+      /* dataTransfer */ stdLib.DataTransfer, 
+      /* draggedElement */ stdLib.HTMLElement, 
+      scala.Unit
+    ] = null,
+    sort: js.UndefOr[scala.Boolean] = js.undefined,
+    store: sortablejsLib.Anon_Get = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (chosenClass != null) __obj.updateDynamic("chosenClass")(chosenClass)
+    if (dataIdAttr != null) __obj.updateDynamic("dataIdAttr")(dataIdAttr)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (dragClass != null) __obj.updateDynamic("dragClass")(dragClass)
+    if (draggable != null) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(dragoverBubble)) __obj.updateDynamic("dragoverBubble")(dragoverBubble)
+    if (!js.isUndefined(dropBubble)) __obj.updateDynamic("dropBubble")(dropBubble)
+    if (fallbackClass != null) __obj.updateDynamic("fallbackClass")(fallbackClass)
+    if (fallbackOffset != null) __obj.updateDynamic("fallbackOffset")(fallbackOffset)
+    if (!js.isUndefined(fallbackOnBody)) __obj.updateDynamic("fallbackOnBody")(fallbackOnBody)
+    if (fallbackTolerance != null) __obj.updateDynamic("fallbackTolerance")(fallbackTolerance.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceFallback)) __obj.updateDynamic("forceFallback")(forceFallback)
+    if (ghostClass != null) __obj.updateDynamic("ghostClass")(ghostClass)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
+    if (onChoose != null) __obj.updateDynamic("onChoose")(onChoose)
+    if (onClone != null) __obj.updateDynamic("onClone")(onClone)
+    if (onEnd != null) __obj.updateDynamic("onEnd")(onEnd)
+    if (onFilter != null) __obj.updateDynamic("onFilter")(onFilter)
+    if (onMove != null) __obj.updateDynamic("onMove")(onMove)
+    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (onSort != null) __obj.updateDynamic("onSort")(onSort)
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onUnchoose != null) __obj.updateDynamic("onUnchoose")(onUnchoose)
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (!js.isUndefined(preventOnFilter)) __obj.updateDynamic("preventOnFilter")(preventOnFilter)
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (scrollFn != null) __obj.updateDynamic("scrollFn")(scrollFn)
+    if (scrollSensitivity != null) __obj.updateDynamic("scrollSensitivity")(scrollSensitivity.asInstanceOf[js.Any])
+    if (scrollSpeed != null) __obj.updateDynamic("scrollSpeed")(scrollSpeed.asInstanceOf[js.Any])
+    if (setData != null) __obj.updateDynamic("setData")(setData)
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    if (store != null) __obj.updateDynamic("store")(store)
+    __obj.asInstanceOf[Options]
+  }
+}
+

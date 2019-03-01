@@ -10,3 +10,13 @@ trait TableNode extends js.Object {
   def leftJoin(table: TableNode): JoinTableNode
 }
 
+object TableNode {
+  @scala.inline
+  def apply(join: js.Function1[TableNode, JoinTableNode], leftJoin: js.Function1[TableNode, JoinTableNode]): TableNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("join")(join)
+    __obj.updateDynamic("leftJoin")(leftJoin)
+    __obj.asInstanceOf[TableNode]
+  }
+}
+

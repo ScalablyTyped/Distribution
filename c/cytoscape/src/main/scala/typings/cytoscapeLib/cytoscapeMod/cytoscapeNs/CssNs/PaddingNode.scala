@@ -18,3 +18,20 @@ trait PaddingNode extends js.Object {
   var `padding-top`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PaddingNode {
+  @scala.inline
+  def apply(
+    `padding-bottom`: java.lang.String = null,
+    `padding-left`: java.lang.String = null,
+    `padding-right`: java.lang.String = null,
+    `padding-top`: java.lang.String = null
+  ): PaddingNode = {
+    val __obj = js.Dynamic.literal()
+    if (`padding-bottom` != null) __obj.updateDynamic("padding-bottom")(`padding-bottom`)
+    if (`padding-left` != null) __obj.updateDynamic("padding-left")(`padding-left`)
+    if (`padding-right` != null) __obj.updateDynamic("padding-right")(`padding-right`)
+    if (`padding-top` != null) __obj.updateDynamic("padding-top")(`padding-top`)
+    __obj.asInstanceOf[PaddingNode]
+  }
+}
+

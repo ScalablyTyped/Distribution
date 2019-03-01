@@ -27,3 +27,13 @@ trait Anon_Newlinechar extends js.Object {
   var sloppy: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Newlinechar {
+  @scala.inline
+  def apply(newline_char: java.lang.String = null, sloppy: js.UndefOr[scala.Boolean] = js.undefined): Anon_Newlinechar = {
+    val __obj = js.Dynamic.literal()
+    if (newline_char != null) __obj.updateDynamic("newline_char")(newline_char)
+    if (!js.isUndefined(sloppy)) __obj.updateDynamic("sloppy")(sloppy)
+    __obj.asInstanceOf[Anon_Newlinechar]
+  }
+}
+

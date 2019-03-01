@@ -31,3 +31,14 @@ trait GetOptions extends js.Object {
   ] = js.undefined
 }
 
+object GetOptions {
+  @scala.inline
+  def apply(
+    source: atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesLibStrings.default | atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesLibStrings.server | atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesLibStrings.cache = null
+  ): GetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetOptions]
+  }
+}
+

@@ -15,3 +15,24 @@ trait ToolbarOptions extends js.Object {
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ToolbarOptions {
+  @scala.inline
+  def apply(
+    deleteLayer: js.UndefOr[scala.Boolean] = js.undefined,
+    drawMarker: js.UndefOr[scala.Boolean] = js.undefined,
+    drawPolygon: js.UndefOr[scala.Boolean] = js.undefined,
+    drawPolyline: js.UndefOr[scala.Boolean] = js.undefined,
+    editPolygon: js.UndefOr[scala.Boolean] = js.undefined,
+    position: java.lang.String = null
+  ): ToolbarOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deleteLayer)) __obj.updateDynamic("deleteLayer")(deleteLayer)
+    if (!js.isUndefined(drawMarker)) __obj.updateDynamic("drawMarker")(drawMarker)
+    if (!js.isUndefined(drawPolygon)) __obj.updateDynamic("drawPolygon")(drawPolygon)
+    if (!js.isUndefined(drawPolyline)) __obj.updateDynamic("drawPolyline")(drawPolyline)
+    if (!js.isUndefined(editPolygon)) __obj.updateDynamic("editPolygon")(editPolygon)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[ToolbarOptions]
+  }
+}
+

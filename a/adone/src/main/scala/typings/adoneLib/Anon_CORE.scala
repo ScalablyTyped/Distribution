@@ -53,3 +53,12 @@ trait Anon_Core extends js.Object {
   val coreNs: Anon_CreateI
 }
 
+object Anon_Core {
+  @scala.inline
+  def apply(coreNs: Anon_CreateI): Anon_Core = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coreNs")(coreNs)
+    __obj.asInstanceOf[Anon_Core]
+  }
+}
+

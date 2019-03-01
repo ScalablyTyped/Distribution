@@ -24,3 +24,26 @@ import scala.scalajs.js.annotation._
   var fontFamily: js.UndefOr[aphroditeLib.FontFamily | js.Array[aphroditeLib.FontFamily]] = js.undefined
 }
 
+object OpenCSSProperties {
+  @scala.inline
+  def apply(
+    StringDictionary: /* k */ org.scalablytyped.runtime.StringDictionary[
+      (js.UndefOr[
+        aphroditeLib.FontFamily | js.Array[aphroditeLib.FontFamily] | java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ js.Any) | (js.Array[
+          /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ _
+        ])
+      ]) | aphroditeLib.CSSProperties
+    ] = null,
+    animationName: java.lang.String | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ js.Any) | (js.Array[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OpenCSSProperties */ _
+    ]) = null,
+    fontFamily: aphroditeLib.FontFamily | js.Array[aphroditeLib.FontFamily] = null
+  ): OpenCSSProperties = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (animationName != null) __obj.updateDynamic("animationName")(animationName.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OpenCSSProperties]
+  }
+}
+

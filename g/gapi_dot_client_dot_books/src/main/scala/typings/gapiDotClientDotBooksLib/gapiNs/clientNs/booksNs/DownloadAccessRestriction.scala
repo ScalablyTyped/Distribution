@@ -35,3 +35,36 @@ trait DownloadAccessRestriction extends js.Object {
   var volumeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DownloadAccessRestriction {
+  @scala.inline
+  def apply(
+    deviceAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    downloadsAcquired: scala.Int | scala.Double = null,
+    justAcquired: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    maxDownloadDevices: scala.Int | scala.Double = null,
+    message: java.lang.String = null,
+    nonce: java.lang.String = null,
+    reasonCode: java.lang.String = null,
+    restricted: js.UndefOr[scala.Boolean] = js.undefined,
+    signature: java.lang.String = null,
+    source: java.lang.String = null,
+    volumeId: java.lang.String = null
+  ): DownloadAccessRestriction = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deviceAllowed)) __obj.updateDynamic("deviceAllowed")(deviceAllowed)
+    if (downloadsAcquired != null) __obj.updateDynamic("downloadsAcquired")(downloadsAcquired.asInstanceOf[js.Any])
+    if (!js.isUndefined(justAcquired)) __obj.updateDynamic("justAcquired")(justAcquired)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maxDownloadDevices != null) __obj.updateDynamic("maxDownloadDevices")(maxDownloadDevices.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode)
+    if (!js.isUndefined(restricted)) __obj.updateDynamic("restricted")(restricted)
+    if (signature != null) __obj.updateDynamic("signature")(signature)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    __obj.asInstanceOf[DownloadAccessRestriction]
+  }
+}
+

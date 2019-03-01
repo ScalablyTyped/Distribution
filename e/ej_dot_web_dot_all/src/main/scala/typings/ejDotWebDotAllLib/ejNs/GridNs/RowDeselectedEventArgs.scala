@@ -26,3 +26,24 @@ trait RowDeselectedEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RowDeselectedEventArgs {
+  @scala.inline
+  def apply(
+    data: js.Any = null,
+    model: js.Any = null,
+    row: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null,
+    selectedData: js.Any = null,
+    `type`: java.lang.String = null
+  ): RowDeselectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RowDeselectedEventArgs]
+  }
+}
+

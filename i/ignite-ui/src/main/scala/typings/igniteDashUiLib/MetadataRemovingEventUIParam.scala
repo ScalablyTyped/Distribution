@@ -16,3 +16,13 @@ trait MetadataRemovingEventUIParam extends js.Object {
   var targetElement: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MetadataRemovingEventUIParam {
+  @scala.inline
+  def apply(metadata: js.Any = null, targetElement: java.lang.String = null): MetadataRemovingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
+    __obj.asInstanceOf[MetadataRemovingEventUIParam]
+  }
+}
+

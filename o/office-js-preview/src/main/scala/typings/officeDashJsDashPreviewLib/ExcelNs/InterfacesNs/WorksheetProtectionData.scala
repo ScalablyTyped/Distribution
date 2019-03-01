@@ -23,3 +23,16 @@ trait WorksheetProtectionData extends js.Object {
   var `protected`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WorksheetProtectionData {
+  @scala.inline
+  def apply(
+    options: officeDashJsDashPreviewLib.ExcelNs.WorksheetProtectionOptions = null,
+    `protected`: js.UndefOr[scala.Boolean] = js.undefined
+  ): WorksheetProtectionData = {
+    val __obj = js.Dynamic.literal()
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`)
+    __obj.asInstanceOf[WorksheetProtectionData]
+  }
+}
+

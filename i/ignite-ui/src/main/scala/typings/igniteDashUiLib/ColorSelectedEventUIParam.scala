@@ -12,3 +12,12 @@ trait ColorSelectedEventUIParam extends js.Object {
   var color: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColorSelectedEventUIParam {
+  @scala.inline
+  def apply(color: js.Any = null): ColorSelectedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    __obj.asInstanceOf[ColorSelectedEventUIParam]
+  }
+}
+

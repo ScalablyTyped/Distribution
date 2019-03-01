@@ -15,3 +15,13 @@ trait Anon_Matches extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Matches {
+  @scala.inline
+  def apply(matches: js.Array[java.lang.String], title: java.lang.String = null): Anon_Matches = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("matches")(matches)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_Matches]
+  }
+}
+

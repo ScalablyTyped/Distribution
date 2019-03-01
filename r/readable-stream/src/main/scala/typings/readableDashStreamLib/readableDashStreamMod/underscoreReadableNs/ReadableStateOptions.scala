@@ -15,3 +15,24 @@ trait ReadableStateOptions extends js.Object {
   var readableObjectMode: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReadableStateOptions {
+  @scala.inline
+  def apply(
+    defaultEncoding: java.lang.String = null,
+    encoding: java.lang.String = null,
+    highWaterMark: scala.Int | scala.Double = null,
+    objectMode: js.UndefOr[scala.Boolean] = js.undefined,
+    readableHighWaterMark: scala.Int | scala.Double = null,
+    readableObjectMode: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReadableStateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaultEncoding != null) __obj.updateDynamic("defaultEncoding")(defaultEncoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
+    if (!js.isUndefined(objectMode)) __obj.updateDynamic("objectMode")(objectMode)
+    if (readableHighWaterMark != null) __obj.updateDynamic("readableHighWaterMark")(readableHighWaterMark.asInstanceOf[js.Any])
+    if (!js.isUndefined(readableObjectMode)) __obj.updateDynamic("readableObjectMode")(readableObjectMode)
+    __obj.asInstanceOf[ReadableStateOptions]
+  }
+}
+

@@ -18,3 +18,22 @@ trait GooglePrivacyDlpV2beta1Finding extends js.Object {
   var quote: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1Finding {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    infoType: GooglePrivacyDlpV2beta1InfoType = null,
+    likelihood: java.lang.String = null,
+    location: GooglePrivacyDlpV2beta1Location = null,
+    quote: java.lang.String = null
+  ): GooglePrivacyDlpV2beta1Finding = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (infoType != null) __obj.updateDynamic("infoType")(infoType)
+    if (likelihood != null) __obj.updateDynamic("likelihood")(likelihood)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (quote != null) __obj.updateDynamic("quote")(quote)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1Finding]
+  }
+}
+

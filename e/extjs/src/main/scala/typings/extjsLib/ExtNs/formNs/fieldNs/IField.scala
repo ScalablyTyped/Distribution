@@ -106,3 +106,104 @@ trait IField
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object IField {
+  @scala.inline
+  def apply(
+    alias: extjsLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    batchChanges: js.Function1[/* fn */ js.UndefOr[js.Any], scala.Unit] = null,
+    beforeReset: js.Function0[scala.Unit] = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    checkChange: js.Function0[scala.Unit] = null,
+    checkDirty: js.Function0[scala.Unit] = null,
+    clearInvalid: js.Function0[scala.Unit] = null,
+    config: js.Any = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    extend: java.lang.String = null,
+    extractFileInput: js.Function0[_] = null,
+    getErrors: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getModelData: js.Function0[_] = null,
+    getName: js.Function0[java.lang.String] = null,
+    getSubmitData: js.Function0[_] = null,
+    getValue: js.Function0[_] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IField] = null,
+    initField: js.Function0[scala.Unit] = null,
+    initValue: js.Function0[scala.Unit] = null,
+    isDirty: js.Function0[_] = null,
+    isEqual: js.Function2[/* value1 */ js.UndefOr[js.Any], /* value2 */ js.UndefOr[js.Any], _] = null,
+    isFileUpload: js.Function0[_] = null,
+    isFormField: js.UndefOr[scala.Boolean] = js.undefined,
+    isValid: js.Function0[_] = null,
+    markInvalid: js.Function1[/* errors */ js.UndefOr[js.Any], scala.Unit] = null,
+    mixins: js.Any = null,
+    name: java.lang.String = null,
+    originalValue: js.Any = null,
+    requires: extjsLib.ExtNs.Array = null,
+    reset: js.Function0[scala.Unit] = null,
+    resetOriginalValue: js.Function0[scala.Unit] = null,
+    self: extjsLib.ExtNs.IClass = null,
+    setValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    submitValue: js.UndefOr[scala.Boolean] = js.undefined,
+    transformOriginalValue: js.Function1[/* value */ js.UndefOr[js.Any], _] = null,
+    uses: extjsLib.ExtNs.Array = null,
+    validate: js.Function0[_] = null,
+    validateOnChange: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.Any = null
+  ): IField = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (batchChanges != null) __obj.updateDynamic("batchChanges")(batchChanges)
+    if (beforeReset != null) __obj.updateDynamic("beforeReset")(beforeReset)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (checkChange != null) __obj.updateDynamic("checkChange")(checkChange)
+    if (checkDirty != null) __obj.updateDynamic("checkDirty")(checkDirty)
+    if (clearInvalid != null) __obj.updateDynamic("clearInvalid")(clearInvalid)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (extractFileInput != null) __obj.updateDynamic("extractFileInput")(extractFileInput)
+    if (getErrors != null) __obj.updateDynamic("getErrors")(getErrors)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getModelData != null) __obj.updateDynamic("getModelData")(getModelData)
+    if (getName != null) __obj.updateDynamic("getName")(getName)
+    if (getSubmitData != null) __obj.updateDynamic("getSubmitData")(getSubmitData)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (initField != null) __obj.updateDynamic("initField")(initField)
+    if (initValue != null) __obj.updateDynamic("initValue")(initValue)
+    if (isDirty != null) __obj.updateDynamic("isDirty")(isDirty)
+    if (isEqual != null) __obj.updateDynamic("isEqual")(isEqual)
+    if (isFileUpload != null) __obj.updateDynamic("isFileUpload")(isFileUpload)
+    if (!js.isUndefined(isFormField)) __obj.updateDynamic("isFormField")(isFormField)
+    if (isValid != null) __obj.updateDynamic("isValid")(isValid)
+    if (markInvalid != null) __obj.updateDynamic("markInvalid")(markInvalid)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (originalValue != null) __obj.updateDynamic("originalValue")(originalValue)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (resetOriginalValue != null) __obj.updateDynamic("resetOriginalValue")(resetOriginalValue)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (!js.isUndefined(submitValue)) __obj.updateDynamic("submitValue")(submitValue)
+    if (transformOriginalValue != null) __obj.updateDynamic("transformOriginalValue")(transformOriginalValue)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    if (!js.isUndefined(validateOnChange)) __obj.updateDynamic("validateOnChange")(validateOnChange)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IField]
+  }
+}
+

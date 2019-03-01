@@ -10,3 +10,16 @@ trait DefaultCanvasRendererPlugins extends js.Object {
   var prepare: pixiDotJsLib.PIXINs.prepareNs.CanvasPrepare
 }
 
+object DefaultCanvasRendererPlugins {
+  @scala.inline
+  def apply(
+    extract: pixiDotJsLib.PIXINs.extractNs.CanvasExtract,
+    prepare: pixiDotJsLib.PIXINs.prepareNs.CanvasPrepare
+  ): DefaultCanvasRendererPlugins = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extract")(extract)
+    __obj.updateDynamic("prepare")(prepare)
+    __obj.asInstanceOf[DefaultCanvasRendererPlugins]
+  }
+}
+

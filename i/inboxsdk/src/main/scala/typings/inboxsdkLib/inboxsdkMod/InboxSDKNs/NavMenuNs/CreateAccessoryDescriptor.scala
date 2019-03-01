@@ -10,3 +10,12 @@ trait CreateAccessoryDescriptor extends js.Object {
   def onClick(): scala.Unit
 }
 
+object CreateAccessoryDescriptor {
+  @scala.inline
+  def apply(onClick: js.Function0[scala.Unit], `type`: inboxsdkLib.inboxsdkLibStrings.CREATE): CreateAccessoryDescriptor = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("onClick")(onClick)
+    __obj.asInstanceOf[CreateAccessoryDescriptor]
+  }
+}
+

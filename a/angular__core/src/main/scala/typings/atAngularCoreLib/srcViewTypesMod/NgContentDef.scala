@@ -15,3 +15,12 @@ trait NgContentDef extends js.Object {
   var index: scala.Double
 }
 
+object NgContentDef {
+  @scala.inline
+  def apply(index: scala.Double): NgContentDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.asInstanceOf[NgContentDef]
+  }
+}
+

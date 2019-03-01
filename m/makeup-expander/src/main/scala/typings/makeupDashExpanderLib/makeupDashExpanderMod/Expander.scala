@@ -18,3 +18,32 @@ trait Expander extends js.Object {
   def toggle(): scala.Unit
 }
 
+object Expander {
+  @scala.inline
+  def apply(
+    collapse: js.Function0[scala.Unit],
+    collapseOnClickOut: scala.Boolean,
+    collapseOnFocusOut: scala.Boolean,
+    collapseOnMouseOut: scala.Boolean,
+    expand: js.Function1[scala.Boolean, scala.Unit],
+    expandOnClick: scala.Boolean,
+    expandOnFocus: scala.Boolean,
+    expandOnHover: scala.Boolean,
+    isExpanded: js.Function0[scala.Boolean],
+    toggle: js.Function0[scala.Unit]
+  ): Expander = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collapse")(collapse)
+    __obj.updateDynamic("collapseOnClickOut")(collapseOnClickOut)
+    __obj.updateDynamic("collapseOnFocusOut")(collapseOnFocusOut)
+    __obj.updateDynamic("collapseOnMouseOut")(collapseOnMouseOut)
+    __obj.updateDynamic("expand")(expand)
+    __obj.updateDynamic("expandOnClick")(expandOnClick)
+    __obj.updateDynamic("expandOnFocus")(expandOnFocus)
+    __obj.updateDynamic("expandOnHover")(expandOnHover)
+    __obj.updateDynamic("isExpanded")(isExpanded)
+    __obj.updateDynamic("toggle")(toggle)
+    __obj.asInstanceOf[Expander]
+  }
+}
+

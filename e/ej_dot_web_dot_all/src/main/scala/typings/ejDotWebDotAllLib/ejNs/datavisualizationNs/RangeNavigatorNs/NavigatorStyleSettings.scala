@@ -67,3 +67,44 @@ trait NavigatorStyleSettings extends js.Object {
   var unselectedRegionOpacity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NavigatorStyleSettings {
+  @scala.inline
+  def apply(
+    background: java.lang.String = null,
+    border: NavigatorStyleSettingsBorder = null,
+    highlightSettings: NavigatorStyleSettingsHighlightSettings = null,
+    leftThumbTemplate: java.lang.String = null,
+    majorGridLineStyle: NavigatorStyleSettingsMajorGridLineStyle = null,
+    minorGridLineStyle: NavigatorStyleSettingsMinorGridLineStyle = null,
+    opacity: scala.Int | scala.Double = null,
+    rightThumbTemplate: java.lang.String = null,
+    selectedRegionColor: java.lang.String = null,
+    selectedRegionOpacity: scala.Int | scala.Double = null,
+    selectionSettings: NavigatorStyleSettingsSelectionSettings = null,
+    thumbColor: java.lang.String = null,
+    thumbRadius: scala.Int | scala.Double = null,
+    thumbStroke: java.lang.String = null,
+    unselectedRegionColor: java.lang.String = null,
+    unselectedRegionOpacity: scala.Int | scala.Double = null
+  ): NavigatorStyleSettings = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (highlightSettings != null) __obj.updateDynamic("highlightSettings")(highlightSettings)
+    if (leftThumbTemplate != null) __obj.updateDynamic("leftThumbTemplate")(leftThumbTemplate)
+    if (majorGridLineStyle != null) __obj.updateDynamic("majorGridLineStyle")(majorGridLineStyle)
+    if (minorGridLineStyle != null) __obj.updateDynamic("minorGridLineStyle")(minorGridLineStyle)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (rightThumbTemplate != null) __obj.updateDynamic("rightThumbTemplate")(rightThumbTemplate)
+    if (selectedRegionColor != null) __obj.updateDynamic("selectedRegionColor")(selectedRegionColor)
+    if (selectedRegionOpacity != null) __obj.updateDynamic("selectedRegionOpacity")(selectedRegionOpacity.asInstanceOf[js.Any])
+    if (selectionSettings != null) __obj.updateDynamic("selectionSettings")(selectionSettings)
+    if (thumbColor != null) __obj.updateDynamic("thumbColor")(thumbColor)
+    if (thumbRadius != null) __obj.updateDynamic("thumbRadius")(thumbRadius.asInstanceOf[js.Any])
+    if (thumbStroke != null) __obj.updateDynamic("thumbStroke")(thumbStroke)
+    if (unselectedRegionColor != null) __obj.updateDynamic("unselectedRegionColor")(unselectedRegionColor)
+    if (unselectedRegionOpacity != null) __obj.updateDynamic("unselectedRegionOpacity")(unselectedRegionOpacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NavigatorStyleSettings]
+  }
+}
+

@@ -20,3 +20,13 @@ trait Shard extends js.Object {
   var `type`: screepsLib.screepsLibStrings.normal
 }
 
+object Shard {
+  @scala.inline
+  def apply(name: java.lang.String, ptr: scala.Boolean, `type`: screepsLib.screepsLibStrings.normal): Shard = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("ptr")(ptr)
+    __obj.asInstanceOf[Shard]
+  }
+}
+

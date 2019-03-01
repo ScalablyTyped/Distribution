@@ -9,3 +9,12 @@ trait Anon_Body extends js.Object {
   var body: js.Any
 }
 
+object Anon_Body {
+  @scala.inline
+  def apply(body: js.Any): Anon_Body = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.asInstanceOf[Anon_Body]
+  }
+}
+

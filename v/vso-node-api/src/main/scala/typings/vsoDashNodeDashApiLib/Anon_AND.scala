@@ -11,3 +11,14 @@ trait Anon_AND extends js.Object {
   var oR: scala.Double
 }
 
+object Anon_AND {
+  @scala.inline
+  def apply(aND: scala.Double, nONE: scala.Double, oR: scala.Double): Anon_AND = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aND")(aND)
+    __obj.updateDynamic("nONE")(nONE)
+    __obj.updateDynamic("oR")(oR)
+    __obj.asInstanceOf[Anon_AND]
+  }
+}
+

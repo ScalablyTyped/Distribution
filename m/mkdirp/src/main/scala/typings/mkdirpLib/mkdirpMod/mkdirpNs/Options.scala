@@ -10,3 +10,13 @@ trait Options extends js.Object {
   var mode: js.UndefOr[Mode] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(fs: FsImplementation = null, mode: Mode = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

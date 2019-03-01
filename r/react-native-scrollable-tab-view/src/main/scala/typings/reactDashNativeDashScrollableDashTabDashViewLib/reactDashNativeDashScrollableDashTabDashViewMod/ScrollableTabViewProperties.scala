@@ -95,3 +95,50 @@ trait ScrollableTabViewProperties
   ] = js.undefined
 }
 
+object ScrollableTabViewProperties {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    contentProps: reactDashNativeLib.reactDashNativeMod.ScrollViewProps = null,
+    initialPage: scala.Int | scala.Double = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    locked: js.UndefOr[scala.Boolean] = js.undefined,
+    onChangeTab: js.Function1[/* value */ ChangeTabProperties, scala.Unit] = null,
+    onScroll: js.Function1[/* value */ scala.Double, scala.Unit] = null,
+    page: scala.Int | scala.Double = null,
+    prerenderingSiblingsNumber: scala.Int | scala.Double = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[ScrollableTabView] = null,
+    renderTabBar: (js.Function1[/* props */ TabBarProps[js.Object], reactLib.reactMod.Global.JSXNs.Element]) | reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewLibNumbers.`false` = null,
+    scrollWithoutAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    tabBarActiveTextColor: java.lang.String = null,
+    tabBarBackgroundColor: java.lang.String = null,
+    tabBarInactiveTextColor: java.lang.String = null,
+    tabBarPosition: reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewLibStrings.top | reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewLibStrings.bottom | reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewLibStrings.overlayTop | reactDashNativeDashScrollableDashTabDashViewLib.reactDashNativeDashScrollableDashTabDashViewLibStrings.overlayBottom = null,
+    tabBarTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    tabBarUnderlineStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): ScrollableTabViewProperties = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (contentProps != null) __obj.updateDynamic("contentProps")(contentProps)
+    if (initialPage != null) __obj.updateDynamic("initialPage")(initialPage.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    if (onChangeTab != null) __obj.updateDynamic("onChangeTab")(onChangeTab)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (prerenderingSiblingsNumber != null) __obj.updateDynamic("prerenderingSiblingsNumber")(prerenderingSiblingsNumber.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (renderTabBar != null) __obj.updateDynamic("renderTabBar")(renderTabBar.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollWithoutAnimation)) __obj.updateDynamic("scrollWithoutAnimation")(scrollWithoutAnimation)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (tabBarActiveTextColor != null) __obj.updateDynamic("tabBarActiveTextColor")(tabBarActiveTextColor)
+    if (tabBarBackgroundColor != null) __obj.updateDynamic("tabBarBackgroundColor")(tabBarBackgroundColor)
+    if (tabBarInactiveTextColor != null) __obj.updateDynamic("tabBarInactiveTextColor")(tabBarInactiveTextColor)
+    if (tabBarPosition != null) __obj.updateDynamic("tabBarPosition")(tabBarPosition.asInstanceOf[js.Any])
+    if (tabBarTextStyle != null) __obj.updateDynamic("tabBarTextStyle")(tabBarTextStyle.asInstanceOf[js.Any])
+    if (tabBarUnderlineStyle != null) __obj.updateDynamic("tabBarUnderlineStyle")(tabBarUnderlineStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScrollableTabViewProperties]
+  }
+}
+

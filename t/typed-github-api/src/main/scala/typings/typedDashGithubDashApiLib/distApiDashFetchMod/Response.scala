@@ -10,3 +10,13 @@ trait Response[T] extends js.Object {
   var nextLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply[T](data: T, nextLink: java.lang.String = null): Response[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (nextLink != null) __obj.updateDynamic("nextLink")(nextLink)
+    __obj.asInstanceOf[Response[T]]
+  }
+}
+

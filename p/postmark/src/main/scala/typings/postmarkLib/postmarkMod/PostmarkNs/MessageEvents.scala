@@ -13,3 +13,20 @@ trait MessageEvents extends js.Object {
   var Type: java.lang.String
 }
 
+object MessageEvents {
+  @scala.inline
+  def apply(
+    Details: MessageEventDetails,
+    ReceivedAt: java.lang.String,
+    Recipient: java.lang.String,
+    Type: java.lang.String
+  ): MessageEvents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Details")(Details)
+    __obj.updateDynamic("ReceivedAt")(ReceivedAt)
+    __obj.updateDynamic("Recipient")(Recipient)
+    __obj.updateDynamic("Type")(Type)
+    __obj.asInstanceOf[MessageEvents]
+  }
+}
+

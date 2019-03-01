@@ -16,3 +16,13 @@ trait IQueueOptions extends js.Object {
   var maxRetentionTime: scala.Double
 }
 
+object IQueueOptions {
+  @scala.inline
+  def apply(callbacks: stdLib.Partial[IQueueCallback], maxRetentionTime: scala.Double): IQueueOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callbacks")(callbacks)
+    __obj.updateDynamic("maxRetentionTime")(maxRetentionTime)
+    __obj.asInstanceOf[IQueueOptions]
+  }
+}
+

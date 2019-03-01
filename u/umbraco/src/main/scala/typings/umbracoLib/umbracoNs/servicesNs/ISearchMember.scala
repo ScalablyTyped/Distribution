@@ -17,3 +17,24 @@ trait ISearchMember extends js.Object {
   var subtitle: java.lang.String
 }
 
+object ISearchMember {
+  @scala.inline
+  def apply(
+    editorPath: java.lang.String,
+    id: scala.Double,
+    menuUrl: java.lang.String,
+    metaData: js.Object,
+    name: java.lang.String,
+    subtitle: java.lang.String
+  ): ISearchMember = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editorPath")(editorPath)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("menuUrl")(menuUrl)
+    __obj.updateDynamic("metaData")(metaData)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("subtitle")(subtitle)
+    __obj.asInstanceOf[ISearchMember]
+  }
+}
+

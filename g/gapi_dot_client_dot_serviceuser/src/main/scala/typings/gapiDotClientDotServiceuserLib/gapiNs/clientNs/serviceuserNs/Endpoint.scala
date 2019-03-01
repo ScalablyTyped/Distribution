@@ -43,3 +43,24 @@ trait Endpoint extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Endpoint {
+  @scala.inline
+  def apply(
+    aliases: js.Array[java.lang.String] = null,
+    allowCors: js.UndefOr[scala.Boolean] = js.undefined,
+    apis: js.Array[java.lang.String] = null,
+    features: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    target: java.lang.String = null
+  ): Endpoint = {
+    val __obj = js.Dynamic.literal()
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (!js.isUndefined(allowCors)) __obj.updateDynamic("allowCors")(allowCors)
+    if (apis != null) __obj.updateDynamic("apis")(apis)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[Endpoint]
+  }
+}
+

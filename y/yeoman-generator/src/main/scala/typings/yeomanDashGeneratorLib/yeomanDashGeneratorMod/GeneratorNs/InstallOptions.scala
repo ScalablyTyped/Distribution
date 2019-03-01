@@ -24,3 +24,20 @@ trait InstallOptions extends js.Object {
   var yarn: js.UndefOr[scala.Boolean | js.Object] = js.undefined
 }
 
+object InstallOptions {
+  @scala.inline
+  def apply(
+    bower: scala.Boolean | js.Object = null,
+    npm: scala.Boolean | js.Object = null,
+    skipMessage: js.UndefOr[scala.Boolean] = js.undefined,
+    yarn: scala.Boolean | js.Object = null
+  ): InstallOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bower != null) __obj.updateDynamic("bower")(bower.asInstanceOf[js.Any])
+    if (npm != null) __obj.updateDynamic("npm")(npm.asInstanceOf[js.Any])
+    if (!js.isUndefined(skipMessage)) __obj.updateDynamic("skipMessage")(skipMessage)
+    if (yarn != null) __obj.updateDynamic("yarn")(yarn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InstallOptions]
+  }
+}
+

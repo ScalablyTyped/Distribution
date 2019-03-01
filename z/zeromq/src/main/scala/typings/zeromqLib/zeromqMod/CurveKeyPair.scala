@@ -18,3 +18,13 @@ trait CurveKeyPair extends js.Object {
   var secret: java.lang.String
 }
 
+object CurveKeyPair {
+  @scala.inline
+  def apply(public: java.lang.String, secret: java.lang.String): CurveKeyPair = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("public")(public)
+    __obj.updateDynamic("secret")(secret)
+    __obj.asInstanceOf[CurveKeyPair]
+  }
+}
+

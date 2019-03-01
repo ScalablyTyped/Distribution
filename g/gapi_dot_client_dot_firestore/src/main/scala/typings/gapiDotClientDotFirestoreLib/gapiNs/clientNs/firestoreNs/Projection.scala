@@ -15,3 +15,12 @@ trait Projection extends js.Object {
   var fields: js.UndefOr[js.Array[FieldReference]] = js.undefined
 }
 
+object Projection {
+  @scala.inline
+  def apply(fields: js.Array[FieldReference] = null): Projection = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[Projection]
+  }
+}
+

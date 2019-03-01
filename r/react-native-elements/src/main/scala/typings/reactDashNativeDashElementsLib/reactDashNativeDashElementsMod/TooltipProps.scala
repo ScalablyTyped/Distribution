@@ -62,3 +62,36 @@ trait TooltipProps extends js.Object {
   var withPointer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TooltipProps {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    height: scala.Int | scala.Double = null,
+    highlightColor: java.lang.String = null,
+    onClose: js.Function0[scala.Unit] = null,
+    onOpen: js.Function0[scala.Unit] = null,
+    pointerColor: java.lang.String = null,
+    popover: reactLib.reactMod.ReactNs.ReactElement[js.Object] = null,
+    toggleOnPress: js.Function0[scala.Unit] = null,
+    width: scala.Int | scala.Double = null,
+    withOverlay: js.UndefOr[scala.Boolean] = js.undefined,
+    withPointer: js.UndefOr[scala.Boolean] = js.undefined
+  ): TooltipProps = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (pointerColor != null) __obj.updateDynamic("pointerColor")(pointerColor)
+    if (popover != null) __obj.updateDynamic("popover")(popover)
+    if (toggleOnPress != null) __obj.updateDynamic("toggleOnPress")(toggleOnPress)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (!js.isUndefined(withOverlay)) __obj.updateDynamic("withOverlay")(withOverlay)
+    if (!js.isUndefined(withPointer)) __obj.updateDynamic("withPointer")(withPointer)
+    __obj.asInstanceOf[TooltipProps]
+  }
+}
+

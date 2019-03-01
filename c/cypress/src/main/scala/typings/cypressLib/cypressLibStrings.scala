@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object cypressLibStrings {
   @js.native
-  sealed trait CONNECT extends js.Object
+  sealed trait CONNECT
+    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
   sealed trait Canary extends js.Object
@@ -19,7 +20,8 @@ object cypressLibStrings {
   sealed trait Chromium extends js.Object
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
   sealed trait DOLLARel extends js.Object
@@ -31,25 +33,32 @@ object cypressLibStrings {
   sealed trait FireFox extends js.Object
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait HEAD
+    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait OPTIONS
+    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH
+    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
-  sealed trait TRACE extends js.Object
+  sealed trait TRACE
+    extends cypressLib.CypressNs.HttpMethod
   
   @js.native
   sealed trait a extends js.Object
@@ -91,7 +100,8 @@ object cypressLibStrings {
   sealed trait article extends js.Object
   
   @js.native
-  sealed trait ascii extends js.Object
+  sealed trait ascii
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
   sealed trait aside extends js.Object
@@ -106,13 +116,15 @@ object cypressLibStrings {
   sealed trait b extends js.Object
   
   @js.native
-  sealed trait back extends js.Object
+  sealed trait back
+    extends cypressLib.CypressNs.HistoryDirection
   
   @js.native
   sealed trait base extends js.Object
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
   sealed trait baseUrl extends js.Object
@@ -241,7 +253,8 @@ object cypressLibStrings {
   sealed trait beDOTwithin extends js.Object
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
   sealed trait blockquote extends js.Object
@@ -253,13 +266,16 @@ object cypressLibStrings {
   sealed trait body extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends cypressLib.CypressNs.PositionType
   
   @js.native
-  sealed trait bottomLeft extends js.Object
+  sealed trait bottomLeft
+    extends cypressLib.CypressNs.PositionType
   
   @js.native
-  sealed trait bottomRight extends js.Object
+  sealed trait bottomRight
+    extends cypressLib.CypressNs.PositionType
   
   @js.native
   sealed trait br extends js.Object
@@ -286,7 +302,8 @@ object cypressLibStrings {
   sealed trait caption extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends cypressLib.CypressNs.PositionType
   
   @js.native
   sealed trait change extends js.Object
@@ -397,7 +414,8 @@ object cypressLibStrings {
   sealed trait dl extends js.Object
   
   @js.native
-  sealed trait document extends js.Object
+  sealed trait document
+    extends cypressLib.CypressNs.PrevSubject
   
   @js.native
   sealed trait drag extends js.Object
@@ -433,7 +451,8 @@ object cypressLibStrings {
   sealed trait electron extends js.Object
   
   @js.native
-  sealed trait element extends js.Object
+  sealed trait element
+    extends cypressLib.CypressNs.PrevSubject
   
   @js.native
   sealed trait em extends js.Object
@@ -502,7 +521,8 @@ object cypressLibStrings {
   sealed trait form extends js.Object
   
   @js.native
-  sealed trait forward extends js.Object
+  sealed trait forward
+    extends cypressLib.CypressNs.HistoryDirection
   
   @js.native
   sealed trait frame extends js.Object
@@ -631,7 +651,8 @@ object cypressLibStrings {
   sealed trait header extends js.Object
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
   sealed trait hgroup extends js.Object
@@ -676,25 +697,32 @@ object cypressLibStrings {
   sealed trait invalid extends js.Object
   
   @js.native
-  sealed trait `ipad-2` extends js.Object
+  sealed trait `ipad-2`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
-  sealed trait `ipad-mini` extends js.Object
+  sealed trait `ipad-mini`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
-  sealed trait `iphone-3` extends js.Object
+  sealed trait `iphone-3`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
-  sealed trait `iphone-4` extends js.Object
+  sealed trait `iphone-4`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
-  sealed trait `iphone-5` extends js.Object
+  sealed trait `iphone-5`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
-  sealed trait `iphone-6` extends js.Object
+  sealed trait `iphone-6`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
-  sealed trait `iphone-6+` extends js.Object
+  sealed trait `iphone-6+`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
   sealed trait kbd extends js.Object
@@ -712,13 +740,16 @@ object cypressLibStrings {
   sealed trait label extends js.Object
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape
+    extends cypressLib.CypressNs.ViewportOrientation
   
   @js.native
-  sealed trait latin1 extends js.Object
+  sealed trait latin1
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends cypressLib.CypressNs.PositionType
   
   @js.native
   sealed trait legend extends js.Object
@@ -757,13 +788,16 @@ object cypressLibStrings {
   sealed trait lostpointercapture extends js.Object
   
   @js.native
-  sealed trait `macbook-11` extends js.Object
+  sealed trait `macbook-11`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
-  sealed trait `macbook-13` extends js.Object
+  sealed trait `macbook-13`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
-  sealed trait `macbook-15` extends js.Object
+  sealed trait `macbook-15`
+    extends cypressLib.CypressNs.ViewportPreset
   
   @js.native
   sealed trait map extends js.Object
@@ -1081,7 +1115,8 @@ object cypressLibStrings {
   sealed trait option extends js.Object
   
   @js.native
-  sealed trait optional extends js.Object
+  sealed trait optional
+    extends cypressLib.CypressNs.PrevSubject
   
   @js.native
   sealed trait output extends js.Object
@@ -1141,7 +1176,8 @@ object cypressLibStrings {
   sealed trait port extends js.Object
   
   @js.native
-  sealed trait portrait extends js.Object
+  sealed trait portrait
+    extends cypressLib.CypressNs.ViewportOrientation
   
   @js.native
   sealed trait pre extends js.Object
@@ -1180,7 +1216,8 @@ object cypressLibStrings {
   sealed trait returned extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends cypressLib.CypressNs.PositionType
   
   @js.native
   sealed trait rt extends js.Object
@@ -1318,13 +1355,16 @@ object cypressLibStrings {
   sealed trait toggle extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends cypressLib.CypressNs.PositionType
   
   @js.native
-  sealed trait topLeft extends js.Object
+  sealed trait topLeft
+    extends cypressLib.CypressNs.PositionType
   
   @js.native
-  sealed trait topRight extends js.Object
+  sealed trait topRight
+    extends cypressLib.CypressNs.PositionType
   
   @js.native
   sealed trait touchcancel extends js.Object
@@ -1363,10 +1403,12 @@ object cypressLibStrings {
   sealed trait u extends js.Object
   
   @js.native
-  sealed trait `ucs-2` extends js.Object
+  sealed trait `ucs-2`
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
-  sealed trait ucs2 extends js.Object
+  sealed trait ucs2
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
   sealed trait ul extends js.Object
@@ -1378,16 +1420,20 @@ object cypressLibStrings {
   sealed trait `url:changed` extends js.Object
   
   @js.native
-  sealed trait `utf-16le` extends js.Object
+  sealed trait `utf-16le`
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
-  sealed trait `utf-8` extends js.Object
+  sealed trait `utf-8`
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
-  sealed trait utf16le extends js.Object
+  sealed trait utf16le
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends cypressLib.CypressNs.Encodings
   
   @js.native
   sealed trait `var` extends js.Object
@@ -1438,7 +1484,8 @@ object cypressLibStrings {
   sealed trait wheel extends js.Object
   
   @js.native
-  sealed trait window extends js.Object
+  sealed trait window
+    extends cypressLib.CypressNs.PrevSubject
   
   @js.native
   sealed trait `window:alert` extends js.Object

@@ -17,14 +17,5 @@ package object mockjsNs {
   // see https://github.com/nuysoft/Mock/wiki/Mock.valid()
   type MockjsValid = js.Function2[/* template */ js.Any, /* data */ js.Any, js.Array[MockjsValidRsItem]]
   type N = scala.Double
-  // Mockjs.Random - Date
-  // see https://github.com/nuysoft/Mock/wiki/Date
-  type RandomDateUtilString = mockjsLib.mockjsLibStrings.year | mockjsLib.mockjsLibStrings.month | mockjsLib.mockjsLibStrings.week | mockjsLib.mockjsLibStrings.day | mockjsLib.mockjsLibStrings.hour | mockjsLib.mockjsLibStrings.minute | mockjsLib.mockjsLibStrings.second
-  // Mockjs.Random - Image
-  // see https://github.com/nuysoft/Mock/wiki/Image
-  type RandomImageFormatString = mockjsLib.mockjsLibStrings.png | mockjsLib.mockjsLibStrings.gif | mockjsLib.mockjsLibStrings.jpg
-  // Mockjs.Random - Web
-  // see https://github.com/nuysoft/Mock/wiki/Web
-  type RandomWebProtocal = mockjsLib.mockjsLibStrings.http | mockjsLib.mockjsLibStrings.ftp | mockjsLib.mockjsLibStrings.gopher | mockjsLib.mockjsLibStrings.mailto | mockjsLib.mockjsLibStrings.mid | mockjsLib.mockjsLibStrings.cid | mockjsLib.mockjsLibStrings.news | mockjsLib.mockjsLibStrings.nntp | mockjsLib.mockjsLibStrings.prospero | mockjsLib.mockjsLibStrings.telnet | mockjsLib.mockjsLibStrings.rlogin | mockjsLib.mockjsLibStrings.tn3270 | mockjsLib.mockjsLibStrings.wais
   type S = java.lang.String
 }

@@ -26,3 +26,24 @@ trait SpeakOptions extends js.Object {
   var volume: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SpeakOptions {
+  @scala.inline
+  def apply(
+    gender: java.lang.String = null,
+    lang: java.lang.String = null,
+    pitch: scala.Int | scala.Double = null,
+    rate: scala.Int | scala.Double = null,
+    voiceName: java.lang.String = null,
+    volume: scala.Int | scala.Double = null
+  ): SpeakOptions = {
+    val __obj = js.Dynamic.literal()
+    if (gender != null) __obj.updateDynamic("gender")(gender)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    if (rate != null) __obj.updateDynamic("rate")(rate.asInstanceOf[js.Any])
+    if (voiceName != null) __obj.updateDynamic("voiceName")(voiceName)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpeakOptions]
+  }
+}
+

@@ -40,3 +40,28 @@ trait TaskState extends js.Object {
   ] = js.undefined
 }
 
+object TaskState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cloudwatchLogGroupArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN] = null,
+    destinationLocationArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    options: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AtimeBytesPerSecond] = null,
+    sourceLocationArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null
+  ): TaskState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (cloudwatchLogGroupArn != null) __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])
+    if (destinationLocationArn != null) __obj.updateDynamic("destinationLocationArn")(destinationLocationArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    if (sourceLocationArn != null) __obj.updateDynamic("sourceLocationArn")(sourceLocationArn.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TaskState]
+  }
+}
+

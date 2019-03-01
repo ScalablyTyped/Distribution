@@ -27,3 +27,26 @@ trait XInteractionPassword extends XInteractionContinuation {
   def setPassword(aPasswd: java.lang.String): scala.Unit
 }
 
+object XInteractionPassword {
+  @scala.inline
+  def apply(
+    Password: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getPassword: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    select: js.Function0[scala.Unit],
+    setPassword: js.Function1[java.lang.String, scala.Unit]
+  ): XInteractionPassword = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Password")(Password)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getPassword")(getPassword)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("select")(select)
+    __obj.updateDynamic("setPassword")(setPassword)
+    __obj.asInstanceOf[XInteractionPassword]
+  }
+}
+

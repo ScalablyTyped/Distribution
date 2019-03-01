@@ -15,3 +15,26 @@ trait WebhookOptions extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WebhookOptions {
+  @scala.inline
+  def apply(
+    attachments: js.Array[_] = null,
+    channel: java.lang.String = null,
+    icon_emoji: java.lang.String = null,
+    link_names: js.Any = null,
+    response_type: java.lang.String = null,
+    text: java.lang.String = null,
+    username: java.lang.String = null
+  ): WebhookOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (icon_emoji != null) __obj.updateDynamic("icon_emoji")(icon_emoji)
+    if (link_names != null) __obj.updateDynamic("link_names")(link_names)
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[WebhookOptions]
+  }
+}
+

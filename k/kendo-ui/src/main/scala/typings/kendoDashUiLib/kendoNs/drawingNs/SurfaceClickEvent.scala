@@ -10,3 +10,22 @@ trait SurfaceClickEvent extends SurfaceEvent {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object SurfaceClickEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Surface,
+    element: Element = null,
+    originalEvent: js.Any = null
+  ): SurfaceClickEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[SurfaceClickEvent]
+  }
+}
+

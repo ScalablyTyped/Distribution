@@ -10,3 +10,14 @@ trait WebNavigationReplacementCallbackDetails extends WebNavigationCallbackDetai
   var replacedTabId: scala.Double
 }
 
+object WebNavigationReplacementCallbackDetails {
+  @scala.inline
+  def apply(replacedTabId: scala.Double, tabId: scala.Double, timeStamp: scala.Double): WebNavigationReplacementCallbackDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("replacedTabId")(replacedTabId)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.asInstanceOf[WebNavigationReplacementCallbackDetails]
+  }
+}
+

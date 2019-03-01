@@ -12,3 +12,12 @@ trait PaletteColorMapping extends js.Object {
   var colors: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object PaletteColorMapping {
+  @scala.inline
+  def apply(colors: js.Array[_] = null): PaletteColorMapping = {
+    val __obj = js.Dynamic.literal()
+    if (colors != null) __obj.updateDynamic("colors")(colors)
+    __obj.asInstanceOf[PaletteColorMapping]
+  }
+}
+

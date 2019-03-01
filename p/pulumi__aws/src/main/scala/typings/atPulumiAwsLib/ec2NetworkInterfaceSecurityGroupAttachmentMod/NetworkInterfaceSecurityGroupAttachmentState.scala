@@ -16,3 +16,16 @@ trait NetworkInterfaceSecurityGroupAttachmentState extends js.Object {
   val securityGroupId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object NetworkInterfaceSecurityGroupAttachmentState {
+  @scala.inline
+  def apply(
+    networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): NetworkInterfaceSecurityGroupAttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    if (securityGroupId != null) __obj.updateDynamic("securityGroupId")(securityGroupId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkInterfaceSecurityGroupAttachmentState]
+  }
+}
+

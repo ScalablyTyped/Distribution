@@ -42,3 +42,42 @@ trait DateTimeRange extends js.Object {
   var StartYear: scala.Double
 }
 
+object DateTimeRange {
+  @scala.inline
+  def apply(
+    EndDay: scala.Double,
+    EndHours: scala.Double,
+    EndMinutes: scala.Double,
+    EndMonth: scala.Double,
+    EndNanoSeconds: scala.Double,
+    EndSeconds: scala.Double,
+    EndYear: scala.Double,
+    IsUTC: scala.Boolean,
+    StartDay: scala.Double,
+    StartHours: scala.Double,
+    StartMinutes: scala.Double,
+    StartMonth: scala.Double,
+    StartNanoSeconds: scala.Double,
+    StartSeconds: scala.Double,
+    StartYear: scala.Double
+  ): DateTimeRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EndDay")(EndDay)
+    __obj.updateDynamic("EndHours")(EndHours)
+    __obj.updateDynamic("EndMinutes")(EndMinutes)
+    __obj.updateDynamic("EndMonth")(EndMonth)
+    __obj.updateDynamic("EndNanoSeconds")(EndNanoSeconds)
+    __obj.updateDynamic("EndSeconds")(EndSeconds)
+    __obj.updateDynamic("EndYear")(EndYear)
+    __obj.updateDynamic("IsUTC")(IsUTC)
+    __obj.updateDynamic("StartDay")(StartDay)
+    __obj.updateDynamic("StartHours")(StartHours)
+    __obj.updateDynamic("StartMinutes")(StartMinutes)
+    __obj.updateDynamic("StartMonth")(StartMonth)
+    __obj.updateDynamic("StartNanoSeconds")(StartNanoSeconds)
+    __obj.updateDynamic("StartSeconds")(StartSeconds)
+    __obj.updateDynamic("StartYear")(StartYear)
+    __obj.asInstanceOf[DateTimeRange]
+  }
+}
+

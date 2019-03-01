@@ -17,3 +17,20 @@ trait Anon_BackgroundColor extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_BackgroundColor {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    excludeComponents: js.Array[java.lang.String] = null,
+    pixelRatio: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): Anon_BackgroundColor = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (excludeComponents != null) __obj.updateDynamic("excludeComponents")(excludeComponents)
+    if (pixelRatio != null) __obj.updateDynamic("pixelRatio")(pixelRatio.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_BackgroundColor]
+  }
+}
+

@@ -962,6 +962,8 @@ object SupportNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[ResolveCaseResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AfterTime = java.lang.String
   type AttachmentId = java.lang.String
@@ -1013,6 +1015,6 @@ object SupportNs extends js.Object {
   type TrustedAdvisorCheckRefreshStatusList = js.Array[TrustedAdvisorCheckRefreshStatus]
   type TrustedAdvisorCheckSummaryList = js.Array[TrustedAdvisorCheckSummary]
   type TrustedAdvisorResourceDetailList = js.Array[TrustedAdvisorResourceDetail]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-04-15` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

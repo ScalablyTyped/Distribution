@@ -10,3 +10,12 @@ trait BackendServiceCdnPolicy extends js.Object {
   var cacheKeyPolicy: js.UndefOr[CacheKeyPolicy] = js.undefined
 }
 
+object BackendServiceCdnPolicy {
+  @scala.inline
+  def apply(cacheKeyPolicy: CacheKeyPolicy = null): BackendServiceCdnPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (cacheKeyPolicy != null) __obj.updateDynamic("cacheKeyPolicy")(cacheKeyPolicy)
+    __obj.asInstanceOf[BackendServiceCdnPolicy]
+  }
+}
+

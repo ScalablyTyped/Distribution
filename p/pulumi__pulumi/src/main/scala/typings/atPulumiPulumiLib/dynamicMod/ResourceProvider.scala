@@ -76,3 +76,42 @@ trait ResourceProvider extends js.Object {
   def create(inputs: js.Any): js.Promise[CreateResult]
 }
 
+object ResourceProvider {
+  @scala.inline
+  def apply(
+    create: js.Function1[js.Any, js.Promise[CreateResult]],
+    check: js.Function2[/* olds */ js.Any, /* news */ js.Any, js.Promise[CheckResult]] = null,
+    delete: js.Function2[
+      /* id */ atPulumiPulumiLib.resourceMod.ID, 
+      /* props */ js.Any, 
+      js.Promise[scala.Unit]
+    ] = null,
+    diff: js.Function3[
+      /* id */ atPulumiPulumiLib.resourceMod.ID, 
+      /* olds */ js.Any, 
+      /* news */ js.Any, 
+      js.Promise[DiffResult]
+    ] = null,
+    read: js.Function2[
+      /* id */ atPulumiPulumiLib.resourceMod.ID, 
+      /* props */ js.UndefOr[js.Any], 
+      js.Promise[ReadResult]
+    ] = null,
+    update: js.Function3[
+      /* id */ atPulumiPulumiLib.resourceMod.ID, 
+      /* olds */ js.Any, 
+      /* news */ js.Any, 
+      js.Promise[UpdateResult]
+    ] = null
+  ): ResourceProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    if (check != null) __obj.updateDynamic("check")(check)
+    if (delete != null) __obj.updateDynamic("delete")(delete)
+    if (diff != null) __obj.updateDynamic("diff")(diff)
+    if (read != null) __obj.updateDynamic("read")(read)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ResourceProvider]
+  }
+}
+

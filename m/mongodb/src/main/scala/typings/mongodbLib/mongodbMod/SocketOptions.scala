@@ -39,3 +39,26 @@ trait SocketOptions extends js.Object {
   var socketTimeoutMS: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SocketOptions {
+  @scala.inline
+  def apply(
+    autoReconnect: js.UndefOr[scala.Boolean] = js.undefined,
+    connectTimeoutMS: scala.Int | scala.Double = null,
+    family: mongodbLib.mongodbLibNumbers.`4` | mongodbLib.mongodbLibNumbers.`6` = null,
+    keepAlive: js.UndefOr[scala.Boolean] = js.undefined,
+    keepAliveInitialDelay: scala.Int | scala.Double = null,
+    noDelay: js.UndefOr[scala.Boolean] = js.undefined,
+    socketTimeoutMS: scala.Int | scala.Double = null
+  ): SocketOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect)
+    if (connectTimeoutMS != null) __obj.updateDynamic("connectTimeoutMS")(connectTimeoutMS.asInstanceOf[js.Any])
+    if (family != null) __obj.updateDynamic("family")(family.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepAlive)) __obj.updateDynamic("keepAlive")(keepAlive)
+    if (keepAliveInitialDelay != null) __obj.updateDynamic("keepAliveInitialDelay")(keepAliveInitialDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(noDelay)) __obj.updateDynamic("noDelay")(noDelay)
+    if (socketTimeoutMS != null) __obj.updateDynamic("socketTimeoutMS")(socketTimeoutMS.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SocketOptions]
+  }
+}
+

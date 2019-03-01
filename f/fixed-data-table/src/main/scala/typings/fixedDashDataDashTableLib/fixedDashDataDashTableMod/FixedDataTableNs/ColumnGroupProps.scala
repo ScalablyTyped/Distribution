@@ -45,3 +45,27 @@ trait ColumnGroupProps
   ])
 }
 
+object ColumnGroupProps {
+  @scala.inline
+  def apply(
+    header: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+      /* props */ CellProps, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ]),
+    align: java.lang.String = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[ColumnGroup] = null
+  ): ColumnGroupProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnGroupProps]
+  }
+}
+

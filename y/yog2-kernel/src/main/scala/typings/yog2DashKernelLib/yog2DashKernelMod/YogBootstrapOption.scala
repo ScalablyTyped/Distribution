@@ -16,3 +16,20 @@ trait YogBootstrapOption extends js.Object {
   var rootPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object YogBootstrapOption {
+  @scala.inline
+  def apply(
+    app: expressLib.expressMod.eNs.Express = null,
+    confPath: java.lang.String = null,
+    pluginsPath: java.lang.String = null,
+    rootPath: java.lang.String = null
+  ): YogBootstrapOption = {
+    val __obj = js.Dynamic.literal()
+    if (app != null) __obj.updateDynamic("app")(app)
+    if (confPath != null) __obj.updateDynamic("confPath")(confPath)
+    if (pluginsPath != null) __obj.updateDynamic("pluginsPath")(pluginsPath)
+    if (rootPath != null) __obj.updateDynamic("rootPath")(rootPath)
+    __obj.asInstanceOf[YogBootstrapOption]
+  }
+}
+

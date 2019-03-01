@@ -38,3 +38,36 @@ trait Anon_AltCurrentTimeMillis extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltCurrentTimeMillis {
+  @scala.inline
+  def apply(
+    dataSourceId: java.lang.String,
+    datasetId: java.lang.String,
+    userId: java.lang.String,
+    alt: java.lang.String = null,
+    currentTimeMillis: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    modifiedTimeMillis: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltCurrentTimeMillis = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataSourceId")(dataSourceId)
+    __obj.updateDynamic("datasetId")(datasetId)
+    __obj.updateDynamic("userId")(userId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (currentTimeMillis != null) __obj.updateDynamic("currentTimeMillis")(currentTimeMillis)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (modifiedTimeMillis != null) __obj.updateDynamic("modifiedTimeMillis")(modifiedTimeMillis)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltCurrentTimeMillis]
+  }
+}
+

@@ -22,3 +22,26 @@ trait AnimationOptions extends js.Object {
   var zoom: js.UndefOr[ZoomOptions] = js.undefined
 }
 
+object AnimationOptions {
+  @scala.inline
+  def apply(
+    center: CenterOptions = null,
+    duration: scala.Int | scala.Double = null,
+    easing: cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction = null,
+    fit: AnimationFitOptions = null,
+    pan: Position = null,
+    panBy: Position = null,
+    zoom: ZoomOptions = null
+  ): AnimationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (fit != null) __obj.updateDynamic("fit")(fit)
+    if (pan != null) __obj.updateDynamic("pan")(pan)
+    if (panBy != null) __obj.updateDynamic("panBy")(panBy)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[AnimationOptions]
+  }
+}
+

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object DomainNs {
-  type SupportedDBTypes = cqrsDashDomainLib.cqrsDashDomainLibStrings.mongodb | cqrsDashDomainLib.cqrsDashDomainLibStrings.redis | cqrsDashDomainLib.cqrsDashDomainLibStrings.tingodb | cqrsDashDomainLib.cqrsDashDomainLibStrings.azuretable | cqrsDashDomainLib.cqrsDashDomainLibStrings.inmemory
   /**
     * @param changed is the new aggregate object
     * @param previous is the old aggregate object

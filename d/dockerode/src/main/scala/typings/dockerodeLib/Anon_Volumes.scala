@@ -10,3 +10,16 @@ trait Anon_Volumes extends js.Object {
   var Warnings: js.Array[java.lang.String]
 }
 
+object Anon_Volumes {
+  @scala.inline
+  def apply(
+    Volumes: js.Array[dockerodeLib.dockerodeMod.DockerodeNs.VolumeInspectInfo],
+    Warnings: js.Array[java.lang.String]
+  ): Anon_Volumes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Volumes")(Volumes)
+    __obj.updateDynamic("Warnings")(Warnings)
+    __obj.asInstanceOf[Anon_Volumes]
+  }
+}
+

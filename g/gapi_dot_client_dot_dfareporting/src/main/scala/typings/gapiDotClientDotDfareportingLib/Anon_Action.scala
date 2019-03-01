@@ -55,3 +55,48 @@ trait Anon_Action extends js.Object {
   var userProfileIds: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Action {
+  @scala.inline
+  def apply(
+    profileId: java.lang.String,
+    action: java.lang.String = null,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    ids: java.lang.String = null,
+    key: java.lang.String = null,
+    maxChangeTime: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    minChangeTime: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    objectIds: java.lang.String = null,
+    objectType: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    searchString: java.lang.String = null,
+    userIp: java.lang.String = null,
+    userProfileIds: java.lang.String = null
+  ): Anon_Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("profileId")(profileId)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxChangeTime != null) __obj.updateDynamic("maxChangeTime")(maxChangeTime)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (minChangeTime != null) __obj.updateDynamic("minChangeTime")(minChangeTime)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (searchString != null) __obj.updateDynamic("searchString")(searchString)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (userProfileIds != null) __obj.updateDynamic("userProfileIds")(userProfileIds)
+    __obj.asInstanceOf[Anon_Action]
+  }
+}
+

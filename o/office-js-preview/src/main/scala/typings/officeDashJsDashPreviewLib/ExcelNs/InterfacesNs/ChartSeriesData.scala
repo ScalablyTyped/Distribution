@@ -372,3 +372,104 @@ trait ChartSeriesData extends js.Object {
   var yerrorBars: js.UndefOr[ChartErrorBarsData] = js.undefined
 }
 
+object ChartSeriesData {
+  @scala.inline
+  def apply(
+    axisGroup: officeDashJsDashPreviewLib.ExcelNs.ChartAxisGroup | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Primary | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Secondary = null,
+    binOptions: ChartBinOptionsData = null,
+    boxwhiskerOptions: ChartBoxwhiskerOptionsData = null,
+    bubbleScale: scala.Int | scala.Double = null,
+    chartType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 83 */ js.Any = null,
+    dataLabels: ChartDataLabelsData = null,
+    doughnutHoleSize: scala.Int | scala.Double = null,
+    explosion: scala.Int | scala.Double = null,
+    filtered: js.UndefOr[scala.Boolean] = js.undefined,
+    firstSliceAngle: scala.Int | scala.Double = null,
+    format: ChartSeriesFormatData = null,
+    gapWidth: scala.Int | scala.Double = null,
+    gradientMaximumColor: java.lang.String = null,
+    gradientMaximumType: officeDashJsDashPreviewLib.ExcelNs.ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent = null,
+    gradientMaximumValue: scala.Int | scala.Double = null,
+    gradientMidpointColor: java.lang.String = null,
+    gradientMidpointType: officeDashJsDashPreviewLib.ExcelNs.ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent = null,
+    gradientMidpointValue: scala.Int | scala.Double = null,
+    gradientMinimumColor: java.lang.String = null,
+    gradientMinimumType: officeDashJsDashPreviewLib.ExcelNs.ChartGradientStyleType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ExtremeValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Number | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Percent = null,
+    gradientMinimumValue: scala.Int | scala.Double = null,
+    gradientStyle: officeDashJsDashPreviewLib.ExcelNs.ChartGradientStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TwoPhaseColor | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThreePhaseColor = null,
+    hasDataLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    invertColor: java.lang.String = null,
+    invertIfNegative: js.UndefOr[scala.Boolean] = js.undefined,
+    mapOptions: ChartMapOptionsData = null,
+    markerBackgroundColor: java.lang.String = null,
+    markerForegroundColor: java.lang.String = null,
+    markerSize: scala.Int | scala.Double = null,
+    markerStyle: officeDashJsDashPreviewLib.ExcelNs.ChartMarkerStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Invalid | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Square | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.X | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Star | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dot | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Dash | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Circle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Plus | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Picture = null,
+    name: java.lang.String = null,
+    overlap: scala.Int | scala.Double = null,
+    parentLabelStrategy: officeDashJsDashPreviewLib.ExcelNs.ChartParentLabelStrategy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Banner | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Overlapping = null,
+    plotOrder: scala.Int | scala.Double = null,
+    points: js.Array[ChartPointData] = null,
+    secondPlotSize: scala.Int | scala.Double = null,
+    showConnectorLines: js.UndefOr[scala.Boolean] = js.undefined,
+    showLeaderLines: js.UndefOr[scala.Boolean] = js.undefined,
+    showShadow: js.UndefOr[scala.Boolean] = js.undefined,
+    smooth: js.UndefOr[scala.Boolean] = js.undefined,
+    splitType: officeDashJsDashPreviewLib.ExcelNs.ChartSplitType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByPosition | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByPercentValue | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.SplitByCustomSplit = null,
+    splitValue: scala.Int | scala.Double = null,
+    trendlines: js.Array[ChartTrendlineData] = null,
+    varyByCategories: js.UndefOr[scala.Boolean] = js.undefined,
+    xerrorBars: ChartErrorBarsData = null,
+    yerrorBars: ChartErrorBarsData = null
+  ): ChartSeriesData = {
+    val __obj = js.Dynamic.literal()
+    if (axisGroup != null) __obj.updateDynamic("axisGroup")(axisGroup.asInstanceOf[js.Any])
+    if (binOptions != null) __obj.updateDynamic("binOptions")(binOptions)
+    if (boxwhiskerOptions != null) __obj.updateDynamic("boxwhiskerOptions")(boxwhiskerOptions)
+    if (bubbleScale != null) __obj.updateDynamic("bubbleScale")(bubbleScale.asInstanceOf[js.Any])
+    if (chartType != null) __obj.updateDynamic("chartType")(chartType)
+    if (dataLabels != null) __obj.updateDynamic("dataLabels")(dataLabels)
+    if (doughnutHoleSize != null) __obj.updateDynamic("doughnutHoleSize")(doughnutHoleSize.asInstanceOf[js.Any])
+    if (explosion != null) __obj.updateDynamic("explosion")(explosion.asInstanceOf[js.Any])
+    if (!js.isUndefined(filtered)) __obj.updateDynamic("filtered")(filtered)
+    if (firstSliceAngle != null) __obj.updateDynamic("firstSliceAngle")(firstSliceAngle.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (gapWidth != null) __obj.updateDynamic("gapWidth")(gapWidth.asInstanceOf[js.Any])
+    if (gradientMaximumColor != null) __obj.updateDynamic("gradientMaximumColor")(gradientMaximumColor)
+    if (gradientMaximumType != null) __obj.updateDynamic("gradientMaximumType")(gradientMaximumType.asInstanceOf[js.Any])
+    if (gradientMaximumValue != null) __obj.updateDynamic("gradientMaximumValue")(gradientMaximumValue.asInstanceOf[js.Any])
+    if (gradientMidpointColor != null) __obj.updateDynamic("gradientMidpointColor")(gradientMidpointColor)
+    if (gradientMidpointType != null) __obj.updateDynamic("gradientMidpointType")(gradientMidpointType.asInstanceOf[js.Any])
+    if (gradientMidpointValue != null) __obj.updateDynamic("gradientMidpointValue")(gradientMidpointValue.asInstanceOf[js.Any])
+    if (gradientMinimumColor != null) __obj.updateDynamic("gradientMinimumColor")(gradientMinimumColor)
+    if (gradientMinimumType != null) __obj.updateDynamic("gradientMinimumType")(gradientMinimumType.asInstanceOf[js.Any])
+    if (gradientMinimumValue != null) __obj.updateDynamic("gradientMinimumValue")(gradientMinimumValue.asInstanceOf[js.Any])
+    if (gradientStyle != null) __obj.updateDynamic("gradientStyle")(gradientStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDataLabels)) __obj.updateDynamic("hasDataLabels")(hasDataLabels)
+    if (invertColor != null) __obj.updateDynamic("invertColor")(invertColor)
+    if (!js.isUndefined(invertIfNegative)) __obj.updateDynamic("invertIfNegative")(invertIfNegative)
+    if (mapOptions != null) __obj.updateDynamic("mapOptions")(mapOptions)
+    if (markerBackgroundColor != null) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor)
+    if (markerForegroundColor != null) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor)
+    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (overlap != null) __obj.updateDynamic("overlap")(overlap.asInstanceOf[js.Any])
+    if (parentLabelStrategy != null) __obj.updateDynamic("parentLabelStrategy")(parentLabelStrategy.asInstanceOf[js.Any])
+    if (plotOrder != null) __obj.updateDynamic("plotOrder")(plotOrder.asInstanceOf[js.Any])
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (secondPlotSize != null) __obj.updateDynamic("secondPlotSize")(secondPlotSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(showConnectorLines)) __obj.updateDynamic("showConnectorLines")(showConnectorLines)
+    if (!js.isUndefined(showLeaderLines)) __obj.updateDynamic("showLeaderLines")(showLeaderLines)
+    if (!js.isUndefined(showShadow)) __obj.updateDynamic("showShadow")(showShadow)
+    if (!js.isUndefined(smooth)) __obj.updateDynamic("smooth")(smooth)
+    if (splitType != null) __obj.updateDynamic("splitType")(splitType.asInstanceOf[js.Any])
+    if (splitValue != null) __obj.updateDynamic("splitValue")(splitValue.asInstanceOf[js.Any])
+    if (trendlines != null) __obj.updateDynamic("trendlines")(trendlines)
+    if (!js.isUndefined(varyByCategories)) __obj.updateDynamic("varyByCategories")(varyByCategories)
+    if (xerrorBars != null) __obj.updateDynamic("xerrorBars")(xerrorBars)
+    if (yerrorBars != null) __obj.updateDynamic("yerrorBars")(yerrorBars)
+    __obj.asInstanceOf[ChartSeriesData]
+  }
+}
+

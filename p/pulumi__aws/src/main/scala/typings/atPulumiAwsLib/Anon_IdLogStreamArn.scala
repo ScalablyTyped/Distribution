@@ -11,3 +11,14 @@ trait Anon_IdLogStreamArn extends js.Object {
   var roleArn: java.lang.String
 }
 
+object Anon_IdLogStreamArn {
+  @scala.inline
+  def apply(id: java.lang.String, logStreamArn: java.lang.String, roleArn: java.lang.String): Anon_IdLogStreamArn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("logStreamArn")(logStreamArn)
+    __obj.updateDynamic("roleArn")(roleArn)
+    __obj.asInstanceOf[Anon_IdLogStreamArn]
+  }
+}
+

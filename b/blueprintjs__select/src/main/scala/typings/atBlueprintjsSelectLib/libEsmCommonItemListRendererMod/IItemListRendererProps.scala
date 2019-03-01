@@ -11,7 +11,7 @@ trait IItemListRendererProps[T] extends js.Object {
     * The currently focused item (for keyboard interactions), or `null` to
     * indicate that no item is active.
     */
-  var activeItem: T | scala.Null = js.native
+  var activeItem: T | atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem | scala.Null = js.native
   /**
     * Array of items filtered by `itemListPredicate` or `itemPredicate`.
     * See `items` for the full list of items.

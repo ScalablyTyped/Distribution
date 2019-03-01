@@ -37,3 +37,52 @@ trait MenuProps extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object MenuProps {
+  @scala.inline
+  def apply(
+    autoWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    desktop: js.UndefOr[scala.Boolean] = js.undefined,
+    disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    initiallyKeyboardFocused: js.UndefOr[scala.Boolean] = js.undefined,
+    listStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    maxHeight: scala.Int | scala.Double = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: js.Function2[
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
+      /* itemValue */ js.Any | js.Array[_], 
+      scala.Unit
+    ] = null,
+    onEscKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
+    onItemClick: js.Function2[
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
+      /* item */ MenuItem, 
+      scala.Unit
+    ] = null,
+    onKeyDown: reactLib.reactMod.ReactNs.KeyboardEventHandler[js.Object] = null,
+    selectedMenuItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    value: js.Any | js.Array[_] = null,
+    valueLink: materialDashUiLib.underscoreUnderscoreMaterialUINs.ReactLink[_ | js.Array[_]] = null,
+    width: java.lang.String | scala.Double = null
+  ): MenuProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoWidth)) __obj.updateDynamic("autoWidth")(autoWidth)
+    if (!js.isUndefined(desktop)) __obj.updateDynamic("desktop")(desktop)
+    if (!js.isUndefined(disableAutoFocus)) __obj.updateDynamic("disableAutoFocus")(disableAutoFocus)
+    if (!js.isUndefined(initiallyKeyboardFocused)) __obj.updateDynamic("initiallyKeyboardFocused")(initiallyKeyboardFocused)
+    if (listStyle != null) __obj.updateDynamic("listStyle")(listStyle)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onEscKeyDown != null) __obj.updateDynamic("onEscKeyDown")(onEscKeyDown)
+    if (onItemClick != null) __obj.updateDynamic("onItemClick")(onItemClick)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (selectedMenuItemStyle != null) __obj.updateDynamic("selectedMenuItemStyle")(selectedMenuItemStyle)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueLink != null) __obj.updateDynamic("valueLink")(valueLink)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MenuProps]
+  }
+}
+

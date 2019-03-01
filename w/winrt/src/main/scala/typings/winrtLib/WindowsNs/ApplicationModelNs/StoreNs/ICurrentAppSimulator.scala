@@ -17,3 +17,40 @@ trait ICurrentAppSimulator extends js.Object {
   def requestProductPurchaseAsync(productId: java.lang.String, includeReceipt: scala.Boolean): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]
 }
 
+object ICurrentAppSimulator {
+  @scala.inline
+  def apply(
+    appId: java.lang.String,
+    getAppReceiptAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]],
+    getProductReceiptAsync: js.Function1[
+      java.lang.String, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]
+    ],
+    licenseInformation: LicenseInformation,
+    linkUri: winrtLib.WindowsNs.FoundationNs.Uri,
+    loadListingInformationAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ListingInformation]],
+    reloadSimulatorAsync: js.Function1[
+      winrtLib.WindowsNs.StorageNs.StorageFile, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncAction
+    ],
+    requestAppPurchaseAsync: js.Function1[scala.Boolean, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]],
+    requestProductPurchaseAsync: js.Function2[
+      java.lang.String, 
+      scala.Boolean, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[java.lang.String]
+    ]
+  ): ICurrentAppSimulator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appId")(appId)
+    __obj.updateDynamic("getAppReceiptAsync")(getAppReceiptAsync)
+    __obj.updateDynamic("getProductReceiptAsync")(getProductReceiptAsync)
+    __obj.updateDynamic("licenseInformation")(licenseInformation)
+    __obj.updateDynamic("linkUri")(linkUri)
+    __obj.updateDynamic("loadListingInformationAsync")(loadListingInformationAsync)
+    __obj.updateDynamic("reloadSimulatorAsync")(reloadSimulatorAsync)
+    __obj.updateDynamic("requestAppPurchaseAsync")(requestAppPurchaseAsync)
+    __obj.updateDynamic("requestProductPurchaseAsync")(requestProductPurchaseAsync)
+    __obj.asInstanceOf[ICurrentAppSimulator]
+  }
+}
+

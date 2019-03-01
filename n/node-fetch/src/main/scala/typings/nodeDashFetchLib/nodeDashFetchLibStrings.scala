@@ -10,154 +10,208 @@ object nodeDashFetchLibStrings {
   sealed trait FetchError extends js.Object
   
   @js.native
-  sealed trait audio extends js.Object
+  sealed trait audio
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait basic extends js.Object
+  sealed trait basic
+    extends nodeDashFetchLib.nodeDashFetchMod.ResponseType
   
   @js.native
-  sealed trait beacon extends js.Object
+  sealed trait beacon
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait cors extends js.Object
+  sealed trait cors
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestMode
+       with nodeDashFetchLib.nodeDashFetchMod.ResponseType
   
   @js.native
-  sealed trait cspreport extends js.Object
+  sealed trait cspreport
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestCache
+       with nodeDashFetchLib.nodeDashFetchMod.ResponseType
   
   @js.native
-  sealed trait download extends js.Object
+  sealed trait download
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait embed extends js.Object
+  sealed trait embed
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestRedirect
+       with nodeDashFetchLib.nodeDashFetchMod.ResponseType
   
   @js.native
-  sealed trait eventsource extends js.Object
+  sealed trait eventsource
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait favicon extends js.Object
+  sealed trait favicon
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait fetch extends js.Object
+  sealed trait fetch
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait follow extends js.Object
+  sealed trait follow
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestRedirect
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait font
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait `force-cache` extends js.Object
+  sealed trait `force-cache`
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestCache
   
   @js.native
-  sealed trait form extends js.Object
+  sealed trait form
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait frame extends js.Object
+  sealed trait frame
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait hyperlink extends js.Object
+  sealed trait hyperlink
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait iframe extends js.Object
+  sealed trait iframe
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait imageset extends js.Object
+  sealed trait imageset
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait `import` extends js.Object
+  sealed trait `import`
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait include extends js.Object
+  sealed trait include
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestCredentials
   
   @js.native
-  sealed trait internal extends js.Object
+  sealed trait internal
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait location extends js.Object
+  sealed trait location
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait manifest extends js.Object
+  sealed trait manifest
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestRedirect
   
   @js.native
-  sealed trait `no-cache` extends js.Object
+  sealed trait `no-cache`
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestCache
   
   @js.native
-  sealed trait `no-cors` extends js.Object
+  sealed trait `no-cors`
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestMode
   
   @js.native
-  sealed trait `no-store` extends js.Object
+  sealed trait `no-store`
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestCache
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait omit extends js.Object
+  sealed trait omit
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestCredentials
   
   @js.native
-  sealed trait `only-if-cached` extends js.Object
+  sealed trait `only-if-cached`
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestCache
   
   @js.native
-  sealed trait opaque extends js.Object
+  sealed trait opaque
+    extends nodeDashFetchLib.nodeDashFetchMod.ResponseType
   
   @js.native
-  sealed trait opaqueredirect extends js.Object
+  sealed trait opaqueredirect
+    extends nodeDashFetchLib.nodeDashFetchMod.ResponseType
   
   @js.native
-  sealed trait ping extends js.Object
+  sealed trait ping
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait plugin extends js.Object
+  sealed trait plugin
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait prefetch extends js.Object
+  sealed trait prefetch
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait reload extends js.Object
+  sealed trait reload
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestCache
   
   @js.native
-  sealed trait `same-origin` extends js.Object
+  sealed trait `same-origin`
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestCredentials
+       with nodeDashFetchLib.nodeDashFetchMod.RequestMode
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait script
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait serviceworker extends js.Object
+  sealed trait serviceworker
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait sharedworker extends js.Object
+  sealed trait sharedworker
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait style
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait subresource extends js.Object
+  sealed trait subresource
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait track extends js.Object
+  sealed trait track
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait video extends js.Object
+  sealed trait video
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait worker extends js.Object
+  sealed trait worker
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait xmlhttprequest extends js.Object
+  sealed trait xmlhttprequest
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @js.native
-  sealed trait xslt extends js.Object
+  sealed trait xslt
+    extends nodeDashFetchLib.nodeDashFetchMod.RequestContext
   
   @scala.inline
   def FetchError: FetchError = "FetchError".asInstanceOf[FetchError]

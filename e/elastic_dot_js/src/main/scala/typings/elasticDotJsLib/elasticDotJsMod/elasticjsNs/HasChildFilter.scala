@@ -49,3 +49,31 @@ trait HasChildFilter extends Filter {
   def `type`(t: java.lang.String): HasChildFilter
 }
 
+object HasChildFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, HasChildFilter],
+    cacheKey: js.Function1[java.lang.String, HasChildFilter],
+    filter: js.Function1[Query, HasChildFilter],
+    name: js.Function1[java.lang.String, HasChildFilter],
+    query: js.Function1[Query, HasChildFilter],
+    scope: js.Function1[java.lang.String, HasChildFilter],
+    shortCircuitCutoff: js.Function1[scala.Double, HasChildFilter],
+    toJSON: js.Function0[HasChildFilter],
+    `type`: js.Function1[java.lang.String, HasChildFilter]
+  ): HasChildFilter = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("shortCircuitCutoff")(shortCircuitCutoff)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[HasChildFilter]
+  }
+}
+

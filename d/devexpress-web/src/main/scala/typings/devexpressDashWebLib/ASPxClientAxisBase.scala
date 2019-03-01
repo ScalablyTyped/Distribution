@@ -21,3 +21,20 @@ trait ASPxClientAxisBase extends ASPxClientWebChartElementNamed {
   var range: ASPxClientAxisRange
 }
 
+object ASPxClientAxisBase {
+  @scala.inline
+  def apply(
+    chart: ASPxClientWebChart,
+    diagram: ASPxClientXYDiagramBase,
+    name: java.lang.String,
+    range: ASPxClientAxisRange
+  ): ASPxClientAxisBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("diagram")(diagram)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[ASPxClientAxisBase]
+  }
+}
+

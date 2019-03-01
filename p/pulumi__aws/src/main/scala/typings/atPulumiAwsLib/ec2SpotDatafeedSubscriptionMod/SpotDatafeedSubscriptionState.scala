@@ -16,3 +16,16 @@ trait SpotDatafeedSubscriptionState extends js.Object {
   val prefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object SpotDatafeedSubscriptionState {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    prefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): SpotDatafeedSubscriptionState = {
+    val __obj = js.Dynamic.literal()
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpotDatafeedSubscriptionState]
+  }
+}
+

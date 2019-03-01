@@ -46,7 +46,6 @@ package object distInterfacesMod {
     ]
   ]) | java.lang.String | graphqlLib.languageAstMod.DocumentNode
   type NextResolverFn = js.Function0[js.Promise[js.Any]]
-  type Operation = graphqlDashToolsLib.graphqlDashToolsLibStrings.query | graphqlDashToolsLib.graphqlDashToolsLibStrings.mutation | graphqlDashToolsLib.graphqlDashToolsLibStrings.subscription
   type ResolveType[T /* <: graphqlLib.typeDefinitionMod.GraphQLType */] = js.Function1[/* type */ T, T]
   type Result = graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault] with graphqlDashToolsLib.Anon_Extensions
   type UnitOrList[Type] = Type | js.Array[Type]

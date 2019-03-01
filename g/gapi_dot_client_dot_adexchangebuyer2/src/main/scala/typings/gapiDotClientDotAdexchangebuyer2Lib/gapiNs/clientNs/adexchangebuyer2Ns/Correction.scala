@@ -14,3 +14,18 @@ trait Correction extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Correction {
+  @scala.inline
+  def apply(
+    contexts: js.Array[ServingContext] = null,
+    details: js.Array[java.lang.String] = null,
+    `type`: java.lang.String = null
+  ): Correction = {
+    val __obj = js.Dynamic.literal()
+    if (contexts != null) __obj.updateDynamic("contexts")(contexts)
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Correction]
+  }
+}
+

@@ -56,3 +56,36 @@ trait InputDescriptor extends js.Object {
   var values: InputValues
 }
 
+object InputDescriptor {
+  @scala.inline
+  def apply(
+    dependencyInputIds: js.Array[java.lang.String],
+    description: java.lang.String,
+    groupName: java.lang.String,
+    hasDynamicValueInformation: scala.Boolean,
+    id: java.lang.String,
+    inputMode: InputMode,
+    isConfidential: scala.Boolean,
+    name: java.lang.String,
+    useInDefaultDescription: scala.Boolean,
+    validation: InputValidation,
+    valueHint: java.lang.String,
+    values: InputValues
+  ): InputDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dependencyInputIds")(dependencyInputIds)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("groupName")(groupName)
+    __obj.updateDynamic("hasDynamicValueInformation")(hasDynamicValueInformation)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("inputMode")(inputMode)
+    __obj.updateDynamic("isConfidential")(isConfidential)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("useInDefaultDescription")(useInDefaultDescription)
+    __obj.updateDynamic("validation")(validation)
+    __obj.updateDynamic("valueHint")(valueHint)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[InputDescriptor]
+  }
+}
+

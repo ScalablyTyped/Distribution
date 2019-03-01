@@ -16,3 +16,27 @@ trait AccountstatusesResource extends js.Object {
   def list(request: gapiDotClientDotContentLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[AccountstatusesListResponse]
 }
 
+object AccountstatusesResource {
+  @scala.inline
+  def apply(
+    custombatch: js.Function1[
+      gapiDotClientDotContentLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountstatusesCustomBatchResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountStatus]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountstatusesListResponse]
+    ]
+  ): AccountstatusesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custombatch")(custombatch)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AccountstatusesResource]
+  }
+}
+

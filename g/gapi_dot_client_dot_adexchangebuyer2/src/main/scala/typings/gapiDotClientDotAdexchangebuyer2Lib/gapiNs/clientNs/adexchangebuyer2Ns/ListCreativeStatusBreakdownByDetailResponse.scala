@@ -24,3 +24,18 @@ trait ListCreativeStatusBreakdownByDetailResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListCreativeStatusBreakdownByDetailResponse {
+  @scala.inline
+  def apply(
+    detailType: java.lang.String = null,
+    filteredBidDetailRows: js.Array[FilteredBidDetailRow] = null,
+    nextPageToken: java.lang.String = null
+  ): ListCreativeStatusBreakdownByDetailResponse = {
+    val __obj = js.Dynamic.literal()
+    if (detailType != null) __obj.updateDynamic("detailType")(detailType)
+    if (filteredBidDetailRows != null) __obj.updateDynamic("filteredBidDetailRows")(filteredBidDetailRows)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListCreativeStatusBreakdownByDetailResponse]
+  }
+}
+

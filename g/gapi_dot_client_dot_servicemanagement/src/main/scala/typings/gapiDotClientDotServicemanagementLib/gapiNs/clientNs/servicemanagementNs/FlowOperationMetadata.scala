@@ -39,3 +39,26 @@ trait FlowOperationMetadata extends js.Object {
   var surface: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FlowOperationMetadata {
+  @scala.inline
+  def apply(
+    cancelState: java.lang.String = null,
+    deadline: java.lang.String = null,
+    flowName: java.lang.String = null,
+    operationType: scala.Int | scala.Double = null,
+    resourceNames: js.Array[java.lang.String] = null,
+    startTime: java.lang.String = null,
+    surface: java.lang.String = null
+  ): FlowOperationMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (cancelState != null) __obj.updateDynamic("cancelState")(cancelState)
+    if (deadline != null) __obj.updateDynamic("deadline")(deadline)
+    if (flowName != null) __obj.updateDynamic("flowName")(flowName)
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType.asInstanceOf[js.Any])
+    if (resourceNames != null) __obj.updateDynamic("resourceNames")(resourceNames)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (surface != null) __obj.updateDynamic("surface")(surface)
+    __obj.asInstanceOf[FlowOperationMetadata]
+  }
+}
+

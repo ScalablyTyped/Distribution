@@ -28,3 +28,22 @@ trait PrioritySettings extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PrioritySettings {
+  @scala.inline
+  def apply(
+    dataSource: js.Any | js.Array[_] = null,
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    template: java.lang.String = null,
+    text: java.lang.String = null,
+    value: java.lang.String = null
+  ): PrioritySettings = {
+    val __obj = js.Dynamic.literal()
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PrioritySettings]
+  }
+}
+

@@ -15,3 +15,12 @@ trait CloudPushNotificationSuccessArg extends js.Object {
   var deviceToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CloudPushNotificationSuccessArg {
+  @scala.inline
+  def apply(deviceToken: java.lang.String = null): CloudPushNotificationSuccessArg = {
+    val __obj = js.Dynamic.literal()
+    if (deviceToken != null) __obj.updateDynamic("deviceToken")(deviceToken)
+    __obj.asInstanceOf[CloudPushNotificationSuccessArg]
+  }
+}
+

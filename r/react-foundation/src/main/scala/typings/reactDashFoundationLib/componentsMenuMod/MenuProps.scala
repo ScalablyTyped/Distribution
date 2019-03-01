@@ -295,3 +295,32 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MenuProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLUListElement] = null,
+    alignment: reactDashFoundationLib.enumsMod.MenuAlignments = null,
+    horizontalOnMedium: js.UndefOr[scala.Boolean] = js.undefined,
+    iconsOnTop: js.UndefOr[scala.Boolean] = js.undefined,
+    isDropdown: js.UndefOr[scala.Boolean] = js.undefined,
+    isExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    isNested: js.UndefOr[scala.Boolean] = js.undefined,
+    isSimple: js.UndefOr[scala.Boolean] = js.undefined,
+    isVertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): MenuProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (!js.isUndefined(horizontalOnMedium)) __obj.updateDynamic("horizontalOnMedium")(horizontalOnMedium)
+    if (!js.isUndefined(iconsOnTop)) __obj.updateDynamic("iconsOnTop")(iconsOnTop)
+    if (!js.isUndefined(isDropdown)) __obj.updateDynamic("isDropdown")(isDropdown)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (!js.isUndefined(isNested)) __obj.updateDynamic("isNested")(isNested)
+    if (!js.isUndefined(isSimple)) __obj.updateDynamic("isSimple")(isSimple)
+    if (!js.isUndefined(isVertical)) __obj.updateDynamic("isVertical")(isVertical)
+    __obj.asInstanceOf[MenuProps]
+  }
+}
+

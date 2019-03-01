@@ -10,3 +10,16 @@ trait Transport extends js.Object {
   def setHandler(handler: atStorybookChannelsLib.EventHandler): scala.Unit
 }
 
+object Transport {
+  @scala.inline
+  def apply(
+    send: js.Function1[js.Any, scala.Unit],
+    setHandler: js.Function1[atStorybookChannelsLib.EventHandler, scala.Unit]
+  ): Transport = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("send")(send)
+    __obj.updateDynamic("setHandler")(setHandler)
+    __obj.asInstanceOf[Transport]
+  }
+}
+

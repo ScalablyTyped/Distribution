@@ -16,3 +16,13 @@ trait CaptionRenderedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object CaptionRenderedEventUIParam {
+  @scala.inline
+  def apply(captionContainer: stdLib.Element = null, owner: js.Any = null): CaptionRenderedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (captionContainer != null) __obj.updateDynamic("captionContainer")(captionContainer)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[CaptionRenderedEventUIParam]
+  }
+}
+

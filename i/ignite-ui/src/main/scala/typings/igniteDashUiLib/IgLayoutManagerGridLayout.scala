@@ -64,3 +64,35 @@ trait IgLayoutManagerGridLayout
   var rows: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgLayoutManagerGridLayout {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgLayoutManagerGridLayout
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animationDuration: scala.Int | scala.Double = null,
+    cols: scala.Int | scala.Double = null,
+    columnHeight: java.lang.String | scala.Double | js.Array[_] = null,
+    columnWidth: java.lang.String | scala.Double | js.Array[_] = null,
+    marginLeft: scala.Int | scala.Double = null,
+    marginTop: scala.Int | scala.Double = null,
+    overrideConfigOnSetOption: js.UndefOr[scala.Boolean] = js.undefined,
+    rearrangeItems: js.UndefOr[scala.Boolean] = js.undefined,
+    rows: scala.Int | scala.Double = null
+  ): IgLayoutManagerGridLayout = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (columnHeight != null) __obj.updateDynamic("columnHeight")(columnHeight.asInstanceOf[js.Any])
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (marginLeft != null) __obj.updateDynamic("marginLeft")(marginLeft.asInstanceOf[js.Any])
+    if (marginTop != null) __obj.updateDynamic("marginTop")(marginTop.asInstanceOf[js.Any])
+    if (!js.isUndefined(overrideConfigOnSetOption)) __obj.updateDynamic("overrideConfigOnSetOption")(overrideConfigOnSetOption)
+    if (!js.isUndefined(rearrangeItems)) __obj.updateDynamic("rearrangeItems")(rearrangeItems)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgLayoutManagerGridLayout]
+  }
+}
+

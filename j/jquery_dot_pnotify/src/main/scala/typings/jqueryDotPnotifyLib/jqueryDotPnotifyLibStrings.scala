@@ -7,46 +7,46 @@ import scala.scalajs.js.annotation._
 
 object jqueryDotPnotifyLibStrings {
   @js.native
-  sealed trait bootstrap2 extends js.Object
+  sealed trait bootstrap2 extends StylingOptions
   
   @js.native
-  sealed trait bootstrap3 extends js.Object
+  sealed trait bootstrap3 extends StylingOptions
   
   @js.native
-  sealed trait brighttheme extends js.Object
+  sealed trait brighttheme extends StylingOptions
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait closed extends StateOptions
   
   @js.native
-  sealed trait closing extends js.Object
+  sealed trait closing extends StateOptions
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends NoticeTypeOptions
   
   @js.native
-  sealed trait fontawesome extends js.Object
+  sealed trait fontawesome extends StylingOptions
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info extends NoticeTypeOptions
   
   @js.native
-  sealed trait initializing extends js.Object
+  sealed trait initializing extends StateOptions
   
   @js.native
-  sealed trait jqueryui extends js.Object
+  sealed trait jqueryui extends StylingOptions
   
   @js.native
-  sealed trait notice extends js.Object
+  sealed trait notice extends NoticeTypeOptions
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open extends StateOptions
   
   @js.native
-  sealed trait opening extends js.Object
+  sealed trait opening extends StateOptions
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success extends NoticeTypeOptions
   
   @scala.inline
   def bootstrap2: bootstrap2 = "bootstrap2".asInstanceOf[bootstrap2]

@@ -10,3 +10,12 @@ trait DetectionsListResponse extends js.Object {
   var detections: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object DetectionsListResponse {
+  @scala.inline
+  def apply(detections: js.Array[_] = null): DetectionsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (detections != null) __obj.updateDynamic("detections")(detections)
+    __obj.asInstanceOf[DetectionsListResponse]
+  }
+}
+

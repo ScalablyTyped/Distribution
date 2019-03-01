@@ -25,3 +25,20 @@ trait RenameFile extends ResourceOperation {
   var options: js.UndefOr[RenameFileOptions] = js.undefined
 }
 
+object RenameFile {
+  @scala.inline
+  def apply(
+    kind: vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesLibStrings.rename,
+    newUri: java.lang.String,
+    oldUri: java.lang.String,
+    options: RenameFileOptions = null
+  ): RenameFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("newUri")(newUri)
+    __obj.updateDynamic("oldUri")(oldUri)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[RenameFile]
+  }
+}
+

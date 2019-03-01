@@ -15,5 +15,9 @@ class SignatureConverter ()
     context: typedocLib.distLibConverterContextMod.Context,
     node: typescriptLib.typescriptMod.tsNs.FunctionExpression
   ): typedocLib.distLibModelsMod.Reflection = js.native
+  def convert(
+    context: typedocLib.distLibConverterContextMod.Context,
+    node: typescriptLib.typescriptMod.tsNs.SignatureDeclaration
+  ): typedocLib.distLibModelsMod.Reflection = js.native
 }
 

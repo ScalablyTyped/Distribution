@@ -269,3 +269,312 @@ trait NamedTypes extends js.Object {
   var YieldExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.YieldExpression]
 }
 
+object NamedTypes {
+  @scala.inline
+  def apply(
+    AnyTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.AnyTypeAnnotation],
+    ArrayExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ArrayExpression],
+    ArrayPattern: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ArrayPattern],
+    ArrayTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ArrayTypeAnnotation],
+    ArrowFunctionExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ArrowFunctionExpression],
+    AssignmentExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.AssignmentExpression],
+    AssignmentPattern: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.AssignmentPattern],
+    AwaitExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.AwaitExpression],
+    BigIntLiteral: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.BigIntLiteral],
+    BinaryExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.BinaryExpression],
+    BindExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.BindExpression],
+    Block: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Block],
+    BlockStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.BlockStatement],
+    BooleanLiteral: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.BooleanLiteral],
+    BooleanLiteralTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.BooleanLiteralTypeAnnotation],
+    BooleanTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.BooleanTypeAnnotation],
+    BreakStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.BreakStatement],
+    CallExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.CallExpression],
+    CatchClause: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.CatchClause],
+    ClassBody: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ClassBody],
+    ClassDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ClassDeclaration],
+    ClassExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ClassExpression],
+    ClassImplements: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ClassImplements],
+    ClassMethod: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ClassMethod],
+    ClassPrivateMethod: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ClassPrivateMethod],
+    ClassPrivateProperty: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ClassPrivateProperty],
+    ClassProperty: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ClassProperty],
+    ClassPropertyDefinition: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ClassPropertyDefinition],
+    Comment: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Comment],
+    CommentBlock: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.CommentBlock],
+    CommentLine: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.CommentLine],
+    ComprehensionBlock: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ComprehensionBlock],
+    ComprehensionExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ComprehensionExpression],
+    ConditionalExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ConditionalExpression],
+    ContinueStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ContinueStatement],
+    DebuggerStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DebuggerStatement],
+    Declaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Declaration],
+    DeclareClass: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareClass],
+    DeclareExportAllDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareExportAllDeclaration],
+    DeclareExportDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareExportDeclaration],
+    DeclareFunction: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareFunction],
+    DeclareInterface: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareInterface],
+    DeclareModule: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareModule],
+    DeclareModuleExports: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareModuleExports],
+    DeclareOpaqueType: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareOpaqueType],
+    DeclareTypeAlias: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareTypeAlias],
+    DeclareVariable: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclareVariable],
+    DeclaredPredicate: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DeclaredPredicate],
+    Decorator: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Decorator],
+    Directive: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Directive],
+    DirectiveLiteral: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DirectiveLiteral],
+    DoExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DoExpression],
+    DoWhileStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.DoWhileStatement],
+    EmptyStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.EmptyStatement],
+    EmptyTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.EmptyTypeAnnotation],
+    ExistentialTypeParam: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExistentialTypeParam],
+    ExistsTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExistsTypeAnnotation],
+    ExportAllDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExportAllDeclaration],
+    ExportBatchSpecifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExportBatchSpecifier],
+    ExportDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExportDeclaration],
+    ExportDefaultDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExportDefaultDeclaration],
+    ExportDefaultSpecifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExportDefaultSpecifier],
+    ExportNamedDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExportNamedDeclaration],
+    ExportNamespaceSpecifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExportNamespaceSpecifier],
+    ExportSpecifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExportSpecifier],
+    Expression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Expression],
+    ExpressionStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ExpressionStatement],
+    File: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.File],
+    Flow: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Flow],
+    FlowPredicate: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.FlowPredicate],
+    FlowType: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.FlowType],
+    ForAwaitStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ForAwaitStatement],
+    ForInStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ForInStatement],
+    ForOfStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ForOfStatement],
+    ForStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ForStatement],
+    Function: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Function],
+    FunctionDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.FunctionDeclaration],
+    FunctionExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.FunctionExpression],
+    FunctionTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.FunctionTypeAnnotation],
+    FunctionTypeParam: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.FunctionTypeParam],
+    GeneratorExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.GeneratorExpression],
+    GenericTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.GenericTypeAnnotation],
+    Identifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Identifier],
+    IfStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.IfStatement],
+    Import: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Import],
+    ImportDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ImportDeclaration],
+    ImportDefaultSpecifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ImportDefaultSpecifier],
+    ImportNamespaceSpecifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ImportNamespaceSpecifier],
+    ImportSpecifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ImportSpecifier],
+    InferredPredicate: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.InferredPredicate],
+    InterfaceDeclaration: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.InterfaceDeclaration],
+    InterfaceExtends: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.InterfaceExtends],
+    InterfaceTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.InterfaceTypeAnnotation],
+    InterpreterDirective: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.InterpreterDirective],
+    IntersectionTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.IntersectionTypeAnnotation],
+    JSXAttribute: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXAttribute],
+    JSXClosingElement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXClosingElement],
+    JSXClosingFragment: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXClosingFragment],
+    JSXElement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXElement],
+    JSXEmptyExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXEmptyExpression],
+    JSXExpressionContainer: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXExpressionContainer],
+    JSXFragment: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXFragment],
+    JSXIdentifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXIdentifier],
+    JSXMemberExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXMemberExpression],
+    JSXNamespacedName: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXNamespacedName],
+    JSXOpeningElement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXOpeningElement],
+    JSXOpeningFragment: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXOpeningFragment],
+    JSXSpreadAttribute: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXSpreadAttribute],
+    JSXSpreadChild: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXSpreadChild],
+    JSXText: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.JSXText],
+    LabeledStatement: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.LabeledStatement],
+    Line: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Line],
+    Literal: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Literal],
+    LogicalExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.LogicalExpression],
+    MemberExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.MemberExpression],
+    MemberTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.MemberTypeAnnotation],
+    MetaProperty: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.MetaProperty],
+    MethodDefinition: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.MethodDefinition],
+    MixedTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.MixedTypeAnnotation],
+    ModuleSpecifier: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ModuleSpecifier],
+    NewExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.NewExpression],
+    Node: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Node],
+    Noop: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Noop],
+    NullLiteral: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.NullLiteral],
+    NullLiteralTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.NullLiteralTypeAnnotation],
+    NullTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.NullTypeAnnotation],
+    NullableTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.NullableTypeAnnotation],
+    NumberLiteralTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.NumberLiteralTypeAnnotation],
+    NumberTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.NumberTypeAnnotation],
+    NumericLiteral: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.NumericLiteral],
+    NumericLiteralTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.NumericLiteralTypeAnnotation],
+    ObjectExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectExpression],
+    ObjectMethod: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectMethod],
+    ObjectPattern: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectPattern],
+    ObjectProperty: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectProperty],
+    ObjectTypeAnnotation: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectTypeAnnotation],
+    ObjectTypeCallProperty: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectTypeCallProperty],
+    ObjectTypeIndexer: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectTypeIndexer],
+    ObjectTypeInternalSlot: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectTypeInternalSlot],
+    ObjectTypeProperty: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectTypeProperty],
+    ObjectTypeSpreadProperty: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ObjectTypeSpreadProperty],
+    OpaqueType: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.OpaqueType],
+    OptionalCallExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.OptionalCallExpression],
+    OptionalMemberExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.OptionalMemberExpression],
+    ParenthesizedExpression: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.ParenthesizedExpression],
+    Pattern: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Pattern],
+    Position: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Position],
+    Printable: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Printable],
+    PrivateName: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.PrivateName],
+    Program: astDashTypesLib.libTypesMod.Type[astDashTypesLib.genNodesMod.Program]
+  ): NamedTypes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AnyTypeAnnotation")(AnyTypeAnnotation)
+    __obj.updateDynamic("ArrayExpression")(ArrayExpression)
+    __obj.updateDynamic("ArrayPattern")(ArrayPattern)
+    __obj.updateDynamic("ArrayTypeAnnotation")(ArrayTypeAnnotation)
+    __obj.updateDynamic("ArrowFunctionExpression")(ArrowFunctionExpression)
+    __obj.updateDynamic("AssignmentExpression")(AssignmentExpression)
+    __obj.updateDynamic("AssignmentPattern")(AssignmentPattern)
+    __obj.updateDynamic("AwaitExpression")(AwaitExpression)
+    __obj.updateDynamic("BigIntLiteral")(BigIntLiteral)
+    __obj.updateDynamic("BinaryExpression")(BinaryExpression)
+    __obj.updateDynamic("BindExpression")(BindExpression)
+    __obj.updateDynamic("Block")(Block)
+    __obj.updateDynamic("BlockStatement")(BlockStatement)
+    __obj.updateDynamic("BooleanLiteral")(BooleanLiteral)
+    __obj.updateDynamic("BooleanLiteralTypeAnnotation")(BooleanLiteralTypeAnnotation)
+    __obj.updateDynamic("BooleanTypeAnnotation")(BooleanTypeAnnotation)
+    __obj.updateDynamic("BreakStatement")(BreakStatement)
+    __obj.updateDynamic("CallExpression")(CallExpression)
+    __obj.updateDynamic("CatchClause")(CatchClause)
+    __obj.updateDynamic("ClassBody")(ClassBody)
+    __obj.updateDynamic("ClassDeclaration")(ClassDeclaration)
+    __obj.updateDynamic("ClassExpression")(ClassExpression)
+    __obj.updateDynamic("ClassImplements")(ClassImplements)
+    __obj.updateDynamic("ClassMethod")(ClassMethod)
+    __obj.updateDynamic("ClassPrivateMethod")(ClassPrivateMethod)
+    __obj.updateDynamic("ClassPrivateProperty")(ClassPrivateProperty)
+    __obj.updateDynamic("ClassProperty")(ClassProperty)
+    __obj.updateDynamic("ClassPropertyDefinition")(ClassPropertyDefinition)
+    __obj.updateDynamic("Comment")(Comment)
+    __obj.updateDynamic("CommentBlock")(CommentBlock)
+    __obj.updateDynamic("CommentLine")(CommentLine)
+    __obj.updateDynamic("ComprehensionBlock")(ComprehensionBlock)
+    __obj.updateDynamic("ComprehensionExpression")(ComprehensionExpression)
+    __obj.updateDynamic("ConditionalExpression")(ConditionalExpression)
+    __obj.updateDynamic("ContinueStatement")(ContinueStatement)
+    __obj.updateDynamic("DebuggerStatement")(DebuggerStatement)
+    __obj.updateDynamic("Declaration")(Declaration)
+    __obj.updateDynamic("DeclareClass")(DeclareClass)
+    __obj.updateDynamic("DeclareExportAllDeclaration")(DeclareExportAllDeclaration)
+    __obj.updateDynamic("DeclareExportDeclaration")(DeclareExportDeclaration)
+    __obj.updateDynamic("DeclareFunction")(DeclareFunction)
+    __obj.updateDynamic("DeclareInterface")(DeclareInterface)
+    __obj.updateDynamic("DeclareModule")(DeclareModule)
+    __obj.updateDynamic("DeclareModuleExports")(DeclareModuleExports)
+    __obj.updateDynamic("DeclareOpaqueType")(DeclareOpaqueType)
+    __obj.updateDynamic("DeclareTypeAlias")(DeclareTypeAlias)
+    __obj.updateDynamic("DeclareVariable")(DeclareVariable)
+    __obj.updateDynamic("DeclaredPredicate")(DeclaredPredicate)
+    __obj.updateDynamic("Decorator")(Decorator)
+    __obj.updateDynamic("Directive")(Directive)
+    __obj.updateDynamic("DirectiveLiteral")(DirectiveLiteral)
+    __obj.updateDynamic("DoExpression")(DoExpression)
+    __obj.updateDynamic("DoWhileStatement")(DoWhileStatement)
+    __obj.updateDynamic("EmptyStatement")(EmptyStatement)
+    __obj.updateDynamic("EmptyTypeAnnotation")(EmptyTypeAnnotation)
+    __obj.updateDynamic("ExistentialTypeParam")(ExistentialTypeParam)
+    __obj.updateDynamic("ExistsTypeAnnotation")(ExistsTypeAnnotation)
+    __obj.updateDynamic("ExportAllDeclaration")(ExportAllDeclaration)
+    __obj.updateDynamic("ExportBatchSpecifier")(ExportBatchSpecifier)
+    __obj.updateDynamic("ExportDeclaration")(ExportDeclaration)
+    __obj.updateDynamic("ExportDefaultDeclaration")(ExportDefaultDeclaration)
+    __obj.updateDynamic("ExportDefaultSpecifier")(ExportDefaultSpecifier)
+    __obj.updateDynamic("ExportNamedDeclaration")(ExportNamedDeclaration)
+    __obj.updateDynamic("ExportNamespaceSpecifier")(ExportNamespaceSpecifier)
+    __obj.updateDynamic("ExportSpecifier")(ExportSpecifier)
+    __obj.updateDynamic("Expression")(Expression)
+    __obj.updateDynamic("ExpressionStatement")(ExpressionStatement)
+    __obj.updateDynamic("File")(File)
+    __obj.updateDynamic("Flow")(Flow)
+    __obj.updateDynamic("FlowPredicate")(FlowPredicate)
+    __obj.updateDynamic("FlowType")(FlowType)
+    __obj.updateDynamic("ForAwaitStatement")(ForAwaitStatement)
+    __obj.updateDynamic("ForInStatement")(ForInStatement)
+    __obj.updateDynamic("ForOfStatement")(ForOfStatement)
+    __obj.updateDynamic("ForStatement")(ForStatement)
+    __obj.updateDynamic("Function")(Function)
+    __obj.updateDynamic("FunctionDeclaration")(FunctionDeclaration)
+    __obj.updateDynamic("FunctionExpression")(FunctionExpression)
+    __obj.updateDynamic("FunctionTypeAnnotation")(FunctionTypeAnnotation)
+    __obj.updateDynamic("FunctionTypeParam")(FunctionTypeParam)
+    __obj.updateDynamic("GeneratorExpression")(GeneratorExpression)
+    __obj.updateDynamic("GenericTypeAnnotation")(GenericTypeAnnotation)
+    __obj.updateDynamic("Identifier")(Identifier)
+    __obj.updateDynamic("IfStatement")(IfStatement)
+    __obj.updateDynamic("Import")(Import)
+    __obj.updateDynamic("ImportDeclaration")(ImportDeclaration)
+    __obj.updateDynamic("ImportDefaultSpecifier")(ImportDefaultSpecifier)
+    __obj.updateDynamic("ImportNamespaceSpecifier")(ImportNamespaceSpecifier)
+    __obj.updateDynamic("ImportSpecifier")(ImportSpecifier)
+    __obj.updateDynamic("InferredPredicate")(InferredPredicate)
+    __obj.updateDynamic("InterfaceDeclaration")(InterfaceDeclaration)
+    __obj.updateDynamic("InterfaceExtends")(InterfaceExtends)
+    __obj.updateDynamic("InterfaceTypeAnnotation")(InterfaceTypeAnnotation)
+    __obj.updateDynamic("InterpreterDirective")(InterpreterDirective)
+    __obj.updateDynamic("IntersectionTypeAnnotation")(IntersectionTypeAnnotation)
+    __obj.updateDynamic("JSXAttribute")(JSXAttribute)
+    __obj.updateDynamic("JSXClosingElement")(JSXClosingElement)
+    __obj.updateDynamic("JSXClosingFragment")(JSXClosingFragment)
+    __obj.updateDynamic("JSXElement")(JSXElement)
+    __obj.updateDynamic("JSXEmptyExpression")(JSXEmptyExpression)
+    __obj.updateDynamic("JSXExpressionContainer")(JSXExpressionContainer)
+    __obj.updateDynamic("JSXFragment")(JSXFragment)
+    __obj.updateDynamic("JSXIdentifier")(JSXIdentifier)
+    __obj.updateDynamic("JSXMemberExpression")(JSXMemberExpression)
+    __obj.updateDynamic("JSXNamespacedName")(JSXNamespacedName)
+    __obj.updateDynamic("JSXOpeningElement")(JSXOpeningElement)
+    __obj.updateDynamic("JSXOpeningFragment")(JSXOpeningFragment)
+    __obj.updateDynamic("JSXSpreadAttribute")(JSXSpreadAttribute)
+    __obj.updateDynamic("JSXSpreadChild")(JSXSpreadChild)
+    __obj.updateDynamic("JSXText")(JSXText)
+    __obj.updateDynamic("LabeledStatement")(LabeledStatement)
+    __obj.updateDynamic("Line")(Line)
+    __obj.updateDynamic("Literal")(Literal)
+    __obj.updateDynamic("LogicalExpression")(LogicalExpression)
+    __obj.updateDynamic("MemberExpression")(MemberExpression)
+    __obj.updateDynamic("MemberTypeAnnotation")(MemberTypeAnnotation)
+    __obj.updateDynamic("MetaProperty")(MetaProperty)
+    __obj.updateDynamic("MethodDefinition")(MethodDefinition)
+    __obj.updateDynamic("MixedTypeAnnotation")(MixedTypeAnnotation)
+    __obj.updateDynamic("ModuleSpecifier")(ModuleSpecifier)
+    __obj.updateDynamic("NewExpression")(NewExpression)
+    __obj.updateDynamic("Node")(Node)
+    __obj.updateDynamic("Noop")(Noop)
+    __obj.updateDynamic("NullLiteral")(NullLiteral)
+    __obj.updateDynamic("NullLiteralTypeAnnotation")(NullLiteralTypeAnnotation)
+    __obj.updateDynamic("NullTypeAnnotation")(NullTypeAnnotation)
+    __obj.updateDynamic("NullableTypeAnnotation")(NullableTypeAnnotation)
+    __obj.updateDynamic("NumberLiteralTypeAnnotation")(NumberLiteralTypeAnnotation)
+    __obj.updateDynamic("NumberTypeAnnotation")(NumberTypeAnnotation)
+    __obj.updateDynamic("NumericLiteral")(NumericLiteral)
+    __obj.updateDynamic("NumericLiteralTypeAnnotation")(NumericLiteralTypeAnnotation)
+    __obj.updateDynamic("ObjectExpression")(ObjectExpression)
+    __obj.updateDynamic("ObjectMethod")(ObjectMethod)
+    __obj.updateDynamic("ObjectPattern")(ObjectPattern)
+    __obj.updateDynamic("ObjectProperty")(ObjectProperty)
+    __obj.updateDynamic("ObjectTypeAnnotation")(ObjectTypeAnnotation)
+    __obj.updateDynamic("ObjectTypeCallProperty")(ObjectTypeCallProperty)
+    __obj.updateDynamic("ObjectTypeIndexer")(ObjectTypeIndexer)
+    __obj.updateDynamic("ObjectTypeInternalSlot")(ObjectTypeInternalSlot)
+    __obj.updateDynamic("ObjectTypeProperty")(ObjectTypeProperty)
+    __obj.updateDynamic("ObjectTypeSpreadProperty")(ObjectTypeSpreadProperty)
+    __obj.updateDynamic("OpaqueType")(OpaqueType)
+    __obj.updateDynamic("OptionalCallExpression")(OptionalCallExpression)
+    __obj.updateDynamic("OptionalMemberExpression")(OptionalMemberExpression)
+    __obj.updateDynamic("ParenthesizedExpression")(ParenthesizedExpression)
+    __obj.updateDynamic("Pattern")(Pattern)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("Printable")(Printable)
+    __obj.updateDynamic("PrivateName")(PrivateName)
+    __obj.updateDynamic("Program")(Program)
+    __obj.asInstanceOf[NamedTypes]
+  }
+}
+

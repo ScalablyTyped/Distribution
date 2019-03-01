@@ -24,3 +24,14 @@ trait FILEConnectionProperties extends ConnectionProperties {
   var CharSet: java.lang.String
 }
 
+object FILEConnectionProperties {
+  @scala.inline
+  def apply(CharSet: java.lang.String, password: java.lang.String, user: java.lang.String): FILEConnectionProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CharSet")(CharSet)
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[FILEConnectionProperties]
+  }
+}
+

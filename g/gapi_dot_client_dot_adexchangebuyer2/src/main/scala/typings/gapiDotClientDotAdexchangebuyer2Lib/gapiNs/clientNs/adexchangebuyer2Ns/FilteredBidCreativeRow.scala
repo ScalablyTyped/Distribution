@@ -14,3 +14,18 @@ trait FilteredBidCreativeRow extends js.Object {
   var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
 }
 
+object FilteredBidCreativeRow {
+  @scala.inline
+  def apply(
+    bidCount: MetricValue = null,
+    creativeId: java.lang.String = null,
+    rowDimensions: RowDimensions = null
+  ): FilteredBidCreativeRow = {
+    val __obj = js.Dynamic.literal()
+    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount)
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId)
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    __obj.asInstanceOf[FilteredBidCreativeRow]
+  }
+}
+

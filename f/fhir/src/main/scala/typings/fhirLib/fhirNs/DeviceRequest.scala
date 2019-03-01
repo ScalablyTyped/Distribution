@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Medical device request
   */
-trait DeviceRequest extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DeviceRequest extends DomainResource {
   /**
     * Contains extended information for property 'authoredOn'.
     */
@@ -121,5 +122,96 @@ trait DeviceRequest extends DomainResource {
     * Additional clinical information
     */
   var supportingInfo: js.UndefOr[js.Array[Reference]] = js.undefined
+}
+
+object DeviceRequest {
+  @scala.inline
+  def apply(
+    intent: CodeableConcept,
+    subject: Reference,
+    _authoredOn: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _occurrenceDateTime: Element = null,
+    _priority: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    authoredOn: dateTime = null,
+    basedOn: js.Array[Reference] = null,
+    codeCodeableConcept: CodeableConcept = null,
+    codeReference: Reference = null,
+    contained: js.Array[Resource] = null,
+    context: Reference = null,
+    definition: js.Array[Reference] = null,
+    extension: js.Array[Extension] = null,
+    groupIdentifier: Identifier = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    note: js.Array[Annotation] = null,
+    occurrenceDateTime: dateTime = null,
+    occurrencePeriod: Period = null,
+    occurrenceTiming: Timing = null,
+    performer: Reference = null,
+    performerType: CodeableConcept = null,
+    priorRequest: js.Array[Reference] = null,
+    priority: code = null,
+    reasonCode: js.Array[CodeableConcept] = null,
+    reasonReference: js.Array[Reference] = null,
+    relevantHistory: js.Array[Reference] = null,
+    requester: DeviceRequestRequester = null,
+    resourceType: code = null,
+    status: code = null,
+    supportingInfo: js.Array[Reference] = null,
+    text: Narrative = null
+  ): DeviceRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("intent")(intent)
+    __obj.updateDynamic("subject")(subject)
+    if (_authoredOn != null) __obj.updateDynamic("_authoredOn")(_authoredOn)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_occurrenceDateTime != null) __obj.updateDynamic("_occurrenceDateTime")(_occurrenceDateTime)
+    if (_priority != null) __obj.updateDynamic("_priority")(_priority)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (authoredOn != null) __obj.updateDynamic("authoredOn")(authoredOn)
+    if (basedOn != null) __obj.updateDynamic("basedOn")(basedOn)
+    if (codeCodeableConcept != null) __obj.updateDynamic("codeCodeableConcept")(codeCodeableConcept)
+    if (codeReference != null) __obj.updateDynamic("codeReference")(codeReference)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (definition != null) __obj.updateDynamic("definition")(definition)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (groupIdentifier != null) __obj.updateDynamic("groupIdentifier")(groupIdentifier)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (occurrenceDateTime != null) __obj.updateDynamic("occurrenceDateTime")(occurrenceDateTime)
+    if (occurrencePeriod != null) __obj.updateDynamic("occurrencePeriod")(occurrencePeriod)
+    if (occurrenceTiming != null) __obj.updateDynamic("occurrenceTiming")(occurrenceTiming)
+    if (performer != null) __obj.updateDynamic("performer")(performer)
+    if (performerType != null) __obj.updateDynamic("performerType")(performerType)
+    if (priorRequest != null) __obj.updateDynamic("priorRequest")(priorRequest)
+    if (priority != null) __obj.updateDynamic("priority")(priority)
+    if (reasonCode != null) __obj.updateDynamic("reasonCode")(reasonCode)
+    if (reasonReference != null) __obj.updateDynamic("reasonReference")(reasonReference)
+    if (relevantHistory != null) __obj.updateDynamic("relevantHistory")(relevantHistory)
+    if (requester != null) __obj.updateDynamic("requester")(requester)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (supportingInfo != null) __obj.updateDynamic("supportingInfo")(supportingInfo)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[DeviceRequest]
+  }
 }
 

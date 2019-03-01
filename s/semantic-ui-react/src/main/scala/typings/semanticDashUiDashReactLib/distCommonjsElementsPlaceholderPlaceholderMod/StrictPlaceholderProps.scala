@@ -20,3 +20,24 @@ trait StrictPlaceholderProps extends js.Object {
   var inverted: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StrictPlaceholderProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    fluid: js.UndefOr[scala.Boolean] = js.undefined,
+    inverted: js.UndefOr[scala.Boolean] = js.undefined
+  ): StrictPlaceholderProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
+    if (!js.isUndefined(inverted)) __obj.updateDynamic("inverted")(inverted)
+    __obj.asInstanceOf[StrictPlaceholderProps]
+  }
+}
+

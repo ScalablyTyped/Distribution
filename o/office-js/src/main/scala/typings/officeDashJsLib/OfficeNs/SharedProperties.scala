@@ -33,3 +33,18 @@ trait SharedProperties extends js.Object {
   var restUrl: java.lang.String
 }
 
+object SharedProperties {
+  @scala.inline
+  def apply(
+    delegatePermissions: officeDashJsLib.OfficeNs.MailboxEnumsNs.DelegatePermissions,
+    owner: java.lang.String,
+    restUrl: java.lang.String
+  ): SharedProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delegatePermissions")(delegatePermissions)
+    __obj.updateDynamic("owner")(owner)
+    __obj.updateDynamic("restUrl")(restUrl)
+    __obj.asInstanceOf[SharedProperties]
+  }
+}
+

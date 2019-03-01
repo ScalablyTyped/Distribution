@@ -48,3 +48,32 @@ trait RouteArgs extends js.Object {
   val vpcPeeringConnectionId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RouteArgs {
+  @scala.inline
+  def apply(
+    routeTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    destinationCidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    destinationIpv6CidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    egressOnlyGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    gatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    natGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    transitGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcPeeringConnectionId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RouteArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
+    if (destinationCidrBlock != null) __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock.asInstanceOf[js.Any])
+    if (destinationIpv6CidrBlock != null) __obj.updateDynamic("destinationIpv6CidrBlock")(destinationIpv6CidrBlock.asInstanceOf[js.Any])
+    if (egressOnlyGatewayId != null) __obj.updateDynamic("egressOnlyGatewayId")(egressOnlyGatewayId.asInstanceOf[js.Any])
+    if (gatewayId != null) __obj.updateDynamic("gatewayId")(gatewayId.asInstanceOf[js.Any])
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId.asInstanceOf[js.Any])
+    if (natGatewayId != null) __obj.updateDynamic("natGatewayId")(natGatewayId.asInstanceOf[js.Any])
+    if (networkInterfaceId != null) __obj.updateDynamic("networkInterfaceId")(networkInterfaceId.asInstanceOf[js.Any])
+    if (transitGatewayId != null) __obj.updateDynamic("transitGatewayId")(transitGatewayId.asInstanceOf[js.Any])
+    if (vpcPeeringConnectionId != null) __obj.updateDynamic("vpcPeeringConnectionId")(vpcPeeringConnectionId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteArgs]
+  }
+}
+

@@ -16,3 +16,19 @@ trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadata
   var cube: js.UndefOr[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube] = js.undefined
 }
 
+object IgPivotViewDataSourceOptionsFlatDataOptionsMetadata {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotViewDataSourceOptionsFlatDataOptionsMetadata
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    cube: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCube = null
+  ): IgPivotViewDataSourceOptionsFlatDataOptionsMetadata = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cube != null) __obj.updateDynamic("cube")(cube)
+    __obj.asInstanceOf[IgPivotViewDataSourceOptionsFlatDataOptionsMetadata]
+  }
+}
+

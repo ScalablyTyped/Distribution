@@ -11,3 +11,14 @@ trait ValidationOptionsPrivate extends js.Object {
   ] = js.undefined
 }
 
+object ValidationOptionsPrivate {
+  @scala.inline
+  def apply(
+    mailbox_verification: scala.Boolean | mailgunDashJsLib.mailgunDashJsLibStrings.`true` | mailgunDashJsLib.mailgunDashJsLibStrings.`false` = null
+  ): ValidationOptionsPrivate = {
+    val __obj = js.Dynamic.literal()
+    if (mailbox_verification != null) __obj.updateDynamic("mailbox_verification")(mailbox_verification.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ValidationOptionsPrivate]
+  }
+}
+

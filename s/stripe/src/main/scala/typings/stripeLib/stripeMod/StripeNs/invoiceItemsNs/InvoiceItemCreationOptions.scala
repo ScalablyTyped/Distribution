@@ -44,3 +44,32 @@ trait InvoiceItemCreationOptions
   var subscription: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InvoiceItemCreationOptions {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    customer: java.lang.String,
+    description: java.lang.String = null,
+    discountable: js.UndefOr[scala.Boolean] = js.undefined,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    invoice: java.lang.String = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    subscription: java.lang.String = null
+  ): InvoiceItemCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("customer")(customer)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(discountable)) __obj.updateDynamic("discountable")(discountable)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (invoice != null) __obj.updateDynamic("invoice")(invoice)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    __obj.asInstanceOf[InvoiceItemCreationOptions]
+  }
+}
+

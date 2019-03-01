@@ -9,3 +9,12 @@ trait Task extends js.Object {
   def call(args: js.Any*): js.Any
 }
 
+object Task {
+  @scala.inline
+  def apply(call: js.Function1[/* repeated */ js.Any, js.Any]): Task = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("call")(call)
+    __obj.asInstanceOf[Task]
+  }
+}
+

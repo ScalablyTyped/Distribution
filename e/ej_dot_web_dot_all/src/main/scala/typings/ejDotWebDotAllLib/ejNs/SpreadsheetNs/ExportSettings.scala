@@ -28,3 +28,22 @@ trait ExportSettings extends js.Object {
   var pdfUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExportSettings {
+  @scala.inline
+  def apply(
+    allowExporting: js.UndefOr[scala.Boolean] = js.undefined,
+    csvUrl: java.lang.String = null,
+    excelUrl: java.lang.String = null,
+    password: java.lang.String = null,
+    pdfUrl: java.lang.String = null
+  ): ExportSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowExporting)) __obj.updateDynamic("allowExporting")(allowExporting)
+    if (csvUrl != null) __obj.updateDynamic("csvUrl")(csvUrl)
+    if (excelUrl != null) __obj.updateDynamic("excelUrl")(excelUrl)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (pdfUrl != null) __obj.updateDynamic("pdfUrl")(pdfUrl)
+    __obj.asInstanceOf[ExportSettings]
+  }
+}
+

@@ -22,3 +22,26 @@ trait LivenessCheck extends js.Object {
   var timeout: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LivenessCheck {
+  @scala.inline
+  def apply(
+    checkInterval: java.lang.String = null,
+    failureThreshold: scala.Int | scala.Double = null,
+    host: java.lang.String = null,
+    initialDelay: java.lang.String = null,
+    path: java.lang.String = null,
+    successThreshold: scala.Int | scala.Double = null,
+    timeout: java.lang.String = null
+  ): LivenessCheck = {
+    val __obj = js.Dynamic.literal()
+    if (checkInterval != null) __obj.updateDynamic("checkInterval")(checkInterval)
+    if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (initialDelay != null) __obj.updateDynamic("initialDelay")(initialDelay)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (successThreshold != null) __obj.updateDynamic("successThreshold")(successThreshold.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[LivenessCheck]
+  }
+}
+

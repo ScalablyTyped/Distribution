@@ -35,3 +35,31 @@ trait Anon_CallbackCancelChooseDesktopMedia extends js.Object {
   ): chromeDashAppsLib.chromeNs.integer
 }
 
+object Anon_CallbackCancelChooseDesktopMedia {
+  @scala.inline
+  def apply(
+    DesktopCaptureSourceType: Anon_AUDIO,
+    cancelChooseDesktopMedia: js.Function1[chromeDashAppsLib.chromeNs.integer, scala.Unit],
+    chooseDesktopMedia: js.Function2[
+      js.Array[
+        chromeDashAppsLib.chromeNs.ToStringLiteral[
+          /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType */ js.Any, 
+          java.lang.String, 
+          stdLib.Exclude[
+            java.lang.String, 
+            /* import warning: ImportType.apply Failed type conversion: typeof DesktopCaptureSourceType[keyof typeof DesktopCaptureSourceType] */ js.Any
+          ]
+        ]
+      ], 
+      js.Function1[/* streamId */ java.lang.String, scala.Unit], 
+      chromeDashAppsLib.chromeNs.integer
+    ]
+  ): Anon_CallbackCancelChooseDesktopMedia = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DesktopCaptureSourceType")(DesktopCaptureSourceType)
+    __obj.updateDynamic("cancelChooseDesktopMedia")(cancelChooseDesktopMedia)
+    __obj.updateDynamic("chooseDesktopMedia")(chooseDesktopMedia)
+    __obj.asInstanceOf[Anon_CallbackCancelChooseDesktopMedia]
+  }
+}
+

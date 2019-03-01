@@ -24,3 +24,20 @@ trait OptionsTopBarLargeTitle extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OptionsTopBarLargeTitle {
+  @scala.inline
+  def apply(
+    color: Color = null,
+    fontFamily: FontFamily = null,
+    fontSize: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): OptionsTopBarLargeTitle = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[OptionsTopBarLargeTitle]
+  }
+}
+

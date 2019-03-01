@@ -69,3 +69,42 @@ trait AffixProps extends js.Object {
   var viewportOffsetTop: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AffixProps {
+  @scala.inline
+  def apply(
+    affixClassName: java.lang.String = null,
+    affixStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    bottomClassName: java.lang.String = null,
+    bottomStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    offsetBottom: scala.Int | scala.Double = null,
+    offsetTop: scala.Int | scala.Double = null,
+    onAffix: js.Function0[scala.Unit] = null,
+    onAffixBottom: js.Function0[scala.Unit] = null,
+    onAffixTop: js.Function0[scala.Unit] = null,
+    onAffixed: js.Function0[scala.Unit] = null,
+    onAffixedBottom: js.Function0[scala.Unit] = null,
+    onAffixedTop: js.Function0[scala.Unit] = null,
+    topClassName: java.lang.String = null,
+    topStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    viewportOffsetTop: scala.Int | scala.Double = null
+  ): AffixProps = {
+    val __obj = js.Dynamic.literal()
+    if (affixClassName != null) __obj.updateDynamic("affixClassName")(affixClassName)
+    if (affixStyle != null) __obj.updateDynamic("affixStyle")(affixStyle)
+    if (bottomClassName != null) __obj.updateDynamic("bottomClassName")(bottomClassName)
+    if (bottomStyle != null) __obj.updateDynamic("bottomStyle")(bottomStyle)
+    if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
+    if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
+    if (onAffix != null) __obj.updateDynamic("onAffix")(onAffix)
+    if (onAffixBottom != null) __obj.updateDynamic("onAffixBottom")(onAffixBottom)
+    if (onAffixTop != null) __obj.updateDynamic("onAffixTop")(onAffixTop)
+    if (onAffixed != null) __obj.updateDynamic("onAffixed")(onAffixed)
+    if (onAffixedBottom != null) __obj.updateDynamic("onAffixedBottom")(onAffixedBottom)
+    if (onAffixedTop != null) __obj.updateDynamic("onAffixedTop")(onAffixedTop)
+    if (topClassName != null) __obj.updateDynamic("topClassName")(topClassName)
+    if (topStyle != null) __obj.updateDynamic("topStyle")(topStyle)
+    if (viewportOffsetTop != null) __obj.updateDynamic("viewportOffsetTop")(viewportOffsetTop.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AffixProps]
+  }
+}
+

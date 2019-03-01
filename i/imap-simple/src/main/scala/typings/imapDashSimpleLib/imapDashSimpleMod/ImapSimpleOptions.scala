@@ -18,3 +18,22 @@ trait ImapSimpleOptions extends js.Object {
   var onupdate: js.UndefOr[js.Function2[/* seqno */ scala.Double, /* info */ js.Any, scala.Unit]] = js.undefined
 }
 
+object ImapSimpleOptions {
+  @scala.inline
+  def apply(
+    imap: imapLib.imapMod.ConnectionNs.Config,
+    connectTimeout: scala.Int | scala.Double = null,
+    onexpunge: js.Function1[/* seqno */ scala.Double, scala.Unit] = null,
+    onmail: js.Function1[/* numNewMail */ scala.Double, scala.Unit] = null,
+    onupdate: js.Function2[/* seqno */ scala.Double, /* info */ js.Any, scala.Unit] = null
+  ): ImapSimpleOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("imap")(imap)
+    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (onexpunge != null) __obj.updateDynamic("onexpunge")(onexpunge)
+    if (onmail != null) __obj.updateDynamic("onmail")(onmail)
+    if (onupdate != null) __obj.updateDynamic("onupdate")(onupdate)
+    __obj.asInstanceOf[ImapSimpleOptions]
+  }
+}
+

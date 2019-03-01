@@ -10,3 +10,12 @@ trait ListBuildTriggersResponse extends js.Object {
   var triggers: js.UndefOr[js.Array[BuildTrigger]] = js.undefined
 }
 
+object ListBuildTriggersResponse {
+  @scala.inline
+  def apply(triggers: js.Array[BuildTrigger] = null): ListBuildTriggersResponse = {
+    val __obj = js.Dynamic.literal()
+    if (triggers != null) __obj.updateDynamic("triggers")(triggers)
+    __obj.asInstanceOf[ListBuildTriggersResponse]
+  }
+}
+

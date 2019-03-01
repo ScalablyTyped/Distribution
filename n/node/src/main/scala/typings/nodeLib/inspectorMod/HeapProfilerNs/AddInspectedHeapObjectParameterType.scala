@@ -12,3 +12,12 @@ trait AddInspectedHeapObjectParameterType extends js.Object {
   var heapObjectId: HeapSnapshotObjectId
 }
 
+object AddInspectedHeapObjectParameterType {
+  @scala.inline
+  def apply(heapObjectId: HeapSnapshotObjectId): AddInspectedHeapObjectParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("heapObjectId")(heapObjectId)
+    __obj.asInstanceOf[AddInspectedHeapObjectParameterType]
+  }
+}
+

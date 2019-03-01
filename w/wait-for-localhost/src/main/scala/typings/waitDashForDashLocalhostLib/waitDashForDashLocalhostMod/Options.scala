@@ -18,3 +18,13 @@ trait Options extends js.Object {
   var useGet: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(port: scala.Int | scala.Double = null, useGet: js.UndefOr[scala.Boolean] = js.undefined): Options = {
+    val __obj = js.Dynamic.literal()
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(useGet)) __obj.updateDynamic("useGet")(useGet)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -76,3 +76,38 @@ trait FontFormattingSettings extends js.Object {
   var underlineWordsOnly: scala.Boolean
 }
 
+object FontFormattingSettings {
+  @scala.inline
+  def apply(
+    allCaps: scala.Boolean,
+    backColor: java.lang.String,
+    bold: scala.Boolean,
+    fontName: java.lang.String,
+    foreColor: java.lang.String,
+    hidden: scala.Boolean,
+    italic: scala.Boolean,
+    script: js.Any,
+    size: scala.Double,
+    strikeout: scala.Boolean,
+    underline: scala.Boolean,
+    underlineColor: java.lang.String,
+    underlineWordsOnly: scala.Boolean
+  ): FontFormattingSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allCaps")(allCaps)
+    __obj.updateDynamic("backColor")(backColor)
+    __obj.updateDynamic("bold")(bold)
+    __obj.updateDynamic("fontName")(fontName)
+    __obj.updateDynamic("foreColor")(foreColor)
+    __obj.updateDynamic("hidden")(hidden)
+    __obj.updateDynamic("italic")(italic)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("strikeout")(strikeout)
+    __obj.updateDynamic("underline")(underline)
+    __obj.updateDynamic("underlineColor")(underlineColor)
+    __obj.updateDynamic("underlineWordsOnly")(underlineWordsOnly)
+    __obj.asInstanceOf[FontFormattingSettings]
+  }
+}
+

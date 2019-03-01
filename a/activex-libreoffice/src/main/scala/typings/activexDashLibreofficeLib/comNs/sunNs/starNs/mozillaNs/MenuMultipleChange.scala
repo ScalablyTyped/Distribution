@@ -27,3 +27,30 @@ trait MenuMultipleChange extends js.Object {
   var PreItemID: scala.Double
 }
 
+object MenuMultipleChange {
+  @scala.inline
+  def apply(
+    GroupID: scala.Double,
+    ID: scala.Double,
+    Image: activexDashInteropLib.SafeArray[scala.Double],
+    IsActive: scala.Boolean,
+    IsCheckable: scala.Boolean,
+    IsChecked: scala.Boolean,
+    IsVisible: scala.Boolean,
+    ItemText: java.lang.String,
+    PreItemID: scala.Double
+  ): MenuMultipleChange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GroupID")(GroupID)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("Image")(Image)
+    __obj.updateDynamic("IsActive")(IsActive)
+    __obj.updateDynamic("IsCheckable")(IsCheckable)
+    __obj.updateDynamic("IsChecked")(IsChecked)
+    __obj.updateDynamic("IsVisible")(IsVisible)
+    __obj.updateDynamic("ItemText")(ItemText)
+    __obj.updateDynamic("PreItemID")(PreItemID)
+    __obj.asInstanceOf[MenuMultipleChange]
+  }
+}
+

@@ -12,3 +12,16 @@ trait IKmlScreenOverlayOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IKmlScreenOverlayOptions {
+  @scala.inline
+  def apply(
+    belowNavigationBar: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): IKmlScreenOverlayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(belowNavigationBar)) __obj.updateDynamic("belowNavigationBar")(belowNavigationBar)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[IKmlScreenOverlayOptions]
+  }
+}
+

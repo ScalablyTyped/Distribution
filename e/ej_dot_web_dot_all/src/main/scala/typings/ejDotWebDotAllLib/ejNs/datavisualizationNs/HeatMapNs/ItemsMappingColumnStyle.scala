@@ -22,3 +22,20 @@ trait ItemsMappingColumnStyle extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ItemsMappingColumnStyle {
+  @scala.inline
+  def apply(
+    headerTemplateID: java.lang.String = null,
+    templateID: java.lang.String = null,
+    textAlign: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ItemsMappingColumnStyle = {
+    val __obj = js.Dynamic.literal()
+    if (headerTemplateID != null) __obj.updateDynamic("headerTemplateID")(headerTemplateID)
+    if (templateID != null) __obj.updateDynamic("templateID")(templateID)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ItemsMappingColumnStyle]
+  }
+}
+

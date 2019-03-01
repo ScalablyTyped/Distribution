@@ -27,3 +27,14 @@ trait EntityResult extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EntityResult {
+  @scala.inline
+  def apply(cursor: java.lang.String = null, entity: Entity = null, version: java.lang.String = null): EntityResult = {
+    val __obj = js.Dynamic.literal()
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (entity != null) __obj.updateDynamic("entity")(entity)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[EntityResult]
+  }
+}
+

@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object yogDashBigpipeLibStrings {
   @js.native
-  sealed trait async extends js.Object
+  sealed trait async
+    extends yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.status
   
   @js.native
-  sealed trait fulfilled extends js.Object
+  sealed trait fulfilled
+    extends yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.status
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.status
   
   @js.native
-  sealed trait pipeline extends js.Object
+  sealed trait pipeline
+    extends yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode
   
   @js.native
-  sealed trait quickling extends js.Object
+  sealed trait quickling
+    extends yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.mode
   
   @js.native
-  sealed trait rendering extends js.Object
+  sealed trait rendering
+    extends yogDashBigpipeLib.yogDashBigpipeMod.yogBigpipeNs.PageletNs.status
   
   @scala.inline
   def async: async = "async".asInstanceOf[async]

@@ -1349,3 +1349,307 @@ trait Anon_1 extends js.Object {
   var zzz: java.lang.String
 }
 
+object Anon_1 {
+  @scala.inline
+  def apply(
+    `+1`: java.lang.String,
+    `-1`: java.lang.String,
+    `100`: java.lang.String,
+    `1234`: java.lang.String,
+    `8ball`: java.lang.String,
+    a: java.lang.String,
+    ab: java.lang.String,
+    abc: java.lang.String,
+    abcd: java.lang.String,
+    accept: java.lang.String,
+    admission_tickets: java.lang.String,
+    aerial_tramway: java.lang.String,
+    airplane: java.lang.String,
+    airplane_arriving: java.lang.String,
+    airplane_departure: java.lang.String,
+    alarm_clock: java.lang.String,
+    alembic: java.lang.String,
+    alien: java.lang.String,
+    ambulance: java.lang.String,
+    amphora: java.lang.String,
+    anchor: java.lang.String,
+    angel: java.lang.String,
+    anger: java.lang.String,
+    angry: java.lang.String,
+    anguished: java.lang.String,
+    ant: java.lang.String,
+    apple: java.lang.String,
+    aquarius: java.lang.String,
+    aries: java.lang.String,
+    arrow_backward: java.lang.String,
+    arrow_double_down: java.lang.String,
+    arrow_double_up: java.lang.String,
+    arrow_down: java.lang.String,
+    arrow_down_small: java.lang.String,
+    arrow_forward: java.lang.String,
+    arrow_heading_down: java.lang.String,
+    arrow_heading_up: java.lang.String,
+    arrow_left: java.lang.String,
+    arrow_lower_left: java.lang.String,
+    arrow_lower_right: java.lang.String,
+    arrow_right: java.lang.String,
+    arrow_right_hook: java.lang.String,
+    arrow_up: java.lang.String,
+    arrow_up_down: java.lang.String,
+    arrow_up_small: java.lang.String,
+    arrow_upper_left: java.lang.String,
+    arrow_upper_right: java.lang.String,
+    arrows_clockwise: java.lang.String,
+    arrows_counterclockwise: java.lang.String,
+    art: java.lang.String,
+    articulated_lorry: java.lang.String,
+    astonished: java.lang.String,
+    athletic_shoe: java.lang.String,
+    atm: java.lang.String,
+    atom_symbol: java.lang.String,
+    b: java.lang.String,
+    baby: java.lang.String,
+    baby_bottle: java.lang.String,
+    baby_chick: java.lang.String,
+    baby_symbol: java.lang.String,
+    back: java.lang.String,
+    badminton_racquet_and_shuttlecock: java.lang.String,
+    baggage_claim: java.lang.String,
+    balloon: java.lang.String,
+    ballot_box_with_ballot: java.lang.String,
+    ballot_box_with_check: java.lang.String,
+    bamboo: java.lang.String,
+    banana: java.lang.String,
+    bangbang: java.lang.String,
+    bank: java.lang.String,
+    bar_chart: java.lang.String,
+    barber: java.lang.String,
+    barely_sunny: java.lang.String,
+    baseball: java.lang.String,
+    basketball: java.lang.String,
+    bath: java.lang.String,
+    bathtub: java.lang.String,
+    battery: java.lang.String,
+    beach_with_umbrella: java.lang.String,
+    bear: java.lang.String,
+    bed: java.lang.String,
+    bee: java.lang.String,
+    beer: java.lang.String,
+    beers: java.lang.String,
+    beetle: java.lang.String,
+    beginner: java.lang.String,
+    bell: java.lang.String,
+    bellhop_bell: java.lang.String,
+    bento: java.lang.String,
+    bicyclist: java.lang.String,
+    bike: java.lang.String,
+    bikini: java.lang.String,
+    biohazard_sign: java.lang.String,
+    bird: java.lang.String,
+    birthday: java.lang.String,
+    black_circle: java.lang.String,
+    black_circle_for_record: java.lang.String,
+    black_joker: java.lang.String,
+    black_large_square: java.lang.String,
+    black_left_pointing_double_triangle_with_vertical_bar: java.lang.String,
+    black_medium_small_square: java.lang.String,
+    black_medium_square: java.lang.String,
+    black_nib: java.lang.String,
+    black_right_pointing_double_triangle_with_vertical_bar: java.lang.String,
+    black_right_pointing_triangle_with_double_vertical_bar: java.lang.String,
+    black_small_square: java.lang.String,
+    black_square_button: java.lang.String,
+    black_square_for_stop: java.lang.String,
+    blossom: java.lang.String,
+    blowfish: java.lang.String,
+    blue_book: java.lang.String,
+    blue_car: java.lang.String,
+    blue_heart: java.lang.String,
+    blush: java.lang.String,
+    boar: java.lang.String,
+    boat: java.lang.String,
+    bomb: java.lang.String,
+    book: java.lang.String,
+    bookmark: java.lang.String,
+    bookmark_tabs: java.lang.String,
+    books: java.lang.String,
+    boom: java.lang.String,
+    boot: java.lang.String,
+    bouquet: java.lang.String,
+    bow: java.lang.String,
+    bow_and_arrow: java.lang.String,
+    bowling: java.lang.String,
+    boy: java.lang.String,
+    bread: java.lang.String,
+    bride_with_veil: java.lang.String,
+    bridge_at_night: java.lang.String,
+    briefcase: java.lang.String,
+    broken_heart: java.lang.String,
+    bug: java.lang.String,
+    building_construction: java.lang.String,
+    bulb: java.lang.String,
+    bullettrain_front: java.lang.String,
+    bullettrain_side: java.lang.String,
+    burrito: java.lang.String,
+    bus: java.lang.String,
+    busstop: java.lang.String,
+    bust_in_silhouette: java.lang.String,
+    busts_in_silhouette: java.lang.String,
+    cactus: java.lang.String,
+    cake: java.lang.String,
+    calendar: java.lang.String,
+    calling: java.lang.String,
+    camel: java.lang.String,
+    camera: java.lang.String,
+    camera_with_flash: java.lang.String
+  ): Anon_1 = {
+    val __obj = js.Dynamic.literal(`+1` = `+1`, `-1` = `-1`, `100` = `100`, `1234` = `1234`, `8ball` = `8ball`)
+    __obj.updateDynamic("a")(a)
+    __obj.updateDynamic("ab")(ab)
+    __obj.updateDynamic("abc")(abc)
+    __obj.updateDynamic("abcd")(abcd)
+    __obj.updateDynamic("accept")(accept)
+    __obj.updateDynamic("admission_tickets")(admission_tickets)
+    __obj.updateDynamic("aerial_tramway")(aerial_tramway)
+    __obj.updateDynamic("airplane")(airplane)
+    __obj.updateDynamic("airplane_arriving")(airplane_arriving)
+    __obj.updateDynamic("airplane_departure")(airplane_departure)
+    __obj.updateDynamic("alarm_clock")(alarm_clock)
+    __obj.updateDynamic("alembic")(alembic)
+    __obj.updateDynamic("alien")(alien)
+    __obj.updateDynamic("ambulance")(ambulance)
+    __obj.updateDynamic("amphora")(amphora)
+    __obj.updateDynamic("anchor")(anchor)
+    __obj.updateDynamic("angel")(angel)
+    __obj.updateDynamic("anger")(anger)
+    __obj.updateDynamic("angry")(angry)
+    __obj.updateDynamic("anguished")(anguished)
+    __obj.updateDynamic("ant")(ant)
+    __obj.updateDynamic("apple")(apple)
+    __obj.updateDynamic("aquarius")(aquarius)
+    __obj.updateDynamic("aries")(aries)
+    __obj.updateDynamic("arrow_backward")(arrow_backward)
+    __obj.updateDynamic("arrow_double_down")(arrow_double_down)
+    __obj.updateDynamic("arrow_double_up")(arrow_double_up)
+    __obj.updateDynamic("arrow_down")(arrow_down)
+    __obj.updateDynamic("arrow_down_small")(arrow_down_small)
+    __obj.updateDynamic("arrow_forward")(arrow_forward)
+    __obj.updateDynamic("arrow_heading_down")(arrow_heading_down)
+    __obj.updateDynamic("arrow_heading_up")(arrow_heading_up)
+    __obj.updateDynamic("arrow_left")(arrow_left)
+    __obj.updateDynamic("arrow_lower_left")(arrow_lower_left)
+    __obj.updateDynamic("arrow_lower_right")(arrow_lower_right)
+    __obj.updateDynamic("arrow_right")(arrow_right)
+    __obj.updateDynamic("arrow_right_hook")(arrow_right_hook)
+    __obj.updateDynamic("arrow_up")(arrow_up)
+    __obj.updateDynamic("arrow_up_down")(arrow_up_down)
+    __obj.updateDynamic("arrow_up_small")(arrow_up_small)
+    __obj.updateDynamic("arrow_upper_left")(arrow_upper_left)
+    __obj.updateDynamic("arrow_upper_right")(arrow_upper_right)
+    __obj.updateDynamic("arrows_clockwise")(arrows_clockwise)
+    __obj.updateDynamic("arrows_counterclockwise")(arrows_counterclockwise)
+    __obj.updateDynamic("art")(art)
+    __obj.updateDynamic("articulated_lorry")(articulated_lorry)
+    __obj.updateDynamic("astonished")(astonished)
+    __obj.updateDynamic("athletic_shoe")(athletic_shoe)
+    __obj.updateDynamic("atm")(atm)
+    __obj.updateDynamic("atom_symbol")(atom_symbol)
+    __obj.updateDynamic("b")(b)
+    __obj.updateDynamic("baby")(baby)
+    __obj.updateDynamic("baby_bottle")(baby_bottle)
+    __obj.updateDynamic("baby_chick")(baby_chick)
+    __obj.updateDynamic("baby_symbol")(baby_symbol)
+    __obj.updateDynamic("back")(back)
+    __obj.updateDynamic("badminton_racquet_and_shuttlecock")(badminton_racquet_and_shuttlecock)
+    __obj.updateDynamic("baggage_claim")(baggage_claim)
+    __obj.updateDynamic("balloon")(balloon)
+    __obj.updateDynamic("ballot_box_with_ballot")(ballot_box_with_ballot)
+    __obj.updateDynamic("ballot_box_with_check")(ballot_box_with_check)
+    __obj.updateDynamic("bamboo")(bamboo)
+    __obj.updateDynamic("banana")(banana)
+    __obj.updateDynamic("bangbang")(bangbang)
+    __obj.updateDynamic("bank")(bank)
+    __obj.updateDynamic("bar_chart")(bar_chart)
+    __obj.updateDynamic("barber")(barber)
+    __obj.updateDynamic("barely_sunny")(barely_sunny)
+    __obj.updateDynamic("baseball")(baseball)
+    __obj.updateDynamic("basketball")(basketball)
+    __obj.updateDynamic("bath")(bath)
+    __obj.updateDynamic("bathtub")(bathtub)
+    __obj.updateDynamic("battery")(battery)
+    __obj.updateDynamic("beach_with_umbrella")(beach_with_umbrella)
+    __obj.updateDynamic("bear")(bear)
+    __obj.updateDynamic("bed")(bed)
+    __obj.updateDynamic("bee")(bee)
+    __obj.updateDynamic("beer")(beer)
+    __obj.updateDynamic("beers")(beers)
+    __obj.updateDynamic("beetle")(beetle)
+    __obj.updateDynamic("beginner")(beginner)
+    __obj.updateDynamic("bell")(bell)
+    __obj.updateDynamic("bellhop_bell")(bellhop_bell)
+    __obj.updateDynamic("bento")(bento)
+    __obj.updateDynamic("bicyclist")(bicyclist)
+    __obj.updateDynamic("bike")(bike)
+    __obj.updateDynamic("bikini")(bikini)
+    __obj.updateDynamic("biohazard_sign")(biohazard_sign)
+    __obj.updateDynamic("bird")(bird)
+    __obj.updateDynamic("birthday")(birthday)
+    __obj.updateDynamic("black_circle")(black_circle)
+    __obj.updateDynamic("black_circle_for_record")(black_circle_for_record)
+    __obj.updateDynamic("black_joker")(black_joker)
+    __obj.updateDynamic("black_large_square")(black_large_square)
+    __obj.updateDynamic("black_left_pointing_double_triangle_with_vertical_bar")(black_left_pointing_double_triangle_with_vertical_bar)
+    __obj.updateDynamic("black_medium_small_square")(black_medium_small_square)
+    __obj.updateDynamic("black_medium_square")(black_medium_square)
+    __obj.updateDynamic("black_nib")(black_nib)
+    __obj.updateDynamic("black_right_pointing_double_triangle_with_vertical_bar")(black_right_pointing_double_triangle_with_vertical_bar)
+    __obj.updateDynamic("black_right_pointing_triangle_with_double_vertical_bar")(black_right_pointing_triangle_with_double_vertical_bar)
+    __obj.updateDynamic("black_small_square")(black_small_square)
+    __obj.updateDynamic("black_square_button")(black_square_button)
+    __obj.updateDynamic("black_square_for_stop")(black_square_for_stop)
+    __obj.updateDynamic("blossom")(blossom)
+    __obj.updateDynamic("blowfish")(blowfish)
+    __obj.updateDynamic("blue_book")(blue_book)
+    __obj.updateDynamic("blue_car")(blue_car)
+    __obj.updateDynamic("blue_heart")(blue_heart)
+    __obj.updateDynamic("blush")(blush)
+    __obj.updateDynamic("boar")(boar)
+    __obj.updateDynamic("boat")(boat)
+    __obj.updateDynamic("bomb")(bomb)
+    __obj.updateDynamic("book")(book)
+    __obj.updateDynamic("bookmark")(bookmark)
+    __obj.updateDynamic("bookmark_tabs")(bookmark_tabs)
+    __obj.updateDynamic("books")(books)
+    __obj.updateDynamic("boom")(boom)
+    __obj.updateDynamic("boot")(boot)
+    __obj.updateDynamic("bouquet")(bouquet)
+    __obj.updateDynamic("bow")(bow)
+    __obj.updateDynamic("bow_and_arrow")(bow_and_arrow)
+    __obj.updateDynamic("bowling")(bowling)
+    __obj.updateDynamic("boy")(boy)
+    __obj.updateDynamic("bread")(bread)
+    __obj.updateDynamic("bride_with_veil")(bride_with_veil)
+    __obj.updateDynamic("bridge_at_night")(bridge_at_night)
+    __obj.updateDynamic("briefcase")(briefcase)
+    __obj.updateDynamic("broken_heart")(broken_heart)
+    __obj.updateDynamic("bug")(bug)
+    __obj.updateDynamic("building_construction")(building_construction)
+    __obj.updateDynamic("bulb")(bulb)
+    __obj.updateDynamic("bullettrain_front")(bullettrain_front)
+    __obj.updateDynamic("bullettrain_side")(bullettrain_side)
+    __obj.updateDynamic("burrito")(burrito)
+    __obj.updateDynamic("bus")(bus)
+    __obj.updateDynamic("busstop")(busstop)
+    __obj.updateDynamic("bust_in_silhouette")(bust_in_silhouette)
+    __obj.updateDynamic("busts_in_silhouette")(busts_in_silhouette)
+    __obj.updateDynamic("cactus")(cactus)
+    __obj.updateDynamic("cake")(cake)
+    __obj.updateDynamic("calendar")(calendar)
+    __obj.updateDynamic("calling")(calling)
+    __obj.updateDynamic("camel")(camel)
+    __obj.updateDynamic("camera")(camera)
+    __obj.updateDynamic("camera_with_flash")(camera_with_flash)
+    __obj.asInstanceOf[Anon_1]
+  }
+}
+

@@ -10,3 +10,12 @@ trait TempFileResponse extends js.Object {
   var apFilePath: java.lang.String
 }
 
+object TempFileResponse {
+  @scala.inline
+  def apply(apFilePath: java.lang.String): TempFileResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apFilePath")(apFilePath)
+    __obj.asInstanceOf[TempFileResponse]
+  }
+}
+

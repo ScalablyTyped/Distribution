@@ -12,3 +12,20 @@ trait Anon_Delay extends js.Object {
   var style: js.UndefOr[terminalDashKitLib.terminalMod.TerminalNs.CTerminal] = js.undefined
 }
 
+object Anon_Delay {
+  @scala.inline
+  def apply(
+    delay: scala.Int | scala.Double = null,
+    flashDelay: scala.Int | scala.Double = null,
+    flashStyle: terminalDashKitLib.terminalMod.TerminalNs.CTerminal = null,
+    style: terminalDashKitLib.terminalMod.TerminalNs.CTerminal = null
+  ): Anon_Delay = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (flashDelay != null) __obj.updateDynamic("flashDelay")(flashDelay.asInstanceOf[js.Any])
+    if (flashStyle != null) __obj.updateDynamic("flashStyle")(flashStyle)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[Anon_Delay]
+  }
+}
+

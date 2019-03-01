@@ -16,3 +16,15 @@ trait Anon_Pass extends js.Object {
   var spam: scala.Double
 }
 
+object Anon_Pass {
+  @scala.inline
+  def apply(pass: js.Array[Anon_Hit], reject: js.Array[_], review: js.Array[_], spam: scala.Double): Anon_Pass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pass")(pass)
+    __obj.updateDynamic("reject")(reject)
+    __obj.updateDynamic("review")(review)
+    __obj.updateDynamic("spam")(spam)
+    __obj.asInstanceOf[Anon_Pass]
+  }
+}
+

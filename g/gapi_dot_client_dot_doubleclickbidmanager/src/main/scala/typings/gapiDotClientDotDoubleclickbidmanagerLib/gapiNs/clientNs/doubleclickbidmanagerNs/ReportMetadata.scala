@@ -16,3 +16,20 @@ trait ReportMetadata extends js.Object {
   var status: js.UndefOr[ReportStatus] = js.undefined
 }
 
+object ReportMetadata {
+  @scala.inline
+  def apply(
+    googleCloudStoragePath: java.lang.String = null,
+    reportDataEndTimeMs: java.lang.String = null,
+    reportDataStartTimeMs: java.lang.String = null,
+    status: ReportStatus = null
+  ): ReportMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (googleCloudStoragePath != null) __obj.updateDynamic("googleCloudStoragePath")(googleCloudStoragePath)
+    if (reportDataEndTimeMs != null) __obj.updateDynamic("reportDataEndTimeMs")(reportDataEndTimeMs)
+    if (reportDataStartTimeMs != null) __obj.updateDynamic("reportDataStartTimeMs")(reportDataStartTimeMs)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[ReportMetadata]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Record of use of a device
   */
-trait DeviceUseStatement extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DeviceUseStatement extends DomainResource {
   /**
     * Contains extended information for property 'recordedOn'.
     */
@@ -73,5 +74,72 @@ trait DeviceUseStatement extends DomainResource {
     * Period device was used
     */
   var whenUsed: js.UndefOr[Period] = js.undefined
+}
+
+object DeviceUseStatement {
+  @scala.inline
+  def apply(
+    device: Reference,
+    status: code,
+    subject: Reference,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _recordedOn: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _timingDateTime: Element = null,
+    bodySite: CodeableConcept = null,
+    contained: js.Array[Resource] = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    indication: js.Array[CodeableConcept] = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    note: js.Array[Annotation] = null,
+    recordedOn: dateTime = null,
+    resourceType: code = null,
+    source: Reference = null,
+    text: Narrative = null,
+    timingDateTime: dateTime = null,
+    timingPeriod: Period = null,
+    timingTiming: Timing = null,
+    whenUsed: Period = null
+  ): DeviceUseStatement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("device")(device)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("subject")(subject)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_recordedOn != null) __obj.updateDynamic("_recordedOn")(_recordedOn)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_timingDateTime != null) __obj.updateDynamic("_timingDateTime")(_timingDateTime)
+    if (bodySite != null) __obj.updateDynamic("bodySite")(bodySite)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (indication != null) __obj.updateDynamic("indication")(indication)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (recordedOn != null) __obj.updateDynamic("recordedOn")(recordedOn)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (timingDateTime != null) __obj.updateDynamic("timingDateTime")(timingDateTime)
+    if (timingPeriod != null) __obj.updateDynamic("timingPeriod")(timingPeriod)
+    if (timingTiming != null) __obj.updateDynamic("timingTiming")(timingTiming)
+    if (whenUsed != null) __obj.updateDynamic("whenUsed")(whenUsed)
+    __obj.asInstanceOf[DeviceUseStatement]
+  }
 }
 

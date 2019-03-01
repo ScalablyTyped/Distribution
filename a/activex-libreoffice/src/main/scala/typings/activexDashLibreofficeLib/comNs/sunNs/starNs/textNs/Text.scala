@@ -107,3 +107,68 @@ trait Text
   var StartRedline: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues
 }
 
+object Text {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    End: XTextRange,
+    EndRedline: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues,
+    Start: XTextRange,
+    StartRedline: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues,
+    String: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    compareRegionEnds: js.Function2[XTextRange, XTextRange, scala.Double],
+    compareRegionStarts: js.Function2[XTextRange, XTextRange, scala.Double],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    createTextCursor: js.Function0[XTextCursor],
+    createTextCursorByRange: js.Function1[XTextRange, XTextCursor],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getEnd: js.Function0[XTextRange],
+    getStart: js.Function0[XTextRange],
+    getString: js.Function0[java.lang.String],
+    getText: js.Function0[XText],
+    hasElements: js.Function0[scala.Boolean],
+    insertControlCharacter: js.Function3[XTextRange, scala.Double, scala.Boolean, scala.Unit],
+    insertString: js.Function3[XTextRange, java.lang.String, scala.Boolean, scala.Unit],
+    insertTextContent: js.Function3[XTextRange, XTextContent, scala.Boolean, scala.Unit],
+    insertTextContentAfter: js.Function2[XTextContent, XTextContent, scala.Unit],
+    insertTextContentBefore: js.Function2[XTextContent, XTextContent, scala.Unit],
+    moveTextRange: js.Function2[XTextRange, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTextContent: js.Function1[XTextContent, scala.Unit],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): Text = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("End")(End)
+    __obj.updateDynamic("EndRedline")(EndRedline.asInstanceOf[js.Any])
+    __obj.updateDynamic("Start")(Start)
+    __obj.updateDynamic("StartRedline")(StartRedline.asInstanceOf[js.Any])
+    __obj.updateDynamic("String")(String)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("compareRegionEnds")(compareRegionEnds)
+    __obj.updateDynamic("compareRegionStarts")(compareRegionStarts)
+    __obj.updateDynamic("createEnumeration")(createEnumeration)
+    __obj.updateDynamic("createTextCursor")(createTextCursor)
+    __obj.updateDynamic("createTextCursorByRange")(createTextCursorByRange)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getEnd")(getEnd)
+    __obj.updateDynamic("getStart")(getStart)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("getText")(getText)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("insertControlCharacter")(insertControlCharacter)
+    __obj.updateDynamic("insertString")(insertString)
+    __obj.updateDynamic("insertTextContent")(insertTextContent)
+    __obj.updateDynamic("insertTextContentAfter")(insertTextContentAfter)
+    __obj.updateDynamic("insertTextContentBefore")(insertTextContentBefore)
+    __obj.updateDynamic("moveTextRange")(moveTextRange)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeTextContent")(removeTextContent)
+    __obj.updateDynamic("setString")(setString)
+    __obj.asInstanceOf[Text]
+  }
+}
+

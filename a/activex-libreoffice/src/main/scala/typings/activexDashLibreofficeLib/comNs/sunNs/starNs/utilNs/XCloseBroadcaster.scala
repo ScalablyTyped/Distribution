@@ -28,3 +28,22 @@ trait XCloseBroadcaster
   def removeCloseListener(Listener: XCloseListener): scala.Unit
 }
 
+object XCloseBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addCloseListener: js.Function1[XCloseListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeCloseListener: js.Function1[XCloseListener, scala.Unit]
+  ): XCloseBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addCloseListener")(addCloseListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeCloseListener")(removeCloseListener)
+    __obj.asInstanceOf[XCloseBroadcaster]
+  }
+}
+

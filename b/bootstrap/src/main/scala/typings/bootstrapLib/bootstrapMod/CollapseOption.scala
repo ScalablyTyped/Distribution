@@ -24,3 +24,16 @@ trait CollapseOption extends js.Object {
   var toggle: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CollapseOption {
+  @scala.inline
+  def apply(
+    parent: java.lang.String | bootstrapLib.bootstrapMod.Global.JQuery[stdLib.HTMLElement] | stdLib.Element = null,
+    toggle: js.UndefOr[scala.Boolean] = js.undefined
+  ): CollapseOption = {
+    val __obj = js.Dynamic.literal()
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(toggle)) __obj.updateDynamic("toggle")(toggle)
+    __obj.asInstanceOf[CollapseOption]
+  }
+}
+

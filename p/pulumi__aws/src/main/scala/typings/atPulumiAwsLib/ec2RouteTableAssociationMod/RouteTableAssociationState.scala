@@ -16,3 +16,16 @@ trait RouteTableAssociationState extends js.Object {
   val subnetId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RouteTableAssociationState {
+  @scala.inline
+  def apply(
+    routeTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RouteTableAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (routeTableId != null) __obj.updateDynamic("routeTableId")(routeTableId.asInstanceOf[js.Any])
+    if (subnetId != null) __obj.updateDynamic("subnetId")(subnetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteTableAssociationState]
+  }
+}
+

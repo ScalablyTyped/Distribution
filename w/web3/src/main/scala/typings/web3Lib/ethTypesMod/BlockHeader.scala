@@ -22,3 +22,40 @@ trait BlockHeader extends js.Object {
   var transactionRoot: java.lang.String
 }
 
+object BlockHeader {
+  @scala.inline
+  def apply(
+    extraData: java.lang.String,
+    gasLimit: scala.Double,
+    gasUsed: scala.Double,
+    hash: java.lang.String,
+    logsBloom: java.lang.String,
+    miner: java.lang.String,
+    nonce: java.lang.String,
+    number: scala.Double,
+    parentHash: java.lang.String,
+    receiptRoot: java.lang.String,
+    sha3Uncles: java.lang.String,
+    stateRoot: java.lang.String,
+    timestamp: scala.Double,
+    transactionRoot: java.lang.String
+  ): BlockHeader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extraData")(extraData)
+    __obj.updateDynamic("gasLimit")(gasLimit)
+    __obj.updateDynamic("gasUsed")(gasUsed)
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("logsBloom")(logsBloom)
+    __obj.updateDynamic("miner")(miner)
+    __obj.updateDynamic("nonce")(nonce)
+    __obj.updateDynamic("number")(number)
+    __obj.updateDynamic("parentHash")(parentHash)
+    __obj.updateDynamic("receiptRoot")(receiptRoot)
+    __obj.updateDynamic("sha3Uncles")(sha3Uncles)
+    __obj.updateDynamic("stateRoot")(stateRoot)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.updateDynamic("transactionRoot")(transactionRoot)
+    __obj.asInstanceOf[BlockHeader]
+  }
+}
+

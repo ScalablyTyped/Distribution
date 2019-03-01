@@ -27,3 +27,20 @@ trait PodPreset extends js.Object {
   val spec: PodPresetSpec
 }
 
+object PodPreset {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`settingsDOTk8sDOTio/v1alpha1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodPreset,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: PodPresetSpec
+  ): PodPreset = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.asInstanceOf[PodPreset]
+  }
+}
+

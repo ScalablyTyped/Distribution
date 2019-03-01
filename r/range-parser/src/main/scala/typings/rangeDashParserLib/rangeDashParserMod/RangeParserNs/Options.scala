@@ -13,3 +13,12 @@ trait Options extends js.Object {
   var combine: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(combine: js.UndefOr[scala.Boolean] = js.undefined): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(combine)) __obj.updateDynamic("combine")(combine)
+    __obj.asInstanceOf[Options]
+  }
+}
+

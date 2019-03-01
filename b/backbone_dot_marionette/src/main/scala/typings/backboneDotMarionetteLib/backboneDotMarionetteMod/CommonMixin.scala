@@ -13,3 +13,22 @@ trait CommonMixin extends js.Object {
   var unbindEvents: js.Any
 }
 
+object CommonMixin {
+  @scala.inline
+  def apply(
+    bindEvents: js.Any,
+    getOption: js.Any,
+    mergeOptions: js.Any,
+    normalizeMethods: js.Any,
+    unbindEvents: js.Any
+  ): CommonMixin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bindEvents")(bindEvents)
+    __obj.updateDynamic("getOption")(getOption)
+    __obj.updateDynamic("mergeOptions")(mergeOptions)
+    __obj.updateDynamic("normalizeMethods")(normalizeMethods)
+    __obj.updateDynamic("unbindEvents")(unbindEvents)
+    __obj.asInstanceOf[CommonMixin]
+  }
+}
+

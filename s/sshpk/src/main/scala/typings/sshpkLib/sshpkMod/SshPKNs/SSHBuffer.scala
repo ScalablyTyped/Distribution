@@ -27,3 +27,50 @@ trait SSHBuffer extends js.Object {
   def writeString(buf: java.lang.String): scala.Unit
 }
 
+object SSHBuffer {
+  @scala.inline
+  def apply(
+    atEnd: js.Function0[scala.Boolean],
+    expand: js.Function0[scala.Unit],
+    readBuffer: js.Function0[nodeLib.Buffer],
+    readChar: js.Function0[java.lang.String],
+    readInt: js.Function0[scala.Double],
+    readInt64: js.Function0[nodeLib.Buffer],
+    readPart: js.Function0[SSHPart],
+    readString: js.Function0[java.lang.String],
+    remainder: js.Function0[nodeLib.Buffer],
+    skip: js.Function1[scala.Double, scala.Unit],
+    toBuffer: js.Function0[nodeLib.Buffer],
+    write: js.Function1[nodeLib.Buffer, scala.Unit],
+    writeBuffer: js.Function1[nodeLib.Buffer, scala.Unit],
+    writeCString: js.Function1[java.lang.String, scala.Unit],
+    writeChar: js.Function1[java.lang.String, scala.Unit],
+    writeInt: js.Function1[scala.Double, scala.Unit],
+    writeInt64: js.Function1[nodeLib.Buffer, scala.Unit],
+    writePart: js.Function1[SSHPart, scala.Unit],
+    writeString: js.Function1[java.lang.String, scala.Unit]
+  ): SSHBuffer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("atEnd")(atEnd)
+    __obj.updateDynamic("expand")(expand)
+    __obj.updateDynamic("readBuffer")(readBuffer)
+    __obj.updateDynamic("readChar")(readChar)
+    __obj.updateDynamic("readInt")(readInt)
+    __obj.updateDynamic("readInt64")(readInt64)
+    __obj.updateDynamic("readPart")(readPart)
+    __obj.updateDynamic("readString")(readString)
+    __obj.updateDynamic("remainder")(remainder)
+    __obj.updateDynamic("skip")(skip)
+    __obj.updateDynamic("toBuffer")(toBuffer)
+    __obj.updateDynamic("write")(write)
+    __obj.updateDynamic("writeBuffer")(writeBuffer)
+    __obj.updateDynamic("writeCString")(writeCString)
+    __obj.updateDynamic("writeChar")(writeChar)
+    __obj.updateDynamic("writeInt")(writeInt)
+    __obj.updateDynamic("writeInt64")(writeInt64)
+    __obj.updateDynamic("writePart")(writePart)
+    __obj.updateDynamic("writeString")(writeString)
+    __obj.asInstanceOf[SSHBuffer]
+  }
+}
+

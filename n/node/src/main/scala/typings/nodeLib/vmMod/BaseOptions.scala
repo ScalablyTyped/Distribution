@@ -23,3 +23,18 @@ trait BaseOptions extends js.Object {
   var lineOffset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BaseOptions {
+  @scala.inline
+  def apply(
+    columnOffset: scala.Int | scala.Double = null,
+    filename: java.lang.String = null,
+    lineOffset: scala.Int | scala.Double = null
+  ): BaseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (columnOffset != null) __obj.updateDynamic("columnOffset")(columnOffset.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (lineOffset != null) __obj.updateDynamic("lineOffset")(lineOffset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BaseOptions]
+  }
+}
+

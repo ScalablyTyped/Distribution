@@ -10,3 +10,16 @@ trait Anon_DEFAULTS extends js.Object {
   var OPTIONS: lobiboxLib.LobiboxModuleNs.MessageBoxesOptions
 }
 
+object Anon_DEFAULTS {
+  @scala.inline
+  def apply(
+    DEFAULTS: lobiboxLib.LobiboxModuleNs.MessageBoxesDefault,
+    OPTIONS: lobiboxLib.LobiboxModuleNs.MessageBoxesOptions
+  ): Anon_DEFAULTS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DEFAULTS")(DEFAULTS)
+    __obj.updateDynamic("OPTIONS")(OPTIONS)
+    __obj.asInstanceOf[Anon_DEFAULTS]
+  }
+}
+

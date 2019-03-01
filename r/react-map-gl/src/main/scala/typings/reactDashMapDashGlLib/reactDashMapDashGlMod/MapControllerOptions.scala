@@ -19,3 +19,34 @@ trait MapControllerOptions extends js.Object {
   var touchZoom: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MapControllerOptions {
+  @scala.inline
+  def apply(
+    isInteractive: scala.Boolean,
+    doubleClickZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    dragPan: js.UndefOr[scala.Boolean] = js.undefined,
+    dragRotate: js.UndefOr[scala.Boolean] = js.undefined,
+    eventManager: js.Any = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    onStateChange: js.Function1[/* state */ MapState, scala.Unit] = null,
+    onViewportChange: js.Function1[/* viewState */ ViewState, scala.Unit] = null,
+    scrollZoom: js.UndefOr[scala.Boolean] = js.undefined,
+    touchRotate: js.UndefOr[scala.Boolean] = js.undefined,
+    touchZoom: js.UndefOr[scala.Boolean] = js.undefined
+  ): MapControllerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isInteractive")(isInteractive)
+    if (!js.isUndefined(doubleClickZoom)) __obj.updateDynamic("doubleClickZoom")(doubleClickZoom)
+    if (!js.isUndefined(dragPan)) __obj.updateDynamic("dragPan")(dragPan)
+    if (!js.isUndefined(dragRotate)) __obj.updateDynamic("dragRotate")(dragRotate)
+    if (eventManager != null) __obj.updateDynamic("eventManager")(eventManager)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (onViewportChange != null) __obj.updateDynamic("onViewportChange")(onViewportChange)
+    if (!js.isUndefined(scrollZoom)) __obj.updateDynamic("scrollZoom")(scrollZoom)
+    if (!js.isUndefined(touchRotate)) __obj.updateDynamic("touchRotate")(touchRotate)
+    if (!js.isUndefined(touchZoom)) __obj.updateDynamic("touchZoom")(touchZoom)
+    __obj.asInstanceOf[MapControllerOptions]
+  }
+}
+

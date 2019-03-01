@@ -18,3 +18,20 @@ trait DocumentListResponse[D] extends js.Object {
   var update_seq: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DocumentListResponse {
+  @scala.inline
+  def apply[D](
+    offset: scala.Double,
+    rows: js.Array[DocumentResponseRow[D]],
+    total_rows: scala.Double,
+    update_seq: scala.Int | scala.Double = null
+  ): DocumentListResponse[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("total_rows")(total_rows)
+    if (update_seq != null) __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DocumentListResponse[D]]
+  }
+}
+

@@ -18,3 +18,19 @@ trait Clustering extends js.Object {
   def rowToDataPoint(row: Row): heremapsLib.HNs.clusteringNs.DataPoint
 }
 
+object Clustering {
+  @scala.inline
+  def apply(
+    options: js.Function1[
+      heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
+      heremapsLib.HNs.clusteringNs.ProviderNs.ClusteringOptions
+    ],
+    rowToDataPoint: js.Function1[Row, heremapsLib.HNs.clusteringNs.DataPoint]
+  ): Clustering = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("rowToDataPoint")(rowToDataPoint)
+    __obj.asInstanceOf[Clustering]
+  }
+}
+

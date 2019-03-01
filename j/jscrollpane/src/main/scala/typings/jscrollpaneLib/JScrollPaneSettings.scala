@@ -141,3 +141,68 @@ trait JScrollPaneSettings extends js.Object {
   var verticalGutter: js.UndefOr[scala.Double] = js.undefined
 }
 
+object JScrollPaneSettings {
+  @scala.inline
+  def apply(
+    animateDuration: scala.Int | scala.Double = null,
+    animateEase: java.lang.String = null,
+    animateScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowButtonSpeed: scala.Int | scala.Double = null,
+    arrowRepeatFreq: scala.Int | scala.Double = null,
+    arrowScrollOnHover: js.UndefOr[scala.Boolean] = js.undefined,
+    autoReinitialise: js.UndefOr[scala.Boolean] = js.undefined,
+    autoReinitialiseDelay: scala.Int | scala.Double = null,
+    clickOnTrack: js.UndefOr[scala.Boolean] = js.undefined,
+    contentWidth: scala.Int | scala.Double = null,
+    enableKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    hideFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    hijackInternalLinks: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalArrowPositions: java.lang.String = null,
+    horizontalDragMaxWidth: scala.Int | scala.Double = null,
+    horizontalDragMinWidth: scala.Int | scala.Double = null,
+    horizontalGutter: scala.Int | scala.Double = null,
+    maintainPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseWheelSpeed: scala.Int | scala.Double = null,
+    showArrows: js.UndefOr[scala.Boolean] = js.undefined,
+    stickToBottom: js.UndefOr[scala.Boolean] = js.undefined,
+    stickToRight: js.UndefOr[scala.Boolean] = js.undefined,
+    trackClickRepeatFreq: scala.Int | scala.Double = null,
+    trackClickSpeed: scala.Int | scala.Double = null,
+    verticalArrowPositions: java.lang.String = null,
+    verticalDragMaxHeight: scala.Int | scala.Double = null,
+    verticalDragMinHeight: scala.Int | scala.Double = null,
+    verticalGutter: scala.Int | scala.Double = null
+  ): JScrollPaneSettings = {
+    val __obj = js.Dynamic.literal()
+    if (animateDuration != null) __obj.updateDynamic("animateDuration")(animateDuration.asInstanceOf[js.Any])
+    if (animateEase != null) __obj.updateDynamic("animateEase")(animateEase)
+    if (!js.isUndefined(animateScroll)) __obj.updateDynamic("animateScroll")(animateScroll)
+    if (arrowButtonSpeed != null) __obj.updateDynamic("arrowButtonSpeed")(arrowButtonSpeed.asInstanceOf[js.Any])
+    if (arrowRepeatFreq != null) __obj.updateDynamic("arrowRepeatFreq")(arrowRepeatFreq.asInstanceOf[js.Any])
+    if (!js.isUndefined(arrowScrollOnHover)) __obj.updateDynamic("arrowScrollOnHover")(arrowScrollOnHover)
+    if (!js.isUndefined(autoReinitialise)) __obj.updateDynamic("autoReinitialise")(autoReinitialise)
+    if (autoReinitialiseDelay != null) __obj.updateDynamic("autoReinitialiseDelay")(autoReinitialiseDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickOnTrack)) __obj.updateDynamic("clickOnTrack")(clickOnTrack)
+    if (contentWidth != null) __obj.updateDynamic("contentWidth")(contentWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableKeyboardNavigation)) __obj.updateDynamic("enableKeyboardNavigation")(enableKeyboardNavigation)
+    if (!js.isUndefined(hideFocus)) __obj.updateDynamic("hideFocus")(hideFocus)
+    if (!js.isUndefined(hijackInternalLinks)) __obj.updateDynamic("hijackInternalLinks")(hijackInternalLinks)
+    if (horizontalArrowPositions != null) __obj.updateDynamic("horizontalArrowPositions")(horizontalArrowPositions)
+    if (horizontalDragMaxWidth != null) __obj.updateDynamic("horizontalDragMaxWidth")(horizontalDragMaxWidth.asInstanceOf[js.Any])
+    if (horizontalDragMinWidth != null) __obj.updateDynamic("horizontalDragMinWidth")(horizontalDragMinWidth.asInstanceOf[js.Any])
+    if (horizontalGutter != null) __obj.updateDynamic("horizontalGutter")(horizontalGutter.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintainPosition)) __obj.updateDynamic("maintainPosition")(maintainPosition)
+    if (mouseWheelSpeed != null) __obj.updateDynamic("mouseWheelSpeed")(mouseWheelSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(showArrows)) __obj.updateDynamic("showArrows")(showArrows)
+    if (!js.isUndefined(stickToBottom)) __obj.updateDynamic("stickToBottom")(stickToBottom)
+    if (!js.isUndefined(stickToRight)) __obj.updateDynamic("stickToRight")(stickToRight)
+    if (trackClickRepeatFreq != null) __obj.updateDynamic("trackClickRepeatFreq")(trackClickRepeatFreq.asInstanceOf[js.Any])
+    if (trackClickSpeed != null) __obj.updateDynamic("trackClickSpeed")(trackClickSpeed.asInstanceOf[js.Any])
+    if (verticalArrowPositions != null) __obj.updateDynamic("verticalArrowPositions")(verticalArrowPositions)
+    if (verticalDragMaxHeight != null) __obj.updateDynamic("verticalDragMaxHeight")(verticalDragMaxHeight.asInstanceOf[js.Any])
+    if (verticalDragMinHeight != null) __obj.updateDynamic("verticalDragMinHeight")(verticalDragMinHeight.asInstanceOf[js.Any])
+    if (verticalGutter != null) __obj.updateDynamic("verticalGutter")(verticalGutter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JScrollPaneSettings]
+  }
+}
+

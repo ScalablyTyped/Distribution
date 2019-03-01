@@ -64,3 +64,40 @@ trait EditSettings extends js.Object {
   var titleColumn: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EditSettings {
+  @scala.inline
+  def apply(
+    allowAdding: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDeleting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEditOnDblClick: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    dialogEditorTemplateID: java.lang.String = null,
+    editMode: EditMode | java.lang.String = null,
+    externalFormTemplateID: java.lang.String = null,
+    formPosition: FormPosition | java.lang.String = null,
+    inlineFormTemplateID: java.lang.String = null,
+    rowPosition: RowPosition | java.lang.String = null,
+    showAddNewRow: js.UndefOr[scala.Boolean] = js.undefined,
+    showConfirmDialog: js.UndefOr[scala.Boolean] = js.undefined,
+    showDeleteConfirmDialog: js.UndefOr[scala.Boolean] = js.undefined,
+    titleColumn: java.lang.String = null
+  ): EditSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowAdding)) __obj.updateDynamic("allowAdding")(allowAdding)
+    if (!js.isUndefined(allowDeleting)) __obj.updateDynamic("allowDeleting")(allowDeleting)
+    if (!js.isUndefined(allowEditOnDblClick)) __obj.updateDynamic("allowEditOnDblClick")(allowEditOnDblClick)
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
+    if (dialogEditorTemplateID != null) __obj.updateDynamic("dialogEditorTemplateID")(dialogEditorTemplateID)
+    if (editMode != null) __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])
+    if (externalFormTemplateID != null) __obj.updateDynamic("externalFormTemplateID")(externalFormTemplateID)
+    if (formPosition != null) __obj.updateDynamic("formPosition")(formPosition.asInstanceOf[js.Any])
+    if (inlineFormTemplateID != null) __obj.updateDynamic("inlineFormTemplateID")(inlineFormTemplateID)
+    if (rowPosition != null) __obj.updateDynamic("rowPosition")(rowPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(showAddNewRow)) __obj.updateDynamic("showAddNewRow")(showAddNewRow)
+    if (!js.isUndefined(showConfirmDialog)) __obj.updateDynamic("showConfirmDialog")(showConfirmDialog)
+    if (!js.isUndefined(showDeleteConfirmDialog)) __obj.updateDynamic("showDeleteConfirmDialog")(showDeleteConfirmDialog)
+    if (titleColumn != null) __obj.updateDynamic("titleColumn")(titleColumn)
+    __obj.asInstanceOf[EditSettings]
+  }
+}
+

@@ -7,52 +7,68 @@ import scala.scalajs.js.annotation._
 
 object nivoDashSliderLibStrings {
   @js.native
-  sealed trait boxRain extends js.Object
+  sealed trait boxRain
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait boxRainGrow extends js.Object
+  sealed trait boxRainGrow
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait boxRainGrowReverse extends js.Object
+  sealed trait boxRainGrowReverse
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait boxRainReverse extends js.Object
+  sealed trait boxRainReverse
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait boxRandom extends js.Object
+  sealed trait boxRandom
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait fade
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait fold extends js.Object
+  sealed trait fold
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait random extends js.Object
+  sealed trait random
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait sliceDown extends js.Object
+  sealed trait sliceDown
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait sliceDownLeft extends js.Object
+  sealed trait sliceDownLeft
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait sliceUp extends js.Object
+  sealed trait sliceUp
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait sliceUpDown extends js.Object
+  sealed trait sliceUpDown
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait sliceUpDownLeft extends js.Object
+  sealed trait sliceUpDownLeft
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait sliceUpLeft extends js.Object
+  sealed trait sliceUpLeft
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait slideInLeft extends js.Object
+  sealed trait slideInLeft
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @js.native
-  sealed trait slideInRight extends js.Object
+  sealed trait slideInRight
+    extends nivoDashSliderLib.nivoDashSliderMod.EffectType
   
   @scala.inline
   def boxRain: boxRain = "boxRain".asInstanceOf[boxRain]

@@ -16,3 +16,13 @@ trait IPosition extends js.Object {
   val lineNumber: scala.Double
 }
 
+object IPosition {
+  @scala.inline
+  def apply(column: scala.Double, lineNumber: scala.Double): IPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("lineNumber")(lineNumber)
+    __obj.asInstanceOf[IPosition]
+  }
+}
+

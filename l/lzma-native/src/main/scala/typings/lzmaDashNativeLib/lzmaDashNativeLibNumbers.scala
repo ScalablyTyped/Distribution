@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object lzmaDashNativeLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends lzmaDashNativeLib.lzmaDashNativeMod.Preset
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

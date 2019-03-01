@@ -13,3 +13,13 @@ trait ParserOptions extends js.Object {
   var time: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ParserOptions {
+  @scala.inline
+  def apply(smart: js.UndefOr[scala.Boolean] = js.undefined, time: js.UndefOr[scala.Boolean] = js.undefined): ParserOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(smart)) __obj.updateDynamic("smart")(smart)
+    if (!js.isUndefined(time)) __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[ParserOptions]
+  }
+}
+

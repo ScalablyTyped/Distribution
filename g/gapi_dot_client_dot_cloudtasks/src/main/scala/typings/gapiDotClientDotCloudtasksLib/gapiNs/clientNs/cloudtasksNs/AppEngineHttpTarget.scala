@@ -17,3 +17,12 @@ trait AppEngineHttpTarget extends js.Object {
   var appEngineRoutingOverride: js.UndefOr[AppEngineRouting] = js.undefined
 }
 
+object AppEngineHttpTarget {
+  @scala.inline
+  def apply(appEngineRoutingOverride: AppEngineRouting = null): AppEngineHttpTarget = {
+    val __obj = js.Dynamic.literal()
+    if (appEngineRoutingOverride != null) __obj.updateDynamic("appEngineRoutingOverride")(appEngineRoutingOverride)
+    __obj.asInstanceOf[AppEngineHttpTarget]
+  }
+}
+

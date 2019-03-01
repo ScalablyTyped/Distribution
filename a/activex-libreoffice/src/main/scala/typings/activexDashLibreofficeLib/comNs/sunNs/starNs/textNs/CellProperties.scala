@@ -53,3 +53,88 @@ trait CellProperties
   var VertOrient: scala.Double
 }
 
+object CellProperties {
+  @scala.inline
+  def apply(
+    BackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BackGraphicFilter: java.lang.String,
+    BackGraphicLocation: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.GraphicLocation,
+    BackGraphicURL: java.lang.String,
+    BackTransparent: scala.Boolean,
+    BottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    BottomBorderDistance: scala.Double,
+    CellName: java.lang.String,
+    IsProtected: scala.Boolean,
+    LeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    LeftBorderDistance: scala.Double,
+    NumberFormat: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    RightBorderDistance: scala.Double,
+    TextSection: XTextSection,
+    TopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    TopBorderDistance: scala.Double,
+    UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    VertOrient: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): CellProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BackColor")(BackColor)
+    __obj.updateDynamic("BackGraphicFilter")(BackGraphicFilter)
+    __obj.updateDynamic("BackGraphicLocation")(BackGraphicLocation)
+    __obj.updateDynamic("BackGraphicURL")(BackGraphicURL)
+    __obj.updateDynamic("BackTransparent")(BackTransparent)
+    __obj.updateDynamic("BottomBorder")(BottomBorder)
+    __obj.updateDynamic("BottomBorderDistance")(BottomBorderDistance)
+    __obj.updateDynamic("CellName")(CellName)
+    __obj.updateDynamic("IsProtected")(IsProtected)
+    __obj.updateDynamic("LeftBorder")(LeftBorder)
+    __obj.updateDynamic("LeftBorderDistance")(LeftBorderDistance)
+    __obj.updateDynamic("NumberFormat")(NumberFormat)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RightBorder")(RightBorder)
+    __obj.updateDynamic("RightBorderDistance")(RightBorderDistance)
+    __obj.updateDynamic("TextSection")(TextSection)
+    __obj.updateDynamic("TopBorder")(TopBorder)
+    __obj.updateDynamic("TopBorderDistance")(TopBorderDistance)
+    __obj.updateDynamic("UserDefinedAttributes")(UserDefinedAttributes)
+    __obj.updateDynamic("VertOrient")(VertOrient)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[CellProperties]
+  }
+}
+

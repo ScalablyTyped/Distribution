@@ -69,3 +69,44 @@ trait ScanInput extends js.Object {
   var TotalSegments: js.UndefOr[ScanTotalSegments] = js.undefined
 }
 
+object ScanInput {
+  @scala.inline
+  def apply(
+    TableName: TableName,
+    AttributesToGet: AttributeNameList = null,
+    ConditionalOperator: ConditionalOperator = null,
+    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
+    ExclusiveStartKey: Key = null,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ExpressionAttributeValues: ExpressionAttributeValueMap = null,
+    FilterExpression: ConditionExpression = null,
+    IndexName: IndexName = null,
+    Limit: js.UndefOr[PositiveIntegerObject] = js.undefined,
+    ProjectionExpression: ProjectionExpression = null,
+    ReturnConsumedCapacity: ReturnConsumedCapacity = null,
+    ScanFilter: FilterConditionMap = null,
+    Segment: js.UndefOr[ScanSegment] = js.undefined,
+    Select: Select = null,
+    TotalSegments: js.UndefOr[ScanTotalSegments] = js.undefined
+  ): ScanInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TableName")(TableName)
+    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet)
+    if (ConditionalOperator != null) __obj.updateDynamic("ConditionalOperator")(ConditionalOperator.asInstanceOf[js.Any])
+    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead)
+    if (ExclusiveStartKey != null) __obj.updateDynamic("ExclusiveStartKey")(ExclusiveStartKey)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ExpressionAttributeValues != null) __obj.updateDynamic("ExpressionAttributeValues")(ExpressionAttributeValues)
+    if (FilterExpression != null) __obj.updateDynamic("FilterExpression")(FilterExpression)
+    if (IndexName != null) __obj.updateDynamic("IndexName")(IndexName)
+    if (!js.isUndefined(Limit)) __obj.updateDynamic("Limit")(Limit)
+    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression)
+    if (ReturnConsumedCapacity != null) __obj.updateDynamic("ReturnConsumedCapacity")(ReturnConsumedCapacity.asInstanceOf[js.Any])
+    if (ScanFilter != null) __obj.updateDynamic("ScanFilter")(ScanFilter)
+    if (!js.isUndefined(Segment)) __obj.updateDynamic("Segment")(Segment)
+    if (Select != null) __obj.updateDynamic("Select")(Select.asInstanceOf[js.Any])
+    if (!js.isUndefined(TotalSegments)) __obj.updateDynamic("TotalSegments")(TotalSegments)
+    __obj.asInstanceOf[ScanInput]
+  }
+}
+

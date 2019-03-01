@@ -18,3 +18,22 @@ trait TestOrderPaymentMethod extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TestOrderPaymentMethod {
+  @scala.inline
+  def apply(
+    expirationMonth: scala.Int | scala.Double = null,
+    expirationYear: scala.Int | scala.Double = null,
+    lastFourDigits: java.lang.String = null,
+    predefinedBillingAddress: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): TestOrderPaymentMethod = {
+    val __obj = js.Dynamic.literal()
+    if (expirationMonth != null) __obj.updateDynamic("expirationMonth")(expirationMonth.asInstanceOf[js.Any])
+    if (expirationYear != null) __obj.updateDynamic("expirationYear")(expirationYear.asInstanceOf[js.Any])
+    if (lastFourDigits != null) __obj.updateDynamic("lastFourDigits")(lastFourDigits)
+    if (predefinedBillingAddress != null) __obj.updateDynamic("predefinedBillingAddress")(predefinedBillingAddress)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[TestOrderPaymentMethod]
+  }
+}
+

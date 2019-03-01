@@ -5,9 +5,20 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Code extends js.Object {
+trait Code
+  extends markedLib.markedMod.markedNs.Token {
   var lang: js.UndefOr[java.lang.String] = js.undefined
   var text: java.lang.String
   var `type`: markedLib.markedLibStrings.code
+}
+
+object Code {
+  @scala.inline
+  def apply(text: java.lang.String, `type`: markedLib.markedLibStrings.code, lang: java.lang.String = null): Code = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("text")(text)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    __obj.asInstanceOf[Code]
+  }
 }
 

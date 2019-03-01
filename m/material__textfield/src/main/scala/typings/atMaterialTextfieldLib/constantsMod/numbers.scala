@@ -11,3 +11,16 @@ trait numbers
   var LABEL_SCALE: atMaterialTextfieldLib.atMaterialTextfieldLibNumbers.`0DOT75`
 }
 
+object numbers {
+  @scala.inline
+  def apply(
+    DENSE_LABEL_SCALE: atMaterialTextfieldLib.atMaterialTextfieldLibNumbers.`0DOT923`,
+    LABEL_SCALE: atMaterialTextfieldLib.atMaterialTextfieldLibNumbers.`0DOT75`
+  ): numbers = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DENSE_LABEL_SCALE")(DENSE_LABEL_SCALE)
+    __obj.updateDynamic("LABEL_SCALE")(LABEL_SCALE)
+    __obj.asInstanceOf[numbers]
+  }
+}
+

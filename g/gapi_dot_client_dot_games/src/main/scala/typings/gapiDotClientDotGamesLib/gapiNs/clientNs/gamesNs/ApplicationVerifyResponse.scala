@@ -14,3 +14,18 @@ trait ApplicationVerifyResponse extends js.Object {
   var player_id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApplicationVerifyResponse {
+  @scala.inline
+  def apply(
+    alternate_player_id: java.lang.String = null,
+    kind: java.lang.String = null,
+    player_id: java.lang.String = null
+  ): ApplicationVerifyResponse = {
+    val __obj = js.Dynamic.literal()
+    if (alternate_player_id != null) __obj.updateDynamic("alternate_player_id")(alternate_player_id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (player_id != null) __obj.updateDynamic("player_id")(player_id)
+    __obj.asInstanceOf[ApplicationVerifyResponse]
+  }
+}
+

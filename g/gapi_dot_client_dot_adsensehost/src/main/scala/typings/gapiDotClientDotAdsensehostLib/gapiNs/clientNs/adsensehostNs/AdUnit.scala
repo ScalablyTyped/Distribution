@@ -31,3 +31,28 @@ trait AdUnit extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AdUnit {
+  @scala.inline
+  def apply(
+    code: java.lang.String = null,
+    contentAdsSettings: gapiDotClientDotAdsensehostLib.Anon_BackupOption = null,
+    customStyle: AdStyle = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    mobileContentAdsSettings: gapiDotClientDotAdsensehostLib.Anon_MarkupLanguage = null,
+    name: java.lang.String = null,
+    status: java.lang.String = null
+  ): AdUnit = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (contentAdsSettings != null) __obj.updateDynamic("contentAdsSettings")(contentAdsSettings)
+    if (customStyle != null) __obj.updateDynamic("customStyle")(customStyle)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (mobileContentAdsSettings != null) __obj.updateDynamic("mobileContentAdsSettings")(mobileContentAdsSettings)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[AdUnit]
+  }
+}
+

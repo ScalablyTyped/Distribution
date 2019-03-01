@@ -12,3 +12,12 @@ trait BackgroundImage extends js.Object {
   var alignment: js.UndefOr[ImageAlignment | java.lang.String] = js.undefined
 }
 
+object BackgroundImage {
+  @scala.inline
+  def apply(alignment: ImageAlignment | java.lang.String = null): BackgroundImage = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundImage]
+  }
+}
+

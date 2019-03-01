@@ -12,3 +12,20 @@ trait AbortError
   val originalError: stdLib.Error
 }
 
+object AbortError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: pDashRetryLib.pDashRetryLibStrings.AbortError,
+    originalError: stdLib.Error,
+    stack: java.lang.String = null
+  ): AbortError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("originalError")(originalError)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[AbortError]
+  }
+}
+

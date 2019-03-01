@@ -46,3 +46,30 @@ trait XStatisticDisplay
   def getUpBar(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object XStatisticDisplay {
+  @scala.inline
+  def apply(
+    DownBar: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    MinMaxLine: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    UpBar: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    acquire: js.Function0[scala.Unit],
+    getDownBar: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getMinMaxLine: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    getUpBar: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStatisticDisplay = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DownBar")(DownBar)
+    __obj.updateDynamic("MinMaxLine")(MinMaxLine)
+    __obj.updateDynamic("UpBar")(UpBar)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDownBar")(getDownBar)
+    __obj.updateDynamic("getMinMaxLine")(getMinMaxLine)
+    __obj.updateDynamic("getUpBar")(getUpBar)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStatisticDisplay]
+  }
+}
+

@@ -15,3 +15,12 @@ trait JSMath2jaxPreprocessor extends js.Object {
   var preview: js.Any
 }
 
+object JSMath2jaxPreprocessor {
+  @scala.inline
+  def apply(preview: js.Any): JSMath2jaxPreprocessor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("preview")(preview)
+    __obj.asInstanceOf[JSMath2jaxPreprocessor]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Executable extends js.Object {
   def toQuery(): QueryLike
 }
 
+object Executable {
+  @scala.inline
+  def apply(toQuery: js.Function0[QueryLike]): Executable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toQuery")(toQuery)
+    __obj.asInstanceOf[Executable]
+  }
+}
+

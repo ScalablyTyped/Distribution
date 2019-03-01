@@ -18,3 +18,22 @@ trait Type extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Type {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    insertTime: java.lang.String = null,
+    name: java.lang.String = null,
+    operation: Operation = null,
+    selfLink: java.lang.String = null
+  ): Type = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Type]
+  }
+}
+

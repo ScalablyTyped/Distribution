@@ -18,3 +18,30 @@ trait Auth0Error extends js.Object {
   var statusText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Auth0Error {
+  @scala.inline
+  def apply(
+    error: LibErrorCodes | SpecErrorCodes | java.lang.String,
+    errorDescription: java.lang.String,
+    code: java.lang.String = null,
+    description: java.lang.String = null,
+    name: java.lang.String = null,
+    original: js.Any = null,
+    policy: java.lang.String = null,
+    statusCode: scala.Int | scala.Double = null,
+    statusText: java.lang.String = null
+  ): Auth0Error = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("errorDescription")(errorDescription)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (original != null) __obj.updateDynamic("original")(original)
+    if (policy != null) __obj.updateDynamic("policy")(policy)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    __obj.asInstanceOf[Auth0Error]
+  }
+}
+

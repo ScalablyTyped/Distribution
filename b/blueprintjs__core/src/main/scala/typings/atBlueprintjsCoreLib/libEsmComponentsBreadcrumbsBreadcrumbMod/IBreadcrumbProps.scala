@@ -12,3 +12,33 @@ trait IBreadcrumbProps
   var current: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IBreadcrumbProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    current: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    href: java.lang.String = null,
+    icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
+    intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    onClick: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    target: java.lang.String = null,
+    text: reactLib.reactMod.ReactNs.ReactNode = null
+  ): IBreadcrumbProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IBreadcrumbProps]
+  }
+}
+

@@ -33,3 +33,22 @@ trait UsageOptions extends js.Object {
   var padding: js.UndefOr[scala.Double] = js.undefined
 }
 
+object UsageOptions {
+  @scala.inline
+  def apply(
+    gulpfile: java.lang.String = null,
+    keysColumnWidth: scala.Int | scala.Double = null,
+    lineWidth: scala.Int | scala.Double = null,
+    logger: gulpDashHelpDashDocLib.Anon_Log = null,
+    padding: scala.Int | scala.Double = null
+  ): UsageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (gulpfile != null) __obj.updateDynamic("gulpfile")(gulpfile)
+    if (keysColumnWidth != null) __obj.updateDynamic("keysColumnWidth")(keysColumnWidth.asInstanceOf[js.Any])
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UsageOptions]
+  }
+}
+

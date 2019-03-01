@@ -33,3 +33,22 @@ trait DefinePreLoadConditionOptions extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DefinePreLoadConditionOptions {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    name: java.lang.String = null,
+    payload: java.lang.String = null,
+    priority: scala.Int | scala.Double = null,
+    version: scala.Int | scala.Double = null
+  ): DefinePreLoadConditionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (payload != null) __obj.updateDynamic("payload")(payload)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefinePreLoadConditionOptions]
+  }
+}
+

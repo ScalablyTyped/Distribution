@@ -15,3 +15,26 @@ trait FeaturePayload extends EventPayload {
   var uri: java.lang.String
 }
 
+object FeaturePayload {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    keyword: java.lang.String,
+    line: scala.Double,
+    name: java.lang.String,
+    scenarios: js.Array[cucumberLib.cucumberMod.Scenario],
+    tags: js.Array[cucumberLib.cucumberMod.Tag],
+    uri: java.lang.String
+  ): FeaturePayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("keyword")(keyword)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("scenarios")(scenarios)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[FeaturePayload]
+  }
+}
+

@@ -18,3 +18,13 @@ trait Distribution extends js.Object {
   var measurementTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Distribution {
+  @scala.inline
+  def apply(marketShare: scala.Int | scala.Double = null, measurementTime: java.lang.String = null): Distribution = {
+    val __obj = js.Dynamic.literal()
+    if (marketShare != null) __obj.updateDynamic("marketShare")(marketShare.asInstanceOf[js.Any])
+    if (measurementTime != null) __obj.updateDynamic("measurementTime")(measurementTime)
+    __obj.asInstanceOf[Distribution]
+  }
+}
+

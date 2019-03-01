@@ -12,3 +12,20 @@ trait Anon_Dns extends js.Object {
   var x500: uuidDash1345Lib.uuidDash1345Mod.UUID
 }
 
+object Anon_Dns {
+  @scala.inline
+  def apply(
+    dns: uuidDash1345Lib.uuidDash1345Mod.UUID,
+    oid: uuidDash1345Lib.uuidDash1345Mod.UUID,
+    url: uuidDash1345Lib.uuidDash1345Mod.UUID,
+    x500: uuidDash1345Lib.uuidDash1345Mod.UUID
+  ): Anon_Dns = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dns")(dns)
+    __obj.updateDynamic("oid")(oid)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("x500")(x500)
+    __obj.asInstanceOf[Anon_Dns]
+  }
+}
+

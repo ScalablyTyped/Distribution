@@ -29,3 +29,44 @@ trait Errors extends js.Object {
   var ValidationErrorItem: ValidationErrorItem
 }
 
+object Errors {
+  @scala.inline
+  def apply(
+    AccessDeniedError: AccessDeniedError,
+    ConnectionError: ConnectionError,
+    ConnectionRefusedError: ConnectionRefusedError,
+    ConnectionTimedOutError: ConnectionTimedOutError,
+    DatabaseError: DatabaseError,
+    EmptyResultError: EmptyResultError,
+    Error: BaseError,
+    ExclusionConstraintError: ExclusionConstraintError,
+    ForeignKeyConstraintError: ForeignKeyConstraintError,
+    HostNotFoundError: HostNotFoundError,
+    HostNotReachableError: HostNotReachableError,
+    InvalidConnectionError: InvalidConnectionError,
+    TimeoutError: TimeoutError,
+    UniqueConstraintError: UniqueConstraintError,
+    ValidationError: ValidationError,
+    ValidationErrorItem: ValidationErrorItem
+  ): Errors = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessDeniedError")(AccessDeniedError)
+    __obj.updateDynamic("ConnectionError")(ConnectionError)
+    __obj.updateDynamic("ConnectionRefusedError")(ConnectionRefusedError)
+    __obj.updateDynamic("ConnectionTimedOutError")(ConnectionTimedOutError)
+    __obj.updateDynamic("DatabaseError")(DatabaseError)
+    __obj.updateDynamic("EmptyResultError")(EmptyResultError)
+    __obj.updateDynamic("Error")(Error)
+    __obj.updateDynamic("ExclusionConstraintError")(ExclusionConstraintError)
+    __obj.updateDynamic("ForeignKeyConstraintError")(ForeignKeyConstraintError)
+    __obj.updateDynamic("HostNotFoundError")(HostNotFoundError)
+    __obj.updateDynamic("HostNotReachableError")(HostNotReachableError)
+    __obj.updateDynamic("InvalidConnectionError")(InvalidConnectionError)
+    __obj.updateDynamic("TimeoutError")(TimeoutError)
+    __obj.updateDynamic("UniqueConstraintError")(UniqueConstraintError)
+    __obj.updateDynamic("ValidationError")(ValidationError)
+    __obj.updateDynamic("ValidationErrorItem")(ValidationErrorItem)
+    __obj.asInstanceOf[Errors]
+  }
+}
+

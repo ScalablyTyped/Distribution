@@ -65,3 +65,26 @@ trait WorksheetUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object WorksheetUpdateData {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    position: scala.Int | scala.Double = null,
+    showGridlines: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeadings: js.UndefOr[scala.Boolean] = js.undefined,
+    standardWidth: scala.Int | scala.Double = null,
+    tabColor: java.lang.String = null,
+    visibility: officeDashJsLib.ExcelNs.SheetVisibility | officeDashJsLib.officeDashJsLibStrings.Visible | officeDashJsLib.officeDashJsLibStrings.Hidden | officeDashJsLib.officeDashJsLibStrings.VeryHidden = null
+  ): WorksheetUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
+    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)
+    if (standardWidth != null) __obj.updateDynamic("standardWidth")(standardWidth.asInstanceOf[js.Any])
+    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetUpdateData]
+  }
+}
+

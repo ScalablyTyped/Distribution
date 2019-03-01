@@ -22,3 +22,47 @@ trait AdunitsResource extends js.Object {
   def update(request: gapiDotClientDotAdsensehostLib.Anon_AccountId): gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
 }
 
+object AdunitsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
+    ],
+    getAdCode: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientIdAdUnitId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdCode]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AccountId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdUnits]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AccountIdAdClientId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AccountId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AdUnit]
+    ]
+  ): AdunitsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getAdCode")(getAdCode)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[AdunitsResource]
+  }
+}
+

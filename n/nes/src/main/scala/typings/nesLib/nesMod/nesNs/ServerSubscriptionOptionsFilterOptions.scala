@@ -11,3 +11,14 @@ trait ServerSubscriptionOptionsFilterOptions extends js.Object {
   var socket: Socket
 }
 
+object ServerSubscriptionOptionsFilterOptions {
+  @scala.inline
+  def apply(socket: Socket, credentials: js.Any = null, params: js.Any = null): ServerSubscriptionOptionsFilterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("socket")(socket)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[ServerSubscriptionOptionsFilterOptions]
+  }
+}
+

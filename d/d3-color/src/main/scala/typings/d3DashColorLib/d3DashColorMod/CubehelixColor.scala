@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CubehelixColor extends Color {
+trait CubehelixColor
+  extends Color
+     with ColorSpaceObject {
   /**
     * Hue channel value.
     */

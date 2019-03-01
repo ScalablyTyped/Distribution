@@ -38,3 +38,42 @@ trait Response extends js.Object {
   var updateEmbeddedObjectPosition: js.UndefOr[UpdateEmbeddedObjectPositionResponse] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    addBanding: AddBandingResponse = null,
+    addChart: AddChartResponse = null,
+    addFilterView: AddFilterViewResponse = null,
+    addNamedRange: AddNamedRangeResponse = null,
+    addProtectedRange: AddProtectedRangeResponse = null,
+    addSheet: AddSheetResponse = null,
+    createDeveloperMetadata: CreateDeveloperMetadataResponse = null,
+    deleteConditionalFormatRule: DeleteConditionalFormatRuleResponse = null,
+    deleteDeveloperMetadata: DeleteDeveloperMetadataResponse = null,
+    duplicateFilterView: DuplicateFilterViewResponse = null,
+    duplicateSheet: DuplicateSheetResponse = null,
+    findReplace: FindReplaceResponse = null,
+    updateConditionalFormatRule: UpdateConditionalFormatRuleResponse = null,
+    updateDeveloperMetadata: UpdateDeveloperMetadataResponse = null,
+    updateEmbeddedObjectPosition: UpdateEmbeddedObjectPositionResponse = null
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    if (addBanding != null) __obj.updateDynamic("addBanding")(addBanding)
+    if (addChart != null) __obj.updateDynamic("addChart")(addChart)
+    if (addFilterView != null) __obj.updateDynamic("addFilterView")(addFilterView)
+    if (addNamedRange != null) __obj.updateDynamic("addNamedRange")(addNamedRange)
+    if (addProtectedRange != null) __obj.updateDynamic("addProtectedRange")(addProtectedRange)
+    if (addSheet != null) __obj.updateDynamic("addSheet")(addSheet)
+    if (createDeveloperMetadata != null) __obj.updateDynamic("createDeveloperMetadata")(createDeveloperMetadata)
+    if (deleteConditionalFormatRule != null) __obj.updateDynamic("deleteConditionalFormatRule")(deleteConditionalFormatRule)
+    if (deleteDeveloperMetadata != null) __obj.updateDynamic("deleteDeveloperMetadata")(deleteDeveloperMetadata)
+    if (duplicateFilterView != null) __obj.updateDynamic("duplicateFilterView")(duplicateFilterView)
+    if (duplicateSheet != null) __obj.updateDynamic("duplicateSheet")(duplicateSheet)
+    if (findReplace != null) __obj.updateDynamic("findReplace")(findReplace)
+    if (updateConditionalFormatRule != null) __obj.updateDynamic("updateConditionalFormatRule")(updateConditionalFormatRule)
+    if (updateDeveloperMetadata != null) __obj.updateDynamic("updateDeveloperMetadata")(updateDeveloperMetadata)
+    if (updateEmbeddedObjectPosition != null) __obj.updateDynamic("updateEmbeddedObjectPosition")(updateEmbeddedObjectPosition)
+    __obj.asInstanceOf[Response]
+  }
+}
+

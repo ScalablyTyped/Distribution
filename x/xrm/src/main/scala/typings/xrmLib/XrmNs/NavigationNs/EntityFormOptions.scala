@@ -84,3 +84,46 @@ trait EntityFormOptions extends js.Object {
   var windowPosition: js.UndefOr[xrmLib.XrmEnumNs.WindowPositions] = js.undefined
 }
 
+object EntityFormOptions {
+  @scala.inline
+  def apply(
+    cmdbar: js.UndefOr[scala.Boolean] = js.undefined,
+    createFromEntity: xrmLib.XrmNs.LookupValue = null,
+    entityId: java.lang.String = null,
+    entityName: java.lang.String = null,
+    formId: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    isCrossEntityNavigate: js.UndefOr[scala.Boolean] = js.undefined,
+    isOfflineSyncError: js.UndefOr[scala.Boolean] = js.undefined,
+    navBar: xrmLib.XrmNs.UrlNs.NavBarDisplay = null,
+    openInNewWindow: js.UndefOr[scala.Boolean] = js.undefined,
+    processId: java.lang.String = null,
+    processInstanceId: java.lang.String = null,
+    relationship: Relationship = null,
+    selectedStageId: java.lang.String = null,
+    useQuickCreateForm: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null,
+    windowPosition: xrmLib.XrmEnumNs.WindowPositions = null
+  ): EntityFormOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cmdbar)) __obj.updateDynamic("cmdbar")(cmdbar)
+    if (createFromEntity != null) __obj.updateDynamic("createFromEntity")(createFromEntity)
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
+    if (entityName != null) __obj.updateDynamic("entityName")(entityName)
+    if (formId != null) __obj.updateDynamic("formId")(formId)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(isCrossEntityNavigate)) __obj.updateDynamic("isCrossEntityNavigate")(isCrossEntityNavigate)
+    if (!js.isUndefined(isOfflineSyncError)) __obj.updateDynamic("isOfflineSyncError")(isOfflineSyncError)
+    if (navBar != null) __obj.updateDynamic("navBar")(navBar)
+    if (!js.isUndefined(openInNewWindow)) __obj.updateDynamic("openInNewWindow")(openInNewWindow)
+    if (processId != null) __obj.updateDynamic("processId")(processId)
+    if (processInstanceId != null) __obj.updateDynamic("processInstanceId")(processInstanceId)
+    if (relationship != null) __obj.updateDynamic("relationship")(relationship)
+    if (selectedStageId != null) __obj.updateDynamic("selectedStageId")(selectedStageId)
+    if (!js.isUndefined(useQuickCreateForm)) __obj.updateDynamic("useQuickCreateForm")(useQuickCreateForm)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (windowPosition != null) __obj.updateDynamic("windowPosition")(windowPosition)
+    __obj.asInstanceOf[EntityFormOptions]
+  }
+}
+

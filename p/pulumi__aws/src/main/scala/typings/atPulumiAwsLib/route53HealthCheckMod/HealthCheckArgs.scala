@@ -89,3 +89,49 @@ trait HealthCheckArgs extends js.Object {
   val `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object HealthCheckArgs {
+  @scala.inline
+  def apply(
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    childHealthThreshold: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    childHealthchecks: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    cloudwatchAlarmName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cloudwatchAlarmRegion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enableSni: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    failureThreshold: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    fqdn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    insufficientDataHealthStatus: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    invertHealthcheck: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    ipAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    measureLatency: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    referenceName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    regions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    requestInterval: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    resourcePath: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    searchString: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): HealthCheckArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (childHealthThreshold != null) __obj.updateDynamic("childHealthThreshold")(childHealthThreshold.asInstanceOf[js.Any])
+    if (childHealthchecks != null) __obj.updateDynamic("childHealthchecks")(childHealthchecks.asInstanceOf[js.Any])
+    if (cloudwatchAlarmName != null) __obj.updateDynamic("cloudwatchAlarmName")(cloudwatchAlarmName.asInstanceOf[js.Any])
+    if (cloudwatchAlarmRegion != null) __obj.updateDynamic("cloudwatchAlarmRegion")(cloudwatchAlarmRegion.asInstanceOf[js.Any])
+    if (enableSni != null) __obj.updateDynamic("enableSni")(enableSni.asInstanceOf[js.Any])
+    if (failureThreshold != null) __obj.updateDynamic("failureThreshold")(failureThreshold.asInstanceOf[js.Any])
+    if (fqdn != null) __obj.updateDynamic("fqdn")(fqdn.asInstanceOf[js.Any])
+    if (insufficientDataHealthStatus != null) __obj.updateDynamic("insufficientDataHealthStatus")(insufficientDataHealthStatus.asInstanceOf[js.Any])
+    if (invertHealthcheck != null) __obj.updateDynamic("invertHealthcheck")(invertHealthcheck.asInstanceOf[js.Any])
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress.asInstanceOf[js.Any])
+    if (measureLatency != null) __obj.updateDynamic("measureLatency")(measureLatency.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (referenceName != null) __obj.updateDynamic("referenceName")(referenceName.asInstanceOf[js.Any])
+    if (regions != null) __obj.updateDynamic("regions")(regions.asInstanceOf[js.Any])
+    if (requestInterval != null) __obj.updateDynamic("requestInterval")(requestInterval.asInstanceOf[js.Any])
+    if (resourcePath != null) __obj.updateDynamic("resourcePath")(resourcePath.asInstanceOf[js.Any])
+    if (searchString != null) __obj.updateDynamic("searchString")(searchString.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HealthCheckArgs]
+  }
+}
+

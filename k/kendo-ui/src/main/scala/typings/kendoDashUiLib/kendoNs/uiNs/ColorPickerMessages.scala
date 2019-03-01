@@ -12,3 +12,18 @@ trait ColorPickerMessages extends js.Object {
   var previewInput: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColorPickerMessages {
+  @scala.inline
+  def apply(
+    apply: java.lang.String = null,
+    cancel: java.lang.String = null,
+    previewInput: java.lang.String = null
+  ): ColorPickerMessages = {
+    val __obj = js.Dynamic.literal()
+    if (apply != null) __obj.updateDynamic("apply")(apply)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (previewInput != null) __obj.updateDynamic("previewInput")(previewInput)
+    __obj.asInstanceOf[ColorPickerMessages]
+  }
+}
+

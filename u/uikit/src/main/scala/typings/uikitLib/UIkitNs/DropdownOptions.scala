@@ -56,3 +56,30 @@ trait DropdownOptions extends js.Object {
   var remaintime: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DropdownOptions {
+  @scala.inline
+  def apply(
+    boundary: java.lang.String | jqueryLib.JQuery[stdLib.HTMLElement] | stdLib.Window = null,
+    delay: scala.Int | scala.Double = null,
+    dropdownSelector: java.lang.String | jqueryLib.JQuery[stdLib.HTMLElement] = null,
+    hoverDelayIdle: scala.Int | scala.Double = null,
+    justify: java.lang.String | jqueryLib.JQuery[stdLib.HTMLElement] | uikitLib.uikitLibNumbers.`false` = null,
+    mode: uikitLib.uikitLibStrings.hover | uikitLib.uikitLibStrings.click = null,
+    pos: DropdownPosition = null,
+    preventflip: uikitLib.uikitLibStrings.x | uikitLib.uikitLibStrings.y | scala.Boolean = null,
+    remaintime: scala.Int | scala.Double = null
+  ): DropdownOptions = {
+    val __obj = js.Dynamic.literal()
+    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (dropdownSelector != null) __obj.updateDynamic("dropdownSelector")(dropdownSelector.asInstanceOf[js.Any])
+    if (hoverDelayIdle != null) __obj.updateDynamic("hoverDelayIdle")(hoverDelayIdle.asInstanceOf[js.Any])
+    if (justify != null) __obj.updateDynamic("justify")(justify.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (pos != null) __obj.updateDynamic("pos")(pos)
+    if (preventflip != null) __obj.updateDynamic("preventflip")(preventflip.asInstanceOf[js.Any])
+    if (remaintime != null) __obj.updateDynamic("remaintime")(remaintime.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DropdownOptions]
+  }
+}
+

@@ -34,3 +34,26 @@ trait IPanelStackProps
   ] = js.undefined
 }
 
+object IPanelStackProps {
+  @scala.inline
+  def apply(
+    initialPanel: atBlueprintjsCoreLib.libEsmComponentsPanelDashStackPanelPropsMod.IPanel[_],
+    className: java.lang.String = null,
+    onClose: js.Function1[
+      /* removedPanel */ atBlueprintjsCoreLib.libEsmComponentsPanelDashStackPanelPropsMod.IPanel[js.Object], 
+      scala.Unit
+    ] = null,
+    onOpen: js.Function1[
+      /* addedPanel */ atBlueprintjsCoreLib.libEsmComponentsPanelDashStackPanelPropsMod.IPanel[js.Object], 
+      scala.Unit
+    ] = null
+  ): IPanelStackProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("initialPanel")(initialPanel)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    __obj.asInstanceOf[IPanelStackProps]
+  }
+}
+

@@ -61,3 +61,36 @@ trait IncludeOptions extends js.Object {
   var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 
+object IncludeOptions {
+  @scala.inline
+  def apply(
+    all: scala.Boolean | java.lang.String = null,
+    as: java.lang.String = null,
+    association: IncludeAssociation | java.lang.String = null,
+    attributes: FindOptionsAttributesArray | sequelizeLib.Anon_Exclude = null,
+    include: js.Array[(Model[_, _]) | IncludeOptions] = null,
+    model: Model[_, _] = null,
+    nested: js.UndefOr[scala.Boolean] = js.undefined,
+    paranoid: js.UndefOr[scala.Boolean] = js.undefined,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    separate: js.UndefOr[scala.Boolean] = js.undefined,
+    through: IncludeThroughOptions = null,
+    where: AnyWhereOptions = null
+  ): IncludeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (association != null) __obj.updateDynamic("association")(association.asInstanceOf[js.Any])
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(nested)) __obj.updateDynamic("nested")(nested)
+    if (!js.isUndefined(paranoid)) __obj.updateDynamic("paranoid")(paranoid)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(separate)) __obj.updateDynamic("separate")(separate)
+    if (through != null) __obj.updateDynamic("through")(through)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[IncludeOptions]
+  }
+}
+

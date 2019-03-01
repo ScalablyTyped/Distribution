@@ -16,3 +16,20 @@ trait Anon_Ddoc extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Ddoc {
+  @scala.inline
+  def apply(
+    fields: js.Array[java.lang.String],
+    ddoc: java.lang.String = null,
+    name: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Anon_Ddoc = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fields")(fields)
+    if (ddoc != null) __obj.updateDynamic("ddoc")(ddoc)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_Ddoc]
+  }
+}
+

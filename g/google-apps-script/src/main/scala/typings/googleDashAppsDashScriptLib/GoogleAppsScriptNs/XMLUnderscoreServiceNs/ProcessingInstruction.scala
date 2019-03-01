@@ -13,3 +13,22 @@ trait ProcessingInstruction extends js.Object {
   def getValue(): java.lang.String
 }
 
+object ProcessingInstruction {
+  @scala.inline
+  def apply(
+    detach: js.Function0[Content],
+    getData: js.Function0[java.lang.String],
+    getParentElement: js.Function0[Element],
+    getTarget: js.Function0[java.lang.String],
+    getValue: js.Function0[java.lang.String]
+  ): ProcessingInstruction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("detach")(detach)
+    __obj.updateDynamic("getData")(getData)
+    __obj.updateDynamic("getParentElement")(getParentElement)
+    __obj.updateDynamic("getTarget")(getTarget)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.asInstanceOf[ProcessingInstruction]
+  }
+}
+

@@ -11,3 +11,13 @@ trait NewmanRunFailure extends js.Object {
   var error: NewmanRunExecutionAssertionError
 }
 
+object NewmanRunFailure {
+  @scala.inline
+  def apply(at: java.lang.String, error: NewmanRunExecutionAssertionError): NewmanRunFailure = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("at")(at)
+    __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[NewmanRunFailure]
+  }
+}
+

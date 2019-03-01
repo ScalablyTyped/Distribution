@@ -18,3 +18,32 @@ trait ConditionUpdateObserver extends js.Object {
   def updateStatesAtColumn(column: scala.Double, conditionArgsChange: js.Object): scala.Unit
 }
 
+object ConditionUpdateObserver {
+  @scala.inline
+  def apply(
+    changes: js.Array[scala.Double],
+    columnDataFactory: js.Function1[scala.Double, js.Array[js.Object]],
+    conditionCollection: ConditionCollection,
+    destroy: js.Function0[scala.Unit],
+    flush: js.Function0[scala.Unit],
+    groupChanges: js.Function0[scala.Unit],
+    grouping: scala.Boolean,
+    latestEditedColumnPosition: scala.Double,
+    latestOrderStack: js.Array[scala.Double],
+    updateStatesAtColumn: js.Function2[scala.Double, js.Object, scala.Unit]
+  ): ConditionUpdateObserver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("columnDataFactory")(columnDataFactory)
+    __obj.updateDynamic("conditionCollection")(conditionCollection)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("groupChanges")(groupChanges)
+    __obj.updateDynamic("grouping")(grouping)
+    __obj.updateDynamic("latestEditedColumnPosition")(latestEditedColumnPosition)
+    __obj.updateDynamic("latestOrderStack")(latestOrderStack)
+    __obj.updateDynamic("updateStatesAtColumn")(updateStatesAtColumn)
+    __obj.asInstanceOf[ConditionUpdateObserver]
+  }
+}
+

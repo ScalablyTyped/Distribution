@@ -25,7 +25,8 @@ object qlikLibStrings {
   sealed trait B extends js.Object
   
   @js.native
-  sealed trait BookmarkList extends js.Object
+  sealed trait BookmarkList
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
   sealed trait C extends js.Object
@@ -43,7 +44,8 @@ object qlikLibStrings {
   sealed trait D extends js.Object
   
   @js.native
-  sealed trait DimensionList extends js.Object
+  sealed trait DimensionList
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
   sealed trait E extends js.Object
@@ -55,7 +57,8 @@ object qlikLibStrings {
   sealed trait F extends js.Object
   
   @js.native
-  sealed trait FieldList extends js.Object
+  sealed trait FieldList
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
   sealed trait H extends js.Object
@@ -76,13 +79,16 @@ object qlikLibStrings {
   sealed trait M extends js.Object
   
   @js.native
-  sealed trait Materobject extends js.Object
+  sealed trait Materobject
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
-  sealed trait MeasureList extends js.Object
+  sealed trait MeasureList
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
-  sealed trait MediaList extends js.Object
+  sealed trait MediaList
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
   sealed trait N extends js.Object
@@ -160,10 +166,12 @@ object qlikLibStrings {
   sealed trait S extends js.Object
   
   @js.native
-  sealed trait Selectionobject extends js.Object
+  sealed trait Selectionobject
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
-  sealed trait SnapshotList extends js.Object
+  sealed trait SnapshotList
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
   sealed trait StringExpr extends js.Object
@@ -196,7 +204,8 @@ object qlikLibStrings {
   sealed trait ValueExpression extends js.Object
   
   @js.native
-  sealed trait VariableList extends js.Object
+  sealed trait VariableList
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
   sealed trait X extends js.Object
@@ -235,10 +244,12 @@ object qlikLibStrings {
   sealed trait data extends js.Object
   
   @js.native
-  sealed trait de extends js.Object
+  sealed trait de
+    extends qlikLib.qlikMod.LanguageCodesNs.German
   
   @js.native
-  sealed trait `de-DE` extends js.Object
+  sealed trait `de-DE`
+    extends qlikLib.qlikMod.LanguageCodesNs.German
   
   @js.native
   sealed trait dimension extends js.Object
@@ -250,49 +261,61 @@ object qlikLibStrings {
   sealed trait dropdown extends js.Object
   
   @js.native
-  sealed trait en extends js.Object
+  sealed trait en
+    extends qlikLib.qlikMod.LanguageCodesNs.English
   
   @js.native
-  sealed trait `en-US` extends js.Object
+  sealed trait `en-US`
+    extends qlikLib.qlikMod.LanguageCodesNs.English
   
   @js.native
-  sealed trait es extends js.Object
+  sealed trait es
+    extends qlikLib.qlikMod.LanguageCodesNs.Spanish
   
   @js.native
-  sealed trait `es-ES` extends js.Object
+  sealed trait `es-ES`
+    extends qlikLib.qlikMod.LanguageCodesNs.Spanish
   
   @js.native
   sealed trait expression extends js.Object
   
   @js.native
-  sealed trait fr extends js.Object
+  sealed trait fr
+    extends qlikLib.qlikMod.LanguageCodesNs.French
   
   @js.native
-  sealed trait `fr-FR` extends js.Object
+  sealed trait `fr-FR`
+    extends qlikLib.qlikMod.LanguageCodesNs.French
   
   @js.native
   sealed trait integer extends js.Object
   
   @js.native
-  sealed trait it extends js.Object
+  sealed trait it
+    extends qlikLib.qlikMod.LanguageCodesNs.Italian
   
   @js.native
-  sealed trait `it-IT` extends js.Object
+  sealed trait `it-IT`
+    extends qlikLib.qlikMod.LanguageCodesNs.Italian
   
   @js.native
   sealed trait items extends js.Object
   
   @js.native
-  sealed trait ja extends js.Object
+  sealed trait ja
+    extends qlikLib.qlikMod.LanguageCodesNs.Japanese
   
   @js.native
-  sealed trait `ja-JP` extends js.Object
+  sealed trait `ja-JP`
+    extends qlikLib.qlikMod.LanguageCodesNs.Japanese
   
   @js.native
-  sealed trait ko extends js.Object
+  sealed trait ko
+    extends qlikLib.qlikMod.LanguageCodesNs.Korean
   
   @js.native
-  sealed trait `ko-KR` extends js.Object
+  sealed trait `ko-KR`
+    extends qlikLib.qlikMod.LanguageCodesNs.Korean
   
   @js.native
   sealed trait link extends js.Object
@@ -307,10 +330,12 @@ object qlikLibStrings {
   sealed trait media extends js.Object
   
   @js.native
-  sealed trait nl extends js.Object
+  sealed trait nl
+    extends qlikLib.qlikMod.LanguageCodesNs.Dutch
   
   @js.native
-  sealed trait `nl-NL` extends js.Object
+  sealed trait `nl-NL`
+    extends qlikLib.qlikMod.LanguageCodesNs.Dutch
   
   @js.native
   sealed trait number extends js.Object
@@ -319,16 +344,20 @@ object qlikLibStrings {
   sealed trait optional extends js.Object
   
   @js.native
-  sealed trait pl extends js.Object
+  sealed trait pl
+    extends qlikLib.qlikMod.LanguageCodesNs.Polish
   
   @js.native
-  sealed trait `pl-PL` extends js.Object
+  sealed trait `pl-PL`
+    extends qlikLib.qlikMod.LanguageCodesNs.Polish
   
   @js.native
-  sealed trait pt extends js.Object
+  sealed trait pt
+    extends qlikLib.qlikMod.LanguageCodesNs.BrazilianPortuguese
   
   @js.native
-  sealed trait `pt-BR` extends js.Object
+  sealed trait `pt-BR`
+    extends qlikLib.qlikMod.LanguageCodesNs.BrazilianPortuguese
   
   @js.native
   sealed trait radiobuttons extends js.Object
@@ -340,16 +369,19 @@ object qlikLibStrings {
   sealed trait replace extends js.Object
   
   @js.native
-  sealed trait ru extends js.Object
+  sealed trait ru
+    extends qlikLib.qlikMod.LanguageCodesNs.Russian
   
   @js.native
-  sealed trait `ru-RU` extends js.Object
+  sealed trait `ru-RU`
+    extends qlikLib.qlikMod.LanguageCodesNs.Russian
   
   @js.native
   sealed trait settings extends js.Object
   
   @js.native
-  sealed trait sheet extends js.Object
+  sealed trait sheet
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
   sealed trait slider extends js.Object
@@ -358,16 +390,19 @@ object qlikLibStrings {
   sealed trait sorting extends js.Object
   
   @js.native
-  sealed trait story extends js.Object
+  sealed trait story
+    extends qlikLib.qlikMod.ListTypes
   
   @js.native
   sealed trait string extends js.Object
   
   @js.native
-  sealed trait sv extends js.Object
+  sealed trait sv
+    extends qlikLib.qlikMod.LanguageCodesNs.Swedish
   
   @js.native
-  sealed trait `sv-SE` extends js.Object
+  sealed trait `sv-SE`
+    extends qlikLib.qlikMod.LanguageCodesNs.Swedish
   
   @js.native
   sealed trait switch extends js.Object
@@ -379,10 +414,12 @@ object qlikLibStrings {
   sealed trait textarea extends js.Object
   
   @js.native
-  sealed trait ts extends js.Object
+  sealed trait ts
+    extends qlikLib.qlikMod.LanguageCodesNs.Turkish
   
   @js.native
-  sealed trait `ts-TR` extends js.Object
+  sealed trait `ts-TR`
+    extends qlikLib.qlikMod.LanguageCodesNs.Turkish
   
   @js.native
   sealed trait `zh-CN` extends js.Object

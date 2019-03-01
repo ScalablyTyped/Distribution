@@ -27,3 +27,24 @@ trait XDragGestureRecognizer
   def resetRecognizer(): scala.Unit
 }
 
+object XDragGestureRecognizer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addDragGestureListener: js.Function1[XDragGestureListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeDragGestureListener: js.Function1[XDragGestureListener, scala.Unit],
+    resetRecognizer: js.Function0[scala.Unit]
+  ): XDragGestureRecognizer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addDragGestureListener")(addDragGestureListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeDragGestureListener")(removeDragGestureListener)
+    __obj.updateDynamic("resetRecognizer")(resetRecognizer)
+    __obj.asInstanceOf[XDragGestureRecognizer]
+  }
+}
+

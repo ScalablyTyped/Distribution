@@ -11,3 +11,13 @@ trait textReviewResponse extends js.Object {
   var result: baiduDashAppLib.Anon_Pass
 }
 
+object textReviewResponse {
+  @scala.inline
+  def apply(log_id: java.lang.String, result: baiduDashAppLib.Anon_Pass): textReviewResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("log_id")(log_id)
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[textReviewResponse]
+  }
+}
+

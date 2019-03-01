@@ -11,3 +11,12 @@ trait SchemaLoadEventArgs extends js.Object {
   var action: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SchemaLoadEventArgs {
+  @scala.inline
+  def apply(action: java.lang.String = null): SchemaLoadEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    __obj.asInstanceOf[SchemaLoadEventArgs]
+  }
+}
+

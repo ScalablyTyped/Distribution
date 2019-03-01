@@ -50,3 +50,22 @@ trait XOutParameters
   def registerOutParameter(parameterIndex: scala.Double, sqlType: scala.Double, typeName: java.lang.String): scala.Unit
 }
 
+object XOutParameters {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerNumericOutParameter: js.Function3[scala.Double, scala.Double, scala.Double, scala.Unit],
+    registerOutParameter: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XOutParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerNumericOutParameter")(registerNumericOutParameter)
+    __obj.updateDynamic("registerOutParameter")(registerOutParameter)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XOutParameters]
+  }
+}
+

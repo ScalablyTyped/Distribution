@@ -23,3 +23,24 @@ trait XNamingService extends XInterface {
   def revokeObject(Name: java.lang.String): scala.Unit
 }
 
+object XNamingService {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getRegisteredObject: js.Function1[java.lang.String, XInterface],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerObject: js.Function2[java.lang.String, XInterface, scala.Unit],
+    release: js.Function0[scala.Unit],
+    revokeObject: js.Function1[java.lang.String, scala.Unit]
+  ): XNamingService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getRegisteredObject")(getRegisteredObject)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerObject")(registerObject)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("revokeObject")(revokeObject)
+    __obj.asInstanceOf[XNamingService]
+  }
+}
+

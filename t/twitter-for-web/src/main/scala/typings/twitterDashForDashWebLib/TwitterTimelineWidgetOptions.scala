@@ -88,3 +88,70 @@ import scala.scalajs.js.annotation._
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object TwitterTimelineWidgetOptions {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    ariaPolite: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    cards: java.lang.String = null,
+    chrome: java.lang.String = null,
+    conversation: java.lang.String = null,
+    count: java.lang.String = null,
+    counturl: java.lang.String = null,
+    dnt: js.UndefOr[scala.Boolean] = js.undefined,
+    favoritesScreenName: java.lang.String = null,
+    favoritesUserId: java.lang.String = null,
+    hashtags: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    lang: java.lang.String = null,
+    linkColor: java.lang.String = null,
+    listId: java.lang.String = null,
+    listOwnerId: java.lang.String = null,
+    listOwnerScreenName: java.lang.String = null,
+    listSlug: java.lang.String = null,
+    related: java.lang.String = null,
+    screenName: java.lang.String = null,
+    showReplies: js.UndefOr[scala.Boolean] = js.undefined,
+    size: java.lang.String = null,
+    text: java.lang.String = null,
+    theme: java.lang.String = null,
+    tweetLimit: scala.Int | scala.Double = null,
+    userId: java.lang.String = null,
+    via: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): TwitterTimelineWidgetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (ariaPolite != null) __obj.updateDynamic("ariaPolite")(ariaPolite)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (cards != null) __obj.updateDynamic("cards")(cards)
+    if (chrome != null) __obj.updateDynamic("chrome")(chrome)
+    if (conversation != null) __obj.updateDynamic("conversation")(conversation)
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (counturl != null) __obj.updateDynamic("counturl")(counturl)
+    if (!js.isUndefined(dnt)) __obj.updateDynamic("dnt")(dnt)
+    if (favoritesScreenName != null) __obj.updateDynamic("favoritesScreenName")(favoritesScreenName)
+    if (favoritesUserId != null) __obj.updateDynamic("favoritesUserId")(favoritesUserId)
+    if (hashtags != null) __obj.updateDynamic("hashtags")(hashtags)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (linkColor != null) __obj.updateDynamic("linkColor")(linkColor)
+    if (listId != null) __obj.updateDynamic("listId")(listId)
+    if (listOwnerId != null) __obj.updateDynamic("listOwnerId")(listOwnerId)
+    if (listOwnerScreenName != null) __obj.updateDynamic("listOwnerScreenName")(listOwnerScreenName)
+    if (listSlug != null) __obj.updateDynamic("listSlug")(listSlug)
+    if (related != null) __obj.updateDynamic("related")(related)
+    if (screenName != null) __obj.updateDynamic("screenName")(screenName)
+    if (!js.isUndefined(showReplies)) __obj.updateDynamic("showReplies")(showReplies)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tweetLimit != null) __obj.updateDynamic("tweetLimit")(tweetLimit.asInstanceOf[js.Any])
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    if (via != null) __obj.updateDynamic("via")(via)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TwitterTimelineWidgetOptions]
+  }
+}
+

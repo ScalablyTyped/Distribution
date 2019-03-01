@@ -12,3 +12,13 @@ trait DealTermsRubiconNonGuaranteedTerms extends js.Object {
   var standardPrice: js.UndefOr[Price] = js.undefined
 }
 
+object DealTermsRubiconNonGuaranteedTerms {
+  @scala.inline
+  def apply(priorityPrice: Price = null, standardPrice: Price = null): DealTermsRubiconNonGuaranteedTerms = {
+    val __obj = js.Dynamic.literal()
+    if (priorityPrice != null) __obj.updateDynamic("priorityPrice")(priorityPrice)
+    if (standardPrice != null) __obj.updateDynamic("standardPrice")(standardPrice)
+    __obj.asInstanceOf[DealTermsRubiconNonGuaranteedTerms]
+  }
+}
+

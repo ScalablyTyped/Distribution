@@ -16,3 +16,13 @@ trait Ribbon extends js.Object {
   var target: RibbonSubgroup
 }
 
+object Ribbon {
+  @scala.inline
+  def apply(source: RibbonSubgroup, target: RibbonSubgroup): Ribbon = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[Ribbon]
+  }
+}
+

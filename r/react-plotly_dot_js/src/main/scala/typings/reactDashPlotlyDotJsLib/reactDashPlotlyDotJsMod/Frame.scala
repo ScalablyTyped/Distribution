@@ -11,3 +11,18 @@ trait Frame extends js.Object {
   var name: java.lang.String
 }
 
+object Frame {
+  @scala.inline
+  def apply(
+    data: js.Array[reactDashPlotlyDotJsLib.Anon_X],
+    group: reactDashPlotlyDotJsLib.reactDashPlotlyDotJsLibStrings.lower | reactDashPlotlyDotJsLib.reactDashPlotlyDotJsLibStrings.upper,
+    name: java.lang.String
+  ): Frame = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Frame]
+  }
+}
+

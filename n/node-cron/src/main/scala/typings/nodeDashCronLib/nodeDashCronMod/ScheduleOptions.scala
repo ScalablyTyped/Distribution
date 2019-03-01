@@ -18,3 +18,13 @@ trait ScheduleOptions extends js.Object {
   var timezone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ScheduleOptions {
+  @scala.inline
+  def apply(scheduled: js.UndefOr[scala.Boolean] = js.undefined, timezone: java.lang.String = null): ScheduleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(scheduled)) __obj.updateDynamic("scheduled")(scheduled)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    __obj.asInstanceOf[ScheduleOptions]
+  }
+}
+

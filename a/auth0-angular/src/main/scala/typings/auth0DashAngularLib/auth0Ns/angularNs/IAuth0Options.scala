@@ -20,3 +20,18 @@ trait IAuth0Options extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IAuth0Options {
+  @scala.inline
+  def apply(
+    connection: java.lang.String = null,
+    email: java.lang.String = null,
+    username: java.lang.String = null
+  ): IAuth0Options = {
+    val __obj = js.Dynamic.literal()
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[IAuth0Options]
+  }
+}
+

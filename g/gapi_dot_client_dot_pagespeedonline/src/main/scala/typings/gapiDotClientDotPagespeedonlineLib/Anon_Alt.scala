@@ -37,3 +37,38 @@ trait Anon_Alt extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Alt {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    filter_third_party_resources: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    locale: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    rule: java.lang.String = null,
+    screenshot: js.UndefOr[scala.Boolean] = js.undefined,
+    strategy: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_Alt = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(filter_third_party_resources)) __obj.updateDynamic("filter_third_party_resources")(filter_third_party_resources)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (!js.isUndefined(screenshot)) __obj.updateDynamic("screenshot")(screenshot)
+    if (strategy != null) __obj.updateDynamic("strategy")(strategy)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_Alt]
+  }
+}
+

@@ -10,3 +10,12 @@ trait PullTasksResponse extends js.Object {
   var tasks: js.UndefOr[js.Array[Task]] = js.undefined
 }
 
+object PullTasksResponse {
+  @scala.inline
+  def apply(tasks: js.Array[Task] = null): PullTasksResponse = {
+    val __obj = js.Dynamic.literal()
+    if (tasks != null) __obj.updateDynamic("tasks")(tasks)
+    __obj.asInstanceOf[PullTasksResponse]
+  }
+}
+

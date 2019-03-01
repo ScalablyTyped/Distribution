@@ -31,3 +31,22 @@ trait ASPxClientCardViewSelectionEventArgs extends ASPxClientProcessingModeEvent
   var visibleIndex: scala.Double
 }
 
+object ASPxClientCardViewSelectionEventArgs {
+  @scala.inline
+  def apply(
+    isAllRecordsOnPage: scala.Boolean,
+    isChangedOnServer: scala.Boolean,
+    isSelected: scala.Boolean,
+    processOnServer: scala.Boolean,
+    visibleIndex: scala.Double
+  ): ASPxClientCardViewSelectionEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isAllRecordsOnPage")(isAllRecordsOnPage)
+    __obj.updateDynamic("isChangedOnServer")(isChangedOnServer)
+    __obj.updateDynamic("isSelected")(isSelected)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[ASPxClientCardViewSelectionEventArgs]
+  }
+}
+

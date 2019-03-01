@@ -10,3 +10,13 @@ trait Options extends js.Object {
   var domain: java.lang.String
 }
 
+object Options {
+  @scala.inline
+  def apply(clientId: java.lang.String, domain: java.lang.String): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("domain")(domain)
+    __obj.asInstanceOf[Options]
+  }
+}
+

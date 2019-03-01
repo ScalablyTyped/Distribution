@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object reduxDashPackLibStrings {
   @js.native
-  sealed trait failure extends js.Object
+  sealed trait failure
+    extends reduxDashPackLib.reduxDashPackMod.LIFECYCLEValues
   
   @js.native
   sealed trait `redux-pack/LIFECYCLE` extends js.Object
@@ -16,10 +17,12 @@ object reduxDashPackLibStrings {
   sealed trait `redux-pack/TRANSACTION` extends js.Object
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends reduxDashPackLib.reduxDashPackMod.LIFECYCLEValues
   
   @js.native
-  sealed trait succes extends js.Object
+  sealed trait succes
+    extends reduxDashPackLib.reduxDashPackMod.LIFECYCLEValues
   
   @js.native
   sealed trait success extends js.Object

@@ -10,3 +10,13 @@ trait Anon_Position extends js.Object {
   var topicArn: java.lang.String
 }
 
+object Anon_Position {
+  @scala.inline
+  def apply(position: scala.Double, topicArn: java.lang.String): Anon_Position = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("topicArn")(topicArn)
+    __obj.asInstanceOf[Anon_Position]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_Expires
   var expires: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Expires {
+  @scala.inline
+  def apply(
+    StringDictionary: /* other */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    expires: java.lang.String = null
+  ): Anon_Expires = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (expires != null) __obj.updateDynamic("expires")(expires)
+    __obj.asInstanceOf[Anon_Expires]
+  }
+}
+

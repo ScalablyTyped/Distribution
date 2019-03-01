@@ -110,3 +110,22 @@ trait PartialResultSet extends js.Object {
   var values: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object PartialResultSet {
+  @scala.inline
+  def apply(
+    chunkedValue: js.UndefOr[scala.Boolean] = js.undefined,
+    metadata: ResultSetMetadata = null,
+    resumeToken: java.lang.String = null,
+    stats: ResultSetStats = null,
+    values: js.Array[_] = null
+  ): PartialResultSet = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(chunkedValue)) __obj.updateDynamic("chunkedValue")(chunkedValue)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken)
+    if (stats != null) __obj.updateDynamic("stats")(stats)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[PartialResultSet]
+  }
+}
+

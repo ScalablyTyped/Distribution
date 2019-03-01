@@ -124,3 +124,128 @@ trait TestOptions extends js.Object {
   var waitResults: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TestOptions {
+  @scala.inline
+  def apply(
+    affinity: java.lang.String = null,
+    authenticationType: scala.Int | scala.Double = null,
+    bandwidthDown: java.lang.String = null,
+    bandwidthUp: java.lang.String = null,
+    block: java.lang.String = null,
+    blockAds: js.UndefOr[scala.Boolean] = js.undefined,
+    chromeTrace: js.UndefOr[scala.Boolean] = js.undefined,
+    clearCerts: js.UndefOr[scala.Boolean] = js.undefined,
+    commandLine: java.lang.String = null,
+    connectivity: java.lang.String = null,
+    continuousVideoCapture: js.UndefOr[scala.Boolean] = js.undefined,
+    customMetrics: java.lang.String = null,
+    dataReduction: js.UndefOr[scala.Boolean] = js.undefined,
+    disableCompatibilityView: js.UndefOr[scala.Boolean] = js.undefined,
+    disableHTTPHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    disableJavaScript: js.UndefOr[scala.Boolean] = js.undefined,
+    disableOptimization: js.UndefOr[scala.Boolean] = js.undefined,
+    disableScreenshot: js.UndefOr[scala.Boolean] = js.undefined,
+    domElement: java.lang.String = null,
+    emulateMobile: js.UndefOr[scala.Boolean] = js.undefined,
+    firstViewOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    forceSoftwareRendering: js.UndefOr[scala.Boolean] = js.undefined,
+    forceSpdy3: js.UndefOr[scala.Boolean] = js.undefined,
+    fullResolutionScreenshot: js.UndefOr[scala.Boolean] = js.undefined,
+    htmlBody: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreSSL: js.UndefOr[scala.Boolean] = js.undefined,
+    jpegQuality: scala.Int | scala.Double = null,
+    keepOriginalUserAgent: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    latency: java.lang.String = null,
+    lighthouse: js.UndefOr[scala.Boolean] = js.undefined,
+    location: java.lang.String = null,
+    login: java.lang.String = null,
+    medianVideo: js.UndefOr[scala.Boolean] = js.undefined,
+    minimumDuration: scala.Int | scala.Double = null,
+    netLog: js.UndefOr[scala.Boolean] = js.undefined,
+    notifyEmail: java.lang.String = null,
+    packetLossRate: scala.Int | scala.Double = null,
+    password: java.lang.String = null,
+    pingback: java.lang.String = null,
+    pollResults: scala.Int | scala.Double = null,
+    priority: scala.Int | scala.Double = null,
+    `private`: js.UndefOr[scala.Boolean] = js.undefined,
+    runs: scala.Int | scala.Double = null,
+    saveResponseBodies: js.UndefOr[scala.Boolean] = js.undefined,
+    sensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    spof: java.lang.String = null,
+    stopAtDocumentComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    tcpDump: js.UndefOr[scala.Boolean] = js.undefined,
+    tester: java.lang.String = null,
+    timeline: js.UndefOr[scala.Boolean] = js.undefined,
+    timelineCallStack: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    tsView: java.lang.String = null,
+    tsViewConfigs: java.lang.String = null,
+    userAgent: java.lang.String = null,
+    video: js.UndefOr[scala.Boolean] = js.undefined,
+    waitResults: java.lang.String = null
+  ): TestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (affinity != null) __obj.updateDynamic("affinity")(affinity)
+    if (authenticationType != null) __obj.updateDynamic("authenticationType")(authenticationType.asInstanceOf[js.Any])
+    if (bandwidthDown != null) __obj.updateDynamic("bandwidthDown")(bandwidthDown)
+    if (bandwidthUp != null) __obj.updateDynamic("bandwidthUp")(bandwidthUp)
+    if (block != null) __obj.updateDynamic("block")(block)
+    if (!js.isUndefined(blockAds)) __obj.updateDynamic("blockAds")(blockAds)
+    if (!js.isUndefined(chromeTrace)) __obj.updateDynamic("chromeTrace")(chromeTrace)
+    if (!js.isUndefined(clearCerts)) __obj.updateDynamic("clearCerts")(clearCerts)
+    if (commandLine != null) __obj.updateDynamic("commandLine")(commandLine)
+    if (connectivity != null) __obj.updateDynamic("connectivity")(connectivity)
+    if (!js.isUndefined(continuousVideoCapture)) __obj.updateDynamic("continuousVideoCapture")(continuousVideoCapture)
+    if (customMetrics != null) __obj.updateDynamic("customMetrics")(customMetrics)
+    if (!js.isUndefined(dataReduction)) __obj.updateDynamic("dataReduction")(dataReduction)
+    if (!js.isUndefined(disableCompatibilityView)) __obj.updateDynamic("disableCompatibilityView")(disableCompatibilityView)
+    if (!js.isUndefined(disableHTTPHeaders)) __obj.updateDynamic("disableHTTPHeaders")(disableHTTPHeaders)
+    if (!js.isUndefined(disableJavaScript)) __obj.updateDynamic("disableJavaScript")(disableJavaScript)
+    if (!js.isUndefined(disableOptimization)) __obj.updateDynamic("disableOptimization")(disableOptimization)
+    if (!js.isUndefined(disableScreenshot)) __obj.updateDynamic("disableScreenshot")(disableScreenshot)
+    if (domElement != null) __obj.updateDynamic("domElement")(domElement)
+    if (!js.isUndefined(emulateMobile)) __obj.updateDynamic("emulateMobile")(emulateMobile)
+    if (!js.isUndefined(firstViewOnly)) __obj.updateDynamic("firstViewOnly")(firstViewOnly)
+    if (!js.isUndefined(forceSoftwareRendering)) __obj.updateDynamic("forceSoftwareRendering")(forceSoftwareRendering)
+    if (!js.isUndefined(forceSpdy3)) __obj.updateDynamic("forceSpdy3")(forceSpdy3)
+    if (!js.isUndefined(fullResolutionScreenshot)) __obj.updateDynamic("fullResolutionScreenshot")(fullResolutionScreenshot)
+    if (!js.isUndefined(htmlBody)) __obj.updateDynamic("htmlBody")(htmlBody)
+    if (!js.isUndefined(ignoreSSL)) __obj.updateDynamic("ignoreSSL")(ignoreSSL)
+    if (jpegQuality != null) __obj.updateDynamic("jpegQuality")(jpegQuality.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepOriginalUserAgent)) __obj.updateDynamic("keepOriginalUserAgent")(keepOriginalUserAgent)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (latency != null) __obj.updateDynamic("latency")(latency)
+    if (!js.isUndefined(lighthouse)) __obj.updateDynamic("lighthouse")(lighthouse)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (login != null) __obj.updateDynamic("login")(login)
+    if (!js.isUndefined(medianVideo)) __obj.updateDynamic("medianVideo")(medianVideo)
+    if (minimumDuration != null) __obj.updateDynamic("minimumDuration")(minimumDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(netLog)) __obj.updateDynamic("netLog")(netLog)
+    if (notifyEmail != null) __obj.updateDynamic("notifyEmail")(notifyEmail)
+    if (packetLossRate != null) __obj.updateDynamic("packetLossRate")(packetLossRate.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (pingback != null) __obj.updateDynamic("pingback")(pingback)
+    if (pollResults != null) __obj.updateDynamic("pollResults")(pollResults.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    if (runs != null) __obj.updateDynamic("runs")(runs.asInstanceOf[js.Any])
+    if (!js.isUndefined(saveResponseBodies)) __obj.updateDynamic("saveResponseBodies")(saveResponseBodies)
+    if (!js.isUndefined(sensitive)) __obj.updateDynamic("sensitive")(sensitive)
+    if (spof != null) __obj.updateDynamic("spof")(spof)
+    if (!js.isUndefined(stopAtDocumentComplete)) __obj.updateDynamic("stopAtDocumentComplete")(stopAtDocumentComplete)
+    if (!js.isUndefined(tcpDump)) __obj.updateDynamic("tcpDump")(tcpDump)
+    if (tester != null) __obj.updateDynamic("tester")(tester)
+    if (!js.isUndefined(timeline)) __obj.updateDynamic("timeline")(timeline)
+    if (!js.isUndefined(timelineCallStack)) __obj.updateDynamic("timelineCallStack")(timelineCallStack)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (tsView != null) __obj.updateDynamic("tsView")(tsView)
+    if (tsViewConfigs != null) __obj.updateDynamic("tsViewConfigs")(tsViewConfigs)
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video)
+    if (waitResults != null) __obj.updateDynamic("waitResults")(waitResults)
+    __obj.asInstanceOf[TestOptions]
+  }
+}
+

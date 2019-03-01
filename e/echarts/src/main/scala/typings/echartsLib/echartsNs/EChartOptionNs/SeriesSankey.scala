@@ -37,7 +37,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey
   */
-trait SeriesSankey extends js.Object {
+trait SeriesSankey extends Series {
   /**
     * Whether to enable animation.
     *
@@ -452,5 +452,84 @@ trait SeriesSankey extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-sankey.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesSankey {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    bottom: scala.Double | java.lang.String = null,
+    data: (js.Array[scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject]) | (js.Array[
+      js.Array[scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesSankeyNs.DataObject]
+    ]) = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    edges: js.Array[_] = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelLineStyle = null,
+    focusNodeAdjacency: scala.Boolean | java.lang.String = null,
+    height: scala.Double | java.lang.String = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
+    layoutIterations: scala.Int | scala.Double = null,
+    left: scala.Double | java.lang.String = null,
+    lineStyle: echartsLib.Anon_ColorCurvenessOpacityShadowBlurShadowColor = null,
+    links: echartsLib.Anon_EmphasisLineStyle = null,
+    nodeGap: scala.Int | scala.Double = null,
+    nodeWidth: scala.Int | scala.Double = null,
+    nodes: js.Array[_] = null,
+    orient: java.lang.String = null,
+    right: scala.Double | java.lang.String = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    top: scala.Double | java.lang.String = null,
+    `type`: java.lang.String = null,
+    width: scala.Double | java.lang.String = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesSankey = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (edges != null) __obj.updateDynamic("edges")(edges)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (focusNodeAdjacency != null) __obj.updateDynamic("focusNodeAdjacency")(focusNodeAdjacency.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (layoutIterations != null) __obj.updateDynamic("layoutIterations")(layoutIterations.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (links != null) __obj.updateDynamic("links")(links)
+    if (nodeGap != null) __obj.updateDynamic("nodeGap")(nodeGap.asInstanceOf[js.Any])
+    if (nodeWidth != null) __obj.updateDynamic("nodeWidth")(nodeWidth.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (orient != null) __obj.updateDynamic("orient")(orient)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesSankey]
+  }
 }
 

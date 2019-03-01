@@ -76,3 +76,46 @@ trait GetLaunchConfigurationResult extends js.Object {
   val vpcClassicLinkSecurityGroups: js.Array[java.lang.String]
 }
 
+object GetLaunchConfigurationResult {
+  @scala.inline
+  def apply(
+    associatePublicIpAddress: scala.Boolean,
+    ebsBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationDeviceNameEncrypted],
+    ebsOptimized: scala.Boolean,
+    enableMonitoring: scala.Boolean,
+    ephemeralBlockDevices: js.Array[atPulumiAwsLib.Anon_DeviceName],
+    iamInstanceProfile: java.lang.String,
+    id: java.lang.String,
+    imageId: java.lang.String,
+    instanceType: java.lang.String,
+    keyName: java.lang.String,
+    placementTenancy: java.lang.String,
+    rootBlockDevices: js.Array[atPulumiAwsLib.Anon_DeleteOnTerminationIopsVolumeSize],
+    securityGroups: js.Array[java.lang.String],
+    spotPrice: java.lang.String,
+    userData: java.lang.String,
+    vpcClassicLinkId: java.lang.String,
+    vpcClassicLinkSecurityGroups: js.Array[java.lang.String]
+  ): GetLaunchConfigurationResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("associatePublicIpAddress")(associatePublicIpAddress)
+    __obj.updateDynamic("ebsBlockDevices")(ebsBlockDevices)
+    __obj.updateDynamic("ebsOptimized")(ebsOptimized)
+    __obj.updateDynamic("enableMonitoring")(enableMonitoring)
+    __obj.updateDynamic("ephemeralBlockDevices")(ephemeralBlockDevices)
+    __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("imageId")(imageId)
+    __obj.updateDynamic("instanceType")(instanceType)
+    __obj.updateDynamic("keyName")(keyName)
+    __obj.updateDynamic("placementTenancy")(placementTenancy)
+    __obj.updateDynamic("rootBlockDevices")(rootBlockDevices)
+    __obj.updateDynamic("securityGroups")(securityGroups)
+    __obj.updateDynamic("spotPrice")(spotPrice)
+    __obj.updateDynamic("userData")(userData)
+    __obj.updateDynamic("vpcClassicLinkId")(vpcClassicLinkId)
+    __obj.updateDynamic("vpcClassicLinkSecurityGroups")(vpcClassicLinkSecurityGroups)
+    __obj.asInstanceOf[GetLaunchConfigurationResult]
+  }
+}
+

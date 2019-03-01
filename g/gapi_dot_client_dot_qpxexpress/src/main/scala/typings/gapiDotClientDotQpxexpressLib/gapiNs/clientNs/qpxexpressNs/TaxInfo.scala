@@ -20,3 +20,24 @@ trait TaxInfo extends js.Object {
   var salePrice: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TaxInfo {
+  @scala.inline
+  def apply(
+    chargeType: java.lang.String = null,
+    code: java.lang.String = null,
+    country: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    salePrice: java.lang.String = null
+  ): TaxInfo = {
+    val __obj = js.Dynamic.literal()
+    if (chargeType != null) __obj.updateDynamic("chargeType")(chargeType)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (salePrice != null) __obj.updateDynamic("salePrice")(salePrice)
+    __obj.asInstanceOf[TaxInfo]
+  }
+}
+

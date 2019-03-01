@@ -24,3 +24,18 @@ trait RemovalOptions extends js.Object {
   var since: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date] = js.undefined
 }
 
+object RemovalOptions {
+  @scala.inline
+  def apply(
+    hostnames: js.Array[java.lang.String] = null,
+    originTypes: firefoxDashWebextDashBrowserLib.Anon_Extension = null,
+    since: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.Date = null
+  ): RemovalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (hostnames != null) __obj.updateDynamic("hostnames")(hostnames)
+    if (originTypes != null) __obj.updateDynamic("originTypes")(originTypes)
+    if (since != null) __obj.updateDynamic("since")(since.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RemovalOptions]
+  }
+}
+

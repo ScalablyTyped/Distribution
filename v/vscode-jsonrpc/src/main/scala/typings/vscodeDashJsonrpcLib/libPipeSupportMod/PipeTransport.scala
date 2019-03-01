@@ -14,3 +14,21 @@ trait PipeTransport extends js.Object {
   ]
 }
 
+object PipeTransport {
+  @scala.inline
+  def apply(
+    onConnected: js.Function0[
+      vscodeDashJsonrpcLib.Thenable[
+        js.Tuple2[
+          vscodeDashJsonrpcLib.libMessageReaderMod.MessageReader, 
+          vscodeDashJsonrpcLib.libMessageWriterMod.MessageWriter
+        ]
+      ]
+    ]
+  ): PipeTransport = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onConnected")(onConnected)
+    __obj.asInstanceOf[PipeTransport]
+  }
+}
+

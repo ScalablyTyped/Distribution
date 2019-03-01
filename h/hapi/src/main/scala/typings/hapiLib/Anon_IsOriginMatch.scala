@@ -13,3 +13,12 @@ trait Anon_IsOriginMatch extends js.Object {
   var isOriginMatch: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_IsOriginMatch {
+  @scala.inline
+  def apply(isOriginMatch: js.UndefOr[scala.Boolean] = js.undefined): Anon_IsOriginMatch = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isOriginMatch)) __obj.updateDynamic("isOriginMatch")(isOriginMatch)
+    __obj.asInstanceOf[Anon_IsOriginMatch]
+  }
+}
+

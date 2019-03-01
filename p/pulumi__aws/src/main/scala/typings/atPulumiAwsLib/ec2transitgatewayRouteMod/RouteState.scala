@@ -20,3 +20,18 @@ trait RouteState extends js.Object {
   val transitGatewayRouteTableId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RouteState {
+  @scala.inline
+  def apply(
+    destinationCidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RouteState = {
+    val __obj = js.Dynamic.literal()
+    if (destinationCidrBlock != null) __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock.asInstanceOf[js.Any])
+    if (transitGatewayAttachmentId != null) __obj.updateDynamic("transitGatewayAttachmentId")(transitGatewayAttachmentId.asInstanceOf[js.Any])
+    if (transitGatewayRouteTableId != null) __obj.updateDynamic("transitGatewayRouteTableId")(transitGatewayRouteTableId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteState]
+  }
+}
+

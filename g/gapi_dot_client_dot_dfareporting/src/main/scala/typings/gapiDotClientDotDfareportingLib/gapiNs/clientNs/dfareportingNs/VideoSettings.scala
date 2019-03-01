@@ -22,3 +22,20 @@ trait VideoSettings extends js.Object {
   var transcodeSettings: js.UndefOr[TranscodeSetting] = js.undefined
 }
 
+object VideoSettings {
+  @scala.inline
+  def apply(
+    companionSettings: CompanionSetting = null,
+    kind: java.lang.String = null,
+    skippableSettings: SkippableSetting = null,
+    transcodeSettings: TranscodeSetting = null
+  ): VideoSettings = {
+    val __obj = js.Dynamic.literal()
+    if (companionSettings != null) __obj.updateDynamic("companionSettings")(companionSettings)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (skippableSettings != null) __obj.updateDynamic("skippableSettings")(skippableSettings)
+    if (transcodeSettings != null) __obj.updateDynamic("transcodeSettings")(transcodeSettings)
+    __obj.asInstanceOf[VideoSettings]
+  }
+}
+

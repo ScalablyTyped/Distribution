@@ -26,3 +26,26 @@ trait TargetHttpProxy extends js.Object {
   var urlMap: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TargetHttpProxy {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    urlMap: java.lang.String = null
+  ): TargetHttpProxy = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (urlMap != null) __obj.updateDynamic("urlMap")(urlMap)
+    __obj.asInstanceOf[TargetHttpProxy]
+  }
+}
+

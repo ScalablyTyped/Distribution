@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ExportDeclaration
   extends DeclarationStatement
-     with JSDocContainer {
+     with JSDocContainer
+     with _HasJSDoc {
   /** Will not be assigned in the case of `export * from "foo";` */
   var exportClause: js.UndefOr[NamedExports] = js.native
   /** If this is not a StringLiteral it will be a grammar error. */

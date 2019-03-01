@@ -14,3 +14,18 @@ trait Anon_Add extends js.Object {
   var result: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Add {
+  @scala.inline
+  def apply(
+    add: js.UndefOr[scala.Boolean] = js.undefined,
+    fixedargs: js.UndefOr[scala.Boolean] = js.undefined,
+    result: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Add = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(add)) __obj.updateDynamic("add")(add)
+    if (!js.isUndefined(fixedargs)) __obj.updateDynamic("fixedargs")(fixedargs)
+    if (!js.isUndefined(result)) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[Anon_Add]
+  }
+}
+

@@ -15,3 +15,26 @@ trait DragCallbackData extends js.Object {
   var y: scala.Double
 }
 
+object DragCallbackData {
+  @scala.inline
+  def apply(
+    deltaX: scala.Double,
+    deltaY: scala.Double,
+    lastX: scala.Double,
+    lastY: scala.Double,
+    node: reactLib.HTMLElement,
+    x: scala.Double,
+    y: scala.Double
+  ): DragCallbackData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deltaX")(deltaX)
+    __obj.updateDynamic("deltaY")(deltaY)
+    __obj.updateDynamic("lastX")(lastX)
+    __obj.updateDynamic("lastY")(lastY)
+    __obj.updateDynamic("node")(node)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[DragCallbackData]
+  }
+}
+

@@ -10,3 +10,12 @@ trait RegistryCredential extends js.Object {
   var publicKeyCertificate: js.UndefOr[PublicKeyCertificate] = js.undefined
 }
 
+object RegistryCredential {
+  @scala.inline
+  def apply(publicKeyCertificate: PublicKeyCertificate = null): RegistryCredential = {
+    val __obj = js.Dynamic.literal()
+    if (publicKeyCertificate != null) __obj.updateDynamic("publicKeyCertificate")(publicKeyCertificate)
+    __obj.asInstanceOf[RegistryCredential]
+  }
+}
+

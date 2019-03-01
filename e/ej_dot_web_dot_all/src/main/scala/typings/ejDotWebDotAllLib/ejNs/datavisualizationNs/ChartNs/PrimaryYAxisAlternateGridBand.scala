@@ -14,3 +14,13 @@ trait PrimaryYAxisAlternateGridBand extends js.Object {
   var odd: js.UndefOr[PrimaryYAxisAlternateGridBandOdd] = js.undefined
 }
 
+object PrimaryYAxisAlternateGridBand {
+  @scala.inline
+  def apply(even: PrimaryYAxisAlternateGridBandEven = null, odd: PrimaryYAxisAlternateGridBandOdd = null): PrimaryYAxisAlternateGridBand = {
+    val __obj = js.Dynamic.literal()
+    if (even != null) __obj.updateDynamic("even")(even)
+    if (odd != null) __obj.updateDynamic("odd")(odd)
+    __obj.asInstanceOf[PrimaryYAxisAlternateGridBand]
+  }
+}
+

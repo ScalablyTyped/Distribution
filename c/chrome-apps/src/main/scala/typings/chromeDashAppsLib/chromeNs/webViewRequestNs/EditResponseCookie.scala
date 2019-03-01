@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.webViewRequest.EditResponseCookie")
 @js.native
-class EditResponseCookie protected () extends js.Object {
+class EditResponseCookie protected () extends OnRequestActions {
   /**
     * @param filter Filter for cookies that will be modified.All empty entries are ignored.
     * @param modification

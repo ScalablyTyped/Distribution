@@ -13,3 +13,12 @@ trait Anon_FdPromisify extends js.Object {
   def `__promisify__`(fd: scala.Double): js.Promise[nodeLib.fsMod.Stats]
 }
 
+object Anon_FdPromisify {
+  @scala.inline
+  def apply(`__promisify__`: js.Function1[scala.Double, js.Promise[nodeLib.fsMod.Stats]]): Anon_FdPromisify = {
+    val __obj = js.Dynamic.literal(`__promisify__` = `__promisify__`)
+  
+    __obj.asInstanceOf[Anon_FdPromisify]
+  }
+}
+

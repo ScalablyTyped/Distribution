@@ -72,3 +72,30 @@ trait PageData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PageData {
+  @scala.inline
+  def apply(
+    allShapes: js.Array[ShapeData] = null,
+    comments: js.Array[CommentData] = null,
+    height: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null,
+    isBackground: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    shapes: js.Array[ShapeData] = null,
+    view: PageViewData = null,
+    width: scala.Int | scala.Double = null
+  ): PageData = {
+    val __obj = js.Dynamic.literal()
+    if (allShapes != null) __obj.updateDynamic("allShapes")(allShapes)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBackground)) __obj.updateDynamic("isBackground")(isBackground)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PageData]
+  }
+}
+

@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IEditor
-  extends ScalablyTyped.runtime.Instantiable0[EditorCore]
+  extends org.scalablytyped.runtime.Instantiable0[EditorCore]
 

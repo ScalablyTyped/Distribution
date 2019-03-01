@@ -7,43 +7,62 @@ import scala.scalajs.js.annotation._
 
 object reactDashDatesLibStrings {
   @js.native
-  sealed trait after extends js.Object
+  sealed trait after
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.CalendarInfoPositionShape
+       with reactDashDatesLib.reactDashDatesMod.ReactDatesNs.IconPositionShape
   
   @js.native
-  sealed trait before extends js.Object
+  sealed trait before
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.CalendarInfoPositionShape
+       with reactDashDatesLib.reactDashDatesMod.ReactDatesNs.IconPositionShape
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.CalendarInfoPositionShape
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.OpenDirectionShape
   
   @js.native
-  sealed trait endDate extends js.Object
+  sealed trait endDate
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.FocusedInputShape
+       with reactDashDatesLib.reactDashDatesMod.ReactDatesNs._DisabledShape
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.OrientationShape
+       with reactDashDatesLib.reactDashDatesMod.ReactDatesNs.ScrollableOrientationShape
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.AnchorDirectionShape
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.AnchorDirectionShape
   
   @js.native
-  sealed trait startDate extends js.Object
+  sealed trait startDate
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.FocusedInputShape
+       with reactDashDatesLib.reactDashDatesMod.ReactDatesNs._DisabledShape
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.CalendarInfoPositionShape
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.OpenDirectionShape
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.OrientationShape
+       with reactDashDatesLib.reactDashDatesMod.ReactDatesNs.ScrollableOrientationShape
   
   @js.native
-  sealed trait verticalScrollable extends js.Object
+  sealed trait verticalScrollable
+    extends reactDashDatesLib.reactDashDatesMod.ReactDatesNs.ScrollableOrientationShape
   
   @scala.inline
   def after: after = "after".asInstanceOf[after]

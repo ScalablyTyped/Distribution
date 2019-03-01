@@ -11,3 +11,13 @@ trait Anon_ApplyExtendTrueBoolean extends js.Object {
   var extend: hapiLib.hapiLibNumbers.`true`
 }
 
+object Anon_ApplyExtendTrueBoolean {
+  @scala.inline
+  def apply(extend: hapiLib.hapiLibNumbers.`true`, apply: js.UndefOr[scala.Boolean] = js.undefined): Anon_ApplyExtendTrueBoolean = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extend")(extend)
+    if (!js.isUndefined(apply)) __obj.updateDynamic("apply")(apply)
+    __obj.asInstanceOf[Anon_ApplyExtendTrueBoolean]
+  }
+}
+

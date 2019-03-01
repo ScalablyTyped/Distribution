@@ -16,3 +16,28 @@ trait EnvironmentOptions extends js.Object {
   var timeoutInMinutes: scala.Double
 }
 
+object EnvironmentOptions {
+  @scala.inline
+  def apply(
+    autoLinkWorkItems: scala.Boolean,
+    badgeEnabled: scala.Boolean,
+    emailNotificationType: java.lang.String,
+    emailRecipients: java.lang.String,
+    enableAccessToken: scala.Boolean,
+    publishDeploymentStatus: scala.Boolean,
+    skipArtifactsDownload: scala.Boolean,
+    timeoutInMinutes: scala.Double
+  ): EnvironmentOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoLinkWorkItems")(autoLinkWorkItems)
+    __obj.updateDynamic("badgeEnabled")(badgeEnabled)
+    __obj.updateDynamic("emailNotificationType")(emailNotificationType)
+    __obj.updateDynamic("emailRecipients")(emailRecipients)
+    __obj.updateDynamic("enableAccessToken")(enableAccessToken)
+    __obj.updateDynamic("publishDeploymentStatus")(publishDeploymentStatus)
+    __obj.updateDynamic("skipArtifactsDownload")(skipArtifactsDownload)
+    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    __obj.asInstanceOf[EnvironmentOptions]
+  }
+}
+

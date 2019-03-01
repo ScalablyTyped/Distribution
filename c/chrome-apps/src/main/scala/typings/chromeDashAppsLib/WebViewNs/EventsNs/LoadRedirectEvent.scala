@@ -17,3 +17,14 @@ trait LoadRedirectEvent extends js.Object {
   var oldUrl: java.lang.String
 }
 
+object LoadRedirectEvent {
+  @scala.inline
+  def apply(isTopLevel: scala.Boolean, newUrl: java.lang.String, oldUrl: java.lang.String): LoadRedirectEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isTopLevel")(isTopLevel)
+    __obj.updateDynamic("newUrl")(newUrl)
+    __obj.updateDynamic("oldUrl")(oldUrl)
+    __obj.asInstanceOf[LoadRedirectEvent]
+  }
+}
+

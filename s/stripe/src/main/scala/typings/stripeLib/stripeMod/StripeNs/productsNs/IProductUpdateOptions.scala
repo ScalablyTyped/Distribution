@@ -56,3 +56,38 @@ trait IProductUpdateOptions
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IProductUpdateOptions {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    caption: java.lang.String = null,
+    deactivate_on: js.Array[java.lang.String] = null,
+    description: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    images: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    name: java.lang.String = null,
+    package_dimensions: IPackageDimensions = null,
+    shippable: js.UndefOr[scala.Boolean] = js.undefined,
+    statement_descriptor: java.lang.String = null,
+    url: java.lang.String = null
+  ): IProductUpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (deactivate_on != null) __obj.updateDynamic("deactivate_on")(deactivate_on)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (images != null) __obj.updateDynamic("images")(images)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (package_dimensions != null) __obj.updateDynamic("package_dimensions")(package_dimensions)
+    if (!js.isUndefined(shippable)) __obj.updateDynamic("shippable")(shippable)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[IProductUpdateOptions]
+  }
+}
+

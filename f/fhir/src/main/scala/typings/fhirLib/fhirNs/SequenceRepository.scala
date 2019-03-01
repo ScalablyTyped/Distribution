@@ -59,3 +59,47 @@ trait SequenceRepository extends BackboneElement {
   var variantsetId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SequenceRepository {
+  @scala.inline
+  def apply(
+    `type`: code,
+    _datasetId: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _name: Element = null,
+    _readsetId: Element = null,
+    _type: Element = null,
+    _url: Element = null,
+    _variantsetId: Element = null,
+    datasetId: java.lang.String = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null,
+    name: java.lang.String = null,
+    readsetId: java.lang.String = null,
+    url: uri = null,
+    variantsetId: java.lang.String = null
+  ): SequenceRepository = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (_datasetId != null) __obj.updateDynamic("_datasetId")(_datasetId)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_readsetId != null) __obj.updateDynamic("_readsetId")(_readsetId)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (_url != null) __obj.updateDynamic("_url")(_url)
+    if (_variantsetId != null) __obj.updateDynamic("_variantsetId")(_variantsetId)
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (readsetId != null) __obj.updateDynamic("readsetId")(readsetId)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (variantsetId != null) __obj.updateDynamic("variantsetId")(variantsetId)
+    __obj.asInstanceOf[SequenceRepository]
+  }
+}
+

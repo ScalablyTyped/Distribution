@@ -15,3 +15,22 @@ trait Anon_FixedLineage extends js.Object {
   var windowOffset: Anon_Bottom
 }
 
+object Anon_FixedLineage {
+  @scala.inline
+  def apply(
+    fixedLineage: scala.Boolean,
+    offset: Anon_Bottom,
+    size: Anon_Height,
+    windowOffset: Anon_Bottom,
+    usemapImage: stdLib.HTMLImageElement = null
+  ): Anon_FixedLineage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fixedLineage")(fixedLineage)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("windowOffset")(windowOffset)
+    if (usemapImage != null) __obj.updateDynamic("usemapImage")(usemapImage)
+    __obj.asInstanceOf[Anon_FixedLineage]
+  }
+}
+

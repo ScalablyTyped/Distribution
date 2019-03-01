@@ -13,3 +13,12 @@ trait OauthAuthenticatorRequest extends js.Object {
   var headers: asanaLib.Anon_Authorization
 }
 
+object OauthAuthenticatorRequest {
+  @scala.inline
+  def apply(headers: asanaLib.Anon_Authorization): OauthAuthenticatorRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("headers")(headers)
+    __obj.asInstanceOf[OauthAuthenticatorRequest]
+  }
+}
+

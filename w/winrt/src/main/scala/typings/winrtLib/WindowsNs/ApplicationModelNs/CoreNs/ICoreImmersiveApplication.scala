@@ -11,3 +11,18 @@ trait ICoreImmersiveApplication extends js.Object {
   def createNewView(runtimeType: java.lang.String, entryPoint: java.lang.String): CoreApplicationView
 }
 
+object ICoreImmersiveApplication {
+  @scala.inline
+  def apply(
+    createNewView: js.Function2[java.lang.String, java.lang.String, CoreApplicationView],
+    mainView: CoreApplicationView,
+    views: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[CoreApplicationView]
+  ): ICoreImmersiveApplication = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createNewView")(createNewView)
+    __obj.updateDynamic("mainView")(mainView)
+    __obj.updateDynamic("views")(views)
+    __obj.asInstanceOf[ICoreImmersiveApplication]
+  }
+}
+

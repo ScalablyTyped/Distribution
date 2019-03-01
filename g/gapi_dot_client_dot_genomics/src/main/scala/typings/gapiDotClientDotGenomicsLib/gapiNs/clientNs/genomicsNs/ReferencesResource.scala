@@ -33,3 +33,24 @@ trait ReferencesResource extends js.Object {
   def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchReferencesResponse]
 }
 
+object ReferencesResource {
+  @scala.inline
+  def apply(
+    bases: BasesResource,
+    get: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Reference]
+    ],
+    search: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchReferencesResponse]
+    ]
+  ): ReferencesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bases")(bases)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ReferencesResource]
+  }
+}
+

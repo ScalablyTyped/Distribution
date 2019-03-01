@@ -29,3 +29,22 @@ trait SpanNotQuery extends Query {
   def toJSON(): js.Any
 }
 
+object SpanNotQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, SpanNotQuery],
+    exclude: js.Function1[js.Object, SpanNotQuery],
+    include: js.Function1[js.Object, SpanNotQuery],
+    toJSON: js.Function0[js.Any]
+  ): SpanNotQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("exclude")(exclude)
+    __obj.updateDynamic("include")(include)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[SpanNotQuery]
+  }
+}
+

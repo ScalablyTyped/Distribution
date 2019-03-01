@@ -9,3 +9,12 @@ trait ActiveXObjectNameMap extends js.Object {
   var `Forms.Image`: activexDashMsformsLib.MSFormsNs.Image
 }
 
+object ActiveXObjectNameMap {
+  @scala.inline
+  def apply(`Forms.Image`: activexDashMsformsLib.MSFormsNs.Image): ActiveXObjectNameMap = {
+    val __obj = js.Dynamic.literal(`Forms.Image` = `Forms.Image`)
+  
+    __obj.asInstanceOf[ActiveXObjectNameMap]
+  }
+}
+

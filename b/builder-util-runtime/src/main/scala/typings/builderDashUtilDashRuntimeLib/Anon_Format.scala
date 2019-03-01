@@ -11,3 +11,18 @@ trait Anon_Format extends js.Object {
   var version: js.UndefOr[scala.Nothing]
 }
 
+object Anon_Format {
+  @scala.inline
+  def apply(
+    format: java.lang.String,
+    variant: java.lang.String,
+    version: js.UndefOr[scala.Nothing] = js.undefined
+  ): Anon_Format = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("variant")(variant)
+    if (!js.isUndefined(version)) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Format]
+  }
+}
+

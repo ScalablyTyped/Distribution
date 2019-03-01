@@ -61,3 +61,36 @@ trait Column extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Column {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    className: java.lang.String = null,
+    defaultHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    flex: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    render: js.Function3[/* value */ js.Any, /* data */ js.Any, /* cellProps */ CellProps, _] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    textAlign: java.lang.String = null,
+    title: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): Column = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(defaultHidden)) __obj.updateDynamic("defaultHidden")(defaultHidden)
+    if (!js.isUndefined(defaultVisible)) __obj.updateDynamic("defaultVisible")(defaultVisible)
+    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Column]
+  }
+}
+

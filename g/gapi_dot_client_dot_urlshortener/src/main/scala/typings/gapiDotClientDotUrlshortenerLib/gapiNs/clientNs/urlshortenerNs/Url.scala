@@ -23,3 +23,24 @@ trait Url extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Url {
+  @scala.inline
+  def apply(
+    analytics: AnalyticsSummary = null,
+    created: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    longUrl: java.lang.String = null,
+    status: java.lang.String = null
+  ): Url = {
+    val __obj = js.Dynamic.literal()
+    if (analytics != null) __obj.updateDynamic("analytics")(analytics)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (longUrl != null) __obj.updateDynamic("longUrl")(longUrl)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Url]
+  }
+}
+

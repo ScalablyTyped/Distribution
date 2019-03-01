@@ -67,3 +67,40 @@ trait AxisPointer
   ] = js.undefined
 }
 
+object AxisPointer {
+  @scala.inline
+  def apply(
+    handle: echartsLib.Anon_ColorIcon = null,
+    id: java.lang.String = null,
+    label: echartsLib.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.PointerLabel = null,
+    lineStyle: echartsLib.Anon_ColorOpacityShadowBlur = null,
+    link: js.Array[js.Object] = null,
+    shadowStyle: echartsLib.Anon_ColorOpacityShadowBlurShadowColor = null,
+    show: js.UndefOr[scala.Boolean] = js.undefined,
+    snap: js.UndefOr[scala.Boolean] = js.undefined,
+    status: js.UndefOr[scala.Boolean] = js.undefined,
+    triggerOn: echartsLib.echartsLibStrings.mousemove | echartsLib.echartsLibStrings.click | echartsLib.echartsLibStrings.`mousemove|click` | echartsLib.echartsLibStrings.none = null,
+    triggerTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: echartsLib.echartsLibStrings.line | echartsLib.echartsLibStrings.shadow | echartsLib.echartsLibStrings.none = null,
+    value: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null
+  ): AxisPointer = {
+    val __obj = js.Dynamic.literal()
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (shadowStyle != null) __obj.updateDynamic("shadowStyle")(shadowStyle)
+    if (!js.isUndefined(show)) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(snap)) __obj.updateDynamic("snap")(snap)
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
+    if (triggerOn != null) __obj.updateDynamic("triggerOn")(triggerOn.asInstanceOf[js.Any])
+    if (!js.isUndefined(triggerTooltip)) __obj.updateDynamic("triggerTooltip")(triggerTooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AxisPointer]
+  }
+}
+

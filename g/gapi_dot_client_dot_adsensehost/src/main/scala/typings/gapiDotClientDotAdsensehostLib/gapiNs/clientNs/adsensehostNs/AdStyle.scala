@@ -16,3 +16,20 @@ trait AdStyle extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AdStyle {
+  @scala.inline
+  def apply(
+    colors: gapiDotClientDotAdsensehostLib.Anon_Background = null,
+    corners: java.lang.String = null,
+    font: gapiDotClientDotAdsensehostLib.Anon_Family = null,
+    kind: java.lang.String = null
+  ): AdStyle = {
+    val __obj = js.Dynamic.literal()
+    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (corners != null) __obj.updateDynamic("corners")(corners)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[AdStyle]
+  }
+}
+

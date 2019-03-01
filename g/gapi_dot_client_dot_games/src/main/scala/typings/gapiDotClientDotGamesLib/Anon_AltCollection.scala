@@ -40,3 +40,38 @@ trait Anon_AltCollection extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltCollection {
+  @scala.inline
+  def apply(
+    collection: java.lang.String,
+    playerId: java.lang.String,
+    alt: java.lang.String = null,
+    consistencyToken: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    language: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltCollection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collection")(collection)
+    __obj.updateDynamic("playerId")(playerId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (consistencyToken != null) __obj.updateDynamic("consistencyToken")(consistencyToken)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltCollection]
+  }
+}
+

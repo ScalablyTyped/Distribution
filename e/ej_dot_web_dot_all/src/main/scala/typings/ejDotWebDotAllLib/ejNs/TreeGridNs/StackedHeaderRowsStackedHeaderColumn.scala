@@ -28,3 +28,22 @@ trait StackedHeaderRowsStackedHeaderColumn extends js.Object {
   var tooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StackedHeaderRowsStackedHeaderColumn {
+  @scala.inline
+  def apply(
+    column: js.Any = null,
+    cssClass: java.lang.String = null,
+    headerText: java.lang.String = null,
+    textAlign: java.lang.String = null,
+    tooltip: java.lang.String = null
+  ): StackedHeaderRowsStackedHeaderColumn = {
+    val __obj = js.Dynamic.literal()
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[StackedHeaderRowsStackedHeaderColumn]
+  }
+}
+

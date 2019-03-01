@@ -34,3 +34,56 @@ trait XExtendedTextConversion extends XTextConversion {
   ): java.lang.String
 }
 
+object XExtendedTextConversion {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getConversion: js.Function6[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double, 
+      java.lang.String
+    ],
+    getConversionWithOffset: js.Function7[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double]], 
+      java.lang.String
+    ],
+    getConversions: js.Function6[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double, 
+      TextConversionResult
+    ],
+    interactiveConversion: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double, 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XExtendedTextConversion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getConversion")(getConversion)
+    __obj.updateDynamic("getConversionWithOffset")(getConversionWithOffset)
+    __obj.updateDynamic("getConversions")(getConversions)
+    __obj.updateDynamic("interactiveConversion")(interactiveConversion)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XExtendedTextConversion]
+  }
+}
+

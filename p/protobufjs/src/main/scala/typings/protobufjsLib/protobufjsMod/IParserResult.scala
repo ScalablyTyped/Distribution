@@ -18,3 +18,22 @@ trait IParserResult extends js.Object {
   var weakImports: js.UndefOr[js.Array[java.lang.String]]
 }
 
+object IParserResult {
+  @scala.inline
+  def apply(
+    root: Root,
+    imports: js.Array[java.lang.String] = null,
+    `package`: java.lang.String = null,
+    syntax: java.lang.String = null,
+    weakImports: js.Array[java.lang.String] = null
+  ): IParserResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("root")(root)
+    if (imports != null) __obj.updateDynamic("imports")(imports)
+    if (`package` != null) __obj.updateDynamic("package")(`package`)
+    if (syntax != null) __obj.updateDynamic("syntax")(syntax)
+    if (weakImports != null) __obj.updateDynamic("weakImports")(weakImports)
+    __obj.asInstanceOf[IParserResult]
+  }
+}
+

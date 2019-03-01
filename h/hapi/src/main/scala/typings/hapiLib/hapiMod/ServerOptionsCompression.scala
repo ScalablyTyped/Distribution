@@ -9,3 +9,12 @@ trait ServerOptionsCompression extends js.Object {
   var minBytes: scala.Double
 }
 
+object ServerOptionsCompression {
+  @scala.inline
+  def apply(minBytes: scala.Double): ServerOptionsCompression = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("minBytes")(minBytes)
+    __obj.asInstanceOf[ServerOptionsCompression]
+  }
+}
+

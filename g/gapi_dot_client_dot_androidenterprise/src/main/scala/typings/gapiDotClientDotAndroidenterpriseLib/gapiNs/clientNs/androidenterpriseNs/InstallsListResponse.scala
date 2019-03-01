@@ -12,3 +12,13 @@ trait InstallsListResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InstallsListResponse {
+  @scala.inline
+  def apply(install: js.Array[Install] = null, kind: java.lang.String = null): InstallsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (install != null) __obj.updateDynamic("install")(install)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[InstallsListResponse]
+  }
+}
+

@@ -30,3 +30,14 @@ trait IBrowser extends js.Object {
   var version: js.UndefOr[java.lang.String]
 }
 
+object IBrowser {
+  @scala.inline
+  def apply(major: java.lang.String = null, name: java.lang.String = null, version: java.lang.String = null): IBrowser = {
+    val __obj = js.Dynamic.literal()
+    if (major != null) __obj.updateDynamic("major")(major)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[IBrowser]
+  }
+}
+

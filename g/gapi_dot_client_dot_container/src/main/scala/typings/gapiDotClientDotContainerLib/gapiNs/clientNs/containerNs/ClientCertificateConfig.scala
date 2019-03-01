@@ -10,3 +10,12 @@ trait ClientCertificateConfig extends js.Object {
   var issueClientCertificate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClientCertificateConfig {
+  @scala.inline
+  def apply(issueClientCertificate: js.UndefOr[scala.Boolean] = js.undefined): ClientCertificateConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(issueClientCertificate)) __obj.updateDynamic("issueClientCertificate")(issueClientCertificate)
+    __obj.asInstanceOf[ClientCertificateConfig]
+  }
+}
+

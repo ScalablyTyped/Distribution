@@ -18,3 +18,18 @@ trait DivisionSearchResult extends js.Object {
   var ocdId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DivisionSearchResult {
+  @scala.inline
+  def apply(
+    aliases: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    ocdId: java.lang.String = null
+  ): DivisionSearchResult = {
+    val __obj = js.Dynamic.literal()
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (ocdId != null) __obj.updateDynamic("ocdId")(ocdId)
+    __obj.asInstanceOf[DivisionSearchResult]
+  }
+}
+

@@ -15,3 +15,26 @@ trait Options extends js.Object {
   var validator: js.UndefOr[js.Any] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    default: java.lang.String = null,
+    input: nodeLib.NodeJSNs.ReadableStream = null,
+    output: nodeLib.NodeJSNs.WritableStream = null,
+    retry: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    trim: js.UndefOr[scala.Boolean] = js.undefined,
+    validator: js.Any = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (!js.isUndefined(retry)) __obj.updateDynamic("retry")(retry)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (validator != null) __obj.updateDynamic("validator")(validator)
+    __obj.asInstanceOf[Options]
+  }
+}
+

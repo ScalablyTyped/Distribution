@@ -28,3 +28,20 @@ trait ScrollSpyOptions extends js.Object {
   def getActiveElement(id: java.lang.String): java.lang.String
 }
 
+object ScrollSpyOptions {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String,
+    getActiveElement: js.Function1[java.lang.String, java.lang.String],
+    scrollOffset: scala.Double,
+    throttle: scala.Double
+  ): ScrollSpyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activeClass")(activeClass)
+    __obj.updateDynamic("getActiveElement")(getActiveElement)
+    __obj.updateDynamic("scrollOffset")(scrollOffset)
+    __obj.updateDynamic("throttle")(throttle)
+    __obj.asInstanceOf[ScrollSpyOptions]
+  }
+}
+

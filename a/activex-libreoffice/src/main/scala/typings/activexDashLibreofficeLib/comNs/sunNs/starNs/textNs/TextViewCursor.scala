@@ -21,3 +21,16 @@ trait TextViewCursor
   override def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
 }
 
+object TextViewCursor {
+  @scala.inline
+  def apply(
+    XScreenCursor: activexDashLibreofficeLib.comNs.sunNs.starNs.viewNs.XScreenCursor = null,
+    TextLayoutCursor: TextLayoutCursor = null
+  ): TextViewCursor = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XScreenCursor)
+    js.Dynamic.global.Object.assign(__obj, TextLayoutCursor)
+    __obj.asInstanceOf[TextViewCursor]
+  }
+}
+

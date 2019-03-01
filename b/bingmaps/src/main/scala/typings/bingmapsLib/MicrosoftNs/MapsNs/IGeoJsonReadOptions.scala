@@ -17,3 +17,18 @@ trait IGeoJsonReadOptions extends js.Object {
   var style: js.UndefOr[IStylesOptions] = js.undefined
 }
 
+object IGeoJsonReadOptions {
+  @scala.inline
+  def apply(
+    jsonpQueryParam: java.lang.String = null,
+    layerName: java.lang.String = null,
+    style: IStylesOptions = null
+  ): IGeoJsonReadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (jsonpQueryParam != null) __obj.updateDynamic("jsonpQueryParam")(jsonpQueryParam)
+    if (layerName != null) __obj.updateDynamic("layerName")(layerName)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[IGeoJsonReadOptions]
+  }
+}
+

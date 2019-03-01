@@ -20,6 +20,8 @@ class HighLevelConsumer protected () extends js.Object {
   def commit(cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]): scala.Unit = js.native
   def commit(force: scala.Boolean, cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]): scala.Unit = js.native
   @JSName("on")
+  def on_connect(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.connect, cb: js.Function0[_]): scala.Unit = js.native
+  @JSName("on")
   def on_error(eventName: kafkaDashNodeLib.kafkaDashNodeLibStrings.error, cb: js.Function1[/* error */ js.Any, _]): scala.Unit = js.native
   @JSName("on")
   def on_message(

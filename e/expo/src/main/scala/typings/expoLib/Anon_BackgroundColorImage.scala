@@ -11,3 +11,18 @@ trait Anon_BackgroundColorImage extends js.Object {
   var resizeMode: js.UndefOr[expoLib.expoMod.ResizeModeContain | expoLib.expoMod.ResizeModeCover] = js.undefined
 }
 
+object Anon_BackgroundColorImage {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    image: java.lang.String = null,
+    resizeMode: expoLib.expoMod.ResizeModeContain | expoLib.expoMod.ResizeModeCover = null
+  ): Anon_BackgroundColorImage = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (resizeMode != null) __obj.updateDynamic("resizeMode")(resizeMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BackgroundColorImage]
+  }
+}
+

@@ -10,3 +10,12 @@ trait MaintenanceWindow extends js.Object {
   var dailyMaintenanceWindow: js.UndefOr[DailyMaintenanceWindow] = js.undefined
 }
 
+object MaintenanceWindow {
+  @scala.inline
+  def apply(dailyMaintenanceWindow: DailyMaintenanceWindow = null): MaintenanceWindow = {
+    val __obj = js.Dynamic.literal()
+    if (dailyMaintenanceWindow != null) __obj.updateDynamic("dailyMaintenanceWindow")(dailyMaintenanceWindow)
+    __obj.asInstanceOf[MaintenanceWindow]
+  }
+}
+

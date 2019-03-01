@@ -10,3 +10,16 @@ trait Anon_Screen extends js.Object {
   var window: reactDashNativeLib.reactDashNativeMod.ScaledSize
 }
 
+object Anon_Screen {
+  @scala.inline
+  def apply(
+    screen: reactDashNativeLib.reactDashNativeMod.ScaledSize,
+    window: reactDashNativeLib.reactDashNativeMod.ScaledSize
+  ): Anon_Screen = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("screen")(screen)
+    __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[Anon_Screen]
+  }
+}
+

@@ -67,3 +67,36 @@ trait ASPxClientTimeInterval extends js.Object {
   def SetStart(value: stdLib.Date): scala.Unit
 }
 
+object ASPxClientTimeInterval {
+  @scala.inline
+  def apply(
+    Contains: js.Function1[ASPxClientTimeInterval, scala.Boolean],
+    Equals: js.Function1[ASPxClientTimeInterval, scala.Boolean],
+    GetAllDay: js.Function0[scala.Boolean],
+    GetDuration: js.Function0[scala.Double],
+    GetEnd: js.Function0[stdLib.Date],
+    GetStart: js.Function0[stdLib.Date],
+    IntersectsWith: js.Function1[ASPxClientTimeInterval, scala.Boolean],
+    IntersectsWithExcludingBounds: js.Function1[ASPxClientTimeInterval, scala.Boolean],
+    SetAllDay: js.Function1[scala.Boolean, scala.Unit],
+    SetDuration: js.Function1[js.Any, scala.Unit],
+    SetEnd: js.Function1[stdLib.Date, scala.Unit],
+    SetStart: js.Function1[stdLib.Date, scala.Unit]
+  ): ASPxClientTimeInterval = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Contains")(Contains)
+    __obj.updateDynamic("Equals")(Equals)
+    __obj.updateDynamic("GetAllDay")(GetAllDay)
+    __obj.updateDynamic("GetDuration")(GetDuration)
+    __obj.updateDynamic("GetEnd")(GetEnd)
+    __obj.updateDynamic("GetStart")(GetStart)
+    __obj.updateDynamic("IntersectsWith")(IntersectsWith)
+    __obj.updateDynamic("IntersectsWithExcludingBounds")(IntersectsWithExcludingBounds)
+    __obj.updateDynamic("SetAllDay")(SetAllDay)
+    __obj.updateDynamic("SetDuration")(SetDuration)
+    __obj.updateDynamic("SetEnd")(SetEnd)
+    __obj.updateDynamic("SetStart")(SetStart)
+    __obj.asInstanceOf[ASPxClientTimeInterval]
+  }
+}
+

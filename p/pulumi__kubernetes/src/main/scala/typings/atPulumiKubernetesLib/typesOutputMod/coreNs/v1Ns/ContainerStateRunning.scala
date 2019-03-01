@@ -15,3 +15,12 @@ trait ContainerStateRunning extends js.Object {
   val startedAt: java.lang.String
 }
 
+object ContainerStateRunning {
+  @scala.inline
+  def apply(startedAt: java.lang.String): ContainerStateRunning = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("startedAt")(startedAt)
+    __obj.asInstanceOf[ContainerStateRunning]
+  }
+}
+

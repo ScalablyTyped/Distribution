@@ -18,3 +18,18 @@ trait IKeyComboProps
   var minimal: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IKeyComboProps {
+  @scala.inline
+  def apply(
+    combo: java.lang.String,
+    className: java.lang.String = null,
+    minimal: js.UndefOr[scala.Boolean] = js.undefined
+  ): IKeyComboProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("combo")(combo)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
+    __obj.asInstanceOf[IKeyComboProps]
+  }
+}
+

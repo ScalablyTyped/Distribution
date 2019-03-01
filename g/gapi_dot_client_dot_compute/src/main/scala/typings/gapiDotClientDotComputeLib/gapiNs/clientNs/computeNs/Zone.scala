@@ -28,3 +28,32 @@ trait Zone extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Zone {
+  @scala.inline
+  def apply(
+    availableCpuPlatforms: js.Array[java.lang.String] = null,
+    creationTimestamp: java.lang.String = null,
+    deprecated: DeprecationStatus = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    region: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    status: java.lang.String = null
+  ): Zone = {
+    val __obj = js.Dynamic.literal()
+    if (availableCpuPlatforms != null) __obj.updateDynamic("availableCpuPlatforms")(availableCpuPlatforms)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Zone]
+  }
+}
+

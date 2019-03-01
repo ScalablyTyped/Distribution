@@ -15,3 +15,12 @@ trait OpacityProps extends js.Object {
   var opacity: js.UndefOr[ResponsiveValue[csstypeLib.GlobalsNumber]] = js.undefined
 }
 
+object OpacityProps {
+  @scala.inline
+  def apply(opacity: ResponsiveValue[csstypeLib.GlobalsNumber] = null): OpacityProps = {
+    val __obj = js.Dynamic.literal()
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OpacityProps]
+  }
+}
+

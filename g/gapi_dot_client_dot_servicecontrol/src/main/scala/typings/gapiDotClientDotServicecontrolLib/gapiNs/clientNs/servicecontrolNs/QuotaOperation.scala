@@ -55,3 +55,24 @@ trait QuotaOperation extends js.Object {
   var quotaMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QuotaOperation {
+  @scala.inline
+  def apply(
+    consumerId: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    methodName: java.lang.String = null,
+    operationId: java.lang.String = null,
+    quotaMetrics: js.Array[MetricValueSet] = null,
+    quotaMode: java.lang.String = null
+  ): QuotaOperation = {
+    val __obj = js.Dynamic.literal()
+    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics)
+    if (quotaMode != null) __obj.updateDynamic("quotaMode")(quotaMode)
+    __obj.asInstanceOf[QuotaOperation]
+  }
+}
+

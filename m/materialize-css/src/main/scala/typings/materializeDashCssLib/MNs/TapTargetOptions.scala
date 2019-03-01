@@ -18,3 +18,16 @@ trait TapTargetOptions extends js.Object {
   def onOpen(`this`: TapTarget, origin: stdLib.Element): scala.Unit
 }
 
+object TapTargetOptions {
+  @scala.inline
+  def apply(
+    onClose: js.Function2[TapTarget, stdLib.Element, scala.Unit],
+    onOpen: js.Function2[TapTarget, stdLib.Element, scala.Unit]
+  ): TapTargetOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onClose")(onClose)
+    __obj.updateDynamic("onOpen")(onOpen)
+    __obj.asInstanceOf[TapTargetOptions]
+  }
+}
+

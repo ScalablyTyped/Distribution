@@ -15,4 +15,5 @@ import scala.scalajs.js.annotation._
 trait EdgeCollection
   extends Collection[EdgeSingular, EdgeSingular]
      with EdgeCollectionTraversing
+     with _CollectionArgument
 

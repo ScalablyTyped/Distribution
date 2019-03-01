@@ -20,3 +20,14 @@ trait Anon_ChannelIdKind extends js.Object {
   var videoId: java.lang.String
 }
 
+object Anon_ChannelIdKind {
+  @scala.inline
+  def apply(channelId: java.lang.String, kind: java.lang.String, videoId: java.lang.String): Anon_ChannelIdKind = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channelId")(channelId)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("videoId")(videoId)
+    __obj.asInstanceOf[Anon_ChannelIdKind]
+  }
+}
+

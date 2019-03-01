@@ -20,3 +20,18 @@ trait SFTPStreamConfig extends js.Object {
   var server: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SFTPStreamConfig {
+  @scala.inline
+  def apply(
+    debug: js.Function1[/* information */ java.lang.String, _] = null,
+    highWaterMark: scala.Int | scala.Double = null,
+    server: js.UndefOr[scala.Boolean] = js.undefined
+  ): SFTPStreamConfig = {
+    val __obj = js.Dynamic.literal()
+    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
+    if (!js.isUndefined(server)) __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[SFTPStreamConfig]
+  }
+}
+

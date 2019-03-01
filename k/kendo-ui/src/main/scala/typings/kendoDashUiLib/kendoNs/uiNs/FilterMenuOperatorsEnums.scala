@@ -13,3 +13,20 @@ trait FilterMenuOperatorsEnums extends js.Object {
   var neq: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FilterMenuOperatorsEnums {
+  @scala.inline
+  def apply(
+    eq: java.lang.String = null,
+    isnotnull: java.lang.String = null,
+    isnull: java.lang.String = null,
+    neq: java.lang.String = null
+  ): FilterMenuOperatorsEnums = {
+    val __obj = js.Dynamic.literal()
+    if (eq != null) __obj.updateDynamic("eq")(eq)
+    if (isnotnull != null) __obj.updateDynamic("isnotnull")(isnotnull)
+    if (isnull != null) __obj.updateDynamic("isnull")(isnull)
+    if (neq != null) __obj.updateDynamic("neq")(neq)
+    __obj.asInstanceOf[FilterMenuOperatorsEnums]
+  }
+}
+

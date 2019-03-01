@@ -29,3 +29,27 @@ trait XLayoutManagerListener
   ): scala.Unit
 }
 
+object XLayoutManagerListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    layoutEvent: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, 
+      scala.Double, 
+      js.Any, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XLayoutManagerListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("layoutEvent")(layoutEvent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XLayoutManagerListener]
+  }
+}
+

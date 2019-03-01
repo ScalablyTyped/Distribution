@@ -17,3 +17,30 @@ trait Visitor extends js.Object {
   def startVertex(req: jsgraphLib.Anon_G): scala.Unit
 }
 
+object Visitor {
+  @scala.inline
+  def apply(
+    blackTarget: js.Function1[jsgraphLib.Anon_E, scala.Unit],
+    discoverVertex: js.Function1[jsgraphLib.Anon_G, scala.Unit],
+    examineEdge: js.Function1[jsgraphLib.Anon_E, scala.Unit],
+    examineVertex: js.Function1[jsgraphLib.Anon_G, scala.Unit],
+    finishVertex: js.Function1[jsgraphLib.Anon_G, scala.Unit],
+    grayTarget: js.Function1[jsgraphLib.Anon_E, scala.Unit],
+    initializeVertex: js.Function1[jsgraphLib.Anon_G, scala.Unit],
+    nonTreeEdge: js.Function1[jsgraphLib.Anon_E, scala.Unit],
+    startVertex: js.Function1[jsgraphLib.Anon_G, scala.Unit]
+  ): Visitor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blackTarget")(blackTarget)
+    __obj.updateDynamic("discoverVertex")(discoverVertex)
+    __obj.updateDynamic("examineEdge")(examineEdge)
+    __obj.updateDynamic("examineVertex")(examineVertex)
+    __obj.updateDynamic("finishVertex")(finishVertex)
+    __obj.updateDynamic("grayTarget")(grayTarget)
+    __obj.updateDynamic("initializeVertex")(initializeVertex)
+    __obj.updateDynamic("nonTreeEdge")(nonTreeEdge)
+    __obj.updateDynamic("startVertex")(startVertex)
+    __obj.asInstanceOf[Visitor]
+  }
+}
+

@@ -9,3 +9,14 @@ trait IBadgeNotificationFactory extends js.Object {
   def createBadgeNotification(content: winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument): BadgeNotification
 }
 
+object IBadgeNotificationFactory {
+  @scala.inline
+  def apply(
+    createBadgeNotification: js.Function1[winrtLib.WindowsNs.DataNs.XmlNs.DomNs.XmlDocument, BadgeNotification]
+  ): IBadgeNotificationFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createBadgeNotification")(createBadgeNotification)
+    __obj.asInstanceOf[IBadgeNotificationFactory]
+  }
+}
+

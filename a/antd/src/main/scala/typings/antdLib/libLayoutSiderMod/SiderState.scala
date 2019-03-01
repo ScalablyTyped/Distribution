@@ -11,3 +11,18 @@ trait SiderState extends js.Object {
   var collapsed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SiderState {
+  @scala.inline
+  def apply(
+    below: scala.Boolean,
+    belowShow: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined
+  ): SiderState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("below")(below)
+    if (!js.isUndefined(belowShow)) __obj.updateDynamic("belowShow")(belowShow)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    __obj.asInstanceOf[SiderState]
+  }
+}
+

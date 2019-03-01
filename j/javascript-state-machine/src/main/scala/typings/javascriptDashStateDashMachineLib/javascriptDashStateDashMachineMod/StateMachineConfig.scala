@@ -24,3 +24,30 @@ trait StateMachineConfig extends js.Object {
   var target: js.UndefOr[StateMachine] = js.undefined
 }
 
+object StateMachineConfig {
+  @scala.inline
+  def apply(
+    callbacks: org.scalablytyped.runtime.StringDictionary[
+      js.Function4[
+        /* event */ js.UndefOr[java.lang.String], 
+        /* from */ js.UndefOr[java.lang.String], 
+        /* to */ js.UndefOr[java.lang.String], 
+        /* repeated */ js.Any, 
+        _
+      ]
+    ] = null,
+    error: StateMachineErrorCallback = null,
+    events: js.Array[StateMachineEventDef] = null,
+    initial: js.Any = null,
+    target: StateMachine = null
+  ): StateMachineConfig = {
+    val __obj = js.Dynamic.literal()
+    if (callbacks != null) __obj.updateDynamic("callbacks")(callbacks)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (initial != null) __obj.updateDynamic("initial")(initial)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[StateMachineConfig]
+  }
+}
+

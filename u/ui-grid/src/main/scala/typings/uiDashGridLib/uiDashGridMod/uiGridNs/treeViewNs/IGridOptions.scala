@@ -14,3 +14,12 @@ trait IGridOptions extends js.Object {
   var enableTreeView: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(enableTreeView: js.UndefOr[scala.Boolean] = js.undefined): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableTreeView)) __obj.updateDynamic("enableTreeView")(enableTreeView)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

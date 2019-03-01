@@ -16,3 +16,12 @@ trait ClearDetails extends js.Object {
   var scope: js.UndefOr[ScopeEnum] = js.undefined
 }
 
+object ClearDetails {
+  @scala.inline
+  def apply(scope: ScopeEnum = null): ClearDetails = {
+    val __obj = js.Dynamic.literal()
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[ClearDetails]
+  }
+}
+

@@ -15,3 +15,20 @@ trait ClientSideLoggingClientInfoObject extends js.Object {
   var window_size: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClientSideLoggingClientInfoObject {
+  @scala.inline
+  def apply(
+    location: js.UndefOr[scala.Boolean] = js.undefined,
+    screen_size: js.UndefOr[scala.Boolean] = js.undefined,
+    user_agent: js.UndefOr[scala.Boolean] = js.undefined,
+    window_size: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClientSideLoggingClientInfoObject = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(location)) __obj.updateDynamic("location")(location)
+    if (!js.isUndefined(screen_size)) __obj.updateDynamic("screen_size")(screen_size)
+    if (!js.isUndefined(user_agent)) __obj.updateDynamic("user_agent")(user_agent)
+    if (!js.isUndefined(window_size)) __obj.updateDynamic("window_size")(window_size)
+    __obj.asInstanceOf[ClientSideLoggingClientInfoObject]
+  }
+}
+

@@ -14,3 +14,14 @@ trait Auth0DelegationToken extends js.Object {
   var tokenType: java.lang.String
 }
 
+object Auth0DelegationToken {
+  @scala.inline
+  def apply(expiresIn: scala.Double, idToken: java.lang.String, tokenType: java.lang.String): Auth0DelegationToken = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expiresIn")(expiresIn)
+    __obj.updateDynamic("idToken")(idToken)
+    __obj.updateDynamic("tokenType")(tokenType)
+    __obj.asInstanceOf[Auth0DelegationToken]
+  }
+}
+

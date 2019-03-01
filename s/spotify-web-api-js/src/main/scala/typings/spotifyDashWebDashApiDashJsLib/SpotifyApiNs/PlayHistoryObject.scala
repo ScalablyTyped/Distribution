@@ -15,3 +15,14 @@ trait PlayHistoryObject extends js.Object {
   var track: TrackObjectSimplified
 }
 
+object PlayHistoryObject {
+  @scala.inline
+  def apply(context: ContextObject, played_at: java.lang.String, track: TrackObjectSimplified): PlayHistoryObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("played_at")(played_at)
+    __obj.updateDynamic("track")(track)
+    __obj.asInstanceOf[PlayHistoryObject]
+  }
+}
+

@@ -22,3 +22,26 @@ trait IGridOptions extends js.Object {
   var verticalSections: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(
+    borderVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    fillStyle: java.lang.String = null,
+    lineWidth: scala.Int | scala.Double = null,
+    millisPerLine: scala.Int | scala.Double = null,
+    sharpLines: js.UndefOr[scala.Boolean] = js.undefined,
+    strokeStyle: java.lang.String = null,
+    verticalSections: scala.Int | scala.Double = null
+  ): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible)
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (millisPerLine != null) __obj.updateDynamic("millisPerLine")(millisPerLine.asInstanceOf[js.Any])
+    if (!js.isUndefined(sharpLines)) __obj.updateDynamic("sharpLines")(sharpLines)
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (verticalSections != null) __obj.updateDynamic("verticalSections")(verticalSections.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

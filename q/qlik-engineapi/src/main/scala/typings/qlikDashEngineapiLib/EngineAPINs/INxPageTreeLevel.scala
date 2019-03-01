@@ -17,3 +17,13 @@ trait INxPageTreeLevel extends js.Object {
   var qLeft: scala.Double
 }
 
+object INxPageTreeLevel {
+  @scala.inline
+  def apply(qDepth: scala.Double, qLeft: scala.Double): INxPageTreeLevel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qDepth")(qDepth)
+    __obj.updateDynamic("qLeft")(qLeft)
+    __obj.asInstanceOf[INxPageTreeLevel]
+  }
+}
+

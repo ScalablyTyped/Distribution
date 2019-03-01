@@ -17,3 +17,13 @@ trait ExistenceFilter extends js.Object {
   var targetId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ExistenceFilter {
+  @scala.inline
+  def apply(count: scala.Int | scala.Double = null, targetId: scala.Int | scala.Double = null): ExistenceFilter = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExistenceFilter]
+  }
+}
+

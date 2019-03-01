@@ -26,3 +26,30 @@ trait Box extends js.Object {
   var uidvalidity: scala.Double
 }
 
+object Box {
+  @scala.inline
+  def apply(
+    flags: js.Array[java.lang.String],
+    messages: imapLib.Anon_New,
+    name: java.lang.String,
+    newKeywords: scala.Boolean,
+    permFlags: js.Array[java.lang.String],
+    persistentUIDs: scala.Boolean,
+    uidnext: scala.Double,
+    uidvalidity: scala.Double,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): Box = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("messages")(messages)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("newKeywords")(newKeywords)
+    __obj.updateDynamic("permFlags")(permFlags)
+    __obj.updateDynamic("persistentUIDs")(persistentUIDs)
+    __obj.updateDynamic("uidnext")(uidnext)
+    __obj.updateDynamic("uidvalidity")(uidvalidity)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    __obj.asInstanceOf[Box]
+  }
+}
+

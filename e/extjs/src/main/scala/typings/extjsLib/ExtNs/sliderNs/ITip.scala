@@ -20,3 +20,24 @@ trait ITip
   var position: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITip {
+  @scala.inline
+  def apply(
+    ITip: extjsLib.ExtNs.tipNs.ITip = null,
+    align: java.lang.String = null,
+    getText: js.Function1[/* thumb */ js.UndefOr[IThumb], java.lang.String] = null,
+    minWidth: scala.Int | scala.Double = null,
+    offsets: extjsLib.ExtNs.Array = null,
+    position: java.lang.String = null
+  ): ITip = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ITip)
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (getText != null) __obj.updateDynamic("getText")(getText)
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (offsets != null) __obj.updateDynamic("offsets")(offsets)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[ITip]
+  }
+}
+

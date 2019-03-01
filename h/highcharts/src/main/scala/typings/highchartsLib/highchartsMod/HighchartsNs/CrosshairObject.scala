@@ -36,3 +36,22 @@ trait CrosshairObject extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CrosshairObject {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    color: java.lang.String | Gradient = null,
+    dashStyle: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): CrosshairObject = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CrosshairObject]
+  }
+}
+

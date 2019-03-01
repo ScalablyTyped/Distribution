@@ -7,82 +7,145 @@ import scala.scalajs.js.annotation._
 
 object vscodeDashLanguageserverDashTypesLibNumbers {
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DiagnosticSeverity
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentHighlightKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.InsertTextFormat
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentSaveReason
   
   @js.native
-  sealed trait `10` extends js.Object
+  sealed trait `10`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `11` extends js.Object
+  sealed trait `11`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `12` extends js.Object
+  sealed trait `12`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `13` extends js.Object
+  sealed trait `13`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `14` extends js.Object
+  sealed trait `14`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `15` extends js.Object
+  sealed trait `15`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `16` extends js.Object
+  sealed trait `16`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `17` extends js.Object
+  sealed trait `17`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `18` extends js.Object
+  sealed trait `18`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `19` extends js.Object
+  sealed trait `19`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DiagnosticSeverity
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentHighlightKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.InsertTextFormat
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentSaveReason
   
   @js.native
-  sealed trait `20` extends js.Object
+  sealed trait `20`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `21` extends js.Object
+  sealed trait `21`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `22` extends js.Object
+  sealed trait `22`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `23` extends js.Object
+  sealed trait `23`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `24` extends js.Object
+  sealed trait `24`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `25` extends js.Object
+  sealed trait `25`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `26` extends js.Object
+  sealed trait `26`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DiagnosticSeverity
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DocumentHighlightKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocumentSaveReason
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.DiagnosticSeverity
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+       with vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.SymbolKind
   
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]

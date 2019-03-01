@@ -28,3 +28,32 @@ trait textToAudioOptions
   var vol: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object textToAudioOptions {
+  @scala.inline
+  def apply(
+    tex: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    ctp: java.lang.String | scala.Double = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    lan: java.lang.String = null,
+    per: java.lang.String = null,
+    pit: java.lang.String = null,
+    spd: java.lang.String = null,
+    success: js.Function1[/* res */ textToAudioResponse, scala.Unit] = null,
+    vol: java.lang.String = null
+  ): textToAudioOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tex")(tex)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (ctp != null) __obj.updateDynamic("ctp")(ctp.asInstanceOf[js.Any])
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (lan != null) __obj.updateDynamic("lan")(lan)
+    if (per != null) __obj.updateDynamic("per")(per)
+    if (pit != null) __obj.updateDynamic("pit")(pit)
+    if (spd != null) __obj.updateDynamic("spd")(spd)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (vol != null) __obj.updateDynamic("vol")(vol)
+    __obj.asInstanceOf[textToAudioOptions]
+  }
+}
+

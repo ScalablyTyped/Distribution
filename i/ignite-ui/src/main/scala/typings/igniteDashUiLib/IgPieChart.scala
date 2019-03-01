@@ -343,3 +343,133 @@ trait IgPieChart
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgPieChart {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igPieChart
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowSliceExplosion: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSliceSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    browserNotSupported: BrowserNotSupportedEvent = null,
+    brushes: js.Any = null,
+    dataLabel: java.lang.String = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    dataValue: java.lang.String = null,
+    explodedRadius: scala.Int | scala.Double = null,
+    explodedSlices: js.Array[_] = null,
+    formatLabel: js.Function = null,
+    height: java.lang.String | scala.Double = null,
+    labelClick: LabelClickEvent = null,
+    labelExtent: scala.Int | scala.Double = null,
+    labelInnerColor: java.lang.String = null,
+    labelMemberPath: java.lang.String = null,
+    labelOuterColor: java.lang.String = null,
+    labelsPosition: java.lang.String = null,
+    language: java.lang.String = null,
+    leaderLineMargin: scala.Int | scala.Double = null,
+    leaderLineType: java.lang.String = null,
+    leaderLineVisibility: java.lang.String = null,
+    legend: IgPieChartLegend = null,
+    legendItemBadgeTemplate: js.Any = null,
+    legendItemTemplate: js.Any = null,
+    legendLabelMemberPath: java.lang.String = null,
+    locale: js.Any = null,
+    othersCategoryStyle: js.Any = null,
+    othersCategoryText: java.lang.String = null,
+    othersCategoryThreshold: scala.Int | scala.Double = null,
+    othersCategoryType: java.lang.String = null,
+    outlines: js.Any = null,
+    radiusFactor: scala.Int | scala.Double = null,
+    regional: java.lang.String | js.Object = null,
+    responseDataKey: java.lang.String = null,
+    selectedItem: js.Any = null,
+    selectedItemChanged: SelectedItemChangedEvent = null,
+    selectedItemChanging: SelectedItemChangingEvent = null,
+    selectedItems: js.Array[_] = null,
+    selectedItemsChanged: SelectedItemsChangedEvent = null,
+    selectedItemsChanging: SelectedItemsChangingEvent = null,
+    selectedSlices: js.Array[_] = null,
+    selectedStyle: js.Any = null,
+    selectionMode: java.lang.String = null,
+    showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    sliceClick: SliceClickEvent = null,
+    startAngle: scala.Int | scala.Double = null,
+    sweepDirection: java.lang.String = null,
+    textStyle: java.lang.String = null,
+    theme: java.lang.String = null,
+    tooltipHidden: TooltipHiddenEvent = null,
+    tooltipHiding: TooltipHidingEvent = null,
+    tooltipShowing: TooltipShowingEvent = null,
+    tooltipShown: TooltipShownEvent = null,
+    tooltipTemplate: java.lang.String = null,
+    valueMemberPath: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): IgPieChart = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowSliceExplosion)) __obj.updateDynamic("allowSliceExplosion")(allowSliceExplosion)
+    if (!js.isUndefined(allowSliceSelection)) __obj.updateDynamic("allowSliceSelection")(allowSliceSelection)
+    if (browserNotSupported != null) __obj.updateDynamic("browserNotSupported")(browserNotSupported)
+    if (brushes != null) __obj.updateDynamic("brushes")(brushes)
+    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (dataValue != null) __obj.updateDynamic("dataValue")(dataValue)
+    if (explodedRadius != null) __obj.updateDynamic("explodedRadius")(explodedRadius.asInstanceOf[js.Any])
+    if (explodedSlices != null) __obj.updateDynamic("explodedSlices")(explodedSlices)
+    if (formatLabel != null) __obj.updateDynamic("formatLabel")(formatLabel)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (labelClick != null) __obj.updateDynamic("labelClick")(labelClick)
+    if (labelExtent != null) __obj.updateDynamic("labelExtent")(labelExtent.asInstanceOf[js.Any])
+    if (labelInnerColor != null) __obj.updateDynamic("labelInnerColor")(labelInnerColor)
+    if (labelMemberPath != null) __obj.updateDynamic("labelMemberPath")(labelMemberPath)
+    if (labelOuterColor != null) __obj.updateDynamic("labelOuterColor")(labelOuterColor)
+    if (labelsPosition != null) __obj.updateDynamic("labelsPosition")(labelsPosition)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (leaderLineMargin != null) __obj.updateDynamic("leaderLineMargin")(leaderLineMargin.asInstanceOf[js.Any])
+    if (leaderLineType != null) __obj.updateDynamic("leaderLineType")(leaderLineType)
+    if (leaderLineVisibility != null) __obj.updateDynamic("leaderLineVisibility")(leaderLineVisibility)
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (legendItemBadgeTemplate != null) __obj.updateDynamic("legendItemBadgeTemplate")(legendItemBadgeTemplate)
+    if (legendItemTemplate != null) __obj.updateDynamic("legendItemTemplate")(legendItemTemplate)
+    if (legendLabelMemberPath != null) __obj.updateDynamic("legendLabelMemberPath")(legendLabelMemberPath)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (othersCategoryStyle != null) __obj.updateDynamic("othersCategoryStyle")(othersCategoryStyle)
+    if (othersCategoryText != null) __obj.updateDynamic("othersCategoryText")(othersCategoryText)
+    if (othersCategoryThreshold != null) __obj.updateDynamic("othersCategoryThreshold")(othersCategoryThreshold.asInstanceOf[js.Any])
+    if (othersCategoryType != null) __obj.updateDynamic("othersCategoryType")(othersCategoryType)
+    if (outlines != null) __obj.updateDynamic("outlines")(outlines)
+    if (radiusFactor != null) __obj.updateDynamic("radiusFactor")(radiusFactor.asInstanceOf[js.Any])
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (selectedItem != null) __obj.updateDynamic("selectedItem")(selectedItem)
+    if (selectedItemChanged != null) __obj.updateDynamic("selectedItemChanged")(selectedItemChanged)
+    if (selectedItemChanging != null) __obj.updateDynamic("selectedItemChanging")(selectedItemChanging)
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
+    if (selectedItemsChanged != null) __obj.updateDynamic("selectedItemsChanged")(selectedItemsChanged)
+    if (selectedItemsChanging != null) __obj.updateDynamic("selectedItemsChanging")(selectedItemsChanging)
+    if (selectedSlices != null) __obj.updateDynamic("selectedSlices")(selectedSlices)
+    if (selectedStyle != null) __obj.updateDynamic("selectedStyle")(selectedStyle)
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
+    if (sliceClick != null) __obj.updateDynamic("sliceClick")(sliceClick)
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (sweepDirection != null) __obj.updateDynamic("sweepDirection")(sweepDirection)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (tooltipHidden != null) __obj.updateDynamic("tooltipHidden")(tooltipHidden)
+    if (tooltipHiding != null) __obj.updateDynamic("tooltipHiding")(tooltipHiding)
+    if (tooltipShowing != null) __obj.updateDynamic("tooltipShowing")(tooltipShowing)
+    if (tooltipShown != null) __obj.updateDynamic("tooltipShown")(tooltipShown)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (valueMemberPath != null) __obj.updateDynamic("valueMemberPath")(valueMemberPath)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgPieChart]
+  }
+}
+

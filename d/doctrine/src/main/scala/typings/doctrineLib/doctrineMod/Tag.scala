@@ -19,3 +19,24 @@ trait Tag extends js.Object {
   var `type`: js.UndefOr[Type | scala.Null] = js.undefined
 }
 
+object Tag {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    description: java.lang.String = null,
+    errors: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    `type`: Type = null
+  ): Tag = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Tag]
+  }
+}
+

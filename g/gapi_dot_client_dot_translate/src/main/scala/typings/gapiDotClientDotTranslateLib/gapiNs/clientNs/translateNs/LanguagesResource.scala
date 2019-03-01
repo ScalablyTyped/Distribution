@@ -18,3 +18,21 @@ trait LanguagesResource extends js.Object {
   def list(request: gapiDotClientDotTranslateLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[LanguagesListResponse]
 }
 
+object LanguagesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotTranslateLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LanguagesListResponse]
+    ],
+    language: java.lang.String = null,
+    name: java.lang.String = null
+  ): LanguagesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[LanguagesResource]
+  }
+}
+

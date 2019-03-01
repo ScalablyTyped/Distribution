@@ -11,3 +11,22 @@ trait Unfoldable2C[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L] extends js.Object 
   def unfoldr[A, B](b: B, f: js.Function1[/* b */ B, fpDashTsLib.libOptionMod.Option[js.Tuple2[A, B]]]): fpDashTsLib.libHKTMod.Type2[F, L, A]
 }
 
+object Unfoldable2C {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](
+    URI: F,
+    _L: L,
+    unfoldr: js.Function2[
+      js.Any, 
+      js.Function1[js.Any, fpDashTsLib.libOptionMod.Option[js.Tuple2[js.Any, js.Any]]], 
+      fpDashTsLib.libHKTMod.Type2[F, L, js.Any]
+    ]
+  ): Unfoldable2C[F, L] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("_L")(_L.asInstanceOf[js.Any])
+    __obj.updateDynamic("unfoldr")(unfoldr)
+    __obj.asInstanceOf[Unfoldable2C[F, L]]
+  }
+}
+

@@ -68,3 +68,38 @@ trait TransferConfig extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TransferConfig {
+  @scala.inline
+  def apply(
+    dataRefreshWindowDays: scala.Int | scala.Double = null,
+    dataSourceId: java.lang.String = null,
+    datasetRegion: java.lang.String = null,
+    destinationDatasetId: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    displayName: java.lang.String = null,
+    name: java.lang.String = null,
+    nextRunTime: java.lang.String = null,
+    params: stdLib.Record[java.lang.String, _] = null,
+    schedule: java.lang.String = null,
+    state: java.lang.String = null,
+    updateTime: java.lang.String = null,
+    userId: java.lang.String = null
+  ): TransferConfig = {
+    val __obj = js.Dynamic.literal()
+    if (dataRefreshWindowDays != null) __obj.updateDynamic("dataRefreshWindowDays")(dataRefreshWindowDays.asInstanceOf[js.Any])
+    if (dataSourceId != null) __obj.updateDynamic("dataSourceId")(dataSourceId)
+    if (datasetRegion != null) __obj.updateDynamic("datasetRegion")(datasetRegion)
+    if (destinationDatasetId != null) __obj.updateDynamic("destinationDatasetId")(destinationDatasetId)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nextRunTime != null) __obj.updateDynamic("nextRunTime")(nextRunTime)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (schedule != null) __obj.updateDynamic("schedule")(schedule)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[TransferConfig]
+  }
+}
+

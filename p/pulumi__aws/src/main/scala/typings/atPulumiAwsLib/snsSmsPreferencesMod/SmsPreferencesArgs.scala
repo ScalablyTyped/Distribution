@@ -32,3 +32,24 @@ trait SmsPreferencesArgs extends js.Object {
   val usageReportS3Bucket: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object SmsPreferencesArgs {
+  @scala.inline
+  def apply(
+    defaultSenderId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultSmsType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    deliveryStatusIamRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    deliveryStatusSuccessSamplingRate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    monthlySpendLimit: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    usageReportS3Bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): SmsPreferencesArgs = {
+    val __obj = js.Dynamic.literal()
+    if (defaultSenderId != null) __obj.updateDynamic("defaultSenderId")(defaultSenderId.asInstanceOf[js.Any])
+    if (defaultSmsType != null) __obj.updateDynamic("defaultSmsType")(defaultSmsType.asInstanceOf[js.Any])
+    if (deliveryStatusIamRoleArn != null) __obj.updateDynamic("deliveryStatusIamRoleArn")(deliveryStatusIamRoleArn.asInstanceOf[js.Any])
+    if (deliveryStatusSuccessSamplingRate != null) __obj.updateDynamic("deliveryStatusSuccessSamplingRate")(deliveryStatusSuccessSamplingRate.asInstanceOf[js.Any])
+    if (monthlySpendLimit != null) __obj.updateDynamic("monthlySpendLimit")(monthlySpendLimit.asInstanceOf[js.Any])
+    if (usageReportS3Bucket != null) __obj.updateDynamic("usageReportS3Bucket")(usageReportS3Bucket.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SmsPreferencesArgs]
+  }
+}
+

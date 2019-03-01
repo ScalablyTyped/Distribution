@@ -41,3 +41,28 @@ trait Anon_Colors extends js.Object {
   var pattern: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Colors {
+  @scala.inline
+  def apply(
+    colors: Anon_Label = null,
+    exclude: js.Any = null,
+    include: js.Any = null,
+    label: js.UndefOr[scala.Boolean] = js.undefined,
+    labelPrefix: java.lang.String = null,
+    labelSuffix: java.lang.String = null,
+    metadata: js.Any = null,
+    pattern: java.lang.String = null
+  ): Anon_Colors = {
+    val __obj = js.Dynamic.literal()
+    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (!js.isUndefined(label)) __obj.updateDynamic("label")(label)
+    if (labelPrefix != null) __obj.updateDynamic("labelPrefix")(labelPrefix)
+    if (labelSuffix != null) __obj.updateDynamic("labelSuffix")(labelSuffix)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    __obj.asInstanceOf[Anon_Colors]
+  }
+}
+

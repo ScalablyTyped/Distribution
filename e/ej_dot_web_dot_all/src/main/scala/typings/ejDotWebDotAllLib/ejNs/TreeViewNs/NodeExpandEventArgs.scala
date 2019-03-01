@@ -35,3 +35,30 @@ trait NodeExpandEventArgs extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeExpandEventArgs {
+  @scala.inline
+  def apply(
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentElement: js.Any = null,
+    id: java.lang.String = null,
+    isChildLoaded: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    parentId: java.lang.String = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): NodeExpandEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isChildLoaded)) __obj.updateDynamic("isChildLoaded")(isChildLoaded)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[NodeExpandEventArgs]
+  }
+}
+

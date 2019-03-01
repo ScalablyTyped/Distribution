@@ -7,43 +7,62 @@ import scala.scalajs.js.annotation._
 
 object menubarLibStrings {
   @js.native
-  sealed trait bottomCenter extends js.Object
+  sealed trait bottomCenter
+    extends menubarLib.MenubarNs.Position
   
   @js.native
-  sealed trait bottomLeft extends js.Object
+  sealed trait bottomLeft
+    extends menubarLib.MenubarNs.Position
   
   @js.native
-  sealed trait bottomRight extends js.Object
+  sealed trait bottomRight
+    extends menubarLib.MenubarNs.Position
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends menubarLib.MenubarNs.Position
   
   @js.native
-  sealed trait topCenter extends js.Object
+  sealed trait topCenter
+    extends menubarLib.MenubarNs.Position
   
   @js.native
-  sealed trait topLeft extends js.Object
+  sealed trait topLeft
+    extends menubarLib.MenubarNs.Position
   
   @js.native
-  sealed trait topRight extends js.Object
+  sealed trait topRight
+    extends menubarLib.MenubarNs.Position
   
   @js.native
-  sealed trait trayBottomCenter extends js.Object
+  sealed trait trayBottomCenter
+    extends menubarLib.MenubarNs.Position
+       with menubarLib.MenubarNs.TrayBounds
   
   @js.native
-  sealed trait trayBottomLeft extends js.Object
+  sealed trait trayBottomLeft
+    extends menubarLib.MenubarNs.Position
+       with menubarLib.MenubarNs.TrayBounds
   
   @js.native
-  sealed trait trayBottomRight extends js.Object
+  sealed trait trayBottomRight
+    extends menubarLib.MenubarNs.Position
+       with menubarLib.MenubarNs.TrayBounds
   
   @js.native
-  sealed trait trayCenter extends js.Object
+  sealed trait trayCenter
+    extends menubarLib.MenubarNs.Position
+       with menubarLib.MenubarNs.TrayBounds
   
   @js.native
-  sealed trait trayLeft extends js.Object
+  sealed trait trayLeft
+    extends menubarLib.MenubarNs.Position
+       with menubarLib.MenubarNs.TrayBounds
   
   @js.native
-  sealed trait trayRight extends js.Object
+  sealed trait trayRight
+    extends menubarLib.MenubarNs.Position
+       with menubarLib.MenubarNs.TrayBounds
   
   @scala.inline
   def bottomCenter: bottomCenter = "bottomCenter".asInstanceOf[bottomCenter]

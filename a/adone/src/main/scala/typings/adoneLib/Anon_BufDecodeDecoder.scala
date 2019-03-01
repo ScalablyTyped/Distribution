@@ -45,3 +45,39 @@ trait Anon_BufDecodeDecoder extends js.Object {
   def tryDecode(buf: adoneLib.adoneNs.collectionNs.ByteArray): js.Any
 }
 
+object Anon_BufDecodeDecoder {
+  @scala.inline
+  def apply(
+    Decoder: org.scalablytyped.runtime.Instantiable1[
+      /* decodingTypes */ js.Array[adoneLib.adoneNs.dataNs.mpakNs.INs.DecodingType], 
+      adoneLib.adoneNs.dataNs.mpakNs.Decoder
+    ],
+    Encoder: org.scalablytyped.runtime.Instantiable1[
+      /* encodingTypes */ js.Array[adoneLib.adoneNs.dataNs.mpakNs.INs.EncodingType], 
+      adoneLib.adoneNs.dataNs.mpakNs.Encoder
+    ],
+    INs: js.Any,
+    Serializer: org.scalablytyped.runtime.Instantiable1[
+      /* initialCapacity */ js.UndefOr[/* initialCapacity */ scala.Double], 
+      adoneLib.adoneNs.dataNs.mpakNs.Serializer
+    ],
+    decode: js.Function1[adoneLib.adoneNs.collectionNs.INs.ByteArrayNs.Wrappable, js.Any],
+    encode: js.Function1[js.Any, nodeLib.Buffer],
+    registerCommonTypesFor: js.Function1[adoneLib.adoneNs.dataNs.mpakNs.Serializer, scala.Unit],
+    serializer: adoneLib.adoneNs.dataNs.mpakNs.Serializer,
+    tryDecode: js.Function1[adoneLib.adoneNs.collectionNs.ByteArray, js.Any]
+  ): Anon_BufDecodeDecoder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Decoder")(Decoder)
+    __obj.updateDynamic("Encoder")(Encoder)
+    __obj.updateDynamic("INs")(INs)
+    __obj.updateDynamic("Serializer")(Serializer)
+    __obj.updateDynamic("decode")(decode)
+    __obj.updateDynamic("encode")(encode)
+    __obj.updateDynamic("registerCommonTypesFor")(registerCommonTypesFor)
+    __obj.updateDynamic("serializer")(serializer)
+    __obj.updateDynamic("tryDecode")(tryDecode)
+    __obj.asInstanceOf[Anon_BufDecodeDecoder]
+  }
+}
+

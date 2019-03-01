@@ -20,3 +20,14 @@ trait UnitPrice extends js.Object {
   var scale: scala.Double
 }
 
+object UnitPrice {
+  @scala.inline
+  def apply(amount: java.lang.String, currency: java.lang.String, scale: scala.Double): UnitPrice = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("scale")(scale)
+    __obj.asInstanceOf[UnitPrice]
+  }
+}
+

@@ -24,3 +24,18 @@ trait PublishOptions extends js.Object {
   var persist: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PublishOptions {
+  @scala.inline
+  def apply(
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
+    persist: js.UndefOr[scala.Boolean] = js.undefined
+  ): PublishOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    __obj.asInstanceOf[PublishOptions]
+  }
+}
+

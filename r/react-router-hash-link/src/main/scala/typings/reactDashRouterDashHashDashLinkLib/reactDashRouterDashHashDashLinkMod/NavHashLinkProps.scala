@@ -12,3 +12,16 @@ import scala.scalajs.js.annotation._
   var smooth: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NavHashLinkProps {
+  @scala.inline
+  def apply(
+    HashLinkProps: HashLinkProps = null,
+    NavLinkProps: reactDashRouterDashDomLib.reactDashRouterDashDomMod.NavLinkProps = null
+  ): NavHashLinkProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HashLinkProps)
+    js.Dynamic.global.Object.assign(__obj, NavLinkProps)
+    __obj.asInstanceOf[NavHashLinkProps]
+  }
+}
+

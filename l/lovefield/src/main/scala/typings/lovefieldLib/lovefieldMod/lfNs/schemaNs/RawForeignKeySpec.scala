@@ -12,3 +12,20 @@ trait RawForeignKeySpec extends js.Object {
   var timing: js.UndefOr[lovefieldLib.lovefieldMod.lfNs.ConstraintTiming] = js.undefined
 }
 
+object RawForeignKeySpec {
+  @scala.inline
+  def apply(
+    local: java.lang.String,
+    ref: java.lang.String,
+    action: lovefieldLib.lovefieldMod.lfNs.ConstraintAction = null,
+    timing: lovefieldLib.lovefieldMod.lfNs.ConstraintTiming = null
+  ): RawForeignKeySpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("local")(local)
+    __obj.updateDynamic("ref")(ref)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (timing != null) __obj.updateDynamic("timing")(timing)
+    __obj.asInstanceOf[RawForeignKeySpec]
+  }
+}
+

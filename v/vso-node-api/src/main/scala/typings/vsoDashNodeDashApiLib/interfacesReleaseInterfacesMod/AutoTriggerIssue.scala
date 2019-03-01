@@ -13,3 +13,22 @@ trait AutoTriggerIssue extends js.Object {
   var releaseTriggerType: ReleaseTriggerType
 }
 
+object AutoTriggerIssue {
+  @scala.inline
+  def apply(
+    issue: Issue,
+    issueSource: IssueSource,
+    project: ProjectReference,
+    releaseDefinitionReference: ReleaseDefinitionShallowReference,
+    releaseTriggerType: ReleaseTriggerType
+  ): AutoTriggerIssue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("issue")(issue)
+    __obj.updateDynamic("issueSource")(issueSource)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("releaseDefinitionReference")(releaseDefinitionReference)
+    __obj.updateDynamic("releaseTriggerType")(releaseTriggerType)
+    __obj.asInstanceOf[AutoTriggerIssue]
+  }
+}
+

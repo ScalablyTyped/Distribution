@@ -86,3 +86,34 @@ trait TableRowCollectionLoadOptions extends js.Object {
   var verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableRowCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    cellCount: js.UndefOr[scala.Boolean] = js.undefined,
+    font: FontLoadOptions = null,
+    horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    isHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    parentTable: TableLoadOptions = null,
+    preferredHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    rowIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    shadingColor: js.UndefOr[scala.Boolean] = js.undefined,
+    values: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableRowCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(cellCount)) __obj.updateDynamic("cellCount")(cellCount)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (!js.isUndefined(isHeader)) __obj.updateDynamic("isHeader")(isHeader)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (!js.isUndefined(preferredHeight)) __obj.updateDynamic("preferredHeight")(preferredHeight)
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex)
+    if (!js.isUndefined(shadingColor)) __obj.updateDynamic("shadingColor")(shadingColor)
+    if (!js.isUndefined(values)) __obj.updateDynamic("values")(values)
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    __obj.asInstanceOf[TableRowCollectionLoadOptions]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Structural Definition
   */
-trait StructureDefinition extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait StructureDefinition extends DomainResource {
   /**
     * Contains extended information for property 'abstract'.
     */
@@ -201,5 +202,134 @@ trait StructureDefinition extends DomainResource {
     * Business version of the structure definition
     */
   var version: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object StructureDefinition {
+  @scala.inline
+  def apply(
+    `abstract`: scala.Boolean,
+    kind: code,
+    name: java.lang.String,
+    status: code,
+    `type`: code,
+    url: uri,
+    _abstract: Element = null,
+    _baseDefinition: Element = null,
+    _context: js.Array[Element] = null,
+    _contextInvariant: js.Array[Element] = null,
+    _contextType: Element = null,
+    _copyright: Element = null,
+    _date: Element = null,
+    _derivation: Element = null,
+    _description: Element = null,
+    _experimental: Element = null,
+    _fhirVersion: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _kind: Element = null,
+    _language: Element = null,
+    _name: Element = null,
+    _publisher: Element = null,
+    _purpose: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    _title: Element = null,
+    _type: Element = null,
+    _url: Element = null,
+    _version: Element = null,
+    baseDefinition: uri = null,
+    contact: js.Array[ContactDetail] = null,
+    contained: js.Array[Resource] = null,
+    context: js.Array[java.lang.String] = null,
+    contextInvariant: js.Array[java.lang.String] = null,
+    contextType: code = null,
+    copyright: markdown = null,
+    date: dateTime = null,
+    derivation: code = null,
+    description: markdown = null,
+    differential: StructureDefinitionDifferential = null,
+    experimental: js.UndefOr[scala.Boolean] = js.undefined,
+    extension: js.Array[Extension] = null,
+    fhirVersion: id = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    jurisdiction: js.Array[CodeableConcept] = null,
+    keyword: js.Array[Coding] = null,
+    language: code = null,
+    mapping: js.Array[StructureDefinitionMapping] = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    publisher: java.lang.String = null,
+    purpose: markdown = null,
+    resourceType: code = null,
+    snapshot: StructureDefinitionSnapshot = null,
+    text: Narrative = null,
+    title: java.lang.String = null,
+    useContext: js.Array[UsageContext] = null,
+    version: java.lang.String = null
+  ): StructureDefinition = {
+    val __obj = js.Dynamic.literal(`abstract` = `abstract`, `type` = `type`)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("url")(url)
+    if (_abstract != null) __obj.updateDynamic("_abstract")(_abstract)
+    if (_baseDefinition != null) __obj.updateDynamic("_baseDefinition")(_baseDefinition)
+    if (_context != null) __obj.updateDynamic("_context")(_context)
+    if (_contextInvariant != null) __obj.updateDynamic("_contextInvariant")(_contextInvariant)
+    if (_contextType != null) __obj.updateDynamic("_contextType")(_contextType)
+    if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_derivation != null) __obj.updateDynamic("_derivation")(_derivation)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental)
+    if (_fhirVersion != null) __obj.updateDynamic("_fhirVersion")(_fhirVersion)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_kind != null) __obj.updateDynamic("_kind")(_kind)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher)
+    if (_purpose != null) __obj.updateDynamic("_purpose")(_purpose)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_title != null) __obj.updateDynamic("_title")(_title)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (_url != null) __obj.updateDynamic("_url")(_url)
+    if (_version != null) __obj.updateDynamic("_version")(_version)
+    if (baseDefinition != null) __obj.updateDynamic("baseDefinition")(baseDefinition)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (contextInvariant != null) __obj.updateDynamic("contextInvariant")(contextInvariant)
+    if (contextType != null) __obj.updateDynamic("contextType")(contextType)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (derivation != null) __obj.updateDynamic("derivation")(derivation)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (differential != null) __obj.updateDynamic("differential")(differential)
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhirVersion != null) __obj.updateDynamic("fhirVersion")(fhirVersion)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
+    if (keyword != null) __obj.updateDynamic("keyword")(keyword)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (mapping != null) __obj.updateDynamic("mapping")(mapping)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (snapshot != null) __obj.updateDynamic("snapshot")(snapshot)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (useContext != null) __obj.updateDynamic("useContext")(useContext)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[StructureDefinition]
+  }
 }
 

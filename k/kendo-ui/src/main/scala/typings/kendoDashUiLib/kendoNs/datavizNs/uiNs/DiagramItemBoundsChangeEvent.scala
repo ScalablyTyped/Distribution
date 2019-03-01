@@ -10,3 +10,22 @@ trait DiagramItemBoundsChangeEvent extends DiagramEvent {
   var item: js.UndefOr[kendoDashUiLib.kendoNs.datavizNs.diagramNs.Shape] = js.undefined
 }
 
+object DiagramItemBoundsChangeEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Diagram,
+    bounds: kendoDashUiLib.kendoNs.datavizNs.diagramNs.Rect = null,
+    item: kendoDashUiLib.kendoNs.datavizNs.diagramNs.Shape = null
+  ): DiagramItemBoundsChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (item != null) __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[DiagramItemBoundsChangeEvent]
+  }
+}
+

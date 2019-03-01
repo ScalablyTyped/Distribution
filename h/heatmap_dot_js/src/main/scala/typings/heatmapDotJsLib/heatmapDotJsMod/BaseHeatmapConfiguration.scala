@@ -64,3 +64,34 @@ trait BaseHeatmapConfiguration[V /* <: java.lang.String */] extends js.Object {
   var valueField: js.UndefOr[V] = js.undefined
 }
 
+object BaseHeatmapConfiguration {
+  @scala.inline
+  def apply[V /* <: java.lang.String */](
+    backgroundColor: java.lang.String = null,
+    blur: scala.Int | scala.Double = null,
+    gradient: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    maxOpacity: scala.Int | scala.Double = null,
+    minOpacity: scala.Int | scala.Double = null,
+    onExtremaChange: js.Function0[scala.Unit] = null,
+    opacity: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null,
+    scaleRadius: js.UndefOr[scala.Boolean] = js.undefined,
+    useLocalExtrema: js.UndefOr[scala.Boolean] = js.undefined,
+    valueField: V = null
+  ): BaseHeatmapConfiguration[V] = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (blur != null) __obj.updateDynamic("blur")(blur.asInstanceOf[js.Any])
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (maxOpacity != null) __obj.updateDynamic("maxOpacity")(maxOpacity.asInstanceOf[js.Any])
+    if (minOpacity != null) __obj.updateDynamic("minOpacity")(minOpacity.asInstanceOf[js.Any])
+    if (onExtremaChange != null) __obj.updateDynamic("onExtremaChange")(onExtremaChange)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(scaleRadius)) __obj.updateDynamic("scaleRadius")(scaleRadius)
+    if (!js.isUndefined(useLocalExtrema)) __obj.updateDynamic("useLocalExtrema")(useLocalExtrema)
+    if (valueField != null) __obj.updateDynamic("valueField")(valueField.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BaseHeatmapConfiguration[V]]
+  }
+}
+

@@ -17,3 +17,13 @@ trait GooglePrivacyDlpV2beta1ReplaceConfig extends js.Object {
   var replaceWith: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1ReplaceConfig {
+  @scala.inline
+  def apply(infoType: GooglePrivacyDlpV2beta1InfoType = null, replaceWith: java.lang.String = null): GooglePrivacyDlpV2beta1ReplaceConfig = {
+    val __obj = js.Dynamic.literal()
+    if (infoType != null) __obj.updateDynamic("infoType")(infoType)
+    if (replaceWith != null) __obj.updateDynamic("replaceWith")(replaceWith)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1ReplaceConfig]
+  }
+}
+

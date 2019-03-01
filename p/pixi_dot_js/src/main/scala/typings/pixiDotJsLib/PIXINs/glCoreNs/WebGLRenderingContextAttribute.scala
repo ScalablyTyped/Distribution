@@ -14,3 +14,23 @@ trait WebGLRenderingContextAttribute extends js.Object {
   var `type`: scala.Double
 }
 
+object WebGLRenderingContextAttribute {
+  @scala.inline
+  def apply(
+    attribute: js.Any,
+    buffer: stdLib.WebGLBuffer,
+    normalized: scala.Boolean,
+    start: scala.Double,
+    stride: scala.Double,
+    `type`: scala.Double
+  ): WebGLRenderingContextAttribute = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("attribute")(attribute)
+    __obj.updateDynamic("buffer")(buffer)
+    __obj.updateDynamic("normalized")(normalized)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stride")(stride)
+    __obj.asInstanceOf[WebGLRenderingContextAttribute]
+  }
+}
+

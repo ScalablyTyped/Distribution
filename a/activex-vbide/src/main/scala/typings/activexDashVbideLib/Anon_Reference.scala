@@ -9,3 +9,12 @@ trait Anon_Reference extends js.Object {
   val Reference: activexDashVbideLib.VBIDENs.Reference
 }
 
+object Anon_Reference {
+  @scala.inline
+  def apply(Reference: activexDashVbideLib.VBIDENs.Reference): Anon_Reference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Reference")(Reference)
+    __obj.asInstanceOf[Anon_Reference]
+  }
+}
+

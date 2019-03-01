@@ -12,3 +12,13 @@ trait FunctionCall extends js.Object {
   var function: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FunctionCall {
+  @scala.inline
+  def apply(args: js.Array[_] = null, function: java.lang.String = null): FunctionCall = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (function != null) __obj.updateDynamic("function")(function)
+    __obj.asInstanceOf[FunctionCall]
+  }
+}
+

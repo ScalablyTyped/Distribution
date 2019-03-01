@@ -14,3 +14,18 @@ trait Anon_AcsTokenLink extends js.Object {
   var isAvailable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_AcsTokenLink {
+  @scala.inline
+  def apply(
+    acsTokenLink: java.lang.String = null,
+    downloadLink: java.lang.String = null,
+    isAvailable: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AcsTokenLink = {
+    val __obj = js.Dynamic.literal()
+    if (acsTokenLink != null) __obj.updateDynamic("acsTokenLink")(acsTokenLink)
+    if (downloadLink != null) __obj.updateDynamic("downloadLink")(downloadLink)
+    if (!js.isUndefined(isAvailable)) __obj.updateDynamic("isAvailable")(isAvailable)
+    __obj.asInstanceOf[Anon_AcsTokenLink]
+  }
+}
+

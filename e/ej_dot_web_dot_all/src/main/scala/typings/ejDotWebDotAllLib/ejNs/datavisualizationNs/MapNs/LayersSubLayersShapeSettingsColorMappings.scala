@@ -16,3 +16,16 @@ trait LayersSubLayersShapeSettingsColorMappings extends js.Object {
   var rangeColorMapping: js.UndefOr[js.Array[LayersSubLayersShapeSettingsColorMappingsRangeColorMapping]] = js.undefined
 }
 
+object LayersSubLayersShapeSettingsColorMappings {
+  @scala.inline
+  def apply(
+    equalColorMapping: js.Array[LayersSubLayersShapeSettingsColorMappingsEqualColorMapping] = null,
+    rangeColorMapping: js.Array[LayersSubLayersShapeSettingsColorMappingsRangeColorMapping] = null
+  ): LayersSubLayersShapeSettingsColorMappings = {
+    val __obj = js.Dynamic.literal()
+    if (equalColorMapping != null) __obj.updateDynamic("equalColorMapping")(equalColorMapping)
+    if (rangeColorMapping != null) __obj.updateDynamic("rangeColorMapping")(rangeColorMapping)
+    __obj.asInstanceOf[LayersSubLayersShapeSettingsColorMappings]
+  }
+}
+

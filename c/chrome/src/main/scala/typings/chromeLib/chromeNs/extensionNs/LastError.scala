@@ -10,3 +10,12 @@ trait LastError extends js.Object {
   var message: java.lang.String
 }
 
+object LastError {
+  @scala.inline
+  def apply(message: java.lang.String): LastError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[LastError]
+  }
+}
+

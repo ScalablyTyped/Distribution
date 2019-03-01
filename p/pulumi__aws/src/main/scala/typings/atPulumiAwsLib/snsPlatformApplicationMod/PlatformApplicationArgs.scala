@@ -52,3 +52,34 @@ trait PlatformApplicationArgs extends js.Object {
   val successFeedbackSampleRate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object PlatformApplicationArgs {
+  @scala.inline
+  def apply(
+    platform: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    platformCredential: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    eventDeliveryFailureTopicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    eventEndpointCreatedTopicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    eventEndpointDeletedTopicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    eventEndpointUpdatedTopicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    failureFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    platformPrincipal: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    successFeedbackRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    successFeedbackSampleRate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): PlatformApplicationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("platform")(platform.asInstanceOf[js.Any])
+    __obj.updateDynamic("platformCredential")(platformCredential.asInstanceOf[js.Any])
+    if (eventDeliveryFailureTopicArn != null) __obj.updateDynamic("eventDeliveryFailureTopicArn")(eventDeliveryFailureTopicArn.asInstanceOf[js.Any])
+    if (eventEndpointCreatedTopicArn != null) __obj.updateDynamic("eventEndpointCreatedTopicArn")(eventEndpointCreatedTopicArn.asInstanceOf[js.Any])
+    if (eventEndpointDeletedTopicArn != null) __obj.updateDynamic("eventEndpointDeletedTopicArn")(eventEndpointDeletedTopicArn.asInstanceOf[js.Any])
+    if (eventEndpointUpdatedTopicArn != null) __obj.updateDynamic("eventEndpointUpdatedTopicArn")(eventEndpointUpdatedTopicArn.asInstanceOf[js.Any])
+    if (failureFeedbackRoleArn != null) __obj.updateDynamic("failureFeedbackRoleArn")(failureFeedbackRoleArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (platformPrincipal != null) __obj.updateDynamic("platformPrincipal")(platformPrincipal.asInstanceOf[js.Any])
+    if (successFeedbackRoleArn != null) __obj.updateDynamic("successFeedbackRoleArn")(successFeedbackRoleArn.asInstanceOf[js.Any])
+    if (successFeedbackSampleRate != null) __obj.updateDynamic("successFeedbackSampleRate")(successFeedbackSampleRate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlatformApplicationArgs]
+  }
+}
+

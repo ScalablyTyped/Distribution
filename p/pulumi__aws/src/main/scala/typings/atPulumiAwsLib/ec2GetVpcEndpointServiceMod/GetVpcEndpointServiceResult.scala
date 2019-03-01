@@ -41,3 +41,30 @@ trait GetVpcEndpointServiceResult extends js.Object {
   val vpcEndpointPolicySupported: scala.Boolean
 }
 
+object GetVpcEndpointServiceResult {
+  @scala.inline
+  def apply(
+    acceptanceRequired: scala.Boolean,
+    availabilityZones: js.Array[java.lang.String],
+    baseEndpointDnsNames: js.Array[java.lang.String],
+    id: java.lang.String,
+    owner: java.lang.String,
+    privateDnsName: java.lang.String,
+    serviceName: java.lang.String,
+    serviceType: java.lang.String,
+    vpcEndpointPolicySupported: scala.Boolean
+  ): GetVpcEndpointServiceResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acceptanceRequired")(acceptanceRequired)
+    __obj.updateDynamic("availabilityZones")(availabilityZones)
+    __obj.updateDynamic("baseEndpointDnsNames")(baseEndpointDnsNames)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("owner")(owner)
+    __obj.updateDynamic("privateDnsName")(privateDnsName)
+    __obj.updateDynamic("serviceName")(serviceName)
+    __obj.updateDynamic("serviceType")(serviceType)
+    __obj.updateDynamic("vpcEndpointPolicySupported")(vpcEndpointPolicySupported)
+    __obj.asInstanceOf[GetVpcEndpointServiceResult]
+  }
+}
+

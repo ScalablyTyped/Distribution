@@ -63,3 +63,34 @@ trait ConnectOptions extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConnectOptions {
+  @scala.inline
+  def apply(
+    allowAppendedStyleInjection: js.UndefOr[scala.Boolean] = js.undefined,
+    allowStyleInjection: js.UndefOr[scala.Boolean] = js.undefined,
+    container: java.lang.String = null,
+    cookieFallbackAfterMsg: java.lang.String = null,
+    cookieFallbackLinkMsg: java.lang.String = null,
+    cookieFallbackMsg: java.lang.String = null,
+    onConnect: js.Function1[/* data */ js.Any, scala.Unit] = null,
+    onUpdate: js.Function1[/* data */ js.Any, scala.Unit] = null,
+    requireCookies: js.UndefOr[scala.Boolean] = js.undefined,
+    update: scala.Int | scala.Double = null,
+    url: java.lang.String = null
+  ): ConnectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowAppendedStyleInjection)) __obj.updateDynamic("allowAppendedStyleInjection")(allowAppendedStyleInjection)
+    if (!js.isUndefined(allowStyleInjection)) __obj.updateDynamic("allowStyleInjection")(allowStyleInjection)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (cookieFallbackAfterMsg != null) __obj.updateDynamic("cookieFallbackAfterMsg")(cookieFallbackAfterMsg)
+    if (cookieFallbackLinkMsg != null) __obj.updateDynamic("cookieFallbackLinkMsg")(cookieFallbackLinkMsg)
+    if (cookieFallbackMsg != null) __obj.updateDynamic("cookieFallbackMsg")(cookieFallbackMsg)
+    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (!js.isUndefined(requireCookies)) __obj.updateDynamic("requireCookies")(requireCookies)
+    if (update != null) __obj.updateDynamic("update")(update.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ConnectOptions]
+  }
+}
+

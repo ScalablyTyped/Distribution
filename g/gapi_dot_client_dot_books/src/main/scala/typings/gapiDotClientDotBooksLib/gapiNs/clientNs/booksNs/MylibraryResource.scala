@@ -11,3 +11,18 @@ trait MylibraryResource extends js.Object {
   var readingpositions: ReadingpositionsResource
 }
 
+object MylibraryResource {
+  @scala.inline
+  def apply(
+    annotations: AnnotationsResource,
+    bookshelves: BookshelvesResource,
+    readingpositions: ReadingpositionsResource
+  ): MylibraryResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotations")(annotations)
+    __obj.updateDynamic("bookshelves")(bookshelves)
+    __obj.updateDynamic("readingpositions")(readingpositions)
+    __obj.asInstanceOf[MylibraryResource]
+  }
+}
+

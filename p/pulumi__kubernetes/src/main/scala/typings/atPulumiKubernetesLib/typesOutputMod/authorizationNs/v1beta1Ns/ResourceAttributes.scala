@@ -45,3 +45,26 @@ trait ResourceAttributes extends js.Object {
   val version: java.lang.String
 }
 
+object ResourceAttributes {
+  @scala.inline
+  def apply(
+    group: java.lang.String,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    resource: java.lang.String,
+    subresource: java.lang.String,
+    verb: java.lang.String,
+    version: java.lang.String
+  ): ResourceAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("resource")(resource)
+    __obj.updateDynamic("subresource")(subresource)
+    __obj.updateDynamic("verb")(verb)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[ResourceAttributes]
+  }
+}
+

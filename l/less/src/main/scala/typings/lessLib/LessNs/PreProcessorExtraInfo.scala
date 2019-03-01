@@ -11,3 +11,18 @@ trait PreProcessorExtraInfo extends js.Object {
   var imports: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object PreProcessorExtraInfo {
+  @scala.inline
+  def apply(
+    context: lessLib.Anon_PluginManager,
+    fileInfo: RootFileInfo,
+    imports: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): PreProcessorExtraInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("fileInfo")(fileInfo)
+    __obj.updateDynamic("imports")(imports)
+    __obj.asInstanceOf[PreProcessorExtraInfo]
+  }
+}
+

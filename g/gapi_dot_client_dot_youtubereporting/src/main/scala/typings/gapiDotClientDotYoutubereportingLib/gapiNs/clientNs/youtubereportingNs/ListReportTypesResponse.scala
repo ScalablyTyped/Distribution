@@ -18,3 +18,13 @@ trait ListReportTypesResponse extends js.Object {
   var reportTypes: js.UndefOr[js.Array[ReportType]] = js.undefined
 }
 
+object ListReportTypesResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, reportTypes: js.Array[ReportType] = null): ListReportTypesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (reportTypes != null) __obj.updateDynamic("reportTypes")(reportTypes)
+    __obj.asInstanceOf[ListReportTypesResponse]
+  }
+}
+

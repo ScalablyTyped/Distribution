@@ -20,3 +20,18 @@ trait ColumnsConstraints extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColumnsConstraints {
+  @scala.inline
+  def apply(
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): ColumnsConstraints = {
+    val __obj = js.Dynamic.literal()
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ColumnsConstraints]
+  }
+}
+

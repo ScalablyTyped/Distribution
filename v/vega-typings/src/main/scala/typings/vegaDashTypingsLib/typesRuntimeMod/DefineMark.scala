@@ -12,3 +12,20 @@ trait DefineMark[T /* <: java.lang.String */, I, R /* <: java.lang.String */] ex
   var role: vegaDashTypingsLib.vegaDashTypingsLibStrings.mark | R
 }
 
+object DefineMark {
+  @scala.inline
+  def apply[T /* <: java.lang.String */, I, R /* <: java.lang.String */](
+    group: js.Any,
+    items: js.Array[Item[I]],
+    marktype: T,
+    role: vegaDashTypingsLib.vegaDashTypingsLibStrings.mark | R
+  ): DefineMark[T, I, R] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("marktype")(marktype.asInstanceOf[js.Any])
+    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefineMark[T, I, R]]
+  }
+}
+

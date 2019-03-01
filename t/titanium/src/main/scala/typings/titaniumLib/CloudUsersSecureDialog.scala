@@ -15,3 +15,12 @@ trait CloudUsersSecureDialog extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CloudUsersSecureDialog {
+  @scala.inline
+  def apply(title: java.lang.String = null): CloudUsersSecureDialog = {
+    val __obj = js.Dynamic.literal()
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[CloudUsersSecureDialog]
+  }
+}
+

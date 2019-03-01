@@ -12,3 +12,12 @@ trait Navigator extends js.Object {
   var camera: Camera
 }
 
+object Navigator {
+  @scala.inline
+  def apply(camera: Camera): Navigator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("camera")(camera)
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

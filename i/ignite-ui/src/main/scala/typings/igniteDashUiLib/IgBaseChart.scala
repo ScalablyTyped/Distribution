@@ -88,3 +88,43 @@ trait IgBaseChart
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgBaseChart {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igBaseChart
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    dataBinding: DataBindingEvent = null,
+    dataBound: DataBoundEvent = null,
+    dataSource: js.Any = null,
+    dataSourceType: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    hideTooltip: HideTooltipEvent = null,
+    maxRecCount: scala.Int | scala.Double = null,
+    responseDataKey: java.lang.String = null,
+    responseTotalRecCountKey: java.lang.String = null,
+    tooltipTemplate: java.lang.String = null,
+    updateTooltip: UpdateTooltipEvent = null,
+    width: scala.Int | scala.Double = null
+  ): IgBaseChart = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hideTooltip != null) __obj.updateDynamic("hideTooltip")(hideTooltip)
+    if (maxRecCount != null) __obj.updateDynamic("maxRecCount")(maxRecCount.asInstanceOf[js.Any])
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (updateTooltip != null) __obj.updateDynamic("updateTooltip")(updateTooltip)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgBaseChart]
+  }
+}
+

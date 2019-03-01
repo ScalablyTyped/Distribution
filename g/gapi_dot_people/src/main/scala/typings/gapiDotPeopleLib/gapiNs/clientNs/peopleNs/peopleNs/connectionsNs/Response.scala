@@ -11,3 +11,18 @@ trait Response extends js.Object {
   var nextSyncToken: java.lang.String
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    connections: js.Array[gapiDotPeopleLib.gapiNs.clientNs.peopleNs.Person],
+    nextPageToken: java.lang.String,
+    nextSyncToken: java.lang.String
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connections")(connections)
+    __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.updateDynamic("nextSyncToken")(nextSyncToken)
+    __obj.asInstanceOf[Response]
+  }
+}
+

@@ -206,3 +206,93 @@ trait IgScroll
   var wheelStep: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgScroll {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igScroll
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    alwaysVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    bigIncrementStep: scala.Int | scala.Double = null,
+    inertiaDeltaX: scala.Int | scala.Double = null,
+    inertiaDeltaY: scala.Int | scala.Double = null,
+    inertiaDuration: scala.Int | scala.Double = null,
+    inertiaStep: scala.Int | scala.Double = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    minThumbSize: scala.Double | java.lang.String = null,
+    modifyDOM: js.UndefOr[scala.Boolean] = js.undefined,
+    regional: java.lang.String | js.Object = null,
+    rendered: RenderedEvent = null,
+    resized: ResizedEvent = null,
+    resizing: ResizingEvent = null,
+    scrollHeight: scala.Int | scala.Double = null,
+    scrollLeft: scala.Int | scala.Double = null,
+    scrollOnlyHBar: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollOnlyVBar: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollTop: scala.Int | scala.Double = null,
+    scrollWidth: scala.Int | scala.Double = null,
+    scrollbarH: java.lang.String = null,
+    scrollbarHParent: java.lang.String = null,
+    scrollbarType: java.lang.String = null,
+    scrollbarV: java.lang.String = null,
+    scrollbarVParent: java.lang.String = null,
+    scrolled: ScrolledEvent = null,
+    scrolling: ScrollingEvent = null,
+    smallIncrementStep: scala.Int | scala.Double = null,
+    smoothing: js.UndefOr[scala.Boolean] = js.undefined,
+    smoothingDuration: scala.Int | scala.Double = null,
+    smoothingStep: scala.Int | scala.Double = null,
+    swipeToleranceX: scala.Int | scala.Double = null,
+    syncedElemsH: js.Array[_] = null,
+    syncedElemsV: js.Array[_] = null,
+    thumbDragEnd: ThumbDragEndEvent = null,
+    thumbDragMove: ThumbDragMoveEvent = null,
+    thumbDragStart: ThumbDragStartEvent = null,
+    wheelStep: scala.Int | scala.Double = null
+  ): IgScroll = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(alwaysVisible)) __obj.updateDynamic("alwaysVisible")(alwaysVisible)
+    if (bigIncrementStep != null) __obj.updateDynamic("bigIncrementStep")(bigIncrementStep.asInstanceOf[js.Any])
+    if (inertiaDeltaX != null) __obj.updateDynamic("inertiaDeltaX")(inertiaDeltaX.asInstanceOf[js.Any])
+    if (inertiaDeltaY != null) __obj.updateDynamic("inertiaDeltaY")(inertiaDeltaY.asInstanceOf[js.Any])
+    if (inertiaDuration != null) __obj.updateDynamic("inertiaDuration")(inertiaDuration.asInstanceOf[js.Any])
+    if (inertiaStep != null) __obj.updateDynamic("inertiaStep")(inertiaStep.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (minThumbSize != null) __obj.updateDynamic("minThumbSize")(minThumbSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(modifyDOM)) __obj.updateDynamic("modifyDOM")(modifyDOM)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (resized != null) __obj.updateDynamic("resized")(resized)
+    if (resizing != null) __obj.updateDynamic("resizing")(resizing)
+    if (scrollHeight != null) __obj.updateDynamic("scrollHeight")(scrollHeight.asInstanceOf[js.Any])
+    if (scrollLeft != null) __obj.updateDynamic("scrollLeft")(scrollLeft.asInstanceOf[js.Any])
+    if (!js.isUndefined(scrollOnlyHBar)) __obj.updateDynamic("scrollOnlyHBar")(scrollOnlyHBar)
+    if (!js.isUndefined(scrollOnlyVBar)) __obj.updateDynamic("scrollOnlyVBar")(scrollOnlyVBar)
+    if (scrollTop != null) __obj.updateDynamic("scrollTop")(scrollTop.asInstanceOf[js.Any])
+    if (scrollWidth != null) __obj.updateDynamic("scrollWidth")(scrollWidth.asInstanceOf[js.Any])
+    if (scrollbarH != null) __obj.updateDynamic("scrollbarH")(scrollbarH)
+    if (scrollbarHParent != null) __obj.updateDynamic("scrollbarHParent")(scrollbarHParent)
+    if (scrollbarType != null) __obj.updateDynamic("scrollbarType")(scrollbarType)
+    if (scrollbarV != null) __obj.updateDynamic("scrollbarV")(scrollbarV)
+    if (scrollbarVParent != null) __obj.updateDynamic("scrollbarVParent")(scrollbarVParent)
+    if (scrolled != null) __obj.updateDynamic("scrolled")(scrolled)
+    if (scrolling != null) __obj.updateDynamic("scrolling")(scrolling)
+    if (smallIncrementStep != null) __obj.updateDynamic("smallIncrementStep")(smallIncrementStep.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothing)) __obj.updateDynamic("smoothing")(smoothing)
+    if (smoothingDuration != null) __obj.updateDynamic("smoothingDuration")(smoothingDuration.asInstanceOf[js.Any])
+    if (smoothingStep != null) __obj.updateDynamic("smoothingStep")(smoothingStep.asInstanceOf[js.Any])
+    if (swipeToleranceX != null) __obj.updateDynamic("swipeToleranceX")(swipeToleranceX.asInstanceOf[js.Any])
+    if (syncedElemsH != null) __obj.updateDynamic("syncedElemsH")(syncedElemsH)
+    if (syncedElemsV != null) __obj.updateDynamic("syncedElemsV")(syncedElemsV)
+    if (thumbDragEnd != null) __obj.updateDynamic("thumbDragEnd")(thumbDragEnd)
+    if (thumbDragMove != null) __obj.updateDynamic("thumbDragMove")(thumbDragMove)
+    if (thumbDragStart != null) __obj.updateDynamic("thumbDragStart")(thumbDragStart)
+    if (wheelStep != null) __obj.updateDynamic("wheelStep")(wheelStep.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgScroll]
+  }
+}
+

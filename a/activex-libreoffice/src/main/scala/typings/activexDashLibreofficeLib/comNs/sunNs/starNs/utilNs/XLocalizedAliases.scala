@@ -38,3 +38,59 @@ trait XLocalizedAliases
   def unbindAliases(programmaticName: java.lang.String): scala.Unit
 }
 
+object XLocalizedAliases {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    bindAlias: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    listAliases: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[AliasProgrammaticPair]
+    ],
+    lookupAlias: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    lookupProgrammatic: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String, 
+      java.lang.String
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    rebindAliases: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    release: js.Function0[scala.Unit],
+    renameAlias: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    unbindAlias: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    unbindAliases: js.Function1[java.lang.String, scala.Unit]
+  ): XLocalizedAliases = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("bindAlias")(bindAlias)
+    __obj.updateDynamic("listAliases")(listAliases)
+    __obj.updateDynamic("lookupAlias")(lookupAlias)
+    __obj.updateDynamic("lookupProgrammatic")(lookupProgrammatic)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("rebindAliases")(rebindAliases)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("renameAlias")(renameAlias)
+    __obj.updateDynamic("unbindAlias")(unbindAlias)
+    __obj.updateDynamic("unbindAliases")(unbindAliases)
+    __obj.asInstanceOf[XLocalizedAliases]
+  }
+}
+

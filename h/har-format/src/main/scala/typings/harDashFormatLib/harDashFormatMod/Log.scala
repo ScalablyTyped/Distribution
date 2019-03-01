@@ -35,3 +35,24 @@ trait Log extends js.Object {
   var version: java.lang.String
 }
 
+object Log {
+  @scala.inline
+  def apply(
+    creator: Creator,
+    entries: js.Array[Entry],
+    version: java.lang.String,
+    browser: Browser = null,
+    comment: java.lang.String = null,
+    pages: js.Array[Page] = null
+  ): Log = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("creator")(creator)
+    __obj.updateDynamic("entries")(entries)
+    __obj.updateDynamic("version")(version)
+    if (browser != null) __obj.updateDynamic("browser")(browser)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (pages != null) __obj.updateDynamic("pages")(pages)
+    __obj.asInstanceOf[Log]
+  }
+}
+

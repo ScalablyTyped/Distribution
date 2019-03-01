@@ -17,3 +17,12 @@ trait ChromeSettingClearDetails extends js.Object {
   var scope: js.UndefOr[ChromeSettingScope] = js.undefined
 }
 
+object ChromeSettingClearDetails {
+  @scala.inline
+  def apply(scope: ChromeSettingScope = null): ChromeSettingClearDetails = {
+    val __obj = js.Dynamic.literal()
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[ChromeSettingClearDetails]
+  }
+}
+

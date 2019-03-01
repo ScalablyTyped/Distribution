@@ -15,3 +15,12 @@ trait MoveContext extends js.Object {
   def moveTo(x: scala.Double, y: scala.Double): scala.Unit
 }
 
+object MoveContext {
+  @scala.inline
+  def apply(moveTo: js.Function2[scala.Double, scala.Double, scala.Unit]): MoveContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("moveTo")(moveTo)
+    __obj.asInstanceOf[MoveContext]
+  }
+}
+

@@ -12,3 +12,12 @@ trait BannerClickEventUIParam extends js.Object {
   var bannerElement: js.UndefOr[js.Any] = js.undefined
 }
 
+object BannerClickEventUIParam {
+  @scala.inline
+  def apply(bannerElement: js.Any = null): BannerClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (bannerElement != null) __obj.updateDynamic("bannerElement")(bannerElement)
+    __obj.asInstanceOf[BannerClickEventUIParam]
+  }
+}
+

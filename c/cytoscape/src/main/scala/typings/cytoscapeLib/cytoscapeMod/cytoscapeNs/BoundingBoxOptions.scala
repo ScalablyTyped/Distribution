@@ -14,3 +14,18 @@ trait BoundingBoxOptions extends js.Object {
   var includeNodes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BoundingBoxOptions {
+  @scala.inline
+  def apply(
+    includeEdges: js.UndefOr[scala.Boolean] = js.undefined,
+    includeLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    includeNodes: js.UndefOr[scala.Boolean] = js.undefined
+  ): BoundingBoxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeEdges)) __obj.updateDynamic("includeEdges")(includeEdges)
+    if (!js.isUndefined(includeLabels)) __obj.updateDynamic("includeLabels")(includeLabels)
+    if (!js.isUndefined(includeNodes)) __obj.updateDynamic("includeNodes")(includeNodes)
+    __obj.asInstanceOf[BoundingBoxOptions]
+  }
+}
+

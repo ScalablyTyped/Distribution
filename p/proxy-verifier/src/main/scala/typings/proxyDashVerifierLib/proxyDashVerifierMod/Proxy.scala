@@ -16,3 +16,22 @@ trait Proxy extends js.Object {
   var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
 }
 
+object Proxy {
+  @scala.inline
+  def apply(
+    ipAddress: java.lang.String,
+    port: scala.Double,
+    auth: java.lang.String = null,
+    protocol: Protocol = null,
+    protocols: js.Array[Protocol] = null
+  ): Proxy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ipAddress")(ipAddress)
+    __obj.updateDynamic("port")(port)
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
+    __obj.asInstanceOf[Proxy]
+  }
+}
+

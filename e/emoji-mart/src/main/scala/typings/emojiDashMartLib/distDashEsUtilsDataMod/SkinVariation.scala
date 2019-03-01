@@ -22,3 +22,40 @@ trait SkinVariation extends js.Object {
   var unified: java.lang.String
 }
 
+object SkinVariation {
+  @scala.inline
+  def apply(
+    added_in: java.lang.String,
+    has_img_apple: scala.Boolean,
+    has_img_emojione: scala.Boolean,
+    has_img_facebook: scala.Boolean,
+    has_img_google: scala.Boolean,
+    has_img_messenger: scala.Boolean,
+    has_img_twitter: scala.Boolean,
+    image: java.lang.String,
+    sheet_x: scala.Double,
+    sheet_y: scala.Double,
+    unified: java.lang.String,
+    non_qualified: java.lang.String = null,
+    obsoleted_by: java.lang.String = null,
+    obsoletes: java.lang.String = null
+  ): SkinVariation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("added_in")(added_in)
+    __obj.updateDynamic("has_img_apple")(has_img_apple)
+    __obj.updateDynamic("has_img_emojione")(has_img_emojione)
+    __obj.updateDynamic("has_img_facebook")(has_img_facebook)
+    __obj.updateDynamic("has_img_google")(has_img_google)
+    __obj.updateDynamic("has_img_messenger")(has_img_messenger)
+    __obj.updateDynamic("has_img_twitter")(has_img_twitter)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("sheet_x")(sheet_x)
+    __obj.updateDynamic("sheet_y")(sheet_y)
+    __obj.updateDynamic("unified")(unified)
+    if (non_qualified != null) __obj.updateDynamic("non_qualified")(non_qualified)
+    if (obsoleted_by != null) __obj.updateDynamic("obsoleted_by")(obsoleted_by)
+    if (obsoletes != null) __obj.updateDynamic("obsoletes")(obsoletes)
+    __obj.asInstanceOf[SkinVariation]
+  }
+}
+

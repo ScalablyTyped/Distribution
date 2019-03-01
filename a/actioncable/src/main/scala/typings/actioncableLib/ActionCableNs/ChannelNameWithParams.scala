@@ -10,3 +10,16 @@ trait ChannelNameWithParams
   var channel: java.lang.String
 }
 
+object ChannelNameWithParams {
+  @scala.inline
+  def apply(
+    channel: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): ChannelNameWithParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ChannelNameWithParams]
+  }
+}
+

@@ -20,3 +20,18 @@ trait WebRequestBody extends js.Object {
   var raw: js.UndefOr[js.Array[UploadData]] = js.undefined
 }
 
+object WebRequestBody {
+  @scala.inline
+  def apply(
+    error: java.lang.String = null,
+    formData: org.scalablytyped.runtime.StringDictionary[js.Array[java.lang.String]] = null,
+    raw: js.Array[UploadData] = null
+  ): WebRequestBody = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (formData != null) __obj.updateDynamic("formData")(formData)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[WebRequestBody]
+  }
+}
+

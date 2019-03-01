@@ -41,3 +41,24 @@ trait MasterAuth extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MasterAuth {
+  @scala.inline
+  def apply(
+    clientCertificate: java.lang.String = null,
+    clientCertificateConfig: ClientCertificateConfig = null,
+    clientKey: java.lang.String = null,
+    clusterCaCertificate: java.lang.String = null,
+    password: java.lang.String = null,
+    username: java.lang.String = null
+  ): MasterAuth = {
+    val __obj = js.Dynamic.literal()
+    if (clientCertificate != null) __obj.updateDynamic("clientCertificate")(clientCertificate)
+    if (clientCertificateConfig != null) __obj.updateDynamic("clientCertificateConfig")(clientCertificateConfig)
+    if (clientKey != null) __obj.updateDynamic("clientKey")(clientKey)
+    if (clusterCaCertificate != null) __obj.updateDynamic("clusterCaCertificate")(clusterCaCertificate)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[MasterAuth]
+  }
+}
+

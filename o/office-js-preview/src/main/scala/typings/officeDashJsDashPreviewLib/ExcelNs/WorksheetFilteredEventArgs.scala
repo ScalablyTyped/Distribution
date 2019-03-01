@@ -31,3 +31,15 @@ trait WorksheetFilteredEventArgs extends js.Object {
   var worksheetId: java.lang.String
 }
 
+object WorksheetFilteredEventArgs {
+  @scala.inline
+  def apply(
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetFiltered,
+    worksheetId: java.lang.String
+  ): WorksheetFilteredEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("worksheetId")(worksheetId)
+    __obj.asInstanceOf[WorksheetFilteredEventArgs]
+  }
+}
+

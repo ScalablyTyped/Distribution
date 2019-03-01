@@ -44,3 +44,24 @@ trait ParamNamesOptions extends js.Object {
   var totalParts: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ParamNamesOptions {
+  @scala.inline
+  def apply(
+    chunkSize: java.lang.String = null,
+    partByteOffset: java.lang.String = null,
+    partIndex: java.lang.String = null,
+    resuming: java.lang.String = null,
+    totalFileSize: java.lang.String = null,
+    totalParts: java.lang.String = null
+  ): ParamNamesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize)
+    if (partByteOffset != null) __obj.updateDynamic("partByteOffset")(partByteOffset)
+    if (partIndex != null) __obj.updateDynamic("partIndex")(partIndex)
+    if (resuming != null) __obj.updateDynamic("resuming")(resuming)
+    if (totalFileSize != null) __obj.updateDynamic("totalFileSize")(totalFileSize)
+    if (totalParts != null) __obj.updateDynamic("totalParts")(totalParts)
+    __obj.asInstanceOf[ParamNamesOptions]
+  }
+}
+

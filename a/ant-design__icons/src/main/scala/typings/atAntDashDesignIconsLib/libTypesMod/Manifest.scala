@@ -11,3 +11,18 @@ trait Manifest extends js.Object {
   var twotone: js.Array[java.lang.String]
 }
 
+object Manifest {
+  @scala.inline
+  def apply(
+    fill: js.Array[java.lang.String],
+    outline: js.Array[java.lang.String],
+    twotone: js.Array[java.lang.String]
+  ): Manifest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fill")(fill)
+    __obj.updateDynamic("outline")(outline)
+    __obj.updateDynamic("twotone")(twotone)
+    __obj.asInstanceOf[Manifest]
+  }
+}
+

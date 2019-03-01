@@ -11,3 +11,17 @@ trait ReactElement[P] extends js.Object {
   var `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify T */ js.Any
 }
 
+object ReactElement {
+  @scala.inline
+  def apply[P](
+    props: P,
+    `type`: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify T */ js.Any,
+    key: Key = null
+  ): ReactElement[P] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReactElement[P]]
+  }
+}
+

@@ -5,7 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_PartialLinkText extends js.Object {
+trait Anon_PartialLinkText
+  extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.ByHash {
   var partialLinkText: java.lang.String
+}
+
+object Anon_PartialLinkText {
+  @scala.inline
+  def apply(partialLinkText: java.lang.String): Anon_PartialLinkText = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("partialLinkText")(partialLinkText)
+    __obj.asInstanceOf[Anon_PartialLinkText]
+  }
 }
 

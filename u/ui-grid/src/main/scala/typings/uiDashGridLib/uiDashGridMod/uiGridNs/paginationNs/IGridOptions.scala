@@ -48,3 +48,28 @@ trait IGridOptions extends js.Object {
   var useExternalPagination: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(
+    enablePagination: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePaginationControls: js.UndefOr[scala.Boolean] = js.undefined,
+    paginationCurrentPage: scala.Int | scala.Double = null,
+    paginationPageSize: scala.Int | scala.Double = null,
+    paginationPageSizes: js.Array[scala.Double] = null,
+    paginationTemplate: java.lang.String = null,
+    totalItems: scala.Int | scala.Double = null,
+    useExternalPagination: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enablePagination)) __obj.updateDynamic("enablePagination")(enablePagination)
+    if (!js.isUndefined(enablePaginationControls)) __obj.updateDynamic("enablePaginationControls")(enablePaginationControls)
+    if (paginationCurrentPage != null) __obj.updateDynamic("paginationCurrentPage")(paginationCurrentPage.asInstanceOf[js.Any])
+    if (paginationPageSize != null) __obj.updateDynamic("paginationPageSize")(paginationPageSize.asInstanceOf[js.Any])
+    if (paginationPageSizes != null) __obj.updateDynamic("paginationPageSizes")(paginationPageSizes)
+    if (paginationTemplate != null) __obj.updateDynamic("paginationTemplate")(paginationTemplate)
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalPagination)) __obj.updateDynamic("useExternalPagination")(useExternalPagination)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

@@ -43,3 +43,18 @@ trait Transcript extends js.Object {
   var geneId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Transcript {
+  @scala.inline
+  def apply(
+    codingSequence: CodingSequence = null,
+    exons: js.Array[Exon] = null,
+    geneId: java.lang.String = null
+  ): Transcript = {
+    val __obj = js.Dynamic.literal()
+    if (codingSequence != null) __obj.updateDynamic("codingSequence")(codingSequence)
+    if (exons != null) __obj.updateDynamic("exons")(exons)
+    if (geneId != null) __obj.updateDynamic("geneId")(geneId)
+    __obj.asInstanceOf[Transcript]
+  }
+}
+

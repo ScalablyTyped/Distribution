@@ -48,3 +48,28 @@ trait XTreeDataModelListener
   def treeStructureChanged(Event: TreeDataModelEvent): scala.Unit
 }
 
+object XTreeDataModelListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    treeNodesChanged: js.Function1[TreeDataModelEvent, scala.Unit],
+    treeNodesInserted: js.Function1[TreeDataModelEvent, scala.Unit],
+    treeNodesRemoved: js.Function1[TreeDataModelEvent, scala.Unit],
+    treeStructureChanged: js.Function1[TreeDataModelEvent, scala.Unit]
+  ): XTreeDataModelListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("treeNodesChanged")(treeNodesChanged)
+    __obj.updateDynamic("treeNodesInserted")(treeNodesInserted)
+    __obj.updateDynamic("treeNodesRemoved")(treeNodesRemoved)
+    __obj.updateDynamic("treeStructureChanged")(treeStructureChanged)
+    __obj.asInstanceOf[XTreeDataModelListener]
+  }
+}
+

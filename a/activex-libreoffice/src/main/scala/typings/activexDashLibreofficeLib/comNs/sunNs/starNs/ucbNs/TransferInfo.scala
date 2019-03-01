@@ -35,3 +35,20 @@ trait TransferInfo extends js.Object {
   var SourceURL: java.lang.String
 }
 
+object TransferInfo {
+  @scala.inline
+  def apply(
+    MoveData: scala.Boolean,
+    NameClash: scala.Double,
+    NewTitle: java.lang.String,
+    SourceURL: java.lang.String
+  ): TransferInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MoveData")(MoveData)
+    __obj.updateDynamic("NameClash")(NameClash)
+    __obj.updateDynamic("NewTitle")(NewTitle)
+    __obj.updateDynamic("SourceURL")(SourceURL)
+    __obj.asInstanceOf[TransferInfo]
+  }
+}
+

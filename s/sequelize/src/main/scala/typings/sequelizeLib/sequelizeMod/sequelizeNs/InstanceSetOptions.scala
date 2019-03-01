@@ -19,3 +19,13 @@ trait InstanceSetOptions extends js.Object {
   var reset: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InstanceSetOptions {
+  @scala.inline
+  def apply(raw: js.UndefOr[scala.Boolean] = js.undefined, reset: js.UndefOr[scala.Boolean] = js.undefined): InstanceSetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset)
+    __obj.asInstanceOf[InstanceSetOptions]
+  }
+}
+

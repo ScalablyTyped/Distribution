@@ -13,3 +13,22 @@ trait Anon_Destination extends js.Object {
   var Source: java.lang.String
 }
 
+object Anon_Destination {
+  @scala.inline
+  def apply(
+    Destination: java.lang.String,
+    Mode: java.lang.String,
+    Propagation: java.lang.String,
+    RW: scala.Boolean,
+    Source: java.lang.String
+  ): Anon_Destination = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Destination")(Destination)
+    __obj.updateDynamic("Mode")(Mode)
+    __obj.updateDynamic("Propagation")(Propagation)
+    __obj.updateDynamic("RW")(RW)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[Anon_Destination]
+  }
+}
+

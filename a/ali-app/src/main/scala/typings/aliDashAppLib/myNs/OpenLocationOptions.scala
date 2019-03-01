@@ -19,3 +19,28 @@ trait OpenLocationOptions
   var scale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object OpenLocationOptions {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    latitude: scala.Double | java.lang.String,
+    longitude: scala.Double | java.lang.String,
+    name: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    scale: scala.Int | scala.Double = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): OpenLocationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+    __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[OpenLocationOptions]
+  }
+}
+

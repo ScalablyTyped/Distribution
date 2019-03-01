@@ -14,3 +14,12 @@ trait WidthProviderProps extends js.Object {
   var measureBeforeMount: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WidthProviderProps {
+  @scala.inline
+  def apply(measureBeforeMount: js.UndefOr[scala.Boolean] = js.undefined): WidthProviderProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(measureBeforeMount)) __obj.updateDynamic("measureBeforeMount")(measureBeforeMount)
+    __obj.asInstanceOf[WidthProviderProps]
+  }
+}
+

@@ -18,3 +18,22 @@ trait RunMobileFriendlyTestResponse extends js.Object {
   var testStatus: js.UndefOr[TestStatus] = js.undefined
 }
 
+object RunMobileFriendlyTestResponse {
+  @scala.inline
+  def apply(
+    mobileFriendliness: java.lang.String = null,
+    mobileFriendlyIssues: js.Array[MobileFriendlyIssue] = null,
+    resourceIssues: js.Array[ResourceIssue] = null,
+    screenshot: Image = null,
+    testStatus: TestStatus = null
+  ): RunMobileFriendlyTestResponse = {
+    val __obj = js.Dynamic.literal()
+    if (mobileFriendliness != null) __obj.updateDynamic("mobileFriendliness")(mobileFriendliness)
+    if (mobileFriendlyIssues != null) __obj.updateDynamic("mobileFriendlyIssues")(mobileFriendlyIssues)
+    if (resourceIssues != null) __obj.updateDynamic("resourceIssues")(resourceIssues)
+    if (screenshot != null) __obj.updateDynamic("screenshot")(screenshot)
+    if (testStatus != null) __obj.updateDynamic("testStatus")(testStatus)
+    __obj.asInstanceOf[RunMobileFriendlyTestResponse]
+  }
+}
+

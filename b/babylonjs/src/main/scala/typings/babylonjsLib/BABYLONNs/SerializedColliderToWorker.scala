@@ -12,3 +12,14 @@ trait SerializedColliderToWorker extends js.Object {
   var velocity: js.Array[scala.Double]
 }
 
+object SerializedColliderToWorker {
+  @scala.inline
+  def apply(position: js.Array[scala.Double], radius: js.Array[scala.Double], velocity: js.Array[scala.Double]): SerializedColliderToWorker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("radius")(radius)
+    __obj.updateDynamic("velocity")(velocity)
+    __obj.asInstanceOf[SerializedColliderToWorker]
+  }
+}
+

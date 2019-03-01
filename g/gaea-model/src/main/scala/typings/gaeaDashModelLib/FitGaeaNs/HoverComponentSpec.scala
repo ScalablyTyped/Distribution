@@ -13,3 +13,22 @@ trait HoverComponentSpec extends js.Object {
   var width: scala.Double
 }
 
+object HoverComponentSpec {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    hovering: scala.Boolean,
+    left: scala.Double,
+    top: scala.Double,
+    width: scala.Double
+  ): HoverComponentSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("hovering")(hovering)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("top")(top)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[HoverComponentSpec]
+  }
+}
+

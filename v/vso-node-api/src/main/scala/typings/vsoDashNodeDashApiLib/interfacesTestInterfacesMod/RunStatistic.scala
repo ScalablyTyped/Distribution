@@ -12,3 +12,20 @@ trait RunStatistic extends js.Object {
   var state: java.lang.String
 }
 
+object RunStatistic {
+  @scala.inline
+  def apply(
+    count: scala.Double,
+    outcome: java.lang.String,
+    resolutionState: TestResolutionState,
+    state: java.lang.String
+  ): RunStatistic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("outcome")(outcome)
+    __obj.updateDynamic("resolutionState")(resolutionState)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[RunStatistic]
+  }
+}
+

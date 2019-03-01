@@ -242,3 +242,262 @@ import scala.scalajs.js.annotation._
   override def getPropertySetInfo(): activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo
 }
 
+object ParagraphStyle {
+  @scala.inline
+  def apply(
+    BorderDistance: scala.Double,
+    BottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    BottomBorderDistance: scala.Double,
+    BreakType: BreakType,
+    Category: scala.Double,
+    CharDiffHeight: scala.Double,
+    CharDiffHeightAsian: scala.Double,
+    CharDiffHeightComplex: scala.Double,
+    CharPropHeight: scala.Double,
+    CharPropHeightAsian: scala.Double,
+    CharPropHeightComplex: scala.Double,
+    DisplayName: java.lang.String,
+    DropCapCharStyleName: java.lang.String,
+    DropCapFormat: DropCapFormat,
+    DropCapWholeWord: scala.Boolean,
+    FollowStyle: java.lang.String,
+    Hidden: scala.Boolean,
+    IsAutoUpdate: java.lang.String,
+    IsPhysical: scala.Boolean,
+    LeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    LeftBorderDistance: scala.Double,
+    ListId: java.lang.String,
+    Name: java.lang.String,
+    NumberingIsNumber: scala.Boolean,
+    NumberingLevel: scala.Double,
+    NumberingRules: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexReplace,
+    NumberingStartValue: scala.Double,
+    NumberingStyleName: java.lang.String,
+    OutlineLevel: scala.Double,
+    PageDescName: java.lang.String,
+    PageNumberOffset: scala.Double,
+    PageStyleName: java.lang.String,
+    ParaAdjust: ParagraphAdjust,
+    ParaBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    ParaBackGraphicFilter: java.lang.String,
+    ParaBackGraphicLocation: GraphicLocation,
+    ParaBackGraphicURL: java.lang.String,
+    ParaBackTransparent: scala.Boolean,
+    ParaBottomMargin: scala.Double,
+    ParaBottomMarginRelative: scala.Double,
+    ParaContextMargin: scala.Boolean,
+    ParaExpandSingleWord: scala.Boolean,
+    ParaFirstLineIndent: scala.Double,
+    ParaHyphenationMaxHyphens: scala.Double,
+    ParaHyphenationMaxLeadingChars: scala.Double,
+    ParaHyphenationMaxTrailingChars: scala.Double,
+    ParaInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ParaIsAutoFirstLineIndent: scala.Boolean,
+    ParaIsConnectBorder: scala.Boolean,
+    ParaIsHyphenation: scala.Boolean,
+    ParaIsNumberingRestart: scala.Boolean,
+    ParaKeepTogether: scala.Boolean,
+    ParaLastLineAdjust: scala.Double,
+    ParaLeftMargin: scala.Double,
+    ParaLeftMarginRelative: scala.Double,
+    ParaLineNumberCount: scala.Boolean,
+    ParaLineNumberStartValue: scala.Double,
+    ParaLineSpacing: LineSpacing,
+    ParaOrphans: scala.Double,
+    ParaRegisterModeActive: scala.Boolean,
+    ParaRightMargin: scala.Double,
+    ParaRightMarginRelative: scala.Double,
+    ParaShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    ParaSplit: scala.Boolean,
+    ParaStyleConditions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    ParaStyleName: java.lang.String,
+    ParaTabStops: activexDashInteropLib.SafeArray[TabStop],
+    ParaTopMargin: scala.Double,
+    ParaTopMarginRelative: scala.Double,
+    ParaUserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    ParaVertAlignment: scala.Double,
+    ParaWidows: scala.Double,
+    ParentStyle: java.lang.String,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    RightBorderDistance: scala.Double,
+    StyleInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    TopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    TopBorderDistance: scala.Double,
+    UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    acquire: js.Function0[scala.Unit],
+    addPropertiesChangeListener: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    firePropertiesChangeEvent: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    getName: js.Function0[java.lang.String],
+    getParentStyle: js.Function0[java.lang.String],
+    getPropertyDefaults: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyStates: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
+    ],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    isInUse: js.Function0[scala.Boolean],
+    isUserDefined: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertiesChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setAllPropertiesToDefault: js.Function0[scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setParentStyle: js.Function1[java.lang.String, scala.Unit],
+    setPropertiesToDefault: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ]
+  ): ParagraphStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BorderDistance")(BorderDistance)
+    __obj.updateDynamic("BottomBorder")(BottomBorder)
+    __obj.updateDynamic("BottomBorderDistance")(BottomBorderDistance)
+    __obj.updateDynamic("BreakType")(BreakType)
+    __obj.updateDynamic("Category")(Category)
+    __obj.updateDynamic("CharDiffHeight")(CharDiffHeight)
+    __obj.updateDynamic("CharDiffHeightAsian")(CharDiffHeightAsian)
+    __obj.updateDynamic("CharDiffHeightComplex")(CharDiffHeightComplex)
+    __obj.updateDynamic("CharPropHeight")(CharPropHeight)
+    __obj.updateDynamic("CharPropHeightAsian")(CharPropHeightAsian)
+    __obj.updateDynamic("CharPropHeightComplex")(CharPropHeightComplex)
+    __obj.updateDynamic("DisplayName")(DisplayName)
+    __obj.updateDynamic("DropCapCharStyleName")(DropCapCharStyleName)
+    __obj.updateDynamic("DropCapFormat")(DropCapFormat)
+    __obj.updateDynamic("DropCapWholeWord")(DropCapWholeWord)
+    __obj.updateDynamic("FollowStyle")(FollowStyle)
+    __obj.updateDynamic("Hidden")(Hidden)
+    __obj.updateDynamic("IsAutoUpdate")(IsAutoUpdate)
+    __obj.updateDynamic("IsPhysical")(IsPhysical)
+    __obj.updateDynamic("LeftBorder")(LeftBorder)
+    __obj.updateDynamic("LeftBorderDistance")(LeftBorderDistance)
+    __obj.updateDynamic("ListId")(ListId)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("NumberingIsNumber")(NumberingIsNumber)
+    __obj.updateDynamic("NumberingLevel")(NumberingLevel)
+    __obj.updateDynamic("NumberingRules")(NumberingRules)
+    __obj.updateDynamic("NumberingStartValue")(NumberingStartValue)
+    __obj.updateDynamic("NumberingStyleName")(NumberingStyleName)
+    __obj.updateDynamic("OutlineLevel")(OutlineLevel)
+    __obj.updateDynamic("PageDescName")(PageDescName)
+    __obj.updateDynamic("PageNumberOffset")(PageNumberOffset)
+    __obj.updateDynamic("PageStyleName")(PageStyleName)
+    __obj.updateDynamic("ParaAdjust")(ParaAdjust)
+    __obj.updateDynamic("ParaBackColor")(ParaBackColor)
+    __obj.updateDynamic("ParaBackGraphicFilter")(ParaBackGraphicFilter)
+    __obj.updateDynamic("ParaBackGraphicLocation")(ParaBackGraphicLocation)
+    __obj.updateDynamic("ParaBackGraphicURL")(ParaBackGraphicURL)
+    __obj.updateDynamic("ParaBackTransparent")(ParaBackTransparent)
+    __obj.updateDynamic("ParaBottomMargin")(ParaBottomMargin)
+    __obj.updateDynamic("ParaBottomMarginRelative")(ParaBottomMarginRelative)
+    __obj.updateDynamic("ParaContextMargin")(ParaContextMargin)
+    __obj.updateDynamic("ParaExpandSingleWord")(ParaExpandSingleWord)
+    __obj.updateDynamic("ParaFirstLineIndent")(ParaFirstLineIndent)
+    __obj.updateDynamic("ParaHyphenationMaxHyphens")(ParaHyphenationMaxHyphens)
+    __obj.updateDynamic("ParaHyphenationMaxLeadingChars")(ParaHyphenationMaxLeadingChars)
+    __obj.updateDynamic("ParaHyphenationMaxTrailingChars")(ParaHyphenationMaxTrailingChars)
+    __obj.updateDynamic("ParaInteropGrabBag")(ParaInteropGrabBag)
+    __obj.updateDynamic("ParaIsAutoFirstLineIndent")(ParaIsAutoFirstLineIndent)
+    __obj.updateDynamic("ParaIsConnectBorder")(ParaIsConnectBorder)
+    __obj.updateDynamic("ParaIsHyphenation")(ParaIsHyphenation)
+    __obj.updateDynamic("ParaIsNumberingRestart")(ParaIsNumberingRestart)
+    __obj.updateDynamic("ParaKeepTogether")(ParaKeepTogether)
+    __obj.updateDynamic("ParaLastLineAdjust")(ParaLastLineAdjust)
+    __obj.updateDynamic("ParaLeftMargin")(ParaLeftMargin)
+    __obj.updateDynamic("ParaLeftMarginRelative")(ParaLeftMarginRelative)
+    __obj.updateDynamic("ParaLineNumberCount")(ParaLineNumberCount)
+    __obj.updateDynamic("ParaLineNumberStartValue")(ParaLineNumberStartValue)
+    __obj.updateDynamic("ParaLineSpacing")(ParaLineSpacing)
+    __obj.updateDynamic("ParaOrphans")(ParaOrphans)
+    __obj.updateDynamic("ParaRegisterModeActive")(ParaRegisterModeActive)
+    __obj.updateDynamic("ParaRightMargin")(ParaRightMargin)
+    __obj.updateDynamic("ParaRightMarginRelative")(ParaRightMarginRelative)
+    __obj.updateDynamic("ParaShadowFormat")(ParaShadowFormat)
+    __obj.updateDynamic("ParaSplit")(ParaSplit)
+    __obj.updateDynamic("ParaStyleConditions")(ParaStyleConditions)
+    __obj.updateDynamic("ParaStyleName")(ParaStyleName)
+    __obj.updateDynamic("ParaTabStops")(ParaTabStops)
+    __obj.updateDynamic("ParaTopMargin")(ParaTopMargin)
+    __obj.updateDynamic("ParaTopMarginRelative")(ParaTopMarginRelative)
+    __obj.updateDynamic("ParaUserDefinedAttributes")(ParaUserDefinedAttributes)
+    __obj.updateDynamic("ParaVertAlignment")(ParaVertAlignment)
+    __obj.updateDynamic("ParaWidows")(ParaWidows)
+    __obj.updateDynamic("ParentStyle")(ParentStyle)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RightBorder")(RightBorder)
+    __obj.updateDynamic("RightBorderDistance")(RightBorderDistance)
+    __obj.updateDynamic("StyleInteropGrabBag")(StyleInteropGrabBag)
+    __obj.updateDynamic("TopBorder")(TopBorder)
+    __obj.updateDynamic("TopBorderDistance")(TopBorderDistance)
+    __obj.updateDynamic("UserDefinedAttributes")(UserDefinedAttributes)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getParentStyle")(getParentStyle)
+    __obj.updateDynamic("getPropertyDefaults")(getPropertyDefaults)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
+    __obj.updateDynamic("isInUse")(isInUse)
+    __obj.updateDynamic("isUserDefined")(isUserDefined)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setAllPropertiesToDefault")(setAllPropertiesToDefault)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setParentStyle")(setParentStyle)
+    __obj.updateDynamic("setPropertiesToDefault")(setPropertiesToDefault)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    __obj.asInstanceOf[ParagraphStyle]
+  }
+}
+

@@ -61,3 +61,38 @@ trait Value extends js.Object {
   var timestampValue: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Value {
+  @scala.inline
+  def apply(
+    arrayValue: ArrayValue = null,
+    blobValue: java.lang.String = null,
+    booleanValue: js.UndefOr[scala.Boolean] = js.undefined,
+    doubleValue: scala.Int | scala.Double = null,
+    entityValue: Entity = null,
+    excludeFromIndexes: js.UndefOr[scala.Boolean] = js.undefined,
+    geoPointValue: LatLng = null,
+    integerValue: java.lang.String = null,
+    keyValue: Key = null,
+    meaning: scala.Int | scala.Double = null,
+    nullValue: java.lang.String = null,
+    stringValue: java.lang.String = null,
+    timestampValue: java.lang.String = null
+  ): Value = {
+    val __obj = js.Dynamic.literal()
+    if (arrayValue != null) __obj.updateDynamic("arrayValue")(arrayValue)
+    if (blobValue != null) __obj.updateDynamic("blobValue")(blobValue)
+    if (!js.isUndefined(booleanValue)) __obj.updateDynamic("booleanValue")(booleanValue)
+    if (doubleValue != null) __obj.updateDynamic("doubleValue")(doubleValue.asInstanceOf[js.Any])
+    if (entityValue != null) __obj.updateDynamic("entityValue")(entityValue)
+    if (!js.isUndefined(excludeFromIndexes)) __obj.updateDynamic("excludeFromIndexes")(excludeFromIndexes)
+    if (geoPointValue != null) __obj.updateDynamic("geoPointValue")(geoPointValue)
+    if (integerValue != null) __obj.updateDynamic("integerValue")(integerValue)
+    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue)
+    if (meaning != null) __obj.updateDynamic("meaning")(meaning.asInstanceOf[js.Any])
+    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue)
+    if (stringValue != null) __obj.updateDynamic("stringValue")(stringValue)
+    if (timestampValue != null) __obj.updateDynamic("timestampValue")(timestampValue)
+    __obj.asInstanceOf[Value]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_FalseHasError[TValue /* <: formstateLib.libCoreFormStateMod.Validatab
   var value: TValue
 }
 
+object Anon_FalseHasError {
+  @scala.inline
+  def apply[TValue /* <: formstateLib.libCoreFormStateMod.ValidatableMapOrArray */](hasError: formstateLib.formstateLibNumbers.`false`, value: TValue): Anon_FalseHasError[TValue] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hasError")(hasError)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FalseHasError[TValue]]
+  }
+}
+

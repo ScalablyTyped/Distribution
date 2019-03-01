@@ -14,3 +14,27 @@ trait MobileapppanelsResource extends js.Object {
   def update(request: gapiDotClientDotSurveysLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[MobileAppPanel]
 }
 
+object MobileapppanelsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotSurveysLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[MobileAppPanel]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSurveysLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[MobileAppPanelsListResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotSurveysLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[MobileAppPanel]
+    ]
+  ): MobileapppanelsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[MobileapppanelsResource]
+  }
+}
+

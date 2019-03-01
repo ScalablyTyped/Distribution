@@ -14,3 +14,18 @@ trait Anon_ColumnType extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ColumnType {
+  @scala.inline
+  def apply(
+    columnType: java.lang.String = null,
+    dataType: java.lang.String = null,
+    name: java.lang.String = null
+  ): Anon_ColumnType = {
+    val __obj = js.Dynamic.literal()
+    if (columnType != null) __obj.updateDynamic("columnType")(columnType)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_ColumnType]
+  }
+}
+

@@ -11,3 +11,18 @@ trait WebcamResolution extends js.Object {
   def GetCurrent(): java.lang.String
 }
 
+object WebcamResolution {
+  @scala.inline
+  def apply(
+    Get: js.Function1[scala.Double, java.lang.String],
+    GetCount: js.Function0[scala.Double],
+    GetCurrent: js.Function0[java.lang.String]
+  ): WebcamResolution = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Get")(Get)
+    __obj.updateDynamic("GetCount")(GetCount)
+    __obj.updateDynamic("GetCurrent")(GetCurrent)
+    __obj.asInstanceOf[WebcamResolution]
+  }
+}
+

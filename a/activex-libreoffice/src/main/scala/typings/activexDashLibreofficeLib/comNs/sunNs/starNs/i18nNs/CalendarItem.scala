@@ -17,3 +17,14 @@ trait CalendarItem extends js.Object {
   var ID: java.lang.String
 }
 
+object CalendarItem {
+  @scala.inline
+  def apply(AbbrevName: java.lang.String, FullName: java.lang.String, ID: java.lang.String): CalendarItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AbbrevName")(AbbrevName)
+    __obj.updateDynamic("FullName")(FullName)
+    __obj.updateDynamic("ID")(ID)
+    __obj.asInstanceOf[CalendarItem]
+  }
+}
+

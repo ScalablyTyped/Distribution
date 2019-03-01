@@ -60,3 +60,32 @@ trait AloneEncoderOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AloneEncoderOptions {
+  @scala.inline
+  def apply(
+    blockSize: scala.Int | scala.Double = null,
+    bufsize: scala.Int | scala.Double = null,
+    check: scala.Int | scala.Double = null,
+    filters: Filters = null,
+    flags: scala.Int | scala.Double = null,
+    memlimit: scala.Int | scala.Double = null,
+    preset: scala.Int | scala.Double = null,
+    synchronous: js.UndefOr[scala.Boolean] = js.undefined,
+    threads: scala.Int | scala.Double = null,
+    timeout: scala.Int | scala.Double = null
+  ): AloneEncoderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (blockSize != null) __obj.updateDynamic("blockSize")(blockSize.asInstanceOf[js.Any])
+    if (bufsize != null) __obj.updateDynamic("bufsize")(bufsize.asInstanceOf[js.Any])
+    if (check != null) __obj.updateDynamic("check")(check.asInstanceOf[js.Any])
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (flags != null) __obj.updateDynamic("flags")(flags.asInstanceOf[js.Any])
+    if (memlimit != null) __obj.updateDynamic("memlimit")(memlimit.asInstanceOf[js.Any])
+    if (preset != null) __obj.updateDynamic("preset")(preset.asInstanceOf[js.Any])
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous)
+    if (threads != null) __obj.updateDynamic("threads")(threads.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AloneEncoderOptions]
+  }
+}
+

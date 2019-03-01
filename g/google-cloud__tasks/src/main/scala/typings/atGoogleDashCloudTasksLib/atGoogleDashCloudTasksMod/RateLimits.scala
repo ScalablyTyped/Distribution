@@ -11,3 +11,18 @@ trait RateLimits extends js.Object {
   var maxDispatchesPerSecond: scala.Double
 }
 
+object RateLimits {
+  @scala.inline
+  def apply(
+    maxBurstSize: scala.Double,
+    maxConcurrentDispatches: scala.Double,
+    maxDispatchesPerSecond: scala.Double
+  ): RateLimits = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maxBurstSize")(maxBurstSize)
+    __obj.updateDynamic("maxConcurrentDispatches")(maxConcurrentDispatches)
+    __obj.updateDynamic("maxDispatchesPerSecond")(maxDispatchesPerSecond)
+    __obj.asInstanceOf[RateLimits]
+  }
+}
+

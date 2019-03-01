@@ -32,3 +32,28 @@ trait ServerUrl extends js.Object {
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ServerUrl {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Boolean | scala.Double] = null,
+    method: reactDashFilepondLib.reactDashFilepondLibStrings.GET | reactDashFilepondLib.reactDashFilepondLibStrings.POST | reactDashFilepondLib.reactDashFilepondLibStrings.PUT | reactDashFilepondLib.reactDashFilepondLibStrings.DELETE = null,
+    ondata: js.Function1[/* data */ js.Any, _] = null,
+    onerror: js.Function1[/* responseBody */ js.Any, _] = null,
+    onload: js.Function0[_] = null,
+    timeout: scala.Int | scala.Double = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): ServerUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (ondata != null) __obj.updateDynamic("ondata")(ondata)
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (onload != null) __obj.updateDynamic("onload")(onload)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[ServerUrl]
+  }
+}
+

@@ -16,3 +16,13 @@ trait Anon_OnBehalfOfContentOwner extends js.Object {
   var onBehalfOfContentOwner: java.lang.String
 }
 
+object Anon_OnBehalfOfContentOwner {
+  @scala.inline
+  def apply(RequestBody: java.lang.String, onBehalfOfContentOwner: java.lang.String): Anon_OnBehalfOfContentOwner = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RequestBody")(RequestBody)
+    __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
+    __obj.asInstanceOf[Anon_OnBehalfOfContentOwner]
+  }
+}
+

@@ -14,3 +14,18 @@ trait DynamicLibrary extends js.Object {
   def get(symbol: java.lang.String): ffiDashNapiLib.Buffer
 }
 
+object DynamicLibrary {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Double],
+    error: js.Function0[java.lang.String],
+    get: js.Function1[java.lang.String, ffiDashNapiLib.Buffer]
+  ): DynamicLibrary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[DynamicLibrary]
+  }
+}
+

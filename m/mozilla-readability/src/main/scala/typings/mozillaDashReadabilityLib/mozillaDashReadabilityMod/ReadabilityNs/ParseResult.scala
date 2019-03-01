@@ -15,3 +15,26 @@ trait ParseResult extends js.Object {
   var title: java.lang.String
 }
 
+object ParseResult {
+  @scala.inline
+  def apply(
+    byline: java.lang.String,
+    content: java.lang.String,
+    dir: java.lang.String,
+    excerpt: java.lang.String,
+    length: scala.Double,
+    textContent: java.lang.String,
+    title: java.lang.String
+  ): ParseResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("byline")(byline)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("dir")(dir)
+    __obj.updateDynamic("excerpt")(excerpt)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("textContent")(textContent)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ParseResult]
+  }
+}
+

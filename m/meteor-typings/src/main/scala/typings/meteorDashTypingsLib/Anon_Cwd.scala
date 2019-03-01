@@ -13,3 +13,22 @@ trait Anon_Cwd extends js.Object {
   var waitForClose: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Cwd {
+  @scala.inline
+  def apply(
+    cwd: js.Object = null,
+    destination: js.Any = null,
+    env: js.Object = null,
+    stdio: js.Array[_] | java.lang.String = null,
+    waitForClose: java.lang.String = null
+  ): Anon_Cwd = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (stdio != null) __obj.updateDynamic("stdio")(stdio.asInstanceOf[js.Any])
+    if (waitForClose != null) __obj.updateDynamic("waitForClose")(waitForClose)
+    __obj.asInstanceOf[Anon_Cwd]
+  }
+}
+

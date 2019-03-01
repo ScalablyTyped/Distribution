@@ -31,3 +31,22 @@ trait ErrorCallbackArgs extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ErrorCallbackArgs {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    error: java.lang.String = null,
+    errorCode: scala.Int | scala.Double = null,
+    socket: titaniumLib.TitaniumNs.NetworkNs.SocketNs.TCP = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): ErrorCallbackArgs = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode.asInstanceOf[js.Any])
+    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ErrorCallbackArgs]
+  }
+}
+

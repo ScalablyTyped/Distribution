@@ -4988,11 +4988,59 @@ object ServiceCatalogNs extends js.Object {
     var Value: js.UndefOr[InstructionValue] = js.undefined
   }
   
+  trait _AccessLevelFilterKey extends js.Object
+  
+  trait _AccessStatus extends js.Object
+  
+  trait _ChangeAction extends js.Object
+  
+  trait _CopyProductStatus extends js.Object
+  
+  trait _EvaluationType extends js.Object
+  
+  trait _OrganizationNodeType extends js.Object
+  
+  trait _PortfolioShareType extends js.Object
+  
+  trait _ProductType extends js.Object
+  
+  trait _ProductViewFilterBy extends js.Object
+  
+  trait _ProductViewSortBy extends js.Object
+  
+  trait _ProvisionedProductPlanStatus extends js.Object
+  
+  trait _ProvisionedProductStatus extends js.Object
+  
+  trait _ProvisioningArtifactType extends js.Object
+  
+  trait _RecordStatus extends js.Object
+  
+  trait _Replacement extends js.Object
+  
+  trait _RequiresRecreation extends js.Object
+  
+  trait _ResourceAttribute extends js.Object
+  
+  trait _ServiceActionAssociationErrorCode extends js.Object
+  
+  trait _ServiceActionDefinitionKey extends js.Object
+  
+  trait _ShareStatus extends js.Object
+  
+  trait _SortOrder extends js.Object
+  
+  trait _StackSetOperationType extends js.Object
+  
+  trait _Status extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AcceptLanguage = java.lang.String
-  type AccessLevelFilterKey = awsDashSdkLib.awsDashSdkLibStrings.Account | awsDashSdkLib.awsDashSdkLibStrings.Role | awsDashSdkLib.awsDashSdkLibStrings.User | java.lang.String
+  type AccessLevelFilterKey = _AccessLevelFilterKey | java.lang.String
   type AccessLevelFilterValue = java.lang.String
-  type AccessStatus = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.UNDER_CHANGE | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type AccessStatus = _AccessStatus | java.lang.String
   type AccountId = java.lang.String
   type AccountIds = js.Array[AccountId]
   type AddTags = js.Array[Tag]
@@ -5001,7 +5049,7 @@ object ServiceCatalogNs extends js.Object {
   type ApproximateCount = scala.Double
   type AttributeValue = java.lang.String
   type CausingEntity = java.lang.String
-  type ChangeAction = awsDashSdkLib.awsDashSdkLibStrings.ADD | awsDashSdkLib.awsDashSdkLibStrings.MODIFY | awsDashSdkLib.awsDashSdkLibStrings.REMOVE | java.lang.String
+  type ChangeAction = _ChangeAction | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CloudWatchDashboardName = java.lang.String
   type CloudWatchDashboards = js.Array[CloudWatchDashboard]
@@ -5012,7 +5060,7 @@ object ServiceCatalogNs extends js.Object {
   type ConstraintType = java.lang.String
   type CopyOption = awsDashSdkLib.awsDashSdkLibStrings.CopyTags | java.lang.String
   type CopyOptions = js.Array[CopyOption]
-  type CopyProductStatus = awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type CopyProductStatus = _CopyProductStatus | java.lang.String
   type CreatedTime = stdLib.Date
   type CreationTime = stdLib.Date
   type DefaultValue = java.lang.String
@@ -5020,7 +5068,7 @@ object ServiceCatalogNs extends js.Object {
   type Error = java.lang.String
   type ErrorCode = java.lang.String
   type ErrorDescription = java.lang.String
-  type EvaluationType = awsDashSdkLib.awsDashSdkLibStrings.STATIC | awsDashSdkLib.awsDashSdkLibStrings.DYNAMIC | java.lang.String
+  type EvaluationType = _EvaluationType | java.lang.String
   type FailedServiceActionAssociations = js.Array[FailedServiceActionAssociation]
   type HasDefaultPath = scala.Boolean
   type Id = java.lang.String
@@ -5036,7 +5084,7 @@ object ServiceCatalogNs extends js.Object {
   type NoEcho = scala.Boolean
   type NotificationArn = java.lang.String
   type NotificationArns = js.Array[NotificationArn]
-  type OrganizationNodeType = awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATION | awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATIONAL_UNIT | awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT | java.lang.String
+  type OrganizationNodeType = _OrganizationNodeType | java.lang.String
   type OrganizationNodeValue = java.lang.String
   type OrganizationNodes = js.Array[OrganizationNode]
   type OutputKey = java.lang.String
@@ -5054,24 +5102,24 @@ object ServiceCatalogNs extends js.Object {
   type PortfolioDisplayName = java.lang.String
   type PortfolioName = java.lang.String
   type PortfolioShareToken = java.lang.String
-  type PortfolioShareType = awsDashSdkLib.awsDashSdkLibStrings.IMPORTED | awsDashSdkLib.awsDashSdkLibStrings.AWS_SERVICECATALOG | awsDashSdkLib.awsDashSdkLibStrings.AWS_ORGANIZATIONS | java.lang.String
+  type PortfolioShareType = _PortfolioShareType | java.lang.String
   type PrincipalARN = java.lang.String
   type PrincipalType = awsDashSdkLib.awsDashSdkLibStrings.IAM | java.lang.String
   type Principals = js.Array[Principal]
   type ProductArn = java.lang.String
   type ProductSource = awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT | java.lang.String
-  type ProductType = awsDashSdkLib.awsDashSdkLibStrings.CLOUD_FORMATION_TEMPLATE | awsDashSdkLib.awsDashSdkLibStrings.MARKETPLACE | java.lang.String
+  type ProductType = _ProductType | java.lang.String
   type ProductViewAggregationType = java.lang.String
   type ProductViewAggregationValues = js.Array[ProductViewAggregationValue]
   type ProductViewDetails = js.Array[ProductViewDetail]
   type ProductViewDistributor = java.lang.String
-  type ProductViewFilterBy = awsDashSdkLib.awsDashSdkLibStrings.FullTextSearch | awsDashSdkLib.awsDashSdkLibStrings.Owner | awsDashSdkLib.awsDashSdkLibStrings.ProductType | awsDashSdkLib.awsDashSdkLibStrings.SourceProductId | java.lang.String
+  type ProductViewFilterBy = _ProductViewFilterBy | java.lang.String
   type ProductViewFilterValue = java.lang.String
   type ProductViewFilterValues = js.Array[ProductViewFilterValue]
   type ProductViewName = java.lang.String
   type ProductViewOwner = java.lang.String
   type ProductViewShortDescription = java.lang.String
-  type ProductViewSortBy = awsDashSdkLib.awsDashSdkLibStrings.Title | awsDashSdkLib.awsDashSdkLibStrings.VersionCount | awsDashSdkLib.awsDashSdkLibStrings.CreationDate | java.lang.String
+  type ProductViewSortBy = _ProductViewSortBy | java.lang.String
   type ProductViewSummaries = js.Array[ProductViewSummary]
   type PropertyName = java.lang.String
   type ProviderName = java.lang.String
@@ -5081,10 +5129,10 @@ object ServiceCatalogNs extends js.Object {
   type ProvisionedProductName = java.lang.String
   type ProvisionedProductNameOrArn = java.lang.String
   type ProvisionedProductPlanName = java.lang.String
-  type ProvisionedProductPlanStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.CREATE_SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.CREATE_FAILED | awsDashSdkLib.awsDashSdkLibStrings.EXECUTE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.EXECUTE_SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.EXECUTE_FAILED | java.lang.String
+  type ProvisionedProductPlanStatus = _ProvisionedProductPlanStatus | java.lang.String
   type ProvisionedProductPlanType = awsDashSdkLib.awsDashSdkLibStrings.CLOUDFORMATION | java.lang.String
   type ProvisionedProductPlans = js.Array[ProvisionedProductPlanSummary]
-  type ProvisionedProductStatus = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.UNDER_CHANGE | awsDashSdkLib.awsDashSdkLibStrings.TAINTED | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.PLAN_IN_PROGRESS | java.lang.String
+  type ProvisionedProductStatus = _ProvisionedProductStatus | java.lang.String
   type ProvisionedProductStatusMessage = java.lang.String
   type ProvisionedProductType = java.lang.String
   type ProvisionedProductViewFilterBy = awsDashSdkLib.awsDashSdkLibStrings.SearchQuery | java.lang.String
@@ -5101,23 +5149,23 @@ object ServiceCatalogNs extends js.Object {
   type ProvisioningArtifactPropertyName = awsDashSdkLib.awsDashSdkLibStrings.Id | java.lang.String
   type ProvisioningArtifactPropertyValue = java.lang.String
   type ProvisioningArtifactSummaries = js.Array[ProvisioningArtifactSummary]
-  type ProvisioningArtifactType = awsDashSdkLib.awsDashSdkLibStrings.CLOUD_FORMATION_TEMPLATE | awsDashSdkLib.awsDashSdkLibStrings.MARKETPLACE_AMI | awsDashSdkLib.awsDashSdkLibStrings.MARKETPLACE_CAR | java.lang.String
+  type ProvisioningArtifactType = _ProvisioningArtifactType | java.lang.String
   type ProvisioningArtifactViews = js.Array[ProvisioningArtifactView]
   type ProvisioningArtifacts = js.Array[ProvisioningArtifact]
   type ProvisioningParameters = js.Array[ProvisioningParameter]
   type RecordDetails = js.Array[RecordDetail]
   type RecordErrors = js.Array[RecordError]
   type RecordOutputs = js.Array[RecordOutput]
-  type RecordStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS_IN_ERROR | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type RecordStatus = _RecordStatus | java.lang.String
   type RecordTagKey = java.lang.String
   type RecordTagValue = java.lang.String
   type RecordTags = js.Array[RecordTag]
   type RecordType = java.lang.String
   type Region = java.lang.String
-  type Replacement = awsDashSdkLib.awsDashSdkLibStrings.TRUE | awsDashSdkLib.awsDashSdkLibStrings.FALSE | awsDashSdkLib.awsDashSdkLibStrings.CONDITIONAL | java.lang.String
-  type RequiresRecreation = awsDashSdkLib.awsDashSdkLibStrings.NEVER | awsDashSdkLib.awsDashSdkLibStrings.CONDITIONALLY | awsDashSdkLib.awsDashSdkLibStrings.ALWAYS | java.lang.String
+  type Replacement = _Replacement | java.lang.String
+  type RequiresRecreation = _RequiresRecreation | java.lang.String
   type ResourceARN = java.lang.String
-  type ResourceAttribute = awsDashSdkLib.awsDashSdkLibStrings.PROPERTIES | awsDashSdkLib.awsDashSdkLibStrings.METADATA | awsDashSdkLib.awsDashSdkLibStrings.CREATIONPOLICY | awsDashSdkLib.awsDashSdkLibStrings.UPDATEPOLICY | awsDashSdkLib.awsDashSdkLibStrings.DELETIONPOLICY | awsDashSdkLib.awsDashSdkLibStrings.TAGS | java.lang.String
+  type ResourceAttribute = _ResourceAttribute | java.lang.String
   type ResourceChangeDetails = js.Array[ResourceChangeDetail]
   type ResourceChanges = js.Array[ResourceChange]
   type ResourceDetailARN = java.lang.String
@@ -5132,28 +5180,28 @@ object ServiceCatalogNs extends js.Object {
   type SearchFilterKey = java.lang.String
   type SearchFilterValue = java.lang.String
   type SearchProvisionedProductsPageSize = scala.Double
-  type ServiceActionAssociationErrorCode = awsDashSdkLib.awsDashSdkLibStrings.DUPLICATE_RESOURCE | awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.LIMIT_EXCEEDED | awsDashSdkLib.awsDashSdkLibStrings.RESOURCE_NOT_FOUND | awsDashSdkLib.awsDashSdkLibStrings.THROTTLING | java.lang.String
+  type ServiceActionAssociationErrorCode = _ServiceActionAssociationErrorCode | java.lang.String
   type ServiceActionAssociationErrorMessage = java.lang.String
   type ServiceActionAssociations = js.Array[ServiceActionAssociation]
-  type ServiceActionDefinitionKey = awsDashSdkLib.awsDashSdkLibStrings.Name | awsDashSdkLib.awsDashSdkLibStrings.Version | awsDashSdkLib.awsDashSdkLibStrings.AssumeRole | awsDashSdkLib.awsDashSdkLibStrings.Parameters | java.lang.String
+  type ServiceActionDefinitionKey = _ServiceActionDefinitionKey | java.lang.String
   type ServiceActionDefinitionType = awsDashSdkLib.awsDashSdkLibStrings.SSM_AUTOMATION | java.lang.String
   type ServiceActionDefinitionValue = java.lang.String
   type ServiceActionDescription = java.lang.String
   type ServiceActionName = java.lang.String
   type ServiceActionSummaries = js.Array[ServiceActionSummary]
   type ShareErrors = js.Array[ShareError]
-  type ShareStatus = awsDashSdkLib.awsDashSdkLibStrings.NOT_STARTED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED_WITH_ERRORS | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
+  type ShareStatus = _ShareStatus | java.lang.String
   type SortField = java.lang.String
-  type SortOrder = awsDashSdkLib.awsDashSdkLibStrings.ASCENDING | awsDashSdkLib.awsDashSdkLibStrings.DESCENDING | java.lang.String
+  type SortOrder = _SortOrder | java.lang.String
   type SourceProvisioningArtifactProperties = js.Array[SourceProvisioningArtifactPropertiesMap]
   type StackSetAccounts = js.Array[AccountId]
   type StackSetFailureToleranceCount = scala.Double
   type StackSetFailureTolerancePercentage = scala.Double
   type StackSetMaxConcurrencyCount = scala.Double
   type StackSetMaxConcurrencyPercentage = scala.Double
-  type StackSetOperationType = awsDashSdkLib.awsDashSdkLibStrings.CREATE | awsDashSdkLib.awsDashSdkLibStrings.UPDATE | awsDashSdkLib.awsDashSdkLibStrings.DELETE | java.lang.String
+  type StackSetOperationType = _StackSetOperationType | java.lang.String
   type StackSetRegions = js.Array[Region]
-  type Status = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type Status = _Status | java.lang.String
   type StatusDetail = java.lang.String
   type StatusMessage = java.lang.String
   type SuccessfulShares = js.Array[AccountId]
@@ -5179,6 +5227,6 @@ object ServiceCatalogNs extends js.Object {
   type UserArn = java.lang.String
   type UserArnSession = java.lang.String
   type Verbose = scala.Boolean
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-12-10` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

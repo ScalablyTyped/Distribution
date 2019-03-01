@@ -15,3 +15,26 @@ trait Anon_CancelColor extends js.Object {
   var title: java.lang.String
 }
 
+object Anon_CancelColor {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    title: java.lang.String,
+    cancelColor: java.lang.String = null,
+    cancelText: java.lang.String = null,
+    confirmColor: java.lang.String = null,
+    confirmText: java.lang.String = null,
+    showCancel: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_CancelColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("title")(title)
+    if (cancelColor != null) __obj.updateDynamic("cancelColor")(cancelColor)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
+    if (confirmColor != null) __obj.updateDynamic("confirmColor")(confirmColor)
+    if (confirmText != null) __obj.updateDynamic("confirmText")(confirmText)
+    if (!js.isUndefined(showCancel)) __obj.updateDynamic("showCancel")(showCancel)
+    __obj.asInstanceOf[Anon_CancelColor]
+  }
+}
+

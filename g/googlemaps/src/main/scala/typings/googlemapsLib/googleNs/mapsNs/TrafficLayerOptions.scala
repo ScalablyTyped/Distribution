@@ -10,3 +10,13 @@ trait TrafficLayerOptions extends js.Object {
   var map: js.UndefOr[Map] = js.undefined
 }
 
+object TrafficLayerOptions {
+  @scala.inline
+  def apply(autoRefresh: js.UndefOr[scala.Boolean] = js.undefined, map: Map = null): TrafficLayerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoRefresh)) __obj.updateDynamic("autoRefresh")(autoRefresh)
+    if (map != null) __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[TrafficLayerOptions]
+  }
+}
+

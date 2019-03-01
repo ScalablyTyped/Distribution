@@ -9,3 +9,12 @@ trait AppInfoOptions extends js.Object {
   var allowStop: java.lang.String
 }
 
+object AppInfoOptions {
+  @scala.inline
+  def apply(allowStop: java.lang.String): AppInfoOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowStop")(allowStop)
+    __obj.asInstanceOf[AppInfoOptions]
+  }
+}
+

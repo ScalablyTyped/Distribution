@@ -14,3 +14,12 @@ trait HeapStatsUpdateEventDataType extends js.Object {
   var statsUpdate: js.Array[scala.Double]
 }
 
+object HeapStatsUpdateEventDataType {
+  @scala.inline
+  def apply(statsUpdate: js.Array[scala.Double]): HeapStatsUpdateEventDataType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("statsUpdate")(statsUpdate)
+    __obj.asInstanceOf[HeapStatsUpdateEventDataType]
+  }
+}
+

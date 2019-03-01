@@ -52,3 +52,35 @@ trait ShapeDataSourceSettings
   var transformRecord: js.UndefOr[js.Function] = js.undefined
 }
 
+object ShapeDataSourceSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for ShapeDataSourceSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    callback: js.Function = null,
+    callee: js.Any = null,
+    databaseSource: java.lang.String = null,
+    id: java.lang.String = null,
+    importCompleted: js.Function = null,
+    shapefileSource: java.lang.String = null,
+    transformBounds: js.Function = null,
+    transformPoint: js.Function = null,
+    transformRecord: js.Function = null
+  ): ShapeDataSourceSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callee != null) __obj.updateDynamic("callee")(callee)
+    if (databaseSource != null) __obj.updateDynamic("databaseSource")(databaseSource)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (importCompleted != null) __obj.updateDynamic("importCompleted")(importCompleted)
+    if (shapefileSource != null) __obj.updateDynamic("shapefileSource")(shapefileSource)
+    if (transformBounds != null) __obj.updateDynamic("transformBounds")(transformBounds)
+    if (transformPoint != null) __obj.updateDynamic("transformPoint")(transformPoint)
+    if (transformRecord != null) __obj.updateDynamic("transformRecord")(transformRecord)
+    __obj.asInstanceOf[ShapeDataSourceSettings]
+  }
+}
+

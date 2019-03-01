@@ -56,3 +56,36 @@ trait Model extends js.Object {
   var startDate: js.UndefOr[js.Any] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    dateFormat: java.lang.String = null,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSpinners: js.UndefOr[scala.Boolean] = js.undefined,
+    firstDayOfWeek: java.lang.String = null,
+    frequencies: js.Array[_] = null,
+    locale: java.lang.String = null,
+    maxDate: js.Any = null,
+    minDate: js.Any = null,
+    selectedRecurrenceType: scala.Int | scala.Double = null,
+    startDate: js.Any = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableSpinners)) __obj.updateDynamic("enableSpinners")(enableSpinners)
+    if (firstDayOfWeek != null) __obj.updateDynamic("firstDayOfWeek")(firstDayOfWeek)
+    if (frequencies != null) __obj.updateDynamic("frequencies")(frequencies)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (selectedRecurrenceType != null) __obj.updateDynamic("selectedRecurrenceType")(selectedRecurrenceType.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    __obj.asInstanceOf[Model]
+  }
+}
+

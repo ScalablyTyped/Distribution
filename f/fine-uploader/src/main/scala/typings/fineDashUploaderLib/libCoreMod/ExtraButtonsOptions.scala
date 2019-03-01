@@ -42,3 +42,22 @@ trait ExtraButtonsOptions extends js.Object {
   var validation: js.UndefOr[js.Any] = js.undefined
 }
 
+object ExtraButtonsOptions {
+  @scala.inline
+  def apply(
+    element: stdLib.HTMLElement,
+    fileInputTitle: java.lang.String = null,
+    folders: js.UndefOr[scala.Boolean] = js.undefined,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    validation: js.Any = null
+  ): ExtraButtonsOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element)
+    if (fileInputTitle != null) __obj.updateDynamic("fileInputTitle")(fileInputTitle)
+    if (!js.isUndefined(folders)) __obj.updateDynamic("folders")(folders)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (validation != null) __obj.updateDynamic("validation")(validation)
+    __obj.asInstanceOf[ExtraButtonsOptions]
+  }
+}
+

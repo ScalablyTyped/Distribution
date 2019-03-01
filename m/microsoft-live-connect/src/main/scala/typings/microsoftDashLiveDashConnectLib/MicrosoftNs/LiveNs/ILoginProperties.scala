@@ -45,3 +45,14 @@ trait ILoginProperties extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ILoginProperties {
+  @scala.inline
+  def apply(scope: js.Any, redirect_uri: java.lang.String = null, state: java.lang.String = null): ILoginProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scope")(scope)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ILoginProperties]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ExportParameters extends js.Object {
   var mimeType: java.lang.String
 }
 
+object ExportParameters {
+  @scala.inline
+  def apply(fileId: java.lang.String, mimeType: java.lang.String): ExportParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileId")(fileId)
+    __obj.updateDynamic("mimeType")(mimeType)
+    __obj.asInstanceOf[ExportParameters]
+  }
+}
+

@@ -31,3 +31,22 @@ trait XDefaultMethod
   def getDefaultMethodName(): java.lang.String
 }
 
+object XDefaultMethod {
+  @scala.inline
+  def apply(
+    DefaultMethodName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getDefaultMethodName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDefaultMethod = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DefaultMethodName")(DefaultMethodName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDefaultMethodName")(getDefaultMethodName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDefaultMethod]
+  }
+}
+

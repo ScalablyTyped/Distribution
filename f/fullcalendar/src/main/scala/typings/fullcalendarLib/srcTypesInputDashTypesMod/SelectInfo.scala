@@ -11,3 +11,18 @@ trait SelectInfo extends js.Object {
   var start: momentLib.momentMod.momentNs.Moment
 }
 
+object SelectInfo {
+  @scala.inline
+  def apply(
+    end: momentLib.momentMod.momentNs.Moment,
+    start: momentLib.momentMod.momentNs.Moment,
+    resourceId: java.lang.String = null
+  ): SelectInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    if (resourceId != null) __obj.updateDynamic("resourceId")(resourceId)
+    __obj.asInstanceOf[SelectInfo]
+  }
+}
+

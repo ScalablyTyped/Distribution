@@ -11,3 +11,18 @@ trait DiagramConnectionDefaultsStartCap extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DiagramConnectionDefaultsStartCap {
+  @scala.inline
+  def apply(
+    fill: java.lang.String | DiagramConnectionDefaultsStartCapFill = null,
+    stroke: java.lang.String | DiagramConnectionDefaultsStartCapStroke = null,
+    `type`: java.lang.String = null
+  ): DiagramConnectionDefaultsStartCap = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DiagramConnectionDefaultsStartCap]
+  }
+}
+

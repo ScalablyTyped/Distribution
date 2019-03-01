@@ -11,3 +11,13 @@ trait Anon_CookieDuration extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_CookieDuration {
+  @scala.inline
+  def apply(cookieDuration: scala.Double, enabled: scala.Boolean, `type`: java.lang.String): Anon_CookieDuration = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("cookieDuration")(cookieDuration)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[Anon_CookieDuration]
+  }
+}
+

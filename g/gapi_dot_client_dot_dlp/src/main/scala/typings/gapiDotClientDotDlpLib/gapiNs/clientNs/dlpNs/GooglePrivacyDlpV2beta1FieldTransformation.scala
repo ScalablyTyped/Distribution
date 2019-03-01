@@ -29,3 +29,20 @@ trait GooglePrivacyDlpV2beta1FieldTransformation extends js.Object {
   var primitiveTransformation: js.UndefOr[GooglePrivacyDlpV2beta1PrimitiveTransformation] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1FieldTransformation {
+  @scala.inline
+  def apply(
+    condition: GooglePrivacyDlpV2beta1RecordCondition = null,
+    fields: js.Array[GooglePrivacyDlpV2beta1FieldId] = null,
+    infoTypeTransformations: GooglePrivacyDlpV2beta1InfoTypeTransformations = null,
+    primitiveTransformation: GooglePrivacyDlpV2beta1PrimitiveTransformation = null
+  ): GooglePrivacyDlpV2beta1FieldTransformation = {
+    val __obj = js.Dynamic.literal()
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (infoTypeTransformations != null) __obj.updateDynamic("infoTypeTransformations")(infoTypeTransformations)
+    if (primitiveTransformation != null) __obj.updateDynamic("primitiveTransformation")(primitiveTransformation)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1FieldTransformation]
+  }
+}
+

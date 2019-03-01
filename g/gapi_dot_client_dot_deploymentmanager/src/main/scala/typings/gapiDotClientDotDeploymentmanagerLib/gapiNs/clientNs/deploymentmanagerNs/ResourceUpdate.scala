@@ -24,3 +24,28 @@ trait ResourceUpdate extends js.Object {
   var warnings: js.UndefOr[js.Array[gapiDotClientDotDeploymentmanagerLib.Anon_CodeData]] = js.undefined
 }
 
+object ResourceUpdate {
+  @scala.inline
+  def apply(
+    accessControl: ResourceAccessControl = null,
+    error: gapiDotClientDotDeploymentmanagerLib.Anon_Errors = null,
+    finalProperties: java.lang.String = null,
+    intent: java.lang.String = null,
+    manifest: java.lang.String = null,
+    properties: java.lang.String = null,
+    state: java.lang.String = null,
+    warnings: js.Array[gapiDotClientDotDeploymentmanagerLib.Anon_CodeData] = null
+  ): ResourceUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (accessControl != null) __obj.updateDynamic("accessControl")(accessControl)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (finalProperties != null) __obj.updateDynamic("finalProperties")(finalProperties)
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[ResourceUpdate]
+  }
+}
+

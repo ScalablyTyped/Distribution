@@ -221,3 +221,96 @@ trait ASPxClientWebChartHitInfo extends js.Object {
   var trendLine: ASPxClientTrendLine
 }
 
+object ASPxClientWebChartHitInfo {
+  @scala.inline
+  def apply(
+    annotation: ASPxClientAnnotation,
+    axis: ASPxClientAxisBase,
+    axisLabelItem: ASPxClientAxisLabelItem,
+    axisTitle: ASPxClientAxisTitle,
+    chart: ASPxClientWebChart,
+    chartTitle: ASPxClientChartTitle,
+    constantLine: ASPxClientConstantLine,
+    customLegendItem: ASPxClientCustomLegendItem,
+    diagram: ASPxClientXYDiagramBase,
+    fibonacciIndicator: ASPxClientFibonacciIndicator,
+    hyperlink: java.lang.String,
+    inAnnotation: scala.Boolean,
+    inAxis: scala.Boolean,
+    inAxisLabelItem: scala.Boolean,
+    inAxisTitle: scala.Boolean,
+    inChart: scala.Boolean,
+    inChartTitle: scala.Boolean,
+    inConstantLine: scala.Boolean,
+    inCustomLegendItem: scala.Boolean,
+    inDiagram: scala.Boolean,
+    inFibonacciIndicator: scala.Boolean,
+    inHyperlink: scala.Boolean,
+    inIndicator: scala.Boolean,
+    inLegend: scala.Boolean,
+    inNonDefaultPane: scala.Boolean,
+    inPaneTitle: scala.Boolean,
+    inRegressionLine: scala.Boolean,
+    inSeries: scala.Boolean,
+    inSeriesLabel: scala.Boolean,
+    inSeriesPoint: scala.Boolean,
+    inSeriesTitle: scala.Boolean,
+    inTrendLine: scala.Boolean,
+    indicator: ASPxClientIndicator,
+    legend: ASPxClientLegend,
+    nonDefaultPane: ASPxClientXYDiagramPane,
+    paneTitle: ASPxClientPaneTitle,
+    regressionLine: ASPxClientRegressionLine,
+    series: ASPxClientSeries,
+    seriesLabel: ASPxClientSeriesLabel,
+    seriesPoint: ASPxClientSeriesPoint,
+    seriesTitle: ASPxClientSeriesTitle,
+    trendLine: ASPxClientTrendLine
+  ): ASPxClientWebChartHitInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotation")(annotation)
+    __obj.updateDynamic("axis")(axis)
+    __obj.updateDynamic("axisLabelItem")(axisLabelItem)
+    __obj.updateDynamic("axisTitle")(axisTitle)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("chartTitle")(chartTitle)
+    __obj.updateDynamic("constantLine")(constantLine)
+    __obj.updateDynamic("customLegendItem")(customLegendItem)
+    __obj.updateDynamic("diagram")(diagram)
+    __obj.updateDynamic("fibonacciIndicator")(fibonacciIndicator)
+    __obj.updateDynamic("hyperlink")(hyperlink)
+    __obj.updateDynamic("inAnnotation")(inAnnotation)
+    __obj.updateDynamic("inAxis")(inAxis)
+    __obj.updateDynamic("inAxisLabelItem")(inAxisLabelItem)
+    __obj.updateDynamic("inAxisTitle")(inAxisTitle)
+    __obj.updateDynamic("inChart")(inChart)
+    __obj.updateDynamic("inChartTitle")(inChartTitle)
+    __obj.updateDynamic("inConstantLine")(inConstantLine)
+    __obj.updateDynamic("inCustomLegendItem")(inCustomLegendItem)
+    __obj.updateDynamic("inDiagram")(inDiagram)
+    __obj.updateDynamic("inFibonacciIndicator")(inFibonacciIndicator)
+    __obj.updateDynamic("inHyperlink")(inHyperlink)
+    __obj.updateDynamic("inIndicator")(inIndicator)
+    __obj.updateDynamic("inLegend")(inLegend)
+    __obj.updateDynamic("inNonDefaultPane")(inNonDefaultPane)
+    __obj.updateDynamic("inPaneTitle")(inPaneTitle)
+    __obj.updateDynamic("inRegressionLine")(inRegressionLine)
+    __obj.updateDynamic("inSeries")(inSeries)
+    __obj.updateDynamic("inSeriesLabel")(inSeriesLabel)
+    __obj.updateDynamic("inSeriesPoint")(inSeriesPoint)
+    __obj.updateDynamic("inSeriesTitle")(inSeriesTitle)
+    __obj.updateDynamic("inTrendLine")(inTrendLine)
+    __obj.updateDynamic("indicator")(indicator)
+    __obj.updateDynamic("legend")(legend)
+    __obj.updateDynamic("nonDefaultPane")(nonDefaultPane)
+    __obj.updateDynamic("paneTitle")(paneTitle)
+    __obj.updateDynamic("regressionLine")(regressionLine)
+    __obj.updateDynamic("series")(series)
+    __obj.updateDynamic("seriesLabel")(seriesLabel)
+    __obj.updateDynamic("seriesPoint")(seriesPoint)
+    __obj.updateDynamic("seriesTitle")(seriesTitle)
+    __obj.updateDynamic("trendLine")(trendLine)
+    __obj.asInstanceOf[ASPxClientWebChartHitInfo]
+  }
+}
+

@@ -21,3 +21,18 @@ trait SpeechRecognitionAlternative extends js.Object {
   var words: js.UndefOr[js.Array[WordInfo]] = js.undefined
 }
 
+object SpeechRecognitionAlternative {
+  @scala.inline
+  def apply(
+    confidence: scala.Int | scala.Double = null,
+    transcript: java.lang.String = null,
+    words: js.Array[WordInfo] = null
+  ): SpeechRecognitionAlternative = {
+    val __obj = js.Dynamic.literal()
+    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (transcript != null) __obj.updateDynamic("transcript")(transcript)
+    if (words != null) __obj.updateDynamic("words")(words)
+    __obj.asInstanceOf[SpeechRecognitionAlternative]
+  }
+}
+

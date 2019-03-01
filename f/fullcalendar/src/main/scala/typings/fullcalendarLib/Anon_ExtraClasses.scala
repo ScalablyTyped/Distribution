@@ -10,3 +10,13 @@ trait Anon_ExtraClasses extends js.Object {
   var layout: js.Any
 }
 
+object Anon_ExtraClasses {
+  @scala.inline
+  def apply(extraClasses: java.lang.String, layout: js.Any): Anon_ExtraClasses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extraClasses")(extraClasses)
+    __obj.updateDynamic("layout")(layout)
+    __obj.asInstanceOf[Anon_ExtraClasses]
+  }
+}
+

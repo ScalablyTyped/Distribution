@@ -54,3 +54,30 @@ trait RegexpFilter extends Filter {
   def value(p: java.lang.String): RegexpFilter
 }
 
+object RegexpFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, RegexpFilter],
+    cacheKey: js.Function1[java.lang.String, RegexpFilter],
+    field: js.Function1[java.lang.String, RegexpFilter],
+    flags: js.Function1[java.lang.String, RegexpFilter],
+    flagsValue: js.Function1[java.lang.String, RegexpFilter],
+    name: js.Function1[java.lang.String, RegexpFilter],
+    toJSON: js.Function0[RegexpFilter],
+    value: js.Function1[java.lang.String, RegexpFilter]
+  ): RegexpFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("flagsValue")(flagsValue)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[RegexpFilter]
+  }
+}
+

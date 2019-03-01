@@ -17,3 +17,21 @@ trait Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPay
   var promise: js.UndefOr[js.Promise[TSuccessPayload]] = js.undefined
 }
 
+object Action {
+  @scala.inline
+  def apply[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload](
+    `type`: js.Any,
+    error: js.UndefOr[scala.Boolean] = js.undefined,
+    meta: (ActionMeta[TFullState, TSuccessPayload, TErrorPayload, TStartPayload]) with TMetaPayload = null,
+    payload: TSuccessPayload | TErrorPayload | TStartPayload = null,
+    promise: js.Promise[TSuccessPayload] = null
+  ): Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (promise != null) __obj.updateDynamic("promise")(promise)
+    __obj.asInstanceOf[Action[TFullState, TSuccessPayload, TErrorPayload, TStartPayload, TMetaPayload]]
+  }
+}
+

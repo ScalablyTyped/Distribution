@@ -10,3 +10,13 @@ trait RelayOption extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RelayOption {
+  @scala.inline
+  def apply(pin: scala.Double | java.lang.String, `type`: java.lang.String = null): RelayOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RelayOption]
+  }
+}
+

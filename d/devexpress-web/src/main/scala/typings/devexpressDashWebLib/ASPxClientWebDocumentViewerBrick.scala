@@ -46,3 +46,26 @@ trait ASPxClientWebDocumentViewerBrick extends js.Object {
   var width: scala.Double
 }
 
+object ASPxClientWebDocumentViewerBrick {
+  @scala.inline
+  def apply(
+    content: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    height: scala.Double,
+    left: scala.Double,
+    navigation: ASPxClientWebDocumentViewerBrickNavigation,
+    rtl: scala.Boolean,
+    top: scala.Double,
+    width: scala.Double
+  ): ASPxClientWebDocumentViewerBrick = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("navigation")(navigation)
+    __obj.updateDynamic("rtl")(rtl)
+    __obj.updateDynamic("top")(top)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ASPxClientWebDocumentViewerBrick]
+  }
+}
+

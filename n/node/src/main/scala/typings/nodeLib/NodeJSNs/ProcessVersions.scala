@@ -16,3 +16,28 @@ trait ProcessVersions extends js.Object {
   var zlib: java.lang.String
 }
 
+object ProcessVersions {
+  @scala.inline
+  def apply(
+    ares: java.lang.String,
+    http_parser: java.lang.String,
+    modules: java.lang.String,
+    node: java.lang.String,
+    openssl: java.lang.String,
+    uv: java.lang.String,
+    v8: java.lang.String,
+    zlib: java.lang.String
+  ): ProcessVersions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ares")(ares)
+    __obj.updateDynamic("http_parser")(http_parser)
+    __obj.updateDynamic("modules")(modules)
+    __obj.updateDynamic("node")(node)
+    __obj.updateDynamic("openssl")(openssl)
+    __obj.updateDynamic("uv")(uv)
+    __obj.updateDynamic("v8")(v8)
+    __obj.updateDynamic("zlib")(zlib)
+    __obj.asInstanceOf[ProcessVersions]
+  }
+}
+

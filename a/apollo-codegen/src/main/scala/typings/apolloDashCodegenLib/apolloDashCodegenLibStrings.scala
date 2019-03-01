@@ -7,40 +7,58 @@ import scala.scalajs.js.annotation._
 
 object apolloDashCodegenLibStrings {
   @js.native
-  sealed trait flow extends js.Object
+  sealed trait SCALA
+    extends apolloDashCodegenLib.apolloDashCodegenMod.TargetType
   
   @js.native
-  sealed trait `flow-legacy` extends js.Object
+  sealed trait flow
+    extends apolloDashCodegenLib.apolloDashCodegenMod.TargetType
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait `flow-legacy`
+    extends apolloDashCodegenLib.apolloDashCodegenMod.TargetType
   
   @js.native
-  sealed trait scala extends js.Object
+  sealed trait json
+    extends apolloDashCodegenLib.apolloDashCodegenMod.TargetType
   
   @js.native
-  sealed trait swift extends js.Object
+  sealed trait swift
+    extends apolloDashCodegenLib.apolloDashCodegenMod.TargetType
   
   @js.native
-  sealed trait ts extends js.Object
+  sealed trait ts
+    extends apolloDashCodegenLib.apolloDashCodegenMod.TargetType
   
   @js.native
-  sealed trait `ts-legacy` extends js.Object
+  sealed trait `ts-legacy`
+    extends apolloDashCodegenLib.apolloDashCodegenMod.TargetType
   
   @js.native
-  sealed trait typescript extends js.Object
+  sealed trait typescript
+    extends apolloDashCodegenLib.apolloDashCodegenMod.TargetType
   
   @js.native
-  sealed trait `typescript-legacy` extends js.Object
+  sealed trait `typescript-legacy`
+    extends apolloDashCodegenLib.apolloDashCodegenMod.TargetType
   
+  @scala.inline
+  def SCALA: SCALA = "scala".asInstanceOf[SCALA]
+  @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
+  @scala.inline
   def `flow-legacy`: `flow-legacy` = "flow-legacy".asInstanceOf[`flow-legacy`]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
-  def scala: scala = "scala".asInstanceOf[scala]
+  @scala.inline
   def swift: swift = "swift".asInstanceOf[swift]
+  @scala.inline
   def ts: ts = "ts".asInstanceOf[ts]
+  @scala.inline
   def `ts-legacy`: `ts-legacy` = "ts-legacy".asInstanceOf[`ts-legacy`]
+  @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
+  @scala.inline
   def `typescript-legacy`: `typescript-legacy` = "typescript-legacy".asInstanceOf[`typescript-legacy`]
 }
 

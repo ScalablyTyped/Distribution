@@ -18,3 +18,22 @@ trait AndroidRoboTest extends js.Object {
   var maxSteps: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AndroidRoboTest {
+  @scala.inline
+  def apply(
+    appInitialActivity: java.lang.String = null,
+    bootstrapPackageId: java.lang.String = null,
+    bootstrapRunnerClass: java.lang.String = null,
+    maxDepth: scala.Int | scala.Double = null,
+    maxSteps: scala.Int | scala.Double = null
+  ): AndroidRoboTest = {
+    val __obj = js.Dynamic.literal()
+    if (appInitialActivity != null) __obj.updateDynamic("appInitialActivity")(appInitialActivity)
+    if (bootstrapPackageId != null) __obj.updateDynamic("bootstrapPackageId")(bootstrapPackageId)
+    if (bootstrapRunnerClass != null) __obj.updateDynamic("bootstrapRunnerClass")(bootstrapRunnerClass)
+    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
+    if (maxSteps != null) __obj.updateDynamic("maxSteps")(maxSteps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AndroidRoboTest]
+  }
+}
+

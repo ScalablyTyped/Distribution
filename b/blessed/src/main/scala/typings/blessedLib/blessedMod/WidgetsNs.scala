@@ -1072,6 +1072,7 @@ object WidgetsNs extends js.Object {
       * Select item based on current offset.
       */
     def move(offset: scala.Double): scala.Unit = js.native
+    def on(event: ListElementEventType, callback: js.Function0[scala.Unit]): this.type = js.native
     /** Received when an item is selected. */
     @JSName("on")
     def on_select(
@@ -1129,6 +1130,8 @@ object WidgetsNs extends js.Object {
       */
     def up(amount: scala.Double): scala.Unit = js.native
   }
+  
+  trait ListElementEventType extends js.Object
   
   trait ListElementStyle extends js.Object {
     var item: js.UndefOr[js.Any] = js.undefined
@@ -1468,6 +1471,14 @@ object WidgetsNs extends js.Object {
     var timeout: js.UndefOr[scala.Double] = js.undefined
   }
   
+  trait NodeEventType extends js.Object
+  
+  trait NodeGenericEventType extends js.Object
+  
+  trait NodeMouseEventType extends js.Object
+  
+  trait NodeScreenEventType extends js.Object
+  
   @js.native
   class NodeWithEvents () extends Node {
     /**
@@ -1490,6 +1501,12 @@ object WidgetsNs extends js.Object {
         ]
     ): scala.Unit = js.native
     def on(event: NodeGenericEventType, callback: js.Function0[scala.Unit]): this.type = js.native
+    /** Received on mouse events. */
+    def on(
+      event: NodeMouseEventType,
+      callback: js.Function1[/* arg */ blessedLib.blessedMod.WidgetsNs.EventsNs.IMouseEventArg, scala.Unit]
+    ): this.type = js.native
+    def on(event: NodeScreenEventType, callback: js.Function1[/* arg */ Screen, scala.Unit]): this.type = js.native
     def on(
       event: java.lang.String,
       listener: js.Function2[
@@ -2342,6 +2359,7 @@ object WidgetsNs extends js.Object {
       * the final value.
       */
     def input(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[java.lang.String], scala.Unit]): scala.Unit = js.native
+    def on(event: TextareaElementEventType, callback: js.Function1[/* err */ js.Any, scala.Unit]): this.type = js.native
     /**
       * Open text editor in $EDITOR, read the output from the resulting file. Takes a callback which
       * receives the final value.
@@ -2372,6 +2390,8 @@ object WidgetsNs extends js.Object {
       */
     def submit(): scala.Unit = js.native
   }
+  
+  trait TextareaElementEventType extends js.Object
   
   /**
     * A box which allows multiline text input.
@@ -2512,6 +2532,8 @@ object WidgetsNs extends js.Object {
       def callback(): scala.Unit
     }
     
+    trait TAlign extends js.Object
+    
     trait TBorder extends js.Object {
       /**
         * Border foreground and background, must be numbers (-1 for default).
@@ -2571,6 +2593,8 @@ object WidgetsNs extends js.Object {
       var width: scala.Double
     }
     
+    trait TMouseAction extends js.Object
+    
     trait TStyle extends js.Object {
       var bg: js.UndefOr[java.lang.String] = js.undefined
       var blink: js.UndefOr[scala.Boolean] = js.undefined
@@ -2590,25 +2614,17 @@ object WidgetsNs extends js.Object {
       var underline: js.UndefOr[scala.Boolean] = js.undefined
     }
     
-    type TAlign = blessedLib.blessedLibStrings.left | blessedLib.blessedLibStrings.center | blessedLib.blessedLibStrings.right
-    type TMouseAction = blessedLib.blessedLibStrings.mousedown | blessedLib.blessedLibStrings.mouseup | blessedLib.blessedLibStrings.mousemove
     type TPosition = java.lang.String | scala.Double
     type TTopLeft = java.lang.String | scala.Double | blessedLib.blessedLibStrings.center
   }
   
   type ButtonOptions = BoxOptions
   type InputOptions = BoxOptions
-  type ListElementEventType = blessedLib.blessedLibStrings.cancel | blessedLib.blessedLibStrings.action | (blessedLib.blessedLibStrings.`create item`) | (blessedLib.blessedLibStrings.`add item`) | (blessedLib.blessedLibStrings.`remove item`) | (blessedLib.blessedLibStrings.`insert item`) | (blessedLib.blessedLibStrings.`set items`)
   type LoadingOptions = BoxOptions
   type MessageOptions = BoxOptions
-  type NodeEventType = blessedLib.blessedLibStrings.adopt | blessedLib.blessedLibStrings.remove | blessedLib.blessedLibStrings.reparent | blessedLib.blessedLibStrings.attach | blessedLib.blessedLibStrings.detach
-  type NodeGenericEventType = blessedLib.blessedLibStrings.resize | blessedLib.blessedLibStrings.prerender | blessedLib.blessedLibStrings.render | blessedLib.blessedLibStrings.destroy | blessedLib.blessedLibStrings.move | blessedLib.blessedLibStrings.show | blessedLib.blessedLibStrings.hide | (blessedLib.blessedLibStrings.`set content`) | (blessedLib.blessedLibStrings.`parsed content`)
-  type NodeMouseEventType = blessedLib.blessedLibStrings.mouse | blessedLib.blessedLibStrings.mouseout | blessedLib.blessedLibStrings.mouseover | blessedLib.blessedLibStrings.mousedown | blessedLib.blessedLibStrings.mouseup | blessedLib.blessedLibStrings.mousewheel | blessedLib.blessedLibStrings.wheeldown | blessedLib.blessedLibStrings.wheelup | blessedLib.blessedLibStrings.mousemove
-  type NodeScreenEventType = blessedLib.blessedLibStrings.focus | blessedLib.blessedLibStrings.blur | blessedLib.blessedLibStrings.click | (blessedLib.blessedLibStrings.`element click`) | (blessedLib.blessedLibStrings.`element mouseover`) | (blessedLib.blessedLibStrings.`element mouseout`) | (blessedLib.blessedLibStrings.`element mouseup`)
   type PromptOptions = BoxOptions
   type QuestionOptions = BoxOptions
   type RadioButtonOptions = BoxOptions
   type RadioSetOptions = BoxOptions
-  type TextareaElementEventType = blessedLib.blessedLibStrings.error | blessedLib.blessedLibStrings.submit | blessedLib.blessedLibStrings.cancel | blessedLib.blessedLibStrings.action
 }
 

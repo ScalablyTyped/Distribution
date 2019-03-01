@@ -40,3 +40,24 @@ trait IGetBoundaryRequestOptions extends js.Object {
   var userRegion: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IGetBoundaryRequestOptions {
+  @scala.inline
+  def apply(
+    culture: java.lang.String = null,
+    entityType: java.lang.String = null,
+    getAllPolygons: js.UndefOr[scala.Boolean] = js.undefined,
+    getEntityMetadata: js.UndefOr[scala.Boolean] = js.undefined,
+    lod: scala.Int | scala.Double = null,
+    userRegion: java.lang.String = null
+  ): IGetBoundaryRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (entityType != null) __obj.updateDynamic("entityType")(entityType)
+    if (!js.isUndefined(getAllPolygons)) __obj.updateDynamic("getAllPolygons")(getAllPolygons)
+    if (!js.isUndefined(getEntityMetadata)) __obj.updateDynamic("getEntityMetadata")(getEntityMetadata)
+    if (lod != null) __obj.updateDynamic("lod")(lod.asInstanceOf[js.Any])
+    if (userRegion != null) __obj.updateDynamic("userRegion")(userRegion)
+    __obj.asInstanceOf[IGetBoundaryRequestOptions]
+  }
+}
+

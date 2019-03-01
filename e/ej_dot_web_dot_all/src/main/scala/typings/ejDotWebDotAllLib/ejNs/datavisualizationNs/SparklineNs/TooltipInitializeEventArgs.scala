@@ -29,3 +29,26 @@ trait TooltipInitializeEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TooltipInitializeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentText: java.lang.String = null,
+    locationX: js.Any = null,
+    locationY: js.Any = null,
+    model: js.Any = null,
+    pointIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): TooltipInitializeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentText != null) __obj.updateDynamic("currentText")(currentText)
+    if (locationX != null) __obj.updateDynamic("locationX")(locationX)
+    if (locationY != null) __obj.updateDynamic("locationY")(locationY)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (pointIndex != null) __obj.updateDynamic("pointIndex")(pointIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[TooltipInitializeEventArgs]
+  }
+}
+

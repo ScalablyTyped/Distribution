@@ -19,3 +19,34 @@ trait Anon_AmpmWheelLabel extends js.Object {
   var tooltipTimeDisabled: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AmpmWheelLabel {
+  @scala.inline
+  def apply(
+    ampmWheelLabel: java.lang.String = null,
+    cancelText: java.lang.String = null,
+    currentTimeText: java.lang.String = null,
+    dateTimeRange: Anon_HintMessageDetail = null,
+    hourWheelLabel: java.lang.String = null,
+    minuteWheelLabel: java.lang.String = null,
+    okText: java.lang.String = null,
+    regexp: Anon_MessageDetail = null,
+    required: Anon_Hint = null,
+    tooltipTime: java.lang.String = null,
+    tooltipTimeDisabled: java.lang.String = null
+  ): Anon_AmpmWheelLabel = {
+    val __obj = js.Dynamic.literal()
+    if (ampmWheelLabel != null) __obj.updateDynamic("ampmWheelLabel")(ampmWheelLabel)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText)
+    if (currentTimeText != null) __obj.updateDynamic("currentTimeText")(currentTimeText)
+    if (dateTimeRange != null) __obj.updateDynamic("dateTimeRange")(dateTimeRange)
+    if (hourWheelLabel != null) __obj.updateDynamic("hourWheelLabel")(hourWheelLabel)
+    if (minuteWheelLabel != null) __obj.updateDynamic("minuteWheelLabel")(minuteWheelLabel)
+    if (okText != null) __obj.updateDynamic("okText")(okText)
+    if (regexp != null) __obj.updateDynamic("regexp")(regexp)
+    if (required != null) __obj.updateDynamic("required")(required)
+    if (tooltipTime != null) __obj.updateDynamic("tooltipTime")(tooltipTime)
+    if (tooltipTimeDisabled != null) __obj.updateDynamic("tooltipTimeDisabled")(tooltipTimeDisabled)
+    __obj.asInstanceOf[Anon_AmpmWheelLabel]
+  }
+}
+

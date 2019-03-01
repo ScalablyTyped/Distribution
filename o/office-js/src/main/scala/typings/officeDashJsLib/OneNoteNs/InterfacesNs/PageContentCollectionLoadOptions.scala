@@ -72,3 +72,30 @@ trait PageContentCollectionLoadOptions extends js.Object {
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PageContentCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    image: ImageLoadOptions = null,
+    ink: FloatingInkLoadOptions = null,
+    left: js.UndefOr[scala.Boolean] = js.undefined,
+    outline: OutlineLoadOptions = null,
+    parentPage: PageLoadOptions = null,
+    top: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined
+  ): PageContentCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (ink != null) __obj.updateDynamic("ink")(ink)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (parentPage != null) __obj.updateDynamic("parentPage")(parentPage)
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PageContentCollectionLoadOptions]
+  }
+}
+

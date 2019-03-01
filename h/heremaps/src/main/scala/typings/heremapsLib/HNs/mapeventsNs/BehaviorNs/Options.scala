@@ -15,3 +15,16 @@ trait Options extends js.Object {
   var kinetics: js.UndefOr[heremapsLib.HNs.utilNs.kineticsNs.IKinetics] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    enable: js.UndefOr[heremapsLib.HNs.mathNs.BitMask] = js.undefined,
+    kinetics: heremapsLib.HNs.utilNs.kineticsNs.IKinetics = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (kinetics != null) __obj.updateDynamic("kinetics")(kinetics)
+    __obj.asInstanceOf[Options]
+  }
+}
+

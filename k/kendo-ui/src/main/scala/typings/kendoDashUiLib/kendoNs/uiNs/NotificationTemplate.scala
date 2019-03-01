@@ -10,3 +10,13 @@ trait NotificationTemplate extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NotificationTemplate {
+  @scala.inline
+  def apply(template: java.lang.String = null, `type`: java.lang.String = null): NotificationTemplate = {
+    val __obj = js.Dynamic.literal()
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NotificationTemplate]
+  }
+}
+

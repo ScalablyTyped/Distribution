@@ -7,331 +7,440 @@ import scala.scalajs.js.annotation._
 
 object solidityDashParserDashAntlrLibStrings {
   @js.native
-  sealed trait `!=` extends js.Object
+  sealed trait `!=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `%` extends js.Object
+  sealed trait `%`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `%=` extends js.Object
+  sealed trait `%=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `&` extends js.Object
+  sealed trait `&`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `&&` extends js.Object
+  sealed trait `&&`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `&=` extends js.Object
+  sealed trait `&=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait `*`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `**` extends js.Object
+  sealed trait `**`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `*=` extends js.Object
+  sealed trait `*=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `+` extends js.Object
+  sealed trait `+`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `+=` extends js.Object
+  sealed trait `+=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `-` extends js.Object
+  sealed trait `-`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `-=` extends js.Object
+  sealed trait `-=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `/` extends js.Object
+  sealed trait `/`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `/=` extends js.Object
+  sealed trait `/=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `<<` extends js.Object
+  sealed trait `<<`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `<<=` extends js.Object
+  sealed trait `<<=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait `=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `==` extends js.Object
+  sealed trait `==`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `>>` extends js.Object
+  sealed trait `>>`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `>>=` extends js.Object
+  sealed trait `>>=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait AssemblyAssignment extends js.Object
+  sealed trait AssemblyAssignment
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyBlock extends js.Object
+  sealed trait AssemblyBlock
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyCall extends js.Object
+  sealed trait AssemblyCall
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyCase extends js.Object
+  sealed trait AssemblyCase
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyExpression extends js.Object
+  sealed trait AssemblyExpression
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyFor extends js.Object
+  sealed trait AssemblyFor
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyFunctionDefinition extends js.Object
+  sealed trait AssemblyFunctionDefinition
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyFunctionReturns extends js.Object
+  sealed trait AssemblyFunctionReturns
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyIdentifierList extends js.Object
+  sealed trait AssemblyIdentifierList
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyIdentifierOrList extends js.Object
+  sealed trait AssemblyIdentifierOrList
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyIf extends js.Object
+  sealed trait AssemblyIf
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyItem extends js.Object
+  sealed trait AssemblyItem
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyLiteral extends js.Object
+  sealed trait AssemblyLiteral
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyLocalDefinition extends js.Object
+  sealed trait AssemblyLocalDefinition
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblyStackAssignment extends js.Object
+  sealed trait AssemblyStackAssignment
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait AssemblySwitch extends js.Object
+  sealed trait AssemblySwitch
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait BinaryOperation extends js.Object
+  sealed trait BinaryOperation
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait Block extends js.Object
+  sealed trait Block
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait BreakStatement extends js.Object
+  sealed trait BreakStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait Conditional extends js.Object
+  sealed trait Conditional
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ContinueStatement extends js.Object
+  sealed trait ContinueStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ContractDefinition extends js.Object
+  sealed trait ContractDefinition
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ContractPart extends js.Object
+  sealed trait ContractPart
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait DoWhileStatement extends js.Object
+  sealed trait DoWhileStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ElementaryTypeName extends js.Object
+  sealed trait ElementaryTypeName
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ElementaryTypeNameExpression extends js.Object
+  sealed trait ElementaryTypeNameExpression
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait EnumDefinition extends js.Object
+  sealed trait EnumDefinition
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait EnumValue extends js.Object
+  sealed trait EnumValue
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait EventDefinition extends js.Object
+  sealed trait EventDefinition
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait EventParameter extends js.Object
+  sealed trait EventParameter
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait EventParameterList extends js.Object
+  sealed trait EventParameterList
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait Expression extends js.Object
+  sealed trait Expression
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ExpressionList extends js.Object
+  sealed trait ExpressionList
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ExpressionStatement extends js.Object
+  sealed trait ExpressionStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ForStatement extends js.Object
+  sealed trait ForStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait FunctionCallArguments extends js.Object
+  sealed trait FunctionCallArguments
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait FunctionDefinition extends js.Object
+  sealed trait FunctionDefinition
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait FunctionTypeName extends js.Object
+  sealed trait FunctionTypeName
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait FunctionTypeParameter extends js.Object
+  sealed trait FunctionTypeParameter
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait FunctionTypeParameterList extends js.Object
+  sealed trait FunctionTypeParameterList
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait Identifier extends js.Object
+  sealed trait Identifier
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait IdentifierList extends js.Object
+  sealed trait IdentifierList
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait IfStatement extends js.Object
+  sealed trait IfStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ImportDeclaration extends js.Object
+  sealed trait ImportDeclaration
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ImportDirective extends js.Object
+  sealed trait ImportDirective
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait InheritanceSpecifier extends js.Object
+  sealed trait InheritanceSpecifier
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait InlineAssemblyStatement extends js.Object
+  sealed trait InlineAssemblyStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait LabelDefinition extends js.Object
+  sealed trait LabelDefinition
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait Mapping extends js.Object
+  sealed trait Mapping
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ModifierDefinition extends js.Object
+  sealed trait ModifierDefinition
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ModifierInvocation extends js.Object
+  sealed trait ModifierInvocation
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ModifierList extends js.Object
+  sealed trait ModifierList
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait NameValue extends js.Object
+  sealed trait NameValue
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait NameValueList extends js.Object
+  sealed trait NameValueList
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait NumberLiteral extends js.Object
+  sealed trait NumberLiteral
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait Parameter extends js.Object
+  sealed trait Parameter
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ParameterList extends js.Object
+  sealed trait ParameterList
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait PragmaDirective extends js.Object
+  sealed trait PragmaDirective
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait PragmaName extends js.Object
+  sealed trait PragmaName
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait PragmaValue extends js.Object
+  sealed trait PragmaValue
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait PrimaryExpression extends js.Object
+  sealed trait PrimaryExpression
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ReturnParameters extends js.Object
+  sealed trait ReturnParameters
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ReturnStatement extends js.Object
+  sealed trait ReturnStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait SimpleStatement extends js.Object
+  sealed trait SimpleStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait SourceUnit extends js.Object
+  sealed trait SourceUnit
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait StateMutability extends js.Object
+  sealed trait StateMutability
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait StateVariableDeclaration extends js.Object
+  sealed trait StateVariableDeclaration
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait Statement extends js.Object
+  sealed trait Statement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait StorageLocation extends js.Object
+  sealed trait StorageLocation
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait StructDefinition extends js.Object
+  sealed trait StructDefinition
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait SubAssembly extends js.Object
+  sealed trait SubAssembly
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait ThrowStatement extends js.Object
+  sealed trait ThrowStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait TupleExpression extends js.Object
+  sealed trait TupleExpression
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait TypeName extends js.Object
+  sealed trait TypeName
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait UserDefinedTypeName extends js.Object
+  sealed trait UserDefinedTypeName
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait UsingForDeclaration extends js.Object
+  sealed trait UsingForDeclaration
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait VariableDeclaration extends js.Object
+  sealed trait VariableDeclaration
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait VariableDeclarationStatement extends js.Object
+  sealed trait VariableDeclarationStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait Version extends js.Object
+  sealed trait Version
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait VersionConstraint extends js.Object
+  sealed trait VersionConstraint
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait VersionOperator extends js.Object
+  sealed trait VersionOperator
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait WhileStatement extends js.Object
+  sealed trait WhileStatement
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.ASTNodeTypeString
   
   @js.native
-  sealed trait `^=` extends js.Object
+  sealed trait `^=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `^` extends js.Object
+  sealed trait `_backtick^_backtick`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
   sealed trait `private` extends js.Object
@@ -340,13 +449,16 @@ object solidityDashParserDashAntlrLibStrings {
   sealed trait public extends js.Object
   
   @js.native
-  sealed trait `|` extends js.Object
+  sealed trait `|`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `|=` extends js.Object
+  sealed trait `|=`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @js.native
-  sealed trait `||` extends js.Object
+  sealed trait `||`
+    extends solidityDashParserDashAntlrLib.solidityDashParserDashAntlrMod.BinOp
   
   @scala.inline
   def `!=`: `!=` = "!=".asInstanceOf[`!=`]
@@ -565,7 +677,7 @@ object solidityDashParserDashAntlrLibStrings {
   @scala.inline
   def `^=`: `^=` = "^=".asInstanceOf[`^=`]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
   @scala.inline

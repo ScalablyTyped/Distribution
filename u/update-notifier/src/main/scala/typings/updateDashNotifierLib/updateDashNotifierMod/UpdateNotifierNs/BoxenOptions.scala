@@ -13,3 +13,22 @@ trait BoxenOptions extends js.Object {
   var padding: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BoxenOptions {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    borderStyle: java.lang.String = null,
+    margin: scala.Int | scala.Double = null,
+    padding: scala.Int | scala.Double = null
+  ): BoxenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderStyle != null) __obj.updateDynamic("borderStyle")(borderStyle)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BoxenOptions]
+  }
+}
+

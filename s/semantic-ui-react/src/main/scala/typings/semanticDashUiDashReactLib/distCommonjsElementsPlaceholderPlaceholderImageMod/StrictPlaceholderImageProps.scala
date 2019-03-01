@@ -16,3 +16,20 @@ trait StrictPlaceholderImageProps extends js.Object {
   var square: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StrictPlaceholderImageProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    className: java.lang.String = null,
+    rectangular: js.UndefOr[scala.Boolean] = js.undefined,
+    square: js.UndefOr[scala.Boolean] = js.undefined
+  ): StrictPlaceholderImageProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(rectangular)) __obj.updateDynamic("rectangular")(rectangular)
+    if (!js.isUndefined(square)) __obj.updateDynamic("square")(square)
+    __obj.asInstanceOf[StrictPlaceholderImageProps]
+  }
+}
+

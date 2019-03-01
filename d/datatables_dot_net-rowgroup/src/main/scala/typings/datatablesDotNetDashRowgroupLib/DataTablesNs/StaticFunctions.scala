@@ -9,3 +9,12 @@ trait StaticFunctions extends js.Object {
   var RowGroup: RowGroupStaticFunctions
 }
 
+object StaticFunctions {
+  @scala.inline
+  def apply(RowGroup: RowGroupStaticFunctions): StaticFunctions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RowGroup")(RowGroup)
+    __obj.asInstanceOf[StaticFunctions]
+  }
+}
+

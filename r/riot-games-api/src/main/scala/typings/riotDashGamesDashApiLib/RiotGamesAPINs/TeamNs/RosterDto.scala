@@ -10,3 +10,13 @@ trait RosterDto extends js.Object {
   var ownerId: scala.Double
 }
 
+object RosterDto {
+  @scala.inline
+  def apply(memberList: js.Array[TeamMemberInfoDto], ownerId: scala.Double): RosterDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("memberList")(memberList)
+    __obj.updateDynamic("ownerId")(ownerId)
+    __obj.asInstanceOf[RosterDto]
+  }
+}
+

@@ -49,3 +49,34 @@ trait Blog
   var updated_at: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Blog {
+  @scala.inline
+  def apply(
+    admin_graphql_api_id: java.lang.String = null,
+    commentable: shopifyDashPrimeLib.distEnumsBlogUnderscoreCommentableMod.BlogCommentable = null,
+    created_at: java.lang.String = null,
+    feedburner: js.Any = null,
+    feedburner_url: java.lang.String = null,
+    handle: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    tags: java.lang.String = null,
+    template_suffix: java.lang.String = null,
+    title: java.lang.String = null,
+    updated_at: java.lang.String = null
+  ): Blog = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (commentable != null) __obj.updateDynamic("commentable")(commentable.asInstanceOf[js.Any])
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (feedburner != null) __obj.updateDynamic("feedburner")(feedburner)
+    if (feedburner_url != null) __obj.updateDynamic("feedburner_url")(feedburner_url)
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[Blog]
+  }
+}
+

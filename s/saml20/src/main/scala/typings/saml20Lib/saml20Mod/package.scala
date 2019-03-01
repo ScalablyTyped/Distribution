@@ -12,5 +12,4 @@ package object saml20Mod {
     /* version */ java.lang.String, 
     scala.Unit
   ]
-  type ValidationOptions = ValidationOptionsWithKey | ValidationOptionsWithPrint
 }

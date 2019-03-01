@@ -73,3 +73,44 @@ trait SystemInfo extends js.Object {
   var windowWidth: scala.Double
 }
 
+object SystemInfo {
+  @scala.inline
+  def apply(
+    SDKVersion: java.lang.String,
+    battery: scala.Double,
+    benchmarkLevel: scala.Double,
+    brand: java.lang.String,
+    fontSizeSetting: java.lang.String,
+    language: java.lang.String,
+    model: java.lang.String,
+    pixelRatio: scala.Double,
+    platform: java.lang.String,
+    screenHeight: scala.Double,
+    screenWidth: scala.Double,
+    system: java.lang.String,
+    version: java.lang.String,
+    wifiSignal: scala.Double,
+    windowHeight: scala.Double,
+    windowWidth: scala.Double
+  ): SystemInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SDKVersion")(SDKVersion)
+    __obj.updateDynamic("battery")(battery)
+    __obj.updateDynamic("benchmarkLevel")(benchmarkLevel)
+    __obj.updateDynamic("brand")(brand)
+    __obj.updateDynamic("fontSizeSetting")(fontSizeSetting)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("pixelRatio")(pixelRatio)
+    __obj.updateDynamic("platform")(platform)
+    __obj.updateDynamic("screenHeight")(screenHeight)
+    __obj.updateDynamic("screenWidth")(screenWidth)
+    __obj.updateDynamic("system")(system)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("wifiSignal")(wifiSignal)
+    __obj.updateDynamic("windowHeight")(windowHeight)
+    __obj.updateDynamic("windowWidth")(windowWidth)
+    __obj.asInstanceOf[SystemInfo]
+  }
+}
+

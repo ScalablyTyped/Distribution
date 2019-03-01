@@ -7,130 +7,167 @@ import scala.scalajs.js.annotation._
 
 object reactDashJsonDashViewLibStrings {
   @js.native
-  sealed trait apathy extends js.Object
+  sealed trait apathy
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait `apathy:inverted` extends js.Object
+  sealed trait `apathy:inverted`
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
   sealed trait array extends js.Object
   
   @js.native
-  sealed trait ashes extends js.Object
+  sealed trait ashes
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait bespin extends js.Object
+  sealed trait bespin
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait brewer extends js.Object
+  sealed trait brewer
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait bright extends js.Object
+  sealed trait bright
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait `bright:inverted` extends js.Object
+  sealed trait `bright:inverted`
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait chalk extends js.Object
+  sealed trait chalk
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
   sealed trait circle extends js.Object
   
   @js.native
-  sealed trait codeschool extends js.Object
+  sealed trait codeschool
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait colors extends js.Object
+  sealed trait colors
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait eighties extends js.Object
+  sealed trait eighties
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait embers extends js.Object
+  sealed trait embers
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait flat extends js.Object
+  sealed trait flat
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait google extends js.Object
+  sealed trait google
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait grayscale extends js.Object
+  sealed trait grayscale
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait `grayscale:inverted` extends js.Object
+  sealed trait `grayscale:inverted`
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait greenscreen extends js.Object
+  sealed trait greenscreen
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait harmonic extends js.Object
+  sealed trait harmonic
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait hopscotch extends js.Object
+  sealed trait hopscotch
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait isotope extends js.Object
+  sealed trait isotope
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait marrakesh extends js.Object
+  sealed trait marrakesh
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait mocha extends js.Object
+  sealed trait mocha
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait monokai extends js.Object
+  sealed trait monokai
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
   sealed trait `object` extends js.Object
   
   @js.native
-  sealed trait ocean extends js.Object
+  sealed trait ocean
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait paraiso extends js.Object
+  sealed trait paraiso
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait pop extends js.Object
+  sealed trait pop
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait railscasts extends js.Object
+  sealed trait railscasts
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait `rjv-default` extends js.Object
+  sealed trait `rjv-default`
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait shapeshifter extends js.Object
+  sealed trait shapeshifter
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait `shapeshifter:inverted` extends js.Object
+  sealed trait `shapeshifter:inverted`
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait solarized extends js.Object
+  sealed trait solarized
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
   sealed trait square extends js.Object
   
   @js.native
-  sealed trait summerfruit extends js.Object
+  sealed trait summerfruit
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait `summerfruit:inverted` extends js.Object
+  sealed trait `summerfruit:inverted`
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait threezerotwofour extends js.Object
+  sealed trait threezerotwofour
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait tomorrow extends js.Object
+  sealed trait tomorrow
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
   sealed trait triangle extends js.Object
   
   @js.native
-  sealed trait tube extends js.Object
+  sealed trait tube
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @js.native
-  sealed trait twilight extends js.Object
+  sealed trait twilight
+    extends reactDashJsonDashViewLib.reactDashJsonDashViewMod.ThemeKeys
   
   @scala.inline
   def apathy: apathy = "apathy".asInstanceOf[apathy]

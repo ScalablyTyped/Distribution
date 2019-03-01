@@ -164,3 +164,116 @@ trait Model extends js.Object {
   var zoomPercentage: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    afterPrint: js.Function1[/* e */ AfterPrintEventArgs, scala.Unit] = null,
+    ajaxRequestFailure: js.Function1[/* e */ AjaxRequestFailureEventArgs, scala.Unit] = null,
+    ajaxRequestSuccess: js.Function1[/* e */ AjaxRequestSuccessEventArgs, scala.Unit] = null,
+    allowClientBuffering: js.UndefOr[scala.Boolean] = js.undefined,
+    annotationAdd: js.Function1[/* e */ AnnotationAddEventArgs, scala.Unit] = null,
+    annotationContextMenu: AnnotationContextMenu = null,
+    annotationPropertiesChange: js.Function1[/* e */ AnnotationPropertiesChangeEventArgs, scala.Unit] = null,
+    annotationRemove: js.Function1[/* e */ AnnotationRemoveEventArgs, scala.Unit] = null,
+    annotationType: AnnotationType | java.lang.String = null,
+    beforePrint: js.Function1[/* e */ BeforePrintEventArgs, scala.Unit] = null,
+    bufferEnd: js.Function1[/* e */ BufferEndEventArgs, scala.Unit] = null,
+    bufferStart: js.Function1[/* e */ BufferStartEventArgs, scala.Unit] = null,
+    bufferingMode: BufferingMode | java.lang.String = null,
+    currentPageNumber: scala.Int | scala.Double = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    documentLoad: js.Function1[/* e */ DocumentLoadEventArgs, scala.Unit] = null,
+    documentPath: java.lang.String = null,
+    documentUnload: js.Function1[/* e */ DocumentUnloadEventArgs, scala.Unit] = null,
+    downloadEnd: js.Function1[/* e */ DownloadEndEventArgs, scala.Unit] = null,
+    downloadStart: js.Function1[/* e */ DownloadStartEventArgs, scala.Unit] = null,
+    enableHighlightAnnotation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableHyperlink: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSignature: js.UndefOr[scala.Boolean] = js.undefined,
+    enableStrikethroughAnnotation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTextMarkupAnnotations: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTextSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableUnderlineAnnotation: js.UndefOr[scala.Boolean] = js.undefined,
+    fileName: java.lang.String = null,
+    highlightSettings: HighlightSettings = null,
+    hyperlinkClick: js.Function1[/* e */ HyperlinkClickEventArgs, scala.Unit] = null,
+    hyperlinkOpenState: LinkTarget | java.lang.String = null,
+    interactionMode: InteractionMode | java.lang.String = null,
+    isDocumentEdited: js.UndefOr[scala.Boolean] = js.undefined,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: java.lang.String = null,
+    pageChange: js.Function1[/* e */ PageChangeEventArgs, scala.Unit] = null,
+    pageClick: js.Function1[/* e */ PageClickEventArgs, scala.Unit] = null,
+    pageCount: scala.Int | scala.Double = null,
+    pdfService: PdfService | java.lang.String = null,
+    serverActionSettings: ServerActionSettings = null,
+    serviceUrl: java.lang.String = null,
+    signatureAdd: js.Function1[/* e */ SignatureAddEventArgs, scala.Unit] = null,
+    signatureDelete: js.Function1[/* e */ SignatureDeleteEventArgs, scala.Unit] = null,
+    signaturePropertiesChange: js.Function1[/* e */ SignaturePropertiesChangeEventArgs, scala.Unit] = null,
+    signatureResize: js.Function1[/* e */ SignatureResizeEventArgs, scala.Unit] = null,
+    signatureSettings: SignatureSettings = null,
+    strikethroughSettings: StrikethroughSettings = null,
+    textSelectionContextMenu: TextSelectionContextMenu = null,
+    toolbarSettings: ToolbarSettings = null,
+    underlineSettings: UnderlineSettings = null,
+    zoomChange: js.Function1[/* e */ ZoomChangeEventArgs, scala.Unit] = null,
+    zoomPercentage: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (afterPrint != null) __obj.updateDynamic("afterPrint")(afterPrint)
+    if (ajaxRequestFailure != null) __obj.updateDynamic("ajaxRequestFailure")(ajaxRequestFailure)
+    if (ajaxRequestSuccess != null) __obj.updateDynamic("ajaxRequestSuccess")(ajaxRequestSuccess)
+    if (!js.isUndefined(allowClientBuffering)) __obj.updateDynamic("allowClientBuffering")(allowClientBuffering)
+    if (annotationAdd != null) __obj.updateDynamic("annotationAdd")(annotationAdd)
+    if (annotationContextMenu != null) __obj.updateDynamic("annotationContextMenu")(annotationContextMenu)
+    if (annotationPropertiesChange != null) __obj.updateDynamic("annotationPropertiesChange")(annotationPropertiesChange)
+    if (annotationRemove != null) __obj.updateDynamic("annotationRemove")(annotationRemove)
+    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType.asInstanceOf[js.Any])
+    if (beforePrint != null) __obj.updateDynamic("beforePrint")(beforePrint)
+    if (bufferEnd != null) __obj.updateDynamic("bufferEnd")(bufferEnd)
+    if (bufferStart != null) __obj.updateDynamic("bufferStart")(bufferStart)
+    if (bufferingMode != null) __obj.updateDynamic("bufferingMode")(bufferingMode.asInstanceOf[js.Any])
+    if (currentPageNumber != null) __obj.updateDynamic("currentPageNumber")(currentPageNumber.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (documentLoad != null) __obj.updateDynamic("documentLoad")(documentLoad)
+    if (documentPath != null) __obj.updateDynamic("documentPath")(documentPath)
+    if (documentUnload != null) __obj.updateDynamic("documentUnload")(documentUnload)
+    if (downloadEnd != null) __obj.updateDynamic("downloadEnd")(downloadEnd)
+    if (downloadStart != null) __obj.updateDynamic("downloadStart")(downloadStart)
+    if (!js.isUndefined(enableHighlightAnnotation)) __obj.updateDynamic("enableHighlightAnnotation")(enableHighlightAnnotation)
+    if (!js.isUndefined(enableHyperlink)) __obj.updateDynamic("enableHyperlink")(enableHyperlink)
+    if (!js.isUndefined(enableSignature)) __obj.updateDynamic("enableSignature")(enableSignature)
+    if (!js.isUndefined(enableStrikethroughAnnotation)) __obj.updateDynamic("enableStrikethroughAnnotation")(enableStrikethroughAnnotation)
+    if (!js.isUndefined(enableTextMarkupAnnotations)) __obj.updateDynamic("enableTextMarkupAnnotations")(enableTextMarkupAnnotations)
+    if (!js.isUndefined(enableTextSelection)) __obj.updateDynamic("enableTextSelection")(enableTextSelection)
+    if (!js.isUndefined(enableUnderlineAnnotation)) __obj.updateDynamic("enableUnderlineAnnotation")(enableUnderlineAnnotation)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (highlightSettings != null) __obj.updateDynamic("highlightSettings")(highlightSettings)
+    if (hyperlinkClick != null) __obj.updateDynamic("hyperlinkClick")(hyperlinkClick)
+    if (hyperlinkOpenState != null) __obj.updateDynamic("hyperlinkOpenState")(hyperlinkOpenState.asInstanceOf[js.Any])
+    if (interactionMode != null) __obj.updateDynamic("interactionMode")(interactionMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(isDocumentEdited)) __obj.updateDynamic("isDocumentEdited")(isDocumentEdited)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (pageChange != null) __obj.updateDynamic("pageChange")(pageChange)
+    if (pageClick != null) __obj.updateDynamic("pageClick")(pageClick)
+    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
+    if (pdfService != null) __obj.updateDynamic("pdfService")(pdfService.asInstanceOf[js.Any])
+    if (serverActionSettings != null) __obj.updateDynamic("serverActionSettings")(serverActionSettings)
+    if (serviceUrl != null) __obj.updateDynamic("serviceUrl")(serviceUrl)
+    if (signatureAdd != null) __obj.updateDynamic("signatureAdd")(signatureAdd)
+    if (signatureDelete != null) __obj.updateDynamic("signatureDelete")(signatureDelete)
+    if (signaturePropertiesChange != null) __obj.updateDynamic("signaturePropertiesChange")(signaturePropertiesChange)
+    if (signatureResize != null) __obj.updateDynamic("signatureResize")(signatureResize)
+    if (signatureSettings != null) __obj.updateDynamic("signatureSettings")(signatureSettings)
+    if (strikethroughSettings != null) __obj.updateDynamic("strikethroughSettings")(strikethroughSettings)
+    if (textSelectionContextMenu != null) __obj.updateDynamic("textSelectionContextMenu")(textSelectionContextMenu)
+    if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings)
+    if (underlineSettings != null) __obj.updateDynamic("underlineSettings")(underlineSettings)
+    if (zoomChange != null) __obj.updateDynamic("zoomChange")(zoomChange)
+    if (zoomPercentage != null) __obj.updateDynamic("zoomPercentage")(zoomPercentage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

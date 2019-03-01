@@ -23,3 +23,22 @@ trait ITimedLockable
   def try_lock_until(at: stdLib.Date): js.Promise[scala.Boolean]
 }
 
+object ITimedLockable {
+  @scala.inline
+  def apply(
+    lock: js.Function0[js.Promise[scala.Unit]],
+    try_lock: js.Function0[js.Promise[scala.Boolean]],
+    try_lock_for: js.Function1[scala.Double, js.Promise[scala.Boolean]],
+    try_lock_until: js.Function1[stdLib.Date, js.Promise[scala.Boolean]],
+    unlock: js.Function0[js.Promise[scala.Unit]]
+  ): ITimedLockable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lock")(lock)
+    __obj.updateDynamic("try_lock")(try_lock)
+    __obj.updateDynamic("try_lock_for")(try_lock_for)
+    __obj.updateDynamic("try_lock_until")(try_lock_until)
+    __obj.updateDynamic("unlock")(unlock)
+    __obj.asInstanceOf[ITimedLockable]
+  }
+}
+

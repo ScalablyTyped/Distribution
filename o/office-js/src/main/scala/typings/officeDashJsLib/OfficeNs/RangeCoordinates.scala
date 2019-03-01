@@ -20,3 +20,13 @@ trait RangeCoordinates extends js.Object {
   var row: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RangeCoordinates {
+  @scala.inline
+  def apply(column: scala.Int | scala.Double = null, row: scala.Int | scala.Double = null): RangeCoordinates = {
+    val __obj = js.Dynamic.literal()
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RangeCoordinates]
+  }
+}
+

@@ -12,3 +12,12 @@ trait _ISize extends js.Object {
   def size(): scala.Double
 }
 
+object _ISize {
+  @scala.inline
+  def apply(size: js.Function0[scala.Double]): _ISize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[_ISize]
+  }
+}
+

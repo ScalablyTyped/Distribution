@@ -16,3 +16,16 @@ trait WorkItemTypeStateInfo extends js.Object {
   var workItemTypeName: java.lang.String
 }
 
+object WorkItemTypeStateInfo {
+  @scala.inline
+  def apply(
+    states: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    workItemTypeName: java.lang.String
+  ): WorkItemTypeStateInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("states")(states)
+    __obj.updateDynamic("workItemTypeName")(workItemTypeName)
+    __obj.asInstanceOf[WorkItemTypeStateInfo]
+  }
+}
+

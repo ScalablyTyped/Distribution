@@ -54,3 +54,38 @@ trait XDockableWindow
   def unlock(): scala.Unit
 }
 
+object XDockableWindow {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addDockableWindowListener: js.Function1[XDockableWindowListener, scala.Unit],
+    enableDocking: js.Function1[scala.Boolean, scala.Unit],
+    isFloating: js.Function0[scala.Boolean],
+    isInPopupMode: js.Function0[scala.Boolean],
+    isLocked: js.Function0[scala.Boolean],
+    lock: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeDockableWindowListener: js.Function1[XDockableWindowListener, scala.Unit],
+    setFloatingMode: js.Function1[scala.Boolean, scala.Unit],
+    startPopupMode: js.Function1[Rectangle, scala.Unit],
+    unlock: js.Function0[scala.Unit]
+  ): XDockableWindow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addDockableWindowListener")(addDockableWindowListener)
+    __obj.updateDynamic("enableDocking")(enableDocking)
+    __obj.updateDynamic("isFloating")(isFloating)
+    __obj.updateDynamic("isInPopupMode")(isInPopupMode)
+    __obj.updateDynamic("isLocked")(isLocked)
+    __obj.updateDynamic("lock")(lock)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeDockableWindowListener")(removeDockableWindowListener)
+    __obj.updateDynamic("setFloatingMode")(setFloatingMode)
+    __obj.updateDynamic("startPopupMode")(startPopupMode)
+    __obj.updateDynamic("unlock")(unlock)
+    __obj.asInstanceOf[XDockableWindow]
+  }
+}
+

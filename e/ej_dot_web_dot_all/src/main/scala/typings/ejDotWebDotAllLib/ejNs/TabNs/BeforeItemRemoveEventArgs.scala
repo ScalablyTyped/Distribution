@@ -20,3 +20,20 @@ trait BeforeItemRemoveEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeItemRemoveEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    index: scala.Int | scala.Double = null,
+    model: Model = null,
+    `type`: java.lang.String = null
+  ): BeforeItemRemoveEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeItemRemoveEventArgs]
+  }
+}
+

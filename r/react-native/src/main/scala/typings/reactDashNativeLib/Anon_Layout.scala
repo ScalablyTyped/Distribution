@@ -9,3 +9,12 @@ trait Anon_Layout extends js.Object {
   var layout: reactDashNativeLib.reactDashNativeMod.LayoutRectangle
 }
 
+object Anon_Layout {
+  @scala.inline
+  def apply(layout: reactDashNativeLib.reactDashNativeMod.LayoutRectangle): Anon_Layout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("layout")(layout)
+    __obj.asInstanceOf[Anon_Layout]
+  }
+}
+

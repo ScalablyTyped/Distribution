@@ -15,3 +15,13 @@ trait ToggleParagraphAlignmentJustifyCommand extends CommandWithBooleanStateBase
   def execute(): scala.Boolean
 }
 
+object ToggleParagraphAlignmentJustifyCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[js.Any]): ToggleParagraphAlignmentJustifyCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ToggleParagraphAlignmentJustifyCommand]
+  }
+}
+

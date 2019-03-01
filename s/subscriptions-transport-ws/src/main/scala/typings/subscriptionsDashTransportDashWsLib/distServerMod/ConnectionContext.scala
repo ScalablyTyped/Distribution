@@ -13,3 +13,22 @@ trait ConnectionContext extends js.Object {
   var socket: wsLib.wsMod.namespaced
 }
 
+object ConnectionContext {
+  @scala.inline
+  def apply(
+    isLegacy: scala.Boolean,
+    operations: org.scalablytyped.runtime.StringDictionary[ExecutionIterator],
+    request: nodeLib.httpMod.IncomingMessage,
+    socket: wsLib.wsMod.namespaced,
+    initPromise: js.Promise[_] = null
+  ): ConnectionContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isLegacy")(isLegacy)
+    __obj.updateDynamic("operations")(operations)
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("socket")(socket)
+    if (initPromise != null) __obj.updateDynamic("initPromise")(initPromise)
+    __obj.asInstanceOf[ConnectionContext]
+  }
+}
+

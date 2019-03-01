@@ -22,3 +22,13 @@ trait ProcessMemoryInfo extends js.Object {
   var shared: scala.Double
 }
 
+object ProcessMemoryInfo {
+  @scala.inline
+  def apply(`private`: scala.Double, residentSet: scala.Double, shared: scala.Double): ProcessMemoryInfo = {
+    val __obj = js.Dynamic.literal(`private` = `private`)
+    __obj.updateDynamic("residentSet")(residentSet)
+    __obj.updateDynamic("shared")(shared)
+    __obj.asInstanceOf[ProcessMemoryInfo]
+  }
+}
+

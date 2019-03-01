@@ -45,3 +45,36 @@ trait IDataBinningOptions extends js.Object {
   ] = js.undefined
 }
 
+object IDataBinningOptions {
+  @scala.inline
+  def apply(
+    aggregationProperty: java.lang.String = null,
+    colorCallback: js.Function3[
+      /* binInfo */ IDataBinInfo, 
+      /* min */ IDataBinMetrics, 
+      /* max */ IDataBinMetrics, 
+      java.lang.String | Color
+    ] = null,
+    dataBinType: DataBinType = null,
+    distanceUnits: bingmapsLib.MicrosoftNs.MapsNs.SpatialMathNs.DistanceUnits = null,
+    polygonOptions: IPolygonOptions = null,
+    radius: scala.Int | scala.Double = null,
+    scaleCallback: js.Function3[
+      /* binInfo */ IDataBinInfo, 
+      /* min */ IDataBinMetrics, 
+      /* max */ IDataBinMetrics, 
+      scala.Double
+    ] = null
+  ): IDataBinningOptions = {
+    val __obj = js.Dynamic.literal()
+    if (aggregationProperty != null) __obj.updateDynamic("aggregationProperty")(aggregationProperty)
+    if (colorCallback != null) __obj.updateDynamic("colorCallback")(colorCallback)
+    if (dataBinType != null) __obj.updateDynamic("dataBinType")(dataBinType)
+    if (distanceUnits != null) __obj.updateDynamic("distanceUnits")(distanceUnits)
+    if (polygonOptions != null) __obj.updateDynamic("polygonOptions")(polygonOptions)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (scaleCallback != null) __obj.updateDynamic("scaleCallback")(scaleCallback)
+    __obj.asInstanceOf[IDataBinningOptions]
+  }
+}
+

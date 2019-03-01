@@ -16,3 +16,24 @@ trait NavigationTransitionSpec extends js.Object {
   var useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NavigationTransitionSpec {
+  @scala.inline
+  def apply(
+    duration: scala.Int | scala.Double = null,
+    easing: js.Function1[/* t */ scala.Double, scala.Double] = null,
+    friction: scala.Int | scala.Double = null,
+    tension: scala.Int | scala.Double = null,
+    timing: js.Function2[/* value */ AnimatedValue, /* config */ js.Any, _] = null,
+    useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
+  ): NavigationTransitionSpec = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (friction != null) __obj.updateDynamic("friction")(friction.asInstanceOf[js.Any])
+    if (tension != null) __obj.updateDynamic("tension")(tension.asInstanceOf[js.Any])
+    if (timing != null) __obj.updateDynamic("timing")(timing)
+    if (!js.isUndefined(useNativeDriver)) __obj.updateDynamic("useNativeDriver")(useNativeDriver)
+    __obj.asInstanceOf[NavigationTransitionSpec]
+  }
+}
+

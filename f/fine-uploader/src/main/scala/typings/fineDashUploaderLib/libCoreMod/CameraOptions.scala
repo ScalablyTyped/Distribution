@@ -25,3 +25,13 @@ trait CameraOptions extends js.Object {
   var ios: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CameraOptions {
+  @scala.inline
+  def apply(button: stdLib.HTMLElement = null, ios: js.UndefOr[scala.Boolean] = js.undefined): CameraOptions = {
+    val __obj = js.Dynamic.literal()
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (!js.isUndefined(ios)) __obj.updateDynamic("ios")(ios)
+    __obj.asInstanceOf[CameraOptions]
+  }
+}
+

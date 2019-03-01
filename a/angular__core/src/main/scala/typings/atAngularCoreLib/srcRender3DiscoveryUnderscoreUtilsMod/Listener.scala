@@ -12,3 +12,20 @@ trait Listener extends js.Object {
   def callback(value: js.Any): js.Any
 }
 
+object Listener {
+  @scala.inline
+  def apply(
+    callback: js.Function1[js.Any, js.Any],
+    element: stdLib.Element,
+    name: java.lang.String,
+    useCapture: js.UndefOr[scala.Boolean] = js.undefined
+  ): Listener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(useCapture)) __obj.updateDynamic("useCapture")(useCapture)
+    __obj.asInstanceOf[Listener]
+  }
+}
+

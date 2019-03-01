@@ -15,3 +15,12 @@ trait IFilePickerResult extends js.Object {
   var data: microsoftDashLiveDashConnectLib.Anon_Files
 }
 
+object IFilePickerResult {
+  @scala.inline
+  def apply(data: microsoftDashLiveDashConnectLib.Anon_Files): IFilePickerResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[IFilePickerResult]
+  }
+}
+

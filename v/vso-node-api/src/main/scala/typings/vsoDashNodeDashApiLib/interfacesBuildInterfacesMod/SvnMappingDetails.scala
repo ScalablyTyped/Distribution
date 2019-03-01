@@ -28,3 +28,22 @@ trait SvnMappingDetails extends js.Object {
   var serverPath: java.lang.String
 }
 
+object SvnMappingDetails {
+  @scala.inline
+  def apply(
+    depth: scala.Double,
+    ignoreExternals: scala.Boolean,
+    localPath: java.lang.String,
+    revision: java.lang.String,
+    serverPath: java.lang.String
+  ): SvnMappingDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("depth")(depth)
+    __obj.updateDynamic("ignoreExternals")(ignoreExternals)
+    __obj.updateDynamic("localPath")(localPath)
+    __obj.updateDynamic("revision")(revision)
+    __obj.updateDynamic("serverPath")(serverPath)
+    __obj.asInstanceOf[SvnMappingDetails]
+  }
+}
+

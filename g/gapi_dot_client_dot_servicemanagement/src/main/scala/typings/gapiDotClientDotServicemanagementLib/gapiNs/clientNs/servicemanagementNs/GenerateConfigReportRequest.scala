@@ -24,3 +24,16 @@ trait GenerateConfigReportRequest extends js.Object {
   var oldConfig: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object GenerateConfigReportRequest {
+  @scala.inline
+  def apply(
+    newConfig: stdLib.Record[java.lang.String, _] = null,
+    oldConfig: stdLib.Record[java.lang.String, _] = null
+  ): GenerateConfigReportRequest = {
+    val __obj = js.Dynamic.literal()
+    if (newConfig != null) __obj.updateDynamic("newConfig")(newConfig)
+    if (oldConfig != null) __obj.updateDynamic("oldConfig")(oldConfig)
+    __obj.asInstanceOf[GenerateConfigReportRequest]
+  }
+}
+

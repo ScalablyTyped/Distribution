@@ -29,3 +29,26 @@ trait TripOptionsRequest extends js.Object {
   var ticketingCountry: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TripOptionsRequest {
+  @scala.inline
+  def apply(
+    maxPrice: java.lang.String = null,
+    passengers: PassengerCounts = null,
+    refundable: js.UndefOr[scala.Boolean] = js.undefined,
+    saleCountry: java.lang.String = null,
+    slice: js.Array[SliceInput] = null,
+    solutions: scala.Int | scala.Double = null,
+    ticketingCountry: java.lang.String = null
+  ): TripOptionsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (maxPrice != null) __obj.updateDynamic("maxPrice")(maxPrice)
+    if (passengers != null) __obj.updateDynamic("passengers")(passengers)
+    if (!js.isUndefined(refundable)) __obj.updateDynamic("refundable")(refundable)
+    if (saleCountry != null) __obj.updateDynamic("saleCountry")(saleCountry)
+    if (slice != null) __obj.updateDynamic("slice")(slice)
+    if (solutions != null) __obj.updateDynamic("solutions")(solutions.asInstanceOf[js.Any])
+    if (ticketingCountry != null) __obj.updateDynamic("ticketingCountry")(ticketingCountry)
+    __obj.asInstanceOf[TripOptionsRequest]
+  }
+}
+

@@ -77,3 +77,36 @@ trait AuditLog extends js.Object {
   var status: js.UndefOr[Status] = js.undefined
 }
 
+object AuditLog {
+  @scala.inline
+  def apply(
+    authenticationInfo: AuthenticationInfo = null,
+    authorizationInfo: js.Array[AuthorizationInfo] = null,
+    metadata: stdLib.Record[java.lang.String, _] = null,
+    methodName: java.lang.String = null,
+    numResponseItems: java.lang.String = null,
+    request: stdLib.Record[java.lang.String, _] = null,
+    requestMetadata: RequestMetadata = null,
+    resourceName: java.lang.String = null,
+    response: stdLib.Record[java.lang.String, _] = null,
+    serviceData: stdLib.Record[java.lang.String, _] = null,
+    serviceName: java.lang.String = null,
+    status: Status = null
+  ): AuditLog = {
+    val __obj = js.Dynamic.literal()
+    if (authenticationInfo != null) __obj.updateDynamic("authenticationInfo")(authenticationInfo)
+    if (authorizationInfo != null) __obj.updateDynamic("authorizationInfo")(authorizationInfo)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (methodName != null) __obj.updateDynamic("methodName")(methodName)
+    if (numResponseItems != null) __obj.updateDynamic("numResponseItems")(numResponseItems)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata)
+    if (resourceName != null) __obj.updateDynamic("resourceName")(resourceName)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (serviceData != null) __obj.updateDynamic("serviceData")(serviceData)
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[AuditLog]
+  }
+}
+

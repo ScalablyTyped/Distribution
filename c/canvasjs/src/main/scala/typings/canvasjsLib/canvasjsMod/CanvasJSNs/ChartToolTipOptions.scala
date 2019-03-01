@@ -98,3 +98,42 @@ trait ChartToolTipOptions extends js.Object {
   var shared: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartToolTipOptions {
+  @scala.inline
+  def apply(
+    animationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    borderThickness: scala.Int | scala.Double = null,
+    content: java.lang.String = null,
+    contentFormatter: js.Function1[/* e */ canvasjsLib.Anon_ChartEntries, java.lang.String] = null,
+    cornerRadius: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fontColor: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    fontStyle: java.lang.String = null,
+    fontWeight: java.lang.String = null,
+    reversed: js.UndefOr[scala.Boolean] = js.undefined,
+    shared: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartToolTipOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animationEnabled)) __obj.updateDynamic("animationEnabled")(animationEnabled)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderThickness != null) __obj.updateDynamic("borderThickness")(borderThickness.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (contentFormatter != null) __obj.updateDynamic("contentFormatter")(contentFormatter)
+    if (cornerRadius != null) __obj.updateDynamic("cornerRadius")(cornerRadius.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (fontColor != null) __obj.updateDynamic("fontColor")(fontColor)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle)
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
+    __obj.asInstanceOf[ChartToolTipOptions]
+  }
+}
+

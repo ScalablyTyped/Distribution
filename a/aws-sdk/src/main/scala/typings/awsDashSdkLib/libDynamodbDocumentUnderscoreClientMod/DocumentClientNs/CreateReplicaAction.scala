@@ -12,3 +12,12 @@ trait CreateReplicaAction extends js.Object {
   var RegionName: RegionName
 }
 
+object CreateReplicaAction {
+  @scala.inline
+  def apply(RegionName: RegionName): CreateReplicaAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RegionName")(RegionName)
+    __obj.asInstanceOf[CreateReplicaAction]
+  }
+}
+

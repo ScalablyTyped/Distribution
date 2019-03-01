@@ -9,3 +9,12 @@ trait ComponentSelector extends js.Object {
   var __emotion_styles: js.Any
 }
 
+object ComponentSelector {
+  @scala.inline
+  def apply(__emotion_styles: js.Any): ComponentSelector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("__emotion_styles")(__emotion_styles)
+    __obj.asInstanceOf[ComponentSelector]
+  }
+}
+

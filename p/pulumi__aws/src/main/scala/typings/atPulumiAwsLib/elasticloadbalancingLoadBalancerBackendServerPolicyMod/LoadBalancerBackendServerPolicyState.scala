@@ -22,3 +22,18 @@ trait LoadBalancerBackendServerPolicyState extends js.Object {
   ] = js.undefined
 }
 
+object LoadBalancerBackendServerPolicyState {
+  @scala.inline
+  def apply(
+    instancePort: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    loadBalancerName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policyNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): LoadBalancerBackendServerPolicyState = {
+    val __obj = js.Dynamic.literal()
+    if (instancePort != null) __obj.updateDynamic("instancePort")(instancePort.asInstanceOf[js.Any])
+    if (loadBalancerName != null) __obj.updateDynamic("loadBalancerName")(loadBalancerName.asInstanceOf[js.Any])
+    if (policyNames != null) __obj.updateDynamic("policyNames")(policyNames.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancerBackendServerPolicyState]
+  }
+}
+

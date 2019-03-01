@@ -15,3 +15,17 @@ trait PlatformException
   var `package`: XPackage
 }
 
+object PlatformException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    `package`: XPackage
+  ): PlatformException = {
+    val __obj = js.Dynamic.literal(`package` = `package`)
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[PlatformException]
+  }
+}
+

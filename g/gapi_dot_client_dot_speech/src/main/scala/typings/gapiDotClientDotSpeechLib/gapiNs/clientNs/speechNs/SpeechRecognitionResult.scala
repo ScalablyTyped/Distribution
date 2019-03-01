@@ -15,3 +15,12 @@ trait SpeechRecognitionResult extends js.Object {
   var alternatives: js.UndefOr[js.Array[SpeechRecognitionAlternative]] = js.undefined
 }
 
+object SpeechRecognitionResult {
+  @scala.inline
+  def apply(alternatives: js.Array[SpeechRecognitionAlternative] = null): SpeechRecognitionResult = {
+    val __obj = js.Dynamic.literal()
+    if (alternatives != null) __obj.updateDynamic("alternatives")(alternatives)
+    __obj.asInstanceOf[SpeechRecognitionResult]
+  }
+}
+

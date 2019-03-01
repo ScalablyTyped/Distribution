@@ -9,3 +9,12 @@ trait CordovaPlugins extends js.Object {
   var fileOpener2: CordovaPluginsFileOpener2
 }
 
+object CordovaPlugins {
+  @scala.inline
+  def apply(fileOpener2: CordovaPluginsFileOpener2): CordovaPlugins = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileOpener2")(fileOpener2)
+    __obj.asInstanceOf[CordovaPlugins]
+  }
+}
+

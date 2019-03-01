@@ -24,3 +24,27 @@ trait jQRangeSliderScale extends js.Object {
   def next(value: js.Any): js.Any
 }
 
+object jQRangeSliderScale {
+  @scala.inline
+  def apply(
+    next: js.Function1[js.Any, js.Any],
+    first: js.Function2[/* min */ scala.Double, /* max */ scala.Double, scala.Double] = null,
+    format: js.Function3[
+      /* tickContainer */ js.Any, 
+      /* tickStartValue */ js.Any, 
+      /* tickEndValue */ js.Any, 
+      scala.Unit
+    ] = null,
+    label: js.Function2[/* value */ js.Any, /* nextValue */ js.Any, java.lang.String] = null,
+    stop: js.Function1[/* value */ js.Any, scala.Boolean] = null
+  ): jQRangeSliderScale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("next")(next)
+    if (first != null) __obj.updateDynamic("first")(first)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[jQRangeSliderScale]
+  }
+}
+

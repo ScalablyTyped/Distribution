@@ -54,3 +54,26 @@ trait BaseBin extends js.Object {
   ] = js.undefined
 }
 
+object BaseBin {
+  @scala.inline
+  def apply(
+    base: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    divide: (vegaDashTypingsLib.typesSpecUtilMod.Vector2[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    maxbins: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    minstep: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    nice: scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    step: scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    steps: (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null
+  ): BaseBin = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base.asInstanceOf[js.Any])
+    if (divide != null) __obj.updateDynamic("divide")(divide.asInstanceOf[js.Any])
+    if (maxbins != null) __obj.updateDynamic("maxbins")(maxbins.asInstanceOf[js.Any])
+    if (minstep != null) __obj.updateDynamic("minstep")(minstep.asInstanceOf[js.Any])
+    if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (steps != null) __obj.updateDynamic("steps")(steps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BaseBin]
+  }
+}
+

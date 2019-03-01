@@ -19,3 +19,20 @@ trait IPoint extends js.Object {
   var lng: Longitude
 }
 
+object IPoint {
+  @scala.inline
+  def apply(
+    lat: Latitude,
+    lng: Longitude,
+    alt: js.UndefOr[Altitude] = js.undefined,
+    ctx: AltitudeContext = null
+  ): IPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lat")(lat)
+    __obj.updateDynamic("lng")(lng)
+    if (!js.isUndefined(alt)) __obj.updateDynamic("alt")(alt)
+    if (ctx != null) __obj.updateDynamic("ctx")(ctx)
+    __obj.asInstanceOf[IPoint]
+  }
+}
+

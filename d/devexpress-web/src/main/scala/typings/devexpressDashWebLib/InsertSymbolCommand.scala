@@ -17,3 +17,16 @@ trait InsertSymbolCommand extends CommandWithSimpleStateBase {
   def execute(symbol: java.lang.String, fontName: java.lang.String): scala.Boolean
 }
 
+object InsertSymbolCommand {
+  @scala.inline
+  def apply(
+    execute: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    getState: js.Function0[SimpleCommandState]
+  ): InsertSymbolCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[InsertSymbolCommand]
+  }
+}
+

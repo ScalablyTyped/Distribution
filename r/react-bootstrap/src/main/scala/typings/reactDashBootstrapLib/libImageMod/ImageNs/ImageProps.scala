@@ -13,3 +13,22 @@ trait ImageProps
   var thumbnail: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ImageProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libImageMod.Image] = null,
+    circle: js.UndefOr[scala.Boolean] = js.undefined,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    rounded: js.UndefOr[scala.Boolean] = js.undefined,
+    thumbnail: js.UndefOr[scala.Boolean] = js.undefined
+  ): ImageProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (!js.isUndefined(circle)) __obj.updateDynamic("circle")(circle)
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (!js.isUndefined(rounded)) __obj.updateDynamic("rounded")(rounded)
+    if (!js.isUndefined(thumbnail)) __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[ImageProps]
+  }
+}
+

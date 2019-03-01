@@ -13,3 +13,22 @@ trait MediaKeySystemConfiguration extends js.Object {
   var videoCapabilities: js.UndefOr[js.Array[MediaKeySystemMediaCapability]] = js.undefined
 }
 
+object MediaKeySystemConfiguration {
+  @scala.inline
+  def apply(
+    audioCapabilities: js.Array[MediaKeySystemMediaCapability] = null,
+    distinctiveIdentifier: MediaKeysRequirement = null,
+    initDataTypes: js.Array[java.lang.String] = null,
+    persistentState: MediaKeysRequirement = null,
+    videoCapabilities: js.Array[MediaKeySystemMediaCapability] = null
+  ): MediaKeySystemConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (audioCapabilities != null) __obj.updateDynamic("audioCapabilities")(audioCapabilities)
+    if (distinctiveIdentifier != null) __obj.updateDynamic("distinctiveIdentifier")(distinctiveIdentifier)
+    if (initDataTypes != null) __obj.updateDynamic("initDataTypes")(initDataTypes)
+    if (persistentState != null) __obj.updateDynamic("persistentState")(persistentState)
+    if (videoCapabilities != null) __obj.updateDynamic("videoCapabilities")(videoCapabilities)
+    __obj.asInstanceOf[MediaKeySystemConfiguration]
+  }
+}
+

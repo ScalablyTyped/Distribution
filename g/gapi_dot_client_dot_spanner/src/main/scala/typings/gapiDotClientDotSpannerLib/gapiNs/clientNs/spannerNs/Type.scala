@@ -20,3 +20,14 @@ trait Type extends js.Object {
   var structType: js.UndefOr[StructType] = js.undefined
 }
 
+object Type {
+  @scala.inline
+  def apply(arrayElementType: Type = null, code: java.lang.String = null, structType: StructType = null): Type = {
+    val __obj = js.Dynamic.literal()
+    if (arrayElementType != null) __obj.updateDynamic("arrayElementType")(arrayElementType)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (structType != null) __obj.updateDynamic("structType")(structType)
+    __obj.asInstanceOf[Type]
+  }
+}
+

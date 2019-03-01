@@ -14,3 +14,14 @@ trait FindAndModifyWriteOpResultObject[TSchema] extends js.Object {
   var value: js.UndefOr[TSchema] = js.undefined
 }
 
+object FindAndModifyWriteOpResultObject {
+  @scala.inline
+  def apply[TSchema](lastErrorObject: js.Any = null, ok: scala.Int | scala.Double = null, value: TSchema = null): FindAndModifyWriteOpResultObject[TSchema] = {
+    val __obj = js.Dynamic.literal()
+    if (lastErrorObject != null) __obj.updateDynamic("lastErrorObject")(lastErrorObject)
+    if (ok != null) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FindAndModifyWriteOpResultObject[TSchema]]
+  }
+}
+

@@ -14,3 +14,24 @@ trait XhrResponse extends js.Object {
   var url: java.lang.String
 }
 
+object XhrResponse {
+  @scala.inline
+  def apply(
+    body: js.Object | java.lang.String,
+    headers: XhrHeaders,
+    method: java.lang.String,
+    rawRequest: stdLib.XMLHttpRequest,
+    statusCode: scala.Double,
+    url: java.lang.String
+  ): XhrResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("rawRequest")(rawRequest)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[XhrResponse]
+  }
+}
+

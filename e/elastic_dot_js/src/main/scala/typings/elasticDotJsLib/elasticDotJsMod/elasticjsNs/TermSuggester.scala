@@ -92,3 +92,44 @@ trait TermSuggester extends Suggest {
   def toJSON(): js.Any
 }
 
+object TermSuggester {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    accuracy: js.Function1[scala.Double, TermSuggester],
+    analyzer: js.Function1[java.lang.String, TermSuggester],
+    field: js.Function1[java.lang.String, TermSuggester],
+    maxEdits: js.Function1[scala.Double, TermSuggester],
+    maxInspections: js.Function1[scala.Double, TermSuggester],
+    maxTermFreq: js.Function1[scala.Double, TermSuggester],
+    minDocFreq: js.Function1[scala.Double, TermSuggester],
+    minWordLen: js.Function1[scala.Double, TermSuggester],
+    shardSize: js.Function1[scala.Double, TermSuggester],
+    size: js.Function1[scala.Double, TermSuggester],
+    sort: js.Function1[java.lang.String, TermSuggester],
+    stringDistance: js.Function1[java.lang.String, TermSuggester],
+    suggestMode: js.Function1[java.lang.String, TermSuggester],
+    text: js.Function1[java.lang.String, TermSuggester],
+    toJSON: js.Function0[js.Any]
+  ): TermSuggester = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("accuracy")(accuracy)
+    __obj.updateDynamic("analyzer")(analyzer)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("maxEdits")(maxEdits)
+    __obj.updateDynamic("maxInspections")(maxInspections)
+    __obj.updateDynamic("maxTermFreq")(maxTermFreq)
+    __obj.updateDynamic("minDocFreq")(minDocFreq)
+    __obj.updateDynamic("minWordLen")(minWordLen)
+    __obj.updateDynamic("shardSize")(shardSize)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("sort")(sort)
+    __obj.updateDynamic("stringDistance")(stringDistance)
+    __obj.updateDynamic("suggestMode")(suggestMode)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[TermSuggester]
+  }
+}
+

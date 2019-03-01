@@ -70,3 +70,28 @@ trait IRenderDefinition extends js.Object {
   var textures: js.UndefOr[js.Any] = js.undefined
 }
 
+object IRenderDefinition {
+  @scala.inline
+  def apply(
+    engine: Engine,
+    bounds: Bounds = null,
+    canvas: stdLib.HTMLCanvasElement = null,
+    context: stdLib.CanvasRenderingContext2D = null,
+    controller: js.Any = null,
+    element: stdLib.HTMLElement = null,
+    options: IRendererOptions = null,
+    textures: js.Any = null
+  ): IRenderDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("engine")(engine)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (controller != null) __obj.updateDynamic("controller")(controller)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (textures != null) __obj.updateDynamic("textures")(textures)
+    __obj.asInstanceOf[IRenderDefinition]
+  }
+}
+

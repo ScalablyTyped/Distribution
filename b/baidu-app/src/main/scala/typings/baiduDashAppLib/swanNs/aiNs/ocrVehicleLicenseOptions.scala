@@ -20,3 +20,24 @@ trait ocrVehicleLicenseOptions
   var success_ocrVehicleLicenseOptions: js.UndefOr[js.Function1[/* res */ ocrVehicleLicenseResponse, scala.Unit]] = js.undefined
 }
 
+object ocrVehicleLicenseOptions {
+  @scala.inline
+  def apply(
+    image: java.lang.String,
+    accuracy: java.lang.String = null,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    detect_direction: js.UndefOr[scala.Boolean] = js.undefined,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[/* res */ ocrVehicleLicenseResponse, scala.Unit] = null
+  ): ocrVehicleLicenseOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("image")(image)
+    if (accuracy != null) __obj.updateDynamic("accuracy")(accuracy)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (!js.isUndefined(detect_direction)) __obj.updateDynamic("detect_direction")(detect_direction)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ocrVehicleLicenseOptions]
+  }
+}
+

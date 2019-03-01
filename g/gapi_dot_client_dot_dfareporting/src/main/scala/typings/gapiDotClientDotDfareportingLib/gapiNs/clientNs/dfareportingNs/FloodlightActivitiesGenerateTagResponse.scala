@@ -12,3 +12,13 @@ trait FloodlightActivitiesGenerateTagResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FloodlightActivitiesGenerateTagResponse {
+  @scala.inline
+  def apply(floodlightActivityTag: java.lang.String = null, kind: java.lang.String = null): FloodlightActivitiesGenerateTagResponse = {
+    val __obj = js.Dynamic.literal()
+    if (floodlightActivityTag != null) __obj.updateDynamic("floodlightActivityTag")(floodlightActivityTag)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[FloodlightActivitiesGenerateTagResponse]
+  }
+}
+

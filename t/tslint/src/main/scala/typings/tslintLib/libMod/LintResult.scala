@@ -14,3 +14,24 @@ trait LintResult extends js.Object {
   var warningCount: scala.Double
 }
 
+object LintResult {
+  @scala.inline
+  def apply(
+    errorCount: scala.Double,
+    failures: js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure],
+    format: java.lang.String | tslintLib.libLanguageFormatterFormatterMod.FormatterConstructor,
+    output: java.lang.String,
+    warningCount: scala.Double,
+    fixes: js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = null
+  ): LintResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorCount")(errorCount)
+    __obj.updateDynamic("failures")(failures)
+    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    __obj.updateDynamic("output")(output)
+    __obj.updateDynamic("warningCount")(warningCount)
+    if (fixes != null) __obj.updateDynamic("fixes")(fixes)
+    __obj.asInstanceOf[LintResult]
+  }
+}
+

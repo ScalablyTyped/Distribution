@@ -16,3 +16,32 @@ trait MetricDescriptorsResource extends js.Object {
   def list(request: gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertokenCallback): gapiDotClientLib.gapiNs.clientNs.Request[ListMetricDescriptorsResponse]
 }
 
+object MetricDescriptorsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[MetricDescriptor]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMonitoringLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListMetricDescriptorsResponse]
+    ]
+  ): MetricDescriptorsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[MetricDescriptorsResource]
+  }
+}
+

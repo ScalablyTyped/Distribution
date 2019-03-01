@@ -34,3 +34,18 @@ trait CustomResourceSubresourceScale extends js.Object {
   val statusReplicasPath: java.lang.String
 }
 
+object CustomResourceSubresourceScale {
+  @scala.inline
+  def apply(
+    labelSelectorPath: java.lang.String,
+    specReplicasPath: java.lang.String,
+    statusReplicasPath: java.lang.String
+  ): CustomResourceSubresourceScale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("labelSelectorPath")(labelSelectorPath)
+    __obj.updateDynamic("specReplicasPath")(specReplicasPath)
+    __obj.updateDynamic("statusReplicasPath")(statusReplicasPath)
+    __obj.asInstanceOf[CustomResourceSubresourceScale]
+  }
+}
+

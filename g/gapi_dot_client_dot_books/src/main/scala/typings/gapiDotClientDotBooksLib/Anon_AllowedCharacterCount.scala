@@ -14,3 +14,18 @@ trait Anon_AllowedCharacterCount extends js.Object {
   var remainingCharacterCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AllowedCharacterCount {
+  @scala.inline
+  def apply(
+    allowedCharacterCount: scala.Int | scala.Double = null,
+    limitType: java.lang.String = null,
+    remainingCharacterCount: scala.Int | scala.Double = null
+  ): Anon_AllowedCharacterCount = {
+    val __obj = js.Dynamic.literal()
+    if (allowedCharacterCount != null) __obj.updateDynamic("allowedCharacterCount")(allowedCharacterCount.asInstanceOf[js.Any])
+    if (limitType != null) __obj.updateDynamic("limitType")(limitType)
+    if (remainingCharacterCount != null) __obj.updateDynamic("remainingCharacterCount")(remainingCharacterCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AllowedCharacterCount]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Anon_DEFAULT extends js.Object {
   var WARNING: reactDashToastifyLib.reactDashToastifyLibStrings.warning
 }
 
+object Anon_DEFAULT {
+  @scala.inline
+  def apply(
+    DEFAULT: reactDashToastifyLib.reactDashToastifyLibStrings.default,
+    ERROR: reactDashToastifyLib.reactDashToastifyLibStrings.error,
+    INFO: reactDashToastifyLib.reactDashToastifyLibStrings.info,
+    SUCCESS: reactDashToastifyLib.reactDashToastifyLibStrings.success,
+    WARNING: reactDashToastifyLib.reactDashToastifyLibStrings.warning
+  ): Anon_DEFAULT = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DEFAULT")(DEFAULT)
+    __obj.updateDynamic("ERROR")(ERROR)
+    __obj.updateDynamic("INFO")(INFO)
+    __obj.updateDynamic("SUCCESS")(SUCCESS)
+    __obj.updateDynamic("WARNING")(WARNING)
+    __obj.asInstanceOf[Anon_DEFAULT]
+  }
+}
+

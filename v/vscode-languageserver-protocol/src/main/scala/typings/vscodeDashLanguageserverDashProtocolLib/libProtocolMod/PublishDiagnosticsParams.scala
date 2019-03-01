@@ -22,3 +22,20 @@ trait PublishDiagnosticsParams extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PublishDiagnosticsParams {
+  @scala.inline
+  def apply(
+    diagnostics: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.Diagnostic
+    ],
+    uri: java.lang.String,
+    version: scala.Int | scala.Double = null
+  ): PublishDiagnosticsParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("diagnostics")(diagnostics)
+    __obj.updateDynamic("uri")(uri)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PublishDiagnosticsParams]
+  }
+}
+

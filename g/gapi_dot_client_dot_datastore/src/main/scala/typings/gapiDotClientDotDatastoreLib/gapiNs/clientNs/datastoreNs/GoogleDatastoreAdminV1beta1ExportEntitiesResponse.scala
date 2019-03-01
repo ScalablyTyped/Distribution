@@ -15,3 +15,12 @@ trait GoogleDatastoreAdminV1beta1ExportEntitiesResponse extends js.Object {
   var outputUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleDatastoreAdminV1beta1ExportEntitiesResponse {
+  @scala.inline
+  def apply(outputUrl: java.lang.String = null): GoogleDatastoreAdminV1beta1ExportEntitiesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (outputUrl != null) __obj.updateDynamic("outputUrl")(outputUrl)
+    __obj.asInstanceOf[GoogleDatastoreAdminV1beta1ExportEntitiesResponse]
+  }
+}
+

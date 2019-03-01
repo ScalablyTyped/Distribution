@@ -10,3 +10,13 @@ trait ImageSnapshotOptions extends js.Object {
   var url: java.lang.String
 }
 
+object ImageSnapshotOptions {
+  @scala.inline
+  def apply(context: atStorybookAddonDashStoryshotsLib.Anon_Kind, url: java.lang.String): ImageSnapshotOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ImageSnapshotOptions]
+  }
+}
+

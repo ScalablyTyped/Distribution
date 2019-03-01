@@ -20,3 +20,18 @@ trait DetectiveResults extends js.Object {
   var strings: js.Array[java.lang.String]
 }
 
+object DetectiveResults {
+  @scala.inline
+  def apply(
+    expressions: js.Array[java.lang.String],
+    strings: js.Array[java.lang.String],
+    nodes: js.Array[_] = null
+  ): DetectiveResults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expressions")(expressions)
+    __obj.updateDynamic("strings")(strings)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    __obj.asInstanceOf[DetectiveResults]
+  }
+}
+

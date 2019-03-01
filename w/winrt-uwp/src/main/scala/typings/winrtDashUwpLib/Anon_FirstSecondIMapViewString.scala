@@ -10,3 +10,16 @@ trait Anon_FirstSecondIMapViewString extends js.Object {
   /** The second half of the original map. */ var second: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, java.lang.String]
 }
 
+object Anon_FirstSecondIMapViewString {
+  @scala.inline
+  def apply(
+    first: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, java.lang.String],
+    second: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[java.lang.String, java.lang.String]
+  ): Anon_FirstSecondIMapViewString = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("first")(first)
+    __obj.updateDynamic("second")(second)
+    __obj.asInstanceOf[Anon_FirstSecondIMapViewString]
+  }
+}
+

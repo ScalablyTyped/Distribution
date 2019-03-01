@@ -30,3 +30,25 @@ trait Setting extends js.Object {
   def set(details: firefoxDashWebextDashBrowserLib.Anon_Scope): js.Promise[scala.Unit]
 }
 
+object Setting {
+  @scala.inline
+  def apply(
+    clear: js.Function1[firefoxDashWebextDashBrowserLib.Anon_ScopeSettingScope, js.Promise[scala.Unit]],
+    get: js.Function1[
+      firefoxDashWebextDashBrowserLib.Anon_Incognito, 
+      js.Promise[firefoxDashWebextDashBrowserLib.Anon_IncognitoSpecific]
+    ],
+    onChange: firefoxDashWebextDashBrowserLib.WebExtEvent[
+      js.Function1[/* details */ firefoxDashWebextDashBrowserLib.Anon_IncognitoSpecific, scala.Unit]
+    ],
+    set: js.Function1[firefoxDashWebextDashBrowserLib.Anon_Scope, js.Promise[scala.Unit]]
+  ): Setting = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[Setting]
+  }
+}
+

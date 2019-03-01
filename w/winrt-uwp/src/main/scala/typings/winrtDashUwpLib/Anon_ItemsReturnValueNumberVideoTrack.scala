@@ -10,3 +10,13 @@ trait Anon_ItemsReturnValueNumberVideoTrack extends js.Object {
   /** The number of video tracks retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueNumberVideoTrack {
+  @scala.inline
+  def apply(items: winrtDashUwpLib.WindowsNs.MediaNs.CoreNs.VideoTrack, returnValue: scala.Double): Anon_ItemsReturnValueNumberVideoTrack = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ItemsReturnValueNumberVideoTrack]
+  }
+}
+

@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait EmailIdId extends js.Object {
+trait EmailIdId extends EventIdentifier {
   var email: java.lang.String
+}
+
+object EmailIdId {
+  @scala.inline
+  def apply(email: java.lang.String): EmailIdId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("email")(email)
+    __obj.asInstanceOf[EmailIdId]
+  }
 }
 

@@ -10,3 +10,13 @@ trait Anon_IncludeSelf extends js.Object {
   var parentFirst: scala.Boolean
 }
 
+object Anon_IncludeSelf {
+  @scala.inline
+  def apply(includeSelf: scala.Boolean, parentFirst: scala.Boolean): Anon_IncludeSelf = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("includeSelf")(includeSelf)
+    __obj.updateDynamic("parentFirst")(parentFirst)
+    __obj.asInstanceOf[Anon_IncludeSelf]
+  }
+}
+

@@ -12,3 +12,12 @@ trait ShareVideo extends js.Object {
   var localUrl: java.lang.String
 }
 
+object ShareVideo {
+  @scala.inline
+  def apply(localUrl: java.lang.String): ShareVideo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("localUrl")(localUrl)
+    __obj.asInstanceOf[ShareVideo]
+  }
+}
+

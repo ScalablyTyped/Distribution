@@ -20,3 +20,18 @@ trait Model extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    height: scala.Int | scala.Double = null,
+    sourceID: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (sourceID != null) __obj.updateDynamic("sourceID")(sourceID)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

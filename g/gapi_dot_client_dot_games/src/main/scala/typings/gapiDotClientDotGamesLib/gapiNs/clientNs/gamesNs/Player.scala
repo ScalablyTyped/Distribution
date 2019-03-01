@@ -38,3 +38,36 @@ trait Player extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Player {
+  @scala.inline
+  def apply(
+    avatarImageUrl: java.lang.String = null,
+    bannerUrlLandscape: java.lang.String = null,
+    bannerUrlPortrait: java.lang.String = null,
+    displayName: java.lang.String = null,
+    experienceInfo: PlayerExperienceInfo = null,
+    kind: java.lang.String = null,
+    lastPlayedWith: Played = null,
+    name: gapiDotClientDotGamesLib.Anon_FamilyName = null,
+    originalPlayerId: java.lang.String = null,
+    playerId: java.lang.String = null,
+    profileSettings: ProfileSettings = null,
+    title: java.lang.String = null
+  ): Player = {
+    val __obj = js.Dynamic.literal()
+    if (avatarImageUrl != null) __obj.updateDynamic("avatarImageUrl")(avatarImageUrl)
+    if (bannerUrlLandscape != null) __obj.updateDynamic("bannerUrlLandscape")(bannerUrlLandscape)
+    if (bannerUrlPortrait != null) __obj.updateDynamic("bannerUrlPortrait")(bannerUrlPortrait)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (experienceInfo != null) __obj.updateDynamic("experienceInfo")(experienceInfo)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastPlayedWith != null) __obj.updateDynamic("lastPlayedWith")(lastPlayedWith)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (originalPlayerId != null) __obj.updateDynamic("originalPlayerId")(originalPlayerId)
+    if (playerId != null) __obj.updateDynamic("playerId")(playerId)
+    if (profileSettings != null) __obj.updateDynamic("profileSettings")(profileSettings)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Player]
+  }
+}
+

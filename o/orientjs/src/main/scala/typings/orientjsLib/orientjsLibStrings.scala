@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object orientjsLibStrings {
   @js.native
-  sealed trait Binary extends js.Object
+  sealed trait Binary
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait Boolean extends js.Object
+  sealed trait Boolean
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait Byte extends js.Object
+  sealed trait Byte
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
   sealed trait CACHED extends js.Object
@@ -22,7 +25,8 @@ object orientjsLibStrings {
   sealed trait COLA extends js.Object
   
   @js.native
-  sealed trait Custom extends js.Object
+  sealed trait Custom
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
   sealed trait DICTIONARY extends js.Object
@@ -31,28 +35,36 @@ object orientjsLibStrings {
   sealed trait DICTIONARY_HASH_INDEX extends js.Object
   
   @js.native
-  sealed trait Date extends js.Object
+  sealed trait Date
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait DateTime extends js.Object
+  sealed trait DateTime
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait Decimal extends js.Object
+  sealed trait Decimal
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait Double extends js.Object
+  sealed trait Double
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait Embedded extends js.Object
+  sealed trait Embedded
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait EmbeddedList extends js.Object
+  sealed trait EmbeddedList
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait EmbeddedMap extends js.Object
+  sealed trait EmbeddedMap
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait EmbeddedSet extends js.Object
+  sealed trait EmbeddedSet
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
   sealed trait FULLTEXT extends js.Object
@@ -61,10 +73,12 @@ object orientjsLibStrings {
   sealed trait FULLTEXT_HASH_INDEX extends js.Object
   
   @js.native
-  sealed trait Float extends js.Object
+  sealed trait Float
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait Integer extends js.Object
+  sealed trait Integer
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
   sealed trait Javascript extends js.Object
@@ -73,22 +87,28 @@ object orientjsLibStrings {
   sealed trait LUCENE extends js.Object
   
   @js.native
-  sealed trait Link extends js.Object
+  sealed trait Link
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait LinkBag extends js.Object
+  sealed trait LinkBag
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait LinkList extends js.Object
+  sealed trait LinkList
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait LinkMap extends js.Object
+  sealed trait LinkMap
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait LinkSet extends js.Object
+  sealed trait LinkSet
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait Long extends js.Object
+  sealed trait Long
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
   sealed trait NOTUNIQUE extends js.Object
@@ -106,13 +126,16 @@ object orientjsLibStrings {
   sealed trait SQL extends js.Object
   
   @js.native
-  sealed trait Short extends js.Object
+  sealed trait Short
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait String extends js.Object
+  sealed trait String
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
-  sealed trait Transient extends js.Object
+  sealed trait Transient
+    extends orientjsLib.orientjsMod.orientjsNs.PropertyType
   
   @js.native
   sealed trait UNIQUE extends js.Object

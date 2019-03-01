@@ -49,3 +49,22 @@ trait Anon_ItemStyleLabelValue extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ItemStyleLabelValue {
+  @scala.inline
+  def apply(
+    itemStyle: Anon_BorderColorBorderType = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
+    value: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Anon_ItemStyleLabelValue = {
+    val __obj = js.Dynamic.literal()
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ItemStyleLabelValue]
+  }
+}
+

@@ -15,3 +15,13 @@ trait IncreaseFontSizeCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object IncreaseFontSizeCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): IncreaseFontSizeCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[IncreaseFontSizeCommand]
+  }
+}
+

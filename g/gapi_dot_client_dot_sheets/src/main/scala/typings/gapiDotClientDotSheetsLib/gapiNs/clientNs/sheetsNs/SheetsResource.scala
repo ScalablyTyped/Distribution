@@ -13,3 +13,17 @@ trait SheetsResource extends js.Object {
   def copyTo(request: gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[SheetProperties]
 }
 
+object SheetsResource {
+  @scala.inline
+  def apply(
+    copyTo: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SheetProperties]
+    ]
+  ): SheetsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("copyTo")(copyTo)
+    __obj.asInstanceOf[SheetsResource]
+  }
+}
+

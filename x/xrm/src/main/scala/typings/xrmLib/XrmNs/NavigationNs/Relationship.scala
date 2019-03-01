@@ -33,3 +33,22 @@ trait Relationship extends js.Object {
   var roleType: js.UndefOr[xrmLib.XrmEnumNs.RoleType] = js.undefined
 }
 
+object Relationship {
+  @scala.inline
+  def apply(
+    attributeName: java.lang.String,
+    name: java.lang.String,
+    navigationPropertyName: java.lang.String = null,
+    relationshipType: xrmLib.XrmEnumNs.RelationshipType = null,
+    roleType: xrmLib.XrmEnumNs.RoleType = null
+  ): Relationship = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attributeName")(attributeName)
+    __obj.updateDynamic("name")(name)
+    if (navigationPropertyName != null) __obj.updateDynamic("navigationPropertyName")(navigationPropertyName)
+    if (relationshipType != null) __obj.updateDynamic("relationshipType")(relationshipType)
+    if (roleType != null) __obj.updateDynamic("roleType")(roleType)
+    __obj.asInstanceOf[Relationship]
+  }
+}
+

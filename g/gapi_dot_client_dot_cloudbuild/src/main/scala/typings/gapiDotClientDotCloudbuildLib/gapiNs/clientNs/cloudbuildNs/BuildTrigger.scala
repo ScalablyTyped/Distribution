@@ -41,3 +41,28 @@ trait BuildTrigger extends js.Object {
   var triggerTemplate: js.UndefOr[RepoSource] = js.undefined
 }
 
+object BuildTrigger {
+  @scala.inline
+  def apply(
+    build: Build = null,
+    createTime: java.lang.String = null,
+    description: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    filename: java.lang.String = null,
+    id: java.lang.String = null,
+    substitutions: stdLib.Record[java.lang.String, java.lang.String] = null,
+    triggerTemplate: RepoSource = null
+  ): BuildTrigger = {
+    val __obj = js.Dynamic.literal()
+    if (build != null) __obj.updateDynamic("build")(build)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (substitutions != null) __obj.updateDynamic("substitutions")(substitutions)
+    if (triggerTemplate != null) __obj.updateDynamic("triggerTemplate")(triggerTemplate)
+    __obj.asInstanceOf[BuildTrigger]
+  }
+}
+

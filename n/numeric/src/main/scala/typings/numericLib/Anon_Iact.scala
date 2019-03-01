@@ -14,3 +14,24 @@ trait Anon_Iact extends js.Object {
   var value: Vector
 }
 
+object Anon_Iact {
+  @scala.inline
+  def apply(
+    iact: Vector,
+    iterations: Vector,
+    message: java.lang.String,
+    solution: Vector,
+    unconstrained_solution: Vector,
+    value: Vector
+  ): Anon_Iact = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iact")(iact)
+    __obj.updateDynamic("iterations")(iterations)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("solution")(solution)
+    __obj.updateDynamic("unconstrained_solution")(unconstrained_solution)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Iact]
+  }
+}
+

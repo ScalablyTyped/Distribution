@@ -12,3 +12,20 @@ trait seedRandomOptions extends js.Object {
   var state: js.UndefOr[seedrandomStateType] = js.undefined
 }
 
+object seedRandomOptions {
+  @scala.inline
+  def apply(
+    entropy: js.UndefOr[scala.Boolean] = js.undefined,
+    global: js.UndefOr[scala.Boolean] = js.undefined,
+    pass: seedrandomCallback = null,
+    state: seedrandomStateType = null
+  ): seedRandomOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(entropy)) __obj.updateDynamic("entropy")(entropy)
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
+    if (pass != null) __obj.updateDynamic("pass")(pass)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[seedRandomOptions]
+  }
+}
+

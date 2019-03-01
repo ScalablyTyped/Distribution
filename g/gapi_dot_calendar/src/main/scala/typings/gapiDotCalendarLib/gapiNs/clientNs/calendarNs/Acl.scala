@@ -17,6 +17,25 @@ trait Acl extends js.Object {
 @js.native
 class acl () extends js.Object
 
+object Acl {
+  @scala.inline
+  def apply(
+    etag: etag,
+    id: java.lang.String,
+    kind: gapiDotCalendarLib.gapiDotCalendarLibStrings.`calendar#aclRule`,
+    role: AccessRole,
+    scope: gapiDotCalendarLib.Anon_Type
+  ): Acl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("role")(role)
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Acl]
+  }
+}
+
 /* static members */
 @JSGlobal("gapi.client.calendar.acl")
 @js.native

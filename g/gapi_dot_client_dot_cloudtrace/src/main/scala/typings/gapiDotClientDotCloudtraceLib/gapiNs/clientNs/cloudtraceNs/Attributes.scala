@@ -25,3 +25,16 @@ trait Attributes extends js.Object {
   var droppedAttributesCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Attributes {
+  @scala.inline
+  def apply(
+    attributeMap: stdLib.Record[java.lang.String, AttributeValue] = null,
+    droppedAttributesCount: scala.Int | scala.Double = null
+  ): Attributes = {
+    val __obj = js.Dynamic.literal()
+    if (attributeMap != null) __obj.updateDynamic("attributeMap")(attributeMap)
+    if (droppedAttributesCount != null) __obj.updateDynamic("droppedAttributesCount")(droppedAttributesCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Attributes]
+  }
+}
+

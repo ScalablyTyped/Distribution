@@ -56,3 +56,60 @@ trait Html2CanvasOptions extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Html2CanvasOptions {
+  @scala.inline
+  def apply(
+    allowTaint: js.UndefOr[scala.Boolean] = js.undefined,
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    backgroundColor: java.lang.String = null,
+    canvas: js.Any = null,
+    foreignObjectRendering: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    ignoreElements: js.Function1[/* element */ stdLib.HTMLElement, scala.Boolean] = null,
+    imageTimeout: scala.Int | scala.Double = null,
+    letterRendering: js.UndefOr[scala.Boolean] = js.undefined,
+    logging: js.UndefOr[scala.Boolean] = js.undefined,
+    onclone: html2canvasLib.Anon_Doc = null,
+    proxy: java.lang.String = null,
+    removeContainer: js.UndefOr[scala.Boolean] = js.undefined,
+    scale: scala.Int | scala.Double = null,
+    scrollX: scala.Int | scala.Double = null,
+    scrollY: scala.Int | scala.Double = null,
+    svgRendering: js.UndefOr[scala.Boolean] = js.undefined,
+    taintTest: js.UndefOr[scala.Boolean] = js.undefined,
+    useCORS: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null,
+    windowHeight: scala.Int | scala.Double = null,
+    windowWidth: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Html2CanvasOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowTaint)) __obj.updateDynamic("allowTaint")(allowTaint)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (canvas != null) __obj.updateDynamic("canvas")(canvas)
+    if (!js.isUndefined(foreignObjectRendering)) __obj.updateDynamic("foreignObjectRendering")(foreignObjectRendering)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (ignoreElements != null) __obj.updateDynamic("ignoreElements")(ignoreElements)
+    if (imageTimeout != null) __obj.updateDynamic("imageTimeout")(imageTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(letterRendering)) __obj.updateDynamic("letterRendering")(letterRendering)
+    if (!js.isUndefined(logging)) __obj.updateDynamic("logging")(logging)
+    if (onclone != null) __obj.updateDynamic("onclone")(onclone)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (!js.isUndefined(removeContainer)) __obj.updateDynamic("removeContainer")(removeContainer)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (scrollX != null) __obj.updateDynamic("scrollX")(scrollX.asInstanceOf[js.Any])
+    if (scrollY != null) __obj.updateDynamic("scrollY")(scrollY.asInstanceOf[js.Any])
+    if (!js.isUndefined(svgRendering)) __obj.updateDynamic("svgRendering")(svgRendering)
+    if (!js.isUndefined(taintTest)) __obj.updateDynamic("taintTest")(taintTest)
+    if (!js.isUndefined(useCORS)) __obj.updateDynamic("useCORS")(useCORS)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (windowHeight != null) __obj.updateDynamic("windowHeight")(windowHeight.asInstanceOf[js.Any])
+    if (windowWidth != null) __obj.updateDynamic("windowWidth")(windowWidth.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Html2CanvasOptions]
+  }
+}
+

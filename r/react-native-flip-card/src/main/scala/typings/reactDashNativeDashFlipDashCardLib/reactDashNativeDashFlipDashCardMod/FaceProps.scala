@@ -9,3 +9,12 @@ trait FaceProps extends js.Object {
   var chilren: js.Array[reactLib.reactMod.Global.JSXNs.Element]
 }
 
+object FaceProps {
+  @scala.inline
+  def apply(chilren: js.Array[reactLib.reactMod.Global.JSXNs.Element]): FaceProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chilren")(chilren)
+    __obj.asInstanceOf[FaceProps]
+  }
+}
+

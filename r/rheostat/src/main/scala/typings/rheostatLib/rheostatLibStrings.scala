@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object rheostatLibStrings {
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends rheostatLib.rheostatMod.Orientation
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends rheostatLib.rheostatMod.Orientation
   
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]

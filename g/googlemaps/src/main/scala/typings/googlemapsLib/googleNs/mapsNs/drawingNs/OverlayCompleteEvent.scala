@@ -12,3 +12,15 @@ trait OverlayCompleteEvent extends js.Object {
   var `type`: OverlayType
 }
 
+object OverlayCompleteEvent {
+  @scala.inline
+  def apply(
+    overlay: googlemapsLib.googleNs.mapsNs.Marker | googlemapsLib.googleNs.mapsNs.Polygon | googlemapsLib.googleNs.mapsNs.Polyline | googlemapsLib.googleNs.mapsNs.Rectangle | googlemapsLib.googleNs.mapsNs.Circle,
+    `type`: OverlayType
+  ): OverlayCompleteEvent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("overlay")(overlay.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OverlayCompleteEvent]
+  }
+}
+

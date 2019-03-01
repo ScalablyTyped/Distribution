@@ -14,3 +14,12 @@ trait GetAncestryResponse extends js.Object {
   var ancestor: js.UndefOr[js.Array[Ancestor]] = js.undefined
 }
 
+object GetAncestryResponse {
+  @scala.inline
+  def apply(ancestor: js.Array[Ancestor] = null): GetAncestryResponse = {
+    val __obj = js.Dynamic.literal()
+    if (ancestor != null) __obj.updateDynamic("ancestor")(ancestor)
+    __obj.asInstanceOf[GetAncestryResponse]
+  }
+}
+

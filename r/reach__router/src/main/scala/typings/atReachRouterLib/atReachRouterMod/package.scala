@@ -13,7 +13,6 @@ package object atReachRouterMod {
     ], 
     atReachRouterLib.atReachRouterLibStrings.href
   ]
-  type HistoryActionType = atReachRouterLib.atReachRouterLibStrings.PUSH | atReachRouterLib.atReachRouterLibStrings.POP
   type HistoryListener = js.Function1[/* parameter */ HistoryListenerParameter, scala.Unit]
   type HistoryLocation = WindowLocation with atReachRouterLib.Anon_State
   type HistoryUnsubscribe = js.Function0[scala.Unit]

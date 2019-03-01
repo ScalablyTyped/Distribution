@@ -9,3 +9,12 @@ trait Anon_EnumType extends js.Object {
   var enumType: graphqlLib.graphqlMod.GraphQLEnumType
 }
 
+object Anon_EnumType {
+  @scala.inline
+  def apply(enumType: graphqlLib.graphqlMod.GraphQLEnumType): Anon_EnumType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumType")(enumType)
+    __obj.asInstanceOf[Anon_EnumType]
+  }
+}
+

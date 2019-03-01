@@ -19,3 +19,28 @@ trait GetServerCertificateResult extends js.Object {
   val uploadDate: java.lang.String
 }
 
+object GetServerCertificateResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    certificateBody: java.lang.String,
+    certificateChain: java.lang.String,
+    expirationDate: java.lang.String,
+    id: java.lang.String,
+    name: java.lang.String,
+    path: java.lang.String,
+    uploadDate: java.lang.String
+  ): GetServerCertificateResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("certificateBody")(certificateBody)
+    __obj.updateDynamic("certificateChain")(certificateChain)
+    __obj.updateDynamic("expirationDate")(expirationDate)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("uploadDate")(uploadDate)
+    __obj.asInstanceOf[GetServerCertificateResult]
+  }
+}
+

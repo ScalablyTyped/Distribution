@@ -14,3 +14,12 @@ trait Request extends js.Object {
   def progress(): Progress
 }
 
+object Request {
+  @scala.inline
+  def apply(progress: js.Function0[Progress]): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("progress")(progress)
+    __obj.asInstanceOf[Request]
+  }
+}
+

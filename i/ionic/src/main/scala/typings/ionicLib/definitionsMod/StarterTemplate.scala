@@ -12,3 +12,19 @@ trait StarterTemplate extends js.Object {
   var `type`: ProjectType
 }
 
+object StarterTemplate {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    `type`: ProjectType,
+    description: java.lang.String = null
+  ): StarterTemplate = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[StarterTemplate]
+  }
+}
+

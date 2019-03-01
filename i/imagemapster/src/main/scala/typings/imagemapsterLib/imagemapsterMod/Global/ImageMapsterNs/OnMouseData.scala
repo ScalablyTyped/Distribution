@@ -18,3 +18,20 @@ trait OnMouseData extends js.Object {
   var selected: scala.Boolean
 }
 
+object OnMouseData {
+  @scala.inline
+  def apply(
+    e: jqueryLib.JQueryEventObject,
+    key: java.lang.String,
+    options: AreaRenderingOptions,
+    selected: scala.Boolean
+  ): OnMouseData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("e")(e)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("selected")(selected)
+    __obj.asInstanceOf[OnMouseData]
+  }
+}
+

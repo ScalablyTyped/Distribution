@@ -16,3 +16,16 @@ trait VpcDhcpOptionsAssociationArgs extends js.Object {
   val vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object VpcDhcpOptionsAssociationArgs {
+  @scala.inline
+  def apply(
+    dhcpOptionsId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): VpcDhcpOptionsAssociationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dhcpOptionsId")(dhcpOptionsId.asInstanceOf[js.Any])
+    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpcDhcpOptionsAssociationArgs]
+  }
+}
+

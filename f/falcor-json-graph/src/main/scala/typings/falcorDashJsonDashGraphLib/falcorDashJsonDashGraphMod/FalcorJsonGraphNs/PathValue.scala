@@ -13,3 +13,13 @@ trait PathValue extends js.Object {
   var value: js.Any
 }
 
+object PathValue {
+  @scala.inline
+  def apply(path: java.lang.String | PathSet, value: js.Any): PathValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PathValue]
+  }
+}
+

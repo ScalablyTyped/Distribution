@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   *     capabilities to merge into this instance.
   * @constructor
   */
-class Capabilities () extends js.Object {
+class Capabilities () extends CreateSessionCapabilities {
   def this(opt_other: js.Object) = this()
   def this(opt_other: Capabilities) = this()
   /**

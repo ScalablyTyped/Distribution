@@ -11,3 +11,13 @@ trait DataViewCategoricalColumn extends js.Object {
   var source: DataViewMetadataColumn
 }
 
+object DataViewCategoricalColumn {
+  @scala.inline
+  def apply(source: DataViewMetadataColumn, objects: js.Array[DataViewObjects] = null): DataViewCategoricalColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    if (objects != null) __obj.updateDynamic("objects")(objects)
+    __obj.asInstanceOf[DataViewCategoricalColumn]
+  }
+}
+

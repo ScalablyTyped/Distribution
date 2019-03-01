@@ -10,3 +10,13 @@ trait Anon_Latitude extends js.Object {
   var longitude: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Latitude {
+  @scala.inline
+  def apply(latitude: scala.Int | scala.Double = null, longitude: scala.Int | scala.Double = null): Anon_Latitude = {
+    val __obj = js.Dynamic.literal()
+    if (latitude != null) __obj.updateDynamic("latitude")(latitude.asInstanceOf[js.Any])
+    if (longitude != null) __obj.updateDynamic("longitude")(longitude.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Latitude]
+  }
+}
+

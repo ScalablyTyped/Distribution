@@ -17,3 +17,14 @@ trait Entitlement extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Entitlement {
+  @scala.inline
+  def apply(kind: java.lang.String = null, productId: java.lang.String = null, reason: java.lang.String = null): Entitlement = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[Entitlement]
+  }
+}
+

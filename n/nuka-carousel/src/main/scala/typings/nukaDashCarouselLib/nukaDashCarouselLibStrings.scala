@@ -10,22 +10,28 @@ object nukaDashCarouselLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselCellAlignProp
   
   @js.native
-  sealed trait current extends js.Object
+  sealed trait current
+    extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselHeightModeProp
   
   @js.native
-  sealed trait first extends js.Object
+  sealed trait first
+    extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselHeightModeProp
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselCellAlignProp
   
   @js.native
-  sealed trait max extends js.Object
+  sealed trait max
+    extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselHeightModeProp
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends nukaDashCarouselLib.nukaDashCarouselMod.CarouselCellAlignProp
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]

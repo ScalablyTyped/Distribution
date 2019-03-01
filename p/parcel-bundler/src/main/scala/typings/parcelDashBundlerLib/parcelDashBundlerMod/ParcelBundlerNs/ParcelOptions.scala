@@ -114,3 +114,44 @@ trait ParcelOptions extends js.Object {
   var watch: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ParcelOptions {
+  @scala.inline
+  def apply(
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheDir: java.lang.String = null,
+    contentHash: js.UndefOr[scala.Boolean] = js.undefined,
+    detailedReport: js.UndefOr[scala.Boolean] = js.undefined,
+    hmrHostname: java.lang.String = null,
+    hmrPort: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`0` | scala.Double = null,
+    https: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`true` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`false` | parcelDashBundlerLib.Anon_Cert = null,
+    logLevel: parcelDashBundlerLib.parcelDashBundlerLibNumbers.`3` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`2` | parcelDashBundlerLib.parcelDashBundlerLibNumbers.`1` = null,
+    minify: js.UndefOr[scala.Boolean] = js.undefined,
+    outDir: java.lang.String = null,
+    outFile: java.lang.String = null,
+    publicUrl: java.lang.String = null,
+    scopeHoist: js.UndefOr[scala.Boolean] = js.undefined,
+    sourceMaps: js.UndefOr[scala.Boolean] = js.undefined,
+    target: parcelDashBundlerLib.parcelDashBundlerLibStrings.browser | parcelDashBundlerLib.parcelDashBundlerLibStrings.node | parcelDashBundlerLib.parcelDashBundlerLibStrings.electron = null,
+    watch: js.UndefOr[scala.Boolean] = js.undefined
+  ): ParcelOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (cacheDir != null) __obj.updateDynamic("cacheDir")(cacheDir)
+    if (!js.isUndefined(contentHash)) __obj.updateDynamic("contentHash")(contentHash)
+    if (!js.isUndefined(detailedReport)) __obj.updateDynamic("detailedReport")(detailedReport)
+    if (hmrHostname != null) __obj.updateDynamic("hmrHostname")(hmrHostname)
+    if (hmrPort != null) __obj.updateDynamic("hmrPort")(hmrPort.asInstanceOf[js.Any])
+    if (https != null) __obj.updateDynamic("https")(https.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(minify)) __obj.updateDynamic("minify")(minify)
+    if (outDir != null) __obj.updateDynamic("outDir")(outDir)
+    if (outFile != null) __obj.updateDynamic("outFile")(outFile)
+    if (publicUrl != null) __obj.updateDynamic("publicUrl")(publicUrl)
+    if (!js.isUndefined(scopeHoist)) __obj.updateDynamic("scopeHoist")(scopeHoist)
+    if (!js.isUndefined(sourceMaps)) __obj.updateDynamic("sourceMaps")(sourceMaps)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (!js.isUndefined(watch)) __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[ParcelOptions]
+  }
+}
+

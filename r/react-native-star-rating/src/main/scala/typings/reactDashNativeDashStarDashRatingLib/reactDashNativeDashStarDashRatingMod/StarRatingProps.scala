@@ -115,3 +115,46 @@ trait StarRatingProps extends js.Object {
   ] = js.undefined
 }
 
+object StarRatingProps {
+  @scala.inline
+  def apply(
+    buttonStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    emptyStar: java.lang.String | reactDashNativeLib.reactDashNativeMod.ImageURISource = null,
+    emptyStarColor: java.lang.String = null,
+    fullStar: java.lang.String | reactDashNativeLib.reactDashNativeMod.ImageURISource = null,
+    fullStarColor: java.lang.String = null,
+    halfStar: java.lang.String | reactDashNativeLib.reactDashNativeMod.ImageURISource = null,
+    halfStarColor: java.lang.String = null,
+    halfStarEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    iconSet: java.lang.String = null,
+    maxStars: scala.Int | scala.Double = null,
+    rating: scala.Int | scala.Double = null,
+    reversed: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedStar: js.Function1[/* rating */ scala.Double, scala.Unit] = null,
+    starSize: scala.Int | scala.Double = null,
+    starStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): StarRatingProps = {
+    val __obj = js.Dynamic.literal()
+    if (buttonStyle != null) __obj.updateDynamic("buttonStyle")(buttonStyle.asInstanceOf[js.Any])
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (emptyStar != null) __obj.updateDynamic("emptyStar")(emptyStar.asInstanceOf[js.Any])
+    if (emptyStarColor != null) __obj.updateDynamic("emptyStarColor")(emptyStarColor)
+    if (fullStar != null) __obj.updateDynamic("fullStar")(fullStar.asInstanceOf[js.Any])
+    if (fullStarColor != null) __obj.updateDynamic("fullStarColor")(fullStarColor)
+    if (halfStar != null) __obj.updateDynamic("halfStar")(halfStar.asInstanceOf[js.Any])
+    if (halfStarColor != null) __obj.updateDynamic("halfStarColor")(halfStarColor)
+    if (!js.isUndefined(halfStarEnabled)) __obj.updateDynamic("halfStarEnabled")(halfStarEnabled)
+    if (iconSet != null) __obj.updateDynamic("iconSet")(iconSet)
+    if (maxStars != null) __obj.updateDynamic("maxStars")(maxStars.asInstanceOf[js.Any])
+    if (rating != null) __obj.updateDynamic("rating")(rating.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (selectedStar != null) __obj.updateDynamic("selectedStar")(selectedStar)
+    if (starSize != null) __obj.updateDynamic("starSize")(starSize.asInstanceOf[js.Any])
+    if (starStyle != null) __obj.updateDynamic("starStyle")(starStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StarRatingProps]
+  }
+}
+

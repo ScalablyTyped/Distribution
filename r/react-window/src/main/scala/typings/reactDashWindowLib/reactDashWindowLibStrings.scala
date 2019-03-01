@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object reactDashWindowLibStrings {
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends reactDashWindowLib.reactDashWindowMod.Align
   
   @js.native
-  sealed trait backward extends js.Object
+  sealed trait backward
+    extends reactDashWindowLib.reactDashWindowMod.ScrollDirection
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashWindowLib.reactDashWindowMod.Align
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends reactDashWindowLib.reactDashWindowMod.Align
   
   @js.native
-  sealed trait forward extends js.Object
+  sealed trait forward
+    extends reactDashWindowLib.reactDashWindowMod.ScrollDirection
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends reactDashWindowLib.reactDashWindowMod.Direction
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends reactDashWindowLib.reactDashWindowMod.Align
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends reactDashWindowLib.reactDashWindowMod.Direction
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]

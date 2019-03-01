@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object typesSpecAxisMod {
-  type AxisOrient = vegaDashTypingsLib.vegaDashTypingsLibStrings.top | vegaDashTypingsLib.vegaDashTypingsLibStrings.bottom | vegaDashTypingsLib.vegaDashTypingsLibStrings.left | vegaDashTypingsLib.vegaDashTypingsLibStrings.right
-  type LabelOverlap = scala.Boolean | vegaDashTypingsLib.vegaDashTypingsLibStrings.parity | vegaDashTypingsLib.vegaDashTypingsLibStrings.greedy
-  type TickCount = scala.Double | vegaDashTypingsLib.typesSpecScaleMod.TimeInterval | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
+  type LabelOverlap = _LabelOverlap | scala.Boolean
+  type TickCount = _TickCount | scala.Double
 }

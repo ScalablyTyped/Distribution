@@ -90,3 +90,50 @@ trait JSONEditorOptions[TValue] extends js.Object {
   ] = js.undefined
 }
 
+object JSONEditorOptions {
+  @scala.inline
+  def apply[TValue](
+    ajax: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_array_add: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_array_delete: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_array_reorder: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_collapse: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_edit_json: js.UndefOr[scala.Boolean] = js.undefined,
+    disable_properties: js.UndefOr[scala.Boolean] = js.undefined,
+    display_required_only: js.UndefOr[scala.Boolean] = js.undefined,
+    form_name_root: java.lang.String = null,
+    iconlib: jsonDashEditorLib.jsonDashEditorLibStrings.bootstrap2 | jsonDashEditorLib.jsonDashEditorLibStrings.bootstrap3 | jsonDashEditorLib.jsonDashEditorLibStrings.foundation2 | jsonDashEditorLib.jsonDashEditorLibStrings.foundation3 | jsonDashEditorLib.jsonDashEditorLibStrings.jqueryui | jsonDashEditorLib.jsonDashEditorLibStrings.fontawesome3 | jsonDashEditorLib.jsonDashEditorLibStrings.fontawesome4 = null,
+    keep_oneof_values: js.UndefOr[scala.Boolean] = js.undefined,
+    no_additional_properties: js.UndefOr[scala.Boolean] = js.undefined,
+    refs: js.Any = null,
+    required_by_default: js.UndefOr[scala.Boolean] = js.undefined,
+    schema: js.Any = null,
+    show_errors: jsonDashEditorLib.jsonDashEditorLibStrings.interaction | jsonDashEditorLib.jsonDashEditorLibStrings.change | jsonDashEditorLib.jsonDashEditorLibStrings.always | jsonDashEditorLib.jsonDashEditorLibStrings.never = null,
+    startval: TValue = null,
+    template: java.lang.String | Anon_Compile = null,
+    theme: jsonDashEditorLib.jsonDashEditorLibStrings.barebones | jsonDashEditorLib.jsonDashEditorLibStrings.html | jsonDashEditorLib.jsonDashEditorLibStrings.bootstrap2 | jsonDashEditorLib.jsonDashEditorLibStrings.bootstrap3 | jsonDashEditorLib.jsonDashEditorLibStrings.bootstrap4 | jsonDashEditorLib.jsonDashEditorLibStrings.foundation3 | jsonDashEditorLib.jsonDashEditorLibStrings.foundation4 | jsonDashEditorLib.jsonDashEditorLibStrings.foundation5 | jsonDashEditorLib.jsonDashEditorLibStrings.foundation6 | jsonDashEditorLib.jsonDashEditorLibStrings.jqueryui = null
+  ): JSONEditorOptions[TValue] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ajax)) __obj.updateDynamic("ajax")(ajax)
+    if (!js.isUndefined(disable_array_add)) __obj.updateDynamic("disable_array_add")(disable_array_add)
+    if (!js.isUndefined(disable_array_delete)) __obj.updateDynamic("disable_array_delete")(disable_array_delete)
+    if (!js.isUndefined(disable_array_reorder)) __obj.updateDynamic("disable_array_reorder")(disable_array_reorder)
+    if (!js.isUndefined(disable_collapse)) __obj.updateDynamic("disable_collapse")(disable_collapse)
+    if (!js.isUndefined(disable_edit_json)) __obj.updateDynamic("disable_edit_json")(disable_edit_json)
+    if (!js.isUndefined(disable_properties)) __obj.updateDynamic("disable_properties")(disable_properties)
+    if (!js.isUndefined(display_required_only)) __obj.updateDynamic("display_required_only")(display_required_only)
+    if (form_name_root != null) __obj.updateDynamic("form_name_root")(form_name_root)
+    if (iconlib != null) __obj.updateDynamic("iconlib")(iconlib.asInstanceOf[js.Any])
+    if (!js.isUndefined(keep_oneof_values)) __obj.updateDynamic("keep_oneof_values")(keep_oneof_values)
+    if (!js.isUndefined(no_additional_properties)) __obj.updateDynamic("no_additional_properties")(no_additional_properties)
+    if (refs != null) __obj.updateDynamic("refs")(refs)
+    if (!js.isUndefined(required_by_default)) __obj.updateDynamic("required_by_default")(required_by_default)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (show_errors != null) __obj.updateDynamic("show_errors")(show_errors.asInstanceOf[js.Any])
+    if (startval != null) __obj.updateDynamic("startval")(startval.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JSONEditorOptions[TValue]]
+  }
+}
+

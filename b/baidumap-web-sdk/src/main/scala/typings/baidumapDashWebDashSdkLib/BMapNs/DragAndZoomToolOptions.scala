@@ -11,3 +11,18 @@ trait DragAndZoomToolOptions extends js.Object {
   var zoomType: js.UndefOr[ZoomType] = js.undefined
 }
 
+object DragAndZoomToolOptions {
+  @scala.inline
+  def apply(
+    autoClose: js.UndefOr[scala.Boolean] = js.undefined,
+    followText: java.lang.String = null,
+    zoomType: js.UndefOr[ZoomType] = js.undefined
+  ): DragAndZoomToolOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (followText != null) __obj.updateDynamic("followText")(followText)
+    if (!js.isUndefined(zoomType)) __obj.updateDynamic("zoomType")(zoomType)
+    __obj.asInstanceOf[DragAndZoomToolOptions]
+  }
+}
+

@@ -296,3 +296,94 @@ trait ChartAxisLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartAxisLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    alignment: js.UndefOr[scala.Boolean] = js.undefined,
+    axisGroup: js.UndefOr[scala.Boolean] = js.undefined,
+    baseTimeUnit: js.UndefOr[scala.Boolean] = js.undefined,
+    categoryType: js.UndefOr[scala.Boolean] = js.undefined,
+    crosses: js.UndefOr[scala.Boolean] = js.undefined,
+    crossesAt: js.UndefOr[scala.Boolean] = js.undefined,
+    customDisplayUnit: js.UndefOr[scala.Boolean] = js.undefined,
+    displayUnit: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartAxisFormatLoadOptions = null,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
+    isBetweenCategories: js.UndefOr[scala.Boolean] = js.undefined,
+    left: js.UndefOr[scala.Boolean] = js.undefined,
+    logBase: js.UndefOr[scala.Boolean] = js.undefined,
+    majorGridlines: ChartGridlinesLoadOptions = null,
+    majorTickMark: js.UndefOr[scala.Boolean] = js.undefined,
+    majorTimeUnitScale: js.UndefOr[scala.Boolean] = js.undefined,
+    majorUnit: js.UndefOr[scala.Boolean] = js.undefined,
+    maximum: js.UndefOr[scala.Boolean] = js.undefined,
+    minimum: js.UndefOr[scala.Boolean] = js.undefined,
+    minorGridlines: ChartGridlinesLoadOptions = null,
+    minorTickMark: js.UndefOr[scala.Boolean] = js.undefined,
+    minorTimeUnitScale: js.UndefOr[scala.Boolean] = js.undefined,
+    minorUnit: js.UndefOr[scala.Boolean] = js.undefined,
+    multiLevel: js.UndefOr[scala.Boolean] = js.undefined,
+    numberFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    offset: js.UndefOr[scala.Boolean] = js.undefined,
+    position: js.UndefOr[scala.Boolean] = js.undefined,
+    positionAt: js.UndefOr[scala.Boolean] = js.undefined,
+    reversePlotOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    scaleType: js.UndefOr[scala.Boolean] = js.undefined,
+    showDisplayUnitLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    textOrientation: js.UndefOr[scala.Boolean] = js.undefined,
+    tickLabelPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    tickLabelSpacing: js.UndefOr[scala.Boolean] = js.undefined,
+    tickMarkSpacing: js.UndefOr[scala.Boolean] = js.undefined,
+    title: ChartAxisTitleLoadOptions = null,
+    top: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartAxisLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(alignment)) __obj.updateDynamic("alignment")(alignment)
+    if (!js.isUndefined(axisGroup)) __obj.updateDynamic("axisGroup")(axisGroup)
+    if (!js.isUndefined(baseTimeUnit)) __obj.updateDynamic("baseTimeUnit")(baseTimeUnit)
+    if (!js.isUndefined(categoryType)) __obj.updateDynamic("categoryType")(categoryType)
+    if (!js.isUndefined(crosses)) __obj.updateDynamic("crosses")(crosses)
+    if (!js.isUndefined(crossesAt)) __obj.updateDynamic("crossesAt")(crossesAt)
+    if (!js.isUndefined(customDisplayUnit)) __obj.updateDynamic("customDisplayUnit")(customDisplayUnit)
+    if (!js.isUndefined(displayUnit)) __obj.updateDynamic("displayUnit")(displayUnit)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(isBetweenCategories)) __obj.updateDynamic("isBetweenCategories")(isBetweenCategories)
+    if (!js.isUndefined(left)) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(logBase)) __obj.updateDynamic("logBase")(logBase)
+    if (majorGridlines != null) __obj.updateDynamic("majorGridlines")(majorGridlines)
+    if (!js.isUndefined(majorTickMark)) __obj.updateDynamic("majorTickMark")(majorTickMark)
+    if (!js.isUndefined(majorTimeUnitScale)) __obj.updateDynamic("majorTimeUnitScale")(majorTimeUnitScale)
+    if (!js.isUndefined(majorUnit)) __obj.updateDynamic("majorUnit")(majorUnit)
+    if (!js.isUndefined(maximum)) __obj.updateDynamic("maximum")(maximum)
+    if (!js.isUndefined(minimum)) __obj.updateDynamic("minimum")(minimum)
+    if (minorGridlines != null) __obj.updateDynamic("minorGridlines")(minorGridlines)
+    if (!js.isUndefined(minorTickMark)) __obj.updateDynamic("minorTickMark")(minorTickMark)
+    if (!js.isUndefined(minorTimeUnitScale)) __obj.updateDynamic("minorTimeUnitScale")(minorTimeUnitScale)
+    if (!js.isUndefined(minorUnit)) __obj.updateDynamic("minorUnit")(minorUnit)
+    if (!js.isUndefined(multiLevel)) __obj.updateDynamic("multiLevel")(multiLevel)
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (!js.isUndefined(offset)) __obj.updateDynamic("offset")(offset)
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(positionAt)) __obj.updateDynamic("positionAt")(positionAt)
+    if (!js.isUndefined(reversePlotOrder)) __obj.updateDynamic("reversePlotOrder")(reversePlotOrder)
+    if (!js.isUndefined(scaleType)) __obj.updateDynamic("scaleType")(scaleType)
+    if (!js.isUndefined(showDisplayUnitLabel)) __obj.updateDynamic("showDisplayUnitLabel")(showDisplayUnitLabel)
+    if (!js.isUndefined(textOrientation)) __obj.updateDynamic("textOrientation")(textOrientation)
+    if (!js.isUndefined(tickLabelPosition)) __obj.updateDynamic("tickLabelPosition")(tickLabelPosition)
+    if (!js.isUndefined(tickLabelSpacing)) __obj.updateDynamic("tickLabelSpacing")(tickLabelSpacing)
+    if (!js.isUndefined(tickMarkSpacing)) __obj.updateDynamic("tickMarkSpacing")(tickMarkSpacing)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(top)) __obj.updateDynamic("top")(top)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ChartAxisLoadOptions]
+  }
+}
+

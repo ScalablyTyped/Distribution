@@ -267,6 +267,12 @@ trait IModelServerClient extends js.Object {
     callback: mendixmodelsdkLib.distCommonMod.commonNs.ICallback[mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IDeployJobStatus],
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native
+  def unlockWorkingCopy(
+    workingCopyId: java.lang.String,
+    lockType: js.UndefOr[scala.Nothing],
+    callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
+    errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
+  ): scala.Unit = js.native
   /**
     * Unlock the working copy (will be unlocked for the currently authenticated openid, will fail if it's locked by another openid)
     *
@@ -274,7 +280,7 @@ trait IModelServerClient extends js.Object {
     */
   def unlockWorkingCopy(
     workingCopyId: java.lang.String,
-    lockType: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType | js.UndefOr[scala.Nothing],
+    lockType: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.LockType,
     callback: mendixmodelsdkLib.distCommonMod.commonNs.IVoidCallback,
     errorCallback: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback
   ): scala.Unit = js.native

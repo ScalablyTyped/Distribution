@@ -10,3 +10,12 @@ trait RangeViewCollectionData extends js.Object {
   var items: js.UndefOr[js.Array[RangeViewData]] = js.undefined
 }
 
+object RangeViewCollectionData {
+  @scala.inline
+  def apply(items: js.Array[RangeViewData] = null): RangeViewCollectionData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[RangeViewCollectionData]
+  }
+}
+

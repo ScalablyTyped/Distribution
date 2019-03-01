@@ -9,3 +9,12 @@ trait Anon_Weight extends js.Object {
   var weight: scala.Double
 }
 
+object Anon_Weight {
+  @scala.inline
+  def apply(weight: scala.Double): Anon_Weight = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[Anon_Weight]
+  }
+}
+

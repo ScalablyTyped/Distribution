@@ -12,3 +12,20 @@ trait Anon_DetailIndices extends js.Object {
   var vertices: js.Array[scala.Double]
 }
 
+object Anon_DetailIndices {
+  @scala.inline
+  def apply(
+    detail: scala.Double,
+    indices: js.Array[scala.Double],
+    radius: scala.Double,
+    vertices: js.Array[scala.Double]
+  ): Anon_DetailIndices = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("detail")(detail)
+    __obj.updateDynamic("indices")(indices)
+    __obj.updateDynamic("radius")(radius)
+    __obj.updateDynamic("vertices")(vertices)
+    __obj.asInstanceOf[Anon_DetailIndices]
+  }
+}
+

@@ -36,3 +36,18 @@ trait TimePickerAndroidStatic extends js.Object {
   def open(options: TimePickerAndroidOpenOptions): js.Promise[TimePickerAndroidOpenReturn]
 }
 
+object TimePickerAndroidStatic {
+  @scala.inline
+  def apply(
+    dismissedAction: reactDashNativeLib.reactDashNativeLibStrings.dismissedAction,
+    open: js.Function1[TimePickerAndroidOpenOptions, js.Promise[TimePickerAndroidOpenReturn]],
+    timeSetAction: reactDashNativeLib.reactDashNativeLibStrings.timeSetAction
+  ): TimePickerAndroidStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dismissedAction")(dismissedAction)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("timeSetAction")(timeSetAction)
+    __obj.asInstanceOf[TimePickerAndroidStatic]
+  }
+}
+

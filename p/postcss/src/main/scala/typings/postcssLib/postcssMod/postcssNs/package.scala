@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object postcssNs {
-  type AcceptedPlugin = Plugin[js.Any] | Transformer | postcssLib.Anon_Postcss | Processor
+  type AcceptedPlugin = _AcceptedPlugin | Plugin[js.Any]
   type JsonComment = JsonNode
   type JsonRoot = JsonContainer
   type Parse = js.Function2[

@@ -35,3 +35,37 @@ trait IgHtmlEditorPopover
   var target: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgHtmlEditorPopover {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igHtmlEditorPopover
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    apply: ApplyEvent = null,
+    cancel: CancelEvent = null,
+    hide: HideEvent = null,
+    isHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    item: js.Any = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    regional: java.lang.String | js.Object = null,
+    show: ShowEvent = null,
+    target: js.Any = null
+  ): IgHtmlEditorPopover = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (apply != null) __obj.updateDynamic("apply")(apply)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (!js.isUndefined(isHidden)) __obj.updateDynamic("isHidden")(isHidden)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (show != null) __obj.updateDynamic("show")(show)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[IgHtmlEditorPopover]
+  }
+}
+

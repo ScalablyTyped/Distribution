@@ -10,3 +10,18 @@ trait ConflictResult
   var apiController: js.Any
 }
 
+object ConflictResult {
+  @scala.inline
+  def apply(
+    apiController: js.Any,
+    executeAsync: js.Function0[
+      js.Promise[inversifyDashExpressDashUtilsLib.dtsHttpResponseMessageMod.HttpResponseMessage]
+    ]
+  ): ConflictResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiController")(apiController)
+    __obj.updateDynamic("executeAsync")(executeAsync)
+    __obj.asInstanceOf[ConflictResult]
+  }
+}
+

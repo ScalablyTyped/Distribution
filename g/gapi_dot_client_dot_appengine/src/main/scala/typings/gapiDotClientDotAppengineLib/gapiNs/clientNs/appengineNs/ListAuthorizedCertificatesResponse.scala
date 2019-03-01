@@ -12,3 +12,13 @@ trait ListAuthorizedCertificatesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListAuthorizedCertificatesResponse {
+  @scala.inline
+  def apply(certificates: js.Array[AuthorizedCertificate] = null, nextPageToken: java.lang.String = null): ListAuthorizedCertificatesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (certificates != null) __obj.updateDynamic("certificates")(certificates)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListAuthorizedCertificatesResponse]
+  }
+}
+

@@ -47,3 +47,22 @@ trait AccessibleTableModelChange extends js.Object {
   var Type: scala.Double
 }
 
+object AccessibleTableModelChange {
+  @scala.inline
+  def apply(
+    FirstColumn: scala.Double,
+    FirstRow: scala.Double,
+    LastColumn: scala.Double,
+    LastRow: scala.Double,
+    Type: scala.Double
+  ): AccessibleTableModelChange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FirstColumn")(FirstColumn)
+    __obj.updateDynamic("FirstRow")(FirstRow)
+    __obj.updateDynamic("LastColumn")(LastColumn)
+    __obj.updateDynamic("LastRow")(LastRow)
+    __obj.updateDynamic("Type")(Type)
+    __obj.asInstanceOf[AccessibleTableModelChange]
+  }
+}
+

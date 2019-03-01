@@ -10,3 +10,12 @@ trait IGeocodeResult extends js.Object {
   var results: js.Array[IPlaceResult]
 }
 
+object IGeocodeResult {
+  @scala.inline
+  def apply(results: js.Array[IPlaceResult]): IGeocodeResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[IGeocodeResult]
+  }
+}
+

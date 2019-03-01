@@ -27,3 +27,22 @@ trait User extends js.Object {
   def getUserLoginId(): java.lang.String
 }
 
+object User {
+  @scala.inline
+  def apply(
+    getDomain: js.Function0[java.lang.String],
+    getEmail: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getPhotoUrl: js.Function0[java.lang.String],
+    getUserLoginId: js.Function0[java.lang.String]
+  ): User = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getDomain")(getDomain)
+    __obj.updateDynamic("getEmail")(getEmail)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getPhotoUrl")(getPhotoUrl)
+    __obj.updateDynamic("getUserLoginId")(getUserLoginId)
+    __obj.asInstanceOf[User]
+  }
+}
+

@@ -16,3 +16,16 @@ trait QueryLogArgs extends js.Object {
   val zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object QueryLogArgs {
+  @scala.inline
+  def apply(
+    cloudwatchLogGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): QueryLogArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cloudwatchLogGroupArn")(cloudwatchLogGroupArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[QueryLogArgs]
+  }
+}
+

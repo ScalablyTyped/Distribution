@@ -12,3 +12,13 @@ trait TempFile extends js.Object {
   var size: scala.Double
 }
 
+object TempFile {
+  @scala.inline
+  def apply(path: java.lang.String, size: scala.Double): TempFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[TempFile]
+  }
+}
+

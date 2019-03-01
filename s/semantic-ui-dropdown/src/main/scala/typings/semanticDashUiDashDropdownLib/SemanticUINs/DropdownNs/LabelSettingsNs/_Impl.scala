@@ -20,3 +20,18 @@ trait _Impl extends js.Object {
   var variation: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    transition: java.lang.String,
+    variation: semanticDashUiDashDropdownLib.semanticDashUiDashDropdownLibNumbers.`false` | java.lang.String
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("transition")(transition)
+    __obj.updateDynamic("variation")(variation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

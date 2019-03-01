@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object reactDashNativeDashFsLibStrings {
   @js.native
-  sealed trait ascii extends js.Object
+  sealed trait ascii
+    extends reactDashNativeDashFsLib.reactDashNativeDashFsMod.Encoding
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends reactDashNativeDashFsLib.reactDashNativeDashFsMod.Encoding
   
   @js.native
-  sealed trait md5 extends js.Object
+  sealed trait md5
+    extends reactDashNativeDashFsLib.reactDashNativeDashFsMod.HashAlgorithm
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait sha1
+    extends reactDashNativeDashFsLib.reactDashNativeDashFsMod.HashAlgorithm
   
   @js.native
-  sealed trait sha224 extends js.Object
+  sealed trait sha224
+    extends reactDashNativeDashFsLib.reactDashNativeDashFsMod.HashAlgorithm
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait sha256
+    extends reactDashNativeDashFsLib.reactDashNativeDashFsMod.HashAlgorithm
   
   @js.native
-  sealed trait sha384 extends js.Object
+  sealed trait sha384
+    extends reactDashNativeDashFsLib.reactDashNativeDashFsMod.HashAlgorithm
   
   @js.native
-  sealed trait sha512 extends js.Object
+  sealed trait sha512
+    extends reactDashNativeDashFsLib.reactDashNativeDashFsMod.HashAlgorithm
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends reactDashNativeDashFsLib.reactDashNativeDashFsMod.Encoding
   
   @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]

@@ -18,3 +18,22 @@ trait FreeBusyResponse extends js.Object {
   var timeMin: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FreeBusyResponse {
+  @scala.inline
+  def apply(
+    calendars: stdLib.Record[java.lang.String, FreeBusyCalendar] = null,
+    groups: stdLib.Record[java.lang.String, FreeBusyGroup] = null,
+    kind: java.lang.String = null,
+    timeMax: java.lang.String = null,
+    timeMin: java.lang.String = null
+  ): FreeBusyResponse = {
+    val __obj = js.Dynamic.literal()
+    if (calendars != null) __obj.updateDynamic("calendars")(calendars)
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (timeMax != null) __obj.updateDynamic("timeMax")(timeMax)
+    if (timeMin != null) __obj.updateDynamic("timeMin")(timeMin)
+    __obj.asInstanceOf[FreeBusyResponse]
+  }
+}
+

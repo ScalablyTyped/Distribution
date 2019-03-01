@@ -99,3 +99,41 @@ trait IgLayoutManager
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgLayoutManager {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igLayoutManager
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    borderLayout: IgLayoutManagerBorderLayout = null,
+    gridLayout: IgLayoutManagerGridLayout = null,
+    height: java.lang.String | scala.Double = null,
+    internalResized: InternalResizedEvent = null,
+    internalResizing: InternalResizingEvent = null,
+    itemCount: scala.Int | scala.Double = null,
+    itemRendered: ItemRenderedEvent = null,
+    itemRendering: ItemRenderingEvent = null,
+    items: js.Array[IgLayoutManagerItem] = null,
+    layoutMode: js.Any = null,
+    rendered: RenderedEvent = null,
+    width: java.lang.String | scala.Double = null
+  ): IgLayoutManager = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (borderLayout != null) __obj.updateDynamic("borderLayout")(borderLayout)
+    if (gridLayout != null) __obj.updateDynamic("gridLayout")(gridLayout)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (internalResized != null) __obj.updateDynamic("internalResized")(internalResized)
+    if (internalResizing != null) __obj.updateDynamic("internalResizing")(internalResizing)
+    if (itemCount != null) __obj.updateDynamic("itemCount")(itemCount.asInstanceOf[js.Any])
+    if (itemRendered != null) __obj.updateDynamic("itemRendered")(itemRendered)
+    if (itemRendering != null) __obj.updateDynamic("itemRendering")(itemRendering)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (layoutMode != null) __obj.updateDynamic("layoutMode")(layoutMode)
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgLayoutManager]
+  }
+}
+

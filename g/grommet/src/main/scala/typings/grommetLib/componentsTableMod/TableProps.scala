@@ -17,3 +17,22 @@ trait TableProps extends js.Object {
   ] = js.undefined
 }
 
+object TableProps {
+  @scala.inline
+  def apply(
+    a11yTitle: java.lang.String = null,
+    alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
+    caption: java.lang.String = null,
+    gridArea: java.lang.String = null,
+    margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null
+  ): TableProps = {
+    val __obj = js.Dynamic.literal()
+    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableProps]
+  }
+}
+

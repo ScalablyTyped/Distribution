@@ -14,3 +14,13 @@ trait ReportModifiedEventArgs extends js.Object {
   var reportName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReportModifiedEventArgs {
+  @scala.inline
+  def apply(isModified: js.UndefOr[scala.Boolean] = js.undefined, reportName: java.lang.String = null): ReportModifiedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isModified)) __obj.updateDynamic("isModified")(isModified)
+    if (reportName != null) __obj.updateDynamic("reportName")(reportName)
+    __obj.asInstanceOf[ReportModifiedEventArgs]
+  }
+}
+

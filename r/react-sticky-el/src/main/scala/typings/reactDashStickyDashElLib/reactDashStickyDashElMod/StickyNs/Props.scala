@@ -115,3 +115,42 @@ trait Props[HolderProps /* <: js.Object */]
   var wrapperCmp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply[HolderProps /* <: js.Object */](
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    bottomOffset: scala.Int | scala.Double = null,
+    boundaryElement: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    hideOnBoundaryHit: js.UndefOr[scala.Boolean] = js.undefined,
+    holderCmp: java.lang.String = null,
+    holderProps: HolderProps = null,
+    mode: reactDashStickyDashElLib.reactDashStickyDashElLibStrings.top | reactDashStickyDashElLib.reactDashStickyDashElLibStrings.bottom = null,
+    onFixedToggle: js.Function1[/* fixed */ scala.Boolean, scala.Unit] = null,
+    positionRecheckInterval: scala.Int | scala.Double = null,
+    scrollElement: java.lang.String = null,
+    stickyClassName: java.lang.String = null,
+    stickyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    topOffset: scala.Int | scala.Double = null,
+    wrapperCmp: java.lang.String = null
+  ): Props[HolderProps] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (bottomOffset != null) __obj.updateDynamic("bottomOffset")(bottomOffset.asInstanceOf[js.Any])
+    if (boundaryElement != null) __obj.updateDynamic("boundaryElement")(boundaryElement)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(hideOnBoundaryHit)) __obj.updateDynamic("hideOnBoundaryHit")(hideOnBoundaryHit)
+    if (holderCmp != null) __obj.updateDynamic("holderCmp")(holderCmp)
+    if (holderProps != null) __obj.updateDynamic("holderProps")(holderProps.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (onFixedToggle != null) __obj.updateDynamic("onFixedToggle")(onFixedToggle)
+    if (positionRecheckInterval != null) __obj.updateDynamic("positionRecheckInterval")(positionRecheckInterval.asInstanceOf[js.Any])
+    if (scrollElement != null) __obj.updateDynamic("scrollElement")(scrollElement)
+    if (stickyClassName != null) __obj.updateDynamic("stickyClassName")(stickyClassName)
+    if (stickyStyle != null) __obj.updateDynamic("stickyStyle")(stickyStyle)
+    if (topOffset != null) __obj.updateDynamic("topOffset")(topOffset.asInstanceOf[js.Any])
+    if (wrapperCmp != null) __obj.updateDynamic("wrapperCmp")(wrapperCmp)
+    __obj.asInstanceOf[Props[HolderProps]]
+  }
+}
+

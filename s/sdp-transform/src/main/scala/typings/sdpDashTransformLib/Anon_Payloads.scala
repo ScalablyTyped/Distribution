@@ -12,3 +12,19 @@ trait Anon_Payloads extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Payloads {
+  @scala.inline
+  def apply(
+    port: scala.Double,
+    protocol: java.lang.String,
+    `type`: java.lang.String,
+    payloads: java.lang.String = null
+  ): Anon_Payloads = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("protocol")(protocol)
+    if (payloads != null) __obj.updateDynamic("payloads")(payloads)
+    __obj.asInstanceOf[Anon_Payloads]
+  }
+}
+

@@ -10,3 +10,12 @@ trait ResponseMetadata extends js.Object {
   var debugInfo: js.UndefOr[DebugInfo] = js.undefined
 }
 
+object ResponseMetadata {
+  @scala.inline
+  def apply(debugInfo: DebugInfo = null): ResponseMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (debugInfo != null) __obj.updateDynamic("debugInfo")(debugInfo)
+    __obj.asInstanceOf[ResponseMetadata]
+  }
+}
+

@@ -12,3 +12,16 @@ trait ManagedConfigurationsForDeviceListResponse extends js.Object {
   var managedConfigurationForDevice: js.UndefOr[js.Array[ManagedConfiguration]] = js.undefined
 }
 
+object ManagedConfigurationsForDeviceListResponse {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    managedConfigurationForDevice: js.Array[ManagedConfiguration] = null
+  ): ManagedConfigurationsForDeviceListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (managedConfigurationForDevice != null) __obj.updateDynamic("managedConfigurationForDevice")(managedConfigurationForDevice)
+    __obj.asInstanceOf[ManagedConfigurationsForDeviceListResponse]
+  }
+}
+

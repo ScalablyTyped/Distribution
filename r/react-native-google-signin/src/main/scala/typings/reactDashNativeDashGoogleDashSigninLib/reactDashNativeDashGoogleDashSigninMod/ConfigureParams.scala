@@ -37,3 +37,26 @@ trait ConfigureParams extends js.Object {
   var webClientId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConfigureParams {
+  @scala.inline
+  def apply(
+    accountName: java.lang.String = null,
+    forceConsentPrompt: js.UndefOr[scala.Boolean] = js.undefined,
+    hostedDomain: java.lang.String = null,
+    iosClientId: java.lang.String = null,
+    offlineAccess: js.UndefOr[scala.Boolean] = js.undefined,
+    scopes: js.Array[java.lang.String] = null,
+    webClientId: java.lang.String = null
+  ): ConfigureParams = {
+    val __obj = js.Dynamic.literal()
+    if (accountName != null) __obj.updateDynamic("accountName")(accountName)
+    if (!js.isUndefined(forceConsentPrompt)) __obj.updateDynamic("forceConsentPrompt")(forceConsentPrompt)
+    if (hostedDomain != null) __obj.updateDynamic("hostedDomain")(hostedDomain)
+    if (iosClientId != null) __obj.updateDynamic("iosClientId")(iosClientId)
+    if (!js.isUndefined(offlineAccess)) __obj.updateDynamic("offlineAccess")(offlineAccess)
+    if (scopes != null) __obj.updateDynamic("scopes")(scopes)
+    if (webClientId != null) __obj.updateDynamic("webClientId")(webClientId)
+    __obj.asInstanceOf[ConfigureParams]
+  }
+}
+

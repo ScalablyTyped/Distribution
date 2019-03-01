@@ -10,3 +10,13 @@ trait CreateDomain extends js.Object {
   var ReturnPathDomain: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateDomain {
+  @scala.inline
+  def apply(Name: java.lang.String, ReturnPathDomain: java.lang.String = null): CreateDomain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    if (ReturnPathDomain != null) __obj.updateDynamic("ReturnPathDomain")(ReturnPathDomain)
+    __obj.asInstanceOf[CreateDomain]
+  }
+}
+

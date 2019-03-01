@@ -27,3 +27,20 @@ trait IPlanCreationOptionsProductHash extends js.Object {
   var statement_descriptor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IPlanCreationOptionsProductHash {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    id: java.lang.String = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    statement_descriptor: java.lang.String = null
+  ): IPlanCreationOptionsProductHash = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    __obj.asInstanceOf[IPlanCreationOptionsProductHash]
+  }
+}
+

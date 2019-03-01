@@ -34,3 +34,26 @@ trait MultiColumnSettingsColumn extends js.Object {
   var `type`: js.UndefOr[ejDotWebDotAllLib.ejNs.Type | java.lang.String] = js.undefined
 }
 
+object MultiColumnSettingsColumn {
+  @scala.inline
+  def apply(
+    cssClass: java.lang.String = null,
+    field: java.lang.String = null,
+    filterType: ejDotWebDotAllLib.ejNs.filterType | java.lang.String = null,
+    headerText: java.lang.String = null,
+    headerTextAlign: ejDotWebDotAllLib.ejNs.TextAlign | java.lang.String = null,
+    textAlign: ejDotWebDotAllLib.ejNs.TextAlign | java.lang.String = null,
+    `type`: ejDotWebDotAllLib.ejNs.Type | java.lang.String = null
+  ): MultiColumnSettingsColumn = {
+    val __obj = js.Dynamic.literal()
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (headerTextAlign != null) __obj.updateDynamic("headerTextAlign")(headerTextAlign.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MultiColumnSettingsColumn]
+  }
+}
+

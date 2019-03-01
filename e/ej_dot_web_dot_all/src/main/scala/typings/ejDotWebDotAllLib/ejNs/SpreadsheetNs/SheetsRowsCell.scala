@@ -35,3 +35,26 @@ trait SheetsRowsCell extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SheetsRowsCell {
+  @scala.inline
+  def apply(
+    comment: SheetsRowsCellsComment = null,
+    format: SheetsRowsCellsFormat = null,
+    hyperlink: SheetsRowsCellsHyperlink = null,
+    index: scala.Int | scala.Double = null,
+    isLocked: js.UndefOr[scala.Boolean] = js.undefined,
+    style: SheetsRowsCellsStyle = null,
+    value: java.lang.String = null
+  ): SheetsRowsCell = {
+    val __obj = js.Dynamic.literal()
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLocked)) __obj.updateDynamic("isLocked")(isLocked)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SheetsRowsCell]
+  }
+}
+

@@ -20,3 +20,17 @@ trait ShortLinksResource extends js.Object {
   def create(request: gapiDotClientDotFirebasedynamiclinksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[CreateShortDynamicLinkResponse]
 }
 
+object ShortLinksResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotFirebasedynamiclinksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CreateShortDynamicLinkResponse]
+    ]
+  ): ShortLinksResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.asInstanceOf[ShortLinksResource]
+  }
+}
+

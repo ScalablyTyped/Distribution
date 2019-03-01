@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait CredentialsDirConfig extends js.Object {
+trait CredentialsDirConfig extends CredentialsConfig {
   var credentialsDir: java.lang.String = js.native
 }
 

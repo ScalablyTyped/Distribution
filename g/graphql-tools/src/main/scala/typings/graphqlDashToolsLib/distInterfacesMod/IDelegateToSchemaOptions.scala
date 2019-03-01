@@ -16,3 +16,28 @@ trait IDelegateToSchemaOptions[TContext] extends js.Object {
   var transforms: js.UndefOr[js.Array[Transform]] = js.undefined
 }
 
+object IDelegateToSchemaOptions {
+  @scala.inline
+  def apply[TContext](
+    context: TContext,
+    fieldName: java.lang.String,
+    info: IGraphQLToolsResolveInfo,
+    operation: Operation,
+    schema: graphqlLib.graphqlMod.GraphQLSchema,
+    args: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    skipValidation: js.UndefOr[scala.Boolean] = js.undefined,
+    transforms: js.Array[Transform] = null
+  ): IDelegateToSchemaOptions[TContext] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.updateDynamic("fieldName")(fieldName)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("operation")(operation)
+    __obj.updateDynamic("schema")(schema)
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (!js.isUndefined(skipValidation)) __obj.updateDynamic("skipValidation")(skipValidation)
+    if (transforms != null) __obj.updateDynamic("transforms")(transforms)
+    __obj.asInstanceOf[IDelegateToSchemaOptions[TContext]]
+  }
+}
+

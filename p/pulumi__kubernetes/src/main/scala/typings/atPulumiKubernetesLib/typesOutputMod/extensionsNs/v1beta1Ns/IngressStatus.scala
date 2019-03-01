@@ -15,3 +15,12 @@ trait IngressStatus extends js.Object {
   val loadBalancer: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.LoadBalancerStatus
 }
 
+object IngressStatus {
+  @scala.inline
+  def apply(loadBalancer: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.LoadBalancerStatus): IngressStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("loadBalancer")(loadBalancer)
+    __obj.asInstanceOf[IngressStatus]
+  }
+}
+

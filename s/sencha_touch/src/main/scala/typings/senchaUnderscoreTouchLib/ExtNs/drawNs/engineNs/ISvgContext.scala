@@ -321,3 +321,213 @@ trait ISvgContext
   ] = js.undefined
 }
 
+object ISvgContext {
+  @scala.inline
+  def apply(
+    alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    arc: js.Function6[
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* radius */ js.UndefOr[scala.Double], 
+      /* startAngle */ js.UndefOr[scala.Double], 
+      /* endAngle */ js.UndefOr[scala.Double], 
+      /* anticlockwise */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    arcSvg: js.Function7[
+      /* r1 */ js.UndefOr[scala.Double], 
+      /* r2 */ js.UndefOr[scala.Double], 
+      /* rotation */ js.UndefOr[scala.Double], 
+      /* large */ js.UndefOr[scala.Double], 
+      /* swipe */ js.UndefOr[scala.Double], 
+      /* x2 */ js.UndefOr[scala.Double], 
+      /* y2 */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    arcTo: js.Function7[
+      /* x1 */ js.UndefOr[scala.Double], 
+      /* y1 */ js.UndefOr[scala.Double], 
+      /* x2 */ js.UndefOr[scala.Double], 
+      /* y2 */ js.UndefOr[scala.Double], 
+      /* radiusX */ js.UndefOr[scala.Double], 
+      /* radiusY */ js.UndefOr[scala.Double], 
+      /* rotation */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    beginPath: js.Function0[scala.Unit] = null,
+    bezierCurveTo: js.Function6[
+      /* x1 */ js.UndefOr[scala.Double], 
+      /* y1 */ js.UndefOr[scala.Double], 
+      /* x2 */ js.UndefOr[scala.Double], 
+      /* y2 */ js.UndefOr[scala.Double], 
+      /* x3 */ js.UndefOr[scala.Double], 
+      /* y3 */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    clear: js.Function0[scala.Unit] = null,
+    closePath: js.Function0[scala.Unit] = null,
+    config: js.Any = null,
+    createLinearGradient: js.Function4[
+      /* x0 */ js.UndefOr[scala.Double], 
+      /* y0 */ js.UndefOr[scala.Double], 
+      /* x1 */ js.UndefOr[scala.Double], 
+      /* y1 */ js.UndefOr[scala.Double], 
+      senchaUnderscoreTouchLib.ExtNs.drawNs.engineNs.svgcontextNs.IGradient
+    ] = null,
+    createRadialGradient: js.Function6[
+      /* x0 */ js.UndefOr[scala.Double], 
+      /* y0 */ js.UndefOr[scala.Double], 
+      /* r0 */ js.UndefOr[scala.Double], 
+      /* x1 */ js.UndefOr[scala.Double], 
+      /* y1 */ js.UndefOr[scala.Double], 
+      /* r1 */ js.UndefOr[scala.Double], 
+      senchaUnderscoreTouchLib.ExtNs.drawNs.engineNs.svgcontextNs.IGradient
+    ] = null,
+    destroy: js.Function0[scala.Unit] = null,
+    drawImage: js.Function9[
+      /* image */ js.UndefOr[stdLib.HTMLElement], 
+      /* sx */ js.UndefOr[scala.Double], 
+      /* sy */ js.UndefOr[scala.Double], 
+      /* sw */ js.UndefOr[scala.Double], 
+      /* sh */ js.UndefOr[scala.Double], 
+      /* dx */ js.UndefOr[scala.Double], 
+      /* dy */ js.UndefOr[scala.Double], 
+      /* dw */ js.UndefOr[scala.Double], 
+      /* dh */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    ellipse: js.Function8[
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* radiusX */ js.UndefOr[scala.Double], 
+      /* radiusY */ js.UndefOr[scala.Double], 
+      /* rotation */ js.UndefOr[scala.Double], 
+      /* startAngle */ js.UndefOr[scala.Double], 
+      /* endAngle */ js.UndefOr[scala.Double], 
+      /* anticlockwise */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    extend: java.lang.String = null,
+    fill: js.Function0[scala.Unit] = null,
+    fillRect: js.Function4[
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* width */ js.UndefOr[scala.Double], 
+      /* height */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    fillStroke: js.Function2[
+      /* attr */ js.UndefOr[js.Any], 
+      /* transformFillStroke */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    fillText: js.Function3[
+      /* text */ js.UndefOr[java.lang.String], 
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    lineTo: js.Function2[/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], scala.Unit] = null,
+    mixins: js.Any = null,
+    moveTo: js.Function2[/* x */ js.UndefOr[scala.Double], /* y */ js.UndefOr[scala.Double], scala.Unit] = null,
+    platformConfig: js.Any = null,
+    rect: js.Function4[
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* width */ js.UndefOr[scala.Double], 
+      /* height */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    restore: js.Function0[scala.Unit] = null,
+    save: js.Function0[scala.Unit] = null,
+    self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
+    setTransform: js.Function6[
+      /* xx */ js.UndefOr[scala.Double], 
+      /* yx */ js.UndefOr[scala.Double], 
+      /* xy */ js.UndefOr[scala.Double], 
+      /* yy */ js.UndefOr[scala.Double], 
+      /* dx */ js.UndefOr[scala.Double], 
+      /* dy */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    stroke: js.Function0[scala.Unit] = null,
+    strokeRect: js.Function4[
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* width */ js.UndefOr[scala.Double], 
+      /* height */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    strokeText: js.Function3[
+      /* text */ js.UndefOr[java.lang.String], 
+      /* x */ js.UndefOr[scala.Double], 
+      /* y */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    transform: js.Function6[
+      /* xx */ js.UndefOr[scala.Double], 
+      /* yx */ js.UndefOr[scala.Double], 
+      /* xy */ js.UndefOr[scala.Double], 
+      /* yy */ js.UndefOr[scala.Double], 
+      /* dx */ js.UndefOr[scala.Double], 
+      /* dy */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    uses: senchaUnderscoreTouchLib.ExtNs.Array = null
+  ): ISvgContext = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (arc != null) __obj.updateDynamic("arc")(arc)
+    if (arcSvg != null) __obj.updateDynamic("arcSvg")(arcSvg)
+    if (arcTo != null) __obj.updateDynamic("arcTo")(arcTo)
+    if (beginPath != null) __obj.updateDynamic("beginPath")(beginPath)
+    if (bezierCurveTo != null) __obj.updateDynamic("bezierCurveTo")(bezierCurveTo)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (closePath != null) __obj.updateDynamic("closePath")(closePath)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (createLinearGradient != null) __obj.updateDynamic("createLinearGradient")(createLinearGradient)
+    if (createRadialGradient != null) __obj.updateDynamic("createRadialGradient")(createRadialGradient)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (drawImage != null) __obj.updateDynamic("drawImage")(drawImage)
+    if (ellipse != null) __obj.updateDynamic("ellipse")(ellipse)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fillRect != null) __obj.updateDynamic("fillRect")(fillRect)
+    if (fillStroke != null) __obj.updateDynamic("fillStroke")(fillStroke)
+    if (fillText != null) __obj.updateDynamic("fillText")(fillText)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (lineTo != null) __obj.updateDynamic("lineTo")(lineTo)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (moveTo != null) __obj.updateDynamic("moveTo")(moveTo)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (rect != null) __obj.updateDynamic("rect")(rect)
+    if (restore != null) __obj.updateDynamic("restore")(restore)
+    if (save != null) __obj.updateDynamic("save")(save)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (setTransform != null) __obj.updateDynamic("setTransform")(setTransform)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeRect != null) __obj.updateDynamic("strokeRect")(strokeRect)
+    if (strokeText != null) __obj.updateDynamic("strokeText")(strokeText)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[ISvgContext]
+  }
+}
+

@@ -31,3 +31,22 @@ trait SAMLCredentialsParams extends js.Object {
   var SAMLAssertion: java.lang.String
 }
 
+object SAMLCredentialsParams {
+  @scala.inline
+  def apply(
+    PrincipalArn: java.lang.String,
+    RoleArn: java.lang.String,
+    SAMLAssertion: java.lang.String,
+    DurationSeconds: scala.Int | scala.Double = null,
+    Policy: java.lang.String = null
+  ): SAMLCredentialsParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PrincipalArn")(PrincipalArn)
+    __obj.updateDynamic("RoleArn")(RoleArn)
+    __obj.updateDynamic("SAMLAssertion")(SAMLAssertion)
+    if (DurationSeconds != null) __obj.updateDynamic("DurationSeconds")(DurationSeconds.asInstanceOf[js.Any])
+    if (Policy != null) __obj.updateDynamic("Policy")(Policy)
+    __obj.asInstanceOf[SAMLCredentialsParams]
+  }
+}
+

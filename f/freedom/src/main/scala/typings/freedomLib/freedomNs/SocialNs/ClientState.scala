@@ -14,3 +14,20 @@ trait ClientState extends js.Object {
   var userId: java.lang.String
 }
 
+object ClientState {
+  @scala.inline
+  def apply(
+    clientId: java.lang.String,
+    status: java.lang.String,
+    timestamp: scala.Double,
+    userId: java.lang.String
+  ): ClientState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[ClientState]
+  }
+}
+

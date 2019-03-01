@@ -19,5 +19,4 @@ package object rethinkdbMod {
     */
   type ReqlDriverError = ReqlError
   type ReqlError = nodeLib.Error
-  type waitFor = rethinkdbLib.rethinkdbLibStrings.ready_for_outdated_reads | rethinkdbLib.rethinkdbLibStrings.ready_for_reads | rethinkdbLib.rethinkdbLibStrings.ready_for_writes
 }

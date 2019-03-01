@@ -193,3 +193,34 @@ import scala.scalajs.js.annotation._
   var TopBorderDistance: scala.Double
 }
 
+object Paragraph {
+  @scala.inline
+  def apply(
+    CharacterProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterProperties = null,
+    CharacterPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesAsian = null,
+    CharacterPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesComplex = null,
+    ParagraphProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphProperties = null,
+    ParagraphPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesAsian = null,
+    ParagraphPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesComplex = null,
+    TextTable: TextTable = null,
+    XEnumerationAccess: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess = null,
+    XPropertySet: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet = null,
+    XPropertyState: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyState = null,
+    XTolerantMultiPropertySet: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XTolerantMultiPropertySet = null
+  ): Paragraph = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesComplex)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, TextTable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XEnumerationAccess)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XPropertySet)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XPropertyState)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XTolerantMultiPropertySet)
+    __obj.asInstanceOf[Paragraph]
+  }
+}
+

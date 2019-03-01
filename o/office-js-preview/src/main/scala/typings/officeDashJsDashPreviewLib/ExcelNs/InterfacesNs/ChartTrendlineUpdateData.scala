@@ -88,3 +88,34 @@ trait ChartTrendlineUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object ChartTrendlineUpdateData {
+  @scala.inline
+  def apply(
+    backwardPeriod: scala.Int | scala.Double = null,
+    format: ChartTrendlineFormatUpdateData = null,
+    forwardPeriod: scala.Int | scala.Double = null,
+    intercept: js.Any = null,
+    label: ChartTrendlineLabelUpdateData = null,
+    movingAveragePeriod: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    polynomialOrder: scala.Int | scala.Double = null,
+    showEquation: js.UndefOr[scala.Boolean] = js.undefined,
+    showRSquared: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: officeDashJsDashPreviewLib.ExcelNs.ChartTrendlineType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Linear | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Exponential | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Logarithmic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MovingAverage | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Polynomial | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Power = null
+  ): ChartTrendlineUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (backwardPeriod != null) __obj.updateDynamic("backwardPeriod")(backwardPeriod.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (forwardPeriod != null) __obj.updateDynamic("forwardPeriod")(forwardPeriod.asInstanceOf[js.Any])
+    if (intercept != null) __obj.updateDynamic("intercept")(intercept)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (movingAveragePeriod != null) __obj.updateDynamic("movingAveragePeriod")(movingAveragePeriod.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (polynomialOrder != null) __obj.updateDynamic("polynomialOrder")(polynomialOrder.asInstanceOf[js.Any])
+    if (!js.isUndefined(showEquation)) __obj.updateDynamic("showEquation")(showEquation)
+    if (!js.isUndefined(showRSquared)) __obj.updateDynamic("showRSquared")(showRSquared)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartTrendlineUpdateData]
+  }
+}
+

@@ -19,3 +19,34 @@ trait DropdownBaseProps extends js.Object {
   var role: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DropdownBaseProps {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    bsClass: java.lang.String = null,
+    componentClass: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    dropup: js.UndefOr[scala.Boolean] = js.undefined,
+    onClose: js.Function = null,
+    onSelect: reactDashBootstrapLib.reactDashBootstrapMod.SelectCallback = null,
+    onToggle: js.Function1[/* isOpen */ scala.Boolean, scala.Unit] = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    pullRight: js.UndefOr[scala.Boolean] = js.undefined,
+    role: java.lang.String = null
+  ): DropdownBaseProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    if (componentClass != null) __obj.updateDynamic("componentClass")(componentClass.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onToggle != null) __obj.updateDynamic("onToggle")(onToggle)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
+    if (role != null) __obj.updateDynamic("role")(role)
+    __obj.asInstanceOf[DropdownBaseProps]
+  }
+}
+

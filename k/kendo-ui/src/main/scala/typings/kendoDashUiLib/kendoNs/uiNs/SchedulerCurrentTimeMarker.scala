@@ -10,3 +10,16 @@ trait SchedulerCurrentTimeMarker extends js.Object {
   var useLocalTimezone: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SchedulerCurrentTimeMarker {
+  @scala.inline
+  def apply(
+    updateInterval: scala.Int | scala.Double = null,
+    useLocalTimezone: js.UndefOr[scala.Boolean] = js.undefined
+  ): SchedulerCurrentTimeMarker = {
+    val __obj = js.Dynamic.literal()
+    if (updateInterval != null) __obj.updateDynamic("updateInterval")(updateInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(useLocalTimezone)) __obj.updateDynamic("useLocalTimezone")(useLocalTimezone)
+    __obj.asInstanceOf[SchedulerCurrentTimeMarker]
+  }
+}
+

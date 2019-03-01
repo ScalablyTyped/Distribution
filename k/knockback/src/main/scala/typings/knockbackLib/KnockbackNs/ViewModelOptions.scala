@@ -17,3 +17,29 @@ trait ViewModelOptions extends OptionsBase {
   def `if`(objOrArray: js.Any): js.Any
 }
 
+object ViewModelOptions {
+  @scala.inline
+  def apply(
+    `if`: js.Function1[js.Any, js.Any],
+    factories: js.Any = null,
+    factory: Factory = null,
+    internals: js.Array[java.lang.String] = null,
+    keys: js.Array[java.lang.String] = null,
+    options: js.Any = null,
+    path: java.lang.String = null,
+    requires: js.Array[java.lang.String] = null,
+    store: Store = null
+  ): ViewModelOptions = {
+    val __obj = js.Dynamic.literal(`if` = `if`)
+    if (factories != null) __obj.updateDynamic("factories")(factories)
+    if (factory != null) __obj.updateDynamic("factory")(factory)
+    if (internals != null) __obj.updateDynamic("internals")(internals)
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (store != null) __obj.updateDynamic("store")(store)
+    __obj.asInstanceOf[ViewModelOptions]
+  }
+}
+

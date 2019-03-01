@@ -73,3 +73,48 @@ trait GiftCard
   var user_id: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GiftCard {
+  @scala.inline
+  def apply(
+    admin_graphql_api_id: java.lang.String = null,
+    api_client_id: scala.Int | scala.Double = null,
+    balance: scala.Int | scala.Double = null,
+    code: java.lang.String = null,
+    created_at: stdLib.Date = null,
+    currency: java.lang.String = null,
+    disabled_at: stdLib.Date = null,
+    expires_on: stdLib.Date = null,
+    id: scala.Int | scala.Double = null,
+    initial_value: scala.Int | scala.Double = null,
+    last_characters: java.lang.String = null,
+    line_item_id: scala.Int | scala.Double = null,
+    masked_code: java.lang.String = null,
+    note: java.lang.String = null,
+    order_id: scala.Int | scala.Double = null,
+    template_suffix: java.lang.String = null,
+    updated_at: stdLib.Date = null,
+    user_id: scala.Int | scala.Double = null
+  ): GiftCard = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (api_client_id != null) __obj.updateDynamic("api_client_id")(api_client_id.asInstanceOf[js.Any])
+    if (balance != null) __obj.updateDynamic("balance")(balance.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (disabled_at != null) __obj.updateDynamic("disabled_at")(disabled_at)
+    if (expires_on != null) __obj.updateDynamic("expires_on")(expires_on)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (initial_value != null) __obj.updateDynamic("initial_value")(initial_value.asInstanceOf[js.Any])
+    if (last_characters != null) __obj.updateDynamic("last_characters")(last_characters)
+    if (line_item_id != null) __obj.updateDynamic("line_item_id")(line_item_id.asInstanceOf[js.Any])
+    if (masked_code != null) __obj.updateDynamic("masked_code")(masked_code)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
+    if (template_suffix != null) __obj.updateDynamic("template_suffix")(template_suffix)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GiftCard]
+  }
+}
+

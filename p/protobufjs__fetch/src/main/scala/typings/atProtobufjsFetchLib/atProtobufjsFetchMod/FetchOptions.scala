@@ -17,3 +17,13 @@ trait FetchOptions extends js.Object {
   var xhr: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FetchOptions {
+  @scala.inline
+  def apply(binary: js.UndefOr[scala.Boolean] = js.undefined, xhr: js.UndefOr[scala.Boolean] = js.undefined): FetchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
+    if (!js.isUndefined(xhr)) __obj.updateDynamic("xhr")(xhr)
+    __obj.asInstanceOf[FetchOptions]
+  }
+}
+

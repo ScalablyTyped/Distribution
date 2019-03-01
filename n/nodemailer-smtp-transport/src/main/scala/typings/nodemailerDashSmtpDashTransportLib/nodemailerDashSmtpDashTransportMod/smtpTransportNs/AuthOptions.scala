@@ -30,3 +30,34 @@ trait AuthOptions extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthOptions {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String = null,
+    accessUrl: java.lang.String = null,
+    clientId: java.lang.String = null,
+    clientSecret: java.lang.String = null,
+    expires: scala.Int | scala.Double = null,
+    pass: java.lang.String = null,
+    privateKey: java.lang.String = null,
+    refreshToken: java.lang.String = null,
+    serviceClient: java.lang.String = null,
+    `type`: js.Any = null,
+    user: java.lang.String = null
+  ): AuthOptions = {
+    val __obj = js.Dynamic.literal()
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    if (accessUrl != null) __obj.updateDynamic("accessUrl")(accessUrl)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (pass != null) __obj.updateDynamic("pass")(pass)
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    if (serviceClient != null) __obj.updateDynamic("serviceClient")(serviceClient)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[AuthOptions]
+  }
+}
+

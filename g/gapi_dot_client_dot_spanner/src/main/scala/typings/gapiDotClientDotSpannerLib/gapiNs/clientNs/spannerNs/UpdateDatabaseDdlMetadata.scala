@@ -21,3 +21,18 @@ trait UpdateDatabaseDdlMetadata extends js.Object {
   var statements: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object UpdateDatabaseDdlMetadata {
+  @scala.inline
+  def apply(
+    commitTimestamps: js.Array[java.lang.String] = null,
+    database: java.lang.String = null,
+    statements: js.Array[java.lang.String] = null
+  ): UpdateDatabaseDdlMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (commitTimestamps != null) __obj.updateDynamic("commitTimestamps")(commitTimestamps)
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (statements != null) __obj.updateDynamic("statements")(statements)
+    __obj.asInstanceOf[UpdateDatabaseDdlMetadata]
+  }
+}
+

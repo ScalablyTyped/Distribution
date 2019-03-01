@@ -27,3 +27,18 @@ trait MatrixCreationDict extends js.Object {
   var scale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MatrixCreationDict {
+  @scala.inline
+  def apply(
+    anchorPoint: js.Any = null,
+    rotate: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null
+  ): MatrixCreationDict = {
+    val __obj = js.Dynamic.literal()
+    if (anchorPoint != null) __obj.updateDynamic("anchorPoint")(anchorPoint)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MatrixCreationDict]
+  }
+}
+

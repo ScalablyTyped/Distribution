@@ -33,3 +33,21 @@ trait ListenToOptions extends js.Object {
   def `then`(result: js.Any): scala.Unit
 }
 
+object ListenToOptions {
+  @scala.inline
+  def apply(
+    context: js.Object,
+    `then`: js.Function1[js.Any, scala.Unit],
+    asArray: js.UndefOr[scala.Boolean] = js.undefined,
+    onFailure: js.Function1[/* error */ js.Any, scala.Unit] = null,
+    queries: js.Object = null
+  ): ListenToOptions = {
+    val __obj = js.Dynamic.literal(`then` = `then`)
+    __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (queries != null) __obj.updateDynamic("queries")(queries)
+    __obj.asInstanceOf[ListenToOptions]
+  }
+}
+

@@ -25,3 +25,20 @@ trait AnimationOptions extends js.Object {
   var step: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object AnimationOptions {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    complete: js.Function0[scala.Unit] = null,
+    easing: java.lang.String = null,
+    step: js.Function0[scala.Unit] = null
+  ): AnimationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (step != null) __obj.updateDynamic("step")(step)
+    __obj.asInstanceOf[AnimationOptions]
+  }
+}
+

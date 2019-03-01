@@ -253,6 +253,8 @@ object wxNs extends js.Object {
     var backgroundColorTop: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  trait CameraDevice extends js.Object
+  
   trait CanvasAction extends js.Object {
     var data: js.Array[CanvasAction] | (js.Array[scala.Double | java.lang.String])
     var method: java.lang.String
@@ -706,6 +708,14 @@ object wxNs extends js.Object {
     var success: js.UndefOr[js.Function1[/* res */ UserInfoResponse, scala.Unit]] = js.undefined
   }
   
+  trait ImageSizeType extends js.Object
+  
+  trait ImageSourceType extends js.Object
+  
+  trait LineCapType extends js.Object
+  
+  trait LineJoinType extends js.Object
+  
   trait LoadingOptions extends CommonCallbackOptions {
     //  默认false。是否显示透明蒙层，防止触摸穿透
     var mask: scala.Boolean
@@ -996,6 +1006,8 @@ object wxNs extends js.Object {
     var savedFilePath: java.lang.String
   }
   
+  trait Scope extends js.Object
+  
   trait SeekBackgroundAudioOptions extends js.Object {
     /** 接口调用结束的回调函数（调用成功、失败都会执行） */
     var complete: js.UndefOr[ResponseCallback] = js.undefined
@@ -1137,6 +1149,8 @@ object wxNs extends js.Object {
     var tempFilePaths: java.lang.String
   }
   
+  trait TimingFunction extends js.Object
+  
   trait ToastOptions extends CommonCallbackOptions {
     //  提示的延迟时间，默认值1500ms
     var duration: js.UndefOr[scala.Double] = js.undefined
@@ -1238,6 +1252,12 @@ object wxNs extends js.Object {
     /** 返回选定视频的宽 */
     var width: scala.Double
   }
+  
+  trait VideoSourceType extends js.Object
+  
+  trait envVersion extends js.Object
+  
+  trait icon extends js.Object
   
   trait onLaunchOptions extends js.Object {
     /** 启动小程序的路径 */
@@ -1705,41 +1725,18 @@ object wxNs extends js.Object {
   // 交互
   // tapIndex为用户点击的按钮序号，从上到下的顺序，从0开始
   type ActionSheetSuccessCallback = js.Function1[/* res */ weappDashApiLib.Anon_TapIndex, scala.Unit]
-  type CameraDevice = weappDashApiLib.weappDashApiLibStrings.front | weappDashApiLib.weappDashApiLibStrings.back
   type CompassChangeCallback = js.Function1[/* res */ CompassData, scala.Unit]
   type DataResponseCallback = js.Function1[/* res */ DataResponse, scala.Unit]
   type ErrorCallback = js.Function1[/* error */ js.Any, scala.Unit]
   type EventCallback = js.Function1[/* event */ js.Any, scala.Unit]
   type GetBackgroundAudioPlayerStateSuccessCallback = js.Function1[/* state */ BackgroundAudioPlayerState, scala.Unit]
-  type ImageSizeType = weappDashApiLib.weappDashApiLibStrings.original | weappDashApiLib.weappDashApiLibStrings.compressed
-  type ImageSourceType = weappDashApiLib.weappDashApiLibStrings.album | weappDashApiLib.weappDashApiLibStrings.camera
-  type LineCapType = weappDashApiLib.weappDashApiLibStrings.butt | weappDashApiLib.weappDashApiLibStrings.round | weappDashApiLib.weappDashApiLibStrings.square
-  type LineJoinType = weappDashApiLib.weappDashApiLibStrings.bevel | weappDashApiLib.weappDashApiLibStrings.round | weappDashApiLib.weappDashApiLibStrings.miter
   // import startPullDownRefresh = swan.startPullDownRefresh;
   type NoneParamCallback = js.Function0[scala.Unit]
   type OneParamCallback = js.Function1[/* data */ js.Any, scala.Unit]
   type PaymentSignType = weappDashApiLib.weappDashApiLibStrings.MD5
   type ResponseCallback = js.Function1[/* res */ js.Any, scala.Unit]
-  //  授权
-  /**
-    * https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/authorize.html
-    * 用户信息 wx.getUserInfo、
-    * 地理位置 wx.getLocation,wx.chooseLocation、
-    * 通讯地址 wx.chooseAddress、
-    * 发票抬头 wx.chooseInvoiceTitle、
-    * 获取发票 wx.chooseInvoice、
-    * 微信运动步数 wx.getWeRunData、
-    * 录音功能 wx.startRecord、
-    * 保存到相册 wx.saveImageToPhotosAlbum, wx.saveVideoToPhotosAlbum、
-    * 摄像头 <camera />组件
-    */
-  type Scope = weappDashApiLib.weappDashApiLibStrings.userInfo | weappDashApiLib.weappDashApiLibStrings.userLocation | weappDashApiLib.weappDashApiLibStrings.address | weappDashApiLib.weappDashApiLibStrings.invoiceTitle | weappDashApiLib.weappDashApiLibStrings.invoice | weappDashApiLib.weappDashApiLibStrings.werun | weappDashApiLib.weappDashApiLibStrings.record | weappDashApiLib.weappDashApiLibStrings.writePhotosAlbum | weappDashApiLib.weappDashApiLibStrings.camera
   type StorageInfoCallback = js.Function1[/* res */ StorageInfoOptions, scala.Unit]
   type TempFileResponseCallback = js.Function1[/* res */ TempFileResponse, scala.Unit]
-  type TimingFunction = weappDashApiLib.weappDashApiLibStrings.linear | weappDashApiLib.weappDashApiLibStrings.ease | weappDashApiLib.weappDashApiLibStrings.`ease-in` | weappDashApiLib.weappDashApiLibStrings.`ease-in-out` | weappDashApiLib.weappDashApiLibStrings.`ease-out` | weappDashApiLib.weappDashApiLibStrings.`step-start` | weappDashApiLib.weappDashApiLibStrings.`step-end`
-  type VideoSourceType = weappDashApiLib.weappDashApiLibStrings.album | weappDashApiLib.weappDashApiLibStrings.camera
-  type envVersion = weappDashApiLib.weappDashApiLibStrings.develop | weappDashApiLib.weappDashApiLibStrings.trial | weappDashApiLib.weappDashApiLibStrings.release
-  type icon = weappDashApiLib.weappDashApiLibStrings.success | weappDashApiLib.weappDashApiLibStrings.loading | weappDashApiLib.weappDashApiLibStrings.none
   type onLaunchCallback = js.Function1[/* options */ onLaunchOptions, scala.Unit]
   type onShowOptions = onLaunchOptions
 }

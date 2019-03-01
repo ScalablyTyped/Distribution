@@ -16,3 +16,22 @@ trait WPRequestOptions extends Credentials {
   var transport: js.UndefOr[Transport] = js.undefined
 }
 
+object WPRequestOptions {
+  @scala.inline
+  def apply(
+    endpoint: java.lang.String,
+    nonce: java.lang.String = null,
+    password: java.lang.String = null,
+    transport: Transport = null,
+    username: java.lang.String = null
+  ): WPRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endpoint")(endpoint)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[WPRequestOptions]
+  }
+}
+

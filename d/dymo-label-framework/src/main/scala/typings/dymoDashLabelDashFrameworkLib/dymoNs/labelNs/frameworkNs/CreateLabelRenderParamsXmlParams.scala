@@ -23,3 +23,22 @@ trait CreateLabelRenderParamsXmlParams extends js.Object {
   var shadowDepth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CreateLabelRenderParamsXmlParams {
+  @scala.inline
+  def apply(
+    flowDirection: FlowDirection = null,
+    labelColor: Color = null,
+    pngUseDisplayResolution: js.UndefOr[scala.Boolean] = js.undefined,
+    shadowColor: Color = null,
+    shadowDepth: scala.Int | scala.Double = null
+  ): CreateLabelRenderParamsXmlParams = {
+    val __obj = js.Dynamic.literal()
+    if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection)
+    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
+    if (!js.isUndefined(pngUseDisplayResolution)) __obj.updateDynamic("pngUseDisplayResolution")(pngUseDisplayResolution)
+    if (shadowColor != null) __obj.updateDynamic("shadowColor")(shadowColor)
+    if (shadowDepth != null) __obj.updateDynamic("shadowDepth")(shadowDepth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateLabelRenderParamsXmlParams]
+  }
+}
+

@@ -22,3 +22,13 @@ trait Anon_01AnonCoordItemStyleLabelValue extends js.Object {
   var `1`: js.UndefOr[Anon_CoordItemStyleLabelValue] = js.undefined
 }
 
+object Anon_01AnonCoordItemStyleLabelValue {
+  @scala.inline
+  def apply(`0`: Anon_CoordItemStyleLabelValue = null, `1`: Anon_CoordItemStyleLabelValue = null): Anon_01AnonCoordItemStyleLabelValue = {
+    val __obj = js.Dynamic.literal()
+    if (`0` != null) __obj.updateDynamic("0")(`0`)
+    if (`1` != null) __obj.updateDynamic("1")(`1`)
+    __obj.asInstanceOf[Anon_01AnonCoordItemStyleLabelValue]
+  }
+}
+

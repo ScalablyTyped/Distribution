@@ -10,3 +10,13 @@ trait RealtimeReleaseEvent extends js.Object {
   var releaseId: scala.Double
 }
 
+object RealtimeReleaseEvent {
+  @scala.inline
+  def apply(projectId: java.lang.String, releaseId: scala.Double): RealtimeReleaseEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("projectId")(projectId)
+    __obj.updateDynamic("releaseId")(releaseId)
+    __obj.asInstanceOf[RealtimeReleaseEvent]
+  }
+}
+

@@ -111,3 +111,82 @@ import scala.scalajs.js.annotation._
   var shrinkWrapDock: js.UndefOr[js.Any] = js.undefined
 }
 
+object IAbstractPanel {
+  @scala.inline
+  def apply(
+    IContainer: extjsLib.ExtNs.containerNs.IContainer = null,
+    IDockingContainer: extjsLib.ExtNs.containerNs.IDockingContainer = null,
+    addBodyCls: js.Function1[/* cls */ js.UndefOr[java.lang.String], IPanel] = null,
+    addDocked: js.Function2[
+      /* component */ js.UndefOr[js.Any], 
+      /* pos */ js.UndefOr[scala.Double], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    addUIClsToElement: js.Function1[/* cls */ js.UndefOr[js.Any], scala.Unit] = null,
+    baseCls: java.lang.String = null,
+    body: extjsLib.ExtNs.domNs.IElement = null,
+    bodyBorder: js.UndefOr[scala.Boolean] = js.undefined,
+    bodyCls: js.Any = null,
+    bodyPadding: js.Any = null,
+    bodyStyle: js.Any = null,
+    border: js.Any = null,
+    componentLayout: js.Any = null,
+    contentPaddingProperty: java.lang.String = null,
+    dockedItems: js.Any = null,
+    getComponent: js.Function1[/* comp */ js.UndefOr[js.Any], extjsLib.ExtNs.IComponent] = null,
+    getDockedComponent: js.Function1[/* comp */ js.UndefOr[js.Any], extjsLib.ExtNs.IComponent] = null,
+    getDockedItems: js.Function2[
+      /* selector */ js.UndefOr[java.lang.String], 
+      /* beforeBody */ js.UndefOr[scala.Boolean], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    getRefItems: js.Function1[/* deep */ js.UndefOr[js.Any], scala.Unit] = null,
+    insertDocked: js.Function2[/* pos */ js.UndefOr[scala.Double], /* component */ js.UndefOr[js.Any], scala.Unit] = null,
+    isPanel: js.UndefOr[scala.Boolean] = js.undefined,
+    onDockedAdd: js.Function1[/* component */ js.UndefOr[extjsLib.ExtNs.IComponent], scala.Unit] = null,
+    onDockedRemove: js.Function1[/* component */ js.UndefOr[extjsLib.ExtNs.IComponent], scala.Unit] = null,
+    removeBodyCls: js.Function1[/* cls */ js.UndefOr[java.lang.String], IPanel] = null,
+    removeDocked: js.Function2[
+      /* item */ js.UndefOr[extjsLib.ExtNs.IComponent], 
+      /* autoDestroy */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    removeUIClsFromElement: js.Function1[/* cls */ js.UndefOr[js.Any], scala.Unit] = null,
+    renderTpl: js.Any = null,
+    setBodyStyle: js.Function2[/* style */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String], IPanel] = null,
+    shrinkWrapDock: js.Any = null
+  ): IAbstractPanel = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    js.Dynamic.global.Object.assign(__obj, IDockingContainer)
+    if (addBodyCls != null) __obj.updateDynamic("addBodyCls")(addBodyCls)
+    if (addDocked != null) __obj.updateDynamic("addDocked")(addDocked)
+    if (addUIClsToElement != null) __obj.updateDynamic("addUIClsToElement")(addUIClsToElement)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (!js.isUndefined(bodyBorder)) __obj.updateDynamic("bodyBorder")(bodyBorder)
+    if (bodyCls != null) __obj.updateDynamic("bodyCls")(bodyCls)
+    if (bodyPadding != null) __obj.updateDynamic("bodyPadding")(bodyPadding)
+    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (contentPaddingProperty != null) __obj.updateDynamic("contentPaddingProperty")(contentPaddingProperty)
+    if (dockedItems != null) __obj.updateDynamic("dockedItems")(dockedItems)
+    if (getComponent != null) __obj.updateDynamic("getComponent")(getComponent)
+    if (getDockedComponent != null) __obj.updateDynamic("getDockedComponent")(getDockedComponent)
+    if (getDockedItems != null) __obj.updateDynamic("getDockedItems")(getDockedItems)
+    if (getRefItems != null) __obj.updateDynamic("getRefItems")(getRefItems)
+    if (insertDocked != null) __obj.updateDynamic("insertDocked")(insertDocked)
+    if (!js.isUndefined(isPanel)) __obj.updateDynamic("isPanel")(isPanel)
+    if (onDockedAdd != null) __obj.updateDynamic("onDockedAdd")(onDockedAdd)
+    if (onDockedRemove != null) __obj.updateDynamic("onDockedRemove")(onDockedRemove)
+    if (removeBodyCls != null) __obj.updateDynamic("removeBodyCls")(removeBodyCls)
+    if (removeDocked != null) __obj.updateDynamic("removeDocked")(removeDocked)
+    if (removeUIClsFromElement != null) __obj.updateDynamic("removeUIClsFromElement")(removeUIClsFromElement)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (setBodyStyle != null) __obj.updateDynamic("setBodyStyle")(setBodyStyle)
+    if (shrinkWrapDock != null) __obj.updateDynamic("shrinkWrapDock")(shrinkWrapDock)
+    __obj.asInstanceOf[IAbstractPanel]
+  }
+}
+

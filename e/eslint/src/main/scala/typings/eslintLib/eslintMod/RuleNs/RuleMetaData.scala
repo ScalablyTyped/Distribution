@@ -15,3 +15,22 @@ trait RuleMetaData extends js.Object {
   ] = js.undefined
 }
 
+object RuleMetaData {
+  @scala.inline
+  def apply(
+    deprecated: js.UndefOr[scala.Boolean] = js.undefined,
+    docs: eslintLib.Anon_Category = null,
+    fixable: eslintLib.eslintLibStrings.code | eslintLib.eslintLibStrings.whitespace = null,
+    messages: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4 | js.Array[jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema4] = null
+  ): RuleMetaData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deprecated)) __obj.updateDynamic("deprecated")(deprecated)
+    if (docs != null) __obj.updateDynamic("docs")(docs)
+    if (fixable != null) __obj.updateDynamic("fixable")(fixable.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (schema != null) __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuleMetaData]
+  }
+}
+

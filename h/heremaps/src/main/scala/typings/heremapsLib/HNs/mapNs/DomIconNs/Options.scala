@@ -31,3 +31,26 @@ trait Options extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    onAttach: js.Function3[
+      /* el */ stdLib.Element, 
+      /* icon */ heremapsLib.HNs.mapNs.DomIcon, 
+      /* marker */ heremapsLib.HNs.mapNs.DomMarker, 
+      scala.Unit
+    ] = null,
+    onDetach: js.Function3[
+      /* el */ stdLib.Element, 
+      /* icon */ heremapsLib.HNs.mapNs.DomIcon, 
+      /* marker */ heremapsLib.HNs.mapNs.DomMarker, 
+      scala.Unit
+    ] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (onAttach != null) __obj.updateDynamic("onAttach")(onAttach)
+    if (onDetach != null) __obj.updateDynamic("onDetach")(onDetach)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -38,3 +38,13 @@ trait Anon_Api extends js.Object {
   var params: js.UndefOr[js.Object] = js.undefined
 }
 
+object Anon_Api {
+  @scala.inline
+  def apply(api: Anon_BarLayout = null, params: js.Object = null): Anon_Api = {
+    val __obj = js.Dynamic.literal()
+    if (api != null) __obj.updateDynamic("api")(api)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[Anon_Api]
+  }
+}
+

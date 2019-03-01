@@ -33,3 +33,28 @@ trait ClientDetails
   var user_agent: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientDetails {
+  @scala.inline
+  def apply(
+    accept_language: java.lang.String = null,
+    admin_graphql_api_id: java.lang.String = null,
+    browser_height: java.lang.String = null,
+    browser_ip: java.lang.String = null,
+    browser_width: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    session_height: java.lang.String = null,
+    user_agent: java.lang.String = null
+  ): ClientDetails = {
+    val __obj = js.Dynamic.literal()
+    if (accept_language != null) __obj.updateDynamic("accept_language")(accept_language)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (browser_height != null) __obj.updateDynamic("browser_height")(browser_height)
+    if (browser_ip != null) __obj.updateDynamic("browser_ip")(browser_ip)
+    if (browser_width != null) __obj.updateDynamic("browser_width")(browser_width)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (session_height != null) __obj.updateDynamic("session_height")(session_height)
+    if (user_agent != null) __obj.updateDynamic("user_agent")(user_agent)
+    __obj.asInstanceOf[ClientDetails]
+  }
+}
+

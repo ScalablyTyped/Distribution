@@ -17,3 +17,26 @@ trait PrecompileOptions extends js.Object {
   ] = js.undefined
 }
 
+object PrecompileOptions {
+  @scala.inline
+  def apply(
+    asFunction: js.UndefOr[scala.Boolean] = js.undefined,
+    env: adoneLib.adoneNs.templatingNs.nunjucksNs.Environment = null,
+    exclude: js.Array[java.lang.String] = null,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    include: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    wrapper: js.Function2[/* templates */ adoneLib.Anon_NameTemplate, PrecompileOptions, java.lang.String] = null
+  ): PrecompileOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(asFunction)) __obj.updateDynamic("asFunction")(asFunction)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    __obj.asInstanceOf[PrecompileOptions]
+  }
+}
+

@@ -114,3 +114,98 @@ trait Anon_COPYFILEEXCL extends js.Object {
   val X_OK: scala.Double
 }
 
+object Anon_COPYFILEEXCL {
+  @scala.inline
+  def apply(
+    COPYFILE_EXCL: scala.Double,
+    COPYFILE_FICLONE: scala.Double,
+    COPYFILE_FICLONE_FORCE: scala.Double,
+    F_OK: scala.Double,
+    O_APPEND: scala.Double,
+    O_CREAT: scala.Double,
+    O_DIRECT: scala.Double,
+    O_DIRECTORY: scala.Double,
+    O_DSYNC: scala.Double,
+    O_EXCL: scala.Double,
+    O_NOATIME: scala.Double,
+    O_NOCTTY: scala.Double,
+    O_NOFOLLOW: scala.Double,
+    O_NONBLOCK: scala.Double,
+    O_RDONLY: scala.Double,
+    O_RDWR: scala.Double,
+    O_SYMLINK: scala.Double,
+    O_SYNC: scala.Double,
+    O_TRUNC: scala.Double,
+    O_WRONLY: scala.Double,
+    R_OK: scala.Double,
+    S_IFBLK: scala.Double,
+    S_IFCHR: scala.Double,
+    S_IFDIR: scala.Double,
+    S_IFIFO: scala.Double,
+    S_IFLNK: scala.Double,
+    S_IFMT: scala.Double,
+    S_IFREG: scala.Double,
+    S_IFSOCK: scala.Double,
+    S_IRGRP: scala.Double,
+    S_IROTH: scala.Double,
+    S_IRUSR: scala.Double,
+    S_IRWXG: scala.Double,
+    S_IRWXO: scala.Double,
+    S_IRWXU: scala.Double,
+    S_IWGRP: scala.Double,
+    S_IWOTH: scala.Double,
+    S_IWUSR: scala.Double,
+    S_IXGRP: scala.Double,
+    S_IXOTH: scala.Double,
+    S_IXUSR: scala.Double,
+    W_OK: scala.Double,
+    X_OK: scala.Double
+  ): Anon_COPYFILEEXCL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("COPYFILE_EXCL")(COPYFILE_EXCL)
+    __obj.updateDynamic("COPYFILE_FICLONE")(COPYFILE_FICLONE)
+    __obj.updateDynamic("COPYFILE_FICLONE_FORCE")(COPYFILE_FICLONE_FORCE)
+    __obj.updateDynamic("F_OK")(F_OK)
+    __obj.updateDynamic("O_APPEND")(O_APPEND)
+    __obj.updateDynamic("O_CREAT")(O_CREAT)
+    __obj.updateDynamic("O_DIRECT")(O_DIRECT)
+    __obj.updateDynamic("O_DIRECTORY")(O_DIRECTORY)
+    __obj.updateDynamic("O_DSYNC")(O_DSYNC)
+    __obj.updateDynamic("O_EXCL")(O_EXCL)
+    __obj.updateDynamic("O_NOATIME")(O_NOATIME)
+    __obj.updateDynamic("O_NOCTTY")(O_NOCTTY)
+    __obj.updateDynamic("O_NOFOLLOW")(O_NOFOLLOW)
+    __obj.updateDynamic("O_NONBLOCK")(O_NONBLOCK)
+    __obj.updateDynamic("O_RDONLY")(O_RDONLY)
+    __obj.updateDynamic("O_RDWR")(O_RDWR)
+    __obj.updateDynamic("O_SYMLINK")(O_SYMLINK)
+    __obj.updateDynamic("O_SYNC")(O_SYNC)
+    __obj.updateDynamic("O_TRUNC")(O_TRUNC)
+    __obj.updateDynamic("O_WRONLY")(O_WRONLY)
+    __obj.updateDynamic("R_OK")(R_OK)
+    __obj.updateDynamic("S_IFBLK")(S_IFBLK)
+    __obj.updateDynamic("S_IFCHR")(S_IFCHR)
+    __obj.updateDynamic("S_IFDIR")(S_IFDIR)
+    __obj.updateDynamic("S_IFIFO")(S_IFIFO)
+    __obj.updateDynamic("S_IFLNK")(S_IFLNK)
+    __obj.updateDynamic("S_IFMT")(S_IFMT)
+    __obj.updateDynamic("S_IFREG")(S_IFREG)
+    __obj.updateDynamic("S_IFSOCK")(S_IFSOCK)
+    __obj.updateDynamic("S_IRGRP")(S_IRGRP)
+    __obj.updateDynamic("S_IROTH")(S_IROTH)
+    __obj.updateDynamic("S_IRUSR")(S_IRUSR)
+    __obj.updateDynamic("S_IRWXG")(S_IRWXG)
+    __obj.updateDynamic("S_IRWXO")(S_IRWXO)
+    __obj.updateDynamic("S_IRWXU")(S_IRWXU)
+    __obj.updateDynamic("S_IWGRP")(S_IWGRP)
+    __obj.updateDynamic("S_IWOTH")(S_IWOTH)
+    __obj.updateDynamic("S_IWUSR")(S_IWUSR)
+    __obj.updateDynamic("S_IXGRP")(S_IXGRP)
+    __obj.updateDynamic("S_IXOTH")(S_IXOTH)
+    __obj.updateDynamic("S_IXUSR")(S_IXUSR)
+    __obj.updateDynamic("W_OK")(W_OK)
+    __obj.updateDynamic("X_OK")(X_OK)
+    __obj.asInstanceOf[Anon_COPYFILEEXCL]
+  }
+}
+

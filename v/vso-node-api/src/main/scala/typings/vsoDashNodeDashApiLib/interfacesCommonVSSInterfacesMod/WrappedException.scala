@@ -17,3 +17,30 @@ trait WrappedException extends js.Object {
   var typeName: java.lang.String
 }
 
+object WrappedException {
+  @scala.inline
+  def apply(
+    customProperties: org.scalablytyped.runtime.StringDictionary[js.Any],
+    errorCode: scala.Double,
+    eventId: scala.Double,
+    helpLink: java.lang.String,
+    innerException: WrappedException,
+    message: java.lang.String,
+    stackTrace: java.lang.String,
+    typeKey: java.lang.String,
+    typeName: java.lang.String
+  ): WrappedException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customProperties")(customProperties)
+    __obj.updateDynamic("errorCode")(errorCode)
+    __obj.updateDynamic("eventId")(eventId)
+    __obj.updateDynamic("helpLink")(helpLink)
+    __obj.updateDynamic("innerException")(innerException)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("stackTrace")(stackTrace)
+    __obj.updateDynamic("typeKey")(typeKey)
+    __obj.updateDynamic("typeName")(typeName)
+    __obj.asInstanceOf[WrappedException]
+  }
+}
+

@@ -22,3 +22,40 @@ trait PagerOptions extends js.Object {
   var selectTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PagerOptions {
+  @scala.inline
+  def apply(
+    autoBind: js.UndefOr[scala.Boolean] = js.undefined,
+    buttonCount: scala.Int | scala.Double = null,
+    change: js.Function1[/* e */ PagerChangeEvent, scala.Unit] = null,
+    dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.DataSource = null,
+    info: js.UndefOr[scala.Boolean] = js.undefined,
+    input: js.UndefOr[scala.Boolean] = js.undefined,
+    linkTemplate: java.lang.String = null,
+    messages: PagerMessages = null,
+    name: java.lang.String = null,
+    numeric: js.UndefOr[scala.Boolean] = js.undefined,
+    pageSizes: scala.Boolean | js.Any = null,
+    previousNext: js.UndefOr[scala.Boolean] = js.undefined,
+    refresh: js.UndefOr[scala.Boolean] = js.undefined,
+    selectTemplate: java.lang.String = null
+  ): PagerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
+    if (buttonCount != null) __obj.updateDynamic("buttonCount")(buttonCount.asInstanceOf[js.Any])
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info)
+    if (!js.isUndefined(input)) __obj.updateDynamic("input")(input)
+    if (linkTemplate != null) __obj.updateDynamic("linkTemplate")(linkTemplate)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric)
+    if (pageSizes != null) __obj.updateDynamic("pageSizes")(pageSizes.asInstanceOf[js.Any])
+    if (!js.isUndefined(previousNext)) __obj.updateDynamic("previousNext")(previousNext)
+    if (!js.isUndefined(refresh)) __obj.updateDynamic("refresh")(refresh)
+    if (selectTemplate != null) __obj.updateDynamic("selectTemplate")(selectTemplate)
+    __obj.asInstanceOf[PagerOptions]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Anon_WorkspaceFolders extends js.Object {
   var workspaceFolders: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_WorkspaceFolders {
+  @scala.inline
+  def apply(workspaceFolders: js.UndefOr[scala.Boolean] = js.undefined): Anon_WorkspaceFolders = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(workspaceFolders)) __obj.updateDynamic("workspaceFolders")(workspaceFolders)
+    __obj.asInstanceOf[Anon_WorkspaceFolders]
+  }
+}
+

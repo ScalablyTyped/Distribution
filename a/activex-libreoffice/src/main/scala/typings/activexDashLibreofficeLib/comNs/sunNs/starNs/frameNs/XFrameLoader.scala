@@ -38,3 +38,28 @@ trait XFrameLoader
   ): scala.Unit
 }
 
+object XFrameLoader {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    load: js.Function4[
+      XFrame, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XLoadEventListener, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFrameLoader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("load")(load)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFrameLoader]
+  }
+}
+

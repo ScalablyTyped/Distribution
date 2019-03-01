@@ -27,3 +27,20 @@ trait ObjectSelectorModifier extends js.Object {
   var searchPlaceholder: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ObjectSelectorModifier {
+  @scala.inline
+  def apply(
+    order: java.lang.String = null,
+    page: java.lang.String = null,
+    search: java.lang.String = null,
+    searchPlaceholder: java.lang.String = null
+  ): ObjectSelectorModifier = {
+    val __obj = js.Dynamic.literal()
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (page != null) __obj.updateDynamic("page")(page)
+    if (search != null) __obj.updateDynamic("search")(search)
+    if (searchPlaceholder != null) __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
+    __obj.asInstanceOf[ObjectSelectorModifier]
+  }
+}
+

@@ -10,3 +10,13 @@ trait InlineQueryResultBase extends js.Object {
   var reply_markup: js.UndefOr[InlineKeyboardMarkup] = js.undefined
 }
 
+object InlineQueryResultBase {
+  @scala.inline
+  def apply(id: java.lang.String, reply_markup: InlineKeyboardMarkup = null): InlineQueryResultBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (reply_markup != null) __obj.updateDynamic("reply_markup")(reply_markup)
+    __obj.asInstanceOf[InlineQueryResultBase]
+  }
+}
+

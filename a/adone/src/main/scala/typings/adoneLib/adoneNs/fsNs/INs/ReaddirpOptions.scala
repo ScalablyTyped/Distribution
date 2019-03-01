@@ -40,3 +40,24 @@ trait ReaddirpOptions extends js.Object {
   var lstat: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReaddirpOptions {
+  @scala.inline
+  def apply(
+    depth: scala.Int | scala.Double = null,
+    directories: js.UndefOr[scala.Boolean] = js.undefined,
+    directoryFilter: ReaddirpFilter | js.Array[ReaddirpFilter] = null,
+    fileFilter: ReaddirpFilter | js.Array[ReaddirpFilter] = null,
+    files: js.UndefOr[scala.Boolean] = js.undefined,
+    lstat: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReaddirpOptions = {
+    val __obj = js.Dynamic.literal()
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (!js.isUndefined(directories)) __obj.updateDynamic("directories")(directories)
+    if (directoryFilter != null) __obj.updateDynamic("directoryFilter")(directoryFilter.asInstanceOf[js.Any])
+    if (fileFilter != null) __obj.updateDynamic("fileFilter")(fileFilter.asInstanceOf[js.Any])
+    if (!js.isUndefined(files)) __obj.updateDynamic("files")(files)
+    if (!js.isUndefined(lstat)) __obj.updateDynamic("lstat")(lstat)
+    __obj.asInstanceOf[ReaddirpOptions]
+  }
+}
+

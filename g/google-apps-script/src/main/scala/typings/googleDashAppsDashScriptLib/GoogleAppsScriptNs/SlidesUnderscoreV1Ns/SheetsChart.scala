@@ -20,3 +20,20 @@ trait SheetsChart extends js.Object {
   var spreadsheet_id: java.lang.String
 }
 
+object SheetsChart {
+  @scala.inline
+  def apply(
+    chart_id: scala.Double,
+    content_url: java.lang.String,
+    sheets_chart_properties: SheetsChartProperties,
+    spreadsheet_id: java.lang.String
+  ): SheetsChart = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chart_id")(chart_id)
+    __obj.updateDynamic("content_url")(content_url)
+    __obj.updateDynamic("sheets_chart_properties")(sheets_chart_properties)
+    __obj.updateDynamic("spreadsheet_id")(spreadsheet_id)
+    __obj.asInstanceOf[SheetsChart]
+  }
+}
+

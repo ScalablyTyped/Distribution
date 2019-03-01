@@ -12,3 +12,12 @@ trait NestingLevel extends js.Object {
   var bullet_style: TextStyle
 }
 
+object NestingLevel {
+  @scala.inline
+  def apply(bullet_style: TextStyle): NestingLevel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bullet_style")(bullet_style)
+    __obj.asInstanceOf[NestingLevel]
+  }
+}
+

@@ -13,3 +13,12 @@ trait MappingMethods extends js.Object {
   def getRootName(path: ASTPath[_]): java.lang.String
 }
 
+object MappingMethods {
+  @scala.inline
+  def apply(getRootName: js.Function1[ASTPath[_], java.lang.String]): MappingMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getRootName")(getRootName)
+    __obj.asInstanceOf[MappingMethods]
+  }
+}
+

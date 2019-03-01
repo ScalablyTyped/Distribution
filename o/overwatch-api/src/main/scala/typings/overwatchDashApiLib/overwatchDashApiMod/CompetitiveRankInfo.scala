@@ -10,3 +10,13 @@ trait CompetitiveRankInfo extends js.Object {
   var rank_img: java.lang.String
 }
 
+object CompetitiveRankInfo {
+  @scala.inline
+  def apply(rank: scala.Double, rank_img: java.lang.String): CompetitiveRankInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rank")(rank)
+    __obj.updateDynamic("rank_img")(rank_img)
+    __obj.asInstanceOf[CompetitiveRankInfo]
+  }
+}
+

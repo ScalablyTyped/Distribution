@@ -10,3 +10,13 @@ trait Filter extends js.Object {
   var offset: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Filter {
+  @scala.inline
+  def apply(count: scala.Int | scala.Double = null, offset: scala.Int | scala.Double = null): Filter = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Filter]
+  }
+}
+

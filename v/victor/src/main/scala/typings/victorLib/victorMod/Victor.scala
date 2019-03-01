@@ -359,3 +359,160 @@ trait Victor extends js.Object {
   def zero(): Victor
 }
 
+object Victor {
+  @scala.inline
+  def apply(
+    absDistanceX: js.Function1[Victor, scala.Double],
+    absDistanceY: js.Function1[Victor, scala.Double],
+    add: js.Function1[Victor, Victor],
+    addScalar: js.Function1[scala.Double, Victor],
+    addScalarX: js.Function1[scala.Double, Victor],
+    addScalarY: js.Function1[scala.Double, Victor],
+    addX: js.Function1[Victor, Victor],
+    addY: js.Function1[Victor, Victor],
+    angle: js.Function0[scala.Double],
+    angleDeg: js.Function0[scala.Double],
+    clone: js.Function0[Victor],
+    copy: js.Function1[Victor, Victor],
+    copyX: js.Function1[Victor, Victor],
+    copyY: js.Function1[Victor, Victor],
+    cross: js.Function1[Victor, scala.Double],
+    direction: js.Function0[scala.Double],
+    distance: js.Function1[Victor, scala.Double],
+    distanceSq: js.Function1[Victor, scala.Double],
+    distanceX: js.Function1[Victor, scala.Double],
+    distanceY: js.Function1[Victor, scala.Double],
+    divide: js.Function1[Victor, Victor],
+    divideScalar: js.Function1[scala.Double, Victor],
+    divideScalarX: js.Function1[scala.Double, Victor],
+    divideScalarY: js.Function1[scala.Double, Victor],
+    divideX: js.Function1[Victor, Victor],
+    divideY: js.Function1[Victor, Victor],
+    dot: js.Function1[Victor, scala.Double],
+    horizontalAngle: js.Function0[scala.Double],
+    horizontalAngleDeg: js.Function0[scala.Double],
+    invert: js.Function0[Victor],
+    invertX: js.Function0[Victor],
+    invertY: js.Function0[Victor],
+    isEqualTo: js.Function1[Victor, scala.Boolean],
+    isZero: js.Function0[scala.Boolean],
+    length: js.Function0[scala.Double],
+    lengthSq: js.Function0[scala.Double],
+    limit: js.Function2[scala.Double, scala.Double, Victor],
+    magnitude: js.Function0[scala.Double],
+    mix: js.Function2[Victor, scala.Double, Victor],
+    mixX: js.Function2[Victor, scala.Double, Victor],
+    mixY: js.Function2[Victor, scala.Double, Victor],
+    multiply: js.Function1[Victor, Victor],
+    multiplyScalar: js.Function1[scala.Double, Victor],
+    multiplyScalarX: js.Function1[scala.Double, Victor],
+    multiplyScalarY: js.Function1[scala.Double, Victor],
+    multiplyX: js.Function1[Victor, Victor],
+    multiplyY: js.Function1[Victor, Victor],
+    norm: js.Function0[Victor],
+    normalize: js.Function0[Victor],
+    projectOnto: js.Function1[Victor, Victor],
+    randomize: js.Function2[Victor, Victor, Victor],
+    randomizeAny: js.Function2[Victor, Victor, Victor],
+    randomizeX: js.Function2[Victor, Victor, Victor],
+    randomizeY: js.Function2[Victor, Victor, Victor],
+    rotate: js.Function1[scala.Double, Victor],
+    rotateBy: js.Function1[scala.Double, Victor],
+    rotateByDeg: js.Function1[scala.Double, Victor],
+    rotateDeg: js.Function1[scala.Double, Victor],
+    subtract: js.Function1[Victor, Victor],
+    subtractScalar: js.Function1[scala.Double, Victor],
+    subtractScalarX: js.Function1[scala.Double, Victor],
+    subtractScalarY: js.Function1[scala.Double, Victor],
+    subtractX: js.Function1[Victor, Victor],
+    subtractY: js.Function1[Victor, Victor],
+    toArray: js.Function0[js.Array[scala.Double]],
+    toFixed: js.Function0[Victor],
+    toObject: js.Function0[VictorCoordinates],
+    toString: js.Function0[java.lang.String],
+    unfloat: js.Function0[Victor],
+    verticalAngle: js.Function0[scala.Double],
+    verticalAngleDeg: js.Function0[scala.Double],
+    x: scala.Double,
+    y: scala.Double,
+    zero: js.Function0[Victor]
+  ): Victor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("absDistanceX")(absDistanceX)
+    __obj.updateDynamic("absDistanceY")(absDistanceY)
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("addScalar")(addScalar)
+    __obj.updateDynamic("addScalarX")(addScalarX)
+    __obj.updateDynamic("addScalarY")(addScalarY)
+    __obj.updateDynamic("addX")(addX)
+    __obj.updateDynamic("addY")(addY)
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("angleDeg")(angleDeg)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("copyX")(copyX)
+    __obj.updateDynamic("copyY")(copyY)
+    __obj.updateDynamic("cross")(cross)
+    __obj.updateDynamic("direction")(direction)
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("distanceSq")(distanceSq)
+    __obj.updateDynamic("distanceX")(distanceX)
+    __obj.updateDynamic("distanceY")(distanceY)
+    __obj.updateDynamic("divide")(divide)
+    __obj.updateDynamic("divideScalar")(divideScalar)
+    __obj.updateDynamic("divideScalarX")(divideScalarX)
+    __obj.updateDynamic("divideScalarY")(divideScalarY)
+    __obj.updateDynamic("divideX")(divideX)
+    __obj.updateDynamic("divideY")(divideY)
+    __obj.updateDynamic("dot")(dot)
+    __obj.updateDynamic("horizontalAngle")(horizontalAngle)
+    __obj.updateDynamic("horizontalAngleDeg")(horizontalAngleDeg)
+    __obj.updateDynamic("invert")(invert)
+    __obj.updateDynamic("invertX")(invertX)
+    __obj.updateDynamic("invertY")(invertY)
+    __obj.updateDynamic("isEqualTo")(isEqualTo)
+    __obj.updateDynamic("isZero")(isZero)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("lengthSq")(lengthSq)
+    __obj.updateDynamic("limit")(limit)
+    __obj.updateDynamic("magnitude")(magnitude)
+    __obj.updateDynamic("mix")(mix)
+    __obj.updateDynamic("mixX")(mixX)
+    __obj.updateDynamic("mixY")(mixY)
+    __obj.updateDynamic("multiply")(multiply)
+    __obj.updateDynamic("multiplyScalar")(multiplyScalar)
+    __obj.updateDynamic("multiplyScalarX")(multiplyScalarX)
+    __obj.updateDynamic("multiplyScalarY")(multiplyScalarY)
+    __obj.updateDynamic("multiplyX")(multiplyX)
+    __obj.updateDynamic("multiplyY")(multiplyY)
+    __obj.updateDynamic("norm")(norm)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("projectOnto")(projectOnto)
+    __obj.updateDynamic("randomize")(randomize)
+    __obj.updateDynamic("randomizeAny")(randomizeAny)
+    __obj.updateDynamic("randomizeX")(randomizeX)
+    __obj.updateDynamic("randomizeY")(randomizeY)
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("rotateBy")(rotateBy)
+    __obj.updateDynamic("rotateByDeg")(rotateByDeg)
+    __obj.updateDynamic("rotateDeg")(rotateDeg)
+    __obj.updateDynamic("subtract")(subtract)
+    __obj.updateDynamic("subtractScalar")(subtractScalar)
+    __obj.updateDynamic("subtractScalarX")(subtractScalarX)
+    __obj.updateDynamic("subtractScalarY")(subtractScalarY)
+    __obj.updateDynamic("subtractX")(subtractX)
+    __obj.updateDynamic("subtractY")(subtractY)
+    __obj.updateDynamic("toArray")(toArray)
+    __obj.updateDynamic("toFixed")(toFixed)
+    __obj.updateDynamic("toObject")(toObject)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("unfloat")(unfloat)
+    __obj.updateDynamic("verticalAngle")(verticalAngle)
+    __obj.updateDynamic("verticalAngleDeg")(verticalAngleDeg)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("zero")(zero)
+    __obj.asInstanceOf[Victor]
+  }
+}
+

@@ -87,3 +87,28 @@ trait Anon_CoordItemStyleLabelValue extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_CoordItemStyleLabelValue {
+  @scala.inline
+  def apply(
+    coord: js.Array[_] = null,
+    itemStyle: Anon_BorderColorBorderType = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
+    value: scala.Int | scala.Double = null,
+    valueDim: java.lang.String = null,
+    valueIndex: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Anon_CoordItemStyleLabelValue = {
+    val __obj = js.Dynamic.literal()
+    if (coord != null) __obj.updateDynamic("coord")(coord)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueDim != null) __obj.updateDynamic("valueDim")(valueDim)
+    if (valueIndex != null) __obj.updateDynamic("valueIndex")(valueIndex.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CoordItemStyleLabelValue]
+  }
+}
+

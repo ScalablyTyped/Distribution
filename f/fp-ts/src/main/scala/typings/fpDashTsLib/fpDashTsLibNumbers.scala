@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object fpDashTsLibNumbers {
   @js.native
-  sealed trait `-1` extends js.Object
+  sealed trait `-1`
+    extends fpDashTsLib.libOrderingMod.Ordering
   
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends fpDashTsLib.libOrderingMod.Ordering
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends fpDashTsLib.libOrderingMod.Ordering
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

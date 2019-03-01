@@ -49,3 +49,60 @@ trait IFileUploadConfigFile
   var resumeSizeUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IFileUploadConfigFile {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    method: java.lang.String,
+    url: java.lang.String,
+    arrayKey: java.lang.String = null,
+    cache: js.Any = null,
+    disableProgress: js.UndefOr[scala.Boolean] = js.undefined,
+    eventHandlers: org.scalablytyped.runtime.StringDictionary[stdLib.EventListenerOrEventListenerObject] = null,
+    headers: angularLib.angularMod.angularNs.IHttpRequestConfigHeaders = null,
+    jsonpCallbackParam: java.lang.String = null,
+    objectKey: java.lang.String = null,
+    paramSerializer: java.lang.String | (js.Function1[/* obj */ js.Any, java.lang.String]) = null,
+    params: js.Any = null,
+    responseType: java.lang.String = null,
+    resumeChunkSize: scala.Double | java.lang.String = null,
+    resumeSize: angularLib.angularMod.Global.Function = null,
+    resumeSizeResponseReader: angularLib.angularMod.Global.Function = null,
+    resumeSizeUrl: java.lang.String = null,
+    timeout: scala.Double | angularLib.angularMod.angularNs.IPromise[_] = null,
+    transformRequest: angularLib.angularMod.angularNs.IHttpRequestTransformer | js.Array[angularLib.angularMod.angularNs.IHttpRequestTransformer] = null,
+    transformResponse: angularLib.angularMod.angularNs.IHttpResponseTransformer | js.Array[angularLib.angularMod.angularNs.IHttpResponseTransformer] = null,
+    uploadEventHandlers: org.scalablytyped.runtime.StringDictionary[stdLib.EventListenerOrEventListenerObject] = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined,
+    xsrfCookieName: java.lang.String = null,
+    xsrfHeaderName: java.lang.String = null
+  ): IFileUploadConfigFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("url")(url)
+    if (arrayKey != null) __obj.updateDynamic("arrayKey")(arrayKey)
+    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(disableProgress)) __obj.updateDynamic("disableProgress")(disableProgress)
+    if (eventHandlers != null) __obj.updateDynamic("eventHandlers")(eventHandlers)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (jsonpCallbackParam != null) __obj.updateDynamic("jsonpCallbackParam")(jsonpCallbackParam)
+    if (objectKey != null) __obj.updateDynamic("objectKey")(objectKey)
+    if (paramSerializer != null) __obj.updateDynamic("paramSerializer")(paramSerializer.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (resumeChunkSize != null) __obj.updateDynamic("resumeChunkSize")(resumeChunkSize.asInstanceOf[js.Any])
+    if (resumeSize != null) __obj.updateDynamic("resumeSize")(resumeSize)
+    if (resumeSizeResponseReader != null) __obj.updateDynamic("resumeSizeResponseReader")(resumeSizeResponseReader)
+    if (resumeSizeUrl != null) __obj.updateDynamic("resumeSizeUrl")(resumeSizeUrl)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (transformRequest != null) __obj.updateDynamic("transformRequest")(transformRequest.asInstanceOf[js.Any])
+    if (transformResponse != null) __obj.updateDynamic("transformResponse")(transformResponse.asInstanceOf[js.Any])
+    if (uploadEventHandlers != null) __obj.updateDynamic("uploadEventHandlers")(uploadEventHandlers)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    if (xsrfCookieName != null) __obj.updateDynamic("xsrfCookieName")(xsrfCookieName)
+    if (xsrfHeaderName != null) __obj.updateDynamic("xsrfHeaderName")(xsrfHeaderName)
+    __obj.asInstanceOf[IFileUploadConfigFile]
+  }
+}
+

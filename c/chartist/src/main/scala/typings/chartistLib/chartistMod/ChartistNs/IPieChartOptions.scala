@@ -69,3 +69,46 @@ trait IPieChartOptions extends IChartOptions {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object IPieChartOptions {
+  @scala.inline
+  def apply(
+    chartPadding: IChartPadding | scala.Double = null,
+    classNames: IPieChartClasses = null,
+    donut: js.UndefOr[scala.Boolean] = js.undefined,
+    donutSolid: js.UndefOr[scala.Boolean] = js.undefined,
+    donutWidth: scala.Double | java.lang.String = null,
+    height: scala.Double | java.lang.String = null,
+    ignoreEmptyValues: js.UndefOr[scala.Boolean] = js.undefined,
+    labelDirection: java.lang.String = null,
+    labelInterpolationFnc: js.Function = null,
+    labelOffset: scala.Int | scala.Double = null,
+    labelPosition: java.lang.String = null,
+    plugins: js.Array[_] = null,
+    reverseData: js.UndefOr[scala.Boolean] = js.undefined,
+    showLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    startAngle: scala.Int | scala.Double = null,
+    total: scala.Int | scala.Double = null,
+    width: scala.Double | java.lang.String = null
+  ): IPieChartOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chartPadding != null) __obj.updateDynamic("chartPadding")(chartPadding.asInstanceOf[js.Any])
+    if (classNames != null) __obj.updateDynamic("classNames")(classNames)
+    if (!js.isUndefined(donut)) __obj.updateDynamic("donut")(donut)
+    if (!js.isUndefined(donutSolid)) __obj.updateDynamic("donutSolid")(donutSolid)
+    if (donutWidth != null) __obj.updateDynamic("donutWidth")(donutWidth.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(ignoreEmptyValues)) __obj.updateDynamic("ignoreEmptyValues")(ignoreEmptyValues)
+    if (labelDirection != null) __obj.updateDynamic("labelDirection")(labelDirection)
+    if (labelInterpolationFnc != null) __obj.updateDynamic("labelInterpolationFnc")(labelInterpolationFnc)
+    if (labelOffset != null) __obj.updateDynamic("labelOffset")(labelOffset.asInstanceOf[js.Any])
+    if (labelPosition != null) __obj.updateDynamic("labelPosition")(labelPosition)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(reverseData)) __obj.updateDynamic("reverseData")(reverseData)
+    if (!js.isUndefined(showLabel)) __obj.updateDynamic("showLabel")(showLabel)
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (total != null) __obj.updateDynamic("total")(total.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPieChartOptions]
+  }
+}
+

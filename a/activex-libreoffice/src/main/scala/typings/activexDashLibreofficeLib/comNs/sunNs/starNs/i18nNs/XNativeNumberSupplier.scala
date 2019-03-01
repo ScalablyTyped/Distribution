@@ -47,3 +47,39 @@ trait XNativeNumberSupplier
   ): scala.Boolean
 }
 
+object XNativeNumberSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    convertFromXmlAttributes: js.Function1[NativeNumberXmlAttributes, scala.Double],
+    convertToXmlAttributes: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      NativeNumberXmlAttributes
+    ],
+    getNativeNumberString: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      java.lang.String
+    ],
+    isValidNatNum: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XNativeNumberSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("convertFromXmlAttributes")(convertFromXmlAttributes)
+    __obj.updateDynamic("convertToXmlAttributes")(convertToXmlAttributes)
+    __obj.updateDynamic("getNativeNumberString")(getNativeNumberString)
+    __obj.updateDynamic("isValidNatNum")(isValidNatNum)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XNativeNumberSupplier]
+  }
+}
+

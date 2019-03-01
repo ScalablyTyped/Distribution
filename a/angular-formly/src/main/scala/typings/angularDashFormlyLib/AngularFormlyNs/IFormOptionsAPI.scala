@@ -18,3 +18,28 @@ trait IFormOptionsAPI extends js.Object {
   var wrapper: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object IFormOptionsAPI {
+  @scala.inline
+  def apply(
+    data: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    fieldTransform: angularLib.angularMod.Global.Function | js.Array[angularLib.angularMod.Global.Function] = null,
+    formState: js.Object = null,
+    removeChromeAutoComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    resetModel: angularLib.angularMod.Global.Function = null,
+    templateManipulators: ITemplateManipulators = null,
+    updateInitialValue: angularLib.angularMod.Global.Function = null,
+    wrapper: java.lang.String | js.Array[java.lang.String] = null
+  ): IFormOptionsAPI = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (fieldTransform != null) __obj.updateDynamic("fieldTransform")(fieldTransform.asInstanceOf[js.Any])
+    if (formState != null) __obj.updateDynamic("formState")(formState)
+    if (!js.isUndefined(removeChromeAutoComplete)) __obj.updateDynamic("removeChromeAutoComplete")(removeChromeAutoComplete)
+    if (resetModel != null) __obj.updateDynamic("resetModel")(resetModel)
+    if (templateManipulators != null) __obj.updateDynamic("templateManipulators")(templateManipulators)
+    if (updateInitialValue != null) __obj.updateDynamic("updateInitialValue")(updateInitialValue)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IFormOptionsAPI]
+  }
+}
+

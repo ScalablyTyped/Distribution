@@ -17,3 +17,23 @@ trait ListenerCollection extends js.Object {
   ): scala.Unit
 }
 
+object ListenerCollection {
+  @scala.inline
+  def apply(
+    add: js.Function2[
+      java.lang.String, 
+      js.Function3[
+        /* req */ Request, 
+        /* res */ Response, 
+        /* err */ js.UndefOr[js.Any], 
+        js.Promise[_] | scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): ListenerCollection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.asInstanceOf[ListenerCollection]
+  }
+}
+

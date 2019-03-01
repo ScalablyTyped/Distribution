@@ -60,3 +60,87 @@ trait BuildDefinition extends BuildDefinitionReference {
   var variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
 }
 
+object BuildDefinition {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    authoredBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    badgeEnabled: scala.Boolean,
+    buildNumberFormat: java.lang.String,
+    comment: java.lang.String,
+    createdDate: stdLib.Date,
+    demands: js.Array[_],
+    description: java.lang.String,
+    draftOf: DefinitionReference,
+    drafts: js.Array[DefinitionReference],
+    dropLocation: java.lang.String,
+    id: scala.Double,
+    jobAuthorizationScope: BuildAuthorizationScope,
+    jobCancelTimeoutInMinutes: scala.Double,
+    jobTimeoutInMinutes: scala.Double,
+    latestBuild: Build,
+    latestCompletedBuild: Build,
+    metrics: js.Array[BuildMetric],
+    name: java.lang.String,
+    options: js.Array[BuildOption],
+    path: java.lang.String,
+    process: BuildProcess,
+    processParameters: vsoDashNodeDashApiLib.interfacesDistributedTaskCommonInterfacesMod.ProcessParameters,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference,
+    properties: js.Any,
+    quality: DefinitionQuality,
+    queue: AgentPoolQueue,
+    queueStatus: DefinitionQueueStatus,
+    repository: BuildRepository,
+    retentionRules: js.Array[RetentionPolicy],
+    revision: scala.Double,
+    tags: js.Array[java.lang.String],
+    triggers: js.Array[BuildTrigger],
+    `type`: DefinitionType,
+    uri: java.lang.String,
+    url: java.lang.String,
+    variableGroups: js.Array[VariableGroup],
+    variables: org.scalablytyped.runtime.StringDictionary[BuildDefinitionVariable]
+  ): BuildDefinition = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("authoredBy")(authoredBy)
+    __obj.updateDynamic("badgeEnabled")(badgeEnabled)
+    __obj.updateDynamic("buildNumberFormat")(buildNumberFormat)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("demands")(demands)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("draftOf")(draftOf)
+    __obj.updateDynamic("drafts")(drafts)
+    __obj.updateDynamic("dropLocation")(dropLocation)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("jobAuthorizationScope")(jobAuthorizationScope)
+    __obj.updateDynamic("jobCancelTimeoutInMinutes")(jobCancelTimeoutInMinutes)
+    __obj.updateDynamic("jobTimeoutInMinutes")(jobTimeoutInMinutes)
+    __obj.updateDynamic("latestBuild")(latestBuild)
+    __obj.updateDynamic("latestCompletedBuild")(latestCompletedBuild)
+    __obj.updateDynamic("metrics")(metrics)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("process")(process)
+    __obj.updateDynamic("processParameters")(processParameters)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("quality")(quality)
+    __obj.updateDynamic("queue")(queue)
+    __obj.updateDynamic("queueStatus")(queueStatus)
+    __obj.updateDynamic("repository")(repository)
+    __obj.updateDynamic("retentionRules")(retentionRules)
+    __obj.updateDynamic("revision")(revision)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("triggers")(triggers)
+    __obj.updateDynamic("uri")(uri)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("variableGroups")(variableGroups)
+    __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[BuildDefinition]
+  }
+}
+

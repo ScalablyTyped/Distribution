@@ -12,3 +12,13 @@ trait StorageChange extends js.Object {
   var oldValue: js.UndefOr[js.Any] = js.undefined
 }
 
+object StorageChange {
+  @scala.inline
+  def apply(newValue: js.Any = null, oldValue: js.Any = null): StorageChange = {
+    val __obj = js.Dynamic.literal()
+    if (newValue != null) __obj.updateDynamic("newValue")(newValue)
+    if (oldValue != null) __obj.updateDynamic("oldValue")(oldValue)
+    __obj.asInstanceOf[StorageChange]
+  }
+}
+

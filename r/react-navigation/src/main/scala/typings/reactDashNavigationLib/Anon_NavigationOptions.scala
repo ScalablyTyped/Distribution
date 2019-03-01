@@ -12,3 +12,17 @@ trait Anon_NavigationOptions extends js.Object {
   ]
 }
 
+object Anon_NavigationOptions {
+  @scala.inline
+  def apply(
+    navigationOptions: reactDashNavigationLib.reactDashNavigationMod.NavigationScreenProp[
+      reactDashNavigationLib.reactDashNavigationMod.NavigationRoute[reactDashNavigationLib.reactDashNavigationMod.NavigationParams], 
+      reactDashNavigationLib.reactDashNavigationMod.NavigationParams
+    ]
+  ): Anon_NavigationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("navigationOptions")(navigationOptions)
+    __obj.asInstanceOf[Anon_NavigationOptions]
+  }
+}
+

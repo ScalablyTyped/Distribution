@@ -43,3 +43,54 @@ trait NodeData extends js.Object {
   var unselectableStatus: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NodeData {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    children: js.Array[NodeData] = null,
+    data: js.Object = null,
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    extraClasses: java.lang.String = null,
+    focus: js.UndefOr[scala.Boolean] = js.undefined,
+    folder: js.UndefOr[scala.Boolean] = js.undefined,
+    hideCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: scala.Boolean | java.lang.String = null,
+    iconTooltip: java.lang.String = null,
+    key: java.lang.String = null,
+    `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
+    refKey: java.lang.String = null,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    statusNodeType: java.lang.String = null,
+    tooltip: java.lang.String = null,
+    `type`: java.lang.String = null,
+    unselectable: js.UndefOr[scala.Boolean] = js.undefined,
+    unselectableIgnore: js.UndefOr[scala.Boolean] = js.undefined,
+    unselectableStatus: js.UndefOr[scala.Boolean] = js.undefined
+  ): NodeData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (extraClasses != null) __obj.updateDynamic("extraClasses")(extraClasses)
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
+    if (!js.isUndefined(folder)) __obj.updateDynamic("folder")(folder)
+    if (!js.isUndefined(hideCheckbox)) __obj.updateDynamic("hideCheckbox")(hideCheckbox)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconTooltip != null) __obj.updateDynamic("iconTooltip")(iconTooltip)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (refKey != null) __obj.updateDynamic("refKey")(refKey)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (statusNodeType != null) __obj.updateDynamic("statusNodeType")(statusNodeType)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(unselectable)) __obj.updateDynamic("unselectable")(unselectable)
+    if (!js.isUndefined(unselectableIgnore)) __obj.updateDynamic("unselectableIgnore")(unselectableIgnore)
+    if (!js.isUndefined(unselectableStatus)) __obj.updateDynamic("unselectableStatus")(unselectableStatus)
+    __obj.asInstanceOf[NodeData]
+  }
+}
+

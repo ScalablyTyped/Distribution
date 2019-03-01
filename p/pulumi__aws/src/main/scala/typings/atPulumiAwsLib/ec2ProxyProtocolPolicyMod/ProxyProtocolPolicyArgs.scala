@@ -18,3 +18,16 @@ trait ProxyProtocolPolicyArgs extends js.Object {
   val loadBalancer: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object ProxyProtocolPolicyArgs {
+  @scala.inline
+  def apply(
+    instancePorts: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]],
+    loadBalancer: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): ProxyProtocolPolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("instancePorts")(instancePorts.asInstanceOf[js.Any])
+    __obj.updateDynamic("loadBalancer")(loadBalancer.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProxyProtocolPolicyArgs]
+  }
+}
+

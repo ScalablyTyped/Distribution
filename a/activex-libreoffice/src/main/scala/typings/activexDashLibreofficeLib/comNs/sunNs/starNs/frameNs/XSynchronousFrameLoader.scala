@@ -33,3 +33,26 @@ trait XSynchronousFrameLoader
   ): scala.Boolean
 }
 
+object XSynchronousFrameLoader {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    load: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XFrame, 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSynchronousFrameLoader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("load")(load)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSynchronousFrameLoader]
+  }
+}
+

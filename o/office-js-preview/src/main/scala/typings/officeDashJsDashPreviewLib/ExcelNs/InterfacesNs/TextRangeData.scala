@@ -25,3 +25,13 @@ trait TextRangeData extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TextRangeData {
+  @scala.inline
+  def apply(font: ShapeFontData = null, text: java.lang.String = null): TextRangeData = {
+    val __obj = js.Dynamic.literal()
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextRangeData]
+  }
+}
+

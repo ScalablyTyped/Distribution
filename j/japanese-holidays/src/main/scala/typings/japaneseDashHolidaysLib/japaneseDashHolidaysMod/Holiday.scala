@@ -11,3 +11,14 @@ trait Holiday extends js.Object {
   var name: java.lang.String
 }
 
+object Holiday {
+  @scala.inline
+  def apply(date: scala.Double, month: scala.Double, name: java.lang.String): Holiday = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Holiday]
+  }
+}
+

@@ -10,3 +10,12 @@ trait LinuxGetAuthorizedKeysViewResponse extends js.Object {
   var resource: js.UndefOr[AuthorizedKeysView] = js.undefined
 }
 
+object LinuxGetAuthorizedKeysViewResponse {
+  @scala.inline
+  def apply(resource: AuthorizedKeysView = null): LinuxGetAuthorizedKeysViewResponse = {
+    val __obj = js.Dynamic.literal()
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[LinuxGetAuthorizedKeysViewResponse]
+  }
+}
+

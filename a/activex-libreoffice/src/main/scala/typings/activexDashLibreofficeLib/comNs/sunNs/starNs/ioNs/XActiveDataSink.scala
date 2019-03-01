@@ -24,3 +24,24 @@ trait XActiveDataSink
   def setInputStream(aStream: XInputStream): scala.Unit
 }
 
+object XActiveDataSink {
+  @scala.inline
+  def apply(
+    InputStream: XInputStream,
+    acquire: js.Function0[scala.Unit],
+    getInputStream: js.Function0[XInputStream],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setInputStream: js.Function1[XInputStream, scala.Unit]
+  ): XActiveDataSink = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("InputStream")(InputStream)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getInputStream")(getInputStream)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setInputStream")(setInputStream)
+    __obj.asInstanceOf[XActiveDataSink]
+  }
+}
+

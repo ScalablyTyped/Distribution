@@ -41,3 +41,24 @@ trait ASPxClientValidationCompletedEventArgs extends ASPxClientEventArgs {
   var validationGroup: java.lang.String
 }
 
+object ASPxClientValidationCompletedEventArgs {
+  @scala.inline
+  def apply(
+    container: js.Object,
+    firstInvalidControl: ASPxClientControl,
+    firstVisibleInvalidControl: ASPxClientControl,
+    invisibleControlsValidated: scala.Boolean,
+    isValid: scala.Boolean,
+    validationGroup: java.lang.String
+  ): ASPxClientValidationCompletedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("firstInvalidControl")(firstInvalidControl)
+    __obj.updateDynamic("firstVisibleInvalidControl")(firstVisibleInvalidControl)
+    __obj.updateDynamic("invisibleControlsValidated")(invisibleControlsValidated)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("validationGroup")(validationGroup)
+    __obj.asInstanceOf[ASPxClientValidationCompletedEventArgs]
+  }
+}
+

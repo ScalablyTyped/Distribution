@@ -10,3 +10,13 @@ trait Projection extends js.Object {
   def pointToLngLat(point: Pixel): Point
 }
 
+object Projection {
+  @scala.inline
+  def apply(lngLatToPoint: js.Function1[Point, Pixel], pointToLngLat: js.Function1[Pixel, Point]): Projection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lngLatToPoint")(lngLatToPoint)
+    __obj.updateDynamic("pointToLngLat")(pointToLngLat)
+    __obj.asInstanceOf[Projection]
+  }
+}
+

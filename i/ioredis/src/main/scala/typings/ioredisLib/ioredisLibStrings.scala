@@ -34,16 +34,28 @@ object ioredisLibStrings {
   sealed trait WITHSCORES extends js.Object
   
   @js.native
+  sealed trait all
+    extends ioredisLib.ioredisMod.IORedisNs.NodeRole
+  
+  @js.native
   sealed trait count extends js.Object
   
   @js.native
   sealed trait group extends js.Object
   
   @js.native
+  sealed trait master
+    extends ioredisLib.ioredisMod.IORedisNs.NodeRole
+  
+  @js.native
   sealed trait `match` extends js.Object
   
   @js.native
   sealed trait maxlen extends js.Object
+  
+  @js.native
+  sealed trait slave
+    extends ioredisLib.ioredisMod.IORedisNs.NodeRole
   
   @js.native
   sealed trait `~` extends js.Object
@@ -67,13 +79,19 @@ object ioredisLibStrings {
   @scala.inline
   def WITHSCORES: WITHSCORES = "WITHSCORES".asInstanceOf[WITHSCORES]
   @scala.inline
+  def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def count: count = "count".asInstanceOf[count]
   @scala.inline
   def group: group = "group".asInstanceOf[group]
   @scala.inline
+  def master: master = "master".asInstanceOf[master]
+  @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
   @scala.inline
   def maxlen: maxlen = "maxlen".asInstanceOf[maxlen]
+  @scala.inline
+  def slave: slave = "slave".asInstanceOf[slave]
   @scala.inline
   def `~`: `~` = "~".asInstanceOf[`~`]
 }

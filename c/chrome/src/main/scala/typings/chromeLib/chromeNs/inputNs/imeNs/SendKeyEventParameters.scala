@@ -12,3 +12,13 @@ trait SendKeyEventParameters extends js.Object {
   var keyData: js.Array[KeyboardEvent]
 }
 
+object SendKeyEventParameters {
+  @scala.inline
+  def apply(contextID: scala.Double, keyData: js.Array[KeyboardEvent]): SendKeyEventParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contextID")(contextID)
+    __obj.updateDynamic("keyData")(keyData)
+    __obj.asInstanceOf[SendKeyEventParameters]
+  }
+}
+

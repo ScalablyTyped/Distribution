@@ -27,3 +27,20 @@ trait TiMetadataItemType extends js.Object {
   var value: js.UndefOr[java.lang.String | scala.Double | scala.Boolean] = js.undefined
 }
 
+object TiMetadataItemType {
+  @scala.inline
+  def apply(
+    extraAttributes: js.Any = null,
+    key: java.lang.String = null,
+    keySpace: java.lang.String = null,
+    value: java.lang.String | scala.Double | scala.Boolean = null
+  ): TiMetadataItemType = {
+    val __obj = js.Dynamic.literal()
+    if (extraAttributes != null) __obj.updateDynamic("extraAttributes")(extraAttributes)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (keySpace != null) __obj.updateDynamic("keySpace")(keySpace)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TiMetadataItemType]
+  }
+}
+

@@ -31,3 +31,32 @@ trait IObservableOptions extends js.Object {
   var write: js.UndefOr[js.Function1[/* value */ js.Any, scala.Unit]] = js.undefined
 }
 
+object IObservableOptions {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    args: js.Array[knockoutLib.KnockoutObservable[_]] = null,
+    default: js.Any = null,
+    factory: js.Any = null,
+    localizer: LocalizedObservable = null,
+    options: js.Any = null,
+    path: java.lang.String = null,
+    read: js.Function0[_] = null,
+    store: js.Any = null,
+    write: js.Function1[/* value */ js.Any, scala.Unit] = null
+  ): IObservableOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (factory != null) __obj.updateDynamic("factory")(factory)
+    if (localizer != null) __obj.updateDynamic("localizer")(localizer)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (read != null) __obj.updateDynamic("read")(read)
+    if (store != null) __obj.updateDynamic("store")(store)
+    if (write != null) __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[IObservableOptions]
+  }
+}
+

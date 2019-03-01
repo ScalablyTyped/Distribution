@@ -10,3 +10,16 @@ trait Anon_BottomBar extends js.Object {
   var Prompt: inquirerLib.inquirerMod.inquirerNs.uiNs.Prompt
 }
 
+object Anon_BottomBar {
+  @scala.inline
+  def apply(
+    BottomBar: inquirerLib.inquirerMod.inquirerNs.uiNs.BottomBar,
+    Prompt: inquirerLib.inquirerMod.inquirerNs.uiNs.Prompt
+  ): Anon_BottomBar = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BottomBar")(BottomBar)
+    __obj.updateDynamic("Prompt")(Prompt)
+    __obj.asInstanceOf[Anon_BottomBar]
+  }
+}
+

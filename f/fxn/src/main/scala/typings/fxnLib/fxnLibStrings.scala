@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object fxnLibStrings {
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends fxnLib.fxnMod.HttpMethod
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends fxnLib.fxnMod.HttpMethod
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait OPTIONS
+    extends fxnLib.fxnMod.HttpMethod
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends fxnLib.fxnMod.HttpMethod
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends fxnLib.fxnMod.HttpMethod
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

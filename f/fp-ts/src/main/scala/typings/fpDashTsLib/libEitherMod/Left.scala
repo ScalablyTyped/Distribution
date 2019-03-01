@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fp-ts/lib/Either", "Left")
 @js.native
-class Left[L, A] protected () extends js.Object {
+class Left[L, A] protected () extends Either[L, A] {
   def this(value: L) = this()
   val _A: A = js.native
   val _L: L = js.native
@@ -17,7 +17,7 @@ class Left[L, A] protected () extends js.Object {
   def alt(fy: Either[L, A]): Either[L, A] = js.native
   def ap[B](fab: Either[L, js.Function1[/* a */ A, B]]): Either[L, B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     */
   def `ap_`[B, C](`this`: Either[L, js.Function1[/* b */ B, C]], fb: Either[L, B]): Either[L, C] = js.native
   def bimap[V, B](f: js.Function1[/* l */ L, V], g: js.Function1[/* a */ A, B]): Either[V, B] = js.native
@@ -27,7 +27,7 @@ class Left[L, A] protected () extends js.Object {
   def filterOrElse(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: L): Either[L, A] = js.native
   def filterOrElseL(p: fpDashTsLib.libFunctionMod.Predicate[A], zero: js.Function1[/* a */ A, L]): Either[L, A] = js.native
   /**
-    * Lazy version of {@link filterOrElse}
+    * Lazy version of `filterOrElse`
     * @since 1.3.0
     */
   @JSName("filterOrElseL")
@@ -64,7 +64,7 @@ class Left[L, A] protected () extends js.Object {
   /** Maps the left side of the disjunction */
   def mapLeft[M](f: js.Function1[/* l */ L, M]): Either[M, A] = js.native
   /**
-    * Lazy version of {@link alt}
+    * Lazy version of `alt`
     *
     * @example
     * import { right } from 'fp-ts/lib/Either'
@@ -76,14 +76,14 @@ class Left[L, A] protected () extends js.Object {
   def orElse[M](fy: js.Function1[/* l */ L, Either[M, A]]): Either[M, A] = js.native
   def reduce[B](b: B, f: js.Function2[/* b */ B, /* a */ A, B]): B = js.native
   /**
-    * Use {@link filterOrElse} instead
+    * Use `filterOrElse` instead
     * @since 1.6.0
     * @deprecated
     */
   def refineOrElse[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: L): Either[L, B] = js.native
   /**
-    * Lazy version of {@link refineOrElse}
-    * Use {@link filterOrElseL} instead
+    * Lazy version of `refineOrElse`
+    * Use `filterOrElseL` instead
     * @since 1.6.0
     * @deprecated
     */

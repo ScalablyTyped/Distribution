@@ -12,3 +12,13 @@ trait NavigationLinkProps extends RefreshLinkProps {
   var stateKey: java.lang.String
 }
 
+object NavigationLinkProps {
+  @scala.inline
+  def apply(stateKey: java.lang.String, RefreshLinkProps: RefreshLinkProps = null): NavigationLinkProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stateKey")(stateKey)
+    js.Dynamic.global.Object.assign(__obj, RefreshLinkProps)
+    __obj.asInstanceOf[NavigationLinkProps]
+  }
+}
+

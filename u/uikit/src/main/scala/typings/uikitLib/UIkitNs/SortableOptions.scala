@@ -43,3 +43,22 @@ trait SortableOptions extends js.Object {
   var threshold: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SortableOptions {
+  @scala.inline
+  def apply(
+    animation: java.lang.String = null,
+    dragCustomClass: java.lang.String = null,
+    group: java.lang.String = null,
+    handleClass: java.lang.String = null,
+    threshold: java.lang.String = null
+  ): SortableOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (dragCustomClass != null) __obj.updateDynamic("dragCustomClass")(dragCustomClass)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (handleClass != null) __obj.updateDynamic("handleClass")(handleClass)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold)
+    __obj.asInstanceOf[SortableOptions]
+  }
+}
+

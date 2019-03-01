@@ -16,3 +16,20 @@ trait Anon_AddClientId extends js.Object {
   var usePingSender: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_AddClientId {
+  @scala.inline
+  def apply(
+    addClientId: js.UndefOr[scala.Boolean] = js.undefined,
+    addEnvironment: js.UndefOr[scala.Boolean] = js.undefined,
+    overrideEnvironment: js.Any = null,
+    usePingSender: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AddClientId = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(addClientId)) __obj.updateDynamic("addClientId")(addClientId)
+    if (!js.isUndefined(addEnvironment)) __obj.updateDynamic("addEnvironment")(addEnvironment)
+    if (overrideEnvironment != null) __obj.updateDynamic("overrideEnvironment")(overrideEnvironment)
+    if (!js.isUndefined(usePingSender)) __obj.updateDynamic("usePingSender")(usePingSender)
+    __obj.asInstanceOf[Anon_AddClientId]
+  }
+}
+

@@ -26,3 +26,13 @@ trait Binding extends js.Object {
   var role: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Binding {
+  @scala.inline
+  def apply(members: js.Array[java.lang.String] = null, role: java.lang.String = null): Binding = {
+    val __obj = js.Dynamic.literal()
+    if (members != null) __obj.updateDynamic("members")(members)
+    if (role != null) __obj.updateDynamic("role")(role)
+    __obj.asInstanceOf[Binding]
+  }
+}
+

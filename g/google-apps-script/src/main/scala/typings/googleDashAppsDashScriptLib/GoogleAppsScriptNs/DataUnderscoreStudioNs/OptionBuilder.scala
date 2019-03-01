@@ -10,3 +10,16 @@ trait OptionBuilder extends js.Object {
   def setValue(value: java.lang.String): OptionBuilder
 }
 
+object OptionBuilder {
+  @scala.inline
+  def apply(
+    setLabel: js.Function1[java.lang.String, OptionBuilder],
+    setValue: js.Function1[java.lang.String, OptionBuilder]
+  ): OptionBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setLabel")(setLabel)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.asInstanceOf[OptionBuilder]
+  }
+}
+

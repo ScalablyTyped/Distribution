@@ -12,3 +12,16 @@ trait Anon_Json extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Json {
+  @scala.inline
+  def apply(
+    json: scala.Boolean | bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsJson = null,
+    urlencoded: scala.Boolean | bodyDashParserLib.bodyDashParserMod.bodyParserNs.OptionsUrlencoded = null
+  ): Anon_Json = {
+    val __obj = js.Dynamic.literal()
+    if (json != null) __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    if (urlencoded != null) __obj.updateDynamic("urlencoded")(urlencoded.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Json]
+  }
+}
+

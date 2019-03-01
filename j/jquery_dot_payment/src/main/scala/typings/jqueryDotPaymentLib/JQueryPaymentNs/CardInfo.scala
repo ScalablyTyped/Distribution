@@ -37,3 +37,26 @@ trait CardInfo extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CardInfo {
+  @scala.inline
+  def apply(
+    cvcLength: js.Array[scala.Double] = null,
+    format: stdLib.RegExp = null,
+    length: js.Array[scala.Double] = null,
+    luhn: js.UndefOr[scala.Boolean] = js.undefined,
+    pattern: stdLib.RegExp = null,
+    patterns: js.Array[scala.Double] = null,
+    `type`: java.lang.String = null
+  ): CardInfo = {
+    val __obj = js.Dynamic.literal()
+    if (cvcLength != null) __obj.updateDynamic("cvcLength")(cvcLength)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (length != null) __obj.updateDynamic("length")(length)
+    if (!js.isUndefined(luhn)) __obj.updateDynamic("luhn")(luhn)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (patterns != null) __obj.updateDynamic("patterns")(patterns)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[CardInfo]
+  }
+}
+

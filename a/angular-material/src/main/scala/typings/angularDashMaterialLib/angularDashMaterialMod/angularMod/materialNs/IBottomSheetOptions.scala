@@ -34,3 +34,44 @@ trait IBottomSheetOptions extends js.Object {
   var templateUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IBottomSheetOptions {
+  @scala.inline
+  def apply(
+    bindToController: js.UndefOr[scala.Boolean] = js.undefined,
+    clickOutsideToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    controller: java.lang.String | angularLib.angularMod.angularNs.Injectable[angularLib.angularMod.angularNs.IControllerConstructor] = null,
+    controllerAs: java.lang.String = null,
+    disableBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
+    disableParentScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    escapeToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    locals: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    parent: (js.Function2[
+      /* scope */ angularLib.angularMod.angularNs.IScope, 
+      /* element */ angularLib.JQuery, 
+      stdLib.Element | angularLib.JQuery
+    ]) | java.lang.String | stdLib.Element | angularLib.JQuery = null,
+    preserveScope: js.UndefOr[scala.Boolean] = js.undefined,
+    resolve: ResolveObject = null,
+    scope: angularLib.angularMod.angularNs.IScope = null,
+    template: java.lang.String = null,
+    templateUrl: java.lang.String = null
+  ): IBottomSheetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bindToController)) __obj.updateDynamic("bindToController")(bindToController)
+    if (!js.isUndefined(clickOutsideToClose)) __obj.updateDynamic("clickOutsideToClose")(clickOutsideToClose)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (!js.isUndefined(disableBackdrop)) __obj.updateDynamic("disableBackdrop")(disableBackdrop)
+    if (!js.isUndefined(disableParentScroll)) __obj.updateDynamic("disableParentScroll")(disableParentScroll)
+    if (!js.isUndefined(escapeToClose)) __obj.updateDynamic("escapeToClose")(escapeToClose)
+    if (locals != null) __obj.updateDynamic("locals")(locals)
+    if (parent != null) __obj.updateDynamic("parent")(parent.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveScope)) __obj.updateDynamic("preserveScope")(preserveScope)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    __obj.asInstanceOf[IBottomSheetOptions]
+  }
+}
+

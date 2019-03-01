@@ -13,3 +13,26 @@ trait IInkStroke extends js.Object {
   def getRenderingSegments(): winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkStrokeRenderingSegment]
 }
 
+object IInkStroke {
+  @scala.inline
+  def apply(
+    boundingRect: winrtLib.WindowsNs.FoundationNs.Rect,
+    clone: js.Function0[InkStroke],
+    drawingAttributes: InkDrawingAttributes,
+    getRenderingSegments: js.Function0[
+      winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[InkStrokeRenderingSegment]
+    ],
+    recognized: scala.Boolean,
+    selected: scala.Boolean
+  ): IInkStroke = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boundingRect")(boundingRect)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("drawingAttributes")(drawingAttributes)
+    __obj.updateDynamic("getRenderingSegments")(getRenderingSegments)
+    __obj.updateDynamic("recognized")(recognized)
+    __obj.updateDynamic("selected")(selected)
+    __obj.asInstanceOf[IInkStroke]
+  }
+}
+

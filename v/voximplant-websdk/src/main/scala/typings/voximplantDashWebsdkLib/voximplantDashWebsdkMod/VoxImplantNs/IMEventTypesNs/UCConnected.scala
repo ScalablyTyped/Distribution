@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when instant messaging and presence subsystems (UC) are online
 		*/
-trait UCConnected extends js.Object
+trait UCConnected
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent
 

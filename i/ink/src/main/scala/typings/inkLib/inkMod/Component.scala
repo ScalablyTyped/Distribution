@@ -13,16 +13,16 @@ abstract class Component[P /* <: stdLib.Record[java.lang.String, _] */, S /* <: 
   var componentWillMount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentWillReceiveProps: js.UndefOr[
     js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: this['props'] */ /* nextProps */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: this['state'] */ /* nextState */ js.Any, 
+      /* nextProps */ js.Object with inkLib.Anon_Children, 
+      /* nextState */ js.Object, 
       scala.Unit
     ]
   ] = js.native
   var componentWillUnmount: js.UndefOr[js.Function0[scala.Unit]] = js.native
   var componentWillUpdate: js.UndefOr[
     js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: this['props'] */ /* nextProps */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: this['state'] */ /* nextState */ js.Any, 
+      /* nextProps */ js.Object with inkLib.Anon_Children, 
+      /* nextState */ js.Object, 
       scala.Unit
     ]
   ] = js.native
@@ -31,33 +31,19 @@ abstract class Component[P /* <: stdLib.Record[java.lang.String, _] */, S /* <: 
   val props: P with inkLib.Anon_Children = js.native
   var shouldComponentUpdate: js.UndefOr[
     js.Function2[
-      /* import warning: ImportType.apply Failed type conversion: this['props'] */ /* nextProps */ js.Any, 
-      /* import warning: ImportType.apply Failed type conversion: this['state'] */ /* nextState */ js.Any, 
+      /* nextProps */ js.Object with inkLib.Anon_Children, 
+      /* nextState */ js.Object, 
       scala.Unit
     ]
   ] = js.native
   var state: S = js.native
   def render(props: js.Object with inkLib.Anon_Children, state: js.Object, context: js.Object): InkElement = js.native
-  def setState(nextState: stdLib.Partial[js.Object]): scala.Unit = js.native
-  def setState(nextState: stdLib.Partial[js.Object], callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  @JSName("setState")
-  def setState_state(
-    nextState: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: this['state'] */ /* state */ js.Any, 
-      stdLib.Partial[
-        /* import warning: ImportType.apply Failed type conversion: this['state'] */ js.Any
-      ]
-    ]
-  ): scala.Unit = js.native
-  @JSName("setState")
-  def setState_state(
-    nextState: js.Function1[
-      /* import warning: ImportType.apply Failed type conversion: this['state'] */ /* state */ js.Any, 
-      stdLib.Partial[
-        /* import warning: ImportType.apply Failed type conversion: this['state'] */ js.Any
-      ]
-    ],
+  def setState(nextState: js.Function1[/* state */ js.Object, stdLib.Partial[js.Object]]): scala.Unit = js.native
+  def setState(
+    nextState: js.Function1[/* state */ js.Object, stdLib.Partial[js.Object]],
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
+  def setState(nextState: stdLib.Partial[js.Object]): scala.Unit = js.native
+  def setState(nextState: stdLib.Partial[js.Object], callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 

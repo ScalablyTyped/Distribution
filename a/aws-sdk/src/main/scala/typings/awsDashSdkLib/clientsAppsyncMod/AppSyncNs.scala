@@ -1958,33 +1958,51 @@ object AppSyncNs extends js.Object {
     var userPoolId: String
   }
   
+  trait _AuthenticationType extends js.Object
+  
+  trait _DataSourceType extends js.Object
+  
+  trait _DefaultAction extends js.Object
+  
+  trait _FieldLogLevel extends js.Object
+  
+  trait _OutputType extends js.Object
+  
+  trait _ResolverKind extends js.Object
+  
+  trait _SchemaStatus extends js.Object
+  
+  trait _TypeDefinitionFormat extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ApiKeys = js.Array[ApiKey]
-  type AuthenticationType = awsDashSdkLib.awsDashSdkLibStrings.API_KEY | awsDashSdkLib.awsDashSdkLibStrings.AWS_IAM | awsDashSdkLib.awsDashSdkLibStrings.AMAZON_COGNITO_USER_POOLS | awsDashSdkLib.awsDashSdkLibStrings.OPENID_CONNECT | java.lang.String
+  type AuthenticationType = _AuthenticationType | java.lang.String
   type AuthorizationType = awsDashSdkLib.awsDashSdkLibStrings.AWS_IAM | java.lang.String
   type Boolean = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type DataSourceType = awsDashSdkLib.awsDashSdkLibStrings.AWS_LAMBDA | awsDashSdkLib.awsDashSdkLibStrings.AMAZON_DYNAMODB | awsDashSdkLib.awsDashSdkLibStrings.AMAZON_ELASTICSEARCH | awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.RELATIONAL_DATABASE | java.lang.String
+  type DataSourceType = _DataSourceType | java.lang.String
   type DataSources = js.Array[DataSource]
-  type DefaultAction = awsDashSdkLib.awsDashSdkLibStrings.ALLOW | awsDashSdkLib.awsDashSdkLibStrings.DENY | java.lang.String
-  type FieldLogLevel = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+  type DefaultAction = _DefaultAction | java.lang.String
+  type FieldLogLevel = _FieldLogLevel | java.lang.String
   type Functions = js.Array[FunctionConfiguration]
   type FunctionsIds = js.Array[String]
   type GraphqlApis = js.Array[GraphqlApi]
   type Long = scala.Double
   type MappingTemplate = java.lang.String
   type MaxResults = scala.Double
-  type OutputType = awsDashSdkLib.awsDashSdkLibStrings.SDL | awsDashSdkLib.awsDashSdkLibStrings.JSON | java.lang.String
+  type OutputType = _OutputType | java.lang.String
   type PaginationToken = java.lang.String
   type RelationalDatabaseSourceType = awsDashSdkLib.awsDashSdkLibStrings.RDS_HTTP_ENDPOINT | java.lang.String
-  type ResolverKind = awsDashSdkLib.awsDashSdkLibStrings.UNIT | awsDashSdkLib.awsDashSdkLibStrings.PIPELINE | java.lang.String
+  type ResolverKind = _ResolverKind | java.lang.String
   type Resolvers = js.Array[Resolver]
   type ResourceName = java.lang.String
-  type SchemaStatus = awsDashSdkLib.awsDashSdkLibStrings.PROCESSING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type SchemaStatus = _SchemaStatus | java.lang.String
   type String = java.lang.String
-  type TypeDefinitionFormat = awsDashSdkLib.awsDashSdkLibStrings.SDL | awsDashSdkLib.awsDashSdkLibStrings.JSON | java.lang.String
+  type TypeDefinitionFormat = _TypeDefinitionFormat | java.lang.String
   type TypeList = js.Array[Type]
   type _Blob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsAppsyncMod.Blob | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-07-25` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

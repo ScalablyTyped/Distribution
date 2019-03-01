@@ -12,3 +12,13 @@ trait AppRestrictionsSchema extends js.Object {
   var restrictions: js.UndefOr[js.Array[AppRestrictionsSchemaRestriction]] = js.undefined
 }
 
+object AppRestrictionsSchema {
+  @scala.inline
+  def apply(kind: java.lang.String = null, restrictions: js.Array[AppRestrictionsSchemaRestriction] = null): AppRestrictionsSchema = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (restrictions != null) __obj.updateDynamic("restrictions")(restrictions)
+    __obj.asInstanceOf[AppRestrictionsSchema]
+  }
+}
+

@@ -18,3 +18,13 @@ trait ListClustersResponse extends js.Object {
   var missingZones: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ListClustersResponse {
+  @scala.inline
+  def apply(clusters: js.Array[Cluster] = null, missingZones: js.Array[java.lang.String] = null): ListClustersResponse = {
+    val __obj = js.Dynamic.literal()
+    if (clusters != null) __obj.updateDynamic("clusters")(clusters)
+    if (missingZones != null) __obj.updateDynamic("missingZones")(missingZones)
+    __obj.asInstanceOf[ListClustersResponse]
+  }
+}
+

@@ -14,3 +14,24 @@ trait ShowOptions extends js.Object {
   var winphoneEnableCancelButton: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ShowOptions {
+  @scala.inline
+  def apply(
+    addCancelButtonWithLabel: java.lang.String = null,
+    addDestructiveButtonWithLabel: java.lang.String = null,
+    androidEnableCancelButton: js.UndefOr[scala.Boolean] = js.undefined,
+    buttonLabels: js.Array[java.lang.String] = null,
+    title: java.lang.String = null,
+    winphoneEnableCancelButton: js.UndefOr[scala.Boolean] = js.undefined
+  ): ShowOptions = {
+    val __obj = js.Dynamic.literal()
+    if (addCancelButtonWithLabel != null) __obj.updateDynamic("addCancelButtonWithLabel")(addCancelButtonWithLabel)
+    if (addDestructiveButtonWithLabel != null) __obj.updateDynamic("addDestructiveButtonWithLabel")(addDestructiveButtonWithLabel)
+    if (!js.isUndefined(androidEnableCancelButton)) __obj.updateDynamic("androidEnableCancelButton")(androidEnableCancelButton)
+    if (buttonLabels != null) __obj.updateDynamic("buttonLabels")(buttonLabels)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(winphoneEnableCancelButton)) __obj.updateDynamic("winphoneEnableCancelButton")(winphoneEnableCancelButton)
+    __obj.asInstanceOf[ShowOptions]
+  }
+}
+

@@ -12,3 +12,22 @@ trait SavedResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangesellerLib.Anon_AccountId): gapiDotClientLib.gapiNs.clientNs.Request[SavedReports]
 }
 
+object SavedResource {
+  @scala.inline
+  def apply(
+    generate: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Report]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SavedReports]
+    ]
+  ): SavedResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("generate")(generate)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[SavedResource]
+  }
+}
+

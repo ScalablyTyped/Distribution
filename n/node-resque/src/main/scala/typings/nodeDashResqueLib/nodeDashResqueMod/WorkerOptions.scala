@@ -13,3 +13,22 @@ trait WorkerOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WorkerOptions {
+  @scala.inline
+  def apply(
+    queues: js.Array[java.lang.String],
+    connection: ConnectionOptions = null,
+    looping: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null
+  ): WorkerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("queues")(queues)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (!js.isUndefined(looping)) __obj.updateDynamic("looping")(looping)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorkerOptions]
+  }
+}
+

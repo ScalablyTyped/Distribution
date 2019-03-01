@@ -20,3 +20,14 @@ trait IgTreeSelectionChangedEventUIParam extends js.Object {
   var selectedNodes: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object IgTreeSelectionChangedEventUIParam {
+  @scala.inline
+  def apply(newNodes: js.Array[_] = null, owner: js.Any = null, selectedNodes: js.Array[_] = null): IgTreeSelectionChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (newNodes != null) __obj.updateDynamic("newNodes")(newNodes)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (selectedNodes != null) __obj.updateDynamic("selectedNodes")(selectedNodes)
+    __obj.asInstanceOf[IgTreeSelectionChangedEventUIParam]
+  }
+}
+

@@ -55,13 +55,15 @@ object stripeLibStrings {
   sealed trait Visa extends js.Object
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends stripeLib.stripeMod.StripeNs.subscriptionsNs.SubscriptionStatus
   
   @js.native
   sealed trait adjustment extends js.Object
   
   @js.native
-  sealed trait alipay_account extends js.Object
+  sealed trait alipay_account
+    extends stripeLib.stripeMod.StripeNs.transfersNs.SourceTypes
   
   @js.native
   sealed trait all extends js.Object
@@ -70,7 +72,8 @@ object stripeLibStrings {
   sealed trait android_pay extends js.Object
   
   @js.native
-  sealed trait api_error extends js.Object
+  sealed trait api_error
+    extends stripeLib.stripeMod.StripeNs.errorsNs.RawType
   
   @js.native
   sealed trait apple_pay extends js.Object
@@ -97,13 +100,16 @@ object stripeLibStrings {
   sealed trait authorized extends js.Object
   
   @js.native
-  sealed trait bank_account extends js.Object
+  sealed trait bank_account
+    extends stripeLib.stripeMod.StripeNs.payoutsNs.PayoutTypes
+       with stripeLib.stripeMod.StripeNs.transfersNs.SourceTypes
   
   @js.native
   sealed trait bank_cannot_process extends js.Object
   
   @js.native
-  sealed trait bitcoin_receiver extends js.Object
+  sealed trait bitcoin_receiver
+    extends stripeLib.stripeMod.StripeNs.transfersNs.SourceTypes
   
   @js.native
   sealed trait blocked extends js.Object
@@ -112,22 +118,30 @@ object stripeLibStrings {
   sealed trait bucket extends js.Object
   
   @js.native
-  sealed trait business_logo extends js.Object
+  sealed trait business_logo
+    extends stripeLib.stripeMod.StripeNs.fileUploadsNs.IPurpose
   
   @js.native
-  sealed trait canceled extends js.Object
+  sealed trait canceled
+    extends stripeLib.stripeMod.StripeNs.ordersNs.OrderStatus
+       with stripeLib.stripeMod.StripeNs.transfersNs.Statuses
+       with stripeLib.stripeMod.StripeNs.subscriptionsNs.SubscriptionStatus
   
   @js.native
-  sealed trait card extends js.Object
+  sealed trait card
+    extends stripeLib.stripeMod.StripeNs.payoutsNs.PayoutTypes
+       with stripeLib.stripeMod.StripeNs.transfersNs.SourceTypes
   
   @js.native
-  sealed trait card_error extends js.Object
+  sealed trait card_error
+    extends stripeLib.stripeMod.StripeNs.errorsNs.RawType
   
   @js.native
   sealed trait charge extends js.Object
   
   @js.native
-  sealed trait charge_automatically extends js.Object
+  sealed trait charge_automatically
+    extends stripeLib.stripeMod.StripeNs.subscriptionsNs.SubscriptionBilling
   
   @js.native
   sealed trait charge_refunded extends js.Object
@@ -142,7 +156,8 @@ object stripeLibStrings {
   sealed trait coupon extends js.Object
   
   @js.native
-  sealed trait created extends js.Object
+  sealed trait created
+    extends stripeLib.stripeMod.StripeNs.ordersNs.OrderStatus
   
   @js.native
   sealed trait credit extends js.Object
@@ -160,7 +175,8 @@ object stripeLibStrings {
   sealed trait daily extends js.Object
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends stripeLib.stripeMod.StripeNs.plansNs.IntervalUnit
   
   @js.native
   sealed trait debit extends js.Object
@@ -178,7 +194,8 @@ object stripeLibStrings {
   sealed trait dispute extends js.Object
   
   @js.native
-  sealed trait dispute_evidence extends js.Object
+  sealed trait dispute_evidence
+    extends stripeLib.stripeMod.StripeNs.fileUploadsNs.IPurpose
   
   @js.native
   sealed trait disputed extends js.Object
@@ -208,7 +225,8 @@ object stripeLibStrings {
   sealed trait fail extends js.Object
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends stripeLib.stripeMod.StripeNs.transfersNs.Statuses
   
   @js.native
   sealed trait file_upload extends js.Object
@@ -229,40 +247,48 @@ object stripeLibStrings {
   sealed trait friday extends js.Object
   
   @js.native
-  sealed trait fulfilled extends js.Object
+  sealed trait fulfilled
+    extends stripeLib.stripeMod.StripeNs.ordersNs.OrderStatus
   
   @js.native
   sealed trait general extends js.Object
   
   @js.native
-  sealed trait good extends js.Object
+  sealed trait good
+    extends stripeLib.stripeMod.StripeNs.productsNs.ProductType
   
   @js.native
   sealed trait graduated extends js.Object
   
   @js.native
-  sealed trait idempotency_error extends js.Object
+  sealed trait idempotency_error
+    extends stripeLib.stripeMod.StripeNs.errorsNs.RawType
   
   @js.native
-  sealed trait identity_document extends js.Object
+  sealed trait identity_document
+    extends stripeLib.stripeMod.StripeNs.fileUploadsNs.IPurpose
   
   @js.native
   sealed trait in_stock extends js.Object
   
   @js.native
-  sealed trait in_transit extends js.Object
+  sealed trait in_transit
+    extends stripeLib.stripeMod.StripeNs.transfersNs.Statuses
   
   @js.native
-  sealed trait incorporation_article extends js.Object
+  sealed trait incorporation_article
+    extends stripeLib.stripeMod.StripeNs.fileUploadsNs.IPurpose
   
   @js.native
-  sealed trait incorporation_document extends js.Object
+  sealed trait incorporation_document
+    extends stripeLib.stripeMod.StripeNs.fileUploadsNs.IPurpose
   
   @js.native
   sealed trait incorrect_account_details extends js.Object
   
   @js.native
-  sealed trait increment extends js.Object
+  sealed trait increment
+    extends stripeLib.stripeMod.StripeNs.usageRecordsNs.IUsageRecordAction
   
   @js.native
   sealed trait individual extends js.Object
@@ -271,7 +297,8 @@ object stripeLibStrings {
   sealed trait infinite extends js.Object
   
   @js.native
-  sealed trait instant extends js.Object
+  sealed trait instant
+    extends stripeLib.stripeMod.StripeNs.payoutsNs.PayoutMethods
   
   @js.native
   sealed trait insufficient_funds extends js.Object
@@ -280,7 +307,8 @@ object stripeLibStrings {
   sealed trait invalid extends js.Object
   
   @js.native
-  sealed trait invalid_request_error extends js.Object
+  sealed trait invalid_request_error
+    extends stripeLib.stripeMod.StripeNs.errorsNs.RawType
   
   @js.native
   sealed trait invoice extends js.Object
@@ -337,7 +365,8 @@ object stripeLibStrings {
   sealed trait monday extends js.Object
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends stripeLib.stripeMod.StripeNs.plansNs.IntervalUnit
   
   @js.native
   sealed trait monthly extends js.Object
@@ -373,13 +402,16 @@ object stripeLibStrings {
   sealed trait out_of_stock extends js.Object
   
   @js.native
-  sealed trait paid extends js.Object
+  sealed trait paid
+    extends stripeLib.stripeMod.StripeNs.ordersNs.OrderStatus
+       with stripeLib.stripeMod.StripeNs.transfersNs.Statuses
   
   @js.native
   sealed trait pass extends js.Object
   
   @js.native
-  sealed trait past_due extends js.Object
+  sealed trait past_due
+    extends stripeLib.stripeMod.StripeNs.subscriptionsNs.SubscriptionStatus
   
   @js.native
   sealed trait payment extends js.Object
@@ -394,7 +426,8 @@ object stripeLibStrings {
   sealed trait pdf extends js.Object
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends stripeLib.stripeMod.StripeNs.transfersNs.Statuses
   
   @js.native
   sealed trait per_unit extends js.Object
@@ -436,7 +469,8 @@ object stripeLibStrings {
   sealed trait response_disabled extends js.Object
   
   @js.native
-  sealed trait returned extends js.Object
+  sealed trait returned
+    extends stripeLib.stripeMod.StripeNs.ordersNs.OrderStatus
   
   @js.native
   sealed trait reversed_after_approval extends js.Object
@@ -454,13 +488,16 @@ object stripeLibStrings {
   sealed trait saturday extends js.Object
   
   @js.native
-  sealed trait send_invoice extends js.Object
+  sealed trait send_invoice
+    extends stripeLib.stripeMod.StripeNs.subscriptionsNs.SubscriptionBilling
   
   @js.native
-  sealed trait service extends js.Object
+  sealed trait service
+    extends stripeLib.stripeMod.StripeNs.productsNs.ProductType
   
   @js.native
-  sealed trait set extends js.Object
+  sealed trait set
+    extends stripeLib.stripeMod.StripeNs.usageRecordsNs.IUsageRecordAction
   
   @js.native
   sealed trait shipping extends js.Object
@@ -469,7 +506,8 @@ object stripeLibStrings {
   sealed trait sku extends js.Object
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard
+    extends stripeLib.stripeMod.StripeNs.payoutsNs.PayoutMethods
   
   @js.native
   sealed trait stripe_account extends js.Object
@@ -523,7 +561,8 @@ object stripeLibStrings {
   sealed trait transfer_reversal extends js.Object
   
   @js.native
-  sealed trait trialing extends js.Object
+  sealed trait trialing
+    extends stripeLib.stripeMod.StripeNs.subscriptionsNs.SubscriptionStatus
   
   @js.native
   sealed trait tuesday extends js.Object
@@ -544,7 +583,8 @@ object stripeLibStrings {
   sealed trait unknown extends js.Object
   
   @js.native
-  sealed trait unpaid extends js.Object
+  sealed trait unpaid
+    extends stripeLib.stripeMod.StripeNs.subscriptionsNs.SubscriptionStatus
   
   @js.native
   sealed trait unrecognized extends js.Object
@@ -583,7 +623,8 @@ object stripeLibStrings {
   sealed trait wednesday extends js.Object
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week
+    extends stripeLib.stripeMod.StripeNs.plansNs.IntervalUnit
   
   @js.native
   sealed trait weekly extends js.Object
@@ -592,7 +633,8 @@ object stripeLibStrings {
   sealed trait won extends js.Object
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends stripeLib.stripeMod.StripeNs.plansNs.IntervalUnit
   
   @scala.inline
   def `American Express`: `American Express` = "American Express".asInstanceOf[`American Express`]

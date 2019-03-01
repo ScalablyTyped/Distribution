@@ -44,3 +44,30 @@ trait Anon_ClicksLookbackWindow extends js.Object {
   var pivotOnInteractionPath: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ClicksLookbackWindow {
+  @scala.inline
+  def apply(
+    clicksLookbackWindow: scala.Int | scala.Double = null,
+    impressionsLookbackWindow: scala.Int | scala.Double = null,
+    includeAttributedIPConversions: js.UndefOr[scala.Boolean] = js.undefined,
+    includeUnattributedCookieConversions: js.UndefOr[scala.Boolean] = js.undefined,
+    includeUnattributedIPConversions: js.UndefOr[scala.Boolean] = js.undefined,
+    maximumClickInteractions: scala.Int | scala.Double = null,
+    maximumImpressionInteractions: scala.Int | scala.Double = null,
+    maximumInteractionGap: scala.Int | scala.Double = null,
+    pivotOnInteractionPath: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ClicksLookbackWindow = {
+    val __obj = js.Dynamic.literal()
+    if (clicksLookbackWindow != null) __obj.updateDynamic("clicksLookbackWindow")(clicksLookbackWindow.asInstanceOf[js.Any])
+    if (impressionsLookbackWindow != null) __obj.updateDynamic("impressionsLookbackWindow")(impressionsLookbackWindow.asInstanceOf[js.Any])
+    if (!js.isUndefined(includeAttributedIPConversions)) __obj.updateDynamic("includeAttributedIPConversions")(includeAttributedIPConversions)
+    if (!js.isUndefined(includeUnattributedCookieConversions)) __obj.updateDynamic("includeUnattributedCookieConversions")(includeUnattributedCookieConversions)
+    if (!js.isUndefined(includeUnattributedIPConversions)) __obj.updateDynamic("includeUnattributedIPConversions")(includeUnattributedIPConversions)
+    if (maximumClickInteractions != null) __obj.updateDynamic("maximumClickInteractions")(maximumClickInteractions.asInstanceOf[js.Any])
+    if (maximumImpressionInteractions != null) __obj.updateDynamic("maximumImpressionInteractions")(maximumImpressionInteractions.asInstanceOf[js.Any])
+    if (maximumInteractionGap != null) __obj.updateDynamic("maximumInteractionGap")(maximumInteractionGap.asInstanceOf[js.Any])
+    if (!js.isUndefined(pivotOnInteractionPath)) __obj.updateDynamic("pivotOnInteractionPath")(pivotOnInteractionPath)
+    __obj.asInstanceOf[Anon_ClicksLookbackWindow]
+  }
+}
+

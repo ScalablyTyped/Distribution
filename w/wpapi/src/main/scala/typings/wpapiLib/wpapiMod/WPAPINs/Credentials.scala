@@ -15,3 +15,18 @@ trait Credentials extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Credentials {
+  @scala.inline
+  def apply(
+    nonce: java.lang.String = null,
+    password: java.lang.String = null,
+    username: java.lang.String = null
+  ): Credentials = {
+    val __obj = js.Dynamic.literal()
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[Credentials]
+  }
+}
+

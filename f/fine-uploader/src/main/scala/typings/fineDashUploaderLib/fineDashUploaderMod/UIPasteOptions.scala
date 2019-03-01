@@ -21,3 +21,20 @@ trait UIPasteOptions
   var promptForName: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UIPasteOptions {
+  @scala.inline
+  def apply(
+    defaultName: java.lang.String = null,
+    namePromptMessage: java.lang.String = null,
+    promptForName: js.UndefOr[scala.Boolean] = js.undefined,
+    targetElement: stdLib.HTMLElement = null
+  ): UIPasteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaultName != null) __obj.updateDynamic("defaultName")(defaultName)
+    if (namePromptMessage != null) __obj.updateDynamic("namePromptMessage")(namePromptMessage)
+    if (!js.isUndefined(promptForName)) __obj.updateDynamic("promptForName")(promptForName)
+    if (targetElement != null) __obj.updateDynamic("targetElement")(targetElement)
+    __obj.asInstanceOf[UIPasteOptions]
+  }
+}
+

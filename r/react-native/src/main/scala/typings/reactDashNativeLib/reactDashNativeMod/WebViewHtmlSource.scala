@@ -16,3 +16,13 @@ trait WebViewHtmlSource extends js.Object {
   var html: java.lang.String
 }
 
+object WebViewHtmlSource {
+  @scala.inline
+  def apply(html: java.lang.String, baseUrl: java.lang.String = null): WebViewHtmlSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("html")(html)
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    __obj.asInstanceOf[WebViewHtmlSource]
+  }
+}
+

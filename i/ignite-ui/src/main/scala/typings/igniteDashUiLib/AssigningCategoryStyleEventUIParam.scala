@@ -58,3 +58,40 @@ trait AssigningCategoryStyleEventUIParam extends js.Object {
   var sumAllSeriesHighlightingProgress: js.UndefOr[js.Any] = js.undefined
 }
 
+object AssigningCategoryStyleEventUIParam {
+  @scala.inline
+  def apply(
+    chart: js.Any = null,
+    endDate: js.Any = null,
+    endIndex: js.Any = null,
+    fill: js.Any = null,
+    getItems: js.Any = null,
+    hasDateRange: js.Any = null,
+    highlightingHandled: js.Any = null,
+    maxAllSeriesHighlightingProgress: js.Any = null,
+    opacity: js.Any = null,
+    series: js.Any = null,
+    startDate: js.Any = null,
+    startIndex: js.Any = null,
+    stroke: js.Any = null,
+    sumAllSeriesHighlightingProgress: js.Any = null
+  ): AssigningCategoryStyleEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (chart != null) __obj.updateDynamic("chart")(chart)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (endIndex != null) __obj.updateDynamic("endIndex")(endIndex)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (getItems != null) __obj.updateDynamic("getItems")(getItems)
+    if (hasDateRange != null) __obj.updateDynamic("hasDateRange")(hasDateRange)
+    if (highlightingHandled != null) __obj.updateDynamic("highlightingHandled")(highlightingHandled)
+    if (maxAllSeriesHighlightingProgress != null) __obj.updateDynamic("maxAllSeriesHighlightingProgress")(maxAllSeriesHighlightingProgress)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (sumAllSeriesHighlightingProgress != null) __obj.updateDynamic("sumAllSeriesHighlightingProgress")(sumAllSeriesHighlightingProgress)
+    __obj.asInstanceOf[AssigningCategoryStyleEventUIParam]
+  }
+}
+

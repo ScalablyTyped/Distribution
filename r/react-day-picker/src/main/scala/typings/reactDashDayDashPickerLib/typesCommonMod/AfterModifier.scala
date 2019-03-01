@@ -9,3 +9,12 @@ trait AfterModifier extends js.Object {
   var after: stdLib.Date
 }
 
+object AfterModifier {
+  @scala.inline
+  def apply(after: stdLib.Date): AfterModifier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("after")(after)
+    __obj.asInstanceOf[AfterModifier]
+  }
+}
+

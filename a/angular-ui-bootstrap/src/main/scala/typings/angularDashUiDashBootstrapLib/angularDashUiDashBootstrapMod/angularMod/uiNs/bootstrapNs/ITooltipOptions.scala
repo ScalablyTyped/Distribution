@@ -50,3 +50,26 @@ trait ITooltipOptions extends js.Object {
   var useContentExp: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ITooltipOptions {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    appendToBody: js.UndefOr[scala.Boolean] = js.undefined,
+    placement: java.lang.String = null,
+    popupCloseDelay: scala.Int | scala.Double = null,
+    popupDelay: scala.Int | scala.Double = null,
+    trigger: java.lang.String = null,
+    useContentExp: js.UndefOr[scala.Boolean] = js.undefined
+  ): ITooltipOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(appendToBody)) __obj.updateDynamic("appendToBody")(appendToBody)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (popupCloseDelay != null) __obj.updateDynamic("popupCloseDelay")(popupCloseDelay.asInstanceOf[js.Any])
+    if (popupDelay != null) __obj.updateDynamic("popupDelay")(popupDelay.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (!js.isUndefined(useContentExp)) __obj.updateDynamic("useContentExp")(useContentExp)
+    __obj.asInstanceOf[ITooltipOptions]
+  }
+}
+

@@ -40,3 +40,32 @@ trait XClassifiedObject
   ): scala.Unit
 }
 
+object XClassifiedObject {
+  @scala.inline
+  def apply(
+    ClassID: activexDashInteropLib.SafeArray[scala.Double],
+    ClassName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getClassID: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    getClassName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setClassInfo: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      java.lang.String, 
+      scala.Unit
+    ]
+  ): XClassifiedObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ClassID")(ClassID)
+    __obj.updateDynamic("ClassName")(ClassName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getClassID")(getClassID)
+    __obj.updateDynamic("getClassName")(getClassName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setClassInfo")(setClassInfo)
+    __obj.asInstanceOf[XClassifiedObject]
+  }
+}
+

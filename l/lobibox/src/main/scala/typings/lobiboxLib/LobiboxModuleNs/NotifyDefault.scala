@@ -49,3 +49,52 @@ trait NotifyDefault extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NotifyDefault {
+  @scala.inline
+  def apply(
+    closable: js.UndefOr[scala.Boolean] = js.undefined,
+    closeOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    continueDelayOnInactiveTab: js.UndefOr[scala.Boolean] = js.undefined,
+    delay: scala.Int | scala.Double = null,
+    delayIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    hideClass: java.lang.String = null,
+    icon: js.UndefOr[scala.Boolean] = js.undefined,
+    img: java.lang.String = null,
+    msg: java.lang.String = null,
+    onClick: js.Function = null,
+    onClickUrl: java.lang.String = null,
+    position: java.lang.String = null,
+    showAfterPrevious: js.UndefOr[scala.Boolean] = js.undefined,
+    showClass: java.lang.String = null,
+    size: java.lang.String = null,
+    sound: js.UndefOr[scala.Boolean] = js.undefined,
+    soundExt: java.lang.String = null,
+    soundPath: java.lang.String = null,
+    title: java.lang.String | scala.Boolean = null,
+    width: scala.Int | scala.Double = null
+  ): NotifyDefault = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
+    if (!js.isUndefined(closeOnClick)) __obj.updateDynamic("closeOnClick")(closeOnClick)
+    if (!js.isUndefined(continueDelayOnInactiveTab)) __obj.updateDynamic("continueDelayOnInactiveTab")(continueDelayOnInactiveTab)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(delayIndicator)) __obj.updateDynamic("delayIndicator")(delayIndicator)
+    if (hideClass != null) __obj.updateDynamic("hideClass")(hideClass)
+    if (!js.isUndefined(icon)) __obj.updateDynamic("icon")(icon)
+    if (img != null) __obj.updateDynamic("img")(img)
+    if (msg != null) __obj.updateDynamic("msg")(msg)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onClickUrl != null) __obj.updateDynamic("onClickUrl")(onClickUrl)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(showAfterPrevious)) __obj.updateDynamic("showAfterPrevious")(showAfterPrevious)
+    if (showClass != null) __obj.updateDynamic("showClass")(showClass)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
+    if (soundExt != null) __obj.updateDynamic("soundExt")(soundExt)
+    if (soundPath != null) __obj.updateDynamic("soundPath")(soundPath)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NotifyDefault]
+  }
+}
+

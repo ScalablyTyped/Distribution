@@ -18,3 +18,18 @@ trait ListEventsResponse extends js.Object {
   var timeRangeBegin: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListEventsResponse {
+  @scala.inline
+  def apply(
+    errorEvents: js.Array[ErrorEvent] = null,
+    nextPageToken: java.lang.String = null,
+    timeRangeBegin: java.lang.String = null
+  ): ListEventsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (errorEvents != null) __obj.updateDynamic("errorEvents")(errorEvents)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (timeRangeBegin != null) __obj.updateDynamic("timeRangeBegin")(timeRangeBegin)
+    __obj.asInstanceOf[ListEventsResponse]
+  }
+}
+

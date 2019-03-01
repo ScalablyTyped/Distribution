@@ -29,3 +29,18 @@ trait IBehaviorAware[T] extends js.Object {
   def removeBehavior(behavior: Behavior[T]): T
 }
 
+object IBehaviorAware {
+  @scala.inline
+  def apply[T](
+    addBehavior: js.Function1[Behavior[T], T],
+    getBehaviorByName: js.Function1[java.lang.String, Nullable[Behavior[T]]],
+    removeBehavior: js.Function1[Behavior[T], T]
+  ): IBehaviorAware[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addBehavior")(addBehavior)
+    __obj.updateDynamic("getBehaviorByName")(getBehaviorByName)
+    __obj.updateDynamic("removeBehavior")(removeBehavior)
+    __obj.asInstanceOf[IBehaviorAware[T]]
+  }
+}
+

@@ -10,31 +10,39 @@ object bootstrapLibStrings {
   sealed trait activateDOTbsDOTscrollspy extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends bootstrapLib.bootstrapMod.Placement
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends bootstrapLib.bootstrapMod.Placement
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click
+    extends bootstrapLib.bootstrapMod.Trigger
   
   @js.native
-  sealed trait `click focus` extends js.Object
+  sealed trait `click focus`
+    extends bootstrapLib.bootstrapMod.Trigger
   
   @js.native
-  sealed trait `click hover` extends js.Object
+  sealed trait `click hover`
+    extends bootstrapLib.bootstrapMod.Trigger
   
   @js.native
-  sealed trait `click hover focus` extends js.Object
+  sealed trait `click hover focus`
+    extends bootstrapLib.bootstrapMod.Trigger
   
   @js.native
   sealed trait close extends js.Object
   
   @js.native
-  sealed trait closeDOTbsDOTalert extends js.Object
+  sealed trait closeDOTbsDOTalert
+    extends bootstrapLib.bootstrapMod.AlertEvent
   
   @js.native
-  sealed trait closedDOTbsDOTalert extends js.Object
+  sealed trait closedDOTbsDOTalert
+    extends bootstrapLib.bootstrapMod.AlertEvent
   
   @js.native
   sealed trait cycle extends js.Object
@@ -52,73 +60,94 @@ object bootstrapLibStrings {
   sealed trait enable extends js.Object
   
   @js.native
-  sealed trait focus extends js.Object
+  sealed trait focus
+    extends bootstrapLib.bootstrapMod.Trigger
   
   @js.native
   sealed trait handleUpdate extends js.Object
   
   @js.native
-  sealed trait hiddenDOTbsDOTcollapse extends js.Object
+  sealed trait hiddenDOTbsDOTcollapse
+    extends bootstrapLib.bootstrapMod.CollapseEvent
   
   @js.native
-  sealed trait hiddenDOTbsDOTdropdown extends js.Object
+  sealed trait hiddenDOTbsDOTdropdown
+    extends bootstrapLib.bootstrapMod.DropdownEvent
   
   @js.native
-  sealed trait hiddenDOTbsDOTmodal extends js.Object
+  sealed trait hiddenDOTbsDOTmodal
+    extends bootstrapLib.bootstrapMod.ModalEvent
   
   @js.native
-  sealed trait hiddenDOTbsDOTpopover extends js.Object
+  sealed trait hiddenDOTbsDOTpopover
+    extends bootstrapLib.bootstrapMod.PopoverEvent
   
   @js.native
-  sealed trait hiddenDOTbsDOTtab extends js.Object
+  sealed trait hiddenDOTbsDOTtab
+    extends bootstrapLib.bootstrapMod.TapEvent
   
   @js.native
-  sealed trait hiddenDOTbsDOTtoast extends js.Object
+  sealed trait hiddenDOTbsDOTtoast
+    extends bootstrapLib.bootstrapMod.ToastEvent
   
   @js.native
-  sealed trait hiddenDOTbsDOTtooltip extends js.Object
+  sealed trait hiddenDOTbsDOTtooltip
+    extends bootstrapLib.bootstrapMod.TooltipEvent
   
   @js.native
   sealed trait hide extends js.Object
   
   @js.native
-  sealed trait hideDOTbsDOTcollapse extends js.Object
+  sealed trait hideDOTbsDOTcollapse
+    extends bootstrapLib.bootstrapMod.CollapseEvent
   
   @js.native
-  sealed trait hideDOTbsDOTdropdown extends js.Object
+  sealed trait hideDOTbsDOTdropdown
+    extends bootstrapLib.bootstrapMod.DropdownEvent
   
   @js.native
-  sealed trait hideDOTbsDOTmodal extends js.Object
+  sealed trait hideDOTbsDOTmodal
+    extends bootstrapLib.bootstrapMod.ModalEvent
   
   @js.native
-  sealed trait hideDOTbsDOTpopover extends js.Object
+  sealed trait hideDOTbsDOTpopover
+    extends bootstrapLib.bootstrapMod.PopoverEvent
   
   @js.native
-  sealed trait hideDOTbsDOTtab extends js.Object
+  sealed trait hideDOTbsDOTtab
+    extends bootstrapLib.bootstrapMod.TapEvent
   
   @js.native
-  sealed trait hideDOTbsDOTtoast extends js.Object
+  sealed trait hideDOTbsDOTtoast
+    extends bootstrapLib.bootstrapMod.ToastEvent
   
   @js.native
-  sealed trait hideDOTbsDOTtooltip extends js.Object
+  sealed trait hideDOTbsDOTtooltip
+    extends bootstrapLib.bootstrapMod.TooltipEvent
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait hover
+    extends bootstrapLib.bootstrapMod.Trigger
   
   @js.native
-  sealed trait `hover focus` extends js.Object
+  sealed trait `hover focus`
+    extends bootstrapLib.bootstrapMod.Trigger
   
   @js.native
-  sealed trait insertedDOTbsDOTpopover extends js.Object
+  sealed trait insertedDOTbsDOTpopover
+    extends bootstrapLib.bootstrapMod.PopoverEvent
   
   @js.native
-  sealed trait insertedDOTbsDOTtooltip extends js.Object
+  sealed trait insertedDOTbsDOTtooltip
+    extends bootstrapLib.bootstrapMod.TooltipEvent
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends bootstrapLib.bootstrapMod.Placement
   
   @js.native
-  sealed trait manual extends js.Object
+  sealed trait manual
+    extends bootstrapLib.bootstrapMod.Trigger
   
   @js.native
   sealed trait next extends js.Object
@@ -142,58 +171,75 @@ object bootstrapLibStrings {
   sealed trait refresh extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends bootstrapLib.bootstrapMod.Placement
   
   @js.native
   sealed trait show extends js.Object
   
   @js.native
-  sealed trait showDOTbsDOTcollapse extends js.Object
+  sealed trait showDOTbsDOTcollapse
+    extends bootstrapLib.bootstrapMod.CollapseEvent
   
   @js.native
-  sealed trait showDOTbsDOTdropdown extends js.Object
+  sealed trait showDOTbsDOTdropdown
+    extends bootstrapLib.bootstrapMod.DropdownEvent
   
   @js.native
-  sealed trait showDOTbsDOTmodal extends js.Object
+  sealed trait showDOTbsDOTmodal
+    extends bootstrapLib.bootstrapMod.ModalEvent
   
   @js.native
-  sealed trait showDOTbsDOTpopover extends js.Object
+  sealed trait showDOTbsDOTpopover
+    extends bootstrapLib.bootstrapMod.PopoverEvent
   
   @js.native
-  sealed trait showDOTbsDOTtab extends js.Object
+  sealed trait showDOTbsDOTtab
+    extends bootstrapLib.bootstrapMod.TapEvent
   
   @js.native
-  sealed trait showDOTbsDOTtoast extends js.Object
+  sealed trait showDOTbsDOTtoast
+    extends bootstrapLib.bootstrapMod.ToastEvent
   
   @js.native
-  sealed trait showDOTbsDOTtooltip extends js.Object
+  sealed trait showDOTbsDOTtooltip
+    extends bootstrapLib.bootstrapMod.TooltipEvent
   
   @js.native
-  sealed trait shownDOTbsDOTcollapse extends js.Object
+  sealed trait shownDOTbsDOTcollapse
+    extends bootstrapLib.bootstrapMod.CollapseEvent
   
   @js.native
-  sealed trait shownDOTbsDOTdropdown extends js.Object
+  sealed trait shownDOTbsDOTdropdown
+    extends bootstrapLib.bootstrapMod.DropdownEvent
   
   @js.native
-  sealed trait shownDOTbsDOTmodal extends js.Object
+  sealed trait shownDOTbsDOTmodal
+    extends bootstrapLib.bootstrapMod.ModalEvent
   
   @js.native
-  sealed trait shownDOTbsDOTpopover extends js.Object
+  sealed trait shownDOTbsDOTpopover
+    extends bootstrapLib.bootstrapMod.PopoverEvent
   
   @js.native
-  sealed trait shownDOTbsDOTtab extends js.Object
+  sealed trait shownDOTbsDOTtab
+    extends bootstrapLib.bootstrapMod.TapEvent
   
   @js.native
-  sealed trait shownDOTbsDOTtoast extends js.Object
+  sealed trait shownDOTbsDOTtoast
+    extends bootstrapLib.bootstrapMod.ToastEvent
   
   @js.native
-  sealed trait shownDOTbsDOTtooltip extends js.Object
+  sealed trait shownDOTbsDOTtooltip
+    extends bootstrapLib.bootstrapMod.TooltipEvent
   
   @js.native
-  sealed trait slidDOTbsDOTcarousel extends js.Object
+  sealed trait slidDOTbsDOTcarousel
+    extends bootstrapLib.bootstrapMod.CarouselEvent
   
   @js.native
-  sealed trait slideDOTbsDOTcarousel extends js.Object
+  sealed trait slideDOTbsDOTcarousel
+    extends bootstrapLib.bootstrapMod.CarouselEvent
   
   @js.native
   sealed trait static extends js.Object
@@ -205,7 +251,8 @@ object bootstrapLibStrings {
   sealed trait toggleEnabled extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends bootstrapLib.bootstrapMod.Placement
   
   @js.native
   sealed trait update extends js.Object

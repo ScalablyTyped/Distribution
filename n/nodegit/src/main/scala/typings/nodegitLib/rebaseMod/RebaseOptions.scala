@@ -12,3 +12,20 @@ trait RebaseOptions extends js.Object {
   var version: scala.Double
 }
 
+object RebaseOptions {
+  @scala.inline
+  def apply(
+    checkoutOptions: nodegitLib.checkoutDashOptionsMod.CheckoutOptions,
+    quiet: scala.Double,
+    rewriteNotesRef: java.lang.String,
+    version: scala.Double
+  ): RebaseOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkoutOptions")(checkoutOptions)
+    __obj.updateDynamic("quiet")(quiet)
+    __obj.updateDynamic("rewriteNotesRef")(rewriteNotesRef)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[RebaseOptions]
+  }
+}
+

@@ -24,3 +24,20 @@ trait DeliveryViewPropertyCollection extends PlanPropertyCollection {
   var teamBacklogMappings: js.Array[TeamBacklogMapping]
 }
 
+object DeliveryViewPropertyCollection {
+  @scala.inline
+  def apply(
+    cardSettings: CardSettings,
+    criteria: js.Array[FilterClause],
+    markers: js.Array[Marker],
+    teamBacklogMappings: js.Array[TeamBacklogMapping]
+  ): DeliveryViewPropertyCollection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cardSettings")(cardSettings)
+    __obj.updateDynamic("criteria")(criteria)
+    __obj.updateDynamic("markers")(markers)
+    __obj.updateDynamic("teamBacklogMappings")(teamBacklogMappings)
+    __obj.asInstanceOf[DeliveryViewPropertyCollection]
+  }
+}
+

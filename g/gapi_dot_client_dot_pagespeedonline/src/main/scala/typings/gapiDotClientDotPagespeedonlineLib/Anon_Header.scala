@@ -14,3 +14,16 @@ trait Anon_Header extends js.Object {
   var urls: js.UndefOr[js.Array[Anon_Details]] = js.undefined
 }
 
+object Anon_Header {
+  @scala.inline
+  def apply(
+    header: gapiDotClientDotPagespeedonlineLib.gapiNs.clientNs.pagespeedonlineNs.PagespeedApiFormatStringV2 = null,
+    urls: js.Array[Anon_Details] = null
+  ): Anon_Header = {
+    val __obj = js.Dynamic.literal()
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[Anon_Header]
+  }
+}
+

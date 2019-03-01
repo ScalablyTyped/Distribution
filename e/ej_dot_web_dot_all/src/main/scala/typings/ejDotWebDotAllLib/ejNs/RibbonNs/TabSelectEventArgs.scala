@@ -29,3 +29,26 @@ trait TabSelectEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabSelectEventArgs {
+  @scala.inline
+  def apply(
+    activeHeader: js.Any = null,
+    activeIndex: scala.Int | scala.Double = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    prevActiveHeader: js.Any = null,
+    prevActiveIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): TabSelectEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (activeHeader != null) __obj.updateDynamic("activeHeader")(activeHeader)
+    if (activeIndex != null) __obj.updateDynamic("activeIndex")(activeIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (prevActiveHeader != null) __obj.updateDynamic("prevActiveHeader")(prevActiveHeader)
+    if (prevActiveIndex != null) __obj.updateDynamic("prevActiveIndex")(prevActiveIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[TabSelectEventArgs]
+  }
+}
+

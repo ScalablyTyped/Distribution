@@ -10,3 +10,16 @@ trait ParserCore extends js.Object {
   def process(state: js.Any): scala.Unit
 }
 
+object ParserCore {
+  @scala.inline
+  def apply(
+    process: js.Function1[js.Any, scala.Unit],
+    ruler: markdownDashItLib.libRulerMod.namespaced[markdownDashItLib.libRulesUnderscoreCoreStateUnderscoreCoreMod.namespaced]
+  ): ParserCore = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("process")(process)
+    __obj.updateDynamic("ruler")(ruler)
+    __obj.asInstanceOf[ParserCore]
+  }
+}
+

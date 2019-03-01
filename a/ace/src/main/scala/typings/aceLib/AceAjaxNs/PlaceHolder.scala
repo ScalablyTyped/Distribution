@@ -44,3 +44,28 @@ trait PlaceHolder extends js.Object {
   def showOtherMarkers(): scala.Unit
 }
 
+object PlaceHolder {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[scala.Unit],
+    detach: js.Function0[scala.Unit],
+    hideOtherMarkers: js.Function0[scala.Unit],
+    on: js.Function2[java.lang.String, js.Function1[/* e */ js.Any, _], scala.Unit],
+    onCursorChange: js.Function0[scala.Unit],
+    onUpdate: js.Function0[scala.Unit],
+    setup: js.Function0[scala.Unit],
+    showOtherMarkers: js.Function0[scala.Unit]
+  ): PlaceHolder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("detach")(detach)
+    __obj.updateDynamic("hideOtherMarkers")(hideOtherMarkers)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("onCursorChange")(onCursorChange)
+    __obj.updateDynamic("onUpdate")(onUpdate)
+    __obj.updateDynamic("setup")(setup)
+    __obj.updateDynamic("showOtherMarkers")(showOtherMarkers)
+    __obj.asInstanceOf[PlaceHolder]
+  }
+}
+

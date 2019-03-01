@@ -23,3 +23,18 @@ trait MenuPopupShowParams extends js.Object {
   var view: titaniumLib.TitaniumNs.UINs.View
 }
 
+object MenuPopupShowParams {
+  @scala.inline
+  def apply(
+    view: titaniumLib.TitaniumNs.UINs.View,
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    arrowDirection: scala.Int | scala.Double = null
+  ): MenuPopupShowParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("view")(view)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (arrowDirection != null) __obj.updateDynamic("arrowDirection")(arrowDirection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MenuPopupShowParams]
+  }
+}
+

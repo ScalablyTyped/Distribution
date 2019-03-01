@@ -18,3 +18,22 @@ trait TestIssue extends js.Object {
   var warning: js.UndefOr[Any] = js.undefined
 }
 
+object TestIssue {
+  @scala.inline
+  def apply(
+    errorMessage: java.lang.String = null,
+    severity: java.lang.String = null,
+    stackTrace: StackTrace = null,
+    `type`: java.lang.String = null,
+    warning: Any = null
+  ): TestIssue = {
+    val __obj = js.Dynamic.literal()
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (stackTrace != null) __obj.updateDynamic("stackTrace")(stackTrace)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[TestIssue]
+  }
+}
+

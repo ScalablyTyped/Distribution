@@ -21,3 +21,38 @@ trait PolygonOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PolygonOptions {
+  @scala.inline
+  def apply(
+    paths: js.Array[ArrayOfCoords] | js.Array[KVOArrayOfCoords] | js.Array[ArrayOfCoordsLiteral],
+    clickable: js.UndefOr[scala.Boolean] = js.undefined,
+    fillColor: java.lang.String = null,
+    fillOpacity: scala.Int | scala.Double = null,
+    map: Map = null,
+    strokeColor: java.lang.String = null,
+    strokeLineCap: strokeLineCapType = null,
+    strokeLineJoin: strokeLineJoinType = null,
+    strokeOpacity: scala.Int | scala.Double = null,
+    strokeStyle: strokeStyleType = null,
+    strokeWeight: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): PolygonOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("paths")(paths.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (fillOpacity != null) __obj.updateDynamic("fillOpacity")(fillOpacity.asInstanceOf[js.Any])
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeLineCap != null) __obj.updateDynamic("strokeLineCap")(strokeLineCap)
+    if (strokeLineJoin != null) __obj.updateDynamic("strokeLineJoin")(strokeLineJoin)
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeStyle != null) __obj.updateDynamic("strokeStyle")(strokeStyle)
+    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolygonOptions]
+  }
+}
+

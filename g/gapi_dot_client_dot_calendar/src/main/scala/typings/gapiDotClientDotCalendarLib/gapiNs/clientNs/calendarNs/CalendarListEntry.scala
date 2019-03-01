@@ -61,3 +61,48 @@ trait CalendarListEntry extends js.Object {
   var timeZone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CalendarListEntry {
+  @scala.inline
+  def apply(
+    accessRole: java.lang.String = null,
+    backgroundColor: java.lang.String = null,
+    colorId: java.lang.String = null,
+    defaultReminders: js.Array[EventReminder] = null,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    description: java.lang.String = null,
+    etag: java.lang.String = null,
+    foregroundColor: java.lang.String = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    location: java.lang.String = null,
+    notificationSettings: gapiDotClientDotCalendarLib.Anon_Notifications = null,
+    primary: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    summary: java.lang.String = null,
+    summaryOverride: java.lang.String = null,
+    timeZone: java.lang.String = null
+  ): CalendarListEntry = {
+    val __obj = js.Dynamic.literal()
+    if (accessRole != null) __obj.updateDynamic("accessRole")(accessRole)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (colorId != null) __obj.updateDynamic("colorId")(colorId)
+    if (defaultReminders != null) __obj.updateDynamic("defaultReminders")(defaultReminders)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (foregroundColor != null) __obj.updateDynamic("foregroundColor")(foregroundColor)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (notificationSettings != null) __obj.updateDynamic("notificationSettings")(notificationSettings)
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (summaryOverride != null) __obj.updateDynamic("summaryOverride")(summaryOverride)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    __obj.asInstanceOf[CalendarListEntry]
+  }
+}
+

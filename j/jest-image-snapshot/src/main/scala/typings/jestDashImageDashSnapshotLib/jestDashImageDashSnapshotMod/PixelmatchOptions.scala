@@ -12,3 +12,13 @@ trait PixelmatchOptions extends js.Object {
   val threshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PixelmatchOptions {
+  @scala.inline
+  def apply(includeAA: js.UndefOr[scala.Boolean] = js.undefined, threshold: scala.Int | scala.Double = null): PixelmatchOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeAA)) __obj.updateDynamic("includeAA")(includeAA)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PixelmatchOptions]
+  }
+}
+

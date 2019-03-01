@@ -9,3 +9,12 @@ trait InjectedIntlProps extends js.Object {
   var intl: InjectedIntl
 }
 
+object InjectedIntlProps {
+  @scala.inline
+  def apply(intl: InjectedIntl): InjectedIntlProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("intl")(intl)
+    __obj.asInstanceOf[InjectedIntlProps]
+  }
+}
+

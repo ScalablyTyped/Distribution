@@ -9,3 +9,12 @@ trait ChartSeriesItemTargetLine extends js.Object {
   var width: js.UndefOr[scala.Double | js.Function] = js.undefined
 }
 
+object ChartSeriesItemTargetLine {
+  @scala.inline
+  def apply(width: scala.Double | js.Function = null): ChartSeriesItemTargetLine = {
+    val __obj = js.Dynamic.literal()
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartSeriesItemTargetLine]
+  }
+}
+

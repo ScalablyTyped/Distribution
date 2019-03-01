@@ -12,3 +12,20 @@ trait SourceRepositoryInfo extends js.Object {
   var user: java.lang.String
 }
 
+object SourceRepositoryInfo {
+  @scala.inline
+  def apply(
+    project: java.lang.String,
+    user: java.lang.String,
+    domain: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): SourceRepositoryInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("user")(user)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SourceRepositoryInfo]
+  }
+}
+

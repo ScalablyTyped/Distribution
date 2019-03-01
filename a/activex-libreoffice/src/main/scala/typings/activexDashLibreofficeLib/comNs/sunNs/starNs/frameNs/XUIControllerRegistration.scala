@@ -41,3 +41,24 @@ trait XUIControllerRegistration
   ): scala.Unit
 }
 
+object XUIControllerRegistration {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    deregisterController: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    hasController: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    registerController: js.Function3[java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XUIControllerRegistration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("deregisterController")(deregisterController)
+    __obj.updateDynamic("hasController")(hasController)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("registerController")(registerController)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XUIControllerRegistration]
+  }
+}
+

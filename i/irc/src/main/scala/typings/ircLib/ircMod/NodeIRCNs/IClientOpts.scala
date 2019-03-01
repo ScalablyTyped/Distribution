@@ -110,3 +110,52 @@ trait IClientOpts extends js.Object {
   var userName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IClientOpts {
+  @scala.inline
+  def apply(
+    autoConnect: js.UndefOr[scala.Boolean] = js.undefined,
+    autoRejoin: js.UndefOr[scala.Boolean] = js.undefined,
+    certExpired: js.UndefOr[scala.Boolean] = js.undefined,
+    channelPrefixes: java.lang.String = null,
+    channels: js.Array[java.lang.String] = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    encoding: java.lang.String = null,
+    floodProtection: js.UndefOr[scala.Boolean] = js.undefined,
+    floodProtectionDelay: scala.Int | scala.Double = null,
+    localAddress: java.lang.String = null,
+    messageSplit: scala.Int | scala.Double = null,
+    password: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    realName: java.lang.String = null,
+    sasl: js.UndefOr[scala.Boolean] = js.undefined,
+    secure: scala.Boolean | nodeLib.tlsMod.SecureContext = null,
+    selfSigned: js.UndefOr[scala.Boolean] = js.undefined,
+    showErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    stripColors: js.UndefOr[scala.Boolean] = js.undefined,
+    userName: java.lang.String = null
+  ): IClientOpts = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect)
+    if (!js.isUndefined(autoRejoin)) __obj.updateDynamic("autoRejoin")(autoRejoin)
+    if (!js.isUndefined(certExpired)) __obj.updateDynamic("certExpired")(certExpired)
+    if (channelPrefixes != null) __obj.updateDynamic("channelPrefixes")(channelPrefixes)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(floodProtection)) __obj.updateDynamic("floodProtection")(floodProtection)
+    if (floodProtectionDelay != null) __obj.updateDynamic("floodProtectionDelay")(floodProtectionDelay.asInstanceOf[js.Any])
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (messageSplit != null) __obj.updateDynamic("messageSplit")(messageSplit.asInstanceOf[js.Any])
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (realName != null) __obj.updateDynamic("realName")(realName)
+    if (!js.isUndefined(sasl)) __obj.updateDynamic("sasl")(sasl)
+    if (secure != null) __obj.updateDynamic("secure")(secure.asInstanceOf[js.Any])
+    if (!js.isUndefined(selfSigned)) __obj.updateDynamic("selfSigned")(selfSigned)
+    if (!js.isUndefined(showErrors)) __obj.updateDynamic("showErrors")(showErrors)
+    if (!js.isUndefined(stripColors)) __obj.updateDynamic("stripColors")(stripColors)
+    if (userName != null) __obj.updateDynamic("userName")(userName)
+    __obj.asInstanceOf[IClientOpts]
+  }
+}
+

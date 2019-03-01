@@ -12,3 +12,13 @@ trait ProxyLocation extends js.Object {
   var Port: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object ProxyLocation {
+  @scala.inline
+  def apply(Host: java.lang.String = null, Port: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined): ProxyLocation = {
+    val __obj = js.Dynamic.literal()
+    if (Host != null) __obj.updateDynamic("Host")(Host)
+    if (!js.isUndefined(Port)) __obj.updateDynamic("Port")(Port)
+    __obj.asInstanceOf[ProxyLocation]
+  }
+}
+

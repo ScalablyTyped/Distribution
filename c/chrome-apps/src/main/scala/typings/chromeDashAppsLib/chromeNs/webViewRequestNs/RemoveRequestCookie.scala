@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.webViewRequest.RemoveRequestCookie")
 @js.native
-class RemoveRequestCookie protected () extends js.Object {
+class RemoveRequestCookie protected () extends OnRequestActions {
   def this(parameters: RemoveCookieParams[RequestCookie]) = this()
   val instanceType: java.lang.String = js.native
   val typeGuard: chromeDashAppsLib.chromeDashAppsLibStrings.RemoveRequestCookie = js.native

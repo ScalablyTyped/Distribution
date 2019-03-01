@@ -10,3 +10,12 @@ trait HistoryTraversalOptions extends js.Object {
   var selectionsMarkerLayer: js.UndefOr[MarkerLayer] = js.undefined
 }
 
+object HistoryTraversalOptions {
+  @scala.inline
+  def apply(selectionsMarkerLayer: MarkerLayer = null): HistoryTraversalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (selectionsMarkerLayer != null) __obj.updateDynamic("selectionsMarkerLayer")(selectionsMarkerLayer)
+    __obj.asInstanceOf[HistoryTraversalOptions]
+  }
+}
+

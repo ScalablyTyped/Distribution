@@ -29,3 +29,51 @@ trait StripeCard extends js.Object {
   def validateExpiry(month: java.lang.String, year: java.lang.String): scala.Boolean
 }
 
+object StripeCard {
+  @scala.inline
+  def apply(
+    createToken: js.Function2[
+      StripeCardTokenData, 
+      js.Function2[/* status */ scala.Double, /* response */ StripeCardTokenResponse, scala.Unit], 
+      scala.Unit
+    ],
+    exp_month: scala.Double,
+    exp_year: scala.Double,
+    last4: java.lang.String,
+    `object`: java.lang.String,
+    validateCVC: js.Function1[java.lang.String, scala.Boolean],
+    validateCardNumber: js.Function1[java.lang.String, scala.Boolean],
+    validateExpiry: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    address_city: java.lang.String = null,
+    address_country: java.lang.String = null,
+    address_line1: java.lang.String = null,
+    address_line2: java.lang.String = null,
+    address_state: java.lang.String = null,
+    address_zip: java.lang.String = null,
+    brand: StripeCardDataBrand = null,
+    country: java.lang.String = null,
+    funding: StripeCardDataFunding = null,
+    name: java.lang.String = null
+  ): StripeCard = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("createToken")(createToken)
+    __obj.updateDynamic("exp_month")(exp_month)
+    __obj.updateDynamic("exp_year")(exp_year)
+    __obj.updateDynamic("last4")(last4)
+    __obj.updateDynamic("validateCVC")(validateCVC)
+    __obj.updateDynamic("validateCardNumber")(validateCardNumber)
+    __obj.updateDynamic("validateExpiry")(validateExpiry)
+    if (address_city != null) __obj.updateDynamic("address_city")(address_city)
+    if (address_country != null) __obj.updateDynamic("address_country")(address_country)
+    if (address_line1 != null) __obj.updateDynamic("address_line1")(address_line1)
+    if (address_line2 != null) __obj.updateDynamic("address_line2")(address_line2)
+    if (address_state != null) __obj.updateDynamic("address_state")(address_state)
+    if (address_zip != null) __obj.updateDynamic("address_zip")(address_zip)
+    if (brand != null) __obj.updateDynamic("brand")(brand)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (funding != null) __obj.updateDynamic("funding")(funding)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[StripeCard]
+  }
+}
+

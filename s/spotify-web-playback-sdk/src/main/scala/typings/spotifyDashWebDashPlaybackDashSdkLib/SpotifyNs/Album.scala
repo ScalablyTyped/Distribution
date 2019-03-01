@@ -11,3 +11,14 @@ trait Album extends js.Object {
   var uri: java.lang.String
 }
 
+object Album {
+  @scala.inline
+  def apply(images: js.Array[Image], name: java.lang.String, uri: java.lang.String): Album = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("images")(images)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[Album]
+  }
+}
+

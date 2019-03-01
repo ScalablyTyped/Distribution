@@ -18,3 +18,22 @@ trait IOptions extends js.Object {
   var validateFormatsStrict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IOptions {
+  @scala.inline
+  def apply(
+    additionalProperties: js.UndefOr[scala.Boolean] = js.undefined,
+    cast: js.UndefOr[scala.Boolean] = js.undefined,
+    validateFormatExtensions: js.UndefOr[scala.Boolean] = js.undefined,
+    validateFormats: js.UndefOr[scala.Boolean] = js.undefined,
+    validateFormatsStrict: js.UndefOr[scala.Boolean] = js.undefined
+  ): IOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(additionalProperties)) __obj.updateDynamic("additionalProperties")(additionalProperties)
+    if (!js.isUndefined(cast)) __obj.updateDynamic("cast")(cast)
+    if (!js.isUndefined(validateFormatExtensions)) __obj.updateDynamic("validateFormatExtensions")(validateFormatExtensions)
+    if (!js.isUndefined(validateFormats)) __obj.updateDynamic("validateFormats")(validateFormats)
+    if (!js.isUndefined(validateFormatsStrict)) __obj.updateDynamic("validateFormatsStrict")(validateFormatsStrict)
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

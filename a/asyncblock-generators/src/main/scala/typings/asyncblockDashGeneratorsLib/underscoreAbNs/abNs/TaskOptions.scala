@@ -15,3 +15,26 @@ trait TaskOptions extends js.Object {
   var timeoutIsError: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TaskOptions {
+  @scala.inline
+  def apply(
+    dontWait: js.UndefOr[scala.Boolean] = js.undefined,
+    firstArgIsError: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreError: js.UndefOr[scala.Boolean] = js.undefined,
+    key: js.Any = null,
+    responseFormat: js.Array[java.lang.String] = null,
+    timeout: scala.Int | scala.Double = null,
+    timeoutIsError: js.UndefOr[scala.Boolean] = js.undefined
+  ): TaskOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(dontWait)) __obj.updateDynamic("dontWait")(dontWait)
+    if (!js.isUndefined(firstArgIsError)) __obj.updateDynamic("firstArgIsError")(firstArgIsError)
+    if (!js.isUndefined(ignoreError)) __obj.updateDynamic("ignoreError")(ignoreError)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (responseFormat != null) __obj.updateDynamic("responseFormat")(responseFormat)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(timeoutIsError)) __obj.updateDynamic("timeoutIsError")(timeoutIsError)
+    __obj.asInstanceOf[TaskOptions]
+  }
+}
+

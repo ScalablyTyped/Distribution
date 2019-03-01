@@ -24,3 +24,22 @@ trait NewUserInfoParam extends js.Object {
   var success: js.UndefOr[js.Function1[/* res */ wegameDashApiLib.Anon_DataArray, scala.Unit]] = js.undefined
 }
 
+object NewUserInfoParam {
+  @scala.inline
+  def apply(
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    lang: wegameDashApiLib.wegameDashApiLibStrings.en | wegameDashApiLib.wegameDashApiLibStrings.zh_CN | wegameDashApiLib.wegameDashApiLibStrings.zh_TW = null,
+    openIdList: js.Array[java.lang.String] = null,
+    success: js.Function1[/* res */ wegameDashApiLib.Anon_DataArray, scala.Unit] = null
+  ): NewUserInfoParam = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (openIdList != null) __obj.updateDynamic("openIdList")(openIdList)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[NewUserInfoParam]
+  }
+}
+

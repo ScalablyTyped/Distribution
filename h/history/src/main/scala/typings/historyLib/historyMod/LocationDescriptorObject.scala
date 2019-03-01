@@ -13,3 +13,22 @@ trait LocationDescriptorObject[S] extends js.Object {
   var state: js.UndefOr[S] = js.undefined
 }
 
+object LocationDescriptorObject {
+  @scala.inline
+  def apply[S](
+    hash: Hash = null,
+    key: LocationKey = null,
+    pathname: Pathname = null,
+    search: Search = null,
+    state: S = null
+  ): LocationDescriptorObject[S] = {
+    val __obj = js.Dynamic.literal()
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (pathname != null) __obj.updateDynamic("pathname")(pathname)
+    if (search != null) __obj.updateDynamic("search")(search)
+    if (state != null) __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocationDescriptorObject[S]]
+  }
+}
+

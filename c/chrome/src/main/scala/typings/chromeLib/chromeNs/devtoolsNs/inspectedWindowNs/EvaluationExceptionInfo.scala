@@ -20,3 +20,24 @@ trait EvaluationExceptionInfo extends js.Object {
   var value: java.lang.String
 }
 
+object EvaluationExceptionInfo {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    description: java.lang.String,
+    details: js.Array[_],
+    isError: scala.Boolean,
+    isException: scala.Boolean,
+    value: java.lang.String
+  ): EvaluationExceptionInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("isError")(isError)
+    __obj.updateDynamic("isException")(isException)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[EvaluationExceptionInfo]
+  }
+}
+

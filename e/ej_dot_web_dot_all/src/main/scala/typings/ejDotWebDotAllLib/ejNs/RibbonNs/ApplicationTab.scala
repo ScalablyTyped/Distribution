@@ -25,3 +25,20 @@ trait ApplicationTab extends js.Object {
   var `type`: js.UndefOr[ApplicationTabType | java.lang.String] = js.undefined
 }
 
+object ApplicationTab {
+  @scala.inline
+  def apply(
+    backstageSettings: ApplicationTabBackstageSettings = null,
+    menuItemID: java.lang.String = null,
+    menuSettings: js.Any = null,
+    `type`: ApplicationTabType | java.lang.String = null
+  ): ApplicationTab = {
+    val __obj = js.Dynamic.literal()
+    if (backstageSettings != null) __obj.updateDynamic("backstageSettings")(backstageSettings)
+    if (menuItemID != null) __obj.updateDynamic("menuItemID")(menuItemID)
+    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApplicationTab]
+  }
+}
+

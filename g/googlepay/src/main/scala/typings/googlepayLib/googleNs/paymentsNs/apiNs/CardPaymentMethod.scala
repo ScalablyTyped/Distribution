@@ -11,3 +11,17 @@ trait CardPaymentMethod extends BasePaymentMethod {
   var type_CardPaymentMethod: googlepayLib.googlepayLibStrings.CARD
 }
 
+object CardPaymentMethod {
+  @scala.inline
+  def apply(
+    parameters: CardParameters,
+    `type`: googlepayLib.googlepayLibStrings.CARD,
+    tokenizationSpecification: PaymentMethodTokenizationSpecification = null
+  ): CardPaymentMethod = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("parameters")(parameters)
+    if (tokenizationSpecification != null) __obj.updateDynamic("tokenizationSpecification")(tokenizationSpecification)
+    __obj.asInstanceOf[CardPaymentMethod]
+  }
+}
+

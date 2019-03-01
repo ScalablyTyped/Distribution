@@ -32,3 +32,26 @@ trait UpdateInfo extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object UpdateInfo {
+  @scala.inline
+  def apply(
+    drawAttention: js.UndefOr[scala.Boolean] = js.undefined,
+    focused: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    left: scala.Int | scala.Double = null,
+    state: java.lang.String = null,
+    top: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): UpdateInfo = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(drawAttention)) __obj.updateDynamic("drawAttention")(drawAttention)
+    if (!js.isUndefined(focused)) __obj.updateDynamic("focused")(focused)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UpdateInfo]
+  }
+}
+

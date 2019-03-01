@@ -24,3 +24,21 @@ trait ChoosePhoneContactOptions
   def success_MChoosePhoneContactOptions(result: aliDashAppLib.Anon_Mobile): scala.Unit
 }
 
+object ChoosePhoneContactOptions {
+  @scala.inline
+  def apply(
+    success: js.Function1[aliDashAppLib.Anon_Mobile, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[
+      /* error */ aliDashAppLib.aliDashAppLibNumbers.`10` | aliDashAppLib.aliDashAppLibNumbers.`11`, 
+      scala.Unit
+    ] = null
+  ): ChoosePhoneContactOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[ChoosePhoneContactOptions]
+  }
+}
+

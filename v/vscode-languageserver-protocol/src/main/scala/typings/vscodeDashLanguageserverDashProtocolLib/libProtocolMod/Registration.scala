@@ -21,3 +21,14 @@ trait Registration extends js.Object {
   var registerOptions: js.UndefOr[js.Any] = js.undefined
 }
 
+object Registration {
+  @scala.inline
+  def apply(id: java.lang.String, method: java.lang.String, registerOptions: js.Any = null): Registration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("method")(method)
+    if (registerOptions != null) __obj.updateDynamic("registerOptions")(registerOptions)
+    __obj.asInstanceOf[Registration]
+  }
+}
+

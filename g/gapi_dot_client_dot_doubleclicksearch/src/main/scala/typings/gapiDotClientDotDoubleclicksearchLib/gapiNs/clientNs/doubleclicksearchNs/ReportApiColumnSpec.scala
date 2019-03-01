@@ -52,3 +52,32 @@ trait ReportApiColumnSpec extends js.Object {
   var startDate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReportApiColumnSpec {
+  @scala.inline
+  def apply(
+    columnName: java.lang.String = null,
+    customDimensionName: java.lang.String = null,
+    customMetricName: java.lang.String = null,
+    endDate: java.lang.String = null,
+    groupByColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    headerText: java.lang.String = null,
+    platformSource: java.lang.String = null,
+    productReportPerspective: java.lang.String = null,
+    savedColumnName: java.lang.String = null,
+    startDate: java.lang.String = null
+  ): ReportApiColumnSpec = {
+    val __obj = js.Dynamic.literal()
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (customDimensionName != null) __obj.updateDynamic("customDimensionName")(customDimensionName)
+    if (customMetricName != null) __obj.updateDynamic("customMetricName")(customMetricName)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (!js.isUndefined(groupByColumn)) __obj.updateDynamic("groupByColumn")(groupByColumn)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (platformSource != null) __obj.updateDynamic("platformSource")(platformSource)
+    if (productReportPerspective != null) __obj.updateDynamic("productReportPerspective")(productReportPerspective)
+    if (savedColumnName != null) __obj.updateDynamic("savedColumnName")(savedColumnName)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    __obj.asInstanceOf[ReportApiColumnSpec]
+  }
+}
+

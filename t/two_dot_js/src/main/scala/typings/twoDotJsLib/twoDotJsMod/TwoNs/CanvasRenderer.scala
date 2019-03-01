@@ -5,5 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CanvasRenderer extends js.Object
+trait CanvasRenderer extends Renderer
 

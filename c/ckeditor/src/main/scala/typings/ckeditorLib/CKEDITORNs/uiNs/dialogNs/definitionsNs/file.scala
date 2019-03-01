@@ -9,3 +9,12 @@ trait file extends js.Object {
   var validate: js.UndefOr[js.Function0[scala.Boolean]] = js.undefined
 }
 
+object file {
+  @scala.inline
+  def apply(validate: js.Function0[scala.Boolean] = null): file = {
+    val __obj = js.Dynamic.literal()
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[file]
+  }
+}
+

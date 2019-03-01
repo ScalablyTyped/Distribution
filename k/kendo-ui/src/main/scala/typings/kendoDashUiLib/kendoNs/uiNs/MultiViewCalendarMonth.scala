@@ -11,3 +11,18 @@ trait MultiViewCalendarMonth extends js.Object {
   var weekNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MultiViewCalendarMonth {
+  @scala.inline
+  def apply(
+    content: java.lang.String = null,
+    empty: java.lang.String = null,
+    weekNumber: java.lang.String = null
+  ): MultiViewCalendarMonth = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (empty != null) __obj.updateDynamic("empty")(empty)
+    if (weekNumber != null) __obj.updateDynamic("weekNumber")(weekNumber)
+    __obj.asInstanceOf[MultiViewCalendarMonth]
+  }
+}
+

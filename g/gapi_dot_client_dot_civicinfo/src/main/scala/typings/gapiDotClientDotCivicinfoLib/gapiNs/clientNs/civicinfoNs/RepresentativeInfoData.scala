@@ -14,3 +14,18 @@ trait RepresentativeInfoData extends js.Object {
   var officials: js.UndefOr[js.Array[Official]] = js.undefined
 }
 
+object RepresentativeInfoData {
+  @scala.inline
+  def apply(
+    divisions: stdLib.Record[java.lang.String, GeographicDivision] = null,
+    offices: js.Array[Office] = null,
+    officials: js.Array[Official] = null
+  ): RepresentativeInfoData = {
+    val __obj = js.Dynamic.literal()
+    if (divisions != null) __obj.updateDynamic("divisions")(divisions)
+    if (offices != null) __obj.updateDynamic("offices")(offices)
+    if (officials != null) __obj.updateDynamic("officials")(officials)
+    __obj.asInstanceOf[RepresentativeInfoData]
+  }
+}
+

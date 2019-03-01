@@ -20,3 +20,14 @@ trait ClickTag extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClickTag {
+  @scala.inline
+  def apply(eventName: java.lang.String = null, name: java.lang.String = null, value: java.lang.String = null): ClickTag = {
+    val __obj = js.Dynamic.literal()
+    if (eventName != null) __obj.updateDynamic("eventName")(eventName)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ClickTag]
+  }
+}
+

@@ -11,3 +11,14 @@ trait SignatureParseError
   var name: java.lang.String
 }
 
+object SignatureParseError {
+  @scala.inline
+  def apply(message: java.lang.String, name: java.lang.String, stack: java.lang.String = null): SignatureParseError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[SignatureParseError]
+  }
+}
+

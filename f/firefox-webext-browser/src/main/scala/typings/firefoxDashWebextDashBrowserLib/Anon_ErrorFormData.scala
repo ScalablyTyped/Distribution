@@ -23,3 +23,18 @@ trait Anon_ErrorFormData extends js.Object {
   var raw: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.UploadData]] = js.undefined
 }
 
+object Anon_ErrorFormData {
+  @scala.inline
+  def apply(
+    error: java.lang.String = null,
+    formData: js.Object = null,
+    raw: js.Array[firefoxDashWebextDashBrowserLib.browserNs.webRequestNs.UploadData] = null
+  ): Anon_ErrorFormData = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (formData != null) __obj.updateDynamic("formData")(formData)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[Anon_ErrorFormData]
+  }
+}
+

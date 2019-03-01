@@ -12,3 +12,20 @@ trait Config extends js.Object {
   var registry: js.UndefOr[restLib.mimeRegistryMod.registryNs.Registry] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    accept: java.lang.String = null,
+    mime: java.lang.String = null,
+    permissive: js.UndefOr[scala.Boolean] = js.undefined,
+    registry: restLib.mimeRegistryMod.registryNs.Registry = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (accept != null) __obj.updateDynamic("accept")(accept)
+    if (mime != null) __obj.updateDynamic("mime")(mime)
+    if (!js.isUndefined(permissive)) __obj.updateDynamic("permissive")(permissive)
+    if (registry != null) __obj.updateDynamic("registry")(registry)
+    __obj.asInstanceOf[Config]
+  }
+}
+

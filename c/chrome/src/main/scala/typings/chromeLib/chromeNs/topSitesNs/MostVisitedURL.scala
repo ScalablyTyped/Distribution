@@ -12,3 +12,13 @@ trait MostVisitedURL extends js.Object {
   var url: java.lang.String
 }
 
+object MostVisitedURL {
+  @scala.inline
+  def apply(title: java.lang.String, url: java.lang.String): MostVisitedURL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[MostVisitedURL]
+  }
+}
+

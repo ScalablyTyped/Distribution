@@ -94,3 +94,44 @@ trait ITimeLineConfiguration extends js.Object {
   var width: java.lang.String
 }
 
+object ITimeLineConfiguration {
+  @scala.inline
+  def apply(
+    height: java.lang.String,
+    source: js.Any,
+    width: java.lang.String,
+    css: java.lang.String = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    embed_id: java.lang.String = null,
+    font: java.lang.String = null,
+    gmap_key: java.lang.String = null,
+    hash_bookmark: js.UndefOr[scala.Boolean] = js.undefined,
+    `js_`: java.lang.String = null,
+    lang: java.lang.String = null,
+    maptype: java.lang.String = null,
+    start_at_end: js.UndefOr[scala.Boolean] = js.undefined,
+    start_at_slide: java.lang.String = null,
+    start_zoom_adjust: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ITimeLineConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("width")(width)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (embed_id != null) __obj.updateDynamic("embed_id")(embed_id)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (gmap_key != null) __obj.updateDynamic("gmap_key")(gmap_key)
+    if (!js.isUndefined(hash_bookmark)) __obj.updateDynamic("hash_bookmark")(hash_bookmark)
+    if (`js_` != null) __obj.updateDynamic("js")(`js_`)
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (maptype != null) __obj.updateDynamic("maptype")(maptype)
+    if (!js.isUndefined(start_at_end)) __obj.updateDynamic("start_at_end")(start_at_end)
+    if (start_at_slide != null) __obj.updateDynamic("start_at_slide")(start_at_slide)
+    if (start_zoom_adjust != null) __obj.updateDynamic("start_zoom_adjust")(start_zoom_adjust)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ITimeLineConfiguration]
+  }
+}
+

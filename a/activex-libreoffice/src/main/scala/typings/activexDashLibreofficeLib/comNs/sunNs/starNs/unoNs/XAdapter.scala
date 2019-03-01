@@ -24,3 +24,24 @@ trait XAdapter extends XInterface {
   def removeReference(xRef: XReference): scala.Unit
 }
 
+object XAdapter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addReference: js.Function1[XReference, scala.Unit],
+    queryAdapted: js.Function0[XInterface],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeReference: js.Function1[XReference, scala.Unit]
+  ): XAdapter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addReference")(addReference)
+    __obj.updateDynamic("queryAdapted")(queryAdapted)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeReference")(removeReference)
+    __obj.asInstanceOf[XAdapter]
+  }
+}
+

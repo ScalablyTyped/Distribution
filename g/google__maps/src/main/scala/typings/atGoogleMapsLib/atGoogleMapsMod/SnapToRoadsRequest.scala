@@ -29,3 +29,13 @@ trait SnapToRoadsRequest extends js.Object {
   var path: js.Array[LatLng]
 }
 
+object SnapToRoadsRequest {
+  @scala.inline
+  def apply(path: js.Array[LatLng], interpolate: js.UndefOr[scala.Boolean] = js.undefined): SnapToRoadsRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(interpolate)) __obj.updateDynamic("interpolate")(interpolate)
+    __obj.asInstanceOf[SnapToRoadsRequest]
+  }
+}
+

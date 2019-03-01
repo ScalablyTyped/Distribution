@@ -75,3 +75,41 @@ trait IgGridAppendRowsOnDemand
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridAppendRowsOnDemand {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridAppendRowsOnDemand
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    chunkIndexUrlKey: java.lang.String = null,
+    chunkSize: scala.Int | scala.Double = null,
+    chunkSizeUrlKey: java.lang.String = null,
+    currentChunkIndex: scala.Int | scala.Double = null,
+    defaultChunkIndex: scala.Int | scala.Double = null,
+    loadMoreDataButtonText: java.lang.String = null,
+    loadTrigger: java.lang.String = null,
+    locale: IgGridAppendRowsOnDemandLocale = null,
+    recordCountKey: java.lang.String = null,
+    rowsRequested: RowsRequestedEvent = null,
+    rowsRequesting: RowsRequestingEvent = null,
+    `type`: java.lang.String = null
+  ): IgGridAppendRowsOnDemand = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (chunkIndexUrlKey != null) __obj.updateDynamic("chunkIndexUrlKey")(chunkIndexUrlKey)
+    if (chunkSize != null) __obj.updateDynamic("chunkSize")(chunkSize.asInstanceOf[js.Any])
+    if (chunkSizeUrlKey != null) __obj.updateDynamic("chunkSizeUrlKey")(chunkSizeUrlKey)
+    if (currentChunkIndex != null) __obj.updateDynamic("currentChunkIndex")(currentChunkIndex.asInstanceOf[js.Any])
+    if (defaultChunkIndex != null) __obj.updateDynamic("defaultChunkIndex")(defaultChunkIndex.asInstanceOf[js.Any])
+    if (loadMoreDataButtonText != null) __obj.updateDynamic("loadMoreDataButtonText")(loadMoreDataButtonText)
+    if (loadTrigger != null) __obj.updateDynamic("loadTrigger")(loadTrigger)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (recordCountKey != null) __obj.updateDynamic("recordCountKey")(recordCountKey)
+    if (rowsRequested != null) __obj.updateDynamic("rowsRequested")(rowsRequested)
+    if (rowsRequesting != null) __obj.updateDynamic("rowsRequesting")(rowsRequesting)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IgGridAppendRowsOnDemand]
+  }
+}
+

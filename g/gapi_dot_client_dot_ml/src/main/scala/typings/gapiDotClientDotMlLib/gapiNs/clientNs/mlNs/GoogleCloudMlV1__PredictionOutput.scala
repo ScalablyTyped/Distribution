@@ -16,3 +16,20 @@ trait GoogleCloudMlV1__PredictionOutput extends js.Object {
   var predictionCount: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudMlV1__PredictionOutput {
+  @scala.inline
+  def apply(
+    errorCount: java.lang.String = null,
+    nodeHours: scala.Int | scala.Double = null,
+    outputPath: java.lang.String = null,
+    predictionCount: java.lang.String = null
+  ): GoogleCloudMlV1__PredictionOutput = {
+    val __obj = js.Dynamic.literal()
+    if (errorCount != null) __obj.updateDynamic("errorCount")(errorCount)
+    if (nodeHours != null) __obj.updateDynamic("nodeHours")(nodeHours.asInstanceOf[js.Any])
+    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath)
+    if (predictionCount != null) __obj.updateDynamic("predictionCount")(predictionCount)
+    __obj.asInstanceOf[GoogleCloudMlV1__PredictionOutput]
+  }
+}
+

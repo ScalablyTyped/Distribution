@@ -12,3 +12,13 @@ trait Price extends js.Object {
   var currency: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Price {
+  @scala.inline
+  def apply(amount: java.lang.String = null, currency: java.lang.String = null): Price = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    __obj.asInstanceOf[Price]
+  }
+}
+

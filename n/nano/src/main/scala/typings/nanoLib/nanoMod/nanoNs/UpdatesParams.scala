@@ -13,3 +13,20 @@ trait UpdatesParams extends js.Object {
   var timeout: scala.Double
 }
 
+object UpdatesParams {
+  @scala.inline
+  def apply(
+    feed: nanoLib.nanoLibStrings.longpoll | nanoLib.nanoLibStrings.continuous | nanoLib.nanoLibStrings.eventsource,
+    heartbeat: scala.Boolean,
+    since: java.lang.String,
+    timeout: scala.Double
+  ): UpdatesParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("feed")(feed.asInstanceOf[js.Any])
+    __obj.updateDynamic("heartbeat")(heartbeat)
+    __obj.updateDynamic("since")(since)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[UpdatesParams]
+  }
+}
+

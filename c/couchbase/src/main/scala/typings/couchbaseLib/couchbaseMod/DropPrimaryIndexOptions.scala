@@ -16,3 +16,13 @@ trait DropPrimaryIndexOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DropPrimaryIndexOptions {
+  @scala.inline
+  def apply(ignoreIfNotExists: js.UndefOr[scala.Boolean] = js.undefined, name: java.lang.String = null): DropPrimaryIndexOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignoreIfNotExists)) __obj.updateDynamic("ignoreIfNotExists")(ignoreIfNotExists)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[DropPrimaryIndexOptions]
+  }
+}
+

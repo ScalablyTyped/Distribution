@@ -41,3 +41,22 @@ trait PolicyRule extends js.Object {
   val verbs: js.Array[java.lang.String]
 }
 
+object PolicyRule {
+  @scala.inline
+  def apply(
+    apiGroups: js.Array[java.lang.String],
+    nonResourceURLs: js.Array[java.lang.String],
+    resourceNames: js.Array[java.lang.String],
+    resources: js.Array[java.lang.String],
+    verbs: js.Array[java.lang.String]
+  ): PolicyRule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiGroups")(apiGroups)
+    __obj.updateDynamic("nonResourceURLs")(nonResourceURLs)
+    __obj.updateDynamic("resourceNames")(resourceNames)
+    __obj.updateDynamic("resources")(resources)
+    __obj.updateDynamic("verbs")(verbs)
+    __obj.asInstanceOf[PolicyRule]
+  }
+}
+

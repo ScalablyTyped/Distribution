@@ -11,3 +11,18 @@ trait MjmlColumnProps extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object MjmlColumnProps {
+  @scala.inline
+  def apply(
+    backgroundColor: csstypeLib.csstypeMod.BackgroundColorProperty = null,
+    verticalAlign: csstypeLib.csstypeMod.VerticalAlignProperty[java.lang.String | scala.Double] = null,
+    width: java.lang.String | scala.Double = null
+  ): MjmlColumnProps = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MjmlColumnProps]
+  }
+}
+

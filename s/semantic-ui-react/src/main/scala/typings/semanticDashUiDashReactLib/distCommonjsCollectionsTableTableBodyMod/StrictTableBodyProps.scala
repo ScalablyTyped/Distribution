@@ -14,3 +14,18 @@ trait StrictTableBodyProps extends js.Object {
   var className: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StrictTableBodyProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null
+  ): StrictTableBodyProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    __obj.asInstanceOf[StrictTableBodyProps]
+  }
+}
+

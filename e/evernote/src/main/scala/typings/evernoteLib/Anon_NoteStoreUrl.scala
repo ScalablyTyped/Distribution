@@ -14,3 +14,24 @@ trait Anon_NoteStoreUrl extends js.Object {
   var webApiUrlPrefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_NoteStoreUrl {
+  @scala.inline
+  def apply(
+    shardId: java.lang.String,
+    userId: scala.Double,
+    noteStoreUrl: java.lang.String = null,
+    privilege: evernoteLib.evernoteMod.EvernoteNs.PrivilegeLevel = null,
+    username: java.lang.String = null,
+    webApiUrlPrefix: java.lang.String = null
+  ): Anon_NoteStoreUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("shardId")(shardId)
+    __obj.updateDynamic("userId")(userId)
+    if (noteStoreUrl != null) __obj.updateDynamic("noteStoreUrl")(noteStoreUrl)
+    if (privilege != null) __obj.updateDynamic("privilege")(privilege)
+    if (username != null) __obj.updateDynamic("username")(username)
+    if (webApiUrlPrefix != null) __obj.updateDynamic("webApiUrlPrefix")(webApiUrlPrefix)
+    __obj.asInstanceOf[Anon_NoteStoreUrl]
+  }
+}
+

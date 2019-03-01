@@ -22,3 +22,32 @@ trait MultipartUploadOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MultipartUploadOptions {
+  @scala.inline
+  def apply(
+    callback: ObjectCallback = null,
+    checkpoint: Checkpoint = null,
+    copyheaders: js.Object = null,
+    headers: js.Object = null,
+    meta: UserMeta = null,
+    mime: java.lang.String = null,
+    parallel: scala.Int | scala.Double = null,
+    partSize: scala.Int | scala.Double = null,
+    progress: js.Function1[/* repeated */ js.Any, _] = null,
+    timeout: scala.Int | scala.Double = null
+  ): MultipartUploadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (checkpoint != null) __obj.updateDynamic("checkpoint")(checkpoint)
+    if (copyheaders != null) __obj.updateDynamic("copyheaders")(copyheaders)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (mime != null) __obj.updateDynamic("mime")(mime)
+    if (parallel != null) __obj.updateDynamic("parallel")(parallel.asInstanceOf[js.Any])
+    if (partSize != null) __obj.updateDynamic("partSize")(partSize.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MultipartUploadOptions]
+  }
+}
+

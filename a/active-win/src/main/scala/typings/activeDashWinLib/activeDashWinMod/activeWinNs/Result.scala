@@ -13,3 +13,22 @@ trait Result extends js.Object {
   var title: java.lang.String
 }
 
+object Result {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    owner: activeDashWinLib.Anon_BundleId,
+    title: java.lang.String,
+    bounds: activeDashWinLib.Anon_Height = null,
+    memoryUsage: scala.Int | scala.Double = null
+  ): Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("owner")(owner)
+    __obj.updateDynamic("title")(title)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (memoryUsage != null) __obj.updateDynamic("memoryUsage")(memoryUsage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Result]
+  }
+}
+

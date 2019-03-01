@@ -46,3 +46,26 @@ trait ApiKeyOptions extends js.Object {
   var validity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ApiKeyOptions {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    indexes: js.Array[java.lang.String] = null,
+    maxHitsPerQuery: js.UndefOr[scala.Boolean] = js.undefined,
+    maxQueriesPerIPPerHour: scala.Int | scala.Double = null,
+    queryParameters: QueryParameters = null,
+    referers: js.Array[java.lang.String] = null,
+    validity: scala.Int | scala.Double = null
+  ): ApiKeyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
+    if (!js.isUndefined(maxHitsPerQuery)) __obj.updateDynamic("maxHitsPerQuery")(maxHitsPerQuery)
+    if (maxQueriesPerIPPerHour != null) __obj.updateDynamic("maxQueriesPerIPPerHour")(maxQueriesPerIPPerHour.asInstanceOf[js.Any])
+    if (queryParameters != null) __obj.updateDynamic("queryParameters")(queryParameters)
+    if (referers != null) __obj.updateDynamic("referers")(referers)
+    if (validity != null) __obj.updateDynamic("validity")(validity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApiKeyOptions]
+  }
+}
+

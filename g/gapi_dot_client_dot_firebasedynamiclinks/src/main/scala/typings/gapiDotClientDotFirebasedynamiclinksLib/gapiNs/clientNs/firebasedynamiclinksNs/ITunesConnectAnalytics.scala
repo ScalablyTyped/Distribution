@@ -22,3 +22,20 @@ trait ITunesConnectAnalytics extends js.Object {
   var pt: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITunesConnectAnalytics {
+  @scala.inline
+  def apply(
+    at: java.lang.String = null,
+    ct: java.lang.String = null,
+    mt: java.lang.String = null,
+    pt: java.lang.String = null
+  ): ITunesConnectAnalytics = {
+    val __obj = js.Dynamic.literal()
+    if (at != null) __obj.updateDynamic("at")(at)
+    if (ct != null) __obj.updateDynamic("ct")(ct)
+    if (mt != null) __obj.updateDynamic("mt")(mt)
+    if (pt != null) __obj.updateDynamic("pt")(pt)
+    __obj.asInstanceOf[ITunesConnectAnalytics]
+  }
+}
+

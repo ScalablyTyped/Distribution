@@ -30,3 +30,28 @@ trait PySparkJob extends js.Object {
   var pythonFileUris: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object PySparkJob {
+  @scala.inline
+  def apply(
+    archiveUris: js.Array[java.lang.String] = null,
+    args: js.Array[java.lang.String] = null,
+    fileUris: js.Array[java.lang.String] = null,
+    jarFileUris: js.Array[java.lang.String] = null,
+    loggingConfig: LoggingConfig = null,
+    mainPythonFileUri: java.lang.String = null,
+    properties: stdLib.Record[java.lang.String, java.lang.String] = null,
+    pythonFileUris: js.Array[java.lang.String] = null
+  ): PySparkJob = {
+    val __obj = js.Dynamic.literal()
+    if (archiveUris != null) __obj.updateDynamic("archiveUris")(archiveUris)
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (fileUris != null) __obj.updateDynamic("fileUris")(fileUris)
+    if (jarFileUris != null) __obj.updateDynamic("jarFileUris")(jarFileUris)
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig)
+    if (mainPythonFileUri != null) __obj.updateDynamic("mainPythonFileUri")(mainPythonFileUri)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (pythonFileUris != null) __obj.updateDynamic("pythonFileUris")(pythonFileUris)
+    __obj.asInstanceOf[PySparkJob]
+  }
+}
+

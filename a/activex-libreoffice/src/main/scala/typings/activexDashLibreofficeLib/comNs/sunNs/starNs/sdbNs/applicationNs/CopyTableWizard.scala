@@ -68,3 +68,47 @@ trait CopyTableWizard extends XCopyTableWizard {
   ): scala.Unit
 }
 
+object CopyTableWizard {
+  @scala.inline
+  def apply(
+    CreatePrimaryKey: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[java.lang.String],
+    DestinationTableName: java.lang.String,
+    Operation: scala.Double,
+    UseHeaderLineAsColumnNames: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addCopyTableListener: js.Function1[XCopyTableListener, scala.Unit],
+    create: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Unit
+    ],
+    createWithInteractionHandler: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler, 
+      scala.Unit
+    ],
+    execute: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeCopyTableListener: js.Function1[XCopyTableListener, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): CopyTableWizard = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CreatePrimaryKey")(CreatePrimaryKey)
+    __obj.updateDynamic("DestinationTableName")(DestinationTableName)
+    __obj.updateDynamic("Operation")(Operation)
+    __obj.updateDynamic("UseHeaderLineAsColumnNames")(UseHeaderLineAsColumnNames)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addCopyTableListener")(addCopyTableListener)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createWithInteractionHandler")(createWithInteractionHandler)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeCopyTableListener")(removeCopyTableListener)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.asInstanceOf[CopyTableWizard]
+  }
+}
+

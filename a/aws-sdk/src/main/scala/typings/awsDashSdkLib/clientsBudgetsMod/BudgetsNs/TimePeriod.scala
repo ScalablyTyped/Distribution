@@ -16,3 +16,13 @@ trait TimePeriod extends js.Object {
   var Start: js.UndefOr[GenericTimestamp] = js.undefined
 }
 
+object TimePeriod {
+  @scala.inline
+  def apply(End: GenericTimestamp = null, Start: GenericTimestamp = null): TimePeriod = {
+    val __obj = js.Dynamic.literal()
+    if (End != null) __obj.updateDynamic("End")(End)
+    if (Start != null) __obj.updateDynamic("Start")(Start)
+    __obj.asInstanceOf[TimePeriod]
+  }
+}
+

@@ -22,3 +22,32 @@ trait Anon_Action extends js.Object {
   def stopPropagation(event: stdLib.Event): scala.Unit
 }
 
+object Anon_Action {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function4[
+      stdLib.HTMLElement, 
+      java.lang.String, 
+      js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit], 
+      scala.Boolean, 
+      js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit]
+    ],
+    preventDefault: js.Function1[stdLib.Event, scala.Unit],
+    removeEventListener: js.Function4[
+      stdLib.HTMLElement, 
+      java.lang.String, 
+      js.Function1[/* event */ js.UndefOr[stdLib.Event], scala.Unit], 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    stopPropagation: js.Function1[stdLib.Event, scala.Unit]
+  ): Anon_Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("stopPropagation")(stopPropagation)
+    __obj.asInstanceOf[Anon_Action]
+  }
+}
+

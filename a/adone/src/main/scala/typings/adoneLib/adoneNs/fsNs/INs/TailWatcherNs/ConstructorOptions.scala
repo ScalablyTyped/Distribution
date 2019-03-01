@@ -36,3 +36,26 @@ trait ConstructorOptions extends js.Object {
   var useWatchFile: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConstructorOptions {
+  @scala.inline
+  def apply(
+    encoding: adoneLib.adoneNs.fsNs.INs.Encoding = null,
+    follow: js.UndefOr[scala.Boolean] = js.undefined,
+    fromBeginning: js.UndefOr[scala.Boolean] = js.undefined,
+    fsWatchOptions: js.Object = null,
+    pos: scala.Int | scala.Double = null,
+    separator: java.lang.String | stdLib.RegExp = null,
+    useWatchFile: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(follow)) __obj.updateDynamic("follow")(follow)
+    if (!js.isUndefined(fromBeginning)) __obj.updateDynamic("fromBeginning")(fromBeginning)
+    if (fsWatchOptions != null) __obj.updateDynamic("fsWatchOptions")(fsWatchOptions)
+    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
+    if (separator != null) __obj.updateDynamic("separator")(separator.asInstanceOf[js.Any])
+    if (!js.isUndefined(useWatchFile)) __obj.updateDynamic("useWatchFile")(useWatchFile)
+    __obj.asInstanceOf[ConstructorOptions]
+  }
+}
+

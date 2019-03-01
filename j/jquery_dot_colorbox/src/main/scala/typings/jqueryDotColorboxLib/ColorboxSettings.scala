@@ -240,3 +240,128 @@ trait ColorboxSettings extends js.Object {
   var xhrError: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColorboxSettings {
+  @scala.inline
+  def apply(
+    ajax: js.Any = null,
+    arrowKey: js.UndefOr[scala.Boolean] = js.undefined,
+    bottom: js.Any = null,
+    className: js.Any = null,
+    close: java.lang.String = null,
+    closeButton: js.UndefOr[scala.Boolean] = js.undefined,
+    current: java.lang.String = null,
+    data: js.Any = null,
+    escKey: js.UndefOr[scala.Boolean] = js.undefined,
+    fadeOut: scala.Int | scala.Double = null,
+    fastIframe: js.UndefOr[scala.Boolean] = js.undefined,
+    fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Double | java.lang.String = null,
+    href: js.Any = null,
+    html: js.Any = null,
+    iframe: js.UndefOr[scala.Boolean] = js.undefined,
+    imgError: java.lang.String = null,
+    initialHeight: scala.Double | java.lang.String = null,
+    initialWidth: scala.Double | java.lang.String = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    innerHeight: scala.Double | java.lang.String = null,
+    innerWidth: scala.Double | java.lang.String = null,
+    left: js.Any = null,
+    loop: js.UndefOr[scala.Boolean] = js.undefined,
+    maxHeight: scala.Double | java.lang.String = null,
+    maxWidth: scala.Double | java.lang.String = null,
+    next: java.lang.String = null,
+    onCleanup: js.Any = null,
+    onClosed: js.Any = null,
+    onComplete: js.Any = null,
+    onLoad: js.Any = null,
+    onOpen: js.Any = null,
+    opacity: scala.Int | scala.Double = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    overlayClose: js.UndefOr[scala.Boolean] = js.undefined,
+    photo: js.UndefOr[scala.Boolean] = js.undefined,
+    preloading: js.UndefOr[scala.Boolean] = js.undefined,
+    previous: java.lang.String = null,
+    rel: js.Any = null,
+    reposition: js.UndefOr[scala.Boolean] = js.undefined,
+    retinaImage: js.UndefOr[scala.Boolean] = js.undefined,
+    retinaSuffix: java.lang.String = null,
+    retinaUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    returnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    right: js.Any = null,
+    scalePhotos: js.UndefOr[scala.Boolean] = js.undefined,
+    scrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    slideshow: js.UndefOr[scala.Boolean] = js.undefined,
+    slideshowAuto: js.UndefOr[scala.Boolean] = js.undefined,
+    slideshowSpeed: scala.Int | scala.Double = null,
+    slideshowStart: java.lang.String = null,
+    slideshowStop: java.lang.String = null,
+    speed: scala.Int | scala.Double = null,
+    title: js.Any = null,
+    top: js.Any = null,
+    transition: java.lang.String = null,
+    width: scala.Double | java.lang.String = null,
+    xhrError: java.lang.String = null
+  ): ColorboxSettings = {
+    val __obj = js.Dynamic.literal()
+    if (ajax != null) __obj.updateDynamic("ajax")(ajax)
+    if (!js.isUndefined(arrowKey)) __obj.updateDynamic("arrowKey")(arrowKey)
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
+    if (current != null) __obj.updateDynamic("current")(current)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(escKey)) __obj.updateDynamic("escKey")(escKey)
+    if (fadeOut != null) __obj.updateDynamic("fadeOut")(fadeOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(fastIframe)) __obj.updateDynamic("fastIframe")(fastIframe)
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe)
+    if (imgError != null) __obj.updateDynamic("imgError")(imgError)
+    if (initialHeight != null) __obj.updateDynamic("initialHeight")(initialHeight.asInstanceOf[js.Any])
+    if (initialWidth != null) __obj.updateDynamic("initialWidth")(initialWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (innerHeight != null) __obj.updateDynamic("innerHeight")(innerHeight.asInstanceOf[js.Any])
+    if (innerWidth != null) __obj.updateDynamic("innerWidth")(innerWidth.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (!js.isUndefined(loop)) __obj.updateDynamic("loop")(loop)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (onCleanup != null) __obj.updateDynamic("onCleanup")(onCleanup)
+    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (!js.isUndefined(overlayClose)) __obj.updateDynamic("overlayClose")(overlayClose)
+    if (!js.isUndefined(photo)) __obj.updateDynamic("photo")(photo)
+    if (!js.isUndefined(preloading)) __obj.updateDynamic("preloading")(preloading)
+    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (rel != null) __obj.updateDynamic("rel")(rel)
+    if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition)
+    if (!js.isUndefined(retinaImage)) __obj.updateDynamic("retinaImage")(retinaImage)
+    if (retinaSuffix != null) __obj.updateDynamic("retinaSuffix")(retinaSuffix)
+    if (!js.isUndefined(retinaUrl)) __obj.updateDynamic("retinaUrl")(retinaUrl)
+    if (!js.isUndefined(returnFocus)) __obj.updateDynamic("returnFocus")(returnFocus)
+    if (right != null) __obj.updateDynamic("right")(right)
+    if (!js.isUndefined(scalePhotos)) __obj.updateDynamic("scalePhotos")(scalePhotos)
+    if (!js.isUndefined(scrolling)) __obj.updateDynamic("scrolling")(scrolling)
+    if (!js.isUndefined(slideshow)) __obj.updateDynamic("slideshow")(slideshow)
+    if (!js.isUndefined(slideshowAuto)) __obj.updateDynamic("slideshowAuto")(slideshowAuto)
+    if (slideshowSpeed != null) __obj.updateDynamic("slideshowSpeed")(slideshowSpeed.asInstanceOf[js.Any])
+    if (slideshowStart != null) __obj.updateDynamic("slideshowStart")(slideshowStart)
+    if (slideshowStop != null) __obj.updateDynamic("slideshowStop")(slideshowStop)
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (top != null) __obj.updateDynamic("top")(top)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (xhrError != null) __obj.updateDynamic("xhrError")(xhrError)
+    __obj.asInstanceOf[ColorboxSettings]
+  }
+}
+

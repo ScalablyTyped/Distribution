@@ -23,3 +23,20 @@ trait Anon_IdPreviousVersion extends js.Object {
   var temporary: scala.Boolean
 }
 
+object Anon_IdPreviousVersion {
+  @scala.inline
+  def apply(
+    reason: firefoxDashWebextDashBrowserLib.browserNs.runtimeNs.OnInstalledReason,
+    temporary: scala.Boolean,
+    id: java.lang.String = null,
+    previousVersion: java.lang.String = null
+  ): Anon_IdPreviousVersion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("temporary")(temporary)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion)
+    __obj.asInstanceOf[Anon_IdPreviousVersion]
+  }
+}
+

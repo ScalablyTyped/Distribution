@@ -107,3 +107,72 @@ trait CoverageGrouping extends BackboneElement {
   var subPlanDisplay: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CoverageGrouping {
+  @scala.inline
+  def apply(
+    _class: Element = null,
+    _classDisplay: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _group: Element = null,
+    _groupDisplay: Element = null,
+    _id: Element = null,
+    _plan: Element = null,
+    _planDisplay: Element = null,
+    _subClass: Element = null,
+    _subClassDisplay: Element = null,
+    _subGroup: Element = null,
+    _subGroupDisplay: Element = null,
+    _subPlan: Element = null,
+    _subPlanDisplay: Element = null,
+    `class`: java.lang.String = null,
+    classDisplay: java.lang.String = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    group: java.lang.String = null,
+    groupDisplay: java.lang.String = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null,
+    plan: java.lang.String = null,
+    planDisplay: java.lang.String = null,
+    subClass: java.lang.String = null,
+    subClassDisplay: java.lang.String = null,
+    subGroup: java.lang.String = null,
+    subGroupDisplay: java.lang.String = null,
+    subPlan: java.lang.String = null,
+    subPlanDisplay: java.lang.String = null
+  ): CoverageGrouping = {
+    val __obj = js.Dynamic.literal()
+    if (_class != null) __obj.updateDynamic("_class")(_class)
+    if (_classDisplay != null) __obj.updateDynamic("_classDisplay")(_classDisplay)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_group != null) __obj.updateDynamic("_group")(_group)
+    if (_groupDisplay != null) __obj.updateDynamic("_groupDisplay")(_groupDisplay)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_plan != null) __obj.updateDynamic("_plan")(_plan)
+    if (_planDisplay != null) __obj.updateDynamic("_planDisplay")(_planDisplay)
+    if (_subClass != null) __obj.updateDynamic("_subClass")(_subClass)
+    if (_subClassDisplay != null) __obj.updateDynamic("_subClassDisplay")(_subClassDisplay)
+    if (_subGroup != null) __obj.updateDynamic("_subGroup")(_subGroup)
+    if (_subGroupDisplay != null) __obj.updateDynamic("_subGroupDisplay")(_subGroupDisplay)
+    if (_subPlan != null) __obj.updateDynamic("_subPlan")(_subPlan)
+    if (_subPlanDisplay != null) __obj.updateDynamic("_subPlanDisplay")(_subPlanDisplay)
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (classDisplay != null) __obj.updateDynamic("classDisplay")(classDisplay)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (groupDisplay != null) __obj.updateDynamic("groupDisplay")(groupDisplay)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (planDisplay != null) __obj.updateDynamic("planDisplay")(planDisplay)
+    if (subClass != null) __obj.updateDynamic("subClass")(subClass)
+    if (subClassDisplay != null) __obj.updateDynamic("subClassDisplay")(subClassDisplay)
+    if (subGroup != null) __obj.updateDynamic("subGroup")(subGroup)
+    if (subGroupDisplay != null) __obj.updateDynamic("subGroupDisplay")(subGroupDisplay)
+    if (subPlan != null) __obj.updateDynamic("subPlan")(subPlan)
+    if (subPlanDisplay != null) __obj.updateDynamic("subPlanDisplay")(subPlanDisplay)
+    __obj.asInstanceOf[CoverageGrouping]
+  }
+}
+

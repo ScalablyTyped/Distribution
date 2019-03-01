@@ -12,3 +12,13 @@ trait v5Static extends js.Object {
   var URL: java.lang.String
 }
 
+object v5Static {
+  @scala.inline
+  def apply(DNS: java.lang.String, URL: java.lang.String): v5Static = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DNS")(DNS)
+    __obj.updateDynamic("URL")(URL)
+    __obj.asInstanceOf[v5Static]
+  }
+}
+

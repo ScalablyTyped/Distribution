@@ -24,3 +24,20 @@ trait ColumnMovingEventUIParam extends js.Object {
   var targetIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ColumnMovingEventUIParam {
+  @scala.inline
+  def apply(
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    owner: java.lang.String = null,
+    targetIndex: scala.Int | scala.Double = null
+  ): ColumnMovingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (targetIndex != null) __obj.updateDynamic("targetIndex")(targetIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnMovingEventUIParam]
+  }
+}
+

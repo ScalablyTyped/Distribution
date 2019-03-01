@@ -37,3 +37,46 @@ trait AppsResource extends js.Object {
   def repair(request: gapiDotClientDotAppengineLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object AppsResource {
+  @scala.inline
+  def apply(
+    authorizedCertificates: AuthorizedCertificatesResource,
+    authorizedDomains: AuthorizedDomainsResource,
+    create: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    domainMappings: DomainMappingsResource,
+    firewall: FirewallResource,
+    get: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Application]
+    ],
+    locations: LocationsResource,
+    operations: OperationsResource,
+    patch: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_AccesstokenAltAppsIdBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrintQuotaUserUpdateMask, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    repair: js.Function1[
+      gapiDotClientDotAppengineLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    services: ServicesResource
+  ): AppsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorizedCertificates")(authorizedCertificates)
+    __obj.updateDynamic("authorizedDomains")(authorizedDomains)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("domainMappings")(domainMappings)
+    __obj.updateDynamic("firewall")(firewall)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("locations")(locations)
+    __obj.updateDynamic("operations")(operations)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("repair")(repair)
+    __obj.updateDynamic("services")(services)
+    __obj.asInstanceOf[AppsResource]
+  }
+}
+

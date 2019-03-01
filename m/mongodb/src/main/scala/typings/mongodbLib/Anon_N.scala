@@ -12,3 +12,13 @@ trait Anon_N extends js.Object {
   var ok: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_N {
+  @scala.inline
+  def apply(n: scala.Int | scala.Double = null, ok: scala.Int | scala.Double = null): Anon_N = {
+    val __obj = js.Dynamic.literal()
+    if (n != null) __obj.updateDynamic("n")(n.asInstanceOf[js.Any])
+    if (ok != null) __obj.updateDynamic("ok")(ok.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_N]
+  }
+}
+

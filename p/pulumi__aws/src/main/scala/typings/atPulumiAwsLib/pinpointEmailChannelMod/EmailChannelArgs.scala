@@ -28,3 +28,22 @@ trait EmailChannelArgs extends js.Object {
   val roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object EmailChannelArgs {
+  @scala.inline
+  def apply(
+    applicationId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    fromAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    identity: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): EmailChannelArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
+    __obj.updateDynamic("fromAddress")(fromAddress.asInstanceOf[js.Any])
+    __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
+    __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EmailChannelArgs]
+  }
+}
+

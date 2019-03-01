@@ -20,3 +20,27 @@ trait RequireDirectoryOptions extends js.Object {
   ] = js.undefined
 }
 
+object RequireDirectoryOptions {
+  @scala.inline
+  def apply(
+    exclude: stdLib.RegExp | (js.Function1[/* pathToFile */ java.lang.String, scala.Boolean]) = null,
+    extensions: js.Array[java.lang.String] = null,
+    include: stdLib.RegExp | (js.Function1[/* pathToFile */ java.lang.String, scala.Boolean]) = null,
+    recurse: js.UndefOr[scala.Boolean] = js.undefined,
+    visit: js.Function3[
+      /* commandObject */ js.Any, 
+      /* pathToFile */ js.UndefOr[java.lang.String], 
+      /* filename */ js.UndefOr[java.lang.String], 
+      _
+    ] = null
+  ): RequireDirectoryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (!js.isUndefined(recurse)) __obj.updateDynamic("recurse")(recurse)
+    if (visit != null) __obj.updateDynamic("visit")(visit)
+    __obj.asInstanceOf[RequireDirectoryOptions]
+  }
+}
+

@@ -61,3 +61,23 @@ trait WorksheetFormatChangedEventArgs extends js.Object {
   def getRangeOrNullObject(ctx: RequestContext): Range
 }
 
+object WorksheetFormatChangedEventArgs {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    getRange: js.Function1[RequestContext, Range],
+    getRangeOrNullObject: js.Function1[RequestContext, Range],
+    source: EventSource | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Local | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Remote,
+    `type`: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WorksheetFormatChanged,
+    worksheetId: java.lang.String
+  ): WorksheetFormatChangedEventArgs = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("getRange")(getRange)
+    __obj.updateDynamic("getRangeOrNullObject")(getRangeOrNullObject)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("worksheetId")(worksheetId)
+    __obj.asInstanceOf[WorksheetFormatChangedEventArgs]
+  }
+}
+

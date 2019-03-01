@@ -21,3 +21,18 @@ trait DefaultSuggestResult extends js.Object {
   var descriptionStylesRaw: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.Anon_Offset]] = js.undefined
 }
 
+object DefaultSuggestResult {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    descriptionStyles: js.Array[firefoxDashWebextDashBrowserLib.Anon_Length] = null,
+    descriptionStylesRaw: js.Array[firefoxDashWebextDashBrowserLib.Anon_Offset] = null
+  ): DefaultSuggestResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    if (descriptionStyles != null) __obj.updateDynamic("descriptionStyles")(descriptionStyles)
+    if (descriptionStylesRaw != null) __obj.updateDynamic("descriptionStylesRaw")(descriptionStylesRaw)
+    __obj.asInstanceOf[DefaultSuggestResult]
+  }
+}
+

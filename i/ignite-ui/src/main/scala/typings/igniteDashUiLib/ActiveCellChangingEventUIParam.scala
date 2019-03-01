@@ -16,3 +16,13 @@ trait ActiveCellChangingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ActiveCellChangingEventUIParam {
+  @scala.inline
+  def apply(cell: js.Any = null, owner: js.Any = null): ActiveCellChangingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ActiveCellChangingEventUIParam]
+  }
+}
+

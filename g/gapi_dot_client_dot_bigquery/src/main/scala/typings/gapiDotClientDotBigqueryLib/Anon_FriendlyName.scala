@@ -18,3 +18,22 @@ trait Anon_FriendlyName extends js.Object {
   var projectReference: js.UndefOr[gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.ProjectReference] = js.undefined
 }
 
+object Anon_FriendlyName {
+  @scala.inline
+  def apply(
+    friendlyName: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    numericId: java.lang.String = null,
+    projectReference: gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.ProjectReference = null
+  ): Anon_FriendlyName = {
+    val __obj = js.Dynamic.literal()
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (numericId != null) __obj.updateDynamic("numericId")(numericId)
+    if (projectReference != null) __obj.updateDynamic("projectReference")(projectReference)
+    __obj.asInstanceOf[Anon_FriendlyName]
+  }
+}
+

@@ -14,3 +14,24 @@ trait HttpResponse extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HttpResponse {
+  @scala.inline
+  def apply(
+    buffer: nodeLib.Buffer = null,
+    cookies: js.Any = null,
+    data: js.Any = null,
+    headers: js.Any = null,
+    status: scala.Int | scala.Double = null,
+    text: java.lang.String = null
+  ): HttpResponse = {
+    val __obj = js.Dynamic.literal()
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (cookies != null) __obj.updateDynamic("cookies")(cookies)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[HttpResponse]
+  }
+}
+

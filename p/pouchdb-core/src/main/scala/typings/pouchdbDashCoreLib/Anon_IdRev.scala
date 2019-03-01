@@ -10,3 +10,13 @@ trait Anon_IdRev extends js.Object {
   var rev: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId
 }
 
+object Anon_IdRev {
+  @scala.inline
+  def apply(id: java.lang.String, rev: pouchdbDashCoreLib.PouchDBNs.CoreNs.RevisionId): Anon_IdRev = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("rev")(rev)
+    __obj.asInstanceOf[Anon_IdRev]
+  }
+}
+

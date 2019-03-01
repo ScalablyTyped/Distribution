@@ -169,3 +169,86 @@ trait LaunchTemplateState extends js.Object {
   ] = js.undefined
 }
 
+object LaunchTemplateState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    blockDeviceMappings: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeviceNameEbsNoDeviceVirtualName]
+      ]
+    ] = null,
+    capacityReservationSpecification: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CapacityReservationPreferenceCapacityReservationTarget] = null,
+    creditSpecification: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CpuCreditsInput] = null,
+    defaultVersion: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    disableApiTermination: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    ebsOptimized: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    elasticGpuSpecifications: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeInput]]] = null,
+    iamInstanceProfile: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArnNameInput] = null,
+    imageId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceInitiatedShutdownBehavior: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceMarketOptions: atPulumiPulumiLib.outputMod.Input[
+      atPulumiAwsLib.Anon_MarketTypeSpotOptionsAnonBlockDurationMinutesInstanceInterruptionBehaviorMaxPrice
+    ] = null,
+    instanceType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    kernelId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    latestVersion: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    licenseSpecifications: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_LicenseConfigurationArnInput]
+      ]
+    ] = null,
+    monitoring: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkInterfaces: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AssociatePublicIpAddressDeleteOnTerminationDescription]
+      ]
+    ] = null,
+    placement: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AffinityAvailabilityZoneGroupName] = null,
+    ramDiskId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityGroupNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tagSpecifications: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyResourceTypeTagsAny]]
+    ] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    userData: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): LaunchTemplateState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (blockDeviceMappings != null) __obj.updateDynamic("blockDeviceMappings")(blockDeviceMappings.asInstanceOf[js.Any])
+    if (capacityReservationSpecification != null) __obj.updateDynamic("capacityReservationSpecification")(capacityReservationSpecification.asInstanceOf[js.Any])
+    if (creditSpecification != null) __obj.updateDynamic("creditSpecification")(creditSpecification.asInstanceOf[js.Any])
+    if (defaultVersion != null) __obj.updateDynamic("defaultVersion")(defaultVersion.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (disableApiTermination != null) __obj.updateDynamic("disableApiTermination")(disableApiTermination.asInstanceOf[js.Any])
+    if (ebsOptimized != null) __obj.updateDynamic("ebsOptimized")(ebsOptimized.asInstanceOf[js.Any])
+    if (elasticGpuSpecifications != null) __obj.updateDynamic("elasticGpuSpecifications")(elasticGpuSpecifications.asInstanceOf[js.Any])
+    if (iamInstanceProfile != null) __obj.updateDynamic("iamInstanceProfile")(iamInstanceProfile.asInstanceOf[js.Any])
+    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
+    if (instanceInitiatedShutdownBehavior != null) __obj.updateDynamic("instanceInitiatedShutdownBehavior")(instanceInitiatedShutdownBehavior.asInstanceOf[js.Any])
+    if (instanceMarketOptions != null) __obj.updateDynamic("instanceMarketOptions")(instanceMarketOptions.asInstanceOf[js.Any])
+    if (instanceType != null) __obj.updateDynamic("instanceType")(instanceType.asInstanceOf[js.Any])
+    if (kernelId != null) __obj.updateDynamic("kernelId")(kernelId.asInstanceOf[js.Any])
+    if (keyName != null) __obj.updateDynamic("keyName")(keyName.asInstanceOf[js.Any])
+    if (latestVersion != null) __obj.updateDynamic("latestVersion")(latestVersion.asInstanceOf[js.Any])
+    if (licenseSpecifications != null) __obj.updateDynamic("licenseSpecifications")(licenseSpecifications.asInstanceOf[js.Any])
+    if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (networkInterfaces != null) __obj.updateDynamic("networkInterfaces")(networkInterfaces.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (ramDiskId != null) __obj.updateDynamic("ramDiskId")(ramDiskId.asInstanceOf[js.Any])
+    if (securityGroupNames != null) __obj.updateDynamic("securityGroupNames")(securityGroupNames.asInstanceOf[js.Any])
+    if (tagSpecifications != null) __obj.updateDynamic("tagSpecifications")(tagSpecifications.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData.asInstanceOf[js.Any])
+    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LaunchTemplateState]
+  }
+}
+

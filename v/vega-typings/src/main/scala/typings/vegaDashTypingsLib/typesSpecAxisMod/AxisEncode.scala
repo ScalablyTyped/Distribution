@@ -44,3 +44,24 @@ trait AxisEncode extends js.Object {
   ] = js.undefined
 }
 
+object AxisEncode {
+  @scala.inline
+  def apply(
+    axis: vegaDashTypingsLib.typesSpecLegendMod.GuideEncodeEntry[vegaDashTypingsLib.typesSpecEncodeMod.GroupEncodeEntry] = null,
+    domain: vegaDashTypingsLib.typesSpecLegendMod.GuideEncodeEntry[vegaDashTypingsLib.typesSpecEncodeMod.RuleEncodeEntry] = null,
+    grid: vegaDashTypingsLib.typesSpecLegendMod.GuideEncodeEntry[vegaDashTypingsLib.typesSpecEncodeMod.RuleEncodeEntry] = null,
+    labels: vegaDashTypingsLib.typesSpecLegendMod.GuideEncodeEntry[vegaDashTypingsLib.typesSpecEncodeMod.TextEncodeEntry] = null,
+    ticks: vegaDashTypingsLib.typesSpecLegendMod.GuideEncodeEntry[vegaDashTypingsLib.typesSpecEncodeMod.GroupEncodeEntry] = null,
+    title: vegaDashTypingsLib.typesSpecLegendMod.GuideEncodeEntry[vegaDashTypingsLib.typesSpecEncodeMod.TextEncodeEntry] = null
+  ): AxisEncode = {
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[AxisEncode]
+  }
+}
+

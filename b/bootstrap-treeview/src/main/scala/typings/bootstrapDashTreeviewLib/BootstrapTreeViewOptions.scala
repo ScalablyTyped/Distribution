@@ -63,3 +63,82 @@ trait BootstrapTreeViewOptions extends js.Object {
   var uncheckedIcon: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BootstrapTreeViewOptions {
+  @scala.inline
+  def apply(
+    backColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    checkedIcon: java.lang.String = null,
+    collapseIcon: java.lang.String = null,
+    color: java.lang.String = null,
+    data: js.Array[BootstrapTreeViewNodeData] = null,
+    emptyIcon: java.lang.String = null,
+    enableLinks: js.UndefOr[scala.Boolean] = js.undefined,
+    expandIcon: java.lang.String = null,
+    highlightSearchResults: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    levels: scala.Int | scala.Double = null,
+    multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    nodeIcon: java.lang.String = null,
+    onNodeChecked: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onNodeCollapsed: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onNodeDisabled: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onNodeEnabled: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onNodeExpanded: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onNodeSelected: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onNodeUnchecked: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onNodeUnselected: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onSearchCleared: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onSearchComplete: js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, scala.Unit] = null,
+    onhoverColor: java.lang.String = null,
+    searchResultBackColor: java.lang.String = null,
+    searchResultColor: java.lang.String = null,
+    selectedBackColor: java.lang.String = null,
+    selectedColor: java.lang.String = null,
+    selectedIcon: java.lang.String = null,
+    showBorder: js.UndefOr[scala.Boolean] = js.undefined,
+    showCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    showIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    showTags: js.UndefOr[scala.Boolean] = js.undefined,
+    uncheckedIcon: js.UndefOr[scala.Boolean] = js.undefined
+  ): BootstrapTreeViewOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backColor != null) __obj.updateDynamic("backColor")(backColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (checkedIcon != null) __obj.updateDynamic("checkedIcon")(checkedIcon)
+    if (collapseIcon != null) __obj.updateDynamic("collapseIcon")(collapseIcon)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (emptyIcon != null) __obj.updateDynamic("emptyIcon")(emptyIcon)
+    if (!js.isUndefined(enableLinks)) __obj.updateDynamic("enableLinks")(enableLinks)
+    if (expandIcon != null) __obj.updateDynamic("expandIcon")(expandIcon)
+    if (!js.isUndefined(highlightSearchResults)) __obj.updateDynamic("highlightSearchResults")(highlightSearchResults)
+    if (!js.isUndefined(highlightSelected)) __obj.updateDynamic("highlightSelected")(highlightSelected)
+    if (levels != null) __obj.updateDynamic("levels")(levels.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
+    if (nodeIcon != null) __obj.updateDynamic("nodeIcon")(nodeIcon)
+    if (onNodeChecked != null) __obj.updateDynamic("onNodeChecked")(onNodeChecked)
+    if (onNodeCollapsed != null) __obj.updateDynamic("onNodeCollapsed")(onNodeCollapsed)
+    if (onNodeDisabled != null) __obj.updateDynamic("onNodeDisabled")(onNodeDisabled)
+    if (onNodeEnabled != null) __obj.updateDynamic("onNodeEnabled")(onNodeEnabled)
+    if (onNodeExpanded != null) __obj.updateDynamic("onNodeExpanded")(onNodeExpanded)
+    if (onNodeSelected != null) __obj.updateDynamic("onNodeSelected")(onNodeSelected)
+    if (onNodeUnchecked != null) __obj.updateDynamic("onNodeUnchecked")(onNodeUnchecked)
+    if (onNodeUnselected != null) __obj.updateDynamic("onNodeUnselected")(onNodeUnselected)
+    if (onSearchCleared != null) __obj.updateDynamic("onSearchCleared")(onSearchCleared)
+    if (onSearchComplete != null) __obj.updateDynamic("onSearchComplete")(onSearchComplete)
+    if (onhoverColor != null) __obj.updateDynamic("onhoverColor")(onhoverColor)
+    if (searchResultBackColor != null) __obj.updateDynamic("searchResultBackColor")(searchResultBackColor)
+    if (searchResultColor != null) __obj.updateDynamic("searchResultColor")(searchResultColor)
+    if (selectedBackColor != null) __obj.updateDynamic("selectedBackColor")(selectedBackColor)
+    if (selectedColor != null) __obj.updateDynamic("selectedColor")(selectedColor)
+    if (selectedIcon != null) __obj.updateDynamic("selectedIcon")(selectedIcon)
+    if (!js.isUndefined(showBorder)) __obj.updateDynamic("showBorder")(showBorder)
+    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon)
+    if (!js.isUndefined(showTags)) __obj.updateDynamic("showTags")(showTags)
+    if (!js.isUndefined(uncheckedIcon)) __obj.updateDynamic("uncheckedIcon")(uncheckedIcon)
+    __obj.asInstanceOf[BootstrapTreeViewOptions]
+  }
+}
+

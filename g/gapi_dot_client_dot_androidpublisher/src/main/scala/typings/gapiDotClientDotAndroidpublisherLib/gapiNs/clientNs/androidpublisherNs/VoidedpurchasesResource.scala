@@ -10,3 +10,17 @@ trait VoidedpurchasesResource extends js.Object {
   def list(request: gapiDotClientDotAndroidpublisherLib.Anon_AltEndTime): gapiDotClientLib.gapiNs.clientNs.Request[VoidedPurchasesListResponse]
 }
 
+object VoidedpurchasesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEndTime, 
+      gapiDotClientLib.gapiNs.clientNs.Request[VoidedPurchasesListResponse]
+    ]
+  ): VoidedpurchasesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[VoidedpurchasesResource]
+  }
+}
+

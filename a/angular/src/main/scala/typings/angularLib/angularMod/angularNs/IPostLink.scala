@@ -22,3 +22,12 @@ trait IPostLink extends js.Object {
   def $postLink(): scala.Unit
 }
 
+object IPostLink {
+  @scala.inline
+  def apply($postLink: js.Function0[scala.Unit]): IPostLink = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$postLink")($postLink)
+    __obj.asInstanceOf[IPostLink]
+  }
+}
+

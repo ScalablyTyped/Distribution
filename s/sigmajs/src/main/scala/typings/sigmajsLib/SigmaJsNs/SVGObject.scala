@@ -10,3 +10,16 @@ trait SVGObject[T] extends js.Object {
   def update(`object`: T, a: js.Any*): scala.Unit
 }
 
+object SVGObject {
+  @scala.inline
+  def apply[T](
+    create: js.Function2[T, /* repeated */ js.Any, stdLib.Element],
+    update: js.Function2[T, /* repeated */ js.Any, scala.Unit]
+  ): SVGObject[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[SVGObject[T]]
+  }
+}
+

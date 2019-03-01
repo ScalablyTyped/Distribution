@@ -14,3 +14,18 @@ trait Filter extends js.Object {
   var unaryFilter: js.UndefOr[UnaryFilter] = js.undefined
 }
 
+object Filter {
+  @scala.inline
+  def apply(
+    compositeFilter: CompositeFilter = null,
+    fieldFilter: FieldFilter = null,
+    unaryFilter: UnaryFilter = null
+  ): Filter = {
+    val __obj = js.Dynamic.literal()
+    if (compositeFilter != null) __obj.updateDynamic("compositeFilter")(compositeFilter)
+    if (fieldFilter != null) __obj.updateDynamic("fieldFilter")(fieldFilter)
+    if (unaryFilter != null) __obj.updateDynamic("unaryFilter")(unaryFilter)
+    __obj.asInstanceOf[Filter]
+  }
+}
+

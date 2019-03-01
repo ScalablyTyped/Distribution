@@ -11,5 +11,4 @@ package object EvaporateNs {
     ImmutableOptionKeys
   ]
   type AddOverrideOptions = stdLib.Pick[CreateConfig, AddOverrideOptionKeys]
-  type ImmutableOptionKeys = evaporateLib.evaporateLibStrings.maxConcurrentParts | evaporateLib.evaporateLibStrings.logging | evaporateLib.evaporateLibStrings.cloudfront | evaporateLib.evaporateLibStrings.encodeFilename | evaporateLib.evaporateLibStrings.computeContentMd5 | evaporateLib.evaporateLibStrings.allowS3ExistenceOptimization | evaporateLib.evaporateLibStrings.onlyRetryForSameFileName | evaporateLib.evaporateLibStrings.timeUrl | evaporateLib.evaporateLibStrings.cryptoMd5Method | evaporateLib.evaporateLibStrings.cryptoHexEncodedHash256 | evaporateLib.evaporateLibStrings.awsRegion | evaporateLib.evaporateLibStrings.awsSignatureVersion | evaporateLib.evaporateLibStrings.evaporateChanged
 }

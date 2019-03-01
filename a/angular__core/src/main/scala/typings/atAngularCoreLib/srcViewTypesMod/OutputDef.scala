@@ -12,3 +12,19 @@ trait OutputDef extends js.Object {
   var `type`: OutputType
 }
 
+object OutputDef {
+  @scala.inline
+  def apply(
+    eventName: java.lang.String,
+    `type`: OutputType,
+    propName: java.lang.String = null,
+    target: atAngularCoreLib.atAngularCoreLibStrings.window | atAngularCoreLib.atAngularCoreLibStrings.document | atAngularCoreLib.atAngularCoreLibStrings.body | atAngularCoreLib.atAngularCoreLibStrings.component = null
+  ): OutputDef = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("eventName")(eventName)
+    if (propName != null) __obj.updateDynamic("propName")(propName)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OutputDef]
+  }
+}
+

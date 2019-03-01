@@ -11,3 +11,18 @@ trait ManifestAction extends js.Object {
   var default_title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ManifestAction {
+  @scala.inline
+  def apply(
+    default_icon: ManifestIcons = null,
+    default_popup: java.lang.String = null,
+    default_title: java.lang.String = null
+  ): ManifestAction = {
+    val __obj = js.Dynamic.literal()
+    if (default_icon != null) __obj.updateDynamic("default_icon")(default_icon)
+    if (default_popup != null) __obj.updateDynamic("default_popup")(default_popup)
+    if (default_title != null) __obj.updateDynamic("default_title")(default_title)
+    __obj.asInstanceOf[ManifestAction]
+  }
+}
+

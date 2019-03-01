@@ -50,3 +50,52 @@ trait OptionalProps extends js.Object {
   def onMouseUp[T](event: ViewerMouseEvent[T]): scala.Unit
 }
 
+object OptionalProps {
+  @scala.inline
+  def apply(
+    SVGBackground: java.lang.String,
+    background: java.lang.String,
+    className: java.lang.String,
+    customToolbar: (reactLib.reactMod.Component[_, js.Object, _]) | reactLib.reactMod.ReactNs.StatelessComponent[_],
+    detectAutoPan: scala.Boolean,
+    detectWheel: scala.Boolean,
+    modifierKeys: js.Array[java.lang.String],
+    onChangeTool: js.Function1[Tool, scala.Unit],
+    onChangeValue: js.Function1[Value, scala.Unit],
+    onClick: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    onDoubleClick: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    onMouseDown: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    onMouseMove: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    onMouseUp: js.Function1[ViewerMouseEvent[js.Any], scala.Unit],
+    preventPanOutside: scala.Boolean,
+    scaleFactor: scala.Double,
+    style: js.Object,
+    tool: Tool,
+    toolbarPosition: ToolbarPosition,
+    value: Value = null
+  ): OptionalProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SVGBackground")(SVGBackground)
+    __obj.updateDynamic("background")(background)
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("customToolbar")(customToolbar.asInstanceOf[js.Any])
+    __obj.updateDynamic("detectAutoPan")(detectAutoPan)
+    __obj.updateDynamic("detectWheel")(detectWheel)
+    __obj.updateDynamic("modifierKeys")(modifierKeys)
+    __obj.updateDynamic("onChangeTool")(onChangeTool)
+    __obj.updateDynamic("onChangeValue")(onChangeValue)
+    __obj.updateDynamic("onClick")(onClick)
+    __obj.updateDynamic("onDoubleClick")(onDoubleClick)
+    __obj.updateDynamic("onMouseDown")(onMouseDown)
+    __obj.updateDynamic("onMouseMove")(onMouseMove)
+    __obj.updateDynamic("onMouseUp")(onMouseUp)
+    __obj.updateDynamic("preventPanOutside")(preventPanOutside)
+    __obj.updateDynamic("scaleFactor")(scaleFactor)
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("tool")(tool)
+    __obj.updateDynamic("toolbarPosition")(toolbarPosition)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[OptionalProps]
+  }
+}
+

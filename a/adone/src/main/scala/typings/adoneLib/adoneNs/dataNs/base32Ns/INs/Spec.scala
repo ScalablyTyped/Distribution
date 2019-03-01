@@ -10,3 +10,16 @@ trait Spec extends js.Object {
   var charmap: /* import warning: ImportType.apply Failed type conversion: {[c: string] : number, [c: string] : number} */ js.Any
 }
 
+object Spec {
+  @scala.inline
+  def apply(
+    alphabet: java.lang.String,
+    charmap: /* import warning: ImportType.apply Failed type conversion: {[c: string] : number, [c: string] : number} */ js.Any
+  ): Spec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alphabet")(alphabet)
+    __obj.updateDynamic("charmap")(charmap)
+    __obj.asInstanceOf[Spec]
+  }
+}
+

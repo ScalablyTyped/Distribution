@@ -17,3 +17,22 @@ trait CORSRule extends js.Object {
   var maxAgeSeconds: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object CORSRule {
+  @scala.inline
+  def apply(
+    allowedMethod: java.lang.String | js.Array[java.lang.String],
+    allowedOrigin: java.lang.String | js.Array[java.lang.String],
+    allowedHeader: java.lang.String | js.Array[java.lang.String] = null,
+    exposeHeader: java.lang.String | js.Array[java.lang.String] = null,
+    maxAgeSeconds: java.lang.String | js.Array[java.lang.String] = null
+  ): CORSRule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowedMethod")(allowedMethod.asInstanceOf[js.Any])
+    __obj.updateDynamic("allowedOrigin")(allowedOrigin.asInstanceOf[js.Any])
+    if (allowedHeader != null) __obj.updateDynamic("allowedHeader")(allowedHeader.asInstanceOf[js.Any])
+    if (exposeHeader != null) __obj.updateDynamic("exposeHeader")(exposeHeader.asInstanceOf[js.Any])
+    if (maxAgeSeconds != null) __obj.updateDynamic("maxAgeSeconds")(maxAgeSeconds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CORSRule]
+  }
+}
+

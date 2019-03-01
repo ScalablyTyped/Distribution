@@ -16,3 +16,26 @@ trait strings
   var TRAILING_ICON_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip__icon--trailing`
 }
 
+object strings {
+  @scala.inline
+  def apply(
+    CHECKMARK_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip__checkmark`,
+    ENTRY_ANIMATION_NAME: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip-entry`,
+    INTERACTION_EVENT: atMaterialChipsLib.atMaterialChipsLibStrings.`MDCChip:interaction`,
+    LEADING_ICON_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip__icon--leading`,
+    REMOVAL_EVENT: atMaterialChipsLib.atMaterialChipsLibStrings.`MDCChip:removal`,
+    TRAILING_ICON_INTERACTION_EVENT: atMaterialChipsLib.atMaterialChipsLibStrings.`MDCChip:trailingIconInteraction`,
+    TRAILING_ICON_SELECTOR: atMaterialChipsLib.atMaterialChipsLibStrings.`DOTmdc-chip__icon--trailing`
+  ): strings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CHECKMARK_SELECTOR")(CHECKMARK_SELECTOR)
+    __obj.updateDynamic("ENTRY_ANIMATION_NAME")(ENTRY_ANIMATION_NAME)
+    __obj.updateDynamic("INTERACTION_EVENT")(INTERACTION_EVENT)
+    __obj.updateDynamic("LEADING_ICON_SELECTOR")(LEADING_ICON_SELECTOR)
+    __obj.updateDynamic("REMOVAL_EVENT")(REMOVAL_EVENT)
+    __obj.updateDynamic("TRAILING_ICON_INTERACTION_EVENT")(TRAILING_ICON_INTERACTION_EVENT)
+    __obj.updateDynamic("TRAILING_ICON_SELECTOR")(TRAILING_ICON_SELECTOR)
+    __obj.asInstanceOf[strings]
+  }
+}
+

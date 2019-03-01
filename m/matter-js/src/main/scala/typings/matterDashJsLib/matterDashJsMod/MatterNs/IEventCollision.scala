@@ -12,3 +12,15 @@ trait IEventCollision[T] extends IEventTimestamped[T] {
   var pairs: js.Array[IPair]
 }
 
+object IEventCollision {
+  @scala.inline
+  def apply[T](name: java.lang.String, pairs: js.Array[IPair], source: T, timestamp: scala.Double): IEventCollision[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("pairs")(pairs)
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[IEventCollision[T]]
+  }
+}
+

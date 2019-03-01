@@ -21,3 +21,38 @@ trait Anon_AttemptsMade[T] extends js.Object {
   var timestamp: scala.Double
 }
 
+object Anon_AttemptsMade {
+  @scala.inline
+  def apply[T](
+    attemptsMade: scala.Double,
+    data: T,
+    delay: scala.Double,
+    failedReason: js.Any,
+    id: bullLib.bullMod.BullNs.JobId,
+    name: java.lang.String,
+    opts: bullLib.bullMod.BullNs.JobOptions,
+    progress: scala.Double,
+    returnvalue: js.Any,
+    timestamp: scala.Double,
+    finishedOn: scala.Int | scala.Double = null,
+    processedOn: scala.Int | scala.Double = null,
+    stacktrace: js.Array[java.lang.String] = null
+  ): Anon_AttemptsMade[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attemptsMade")(attemptsMade)
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("delay")(delay)
+    __obj.updateDynamic("failedReason")(failedReason)
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("opts")(opts)
+    __obj.updateDynamic("progress")(progress)
+    __obj.updateDynamic("returnvalue")(returnvalue)
+    __obj.updateDynamic("timestamp")(timestamp)
+    if (finishedOn != null) __obj.updateDynamic("finishedOn")(finishedOn.asInstanceOf[js.Any])
+    if (processedOn != null) __obj.updateDynamic("processedOn")(processedOn.asInstanceOf[js.Any])
+    if (stacktrace != null) __obj.updateDynamic("stacktrace")(stacktrace)
+    __obj.asInstanceOf[Anon_AttemptsMade[T]]
+  }
+}
+

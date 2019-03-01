@@ -125,3 +125,108 @@ trait IGridOptions extends js.Object {
   var virtualizationThreshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(
+    afterSelectionChange: js.Function2[/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any], scala.Unit] = null,
+    aggregateTemplate: java.lang.String = null,
+    beforeSelectionChange: js.Function2[/* rowItem */ js.UndefOr[IRow], /* event */ js.UndefOr[js.Any], scala.Boolean] = null,
+    checkboxCellTemplate: java.lang.String = null,
+    checkboxHeaderTemplate: java.lang.String = null,
+    columnDefs: js.Array[IColumnDef] = null,
+    data: js.Any = null,
+    dataUpdated: angularLib.angularMod.Global.Function = null,
+    enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCellSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnHeavyVirt: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnReordering: js.UndefOr[scala.Boolean] = js.undefined,
+    enableColumnResize: js.UndefOr[scala.Boolean] = js.undefined,
+    enableHighlighting: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePaging: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePinning: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowReordering: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    excludeProperties: js.Any = null,
+    filterOptions: IFilterOptions = null,
+    footerRowHeight: scala.Int | scala.Double = null,
+    groups: js.Array[java.lang.String] = null,
+    headerRowHeight: scala.Int | scala.Double = null,
+    headerRowTemplate: java.lang.String = null,
+    i18n: java.lang.String = null,
+    jqueryUIDraggable: js.UndefOr[scala.Boolean] = js.undefined,
+    jqueryUITheme: js.UndefOr[scala.Boolean] = js.undefined,
+    keepLastSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    maintainColumnRatios: js.UndefOr[scala.Boolean] = js.undefined,
+    multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    pagingOptions: IPagingOptions = null,
+    pinSelectionCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    plugins: js.Array[_] = null,
+    rowHeight: scala.Int | scala.Double = null,
+    rowTemplate: java.lang.String = null,
+    selectItem: js.Function2[/* idx */ scala.Double, /* state */ scala.Boolean, _] = null,
+    selectWithCheckboxOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedItems: js.Array[_] = null,
+    showColumnMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    showFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    showFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    showGroupPanel: js.UndefOr[scala.Boolean] = js.undefined,
+    showSelectionCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    sortInfo: js.Any = null,
+    tabIndex: scala.Int | scala.Double = null,
+    useExternalSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    virtualizationThreshold: scala.Int | scala.Double = null
+  ): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (afterSelectionChange != null) __obj.updateDynamic("afterSelectionChange")(afterSelectionChange)
+    if (aggregateTemplate != null) __obj.updateDynamic("aggregateTemplate")(aggregateTemplate)
+    if (beforeSelectionChange != null) __obj.updateDynamic("beforeSelectionChange")(beforeSelectionChange)
+    if (checkboxCellTemplate != null) __obj.updateDynamic("checkboxCellTemplate")(checkboxCellTemplate)
+    if (checkboxHeaderTemplate != null) __obj.updateDynamic("checkboxHeaderTemplate")(checkboxHeaderTemplate)
+    if (columnDefs != null) __obj.updateDynamic("columnDefs")(columnDefs)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataUpdated != null) __obj.updateDynamic("dataUpdated")(dataUpdated)
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
+    if (!js.isUndefined(enableCellSelection)) __obj.updateDynamic("enableCellSelection")(enableCellSelection)
+    if (!js.isUndefined(enableColumnHeavyVirt)) __obj.updateDynamic("enableColumnHeavyVirt")(enableColumnHeavyVirt)
+    if (!js.isUndefined(enableColumnReordering)) __obj.updateDynamic("enableColumnReordering")(enableColumnReordering)
+    if (!js.isUndefined(enableColumnResize)) __obj.updateDynamic("enableColumnResize")(enableColumnResize)
+    if (!js.isUndefined(enableHighlighting)) __obj.updateDynamic("enableHighlighting")(enableHighlighting)
+    if (!js.isUndefined(enablePaging)) __obj.updateDynamic("enablePaging")(enablePaging)
+    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning)
+    if (!js.isUndefined(enableRowReordering)) __obj.updateDynamic("enableRowReordering")(enableRowReordering)
+    if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection)
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting)
+    if (excludeProperties != null) __obj.updateDynamic("excludeProperties")(excludeProperties)
+    if (filterOptions != null) __obj.updateDynamic("filterOptions")(filterOptions)
+    if (footerRowHeight != null) __obj.updateDynamic("footerRowHeight")(footerRowHeight.asInstanceOf[js.Any])
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (headerRowHeight != null) __obj.updateDynamic("headerRowHeight")(headerRowHeight.asInstanceOf[js.Any])
+    if (headerRowTemplate != null) __obj.updateDynamic("headerRowTemplate")(headerRowTemplate)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
+    if (!js.isUndefined(jqueryUIDraggable)) __obj.updateDynamic("jqueryUIDraggable")(jqueryUIDraggable)
+    if (!js.isUndefined(jqueryUITheme)) __obj.updateDynamic("jqueryUITheme")(jqueryUITheme)
+    if (!js.isUndefined(keepLastSelected)) __obj.updateDynamic("keepLastSelected")(keepLastSelected)
+    if (!js.isUndefined(maintainColumnRatios)) __obj.updateDynamic("maintainColumnRatios")(maintainColumnRatios)
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
+    if (pagingOptions != null) __obj.updateDynamic("pagingOptions")(pagingOptions)
+    if (!js.isUndefined(pinSelectionCheckbox)) __obj.updateDynamic("pinSelectionCheckbox")(pinSelectionCheckbox)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (rowTemplate != null) __obj.updateDynamic("rowTemplate")(rowTemplate)
+    if (selectItem != null) __obj.updateDynamic("selectItem")(selectItem)
+    if (!js.isUndefined(selectWithCheckboxOnly)) __obj.updateDynamic("selectWithCheckboxOnly")(selectWithCheckboxOnly)
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
+    if (!js.isUndefined(showColumnMenu)) __obj.updateDynamic("showColumnMenu")(showColumnMenu)
+    if (!js.isUndefined(showFilter)) __obj.updateDynamic("showFilter")(showFilter)
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)
+    if (!js.isUndefined(showGroupPanel)) __obj.updateDynamic("showGroupPanel")(showGroupPanel)
+    if (!js.isUndefined(showSelectionCheckbox)) __obj.updateDynamic("showSelectionCheckbox")(showSelectionCheckbox)
+    if (sortInfo != null) __obj.updateDynamic("sortInfo")(sortInfo)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(useExternalSorting)) __obj.updateDynamic("useExternalSorting")(useExternalSorting)
+    if (virtualizationThreshold != null) __obj.updateDynamic("virtualizationThreshold")(virtualizationThreshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

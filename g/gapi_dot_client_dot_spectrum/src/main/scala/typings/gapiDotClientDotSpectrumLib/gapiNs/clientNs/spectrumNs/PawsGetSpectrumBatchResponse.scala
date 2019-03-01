@@ -71,3 +71,34 @@ trait PawsGetSpectrumBatchResponse extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PawsGetSpectrumBatchResponse {
+  @scala.inline
+  def apply(
+    databaseChange: DbUpdateSpec = null,
+    deviceDesc: DeviceDescriptor = null,
+    geoSpectrumSchedules: js.Array[GeoSpectrumSchedule] = null,
+    kind: java.lang.String = null,
+    maxContiguousBwHz: scala.Int | scala.Double = null,
+    maxTotalBwHz: scala.Int | scala.Double = null,
+    needsSpectrumReport: js.UndefOr[scala.Boolean] = js.undefined,
+    rulesetInfo: RulesetInfo = null,
+    timestamp: java.lang.String = null,
+    `type`: java.lang.String = null,
+    version: java.lang.String = null
+  ): PawsGetSpectrumBatchResponse = {
+    val __obj = js.Dynamic.literal()
+    if (databaseChange != null) __obj.updateDynamic("databaseChange")(databaseChange)
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
+    if (geoSpectrumSchedules != null) __obj.updateDynamic("geoSpectrumSchedules")(geoSpectrumSchedules)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maxContiguousBwHz != null) __obj.updateDynamic("maxContiguousBwHz")(maxContiguousBwHz.asInstanceOf[js.Any])
+    if (maxTotalBwHz != null) __obj.updateDynamic("maxTotalBwHz")(maxTotalBwHz.asInstanceOf[js.Any])
+    if (!js.isUndefined(needsSpectrumReport)) __obj.updateDynamic("needsSpectrumReport")(needsSpectrumReport)
+    if (rulesetInfo != null) __obj.updateDynamic("rulesetInfo")(rulesetInfo)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PawsGetSpectrumBatchResponse]
+  }
+}
+

@@ -21,3 +21,26 @@ trait IDataView
   var mouseOverOutBuffer: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IDataView {
+  @scala.inline
+  def apply(
+    IAbstractView: extjsLib.ExtNs.viewNs.IAbstractView = null,
+    clearHighlight: js.Function0[scala.Unit] = null,
+    focusNode: js.Function1[/* rec */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], scala.Unit] = null,
+    highlightItem: js.Function1[/* item */ js.UndefOr[stdLib.HTMLElement], scala.Unit] = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    mouseOverOutBuffer: scala.Int | scala.Double = null,
+    refresh: js.Function0[scala.Unit] = null
+  ): IDataView = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IAbstractView)
+    if (clearHighlight != null) __obj.updateDynamic("clearHighlight")(clearHighlight)
+    if (focusNode != null) __obj.updateDynamic("focusNode")(focusNode)
+    if (highlightItem != null) __obj.updateDynamic("highlightItem")(highlightItem)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (mouseOverOutBuffer != null) __obj.updateDynamic("mouseOverOutBuffer")(mouseOverOutBuffer.asInstanceOf[js.Any])
+    if (refresh != null) __obj.updateDynamic("refresh")(refresh)
+    __obj.asInstanceOf[IDataView]
+  }
+}
+

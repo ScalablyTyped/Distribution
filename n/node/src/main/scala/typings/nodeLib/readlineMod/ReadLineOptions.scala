@@ -16,3 +16,28 @@ trait ReadLineOptions extends js.Object {
   var terminal: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReadLineOptions {
+  @scala.inline
+  def apply(
+    input: nodeLib.NodeJSNs.ReadableStream,
+    completer: Completer | AsyncCompleter = null,
+    crlfDelay: scala.Int | scala.Double = null,
+    historySize: scala.Int | scala.Double = null,
+    output: nodeLib.NodeJSNs.WritableStream = null,
+    prompt: java.lang.String = null,
+    removeHistoryDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
+    terminal: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReadLineOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    if (completer != null) __obj.updateDynamic("completer")(completer.asInstanceOf[js.Any])
+    if (crlfDelay != null) __obj.updateDynamic("crlfDelay")(crlfDelay.asInstanceOf[js.Any])
+    if (historySize != null) __obj.updateDynamic("historySize")(historySize.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (!js.isUndefined(removeHistoryDuplicates)) __obj.updateDynamic("removeHistoryDuplicates")(removeHistoryDuplicates)
+    if (!js.isUndefined(terminal)) __obj.updateDynamic("terminal")(terminal)
+    __obj.asInstanceOf[ReadLineOptions]
+  }
+}
+

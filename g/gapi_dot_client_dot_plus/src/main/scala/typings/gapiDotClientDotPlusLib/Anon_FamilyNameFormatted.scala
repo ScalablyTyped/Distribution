@@ -20,3 +20,24 @@ trait Anon_FamilyNameFormatted extends js.Object {
   var middleName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_FamilyNameFormatted {
+  @scala.inline
+  def apply(
+    familyName: java.lang.String = null,
+    formatted: java.lang.String = null,
+    givenName: java.lang.String = null,
+    honorificPrefix: java.lang.String = null,
+    honorificSuffix: java.lang.String = null,
+    middleName: java.lang.String = null
+  ): Anon_FamilyNameFormatted = {
+    val __obj = js.Dynamic.literal()
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName)
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName)
+    if (honorificPrefix != null) __obj.updateDynamic("honorificPrefix")(honorificPrefix)
+    if (honorificSuffix != null) __obj.updateDynamic("honorificSuffix")(honorificSuffix)
+    if (middleName != null) __obj.updateDynamic("middleName")(middleName)
+    __obj.asInstanceOf[Anon_FamilyNameFormatted]
+  }
+}
+

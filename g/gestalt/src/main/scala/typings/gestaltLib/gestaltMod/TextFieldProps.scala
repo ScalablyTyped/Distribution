@@ -26,3 +26,36 @@ trait TextFieldProps extends js.Object {
   def onChange(args: gestaltLib.Anon_EventValue): scala.Unit
 }
 
+object TextFieldProps {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    onChange: js.Function1[gestaltLib.Anon_EventValue, scala.Unit],
+    autoComplete: gestaltLib.gestaltLibStrings.`current-password` | gestaltLib.gestaltLibStrings.on | gestaltLib.gestaltLibStrings.off | gestaltLib.gestaltLibStrings.username = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    errorMessage: java.lang.String = null,
+    idealErrorDirection: gestaltLib.gestaltLibStrings.up | gestaltLib.gestaltLibStrings.right | gestaltLib.gestaltLibStrings.down | gestaltLib.gestaltLibStrings.left = null,
+    name: java.lang.String = null,
+    onBlur: js.Function1[/* args */ gestaltLib.Anon_EventValueElement, scala.Unit] = null,
+    onFocus: js.Function1[/* args */ gestaltLib.Anon_EventValueElement, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    `type`: gestaltLib.gestaltLibStrings.date | gestaltLib.gestaltLibStrings.email | gestaltLib.gestaltLibStrings.number | gestaltLib.gestaltLibStrings.password | gestaltLib.gestaltLibStrings.text | gestaltLib.gestaltLibStrings.url = null,
+    value: java.lang.String = null
+  ): TextFieldProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("onChange")(onChange)
+    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (idealErrorDirection != null) __obj.updateDynamic("idealErrorDirection")(idealErrorDirection.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[TextFieldProps]
+  }
+}
+

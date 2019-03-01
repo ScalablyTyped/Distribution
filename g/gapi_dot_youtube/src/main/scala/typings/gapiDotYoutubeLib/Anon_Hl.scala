@@ -24,3 +24,20 @@ trait Anon_Hl extends js.Object {
   var regionCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Hl {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    hl: java.lang.String = null,
+    id: java.lang.String = null,
+    regionCode: java.lang.String = null
+  ): Anon_Hl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    if (hl != null) __obj.updateDynamic("hl")(hl)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
+    __obj.asInstanceOf[Anon_Hl]
+  }
+}
+

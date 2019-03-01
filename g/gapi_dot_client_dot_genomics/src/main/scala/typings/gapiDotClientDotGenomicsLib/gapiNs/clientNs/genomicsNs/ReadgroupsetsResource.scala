@@ -80,3 +80,43 @@ trait ReadgroupsetsResource extends js.Object {
   def search(request: gapiDotClientDotGenomicsLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[SearchReadGroupSetsResponse]
 }
 
+object ReadgroupsetsResource {
+  @scala.inline
+  def apply(
+    coveragebuckets: CoveragebucketsResource,
+    delete: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    export: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ReadGroupSet]
+    ],
+    `import`: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPp, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ReadGroupSet]
+    ],
+    search: js.Function1[
+      gapiDotClientDotGenomicsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchReadGroupSetsResponse]
+    ]
+  ): ReadgroupsetsResource = {
+    val __obj = js.Dynamic.literal(`import` = `import`)
+    __obj.updateDynamic("coveragebuckets")(coveragebuckets)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("export")(export)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ReadgroupsetsResource]
+  }
+}
+

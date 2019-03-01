@@ -18,3 +18,22 @@ trait IMessage extends js.Object {
   var rawCommand: java.lang.String
 }
 
+object IMessage {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String],
+    command: java.lang.String,
+    commandType: CommandType,
+    rawCommand: java.lang.String,
+    prefix: java.lang.String = null
+  ): IMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("commandType")(commandType)
+    __obj.updateDynamic("rawCommand")(rawCommand)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[IMessage]
+  }
+}
+

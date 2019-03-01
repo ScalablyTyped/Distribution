@@ -12,3 +12,13 @@ trait ListOperationsResponse extends js.Object {
   var operations: js.UndefOr[js.Array[Operation]] = js.undefined
 }
 
+object ListOperationsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, operations: js.Array[Operation] = null): ListOperationsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (operations != null) __obj.updateDynamic("operations")(operations)
+    __obj.asInstanceOf[ListOperationsResponse]
+  }
+}
+

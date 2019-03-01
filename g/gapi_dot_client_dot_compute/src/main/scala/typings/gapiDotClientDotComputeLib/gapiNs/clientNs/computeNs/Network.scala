@@ -46,3 +46,36 @@ trait Network extends js.Object {
   var subnetworks: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Network {
+  @scala.inline
+  def apply(
+    IPv4Range: java.lang.String = null,
+    autoCreateSubnetworks: js.UndefOr[scala.Boolean] = js.undefined,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    gatewayIPv4: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    peerings: js.Array[NetworkPeering] = null,
+    routingConfig: NetworkRoutingConfig = null,
+    selfLink: java.lang.String = null,
+    subnetworks: js.Array[java.lang.String] = null
+  ): Network = {
+    val __obj = js.Dynamic.literal()
+    if (IPv4Range != null) __obj.updateDynamic("IPv4Range")(IPv4Range)
+    if (!js.isUndefined(autoCreateSubnetworks)) __obj.updateDynamic("autoCreateSubnetworks")(autoCreateSubnetworks)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (gatewayIPv4 != null) __obj.updateDynamic("gatewayIPv4")(gatewayIPv4)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (peerings != null) __obj.updateDynamic("peerings")(peerings)
+    if (routingConfig != null) __obj.updateDynamic("routingConfig")(routingConfig)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (subnetworks != null) __obj.updateDynamic("subnetworks")(subnetworks)
+    __obj.asInstanceOf[Network]
+  }
+}
+

@@ -17,3 +17,28 @@ trait cssClasses
   var TRAILING_ICON: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__icon--trailing`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    CHECKMARK: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__checkmark`,
+    CHIP: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip`,
+    CHIP_EXIT: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip--exit`,
+    HIDDEN_LEADING_ICON: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__icon--leading-hidden`,
+    LEADING_ICON: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__icon--leading`,
+    SELECTED: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip--selected`,
+    TEXT: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__text`,
+    TRAILING_ICON: atMaterialChipsLib.atMaterialChipsLibStrings.`mdc-chip__icon--trailing`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CHECKMARK")(CHECKMARK)
+    __obj.updateDynamic("CHIP")(CHIP)
+    __obj.updateDynamic("CHIP_EXIT")(CHIP_EXIT)
+    __obj.updateDynamic("HIDDEN_LEADING_ICON")(HIDDEN_LEADING_ICON)
+    __obj.updateDynamic("LEADING_ICON")(LEADING_ICON)
+    __obj.updateDynamic("SELECTED")(SELECTED)
+    __obj.updateDynamic("TEXT")(TEXT)
+    __obj.updateDynamic("TRAILING_ICON")(TRAILING_ICON)
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

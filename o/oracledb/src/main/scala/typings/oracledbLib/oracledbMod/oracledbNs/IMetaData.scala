@@ -22,3 +22,26 @@ trait IMetaData extends js.Object {
   var scale: scala.Double
 }
 
+object IMetaData {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    scale: scala.Double,
+    byteSize: scala.Int | scala.Double = null,
+    dbType: scala.Int | scala.Double = null,
+    fetchType: scala.Int | scala.Double = null,
+    nullable: js.UndefOr[scala.Boolean] = js.undefined,
+    precision: scala.Int | scala.Double = null
+  ): IMetaData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("scale")(scale)
+    if (byteSize != null) __obj.updateDynamic("byteSize")(byteSize.asInstanceOf[js.Any])
+    if (dbType != null) __obj.updateDynamic("dbType")(dbType.asInstanceOf[js.Any])
+    if (fetchType != null) __obj.updateDynamic("fetchType")(fetchType.asInstanceOf[js.Any])
+    if (!js.isUndefined(nullable)) __obj.updateDynamic("nullable")(nullable)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IMetaData]
+  }
+}
+

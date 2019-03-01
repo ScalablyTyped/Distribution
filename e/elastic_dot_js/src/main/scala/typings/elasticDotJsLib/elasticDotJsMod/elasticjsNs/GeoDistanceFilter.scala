@@ -67,3 +67,36 @@ trait GeoDistanceFilter extends Filter {
   def unit(unit: java.lang.String): GeoDistanceFilter
 }
 
+object GeoDistanceFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, GeoDistanceFilter],
+    cacheKey: js.Function1[java.lang.String, GeoDistanceFilter],
+    distance: js.Function1[stdLib.Number, GeoDistanceFilter],
+    distanceType: js.Function1[java.lang.String, GeoDistanceFilter],
+    field: js.Function1[java.lang.String, GeoDistanceFilter],
+    name: js.Function1[java.lang.String, GeoDistanceFilter],
+    normalize: js.Function1[java.lang.String, GeoDistanceFilter],
+    optimizeBbox: js.Function1[java.lang.String, GeoDistanceFilter],
+    point: js.Function1[GeoPoint, GeoDistanceFilter],
+    toJSON: js.Function0[GeoDistanceFilter],
+    unit: js.Function1[java.lang.String, GeoDistanceFilter]
+  ): GeoDistanceFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("distanceType")(distanceType)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("optimizeBbox")(optimizeBbox)
+    __obj.updateDynamic("point")(point)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[GeoDistanceFilter]
+  }
+}
+

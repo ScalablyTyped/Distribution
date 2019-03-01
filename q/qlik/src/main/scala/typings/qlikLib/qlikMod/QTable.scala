@@ -16,3 +16,28 @@ trait QTable extends js.Object {
   def getMoreData(): scala.Unit
 }
 
+object QTable {
+  @scala.inline
+  def apply(
+    colCount: scala.Double,
+    exportData: js.Function2[ExportDataOptions, js.Function1[/* url */ java.lang.String, scala.Unit], scala.Unit],
+    getColByName: js.Function1[java.lang.String, js.UndefOr[scala.Double]],
+    getMoreData: js.Function0[scala.Unit],
+    headers: js.Array[QHeader],
+    rowCount: scala.Double,
+    rows: js.Array[QRow],
+    totals: js.Array[QMeasureCell]
+  ): QTable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("colCount")(colCount)
+    __obj.updateDynamic("exportData")(exportData)
+    __obj.updateDynamic("getColByName")(getColByName)
+    __obj.updateDynamic("getMoreData")(getMoreData)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("rowCount")(rowCount)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("totals")(totals)
+    __obj.asInstanceOf[QTable]
+  }
+}
+

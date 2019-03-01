@@ -31,3 +31,20 @@ trait ASPxClientAxisValue extends js.Object {
   var scaleType: java.lang.String
 }
 
+object ASPxClientAxisValue {
+  @scala.inline
+  def apply(
+    dateTimeValue: stdLib.Date,
+    numericalValue: scala.Double,
+    qualitativeValue: java.lang.String,
+    scaleType: java.lang.String
+  ): ASPxClientAxisValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dateTimeValue")(dateTimeValue)
+    __obj.updateDynamic("numericalValue")(numericalValue)
+    __obj.updateDynamic("qualitativeValue")(qualitativeValue)
+    __obj.updateDynamic("scaleType")(scaleType)
+    __obj.asInstanceOf[ASPxClientAxisValue]
+  }
+}
+

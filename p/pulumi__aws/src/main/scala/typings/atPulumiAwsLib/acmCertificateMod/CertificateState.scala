@@ -59,3 +59,36 @@ trait CertificateState extends js.Object {
   val validationMethod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object CertificateState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificateBody: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificateChain: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    domainValidationOptions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DomainNameResourceRecordName]
+      ]
+    ] = null,
+    privateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subjectAlternativeNames: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    validationEmails: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    validationMethod: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): CertificateState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (certificateBody != null) __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
+    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (domainValidationOptions != null) __obj.updateDynamic("domainValidationOptions")(domainValidationOptions.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (subjectAlternativeNames != null) __obj.updateDynamic("subjectAlternativeNames")(subjectAlternativeNames.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (validationEmails != null) __obj.updateDynamic("validationEmails")(validationEmails.asInstanceOf[js.Any])
+    if (validationMethod != null) __obj.updateDynamic("validationMethod")(validationMethod.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CertificateState]
+  }
+}
+

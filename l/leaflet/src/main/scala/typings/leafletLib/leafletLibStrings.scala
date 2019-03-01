@@ -7,58 +7,79 @@ import scala.scalajs.js.annotation._
 
 object leafletLibStrings {
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends leafletLib.leafletMod.Direction
   
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait bevel
+    extends leafletLib.leafletMod.LineJoinShape
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends leafletLib.leafletMod.Direction
   
   @js.native
-  sealed trait bottomleft extends js.Object
+  sealed trait bottomleft
+    extends leafletLib.leafletMod.ControlPosition
   
   @js.native
-  sealed trait bottomright extends js.Object
+  sealed trait bottomright
+    extends leafletLib.leafletMod.ControlPosition
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait butt
+    extends leafletLib.leafletMod.LineCapShape
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends leafletLib.leafletMod.Direction
   
   @js.native
-  sealed trait evenodd extends js.Object
+  sealed trait evenodd
+    extends leafletLib.leafletMod.FillRule
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait inherit
+    extends leafletLib.leafletMod.FillRule
+       with leafletLib.leafletMod.LineCapShape
+       with leafletLib.leafletMod.LineJoinShape
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends leafletLib.leafletMod.Direction
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait miter
+    extends leafletLib.leafletMod.LineJoinShape
   
   @js.native
-  sealed trait nonzero extends js.Object
+  sealed trait nonzero
+    extends leafletLib.leafletMod.FillRule
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends leafletLib.leafletMod.Direction
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends leafletLib.leafletMod.LineCapShape
+       with leafletLib.leafletMod.LineJoinShape
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends leafletLib.leafletMod.LineCapShape
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends leafletLib.leafletMod.Direction
   
   @js.native
-  sealed trait topleft extends js.Object
+  sealed trait topleft
+    extends leafletLib.leafletMod.ControlPosition
   
   @js.native
-  sealed trait topright extends js.Object
+  sealed trait topright
+    extends leafletLib.leafletMod.ControlPosition
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]

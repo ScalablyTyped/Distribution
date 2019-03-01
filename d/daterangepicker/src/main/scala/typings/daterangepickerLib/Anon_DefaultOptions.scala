@@ -9,3 +9,12 @@ trait Anon_DefaultOptions extends js.Object {
   var defaultOptions: js.UndefOr[daterangepickerLib.daterangepickerMod.daterangepickerNs.Options] = js.undefined
 }
 
+object Anon_DefaultOptions {
+  @scala.inline
+  def apply(defaultOptions: daterangepickerLib.daterangepickerMod.daterangepickerNs.Options = null): Anon_DefaultOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
+    __obj.asInstanceOf[Anon_DefaultOptions]
+  }
+}
+

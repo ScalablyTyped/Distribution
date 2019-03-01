@@ -10,3 +10,13 @@ trait Geo extends js.Object {
   var lng: java.lang.String
 }
 
+object Geo {
+  @scala.inline
+  def apply(lat: java.lang.String, lng: java.lang.String): Geo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lat")(lat)
+    __obj.updateDynamic("lng")(lng)
+    __obj.asInstanceOf[Geo]
+  }
+}
+

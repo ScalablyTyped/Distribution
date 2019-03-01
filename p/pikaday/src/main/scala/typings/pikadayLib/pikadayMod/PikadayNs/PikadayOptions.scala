@@ -179,3 +179,86 @@ trait PikadayOptions extends js.Object {
   var yearSuffix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PikadayOptions {
+  @scala.inline
+  def apply(
+    ariaLabel: java.lang.String = null,
+    blurFieldOnSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    bound: js.UndefOr[scala.Boolean] = js.undefined,
+    container: stdLib.HTMLElement = null,
+    defaultDate: stdLib.Date = null,
+    disableDayFn: js.Function1[/* date */ stdLib.Date, scala.Boolean] = null,
+    disableWeekends: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSelectionDaysInNextAndPreviousMonths: js.UndefOr[scala.Boolean] = js.undefined,
+    events: js.Array[java.lang.String] = null,
+    field: stdLib.HTMLElement = null,
+    firstDay: scala.Int | scala.Double = null,
+    format: java.lang.String = null,
+    formatStrict: js.UndefOr[scala.Boolean] = js.undefined,
+    i18n: PikadayI18nConfig = null,
+    isRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboardInput: js.UndefOr[scala.Boolean] = js.undefined,
+    mainCalendar: java.lang.String = null,
+    maxDate: stdLib.Date = null,
+    minDate: stdLib.Date = null,
+    numberOfMonths: scala.Int | scala.Double = null,
+    onClose: js.Function0[scala.Unit] = null,
+    onDraw: js.Function0[scala.Unit] = null,
+    onOpen: js.Function0[scala.Unit] = null,
+    onSelect: js.ThisFunction1[/* this */ pikadayLib.pikadayMod.Pikaday, /* date */ stdLib.Date, scala.Unit] = null,
+    parse: js.Function2[/* date */ java.lang.String, /* format */ java.lang.String, stdLib.Date | scala.Null] = null,
+    pickWholeWeek: js.UndefOr[scala.Boolean] = js.undefined,
+    position: java.lang.String = null,
+    reposition: js.UndefOr[scala.Boolean] = js.undefined,
+    setDefaultDate: js.UndefOr[scala.Boolean] = js.undefined,
+    showDaysInNextAndPreviousMonths: js.UndefOr[scala.Boolean] = js.undefined,
+    showMonthAfterYear: js.UndefOr[scala.Boolean] = js.undefined,
+    showWeekNumber: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: java.lang.String = null,
+    toString: js.Function2[/* date */ stdLib.Date, /* format */ js.UndefOr[java.lang.String], java.lang.String] = null,
+    trigger: stdLib.HTMLElement = null,
+    yearRange: scala.Double | js.Array[scala.Double] = null,
+    yearSuffix: java.lang.String = null
+  ): PikadayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    if (!js.isUndefined(blurFieldOnSelect)) __obj.updateDynamic("blurFieldOnSelect")(blurFieldOnSelect)
+    if (!js.isUndefined(bound)) __obj.updateDynamic("bound")(bound)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate)
+    if (disableDayFn != null) __obj.updateDynamic("disableDayFn")(disableDayFn)
+    if (!js.isUndefined(disableWeekends)) __obj.updateDynamic("disableWeekends")(disableWeekends)
+    if (!js.isUndefined(enableSelectionDaysInNextAndPreviousMonths)) __obj.updateDynamic("enableSelectionDaysInNextAndPreviousMonths")(enableSelectionDaysInNextAndPreviousMonths)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(formatStrict)) __obj.updateDynamic("formatStrict")(formatStrict)
+    if (i18n != null) __obj.updateDynamic("i18n")(i18n)
+    if (!js.isUndefined(isRTL)) __obj.updateDynamic("isRTL")(isRTL)
+    if (!js.isUndefined(keyboardInput)) __obj.updateDynamic("keyboardInput")(keyboardInput)
+    if (mainCalendar != null) __obj.updateDynamic("mainCalendar")(mainCalendar)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (numberOfMonths != null) __obj.updateDynamic("numberOfMonths")(numberOfMonths.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onDraw != null) __obj.updateDynamic("onDraw")(onDraw)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (!js.isUndefined(pickWholeWeek)) __obj.updateDynamic("pickWholeWeek")(pickWholeWeek)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(reposition)) __obj.updateDynamic("reposition")(reposition)
+    if (!js.isUndefined(setDefaultDate)) __obj.updateDynamic("setDefaultDate")(setDefaultDate)
+    if (!js.isUndefined(showDaysInNextAndPreviousMonths)) __obj.updateDynamic("showDaysInNextAndPreviousMonths")(showDaysInNextAndPreviousMonths)
+    if (!js.isUndefined(showMonthAfterYear)) __obj.updateDynamic("showMonthAfterYear")(showMonthAfterYear)
+    if (!js.isUndefined(showWeekNumber)) __obj.updateDynamic("showWeekNumber")(showWeekNumber)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (toString != null) __obj.updateDynamic("toString")(toString)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (yearRange != null) __obj.updateDynamic("yearRange")(yearRange.asInstanceOf[js.Any])
+    if (yearSuffix != null) __obj.updateDynamic("yearSuffix")(yearSuffix)
+    __obj.asInstanceOf[PikadayOptions]
+  }
+}
+

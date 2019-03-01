@@ -48,3 +48,28 @@ trait ReverseGeocodeRequestOptions extends js.Object {
   def callback(placeResult: IPlaceResult, userData: js.Any): scala.Unit
 }
 
+object ReverseGeocodeRequestOptions {
+  @scala.inline
+  def apply(
+    callback: js.Function2[IPlaceResult, js.Any, scala.Unit],
+    location: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    errorCallback: js.Function1[/* reverseGeocodeRequestOptions */ ReverseGeocodeRequestOptions, scala.Unit] = null,
+    includeCountryIso2: js.UndefOr[scala.Boolean] = js.undefined,
+    includeEntityTypes: js.Array[java.lang.String] = null,
+    includeNeighborhood: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    userData: js.Any = null
+  ): ReverseGeocodeRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("location")(location)
+    if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)
+    if (!js.isUndefined(includeCountryIso2)) __obj.updateDynamic("includeCountryIso2")(includeCountryIso2)
+    if (includeEntityTypes != null) __obj.updateDynamic("includeEntityTypes")(includeEntityTypes)
+    if (!js.isUndefined(includeNeighborhood)) __obj.updateDynamic("includeNeighborhood")(includeNeighborhood)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData)
+    __obj.asInstanceOf[ReverseGeocodeRequestOptions]
+  }
+}
+

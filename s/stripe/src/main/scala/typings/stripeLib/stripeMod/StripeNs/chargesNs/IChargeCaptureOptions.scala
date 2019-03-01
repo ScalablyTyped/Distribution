@@ -16,3 +16,18 @@ trait IChargeCaptureOptions
   var amount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IChargeCaptureOptions {
+  @scala.inline
+  def apply(
+    amount: scala.Int | scala.Double = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null
+  ): IChargeCaptureOptions = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    __obj.asInstanceOf[IChargeCaptureOptions]
+  }
+}
+

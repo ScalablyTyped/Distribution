@@ -16,3 +16,20 @@ trait LicenseAssignmentList extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LicenseAssignmentList {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    items: js.Array[LicenseAssignment] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null
+  ): LicenseAssignmentList = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[LicenseAssignmentList]
+  }
+}
+

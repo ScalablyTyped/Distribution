@@ -100,3 +100,68 @@ import scala.scalajs.js.annotation._
   var updateRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], IBasic]] = js.undefined
 }
 
+object IPanel {
+  @scala.inline
+  def apply(
+    IFieldAncestor: IFieldAncestor = null,
+    IPanel: extjsLib.ExtNs.panelNs.IPanel = null,
+    checkChange: js.Function0[scala.Unit] = null,
+    getForm: js.Function0[IBasic] = null,
+    getRecord: js.Function0[extjsLib.ExtNs.dataNs.IModel] = null,
+    getValues: js.Function4[
+      /* asString */ js.UndefOr[scala.Boolean], 
+      /* dirtyOnly */ js.UndefOr[scala.Boolean], 
+      /* includeEmptyText */ js.UndefOr[scala.Boolean], 
+      /* useDataValues */ js.UndefOr[scala.Boolean], 
+      _
+    ] = null,
+    hasInvalidField: js.Function0[scala.Unit] = null,
+    initFieldAncestor: js.Function0[scala.Unit] = null,
+    isDirty: js.Function0[scala.Boolean] = null,
+    isValid: js.Function0[scala.Boolean] = null,
+    layout: js.Any = null,
+    load: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    loadRecord: js.Function1[/* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], IBasic] = null,
+    onFieldErrorChange: js.Function2[
+      /* field */ js.UndefOr[ILabelable], 
+      /* error */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ] = null,
+    onFieldValidityChange: js.Function2[
+      /* field */ js.UndefOr[extjsLib.ExtNs.formNs.fieldNs.IField], 
+      /* valid */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    pollForChanges: js.UndefOr[scala.Boolean] = js.undefined,
+    pollInterval: scala.Int | scala.Double = null,
+    startPolling: js.Function1[/* interval */ js.UndefOr[scala.Double], scala.Unit] = null,
+    stopPolling: js.Function0[scala.Unit] = null,
+    submit: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    updateRecord: js.Function1[/* record */ js.UndefOr[extjsLib.ExtNs.dataNs.IModel], IBasic] = null
+  ): IPanel = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IFieldAncestor)
+    js.Dynamic.global.Object.assign(__obj, IPanel)
+    if (checkChange != null) __obj.updateDynamic("checkChange")(checkChange)
+    if (getForm != null) __obj.updateDynamic("getForm")(getForm)
+    if (getRecord != null) __obj.updateDynamic("getRecord")(getRecord)
+    if (getValues != null) __obj.updateDynamic("getValues")(getValues)
+    if (hasInvalidField != null) __obj.updateDynamic("hasInvalidField")(hasInvalidField)
+    if (initFieldAncestor != null) __obj.updateDynamic("initFieldAncestor")(initFieldAncestor)
+    if (isDirty != null) __obj.updateDynamic("isDirty")(isDirty)
+    if (isValid != null) __obj.updateDynamic("isValid")(isValid)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loadRecord != null) __obj.updateDynamic("loadRecord")(loadRecord)
+    if (onFieldErrorChange != null) __obj.updateDynamic("onFieldErrorChange")(onFieldErrorChange)
+    if (onFieldValidityChange != null) __obj.updateDynamic("onFieldValidityChange")(onFieldValidityChange)
+    if (!js.isUndefined(pollForChanges)) __obj.updateDynamic("pollForChanges")(pollForChanges)
+    if (pollInterval != null) __obj.updateDynamic("pollInterval")(pollInterval.asInstanceOf[js.Any])
+    if (startPolling != null) __obj.updateDynamic("startPolling")(startPolling)
+    if (stopPolling != null) __obj.updateDynamic("stopPolling")(stopPolling)
+    if (submit != null) __obj.updateDynamic("submit")(submit)
+    if (updateRecord != null) __obj.updateDynamic("updateRecord")(updateRecord)
+    __obj.asInstanceOf[IPanel]
+  }
+}
+

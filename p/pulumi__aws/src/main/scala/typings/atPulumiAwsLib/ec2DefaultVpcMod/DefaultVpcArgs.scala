@@ -27,3 +27,22 @@ trait DefaultVpcArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object DefaultVpcArgs {
+  @scala.inline
+  def apply(
+    enableClassiclink: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableClassiclinkDnsSupport: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableDnsHostnames: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    enableDnsSupport: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): DefaultVpcArgs = {
+    val __obj = js.Dynamic.literal()
+    if (enableClassiclink != null) __obj.updateDynamic("enableClassiclink")(enableClassiclink.asInstanceOf[js.Any])
+    if (enableClassiclinkDnsSupport != null) __obj.updateDynamic("enableClassiclinkDnsSupport")(enableClassiclinkDnsSupport.asInstanceOf[js.Any])
+    if (enableDnsHostnames != null) __obj.updateDynamic("enableDnsHostnames")(enableDnsHostnames.asInstanceOf[js.Any])
+    if (enableDnsSupport != null) __obj.updateDynamic("enableDnsSupport")(enableDnsSupport.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultVpcArgs]
+  }
+}
+

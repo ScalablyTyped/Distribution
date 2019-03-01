@@ -13,3 +13,22 @@ trait Anon_AckClientTransaction extends js.Object {
   var NonInviteServerTransaction: js.Any
 }
 
+object Anon_AckClientTransaction {
+  @scala.inline
+  def apply(
+    AckClientTransaction: js.Any,
+    InviteClientTransaction: js.Any,
+    InviteServerTransaction: js.Any,
+    NonInviteClientTransaction: js.Any,
+    NonInviteServerTransaction: js.Any
+  ): Anon_AckClientTransaction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AckClientTransaction")(AckClientTransaction)
+    __obj.updateDynamic("InviteClientTransaction")(InviteClientTransaction)
+    __obj.updateDynamic("InviteServerTransaction")(InviteServerTransaction)
+    __obj.updateDynamic("NonInviteClientTransaction")(NonInviteClientTransaction)
+    __obj.updateDynamic("NonInviteServerTransaction")(NonInviteServerTransaction)
+    __obj.asInstanceOf[Anon_AckClientTransaction]
+  }
+}
+

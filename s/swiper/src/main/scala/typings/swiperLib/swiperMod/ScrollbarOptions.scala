@@ -48,3 +48,26 @@ trait ScrollbarOptions extends js.Object {
   var snapOnRelease: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ScrollbarOptions {
+  @scala.inline
+  def apply(
+    el: SelectableElement,
+    dragClass: java.lang.String = null,
+    dragSize: swiperLib.swiperLibStrings.auto | scala.Double = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    hide: js.UndefOr[scala.Boolean] = js.undefined,
+    lockClass: java.lang.String = null,
+    snapOnRelease: js.UndefOr[scala.Boolean] = js.undefined
+  ): ScrollbarOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("el")(el.asInstanceOf[js.Any])
+    if (dragClass != null) __obj.updateDynamic("dragClass")(dragClass)
+    if (dragSize != null) __obj.updateDynamic("dragSize")(dragSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(hide)) __obj.updateDynamic("hide")(hide)
+    if (lockClass != null) __obj.updateDynamic("lockClass")(lockClass)
+    if (!js.isUndefined(snapOnRelease)) __obj.updateDynamic("snapOnRelease")(snapOnRelease)
+    __obj.asInstanceOf[ScrollbarOptions]
+  }
+}
+

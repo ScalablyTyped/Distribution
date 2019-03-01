@@ -10,3 +10,16 @@ trait Anon_CommandBarView extends js.Object {
   val View: activexDashOutlookLib.OutlookNs.View
 }
 
+object Anon_CommandBarView {
+  @scala.inline
+  def apply(
+    CommandBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any,
+    View: activexDashOutlookLib.OutlookNs.View
+  ): Anon_CommandBarView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CommandBar")(CommandBar)
+    __obj.updateDynamic("View")(View)
+    __obj.asInstanceOf[Anon_CommandBarView]
+  }
+}
+

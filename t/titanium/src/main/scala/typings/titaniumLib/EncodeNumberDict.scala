@@ -31,3 +31,21 @@ trait EncodeNumberDict extends js.Object {
   var `type`: java.lang.String
 }
 
+object EncodeNumberDict {
+  @scala.inline
+  def apply(
+    dest: titaniumLib.TitaniumNs.Buffer,
+    source: scala.Double,
+    `type`: java.lang.String,
+    byteOrder: scala.Int | scala.Double = null,
+    position: scala.Int | scala.Double = null
+  ): EncodeNumberDict = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("dest")(dest)
+    __obj.updateDynamic("source")(source)
+    if (byteOrder != null) __obj.updateDynamic("byteOrder")(byteOrder.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EncodeNumberDict]
+  }
+}
+

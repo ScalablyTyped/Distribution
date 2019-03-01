@@ -89,3 +89,53 @@ trait TreeHierarchicalDataSourceSettingsTreeDS
   var sorting: js.UndefOr[TreeHierarchicalDataSourceSettingsTreeDSSorting] = js.undefined
 }
 
+object TreeHierarchicalDataSourceSettingsTreeDS {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for TreeHierarchicalDataSourceSettingsTreeDS
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    childDataKey: java.lang.String = null,
+    customEncodeUrlFunc: js.Function = null,
+    dataLevelKey: java.lang.String = null,
+    dataSourceUrl: java.lang.String = null,
+    enableRemoteLoadOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
+    expandedKey: java.lang.String = null,
+    filtering: TreeHierarchicalDataSourceSettingsTreeDSFiltering = null,
+    foreignKey: java.lang.String = null,
+    initialExpandDepth: scala.Int | scala.Double = null,
+    initialFlatDataView: js.UndefOr[scala.Boolean] = js.undefined,
+    paging: TreeHierarchicalDataSourceSettingsTreeDSPaging = null,
+    persistExpansionStates: js.UndefOr[scala.Boolean] = js.undefined,
+    propertyDataLevel: java.lang.String = null,
+    propertyExpanded: java.lang.String = null,
+    requestDataCallback: js.Function = null,
+    requestDataErrorCallback: js.Function = null,
+    requestDataSuccessCallback: js.Function = null,
+    sorting: TreeHierarchicalDataSourceSettingsTreeDSSorting = null
+  ): TreeHierarchicalDataSourceSettingsTreeDS = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (childDataKey != null) __obj.updateDynamic("childDataKey")(childDataKey)
+    if (customEncodeUrlFunc != null) __obj.updateDynamic("customEncodeUrlFunc")(customEncodeUrlFunc)
+    if (dataLevelKey != null) __obj.updateDynamic("dataLevelKey")(dataLevelKey)
+    if (dataSourceUrl != null) __obj.updateDynamic("dataSourceUrl")(dataSourceUrl)
+    if (!js.isUndefined(enableRemoteLoadOnDemand)) __obj.updateDynamic("enableRemoteLoadOnDemand")(enableRemoteLoadOnDemand)
+    if (expandedKey != null) __obj.updateDynamic("expandedKey")(expandedKey)
+    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey)
+    if (initialExpandDepth != null) __obj.updateDynamic("initialExpandDepth")(initialExpandDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(initialFlatDataView)) __obj.updateDynamic("initialFlatDataView")(initialFlatDataView)
+    if (paging != null) __obj.updateDynamic("paging")(paging)
+    if (!js.isUndefined(persistExpansionStates)) __obj.updateDynamic("persistExpansionStates")(persistExpansionStates)
+    if (propertyDataLevel != null) __obj.updateDynamic("propertyDataLevel")(propertyDataLevel)
+    if (propertyExpanded != null) __obj.updateDynamic("propertyExpanded")(propertyExpanded)
+    if (requestDataCallback != null) __obj.updateDynamic("requestDataCallback")(requestDataCallback)
+    if (requestDataErrorCallback != null) __obj.updateDynamic("requestDataErrorCallback")(requestDataErrorCallback)
+    if (requestDataSuccessCallback != null) __obj.updateDynamic("requestDataSuccessCallback")(requestDataSuccessCallback)
+    if (sorting != null) __obj.updateDynamic("sorting")(sorting)
+    __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDS]
+  }
+}
+

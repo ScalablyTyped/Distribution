@@ -44,3 +44,28 @@ trait DashboardSpecialValuesStatic extends js.Object {
   def IsOthersValue(value: js.Object): scala.Boolean
 }
 
+object DashboardSpecialValuesStatic {
+  @scala.inline
+  def apply(
+    ErrorValue: java.lang.String,
+    IsErrorValue: js.Function1[js.Object, scala.Boolean],
+    IsNullValue: js.Function1[js.Object, scala.Boolean],
+    IsOlapNullValue: js.Function1[js.Object, scala.Boolean],
+    IsOthersValue: js.Function1[js.Object, scala.Boolean],
+    NullValue: java.lang.String,
+    OlapNullValue: java.lang.String,
+    OthersValue: java.lang.String
+  ): DashboardSpecialValuesStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ErrorValue")(ErrorValue)
+    __obj.updateDynamic("IsErrorValue")(IsErrorValue)
+    __obj.updateDynamic("IsNullValue")(IsNullValue)
+    __obj.updateDynamic("IsOlapNullValue")(IsOlapNullValue)
+    __obj.updateDynamic("IsOthersValue")(IsOthersValue)
+    __obj.updateDynamic("NullValue")(NullValue)
+    __obj.updateDynamic("OlapNullValue")(OlapNullValue)
+    __obj.updateDynamic("OthersValue")(OthersValue)
+    __obj.asInstanceOf[DashboardSpecialValuesStatic]
+  }
+}
+

@@ -20,3 +20,20 @@ trait ITimelineConfig extends js.Object {
   var title: js.UndefOr[ITimelineSlideData] = js.undefined
 }
 
+object ITimelineConfig {
+  @scala.inline
+  def apply(
+    events: js.Array[ITimelineSlideData],
+    eras: js.Array[ITimelineEra] = null,
+    scale: timelinejs3Lib.timelinejs3LibStrings.human | timelinejs3Lib.timelinejs3LibStrings.cosmological = null,
+    title: ITimelineSlideData = null
+  ): ITimelineConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("events")(events)
+    if (eras != null) __obj.updateDynamic("eras")(eras)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ITimelineConfig]
+  }
+}
+

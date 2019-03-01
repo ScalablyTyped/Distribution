@@ -20,3 +20,13 @@ trait EventScope extends js.Object {
   var `type`: java.lang.String
 }
 
+object EventScope {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String, `type`: java.lang.String): EventScope = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[EventScope]
+  }
+}
+

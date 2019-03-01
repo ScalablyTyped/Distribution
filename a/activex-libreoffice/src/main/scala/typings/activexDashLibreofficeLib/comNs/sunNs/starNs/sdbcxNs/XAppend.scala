@@ -17,3 +17,20 @@ trait XAppend
   def appendByDescriptor(descriptor: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet): scala.Unit
 }
 
+object XAppend {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    appendByDescriptor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAppend = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("appendByDescriptor")(appendByDescriptor)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAppend]
+  }
+}
+

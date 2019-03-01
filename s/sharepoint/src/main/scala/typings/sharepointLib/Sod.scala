@@ -15,3 +15,26 @@ trait Sod extends js.Object {
   var url: java.lang.String
 }
 
+object Sod {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    loaded: scala.Boolean,
+    state: Sods,
+    url: java.lang.String,
+    depkeys: js.Array[java.lang.String] = null,
+    qfn: js.Array[_] = null,
+    reset: js.UndefOr[scala.Boolean] = js.undefined
+  ): Sod = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("loaded")(loaded)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("url")(url)
+    if (depkeys != null) __obj.updateDynamic("depkeys")(depkeys)
+    if (qfn != null) __obj.updateDynamic("qfn")(qfn)
+    if (!js.isUndefined(reset)) __obj.updateDynamic("reset")(reset)
+    __obj.asInstanceOf[Sod]
+  }
+}
+

@@ -16,3 +16,13 @@ trait IntegerSize2D extends js.Object {
   var Width: scala.Double
 }
 
+object IntegerSize2D {
+  @scala.inline
+  def apply(Height: scala.Double, Width: scala.Double): IntegerSize2D = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("Width")(Width)
+    __obj.asInstanceOf[IntegerSize2D]
+  }
+}
+

@@ -37,3 +37,26 @@ trait DynamsoftLib extends js.Object {
   def showMask(): scala.Unit
 }
 
+object DynamsoftLib {
+  @scala.inline
+  def apply(
+    NewOCRReadPara: js.Function0[OCRReadPara],
+    NewOCRZone: js.Function0[OCRZone],
+    NewRedaction: js.Function0[Redaction],
+    detect: Anon_Ssl,
+    env: Anon_BChrome,
+    hideMask: js.Function0[scala.Unit],
+    showMask: js.Function0[scala.Unit]
+  ): DynamsoftLib = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NewOCRReadPara")(NewOCRReadPara)
+    __obj.updateDynamic("NewOCRZone")(NewOCRZone)
+    __obj.updateDynamic("NewRedaction")(NewRedaction)
+    __obj.updateDynamic("detect")(detect)
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("hideMask")(hideMask)
+    __obj.updateDynamic("showMask")(showMask)
+    __obj.asInstanceOf[DynamsoftLib]
+  }
+}
+

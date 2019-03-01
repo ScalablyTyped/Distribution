@@ -10,3 +10,13 @@ trait Anon_StderrStdout extends js.Object {
   var stdout: Buffer
 }
 
+object Anon_StderrStdout {
+  @scala.inline
+  def apply(stderr: Buffer, stdout: Buffer): Anon_StderrStdout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stderr")(stderr)
+    __obj.updateDynamic("stdout")(stdout)
+    __obj.asInstanceOf[Anon_StderrStdout]
+  }
+}
+

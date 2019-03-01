@@ -10,3 +10,15 @@ trait Avatar extends js.Object {
   var `type`: intercomDashClientLib.intercomDashClientLibStrings.avatar
 }
 
+object Avatar {
+  @scala.inline
+  def apply(
+    `type`: intercomDashClientLib.intercomDashClientLibStrings.avatar,
+    image_url: java.lang.String = null
+  ): Avatar = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (image_url != null) __obj.updateDynamic("image_url")(image_url)
+    __obj.asInstanceOf[Avatar]
+  }
+}
+

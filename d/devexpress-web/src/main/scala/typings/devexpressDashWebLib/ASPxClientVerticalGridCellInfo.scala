@@ -21,3 +21,13 @@ trait ASPxClientVerticalGridCellInfo extends js.Object {
   var row: ASPxClientVerticalGridRow
 }
 
+object ASPxClientVerticalGridCellInfo {
+  @scala.inline
+  def apply(recordVisibleIndex: scala.Double, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridCellInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("recordVisibleIndex")(recordVisibleIndex)
+    __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[ASPxClientVerticalGridCellInfo]
+  }
+}
+

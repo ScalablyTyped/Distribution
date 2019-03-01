@@ -23,3 +23,22 @@ trait Model extends js.Object {
   var onZoomFactorChange: js.UndefOr[js.Function1[/* e */ OnZoomFactorChangeEventArgs, scala.Unit]] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    importExportSettings: ImportExportSettings = null,
+    onDocumentChange: js.Function1[/* e */ OnDocumentChangeEventArgs, scala.Unit] = null,
+    onRequestNavigate: js.Function1[/* e */ OnRequestNavigateEventArgs, scala.Unit] = null,
+    onSelectionChange: js.Function1[/* e */ OnSelectionChangeEventArgs, scala.Unit] = null,
+    onZoomFactorChange: js.Function1[/* e */ OnZoomFactorChangeEventArgs, scala.Unit] = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (importExportSettings != null) __obj.updateDynamic("importExportSettings")(importExportSettings)
+    if (onDocumentChange != null) __obj.updateDynamic("onDocumentChange")(onDocumentChange)
+    if (onRequestNavigate != null) __obj.updateDynamic("onRequestNavigate")(onRequestNavigate)
+    if (onSelectionChange != null) __obj.updateDynamic("onSelectionChange")(onSelectionChange)
+    if (onZoomFactorChange != null) __obj.updateDynamic("onZoomFactorChange")(onZoomFactorChange)
+    __obj.asInstanceOf[Model]
+  }
+}
+

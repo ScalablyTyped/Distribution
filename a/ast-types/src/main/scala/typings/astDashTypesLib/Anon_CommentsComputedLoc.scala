@@ -13,3 +13,21 @@ trait Anon_CommentsComputedLoc extends js.Object {
   var property: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind
 }
 
+object Anon_CommentsComputedLoc {
+  @scala.inline
+  def apply(
+    `object`: astDashTypesLib.genKindsMod.ExpressionKind,
+    property: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.ExpressionKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    computed: js.UndefOr[scala.Boolean] = js.undefined,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsComputedLoc = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("property")(property.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (!js.isUndefined(computed)) __obj.updateDynamic("computed")(computed)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsComputedLoc]
+  }
+}
+

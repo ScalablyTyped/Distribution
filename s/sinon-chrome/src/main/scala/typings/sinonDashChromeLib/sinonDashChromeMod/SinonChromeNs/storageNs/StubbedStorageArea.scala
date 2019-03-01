@@ -13,3 +13,22 @@ trait StubbedStorageArea extends js.Object {
   var set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
 }
 
+object StubbedStorageArea {
+  @scala.inline
+  def apply(
+    clear: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
+    get: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
+    getBytesInUse: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
+    remove: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub,
+    set: sinonDashChromeLib.sinonDashChromeMod.SinonChromeStub
+  ): StubbedStorageArea = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getBytesInUse")(getBytesInUse)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[StubbedStorageArea]
+  }
+}
+

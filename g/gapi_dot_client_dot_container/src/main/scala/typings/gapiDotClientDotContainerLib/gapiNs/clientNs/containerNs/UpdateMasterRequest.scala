@@ -14,3 +14,12 @@ trait UpdateMasterRequest extends js.Object {
   var masterVersion: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UpdateMasterRequest {
+  @scala.inline
+  def apply(masterVersion: java.lang.String = null): UpdateMasterRequest = {
+    val __obj = js.Dynamic.literal()
+    if (masterVersion != null) __obj.updateDynamic("masterVersion")(masterVersion)
+    __obj.asInstanceOf[UpdateMasterRequest]
+  }
+}
+

@@ -13,10 +13,12 @@ object reactDashNativeDashElementsLibStrings {
   sealed trait android extends js.Object
   
   @js.native
-  sealed trait angellist extends js.Object
+  sealed trait angellist
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait antdesign extends js.Object
+  sealed trait antdesign
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
   sealed trait center extends js.Object
@@ -25,52 +27,65 @@ object reactDashNativeDashElementsLibStrings {
   sealed trait clear extends js.Object
   
   @js.native
-  sealed trait codepen extends js.Object
+  sealed trait codepen
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait entypo extends js.Object
+  sealed trait entypo
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait evilicon extends js.Object
+  sealed trait evilicon
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
-  sealed trait facebook extends js.Object
+  sealed trait facebook
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait `font-awesome` extends js.Object
+  sealed trait `font-awesome`
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
-  sealed trait foundation extends js.Object
+  sealed trait foundation
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
-  sealed trait foursquare extends js.Object
+  sealed trait foursquare
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait github extends js.Object
+  sealed trait github
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait `github-alt` extends js.Object
+  sealed trait `github-alt`
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait gitlab extends js.Object
+  sealed trait gitlab
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait `google-plus-official` extends js.Object
+  sealed trait `google-plus-official`
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait instagram extends js.Object
+  sealed trait instagram
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait ionicon extends js.Object
+  sealed trait ionicon
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
   sealed trait ios extends js.Object
@@ -82,37 +97,45 @@ object reactDashNativeDashElementsLibStrings {
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait linkedin extends js.Object
+  sealed trait linkedin
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait material extends js.Object
+  sealed trait material
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
-  sealed trait `material-community` extends js.Object
+  sealed trait `material-community`
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait medium
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait octicon extends js.Object
+  sealed trait octicon
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
   sealed trait outline extends js.Object
   
   @js.native
-  sealed trait pinterest extends js.Object
+  sealed trait pinterest
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
   sealed trait primary extends js.Object
   
   @js.native
-  sealed trait quora extends js.Object
+  sealed trait quora
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait `simple-line-icon` extends js.Object
+  sealed trait `simple-line-icon`
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @js.native
   sealed trait small extends js.Object
@@ -121,13 +144,15 @@ object reactDashNativeDashElementsLibStrings {
   sealed trait solid extends js.Object
   
   @js.native
-  sealed trait soundcloud extends js.Object
+  sealed trait soundcloud
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
   sealed trait spring extends js.Object
   
   @js.native
-  sealed trait stumbleupon extends js.Object
+  sealed trait stumbleupon
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
   sealed trait success extends js.Object
@@ -136,34 +161,41 @@ object reactDashNativeDashElementsLibStrings {
   sealed trait timing extends js.Object
   
   @js.native
-  sealed trait tumblr extends js.Object
+  sealed trait tumblr
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait twitch extends js.Object
+  sealed trait twitch
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait twitter extends js.Object
+  sealed trait twitter
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
   sealed trait vertical extends js.Object
   
   @js.native
-  sealed trait vimeo extends js.Object
+  sealed trait vimeo
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
   sealed trait warning extends js.Object
   
   @js.native
-  sealed trait wordpress extends js.Object
+  sealed trait wordpress
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
   sealed trait xlarge extends js.Object
   
   @js.native
-  sealed trait youtube extends js.Object
+  sealed trait youtube
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod.SocialMediaType
   
   @js.native
-  sealed trait zocial extends js.Object
+  sealed trait zocial
+    extends reactDashNativeDashElementsLib.reactDashNativeDashElementsMod._IconType
   
   @scala.inline
   def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]

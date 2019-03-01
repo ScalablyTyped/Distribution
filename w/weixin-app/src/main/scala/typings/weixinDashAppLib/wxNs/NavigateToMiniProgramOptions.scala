@@ -19,3 +19,26 @@ trait NavigateToMiniProgramOptions
   var success_NavigateToMiniProgramOptions: js.UndefOr[js.Function1[/* res */ weixinDashAppLib.Anon_ErrMsg, scala.Unit]] = js.undefined
 }
 
+object NavigateToMiniProgramOptions {
+  @scala.inline
+  def apply(
+    appId: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    envVersion: java.lang.String = null,
+    extraData: js.Any = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    path: java.lang.String = null,
+    success: js.Function1[/* res */ weixinDashAppLib.Anon_ErrMsg, scala.Unit] = null
+  ): NavigateToMiniProgramOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appId")(appId)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (envVersion != null) __obj.updateDynamic("envVersion")(envVersion)
+    if (extraData != null) __obj.updateDynamic("extraData")(extraData)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[NavigateToMiniProgramOptions]
+  }
+}
+

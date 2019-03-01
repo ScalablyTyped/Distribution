@@ -20,3 +20,13 @@ trait UpdateSlidesPositionRequest extends js.Object {
   var slideObjectIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object UpdateSlidesPositionRequest {
+  @scala.inline
+  def apply(insertionIndex: scala.Int | scala.Double = null, slideObjectIds: js.Array[java.lang.String] = null): UpdateSlidesPositionRequest = {
+    val __obj = js.Dynamic.literal()
+    if (insertionIndex != null) __obj.updateDynamic("insertionIndex")(insertionIndex.asInstanceOf[js.Any])
+    if (slideObjectIds != null) __obj.updateDynamic("slideObjectIds")(slideObjectIds)
+    __obj.asInstanceOf[UpdateSlidesPositionRequest]
+  }
+}
+

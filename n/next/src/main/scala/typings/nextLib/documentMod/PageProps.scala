@@ -9,3 +9,12 @@ trait PageProps extends js.Object {
   var url: java.lang.String
 }
 
+object PageProps {
+  @scala.inline
+  def apply(url: java.lang.String): PageProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[PageProps]
+  }
+}
+

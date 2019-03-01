@@ -15,3 +15,12 @@ trait LocationContext extends js.Object {
   var geoCriteriaIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object LocationContext {
+  @scala.inline
+  def apply(geoCriteriaIds: js.Array[scala.Double] = null): LocationContext = {
+    val __obj = js.Dynamic.literal()
+    if (geoCriteriaIds != null) __obj.updateDynamic("geoCriteriaIds")(geoCriteriaIds)
+    __obj.asInstanceOf[LocationContext]
+  }
+}
+

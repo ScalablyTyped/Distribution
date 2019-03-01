@@ -16,3 +16,28 @@ trait Anon_Badge extends js.Object {
   var onClick: js.UndefOr[js.Function1[/* state */ jpmLib.FFAddonSDKNs.ActionButton, _]] = js.undefined
 }
 
+object Anon_Badge {
+  @scala.inline
+  def apply(
+    icon: jpmLib.FFAddonSDKNs.Icon,
+    id: java.lang.String,
+    label: java.lang.String,
+    badge: java.lang.String | scala.Double = null,
+    badgeColor: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    onChange: js.Function1[/* state */ jpmLib.FFAddonSDKNs.ActionButtonState, _] = null,
+    onClick: js.Function1[/* state */ jpmLib.FFAddonSDKNs.ActionButton, _] = null
+  ): Anon_Badge = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("label")(label)
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (badgeColor != null) __obj.updateDynamic("badgeColor")(badgeColor)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    __obj.asInstanceOf[Anon_Badge]
+  }
+}
+

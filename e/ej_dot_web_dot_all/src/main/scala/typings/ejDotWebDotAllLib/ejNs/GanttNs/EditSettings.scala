@@ -40,3 +40,28 @@ trait EditSettings extends js.Object {
   var showDeleteConfirmDialog: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EditSettings {
+  @scala.inline
+  def apply(
+    allowAdding: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDeleting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    beginEditAction: BeginEditAction | java.lang.String = null,
+    editMode: java.lang.String = null,
+    rowPosition: RowPosition | java.lang.String = null,
+    showDeleteConfirmDialog: js.UndefOr[scala.Boolean] = js.undefined
+  ): EditSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowAdding)) __obj.updateDynamic("allowAdding")(allowAdding)
+    if (!js.isUndefined(allowDeleting)) __obj.updateDynamic("allowDeleting")(allowDeleting)
+    if (!js.isUndefined(allowEditing)) __obj.updateDynamic("allowEditing")(allowEditing)
+    if (!js.isUndefined(allowIndent)) __obj.updateDynamic("allowIndent")(allowIndent)
+    if (beginEditAction != null) __obj.updateDynamic("beginEditAction")(beginEditAction.asInstanceOf[js.Any])
+    if (editMode != null) __obj.updateDynamic("editMode")(editMode)
+    if (rowPosition != null) __obj.updateDynamic("rowPosition")(rowPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(showDeleteConfirmDialog)) __obj.updateDynamic("showDeleteConfirmDialog")(showDeleteConfirmDialog)
+    __obj.asInstanceOf[EditSettings]
+  }
+}
+

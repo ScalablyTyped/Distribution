@@ -46,3 +46,24 @@ trait AnnotationsOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AnnotationsOptions {
+  @scala.inline
+  def apply(
+    labelOptions: AnnotationsLabelOptions = null,
+    labels: js.Array[AnnotationsLabel] = null,
+    shapeOptions: AnnotationsShapeOptions = null,
+    shapes: js.Array[AnnotationsShape] = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): AnnotationsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (labelOptions != null) __obj.updateDynamic("labelOptions")(labelOptions)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (shapeOptions != null) __obj.updateDynamic("shapeOptions")(shapeOptions)
+    if (shapes != null) __obj.updateDynamic("shapes")(shapes)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnnotationsOptions]
+  }
+}
+

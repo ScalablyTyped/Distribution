@@ -10,3 +10,13 @@ trait Anon_Hostname extends js.Object {
   var service: java.lang.String
 }
 
+object Anon_Hostname {
+  @scala.inline
+  def apply(hostname: java.lang.String, service: java.lang.String): Anon_Hostname = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hostname")(hostname)
+    __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[Anon_Hostname]
+  }
+}
+

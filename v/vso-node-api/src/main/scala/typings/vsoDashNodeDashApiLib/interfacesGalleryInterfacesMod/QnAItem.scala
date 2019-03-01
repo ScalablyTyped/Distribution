@@ -32,3 +32,24 @@ trait QnAItem extends js.Object {
   var user: UserIdentityRef
 }
 
+object QnAItem {
+  @scala.inline
+  def apply(
+    createdDate: stdLib.Date,
+    id: scala.Double,
+    status: QnAItemStatus,
+    text: java.lang.String,
+    updatedDate: stdLib.Date,
+    user: UserIdentityRef
+  ): QnAItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("updatedDate")(updatedDate)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[QnAItem]
+  }
+}
+

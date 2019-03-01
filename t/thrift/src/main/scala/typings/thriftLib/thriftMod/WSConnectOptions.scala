@@ -14,3 +14,24 @@ trait WSConnectOptions extends js.Object {
   var wsOptions: js.UndefOr[WSOptions] = js.undefined
 }
 
+object WSConnectOptions {
+  @scala.inline
+  def apply(
+    headers: HttpHeaders = null,
+    path: java.lang.String = null,
+    protocol: TProtocolConstructor = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    transport: TTransportConstructor = null,
+    wsOptions: WSOptions = null
+  ): WSConnectOptions = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (wsOptions != null) __obj.updateDynamic("wsOptions")(wsOptions)
+    __obj.asInstanceOf[WSConnectOptions]
+  }
+}
+

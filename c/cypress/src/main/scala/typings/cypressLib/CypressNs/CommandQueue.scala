@@ -14,3 +14,22 @@ trait CommandQueue extends ObjectLike {
   def toJSON(): js.Array[java.lang.String]
 }
 
+object CommandQueue {
+  @scala.inline
+  def apply(
+    add: js.Function1[js.Any, js.Any],
+    create: js.Function0[CommandQueue],
+    get: js.Function0[js.Any],
+    logs: js.Function1[js.Any, js.Any],
+    toJSON: js.Function0[js.Array[java.lang.String]]
+  ): CommandQueue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("logs")(logs)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[CommandQueue]
+  }
+}
+

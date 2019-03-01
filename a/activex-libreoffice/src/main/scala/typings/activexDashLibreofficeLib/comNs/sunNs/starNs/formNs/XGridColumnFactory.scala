@@ -33,3 +33,27 @@ trait XGridColumnFactory
   def getColumnTypes(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XGridColumnFactory {
+  @scala.inline
+  def apply(
+    ColumnTypes: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    createColumn: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
+    ],
+    getColumnTypes: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XGridColumnFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColumnTypes")(ColumnTypes)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createColumn")(createColumn)
+    __obj.updateDynamic("getColumnTypes")(getColumnTypes)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XGridColumnFactory]
+  }
+}
+

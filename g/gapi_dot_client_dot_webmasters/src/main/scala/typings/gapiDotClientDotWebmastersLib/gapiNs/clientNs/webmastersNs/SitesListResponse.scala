@@ -10,3 +10,12 @@ trait SitesListResponse extends js.Object {
   var siteEntry: js.UndefOr[js.Array[WmxSite]] = js.undefined
 }
 
+object SitesListResponse {
+  @scala.inline
+  def apply(siteEntry: js.Array[WmxSite] = null): SitesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (siteEntry != null) __obj.updateDynamic("siteEntry")(siteEntry)
+    __obj.asInstanceOf[SitesListResponse]
+  }
+}
+

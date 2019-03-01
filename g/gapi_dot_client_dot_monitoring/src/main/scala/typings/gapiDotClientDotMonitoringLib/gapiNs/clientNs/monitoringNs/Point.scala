@@ -17,3 +17,13 @@ trait Point extends js.Object {
   var value: js.UndefOr[TypedValue] = js.undefined
 }
 
+object Point {
+  @scala.inline
+  def apply(interval: TimeInterval = null, value: TypedValue = null): Point = {
+    val __obj = js.Dynamic.literal()
+    if (interval != null) __obj.updateDynamic("interval")(interval)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Point]
+  }
+}
+

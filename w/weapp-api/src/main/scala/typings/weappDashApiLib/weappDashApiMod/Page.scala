@@ -17,3 +17,12 @@ trait Page extends js.Object {
   def setData(data: js.Any): scala.Unit
 }
 
+object Page {
+  @scala.inline
+  def apply(setData: js.Function1[js.Any, scala.Unit]): Page = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setData")(setData)
+    __obj.asInstanceOf[Page]
+  }
+}
+

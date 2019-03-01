@@ -36,3 +36,34 @@ trait VoterInfoResponse extends js.Object {
   var state: js.UndefOr[js.Array[AdministrationRegion]] = js.undefined
 }
 
+object VoterInfoResponse {
+  @scala.inline
+  def apply(
+    contests: js.Array[Contest] = null,
+    dropOffLocations: js.Array[PollingLocation] = null,
+    earlyVoteSites: js.Array[PollingLocation] = null,
+    election: Election = null,
+    kind: java.lang.String = null,
+    mailOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    normalizedInput: SimpleAddressType = null,
+    otherElections: js.Array[Election] = null,
+    pollingLocations: js.Array[PollingLocation] = null,
+    precinctId: java.lang.String = null,
+    state: js.Array[AdministrationRegion] = null
+  ): VoterInfoResponse = {
+    val __obj = js.Dynamic.literal()
+    if (contests != null) __obj.updateDynamic("contests")(contests)
+    if (dropOffLocations != null) __obj.updateDynamic("dropOffLocations")(dropOffLocations)
+    if (earlyVoteSites != null) __obj.updateDynamic("earlyVoteSites")(earlyVoteSites)
+    if (election != null) __obj.updateDynamic("election")(election)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(mailOnly)) __obj.updateDynamic("mailOnly")(mailOnly)
+    if (normalizedInput != null) __obj.updateDynamic("normalizedInput")(normalizedInput)
+    if (otherElections != null) __obj.updateDynamic("otherElections")(otherElections)
+    if (pollingLocations != null) __obj.updateDynamic("pollingLocations")(pollingLocations)
+    if (precinctId != null) __obj.updateDynamic("precinctId")(precinctId)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[VoterInfoResponse]
+  }
+}
+

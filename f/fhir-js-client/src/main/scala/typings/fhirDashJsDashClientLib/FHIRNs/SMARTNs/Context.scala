@@ -27,3 +27,20 @@ trait Context extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Context {
+  @scala.inline
+  def apply(
+    serviceUrl: java.lang.String,
+    auth: AuthContext = null,
+    patientId: java.lang.String = null,
+    userId: java.lang.String = null
+  ): Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("serviceUrl")(serviceUrl)
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (patientId != null) __obj.updateDynamic("patientId")(patientId)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[Context]
+  }
+}
+

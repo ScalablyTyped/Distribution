@@ -48,3 +48,32 @@ trait GoogleApiYouTubeChannelResource extends js.Object {
   var topicDetails: Anon_TopicIds
 }
 
+object GoogleApiYouTubeChannelResource {
+  @scala.inline
+  def apply(
+    brandingSettings: Anon_Channel,
+    contentDetails: Anon_GooglePlusUserId,
+    etag: java.lang.String,
+    id: java.lang.String,
+    invideoPromotion: Anon_Items,
+    kind: java.lang.String,
+    snippet: Anon_Description,
+    statistics: Anon_CommentCount,
+    status: Anon_IsLinked,
+    topicDetails: Anon_TopicIds
+  ): GoogleApiYouTubeChannelResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("brandingSettings")(brandingSettings)
+    __obj.updateDynamic("contentDetails")(contentDetails)
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("invideoPromotion")(invideoPromotion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("snippet")(snippet)
+    __obj.updateDynamic("statistics")(statistics)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("topicDetails")(topicDetails)
+    __obj.asInstanceOf[GoogleApiYouTubeChannelResource]
+  }
+}
+

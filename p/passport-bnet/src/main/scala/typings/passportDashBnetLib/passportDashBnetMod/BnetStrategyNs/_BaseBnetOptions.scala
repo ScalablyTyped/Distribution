@@ -13,3 +13,14 @@ import scala.scalajs.js.annotation._
   var region: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object _BaseBnetOptions {
+  @scala.inline
+  def apply(clientID: java.lang.String, clientSecret: java.lang.String, region: java.lang.String = null): _BaseBnetOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientID")(clientID)
+    __obj.updateDynamic("clientSecret")(clientSecret)
+    if (region != null) __obj.updateDynamic("region")(region)
+    __obj.asInstanceOf[_BaseBnetOptions]
+  }
+}
+

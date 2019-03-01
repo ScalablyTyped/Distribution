@@ -12,3 +12,13 @@ trait ProductPermission extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProductPermission {
+  @scala.inline
+  def apply(permissionId: java.lang.String = null, state: java.lang.String = null): ProductPermission = {
+    val __obj = js.Dynamic.literal()
+    if (permissionId != null) __obj.updateDynamic("permissionId")(permissionId)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ProductPermission]
+  }
+}
+

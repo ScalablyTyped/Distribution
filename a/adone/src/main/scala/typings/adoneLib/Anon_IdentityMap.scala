@@ -17,3 +17,18 @@ trait Anon_IdentityMap extends js.Object {
   var loadMaps: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_IdentityMap {
+  @scala.inline
+  def apply(
+    identityMap: js.UndefOr[scala.Boolean] = js.undefined,
+    largeFile: js.UndefOr[scala.Boolean] = js.undefined,
+    loadMaps: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_IdentityMap = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(identityMap)) __obj.updateDynamic("identityMap")(identityMap)
+    if (!js.isUndefined(largeFile)) __obj.updateDynamic("largeFile")(largeFile)
+    if (!js.isUndefined(loadMaps)) __obj.updateDynamic("loadMaps")(loadMaps)
+    __obj.asInstanceOf[Anon_IdentityMap]
+  }
+}
+

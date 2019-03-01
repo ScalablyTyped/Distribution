@@ -69,3 +69,42 @@ trait Options extends js.Object {
   var typeCheck: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    exclude: js.Array[java.lang.String],
+    files: js.Array[java.lang.String],
+    config: java.lang.String = null,
+    fix: js.UndefOr[scala.Boolean] = js.undefined,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    formattersDirectory: java.lang.String = null,
+    init: js.UndefOr[scala.Boolean] = js.undefined,
+    out: java.lang.String = null,
+    outputAbsolutePaths: js.UndefOr[scala.Boolean] = js.undefined,
+    project: java.lang.String = null,
+    quiet: js.UndefOr[scala.Boolean] = js.undefined,
+    rulesDirectory: java.lang.String | js.Array[java.lang.String] = null,
+    test: js.UndefOr[scala.Boolean] = js.undefined,
+    typeCheck: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exclude")(exclude)
+    __obj.updateDynamic("files")(files)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(fix)) __obj.updateDynamic("fix")(fix)
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formattersDirectory != null) __obj.updateDynamic("formattersDirectory")(formattersDirectory)
+    if (!js.isUndefined(init)) __obj.updateDynamic("init")(init)
+    if (out != null) __obj.updateDynamic("out")(out)
+    if (!js.isUndefined(outputAbsolutePaths)) __obj.updateDynamic("outputAbsolutePaths")(outputAbsolutePaths)
+    if (project != null) __obj.updateDynamic("project")(project)
+    if (!js.isUndefined(quiet)) __obj.updateDynamic("quiet")(quiet)
+    if (rulesDirectory != null) __obj.updateDynamic("rulesDirectory")(rulesDirectory.asInstanceOf[js.Any])
+    if (!js.isUndefined(test)) __obj.updateDynamic("test")(test)
+    if (!js.isUndefined(typeCheck)) __obj.updateDynamic("typeCheck")(typeCheck)
+    __obj.asInstanceOf[Options]
+  }
+}
+

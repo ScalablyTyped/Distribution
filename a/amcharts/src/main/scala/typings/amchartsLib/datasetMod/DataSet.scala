@@ -51,3 +51,30 @@ trait DataSet extends js.Object {
   var title: java.lang.String
 }
 
+object DataSet {
+  @scala.inline
+  def apply(
+    categoryField: java.lang.String,
+    color: java.lang.String,
+    compared: scala.Boolean,
+    dataProvider: js.Array[_],
+    fieldMappings: js.Array[_],
+    showInCompare: scala.Boolean,
+    showInSelect: scala.Boolean,
+    stockEvents: js.Array[amchartsLib.stockeventMod.default],
+    title: java.lang.String
+  ): DataSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("categoryField")(categoryField)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("compared")(compared)
+    __obj.updateDynamic("dataProvider")(dataProvider)
+    __obj.updateDynamic("fieldMappings")(fieldMappings)
+    __obj.updateDynamic("showInCompare")(showInCompare)
+    __obj.updateDynamic("showInSelect")(showInSelect)
+    __obj.updateDynamic("stockEvents")(stockEvents)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[DataSet]
+  }
+}
+

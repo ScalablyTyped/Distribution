@@ -80,3 +80,48 @@ trait IPlanCreationOptions
   var usage_type: js.UndefOr[stripeLib.stripeLibStrings.metered | stripeLib.stripeLibStrings.licensed] = js.undefined
 }
 
+object IPlanCreationOptions {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    interval: IntervalUnit,
+    product: java.lang.String | IPlanCreationOptionsProductHash,
+    aggregate_usage: stripeLib.stripeLibStrings.sum | stripeLib.stripeLibStrings.last_during_period | stripeLib.stripeLibStrings.last_ever | stripeLib.stripeLibStrings.max = null,
+    billing_scheme: stripeLib.stripeLibStrings.per_unit | stripeLib.stripeLibStrings.tiered = null,
+    expand: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    include: js.Array[java.lang.String] = null,
+    interval_count: scala.Int | scala.Double = null,
+    livemode: js.UndefOr[scala.Boolean] = js.undefined,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata = null,
+    nickname: java.lang.String = null,
+    tiers: js.Array[ITier] = null,
+    tiers_mode: stripeLib.stripeLibStrings.graduated | stripeLib.stripeLibStrings.volume = null,
+    transform_usage: ITransformUsage = null,
+    trial_period_days: scala.Int | scala.Double = null,
+    usage_type: stripeLib.stripeLibStrings.metered | stripeLib.stripeLibStrings.licensed = null
+  ): IPlanCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("product")(product.asInstanceOf[js.Any])
+    if (aggregate_usage != null) __obj.updateDynamic("aggregate_usage")(aggregate_usage.asInstanceOf[js.Any])
+    if (billing_scheme != null) __obj.updateDynamic("billing_scheme")(billing_scheme.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (interval_count != null) __obj.updateDynamic("interval_count")(interval_count.asInstanceOf[js.Any])
+    if (!js.isUndefined(livemode)) __obj.updateDynamic("livemode")(livemode)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (nickname != null) __obj.updateDynamic("nickname")(nickname)
+    if (tiers != null) __obj.updateDynamic("tiers")(tiers)
+    if (tiers_mode != null) __obj.updateDynamic("tiers_mode")(tiers_mode.asInstanceOf[js.Any])
+    if (transform_usage != null) __obj.updateDynamic("transform_usage")(transform_usage)
+    if (trial_period_days != null) __obj.updateDynamic("trial_period_days")(trial_period_days.asInstanceOf[js.Any])
+    if (usage_type != null) __obj.updateDynamic("usage_type")(usage_type.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPlanCreationOptions]
+  }
+}
+

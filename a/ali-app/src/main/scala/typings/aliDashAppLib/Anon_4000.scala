@@ -16,3 +16,16 @@ trait Anon_4000 extends js.Object {
   var resultStatus: aliDashAppLib.aliDashAppLibStrings.`6001` | aliDashAppLib.aliDashAppLibStrings.`6002` | aliDashAppLib.aliDashAppLibStrings.`9000` | aliDashAppLib.aliDashAppLibStrings.`4000` | java.lang.String
 }
 
+object Anon_4000 {
+  @scala.inline
+  def apply(
+    result: Anon_Admitstate,
+    resultStatus: aliDashAppLib.aliDashAppLibStrings.`6001` | aliDashAppLib.aliDashAppLibStrings.`6002` | aliDashAppLib.aliDashAppLibStrings.`9000` | aliDashAppLib.aliDashAppLibStrings.`4000` | java.lang.String
+  ): Anon_4000 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("resultStatus")(resultStatus.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_4000]
+  }
+}
+

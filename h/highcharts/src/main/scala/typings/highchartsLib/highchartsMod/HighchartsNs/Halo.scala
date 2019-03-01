@@ -26,3 +26,18 @@ trait Halo extends js.Object {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Halo {
+  @scala.inline
+  def apply(
+    attributes: js.Object = null,
+    opacity: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null
+  ): Halo = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Halo]
+  }
+}
+

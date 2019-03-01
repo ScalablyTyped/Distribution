@@ -9,3 +9,12 @@ trait PhononAjaxReturnObject extends js.Object {
   def cancel(): scala.Unit
 }
 
+object PhononAjaxReturnObject {
+  @scala.inline
+  def apply(cancel: js.Function0[scala.Unit]): PhononAjaxReturnObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.asInstanceOf[PhononAjaxReturnObject]
+  }
+}
+

@@ -12,3 +12,20 @@ trait FailReason extends js.Object {
   var thrown: js.UndefOr[nodeLib.Error] = js.undefined
 }
 
+object FailReason {
+  @scala.inline
+  def apply(
+    body: java.lang.String = null,
+    jsonBody: js.Object = null,
+    statusCode: scala.Int | scala.Double = null,
+    thrown: nodeLib.Error = null
+  ): FailReason = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (jsonBody != null) __obj.updateDynamic("jsonBody")(jsonBody)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (thrown != null) __obj.updateDynamic("thrown")(thrown)
+    __obj.asInstanceOf[FailReason]
+  }
+}
+

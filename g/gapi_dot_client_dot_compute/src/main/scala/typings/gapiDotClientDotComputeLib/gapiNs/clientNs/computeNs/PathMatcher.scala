@@ -22,3 +22,20 @@ trait PathMatcher extends js.Object {
   var pathRules: js.UndefOr[js.Array[PathRule]] = js.undefined
 }
 
+object PathMatcher {
+  @scala.inline
+  def apply(
+    defaultService: java.lang.String = null,
+    description: java.lang.String = null,
+    name: java.lang.String = null,
+    pathRules: js.Array[PathRule] = null
+  ): PathMatcher = {
+    val __obj = js.Dynamic.literal()
+    if (defaultService != null) __obj.updateDynamic("defaultService")(defaultService)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pathRules != null) __obj.updateDynamic("pathRules")(pathRules)
+    __obj.asInstanceOf[PathMatcher]
+  }
+}
+

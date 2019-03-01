@@ -11,3 +11,18 @@ trait OperationHistoryResult extends js.Object {
   var operations: js.UndefOr[js.Array[yandexDashMoneyDashSdkLib.Anon_Amount]] = js.undefined
 }
 
+object OperationHistoryResult {
+  @scala.inline
+  def apply(
+    error: java.lang.String = null,
+    next_record: java.lang.String = null,
+    operations: js.Array[yandexDashMoneyDashSdkLib.Anon_Amount] = null
+  ): OperationHistoryResult = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (next_record != null) __obj.updateDynamic("next_record")(next_record)
+    if (operations != null) __obj.updateDynamic("operations")(operations)
+    __obj.asInstanceOf[OperationHistoryResult]
+  }
+}
+

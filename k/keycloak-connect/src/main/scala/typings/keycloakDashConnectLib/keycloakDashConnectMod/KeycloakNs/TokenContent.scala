@@ -11,3 +11,18 @@ trait TokenContent extends js.Object {
   var resource_access: js.UndefOr[js.Any] = js.undefined
 }
 
+object TokenContent {
+  @scala.inline
+  def apply(
+    exp: scala.Double,
+    realm_access: keycloakDashConnectLib.Anon_Roles = null,
+    resource_access: js.Any = null
+  ): TokenContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exp")(exp)
+    if (realm_access != null) __obj.updateDynamic("realm_access")(realm_access)
+    if (resource_access != null) __obj.updateDynamic("resource_access")(resource_access)
+    __obj.asInstanceOf[TokenContent]
+  }
+}
+

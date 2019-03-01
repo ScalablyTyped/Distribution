@@ -9,3 +9,12 @@ trait Anon_WordArray extends js.Object {
   var WordArray: Anon_Create
 }
 
+object Anon_WordArray {
+  @scala.inline
+  def apply(WordArray: Anon_Create): Anon_WordArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("WordArray")(WordArray)
+    __obj.asInstanceOf[Anon_WordArray]
+  }
+}
+

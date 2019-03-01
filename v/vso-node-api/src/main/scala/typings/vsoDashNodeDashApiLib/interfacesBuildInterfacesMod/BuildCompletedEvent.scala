@@ -20,3 +20,22 @@ trait BuildCompletedEvent extends BuildUpdatedEvent {
   var changes: js.Array[Change]
 }
 
+object BuildCompletedEvent {
+  @scala.inline
+  def apply(
+    build: Build,
+    buildErrors: js.Array[BuildRequestValidationResult],
+    buildId: scala.Double,
+    buildWarnings: js.Array[BuildRequestValidationResult],
+    changes: js.Array[Change]
+  ): BuildCompletedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("buildErrors")(buildErrors)
+    __obj.updateDynamic("buildId")(buildId)
+    __obj.updateDynamic("buildWarnings")(buildWarnings)
+    __obj.updateDynamic("changes")(changes)
+    __obj.asInstanceOf[BuildCompletedEvent]
+  }
+}
+

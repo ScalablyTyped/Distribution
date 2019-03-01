@@ -10,3 +10,13 @@ trait IntlAvailability extends js.Object {
   var numberFormat: scala.Boolean
 }
 
+object IntlAvailability {
+  @scala.inline
+  def apply(dateTimeFormat: scala.Boolean, numberFormat: scala.Boolean): IntlAvailability = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dateTimeFormat")(dateTimeFormat)
+    __obj.updateDynamic("numberFormat")(numberFormat)
+    __obj.asInstanceOf[IntlAvailability]
+  }
+}
+

@@ -17,3 +17,12 @@ trait AccessibilityFeaturesClearArg extends js.Object {
   var scope: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccessibilityFeaturesClearArg {
+  @scala.inline
+  def apply(scope: java.lang.String = null): AccessibilityFeaturesClearArg = {
+    val __obj = js.Dynamic.literal()
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[AccessibilityFeaturesClearArg]
+  }
+}
+

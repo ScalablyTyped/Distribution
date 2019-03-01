@@ -39,3 +39,20 @@ trait EdgeLine extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object EdgeLine {
+  @scala.inline
+  def apply(
+    `curve-style`: cytoscapeLib.cytoscapeLibStrings.haystack | cytoscapeLib.cytoscapeLibStrings.bezier | cytoscapeLib.cytoscapeLibStrings.unbundled | cytoscapeLib.cytoscapeLibStrings.segments = null,
+    `line-color`: Colour = null,
+    `line-style`: LineStyle = null,
+    width: scala.Double | java.lang.String = null
+  ): EdgeLine = {
+    val __obj = js.Dynamic.literal()
+    if (`curve-style` != null) __obj.updateDynamic("curve-style")(`curve-style`.asInstanceOf[js.Any])
+    if (`line-color` != null) __obj.updateDynamic("line-color")(`line-color`)
+    if (`line-style` != null) __obj.updateDynamic("line-style")(`line-style`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EdgeLine]
+  }
+}
+

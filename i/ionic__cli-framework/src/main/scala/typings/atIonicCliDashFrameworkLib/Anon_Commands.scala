@@ -9,3 +9,14 @@ trait Anon_Commands[I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMet
   var commands: js.Array[atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]]
 }
 
+object Anon_Commands {
+  @scala.inline
+  def apply[I /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataInput */, N /* <: atIonicCliDashFrameworkLib.definitionsMod.INamespace[C, N, M, I, O] */, O /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadataOption */, M /* <: atIonicCliDashFrameworkLib.definitionsMod.CommandMetadata[I, O] */, C /* <: atIonicCliDashFrameworkLib.definitionsMod.ICommand[C, N, M, I, O] */](
+    commands: js.Array[atIonicCliDashFrameworkLib.definitionsMod.HydratedCommandMetadata[C, N, M, I, O]]
+  ): Anon_Commands[I, N, O, M, C] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commands")(commands)
+    __obj.asInstanceOf[Anon_Commands[I, N, O, M, C]]
+  }
+}
+

@@ -16,3 +16,13 @@ trait ListServiceAccountsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListServiceAccountsResponse {
+  @scala.inline
+  def apply(accounts: js.Array[ServiceAccount] = null, nextPageToken: java.lang.String = null): ListServiceAccountsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (accounts != null) __obj.updateDynamic("accounts")(accounts)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListServiceAccountsResponse]
+  }
+}
+

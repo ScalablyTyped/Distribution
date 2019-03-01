@@ -174,3 +174,80 @@ trait PrettyPhotoSettings extends js.Object {
   var wmode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PrettyPhotoSettings {
+  @scala.inline
+  def apply(
+    ajaxcallback: js.Function0[scala.Unit] = null,
+    allow_expand: js.UndefOr[scala.Boolean] = js.undefined,
+    allow_resize: js.UndefOr[scala.Boolean] = js.undefined,
+    animation_speed: java.lang.String = null,
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplay_slideshow: js.UndefOr[scala.Boolean] = js.undefined,
+    callback: js.Function0[scala.Unit] = null,
+    changepicturecallback: js.Function0[scala.Unit] = null,
+    counter_separator_label: java.lang.String = null,
+    custom_markup: java.lang.String = null,
+    deeplinking: js.UndefOr[scala.Boolean] = js.undefined,
+    default_height: scala.Int | scala.Double = null,
+    default_width: scala.Int | scala.Double = null,
+    flash_markup: java.lang.String = null,
+    gallery_markup: java.lang.String = null,
+    hideflash: js.UndefOr[scala.Boolean] = js.undefined,
+    hook: java.lang.String = null,
+    horizontal_padding: scala.Int | scala.Double = null,
+    ie6_fallback: js.UndefOr[scala.Boolean] = js.undefined,
+    iframe_markup: java.lang.String = null,
+    image_markup: java.lang.String = null,
+    inline_markup: java.lang.String = null,
+    keyboard_shortcuts: js.UndefOr[scala.Boolean] = js.undefined,
+    markup: java.lang.String = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    opacity: scala.Int | scala.Double = null,
+    overlay_gallery: js.UndefOr[scala.Boolean] = js.undefined,
+    overlay_gallery_max: scala.Int | scala.Double = null,
+    quicktime_markup: java.lang.String = null,
+    show_title: js.UndefOr[scala.Boolean] = js.undefined,
+    slideshow: js.Any = null,
+    social_tools: js.Any = null,
+    theme: java.lang.String = null,
+    wmode: java.lang.String = null
+  ): PrettyPhotoSettings = {
+    val __obj = js.Dynamic.literal()
+    if (ajaxcallback != null) __obj.updateDynamic("ajaxcallback")(ajaxcallback)
+    if (!js.isUndefined(allow_expand)) __obj.updateDynamic("allow_expand")(allow_expand)
+    if (!js.isUndefined(allow_resize)) __obj.updateDynamic("allow_resize")(allow_resize)
+    if (animation_speed != null) __obj.updateDynamic("animation_speed")(animation_speed)
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (!js.isUndefined(autoplay_slideshow)) __obj.updateDynamic("autoplay_slideshow")(autoplay_slideshow)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (changepicturecallback != null) __obj.updateDynamic("changepicturecallback")(changepicturecallback)
+    if (counter_separator_label != null) __obj.updateDynamic("counter_separator_label")(counter_separator_label)
+    if (custom_markup != null) __obj.updateDynamic("custom_markup")(custom_markup)
+    if (!js.isUndefined(deeplinking)) __obj.updateDynamic("deeplinking")(deeplinking)
+    if (default_height != null) __obj.updateDynamic("default_height")(default_height.asInstanceOf[js.Any])
+    if (default_width != null) __obj.updateDynamic("default_width")(default_width.asInstanceOf[js.Any])
+    if (flash_markup != null) __obj.updateDynamic("flash_markup")(flash_markup)
+    if (gallery_markup != null) __obj.updateDynamic("gallery_markup")(gallery_markup)
+    if (!js.isUndefined(hideflash)) __obj.updateDynamic("hideflash")(hideflash)
+    if (hook != null) __obj.updateDynamic("hook")(hook)
+    if (horizontal_padding != null) __obj.updateDynamic("horizontal_padding")(horizontal_padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(ie6_fallback)) __obj.updateDynamic("ie6_fallback")(ie6_fallback)
+    if (iframe_markup != null) __obj.updateDynamic("iframe_markup")(iframe_markup)
+    if (image_markup != null) __obj.updateDynamic("image_markup")(image_markup)
+    if (inline_markup != null) __obj.updateDynamic("inline_markup")(inline_markup)
+    if (!js.isUndefined(keyboard_shortcuts)) __obj.updateDynamic("keyboard_shortcuts")(keyboard_shortcuts)
+    if (markup != null) __obj.updateDynamic("markup")(markup)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlay_gallery)) __obj.updateDynamic("overlay_gallery")(overlay_gallery)
+    if (overlay_gallery_max != null) __obj.updateDynamic("overlay_gallery_max")(overlay_gallery_max.asInstanceOf[js.Any])
+    if (quicktime_markup != null) __obj.updateDynamic("quicktime_markup")(quicktime_markup)
+    if (!js.isUndefined(show_title)) __obj.updateDynamic("show_title")(show_title)
+    if (slideshow != null) __obj.updateDynamic("slideshow")(slideshow)
+    if (social_tools != null) __obj.updateDynamic("social_tools")(social_tools)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (wmode != null) __obj.updateDynamic("wmode")(wmode)
+    __obj.asInstanceOf[PrettyPhotoSettings]
+  }
+}
+

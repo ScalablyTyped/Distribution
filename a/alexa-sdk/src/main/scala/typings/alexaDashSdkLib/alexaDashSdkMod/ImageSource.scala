@@ -20,3 +20,20 @@ trait ImageSource extends js.Object {
   var widthPixels: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImageSource {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    heightPixels: scala.Int | scala.Double = null,
+    size: ImageSourceSize = null,
+    widthPixels: scala.Int | scala.Double = null
+  ): ImageSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (heightPixels != null) __obj.updateDynamic("heightPixels")(heightPixels.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (widthPixels != null) __obj.updateDynamic("widthPixels")(widthPixels.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageSource]
+  }
+}
+

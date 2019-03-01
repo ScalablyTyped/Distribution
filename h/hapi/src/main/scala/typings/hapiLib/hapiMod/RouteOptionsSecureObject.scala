@@ -37,3 +37,24 @@ trait RouteOptionsSecureObject extends js.Object {
   var xss: scala.Boolean
 }
 
+object RouteOptionsSecureObject {
+  @scala.inline
+  def apply(
+    xss: scala.Boolean,
+    hsts: scala.Boolean | scala.Double | hapiLib.Anon_IncludeSubdomains = null,
+    noOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    noSniff: js.UndefOr[scala.Boolean] = js.undefined,
+    referrer: hapiLib.hapiLibNumbers.`false` | ReferrerPolicy = null,
+    xframe: hapiLib.hapiLibNumbers.`true` | hapiLib.hapiLibStrings.deny | hapiLib.hapiLibStrings.sameorigin | hapiLib.Anon_Allowfrom = null
+  ): RouteOptionsSecureObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("xss")(xss)
+    if (hsts != null) __obj.updateDynamic("hsts")(hsts.asInstanceOf[js.Any])
+    if (!js.isUndefined(noOpen)) __obj.updateDynamic("noOpen")(noOpen)
+    if (!js.isUndefined(noSniff)) __obj.updateDynamic("noSniff")(noSniff)
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer.asInstanceOf[js.Any])
+    if (xframe != null) __obj.updateDynamic("xframe")(xframe.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteOptionsSecureObject]
+  }
+}
+

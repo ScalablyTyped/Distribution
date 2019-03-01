@@ -12,3 +12,13 @@ trait ButtonGroupProps extends js.Object {
   val children: reactLib.reactMod.ReactNs.ReactNode
 }
 
+object ButtonGroupProps {
+  @scala.inline
+  def apply(children: reactLib.reactMod.ReactNs.ReactNode, appearance: ButtonAppearances = null): ButtonGroupProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (appearance != null) __obj.updateDynamic("appearance")(appearance)
+    __obj.asInstanceOf[ButtonGroupProps]
+  }
+}
+

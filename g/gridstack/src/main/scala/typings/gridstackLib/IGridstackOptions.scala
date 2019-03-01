@@ -117,3 +117,64 @@ trait IGridstackOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IGridstackOptions {
+  @scala.inline
+  def apply(
+    acceptWidgets: js.UndefOr[scala.Boolean] = js.undefined,
+    alwaysShowResizeHandle: js.UndefOr[scala.Boolean] = js.undefined,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    auto: js.UndefOr[scala.Boolean] = js.undefined,
+    cellHeight: scala.Int | scala.Double = null,
+    ddPlugin: js.Any = null,
+    disableDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    disableOneColumnMode: js.UndefOr[scala.Boolean] = js.undefined,
+    disableResize: js.UndefOr[scala.Boolean] = js.undefined,
+    draggable: js.Object = null,
+    float: js.UndefOr[scala.Boolean] = js.undefined,
+    handle: java.lang.String = null,
+    handleClass: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    itemClass: java.lang.String = null,
+    minWidth: scala.Int | scala.Double = null,
+    oneColumnModeClass: java.lang.String = null,
+    placeholderClass: java.lang.String = null,
+    placeholderText: java.lang.String = null,
+    removable: scala.Boolean | java.lang.String = null,
+    removeTimeout: scala.Int | scala.Double = null,
+    resizable: js.Object = null,
+    rtl: scala.Boolean | gridstackLib.gridstackLibStrings.auto = null,
+    staticGrid: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalMargin: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): IGridstackOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(acceptWidgets)) __obj.updateDynamic("acceptWidgets")(acceptWidgets)
+    if (!js.isUndefined(alwaysShowResizeHandle)) __obj.updateDynamic("alwaysShowResizeHandle")(alwaysShowResizeHandle)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto)
+    if (cellHeight != null) __obj.updateDynamic("cellHeight")(cellHeight.asInstanceOf[js.Any])
+    if (ddPlugin != null) __obj.updateDynamic("ddPlugin")(ddPlugin)
+    if (!js.isUndefined(disableDrag)) __obj.updateDynamic("disableDrag")(disableDrag)
+    if (!js.isUndefined(disableOneColumnMode)) __obj.updateDynamic("disableOneColumnMode")(disableOneColumnMode)
+    if (!js.isUndefined(disableResize)) __obj.updateDynamic("disableResize")(disableResize)
+    if (draggable != null) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(float)) __obj.updateDynamic("float")(float)
+    if (handle != null) __obj.updateDynamic("handle")(handle)
+    if (handleClass != null) __obj.updateDynamic("handleClass")(handleClass)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (itemClass != null) __obj.updateDynamic("itemClass")(itemClass)
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (oneColumnModeClass != null) __obj.updateDynamic("oneColumnModeClass")(oneColumnModeClass)
+    if (placeholderClass != null) __obj.updateDynamic("placeholderClass")(placeholderClass)
+    if (placeholderText != null) __obj.updateDynamic("placeholderText")(placeholderText)
+    if (removable != null) __obj.updateDynamic("removable")(removable.asInstanceOf[js.Any])
+    if (removeTimeout != null) __obj.updateDynamic("removeTimeout")(removeTimeout.asInstanceOf[js.Any])
+    if (resizable != null) __obj.updateDynamic("resizable")(resizable)
+    if (rtl != null) __obj.updateDynamic("rtl")(rtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(staticGrid)) __obj.updateDynamic("staticGrid")(staticGrid)
+    if (verticalMargin != null) __obj.updateDynamic("verticalMargin")(verticalMargin.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IGridstackOptions]
+  }
+}
+

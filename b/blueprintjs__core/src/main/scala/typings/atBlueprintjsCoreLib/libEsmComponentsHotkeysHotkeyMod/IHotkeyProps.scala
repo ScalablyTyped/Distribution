@@ -60,3 +60,34 @@ trait IHotkeyProps
   var stopPropagation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IHotkeyProps {
+  @scala.inline
+  def apply(
+    combo: java.lang.String,
+    label: java.lang.String,
+    allowInInput: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    global: js.UndefOr[scala.Boolean] = js.undefined,
+    group: java.lang.String = null,
+    onKeyDown: js.Function1[/* e */ reactLib.KeyboardEvent, _] = null,
+    onKeyUp: js.Function1[/* e */ reactLib.KeyboardEvent, _] = null,
+    preventDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    stopPropagation: js.UndefOr[scala.Boolean] = js.undefined
+  ): IHotkeyProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("combo")(combo)
+    __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(allowInInput)) __obj.updateDynamic("allowInInput")(allowInInput)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyUp != null) __obj.updateDynamic("onKeyUp")(onKeyUp)
+    if (!js.isUndefined(preventDefault)) __obj.updateDynamic("preventDefault")(preventDefault)
+    if (!js.isUndefined(stopPropagation)) __obj.updateDynamic("stopPropagation")(stopPropagation)
+    __obj.asInstanceOf[IHotkeyProps]
+  }
+}
+

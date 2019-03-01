@@ -18,3 +18,13 @@ trait ListDealAssociationsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListDealAssociationsResponse {
+  @scala.inline
+  def apply(associations: js.Array[CreativeDealAssociation] = null, nextPageToken: java.lang.String = null): ListDealAssociationsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (associations != null) __obj.updateDynamic("associations")(associations)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListDealAssociationsResponse]
+  }
+}
+

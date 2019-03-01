@@ -17,3 +17,30 @@ trait ButtonTextCompoundInput
   var week: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ButtonTextCompoundInput {
+  @scala.inline
+  def apply(
+    StringDictionary: /* viewId */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = null,
+    day: java.lang.String = null,
+    month: java.lang.String = null,
+    next: java.lang.String = null,
+    nextYear: java.lang.String = null,
+    prev: java.lang.String = null,
+    prevYear: java.lang.String = null,
+    today: java.lang.String = null,
+    week: java.lang.String = null
+  ): ButtonTextCompoundInput = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (day != null) __obj.updateDynamic("day")(day)
+    if (month != null) __obj.updateDynamic("month")(month)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (nextYear != null) __obj.updateDynamic("nextYear")(nextYear)
+    if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (prevYear != null) __obj.updateDynamic("prevYear")(prevYear)
+    if (today != null) __obj.updateDynamic("today")(today)
+    if (week != null) __obj.updateDynamic("week")(week)
+    __obj.asInstanceOf[ButtonTextCompoundInput]
+  }
+}
+

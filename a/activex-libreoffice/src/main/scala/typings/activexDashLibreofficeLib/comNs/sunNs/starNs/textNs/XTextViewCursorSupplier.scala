@@ -19,3 +19,22 @@ trait XTextViewCursorSupplier
   def getViewCursor(): XTextViewCursor
 }
 
+object XTextViewCursorSupplier {
+  @scala.inline
+  def apply(
+    ViewCursor: XTextViewCursor,
+    acquire: js.Function0[scala.Unit],
+    getViewCursor: js.Function0[XTextViewCursor],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextViewCursorSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ViewCursor")(ViewCursor)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getViewCursor")(getViewCursor)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTextViewCursorSupplier]
+  }
+}
+

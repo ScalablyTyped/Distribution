@@ -16,3 +16,13 @@ trait EncryptRequest extends js.Object {
   var plaintext: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EncryptRequest {
+  @scala.inline
+  def apply(additionalAuthenticatedData: java.lang.String = null, plaintext: java.lang.String = null): EncryptRequest = {
+    val __obj = js.Dynamic.literal()
+    if (additionalAuthenticatedData != null) __obj.updateDynamic("additionalAuthenticatedData")(additionalAuthenticatedData)
+    if (plaintext != null) __obj.updateDynamic("plaintext")(plaintext)
+    __obj.asInstanceOf[EncryptRequest]
+  }
+}
+

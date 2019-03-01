@@ -16,3 +16,32 @@ trait AccountsResource extends js.Object {
   def update(request: gapiDotClientDotAdexchangebuyerLib.Anon_AltConfirmUnsafeAccountChange): gapiDotClientLib.gapiNs.clientNs.Request[Account]
 }
 
+object AccountsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountsList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltConfirmUnsafeAccountChange, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAdexchangebuyerLib.Anon_AltConfirmUnsafeAccountChange, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Account]
+    ]
+  ): AccountsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[AccountsResource]
+  }
+}
+

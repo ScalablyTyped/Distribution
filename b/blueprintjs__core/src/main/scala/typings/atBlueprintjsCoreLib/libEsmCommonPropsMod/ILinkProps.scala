@@ -12,3 +12,13 @@ trait ILinkProps extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ILinkProps {
+  @scala.inline
+  def apply(href: java.lang.String = null, target: java.lang.String = null): ILinkProps = {
+    val __obj = js.Dynamic.literal()
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ILinkProps]
+  }
+}
+

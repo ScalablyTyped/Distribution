@@ -108,3 +108,56 @@ trait DatepickerOptions extends js.Object {
   def parse(value: java.lang.String, format: java.lang.String): stdLib.Date
 }
 
+object DatepickerOptions {
+  @scala.inline
+  def apply(
+    autoClose: scala.Boolean,
+    container: stdLib.Element,
+    defaultDate: stdLib.Date,
+    disableDayFn: js.Function1[stdLib.Date, scala.Boolean],
+    disableWeekends: scala.Boolean,
+    events: js.Array[java.lang.String],
+    firstDay: scala.Double,
+    format: java.lang.String,
+    i18n: stdLib.Partial[InternationalizationOptions],
+    isRTL: scala.Boolean,
+    maxDate: stdLib.Date,
+    minDate: stdLib.Date,
+    onClose: js.Function1[Datepicker, scala.Unit],
+    onDraw: js.Function1[Datepicker, scala.Unit],
+    onOpen: js.Function1[Datepicker, scala.Unit],
+    onSelect: js.Function2[Datepicker, stdLib.Date, scala.Unit],
+    parse: js.Function2[java.lang.String, java.lang.String, stdLib.Date],
+    setDefaultDate: scala.Boolean,
+    showClearBtn: scala.Boolean,
+    showDaysInNextAndPreviousMonths: scala.Boolean,
+    showMonthAfterYear: scala.Boolean,
+    yearRange: scala.Double | js.Array[scala.Double]
+  ): DatepickerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoClose")(autoClose)
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("defaultDate")(defaultDate)
+    __obj.updateDynamic("disableDayFn")(disableDayFn)
+    __obj.updateDynamic("disableWeekends")(disableWeekends)
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("firstDay")(firstDay)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("i18n")(i18n)
+    __obj.updateDynamic("isRTL")(isRTL)
+    __obj.updateDynamic("maxDate")(maxDate)
+    __obj.updateDynamic("minDate")(minDate)
+    __obj.updateDynamic("onClose")(onClose)
+    __obj.updateDynamic("onDraw")(onDraw)
+    __obj.updateDynamic("onOpen")(onOpen)
+    __obj.updateDynamic("onSelect")(onSelect)
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("setDefaultDate")(setDefaultDate)
+    __obj.updateDynamic("showClearBtn")(showClearBtn)
+    __obj.updateDynamic("showDaysInNextAndPreviousMonths")(showDaysInNextAndPreviousMonths)
+    __obj.updateDynamic("showMonthAfterYear")(showMonthAfterYear)
+    __obj.updateDynamic("yearRange")(yearRange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatepickerOptions]
+  }
+}
+

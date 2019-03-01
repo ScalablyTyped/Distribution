@@ -16,3 +16,20 @@ trait ChangeEvent extends js.Object {
   val realm: realmLib.Realm
 }
 
+object ChangeEvent {
+  @scala.inline
+  def apply(
+    changes: org.scalablytyped.runtime.StringDictionary[realmLib.RealmNs.CollectionChangeSet],
+    oldRealm: realmLib.Realm,
+    path: java.lang.String,
+    realm: realmLib.Realm
+  ): ChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("oldRealm")(oldRealm)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("realm")(realm)
+    __obj.asInstanceOf[ChangeEvent]
+  }
+}
+

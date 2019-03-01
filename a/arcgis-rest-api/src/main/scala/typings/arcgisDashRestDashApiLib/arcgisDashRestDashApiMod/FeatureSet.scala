@@ -20,3 +20,30 @@ trait FeatureSet extends HasZM {
   var spatialReference: js.UndefOr[SpatialReference] = js.undefined
 }
 
+object FeatureSet {
+  @scala.inline
+  def apply(
+    features: js.Array[Feature],
+    displayFieldName: java.lang.String = null,
+    fields: js.Array[Field] = null,
+    geometryType: esriGeometryType = null,
+    globalIdFieldName: java.lang.String = null,
+    hasM: js.UndefOr[scala.Boolean] = js.undefined,
+    hasZ: js.UndefOr[scala.Boolean] = js.undefined,
+    objectIdFieldName: java.lang.String = null,
+    spatialReference: SpatialReference = null
+  ): FeatureSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("features")(features)
+    if (displayFieldName != null) __obj.updateDynamic("displayFieldName")(displayFieldName)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType)
+    if (globalIdFieldName != null) __obj.updateDynamic("globalIdFieldName")(globalIdFieldName)
+    if (!js.isUndefined(hasM)) __obj.updateDynamic("hasM")(hasM)
+    if (!js.isUndefined(hasZ)) __obj.updateDynamic("hasZ")(hasZ)
+    if (objectIdFieldName != null) __obj.updateDynamic("objectIdFieldName")(objectIdFieldName)
+    if (spatialReference != null) __obj.updateDynamic("spatialReference")(spatialReference)
+    __obj.asInstanceOf[FeatureSet]
+  }
+}
+

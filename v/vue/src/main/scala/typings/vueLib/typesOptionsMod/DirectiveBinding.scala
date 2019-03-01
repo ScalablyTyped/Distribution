@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   val modifiers: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
 }
 
+object DirectiveBinding {
+  @scala.inline
+  def apply(modifiers: org.scalablytyped.runtime.StringDictionary[scala.Boolean]): DirectiveBinding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("modifiers")(modifiers)
+    __obj.asInstanceOf[DirectiveBinding]
+  }
+}
+

@@ -15,3 +15,26 @@ trait ExtentInfo
   var ResolutionUnit: ExtentInfoValue
 }
 
+object ExtentInfo {
+  @scala.inline
+  def apply(
+    DateTime: ExtentInfoValue,
+    ExposureBiasValue: ExtentInfoValue,
+    ExposureTime: ExtentInfoValue,
+    ISOSpeedRatings: ExtentInfoValue,
+    Model: ExtentInfoValue,
+    ResolutionUnit: ExtentInfoValue,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[ExtentInfoValue] = null
+  ): ExtentInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DateTime")(DateTime)
+    __obj.updateDynamic("ExposureBiasValue")(ExposureBiasValue)
+    __obj.updateDynamic("ExposureTime")(ExposureTime)
+    __obj.updateDynamic("ISOSpeedRatings")(ISOSpeedRatings)
+    __obj.updateDynamic("Model")(Model)
+    __obj.updateDynamic("ResolutionUnit")(ResolutionUnit)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ExtentInfo]
+  }
+}
+

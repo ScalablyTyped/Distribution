@@ -11,3 +11,14 @@ trait Anon_CreateDelete extends js.Object {
   var update: scala.Double
 }
 
+object Anon_CreateDelete {
+  @scala.inline
+  def apply(create: scala.Double, delete: scala.Double, update: scala.Double): Anon_CreateDelete = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Anon_CreateDelete]
+  }
+}
+

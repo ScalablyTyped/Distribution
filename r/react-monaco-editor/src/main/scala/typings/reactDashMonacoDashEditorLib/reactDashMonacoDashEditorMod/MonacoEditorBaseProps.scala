@@ -38,3 +38,26 @@ trait MonacoEditorBaseProps extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object MonacoEditorBaseProps {
+  @scala.inline
+  def apply(
+    context: js.Any = null,
+    defaultValue: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    language: java.lang.String = null,
+    requireConfig: js.Any = null,
+    theme: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): MonacoEditorBaseProps = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (requireConfig != null) __obj.updateDynamic("requireConfig")(requireConfig)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MonacoEditorBaseProps]
+  }
+}
+

@@ -25,3 +25,26 @@ trait Options extends js.Object {
   var stopoverIcon: js.UndefOr[heremapsLib.HNs.mapNs.Icon] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    lineStyle: heremapsLib.HNs.mapNs.SpatialStyle | heremapsLib.HNs.mapNs.SpatialStyleNs.Options,
+    alignment: heremapsLib.HNs.uiNs.LayoutAlignment = null,
+    distanceFormatter: js.Function1[/* n */ scala.Double, scala.Unit] = null,
+    endIcon: heremapsLib.HNs.mapNs.Icon = null,
+    splitIcon: heremapsLib.HNs.mapNs.Icon = null,
+    startIcon: heremapsLib.HNs.mapNs.Icon = null,
+    stopoverIcon: heremapsLib.HNs.mapNs.Icon = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (distanceFormatter != null) __obj.updateDynamic("distanceFormatter")(distanceFormatter)
+    if (endIcon != null) __obj.updateDynamic("endIcon")(endIcon)
+    if (splitIcon != null) __obj.updateDynamic("splitIcon")(splitIcon)
+    if (startIcon != null) __obj.updateDynamic("startIcon")(startIcon)
+    if (stopoverIcon != null) __obj.updateDynamic("stopoverIcon")(stopoverIcon)
+    __obj.asInstanceOf[Options]
+  }
+}
+

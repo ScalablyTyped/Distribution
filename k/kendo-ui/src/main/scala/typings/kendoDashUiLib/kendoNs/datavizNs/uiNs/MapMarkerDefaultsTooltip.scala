@@ -19,3 +19,34 @@ trait MapMarkerDefaultsTooltip extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MapMarkerDefaultsTooltip {
+  @scala.inline
+  def apply(
+    animation: MapMarkerDefaultsTooltipAnimation = null,
+    autoHide: js.UndefOr[scala.Boolean] = js.undefined,
+    callout: js.UndefOr[scala.Boolean] = js.undefined,
+    content: java.lang.String | js.Function | MapMarkerDefaultsTooltipContent = null,
+    height: scala.Int | scala.Double = null,
+    iframe: js.UndefOr[scala.Boolean] = js.undefined,
+    position: java.lang.String = null,
+    showAfter: scala.Int | scala.Double = null,
+    showOn: java.lang.String = null,
+    template: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): MapMarkerDefaultsTooltip = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
+    if (!js.isUndefined(callout)) __obj.updateDynamic("callout")(callout)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(iframe)) __obj.updateDynamic("iframe")(iframe)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (showAfter != null) __obj.updateDynamic("showAfter")(showAfter.asInstanceOf[js.Any])
+    if (showOn != null) __obj.updateDynamic("showOn")(showOn)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapMarkerDefaultsTooltip]
+  }
+}
+

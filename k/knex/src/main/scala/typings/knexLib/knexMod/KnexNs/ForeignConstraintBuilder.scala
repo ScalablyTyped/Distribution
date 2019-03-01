@@ -9,3 +9,12 @@ trait ForeignConstraintBuilder extends js.Object {
   def references(columnName: java.lang.String): ReferencingColumnBuilder
 }
 
+object ForeignConstraintBuilder {
+  @scala.inline
+  def apply(references: js.Function1[java.lang.String, ReferencingColumnBuilder]): ForeignConstraintBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("references")(references)
+    __obj.asInstanceOf[ForeignConstraintBuilder]
+  }
+}
+

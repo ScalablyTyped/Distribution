@@ -133,3 +133,56 @@ trait InstancesResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 
+object InstancesResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    databases: DatabasesResource,
+    delete: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Instance]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListInstancesResponse]
+    ],
+    operations: OperationsResource,
+    patch: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotSpannerLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ]
+  ): InstancesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("databases")(databases)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("operations")(operations)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.asInstanceOf[InstancesResource]
+  }
+}
+

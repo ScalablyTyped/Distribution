@@ -7,22 +7,30 @@ import scala.scalajs.js.annotation._
 
 object reactDashBytesizeDashIconsLibStrings {
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait bevel
+    extends reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.StrokeLinejoin
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait butt
+    extends reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.StrokeLinecap
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait inherit
+    extends reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.StrokeLinecap
+       with reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.StrokeLinejoin
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait miter
+    extends reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.StrokeLinejoin
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.StrokeLinecap
+       with reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.StrokeLinejoin
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends reactDashBytesizeDashIconsLib.reactDashBytesizeDashIconsMod.StrokeLinecap
   
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]

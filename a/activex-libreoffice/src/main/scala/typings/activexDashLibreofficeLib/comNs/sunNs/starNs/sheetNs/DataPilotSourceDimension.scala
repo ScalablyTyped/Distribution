@@ -51,3 +51,80 @@ trait DataPilotSourceDimension
   var UsedHierarchy: scala.Double
 }
 
+object DataPilotSourceDimension {
+  @scala.inline
+  def apply(
+    Filter: activexDashInteropLib.SafeArray[TableFilterField],
+    Flags: scala.Double,
+    Function: GeneralFunction,
+    Function2: scala.Double,
+    Hierarchies: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    IsDataLayoutDimension: scala.Boolean,
+    Name: java.lang.String,
+    Orientation: DataPilotFieldOrientation,
+    Original: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNamed,
+    Position: scala.Double,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    UsedHierarchy: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    getHierarchies: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    getName: js.Function0[java.lang.String],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): DataPilotSourceDimension = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Filter")(Filter)
+    __obj.updateDynamic("Flags")(Flags)
+    __obj.updateDynamic("Function")(Function)
+    __obj.updateDynamic("Function2")(Function2)
+    __obj.updateDynamic("Hierarchies")(Hierarchies)
+    __obj.updateDynamic("IsDataLayoutDimension")(IsDataLayoutDimension)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Orientation")(Orientation)
+    __obj.updateDynamic("Original")(Original)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("UsedHierarchy")(UsedHierarchy)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("createClone")(createClone)
+    __obj.updateDynamic("getHierarchies")(getHierarchies)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[DataPilotSourceDimension]
+  }
+}
+

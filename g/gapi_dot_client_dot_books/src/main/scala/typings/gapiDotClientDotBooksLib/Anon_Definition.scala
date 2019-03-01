@@ -10,3 +10,13 @@ trait Anon_Definition extends js.Object {
   var examples: js.UndefOr[js.Array[Anon_Source]] = js.undefined
 }
 
+object Anon_Definition {
+  @scala.inline
+  def apply(definition: java.lang.String = null, examples: js.Array[Anon_Source] = null): Anon_Definition = {
+    val __obj = js.Dynamic.literal()
+    if (definition != null) __obj.updateDynamic("definition")(definition)
+    if (examples != null) __obj.updateDynamic("examples")(examples)
+    __obj.asInstanceOf[Anon_Definition]
+  }
+}
+

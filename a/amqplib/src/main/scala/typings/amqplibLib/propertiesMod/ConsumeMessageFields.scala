@@ -7,3 +7,20 @@ import scala.scalajs.js.annotation._
 
 trait ConsumeMessageFields extends CommonMessageFields
 
+object ConsumeMessageFields {
+  @scala.inline
+  def apply(
+    deliveryTag: scala.Double,
+    exchange: java.lang.String,
+    redelivered: scala.Boolean,
+    routingKey: java.lang.String
+  ): ConsumeMessageFields = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deliveryTag")(deliveryTag)
+    __obj.updateDynamic("exchange")(exchange)
+    __obj.updateDynamic("redelivered")(redelivered)
+    __obj.updateDynamic("routingKey")(routingKey)
+    __obj.asInstanceOf[ConsumeMessageFields]
+  }
+}
+

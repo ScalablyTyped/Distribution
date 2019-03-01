@@ -83,3 +83,44 @@ trait Options extends js.Object {
   var resizeHandle: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    afterInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
+    beforeInsert: js.Function1[/* h */ MarkupSet, java.lang.String] = null,
+    markupSet: js.Array[MarkupSet] = null,
+    nameSpace: java.lang.String = null,
+    onCtrlEnter: MarkupSet = null,
+    onEnter: MarkupSet = null,
+    onShiftEnter: MarkupSet = null,
+    onTab: MarkupSet = null,
+    previewAutoRefresh: js.UndefOr[scala.Boolean] = js.undefined,
+    previewInWindow: java.lang.String = null,
+    previewParser: js.UndefOr[scala.Boolean] = js.undefined,
+    previewParserPath: java.lang.String = null,
+    previewParserVar: java.lang.String = null,
+    previewPosition: java.lang.String = null,
+    previewTemplatePath: java.lang.String = null,
+    resizeHandle: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (afterInsert != null) __obj.updateDynamic("afterInsert")(afterInsert)
+    if (beforeInsert != null) __obj.updateDynamic("beforeInsert")(beforeInsert)
+    if (markupSet != null) __obj.updateDynamic("markupSet")(markupSet)
+    if (nameSpace != null) __obj.updateDynamic("nameSpace")(nameSpace)
+    if (onCtrlEnter != null) __obj.updateDynamic("onCtrlEnter")(onCtrlEnter)
+    if (onEnter != null) __obj.updateDynamic("onEnter")(onEnter)
+    if (onShiftEnter != null) __obj.updateDynamic("onShiftEnter")(onShiftEnter)
+    if (onTab != null) __obj.updateDynamic("onTab")(onTab)
+    if (!js.isUndefined(previewAutoRefresh)) __obj.updateDynamic("previewAutoRefresh")(previewAutoRefresh)
+    if (previewInWindow != null) __obj.updateDynamic("previewInWindow")(previewInWindow)
+    if (!js.isUndefined(previewParser)) __obj.updateDynamic("previewParser")(previewParser)
+    if (previewParserPath != null) __obj.updateDynamic("previewParserPath")(previewParserPath)
+    if (previewParserVar != null) __obj.updateDynamic("previewParserVar")(previewParserVar)
+    if (previewPosition != null) __obj.updateDynamic("previewPosition")(previewPosition)
+    if (previewTemplatePath != null) __obj.updateDynamic("previewTemplatePath")(previewTemplatePath)
+    if (!js.isUndefined(resizeHandle)) __obj.updateDynamic("resizeHandle")(resizeHandle)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -10,3 +10,13 @@ trait ProjectsResource extends js.Object {
   var triggers: TriggersResource
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(builds: BuildsResource, triggers: TriggersResource): ProjectsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("builds")(builds)
+    __obj.updateDynamic("triggers")(triggers)
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

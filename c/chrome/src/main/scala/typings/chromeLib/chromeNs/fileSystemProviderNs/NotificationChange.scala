@@ -12,3 +12,13 @@ trait NotificationChange extends js.Object {
   var entryPath: java.lang.String
 }
 
+object NotificationChange {
+  @scala.inline
+  def apply(changeType: java.lang.String, entryPath: java.lang.String): NotificationChange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeType")(changeType)
+    __obj.updateDynamic("entryPath")(entryPath)
+    __obj.asInstanceOf[NotificationChange]
+  }
+}
+

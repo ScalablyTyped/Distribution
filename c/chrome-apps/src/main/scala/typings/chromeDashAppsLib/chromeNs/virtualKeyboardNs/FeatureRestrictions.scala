@@ -27,3 +27,22 @@ trait FeatureRestrictions extends js.Object {
   var voiceInputEnabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FeatureRestrictions {
+  @scala.inline
+  def apply(
+    autoCompleteEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCorrectEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    handwritingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    spellCheckEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    voiceInputEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  ): FeatureRestrictions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoCompleteEnabled)) __obj.updateDynamic("autoCompleteEnabled")(autoCompleteEnabled)
+    if (!js.isUndefined(autoCorrectEnabled)) __obj.updateDynamic("autoCorrectEnabled")(autoCorrectEnabled)
+    if (!js.isUndefined(handwritingEnabled)) __obj.updateDynamic("handwritingEnabled")(handwritingEnabled)
+    if (!js.isUndefined(spellCheckEnabled)) __obj.updateDynamic("spellCheckEnabled")(spellCheckEnabled)
+    if (!js.isUndefined(voiceInputEnabled)) __obj.updateDynamic("voiceInputEnabled")(voiceInputEnabled)
+    __obj.asInstanceOf[FeatureRestrictions]
+  }
+}
+

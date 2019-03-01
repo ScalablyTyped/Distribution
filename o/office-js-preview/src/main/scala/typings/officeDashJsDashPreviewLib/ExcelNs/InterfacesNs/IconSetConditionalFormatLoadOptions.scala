@@ -44,3 +44,22 @@ trait IconSetConditionalFormatLoadOptions extends js.Object {
   var style: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IconSetConditionalFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    criteria: js.UndefOr[scala.Boolean] = js.undefined,
+    reverseIconOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    showIconOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.UndefOr[scala.Boolean] = js.undefined
+  ): IconSetConditionalFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(criteria)) __obj.updateDynamic("criteria")(criteria)
+    if (!js.isUndefined(reverseIconOrder)) __obj.updateDynamic("reverseIconOrder")(reverseIconOrder)
+    if (!js.isUndefined(showIconOnly)) __obj.updateDynamic("showIconOnly")(showIconOnly)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[IconSetConditionalFormatLoadOptions]
+  }
+}
+

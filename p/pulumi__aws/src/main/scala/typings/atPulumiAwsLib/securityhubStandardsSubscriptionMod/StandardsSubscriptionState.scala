@@ -12,3 +12,12 @@ trait StandardsSubscriptionState extends js.Object {
   val standardsArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object StandardsSubscriptionState {
+  @scala.inline
+  def apply(standardsArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null): StandardsSubscriptionState = {
+    val __obj = js.Dynamic.literal()
+    if (standardsArn != null) __obj.updateDynamic("standardsArn")(standardsArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StandardsSubscriptionState]
+  }
+}
+

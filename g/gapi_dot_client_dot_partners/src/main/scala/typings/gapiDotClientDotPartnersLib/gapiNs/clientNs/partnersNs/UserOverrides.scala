@@ -12,3 +12,13 @@ trait UserOverrides extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UserOverrides {
+  @scala.inline
+  def apply(ipAddress: java.lang.String = null, userId: java.lang.String = null): UserOverrides = {
+    val __obj = js.Dynamic.literal()
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[UserOverrides]
+  }
+}
+

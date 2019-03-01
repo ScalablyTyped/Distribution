@@ -10,37 +10,47 @@ object reactDashNativeDashSafeDashAreaLibStrings {
   sealed trait absolutePosition extends js.Object
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait bottomAndLeft extends js.Object
+  sealed trait bottomAndLeft
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait bottomAndRight extends js.Object
+  sealed trait bottomAndRight
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait bottomLeft extends js.Object
+  sealed trait bottomLeft
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait bottomRight extends js.Object
+  sealed trait bottomRight
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
   sealed trait contentInset extends js.Object
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait horizontalAndBottom extends js.Object
+  sealed trait horizontalAndBottom
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait horizontalAndTop extends js.Object
+  sealed trait horizontalAndTop
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
   sealed trait margin extends js.Object
@@ -49,31 +59,40 @@ object reactDashNativeDashSafeDashAreaLibStrings {
   sealed trait padding extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait topAndLeft extends js.Object
+  sealed trait topAndLeft
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait topAndRight extends js.Object
+  sealed trait topAndRight
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait topLeft extends js.Object
+  sealed trait topLeft
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait topRight extends js.Object
+  sealed trait topRight
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait verticalAndLeft extends js.Object
+  sealed trait verticalAndLeft
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @js.native
-  sealed trait verticalAndRight extends js.Object
+  sealed trait verticalAndRight
+    extends reactDashNativeDashSafeDashAreaLib.reactDashNativeDashSafeDashAreaMod.Direction
   
   @scala.inline
   def absolutePosition: absolutePosition = "absolutePosition".asInstanceOf[absolutePosition]

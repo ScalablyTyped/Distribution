@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Mousewheel")
 @js.native
-class Mousewheel () extends js.Object {
+class Mousewheel ()
+  extends swiperLib.swiperMod.SwiperModule {
   /**
     * Whether the mousewheel control is enabled
     */

@@ -10,3 +10,19 @@ trait ICachedFileManagerStatics extends js.Object {
   def deferUpdates(file: IStorageFile): scala.Unit
 }
 
+object ICachedFileManagerStatics {
+  @scala.inline
+  def apply(
+    completeUpdatesAsync: js.Function1[
+      IStorageFile, 
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.ProviderNs.FileUpdateStatus]
+    ],
+    deferUpdates: js.Function1[IStorageFile, scala.Unit]
+  ): ICachedFileManagerStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("completeUpdatesAsync")(completeUpdatesAsync)
+    __obj.updateDynamic("deferUpdates")(deferUpdates)
+    __obj.asInstanceOf[ICachedFileManagerStatics]
+  }
+}
+

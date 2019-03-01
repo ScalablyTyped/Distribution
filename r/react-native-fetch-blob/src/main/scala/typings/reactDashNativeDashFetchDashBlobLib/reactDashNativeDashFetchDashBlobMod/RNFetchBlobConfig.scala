@@ -45,3 +45,32 @@ trait RNFetchBlobConfig extends js.Object {
   var trusty: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RNFetchBlobConfig {
+  @scala.inline
+  def apply(
+    IOSBackgroundTask: js.UndefOr[scala.Boolean] = js.undefined,
+    addAndroidDownloads: AddAndroidDownloads = null,
+    appendExt: java.lang.String = null,
+    fileCache: js.UndefOr[scala.Boolean] = js.undefined,
+    indicator: js.UndefOr[scala.Boolean] = js.undefined,
+    overwrite: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    session: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    trusty: js.UndefOr[scala.Boolean] = js.undefined
+  ): RNFetchBlobConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(IOSBackgroundTask)) __obj.updateDynamic("IOSBackgroundTask")(IOSBackgroundTask)
+    if (addAndroidDownloads != null) __obj.updateDynamic("addAndroidDownloads")(addAndroidDownloads)
+    if (appendExt != null) __obj.updateDynamic("appendExt")(appendExt)
+    if (!js.isUndefined(fileCache)) __obj.updateDynamic("fileCache")(fileCache)
+    if (!js.isUndefined(indicator)) __obj.updateDynamic("indicator")(indicator)
+    if (!js.isUndefined(overwrite)) __obj.updateDynamic("overwrite")(overwrite)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (session != null) __obj.updateDynamic("session")(session)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(trusty)) __obj.updateDynamic("trusty")(trusty)
+    __obj.asInstanceOf[RNFetchBlobConfig]
+  }
+}
+

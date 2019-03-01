@@ -26,3 +26,15 @@ trait ASPxClientNewsControlItemEventArgs extends ASPxClientProcessingModeEventAr
   var name: js.Object
 }
 
+object ASPxClientNewsControlItemEventArgs {
+  @scala.inline
+  def apply(htmlElement: js.Object, htmlEvent: js.Object, name: js.Object, processOnServer: scala.Boolean): ASPxClientNewsControlItemEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("htmlElement")(htmlElement)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[ASPxClientNewsControlItemEventArgs]
+  }
+}
+

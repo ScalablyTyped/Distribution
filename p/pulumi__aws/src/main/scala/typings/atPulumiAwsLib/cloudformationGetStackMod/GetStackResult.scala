@@ -52,3 +52,34 @@ trait GetStackResult extends js.Object {
   val timeoutInMinutes: scala.Double
 }
 
+object GetStackResult {
+  @scala.inline
+  def apply(
+    capabilities: js.Array[java.lang.String],
+    description: java.lang.String,
+    disableRollback: scala.Boolean,
+    iamRoleArn: java.lang.String,
+    id: java.lang.String,
+    notificationArns: js.Array[java.lang.String],
+    outputs: org.scalablytyped.runtime.StringDictionary[js.Any],
+    parameters: org.scalablytyped.runtime.StringDictionary[js.Any],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    templateBody: java.lang.String,
+    timeoutInMinutes: scala.Double
+  ): GetStackResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("capabilities")(capabilities)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("disableRollback")(disableRollback)
+    __obj.updateDynamic("iamRoleArn")(iamRoleArn)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("notificationArns")(notificationArns)
+    __obj.updateDynamic("outputs")(outputs)
+    __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("templateBody")(templateBody)
+    __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes)
+    __obj.asInstanceOf[GetStackResult]
+  }
+}
+

@@ -28,3 +28,16 @@ trait Icon extends js.Object {
   var set: IconSet | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.ThreeArrows | officeDashJsLib.officeDashJsLibStrings.ThreeArrowsGray | officeDashJsLib.officeDashJsLibStrings.ThreeFlags | officeDashJsLib.officeDashJsLibStrings.ThreeTrafficLights1 | officeDashJsLib.officeDashJsLibStrings.ThreeTrafficLights2 | officeDashJsLib.officeDashJsLibStrings.ThreeSigns | officeDashJsLib.officeDashJsLibStrings.ThreeSymbols | officeDashJsLib.officeDashJsLibStrings.ThreeSymbols2 | officeDashJsLib.officeDashJsLibStrings.FourArrows | officeDashJsLib.officeDashJsLibStrings.FourArrowsGray | officeDashJsLib.officeDashJsLibStrings.FourRedToBlack | officeDashJsLib.officeDashJsLibStrings.FourRating | officeDashJsLib.officeDashJsLibStrings.FourTrafficLights | officeDashJsLib.officeDashJsLibStrings.FiveArrows | officeDashJsLib.officeDashJsLibStrings.FiveArrowsGray | officeDashJsLib.officeDashJsLibStrings.FiveRating | officeDashJsLib.officeDashJsLibStrings.FiveQuarters | officeDashJsLib.officeDashJsLibStrings.ThreeStars | officeDashJsLib.officeDashJsLibStrings.ThreeTriangles | officeDashJsLib.officeDashJsLibStrings.FiveBoxes | officeDashJsLib.officeDashJsLibStrings.LinkedEntityFinanceIcon | officeDashJsLib.officeDashJsLibStrings.LinkedEntityMapIcon
 }
 
+object Icon {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    set: IconSet | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.ThreeArrows | officeDashJsLib.officeDashJsLibStrings.ThreeArrowsGray | officeDashJsLib.officeDashJsLibStrings.ThreeFlags | officeDashJsLib.officeDashJsLibStrings.ThreeTrafficLights1 | officeDashJsLib.officeDashJsLibStrings.ThreeTrafficLights2 | officeDashJsLib.officeDashJsLibStrings.ThreeSigns | officeDashJsLib.officeDashJsLibStrings.ThreeSymbols | officeDashJsLib.officeDashJsLibStrings.ThreeSymbols2 | officeDashJsLib.officeDashJsLibStrings.FourArrows | officeDashJsLib.officeDashJsLibStrings.FourArrowsGray | officeDashJsLib.officeDashJsLibStrings.FourRedToBlack | officeDashJsLib.officeDashJsLibStrings.FourRating | officeDashJsLib.officeDashJsLibStrings.FourTrafficLights | officeDashJsLib.officeDashJsLibStrings.FiveArrows | officeDashJsLib.officeDashJsLibStrings.FiveArrowsGray | officeDashJsLib.officeDashJsLibStrings.FiveRating | officeDashJsLib.officeDashJsLibStrings.FiveQuarters | officeDashJsLib.officeDashJsLibStrings.ThreeStars | officeDashJsLib.officeDashJsLibStrings.ThreeTriangles | officeDashJsLib.officeDashJsLibStrings.FiveBoxes | officeDashJsLib.officeDashJsLibStrings.LinkedEntityFinanceIcon | officeDashJsLib.officeDashJsLibStrings.LinkedEntityMapIcon
+  ): Icon = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("set")(set.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Icon]
+  }
+}
+

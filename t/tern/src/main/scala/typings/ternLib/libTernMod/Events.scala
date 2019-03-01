@@ -35,3 +35,36 @@ trait Events extends js.Object {
   def typeAt(file: File, end: Position, expr: estreeLib.estreeMod.Node, `type`: ternLib.libInferMod.Type): ternLib.libInferMod.Type | scala.Unit
 }
 
+object Events {
+  @scala.inline
+  def apply(
+    afterLoad: js.Function1[File, scala.Unit],
+    beforeLoad: js.Function1[File, scala.Unit],
+    completion: js.Function2[File, Query, CompletionsQueryResult | scala.Unit],
+    postInfer: js.Function2[estreeLib.estreeMod.Program, ternLib.libInferMod.Scope, scala.Unit],
+    postParse: js.Function2[estreeLib.estreeMod.Program, java.lang.String, scala.Unit],
+    preInfer: js.Function2[estreeLib.estreeMod.Program, ternLib.libInferMod.Scope, scala.Unit],
+    preParse: js.Function2[java.lang.String, js.Object, java.lang.String | scala.Unit],
+    reset: js.Function0[scala.Unit],
+    typeAt: js.Function4[
+      File, 
+      Position, 
+      estreeLib.estreeMod.Node, 
+      ternLib.libInferMod.Type, 
+      ternLib.libInferMod.Type | scala.Unit
+    ]
+  ): Events = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("afterLoad")(afterLoad)
+    __obj.updateDynamic("beforeLoad")(beforeLoad)
+    __obj.updateDynamic("completion")(completion)
+    __obj.updateDynamic("postInfer")(postInfer)
+    __obj.updateDynamic("postParse")(postParse)
+    __obj.updateDynamic("preInfer")(preInfer)
+    __obj.updateDynamic("preParse")(preParse)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("typeAt")(typeAt)
+    __obj.asInstanceOf[Events]
+  }
+}
+

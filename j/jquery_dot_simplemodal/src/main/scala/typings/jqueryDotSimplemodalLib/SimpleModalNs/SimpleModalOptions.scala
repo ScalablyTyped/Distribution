@@ -62,3 +62,66 @@ trait SimpleModalOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SimpleModalOptions {
+  @scala.inline
+  def apply(
+    appendTo: java.lang.String = null,
+    autoPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    autoResize: js.UndefOr[scala.Boolean] = js.undefined,
+    close: js.UndefOr[scala.Boolean] = js.undefined,
+    closeClass: java.lang.String = null,
+    closeHTML: java.lang.String = null,
+    containerCss: js.Object = null,
+    containerId: java.lang.String = null,
+    dataCss: js.Object = null,
+    dataId: java.lang.String = null,
+    escClose: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: js.UndefOr[scala.Boolean] = js.undefined,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    minHeight: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    modal: js.UndefOr[scala.Boolean] = js.undefined,
+    onClose: js.Function1[/* dialog */ SimpleModalDialog, scala.Unit] = null,
+    onOpen: js.Function1[/* dialog */ SimpleModalDialog, scala.Unit] = null,
+    onShow: js.Function1[/* dialog */ SimpleModalDialog, scala.Unit] = null,
+    opacity: scala.Int | scala.Double = null,
+    overlayClose: js.UndefOr[scala.Boolean] = js.undefined,
+    overlayCss: js.Object = null,
+    overlayId: java.lang.String = null,
+    persist: js.UndefOr[scala.Boolean] = js.undefined,
+    position: js.Array[_] = null,
+    zIndex: scala.Int | scala.Double = null
+  ): SimpleModalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (!js.isUndefined(autoPosition)) __obj.updateDynamic("autoPosition")(autoPosition)
+    if (!js.isUndefined(autoResize)) __obj.updateDynamic("autoResize")(autoResize)
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close)
+    if (closeClass != null) __obj.updateDynamic("closeClass")(closeClass)
+    if (closeHTML != null) __obj.updateDynamic("closeHTML")(closeHTML)
+    if (containerCss != null) __obj.updateDynamic("containerCss")(containerCss)
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
+    if (dataCss != null) __obj.updateDynamic("dataCss")(dataCss)
+    if (dataId != null) __obj.updateDynamic("dataId")(dataId)
+    if (!js.isUndefined(escClose)) __obj.updateDynamic("escClose")(escClose)
+    if (!js.isUndefined(focus)) __obj.updateDynamic("focus")(focus)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(overlayClose)) __obj.updateDynamic("overlayClose")(overlayClose)
+    if (overlayCss != null) __obj.updateDynamic("overlayCss")(overlayCss)
+    if (overlayId != null) __obj.updateDynamic("overlayId")(overlayId)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SimpleModalOptions]
+  }
+}
+

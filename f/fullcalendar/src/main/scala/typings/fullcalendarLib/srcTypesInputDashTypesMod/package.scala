@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object srcTypesInputDashTypesMod {
-  type ConstraintInput = RangeInput | BusinessHoursInput | fullcalendarLib.fullcalendarLibStrings.businessHours
   type DurationInput = momentLib.momentMod.momentNs.Duration | js.Object | java.lang.String | scala.Double
   type EventSourceFunction = js.Function4[
     /* start */ momentLib.momentMod.momentNs.Moment, 

@@ -10,3 +10,12 @@ trait ThreatEntryMetadata extends js.Object {
   var entries: js.UndefOr[js.Array[MetadataEntry]] = js.undefined
 }
 
+object ThreatEntryMetadata {
+  @scala.inline
+  def apply(entries: js.Array[MetadataEntry] = null): ThreatEntryMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (entries != null) __obj.updateDynamic("entries")(entries)
+    __obj.asInstanceOf[ThreatEntryMetadata]
+  }
+}
+

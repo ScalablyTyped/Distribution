@@ -24,3 +24,18 @@ trait Device extends js.Object {
   var managementType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    androidId: java.lang.String = null,
+    kind: java.lang.String = null,
+    managementType: java.lang.String = null
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    if (androidId != null) __obj.updateDynamic("androidId")(androidId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (managementType != null) __obj.updateDynamic("managementType")(managementType)
+    __obj.asInstanceOf[Device]
+  }
+}
+

@@ -52,3 +52,46 @@ trait XPanel extends js.Object {
   def setTitle(newTitle: java.lang.String): scala.Unit
 }
 
+object XPanel {
+  @scala.inline
+  def apply(
+    Dialog: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    Id: java.lang.String,
+    OrderIndex: scala.Double,
+    Title: java.lang.String,
+    collapse: js.Function0[scala.Unit],
+    expand: js.Function1[scala.Boolean, scala.Unit],
+    getDialog: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow],
+    getId: js.Function0[java.lang.String],
+    getOrderIndex: js.Function0[scala.Double],
+    getTitle: js.Function0[java.lang.String],
+    isExpanded: js.Function0[scala.Boolean],
+    moveDown: js.Function0[scala.Unit],
+    moveFirst: js.Function0[scala.Unit],
+    moveLast: js.Function0[scala.Unit],
+    moveUp: js.Function0[scala.Unit],
+    setOrderIndex: js.Function1[scala.Double, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): XPanel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Dialog")(Dialog)
+    __obj.updateDynamic("Id")(Id)
+    __obj.updateDynamic("OrderIndex")(OrderIndex)
+    __obj.updateDynamic("Title")(Title)
+    __obj.updateDynamic("collapse")(collapse)
+    __obj.updateDynamic("expand")(expand)
+    __obj.updateDynamic("getDialog")(getDialog)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getOrderIndex")(getOrderIndex)
+    __obj.updateDynamic("getTitle")(getTitle)
+    __obj.updateDynamic("isExpanded")(isExpanded)
+    __obj.updateDynamic("moveDown")(moveDown)
+    __obj.updateDynamic("moveFirst")(moveFirst)
+    __obj.updateDynamic("moveLast")(moveLast)
+    __obj.updateDynamic("moveUp")(moveUp)
+    __obj.updateDynamic("setOrderIndex")(setOrderIndex)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.asInstanceOf[XPanel]
+  }
+}
+

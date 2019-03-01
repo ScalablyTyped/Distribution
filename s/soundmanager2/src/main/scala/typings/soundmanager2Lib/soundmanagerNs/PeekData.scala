@@ -10,3 +10,13 @@ trait PeekData extends js.Object {
   var right: scala.Double
 }
 
+object PeekData {
+  @scala.inline
+  def apply(left: scala.Double, right: scala.Double): PeekData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("right")(right)
+    __obj.asInstanceOf[PeekData]
+  }
+}
+

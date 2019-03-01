@@ -13,16 +13,20 @@ object pdfmakeLibStrings {
   sealed trait before extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends pdfmakeLib.buildPdfmakeMod._Alignment
   
   @js.native
-  sealed trait justify extends js.Object
+  sealed trait justify
+    extends pdfmakeLib.buildPdfmakeMod._Alignment
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends pdfmakeLib.buildPdfmakeMod._Alignment
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends pdfmakeLib.buildPdfmakeMod._Alignment
   
   @js.native
   sealed trait string extends js.Object

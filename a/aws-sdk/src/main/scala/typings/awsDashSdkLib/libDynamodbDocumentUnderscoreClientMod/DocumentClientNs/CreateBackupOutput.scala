@@ -12,3 +12,12 @@ trait CreateBackupOutput extends js.Object {
   var BackupDetails: js.UndefOr[BackupDetails] = js.undefined
 }
 
+object CreateBackupOutput {
+  @scala.inline
+  def apply(BackupDetails: BackupDetails = null): CreateBackupOutput = {
+    val __obj = js.Dynamic.literal()
+    if (BackupDetails != null) __obj.updateDynamic("BackupDetails")(BackupDetails)
+    __obj.asInstanceOf[CreateBackupOutput]
+  }
+}
+

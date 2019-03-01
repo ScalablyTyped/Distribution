@@ -10,3 +10,13 @@ trait FileCodeSigningInfo extends js.Object {
   val password: java.lang.String | scala.Null
 }
 
+object FileCodeSigningInfo {
+  @scala.inline
+  def apply(file: java.lang.String, password: java.lang.String = null): FileCodeSigningInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("file")(file)
+    if (password != null) __obj.updateDynamic("password")(password)
+    __obj.asInstanceOf[FileCodeSigningInfo]
+  }
+}
+

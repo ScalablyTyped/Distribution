@@ -12,3 +12,16 @@ trait Option extends js.Object {
   ] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    cwd: java.lang.String = null,
+    filter: java.lang.String | (js.Function1[/* filePath */ java.lang.String, scala.Boolean]) = null
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Option]
+  }
+}
+

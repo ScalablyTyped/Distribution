@@ -10,3 +10,12 @@ trait MessageSendOptions extends js.Object {
   var frameId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MessageSendOptions {
+  @scala.inline
+  def apply(frameId: scala.Int | scala.Double = null): MessageSendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MessageSendOptions]
+  }
+}
+

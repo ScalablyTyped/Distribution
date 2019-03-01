@@ -20,3 +20,18 @@ trait WaitForSelectorOptions extends Timeoutable {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WaitForSelectorOptions {
+  @scala.inline
+  def apply(
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): WaitForSelectorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[WaitForSelectorOptions]
+  }
+}
+

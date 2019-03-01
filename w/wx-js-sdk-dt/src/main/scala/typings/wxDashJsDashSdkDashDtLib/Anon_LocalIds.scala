@@ -9,3 +9,12 @@ trait Anon_LocalIds extends js.Object {
   var localIds: js.Array[java.lang.String]
 }
 
+object Anon_LocalIds {
+  @scala.inline
+  def apply(localIds: js.Array[java.lang.String]): Anon_LocalIds = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("localIds")(localIds)
+    __obj.asInstanceOf[Anon_LocalIds]
+  }
+}
+

@@ -91,3 +91,42 @@ trait ServerOptions extends js.Object {
   var transports: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    adapter: Adapter = null,
+    allowRequest: js.Function2[
+      /* request */ js.Any, 
+      /* callback */ js.Function2[/* err */ scala.Double, /* success */ scala.Boolean, scala.Unit], 
+      scala.Unit
+    ] = null,
+    allowUpgrades: js.UndefOr[scala.Boolean] = js.undefined,
+    cookie: java.lang.String | scala.Boolean = null,
+    httpCompression: js.Object | scala.Boolean = null,
+    maxHttpBufferSize: scala.Int | scala.Double = null,
+    origins: java.lang.String | js.Array[java.lang.String] = null,
+    path: java.lang.String = null,
+    perMessageDeflate: js.Object | scala.Boolean = null,
+    pingInterval: scala.Int | scala.Double = null,
+    pingTimeout: scala.Int | scala.Double = null,
+    serveClient: js.UndefOr[scala.Boolean] = js.undefined,
+    transports: js.Array[java.lang.String] = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (adapter != null) __obj.updateDynamic("adapter")(adapter)
+    if (allowRequest != null) __obj.updateDynamic("allowRequest")(allowRequest)
+    if (!js.isUndefined(allowUpgrades)) __obj.updateDynamic("allowUpgrades")(allowUpgrades)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (httpCompression != null) __obj.updateDynamic("httpCompression")(httpCompression.asInstanceOf[js.Any])
+    if (maxHttpBufferSize != null) __obj.updateDynamic("maxHttpBufferSize")(maxHttpBufferSize.asInstanceOf[js.Any])
+    if (origins != null) __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate.asInstanceOf[js.Any])
+    if (pingInterval != null) __obj.updateDynamic("pingInterval")(pingInterval.asInstanceOf[js.Any])
+    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(serveClient)) __obj.updateDynamic("serveClient")(serveClient)
+    if (transports != null) __obj.updateDynamic("transports")(transports)
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

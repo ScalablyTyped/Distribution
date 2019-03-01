@@ -116,3 +116,58 @@ trait XSQLQueryComposer
   def setQuery(command: java.lang.String): scala.Unit
 }
 
+object XSQLQueryComposer {
+  @scala.inline
+  def apply(
+    ComposedQuery: java.lang.String,
+    Filter: java.lang.String,
+    Order: java.lang.String,
+    Query: java.lang.String,
+    StructuredFilter: activexDashInteropLib.SafeArray[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    acquire: js.Function0[scala.Unit],
+    appendFilterByColumn: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, scala.Unit],
+    appendOrderByColumn: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet, 
+      scala.Boolean, 
+      scala.Unit
+    ],
+    getComposedQuery: js.Function0[java.lang.String],
+    getFilter: js.Function0[java.lang.String],
+    getOrder: js.Function0[java.lang.String],
+    getQuery: js.Function0[java.lang.String],
+    getStructuredFilter: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setFilter: js.Function1[java.lang.String, scala.Unit],
+    setOrder: js.Function1[java.lang.String, scala.Unit],
+    setQuery: js.Function1[java.lang.String, scala.Unit]
+  ): XSQLQueryComposer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ComposedQuery")(ComposedQuery)
+    __obj.updateDynamic("Filter")(Filter)
+    __obj.updateDynamic("Order")(Order)
+    __obj.updateDynamic("Query")(Query)
+    __obj.updateDynamic("StructuredFilter")(StructuredFilter)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("appendFilterByColumn")(appendFilterByColumn)
+    __obj.updateDynamic("appendOrderByColumn")(appendOrderByColumn)
+    __obj.updateDynamic("getComposedQuery")(getComposedQuery)
+    __obj.updateDynamic("getFilter")(getFilter)
+    __obj.updateDynamic("getOrder")(getOrder)
+    __obj.updateDynamic("getQuery")(getQuery)
+    __obj.updateDynamic("getStructuredFilter")(getStructuredFilter)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setFilter")(setFilter)
+    __obj.updateDynamic("setOrder")(setOrder)
+    __obj.updateDynamic("setQuery")(setQuery)
+    __obj.asInstanceOf[XSQLQueryComposer]
+  }
+}
+

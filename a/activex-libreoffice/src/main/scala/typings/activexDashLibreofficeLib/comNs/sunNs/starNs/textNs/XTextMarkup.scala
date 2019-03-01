@@ -43,3 +43,33 @@ trait XTextMarkup extends js.Object {
   def getMarkupInfoContainer(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap
 }
 
+object XTextMarkup {
+  @scala.inline
+  def apply(
+    MarkupInfoContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap,
+    commitStringMarkup: js.Function5[
+      scala.Double, 
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, 
+      scala.Unit
+    ],
+    commitTextRangeMarkup: js.Function4[
+      scala.Double, 
+      java.lang.String, 
+      XTextRange, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap, 
+      scala.Unit
+    ],
+    getMarkupInfoContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XStringKeyMap]
+  ): XTextMarkup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MarkupInfoContainer")(MarkupInfoContainer)
+    __obj.updateDynamic("commitStringMarkup")(commitStringMarkup)
+    __obj.updateDynamic("commitTextRangeMarkup")(commitTextRangeMarkup)
+    __obj.updateDynamic("getMarkupInfoContainer")(getMarkupInfoContainer)
+    __obj.asInstanceOf[XTextMarkup]
+  }
+}
+

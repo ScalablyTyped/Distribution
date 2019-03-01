@@ -10,3 +10,13 @@ trait IPrecacheEntry extends js.Object {
   var url: java.lang.String
 }
 
+object IPrecacheEntry {
+  @scala.inline
+  def apply(revision: java.lang.String, url: java.lang.String): IPrecacheEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("revision")(revision)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[IPrecacheEntry]
+  }
+}
+

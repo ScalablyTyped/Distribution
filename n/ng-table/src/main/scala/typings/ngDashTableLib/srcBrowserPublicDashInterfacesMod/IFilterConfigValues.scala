@@ -23,3 +23,18 @@ trait IFilterConfigValues extends js.Object {
   var defaultExt: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IFilterConfigValues {
+  @scala.inline
+  def apply(
+    aliasUrls: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    defaultBaseUrl: java.lang.String = null,
+    defaultExt: java.lang.String = null
+  ): IFilterConfigValues = {
+    val __obj = js.Dynamic.literal()
+    if (aliasUrls != null) __obj.updateDynamic("aliasUrls")(aliasUrls)
+    if (defaultBaseUrl != null) __obj.updateDynamic("defaultBaseUrl")(defaultBaseUrl)
+    if (defaultExt != null) __obj.updateDynamic("defaultExt")(defaultExt)
+    __obj.asInstanceOf[IFilterConfigValues]
+  }
+}
+

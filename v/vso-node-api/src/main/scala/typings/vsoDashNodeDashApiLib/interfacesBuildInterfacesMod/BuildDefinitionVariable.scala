@@ -20,3 +20,14 @@ trait BuildDefinitionVariable extends js.Object {
   var value: java.lang.String
 }
 
+object BuildDefinitionVariable {
+  @scala.inline
+  def apply(allowOverride: scala.Boolean, isSecret: scala.Boolean, value: java.lang.String): BuildDefinitionVariable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowOverride")(allowOverride)
+    __obj.updateDynamic("isSecret")(isSecret)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[BuildDefinitionVariable]
+  }
+}
+

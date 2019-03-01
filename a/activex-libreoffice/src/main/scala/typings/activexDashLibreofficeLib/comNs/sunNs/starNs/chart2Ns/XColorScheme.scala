@@ -19,3 +19,20 @@ trait XColorScheme
   def getColorByIndex(nIndex: scala.Double): activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color
 }
 
+object XColorScheme {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getColorByIndex: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XColorScheme = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getColorByIndex")(getColorByIndex)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XColorScheme]
+  }
+}
+

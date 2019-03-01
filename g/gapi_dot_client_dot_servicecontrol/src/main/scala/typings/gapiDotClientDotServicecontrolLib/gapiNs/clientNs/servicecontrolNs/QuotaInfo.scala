@@ -44,3 +44,18 @@ trait QuotaInfo extends js.Object {
   var quotaMetrics: js.UndefOr[js.Array[MetricValueSet]] = js.undefined
 }
 
+object QuotaInfo {
+  @scala.inline
+  def apply(
+    limitExceeded: js.Array[java.lang.String] = null,
+    quotaConsumed: stdLib.Record[java.lang.String, scala.Double] = null,
+    quotaMetrics: js.Array[MetricValueSet] = null
+  ): QuotaInfo = {
+    val __obj = js.Dynamic.literal()
+    if (limitExceeded != null) __obj.updateDynamic("limitExceeded")(limitExceeded)
+    if (quotaConsumed != null) __obj.updateDynamic("quotaConsumed")(quotaConsumed)
+    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics)
+    __obj.asInstanceOf[QuotaInfo]
+  }
+}
+

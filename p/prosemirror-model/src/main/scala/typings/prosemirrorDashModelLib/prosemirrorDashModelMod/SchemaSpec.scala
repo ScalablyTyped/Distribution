@@ -35,3 +35,22 @@ trait SchemaSpec[N /* <: java.lang.String */, M /* <: java.lang.String */] exten
   var topNode: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object SchemaSpec {
+  @scala.inline
+  def apply[N /* <: java.lang.String */, M /* <: java.lang.String */](
+    nodes: (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
+    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[NodeSpec],
+    marks: (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
+    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[MarkSpec] = null,
+    topNode: java.lang.String = null
+  ): SchemaSpec[N, M] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nodes")(nodes.asInstanceOf[js.Any])
+    if (marks != null) __obj.updateDynamic("marks")(marks.asInstanceOf[js.Any])
+    if (topNode != null) __obj.updateDynamic("topNode")(topNode)
+    __obj.asInstanceOf[SchemaSpec[N, M]]
+  }
+}
+

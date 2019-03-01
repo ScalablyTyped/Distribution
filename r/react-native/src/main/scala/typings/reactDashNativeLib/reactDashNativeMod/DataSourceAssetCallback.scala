@@ -21,3 +21,25 @@ trait DataSourceAssetCallback extends js.Object {
   var sectionHeaderHasChanged: js.UndefOr[js.Function2[/* h1 */ js.Any, /* h2 */ js.Any, scala.Boolean]] = js.undefined
 }
 
+object DataSourceAssetCallback {
+  @scala.inline
+  def apply(
+    getRowData: js.Function3[
+      /* dataBlob */ js.Any, 
+      /* sectionID */ scala.Double | java.lang.String, 
+      /* rowID */ scala.Double | java.lang.String, 
+      _
+    ] = null,
+    getSectionHeaderData: js.Function2[/* dataBlob */ js.Any, /* sectionID */ scala.Double | java.lang.String, _] = null,
+    rowHasChanged: js.Function2[/* r1 */ js.Any, /* r2 */ js.Any, scala.Boolean] = null,
+    sectionHeaderHasChanged: js.Function2[/* h1 */ js.Any, /* h2 */ js.Any, scala.Boolean] = null
+  ): DataSourceAssetCallback = {
+    val __obj = js.Dynamic.literal()
+    if (getRowData != null) __obj.updateDynamic("getRowData")(getRowData)
+    if (getSectionHeaderData != null) __obj.updateDynamic("getSectionHeaderData")(getSectionHeaderData)
+    if (rowHasChanged != null) __obj.updateDynamic("rowHasChanged")(rowHasChanged)
+    if (sectionHeaderHasChanged != null) __obj.updateDynamic("sectionHeaderHasChanged")(sectionHeaderHasChanged)
+    __obj.asInstanceOf[DataSourceAssetCallback]
+  }
+}
+

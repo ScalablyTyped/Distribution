@@ -19,3 +19,34 @@ trait Settings extends js.Object {
   var wantShadow: scala.Boolean
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    hasNativeCSSProperties: scala.Boolean,
+    hasNativeImports: scala.Boolean,
+    hasShadow: scala.Boolean,
+    nativeShadow: scala.Boolean,
+    useNativeCSSProperties: scala.Boolean,
+    useNativeCustomElements: scala.Boolean,
+    useNativeImports: scala.Boolean,
+    useNativeShadow: scala.Boolean,
+    usePolyfillProto: scala.Boolean,
+    useShadow: scala.Boolean,
+    wantShadow: scala.Boolean
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hasNativeCSSProperties")(hasNativeCSSProperties)
+    __obj.updateDynamic("hasNativeImports")(hasNativeImports)
+    __obj.updateDynamic("hasShadow")(hasShadow)
+    __obj.updateDynamic("nativeShadow")(nativeShadow)
+    __obj.updateDynamic("useNativeCSSProperties")(useNativeCSSProperties)
+    __obj.updateDynamic("useNativeCustomElements")(useNativeCustomElements)
+    __obj.updateDynamic("useNativeImports")(useNativeImports)
+    __obj.updateDynamic("useNativeShadow")(useNativeShadow)
+    __obj.updateDynamic("usePolyfillProto")(usePolyfillProto)
+    __obj.updateDynamic("useShadow")(useShadow)
+    __obj.updateDynamic("wantShadow")(wantShadow)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

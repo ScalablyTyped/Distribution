@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object dineroDotJsLibStrings {
   @js.native
-  sealed trait HALF_AWAY_FROM_ZERO extends js.Object
+  sealed trait HALF_AWAY_FROM_ZERO
+    extends dineroDotJsLib.dineroDotJsMod.DineroFactoryNs.RoundingMode
   
   @js.native
-  sealed trait HALF_DOWN extends js.Object
+  sealed trait HALF_DOWN
+    extends dineroDotJsLib.dineroDotJsMod.DineroFactoryNs.RoundingMode
   
   @js.native
-  sealed trait HALF_EVEN extends js.Object
+  sealed trait HALF_EVEN
+    extends dineroDotJsLib.dineroDotJsMod.DineroFactoryNs.RoundingMode
   
   @js.native
-  sealed trait HALF_ODD extends js.Object
+  sealed trait HALF_ODD
+    extends dineroDotJsLib.dineroDotJsMod.DineroFactoryNs.RoundingMode
   
   @js.native
-  sealed trait HALF_TOWARDS_ZERO extends js.Object
+  sealed trait HALF_TOWARDS_ZERO
+    extends dineroDotJsLib.dineroDotJsMod.DineroFactoryNs.RoundingMode
   
   @js.native
-  sealed trait HALF_UP extends js.Object
+  sealed trait HALF_UP
+    extends dineroDotJsLib.dineroDotJsMod.DineroFactoryNs.RoundingMode
   
   @scala.inline
   def HALF_AWAY_FROM_ZERO: HALF_AWAY_FROM_ZERO = "HALF_AWAY_FROM_ZERO".asInstanceOf[HALF_AWAY_FROM_ZERO]

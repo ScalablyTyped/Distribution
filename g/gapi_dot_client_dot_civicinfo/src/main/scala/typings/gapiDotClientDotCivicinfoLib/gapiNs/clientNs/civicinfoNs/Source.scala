@@ -12,3 +12,13 @@ trait Source extends js.Object {
   var official: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Source {
+  @scala.inline
+  def apply(name: java.lang.String = null, official: js.UndefOr[scala.Boolean] = js.undefined): Source = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(official)) __obj.updateDynamic("official")(official)
+    __obj.asInstanceOf[Source]
+  }
+}
+

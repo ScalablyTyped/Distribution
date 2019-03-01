@@ -12,3 +12,20 @@ trait Anon_BOTTOM extends js.Object {
   var TOP: chromeDashAppsLib.chromeDashAppsLibStrings.top
 }
 
+object Anon_BOTTOM {
+  @scala.inline
+  def apply(
+    BOTTOM: chromeDashAppsLib.chromeDashAppsLibStrings.bottom,
+    LEFT: chromeDashAppsLib.chromeDashAppsLibStrings.left,
+    RIGHT: chromeDashAppsLib.chromeDashAppsLibStrings.right,
+    TOP: chromeDashAppsLib.chromeDashAppsLibStrings.top
+  ): Anon_BOTTOM = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BOTTOM")(BOTTOM)
+    __obj.updateDynamic("LEFT")(LEFT)
+    __obj.updateDynamic("RIGHT")(RIGHT)
+    __obj.updateDynamic("TOP")(TOP)
+    __obj.asInstanceOf[Anon_BOTTOM]
+  }
+}
+

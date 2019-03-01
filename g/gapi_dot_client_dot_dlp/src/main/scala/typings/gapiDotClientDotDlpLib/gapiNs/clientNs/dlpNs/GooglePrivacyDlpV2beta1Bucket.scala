@@ -20,3 +20,18 @@ trait GooglePrivacyDlpV2beta1Bucket extends js.Object {
   var replacementValue: js.UndefOr[GooglePrivacyDlpV2beta1Value] = js.undefined
 }
 
+object GooglePrivacyDlpV2beta1Bucket {
+  @scala.inline
+  def apply(
+    max: GooglePrivacyDlpV2beta1Value = null,
+    min: GooglePrivacyDlpV2beta1Value = null,
+    replacementValue: GooglePrivacyDlpV2beta1Value = null
+  ): GooglePrivacyDlpV2beta1Bucket = {
+    val __obj = js.Dynamic.literal()
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (min != null) __obj.updateDynamic("min")(min)
+    if (replacementValue != null) __obj.updateDynamic("replacementValue")(replacementValue)
+    __obj.asInstanceOf[GooglePrivacyDlpV2beta1Bucket]
+  }
+}
+

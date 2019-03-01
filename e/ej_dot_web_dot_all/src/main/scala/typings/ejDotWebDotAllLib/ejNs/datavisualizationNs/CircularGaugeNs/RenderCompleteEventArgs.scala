@@ -26,3 +26,24 @@ trait RenderCompleteEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RenderCompleteEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    model: js.Any = null,
+    `object`: js.Any = null,
+    scaleElement: js.Any = null,
+    `type`: java.lang.String = null
+  ): RenderCompleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RenderCompleteEventArgs]
+  }
+}
+

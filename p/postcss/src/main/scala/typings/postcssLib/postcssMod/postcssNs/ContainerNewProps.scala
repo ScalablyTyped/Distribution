@@ -14,3 +14,13 @@ trait ContainerNewProps extends NodeNewProps {
   var raws_ContainerNewProps: js.UndefOr[ContainerRaws] = js.undefined
 }
 
+object ContainerNewProps {
+  @scala.inline
+  def apply(nodes: js.Array[Node] = null, raws: ContainerRaws = null): ContainerNewProps = {
+    val __obj = js.Dynamic.literal()
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (raws != null) __obj.updateDynamic("raws")(raws)
+    __obj.asInstanceOf[ContainerNewProps]
+  }
+}
+

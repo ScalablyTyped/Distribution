@@ -13,3 +13,22 @@ trait Anon_ItemUnit extends js.Object {
   var titles: js.Array[java.lang.String]
 }
 
+object Anon_ItemUnit {
+  @scala.inline
+  def apply(
+    itemUnit: java.lang.String,
+    itemsUnit: java.lang.String,
+    notFoundContent: js.Any,
+    searchPlaceholder: java.lang.String,
+    titles: js.Array[java.lang.String]
+  ): Anon_ItemUnit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("itemUnit")(itemUnit)
+    __obj.updateDynamic("itemsUnit")(itemsUnit)
+    __obj.updateDynamic("notFoundContent")(notFoundContent)
+    __obj.updateDynamic("searchPlaceholder")(searchPlaceholder)
+    __obj.updateDynamic("titles")(titles)
+    __obj.asInstanceOf[Anon_ItemUnit]
+  }
+}
+

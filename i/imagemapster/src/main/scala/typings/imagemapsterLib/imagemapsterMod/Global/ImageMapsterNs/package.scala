@@ -17,8 +17,6 @@ package object ImageMapsterNs {
   type Set = imagemapsterLib.imagemapsterLibStrings.set
   type SetOptions = imagemapsterLib.imagemapsterLibStrings.set_options
   type Snapshot = imagemapsterLib.imagemapsterLibStrings.snapshot
-  type State = imagemapsterLib.imagemapsterLibStrings.highlight | imagemapsterLib.imagemapsterLibStrings.select
-  type ToolTipCloseEvent = imagemapsterLib.imagemapsterLibStrings.`area-mouseout` | imagemapsterLib.imagemapsterLibStrings.`area-click` | imagemapsterLib.imagemapsterLibStrings.`tooltip-click` | imagemapsterLib.imagemapsterLibStrings.`image-mouseout`
   type Tooltip = imagemapsterLib.imagemapsterLibStrings.tooltip
   type Unbind = imagemapsterLib.imagemapsterLibStrings.unbind
 }

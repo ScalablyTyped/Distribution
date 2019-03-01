@@ -14,3 +14,18 @@ trait PlacementStrategiesListResponse extends js.Object {
   var placementStrategies: js.UndefOr[js.Array[PlacementStrategy]] = js.undefined
 }
 
+object PlacementStrategiesListResponse {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    placementStrategies: js.Array[PlacementStrategy] = null
+  ): PlacementStrategiesListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (placementStrategies != null) __obj.updateDynamic("placementStrategies")(placementStrategies)
+    __obj.asInstanceOf[PlacementStrategiesListResponse]
+  }
+}
+

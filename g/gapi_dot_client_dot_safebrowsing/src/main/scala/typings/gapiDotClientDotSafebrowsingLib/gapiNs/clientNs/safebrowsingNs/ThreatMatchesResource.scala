@@ -10,3 +10,17 @@ trait ThreatMatchesResource extends js.Object {
   def find(request: gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[FindThreatMatchesResponse]
 }
 
+object ThreatMatchesResource {
+  @scala.inline
+  def apply(
+    find: js.Function1[
+      gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FindThreatMatchesResponse]
+    ]
+  ): ThreatMatchesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("find")(find)
+    __obj.asInstanceOf[ThreatMatchesResource]
+  }
+}
+

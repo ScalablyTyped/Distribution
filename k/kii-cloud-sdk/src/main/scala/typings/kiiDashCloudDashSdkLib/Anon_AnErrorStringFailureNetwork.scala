@@ -17,3 +17,25 @@ trait Anon_AnErrorStringFailureNetwork extends js.Object {
   ): js.Any
 }
 
+object Anon_AnErrorStringFailureNetwork {
+  @scala.inline
+  def apply(
+    failure: js.Function3[
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName, 
+      java.lang.String, 
+      js.Any
+    ],
+    success: js.Function2[
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiSocialNetworkName, 
+      js.Any
+    ]
+  ): Anon_AnErrorStringFailureNetwork = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failure")(failure)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_AnErrorStringFailureNetwork]
+  }
+}
+

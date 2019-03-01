@@ -118,11 +118,7 @@ object AlexaForBusinessNs extends js.Object {
     
     trait AssociateSkillWithUsersRequest extends js.Object {
       /**
-        * The ARN of the organization.
-        */
-      var OrganizationArn: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Arn] = js.undefined
-      /**
-        * The private skill ID you want to make available to enrolled users.&gt;
+        * The private skill ID you want to make available to enrolled users.
         */
       var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
     }
@@ -369,13 +365,13 @@ object AlexaForBusinessNs extends js.Object {
         */
       var Format: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.BusinessReportFormat
       /**
-        * The recurrence of the reports.
+        * The recurrence of the reports. If this isn't specified, the report will only be delivered one time when the API is called. 
         */
       var Recurrence: js.UndefOr[
             awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.BusinessReportRecurrence
           ] = js.undefined
       /**
-        * The S3 bucket name of the output reports.
+        * The S3 bucket name of the output reports. If this isn't specified, the report can be retrieved from a download link by calling ListBusinessReportSchedule. 
         */
       var S3BucketName: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.CustomerS3BucketName] = js.undefined
       /**
@@ -891,10 +887,6 @@ object AlexaForBusinessNs extends js.Object {
     
     trait DisassociateSkillFromUsersRequest extends js.Object {
       /**
-        * The ARN of the organization.
-        */
-      var OrganizationArn: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Arn] = js.undefined
-      /**
         *  The private skill ID you want to make unavailable for enrolled users.
         */
       var SkillId: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId
@@ -998,6 +990,23 @@ object AlexaForBusinessNs extends js.Object {
         * The details of the device requested. Required.
         */
       var Device: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Device] = js.undefined
+    }
+    
+    trait GetInvitationConfigurationRequest extends js.Object
+    
+    trait GetInvitationConfigurationResponse extends js.Object {
+      /**
+        * The email ID of the organization or individual contact that the enrolled user can use. 
+        */
+      var ContactEmail: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Email] = js.undefined
+      /**
+        * The name of the organization sending the enrollment invite to a user.
+        */
+      var OrganizationName: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.OrganizationName] = js.undefined
+      /**
+        * The list of private skill IDs that you want to recommend to the user to enable in the invitation.
+        */
+      var PrivateSkillIds: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ShortSkillIdList] = js.undefined
     }
     
     trait GetProfileRequest extends js.Object {
@@ -1159,15 +1168,15 @@ object AlexaForBusinessNs extends js.Object {
         */
       var EnablementType: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.EnablementTypeFilter] = js.undefined
       /**
-        * The maximum number of results to include in the response. If more results exist than the specified MaxResults value, a token is included in the response so that the remaining results can be retrieved.
+        * The maximum number of results to include in the response. If more results exist than the specified MaxResults value, a token is included in the response so that the remaining results can be retrieved. Required.
         */
       var MaxResults: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillListMaxResults] = js.undefined
       /**
-        * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults.
+        * An optional token returned from a prior request. Use this token for pagination of results from this action. If this parameter is specified, the response includes only results beyond the token, up to the value specified by MaxResults. Required.
         */
       var NextToken: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.NextToken] = js.undefined
       /**
-        * The ARN of the skill group for which to list enabled skills.
+        * The ARN of the skill group for which to list enabled skills. Required.
         */
       var SkillGroupArn: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Arn] = js.undefined
       /**
@@ -1409,6 +1418,23 @@ object AlexaForBusinessNs extends js.Object {
     }
     
     trait PutConferencePreferenceResponse extends js.Object
+    
+    trait PutInvitationConfigurationRequest extends js.Object {
+      /**
+        * The email ID of the organization or individual contact that the enrolled user can use. 
+        */
+      var ContactEmail: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Email] = js.undefined
+      /**
+        * The name of the organization sending the enrollment invite to a user.
+        */
+      var OrganizationName: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.OrganizationName
+      /**
+        * The list of private skill IDs that you want to recommend to the user to enable in the invitation.
+        */
+      var PrivateSkillIds: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ShortSkillIdList] = js.undefined
+    }
+    
+    trait PutInvitationConfigurationResponse extends js.Object
     
     trait PutRoomSkillParameterRequest extends js.Object {
       /**
@@ -2296,6 +2322,50 @@ object AlexaForBusinessNs extends js.Object {
       var UserArn: js.UndefOr[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Arn] = js.undefined
     }
     
+    trait _BusinessReportFailureCode extends js.Object
+    
+    trait _BusinessReportFormat extends js.Object
+    
+    trait _BusinessReportInterval extends js.Object
+    
+    trait _BusinessReportStatus extends js.Object
+    
+    trait _CommsProtocol extends js.Object
+    
+    trait _ConferenceProviderType extends js.Object
+    
+    trait _ConnectionStatus extends js.Object
+    
+    trait _DeviceEventType extends js.Object
+    
+    trait _DeviceStatus extends js.Object
+    
+    trait _DeviceStatusDetailCode extends js.Object
+    
+    trait _DistanceUnit extends js.Object
+    
+    trait _EnablementType extends js.Object
+    
+    trait _EnablementTypeFilter extends js.Object
+    
+    trait _EnrollmentStatus extends js.Object
+    
+    trait _Feature extends js.Object
+    
+    trait _RequirePin extends js.Object
+    
+    trait _SkillType extends js.Object
+    
+    trait _SkillTypeFilter extends js.Object
+    
+    trait _SortValue extends js.Object
+    
+    trait _TemperatureUnit extends js.Object
+    
+    trait _WakeWord extends js.Object
+    
+    trait _apiVersion extends js.Object
+    
     val TypesNs: this.type = js.native
     type Address = java.lang.String
     type AddressBookDataList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.AddressBookData]
@@ -2310,26 +2380,26 @@ object AlexaForBusinessNs extends js.Object {
     type BulletPoint = java.lang.String
     type BulletPoints = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.BulletPoint]
     type BusinessReportDownloadUrl = java.lang.String
-    type BusinessReportFailureCode = awsDashSdkLib.awsDashSdkLibStrings.ACCESS_DENIED | awsDashSdkLib.awsDashSdkLibStrings.NO_SUCH_BUCKET | awsDashSdkLib.awsDashSdkLibStrings.INTERNAL_FAILURE | java.lang.String
-    type BusinessReportFormat = awsDashSdkLib.awsDashSdkLibStrings.CSV | awsDashSdkLib.awsDashSdkLibStrings.CSV_ZIP | java.lang.String
-    type BusinessReportInterval = awsDashSdkLib.awsDashSdkLibStrings.ONE_DAY | awsDashSdkLib.awsDashSdkLibStrings.ONE_WEEK | java.lang.String
+    type BusinessReportFailureCode = _BusinessReportFailureCode | java.lang.String
+    type BusinessReportFormat = _BusinessReportFormat | java.lang.String
+    type BusinessReportInterval = _BusinessReportInterval | java.lang.String
     type BusinessReportS3Path = java.lang.String
     type BusinessReportScheduleList = js.Array[
         awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.BusinessReportSchedule
       ]
     type BusinessReportScheduleName = java.lang.String
-    type BusinessReportStatus = awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+    type BusinessReportStatus = _BusinessReportStatus | java.lang.String
     type CategoryId = scala.Double
     type CategoryList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Category]
     type CategoryName = java.lang.String
     type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ClientApiVersions
     type ClientId = java.lang.String
     type ClientRequestToken = java.lang.String
-    type CommsProtocol = awsDashSdkLib.awsDashSdkLibStrings.SIP | awsDashSdkLib.awsDashSdkLibStrings.SIPS | awsDashSdkLib.awsDashSdkLibStrings.H323 | java.lang.String
+    type CommsProtocol = _CommsProtocol | java.lang.String
     type ConferenceProviderName = java.lang.String
-    type ConferenceProviderType = awsDashSdkLib.awsDashSdkLibStrings.CHIME | awsDashSdkLib.awsDashSdkLibStrings.BLUEJEANS | awsDashSdkLib.awsDashSdkLibStrings.FUZE | awsDashSdkLib.awsDashSdkLibStrings.GOOGLE_HANGOUTS | awsDashSdkLib.awsDashSdkLibStrings.POLYCOM | awsDashSdkLib.awsDashSdkLibStrings.RINGCENTRAL | awsDashSdkLib.awsDashSdkLibStrings.SKYPE_FOR_BUSINESS | awsDashSdkLib.awsDashSdkLibStrings.WEBEX | awsDashSdkLib.awsDashSdkLibStrings.ZOOM | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM | java.lang.String
+    type ConferenceProviderType = _ConferenceProviderType | java.lang.String
     type ConferenceProvidersList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ConferenceProvider]
-    type ConnectionStatus = awsDashSdkLib.awsDashSdkLibStrings.ONLINE | awsDashSdkLib.awsDashSdkLibStrings.OFFLINE | java.lang.String
+    type ConnectionStatus = _ConnectionStatus | java.lang.String
     type ContactDataList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.ContactData]
     type ContactName = java.lang.String
     type CountryCode = java.lang.String
@@ -2337,25 +2407,25 @@ object AlexaForBusinessNs extends js.Object {
     type DeveloperName = java.lang.String
     type DeviceDataList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeviceData]
     type DeviceEventList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeviceEvent]
-    type DeviceEventType = awsDashSdkLib.awsDashSdkLibStrings.CONNECTION_STATUS | awsDashSdkLib.awsDashSdkLibStrings.DEVICE_STATUS | java.lang.String
+    type DeviceEventType = _DeviceEventType | java.lang.String
     type DeviceEventValue = java.lang.String
     type DeviceName = java.lang.String
     type DeviceSerialNumber = java.lang.String
     type DeviceSerialNumberForAVS = java.lang.String
-    type DeviceStatus = awsDashSdkLib.awsDashSdkLibStrings.READY | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.WAS_OFFLINE | awsDashSdkLib.awsDashSdkLibStrings.DEREGISTERED | java.lang.String
-    type DeviceStatusDetailCode = awsDashSdkLib.awsDashSdkLibStrings.DEVICE_SOFTWARE_UPDATE_NEEDED | awsDashSdkLib.awsDashSdkLibStrings.DEVICE_WAS_OFFLINE | java.lang.String
+    type DeviceStatus = _DeviceStatus | java.lang.String
+    type DeviceStatusDetailCode = _DeviceStatusDetailCode | java.lang.String
     type DeviceStatusDetails = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.DeviceStatusDetail]
     type DeviceType = java.lang.String
-    type DistanceUnit = awsDashSdkLib.awsDashSdkLibStrings.METRIC | awsDashSdkLib.awsDashSdkLibStrings.IMPERIAL | java.lang.String
+    type DistanceUnit = _DistanceUnit | java.lang.String
     type E164PhoneNumber = java.lang.String
     type Email = java.lang.String
-    type EnablementType = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | java.lang.String
-    type EnablementTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | java.lang.String
+    type EnablementType = _EnablementType | java.lang.String
+    type EnablementTypeFilter = _EnablementTypeFilter | java.lang.String
     type EndUserLicenseAgreement = java.lang.String
     type Endpoint = java.lang.String
     type EnrollmentId = java.lang.String
-    type EnrollmentStatus = awsDashSdkLib.awsDashSdkLibStrings.INITIALIZED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.REGISTERED | awsDashSdkLib.awsDashSdkLibStrings.DISASSOCIATING | awsDashSdkLib.awsDashSdkLibStrings.DEREGISTERING | java.lang.String
-    type Feature = awsDashSdkLib.awsDashSdkLibStrings.BLUETOOTH | awsDashSdkLib.awsDashSdkLibStrings.VOLUME | awsDashSdkLib.awsDashSdkLibStrings.NOTIFICATIONS | awsDashSdkLib.awsDashSdkLibStrings.LISTS | awsDashSdkLib.awsDashSdkLibStrings.SKILLS | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+    type EnrollmentStatus = _EnrollmentStatus | java.lang.String
+    type Feature = _Feature | java.lang.String
     type Features = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Feature]
     type FilterKey = java.lang.String
     type FilterList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Filter]
@@ -2373,6 +2443,7 @@ object AlexaForBusinessNs extends js.Object {
     type NextToken = java.lang.String
     type OneClickIdDelay = java.lang.String
     type OneClickPinDelay = java.lang.String
+    type OrganizationName = java.lang.String
     type OutboundPhoneNumber = java.lang.String
     type PrivacyPolicy = java.lang.String
     type ProductDescription = java.lang.String
@@ -2381,7 +2452,7 @@ object AlexaForBusinessNs extends js.Object {
     type ProfileName = java.lang.String
     type ProviderCalendarId = java.lang.String
     type ReleaseDate = java.lang.String
-    type RequirePin = awsDashSdkLib.awsDashSdkLibStrings.YES | awsDashSdkLib.awsDashSdkLibStrings.NO | awsDashSdkLib.awsDashSdkLibStrings.OPTIONAL | java.lang.String
+    type RequirePin = _RequirePin | java.lang.String
     type ReviewKey = java.lang.String
     type ReviewValue = java.lang.String
     type RoomDataList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.RoomData]
@@ -2393,6 +2464,7 @@ object AlexaForBusinessNs extends js.Object {
     type S3KeyPrefix = java.lang.String
     type SampleUtterances = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Utterance]
     type ShortDescription = java.lang.String
+    type ShortSkillIdList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillId]
     type SkillGroupDataList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillGroupData]
     type SkillGroupDescription = java.lang.String
     type SkillGroupName = java.lang.String
@@ -2401,20 +2473,20 @@ object AlexaForBusinessNs extends js.Object {
     type SkillName = java.lang.String
     type SkillStoreType = java.lang.String
     type SkillSummaryList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillSummary]
-    type SkillType = awsDashSdkLib.awsDashSdkLibStrings.PUBLIC | awsDashSdkLib.awsDashSdkLibStrings.PRIVATE | java.lang.String
-    type SkillTypeFilter = awsDashSdkLib.awsDashSdkLibStrings.PUBLIC | awsDashSdkLib.awsDashSdkLibStrings.PRIVATE | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+    type SkillType = _SkillType | java.lang.String
+    type SkillTypeFilter = _SkillTypeFilter | java.lang.String
     type SkillTypes = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillStoreType]
     type SkillsStoreSkillList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SkillsStoreSkill]
     type SmartHomeApplianceList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.SmartHomeAppliance]
     type SoftwareVersion = java.lang.String
     type SortKey = java.lang.String
     type SortList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Sort]
-    type SortValue = awsDashSdkLib.awsDashSdkLibStrings.ASC | awsDashSdkLib.awsDashSdkLibStrings.DESC | java.lang.String
+    type SortValue = _SortValue | java.lang.String
     type TagKey = java.lang.String
     type TagKeyList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.TagKey]
     type TagList = js.Array[awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.Tag]
     type TagValue = java.lang.String
-    type TemperatureUnit = awsDashSdkLib.awsDashSdkLibStrings.FAHRENHEIT | awsDashSdkLib.awsDashSdkLibStrings.CELSIUS | java.lang.String
+    type TemperatureUnit = _TemperatureUnit | java.lang.String
     type Timestamp = stdLib.Date
     type Timezone = java.lang.String
     type TotalCount = scala.Double
@@ -2424,9 +2496,9 @@ object AlexaForBusinessNs extends js.Object {
     type UserId = java.lang.String
     type Utterance = java.lang.String
     type Value = java.lang.String
-    type WakeWord = awsDashSdkLib.awsDashSdkLibStrings.ALEXA | awsDashSdkLib.awsDashSdkLibStrings.AMAZON | awsDashSdkLib.awsDashSdkLibStrings.ECHO | awsDashSdkLib.awsDashSdkLibStrings.COMPUTER | java.lang.String
+    type WakeWord = _WakeWord | java.lang.String
     type _Date = java.lang.String
-    type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-09` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+    type apiVersion = _apiVersion | java.lang.String
     type user_FirstName = java.lang.String
     type user_LastName = java.lang.String
     type user_UserId = java.lang.String

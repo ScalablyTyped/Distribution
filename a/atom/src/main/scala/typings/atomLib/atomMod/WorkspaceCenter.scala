@@ -83,3 +83,69 @@ trait WorkspaceCenter extends js.Object {
   def saveAll(): scala.Unit
 }
 
+object WorkspaceCenter {
+  @scala.inline
+  def apply(
+    activateNextPane: js.Function0[scala.Unit],
+    activatePreviousPane: js.Function0[scala.Unit],
+    destroyActivePane: js.Function0[scala.Unit],
+    getActivePane: js.Function0[Pane],
+    getActivePaneItem: js.Function0[js.UndefOr[js.Object]],
+    getActiveTextEditor: js.Function0[js.UndefOr[TextEditor]],
+    getPaneItems: js.Function0[js.Array[js.Object]],
+    getPanes: js.Function0[js.Array[Pane]],
+    getTextEditors: js.Function0[js.Array[TextEditor]],
+    observeActivePane: js.Function1[js.Function1[/* pane */ Pane, scala.Unit], Disposable],
+    observeActivePaneItem: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
+    observePaneItems: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
+    observePanes: js.Function1[js.Function1[/* pane */ Pane, scala.Unit], Disposable],
+    observeTextEditors: js.Function1[js.Function1[/* editor */ TextEditor, scala.Unit], Disposable],
+    onDidAddPane: js.Function1[js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit], Disposable],
+    onDidAddPaneItem: js.Function1[js.Function1[/* event */ PaneItemObservedEvent, scala.Unit], Disposable],
+    onDidAddTextEditor: js.Function1[js.Function1[/* event */ TextEditorObservedEvent, scala.Unit], Disposable],
+    onDidChangeActivePane: js.Function1[js.Function1[/* pane */ Pane, scala.Unit], Disposable],
+    onDidChangeActivePaneItem: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
+    onDidDestroyPane: js.Function1[js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit], Disposable],
+    onDidDestroyPaneItem: js.Function1[js.Function1[/* event */ PaneItemObservedEvent, scala.Unit], Disposable],
+    onDidStopChangingActivePaneItem: js.Function1[js.Function1[/* item */ js.Object, scala.Unit], Disposable],
+    onWillDestroyPane: js.Function1[js.Function1[/* event */ atomLib.Anon_Pane, scala.Unit], Disposable],
+    onWillDestroyPaneItem: js.Function1[
+      js.Function1[/* event */ PaneItemObservedEvent, scala.Unit | js.Promise[scala.Unit]], 
+      Disposable
+    ],
+    paneForItem: js.Function1[js.Object, js.UndefOr[Pane]],
+    paneForURI: js.Function1[java.lang.String, js.UndefOr[Pane]],
+    saveAll: js.Function0[scala.Unit]
+  ): WorkspaceCenter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activateNextPane")(activateNextPane)
+    __obj.updateDynamic("activatePreviousPane")(activatePreviousPane)
+    __obj.updateDynamic("destroyActivePane")(destroyActivePane)
+    __obj.updateDynamic("getActivePane")(getActivePane)
+    __obj.updateDynamic("getActivePaneItem")(getActivePaneItem)
+    __obj.updateDynamic("getActiveTextEditor")(getActiveTextEditor)
+    __obj.updateDynamic("getPaneItems")(getPaneItems)
+    __obj.updateDynamic("getPanes")(getPanes)
+    __obj.updateDynamic("getTextEditors")(getTextEditors)
+    __obj.updateDynamic("observeActivePane")(observeActivePane)
+    __obj.updateDynamic("observeActivePaneItem")(observeActivePaneItem)
+    __obj.updateDynamic("observePaneItems")(observePaneItems)
+    __obj.updateDynamic("observePanes")(observePanes)
+    __obj.updateDynamic("observeTextEditors")(observeTextEditors)
+    __obj.updateDynamic("onDidAddPane")(onDidAddPane)
+    __obj.updateDynamic("onDidAddPaneItem")(onDidAddPaneItem)
+    __obj.updateDynamic("onDidAddTextEditor")(onDidAddTextEditor)
+    __obj.updateDynamic("onDidChangeActivePane")(onDidChangeActivePane)
+    __obj.updateDynamic("onDidChangeActivePaneItem")(onDidChangeActivePaneItem)
+    __obj.updateDynamic("onDidDestroyPane")(onDidDestroyPane)
+    __obj.updateDynamic("onDidDestroyPaneItem")(onDidDestroyPaneItem)
+    __obj.updateDynamic("onDidStopChangingActivePaneItem")(onDidStopChangingActivePaneItem)
+    __obj.updateDynamic("onWillDestroyPane")(onWillDestroyPane)
+    __obj.updateDynamic("onWillDestroyPaneItem")(onWillDestroyPaneItem)
+    __obj.updateDynamic("paneForItem")(paneForItem)
+    __obj.updateDynamic("paneForURI")(paneForURI)
+    __obj.updateDynamic("saveAll")(saveAll)
+    __obj.asInstanceOf[WorkspaceCenter]
+  }
+}
+

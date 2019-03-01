@@ -24,3 +24,24 @@ trait XModule
   def setIdentifier(Identifier: java.lang.String): scala.Unit
 }
 
+object XModule {
+  @scala.inline
+  def apply(
+    Identifier: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getIdentifier: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setIdentifier: js.Function1[java.lang.String, scala.Unit]
+  ): XModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Identifier")(Identifier)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getIdentifier")(getIdentifier)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setIdentifier")(setIdentifier)
+    __obj.asInstanceOf[XModule]
+  }
+}
+

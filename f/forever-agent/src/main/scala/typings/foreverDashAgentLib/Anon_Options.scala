@@ -12,3 +12,17 @@ trait Anon_Options extends js.Object {
   ]
 }
 
+object Anon_Options {
+  @scala.inline
+  def apply(
+    SSL: org.scalablytyped.runtime.Instantiable1[
+      /* options */ js.UndefOr[/* options */ foreverDashAgentLib.foreverDashAgentMod.ForeverAgentOptions], 
+      foreverDashAgentLib.foreverDashAgentMod.ForeverAgentSSL
+    ]
+  ): Anon_Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SSL")(SSL)
+    __obj.asInstanceOf[Anon_Options]
+  }
+}
+

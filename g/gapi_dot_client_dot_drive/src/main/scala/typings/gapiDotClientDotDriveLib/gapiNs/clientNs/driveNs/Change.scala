@@ -27,3 +27,28 @@ trait Change extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Change {
+  @scala.inline
+  def apply(
+    file: File = null,
+    fileId: java.lang.String = null,
+    kind: java.lang.String = null,
+    removed: js.UndefOr[scala.Boolean] = js.undefined,
+    teamDrive: TeamDrive = null,
+    teamDriveId: java.lang.String = null,
+    time: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Change = {
+    val __obj = js.Dynamic.literal()
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (fileId != null) __obj.updateDynamic("fileId")(fileId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed)
+    if (teamDrive != null) __obj.updateDynamic("teamDrive")(teamDrive)
+    if (teamDriveId != null) __obj.updateDynamic("teamDriveId")(teamDriveId)
+    if (time != null) __obj.updateDynamic("time")(time)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Change]
+  }
+}
+

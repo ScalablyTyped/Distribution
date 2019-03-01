@@ -19,3 +19,59 @@ trait Driver
      with XCreateCatalog
      with XDropCatalog
 
+object Driver {
+  @scala.inline
+  def apply(
+    MajorVersion: scala.Double,
+    MinorVersion: scala.Double,
+    acceptsURL: js.Function1[java.lang.String, scala.Boolean],
+    acquire: js.Function0[scala.Unit],
+    connect: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection
+    ],
+    createCatalog: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    dropCatalog: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    getDataDefinitionByConnection: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection, XTablesSupplier],
+    getDataDefinitionByURL: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XTablesSupplier
+    ],
+    getMajorVersion: js.Function0[scala.Double],
+    getMinorVersion: js.Function0[scala.Double],
+    getPropertyInfo: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.DriverPropertyInfo]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): Driver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MajorVersion")(MajorVersion)
+    __obj.updateDynamic("MinorVersion")(MinorVersion)
+    __obj.updateDynamic("acceptsURL")(acceptsURL)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("connect")(connect)
+    __obj.updateDynamic("createCatalog")(createCatalog)
+    __obj.updateDynamic("dropCatalog")(dropCatalog)
+    __obj.updateDynamic("getDataDefinitionByConnection")(getDataDefinitionByConnection)
+    __obj.updateDynamic("getDataDefinitionByURL")(getDataDefinitionByURL)
+    __obj.updateDynamic("getMajorVersion")(getMajorVersion)
+    __obj.updateDynamic("getMinorVersion")(getMinorVersion)
+    __obj.updateDynamic("getPropertyInfo")(getPropertyInfo)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[Driver]
+  }
+}
+

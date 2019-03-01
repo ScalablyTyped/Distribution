@@ -15,3 +15,31 @@ trait WebResponseDetails extends ResourceRequest {
   var statusLine: java.lang.String
 }
 
+object WebResponseDetails {
+  @scala.inline
+  def apply(
+    frameId: scala.Double,
+    parentFrameId: scala.Double,
+    requestId: java.lang.String,
+    statusCode: scala.Double,
+    statusLine: java.lang.String,
+    tabId: scala.Double,
+    timeStamp: scala.Double,
+    `type`: ResourceType,
+    url: java.lang.String,
+    initiator: java.lang.String = null
+  ): WebResponseDetails = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("frameId")(frameId)
+    __obj.updateDynamic("parentFrameId")(parentFrameId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("statusCode")(statusCode)
+    __obj.updateDynamic("statusLine")(statusLine)
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.updateDynamic("url")(url)
+    if (initiator != null) __obj.updateDynamic("initiator")(initiator)
+    __obj.asInstanceOf[WebResponseDetails]
+  }
+}
+

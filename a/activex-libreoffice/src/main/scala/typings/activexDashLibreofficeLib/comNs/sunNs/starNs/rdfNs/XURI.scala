@@ -21,3 +21,14 @@ trait XURI extends XNode {
   var Namespace: java.lang.String
 }
 
+object XURI {
+  @scala.inline
+  def apply(LocalName: java.lang.String, Namespace: java.lang.String, StringValue: java.lang.String): XURI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LocalName")(LocalName)
+    __obj.updateDynamic("Namespace")(Namespace)
+    __obj.updateDynamic("StringValue")(StringValue)
+    __obj.asInstanceOf[XURI]
+  }
+}
+

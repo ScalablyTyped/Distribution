@@ -13,13 +13,16 @@ object weixinDashAppLibStrings {
   sealed trait `#ffffff` extends js.Object
   
   @js.native
-  sealed trait `2g` extends js.Object
+  sealed trait `2g`
+    extends weixinDashAppLib.wxNs.networkType
   
   @js.native
-  sealed trait `3g` extends js.Object
+  sealed trait `3g`
+    extends weixinDashAppLib.wxNs.networkType
   
   @js.native
-  sealed trait `4g` extends js.Object
+  sealed trait `4g`
+    extends weixinDashAppLib.wxNs.networkType
   
   @js.native
   sealed trait Anon_AuthSetting extends js.Object
@@ -40,10 +43,12 @@ object weixinDashAppLibStrings {
   sealed trait HEAD extends js.Object
   
   @js.native
-  sealed trait `HMAC-SHA256` extends js.Object
+  sealed trait `HMAC-SHA256`
+    extends weixinDashAppLib.wxNs.PaymentSignType
   
   @js.native
-  sealed trait MD5 extends js.Object
+  sealed trait MD5
+    extends weixinDashAppLib.wxNs.PaymentSignType
   
   @js.native
   sealed trait OPTIONS extends js.Object
@@ -61,37 +66,48 @@ object weixinDashAppLibStrings {
   sealed trait TRACE extends js.Object
   
   @js.native
-  sealed trait album extends js.Object
+  sealed trait album
+    extends weixinDashAppLib.wxNs.ImageSourceType
+       with weixinDashAppLib.wxNs.VideoSourceType
   
   @js.native
   sealed trait ancestor extends js.Object
   
   @js.native
-  sealed trait animationend extends js.Object
+  sealed trait animationend
+    extends weixinDashAppLib.wxNs.TransitionEventType
   
   @js.native
-  sealed trait animationiteration extends js.Object
+  sealed trait animationiteration
+    extends weixinDashAppLib.wxNs.TransitionEventType
   
   @js.native
-  sealed trait animationstart extends js.Object
+  sealed trait animationstart
+    extends weixinDashAppLib.wxNs.TransitionEventType
   
   @js.native
-  sealed trait back extends js.Object
+  sealed trait back
+    extends weixinDashAppLib.wxNs.CameraDevice
   
   @js.native
-  sealed trait barCode extends js.Object
+  sealed trait barCode
+    extends weixinDashAppLib.wxNs.scanType
   
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait bevel
+    extends weixinDashAppLib.wxNs.LineJoinType
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait butt
+    extends weixinDashAppLib.wxNs.LineCapType
   
   @js.native
   sealed trait button extends js.Object
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera
+    extends weixinDashAppLib.wxNs.ImageSourceType
+       with weixinDashAppLib.wxNs.VideoSourceType
   
   @js.native
   sealed trait center extends js.Object
@@ -100,7 +116,8 @@ object weixinDashAppLibStrings {
   sealed trait child extends js.Object
   
   @js.native
-  sealed trait compressed extends js.Object
+  sealed trait compressed
+    extends weixinDashAppLib.wxNs.ImageSizeType
   
   @js.native
   sealed trait descendant extends js.Object
@@ -112,16 +129,20 @@ object weixinDashAppLibStrings {
   sealed trait docx extends js.Object
   
   @js.native
-  sealed trait ease extends js.Object
+  sealed trait ease
+    extends weixinDashAppLib.wxNs.TimingFunction
   
   @js.native
-  sealed trait `ease-in` extends js.Object
+  sealed trait `ease-in`
+    extends weixinDashAppLib.wxNs.TimingFunction
   
   @js.native
-  sealed trait `ease-in-out` extends js.Object
+  sealed trait `ease-in-out`
+    extends weixinDashAppLib.wxNs.TimingFunction
   
   @js.native
-  sealed trait `ease-out` extends js.Object
+  sealed trait `ease-out`
+    extends weixinDashAppLib.wxNs.TimingFunction
   
   @js.native
   sealed trait easeIn extends js.Object
@@ -133,49 +154,59 @@ object weixinDashAppLibStrings {
   sealed trait easeOut extends js.Object
   
   @js.native
-  sealed trait facial extends js.Object
+  sealed trait facial
+    extends weixinDashAppLib.wxNs.AuthModes
   
   @js.native
-  sealed trait fingerPrint extends js.Object
+  sealed trait fingerPrint
+    extends weixinDashAppLib.wxNs.AuthModes
   
   @js.native
-  sealed trait form extends js.Object
+  sealed trait form
+    extends weixinDashAppLib.wxNs.EventType
   
   @js.native
-  sealed trait front extends js.Object
+  sealed trait front
+    extends weixinDashAppLib.wxNs.CameraDevice
   
   @js.native
   sealed trait gcj02 extends js.Object
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait input
+    extends weixinDashAppLib.wxNs.EventType
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends weixinDashAppLib.wxNs.TimingFunction
   
   @js.native
   sealed trait loading extends js.Object
   
   @js.native
-  sealed trait longpress extends js.Object
+  sealed trait longpress
+    extends weixinDashAppLib.wxNs.EventType
   
   @js.native
   sealed trait menu extends js.Object
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait miter
+    extends weixinDashAppLib.wxNs.LineJoinType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends weixinDashAppLib.wxNs.networkType
   
   @js.native
   sealed trait ok extends js.Object
   
   @js.native
-  sealed trait original extends js.Object
+  sealed trait original
+    extends weixinDashAppLib.wxNs.ImageSizeType
   
   @js.native
   sealed trait parent extends js.Object
@@ -190,91 +221,119 @@ object weixinDashAppLibStrings {
   sealed trait pptx extends js.Object
   
   @js.native
-  sealed trait qrCode extends js.Object
+  sealed trait qrCode
+    extends weixinDashAppLib.wxNs.scanType
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends weixinDashAppLib.wxNs.LineCapType
+       with weixinDashAppLib.wxNs.LineJoinType
   
   @js.native
-  sealed trait scopeDOTaddress extends js.Object
+  sealed trait scopeDOTaddress
+    extends weixinDashAppLib.wxNs.Scope
   
   @js.native
-  sealed trait scopeDOTcamera extends js.Object
+  sealed trait scopeDOTcamera
+    extends weixinDashAppLib.wxNs.Scope
   
   @js.native
-  sealed trait scopeDOTinvoice extends js.Object
+  sealed trait scopeDOTinvoice
+    extends weixinDashAppLib.wxNs.Scope
   
   @js.native
-  sealed trait scopeDOTinvoiceTitle extends js.Object
+  sealed trait scopeDOTinvoiceTitle
+    extends weixinDashAppLib.wxNs.Scope
   
   @js.native
-  sealed trait scopeDOTrecord extends js.Object
+  sealed trait scopeDOTrecord
+    extends weixinDashAppLib.wxNs.Scope
   
   @js.native
-  sealed trait scopeDOTuserInfo extends js.Object
+  sealed trait scopeDOTuserInfo
+    extends weixinDashAppLib.wxNs.Scope
   
   @js.native
-  sealed trait scopeDOTuserLocation extends js.Object
+  sealed trait scopeDOTuserLocation
+    extends weixinDashAppLib.wxNs.Scope
   
   @js.native
-  sealed trait scopeDOTwerun extends js.Object
+  sealed trait scopeDOTwerun
+    extends weixinDashAppLib.wxNs.Scope
   
   @js.native
-  sealed trait scopeDOTwritePhotosAlbum extends js.Object
+  sealed trait scopeDOTwritePhotosAlbum
+    extends weixinDashAppLib.wxNs.Scope
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scroll
+    extends weixinDashAppLib.wxNs.EventType
   
   @js.native
-  sealed trait speech extends js.Object
+  sealed trait speech
+    extends weixinDashAppLib.wxNs.AuthModes
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends weixinDashAppLib.wxNs.LineCapType
   
   @js.native
-  sealed trait `step-end` extends js.Object
+  sealed trait `step-end`
+    extends weixinDashAppLib.wxNs.TimingFunction
   
   @js.native
-  sealed trait `step-start` extends js.Object
+  sealed trait `step-start`
+    extends weixinDashAppLib.wxNs.TimingFunction
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends weixinDashAppLib.wxNs.EventType
   
   @js.native
   sealed trait success extends js.Object
   
-  @js.native
-  sealed trait tap extends js.Object
+  /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+  - weixinDashAppLib.wxNs.EventType because Already inherited */ @js.native
+  sealed trait tap
+    extends weixinDashAppLib.wxNs.TouchEventType
   
   @js.native
-  sealed trait touchcancel extends js.Object
+  sealed trait touchcancel
+    extends weixinDashAppLib.wxNs.TouchEventType
   
   @js.native
-  sealed trait touchend extends js.Object
+  sealed trait touchend
+    extends weixinDashAppLib.wxNs.TouchEventType
   
   @js.native
-  sealed trait touchforcechange extends js.Object
+  sealed trait touchforcechange
+    extends weixinDashAppLib.wxNs.TouchEventType
   
   @js.native
-  sealed trait touchmove extends js.Object
+  sealed trait touchmove
+    extends weixinDashAppLib.wxNs.TouchEventType
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchstart
+    extends weixinDashAppLib.wxNs.TouchEventType
   
   @js.native
-  sealed trait transitionend extends js.Object
+  sealed trait transitionend
+    extends weixinDashAppLib.wxNs.TransitionEventType
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends weixinDashAppLib.wxNs.networkType
   
   @js.native
   sealed trait wgs84 extends js.Object
   
   @js.native
-  sealed trait wifi extends js.Object
+  sealed trait wifi
+    extends weixinDashAppLib.wxNs.networkType
   
   @js.native
   sealed trait xls extends js.Object

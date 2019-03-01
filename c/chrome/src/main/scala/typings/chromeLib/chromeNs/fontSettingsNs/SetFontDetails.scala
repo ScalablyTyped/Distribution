@@ -10,3 +10,14 @@ trait SetFontDetails extends FontDetails {
   var fontId: java.lang.String
 }
 
+object SetFontDetails {
+  @scala.inline
+  def apply(fontId: java.lang.String, genericFamily: java.lang.String, script: java.lang.String = null): SetFontDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fontId")(fontId)
+    __obj.updateDynamic("genericFamily")(genericFamily)
+    if (script != null) __obj.updateDynamic("script")(script)
+    __obj.asInstanceOf[SetFontDetails]
+  }
+}
+

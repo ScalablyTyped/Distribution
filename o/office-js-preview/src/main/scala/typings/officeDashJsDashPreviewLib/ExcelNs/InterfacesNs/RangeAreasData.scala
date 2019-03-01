@@ -99,3 +99,34 @@ trait RangeAreasData extends js.Object {
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RangeAreasData {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    addressLocal: java.lang.String = null,
+    areaCount: scala.Int | scala.Double = null,
+    areas: js.Array[RangeData] = null,
+    cellCount: scala.Int | scala.Double = null,
+    conditionalFormats: js.Array[ConditionalFormatData] = null,
+    dataValidation: DataValidationData = null,
+    format: RangeFormatData = null,
+    isEntireColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    isEntireRow: js.UndefOr[scala.Boolean] = js.undefined,
+    style: java.lang.String = null
+  ): RangeAreasData = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal)
+    if (areaCount != null) __obj.updateDynamic("areaCount")(areaCount.asInstanceOf[js.Any])
+    if (areas != null) __obj.updateDynamic("areas")(areas)
+    if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats)
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn)
+    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[RangeAreasData]
+  }
+}
+

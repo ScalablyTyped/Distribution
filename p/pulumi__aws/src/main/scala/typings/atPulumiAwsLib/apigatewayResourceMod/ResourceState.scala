@@ -24,3 +24,20 @@ trait ResourceState extends js.Object {
   val restApi: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi]] = js.undefined
 }
 
+object ResourceState {
+  @scala.inline
+  def apply(
+    parentId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    path: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    pathPart: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    restApi: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = null
+  ): ResourceState = {
+    val __obj = js.Dynamic.literal()
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (pathPart != null) __obj.updateDynamic("pathPart")(pathPart.asInstanceOf[js.Any])
+    if (restApi != null) __obj.updateDynamic("restApi")(restApi.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceState]
+  }
+}
+

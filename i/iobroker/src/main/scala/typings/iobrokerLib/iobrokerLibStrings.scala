@@ -16,16 +16,19 @@ object iobrokerLibStrings {
   sealed trait adapter extends js.Object
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.CommonType
   
   @js.native
   sealed trait average extends js.Object
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.CommonType
   
   @js.native
-  sealed trait channel extends js.Object
+  sealed trait channel
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.ObjectType
   
   @js.native
   sealed trait config extends js.Object
@@ -37,25 +40,29 @@ object iobrokerLibStrings {
   sealed trait create extends js.Object
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.LogLevel
   
   @js.native
   sealed trait delete extends js.Object
   
   @js.native
-  sealed trait device extends js.Object
+  sealed trait device
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.ObjectType
   
   @js.native
   sealed trait enum extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.LogLevel
   
   @js.native
   sealed trait execute extends js.Object
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.CommonType
   
   @js.native
   sealed trait group extends js.Object
@@ -67,7 +74,8 @@ object iobrokerLibStrings {
   sealed trait http extends js.Object
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.LogLevel
   
   @js.native
   sealed trait instance extends js.Object
@@ -91,16 +99,19 @@ object iobrokerLibStrings {
   sealed trait minmax extends js.Object
   
   @js.native
-  sealed trait mixed extends js.Object
+  sealed trait mixed
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.CommonType
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.CommonType
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.CommonType
   
   @js.native
   sealed trait objectChange extends js.Object
@@ -121,16 +132,19 @@ object iobrokerLibStrings {
   sealed trait sendto extends js.Object
   
   @js.native
-  sealed trait silly extends js.Object
+  sealed trait silly
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.LogLevel
   
   @js.native
-  sealed trait state extends js.Object
+  sealed trait state
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.ObjectType
   
   @js.native
   sealed trait stateChange extends js.Object
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.CommonType
   
   @js.native
   sealed trait total extends js.Object
@@ -145,7 +159,8 @@ object iobrokerLibStrings {
   sealed trait users extends js.Object
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends iobrokerLib.iobrokerMod.Global.ioBrokerNs.LogLevel
   
   @js.native
   sealed trait write extends js.Object

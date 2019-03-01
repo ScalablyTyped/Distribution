@@ -15,3 +15,12 @@ trait ICustomOverlayOptions extends js.Object {
   var beneathLabels: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ICustomOverlayOptions {
+  @scala.inline
+  def apply(beneathLabels: js.UndefOr[scala.Boolean] = js.undefined): ICustomOverlayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(beneathLabels)) __obj.updateDynamic("beneathLabels")(beneathLabels)
+    __obj.asInstanceOf[ICustomOverlayOptions]
+  }
+}
+

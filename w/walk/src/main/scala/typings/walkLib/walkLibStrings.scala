@@ -16,31 +16,38 @@ object walkLibStrings {
   sealed trait characterDevice extends js.Object
   
   @js.native
-  sealed trait directories extends js.Object
+  sealed trait directories
+    extends walkLib.walkMod.WalkStatArrayEvent
   
   @js.native
-  sealed trait directory extends js.Object
+  sealed trait directory
+    extends walkLib.walkMod.WalkStatEvent
   
   @js.native
-  sealed trait directoryError extends js.Object
+  sealed trait directoryError
+    extends walkLib.walkMod.WalkStatArrayEvent
   
   @js.native
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait errors extends js.Object
+  sealed trait errors
+    extends walkLib.walkMod.WalkStatArrayEvent
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends walkLib.walkMod.WalkStatEvent
   
   @js.native
-  sealed trait files extends js.Object
+  sealed trait files
+    extends walkLib.walkMod.WalkStatArrayEvent
   
   @js.native
   sealed trait names extends js.Object
   
   @js.native
-  sealed trait nodeError extends js.Object
+  sealed trait nodeError
+    extends walkLib.walkMod.WalkStatArrayEvent
   
   @js.native
   sealed trait socket extends js.Object

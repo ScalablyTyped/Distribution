@@ -10,3 +10,12 @@ trait TargetPoolsAddHealthCheckRequest extends js.Object {
   var healthChecks: js.UndefOr[js.Array[HealthCheckReference]] = js.undefined
 }
 
+object TargetPoolsAddHealthCheckRequest {
+  @scala.inline
+  def apply(healthChecks: js.Array[HealthCheckReference] = null): TargetPoolsAddHealthCheckRequest = {
+    val __obj = js.Dynamic.literal()
+    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks)
+    __obj.asInstanceOf[TargetPoolsAddHealthCheckRequest]
+  }
+}
+

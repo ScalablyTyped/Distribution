@@ -11,3 +11,18 @@ trait PopupEvents extends js.Object {
   var popupbeforeposition: js.UndefOr[JQueryMobileEvent] = js.undefined
 }
 
+object PopupEvents {
+  @scala.inline
+  def apply(
+    popupafterclose: JQueryMobileEvent = null,
+    popupafteropen: JQueryMobileEvent = null,
+    popupbeforeposition: JQueryMobileEvent = null
+  ): PopupEvents = {
+    val __obj = js.Dynamic.literal()
+    if (popupafterclose != null) __obj.updateDynamic("popupafterclose")(popupafterclose)
+    if (popupafteropen != null) __obj.updateDynamic("popupafteropen")(popupafteropen)
+    if (popupbeforeposition != null) __obj.updateDynamic("popupbeforeposition")(popupbeforeposition)
+    __obj.asInstanceOf[PopupEvents]
+  }
+}
+

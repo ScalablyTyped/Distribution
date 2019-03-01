@@ -11,3 +11,12 @@ trait Anon_Private extends js.Object {
   var public: scala.Double
 }
 
+object Anon_Private {
+  @scala.inline
+  def apply(`private`: scala.Double, public: scala.Double): Anon_Private = {
+    val __obj = js.Dynamic.literal(`private` = `private`)
+    __obj.updateDynamic("public")(public)
+    __obj.asInstanceOf[Anon_Private]
+  }
+}
+

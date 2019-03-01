@@ -12,3 +12,13 @@ trait ParserOptions extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ParserOptions {
+  @scala.inline
+  def apply(silent: js.UndefOr[scala.Boolean] = js.undefined, source: java.lang.String = null): ParserOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[ParserOptions]
+  }
+}
+

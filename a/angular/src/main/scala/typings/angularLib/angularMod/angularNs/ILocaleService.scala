@@ -18,3 +18,20 @@ trait ILocaleService extends js.Object {
   def pluralCat(num: js.Any): java.lang.String
 }
 
+object ILocaleService {
+  @scala.inline
+  def apply(
+    DATETIME_FORMATS: ILocaleDateTimeFormatDescriptor,
+    NUMBER_FORMATS: ILocaleNumberFormatDescriptor,
+    id: java.lang.String,
+    pluralCat: js.Function1[js.Any, java.lang.String]
+  ): ILocaleService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DATETIME_FORMATS")(DATETIME_FORMATS)
+    __obj.updateDynamic("NUMBER_FORMATS")(NUMBER_FORMATS)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("pluralCat")(pluralCat)
+    __obj.asInstanceOf[ILocaleService]
+  }
+}
+

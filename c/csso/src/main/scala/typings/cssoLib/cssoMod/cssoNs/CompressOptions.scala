@@ -41,3 +41,24 @@ trait CompressOptions extends js.Object {
   var usage: js.UndefOr[Usage] = js.undefined
 }
 
+object CompressOptions {
+  @scala.inline
+  def apply(
+    clone: js.UndefOr[scala.Boolean] = js.undefined,
+    comments: java.lang.String | scala.Boolean = null,
+    forceMediaMerge: js.UndefOr[scala.Boolean] = js.undefined,
+    logger: js.Function0[scala.Unit] = null,
+    restructure: js.UndefOr[scala.Boolean] = js.undefined,
+    usage: Usage = null
+  ): CompressOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clone)) __obj.updateDynamic("clone")(clone)
+    if (comments != null) __obj.updateDynamic("comments")(comments.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceMediaMerge)) __obj.updateDynamic("forceMediaMerge")(forceMediaMerge)
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (!js.isUndefined(restructure)) __obj.updateDynamic("restructure")(restructure)
+    if (usage != null) __obj.updateDynamic("usage")(usage)
+    __obj.asInstanceOf[CompressOptions]
+  }
+}
+

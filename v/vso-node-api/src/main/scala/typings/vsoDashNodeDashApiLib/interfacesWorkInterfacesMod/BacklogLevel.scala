@@ -24,3 +24,20 @@ trait BacklogLevel extends js.Object {
   var workItemTypes: js.Array[java.lang.String]
 }
 
+object BacklogLevel {
+  @scala.inline
+  def apply(
+    categoryReferenceName: java.lang.String,
+    pluralName: java.lang.String,
+    workItemStates: js.Array[java.lang.String],
+    workItemTypes: js.Array[java.lang.String]
+  ): BacklogLevel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("categoryReferenceName")(categoryReferenceName)
+    __obj.updateDynamic("pluralName")(pluralName)
+    __obj.updateDynamic("workItemStates")(workItemStates)
+    __obj.updateDynamic("workItemTypes")(workItemTypes)
+    __obj.asInstanceOf[BacklogLevel]
+  }
+}
+

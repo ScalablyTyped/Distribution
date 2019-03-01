@@ -15,3 +15,26 @@ trait SearchFieldProps extends js.Object {
   def onChange(args: gestaltLib.Anon_SyntheticEvent): scala.Unit
 }
 
+object SearchFieldProps {
+  @scala.inline
+  def apply(
+    accessibilityLabel: java.lang.String,
+    id: java.lang.String,
+    onChange: js.Function1[gestaltLib.Anon_SyntheticEvent, scala.Unit],
+    onBlur: js.Function1[/* args */ gestaltLib.Anon_EventHTMLInputElement, scala.Unit] = null,
+    onFocus: js.Function1[/* args */ gestaltLib.Anon_SyntheticEvent, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    value: java.lang.String = null
+  ): SearchFieldProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("onChange")(onChange)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SearchFieldProps]
+  }
+}
+

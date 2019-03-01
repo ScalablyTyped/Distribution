@@ -23,3 +23,20 @@ trait LayersBubbleSettingsColorMappingsRangeColorMapping extends js.Object {
   var to: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LayersBubbleSettingsColorMappingsRangeColorMapping {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    from: scala.Int | scala.Double = null,
+    gradientColors: js.Array[_] = null,
+    to: scala.Int | scala.Double = null
+  ): LayersBubbleSettingsColorMappingsRangeColorMapping = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (gradientColors != null) __obj.updateDynamic("gradientColors")(gradientColors)
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LayersBubbleSettingsColorMappingsRangeColorMapping]
+  }
+}
+

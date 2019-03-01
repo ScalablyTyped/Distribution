@@ -18,3 +18,24 @@ trait activities extends js.Object {
   ]
 }
 
+object activities {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotYoutubeLib.Anon_Part, 
+      gapiLib.gapiNs.clientNs.HttpRequest[gapiDotYoutubeLib.GoogleApiYouTubeActivityResource]
+    ],
+    list: js.Function1[
+      gapiDotYoutubeLib.Anon_ChannelId, 
+      gapiLib.gapiNs.clientNs.HttpRequest[
+        gapiDotYoutubeLib.GoogleApiYouTubePaginationInfo[gapiDotYoutubeLib.GoogleApiYouTubeActivityResource]
+      ]
+    ]
+  ): activities = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[activities]
+  }
+}
+

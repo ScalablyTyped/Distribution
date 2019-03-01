@@ -13,3 +13,22 @@ trait VNodeComponentOptions extends js.Object {
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VNodeComponentOptions {
+  @scala.inline
+  def apply(
+    Ctor: vueLib.typesVueMod.VueConstructor[vueLib.typesVueMod.Vue],
+    children: js.Array[VNode] = null,
+    listeners: js.Object = null,
+    propsData: js.Object = null,
+    tag: java.lang.String = null
+  ): VNodeComponentOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Ctor")(Ctor)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners)
+    if (propsData != null) __obj.updateDynamic("propsData")(propsData)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[VNodeComponentOptions]
+  }
+}
+

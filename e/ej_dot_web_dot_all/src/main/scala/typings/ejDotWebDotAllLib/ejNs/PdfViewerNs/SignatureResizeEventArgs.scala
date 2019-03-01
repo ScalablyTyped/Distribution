@@ -29,3 +29,26 @@ trait SignatureResizeEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SignatureResizeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    pageNumber: scala.Int | scala.Double = null,
+    signatureCurrentBound: js.Array[_] = null,
+    signaturePreviousBound: js.Array[_] = null,
+    signatureSettings: js.Any = null,
+    `type`: java.lang.String = null
+  ): SignatureResizeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (pageNumber != null) __obj.updateDynamic("pageNumber")(pageNumber.asInstanceOf[js.Any])
+    if (signatureCurrentBound != null) __obj.updateDynamic("signatureCurrentBound")(signatureCurrentBound)
+    if (signaturePreviousBound != null) __obj.updateDynamic("signaturePreviousBound")(signaturePreviousBound)
+    if (signatureSettings != null) __obj.updateDynamic("signatureSettings")(signatureSettings)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SignatureResizeEventArgs]
+  }
+}
+

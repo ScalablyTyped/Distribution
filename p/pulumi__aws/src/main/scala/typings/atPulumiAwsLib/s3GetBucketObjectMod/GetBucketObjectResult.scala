@@ -84,3 +84,50 @@ trait GetBucketObjectResult extends js.Object {
   val websiteRedirectLocation: java.lang.String
 }
 
+object GetBucketObjectResult {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    cacheControl: java.lang.String,
+    contentDisposition: java.lang.String,
+    contentEncoding: java.lang.String,
+    contentLanguage: java.lang.String,
+    contentLength: scala.Double,
+    contentType: java.lang.String,
+    etag: java.lang.String,
+    expiration: java.lang.String,
+    expires: java.lang.String,
+    id: java.lang.String,
+    lastModified: java.lang.String,
+    metadata: org.scalablytyped.runtime.StringDictionary[js.Any],
+    serverSideEncryption: java.lang.String,
+    sseKmsKeyId: java.lang.String,
+    storageClass: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    versionId: java.lang.String,
+    websiteRedirectLocation: java.lang.String
+  ): GetBucketObjectResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("cacheControl")(cacheControl)
+    __obj.updateDynamic("contentDisposition")(contentDisposition)
+    __obj.updateDynamic("contentEncoding")(contentEncoding)
+    __obj.updateDynamic("contentLanguage")(contentLanguage)
+    __obj.updateDynamic("contentLength")(contentLength)
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("expiration")(expiration)
+    __obj.updateDynamic("expires")(expires)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("lastModified")(lastModified)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("serverSideEncryption")(serverSideEncryption)
+    __obj.updateDynamic("sseKmsKeyId")(sseKmsKeyId)
+    __obj.updateDynamic("storageClass")(storageClass)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("versionId")(versionId)
+    __obj.updateDynamic("websiteRedirectLocation")(websiteRedirectLocation)
+    __obj.asInstanceOf[GetBucketObjectResult]
+  }
+}
+

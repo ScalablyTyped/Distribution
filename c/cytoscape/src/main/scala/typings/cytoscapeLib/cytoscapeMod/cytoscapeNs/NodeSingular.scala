@@ -21,4 +21,5 @@ trait NodeSingular
      with NodeSingularMetadata
      with NodeSingularPosition
      with NodeSingularCompound
+     with SingularElementArgument
 

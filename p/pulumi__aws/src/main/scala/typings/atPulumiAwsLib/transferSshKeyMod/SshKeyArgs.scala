@@ -20,3 +20,18 @@ trait SshKeyArgs extends js.Object {
   val userName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object SshKeyArgs {
+  @scala.inline
+  def apply(
+    body: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    serverId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    userName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): SshKeyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    __obj.updateDynamic("serverId")(serverId.asInstanceOf[js.Any])
+    __obj.updateDynamic("userName")(userName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SshKeyArgs]
+  }
+}
+

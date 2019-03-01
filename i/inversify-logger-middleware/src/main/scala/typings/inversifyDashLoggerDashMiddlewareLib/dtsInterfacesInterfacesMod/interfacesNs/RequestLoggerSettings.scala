@@ -11,3 +11,18 @@ trait RequestLoggerSettings extends js.Object {
   var target: js.UndefOr[TargetLoggerSettings] = js.undefined
 }
 
+object RequestLoggerSettings {
+  @scala.inline
+  def apply(
+    bindings: BindingLoggerSettings = null,
+    serviceIdentifier: js.UndefOr[scala.Boolean] = js.undefined,
+    target: TargetLoggerSettings = null
+  ): RequestLoggerSettings = {
+    val __obj = js.Dynamic.literal()
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (!js.isUndefined(serviceIdentifier)) __obj.updateDynamic("serviceIdentifier")(serviceIdentifier)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[RequestLoggerSettings]
+  }
+}
+

@@ -64,3 +64,38 @@ trait BaseTitle[N, S, C, FW, FS, A, TB, F, AN] extends js.Object {
   var orient: js.UndefOr[TitleOrient] = js.undefined
 }
 
+object BaseTitle {
+  @scala.inline
+  def apply[N, S, C, FW, FS, A, TB, F, AN](
+    align: A = null,
+    anchor: AN = null,
+    angle: N = null,
+    baseline: TB = null,
+    color: C = null,
+    font: S = null,
+    fontSize: N = null,
+    fontStyle: FS = null,
+    fontWeight: FW = null,
+    frame: F = null,
+    limit: N = null,
+    offset: N = null,
+    orient: TitleOrient = null
+  ): BaseTitle[N, S, C, FW, FS, A, TB, F, AN] = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align.asInstanceOf[js.Any])
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor.asInstanceOf[js.Any])
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (baseline != null) __obj.updateDynamic("baseline")(baseline.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight.asInstanceOf[js.Any])
+    if (frame != null) __obj.updateDynamic("frame")(frame.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (orient != null) __obj.updateDynamic("orient")(orient)
+    __obj.asInstanceOf[BaseTitle[N, S, C, FW, FS, A, TB, F, AN]]
+  }
+}
+

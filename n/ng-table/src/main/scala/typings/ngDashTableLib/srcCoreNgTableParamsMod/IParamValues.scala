@@ -28,3 +28,22 @@ trait IParamValues[T] extends js.Object {
   var sorting: js.UndefOr[ngDashTableLib.srcCoreSortingMod.ISortingValues] = js.undefined
 }
 
+object IParamValues {
+  @scala.inline
+  def apply[T](
+    count: scala.Int | scala.Double = null,
+    filter: ngDashTableLib.srcCoreFilteringFilterFuncMod.IFilterValues = null,
+    group: java.lang.String | ngDashTableLib.srcCoreGroupingGroupingFuncMod.Grouping[T] = null,
+    page: scala.Int | scala.Double = null,
+    sorting: ngDashTableLib.srcCoreSortingMod.ISortingValues = null
+  ): IParamValues[T] = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (group != null) __obj.updateDynamic("group")(group.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (sorting != null) __obj.updateDynamic("sorting")(sorting)
+    __obj.asInstanceOf[IParamValues[T]]
+  }
+}
+

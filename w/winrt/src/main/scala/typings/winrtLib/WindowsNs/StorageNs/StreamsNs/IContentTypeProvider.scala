@@ -9,3 +9,12 @@ trait IContentTypeProvider extends js.Object {
   var contentType: java.lang.String
 }
 
+object IContentTypeProvider {
+  @scala.inline
+  def apply(contentType: java.lang.String): IContentTypeProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.asInstanceOf[IContentTypeProvider]
+  }
+}
+

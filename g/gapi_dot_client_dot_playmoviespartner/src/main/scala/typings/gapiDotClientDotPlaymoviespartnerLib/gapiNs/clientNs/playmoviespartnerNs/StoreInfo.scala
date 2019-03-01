@@ -111,3 +111,62 @@ trait StoreInfo extends js.Object {
   var videoId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StoreInfo {
+  @scala.inline
+  def apply(
+    audioTracks: js.Array[java.lang.String] = null,
+    country: java.lang.String = null,
+    editLevelEidr: java.lang.String = null,
+    episodeNumber: java.lang.String = null,
+    hasAudio51: js.UndefOr[scala.Boolean] = js.undefined,
+    hasEstOffer: js.UndefOr[scala.Boolean] = js.undefined,
+    hasHdOffer: js.UndefOr[scala.Boolean] = js.undefined,
+    hasInfoCards: js.UndefOr[scala.Boolean] = js.undefined,
+    hasSdOffer: js.UndefOr[scala.Boolean] = js.undefined,
+    hasVodOffer: js.UndefOr[scala.Boolean] = js.undefined,
+    liveTime: java.lang.String = null,
+    mid: java.lang.String = null,
+    name: java.lang.String = null,
+    pphNames: js.Array[java.lang.String] = null,
+    seasonId: java.lang.String = null,
+    seasonName: java.lang.String = null,
+    seasonNumber: java.lang.String = null,
+    showId: java.lang.String = null,
+    showName: java.lang.String = null,
+    studioName: java.lang.String = null,
+    subtitles: js.Array[java.lang.String] = null,
+    titleLevelEidr: java.lang.String = null,
+    trailerId: java.lang.String = null,
+    `type`: java.lang.String = null,
+    videoId: java.lang.String = null
+  ): StoreInfo = {
+    val __obj = js.Dynamic.literal()
+    if (audioTracks != null) __obj.updateDynamic("audioTracks")(audioTracks)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (editLevelEidr != null) __obj.updateDynamic("editLevelEidr")(editLevelEidr)
+    if (episodeNumber != null) __obj.updateDynamic("episodeNumber")(episodeNumber)
+    if (!js.isUndefined(hasAudio51)) __obj.updateDynamic("hasAudio51")(hasAudio51)
+    if (!js.isUndefined(hasEstOffer)) __obj.updateDynamic("hasEstOffer")(hasEstOffer)
+    if (!js.isUndefined(hasHdOffer)) __obj.updateDynamic("hasHdOffer")(hasHdOffer)
+    if (!js.isUndefined(hasInfoCards)) __obj.updateDynamic("hasInfoCards")(hasInfoCards)
+    if (!js.isUndefined(hasSdOffer)) __obj.updateDynamic("hasSdOffer")(hasSdOffer)
+    if (!js.isUndefined(hasVodOffer)) __obj.updateDynamic("hasVodOffer")(hasVodOffer)
+    if (liveTime != null) __obj.updateDynamic("liveTime")(liveTime)
+    if (mid != null) __obj.updateDynamic("mid")(mid)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pphNames != null) __obj.updateDynamic("pphNames")(pphNames)
+    if (seasonId != null) __obj.updateDynamic("seasonId")(seasonId)
+    if (seasonName != null) __obj.updateDynamic("seasonName")(seasonName)
+    if (seasonNumber != null) __obj.updateDynamic("seasonNumber")(seasonNumber)
+    if (showId != null) __obj.updateDynamic("showId")(showId)
+    if (showName != null) __obj.updateDynamic("showName")(showName)
+    if (studioName != null) __obj.updateDynamic("studioName")(studioName)
+    if (subtitles != null) __obj.updateDynamic("subtitles")(subtitles)
+    if (titleLevelEidr != null) __obj.updateDynamic("titleLevelEidr")(titleLevelEidr)
+    if (trailerId != null) __obj.updateDynamic("trailerId")(trailerId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    __obj.asInstanceOf[StoreInfo]
+  }
+}
+

@@ -11,3 +11,18 @@ trait LayerOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double]
 }
 
+object LayerOptions {
+  @scala.inline
+  def apply(
+    hd: scala.Boolean,
+    overlayMap: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): LayerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hd")(hd)
+    if (!js.isUndefined(overlayMap)) __obj.updateDynamic("overlayMap")(overlayMap)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LayerOptions]
+  }
+}
+

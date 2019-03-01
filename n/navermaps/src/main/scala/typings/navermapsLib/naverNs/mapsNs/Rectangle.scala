@@ -19,7 +19,8 @@ class Rectangle () extends OverlayView {
   def getStyles(key: java.lang.String): RectangleOptions = js.native
   def getVisible(): scala.Boolean = js.native
   def getZIndex(): scala.Double = js.native
-  def setBounds(bounds: Bounds | BoundsLiteral): scala.Unit = js.native
+  def setBounds(bounds: Bounds): scala.Unit = js.native
+  def setBounds(bounds: BoundsLiteral): scala.Unit = js.native
   def setClickable(clickable: scala.Boolean): scala.Unit = js.native
   def setOptions(key: java.lang.String, value: js.Any): scala.Unit = js.native
   def setOptions(options: RectangleOptions): scala.Unit = js.native

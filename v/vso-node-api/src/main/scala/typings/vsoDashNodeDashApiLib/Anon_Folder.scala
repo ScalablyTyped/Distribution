@@ -11,3 +11,14 @@ trait Anon_Folder extends js.Object {
   var ref: scala.Double
 }
 
+object Anon_Folder {
+  @scala.inline
+  def apply(folder: scala.Double, invalid: scala.Double, ref: scala.Double): Anon_Folder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("folder")(folder)
+    __obj.updateDynamic("invalid")(invalid)
+    __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[Anon_Folder]
+  }
+}
+

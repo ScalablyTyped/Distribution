@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait W2Tabs
   extends W2Common
-     with W2OnClickable {
+     with W2OnClickable
+     with W2Object {
   var active: java.lang.String = js.native
   var right: java.lang.String = js.native
   var routeData: java.lang.String = js.native

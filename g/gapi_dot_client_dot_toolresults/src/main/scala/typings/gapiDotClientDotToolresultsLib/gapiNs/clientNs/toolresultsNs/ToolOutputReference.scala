@@ -26,3 +26,14 @@ trait ToolOutputReference extends js.Object {
   var testCase: js.UndefOr[TestCaseReference] = js.undefined
 }
 
+object ToolOutputReference {
+  @scala.inline
+  def apply(creationTime: Timestamp = null, output: FileReference = null, testCase: TestCaseReference = null): ToolOutputReference = {
+    val __obj = js.Dynamic.literal()
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (testCase != null) __obj.updateDynamic("testCase")(testCase)
+    __obj.asInstanceOf[ToolOutputReference]
+  }
+}
+

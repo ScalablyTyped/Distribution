@@ -29,3 +29,26 @@ trait PointRegionMouseMoveEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PointRegionMouseMoveEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    locationX: scala.Int | scala.Double = null,
+    locationY: scala.Int | scala.Double = null,
+    model: js.Any = null,
+    pointIndex: scala.Int | scala.Double = null,
+    seriesType: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): PointRegionMouseMoveEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (locationX != null) __obj.updateDynamic("locationX")(locationX.asInstanceOf[js.Any])
+    if (locationY != null) __obj.updateDynamic("locationY")(locationY.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (pointIndex != null) __obj.updateDynamic("pointIndex")(pointIndex.asInstanceOf[js.Any])
+    if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PointRegionMouseMoveEventArgs]
+  }
+}
+

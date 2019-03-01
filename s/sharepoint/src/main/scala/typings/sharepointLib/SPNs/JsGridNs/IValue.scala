@@ -11,3 +11,13 @@ trait IValue extends js.Object {
   var localized: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IValue {
+  @scala.inline
+  def apply(data: js.Any = null, localized: java.lang.String = null): IValue = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (localized != null) __obj.updateDynamic("localized")(localized)
+    __obj.asInstanceOf[IValue]
+  }
+}
+

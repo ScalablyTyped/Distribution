@@ -108,3 +108,47 @@ trait SocialIconProps extends js.Object {
   var underlayColor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SocialIconProps {
+  @scala.inline
+  def apply(
+    `type`: SocialMediaType,
+    Component: reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = null,
+    button: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fontFamily: java.lang.String = null,
+    fontStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    fontWeight: java.lang.String = null,
+    iconColor: java.lang.String = null,
+    iconSize: scala.Int | scala.Double = null,
+    iconStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    light: js.UndefOr[scala.Boolean] = js.undefined,
+    loading: js.UndefOr[scala.Boolean] = js.undefined,
+    onLongPress: js.Function0[scala.Unit] = null,
+    onPress: js.Function0[scala.Unit] = null,
+    raised: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    title: java.lang.String = null,
+    underlayColor: java.lang.String = null
+  ): SocialIconProps = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (Component != null) __obj.updateDynamic("Component")(Component)
+    if (!js.isUndefined(button)) __obj.updateDynamic("button")(button)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontStyle != null) __obj.updateDynamic("fontStyle")(fontStyle.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
+    if (iconSize != null) __obj.updateDynamic("iconSize")(iconSize.asInstanceOf[js.Any])
+    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(light)) __obj.updateDynamic("light")(light)
+    if (!js.isUndefined(loading)) __obj.updateDynamic("loading")(loading)
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (!js.isUndefined(raised)) __obj.updateDynamic("raised")(raised)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor)
+    __obj.asInstanceOf[SocialIconProps]
+  }
+}
+

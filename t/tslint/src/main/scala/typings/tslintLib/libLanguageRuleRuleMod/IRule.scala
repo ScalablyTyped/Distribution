@@ -13,3 +13,20 @@ trait IRule extends js.Object {
   def isEnabled(): scala.Boolean
 }
 
+object IRule {
+  @scala.inline
+  def apply(
+    apply: js.Function1[typescriptLib.typescriptMod.tsNs.SourceFile, js.Array[RuleFailure]],
+    applyWithWalker: js.Function1[tslintLib.libLanguageWalkerWalkerMod.IWalker, js.Array[RuleFailure]],
+    getOptions: js.Function0[IOptions],
+    isEnabled: js.Function0[scala.Boolean]
+  ): IRule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apply")(apply)
+    __obj.updateDynamic("applyWithWalker")(applyWithWalker)
+    __obj.updateDynamic("getOptions")(getOptions)
+    __obj.updateDynamic("isEnabled")(isEnabled)
+    __obj.asInstanceOf[IRule]
+  }
+}
+

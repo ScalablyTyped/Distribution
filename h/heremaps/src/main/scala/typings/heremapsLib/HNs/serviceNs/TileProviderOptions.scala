@@ -13,3 +13,12 @@ trait TileProviderOptions extends js.Object {
   var crossOrigin: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TileProviderOptions {
+  @scala.inline
+  def apply(crossOrigin: js.UndefOr[scala.Boolean] = js.undefined): TileProviderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(crossOrigin)) __obj.updateDynamic("crossOrigin")(crossOrigin)
+    __obj.asInstanceOf[TileProviderOptions]
+  }
+}
+

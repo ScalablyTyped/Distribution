@@ -10,3 +10,13 @@ trait RefreshAccessTokenBundle[InputData] extends js.Object {
   var inputData: InputData
 }
 
+object RefreshAccessTokenBundle {
+  @scala.inline
+  def apply[InputData](authData: AuthData, inputData: InputData): RefreshAccessTokenBundle[InputData] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authData")(authData)
+    __obj.updateDynamic("inputData")(inputData.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RefreshAccessTokenBundle[InputData]]
+  }
+}
+

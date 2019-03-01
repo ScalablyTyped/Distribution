@@ -15,3 +15,12 @@ trait ArtistSearchResponse extends js.Object {
   var artists: PagingObject[ArtistObjectFull]
 }
 
+object ArtistSearchResponse {
+  @scala.inline
+  def apply(artists: PagingObject[ArtistObjectFull]): ArtistSearchResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artists")(artists)
+    __obj.asInstanceOf[ArtistSearchResponse]
+  }
+}
+

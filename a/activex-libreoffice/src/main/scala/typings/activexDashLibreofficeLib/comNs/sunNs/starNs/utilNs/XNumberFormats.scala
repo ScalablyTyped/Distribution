@@ -86,3 +86,59 @@ trait XNumberFormats
   def removeByKey(nKey: scala.Double): scala.Unit
 }
 
+object XNumberFormats {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addNew: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    addNewConverted: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double
+    ],
+    generateFormat: js.Function6[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean, 
+      scala.Boolean, 
+      scala.Double, 
+      scala.Double, 
+      java.lang.String
+    ],
+    getByKey: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryKey: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean, 
+      scala.Double
+    ],
+    queryKeys: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean, 
+      activexDashInteropLib.SafeArray[scala.Double]
+    ],
+    release: js.Function0[scala.Unit],
+    removeByKey: js.Function1[scala.Double, scala.Unit]
+  ): XNumberFormats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addNew")(addNew)
+    __obj.updateDynamic("addNewConverted")(addNewConverted)
+    __obj.updateDynamic("generateFormat")(generateFormat)
+    __obj.updateDynamic("getByKey")(getByKey)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("queryKey")(queryKey)
+    __obj.updateDynamic("queryKeys")(queryKeys)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeByKey")(removeByKey)
+    __obj.asInstanceOf[XNumberFormats]
+  }
+}
+

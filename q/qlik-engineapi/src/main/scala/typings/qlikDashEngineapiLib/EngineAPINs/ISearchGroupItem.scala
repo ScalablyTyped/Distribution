@@ -41,3 +41,22 @@ trait ISearchGroupItem extends js.Object {
   var qTotalNumberOfMatches: scala.Double
 }
 
+object ISearchGroupItem {
+  @scala.inline
+  def apply(
+    qIdentifier: java.lang.String,
+    qItemMatches: js.Array[ISearchGroupItemMatch],
+    qItemType: SearchObjectsItemType,
+    qSearchTermsMatched: js.Array[scala.Double],
+    qTotalNumberOfMatches: scala.Double
+  ): ISearchGroupItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qIdentifier")(qIdentifier)
+    __obj.updateDynamic("qItemMatches")(qItemMatches)
+    __obj.updateDynamic("qItemType")(qItemType)
+    __obj.updateDynamic("qSearchTermsMatched")(qSearchTermsMatched)
+    __obj.updateDynamic("qTotalNumberOfMatches")(qTotalNumberOfMatches)
+    __obj.asInstanceOf[ISearchGroupItem]
+  }
+}
+

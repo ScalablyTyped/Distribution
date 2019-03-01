@@ -38,3 +38,42 @@ trait MachineType extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MachineType {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    deprecated: DeprecationStatus = null,
+    description: java.lang.String = null,
+    guestCpus: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    imageSpaceGb: scala.Int | scala.Double = null,
+    isSharedCpu: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    maximumPersistentDisks: scala.Int | scala.Double = null,
+    maximumPersistentDisksSizeGb: java.lang.String = null,
+    memoryMb: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    scratchDisks: js.Array[gapiDotClientDotComputeLib.Anon_DiskGb] = null,
+    selfLink: java.lang.String = null,
+    zone: java.lang.String = null
+  ): MachineType = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (deprecated != null) __obj.updateDynamic("deprecated")(deprecated)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (guestCpus != null) __obj.updateDynamic("guestCpus")(guestCpus.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imageSpaceGb != null) __obj.updateDynamic("imageSpaceGb")(imageSpaceGb.asInstanceOf[js.Any])
+    if (!js.isUndefined(isSharedCpu)) __obj.updateDynamic("isSharedCpu")(isSharedCpu)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maximumPersistentDisks != null) __obj.updateDynamic("maximumPersistentDisks")(maximumPersistentDisks.asInstanceOf[js.Any])
+    if (maximumPersistentDisksSizeGb != null) __obj.updateDynamic("maximumPersistentDisksSizeGb")(maximumPersistentDisksSizeGb)
+    if (memoryMb != null) __obj.updateDynamic("memoryMb")(memoryMb.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (scratchDisks != null) __obj.updateDynamic("scratchDisks")(scratchDisks)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[MachineType]
+  }
+}
+

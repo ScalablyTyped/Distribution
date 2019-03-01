@@ -39,3 +39,22 @@ trait StatefulSet extends js.Object {
   val status: StatefulSetStatus
 }
 
+object StatefulSet {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: StatefulSetSpec,
+    status: StatefulSetStatus
+  ): StatefulSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[StatefulSet]
+  }
+}
+

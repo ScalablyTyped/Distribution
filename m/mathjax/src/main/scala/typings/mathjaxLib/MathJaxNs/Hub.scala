@@ -134,3 +134,66 @@ trait Hub extends js.Object {
   def setRenderer(renderer: java.lang.String, `type`: java.lang.String): scala.Unit
 }
 
+object Hub {
+  @scala.inline
+  def apply(
+    Config: js.Function1[Config, scala.Unit],
+    Configured: js.Function0[scala.Unit],
+    Insert: js.Function2[js.Any, js.Any, js.Any],
+    PreProcess: js.Function2[js.Any, js.Any, js.Any],
+    Process: js.Function2[js.Any, js.Any, js.Any],
+    Queue: js.Function1[js.Any, js.Any],
+    Reprocess: js.Function2[js.Any, js.Any, js.Any],
+    Rerender: js.Function2[js.Any, js.Any, js.Any],
+    Typeset: js.Function2[js.Any, js.Any, js.Any],
+    Update: js.Function2[js.Any, js.Any, js.Any],
+    formatError: js.Function2[js.Any, js.Any, scala.Unit],
+    getAllJax: js.Function1[js.Any, js.Array[_]],
+    getJaxByInputType: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getJaxByType: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getJaxFor: js.Function1[js.Any, js.Any],
+    isJax: js.Function1[js.Any, scala.Double],
+    setRenderer: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    Browser: BrowserInfo = null,
+    Register: Register = null,
+    config: Config = null,
+    inputJax: js.Any = null,
+    outputJax: js.Any = null,
+    processSectionDelay: scala.Int | scala.Double = null,
+    processUpdateDelay: scala.Int | scala.Double = null,
+    processUpdateTime: scala.Int | scala.Double = null,
+    queue: js.Any = null,
+    signal: Signal = null
+  ): Hub = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Config")(Config)
+    __obj.updateDynamic("Configured")(Configured)
+    __obj.updateDynamic("Insert")(Insert)
+    __obj.updateDynamic("PreProcess")(PreProcess)
+    __obj.updateDynamic("Process")(Process)
+    __obj.updateDynamic("Queue")(Queue)
+    __obj.updateDynamic("Reprocess")(Reprocess)
+    __obj.updateDynamic("Rerender")(Rerender)
+    __obj.updateDynamic("Typeset")(Typeset)
+    __obj.updateDynamic("Update")(Update)
+    __obj.updateDynamic("formatError")(formatError)
+    __obj.updateDynamic("getAllJax")(getAllJax)
+    __obj.updateDynamic("getJaxByInputType")(getJaxByInputType)
+    __obj.updateDynamic("getJaxByType")(getJaxByType)
+    __obj.updateDynamic("getJaxFor")(getJaxFor)
+    __obj.updateDynamic("isJax")(isJax)
+    __obj.updateDynamic("setRenderer")(setRenderer)
+    if (Browser != null) __obj.updateDynamic("Browser")(Browser)
+    if (Register != null) __obj.updateDynamic("Register")(Register)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (inputJax != null) __obj.updateDynamic("inputJax")(inputJax)
+    if (outputJax != null) __obj.updateDynamic("outputJax")(outputJax)
+    if (processSectionDelay != null) __obj.updateDynamic("processSectionDelay")(processSectionDelay.asInstanceOf[js.Any])
+    if (processUpdateDelay != null) __obj.updateDynamic("processUpdateDelay")(processUpdateDelay.asInstanceOf[js.Any])
+    if (processUpdateTime != null) __obj.updateDynamic("processUpdateTime")(processUpdateTime.asInstanceOf[js.Any])
+    if (queue != null) __obj.updateDynamic("queue")(queue)
+    if (signal != null) __obj.updateDynamic("signal")(signal)
+    __obj.asInstanceOf[Hub]
+  }
+}
+

@@ -20,3 +20,18 @@ trait EventStreamState extends js.Object {
   val roleArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object EventStreamState {
+  @scala.inline
+  def apply(
+    applicationId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    destinationStreamArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): EventStreamState = {
+    val __obj = js.Dynamic.literal()
+    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
+    if (destinationStreamArn != null) __obj.updateDynamic("destinationStreamArn")(destinationStreamArn.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventStreamState]
+  }
+}
+

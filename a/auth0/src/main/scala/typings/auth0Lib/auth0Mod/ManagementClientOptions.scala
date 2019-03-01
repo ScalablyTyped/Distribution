@@ -16,3 +16,28 @@ trait ManagementClientOptions extends js.Object {
   var tokenProvider: js.UndefOr[TokenProvider] = js.undefined
 }
 
+object ManagementClientOptions {
+  @scala.inline
+  def apply(
+    domain: java.lang.String,
+    audience: java.lang.String = null,
+    clientId: java.lang.String = null,
+    clientSecret: java.lang.String = null,
+    retry: RetryOptions = null,
+    scope: java.lang.String = null,
+    token: java.lang.String = null,
+    tokenProvider: TokenProvider = null
+  ): ManagementClientOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain)
+    if (audience != null) __obj.updateDynamic("audience")(audience)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (clientSecret != null) __obj.updateDynamic("clientSecret")(clientSecret)
+    if (retry != null) __obj.updateDynamic("retry")(retry)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (tokenProvider != null) __obj.updateDynamic("tokenProvider")(tokenProvider)
+    __obj.asInstanceOf[ManagementClientOptions]
+  }
+}
+

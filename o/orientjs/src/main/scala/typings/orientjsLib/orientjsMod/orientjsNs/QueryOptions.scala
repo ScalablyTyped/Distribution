@@ -17,3 +17,26 @@ trait QueryOptions extends js.Object {
   var token: js.UndefOr[js.Any] = js.undefined
 }
 
+object QueryOptions {
+  @scala.inline
+  def apply(
+    `class`: java.lang.String = null,
+    fetchPlan: js.Any = null,
+    language: orientjsLib.orientjsLibStrings.SQL | orientjsLib.orientjsLibStrings.Javascript = null,
+    limit: scala.Int | scala.Double = null,
+    mode: orientjsLib.orientjsLibStrings.s | orientjsLib.orientjsLibStrings.a | orientjsLib.orientjsLibStrings.l = null,
+    params: js.Any = null,
+    token: js.Any = null
+  ): QueryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (fetchPlan != null) __obj.updateDynamic("fetchPlan")(fetchPlan)
+    if (language != null) __obj.updateDynamic("language")(language.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[QueryOptions]
+  }
+}
+

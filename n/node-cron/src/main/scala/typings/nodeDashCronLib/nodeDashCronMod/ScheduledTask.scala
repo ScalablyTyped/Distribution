@@ -11,3 +11,18 @@ trait ScheduledTask extends js.Object {
   def stop(): this.type
 }
 
+object ScheduledTask {
+  @scala.inline
+  def apply(
+    destroy: js.Function0[scala.Unit],
+    start: js.Function0[ScheduledTask],
+    stop: js.Function0[ScheduledTask]
+  ): ScheduledTask = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("stop")(stop)
+    __obj.asInstanceOf[ScheduledTask]
+  }
+}
+

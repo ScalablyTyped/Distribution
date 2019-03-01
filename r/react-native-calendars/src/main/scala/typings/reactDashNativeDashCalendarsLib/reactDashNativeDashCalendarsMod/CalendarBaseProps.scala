@@ -106,3 +106,59 @@ trait CalendarBaseProps extends js.Object {
   var theme: js.UndefOr[CalendarTheme] = js.undefined
 }
 
+object CalendarBaseProps {
+  @scala.inline
+  def apply(
+    current: TCalendarDate = null,
+    dayComponent: (reactLib.reactMod.Component[DayComponentProps, js.Object, _]) | reactLib.reactMod.ReactNs.SFC[DayComponentProps] = null,
+    disableMonthChange: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledByDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    displayLoadingIndicator: js.UndefOr[scala.Boolean] = js.undefined,
+    firstDay: scala.Int | scala.Double = null,
+    hideArrows: js.UndefOr[scala.Boolean] = js.undefined,
+    hideDayNames: js.UndefOr[scala.Boolean] = js.undefined,
+    hideExtraDays: js.UndefOr[scala.Boolean] = js.undefined,
+    maxDate: TCalendarDate = null,
+    minDate: TCalendarDate = null,
+    monthFormat: java.lang.String = null,
+    onDayLongPress: DateCallbackHandler = null,
+    onDayPress: DateCallbackHandler = null,
+    onMonthChange: DateCallbackHandler = null,
+    onPressArrowLeft: js.Function1[/* substractMonth */ js.Function0[scala.Unit], scala.Unit] = null,
+    onPressArrowRight: js.Function1[/* addMonth */ js.Function0[scala.Unit], scala.Unit] = null,
+    onVisibleMonthsChange: js.Function1[/* months */ js.Array[DateObject], scala.Unit] = null,
+    renderArrow: js.Function1[
+      /* direction */ reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.left | reactDashNativeDashCalendarsLib.reactDashNativeDashCalendarsLibStrings.right, 
+      reactLib.reactMod.ReactNs.ReactNode
+    ] = null,
+    showWeekNumbers: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    theme: CalendarTheme = null
+  ): CalendarBaseProps = {
+    val __obj = js.Dynamic.literal()
+    if (current != null) __obj.updateDynamic("current")(current.asInstanceOf[js.Any])
+    if (dayComponent != null) __obj.updateDynamic("dayComponent")(dayComponent.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableMonthChange)) __obj.updateDynamic("disableMonthChange")(disableMonthChange)
+    if (!js.isUndefined(disabledByDefault)) __obj.updateDynamic("disabledByDefault")(disabledByDefault)
+    if (!js.isUndefined(displayLoadingIndicator)) __obj.updateDynamic("displayLoadingIndicator")(displayLoadingIndicator)
+    if (firstDay != null) __obj.updateDynamic("firstDay")(firstDay.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideArrows)) __obj.updateDynamic("hideArrows")(hideArrows)
+    if (!js.isUndefined(hideDayNames)) __obj.updateDynamic("hideDayNames")(hideDayNames)
+    if (!js.isUndefined(hideExtraDays)) __obj.updateDynamic("hideExtraDays")(hideExtraDays)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (monthFormat != null) __obj.updateDynamic("monthFormat")(monthFormat)
+    if (onDayLongPress != null) __obj.updateDynamic("onDayLongPress")(onDayLongPress)
+    if (onDayPress != null) __obj.updateDynamic("onDayPress")(onDayPress)
+    if (onMonthChange != null) __obj.updateDynamic("onMonthChange")(onMonthChange)
+    if (onPressArrowLeft != null) __obj.updateDynamic("onPressArrowLeft")(onPressArrowLeft)
+    if (onPressArrowRight != null) __obj.updateDynamic("onPressArrowRight")(onPressArrowRight)
+    if (onVisibleMonthsChange != null) __obj.updateDynamic("onVisibleMonthsChange")(onVisibleMonthsChange)
+    if (renderArrow != null) __obj.updateDynamic("renderArrow")(renderArrow)
+    if (!js.isUndefined(showWeekNumbers)) __obj.updateDynamic("showWeekNumbers")(showWeekNumbers)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[CalendarBaseProps]
+  }
+}
+

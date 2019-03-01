@@ -25,3 +25,38 @@ trait IServerVaultManagementOperations extends js.Object {
   def TakeVaultOffline(VaultGUID: java.lang.String, DisconnectUsers: scala.Boolean): scala.Unit
 }
 
+object IServerVaultManagementOperations {
+  @scala.inline
+  def apply(
+    AttachVault: js.Function2[IVaultProperties, scala.Boolean, IVaultProperties],
+    AttachVaultWithOptions: js.Function2[IVaultProperties, IAttachVaultOptions, IVaultProperties],
+    BackupVault: js.Function1[IBackupJob, scala.Unit],
+    BringVaultOnline: js.Function1[java.lang.String, scala.Unit],
+    CopyVault: js.Function1[ICopyVaultJob, ICopyVaultJobOutputInfo],
+    CreateNewVault: js.Function1[IVaultProperties, java.lang.String],
+    DestroyVault: js.Function1[java.lang.String, scala.Unit],
+    DetachVault: js.Function1[java.lang.String, scala.Unit],
+    GetBackupFileContents: js.Function3[java.lang.String, java.lang.String, IImpersonation, IVaultProperties],
+    GetVaultProperties: js.Function1[java.lang.String, IVaultProperties],
+    OptimizeVault: js.Function1[IOptimizeVaultJob, scala.Unit],
+    RestoreVault: js.Function1[IRestoreJob, scala.Unit],
+    TakeVaultOffline: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
+  ): IServerVaultManagementOperations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AttachVault")(AttachVault)
+    __obj.updateDynamic("AttachVaultWithOptions")(AttachVaultWithOptions)
+    __obj.updateDynamic("BackupVault")(BackupVault)
+    __obj.updateDynamic("BringVaultOnline")(BringVaultOnline)
+    __obj.updateDynamic("CopyVault")(CopyVault)
+    __obj.updateDynamic("CreateNewVault")(CreateNewVault)
+    __obj.updateDynamic("DestroyVault")(DestroyVault)
+    __obj.updateDynamic("DetachVault")(DetachVault)
+    __obj.updateDynamic("GetBackupFileContents")(GetBackupFileContents)
+    __obj.updateDynamic("GetVaultProperties")(GetVaultProperties)
+    __obj.updateDynamic("OptimizeVault")(OptimizeVault)
+    __obj.updateDynamic("RestoreVault")(RestoreVault)
+    __obj.updateDynamic("TakeVaultOffline")(TakeVaultOffline)
+    __obj.asInstanceOf[IServerVaultManagementOperations]
+  }
+}
+

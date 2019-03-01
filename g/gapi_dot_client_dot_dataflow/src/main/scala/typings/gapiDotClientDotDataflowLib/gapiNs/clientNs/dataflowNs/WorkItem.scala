@@ -41,3 +41,42 @@ trait WorkItem extends js.Object {
   var streamingSetupTask: js.UndefOr[StreamingSetupTask] = js.undefined
 }
 
+object WorkItem {
+  @scala.inline
+  def apply(
+    configuration: java.lang.String = null,
+    id: java.lang.String = null,
+    initialReportIndex: java.lang.String = null,
+    jobId: java.lang.String = null,
+    leaseExpireTime: java.lang.String = null,
+    mapTask: MapTask = null,
+    packages: js.Array[Package] = null,
+    projectId: java.lang.String = null,
+    reportStatusInterval: java.lang.String = null,
+    seqMapTask: SeqMapTask = null,
+    shellTask: ShellTask = null,
+    sourceOperationTask: SourceOperationRequest = null,
+    streamingComputationTask: StreamingComputationTask = null,
+    streamingConfigTask: StreamingConfigTask = null,
+    streamingSetupTask: StreamingSetupTask = null
+  ): WorkItem = {
+    val __obj = js.Dynamic.literal()
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (initialReportIndex != null) __obj.updateDynamic("initialReportIndex")(initialReportIndex)
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
+    if (leaseExpireTime != null) __obj.updateDynamic("leaseExpireTime")(leaseExpireTime)
+    if (mapTask != null) __obj.updateDynamic("mapTask")(mapTask)
+    if (packages != null) __obj.updateDynamic("packages")(packages)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (reportStatusInterval != null) __obj.updateDynamic("reportStatusInterval")(reportStatusInterval)
+    if (seqMapTask != null) __obj.updateDynamic("seqMapTask")(seqMapTask)
+    if (shellTask != null) __obj.updateDynamic("shellTask")(shellTask)
+    if (sourceOperationTask != null) __obj.updateDynamic("sourceOperationTask")(sourceOperationTask)
+    if (streamingComputationTask != null) __obj.updateDynamic("streamingComputationTask")(streamingComputationTask)
+    if (streamingConfigTask != null) __obj.updateDynamic("streamingConfigTask")(streamingConfigTask)
+    if (streamingSetupTask != null) __obj.updateDynamic("streamingSetupTask")(streamingSetupTask)
+    __obj.asInstanceOf[WorkItem]
+  }
+}
+

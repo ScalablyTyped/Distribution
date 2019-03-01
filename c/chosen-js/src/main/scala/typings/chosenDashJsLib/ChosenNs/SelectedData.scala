@@ -10,3 +10,13 @@ trait SelectedData extends js.Object {
   var selected: java.lang.String
 }
 
+object SelectedData {
+  @scala.inline
+  def apply(deselected: java.lang.String, selected: java.lang.String): SelectedData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deselected")(deselected)
+    __obj.updateDynamic("selected")(selected)
+    __obj.asInstanceOf[SelectedData]
+  }
+}
+

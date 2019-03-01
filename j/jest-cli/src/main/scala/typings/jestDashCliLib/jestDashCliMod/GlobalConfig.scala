@@ -63,3 +63,116 @@ trait GlobalConfig extends js.Object {
   var watchman: scala.Boolean
 }
 
+object GlobalConfig {
+  @scala.inline
+  def apply(
+    bail: scala.Boolean,
+    changedFilesWithAncestor: scala.Boolean,
+    changedSince: java.lang.String,
+    collectCoverage: scala.Boolean,
+    collectCoverageFrom: js.Array[java.lang.String],
+    coverageDirectory: java.lang.String,
+    coverageReporters: js.Array[java.lang.String],
+    coverageThreshold: jestDashCliLib.Anon_Global,
+    detectLeaks: scala.Boolean,
+    detectOpenHandles: scala.Boolean,
+    errorOnDeprecated: scala.Boolean,
+    expand: scala.Boolean,
+    findRelatedTests: scala.Boolean,
+    forceExit: scala.Boolean,
+    json: scala.Boolean,
+    lastCommit: scala.Boolean,
+    listTests: scala.Boolean,
+    logHeapUsage: scala.Boolean,
+    maxWorkers: scala.Double,
+    noStackTrace: scala.Boolean,
+    nonFlagArgs: js.Array[java.lang.String],
+    notify: scala.Boolean,
+    notifyMode: java.lang.String,
+    onlyChanged: scala.Boolean,
+    onlyFailures: scala.Boolean,
+    passWithNoTests: scala.Boolean,
+    projects: js.Array[java.lang.String],
+    reporters: js.Array[java.lang.String | ReporterConfig],
+    rootDir: java.lang.String,
+    runTestsByPath: scala.Boolean,
+    silent: scala.Boolean,
+    skipFilter: scala.Boolean,
+    testFailureExitCode: scala.Double,
+    testNamePattern: java.lang.String,
+    testPathPattern: java.lang.String,
+    updateSnapshot: SnapshotUpdateState,
+    useStderr: scala.Boolean,
+    watch: scala.Boolean,
+    watchAll: scala.Boolean,
+    watchman: scala.Boolean,
+    collectCoverageOnlyFrom: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    coveragePathIgnorePatterns: js.Array[java.lang.String] = null,
+    enabledTestsMap: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[scala.Boolean]] = null,
+    filter: java.lang.String = null,
+    globalSetup: java.lang.String = null,
+    globalTeardown: java.lang.String = null,
+    noSCM: js.UndefOr[scala.Boolean] = js.undefined,
+    outputFile: java.lang.String = null,
+    replname: java.lang.String = null,
+    testResultsProcessor: java.lang.String = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined,
+    watchPlugins: js.Array[jestDashCliLib.Anon_Config] = null
+  ): GlobalConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bail")(bail)
+    __obj.updateDynamic("changedFilesWithAncestor")(changedFilesWithAncestor)
+    __obj.updateDynamic("changedSince")(changedSince)
+    __obj.updateDynamic("collectCoverage")(collectCoverage)
+    __obj.updateDynamic("collectCoverageFrom")(collectCoverageFrom)
+    __obj.updateDynamic("coverageDirectory")(coverageDirectory)
+    __obj.updateDynamic("coverageReporters")(coverageReporters)
+    __obj.updateDynamic("coverageThreshold")(coverageThreshold)
+    __obj.updateDynamic("detectLeaks")(detectLeaks)
+    __obj.updateDynamic("detectOpenHandles")(detectOpenHandles)
+    __obj.updateDynamic("errorOnDeprecated")(errorOnDeprecated)
+    __obj.updateDynamic("expand")(expand)
+    __obj.updateDynamic("findRelatedTests")(findRelatedTests)
+    __obj.updateDynamic("forceExit")(forceExit)
+    __obj.updateDynamic("json")(json)
+    __obj.updateDynamic("lastCommit")(lastCommit)
+    __obj.updateDynamic("listTests")(listTests)
+    __obj.updateDynamic("logHeapUsage")(logHeapUsage)
+    __obj.updateDynamic("maxWorkers")(maxWorkers)
+    __obj.updateDynamic("noStackTrace")(noStackTrace)
+    __obj.updateDynamic("nonFlagArgs")(nonFlagArgs)
+    __obj.updateDynamic("notify")(notify)
+    __obj.updateDynamic("notifyMode")(notifyMode)
+    __obj.updateDynamic("onlyChanged")(onlyChanged)
+    __obj.updateDynamic("onlyFailures")(onlyFailures)
+    __obj.updateDynamic("passWithNoTests")(passWithNoTests)
+    __obj.updateDynamic("projects")(projects)
+    __obj.updateDynamic("reporters")(reporters)
+    __obj.updateDynamic("rootDir")(rootDir)
+    __obj.updateDynamic("runTestsByPath")(runTestsByPath)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("skipFilter")(skipFilter)
+    __obj.updateDynamic("testFailureExitCode")(testFailureExitCode)
+    __obj.updateDynamic("testNamePattern")(testNamePattern)
+    __obj.updateDynamic("testPathPattern")(testPathPattern)
+    __obj.updateDynamic("updateSnapshot")(updateSnapshot)
+    __obj.updateDynamic("useStderr")(useStderr)
+    __obj.updateDynamic("watch")(watch)
+    __obj.updateDynamic("watchAll")(watchAll)
+    __obj.updateDynamic("watchman")(watchman)
+    if (collectCoverageOnlyFrom != null) __obj.updateDynamic("collectCoverageOnlyFrom")(collectCoverageOnlyFrom)
+    if (coveragePathIgnorePatterns != null) __obj.updateDynamic("coveragePathIgnorePatterns")(coveragePathIgnorePatterns)
+    if (enabledTestsMap != null) __obj.updateDynamic("enabledTestsMap")(enabledTestsMap)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (globalSetup != null) __obj.updateDynamic("globalSetup")(globalSetup)
+    if (globalTeardown != null) __obj.updateDynamic("globalTeardown")(globalTeardown)
+    if (!js.isUndefined(noSCM)) __obj.updateDynamic("noSCM")(noSCM)
+    if (outputFile != null) __obj.updateDynamic("outputFile")(outputFile)
+    if (replname != null) __obj.updateDynamic("replname")(replname)
+    if (testResultsProcessor != null) __obj.updateDynamic("testResultsProcessor")(testResultsProcessor)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    if (watchPlugins != null) __obj.updateDynamic("watchPlugins")(watchPlugins)
+    __obj.asInstanceOf[GlobalConfig]
+  }
+}
+

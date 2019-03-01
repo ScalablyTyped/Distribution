@@ -113,3 +113,72 @@ trait Model extends js.Object {
   var zoomFactor: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    ajaxBeforeLoad: js.Function1[/* e */ AjaxBeforeLoadEventArgs, scala.Unit] = null,
+    ajaxError: js.Function1[/* e */ AjaxErrorEventArgs, scala.Unit] = null,
+    ajaxSuccess: js.Function1[/* e */ AjaxSuccessEventArgs, scala.Unit] = null,
+    dataSources: js.Array[DataSource] = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    drillThrough: js.Function1[/* e */ DrillThroughEventArgs, scala.Unit] = null,
+    enablePageCache: js.UndefOr[scala.Boolean] = js.undefined,
+    exportSettings: ExportSettings = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: java.lang.String = null,
+    pageSettings: PageSettings = null,
+    parameters: js.Array[Parameter] = null,
+    printMode: js.UndefOr[scala.Boolean] = js.undefined,
+    printOptions: PrintOptions | java.lang.String = null,
+    processingMode: ProcessingMode | java.lang.String = null,
+    renderMode: RenderMode | java.lang.String = null,
+    renderingBegin: js.Function1[/* e */ RenderingBeginEventArgs, scala.Unit] = null,
+    renderingComplete: js.Function1[/* e */ RenderingCompleteEventArgs, scala.Unit] = null,
+    reportError: js.Function1[/* e */ ReportErrorEventArgs, scala.Unit] = null,
+    reportExport: js.Function1[/* e */ ReportExportEventArgs, scala.Unit] = null,
+    reportLoaded: js.Function1[/* e */ ReportLoadedEventArgs, scala.Unit] = null,
+    reportPath: java.lang.String = null,
+    reportServerUrl: java.lang.String = null,
+    reportServiceUrl: java.lang.String = null,
+    serviceAuthorizationToken: java.lang.String = null,
+    showError: js.Function1[/* e */ ShowErrorEventArgs, scala.Unit] = null,
+    toolbarRendering: js.Function1[/* e */ ToolbarRenderingEventArgs, scala.Unit] = null,
+    toolbarSettings: ToolbarSettings = null,
+    viewReportClick: js.Function1[/* e */ ViewReportClickEventArgs, scala.Unit] = null,
+    zoomFactor: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(ajaxBeforeLoad)
+    if (ajaxError != null) __obj.updateDynamic("ajaxError")(ajaxError)
+    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(ajaxSuccess)
+    if (dataSources != null) __obj.updateDynamic("dataSources")(dataSources)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (drillThrough != null) __obj.updateDynamic("drillThrough")(drillThrough)
+    if (!js.isUndefined(enablePageCache)) __obj.updateDynamic("enablePageCache")(enablePageCache)
+    if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (pageSettings != null) __obj.updateDynamic("pageSettings")(pageSettings)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (!js.isUndefined(printMode)) __obj.updateDynamic("printMode")(printMode)
+    if (printOptions != null) __obj.updateDynamic("printOptions")(printOptions.asInstanceOf[js.Any])
+    if (processingMode != null) __obj.updateDynamic("processingMode")(processingMode.asInstanceOf[js.Any])
+    if (renderMode != null) __obj.updateDynamic("renderMode")(renderMode.asInstanceOf[js.Any])
+    if (renderingBegin != null) __obj.updateDynamic("renderingBegin")(renderingBegin)
+    if (renderingComplete != null) __obj.updateDynamic("renderingComplete")(renderingComplete)
+    if (reportError != null) __obj.updateDynamic("reportError")(reportError)
+    if (reportExport != null) __obj.updateDynamic("reportExport")(reportExport)
+    if (reportLoaded != null) __obj.updateDynamic("reportLoaded")(reportLoaded)
+    if (reportPath != null) __obj.updateDynamic("reportPath")(reportPath)
+    if (reportServerUrl != null) __obj.updateDynamic("reportServerUrl")(reportServerUrl)
+    if (reportServiceUrl != null) __obj.updateDynamic("reportServiceUrl")(reportServiceUrl)
+    if (serviceAuthorizationToken != null) __obj.updateDynamic("serviceAuthorizationToken")(serviceAuthorizationToken)
+    if (showError != null) __obj.updateDynamic("showError")(showError)
+    if (toolbarRendering != null) __obj.updateDynamic("toolbarRendering")(toolbarRendering)
+    if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings)
+    if (viewReportClick != null) __obj.updateDynamic("viewReportClick")(viewReportClick)
+    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

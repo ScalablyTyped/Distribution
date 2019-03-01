@@ -171,3 +171,100 @@ trait CreativeAsset extends js.Object {
   var zipFilesize: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreativeAsset {
+  @scala.inline
+  def apply(
+    actionScript3: js.UndefOr[scala.Boolean] = js.undefined,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    alignment: java.lang.String = null,
+    artworkType: java.lang.String = null,
+    assetIdentifier: CreativeAssetId = null,
+    backupImageExit: CreativeCustomEvent = null,
+    bitRate: scala.Int | scala.Double = null,
+    childAssetType: java.lang.String = null,
+    collapsedSize: Size = null,
+    companionCreativeIds: js.Array[java.lang.String] = null,
+    customStartTimeValue: scala.Int | scala.Double = null,
+    detectedFeatures: js.Array[java.lang.String] = null,
+    displayType: java.lang.String = null,
+    duration: scala.Int | scala.Double = null,
+    durationType: java.lang.String = null,
+    expandedDimension: Size = null,
+    fileSize: java.lang.String = null,
+    flashVersion: scala.Int | scala.Double = null,
+    hideFlashObjects: js.UndefOr[scala.Boolean] = js.undefined,
+    hideSelectionBoxes: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontallyLocked: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    idDimensionValue: DimensionValue = null,
+    mimeType: java.lang.String = null,
+    offset: OffsetPosition = null,
+    originalBackup: js.UndefOr[scala.Boolean] = js.undefined,
+    position: OffsetPosition = null,
+    positionLeftUnit: java.lang.String = null,
+    positionTopUnit: java.lang.String = null,
+    progressiveServingUrl: java.lang.String = null,
+    pushdown: js.UndefOr[scala.Boolean] = js.undefined,
+    pushdownDuration: scala.Int | scala.Double = null,
+    role: java.lang.String = null,
+    size: Size = null,
+    sslCompliant: js.UndefOr[scala.Boolean] = js.undefined,
+    startTimeType: java.lang.String = null,
+    streamingServingUrl: java.lang.String = null,
+    transparency: js.UndefOr[scala.Boolean] = js.undefined,
+    verticallyLocked: js.UndefOr[scala.Boolean] = js.undefined,
+    videoDuration: scala.Int | scala.Double = null,
+    windowMode: java.lang.String = null,
+    zIndex: scala.Int | scala.Double = null,
+    zipFilename: java.lang.String = null,
+    zipFilesize: java.lang.String = null
+  ): CreativeAsset = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(actionScript3)) __obj.updateDynamic("actionScript3")(actionScript3)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (artworkType != null) __obj.updateDynamic("artworkType")(artworkType)
+    if (assetIdentifier != null) __obj.updateDynamic("assetIdentifier")(assetIdentifier)
+    if (backupImageExit != null) __obj.updateDynamic("backupImageExit")(backupImageExit)
+    if (bitRate != null) __obj.updateDynamic("bitRate")(bitRate.asInstanceOf[js.Any])
+    if (childAssetType != null) __obj.updateDynamic("childAssetType")(childAssetType)
+    if (collapsedSize != null) __obj.updateDynamic("collapsedSize")(collapsedSize)
+    if (companionCreativeIds != null) __obj.updateDynamic("companionCreativeIds")(companionCreativeIds)
+    if (customStartTimeValue != null) __obj.updateDynamic("customStartTimeValue")(customStartTimeValue.asInstanceOf[js.Any])
+    if (detectedFeatures != null) __obj.updateDynamic("detectedFeatures")(detectedFeatures)
+    if (displayType != null) __obj.updateDynamic("displayType")(displayType)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (durationType != null) __obj.updateDynamic("durationType")(durationType)
+    if (expandedDimension != null) __obj.updateDynamic("expandedDimension")(expandedDimension)
+    if (fileSize != null) __obj.updateDynamic("fileSize")(fileSize)
+    if (flashVersion != null) __obj.updateDynamic("flashVersion")(flashVersion.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideFlashObjects)) __obj.updateDynamic("hideFlashObjects")(hideFlashObjects)
+    if (!js.isUndefined(hideSelectionBoxes)) __obj.updateDynamic("hideSelectionBoxes")(hideSelectionBoxes)
+    if (!js.isUndefined(horizontallyLocked)) __obj.updateDynamic("horizontallyLocked")(horizontallyLocked)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (!js.isUndefined(originalBackup)) __obj.updateDynamic("originalBackup")(originalBackup)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (positionLeftUnit != null) __obj.updateDynamic("positionLeftUnit")(positionLeftUnit)
+    if (positionTopUnit != null) __obj.updateDynamic("positionTopUnit")(positionTopUnit)
+    if (progressiveServingUrl != null) __obj.updateDynamic("progressiveServingUrl")(progressiveServingUrl)
+    if (!js.isUndefined(pushdown)) __obj.updateDynamic("pushdown")(pushdown)
+    if (pushdownDuration != null) __obj.updateDynamic("pushdownDuration")(pushdownDuration.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant)
+    if (startTimeType != null) __obj.updateDynamic("startTimeType")(startTimeType)
+    if (streamingServingUrl != null) __obj.updateDynamic("streamingServingUrl")(streamingServingUrl)
+    if (!js.isUndefined(transparency)) __obj.updateDynamic("transparency")(transparency)
+    if (!js.isUndefined(verticallyLocked)) __obj.updateDynamic("verticallyLocked")(verticallyLocked)
+    if (videoDuration != null) __obj.updateDynamic("videoDuration")(videoDuration.asInstanceOf[js.Any])
+    if (windowMode != null) __obj.updateDynamic("windowMode")(windowMode)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    if (zipFilename != null) __obj.updateDynamic("zipFilename")(zipFilename)
+    if (zipFilesize != null) __obj.updateDynamic("zipFilesize")(zipFilesize)
+    __obj.asInstanceOf[CreativeAsset]
+  }
+}
+

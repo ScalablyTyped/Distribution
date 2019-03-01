@@ -34,3 +34,28 @@ trait XNumberingTypeInfo
   def hasNumberingType(NumberingIdentifier: java.lang.String): scala.Boolean
 }
 
+object XNumberingTypeInfo {
+  @scala.inline
+  def apply(
+    SupportedNumberingTypes: activexDashInteropLib.SafeArray[scala.Double],
+    acquire: js.Function0[scala.Unit],
+    getNumberingIdentifier: js.Function1[scala.Double, java.lang.String],
+    getNumberingType: js.Function1[java.lang.String, scala.Double],
+    getSupportedNumberingTypes: js.Function0[activexDashInteropLib.SafeArray[scala.Double]],
+    hasNumberingType: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XNumberingTypeInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SupportedNumberingTypes")(SupportedNumberingTypes)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getNumberingIdentifier")(getNumberingIdentifier)
+    __obj.updateDynamic("getNumberingType")(getNumberingType)
+    __obj.updateDynamic("getSupportedNumberingTypes")(getSupportedNumberingTypes)
+    __obj.updateDynamic("hasNumberingType")(hasNumberingType)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XNumberingTypeInfo]
+  }
+}
+

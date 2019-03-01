@@ -27,3 +27,20 @@ trait StringConfigOptions extends js.Object {
   var pattern: js.UndefOr[java.lang.String | stdLib.RegExp] = js.undefined
 }
 
+object StringConfigOptions {
+  @scala.inline
+  def apply(
+    allowedValues: js.Array[java.lang.String] = null,
+    maxLength: scala.Int | scala.Double = null,
+    minLength: scala.Int | scala.Double = null,
+    pattern: java.lang.String | stdLib.RegExp = null
+  ): StringConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (allowedValues != null) __obj.updateDynamic("allowedValues")(allowedValues)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StringConfigOptions]
+  }
+}
+

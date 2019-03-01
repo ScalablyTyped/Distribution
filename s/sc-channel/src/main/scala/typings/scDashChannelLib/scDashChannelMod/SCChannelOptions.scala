@@ -11,3 +11,18 @@ trait SCChannelOptions extends js.Object {
   var waitForAuth: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SCChannelOptions {
+  @scala.inline
+  def apply(
+    batch: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    waitForAuth: js.UndefOr[scala.Boolean] = js.undefined
+  ): SCChannelOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(batch)) __obj.updateDynamic("batch")(batch)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(waitForAuth)) __obj.updateDynamic("waitForAuth")(waitForAuth)
+    __obj.asInstanceOf[SCChannelOptions]
+  }
+}
+

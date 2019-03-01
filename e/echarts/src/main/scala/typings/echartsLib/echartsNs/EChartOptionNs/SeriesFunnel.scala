@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel
   */
-trait SeriesFunnel extends js.Object {
+trait SeriesFunnel extends Series {
   /**
     * Whether to enable animation.
     *
@@ -366,5 +366,74 @@ trait SeriesFunnel extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-funnel.type
     */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object SeriesFunnel {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    data: js.Array[scala.Double] | js.Array[js.Array[scala.Double]] | js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesFunnelNs.DataObject] = null,
+    datasetIndex: scala.Int | scala.Double = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelLabelLine = null,
+    funnelAlign: java.lang.String = null,
+    gap: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidthColor = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
+    labelLine: echartsLib.Anon_EmphasisLength = null,
+    legendHoverLink: js.UndefOr[scala.Boolean] = js.undefined,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    max: scala.Int | scala.Double = null,
+    maxSize: java.lang.String = null,
+    min: scala.Int | scala.Double = null,
+    minSize: java.lang.String = null,
+    name: java.lang.String = null,
+    seriesLayoutBy: java.lang.String = null,
+    sort: java.lang.String = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    `type`: java.lang.String = null
+  ): SeriesFunnel = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (datasetIndex != null) __obj.updateDynamic("datasetIndex")(datasetIndex.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (funnelAlign != null) __obj.updateDynamic("funnelAlign")(funnelAlign)
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (labelLine != null) __obj.updateDynamic("labelLine")(labelLine)
+    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink)
+    if (markArea != null) __obj.updateDynamic("markArea")(markArea)
+    if (markLine != null) __obj.updateDynamic("markLine")(markLine)
+    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize)
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (seriesLayoutBy != null) __obj.updateDynamic("seriesLayoutBy")(seriesLayoutBy)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SeriesFunnel]
+  }
 }
 

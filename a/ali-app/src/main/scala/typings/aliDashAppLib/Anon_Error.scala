@@ -16,3 +16,13 @@ trait Anon_Error extends js.Object {
   var errorMessage: java.lang.String
 }
 
+object Anon_Error {
+  @scala.inline
+  def apply(error: java.lang.String, errorMessage: java.lang.String): Anon_Error = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("errorMessage")(errorMessage)
+    __obj.asInstanceOf[Anon_Error]
+  }
+}
+

@@ -25,3 +25,18 @@ trait CreateLineRequest extends js.Object {
   var objectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateLineRequest {
+  @scala.inline
+  def apply(
+    elementProperties: PageElementProperties = null,
+    lineCategory: java.lang.String = null,
+    objectId: java.lang.String = null
+  ): CreateLineRequest = {
+    val __obj = js.Dynamic.literal()
+    if (elementProperties != null) __obj.updateDynamic("elementProperties")(elementProperties)
+    if (lineCategory != null) __obj.updateDynamic("lineCategory")(lineCategory)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    __obj.asInstanceOf[CreateLineRequest]
+  }
+}
+

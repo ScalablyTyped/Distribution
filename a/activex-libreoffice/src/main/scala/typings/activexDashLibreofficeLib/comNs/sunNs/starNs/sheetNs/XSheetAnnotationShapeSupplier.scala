@@ -18,3 +18,22 @@ trait XSheetAnnotationShapeSupplier
   def getAnnotationShape(): activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape
 }
 
+object XSheetAnnotationShapeSupplier {
+  @scala.inline
+  def apply(
+    AnnotationShape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape,
+    acquire: js.Function0[scala.Unit],
+    getAnnotationShape: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSheetAnnotationShapeSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AnnotationShape")(AnnotationShape)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getAnnotationShape")(getAnnotationShape)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSheetAnnotationShapeSupplier]
+  }
+}
+

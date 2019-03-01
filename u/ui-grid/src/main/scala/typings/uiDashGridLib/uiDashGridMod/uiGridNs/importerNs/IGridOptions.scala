@@ -120,3 +120,46 @@ trait IGridOptions[TEntity] extends js.Object {
   var importerShowMenu: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply[TEntity](
+    enableImporter: js.UndefOr[scala.Boolean] = js.undefined,
+    importerDataAddCallback: js.Function2[
+      /* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], 
+      /* newObjects */ js.Array[TEntity], 
+      scala.Unit
+    ] = null,
+    importerErrorCallback: js.Function4[
+      /* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], 
+      /* errorKey */ java.lang.String, 
+      /* consoleMessage */ java.lang.String, 
+      /* context */ js.Any, 
+      scala.Unit
+    ] = null,
+    importerHeaderFilter: js.Function1[/* displayName */ java.lang.String, java.lang.String] = null,
+    importerNewObject: angularLib.angularMod.Global.Function = null,
+    importerObjectCallback: js.Function2[
+      /* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], 
+      /* newObject */ TEntity, 
+      TEntity
+    ] = null,
+    importerProcessHeaders: js.Function2[
+      /* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], 
+      /* headerArray */ js.Array[java.lang.String], 
+      js.Array[java.lang.String]
+    ] = null,
+    importerShowMenu: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGridOptions[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableImporter)) __obj.updateDynamic("enableImporter")(enableImporter)
+    if (importerDataAddCallback != null) __obj.updateDynamic("importerDataAddCallback")(importerDataAddCallback)
+    if (importerErrorCallback != null) __obj.updateDynamic("importerErrorCallback")(importerErrorCallback)
+    if (importerHeaderFilter != null) __obj.updateDynamic("importerHeaderFilter")(importerHeaderFilter)
+    if (importerNewObject != null) __obj.updateDynamic("importerNewObject")(importerNewObject)
+    if (importerObjectCallback != null) __obj.updateDynamic("importerObjectCallback")(importerObjectCallback)
+    if (importerProcessHeaders != null) __obj.updateDynamic("importerProcessHeaders")(importerProcessHeaders)
+    if (!js.isUndefined(importerShowMenu)) __obj.updateDynamic("importerShowMenu")(importerShowMenu)
+    __obj.asInstanceOf[IGridOptions[TEntity]]
+  }
+}
+

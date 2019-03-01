@@ -10,3 +10,13 @@ trait ImageTabACTL extends js.Object {
   var num_plays: scala.Double
 }
 
+object ImageTabACTL {
+  @scala.inline
+  def apply(num_frames: scala.Double, num_plays: scala.Double): ImageTabACTL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("num_frames")(num_frames)
+    __obj.updateDynamic("num_plays")(num_plays)
+    __obj.asInstanceOf[ImageTabACTL]
+  }
+}
+

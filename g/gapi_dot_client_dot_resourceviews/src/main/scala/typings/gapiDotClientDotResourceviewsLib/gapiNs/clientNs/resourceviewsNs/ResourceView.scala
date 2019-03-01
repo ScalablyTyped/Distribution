@@ -32,3 +32,36 @@ trait ResourceView extends js.Object {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ResourceView {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    endpoints: js.Array[ServiceEndpoint] = null,
+    fingerprint: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    labels: js.Array[Label] = null,
+    name: java.lang.String = null,
+    network: java.lang.String = null,
+    resources: js.Array[java.lang.String] = null,
+    selfLink: java.lang.String = null,
+    size: scala.Int | scala.Double = null
+  ): ResourceView = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourceView]
+  }
+}
+

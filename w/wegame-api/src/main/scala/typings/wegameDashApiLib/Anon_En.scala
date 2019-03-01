@@ -31,3 +31,23 @@ trait Anon_En extends js.Object {
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_En {
+  @scala.inline
+  def apply(
+    style: wegameDashApiLib.wxNs.typesNs.ButtonStyle,
+    `type`: wegameDashApiLib.wxNs.typesNs.ButtonType,
+    image: java.lang.String = null,
+    lang: wegameDashApiLib.wegameDashApiLibStrings.en | wegameDashApiLib.wegameDashApiLibStrings.zh_CN | wegameDashApiLib.wegameDashApiLibStrings.zh_TW = null,
+    text: java.lang.String = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_En = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("style")(style)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (lang != null) __obj.updateDynamic("lang")(lang.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[Anon_En]
+  }
+}
+

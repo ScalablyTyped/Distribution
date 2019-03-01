@@ -12,3 +12,15 @@ trait BrokerExitInfo extends js.Object {
   var signal: java.lang.String
 }
 
+object BrokerExitInfo {
+  @scala.inline
+  def apply(code: scala.Double, id: scala.Double, pid: scala.Double, signal: java.lang.String): BrokerExitInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("pid")(pid)
+    __obj.updateDynamic("signal")(signal)
+    __obj.asInstanceOf[BrokerExitInfo]
+  }
+}
+

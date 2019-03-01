@@ -24,3 +24,20 @@ trait ClientConstructOpts extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientConstructOpts {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String = null,
+    apiKey: java.lang.String = null,
+    apiSecret: java.lang.String = null,
+    version: java.lang.String = null
+  ): ClientConstructOpts = {
+    val __obj = js.Dynamic.literal()
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    if (apiKey != null) __obj.updateDynamic("apiKey")(apiKey)
+    if (apiSecret != null) __obj.updateDynamic("apiSecret")(apiSecret)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[ClientConstructOpts]
+  }
+}
+

@@ -10,3 +10,16 @@ trait JSONPrettyProps
   var json: js.Object | java.lang.String
 }
 
+object JSONPrettyProps {
+  @scala.inline
+  def apply(
+    json: js.Object | java.lang.String,
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashJsonDashPrettyLib.JSONPretty] = null
+  ): JSONPrettyProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("json")(json.asInstanceOf[js.Any])
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    __obj.asInstanceOf[JSONPrettyProps]
+  }
+}
+

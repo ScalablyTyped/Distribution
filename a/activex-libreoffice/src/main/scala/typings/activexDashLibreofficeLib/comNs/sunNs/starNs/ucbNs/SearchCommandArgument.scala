@@ -16,3 +16,16 @@ trait SearchCommandArgument extends js.Object {
   var Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
 }
 
+object SearchCommandArgument {
+  @scala.inline
+  def apply(
+    Info: SearchInfo,
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+  ): SearchCommandArgument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Info")(Info)
+    __obj.updateDynamic("Properties")(Properties)
+    __obj.asInstanceOf[SearchCommandArgument]
+  }
+}
+

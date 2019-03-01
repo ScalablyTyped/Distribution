@@ -19,3 +19,34 @@ trait Wifi extends js.Object {
   var status: java.lang.String
 }
 
+object Wifi {
+  @scala.inline
+  def apply(
+    Interface: java.lang.String,
+    beacon: procfsDashStatsLib.Anon_Missed,
+    crypt: procfsDashStatsLib.Anon_Discardedpackets,
+    frag: procfsDashStatsLib.Anon_Discardedpackets,
+    level: procfsDashStatsLib.Anon_Quality,
+    link: procfsDashStatsLib.Anon_Quality,
+    misc: procfsDashStatsLib.Anon_Discardedpackets,
+    noise: procfsDashStatsLib.Anon_Quality,
+    nwid: procfsDashStatsLib.Anon_Discardedpackets,
+    retry: procfsDashStatsLib.Anon_Discardedpackets,
+    status: java.lang.String
+  ): Wifi = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Interface")(Interface)
+    __obj.updateDynamic("beacon")(beacon)
+    __obj.updateDynamic("crypt")(crypt)
+    __obj.updateDynamic("frag")(frag)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("misc")(misc)
+    __obj.updateDynamic("noise")(noise)
+    __obj.updateDynamic("nwid")(nwid)
+    __obj.updateDynamic("retry")(retry)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Wifi]
+  }
+}
+

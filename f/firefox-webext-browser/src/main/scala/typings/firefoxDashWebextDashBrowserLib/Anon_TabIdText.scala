@@ -21,3 +21,18 @@ trait Anon_TabIdText extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_TabIdText {
+  @scala.inline
+  def apply(
+    tabId: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    windowId: scala.Int | scala.Double = null
+  ): Anon_TabIdText = {
+    val __obj = js.Dynamic.literal()
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_TabIdText]
+  }
+}
+

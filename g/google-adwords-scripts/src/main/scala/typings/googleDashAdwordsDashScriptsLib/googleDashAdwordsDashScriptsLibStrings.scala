@@ -7,370 +7,376 @@ import scala.scalajs.js.annotation._
 
 object googleDashAdwordsDashScriptsLibStrings {
   @js.native
-  sealed trait ACTIVE extends js.Object
+  sealed trait ACTIVE extends TargetingStatus
   
   @js.native
-  sealed trait ADGROUP extends js.Object
+  sealed trait ADGROUP extends BiddingStrategySource
   
   @js.native
-  sealed trait ALL_TIME extends js.Object
+  sealed trait ALL_TIME extends DateRange
   
   @js.native
-  sealed trait APPROVED extends js.Object
+  sealed trait APPROVED
+    extends ApprovalStatus
+       with PolicyApprovalStatus
   
   @js.native
-  sealed trait APPROVED_LIMITED extends js.Object
+  sealed trait APPROVED_LIMITED extends PolicyApprovalStatus
   
   @js.native
-  sealed trait AUDIO extends js.Object
+  sealed trait AUDIO extends MediaType
   
   @js.native
-  sealed trait Airport extends js.Object
+  sealed trait Airport extends TargetType
   
   @js.native
-  sealed trait Android extends js.Object
+  sealed trait Android extends AppStore
   
   @js.native
-  sealed trait `Autonomous Community` extends js.Object
+  sealed trait `Autonomous Community` extends TargetType
   
   @js.native
-  sealed trait BROAD extends js.Object
+  sealed trait BROAD extends MatchType
   
   @js.native
-  sealed trait BUDGET_OPTIMIZER extends js.Object
+  sealed trait BUDGET_OPTIMIZER extends BiddingStrategyString
   
   @js.native
-  sealed trait Borough extends js.Object
+  sealed trait Borough extends TargetType
   
   @js.native
-  sealed trait CAMPAIGN extends js.Object
+  sealed trait CAMPAIGN extends BiddingStrategySource
   
   @js.native
-  sealed trait CONVERSION_OPTIMIZE extends js.Object
+  sealed trait CONVERSION_OPTIMIZE extends AdRotationType
   
   @js.native
-  sealed trait CONVERSION_OPTIMIZER extends js.Object
+  sealed trait CONVERSION_OPTIMIZER extends BiddingStrategyString
   
   @js.native
-  sealed trait CRITERION extends js.Object
+  sealed trait CRITERION extends BiddingStrategySource
   
   @js.native
-  sealed trait CRM_BASED extends js.Object
+  sealed trait CRM_BASED extends UserListType
   
   @js.native
-  sealed trait Canton extends js.Object
+  sealed trait Canton extends TargetType
   
   @js.native
-  sealed trait City extends js.Object
+  sealed trait City extends TargetType
   
   @js.native
-  sealed trait `City Region` extends js.Object
+  sealed trait `City Region` extends TargetType
   
   @js.native
-  sealed trait `Congressional District` extends js.Object
+  sealed trait `Congressional District` extends TargetType
   
   @js.native
-  sealed trait Country extends js.Object
+  sealed trait Country extends TargetType
   
   @js.native
-  sealed trait County extends js.Object
+  sealed trait County extends TargetType
   
   @js.native
-  sealed trait DISAPPROVED extends js.Object
+  sealed trait DISAPPROVED
+    extends ApprovalStatus
+       with PolicyApprovalStatus
   
   @js.native
-  sealed trait DYNAMIC_IMAGE extends js.Object
+  sealed trait DYNAMIC_IMAGE extends MediaType
   
   @js.native
-  sealed trait Department extends js.Object
+  sealed trait Department extends TargetType
   
   @js.native
-  sealed trait District extends js.Object
+  sealed trait District extends TargetType
   
   @js.native
-  sealed trait ELIGIBLE extends js.Object
+  sealed trait ELIGIBLE extends PolicyApprovalStatus
   
   @js.native
-  sealed trait EXACT extends js.Object
+  sealed trait EXACT extends MatchType
   
   @js.native
-  sealed trait EXPANDED_TEXT_AD extends js.Object
+  sealed trait EXPANDED_TEXT_AD extends AdType
   
   @js.native
-  sealed trait EXTERNAL_REMARKETING extends js.Object
+  sealed trait EXTERNAL_REMARKETING extends UserListType
   
   @js.native
-  sealed trait FAMILY_SAFE extends js.Object
+  sealed trait FAMILY_SAFE extends ApprovalStatus
   
   @js.native
-  sealed trait FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND extends js.Object
+  sealed trait FIFTY_THOUSAND_TO_ONE_HUNDRED_THOUSAND extends UserListSizeRange
   
   @js.native
-  sealed trait FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION extends js.Object
+  sealed trait FIVE_HUNDRED_THOUSAND_TO_ONE_MILLION extends UserListSizeRange
   
   @js.native
-  sealed trait FIVE_MILLION_TO_TEN_MILLION extends js.Object
+  sealed trait FIVE_MILLION_TO_TEN_MILLION extends UserListSizeRange
   
   @js.native
-  sealed trait FRIDAY extends js.Object
+  sealed trait FRIDAY extends DayOfWeekString
   
   @js.native
-  sealed trait Governorate extends js.Object
+  sealed trait Governorate extends TargetType
   
   @js.native
-  sealed trait ICON extends js.Object
+  sealed trait ICON extends MediaType
   
   @js.native
-  sealed trait IMAGE extends js.Object
+  sealed trait IMAGE extends MediaType
   
   @js.native
-  sealed trait IMAGE_AD extends js.Object
+  sealed trait IMAGE_AD extends AdType
   
   @js.native
-  sealed trait KILOMETERS extends js.Object
+  sealed trait KILOMETERS extends RadiusUnits
   
   @js.native
-  sealed trait LAST_14_DAYS extends js.Object
+  sealed trait LAST_14_DAYS extends DateRange
   
   @js.native
-  sealed trait LAST_30_DAYS extends js.Object
+  sealed trait LAST_30_DAYS extends DateRange
   
   @js.native
-  sealed trait LAST_7_DAYS extends js.Object
+  sealed trait LAST_7_DAYS extends DateRange
   
   @js.native
-  sealed trait LAST_BUSINESS_WEEK extends js.Object
+  sealed trait LAST_BUSINESS_WEEK extends DateRange
   
   @js.native
-  sealed trait LAST_MONTH extends js.Object
+  sealed trait LAST_MONTH extends DateRange
   
   @js.native
-  sealed trait LAST_WEEK extends js.Object
+  sealed trait LAST_WEEK extends DateRange
   
   @js.native
-  sealed trait LAST_WEEK_SUN_SAT extends js.Object
+  sealed trait LAST_WEEK_SUN_SAT extends DateRange
   
   @js.native
-  sealed trait LESS_THAN_FIVE_HUNDRED extends js.Object
+  sealed trait LESS_THAN_FIVE_HUNDRED extends UserListSizeRange
   
   @js.native
-  sealed trait LESS_THAN_ONE_THOUSAND extends js.Object
+  sealed trait LESS_THAN_ONE_THOUSAND extends UserListSizeRange
   
   @js.native
-  sealed trait LOGICAL extends js.Object
+  sealed trait LOGICAL extends UserListType
   
   @js.native
-  sealed trait MANUAL_CPC extends js.Object
+  sealed trait MANUAL_CPC extends BiddingStrategyString
   
   @js.native
-  sealed trait MANUAL_CPM extends js.Object
+  sealed trait MANUAL_CPM extends BiddingStrategyString
   
   @js.native
-  sealed trait MEDIA_BUNDLE extends js.Object
+  sealed trait MEDIA_BUNDLE extends MediaType
   
   @js.native
-  sealed trait MILES extends js.Object
+  sealed trait MILES extends RadiusUnits
   
   @js.native
-  sealed trait MOBILE_AD extends js.Object
+  sealed trait MOBILE_AD extends AdType
   
   @js.native
-  sealed trait MOBILE_IMAGE_AD extends js.Object
+  sealed trait MOBILE_IMAGE_AD extends AdType
   
   @js.native
-  sealed trait MONDAY extends js.Object
+  sealed trait MONDAY extends DayOfWeekString
   
   @js.native
-  sealed trait Municipality extends js.Object
+  sealed trait Municipality extends TargetType
   
   @js.native
-  sealed trait NON_FAMILY_SAFE extends js.Object
+  sealed trait NON_FAMILY_SAFE extends ApprovalStatus
   
   @js.native
-  sealed trait `National Park` extends js.Object
+  sealed trait `National Park` extends TargetType
   
   @js.native
-  sealed trait Neighborhood extends js.Object
+  sealed trait Neighborhood extends TargetType
   
   @js.native
-  sealed trait OBSOLETE extends js.Object
+  sealed trait OBSOLETE extends TargetingStatus
   
   @js.native
-  sealed trait ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND extends js.Object
+  sealed trait ONE_HUNDRED_THOUSAND_TO_THREE_HUNDRED_THOUSAND extends UserListSizeRange
   
   @js.native
-  sealed trait ONE_MILLION_TO_TWO_MILLION extends js.Object
+  sealed trait ONE_MILLION_TO_TWO_MILLION extends UserListSizeRange
   
   @js.native
-  sealed trait ONE_THOUSAND_TO_TEN_THOUSAND extends js.Object
+  sealed trait ONE_THOUSAND_TO_TEN_THOUSAND extends UserListSizeRange
   
   @js.native
-  sealed trait OPTIMIZE extends js.Object
+  sealed trait OPTIMIZE extends AdRotationType
   
   @js.native
-  sealed trait OVER_FIFTY_MILLION extends js.Object
+  sealed trait OVER_FIFTY_MILLION extends UserListSizeRange
   
   @js.native
-  sealed trait Okrug extends js.Object
+  sealed trait Okrug extends TargetType
   
   @js.native
-  sealed trait PERCENT_CPA extends js.Object
+  sealed trait PERCENT_CPA extends BiddingStrategyString
   
   @js.native
-  sealed trait PHASING_OUT extends js.Object
+  sealed trait PHASING_OUT extends TargetingStatus
   
   @js.native
-  sealed trait PHRASE extends js.Object
+  sealed trait PHRASE extends MatchType
   
   @js.native
-  sealed trait PORN extends js.Object
+  sealed trait PORN extends ApprovalStatus
   
   @js.native
-  sealed trait PRODUCT_AD extends js.Object
+  sealed trait PRODUCT_AD extends AdType
   
   @js.native
-  sealed trait `Postal Code` extends js.Object
+  sealed trait `Postal Code` extends TargetType
   
   @js.native
-  sealed trait Prefecture extends js.Object
+  sealed trait Prefecture extends TargetType
   
   @js.native
-  sealed trait Province extends js.Object
+  sealed trait Province extends TargetType
   
   @js.native
-  sealed trait REMARKETING extends js.Object
+  sealed trait REMARKETING extends UserListType
   
   @js.native
-  sealed trait RICH_MEDIA_AD extends js.Object
+  sealed trait RICH_MEDIA_AD extends AdType
   
   @js.native
-  sealed trait ROTATE extends js.Object
+  sealed trait ROTATE extends AdRotationType
   
   @js.native
-  sealed trait ROTATE_FOREVER extends js.Object
+  sealed trait ROTATE_FOREVER extends AdRotationType
   
   @js.native
-  sealed trait RULE_BASED extends js.Object
+  sealed trait RULE_BASED extends UserListType
   
   @js.native
-  sealed trait Region extends js.Object
+  sealed trait Region extends TargetType
   
   @js.native
-  sealed trait SATURDAY extends js.Object
+  sealed trait SATURDAY extends DayOfWeekString
   
   @js.native
-  sealed trait SEARCH_OR_DISPLAY extends js.Object
+  sealed trait SEARCH_OR_DISPLAY extends CampaignType
   
   @js.native
-  sealed trait SHOPPING extends js.Object
+  sealed trait SHOPPING extends CampaignType
   
   @js.native
-  sealed trait SIMILAR extends js.Object
+  sealed trait SIMILAR extends UserListType
   
   @js.native
-  sealed trait SITE_SUSPENDED extends js.Object
+  sealed trait SITE_SUSPENDED extends PolicyApprovalStatus
   
   @js.native
-  sealed trait STANDARD_ICON extends js.Object
+  sealed trait STANDARD_ICON extends MediaType
   
   @js.native
-  sealed trait SUNDAY extends js.Object
+  sealed trait SUNDAY extends DayOfWeekString
   
   @js.native
-  sealed trait State extends js.Object
+  sealed trait State extends TargetType
   
   @js.native
-  sealed trait TARGET_ALL_FALSE extends js.Object
+  sealed trait TARGET_ALL_FALSE extends TargetingSetting
   
   @js.native
-  sealed trait TARGET_ALL_TRUE extends js.Object
+  sealed trait TARGET_ALL_TRUE extends TargetingSetting
   
   @js.native
-  sealed trait TEMPLATE_AD extends js.Object
+  sealed trait TEMPLATE_AD extends AdType
   
   @js.native
-  sealed trait TEN_MILLION_TO_TWENTY_MILLION extends js.Object
+  sealed trait TEN_MILLION_TO_TWENTY_MILLION extends UserListSizeRange
   
   @js.native
-  sealed trait TEN_THOUSAND_TO_FIFTY_THOUSAND extends js.Object
+  sealed trait TEN_THOUSAND_TO_FIFTY_THOUSAND extends UserListSizeRange
   
   @js.native
-  sealed trait TEXT_AD extends js.Object
+  sealed trait TEXT_AD extends AdType
   
   @js.native
-  sealed trait THIRTY_MILLION_TO_FIFTY_MILLION extends js.Object
+  sealed trait THIRTY_MILLION_TO_FIFTY_MILLION extends UserListSizeRange
   
   @js.native
-  sealed trait THIS_MONTH extends js.Object
+  sealed trait THIS_MONTH extends DateRange
   
   @js.native
-  sealed trait THIS_WEEK_SUN_TODAY extends js.Object
+  sealed trait THIS_WEEK_SUN_TODAY extends DateRange
   
   @js.native
-  sealed trait THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND extends js.Object
+  sealed trait THREE_HUNDRED_THOUSAND_TO_FIVE_HUNDRED_THOUSAND extends UserListSizeRange
   
   @js.native
-  sealed trait THREE_MILLION_TO_FIVE_MILLION extends js.Object
+  sealed trait THREE_MILLION_TO_FIVE_MILLION extends UserListSizeRange
   
   @js.native
-  sealed trait THURSDAY extends js.Object
+  sealed trait THURSDAY extends DayOfWeekString
   
   @js.native
-  sealed trait TODAY extends js.Object
+  sealed trait TODAY extends DateRange
   
   @js.native
-  sealed trait TUESDAY extends js.Object
+  sealed trait TUESDAY extends DayOfWeekString
   
   @js.native
-  sealed trait `TV Region` extends js.Object
+  sealed trait `TV Region` extends TargetType
   
   @js.native
-  sealed trait TWENTY_MILLION_TO_THIRTY_MILLION extends js.Object
+  sealed trait TWENTY_MILLION_TO_THIRTY_MILLION extends UserListSizeRange
   
   @js.native
-  sealed trait TWO_MILLION_TO_THREE_MILLION extends js.Object
+  sealed trait TWO_MILLION_TO_THREE_MILLION extends UserListSizeRange
   
   @js.native
-  sealed trait Territory extends js.Object
+  sealed trait Territory extends TargetType
   
   @js.native
-  sealed trait UNCHECKED extends js.Object
+  sealed trait UNCHECKED extends ApprovalStatus
   
   @js.native
-  sealed trait UNDER_REVIEW extends js.Object
+  sealed trait UNDER_REVIEW extends PolicyApprovalStatus
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN extends PolicyApprovalStatus
   
   @js.native
-  sealed trait UNKNOWN0 extends js.Object
+  sealed trait UNKNOWN0 extends UserListType
   
   @js.native
-  sealed trait USER_INTEREST extends js.Object
+  sealed trait USER_INTEREST extends AudienceType
   
   @js.native
   sealed trait USER_INTEREST_AND_LIST extends js.Object
   
   @js.native
-  sealed trait USER_LIST extends js.Object
+  sealed trait USER_LIST extends AudienceType
   
   @js.native
-  sealed trait `Union Territory` extends js.Object
+  sealed trait `Union Territory` extends TargetType
   
   @js.native
-  sealed trait University extends js.Object
+  sealed trait University extends TargetType
   
   @js.native
-  sealed trait VIDEO extends js.Object
+  sealed trait VIDEO
+    extends CampaignType
+       with MediaType
   
   @js.native
-  sealed trait WEDNESDAY extends js.Object
+  sealed trait WEDNESDAY extends DayOfWeekString
   
   @js.native
-  sealed trait YESTERDAY extends js.Object
+  sealed trait YESTERDAY extends DateRange
   
   @js.native
-  sealed trait iOS extends js.Object
+  sealed trait iOS extends AppStore
   
   @scala.inline
   def ACTIVE: ACTIVE = "ACTIVE".asInstanceOf[ACTIVE]

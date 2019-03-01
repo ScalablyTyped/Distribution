@@ -13,3 +13,22 @@ trait RelatedResources extends js.Object {
   var sale: js.UndefOr[SaleResource] = js.undefined
 }
 
+object RelatedResources {
+  @scala.inline
+  def apply(
+    authorization: AuthorizationResource = null,
+    capture: CaptureResource = null,
+    order: js.Any = null,
+    refund: RefundResource = null,
+    sale: SaleResource = null
+  ): RelatedResources = {
+    val __obj = js.Dynamic.literal()
+    if (authorization != null) __obj.updateDynamic("authorization")(authorization)
+    if (capture != null) __obj.updateDynamic("capture")(capture)
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (refund != null) __obj.updateDynamic("refund")(refund)
+    if (sale != null) __obj.updateDynamic("sale")(sale)
+    __obj.asInstanceOf[RelatedResources]
+  }
+}
+

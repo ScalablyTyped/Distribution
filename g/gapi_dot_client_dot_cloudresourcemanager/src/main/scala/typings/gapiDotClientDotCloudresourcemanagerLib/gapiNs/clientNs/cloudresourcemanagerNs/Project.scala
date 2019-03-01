@@ -76,3 +76,26 @@ trait Project extends js.Object {
   var projectNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Project {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    lifecycleState: java.lang.String = null,
+    name: java.lang.String = null,
+    parent: ResourceId = null,
+    projectId: java.lang.String = null,
+    projectNumber: java.lang.String = null
+  ): Project = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (lifecycleState != null) __obj.updateDynamic("lifecycleState")(lifecycleState)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber)
+    __obj.asInstanceOf[Project]
+  }
+}
+

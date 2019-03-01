@@ -25,3 +25,20 @@ trait XSystemDependentWindowPeer
   ): js.Any
 }
 
+object XSystemDependentWindowPeer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getWindowHandle: js.Function2[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], scala.Double, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSystemDependentWindowPeer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getWindowHandle")(getWindowHandle)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSystemDependentWindowPeer]
+  }
+}
+

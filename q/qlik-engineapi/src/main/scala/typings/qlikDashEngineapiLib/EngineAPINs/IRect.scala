@@ -31,3 +31,15 @@ trait IRect extends js.Object {
   var qWidth: scala.Double
 }
 
+object IRect {
+  @scala.inline
+  def apply(qHeight: scala.Double, qLeft: scala.Double, qTop: scala.Double, qWidth: scala.Double): IRect = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qHeight")(qHeight)
+    __obj.updateDynamic("qLeft")(qLeft)
+    __obj.updateDynamic("qTop")(qTop)
+    __obj.updateDynamic("qWidth")(qWidth)
+    __obj.asInstanceOf[IRect]
+  }
+}
+

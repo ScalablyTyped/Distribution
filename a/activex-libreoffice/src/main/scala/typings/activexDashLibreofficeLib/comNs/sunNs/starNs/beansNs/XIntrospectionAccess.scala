@@ -147,3 +147,54 @@ trait XIntrospectionAccess
   def queryAdapter(aInterfaceType: activexDashLibreofficeLib.`type`): activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object XIntrospectionAccess {
+  @scala.inline
+  def apply(
+    SuppliedMethodConcepts: scala.Double,
+    SuppliedPropertyConcepts: scala.Double,
+    SupportedListeners: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`],
+    acquire: js.Function0[scala.Unit],
+    getMethod: js.Function2[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod
+    ],
+    getMethods: js.Function1[
+      scala.Double, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.reflectionNs.XIdlMethod]
+    ],
+    getProperties: js.Function1[scala.Double, activexDashInteropLib.SafeArray[Property]],
+    getProperty: js.Function2[java.lang.String, scala.Double, Property],
+    getSuppliedMethodConcepts: js.Function0[scala.Double],
+    getSuppliedPropertyConcepts: js.Function0[scala.Double],
+    getSupportedListeners: js.Function0[activexDashInteropLib.SafeArray[activexDashLibreofficeLib.`type`]],
+    hasMethod: js.Function2[java.lang.String, scala.Double, scala.Boolean],
+    hasProperty: js.Function2[java.lang.String, scala.Double, scala.Boolean],
+    queryAdapter: js.Function1[
+      activexDashLibreofficeLib.`type`, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XIntrospectionAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SuppliedMethodConcepts")(SuppliedMethodConcepts)
+    __obj.updateDynamic("SuppliedPropertyConcepts")(SuppliedPropertyConcepts)
+    __obj.updateDynamic("SupportedListeners")(SupportedListeners)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMethod")(getMethod)
+    __obj.updateDynamic("getMethods")(getMethods)
+    __obj.updateDynamic("getProperties")(getProperties)
+    __obj.updateDynamic("getProperty")(getProperty)
+    __obj.updateDynamic("getSuppliedMethodConcepts")(getSuppliedMethodConcepts)
+    __obj.updateDynamic("getSuppliedPropertyConcepts")(getSuppliedPropertyConcepts)
+    __obj.updateDynamic("getSupportedListeners")(getSupportedListeners)
+    __obj.updateDynamic("hasMethod")(hasMethod)
+    __obj.updateDynamic("hasProperty")(hasProperty)
+    __obj.updateDynamic("queryAdapter")(queryAdapter)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XIntrospectionAccess]
+  }
+}
+

@@ -25,3 +25,22 @@ trait Anon_Groups extends js.Object {
   var urlBlocks: js.UndefOr[js.Array[Anon_Header]] = js.undefined
 }
 
+object Anon_Groups {
+  @scala.inline
+  def apply(
+    groups: js.Array[java.lang.String] = null,
+    localizedRuleName: java.lang.String = null,
+    ruleImpact: scala.Int | scala.Double = null,
+    summary: gapiDotClientDotPagespeedonlineLib.gapiNs.clientNs.pagespeedonlineNs.PagespeedApiFormatStringV2 = null,
+    urlBlocks: js.Array[Anon_Header] = null
+  ): Anon_Groups = {
+    val __obj = js.Dynamic.literal()
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (localizedRuleName != null) __obj.updateDynamic("localizedRuleName")(localizedRuleName)
+    if (ruleImpact != null) __obj.updateDynamic("ruleImpact")(ruleImpact.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (urlBlocks != null) __obj.updateDynamic("urlBlocks")(urlBlocks)
+    __obj.asInstanceOf[Anon_Groups]
+  }
+}
+

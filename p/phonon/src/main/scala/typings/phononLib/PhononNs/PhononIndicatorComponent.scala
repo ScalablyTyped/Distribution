@@ -10,3 +10,22 @@ trait PhononIndicatorComponent extends PhononDialogComponent {
   def open(): scala.Unit
 }
 
+object PhononIndicatorComponent {
+  @scala.inline
+  def apply(
+    close: js.Function0[scala.Unit],
+    on: js.Function2[
+      java.lang.String, 
+      js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit], 
+      PhononDialogComponent
+    ],
+    open: js.Function0[scala.Unit]
+  ): PhononIndicatorComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("open")(open)
+    __obj.asInstanceOf[PhononIndicatorComponent]
+  }
+}
+

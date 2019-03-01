@@ -24,3 +24,20 @@ trait DataFilteredEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DataFilteredEventUIParam {
+  @scala.inline
+  def apply(
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    expressions: js.Array[_] = null,
+    owner: js.Any = null
+  ): DataFilteredEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (expressions != null) __obj.updateDynamic("expressions")(expressions)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DataFilteredEventUIParam]
+  }
+}
+

@@ -13,3 +13,17 @@ trait AnalyticsResource extends js.Object {
   def list(request: gapiDotClientDotPartnersLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListAnalyticsResponse]
 }
 
+object AnalyticsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListAnalyticsResponse]
+    ]
+  ): AnalyticsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AnalyticsResource]
+  }
+}
+

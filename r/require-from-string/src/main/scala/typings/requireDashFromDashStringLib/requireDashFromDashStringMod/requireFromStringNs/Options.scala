@@ -18,3 +18,13 @@ trait Options extends js.Object {
   var prependPaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(appendPaths: js.Array[java.lang.String] = null, prependPaths: js.Array[java.lang.String] = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (appendPaths != null) __obj.updateDynamic("appendPaths")(appendPaths)
+    if (prependPaths != null) __obj.updateDynamic("prependPaths")(prependPaths)
+    __obj.asInstanceOf[Options]
+  }
+}
+

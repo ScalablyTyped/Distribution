@@ -32,3 +32,22 @@ trait TemplateSettings extends js.Object {
   var variable: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TemplateSettings {
+  @scala.inline
+  def apply(
+    escape: stdLib.RegExp = null,
+    evaluate: stdLib.RegExp = null,
+    imports: Dictionary[_] = null,
+    interpolate: stdLib.RegExp = null,
+    variable: java.lang.String = null
+  ): TemplateSettings = {
+    val __obj = js.Dynamic.literal()
+    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (evaluate != null) __obj.updateDynamic("evaluate")(evaluate)
+    if (imports != null) __obj.updateDynamic("imports")(imports)
+    if (interpolate != null) __obj.updateDynamic("interpolate")(interpolate)
+    if (variable != null) __obj.updateDynamic("variable")(variable)
+    __obj.asInstanceOf[TemplateSettings]
+  }
+}
+

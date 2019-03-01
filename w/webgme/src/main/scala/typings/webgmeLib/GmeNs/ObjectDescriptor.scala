@@ -29,3 +29,54 @@ trait ObjectDescriptor extends js.Object {
   var target: java.lang.String
 }
 
+object ObjectDescriptor {
+  @scala.inline
+  def apply(
+    childrenIds: js.Array[java.lang.String],
+    childrenNum: scala.Double,
+    dstObjId: java.lang.String,
+    dstPos: Pos2D,
+    id: java.lang.String,
+    isConnection: scala.Boolean,
+    name: java.lang.String,
+    parentId: java.lang.String,
+    pointers: webgmeLib.GmeCommonNs.Dictionary[webgmeLib.GmeCommonNs.Pointer],
+    position: scala.Double,
+    source: java.lang.String,
+    srcObjId: java.lang.String,
+    srcPos: Pos2D,
+    target: java.lang.String,
+    control: VisualizerControl = null,
+    dstSubCompId: java.lang.String = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    metaInfo: webgmeLib.GmeCommonNs.Dictionary[java.lang.String] = null,
+    preferencesHelper: PreferenceHelper = null,
+    reconnectable: js.UndefOr[scala.Boolean] = js.undefined,
+    srcSubCompId: java.lang.String = null
+  ): ObjectDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("childrenIds")(childrenIds)
+    __obj.updateDynamic("childrenNum")(childrenNum)
+    __obj.updateDynamic("dstObjId")(dstObjId)
+    __obj.updateDynamic("dstPos")(dstPos)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isConnection")(isConnection)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parentId")(parentId)
+    __obj.updateDynamic("pointers")(pointers)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("srcObjId")(srcObjId)
+    __obj.updateDynamic("srcPos")(srcPos)
+    __obj.updateDynamic("target")(target)
+    if (control != null) __obj.updateDynamic("control")(control)
+    if (dstSubCompId != null) __obj.updateDynamic("dstSubCompId")(dstSubCompId)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (metaInfo != null) __obj.updateDynamic("metaInfo")(metaInfo)
+    if (preferencesHelper != null) __obj.updateDynamic("preferencesHelper")(preferencesHelper)
+    if (!js.isUndefined(reconnectable)) __obj.updateDynamic("reconnectable")(reconnectable)
+    if (srcSubCompId != null) __obj.updateDynamic("srcSubCompId")(srcSubCompId)
+    __obj.asInstanceOf[ObjectDescriptor]
+  }
+}
+

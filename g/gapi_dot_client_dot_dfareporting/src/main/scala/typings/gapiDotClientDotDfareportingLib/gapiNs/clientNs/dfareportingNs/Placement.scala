@@ -133,3 +133,92 @@ trait Placement extends js.Object {
   var vpaidAdapterChoice: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Placement {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    adBlockingOptOut: js.UndefOr[scala.Boolean] = js.undefined,
+    advertiserId: java.lang.String = null,
+    advertiserIdDimensionValue: DimensionValue = null,
+    archived: js.UndefOr[scala.Boolean] = js.undefined,
+    campaignId: java.lang.String = null,
+    campaignIdDimensionValue: DimensionValue = null,
+    comment: java.lang.String = null,
+    compatibility: java.lang.String = null,
+    contentCategoryId: java.lang.String = null,
+    createInfo: LastModifiedInfo = null,
+    directorySiteId: java.lang.String = null,
+    directorySiteIdDimensionValue: DimensionValue = null,
+    externalId: java.lang.String = null,
+    id: java.lang.String = null,
+    idDimensionValue: DimensionValue = null,
+    keyName: java.lang.String = null,
+    kind: java.lang.String = null,
+    lastModifiedInfo: LastModifiedInfo = null,
+    lookbackConfiguration: LookbackConfiguration = null,
+    name: java.lang.String = null,
+    paymentApproved: js.UndefOr[scala.Boolean] = js.undefined,
+    paymentSource: java.lang.String = null,
+    placementGroupId: java.lang.String = null,
+    placementGroupIdDimensionValue: DimensionValue = null,
+    placementStrategyId: java.lang.String = null,
+    pricingSchedule: PricingSchedule = null,
+    primary: js.UndefOr[scala.Boolean] = js.undefined,
+    publisherUpdateInfo: LastModifiedInfo = null,
+    siteId: java.lang.String = null,
+    siteIdDimensionValue: DimensionValue = null,
+    size: Size = null,
+    sslRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    status: java.lang.String = null,
+    subaccountId: java.lang.String = null,
+    tagFormats: js.Array[java.lang.String] = null,
+    tagSetting: TagSetting = null,
+    videoActiveViewOptOut: js.UndefOr[scala.Boolean] = js.undefined,
+    videoSettings: VideoSettings = null,
+    vpaidAdapterChoice: java.lang.String = null
+  ): Placement = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (!js.isUndefined(adBlockingOptOut)) __obj.updateDynamic("adBlockingOptOut")(adBlockingOptOut)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
+    if (advertiserIdDimensionValue != null) __obj.updateDynamic("advertiserIdDimensionValue")(advertiserIdDimensionValue)
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived)
+    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId)
+    if (campaignIdDimensionValue != null) __obj.updateDynamic("campaignIdDimensionValue")(campaignIdDimensionValue)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility)
+    if (contentCategoryId != null) __obj.updateDynamic("contentCategoryId")(contentCategoryId)
+    if (createInfo != null) __obj.updateDynamic("createInfo")(createInfo)
+    if (directorySiteId != null) __obj.updateDynamic("directorySiteId")(directorySiteId)
+    if (directorySiteIdDimensionValue != null) __obj.updateDynamic("directorySiteIdDimensionValue")(directorySiteIdDimensionValue)
+    if (externalId != null) __obj.updateDynamic("externalId")(externalId)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (idDimensionValue != null) __obj.updateDynamic("idDimensionValue")(idDimensionValue)
+    if (keyName != null) __obj.updateDynamic("keyName")(keyName)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastModifiedInfo != null) __obj.updateDynamic("lastModifiedInfo")(lastModifiedInfo)
+    if (lookbackConfiguration != null) __obj.updateDynamic("lookbackConfiguration")(lookbackConfiguration)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(paymentApproved)) __obj.updateDynamic("paymentApproved")(paymentApproved)
+    if (paymentSource != null) __obj.updateDynamic("paymentSource")(paymentSource)
+    if (placementGroupId != null) __obj.updateDynamic("placementGroupId")(placementGroupId)
+    if (placementGroupIdDimensionValue != null) __obj.updateDynamic("placementGroupIdDimensionValue")(placementGroupIdDimensionValue)
+    if (placementStrategyId != null) __obj.updateDynamic("placementStrategyId")(placementStrategyId)
+    if (pricingSchedule != null) __obj.updateDynamic("pricingSchedule")(pricingSchedule)
+    if (!js.isUndefined(primary)) __obj.updateDynamic("primary")(primary)
+    if (publisherUpdateInfo != null) __obj.updateDynamic("publisherUpdateInfo")(publisherUpdateInfo)
+    if (siteId != null) __obj.updateDynamic("siteId")(siteId)
+    if (siteIdDimensionValue != null) __obj.updateDynamic("siteIdDimensionValue")(siteIdDimensionValue)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (subaccountId != null) __obj.updateDynamic("subaccountId")(subaccountId)
+    if (tagFormats != null) __obj.updateDynamic("tagFormats")(tagFormats)
+    if (tagSetting != null) __obj.updateDynamic("tagSetting")(tagSetting)
+    if (!js.isUndefined(videoActiveViewOptOut)) __obj.updateDynamic("videoActiveViewOptOut")(videoActiveViewOptOut)
+    if (videoSettings != null) __obj.updateDynamic("videoSettings")(videoSettings)
+    if (vpaidAdapterChoice != null) __obj.updateDynamic("vpaidAdapterChoice")(vpaidAdapterChoice)
+    __obj.asInstanceOf[Placement]
+  }
+}
+

@@ -24,3 +24,18 @@ trait Options extends js.Object {
   var tree: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreCase: js.UndefOr[scala.Boolean] = js.undefined,
+    tree: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    if (!js.isUndefined(tree)) __obj.updateDynamic("tree")(tree)
+    __obj.asInstanceOf[Options]
+  }
+}
+

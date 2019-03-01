@@ -64,3 +64,25 @@ trait graphql extends Integration {
   ] = js.undefined
 }
 
+object graphql {
+  @scala.inline
+  def apply(
+    collapse: js.UndefOr[scala.Boolean] = js.undefined,
+    depth: scala.Int | scala.Double = null,
+    service: java.lang.String = null,
+    signature: js.UndefOr[scala.Boolean] = js.undefined,
+    variables: js.Function1[
+      /* variables */ org.scalablytyped.runtime.StringDictionary[js.Any], 
+      org.scalablytyped.runtime.StringDictionary[_]
+    ] = null
+  ): graphql = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(collapse)) __obj.updateDynamic("collapse")(collapse)
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (!js.isUndefined(signature)) __obj.updateDynamic("signature")(signature)
+    if (variables != null) __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[graphql]
+  }
+}
+

@@ -208,3 +208,71 @@ trait IgQRCodeBarcode
   var xDimension: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgQRCodeBarcode {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igQRCodeBarcode
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    applicationIndicator: java.lang.String = null,
+    backingBrush: java.lang.String = null,
+    backingOutline: java.lang.String = null,
+    backingStrokeThickness: scala.Int | scala.Double = null,
+    barBrush: java.lang.String = null,
+    barsFillMode: java.lang.String = null,
+    data: java.lang.String = null,
+    dataChanged: DataChangedEvent = null,
+    eciHeaderDisplayMode: java.lang.String = null,
+    eciNumber: scala.Int | scala.Double = null,
+    encodingMode: java.lang.String = null,
+    errorCorrectionLevel: java.lang.String = null,
+    errorMessageDisplaying: ErrorMessageDisplayingEvent = null,
+    errorMessageText: java.lang.String = null,
+    fnc1Mode: java.lang.String = null,
+    font: java.lang.String = null,
+    fontBrush: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    pixelScalingRatio: scala.Int | scala.Double = null,
+    regional: java.lang.String | js.Object = null,
+    sizeVersion: java.lang.String = null,
+    stretch: java.lang.String = null,
+    width: java.lang.String | scala.Double = null,
+    widthToHeightRatio: scala.Int | scala.Double = null,
+    xDimension: scala.Int | scala.Double = null
+  ): IgQRCodeBarcode = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (applicationIndicator != null) __obj.updateDynamic("applicationIndicator")(applicationIndicator)
+    if (backingBrush != null) __obj.updateDynamic("backingBrush")(backingBrush)
+    if (backingOutline != null) __obj.updateDynamic("backingOutline")(backingOutline)
+    if (backingStrokeThickness != null) __obj.updateDynamic("backingStrokeThickness")(backingStrokeThickness.asInstanceOf[js.Any])
+    if (barBrush != null) __obj.updateDynamic("barBrush")(barBrush)
+    if (barsFillMode != null) __obj.updateDynamic("barsFillMode")(barsFillMode)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataChanged != null) __obj.updateDynamic("dataChanged")(dataChanged)
+    if (eciHeaderDisplayMode != null) __obj.updateDynamic("eciHeaderDisplayMode")(eciHeaderDisplayMode)
+    if (eciNumber != null) __obj.updateDynamic("eciNumber")(eciNumber.asInstanceOf[js.Any])
+    if (encodingMode != null) __obj.updateDynamic("encodingMode")(encodingMode)
+    if (errorCorrectionLevel != null) __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel)
+    if (errorMessageDisplaying != null) __obj.updateDynamic("errorMessageDisplaying")(errorMessageDisplaying)
+    if (errorMessageText != null) __obj.updateDynamic("errorMessageText")(errorMessageText)
+    if (fnc1Mode != null) __obj.updateDynamic("fnc1Mode")(fnc1Mode)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (fontBrush != null) __obj.updateDynamic("fontBrush")(fontBrush)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (pixelScalingRatio != null) __obj.updateDynamic("pixelScalingRatio")(pixelScalingRatio.asInstanceOf[js.Any])
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (sizeVersion != null) __obj.updateDynamic("sizeVersion")(sizeVersion)
+    if (stretch != null) __obj.updateDynamic("stretch")(stretch)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (widthToHeightRatio != null) __obj.updateDynamic("widthToHeightRatio")(widthToHeightRatio.asInstanceOf[js.Any])
+    if (xDimension != null) __obj.updateDynamic("xDimension")(xDimension.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgQRCodeBarcode]
+  }
+}
+

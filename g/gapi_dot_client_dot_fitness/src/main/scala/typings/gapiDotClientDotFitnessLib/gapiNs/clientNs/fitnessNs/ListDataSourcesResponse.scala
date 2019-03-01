@@ -10,3 +10,12 @@ trait ListDataSourcesResponse extends js.Object {
   var dataSource: js.UndefOr[js.Array[DataSource]] = js.undefined
 }
 
+object ListDataSourcesResponse {
+  @scala.inline
+  def apply(dataSource: js.Array[DataSource] = null): ListDataSourcesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    __obj.asInstanceOf[ListDataSourcesResponse]
+  }
+}
+

@@ -16,3 +16,20 @@ trait Dataset extends js.Object {
   var projectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Dataset {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    projectId: java.lang.String = null
+  ): Dataset = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    __obj.asInstanceOf[Dataset]
+  }
+}
+

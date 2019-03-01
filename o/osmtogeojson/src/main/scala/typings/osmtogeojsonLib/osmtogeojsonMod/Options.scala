@@ -22,3 +22,20 @@ trait Options extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    flatProperties: js.UndefOr[scala.Boolean] = js.undefined,
+    polygonFeatures: js.Any | js.Function = null,
+    uninterestingTags: org.scalablytyped.runtime.StringDictionary[scala.Boolean] | js.Function = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(flatProperties)) __obj.updateDynamic("flatProperties")(flatProperties)
+    if (polygonFeatures != null) __obj.updateDynamic("polygonFeatures")(polygonFeatures.asInstanceOf[js.Any])
+    if (uninterestingTags != null) __obj.updateDynamic("uninterestingTags")(uninterestingTags.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[Options]
+  }
+}
+

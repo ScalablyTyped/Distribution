@@ -12,3 +12,20 @@ trait RegisterBufferProtocolRequest extends js.Object {
   var url: java.lang.String
 }
 
+object RegisterBufferProtocolRequest {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    referrer: java.lang.String,
+    uploadData: js.Array[UploadData],
+    url: java.lang.String
+  ): RegisterBufferProtocolRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("referrer")(referrer)
+    __obj.updateDynamic("uploadData")(uploadData)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[RegisterBufferProtocolRequest]
+  }
+}
+

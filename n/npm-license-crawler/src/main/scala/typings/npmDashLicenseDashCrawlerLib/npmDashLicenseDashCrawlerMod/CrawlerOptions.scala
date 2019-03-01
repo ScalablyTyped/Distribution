@@ -30,3 +30,34 @@ trait CrawlerOptions extends js.Object {
   var unknown: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CrawlerOptions {
+  @scala.inline
+  def apply(
+    start: java.lang.String | js.Array[java.lang.String],
+    csv: java.lang.String = null,
+    dependencies: js.UndefOr[scala.Boolean] = js.undefined,
+    development: js.UndefOr[scala.Boolean] = js.undefined,
+    exclude: java.lang.String | js.Array[java.lang.String] = null,
+    json: java.lang.String = null,
+    omitVersion: js.UndefOr[scala.Boolean] = js.undefined,
+    onlyDirectDependencies: js.UndefOr[scala.Boolean] = js.undefined,
+    production: js.UndefOr[scala.Boolean] = js.undefined,
+    relativeLicensePath: js.UndefOr[scala.Boolean] = js.undefined,
+    unknown: js.UndefOr[scala.Boolean] = js.undefined
+  ): CrawlerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (csv != null) __obj.updateDynamic("csv")(csv)
+    if (!js.isUndefined(dependencies)) __obj.updateDynamic("dependencies")(dependencies)
+    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (json != null) __obj.updateDynamic("json")(json)
+    if (!js.isUndefined(omitVersion)) __obj.updateDynamic("omitVersion")(omitVersion)
+    if (!js.isUndefined(onlyDirectDependencies)) __obj.updateDynamic("onlyDirectDependencies")(onlyDirectDependencies)
+    if (!js.isUndefined(production)) __obj.updateDynamic("production")(production)
+    if (!js.isUndefined(relativeLicensePath)) __obj.updateDynamic("relativeLicensePath")(relativeLicensePath)
+    if (!js.isUndefined(unknown)) __obj.updateDynamic("unknown")(unknown)
+    __obj.asInstanceOf[CrawlerOptions]
+  }
+}
+

@@ -15,3 +15,13 @@ trait GeoSpectrumSchedule extends js.Object {
   var spectrumSchedules: js.UndefOr[js.Array[SpectrumSchedule]] = js.undefined
 }
 
+object GeoSpectrumSchedule {
+  @scala.inline
+  def apply(location: GeoLocation = null, spectrumSchedules: js.Array[SpectrumSchedule] = null): GeoSpectrumSchedule = {
+    val __obj = js.Dynamic.literal()
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (spectrumSchedules != null) __obj.updateDynamic("spectrumSchedules")(spectrumSchedules)
+    __obj.asInstanceOf[GeoSpectrumSchedule]
+  }
+}
+

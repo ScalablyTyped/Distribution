@@ -54,3 +54,28 @@ trait Options extends js.Object {
   var v: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    channel: java.lang.String = null,
+    client: java.lang.String = null,
+    key: java.lang.String = null,
+    language: java.lang.String = null,
+    libraries: js.Array[java.lang.String] = null,
+    region: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    v: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (libraries != null) __obj.updateDynamic("libraries")(libraries)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (v != null) __obj.updateDynamic("v")(v)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -35,3 +35,22 @@ trait SearchRuleOptions extends js.Object {
   var query: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchRuleOptions {
+  @scala.inline
+  def apply(
+    anchoring: java.lang.String = null,
+    context: java.lang.String = null,
+    hitsPerPage: scala.Int | scala.Double = null,
+    page: scala.Int | scala.Double = null,
+    query: java.lang.String = null
+  ): SearchRuleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (anchoring != null) __obj.updateDynamic("anchoring")(anchoring)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (hitsPerPage != null) __obj.updateDynamic("hitsPerPage")(hitsPerPage.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[SearchRuleOptions]
+  }
+}
+

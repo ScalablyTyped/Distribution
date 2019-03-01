@@ -35,3 +35,36 @@ trait XFrames
   def remove(xFrame: XFrame): scala.Unit
 }
 
+object XFrames {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    append: js.Function1[XFrame, scala.Unit],
+    getByIndex: js.Function1[scala.Double, js.Any],
+    getCount: js.Function0[scala.Double],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasElements: js.Function0[scala.Boolean],
+    queryFrames: js.Function1[scala.Double, activexDashInteropLib.SafeArray[XFrame]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    remove: js.Function1[XFrame, scala.Unit]
+  ): XFrames = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("append")(append)
+    __obj.updateDynamic("getByIndex")(getByIndex)
+    __obj.updateDynamic("getCount")(getCount)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryFrames")(queryFrames)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[XFrames]
+  }
+}
+

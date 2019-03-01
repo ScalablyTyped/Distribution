@@ -25,3 +25,22 @@ trait XFormDocumentsSupplier
   def getFormDocuments(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XFormDocumentsSupplier {
+  @scala.inline
+  def apply(
+    FormDocuments: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getFormDocuments: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFormDocumentsSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FormDocuments")(FormDocuments)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFormDocuments")(getFormDocuments)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFormDocumentsSupplier]
+  }
+}
+

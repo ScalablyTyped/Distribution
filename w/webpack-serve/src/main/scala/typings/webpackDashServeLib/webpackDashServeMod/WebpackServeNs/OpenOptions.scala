@@ -12,3 +12,13 @@ trait OpenOptions extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OpenOptions {
+  @scala.inline
+  def apply(app: java.lang.String = null, path: java.lang.String = null): OpenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (app != null) __obj.updateDynamic("app")(app)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[OpenOptions]
+  }
+}
+

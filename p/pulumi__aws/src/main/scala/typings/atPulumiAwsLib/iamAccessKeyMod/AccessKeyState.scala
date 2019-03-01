@@ -45,3 +45,26 @@ trait AccessKeyState extends js.Object {
   val user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object AccessKeyState {
+  @scala.inline
+  def apply(
+    encryptedSecret: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    keyFingerprint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    pgpKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    secret: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sesSmtpPassword: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    user: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AccessKeyState = {
+    val __obj = js.Dynamic.literal()
+    if (encryptedSecret != null) __obj.updateDynamic("encryptedSecret")(encryptedSecret.asInstanceOf[js.Any])
+    if (keyFingerprint != null) __obj.updateDynamic("keyFingerprint")(keyFingerprint.asInstanceOf[js.Any])
+    if (pgpKey != null) __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
+    if (secret != null) __obj.updateDynamic("secret")(secret.asInstanceOf[js.Any])
+    if (sesSmtpPassword != null) __obj.updateDynamic("sesSmtpPassword")(sesSmtpPassword.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccessKeyState]
+  }
+}
+

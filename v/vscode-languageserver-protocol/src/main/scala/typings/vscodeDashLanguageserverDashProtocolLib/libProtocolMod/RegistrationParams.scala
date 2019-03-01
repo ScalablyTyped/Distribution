@@ -9,3 +9,12 @@ trait RegistrationParams extends js.Object {
   var registrations: js.Array[Registration]
 }
 
+object RegistrationParams {
+  @scala.inline
+  def apply(registrations: js.Array[Registration]): RegistrationParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("registrations")(registrations)
+    __obj.asInstanceOf[RegistrationParams]
+  }
+}
+

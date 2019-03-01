@@ -36,3 +36,25 @@ trait CommitObject extends js.Object {
   var updater: js.Array[java.lang.String]
 }
 
+object CommitObject {
+  @scala.inline
+  def apply(
+    _id: CommitHash,
+    message: java.lang.String,
+    parents: js.Array[CommitHash],
+    root: webgmeLib.CoreNs.ObjectHash,
+    time: scala.Double,
+    `type`: java.lang.String,
+    updater: js.Array[java.lang.String]
+  ): CommitObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_id")(_id)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("parents")(parents)
+    __obj.updateDynamic("root")(root)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("updater")(updater)
+    __obj.asInstanceOf[CommitObject]
+  }
+}
+

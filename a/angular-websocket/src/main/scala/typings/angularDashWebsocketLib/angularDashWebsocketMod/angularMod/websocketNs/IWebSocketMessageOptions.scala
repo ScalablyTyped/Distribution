@@ -16,3 +16,16 @@ trait IWebSocketMessageOptions extends js.Object {
   var filter: js.UndefOr[java.lang.String | stdLib.RegExp] = js.undefined
 }
 
+object IWebSocketMessageOptions {
+  @scala.inline
+  def apply(
+    autoApply: js.UndefOr[scala.Boolean] = js.undefined,
+    filter: java.lang.String | stdLib.RegExp = null
+  ): IWebSocketMessageOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoApply)) __obj.updateDynamic("autoApply")(autoApply)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IWebSocketMessageOptions]
+  }
+}
+

@@ -26,3 +26,30 @@ trait FindMarkerOptions extends js.Object {
   var startsInRange: js.UndefOr[RangeCompatible] = js.undefined
 }
 
+object FindMarkerOptions {
+  @scala.inline
+  def apply(
+    containsPoint: PointCompatible = null,
+    containsRange: RangeCompatible = null,
+    endPosition: PointCompatible = null,
+    endRow: scala.Int | scala.Double = null,
+    endsInRange: RangeCompatible = null,
+    intersectsRow: scala.Int | scala.Double = null,
+    startPosition: PointCompatible = null,
+    startRow: scala.Int | scala.Double = null,
+    startsInRange: RangeCompatible = null
+  ): FindMarkerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (containsPoint != null) __obj.updateDynamic("containsPoint")(containsPoint.asInstanceOf[js.Any])
+    if (containsRange != null) __obj.updateDynamic("containsRange")(containsRange.asInstanceOf[js.Any])
+    if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition.asInstanceOf[js.Any])
+    if (endRow != null) __obj.updateDynamic("endRow")(endRow.asInstanceOf[js.Any])
+    if (endsInRange != null) __obj.updateDynamic("endsInRange")(endsInRange.asInstanceOf[js.Any])
+    if (intersectsRow != null) __obj.updateDynamic("intersectsRow")(intersectsRow.asInstanceOf[js.Any])
+    if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition.asInstanceOf[js.Any])
+    if (startRow != null) __obj.updateDynamic("startRow")(startRow.asInstanceOf[js.Any])
+    if (startsInRange != null) __obj.updateDynamic("startsInRange")(startsInRange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FindMarkerOptions]
+  }
+}
+

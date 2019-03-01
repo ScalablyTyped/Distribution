@@ -878,15 +878,29 @@ object ShieldNs extends js.Object {
   
   trait UpdateSubscriptionResponse extends js.Object
   
+  trait _AttackLayer extends js.Object
+  
+  trait _AttackPropertyIdentifier extends js.Object
+  
+  trait _AutoRenew extends js.Object
+  
+  trait _SubResourceType extends js.Object
+  
+  trait _SubscriptionState extends js.Object
+  
+  trait _Unit extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AttackId = java.lang.String
-  type AttackLayer = awsDashSdkLib.awsDashSdkLibStrings.NETWORK | awsDashSdkLib.awsDashSdkLibStrings.APPLICATION | java.lang.String
+  type AttackLayer = _AttackLayer | java.lang.String
   type AttackProperties = js.Array[AttackProperty]
-  type AttackPropertyIdentifier = awsDashSdkLib.awsDashSdkLibStrings.DESTINATION_URL | awsDashSdkLib.awsDashSdkLibStrings.REFERRER | awsDashSdkLib.awsDashSdkLibStrings.SOURCE_ASN | awsDashSdkLib.awsDashSdkLibStrings.SOURCE_COUNTRY | awsDashSdkLib.awsDashSdkLibStrings.SOURCE_IP_ADDRESS | awsDashSdkLib.awsDashSdkLibStrings.SOURCE_USER_AGENT | java.lang.String
+  type AttackPropertyIdentifier = _AttackPropertyIdentifier | java.lang.String
   type AttackSummaries = js.Array[AttackSummary]
   type AttackTimestamp = stdLib.Date
   type AttackVectorDescriptionList = js.Array[AttackVectorDescription]
-  type AutoRenew = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type AutoRenew = _AutoRenew | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type Double = scala.Double
   type DurationInSeconds = scala.Double
@@ -907,14 +921,14 @@ object ShieldNs extends js.Object {
   type RoleArn = java.lang.String
   type String = java.lang.String
   type SubResourceSummaryList = js.Array[SubResourceSummary]
-  type SubResourceType = awsDashSdkLib.awsDashSdkLibStrings.IP | awsDashSdkLib.awsDashSdkLibStrings.URL | java.lang.String
-  type SubscriptionState = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
+  type SubResourceType = _SubResourceType | java.lang.String
+  type SubscriptionState = _SubscriptionState | java.lang.String
   type SummarizedAttackVectorList = js.Array[SummarizedAttackVector]
   type SummarizedCounterList = js.Array[SummarizedCounter]
   type Timestamp = stdLib.Date
   type Token = java.lang.String
   type TopContributors = js.Array[Contributor]
-  type Unit = awsDashSdkLib.awsDashSdkLibStrings.BITS | awsDashSdkLib.awsDashSdkLibStrings.BYTES | awsDashSdkLib.awsDashSdkLibStrings.PACKETS | awsDashSdkLib.awsDashSdkLibStrings.REQUESTS | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-06-02` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type Unit = _Unit | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

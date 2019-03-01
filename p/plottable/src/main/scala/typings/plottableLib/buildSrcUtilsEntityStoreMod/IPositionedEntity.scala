@@ -9,3 +9,12 @@ trait IPositionedEntity extends js.Object {
   var position: plottableLib.buildSrcCoreInterfacesMod.Point
 }
 
+object IPositionedEntity {
+  @scala.inline
+  def apply(position: plottableLib.buildSrcCoreInterfacesMod.Point): IPositionedEntity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[IPositionedEntity]
+  }
+}
+

@@ -12,3 +12,20 @@ trait YAMLWarning
   var source: yamlLib.yamlMod.cstNs.Node
 }
 
+object YAMLWarning {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    name: yamlLib.yamlLibStrings.YAMLReferenceError,
+    source: yamlLib.yamlMod.cstNs.Node,
+    stack: java.lang.String = null
+  ): YAMLWarning = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("source")(source)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[YAMLWarning]
+  }
+}
+

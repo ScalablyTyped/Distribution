@@ -28,3 +28,24 @@ trait ITokenBase
   var used: scala.Boolean
 }
 
+object ITokenBase {
+  @scala.inline
+  def apply(
+    client_ip: java.lang.String,
+    created: scala.Double,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    `object`: stripeLib.stripeLibStrings.token,
+    `type`: stripeLib.stripeLibStrings.card | stripeLib.stripeLibStrings.bank_account,
+    used: scala.Boolean
+  ): ITokenBase = {
+    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("client_ip")(client_ip)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("used")(used)
+    __obj.asInstanceOf[ITokenBase]
+  }
+}
+

@@ -28,3 +28,28 @@ trait Options extends js.Object {
   var strokeColor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    fillColor: java.lang.String = null,
+    lineCap: LineCap = null,
+    lineDash: js.Array[scala.Double] = null,
+    lineDashOffset: scala.Int | scala.Double = null,
+    lineJoin: LineJoin = null,
+    lineWidth: scala.Int | scala.Double = null,
+    miterLimit: scala.Int | scala.Double = null,
+    strokeColor: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (lineCap != null) __obj.updateDynamic("lineCap")(lineCap)
+    if (lineDash != null) __obj.updateDynamic("lineDash")(lineDash)
+    if (lineDashOffset != null) __obj.updateDynamic("lineDashOffset")(lineDashOffset.asInstanceOf[js.Any])
+    if (lineJoin != null) __obj.updateDynamic("lineJoin")(lineJoin)
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (miterLimit != null) __obj.updateDynamic("miterLimit")(miterLimit.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    __obj.asInstanceOf[Options]
+  }
+}
+

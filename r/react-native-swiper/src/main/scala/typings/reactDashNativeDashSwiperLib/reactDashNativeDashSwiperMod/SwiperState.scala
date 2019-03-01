@@ -17,3 +17,30 @@ trait SwiperState extends js.Object {
   var width: scala.Double
 }
 
+object SwiperState {
+  @scala.inline
+  def apply(
+    autoplayEnd: scala.Boolean,
+    dir: reactDashNativeDashSwiperLib.reactDashNativeDashSwiperLibStrings.x | reactDashNativeDashSwiperLib.reactDashNativeDashSwiperLibStrings.y,
+    height: scala.Double,
+    index: scala.Double,
+    isScrolling: scala.Boolean,
+    loopJump: scala.Boolean,
+    offset: reactDashNativeDashSwiperLib.Anon_X,
+    total: scala.Double,
+    width: scala.Double
+  ): SwiperState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoplayEnd")(autoplayEnd)
+    __obj.updateDynamic("dir")(dir.asInstanceOf[js.Any])
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("isScrolling")(isScrolling)
+    __obj.updateDynamic("loopJump")(loopJump)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("total")(total)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[SwiperState]
+  }
+}
+

@@ -12,3 +12,12 @@ trait WindowDraggingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object WindowDraggingEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null): WindowDraggingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[WindowDraggingEventUIParam]
+  }
+}
+

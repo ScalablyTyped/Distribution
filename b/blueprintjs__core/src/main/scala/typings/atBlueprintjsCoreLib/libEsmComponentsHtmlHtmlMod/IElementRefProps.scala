@@ -10,3 +10,12 @@ trait IElementRefProps[E /* <: reactLib.HTMLElement */] extends js.Object {
   var elementRef: js.UndefOr[js.Function1[/* ref */ E | scala.Null, scala.Unit]] = js.undefined
 }
 
+object IElementRefProps {
+  @scala.inline
+  def apply[E /* <: reactLib.HTMLElement */](elementRef: js.Function1[/* ref */ E | scala.Null, scala.Unit] = null): IElementRefProps[E] = {
+    val __obj = js.Dynamic.literal()
+    if (elementRef != null) __obj.updateDynamic("elementRef")(elementRef)
+    __obj.asInstanceOf[IElementRefProps[E]]
+  }
+}
+

@@ -20,3 +20,14 @@ trait DeleteNotificationRequest extends js.Object {
   var Notification: Notification
 }
 
+object DeleteNotificationRequest {
+  @scala.inline
+  def apply(AccountId: AccountId, BudgetName: BudgetName, Notification: Notification): DeleteNotificationRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccountId")(AccountId)
+    __obj.updateDynamic("BudgetName")(BudgetName)
+    __obj.updateDynamic("Notification")(Notification)
+    __obj.asInstanceOf[DeleteNotificationRequest]
+  }
+}
+

@@ -11,3 +11,14 @@ trait CancelToken extends js.Object {
   def throwIfRequested(): scala.Unit
 }
 
+object CancelToken {
+  @scala.inline
+  def apply(promise: js.Promise[Cancel], throwIfRequested: js.Function0[scala.Unit], reason: Cancel = null): CancelToken = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("promise")(promise)
+    __obj.updateDynamic("throwIfRequested")(throwIfRequested)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[CancelToken]
+  }
+}
+

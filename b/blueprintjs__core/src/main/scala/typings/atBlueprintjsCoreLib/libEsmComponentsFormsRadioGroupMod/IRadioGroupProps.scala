@@ -39,3 +39,28 @@ trait IRadioGroupProps
   def onChange(event: reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLInputElement]): scala.Unit
 }
 
+object IRadioGroupProps {
+  @scala.inline
+  def apply(
+    onChange: js.Function1[reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLInputElement], scala.Unit],
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null,
+    name: java.lang.String = null,
+    options: js.Array[atBlueprintjsCoreLib.libEsmCommonPropsMod.IOptionProps] = null,
+    selectedValue: java.lang.String | scala.Double = null
+  ): IRadioGroupProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onChange")(onChange)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (selectedValue != null) __obj.updateDynamic("selectedValue")(selectedValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IRadioGroupProps]
+  }
+}
+

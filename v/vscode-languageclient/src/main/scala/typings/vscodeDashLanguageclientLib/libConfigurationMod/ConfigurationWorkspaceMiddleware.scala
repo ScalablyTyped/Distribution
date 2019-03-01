@@ -11,3 +11,14 @@ trait ConfigurationWorkspaceMiddleware extends js.Object {
   ] = js.undefined
 }
 
+object ConfigurationWorkspaceMiddleware {
+  @scala.inline
+  def apply(
+    configuration: vscodeDashLanguageserverDashProtocolLib.libProtocolDotConfigurationMod.ConfigurationRequestNs.MiddlewareSignature = null
+  ): ConfigurationWorkspaceMiddleware = {
+    val __obj = js.Dynamic.literal()
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    __obj.asInstanceOf[ConfigurationWorkspaceMiddleware]
+  }
+}
+

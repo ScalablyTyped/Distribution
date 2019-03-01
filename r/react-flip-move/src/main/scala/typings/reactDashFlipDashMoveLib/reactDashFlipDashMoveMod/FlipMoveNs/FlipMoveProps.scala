@@ -219,3 +219,66 @@ trait FlipMoveProps extends js.Object {
   var verticalAlignment: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FlipMoveProps {
+  @scala.inline
+  def apply(
+    appearAnimation: AnimationProp = null,
+    className: java.lang.String = null,
+    delay: scala.Double | java.lang.String = null,
+    disableAllAnimations: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Double | java.lang.String = null,
+    easing: java.lang.String = null,
+    enterAnimation: AnimationProp = null,
+    getPosition: js.Function1[/* node */ reactLib.HTMLElement, stdLib.ClientRect] = null,
+    leaveAnimation: AnimationProp = null,
+    maintainContainerHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    onFinish: js.Function2[
+      /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
+      /* domNode */ reactLib.HTMLElement, 
+      scala.Unit
+    ] = null,
+    onFinishAll: js.Function2[
+      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
+      /* domNodes */ js.Array[reactLib.HTMLElement], 
+      scala.Unit
+    ] = null,
+    onStart: js.Function2[
+      /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
+      /* domNode */ reactLib.HTMLElement, 
+      scala.Unit
+    ] = null,
+    onStartAll: js.Function2[
+      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
+      /* domNodes */ js.Array[reactLib.HTMLElement], 
+      scala.Unit
+    ] = null,
+    staggerDelayBy: scala.Double | java.lang.String = null,
+    staggerDurationBy: scala.Double | java.lang.String = null,
+    style: Styles = null,
+    typeName: java.lang.String = null,
+    verticalAlignment: java.lang.String = null
+  ): FlipMoveProps = {
+    val __obj = js.Dynamic.literal()
+    if (appearAnimation != null) __obj.updateDynamic("appearAnimation")(appearAnimation.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAllAnimations)) __obj.updateDynamic("disableAllAnimations")(disableAllAnimations)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (enterAnimation != null) __obj.updateDynamic("enterAnimation")(enterAnimation.asInstanceOf[js.Any])
+    if (getPosition != null) __obj.updateDynamic("getPosition")(getPosition)
+    if (leaveAnimation != null) __obj.updateDynamic("leaveAnimation")(leaveAnimation.asInstanceOf[js.Any])
+    if (!js.isUndefined(maintainContainerHeight)) __obj.updateDynamic("maintainContainerHeight")(maintainContainerHeight)
+    if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish)
+    if (onFinishAll != null) __obj.updateDynamic("onFinishAll")(onFinishAll)
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onStartAll != null) __obj.updateDynamic("onStartAll")(onStartAll)
+    if (staggerDelayBy != null) __obj.updateDynamic("staggerDelayBy")(staggerDelayBy.asInstanceOf[js.Any])
+    if (staggerDurationBy != null) __obj.updateDynamic("staggerDurationBy")(staggerDurationBy.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (typeName != null) __obj.updateDynamic("typeName")(typeName)
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    __obj.asInstanceOf[FlipMoveProps]
+  }
+}
+

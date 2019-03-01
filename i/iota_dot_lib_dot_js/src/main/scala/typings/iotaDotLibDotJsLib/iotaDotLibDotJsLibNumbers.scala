@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object iotaDotLibDotJsLibNumbers {
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1` extends Security
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2` extends Security
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3` extends Security
   
   @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]

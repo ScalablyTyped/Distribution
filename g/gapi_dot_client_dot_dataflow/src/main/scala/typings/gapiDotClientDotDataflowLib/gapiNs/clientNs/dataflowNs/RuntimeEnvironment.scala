@@ -36,3 +36,24 @@ trait RuntimeEnvironment extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RuntimeEnvironment {
+  @scala.inline
+  def apply(
+    bypassTempDirValidation: js.UndefOr[scala.Boolean] = js.undefined,
+    machineType: java.lang.String = null,
+    maxWorkers: scala.Int | scala.Double = null,
+    serviceAccountEmail: java.lang.String = null,
+    tempLocation: java.lang.String = null,
+    zone: java.lang.String = null
+  ): RuntimeEnvironment = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bypassTempDirValidation)) __obj.updateDynamic("bypassTempDirValidation")(bypassTempDirValidation)
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
+    if (maxWorkers != null) __obj.updateDynamic("maxWorkers")(maxWorkers.asInstanceOf[js.Any])
+    if (serviceAccountEmail != null) __obj.updateDynamic("serviceAccountEmail")(serviceAccountEmail)
+    if (tempLocation != null) __obj.updateDynamic("tempLocation")(tempLocation)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[RuntimeEnvironment]
+  }
+}
+

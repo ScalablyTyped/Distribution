@@ -35,3 +35,30 @@ trait SelectEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SelectEventArgs {
+  @scala.inline
+  def apply(
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    element: js.Any = null,
+    event: js.Any = null,
+    id: java.lang.String = null,
+    index: scala.Int | scala.Double = null,
+    model: Model = null,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    status: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null
+  ): SelectEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SelectEventArgs]
+  }
+}
+

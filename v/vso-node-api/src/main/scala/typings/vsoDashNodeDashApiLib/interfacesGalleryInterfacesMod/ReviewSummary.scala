@@ -20,3 +20,18 @@ trait ReviewSummary extends js.Object {
   var ratingSplit: js.Array[RatingCountPerRating]
 }
 
+object ReviewSummary {
+  @scala.inline
+  def apply(
+    averageRating: scala.Double,
+    ratingCount: scala.Double,
+    ratingSplit: js.Array[RatingCountPerRating]
+  ): ReviewSummary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("averageRating")(averageRating)
+    __obj.updateDynamic("ratingCount")(ratingCount)
+    __obj.updateDynamic("ratingSplit")(ratingSplit)
+    __obj.asInstanceOf[ReviewSummary]
+  }
+}
+

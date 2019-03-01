@@ -11,3 +11,18 @@ trait ITemplateScopeOptions extends js.Object {
   var validation: js.Object
 }
 
+object ITemplateScopeOptions {
+  @scala.inline
+  def apply(
+    formControl: angularLib.angularMod.angularNs.IFormController | js.Array[angularLib.angularMod.angularNs.IFormController],
+    templateOptions: ITemplateOptions,
+    validation: js.Object
+  ): ITemplateScopeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("formControl")(formControl.asInstanceOf[js.Any])
+    __obj.updateDynamic("templateOptions")(templateOptions)
+    __obj.updateDynamic("validation")(validation)
+    __obj.asInstanceOf[ITemplateScopeOptions]
+  }
+}
+

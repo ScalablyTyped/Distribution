@@ -30,3 +30,30 @@ trait SplitChunksOptions extends js.Object {
   var name: js.UndefOr[scala.Boolean | java.lang.String | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
 }
 
+object SplitChunksOptions {
+  @scala.inline
+  def apply(
+    automaticNameDelimiter: java.lang.String = null,
+    cacheGroups: webpackLib.webpackLibNumbers.`false` | java.lang.String | (js.Function1[/* repeated */ js.Any, _]) | stdLib.RegExp | (org.scalablytyped.runtime.StringDictionary[CacheGroupsOptions | webpackLib.webpackLibNumbers.`false`]) = null,
+    chunks: webpackLib.webpackLibStrings.initial | webpackLib.webpackLibStrings.async | webpackLib.webpackLibStrings.all | (js.Function1[/* chunk */ webpackLib.webpackMod.webpackNs.compilationNs.Chunk, scala.Boolean]) = null,
+    maxAsyncRequests: scala.Int | scala.Double = null,
+    maxInitialRequests: scala.Int | scala.Double = null,
+    maxSize: scala.Int | scala.Double = null,
+    minChunks: scala.Int | scala.Double = null,
+    minSize: scala.Int | scala.Double = null,
+    name: scala.Boolean | java.lang.String | (js.Function1[/* repeated */ js.Any, _]) = null
+  ): SplitChunksOptions = {
+    val __obj = js.Dynamic.literal()
+    if (automaticNameDelimiter != null) __obj.updateDynamic("automaticNameDelimiter")(automaticNameDelimiter)
+    if (cacheGroups != null) __obj.updateDynamic("cacheGroups")(cacheGroups.asInstanceOf[js.Any])
+    if (chunks != null) __obj.updateDynamic("chunks")(chunks.asInstanceOf[js.Any])
+    if (maxAsyncRequests != null) __obj.updateDynamic("maxAsyncRequests")(maxAsyncRequests.asInstanceOf[js.Any])
+    if (maxInitialRequests != null) __obj.updateDynamic("maxInitialRequests")(maxInitialRequests.asInstanceOf[js.Any])
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (minChunks != null) __obj.updateDynamic("minChunks")(minChunks.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SplitChunksOptions]
+  }
+}
+

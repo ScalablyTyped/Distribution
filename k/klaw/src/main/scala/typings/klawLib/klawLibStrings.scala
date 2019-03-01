@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object klawLibStrings {
   @js.native
-  sealed trait close extends js.Object
+  sealed trait close
+    extends klawLib.klawMod.KNs.Event
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait data
+    extends klawLib.klawMod.KNs.Event
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends klawLib.klawMod.KNs.Event
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends klawLib.klawMod.KNs.Event
   
   @js.native
-  sealed trait pop extends js.Object
+  sealed trait pop
+    extends klawLib.klawMod.KNs.QueueMethod
   
   @js.native
-  sealed trait readable extends js.Object
+  sealed trait readable
+    extends klawLib.klawMod.KNs.Event
   
   @js.native
-  sealed trait shift extends js.Object
+  sealed trait shift
+    extends klawLib.klawMod.KNs.QueueMethod
   
   @scala.inline
   def close: close = "close".asInstanceOf[close]

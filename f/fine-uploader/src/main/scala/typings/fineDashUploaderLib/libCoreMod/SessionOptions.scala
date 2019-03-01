@@ -32,3 +32,20 @@ trait SessionOptions extends js.Object {
   var refreshOnReset: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SessionOptions {
+  @scala.inline
+  def apply(
+    customHeaders: js.Any = null,
+    endpoint: java.lang.String = null,
+    params: js.Any = null,
+    refreshOnReset: js.UndefOr[scala.Boolean] = js.undefined
+  ): SessionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (!js.isUndefined(refreshOnReset)) __obj.updateDynamic("refreshOnReset")(refreshOnReset)
+    __obj.asInstanceOf[SessionOptions]
+  }
+}
+

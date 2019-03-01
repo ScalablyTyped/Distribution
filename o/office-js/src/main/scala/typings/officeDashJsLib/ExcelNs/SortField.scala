@@ -60,3 +60,24 @@ trait SortField extends js.Object {
   ] = js.undefined
 }
 
+object SortField {
+  @scala.inline
+  def apply(
+    key: scala.Double,
+    ascending: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    dataOption: SortDataOption | officeDashJsLib.officeDashJsLibStrings.Normal | officeDashJsLib.officeDashJsLibStrings.TextAsNumber = null,
+    icon: Icon = null,
+    sortOn: SortOn | officeDashJsLib.officeDashJsLibStrings.Value | officeDashJsLib.officeDashJsLibStrings.CellColor | officeDashJsLib.officeDashJsLibStrings.FontColor | officeDashJsLib.officeDashJsLibStrings.Icon = null
+  ): SortField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (dataOption != null) __obj.updateDynamic("dataOption")(dataOption.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (sortOn != null) __obj.updateDynamic("sortOn")(sortOn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SortField]
+  }
+}
+

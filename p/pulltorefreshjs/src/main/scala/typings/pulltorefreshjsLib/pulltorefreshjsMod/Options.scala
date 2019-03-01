@@ -107,3 +107,50 @@ trait Options extends js.Object {
   var triggerElement: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    classPrefix: java.lang.String = null,
+    cssProp: java.lang.String = null,
+    distMax: scala.Int | scala.Double = null,
+    distReload: scala.Int | scala.Double = null,
+    distThreshold: scala.Int | scala.Double = null,
+    iconArrow: java.lang.String = null,
+    iconRefreshing: java.lang.String = null,
+    instructionsPullToRefresh: java.lang.String = null,
+    instructionsRefreshing: java.lang.String = null,
+    instructionsReleaseToRefresh: java.lang.String = null,
+    mainElement: java.lang.String = null,
+    onInit: js.Function0[scala.Unit] = null,
+    onRefresh: js.Function0[js.Thenable[scala.Unit]] | js.Function0[scala.Unit] = null,
+    passive: js.UndefOr[scala.Boolean] = js.undefined,
+    ptrElement: java.lang.String = null,
+    refreshTimeout: scala.Int | scala.Double = null,
+    resistanceFunction: js.Function1[/* input */ scala.Double, scala.Double] = null,
+    shouldPullToRefresh: js.Function0[scala.Boolean] = null,
+    triggerElement: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (classPrefix != null) __obj.updateDynamic("classPrefix")(classPrefix)
+    if (cssProp != null) __obj.updateDynamic("cssProp")(cssProp)
+    if (distMax != null) __obj.updateDynamic("distMax")(distMax.asInstanceOf[js.Any])
+    if (distReload != null) __obj.updateDynamic("distReload")(distReload.asInstanceOf[js.Any])
+    if (distThreshold != null) __obj.updateDynamic("distThreshold")(distThreshold.asInstanceOf[js.Any])
+    if (iconArrow != null) __obj.updateDynamic("iconArrow")(iconArrow)
+    if (iconRefreshing != null) __obj.updateDynamic("iconRefreshing")(iconRefreshing)
+    if (instructionsPullToRefresh != null) __obj.updateDynamic("instructionsPullToRefresh")(instructionsPullToRefresh)
+    if (instructionsRefreshing != null) __obj.updateDynamic("instructionsRefreshing")(instructionsRefreshing)
+    if (instructionsReleaseToRefresh != null) __obj.updateDynamic("instructionsReleaseToRefresh")(instructionsReleaseToRefresh)
+    if (mainElement != null) __obj.updateDynamic("mainElement")(mainElement)
+    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (onRefresh != null) __obj.updateDynamic("onRefresh")(onRefresh.asInstanceOf[js.Any])
+    if (!js.isUndefined(passive)) __obj.updateDynamic("passive")(passive)
+    if (ptrElement != null) __obj.updateDynamic("ptrElement")(ptrElement)
+    if (refreshTimeout != null) __obj.updateDynamic("refreshTimeout")(refreshTimeout.asInstanceOf[js.Any])
+    if (resistanceFunction != null) __obj.updateDynamic("resistanceFunction")(resistanceFunction)
+    if (shouldPullToRefresh != null) __obj.updateDynamic("shouldPullToRefresh")(shouldPullToRefresh)
+    if (triggerElement != null) __obj.updateDynamic("triggerElement")(triggerElement)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -16,3 +16,27 @@ trait Anon_Io extends js.Object {
   var value: js.Any
 }
 
+object Anon_Io {
+  @scala.inline
+  def apply(
+    io: scala.Double,
+    length: scala.Double,
+    name: java.lang.String,
+    precision: scala.Double,
+    scale: scala.Double,
+    tvpType: js.Any,
+    `type`: js.Function0[mssqlLib.mssqlMod.ISqlType] | mssqlLib.mssqlMod.ISqlType,
+    value: js.Any
+  ): Anon_Io = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("io")(io)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("precision")(precision)
+    __obj.updateDynamic("scale")(scale)
+    __obj.updateDynamic("tvpType")(tvpType)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Io]
+  }
+}
+

@@ -12,3 +12,13 @@ trait EnterpriseAccount extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EnterpriseAccount {
+  @scala.inline
+  def apply(accountEmail: java.lang.String = null, kind: java.lang.String = null): EnterpriseAccount = {
+    val __obj = js.Dynamic.literal()
+    if (accountEmail != null) __obj.updateDynamic("accountEmail")(accountEmail)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[EnterpriseAccount]
+  }
+}
+

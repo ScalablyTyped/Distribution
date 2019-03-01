@@ -20,3 +20,14 @@ trait IMessageOpts extends js.Object {
   var value: java.lang.String
 }
 
+object IMessageOpts {
+  @scala.inline
+  def apply(friendlyName: java.lang.String, property: java.lang.String, value: java.lang.String): IMessageOpts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("friendlyName")(friendlyName)
+    __obj.updateDynamic("property")(property)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IMessageOpts]
+  }
+}
+

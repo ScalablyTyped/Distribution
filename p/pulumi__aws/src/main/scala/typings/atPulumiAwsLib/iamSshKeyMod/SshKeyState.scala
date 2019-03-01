@@ -32,3 +32,24 @@ trait SshKeyState extends js.Object {
   val username: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object SshKeyState {
+  @scala.inline
+  def apply(
+    encoding: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    fingerprint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publicKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sshPublicKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    username: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): SshKeyState = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint.asInstanceOf[js.Any])
+    if (publicKey != null) __obj.updateDynamic("publicKey")(publicKey.asInstanceOf[js.Any])
+    if (sshPublicKeyId != null) __obj.updateDynamic("sshPublicKeyId")(sshPublicKeyId.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SshKeyState]
+  }
+}
+

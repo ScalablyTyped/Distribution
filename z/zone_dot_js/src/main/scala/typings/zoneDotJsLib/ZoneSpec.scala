@@ -161,3 +161,86 @@ trait ZoneSpec extends js.Object {
   var properties: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object ZoneSpec {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    onCancelTask: js.Function4[
+      /* parentZoneDelegate */ ZoneDelegate, 
+      /* currentZone */ Zone, 
+      /* targetZone */ Zone, 
+      /* task */ Task, 
+      _
+    ] = null,
+    onFork: js.Function4[
+      /* parentZoneDelegate */ ZoneDelegate, 
+      /* currentZone */ Zone, 
+      /* targetZone */ Zone, 
+      /* zoneSpec */ ZoneSpec, 
+      Zone
+    ] = null,
+    onHandleError: js.Function4[
+      /* parentZoneDelegate */ ZoneDelegate, 
+      /* currentZone */ Zone, 
+      /* targetZone */ Zone, 
+      /* error */ js.Any, 
+      scala.Boolean
+    ] = null,
+    onHasTask: js.Function4[
+      /* parentZoneDelegate */ ZoneDelegate, 
+      /* currentZone */ Zone, 
+      /* targetZone */ Zone, 
+      /* hasTaskState */ HasTaskState, 
+      scala.Unit
+    ] = null,
+    onIntercept: js.Function5[
+      /* parentZoneDelegate */ ZoneDelegate, 
+      /* currentZone */ Zone, 
+      /* targetZone */ Zone, 
+      /* delegate */ js.Function, 
+      /* source */ java.lang.String, 
+      js.Function
+    ] = null,
+    onInvoke: js.Function7[
+      /* parentZoneDelegate */ ZoneDelegate, 
+      /* currentZone */ Zone, 
+      /* targetZone */ Zone, 
+      /* delegate */ js.Function, 
+      /* applyThis */ js.Any, 
+      /* applyArgs */ js.UndefOr[js.Array[_]], 
+      /* source */ js.UndefOr[java.lang.String], 
+      _
+    ] = null,
+    onInvokeTask: js.Function6[
+      /* parentZoneDelegate */ ZoneDelegate, 
+      /* currentZone */ Zone, 
+      /* targetZone */ Zone, 
+      /* task */ Task, 
+      /* applyThis */ js.Any, 
+      /* applyArgs */ js.UndefOr[js.Array[_]], 
+      _
+    ] = null,
+    onScheduleTask: js.Function4[
+      /* parentZoneDelegate */ ZoneDelegate, 
+      /* currentZone */ Zone, 
+      /* targetZone */ Zone, 
+      /* task */ Task, 
+      Task
+    ] = null,
+    properties: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): ZoneSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (onCancelTask != null) __obj.updateDynamic("onCancelTask")(onCancelTask)
+    if (onFork != null) __obj.updateDynamic("onFork")(onFork)
+    if (onHandleError != null) __obj.updateDynamic("onHandleError")(onHandleError)
+    if (onHasTask != null) __obj.updateDynamic("onHasTask")(onHasTask)
+    if (onIntercept != null) __obj.updateDynamic("onIntercept")(onIntercept)
+    if (onInvoke != null) __obj.updateDynamic("onInvoke")(onInvoke)
+    if (onInvokeTask != null) __obj.updateDynamic("onInvokeTask")(onInvokeTask)
+    if (onScheduleTask != null) __obj.updateDynamic("onScheduleTask")(onScheduleTask)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[ZoneSpec]
+  }
+}
+

@@ -18,3 +18,20 @@ trait Anon_Fragment extends js.Object {
   var scope: java.lang.String
 }
 
+object Anon_Fragment {
+  @scala.inline
+  def apply(
+    scope: java.lang.String,
+    redirectUri: java.lang.String = null,
+    responseMode: auth0DashJsLib.auth0DashJsLibStrings.query | auth0DashJsLib.auth0DashJsLibStrings.fragment = null,
+    responseType: java.lang.String = null
+  ): Anon_Fragment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scope")(scope)
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    __obj.asInstanceOf[Anon_Fragment]
+  }
+}
+

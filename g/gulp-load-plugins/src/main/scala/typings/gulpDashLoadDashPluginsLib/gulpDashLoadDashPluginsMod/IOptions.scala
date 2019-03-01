@@ -22,3 +22,26 @@ trait IOptions extends js.Object {
   var scope: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object IOptions {
+  @scala.inline
+  def apply(
+    camelize: js.UndefOr[scala.Boolean] = js.undefined,
+    config: java.lang.String = null,
+    `lazy`: js.UndefOr[scala.Boolean] = js.undefined,
+    pattern: js.Array[java.lang.String] = null,
+    rename: IPluginNameMappings = null,
+    replaceString: stdLib.RegExp = null,
+    scope: js.Array[java.lang.String] = null
+  ): IOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(camelize)) __obj.updateDynamic("camelize")(camelize)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(`lazy`)) __obj.updateDynamic("lazy")(`lazy`)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (rename != null) __obj.updateDynamic("rename")(rename)
+    if (replaceString != null) __obj.updateDynamic("replaceString")(replaceString)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

@@ -20,3 +20,20 @@ trait DeveloperMetadataLocation extends js.Object {
   var spreadsheet: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DeveloperMetadataLocation {
+  @scala.inline
+  def apply(
+    dimensionRange: DimensionRange = null,
+    locationType: java.lang.String = null,
+    sheetId: scala.Int | scala.Double = null,
+    spreadsheet: js.UndefOr[scala.Boolean] = js.undefined
+  ): DeveloperMetadataLocation = {
+    val __obj = js.Dynamic.literal()
+    if (dimensionRange != null) __obj.updateDynamic("dimensionRange")(dimensionRange)
+    if (locationType != null) __obj.updateDynamic("locationType")(locationType)
+    if (sheetId != null) __obj.updateDynamic("sheetId")(sheetId.asInstanceOf[js.Any])
+    if (!js.isUndefined(spreadsheet)) __obj.updateDynamic("spreadsheet")(spreadsheet)
+    __obj.asInstanceOf[DeveloperMetadataLocation]
+  }
+}
+

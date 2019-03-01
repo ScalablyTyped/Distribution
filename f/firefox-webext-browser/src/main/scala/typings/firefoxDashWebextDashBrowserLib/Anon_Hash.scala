@@ -12,3 +12,16 @@ trait Anon_Hash extends js.Object {
   var url: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.HttpURL
 }
 
+object Anon_Hash {
+  @scala.inline
+  def apply(
+    url: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.HttpURL,
+    hash: java.lang.String = null
+  ): Anon_Hash = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    __obj.asInstanceOf[Anon_Hash]
+  }
+}
+

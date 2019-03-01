@@ -110,3 +110,54 @@ trait WorkerPool extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WorkerPool {
+  @scala.inline
+  def apply(
+    autoscalingSettings: AutoscalingSettings = null,
+    dataDisks: js.Array[Disk] = null,
+    defaultPackageSet: java.lang.String = null,
+    diskSizeGb: scala.Int | scala.Double = null,
+    diskSourceImage: java.lang.String = null,
+    diskType: java.lang.String = null,
+    ipConfiguration: java.lang.String = null,
+    kind: java.lang.String = null,
+    machineType: java.lang.String = null,
+    metadata: stdLib.Record[java.lang.String, java.lang.String] = null,
+    network: java.lang.String = null,
+    numThreadsPerWorker: scala.Int | scala.Double = null,
+    numWorkers: scala.Int | scala.Double = null,
+    onHostMaintenance: java.lang.String = null,
+    packages: js.Array[Package] = null,
+    poolArgs: stdLib.Record[java.lang.String, _] = null,
+    subnetwork: java.lang.String = null,
+    taskrunnerSettings: TaskRunnerSettings = null,
+    teardownPolicy: java.lang.String = null,
+    workerHarnessContainerImage: java.lang.String = null,
+    zone: java.lang.String = null
+  ): WorkerPool = {
+    val __obj = js.Dynamic.literal()
+    if (autoscalingSettings != null) __obj.updateDynamic("autoscalingSettings")(autoscalingSettings)
+    if (dataDisks != null) __obj.updateDynamic("dataDisks")(dataDisks)
+    if (defaultPackageSet != null) __obj.updateDynamic("defaultPackageSet")(defaultPackageSet)
+    if (diskSizeGb != null) __obj.updateDynamic("diskSizeGb")(diskSizeGb.asInstanceOf[js.Any])
+    if (diskSourceImage != null) __obj.updateDynamic("diskSourceImage")(diskSourceImage)
+    if (diskType != null) __obj.updateDynamic("diskType")(diskType)
+    if (ipConfiguration != null) __obj.updateDynamic("ipConfiguration")(ipConfiguration)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (numThreadsPerWorker != null) __obj.updateDynamic("numThreadsPerWorker")(numThreadsPerWorker.asInstanceOf[js.Any])
+    if (numWorkers != null) __obj.updateDynamic("numWorkers")(numWorkers.asInstanceOf[js.Any])
+    if (onHostMaintenance != null) __obj.updateDynamic("onHostMaintenance")(onHostMaintenance)
+    if (packages != null) __obj.updateDynamic("packages")(packages)
+    if (poolArgs != null) __obj.updateDynamic("poolArgs")(poolArgs)
+    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork)
+    if (taskrunnerSettings != null) __obj.updateDynamic("taskrunnerSettings")(taskrunnerSettings)
+    if (teardownPolicy != null) __obj.updateDynamic("teardownPolicy")(teardownPolicy)
+    if (workerHarnessContainerImage != null) __obj.updateDynamic("workerHarnessContainerImage")(workerHarnessContainerImage)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[WorkerPool]
+  }
+}
+

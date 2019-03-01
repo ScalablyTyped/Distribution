@@ -10,3 +10,13 @@ trait Anon_ResultSucceededBoolean extends js.Object {
   var succeeded: scala.Boolean
 }
 
+object Anon_ResultSucceededBoolean {
+  @scala.inline
+  def apply(result: winrtLib.WindowsNs.DataNs.JsonNs.JsonValue, succeeded: scala.Boolean): Anon_ResultSucceededBoolean = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("succeeded")(succeeded)
+    __obj.asInstanceOf[Anon_ResultSucceededBoolean]
+  }
+}
+

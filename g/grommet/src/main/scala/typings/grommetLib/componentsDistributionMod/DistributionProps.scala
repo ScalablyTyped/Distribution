@@ -22,3 +22,28 @@ trait DistributionProps extends js.Object {
   var values: js.Array[grommetLib.Anon_Value]
 }
 
+object DistributionProps {
+  @scala.inline
+  def apply(
+    values: js.Array[grommetLib.Anon_Value],
+    a11yTitle: java.lang.String = null,
+    alignSelf: grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.stretch = null,
+    children: js.Function1[/* repeated */ js.Any, _] = null,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    gap: grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String = null,
+    gridArea: java.lang.String = null,
+    margin: grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String = null
+  ): DistributionProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("values")(values)
+    if (a11yTitle != null) __obj.updateDynamic("a11yTitle")(a11yTitle)
+    if (alignSelf != null) __obj.updateDynamic("alignSelf")(alignSelf.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (gridArea != null) __obj.updateDynamic("gridArea")(gridArea)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DistributionProps]
+  }
+}
+

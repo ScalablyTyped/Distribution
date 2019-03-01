@@ -97,3 +97,44 @@ trait ZeroClipboardConfig extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ZeroClipboardConfig {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String = null,
+    autoActivate: js.UndefOr[scala.Boolean] = js.undefined,
+    bubbleEvents: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheBust: js.UndefOr[scala.Boolean] = js.undefined,
+    containerClass: java.lang.String = null,
+    containerId: java.lang.String = null,
+    fixLineEndings: js.UndefOr[scala.Boolean] = js.undefined,
+    flashLoadTimeout: scala.Int | scala.Double = null,
+    forceEnhancedClipboard: js.UndefOr[scala.Boolean] = js.undefined,
+    forceHandCursor: js.UndefOr[scala.Boolean] = js.undefined,
+    hoverClass: java.lang.String = null,
+    swfObjectId: java.lang.String = null,
+    swfPath: java.lang.String = null,
+    title: java.lang.String = null,
+    trustedDomains: js.Array[java.lang.String] = null,
+    zIndex: scala.Int | scala.Double = null
+  ): ZeroClipboardConfig = {
+    val __obj = js.Dynamic.literal()
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
+    if (!js.isUndefined(autoActivate)) __obj.updateDynamic("autoActivate")(autoActivate)
+    if (!js.isUndefined(bubbleEvents)) __obj.updateDynamic("bubbleEvents")(bubbleEvents)
+    if (!js.isUndefined(cacheBust)) __obj.updateDynamic("cacheBust")(cacheBust)
+    if (containerClass != null) __obj.updateDynamic("containerClass")(containerClass)
+    if (containerId != null) __obj.updateDynamic("containerId")(containerId)
+    if (!js.isUndefined(fixLineEndings)) __obj.updateDynamic("fixLineEndings")(fixLineEndings)
+    if (flashLoadTimeout != null) __obj.updateDynamic("flashLoadTimeout")(flashLoadTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceEnhancedClipboard)) __obj.updateDynamic("forceEnhancedClipboard")(forceEnhancedClipboard)
+    if (!js.isUndefined(forceHandCursor)) __obj.updateDynamic("forceHandCursor")(forceHandCursor)
+    if (hoverClass != null) __obj.updateDynamic("hoverClass")(hoverClass)
+    if (swfObjectId != null) __obj.updateDynamic("swfObjectId")(swfObjectId)
+    if (swfPath != null) __obj.updateDynamic("swfPath")(swfPath)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (trustedDomains != null) __obj.updateDynamic("trustedDomains")(trustedDomains)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ZeroClipboardConfig]
+  }
+}
+

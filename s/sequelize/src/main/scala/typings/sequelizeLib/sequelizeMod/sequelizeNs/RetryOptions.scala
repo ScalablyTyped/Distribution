@@ -21,3 +21,16 @@ trait RetryOptions extends js.Object {
   var max: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RetryOptions {
+  @scala.inline
+  def apply(
+    `match`: js.Array[java.lang.String | stdLib.RegExp | nodeLib.Error] = null,
+    max: scala.Int | scala.Double = null
+  ): RetryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RetryOptions]
+  }
+}
+

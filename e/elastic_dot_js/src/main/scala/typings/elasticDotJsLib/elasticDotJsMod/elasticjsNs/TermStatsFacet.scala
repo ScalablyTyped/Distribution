@@ -99,3 +99,46 @@ trait TermStatsFacet extends Facet {
   def valueScript(code: java.lang.String): TermStatsFacet
 }
 
+object TermStatsFacet {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    allTerms: js.Function1[java.lang.String, TermStatsFacet],
+    cacheFilter: js.Function1[scala.Boolean, TermStatsFacet],
+    facetFilter: js.Function1[js.Object, TermStatsFacet],
+    global: js.Function1[scala.Boolean, TermStatsFacet],
+    keyField: js.Function1[java.lang.String, TermStatsFacet],
+    lang: js.Function1[java.lang.String, TermStatsFacet],
+    mode: js.Function1[java.lang.String, TermStatsFacet],
+    nested: js.Function1[java.lang.String, TermStatsFacet],
+    order: js.Function1[java.lang.String, TermStatsFacet],
+    params: js.Function1[js.Object, TermStatsFacet],
+    scope: js.Function1[java.lang.String, TermStatsFacet],
+    scriptField: js.Function1[java.lang.String, TermStatsFacet],
+    size: js.Function1[scala.Double, TermStatsFacet],
+    toJSON: js.Function0[js.Any],
+    valueField: js.Function1[java.lang.String, TermStatsFacet],
+    valueScript: js.Function1[java.lang.String, TermStatsFacet]
+  ): TermStatsFacet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("allTerms")(allTerms)
+    __obj.updateDynamic("cacheFilter")(cacheFilter)
+    __obj.updateDynamic("facetFilter")(facetFilter)
+    __obj.updateDynamic("global")(global)
+    __obj.updateDynamic("keyField")(keyField)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("nested")(nested)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("scriptField")(scriptField)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("valueField")(valueField)
+    __obj.updateDynamic("valueScript")(valueScript)
+    __obj.asInstanceOf[TermStatsFacet]
+  }
+}
+

@@ -16,3 +16,16 @@ trait RouteTablePropagationArgs extends js.Object {
   val transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object RouteTablePropagationArgs {
+  @scala.inline
+  def apply(
+    transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): RouteTablePropagationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transitGatewayAttachmentId")(transitGatewayAttachmentId.asInstanceOf[js.Any])
+    __obj.updateDynamic("transitGatewayRouteTableId")(transitGatewayRouteTableId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteTablePropagationArgs]
+  }
+}
+

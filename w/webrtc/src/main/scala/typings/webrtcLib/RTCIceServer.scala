@@ -11,3 +11,12 @@ trait RTCIceServer extends js.Object {
   var credentialType: js.UndefOr[stdLib.RTCIceCredentialType] = js.undefined
 }
 
+object RTCIceServer {
+  @scala.inline
+  def apply(credentialType: stdLib.RTCIceCredentialType = null): RTCIceServer = {
+    val __obj = js.Dynamic.literal()
+    if (credentialType != null) __obj.updateDynamic("credentialType")(credentialType)
+    __obj.asInstanceOf[RTCIceServer]
+  }
+}
+

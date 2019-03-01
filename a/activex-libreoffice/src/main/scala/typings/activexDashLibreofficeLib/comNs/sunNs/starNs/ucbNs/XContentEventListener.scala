@@ -20,3 +20,22 @@ trait XContentEventListener
   def contentEvent(evt: ContentEvent): scala.Unit
 }
 
+object XContentEventListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    contentEvent: js.Function1[ContentEvent, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XContentEventListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("contentEvent")(contentEvent)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XContentEventListener]
+  }
+}
+

@@ -30,3 +30,28 @@ trait Anon_BuyLink extends js.Object {
   var saleability: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_BuyLink {
+  @scala.inline
+  def apply(
+    buyLink: java.lang.String = null,
+    country: java.lang.String = null,
+    isEbook: js.UndefOr[scala.Boolean] = js.undefined,
+    listPrice: Anon_Amount = null,
+    offers: js.Array[Anon_FinskyOfferType] = null,
+    onSaleDate: java.lang.String = null,
+    retailPrice: Anon_Amount = null,
+    saleability: java.lang.String = null
+  ): Anon_BuyLink = {
+    val __obj = js.Dynamic.literal()
+    if (buyLink != null) __obj.updateDynamic("buyLink")(buyLink)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (!js.isUndefined(isEbook)) __obj.updateDynamic("isEbook")(isEbook)
+    if (listPrice != null) __obj.updateDynamic("listPrice")(listPrice)
+    if (offers != null) __obj.updateDynamic("offers")(offers)
+    if (onSaleDate != null) __obj.updateDynamic("onSaleDate")(onSaleDate)
+    if (retailPrice != null) __obj.updateDynamic("retailPrice")(retailPrice)
+    if (saleability != null) __obj.updateDynamic("saleability")(saleability)
+    __obj.asInstanceOf[Anon_BuyLink]
+  }
+}
+

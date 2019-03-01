@@ -23,3 +23,31 @@ trait UVGenerator extends js.Object {
   ): js.Array[Vector2]
 }
 
+object UVGenerator {
+  @scala.inline
+  def apply(
+    generateSideWallUV: js.Function6[
+      ExtrudeBufferGeometry, 
+      js.Array[scala.Double], 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[Vector2]
+    ],
+    generateTopUV: js.Function5[
+      ExtrudeBufferGeometry, 
+      js.Array[scala.Double], 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      js.Array[Vector2]
+    ]
+  ): UVGenerator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("generateSideWallUV")(generateSideWallUV)
+    __obj.updateDynamic("generateTopUV")(generateTopUV)
+    __obj.asInstanceOf[UVGenerator]
+  }
+}
+

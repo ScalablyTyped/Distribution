@@ -12,3 +12,20 @@ trait INamedACLAdmin extends js.Object {
   def Clone(): INamedACLAdmin
 }
 
+object INamedACLAdmin {
+  @scala.inline
+  def apply(
+    AccessControlListForNamedACL: IAccessControlList,
+    Clone: js.Function0[INamedACLAdmin],
+    NamedACL: INamedACL,
+    SemanticAliases: ISemanticAliases
+  ): INamedACLAdmin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessControlListForNamedACL")(AccessControlListForNamedACL)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("NamedACL")(NamedACL)
+    __obj.updateDynamic("SemanticAliases")(SemanticAliases)
+    __obj.asInstanceOf[INamedACLAdmin]
+  }
+}
+

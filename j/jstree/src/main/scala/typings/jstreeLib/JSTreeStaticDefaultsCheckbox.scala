@@ -60,3 +60,28 @@ trait JSTreeStaticDefaultsCheckbox extends js.Object {
   var whole_node: scala.Boolean
 }
 
+object JSTreeStaticDefaultsCheckbox {
+  @scala.inline
+  def apply(
+    cascade: java.lang.String,
+    cascade_to_disabled: scala.Boolean,
+    cascade_to_hidden: scala.Boolean,
+    keep_selected_style: scala.Boolean,
+    three_state: scala.Boolean,
+    tie_selection: scala.Boolean,
+    visible: scala.Boolean,
+    whole_node: scala.Boolean
+  ): JSTreeStaticDefaultsCheckbox = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cascade")(cascade)
+    __obj.updateDynamic("cascade_to_disabled")(cascade_to_disabled)
+    __obj.updateDynamic("cascade_to_hidden")(cascade_to_hidden)
+    __obj.updateDynamic("keep_selected_style")(keep_selected_style)
+    __obj.updateDynamic("three_state")(three_state)
+    __obj.updateDynamic("tie_selection")(tie_selection)
+    __obj.updateDynamic("visible")(visible)
+    __obj.updateDynamic("whole_node")(whole_node)
+    __obj.asInstanceOf[JSTreeStaticDefaultsCheckbox]
+  }
+}
+

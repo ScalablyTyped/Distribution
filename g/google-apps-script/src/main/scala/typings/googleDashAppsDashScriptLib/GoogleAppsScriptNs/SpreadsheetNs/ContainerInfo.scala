@@ -12,3 +12,20 @@ trait ContainerInfo extends js.Object {
   def getOffsetY(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
 }
 
+object ContainerInfo {
+  @scala.inline
+  def apply(
+    getAnchorColumn: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getAnchorRow: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getOffsetX: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer],
+    getOffsetY: js.Function0[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer]
+  ): ContainerInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAnchorColumn")(getAnchorColumn)
+    __obj.updateDynamic("getAnchorRow")(getAnchorRow)
+    __obj.updateDynamic("getOffsetX")(getOffsetX)
+    __obj.updateDynamic("getOffsetY")(getOffsetY)
+    __obj.asInstanceOf[ContainerInfo]
+  }
+}
+

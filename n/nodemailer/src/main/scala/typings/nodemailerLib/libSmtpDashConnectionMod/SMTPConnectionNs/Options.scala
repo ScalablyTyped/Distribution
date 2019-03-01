@@ -46,3 +46,50 @@ trait Options extends js.Object {
   var transactionLog: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    auth: AuthenticationType = null,
+    authMethod: java.lang.String = null,
+    connection: nodeLib.netMod.Socket = null,
+    connectionTimeout: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.ms] = js.undefined,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    greetingTimeout: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.ms] = js.undefined,
+    host: java.lang.String = null,
+    ignoreTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    localAddress: java.lang.String = null,
+    logger: nodemailerLib.libSharedMod.Logger | scala.Boolean = null,
+    name: java.lang.String = null,
+    opportunisticTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Int | scala.Double = null,
+    requireTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    socket: nodeLib.netMod.Socket = null,
+    socketTimeout: js.UndefOr[nodemailerLib.libSmtpDashConnectionMod.ms] = js.undefined,
+    tls: nodeLib.tlsMod.ConnectionOptions = null,
+    transactionLog: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (!js.isUndefined(connectionTimeout)) __obj.updateDynamic("connectionTimeout")(connectionTimeout)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(greetingTimeout)) __obj.updateDynamic("greetingTimeout")(greetingTimeout)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(opportunisticTLS)) __obj.updateDynamic("opportunisticTLS")(opportunisticTLS)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(requireTLS)) __obj.updateDynamic("requireTLS")(requireTLS)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (!js.isUndefined(socketTimeout)) __obj.updateDynamic("socketTimeout")(socketTimeout)
+    if (tls != null) __obj.updateDynamic("tls")(tls)
+    if (!js.isUndefined(transactionLog)) __obj.updateDynamic("transactionLog")(transactionLog)
+    __obj.asInstanceOf[Options]
+  }
+}
+

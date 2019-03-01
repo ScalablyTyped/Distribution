@@ -12,3 +12,20 @@ trait ServerAddr
   var serviceName: java.lang.String
 }
 
+object ServerAddr {
+  @scala.inline
+  def apply(
+    annotationType: java.lang.String,
+    host: zipkinLib.zipkinMod.zipkinNs.InetAddress,
+    port: scala.Double,
+    serviceName: java.lang.String
+  ): ServerAddr = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotationType")(annotationType)
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("serviceName")(serviceName)
+    __obj.asInstanceOf[ServerAddr]
+  }
+}
+

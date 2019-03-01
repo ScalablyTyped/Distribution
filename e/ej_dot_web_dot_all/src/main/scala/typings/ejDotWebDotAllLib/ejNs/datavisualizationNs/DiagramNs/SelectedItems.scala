@@ -48,3 +48,32 @@ trait SelectedItems extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SelectedItems {
+  @scala.inline
+  def apply(
+    children: js.Array[_] = null,
+    constraints: SelectorConstraints | java.lang.String = null,
+    getConstraints: js.Any = null,
+    height: scala.Int | scala.Double = null,
+    offsetX: scala.Int | scala.Double = null,
+    offsetY: scala.Int | scala.Double = null,
+    rotateAngle: scala.Int | scala.Double = null,
+    tooltip: js.Any = null,
+    userHandles: js.Array[SelectedItemsUserHandle] = null,
+    width: scala.Int | scala.Double = null
+  ): SelectedItems = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints.asInstanceOf[js.Any])
+    if (getConstraints != null) __obj.updateDynamic("getConstraints")(getConstraints)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (offsetX != null) __obj.updateDynamic("offsetX")(offsetX.asInstanceOf[js.Any])
+    if (offsetY != null) __obj.updateDynamic("offsetY")(offsetY.asInstanceOf[js.Any])
+    if (rotateAngle != null) __obj.updateDynamic("rotateAngle")(rotateAngle.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (userHandles != null) __obj.updateDynamic("userHandles")(userHandles)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectedItems]
+  }
+}
+

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-sealed trait Constants extends js.Object
+sealed trait Constants extends LineStyle
 
 @JSGlobal("Excel.Constants")
 @js.native

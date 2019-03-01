@@ -11,3 +11,14 @@ trait URITemplateExpression extends js.Object {
   var variables: js.Array[URITemplateVariable]
 }
 
+object URITemplateExpression {
+  @scala.inline
+  def apply(expression: java.lang.String, operator: java.lang.String, variables: js.Array[URITemplateVariable]): URITemplateExpression = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expression")(expression)
+    __obj.updateDynamic("operator")(operator)
+    __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[URITemplateExpression]
+  }
+}
+

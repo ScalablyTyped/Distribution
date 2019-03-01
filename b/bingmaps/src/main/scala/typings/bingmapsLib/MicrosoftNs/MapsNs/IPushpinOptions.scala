@@ -39,3 +39,38 @@ trait IPushpinOptions extends IPrimitiveOptions {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IPushpinOptions {
+  @scala.inline
+  def apply(
+    anchor: Point = null,
+    color: java.lang.String | Color = null,
+    cursor: java.lang.String = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    enableClickedStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    enableHoverStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    roundClickableArea: js.UndefOr[scala.Boolean] = js.undefined,
+    subTitle: java.lang.String = null,
+    text: java.lang.String = null,
+    textOffset: Point = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): IPushpinOptions = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(enableClickedStyle)) __obj.updateDynamic("enableClickedStyle")(enableClickedStyle)
+    if (!js.isUndefined(enableHoverStyle)) __obj.updateDynamic("enableHoverStyle")(enableHoverStyle)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (!js.isUndefined(roundClickableArea)) __obj.updateDynamic("roundClickableArea")(roundClickableArea)
+    if (subTitle != null) __obj.updateDynamic("subTitle")(subTitle)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textOffset != null) __obj.updateDynamic("textOffset")(textOffset)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[IPushpinOptions]
+  }
+}
+

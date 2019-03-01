@@ -12,3 +12,15 @@ trait Rect extends js.Object {
   var qWdith: scala.Double
 }
 
+object Rect {
+  @scala.inline
+  def apply(qHeight: scala.Double, qLeft: scala.Double, qTop: scala.Double, qWdith: scala.Double): Rect = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qHeight")(qHeight)
+    __obj.updateDynamic("qLeft")(qLeft)
+    __obj.updateDynamic("qTop")(qTop)
+    __obj.updateDynamic("qWdith")(qWdith)
+    __obj.asInstanceOf[Rect]
+  }
+}
+

@@ -67,3 +67,57 @@ trait ProxyHandlerOptions extends js.Object {
   var xforward: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ProxyHandlerOptions {
+  @scala.inline
+  def apply(
+    acceptEncoding: js.UndefOr[scala.Boolean] = js.undefined,
+    agent: nodeLib.httpMod.Agent = null,
+    host: java.lang.String = null,
+    localStatePassThrough: js.UndefOr[scala.Boolean] = js.undefined,
+    mapUri: js.ThisFunction1[
+      /* this */ ProxyHandlerOptions, 
+      /* request */ hapiLib.hapiMod.Request, 
+      js.Promise[ProxyTarget]
+    ] = null,
+    maxSockets: h2o2Lib.h2o2LibNumbers.`false` | scala.Double = null,
+    onResponse: js.ThisFunction6[
+      /* this */ hapiLib.hapiMod.RouteOptions, 
+      /* err */ scala.Null | boomLib.boomMod.namespaced[_], 
+      /* res */ nodeLib.httpMod.IncomingMessage, 
+      /* req */ hapiLib.hapiMod.Request, 
+      /* h */ hapiLib.hapiMod.ResponseToolkit, 
+      /* settings */ ProxyHandlerOptions, 
+      /* ttl */ scala.Double, 
+      hapiLib.hapiMod.LifecycleNs.ReturnValue
+    ] = null,
+    passThrough: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Double | java.lang.String = null,
+    protocol: h2o2Lib.h2o2LibStrings.http | h2o2Lib.h2o2LibStrings.https = null,
+    redirects: scala.Double | h2o2Lib.h2o2LibNumbers.`false` = null,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    ttl: h2o2Lib.h2o2LibStrings.upstream = null,
+    uri: java.lang.String = null,
+    xforward: js.UndefOr[scala.Boolean] = js.undefined
+  ): ProxyHandlerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(acceptEncoding)) __obj.updateDynamic("acceptEncoding")(acceptEncoding)
+    if (agent != null) __obj.updateDynamic("agent")(agent)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(localStatePassThrough)) __obj.updateDynamic("localStatePassThrough")(localStatePassThrough)
+    if (mapUri != null) __obj.updateDynamic("mapUri")(mapUri)
+    if (maxSockets != null) __obj.updateDynamic("maxSockets")(maxSockets.asInstanceOf[js.Any])
+    if (onResponse != null) __obj.updateDynamic("onResponse")(onResponse)
+    if (!js.isUndefined(passThrough)) __obj.updateDynamic("passThrough")(passThrough)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (redirects != null) __obj.updateDynamic("redirects")(redirects.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (!js.isUndefined(xforward)) __obj.updateDynamic("xforward")(xforward)
+    __obj.asInstanceOf[ProxyHandlerOptions]
+  }
+}
+

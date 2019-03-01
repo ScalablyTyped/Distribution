@@ -9,3 +9,12 @@ trait Request extends js.Object {
   var cookieAuth: hapiDashAuthDashCookieLib.Anon_Clear
 }
 
+object Request {
+  @scala.inline
+  def apply(cookieAuth: hapiDashAuthDashCookieLib.Anon_Clear): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cookieAuth")(cookieAuth)
+    __obj.asInstanceOf[Request]
+  }
+}
+

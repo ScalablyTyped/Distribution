@@ -35,3 +35,22 @@ trait TranslateTextRequest extends js.Object {
   var target: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TranslateTextRequest {
+  @scala.inline
+  def apply(
+    format: java.lang.String = null,
+    model: java.lang.String = null,
+    q: js.Array[java.lang.String] = null,
+    source: java.lang.String = null,
+    target: java.lang.String = null
+  ): TranslateTextRequest = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (q != null) __obj.updateDynamic("q")(q)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[TranslateTextRequest]
+  }
+}
+

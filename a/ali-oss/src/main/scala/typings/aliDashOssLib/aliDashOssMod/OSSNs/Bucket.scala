@@ -12,3 +12,20 @@ trait Bucket extends js.Object {
   var region: java.lang.String
 }
 
+object Bucket {
+  @scala.inline
+  def apply(
+    StorageClass: StorageType,
+    creationDate: java.lang.String,
+    name: java.lang.String,
+    region: java.lang.String
+  ): Bucket = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("StorageClass")(StorageClass)
+    __obj.updateDynamic("creationDate")(creationDate)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("region")(region)
+    __obj.asInstanceOf[Bucket]
+  }
+}
+

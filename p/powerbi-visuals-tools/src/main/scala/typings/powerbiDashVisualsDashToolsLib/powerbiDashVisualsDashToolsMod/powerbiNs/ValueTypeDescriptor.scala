@@ -29,3 +29,44 @@ trait ValueTypeDescriptor extends js.Object {
   val variant: js.UndefOr[js.Array[ValueTypeDescriptor]] = js.undefined
 }
 
+object ValueTypeDescriptor {
+  @scala.inline
+  def apply(
+    binary: js.UndefOr[scala.Boolean] = js.undefined,
+    bool: js.UndefOr[scala.Boolean] = js.undefined,
+    dateTime: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: js.UndefOr[scala.Boolean] = js.undefined,
+    enumeration: IEnumType = null,
+    formatting: FormattingTypeDescriptor = null,
+    geography: GeographyTypeDescriptor = null,
+    integer: js.UndefOr[scala.Boolean] = js.undefined,
+    misc: MiscellaneousTypeDescriptor = null,
+    none: js.UndefOr[scala.Boolean] = js.undefined,
+    numeric: js.UndefOr[scala.Boolean] = js.undefined,
+    operations: OperationalTypeDescriptor = null,
+    scripting: ScriptTypeDescriptor = null,
+    temporal: TemporalTypeDescriptor = null,
+    text: js.UndefOr[scala.Boolean] = js.undefined,
+    variant: js.Array[ValueTypeDescriptor] = null
+  ): ValueTypeDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
+    if (!js.isUndefined(bool)) __obj.updateDynamic("bool")(bool)
+    if (!js.isUndefined(dateTime)) __obj.updateDynamic("dateTime")(dateTime)
+    if (!js.isUndefined(duration)) __obj.updateDynamic("duration")(duration)
+    if (enumeration != null) __obj.updateDynamic("enumeration")(enumeration)
+    if (formatting != null) __obj.updateDynamic("formatting")(formatting)
+    if (geography != null) __obj.updateDynamic("geography")(geography)
+    if (!js.isUndefined(integer)) __obj.updateDynamic("integer")(integer)
+    if (misc != null) __obj.updateDynamic("misc")(misc)
+    if (!js.isUndefined(none)) __obj.updateDynamic("none")(none)
+    if (!js.isUndefined(numeric)) __obj.updateDynamic("numeric")(numeric)
+    if (operations != null) __obj.updateDynamic("operations")(operations)
+    if (scripting != null) __obj.updateDynamic("scripting")(scripting)
+    if (temporal != null) __obj.updateDynamic("temporal")(temporal)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (variant != null) __obj.updateDynamic("variant")(variant)
+    __obj.asInstanceOf[ValueTypeDescriptor]
+  }
+}
+

@@ -78,3 +78,48 @@ trait ProviderArgs extends js.Object {
   val token: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ProviderArgs {
+  @scala.inline
+  def apply(
+    accessKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    allowedAccountIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    assumeRole: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ExternalIdPolicyRoleArn] = null,
+    endpoints: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcmApigateway]]] = null,
+    forbiddenAccountIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    insecure: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    maxRetries: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    profile: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    region: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.regionMod.Region] = null,
+    s3ForcePathStyle: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    secretKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sharedCredentialsFile: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    skipCredentialsValidation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    skipGetEc2Platforms: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    skipMetadataApiCheck: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    skipRegionValidation: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    skipRequestingAccountId: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    token: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ProviderArgs = {
+    val __obj = js.Dynamic.literal()
+    if (accessKey != null) __obj.updateDynamic("accessKey")(accessKey.asInstanceOf[js.Any])
+    if (allowedAccountIds != null) __obj.updateDynamic("allowedAccountIds")(allowedAccountIds.asInstanceOf[js.Any])
+    if (assumeRole != null) __obj.updateDynamic("assumeRole")(assumeRole.asInstanceOf[js.Any])
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints.asInstanceOf[js.Any])
+    if (forbiddenAccountIds != null) __obj.updateDynamic("forbiddenAccountIds")(forbiddenAccountIds.asInstanceOf[js.Any])
+    if (insecure != null) __obj.updateDynamic("insecure")(insecure.asInstanceOf[js.Any])
+    if (maxRetries != null) __obj.updateDynamic("maxRetries")(maxRetries.asInstanceOf[js.Any])
+    if (profile != null) __obj.updateDynamic("profile")(profile.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region.asInstanceOf[js.Any])
+    if (s3ForcePathStyle != null) __obj.updateDynamic("s3ForcePathStyle")(s3ForcePathStyle.asInstanceOf[js.Any])
+    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey.asInstanceOf[js.Any])
+    if (sharedCredentialsFile != null) __obj.updateDynamic("sharedCredentialsFile")(sharedCredentialsFile.asInstanceOf[js.Any])
+    if (skipCredentialsValidation != null) __obj.updateDynamic("skipCredentialsValidation")(skipCredentialsValidation.asInstanceOf[js.Any])
+    if (skipGetEc2Platforms != null) __obj.updateDynamic("skipGetEc2Platforms")(skipGetEc2Platforms.asInstanceOf[js.Any])
+    if (skipMetadataApiCheck != null) __obj.updateDynamic("skipMetadataApiCheck")(skipMetadataApiCheck.asInstanceOf[js.Any])
+    if (skipRegionValidation != null) __obj.updateDynamic("skipRegionValidation")(skipRegionValidation.asInstanceOf[js.Any])
+    if (skipRequestingAccountId != null) __obj.updateDynamic("skipRequestingAccountId")(skipRequestingAccountId.asInstanceOf[js.Any])
+    if (token != null) __obj.updateDynamic("token")(token.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProviderArgs]
+  }
+}
+

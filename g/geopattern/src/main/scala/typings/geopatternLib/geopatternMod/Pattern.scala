@@ -24,3 +24,24 @@ trait Pattern extends js.Object {
   def toSvg(): java.lang.String
 }
 
+object Pattern {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    toBase64: js.Function0[java.lang.String],
+    toDataUri: js.Function0[java.lang.String],
+    toDataUrl: js.Function0[java.lang.String],
+    toString: js.Function0[java.lang.String],
+    toSvg: js.Function0[java.lang.String]
+  ): Pattern = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("toBase64")(toBase64)
+    __obj.updateDynamic("toDataUri")(toDataUri)
+    __obj.updateDynamic("toDataUrl")(toDataUrl)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("toSvg")(toSvg)
+    __obj.asInstanceOf[Pattern]
+  }
+}
+

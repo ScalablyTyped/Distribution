@@ -12,3 +12,20 @@ trait IPUBLIC_MESSAGE extends js.Object {
   var sender: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
 }
 
+object IPUBLIC_MESSAGE {
+  @scala.inline
+  def apply(
+    data: js.Object,
+    message: java.lang.String,
+    room: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSRoom,
+    sender: smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser
+  ): IPUBLIC_MESSAGE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("room")(room)
+    __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[IPUBLIC_MESSAGE]
+  }
+}
+

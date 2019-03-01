@@ -11,3 +11,13 @@ trait IColumn extends js.Object {
   var `type`: DataType
 }
 
+object IColumn {
+  @scala.inline
+  def apply(name: java.lang.String, properties: IColumnProperties, `type`: DataType): IColumn = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[IColumn]
+  }
+}
+

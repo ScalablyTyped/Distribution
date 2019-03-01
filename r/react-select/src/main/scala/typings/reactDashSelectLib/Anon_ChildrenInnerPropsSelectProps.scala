@@ -11,3 +11,18 @@ trait Anon_ChildrenInnerPropsSelectProps extends js.Object {
   var selectProps: js.Any
 }
 
+object Anon_ChildrenInnerPropsSelectProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    innerProps: Anon_ClassNameEvent,
+    selectProps: js.Any
+  ): Anon_ChildrenInnerPropsSelectProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.updateDynamic("innerProps")(innerProps)
+    __obj.updateDynamic("selectProps")(selectProps)
+    __obj.asInstanceOf[Anon_ChildrenInnerPropsSelectProps]
+  }
+}
+

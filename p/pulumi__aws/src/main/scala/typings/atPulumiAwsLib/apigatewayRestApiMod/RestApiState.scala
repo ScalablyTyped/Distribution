@@ -56,3 +56,34 @@ trait RestApiState extends js.Object {
   val rootResourceId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object RestApiState {
+  @scala.inline
+  def apply(
+    apiKeySource: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    binaryMediaTypes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    body: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    createdDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    endpointConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypesInput] = null,
+    executionArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    minimumCompressionSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rootResourceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): RestApiState = {
+    val __obj = js.Dynamic.literal()
+    if (apiKeySource != null) __obj.updateDynamic("apiKeySource")(apiKeySource.asInstanceOf[js.Any])
+    if (binaryMediaTypes != null) __obj.updateDynamic("binaryMediaTypes")(binaryMediaTypes.asInstanceOf[js.Any])
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration.asInstanceOf[js.Any])
+    if (executionArn != null) __obj.updateDynamic("executionArn")(executionArn.asInstanceOf[js.Any])
+    if (minimumCompressionSize != null) __obj.updateDynamic("minimumCompressionSize")(minimumCompressionSize.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (rootResourceId != null) __obj.updateDynamic("rootResourceId")(rootResourceId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RestApiState]
+  }
+}
+

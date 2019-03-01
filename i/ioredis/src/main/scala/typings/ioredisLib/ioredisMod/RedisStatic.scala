@@ -23,7 +23,7 @@ trait RedisStatic
       (/* port */ scala.Double) | (/* options */ ioredisLib.ioredisMod.IORedisNs.RedisOptions) | (/* host */ java.lang.String), 
       ioredisLib.ioredisMod.IORedisNs.Redis
     ] {
-  var Cluster: ioredisLib.ioredisMod.IORedisNs.Cluster = js.native
+  var Cluster: ioredisLib.ioredisMod.IORedisNs.ClusterStatic = js.native
   var Command: ioredisLib.ioredisMod.IORedisNs.Command = js.native
   def apply(): ioredisLib.ioredisMod.IORedisNs.Redis = js.native
   def apply(host: java.lang.String): ioredisLib.ioredisMod.IORedisNs.Redis = js.native

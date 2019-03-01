@@ -12,3 +12,13 @@ trait ObserveOnceOptions extends js.Object {
   var defer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ObserveOnceOptions {
+  @scala.inline
+  def apply(context: js.Any = null, defer: js.UndefOr[scala.Boolean] = js.undefined): ObserveOnceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(defer)) __obj.updateDynamic("defer")(defer)
+    __obj.asInstanceOf[ObserveOnceOptions]
+  }
+}
+

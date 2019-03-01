@@ -47,3 +47,30 @@ trait MultiselectMessages extends js.Object {
   ] = js.undefined
 }
 
+object MultiselectMessages {
+  @scala.inline
+  def apply(
+    createNew: java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String]) = null,
+    createOption: java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String]) = null,
+    emptyFilter: java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String]) = null,
+    emptyList: java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String]) = null,
+    noneSelected: java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String]) = null,
+    open: java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String]) = null,
+    removeLabel: java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String]) = null,
+    selectedItems: java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String]) = null,
+    tagsLabel: java.lang.String | (js.Function1[/* props */ MultiselectProps, java.lang.String]) = null
+  ): MultiselectMessages = {
+    val __obj = js.Dynamic.literal()
+    if (createNew != null) __obj.updateDynamic("createNew")(createNew.asInstanceOf[js.Any])
+    if (createOption != null) __obj.updateDynamic("createOption")(createOption.asInstanceOf[js.Any])
+    if (emptyFilter != null) __obj.updateDynamic("emptyFilter")(emptyFilter.asInstanceOf[js.Any])
+    if (emptyList != null) __obj.updateDynamic("emptyList")(emptyList.asInstanceOf[js.Any])
+    if (noneSelected != null) __obj.updateDynamic("noneSelected")(noneSelected.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (removeLabel != null) __obj.updateDynamic("removeLabel")(removeLabel.asInstanceOf[js.Any])
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems.asInstanceOf[js.Any])
+    if (tagsLabel != null) __obj.updateDynamic("tagsLabel")(tagsLabel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MultiselectMessages]
+  }
+}
+

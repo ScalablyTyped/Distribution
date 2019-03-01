@@ -15,3 +15,12 @@ trait ReportWorkItemStatusResponse extends js.Object {
   var workItemServiceStates: js.UndefOr[js.Array[WorkItemServiceState]] = js.undefined
 }
 
+object ReportWorkItemStatusResponse {
+  @scala.inline
+  def apply(workItemServiceStates: js.Array[WorkItemServiceState] = null): ReportWorkItemStatusResponse = {
+    val __obj = js.Dynamic.literal()
+    if (workItemServiceStates != null) __obj.updateDynamic("workItemServiceStates")(workItemServiceStates)
+    __obj.asInstanceOf[ReportWorkItemStatusResponse]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_OnSSR extends js.Object {
   var onSSR: js.UndefOr[reactLib.reactMod.ReactNs.ReactChild] = js.undefined
 }
 
+object Anon_OnSSR {
+  @scala.inline
+  def apply(onSSR: reactLib.reactMod.ReactNs.ReactChild = null): Anon_OnSSR = {
+    val __obj = js.Dynamic.literal()
+    if (onSSR != null) __obj.updateDynamic("onSSR")(onSSR.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_OnSSR]
+  }
+}
+

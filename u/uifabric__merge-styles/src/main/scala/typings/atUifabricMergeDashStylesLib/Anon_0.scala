@@ -11,3 +11,18 @@ trait Anon_0 extends js.Object {
   var none: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`0`
 }
 
+object Anon_0 {
+  @scala.inline
+  def apply(
+    appendChild: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`2`,
+    insertNode: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`1`,
+    none: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibNumbers.`0`
+  ): Anon_0 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appendChild")(appendChild)
+    __obj.updateDynamic("insertNode")(insertNode)
+    __obj.updateDynamic("none")(none)
+    __obj.asInstanceOf[Anon_0]
+  }
+}
+

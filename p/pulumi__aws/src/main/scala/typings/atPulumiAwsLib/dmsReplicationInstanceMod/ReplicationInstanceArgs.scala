@@ -66,3 +66,40 @@ trait ReplicationInstanceArgs extends js.Object {
   ] = js.undefined
 }
 
+object ReplicationInstanceArgs {
+  @scala.inline
+  def apply(
+    replicationInstanceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    replicationInstanceId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    allocatedStorage: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    applyImmediately: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    autoMinorVersionUpgrade: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    kmsKeyArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    multiAz: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    preferredMaintenanceWindow: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publiclyAccessible: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    replicationSubnetGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcSecurityGroupIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): ReplicationInstanceArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("replicationInstanceClass")(replicationInstanceClass.asInstanceOf[js.Any])
+    __obj.updateDynamic("replicationInstanceId")(replicationInstanceId.asInstanceOf[js.Any])
+    if (allocatedStorage != null) __obj.updateDynamic("allocatedStorage")(allocatedStorage.asInstanceOf[js.Any])
+    if (applyImmediately != null) __obj.updateDynamic("applyImmediately")(applyImmediately.asInstanceOf[js.Any])
+    if (autoMinorVersionUpgrade != null) __obj.updateDynamic("autoMinorVersionUpgrade")(autoMinorVersionUpgrade.asInstanceOf[js.Any])
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (engineVersion != null) __obj.updateDynamic("engineVersion")(engineVersion.asInstanceOf[js.Any])
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (multiAz != null) __obj.updateDynamic("multiAz")(multiAz.asInstanceOf[js.Any])
+    if (preferredMaintenanceWindow != null) __obj.updateDynamic("preferredMaintenanceWindow")(preferredMaintenanceWindow.asInstanceOf[js.Any])
+    if (publiclyAccessible != null) __obj.updateDynamic("publiclyAccessible")(publiclyAccessible.asInstanceOf[js.Any])
+    if (replicationSubnetGroupId != null) __obj.updateDynamic("replicationSubnetGroupId")(replicationSubnetGroupId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcSecurityGroupIds != null) __obj.updateDynamic("vpcSecurityGroupIds")(vpcSecurityGroupIds.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReplicationInstanceArgs]
+  }
+}
+

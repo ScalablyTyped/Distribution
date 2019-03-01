@@ -37,3 +37,26 @@ trait RellaxOptions extends js.Object {
   var wrapper: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RellaxOptions {
+  @scala.inline
+  def apply(
+    callback: js.Function1[/* positions */ rellaxLib.Anon_X, scala.Unit] = null,
+    center: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    round: js.UndefOr[scala.Boolean] = js.undefined,
+    speed: scala.Int | scala.Double = null,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapper: java.lang.String = null
+  ): RellaxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    __obj.asInstanceOf[RellaxOptions]
+  }
+}
+

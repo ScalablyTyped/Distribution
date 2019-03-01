@@ -30,3 +30,18 @@ trait PivotFieldUpdateData extends js.Object {
   var subtotals: js.UndefOr[officeDashJsLib.ExcelNs.Subtotals] = js.undefined
 }
 
+object PivotFieldUpdateData {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    showAllItems: js.UndefOr[scala.Boolean] = js.undefined,
+    subtotals: officeDashJsLib.ExcelNs.Subtotals = null
+  ): PivotFieldUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(showAllItems)) __obj.updateDynamic("showAllItems")(showAllItems)
+    if (subtotals != null) __obj.updateDynamic("subtotals")(subtotals)
+    __obj.asInstanceOf[PivotFieldUpdateData]
+  }
+}
+

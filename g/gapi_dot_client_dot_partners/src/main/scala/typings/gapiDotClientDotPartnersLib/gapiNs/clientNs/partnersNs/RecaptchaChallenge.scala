@@ -12,3 +12,13 @@ trait RecaptchaChallenge extends js.Object {
   var response: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RecaptchaChallenge {
+  @scala.inline
+  def apply(id: java.lang.String = null, response: java.lang.String = null): RecaptchaChallenge = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (response != null) __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[RecaptchaChallenge]
+  }
+}
+

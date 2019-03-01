@@ -11,3 +11,17 @@ trait CheckboxProps extends js.Object {
   var `type`: reactDashBootstrapLib.reactDashBootstrapLibStrings.checkbox
 }
 
+object CheckboxProps {
+  @scala.inline
+  def apply(
+    `type`: reactDashBootstrapLib.reactDashBootstrapLibStrings.checkbox,
+    name: java.lang.String = null,
+    onChange: js.Function1[/* values */ js.Array[_], scala.Unit] = null
+  ): CheckboxProps = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    __obj.asInstanceOf[CheckboxProps]
+  }
+}
+

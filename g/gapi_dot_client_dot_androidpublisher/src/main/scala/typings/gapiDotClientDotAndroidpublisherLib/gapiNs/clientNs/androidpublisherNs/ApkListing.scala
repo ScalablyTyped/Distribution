@@ -12,3 +12,13 @@ trait ApkListing extends js.Object {
   var recentChanges: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApkListing {
+  @scala.inline
+  def apply(language: java.lang.String = null, recentChanges: java.lang.String = null): ApkListing = {
+    val __obj = js.Dynamic.literal()
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (recentChanges != null) __obj.updateDynamic("recentChanges")(recentChanges)
+    __obj.asInstanceOf[ApkListing]
+  }
+}
+

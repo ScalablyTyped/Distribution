@@ -64,3 +64,38 @@ trait Editable[TRow /* <: js.Object */, K /* <: java.lang.String */] extends js.
   ] = js.undefined
 }
 
+object Editable {
+  @scala.inline
+  def apply[TRow /* <: js.Object */, K /* <: java.lang.String */](
+    attrs: EditableAttrs = null,
+    className: java.lang.String = null,
+    cols: scala.Int | scala.Double = null,
+    defaultValue: /* import warning: ImportType.apply Failed type conversion: TRow[K] */ js.Any = null,
+    options: reactDashBootstrapDashTableLib.Anon_Row[TRow] = null,
+    placeholder: java.lang.String = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    rows: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    `type`: EditCellType = null,
+    validator: js.Function2[
+      /* import warning: ImportType.apply Failed type conversion: TRow[K] */ /* cell */ js.Any, 
+      /* row */ TRow, 
+      scala.Boolean | java.lang.String | EditValidatorObject
+    ] = null
+  ): Editable[TRow, K] = {
+    val __obj = js.Dynamic.literal()
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (validator != null) __obj.updateDynamic("validator")(validator)
+    __obj.asInstanceOf[Editable[TRow, K]]
+  }
+}
+

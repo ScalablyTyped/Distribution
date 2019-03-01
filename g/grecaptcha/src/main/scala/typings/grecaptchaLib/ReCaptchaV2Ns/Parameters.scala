@@ -66,3 +66,32 @@ trait Parameters extends js.Object {
   var `type`: js.UndefOr[Type] = js.undefined
 }
 
+object Parameters {
+  @scala.inline
+  def apply(
+    badge: Badge = null,
+    callback: js.Function1[/* response */ java.lang.String, scala.Unit] = null,
+    `error-callback`: js.Function0[scala.Unit] = null,
+    `expired-callback`: js.Function0[scala.Unit] = null,
+    isolated: js.UndefOr[scala.Boolean] = js.undefined,
+    sitekey: java.lang.String = null,
+    size: Size = null,
+    tabindex: scala.Int | scala.Double = null,
+    theme: Theme = null,
+    `type`: Type = null
+  ): Parameters = {
+    val __obj = js.Dynamic.literal()
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (`error-callback` != null) __obj.updateDynamic("error-callback")(`error-callback`)
+    if (`expired-callback` != null) __obj.updateDynamic("expired-callback")(`expired-callback`)
+    if (!js.isUndefined(isolated)) __obj.updateDynamic("isolated")(isolated)
+    if (sitekey != null) __obj.updateDynamic("sitekey")(sitekey)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Parameters]
+  }
+}
+

@@ -12,3 +12,18 @@ trait Anon_Page extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Page {
+  @scala.inline
+  def apply(
+    page: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionURL,
+    persistent: js.UndefOr[
+      firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.PersistentBackgroundProperty
+    ] = js.undefined
+  ): Anon_Page = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("page")(page)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    __obj.asInstanceOf[Anon_Page]
+  }
+}
+

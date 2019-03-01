@@ -10,3 +10,13 @@ trait DrawingControlOptions extends js.Object {
   var style: js.UndefOr[DrawingStyle] = js.undefined
 }
 
+object DrawingControlOptions {
+  @scala.inline
+  def apply(position: navermapsLib.naverNs.mapsNs.Position = null, style: DrawingStyle = null): DrawingControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[DrawingControlOptions]
+  }
+}
+

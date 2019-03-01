@@ -10,3 +10,13 @@ trait Anon_DataMeta extends js.Object {
   var meta: Anon_Count
 }
 
+object Anon_DataMeta {
+  @scala.inline
+  def apply(data: js.Array[scala.Nothing], meta: Anon_Count): Anon_DataMeta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("meta")(meta)
+    __obj.asInstanceOf[Anon_DataMeta]
+  }
+}
+

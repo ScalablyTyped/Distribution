@@ -22,3 +22,28 @@ trait XRegressionCurveContainer
   def setRegressionCurves(aRegressionCurves: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XRegressionCurve]): scala.Unit
 }
 
+object XRegressionCurveContainer {
+  @scala.inline
+  def apply(
+    RegressionCurves: activexDashInteropLib.SafeArray[XRegressionCurve],
+    acquire: js.Function0[scala.Unit],
+    addRegressionCurve: js.Function1[XRegressionCurve, scala.Unit],
+    getRegressionCurves: js.Function0[activexDashInteropLib.SafeArray[XRegressionCurve]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeRegressionCurve: js.Function1[XRegressionCurve, scala.Unit],
+    setRegressionCurves: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[XRegressionCurve], scala.Unit]
+  ): XRegressionCurveContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RegressionCurves")(RegressionCurves)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addRegressionCurve")(addRegressionCurve)
+    __obj.updateDynamic("getRegressionCurves")(getRegressionCurves)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeRegressionCurve")(removeRegressionCurve)
+    __obj.updateDynamic("setRegressionCurves")(setRegressionCurves)
+    __obj.asInstanceOf[XRegressionCurveContainer]
+  }
+}
+

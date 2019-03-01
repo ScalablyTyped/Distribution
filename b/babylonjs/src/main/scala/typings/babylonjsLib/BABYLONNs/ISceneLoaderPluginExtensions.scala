@@ -14,3 +14,17 @@ trait ISceneLoaderPluginExtensions
   */
 /* extension */ org.scalablytyped.runtime.StringDictionary[babylonjsLib.Anon_IsBinary]
 
+object ISceneLoaderPluginExtensions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Defines the list of supported extensions
+    */
+  /* extension */ org.scalablytyped.runtime.StringDictionary[babylonjsLib.Anon_IsBinary] = null
+  ): ISceneLoaderPluginExtensions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ISceneLoaderPluginExtensions]
+  }
+}
+

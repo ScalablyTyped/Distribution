@@ -16,3 +16,13 @@ trait CustomError extends js.Object {
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CustomError {
+  @scala.inline
+  def apply(rules: js.Array[CustomErrorRule] = null, types: js.Array[java.lang.String] = null): CustomError = {
+    val __obj = js.Dynamic.literal()
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[CustomError]
+  }
+}
+

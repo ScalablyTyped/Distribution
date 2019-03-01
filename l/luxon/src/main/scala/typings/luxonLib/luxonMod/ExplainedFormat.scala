@@ -16,3 +16,28 @@ trait ExplainedFormat extends js.Object {
   var zone: js.UndefOr[Zone | scala.Null] = js.undefined
 }
 
+object ExplainedFormat {
+  @scala.inline
+  def apply(
+    input: java.lang.String,
+    tokens: js.Array[luxonLib.Anon_Literal],
+    invalidReason: java.lang.String = null,
+    matches: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    rawMatches: stdLib.RegExpMatchArray = null,
+    regex: stdLib.RegExp = null,
+    result: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    zone: Zone = null
+  ): ExplainedFormat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    __obj.updateDynamic("tokens")(tokens)
+    if (invalidReason != null) __obj.updateDynamic("invalidReason")(invalidReason)
+    if (matches != null) __obj.updateDynamic("matches")(matches)
+    if (rawMatches != null) __obj.updateDynamic("rawMatches")(rawMatches)
+    if (regex != null) __obj.updateDynamic("regex")(regex)
+    if (result != null) __obj.updateDynamic("result")(result)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[ExplainedFormat]
+  }
+}
+

@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait AnySchema extends JoiObject {
+trait AnySchema
+  extends Schema
+     with JoiObject {
   /**
     * Overrides the default joi error with a custom error if the rule fails where:
     * @param err - can be:

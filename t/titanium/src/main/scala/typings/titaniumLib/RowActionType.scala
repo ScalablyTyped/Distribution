@@ -28,3 +28,20 @@ trait RowActionType extends js.Object {
   var title: java.lang.String
 }
 
+object RowActionType {
+  @scala.inline
+  def apply(
+    style: scala.Double,
+    title: java.lang.String,
+    color: java.lang.String = null,
+    identifier: java.lang.String = null
+  ): RowActionType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("title")(title)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    __obj.asInstanceOf[RowActionType]
+  }
+}
+

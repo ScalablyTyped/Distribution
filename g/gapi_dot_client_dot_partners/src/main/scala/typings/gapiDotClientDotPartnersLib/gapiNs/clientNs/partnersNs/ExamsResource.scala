@@ -10,3 +10,17 @@ trait ExamsResource extends js.Object {
   def getToken(request: gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackExamType): gapiDotClientLib.gapiNs.clientNs.Request[ExamToken]
 }
 
+object ExamsResource {
+  @scala.inline
+  def apply(
+    getToken: js.Function1[
+      gapiDotClientDotPartnersLib.Anon_AccesstokenAltBearertokenCallbackExamType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ExamToken]
+    ]
+  ): ExamsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getToken")(getToken)
+    __obj.asInstanceOf[ExamsResource]
+  }
+}
+

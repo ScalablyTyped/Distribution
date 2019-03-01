@@ -24,3 +24,40 @@ trait Anon_BorderColor extends js.Object {
   var text: java.lang.String
 }
 
+object Anon_BorderColor {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String,
+    categories: js.Array[java.lang.String],
+    categoryVisibility: atOracleOraclejetLib.atOracleOraclejetLibStrings.hidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.visible,
+    color: java.lang.String,
+    id: java.lang.String,
+    lineStyle: atOracleOraclejetLib.atOracleOraclejetLibStrings.dotted | atOracleOraclejetLib.atOracleOraclejetLibStrings.dashed | atOracleOraclejetLib.atOracleOraclejetLibStrings.solid,
+    lineWidth: scala.Double,
+    markerColor: java.lang.String,
+    pattern: atOracleOraclejetLib.atOracleOraclejetLibStrings.smallChecker | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallCrosshatch | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallDiagonalLeft | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallDiagonalRight | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallDiamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.smallTriangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeChecker | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeCrosshatch | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeDiagonalLeft | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeDiagonalRight | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeDiamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.largeTriangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
+    shortDesc: java.lang.String,
+    source: java.lang.String,
+    symbolType: atOracleOraclejetLib.atOracleOraclejetLibStrings.line | atOracleOraclejetLib.atOracleOraclejetLibStrings.lineWithMarker | atOracleOraclejetLib.atOracleOraclejetLibStrings.image | atOracleOraclejetLib.atOracleOraclejetLibStrings.marker,
+    text: java.lang.String,
+    markerShape: atOracleOraclejetLib.atOracleOraclejetLibStrings.circle | atOracleOraclejetLib.atOracleOraclejetLibStrings.diamond | atOracleOraclejetLib.atOracleOraclejetLibStrings.human | atOracleOraclejetLib.atOracleOraclejetLibStrings.plus | atOracleOraclejetLib.atOracleOraclejetLibStrings.rectangle | atOracleOraclejetLib.atOracleOraclejetLibStrings.square | atOracleOraclejetLib.atOracleOraclejetLibStrings.star | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleDown | atOracleOraclejetLib.atOracleOraclejetLibStrings.triangleUp | java.lang.String = null
+  ): Anon_BorderColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("borderColor")(borderColor)
+    __obj.updateDynamic("categories")(categories)
+    __obj.updateDynamic("categoryVisibility")(categoryVisibility.asInstanceOf[js.Any])
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("lineStyle")(lineStyle.asInstanceOf[js.Any])
+    __obj.updateDynamic("lineWidth")(lineWidth)
+    __obj.updateDynamic("markerColor")(markerColor)
+    __obj.updateDynamic("pattern")(pattern.asInstanceOf[js.Any])
+    __obj.updateDynamic("shortDesc")(shortDesc)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("symbolType")(symbolType.asInstanceOf[js.Any])
+    __obj.updateDynamic("text")(text)
+    if (markerShape != null) __obj.updateDynamic("markerShape")(markerShape.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BorderColor]
+  }
+}
+

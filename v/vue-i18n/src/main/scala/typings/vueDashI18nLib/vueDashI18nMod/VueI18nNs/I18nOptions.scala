@@ -22,3 +22,38 @@ trait I18nOptions extends js.Object {
   var sync: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object I18nOptions {
+  @scala.inline
+  def apply(
+    dateTimeFormats: DateTimeFormats = null,
+    fallbackLocale: Locale = null,
+    fallbackRoot: js.UndefOr[scala.Boolean] = js.undefined,
+    formatter: Formatter = null,
+    locale: Locale = null,
+    messages: LocaleMessages = null,
+    missing: MissingHandler = null,
+    numberFormats: NumberFormats = null,
+    pluralizationRules: PluralizationRulesMap = null,
+    preserveDirectiveContent: js.UndefOr[scala.Boolean] = js.undefined,
+    silentFallbackWarn: js.UndefOr[scala.Boolean] = js.undefined,
+    silentTranslationWarn: js.UndefOr[scala.Boolean] = js.undefined,
+    sync: js.UndefOr[scala.Boolean] = js.undefined
+  ): I18nOptions = {
+    val __obj = js.Dynamic.literal()
+    if (dateTimeFormats != null) __obj.updateDynamic("dateTimeFormats")(dateTimeFormats)
+    if (fallbackLocale != null) __obj.updateDynamic("fallbackLocale")(fallbackLocale)
+    if (!js.isUndefined(fallbackRoot)) __obj.updateDynamic("fallbackRoot")(fallbackRoot)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (missing != null) __obj.updateDynamic("missing")(missing)
+    if (numberFormats != null) __obj.updateDynamic("numberFormats")(numberFormats)
+    if (pluralizationRules != null) __obj.updateDynamic("pluralizationRules")(pluralizationRules)
+    if (!js.isUndefined(preserveDirectiveContent)) __obj.updateDynamic("preserveDirectiveContent")(preserveDirectiveContent)
+    if (!js.isUndefined(silentFallbackWarn)) __obj.updateDynamic("silentFallbackWarn")(silentFallbackWarn)
+    if (!js.isUndefined(silentTranslationWarn)) __obj.updateDynamic("silentTranslationWarn")(silentTranslationWarn)
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    __obj.asInstanceOf[I18nOptions]
+  }
+}
+

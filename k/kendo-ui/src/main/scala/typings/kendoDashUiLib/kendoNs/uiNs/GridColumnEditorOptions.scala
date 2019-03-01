@@ -12,3 +12,20 @@ trait GridColumnEditorOptions extends js.Object {
   var values: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object GridColumnEditorOptions {
+  @scala.inline
+  def apply(
+    field: java.lang.String = null,
+    format: java.lang.String = null,
+    model: kendoDashUiLib.kendoNs.dataNs.Model = null,
+    values: js.Array[_] = null
+  ): GridColumnEditorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[GridColumnEditorOptions]
+  }
+}
+

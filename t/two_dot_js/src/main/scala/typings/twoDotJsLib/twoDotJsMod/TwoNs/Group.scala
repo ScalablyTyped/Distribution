@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Group extends js.Object {
+trait Group extends Object {
   var cap: java.lang.String = js.native
   var children: js.Array[twoDotJsLib._Object] = js.native
   var fill: Color = js.native

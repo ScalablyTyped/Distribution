@@ -25,3 +25,20 @@ trait StorePage extends js.Object {
   var name: js.UndefOr[js.Array[LocalizedText]] = js.undefined
 }
 
+object StorePage {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    link: js.Array[java.lang.String] = null,
+    name: js.Array[LocalizedText] = null
+  ): StorePage = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[StorePage]
+  }
+}
+

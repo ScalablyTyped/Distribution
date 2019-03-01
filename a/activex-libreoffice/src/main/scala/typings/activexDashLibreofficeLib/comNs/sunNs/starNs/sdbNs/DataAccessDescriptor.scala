@@ -182,3 +182,46 @@ trait DataAccessDescriptor extends js.Object {
   var Selection: activexDashInteropLib.SafeArray[_]
 }
 
+object DataAccessDescriptor {
+  @scala.inline
+  def apply(
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    BookmarkSelection: scala.Boolean,
+    Column: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ColumnName: java.lang.String,
+    Command: java.lang.String,
+    CommandType: scala.Double,
+    ConnectionInfo: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    ConnectionResource: java.lang.String,
+    DataSourceName: java.lang.String,
+    DatabaseLocation: java.lang.String,
+    EscapeProcessing: scala.Boolean,
+    Filter: java.lang.String,
+    GroupBy: java.lang.String,
+    HavingClause: java.lang.String,
+    Order: java.lang.String,
+    ResultSet: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSet,
+    Selection: activexDashInteropLib.SafeArray[_]
+  ): DataAccessDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
+    __obj.updateDynamic("BookmarkSelection")(BookmarkSelection)
+    __obj.updateDynamic("Column")(Column)
+    __obj.updateDynamic("ColumnName")(ColumnName)
+    __obj.updateDynamic("Command")(Command)
+    __obj.updateDynamic("CommandType")(CommandType)
+    __obj.updateDynamic("ConnectionInfo")(ConnectionInfo)
+    __obj.updateDynamic("ConnectionResource")(ConnectionResource)
+    __obj.updateDynamic("DataSourceName")(DataSourceName)
+    __obj.updateDynamic("DatabaseLocation")(DatabaseLocation)
+    __obj.updateDynamic("EscapeProcessing")(EscapeProcessing)
+    __obj.updateDynamic("Filter")(Filter)
+    __obj.updateDynamic("GroupBy")(GroupBy)
+    __obj.updateDynamic("HavingClause")(HavingClause)
+    __obj.updateDynamic("Order")(Order)
+    __obj.updateDynamic("ResultSet")(ResultSet)
+    __obj.updateDynamic("Selection")(Selection)
+    __obj.asInstanceOf[DataAccessDescriptor]
+  }
+}
+

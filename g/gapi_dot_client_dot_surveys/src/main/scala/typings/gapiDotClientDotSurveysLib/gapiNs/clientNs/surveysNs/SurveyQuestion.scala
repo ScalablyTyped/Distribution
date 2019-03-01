@@ -58,3 +58,48 @@ trait SurveyQuestion extends js.Object {
   var videoId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SurveyQuestion {
+  @scala.inline
+  def apply(
+    answerOrder: java.lang.String = null,
+    answers: js.Array[java.lang.String] = null,
+    hasOther: js.UndefOr[scala.Boolean] = js.undefined,
+    highValueLabel: java.lang.String = null,
+    images: js.Array[SurveyQuestionImage] = null,
+    lastAnswerPositionPinned: js.UndefOr[scala.Boolean] = js.undefined,
+    lowValueLabel: java.lang.String = null,
+    mustPickSuggestion: js.UndefOr[scala.Boolean] = js.undefined,
+    numStars: java.lang.String = null,
+    openTextPlaceholder: java.lang.String = null,
+    openTextSuggestions: js.Array[java.lang.String] = null,
+    question: java.lang.String = null,
+    sentimentText: java.lang.String = null,
+    singleLineResponse: js.UndefOr[scala.Boolean] = js.undefined,
+    thresholdAnswers: js.Array[java.lang.String] = null,
+    `type`: java.lang.String = null,
+    unitOfMeasurementLabel: java.lang.String = null,
+    videoId: java.lang.String = null
+  ): SurveyQuestion = {
+    val __obj = js.Dynamic.literal()
+    if (answerOrder != null) __obj.updateDynamic("answerOrder")(answerOrder)
+    if (answers != null) __obj.updateDynamic("answers")(answers)
+    if (!js.isUndefined(hasOther)) __obj.updateDynamic("hasOther")(hasOther)
+    if (highValueLabel != null) __obj.updateDynamic("highValueLabel")(highValueLabel)
+    if (images != null) __obj.updateDynamic("images")(images)
+    if (!js.isUndefined(lastAnswerPositionPinned)) __obj.updateDynamic("lastAnswerPositionPinned")(lastAnswerPositionPinned)
+    if (lowValueLabel != null) __obj.updateDynamic("lowValueLabel")(lowValueLabel)
+    if (!js.isUndefined(mustPickSuggestion)) __obj.updateDynamic("mustPickSuggestion")(mustPickSuggestion)
+    if (numStars != null) __obj.updateDynamic("numStars")(numStars)
+    if (openTextPlaceholder != null) __obj.updateDynamic("openTextPlaceholder")(openTextPlaceholder)
+    if (openTextSuggestions != null) __obj.updateDynamic("openTextSuggestions")(openTextSuggestions)
+    if (question != null) __obj.updateDynamic("question")(question)
+    if (sentimentText != null) __obj.updateDynamic("sentimentText")(sentimentText)
+    if (!js.isUndefined(singleLineResponse)) __obj.updateDynamic("singleLineResponse")(singleLineResponse)
+    if (thresholdAnswers != null) __obj.updateDynamic("thresholdAnswers")(thresholdAnswers)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unitOfMeasurementLabel != null) __obj.updateDynamic("unitOfMeasurementLabel")(unitOfMeasurementLabel)
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    __obj.asInstanceOf[SurveyQuestion]
+  }
+}
+

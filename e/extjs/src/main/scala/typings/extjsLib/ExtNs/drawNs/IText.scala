@@ -22,3 +22,32 @@ trait IText extends IComponent {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IText {
+  @scala.inline
+  def apply(
+    IComponent: IComponent = null,
+    autoSize: js.UndefOr[scala.Boolean] = js.undefined,
+    baseCls: java.lang.String = null,
+    degrees: scala.Int | scala.Double = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    setAngle: js.Function1[/* degrees */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setText: js.Function1[/* t */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    styleSelector: java.lang.String = null,
+    text: java.lang.String = null,
+    viewBox: js.UndefOr[scala.Boolean] = js.undefined
+  ): IText = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (degrees != null) __obj.updateDynamic("degrees")(degrees.asInstanceOf[js.Any])
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (setAngle != null) __obj.updateDynamic("setAngle")(setAngle)
+    if (setText != null) __obj.updateDynamic("setText")(setText)
+    if (styleSelector != null) __obj.updateDynamic("styleSelector")(styleSelector)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox)
+    __obj.asInstanceOf[IText]
+  }
+}
+

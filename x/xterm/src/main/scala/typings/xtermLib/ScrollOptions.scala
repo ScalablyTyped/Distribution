@@ -9,3 +9,12 @@ trait ScrollOptions extends js.Object {
   var behavior: js.UndefOr[ScrollBehavior] = js.undefined
 }
 
+object ScrollOptions {
+  @scala.inline
+  def apply(behavior: ScrollBehavior = null): ScrollOptions = {
+    val __obj = js.Dynamic.literal()
+    if (behavior != null) __obj.updateDynamic("behavior")(behavior)
+    __obj.asInstanceOf[ScrollOptions]
+  }
+}
+

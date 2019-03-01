@@ -64,3 +64,32 @@ trait HtmlToTextOptions extends js.Object {
   ] = js.undefined
 }
 
+object HtmlToTextOptions {
+  @scala.inline
+  def apply(
+    hideLinkHrefIfSameAsText: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreHref: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreImage: js.UndefOr[scala.Boolean] = js.undefined,
+    linkHrefBaseUrl: java.lang.String = null,
+    noLinkBrackets: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveNewlines: js.UndefOr[scala.Boolean] = js.undefined,
+    singleNewLineParagraphs: js.UndefOr[scala.Boolean] = js.undefined,
+    tables: js.Array[java.lang.String] | scala.Boolean = null,
+    uppercaseHeadings: js.UndefOr[scala.Boolean] = js.undefined,
+    wordwrap: scala.Double | htmlDashToDashTextLib.htmlDashToDashTextLibNumbers.`false` = null
+  ): HtmlToTextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hideLinkHrefIfSameAsText)) __obj.updateDynamic("hideLinkHrefIfSameAsText")(hideLinkHrefIfSameAsText)
+    if (!js.isUndefined(ignoreHref)) __obj.updateDynamic("ignoreHref")(ignoreHref)
+    if (!js.isUndefined(ignoreImage)) __obj.updateDynamic("ignoreImage")(ignoreImage)
+    if (linkHrefBaseUrl != null) __obj.updateDynamic("linkHrefBaseUrl")(linkHrefBaseUrl)
+    if (!js.isUndefined(noLinkBrackets)) __obj.updateDynamic("noLinkBrackets")(noLinkBrackets)
+    if (!js.isUndefined(preserveNewlines)) __obj.updateDynamic("preserveNewlines")(preserveNewlines)
+    if (!js.isUndefined(singleNewLineParagraphs)) __obj.updateDynamic("singleNewLineParagraphs")(singleNewLineParagraphs)
+    if (tables != null) __obj.updateDynamic("tables")(tables.asInstanceOf[js.Any])
+    if (!js.isUndefined(uppercaseHeadings)) __obj.updateDynamic("uppercaseHeadings")(uppercaseHeadings)
+    if (wordwrap != null) __obj.updateDynamic("wordwrap")(wordwrap.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HtmlToTextOptions]
+  }
+}
+

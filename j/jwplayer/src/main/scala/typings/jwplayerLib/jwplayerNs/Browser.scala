@@ -16,3 +16,28 @@ trait Browser extends js.Object {
   var version: Version
 }
 
+object Browser {
+  @scala.inline
+  def apply(
+    chrome: scala.Boolean,
+    edge: scala.Boolean,
+    facebook: scala.Boolean,
+    firefox: scala.Boolean,
+    ie: scala.Boolean,
+    msie: scala.Boolean,
+    safari: scala.Boolean,
+    version: Version
+  ): Browser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chrome")(chrome)
+    __obj.updateDynamic("edge")(edge)
+    __obj.updateDynamic("facebook")(facebook)
+    __obj.updateDynamic("firefox")(firefox)
+    __obj.updateDynamic("ie")(ie)
+    __obj.updateDynamic("msie")(msie)
+    __obj.updateDynamic("safari")(safari)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Browser]
+  }
+}
+

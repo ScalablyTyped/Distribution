@@ -36,3 +36,32 @@ trait StrictBreadcrumbSectionProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictBreadcrumbSectionProps {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    href: java.lang.String = null,
+    link: js.UndefOr[scala.Boolean] = js.undefined,
+    onClick: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLAnchorElement, reactLib.NativeMouseEvent], 
+      /* data */ BreadcrumbSectionProps, 
+      scala.Unit
+    ] = null
+  ): StrictBreadcrumbSectionProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (!js.isUndefined(link)) __obj.updateDynamic("link")(link)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    __obj.asInstanceOf[StrictBreadcrumbSectionProps]
+  }
+}
+

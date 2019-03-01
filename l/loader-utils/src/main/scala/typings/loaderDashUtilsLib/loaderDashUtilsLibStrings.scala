@@ -7,43 +7,56 @@ import scala.scalajs.js.annotation._
 
 object loaderDashUtilsLibStrings {
   @js.native
-  sealed trait base26 extends js.Object
+  sealed trait base26
+    extends loaderDashUtilsLib.loaderDashUtilsMod.DigestType
   
   @js.native
-  sealed trait base32 extends js.Object
+  sealed trait base32
+    extends loaderDashUtilsLib.loaderDashUtilsMod.DigestType
   
   @js.native
-  sealed trait base36 extends js.Object
+  sealed trait base36
+    extends loaderDashUtilsLib.loaderDashUtilsMod.DigestType
   
   @js.native
-  sealed trait base49 extends js.Object
+  sealed trait base49
+    extends loaderDashUtilsLib.loaderDashUtilsMod.DigestType
   
   @js.native
-  sealed trait base52 extends js.Object
+  sealed trait base52
+    extends loaderDashUtilsLib.loaderDashUtilsMod.DigestType
   
   @js.native
-  sealed trait base58 extends js.Object
+  sealed trait base58
+    extends loaderDashUtilsLib.loaderDashUtilsMod.DigestType
   
   @js.native
-  sealed trait base62 extends js.Object
+  sealed trait base62
+    extends loaderDashUtilsLib.loaderDashUtilsMod.DigestType
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends loaderDashUtilsLib.loaderDashUtilsMod.DigestType
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends loaderDashUtilsLib.loaderDashUtilsMod.DigestType
   
   @js.native
-  sealed trait md5 extends js.Object
+  sealed trait md5
+    extends loaderDashUtilsLib.loaderDashUtilsMod.HashType
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait sha1
+    extends loaderDashUtilsLib.loaderDashUtilsMod.HashType
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait sha256
+    extends loaderDashUtilsLib.loaderDashUtilsMod.HashType
   
   @js.native
-  sealed trait sha512 extends js.Object
+  sealed trait sha512
+    extends loaderDashUtilsLib.loaderDashUtilsMod.HashType
   
   @scala.inline
   def base26: base26 = "base26".asInstanceOf[base26]

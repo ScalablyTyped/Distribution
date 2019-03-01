@@ -22,49 +22,63 @@ object natsDashHemeraLibStrings {
   sealed trait Rules extends js.Object
   
   @js.native
-  sealed trait alternatives extends js.Object
+  sealed trait alternatives
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait clientPostRequest extends js.Object
+  sealed trait clientPostRequest
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.HemeraEvents
   
   @js.native
-  sealed trait clientPreRequest extends js.Object
+  sealed trait clientPreRequest
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.HemeraEvents
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.LogLevel
   
   @js.native
   sealed trait depth extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.HemeraEvents
+       with natsDashHemeraLib.natsDashHemeraMod.HemeraNs.LogLevel
   
   @js.native
-  sealed trait fatal extends js.Object
+  sealed trait fatal
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.LogLevel
   
   @js.native
   sealed trait forbidden extends js.Object
   
   @js.native
-  sealed trait function extends js.Object
+  sealed trait function
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.LogLevel
   
   @js.native
   sealed trait insertion extends js.Object
@@ -73,79 +87,101 @@ object natsDashHemeraLibStrings {
   sealed trait javascript extends js.Object
   
   @js.native
-  sealed trait `lazy` extends js.Object
+  sealed trait `lazy`
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait onClientPostRequest extends js.Object
+  sealed trait onClientPostRequest
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ExtensionType
   
   @js.native
-  sealed trait onClientPreRequest extends js.Object
+  sealed trait onClientPreRequest
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ExtensionType
   
   @js.native
-  sealed trait onServerPreHandler extends js.Object
+  sealed trait onServerPreHandler
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ExtensionType
   
   @js.native
-  sealed trait onServerPreRequest extends js.Object
+  sealed trait onServerPreRequest
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ExtensionType
   
   @js.native
-  sealed trait onServerPreResponse extends js.Object
+  sealed trait onServerPreResponse
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.ExtensionType
   
   @js.native
   sealed trait optional extends js.Object
   
   @js.native
-  sealed trait pubsub extends js.Object
+  sealed trait pubsub
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.RequestType
   
   @js.native
-  sealed trait request extends js.Object
+  sealed trait request
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.RequestType
   
   @js.native
   sealed trait required extends js.Object
   
   @js.native
-  sealed trait serverPreHandler extends js.Object
+  sealed trait serverPreHandler
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.HemeraEvents
   
   @js.native
-  sealed trait serverPreRequest extends js.Object
+  sealed trait serverPreRequest
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.HemeraEvents
   
   @js.native
-  sealed trait serverPreResponse extends js.Object
+  sealed trait serverPreResponse
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.HemeraEvents
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait silent
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.LogLevel
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Types
   
   @js.native
-  sealed trait trace extends js.Object
+  sealed trait trace
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.LogLevel
   
   @js.native
   sealed trait unix extends js.Object
   
   @js.native
-  sealed trait uuidv1 extends js.Object
+  sealed trait uuidv1
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.GuidVersions
   
   @js.native
-  sealed trait uuidv2 extends js.Object
+  sealed trait uuidv2
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.GuidVersions
   
   @js.native
-  sealed trait uuidv3 extends js.Object
+  sealed trait uuidv3
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.GuidVersions
   
   @js.native
-  sealed trait uuidv4 extends js.Object
+  sealed trait uuidv4
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.GuidVersions
   
   @js.native
-  sealed trait uuidv5 extends js.Object
+  sealed trait uuidv5
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.GuidVersions
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends natsDashHemeraLib.natsDashHemeraMod.HemeraNs.LogLevel
   
   @scala.inline
   def NFC: NFC = "NFC".asInstanceOf[NFC]

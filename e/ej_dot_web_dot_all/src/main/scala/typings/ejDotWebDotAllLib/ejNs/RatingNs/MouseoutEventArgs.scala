@@ -23,3 +23,22 @@ trait MouseoutEventArgs extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object MouseoutEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    model: Model = null,
+    `type`: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): MouseoutEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MouseoutEventArgs]
+  }
+}
+

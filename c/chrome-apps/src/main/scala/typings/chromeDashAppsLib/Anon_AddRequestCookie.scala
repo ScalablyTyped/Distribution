@@ -142,3 +142,101 @@ trait Anon_AddRequestCookie extends js.Object {
   ]
 }
 
+object Anon_AddRequestCookie {
+  @scala.inline
+  def apply(
+    AddRequestCookie: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.AddCookie[chromeDashAppsLib.chromeNs.webViewRequestNs.RequestCookie], 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.AddRequestCookie
+    ],
+    AddResponseCookie: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.AddCookie[chromeDashAppsLib.chromeNs.webViewRequestNs.ResponseCookie], 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.AddResponseCookie
+    ],
+    AddResponseHeader: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.AddResponseHeaderParams, 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.AddResponseHeader
+    ],
+    CancelRequest: org.scalablytyped.runtime.Instantiable0[chromeDashAppsLib.chromeNs.webViewRequestNs.CancelRequest],
+    EditRequestCookie: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.EditCookieParams[
+        chromeDashAppsLib.chromeNs.webViewRequestNs.RequestCookie, 
+        chromeDashAppsLib.chromeNs.webViewRequestNs.RequestCookie
+      ], 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.EditRequestCookie
+    ],
+    EditResponseCookie: org.scalablytyped.runtime.Instantiable1[
+      /* parameter */ chromeDashAppsLib.chromeNs.webViewRequestNs.EditCookieParams[
+        chromeDashAppsLib.chromeNs.webViewRequestNs.FilterResponseCookie, 
+        chromeDashAppsLib.chromeNs.webViewRequestNs.ResponseCookie
+      ], 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.EditResponseCookie
+    ],
+    IgnoreRules: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.IgnoreRulesParams, 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.IgnoreRules
+    ],
+    RedirectByRegEx: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.RedirectByRegExParams, 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.RedirectByRegEx
+    ],
+    RedirectRequest: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.RedirectRequestParams, 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.RedirectRequest
+    ],
+    RedirectToEmptyDocument: org.scalablytyped.runtime.Instantiable0[chromeDashAppsLib.chromeNs.webViewRequestNs.RedirectToEmptyDocument],
+    RedirectToTransparentImage: org.scalablytyped.runtime.Instantiable0[chromeDashAppsLib.chromeNs.webViewRequestNs.RedirectToTransparentImage],
+    RemoveRequestCookie: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.RemoveCookieParams[chromeDashAppsLib.chromeNs.webViewRequestNs.RequestCookie], 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.RemoveRequestCookie
+    ],
+    RemoveRequestHeader: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.RemoveRequestHeaderParams, 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.RemoveRequestHeader
+    ],
+    RemoveResponseCookie: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.RemoveCookieParams[chromeDashAppsLib.chromeNs.webViewRequestNs.FilterResponseCookie], 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.RemoveResponseCookie
+    ],
+    RemoveResponseHeader: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.RemoveResponseHeaderParams, 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.RemoveResponseHeader
+    ],
+    RequestMatcher: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ js.UndefOr[
+        /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.RequestMatcherFields
+      ], 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.RequestMatcher
+    ],
+    SendMessageToExtension: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.SendMessageParams, 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.SendMessageToExtension
+    ],
+    SetRequestHeader: org.scalablytyped.runtime.Instantiable1[
+      /* parameters */ chromeDashAppsLib.chromeNs.webViewRequestNs.SetRequestHeaderParams, 
+      chromeDashAppsLib.chromeNs.webViewRequestNs.SetRequestHeader
+    ]
+  ): Anon_AddRequestCookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AddRequestCookie")(AddRequestCookie)
+    __obj.updateDynamic("AddResponseCookie")(AddResponseCookie)
+    __obj.updateDynamic("AddResponseHeader")(AddResponseHeader)
+    __obj.updateDynamic("CancelRequest")(CancelRequest)
+    __obj.updateDynamic("EditRequestCookie")(EditRequestCookie)
+    __obj.updateDynamic("EditResponseCookie")(EditResponseCookie)
+    __obj.updateDynamic("IgnoreRules")(IgnoreRules)
+    __obj.updateDynamic("RedirectByRegEx")(RedirectByRegEx)
+    __obj.updateDynamic("RedirectRequest")(RedirectRequest)
+    __obj.updateDynamic("RedirectToEmptyDocument")(RedirectToEmptyDocument)
+    __obj.updateDynamic("RedirectToTransparentImage")(RedirectToTransparentImage)
+    __obj.updateDynamic("RemoveRequestCookie")(RemoveRequestCookie)
+    __obj.updateDynamic("RemoveRequestHeader")(RemoveRequestHeader)
+    __obj.updateDynamic("RemoveResponseCookie")(RemoveResponseCookie)
+    __obj.updateDynamic("RemoveResponseHeader")(RemoveResponseHeader)
+    __obj.updateDynamic("RequestMatcher")(RequestMatcher)
+    __obj.updateDynamic("SendMessageToExtension")(SendMessageToExtension)
+    __obj.updateDynamic("SetRequestHeader")(SetRequestHeader)
+    __obj.asInstanceOf[Anon_AddRequestCookie]
+  }
+}
+

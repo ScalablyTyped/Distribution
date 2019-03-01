@@ -13,3 +13,22 @@ trait DurandalRouteInstruction extends js.Object {
   var queryString: java.lang.String
 }
 
+object DurandalRouteInstruction {
+  @scala.inline
+  def apply(
+    config: DurandalRouteConfiguration,
+    fragment: java.lang.String,
+    params: js.Array[_],
+    queryParams: org.scalablytyped.runtime.StringDictionary[js.Any],
+    queryString: java.lang.String
+  ): DurandalRouteInstruction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("fragment")(fragment)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("queryParams")(queryParams)
+    __obj.updateDynamic("queryString")(queryString)
+    __obj.asInstanceOf[DurandalRouteInstruction]
+  }
+}
+

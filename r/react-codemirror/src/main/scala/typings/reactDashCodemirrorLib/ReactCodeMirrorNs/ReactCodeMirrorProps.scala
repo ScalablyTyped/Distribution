@@ -53,3 +53,54 @@ trait ReactCodeMirrorProps
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReactCodeMirrorProps {
+  @scala.inline
+  def apply(
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    autoSave: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    codeMirrorInstance: js.Function2[
+      /* host */ js.Any, 
+      /* options */ js.UndefOr[codemirrorLib.codemirrorMod.CodeMirrorNs.EditorConfiguration], 
+      codemirrorLib.codemirrorMod.CodeMirrorNs.Editor
+    ] = null,
+    defaultValue: java.lang.String = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    name: java.lang.String = null,
+    onChange: js.Function2[
+      /* newValue */ java.lang.String, 
+      /* change */ codemirrorLib.codemirrorMod.CodeMirrorNs.EditorChange, 
+      _
+    ] = null,
+    onCursorActivity: js.Function1[/* codemirror */ codemirrorLib.codemirrorMod.CodeMirrorNs.Editor, _] = null,
+    onFocusChange: js.Function1[/* focused */ scala.Boolean, _] = null,
+    onScroll: js.Function1[/* scrollInfo */ codemirrorLib.codemirrorMod.CodeMirrorNs.ScrollInfo, _] = null,
+    options: codemirrorLib.codemirrorMod.CodeMirrorNs.EditorConfiguration = null,
+    path: java.lang.String = null,
+    preserveScrollPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[ReactCodeMirror] = null,
+    value: java.lang.String = null
+  ): ReactCodeMirrorProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(autoSave)) __obj.updateDynamic("autoSave")(autoSave)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (codeMirrorInstance != null) __obj.updateDynamic("codeMirrorInstance")(codeMirrorInstance)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onCursorActivity != null) __obj.updateDynamic("onCursorActivity")(onCursorActivity)
+    if (onFocusChange != null) __obj.updateDynamic("onFocusChange")(onFocusChange)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(preserveScrollPosition)) __obj.updateDynamic("preserveScrollPosition")(preserveScrollPosition)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ReactCodeMirrorProps]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_ItemsReturnValueNumberPnpObject extends js.Object {
   /** The number of items retrieved. */ var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueNumberPnpObject {
+  @scala.inline
+  def apply(
+    items: winrtDashUwpLib.WindowsNs.DevicesNs.EnumerationNs.PnpNs.PnpObject,
+    returnValue: scala.Double
+  ): Anon_ItemsReturnValueNumberPnpObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ItemsReturnValueNumberPnpObject]
+  }
+}
+

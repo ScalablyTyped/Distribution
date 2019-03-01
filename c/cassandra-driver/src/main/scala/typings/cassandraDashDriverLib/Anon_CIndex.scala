@@ -10,3 +10,13 @@ trait Anon_CIndex extends js.Object {
   var index: scala.Double
 }
 
+object Anon_CIndex {
+  @scala.inline
+  def apply(c: cassandraDashDriverLib.cassandraDashDriverMod.metadataNs.ColumnInfo, index: scala.Double): Anon_CIndex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("c")(c)
+    __obj.updateDynamic("index")(index)
+    __obj.asInstanceOf[Anon_CIndex]
+  }
+}
+

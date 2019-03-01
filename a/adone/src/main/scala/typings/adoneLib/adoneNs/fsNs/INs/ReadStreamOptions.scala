@@ -22,3 +22,22 @@ trait ReadStreamOptions extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ReadStreamOptions {
+  @scala.inline
+  def apply(
+    encoding: Encoding = null,
+    end: scala.Int | scala.Double = null,
+    flags: Flag = null,
+    mode: scala.Int | scala.Double = null,
+    start: scala.Int | scala.Double = null
+  ): ReadStreamOptions = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReadStreamOptions]
+  }
+}
+

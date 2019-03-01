@@ -50,3 +50,26 @@ trait A11yOptions extends js.Object {
   var prevSlideMessage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object A11yOptions {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    firstSlideMessage: java.lang.String = null,
+    lastSlideMessage: java.lang.String = null,
+    nextSlideMessage: java.lang.String = null,
+    notificationClass: java.lang.String = null,
+    paginationBulletMessage: java.lang.String = null,
+    prevSlideMessage: java.lang.String = null
+  ): A11yOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (firstSlideMessage != null) __obj.updateDynamic("firstSlideMessage")(firstSlideMessage)
+    if (lastSlideMessage != null) __obj.updateDynamic("lastSlideMessage")(lastSlideMessage)
+    if (nextSlideMessage != null) __obj.updateDynamic("nextSlideMessage")(nextSlideMessage)
+    if (notificationClass != null) __obj.updateDynamic("notificationClass")(notificationClass)
+    if (paginationBulletMessage != null) __obj.updateDynamic("paginationBulletMessage")(paginationBulletMessage)
+    if (prevSlideMessage != null) __obj.updateDynamic("prevSlideMessage")(prevSlideMessage)
+    __obj.asInstanceOf[A11yOptions]
+  }
+}
+

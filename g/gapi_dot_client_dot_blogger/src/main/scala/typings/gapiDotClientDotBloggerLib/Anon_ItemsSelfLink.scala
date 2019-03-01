@@ -14,3 +14,18 @@ trait Anon_ItemsSelfLink extends js.Object {
   var totalItems: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ItemsSelfLink {
+  @scala.inline
+  def apply(
+    items: js.Array[gapiDotClientDotBloggerLib.gapiNs.clientNs.bloggerNs.Comment] = null,
+    selfLink: java.lang.String = null,
+    totalItems: java.lang.String = null
+  ): Anon_ItemsSelfLink = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems)
+    __obj.asInstanceOf[Anon_ItemsSelfLink]
+  }
+}
+

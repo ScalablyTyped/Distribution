@@ -19,3 +19,13 @@ trait ItemStatus extends js.Object {
   var aStateData: js.Any
 }
 
+object ItemStatus {
+  @scala.inline
+  def apply(State: scala.Double, aStateData: js.Any): ItemStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("State")(State)
+    __obj.updateDynamic("aStateData")(aStateData)
+    __obj.asInstanceOf[ItemStatus]
+  }
+}
+

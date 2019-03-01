@@ -24,3 +24,16 @@ trait InsertCommandArgument extends js.Object {
   var ReplaceExisting: scala.Boolean
 }
 
+object InsertCommandArgument {
+  @scala.inline
+  def apply(
+    Data: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    ReplaceExisting: scala.Boolean
+  ): InsertCommandArgument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Data")(Data)
+    __obj.updateDynamic("ReplaceExisting")(ReplaceExisting)
+    __obj.asInstanceOf[InsertCommandArgument]
+  }
+}
+

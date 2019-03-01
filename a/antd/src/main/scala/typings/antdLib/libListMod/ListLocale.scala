@@ -9,3 +9,12 @@ trait ListLocale extends js.Object {
   var emptyText: java.lang.String
 }
 
+object ListLocale {
+  @scala.inline
+  def apply(emptyText: java.lang.String): ListLocale = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("emptyText")(emptyText)
+    __obj.asInstanceOf[ListLocale]
+  }
+}
+

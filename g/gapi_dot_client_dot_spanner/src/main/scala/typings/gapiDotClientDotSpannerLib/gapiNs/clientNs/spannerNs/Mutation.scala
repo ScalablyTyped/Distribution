@@ -36,3 +36,22 @@ trait Mutation extends js.Object {
   var update: js.UndefOr[Write] = js.undefined
 }
 
+object Mutation {
+  @scala.inline
+  def apply(
+    delete: Delete = null,
+    insert: Write = null,
+    insertOrUpdate: Write = null,
+    replace: Write = null,
+    update: Write = null
+  ): Mutation = {
+    val __obj = js.Dynamic.literal()
+    if (delete != null) __obj.updateDynamic("delete")(delete)
+    if (insert != null) __obj.updateDynamic("insert")(insert)
+    if (insertOrUpdate != null) __obj.updateDynamic("insertOrUpdate")(insertOrUpdate)
+    if (replace != null) __obj.updateDynamic("replace")(replace)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Mutation]
+  }
+}
+

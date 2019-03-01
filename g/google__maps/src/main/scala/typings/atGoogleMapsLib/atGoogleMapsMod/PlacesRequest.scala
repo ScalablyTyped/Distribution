@@ -71,3 +71,32 @@ trait PlacesRequest extends js.Object {
   var `type`: js.UndefOr[PlaceType1] = js.undefined
 }
 
+object PlacesRequest {
+  @scala.inline
+  def apply(
+    query: java.lang.String,
+    language: Language = null,
+    location: LatLng = null,
+    maxprice: scala.Int | scala.Double = null,
+    minprice: scala.Int | scala.Double = null,
+    opennow: js.UndefOr[scala.Boolean] = js.undefined,
+    pagetoken: java.lang.String = null,
+    radius: scala.Int | scala.Double = null,
+    region: java.lang.String = null,
+    `type`: PlaceType1 = null
+  ): PlacesRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (maxprice != null) __obj.updateDynamic("maxprice")(maxprice.asInstanceOf[js.Any])
+    if (minprice != null) __obj.updateDynamic("minprice")(minprice.asInstanceOf[js.Any])
+    if (!js.isUndefined(opennow)) __obj.updateDynamic("opennow")(opennow)
+    if (pagetoken != null) __obj.updateDynamic("pagetoken")(pagetoken)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PlacesRequest]
+  }
+}
+

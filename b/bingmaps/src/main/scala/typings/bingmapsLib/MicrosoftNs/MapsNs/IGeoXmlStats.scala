@@ -26,3 +26,30 @@ trait IGeoXmlStats extends js.Object {
   var processingTime: scala.Double
 }
 
+object IGeoXmlStats {
+  @scala.inline
+  def apply(
+    fileSize: scala.Double,
+    numGroundOverlays: scala.Double,
+    numLocations: scala.Double,
+    numNetworkLinks: scala.Double,
+    numPolygons: scala.Double,
+    numPolylines: scala.Double,
+    numPushpins: scala.Double,
+    numScreenOverlays: scala.Double,
+    processingTime: scala.Double
+  ): IGeoXmlStats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileSize")(fileSize)
+    __obj.updateDynamic("numGroundOverlays")(numGroundOverlays)
+    __obj.updateDynamic("numLocations")(numLocations)
+    __obj.updateDynamic("numNetworkLinks")(numNetworkLinks)
+    __obj.updateDynamic("numPolygons")(numPolygons)
+    __obj.updateDynamic("numPolylines")(numPolylines)
+    __obj.updateDynamic("numPushpins")(numPushpins)
+    __obj.updateDynamic("numScreenOverlays")(numScreenOverlays)
+    __obj.updateDynamic("processingTime")(processingTime)
+    __obj.asInstanceOf[IGeoXmlStats]
+  }
+}
+

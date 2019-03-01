@@ -11,3 +11,18 @@ trait MasteryTreeDto extends js.Object {
   var Utility: js.Array[MasteryTreeListDto]
 }
 
+object MasteryTreeDto {
+  @scala.inline
+  def apply(
+    Defense: js.Array[MasteryTreeListDto],
+    Offense: js.Array[MasteryTreeListDto],
+    Utility: js.Array[MasteryTreeListDto]
+  ): MasteryTreeDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Defense")(Defense)
+    __obj.updateDynamic("Offense")(Offense)
+    __obj.updateDynamic("Utility")(Utility)
+    __obj.asInstanceOf[MasteryTreeDto]
+  }
+}
+

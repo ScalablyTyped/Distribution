@@ -144,3 +144,102 @@ trait NotificationChannel
   def setVibratePattern(vibratePattern: js.Array[scala.Double]): scala.Unit
 }
 
+object NotificationChannel {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    bypassDnd: scala.Boolean,
+    description: java.lang.String,
+    enableLights: scala.Boolean,
+    enableVibration: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getBypassDnd: js.Function0[scala.Boolean],
+    getDescription: js.Function0[java.lang.String],
+    getEnableLights: js.Function0[scala.Boolean],
+    getEnableVibration: js.Function0[scala.Boolean],
+    getGroupId: js.Function0[java.lang.String],
+    getId: js.Function0[java.lang.String],
+    getImportance: js.Function0[scala.Double],
+    getLightColor: js.Function0[scala.Double],
+    getLockscreenVisibility: js.Function0[scala.Double],
+    getShowBadge: js.Function0[scala.Boolean],
+    getVibratePattern: js.Function0[js.Array[scala.Double]],
+    groupId: java.lang.String,
+    id: java.lang.String,
+    importance: scala.Double,
+    lightColor: scala.Double,
+    lockscreenVisibility: scala.Double,
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setBypassDnd: js.Function1[scala.Boolean, scala.Unit],
+    setDescription: js.Function1[java.lang.String, scala.Unit],
+    setEnableLights: js.Function1[scala.Boolean, scala.Unit],
+    setEnableVibration: js.Function1[scala.Boolean, scala.Unit],
+    setGroupId: js.Function1[java.lang.String, scala.Unit],
+    setId: js.Function1[java.lang.String, scala.Unit],
+    setImportance: js.Function1[scala.Double, scala.Unit],
+    setLightColor: js.Function1[scala.Double, scala.Unit],
+    setLockscreenVisibility: js.Function1[scala.Double, scala.Unit],
+    setShowBadge: js.Function1[scala.Boolean, scala.Unit],
+    setVibratePattern: js.Function1[js.Array[scala.Double], scala.Unit],
+    showBadge: scala.Boolean,
+    vibratePattern: js.Array[scala.Double],
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): NotificationChannel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("bypassDnd")(bypassDnd)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("enableLights")(enableLights)
+    __obj.updateDynamic("enableVibration")(enableVibration)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getBypassDnd")(getBypassDnd)
+    __obj.updateDynamic("getDescription")(getDescription)
+    __obj.updateDynamic("getEnableLights")(getEnableLights)
+    __obj.updateDynamic("getEnableVibration")(getEnableVibration)
+    __obj.updateDynamic("getGroupId")(getGroupId)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getImportance")(getImportance)
+    __obj.updateDynamic("getLightColor")(getLightColor)
+    __obj.updateDynamic("getLockscreenVisibility")(getLockscreenVisibility)
+    __obj.updateDynamic("getShowBadge")(getShowBadge)
+    __obj.updateDynamic("getVibratePattern")(getVibratePattern)
+    __obj.updateDynamic("groupId")(groupId)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("importance")(importance)
+    __obj.updateDynamic("lightColor")(lightColor)
+    __obj.updateDynamic("lockscreenVisibility")(lockscreenVisibility)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("setBypassDnd")(setBypassDnd)
+    __obj.updateDynamic("setDescription")(setDescription)
+    __obj.updateDynamic("setEnableLights")(setEnableLights)
+    __obj.updateDynamic("setEnableVibration")(setEnableVibration)
+    __obj.updateDynamic("setGroupId")(setGroupId)
+    __obj.updateDynamic("setId")(setId)
+    __obj.updateDynamic("setImportance")(setImportance)
+    __obj.updateDynamic("setLightColor")(setLightColor)
+    __obj.updateDynamic("setLockscreenVisibility")(setLockscreenVisibility)
+    __obj.updateDynamic("setShowBadge")(setShowBadge)
+    __obj.updateDynamic("setVibratePattern")(setVibratePattern)
+    __obj.updateDynamic("showBadge")(showBadge)
+    __obj.updateDynamic("vibratePattern")(vibratePattern)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[NotificationChannel]
+  }
+}
+

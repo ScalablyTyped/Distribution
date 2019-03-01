@@ -12,3 +12,22 @@ trait DiffRemove extends ViewportComponentFullInfo {
   var parentMapUniqueKey: java.lang.String
 }
 
+object DiffRemove {
+  @scala.inline
+  def apply(
+    childs: org.scalablytyped.runtime.StringDictionary[ViewportComponentInfo],
+    componentInfo: ViewportComponentInfo,
+    index: scala.Double,
+    mapUniqueKey: java.lang.String,
+    parentMapUniqueKey: java.lang.String
+  ): DiffRemove = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("childs")(childs)
+    __obj.updateDynamic("componentInfo")(componentInfo)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("mapUniqueKey")(mapUniqueKey)
+    __obj.updateDynamic("parentMapUniqueKey")(parentMapUniqueKey)
+    __obj.asInstanceOf[DiffRemove]
+  }
+}
+

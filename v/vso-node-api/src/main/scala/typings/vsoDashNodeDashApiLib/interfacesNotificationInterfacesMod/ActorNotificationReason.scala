@@ -9,3 +9,18 @@ trait ActorNotificationReason extends NotificationReason {
   var matchedRoles: js.Array[java.lang.String]
 }
 
+object ActorNotificationReason {
+  @scala.inline
+  def apply(
+    matchedRoles: js.Array[java.lang.String],
+    notificationReasonType: NotificationReasonType,
+    targetIdentities: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
+  ): ActorNotificationReason = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("matchedRoles")(matchedRoles)
+    __obj.updateDynamic("notificationReasonType")(notificationReasonType)
+    __obj.updateDynamic("targetIdentities")(targetIdentities)
+    __obj.asInstanceOf[ActorNotificationReason]
+  }
+}
+

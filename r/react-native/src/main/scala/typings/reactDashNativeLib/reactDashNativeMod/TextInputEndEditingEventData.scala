@@ -9,3 +9,12 @@ trait TextInputEndEditingEventData extends js.Object {
   var text: java.lang.String
 }
 
+object TextInputEndEditingEventData {
+  @scala.inline
+  def apply(text: java.lang.String): TextInputEndEditingEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextInputEndEditingEventData]
+  }
+}
+

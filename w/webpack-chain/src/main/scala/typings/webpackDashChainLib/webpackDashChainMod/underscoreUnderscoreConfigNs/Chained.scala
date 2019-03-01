@@ -9,3 +9,12 @@ trait Chained[Parent] extends js.Object {
   def end(): Parent
 }
 
+object Chained {
+  @scala.inline
+  def apply[Parent](end: js.Function0[Parent]): Chained[Parent] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.asInstanceOf[Chained[Parent]]
+  }
+}
+

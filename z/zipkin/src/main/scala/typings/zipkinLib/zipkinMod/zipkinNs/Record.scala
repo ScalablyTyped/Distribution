@@ -11,3 +11,14 @@ trait Record extends js.Object {
   var traceId: TraceId
 }
 
+object Record {
+  @scala.inline
+  def apply(annotation: IAnnotation, timestamp: scala.Double, traceId: TraceId): Record = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotation")(annotation)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.updateDynamic("traceId")(traceId)
+    __obj.asInstanceOf[Record]
+  }
+}
+

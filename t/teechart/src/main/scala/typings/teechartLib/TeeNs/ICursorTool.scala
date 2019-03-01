@@ -18,3 +18,44 @@ trait ICursorTool extends ITool {
   def setRender(render: java.lang.String): scala.Unit
 }
 
+object ICursorTool {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    chart: IChart,
+    clicked: js.Function1[IPoint, scala.Boolean],
+    direction: java.lang.String,
+    dragging: scala.Double,
+    draw: js.Function0[scala.Unit],
+    followMouse: scala.Boolean,
+    format: IFormat,
+    horizAxis: IAxis,
+    mousedown: js.Function1[js.Any, scala.Boolean],
+    mousemove: js.Function1[js.Any, scala.Boolean],
+    over: js.Function1[IPoint, scala.Boolean],
+    render: java.lang.String,
+    setRender: js.Function1[java.lang.String, scala.Unit],
+    size: IPoint,
+    vertAxis: IAxis
+  ): ICursorTool = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("clicked")(clicked)
+    __obj.updateDynamic("direction")(direction)
+    __obj.updateDynamic("dragging")(dragging)
+    __obj.updateDynamic("draw")(draw)
+    __obj.updateDynamic("followMouse")(followMouse)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("horizAxis")(horizAxis)
+    __obj.updateDynamic("mousedown")(mousedown)
+    __obj.updateDynamic("mousemove")(mousemove)
+    __obj.updateDynamic("over")(over)
+    __obj.updateDynamic("render")(render)
+    __obj.updateDynamic("setRender")(setRender)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("vertAxis")(vertAxis)
+    __obj.asInstanceOf[ICursorTool]
+  }
+}
+

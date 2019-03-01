@@ -29,3 +29,26 @@ trait PasteEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PasteEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    name: js.Array[java.lang.String] = null,
+    selectedItems: js.Any = null,
+    targetFolder: js.Any = null,
+    targetPath: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): PasteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
+    if (targetFolder != null) __obj.updateDynamic("targetFolder")(targetFolder)
+    if (targetPath != null) __obj.updateDynamic("targetPath")(targetPath)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[PasteEventArgs]
+  }
+}
+

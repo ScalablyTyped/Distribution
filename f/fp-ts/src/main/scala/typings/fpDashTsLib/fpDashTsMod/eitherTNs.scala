@@ -83,6 +83,9 @@ object eitherTNs extends js.Object {
   def getEitherT[M](M: fpDashTsLib.libMonadMod.Monad[M]): fpDashTsLib.libEitherTMod.EitherT[M] = js.native
   def getEitherT[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): fpDashTsLib.libEitherTMod.EitherT1[M] = js.native
   def getEitherT[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): fpDashTsLib.libEitherTMod.EitherT2[M] = js.native
+  def getEitherT2v[M](M: fpDashTsLib.libMonadMod.Monad[M]): fpDashTsLib.libEitherTMod.EitherT2v[M] = js.native
+  def getEitherT2v[M /* <: fpDashTsLib.libHKTMod.URIS */](M: fpDashTsLib.libMonadMod.Monad1[M]): fpDashTsLib.libEitherTMod.EitherT2v1[M] = js.native
+  def getEitherT2v[M /* <: fpDashTsLib.libHKTMod.URIS2 */](M: fpDashTsLib.libMonadMod.Monad2[M]): fpDashTsLib.libEitherTMod.EitherT2v2[M] = js.native
   def left[F](F: fpDashTsLib.libFunctorMod.Functor[F]): js.Function1[
     /* fl */ fpDashTsLib.libHKTMod.HKT[F, _], 
     fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libEitherMod.Either[_, _]]

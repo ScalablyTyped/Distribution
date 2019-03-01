@@ -11,3 +11,14 @@ trait Credentials extends js.Object {
   var username: java.lang.String
 }
 
+object Credentials {
+  @scala.inline
+  def apply(password: java.lang.String, username: java.lang.String, authzid: java.lang.String = null): Credentials = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("username")(username)
+    if (authzid != null) __obj.updateDynamic("authzid")(authzid)
+    __obj.asInstanceOf[Credentials]
+  }
+}
+

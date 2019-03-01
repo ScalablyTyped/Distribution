@@ -10,40 +10,52 @@ object subscribeDashUiDashEventLibStrings {
   sealed trait Empty extends js.Object
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait resize
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.UIEventType
   
   @js.native
-  sealed trait resizeEnd extends js.Object
+  sealed trait resizeEnd
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.UIEventType
   
   @js.native
-  sealed trait resizeStart extends js.Object
+  sealed trait resizeStart
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.UIEventType
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scroll
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.UIEventType
   
   @js.native
-  sealed trait scrollEnd extends js.Object
+  sealed trait scrollEnd
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.UIEventType
   
   @js.native
-  sealed trait scrollStart extends js.Object
+  sealed trait scrollStart
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.UIEventType
   
   @js.native
-  sealed trait touchend extends js.Object
+  sealed trait touchend
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.TouchEventType
   
   @js.native
-  sealed trait touchmove extends js.Object
+  sealed trait touchmove
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.TouchEventType
   
   @js.native
-  sealed trait touchmoveEnd extends js.Object
+  sealed trait touchmoveEnd
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.TouchEventType
   
   @js.native
-  sealed trait touchmoveStart extends js.Object
+  sealed trait touchmoveStart
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.TouchEventType
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchstart
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.TouchEventType
   
   @js.native
-  sealed trait visibilitychange extends js.Object
+  sealed trait visibilitychange
+    extends subscribeDashUiDashEventLib.subscribeDashUiDashEventMod.UIEventType
   
   @js.native
   sealed trait x extends js.Object

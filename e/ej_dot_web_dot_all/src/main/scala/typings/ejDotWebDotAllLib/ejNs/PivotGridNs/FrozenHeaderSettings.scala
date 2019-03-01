@@ -24,3 +24,20 @@ trait FrozenHeaderSettings extends js.Object {
   var scrollerSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FrozenHeaderSettings {
+  @scala.inline
+  def apply(
+    enableFrozenColumnHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFrozenHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFrozenRowHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollerSize: scala.Int | scala.Double = null
+  ): FrozenHeaderSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableFrozenColumnHeaders)) __obj.updateDynamic("enableFrozenColumnHeaders")(enableFrozenColumnHeaders)
+    if (!js.isUndefined(enableFrozenHeaders)) __obj.updateDynamic("enableFrozenHeaders")(enableFrozenHeaders)
+    if (!js.isUndefined(enableFrozenRowHeaders)) __obj.updateDynamic("enableFrozenRowHeaders")(enableFrozenRowHeaders)
+    if (scrollerSize != null) __obj.updateDynamic("scrollerSize")(scrollerSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FrozenHeaderSettings]
+  }
+}
+

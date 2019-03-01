@@ -21,3 +21,38 @@ trait Anon_FieldModelFieldType extends js.Object {
   var WorkItemTypeModel: js.Any
 }
 
+object Anon_FieldModelFieldType {
+  @scala.inline
+  def apply(
+    FieldModel: js.Any,
+    FieldType: Anon_EnumValuesAnonBooleanDateTimeDoubleGuidHistory,
+    FormLayout: js.Any,
+    GetBehaviorsExpand: Anon_EnumValuesAnonFieldsNone,
+    GetProcessExpandLevel: Anon_EnumValuesAnonNoneProjects,
+    GetWorkItemTypeExpand: Anon_EnumValuesAnonBehaviors,
+    Page: js.Any,
+    PageType: Anon_EnumValuesAnonAttachments,
+    ProcessClass: Anon_EnumValuesAnonCustomDerived,
+    ProcessModel: js.Any,
+    ProcessProperties: js.Any,
+    WorkItemTypeClass: Anon_EnumValuesAnonCustomDerived,
+    WorkItemTypeModel: js.Any
+  ): Anon_FieldModelFieldType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FieldModel")(FieldModel)
+    __obj.updateDynamic("FieldType")(FieldType)
+    __obj.updateDynamic("FormLayout")(FormLayout)
+    __obj.updateDynamic("GetBehaviorsExpand")(GetBehaviorsExpand)
+    __obj.updateDynamic("GetProcessExpandLevel")(GetProcessExpandLevel)
+    __obj.updateDynamic("GetWorkItemTypeExpand")(GetWorkItemTypeExpand)
+    __obj.updateDynamic("Page")(Page)
+    __obj.updateDynamic("PageType")(PageType)
+    __obj.updateDynamic("ProcessClass")(ProcessClass)
+    __obj.updateDynamic("ProcessModel")(ProcessModel)
+    __obj.updateDynamic("ProcessProperties")(ProcessProperties)
+    __obj.updateDynamic("WorkItemTypeClass")(WorkItemTypeClass)
+    __obj.updateDynamic("WorkItemTypeModel")(WorkItemTypeModel)
+    __obj.asInstanceOf[Anon_FieldModelFieldType]
+  }
+}
+

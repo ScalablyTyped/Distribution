@@ -32,3 +32,30 @@ trait Instance extends js.Object {
   var webInstance: js.UndefOr[InstanceWebDetails] = js.undefined
 }
 
+object Instance {
+  @scala.inline
+  def apply(
+    acquisitionUri: java.lang.String = null,
+    androidInstance: InstanceAndroidDetails = null,
+    iosInstance: InstanceIosDetails = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    platformType: java.lang.String = null,
+    realtimePlay: js.UndefOr[scala.Boolean] = js.undefined,
+    turnBasedPlay: js.UndefOr[scala.Boolean] = js.undefined,
+    webInstance: InstanceWebDetails = null
+  ): Instance = {
+    val __obj = js.Dynamic.literal()
+    if (acquisitionUri != null) __obj.updateDynamic("acquisitionUri")(acquisitionUri)
+    if (androidInstance != null) __obj.updateDynamic("androidInstance")(androidInstance)
+    if (iosInstance != null) __obj.updateDynamic("iosInstance")(iosInstance)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
+    if (!js.isUndefined(realtimePlay)) __obj.updateDynamic("realtimePlay")(realtimePlay)
+    if (!js.isUndefined(turnBasedPlay)) __obj.updateDynamic("turnBasedPlay")(turnBasedPlay)
+    if (webInstance != null) __obj.updateDynamic("webInstance")(webInstance)
+    __obj.asInstanceOf[Instance]
+  }
+}
+

@@ -16,3 +16,29 @@ trait ResellernotifyResource extends js.Object {
   def unregister(request: gapiDotClientDotResellerLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[ResellernotifyResource]
 }
 
+object ResellernotifyResource {
+  @scala.inline
+  def apply(
+    getwatchdetails: js.Function1[
+      gapiDotClientDotResellerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResellernotifyGetwatchdetailsResponse]
+    ],
+    register: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResellernotifyResource]
+    ],
+    unregister: js.Function1[
+      gapiDotClientDotResellerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResellernotifyResource]
+    ],
+    topicName: java.lang.String = null
+  ): ResellernotifyResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getwatchdetails")(getwatchdetails)
+    __obj.updateDynamic("register")(register)
+    __obj.updateDynamic("unregister")(unregister)
+    if (topicName != null) __obj.updateDynamic("topicName")(topicName)
+    __obj.asInstanceOf[ResellernotifyResource]
+  }
+}
+

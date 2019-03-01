@@ -11,3 +11,18 @@ trait json extends js.Object {
   var value: js.UndefOr[java.lang.String | scala.Double | scala.Boolean] = js.undefined
 }
 
+object json {
+  @scala.inline
+  def apply(
+    conditions: js.Object = null,
+    path: java.lang.String = null,
+    value: java.lang.String | scala.Double | scala.Boolean = null
+  ): json = {
+    val __obj = js.Dynamic.literal()
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[json]
+  }
+}
+

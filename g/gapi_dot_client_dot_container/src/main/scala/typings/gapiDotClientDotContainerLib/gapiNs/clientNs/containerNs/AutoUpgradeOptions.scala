@@ -19,3 +19,13 @@ trait AutoUpgradeOptions extends js.Object {
   var description: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AutoUpgradeOptions {
+  @scala.inline
+  def apply(autoUpgradeStartTime: java.lang.String = null, description: java.lang.String = null): AutoUpgradeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (autoUpgradeStartTime != null) __obj.updateDynamic("autoUpgradeStartTime")(autoUpgradeStartTime)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[AutoUpgradeOptions]
+  }
+}
+

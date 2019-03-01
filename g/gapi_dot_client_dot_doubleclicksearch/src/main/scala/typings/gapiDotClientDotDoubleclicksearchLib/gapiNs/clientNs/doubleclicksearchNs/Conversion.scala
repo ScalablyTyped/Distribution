@@ -89,3 +89,78 @@ trait Conversion extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Conversion {
+  @scala.inline
+  def apply(
+    adGroupId: java.lang.String = null,
+    adId: java.lang.String = null,
+    advertiserId: java.lang.String = null,
+    agencyId: java.lang.String = null,
+    attributionModel: java.lang.String = null,
+    campaignId: java.lang.String = null,
+    channel: java.lang.String = null,
+    clickId: java.lang.String = null,
+    conversionId: java.lang.String = null,
+    conversionModifiedTimestamp: java.lang.String = null,
+    conversionTimestamp: java.lang.String = null,
+    countMillis: java.lang.String = null,
+    criterionId: java.lang.String = null,
+    currencyCode: java.lang.String = null,
+    customDimension: js.Array[CustomDimension] = null,
+    customMetric: js.Array[CustomMetric] = null,
+    deviceType: java.lang.String = null,
+    dsConversionId: java.lang.String = null,
+    engineAccountId: java.lang.String = null,
+    floodlightOrderId: java.lang.String = null,
+    inventoryAccountId: java.lang.String = null,
+    productCountry: java.lang.String = null,
+    productGroupId: java.lang.String = null,
+    productId: java.lang.String = null,
+    productLanguage: java.lang.String = null,
+    quantityMillis: java.lang.String = null,
+    revenueMicros: java.lang.String = null,
+    segmentationId: java.lang.String = null,
+    segmentationName: java.lang.String = null,
+    segmentationType: java.lang.String = null,
+    state: java.lang.String = null,
+    storeId: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Conversion = {
+    val __obj = js.Dynamic.literal()
+    if (adGroupId != null) __obj.updateDynamic("adGroupId")(adGroupId)
+    if (adId != null) __obj.updateDynamic("adId")(adId)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
+    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId)
+    if (attributionModel != null) __obj.updateDynamic("attributionModel")(attributionModel)
+    if (campaignId != null) __obj.updateDynamic("campaignId")(campaignId)
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (clickId != null) __obj.updateDynamic("clickId")(clickId)
+    if (conversionId != null) __obj.updateDynamic("conversionId")(conversionId)
+    if (conversionModifiedTimestamp != null) __obj.updateDynamic("conversionModifiedTimestamp")(conversionModifiedTimestamp)
+    if (conversionTimestamp != null) __obj.updateDynamic("conversionTimestamp")(conversionTimestamp)
+    if (countMillis != null) __obj.updateDynamic("countMillis")(countMillis)
+    if (criterionId != null) __obj.updateDynamic("criterionId")(criterionId)
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (customDimension != null) __obj.updateDynamic("customDimension")(customDimension)
+    if (customMetric != null) __obj.updateDynamic("customMetric")(customMetric)
+    if (deviceType != null) __obj.updateDynamic("deviceType")(deviceType)
+    if (dsConversionId != null) __obj.updateDynamic("dsConversionId")(dsConversionId)
+    if (engineAccountId != null) __obj.updateDynamic("engineAccountId")(engineAccountId)
+    if (floodlightOrderId != null) __obj.updateDynamic("floodlightOrderId")(floodlightOrderId)
+    if (inventoryAccountId != null) __obj.updateDynamic("inventoryAccountId")(inventoryAccountId)
+    if (productCountry != null) __obj.updateDynamic("productCountry")(productCountry)
+    if (productGroupId != null) __obj.updateDynamic("productGroupId")(productGroupId)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (productLanguage != null) __obj.updateDynamic("productLanguage")(productLanguage)
+    if (quantityMillis != null) __obj.updateDynamic("quantityMillis")(quantityMillis)
+    if (revenueMicros != null) __obj.updateDynamic("revenueMicros")(revenueMicros)
+    if (segmentationId != null) __obj.updateDynamic("segmentationId")(segmentationId)
+    if (segmentationName != null) __obj.updateDynamic("segmentationName")(segmentationName)
+    if (segmentationType != null) __obj.updateDynamic("segmentationType")(segmentationType)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (storeId != null) __obj.updateDynamic("storeId")(storeId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Conversion]
+  }
+}
+

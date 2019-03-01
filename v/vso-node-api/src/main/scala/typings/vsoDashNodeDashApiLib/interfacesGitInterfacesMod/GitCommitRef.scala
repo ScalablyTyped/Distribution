@@ -60,3 +60,38 @@ trait GitCommitRef extends js.Object {
   var workItems: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ResourceRef]
 }
 
+object GitCommitRef {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    author: GitUserDate,
+    changeCounts: ChangeCountDictionary,
+    changes: js.Array[GitChange],
+    comment: java.lang.String,
+    commentTruncated: scala.Boolean,
+    commitId: java.lang.String,
+    committer: GitUserDate,
+    parents: js.Array[java.lang.String],
+    remoteUrl: java.lang.String,
+    statuses: js.Array[GitStatus],
+    url: java.lang.String,
+    workItems: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.ResourceRef]
+  ): GitCommitRef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("author")(author)
+    __obj.updateDynamic("changeCounts")(changeCounts)
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("commentTruncated")(commentTruncated)
+    __obj.updateDynamic("commitId")(commitId)
+    __obj.updateDynamic("committer")(committer)
+    __obj.updateDynamic("parents")(parents)
+    __obj.updateDynamic("remoteUrl")(remoteUrl)
+    __obj.updateDynamic("statuses")(statuses)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("workItems")(workItems)
+    __obj.asInstanceOf[GitCommitRef]
+  }
+}
+

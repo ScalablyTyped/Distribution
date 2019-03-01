@@ -77,3 +77,34 @@ trait IGridOptions extends js.Object {
   var selectionRowHeaderWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(
+    enableFooterTotalSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFullRowSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowHeaderSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSelectAll: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSelectionBatchEvent: js.UndefOr[scala.Boolean] = js.undefined,
+    isRowSelectable: js.Function1[/* row */ IGridRow, scala.Boolean] = null,
+    modifierKeysToMultiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    multiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    noUnselect: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionRowHeaderWidth: scala.Int | scala.Double = null
+  ): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableFooterTotalSelected)) __obj.updateDynamic("enableFooterTotalSelected")(enableFooterTotalSelected)
+    if (!js.isUndefined(enableFullRowSelection)) __obj.updateDynamic("enableFullRowSelection")(enableFullRowSelection)
+    if (!js.isUndefined(enableRowHeaderSelection)) __obj.updateDynamic("enableRowHeaderSelection")(enableRowHeaderSelection)
+    if (!js.isUndefined(enableRowSelection)) __obj.updateDynamic("enableRowSelection")(enableRowSelection)
+    if (!js.isUndefined(enableSelectAll)) __obj.updateDynamic("enableSelectAll")(enableSelectAll)
+    if (!js.isUndefined(enableSelectionBatchEvent)) __obj.updateDynamic("enableSelectionBatchEvent")(enableSelectionBatchEvent)
+    if (isRowSelectable != null) __obj.updateDynamic("isRowSelectable")(isRowSelectable)
+    if (!js.isUndefined(modifierKeysToMultiSelect)) __obj.updateDynamic("modifierKeysToMultiSelect")(modifierKeysToMultiSelect)
+    if (!js.isUndefined(multiSelect)) __obj.updateDynamic("multiSelect")(multiSelect)
+    if (!js.isUndefined(noUnselect)) __obj.updateDynamic("noUnselect")(noUnselect)
+    if (selectionRowHeaderWidth != null) __obj.updateDynamic("selectionRowHeaderWidth")(selectionRowHeaderWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

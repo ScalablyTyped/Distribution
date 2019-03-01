@@ -11,3 +11,13 @@ trait AllDocsMeta extends js.Object {
   var _conflicts: js.UndefOr[js.Array[RevisionId]] = js.undefined
 }
 
+object AllDocsMeta {
+  @scala.inline
+  def apply(_attachments: Attachments = null, _conflicts: js.Array[RevisionId] = null): AllDocsMeta = {
+    val __obj = js.Dynamic.literal()
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
+    if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts)
+    __obj.asInstanceOf[AllDocsMeta]
+  }
+}
+

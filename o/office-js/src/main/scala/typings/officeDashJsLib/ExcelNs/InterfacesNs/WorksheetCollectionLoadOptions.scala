@@ -105,3 +105,38 @@ trait WorksheetCollectionLoadOptions extends js.Object {
   var visibility: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WorksheetCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    charts: ChartCollectionLoadOptions = null,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    position: js.UndefOr[scala.Boolean] = js.undefined,
+    protection: WorksheetProtectionLoadOptions = null,
+    showGridlines: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeadings: js.UndefOr[scala.Boolean] = js.undefined,
+    standardHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    standardWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    tabColor: js.UndefOr[scala.Boolean] = js.undefined,
+    tables: TableCollectionLoadOptions = null,
+    visibility: js.UndefOr[scala.Boolean] = js.undefined
+  ): WorksheetCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (charts != null) __obj.updateDynamic("charts")(charts)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(position)) __obj.updateDynamic("position")(position)
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
+    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)
+    if (!js.isUndefined(standardHeight)) __obj.updateDynamic("standardHeight")(standardHeight)
+    if (!js.isUndefined(standardWidth)) __obj.updateDynamic("standardWidth")(standardWidth)
+    if (!js.isUndefined(tabColor)) __obj.updateDynamic("tabColor")(tabColor)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (!js.isUndefined(visibility)) __obj.updateDynamic("visibility")(visibility)
+    __obj.asInstanceOf[WorksheetCollectionLoadOptions]
+  }
+}
+

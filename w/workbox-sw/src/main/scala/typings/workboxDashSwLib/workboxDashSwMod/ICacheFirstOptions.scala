@@ -15,3 +15,18 @@ trait ICacheFirstOptions extends ICacheOnlyOptions {
   var fetchOptions: stdLib.RequestInit
 }
 
+object ICacheFirstOptions {
+  @scala.inline
+  def apply(
+    cacheName: java.lang.String,
+    fetchOptions: stdLib.RequestInit,
+    plugins: js.Array[workboxDashSwLib.Plugin]
+  ): ICacheFirstOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cacheName")(cacheName)
+    __obj.updateDynamic("fetchOptions")(fetchOptions)
+    __obj.updateDynamic("plugins")(plugins)
+    __obj.asInstanceOf[ICacheFirstOptions]
+  }
+}
+

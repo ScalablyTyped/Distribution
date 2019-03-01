@@ -9,3 +9,12 @@ trait Anon_Val extends js.Object {
   def valueFunction(`val`: java.lang.String): js.Any
 }
 
+object Anon_Val {
+  @scala.inline
+  def apply(valueFunction: js.Function1[java.lang.String, js.Any]): Anon_Val = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("valueFunction")(valueFunction)
+    __obj.asInstanceOf[Anon_Val]
+  }
+}
+

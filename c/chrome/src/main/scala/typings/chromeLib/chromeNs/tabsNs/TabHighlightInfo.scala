@@ -10,3 +10,13 @@ trait TabHighlightInfo extends js.Object {
   var windowId: scala.Double
 }
 
+object TabHighlightInfo {
+  @scala.inline
+  def apply(tabIds: js.Array[scala.Double], windowId: scala.Double): TabHighlightInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabIds")(tabIds)
+    __obj.updateDynamic("windowId")(windowId)
+    __obj.asInstanceOf[TabHighlightInfo]
+  }
+}
+

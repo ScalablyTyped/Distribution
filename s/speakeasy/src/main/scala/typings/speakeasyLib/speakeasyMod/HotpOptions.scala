@@ -20,3 +20,28 @@ trait HotpOptions extends DigestOptions {
   var length: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HotpOptions {
+  @scala.inline
+  def apply(
+    counter: scala.Double,
+    secret: java.lang.String,
+    algorithm: Algorithm = null,
+    digest: nodeLib.Buffer = null,
+    digits: scala.Int | scala.Double = null,
+    encoding: Encoding = null,
+    key: java.lang.String = null,
+    length: scala.Int | scala.Double = null
+  ): HotpOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("counter")(counter)
+    __obj.updateDynamic("secret")(secret)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (digest != null) __obj.updateDynamic("digest")(digest)
+    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HotpOptions]
+  }
+}
+

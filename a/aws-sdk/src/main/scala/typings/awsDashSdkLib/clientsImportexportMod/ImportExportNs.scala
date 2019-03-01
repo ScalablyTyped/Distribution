@@ -227,6 +227,10 @@ object ImportExportNs extends js.Object {
     var WarningMessage: js.UndefOr[WarningMessage] = js.undefined
   }
   
+  trait _JobType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type APIVersion = java.lang.String
   type ArtifactList = js.Array[Artifact]
@@ -241,7 +245,7 @@ object ImportExportNs extends js.Object {
   type IsTruncated = scala.Boolean
   type JobId = java.lang.String
   type JobIdList = js.Array[GenericString]
-  type JobType = awsDashSdkLib.awsDashSdkLibStrings.Import | awsDashSdkLib.awsDashSdkLibStrings.Export | java.lang.String
+  type JobType = _JobType | java.lang.String
   type JobsList = js.Array[Job]
   type LocationCode = java.lang.String
   type LocationMessage = java.lang.String
@@ -260,7 +264,7 @@ object ImportExportNs extends js.Object {
   type URL = java.lang.String
   type ValidateOnly = scala.Boolean
   type WarningMessage = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2010-06-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type city = java.lang.String
   type company = java.lang.String
   type country = java.lang.String

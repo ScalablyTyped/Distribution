@@ -56,3 +56,20 @@ trait Document extends js.Object {
   var updateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Document {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    fields: stdLib.Record[java.lang.String, Value] = null,
+    name: java.lang.String = null,
+    updateTime: java.lang.String = null
+  ): Document = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    __obj.asInstanceOf[Document]
+  }
+}
+

@@ -23,3 +23,38 @@ trait PopoverProps extends js.Object {
   var zDepth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PopoverProps {
+  @scala.inline
+  def apply(
+    anchorEl: reactLib.reactMod.ReactNs.ReactInstance = null,
+    anchorOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    animation: reactLib.reactMod.ReactNs.ComponentClass[PopoverAnimationProps, reactLib.reactMod.ReactNs.ComponentState] = null,
+    autoCloseWhenOffScreen: js.UndefOr[scala.Boolean] = js.undefined,
+    canAutoPosition: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    onRequestClose: js.Function1[/* reason */ java.lang.String, scala.Unit] = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    targetOrigin: materialDashUiLib.underscoreUnderscoreMaterialUINs.propTypesNs.origin = null,
+    useLayerForClickAway: js.UndefOr[scala.Boolean] = js.undefined,
+    zDepth: scala.Int | scala.Double = null
+  ): PopoverProps = {
+    val __obj = js.Dynamic.literal()
+    if (anchorEl != null) __obj.updateDynamic("anchorEl")(anchorEl.asInstanceOf[js.Any])
+    if (anchorOrigin != null) __obj.updateDynamic("anchorOrigin")(anchorOrigin)
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(autoCloseWhenOffScreen)) __obj.updateDynamic("autoCloseWhenOffScreen")(autoCloseWhenOffScreen)
+    if (!js.isUndefined(canAutoPosition)) __obj.updateDynamic("canAutoPosition")(canAutoPosition)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(onRequestClose)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (targetOrigin != null) __obj.updateDynamic("targetOrigin")(targetOrigin)
+    if (!js.isUndefined(useLayerForClickAway)) __obj.updateDynamic("useLayerForClickAway")(useLayerForClickAway)
+    if (zDepth != null) __obj.updateDynamic("zDepth")(zDepth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PopoverProps]
+  }
+}
+

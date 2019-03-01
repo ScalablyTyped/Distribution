@@ -14,3 +14,24 @@ trait ESCOption extends js.Object {
   var startAt: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ESCOption {
+  @scala.inline
+  def apply(
+    pin: scala.Double | java.lang.String,
+    controller: java.lang.String = null,
+    device: java.lang.String = null,
+    neutral: scala.Int | scala.Double = null,
+    range: js.Array[scala.Double] = null,
+    startAt: scala.Int | scala.Double = null
+  ): ESCOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pin")(pin.asInstanceOf[js.Any])
+    if (controller != null) __obj.updateDynamic("controller")(controller)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (neutral != null) __obj.updateDynamic("neutral")(neutral.asInstanceOf[js.Any])
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (startAt != null) __obj.updateDynamic("startAt")(startAt.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ESCOption]
+  }
+}
+

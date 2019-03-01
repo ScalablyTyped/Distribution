@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RGBColor extends Color {
+trait RGBColor
+  extends Color
+     with ColorSpaceObject {
   /**
     * Value of blue channel
     */

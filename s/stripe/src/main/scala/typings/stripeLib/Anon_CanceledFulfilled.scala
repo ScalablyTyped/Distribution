@@ -28,3 +28,20 @@ trait Anon_CanceledFulfilled extends js.Object {
   var returned: js.UndefOr[stripeLib.stripeMod.StripeNs.IDateFilter] = js.undefined
 }
 
+object Anon_CanceledFulfilled {
+  @scala.inline
+  def apply(
+    canceled: stripeLib.stripeMod.StripeNs.IDateFilter = null,
+    fulfilled: stripeLib.stripeMod.StripeNs.IDateFilter = null,
+    paid: stripeLib.stripeMod.StripeNs.IDateFilter = null,
+    returned: stripeLib.stripeMod.StripeNs.IDateFilter = null
+  ): Anon_CanceledFulfilled = {
+    val __obj = js.Dynamic.literal()
+    if (canceled != null) __obj.updateDynamic("canceled")(canceled.asInstanceOf[js.Any])
+    if (fulfilled != null) __obj.updateDynamic("fulfilled")(fulfilled.asInstanceOf[js.Any])
+    if (paid != null) __obj.updateDynamic("paid")(paid.asInstanceOf[js.Any])
+    if (returned != null) __obj.updateDynamic("returned")(returned.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_CanceledFulfilled]
+  }
+}
+

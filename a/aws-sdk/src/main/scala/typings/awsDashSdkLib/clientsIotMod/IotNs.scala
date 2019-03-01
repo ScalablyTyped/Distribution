@@ -9645,12 +9645,80 @@ object IotNs extends js.Object {
     var violationId: js.UndefOr[ViolationId] = js.undefined
   }
   
+  trait _ActionType extends js.Object
+  
+  trait _AuditCheckRunStatus extends js.Object
+  
+  trait _AuditFindingSeverity extends js.Object
+  
+  trait _AuditFrequency extends js.Object
+  
+  trait _AuditTaskStatus extends js.Object
+  
+  trait _AuditTaskType extends js.Object
+  
+  trait _AuthDecision extends js.Object
+  
+  trait _AuthorizerStatus extends js.Object
+  
+  trait _AutoRegistrationStatus extends js.Object
+  
+  trait _CACertificateStatus extends js.Object
+  
+  trait _CannedAccessControlList extends js.Object
+  
+  trait _CertificateStatus extends js.Object
+  
+  trait _ComparisonOperator extends js.Object
+  
+  trait _DayOfWeek extends js.Object
+  
+  trait _DynamicGroupStatus extends js.Object
+  
+  trait _DynamoKeyType extends js.Object
+  
+  trait _EventType extends js.Object
+  
+  trait _IndexStatus extends js.Object
+  
+  trait _JobExecutionFailureType extends js.Object
+  
+  trait _JobExecutionStatus extends js.Object
+  
+  trait _JobStatus extends js.Object
+  
+  trait _LogLevel extends js.Object
+  
+  trait _LogTargetType extends js.Object
+  
+  trait _MessageFormat extends js.Object
+  
+  trait _OTAUpdateStatus extends js.Object
+  
+  trait _ReportType extends js.Object
+  
+  trait _ResourceType extends js.Object
+  
+  trait _Status extends js.Object
+  
+  trait _TargetSelection extends js.Object
+  
+  trait _ThingConnectivityIndexingMode extends js.Object
+  
+  trait _ThingGroupIndexingMode extends js.Object
+  
+  trait _ThingIndexingMode extends js.Object
+  
+  trait _ViolationEventType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AbortAction = awsDashSdkLib.awsDashSdkLibStrings.CANCEL | java.lang.String
   type AbortCriteriaList = js.Array[AbortCriteria]
   type AbortThresholdPercentage = scala.Double
   type ActionList = js.Array[Action]
-  type ActionType = awsDashSdkLib.awsDashSdkLibStrings.PUBLISH | awsDashSdkLib.awsDashSdkLibStrings.SUBSCRIBE | awsDashSdkLib.awsDashSdkLibStrings.RECEIVE | awsDashSdkLib.awsDashSdkLibStrings.CONNECT | java.lang.String
+  type ActionType = _ActionType | java.lang.String
   type ActiveViolations = js.Array[ActiveViolation]
   type AdditionalMetricsToRetainList = js.Array[BehaviorMetric]
   type AlarmName = java.lang.String
@@ -9663,24 +9731,24 @@ object IotNs extends js.Object {
   type AttributeName = java.lang.String
   type AttributeValue = java.lang.String
   type AuditCheckName = java.lang.String
-  type AuditCheckRunStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.WAITING_FOR_DATA_COLLECTION | awsDashSdkLib.awsDashSdkLibStrings.CANCELED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED_COMPLIANT | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED_NON_COMPLIANT | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
-  type AuditFindingSeverity = awsDashSdkLib.awsDashSdkLibStrings.CRITICAL | awsDashSdkLib.awsDashSdkLibStrings.HIGH | awsDashSdkLib.awsDashSdkLibStrings.MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.LOW | java.lang.String
+  type AuditCheckRunStatus = _AuditCheckRunStatus | java.lang.String
+  type AuditFindingSeverity = _AuditFindingSeverity | java.lang.String
   type AuditFindings = js.Array[AuditFinding]
-  type AuditFrequency = awsDashSdkLib.awsDashSdkLibStrings.DAILY | awsDashSdkLib.awsDashSdkLibStrings.WEEKLY | awsDashSdkLib.awsDashSdkLibStrings.BIWEEKLY | awsDashSdkLib.awsDashSdkLibStrings.MONTHLY | java.lang.String
+  type AuditFrequency = _AuditFrequency | java.lang.String
   type AuditNotificationType = awsDashSdkLib.awsDashSdkLibStrings.SNS | java.lang.String
   type AuditTaskId = java.lang.String
   type AuditTaskMetadataList = js.Array[AuditTaskMetadata]
-  type AuditTaskStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.CANCELED | java.lang.String
-  type AuditTaskType = awsDashSdkLib.awsDashSdkLibStrings.ON_DEMAND_AUDIT_TASK | awsDashSdkLib.awsDashSdkLibStrings.SCHEDULED_AUDIT_TASK | java.lang.String
-  type AuthDecision = awsDashSdkLib.awsDashSdkLibStrings.ALLOWED | awsDashSdkLib.awsDashSdkLibStrings.EXPLICIT_DENY | awsDashSdkLib.awsDashSdkLibStrings.IMPLICIT_DENY | java.lang.String
+  type AuditTaskStatus = _AuditTaskStatus | java.lang.String
+  type AuditTaskType = _AuditTaskType | java.lang.String
+  type AuthDecision = _AuthDecision | java.lang.String
   type AuthInfos = js.Array[AuthInfo]
   type AuthResults = js.Array[AuthResult]
   type AuthorizerArn = java.lang.String
   type AuthorizerFunctionArn = java.lang.String
   type AuthorizerName = java.lang.String
-  type AuthorizerStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
+  type AuthorizerStatus = _AuthorizerStatus | java.lang.String
   type Authorizers = js.Array[AuthorizerSummary]
-  type AutoRegistrationStatus = awsDashSdkLib.awsDashSdkLibStrings.ENABLE | awsDashSdkLib.awsDashSdkLibStrings.DISABLE | java.lang.String
+  type AutoRegistrationStatus = _AutoRegistrationStatus | java.lang.String
   type AwsAccountId = java.lang.String
   type AwsArn = java.lang.String
   type AwsIotJobArn = java.lang.String
@@ -9696,18 +9764,18 @@ object IotNs extends js.Object {
   type BillingGroupNameAndArnList = js.Array[GroupNameAndArn]
   type Boolean = scala.Boolean
   type BucketName = java.lang.String
-  type CACertificateStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | java.lang.String
+  type CACertificateStatus = _CACertificateStatus | java.lang.String
   type CACertificates = js.Array[CACertificate]
   type CanceledChecksCount = scala.Double
   type CanceledThings = scala.Double
-  type CannedAccessControlList = awsDashSdkLib.awsDashSdkLibStrings.`private` | awsDashSdkLib.awsDashSdkLibStrings.`public-read` | awsDashSdkLib.awsDashSdkLibStrings.`public-read-write` | awsDashSdkLib.awsDashSdkLibStrings.`aws-exec-read` | awsDashSdkLib.awsDashSdkLibStrings.`authenticated-read` | awsDashSdkLib.awsDashSdkLibStrings.`bucket-owner-read` | awsDashSdkLib.awsDashSdkLibStrings.`bucket-owner-full-control` | awsDashSdkLib.awsDashSdkLibStrings.`log-delivery-write` | java.lang.String
+  type CannedAccessControlList = _CannedAccessControlList | java.lang.String
   type CertificateArn = java.lang.String
   type CertificateId = java.lang.String
   type CertificateName = java.lang.String
   type CertificatePathOnDevice = java.lang.String
   type CertificatePem = java.lang.String
   type CertificateSigningRequest = java.lang.String
-  type CertificateStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | awsDashSdkLib.awsDashSdkLibStrings.REVOKED | awsDashSdkLib.awsDashSdkLibStrings.PENDING_TRANSFER | awsDashSdkLib.awsDashSdkLibStrings.REGISTER_INACTIVE | awsDashSdkLib.awsDashSdkLibStrings.PENDING_ACTIVATION | java.lang.String
+  type CertificateStatus = _CertificateStatus | java.lang.String
   type Certificates = js.Array[Certificate]
   type ChannelName = java.lang.String
   type CheckCompliant = scala.Boolean
@@ -9718,7 +9786,7 @@ object IotNs extends js.Object {
   type Code = java.lang.String
   type CognitoIdentityPoolId = java.lang.String
   type Comment = java.lang.String
-  type ComparisonOperator = awsDashSdkLib.awsDashSdkLibStrings.`less-than` | awsDashSdkLib.awsDashSdkLibStrings.`less-than-equals` | awsDashSdkLib.awsDashSdkLibStrings.`greater-than` | awsDashSdkLib.awsDashSdkLibStrings.`greater-than-equals` | awsDashSdkLib.awsDashSdkLibStrings.`in-cidr-set` | awsDashSdkLib.awsDashSdkLibStrings.`not-in-cidr-set` | awsDashSdkLib.awsDashSdkLibStrings.`in-port-set` | awsDashSdkLib.awsDashSdkLibStrings.`not-in-port-set` | java.lang.String
+  type ComparisonOperator = _ComparisonOperator | java.lang.String
   type CompliantChecksCount = scala.Double
   type ConnectivityTimestamp = scala.Double
   type ConsecutiveDatapointsToAlarm = scala.Double
@@ -9730,7 +9798,7 @@ object IotNs extends js.Object {
   type CustomerVersion = scala.Double
   type DateType = stdLib.Date
   type DayOfMonth = java.lang.String
-  type DayOfWeek = awsDashSdkLib.awsDashSdkLibStrings.SUN | awsDashSdkLib.awsDashSdkLibStrings.MON | awsDashSdkLib.awsDashSdkLibStrings.TUE | awsDashSdkLib.awsDashSdkLibStrings.WED | awsDashSdkLib.awsDashSdkLibStrings.THU | awsDashSdkLib.awsDashSdkLibStrings.FRI | awsDashSdkLib.awsDashSdkLibStrings.SAT | java.lang.String
+  type DayOfWeek = _DayOfWeek | java.lang.String
   type DeleteAdditionalMetricsToRetain = scala.Boolean
   type DeleteAlertTargets = scala.Boolean
   type DeleteBehaviors = scala.Boolean
@@ -9743,8 +9811,8 @@ object IotNs extends js.Object {
   type DetailsValue = java.lang.String
   type DisableAllLogs = scala.Boolean
   type DurationSeconds = scala.Double
-  type DynamicGroupStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.BUILDING | awsDashSdkLib.awsDashSdkLibStrings.REBUILDING | java.lang.String
-  type DynamoKeyType = awsDashSdkLib.awsDashSdkLibStrings.STRING | awsDashSdkLib.awsDashSdkLibStrings.NUMBER | java.lang.String
+  type DynamicGroupStatus = _DynamicGroupStatus | java.lang.String
+  type DynamoKeyType = _DynamoKeyType | java.lang.String
   type DynamoOperation = java.lang.String
   type EffectivePolicies = js.Array[EffectivePolicy]
   type ElasticsearchEndpoint = java.lang.String
@@ -9757,7 +9825,7 @@ object IotNs extends js.Object {
   type ErrorCode = java.lang.String
   type ErrorMessage = java.lang.String
   type EvaluationStatistic = java.lang.String
-  type EventType = awsDashSdkLib.awsDashSdkLibStrings.THING | awsDashSdkLib.awsDashSdkLibStrings.THING_GROUP | awsDashSdkLib.awsDashSdkLibStrings.THING_TYPE | awsDashSdkLib.awsDashSdkLibStrings.THING_GROUP_MEMBERSHIP | awsDashSdkLib.awsDashSdkLibStrings.THING_GROUP_HIERARCHY | awsDashSdkLib.awsDashSdkLibStrings.THING_TYPE_ASSOCIATION | awsDashSdkLib.awsDashSdkLibStrings.JOB | awsDashSdkLib.awsDashSdkLibStrings.JOB_EXECUTION | awsDashSdkLib.awsDashSdkLibStrings.POLICY | awsDashSdkLib.awsDashSdkLibStrings.CERTIFICATE | awsDashSdkLib.awsDashSdkLibStrings.CA_CERTIFICATE | java.lang.String
+  type EventType = _EventType | java.lang.String
   type ExecutionNamePrefix = java.lang.String
   type ExecutionNumber = scala.Double
   type ExpectedVersion = scala.Double
@@ -9785,7 +9853,7 @@ object IotNs extends js.Object {
   type IndexName = java.lang.String
   type IndexNamesList = js.Array[IndexName]
   type IndexSchema = java.lang.String
-  type IndexStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.BUILDING | awsDashSdkLib.awsDashSdkLibStrings.REBUILDING | java.lang.String
+  type IndexStatus = _IndexStatus | java.lang.String
   type InlineDocument = java.lang.String
   type InputName = java.lang.String
   type IsAuthenticated = scala.Boolean
@@ -9795,12 +9863,12 @@ object IotNs extends js.Object {
   type JobDescription = java.lang.String
   type JobDocument = java.lang.String
   type JobDocumentSource = java.lang.String
-  type JobExecutionFailureType = awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.REJECTED | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
-  type JobExecutionStatus = awsDashSdkLib.awsDashSdkLibStrings.QUEUED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TIMED_OUT | awsDashSdkLib.awsDashSdkLibStrings.REJECTED | awsDashSdkLib.awsDashSdkLibStrings.REMOVED | awsDashSdkLib.awsDashSdkLibStrings.CANCELED | java.lang.String
+  type JobExecutionFailureType = _JobExecutionFailureType | java.lang.String
+  type JobExecutionStatus = _JobExecutionStatus | java.lang.String
   type JobExecutionSummaryForJobList = js.Array[JobExecutionSummaryForJob]
   type JobExecutionSummaryForThingList = js.Array[JobExecutionSummaryForThing]
   type JobId = java.lang.String
-  type JobStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.CANCELED | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.DELETION_IN_PROGRESS | java.lang.String
+  type JobStatus = _JobStatus | java.lang.String
   type JobSummaryList = js.Array[JobSummary]
   type JobTargets = js.Array[TargetArn]
   type JsonDocument = java.lang.String
@@ -9809,16 +9877,16 @@ object IotNs extends js.Object {
   type KeyValue = java.lang.String
   type LaserMaxResults = scala.Double
   type LastModifiedDate = stdLib.Date
-  type LogLevel = awsDashSdkLib.awsDashSdkLibStrings.DEBUG | awsDashSdkLib.awsDashSdkLibStrings.INFO | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.WARN | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type LogLevel = _LogLevel | java.lang.String
   type LogTargetConfigurations = js.Array[LogTargetConfiguration]
   type LogTargetName = java.lang.String
-  type LogTargetType = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.THING_GROUP | java.lang.String
+  type LogTargetType = _LogTargetType | java.lang.String
   type Marker = java.lang.String
   type MaxJobExecutionsPerMin = scala.Double
   type MaxResults = scala.Double
   type MaximumPerMinute = scala.Double
   type Message = java.lang.String
-  type MessageFormat = awsDashSdkLib.awsDashSdkLibStrings.RAW | awsDashSdkLib.awsDashSdkLibStrings.JSON | java.lang.String
+  type MessageFormat = _MessageFormat | java.lang.String
   type MessageId = java.lang.String
   type MinimumNumberOfExecutedThings = scala.Double
   type MissingContextValue = java.lang.String
@@ -9833,7 +9901,7 @@ object IotNs extends js.Object {
   type OTAUpdateFileVersion = java.lang.String
   type OTAUpdateFiles = js.Array[OTAUpdateFile]
   type OTAUpdateId = java.lang.String
-  type OTAUpdateStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATE_PENDING | awsDashSdkLib.awsDashSdkLibStrings.CREATE_IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.CREATE_COMPLETE | awsDashSdkLib.awsDashSdkLibStrings.CREATE_FAILED | java.lang.String
+  type OTAUpdateStatus = _OTAUpdateStatus | java.lang.String
   type OTAUpdatesSummary = js.Array[OTAUpdateSummary]
   type OptionalVersion = scala.Double
   type OutgoingCertificates = js.Array[OutgoingCertificate]
@@ -9886,11 +9954,11 @@ object IotNs extends js.Object {
   type RemoveAutoRegistration = scala.Boolean
   type RemoveThingType = scala.Boolean
   type RemovedThings = scala.Double
-  type ReportType = awsDashSdkLib.awsDashSdkLibStrings.ERRORS | awsDashSdkLib.awsDashSdkLibStrings.RESULTS | java.lang.String
+  type ReportType = _ReportType | java.lang.String
   type Resource = java.lang.String
   type ResourceArn = java.lang.String
   type ResourceLogicalId = java.lang.String
-  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.DEVICE_CERTIFICATE | awsDashSdkLib.awsDashSdkLibStrings.CA_CERTIFICATE | awsDashSdkLib.awsDashSdkLibStrings.IOT_POLICY | awsDashSdkLib.awsDashSdkLibStrings.COGNITO_IDENTITY_POOL | awsDashSdkLib.awsDashSdkLibStrings.CLIENT_ID | awsDashSdkLib.awsDashSdkLibStrings.ACCOUNT_SETTINGS | java.lang.String
+  type ResourceType = _ResourceType | java.lang.String
   type Resources = js.Array[Resource]
   type RoleAlias = java.lang.String
   type RoleAliasArn = java.lang.String
@@ -9930,7 +9998,7 @@ object IotNs extends js.Object {
   type StateMachineName = java.lang.String
   type StateReason = java.lang.String
   type StateValue = java.lang.String
-  type Status = awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Cancelled | awsDashSdkLib.awsDashSdkLibStrings.Cancelling | java.lang.String
+  type Status = _Status | java.lang.String
   type StreamArn = java.lang.String
   type StreamDescription = java.lang.String
   type StreamFiles = js.Array[StreamFile]
@@ -9948,26 +10016,26 @@ object IotNs extends js.Object {
   type Target = java.lang.String
   type TargetArn = java.lang.String
   type TargetAuditCheckNames = js.Array[AuditCheckName]
-  type TargetSelection = awsDashSdkLib.awsDashSdkLibStrings.CONTINUOUS | awsDashSdkLib.awsDashSdkLibStrings.SNAPSHOT | java.lang.String
+  type TargetSelection = _TargetSelection | java.lang.String
   type Targets = js.Array[Target]
   type TaskId = java.lang.String
   type TaskIdList = js.Array[TaskId]
   type TemplateBody = java.lang.String
   type ThingArn = java.lang.String
   type ThingAttributeList = js.Array[ThingAttribute]
-  type ThingConnectivityIndexingMode = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.STATUS | java.lang.String
+  type ThingConnectivityIndexingMode = _ThingConnectivityIndexingMode | java.lang.String
   type ThingDocumentList = js.Array[ThingDocument]
   type ThingGroupArn = java.lang.String
   type ThingGroupDescription = java.lang.String
   type ThingGroupDocumentList = js.Array[ThingGroupDocument]
   type ThingGroupId = java.lang.String
-  type ThingGroupIndexingMode = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.ON | java.lang.String
+  type ThingGroupIndexingMode = _ThingGroupIndexingMode | java.lang.String
   type ThingGroupList = js.Array[ThingGroupName]
   type ThingGroupName = java.lang.String
   type ThingGroupNameAndArnList = js.Array[GroupNameAndArn]
   type ThingGroupNameList = js.Array[ThingGroupName]
   type ThingId = java.lang.String
-  type ThingIndexingMode = awsDashSdkLib.awsDashSdkLibStrings.OFF | awsDashSdkLib.awsDashSdkLibStrings.REGISTRY | awsDashSdkLib.awsDashSdkLibStrings.REGISTRY_AND_SHADOW | java.lang.String
+  type ThingIndexingMode = _ThingIndexingMode | java.lang.String
   type ThingName = java.lang.String
   type ThingNameList = js.Array[ThingName]
   type ThingTypeArn = java.lang.String
@@ -9993,10 +10061,10 @@ object IotNs extends js.Object {
   type Value = java.lang.String
   type Version = scala.Double
   type VersionNumber = scala.Double
-  type ViolationEventType = awsDashSdkLib.awsDashSdkLibStrings.`in-alarm` | awsDashSdkLib.awsDashSdkLibStrings.`alarm-cleared` | awsDashSdkLib.awsDashSdkLibStrings.`alarm-invalidated` | java.lang.String
+  type ViolationEventType = _ViolationEventType | java.lang.String
   type ViolationEvents = js.Array[ViolationEvent]
   type ViolationId = java.lang.String
   type WaitingForDataCollectionChecksCount = scala.Double
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-05-28` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

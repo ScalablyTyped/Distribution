@@ -8,4 +8,5 @@ import scala.scalajs.js.annotation._
 @js.native
 trait KnuddelsEventArray
   extends stdLib.Array[java.lang.String | Json | KnuddelsEventArray]
+     with knuddelsDashUserappsDashApiLib.knuddelsDashUserappsDashApiMod._KnuddelsEvent
 

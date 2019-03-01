@@ -13,3 +13,22 @@ trait EntityError extends js.Object {
   var propertyName: java.lang.String
 }
 
+object EntityError {
+  @scala.inline
+  def apply(
+    entity: Entity,
+    errorMessage: java.lang.String,
+    errorName: java.lang.String,
+    isServerError: scala.Boolean,
+    propertyName: java.lang.String
+  ): EntityError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entity")(entity)
+    __obj.updateDynamic("errorMessage")(errorMessage)
+    __obj.updateDynamic("errorName")(errorName)
+    __obj.updateDynamic("isServerError")(isServerError)
+    __obj.updateDynamic("propertyName")(propertyName)
+    __obj.asInstanceOf[EntityError]
+  }
+}
+

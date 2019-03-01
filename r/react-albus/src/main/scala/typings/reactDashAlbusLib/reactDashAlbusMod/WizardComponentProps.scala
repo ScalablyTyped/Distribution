@@ -9,3 +9,12 @@ trait WizardComponentProps extends js.Object {
   var wizard: WizardContext
 }
 
+object WizardComponentProps {
+  @scala.inline
+  def apply(wizard: WizardContext): WizardComponentProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("wizard")(wizard)
+    __obj.asInstanceOf[WizardComponentProps]
+  }
+}
+

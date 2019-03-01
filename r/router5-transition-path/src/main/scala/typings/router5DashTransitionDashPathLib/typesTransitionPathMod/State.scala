@@ -12,3 +12,20 @@ trait State
   var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object State {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    meta: router5DashTransitionDashPathLib.Anon_Key = null,
+    params: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): State = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[State]
+  }
+}
+

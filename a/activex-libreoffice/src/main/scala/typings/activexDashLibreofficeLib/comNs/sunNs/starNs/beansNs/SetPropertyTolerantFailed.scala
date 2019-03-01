@@ -21,3 +21,13 @@ trait SetPropertyTolerantFailed extends js.Object {
   var Result: scala.Double
 }
 
+object SetPropertyTolerantFailed {
+  @scala.inline
+  def apply(Name: java.lang.String, Result: scala.Double): SetPropertyTolerantFailed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Result")(Result)
+    __obj.asInstanceOf[SetPropertyTolerantFailed]
+  }
+}
+

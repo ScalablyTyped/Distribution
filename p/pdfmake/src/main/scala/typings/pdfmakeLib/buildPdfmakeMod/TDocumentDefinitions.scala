@@ -18,3 +18,32 @@ trait TDocumentDefinitions extends js.Object {
   var styles: js.UndefOr[Style] = js.undefined
 }
 
+object TDocumentDefinitions {
+  @scala.inline
+  def apply(
+    content: java.lang.String | Content,
+    compress: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultStyle: Style = null,
+    footer: TDocumentHeaderFooterFunction = null,
+    header: TDocumentHeaderFooterFunction = null,
+    info: TDocumentInformation = null,
+    pageMargins: Margins = null,
+    pageOrientation: PageOrientation = null,
+    pageSize: PageSize = null,
+    styles: Style = null
+  ): TDocumentDefinitions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (!js.isUndefined(compress)) __obj.updateDynamic("compress")(compress)
+    if (defaultStyle != null) __obj.updateDynamic("defaultStyle")(defaultStyle)
+    if (footer != null) __obj.updateDynamic("footer")(footer)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (pageMargins != null) __obj.updateDynamic("pageMargins")(pageMargins.asInstanceOf[js.Any])
+    if (pageOrientation != null) __obj.updateDynamic("pageOrientation")(pageOrientation)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[TDocumentDefinitions]
+  }
+}
+

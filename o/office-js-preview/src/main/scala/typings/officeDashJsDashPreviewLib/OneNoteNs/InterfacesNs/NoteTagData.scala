@@ -34,3 +34,18 @@ trait NoteTagData extends js.Object {
   ] = js.undefined
 }
 
+object NoteTagData {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    status: officeDashJsDashPreviewLib.OneNoteNs.NoteTagStatus | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Normal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Completed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Disabled | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.OutlookTask | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TaskNotSyncedYet | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TaskRemoved = null,
+    `type`: officeDashJsDashPreviewLib.OneNoteNs.NoteTagType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ToDo | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Important | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Question | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Contact | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Address | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PhoneNumber | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Website | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Idea | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Critical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ToDoPriority1 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ToDoPriority2 = null
+  ): NoteTagData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NoteTagData]
+  }
+}
+

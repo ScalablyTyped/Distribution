@@ -16,3 +16,13 @@ trait ViewChangedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ViewChangedEventUIParam {
+  @scala.inline
+  def apply(newSelectedView: java.lang.String = null, owner: js.Any = null): ViewChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (newSelectedView != null) __obj.updateDynamic("newSelectedView")(newSelectedView)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ViewChangedEventUIParam]
+  }
+}
+

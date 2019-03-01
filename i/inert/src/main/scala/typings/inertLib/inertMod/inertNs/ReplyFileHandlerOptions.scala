@@ -51,3 +51,28 @@ trait ReplyFileHandlerOptions extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ReplyFileHandlerOptions {
+  @scala.inline
+  def apply(
+    confine: js.UndefOr[scala.Boolean] = js.undefined,
+    end: scala.Int | scala.Double = null,
+    etagMethod: inertLib.inertLibStrings.hash | inertLib.inertLibStrings.simple | inertLib.inertLibNumbers.`false` = null,
+    filename: java.lang.String = null,
+    lookupCompressed: js.UndefOr[scala.Boolean] = js.undefined,
+    lookupMap: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    mode: inertLib.inertLibNumbers.`false` | inertLib.inertLibStrings.attachment | inertLib.inertLibStrings.`inline` = null,
+    start: scala.Int | scala.Double = null
+  ): ReplyFileHandlerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(confine)) __obj.updateDynamic("confine")(confine)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (etagMethod != null) __obj.updateDynamic("etagMethod")(etagMethod.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed)
+    if (lookupMap != null) __obj.updateDynamic("lookupMap")(lookupMap)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReplyFileHandlerOptions]
+  }
+}
+

@@ -7,58 +7,76 @@ import scala.scalajs.js.annotation._
 
 object esriDashLeafletLibStrings {
   @js.native
-  sealed trait DarkGray extends js.Object
+  sealed trait DarkGray
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait DarkGrayLabels extends js.Object
+  sealed trait DarkGrayLabels
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait Gray extends js.Object
+  sealed trait Gray
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait GrayLabels extends js.Object
+  sealed trait GrayLabels
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait Imagery extends js.Object
+  sealed trait Imagery
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait ImageryClarity extends js.Object
+  sealed trait ImageryClarity
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait ImageryLabels extends js.Object
+  sealed trait ImageryLabels
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait ImageryTransportation extends js.Object
+  sealed trait ImageryTransportation
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait NationalGeographic extends js.Object
+  sealed trait NationalGeographic
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait Oceans extends js.Object
+  sealed trait Oceans
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait OceansLabels extends js.Object
+  sealed trait OceansLabels
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait ShadedRelief extends js.Object
+  sealed trait ShadedRelief
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait ShadedReliefLabels extends js.Object
+  sealed trait ShadedReliefLabels
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait Streets extends js.Object
+  sealed trait Streets
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait Terrain extends js.Object
+  sealed trait Terrain
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait TerrainLabels extends js.Object
+  sealed trait TerrainLabels
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait Topographic extends js.Object
+  sealed trait Topographic
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
-  sealed trait USATopo extends js.Object
+  sealed trait USATopo
+    extends esriDashLeafletLib.esriDashLeafletMod.leafletMod.esriNs.Basemaps
   
   @js.native
   sealed trait client extends js.Object

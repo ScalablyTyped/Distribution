@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object angularDashLocalDashStorageLibStrings {
   @js.native
-  sealed trait localStorage extends js.Object
+  sealed trait localStorage
+    extends angularDashLocalDashStorageLib.angularDashLocalDashStorageMod.angularMod.localNs.storageNs.StorageType
   
   @js.native
-  sealed trait sessionStorage extends js.Object
+  sealed trait sessionStorage
+    extends angularDashLocalDashStorageLib.angularDashLocalDashStorageMod.angularMod.localNs.storageNs.StorageType
   
   @scala.inline
   def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]

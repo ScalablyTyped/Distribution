@@ -12,3 +12,20 @@ trait PackageInstalledResponse extends ProjectResponse {
   val success: scala.Boolean
 }
 
+object PackageInstalledResponse {
+  @scala.inline
+  def apply(
+    kind: ActionPackageInstalled,
+    message: java.lang.String,
+    projectName: java.lang.String,
+    success: scala.Boolean
+  ): PackageInstalledResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("projectName")(projectName)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[PackageInstalledResponse]
+  }
+}
+

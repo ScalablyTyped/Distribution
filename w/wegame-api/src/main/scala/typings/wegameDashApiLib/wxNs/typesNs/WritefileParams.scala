@@ -14,3 +14,24 @@ trait WritefileParams extends js.Object {
   var success: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object WritefileParams {
+  @scala.inline
+  def apply(
+    data: java.lang.String | stdLib.ArrayBuffer,
+    filePath: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    encoding: FileContentEncoding = null,
+    fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
+    success: js.Function0[scala.Unit] = null
+  ): WritefileParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("filePath")(filePath)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[WritefileParams]
+  }
+}
+

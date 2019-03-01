@@ -9,3 +9,12 @@ trait Anon_Measure extends js.Object {
   def measure(): scala.Unit
 }
 
+object Anon_Measure {
+  @scala.inline
+  def apply(measure: js.Function0[scala.Unit]): Anon_Measure = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("measure")(measure)
+    __obj.asInstanceOf[Anon_Measure]
+  }
+}
+

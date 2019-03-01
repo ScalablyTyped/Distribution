@@ -9,3 +9,12 @@ trait Anon_Parenthesized extends js.Object {
   var parenthesized: scala.Boolean
 }
 
+object Anon_Parenthesized {
+  @scala.inline
+  def apply(parenthesized: scala.Boolean): Anon_Parenthesized = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parenthesized")(parenthesized)
+    __obj.asInstanceOf[Anon_Parenthesized]
+  }
+}
+

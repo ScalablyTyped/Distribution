@@ -39,3 +39,22 @@ trait MotorHatOptions extends js.Object {
   var steppers: js.UndefOr[js.Array[motorDashHatLib.Anon_W1W2]] = js.undefined
 }
 
+object MotorHatOptions {
+  @scala.inline
+  def apply(
+    address: scala.Int | scala.Double = null,
+    busnum: scala.Int | scala.Double = null,
+    dcs: js.Array[Motor] = null,
+    servos: js.Array[scala.Double] = null,
+    steppers: js.Array[motorDashHatLib.Anon_W1W2] = null
+  ): MotorHatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    if (busnum != null) __obj.updateDynamic("busnum")(busnum.asInstanceOf[js.Any])
+    if (dcs != null) __obj.updateDynamic("dcs")(dcs)
+    if (servos != null) __obj.updateDynamic("servos")(servos)
+    if (steppers != null) __obj.updateDynamic("steppers")(steppers)
+    __obj.asInstanceOf[MotorHatOptions]
+  }
+}
+

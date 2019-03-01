@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonIsOverlapping extends js.Object {
   var enumValues: Anon_IsOverlapping
 }
 
+object Anon_EnumValuesAnonIsOverlapping {
+  @scala.inline
+  def apply(enumValues: Anon_IsOverlapping): Anon_EnumValuesAnonIsOverlapping = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonIsOverlapping]
+  }
+}
+

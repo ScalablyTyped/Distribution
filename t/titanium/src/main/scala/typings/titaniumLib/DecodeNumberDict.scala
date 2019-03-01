@@ -27,3 +27,19 @@ trait DecodeNumberDict extends js.Object {
   var `type`: java.lang.String
 }
 
+object DecodeNumberDict {
+  @scala.inline
+  def apply(
+    source: titaniumLib.TitaniumNs.Buffer,
+    `type`: java.lang.String,
+    byteOrder: scala.Int | scala.Double = null,
+    position: scala.Int | scala.Double = null
+  ): DecodeNumberDict = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("source")(source)
+    if (byteOrder != null) __obj.updateDynamic("byteOrder")(byteOrder.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DecodeNumberDict]
+  }
+}
+

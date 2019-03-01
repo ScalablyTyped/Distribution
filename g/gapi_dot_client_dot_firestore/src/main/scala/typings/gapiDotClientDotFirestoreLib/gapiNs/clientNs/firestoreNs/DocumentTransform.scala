@@ -15,3 +15,13 @@ trait DocumentTransform extends js.Object {
   var fieldTransforms: js.UndefOr[js.Array[FieldTransform]] = js.undefined
 }
 
+object DocumentTransform {
+  @scala.inline
+  def apply(document: java.lang.String = null, fieldTransforms: js.Array[FieldTransform] = null): DocumentTransform = {
+    val __obj = js.Dynamic.literal()
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (fieldTransforms != null) __obj.updateDynamic("fieldTransforms")(fieldTransforms)
+    __obj.asInstanceOf[DocumentTransform]
+  }
+}
+

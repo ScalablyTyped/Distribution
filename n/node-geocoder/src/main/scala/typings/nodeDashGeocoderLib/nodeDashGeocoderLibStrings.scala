@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object nodeDashGeocoderLibStrings {
   @js.native
-  sealed trait agol extends js.Object
+  sealed trait agol
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait datasciencetoolkit extends js.Object
+  sealed trait datasciencetoolkit
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait freegeoip extends js.Object
+  sealed trait freegeoip
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait geocodio extends js.Object
+  sealed trait geocodio
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait google extends js.Object
+  sealed trait google
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait here extends js.Object
+  sealed trait here
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
   sealed trait http extends js.Object
@@ -31,43 +37,55 @@ object nodeDashGeocoderLibStrings {
   sealed trait https extends js.Object
   
   @js.native
-  sealed trait locationiq extends js.Object
+  sealed trait locationiq
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait mapquest extends js.Object
+  sealed trait mapquest
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait nominatimmapquest extends js.Object
+  sealed trait nominatimmapquest
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait opencage extends js.Object
+  sealed trait opencage
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait opendatafrance extends js.Object
+  sealed trait opendatafrance
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait openmapquest extends js.Object
+  sealed trait openmapquest
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait openstreetmap extends js.Object
+  sealed trait openstreetmap
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait pickpoint extends js.Object
+  sealed trait pickpoint
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
   sealed trait request extends js.Object
   
   @js.native
-  sealed trait smartyStreet extends js.Object
+  sealed trait smartyStreet
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait teleport extends js.Object
+  sealed trait teleport
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait tomtom extends js.Object
+  sealed trait tomtom
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @js.native
-  sealed trait yandex extends js.Object
+  sealed trait yandex
+    extends nodeDashGeocoderLib.nodeDashGeocoderMod.nodeUnderscoreGeocoderNs.Providers
   
   @scala.inline
   def agol: agol = "agol".asInstanceOf[agol]

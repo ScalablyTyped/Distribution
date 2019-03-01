@@ -33,3 +33,18 @@ trait IterativeCalculationUpdateData extends js.Object {
   var maxIteration: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IterativeCalculationUpdateData {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maxChange: scala.Int | scala.Double = null,
+    maxIteration: scala.Int | scala.Double = null
+  ): IterativeCalculationUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (maxChange != null) __obj.updateDynamic("maxChange")(maxChange.asInstanceOf[js.Any])
+    if (maxIteration != null) __obj.updateDynamic("maxIteration")(maxIteration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IterativeCalculationUpdateData]
+  }
+}
+

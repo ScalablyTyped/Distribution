@@ -20,3 +20,18 @@ trait ParentNode extends js.Object {
   def prepend(nodes: (stdLib.Node | java.lang.String)*): scala.Unit
 }
 
+object ParentNode {
+  @scala.inline
+  def apply(
+    append: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit],
+    children: stdLib.HTMLCollection,
+    prepend: js.Function1[/* repeated */ stdLib.Node | java.lang.String, scala.Unit]
+  ): ParentNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("append")(append)
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("prepend")(prepend)
+    __obj.asInstanceOf[ParentNode]
+  }
+}
+

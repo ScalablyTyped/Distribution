@@ -19,3 +19,13 @@ trait ListHistoriesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListHistoriesResponse {
+  @scala.inline
+  def apply(histories: js.Array[History] = null, nextPageToken: java.lang.String = null): ListHistoriesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (histories != null) __obj.updateDynamic("histories")(histories)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListHistoriesResponse]
+  }
+}
+

@@ -12,3 +12,16 @@ trait ThresholdOptions extends js.Object {
   var greyscale: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ThresholdOptions {
+  @scala.inline
+  def apply(
+    grayscale: js.UndefOr[scala.Boolean] = js.undefined,
+    greyscale: js.UndefOr[scala.Boolean] = js.undefined
+  ): ThresholdOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(grayscale)) __obj.updateDynamic("grayscale")(grayscale)
+    if (!js.isUndefined(greyscale)) __obj.updateDynamic("greyscale")(greyscale)
+    __obj.asInstanceOf[ThresholdOptions]
+  }
+}
+

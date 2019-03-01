@@ -16,3 +16,20 @@ trait FieldTemplateOverrides extends js.Object {
   var View: js.UndefOr[FieldInViewCallback] = js.undefined
 }
 
+object FieldTemplateOverrides {
+  @scala.inline
+  def apply(
+    DisplayForm: FieldInFormCallback = null,
+    EditForm: FieldInFormCallback = null,
+    NewForm: FieldInFormCallback = null,
+    View: FieldInViewCallback = null
+  ): FieldTemplateOverrides = {
+    val __obj = js.Dynamic.literal()
+    if (DisplayForm != null) __obj.updateDynamic("DisplayForm")(DisplayForm)
+    if (EditForm != null) __obj.updateDynamic("EditForm")(EditForm)
+    if (NewForm != null) __obj.updateDynamic("NewForm")(NewForm)
+    if (View != null) __obj.updateDynamic("View")(View)
+    __obj.asInstanceOf[FieldTemplateOverrides]
+  }
+}
+

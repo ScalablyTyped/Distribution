@@ -10,3 +10,24 @@ trait IslandNodePool extends Pool {
   def destroy(node: IslandNode): IslandNodePool
 }
 
+object IslandNodePool {
+  @scala.inline
+  def apply(
+    create: js.Function0[IslandNode],
+    destroy: js.Function1[IslandNode, IslandNodePool],
+    get: js.Function0[js.Any],
+    objects: js.Array[_],
+    release: js.Function1[js.Any, Pool],
+    resize: js.Function1[scala.Double, Pool]
+  ): IslandNodePool = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("objects")(objects)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("resize")(resize)
+    __obj.asInstanceOf[IslandNodePool]
+  }
+}
+

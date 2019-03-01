@@ -15,3 +15,26 @@ trait Anon_Author extends js.Object {
   var updated: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.DateString
 }
 
+object Anon_Author {
+  @scala.inline
+  def apply(
+    ContentRootElement: java.lang.String,
+    id: java.lang.String,
+    link: java.lang.String,
+    published: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.DateString,
+    title: java.lang.String,
+    updated: azureDashSbLib.azureDashSbMod.AzureNs.ServiceBusNs.DateString,
+    author: Anon_Name = null
+  ): Anon_Author = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ContentRootElement")(ContentRootElement)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("published")(published)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("updated")(updated)
+    if (author != null) __obj.updateDynamic("author")(author)
+    __obj.asInstanceOf[Anon_Author]
+  }
+}
+

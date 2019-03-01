@@ -15,3 +15,26 @@ trait Anon_Destination extends js.Object {
   var status: java.lang.String
 }
 
+object Anon_Destination {
+  @scala.inline
+  def apply(
+    destination: Anon_AccessControlTranslation,
+    status: java.lang.String,
+    filter: Anon_KeyPrefix = null,
+    id: java.lang.String = null,
+    prefix: java.lang.String = null,
+    priority: scala.Int | scala.Double = null,
+    sourceSelectionCriteria: Anon_SseKmsEncryptedObjects = null
+  ): Anon_Destination = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destination")(destination)
+    __obj.updateDynamic("status")(status)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (sourceSelectionCriteria != null) __obj.updateDynamic("sourceSelectionCriteria")(sourceSelectionCriteria)
+    __obj.asInstanceOf[Anon_Destination]
+  }
+}
+

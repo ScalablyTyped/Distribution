@@ -43,3 +43,42 @@ trait Operation extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Operation {
+  @scala.inline
+  def apply(
+    endTime: java.lang.String = null,
+    error: OperationErrors = null,
+    exportContext: ExportContext = null,
+    importContext: ImportContext = null,
+    insertTime: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    operationType: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    startTime: java.lang.String = null,
+    status: java.lang.String = null,
+    targetId: java.lang.String = null,
+    targetLink: java.lang.String = null,
+    targetProject: java.lang.String = null,
+    user: java.lang.String = null
+  ): Operation = {
+    val __obj = js.Dynamic.literal()
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (exportContext != null) __obj.updateDynamic("exportContext")(exportContext)
+    if (importContext != null) __obj.updateDynamic("importContext")(importContext)
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId)
+    if (targetLink != null) __obj.updateDynamic("targetLink")(targetLink)
+    if (targetProject != null) __obj.updateDynamic("targetProject")(targetProject)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[Operation]
+  }
+}
+

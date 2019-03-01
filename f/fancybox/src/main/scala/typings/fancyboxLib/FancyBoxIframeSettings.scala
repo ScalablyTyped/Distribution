@@ -27,3 +27,20 @@ trait FancyBoxIframeSettings extends js.Object {
   var tpl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FancyBoxIframeSettings {
+  @scala.inline
+  def apply(
+    attr: FancyBoxPlainObject = null,
+    css: FancyBoxPlainObject = null,
+    preload: js.UndefOr[scala.Boolean] = js.undefined,
+    tpl: java.lang.String = null
+  ): FancyBoxIframeSettings = {
+    val __obj = js.Dynamic.literal()
+    if (attr != null) __obj.updateDynamic("attr")(attr)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
+    if (tpl != null) __obj.updateDynamic("tpl")(tpl)
+    __obj.asInstanceOf[FancyBoxIframeSettings]
+  }
+}
+

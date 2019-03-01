@@ -21,3 +21,13 @@ trait ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs extends ASPxClientEv
   var Options: js.Object
 }
 
+object ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs {
+  @scala.inline
+  def apply(ItemName: java.lang.String, Options: js.Object): ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ItemName")(ItemName)
+    __obj.updateDynamic("Options")(Options)
+    __obj.asInstanceOf[ASPxClientDashboardItemCaptionToolbarUpdatedEventArgs]
+  }
+}
+

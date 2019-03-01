@@ -51,3 +51,26 @@ trait Anon_DecoratorPaths extends js.Object {
   var visualizerDescriptors: js.Array[java.lang.String]
 }
 
+object Anon_DecoratorPaths {
+  @scala.inline
+  def apply(
+    decoratorPaths: js.Array[java.lang.String],
+    extraCss: js.Array[java.lang.String],
+    layout: Anon_BasePathsDefault,
+    panelPaths: js.Array[java.lang.String],
+    svgDirs: js.Array[java.lang.String],
+    visualizerDescriptors: js.Array[java.lang.String],
+    decoratorToPreload: scala.Int | scala.Double = null
+  ): Anon_DecoratorPaths = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("decoratorPaths")(decoratorPaths)
+    __obj.updateDynamic("extraCss")(extraCss)
+    __obj.updateDynamic("layout")(layout)
+    __obj.updateDynamic("panelPaths")(panelPaths)
+    __obj.updateDynamic("svgDirs")(svgDirs)
+    __obj.updateDynamic("visualizerDescriptors")(visualizerDescriptors)
+    if (decoratorToPreload != null) __obj.updateDynamic("decoratorToPreload")(decoratorToPreload.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_DecoratorPaths]
+  }
+}
+

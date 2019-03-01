@@ -82,3 +82,30 @@ trait WorksheetUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object WorksheetUpdateData {
+  @scala.inline
+  def apply(
+    enableCalculation: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    pageLayout: PageLayoutUpdateData = null,
+    position: scala.Int | scala.Double = null,
+    showGridlines: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeadings: js.UndefOr[scala.Boolean] = js.undefined,
+    standardWidth: scala.Int | scala.Double = null,
+    tabColor: java.lang.String = null,
+    visibility: officeDashJsDashPreviewLib.ExcelNs.SheetVisibility | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Visible | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Hidden | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.VeryHidden = null
+  ): WorksheetUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableCalculation)) __obj.updateDynamic("enableCalculation")(enableCalculation)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pageLayout != null) __obj.updateDynamic("pageLayout")(pageLayout)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
+    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)
+    if (standardWidth != null) __obj.updateDynamic("standardWidth")(standardWidth.asInstanceOf[js.Any])
+    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetUpdateData]
+  }
+}
+

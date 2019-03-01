@@ -20,3 +20,18 @@ trait Anon_ItemStyleLabelUpperLabel extends js.Object {
   var upperLabel: js.UndefOr[Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis] = js.undefined
 }
 
+object Anon_ItemStyleLabelUpperLabel {
+  @scala.inline
+  def apply(
+    itemStyle: Anon_ColorString = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null,
+    upperLabel: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceEllipsis = null
+  ): Anon_ItemStyleLabelUpperLabel = {
+    val __obj = js.Dynamic.literal()
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (upperLabel != null) __obj.updateDynamic("upperLabel")(upperLabel)
+    __obj.asInstanceOf[Anon_ItemStyleLabelUpperLabel]
+  }
+}
+

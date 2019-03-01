@@ -10,3 +10,13 @@ trait ResizeArgs extends js.Object {
   var opt: Options
 }
 
+object ResizeArgs {
+  @scala.inline
+  def apply(args: js.Array[java.lang.String], opt: Options): ResizeArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("opt")(opt)
+    __obj.asInstanceOf[ResizeArgs]
+  }
+}
+

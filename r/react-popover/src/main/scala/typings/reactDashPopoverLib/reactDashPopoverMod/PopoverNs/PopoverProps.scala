@@ -20,3 +20,36 @@ trait PopoverProps extends js.Object {
   var tipSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PopoverProps {
+  @scala.inline
+  def apply(
+    body: reactLib.reactMod.ReactNs.ReactNode,
+    appendTarget: reactLib.Element = null,
+    className: java.lang.String = null,
+    enterExitTransitionDurationMs: scala.Int | scala.Double = null,
+    isOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    onOuterAction: js.Function1[/* event */ reactLib.Event, scala.Unit] = null,
+    place: PopoverPlace = null,
+    preferPlace: PopoverPlace = null,
+    refreshIntervalMs: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    target: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    tipSize: scala.Int | scala.Double = null
+  ): PopoverProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (appendTarget != null) __obj.updateDynamic("appendTarget")(appendTarget)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (enterExitTransitionDurationMs != null) __obj.updateDynamic("enterExitTransitionDurationMs")(enterExitTransitionDurationMs.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (onOuterAction != null) __obj.updateDynamic("onOuterAction")(onOuterAction)
+    if (place != null) __obj.updateDynamic("place")(place)
+    if (preferPlace != null) __obj.updateDynamic("preferPlace")(preferPlace)
+    if (refreshIntervalMs != null) __obj.updateDynamic("refreshIntervalMs")(refreshIntervalMs.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (tipSize != null) __obj.updateDynamic("tipSize")(tipSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PopoverProps]
+  }
+}
+

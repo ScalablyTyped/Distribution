@@ -72,3 +72,47 @@ trait IgSlider
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgSlider {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igSlider
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    bookmarkClick: BookmarkClickEvent = null,
+    bookmarkHit: BookmarkHitEvent = null,
+    bookmarks: IgSliderBookmarks = null,
+    change: ChangeEvent = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    orientation: js.Any = null,
+    showBookmarkTitle: js.UndefOr[scala.Boolean] = js.undefined,
+    slide: SlideEvent = null,
+    start: StartEvent = null,
+    step: scala.Int | scala.Double = null,
+    stop: StopEvent = null,
+    syncHandleWithBookmark: js.UndefOr[scala.Boolean] = js.undefined,
+    value: scala.Int | scala.Double = null
+  ): IgSlider = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (bookmarkClick != null) __obj.updateDynamic("bookmarkClick")(bookmarkClick)
+    if (bookmarkHit != null) __obj.updateDynamic("bookmarkHit")(bookmarkHit)
+    if (bookmarks != null) __obj.updateDynamic("bookmarks")(bookmarks)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (!js.isUndefined(showBookmarkTitle)) __obj.updateDynamic("showBookmarkTitle")(showBookmarkTitle)
+    if (slide != null) __obj.updateDynamic("slide")(slide)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (!js.isUndefined(syncHandleWithBookmark)) __obj.updateDynamic("syncHandleWithBookmark")(syncHandleWithBookmark)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgSlider]
+  }
+}
+

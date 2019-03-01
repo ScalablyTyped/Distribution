@@ -11,3 +11,18 @@ trait ShipitLocal extends js.Object {
   var stdout: nodeLib.fsMod.WriteStream
 }
 
+object ShipitLocal {
+  @scala.inline
+  def apply(
+    child: nodeLib.childUnderscoreProcessMod.ChildProcess,
+    stderr: nodeLib.fsMod.WriteStream,
+    stdout: nodeLib.fsMod.WriteStream
+  ): ShipitLocal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("child")(child)
+    __obj.updateDynamic("stderr")(stderr)
+    __obj.updateDynamic("stdout")(stdout)
+    __obj.asInstanceOf[ShipitLocal]
+  }
+}
+

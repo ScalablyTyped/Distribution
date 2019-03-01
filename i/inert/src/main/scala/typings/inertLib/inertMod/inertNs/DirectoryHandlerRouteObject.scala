@@ -54,3 +54,28 @@ trait DirectoryHandlerRouteObject extends js.Object {
   var showHidden: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DirectoryHandlerRouteObject {
+  @scala.inline
+  def apply(
+    path: java.lang.String | js.Array[java.lang.String] | (RequestHandler[java.lang.String | js.Array[java.lang.String] | nodeLib.Error]),
+    defaultExtension: java.lang.String = null,
+    etagMethod: inertLib.inertLibStrings.hash | inertLib.inertLibStrings.simple | inertLib.inertLibNumbers.`false` = null,
+    index: scala.Boolean | java.lang.String | js.Array[java.lang.String] = null,
+    listing: js.UndefOr[scala.Boolean] = js.undefined,
+    lookupCompressed: js.UndefOr[scala.Boolean] = js.undefined,
+    redirectToSlash: js.UndefOr[scala.Boolean] = js.undefined,
+    showHidden: js.UndefOr[scala.Boolean] = js.undefined
+  ): DirectoryHandlerRouteObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension)
+    if (etagMethod != null) __obj.updateDynamic("etagMethod")(etagMethod.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(listing)) __obj.updateDynamic("listing")(listing)
+    if (!js.isUndefined(lookupCompressed)) __obj.updateDynamic("lookupCompressed")(lookupCompressed)
+    if (!js.isUndefined(redirectToSlash)) __obj.updateDynamic("redirectToSlash")(redirectToSlash)
+    if (!js.isUndefined(showHidden)) __obj.updateDynamic("showHidden")(showHidden)
+    __obj.asInstanceOf[DirectoryHandlerRouteObject]
+  }
+}
+

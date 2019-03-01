@@ -26,3 +26,23 @@ trait XDrillDownDataSupplier
   def getDrillDownData(aFilters: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter]): activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
 }
 
+object XDrillDownDataSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDrillDownData: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[DataPilotFieldFilter], 
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[_]]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDrillDownDataSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDrillDownData")(getDrillDownData)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDrillDownDataSupplier]
+  }
+}
+

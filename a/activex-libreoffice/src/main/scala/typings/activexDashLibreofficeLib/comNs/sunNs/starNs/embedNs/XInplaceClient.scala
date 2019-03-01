@@ -118,3 +118,53 @@ trait XInplaceClient
   ): scala.Unit
 }
 
+object XInplaceClient {
+  @scala.inline
+  def apply(
+    ClipRectangle: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    InplaceDispatchProvider: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatchProvider,
+    LayoutManager: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XLayoutManager,
+    Placement: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle,
+    acquire: js.Function0[scala.Unit],
+    activatingInplace: js.Function0[scala.Unit],
+    activatingUI: js.Function0[scala.Unit],
+    canInplaceActivate: js.Function0[scala.Boolean],
+    changedPlacement: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit],
+    deactivatedInplace: js.Function0[scala.Unit],
+    deactivatedUI: js.Function0[scala.Unit],
+    getClipRectangle: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    getInplaceDispatchProvider: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatchProvider],
+    getLayoutManager: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XLayoutManager],
+    getPlacement: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    scrollObject: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit],
+    translateAccelerators: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.KeyEvent], 
+      scala.Unit
+    ]
+  ): XInplaceClient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ClipRectangle")(ClipRectangle)
+    __obj.updateDynamic("InplaceDispatchProvider")(InplaceDispatchProvider)
+    __obj.updateDynamic("LayoutManager")(LayoutManager)
+    __obj.updateDynamic("Placement")(Placement)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("activatingInplace")(activatingInplace)
+    __obj.updateDynamic("activatingUI")(activatingUI)
+    __obj.updateDynamic("canInplaceActivate")(canInplaceActivate)
+    __obj.updateDynamic("changedPlacement")(changedPlacement)
+    __obj.updateDynamic("deactivatedInplace")(deactivatedInplace)
+    __obj.updateDynamic("deactivatedUI")(deactivatedUI)
+    __obj.updateDynamic("getClipRectangle")(getClipRectangle)
+    __obj.updateDynamic("getInplaceDispatchProvider")(getInplaceDispatchProvider)
+    __obj.updateDynamic("getLayoutManager")(getLayoutManager)
+    __obj.updateDynamic("getPlacement")(getPlacement)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("scrollObject")(scrollObject)
+    __obj.updateDynamic("translateAccelerators")(translateAccelerators)
+    __obj.asInstanceOf[XInplaceClient]
+  }
+}
+

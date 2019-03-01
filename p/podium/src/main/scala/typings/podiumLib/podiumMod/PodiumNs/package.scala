@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object PodiumNs {
   type Criteria = java.lang.String | CriteriaObject
-  type Events = java.lang.String | EventOptionsObject | podiumLib.podiumMod.Podium
+  type Events = _Events | java.lang.String
   type Listener = js.Function3[
     /* data */ js.Any, 
     /* tags */ js.UndefOr[Tags], 

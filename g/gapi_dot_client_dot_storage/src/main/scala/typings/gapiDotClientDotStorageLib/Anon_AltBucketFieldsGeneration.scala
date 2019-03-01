@@ -33,3 +33,33 @@ trait Anon_AltBucketFieldsGeneration extends js.Object {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltBucketFieldsGeneration {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String,
+    `object`: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    generation: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null,
+    userProject: java.lang.String = null
+  ): Anon_AltBucketFieldsGeneration = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("bucket")(bucket)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (generation != null) __obj.updateDynamic("generation")(generation)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    __obj.asInstanceOf[Anon_AltBucketFieldsGeneration]
+  }
+}
+

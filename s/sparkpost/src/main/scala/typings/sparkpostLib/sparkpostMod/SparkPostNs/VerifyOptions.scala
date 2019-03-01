@@ -43,3 +43,26 @@ trait VerifyOptions extends js.Object {
   var spf_verify: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object VerifyOptions {
+  @scala.inline
+  def apply(
+    abuse_at_token: java.lang.String = null,
+    abuse_at_verify: js.UndefOr[scala.Boolean] = js.undefined,
+    cname_verify: js.UndefOr[scala.Boolean] = js.undefined,
+    dkim_verify: js.UndefOr[scala.Boolean] = js.undefined,
+    postmaster_at_token: java.lang.String = null,
+    postmaster_at_verify: js.UndefOr[scala.Boolean] = js.undefined,
+    spf_verify: js.UndefOr[scala.Boolean] = js.undefined
+  ): VerifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (abuse_at_token != null) __obj.updateDynamic("abuse_at_token")(abuse_at_token)
+    if (!js.isUndefined(abuse_at_verify)) __obj.updateDynamic("abuse_at_verify")(abuse_at_verify)
+    if (!js.isUndefined(cname_verify)) __obj.updateDynamic("cname_verify")(cname_verify)
+    if (!js.isUndefined(dkim_verify)) __obj.updateDynamic("dkim_verify")(dkim_verify)
+    if (postmaster_at_token != null) __obj.updateDynamic("postmaster_at_token")(postmaster_at_token)
+    if (!js.isUndefined(postmaster_at_verify)) __obj.updateDynamic("postmaster_at_verify")(postmaster_at_verify)
+    if (!js.isUndefined(spf_verify)) __obj.updateDynamic("spf_verify")(spf_verify)
+    __obj.asInstanceOf[VerifyOptions]
+  }
+}
+

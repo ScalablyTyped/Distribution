@@ -13,3 +13,22 @@ trait Options extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    development: js.UndefOr[scala.Boolean] = js.undefined,
+    `finally`: js.Function0[scala.Unit] = null,
+    onShutdown: js.Function0[js.Promise[scala.Unit]] = null,
+    signals: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(development)) __obj.updateDynamic("development")(development)
+    if (`finally` != null) __obj.updateDynamic("finally")(`finally`)
+    if (onShutdown != null) __obj.updateDynamic("onShutdown")(onShutdown)
+    if (signals != null) __obj.updateDynamic("signals")(signals)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -9,3 +9,12 @@ trait ServerValue extends js.Object {
   var TIMESTAMP: atFirebaseDatabaseDashTypesLib.Anon_Sv
 }
 
+object ServerValue {
+  @scala.inline
+  def apply(TIMESTAMP: atFirebaseDatabaseDashTypesLib.Anon_Sv): ServerValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TIMESTAMP")(TIMESTAMP)
+    __obj.asInstanceOf[ServerValue]
+  }
+}
+

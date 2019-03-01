@@ -16,3 +16,13 @@ trait TransactGetItemsOutput extends js.Object {
   var Responses: js.UndefOr[ItemResponseList] = js.undefined
 }
 
+object TransactGetItemsOutput {
+  @scala.inline
+  def apply(ConsumedCapacity: ConsumedCapacityMultiple = null, Responses: ItemResponseList = null): TransactGetItemsOutput = {
+    val __obj = js.Dynamic.literal()
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
+    if (Responses != null) __obj.updateDynamic("Responses")(Responses)
+    __obj.asInstanceOf[TransactGetItemsOutput]
+  }
+}
+

@@ -12,3 +12,20 @@ trait GroundOverlayOptions extends js.Object {
   var opacity: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GroundOverlayOptions {
+  @scala.inline
+  def apply(
+    displayOnMaxLevel: scala.Int | scala.Double = null,
+    displayOnMinLevel: scala.Int | scala.Double = null,
+    imageURL: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null
+  ): GroundOverlayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (displayOnMaxLevel != null) __obj.updateDynamic("displayOnMaxLevel")(displayOnMaxLevel.asInstanceOf[js.Any])
+    if (displayOnMinLevel != null) __obj.updateDynamic("displayOnMinLevel")(displayOnMinLevel.asInstanceOf[js.Any])
+    if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroundOverlayOptions]
+  }
+}
+

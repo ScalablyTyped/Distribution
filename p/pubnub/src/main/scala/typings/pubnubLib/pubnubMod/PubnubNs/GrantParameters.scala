@@ -16,3 +16,26 @@ trait GrantParameters extends js.Object {
   var write: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GrantParameters {
+  @scala.inline
+  def apply(
+    authKeys: js.Array[java.lang.String] = null,
+    channelGroups: js.Array[java.lang.String] = null,
+    channels: js.Array[java.lang.String] = null,
+    manage: js.UndefOr[scala.Boolean] = js.undefined,
+    read: js.UndefOr[scala.Boolean] = js.undefined,
+    ttl: scala.Int | scala.Double = null,
+    write: js.UndefOr[scala.Boolean] = js.undefined
+  ): GrantParameters = {
+    val __obj = js.Dynamic.literal()
+    if (authKeys != null) __obj.updateDynamic("authKeys")(authKeys)
+    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (!js.isUndefined(manage)) __obj.updateDynamic("manage")(manage)
+    if (!js.isUndefined(read)) __obj.updateDynamic("read")(read)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (!js.isUndefined(write)) __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[GrantParameters]
+  }
+}
+

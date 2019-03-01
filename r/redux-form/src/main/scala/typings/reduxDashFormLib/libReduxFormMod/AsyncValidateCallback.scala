@@ -14,3 +14,24 @@ trait AsyncValidateCallback[FormData, ErrorType] extends js.Object {
   var trigger: reduxDashFormLib.reduxDashFormLibStrings.blur | reduxDashFormLib.reduxDashFormLibStrings.submit
 }
 
+object AsyncValidateCallback {
+  @scala.inline
+  def apply[FormData, ErrorType](
+    initialized: scala.Boolean,
+    pristine: scala.Boolean,
+    syncValidationPasses: scala.Boolean,
+    trigger: reduxDashFormLib.reduxDashFormLibStrings.blur | reduxDashFormLib.reduxDashFormLibStrings.submit,
+    asyncErrors: reduxDashFormLib.reduxDashFormMod.FormErrors[FormData, ErrorType] = null,
+    blurredField: java.lang.String = null
+  ): AsyncValidateCallback[FormData, ErrorType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("initialized")(initialized)
+    __obj.updateDynamic("pristine")(pristine)
+    __obj.updateDynamic("syncValidationPasses")(syncValidationPasses)
+    __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (asyncErrors != null) __obj.updateDynamic("asyncErrors")(asyncErrors)
+    if (blurredField != null) __obj.updateDynamic("blurredField")(blurredField)
+    __obj.asInstanceOf[AsyncValidateCallback[FormData, ErrorType]]
+  }
+}
+

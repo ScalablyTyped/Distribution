@@ -23,3 +23,22 @@ trait AjaxBeforeLoadEventArgs extends js.Object {
   var serviceAuthorizationToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AjaxBeforeLoadEventArgs {
+  @scala.inline
+  def apply(
+    actionType: java.lang.String = null,
+    data: js.Any = null,
+    headers: js.Array[_] = null,
+    reportDesignerToken: java.lang.String = null,
+    serviceAuthorizationToken: java.lang.String = null
+  ): AjaxBeforeLoadEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (actionType != null) __obj.updateDynamic("actionType")(actionType)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (reportDesignerToken != null) __obj.updateDynamic("reportDesignerToken")(reportDesignerToken)
+    if (serviceAuthorizationToken != null) __obj.updateDynamic("serviceAuthorizationToken")(serviceAuthorizationToken)
+    __obj.asInstanceOf[AjaxBeforeLoadEventArgs]
+  }
+}
+

@@ -9,3 +9,12 @@ trait LanguageChains extends js.Object {
   var on: Assertion
 }
 
+object LanguageChains {
+  @scala.inline
+  def apply(on: Assertion): LanguageChains = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[LanguageChains]
+  }
+}
+

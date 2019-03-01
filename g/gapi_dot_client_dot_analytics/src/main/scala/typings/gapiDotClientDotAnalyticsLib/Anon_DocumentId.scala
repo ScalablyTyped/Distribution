@@ -10,3 +10,12 @@ trait Anon_DocumentId extends js.Object {
   var documentId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DocumentId {
+  @scala.inline
+  def apply(documentId: java.lang.String = null): Anon_DocumentId = {
+    val __obj = js.Dynamic.literal()
+    if (documentId != null) __obj.updateDynamic("documentId")(documentId)
+    __obj.asInstanceOf[Anon_DocumentId]
+  }
+}
+

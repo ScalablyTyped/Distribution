@@ -19,3 +19,13 @@ trait ControlNotificationAction extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ControlNotificationAction {
+  @scala.inline
+  def apply(actions: js.Array[js.Function0[scala.Unit]], message: java.lang.String = null): ControlNotificationAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actions")(actions)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[ControlNotificationAction]
+  }
+}
+

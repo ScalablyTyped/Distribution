@@ -21,3 +21,20 @@ trait Change extends js.Object {
   var value: java.lang.String
 }
 
+object Change {
+  @scala.inline
+  def apply(
+    value: java.lang.String,
+    added: js.UndefOr[scala.Boolean] = js.undefined,
+    count: scala.Int | scala.Double = null,
+    removed: js.UndefOr[scala.Boolean] = js.undefined
+  ): Change = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(added)) __obj.updateDynamic("added")(added)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (!js.isUndefined(removed)) __obj.updateDynamic("removed")(removed)
+    __obj.asInstanceOf[Change]
+  }
+}
+

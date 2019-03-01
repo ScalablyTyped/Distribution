@@ -36,3 +36,26 @@ trait Role extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Role {
+  @scala.inline
+  def apply(
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    description: java.lang.String = null,
+    etag: java.lang.String = null,
+    includedPermissions: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    stage: java.lang.String = null,
+    title: java.lang.String = null
+  ): Role = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (includedPermissions != null) __obj.updateDynamic("includedPermissions")(includedPermissions)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (stage != null) __obj.updateDynamic("stage")(stage)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Role]
+  }
+}
+

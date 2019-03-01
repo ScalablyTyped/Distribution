@@ -125,3 +125,48 @@ trait Options extends js.Object {
   var topBar: js.UndefOr[OptionsTopBar] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    animations: OptionsAnimations = null,
+    backgroundImage: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined,
+    blurOnUnmount: js.UndefOr[scala.Boolean] = js.undefined,
+    bottomTab: OptionsBottomTab = null,
+    bottomTabs: OptionsBottomTabs = null,
+    customTransition: OptionsCustomTransition = null,
+    fab: OptionsFab = null,
+    layout: OptionsLayout = null,
+    modalPresentationStyle: OptionsModalPresentationStyle = null,
+    modalTransitionStyle: OptionsModalTransitionStyle = null,
+    overlay: OptionsOverlay = null,
+    popGesture: js.UndefOr[scala.Boolean] = js.undefined,
+    preview: OptionsPreview = null,
+    rootBackgroundImage: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined,
+    sideMenu: OptionsSideMenu = null,
+    splitView: OptionsSplitView = null,
+    statusBar: OptionsStatusBar = null,
+    topBar: OptionsTopBar = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (animations != null) __obj.updateDynamic("animations")(animations)
+    if (!js.isUndefined(backgroundImage)) __obj.updateDynamic("backgroundImage")(backgroundImage)
+    if (!js.isUndefined(blurOnUnmount)) __obj.updateDynamic("blurOnUnmount")(blurOnUnmount)
+    if (bottomTab != null) __obj.updateDynamic("bottomTab")(bottomTab)
+    if (bottomTabs != null) __obj.updateDynamic("bottomTabs")(bottomTabs)
+    if (customTransition != null) __obj.updateDynamic("customTransition")(customTransition)
+    if (fab != null) __obj.updateDynamic("fab")(fab)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (modalPresentationStyle != null) __obj.updateDynamic("modalPresentationStyle")(modalPresentationStyle)
+    if (modalTransitionStyle != null) __obj.updateDynamic("modalTransitionStyle")(modalTransitionStyle)
+    if (overlay != null) __obj.updateDynamic("overlay")(overlay)
+    if (!js.isUndefined(popGesture)) __obj.updateDynamic("popGesture")(popGesture)
+    if (preview != null) __obj.updateDynamic("preview")(preview)
+    if (!js.isUndefined(rootBackgroundImage)) __obj.updateDynamic("rootBackgroundImage")(rootBackgroundImage)
+    if (sideMenu != null) __obj.updateDynamic("sideMenu")(sideMenu)
+    if (splitView != null) __obj.updateDynamic("splitView")(splitView)
+    if (statusBar != null) __obj.updateDynamic("statusBar")(statusBar)
+    if (topBar != null) __obj.updateDynamic("topBar")(topBar)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -11,3 +11,14 @@ trait ManipulationVelocities extends js.Object {
   var linear: winrtLib.WindowsNs.FoundationNs.Point
 }
 
+object ManipulationVelocities {
+  @scala.inline
+  def apply(angular: scala.Double, expansion: scala.Double, linear: winrtLib.WindowsNs.FoundationNs.Point): ManipulationVelocities = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("angular")(angular)
+    __obj.updateDynamic("expansion")(expansion)
+    __obj.updateDynamic("linear")(linear)
+    __obj.asInstanceOf[ManipulationVelocities]
+  }
+}
+

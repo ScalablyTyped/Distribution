@@ -23,3 +23,20 @@ trait GenerateConfigReportResponse extends js.Object {
   var serviceName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GenerateConfigReportResponse {
+  @scala.inline
+  def apply(
+    changeReports: js.Array[ChangeReport] = null,
+    diagnostics: js.Array[Diagnostic] = null,
+    id: java.lang.String = null,
+    serviceName: java.lang.String = null
+  ): GenerateConfigReportResponse = {
+    val __obj = js.Dynamic.literal()
+    if (changeReports != null) __obj.updateDynamic("changeReports")(changeReports)
+    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    __obj.asInstanceOf[GenerateConfigReportResponse]
+  }
+}
+

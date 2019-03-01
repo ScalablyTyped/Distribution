@@ -9,3 +9,17 @@ trait Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext extends js.O
   def renderer(context: atOracleOraclejetLib.ojgaugeMod.ojStatusMeterGaugeNs.CenterContext): Anon_Insert | Anon_PreventDefault
 }
 
+object Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext {
+  @scala.inline
+  def apply(
+    renderer: js.Function1[
+      atOracleOraclejetLib.ojgaugeMod.ojStatusMeterGaugeNs.CenterContext, 
+      Anon_Insert | Anon_PreventDefault
+    ]
+  ): Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderer")(renderer)
+    __obj.asInstanceOf[Anon_ContextRendererAnonInsertAnonPreventDefaultCenterContext]
+  }
+}
+

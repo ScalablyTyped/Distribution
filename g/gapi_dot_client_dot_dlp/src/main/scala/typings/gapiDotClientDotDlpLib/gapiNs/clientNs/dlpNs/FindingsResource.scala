@@ -10,3 +10,17 @@ trait FindingsResource extends js.Object {
   def list(request: gapiDotClientDotDlpLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1ListInspectFindingsResponse]
 }
 
+object FindingsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotDlpLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GooglePrivacyDlpV2beta1ListInspectFindingsResponse]
+    ]
+  ): FindingsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[FindingsResource]
+  }
+}
+

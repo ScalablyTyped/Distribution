@@ -11,3 +11,14 @@ trait AlterViewOptions extends js.Object {
   ] = js.undefined
 }
 
+object AlterViewOptions {
+  @scala.inline
+  def apply(
+    checkOption: nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibNumbers.`false` | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.CASCADED | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.LOCAL = null
+  ): AlterViewOptions = {
+    val __obj = js.Dynamic.literal()
+    if (checkOption != null) __obj.updateDynamic("checkOption")(checkOption.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AlterViewOptions]
+  }
+}
+

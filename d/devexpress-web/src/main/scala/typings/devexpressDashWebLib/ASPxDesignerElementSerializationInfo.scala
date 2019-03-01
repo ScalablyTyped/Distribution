@@ -71,3 +71,36 @@ trait ASPxDesignerElementSerializationInfo extends js.Object {
   var visible: js.Object
 }
 
+object ASPxDesignerElementSerializationInfo {
+  @scala.inline
+  def apply(
+    array: scala.Boolean,
+    defaultVal: js.Object,
+    disabled: js.Object,
+    displayName: java.lang.String,
+    editor: ASPxDesignerElementEditor,
+    info: js.Array[ASPxDesignerElementSerializationInfo],
+    link: scala.Boolean,
+    modelName: java.lang.String,
+    propertyName: java.lang.String,
+    validationRules: js.Array[js.Object],
+    valuesArray: js.Array[ASPxDesignerElementEditorItem],
+    visible: js.Object
+  ): ASPxDesignerElementSerializationInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("array")(array)
+    __obj.updateDynamic("defaultVal")(defaultVal)
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("editor")(editor)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("modelName")(modelName)
+    __obj.updateDynamic("propertyName")(propertyName)
+    __obj.updateDynamic("validationRules")(validationRules)
+    __obj.updateDynamic("valuesArray")(valuesArray)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ASPxDesignerElementSerializationInfo]
+  }
+}
+

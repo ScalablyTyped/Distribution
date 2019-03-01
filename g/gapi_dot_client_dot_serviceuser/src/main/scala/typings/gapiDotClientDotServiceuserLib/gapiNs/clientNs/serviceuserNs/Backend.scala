@@ -14,3 +14,12 @@ trait Backend extends js.Object {
   var rules: js.UndefOr[js.Array[BackendRule]] = js.undefined
 }
 
+object Backend {
+  @scala.inline
+  def apply(rules: js.Array[BackendRule] = null): Backend = {
+    val __obj = js.Dynamic.literal()
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[Backend]
+  }
+}
+

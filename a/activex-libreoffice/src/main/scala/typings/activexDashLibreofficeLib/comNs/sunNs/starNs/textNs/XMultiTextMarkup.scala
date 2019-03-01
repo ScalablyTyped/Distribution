@@ -23,3 +23,14 @@ trait XMultiTextMarkup extends js.Object {
   def commitMultiTextMarkup(aMarkups: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextMarkupDescriptor]): scala.Unit
 }
 
+object XMultiTextMarkup {
+  @scala.inline
+  def apply(
+    commitMultiTextMarkup: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[TextMarkupDescriptor], scala.Unit]
+  ): XMultiTextMarkup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commitMultiTextMarkup")(commitMultiTextMarkup)
+    __obj.asInstanceOf[XMultiTextMarkup]
+  }
+}
+

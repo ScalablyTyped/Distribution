@@ -26,3 +26,24 @@ trait TaskbarEditingEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TaskbarEditingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    editingFields: js.Any = null,
+    model: js.Any = null,
+    roundOffDuration: js.UndefOr[scala.Boolean] = js.undefined,
+    rowData: js.Any = null,
+    `type`: java.lang.String = null
+  ): TaskbarEditingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (editingFields != null) __obj.updateDynamic("editingFields")(editingFields)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(roundOffDuration)) __obj.updateDynamic("roundOffDuration")(roundOffDuration)
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[TaskbarEditingEventArgs]
+  }
+}
+

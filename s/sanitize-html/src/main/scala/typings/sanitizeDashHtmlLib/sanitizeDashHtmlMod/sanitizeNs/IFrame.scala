@@ -12,3 +12,20 @@ trait IFrame extends js.Object {
   var text: java.lang.String
 }
 
+object IFrame {
+  @scala.inline
+  def apply(
+    attribs: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    tag: java.lang.String,
+    tagPosition: scala.Double,
+    text: java.lang.String
+  ): IFrame = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attribs")(attribs)
+    __obj.updateDynamic("tag")(tag)
+    __obj.updateDynamic("tagPosition")(tagPosition)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[IFrame]
+  }
+}
+

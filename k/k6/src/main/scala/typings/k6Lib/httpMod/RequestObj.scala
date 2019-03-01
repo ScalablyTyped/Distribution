@@ -12,3 +12,20 @@ trait RequestObj extends js.Object {
   var url: java.lang.String
 }
 
+object RequestObj {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    body: java.lang.String | js.Object = null,
+    method: java.lang.String = null,
+    params: RequestParams = null
+  ): RequestObj = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[RequestObj]
+  }
+}
+

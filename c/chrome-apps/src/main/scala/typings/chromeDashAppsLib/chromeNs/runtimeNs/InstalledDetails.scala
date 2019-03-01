@@ -31,3 +31,25 @@ trait InstalledDetails extends js.Object {
   ]
 }
 
+object InstalledDetails {
+  @scala.inline
+  def apply(
+    reason: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_CHROMEUPDATE, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_CHROMEUPDATE[keyof chrome-apps.Anon_CHROMEUPDATE] */ js.Any
+      ]
+    ],
+    id: java.lang.String = null,
+    previousVersion: java.lang.String = null
+  ): InstalledDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (previousVersion != null) __obj.updateDynamic("previousVersion")(previousVersion)
+    __obj.asInstanceOf[InstalledDetails]
+  }
+}
+

@@ -28,3 +28,18 @@ trait Anon_ImageDataKeyPath extends js.Object {
   var tabId: scala.Double
 }
 
+object Anon_ImageDataKeyPath {
+  @scala.inline
+  def apply(
+    tabId: scala.Double,
+    imageData: firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType | org.scalablytyped.runtime.NumberDictionary[firefoxDashWebextDashBrowserLib.browserNs.pageActionNs.ImageDataType] = null,
+    path: java.lang.String | org.scalablytyped.runtime.NumberDictionary[java.lang.String] = null
+  ): Anon_ImageDataKeyPath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabId")(tabId)
+    if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ImageDataKeyPath]
+  }
+}
+

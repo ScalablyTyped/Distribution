@@ -12,3 +12,20 @@ trait MemberCreateData extends js.Object {
   var vars: js.UndefOr[js.Object] = js.undefined
 }
 
+object MemberCreateData {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    name: java.lang.String,
+    subscribed: scala.Boolean,
+    vars: js.Object = null
+  ): MemberCreateData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("subscribed")(subscribed)
+    if (vars != null) __obj.updateDynamic("vars")(vars)
+    __obj.asInstanceOf[MemberCreateData]
+  }
+}
+

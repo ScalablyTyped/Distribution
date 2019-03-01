@@ -19,3 +19,18 @@ trait IContainer
   ] = js.undefined
 }
 
+object IContainer {
+  @scala.inline
+  def apply(
+    IAbstractContainer: extjsLib.ExtNs.containerNs.IAbstractContainer = null,
+    anchorSize: js.Any = null,
+    getChildByElement: js.Function2[/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[scala.Boolean], IComponent] = null
+  ): IContainer = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IAbstractContainer)
+    if (anchorSize != null) __obj.updateDynamic("anchorSize")(anchorSize)
+    if (getChildByElement != null) __obj.updateDynamic("getChildByElement")(getChildByElement)
+    __obj.asInstanceOf[IContainer]
+  }
+}
+

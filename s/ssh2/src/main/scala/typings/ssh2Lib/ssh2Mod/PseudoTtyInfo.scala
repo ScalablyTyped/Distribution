@@ -18,3 +18,22 @@ trait PseudoTtyInfo extends js.Object {
   var width: scala.Double
 }
 
+object PseudoTtyInfo {
+  @scala.inline
+  def apply(
+    cols: scala.Double,
+    height: scala.Double,
+    modes: TerminalModes,
+    rows: scala.Double,
+    width: scala.Double
+  ): PseudoTtyInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cols")(cols)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("modes")(modes)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[PseudoTtyInfo]
+  }
+}
+

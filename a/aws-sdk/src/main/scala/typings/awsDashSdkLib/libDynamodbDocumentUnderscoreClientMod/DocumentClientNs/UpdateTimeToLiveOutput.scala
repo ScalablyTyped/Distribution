@@ -12,3 +12,12 @@ trait UpdateTimeToLiveOutput extends js.Object {
   var TimeToLiveSpecification: js.UndefOr[TimeToLiveSpecification] = js.undefined
 }
 
+object UpdateTimeToLiveOutput {
+  @scala.inline
+  def apply(TimeToLiveSpecification: TimeToLiveSpecification = null): UpdateTimeToLiveOutput = {
+    val __obj = js.Dynamic.literal()
+    if (TimeToLiveSpecification != null) __obj.updateDynamic("TimeToLiveSpecification")(TimeToLiveSpecification)
+    __obj.asInstanceOf[UpdateTimeToLiveOutput]
+  }
+}
+

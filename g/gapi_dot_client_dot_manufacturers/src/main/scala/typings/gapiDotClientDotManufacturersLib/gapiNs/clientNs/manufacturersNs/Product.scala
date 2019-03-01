@@ -76,3 +76,32 @@ trait Product extends js.Object {
   var uploadedAttributes: js.UndefOr[Attributes] = js.undefined
 }
 
+object Product {
+  @scala.inline
+  def apply(
+    contentLanguage: java.lang.String = null,
+    finalAttributes: Attributes = null,
+    issues: js.Array[Issue] = null,
+    manuallyDeletedAttributes: js.Array[java.lang.String] = null,
+    manuallyProvidedAttributes: Attributes = null,
+    name: java.lang.String = null,
+    parent: java.lang.String = null,
+    productId: java.lang.String = null,
+    targetCountry: java.lang.String = null,
+    uploadedAttributes: Attributes = null
+  ): Product = {
+    val __obj = js.Dynamic.literal()
+    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage)
+    if (finalAttributes != null) __obj.updateDynamic("finalAttributes")(finalAttributes)
+    if (issues != null) __obj.updateDynamic("issues")(issues)
+    if (manuallyDeletedAttributes != null) __obj.updateDynamic("manuallyDeletedAttributes")(manuallyDeletedAttributes)
+    if (manuallyProvidedAttributes != null) __obj.updateDynamic("manuallyProvidedAttributes")(manuallyProvidedAttributes)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (targetCountry != null) __obj.updateDynamic("targetCountry")(targetCountry)
+    if (uploadedAttributes != null) __obj.updateDynamic("uploadedAttributes")(uploadedAttributes)
+    __obj.asInstanceOf[Product]
+  }
+}
+

@@ -7,25 +7,31 @@ import scala.scalajs.js.annotation._
 
 object reactDashSlickLibStrings {
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends reactDashSlickLib.reactDashSlickMod._SwipeDirection
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashSlickLib.reactDashSlickMod._SwipeDirection
   
   @js.native
-  sealed trait ondemand extends js.Object
+  sealed trait ondemand
+    extends reactDashSlickLib.reactDashSlickMod.LazyLoadTypes
   
   @js.native
-  sealed trait progressive extends js.Object
+  sealed trait progressive
+    extends reactDashSlickLib.reactDashSlickMod.LazyLoadTypes
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashSlickLib.reactDashSlickMod._SwipeDirection
   
   @js.native
   sealed trait unslick extends js.Object
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends reactDashSlickLib.reactDashSlickMod._SwipeDirection
   
   @scala.inline
   def down: down = "down".asInstanceOf[down]

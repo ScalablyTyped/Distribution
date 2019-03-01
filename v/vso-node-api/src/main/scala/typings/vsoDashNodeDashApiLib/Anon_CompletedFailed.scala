@@ -12,3 +12,15 @@ trait Anon_CompletedFailed extends js.Object {
   var skipped: scala.Double
 }
 
+object Anon_CompletedFailed {
+  @scala.inline
+  def apply(completed: scala.Double, failed: scala.Double, inprogress: scala.Double, skipped: scala.Double): Anon_CompletedFailed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("completed")(completed)
+    __obj.updateDynamic("failed")(failed)
+    __obj.updateDynamic("inprogress")(inprogress)
+    __obj.updateDynamic("skipped")(skipped)
+    __obj.asInstanceOf[Anon_CompletedFailed]
+  }
+}
+

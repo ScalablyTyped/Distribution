@@ -32,3 +32,25 @@ trait IgComboLocale
   var placeHolder: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgComboLocale {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgComboLocale
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    clearButtonTitle: js.Any = null,
+    dropDownButtonTitle: js.Any = null,
+    noMatchFoundText: js.Any = null,
+    placeHolder: js.Any = null
+  ): IgComboLocale = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (clearButtonTitle != null) __obj.updateDynamic("clearButtonTitle")(clearButtonTitle)
+    if (dropDownButtonTitle != null) __obj.updateDynamic("dropDownButtonTitle")(dropDownButtonTitle)
+    if (noMatchFoundText != null) __obj.updateDynamic("noMatchFoundText")(noMatchFoundText)
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
+    __obj.asInstanceOf[IgComboLocale]
+  }
+}
+

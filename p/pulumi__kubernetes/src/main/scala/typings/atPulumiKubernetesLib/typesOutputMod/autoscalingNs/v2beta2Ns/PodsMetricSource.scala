@@ -21,3 +21,13 @@ trait PodsMetricSource extends js.Object {
   val target: MetricTarget
 }
 
+object PodsMetricSource {
+  @scala.inline
+  def apply(metric: MetricIdentifier, target: MetricTarget): PodsMetricSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metric")(metric)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[PodsMetricSource]
+  }
+}
+

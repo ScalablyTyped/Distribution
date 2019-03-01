@@ -17,3 +17,21 @@ trait TypeDefinition extends js.Object {
   ] = js.undefined
 }
 
+object TypeDefinition {
+  @scala.inline
+  def apply(
+    forClient: js.Function1[/* body */ js.Any, arangodbLib.Anon_Data] = null,
+    fromClient: js.Function3[
+      /* body */ java.lang.String | nodeLib.Buffer, 
+      /* req */ Request, 
+      /* type */ MediaType, 
+      _
+    ] = null
+  ): TypeDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (forClient != null) __obj.updateDynamic("forClient")(forClient)
+    if (fromClient != null) __obj.updateDynamic("fromClient")(fromClient)
+    __obj.asInstanceOf[TypeDefinition]
+  }
+}
+

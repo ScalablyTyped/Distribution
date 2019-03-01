@@ -9,3 +9,14 @@ trait ISyndicationClientFactory extends js.Object {
   def createSyndicationClient(serverCredential: winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential): SyndicationClient
 }
 
+object ISyndicationClientFactory {
+  @scala.inline
+  def apply(
+    createSyndicationClient: js.Function1[winrtLib.WindowsNs.SecurityNs.CredentialsNs.PasswordCredential, SyndicationClient]
+  ): ISyndicationClientFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createSyndicationClient")(createSyndicationClient)
+    __obj.asInstanceOf[ISyndicationClientFactory]
+  }
+}
+

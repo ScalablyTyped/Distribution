@@ -10,3 +10,12 @@ trait DiagnoseClusterResults extends js.Object {
   var outputUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DiagnoseClusterResults {
+  @scala.inline
+  def apply(outputUri: java.lang.String = null): DiagnoseClusterResults = {
+    val __obj = js.Dynamic.literal()
+    if (outputUri != null) __obj.updateDynamic("outputUri")(outputUri)
+    __obj.asInstanceOf[DiagnoseClusterResults]
+  }
+}
+

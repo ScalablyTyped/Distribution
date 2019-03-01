@@ -12,3 +12,20 @@ trait ListViewMessages extends js.Object {
   var releaseTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListViewMessages {
+  @scala.inline
+  def apply(
+    loadMoreText: java.lang.String = null,
+    pullTemplate: java.lang.String = null,
+    refreshTemplate: java.lang.String = null,
+    releaseTemplate: java.lang.String = null
+  ): ListViewMessages = {
+    val __obj = js.Dynamic.literal()
+    if (loadMoreText != null) __obj.updateDynamic("loadMoreText")(loadMoreText)
+    if (pullTemplate != null) __obj.updateDynamic("pullTemplate")(pullTemplate)
+    if (refreshTemplate != null) __obj.updateDynamic("refreshTemplate")(refreshTemplate)
+    if (releaseTemplate != null) __obj.updateDynamic("releaseTemplate")(releaseTemplate)
+    __obj.asInstanceOf[ListViewMessages]
+  }
+}
+

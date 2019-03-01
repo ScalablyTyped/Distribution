@@ -43,3 +43,40 @@ trait MedicationAdministrationDosage extends BackboneElement {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MedicationAdministrationDosage {
+  @scala.inline
+  def apply(
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _text: Element = null,
+    dose: Quantity = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    method: CodeableConcept = null,
+    modifierExtension: js.Array[Extension] = null,
+    rateQuantity: Quantity = null,
+    rateRatio: Ratio = null,
+    route: CodeableConcept = null,
+    site: CodeableConcept = null,
+    text: java.lang.String = null
+  ): MedicationAdministrationDosage = {
+    val __obj = js.Dynamic.literal()
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_text != null) __obj.updateDynamic("_text")(_text)
+    if (dose != null) __obj.updateDynamic("dose")(dose)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (rateQuantity != null) __obj.updateDynamic("rateQuantity")(rateQuantity)
+    if (rateRatio != null) __obj.updateDynamic("rateRatio")(rateRatio)
+    if (route != null) __obj.updateDynamic("route")(route)
+    if (site != null) __obj.updateDynamic("site")(site)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[MedicationAdministrationDosage]
+  }
+}
+

@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GenericServerOptions extends PublishConfiguration {
+trait GenericServerOptions
+  extends PublishConfiguration
+     with _AllPublishOptions {
   /**
     * The channel.
     * @default latest
@@ -24,5 +26,28 @@ trait GenericServerOptions extends PublishConfiguration {
     * Whether to use multiple range requests for differential update. Defaults to `true` if `url` doesn't contain `s3.amazonaws.com`.
     */
   val useMultipleRangeRequest: js.UndefOr[scala.Boolean] = js.undefined
+}
+
+object GenericServerOptions {
+  @scala.inline
+  def apply(
+    provider: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.generic,
+    url: java.lang.String,
+    channel: java.lang.String = null,
+    publishAutoUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    publisherName: js.Array[java.lang.String] = null,
+    updaterCacheDirName: java.lang.String = null,
+    useMultipleRangeRequest: js.UndefOr[scala.Boolean] = js.undefined
+  ): GenericServerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("provider")(provider)
+    __obj.updateDynamic("url")(url)
+    if (channel != null) __obj.updateDynamic("channel")(channel)
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)
+    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName)
+    if (!js.isUndefined(useMultipleRangeRequest)) __obj.updateDynamic("useMultipleRangeRequest")(useMultipleRangeRequest)
+    __obj.asInstanceOf[GenericServerOptions]
+  }
 }
 

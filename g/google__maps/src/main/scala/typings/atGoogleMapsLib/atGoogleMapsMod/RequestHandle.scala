@@ -26,3 +26,17 @@ trait RequestHandle[T] extends js.Object {
   def `finally`(callback: js.Function0[scala.Unit]): RequestHandle[T]
 }
 
+object RequestHandle {
+  @scala.inline
+  def apply[T](
+    asPromise: js.Function0[js.Promise[ClientResponse[T]]],
+    cancel: js.Function0[scala.Unit],
+    `finally`: js.Function1[js.Function0[scala.Unit], RequestHandle[T]]
+  ): RequestHandle[T] = {
+    val __obj = js.Dynamic.literal(`finally` = `finally`)
+    __obj.updateDynamic("asPromise")(asPromise)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.asInstanceOf[RequestHandle[T]]
+  }
+}
+

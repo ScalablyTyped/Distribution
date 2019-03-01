@@ -14,3 +14,12 @@ trait Anon_Username extends js.Object {
   def username(): js.Promise[java.lang.String]
 }
 
+object Anon_Username {
+  @scala.inline
+  def apply(username: js.Function0[js.Promise[java.lang.String]]): Anon_Username = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[Anon_Username]
+  }
+}
+

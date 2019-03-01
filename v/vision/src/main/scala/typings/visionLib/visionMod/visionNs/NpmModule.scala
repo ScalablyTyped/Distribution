@@ -45,3 +45,28 @@ trait NpmModule extends js.Object {
   ] = js.undefined
 }
 
+object NpmModule {
+  @scala.inline
+  def apply(
+    compile: ServerViewCompile,
+    prepare: js.Function2[
+      /* config */ EngineConfigurationObject, 
+      /* next */ js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit], 
+      scala.Unit
+    ] = null,
+    registerHelper: js.Function2[
+      /* name */ java.lang.String, 
+      /* helper */ js.Function1[/* repeated */ js.Any, _], 
+      scala.Unit
+    ] = null,
+    registerPartial: js.Function2[/* name */ java.lang.String, /* src */ java.lang.String, scala.Unit] = null
+  ): NpmModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compile")(compile.asInstanceOf[js.Any])
+    if (prepare != null) __obj.updateDynamic("prepare")(prepare)
+    if (registerHelper != null) __obj.updateDynamic("registerHelper")(registerHelper)
+    if (registerPartial != null) __obj.updateDynamic("registerPartial")(registerPartial)
+    __obj.asInstanceOf[NpmModule]
+  }
+}
+

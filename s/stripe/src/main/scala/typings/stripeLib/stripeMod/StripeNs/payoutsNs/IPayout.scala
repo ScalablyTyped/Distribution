@@ -92,3 +92,48 @@ trait IPayout
   var `type`: PayoutTypes
 }
 
+object IPayout {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    arrival_date: scala.Double,
+    balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    created: scala.Double,
+    currency: java.lang.String,
+    description: java.lang.String,
+    destination: java.lang.String | stripeLib.stripeMod.StripeNs.bankAccountsNs.IBankAccount | stripeLib.stripeMod.StripeNs.cardsNs.ICardHash,
+    failure_balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction,
+    failure_code: java.lang.String,
+    failure_message: java.lang.String,
+    id: java.lang.String,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    method: PayoutMethods,
+    `object`: stripeLib.stripeLibStrings.payout,
+    source_type: stripeLib.stripeLibStrings.alipay_account | stripeLib.stripeLibStrings.bank_account | stripeLib.stripeLibStrings.bitcoin_receiver | stripeLib.stripeLibStrings.card,
+    statement_descriptor: java.lang.String,
+    status: stripeLib.stripeLibStrings.canceled | stripeLib.stripeLibStrings.failed | stripeLib.stripeLibStrings.in_transit | stripeLib.stripeLibStrings.paid | stripeLib.stripeLibStrings.pending,
+    `type`: PayoutTypes
+  ): IPayout = {
+    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("arrival_date")(arrival_date)
+    __obj.updateDynamic("balance_transaction")(balance_transaction.asInstanceOf[js.Any])
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    __obj.updateDynamic("failure_balance_transaction")(failure_balance_transaction.asInstanceOf[js.Any])
+    __obj.updateDynamic("failure_code")(failure_code)
+    __obj.updateDynamic("failure_message")(failure_message)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("source_type")(source_type.asInstanceOf[js.Any])
+    __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPayout]
+  }
+}
+

@@ -41,3 +41,44 @@ trait Matrix4x4 extends js.Object {
   var m44: scala.Double
 }
 
+object Matrix4x4 {
+  @scala.inline
+  def apply(
+    m11: scala.Double,
+    m12: scala.Double,
+    m13: scala.Double,
+    m14: scala.Double,
+    m21: scala.Double,
+    m22: scala.Double,
+    m23: scala.Double,
+    m24: scala.Double,
+    m31: scala.Double,
+    m32: scala.Double,
+    m33: scala.Double,
+    m34: scala.Double,
+    m41: scala.Double,
+    m42: scala.Double,
+    m43: scala.Double,
+    m44: scala.Double
+  ): Matrix4x4 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("m11")(m11)
+    __obj.updateDynamic("m12")(m12)
+    __obj.updateDynamic("m13")(m13)
+    __obj.updateDynamic("m14")(m14)
+    __obj.updateDynamic("m21")(m21)
+    __obj.updateDynamic("m22")(m22)
+    __obj.updateDynamic("m23")(m23)
+    __obj.updateDynamic("m24")(m24)
+    __obj.updateDynamic("m31")(m31)
+    __obj.updateDynamic("m32")(m32)
+    __obj.updateDynamic("m33")(m33)
+    __obj.updateDynamic("m34")(m34)
+    __obj.updateDynamic("m41")(m41)
+    __obj.updateDynamic("m42")(m42)
+    __obj.updateDynamic("m43")(m43)
+    __obj.updateDynamic("m44")(m44)
+    __obj.asInstanceOf[Matrix4x4]
+  }
+}
+

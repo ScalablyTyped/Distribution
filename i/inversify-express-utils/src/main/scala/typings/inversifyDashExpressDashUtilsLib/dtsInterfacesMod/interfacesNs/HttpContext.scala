@@ -12,3 +12,20 @@ trait HttpContext extends js.Object {
   var user: Principal
 }
 
+object HttpContext {
+  @scala.inline
+  def apply(
+    container: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify inversifyInterfaces.Container */ js.Any,
+    request: expressLib.expressMod.eNs.Request,
+    response: expressLib.expressMod.eNs.Response,
+    user: Principal
+  ): HttpContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("response")(response)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[HttpContext]
+  }
+}
+

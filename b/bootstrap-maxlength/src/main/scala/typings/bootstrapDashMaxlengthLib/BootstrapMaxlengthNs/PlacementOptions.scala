@@ -31,3 +31,22 @@ trait PlacementOptions extends js.Object {
   var top: js.UndefOr[stdLib.Number | java.lang.String] = js.undefined
 }
 
+object PlacementOptions {
+  @scala.inline
+  def apply(
+    bottom: stdLib.Number | java.lang.String = null,
+    left: stdLib.Number | java.lang.String = null,
+    position: java.lang.String = null,
+    right: stdLib.Number | java.lang.String = null,
+    top: stdLib.Number | java.lang.String = null
+  ): PlacementOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlacementOptions]
+  }
+}
+

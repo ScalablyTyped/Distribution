@@ -24,3 +24,18 @@ trait IngestionInfo extends js.Object {
   var streamName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IngestionInfo {
+  @scala.inline
+  def apply(
+    backupIngestionAddress: java.lang.String = null,
+    ingestionAddress: java.lang.String = null,
+    streamName: java.lang.String = null
+  ): IngestionInfo = {
+    val __obj = js.Dynamic.literal()
+    if (backupIngestionAddress != null) __obj.updateDynamic("backupIngestionAddress")(backupIngestionAddress)
+    if (ingestionAddress != null) __obj.updateDynamic("ingestionAddress")(ingestionAddress)
+    if (streamName != null) __obj.updateDynamic("streamName")(streamName)
+    __obj.asInstanceOf[IngestionInfo]
+  }
+}
+

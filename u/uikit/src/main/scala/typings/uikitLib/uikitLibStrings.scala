@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object uikitLibStrings {
   @js.native
-  sealed trait `bottom-center` extends js.Object
+  sealed trait `bottom-center`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `bottom-left` extends js.Object
+  sealed trait `bottom-left`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `bottom-right` extends js.Object
+  sealed trait `bottom-right`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
   sealed trait click extends js.Object
@@ -22,31 +25,40 @@ object uikitLibStrings {
   sealed trait hover extends js.Object
   
   @js.native
-  sealed trait `left-bottom` extends js.Object
+  sealed trait `left-bottom`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `left-center` extends js.Object
+  sealed trait `left-center`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `left-top` extends js.Object
+  sealed trait `left-top`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `right-bottom` extends js.Object
+  sealed trait `right-bottom`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `right-center` extends js.Object
+  sealed trait `right-center`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `right-top` extends js.Object
+  sealed trait `right-top`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `top-center` extends js.Object
+  sealed trait `top-center`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `top-left` extends js.Object
+  sealed trait `top-left`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
-  sealed trait `top-right` extends js.Object
+  sealed trait `top-right`
+    extends uikitLib.UIkitNs.DropdownPosition
   
   @js.native
   sealed trait x extends js.Object

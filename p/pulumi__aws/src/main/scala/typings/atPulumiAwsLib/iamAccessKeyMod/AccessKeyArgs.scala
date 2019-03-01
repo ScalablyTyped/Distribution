@@ -17,3 +17,16 @@ trait AccessKeyArgs extends js.Object {
   val user: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object AccessKeyArgs {
+  @scala.inline
+  def apply(
+    user: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    pgpKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AccessKeyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("user")(user.asInstanceOf[js.Any])
+    if (pgpKey != null) __obj.updateDynamic("pgpKey")(pgpKey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AccessKeyArgs]
+  }
+}
+

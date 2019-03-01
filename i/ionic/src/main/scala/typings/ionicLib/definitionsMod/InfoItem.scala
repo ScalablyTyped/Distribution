@@ -13,3 +13,22 @@ trait InfoItem extends js.Object {
   var value: java.lang.String
 }
 
+object InfoItem {
+  @scala.inline
+  def apply(
+    group: InfoItemGroup,
+    key: java.lang.String,
+    value: java.lang.String,
+    flair: java.lang.String = null,
+    path: java.lang.String = null
+  ): InfoItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("value")(value)
+    if (flair != null) __obj.updateDynamic("flair")(flair)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[InfoItem]
+  }
+}
+

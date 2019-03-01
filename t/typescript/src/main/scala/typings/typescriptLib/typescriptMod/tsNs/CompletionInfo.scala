@@ -16,3 +16,20 @@ trait CompletionInfo extends js.Object {
   var isNewIdentifierLocation: scala.Boolean
 }
 
+object CompletionInfo {
+  @scala.inline
+  def apply(
+    entries: js.Array[CompletionEntry],
+    isGlobalCompletion: scala.Boolean,
+    isMemberCompletion: scala.Boolean,
+    isNewIdentifierLocation: scala.Boolean
+  ): CompletionInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entries")(entries)
+    __obj.updateDynamic("isGlobalCompletion")(isGlobalCompletion)
+    __obj.updateDynamic("isMemberCompletion")(isMemberCompletion)
+    __obj.updateDynamic("isNewIdentifierLocation")(isNewIdentifierLocation)
+    __obj.asInstanceOf[CompletionInfo]
+  }
+}
+

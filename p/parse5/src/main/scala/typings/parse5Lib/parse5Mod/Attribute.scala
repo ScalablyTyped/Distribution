@@ -24,3 +24,20 @@ trait Attribute extends js.Object {
   var value: java.lang.String
 }
 
+object Attribute {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    value: java.lang.String,
+    namespace: java.lang.String = null,
+    prefix: java.lang.String = null
+  ): Attribute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("value")(value)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[Attribute]
+  }
+}
+

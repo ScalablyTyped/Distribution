@@ -17,3 +17,21 @@ trait Anon_Errback extends js.Object {
   var viewPath: java.lang.String
 }
 
+object Anon_Errback {
+  @scala.inline
+  def apply(
+    viewPath: java.lang.String,
+    require: (js.Function1[/* module */ java.lang.String, _]) | (js.Function3[
+      /* modules */ js.Array[java.lang.String], 
+      /* ready */ js.UndefOr[js.Any], 
+      /* errback */ js.UndefOr[js.Any], 
+      scala.Unit
+    ]) = null
+  ): Anon_Errback = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("viewPath")(viewPath)
+    if (require != null) __obj.updateDynamic("require")(require.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Errback]
+  }
+}
+

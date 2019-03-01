@@ -10,3 +10,18 @@ trait TypeError extends Error {
   var name_TypeError: atVimeoPlayerLib.atVimeoPlayerLibStrings.TypeError
 }
 
+object TypeError {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    method: java.lang.String,
+    name: atVimeoPlayerLib.atVimeoPlayerLibStrings.TypeError
+  ): TypeError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[TypeError]
+  }
+}
+

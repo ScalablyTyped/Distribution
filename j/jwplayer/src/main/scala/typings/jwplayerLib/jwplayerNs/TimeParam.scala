@@ -11,3 +11,18 @@ trait TimeParam extends js.Object {
   var viewable: jwplayerLib.jwplayerLibNumbers.`0` | jwplayerLib.jwplayerLibNumbers.`1`
 }
 
+object TimeParam {
+  @scala.inline
+  def apply(
+    duration: scala.Double,
+    position: scala.Double,
+    viewable: jwplayerLib.jwplayerLibNumbers.`0` | jwplayerLib.jwplayerLibNumbers.`1`
+  ): TimeParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("viewable")(viewable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimeParam]
+  }
+}
+

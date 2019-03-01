@@ -11,3 +11,14 @@ trait Anon_Required extends js.Object {
   var unsupported: scala.Double
 }
 
+object Anon_Required {
+  @scala.inline
+  def apply(required: scala.Double, supported: scala.Double, unsupported: scala.Double): Anon_Required = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("required")(required)
+    __obj.updateDynamic("supported")(supported)
+    __obj.updateDynamic("unsupported")(unsupported)
+    __obj.asInstanceOf[Anon_Required]
+  }
+}
+

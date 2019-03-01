@@ -44,3 +44,22 @@ trait ConditionalRangeFormatLoadOptions extends js.Object {
   var numberFormat: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConditionalRangeFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    borders: ConditionalRangeBorderCollectionLoadOptions = null,
+    fill: ConditionalRangeFillLoadOptions = null,
+    font: ConditionalRangeFontLoadOptions = null,
+    numberFormat: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConditionalRangeFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (borders != null) __obj.updateDynamic("borders")(borders)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(numberFormat)) __obj.updateDynamic("numberFormat")(numberFormat)
+    __obj.asInstanceOf[ConditionalRangeFormatLoadOptions]
+  }
+}
+

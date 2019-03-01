@@ -19,3 +19,13 @@ trait LineBreaks extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LineBreaks {
+  @scala.inline
+  def apply(automatic: js.UndefOr[scala.Boolean] = js.undefined, width: java.lang.String = null): LineBreaks = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(automatic)) __obj.updateDynamic("automatic")(automatic)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[LineBreaks]
+  }
+}
+

@@ -232,3 +232,48 @@ import scala.scalajs.js.annotation._
   var ValidationLocal: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object SheetCellRanges {
+  @scala.inline
+  def apply(
+    AbsoluteName: java.lang.String,
+    CellProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellProperties = null,
+    CharacterProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterProperties = null,
+    CharacterPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesAsian = null,
+    CharacterPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesComplex = null,
+    ConditionalFormat: XSheetConditionalEntries,
+    ConditionalFormatLocal: XSheetConditionalEntries,
+    ParagraphProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphProperties = null,
+    Validation: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ValidationLocal: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    XChartDataArray: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataArray = null,
+    XEnumerationAccess: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumerationAccess = null,
+    XIndent: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XIndent = null,
+    XNameContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer = null,
+    XReplaceable: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XReplaceable = null,
+    XSheetCellRangeContainer: XSheetCellRangeContainer = null,
+    XSheetOperation: XSheetOperation = null,
+    SheetRangesQuery: SheetRangesQuery = null
+  ): SheetCellRanges = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AbsoluteName")(AbsoluteName)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CellProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
+    __obj.updateDynamic("ConditionalFormat")(ConditionalFormat)
+    __obj.updateDynamic("ConditionalFormatLocal")(ConditionalFormatLocal)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
+    __obj.updateDynamic("Validation")(Validation)
+    __obj.updateDynamic("ValidationLocal")(ValidationLocal)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XChartDataArray)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XEnumerationAccess)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XIndent)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XNameContainer)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XReplaceable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetCellRangeContainer)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetOperation)
+    js.Dynamic.global.Object.assign(__obj, SheetRangesQuery)
+    __obj.asInstanceOf[SheetCellRanges]
+  }
+}
+

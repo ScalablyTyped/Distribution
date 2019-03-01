@@ -12,3 +12,20 @@ trait Anon_Bernstein extends js.Object {
   def Linear(p0: scala.Double, p1: scala.Double, t: scala.Double): scala.Double
 }
 
+object Anon_Bernstein {
+  @scala.inline
+  def apply(
+    Bernstein: js.Function2[scala.Double, scala.Double, scala.Double],
+    CatmullRom: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
+    Factorial: js.Function1[scala.Double, scala.Double],
+    Linear: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
+  ): Anon_Bernstein = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Bernstein")(Bernstein)
+    __obj.updateDynamic("CatmullRom")(CatmullRom)
+    __obj.updateDynamic("Factorial")(Factorial)
+    __obj.updateDynamic("Linear")(Linear)
+    __obj.asInstanceOf[Anon_Bernstein]
+  }
+}
+

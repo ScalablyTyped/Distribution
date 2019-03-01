@@ -20,3 +20,24 @@ trait Analyze extends js.Object {
   var selfLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Analyze {
+  @scala.inline
+  def apply(
+    dataDescription: gapiDotClientDotPredictionLib.Anon_Features = null,
+    errors: js.Array[stdLib.Record[java.lang.String, java.lang.String]] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    modelDescription: gapiDotClientDotPredictionLib.Anon_ConfusionMatrix = null,
+    selfLink: java.lang.String = null
+  ): Analyze = {
+    val __obj = js.Dynamic.literal()
+    if (dataDescription != null) __obj.updateDynamic("dataDescription")(dataDescription)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (modelDescription != null) __obj.updateDynamic("modelDescription")(modelDescription)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    __obj.asInstanceOf[Analyze]
+  }
+}
+

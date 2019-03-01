@@ -21,3 +21,34 @@ trait Anon_BackgroundDocument extends js.Object {
   var size: js.UndefOr[goLib.goMod.goNs.Size] = js.undefined
 }
 
+object Anon_BackgroundDocument {
+  @scala.inline
+  def apply(
+    background: goLib.goMod.goNs.BrushLike = null,
+    document: stdLib.Document = null,
+    elementFinished: js.Function2[/* obj */ goLib.goMod.goNs.GraphObject, /* elt */ stdLib.SVGElement, scala.Unit] = null,
+    maxSize: goLib.goMod.goNs.Size = null,
+    padding: goLib.goMod.goNs.MarginLike = null,
+    parts: goLib.goMod.goNs.Iterable[goLib.goMod.goNs.Part] = null,
+    position: goLib.goMod.goNs.Point = null,
+    scale: scala.Int | scala.Double = null,
+    showGrid: js.UndefOr[scala.Boolean] = js.undefined,
+    showTemporary: js.UndefOr[scala.Boolean] = js.undefined,
+    size: goLib.goMod.goNs.Size = null
+  ): Anon_BackgroundDocument = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (elementFinished != null) __obj.updateDynamic("elementFinished")(elementFinished)
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (parts != null) __obj.updateDynamic("parts")(parts)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGrid)) __obj.updateDynamic("showGrid")(showGrid)
+    if (!js.isUndefined(showTemporary)) __obj.updateDynamic("showTemporary")(showTemporary)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Anon_BackgroundDocument]
+  }
+}
+

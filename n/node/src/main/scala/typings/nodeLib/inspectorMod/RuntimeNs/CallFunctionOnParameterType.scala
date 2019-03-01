@@ -55,3 +55,32 @@ trait CallFunctionOnParameterType extends js.Object {
   var userGesture: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CallFunctionOnParameterType {
+  @scala.inline
+  def apply(
+    functionDeclaration: java.lang.String,
+    arguments: js.Array[CallArgument] = null,
+    awaitPromise: js.UndefOr[scala.Boolean] = js.undefined,
+    executionContextId: js.UndefOr[ExecutionContextId] = js.undefined,
+    generatePreview: js.UndefOr[scala.Boolean] = js.undefined,
+    objectGroup: java.lang.String = null,
+    objectId: RemoteObjectId = null,
+    returnByValue: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    userGesture: js.UndefOr[scala.Boolean] = js.undefined
+  ): CallFunctionOnParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("functionDeclaration")(functionDeclaration)
+    if (arguments != null) __obj.updateDynamic("arguments")(arguments)
+    if (!js.isUndefined(awaitPromise)) __obj.updateDynamic("awaitPromise")(awaitPromise)
+    if (!js.isUndefined(executionContextId)) __obj.updateDynamic("executionContextId")(executionContextId)
+    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
+    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(userGesture)) __obj.updateDynamic("userGesture")(userGesture)
+    __obj.asInstanceOf[CallFunctionOnParameterType]
+  }
+}
+

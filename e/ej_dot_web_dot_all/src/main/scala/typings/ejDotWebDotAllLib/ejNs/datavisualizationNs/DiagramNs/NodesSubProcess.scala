@@ -47,3 +47,32 @@ trait NodesSubProcess extends js.Object {
   var `type`: js.UndefOr[BPMNSubProcessTypes | java.lang.String] = js.undefined
 }
 
+object NodesSubProcess {
+  @scala.inline
+  def apply(
+    Processes: js.Array[_] = null,
+    adhoc: js.UndefOr[scala.Boolean] = js.undefined,
+    boundary: BPMNBoundary | java.lang.String = null,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    compensation: js.UndefOr[scala.Boolean] = js.undefined,
+    event: BPMNEvents | java.lang.String = null,
+    events: js.Array[NodesSubProcessEvent] = null,
+    loop: BPMNLoops | java.lang.String = null,
+    trigger: BPMNTriggers | java.lang.String = null,
+    `type`: BPMNSubProcessTypes | java.lang.String = null
+  ): NodesSubProcess = {
+    val __obj = js.Dynamic.literal()
+    if (Processes != null) __obj.updateDynamic("Processes")(Processes)
+    if (!js.isUndefined(adhoc)) __obj.updateDynamic("adhoc")(adhoc)
+    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (!js.isUndefined(compensation)) __obj.updateDynamic("compensation")(compensation)
+    if (event != null) __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodesSubProcess]
+  }
+}
+

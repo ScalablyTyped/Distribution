@@ -16,3 +16,28 @@ trait Worksheet_Invoke_Parameter extends js.Object {
   val wFlags: scala.Double
 }
 
+object Worksheet_Invoke_Parameter {
+  @scala.inline
+  def apply(
+    dispidMember: scala.Double,
+    lcid: scala.Double,
+    pdispparams: activexDashStdoleLib.stdoleNs.DISPPARAMS,
+    pexcepinfo: activexDashStdoleLib.stdoleNs.EXCEPINFO,
+    puArgErr: scala.Double,
+    pvarResult: js.Any,
+    riid: activexDashStdoleLib.stdoleNs.GUID,
+    wFlags: scala.Double
+  ): Worksheet_Invoke_Parameter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dispidMember")(dispidMember)
+    __obj.updateDynamic("lcid")(lcid)
+    __obj.updateDynamic("pdispparams")(pdispparams)
+    __obj.updateDynamic("pexcepinfo")(pexcepinfo)
+    __obj.updateDynamic("puArgErr")(puArgErr)
+    __obj.updateDynamic("pvarResult")(pvarResult)
+    __obj.updateDynamic("riid")(riid)
+    __obj.updateDynamic("wFlags")(wFlags)
+    __obj.asInstanceOf[Worksheet_Invoke_Parameter]
+  }
+}
+

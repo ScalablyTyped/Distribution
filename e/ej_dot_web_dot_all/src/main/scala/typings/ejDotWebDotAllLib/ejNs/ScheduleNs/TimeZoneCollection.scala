@@ -23,3 +23,20 @@ trait TimeZoneCollection extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimeZoneCollection {
+  @scala.inline
+  def apply(
+    dataSource: js.Any = null,
+    id: java.lang.String = null,
+    text: java.lang.String = null,
+    value: java.lang.String = null
+  ): TimeZoneCollection = {
+    val __obj = js.Dynamic.literal()
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[TimeZoneCollection]
+  }
+}
+

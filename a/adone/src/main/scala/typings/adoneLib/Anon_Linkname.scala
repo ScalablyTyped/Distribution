@@ -10,3 +10,12 @@ trait Anon_Linkname extends js.Object {
   var `type`: adoneLib.adoneLibStrings.symblink
 }
 
+object Anon_Linkname {
+  @scala.inline
+  def apply(linkname: java.lang.String, `type`: adoneLib.adoneLibStrings.symblink): Anon_Linkname = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("linkname")(linkname)
+    __obj.asInstanceOf[Anon_Linkname]
+  }
+}
+

@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object playcanvasLibStrings {
   @js.native
-  sealed trait animation extends js.Object
+  sealed trait animation
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait asset extends js.Object
+  sealed trait asset
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait audiolistener extends js.Object
+  sealed trait audiolistener
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait collision extends js.Object
+  sealed trait collision
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait curve extends js.Object
+  sealed trait curve
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait element extends js.Object
+  sealed trait element
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait entity extends js.Object
+  sealed trait entity
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
   sealed trait exp extends js.Object
@@ -40,67 +49,86 @@ object playcanvasLibStrings {
   sealed trait exp2 extends js.Object
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
   sealed trait linear extends js.Object
   
   @js.native
-  sealed trait model extends js.Object
+  sealed trait model
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait particlesystem extends js.Object
+  sealed trait particlesystem
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait pcDOTBODYTYPE_DYNAMIC extends js.Object
+  sealed trait pcDOTBODYTYPE_DYNAMIC
+    extends playcanvasLib.pcNs.rigidBodyType
   
   @js.native
-  sealed trait pcDOTBODYTYPE_KINEMATIC extends js.Object
+  sealed trait pcDOTBODYTYPE_KINEMATIC
+    extends playcanvasLib.pcNs.rigidBodyType
   
   @js.native
-  sealed trait pcDOTBODYTYPE_STATIC extends js.Object
+  sealed trait pcDOTBODYTYPE_STATIC
+    extends playcanvasLib.pcNs.rigidBodyType
   
   @js.native
-  sealed trait rgb extends js.Object
+  sealed trait rgb
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait rgba extends js.Object
+  sealed trait rgba
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait rigidbody extends js.Object
+  sealed trait rigidbody
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait screen extends js.Object
+  sealed trait screen
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait script extends js.Object
+  sealed trait script
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait sound extends js.Object
+  sealed trait sound
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait vec2 extends js.Object
+  sealed trait vec2
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait vec3 extends js.Object
+  sealed trait vec3
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait vec4 extends js.Object
+  sealed trait vec4
+    extends playcanvasLib.pcNs.AttributesType
   
   @js.native
-  sealed trait zone extends js.Object
+  sealed trait zone
+    extends playcanvasLib.pcNs.ComponentTypes
   
   @scala.inline
   def animation: animation = "animation".asInstanceOf[animation]

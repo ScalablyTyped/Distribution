@@ -11,3 +11,18 @@ trait MultiColumnComboBoxVirtual extends js.Object {
   var valueMapper: js.UndefOr[js.Function] = js.undefined
 }
 
+object MultiColumnComboBoxVirtual {
+  @scala.inline
+  def apply(
+    itemHeight: scala.Int | scala.Double = null,
+    mapValueTo: java.lang.String = null,
+    valueMapper: js.Function = null
+  ): MultiColumnComboBoxVirtual = {
+    val __obj = js.Dynamic.literal()
+    if (itemHeight != null) __obj.updateDynamic("itemHeight")(itemHeight.asInstanceOf[js.Any])
+    if (mapValueTo != null) __obj.updateDynamic("mapValueTo")(mapValueTo)
+    if (valueMapper != null) __obj.updateDynamic("valueMapper")(valueMapper)
+    __obj.asInstanceOf[MultiColumnComboBoxVirtual]
+  }
+}
+

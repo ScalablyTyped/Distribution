@@ -9,3 +9,12 @@ trait Session extends js.Object {
   var sessionId: java.lang.String
 }
 
+object Session {
+  @scala.inline
+  def apply(sessionId: java.lang.String): Session = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sessionId")(sessionId)
+    __obj.asInstanceOf[Session]
+  }
+}
+

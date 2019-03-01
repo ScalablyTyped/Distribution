@@ -11,6 +11,8 @@ object OptionNs extends js.Object {
   @js.native
   sealed trait ActivityType extends js.Object
   
+  trait Order extends js.Object
+  
   @js.native
   object ActivityType extends js.Object {
     @js.native
@@ -253,6 +255,8 @@ object OptionNs extends js.Object {
       var versionId: js.UndefOr[js.Array[scala.Double]] = js.undefined
     }
     
+    trait SortKey extends js.Object
+    
     @js.native
     object ParentChildType extends js.Object {
       @js.native
@@ -286,7 +290,6 @@ object OptionNs extends js.Object {
           ] = js.native
     }
     
-    type SortKey = backlogDashJsLib.backlogDashJsLibStrings.issueType | backlogDashJsLib.backlogDashJsLibStrings.category | backlogDashJsLib.backlogDashJsLibStrings.version | backlogDashJsLib.backlogDashJsLibStrings.milestone | backlogDashJsLib.backlogDashJsLibStrings.summary | backlogDashJsLib.backlogDashJsLibStrings.status | backlogDashJsLib.backlogDashJsLibStrings.priority | backlogDashJsLib.backlogDashJsLibStrings.attachment | backlogDashJsLib.backlogDashJsLibStrings.sharedFile | backlogDashJsLib.backlogDashJsLibStrings.created | backlogDashJsLib.backlogDashJsLibStrings.createdUser | backlogDashJsLib.backlogDashJsLibStrings.updated | backlogDashJsLib.backlogDashJsLibStrings.updatedUser | backlogDashJsLib.backlogDashJsLibStrings.assignee | backlogDashJsLib.backlogDashJsLibStrings.startDate | backlogDashJsLib.backlogDashJsLibStrings.dueDate | backlogDashJsLib.backlogDashJsLibStrings.estimatedHours | backlogDashJsLib.backlogDashJsLibStrings.actualHours | backlogDashJsLib.backlogDashJsLibStrings.childIssue
   }
   
   @JSName("Notification")
@@ -344,6 +347,8 @@ object OptionNs extends js.Object {
       var offset: js.UndefOr[scala.Double] = js.undefined
       var order: js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.Order] = js.undefined
     }
+    
+    trait IssueTypeColor extends js.Object
     
     trait PatchCategoriesParams extends js.Object {
       var name: java.lang.String
@@ -490,6 +495,8 @@ object OptionNs extends js.Object {
       var name: js.UndefOr[java.lang.String] = js.undefined
     }
     
+    trait TextFormattingRule extends js.Object
+    
     @js.native
     object FieldType extends js.Object {
       @js.native
@@ -536,8 +543,6 @@ object OptionNs extends js.Object {
       def apply(value: scala.Double): js.UndefOr[backlogDashJsLib.backlogDashJsMod.OptionNs.ProjectNs.FieldType with scala.Double] = js.native
     }
     
-    type IssueTypeColor = backlogDashJsLib.backlogDashJsLibStrings.`#e30000` | backlogDashJsLib.backlogDashJsLibStrings.`#990000` | backlogDashJsLib.backlogDashJsLibStrings.`#934981` | backlogDashJsLib.backlogDashJsLibStrings.`#814fbc` | backlogDashJsLib.backlogDashJsLibStrings.`#2779ca` | backlogDashJsLib.backlogDashJsLibStrings.`#007e9a` | backlogDashJsLib.backlogDashJsLibStrings.`#7ea800` | backlogDashJsLib.backlogDashJsLibStrings.`#ff9200` | backlogDashJsLib.backlogDashJsLibStrings.`#ff3265` | backlogDashJsLib.backlogDashJsLibStrings.`#666665`
-    type TextFormattingRule = backlogDashJsLib.backlogDashJsLibStrings.backlog | backlogDashJsLib.backlogDashJsLibStrings.markdown
   }
   
   @JSName("PullRequest")
@@ -717,6 +722,5 @@ object OptionNs extends js.Object {
     
   }
   
-  type Order = backlogDashJsLib.backlogDashJsLibStrings.asc | backlogDashJsLib.backlogDashJsLibStrings.desc
 }
 

@@ -18,7 +18,8 @@ object GoogleNs extends js.Object {
     var webClientId: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  trait LogInResult extends js.Object
+  
   def logInAsync(config: LogInConfig): js.Promise[LogInResult] = js.native
-  type LogInResult = expoLib.Anon_Cancel | expoLib.Anon_AccessToken
 }
 

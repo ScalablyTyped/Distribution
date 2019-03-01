@@ -10,3 +10,13 @@ trait Anon_Avatar extends js.Object {
   var onPress: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object Anon_Avatar {
+  @scala.inline
+  def apply(avatar: reactLib.reactMod.Global.JSXNs.Element = null, onPress: js.Function0[scala.Unit] = null): Anon_Avatar = {
+    val __obj = js.Dynamic.literal()
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    __obj.asInstanceOf[Anon_Avatar]
+  }
+}
+

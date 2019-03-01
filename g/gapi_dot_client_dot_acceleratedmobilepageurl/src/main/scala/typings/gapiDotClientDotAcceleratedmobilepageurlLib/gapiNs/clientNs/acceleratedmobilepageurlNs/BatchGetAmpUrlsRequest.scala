@@ -16,3 +16,13 @@ trait BatchGetAmpUrlsRequest extends js.Object {
   var urls: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object BatchGetAmpUrlsRequest {
+  @scala.inline
+  def apply(lookupStrategy: java.lang.String = null, urls: js.Array[java.lang.String] = null): BatchGetAmpUrlsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (lookupStrategy != null) __obj.updateDynamic("lookupStrategy")(lookupStrategy)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[BatchGetAmpUrlsRequest]
+  }
+}
+

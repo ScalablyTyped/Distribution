@@ -14,3 +14,27 @@ trait ChangesResource extends js.Object {
   def watch(request: gapiDotClientDotDriveLib.Anon_AltFieldsIncludeCorpusRemovals): gapiDotClientLib.gapiNs.clientNs.Request[Channel]
 }
 
+object ChangesResource {
+  @scala.inline
+  def apply(
+    getStartPageToken: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StartPageToken]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsIncludeCorpusRemovals, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ChangeList]
+    ],
+    watch: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsIncludeCorpusRemovals, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Channel]
+    ]
+  ): ChangesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getStartPageToken")(getStartPageToken)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[ChangesResource]
+  }
+}
+

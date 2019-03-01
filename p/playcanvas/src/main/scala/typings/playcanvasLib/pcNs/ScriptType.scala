@@ -142,3 +142,60 @@ trait ScriptType
   var update: js.UndefOr[js.Function1[/* dt */ scala.Double, scala.Unit]] = js.undefined
 }
 
+object ScriptType {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    fire: js.Function9[
+      /* name */ java.lang.String, 
+      /* arg1 */ js.UndefOr[js.Any], 
+      /* arg2 */ js.UndefOr[js.Any], 
+      /* arg3 */ js.UndefOr[js.Any], 
+      /* arg4 */ js.UndefOr[js.Any], 
+      /* arg5 */ js.UndefOr[js.Any], 
+      /* arg6 */ js.UndefOr[js.Any], 
+      /* arg7 */ js.UndefOr[js.Any], 
+      /* arg8 */ js.UndefOr[js.Any], 
+      _
+    ] = null,
+    hasEvent: js.Function1[/* name */ java.lang.String, scala.Boolean] = null,
+    initialize: js.Function0[scala.Unit] = null,
+    off: js.Function3[
+      /* name */ java.lang.String, 
+      /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
+      /* scope */ js.Any, 
+      _
+    ] = null,
+    on: js.Function3[
+      /* name */ java.lang.String, 
+      /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
+      /* scope */ js.Any, 
+      _
+    ] = null,
+    once: js.Function3[
+      /* name */ java.lang.String, 
+      /* callback */ js.Function1[/* repeated */ js.Any, scala.Unit], 
+      /* scope */ js.Any, 
+      _
+    ] = null,
+    postInitialize: js.Function0[scala.Unit] = null,
+    postUpdate: js.Function0[scala.Unit] = null,
+    swap: js.Function0[scala.Unit] = null,
+    update: js.Function1[/* dt */ scala.Double, scala.Unit] = null
+  ): ScriptType = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (fire != null) __obj.updateDynamic("fire")(fire)
+    if (hasEvent != null) __obj.updateDynamic("hasEvent")(hasEvent)
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (off != null) __obj.updateDynamic("off")(off)
+    if (on != null) __obj.updateDynamic("on")(on)
+    if (once != null) __obj.updateDynamic("once")(once)
+    if (postInitialize != null) __obj.updateDynamic("postInitialize")(postInitialize)
+    if (postUpdate != null) __obj.updateDynamic("postUpdate")(postUpdate)
+    if (swap != null) __obj.updateDynamic("swap")(swap)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ScriptType]
+  }
+}
+

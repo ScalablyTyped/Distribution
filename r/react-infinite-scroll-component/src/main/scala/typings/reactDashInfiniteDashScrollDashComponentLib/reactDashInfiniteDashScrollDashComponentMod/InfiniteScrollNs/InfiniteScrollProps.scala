@@ -85,3 +85,48 @@ trait InfiniteScrollProps extends js.Object {
   def next(): scala.Unit
 }
 
+object InfiniteScrollProps {
+  @scala.inline
+  def apply(
+    dataLength: scala.Double,
+    hasMore: scala.Boolean,
+    loader: reactLib.reactMod.ReactNs.ReactNode,
+    next: js.Function0[scala.Unit],
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    endMessage: reactLib.reactMod.ReactNs.ReactNode = null,
+    hasChildren: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    initialScrollY: scala.Int | scala.Double = null,
+    onScroll: js.Function0[scala.Unit] = null,
+    pullDownToRefresh: js.UndefOr[scala.Boolean] = js.undefined,
+    pullDownToRefreshContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    pullDownToRefreshThreshold: scala.Int | scala.Double = null,
+    refreshFunction: js.Function0[scala.Unit] = null,
+    releaseToRefreshContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    scrollThreshold: scala.Double | java.lang.String = null,
+    scrollableTarget: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    style: js.Any = null
+  ): InfiniteScrollProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dataLength")(dataLength)
+    __obj.updateDynamic("hasMore")(hasMore)
+    __obj.updateDynamic("loader")(loader.asInstanceOf[js.Any])
+    __obj.updateDynamic("next")(next)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (endMessage != null) __obj.updateDynamic("endMessage")(endMessage.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasChildren)) __obj.updateDynamic("hasChildren")(hasChildren)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (initialScrollY != null) __obj.updateDynamic("initialScrollY")(initialScrollY.asInstanceOf[js.Any])
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (!js.isUndefined(pullDownToRefresh)) __obj.updateDynamic("pullDownToRefresh")(pullDownToRefresh)
+    if (pullDownToRefreshContent != null) __obj.updateDynamic("pullDownToRefreshContent")(pullDownToRefreshContent.asInstanceOf[js.Any])
+    if (pullDownToRefreshThreshold != null) __obj.updateDynamic("pullDownToRefreshThreshold")(pullDownToRefreshThreshold.asInstanceOf[js.Any])
+    if (refreshFunction != null) __obj.updateDynamic("refreshFunction")(refreshFunction)
+    if (releaseToRefreshContent != null) __obj.updateDynamic("releaseToRefreshContent")(releaseToRefreshContent.asInstanceOf[js.Any])
+    if (scrollThreshold != null) __obj.updateDynamic("scrollThreshold")(scrollThreshold.asInstanceOf[js.Any])
+    if (scrollableTarget != null) __obj.updateDynamic("scrollableTarget")(scrollableTarget.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[InfiniteScrollProps]
+  }
+}
+

@@ -20,3 +20,22 @@ trait XVersionedSchemaSupplier extends XSchemaSupplier {
   def getSchemaVersion(aComponent: java.lang.String): java.lang.String
 }
 
+object XVersionedSchemaSupplier {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getComponentSchema: js.Function1[java.lang.String, XSchema],
+    getSchemaVersion: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XVersionedSchemaSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getComponentSchema")(getComponentSchema)
+    __obj.updateDynamic("getSchemaVersion")(getSchemaVersion)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XVersionedSchemaSupplier]
+  }
+}
+

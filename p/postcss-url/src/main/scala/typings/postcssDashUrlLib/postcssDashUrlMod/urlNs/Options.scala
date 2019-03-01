@@ -69,3 +69,34 @@ trait Options extends js.Object {
   var useHash: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    assetsPath: scala.Boolean | java.lang.String = null,
+    basePath: java.lang.String | js.Array[java.lang.String] = null,
+    fallback: CustomTransformFunction = null,
+    filter: stdLib.RegExp | CustomFilterFunction | java.lang.String = null,
+    hashOptions: postcssDashUrlLib.Anon_Append = null,
+    ignoreFragmentWarning: js.UndefOr[scala.Boolean] = js.undefined,
+    includeUriFragment: js.UndefOr[scala.Boolean] = js.undefined,
+    maxSize: scala.Int | scala.Double = null,
+    optimizeSvgEncode: js.UndefOr[scala.Boolean] = js.undefined,
+    url: postcssDashUrlLib.postcssDashUrlLibStrings.copy | postcssDashUrlLib.postcssDashUrlLibStrings.`inline` | postcssDashUrlLib.postcssDashUrlLibStrings.rebase | CustomTransformFunction = null,
+    useHash: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (assetsPath != null) __obj.updateDynamic("assetsPath")(assetsPath.asInstanceOf[js.Any])
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (hashOptions != null) __obj.updateDynamic("hashOptions")(hashOptions)
+    if (!js.isUndefined(ignoreFragmentWarning)) __obj.updateDynamic("ignoreFragmentWarning")(ignoreFragmentWarning)
+    if (!js.isUndefined(includeUriFragment)) __obj.updateDynamic("includeUriFragment")(includeUriFragment)
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(optimizeSvgEncode)) __obj.updateDynamic("optimizeSvgEncode")(optimizeSvgEncode)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash)
+    __obj.asInstanceOf[Options]
+  }
+}
+

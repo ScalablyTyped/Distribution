@@ -23,3 +23,24 @@ trait ReadBLECharacteristicValue
   def success_MReadBLECharacteristicValue(res: weixinDashAppLib.Anon_Characteristic with ErrMsgResponse): scala.Unit
 }
 
+object ReadBLECharacteristicValue {
+  @scala.inline
+  def apply(
+    characteristicId: java.lang.String,
+    deviceId: java.lang.String,
+    serviceId: java.lang.String,
+    success: js.Function1[weixinDashAppLib.Anon_Characteristic with ErrMsgResponse, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): ReadBLECharacteristicValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("characteristicId")(characteristicId)
+    __obj.updateDynamic("deviceId")(deviceId)
+    __obj.updateDynamic("serviceId")(serviceId)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[ReadBLECharacteristicValue]
+  }
+}
+

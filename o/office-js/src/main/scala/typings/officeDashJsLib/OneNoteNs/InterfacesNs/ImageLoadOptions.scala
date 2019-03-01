@@ -72,3 +72,30 @@ trait ImageLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ImageLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    description: js.UndefOr[scala.Boolean] = js.undefined,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
+    hyperlink: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    ocrData: js.UndefOr[scala.Boolean] = js.undefined,
+    pageContent: PageContentLoadOptions = null,
+    paragraph: ParagraphLoadOptions = null,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): ImageLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(ocrData)) __obj.updateDynamic("ocrData")(ocrData)
+    if (pageContent != null) __obj.updateDynamic("pageContent")(pageContent)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ImageLoadOptions]
+  }
+}
+

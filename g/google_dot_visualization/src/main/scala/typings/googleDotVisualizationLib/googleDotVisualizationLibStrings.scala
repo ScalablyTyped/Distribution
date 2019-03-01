@@ -10,25 +10,31 @@ object googleDotVisualizationLibStrings {
   sealed trait absolute extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends googleDotVisualizationLib.googleNs.visualizationNs.ChartLegendPosition
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends googleDotVisualizationLib.googleNs.visualizationNs.ChartLegendAlignment
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends googleDotVisualizationLib.googleNs.visualizationNs.ChartLegendAlignment
   
   @js.native
-  sealed trait in extends js.Object
+  sealed trait in
+    extends googleDotVisualizationLib.googleNs.visualizationNs.ChartLegendPosition
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends googleDotVisualizationLib.googleNs.visualizationNs.ChartLegendPosition
   
   @js.native
   sealed trait newRow extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends googleDotVisualizationLib.googleNs.visualizationNs.ChartLegendPosition
   
   @js.native
   sealed trait percent extends js.Object
@@ -37,16 +43,19 @@ object googleDotVisualizationLibStrings {
   sealed trait relative extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends googleDotVisualizationLib.googleNs.visualizationNs.ChartLegendPosition
   
   @js.native
   sealed trait sameRow extends js.Object
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends googleDotVisualizationLib.googleNs.visualizationNs.ChartLegendAlignment
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends googleDotVisualizationLib.googleNs.visualizationNs.ChartLegendPosition
   
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]

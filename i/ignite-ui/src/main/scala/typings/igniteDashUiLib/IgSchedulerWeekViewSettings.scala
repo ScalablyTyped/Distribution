@@ -27,3 +27,23 @@ trait IgSchedulerWeekViewSettings
   var workingHoursDisplayMode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgSchedulerWeekViewSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgSchedulerWeekViewSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    timeSlotInterval: scala.Int | scala.Double = null,
+    weekViewDisplayMode: scala.Int | scala.Double = null,
+    workingHoursDisplayMode: scala.Int | scala.Double = null
+  ): IgSchedulerWeekViewSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (timeSlotInterval != null) __obj.updateDynamic("timeSlotInterval")(timeSlotInterval.asInstanceOf[js.Any])
+    if (weekViewDisplayMode != null) __obj.updateDynamic("weekViewDisplayMode")(weekViewDisplayMode.asInstanceOf[js.Any])
+    if (workingHoursDisplayMode != null) __obj.updateDynamic("workingHoursDisplayMode")(workingHoursDisplayMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgSchedulerWeekViewSettings]
+  }
+}
+

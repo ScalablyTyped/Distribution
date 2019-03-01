@@ -28,3 +28,20 @@ trait ContainerPort extends js.Object {
   var targetPort: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ContainerPort {
+  @scala.inline
+  def apply(
+    port: scala.Double,
+    external: js.UndefOr[scala.Boolean] = js.undefined,
+    protocol: ContainerProtocol = null,
+    targetPort: scala.Int | scala.Double = null
+  ): ContainerPort = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("port")(port)
+    if (!js.isUndefined(external)) __obj.updateDynamic("external")(external)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (targetPort != null) __obj.updateDynamic("targetPort")(targetPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ContainerPort]
+  }
+}
+

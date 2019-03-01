@@ -5,8 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait APIResponseSuccess extends js.Object {
+trait APIResponseSuccess extends APIResponse {
   var data: APIResponseData
   var meta: APIResponseMeta
+}
+
+object APIResponseSuccess {
+  @scala.inline
+  def apply(data: APIResponseData, meta: APIResponseMeta): APIResponseSuccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("meta")(meta)
+    __obj.asInstanceOf[APIResponseSuccess]
+  }
 }
 

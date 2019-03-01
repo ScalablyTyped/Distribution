@@ -16,3 +16,16 @@ trait TooltipAlignment extends js.Object {
   var vertical: js.UndefOr[VerticalAlignment | java.lang.String] = js.undefined
 }
 
+object TooltipAlignment {
+  @scala.inline
+  def apply(
+    horizontal: HorizontalAlignment | java.lang.String = null,
+    vertical: VerticalAlignment | java.lang.String = null
+  ): TooltipAlignment = {
+    val __obj = js.Dynamic.literal()
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TooltipAlignment]
+  }
+}
+

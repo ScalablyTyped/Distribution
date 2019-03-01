@@ -10,3 +10,16 @@ trait Context extends js.Object {
   val sessionOptions: js.UndefOr[koaDashSessionLib.koaDashSessionMod.sessionNs.opts]
 }
 
+object Context {
+  @scala.inline
+  def apply(
+    session: koaDashSessionLib.koaDashSessionMod.sessionNs.Session = null,
+    sessionOptions: koaDashSessionLib.koaDashSessionMod.sessionNs.opts = null
+  ): Context = {
+    val __obj = js.Dynamic.literal()
+    if (session != null) __obj.updateDynamic("session")(session)
+    if (sessionOptions != null) __obj.updateDynamic("sessionOptions")(sessionOptions)
+    __obj.asInstanceOf[Context]
+  }
+}
+

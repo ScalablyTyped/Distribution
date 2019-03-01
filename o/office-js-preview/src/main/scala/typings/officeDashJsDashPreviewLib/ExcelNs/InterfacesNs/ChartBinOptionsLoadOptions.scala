@@ -73,3 +73,28 @@ trait ChartBinOptionsLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartBinOptionsLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    allowOverflow: js.UndefOr[scala.Boolean] = js.undefined,
+    allowUnderflow: js.UndefOr[scala.Boolean] = js.undefined,
+    count: js.UndefOr[scala.Boolean] = js.undefined,
+    overflowValue: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined,
+    underflowValue: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartBinOptionsLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(allowOverflow)) __obj.updateDynamic("allowOverflow")(allowOverflow)
+    if (!js.isUndefined(allowUnderflow)) __obj.updateDynamic("allowUnderflow")(allowUnderflow)
+    if (!js.isUndefined(count)) __obj.updateDynamic("count")(count)
+    if (!js.isUndefined(overflowValue)) __obj.updateDynamic("overflowValue")(overflowValue)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(underflowValue)) __obj.updateDynamic("underflowValue")(underflowValue)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ChartBinOptionsLoadOptions]
+  }
+}
+

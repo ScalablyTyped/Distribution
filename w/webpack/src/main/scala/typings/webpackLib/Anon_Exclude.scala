@@ -17,3 +17,18 @@ trait Anon_Exclude extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Exclude {
+  @scala.inline
+  def apply(
+    exclude: webpackLib.webpackMod.webpackNs.Condition | js.Array[webpackLib.webpackMod.webpackNs.Condition] = null,
+    include: webpackLib.webpackMod.webpackNs.Condition | js.Array[webpackLib.webpackMod.webpackNs.Condition] = null,
+    test: webpackLib.webpackMod.webpackNs.Condition | js.Array[webpackLib.webpackMod.webpackNs.Condition] = null
+  ): Anon_Exclude = {
+    val __obj = js.Dynamic.literal()
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude.asInstanceOf[js.Any])
+    if (include != null) __obj.updateDynamic("include")(include.asInstanceOf[js.Any])
+    if (test != null) __obj.updateDynamic("test")(test.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Exclude]
+  }
+}
+

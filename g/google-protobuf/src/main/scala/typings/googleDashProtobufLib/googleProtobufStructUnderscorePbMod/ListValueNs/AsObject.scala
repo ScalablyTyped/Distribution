@@ -9,3 +9,12 @@ trait AsObject extends js.Object {
   var valuesList: js.Array[googleDashProtobufLib.googleProtobufStructUnderscorePbMod.ValueNs.AsObject]
 }
 
+object AsObject {
+  @scala.inline
+  def apply(valuesList: js.Array[googleDashProtobufLib.googleProtobufStructUnderscorePbMod.ValueNs.AsObject]): AsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("valuesList")(valuesList)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

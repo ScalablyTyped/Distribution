@@ -10,3 +10,16 @@ trait ChangeEmitterOf5[T1, T2, T3, T4, T5] extends js.Object {
   def listen(listener: ListenerOf5[T1, T2, T3, T4, T5]): Unlisten
 }
 
+object ChangeEmitterOf5 {
+  @scala.inline
+  def apply[T1, T2, T3, T4, T5](
+    emit: js.Function5[T1, T2, T3, T4, T5, scala.Unit],
+    listen: js.Function1[ListenerOf5[T1, T2, T3, T4, T5], Unlisten]
+  ): ChangeEmitterOf5[T1, T2, T3, T4, T5] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("emit")(emit)
+    __obj.updateDynamic("listen")(listen)
+    __obj.asInstanceOf[ChangeEmitterOf5[T1, T2, T3, T4, T5]]
+  }
+}
+

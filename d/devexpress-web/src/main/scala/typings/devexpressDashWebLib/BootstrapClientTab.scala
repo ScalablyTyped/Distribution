@@ -47,3 +47,58 @@ trait BootstrapClientTab extends ASPxClientTab {
   def SetIconCssClass(cssClass: java.lang.String): scala.Unit
 }
 
+object BootstrapClientTab {
+  @scala.inline
+  def apply(
+    GetActiveIconCssClass: js.Function0[java.lang.String],
+    GetActiveImageUrl: js.Function0[java.lang.String],
+    GetBadgeIconCssClass: js.Function0[java.lang.String],
+    GetBadgeText: js.Function0[java.lang.String],
+    GetEnabled: js.Function0[scala.Boolean],
+    GetIconCssClass: js.Function0[java.lang.String],
+    GetImageUrl: js.Function0[java.lang.String],
+    GetNavigateUrl: js.Function0[java.lang.String],
+    GetText: js.Function0[java.lang.String],
+    GetVisible: js.Function0[scala.Boolean],
+    SetActiveIconCssClass: js.Function1[java.lang.String, scala.Unit],
+    SetActiveImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetBadgeIconCssClass: js.Function1[java.lang.String, scala.Unit],
+    SetBadgeText: js.Function1[java.lang.String, scala.Unit],
+    SetEnabled: js.Function1[scala.Boolean, scala.Unit],
+    SetIconCssClass: js.Function1[java.lang.String, scala.Unit],
+    SetImageUrl: js.Function1[java.lang.String, scala.Unit],
+    SetNavigateUrl: js.Function1[java.lang.String, scala.Unit],
+    SetText: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    index: scala.Double,
+    name: java.lang.String,
+    tabControl: ASPxClientTabControlBase
+  ): BootstrapClientTab = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetActiveIconCssClass")(GetActiveIconCssClass)
+    __obj.updateDynamic("GetActiveImageUrl")(GetActiveImageUrl)
+    __obj.updateDynamic("GetBadgeIconCssClass")(GetBadgeIconCssClass)
+    __obj.updateDynamic("GetBadgeText")(GetBadgeText)
+    __obj.updateDynamic("GetEnabled")(GetEnabled)
+    __obj.updateDynamic("GetIconCssClass")(GetIconCssClass)
+    __obj.updateDynamic("GetImageUrl")(GetImageUrl)
+    __obj.updateDynamic("GetNavigateUrl")(GetNavigateUrl)
+    __obj.updateDynamic("GetText")(GetText)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("SetActiveIconCssClass")(SetActiveIconCssClass)
+    __obj.updateDynamic("SetActiveImageUrl")(SetActiveImageUrl)
+    __obj.updateDynamic("SetBadgeIconCssClass")(SetBadgeIconCssClass)
+    __obj.updateDynamic("SetBadgeText")(SetBadgeText)
+    __obj.updateDynamic("SetEnabled")(SetEnabled)
+    __obj.updateDynamic("SetIconCssClass")(SetIconCssClass)
+    __obj.updateDynamic("SetImageUrl")(SetImageUrl)
+    __obj.updateDynamic("SetNavigateUrl")(SetNavigateUrl)
+    __obj.updateDynamic("SetText")(SetText)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("tabControl")(tabControl)
+    __obj.asInstanceOf[BootstrapClientTab]
+  }
+}
+

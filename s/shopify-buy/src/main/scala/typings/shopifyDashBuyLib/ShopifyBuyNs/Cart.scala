@@ -30,3 +30,26 @@ trait Cart extends GraphModel {
   var subtotalPrice: java.lang.String
 }
 
+object Cart {
+  @scala.inline
+  def apply(
+    checkoutUrl: java.lang.String,
+    id: java.lang.String | scala.Double,
+    lineItemCount: scala.Double,
+    lineItems: js.Array[LineItem],
+    subtotalPrice: java.lang.String,
+    attrs: js.Any = null,
+    onlineStoreUrl: java.lang.String = null
+  ): Cart = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkoutUrl")(checkoutUrl)
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("lineItemCount")(lineItemCount)
+    __obj.updateDynamic("lineItems")(lineItems)
+    __obj.updateDynamic("subtotalPrice")(subtotalPrice)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    __obj.asInstanceOf[Cart]
+  }
+}
+

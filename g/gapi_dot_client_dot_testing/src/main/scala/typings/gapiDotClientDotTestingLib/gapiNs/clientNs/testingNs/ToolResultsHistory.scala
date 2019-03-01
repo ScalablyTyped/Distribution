@@ -18,3 +18,13 @@ trait ToolResultsHistory extends js.Object {
   var projectId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ToolResultsHistory {
+  @scala.inline
+  def apply(historyId: java.lang.String = null, projectId: java.lang.String = null): ToolResultsHistory = {
+    val __obj = js.Dynamic.literal()
+    if (historyId != null) __obj.updateDynamic("historyId")(historyId)
+    if (projectId != null) __obj.updateDynamic("projectId")(projectId)
+    __obj.asInstanceOf[ToolResultsHistory]
+  }
+}
+

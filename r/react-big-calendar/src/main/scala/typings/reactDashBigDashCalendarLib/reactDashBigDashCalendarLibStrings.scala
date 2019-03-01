@@ -7,40 +7,51 @@ import scala.scalajs.js.annotation._
 
 object reactDashBigDashCalendarLibStrings {
   @js.native
-  sealed trait AGENDA extends js.Object
+  sealed trait AGENDA
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.ViewKey
   
   @js.native
-  sealed trait DATE extends js.Object
+  sealed trait DATE
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Navigate
   
   @js.native
-  sealed trait DAY extends js.Object
+  sealed trait DAY
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.ViewKey
   
   @js.native
-  sealed trait MONTH extends js.Object
+  sealed trait MONTH
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.ViewKey
   
   @js.native
-  sealed trait NEXT extends js.Object
+  sealed trait NEXT
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Navigate
   
   @js.native
-  sealed trait PREV extends js.Object
+  sealed trait PREV
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Navigate
   
   @js.native
-  sealed trait TODAY extends js.Object
+  sealed trait TODAY
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.Navigate
   
   @js.native
-  sealed trait WEEK extends js.Object
+  sealed trait WEEK
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.ViewKey
   
   @js.native
-  sealed trait WORK_WEEK extends js.Object
+  sealed trait WORK_WEEK
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.ViewKey
   
   @js.native
-  sealed trait agenda extends js.Object
+  sealed trait agenda
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.View
   
   @js.native
   sealed trait click extends js.Object
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.View
   
   @js.native
   sealed trait doubleClick extends js.Object
@@ -49,16 +60,19 @@ object reactDashBigDashCalendarLibStrings {
   sealed trait ignoreEvents extends js.Object
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.View
   
   @js.native
   sealed trait select extends js.Object
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.View
   
   @js.native
-  sealed trait work_week extends js.Object
+  sealed trait work_week
+    extends reactDashBigDashCalendarLib.reactDashBigDashCalendarMod.View
   
   @scala.inline
   def AGENDA: AGENDA = "AGENDA".asInstanceOf[AGENDA]

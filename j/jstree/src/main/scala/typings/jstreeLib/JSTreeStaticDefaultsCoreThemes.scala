@@ -53,3 +53,30 @@ trait JSTreeStaticDefaultsCoreThemes extends js.Object {
   var variant: js.UndefOr[js.Any] = js.undefined
 }
 
+object JSTreeStaticDefaultsCoreThemes {
+  @scala.inline
+  def apply(
+    dir: java.lang.String = null,
+    dots: js.UndefOr[scala.Boolean] = js.undefined,
+    ellipsis: js.UndefOr[scala.Boolean] = js.undefined,
+    icons: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    stripes: js.UndefOr[scala.Boolean] = js.undefined,
+    url: java.lang.String = null,
+    variant: js.Any = null
+  ): JSTreeStaticDefaultsCoreThemes = {
+    val __obj = js.Dynamic.literal()
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    if (!js.isUndefined(dots)) __obj.updateDynamic("dots")(dots)
+    if (!js.isUndefined(ellipsis)) __obj.updateDynamic("ellipsis")(ellipsis)
+    if (!js.isUndefined(icons)) __obj.updateDynamic("icons")(icons)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (!js.isUndefined(stripes)) __obj.updateDynamic("stripes")(stripes)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (variant != null) __obj.updateDynamic("variant")(variant)
+    __obj.asInstanceOf[JSTreeStaticDefaultsCoreThemes]
+  }
+}
+

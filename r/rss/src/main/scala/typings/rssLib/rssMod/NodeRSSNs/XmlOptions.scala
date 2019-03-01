@@ -15,3 +15,12 @@ trait XmlOptions extends js.Object {
   var indent: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object XmlOptions {
+  @scala.inline
+  def apply(indent: scala.Boolean | java.lang.String = null): XmlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (indent != null) __obj.updateDynamic("indent")(indent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[XmlOptions]
+  }
+}
+

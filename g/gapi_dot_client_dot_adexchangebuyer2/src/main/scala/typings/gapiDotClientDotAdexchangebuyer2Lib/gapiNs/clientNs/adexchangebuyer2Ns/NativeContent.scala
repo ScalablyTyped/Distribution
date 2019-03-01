@@ -34,3 +34,38 @@ trait NativeContent extends js.Object {
   var videoUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NativeContent {
+  @scala.inline
+  def apply(
+    advertiserName: java.lang.String = null,
+    appIcon: Image = null,
+    body: java.lang.String = null,
+    callToAction: java.lang.String = null,
+    clickLinkUrl: java.lang.String = null,
+    clickTrackingUrl: java.lang.String = null,
+    headline: java.lang.String = null,
+    image: Image = null,
+    logo: Image = null,
+    priceDisplayText: java.lang.String = null,
+    starRating: scala.Int | scala.Double = null,
+    storeUrl: java.lang.String = null,
+    videoUrl: java.lang.String = null
+  ): NativeContent = {
+    val __obj = js.Dynamic.literal()
+    if (advertiserName != null) __obj.updateDynamic("advertiserName")(advertiserName)
+    if (appIcon != null) __obj.updateDynamic("appIcon")(appIcon)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (callToAction != null) __obj.updateDynamic("callToAction")(callToAction)
+    if (clickLinkUrl != null) __obj.updateDynamic("clickLinkUrl")(clickLinkUrl)
+    if (clickTrackingUrl != null) __obj.updateDynamic("clickTrackingUrl")(clickTrackingUrl)
+    if (headline != null) __obj.updateDynamic("headline")(headline)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (logo != null) __obj.updateDynamic("logo")(logo)
+    if (priceDisplayText != null) __obj.updateDynamic("priceDisplayText")(priceDisplayText)
+    if (starRating != null) __obj.updateDynamic("starRating")(starRating.asInstanceOf[js.Any])
+    if (storeUrl != null) __obj.updateDynamic("storeUrl")(storeUrl)
+    if (videoUrl != null) __obj.updateDynamic("videoUrl")(videoUrl)
+    __obj.asInstanceOf[NativeContent]
+  }
+}
+

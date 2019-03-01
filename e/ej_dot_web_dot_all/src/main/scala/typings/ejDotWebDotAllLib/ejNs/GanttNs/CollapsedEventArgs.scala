@@ -23,3 +23,22 @@ trait CollapsedEventArgs extends js.Object {
   var requestType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CollapsedEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    expanded: js.UndefOr[scala.Boolean] = js.undefined,
+    recordIndex: scala.Int | scala.Double = null,
+    requestType: java.lang.String = null
+  ): CollapsedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(expanded)) __obj.updateDynamic("expanded")(expanded)
+    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    __obj.asInstanceOf[CollapsedEventArgs]
+  }
+}
+

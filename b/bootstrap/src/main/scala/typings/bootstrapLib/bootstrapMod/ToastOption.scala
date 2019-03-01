@@ -26,3 +26,18 @@ trait ToastOption extends js.Object {
   var delay: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ToastOption {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    autohide: js.UndefOr[scala.Boolean] = js.undefined,
+    delay: scala.Int | scala.Double = null
+  ): ToastOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(autohide)) __obj.updateDynamic("autohide")(autohide)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToastOption]
+  }
+}
+

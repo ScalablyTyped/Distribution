@@ -28,3 +28,22 @@ trait TokenIterator extends js.Object {
   def stepForward(): java.lang.String
 }
 
+object TokenIterator {
+  @scala.inline
+  def apply(
+    getCurrentToken: js.Function0[TokenInfo],
+    getCurrentTokenColumn: js.Function0[scala.Double],
+    getCurrentTokenRow: js.Function0[scala.Double],
+    stepBackward: js.Function0[js.Array[java.lang.String]],
+    stepForward: js.Function0[java.lang.String]
+  ): TokenIterator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCurrentToken")(getCurrentToken)
+    __obj.updateDynamic("getCurrentTokenColumn")(getCurrentTokenColumn)
+    __obj.updateDynamic("getCurrentTokenRow")(getCurrentTokenRow)
+    __obj.updateDynamic("stepBackward")(stepBackward)
+    __obj.updateDynamic("stepForward")(stepForward)
+    __obj.asInstanceOf[TokenIterator]
+  }
+}
+

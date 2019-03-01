@@ -32,3 +32,36 @@ trait GraphicsStats extends js.Object {
   var totalFrames: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GraphicsStats {
+  @scala.inline
+  def apply(
+    buckets: js.Array[GraphicsStatsBucket] = null,
+    highInputLatencyCount: java.lang.String = null,
+    jankyFrames: java.lang.String = null,
+    missedVsyncCount: java.lang.String = null,
+    p50Millis: java.lang.String = null,
+    p90Millis: java.lang.String = null,
+    p95Millis: java.lang.String = null,
+    p99Millis: java.lang.String = null,
+    slowBitmapUploadCount: java.lang.String = null,
+    slowDrawCount: java.lang.String = null,
+    slowUiThreadCount: java.lang.String = null,
+    totalFrames: java.lang.String = null
+  ): GraphicsStats = {
+    val __obj = js.Dynamic.literal()
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
+    if (highInputLatencyCount != null) __obj.updateDynamic("highInputLatencyCount")(highInputLatencyCount)
+    if (jankyFrames != null) __obj.updateDynamic("jankyFrames")(jankyFrames)
+    if (missedVsyncCount != null) __obj.updateDynamic("missedVsyncCount")(missedVsyncCount)
+    if (p50Millis != null) __obj.updateDynamic("p50Millis")(p50Millis)
+    if (p90Millis != null) __obj.updateDynamic("p90Millis")(p90Millis)
+    if (p95Millis != null) __obj.updateDynamic("p95Millis")(p95Millis)
+    if (p99Millis != null) __obj.updateDynamic("p99Millis")(p99Millis)
+    if (slowBitmapUploadCount != null) __obj.updateDynamic("slowBitmapUploadCount")(slowBitmapUploadCount)
+    if (slowDrawCount != null) __obj.updateDynamic("slowDrawCount")(slowDrawCount)
+    if (slowUiThreadCount != null) __obj.updateDynamic("slowUiThreadCount")(slowUiThreadCount)
+    if (totalFrames != null) __obj.updateDynamic("totalFrames")(totalFrames)
+    __obj.asInstanceOf[GraphicsStats]
+  }
+}
+

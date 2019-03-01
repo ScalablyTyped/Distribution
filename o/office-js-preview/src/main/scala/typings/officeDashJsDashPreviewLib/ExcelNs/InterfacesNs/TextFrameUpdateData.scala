@@ -111,3 +111,34 @@ trait TextFrameUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object TextFrameUpdateData {
+  @scala.inline
+  def apply(
+    autoSize: officeDashJsDashPreviewLib.ExcelNs.ShapeAutoSize | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutoSizeNone | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutoSizeTextToFitShape | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutoSizeShapeToFitText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutoSizeMixed = null,
+    bottomMargin: scala.Int | scala.Double = null,
+    horizontalAlignment: officeDashJsDashPreviewLib.ExcelNs.ShapeTextHorizontalAlignType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.JustifyLow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ThaiDistributed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShapeTextHorizontalAlignType_MaxEnumIDs = null,
+    horizontalOverflow: officeDashJsDashPreviewLib.ExcelNs.ShapeTextHorzOverflowType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Overflow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Clip | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShapeTextHorzOverflowType_MaxEnumIDs = null,
+    leftMargin: scala.Int | scala.Double = null,
+    orientation: officeDashJsDashPreviewLib.ExcelNs.ShapeTextOrientationType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Horizontal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Vertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Vertical270 | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WordArtVertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.EastAsianVertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.MongolianVertical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.WordArtVerticalRTL | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShapeTextOrientationType_MaxEnumIDs = null,
+    readingOrder: officeDashJsDashPreviewLib.ExcelNs.ShapeTextReadingOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LTR | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RTL = null,
+    rightMargin: scala.Int | scala.Double = null,
+    topMargin: scala.Int | scala.Double = null,
+    verticalAlignment: officeDashJsDashPreviewLib.ExcelNs.ShapeTextVerticalAlignType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Top | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Middle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justified | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShapeTextVerticalAlignType_MaxEnumIDs = null,
+    verticalOverflow: officeDashJsDashPreviewLib.ExcelNs.ShapeTextVertOverflowType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Overflow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ellipsis | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Clip | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ShapeTextVertOverflowType_MaxEnumIDs = null
+  ): TextFrameUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (autoSize != null) __obj.updateDynamic("autoSize")(autoSize.asInstanceOf[js.Any])
+    if (bottomMargin != null) __obj.updateDynamic("bottomMargin")(bottomMargin.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (horizontalOverflow != null) __obj.updateDynamic("horizontalOverflow")(horizontalOverflow.asInstanceOf[js.Any])
+    if (leftMargin != null) __obj.updateDynamic("leftMargin")(leftMargin.asInstanceOf[js.Any])
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (readingOrder != null) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
+    if (rightMargin != null) __obj.updateDynamic("rightMargin")(rightMargin.asInstanceOf[js.Any])
+    if (topMargin != null) __obj.updateDynamic("topMargin")(topMargin.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (verticalOverflow != null) __obj.updateDynamic("verticalOverflow")(verticalOverflow.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextFrameUpdateData]
+  }
+}
+

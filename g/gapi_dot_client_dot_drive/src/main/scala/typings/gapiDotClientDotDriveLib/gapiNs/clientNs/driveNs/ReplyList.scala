@@ -17,3 +17,18 @@ trait ReplyList extends js.Object {
   var replies: js.UndefOr[js.Array[Reply]] = js.undefined
 }
 
+object ReplyList {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    replies: js.Array[Reply] = null
+  ): ReplyList = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (replies != null) __obj.updateDynamic("replies")(replies)
+    __obj.asInstanceOf[ReplyList]
+  }
+}
+

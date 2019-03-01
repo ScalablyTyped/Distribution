@@ -10,3 +10,13 @@ trait Anon_TypeValue extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_TypeValue {
+  @scala.inline
+  def apply(`type`: java.lang.String = null, value: scala.Int | scala.Double = null): Anon_TypeValue = {
+    val __obj = js.Dynamic.literal()
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_TypeValue]
+  }
+}
+

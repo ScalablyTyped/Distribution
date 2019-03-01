@@ -10,19 +10,24 @@ object hapiDashPinoLibStrings {
   sealed trait Options extends js.Object
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends hapiDashPinoLib.hapiDashPinoMod.HapiPinoNs.LogLevels
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends hapiDashPinoLib.hapiDashPinoMod.HapiPinoNs.LogLevels
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends hapiDashPinoLib.hapiDashPinoMod.HapiPinoNs.LogLevels
   
   @js.native
-  sealed trait trace extends js.Object
+  sealed trait trace
+    extends hapiDashPinoLib.hapiDashPinoMod.HapiPinoNs.LogLevels
   
   @js.native
-  sealed trait warn extends js.Object
+  sealed trait warn
+    extends hapiDashPinoLib.hapiDashPinoMod.HapiPinoNs.LogLevels
   
   @scala.inline
   def Options: Options = "Options".asInstanceOf[Options]

@@ -22,97 +22,128 @@ object arcgisDashRestDashApiLibStrings {
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait esriGeometryEnvelope extends js.Object
+  sealed trait esriGeometryEnvelope
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.esriGeometryType
   
   @js.native
-  sealed trait esriGeometryMultipoint extends js.Object
+  sealed trait esriGeometryMultipoint
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.esriGeometryType
   
   @js.native
-  sealed trait esriGeometryPoint extends js.Object
+  sealed trait esriGeometryPoint
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.esriGeometryType
   
   @js.native
-  sealed trait esriGeometryPolygon extends js.Object
+  sealed trait esriGeometryPolygon
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.esriGeometryType
   
   @js.native
-  sealed trait esriGeometryPolyline extends js.Object
+  sealed trait esriGeometryPolyline
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.esriGeometryType
   
   @js.native
-  sealed trait esriPFS extends js.Object
+  sealed trait esriPFS
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SymbolType
   
   @js.native
-  sealed trait esriPMS extends js.Object
+  sealed trait esriPMS
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SymbolType
   
   @js.native
-  sealed trait esriSFS extends js.Object
+  sealed trait esriSFS
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SymbolType
   
   @js.native
-  sealed trait esriSFSBackwardDiagonal extends js.Object
+  sealed trait esriSFSBackwardDiagonal
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleFillSymbolStyle
   
   @js.native
-  sealed trait esriSFSCross extends js.Object
+  sealed trait esriSFSCross
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleFillSymbolStyle
   
   @js.native
-  sealed trait esriSFSDiagonalCross extends js.Object
+  sealed trait esriSFSDiagonalCross
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleFillSymbolStyle
   
   @js.native
-  sealed trait esriSFSForwardDiagonal extends js.Object
+  sealed trait esriSFSForwardDiagonal
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleFillSymbolStyle
   
   @js.native
-  sealed trait esriSFSHorizontal extends js.Object
+  sealed trait esriSFSHorizontal
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleFillSymbolStyle
   
   @js.native
-  sealed trait esriSFSNull extends js.Object
+  sealed trait esriSFSNull
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleFillSymbolStyle
   
   @js.native
-  sealed trait esriSFSSolid extends js.Object
+  sealed trait esriSFSSolid
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleFillSymbolStyle
   
   @js.native
-  sealed trait esriSFSVertical extends js.Object
+  sealed trait esriSFSVertical
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleFillSymbolStyle
   
   @js.native
-  sealed trait esriSLS extends js.Object
+  sealed trait esriSLS
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SymbolType
   
   @js.native
-  sealed trait esriSLSDash extends js.Object
+  sealed trait esriSLSDash
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleLineSymbolStyle
   
   @js.native
-  sealed trait esriSLSDashDot extends js.Object
+  sealed trait esriSLSDashDot
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleLineSymbolStyle
   
   @js.native
-  sealed trait esriSLSDashDotDot extends js.Object
+  sealed trait esriSLSDashDotDot
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleLineSymbolStyle
   
   @js.native
-  sealed trait esriSLSDot extends js.Object
+  sealed trait esriSLSDot
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleLineSymbolStyle
   
   @js.native
-  sealed trait esriSLSNull extends js.Object
+  sealed trait esriSLSNull
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleLineSymbolStyle
   
   @js.native
-  sealed trait esriSLSSolid extends js.Object
+  sealed trait esriSLSSolid
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleLineSymbolStyle
   
   @js.native
-  sealed trait esriSMS extends js.Object
+  sealed trait esriSMS
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SymbolType
   
   @js.native
-  sealed trait esriSMSCircle extends js.Object
+  sealed trait esriSMSCircle
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleMarkerSymbolStyle
   
   @js.native
-  sealed trait esriSMSCross extends js.Object
+  sealed trait esriSMSCross
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleMarkerSymbolStyle
   
   @js.native
-  sealed trait esriSMSDiamond extends js.Object
+  sealed trait esriSMSDiamond
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleMarkerSymbolStyle
   
   @js.native
-  sealed trait esriSMSSquare extends js.Object
+  sealed trait esriSMSSquare
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleMarkerSymbolStyle
   
   @js.native
-  sealed trait esriSMSTriangle extends js.Object
+  sealed trait esriSMSTriangle
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleMarkerSymbolStyle
   
   @js.native
-  sealed trait esriSMSX extends js.Object
+  sealed trait esriSMSX
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SimpleMarkerSymbolStyle
   
   @js.native
-  sealed trait esriTS extends js.Object
+  sealed trait esriTS
+    extends arcgisDashRestDashApiLib.arcgisDashRestDashApiMod.SymbolType
   
   @js.native
   sealed trait italic extends js.Object

@@ -12,3 +12,13 @@ trait Callbacks extends js.Object {
   var onComplete: js.UndefOr[js.Function] = js.undefined
 }
 
+object Callbacks {
+  @scala.inline
+  def apply(onChange: js.Function = null, onComplete: js.Function = null): Callbacks = {
+    val __obj = js.Dynamic.literal()
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    __obj.asInstanceOf[Callbacks]
+  }
+}
+

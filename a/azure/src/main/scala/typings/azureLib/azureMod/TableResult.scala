@@ -9,3 +9,12 @@ trait TableResult extends js.Object {
   var TableName: java.lang.String
 }
 
+object TableResult {
+  @scala.inline
+  def apply(TableName: java.lang.String): TableResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TableName")(TableName)
+    __obj.asInstanceOf[TableResult]
+  }
+}
+

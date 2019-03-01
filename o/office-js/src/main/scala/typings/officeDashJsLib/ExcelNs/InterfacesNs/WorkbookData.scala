@@ -93,3 +93,36 @@ trait WorkbookData extends js.Object {
   var worksheets: js.UndefOr[js.Array[WorksheetData]] = js.undefined
 }
 
+object WorkbookData {
+  @scala.inline
+  def apply(
+    bindings: js.Array[BindingData] = null,
+    customXmlParts: js.Array[CustomXmlPartData] = null,
+    name: java.lang.String = null,
+    names: js.Array[NamedItemData] = null,
+    pivotTables: js.Array[PivotTableData] = null,
+    properties: DocumentPropertiesData = null,
+    protection: WorkbookProtectionData = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    settings: js.Array[SettingData] = null,
+    styles: js.Array[StyleData] = null,
+    tables: js.Array[TableData] = null,
+    worksheets: js.Array[WorksheetData] = null
+  ): WorkbookData = {
+    val __obj = js.Dynamic.literal()
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (customXmlParts != null) __obj.updateDynamic("customXmlParts")(customXmlParts)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (settings != null) __obj.updateDynamic("settings")(settings)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (worksheets != null) __obj.updateDynamic("worksheets")(worksheets)
+    __obj.asInstanceOf[WorkbookData]
+  }
+}
+

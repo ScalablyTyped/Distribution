@@ -636,6 +636,8 @@ object sourceNs extends js.Object {
     def this(options: openlayersLib.openlayersMod.olxNs.sourceNs.StamenOptions) = this()
   }
   
+  trait State extends js.Object
+  
   /**
     * @classdesc
     * Abstract base class; normally only used for creating subclasses and not
@@ -1339,6 +1341,8 @@ object sourceNs extends js.Object {
     def updateDimensions(dimensions: openlayersLib.openlayersMod.GlobalObject): scala.Unit = js.native
   }
   
+  trait WMTSRequestEncoding extends js.Object
+  
   /**
     * @classdesc
     * Layer source for tile data with URLs in a set XYZ format that are
@@ -1462,21 +1466,9 @@ object sourceNs extends js.Object {
   @JSName("wms")
   @js.native
   object wmsNs extends js.Object {
-    /**
-      * Available server types: `'carmentaserver'`, `'geoserver'`, `'mapserver'`,
-      *     `'qgis'`. These are servers that have vendor parameters beyond the WMS
-      *     specification that OpenLayers can make use of.
-      */
-    type ServerType = openlayersLib.openlayersLibStrings.carmentaserver | openlayersLib.openlayersLibStrings.geoserver | openlayersLib.openlayersLibStrings.mapserver | openlayersLib.openlayersLibStrings.qgis
+    trait ServerType extends js.Object
+    
   }
   
-  /**
-    * State of the source, one of 'undefined', 'loading', 'ready' or 'error'.
-    */
-  type State = openlayersLib.openlayersLibStrings.undefined | openlayersLib.openlayersLibStrings.loading | openlayersLib.openlayersLibStrings.ready | openlayersLib.openlayersLibStrings.error
-  /**
-    * Request encoding. One of 'KVP', 'REST'.
-    */
-  type WMTSRequestEncoding = openlayersLib.openlayersLibStrings.KVP | openlayersLib.openlayersLibStrings.REST
 }
 

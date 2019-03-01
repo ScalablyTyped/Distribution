@@ -9,3 +9,12 @@ trait DatastoreInt extends js.Object {
   var value: java.lang.String
 }
 
+object DatastoreInt {
+  @scala.inline
+  def apply(value: java.lang.String): DatastoreInt = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DatastoreInt]
+  }
+}
+

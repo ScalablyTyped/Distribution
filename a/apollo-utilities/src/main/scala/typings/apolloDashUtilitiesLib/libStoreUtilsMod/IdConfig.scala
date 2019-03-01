@@ -10,3 +10,13 @@ trait IdConfig extends js.Object {
   var typename: js.UndefOr[java.lang.String]
 }
 
+object IdConfig {
+  @scala.inline
+  def apply(id: java.lang.String, typename: java.lang.String = null): IdConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (typename != null) __obj.updateDynamic("typename")(typename)
+    __obj.asInstanceOf[IdConfig]
+  }
+}
+

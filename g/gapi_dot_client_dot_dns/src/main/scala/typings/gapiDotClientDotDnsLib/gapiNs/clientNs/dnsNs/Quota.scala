@@ -22,3 +22,26 @@ trait Quota extends js.Object {
   var totalRrdataSizePerChange: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Quota {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    managedZones: scala.Int | scala.Double = null,
+    resourceRecordsPerRrset: scala.Int | scala.Double = null,
+    rrsetAdditionsPerChange: scala.Int | scala.Double = null,
+    rrsetDeletionsPerChange: scala.Int | scala.Double = null,
+    rrsetsPerManagedZone: scala.Int | scala.Double = null,
+    totalRrdataSizePerChange: scala.Int | scala.Double = null
+  ): Quota = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (managedZones != null) __obj.updateDynamic("managedZones")(managedZones.asInstanceOf[js.Any])
+    if (resourceRecordsPerRrset != null) __obj.updateDynamic("resourceRecordsPerRrset")(resourceRecordsPerRrset.asInstanceOf[js.Any])
+    if (rrsetAdditionsPerChange != null) __obj.updateDynamic("rrsetAdditionsPerChange")(rrsetAdditionsPerChange.asInstanceOf[js.Any])
+    if (rrsetDeletionsPerChange != null) __obj.updateDynamic("rrsetDeletionsPerChange")(rrsetDeletionsPerChange.asInstanceOf[js.Any])
+    if (rrsetsPerManagedZone != null) __obj.updateDynamic("rrsetsPerManagedZone")(rrsetsPerManagedZone.asInstanceOf[js.Any])
+    if (totalRrdataSizePerChange != null) __obj.updateDynamic("totalRrdataSizePerChange")(totalRrdataSizePerChange.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Quota]
+  }
+}
+

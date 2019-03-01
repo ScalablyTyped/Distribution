@@ -11,3 +11,18 @@ trait ExtractCommentOptions extends js.Object {
   var filename: js.UndefOr[java.lang.String | FormatFn] = js.undefined
 }
 
+object ExtractCommentOptions {
+  @scala.inline
+  def apply(
+    condition: scala.Boolean | java.lang.String | stdLib.RegExp | ExtractCommentFn | js.Object,
+    banner: scala.Boolean | java.lang.String | FormatFn = null,
+    filename: java.lang.String | FormatFn = null
+  ): ExtractCommentOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (banner != null) __obj.updateDynamic("banner")(banner.asInstanceOf[js.Any])
+    if (filename != null) __obj.updateDynamic("filename")(filename.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExtractCommentOptions]
+  }
+}
+

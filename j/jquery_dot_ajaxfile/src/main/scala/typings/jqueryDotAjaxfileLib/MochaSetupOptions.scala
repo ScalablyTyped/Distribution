@@ -24,3 +24,28 @@ trait MochaSetupOptions extends js.Object {
   var ui: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MochaSetupOptions {
+  @scala.inline
+  def apply(
+    bail: js.UndefOr[scala.Boolean] = js.undefined,
+    globals: js.Array[_] = null,
+    grep: js.Any = null,
+    ignoreLeaks: js.UndefOr[scala.Boolean] = js.undefined,
+    reporter: js.Any = null,
+    slow: scala.Int | scala.Double = null,
+    timeout: scala.Int | scala.Double = null,
+    ui: java.lang.String = null
+  ): MochaSetupOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bail)) __obj.updateDynamic("bail")(bail)
+    if (globals != null) __obj.updateDynamic("globals")(globals)
+    if (grep != null) __obj.updateDynamic("grep")(grep)
+    if (!js.isUndefined(ignoreLeaks)) __obj.updateDynamic("ignoreLeaks")(ignoreLeaks)
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter)
+    if (slow != null) __obj.updateDynamic("slow")(slow.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    __obj.asInstanceOf[MochaSetupOptions]
+  }
+}
+

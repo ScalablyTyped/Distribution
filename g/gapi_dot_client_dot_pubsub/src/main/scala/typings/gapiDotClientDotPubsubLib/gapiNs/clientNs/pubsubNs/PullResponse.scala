@@ -15,3 +15,12 @@ trait PullResponse extends js.Object {
   var receivedMessages: js.UndefOr[js.Array[ReceivedMessage]] = js.undefined
 }
 
+object PullResponse {
+  @scala.inline
+  def apply(receivedMessages: js.Array[ReceivedMessage] = null): PullResponse = {
+    val __obj = js.Dynamic.literal()
+    if (receivedMessages != null) __obj.updateDynamic("receivedMessages")(receivedMessages)
+    __obj.asInstanceOf[PullResponse]
+  }
+}
+

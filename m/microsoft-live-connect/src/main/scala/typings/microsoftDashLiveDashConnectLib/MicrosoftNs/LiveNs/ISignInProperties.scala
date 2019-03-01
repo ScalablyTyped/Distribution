@@ -54,3 +54,34 @@ trait ISignInProperties extends IUIProperties {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ISignInProperties {
+  @scala.inline
+  def apply(
+    element: java.lang.String,
+    name: java.lang.String,
+    brand: java.lang.String = null,
+    onerror: js.Function = null,
+    onloggedin: js.Function = null,
+    onloggedout: js.Function = null,
+    sign_in_text: java.lang.String = null,
+    sign_out_text: java.lang.String = null,
+    state: java.lang.String = null,
+    theme: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ISignInProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("name")(name)
+    if (brand != null) __obj.updateDynamic("brand")(brand)
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (onloggedin != null) __obj.updateDynamic("onloggedin")(onloggedin)
+    if (onloggedout != null) __obj.updateDynamic("onloggedout")(onloggedout)
+    if (sign_in_text != null) __obj.updateDynamic("sign_in_text")(sign_in_text)
+    if (sign_out_text != null) __obj.updateDynamic("sign_out_text")(sign_out_text)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ISignInProperties]
+  }
+}
+

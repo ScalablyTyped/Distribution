@@ -26,3 +26,26 @@ trait DefaultLayersOptions extends js.Object {
   var tileSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DefaultLayersOptions {
+  @scala.inline
+  def apply(
+    crossOrigin: java.lang.String | scala.Boolean = null,
+    lg: java.lang.String = null,
+    lg2: java.lang.String = null,
+    pois: js.UndefOr[scala.Boolean] = js.undefined,
+    ppi: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    tileSize: scala.Int | scala.Double = null
+  ): DefaultLayersOptions = {
+    val __obj = js.Dynamic.literal()
+    if (crossOrigin != null) __obj.updateDynamic("crossOrigin")(crossOrigin.asInstanceOf[js.Any])
+    if (lg != null) __obj.updateDynamic("lg")(lg)
+    if (lg2 != null) __obj.updateDynamic("lg2")(lg2)
+    if (!js.isUndefined(pois)) __obj.updateDynamic("pois")(pois)
+    if (ppi != null) __obj.updateDynamic("ppi")(ppi.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DefaultLayersOptions]
+  }
+}
+

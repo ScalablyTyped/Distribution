@@ -118,7 +118,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel
   */
-trait SeriesParallel extends js.Object {
+trait SeriesParallel extends Series {
   /**
     * When perform brush selection, the selected lines will be set
     * as this transparency rate (which could highlight those lines).
@@ -432,5 +432,74 @@ trait SeriesParallel extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-parallel.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesParallel {
+  @scala.inline
+  def apply(
+    activeOpacity: scala.Int | scala.Double = null,
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    coordinateSystem: java.lang.String = null,
+    data: (js.Array[
+      scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesParallelNs.DataObject
+    ]) | (js.Array[
+      js.Array[
+        scala.Double | java.lang.String | echartsLib.echartsNs.EChartOptionNs.SeriesParallelNs.DataObject
+      ]
+    ]) = null,
+    emphasis: echartsLib.Anon_LineStyleAnonColorOpacityShadowBlur = null,
+    id: java.lang.String = null,
+    inactiveOpacity: scala.Int | scala.Double = null,
+    lineStyle: echartsLib.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY = null,
+    name: java.lang.String = null,
+    parallelIndex: scala.Int | scala.Double = null,
+    progressive: scala.Int | scala.Double = null,
+    progressiveChunkMode: java.lang.String = null,
+    progressiveThreshold: scala.Int | scala.Double = null,
+    realtime: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    smooth: scala.Boolean | scala.Double = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    `type`: java.lang.String = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesParallel = {
+    val __obj = js.Dynamic.literal()
+    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inactiveOpacity != null) __obj.updateDynamic("inactiveOpacity")(inactiveOpacity.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parallelIndex != null) __obj.updateDynamic("parallelIndex")(parallelIndex.asInstanceOf[js.Any])
+    if (progressive != null) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
+    if (progressiveChunkMode != null) __obj.updateDynamic("progressiveChunkMode")(progressiveChunkMode)
+    if (progressiveThreshold != null) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesParallel]
+  }
 }
 

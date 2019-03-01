@@ -85,3 +85,52 @@ trait DocumentState extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object DocumentState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    content: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    createdDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    documentFormat: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    documentType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hash: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    hashType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    latestVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    owner: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    parameters: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DefaultValueDescriptionName]
+      ]
+    ] = null,
+    permissions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AccountIdsTypeInput] = null,
+    platformTypes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    schemaVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    status: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): DocumentState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
+    if (defaultVersion != null) __obj.updateDynamic("defaultVersion")(defaultVersion.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (documentFormat != null) __obj.updateDynamic("documentFormat")(documentFormat.asInstanceOf[js.Any])
+    if (documentType != null) __obj.updateDynamic("documentType")(documentType.asInstanceOf[js.Any])
+    if (hash != null) __obj.updateDynamic("hash")(hash.asInstanceOf[js.Any])
+    if (hashType != null) __obj.updateDynamic("hashType")(hashType.asInstanceOf[js.Any])
+    if (latestVersion != null) __obj.updateDynamic("latestVersion")(latestVersion.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions.asInstanceOf[js.Any])
+    if (platformTypes != null) __obj.updateDynamic("platformTypes")(platformTypes.asInstanceOf[js.Any])
+    if (schemaVersion != null) __obj.updateDynamic("schemaVersion")(schemaVersion.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DocumentState]
+  }
+}
+

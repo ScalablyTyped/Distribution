@@ -11,3 +11,17 @@ trait Anon_SegmentThreshold extends js.Object {
   var `type`: arangodbLib.ArangoDBNs.ArangoSearchViewConsolidationType
 }
 
+object Anon_SegmentThreshold {
+  @scala.inline
+  def apply(
+    segmentThreshold: scala.Double,
+    threshold: scala.Double,
+    `type`: arangodbLib.ArangoDBNs.ArangoSearchViewConsolidationType
+  ): Anon_SegmentThreshold = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("segmentThreshold")(segmentThreshold)
+    __obj.updateDynamic("threshold")(threshold)
+    __obj.asInstanceOf[Anon_SegmentThreshold]
+  }
+}
+

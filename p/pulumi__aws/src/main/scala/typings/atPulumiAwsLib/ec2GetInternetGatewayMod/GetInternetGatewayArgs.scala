@@ -21,3 +21,18 @@ trait GetInternetGatewayArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetInternetGatewayArgs {
+  @scala.inline
+  def apply(
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    internetGatewayId: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetInternetGatewayArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (internetGatewayId != null) __obj.updateDynamic("internetGatewayId")(internetGatewayId)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetInternetGatewayArgs]
+  }
+}
+

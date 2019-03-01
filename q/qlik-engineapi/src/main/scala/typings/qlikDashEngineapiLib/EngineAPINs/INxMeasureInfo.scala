@@ -63,3 +63,36 @@ trait INxMeasureInfo extends js.Object {
   var qSortIndicator: js.UndefOr[SortIndicatorType] = js.undefined
 }
 
+object INxMeasureInfo {
+  @scala.inline
+  def apply(
+    qApprMaxGlyphCount: scala.Double,
+    qAttrDimInfo: js.Array[INxMeasureInfo],
+    qAttrExprInfo: js.Array[INxAttrExprInfo],
+    qCardinal: scala.Double,
+    qFallbackTitle: java.lang.String,
+    qIsAutoFormat: scala.Boolean,
+    qMax: scala.Double,
+    qMin: scala.Double,
+    qReverseSort: scala.Boolean,
+    qError: INxValidationError = null,
+    qNumFormat: IFieldAttributes = null,
+    qSortIndicator: SortIndicatorType = null
+  ): INxMeasureInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qApprMaxGlyphCount")(qApprMaxGlyphCount)
+    __obj.updateDynamic("qAttrDimInfo")(qAttrDimInfo)
+    __obj.updateDynamic("qAttrExprInfo")(qAttrExprInfo)
+    __obj.updateDynamic("qCardinal")(qCardinal)
+    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
+    __obj.updateDynamic("qIsAutoFormat")(qIsAutoFormat)
+    __obj.updateDynamic("qMax")(qMax)
+    __obj.updateDynamic("qMin")(qMin)
+    __obj.updateDynamic("qReverseSort")(qReverseSort)
+    if (qError != null) __obj.updateDynamic("qError")(qError)
+    if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat)
+    if (qSortIndicator != null) __obj.updateDynamic("qSortIndicator")(qSortIndicator)
+    __obj.asInstanceOf[INxMeasureInfo]
+  }
+}
+

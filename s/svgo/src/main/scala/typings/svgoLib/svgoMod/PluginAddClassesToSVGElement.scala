@@ -9,3 +9,12 @@ trait PluginAddClassesToSVGElement extends js.Object {
   var addClassesToSVGElement: scala.Boolean | js.Object
 }
 
+object PluginAddClassesToSVGElement {
+  @scala.inline
+  def apply(addClassesToSVGElement: scala.Boolean | js.Object): PluginAddClassesToSVGElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addClassesToSVGElement")(addClassesToSVGElement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PluginAddClassesToSVGElement]
+  }
+}
+

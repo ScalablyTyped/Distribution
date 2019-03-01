@@ -10,3 +10,13 @@ trait OnMouseLeaveData extends js.Object {
   var node: InternalTreeNode
 }
 
+object OnMouseLeaveData {
+  @scala.inline
+  def apply(event: reactLib.Event, node: InternalTreeNode): OnMouseLeaveData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[OnMouseLeaveData]
+  }
+}
+

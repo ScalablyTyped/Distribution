@@ -38,10 +38,10 @@ object libDomMod extends js.Object {
   def getVirtualParent(child: reactLib.HTMLElement): js.UndefOr[reactLib.HTMLElement] = js.native
   def getWindow(): js.UndefOr[stdLib.Window] = js.native
   def getWindow(rootElement: reactLib.Element): js.UndefOr[stdLib.Window] = js.native
+  def isVirtualElement(element: atUifabricUtilitiesLib.libDomIVirtualElementMod.IVirtualElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ scala.Boolean = js.native
+  def isVirtualElement(element: reactLib.HTMLElement): /* is @uifabric/utilities.@uifabric/utilities/lib/dom/IVirtualElement.IVirtualElement */ scala.Boolean = js.native
   def portalContainsElement(target: reactLib.HTMLElement): scala.Boolean = js.native
   def portalContainsElement(target: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Boolean = js.native
   def setPortalAttribute(element: reactLib.HTMLElement): scala.Unit = js.native
-  def setSSR(isEnabled: scala.Boolean): scala.Unit = js.native
-  def setVirtualParent(child: reactLib.HTMLElement, parent: reactLib.HTMLElement): scala.Unit = js.native
 }
 

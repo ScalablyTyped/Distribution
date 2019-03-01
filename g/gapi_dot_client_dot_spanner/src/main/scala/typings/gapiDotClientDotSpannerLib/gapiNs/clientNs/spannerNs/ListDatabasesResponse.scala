@@ -16,3 +16,13 @@ trait ListDatabasesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListDatabasesResponse {
+  @scala.inline
+  def apply(databases: js.Array[Database] = null, nextPageToken: java.lang.String = null): ListDatabasesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (databases != null) __obj.updateDynamic("databases")(databases)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListDatabasesResponse]
+  }
+}
+

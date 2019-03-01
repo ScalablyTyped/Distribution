@@ -10,3 +10,15 @@ trait Anon_AutoIncrement extends js.Object {
   var `type`: waterlineLib.waterlineLibStrings.integer
 }
 
+object Anon_AutoIncrement {
+  @scala.inline
+  def apply(
+    `type`: waterlineLib.waterlineLibStrings.integer,
+    autoIncrement: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AutoIncrement = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
+    __obj.asInstanceOf[Anon_AutoIncrement]
+  }
+}
+

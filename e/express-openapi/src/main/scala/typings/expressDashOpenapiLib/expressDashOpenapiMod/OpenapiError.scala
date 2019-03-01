@@ -12,3 +12,20 @@ trait OpenapiError extends js.Object {
   var path: java.lang.String
 }
 
+object OpenapiError {
+  @scala.inline
+  def apply(
+    errorCode: java.lang.String,
+    location: java.lang.String,
+    message: java.lang.String,
+    path: java.lang.String
+  ): OpenapiError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorCode")(errorCode)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[OpenapiError]
+  }
+}
+

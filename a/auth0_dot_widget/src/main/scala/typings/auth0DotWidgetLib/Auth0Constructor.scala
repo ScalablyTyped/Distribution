@@ -12,3 +12,14 @@ import scala.scalajs.js.annotation._
   var dict: js.UndefOr[js.Any] = js.undefined
 }
 
+object Auth0Constructor {
+  @scala.inline
+  def apply(assetsUrl: java.lang.String = null, cdn: java.lang.String = null, dict: js.Any = null): Auth0Constructor = {
+    val __obj = js.Dynamic.literal()
+    if (assetsUrl != null) __obj.updateDynamic("assetsUrl")(assetsUrl)
+    if (cdn != null) __obj.updateDynamic("cdn")(cdn)
+    if (dict != null) __obj.updateDynamic("dict")(dict)
+    __obj.asInstanceOf[Auth0Constructor]
+  }
+}
+

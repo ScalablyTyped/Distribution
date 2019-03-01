@@ -34,3 +34,24 @@ trait SelectSettings extends js.Object {
   ] = js.undefined
 }
 
+object SelectSettings {
+  @scala.inline
+  def apply(
+    blurable: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    info: js.UndefOr[scala.Boolean] = js.undefined,
+    items: java.lang.String = null,
+    selector: java.lang.String = null,
+    style: datatablesDotNetDashSelectLib.datatablesDotNetDashSelectLibStrings.api | datatablesDotNetDashSelectLib.datatablesDotNetDashSelectLibStrings.single | datatablesDotNetDashSelectLib.datatablesDotNetDashSelectLibStrings.multi | datatablesDotNetDashSelectLib.datatablesDotNetDashSelectLibStrings.os | datatablesDotNetDashSelectLib.datatablesDotNetDashSelectLibStrings.`multi+shift` = null
+  ): SelectSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(blurable)) __obj.updateDynamic("blurable")(blurable)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(info)) __obj.updateDynamic("info")(info)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SelectSettings]
+  }
+}
+

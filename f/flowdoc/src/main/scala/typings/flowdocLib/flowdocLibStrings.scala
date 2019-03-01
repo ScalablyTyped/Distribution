@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 object flowdocLibStrings {
   @js.native
-  sealed trait DIAMOND extends js.Object
+  sealed trait DIAMOND extends NodeType
   
   @js.native
-  sealed trait DOCUMENT extends js.Object
+  sealed trait DOCUMENT extends NodeType
   
   @js.native
-  sealed trait ELLIPSE extends js.Object
+  sealed trait ELLIPSE extends NodeType
   
   @js.native
-  sealed trait HOTSPOT extends js.Object
+  sealed trait HOTSPOT extends NodeType
   
   @js.native
-  sealed trait IMAGE extends js.Object
+  sealed trait IMAGE extends NodeType
   
   @js.native
-  sealed trait LAYER extends js.Object
+  sealed trait LAYER extends NodeType
   
   @js.native
-  sealed trait PAGE extends js.Object
+  sealed trait PAGE extends NodeType
   
   @js.native
-  sealed trait RECT extends js.Object
+  sealed trait RECT extends NodeType
   
   @js.native
-  sealed trait SCREEN extends js.Object
+  sealed trait SCREEN extends NodeType
   
   @scala.inline
   def DIAMOND: DIAMOND = "DIAMOND".asInstanceOf[DIAMOND]

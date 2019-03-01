@@ -35,3 +35,24 @@ trait ASPxClientHtmlEditorChangeMediaElementCommandArguments extends ASPxClientH
   def GetCommandName(): java.lang.String
 }
 
+object ASPxClientHtmlEditorChangeMediaElementCommandArguments {
+  @scala.inline
+  def apply(
+    GetCommandName: js.Function0[java.lang.String],
+    align: java.lang.String,
+    id: java.lang.String,
+    selectedElement: js.Object,
+    src: java.lang.String,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings
+  ): ASPxClientHtmlEditorChangeMediaElementCommandArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetCommandName")(GetCommandName)
+    __obj.updateDynamic("align")(align)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("selectedElement")(selectedElement)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("styleSettings")(styleSettings)
+    __obj.asInstanceOf[ASPxClientHtmlEditorChangeMediaElementCommandArguments]
+  }
+}
+

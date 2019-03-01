@@ -15,3 +15,16 @@ trait MenuProps[T /* <: reactLib.HTMLElement */]
   ] = js.undefined
 }
 
+object MenuProps {
+  @scala.inline
+  def apply[T /* <: reactLib.HTMLElement */](
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[T] = null,
+    tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null
+  ): MenuProps[T] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[MenuProps[T]]
+  }
+}
+

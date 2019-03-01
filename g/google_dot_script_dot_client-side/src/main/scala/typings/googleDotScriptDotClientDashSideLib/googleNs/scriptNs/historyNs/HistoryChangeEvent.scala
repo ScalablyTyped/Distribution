@@ -17,3 +17,13 @@ trait HistoryChangeEvent extends js.Object {
   var state: State
 }
 
+object HistoryChangeEvent {
+  @scala.inline
+  def apply(location: googleDotScriptDotClientDashSideLib.googleNs.scriptNs.UrlLocation, state: State): HistoryChangeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HistoryChangeEvent]
+  }
+}
+

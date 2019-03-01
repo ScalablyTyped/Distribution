@@ -288,3 +288,20 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IconProps {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    prefix: java.lang.String = null
+  ): IconProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[IconProps]
+  }
+}
+

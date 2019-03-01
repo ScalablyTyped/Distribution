@@ -42,3 +42,28 @@ trait LiftoffEnv extends js.Object {
   var require: js.Array[java.lang.String]
 }
 
+object LiftoffEnv {
+  @scala.inline
+  def apply(
+    configNameSearch: js.Array[java.lang.String],
+    cwd: java.lang.String,
+    require: js.Array[java.lang.String],
+    configBase: java.lang.String = null,
+    configFiles: org.scalablytyped.runtime.StringDictionary[org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Null]] = null,
+    configPath: java.lang.String = null,
+    modulePackage: org.scalablytyped.runtime.StringDictionary[_] = null,
+    modulePath: java.lang.String = null
+  ): LiftoffEnv = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configNameSearch")(configNameSearch)
+    __obj.updateDynamic("cwd")(cwd)
+    __obj.updateDynamic("require")(require)
+    if (configBase != null) __obj.updateDynamic("configBase")(configBase)
+    if (configFiles != null) __obj.updateDynamic("configFiles")(configFiles)
+    if (configPath != null) __obj.updateDynamic("configPath")(configPath)
+    if (modulePackage != null) __obj.updateDynamic("modulePackage")(modulePackage)
+    if (modulePath != null) __obj.updateDynamic("modulePath")(modulePath)
+    __obj.asInstanceOf[LiftoffEnv]
+  }
+}
+

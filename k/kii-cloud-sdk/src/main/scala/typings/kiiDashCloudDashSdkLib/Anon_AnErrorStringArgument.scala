@@ -19,3 +19,27 @@ trait Anon_AnErrorStringArgument[T] extends js.Object {
   ): js.Any
 }
 
+object Anon_AnErrorStringArgument {
+  @scala.inline
+  def apply[T](
+    failure: js.Function4[
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeEntry, 
+      T, 
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeExecResult, 
+      java.lang.String, 
+      js.Any
+    ],
+    success: js.Function3[
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeEntry, 
+      T, 
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiServerCodeExecResult, 
+      js.Any
+    ]
+  ): Anon_AnErrorStringArgument[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failure")(failure)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_AnErrorStringArgument[T]]
+  }
+}
+

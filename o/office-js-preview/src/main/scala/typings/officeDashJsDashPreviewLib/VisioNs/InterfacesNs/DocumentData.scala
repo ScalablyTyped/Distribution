@@ -30,3 +30,18 @@ trait DocumentData extends js.Object {
   var view: js.UndefOr[DocumentViewData] = js.undefined
 }
 
+object DocumentData {
+  @scala.inline
+  def apply(
+    application: ApplicationData = null,
+    pages: js.Array[PageData] = null,
+    view: DocumentViewData = null
+  ): DocumentData = {
+    val __obj = js.Dynamic.literal()
+    if (application != null) __obj.updateDynamic("application")(application)
+    if (pages != null) __obj.updateDynamic("pages")(pages)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[DocumentData]
+  }
+}
+

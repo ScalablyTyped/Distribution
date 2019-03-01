@@ -10,3 +10,22 @@ trait FindByParams
   var archived: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FindByParams {
+  @scala.inline
+  def apply(
+    archived: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null,
+    offset: java.lang.String = null,
+    opt_expand: java.lang.String = null,
+    opt_fields: java.lang.String = null
+  ): FindByParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (opt_expand != null) __obj.updateDynamic("opt_expand")(opt_expand)
+    if (opt_fields != null) __obj.updateDynamic("opt_fields")(opt_fields)
+    __obj.asInstanceOf[FindByParams]
+  }
+}
+

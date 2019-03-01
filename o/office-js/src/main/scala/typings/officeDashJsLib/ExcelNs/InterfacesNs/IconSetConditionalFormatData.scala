@@ -39,3 +39,20 @@ trait IconSetConditionalFormatData extends js.Object {
   ] = js.undefined
 }
 
+object IconSetConditionalFormatData {
+  @scala.inline
+  def apply(
+    criteria: js.Array[officeDashJsLib.ExcelNs.ConditionalIconCriterion] = null,
+    reverseIconOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    showIconOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    style: officeDashJsLib.ExcelNs.IconSet | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.ThreeArrows | officeDashJsLib.officeDashJsLibStrings.ThreeArrowsGray | officeDashJsLib.officeDashJsLibStrings.ThreeFlags | officeDashJsLib.officeDashJsLibStrings.ThreeTrafficLights1 | officeDashJsLib.officeDashJsLibStrings.ThreeTrafficLights2 | officeDashJsLib.officeDashJsLibStrings.ThreeSigns | officeDashJsLib.officeDashJsLibStrings.ThreeSymbols | officeDashJsLib.officeDashJsLibStrings.ThreeSymbols2 | officeDashJsLib.officeDashJsLibStrings.FourArrows | officeDashJsLib.officeDashJsLibStrings.FourArrowsGray | officeDashJsLib.officeDashJsLibStrings.FourRedToBlack | officeDashJsLib.officeDashJsLibStrings.FourRating | officeDashJsLib.officeDashJsLibStrings.FourTrafficLights | officeDashJsLib.officeDashJsLibStrings.FiveArrows | officeDashJsLib.officeDashJsLibStrings.FiveArrowsGray | officeDashJsLib.officeDashJsLibStrings.FiveRating | officeDashJsLib.officeDashJsLibStrings.FiveQuarters | officeDashJsLib.officeDashJsLibStrings.ThreeStars | officeDashJsLib.officeDashJsLibStrings.ThreeTriangles | officeDashJsLib.officeDashJsLibStrings.FiveBoxes | officeDashJsLib.officeDashJsLibStrings.LinkedEntityFinanceIcon | officeDashJsLib.officeDashJsLibStrings.LinkedEntityMapIcon = null
+  ): IconSetConditionalFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
+    if (!js.isUndefined(reverseIconOrder)) __obj.updateDynamic("reverseIconOrder")(reverseIconOrder)
+    if (!js.isUndefined(showIconOnly)) __obj.updateDynamic("showIconOnly")(showIconOnly)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IconSetConditionalFormatData]
+  }
+}
+

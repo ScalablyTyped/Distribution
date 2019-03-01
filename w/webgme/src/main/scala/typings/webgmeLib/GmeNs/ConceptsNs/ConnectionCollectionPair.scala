@@ -10,3 +10,13 @@ trait ConnectionCollectionPair extends js.Object {
   var sources: js.Array[ComposeChain]
 }
 
+object ConnectionCollectionPair {
+  @scala.inline
+  def apply(destinations: js.Array[ComposeChain], sources: js.Array[ComposeChain]): ConnectionCollectionPair = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinations")(destinations)
+    __obj.updateDynamic("sources")(sources)
+    __obj.asInstanceOf[ConnectionCollectionPair]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_Default extends js.Object {
   var wrapperClassName: java.lang.String
 }
 
+object Anon_Default {
+  @scala.inline
+  def apply(
+    size: antdLib.antdLibStrings.small | antdLib.antdLibStrings.default | antdLib.antdLibStrings.large,
+    spinning: scala.Boolean,
+    wrapperClassName: java.lang.String
+  ): Anon_Default = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.updateDynamic("spinning")(spinning)
+    __obj.updateDynamic("wrapperClassName")(wrapperClassName)
+    __obj.asInstanceOf[Anon_Default]
+  }
+}
+

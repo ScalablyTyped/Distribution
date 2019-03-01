@@ -13,3 +13,22 @@ trait MessageTransaction extends js.Object {
   def invoke(callbackName: java.lang.String, params: js.Any): scala.Unit
 }
 
+object MessageTransaction {
+  @scala.inline
+  def apply(
+    complete: js.Function1[js.Any, scala.Unit],
+    completed: js.Function0[scala.Boolean],
+    delayReturn: js.Function1[scala.Boolean, scala.Boolean],
+    error: js.Function2[js.Any, java.lang.String, scala.Unit],
+    invoke: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): MessageTransaction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("completed")(completed)
+    __obj.updateDynamic("delayReturn")(delayReturn)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("invoke")(invoke)
+    __obj.asInstanceOf[MessageTransaction]
+  }
+}
+

@@ -24,3 +24,20 @@ trait EditableAttrs extends js.Object {
   var ref: js.UndefOr[js.Function1[/* ref */ js.Any, _]] = js.undefined
 }
 
+object EditableAttrs {
+  @scala.inline
+  def apply(
+    onBlur: js.Function0[scala.Unit] = null,
+    onKeyDown: js.Function0[scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    ref: js.Function1[/* ref */ js.Any, _] = null
+  ): EditableAttrs = {
+    val __obj = js.Dynamic.literal()
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[EditableAttrs]
+  }
+}
+

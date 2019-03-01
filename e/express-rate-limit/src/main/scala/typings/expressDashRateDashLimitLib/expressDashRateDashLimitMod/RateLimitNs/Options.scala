@@ -95,3 +95,54 @@ trait Options extends js.Object {
   var windowMs: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    handler: js.Function3[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* res */ expressLib.expressMod.eNs.Response, 
+      /* next */ expressLib.expressMod.eNs.NextFunction, 
+      _
+    ] = null,
+    headers: js.UndefOr[scala.Boolean] = js.undefined,
+    keyGenerator: js.Function2[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* res */ expressLib.expressMod.eNs.Response, 
+      java.lang.String
+    ] = null,
+    max: scala.Double | MaxValueFn = null,
+    message: java.lang.String | nodeLib.Buffer | Message = null,
+    onLimitReached: js.Function3[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* res */ expressLib.expressMod.eNs.Response, 
+      Options, 
+      scala.Unit
+    ] = null,
+    skip: js.Function2[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* res */ expressLib.expressMod.eNs.Response, 
+      scala.Boolean
+    ] = null,
+    skipFailedRequests: js.UndefOr[scala.Boolean] = js.undefined,
+    skipSuccessfulRequests: js.UndefOr[scala.Boolean] = js.undefined,
+    statusCode: scala.Int | scala.Double = null,
+    store: Store = null,
+    windowMs: scala.Int | scala.Double = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (!js.isUndefined(headers)) __obj.updateDynamic("headers")(headers)
+    if (keyGenerator != null) __obj.updateDynamic("keyGenerator")(keyGenerator)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (onLimitReached != null) __obj.updateDynamic("onLimitReached")(onLimitReached)
+    if (skip != null) __obj.updateDynamic("skip")(skip)
+    if (!js.isUndefined(skipFailedRequests)) __obj.updateDynamic("skipFailedRequests")(skipFailedRequests)
+    if (!js.isUndefined(skipSuccessfulRequests)) __obj.updateDynamic("skipSuccessfulRequests")(skipSuccessfulRequests)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    if (store != null) __obj.updateDynamic("store")(store)
+    if (windowMs != null) __obj.updateDynamic("windowMs")(windowMs.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

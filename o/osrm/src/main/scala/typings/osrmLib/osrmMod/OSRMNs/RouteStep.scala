@@ -69,3 +69,40 @@ trait RouteStep extends js.Object {
   var weight: scala.Double
 }
 
+object RouteStep {
+  @scala.inline
+  def apply(
+    destinations: java.lang.String,
+    distance: scala.Double,
+    duration: scala.Double,
+    exits: java.lang.String,
+    geometry: Polyline | LineString,
+    intersections: js.Array[Intersection],
+    maneuver: StepManeuver,
+    mode: java.lang.String,
+    name: java.lang.String,
+    pronunciation: java.lang.String,
+    ref: java.lang.String,
+    rotary_name: java.lang.String,
+    rotary_pronunciation: java.lang.String,
+    weight: scala.Double
+  ): RouteStep = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinations")(destinations)
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("exits")(exits)
+    __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
+    __obj.updateDynamic("intersections")(intersections)
+    __obj.updateDynamic("maneuver")(maneuver)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("pronunciation")(pronunciation)
+    __obj.updateDynamic("ref")(ref)
+    __obj.updateDynamic("rotary_name")(rotary_name)
+    __obj.updateDynamic("rotary_pronunciation")(rotary_pronunciation)
+    __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[RouteStep]
+  }
+}
+

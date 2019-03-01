@@ -400,3 +400,147 @@ trait IgTreeGridFiltering
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgTreeGridFiltering {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTreeGridFiltering
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    advancedModeEditorsVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    advancedModeHeaderButtonLocation: java.lang.String = null,
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    columnSettings: js.Array[IgGridFilteringColumnSetting] = null,
+    dataFiltered: DataFilteredEvent = null,
+    dataFiltering: DataFilteringEvent = null,
+    dialogWidget: java.lang.String = null,
+    displayMode: js.Any = null,
+    dropDownClosed: DropDownClosedEvent = null,
+    dropDownClosing: DropDownClosingEvent = null,
+    dropDownOpened: DropDownOpenedEvent = null,
+    dropDownOpening: DropDownOpeningEvent = null,
+    featureChooserText: java.lang.String = null,
+    featureChooserTextAdvancedFilter: java.lang.String = null,
+    featureChooserTextHide: java.lang.String = null,
+    filterButtonLocation: java.lang.String = null,
+    filterDelay: scala.Int | scala.Double = null,
+    filterDialogAddButtonWidth: java.lang.String | scala.Double = null,
+    filterDialogAddConditionDropDownTemplate: java.lang.String = null,
+    filterDialogAddConditionTemplate: java.lang.String = null,
+    filterDialogClosed: FilterDialogClosedEvent = null,
+    filterDialogClosing: FilterDialogClosingEvent = null,
+    filterDialogColumnDropDownDefaultWidth: java.lang.String | scala.Double = null,
+    filterDialogContainment: java.lang.String = null,
+    filterDialogContentsRendered: FilterDialogContentsRenderedEvent = null,
+    filterDialogContentsRendering: FilterDialogContentsRenderingEvent = null,
+    filterDialogExprInputDefaultWidth: java.lang.String | scala.Double = null,
+    filterDialogFilterAdded: FilterDialogFilterAddedEvent = null,
+    filterDialogFilterAdding: FilterDialogFilterAddingEvent = null,
+    filterDialogFilterConditionTemplate: java.lang.String = null,
+    filterDialogFilterDropDownDefaultWidth: java.lang.String | scala.Double = null,
+    filterDialogFilterTemplate: java.lang.String = null,
+    filterDialogFiltering: FilterDialogFilteringEvent = null,
+    filterDialogHeight: java.lang.String | scala.Double = null,
+    filterDialogMaxFilterCount: scala.Int | scala.Double = null,
+    filterDialogMoving: FilterDialogMovingEvent = null,
+    filterDialogOkCancelButtonWidth: java.lang.String | scala.Double = null,
+    filterDialogOpened: FilterDialogOpenedEvent = null,
+    filterDialogOpening: FilterDialogOpeningEvent = null,
+    filterDialogWidth: java.lang.String | scala.Double = null,
+    filterDropDownAnimationDuration: scala.Int | scala.Double = null,
+    filterDropDownAnimations: java.lang.String = null,
+    filterDropDownHeight: js.Any = null,
+    filterDropDownItemIcons: js.UndefOr[scala.Boolean] = js.undefined,
+    filterDropDownWidth: java.lang.String | scala.Double = null,
+    filterExprUrlKey: java.lang.String = null,
+    filterSummaryAlwaysVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    filterSummaryInPagerTemplate: java.lang.String = null,
+    filterSummaryTemplate: java.lang.String = null,
+    fromLevel: scala.Int | scala.Double = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    labels: java.lang.String = null,
+    locale: IgTreeGridFilteringLocale = null,
+    matchFiltering: java.lang.String = null,
+    mode: java.lang.String = null,
+    nullTexts: java.lang.String = null,
+    persist: js.UndefOr[scala.Boolean] = js.undefined,
+    recordCountKey: java.lang.String = null,
+    renderFC: js.UndefOr[scala.Boolean] = js.undefined,
+    renderFilterButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showEmptyConditions: js.UndefOr[scala.Boolean] = js.undefined,
+    showNullConditions: js.UndefOr[scala.Boolean] = js.undefined,
+    toLevel: scala.Int | scala.Double = null,
+    tooltipTemplate: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): IgTreeGridFiltering = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(advancedModeEditorsVisible)) __obj.updateDynamic("advancedModeEditorsVisible")(advancedModeEditorsVisible)
+    if (advancedModeHeaderButtonLocation != null) __obj.updateDynamic("advancedModeHeaderButtonLocation")(advancedModeHeaderButtonLocation)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (dataFiltered != null) __obj.updateDynamic("dataFiltered")(dataFiltered)
+    if (dataFiltering != null) __obj.updateDynamic("dataFiltering")(dataFiltering)
+    if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
+    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode)
+    if (dropDownClosed != null) __obj.updateDynamic("dropDownClosed")(dropDownClosed)
+    if (dropDownClosing != null) __obj.updateDynamic("dropDownClosing")(dropDownClosing)
+    if (dropDownOpened != null) __obj.updateDynamic("dropDownOpened")(dropDownOpened)
+    if (dropDownOpening != null) __obj.updateDynamic("dropDownOpening")(dropDownOpening)
+    if (featureChooserText != null) __obj.updateDynamic("featureChooserText")(featureChooserText)
+    if (featureChooserTextAdvancedFilter != null) __obj.updateDynamic("featureChooserTextAdvancedFilter")(featureChooserTextAdvancedFilter)
+    if (featureChooserTextHide != null) __obj.updateDynamic("featureChooserTextHide")(featureChooserTextHide)
+    if (filterButtonLocation != null) __obj.updateDynamic("filterButtonLocation")(filterButtonLocation)
+    if (filterDelay != null) __obj.updateDynamic("filterDelay")(filterDelay.asInstanceOf[js.Any])
+    if (filterDialogAddButtonWidth != null) __obj.updateDynamic("filterDialogAddButtonWidth")(filterDialogAddButtonWidth.asInstanceOf[js.Any])
+    if (filterDialogAddConditionDropDownTemplate != null) __obj.updateDynamic("filterDialogAddConditionDropDownTemplate")(filterDialogAddConditionDropDownTemplate)
+    if (filterDialogAddConditionTemplate != null) __obj.updateDynamic("filterDialogAddConditionTemplate")(filterDialogAddConditionTemplate)
+    if (filterDialogClosed != null) __obj.updateDynamic("filterDialogClosed")(filterDialogClosed)
+    if (filterDialogClosing != null) __obj.updateDynamic("filterDialogClosing")(filterDialogClosing)
+    if (filterDialogColumnDropDownDefaultWidth != null) __obj.updateDynamic("filterDialogColumnDropDownDefaultWidth")(filterDialogColumnDropDownDefaultWidth.asInstanceOf[js.Any])
+    if (filterDialogContainment != null) __obj.updateDynamic("filterDialogContainment")(filterDialogContainment)
+    if (filterDialogContentsRendered != null) __obj.updateDynamic("filterDialogContentsRendered")(filterDialogContentsRendered)
+    if (filterDialogContentsRendering != null) __obj.updateDynamic("filterDialogContentsRendering")(filterDialogContentsRendering)
+    if (filterDialogExprInputDefaultWidth != null) __obj.updateDynamic("filterDialogExprInputDefaultWidth")(filterDialogExprInputDefaultWidth.asInstanceOf[js.Any])
+    if (filterDialogFilterAdded != null) __obj.updateDynamic("filterDialogFilterAdded")(filterDialogFilterAdded)
+    if (filterDialogFilterAdding != null) __obj.updateDynamic("filterDialogFilterAdding")(filterDialogFilterAdding)
+    if (filterDialogFilterConditionTemplate != null) __obj.updateDynamic("filterDialogFilterConditionTemplate")(filterDialogFilterConditionTemplate)
+    if (filterDialogFilterDropDownDefaultWidth != null) __obj.updateDynamic("filterDialogFilterDropDownDefaultWidth")(filterDialogFilterDropDownDefaultWidth.asInstanceOf[js.Any])
+    if (filterDialogFilterTemplate != null) __obj.updateDynamic("filterDialogFilterTemplate")(filterDialogFilterTemplate)
+    if (filterDialogFiltering != null) __obj.updateDynamic("filterDialogFiltering")(filterDialogFiltering)
+    if (filterDialogHeight != null) __obj.updateDynamic("filterDialogHeight")(filterDialogHeight.asInstanceOf[js.Any])
+    if (filterDialogMaxFilterCount != null) __obj.updateDynamic("filterDialogMaxFilterCount")(filterDialogMaxFilterCount.asInstanceOf[js.Any])
+    if (filterDialogMoving != null) __obj.updateDynamic("filterDialogMoving")(filterDialogMoving)
+    if (filterDialogOkCancelButtonWidth != null) __obj.updateDynamic("filterDialogOkCancelButtonWidth")(filterDialogOkCancelButtonWidth.asInstanceOf[js.Any])
+    if (filterDialogOpened != null) __obj.updateDynamic("filterDialogOpened")(filterDialogOpened)
+    if (filterDialogOpening != null) __obj.updateDynamic("filterDialogOpening")(filterDialogOpening)
+    if (filterDialogWidth != null) __obj.updateDynamic("filterDialogWidth")(filterDialogWidth.asInstanceOf[js.Any])
+    if (filterDropDownAnimationDuration != null) __obj.updateDynamic("filterDropDownAnimationDuration")(filterDropDownAnimationDuration.asInstanceOf[js.Any])
+    if (filterDropDownAnimations != null) __obj.updateDynamic("filterDropDownAnimations")(filterDropDownAnimations)
+    if (filterDropDownHeight != null) __obj.updateDynamic("filterDropDownHeight")(filterDropDownHeight)
+    if (!js.isUndefined(filterDropDownItemIcons)) __obj.updateDynamic("filterDropDownItemIcons")(filterDropDownItemIcons)
+    if (filterDropDownWidth != null) __obj.updateDynamic("filterDropDownWidth")(filterDropDownWidth.asInstanceOf[js.Any])
+    if (filterExprUrlKey != null) __obj.updateDynamic("filterExprUrlKey")(filterExprUrlKey)
+    if (!js.isUndefined(filterSummaryAlwaysVisible)) __obj.updateDynamic("filterSummaryAlwaysVisible")(filterSummaryAlwaysVisible)
+    if (filterSummaryInPagerTemplate != null) __obj.updateDynamic("filterSummaryInPagerTemplate")(filterSummaryInPagerTemplate)
+    if (filterSummaryTemplate != null) __obj.updateDynamic("filterSummaryTemplate")(filterSummaryTemplate)
+    if (fromLevel != null) __obj.updateDynamic("fromLevel")(fromLevel.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (matchFiltering != null) __obj.updateDynamic("matchFiltering")(matchFiltering)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (nullTexts != null) __obj.updateDynamic("nullTexts")(nullTexts)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (recordCountKey != null) __obj.updateDynamic("recordCountKey")(recordCountKey)
+    if (!js.isUndefined(renderFC)) __obj.updateDynamic("renderFC")(renderFC)
+    if (!js.isUndefined(renderFilterButton)) __obj.updateDynamic("renderFilterButton")(renderFilterButton)
+    if (!js.isUndefined(showEmptyConditions)) __obj.updateDynamic("showEmptyConditions")(showEmptyConditions)
+    if (!js.isUndefined(showNullConditions)) __obj.updateDynamic("showNullConditions")(showNullConditions)
+    if (toLevel != null) __obj.updateDynamic("toLevel")(toLevel.asInstanceOf[js.Any])
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IgTreeGridFiltering]
+  }
+}
+

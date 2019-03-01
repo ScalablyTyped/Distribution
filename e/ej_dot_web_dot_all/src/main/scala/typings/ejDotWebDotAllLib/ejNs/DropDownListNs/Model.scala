@@ -273,3 +273,148 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
+    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
+    actionFailure: js.Function1[/* e */ ActionFailureEventArgs, scala.Unit] = null,
+    actionSuccess: js.Function1[/* e */ ActionSuccessEventArgs, scala.Unit] = null,
+    allowVirtualScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    beforePopupHide: js.Function1[/* e */ BeforePopupHideEventArgs, scala.Unit] = null,
+    beforePopupShown: js.Function1[/* e */ BeforePopupShownEventArgs, scala.Unit] = null,
+    cascade: js.Function1[/* e */ CascadeEventArgs, scala.Unit] = null,
+    cascadeTo: java.lang.String = null,
+    caseSensitiveSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    checkChange: js.Function1[/* e */ CheckChangeEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    dataBound: js.Function1[/* e */ DataBoundEventArgs, scala.Unit] = null,
+    dataSource: js.Any = null,
+    delimiterChar: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFilterSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    enableIncrementalSearch: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePopupResize: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableServerFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: Fields = null,
+    filterType: ejDotWebDotAllLib.ejNs.FilterType | java.lang.String = null,
+    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
+    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    headerTemplate: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    htmlAttributes: js.Any = null,
+    itemsCount: scala.Int | scala.Double = null,
+    loadOnDemand: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: java.lang.String = null,
+    maxPopupHeight: java.lang.String | scala.Double = null,
+    maxPopupWidth: java.lang.String | scala.Double = null,
+    minPopupHeight: java.lang.String | scala.Double = null,
+    minPopupWidth: java.lang.String | scala.Double = null,
+    multiSelectMode: ejDotWebDotAllLib.ejNs.MultiSelectMode | java.lang.String = null,
+    popupHeight: java.lang.String | scala.Double = null,
+    popupHide: js.Function1[/* e */ PopupHideEventArgs, scala.Unit] = null,
+    popupResize: js.Function1[/* e */ PopupResizeEventArgs, scala.Unit] = null,
+    popupResizeStart: js.Function1[/* e */ PopupResizeStartEventArgs, scala.Unit] = null,
+    popupResizeStop: js.Function1[/* e */ PopupResizeStopEventArgs, scala.Unit] = null,
+    popupShown: js.Function1[/* e */ PopupShownEventArgs, scala.Unit] = null,
+    popupWidth: java.lang.String | scala.Double = null,
+    query: js.Any = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    search: js.Function1[/* e */ SearchEventArgs, scala.Unit] = null,
+    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    selectedIndex: scala.Int | scala.Double = null,
+    selectedIndices: js.Array[_] = null,
+    showCheckbox: js.UndefOr[scala.Boolean] = js.undefined,
+    showPopupOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    sortOrder: ejDotWebDotAllLib.ejNs.SortOrder | java.lang.String = null,
+    targetID: java.lang.String = null,
+    template: java.lang.String = null,
+    text: java.lang.String = null,
+    validationMessage: js.Any = null,
+    validationRules: js.Any = null,
+    value: java.lang.String | scala.Double = null,
+    virtualScrollMode: ejDotWebDotAllLib.ejNs.VirtualScrollMode | java.lang.String = null,
+    watermarkText: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
+    if (actionFailure != null) __obj.updateDynamic("actionFailure")(actionFailure)
+    if (actionSuccess != null) __obj.updateDynamic("actionSuccess")(actionSuccess)
+    if (!js.isUndefined(allowVirtualScrolling)) __obj.updateDynamic("allowVirtualScrolling")(allowVirtualScrolling)
+    if (beforePopupHide != null) __obj.updateDynamic("beforePopupHide")(beforePopupHide)
+    if (beforePopupShown != null) __obj.updateDynamic("beforePopupShown")(beforePopupShown)
+    if (cascade != null) __obj.updateDynamic("cascade")(cascade)
+    if (cascadeTo != null) __obj.updateDynamic("cascadeTo")(cascadeTo)
+    if (!js.isUndefined(caseSensitiveSearch)) __obj.updateDynamic("caseSensitiveSearch")(caseSensitiveSearch)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (checkChange != null) __obj.updateDynamic("checkChange")(checkChange)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (delimiterChar != null) __obj.updateDynamic("delimiterChar")(delimiterChar)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enableFilterSearch)) __obj.updateDynamic("enableFilterSearch")(enableFilterSearch)
+    if (!js.isUndefined(enableIncrementalSearch)) __obj.updateDynamic("enableIncrementalSearch")(enableIncrementalSearch)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enablePopupResize)) __obj.updateDynamic("enablePopupResize")(enablePopupResize)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableServerFiltering)) __obj.updateDynamic("enableServerFiltering")(enableServerFiltering)
+    if (!js.isUndefined(enableSorting)) __obj.updateDynamic("enableSorting")(enableSorting)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType.asInstanceOf[js.Any])
+    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
+    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (itemsCount != null) __obj.updateDynamic("itemsCount")(itemsCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(loadOnDemand)) __obj.updateDynamic("loadOnDemand")(loadOnDemand)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxPopupHeight != null) __obj.updateDynamic("maxPopupHeight")(maxPopupHeight.asInstanceOf[js.Any])
+    if (maxPopupWidth != null) __obj.updateDynamic("maxPopupWidth")(maxPopupWidth.asInstanceOf[js.Any])
+    if (minPopupHeight != null) __obj.updateDynamic("minPopupHeight")(minPopupHeight.asInstanceOf[js.Any])
+    if (minPopupWidth != null) __obj.updateDynamic("minPopupWidth")(minPopupWidth.asInstanceOf[js.Any])
+    if (multiSelectMode != null) __obj.updateDynamic("multiSelectMode")(multiSelectMode.asInstanceOf[js.Any])
+    if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight.asInstanceOf[js.Any])
+    if (popupHide != null) __obj.updateDynamic("popupHide")(popupHide)
+    if (popupResize != null) __obj.updateDynamic("popupResize")(popupResize)
+    if (popupResizeStart != null) __obj.updateDynamic("popupResizeStart")(popupResizeStart)
+    if (popupResizeStop != null) __obj.updateDynamic("popupResizeStop")(popupResizeStop)
+    if (popupShown != null) __obj.updateDynamic("popupShown")(popupShown)
+    if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (search != null) __obj.updateDynamic("search")(search)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (selectedIndex != null) __obj.updateDynamic("selectedIndex")(selectedIndex.asInstanceOf[js.Any])
+    if (selectedIndices != null) __obj.updateDynamic("selectedIndices")(selectedIndices)
+    if (!js.isUndefined(showCheckbox)) __obj.updateDynamic("showCheckbox")(showCheckbox)
+    if (!js.isUndefined(showPopupOnLoad)) __obj.updateDynamic("showPopupOnLoad")(showPopupOnLoad)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    if (targetID != null) __obj.updateDynamic("targetID")(targetID)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (virtualScrollMode != null) __obj.updateDynamic("virtualScrollMode")(virtualScrollMode.asInstanceOf[js.Any])
+    if (watermarkText != null) __obj.updateDynamic("watermarkText")(watermarkText)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

@@ -12,3 +12,12 @@ trait Anon_False extends js.Object {
   var returnPromise: js.UndefOr[cleanDashCssLib.cleanDashCssLibNumbers.`false`] = js.undefined
 }
 
+object Anon_False {
+  @scala.inline
+  def apply(returnPromise: cleanDashCssLib.cleanDashCssLibNumbers.`false` = null): Anon_False = {
+    val __obj = js.Dynamic.literal()
+    if (returnPromise != null) __obj.updateDynamic("returnPromise")(returnPromise)
+    __obj.asInstanceOf[Anon_False]
+  }
+}
+

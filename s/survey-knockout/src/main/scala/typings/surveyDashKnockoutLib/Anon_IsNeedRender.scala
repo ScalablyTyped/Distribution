@@ -9,3 +9,12 @@ trait Anon_IsNeedRender extends js.Object {
   var isNeedRender: scala.Boolean
 }
 
+object Anon_IsNeedRender {
+  @scala.inline
+  def apply(isNeedRender: scala.Boolean): Anon_IsNeedRender = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isNeedRender")(isNeedRender)
+    __obj.asInstanceOf[Anon_IsNeedRender]
+  }
+}
+

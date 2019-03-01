@@ -13,19 +13,23 @@ object reactDashFlexrLibStrings {
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait desk extends js.Object
+  sealed trait desk
+    extends reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.ErgonomicType
   
   @js.native
-  sealed trait lap extends js.Object
+  sealed trait lap
+    extends reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.ErgonomicType
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait palm extends js.Object
+  sealed trait palm
+    extends reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.ErgonomicType
   
   @js.native
-  sealed trait portable extends js.Object
+  sealed trait portable
+    extends reactDashFlexrLib.underscoreUnderscoreReactFlexrNs.ErgonomicType
   
   @js.native
   sealed trait right extends js.Object

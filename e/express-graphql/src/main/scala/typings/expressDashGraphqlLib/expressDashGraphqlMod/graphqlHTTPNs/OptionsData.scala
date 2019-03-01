@@ -52,3 +52,28 @@ trait OptionsData extends js.Object {
   var validationRules: js.UndefOr[js.Array[_] | scala.Null] = js.undefined
 }
 
+object OptionsData {
+  @scala.inline
+  def apply(
+    schema: graphqlLib.graphqlMod.GraphQLSchema,
+    context: js.Any = null,
+    extensions: js.Function1[/* info */ RequestInfo, org.scalablytyped.runtime.StringDictionary[_]] = null,
+    formatError: js.Function1[/* error */ graphqlLib.graphqlMod.GraphQLError, _] = null,
+    graphiql: js.UndefOr[scala.Boolean] = js.undefined,
+    pretty: js.UndefOr[scala.Boolean] = js.undefined,
+    rootValue: js.Any = null,
+    validationRules: js.Array[_] = null
+  ): OptionsData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("schema")(schema)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (formatError != null) __obj.updateDynamic("formatError")(formatError)
+    if (!js.isUndefined(graphiql)) __obj.updateDynamic("graphiql")(graphiql)
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (rootValue != null) __obj.updateDynamic("rootValue")(rootValue)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    __obj.asInstanceOf[OptionsData]
+  }
+}
+

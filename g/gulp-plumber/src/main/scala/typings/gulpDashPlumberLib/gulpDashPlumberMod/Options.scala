@@ -17,3 +17,16 @@ trait Options extends js.Object {
   var inherit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    errorHandler: ErrorHandlerFunction | scala.Boolean = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    __obj.asInstanceOf[Options]
+  }
+}
+

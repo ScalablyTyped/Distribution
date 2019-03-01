@@ -12,3 +12,12 @@ trait ExtensionEventCallback extends js.Object {
   var uri: java.lang.String
 }
 
+object ExtensionEventCallback {
+  @scala.inline
+  def apply(uri: java.lang.String): ExtensionEventCallback = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[ExtensionEventCallback]
+  }
+}
+

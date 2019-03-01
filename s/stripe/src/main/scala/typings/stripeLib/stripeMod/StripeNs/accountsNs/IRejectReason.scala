@@ -13,3 +13,14 @@ trait IRejectReason extends js.Object {
   var reason: stripeLib.stripeLibStrings.fraud | stripeLib.stripeLibStrings.terms_of_service | stripeLib.stripeLibStrings.other
 }
 
+object IRejectReason {
+  @scala.inline
+  def apply(
+    reason: stripeLib.stripeLibStrings.fraud | stripeLib.stripeLibStrings.terms_of_service | stripeLib.stripeLibStrings.other
+  ): IRejectReason = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IRejectReason]
+  }
+}
+

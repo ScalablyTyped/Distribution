@@ -10,3 +10,16 @@ trait Anon_ContainerInstructionsInitiallyVisible extends js.Object {
   var instructionsInitiallyVisible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ContainerInstructionsInitiallyVisible {
+  @scala.inline
+  def apply(
+    container: stdLib.Element | java.lang.String,
+    instructionsInitiallyVisible: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ContainerInstructionsInitiallyVisible = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(instructionsInitiallyVisible)) __obj.updateDynamic("instructionsInitiallyVisible")(instructionsInitiallyVisible)
+    __obj.asInstanceOf[Anon_ContainerInstructionsInitiallyVisible]
+  }
+}
+

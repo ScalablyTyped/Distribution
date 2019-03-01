@@ -79,3 +79,40 @@ trait ASPxClientSpreadsheetPopupMenuItem extends js.Object {
   def GetSubItems(): ASPxClientSpreadsheetPopupMenuItemCollection
 }
 
+object ASPxClientSpreadsheetPopupMenuItem {
+  @scala.inline
+  def apply(
+    GetItem: js.Function1[scala.Double, ASPxClientSpreadsheetPopupMenuItem],
+    GetItemByName: js.Function1[java.lang.String, ASPxClientSpreadsheetPopupMenuItem],
+    GetItemCount: js.Function0[scala.Double],
+    GetSubItems: js.Function0[ASPxClientSpreadsheetPopupMenuItemCollection],
+    beginGroup: scala.Boolean,
+    enabled: scala.Boolean,
+    imageClassName: java.lang.String,
+    imageUrl: java.lang.String,
+    name: java.lang.String,
+    navigateUrl: java.lang.String,
+    parent: ASPxClientSpreadsheetPopupMenuItem,
+    target: java.lang.String,
+    text: java.lang.String,
+    tooltip: java.lang.String
+  ): ASPxClientSpreadsheetPopupMenuItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetItem")(GetItem)
+    __obj.updateDynamic("GetItemByName")(GetItemByName)
+    __obj.updateDynamic("GetItemCount")(GetItemCount)
+    __obj.updateDynamic("GetSubItems")(GetSubItems)
+    __obj.updateDynamic("beginGroup")(beginGroup)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("imageClassName")(imageClassName)
+    __obj.updateDynamic("imageUrl")(imageUrl)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("navigateUrl")(navigateUrl)
+    __obj.updateDynamic("parent")(parent)
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("tooltip")(tooltip)
+    __obj.asInstanceOf[ASPxClientSpreadsheetPopupMenuItem]
+  }
+}
+

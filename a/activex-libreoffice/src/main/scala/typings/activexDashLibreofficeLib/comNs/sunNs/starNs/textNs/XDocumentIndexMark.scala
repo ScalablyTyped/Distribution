@@ -28,3 +28,36 @@ trait XDocumentIndexMark extends XTextContent {
   def setMarkEntry(aIndexEntry: java.lang.String): scala.Unit
 }
 
+object XDocumentIndexMark {
+  @scala.inline
+  def apply(
+    Anchor: XTextRange,
+    MarkEntry: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attach: js.Function1[XTextRange, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getAnchor: js.Function0[XTextRange],
+    getMarkEntry: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setMarkEntry: js.Function1[java.lang.String, scala.Unit]
+  ): XDocumentIndexMark = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Anchor")(Anchor)
+    __obj.updateDynamic("MarkEntry")(MarkEntry)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("attach")(attach)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getAnchor")(getAnchor)
+    __obj.updateDynamic("getMarkEntry")(getMarkEntry)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setMarkEntry")(setMarkEntry)
+    __obj.asInstanceOf[XDocumentIndexMark]
+  }
+}
+

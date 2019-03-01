@@ -32,3 +32,28 @@ trait Anon_Level extends js.Object {
   ): scala.Unit
 }
 
+object Anon_Level {
+  @scala.inline
+  def apply(
+    Level: Anon_DISPLAY,
+    releaseKeepAwake: js.Function0[scala.Unit],
+    requestKeepAwake: js.Function1[
+      chromeDashAppsLib.chromeNs.ToStringLiteral[
+        /* import warning: ImportType.apply Failed type conversion: typeof Level */ js.Any, 
+        java.lang.String, 
+        stdLib.Exclude[
+          java.lang.String, 
+          /* import warning: ImportType.apply Failed type conversion: typeof Level[keyof typeof Level] */ js.Any
+        ]
+      ], 
+      scala.Unit
+    ]
+  ): Anon_Level = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Level")(Level)
+    __obj.updateDynamic("releaseKeepAwake")(releaseKeepAwake)
+    __obj.updateDynamic("requestKeepAwake")(requestKeepAwake)
+    __obj.asInstanceOf[Anon_Level]
+  }
+}
+

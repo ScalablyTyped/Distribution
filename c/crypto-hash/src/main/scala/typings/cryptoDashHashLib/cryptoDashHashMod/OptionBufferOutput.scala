@@ -9,3 +9,12 @@ trait OptionBufferOutput extends js.Object {
   var outputFormat: cryptoDashHashLib.cryptoDashHashLibStrings.buffer
 }
 
+object OptionBufferOutput {
+  @scala.inline
+  def apply(outputFormat: cryptoDashHashLib.cryptoDashHashLibStrings.buffer): OptionBufferOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("outputFormat")(outputFormat)
+    __obj.asInstanceOf[OptionBufferOutput]
+  }
+}
+

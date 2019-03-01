@@ -24,3 +24,20 @@ trait AutoScalingTargetTrackingScalingPolicyConfigurationDescription extends js.
   var TargetValue: Double
 }
 
+object AutoScalingTargetTrackingScalingPolicyConfigurationDescription {
+  @scala.inline
+  def apply(
+    TargetValue: Double,
+    DisableScaleIn: js.UndefOr[BooleanObject] = js.undefined,
+    ScaleInCooldown: js.UndefOr[IntegerObject] = js.undefined,
+    ScaleOutCooldown: js.UndefOr[IntegerObject] = js.undefined
+  ): AutoScalingTargetTrackingScalingPolicyConfigurationDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TargetValue")(TargetValue)
+    if (!js.isUndefined(DisableScaleIn)) __obj.updateDynamic("DisableScaleIn")(DisableScaleIn)
+    if (!js.isUndefined(ScaleInCooldown)) __obj.updateDynamic("ScaleInCooldown")(ScaleInCooldown)
+    if (!js.isUndefined(ScaleOutCooldown)) __obj.updateDynamic("ScaleOutCooldown")(ScaleOutCooldown)
+    __obj.asInstanceOf[AutoScalingTargetTrackingScalingPolicyConfigurationDescription]
+  }
+}
+

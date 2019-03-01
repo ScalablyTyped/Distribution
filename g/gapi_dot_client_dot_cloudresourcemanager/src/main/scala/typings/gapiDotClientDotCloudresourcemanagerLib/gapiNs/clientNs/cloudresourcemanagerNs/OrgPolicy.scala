@@ -51,3 +51,26 @@ trait OrgPolicy extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object OrgPolicy {
+  @scala.inline
+  def apply(
+    booleanPolicy: BooleanPolicy = null,
+    constraint: java.lang.String = null,
+    etag: java.lang.String = null,
+    listPolicy: ListPolicy = null,
+    restoreDefault: js.Any = null,
+    updateTime: java.lang.String = null,
+    version: scala.Int | scala.Double = null
+  ): OrgPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (booleanPolicy != null) __obj.updateDynamic("booleanPolicy")(booleanPolicy)
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (listPolicy != null) __obj.updateDynamic("listPolicy")(listPolicy)
+    if (restoreDefault != null) __obj.updateDynamic("restoreDefault")(restoreDefault)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OrgPolicy]
+  }
+}
+

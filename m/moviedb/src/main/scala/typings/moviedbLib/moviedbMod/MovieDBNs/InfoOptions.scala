@@ -10,3 +10,13 @@ trait InfoOptions extends js.Object {
   var language: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InfoOptions {
+  @scala.inline
+  def apply(id: scala.Double, language: java.lang.String = null): InfoOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (language != null) __obj.updateDynamic("language")(language)
+    __obj.asInstanceOf[InfoOptions]
+  }
+}
+

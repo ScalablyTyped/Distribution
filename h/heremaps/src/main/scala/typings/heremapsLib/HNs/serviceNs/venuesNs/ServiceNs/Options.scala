@@ -14,3 +14,13 @@ trait Options extends js.Object {
   var subDomain: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(path: java.lang.String = null, subDomain: java.lang.String = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain)
+    __obj.asInstanceOf[Options]
+  }
+}
+

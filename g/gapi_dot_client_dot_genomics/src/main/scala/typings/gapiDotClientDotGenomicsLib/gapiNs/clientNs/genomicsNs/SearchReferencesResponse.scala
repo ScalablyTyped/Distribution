@@ -16,3 +16,13 @@ trait SearchReferencesResponse extends js.Object {
   var references: js.UndefOr[js.Array[Reference]] = js.undefined
 }
 
+object SearchReferencesResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, references: js.Array[Reference] = null): SearchReferencesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (references != null) __obj.updateDynamic("references")(references)
+    __obj.asInstanceOf[SearchReferencesResponse]
+  }
+}
+

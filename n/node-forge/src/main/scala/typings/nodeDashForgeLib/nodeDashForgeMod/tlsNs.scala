@@ -175,6 +175,8 @@ object tlsNs extends js.Object {
     var send: scala.Boolean
   }
   
+  trait Verified extends js.Object
+  
   val MaxFragment: scala.Double = js.native
   val SupportedVersions: js.Array[ProtocolVersion] = js.native
   val Version: ProtocolVersion = js.native
@@ -569,6 +571,5 @@ object tlsNs extends js.Object {
   }
   
   type ConnectionState = js.Any
-  type Verified = nodeDashForgeLib.nodeDashForgeLibNumbers.`true` | nodeDashForgeLib.Anon_Alert
 }
 

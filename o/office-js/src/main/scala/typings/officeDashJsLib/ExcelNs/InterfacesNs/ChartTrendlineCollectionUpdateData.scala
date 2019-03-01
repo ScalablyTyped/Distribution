@@ -10,3 +10,12 @@ trait ChartTrendlineCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[ChartTrendlineData]] = js.undefined
 }
 
+object ChartTrendlineCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[ChartTrendlineData] = null): ChartTrendlineCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[ChartTrendlineCollectionUpdateData]
+  }
+}
+

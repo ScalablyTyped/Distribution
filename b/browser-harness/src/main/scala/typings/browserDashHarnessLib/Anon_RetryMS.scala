@@ -10,3 +10,13 @@ trait Anon_RetryMS extends js.Object {
   var timeoutMS: scala.Double
 }
 
+object Anon_RetryMS {
+  @scala.inline
+  def apply(retryMS: scala.Double, timeoutMS: scala.Double): Anon_RetryMS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("retryMS")(retryMS)
+    __obj.updateDynamic("timeoutMS")(timeoutMS)
+    __obj.asInstanceOf[Anon_RetryMS]
+  }
+}
+

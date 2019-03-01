@@ -11,3 +11,13 @@ trait Anon_EncryptionKey extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_EncryptionKey {
+  @scala.inline
+  def apply(location: java.lang.String, `type`: java.lang.String, encryptionKey: Anon_IdType = null): Anon_EncryptionKey = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("location")(location)
+    if (encryptionKey != null) __obj.updateDynamic("encryptionKey")(encryptionKey)
+    __obj.asInstanceOf[Anon_EncryptionKey]
+  }
+}
+

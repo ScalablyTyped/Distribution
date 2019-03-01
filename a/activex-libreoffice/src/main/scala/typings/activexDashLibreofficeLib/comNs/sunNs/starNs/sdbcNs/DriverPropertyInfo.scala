@@ -27,3 +27,22 @@ trait DriverPropertyInfo extends js.Object {
   var Value: java.lang.String
 }
 
+object DriverPropertyInfo {
+  @scala.inline
+  def apply(
+    Choices: activexDashInteropLib.SafeArray[java.lang.String],
+    Description: java.lang.String,
+    IsRequired: scala.Boolean,
+    Name: java.lang.String,
+    Value: java.lang.String
+  ): DriverPropertyInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Choices")(Choices)
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("IsRequired")(IsRequired)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[DriverPropertyInfo]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Material extends js.Object {
   var id: scala.Double
 }
 
+object Material {
+  @scala.inline
+  def apply(id: scala.Double): Material = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[Material]
+  }
+}
+

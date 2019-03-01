@@ -17,3 +17,14 @@ trait UrlDispatchRule extends js.Object {
   var service: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UrlDispatchRule {
+  @scala.inline
+  def apply(domain: java.lang.String = null, path: java.lang.String = null, service: java.lang.String = null): UrlDispatchRule = {
+    val __obj = js.Dynamic.literal()
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (service != null) __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[UrlDispatchRule]
+  }
+}
+

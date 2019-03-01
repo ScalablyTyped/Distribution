@@ -112,3 +112,56 @@ trait LoadBalancerState extends js.Object {
   val zoneId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object LoadBalancerState {
+  @scala.inline
+  def apply(
+    accessLogs: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketBucketPrefixEnabledInterval] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    availabilityZones: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    connectionDraining: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    connectionDrainingTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    crossZoneLoadBalancing: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    dnsName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    healthCheck: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HealthyThresholdIntervalTargetTimeout] = null,
+    idleTimeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    instances: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    internal: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    listeners: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_InstancePortInstanceProtocolLbPort]
+      ]
+    ] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    securityGroups: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    sourceSecurityGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sourceSecurityGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    subnets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): LoadBalancerState = {
+    val __obj = js.Dynamic.literal()
+    if (accessLogs != null) __obj.updateDynamic("accessLogs")(accessLogs.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
+    if (connectionDraining != null) __obj.updateDynamic("connectionDraining")(connectionDraining.asInstanceOf[js.Any])
+    if (connectionDrainingTimeout != null) __obj.updateDynamic("connectionDrainingTimeout")(connectionDrainingTimeout.asInstanceOf[js.Any])
+    if (crossZoneLoadBalancing != null) __obj.updateDynamic("crossZoneLoadBalancing")(crossZoneLoadBalancing.asInstanceOf[js.Any])
+    if (dnsName != null) __obj.updateDynamic("dnsName")(dnsName.asInstanceOf[js.Any])
+    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck.asInstanceOf[js.Any])
+    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
+    if (instances != null) __obj.updateDynamic("instances")(instances.asInstanceOf[js.Any])
+    if (internal != null) __obj.updateDynamic("internal")(internal.asInstanceOf[js.Any])
+    if (listeners != null) __obj.updateDynamic("listeners")(listeners.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (securityGroups != null) __obj.updateDynamic("securityGroups")(securityGroups.asInstanceOf[js.Any])
+    if (sourceSecurityGroup != null) __obj.updateDynamic("sourceSecurityGroup")(sourceSecurityGroup.asInstanceOf[js.Any])
+    if (sourceSecurityGroupId != null) __obj.updateDynamic("sourceSecurityGroupId")(sourceSecurityGroupId.asInstanceOf[js.Any])
+    if (subnets != null) __obj.updateDynamic("subnets")(subnets.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancerState]
+  }
+}
+

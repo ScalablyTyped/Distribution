@@ -36,3 +36,31 @@ trait Options extends js.Object {
   def rowToMapObject(row: Row, z: heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom): heremapsLib.HNs.mapNs.Object
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    rowToMapObject: js.Function2[
+      Row, 
+      heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
+      heremapsLib.HNs.mapNs.Object
+    ],
+    clustering: Clustering = null,
+    dataDomains: DataDomains = null,
+    dataToRows: js.Function1[/* data */ heredatalensLib.HNs.datalensNs.ServiceNs.Data, js.Array[Row]] = null,
+    rowToStyle: js.Function3[
+      /* row */ Row, 
+      /* z */ heredatalensLib.HNs.datalensNs.QueryTileProviderNs.Zoom, 
+      /* styleState */ StyleState, 
+      ObjectStyleOptions
+    ] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rowToMapObject")(rowToMapObject)
+    if (clustering != null) __obj.updateDynamic("clustering")(clustering)
+    if (dataDomains != null) __obj.updateDynamic("dataDomains")(dataDomains)
+    if (dataToRows != null) __obj.updateDynamic("dataToRows")(dataToRows)
+    if (rowToStyle != null) __obj.updateDynamic("rowToStyle")(rowToStyle)
+    __obj.asInstanceOf[Options]
+  }
+}
+

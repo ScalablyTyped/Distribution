@@ -19,85 +19,139 @@ object meteorLibStrings {
   sealed trait Query extends js.Object
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait binData extends js.Object
+  sealed trait binData
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait bool extends js.Object
+  sealed trait bool
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait connected extends js.Object
+  sealed trait connected
+    extends meteorLib.ddpMod.DDPNs.Status
+       with meteorLib.DDPNs.Status
   
   @js.native
-  sealed trait connecting extends js.Object
+  sealed trait connecting
+    extends meteorLib.ddpMod.DDPNs.Status
+       with meteorLib.DDPNs.Status
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait dbPointer extends js.Object
+  sealed trait dbPointer
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait decimal extends js.Object
+  sealed trait decimal
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait double
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends meteorLib.ddpMod.DDPNs.Status
+       with meteorLib.DDPNs.Status
   
   @js.native
-  sealed trait int extends js.Object
+  sealed trait int
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait javascript extends js.Object
+  sealed trait javascript
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait javascriptWithScope extends js.Object
+  sealed trait javascriptWithScope
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait long extends js.Object
+  sealed trait long
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait maxKey extends js.Object
+  sealed trait maxKey
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait minKey extends js.Object
+  sealed trait minKey
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait `null` extends js.Object
+  sealed trait `null`
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait objectId extends js.Object
+  sealed trait objectId
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait offline extends js.Object
+  sealed trait offline
+    extends meteorLib.ddpMod.DDPNs.Status
+       with meteorLib.DDPNs.Status
   
   @js.native
-  sealed trait regex extends js.Object
+  sealed trait regex
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait symbol extends js.Object
+  sealed trait symbol
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait timestamp extends js.Object
+  sealed trait timestamp
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait undefined extends js.Object
+  sealed trait undefined
+    extends meteorLib.MongoNs.BsonType
+       with meteorLib.mongoMod.MongoNs.BsonType
   
   @js.native
-  sealed trait waiting extends js.Object
+  sealed trait waiting
+    extends meteorLib.ddpMod.DDPNs.Status
+       with meteorLib.DDPNs.Status
   
   @scala.inline
   def ArraysOrEach: ArraysOrEach = "ArraysOrEach".asInstanceOf[ArraysOrEach]

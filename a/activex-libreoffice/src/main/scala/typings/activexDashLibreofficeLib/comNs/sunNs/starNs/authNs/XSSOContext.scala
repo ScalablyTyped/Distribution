@@ -57,3 +57,34 @@ trait XSSOContext
   def getTarget(): java.lang.String
 }
 
+object XSSOContext {
+  @scala.inline
+  def apply(
+    Mechanism: java.lang.String,
+    Mutual: scala.Boolean,
+    Source: java.lang.String,
+    Target: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getMechanism: js.Function0[java.lang.String],
+    getMutual: js.Function0[scala.Boolean],
+    getSource: js.Function0[java.lang.String],
+    getTarget: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSSOContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Mechanism")(Mechanism)
+    __obj.updateDynamic("Mutual")(Mutual)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("Target")(Target)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMechanism")(getMechanism)
+    __obj.updateDynamic("getMutual")(getMutual)
+    __obj.updateDynamic("getSource")(getSource)
+    __obj.updateDynamic("getTarget")(getTarget)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSSOContext]
+  }
+}
+

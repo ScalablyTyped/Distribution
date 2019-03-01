@@ -12,3 +12,16 @@ trait MongoClientCommonOption extends js.Object {
   var returnNonCachedInstance: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MongoClientCommonOption {
+  @scala.inline
+  def apply(
+    noListener: js.UndefOr[scala.Boolean] = js.undefined,
+    returnNonCachedInstance: js.UndefOr[scala.Boolean] = js.undefined
+  ): MongoClientCommonOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(noListener)) __obj.updateDynamic("noListener")(noListener)
+    if (!js.isUndefined(returnNonCachedInstance)) __obj.updateDynamic("returnNonCachedInstance")(returnNonCachedInstance)
+    __obj.asInstanceOf[MongoClientCommonOption]
+  }
+}
+

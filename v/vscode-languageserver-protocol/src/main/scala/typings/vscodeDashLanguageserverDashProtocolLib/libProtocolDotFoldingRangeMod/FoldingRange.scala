@@ -30,3 +30,22 @@ trait FoldingRange extends js.Object {
   var startLine: scala.Double
 }
 
+object FoldingRange {
+  @scala.inline
+  def apply(
+    endLine: scala.Double,
+    startLine: scala.Double,
+    endCharacter: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    startCharacter: scala.Int | scala.Double = null
+  ): FoldingRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endLine")(endLine)
+    __obj.updateDynamic("startLine")(startLine)
+    if (endCharacter != null) __obj.updateDynamic("endCharacter")(endCharacter.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (startCharacter != null) __obj.updateDynamic("startCharacter")(startCharacter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FoldingRange]
+  }
+}
+

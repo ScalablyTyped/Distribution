@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object cytoscapeLibStrings {
   @js.native
-  sealed trait add extends js.Object
+  sealed trait add
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait additive extends js.Object
+  sealed trait additive
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.SelectionType
   
   @js.native
   sealed trait auto extends js.Object
@@ -28,25 +30,31 @@ object cytoscapeLibStrings {
   sealed trait blob extends js.Object
   
   @js.native
-  sealed trait bold extends js.Object
+  sealed trait bold
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs._FontWeight
   
   @js.native
-  sealed trait bolder extends js.Object
+  sealed trait bolder
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs._FontWeight
   
   @js.native
   sealed trait bottom extends js.Object
   
   @js.native
-  sealed trait box extends js.Object
+  sealed trait box
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait boxend extends js.Object
+  sealed trait boxend
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait boxselect extends js.Object
+  sealed trait boxselect
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait boxstart extends js.Object
+  sealed trait boxstart
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
   sealed trait breadthfirst extends js.Object
@@ -55,10 +63,12 @@ object cytoscapeLibStrings {
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowShape
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventName
   
   @js.native
   sealed trait clipped extends js.Object
@@ -82,145 +92,191 @@ object cytoscapeLibStrings {
   sealed trait cover extends js.Object
   
   @js.native
-  sealed trait `cubic-bezier` extends js.Object
+  sealed trait `cubic-bezier`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait cxtdrag extends js.Object
+  sealed trait cxtdrag
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait cxtdragout extends js.Object
+  sealed trait cxtdragout
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait cxtdragover extends js.Object
+  sealed trait cxtdragover
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait cxttap extends js.Object
+  sealed trait cxttap
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait cxttapend extends js.Object
+  sealed trait cxttapend
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait cxttapstart extends js.Object
+  sealed trait cxttapstart
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait dashed extends js.Object
+  sealed trait dashed
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.LineStyle
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait data
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait destroy
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.GraphEventName
   
   @js.native
-  sealed trait diamond extends js.Object
+  sealed trait diamond
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowShape
+       with cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
   sealed trait displayed extends js.Object
   
   @js.native
-  sealed trait dotted extends js.Object
+  sealed trait dotted
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.LineStyle
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait double
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.LineStyle
   
   @js.native
-  sealed trait drag extends js.Object
+  sealed trait drag
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait ease extends js.Object
+  sealed trait ease
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in` extends js.Object
+  sealed trait `ease-in`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-circ` extends js.Object
+  sealed trait `ease-in-circ`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-cubic` extends js.Object
+  sealed trait `ease-in-cubic`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-expo` extends js.Object
+  sealed trait `ease-in-expo`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-out` extends js.Object
+  sealed trait `ease-in-out`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-out-circ` extends js.Object
+  sealed trait `ease-in-out-circ`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-out-cubic` extends js.Object
+  sealed trait `ease-in-out-cubic`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-out-expo` extends js.Object
+  sealed trait `ease-in-out-expo`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-out-quad` extends js.Object
+  sealed trait `ease-in-out-quad`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-out-quart` extends js.Object
+  sealed trait `ease-in-out-quart`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-out-quint` extends js.Object
+  sealed trait `ease-in-out-quint`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-out-sine` extends js.Object
+  sealed trait `ease-in-out-sine`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-quad` extends js.Object
+  sealed trait `ease-in-quad`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-quart` extends js.Object
+  sealed trait `ease-in-quart`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-quint` extends js.Object
+  sealed trait `ease-in-quint`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-in-sine` extends js.Object
+  sealed trait `ease-in-sine`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-out` extends js.Object
+  sealed trait `ease-out`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-out-circ` extends js.Object
+  sealed trait `ease-out-circ`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-out-cubic` extends js.Object
+  sealed trait `ease-out-cubic`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-out-expo` extends js.Object
+  sealed trait `ease-out-expo`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-out-quad` extends js.Object
+  sealed trait `ease-out-quad`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-out-quart` extends js.Object
+  sealed trait `ease-out-quart`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-out-quint` extends js.Object
+  sealed trait `ease-out-quint`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait `ease-out-sine` extends js.Object
+  sealed trait `ease-out-sine`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait edges extends js.Object
+  sealed trait edges
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.ElementGroup
   
   @js.native
-  sealed trait ellipse extends js.Object
+  sealed trait ellipse
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait filled extends js.Object
+  sealed trait filled
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowFill
   
   @js.native
   sealed trait frame extends js.Object
   
   @js.native
-  sealed trait free extends js.Object
+  sealed trait free
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait grab extends js.Object
+  sealed trait grab
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait grabon extends js.Object
+  sealed trait grabon
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
   sealed trait grid extends js.Object
@@ -229,58 +285,74 @@ object cytoscapeLibStrings {
   sealed trait haystack extends js.Object
   
   @js.native
-  sealed trait heptagon extends js.Object
+  sealed trait heptagon
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait hexagon extends js.Object
+  sealed trait hexagon
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait hollow extends js.Object
+  sealed trait hollow
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowFill
   
   @js.native
   sealed trait intersection extends js.Object
   
   @js.native
-  sealed trait italic extends js.Object
+  sealed trait italic
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.FontStyle
   
   @js.native
-  sealed trait layoutready extends js.Object
+  sealed trait layoutready
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.GraphEventName
   
   @js.native
-  sealed trait layoutstart extends js.Object
+  sealed trait layoutstart
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.GraphEventName
   
   @js.native
-  sealed trait layoutstop extends js.Object
+  sealed trait layoutstop
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.GraphEventName
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait lighter extends js.Object
+  sealed trait lighter
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs._FontWeight
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait lock extends js.Object
+  sealed trait lock
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait lowercase extends js.Object
+  sealed trait lowercase
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TextTranformation
   
   @js.native
-  sealed trait mousedown extends js.Object
+  sealed trait mousedown
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventName
   
   @js.native
-  sealed trait mousemove extends js.Object
+  sealed trait mousemove
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventName
   
   @js.native
-  sealed trait mouseout extends js.Object
+  sealed trait mouseout
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventName
   
   @js.native
-  sealed trait mouseover extends js.Object
+  sealed trait mouseover
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventName
   
   @js.native
-  sealed trait mouseup extends js.Object
+  sealed trait mouseup
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventName
   
   @js.native
   sealed trait no extends js.Object
@@ -292,34 +364,45 @@ object cytoscapeLibStrings {
   sealed trait `node-position` extends js.Object
   
   @js.native
-  sealed trait nodes extends js.Object
+  sealed trait nodes
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.ElementGroup
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowShape
+       with cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TextTranformation
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.FontStyle
+       with cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs._FontWeight
   
   @js.native
   sealed trait `null` extends js.Object
   
   @js.native
-  sealed trait oblique extends js.Object
+  sealed trait oblique
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.FontStyle
   
   @js.native
-  sealed trait octagon extends js.Object
+  sealed trait octagon
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait pan extends js.Object
+  sealed trait pan
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.GraphEventName
   
   @js.native
-  sealed trait pentagon extends js.Object
+  sealed trait pentagon
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait polygon extends js.Object
+  sealed trait polygon
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait position extends js.Object
+  sealed trait position
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
   sealed trait preset extends js.Object
@@ -331,16 +414,20 @@ object cytoscapeLibStrings {
   sealed trait random extends js.Object
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait ready
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.GraphEventName
   
   @js.native
-  sealed trait rectangle extends js.Object
+  sealed trait rectangle
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait remove
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait render extends js.Object
+  sealed trait render
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.GraphEventName
   
   @js.native
   sealed trait repeat extends js.Object
@@ -352,19 +439,23 @@ object cytoscapeLibStrings {
   sealed trait `repeat-y` extends js.Object
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait resize
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.GraphEventName
   
   @js.native
-  sealed trait rhomboid extends js.Object
+  sealed trait rhomboid
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait roundrectangle extends js.Object
+  sealed trait roundrectangle
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait scratch extends js.Object
+  sealed trait scratch
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
   sealed trait `segment-weights` extends js.Object
@@ -373,115 +464,148 @@ object cytoscapeLibStrings {
   sealed trait segments extends js.Object
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait select
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait single extends js.Object
+  sealed trait single
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.SelectionType
   
   @js.native
-  sealed trait solid extends js.Object
+  sealed trait solid
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.LineStyle
   
   @js.native
-  sealed trait spring extends js.Object
+  sealed trait spring
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TransitionTimingFunction
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowShape
   
   @js.native
-  sealed trait star extends js.Object
+  sealed trait star
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait style
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait tap extends js.Object
+  sealed trait tap
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait tapdrag extends js.Object
+  sealed trait tapdrag
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait tapdragout extends js.Object
+  sealed trait tapdragout
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait tapdragover extends js.Object
+  sealed trait tapdragover
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait tapend extends js.Object
+  sealed trait tapend
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait taphold extends js.Object
+  sealed trait taphold
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait tapstart extends js.Object
+  sealed trait tapstart
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait tee extends js.Object
+  sealed trait tee
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowShape
   
   @js.native
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait touchend extends js.Object
+  sealed trait touchend
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventName
   
   @js.native
-  sealed trait touchmove extends js.Object
+  sealed trait touchmove
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventName
   
   @js.native
-  sealed trait touchstart extends js.Object
+  sealed trait touchstart
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventName
   
   @js.native
-  sealed trait triangle extends js.Object
+  sealed trait triangle
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowShape
+       with cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
-  sealed trait `triangle-backcurve` extends js.Object
+  sealed trait `triangle-backcurve`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowShape
   
   @js.native
-  sealed trait `triangle-tee` extends js.Object
+  sealed trait `triangle-tee`
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.ArrowShape
   
   @js.native
   sealed trait unbundled extends js.Object
   
   @js.native
-  sealed trait unlock extends js.Object
+  sealed trait unlock
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait unselect extends js.Object
+  sealed trait unselect
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CollectionEventName
   
   @js.native
-  sealed trait uppercase extends js.Object
+  sealed trait uppercase
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.TextTranformation
   
   @js.native
-  sealed trait vclick extends js.Object
+  sealed trait vclick
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait vee extends js.Object
+  sealed trait vee
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.CssNs.NodeShape
   
   @js.native
   sealed trait visible extends js.Object
   
   @js.native
-  sealed trait vmousedown extends js.Object
+  sealed trait vmousedown
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait vmousemove extends js.Object
+  sealed trait vmousemove
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
-  sealed trait vmouseup extends js.Object
+  sealed trait vmouseup
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.UserInputDeviceEventNameExt
   
   @js.native
   sealed trait wrap extends js.Object
   
   @js.native
-  sealed trait x extends js.Object
+  sealed trait x
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.PositionDimension
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.PositionDimension
   
   @js.native
   sealed trait yes extends js.Object
   
   @js.native
-  sealed trait zoom extends js.Object
+  sealed trait zoom
+    extends cytoscapeLib.cytoscapeMod.cytoscapeNs.GraphEventName
   
   @scala.inline
   def add: add = "add".asInstanceOf[add]

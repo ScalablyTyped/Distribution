@@ -22,3 +22,20 @@ trait Table extends js.Object {
   var tableRows: js.UndefOr[js.Array[TableRow]] = js.undefined
 }
 
+object Table {
+  @scala.inline
+  def apply(
+    columns: scala.Int | scala.Double = null,
+    rows: scala.Int | scala.Double = null,
+    tableColumns: js.Array[TableColumnProperties] = null,
+    tableRows: js.Array[TableRow] = null
+  ): Table = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (tableColumns != null) __obj.updateDynamic("tableColumns")(tableColumns)
+    if (tableRows != null) __obj.updateDynamic("tableRows")(tableRows)
+    __obj.asInstanceOf[Table]
+  }
+}
+

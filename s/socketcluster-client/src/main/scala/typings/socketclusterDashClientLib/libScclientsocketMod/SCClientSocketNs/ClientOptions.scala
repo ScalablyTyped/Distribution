@@ -78,3 +78,64 @@ trait ClientOptions extends js.Object {
   var timestampRequests: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ClientOptions {
+  @scala.inline
+  def apply(
+    ackTimeout: scala.Int | scala.Double = null,
+    authEngine: scDashAuthLib.scDashAuthMod.SCAuthEngine = null,
+    authTokenName: java.lang.String = null,
+    autoConnect: js.UndefOr[scala.Boolean] = js.undefined,
+    autoReconnect: js.UndefOr[scala.Boolean] = js.undefined,
+    autoReconnectOptions: AutoReconnectOptions = null,
+    autoSubscribeOnConnect: js.UndefOr[scala.Boolean] = js.undefined,
+    binaryType: java.lang.String = null,
+    channelPrefix: java.lang.String = null,
+    cloneData: js.UndefOr[scala.Boolean] = js.undefined,
+    codecEngine: socketclusterDashServerLib.scserverMod.SCServerNs.SCCodecEngine = null,
+    connectTimeout: scala.Int | scala.Double = null,
+    disconnectOnUnload: js.UndefOr[scala.Boolean] = js.undefined,
+    host: java.lang.String = null,
+    hostname: java.lang.String = null,
+    multiplex: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    perMessageDeflate: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Int | scala.Double = null,
+    pubSubBatchDuration: scala.Int | scala.Double = null,
+    query: java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    subscriptionRetryOptions: js.Object = null,
+    timestampParam: java.lang.String = null,
+    timestampRequests: js.UndefOr[scala.Boolean] = js.undefined
+  ): ClientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ackTimeout != null) __obj.updateDynamic("ackTimeout")(ackTimeout.asInstanceOf[js.Any])
+    if (authEngine != null) __obj.updateDynamic("authEngine")(authEngine)
+    if (authTokenName != null) __obj.updateDynamic("authTokenName")(authTokenName)
+    if (!js.isUndefined(autoConnect)) __obj.updateDynamic("autoConnect")(autoConnect)
+    if (!js.isUndefined(autoReconnect)) __obj.updateDynamic("autoReconnect")(autoReconnect)
+    if (autoReconnectOptions != null) __obj.updateDynamic("autoReconnectOptions")(autoReconnectOptions)
+    if (!js.isUndefined(autoSubscribeOnConnect)) __obj.updateDynamic("autoSubscribeOnConnect")(autoSubscribeOnConnect)
+    if (binaryType != null) __obj.updateDynamic("binaryType")(binaryType)
+    if (channelPrefix != null) __obj.updateDynamic("channelPrefix")(channelPrefix)
+    if (!js.isUndefined(cloneData)) __obj.updateDynamic("cloneData")(cloneData)
+    if (codecEngine != null) __obj.updateDynamic("codecEngine")(codecEngine)
+    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(disconnectOnUnload)) __obj.updateDynamic("disconnectOnUnload")(disconnectOnUnload)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (!js.isUndefined(multiplex)) __obj.updateDynamic("multiplex")(multiplex)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(perMessageDeflate)) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (pubSubBatchDuration != null) __obj.updateDynamic("pubSubBatchDuration")(pubSubBatchDuration.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (subscriptionRetryOptions != null) __obj.updateDynamic("subscriptionRetryOptions")(subscriptionRetryOptions)
+    if (timestampParam != null) __obj.updateDynamic("timestampParam")(timestampParam)
+    if (!js.isUndefined(timestampRequests)) __obj.updateDynamic("timestampRequests")(timestampRequests)
+    __obj.asInstanceOf[ClientOptions]
+  }
+}
+

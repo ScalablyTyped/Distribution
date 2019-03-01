@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 trait NativeModulesStatic
   extends /* name */ org.scalablytyped.runtime.StringDictionary[js.Any]
 
+object NativeModulesStatic {
+  @scala.inline
+  def apply(StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[js.Any] = null): NativeModulesStatic = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[NativeModulesStatic]
+  }
+}
+

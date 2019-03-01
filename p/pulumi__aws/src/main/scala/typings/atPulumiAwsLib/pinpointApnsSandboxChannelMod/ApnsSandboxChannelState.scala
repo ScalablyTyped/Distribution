@@ -47,3 +47,30 @@ trait ApnsSandboxChannelState extends js.Object {
   val tokenKeyId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApnsSandboxChannelState {
+  @scala.inline
+  def apply(
+    applicationId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bundleId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultAuthenticationMethod: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    privateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    teamId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tokenKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tokenKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ApnsSandboxChannelState = {
+    val __obj = js.Dynamic.literal()
+    if (applicationId != null) __obj.updateDynamic("applicationId")(applicationId.asInstanceOf[js.Any])
+    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId.asInstanceOf[js.Any])
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate.asInstanceOf[js.Any])
+    if (defaultAuthenticationMethod != null) __obj.updateDynamic("defaultAuthenticationMethod")(defaultAuthenticationMethod.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (teamId != null) __obj.updateDynamic("teamId")(teamId.asInstanceOf[js.Any])
+    if (tokenKey != null) __obj.updateDynamic("tokenKey")(tokenKey.asInstanceOf[js.Any])
+    if (tokenKeyId != null) __obj.updateDynamic("tokenKeyId")(tokenKeyId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApnsSandboxChannelState]
+  }
+}
+

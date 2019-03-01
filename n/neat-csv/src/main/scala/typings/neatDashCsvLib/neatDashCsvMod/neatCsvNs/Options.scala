@@ -22,3 +22,34 @@ trait Options extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    escape: java.lang.String = null,
+    headers: js.Array[java.lang.String] | scala.Boolean = null,
+    mapHeaders: js.Function1[/* args */ neatDashCsvLib.Anon_Header, java.lang.String | scala.Null] = null,
+    mapValues: js.Function1[/* args */ neatDashCsvLib.Anon_HeaderIndex, _] = null,
+    maxRowBytes: scala.Int | scala.Double = null,
+    newline: java.lang.String = null,
+    quote: java.lang.String = null,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    separator: java.lang.String = null,
+    skipLines: scala.Int | scala.Double = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (headers != null) __obj.updateDynamic("headers")(headers.asInstanceOf[js.Any])
+    if (mapHeaders != null) __obj.updateDynamic("mapHeaders")(mapHeaders)
+    if (mapValues != null) __obj.updateDynamic("mapValues")(mapValues)
+    if (maxRowBytes != null) __obj.updateDynamic("maxRowBytes")(maxRowBytes.asInstanceOf[js.Any])
+    if (newline != null) __obj.updateDynamic("newline")(newline)
+    if (quote != null) __obj.updateDynamic("quote")(quote)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (skipLines != null) __obj.updateDynamic("skipLines")(skipLines.asInstanceOf[js.Any])
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[Options]
+  }
+}
+

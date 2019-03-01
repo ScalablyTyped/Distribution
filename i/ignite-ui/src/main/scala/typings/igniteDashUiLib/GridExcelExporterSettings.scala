@@ -62,3 +62,33 @@ trait GridExcelExporterSettings
   var worksheetName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GridExcelExporterSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for GridExcelExporterSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    columnsToSkip: js.Array[_] = null,
+    dataExportMode: java.lang.String = null,
+    fileName: java.lang.String = null,
+    gridFeatureOptions: GridExcelExporterSettingsGridFeatureOptions = null,
+    gridStyling: java.lang.String = null,
+    skipFilteringOn: js.Array[_] = null,
+    tableStyle: java.lang.String = null,
+    worksheetName: java.lang.String = null
+  ): GridExcelExporterSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (columnsToSkip != null) __obj.updateDynamic("columnsToSkip")(columnsToSkip)
+    if (dataExportMode != null) __obj.updateDynamic("dataExportMode")(dataExportMode)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (gridFeatureOptions != null) __obj.updateDynamic("gridFeatureOptions")(gridFeatureOptions)
+    if (gridStyling != null) __obj.updateDynamic("gridStyling")(gridStyling)
+    if (skipFilteringOn != null) __obj.updateDynamic("skipFilteringOn")(skipFilteringOn)
+    if (tableStyle != null) __obj.updateDynamic("tableStyle")(tableStyle)
+    if (worksheetName != null) __obj.updateDynamic("worksheetName")(worksheetName)
+    __obj.asInstanceOf[GridExcelExporterSettings]
+  }
+}
+

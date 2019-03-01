@@ -16,3 +16,12 @@ trait BaseConfigOptions extends js.Object {
   var pathPrefix: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object BaseConfigOptions {
+  @scala.inline
+  def apply(pathPrefix: js.Array[java.lang.String] = null): BaseConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
+    __obj.asInstanceOf[BaseConfigOptions]
+  }
+}
+

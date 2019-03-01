@@ -13,3 +13,12 @@ trait ContainerInfo extends js.Object {
   var image: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ContainerInfo {
+  @scala.inline
+  def apply(image: java.lang.String = null): ContainerInfo = {
+    val __obj = js.Dynamic.literal()
+    if (image != null) __obj.updateDynamic("image")(image)
+    __obj.asInstanceOf[ContainerInfo]
+  }
+}
+

@@ -23,3 +23,28 @@ trait ChooseContactOptions
   def success_MChooseContactOptions(result: aliDashAppLib.Anon_ContactsDicArray): scala.Unit
 }
 
+object ChooseContactOptions {
+  @scala.inline
+  def apply(
+    chooseType: aliDashAppLib.aliDashAppLibStrings.single | aliDashAppLib.aliDashAppLibStrings.multi | java.lang.String,
+    success: js.Function1[aliDashAppLib.Anon_ContactsDicArray, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    includeMe: js.UndefOr[scala.Boolean] = js.undefined,
+    includeMobileContactMode: aliDashAppLib.aliDashAppLibStrings.none | aliDashAppLib.aliDashAppLibStrings.known | aliDashAppLib.aliDashAppLibStrings.all | java.lang.String = null,
+    multiChooseMax: scala.Int | scala.Double = null,
+    multiChooseMaxTips: java.lang.String = null
+  ): ChooseContactOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chooseType")(chooseType.asInstanceOf[js.Any])
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(includeMe)) __obj.updateDynamic("includeMe")(includeMe)
+    if (includeMobileContactMode != null) __obj.updateDynamic("includeMobileContactMode")(includeMobileContactMode.asInstanceOf[js.Any])
+    if (multiChooseMax != null) __obj.updateDynamic("multiChooseMax")(multiChooseMax.asInstanceOf[js.Any])
+    if (multiChooseMaxTips != null) __obj.updateDynamic("multiChooseMaxTips")(multiChooseMaxTips)
+    __obj.asInstanceOf[ChooseContactOptions]
+  }
+}
+

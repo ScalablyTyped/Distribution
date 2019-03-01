@@ -24,3 +24,28 @@ trait DefinitionQueryResult extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DefinitionQueryResult {
+  @scala.inline
+  def apply(
+    context: java.lang.String = null,
+    contextOffset: scala.Int | scala.Double = null,
+    doc: java.lang.String = null,
+    end: scala.Double | Position = null,
+    file: java.lang.String = null,
+    origin: java.lang.String = null,
+    start: scala.Double | Position = null,
+    url: java.lang.String = null
+  ): DefinitionQueryResult = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (contextOffset != null) __obj.updateDynamic("contextOffset")(contextOffset.asInstanceOf[js.Any])
+    if (doc != null) __obj.updateDynamic("doc")(doc)
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[DefinitionQueryResult]
+  }
+}
+

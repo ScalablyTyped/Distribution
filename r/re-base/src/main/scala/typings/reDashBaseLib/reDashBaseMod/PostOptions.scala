@@ -18,3 +18,13 @@ trait PostOptions extends js.Object {
   var `then`: js.UndefOr[js.Function1[/* result */ js.Any, scala.Unit]] = js.undefined
 }
 
+object PostOptions {
+  @scala.inline
+  def apply(data: js.Any, `then`: js.Function1[/* result */ js.Any, scala.Unit] = null): PostOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (`then` != null) __obj.updateDynamic("then")(`then`)
+    __obj.asInstanceOf[PostOptions]
+  }
+}
+

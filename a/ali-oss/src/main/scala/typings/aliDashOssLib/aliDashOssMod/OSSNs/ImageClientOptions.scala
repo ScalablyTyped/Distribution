@@ -21,3 +21,26 @@ trait ImageClientOptions extends js.Object {
   var timeout: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object ImageClientOptions {
+  @scala.inline
+  def apply(
+    accessKeyId: java.lang.String,
+    accessKeySecret: java.lang.String,
+    bucket: java.lang.String,
+    imageHost: java.lang.String,
+    internal: js.UndefOr[scala.Boolean] = js.undefined,
+    region: java.lang.String = null,
+    timeout: java.lang.String | scala.Double = null
+  ): ImageClientOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessKeyId")(accessKeyId)
+    __obj.updateDynamic("accessKeySecret")(accessKeySecret)
+    __obj.updateDynamic("bucket")(bucket)
+    __obj.updateDynamic("imageHost")(imageHost)
+    if (!js.isUndefined(internal)) __obj.updateDynamic("internal")(internal)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageClientOptions]
+  }
+}
+

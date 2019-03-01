@@ -18,3 +18,18 @@ trait GoogleCloudVideointelligenceV1beta2_Entity extends js.Object {
   var languageCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta2_Entity {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    entityId: java.lang.String = null,
+    languageCode: java.lang.String = null
+  ): GoogleCloudVideointelligenceV1beta2_Entity = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2_Entity]
+  }
+}
+

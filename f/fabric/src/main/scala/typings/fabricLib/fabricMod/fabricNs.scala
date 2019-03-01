@@ -16,8 +16,8 @@ object fabricNs extends js.Object {
   	 */
   class ActiveSelection ()
     extends fabricLib.fabricDashImplMod.ActiveSelection {
-    def this(items: js.Array[fabricLib.fabricDashImplMod.Object]) = this()
-    def this(items: js.Array[fabricLib.fabricDashImplMod.Object], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
+    def this(objects: js.Array[fabricLib.fabricDashImplMod.Object]) = this()
+    def this(objects: js.Array[fabricLib.fabricDashImplMod.Object], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
   }
   
   @js.native
@@ -70,6 +70,10 @@ object fabricNs extends js.Object {
   }
   
   @js.native
+  class Gradient ()
+    extends fabricLib.fabricDashImplMod.Gradient
+  
+  @js.native
   /**
   	 * Constructor
   	 * @param objects Group objects
@@ -77,8 +81,9 @@ object fabricNs extends js.Object {
   	 */
   class Group ()
     extends fabricLib.fabricDashImplMod.Group {
-    def this(items: js.Array[_]) = this()
-    def this(items: js.Array[_], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
+    def this(objects: js.Array[fabricLib.fabricDashImplMod.Object]) = this()
+    def this(objects: js.Array[fabricLib.fabricDashImplMod.Object], options: fabricLib.fabricDashImplMod.IGroupOptions) = this()
+    def this(objects: js.Array[fabricLib.fabricDashImplMod.Object], options: fabricLib.fabricDashImplMod.IGroupOptions, isAlreadyGrouped: scala.Boolean) = this()
   }
   
   @js.native
@@ -90,18 +95,21 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def this(text: java.lang.String) = this()
-    def this(text: java.lang.String, options: fabricLib.fabricDashImplMod.IITextOptions) = this()
+    def this(text: java.lang.String, options: fabricLib.fabricDashImplMod.ITextOptions) = this()
   }
   
   @js.native
-  class Image protected ()
+  /**
+  	 * Constructor
+  	 * @param element Image element
+  	 * @param [options] Options object
+  	 */
+  class Image ()
     extends fabricLib.fabricDashImplMod.Image {
-    /**
-    	 * Constructor
-    	 * @param element Image element
-    	 * @param [options] Options object
-    	 */
-    def this(element: stdLib.HTMLImageElement, objObjects: fabricLib.fabricDashImplMod.IObjectOptions) = this()
+    def this(element: java.lang.String) = this()
+    def this(element: stdLib.HTMLImageElement) = this()
+    def this(element: java.lang.String, options: fabricLib.fabricDashImplMod.IImageOptions) = this()
+    def this(element: stdLib.HTMLImageElement, options: fabricLib.fabricDashImplMod.IImageOptions) = this()
   }
   
   @js.native
@@ -119,12 +127,14 @@ object fabricNs extends js.Object {
   class Line ()
     extends fabricLib.fabricDashImplMod.Line {
     def this(points: js.Array[scala.Double]) = this()
-    def this(points: js.Array[scala.Double], objObjects: fabricLib.fabricDashImplMod.IObjectOptions) = this()
+    def this(points: js.Array[scala.Double], objObjects: fabricLib.fabricDashImplMod.ILineOptions) = this()
   }
   
   @js.native
   class Object ()
-    extends fabricLib.fabricDashImplMod.Object
+    extends fabricLib.fabricDashImplMod.Object {
+    def this(options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
+  }
   
   @js.native
   /**
@@ -135,20 +145,9 @@ object fabricNs extends js.Object {
   class Path ()
     extends fabricLib.fabricDashImplMod.Path {
     def this(path: java.lang.String) = this()
-    def this(path: js.Array[_]) = this()
+    def this(path: js.Array[fabricLib.fabricDashImplMod.Point]) = this()
     def this(path: java.lang.String, options: fabricLib.fabricDashImplMod.IPathOptions) = this()
-    def this(path: js.Array[_], options: fabricLib.fabricDashImplMod.IPathOptions) = this()
-  }
-  
-  @js.native
-  class PathGroup protected ()
-    extends fabricLib.fabricDashImplMod.PathGroup {
-    /**
-    	 * Constructor
-    	 * @param [options] Options object
-    	 */
-    def this(paths: js.Array[fabricLib.fabricDashImplMod.Path]) = this()
-    def this(paths: js.Array[fabricLib.fabricDashImplMod.Path], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
+    def this(path: js.Array[fabricLib.fabricDashImplMod.Point], options: fabricLib.fabricDashImplMod.IPathOptions) = this()
   }
   
   @js.native
@@ -180,8 +179,7 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def this(points: js.Array[fabricLib.Anon_X]) = this()
-    def this(points: js.Array[fabricLib.Anon_X], options: fabricLib.fabricDashImplMod.IObjectOptions) = this()
-    def this(points: js.Array[fabricLib.Anon_X], options: fabricLib.fabricDashImplMod.IObjectOptions, skipOffset: scala.Boolean) = this()
+    def this(points: js.Array[fabricLib.Anon_X], options: fabricLib.fabricDashImplMod.IPolylineOptions) = this()
   }
   
   @js.native
@@ -211,6 +209,7 @@ object fabricNs extends js.Object {
   class Shadow ()
     extends fabricLib.fabricDashImplMod.Shadow {
     def this(options: fabricLib.fabricDashImplMod.IShadowOptions) = this()
+    def this(options: java.lang.String) = this()
   }
   
   @js.native
@@ -223,8 +222,9 @@ object fabricNs extends js.Object {
     def this(element: java.lang.String) = this()
     /**
     	 * Constructor
-    	 * @param element <canvas> element to initialize instance on
-    	 * @param [options] Options object
+    	 * @param {HTMLElement | String} el <canvas> element to initialize instance on
+    	 * @param {Object} [options] Options object
+    	 * @return {Object} thisArg
     	 */
     def this(element: stdLib.HTMLCanvasElement) = this()
     def this(element: java.lang.String, options: fabricLib.fabricDashImplMod.ICanvasOptions) = this()
@@ -240,19 +240,19 @@ object fabricNs extends js.Object {
     	 * @param [options] Options object
     	 */
     def this(text: java.lang.String) = this()
-    def this(text: java.lang.String, options: fabricLib.fabricDashImplMod.ITextOptions) = this()
+    def this(text: java.lang.String, options: fabricLib.fabricDashImplMod.TextOptions) = this()
   }
   
   @js.native
   class Textbox protected ()
     extends fabricLib.fabricDashImplMod.Textbox {
     /**
-      * Constructor
-      * @param text Text string
-      * @param [options] Options object
-      */
+    	 * Constructor
+    	 * @param text Text string
+    	 * @param [options] Options object
+    	 */
     def this(text: java.lang.String) = this()
-    def this(text: java.lang.String, options: fabricLib.fabricDashImplMod.IITextOptions) = this()
+    def this(text: java.lang.String, options: fabricLib.fabricDashImplMod.ITextboxOptions) = this()
   }
   
   @js.native
@@ -356,10 +356,7 @@ object fabricNs extends js.Object {
     	 * @param object Object to create a group from
     	 * @param [callback] Callback to invoke when an ActiveSelection instance is created
     	 */
-    def fromObject(
-      `object`: fabricLib.fabricDashImplMod.Group,
-      callback: js.Function1[/* activeSelection */ this.type, scala.Unit]
-    ): scala.Unit = js.native
+    def fromObject(`object`: js.Any, callback: js.Function): scala.Unit = js.native
   }
   
   /* static members */
@@ -479,6 +476,31 @@ object fabricNs extends js.Object {
   
   /* static members */
   @js.native
+  object Gradient extends js.Object {
+    /**
+    	 * Returns {@link fabric.Gradient} instance from its object representation
+    	 * @static
+    	 * @memberOf fabric.Gradient
+    	 * @param {Object} obj
+    	 * @param {Object} [options] Options object
+    	 */
+    def forObject(obj: js.Any): fabricLib.fabricDashImplMod.Gradient = js.native
+    def forObject(obj: js.Any, options: fabricLib.fabricDashImplMod.IGradientOptions): fabricLib.fabricDashImplMod.Gradient = js.native
+    /**
+    	 * Returns {@link fabric.Gradient} instance from an SVG element
+    	 * @static
+    	 * @memberOf fabric.Gradient
+    	 * @param {SVGGradientElement} el SVG gradient element
+    	 * @param {fabric.Object} instance
+    	 * @return {fabric.Gradient} Gradient instance
+    	 * @see http://www.w3.org/TR/SVG/pservers.html#LinearGradientElement
+    	 * @see http://www.w3.org/TR/SVG/pservers.html#RadialGradientElement
+    	 */
+    def fromElement(el: stdLib.SVGGradientElement, instance: fabricLib.fabricDashImplMod.Object): fabricLib.fabricDashImplMod.Gradient = js.native
+  }
+  
+  /* static members */
+  @js.native
   object Group extends js.Object {
     /**
     	 * Returns {@link fabric.Group} instance from an object representation
@@ -493,14 +515,19 @@ object fabricNs extends js.Object {
   object IText extends js.Object {
     /**
     	 * Returns fabric.IText instance from an object representation
-    	 * @param object Object to create an instance from
+    	 * @static
+    	 * @memberOf fabric.IText
+    	 * @param {Object} object Object to create an instance from
+    	 * @param {function} [callback] invoked with new instance as argument
     	 */
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.IText = js.native
+    def fromObject(`object`: js.Any, callback: js.Function): fabricLib.fabricDashImplMod.IText = js.native
   }
   
   /* static members */
   @js.native
   object Image extends js.Object {
+    var ATTRIBUTE_NAMES: js.Array[java.lang.String] = js.native
     /**
     	 * Default CSS class name for canvas
     	 */
@@ -512,18 +539,12 @@ object fabricNs extends js.Object {
     	 * @param callback Callback to execute when fabric.Image object is created
     	 * @param [options] Options object
     	 */
-    def fromElement(element: stdLib.SVGElement, callback: js.Function1[/* image */ this.type, scala.Unit]): scala.Unit = js.native
+    def fromElement(element: stdLib.SVGElement, callback: js.Function): fabricLib.fabricDashImplMod.Image = js.native
     def fromElement(
       element: stdLib.SVGElement,
-      callback: js.Function1[/* image */ this.type, scala.Unit],
+      callback: js.Function,
       options: fabricLib.fabricDashImplMod.IImageOptions
-    ): scala.Unit = js.native
-    /**
-    	 * Creates an instance of fabric.Image from its object representation
-    	 * @param object Object to create an instance from
-    	 * @param [callback] Callback to invoke when an image instance is created
-    	 */
-    def fromObject(`object`: js.Any, callback: js.Function1[/* image */ this.type, scala.Unit]): scala.Unit = js.native
+    ): fabricLib.fabricDashImplMod.Image = js.native
     /**
     	 * Creates an instance of fabric.Image from an URL string
     	 * @param url URL to create an image from
@@ -578,11 +599,19 @@ object fabricNs extends js.Object {
     var ATTRIBUTE_NAMES: js.Array[java.lang.String] = js.native
     /**
     	 * Returns fabric.Line instance from an SVG element
-    	 * @param element Element to parse
-    	 * @param [options] Options object
+    	 * @static
+    	 * @memberOf fabric.Line
+    	 * @param {SVGElement} element Element to parse
+    	 * @param {Object} [options] Options object
+    	 * @param {Function} [callback] callback function invoked after parsing
     	 */
     def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Line = js.native
-    def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.ILineOptions): fabricLib.fabricDashImplMod.Line = js.native
+    def fromElement(element: stdLib.SVGElement, callback: js.Function): fabricLib.fabricDashImplMod.Line = js.native
+    def fromElement(
+      element: stdLib.SVGElement,
+      callback: js.Function,
+      options: fabricLib.fabricDashImplMod.ILineOptions
+    ): fabricLib.fabricDashImplMod.Line = js.native
     /**
     	 * Returns fabric.Line instance from an object representation
     	 * @param object Object to create an instance from
@@ -594,50 +623,38 @@ object fabricNs extends js.Object {
   @js.native
   object Path extends js.Object {
     /**
+    	 * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
+    	 */
+    var ATTRIBUTE_NAMES: js.Array[java.lang.String] = js.native
+    /**
     	 * Creates an instance of fabric.Path from an SVG <path> element
     	 * @param element to parse
     	 * @param callback Callback to invoke when an fabric.Path instance is created
     	 * @param [options] Options object
     	 */
-    def fromElement(element: stdLib.SVGElement, callback: js.Function1[/* path */ this.type, _]): scala.Unit = js.native
+    def fromElement(element: stdLib.SVGElement, callback: js.Function): fabricLib.fabricDashImplMod.Path = js.native
     def fromElement(
       element: stdLib.SVGElement,
-      callback: js.Function1[/* path */ this.type, _],
+      callback: js.Function,
       options: fabricLib.fabricDashImplMod.IPathOptions
-    ): scala.Unit = js.native
+    ): fabricLib.fabricDashImplMod.Path = js.native
     /**
     	 * Creates an instance of fabric.Path from an object
     	 * @param callback Callback to invoke when an fabric.Path instance is created
     	 */
-    def fromObject(`object`: js.Any, callback: js.Function1[/* path */ this.type, _]): scala.Unit = js.native
-  }
-  
-  /* static members */
-  @js.native
-  object PathGroup extends js.Object {
-    def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.PathGroup = js.native
-    /**
-    	 * Creates fabric.PathGroup instance from an object representation
-    	 * @param object Object to create an instance from
-    	 * @param callback Callback to invoke when an fabric.PathGroup instance is created
-    	 */
-    def fromObject(`object`: js.Any, callback: js.Function1[/* group */ this.type, _]): scala.Unit = js.native
+    def fromObject(`object`: js.Any, callback: js.Function): fabricLib.fabricDashImplMod.Path = js.native
   }
   
   /* static members */
   @js.native
   object Polygon extends js.Object {
     /**
-    	 * List of attribute names to account for when parsing SVG element (used by `fabric.Polygon.fromElement`)
-    	 */
-    var ATTRIBUTE_NAMES: js.Array[java.lang.String] = js.native
-    /**
     	 * Returns Polygon instance from an SVG element
     	 * @param element Element to parse
     	 * @param [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Polygon = js.native
-    def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.IPolygonOptions): fabricLib.fabricDashImplMod.Polygon = js.native
+    def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.IPolylineOptions): fabricLib.fabricDashImplMod.Polygon = js.native
     /**
     	 * Returns fabric.Polygon instance from an object representation
     	 * @param object Object to create an instance from
@@ -690,26 +707,24 @@ object fabricNs extends js.Object {
   /* static members */
   @js.native
   object Shadow extends js.Object {
+    /**
+    	 * Regex matching shadow offsetX, offsetY and blur (ex: "2px 2px 10px rgba(0,0,0,0.2)", "rgb(0,255,0) 2px 2px")
+    	 * @static
+    	 * @field
+    	 * @memberOf fabric.Shadow
+    	 */
     var reOffsetsAndBlur: stdLib.RegExp = js.native
   }
   
   /* static members */
   @js.native
   object StaticCanvas extends js.Object {
-    var EMPTY_JSON: java.lang.String = js.native
     /**
-    	 * Provides a way to check support of some of the canvas methods
-    	 * (either those of HTMLCanvasElement itself, or rendering context)
-    	 * @param methodName Method to check support for; Could be one of "getImageData", "toDataURL", "toDataURLWithQuality" or "setLineDash"
+    	 * @static
+    	 * @type String
+    	 * @default
     	 */
-    @JSName("supports")
-    def supports_getImageData(methodName: fabricLib.fabricLibStrings.getImageData): scala.Boolean = js.native
-    @JSName("supports")
-    def supports_setLineDash(methodName: fabricLib.fabricLibStrings.setLineDash): scala.Boolean = js.native
-    @JSName("supports")
-    def supports_toDataURL(methodName: fabricLib.fabricLibStrings.toDataURL): scala.Boolean = js.native
-    @JSName("supports")
-    def supports_toDataURLWithQuality(methodName: fabricLib.fabricLibStrings.toDataURLWithQuality): scala.Boolean = js.native
+    var EMPTY_JSON: java.lang.String = js.native
     /**
     	 * Returns JSON representation of canvas
     	 * @param [propertiesToInclude] Any properties that you might want to additionally include in the output
@@ -721,26 +736,45 @@ object fabricNs extends js.Object {
   /* static members */
   @js.native
   object Text extends js.Object {
-    /**
-    	 * List of attribute names to account for when parsing SVG element (used by `fabric.Text.fromElement`)
-    	 */
-    var ATTRIBUTE_NAMES: js.Array[java.lang.String] = js.native
-    /**
-    	 * Default SVG font size
-    	 */
     var DEFAULT_SVG_FONT_SIZE: scala.Double = js.native
     /**
     	 * Returns fabric.Text instance from an SVG element (<b>not yet implemented</b>)
-    	 * @param element Element to parse
-    	 * @param [options] Options object
+    	 * @static
+    	 * @memberOf fabric.Text
+    	 * @param {SVGElement} element Element to parse
+    	 * @param {Function} callback callback function invoked after parsing
+    	 * @param {Object} [options] Options object
     	 */
     def fromElement(element: stdLib.SVGElement): fabricLib.fabricDashImplMod.Text = js.native
-    def fromElement(element: stdLib.SVGElement, options: fabricLib.fabricDashImplMod.ITextOptions): fabricLib.fabricDashImplMod.Text = js.native
+    def fromElement(element: stdLib.SVGElement, callback: js.Function): fabricLib.fabricDashImplMod.Text = js.native
+    def fromElement(
+      element: stdLib.SVGElement,
+      callback: js.Function,
+      options: fabricLib.fabricDashImplMod.TextOptions
+    ): fabricLib.fabricDashImplMod.Text = js.native
     /**
     	 * Returns fabric.Text instance from an object representation
-    	 * @param object Object to create an instance from
+    	 * @static
+    	 * @memberOf fabric.Text
+    	 * @param {Object} object Object to create an instance from
+    	 * @param {Function} [callback] Callback to invoke when an fabric.Text instance is created
     	 */
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Text = js.native
+    def fromObject(`object`: js.Any, callback: js.Function): fabricLib.fabricDashImplMod.Text = js.native
+  }
+  
+  /* static members */
+  @js.native
+  object Textbox extends js.Object {
+    /**
+    	 * Returns fabric.Textbox instance from an object representation
+    	 * @static
+    	 * @memberOf fabric.Textbox
+    	 * @param {Object} object Object to create an instance from
+    	 * @param {Function} [callback] Callback to invoke when an fabric.Textbox instance is created
+    	 */
+    def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Textbox = js.native
+    def fromObject(`object`: js.Any, callback: js.Function): fabricLib.fabricDashImplMod.Textbox = js.native
   }
   
   /* static members */

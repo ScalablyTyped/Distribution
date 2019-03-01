@@ -13,3 +13,22 @@ trait InputRow extends js.Object {
   var noparse: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InputRow {
+  @scala.inline
+  def apply(
+    expose: java.lang.String,
+    file: java.lang.String,
+    id: java.lang.String,
+    entry: js.UndefOr[scala.Boolean] = js.undefined,
+    noparse: js.UndefOr[scala.Boolean] = js.undefined
+  ): InputRow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expose")(expose)
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(entry)) __obj.updateDynamic("entry")(entry)
+    if (!js.isUndefined(noparse)) __obj.updateDynamic("noparse")(noparse)
+    __obj.asInstanceOf[InputRow]
+  }
+}
+

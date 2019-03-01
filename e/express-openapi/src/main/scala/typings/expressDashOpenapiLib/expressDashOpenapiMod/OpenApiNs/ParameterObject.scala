@@ -12,3 +12,20 @@ trait ParameterObject extends js.Object {
   var required: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ParameterObject {
+  @scala.inline
+  def apply(
+    in: java.lang.String,
+    name: java.lang.String,
+    description: java.lang.String = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined
+  ): ParameterObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("in")(in)
+    __obj.updateDynamic("name")(name)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    __obj.asInstanceOf[ParameterObject]
+  }
+}
+

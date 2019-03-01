@@ -11,3 +11,14 @@ trait FieldNamesType extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FieldNamesType {
+  @scala.inline
+  def apply(children: java.lang.String = null, label: java.lang.String = null, value: java.lang.String = null): FieldNamesType = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[FieldNamesType]
+  }
+}
+

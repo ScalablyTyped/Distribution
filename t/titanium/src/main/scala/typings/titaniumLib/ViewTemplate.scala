@@ -31,3 +31,21 @@ trait ViewTemplate extends js.Object {
   var `type`: java.lang.String
 }
 
+object ViewTemplate {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    bindId: java.lang.String = null,
+    childTemplates: js.Array[ViewTemplate] = null,
+    events: js.Any = null,
+    properties: js.Any = null
+  ): ViewTemplate = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (bindId != null) __obj.updateDynamic("bindId")(bindId)
+    if (childTemplates != null) __obj.updateDynamic("childTemplates")(childTemplates)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[ViewTemplate]
+  }
+}
+

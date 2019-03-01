@@ -35,3 +35,36 @@ trait IColumnInfo extends js.Object {
   var width: scala.Double
 }
 
+object IColumnInfo {
+  @scala.inline
+  def apply(
+    columnKey: java.lang.String,
+    fieldKey: java.lang.String,
+    fieldKeys: js.Array[java.lang.String],
+    name: java.lang.String,
+    width: scala.Double,
+    imgSrc: java.lang.String = null,
+    isAutoFilterable: js.UndefOr[scala.Boolean] = js.undefined,
+    isFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    isHidable: js.UndefOr[scala.Boolean] = js.undefined,
+    isResizable: js.UndefOr[scala.Boolean] = js.undefined,
+    isSortable: js.UndefOr[scala.Boolean] = js.undefined,
+    isVisible: js.UndefOr[scala.Boolean] = js.undefined
+  ): IColumnInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnKey")(columnKey)
+    __obj.updateDynamic("fieldKey")(fieldKey)
+    __obj.updateDynamic("fieldKeys")(fieldKeys)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("width")(width)
+    if (imgSrc != null) __obj.updateDynamic("imgSrc")(imgSrc)
+    if (!js.isUndefined(isAutoFilterable)) __obj.updateDynamic("isAutoFilterable")(isAutoFilterable)
+    if (!js.isUndefined(isFooter)) __obj.updateDynamic("isFooter")(isFooter)
+    if (!js.isUndefined(isHidable)) __obj.updateDynamic("isHidable")(isHidable)
+    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable)
+    if (!js.isUndefined(isSortable)) __obj.updateDynamic("isSortable")(isSortable)
+    if (!js.isUndefined(isVisible)) __obj.updateDynamic("isVisible")(isVisible)
+    __obj.asInstanceOf[IColumnInfo]
+  }
+}
+

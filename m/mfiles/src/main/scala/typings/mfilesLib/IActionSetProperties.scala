@@ -10,3 +10,13 @@ trait IActionSetProperties extends js.Object {
   def Clone(): IActionSetProperties
 }
 
+object IActionSetProperties {
+  @scala.inline
+  def apply(Clone: js.Function0[IActionSetProperties], Properties: IDefaultProperties): IActionSetProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Properties")(Properties)
+    __obj.asInstanceOf[IActionSetProperties]
+  }
+}
+

@@ -59,3 +59,36 @@ trait CountUpOptions extends js.Object {
   var useGrouping: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CountUpOptions {
+  @scala.inline
+  def apply(
+    decimal: java.lang.String = null,
+    easingFn: js.Function4[
+      /* t */ scala.Double, 
+      /* b */ scala.Double, 
+      /* c */ scala.Double, 
+      /* d */ scala.Double, 
+      scala.Double
+    ] = null,
+    formattingFn: js.Function1[/* num */ scala.Double, java.lang.String] = null,
+    numerals: js.Array[_] = null,
+    prefix: java.lang.String = null,
+    separator: java.lang.String = null,
+    suffix: java.lang.String = null,
+    useEasing: js.UndefOr[scala.Boolean] = js.undefined,
+    useGrouping: js.UndefOr[scala.Boolean] = js.undefined
+  ): CountUpOptions = {
+    val __obj = js.Dynamic.literal()
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
+    if (easingFn != null) __obj.updateDynamic("easingFn")(easingFn)
+    if (formattingFn != null) __obj.updateDynamic("formattingFn")(formattingFn)
+    if (numerals != null) __obj.updateDynamic("numerals")(numerals)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    if (!js.isUndefined(useEasing)) __obj.updateDynamic("useEasing")(useEasing)
+    if (!js.isUndefined(useGrouping)) __obj.updateDynamic("useGrouping")(useGrouping)
+    __obj.asInstanceOf[CountUpOptions]
+  }
+}
+

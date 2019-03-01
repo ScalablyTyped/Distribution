@@ -35,3 +35,30 @@ trait Item extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Item {
+  @scala.inline
+  def apply(
+    badge: ItemsBadge = null,
+    click: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    imageUrl: java.lang.String = null,
+    items: js.Array[_] = null,
+    prependTo: java.lang.String = null,
+    sliderSettings: ItemsSliderSettings = null,
+    text: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): Item = {
+    val __obj = js.Dynamic.literal()
+    if (badge != null) __obj.updateDynamic("badge")(badge)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (prependTo != null) __obj.updateDynamic("prependTo")(prependTo)
+    if (sliderSettings != null) __obj.updateDynamic("sliderSettings")(sliderSettings)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Item]
+  }
+}
+

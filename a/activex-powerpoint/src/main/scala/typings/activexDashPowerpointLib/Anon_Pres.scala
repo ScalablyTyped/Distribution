@@ -9,3 +9,12 @@ trait Anon_Pres extends js.Object {
   val Pres: activexDashPowerpointLib.PowerPointNs.Presentation
 }
 
+object Anon_Pres {
+  @scala.inline
+  def apply(Pres: activexDashPowerpointLib.PowerPointNs.Presentation): Anon_Pres = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Pres")(Pres)
+    __obj.asInstanceOf[Anon_Pres]
+  }
+}
+

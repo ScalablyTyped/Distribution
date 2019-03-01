@@ -66,3 +66,32 @@ trait DirectSettingsMixin extends js.Object {
   def suggestMode(m: java.lang.String): DirectSettingsMixin
 }
 
+object DirectSettingsMixin {
+  @scala.inline
+  def apply(
+    accuracy: js.Function1[scala.Double, DirectSettingsMixin],
+    maxEdits: js.Function1[scala.Double, DirectSettingsMixin],
+    maxInspections: js.Function1[scala.Double, DirectSettingsMixin],
+    maxTermFreq: js.Function1[scala.Double, DirectSettingsMixin],
+    minDocFreq: js.Function1[scala.Double, DirectSettingsMixin],
+    minWordLen: js.Function1[scala.Double, DirectSettingsMixin],
+    prefixLen: js.Function1[scala.Double, DirectSettingsMixin],
+    sort: js.Function1[java.lang.String, DirectSettingsMixin],
+    stringDistance: js.Function1[java.lang.String, DirectSettingsMixin],
+    suggestMode: js.Function1[java.lang.String, DirectSettingsMixin]
+  ): DirectSettingsMixin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accuracy")(accuracy)
+    __obj.updateDynamic("maxEdits")(maxEdits)
+    __obj.updateDynamic("maxInspections")(maxInspections)
+    __obj.updateDynamic("maxTermFreq")(maxTermFreq)
+    __obj.updateDynamic("minDocFreq")(minDocFreq)
+    __obj.updateDynamic("minWordLen")(minWordLen)
+    __obj.updateDynamic("prefixLen")(prefixLen)
+    __obj.updateDynamic("sort")(sort)
+    __obj.updateDynamic("stringDistance")(stringDistance)
+    __obj.updateDynamic("suggestMode")(suggestMode)
+    __obj.asInstanceOf[DirectSettingsMixin]
+  }
+}
+

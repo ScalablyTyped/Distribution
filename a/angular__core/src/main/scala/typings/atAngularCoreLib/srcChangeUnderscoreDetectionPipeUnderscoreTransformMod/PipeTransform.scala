@@ -9,3 +9,12 @@ trait PipeTransform extends js.Object {
   def transform(value: js.Any, args: js.Any*): js.Any
 }
 
+object PipeTransform {
+  @scala.inline
+  def apply(transform: js.Function2[js.Any, /* repeated */ js.Any, js.Any]): PipeTransform = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[PipeTransform]
+  }
+}
+

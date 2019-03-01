@@ -65,3 +65,28 @@ trait WorkbookLoadOptions extends js.Object {
   var tables: js.UndefOr[TableCollectionLoadOptions] = js.undefined
 }
 
+object WorkbookLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    application: ApplicationLoadOptions = null,
+    bindings: BindingCollectionLoadOptions = null,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    properties: DocumentPropertiesLoadOptions = null,
+    protection: WorkbookProtectionLoadOptions = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    tables: TableCollectionLoadOptions = null
+  ): WorkbookLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (application != null) __obj.updateDynamic("application")(application)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    __obj.asInstanceOf[WorkbookLoadOptions]
+  }
+}
+

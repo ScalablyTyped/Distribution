@@ -11,3 +11,18 @@ trait IValidator extends js.Object {
   def func(value: js.Any, baton: js.Any, callback: js.Function): scala.Unit
 }
 
+object IValidator {
+  @scala.inline
+  def apply(
+    func: js.Function3[js.Any, js.Any, js.Function, scala.Unit],
+    help: java.lang.String,
+    name: java.lang.String
+  ): IValidator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("func")(func)
+    __obj.updateDynamic("help")(help)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[IValidator]
+  }
+}
+

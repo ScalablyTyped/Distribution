@@ -135,3 +135,54 @@ trait PageSetup extends js.Object {
   var verticalDpi: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PageSetup {
+  @scala.inline
+  def apply(
+    blackAndWhite: js.UndefOr[scala.Boolean] = js.undefined,
+    cellComments: exceljsLib.exceljsLibStrings.atEnd | exceljsLib.exceljsLibStrings.asDisplayed | exceljsLib.exceljsLibStrings.None = null,
+    draft: js.UndefOr[scala.Boolean] = js.undefined,
+    errors: exceljsLib.exceljsLibStrings.dash | exceljsLib.exceljsLibStrings.blank | exceljsLib.exceljsLibStrings.NA | exceljsLib.exceljsLibStrings.displayed = null,
+    firstPageNumber: scala.Int | scala.Double = null,
+    fitToHeight: scala.Int | scala.Double = null,
+    fitToPage: js.UndefOr[scala.Boolean] = js.undefined,
+    fitToWidth: scala.Int | scala.Double = null,
+    horizontalCentered: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalDpi: scala.Int | scala.Double = null,
+    margins: Margins = null,
+    orientation: exceljsLib.exceljsLibStrings.portrait | exceljsLib.exceljsLibStrings.landscape = null,
+    pageOrder: exceljsLib.exceljsLibStrings.downThenOver | exceljsLib.exceljsLibStrings.overThenDown = null,
+    paperSize: PaperSize = null,
+    printArea: java.lang.String = null,
+    printTitlesRow: java.lang.String = null,
+    scale: scala.Int | scala.Double = null,
+    showGridLines: js.UndefOr[scala.Boolean] = js.undefined,
+    showRowColHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalCentered: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalDpi: scala.Int | scala.Double = null
+  ): PageSetup = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(blackAndWhite)) __obj.updateDynamic("blackAndWhite")(blackAndWhite)
+    if (cellComments != null) __obj.updateDynamic("cellComments")(cellComments.asInstanceOf[js.Any])
+    if (!js.isUndefined(draft)) __obj.updateDynamic("draft")(draft)
+    if (errors != null) __obj.updateDynamic("errors")(errors.asInstanceOf[js.Any])
+    if (firstPageNumber != null) __obj.updateDynamic("firstPageNumber")(firstPageNumber.asInstanceOf[js.Any])
+    if (fitToHeight != null) __obj.updateDynamic("fitToHeight")(fitToHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(fitToPage)) __obj.updateDynamic("fitToPage")(fitToPage)
+    if (fitToWidth != null) __obj.updateDynamic("fitToWidth")(fitToWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontalCentered)) __obj.updateDynamic("horizontalCentered")(horizontalCentered)
+    if (horizontalDpi != null) __obj.updateDynamic("horizontalDpi")(horizontalDpi.asInstanceOf[js.Any])
+    if (margins != null) __obj.updateDynamic("margins")(margins)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (pageOrder != null) __obj.updateDynamic("pageOrder")(pageOrder.asInstanceOf[js.Any])
+    if (paperSize != null) __obj.updateDynamic("paperSize")(paperSize)
+    if (printArea != null) __obj.updateDynamic("printArea")(printArea)
+    if (printTitlesRow != null) __obj.updateDynamic("printTitlesRow")(printTitlesRow)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(showGridLines)) __obj.updateDynamic("showGridLines")(showGridLines)
+    if (!js.isUndefined(showRowColHeaders)) __obj.updateDynamic("showRowColHeaders")(showRowColHeaders)
+    if (!js.isUndefined(verticalCentered)) __obj.updateDynamic("verticalCentered")(verticalCentered)
+    if (verticalDpi != null) __obj.updateDynamic("verticalDpi")(verticalDpi.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PageSetup]
+  }
+}
+

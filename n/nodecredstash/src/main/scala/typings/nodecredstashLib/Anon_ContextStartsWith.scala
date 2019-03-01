@@ -11,3 +11,18 @@ trait Anon_ContextStartsWith extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ContextStartsWith {
+  @scala.inline
+  def apply(
+    context: nodecredstashLib.nodecredstashMod.CredstashContext = null,
+    startsWith: java.lang.String = null,
+    version: scala.Int | scala.Double = null
+  ): Anon_ContextStartsWith = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (startsWith != null) __obj.updateDynamic("startsWith")(startsWith)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ContextStartsWith]
+  }
+}
+

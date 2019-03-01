@@ -16,3 +16,16 @@ trait WebAclAssociationState extends js.Object {
   val webAclId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object WebAclAssociationState {
+  @scala.inline
+  def apply(
+    resourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    webAclId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): WebAclAssociationState = {
+    val __obj = js.Dynamic.literal()
+    if (resourceArn != null) __obj.updateDynamic("resourceArn")(resourceArn.asInstanceOf[js.Any])
+    if (webAclId != null) __obj.updateDynamic("webAclId")(webAclId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebAclAssociationState]
+  }
+}
+

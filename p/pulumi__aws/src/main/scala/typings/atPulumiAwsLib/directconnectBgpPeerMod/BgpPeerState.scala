@@ -38,3 +38,26 @@ trait BgpPeerState extends js.Object {
   val virtualInterfaceId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object BgpPeerState {
+  @scala.inline
+  def apply(
+    addressFamily: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    amazonAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bgpAsn: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    bgpAuthKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    bgpStatus: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customerAddress: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    virtualInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): BgpPeerState = {
+    val __obj = js.Dynamic.literal()
+    if (addressFamily != null) __obj.updateDynamic("addressFamily")(addressFamily.asInstanceOf[js.Any])
+    if (amazonAddress != null) __obj.updateDynamic("amazonAddress")(amazonAddress.asInstanceOf[js.Any])
+    if (bgpAsn != null) __obj.updateDynamic("bgpAsn")(bgpAsn.asInstanceOf[js.Any])
+    if (bgpAuthKey != null) __obj.updateDynamic("bgpAuthKey")(bgpAuthKey.asInstanceOf[js.Any])
+    if (bgpStatus != null) __obj.updateDynamic("bgpStatus")(bgpStatus.asInstanceOf[js.Any])
+    if (customerAddress != null) __obj.updateDynamic("customerAddress")(customerAddress.asInstanceOf[js.Any])
+    if (virtualInterfaceId != null) __obj.updateDynamic("virtualInterfaceId")(virtualInterfaceId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BgpPeerState]
+  }
+}
+

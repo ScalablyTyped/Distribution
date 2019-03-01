@@ -16,3 +16,13 @@ trait Options extends js.Object {
   var context: js.UndefOr[hexoLib.hexoMod.Hexo] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(args: js.Array[_] = null, context: hexoLib.hexoMod.Hexo = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (context != null) __obj.updateDynamic("context")(context)
+    __obj.asInstanceOf[Options]
+  }
+}
+

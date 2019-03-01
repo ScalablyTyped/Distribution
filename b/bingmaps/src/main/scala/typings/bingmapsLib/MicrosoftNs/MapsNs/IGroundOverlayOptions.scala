@@ -20,3 +20,26 @@ trait IGroundOverlayOptions extends ICustomOverlayOptions {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGroundOverlayOptions {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String | Color = null,
+    beneathLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    bounds: LocationRect = null,
+    imageUrl: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    rotation: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGroundOverlayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (!js.isUndefined(beneathLabels)) __obj.updateDynamic("beneathLabels")(beneathLabels)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[IGroundOverlayOptions]
+  }
+}
+

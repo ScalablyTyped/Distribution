@@ -58,3 +58,28 @@ import scala.scalajs.js.annotation._
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Column {
+  @scala.inline
+  def apply[D](
+    accessor: Accessor[D] = null,
+    aggregate: Aggregator = null,
+    columns: js.Array[Column[D]] = null,
+    expander: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    maxWidth: scala.Int | scala.Double = null,
+    pivot: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): Column[D] = {
+    val __obj = js.Dynamic.literal()
+    if (accessor != null) __obj.updateDynamic("accessor")(accessor.asInstanceOf[js.Any])
+    if (aggregate != null) __obj.updateDynamic("aggregate")(aggregate)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (!js.isUndefined(expander)) __obj.updateDynamic("expander")(expander)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(pivot)) __obj.updateDynamic("pivot")(pivot)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Column[D]]
+  }
+}
+

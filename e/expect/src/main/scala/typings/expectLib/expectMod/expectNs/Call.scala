@@ -10,3 +10,13 @@ trait Call[T] extends js.Object {
   var context: T
 }
 
+object Call {
+  @scala.inline
+  def apply[T](arguments: js.Array[_], context: T): Call[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arguments")(arguments)
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Call[T]]
+  }
+}
+

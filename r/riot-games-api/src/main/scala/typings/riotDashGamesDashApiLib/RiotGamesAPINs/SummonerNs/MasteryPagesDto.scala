@@ -10,3 +10,13 @@ trait MasteryPagesDto extends js.Object {
   var summonerId: scala.Double
 }
 
+object MasteryPagesDto {
+  @scala.inline
+  def apply(pages: js.Array[MasteryPageDto], summonerId: scala.Double): MasteryPagesDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pages")(pages)
+    __obj.updateDynamic("summonerId")(summonerId)
+    __obj.asInstanceOf[MasteryPagesDto]
+  }
+}
+

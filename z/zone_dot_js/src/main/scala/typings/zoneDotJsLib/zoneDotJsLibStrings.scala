@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 object zoneDotJsLibStrings {
   @js.native
-  sealed trait canceling extends js.Object
+  sealed trait canceling extends TaskState
   
   @js.native
-  sealed trait eventTask extends js.Object
+  sealed trait eventTask extends TaskType
   
   @js.native
-  sealed trait macroTask extends js.Object
+  sealed trait macroTask extends TaskType
   
   @js.native
-  sealed trait microTask extends js.Object
+  sealed trait microTask extends TaskType
   
   @js.native
-  sealed trait notScheduled extends js.Object
+  sealed trait notScheduled extends TaskState
   
   @js.native
-  sealed trait running extends js.Object
+  sealed trait running extends TaskState
   
   @js.native
-  sealed trait scheduled extends js.Object
+  sealed trait scheduled extends TaskState
   
   @js.native
-  sealed trait scheduling extends js.Object
+  sealed trait scheduling extends TaskState
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown extends TaskState
   
   @scala.inline
   def canceling: canceling = "canceling".asInstanceOf[canceling]

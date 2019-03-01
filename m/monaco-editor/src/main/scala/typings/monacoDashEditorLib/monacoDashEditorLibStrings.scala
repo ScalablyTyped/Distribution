@@ -43,13 +43,15 @@ object monacoDashEditorLibStrings {
   sealed trait altKey extends js.Object
   
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends monacoDashEditorLib.monacoDashEditorMod.editorNs.EditorAutoClosingStrategy
   
   @js.native
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait beforeWhitespace extends js.Object
+  sealed trait beforeWhitespace
+    extends monacoDashEditorLib.monacoDashEditorMod.editorNs.EditorAutoClosingStrategy
   
   @js.native
   sealed trait bold extends js.Object
@@ -67,7 +69,8 @@ object monacoDashEditorLibStrings {
   sealed trait bounded extends js.Object
   
   @js.native
-  sealed trait brackets extends js.Object
+  sealed trait brackets
+    extends monacoDashEditorLib.monacoDashEditorMod.editorNs.EditorAutoSurroundStrategy
   
   @js.native
   sealed trait ctrlCmd extends js.Object
@@ -94,7 +97,8 @@ object monacoDashEditorLibStrings {
   sealed trait gutter extends js.Object
   
   @js.native
-  sealed trait `hc-black` extends js.Object
+  sealed trait `hc-black`
+    extends monacoDashEditorLib.monacoDashEditorMod.editorNs.BuiltinTheme
   
   @js.native
   sealed trait hidden extends js.Object
@@ -118,7 +122,9 @@ object monacoDashEditorLibStrings {
   sealed trait interval extends js.Object
   
   @js.native
-  sealed trait languageDefined extends js.Object
+  sealed trait languageDefined
+    extends monacoDashEditorLib.monacoDashEditorMod.editorNs.EditorAutoClosingStrategy
+       with monacoDashEditorLib.monacoDashEditorMod.editorNs.EditorAutoSurroundStrategy
   
   @js.native
   sealed trait left extends js.Object
@@ -136,7 +142,9 @@ object monacoDashEditorLibStrings {
   sealed trait mouseover extends js.Object
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait never
+    extends monacoDashEditorLib.monacoDashEditorMod.editorNs.EditorAutoClosingStrategy
+       with monacoDashEditorLib.monacoDashEditorMod.editorNs.EditorAutoSurroundStrategy
   
   @js.native
   sealed trait none extends js.Object
@@ -154,7 +162,8 @@ object monacoDashEditorLibStrings {
   sealed trait onlySnippets extends js.Object
   
   @js.native
-  sealed trait quotes extends js.Object
+  sealed trait quotes
+    extends monacoDashEditorLib.monacoDashEditorMod.editorNs.EditorAutoSurroundStrategy
   
   @js.native
   sealed trait recentlyUsed extends js.Object
@@ -178,10 +187,12 @@ object monacoDashEditorLibStrings {
   sealed trait visible extends js.Object
   
   @js.native
-  sealed trait vs extends js.Object
+  sealed trait vs
+    extends monacoDashEditorLib.monacoDashEditorMod.editorNs.BuiltinTheme
   
   @js.native
-  sealed trait `vs-dark` extends js.Object
+  sealed trait `vs-dark`
+    extends monacoDashEditorLib.monacoDashEditorMod.editorNs.BuiltinTheme
   
   @js.native
   sealed trait warning extends js.Object

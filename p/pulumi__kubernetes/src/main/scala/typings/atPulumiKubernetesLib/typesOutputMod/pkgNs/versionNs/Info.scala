@@ -20,3 +20,30 @@ trait Info extends js.Object {
   val platform: java.lang.String
 }
 
+object Info {
+  @scala.inline
+  def apply(
+    buildDate: java.lang.String,
+    compiler: java.lang.String,
+    gitCommit: java.lang.String,
+    gitTreeState: java.lang.String,
+    gitVersion: java.lang.String,
+    goVersion: java.lang.String,
+    major: java.lang.String,
+    minor: java.lang.String,
+    platform: java.lang.String
+  ): Info = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildDate")(buildDate)
+    __obj.updateDynamic("compiler")(compiler)
+    __obj.updateDynamic("gitCommit")(gitCommit)
+    __obj.updateDynamic("gitTreeState")(gitTreeState)
+    __obj.updateDynamic("gitVersion")(gitVersion)
+    __obj.updateDynamic("goVersion")(goVersion)
+    __obj.updateDynamic("major")(major)
+    __obj.updateDynamic("minor")(minor)
+    __obj.updateDynamic("platform")(platform)
+    __obj.asInstanceOf[Info]
+  }
+}
+

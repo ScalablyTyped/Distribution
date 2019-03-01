@@ -28,3 +28,25 @@ trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    caption: java.lang.String = null,
+    dimensions: js.Array[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeDimension] = null,
+    measuresDimension: IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimension = null,
+    name: java.lang.String = null
+  ): IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (measuresDimension != null) __obj.updateDynamic("measuresDimension")(measuresDimension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCube]
+  }
+}
+

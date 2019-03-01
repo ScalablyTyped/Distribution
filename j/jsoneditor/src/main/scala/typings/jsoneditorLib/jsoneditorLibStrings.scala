@@ -10,22 +10,27 @@ object jsoneditorLibStrings {
   sealed trait array extends js.Object
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait code
+    extends jsoneditorLib.jsoneditorMod.JSONEditorMode
   
   @js.native
-  sealed trait form extends js.Object
+  sealed trait form
+    extends jsoneditorLib.jsoneditorMod.JSONEditorMode
   
   @js.native
   sealed trait `object` extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends jsoneditorLib.jsoneditorMod.JSONEditorMode
   
   @js.native
-  sealed trait tree extends js.Object
+  sealed trait tree
+    extends jsoneditorLib.jsoneditorMod.JSONEditorMode
   
   @js.native
-  sealed trait view extends js.Object
+  sealed trait view
+    extends jsoneditorLib.jsoneditorMod.JSONEditorMode
   
   @scala.inline
   def array: array = "array".asInstanceOf[array]

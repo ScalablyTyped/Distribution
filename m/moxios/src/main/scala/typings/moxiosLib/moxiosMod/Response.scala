@@ -15,3 +15,26 @@ trait Response extends js.Object {
   var statusText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    config: axiosLib.axiosMod.AxiosRequestConfig,
+    headers: js.Any,
+    request: Request,
+    code: java.lang.String = null,
+    data: js.Any = null,
+    status: scala.Int | scala.Double = null,
+    statusText: java.lang.String = null
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("request")(request)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    __obj.asInstanceOf[Response]
+  }
+}
+

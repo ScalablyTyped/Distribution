@@ -55,3 +55,40 @@ trait ASPxClientHtmlEditorLinkDialog extends ASPxClientHtmlEditorDialogBase {
   def GetUrlTextBox(): ASPxClientTextBox
 }
 
+object ASPxClientHtmlEditorLinkDialog {
+  @scala.inline
+  def apply(
+    GetCancelButton: js.Function0[ASPxClientButton],
+    GetEmailTextBox: js.Function0[ASPxClientTextBox],
+    GetFileManager: js.Function0[ASPxClientFileManager],
+    GetFormLayout: js.Function0[ASPxClientFormLayout],
+    GetLinkTypeRadioButtonList: js.Function0[ASPxClientRadioButtonList],
+    GetOkButton: js.Function0[ASPxClientButton],
+    GetOpenInNewWindowCheckBox: js.Function0[ASPxClientCheckBox],
+    GetSelectDocumentPopupCancelButton: js.Function0[ASPxClientButton],
+    GetSelectDocumentPopupControl: js.Function0[ASPxClientPopupControl],
+    GetSelectDocumentPopupSelectButton: js.Function0[ASPxClientButton],
+    GetSubjectTextBox: js.Function0[ASPxClientTextBox],
+    GetTextTextBox: js.Function0[ASPxClientTextBox],
+    GetTooltipTextBox: js.Function0[ASPxClientTextBox],
+    GetUrlTextBox: js.Function0[ASPxClientTextBox]
+  ): ASPxClientHtmlEditorLinkDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetCancelButton")(GetCancelButton)
+    __obj.updateDynamic("GetEmailTextBox")(GetEmailTextBox)
+    __obj.updateDynamic("GetFileManager")(GetFileManager)
+    __obj.updateDynamic("GetFormLayout")(GetFormLayout)
+    __obj.updateDynamic("GetLinkTypeRadioButtonList")(GetLinkTypeRadioButtonList)
+    __obj.updateDynamic("GetOkButton")(GetOkButton)
+    __obj.updateDynamic("GetOpenInNewWindowCheckBox")(GetOpenInNewWindowCheckBox)
+    __obj.updateDynamic("GetSelectDocumentPopupCancelButton")(GetSelectDocumentPopupCancelButton)
+    __obj.updateDynamic("GetSelectDocumentPopupControl")(GetSelectDocumentPopupControl)
+    __obj.updateDynamic("GetSelectDocumentPopupSelectButton")(GetSelectDocumentPopupSelectButton)
+    __obj.updateDynamic("GetSubjectTextBox")(GetSubjectTextBox)
+    __obj.updateDynamic("GetTextTextBox")(GetTextTextBox)
+    __obj.updateDynamic("GetTooltipTextBox")(GetTooltipTextBox)
+    __obj.updateDynamic("GetUrlTextBox")(GetUrlTextBox)
+    __obj.asInstanceOf[ASPxClientHtmlEditorLinkDialog]
+  }
+}
+

@@ -15,3 +15,18 @@ trait UpdateOptions extends js.Object {
   var upsert: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UpdateOptions {
+  @scala.inline
+  def apply(
+    multi: js.UndefOr[scala.Boolean] = js.undefined,
+    returnUpdatedDocs: js.UndefOr[scala.Boolean] = js.undefined,
+    upsert: js.UndefOr[scala.Boolean] = js.undefined
+  ): UpdateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    if (!js.isUndefined(returnUpdatedDocs)) __obj.updateDynamic("returnUpdatedDocs")(returnUpdatedDocs)
+    if (!js.isUndefined(upsert)) __obj.updateDynamic("upsert")(upsert)
+    __obj.asInstanceOf[UpdateOptions]
+  }
+}
+

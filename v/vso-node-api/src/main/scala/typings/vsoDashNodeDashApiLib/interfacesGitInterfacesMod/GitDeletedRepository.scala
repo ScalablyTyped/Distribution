@@ -14,3 +14,24 @@ trait GitDeletedRepository extends js.Object {
   var project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference
 }
 
+object GitDeletedRepository {
+  @scala.inline
+  def apply(
+    createdDate: stdLib.Date,
+    deletedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    deletedDate: stdLib.Date,
+    id: java.lang.String,
+    name: java.lang.String,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference
+  ): GitDeletedRepository = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("deletedBy")(deletedBy)
+    __obj.updateDynamic("deletedDate")(deletedDate)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("project")(project)
+    __obj.asInstanceOf[GitDeletedRepository]
+  }
+}
+

@@ -42,3 +42,29 @@ trait IgSplitterPanel
   var size: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object IgSplitterPanel {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgSplitterPanel
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    max: java.lang.String | scala.Double = null,
+    min: java.lang.String | scala.Double = null,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    size: java.lang.String | scala.Double = null
+  ): IgSplitterPanel = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgSplitterPanel]
+  }
+}
+

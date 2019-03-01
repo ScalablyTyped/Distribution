@@ -10,6 +10,7 @@
 //                 Santiago Vilar <https://github.com/smvilar>
 //                 Ulf Schwekendiek <https://github.com/sulf>
 //                 Pablo Varela <https://github.com/pablopunk>
+//                 Claudio Procida <https://github.com/claudiopro>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

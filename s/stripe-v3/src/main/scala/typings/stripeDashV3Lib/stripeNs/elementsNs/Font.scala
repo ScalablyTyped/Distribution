@@ -15,3 +15,26 @@ trait Font extends js.Object {
   var weight: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Font {
+  @scala.inline
+  def apply(
+    cssSrc: java.lang.String = null,
+    display: java.lang.String = null,
+    family: java.lang.String = null,
+    src: java.lang.String = null,
+    style: java.lang.String = null,
+    unicodeRange: java.lang.String = null,
+    weight: java.lang.String = null
+  ): Font = {
+    val __obj = js.Dynamic.literal()
+    if (cssSrc != null) __obj.updateDynamic("cssSrc")(cssSrc)
+    if (display != null) __obj.updateDynamic("display")(display)
+    if (family != null) __obj.updateDynamic("family")(family)
+    if (src != null) __obj.updateDynamic("src")(src)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (unicodeRange != null) __obj.updateDynamic("unicodeRange")(unicodeRange)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[Font]
+  }
+}
+

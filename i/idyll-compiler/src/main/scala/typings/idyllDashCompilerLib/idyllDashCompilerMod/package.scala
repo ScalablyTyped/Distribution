@@ -15,7 +15,6 @@ package object idyllDashCompilerMod {
   ])
   type PropData = java.lang.String | scala.Double | scala.Boolean
   type PropKey = java.lang.String
-  type PropType = idyllDashCompilerLib.idyllDashCompilerLibStrings.variable | idyllDashCompilerLib.idyllDashCompilerLibStrings.value | idyllDashCompilerLib.idyllDashCompilerLibStrings.expression
   type PropValue = js.Tuple2[PropType, PropData]
   type Property = js.Tuple2[PropKey, PropValue]
 }

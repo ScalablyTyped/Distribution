@@ -20,3 +20,36 @@ trait ServerOptions extends js.Object {
   var uuid: js.UndefOr[nodeDashUuidLib.nodeDashUuidMod.UUIDOptions] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    corsAllowOrigins: java.lang.String | scala.Boolean,
+    delegate: Delegate,
+    expressApp: expressLib.expressMod.eNs.Express,
+    manufacturer: java.lang.String,
+    modelName: java.lang.String,
+    port: scala.Double,
+    prefix: java.lang.String,
+    extraHeaders: js.Object = null,
+    friendlyName: java.lang.String = null,
+    host: java.lang.String = null,
+    maxContentLength: scala.Int | scala.Double = null,
+    uuid: nodeDashUuidLib.nodeDashUuidMod.UUIDOptions = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("corsAllowOrigins")(corsAllowOrigins.asInstanceOf[js.Any])
+    __obj.updateDynamic("delegate")(delegate)
+    __obj.updateDynamic("expressApp")(expressApp)
+    __obj.updateDynamic("manufacturer")(manufacturer)
+    __obj.updateDynamic("modelName")(modelName)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("prefix")(prefix)
+    if (extraHeaders != null) __obj.updateDynamic("extraHeaders")(extraHeaders)
+    if (friendlyName != null) __obj.updateDynamic("friendlyName")(friendlyName)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (maxContentLength != null) __obj.updateDynamic("maxContentLength")(maxContentLength.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid)
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

@@ -12,3 +12,13 @@ trait SourceLocation extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SourceLocation {
+  @scala.inline
+  def apply(line: scala.Int | scala.Double = null, path: java.lang.String = null): SourceLocation = {
+    val __obj = js.Dynamic.literal()
+    if (line != null) __obj.updateDynamic("line")(line.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[SourceLocation]
+  }
+}
+

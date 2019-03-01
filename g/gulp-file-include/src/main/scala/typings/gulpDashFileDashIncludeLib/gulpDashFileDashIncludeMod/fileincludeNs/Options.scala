@@ -35,3 +35,24 @@ trait Options extends js.Object {
   var suffix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    basepath: gulpDashFileDashIncludeLib.gulpDashFileDashIncludeLibStrings.`@file` | gulpDashFileDashIncludeLib.gulpDashFileDashIncludeLibStrings.`@root` | java.lang.String = null,
+    context: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    filters: org.scalablytyped.runtime.StringDictionary[js.Function1[/* arg */ js.Any, java.lang.String]] = null,
+    indent: js.UndefOr[scala.Boolean] = js.undefined,
+    prefix: java.lang.String = null,
+    suffix: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (basepath != null) __obj.updateDynamic("basepath")(basepath.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(indent)) __obj.updateDynamic("indent")(indent)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (suffix != null) __obj.updateDynamic("suffix")(suffix)
+    __obj.asInstanceOf[Options]
+  }
+}
+

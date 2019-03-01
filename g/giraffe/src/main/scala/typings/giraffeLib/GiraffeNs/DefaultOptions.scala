@@ -12,3 +12,20 @@ trait DefaultOptions extends js.Object {
   var saveScrollPosition: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DefaultOptions {
+  @scala.inline
+  def apply(
+    alwaysRender: js.UndefOr[scala.Boolean] = js.undefined,
+    disposeOnDetach: js.UndefOr[scala.Boolean] = js.undefined,
+    documentTitle: java.lang.String = null,
+    saveScrollPosition: js.UndefOr[scala.Boolean] = js.undefined
+  ): DefaultOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alwaysRender)) __obj.updateDynamic("alwaysRender")(alwaysRender)
+    if (!js.isUndefined(disposeOnDetach)) __obj.updateDynamic("disposeOnDetach")(disposeOnDetach)
+    if (documentTitle != null) __obj.updateDynamic("documentTitle")(documentTitle)
+    if (!js.isUndefined(saveScrollPosition)) __obj.updateDynamic("saveScrollPosition")(saveScrollPosition)
+    __obj.asInstanceOf[DefaultOptions]
+  }
+}
+

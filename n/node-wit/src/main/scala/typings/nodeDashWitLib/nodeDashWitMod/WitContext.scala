@@ -13,3 +13,22 @@ trait WitContext extends js.Object {
   var timezone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WitContext {
+  @scala.inline
+  def apply(
+    entities: js.Array[WitEntity] = null,
+    location: java.lang.String = null,
+    reference_time: java.lang.String = null,
+    state: js.Array[java.lang.String] = null,
+    timezone: java.lang.String = null
+  ): WitContext = {
+    val __obj = js.Dynamic.literal()
+    if (entities != null) __obj.updateDynamic("entities")(entities)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (reference_time != null) __obj.updateDynamic("reference_time")(reference_time)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    __obj.asInstanceOf[WitContext]
+  }
+}
+

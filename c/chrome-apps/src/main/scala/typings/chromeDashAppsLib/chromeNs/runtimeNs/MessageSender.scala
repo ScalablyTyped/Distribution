@@ -29,3 +29,20 @@ trait MessageSender extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MessageSender {
+  @scala.inline
+  def apply(
+    frameId: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    id: java.lang.String = null,
+    tlsChannelId: java.lang.String = null,
+    url: java.lang.String = null
+  ): MessageSender = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(frameId)) __obj.updateDynamic("frameId")(frameId)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (tlsChannelId != null) __obj.updateDynamic("tlsChannelId")(tlsChannelId)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[MessageSender]
+  }
+}
+

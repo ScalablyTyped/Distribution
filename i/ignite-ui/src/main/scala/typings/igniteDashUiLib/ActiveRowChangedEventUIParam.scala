@@ -16,3 +16,13 @@ trait ActiveRowChangedEventUIParam extends js.Object {
   var row: js.UndefOr[js.Any] = js.undefined
 }
 
+object ActiveRowChangedEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null, row: js.Any = null): ActiveRowChangedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (row != null) __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[ActiveRowChangedEventUIParam]
+  }
+}
+

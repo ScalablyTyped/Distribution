@@ -40,3 +40,52 @@ trait BoundingBox extends js.Object {
   def width(): scala.Double
 }
 
+object BoundingBox {
+  @scala.inline
+  def apply(
+    addBezierCurve: js.Function8[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    addPoint: js.Function2[scala.Double, scala.Double, scala.Unit],
+    addQuadraticCurve: js.Function6[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ],
+    addX: js.Function1[scala.Double, scala.Unit],
+    addY: js.Function1[scala.Double, scala.Unit],
+    height: js.Function0[scala.Double],
+    width: js.Function0[scala.Double],
+    x1: scala.Double,
+    x2: scala.Double,
+    y1: scala.Double,
+    y2: scala.Double
+  ): BoundingBox = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addBezierCurve")(addBezierCurve)
+    __obj.updateDynamic("addPoint")(addPoint)
+    __obj.updateDynamic("addQuadraticCurve")(addQuadraticCurve)
+    __obj.updateDynamic("addX")(addX)
+    __obj.updateDynamic("addY")(addY)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("x1")(x1)
+    __obj.updateDynamic("x2")(x2)
+    __obj.updateDynamic("y1")(y1)
+    __obj.updateDynamic("y2")(y2)
+    __obj.asInstanceOf[BoundingBox]
+  }
+}
+

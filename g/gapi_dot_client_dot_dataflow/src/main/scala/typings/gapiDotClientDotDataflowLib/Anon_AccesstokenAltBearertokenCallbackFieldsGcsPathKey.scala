@@ -50,3 +50,46 @@ trait Anon_AccesstokenAltBearertokenCallbackFieldsGcsPathKey extends js.Object {
   var validateOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_AccesstokenAltBearertokenCallbackFieldsGcsPathKey {
+  @scala.inline
+  def apply(
+    location: java.lang.String,
+    projectId: java.lang.String,
+    `$.xgafv`: java.lang.String = null,
+    access_token: java.lang.String = null,
+    alt: java.lang.String = null,
+    bearer_token: java.lang.String = null,
+    callback: java.lang.String = null,
+    fields: java.lang.String = null,
+    gcsPath: java.lang.String = null,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    pp: js.UndefOr[scala.Boolean] = js.undefined,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    uploadType: java.lang.String = null,
+    upload_protocol: java.lang.String = null,
+    validateOnly: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AccesstokenAltBearertokenCallbackFieldsGcsPathKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("projectId")(projectId)
+    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (bearer_token != null) __obj.updateDynamic("bearer_token")(bearer_token)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (gcsPath != null) __obj.updateDynamic("gcsPath")(gcsPath)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType)
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol)
+    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly)
+    __obj.asInstanceOf[Anon_AccesstokenAltBearertokenCallbackFieldsGcsPathKey]
+  }
+}
+

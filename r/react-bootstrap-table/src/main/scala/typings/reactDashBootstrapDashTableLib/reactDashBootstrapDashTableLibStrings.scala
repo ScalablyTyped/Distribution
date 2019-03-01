@@ -7,139 +7,186 @@ import scala.scalajs.js.annotation._
 
 object reactDashBootstrapDashTableLibStrings {
   @js.native
-  sealed trait `!=` extends js.Object
+  sealed trait `!=`
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapVersion
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.BootstrapVersion
   
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait `=`
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterComparator
   
   @js.native
-  sealed trait ArrayFilter extends js.Object
+  sealed trait ArrayFilter
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterType
   
   @js.native
-  sealed trait Bottom extends js.Object
+  sealed trait Bottom
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ScrollPosition
   
   @js.native
-  sealed trait CustomFilter extends js.Object
+  sealed trait CustomFilter
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterType
   
   @js.native
-  sealed trait DateFilter extends js.Object
+  sealed trait DateFilter
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterType
   
   @js.native
-  sealed trait NumberFilter extends js.Object
+  sealed trait NumberFilter
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterType
   
   @js.native
-  sealed trait RegexFilter extends js.Object
+  sealed trait RegexFilter
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterType
   
   @js.native
-  sealed trait SelectFilter extends js.Object
+  sealed trait SelectFilter
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterType
   
   @js.native
-  sealed trait TextFilter extends js.Object
+  sealed trait TextFilter
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterType
   
   @js.native
-  sealed trait Top extends js.Object
+  sealed trait Top
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ScrollPosition
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SortOrder
   
   @js.native
-  sealed trait both extends js.Object
+  sealed trait both
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.PaginationPostion
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.PaginationPostion
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.DataAlignType
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait checkbox
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditCellType
+       with reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SelectRowMode
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.CellEditClickMode
   
   @js.native
-  sealed trait column extends js.Object
+  sealed trait column
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ExpandBy
   
   @js.native
-  sealed trait datetime extends js.Object
+  sealed trait datetime
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditCellType
   
   @js.native
-  sealed trait dbclick extends js.Object
+  sealed trait dbclick
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.CellEditClickMode
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SortOrder
   
   @js.native
-  sealed trait dropdown extends js.Object
+  sealed trait dropdown
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.DropDirection
   
   @js.native
-  sealed trait dropup extends js.Object
+  sealed trait dropup
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.DropDirection
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.DataAlignType
   
   @js.native
-  sealed trait eq extends js.Object
+  sealed trait eq
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterCondition
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditValidatorType
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.DataAlignType
   
   @js.native
-  sealed trait like extends js.Object
+  sealed trait like
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.FilterCondition
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.CellEditClickMode
+       with reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SelectRowMode
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.CSVFieldType
   
   @js.native
-  sealed trait radio extends js.Object
+  sealed trait radio
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.SelectRowMode
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.DataAlignType
   
   @js.native
-  sealed trait row extends js.Object
+  sealed trait row
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.ExpandBy
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait select
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditCellType
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.DataAlignType
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.CSVFieldType
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditValidatorType
   
   @js.native
-  sealed trait textarea extends js.Object
+  sealed trait textarea
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.EditCellType
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashBootstrapDashTableLib.reactDashBootstrapDashTableMod.PaginationPostion
   
   @scala.inline
   def `!=`: `!=` = "!=".asInstanceOf[`!=`]

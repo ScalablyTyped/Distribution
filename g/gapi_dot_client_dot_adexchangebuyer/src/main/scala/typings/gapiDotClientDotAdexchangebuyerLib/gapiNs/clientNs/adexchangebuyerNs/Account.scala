@@ -27,3 +27,28 @@ trait Account extends js.Object {
   var numberActiveCreatives: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Account {
+  @scala.inline
+  def apply(
+    bidderLocation: js.Array[gapiDotClientDotAdexchangebuyerLib.Anon_BidProtocol] = null,
+    cookieMatchingNid: java.lang.String = null,
+    cookieMatchingUrl: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    maximumActiveCreatives: scala.Int | scala.Double = null,
+    maximumTotalQps: scala.Int | scala.Double = null,
+    numberActiveCreatives: scala.Int | scala.Double = null
+  ): Account = {
+    val __obj = js.Dynamic.literal()
+    if (bidderLocation != null) __obj.updateDynamic("bidderLocation")(bidderLocation)
+    if (cookieMatchingNid != null) __obj.updateDynamic("cookieMatchingNid")(cookieMatchingNid)
+    if (cookieMatchingUrl != null) __obj.updateDynamic("cookieMatchingUrl")(cookieMatchingUrl)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (maximumActiveCreatives != null) __obj.updateDynamic("maximumActiveCreatives")(maximumActiveCreatives.asInstanceOf[js.Any])
+    if (maximumTotalQps != null) __obj.updateDynamic("maximumTotalQps")(maximumTotalQps.asInstanceOf[js.Any])
+    if (numberActiveCreatives != null) __obj.updateDynamic("numberActiveCreatives")(numberActiveCreatives.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Account]
+  }
+}
+

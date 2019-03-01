@@ -16,3 +16,13 @@ trait SeriesDragSettings extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SeriesDragSettings {
+  @scala.inline
+  def apply(enable: js.UndefOr[scala.Boolean] = js.undefined, `type`: java.lang.String = null): SeriesDragSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SeriesDragSettings]
+  }
+}
+

@@ -61,3 +61,37 @@ trait BackendOptions extends js.Object {
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BackendOptions {
+  @scala.inline
+  def apply(
+    addPath: java.lang.String = null,
+    ajax: js.Function5[
+      /* url */ java.lang.String, 
+      BackendOptions, 
+      /* callback */ AjaxRequestCallback, 
+      /* data */ js.Object | java.lang.String, 
+      /* cache */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    allowMultiLoading: js.UndefOr[scala.Boolean] = js.undefined,
+    crossDomain: js.UndefOr[scala.Boolean] = js.undefined,
+    customHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    loadPath: LoadPathOption = null,
+    parse: js.Function1[/* data */ java.lang.String, java.lang.String] = null,
+    queryStringParams: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): BackendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (addPath != null) __obj.updateDynamic("addPath")(addPath)
+    if (ajax != null) __obj.updateDynamic("ajax")(ajax)
+    if (!js.isUndefined(allowMultiLoading)) __obj.updateDynamic("allowMultiLoading")(allowMultiLoading)
+    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
+    if (loadPath != null) __obj.updateDynamic("loadPath")(loadPath.asInstanceOf[js.Any])
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (queryStringParams != null) __obj.updateDynamic("queryStringParams")(queryStringParams)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[BackendOptions]
+  }
+}
+

@@ -10,3 +10,17 @@ trait PersonalizedstreamResource extends js.Object {
   def get(request: gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleMaxAllowedMaturityRating): gapiDotClientLib.gapiNs.clientNs.Request[Discoveryclusters]
 }
 
+object PersonalizedstreamResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotBooksLib.Anon_AltFieldsKeyLocaleMaxAllowedMaturityRating, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Discoveryclusters]
+    ]
+  ): PersonalizedstreamResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[PersonalizedstreamResource]
+  }
+}
+

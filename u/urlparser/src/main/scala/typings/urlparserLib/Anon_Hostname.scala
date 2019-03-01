@@ -13,3 +13,22 @@ trait Anon_Hostname extends js.Object {
   var username: java.lang.String
 }
 
+object Anon_Hostname {
+  @scala.inline
+  def apply(
+    hostname: java.lang.String,
+    password: java.lang.String,
+    port: java.lang.String | scala.Double,
+    protocol: java.lang.String,
+    username: java.lang.String
+  ): Anon_Hostname = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hostname")(hostname)
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.updateDynamic("protocol")(protocol)
+    __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[Anon_Hostname]
+  }
+}
+

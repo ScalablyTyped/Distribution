@@ -9,3 +9,12 @@ trait WithWidth extends js.Object {
   var width: atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
 }
 
+object WithWidth {
+  @scala.inline
+  def apply(width: atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint): WithWidth = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[WithWidth]
+  }
+}
+

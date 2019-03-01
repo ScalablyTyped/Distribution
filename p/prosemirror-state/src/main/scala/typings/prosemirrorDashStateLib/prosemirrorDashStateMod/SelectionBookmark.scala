@@ -19,3 +19,19 @@ trait SelectionBookmark[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.
   def resolve(doc: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S]): Selection[S]
 }
 
+object SelectionBookmark {
+  @scala.inline
+  def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    map: js.Function1[
+      prosemirrorDashTransformLib.prosemirrorDashTransformMod.Mapping, 
+      SelectionBookmark[S]
+    ],
+    resolve: js.Function1[prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S], Selection[S]]
+  ): SelectionBookmark[S] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("resolve")(resolve)
+    __obj.asInstanceOf[SelectionBookmark[S]]
+  }
+}
+

@@ -17,3 +17,16 @@ trait Options extends js.Object {
   var onStateChange: js.UndefOr[js.Function1[/* event */ heremapsLib.HNs.utilNs.Event, scala.Unit]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    content: java.lang.String | stdLib.Node,
+    onStateChange: js.Function1[/* event */ heremapsLib.HNs.utilNs.Event, scala.Unit] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    __obj.asInstanceOf[Options]
+  }
+}
+

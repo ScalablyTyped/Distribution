@@ -52,3 +52,34 @@ trait JQuerySteps extends js.Object {
   def skip(count: scala.Double): scala.Boolean
 }
 
+object JQuerySteps {
+  @scala.inline
+  def apply(
+    add: js.Function1[Step, JQuerySteps],
+    destroy: js.Function0[scala.Unit],
+    finish: js.Function0[scala.Unit],
+    getCurrentIndex: js.Function0[scala.Double],
+    getCurrentStep: js.Function0[Step],
+    getStep: js.Function1[scala.Double, Step],
+    insert: js.Function2[scala.Double, Step, JQuerySteps],
+    next: js.Function0[scala.Boolean],
+    previous: js.Function0[scala.Boolean],
+    remove: js.Function1[scala.Double, scala.Boolean],
+    skip: js.Function1[scala.Double, scala.Boolean]
+  ): JQuerySteps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("finish")(finish)
+    __obj.updateDynamic("getCurrentIndex")(getCurrentIndex)
+    __obj.updateDynamic("getCurrentStep")(getCurrentStep)
+    __obj.updateDynamic("getStep")(getStep)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("next")(next)
+    __obj.updateDynamic("previous")(previous)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("skip")(skip)
+    __obj.asInstanceOf[JQuerySteps]
+  }
+}
+

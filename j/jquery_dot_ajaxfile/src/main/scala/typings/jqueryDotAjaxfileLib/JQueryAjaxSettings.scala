@@ -165,3 +165,85 @@ trait JQueryAjaxSettings extends js.Object {
   ] = js.undefined
 }
 
+object JQueryAjaxSettings {
+  @scala.inline
+  def apply(
+    accepts: js.Any = null,
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeSend: js.Function2[/* jqXHR */ JQueryXHR, JQueryAjaxSettings, _] = null,
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    complete: js.Function2[/* jqXHR */ JQueryXHR, /* textStatus */ java.lang.String, _] = null,
+    contentType: js.Any = null,
+    contents: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
+    context: js.Any = null,
+    converters: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
+    crossDomain: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    dataFilter: js.Function2[/* data */ js.Any, /* ty */ js.Any, _] = null,
+    dataType: java.lang.String = null,
+    error: js.Function3[
+      /* jqXHR */ JQueryXHR, 
+      /* textStatus */ java.lang.String, 
+      /* errorThrown */ java.lang.String, 
+      _
+    ] = null,
+    global: js.UndefOr[scala.Boolean] = js.undefined,
+    headers: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
+    ifModified: js.UndefOr[scala.Boolean] = js.undefined,
+    isLocal: js.UndefOr[scala.Boolean] = js.undefined,
+    jsonp: js.Any = null,
+    jsonpCallback: js.Any = null,
+    method: java.lang.String = null,
+    mimeType: java.lang.String = null,
+    password: java.lang.String = null,
+    processData: js.UndefOr[scala.Boolean] = js.undefined,
+    scriptCharset: java.lang.String = null,
+    statusCode: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null,
+    success: js.Function3[/* data */ js.Any, /* textStatus */ java.lang.String, /* jqXHR */ JQueryXHR, _] = null,
+    timeout: scala.Int | scala.Double = null,
+    traditional: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    url: java.lang.String = null,
+    username: java.lang.String = null,
+    xhr: js.Any = null,
+    xhrFields: /* import warning: ImportType.apply Failed type conversion: {[key: string] : any, [key: string] : any} */ js.Any = null
+  ): JQueryAjaxSettings = {
+    val __obj = js.Dynamic.literal()
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (beforeSend != null) __obj.updateDynamic("beforeSend")(beforeSend)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (converters != null) __obj.updateDynamic("converters")(converters)
+    if (!js.isUndefined(crossDomain)) __obj.updateDynamic("crossDomain")(crossDomain)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataFilter != null) __obj.updateDynamic("dataFilter")(dataFilter)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(global)) __obj.updateDynamic("global")(global)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(ifModified)) __obj.updateDynamic("ifModified")(ifModified)
+    if (!js.isUndefined(isLocal)) __obj.updateDynamic("isLocal")(isLocal)
+    if (jsonp != null) __obj.updateDynamic("jsonp")(jsonp)
+    if (jsonpCallback != null) __obj.updateDynamic("jsonpCallback")(jsonpCallback)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (!js.isUndefined(processData)) __obj.updateDynamic("processData")(processData)
+    if (scriptCharset != null) __obj.updateDynamic("scriptCharset")(scriptCharset)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(traditional)) __obj.updateDynamic("traditional")(traditional)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (username != null) __obj.updateDynamic("username")(username)
+    if (xhr != null) __obj.updateDynamic("xhr")(xhr)
+    if (xhrFields != null) __obj.updateDynamic("xhrFields")(xhrFields)
+    __obj.asInstanceOf[JQueryAjaxSettings]
+  }
+}
+

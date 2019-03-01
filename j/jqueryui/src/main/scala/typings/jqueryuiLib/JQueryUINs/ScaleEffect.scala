@@ -12,3 +12,20 @@ trait ScaleEffect extends js.Object {
   var scale: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ScaleEffect {
+  @scala.inline
+  def apply(
+    direction: java.lang.String = null,
+    origin: js.Array[java.lang.String] = null,
+    percent: scala.Int | scala.Double = null,
+    scale: java.lang.String = null
+  ): ScaleEffect = {
+    val __obj = js.Dynamic.literal()
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale)
+    __obj.asInstanceOf[ScaleEffect]
+  }
+}
+

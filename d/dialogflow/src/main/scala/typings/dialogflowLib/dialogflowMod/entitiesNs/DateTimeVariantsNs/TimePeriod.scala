@@ -5,8 +5,19 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TimePeriod extends js.Object {
+trait TimePeriod
+  extends dialogflowLib.dialogflowMod.entitiesNs._DateTime {
   var endTime: java.lang.String
   var startTime: java.lang.String
+}
+
+object TimePeriod {
+  @scala.inline
+  def apply(endTime: java.lang.String, startTime: java.lang.String): TimePeriod = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endTime")(endTime)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[TimePeriod]
+  }
 }
 

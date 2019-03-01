@@ -19,3 +19,22 @@ trait EntriesResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 
+object EntriesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListLogEntriesResponse]
+    ],
+    write: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPpPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ]
+  ): EntriesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[EntriesResource]
+  }
+}
+

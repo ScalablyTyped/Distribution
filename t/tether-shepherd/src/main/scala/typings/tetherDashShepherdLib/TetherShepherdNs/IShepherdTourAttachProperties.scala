@@ -10,3 +10,13 @@ trait IShepherdTourAttachProperties extends js.Object {
   var on: java.lang.String
 }
 
+object IShepherdTourAttachProperties {
+  @scala.inline
+  def apply(element: java.lang.String, on: java.lang.String): IShepherdTourAttachProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[IShepherdTourAttachProperties]
+  }
+}
+

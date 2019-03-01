@@ -23,3 +23,16 @@ trait Http extends js.Object {
   var rules: js.UndefOr[js.Array[HttpRule]] = js.undefined
 }
 
+object Http {
+  @scala.inline
+  def apply(
+    fullyDecodeReservedExpansion: js.UndefOr[scala.Boolean] = js.undefined,
+    rules: js.Array[HttpRule] = null
+  ): Http = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(fullyDecodeReservedExpansion)) __obj.updateDynamic("fullyDecodeReservedExpansion")(fullyDecodeReservedExpansion)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[Http]
+  }
+}
+

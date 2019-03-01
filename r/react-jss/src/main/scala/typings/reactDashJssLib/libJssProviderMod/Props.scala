@@ -14,3 +14,24 @@ trait Props extends js.Object {
   var registry: js.UndefOr[jssLib.jssMod.SheetsRegistry] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    classNamePrefix: java.lang.String = null,
+    disableStylesGeneration: js.UndefOr[scala.Boolean] = js.undefined,
+    generateClassName: jssLib.jssMod.GenerateClassName[_] = null,
+    jss: jssLib.jssMod.JSS = null,
+    registry: jssLib.jssMod.SheetsRegistry = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (classNamePrefix != null) __obj.updateDynamic("classNamePrefix")(classNamePrefix)
+    if (!js.isUndefined(disableStylesGeneration)) __obj.updateDynamic("disableStylesGeneration")(disableStylesGeneration)
+    if (generateClassName != null) __obj.updateDynamic("generateClassName")(generateClassName)
+    if (jss != null) __obj.updateDynamic("jss")(jss)
+    if (registry != null) __obj.updateDynamic("registry")(registry)
+    __obj.asInstanceOf[Props]
+  }
+}
+

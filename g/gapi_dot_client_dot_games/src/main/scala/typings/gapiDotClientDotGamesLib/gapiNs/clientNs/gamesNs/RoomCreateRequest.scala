@@ -27,3 +27,28 @@ trait RoomCreateRequest extends js.Object {
   var variant: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RoomCreateRequest {
+  @scala.inline
+  def apply(
+    autoMatchingCriteria: RoomAutoMatchingCriteria = null,
+    capabilities: js.Array[java.lang.String] = null,
+    clientAddress: RoomClientAddress = null,
+    invitedPlayerIds: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    networkDiagnostics: NetworkDiagnostics = null,
+    requestId: java.lang.String = null,
+    variant: scala.Int | scala.Double = null
+  ): RoomCreateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (autoMatchingCriteria != null) __obj.updateDynamic("autoMatchingCriteria")(autoMatchingCriteria)
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    if (clientAddress != null) __obj.updateDynamic("clientAddress")(clientAddress)
+    if (invitedPlayerIds != null) __obj.updateDynamic("invitedPlayerIds")(invitedPlayerIds)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (networkDiagnostics != null) __obj.updateDynamic("networkDiagnostics")(networkDiagnostics)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoomCreateRequest]
+  }
+}
+

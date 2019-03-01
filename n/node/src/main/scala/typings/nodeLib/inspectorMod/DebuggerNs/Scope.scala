@@ -30,3 +30,20 @@ trait Scope extends js.Object {
   var `type`: java.lang.String
 }
 
+object Scope {
+  @scala.inline
+  def apply(
+    `object`: nodeLib.inspectorMod.RuntimeNs.RemoteObject,
+    `type`: java.lang.String,
+    endLocation: Location = null,
+    name: java.lang.String = null,
+    startLocation: Location = null
+  ): Scope = {
+    val __obj = js.Dynamic.literal(`object` = `object`, `type` = `type`)
+    if (endLocation != null) __obj.updateDynamic("endLocation")(endLocation)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (startLocation != null) __obj.updateDynamic("startLocation")(startLocation)
+    __obj.asInstanceOf[Scope]
+  }
+}
+

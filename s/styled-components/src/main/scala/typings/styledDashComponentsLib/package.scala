@@ -25,7 +25,6 @@ package object styledDashComponentsLib {
   // extracts React defaultProps
   type ReactDefaultProps[C] = js.Any
   type ReactDefaultizedProps[C, P] = P | (Defaultize[P, js.Any])
-  type StyleSheetManagerProps = Anon_Sheet | Anon_SheetTarget
   // remove the call signature from StyledComponent so Interpolation can still infer InterpolationFunction
   type StyledComponentInterpolation = stdLib.Pick[
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify StyledComponentBase<any, any, any, any> */ js.Any, 

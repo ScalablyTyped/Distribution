@@ -25,3 +25,22 @@ trait Tooltip extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Tooltip {
+  @scala.inline
+  def apply(
+    border: TooltipBorder = null,
+    fill: java.lang.String = null,
+    font: TooltipFont = null,
+    template: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): Tooltip = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[Tooltip]
+  }
+}
+

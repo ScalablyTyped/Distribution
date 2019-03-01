@@ -18,3 +18,18 @@ trait ItemsMappingHeaderMapping extends js.Object {
   var propertyName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ItemsMappingHeaderMapping {
+  @scala.inline
+  def apply(
+    columnStyle: js.Any = null,
+    displayName: java.lang.String = null,
+    propertyName: java.lang.String = null
+  ): ItemsMappingHeaderMapping = {
+    val __obj = js.Dynamic.literal()
+    if (columnStyle != null) __obj.updateDynamic("columnStyle")(columnStyle)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (propertyName != null) __obj.updateDynamic("propertyName")(propertyName)
+    __obj.asInstanceOf[ItemsMappingHeaderMapping]
+  }
+}
+

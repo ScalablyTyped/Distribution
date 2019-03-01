@@ -18,3 +18,32 @@ trait EllipticalArcCommand extends js.Object {
   var y: scala.Double
 }
 
+object EllipticalArcCommand {
+  @scala.inline
+  def apply(
+    code: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.a | svgDashPathDashParserLib.svgDashPathDashParserLibStrings.A,
+    command: svgDashPathDashParserLib.svgDashPathDashParserLibStrings.`elliptical arc`,
+    largeArc: scala.Boolean,
+    rx: scala.Double,
+    ry: scala.Double,
+    sweep: scala.Boolean,
+    x: scala.Double,
+    xAxisRotation: scala.Double,
+    y: scala.Double,
+    relative: js.UndefOr[scala.Boolean] = js.undefined
+  ): EllipticalArcCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("largeArc")(largeArc)
+    __obj.updateDynamic("rx")(rx)
+    __obj.updateDynamic("ry")(ry)
+    __obj.updateDynamic("sweep")(sweep)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("xAxisRotation")(xAxisRotation)
+    __obj.updateDynamic("y")(y)
+    if (!js.isUndefined(relative)) __obj.updateDynamic("relative")(relative)
+    __obj.asInstanceOf[EllipticalArcCommand]
+  }
+}
+

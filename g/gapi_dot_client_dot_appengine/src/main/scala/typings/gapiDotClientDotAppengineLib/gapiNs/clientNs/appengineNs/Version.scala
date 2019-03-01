@@ -110,3 +110,76 @@ trait Version extends js.Object {
   var vm: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Version {
+  @scala.inline
+  def apply(
+    apiConfig: ApiConfigHandler = null,
+    automaticScaling: AutomaticScaling = null,
+    basicScaling: BasicScaling = null,
+    betaSettings: stdLib.Record[java.lang.String, java.lang.String] = null,
+    createTime: java.lang.String = null,
+    createdBy: java.lang.String = null,
+    defaultExpiration: java.lang.String = null,
+    deployment: Deployment = null,
+    diskUsageBytes: java.lang.String = null,
+    endpointsApiService: EndpointsApiService = null,
+    env: java.lang.String = null,
+    envVariables: stdLib.Record[java.lang.String, java.lang.String] = null,
+    errorHandlers: js.Array[ErrorHandler] = null,
+    handlers: js.Array[UrlMap] = null,
+    healthCheck: HealthCheck = null,
+    id: java.lang.String = null,
+    inboundServices: js.Array[java.lang.String] = null,
+    instanceClass: java.lang.String = null,
+    libraries: js.Array[Library] = null,
+    livenessCheck: LivenessCheck = null,
+    manualScaling: ManualScaling = null,
+    name: java.lang.String = null,
+    network: Network = null,
+    nobuildFilesRegex: java.lang.String = null,
+    readinessCheck: ReadinessCheck = null,
+    resources: Resources = null,
+    runtime: java.lang.String = null,
+    runtimeApiVersion: java.lang.String = null,
+    servingStatus: java.lang.String = null,
+    threadsafe: js.UndefOr[scala.Boolean] = js.undefined,
+    versionUrl: java.lang.String = null,
+    vm: js.UndefOr[scala.Boolean] = js.undefined
+  ): Version = {
+    val __obj = js.Dynamic.literal()
+    if (apiConfig != null) __obj.updateDynamic("apiConfig")(apiConfig)
+    if (automaticScaling != null) __obj.updateDynamic("automaticScaling")(automaticScaling)
+    if (basicScaling != null) __obj.updateDynamic("basicScaling")(basicScaling)
+    if (betaSettings != null) __obj.updateDynamic("betaSettings")(betaSettings)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (createdBy != null) __obj.updateDynamic("createdBy")(createdBy)
+    if (defaultExpiration != null) __obj.updateDynamic("defaultExpiration")(defaultExpiration)
+    if (deployment != null) __obj.updateDynamic("deployment")(deployment)
+    if (diskUsageBytes != null) __obj.updateDynamic("diskUsageBytes")(diskUsageBytes)
+    if (endpointsApiService != null) __obj.updateDynamic("endpointsApiService")(endpointsApiService)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (envVariables != null) __obj.updateDynamic("envVariables")(envVariables)
+    if (errorHandlers != null) __obj.updateDynamic("errorHandlers")(errorHandlers)
+    if (handlers != null) __obj.updateDynamic("handlers")(handlers)
+    if (healthCheck != null) __obj.updateDynamic("healthCheck")(healthCheck)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inboundServices != null) __obj.updateDynamic("inboundServices")(inboundServices)
+    if (instanceClass != null) __obj.updateDynamic("instanceClass")(instanceClass)
+    if (libraries != null) __obj.updateDynamic("libraries")(libraries)
+    if (livenessCheck != null) __obj.updateDynamic("livenessCheck")(livenessCheck)
+    if (manualScaling != null) __obj.updateDynamic("manualScaling")(manualScaling)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (nobuildFilesRegex != null) __obj.updateDynamic("nobuildFilesRegex")(nobuildFilesRegex)
+    if (readinessCheck != null) __obj.updateDynamic("readinessCheck")(readinessCheck)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (runtime != null) __obj.updateDynamic("runtime")(runtime)
+    if (runtimeApiVersion != null) __obj.updateDynamic("runtimeApiVersion")(runtimeApiVersion)
+    if (servingStatus != null) __obj.updateDynamic("servingStatus")(servingStatus)
+    if (!js.isUndefined(threadsafe)) __obj.updateDynamic("threadsafe")(threadsafe)
+    if (versionUrl != null) __obj.updateDynamic("versionUrl")(versionUrl)
+    if (!js.isUndefined(vm)) __obj.updateDynamic("vm")(vm)
+    __obj.asInstanceOf[Version]
+  }
+}
+

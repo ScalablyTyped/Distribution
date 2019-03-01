@@ -73,3 +73,46 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    afterServiceInvoke: js.Function1[/* e */ AfterServiceInvokeEventArgs, scala.Unit] = null,
+    beforeServiceInvoke: js.Function1[/* e */ BeforeServiceInvokeEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    customObject: js.Any = null,
+    dragMove: js.Function1[/* e */ DragMoveEventArgs, scala.Unit] = null,
+    enableDragDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableWrapper: js.UndefOr[scala.Boolean] = js.undefined,
+    height: java.lang.String = null,
+    layout: Layouts | java.lang.String = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    olap: Olap = null,
+    pivotControl: js.Any = null,
+    serviceMethods: js.Any = null,
+    url: java.lang.String = null,
+    width: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(afterServiceInvoke)
+    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(beforeServiceInvoke)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
+    if (dragMove != null) __obj.updateDynamic("dragMove")(dragMove)
+    if (!js.isUndefined(enableDragDrop)) __obj.updateDynamic("enableDragDrop")(enableDragDrop)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableWrapper)) __obj.updateDynamic("enableWrapper")(enableWrapper)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (layout != null) __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (olap != null) __obj.updateDynamic("olap")(olap)
+    if (pivotControl != null) __obj.updateDynamic("pivotControl")(pivotControl)
+    if (serviceMethods != null) __obj.updateDynamic("serviceMethods")(serviceMethods)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Model]
+  }
+}
+

@@ -17,3 +17,18 @@ trait CreateCollectdTimeSeriesRequest extends js.Object {
   var resource: js.UndefOr[MonitoredResource] = js.undefined
 }
 
+object CreateCollectdTimeSeriesRequest {
+  @scala.inline
+  def apply(
+    collectdPayloads: js.Array[CollectdPayload] = null,
+    collectdVersion: java.lang.String = null,
+    resource: MonitoredResource = null
+  ): CreateCollectdTimeSeriesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (collectdPayloads != null) __obj.updateDynamic("collectdPayloads")(collectdPayloads)
+    if (collectdVersion != null) __obj.updateDynamic("collectdVersion")(collectdVersion)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[CreateCollectdTimeSeriesRequest]
+  }
+}
+

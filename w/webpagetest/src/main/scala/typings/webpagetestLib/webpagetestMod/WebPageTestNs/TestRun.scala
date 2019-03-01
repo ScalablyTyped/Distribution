@@ -9,3 +9,12 @@ trait TestRun extends js.Object {
   var firstView: js.Any
 }
 
+object TestRun {
+  @scala.inline
+  def apply(firstView: js.Any): TestRun = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("firstView")(firstView)
+    __obj.asInstanceOf[TestRun]
+  }
+}
+

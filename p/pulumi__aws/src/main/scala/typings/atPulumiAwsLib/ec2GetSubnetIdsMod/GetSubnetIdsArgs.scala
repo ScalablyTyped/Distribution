@@ -18,3 +18,18 @@ trait GetSubnetIdsArgs extends js.Object {
   val vpcId: java.lang.String
 }
 
+object GetSubnetIdsArgs {
+  @scala.inline
+  def apply(
+    vpcId: java.lang.String,
+    filters: js.Array[atPulumiAwsLib.Anon_NameValues] = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetSubnetIdsArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("vpcId")(vpcId)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetSubnetIdsArgs]
+  }
+}
+

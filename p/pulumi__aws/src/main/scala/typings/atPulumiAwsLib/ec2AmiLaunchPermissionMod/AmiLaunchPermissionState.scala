@@ -16,3 +16,16 @@ trait AmiLaunchPermissionState extends js.Object {
   val imageId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object AmiLaunchPermissionState {
+  @scala.inline
+  def apply(
+    accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    imageId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): AmiLaunchPermissionState = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (imageId != null) __obj.updateDynamic("imageId")(imageId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AmiLaunchPermissionState]
+  }
+}
+

@@ -45,3 +45,40 @@ trait Anon_AltDestinationBucket extends js.Object {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltDestinationBucket {
+  @scala.inline
+  def apply(
+    destinationBucket: java.lang.String,
+    destinationObject: java.lang.String,
+    alt: java.lang.String = null,
+    destinationPredefinedAcl: java.lang.String = null,
+    fields: java.lang.String = null,
+    ifGenerationMatch: java.lang.String = null,
+    ifMetagenerationMatch: java.lang.String = null,
+    key: java.lang.String = null,
+    kmsKeyName: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null,
+    userProject: java.lang.String = null
+  ): Anon_AltDestinationBucket = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinationBucket")(destinationBucket)
+    __obj.updateDynamic("destinationObject")(destinationObject)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (destinationPredefinedAcl != null) __obj.updateDynamic("destinationPredefinedAcl")(destinationPredefinedAcl)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (ifGenerationMatch != null) __obj.updateDynamic("ifGenerationMatch")(ifGenerationMatch)
+    if (ifMetagenerationMatch != null) __obj.updateDynamic("ifMetagenerationMatch")(ifMetagenerationMatch)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    __obj.asInstanceOf[Anon_AltDestinationBucket]
+  }
+}
+

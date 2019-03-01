@@ -20,3 +20,22 @@ trait Anon_Ctx extends js.Object {
   var xmlOptions: js.UndefOr[xml2jsLib.xml2jsMod.Options] = js.undefined
 }
 
+object Anon_Ctx {
+  @scala.inline
+  def apply(
+    encoding: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    limit: scala.Int | scala.Double = null,
+    onerror: js.Function2[/* err */ nodeLib.Error, /* ctx */ koaLib.koaMod.ApplicationNs.Context, scala.Unit] = null,
+    xmlOptions: xml2jsLib.xml2jsMod.Options = null
+  ): Anon_Ctx = {
+    val __obj = js.Dynamic.literal()
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (xmlOptions != null) __obj.updateDynamic("xmlOptions")(xmlOptions)
+    __obj.asInstanceOf[Anon_Ctx]
+  }
+}
+

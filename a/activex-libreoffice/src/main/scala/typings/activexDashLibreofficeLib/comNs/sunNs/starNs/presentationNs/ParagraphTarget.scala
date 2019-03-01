@@ -14,3 +14,13 @@ trait ParagraphTarget extends js.Object {
   var Shape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape
 }
 
+object ParagraphTarget {
+  @scala.inline
+  def apply(Paragraph: scala.Double, Shape: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.XShape): ParagraphTarget = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Paragraph")(Paragraph)
+    __obj.updateDynamic("Shape")(Shape)
+    __obj.asInstanceOf[ParagraphTarget]
+  }
+}
+

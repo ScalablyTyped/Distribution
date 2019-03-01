@@ -13,3 +13,22 @@ trait PropertyChangedContext extends js.Object {
   var value: js.Any
 }
 
+object PropertyChangedContext {
+  @scala.inline
+  def apply(
+    previousValue: js.Any,
+    property: java.lang.String,
+    updatedFrom: atOracleOraclejetLib.atOracleOraclejetLibStrings.external | atOracleOraclejetLib.atOracleOraclejetLibStrings.internal,
+    value: js.Any,
+    subproperty: atOracleOraclejetLib.Anon_Path = null
+  ): PropertyChangedContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("previousValue")(previousValue)
+    __obj.updateDynamic("property")(property)
+    __obj.updateDynamic("updatedFrom")(updatedFrom.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value)
+    if (subproperty != null) __obj.updateDynamic("subproperty")(subproperty)
+    __obj.asInstanceOf[PropertyChangedContext]
+  }
+}
+

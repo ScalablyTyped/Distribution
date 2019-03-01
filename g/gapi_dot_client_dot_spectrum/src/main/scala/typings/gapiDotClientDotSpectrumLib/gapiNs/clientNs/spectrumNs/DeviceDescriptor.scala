@@ -53,3 +53,32 @@ trait DeviceDescriptor extends js.Object {
   var serialNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeviceDescriptor {
+  @scala.inline
+  def apply(
+    etsiEnDeviceCategory: java.lang.String = null,
+    etsiEnDeviceEmissionsClass: java.lang.String = null,
+    etsiEnDeviceType: java.lang.String = null,
+    etsiEnTechnologyId: java.lang.String = null,
+    fccId: java.lang.String = null,
+    fccTvbdDeviceType: java.lang.String = null,
+    manufacturerId: java.lang.String = null,
+    modelId: java.lang.String = null,
+    rulesetIds: js.Array[java.lang.String] = null,
+    serialNumber: java.lang.String = null
+  ): DeviceDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (etsiEnDeviceCategory != null) __obj.updateDynamic("etsiEnDeviceCategory")(etsiEnDeviceCategory)
+    if (etsiEnDeviceEmissionsClass != null) __obj.updateDynamic("etsiEnDeviceEmissionsClass")(etsiEnDeviceEmissionsClass)
+    if (etsiEnDeviceType != null) __obj.updateDynamic("etsiEnDeviceType")(etsiEnDeviceType)
+    if (etsiEnTechnologyId != null) __obj.updateDynamic("etsiEnTechnologyId")(etsiEnTechnologyId)
+    if (fccId != null) __obj.updateDynamic("fccId")(fccId)
+    if (fccTvbdDeviceType != null) __obj.updateDynamic("fccTvbdDeviceType")(fccTvbdDeviceType)
+    if (manufacturerId != null) __obj.updateDynamic("manufacturerId")(manufacturerId)
+    if (modelId != null) __obj.updateDynamic("modelId")(modelId)
+    if (rulesetIds != null) __obj.updateDynamic("rulesetIds")(rulesetIds)
+    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber)
+    __obj.asInstanceOf[DeviceDescriptor]
+  }
+}
+

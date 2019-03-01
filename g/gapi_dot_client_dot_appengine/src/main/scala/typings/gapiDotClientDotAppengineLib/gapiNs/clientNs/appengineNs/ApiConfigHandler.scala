@@ -18,3 +18,22 @@ trait ApiConfigHandler extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ApiConfigHandler {
+  @scala.inline
+  def apply(
+    authFailAction: java.lang.String = null,
+    login: java.lang.String = null,
+    script: java.lang.String = null,
+    securityLevel: java.lang.String = null,
+    url: java.lang.String = null
+  ): ApiConfigHandler = {
+    val __obj = js.Dynamic.literal()
+    if (authFailAction != null) __obj.updateDynamic("authFailAction")(authFailAction)
+    if (login != null) __obj.updateDynamic("login")(login)
+    if (script != null) __obj.updateDynamic("script")(script)
+    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ApiConfigHandler]
+  }
+}
+

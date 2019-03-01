@@ -10,3 +10,16 @@ trait Anon_VirtualNodeWeight extends js.Object {
   var weight: atPulumiPulumiLib.outputMod.Input[scala.Double]
 }
 
+object Anon_VirtualNodeWeight {
+  @scala.inline
+  def apply(
+    virtualNode: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    weight: atPulumiPulumiLib.outputMod.Input[scala.Double]
+  ): Anon_VirtualNodeWeight = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("virtualNode")(virtualNode.asInstanceOf[js.Any])
+    __obj.updateDynamic("weight")(weight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_VirtualNodeWeight]
+  }
+}
+

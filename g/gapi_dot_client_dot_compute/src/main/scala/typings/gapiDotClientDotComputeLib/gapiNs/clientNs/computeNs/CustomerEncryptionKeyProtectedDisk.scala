@@ -12,3 +12,13 @@ trait CustomerEncryptionKeyProtectedDisk extends js.Object {
   var source: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomerEncryptionKeyProtectedDisk {
+  @scala.inline
+  def apply(diskEncryptionKey: CustomerEncryptionKey = null, source: java.lang.String = null): CustomerEncryptionKeyProtectedDisk = {
+    val __obj = js.Dynamic.literal()
+    if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[CustomerEncryptionKeyProtectedDisk]
+  }
+}
+

@@ -30,3 +30,37 @@ trait PackagerOptions extends js.Object {
   var win: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object PackagerOptions {
+  @scala.inline
+  def apply(
+    config: appDashBuilderDashLibLib.outConfigurationMod.Configuration | java.lang.String = null,
+    effectiveOptionComputed: js.Function1[/* options */ js.Any, js.Promise[scala.Boolean]] = null,
+    linux: js.Array[java.lang.String] = null,
+    mac: js.Array[java.lang.String] = null,
+    platformPackagerFactory: js.Function2[
+      /* info */ appDashBuilderDashLibLib.outPackagerMod.Packager, 
+      /* platform */ appDashBuilderDashLibLib.outCoreMod.Platform, 
+      appDashBuilderDashLibLib.outPlatformPackagerMod.PlatformPackager[_]
+    ] = null,
+    prepackaged: java.lang.String = null,
+    projectDir: java.lang.String = null,
+    targets: stdLib.Map[
+      appDashBuilderDashLibLib.outCoreMod.Platform, 
+      stdLib.Map[builderDashUtilLib.outArchMod.Arch, js.Array[java.lang.String]]
+    ] = null,
+    win: js.Array[java.lang.String] = null
+  ): PackagerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (config != null) __obj.updateDynamic("config")(config.asInstanceOf[js.Any])
+    if (effectiveOptionComputed != null) __obj.updateDynamic("effectiveOptionComputed")(effectiveOptionComputed)
+    if (linux != null) __obj.updateDynamic("linux")(linux)
+    if (mac != null) __obj.updateDynamic("mac")(mac)
+    if (platformPackagerFactory != null) __obj.updateDynamic("platformPackagerFactory")(platformPackagerFactory)
+    if (prepackaged != null) __obj.updateDynamic("prepackaged")(prepackaged)
+    if (projectDir != null) __obj.updateDynamic("projectDir")(projectDir)
+    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (win != null) __obj.updateDynamic("win")(win)
+    __obj.asInstanceOf[PackagerOptions]
+  }
+}
+

@@ -7,43 +7,43 @@ import scala.scalajs.js.annotation._
 
 object mockingooseLibStrings {
   @js.native
-  sealed trait count extends js.Object
+  sealed trait count extends Op
   
   @js.native
-  sealed trait countDocuments extends js.Object
+  sealed trait countDocuments extends Op
   
   @js.native
-  sealed trait deleteMany extends js.Object
+  sealed trait deleteMany extends Op
   
   @js.native
-  sealed trait deleteOne extends js.Object
+  sealed trait deleteOne extends Op
   
   @js.native
-  sealed trait distinct extends js.Object
+  sealed trait distinct extends Op
   
   @js.native
-  sealed trait estimatedDocumentCount extends js.Object
+  sealed trait estimatedDocumentCount extends Op
   
   @js.native
-  sealed trait find extends js.Object
+  sealed trait find extends Op
   
   @js.native
-  sealed trait findOne extends js.Object
+  sealed trait findOne extends Op
   
   @js.native
-  sealed trait findOneAndRemove extends js.Object
+  sealed trait findOneAndRemove extends Op
   
   @js.native
-  sealed trait findOneAndUpdate extends js.Object
+  sealed trait findOneAndUpdate extends Op
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait remove extends Op
   
   @js.native
-  sealed trait save extends js.Object
+  sealed trait save extends Op
   
   @js.native
-  sealed trait update extends js.Object
+  sealed trait update extends Op
   
   @scala.inline
   def count: count = "count".asInstanceOf[count]

@@ -10,3 +10,13 @@ trait BaseClientOptions extends js.Object {
   var clientId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BaseClientOptions {
+  @scala.inline
+  def apply(baseUrl: java.lang.String, clientId: java.lang.String = null): BaseClientOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseUrl")(baseUrl)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    __obj.asInstanceOf[BaseClientOptions]
+  }
+}
+

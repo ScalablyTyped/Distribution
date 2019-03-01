@@ -13,3 +13,13 @@ trait Selection extends js.Object {
   var Min: scala.Double
 }
 
+object Selection {
+  @scala.inline
+  def apply(Max: scala.Double, Min: scala.Double): Selection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Max")(Max)
+    __obj.updateDynamic("Min")(Min)
+    __obj.asInstanceOf[Selection]
+  }
+}
+

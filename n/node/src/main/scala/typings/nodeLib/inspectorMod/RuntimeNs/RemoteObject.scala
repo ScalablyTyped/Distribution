@@ -49,3 +49,29 @@ trait RemoteObject extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object RemoteObject {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    className: java.lang.String = null,
+    customPreview: CustomPreview = null,
+    description: java.lang.String = null,
+    objectId: RemoteObjectId = null,
+    preview: ObjectPreview = null,
+    subtype: java.lang.String = null,
+    unserializableValue: UnserializableValue = null,
+    value: js.Any = null
+  ): RemoteObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (customPreview != null) __obj.updateDynamic("customPreview")(customPreview)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (preview != null) __obj.updateDynamic("preview")(preview)
+    if (subtype != null) __obj.updateDynamic("subtype")(subtype)
+    if (unserializableValue != null) __obj.updateDynamic("unserializableValue")(unserializableValue)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[RemoteObject]
+  }
+}
+

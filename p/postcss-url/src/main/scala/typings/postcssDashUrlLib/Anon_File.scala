@@ -20,3 +20,14 @@ trait Anon_File extends js.Object {
   var to: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_File {
+  @scala.inline
+  def apply(file: java.lang.String = null, from: java.lang.String = null, to: java.lang.String = null): Anon_File = {
+    val __obj = js.Dynamic.literal()
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Anon_File]
+  }
+}
+

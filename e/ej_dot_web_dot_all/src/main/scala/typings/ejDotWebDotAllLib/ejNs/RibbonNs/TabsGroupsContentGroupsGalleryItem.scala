@@ -24,3 +24,20 @@ trait TabsGroupsContentGroupsGalleryItem extends js.Object {
   var toolTip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabsGroupsContentGroupsGalleryItem {
+  @scala.inline
+  def apply(
+    buttonSettings: js.Any = null,
+    customToolTip: js.Any = null,
+    text: java.lang.String = null,
+    toolTip: java.lang.String = null
+  ): TabsGroupsContentGroupsGalleryItem = {
+    val __obj = js.Dynamic.literal()
+    if (buttonSettings != null) __obj.updateDynamic("buttonSettings")(buttonSettings)
+    if (customToolTip != null) __obj.updateDynamic("customToolTip")(customToolTip)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    __obj.asInstanceOf[TabsGroupsContentGroupsGalleryItem]
+  }
+}
+

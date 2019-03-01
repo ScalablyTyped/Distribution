@@ -39,3 +39,30 @@ trait OtpauthURLOptions extends SharedOptions {
   var `type`: js.UndefOr[speakeasyLib.speakeasyLibStrings.htop | speakeasyLib.speakeasyLibStrings.totp] = js.undefined
 }
 
+object OtpauthURLOptions {
+  @scala.inline
+  def apply(
+    label: java.lang.String,
+    secret: java.lang.String,
+    algorithm: Algorithm = null,
+    counter: scala.Int | scala.Double = null,
+    digits: scala.Int | scala.Double = null,
+    encoding: Encoding = null,
+    issuer: java.lang.String = null,
+    period: scala.Int | scala.Double = null,
+    `type`: speakeasyLib.speakeasyLibStrings.htop | speakeasyLib.speakeasyLibStrings.totp = null
+  ): OtpauthURLOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("secret")(secret)
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (counter != null) __obj.updateDynamic("counter")(counter.asInstanceOf[js.Any])
+    if (digits != null) __obj.updateDynamic("digits")(digits.asInstanceOf[js.Any])
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (issuer != null) __obj.updateDynamic("issuer")(issuer)
+    if (period != null) __obj.updateDynamic("period")(period.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OtpauthURLOptions]
+  }
+}
+

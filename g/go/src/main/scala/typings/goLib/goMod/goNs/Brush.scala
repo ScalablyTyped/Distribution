@@ -46,3 +46,31 @@ trait Brush extends js.Object {
   def copy(): Brush
 }
 
+object Brush {
+  @scala.inline
+  def apply(
+    addColorStop: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    color: java.lang.String,
+    colorStops: Map[scala.Double, java.lang.String],
+    copy: js.Function0[Brush],
+    end: Spot,
+    endRadius: scala.Double,
+    pattern: js.Any,
+    start: Spot,
+    startRadius: scala.Double,
+    `type`: EnumValue
+  ): Brush = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("addColorStop")(addColorStop)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("colorStops")(colorStops)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("endRadius")(endRadius)
+    __obj.updateDynamic("pattern")(pattern)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("startRadius")(startRadius)
+    __obj.asInstanceOf[Brush]
+  }
+}
+

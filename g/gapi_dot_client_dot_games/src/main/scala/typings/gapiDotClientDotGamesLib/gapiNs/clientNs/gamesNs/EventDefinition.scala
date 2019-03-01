@@ -29,3 +29,28 @@ trait EventDefinition extends js.Object {
   var visibility: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EventDefinition {
+  @scala.inline
+  def apply(
+    childEvents: js.Array[EventChild] = null,
+    description: java.lang.String = null,
+    displayName: java.lang.String = null,
+    id: java.lang.String = null,
+    imageUrl: java.lang.String = null,
+    isDefaultImageUrl: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    visibility: java.lang.String = null
+  ): EventDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (childEvents != null) __obj.updateDynamic("childEvents")(childEvents)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (!js.isUndefined(isDefaultImageUrl)) __obj.updateDynamic("isDefaultImageUrl")(isDefaultImageUrl)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    __obj.asInstanceOf[EventDefinition]
+  }
+}
+

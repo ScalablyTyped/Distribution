@@ -18,3 +18,22 @@ trait GetLocationOptions
   ] = js.undefined
 }
 
+object GetLocationOptions {
+  @scala.inline
+  def apply(
+    altitude: js.UndefOr[scala.Boolean] = js.undefined,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[/* res */ LocationData, scala.Unit] = null,
+    `type`: baiduDashAppLib.baiduDashAppLibStrings.wgs84 | baiduDashAppLib.baiduDashAppLibStrings.gcj02 = null
+  ): GetLocationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(altitude)) __obj.updateDynamic("altitude")(altitude)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetLocationOptions]
+  }
+}
+

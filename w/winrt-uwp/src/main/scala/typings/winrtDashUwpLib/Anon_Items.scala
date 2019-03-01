@@ -10,3 +10,13 @@ trait Anon_Items[T] extends js.Object {
   /** The number of items in the collection. */ var returnValue: scala.Double
 }
 
+object Anon_Items {
+  @scala.inline
+  def apply[T](items: T, returnValue: scala.Double): Anon_Items[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items.asInstanceOf[js.Any])
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_Items[T]]
+  }
+}
+

@@ -65,3 +65,37 @@ trait DataSourceSettingsFiltering
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataSourceSettingsFiltering {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for DataSourceSettingsFiltering
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    applyToAllData: js.UndefOr[scala.Boolean] = js.undefined,
+    caseSensitive: js.UndefOr[scala.Boolean] = js.undefined,
+    customConditions: js.Any = null,
+    customFunc: js.Any = null,
+    defaultFields: js.Array[_] = null,
+    exprString: java.lang.String = null,
+    expressions: js.Array[_] = null,
+    filterExprUrlKey: java.lang.String = null,
+    filterLogicUrlKey: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DataSourceSettingsFiltering = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(applyToAllData)) __obj.updateDynamic("applyToAllData")(applyToAllData)
+    if (!js.isUndefined(caseSensitive)) __obj.updateDynamic("caseSensitive")(caseSensitive)
+    if (customConditions != null) __obj.updateDynamic("customConditions")(customConditions)
+    if (customFunc != null) __obj.updateDynamic("customFunc")(customFunc)
+    if (defaultFields != null) __obj.updateDynamic("defaultFields")(defaultFields)
+    if (exprString != null) __obj.updateDynamic("exprString")(exprString)
+    if (expressions != null) __obj.updateDynamic("expressions")(expressions)
+    if (filterExprUrlKey != null) __obj.updateDynamic("filterExprUrlKey")(filterExprUrlKey)
+    if (filterLogicUrlKey != null) __obj.updateDynamic("filterLogicUrlKey")(filterLogicUrlKey)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DataSourceSettingsFiltering]
+  }
+}
+

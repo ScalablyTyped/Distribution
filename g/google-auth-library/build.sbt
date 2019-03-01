@@ -1,28 +1,28 @@
 organization := "org.scalablytyped"
 name := "google-auth-library"
-version := "3.1.0-1a2d6d"
+version := "3.1.0-c4ecce"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "abort-controller" % "2.0.2-50fe36",
-  "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-2d42fd",
-  "org.scalablytyped" %%% "event-target-shim" % "5.0.1-188cac",
-  "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-a9baf4",
-  "org.scalablytyped" %%% "gaxios" % "1.8.0-cd398a",
-  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-220d2a",
-  "org.scalablytyped" %%% "google-p12-pem" % "1.0.3-828148",
-  "org.scalablytyped" %%% "gtoken" % "2.3.2-fb7279",
-  "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-724728",
-  "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-47a544",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-4a070f",
-  "org.scalablytyped" %%% "node-forge" % "0.7.6-dt-20190130Z-a1e278",
-  "org.scalablytyped" %%% "pify" % "3.0.0-dt-20180501Z-432a44",
-  "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-c9e889",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "abort-controller" % "2.0.2-9b5c01",
+  "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-bfbf8a",
+  "org.scalablytyped" %%% "event-target-shim" % "5.0.1-1e70dd",
+  "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-e0af3f",
+  "org.scalablytyped" %%% "gaxios" % "1.8.0-d761db",
+  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-a1faba",
+  "org.scalablytyped" %%% "google-p12-pem" % "1.0.3-9af1b4",
+  "org.scalablytyped" %%% "gtoken" % "2.3.2-55e4e0",
+  "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-69308d",
+  "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-1ff40f",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-1dd39e",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-1e1851",
+  "org.scalablytyped" %%% "node-forge" % "0.7.6-dt-20190130Z-7168b2",
+  "org.scalablytyped" %%% "pify" % "3.0.0-dt-20180501Z-3fda20",
+  "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-703481",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

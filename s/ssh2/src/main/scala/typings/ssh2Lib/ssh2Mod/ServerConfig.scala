@@ -24,3 +24,28 @@ trait ServerConfig extends js.Object {
   var maxPacketSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ServerConfig {
+  @scala.inline
+  def apply(
+    hostKeys: js.Array[nodeLib.Buffer | java.lang.String | EncryptedPrivateKey],
+    algorithms: ssh2DashStreamsLib.ssh2DashStreamsMod.Algorithms = null,
+    banner: java.lang.String = null,
+    debug: js.Function1[/* information */ java.lang.String, _] = null,
+    greeting: java.lang.String = null,
+    highWaterMark: scala.Int | scala.Double = null,
+    ident: java.lang.String = null,
+    maxPacketSize: scala.Int | scala.Double = null
+  ): ServerConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hostKeys")(hostKeys)
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
+    if (banner != null) __obj.updateDynamic("banner")(banner)
+    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (greeting != null) __obj.updateDynamic("greeting")(greeting)
+    if (highWaterMark != null) __obj.updateDynamic("highWaterMark")(highWaterMark.asInstanceOf[js.Any])
+    if (ident != null) __obj.updateDynamic("ident")(ident)
+    if (maxPacketSize != null) __obj.updateDynamic("maxPacketSize")(maxPacketSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerConfig]
+  }
+}
+

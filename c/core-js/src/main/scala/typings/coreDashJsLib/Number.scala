@@ -17,3 +17,12 @@ trait Number extends js.Object {
   var iterator: js.Function0[nodeLib.IterableIterator[scala.Double]]
 }
 
+object Number {
+  @scala.inline
+  def apply(iterator: js.Function0[nodeLib.IterableIterator[scala.Double]]): Number = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iterator")(iterator)
+    __obj.asInstanceOf[Number]
+  }
+}
+

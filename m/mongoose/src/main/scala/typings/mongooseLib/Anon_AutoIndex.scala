@@ -13,3 +13,12 @@ trait Anon_AutoIndex extends js.Object {
   var autoIndex: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_AutoIndex {
+  @scala.inline
+  def apply(autoIndex: js.UndefOr[scala.Boolean] = js.undefined): Anon_AutoIndex = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoIndex)) __obj.updateDynamic("autoIndex")(autoIndex)
+    __obj.asInstanceOf[Anon_AutoIndex]
+  }
+}
+

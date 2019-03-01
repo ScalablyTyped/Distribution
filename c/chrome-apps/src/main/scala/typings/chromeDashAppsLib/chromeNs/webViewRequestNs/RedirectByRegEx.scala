@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("chrome.webViewRequest.RedirectByRegEx")
 @js.native
-class RedirectByRegEx protected () extends js.Object {
+class RedirectByRegEx protected () extends OnRequestActions {
   def this(parameters: RedirectByRegExParams) = this()
   val instanceType: java.lang.String = js.native
   val typeGuard: chromeDashAppsLib.chromeDashAppsLibStrings.RedirectByRegEx = js.native

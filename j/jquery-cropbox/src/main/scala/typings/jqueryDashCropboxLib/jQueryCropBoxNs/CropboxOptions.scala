@@ -36,3 +36,26 @@ trait CropboxOptions extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CropboxOptions {
+  @scala.inline
+  def apply(
+    controls: js.Any = null,
+    height: scala.Int | scala.Double = null,
+    maxZoom: scala.Int | scala.Double = null,
+    result: CropboxArea = null,
+    showControls: ShowControls = null,
+    width: scala.Int | scala.Double = null,
+    zoom: scala.Int | scala.Double = null
+  ): CropboxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (controls != null) __obj.updateDynamic("controls")(controls)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result)
+    if (showControls != null) __obj.updateDynamic("showControls")(showControls)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CropboxOptions]
+  }
+}
+

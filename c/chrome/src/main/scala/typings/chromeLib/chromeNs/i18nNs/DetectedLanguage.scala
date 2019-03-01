@@ -14,3 +14,13 @@ trait DetectedLanguage extends js.Object {
   var percentage: scala.Double
 }
 
+object DetectedLanguage {
+  @scala.inline
+  def apply(language: java.lang.String, percentage: scala.Double): DetectedLanguage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("percentage")(percentage)
+    __obj.asInstanceOf[DetectedLanguage]
+  }
+}
+

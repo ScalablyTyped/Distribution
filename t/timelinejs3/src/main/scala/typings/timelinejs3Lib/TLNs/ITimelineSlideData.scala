@@ -50,3 +50,30 @@ trait ITimelineSlideData extends js.Object {
   var unique_id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITimelineSlideData {
+  @scala.inline
+  def apply(
+    autolink: js.UndefOr[scala.Boolean] = js.undefined,
+    background: timelinejs3Lib.Anon_Color = null,
+    display_date: java.lang.String = null,
+    end_date: ITimelineDate = null,
+    group: java.lang.String = null,
+    media: ITimelineMedia = null,
+    start_date: ITimelineDate = null,
+    text: ITimelineText = null,
+    unique_id: java.lang.String = null
+  ): ITimelineSlideData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autolink)) __obj.updateDynamic("autolink")(autolink)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (display_date != null) __obj.updateDynamic("display_date")(display_date)
+    if (end_date != null) __obj.updateDynamic("end_date")(end_date)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (media != null) __obj.updateDynamic("media")(media)
+    if (start_date != null) __obj.updateDynamic("start_date")(start_date)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (unique_id != null) __obj.updateDynamic("unique_id")(unique_id)
+    __obj.asInstanceOf[ITimelineSlideData]
+  }
+}
+

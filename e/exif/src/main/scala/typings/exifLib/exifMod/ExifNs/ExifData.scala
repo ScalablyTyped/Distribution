@@ -14,3 +14,24 @@ trait ExifData extends js.Object {
   var thumbnail: exifLib.Anon_Compression
 }
 
+object ExifData {
+  @scala.inline
+  def apply(
+    exif: exifLib.Anon_ApertureValue,
+    gps: exifLib.Anon_GPSAltitude,
+    image: exifLib.Anon_Copyright,
+    interoperability: exifLib.Anon_InteropIndex,
+    makernote: exifLib.Anon_AutoBracketing,
+    thumbnail: exifLib.Anon_Compression
+  ): ExifData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exif")(exif)
+    __obj.updateDynamic("gps")(gps)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("interoperability")(interoperability)
+    __obj.updateDynamic("makernote")(makernote)
+    __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[ExifData]
+  }
+}
+

@@ -27,3 +27,32 @@ trait FlashFill extends js.Object {
   var style: java.lang.String
 }
 
+object FlashFill {
+  @scala.inline
+  def apply(
+    bitmapIsClipped: scala.Boolean,
+    bitmapPath: java.lang.String,
+    color: js.Any,
+    colorArray: js.Array[_],
+    focalPoint: scala.Double,
+    linearRGB: scala.Boolean,
+    matrix: FlashMatrix,
+    overflow: java.lang.String,
+    posArray: js.Array[scala.Double],
+    style: java.lang.String
+  ): FlashFill = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bitmapIsClipped")(bitmapIsClipped)
+    __obj.updateDynamic("bitmapPath")(bitmapPath)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("colorArray")(colorArray)
+    __obj.updateDynamic("focalPoint")(focalPoint)
+    __obj.updateDynamic("linearRGB")(linearRGB)
+    __obj.updateDynamic("matrix")(matrix)
+    __obj.updateDynamic("overflow")(overflow)
+    __obj.updateDynamic("posArray")(posArray)
+    __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[FlashFill]
+  }
+}
+

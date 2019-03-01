@@ -7,19 +7,25 @@ import scala.scalajs.js.annotation._
 
 object heremapsLibStrings {
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait bevel
+    extends heremapsLib.HNs.mapNs.SpatialStyleNs.LineJoin
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait butt
+    extends heremapsLib.HNs.mapNs.SpatialStyleNs.LineCap
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait miter
+    extends heremapsLib.HNs.mapNs.SpatialStyleNs.LineJoin
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends heremapsLib.HNs.mapNs.SpatialStyleNs.LineCap
+       with heremapsLib.HNs.mapNs.SpatialStyleNs.LineJoin
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends heremapsLib.HNs.mapNs.SpatialStyleNs.LineCap
   
   @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]

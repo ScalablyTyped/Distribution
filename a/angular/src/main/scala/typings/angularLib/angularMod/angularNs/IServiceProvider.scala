@@ -11,3 +11,12 @@ trait IServiceProvider extends js.Object {
   var $get: js.Any
 }
 
+object IServiceProvider {
+  @scala.inline
+  def apply($get: js.Any): IServiceProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$get")($get)
+    __obj.asInstanceOf[IServiceProvider]
+  }
+}
+

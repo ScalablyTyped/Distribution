@@ -36,3 +36,24 @@ trait ASPxClientGridViewContextMenuItemClickEventArgs extends ASPxClientProcessi
   var usePostBack: scala.Boolean
 }
 
+object ASPxClientGridViewContextMenuItemClickEventArgs {
+  @scala.inline
+  def apply(
+    elementIndex: scala.Double,
+    handled: scala.Boolean,
+    item: ASPxClientMenuItem,
+    objectType: java.lang.String,
+    processOnServer: scala.Boolean,
+    usePostBack: scala.Boolean
+  ): ASPxClientGridViewContextMenuItemClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("elementIndex")(elementIndex)
+    __obj.updateDynamic("handled")(handled)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("objectType")(objectType)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.updateDynamic("usePostBack")(usePostBack)
+    __obj.asInstanceOf[ASPxClientGridViewContextMenuItemClickEventArgs]
+  }
+}
+

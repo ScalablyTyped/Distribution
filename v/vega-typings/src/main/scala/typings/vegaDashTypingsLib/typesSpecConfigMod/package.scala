@@ -22,7 +22,6 @@ package object typesSpecConfigMod {
     vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
     vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
   ]
-  type AxisConfigKeys = vegaDashTypingsLib.vegaDashTypingsLibStrings.axis | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisX | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisY | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisTop | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisRight | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisBottom | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisLeft | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisBand
   type DefaultsConfig = stdLib.Record[
     vegaDashTypingsLib.vegaDashTypingsLibStrings.prevent | vegaDashTypingsLib.vegaDashTypingsLibStrings.allow, 
     scala.Boolean | js.Array[vegaDashTypingsLib.typesSpecStreamMod.EventType]

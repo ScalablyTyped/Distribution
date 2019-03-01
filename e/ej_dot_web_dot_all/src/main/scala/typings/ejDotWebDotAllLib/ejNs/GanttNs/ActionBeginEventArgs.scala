@@ -38,3 +38,32 @@ trait ActionBeginEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActionBeginEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    columnName: java.lang.String = null,
+    columnSortDirection: java.lang.String = null,
+    data: java.lang.String = null,
+    element: java.lang.String = null,
+    keyValue: java.lang.String = null,
+    model: js.Any = null,
+    recordIndex: scala.Int | scala.Double = null,
+    requestType: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ActionBeginEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (columnSortDirection != null) __obj.updateDynamic("columnSortDirection")(columnSortDirection)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (keyValue != null) __obj.updateDynamic("keyValue")(keyValue)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (recordIndex != null) __obj.updateDynamic("recordIndex")(recordIndex.asInstanceOf[js.Any])
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ActionBeginEventArgs]
+  }
+}
+

@@ -21,3 +21,13 @@ trait MetricValue extends js.Object {
   var variance: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MetricValue {
+  @scala.inline
+  def apply(value: java.lang.String = null, variance: java.lang.String = null): MetricValue = {
+    val __obj = js.Dynamic.literal()
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (variance != null) __obj.updateDynamic("variance")(variance)
+    __obj.asInstanceOf[MetricValue]
+  }
+}
+

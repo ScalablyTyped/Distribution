@@ -24,3 +24,20 @@ trait CertificateSigningRequestList extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
 }
 
+object CertificateSigningRequestList {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`,
+    items: js.Array[CertificateSigningRequest],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequestList,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ListMeta
+  ): CertificateSigningRequestList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[CertificateSigningRequestList]
+  }
+}
+

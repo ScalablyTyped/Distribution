@@ -13,3 +13,12 @@ trait SetMaintenancePolicyRequest extends js.Object {
   var maintenancePolicy: js.UndefOr[MaintenancePolicy] = js.undefined
 }
 
+object SetMaintenancePolicyRequest {
+  @scala.inline
+  def apply(maintenancePolicy: MaintenancePolicy = null): SetMaintenancePolicyRequest = {
+    val __obj = js.Dynamic.literal()
+    if (maintenancePolicy != null) __obj.updateDynamic("maintenancePolicy")(maintenancePolicy)
+    __obj.asInstanceOf[SetMaintenancePolicyRequest]
+  }
+}
+

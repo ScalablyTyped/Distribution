@@ -38,3 +38,42 @@ trait Printer extends js.Object {
   def print(path: FastPath[_], options: ParserOptions, print: js.Function1[/* path */ FastPath[_], Doc]): Doc
 }
 
+object Printer {
+  @scala.inline
+  def apply(
+    print: js.Function3[FastPath[_], ParserOptions, js.Function1[/* path */ FastPath[_], Doc], Doc],
+    canAttachComment: js.Function1[/* node */ js.Any, scala.Boolean] = null,
+    embed: js.Function4[
+      /* path */ FastPath[_], 
+      /* print */ js.Function1[/* path */ FastPath[_], Doc], 
+      /* textToDoc */ js.Function2[/* text */ java.lang.String, /* options */ Options, Doc], 
+      /* options */ ParserOptions, 
+      Doc | scala.Null
+    ] = null,
+    handleComments: prettierLib.Anon_Ast = null,
+    hasPrettierIgnore: js.Function1[/* path */ FastPath[_], scala.Boolean] = null,
+    insertPragma: js.Function1[/* text */ java.lang.String, java.lang.String] = null,
+    massageAstNode: js.Function3[/* node */ js.Any, /* newNode */ js.Any, /* parent */ js.Any, _] = null,
+    printComments: js.Function4[
+      /* path */ FastPath[_], 
+      /* print */ js.Function1[/* path */ FastPath[_], Doc], 
+      /* options */ ParserOptions, 
+      /* needsSemi */ scala.Boolean, 
+      Doc
+    ] = null,
+    willPrintOwnComments: js.Function1[/* path */ FastPath[_], scala.Boolean] = null
+  ): Printer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("print")(print)
+    if (canAttachComment != null) __obj.updateDynamic("canAttachComment")(canAttachComment)
+    if (embed != null) __obj.updateDynamic("embed")(embed)
+    if (handleComments != null) __obj.updateDynamic("handleComments")(handleComments)
+    if (hasPrettierIgnore != null) __obj.updateDynamic("hasPrettierIgnore")(hasPrettierIgnore)
+    if (insertPragma != null) __obj.updateDynamic("insertPragma")(insertPragma)
+    if (massageAstNode != null) __obj.updateDynamic("massageAstNode")(massageAstNode)
+    if (printComments != null) __obj.updateDynamic("printComments")(printComments)
+    if (willPrintOwnComments != null) __obj.updateDynamic("willPrintOwnComments")(willPrintOwnComments)
+    __obj.asInstanceOf[Printer]
+  }
+}
+

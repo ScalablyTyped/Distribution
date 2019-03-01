@@ -24,3 +24,26 @@ trait IMenuItem extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IMenuItem {
+  @scala.inline
+  def apply(
+    action: js.Function1[/* $event */ angularLib.angularMod.angularNs.IAngularEvent, scala.Unit] = null,
+    active: js.Function0[scala.Boolean] = null,
+    context: js.Any = null,
+    icon: java.lang.String = null,
+    leaveOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    shown: js.Function0[scala.Boolean] = null,
+    title: java.lang.String = null
+  ): IMenuItem = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (!js.isUndefined(leaveOpen)) __obj.updateDynamic("leaveOpen")(leaveOpen)
+    if (shown != null) __obj.updateDynamic("shown")(shown)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[IMenuItem]
+  }
+}
+

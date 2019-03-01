@@ -28,3 +28,20 @@ trait ParticipantResult extends js.Object {
   var result: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ParticipantResult {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    participantId: java.lang.String = null,
+    placing: scala.Int | scala.Double = null,
+    result: java.lang.String = null
+  ): ParticipantResult = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (participantId != null) __obj.updateDynamic("participantId")(participantId)
+    if (placing != null) __obj.updateDynamic("placing")(placing.asInstanceOf[js.Any])
+    if (result != null) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[ParticipantResult]
+  }
+}
+

@@ -54,3 +54,30 @@ trait IConfig extends js.Object {
   var url: java.lang.String
 }
 
+object IConfig {
+  @scala.inline
+  def apply(
+    schema: js.Object,
+    url: java.lang.String,
+    Promise: js.Any = null,
+    createSocket: js.Any = null,
+    mixins: js.Array[IMixin] = null,
+    protocol: js.Any = null,
+    requestInterceptors: js.Array[IRequestInterceptors] = null,
+    responseInterceptors: js.Array[IResponseInterceptors] = null,
+    suspendOnClose: js.UndefOr[scala.Boolean] = js.undefined
+  ): IConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("schema")(schema)
+    __obj.updateDynamic("url")(url)
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
+    if (createSocket != null) __obj.updateDynamic("createSocket")(createSocket)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (requestInterceptors != null) __obj.updateDynamic("requestInterceptors")(requestInterceptors)
+    if (responseInterceptors != null) __obj.updateDynamic("responseInterceptors")(responseInterceptors)
+    if (!js.isUndefined(suspendOnClose)) __obj.updateDynamic("suspendOnClose")(suspendOnClose)
+    __obj.asInstanceOf[IConfig]
+  }
+}
+

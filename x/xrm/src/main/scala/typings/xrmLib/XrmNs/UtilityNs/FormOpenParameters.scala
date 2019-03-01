@@ -30,3 +30,18 @@ trait FormOpenParameters extends OpenParameters {
   var navbar: js.UndefOr[xrmLib.XrmNs.UrlNs.NavBarDisplay] = js.undefined
 }
 
+object FormOpenParameters {
+  @scala.inline
+  def apply(
+    cmdbar: xrmLib.XrmNs.UrlNs.CmdBarDisplay = null,
+    formid: java.lang.String = null,
+    navbar: xrmLib.XrmNs.UrlNs.NavBarDisplay = null
+  ): FormOpenParameters = {
+    val __obj = js.Dynamic.literal()
+    if (cmdbar != null) __obj.updateDynamic("cmdbar")(cmdbar)
+    if (formid != null) __obj.updateDynamic("formid")(formid)
+    if (navbar != null) __obj.updateDynamic("navbar")(navbar)
+    __obj.asInstanceOf[FormOpenParameters]
+  }
+}
+

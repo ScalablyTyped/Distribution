@@ -24,3 +24,23 @@ trait IgHierarchicalGridColumnLayout
   var primaryKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgHierarchicalGridColumnLayout {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgHierarchicalGridColumnLayout
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    foreignKey: java.lang.String = null,
+    key: java.lang.String = null,
+    primaryKey: java.lang.String = null
+  ): IgHierarchicalGridColumnLayout = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    __obj.asInstanceOf[IgHierarchicalGridColumnLayout]
+  }
+}
+

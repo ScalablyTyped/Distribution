@@ -12,3 +12,20 @@ trait I18n extends js.Object {
   var skintext: java.lang.String
 }
 
+object I18n {
+  @scala.inline
+  def apply(
+    categories: stdLib.Record[CategoryName, java.lang.String],
+    notfound: java.lang.String,
+    search: java.lang.String,
+    skintext: java.lang.String
+  ): I18n = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("categories")(categories)
+    __obj.updateDynamic("notfound")(notfound)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("skintext")(skintext)
+    __obj.asInstanceOf[I18n]
+  }
+}
+

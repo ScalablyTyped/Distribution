@@ -28,3 +28,22 @@ trait DeliveryChannelState extends js.Object {
   val snsTopicArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object DeliveryChannelState {
+  @scala.inline
+  def apply(
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3BucketName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3KeyPrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    snapshotDeliveryProperties: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DeliveryFrequencyInput] = null,
+    snsTopicArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): DeliveryChannelState = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (s3BucketName != null) __obj.updateDynamic("s3BucketName")(s3BucketName.asInstanceOf[js.Any])
+    if (s3KeyPrefix != null) __obj.updateDynamic("s3KeyPrefix")(s3KeyPrefix.asInstanceOf[js.Any])
+    if (snapshotDeliveryProperties != null) __obj.updateDynamic("snapshotDeliveryProperties")(snapshotDeliveryProperties.asInstanceOf[js.Any])
+    if (snsTopicArn != null) __obj.updateDynamic("snsTopicArn")(snsTopicArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeliveryChannelState]
+  }
+}
+

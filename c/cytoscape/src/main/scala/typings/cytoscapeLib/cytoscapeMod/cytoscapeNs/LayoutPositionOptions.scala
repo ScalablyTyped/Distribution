@@ -33,3 +33,34 @@ trait LayoutPositionOptions extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LayoutPositionOptions {
+  @scala.inline
+  def apply(
+    eles: CollectionArgument,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDuration: scala.Int | scala.Double = null,
+    animationEasing: scala.Int | scala.Double = null,
+    fit: js.UndefOr[scala.Boolean] = js.undefined,
+    padding: scala.Int | scala.Double = null,
+    pan: Position = null,
+    ready: js.UndefOr[scala.Nothing] = js.undefined,
+    spacingFactor: scala.Int | scala.Double = null,
+    stop: js.UndefOr[scala.Nothing] = js.undefined,
+    zoom: scala.Int | scala.Double = null
+  ): LayoutPositionOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eles")(eles.asInstanceOf[js.Any])
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (pan != null) __obj.updateDynamic("pan")(pan)
+    if (!js.isUndefined(ready)) __obj.updateDynamic("ready")(ready)
+    if (spacingFactor != null) __obj.updateDynamic("spacingFactor")(spacingFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(stop)) __obj.updateDynamic("stop")(stop)
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LayoutPositionOptions]
+  }
+}
+

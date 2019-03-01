@@ -14,3 +14,18 @@ trait SavedColumn extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SavedColumn {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    savedColumnName: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): SavedColumn = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (savedColumnName != null) __obj.updateDynamic("savedColumnName")(savedColumnName)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SavedColumn]
+  }
+}
+

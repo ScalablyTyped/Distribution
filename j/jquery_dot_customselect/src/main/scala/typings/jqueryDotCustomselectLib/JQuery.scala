@@ -9,3 +9,12 @@ trait JQuery extends js.Object {
   def customSelect(`val`: JQueryCustomSelectOption): JQuery
 }
 
+object JQuery {
+  @scala.inline
+  def apply(customSelect: js.Function1[JQueryCustomSelectOption, JQuery]): JQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customSelect")(customSelect)
+    __obj.asInstanceOf[JQuery]
+  }
+}
+

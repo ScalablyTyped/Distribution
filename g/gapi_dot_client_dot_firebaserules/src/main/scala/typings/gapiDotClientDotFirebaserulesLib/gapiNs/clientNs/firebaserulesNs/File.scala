@@ -14,3 +14,18 @@ trait File extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object File {
+  @scala.inline
+  def apply(
+    content: java.lang.String = null,
+    fingerprint: java.lang.String = null,
+    name: java.lang.String = null
+  ): File = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[File]
+  }
+}
+

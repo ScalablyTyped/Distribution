@@ -16,3 +16,27 @@ trait FileTypeSettings extends js.Object {
   def video(vType: java.lang.String, vName: java.lang.String): scala.Boolean
 }
 
+object FileTypeSettings {
+  @scala.inline
+  def apply(
+    audio: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    flash: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    html: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    image: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    `object`: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    other: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    text: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    video: js.Function2[java.lang.String, java.lang.String, scala.Boolean]
+  ): FileTypeSettings = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("audio")(audio)
+    __obj.updateDynamic("flash")(flash)
+    __obj.updateDynamic("html")(html)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("other")(other)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("video")(video)
+    __obj.asInstanceOf[FileTypeSettings]
+  }
+}
+

@@ -31,3 +31,26 @@ trait XParagraphAppend
   ): XTextRange
 }
 
+object XParagraphAppend {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    finishParagraph: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, XTextRange],
+    finishParagraphInsert: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XTextRange, 
+      XTextRange
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XParagraphAppend = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("finishParagraph")(finishParagraph)
+    __obj.updateDynamic("finishParagraphInsert")(finishParagraphInsert)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XParagraphAppend]
+  }
+}
+

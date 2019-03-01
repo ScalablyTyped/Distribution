@@ -23,3 +23,24 @@ trait RouterBgpPeer extends js.Object {
   var peerIpAddress: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RouterBgpPeer {
+  @scala.inline
+  def apply(
+    advertisedRoutePriority: scala.Int | scala.Double = null,
+    interfaceName: java.lang.String = null,
+    ipAddress: java.lang.String = null,
+    name: java.lang.String = null,
+    peerAsn: scala.Int | scala.Double = null,
+    peerIpAddress: java.lang.String = null
+  ): RouterBgpPeer = {
+    val __obj = js.Dynamic.literal()
+    if (advertisedRoutePriority != null) __obj.updateDynamic("advertisedRoutePriority")(advertisedRoutePriority.asInstanceOf[js.Any])
+    if (interfaceName != null) __obj.updateDynamic("interfaceName")(interfaceName)
+    if (ipAddress != null) __obj.updateDynamic("ipAddress")(ipAddress)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (peerAsn != null) __obj.updateDynamic("peerAsn")(peerAsn.asInstanceOf[js.Any])
+    if (peerIpAddress != null) __obj.updateDynamic("peerIpAddress")(peerIpAddress)
+    __obj.asInstanceOf[RouterBgpPeer]
+  }
+}
+

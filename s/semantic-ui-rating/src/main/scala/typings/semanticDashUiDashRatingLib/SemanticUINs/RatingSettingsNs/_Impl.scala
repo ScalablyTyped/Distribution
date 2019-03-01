@@ -75,3 +75,40 @@ trait _Impl extends js.Object {
   def onRate(`this`: semanticDashUiDashRatingLib.JQuery, value: scala.Double): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    className: semanticDashUiDashRatingLib.SemanticUINs.RatingNs.ClassNameSettings,
+    clearable: semanticDashUiDashRatingLib.semanticDashUiDashRatingLibStrings.auto | scala.Boolean,
+    debug: scala.Boolean,
+    error: semanticDashUiDashRatingLib.SemanticUINs.RatingNs.ErrorSettings,
+    fireOnInit: scala.Boolean,
+    initialRating: scala.Double,
+    interactive: scala.Boolean,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onRate: js.Function2[semanticDashUiDashRatingLib.JQuery, scala.Double, scala.Unit],
+    performance: scala.Boolean,
+    selector: semanticDashUiDashRatingLib.SemanticUINs.RatingNs.SelectorSettings,
+    silent: scala.Boolean,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("clearable")(clearable.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("fireOnInit")(fireOnInit)
+    __obj.updateDynamic("initialRating")(initialRating)
+    __obj.updateDynamic("interactive")(interactive)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("onRate")(onRate)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

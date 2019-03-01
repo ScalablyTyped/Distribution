@@ -192,3 +192,62 @@ trait RangeData extends js.Object {
   var values: js.UndefOr[js.Array[js.Array[_]]] = js.undefined
 }
 
+object RangeData {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    addressLocal: java.lang.String = null,
+    cellCount: scala.Int | scala.Double = null,
+    columnCount: scala.Int | scala.Double = null,
+    columnHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    columnIndex: scala.Int | scala.Double = null,
+    conditionalFormats: js.Array[ConditionalFormatData] = null,
+    dataValidation: DataValidationData = null,
+    format: RangeFormatData = null,
+    formulas: js.Array[js.Array[_]] = null,
+    formulasLocal: js.Array[js.Array[_]] = null,
+    formulasR1C1: js.Array[js.Array[_]] = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    hyperlink: officeDashJsLib.ExcelNs.RangeHyperlink = null,
+    isEntireColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    isEntireRow: js.UndefOr[scala.Boolean] = js.undefined,
+    numberFormat: js.Array[js.Array[_]] = null,
+    numberFormatLocal: js.Array[js.Array[_]] = null,
+    rowCount: scala.Int | scala.Double = null,
+    rowHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    rowIndex: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    text: js.Array[js.Array[java.lang.String]] = null,
+    valueTypes: js.Array[js.Array[officeDashJsLib.ExcelNs.RangeValueType]] = null,
+    values: js.Array[js.Array[_]] = null
+  ): RangeData = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (addressLocal != null) __obj.updateDynamic("addressLocal")(addressLocal)
+    if (cellCount != null) __obj.updateDynamic("cellCount")(cellCount.asInstanceOf[js.Any])
+    if (columnCount != null) __obj.updateDynamic("columnCount")(columnCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(columnHidden)) __obj.updateDynamic("columnHidden")(columnHidden)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (conditionalFormats != null) __obj.updateDynamic("conditionalFormats")(conditionalFormats)
+    if (dataValidation != null) __obj.updateDynamic("dataValidation")(dataValidation)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formulas != null) __obj.updateDynamic("formulas")(formulas)
+    if (formulasLocal != null) __obj.updateDynamic("formulasLocal")(formulasLocal)
+    if (formulasR1C1 != null) __obj.updateDynamic("formulasR1C1")(formulasR1C1)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (!js.isUndefined(isEntireColumn)) __obj.updateDynamic("isEntireColumn")(isEntireColumn)
+    if (!js.isUndefined(isEntireRow)) __obj.updateDynamic("isEntireRow")(isEntireRow)
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (numberFormatLocal != null) __obj.updateDynamic("numberFormatLocal")(numberFormatLocal)
+    if (rowCount != null) __obj.updateDynamic("rowCount")(rowCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(rowHidden)) __obj.updateDynamic("rowHidden")(rowHidden)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (valueTypes != null) __obj.updateDynamic("valueTypes")(valueTypes)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[RangeData]
+  }
+}
+

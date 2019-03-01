@@ -25,3 +25,26 @@ trait HardwareStatus extends js.Object {
   var skinTemperatures: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object HardwareStatus {
+  @scala.inline
+  def apply(
+    batteryTemperatures: js.Array[scala.Double] = null,
+    cpuTemperatures: js.Array[scala.Double] = null,
+    cpuUsages: js.Array[scala.Double] = null,
+    createTime: java.lang.String = null,
+    fanSpeeds: js.Array[scala.Double] = null,
+    gpuTemperatures: js.Array[scala.Double] = null,
+    skinTemperatures: js.Array[scala.Double] = null
+  ): HardwareStatus = {
+    val __obj = js.Dynamic.literal()
+    if (batteryTemperatures != null) __obj.updateDynamic("batteryTemperatures")(batteryTemperatures)
+    if (cpuTemperatures != null) __obj.updateDynamic("cpuTemperatures")(cpuTemperatures)
+    if (cpuUsages != null) __obj.updateDynamic("cpuUsages")(cpuUsages)
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (fanSpeeds != null) __obj.updateDynamic("fanSpeeds")(fanSpeeds)
+    if (gpuTemperatures != null) __obj.updateDynamic("gpuTemperatures")(gpuTemperatures)
+    if (skinTemperatures != null) __obj.updateDynamic("skinTemperatures")(skinTemperatures)
+    __obj.asInstanceOf[HardwareStatus]
+  }
+}
+

@@ -36,3 +36,22 @@ trait FlexPersistentVolumeSource extends js.Object {
   val secretRef: SecretReference
 }
 
+object FlexPersistentVolumeSource {
+  @scala.inline
+  def apply(
+    driver: java.lang.String,
+    fsType: java.lang.String,
+    options: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    readOnly: scala.Boolean,
+    secretRef: SecretReference
+  ): FlexPersistentVolumeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("driver")(driver)
+    __obj.updateDynamic("fsType")(fsType)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.updateDynamic("secretRef")(secretRef)
+    __obj.asInstanceOf[FlexPersistentVolumeSource]
+  }
+}
+

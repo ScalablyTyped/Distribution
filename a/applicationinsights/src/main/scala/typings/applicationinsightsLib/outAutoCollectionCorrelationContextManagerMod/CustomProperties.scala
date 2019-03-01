@@ -19,3 +19,16 @@ trait CustomProperties extends js.Object {
   def setProperty(key: java.lang.String, value: java.lang.String): scala.Unit
 }
 
+object CustomProperties {
+  @scala.inline
+  def apply(
+    getProperty: js.Function1[java.lang.String, java.lang.String],
+    setProperty: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): CustomProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getProperty")(getProperty)
+    __obj.updateDynamic("setProperty")(setProperty)
+    __obj.asInstanceOf[CustomProperties]
+  }
+}
+

@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio-video", "RemoteVideoTrackPublication")
 @js.native
-class RemoteVideoTrackPublication () extends RemoteTrackPublication {
+class RemoteVideoTrackPublication ()
+  extends RemoteTrackPublication
+     with VideoTrackPublication {
   @JSName("kind")
   var kind_RemoteVideoTrackPublication: twilioDashVideoLib.twilioDashVideoLibStrings.video = js.native
   @JSName("track")

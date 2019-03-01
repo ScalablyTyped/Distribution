@@ -483,3 +483,660 @@ trait IFactory extends js.Object {
   ): typescriptDashServicesLib.TypeScriptNs.WithStatementSyntax
 }
 
+object IFactory {
+  @scala.inline
+  def apply(
+    argumentList: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.TypeArgumentListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ArgumentListSyntax
+    ],
+    arrayLiteralExpression: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ArrayLiteralExpressionSyntax
+    ],
+    arrayType: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ArrayTypeSyntax
+    ],
+    binaryExpression: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.SyntaxKind, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.BinaryExpressionSyntax
+    ],
+    block: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax
+    ],
+    breakStatement: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.BreakStatementSyntax
+    ],
+    callSignature: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax
+    ],
+    caseSwitchClause: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.CaseSwitchClauseSyntax
+    ],
+    castExpression: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IUnaryExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.CastExpressionSyntax
+    ],
+    catchClause: js.Function6[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.CatchClauseSyntax
+    ],
+    classDeclaration: js.Function8[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ClassDeclarationSyntax
+    ],
+    conditionalExpression: js.Function5[
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ConditionalExpressionSyntax
+    ],
+    constraint: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ConstraintSyntax
+    ],
+    constructSignature: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ConstructSignatureSyntax
+    ],
+    constructorDeclaration: js.Function5[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ConstructorDeclarationSyntax
+    ],
+    constructorType: js.Function5[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ConstructorTypeSyntax
+    ],
+    continueStatement: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ContinueStatementSyntax
+    ],
+    debuggerStatement: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.DebuggerStatementSyntax
+    ],
+    defaultSwitchClause: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.DefaultSwitchClauseSyntax
+    ],
+    deleteExpression: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IUnaryExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.DeleteExpressionSyntax
+    ],
+    doStatement: js.Function7[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.DoStatementSyntax
+    ],
+    elementAccessExpression: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ElementAccessExpressionSyntax
+    ],
+    elseClause: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ElseClauseSyntax
+    ],
+    emptyStatement: js.Function1[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.EmptyStatementSyntax
+    ],
+    enumDeclaration: js.Function6[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.EnumDeclarationSyntax
+    ],
+    enumElement: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.EqualsValueClauseSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.EnumElementSyntax
+    ],
+    equalsValueClause: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.EqualsValueClauseSyntax
+    ],
+    exportAssignment: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ExportAssignmentSyntax
+    ],
+    expressionStatement: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ExpressionStatementSyntax
+    ],
+    externalModuleReference: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ExternalModuleReferenceSyntax
+    ],
+    finallyClause: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.FinallyClauseSyntax
+    ],
+    forInStatement: js.Function8[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.VariableDeclarationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ForInStatementSyntax
+    ],
+    forStatement: js.Function10[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.VariableDeclarationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ForStatementSyntax
+    ],
+    functionDeclaration: js.Function6[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.FunctionDeclarationSyntax
+    ],
+    functionExpression: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.FunctionExpressionSyntax
+    ],
+    functionPropertyAssignment: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.FunctionPropertyAssignmentSyntax
+    ],
+    functionType: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.FunctionTypeSyntax
+    ],
+    genericType: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.INameSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.TypeArgumentListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.GenericTypeSyntax
+    ],
+    getAccessor: js.Function6[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.GetAccessorSyntax
+    ],
+    heritageClause: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.SyntaxKind, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.HeritageClauseSyntax
+    ],
+    ifStatement: js.Function6[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ElseClauseSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.IfStatementSyntax
+    ],
+    importDeclaration: js.Function6[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IModuleReferenceSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ImportDeclarationSyntax
+    ],
+    indexMemberDeclaration: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.IndexSignatureSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IndexMemberDeclarationSyntax
+    ],
+    indexSignature: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ParameterSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.IndexSignatureSyntax
+    ],
+    interfaceDeclaration: js.Function6[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ObjectTypeSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.InterfaceDeclarationSyntax
+    ],
+    invocationExpression: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.IMemberExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ArgumentListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.InvocationExpressionSyntax
+    ],
+    labeledStatement: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.LabeledStatementSyntax
+    ],
+    memberAccessExpression: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.MemberAccessExpressionSyntax
+    ],
+    memberFunctionDeclaration: js.Function5[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.MemberFunctionDeclarationSyntax
+    ],
+    memberVariableDeclaration: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.VariableDeclaratorSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.MemberVariableDeclarationSyntax
+    ],
+    methodSignature: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.MethodSignatureSyntax
+    ],
+    moduleDeclaration: js.Function7[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.INameSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ModuleDeclarationSyntax
+    ],
+    moduleNameModuleReference: js.Function1[
+      typescriptDashServicesLib.TypeScriptNs.INameSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ModuleNameModuleReferenceSyntax
+    ],
+    objectCreationExpression: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IMemberExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ArgumentListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ObjectCreationExpressionSyntax
+    ],
+    objectLiteralExpression: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ObjectLiteralExpressionSyntax
+    ],
+    objectType: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ObjectTypeSyntax
+    ],
+    omittedExpression: js.Function0[typescriptDashServicesLib.TypeScriptNs.OmittedExpressionSyntax],
+    parameter: js.Function6[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.EqualsValueClauseSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ParameterSyntax
+    ],
+    parameterList: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax
+    ],
+    parenthesizedArrowFunctionExpression: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ParenthesizedArrowFunctionExpressionSyntax
+    ],
+    parenthesizedExpression: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ParenthesizedExpressionSyntax
+    ],
+    postfixUnaryExpression: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.SyntaxKind, 
+      typescriptDashServicesLib.TypeScriptNs.IMemberExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.PostfixUnaryExpressionSyntax
+    ],
+    prefixUnaryExpression: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.SyntaxKind, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IUnaryExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.PrefixUnaryExpressionSyntax
+    ],
+    propertySignature: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.PropertySignatureSyntax
+    ],
+    qualifiedName: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.INameSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.QualifiedNameSyntax
+    ],
+    returnStatement: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ReturnStatementSyntax
+    ],
+    setAccessor: js.Function5[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.SetAccessorSyntax
+    ],
+    simpleArrowFunctionExpression: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.SimpleArrowFunctionExpressionSyntax
+    ],
+    simplePropertyAssignment: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.SimplePropertyAssignmentSyntax
+    ],
+    sourceUnit: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.SourceUnitSyntax
+    ],
+    switchStatement: js.Function7[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.SwitchStatementSyntax
+    ],
+    throwStatement: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ThrowStatementSyntax
+    ],
+    tryStatement: js.Function4[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.BlockSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.CatchClauseSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.FinallyClauseSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.TryStatementSyntax
+    ],
+    typeAnnotation: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax
+    ],
+    typeArgumentList: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeArgumentListSyntax
+    ],
+    typeOfExpression: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IUnaryExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.TypeOfExpressionSyntax
+    ],
+    typeParameter: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ConstraintSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.TypeParameterSyntax
+    ],
+    typeParameterList: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax
+    ],
+    typeQuery: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.INameSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.TypeQuerySyntax
+    ],
+    variableDeclaration: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.VariableDeclarationSyntax
+    ],
+    variableDeclarator: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.EqualsValueClauseSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.VariableDeclaratorSyntax
+    ],
+    variableStatement: js.Function3[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxList, 
+      typescriptDashServicesLib.TypeScriptNs.VariableDeclarationSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.VariableStatementSyntax
+    ],
+    voidExpression: js.Function2[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IUnaryExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.VoidExpressionSyntax
+    ],
+    whileStatement: js.Function5[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.WhileStatementSyntax
+    ],
+    withStatement: js.Function5[
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, 
+      typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, 
+      typescriptDashServicesLib.TypeScriptNs.WithStatementSyntax
+    ]
+  ): IFactory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("argumentList")(argumentList)
+    __obj.updateDynamic("arrayLiteralExpression")(arrayLiteralExpression)
+    __obj.updateDynamic("arrayType")(arrayType)
+    __obj.updateDynamic("binaryExpression")(binaryExpression)
+    __obj.updateDynamic("block")(block)
+    __obj.updateDynamic("breakStatement")(breakStatement)
+    __obj.updateDynamic("callSignature")(callSignature)
+    __obj.updateDynamic("caseSwitchClause")(caseSwitchClause)
+    __obj.updateDynamic("castExpression")(castExpression)
+    __obj.updateDynamic("catchClause")(catchClause)
+    __obj.updateDynamic("classDeclaration")(classDeclaration)
+    __obj.updateDynamic("conditionalExpression")(conditionalExpression)
+    __obj.updateDynamic("constraint")(constraint)
+    __obj.updateDynamic("constructSignature")(constructSignature)
+    __obj.updateDynamic("constructorDeclaration")(constructorDeclaration)
+    __obj.updateDynamic("constructorType")(constructorType)
+    __obj.updateDynamic("continueStatement")(continueStatement)
+    __obj.updateDynamic("debuggerStatement")(debuggerStatement)
+    __obj.updateDynamic("defaultSwitchClause")(defaultSwitchClause)
+    __obj.updateDynamic("deleteExpression")(deleteExpression)
+    __obj.updateDynamic("doStatement")(doStatement)
+    __obj.updateDynamic("elementAccessExpression")(elementAccessExpression)
+    __obj.updateDynamic("elseClause")(elseClause)
+    __obj.updateDynamic("emptyStatement")(emptyStatement)
+    __obj.updateDynamic("enumDeclaration")(enumDeclaration)
+    __obj.updateDynamic("enumElement")(enumElement)
+    __obj.updateDynamic("equalsValueClause")(equalsValueClause)
+    __obj.updateDynamic("exportAssignment")(exportAssignment)
+    __obj.updateDynamic("expressionStatement")(expressionStatement)
+    __obj.updateDynamic("externalModuleReference")(externalModuleReference)
+    __obj.updateDynamic("finallyClause")(finallyClause)
+    __obj.updateDynamic("forInStatement")(forInStatement)
+    __obj.updateDynamic("forStatement")(forStatement)
+    __obj.updateDynamic("functionDeclaration")(functionDeclaration)
+    __obj.updateDynamic("functionExpression")(functionExpression)
+    __obj.updateDynamic("functionPropertyAssignment")(functionPropertyAssignment)
+    __obj.updateDynamic("functionType")(functionType)
+    __obj.updateDynamic("genericType")(genericType)
+    __obj.updateDynamic("getAccessor")(getAccessor)
+    __obj.updateDynamic("heritageClause")(heritageClause)
+    __obj.updateDynamic("ifStatement")(ifStatement)
+    __obj.updateDynamic("importDeclaration")(importDeclaration)
+    __obj.updateDynamic("indexMemberDeclaration")(indexMemberDeclaration)
+    __obj.updateDynamic("indexSignature")(indexSignature)
+    __obj.updateDynamic("interfaceDeclaration")(interfaceDeclaration)
+    __obj.updateDynamic("invocationExpression")(invocationExpression)
+    __obj.updateDynamic("labeledStatement")(labeledStatement)
+    __obj.updateDynamic("memberAccessExpression")(memberAccessExpression)
+    __obj.updateDynamic("memberFunctionDeclaration")(memberFunctionDeclaration)
+    __obj.updateDynamic("memberVariableDeclaration")(memberVariableDeclaration)
+    __obj.updateDynamic("methodSignature")(methodSignature)
+    __obj.updateDynamic("moduleDeclaration")(moduleDeclaration)
+    __obj.updateDynamic("moduleNameModuleReference")(moduleNameModuleReference)
+    __obj.updateDynamic("objectCreationExpression")(objectCreationExpression)
+    __obj.updateDynamic("objectLiteralExpression")(objectLiteralExpression)
+    __obj.updateDynamic("objectType")(objectType)
+    __obj.updateDynamic("omittedExpression")(omittedExpression)
+    __obj.updateDynamic("parameter")(parameter)
+    __obj.updateDynamic("parameterList")(parameterList)
+    __obj.updateDynamic("parenthesizedArrowFunctionExpression")(parenthesizedArrowFunctionExpression)
+    __obj.updateDynamic("parenthesizedExpression")(parenthesizedExpression)
+    __obj.updateDynamic("postfixUnaryExpression")(postfixUnaryExpression)
+    __obj.updateDynamic("prefixUnaryExpression")(prefixUnaryExpression)
+    __obj.updateDynamic("propertySignature")(propertySignature)
+    __obj.updateDynamic("qualifiedName")(qualifiedName)
+    __obj.updateDynamic("returnStatement")(returnStatement)
+    __obj.updateDynamic("setAccessor")(setAccessor)
+    __obj.updateDynamic("simpleArrowFunctionExpression")(simpleArrowFunctionExpression)
+    __obj.updateDynamic("simplePropertyAssignment")(simplePropertyAssignment)
+    __obj.updateDynamic("sourceUnit")(sourceUnit)
+    __obj.updateDynamic("switchStatement")(switchStatement)
+    __obj.updateDynamic("throwStatement")(throwStatement)
+    __obj.updateDynamic("tryStatement")(tryStatement)
+    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    __obj.updateDynamic("typeArgumentList")(typeArgumentList)
+    __obj.updateDynamic("typeOfExpression")(typeOfExpression)
+    __obj.updateDynamic("typeParameter")(typeParameter)
+    __obj.updateDynamic("typeParameterList")(typeParameterList)
+    __obj.updateDynamic("typeQuery")(typeQuery)
+    __obj.updateDynamic("variableDeclaration")(variableDeclaration)
+    __obj.updateDynamic("variableDeclarator")(variableDeclarator)
+    __obj.updateDynamic("variableStatement")(variableStatement)
+    __obj.updateDynamic("voidExpression")(voidExpression)
+    __obj.updateDynamic("whileStatement")(whileStatement)
+    __obj.updateDynamic("withStatement")(withStatement)
+    __obj.asInstanceOf[IFactory]
+  }
+}
+

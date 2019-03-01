@@ -12,3 +12,14 @@ trait StateMachineEventDef extends js.Object {
   var to: java.lang.String
 }
 
+object StateMachineEventDef {
+  @scala.inline
+  def apply(from: js.Any, name: java.lang.String, to: java.lang.String): StateMachineEventDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[StateMachineEventDef]
+  }
+}
+

@@ -10,3 +10,13 @@ trait PopoverAnimationProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object PopoverAnimationProps {
+  @scala.inline
+  def apply(open: scala.Boolean, style: reactLib.reactMod.ReactNs.CSSProperties = null): PopoverAnimationProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("open")(open)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[PopoverAnimationProps]
+  }
+}
+

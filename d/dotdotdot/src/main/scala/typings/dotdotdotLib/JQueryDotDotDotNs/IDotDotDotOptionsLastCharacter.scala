@@ -17,3 +17,13 @@ trait IDotDotDotOptionsLastCharacter extends js.Object {
   var remove: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object IDotDotDotOptionsLastCharacter {
+  @scala.inline
+  def apply(noEllipsis: js.Array[java.lang.String] = null, remove: js.Array[java.lang.String] = null): IDotDotDotOptionsLastCharacter = {
+    val __obj = js.Dynamic.literal()
+    if (noEllipsis != null) __obj.updateDynamic("noEllipsis")(noEllipsis)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[IDotDotDotOptionsLastCharacter]
+  }
+}
+

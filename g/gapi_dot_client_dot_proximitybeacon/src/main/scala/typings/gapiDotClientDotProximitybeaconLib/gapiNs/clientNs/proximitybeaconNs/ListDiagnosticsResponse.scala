@@ -15,3 +15,13 @@ trait ListDiagnosticsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListDiagnosticsResponse {
+  @scala.inline
+  def apply(diagnostics: js.Array[Diagnostics] = null, nextPageToken: java.lang.String = null): ListDiagnosticsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListDiagnosticsResponse]
+  }
+}
+

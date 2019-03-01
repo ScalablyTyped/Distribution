@@ -14,3 +14,24 @@ trait Config extends js.Object {
   var settings: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    env: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    globals: org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    parser: java.lang.String = null,
+    parserOptions: ParserOptions = null,
+    rules: org.scalablytyped.runtime.StringDictionary[RuleLevel | RuleLevelAndOptions] = null,
+    settings: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (globals != null) __obj.updateDynamic("globals")(globals)
+    if (parser != null) __obj.updateDynamic("parser")(parser)
+    if (parserOptions != null) __obj.updateDynamic("parserOptions")(parserOptions)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    if (settings != null) __obj.updateDynamic("settings")(settings)
+    __obj.asInstanceOf[Config]
+  }
+}
+

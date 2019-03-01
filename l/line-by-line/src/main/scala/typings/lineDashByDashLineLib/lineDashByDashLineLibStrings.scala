@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object lineDashByDashLineLibStrings {
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end extends LineByLineReaderEvent
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends LineByLineReaderEvent
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait line extends LineByLineReaderEvent
   
   @scala.inline
   def end: end = "end".asInstanceOf[end]

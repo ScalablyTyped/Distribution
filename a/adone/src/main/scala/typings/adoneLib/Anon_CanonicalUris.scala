@@ -38,3 +38,24 @@ trait Anon_CanonicalUris extends js.Object {
   var replaceExtensions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_CanonicalUris {
+  @scala.inline
+  def apply(
+    canonicalUris: js.UndefOr[scala.Boolean] = js.undefined,
+    manifest: js.Array[adoneLib.adoneNs.fastNs.INs.File] | (adoneLib.adoneNs.streamNs.coreNs.Stream[_, adoneLib.adoneNs.fastNs.INs.File]) = null,
+    modifyReved: js.Function1[/* path */ java.lang.String, java.lang.String] = null,
+    modifyUnreved: js.Function1[/* path */ java.lang.String, java.lang.String] = null,
+    prefix: java.lang.String = null,
+    replaceExtensions: js.Array[java.lang.String] = null
+  ): Anon_CanonicalUris = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canonicalUris)) __obj.updateDynamic("canonicalUris")(canonicalUris)
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest.asInstanceOf[js.Any])
+    if (modifyReved != null) __obj.updateDynamic("modifyReved")(modifyReved)
+    if (modifyUnreved != null) __obj.updateDynamic("modifyUnreved")(modifyUnreved)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (replaceExtensions != null) __obj.updateDynamic("replaceExtensions")(replaceExtensions)
+    __obj.asInstanceOf[Anon_CanonicalUris]
+  }
+}
+

@@ -16,3 +16,13 @@ trait AtomClassRequest extends js.Object {
   var atoms: activexDashInteropLib.SafeArray[scala.Double]
 }
 
+object AtomClassRequest {
+  @scala.inline
+  def apply(atomClass: scala.Double, atoms: activexDashInteropLib.SafeArray[scala.Double]): AtomClassRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("atomClass")(atomClass)
+    __obj.updateDynamic("atoms")(atoms)
+    __obj.asInstanceOf[AtomClassRequest]
+  }
+}
+

@@ -39,3 +39,33 @@ trait BoxProps
   var paddingY: js.UndefOr[uiDashBoxLib.UIBoxProp] = js.undefined
 }
 
+object BoxProps {
+  @scala.inline
+  def apply(
+    StringDictionary: // accept any other arbitrary prop
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    boxSizing: uiDashBoxLib.UIBoxProp = null,
+    className: java.lang.String = null,
+    clearfix: js.UndefOr[scala.Boolean] = js.undefined,
+    innerRef: js.Function1[/* node */ reactLib.reactMod.ReactNs.ReactNode, _] = null,
+    is: uiDashBoxLib.UIBoxIsProp = null,
+    marginX: uiDashBoxLib.UIBoxProp = null,
+    marginY: uiDashBoxLib.UIBoxProp = null,
+    paddingX: uiDashBoxLib.UIBoxProp = null,
+    paddingY: uiDashBoxLib.UIBoxProp = null
+  ): BoxProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (boxSizing != null) __obj.updateDynamic("boxSizing")(boxSizing.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(clearfix)) __obj.updateDynamic("clearfix")(clearfix)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef)
+    if (is != null) __obj.updateDynamic("is")(is.asInstanceOf[js.Any])
+    if (marginX != null) __obj.updateDynamic("marginX")(marginX.asInstanceOf[js.Any])
+    if (marginY != null) __obj.updateDynamic("marginY")(marginY.asInstanceOf[js.Any])
+    if (paddingX != null) __obj.updateDynamic("paddingX")(paddingX.asInstanceOf[js.Any])
+    if (paddingY != null) __obj.updateDynamic("paddingY")(paddingY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BoxProps]
+  }
+}
+

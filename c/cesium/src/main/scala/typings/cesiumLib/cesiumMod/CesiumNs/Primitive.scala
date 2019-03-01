@@ -28,3 +28,52 @@ trait Primitive extends js.Object {
   def update(): scala.Unit
 }
 
+object Primitive {
+  @scala.inline
+  def apply(
+    allowPicking: scala.Boolean,
+    appearance: Appearance,
+    asynchronous: scala.Boolean,
+    compressVertices: scala.Boolean,
+    cull: scala.Boolean,
+    debugShowBoundingVolume: scala.Boolean,
+    depthFailAppearance: Appearance,
+    destroy: js.Function0[scala.Unit],
+    geometryInstances: js.Array[GeometryInstance] | GeometryInstance,
+    getGeometryInstanceAttributes: js.Function1[js.Any, js.Any],
+    interleave: scala.Boolean,
+    isDestroyed: js.Function0[scala.Boolean],
+    modelMatrix: Matrix4,
+    ready: scala.Boolean,
+    readyPromise: js.Promise[Primitive],
+    releaseGeometryInstances: scala.Boolean,
+    shadows: ShadowMode,
+    show: scala.Boolean,
+    update: js.Function0[scala.Unit],
+    vertexCacheOptimize: scala.Boolean
+  ): Primitive = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowPicking")(allowPicking)
+    __obj.updateDynamic("appearance")(appearance)
+    __obj.updateDynamic("asynchronous")(asynchronous)
+    __obj.updateDynamic("compressVertices")(compressVertices)
+    __obj.updateDynamic("cull")(cull)
+    __obj.updateDynamic("debugShowBoundingVolume")(debugShowBoundingVolume)
+    __obj.updateDynamic("depthFailAppearance")(depthFailAppearance)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("geometryInstances")(geometryInstances.asInstanceOf[js.Any])
+    __obj.updateDynamic("getGeometryInstanceAttributes")(getGeometryInstanceAttributes)
+    __obj.updateDynamic("interleave")(interleave)
+    __obj.updateDynamic("isDestroyed")(isDestroyed)
+    __obj.updateDynamic("modelMatrix")(modelMatrix)
+    __obj.updateDynamic("ready")(ready)
+    __obj.updateDynamic("readyPromise")(readyPromise)
+    __obj.updateDynamic("releaseGeometryInstances")(releaseGeometryInstances)
+    __obj.updateDynamic("shadows")(shadows)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("vertexCacheOptimize")(vertexCacheOptimize)
+    __obj.asInstanceOf[Primitive]
+  }
+}
+

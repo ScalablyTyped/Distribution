@@ -11,3 +11,18 @@ trait Language extends js.Object {
   var tokens: org.scalablytyped.runtime.StringDictionary[stdLib.RegExp]
 }
 
+object Language {
+  @scala.inline
+  def apply(
+    dayNames: js.Array[java.lang.String],
+    monthNames: js.Array[java.lang.String],
+    tokens: org.scalablytyped.runtime.StringDictionary[stdLib.RegExp]
+  ): Language = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dayNames")(dayNames)
+    __obj.updateDynamic("monthNames")(monthNames)
+    __obj.updateDynamic("tokens")(tokens)
+    __obj.asInstanceOf[Language]
+  }
+}
+

@@ -50,3 +50,24 @@ trait CustomResourceDefinitionVersion extends js.Object {
   val subresources: CustomResourceSubresources
 }
 
+object CustomResourceDefinitionVersion {
+  @scala.inline
+  def apply(
+    additionalPrinterColumns: js.Array[CustomResourceColumnDefinition],
+    name: java.lang.String,
+    schema: CustomResourceValidation,
+    served: scala.Boolean,
+    storage: scala.Boolean,
+    subresources: CustomResourceSubresources
+  ): CustomResourceDefinitionVersion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("additionalPrinterColumns")(additionalPrinterColumns)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("schema")(schema)
+    __obj.updateDynamic("served")(served)
+    __obj.updateDynamic("storage")(storage)
+    __obj.updateDynamic("subresources")(subresources)
+    __obj.asInstanceOf[CustomResourceDefinitionVersion]
+  }
+}
+

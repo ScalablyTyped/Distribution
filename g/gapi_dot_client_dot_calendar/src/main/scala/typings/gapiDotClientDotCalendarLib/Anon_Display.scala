@@ -28,3 +28,28 @@ trait Anon_Display extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Display {
+  @scala.inline
+  def apply(
+    display: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    iconLink: java.lang.String = null,
+    link: java.lang.String = null,
+    preferences: stdLib.Record[java.lang.String, java.lang.String] = null,
+    title: java.lang.String = null,
+    `type`: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_Display = {
+    val __obj = js.Dynamic.literal()
+    if (display != null) __obj.updateDynamic("display")(display)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (iconLink != null) __obj.updateDynamic("iconLink")(iconLink)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (preferences != null) __obj.updateDynamic("preferences")(preferences)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Display]
+  }
+}
+

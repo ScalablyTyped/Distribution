@@ -28,3 +28,24 @@ trait XCompositeLayer extends XLayer {
   def readSubLayerData(aHandler: XLayerHandler, aSubLayerId: java.lang.String): scala.Unit
 }
 
+object XCompositeLayer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    listSubLayerIds: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readData: js.Function1[XLayerHandler, scala.Unit],
+    readSubLayerData: js.Function2[XLayerHandler, java.lang.String, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XCompositeLayer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("listSubLayerIds")(listSubLayerIds)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("readData")(readData)
+    __obj.updateDynamic("readSubLayerData")(readSubLayerData)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCompositeLayer]
+  }
+}
+

@@ -11,3 +11,14 @@ trait PlotScene extends js.Object {
   var up: Point
 }
 
+object PlotScene {
+  @scala.inline
+  def apply(center: Point, eye: Point, up: Point): PlotScene = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("center")(center)
+    __obj.updateDynamic("eye")(eye)
+    __obj.updateDynamic("up")(up)
+    __obj.asInstanceOf[PlotScene]
+  }
+}
+

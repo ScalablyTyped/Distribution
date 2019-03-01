@@ -20,3 +20,18 @@ trait PrintOptions extends js.Object {
   var silent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PrintOptions {
+  @scala.inline
+  def apply(
+    deviceName: java.lang.String = null,
+    printBackground: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined
+  ): PrintOptions = {
+    val __obj = js.Dynamic.literal()
+    if (deviceName != null) __obj.updateDynamic("deviceName")(deviceName)
+    if (!js.isUndefined(printBackground)) __obj.updateDynamic("printBackground")(printBackground)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    __obj.asInstanceOf[PrintOptions]
+  }
+}
+

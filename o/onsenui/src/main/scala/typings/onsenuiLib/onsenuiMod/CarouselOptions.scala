@@ -11,3 +11,18 @@ trait CarouselOptions extends js.Object {
   var callback: js.UndefOr[coreDashJsLib.Function] = js.undefined
 }
 
+object CarouselOptions {
+  @scala.inline
+  def apply(
+    animation: nodeLib.String = null,
+    animationOptions: coreDashJsLib.Object = null,
+    callback: coreDashJsLib.Function = null
+  ): CarouselOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (animationOptions != null) __obj.updateDynamic("animationOptions")(animationOptions)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    __obj.asInstanceOf[CarouselOptions]
+  }
+}
+

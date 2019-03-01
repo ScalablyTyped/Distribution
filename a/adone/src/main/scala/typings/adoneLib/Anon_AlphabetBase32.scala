@@ -40,3 +40,40 @@ trait Anon_AlphabetBase32 extends js.Object {
   def basex(alphabet: java.lang.String): adoneLib.adoneNs.dataNs.INs.BaseX
 }
 
+object Anon_AlphabetBase32 {
+  @scala.inline
+  def apply(
+    INs: js.Any,
+    base32Ns: Anon_Alphabet,
+    base58: adoneLib.adoneNs.dataNs.INs.BaseX,
+    base64Ns: Anon_C,
+    base64urlNs: Anon_DecodeEncode,
+    basex: js.Function1[java.lang.String, adoneLib.adoneNs.dataNs.INs.BaseX],
+    bsonNs: Anon_ArgsBSON,
+    json5Ns: Anon_BufDecodeEncode,
+    jsonNs: Anon_BufDecode,
+    mpakNs: Anon_BufDecodeDecoder,
+    protobufNs: Anon_CreateOpts,
+    varintNs: Anon_BufDecodeEncodeEncodingLength,
+    varintSignedNs: Anon_BufDecodeEncodeEncodingLength,
+    yamlNs: Anon_BufBuffer
+  ): Anon_AlphabetBase32 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("INs")(INs)
+    __obj.updateDynamic("base32Ns")(base32Ns)
+    __obj.updateDynamic("base58")(base58)
+    __obj.updateDynamic("base64Ns")(base64Ns)
+    __obj.updateDynamic("base64urlNs")(base64urlNs)
+    __obj.updateDynamic("basex")(basex)
+    __obj.updateDynamic("bsonNs")(bsonNs)
+    __obj.updateDynamic("json5Ns")(json5Ns)
+    __obj.updateDynamic("jsonNs")(jsonNs)
+    __obj.updateDynamic("mpakNs")(mpakNs)
+    __obj.updateDynamic("protobufNs")(protobufNs)
+    __obj.updateDynamic("varintNs")(varintNs)
+    __obj.updateDynamic("varintSignedNs")(varintSignedNs)
+    __obj.updateDynamic("yamlNs")(yamlNs)
+    __obj.asInstanceOf[Anon_AlphabetBase32]
+  }
+}
+

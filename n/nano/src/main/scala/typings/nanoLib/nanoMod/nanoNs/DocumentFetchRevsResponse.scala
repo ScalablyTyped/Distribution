@@ -12,3 +12,20 @@ trait DocumentFetchRevsResponse extends js.Object {
   var update_seq: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DocumentFetchRevsResponse {
+  @scala.inline
+  def apply(
+    offset: scala.Double,
+    rows: js.Array[DocumentResponseRowMeta],
+    total_rows: scala.Double,
+    update_seq: scala.Int | scala.Double = null
+  ): DocumentFetchRevsResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("total_rows")(total_rows)
+    if (update_seq != null) __obj.updateDynamic("update_seq")(update_seq.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DocumentFetchRevsResponse]
+  }
+}
+

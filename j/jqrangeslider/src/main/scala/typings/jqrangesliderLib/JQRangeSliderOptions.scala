@@ -29,3 +29,34 @@ trait JQRangeSliderOptions extends js.Object {
   var wheelSpeed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object JQRangeSliderOptions {
+  @scala.inline
+  def apply(
+    arrows: js.UndefOr[scala.Boolean] = js.undefined,
+    delayOut: scala.Int | scala.Double = null,
+    durationIn: scala.Int | scala.Double = null,
+    durationOut: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    range: scala.Boolean | JQRangeSliderRangeLength = null,
+    scales: js.Array[jQRangeSliderScale] = null,
+    symmetricPositionning: js.UndefOr[scala.Boolean] = js.undefined,
+    valueLabels: java.lang.String = null,
+    wheelMode: java.lang.String = null,
+    wheelSpeed: scala.Int | scala.Double = null
+  ): JQRangeSliderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(arrows)) __obj.updateDynamic("arrows")(arrows)
+    if (delayOut != null) __obj.updateDynamic("delayOut")(delayOut.asInstanceOf[js.Any])
+    if (durationIn != null) __obj.updateDynamic("durationIn")(durationIn.asInstanceOf[js.Any])
+    if (durationOut != null) __obj.updateDynamic("durationOut")(durationOut.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (range != null) __obj.updateDynamic("range")(range.asInstanceOf[js.Any])
+    if (scales != null) __obj.updateDynamic("scales")(scales)
+    if (!js.isUndefined(symmetricPositionning)) __obj.updateDynamic("symmetricPositionning")(symmetricPositionning)
+    if (valueLabels != null) __obj.updateDynamic("valueLabels")(valueLabels)
+    if (wheelMode != null) __obj.updateDynamic("wheelMode")(wheelMode)
+    if (wheelSpeed != null) __obj.updateDynamic("wheelSpeed")(wheelSpeed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQRangeSliderOptions]
+  }
+}
+

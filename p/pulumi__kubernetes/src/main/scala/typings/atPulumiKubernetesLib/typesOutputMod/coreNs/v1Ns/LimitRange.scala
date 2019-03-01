@@ -35,3 +35,20 @@ trait LimitRange extends js.Object {
   val spec: LimitRangeSpec
 }
 
+object LimitRange {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LimitRange,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: LimitRangeSpec
+  ): LimitRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.asInstanceOf[LimitRange]
+  }
+}
+

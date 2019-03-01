@@ -7,3 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Stringifyable extends js.Object
 
+object Stringifyable {
+  @scala.inline
+  def apply(toString: js.Function0[java.lang.String]): Stringifyable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[Stringifyable]
+  }
+}
+

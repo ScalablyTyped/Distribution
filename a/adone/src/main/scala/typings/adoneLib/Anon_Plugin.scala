@@ -9,3 +9,12 @@ trait Anon_Plugin extends js.Object {
   val pluginNs: Anon_Archive
 }
 
+object Anon_Plugin {
+  @scala.inline
+  def apply(pluginNs: Anon_Archive): Anon_Plugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pluginNs")(pluginNs)
+    __obj.asInstanceOf[Anon_Plugin]
+  }
+}
+

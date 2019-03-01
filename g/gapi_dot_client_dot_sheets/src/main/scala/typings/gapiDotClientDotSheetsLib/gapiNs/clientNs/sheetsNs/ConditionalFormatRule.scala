@@ -17,3 +17,18 @@ trait ConditionalFormatRule extends js.Object {
   var ranges: js.UndefOr[js.Array[GridRange]] = js.undefined
 }
 
+object ConditionalFormatRule {
+  @scala.inline
+  def apply(
+    booleanRule: BooleanRule = null,
+    gradientRule: GradientRule = null,
+    ranges: js.Array[GridRange] = null
+  ): ConditionalFormatRule = {
+    val __obj = js.Dynamic.literal()
+    if (booleanRule != null) __obj.updateDynamic("booleanRule")(booleanRule)
+    if (gradientRule != null) __obj.updateDynamic("gradientRule")(gradientRule)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    __obj.asInstanceOf[ConditionalFormatRule]
+  }
+}
+

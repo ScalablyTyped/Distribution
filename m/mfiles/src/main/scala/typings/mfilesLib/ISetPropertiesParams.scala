@@ -28,3 +28,43 @@ trait ISetPropertiesParams extends js.Object {
   ): scala.Unit
 }
 
+object ISetPropertiesParams {
+  @scala.inline
+  def apply(
+    AccessControlListEnforcingMode: mfilesLib.MFilesNs.MFACLEnforcingMode,
+    AccessControlListProvidedForEnforcing: IAccessControlList,
+    AllowModifyingCheckedInObject: scala.Boolean,
+    Clone: js.Function0[ISetPropertiesParams],
+    FailIfNotLatestCheckedInVersion: scala.Boolean,
+    FullSet: scala.Boolean,
+    ObjVer: IObjVer,
+    PropertyValuesToRemove: IIDs,
+    PropertyValuesToSet: IPropertyValues,
+    SetWithPermissions: js.Function9[
+      IObjVer, 
+      scala.Boolean, 
+      scala.Boolean, 
+      IPropertyValues, 
+      scala.Boolean, 
+      IIDs, 
+      mfilesLib.MFilesNs.MFObjectOperationFlags, 
+      mfilesLib.MFilesNs.MFACLEnforcingMode, 
+      IAccessControlList, 
+      scala.Unit
+    ]
+  ): ISetPropertiesParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessControlListEnforcingMode")(AccessControlListEnforcingMode)
+    __obj.updateDynamic("AccessControlListProvidedForEnforcing")(AccessControlListProvidedForEnforcing)
+    __obj.updateDynamic("AllowModifyingCheckedInObject")(AllowModifyingCheckedInObject)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("FailIfNotLatestCheckedInVersion")(FailIfNotLatestCheckedInVersion)
+    __obj.updateDynamic("FullSet")(FullSet)
+    __obj.updateDynamic("ObjVer")(ObjVer)
+    __obj.updateDynamic("PropertyValuesToRemove")(PropertyValuesToRemove)
+    __obj.updateDynamic("PropertyValuesToSet")(PropertyValuesToSet)
+    __obj.updateDynamic("SetWithPermissions")(SetWithPermissions)
+    __obj.asInstanceOf[ISetPropertiesParams]
+  }
+}
+

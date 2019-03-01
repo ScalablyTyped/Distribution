@@ -9,3 +9,12 @@ trait Anon_ContentsTrue extends js.Object {
   var contents: adoneLib.adoneLibNumbers.`true`
 }
 
+object Anon_ContentsTrue {
+  @scala.inline
+  def apply(contents: adoneLib.adoneLibNumbers.`true`): Anon_ContentsTrue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contents")(contents)
+    __obj.asInstanceOf[Anon_ContentsTrue]
+  }
+}
+

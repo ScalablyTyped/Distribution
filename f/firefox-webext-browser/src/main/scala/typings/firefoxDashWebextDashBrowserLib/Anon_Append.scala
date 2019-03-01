@@ -18,3 +18,13 @@ trait Anon_Append extends js.Object {
   var insert: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Append {
+  @scala.inline
+  def apply(append: js.UndefOr[scala.Boolean] = js.undefined, insert: js.UndefOr[scala.Boolean] = js.undefined): Anon_Append = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(append)) __obj.updateDynamic("append")(append)
+    if (!js.isUndefined(insert)) __obj.updateDynamic("insert")(insert)
+    __obj.asInstanceOf[Anon_Append]
+  }
+}
+

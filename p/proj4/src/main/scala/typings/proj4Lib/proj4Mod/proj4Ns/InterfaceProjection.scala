@@ -17,3 +17,30 @@ trait InterfaceProjection extends js.Object {
   def inverse(coordinates: TemplateCoordinates): js.Array[scala.Double]
 }
 
+object InterfaceProjection {
+  @scala.inline
+  def apply(
+    b: scala.Double,
+    datum: java.lang.String,
+    e: scala.Double,
+    ep2: scala.Double,
+    es: scala.Double,
+    forward: js.Function1[TemplateCoordinates, js.Array[scala.Double]],
+    inverse: js.Function1[TemplateCoordinates, js.Array[scala.Double]],
+    rf: scala.Double,
+    sphere: scala.Double
+  ): InterfaceProjection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("b")(b)
+    __obj.updateDynamic("datum")(datum)
+    __obj.updateDynamic("e")(e)
+    __obj.updateDynamic("ep2")(ep2)
+    __obj.updateDynamic("es")(es)
+    __obj.updateDynamic("forward")(forward)
+    __obj.updateDynamic("inverse")(inverse)
+    __obj.updateDynamic("rf")(rf)
+    __obj.updateDynamic("sphere")(sphere)
+    __obj.asInstanceOf[InterfaceProjection]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Link
   var url: java.lang.String
 }
 
+object Link {
+  @scala.inline
+  def apply(
+    rel: java.lang.String,
+    url: java.lang.String,
+    StringDictionary: /* queryParam */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Link = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rel")(rel)
+    __obj.updateDynamic("url")(url)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Link]
+  }
+}
+

@@ -37,3 +37,30 @@ trait IGeocodeRequestOptions extends js.Object {
   def callback(geocodeResult: IGeocodeResult, userData: js.Any): scala.Unit
 }
 
+object IGeocodeRequestOptions {
+  @scala.inline
+  def apply(
+    callback: js.Function2[IGeocodeResult, js.Any, scala.Unit],
+    where: java.lang.String,
+    bounds: bingmapsLib.MicrosoftNs.MapsNs.LocationRect = null,
+    count: scala.Int | scala.Double = null,
+    errorCallback: js.Function1[/* geocodeRequestOptions */ IGeocodeRequestOptions, scala.Unit] = null,
+    includeCountryIso2: js.UndefOr[scala.Boolean] = js.undefined,
+    includeNeighborhood: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    userData: js.Any = null
+  ): IGeocodeRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("where")(where)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (errorCallback != null) __obj.updateDynamic("errorCallback")(errorCallback)
+    if (!js.isUndefined(includeCountryIso2)) __obj.updateDynamic("includeCountryIso2")(includeCountryIso2)
+    if (!js.isUndefined(includeNeighborhood)) __obj.updateDynamic("includeNeighborhood")(includeNeighborhood)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (userData != null) __obj.updateDynamic("userData")(userData)
+    __obj.asInstanceOf[IGeocodeRequestOptions]
+  }
+}
+

@@ -18,3 +18,37 @@ trait GoalsResource extends js.Object {
   def update(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId): gapiDotClientLib.gapiNs.clientNs.Request[Goal]
 }
 
+object GoalsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Goal]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Goal]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Goals]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Goal]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsGoalId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Goal]
+    ]
+  ): GoalsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[GoalsResource]
+  }
+}
+

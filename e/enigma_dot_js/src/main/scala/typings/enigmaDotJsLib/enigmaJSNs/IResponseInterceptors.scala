@@ -26,3 +26,16 @@ trait IResponseInterceptors extends js.Object {
   ] = js.undefined
 }
 
+object IResponseInterceptors {
+  @scala.inline
+  def apply(
+    onFulfilled: js.Function3[/* session */ ISession, /* request */ js.Any, /* result */ js.Any, js.Promise[_]] = null,
+    onRejected: js.Function3[/* session */ ISession, /* request */ js.Any, /* error */ js.Any, js.Promise[_]] = null
+  ): IResponseInterceptors = {
+    val __obj = js.Dynamic.literal()
+    if (onFulfilled != null) __obj.updateDynamic("onFulfilled")(onFulfilled)
+    if (onRejected != null) __obj.updateDynamic("onRejected")(onRejected)
+    __obj.asInstanceOf[IResponseInterceptors]
+  }
+}
+

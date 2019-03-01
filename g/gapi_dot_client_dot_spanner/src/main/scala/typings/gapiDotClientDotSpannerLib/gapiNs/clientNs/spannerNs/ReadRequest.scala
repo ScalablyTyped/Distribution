@@ -54,3 +54,26 @@ trait ReadRequest extends js.Object {
   var transaction: js.UndefOr[TransactionSelector] = js.undefined
 }
 
+object ReadRequest {
+  @scala.inline
+  def apply(
+    columns: js.Array[java.lang.String] = null,
+    index: java.lang.String = null,
+    keySet: KeySet = null,
+    limit: java.lang.String = null,
+    resumeToken: java.lang.String = null,
+    table: java.lang.String = null,
+    transaction: TransactionSelector = null
+  ): ReadRequest = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (keySet != null) __obj.updateDynamic("keySet")(keySet)
+    if (limit != null) __obj.updateDynamic("limit")(limit)
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken)
+    if (table != null) __obj.updateDynamic("table")(table)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[ReadRequest]
+  }
+}
+

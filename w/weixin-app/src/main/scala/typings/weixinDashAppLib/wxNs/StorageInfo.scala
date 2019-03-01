@@ -20,3 +20,14 @@ trait StorageInfo extends js.Object {
   var limitSize: scala.Double
 }
 
+object StorageInfo {
+  @scala.inline
+  def apply(currentSize: scala.Double, keys: js.Array[java.lang.String], limitSize: scala.Double): StorageInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentSize")(currentSize)
+    __obj.updateDynamic("keys")(keys)
+    __obj.updateDynamic("limitSize")(limitSize)
+    __obj.asInstanceOf[StorageInfo]
+  }
+}
+

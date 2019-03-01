@@ -38,3 +38,36 @@ trait StrictFormFieldProps extends js.Object {
   var width: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS] = js.undefined
 }
 
+object StrictFormFieldProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    control: js.Any = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    error: js.UndefOr[scala.Boolean] = js.undefined,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    label: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsGenericMod.HtmlLabelProps] = null,
+    required: js.Any = null,
+    `type`: java.lang.String = null,
+    width: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticWIDTHS = null
+  ): StrictFormFieldProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (control != null) __obj.updateDynamic("control")(control)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (required != null) __obj.updateDynamic("required")(required)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[StrictFormFieldProps]
+  }
+}
+

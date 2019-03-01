@@ -7,40 +7,52 @@ import scala.scalajs.js.annotation._
 
 object ndarrayLibStrings {
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait buffer
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait float32 extends js.Object
+  sealed trait float32
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait float64 extends js.Object
+  sealed trait float64
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait generic extends js.Object
+  sealed trait generic
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait int16 extends js.Object
+  sealed trait int16
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait int32 extends js.Object
+  sealed trait int32
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait int8 extends js.Object
+  sealed trait int8
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait uint16 extends js.Object
+  sealed trait uint16
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait uint32 extends js.Object
+  sealed trait uint32
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait uint8 extends js.Object
+  sealed trait uint8
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @js.native
-  sealed trait uint8_clamped extends js.Object
+  sealed trait uint8_clamped
+    extends ndarrayLib.ndarrayMod.ndarrayNs.DataType
   
   @scala.inline
   def array: array = "array".asInstanceOf[array]

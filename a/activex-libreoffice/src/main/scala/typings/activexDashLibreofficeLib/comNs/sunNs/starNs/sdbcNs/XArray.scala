@@ -100,3 +100,47 @@ trait XArray
   ): XResultSet
 }
 
+object XArray {
+  @scala.inline
+  def apply(
+    BaseType: scala.Double,
+    BaseTypeName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getArray: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getArrayAtIndex: js.Function3[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getBaseType: js.Function0[scala.Double],
+    getBaseTypeName: js.Function0[java.lang.String],
+    getResultSet: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, XResultSet],
+    getResultSetAtIndex: js.Function3[
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, 
+      XResultSet
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BaseType")(BaseType)
+    __obj.updateDynamic("BaseTypeName")(BaseTypeName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getArray")(getArray)
+    __obj.updateDynamic("getArrayAtIndex")(getArrayAtIndex)
+    __obj.updateDynamic("getBaseType")(getBaseType)
+    __obj.updateDynamic("getBaseTypeName")(getBaseTypeName)
+    __obj.updateDynamic("getResultSet")(getResultSet)
+    __obj.updateDynamic("getResultSetAtIndex")(getResultSetAtIndex)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XArray]
+  }
+}
+

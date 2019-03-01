@@ -15,3 +15,24 @@ trait PublishParameters extends js.Object {
   var ttl: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PublishParameters {
+  @scala.inline
+  def apply(
+    channel: java.lang.String,
+    message: js.Any,
+    meta: js.Any = null,
+    sendByPost: js.UndefOr[scala.Boolean] = js.undefined,
+    storeInHistory: js.UndefOr[scala.Boolean] = js.undefined,
+    ttl: scala.Int | scala.Double = null
+  ): PublishParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("message")(message)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (!js.isUndefined(sendByPost)) __obj.updateDynamic("sendByPost")(sendByPost)
+    if (!js.isUndefined(storeInHistory)) __obj.updateDynamic("storeInHistory")(storeInHistory)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PublishParameters]
+  }
+}
+

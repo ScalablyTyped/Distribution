@@ -57,3 +57,32 @@ trait IIdleService extends js.Object {
   def watch(): scala.Unit
 }
 
+object IIdleService {
+  @scala.inline
+  def apply(
+    getIdle: js.Function0[scala.Double],
+    getTimeout: js.Function0[scala.Double],
+    idling: js.Function0[scala.Boolean],
+    interrupt: js.Function0[js.Any],
+    isExpired: js.Function0[scala.Boolean],
+    running: js.Function0[scala.Boolean],
+    setIdle: js.Function1[scala.Double, scala.Unit],
+    setTimeout: js.Function1[scala.Double, scala.Unit],
+    unwatch: js.Function0[scala.Unit],
+    watch: js.Function0[scala.Unit]
+  ): IIdleService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getIdle")(getIdle)
+    __obj.updateDynamic("getTimeout")(getTimeout)
+    __obj.updateDynamic("idling")(idling)
+    __obj.updateDynamic("interrupt")(interrupt)
+    __obj.updateDynamic("isExpired")(isExpired)
+    __obj.updateDynamic("running")(running)
+    __obj.updateDynamic("setIdle")(setIdle)
+    __obj.updateDynamic("setTimeout")(setTimeout)
+    __obj.updateDynamic("unwatch")(unwatch)
+    __obj.updateDynamic("watch")(watch)
+    __obj.asInstanceOf[IIdleService]
+  }
+}
+

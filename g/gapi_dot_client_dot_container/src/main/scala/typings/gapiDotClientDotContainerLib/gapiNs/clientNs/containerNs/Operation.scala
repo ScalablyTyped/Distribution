@@ -38,3 +38,32 @@ trait Operation extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Operation {
+  @scala.inline
+  def apply(
+    detail: java.lang.String = null,
+    endTime: java.lang.String = null,
+    name: java.lang.String = null,
+    operationType: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    startTime: java.lang.String = null,
+    status: java.lang.String = null,
+    statusMessage: java.lang.String = null,
+    targetLink: java.lang.String = null,
+    zone: java.lang.String = null
+  ): Operation = {
+    val __obj = js.Dynamic.literal()
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (operationType != null) __obj.updateDynamic("operationType")(operationType)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusMessage != null) __obj.updateDynamic("statusMessage")(statusMessage)
+    if (targetLink != null) __obj.updateDynamic("targetLink")(targetLink)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[Operation]
+  }
+}
+

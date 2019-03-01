@@ -10,3 +10,12 @@ trait LogConfigDataAccessOptions extends js.Object {
   var logMode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogConfigDataAccessOptions {
+  @scala.inline
+  def apply(logMode: java.lang.String = null): LogConfigDataAccessOptions = {
+    val __obj = js.Dynamic.literal()
+    if (logMode != null) __obj.updateDynamic("logMode")(logMode)
+    __obj.asInstanceOf[LogConfigDataAccessOptions]
+  }
+}
+

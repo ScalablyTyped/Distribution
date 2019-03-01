@@ -12,3 +12,12 @@ trait _Impl extends js.Object {
   def determineTitle(tabArray: js.Array[_]): java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(determineTitle: js.Function1[js.Array[_], java.lang.String]): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("determineTitle")(determineTitle)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

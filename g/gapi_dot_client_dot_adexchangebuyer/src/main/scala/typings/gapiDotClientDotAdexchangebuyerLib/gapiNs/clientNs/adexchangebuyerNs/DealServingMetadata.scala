@@ -15,3 +15,16 @@ trait DealServingMetadata extends js.Object {
   var dealPauseStatus: js.UndefOr[DealServingMetadataDealPauseStatus] = js.undefined
 }
 
+object DealServingMetadata {
+  @scala.inline
+  def apply(
+    alcoholAdsAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    dealPauseStatus: DealServingMetadataDealPauseStatus = null
+  ): DealServingMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(alcoholAdsAllowed)) __obj.updateDynamic("alcoholAdsAllowed")(alcoholAdsAllowed)
+    if (dealPauseStatus != null) __obj.updateDynamic("dealPauseStatus")(dealPauseStatus)
+    __obj.asInstanceOf[DealServingMetadata]
+  }
+}
+

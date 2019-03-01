@@ -10,3 +10,13 @@ trait KeyValuePair[T] extends js.Object {
   var value: T
 }
 
+object KeyValuePair {
+  @scala.inline
+  def apply[T](key: java.lang.String, value: T): KeyValuePair[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[KeyValuePair[T]]
+  }
+}
+

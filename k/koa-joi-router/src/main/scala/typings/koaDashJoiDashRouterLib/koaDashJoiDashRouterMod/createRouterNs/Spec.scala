@@ -14,3 +14,24 @@ trait Spec extends js.Object {
   var validate: js.UndefOr[koaDashJoiDashRouterLib.Anon_BodyContinueOnError] = js.undefined
 }
 
+object Spec {
+  @scala.inline
+  def apply(
+    handler: Handler,
+    method: java.lang.String | js.Array[java.lang.String],
+    path: java.lang.String | stdLib.RegExp,
+    meta: js.Any = null,
+    pre: Handler = null,
+    validate: koaDashJoiDashRouterLib.Anon_BodyContinueOnError = null
+  ): Spec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (pre != null) __obj.updateDynamic("pre")(pre.asInstanceOf[js.Any])
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[Spec]
+  }
+}
+

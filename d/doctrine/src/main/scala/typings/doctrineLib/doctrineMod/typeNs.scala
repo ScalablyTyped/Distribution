@@ -8,22 +8,26 @@ import scala.scalajs.js.annotation._
 @JSImport("doctrine", "type")
 @js.native
 object typeNs extends js.Object {
-  trait AllLiteral extends js.Object {
+  trait AllLiteral
+    extends doctrineLib.doctrineMod.Type {
     var `type`: doctrineLib.doctrineLibStrings.AllLiteral
   }
   
-  trait ArrayType extends js.Object {
+  trait ArrayType
+    extends doctrineLib.doctrineMod.Type {
     var elements: js.Array[doctrineLib.doctrineMod.Type]
     var `type`: doctrineLib.doctrineLibStrings.ArrayType
   }
   
-  trait FieldType extends js.Object {
+  trait FieldType
+    extends doctrineLib.doctrineMod.Type {
     var key: java.lang.String
     var `type`: doctrineLib.doctrineLibStrings.FieldType
     var value: js.UndefOr[doctrineLib.doctrineMod.Type] = js.undefined
   }
   
-  trait FunctionType extends js.Object {
+  trait FunctionType
+    extends doctrineLib.doctrineMod.Type {
     var `new`: doctrineLib.doctrineMod.Type
     var params: js.Array[doctrineLib.doctrineMod.Type]
     var result: js.Array[doctrineLib.doctrineMod.Type]
@@ -31,68 +35,81 @@ object typeNs extends js.Object {
     var `type`: doctrineLib.doctrineLibStrings.FunctionType
   }
   
-  trait NameExpression extends js.Object {
+  trait NameExpression
+    extends doctrineLib.doctrineMod.Type {
     var name: java.lang.String
     var `type`: doctrineLib.doctrineLibStrings.NameExpression
   }
   
-  trait NonNullableType extends js.Object {
+  trait NonNullableType
+    extends doctrineLib.doctrineMod.Type {
     var expression: doctrineLib.doctrineMod.Type
     var prefix: scala.Boolean
     var `type`: doctrineLib.doctrineLibStrings.NonNullableType
   }
   
-  trait NullLiteral extends js.Object {
+  trait NullLiteral
+    extends doctrineLib.doctrineMod.Type {
     var `type`: doctrineLib.doctrineLibStrings.NullLiteral
   }
   
-  trait NullableLiteral extends js.Object {
+  trait NullableLiteral
+    extends doctrineLib.doctrineMod.Type {
     var `type`: doctrineLib.doctrineLibStrings.NullableLiteral
   }
   
-  trait NullableType extends js.Object {
+  trait NullableType
+    extends doctrineLib.doctrineMod.Type {
     var expression: doctrineLib.doctrineMod.Type
     var prefix: scala.Boolean
     var `type`: doctrineLib.doctrineLibStrings.NullableType
   }
   
-  trait OptionalType extends js.Object {
+  trait OptionalType
+    extends doctrineLib.doctrineMod.Type {
     var expression: doctrineLib.doctrineMod.Type
     var `type`: doctrineLib.doctrineLibStrings.OptionalType
   }
   
-  trait ParameterType extends js.Object {
+  trait ParameterType
+    extends doctrineLib.doctrineMod.Type {
     var expression: doctrineLib.doctrineMod.Type
     var name: java.lang.String
     var `type`: doctrineLib.doctrineLibStrings.ParameterType
   }
   
-  trait RecordType extends js.Object {
+  trait RecordType
+    extends doctrineLib.doctrineMod.Type {
     var fields: js.Array[doctrineLib.doctrineMod.Type]
     var `type`: doctrineLib.doctrineLibStrings.RecordType
   }
   
-  trait RestType extends js.Object {
+  trait RestType
+    extends doctrineLib.doctrineMod.Type {
     var expression: js.UndefOr[doctrineLib.doctrineMod.Type] = js.undefined
     var `type`: doctrineLib.doctrineLibStrings.RestType
   }
   
-  trait TypeApplication extends js.Object {
+  trait TypeApplication
+    extends doctrineLib.doctrineMod.Type {
     var applications: js.Array[doctrineLib.doctrineMod.Type]
     var expression: doctrineLib.doctrineMod.Type
     var `type`: doctrineLib.doctrineLibStrings.TypeApplication
   }
   
-  trait UndefinedLiteral extends js.Object {
+  trait UndefinedLiteral
+    extends doctrineLib.doctrineMod.Type {
     var `type`: doctrineLib.doctrineLibStrings.UndefinedLiteral
   }
   
-  trait UnionType extends js.Object {
+  trait UnionType
+    extends doctrineLib.doctrineMod.Type {
     var elements: js.Array[doctrineLib.doctrineMod.Type]
     var `type`: doctrineLib.doctrineLibStrings.UnionType
   }
   
-  trait VoidLiteral extends js.Object {
+  trait VoidLiteral
+    extends doctrineLib.doctrineMod.Type {
     var `type`: doctrineLib.doctrineLibStrings.VoidLiteral
   }
   

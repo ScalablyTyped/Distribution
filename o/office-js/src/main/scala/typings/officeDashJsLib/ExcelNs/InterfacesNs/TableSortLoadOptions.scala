@@ -37,3 +37,20 @@ trait TableSortLoadOptions extends js.Object {
   var method: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableSortLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: js.UndefOr[scala.Boolean] = js.undefined,
+    matchCase: js.UndefOr[scala.Boolean] = js.undefined,
+    method: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableSortLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(fields)) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    if (!js.isUndefined(method)) __obj.updateDynamic("method")(method)
+    __obj.asInstanceOf[TableSortLoadOptions]
+  }
+}
+

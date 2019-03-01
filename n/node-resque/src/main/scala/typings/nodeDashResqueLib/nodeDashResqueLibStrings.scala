@@ -7,49 +7,68 @@ import scala.scalajs.js.annotation._
 
 object nodeDashResqueLibStrings {
   @js.native
-  sealed trait cleanStuckWorker extends js.Object
+  sealed trait cleanStuckWorker
+    extends nodeDashResqueLib.nodeDashResqueMod.SchedulerEvent
   
   @js.native
-  sealed trait cleaning_worker extends js.Object
+  sealed trait cleaning_worker
+    extends nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends nodeDashResqueLib.nodeDashResqueMod.SchedulerEvent
+       with nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends nodeDashResqueLib.nodeDashResqueMod.SchedulerEvent
+       with nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait failure extends js.Object
+  sealed trait failure
+    extends nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait job extends js.Object
+  sealed trait job
+    extends nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait master extends js.Object
+  sealed trait master
+    extends nodeDashResqueLib.nodeDashResqueMod.SchedulerEvent
   
   @js.native
-  sealed trait pause extends js.Object
+  sealed trait pause
+    extends nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait ping extends js.Object
+  sealed trait ping
+    extends nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait poll extends js.Object
+  sealed trait poll
+    extends nodeDashResqueLib.nodeDashResqueMod.SchedulerEvent
+       with nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait reEnqueue extends js.Object
+  sealed trait reEnqueue
+    extends nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends nodeDashResqueLib.nodeDashResqueMod.SchedulerEvent
+       with nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends nodeDashResqueLib.nodeDashResqueMod.WorkerEvent
   
   @js.native
-  sealed trait transferredJob extends js.Object
+  sealed trait transferredJob
+    extends nodeDashResqueLib.nodeDashResqueMod.SchedulerEvent
   
   @js.native
-  sealed trait workingTimestamp extends js.Object
+  sealed trait workingTimestamp
+    extends nodeDashResqueLib.nodeDashResqueMod.SchedulerEvent
   
   @scala.inline
   def cleanStuckWorker: cleanStuckWorker = "cleanStuckWorker".asInstanceOf[cleanStuckWorker]

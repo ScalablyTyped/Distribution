@@ -17,3 +17,26 @@ trait ParserInline extends js.Object {
   def validateLink(url: java.lang.String): scala.Boolean
 }
 
+object ParserInline {
+  @scala.inline
+  def apply(
+    parse: js.Function4[
+      java.lang.String, 
+      remarkableLib.libMod.RemarkableNs.Options, 
+      remarkableLib.libMod.RemarkableNs.Env, 
+      js.Array[remarkableLib.libMod.RemarkableNs.Token], 
+      scala.Unit
+    ],
+    skipToken: js.Function1[remarkableLib.libMod.RemarkableNs.StateInline, scala.Unit],
+    tokenize: js.Function1[remarkableLib.libMod.RemarkableNs.StateInline, scala.Unit],
+    validateLink: js.Function1[java.lang.String, scala.Boolean]
+  ): ParserInline = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("skipToken")(skipToken)
+    __obj.updateDynamic("tokenize")(tokenize)
+    __obj.updateDynamic("validateLink")(validateLink)
+    __obj.asInstanceOf[ParserInline]
+  }
+}
+

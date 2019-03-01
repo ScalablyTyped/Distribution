@@ -53,3 +53,28 @@ trait SetSelectedDataOptions extends js.Object {
   var tableOptions: js.UndefOr[js.Object] = js.undefined
 }
 
+object SetSelectedDataOptions {
+  @scala.inline
+  def apply(
+    asyncContext: js.Any = null,
+    cellFormat: js.Array[RangeFormatConfiguration] = null,
+    coercionType: CoercionType | java.lang.String = null,
+    imageHeight: scala.Int | scala.Double = null,
+    imageLeft: scala.Int | scala.Double = null,
+    imageTop: scala.Int | scala.Double = null,
+    imageWidth: scala.Int | scala.Double = null,
+    tableOptions: js.Object = null
+  ): SetSelectedDataOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (cellFormat != null) __obj.updateDynamic("cellFormat")(cellFormat)
+    if (coercionType != null) __obj.updateDynamic("coercionType")(coercionType.asInstanceOf[js.Any])
+    if (imageHeight != null) __obj.updateDynamic("imageHeight")(imageHeight.asInstanceOf[js.Any])
+    if (imageLeft != null) __obj.updateDynamic("imageLeft")(imageLeft.asInstanceOf[js.Any])
+    if (imageTop != null) __obj.updateDynamic("imageTop")(imageTop.asInstanceOf[js.Any])
+    if (imageWidth != null) __obj.updateDynamic("imageWidth")(imageWidth.asInstanceOf[js.Any])
+    if (tableOptions != null) __obj.updateDynamic("tableOptions")(tableOptions)
+    __obj.asInstanceOf[SetSelectedDataOptions]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Event extends js.Object {
   def clearSelection(): scala.Unit
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    clearSelection: js.Function0[scala.Unit],
+    text: java.lang.String,
+    trigger: stdLib.Element
+  ): Event = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("clearSelection")(clearSelection)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("trigger")(trigger)
+    __obj.asInstanceOf[Event]
+  }
+}
+

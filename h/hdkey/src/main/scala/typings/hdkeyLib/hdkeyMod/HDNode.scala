@@ -12,3 +12,20 @@ trait HDNode extends js.Object {
   def derive(path: java.lang.String): HDNode
 }
 
+object HDNode {
+  @scala.inline
+  def apply(
+    chainCode: nodeLib.Buffer,
+    derive: js.Function1[java.lang.String, HDNode],
+    privateKey: nodeLib.Buffer,
+    publicKey: nodeLib.Buffer
+  ): HDNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chainCode")(chainCode)
+    __obj.updateDynamic("derive")(derive)
+    __obj.updateDynamic("privateKey")(privateKey)
+    __obj.updateDynamic("publicKey")(publicKey)
+    __obj.asInstanceOf[HDNode]
+  }
+}
+

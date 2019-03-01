@@ -13,3 +13,22 @@ trait OAuth extends js.Object {
   var signature_method: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OAuth {
+  @scala.inline
+  def apply(
+    access_token: java.lang.String,
+    access_token_secret: java.lang.String,
+    consumer_key: java.lang.String,
+    consumer_secret: java.lang.String,
+    signature_method: java.lang.String = null
+  ): OAuth = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("access_token")(access_token)
+    __obj.updateDynamic("access_token_secret")(access_token_secret)
+    __obj.updateDynamic("consumer_key")(consumer_key)
+    __obj.updateDynamic("consumer_secret")(consumer_secret)
+    if (signature_method != null) __obj.updateDynamic("signature_method")(signature_method)
+    __obj.asInstanceOf[OAuth]
+  }
+}
+

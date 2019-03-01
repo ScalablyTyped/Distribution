@@ -41,3 +41,34 @@ trait RecordDoubleClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RecordDoubleClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cell: js.Any = null,
+    cellIndex: scala.Int | scala.Double = null,
+    cellValue: java.lang.String = null,
+    columnName: java.lang.String = null,
+    data: js.Any = null,
+    model: js.Any = null,
+    row: js.Any = null,
+    rowData: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): RecordDoubleClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RecordDoubleClickEventArgs]
+  }
+}
+

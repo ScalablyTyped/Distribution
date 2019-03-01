@@ -27,3 +27,50 @@ trait ITypeaheadOptions extends js.Object {
   var watchOptions: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ITypeaheadOptions {
+  @scala.inline
+  def apply(
+    animation: java.lang.String = null,
+    autoSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    comparator: java.lang.String = null,
+    container: java.lang.String | scala.Boolean = null,
+    delay: scala.Double | angularDashStrapLib.Anon_Hide = null,
+    html: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    limit: scala.Int | scala.Double = null,
+    minLength: scala.Int | scala.Double = null,
+    onBeforeHide: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
+    onBeforeShow: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
+    onHide: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
+    onSelect: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
+    onShow: js.Function1[/* typeahead */ ITypeahead, scala.Unit] = null,
+    placement: java.lang.String = null,
+    template: java.lang.String = null,
+    trigger: java.lang.String = null,
+    trimValue: js.UndefOr[scala.Boolean] = js.undefined,
+    watchOptions: js.UndefOr[scala.Boolean] = js.undefined
+  ): ITypeaheadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (!js.isUndefined(autoSelect)) __obj.updateDynamic("autoSelect")(autoSelect)
+    if (comparator != null) __obj.updateDynamic("comparator")(comparator)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (minLength != null) __obj.updateDynamic("minLength")(minLength.asInstanceOf[js.Any])
+    if (onBeforeHide != null) __obj.updateDynamic("onBeforeHide")(onBeforeHide)
+    if (onBeforeShow != null) __obj.updateDynamic("onBeforeShow")(onBeforeShow)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger)
+    if (!js.isUndefined(trimValue)) __obj.updateDynamic("trimValue")(trimValue)
+    if (!js.isUndefined(watchOptions)) __obj.updateDynamic("watchOptions")(watchOptions)
+    __obj.asInstanceOf[ITypeaheadOptions]
+  }
+}
+

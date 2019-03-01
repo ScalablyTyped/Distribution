@@ -76,3 +76,54 @@ trait UrlFilter extends js.Object {
   var urlSuffix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UrlFilter {
+  @scala.inline
+  def apply(
+    hostContains: java.lang.String = null,
+    hostEquals: java.lang.String = null,
+    hostPrefix: java.lang.String = null,
+    hostSuffix: java.lang.String = null,
+    originAndPathMatches: java.lang.String = null,
+    pathContains: java.lang.String = null,
+    pathEquals: java.lang.String = null,
+    pathPrefix: java.lang.String = null,
+    pathSuffix: java.lang.String = null,
+    ports: js.Array[
+      chromeDashAppsLib.chromeNs.integer | js.Array[chromeDashAppsLib.chromeNs.integer]
+    ] = null,
+    queryContains: java.lang.String = null,
+    queryEquals: java.lang.String = null,
+    queryPrefix: java.lang.String = null,
+    querySuffix: java.lang.String = null,
+    schemes: js.Array[java.lang.String] = null,
+    urlContains: java.lang.String = null,
+    urlEquals: java.lang.String = null,
+    urlMatches: java.lang.String = null,
+    urlPrefix: java.lang.String = null,
+    urlSuffix: java.lang.String = null
+  ): UrlFilter = {
+    val __obj = js.Dynamic.literal()
+    if (hostContains != null) __obj.updateDynamic("hostContains")(hostContains)
+    if (hostEquals != null) __obj.updateDynamic("hostEquals")(hostEquals)
+    if (hostPrefix != null) __obj.updateDynamic("hostPrefix")(hostPrefix)
+    if (hostSuffix != null) __obj.updateDynamic("hostSuffix")(hostSuffix)
+    if (originAndPathMatches != null) __obj.updateDynamic("originAndPathMatches")(originAndPathMatches)
+    if (pathContains != null) __obj.updateDynamic("pathContains")(pathContains)
+    if (pathEquals != null) __obj.updateDynamic("pathEquals")(pathEquals)
+    if (pathPrefix != null) __obj.updateDynamic("pathPrefix")(pathPrefix)
+    if (pathSuffix != null) __obj.updateDynamic("pathSuffix")(pathSuffix)
+    if (ports != null) __obj.updateDynamic("ports")(ports)
+    if (queryContains != null) __obj.updateDynamic("queryContains")(queryContains)
+    if (queryEquals != null) __obj.updateDynamic("queryEquals")(queryEquals)
+    if (queryPrefix != null) __obj.updateDynamic("queryPrefix")(queryPrefix)
+    if (querySuffix != null) __obj.updateDynamic("querySuffix")(querySuffix)
+    if (schemes != null) __obj.updateDynamic("schemes")(schemes)
+    if (urlContains != null) __obj.updateDynamic("urlContains")(urlContains)
+    if (urlEquals != null) __obj.updateDynamic("urlEquals")(urlEquals)
+    if (urlMatches != null) __obj.updateDynamic("urlMatches")(urlMatches)
+    if (urlPrefix != null) __obj.updateDynamic("urlPrefix")(urlPrefix)
+    if (urlSuffix != null) __obj.updateDynamic("urlSuffix")(urlSuffix)
+    __obj.asInstanceOf[UrlFilter]
+  }
+}
+

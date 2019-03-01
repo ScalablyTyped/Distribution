@@ -20,3 +20,13 @@ trait IProgressConfig extends js.Object {
   var max: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IProgressConfig {
+  @scala.inline
+  def apply(animate: js.UndefOr[scala.Boolean] = js.undefined, max: scala.Int | scala.Double = null): IProgressConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IProgressConfig]
+  }
+}
+

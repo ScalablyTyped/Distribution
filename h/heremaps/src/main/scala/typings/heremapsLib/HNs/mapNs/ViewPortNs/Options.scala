@@ -17,3 +17,18 @@ trait Options extends js.Object {
   var padding: js.UndefOr[Padding] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    fixedCenter: js.UndefOr[scala.Boolean] = js.undefined,
+    margin: scala.Int | scala.Double = null,
+    padding: Padding = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(fixedCenter)) __obj.updateDynamic("fixedCenter")(fixedCenter)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding)
+    __obj.asInstanceOf[Options]
+  }
+}
+

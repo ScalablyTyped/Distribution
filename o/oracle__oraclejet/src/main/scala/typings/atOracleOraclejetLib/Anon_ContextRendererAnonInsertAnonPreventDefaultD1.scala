@@ -11,3 +11,17 @@ trait Anon_ContextRendererAnonInsertAnonPreventDefaultD1[K1, K3, D3, K2, D2, D1]
   ): Anon_Insert | Anon_PreventDefault
 }
 
+object Anon_ContextRendererAnonInsertAnonPreventDefaultD1 {
+  @scala.inline
+  def apply[K1, K3, D3, K2, D2, D1](
+    renderer: js.Function1[
+      atOracleOraclejetLib.ojthematicmapMod.ojThematicMapNs.TooltipContext[K1, K2, K3, D1, D2, D3], 
+      Anon_Insert | Anon_PreventDefault
+    ]
+  ): Anon_ContextRendererAnonInsertAnonPreventDefaultD1[K1, K3, D3, K2, D2, D1] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderer")(renderer)
+    __obj.asInstanceOf[Anon_ContextRendererAnonInsertAnonPreventDefaultD1[K1, K3, D3, K2, D2, D1]]
+  }
+}
+

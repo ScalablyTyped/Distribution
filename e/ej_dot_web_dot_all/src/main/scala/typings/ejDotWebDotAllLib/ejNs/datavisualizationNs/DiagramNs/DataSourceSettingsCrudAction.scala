@@ -24,3 +24,20 @@ trait DataSourceSettingsCrudAction extends js.Object {
   var update: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataSourceSettingsCrudAction {
+  @scala.inline
+  def apply(
+    create: java.lang.String = null,
+    destroy: java.lang.String = null,
+    read: java.lang.String = null,
+    update: java.lang.String = null
+  ): DataSourceSettingsCrudAction = {
+    val __obj = js.Dynamic.literal()
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (read != null) __obj.updateDynamic("read")(read)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[DataSourceSettingsCrudAction]
+  }
+}
+

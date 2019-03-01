@@ -5,10 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LinearGradient extends js.Object {
+trait LinearGradient extends _Color {
   var left: Vector
   var right: Vector
   var spread: java.lang.String
   var stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
+}
+
+object LinearGradient {
+  @scala.inline
+  def apply(
+    clone: js.Function0[LinearGradient],
+    left: Vector,
+    right: Vector,
+    spread: java.lang.String,
+    stops: twoDotJsLib.twoDotJsMod.TwoNs.UtilsNs.Collection[Stop]
+  ): LinearGradient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("right")(right)
+    __obj.updateDynamic("spread")(spread)
+    __obj.updateDynamic("stops")(stops)
+    __obj.asInstanceOf[LinearGradient]
+  }
 }
 

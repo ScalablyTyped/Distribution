@@ -20,3 +20,18 @@ trait RenderingContextConfig extends js.Object {
   var preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RenderingContextConfig {
+  @scala.inline
+  def apply(
+    antialias: js.UndefOr[scala.Boolean] = js.undefined,
+    antialiasSamples: scala.Int | scala.Double = null,
+    preserveDrawingBuffer: js.UndefOr[scala.Boolean] = js.undefined
+  ): RenderingContextConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(antialias)) __obj.updateDynamic("antialias")(antialias)
+    if (antialiasSamples != null) __obj.updateDynamic("antialiasSamples")(antialiasSamples.asInstanceOf[js.Any])
+    if (!js.isUndefined(preserveDrawingBuffer)) __obj.updateDynamic("preserveDrawingBuffer")(preserveDrawingBuffer)
+    __obj.asInstanceOf[RenderingContextConfig]
+  }
+}
+

@@ -23,3 +23,42 @@ trait TableOptions extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableOptions {
+  @scala.inline
+  def apply(
+    allowHtml: js.UndefOr[scala.Boolean] = js.undefined,
+    alternatingRowStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    cssClassNames: CssClassNames = null,
+    firstRowNumber: scala.Int | scala.Double = null,
+    height: java.lang.String = null,
+    page: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    rtlTable: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollLeftStartPosition: scala.Int | scala.Double = null,
+    showRowNumber: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: java.lang.String = null,
+    sortAscending: js.UndefOr[scala.Boolean] = js.undefined,
+    sortColumn: scala.Int | scala.Double = null,
+    startPage: scala.Int | scala.Double = null,
+    width: java.lang.String = null
+  ): TableOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowHtml)) __obj.updateDynamic("allowHtml")(allowHtml)
+    if (!js.isUndefined(alternatingRowStyle)) __obj.updateDynamic("alternatingRowStyle")(alternatingRowStyle)
+    if (cssClassNames != null) __obj.updateDynamic("cssClassNames")(cssClassNames)
+    if (firstRowNumber != null) __obj.updateDynamic("firstRowNumber")(firstRowNumber.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (page != null) __obj.updateDynamic("page")(page)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(rtlTable)) __obj.updateDynamic("rtlTable")(rtlTable)
+    if (scrollLeftStartPosition != null) __obj.updateDynamic("scrollLeftStartPosition")(scrollLeftStartPosition.asInstanceOf[js.Any])
+    if (!js.isUndefined(showRowNumber)) __obj.updateDynamic("showRowNumber")(showRowNumber)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(sortAscending)) __obj.updateDynamic("sortAscending")(sortAscending)
+    if (sortColumn != null) __obj.updateDynamic("sortColumn")(sortColumn.asInstanceOf[js.Any])
+    if (startPage != null) __obj.updateDynamic("startPage")(startPage.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[TableOptions]
+  }
+}
+

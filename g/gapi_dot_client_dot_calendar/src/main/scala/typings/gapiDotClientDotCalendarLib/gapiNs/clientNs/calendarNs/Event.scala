@@ -136,3 +136,86 @@ trait Event extends js.Object {
   var visibility: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    anyoneCanAddSelf: js.UndefOr[scala.Boolean] = js.undefined,
+    attachments: js.Array[EventAttachment] = null,
+    attendees: js.Array[EventAttendee] = null,
+    attendeesOmitted: js.UndefOr[scala.Boolean] = js.undefined,
+    colorId: java.lang.String = null,
+    created: java.lang.String = null,
+    creator: gapiDotClientDotCalendarLib.Anon_DisplayName = null,
+    description: java.lang.String = null,
+    end: EventDateTime = null,
+    endTimeUnspecified: js.UndefOr[scala.Boolean] = js.undefined,
+    etag: java.lang.String = null,
+    extendedProperties: gapiDotClientDotCalendarLib.Anon_Private = null,
+    gadget: gapiDotClientDotCalendarLib.Anon_Display = null,
+    guestsCanInviteOthers: js.UndefOr[scala.Boolean] = js.undefined,
+    guestsCanModify: js.UndefOr[scala.Boolean] = js.undefined,
+    guestsCanSeeOtherGuests: js.UndefOr[scala.Boolean] = js.undefined,
+    hangoutLink: java.lang.String = null,
+    htmlLink: java.lang.String = null,
+    iCalUID: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    location: java.lang.String = null,
+    locked: js.UndefOr[scala.Boolean] = js.undefined,
+    organizer: gapiDotClientDotCalendarLib.Anon_DisplayName = null,
+    originalStartTime: EventDateTime = null,
+    privateCopy: js.UndefOr[scala.Boolean] = js.undefined,
+    recurrence: js.Array[java.lang.String] = null,
+    recurringEventId: java.lang.String = null,
+    reminders: gapiDotClientDotCalendarLib.Anon_Overrides = null,
+    sequence: scala.Int | scala.Double = null,
+    source: gapiDotClientDotCalendarLib.Anon_Title = null,
+    start: EventDateTime = null,
+    status: java.lang.String = null,
+    summary: java.lang.String = null,
+    transparency: java.lang.String = null,
+    updated: java.lang.String = null,
+    visibility: java.lang.String = null
+  ): Event = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(anyoneCanAddSelf)) __obj.updateDynamic("anyoneCanAddSelf")(anyoneCanAddSelf)
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (attendees != null) __obj.updateDynamic("attendees")(attendees)
+    if (!js.isUndefined(attendeesOmitted)) __obj.updateDynamic("attendeesOmitted")(attendeesOmitted)
+    if (colorId != null) __obj.updateDynamic("colorId")(colorId)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (creator != null) __obj.updateDynamic("creator")(creator)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (!js.isUndefined(endTimeUnspecified)) __obj.updateDynamic("endTimeUnspecified")(endTimeUnspecified)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (extendedProperties != null) __obj.updateDynamic("extendedProperties")(extendedProperties)
+    if (gadget != null) __obj.updateDynamic("gadget")(gadget)
+    if (!js.isUndefined(guestsCanInviteOthers)) __obj.updateDynamic("guestsCanInviteOthers")(guestsCanInviteOthers)
+    if (!js.isUndefined(guestsCanModify)) __obj.updateDynamic("guestsCanModify")(guestsCanModify)
+    if (!js.isUndefined(guestsCanSeeOtherGuests)) __obj.updateDynamic("guestsCanSeeOtherGuests")(guestsCanSeeOtherGuests)
+    if (hangoutLink != null) __obj.updateDynamic("hangoutLink")(hangoutLink)
+    if (htmlLink != null) __obj.updateDynamic("htmlLink")(htmlLink)
+    if (iCalUID != null) __obj.updateDynamic("iCalUID")(iCalUID)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    if (organizer != null) __obj.updateDynamic("organizer")(organizer)
+    if (originalStartTime != null) __obj.updateDynamic("originalStartTime")(originalStartTime)
+    if (!js.isUndefined(privateCopy)) __obj.updateDynamic("privateCopy")(privateCopy)
+    if (recurrence != null) __obj.updateDynamic("recurrence")(recurrence)
+    if (recurringEventId != null) __obj.updateDynamic("recurringEventId")(recurringEventId)
+    if (reminders != null) __obj.updateDynamic("reminders")(reminders)
+    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (transparency != null) __obj.updateDynamic("transparency")(transparency)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    __obj.asInstanceOf[Event]
+  }
+}
+

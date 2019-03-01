@@ -10,3 +10,13 @@ trait SmartClientDeployment extends js.Object {
   var weak: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SmartClientDeployment {
+  @scala.inline
+  def apply(simple: java.lang.String = null, weak: java.lang.String = null): SmartClientDeployment = {
+    val __obj = js.Dynamic.literal()
+    if (simple != null) __obj.updateDynamic("simple")(simple)
+    if (weak != null) __obj.updateDynamic("weak")(weak)
+    __obj.asInstanceOf[SmartClientDeployment]
+  }
+}
+

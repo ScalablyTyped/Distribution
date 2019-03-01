@@ -96,3 +96,42 @@ trait IPhysicsEngine extends js.Object {
   def setTimeStep(newTimeStep: scala.Double): scala.Unit
 }
 
+object IPhysicsEngine {
+  @scala.inline
+  def apply(
+    _step: js.Function1[scala.Double, scala.Unit],
+    addImpostor: js.Function1[PhysicsImpostor, scala.Unit],
+    addJoint: js.Function3[PhysicsImpostor, PhysicsImpostor, PhysicsJoint, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getImpostorForPhysicsObject: js.Function1[IPhysicsEnabledObject, Nullable[PhysicsImpostor]],
+    getImpostorWithPhysicsBody: js.Function1[js.Any, Nullable[PhysicsImpostor]],
+    getImpostors: js.Function0[js.Array[PhysicsImpostor]],
+    getPhysicsPlugin: js.Function0[IPhysicsEnginePlugin],
+    getPhysicsPluginName: js.Function0[java.lang.String],
+    getTimeStep: js.Function0[scala.Double],
+    gravity: Vector3,
+    removeImpostor: js.Function1[PhysicsImpostor, scala.Unit],
+    removeJoint: js.Function3[PhysicsImpostor, PhysicsImpostor, PhysicsJoint, scala.Unit],
+    setGravity: js.Function1[Vector3, scala.Unit],
+    setTimeStep: js.Function1[scala.Double, scala.Unit]
+  ): IPhysicsEngine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_step")(_step)
+    __obj.updateDynamic("addImpostor")(addImpostor)
+    __obj.updateDynamic("addJoint")(addJoint)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getImpostorForPhysicsObject")(getImpostorForPhysicsObject)
+    __obj.updateDynamic("getImpostorWithPhysicsBody")(getImpostorWithPhysicsBody)
+    __obj.updateDynamic("getImpostors")(getImpostors)
+    __obj.updateDynamic("getPhysicsPlugin")(getPhysicsPlugin)
+    __obj.updateDynamic("getPhysicsPluginName")(getPhysicsPluginName)
+    __obj.updateDynamic("getTimeStep")(getTimeStep)
+    __obj.updateDynamic("gravity")(gravity)
+    __obj.updateDynamic("removeImpostor")(removeImpostor)
+    __obj.updateDynamic("removeJoint")(removeJoint)
+    __obj.updateDynamic("setGravity")(setGravity)
+    __obj.updateDynamic("setTimeStep")(setTimeStep)
+    __obj.asInstanceOf[IPhysicsEngine]
+  }
+}
+

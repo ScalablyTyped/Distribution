@@ -10,3 +10,13 @@ trait Token extends js.Object {
   var value: java.lang.String
 }
 
+object Token {
+  @scala.inline
+  def apply(tag: Tag, value: java.lang.String): Token = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tag")(tag)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Token]
+  }
+}
+

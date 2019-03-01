@@ -57,3 +57,34 @@ trait XFlatParagraphIterator
   def getParaBefore(xPara: XFlatParagraph): XFlatParagraph
 }
 
+object XFlatParagraphIterator {
+  @scala.inline
+  def apply(
+    FirstPara: XFlatParagraph,
+    LastPara: XFlatParagraph,
+    NextPara: XFlatParagraph,
+    acquire: js.Function0[scala.Unit],
+    getFirstPara: js.Function0[XFlatParagraph],
+    getLastPara: js.Function0[XFlatParagraph],
+    getNextPara: js.Function0[XFlatParagraph],
+    getParaAfter: js.Function1[XFlatParagraph, XFlatParagraph],
+    getParaBefore: js.Function1[XFlatParagraph, XFlatParagraph],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFlatParagraphIterator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FirstPara")(FirstPara)
+    __obj.updateDynamic("LastPara")(LastPara)
+    __obj.updateDynamic("NextPara")(NextPara)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFirstPara")(getFirstPara)
+    __obj.updateDynamic("getLastPara")(getLastPara)
+    __obj.updateDynamic("getNextPara")(getNextPara)
+    __obj.updateDynamic("getParaAfter")(getParaAfter)
+    __obj.updateDynamic("getParaBefore")(getParaBefore)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFlatParagraphIterator]
+  }
+}
+

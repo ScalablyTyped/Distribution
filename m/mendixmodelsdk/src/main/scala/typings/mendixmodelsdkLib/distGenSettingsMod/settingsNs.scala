@@ -163,6 +163,8 @@ object settingsNs extends js.Object {
   class ProjectSettings protected ()
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject) = this()
+    @JSName("containerAsProject")
+    val containerAsProject_ProjectSettings: mendixmodelsdkLib.distGenProjectsMod.projectsNs.Project = js.native
     val settingsParts: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[ProjectSettingsPart] = js.native
   }
   

@@ -31,3 +31,22 @@ trait MigrationOptions extends js.Object {
   var wrap: js.UndefOr[js.Function1[/* fn */ js.Any, _]] = js.undefined
 }
 
+object MigrationOptions {
+  @scala.inline
+  def apply(
+    customResolver: js.Function1[/* path */ java.lang.String, umzugLib.Anon_Down] = null,
+    params: js.Array[_] = null,
+    path: java.lang.String = null,
+    pattern: stdLib.RegExp = null,
+    wrap: js.Function1[/* fn */ js.Any, _] = null
+  ): MigrationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customResolver != null) __obj.updateDynamic("customResolver")(customResolver)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (wrap != null) __obj.updateDynamic("wrap")(wrap)
+    __obj.asInstanceOf[MigrationOptions]
+  }
+}
+

@@ -19,3 +19,13 @@ trait INxStreamListEntry extends js.Object {
   var qName: java.lang.String
 }
 
+object INxStreamListEntry {
+  @scala.inline
+  def apply(qId: java.lang.String, qName: java.lang.String): INxStreamListEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qId")(qId)
+    __obj.updateDynamic("qName")(qName)
+    __obj.asInstanceOf[INxStreamListEntry]
+  }
+}
+

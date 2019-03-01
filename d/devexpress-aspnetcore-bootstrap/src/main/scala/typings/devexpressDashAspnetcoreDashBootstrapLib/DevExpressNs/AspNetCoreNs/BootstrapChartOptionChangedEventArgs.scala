@@ -12,3 +12,26 @@ trait BootstrapChartOptionChangedEventArgs extends BootstrapChartEventArgsBase {
   val value: js.Any
 }
 
+object BootstrapChartOptionChangedEventArgs {
+  @scala.inline
+  def apply(
+    component: js.Any,
+    element: js.Any,
+    fullName: java.lang.String,
+    name: java.lang.String,
+    previousValue: js.Any,
+    sender: Control,
+    value: js.Any
+  ): BootstrapChartOptionChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("component")(component)
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("fullName")(fullName)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("previousValue")(previousValue)
+    __obj.updateDynamic("sender")(sender)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[BootstrapChartOptionChangedEventArgs]
+  }
+}
+

@@ -14,3 +14,13 @@ trait SetToolEventArgs extends js.Object {
   var source: js.UndefOr[js.Any] = js.undefined
 }
 
+object SetToolEventArgs {
+  @scala.inline
+  def apply(action: ActiveTool = null, source: js.Any = null): SetToolEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[SetToolEventArgs]
+  }
+}
+

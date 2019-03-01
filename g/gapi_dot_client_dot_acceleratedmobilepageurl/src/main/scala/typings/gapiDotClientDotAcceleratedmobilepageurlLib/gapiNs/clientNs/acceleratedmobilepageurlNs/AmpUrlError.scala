@@ -14,3 +14,18 @@ trait AmpUrlError extends js.Object {
   var originalUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AmpUrlError {
+  @scala.inline
+  def apply(
+    errorCode: java.lang.String = null,
+    errorMessage: java.lang.String = null,
+    originalUrl: java.lang.String = null
+  ): AmpUrlError = {
+    val __obj = js.Dynamic.literal()
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
+    if (errorMessage != null) __obj.updateDynamic("errorMessage")(errorMessage)
+    if (originalUrl != null) __obj.updateDynamic("originalUrl")(originalUrl)
+    __obj.asInstanceOf[AmpUrlError]
+  }
+}
+

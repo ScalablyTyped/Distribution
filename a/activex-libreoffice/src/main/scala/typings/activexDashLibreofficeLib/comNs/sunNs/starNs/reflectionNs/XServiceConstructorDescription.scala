@@ -47,3 +47,26 @@ trait XServiceConstructorDescription extends js.Object {
   def isDefaultConstructor(): scala.Boolean
 }
 
+object XServiceConstructorDescription {
+  @scala.inline
+  def apply(
+    Exceptions: activexDashInteropLib.SafeArray[XCompoundTypeDescription],
+    Name: java.lang.String,
+    Parameters: activexDashInteropLib.SafeArray[XParameter],
+    getExceptions: js.Function0[activexDashInteropLib.SafeArray[XCompoundTypeDescription]],
+    getName: js.Function0[java.lang.String],
+    getParameters: js.Function0[activexDashInteropLib.SafeArray[XParameter]],
+    isDefaultConstructor: js.Function0[scala.Boolean]
+  ): XServiceConstructorDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Exceptions")(Exceptions)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Parameters")(Parameters)
+    __obj.updateDynamic("getExceptions")(getExceptions)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getParameters")(getParameters)
+    __obj.updateDynamic("isDefaultConstructor")(isDefaultConstructor)
+    __obj.asInstanceOf[XServiceConstructorDescription]
+  }
+}
+

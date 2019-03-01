@@ -10,3 +10,13 @@ trait Anon_Article extends js.Object {
   var bonus: js.Array[Anon_Secret]
 }
 
+object Anon_Article {
+  @scala.inline
+  def apply(article: js.Array[Anon_MerchantArticleId], bonus: js.Array[Anon_Secret]): Anon_Article = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("article")(article)
+    __obj.updateDynamic("bonus")(bonus)
+    __obj.asInstanceOf[Anon_Article]
+  }
+}
+

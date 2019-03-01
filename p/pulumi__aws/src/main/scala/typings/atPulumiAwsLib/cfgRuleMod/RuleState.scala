@@ -44,3 +44,28 @@ trait RuleState extends js.Object {
   val source: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_OwnerSourceDetails]] = js.undefined
 }
 
+object RuleState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    inputParameters: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    maximumExecutionFrequency: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ruleId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    scope: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ComplianceResourceIdComplianceResourceTypes] = null,
+    source: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_OwnerSourceDetails] = null
+  ): RuleState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (inputParameters != null) __obj.updateDynamic("inputParameters")(inputParameters.asInstanceOf[js.Any])
+    if (maximumExecutionFrequency != null) __obj.updateDynamic("maximumExecutionFrequency")(maximumExecutionFrequency.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuleState]
+  }
+}
+

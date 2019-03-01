@@ -256,3 +256,82 @@ import scala.scalajs.js.annotation._
   var ValidationLocal: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet
 }
 
+object SheetCellRange {
+  @scala.inline
+  def apply(
+    AbsoluteName: java.lang.String,
+    CharacterProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterProperties = null,
+    CharacterPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesAsian = null,
+    CharacterPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesComplex = null,
+    ConditionalFormat: XSheetConditionalEntries,
+    ConditionalFormatLocal: XSheetConditionalEntries,
+    ParagraphProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphProperties = null,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    Validation: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    ValidationLocal: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet,
+    XArrayFormulaRange: XArrayFormulaRange = null,
+    XAutoFormattable: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XAutoFormattable = null,
+    XCellFormatRangesSupplier: XCellFormatRangesSupplier = null,
+    XCellRangeAddressable: XCellRangeAddressable = null,
+    XCellRangeData: XCellRangeData = null,
+    XCellRangeFormula: XCellRangeFormula = null,
+    XCellSeries: XCellSeries = null,
+    XChartDataArray: activexDashLibreofficeLib.comNs.sunNs.starNs.chartNs.XChartDataArray = null,
+    XColumnRowRange: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XColumnRowRange = null,
+    XImportable: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XImportable = null,
+    XIndent: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XIndent = null,
+    XMergeable: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XMergeable = null,
+    XModifyBroadcaster: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyBroadcaster = null,
+    XMultipleOperation: XMultipleOperation = null,
+    XReplaceable: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XReplaceable = null,
+    XSheetCellRange: XSheetCellRange = null,
+    XSheetFilterableEx: XSheetFilterableEx = null,
+    XSheetOperation: XSheetOperation = null,
+    XSortable: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XSortable = null,
+    XSubTotalCalculatable: XSubTotalCalculatable = null,
+    XTolerantMultiPropertySet: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XTolerantMultiPropertySet = null,
+    XUniqueCellFormatRangesSupplier: XUniqueCellFormatRangesSupplier = null,
+    CellRange: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRange = null,
+    SheetRangesQuery: SheetRangesQuery = null
+  ): SheetCellRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AbsoluteName")(AbsoluteName)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
+    __obj.updateDynamic("ConditionalFormat")(ConditionalFormat)
+    __obj.updateDynamic("ConditionalFormatLocal")(ConditionalFormatLocal)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("Size")(Size)
+    __obj.updateDynamic("Validation")(Validation)
+    __obj.updateDynamic("ValidationLocal")(ValidationLocal)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XArrayFormulaRange)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XAutoFormattable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellFormatRangesSupplier)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellRangeAddressable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellRangeData)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellRangeFormula)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XCellSeries)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XChartDataArray)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XColumnRowRange)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XImportable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XIndent)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XMergeable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XModifyBroadcaster)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XMultipleOperation)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XReplaceable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetCellRange)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetFilterableEx)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSheetOperation)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSortable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSubTotalCalculatable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XTolerantMultiPropertySet)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XUniqueCellFormatRangesSupplier)
+    js.Dynamic.global.Object.assign(__obj, CellRange)
+    js.Dynamic.global.Object.assign(__obj, SheetRangesQuery)
+    __obj.asInstanceOf[SheetCellRange]
+  }
+}
+

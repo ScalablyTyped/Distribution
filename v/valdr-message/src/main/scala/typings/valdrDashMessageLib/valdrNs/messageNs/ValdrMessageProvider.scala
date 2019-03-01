@@ -31,3 +31,20 @@ trait ValdrMessageProvider extends js.Object {
   def setTemplateUrl(url: java.lang.String): scala.Unit
 }
 
+object ValdrMessageProvider {
+  @scala.inline
+  def apply(
+    addMessages: js.Function1[org.scalablytyped.runtime.StringDictionary[java.lang.String], scala.Unit],
+    getMessage: js.Function3[java.lang.String, java.lang.String, java.lang.String, java.lang.String],
+    setTemplate: js.Function1[java.lang.String, scala.Unit],
+    setTemplateUrl: js.Function1[java.lang.String, scala.Unit]
+  ): ValdrMessageProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addMessages")(addMessages)
+    __obj.updateDynamic("getMessage")(getMessage)
+    __obj.updateDynamic("setTemplate")(setTemplate)
+    __obj.updateDynamic("setTemplateUrl")(setTemplateUrl)
+    __obj.asInstanceOf[ValdrMessageProvider]
+  }
+}
+

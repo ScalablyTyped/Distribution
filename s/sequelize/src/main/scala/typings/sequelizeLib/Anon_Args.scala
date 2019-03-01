@@ -10,3 +10,16 @@ trait Anon_Args extends js.Object {
   var msg: java.lang.String
 }
 
+object Anon_Args {
+  @scala.inline
+  def apply(
+    args: java.lang.String | (js.Array[java.lang.String | stdLib.RegExp]) | stdLib.RegExp,
+    msg: java.lang.String
+  ): Anon_Args = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    __obj.updateDynamic("msg")(msg)
+    __obj.asInstanceOf[Anon_Args]
+  }
+}
+

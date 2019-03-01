@@ -22,5 +22,4 @@ package object halogenMod {
   type SkewLoader = reactLib.reactMod.Component[SizeLoaderProps, js.Object, js.Any]
   type SquareLoader = reactLib.reactMod.Component[SizeLoaderProps, js.Object, js.Any]
   type SyncLoader = reactLib.reactMod.Component[MarginLoaderProps[java.lang.String], js.Object, js.Any]
-  type VerticalAlign = halogenLib.halogenLibStrings.baseline | halogenLib.halogenLibStrings.length | halogenLib.halogenLibStrings.sub | halogenLib.halogenLibStrings.`super` | halogenLib.halogenLibStrings.top | halogenLib.halogenLibStrings.`text-top` | halogenLib.halogenLibStrings.middle | halogenLib.halogenLibStrings.bottom | halogenLib.halogenLibStrings.`text-bottom` | halogenLib.halogenLibStrings.initial | halogenLib.halogenLibStrings.inherit
 }

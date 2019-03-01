@@ -42,3 +42,30 @@ trait WindowEvent
   var Y: scala.Double
 }
 
+object WindowEvent {
+  @scala.inline
+  def apply(
+    BottomInset: scala.Double,
+    Height: scala.Double,
+    LeftInset: scala.Double,
+    RightInset: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    TopInset: scala.Double,
+    Width: scala.Double,
+    X: scala.Double,
+    Y: scala.Double
+  ): WindowEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BottomInset")(BottomInset)
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("LeftInset")(LeftInset)
+    __obj.updateDynamic("RightInset")(RightInset)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("TopInset")(TopInset)
+    __obj.updateDynamic("Width")(Width)
+    __obj.updateDynamic("X")(X)
+    __obj.updateDynamic("Y")(Y)
+    __obj.asInstanceOf[WindowEvent]
+  }
+}
+

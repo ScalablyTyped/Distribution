@@ -120,3 +120,52 @@ trait XFormOperations
   def isModifiedRow(): scala.Boolean
 }
 
+object XFormOperations {
+  @scala.inline
+  def apply(
+    Controller: XFormController,
+    Cursor: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XRowSet,
+    FeatureInvalidation: XFeatureInvalidation,
+    UpdateCursor: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XResultSetUpdate,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    commitCurrentControl: js.Function0[scala.Boolean],
+    commitCurrentRecord: js.Function1[js.Array[scala.Boolean], scala.Boolean],
+    dispose: js.Function0[scala.Unit],
+    execute: js.Function1[scala.Double, scala.Unit],
+    executeWithArguments: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      scala.Unit
+    ],
+    getState: js.Function1[scala.Double, FeatureState],
+    isEnabled: js.Function1[scala.Double, scala.Boolean],
+    isInsertionRow: js.Function0[scala.Boolean],
+    isModifiedRow: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XFormOperations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Controller")(Controller)
+    __obj.updateDynamic("Cursor")(Cursor)
+    __obj.updateDynamic("FeatureInvalidation")(FeatureInvalidation)
+    __obj.updateDynamic("UpdateCursor")(UpdateCursor)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("commitCurrentControl")(commitCurrentControl)
+    __obj.updateDynamic("commitCurrentRecord")(commitCurrentRecord)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("executeWithArguments")(executeWithArguments)
+    __obj.updateDynamic("getState")(getState)
+    __obj.updateDynamic("isEnabled")(isEnabled)
+    __obj.updateDynamic("isInsertionRow")(isInsertionRow)
+    __obj.updateDynamic("isModifiedRow")(isModifiedRow)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[XFormOperations]
+  }
+}
+

@@ -25,3 +25,20 @@ trait ParseOptions extends js.Object {
   var stopAtFirstUnknown: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ParseOptions {
+  @scala.inline
+  def apply(
+    argv: js.Array[java.lang.String] = null,
+    camelCase: js.UndefOr[scala.Boolean] = js.undefined,
+    partial: js.UndefOr[scala.Boolean] = js.undefined,
+    stopAtFirstUnknown: js.UndefOr[scala.Boolean] = js.undefined
+  ): ParseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (argv != null) __obj.updateDynamic("argv")(argv)
+    if (!js.isUndefined(camelCase)) __obj.updateDynamic("camelCase")(camelCase)
+    if (!js.isUndefined(partial)) __obj.updateDynamic("partial")(partial)
+    if (!js.isUndefined(stopAtFirstUnknown)) __obj.updateDynamic("stopAtFirstUnknown")(stopAtFirstUnknown)
+    __obj.asInstanceOf[ParseOptions]
+  }
+}
+

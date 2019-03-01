@@ -26,3 +26,30 @@ trait PngOptions extends js.Object {
   var quality: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PngOptions {
+  @scala.inline
+  def apply(
+    adaptiveFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    colors: scala.Int | scala.Double = null,
+    colours: scala.Int | scala.Double = null,
+    compressionLevel: scala.Int | scala.Double = null,
+    dither: scala.Int | scala.Double = null,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    palette: js.UndefOr[scala.Boolean] = js.undefined,
+    progressive: js.UndefOr[scala.Boolean] = js.undefined,
+    quality: scala.Int | scala.Double = null
+  ): PngOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(adaptiveFiltering)) __obj.updateDynamic("adaptiveFiltering")(adaptiveFiltering)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (colours != null) __obj.updateDynamic("colours")(colours.asInstanceOf[js.Any])
+    if (compressionLevel != null) __obj.updateDynamic("compressionLevel")(compressionLevel.asInstanceOf[js.Any])
+    if (dither != null) __obj.updateDynamic("dither")(dither.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (!js.isUndefined(palette)) __obj.updateDynamic("palette")(palette)
+    if (!js.isUndefined(progressive)) __obj.updateDynamic("progressive")(progressive)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PngOptions]
+  }
+}
+

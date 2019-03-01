@@ -15,3 +15,13 @@ trait Anon_NewRange extends js.Object {
   var oldRange: atomLib.atomMod.Range
 }
 
+object Anon_NewRange {
+  @scala.inline
+  def apply(newRange: atomLib.atomMod.Range, oldRange: atomLib.atomMod.Range): Anon_NewRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newRange")(newRange)
+    __obj.updateDynamic("oldRange")(oldRange)
+    __obj.asInstanceOf[Anon_NewRange]
+  }
+}
+

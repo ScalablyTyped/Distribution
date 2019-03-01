@@ -18,3 +18,18 @@ trait DocumentChange extends js.Object {
   var targetIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object DocumentChange {
+  @scala.inline
+  def apply(
+    document: Document = null,
+    removedTargetIds: js.Array[scala.Double] = null,
+    targetIds: js.Array[scala.Double] = null
+  ): DocumentChange = {
+    val __obj = js.Dynamic.literal()
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (removedTargetIds != null) __obj.updateDynamic("removedTargetIds")(removedTargetIds)
+    if (targetIds != null) __obj.updateDynamic("targetIds")(targetIds)
+    __obj.asInstanceOf[DocumentChange]
+  }
+}
+

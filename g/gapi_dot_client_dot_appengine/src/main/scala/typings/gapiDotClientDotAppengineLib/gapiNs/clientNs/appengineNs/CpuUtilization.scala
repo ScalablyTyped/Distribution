@@ -12,3 +12,16 @@ trait CpuUtilization extends js.Object {
   var targetUtilization: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CpuUtilization {
+  @scala.inline
+  def apply(
+    aggregationWindowLength: java.lang.String = null,
+    targetUtilization: scala.Int | scala.Double = null
+  ): CpuUtilization = {
+    val __obj = js.Dynamic.literal()
+    if (aggregationWindowLength != null) __obj.updateDynamic("aggregationWindowLength")(aggregationWindowLength)
+    if (targetUtilization != null) __obj.updateDynamic("targetUtilization")(targetUtilization.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CpuUtilization]
+  }
+}
+

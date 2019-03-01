@@ -10,3 +10,16 @@ trait DataViewOptions[T /* <: slickgridLib.SlickNs.SlickData */] extends js.Obje
   var inlineFilters: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataViewOptions {
+  @scala.inline
+  def apply[T /* <: slickgridLib.SlickNs.SlickData */](
+    groupItemMetadataProvider: GroupItemMetadataProvider[T] = null,
+    inlineFilters: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataViewOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (groupItemMetadataProvider != null) __obj.updateDynamic("groupItemMetadataProvider")(groupItemMetadataProvider)
+    if (!js.isUndefined(inlineFilters)) __obj.updateDynamic("inlineFilters")(inlineFilters)
+    __obj.asInstanceOf[DataViewOptions[T]]
+  }
+}
+

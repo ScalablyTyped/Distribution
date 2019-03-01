@@ -10,3 +10,12 @@ trait VcardTypedText extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VcardTypedText {
+  @scala.inline
+  def apply(text: java.lang.String = null): VcardTypedText = {
+    val __obj = js.Dynamic.literal()
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[VcardTypedText]
+  }
+}
+

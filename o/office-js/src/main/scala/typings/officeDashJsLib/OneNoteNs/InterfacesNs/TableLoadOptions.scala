@@ -58,3 +58,26 @@ trait TableLoadOptions extends js.Object {
   var rows: js.UndefOr[TableRowCollectionLoadOptions] = js.undefined
 }
 
+object TableLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    borderVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    columnCount: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    paragraph: ParagraphLoadOptions = null,
+    rowCount: js.UndefOr[scala.Boolean] = js.undefined,
+    rows: TableRowCollectionLoadOptions = null
+  ): TableLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(borderVisible)) __obj.updateDynamic("borderVisible")(borderVisible)
+    if (!js.isUndefined(columnCount)) __obj.updateDynamic("columnCount")(columnCount)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    if (!js.isUndefined(rowCount)) __obj.updateDynamic("rowCount")(rowCount)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[TableLoadOptions]
+  }
+}
+

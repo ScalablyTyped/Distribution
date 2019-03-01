@@ -23,3 +23,18 @@ trait Anon_Back extends js.Object {
   var side: js.UndefOr[highchartsLib.highchartsMod.HighchartsNs.ChartOptions3dFrame] = js.undefined
 }
 
+object Anon_Back {
+  @scala.inline
+  def apply(
+    back: highchartsLib.highchartsMod.HighchartsNs.ChartOptions3dFrame = null,
+    bottom: highchartsLib.highchartsMod.HighchartsNs.ChartOptions3dFrame = null,
+    side: highchartsLib.highchartsMod.HighchartsNs.ChartOptions3dFrame = null
+  ): Anon_Back = {
+    val __obj = js.Dynamic.literal()
+    if (back != null) __obj.updateDynamic("back")(back)
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
+    if (side != null) __obj.updateDynamic("side")(side)
+    __obj.asInstanceOf[Anon_Back]
+  }
+}
+

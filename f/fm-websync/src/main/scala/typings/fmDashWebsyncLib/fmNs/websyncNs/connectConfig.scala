@@ -40,3 +40,32 @@ trait connectConfig extends baseRequestConfig {
   var stayConnected: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object connectConfig {
+  @scala.inline
+  def apply(
+    meta: js.Any = null,
+    onComplete: js.Function1[/* args */ connectCompleteArgs, scala.Unit] = null,
+    onFailure: js.Function1[/* args */ connectFailureArgs, scala.Unit] = null,
+    onStreamFailure: js.Function1[/* args */ streamFailureArgs, scala.Unit] = null,
+    onSuccess: js.Function1[/* args */ connectSuccessArgs, scala.Unit] = null,
+    onUnhandledReceive: js.Function1[/* args */ receiveArgs, scala.Unit] = null,
+    requestUrl: java.lang.String = null,
+    stayConnected: js.UndefOr[scala.Boolean] = js.undefined,
+    suppressErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    sync: js.UndefOr[scala.Boolean] = js.undefined
+  ): connectConfig = {
+    val __obj = js.Dynamic.literal()
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (onComplete != null) __obj.updateDynamic("onComplete")(onComplete)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (onStreamFailure != null) __obj.updateDynamic("onStreamFailure")(onStreamFailure)
+    if (onSuccess != null) __obj.updateDynamic("onSuccess")(onSuccess)
+    if (onUnhandledReceive != null) __obj.updateDynamic("onUnhandledReceive")(onUnhandledReceive)
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
+    if (!js.isUndefined(stayConnected)) __obj.updateDynamic("stayConnected")(stayConnected)
+    if (!js.isUndefined(suppressErrors)) __obj.updateDynamic("suppressErrors")(suppressErrors)
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    __obj.asInstanceOf[connectConfig]
+  }
+}
+

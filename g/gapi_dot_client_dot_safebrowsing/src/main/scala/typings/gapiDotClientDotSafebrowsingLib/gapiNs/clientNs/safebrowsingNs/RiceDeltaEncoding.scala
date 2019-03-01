@@ -26,3 +26,20 @@ trait RiceDeltaEncoding extends js.Object {
   var riceParameter: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RiceDeltaEncoding {
+  @scala.inline
+  def apply(
+    encodedData: java.lang.String = null,
+    firstValue: java.lang.String = null,
+    numEntries: scala.Int | scala.Double = null,
+    riceParameter: scala.Int | scala.Double = null
+  ): RiceDeltaEncoding = {
+    val __obj = js.Dynamic.literal()
+    if (encodedData != null) __obj.updateDynamic("encodedData")(encodedData)
+    if (firstValue != null) __obj.updateDynamic("firstValue")(firstValue)
+    if (numEntries != null) __obj.updateDynamic("numEntries")(numEntries.asInstanceOf[js.Any])
+    if (riceParameter != null) __obj.updateDynamic("riceParameter")(riceParameter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RiceDeltaEncoding]
+  }
+}
+

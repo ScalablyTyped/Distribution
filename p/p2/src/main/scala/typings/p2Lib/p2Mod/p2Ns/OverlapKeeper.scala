@@ -20,3 +20,36 @@ trait OverlapKeeper extends js.Object {
   def tick(): scala.Unit
 }
 
+object OverlapKeeper {
+  @scala.inline
+  def apply(
+    OverlapKeeperRecordPool: OverlapKeeperRecordPool,
+    bodiesAreOverlapping: js.Function2[Body, Body, scala.Boolean],
+    bodyA: Body,
+    bodyB: Body,
+    overlappingShapesCurrentState: TupleDictionary,
+    overlappingShapesLastState: TupleDictionary,
+    setOverlapping: js.Function4[Body, Shape, Body, Body, scala.Unit],
+    shapeA: Shape,
+    shapeB: Shape,
+    tick: js.Function0[scala.Unit],
+    tmpArray1: js.Array[_],
+    tmpDict: TupleDictionary
+  ): OverlapKeeper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("OverlapKeeperRecordPool")(OverlapKeeperRecordPool)
+    __obj.updateDynamic("bodiesAreOverlapping")(bodiesAreOverlapping)
+    __obj.updateDynamic("bodyA")(bodyA)
+    __obj.updateDynamic("bodyB")(bodyB)
+    __obj.updateDynamic("overlappingShapesCurrentState")(overlappingShapesCurrentState)
+    __obj.updateDynamic("overlappingShapesLastState")(overlappingShapesLastState)
+    __obj.updateDynamic("setOverlapping")(setOverlapping)
+    __obj.updateDynamic("shapeA")(shapeA)
+    __obj.updateDynamic("shapeB")(shapeB)
+    __obj.updateDynamic("tick")(tick)
+    __obj.updateDynamic("tmpArray1")(tmpArray1)
+    __obj.updateDynamic("tmpDict")(tmpDict)
+    __obj.asInstanceOf[OverlapKeeper]
+  }
+}
+

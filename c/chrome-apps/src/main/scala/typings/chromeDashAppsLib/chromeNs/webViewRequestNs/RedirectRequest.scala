@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /** Declarative event action that redirects a network request.  */
 @JSGlobal("chrome.webViewRequest.RedirectRequest")
 @js.native
-class RedirectRequest protected () extends js.Object {
+class RedirectRequest protected () extends OnRequestActions {
   def this(parameters: RedirectRequestParams) = this()
   val instanceType: java.lang.String = js.native
   val typeGuard: chromeDashAppsLib.chromeDashAppsLibStrings.RedirectRequest = js.native

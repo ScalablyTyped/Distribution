@@ -10,3 +10,12 @@ trait SiteVerificationWebResourceListResponse extends js.Object {
   var items: js.UndefOr[js.Array[SiteVerificationWebResourceResource]] = js.undefined
 }
 
+object SiteVerificationWebResourceListResponse {
+  @scala.inline
+  def apply(items: js.Array[SiteVerificationWebResourceResource] = null): SiteVerificationWebResourceListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[SiteVerificationWebResourceListResponse]
+  }
+}
+

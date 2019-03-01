@@ -24,3 +24,20 @@ trait ColumnChooserButtonApplyClickEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColumnChooserButtonApplyClickEventUIParam {
+  @scala.inline
+  def apply(
+    columnChooserElement: java.lang.String = null,
+    columnsToHide: js.Array[_] = null,
+    columnsToShow: js.Array[_] = null,
+    owner: js.Any = null
+  ): ColumnChooserButtonApplyClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnChooserElement != null) __obj.updateDynamic("columnChooserElement")(columnChooserElement)
+    if (columnsToHide != null) __obj.updateDynamic("columnsToHide")(columnsToHide)
+    if (columnsToShow != null) __obj.updateDynamic("columnsToShow")(columnsToShow)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ColumnChooserButtonApplyClickEventUIParam]
+  }
+}
+

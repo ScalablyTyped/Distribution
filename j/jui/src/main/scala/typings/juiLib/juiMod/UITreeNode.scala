@@ -24,3 +24,28 @@ trait UITreeNode extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UITreeNode {
+  @scala.inline
+  def apply(
+    children: js.Array[UITreeNode] = null,
+    data: js.Array[_] = null,
+    depth: scala.Int | scala.Double = null,
+    element: js.Any = null,
+    index: scala.Int | scala.Double = null,
+    nodenum: scala.Int | scala.Double = null,
+    parent: UITreeNode = null,
+    `type`: java.lang.String = null
+  ): UITreeNode = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (nodenum != null) __obj.updateDynamic("nodenum")(nodenum.asInstanceOf[js.Any])
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[UITreeNode]
+  }
+}
+

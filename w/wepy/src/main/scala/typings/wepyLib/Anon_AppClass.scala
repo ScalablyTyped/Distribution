@@ -24,3 +24,24 @@ trait Anon_AppClass extends js.Object {
   ] = js.undefined
 }
 
+object Anon_AppClass {
+  @scala.inline
+  def apply(
+    $createApp: js.Function2[
+      /* appClass */ wepyLib.appMod.AppConstructor, 
+      /* appConfig */ wepyLib.appMod.AppConfig, 
+      wepyLib.appMod.default
+    ] = null,
+    $createPage: js.Function2[
+      /* pageClass */ wepyLib.pageMod.PageConstructor, 
+      /* pagePath */ java.lang.String | scala.Boolean, 
+      wepyLib.pageMod.default
+    ] = null
+  ): Anon_AppClass = {
+    val __obj = js.Dynamic.literal()
+    if ($createApp != null) __obj.updateDynamic("$createApp")($createApp)
+    if ($createPage != null) __obj.updateDynamic("$createPage")($createPage)
+    __obj.asInstanceOf[Anon_AppClass]
+  }
+}
+

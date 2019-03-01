@@ -62,3 +62,90 @@ trait SpreadsheetViewSettings
   var ZoomValue: scala.Double
 }
 
+object SpreadsheetViewSettings {
+  @scala.inline
+  def apply(
+    GridColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    HasColumnRowHeaders: scala.Boolean,
+    HasHorizontalScrollBar: scala.Boolean,
+    HasSheetTabs: scala.Boolean,
+    HasVerticalScrollBar: scala.Boolean,
+    HideSpellMarks: scala.Boolean,
+    IsOutlineSymbolsSet: scala.Boolean,
+    IsValueHighlightingEnabled: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    ShowAnchor: scala.Boolean,
+    ShowCharts: scala.Double,
+    ShowDrawing: scala.Double,
+    ShowFormulas: scala.Boolean,
+    ShowGrid: scala.Boolean,
+    ShowHelpLines: scala.Boolean,
+    ShowNotes: scala.Boolean,
+    ShowObjects: scala.Double,
+    ShowPageBreaks: scala.Boolean,
+    ShowZeroValues: scala.Boolean,
+    ZoomType: scala.Double,
+    ZoomValue: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): SpreadsheetViewSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GridColor")(GridColor)
+    __obj.updateDynamic("HasColumnRowHeaders")(HasColumnRowHeaders)
+    __obj.updateDynamic("HasHorizontalScrollBar")(HasHorizontalScrollBar)
+    __obj.updateDynamic("HasSheetTabs")(HasSheetTabs)
+    __obj.updateDynamic("HasVerticalScrollBar")(HasVerticalScrollBar)
+    __obj.updateDynamic("HideSpellMarks")(HideSpellMarks)
+    __obj.updateDynamic("IsOutlineSymbolsSet")(IsOutlineSymbolsSet)
+    __obj.updateDynamic("IsValueHighlightingEnabled")(IsValueHighlightingEnabled)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("ShowAnchor")(ShowAnchor)
+    __obj.updateDynamic("ShowCharts")(ShowCharts)
+    __obj.updateDynamic("ShowDrawing")(ShowDrawing)
+    __obj.updateDynamic("ShowFormulas")(ShowFormulas)
+    __obj.updateDynamic("ShowGrid")(ShowGrid)
+    __obj.updateDynamic("ShowHelpLines")(ShowHelpLines)
+    __obj.updateDynamic("ShowNotes")(ShowNotes)
+    __obj.updateDynamic("ShowObjects")(ShowObjects)
+    __obj.updateDynamic("ShowPageBreaks")(ShowPageBreaks)
+    __obj.updateDynamic("ShowZeroValues")(ShowZeroValues)
+    __obj.updateDynamic("ZoomType")(ZoomType)
+    __obj.updateDynamic("ZoomValue")(ZoomValue)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[SpreadsheetViewSettings]
+  }
+}
+

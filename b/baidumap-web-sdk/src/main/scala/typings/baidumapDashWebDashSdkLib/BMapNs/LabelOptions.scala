@@ -11,3 +11,18 @@ trait LabelOptions extends js.Object {
   var position: js.UndefOr[Point] = js.undefined
 }
 
+object LabelOptions {
+  @scala.inline
+  def apply(
+    enableMassClear: js.UndefOr[scala.Boolean] = js.undefined,
+    offset: Size = null,
+    position: Point = null
+  ): LabelOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableMassClear)) __obj.updateDynamic("enableMassClear")(enableMassClear)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[LabelOptions]
+  }
+}
+

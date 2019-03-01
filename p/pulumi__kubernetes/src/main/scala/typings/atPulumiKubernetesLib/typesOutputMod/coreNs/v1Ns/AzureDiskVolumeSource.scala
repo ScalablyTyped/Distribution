@@ -39,3 +39,24 @@ trait AzureDiskVolumeSource extends js.Object {
   val readOnly: scala.Boolean
 }
 
+object AzureDiskVolumeSource {
+  @scala.inline
+  def apply(
+    cachingMode: java.lang.String,
+    diskName: java.lang.String,
+    diskURI: java.lang.String,
+    fsType: java.lang.String,
+    kind: java.lang.String,
+    readOnly: scala.Boolean
+  ): AzureDiskVolumeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cachingMode")(cachingMode)
+    __obj.updateDynamic("diskName")(diskName)
+    __obj.updateDynamic("diskURI")(diskURI)
+    __obj.updateDynamic("fsType")(fsType)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.asInstanceOf[AzureDiskVolumeSource]
+  }
+}
+

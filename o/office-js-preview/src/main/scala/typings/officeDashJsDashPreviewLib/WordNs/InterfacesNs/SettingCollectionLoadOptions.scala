@@ -33,3 +33,18 @@ trait SettingCollectionLoadOptions extends js.Object {
   var value: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SettingCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    key: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.UndefOr[scala.Boolean] = js.undefined
+  ): SettingCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(key)) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SettingCollectionLoadOptions]
+  }
+}
+

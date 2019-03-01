@@ -23,3 +23,38 @@ trait SiderProps
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object SiderProps {
+  @scala.inline
+  def apply(
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    breakpoint: antdLib.antdLibStrings.xs | antdLib.antdLibStrings.sm | antdLib.antdLibStrings.md | antdLib.antdLibStrings.lg | antdLib.antdLibStrings.xl | antdLib.antdLibStrings.xxl = null,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsedWidth: scala.Double | java.lang.String = null,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultCollapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    onBreakpoint: js.Function1[/* broken */ scala.Boolean, scala.Unit] = null,
+    onCollapse: js.Function2[/* collapsed */ scala.Boolean, /* type */ CollapseType, scala.Unit] = null,
+    prefixCls: java.lang.String = null,
+    reverseArrow: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: SiderTheme = null,
+    trigger: reactLib.reactMod.ReactNs.ReactNode = null,
+    width: scala.Double | java.lang.String = null
+  ): SiderProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (breakpoint != null) __obj.updateDynamic("breakpoint")(breakpoint.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (collapsedWidth != null) __obj.updateDynamic("collapsedWidth")(collapsedWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (!js.isUndefined(defaultCollapsed)) __obj.updateDynamic("defaultCollapsed")(defaultCollapsed)
+    if (onBreakpoint != null) __obj.updateDynamic("onBreakpoint")(onBreakpoint)
+    if (onCollapse != null) __obj.updateDynamic("onCollapse")(onCollapse)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (!js.isUndefined(reverseArrow)) __obj.updateDynamic("reverseArrow")(reverseArrow)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (trigger != null) __obj.updateDynamic("trigger")(trigger.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SiderProps]
+  }
+}
+

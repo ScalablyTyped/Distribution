@@ -1225,6 +1225,22 @@ object CloudWatchNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[DescribeAlarmsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _ComparisonOperator extends js.Object
+  
+  trait _HistoryItemType extends js.Object
+  
+  trait _ScanBy extends js.Object
+  
+  trait _StandardUnit extends js.Object
+  
+  trait _StateValue extends js.Object
+  
+  trait _Statistic extends js.Object
+  
+  trait _StatusCode extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActionPrefix = java.lang.String
   type ActionsEnabled = scala.Boolean
@@ -1235,7 +1251,7 @@ object CloudWatchNs extends js.Object {
   type AlarmNamePrefix = java.lang.String
   type AlarmNames = js.Array[AlarmName]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ComparisonOperator = awsDashSdkLib.awsDashSdkLibStrings.GreaterThanOrEqualToThreshold | awsDashSdkLib.awsDashSdkLibStrings.GreaterThanThreshold | awsDashSdkLib.awsDashSdkLibStrings.LessThanThreshold | awsDashSdkLib.awsDashSdkLibStrings.LessThanOrEqualToThreshold | java.lang.String
+  type ComparisonOperator = _ComparisonOperator | java.lang.String
   type Counts = js.Array[DatapointValue]
   type DashboardArn = java.lang.String
   type DashboardBody = java.lang.String
@@ -1259,7 +1275,7 @@ object CloudWatchNs extends js.Object {
   type ExtendedStatistics = js.Array[ExtendedStatistic]
   type GetMetricDataMaxDatapoints = scala.Double
   type HistoryData = java.lang.String
-  type HistoryItemType = awsDashSdkLib.awsDashSdkLibStrings.ConfigurationUpdate | awsDashSdkLib.awsDashSdkLibStrings.StateUpdate | awsDashSdkLib.awsDashSdkLibStrings.Action | java.lang.String
+  type HistoryItemType = _HistoryItemType | java.lang.String
   type HistorySummary = java.lang.String
   type LastModified = stdLib.Date
   type MaxRecords = scala.Double
@@ -1285,22 +1301,22 @@ object CloudWatchNs extends js.Object {
   type ResourceList = js.Array[ResourceName]
   type ResourceName = java.lang.String
   type ReturnData = scala.Boolean
-  type ScanBy = awsDashSdkLib.awsDashSdkLibStrings.TimestampDescending | awsDashSdkLib.awsDashSdkLibStrings.TimestampAscending | java.lang.String
+  type ScanBy = _ScanBy | java.lang.String
   type Size = scala.Double
-  type StandardUnit = awsDashSdkLib.awsDashSdkLibStrings.Seconds | awsDashSdkLib.awsDashSdkLibStrings.Microseconds | awsDashSdkLib.awsDashSdkLibStrings.Milliseconds | awsDashSdkLib.awsDashSdkLibStrings.Bytes | awsDashSdkLib.awsDashSdkLibStrings.Kilobytes | awsDashSdkLib.awsDashSdkLibStrings.Megabytes | awsDashSdkLib.awsDashSdkLibStrings.Gigabytes | awsDashSdkLib.awsDashSdkLibStrings.Terabytes | awsDashSdkLib.awsDashSdkLibStrings.Bits | awsDashSdkLib.awsDashSdkLibStrings.Kilobits | awsDashSdkLib.awsDashSdkLibStrings.Megabits | awsDashSdkLib.awsDashSdkLibStrings.Gigabits | awsDashSdkLib.awsDashSdkLibStrings.Terabits | awsDashSdkLib.awsDashSdkLibStrings.Percent | awsDashSdkLib.awsDashSdkLibStrings.Count | awsDashSdkLib.awsDashSdkLibStrings.`Bytes/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Kilobytes/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Megabytes/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Gigabytes/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Terabytes/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Bits/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Kilobits/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Megabits/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Gigabits/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Terabits/Second` | awsDashSdkLib.awsDashSdkLibStrings.`Count/Second` | awsDashSdkLib.awsDashSdkLibStrings.None | java.lang.String
+  type StandardUnit = _StandardUnit | java.lang.String
   type Stat = java.lang.String
   type StateReason = java.lang.String
   type StateReasonData = java.lang.String
-  type StateValue = awsDashSdkLib.awsDashSdkLibStrings.OK | awsDashSdkLib.awsDashSdkLibStrings.ALARM | awsDashSdkLib.awsDashSdkLibStrings.INSUFFICIENT_DATA | java.lang.String
-  type Statistic = awsDashSdkLib.awsDashSdkLibStrings.SampleCount | awsDashSdkLib.awsDashSdkLibStrings.Average | awsDashSdkLib.awsDashSdkLibStrings.Sum | awsDashSdkLib.awsDashSdkLibStrings.Minimum | awsDashSdkLib.awsDashSdkLibStrings.Maximum | java.lang.String
+  type StateValue = _StateValue | java.lang.String
+  type Statistic = _Statistic | java.lang.String
   type Statistics = js.Array[Statistic]
-  type StatusCode = awsDashSdkLib.awsDashSdkLibStrings.Complete | awsDashSdkLib.awsDashSdkLibStrings.InternalError | awsDashSdkLib.awsDashSdkLibStrings.PartialData | java.lang.String
+  type StatusCode = _StatusCode | java.lang.String
   type StorageResolution = scala.Double
   type Threshold = scala.Double
   type Timestamp = stdLib.Date
   type Timestamps = js.Array[Timestamp]
   type TreatMissingData = java.lang.String
   type Values = js.Array[DatapointValue]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2010-08-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

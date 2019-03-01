@@ -13,3 +13,22 @@ trait HistoryState extends js.Object {
   var url: java.lang.String
 }
 
+object HistoryState {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    cleanUrl: java.lang.String = null,
+    data: js.Any = null,
+    hashedUrl: java.lang.String = null,
+    title: java.lang.String = null
+  ): HistoryState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (cleanUrl != null) __obj.updateDynamic("cleanUrl")(cleanUrl)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (hashedUrl != null) __obj.updateDynamic("hashedUrl")(hashedUrl)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[HistoryState]
+  }
+}
+

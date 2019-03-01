@@ -24,3 +24,28 @@ trait RootFileInfo extends js.Object {
   var rootpath: java.lang.String
 }
 
+object RootFileInfo {
+  @scala.inline
+  def apply(
+    currentDirectory: java.lang.String,
+    entryPath: java.lang.String,
+    filename: java.lang.String,
+    reference: scala.Boolean,
+    relativeUrls: scala.Boolean,
+    rootFilename: java.lang.String,
+    rootpath: java.lang.String,
+    rewriteUrls: js.UndefOr[scala.Boolean] = js.undefined
+  ): RootFileInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentDirectory")(currentDirectory)
+    __obj.updateDynamic("entryPath")(entryPath)
+    __obj.updateDynamic("filename")(filename)
+    __obj.updateDynamic("reference")(reference)
+    __obj.updateDynamic("relativeUrls")(relativeUrls)
+    __obj.updateDynamic("rootFilename")(rootFilename)
+    __obj.updateDynamic("rootpath")(rootpath)
+    if (!js.isUndefined(rewriteUrls)) __obj.updateDynamic("rewriteUrls")(rewriteUrls)
+    __obj.asInstanceOf[RootFileInfo]
+  }
+}
+

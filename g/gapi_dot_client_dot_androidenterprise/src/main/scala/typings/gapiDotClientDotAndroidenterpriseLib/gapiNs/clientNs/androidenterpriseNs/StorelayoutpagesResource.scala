@@ -20,3 +20,42 @@ trait StorelayoutpagesResource extends js.Object {
   def update(request: gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId): gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
 }
 
+object StorelayoutpagesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StoreLayoutPagesListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyOauthtokenPageId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[StorePage]
+    ]
+  ): StorelayoutpagesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[StorelayoutpagesResource]
+  }
+}
+

@@ -21,3 +21,22 @@ trait CheckApiConfig extends WxBaseRequestConfig {
   def success_MCheckApiConfig(res: wxDashJsDashSdkDashDtLib.Anon_CheckResult): scala.Unit
 }
 
+object CheckApiConfig {
+  @scala.inline
+  def apply(
+    jsApiList: js.Array[java.lang.String],
+    success: js.Function1[wxDashJsDashSdkDashDtLib.Anon_CheckResult, scala.Unit],
+    cancel: js.Function0[scala.Unit] = null,
+    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
+    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null
+  ): CheckApiConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jsApiList")(jsApiList)
+    __obj.updateDynamic("success")(success)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[CheckApiConfig]
+  }
+}
+

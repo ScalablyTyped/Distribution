@@ -13,3 +13,12 @@ trait CreateOpts extends js.Object {
   var domain: java.lang.String
 }
 
+object CreateOpts {
+  @scala.inline
+  def apply(domain: java.lang.String): CreateOpts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain)
+    __obj.asInstanceOf[CreateOpts]
+  }
+}
+

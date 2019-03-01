@@ -12,3 +12,12 @@ trait ItemResponse extends js.Object {
   var Item: js.UndefOr[AttributeMap] = js.undefined
 }
 
+object ItemResponse {
+  @scala.inline
+  def apply(Item: AttributeMap = null): ItemResponse = {
+    val __obj = js.Dynamic.literal()
+    if (Item != null) __obj.updateDynamic("Item")(Item)
+    __obj.asInstanceOf[ItemResponse]
+  }
+}
+

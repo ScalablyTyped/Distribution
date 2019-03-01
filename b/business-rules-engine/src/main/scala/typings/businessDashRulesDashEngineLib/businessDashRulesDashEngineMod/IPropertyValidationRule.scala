@@ -11,3 +11,18 @@ trait IPropertyValidationRule[T] extends js.Object {
   def ValidateAsync(context: IValidationContext[T]): qLib.qMod.QNs.Promise[js.Array[IValidationFailure]]
 }
 
+object IPropertyValidationRule {
+  @scala.inline
+  def apply[T](
+    Validate: js.Function1[IValidationContext[T], js.Array[IValidationFailure]],
+    ValidateAsync: js.Function1[IValidationContext[T], qLib.qMod.QNs.Promise[js.Array[IValidationFailure]]],
+    Validators: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): IPropertyValidationRule[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Validate")(Validate)
+    __obj.updateDynamic("ValidateAsync")(ValidateAsync)
+    __obj.updateDynamic("Validators")(Validators)
+    __obj.asInstanceOf[IPropertyValidationRule[T]]
+  }
+}
+

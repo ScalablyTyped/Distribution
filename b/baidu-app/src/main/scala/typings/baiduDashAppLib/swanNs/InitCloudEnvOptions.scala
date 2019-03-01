@@ -26,3 +26,18 @@ trait InitCloudEnvOptions extends js.Object {
   var storage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InitCloudEnvOptions {
+  @scala.inline
+  def apply(
+    database: java.lang.String = null,
+    functions: java.lang.String = null,
+    storage: java.lang.String = null
+  ): InitCloudEnvOptions = {
+    val __obj = js.Dynamic.literal()
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (functions != null) __obj.updateDynamic("functions")(functions)
+    if (storage != null) __obj.updateDynamic("storage")(storage)
+    __obj.asInstanceOf[InitCloudEnvOptions]
+  }
+}
+

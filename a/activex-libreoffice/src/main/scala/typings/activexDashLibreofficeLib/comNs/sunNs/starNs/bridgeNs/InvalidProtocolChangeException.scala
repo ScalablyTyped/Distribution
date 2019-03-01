@@ -17,3 +17,20 @@ trait InvalidProtocolChangeException
   var reason: scala.Double
 }
 
+object InvalidProtocolChangeException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    invalidProperty: ProtocolProperty,
+    reason: scala.Double
+  ): InvalidProtocolChangeException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("invalidProperty")(invalidProperty)
+    __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[InvalidProtocolChangeException]
+  }
+}
+

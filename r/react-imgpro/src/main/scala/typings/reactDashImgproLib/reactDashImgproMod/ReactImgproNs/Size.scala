@@ -11,3 +11,18 @@ trait Size extends js.Object {
   var width: scala.Double
 }
 
+object Size {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    mode: reactDashImgproLib.reactDashImgproLibStrings.horizontal_left | reactDashImgproLib.reactDashImgproLibStrings.horizontal_center | reactDashImgproLib.reactDashImgproLibStrings.horizontal_right | reactDashImgproLib.reactDashImgproLibStrings.vertical_top | reactDashImgproLib.reactDashImgproLibStrings.vertical_bottom | reactDashImgproLib.reactDashImgproLibStrings.vertical_middle,
+    width: scala.Double
+  ): Size = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Size]
+  }
+}
+

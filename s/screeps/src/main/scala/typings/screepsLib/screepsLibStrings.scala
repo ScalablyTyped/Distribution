@@ -7,16 +7,16 @@ import scala.scalajs.js.annotation._
 
 object screepsLibStrings {
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1` extends ExitKey
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3` extends ExitKey
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5` extends ExitKey
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7` extends ExitKey
   
   @js.native
   sealed trait G extends js.Object
@@ -229,7 +229,7 @@ object screepsLibStrings {
   sealed trait observer extends js.Object
   
   @js.native
-  sealed trait plain extends js.Object
+  sealed trait plain extends Terrain
   
   @js.native
   sealed trait portal extends js.Object
@@ -277,7 +277,7 @@ object screepsLibStrings {
   sealed trait structure extends js.Object
   
   @js.native
-  sealed trait swamp extends js.Object
+  sealed trait swamp extends Terrain
   
   @js.native
   sealed trait terminal extends js.Object
@@ -298,7 +298,7 @@ object screepsLibStrings {
   sealed trait tower extends js.Object
   
   @js.native
-  sealed trait wall extends js.Object
+  sealed trait wall extends Terrain
   
   @js.native
   sealed trait work extends js.Object

@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object PouchDBNs {
-  type BuiltInReducers = pouchdbDashMapreduceLib.pouchdbDashMapreduceLibStrings._sum | pouchdbDashMapreduceLib.pouchdbDashMapreduceLibStrings._count | pouchdbDashMapreduceLib.pouchdbDashMapreduceLibStrings._stats
   /**
     * CouchDB-style Map function
     *

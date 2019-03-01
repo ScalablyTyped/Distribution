@@ -14,3 +14,18 @@ trait RequestAccess extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RequestAccess {
+  @scala.inline
+  def apply(
+    concurrentAccess: ConcurrentAccessRestriction = null,
+    downloadAccess: DownloadAccessRestriction = null,
+    kind: java.lang.String = null
+  ): RequestAccess = {
+    val __obj = js.Dynamic.literal()
+    if (concurrentAccess != null) __obj.updateDynamic("concurrentAccess")(concurrentAccess)
+    if (downloadAccess != null) __obj.updateDynamic("downloadAccess")(downloadAccess)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[RequestAccess]
+  }
+}
+

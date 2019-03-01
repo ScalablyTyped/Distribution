@@ -33,3 +33,18 @@ trait GeometricShapeLoadOptions extends js.Object {
   var shape: js.UndefOr[ShapeLoadOptions] = js.undefined
 }
 
+object GeometricShapeLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    shape: ShapeLoadOptions = null
+  ): GeometricShapeLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    __obj.asInstanceOf[GeometricShapeLoadOptions]
+  }
+}
+

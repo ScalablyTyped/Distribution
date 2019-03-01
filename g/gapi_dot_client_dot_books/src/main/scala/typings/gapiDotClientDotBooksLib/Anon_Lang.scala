@@ -18,3 +18,22 @@ trait Anon_Lang extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Lang {
+  @scala.inline
+  def apply(
+    lang: java.lang.String = null,
+    previewImageUrl: java.lang.String = null,
+    snippet: java.lang.String = null,
+    snippetUrl: java.lang.String = null,
+    title: java.lang.String = null
+  ): Anon_Lang = {
+    val __obj = js.Dynamic.literal()
+    if (lang != null) __obj.updateDynamic("lang")(lang)
+    if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl)
+    if (snippet != null) __obj.updateDynamic("snippet")(snippet)
+    if (snippetUrl != null) __obj.updateDynamic("snippetUrl")(snippetUrl)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_Lang]
+  }
+}
+

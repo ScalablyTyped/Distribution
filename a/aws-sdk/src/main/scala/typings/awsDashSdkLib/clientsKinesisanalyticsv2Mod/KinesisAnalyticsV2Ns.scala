@@ -2307,11 +2307,33 @@ object KinesisAnalyticsV2Ns extends js.Object {
     var ApplicationDetail: ApplicationDetail
   }
   
+  trait _ApplicationRestoreType extends js.Object
+  
+  trait _ApplicationStatus extends js.Object
+  
+  trait _CodeContentType extends js.Object
+  
+  trait _ConfigurationType extends js.Object
+  
+  trait _InputStartingPosition extends js.Object
+  
+  trait _LogLevel extends js.Object
+  
+  trait _MetricsLevel extends js.Object
+  
+  trait _RecordFormatType extends js.Object
+  
+  trait _RuntimeEnvironment extends js.Object
+  
+  trait _SnapshotStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ApplicationDescription = java.lang.String
   type ApplicationName = java.lang.String
-  type ApplicationRestoreType = awsDashSdkLib.awsDashSdkLibStrings.SKIP_RESTORE_FROM_SNAPSHOT | awsDashSdkLib.awsDashSdkLibStrings.RESTORE_FROM_LATEST_SNAPSHOT | awsDashSdkLib.awsDashSdkLibStrings.RESTORE_FROM_CUSTOM_SNAPSHOT | java.lang.String
-  type ApplicationStatus = awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.STARTING | awsDashSdkLib.awsDashSdkLibStrings.STOPPING | awsDashSdkLib.awsDashSdkLibStrings.READY | awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | java.lang.String
+  type ApplicationRestoreType = _ApplicationRestoreType | java.lang.String
+  type ApplicationStatus = _ApplicationStatus | java.lang.String
   type ApplicationSummaries = js.Array[ApplicationSummary]
   type ApplicationVersionId = scala.Double
   type BooleanObject = scala.Boolean
@@ -2321,10 +2343,10 @@ object KinesisAnalyticsV2Ns extends js.Object {
   type CloudWatchLoggingOptionDescriptions = js.Array[CloudWatchLoggingOptionDescription]
   type CloudWatchLoggingOptionUpdates = js.Array[CloudWatchLoggingOptionUpdate]
   type CloudWatchLoggingOptions = js.Array[CloudWatchLoggingOption]
-  type CodeContentType = awsDashSdkLib.awsDashSdkLibStrings.PLAINTEXT | awsDashSdkLib.awsDashSdkLibStrings.ZIPFILE | java.lang.String
+  type CodeContentType = _CodeContentType | java.lang.String
   type CodeMD5 = java.lang.String
   type CodeSize = scala.Double
-  type ConfigurationType = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.CUSTOM | java.lang.String
+  type ConfigurationType = _ConfigurationType | java.lang.String
   type FileKey = java.lang.String
   type Id = java.lang.String
   type InAppStreamName = java.lang.String
@@ -2332,15 +2354,15 @@ object KinesisAnalyticsV2Ns extends js.Object {
   type InAppTableName = java.lang.String
   type InputDescriptions = js.Array[InputDescription]
   type InputParallelismCount = scala.Double
-  type InputStartingPosition = awsDashSdkLib.awsDashSdkLibStrings.NOW | awsDashSdkLib.awsDashSdkLibStrings.TRIM_HORIZON | awsDashSdkLib.awsDashSdkLibStrings.LAST_STOPPED_POINT | java.lang.String
+  type InputStartingPosition = _InputStartingPosition | java.lang.String
   type InputUpdates = js.Array[InputUpdate]
   type Inputs = js.Array[Input]
   type JobPlanDescription = java.lang.String
   type ListApplicationsInputLimit = scala.Double
   type ListSnapshotsInputLimit = scala.Double
-  type LogLevel = awsDashSdkLib.awsDashSdkLibStrings.INFO | awsDashSdkLib.awsDashSdkLibStrings.WARN | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.DEBUG | java.lang.String
+  type LogLevel = _LogLevel | java.lang.String
   type LogStreamARN = java.lang.String
-  type MetricsLevel = awsDashSdkLib.awsDashSdkLibStrings.APPLICATION | awsDashSdkLib.awsDashSdkLibStrings.TASK | awsDashSdkLib.awsDashSdkLibStrings.OPERATOR | awsDashSdkLib.awsDashSdkLibStrings.PARALLELISM | java.lang.String
+  type MetricsLevel = _MetricsLevel | java.lang.String
   type MinPauseBetweenCheckpoints = scala.Double
   type NextToken = java.lang.String
   type ObjectVersion = java.lang.String
@@ -2365,7 +2387,7 @@ object KinesisAnalyticsV2Ns extends js.Object {
   type RecordColumnSqlType = java.lang.String
   type RecordColumns = js.Array[RecordColumn]
   type RecordEncoding = java.lang.String
-  type RecordFormatType = awsDashSdkLib.awsDashSdkLibStrings.JSON | awsDashSdkLib.awsDashSdkLibStrings.CSV | java.lang.String
+  type RecordFormatType = _RecordFormatType | java.lang.String
   type RecordRowDelimiter = java.lang.String
   type RecordRowPath = java.lang.String
   type ReferenceDataSourceDescriptions = js.Array[ReferenceDataSourceDescription]
@@ -2373,14 +2395,14 @@ object KinesisAnalyticsV2Ns extends js.Object {
   type ReferenceDataSources = js.Array[ReferenceDataSource]
   type ResourceARN = java.lang.String
   type RoleARN = java.lang.String
-  type RuntimeEnvironment = awsDashSdkLib.awsDashSdkLibStrings.`SQL-1_0` | awsDashSdkLib.awsDashSdkLibStrings.`FLINK-1_6` | java.lang.String
+  type RuntimeEnvironment = _RuntimeEnvironment | java.lang.String
   type SnapshotName = java.lang.String
-  type SnapshotStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.READY | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type SnapshotStatus = _SnapshotStatus | java.lang.String
   type SnapshotSummaries = js.Array[SnapshotDetails]
   type SqlRunConfigurations = js.Array[SqlRunConfiguration]
   type TextContent = java.lang.String
   type Timestamp = stdLib.Date
   type ZipFileContent = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsKinesisanalyticsv2Mod.Blob | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-05-23` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

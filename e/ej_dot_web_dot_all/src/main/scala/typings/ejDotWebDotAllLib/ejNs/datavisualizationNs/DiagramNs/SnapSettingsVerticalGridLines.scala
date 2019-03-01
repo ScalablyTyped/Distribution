@@ -23,3 +23,20 @@ trait SnapSettingsVerticalGridLines extends js.Object {
   var snapInterval: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object SnapSettingsVerticalGridLines {
+  @scala.inline
+  def apply(
+    lineColor: java.lang.String = null,
+    lineDashArray: java.lang.String = null,
+    linesInterval: js.Array[_] = null,
+    snapInterval: js.Array[_] = null
+  ): SnapSettingsVerticalGridLines = {
+    val __obj = js.Dynamic.literal()
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor)
+    if (lineDashArray != null) __obj.updateDynamic("lineDashArray")(lineDashArray)
+    if (linesInterval != null) __obj.updateDynamic("linesInterval")(linesInterval)
+    if (snapInterval != null) __obj.updateDynamic("snapInterval")(snapInterval)
+    __obj.asInstanceOf[SnapSettingsVerticalGridLines]
+  }
+}
+

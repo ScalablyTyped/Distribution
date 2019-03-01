@@ -9,3 +9,12 @@ trait IHotspotAuthenticationEventDetails extends js.Object {
   var eventToken: java.lang.String
 }
 
+object IHotspotAuthenticationEventDetails {
+  @scala.inline
+  def apply(eventToken: java.lang.String): IHotspotAuthenticationEventDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventToken")(eventToken)
+    __obj.asInstanceOf[IHotspotAuthenticationEventDetails]
+  }
+}
+

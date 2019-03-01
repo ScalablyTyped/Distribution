@@ -92,3 +92,54 @@ trait WidgetMetadata extends js.Object {
   var typeId: java.lang.String
 }
 
+object WidgetMetadata {
+  @scala.inline
+  def apply(
+    allowedSizes: js.Array[WidgetSize],
+    analyticsServiceRequired: scala.Boolean,
+    catalogIconUrl: java.lang.String,
+    catalogInfoUrl: java.lang.String,
+    configurationContributionId: java.lang.String,
+    configurationContributionRelativeId: java.lang.String,
+    configurationRequired: scala.Boolean,
+    contentUri: java.lang.String,
+    contributionId: java.lang.String,
+    defaultSettings: java.lang.String,
+    description: java.lang.String,
+    isEnabled: scala.Boolean,
+    isNameConfigurable: scala.Boolean,
+    isVisibleFromCatalog: scala.Boolean,
+    lightboxOptions: LightboxOptions,
+    loadingImageUrl: java.lang.String,
+    name: java.lang.String,
+    publisherName: java.lang.String,
+    supportedScopes: js.Array[WidgetScope],
+    targets: js.Array[java.lang.String],
+    typeId: java.lang.String
+  ): WidgetMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowedSizes")(allowedSizes)
+    __obj.updateDynamic("analyticsServiceRequired")(analyticsServiceRequired)
+    __obj.updateDynamic("catalogIconUrl")(catalogIconUrl)
+    __obj.updateDynamic("catalogInfoUrl")(catalogInfoUrl)
+    __obj.updateDynamic("configurationContributionId")(configurationContributionId)
+    __obj.updateDynamic("configurationContributionRelativeId")(configurationContributionRelativeId)
+    __obj.updateDynamic("configurationRequired")(configurationRequired)
+    __obj.updateDynamic("contentUri")(contentUri)
+    __obj.updateDynamic("contributionId")(contributionId)
+    __obj.updateDynamic("defaultSettings")(defaultSettings)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("isEnabled")(isEnabled)
+    __obj.updateDynamic("isNameConfigurable")(isNameConfigurable)
+    __obj.updateDynamic("isVisibleFromCatalog")(isVisibleFromCatalog)
+    __obj.updateDynamic("lightboxOptions")(lightboxOptions)
+    __obj.updateDynamic("loadingImageUrl")(loadingImageUrl)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("publisherName")(publisherName)
+    __obj.updateDynamic("supportedScopes")(supportedScopes)
+    __obj.updateDynamic("targets")(targets)
+    __obj.updateDynamic("typeId")(typeId)
+    __obj.asInstanceOf[WidgetMetadata]
+  }
+}
+

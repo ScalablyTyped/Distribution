@@ -13,3 +13,22 @@ trait INetworkInformationService extends js.Object {
   def isOnline(): scala.Boolean
 }
 
+object INetworkInformationService {
+  @scala.inline
+  def apply(
+    clearOfflineWatch: js.Function0[scala.Unit],
+    clearOnlineWatch: js.Function0[scala.Unit],
+    getNetwork: js.Function0[java.lang.String],
+    isOffline: js.Function0[scala.Boolean],
+    isOnline: js.Function0[scala.Boolean]
+  ): INetworkInformationService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearOfflineWatch")(clearOfflineWatch)
+    __obj.updateDynamic("clearOnlineWatch")(clearOnlineWatch)
+    __obj.updateDynamic("getNetwork")(getNetwork)
+    __obj.updateDynamic("isOffline")(isOffline)
+    __obj.updateDynamic("isOnline")(isOnline)
+    __obj.asInstanceOf[INetworkInformationService]
+  }
+}
+

@@ -75,3 +75,40 @@ trait DomainNameState extends js.Object {
   val regionalZoneId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object DomainNameState {
+  @scala.inline
+  def apply(
+    certificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificateBody: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificateChain: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificateName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificatePrivateKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    certificateUploadDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cloudfrontDomainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    cloudfrontZoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    endpointConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypesInput] = null,
+    regionalCertificateArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    regionalCertificateName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    regionalDomainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    regionalZoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): DomainNameState = {
+    val __obj = js.Dynamic.literal()
+    if (certificateArn != null) __obj.updateDynamic("certificateArn")(certificateArn.asInstanceOf[js.Any])
+    if (certificateBody != null) __obj.updateDynamic("certificateBody")(certificateBody.asInstanceOf[js.Any])
+    if (certificateChain != null) __obj.updateDynamic("certificateChain")(certificateChain.asInstanceOf[js.Any])
+    if (certificateName != null) __obj.updateDynamic("certificateName")(certificateName.asInstanceOf[js.Any])
+    if (certificatePrivateKey != null) __obj.updateDynamic("certificatePrivateKey")(certificatePrivateKey.asInstanceOf[js.Any])
+    if (certificateUploadDate != null) __obj.updateDynamic("certificateUploadDate")(certificateUploadDate.asInstanceOf[js.Any])
+    if (cloudfrontDomainName != null) __obj.updateDynamic("cloudfrontDomainName")(cloudfrontDomainName.asInstanceOf[js.Any])
+    if (cloudfrontZoneId != null) __obj.updateDynamic("cloudfrontZoneId")(cloudfrontZoneId.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (endpointConfiguration != null) __obj.updateDynamic("endpointConfiguration")(endpointConfiguration.asInstanceOf[js.Any])
+    if (regionalCertificateArn != null) __obj.updateDynamic("regionalCertificateArn")(regionalCertificateArn.asInstanceOf[js.Any])
+    if (regionalCertificateName != null) __obj.updateDynamic("regionalCertificateName")(regionalCertificateName.asInstanceOf[js.Any])
+    if (regionalDomainName != null) __obj.updateDynamic("regionalDomainName")(regionalDomainName.asInstanceOf[js.Any])
+    if (regionalZoneId != null) __obj.updateDynamic("regionalZoneId")(regionalZoneId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DomainNameState]
+  }
+}
+

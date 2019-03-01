@@ -20,3 +20,42 @@ trait ojColorPaletteSettableProperties
   var translations_ojColorPaletteSettableProperties: atOracleOraclejetLib.Anon_LabelNone
 }
 
+object ojColorPaletteSettableProperties {
+  @scala.inline
+  def apply(
+    disabled: scala.Boolean,
+    displayOptions: atOracleOraclejetLib.Anon_ConverterHint,
+    help: atOracleOraclejetLib.Anon_Instruction,
+    helpHints: atOracleOraclejetLib.Anon_Definition,
+    labelDisplay: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    labelHint: java.lang.String,
+    layout: atOracleOraclejetLib.atOracleOraclejetLibStrings.grid | atOracleOraclejetLib.atOracleOraclejetLibStrings.list,
+    messagesCustom: js.Array[atOracleOraclejetLib.ojmessagingMod.namespaced],
+    palette: js.Array[atOracleOraclejetLib.Anon_ColorLabel],
+    swatchSize: atOracleOraclejetLib.atOracleOraclejetLibStrings.xs | atOracleOraclejetLib.atOracleOraclejetLibStrings.sm | atOracleOraclejetLib.atOracleOraclejetLibStrings.lg,
+    translations: atOracleOraclejetLib.Anon_LabelNone,
+    valid: atOracleOraclejetLib.atOracleOraclejetLibStrings.valid | atOracleOraclejetLib.atOracleOraclejetLibStrings.pending | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidHidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.invalidShown,
+    value: atOracleOraclejetLib.ojcolorMod.namespaced,
+    describedBy: java.lang.String = null,
+    labelledBy: java.lang.String = null
+  ): ojColorPaletteSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("displayOptions")(displayOptions)
+    __obj.updateDynamic("help")(help)
+    __obj.updateDynamic("helpHints")(helpHints)
+    __obj.updateDynamic("labelDisplay")(labelDisplay.asInstanceOf[js.Any])
+    __obj.updateDynamic("labelHint")(labelHint)
+    __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    __obj.updateDynamic("messagesCustom")(messagesCustom)
+    __obj.updateDynamic("palette")(palette)
+    __obj.updateDynamic("swatchSize")(swatchSize.asInstanceOf[js.Any])
+    __obj.updateDynamic("translations")(translations)
+    __obj.updateDynamic("valid")(valid.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value)
+    if (describedBy != null) __obj.updateDynamic("describedBy")(describedBy)
+    if (labelledBy != null) __obj.updateDynamic("labelledBy")(labelledBy)
+    __obj.asInstanceOf[ojColorPaletteSettableProperties]
+  }
+}
+

@@ -28,3 +28,22 @@ trait GridChildrenProps extends js.Object {
   var span: js.UndefOr[protonDashNativeLib.Anon_X] = js.undefined
 }
 
+object GridChildrenProps {
+  @scala.inline
+  def apply(
+    align: protonDashNativeLib.Anon_H = null,
+    column: scala.Int | scala.Double = null,
+    expand: protonDashNativeLib.Anon_H = null,
+    row: scala.Int | scala.Double = null,
+    span: protonDashNativeLib.Anon_X = null
+  ): GridChildrenProps = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (column != null) __obj.updateDynamic("column")(column.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (span != null) __obj.updateDynamic("span")(span)
+    __obj.asInstanceOf[GridChildrenProps]
+  }
+}
+

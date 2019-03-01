@@ -18,3 +18,14 @@ trait SharingState extends js.Object {
   var screen: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SharingState {
+  @scala.inline
+  def apply(camera: scala.Boolean, microphone: scala.Boolean, screen: java.lang.String = null): SharingState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("camera")(camera)
+    __obj.updateDynamic("microphone")(microphone)
+    if (screen != null) __obj.updateDynamic("screen")(screen)
+    __obj.asInstanceOf[SharingState]
+  }
+}
+

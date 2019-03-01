@@ -96,3 +96,42 @@ trait ExchangePublishOptions extends js.Object {
   var userId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExchangePublishOptions {
+  @scala.inline
+  def apply(
+    appId: java.lang.String = null,
+    contentEncoding: java.lang.String = null,
+    contentType: java.lang.String = null,
+    correlationId: java.lang.String = null,
+    deliveryMode: amqpLib.amqpLibNumbers.`1` | amqpLib.amqpLibNumbers.`2` = null,
+    expiration: java.lang.String = null,
+    headers: js.Any = null,
+    immediate: js.UndefOr[scala.Boolean] = js.undefined,
+    mandatory: js.UndefOr[scala.Boolean] = js.undefined,
+    messageId: java.lang.String = null,
+    priority: amqpLib.amqpLibNumbers.`0` | amqpLib.amqpLibNumbers.`1` | amqpLib.amqpLibNumbers.`2` | amqpLib.amqpLibNumbers.`3` | amqpLib.amqpLibNumbers.`4` | amqpLib.amqpLibNumbers.`5` | amqpLib.amqpLibNumbers.`6` | amqpLib.amqpLibNumbers.`7` | amqpLib.amqpLibNumbers.`8` | amqpLib.amqpLibNumbers.`9` = null,
+    replyTo: java.lang.String = null,
+    timestamp: java.lang.String = null,
+    `type`: java.lang.String = null,
+    userId: java.lang.String = null
+  ): ExchangePublishOptions = {
+    val __obj = js.Dynamic.literal()
+    if (appId != null) __obj.updateDynamic("appId")(appId)
+    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (correlationId != null) __obj.updateDynamic("correlationId")(correlationId)
+    if (deliveryMode != null) __obj.updateDynamic("deliveryMode")(deliveryMode.asInstanceOf[js.Any])
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(immediate)) __obj.updateDynamic("immediate")(immediate)
+    if (!js.isUndefined(mandatory)) __obj.updateDynamic("mandatory")(mandatory)
+    if (messageId != null) __obj.updateDynamic("messageId")(messageId)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (replyTo != null) __obj.updateDynamic("replyTo")(replyTo)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (userId != null) __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[ExchangePublishOptions]
+  }
+}
+

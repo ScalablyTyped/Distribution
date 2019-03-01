@@ -24,3 +24,20 @@ trait BlockMapDataHolder extends js.Object {
   var size: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BlockMapDataHolder {
+  @scala.inline
+  def apply(
+    sha512: java.lang.String,
+    blockMapSize: scala.Int | scala.Double = null,
+    isAdminRightsRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    size: scala.Int | scala.Double = null
+  ): BlockMapDataHolder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sha512")(sha512)
+    if (blockMapSize != null) __obj.updateDynamic("blockMapSize")(blockMapSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAdminRightsRequired)) __obj.updateDynamic("isAdminRightsRequired")(isAdminRightsRequired)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BlockMapDataHolder]
+  }
+}
+

@@ -10,3 +10,12 @@ trait ReqlType extends js.Object {
   var $reql_type$: java.lang.String
 }
 
+object ReqlType {
+  @scala.inline
+  def apply($reql_type$: java.lang.String): ReqlType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$reql_type$")($reql_type$)
+    __obj.asInstanceOf[ReqlType]
+  }
+}
+

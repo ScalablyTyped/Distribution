@@ -13,16 +13,20 @@ object forkDashTsDashCheckerDashWebpackDashPluginLibStrings {
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait diagnostic extends js.Object
+  sealed trait diagnostic
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.ErrorType
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.Severity
   
   @js.native
-  sealed trait lint extends js.Object
+  sealed trait lint
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.ErrorType
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends forkDashTsDashCheckerDashWebpackDashPluginLib.libNormalizedMessageMod.Severity
   
   @scala.inline
   def codeframe: codeframe = "codeframe".asInstanceOf[codeframe]

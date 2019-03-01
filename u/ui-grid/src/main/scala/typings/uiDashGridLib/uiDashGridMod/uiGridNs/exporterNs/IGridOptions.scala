@@ -199,3 +199,70 @@ trait IGridOptions[TEntity] extends js.Object {
   var exporterSuppressMenu: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply[TEntity](
+    exporterAllDataFn: js.Function0[angularLib.angularMod.angularNs.IPromise[js.Array[TEntity]]] = null,
+    exporterAllDataPromise: js.Function0[angularLib.angularMod.angularNs.IPromise[js.Array[TEntity]]] = null,
+    exporterCsvColumnSeparator: java.lang.String = null,
+    exporterCsvFilename: java.lang.String = null,
+    exporterFieldCallback: js.Function4[
+      /* grid */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridInstanceOf[TEntity], 
+      /* row */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridRowOf[TEntity], 
+      /* col */ uiDashGridLib.uiDashGridMod.uiGridNs.IGridColumnOf[TEntity], 
+      /* value */ js.Any, 
+      _
+    ] = null,
+    exporterHeaderFilter: js.Function1[/* displayName */ java.lang.String, java.lang.String] = null,
+    exporterHeaderFilterUseName: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterMenuCsv: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterMenuExcel: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterMenuItemOrder: scala.Int | scala.Double = null,
+    exporterMenuLabel: java.lang.String = null,
+    exporterMenuPdf: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterOlderExcelCompatibility: js.UndefOr[scala.Boolean] = js.undefined,
+    exporterPdfCustomFormatter: js.Function1[/* docDefinition */ js.Any, _] = null,
+    exporterPdfDefaultStyle: js.Any = null,
+    exporterPdfFilename: java.lang.String = null,
+    exporterPdfFooter: java.lang.String | js.Any | uiDashGridLib.Anon_CurrentPage = null,
+    exporterPdfHeader: java.lang.String | js.Any | uiDashGridLib.Anon_CurrentPage = null,
+    exporterPdfMaxGridWidth: scala.Int | scala.Double = null,
+    exporterPdfOrientation: java.lang.String = null,
+    exporterPdfPageSize: java.lang.String = null,
+    exporterPdfTableHeaderStyle: js.Any = null,
+    exporterPdfTableLayout: js.Any = null,
+    exporterPdfTableStyle: js.Any = null,
+    exporterSuppressColumns: js.Array[java.lang.String] = null,
+    exporterSuppressMenu: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGridOptions[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    if (exporterAllDataFn != null) __obj.updateDynamic("exporterAllDataFn")(exporterAllDataFn)
+    if (exporterAllDataPromise != null) __obj.updateDynamic("exporterAllDataPromise")(exporterAllDataPromise)
+    if (exporterCsvColumnSeparator != null) __obj.updateDynamic("exporterCsvColumnSeparator")(exporterCsvColumnSeparator)
+    if (exporterCsvFilename != null) __obj.updateDynamic("exporterCsvFilename")(exporterCsvFilename)
+    if (exporterFieldCallback != null) __obj.updateDynamic("exporterFieldCallback")(exporterFieldCallback)
+    if (exporterHeaderFilter != null) __obj.updateDynamic("exporterHeaderFilter")(exporterHeaderFilter)
+    if (!js.isUndefined(exporterHeaderFilterUseName)) __obj.updateDynamic("exporterHeaderFilterUseName")(exporterHeaderFilterUseName)
+    if (!js.isUndefined(exporterMenuCsv)) __obj.updateDynamic("exporterMenuCsv")(exporterMenuCsv)
+    if (!js.isUndefined(exporterMenuExcel)) __obj.updateDynamic("exporterMenuExcel")(exporterMenuExcel)
+    if (exporterMenuItemOrder != null) __obj.updateDynamic("exporterMenuItemOrder")(exporterMenuItemOrder.asInstanceOf[js.Any])
+    if (exporterMenuLabel != null) __obj.updateDynamic("exporterMenuLabel")(exporterMenuLabel)
+    if (!js.isUndefined(exporterMenuPdf)) __obj.updateDynamic("exporterMenuPdf")(exporterMenuPdf)
+    if (!js.isUndefined(exporterOlderExcelCompatibility)) __obj.updateDynamic("exporterOlderExcelCompatibility")(exporterOlderExcelCompatibility)
+    if (exporterPdfCustomFormatter != null) __obj.updateDynamic("exporterPdfCustomFormatter")(exporterPdfCustomFormatter)
+    if (exporterPdfDefaultStyle != null) __obj.updateDynamic("exporterPdfDefaultStyle")(exporterPdfDefaultStyle)
+    if (exporterPdfFilename != null) __obj.updateDynamic("exporterPdfFilename")(exporterPdfFilename)
+    if (exporterPdfFooter != null) __obj.updateDynamic("exporterPdfFooter")(exporterPdfFooter.asInstanceOf[js.Any])
+    if (exporterPdfHeader != null) __obj.updateDynamic("exporterPdfHeader")(exporterPdfHeader.asInstanceOf[js.Any])
+    if (exporterPdfMaxGridWidth != null) __obj.updateDynamic("exporterPdfMaxGridWidth")(exporterPdfMaxGridWidth.asInstanceOf[js.Any])
+    if (exporterPdfOrientation != null) __obj.updateDynamic("exporterPdfOrientation")(exporterPdfOrientation)
+    if (exporterPdfPageSize != null) __obj.updateDynamic("exporterPdfPageSize")(exporterPdfPageSize)
+    if (exporterPdfTableHeaderStyle != null) __obj.updateDynamic("exporterPdfTableHeaderStyle")(exporterPdfTableHeaderStyle)
+    if (exporterPdfTableLayout != null) __obj.updateDynamic("exporterPdfTableLayout")(exporterPdfTableLayout)
+    if (exporterPdfTableStyle != null) __obj.updateDynamic("exporterPdfTableStyle")(exporterPdfTableStyle)
+    if (exporterSuppressColumns != null) __obj.updateDynamic("exporterSuppressColumns")(exporterSuppressColumns)
+    if (!js.isUndefined(exporterSuppressMenu)) __obj.updateDynamic("exporterSuppressMenu")(exporterSuppressMenu)
+    __obj.asInstanceOf[IGridOptions[TEntity]]
+  }
+}
+

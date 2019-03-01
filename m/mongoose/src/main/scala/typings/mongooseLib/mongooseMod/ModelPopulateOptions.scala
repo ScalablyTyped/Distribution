@@ -20,3 +20,24 @@ trait ModelPopulateOptions extends js.Object {
   var select: js.UndefOr[js.Any] = js.undefined
 }
 
+object ModelPopulateOptions {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    `match`: js.Any = null,
+    model: java.lang.String = null,
+    options: js.Any = null,
+    populate: ModelPopulateOptions | js.Array[ModelPopulateOptions] = null,
+    select: js.Any = null
+  ): ModelPopulateOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (populate != null) __obj.updateDynamic("populate")(populate.asInstanceOf[js.Any])
+    if (select != null) __obj.updateDynamic("select")(select)
+    __obj.asInstanceOf[ModelPopulateOptions]
+  }
+}
+

@@ -11,3 +11,14 @@ trait levelLoadedData extends js.Object {
   var stats: Stats
 }
 
+object levelLoadedData {
+  @scala.inline
+  def apply(details: LevelDetails, levelId: scala.Double, stats: Stats): levelLoadedData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("levelId")(levelId)
+    __obj.updateDynamic("stats")(stats)
+    __obj.asInstanceOf[levelLoadedData]
+  }
+}
+

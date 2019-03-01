@@ -12,3 +12,12 @@ trait HandlerDecorations extends js.Object {
   var proxy: js.UndefOr[h2o2Lib.h2o2Mod.h2o2Ns.ProxyHandlerOptions] = js.undefined
 }
 
+object HandlerDecorations {
+  @scala.inline
+  def apply(proxy: h2o2Lib.h2o2Mod.h2o2Ns.ProxyHandlerOptions = null): HandlerDecorations = {
+    val __obj = js.Dynamic.literal()
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    __obj.asInstanceOf[HandlerDecorations]
+  }
+}
+

@@ -17,3 +17,13 @@ trait ContextMenuSettings extends js.Object {
   var items: js.UndefOr[js.Any] = js.undefined
 }
 
+object ContextMenuSettings {
+  @scala.inline
+  def apply(customMenuFields: js.Array[_] = null, items: js.Any = null): ContextMenuSettings = {
+    val __obj = js.Dynamic.literal()
+    if (customMenuFields != null) __obj.updateDynamic("customMenuFields")(customMenuFields)
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[ContextMenuSettings]
+  }
+}
+

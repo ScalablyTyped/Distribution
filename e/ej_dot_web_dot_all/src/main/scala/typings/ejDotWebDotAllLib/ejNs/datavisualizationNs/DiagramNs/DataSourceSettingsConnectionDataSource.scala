@@ -48,3 +48,32 @@ trait DataSourceSettingsConnectionDataSource extends js.Object {
   var targetPointY: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DataSourceSettingsConnectionDataSource {
+  @scala.inline
+  def apply(
+    crudAction: DataSourceSettingsConnectionDataSourceCrudAction = null,
+    customFields: js.Array[_] = null,
+    dataSource: java.lang.String = null,
+    id: java.lang.String = null,
+    sourceNode: java.lang.String = null,
+    sourcePointX: java.lang.String = null,
+    sourcePointY: java.lang.String = null,
+    targetNode: java.lang.String = null,
+    targetPointX: java.lang.String = null,
+    targetPointY: java.lang.String = null
+  ): DataSourceSettingsConnectionDataSource = {
+    val __obj = js.Dynamic.literal()
+    if (crudAction != null) __obj.updateDynamic("crudAction")(crudAction)
+    if (customFields != null) __obj.updateDynamic("customFields")(customFields)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (sourceNode != null) __obj.updateDynamic("sourceNode")(sourceNode)
+    if (sourcePointX != null) __obj.updateDynamic("sourcePointX")(sourcePointX)
+    if (sourcePointY != null) __obj.updateDynamic("sourcePointY")(sourcePointY)
+    if (targetNode != null) __obj.updateDynamic("targetNode")(targetNode)
+    if (targetPointX != null) __obj.updateDynamic("targetPointX")(targetPointX)
+    if (targetPointY != null) __obj.updateDynamic("targetPointY")(targetPointY)
+    __obj.asInstanceOf[DataSourceSettingsConnectionDataSource]
+  }
+}
+

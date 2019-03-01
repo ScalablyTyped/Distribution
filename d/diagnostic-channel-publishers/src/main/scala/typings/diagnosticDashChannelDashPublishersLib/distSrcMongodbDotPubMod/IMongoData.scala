@@ -11,3 +11,18 @@ trait IMongoData extends js.Object {
   var succeeded: scala.Boolean
 }
 
+object IMongoData {
+  @scala.inline
+  def apply(
+    event: diagnosticDashChannelDashPublishersLib.Anon_CommandName,
+    startedData: diagnosticDashChannelDashPublishersLib.Anon_Command,
+    succeeded: scala.Boolean
+  ): IMongoData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("startedData")(startedData)
+    __obj.updateDynamic("succeeded")(succeeded)
+    __obj.asInstanceOf[IMongoData]
+  }
+}
+

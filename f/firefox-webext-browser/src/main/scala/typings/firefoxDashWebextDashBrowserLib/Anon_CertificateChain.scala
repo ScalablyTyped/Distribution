@@ -12,3 +12,16 @@ trait Anon_CertificateChain extends js.Object {
   var rawDER: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_CertificateChain {
+  @scala.inline
+  def apply(
+    certificateChain: js.UndefOr[scala.Boolean] = js.undefined,
+    rawDER: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_CertificateChain = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(certificateChain)) __obj.updateDynamic("certificateChain")(certificateChain)
+    if (!js.isUndefined(rawDER)) __obj.updateDynamic("rawDER")(rawDER)
+    __obj.asInstanceOf[Anon_CertificateChain]
+  }
+}
+

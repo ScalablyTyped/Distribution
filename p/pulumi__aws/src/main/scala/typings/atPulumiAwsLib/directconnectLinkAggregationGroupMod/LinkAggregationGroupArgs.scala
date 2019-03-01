@@ -32,3 +32,24 @@ trait LinkAggregationGroupArgs extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object LinkAggregationGroupArgs {
+  @scala.inline
+  def apply(
+    connectionsBandwidth: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    location: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    forceDestroy: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    numberOfConnections: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): LinkAggregationGroupArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connectionsBandwidth")(connectionsBandwidth.asInstanceOf[js.Any])
+    __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (forceDestroy != null) __obj.updateDynamic("forceDestroy")(forceDestroy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (numberOfConnections != null) __obj.updateDynamic("numberOfConnections")(numberOfConnections.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LinkAggregationGroupArgs]
+  }
+}
+

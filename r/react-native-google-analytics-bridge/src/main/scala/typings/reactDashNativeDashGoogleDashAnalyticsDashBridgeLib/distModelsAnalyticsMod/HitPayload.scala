@@ -27,3 +27,30 @@ trait HitPayload extends js.Object {
   var utmCampaignUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HitPayload {
+  @scala.inline
+  def apply(
+    customDimensions: reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distModelsCustomMod.CustomDimensionsByIndex | reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distModelsCustomMod.CustomDimensionsByField = null,
+    customMetrics: reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distModelsCustomMod.CustomMetrics = null,
+    impressionList: java.lang.String = null,
+    impressionProducts: js.Array[reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distModelsProductMod.Product] = null,
+    impressionSource: java.lang.String = null,
+    productAction: reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distModelsProductMod.ProductAction = null,
+    products: js.Array[reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distModelsProductMod.Product] = null,
+    session: SessionState = null,
+    utmCampaignUrl: java.lang.String = null
+  ): HitPayload = {
+    val __obj = js.Dynamic.literal()
+    if (customDimensions != null) __obj.updateDynamic("customDimensions")(customDimensions.asInstanceOf[js.Any])
+    if (customMetrics != null) __obj.updateDynamic("customMetrics")(customMetrics)
+    if (impressionList != null) __obj.updateDynamic("impressionList")(impressionList)
+    if (impressionProducts != null) __obj.updateDynamic("impressionProducts")(impressionProducts)
+    if (impressionSource != null) __obj.updateDynamic("impressionSource")(impressionSource)
+    if (productAction != null) __obj.updateDynamic("productAction")(productAction)
+    if (products != null) __obj.updateDynamic("products")(products)
+    if (session != null) __obj.updateDynamic("session")(session)
+    if (utmCampaignUrl != null) __obj.updateDynamic("utmCampaignUrl")(utmCampaignUrl)
+    __obj.asInstanceOf[HitPayload]
+  }
+}
+

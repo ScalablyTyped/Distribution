@@ -12,3 +12,16 @@ trait Anon_Default extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Default {
+  @scala.inline
+  def apply(
+    options: js.Any = null,
+    severity: tslintLib.libLanguageRuleRuleMod.RuleSeverity | tslintLib.tslintLibStrings.warn | tslintLib.tslintLibStrings.none | tslintLib.tslintLibStrings.default = null
+  ): Anon_Default = {
+    val __obj = js.Dynamic.literal()
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (severity != null) __obj.updateDynamic("severity")(severity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Default]
+  }
+}
+

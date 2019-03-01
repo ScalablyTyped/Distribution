@@ -33,3 +33,60 @@ import scala.scalajs.js.annotation._
   var width: scala.Double
 }
 
+object CellInfo {
+  @scala.inline
+  def apply(
+    aggregated: scala.Boolean,
+    classes: js.Array[java.lang.String],
+    column: Column[_],
+    columnProps: js.Any,
+    expander: scala.Boolean,
+    groupedByPivot: scala.Boolean,
+    index: scala.Double,
+    isExpanded: scala.Boolean,
+    level: scala.Double,
+    maxWidth: scala.Double,
+    nestingPath: js.Array[scala.Double],
+    original: js.Any,
+    page: scala.Double,
+    pageSize: scala.Double,
+    pivoted: scala.Boolean,
+    row: js.Any,
+    rowValues: js.Any,
+    show: scala.Boolean,
+    styles: js.Object,
+    subRows: js.Array[_],
+    tdProps: js.Any,
+    value: js.Any,
+    viewIndex: scala.Double,
+    width: scala.Double
+  ): CellInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregated")(aggregated)
+    __obj.updateDynamic("classes")(classes)
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("columnProps")(columnProps)
+    __obj.updateDynamic("expander")(expander)
+    __obj.updateDynamic("groupedByPivot")(groupedByPivot)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("isExpanded")(isExpanded)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("maxWidth")(maxWidth)
+    __obj.updateDynamic("nestingPath")(nestingPath)
+    __obj.updateDynamic("original")(original)
+    __obj.updateDynamic("page")(page)
+    __obj.updateDynamic("pageSize")(pageSize)
+    __obj.updateDynamic("pivoted")(pivoted)
+    __obj.updateDynamic("row")(row)
+    __obj.updateDynamic("rowValues")(rowValues)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("styles")(styles)
+    __obj.updateDynamic("subRows")(subRows)
+    __obj.updateDynamic("tdProps")(tdProps)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("viewIndex")(viewIndex)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[CellInfo]
+  }
+}
+

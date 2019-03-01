@@ -13,3 +13,20 @@ trait DeleteCookie extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeleteCookie {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    domain: java.lang.String = null,
+    path: java.lang.String = null,
+    url: java.lang.String = null
+  ): DeleteCookie = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[DeleteCookie]
+  }
+}
+

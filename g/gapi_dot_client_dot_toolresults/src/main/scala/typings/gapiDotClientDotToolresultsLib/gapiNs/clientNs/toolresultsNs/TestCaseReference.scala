@@ -18,3 +18,18 @@ trait TestCaseReference extends js.Object {
   var testSuiteName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TestCaseReference {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    name: java.lang.String = null,
+    testSuiteName: java.lang.String = null
+  ): TestCaseReference = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (testSuiteName != null) __obj.updateDynamic("testSuiteName")(testSuiteName)
+    __obj.asInstanceOf[TestCaseReference]
+  }
+}
+

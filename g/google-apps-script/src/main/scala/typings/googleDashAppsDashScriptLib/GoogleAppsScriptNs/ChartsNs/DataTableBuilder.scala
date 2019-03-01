@@ -16,3 +16,25 @@ trait DataTableBuilder extends js.Object {
   ): DataTableBuilder
 }
 
+object DataTableBuilder {
+  @scala.inline
+  def apply(
+    addColumn: js.Function2[ColumnType, java.lang.String, DataTableBuilder],
+    addRow: js.Function1[js.Array[js.Object], DataTableBuilder],
+    build: js.Function0[DataTable],
+    setValue: js.Function3[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      js.Object, 
+      DataTableBuilder
+    ]
+  ): DataTableBuilder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addColumn")(addColumn)
+    __obj.updateDynamic("addRow")(addRow)
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.asInstanceOf[DataTableBuilder]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Document extends js.Object {
   val timeline: AnimationTimeline
 }
 
+object Document {
+  @scala.inline
+  def apply(timeline: AnimationTimeline): Document = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("timeline")(timeline)
+    __obj.asInstanceOf[Document]
+  }
+}
+

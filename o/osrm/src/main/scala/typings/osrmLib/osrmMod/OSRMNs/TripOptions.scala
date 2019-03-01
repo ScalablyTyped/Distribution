@@ -44,3 +44,36 @@ trait TripOptions extends Options {
   var steps: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TripOptions {
+  @scala.inline
+  def apply(
+    annotations: scala.Boolean | js.Array[java.lang.String] = null,
+    bearings: js.Array[Bearing] = null,
+    coordinates: js.Array[Coordinate] = null,
+    destination: java.lang.String = null,
+    generate_hints: js.UndefOr[scala.Boolean] = js.undefined,
+    geometries: java.lang.String = null,
+    hints: js.Array[Hint] = null,
+    overview: java.lang.String = null,
+    radiuses: js.Array[Radius] = null,
+    roundtrip: js.UndefOr[scala.Boolean] = js.undefined,
+    source: java.lang.String = null,
+    steps: js.UndefOr[scala.Boolean] = js.undefined
+  ): TripOptions = {
+    val __obj = js.Dynamic.literal()
+    if (annotations != null) __obj.updateDynamic("annotations")(annotations.asInstanceOf[js.Any])
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
+    if (geometries != null) __obj.updateDynamic("geometries")(geometries)
+    if (hints != null) __obj.updateDynamic("hints")(hints)
+    if (overview != null) __obj.updateDynamic("overview")(overview)
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
+    if (!js.isUndefined(roundtrip)) __obj.updateDynamic("roundtrip")(roundtrip)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (!js.isUndefined(steps)) __obj.updateDynamic("steps")(steps)
+    __obj.asInstanceOf[TripOptions]
+  }
+}
+

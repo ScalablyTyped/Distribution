@@ -13,118 +13,156 @@ object momentDashDurationDashFormatLibStrings {
   sealed trait DurationTimeDef extends js.Object
   
   @js.native
-  sealed trait HM extends js.Object
+  sealed trait HM
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationTemplate
   
   @js.native
-  sealed trait HMS extends js.Object
+  sealed trait HMS
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationTemplate
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait M
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait MM extends js.Object
+  sealed trait MM
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait MMM extends js.Object
+  sealed trait MMM
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait MS extends js.Object
+  sealed trait MS
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationTemplate
   
   @js.native
-  sealed trait S extends js.Object
+  sealed trait S
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait SS extends js.Object
+  sealed trait SS
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait SSS extends js.Object
+  sealed trait SSS
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.UnitOfTrim
   
   @js.native
-  sealed trait both extends js.Object
+  sealed trait both
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.UnitOfTrim
   
   @js.native
-  sealed trait d extends js.Object
+  sealed trait d
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait dd extends js.Object
+  sealed trait dd
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait ddd extends js.Object
+  sealed trait ddd
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait `final` extends js.Object
+  sealed trait `final`
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.UnitOfTrim
   
   @js.native
-  sealed trait h extends js.Object
+  sealed trait h
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait hh extends js.Object
+  sealed trait hh
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait hhh extends js.Object
+  sealed trait hhh
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait large
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.UnitOfTrim
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.UnitOfTrimV1
   
   @js.native
-  sealed trait long extends js.Object
+  sealed trait long
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationLabelType
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait m
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait mid extends js.Object
+  sealed trait mid
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.UnitOfTrim
   
   @js.native
-  sealed trait mm extends js.Object
+  sealed trait mm
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait mmm extends js.Object
+  sealed trait mmm
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.UnitOfTrimV1
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait short extends js.Object
+  sealed trait short
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationLabelType
   
   @js.native
-  sealed trait small extends js.Object
+  sealed trait small
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.UnitOfTrim
   
   @js.native
-  sealed trait ss extends js.Object
+  sealed trait ss
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait sss extends js.Object
+  sealed trait sss
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationLabelType
   
   @js.native
-  sealed trait w extends js.Object
+  sealed trait w
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait ww extends js.Object
+  sealed trait ww
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait www extends js.Object
+  sealed trait www
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait yy extends js.Object
+  sealed trait yy
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @js.native
-  sealed trait yyy extends js.Object
+  sealed trait yyy
+    extends momentDashDurationDashFormatLib.momentDashDurationDashFormatMod.momentMod.DurationToken
   
   @scala.inline
   def DurationLabelDef: DurationLabelDef = "DurationLabelDef".asInstanceOf[DurationLabelDef]

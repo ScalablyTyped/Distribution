@@ -21,3 +21,14 @@ trait ASPxClientReportDesignerTabClosingEventArgs extends ASPxClientReportDesign
   var ReadyToClose: jqueryLib.JQueryDeferred[_]
 }
 
+object ASPxClientReportDesignerTabClosingEventArgs {
+  @scala.inline
+  def apply(Handled: scala.Boolean, ReadyToClose: jqueryLib.JQueryDeferred[_], Tab: ASPxDesignerNavigateTab): ASPxClientReportDesignerTabClosingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Handled")(Handled)
+    __obj.updateDynamic("ReadyToClose")(ReadyToClose)
+    __obj.updateDynamic("Tab")(Tab)
+    __obj.asInstanceOf[ASPxClientReportDesignerTabClosingEventArgs]
+  }
+}
+

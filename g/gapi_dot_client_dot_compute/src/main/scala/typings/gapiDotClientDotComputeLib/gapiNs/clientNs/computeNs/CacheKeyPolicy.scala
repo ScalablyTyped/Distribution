@@ -27,3 +27,22 @@ trait CacheKeyPolicy extends js.Object {
   var queryStringWhitelist: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CacheKeyPolicy {
+  @scala.inline
+  def apply(
+    includeHost: js.UndefOr[scala.Boolean] = js.undefined,
+    includeProtocol: js.UndefOr[scala.Boolean] = js.undefined,
+    includeQueryString: js.UndefOr[scala.Boolean] = js.undefined,
+    queryStringBlacklist: js.Array[java.lang.String] = null,
+    queryStringWhitelist: js.Array[java.lang.String] = null
+  ): CacheKeyPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(includeHost)) __obj.updateDynamic("includeHost")(includeHost)
+    if (!js.isUndefined(includeProtocol)) __obj.updateDynamic("includeProtocol")(includeProtocol)
+    if (!js.isUndefined(includeQueryString)) __obj.updateDynamic("includeQueryString")(includeQueryString)
+    if (queryStringBlacklist != null) __obj.updateDynamic("queryStringBlacklist")(queryStringBlacklist)
+    if (queryStringWhitelist != null) __obj.updateDynamic("queryStringWhitelist")(queryStringWhitelist)
+    __obj.asInstanceOf[CacheKeyPolicy]
+  }
+}
+

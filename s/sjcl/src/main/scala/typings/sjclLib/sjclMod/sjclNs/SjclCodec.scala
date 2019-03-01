@@ -11,3 +11,13 @@ trait SjclCodec[T] extends js.Object {
   def toBits(value: T): BitArray
 }
 
+object SjclCodec {
+  @scala.inline
+  def apply[T](fromBits: js.Function1[BitArray, T], toBits: js.Function1[T, BitArray]): SjclCodec[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromBits")(fromBits)
+    __obj.updateDynamic("toBits")(toBits)
+    __obj.asInstanceOf[SjclCodec[T]]
+  }
+}
+

@@ -33,3 +33,22 @@ trait HTTPGetAction extends js.Object {
   val scheme: java.lang.String
 }
 
+object HTTPGetAction {
+  @scala.inline
+  def apply(
+    host: java.lang.String,
+    httpHeaders: js.Array[HTTPHeader],
+    path: java.lang.String,
+    port: scala.Double | java.lang.String,
+    scheme: java.lang.String
+  ): HTTPGetAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("httpHeaders")(httpHeaders)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.updateDynamic("scheme")(scheme)
+    __obj.asInstanceOf[HTTPGetAction]
+  }
+}
+

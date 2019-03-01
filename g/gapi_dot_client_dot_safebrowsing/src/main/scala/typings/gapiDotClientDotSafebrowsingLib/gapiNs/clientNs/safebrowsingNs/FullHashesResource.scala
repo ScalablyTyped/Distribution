@@ -10,3 +10,17 @@ trait FullHashesResource extends js.Object {
   def find(request: gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[FindFullHashesResponse]
 }
 
+object FullHashesResource {
+  @scala.inline
+  def apply(
+    find: js.Function1[
+      gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FindFullHashesResponse]
+    ]
+  ): FullHashesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("find")(find)
+    __obj.asInstanceOf[FullHashesResource]
+  }
+}
+

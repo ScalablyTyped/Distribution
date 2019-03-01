@@ -15,3 +15,24 @@ trait UpdateRequiredDialog
   def create(): scala.Unit
 }
 
+object UpdateRequiredDialog {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    create: js.Function0[scala.Unit],
+    execute: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): UpdateRequiredDialog = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.asInstanceOf[UpdateRequiredDialog]
+  }
+}
+

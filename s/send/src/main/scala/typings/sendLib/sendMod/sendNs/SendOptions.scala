@@ -70,3 +70,34 @@ trait SendOptions extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SendOptions {
+  @scala.inline
+  def apply(
+    acceptRanges: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheControl: js.UndefOr[scala.Boolean] = js.undefined,
+    dotfiles: sendLib.sendLibStrings.allow | sendLib.sendLibStrings.deny | sendLib.sendLibStrings.ignore = null,
+    end: scala.Int | scala.Double = null,
+    etag: js.UndefOr[scala.Boolean] = js.undefined,
+    extensions: js.Array[java.lang.String] | java.lang.String | scala.Boolean = null,
+    index: js.Array[java.lang.String] | java.lang.String | scala.Boolean = null,
+    lastModified: js.UndefOr[scala.Boolean] = js.undefined,
+    maxAge: java.lang.String | scala.Double = null,
+    root: java.lang.String = null,
+    start: scala.Int | scala.Double = null
+  ): SendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(acceptRanges)) __obj.updateDynamic("acceptRanges")(acceptRanges)
+    if (!js.isUndefined(cacheControl)) __obj.updateDynamic("cacheControl")(cacheControl)
+    if (dotfiles != null) __obj.updateDynamic("dotfiles")(dotfiles.asInstanceOf[js.Any])
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(etag)) __obj.updateDynamic("etag")(etag)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(lastModified)) __obj.updateDynamic("lastModified")(lastModified)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (root != null) __obj.updateDynamic("root")(root)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SendOptions]
+  }
+}
+

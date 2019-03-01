@@ -33,3 +33,22 @@ trait FetchOptions extends js.Object {
   var `then`: js.UndefOr[js.Function1[/* result */ js.Any, scala.Unit]] = js.undefined
 }
 
+object FetchOptions {
+  @scala.inline
+  def apply(
+    context: js.Object,
+    asArray: js.UndefOr[scala.Boolean] = js.undefined,
+    onFailure: js.Function0[scala.Unit] = null,
+    queries: js.Object = null,
+    `then`: js.Function1[/* result */ js.Any, scala.Unit] = null
+  ): FetchOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(asArray)) __obj.updateDynamic("asArray")(asArray)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (`then` != null) __obj.updateDynamic("then")(`then`)
+    __obj.asInstanceOf[FetchOptions]
+  }
+}
+

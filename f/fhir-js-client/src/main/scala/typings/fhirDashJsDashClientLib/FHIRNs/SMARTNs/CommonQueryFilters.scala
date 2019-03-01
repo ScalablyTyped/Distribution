@@ -25,3 +25,18 @@ trait CommonQueryFilters extends js.Object {
   var since: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommonQueryFilters {
+  @scala.inline
+  def apply(
+    count: scala.Int | scala.Double = null,
+    params: fhirDashJsDashClientLib.Anon_At = null,
+    since: java.lang.String = null
+  ): CommonQueryFilters = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (since != null) __obj.updateDynamic("since")(since)
+    __obj.asInstanceOf[CommonQueryFilters]
+  }
+}
+

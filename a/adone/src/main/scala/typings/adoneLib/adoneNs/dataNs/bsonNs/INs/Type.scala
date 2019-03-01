@@ -9,3 +9,12 @@ trait Type extends js.Object {
   var _bsontype: java.lang.String
 }
 
+object Type {
+  @scala.inline
+  def apply(_bsontype: java.lang.String): Type = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_bsontype")(_bsontype)
+    __obj.asInstanceOf[Type]
+  }
+}
+

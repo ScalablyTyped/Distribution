@@ -30,3 +30,18 @@ trait NamedItemUpdateData extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object NamedItemUpdateData {
+  @scala.inline
+  def apply(
+    comment: java.lang.String = null,
+    formula: js.Any = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): NamedItemUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (formula != null) __obj.updateDynamic("formula")(formula)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[NamedItemUpdateData]
+  }
+}
+

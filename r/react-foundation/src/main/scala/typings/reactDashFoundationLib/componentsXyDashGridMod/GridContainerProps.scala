@@ -289,3 +289,20 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GridContainerProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    fluid: js.UndefOr[scala.Boolean] = js.undefined,
+    full: js.UndefOr[scala.Boolean] = js.undefined
+  ): GridContainerProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
+    __obj.asInstanceOf[GridContainerProps]
+  }
+}
+

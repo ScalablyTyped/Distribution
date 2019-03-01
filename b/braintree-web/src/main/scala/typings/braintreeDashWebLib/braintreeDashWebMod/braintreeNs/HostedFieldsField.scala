@@ -23,3 +23,22 @@ trait HostedFieldsField extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HostedFieldsField {
+  @scala.inline
+  def apply(
+    selector: java.lang.String,
+    formatInput: js.UndefOr[scala.Boolean] = js.undefined,
+    placeholder: java.lang.String = null,
+    select: scala.Boolean | braintreeDashWebLib.Anon_Options = null,
+    `type`: java.lang.String = null
+  ): HostedFieldsField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("selector")(selector)
+    if (!js.isUndefined(formatInput)) __obj.updateDynamic("formatInput")(formatInput)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (select != null) __obj.updateDynamic("select")(select.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[HostedFieldsField]
+  }
+}
+

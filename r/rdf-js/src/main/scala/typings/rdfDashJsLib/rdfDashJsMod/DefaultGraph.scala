@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefaultGraph extends js.Object {
+trait DefaultGraph
+  extends Quad_Graph
+     with Term {
   /**
     * Contains the constant "DefaultGraph".
     */
@@ -19,5 +21,20 @@ trait DefaultGraph extends js.Object {
     * @return True if and only if other has termType "DefaultGraph".
     */
   def equals(other: Term): scala.Boolean
+}
+
+object DefaultGraph {
+  @scala.inline
+  def apply(
+    equals: js.Function1[Term, scala.Boolean],
+    termType: rdfDashJsLib.rdfDashJsLibStrings.DefaultGraph,
+    value: rdfDashJsLib.rdfDashJsLibStrings.Empty
+  ): DefaultGraph = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("termType")(termType)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DefaultGraph]
+  }
 }
 

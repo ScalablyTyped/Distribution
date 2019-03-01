@@ -69,3 +69,43 @@ trait XDataProvider
   def getRangeSelection(): activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection
 }
 
+object XDataProvider {
+  @scala.inline
+  def apply(
+    RangeSelection: activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection,
+    acquire: js.Function0[scala.Unit],
+    createDataSequenceByRangeRepresentation: js.Function1[java.lang.String, XDataSequence],
+    createDataSequenceByRangeRepresentationPossible: js.Function1[java.lang.String, scala.Boolean],
+    createDataSequenceByValueArray: js.Function2[java.lang.String, java.lang.String, XDataSequence],
+    createDataSource: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XDataSource
+    ],
+    createDataSourcePossible: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Boolean
+    ],
+    detectArguments: js.Function1[
+      XDataSource, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getRangeSelection: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.XRangeSelection],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDataProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RangeSelection")(RangeSelection)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createDataSequenceByRangeRepresentation")(createDataSequenceByRangeRepresentation)
+    __obj.updateDynamic("createDataSequenceByRangeRepresentationPossible")(createDataSequenceByRangeRepresentationPossible)
+    __obj.updateDynamic("createDataSequenceByValueArray")(createDataSequenceByValueArray)
+    __obj.updateDynamic("createDataSource")(createDataSource)
+    __obj.updateDynamic("createDataSourcePossible")(createDataSourcePossible)
+    __obj.updateDynamic("detectArguments")(detectArguments)
+    __obj.updateDynamic("getRangeSelection")(getRangeSelection)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDataProvider]
+  }
+}
+

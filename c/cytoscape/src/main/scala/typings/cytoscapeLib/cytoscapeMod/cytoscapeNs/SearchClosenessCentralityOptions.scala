@@ -29,3 +29,20 @@ trait SearchClosenessCentralityOptions extends js.Object {
   var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, scala.Double]] = js.undefined
 }
 
+object SearchClosenessCentralityOptions {
+  @scala.inline
+  def apply(
+    root: NodeSingular | Selector,
+    directed: js.UndefOr[scala.Boolean] = js.undefined,
+    harmonic: js.UndefOr[scala.Boolean] = js.undefined,
+    weight: js.Function1[/* edge */ EdgeSingular, scala.Double] = null
+  ): SearchClosenessCentralityOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (!js.isUndefined(harmonic)) __obj.updateDynamic("harmonic")(harmonic)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[SearchClosenessCentralityOptions]
+  }
+}
+

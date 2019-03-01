@@ -41,3 +41,42 @@ trait HttpRequest extends js.Object {
   var userAgent: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HttpRequest {
+  @scala.inline
+  def apply(
+    cacheFillBytes: java.lang.String = null,
+    cacheHit: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheLookup: js.UndefOr[scala.Boolean] = js.undefined,
+    cacheValidatedWithOriginServer: js.UndefOr[scala.Boolean] = js.undefined,
+    latency: java.lang.String = null,
+    protocol: java.lang.String = null,
+    referer: java.lang.String = null,
+    remoteIp: java.lang.String = null,
+    requestMethod: java.lang.String = null,
+    requestSize: java.lang.String = null,
+    requestUrl: java.lang.String = null,
+    responseSize: java.lang.String = null,
+    serverIp: java.lang.String = null,
+    status: scala.Int | scala.Double = null,
+    userAgent: java.lang.String = null
+  ): HttpRequest = {
+    val __obj = js.Dynamic.literal()
+    if (cacheFillBytes != null) __obj.updateDynamic("cacheFillBytes")(cacheFillBytes)
+    if (!js.isUndefined(cacheHit)) __obj.updateDynamic("cacheHit")(cacheHit)
+    if (!js.isUndefined(cacheLookup)) __obj.updateDynamic("cacheLookup")(cacheLookup)
+    if (!js.isUndefined(cacheValidatedWithOriginServer)) __obj.updateDynamic("cacheValidatedWithOriginServer")(cacheValidatedWithOriginServer)
+    if (latency != null) __obj.updateDynamic("latency")(latency)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (referer != null) __obj.updateDynamic("referer")(referer)
+    if (remoteIp != null) __obj.updateDynamic("remoteIp")(remoteIp)
+    if (requestMethod != null) __obj.updateDynamic("requestMethod")(requestMethod)
+    if (requestSize != null) __obj.updateDynamic("requestSize")(requestSize)
+    if (requestUrl != null) __obj.updateDynamic("requestUrl")(requestUrl)
+    if (responseSize != null) __obj.updateDynamic("responseSize")(responseSize)
+    if (serverIp != null) __obj.updateDynamic("serverIp")(serverIp)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    __obj.asInstanceOf[HttpRequest]
+  }
+}
+

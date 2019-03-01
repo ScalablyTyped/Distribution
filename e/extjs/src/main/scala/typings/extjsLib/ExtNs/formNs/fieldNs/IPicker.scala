@@ -33,3 +33,42 @@ trait IPicker extends ITrigger {
   var pickerOffset: js.UndefOr[extjsLib.ExtNs.Array] = js.undefined
 }
 
+object IPicker {
+  @scala.inline
+  def apply(
+    ITrigger: ITrigger = null,
+    alignPicker: js.Function0[scala.Unit] = null,
+    collapse: js.Function0[scala.Unit] = null,
+    createPicker: js.Function0[scala.Unit] = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    expand: js.Function0[scala.Unit] = null,
+    getPicker: js.Function0[extjsLib.ExtNs.IComponent] = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    initEvents: js.Function0[scala.Unit] = null,
+    isExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    matchFieldWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    onTriggerClick: js.Function0[scala.Unit] = null,
+    openCls: java.lang.String = null,
+    pickerAlign: java.lang.String = null,
+    pickerOffset: extjsLib.ExtNs.Array = null
+  ): IPicker = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ITrigger)
+    if (alignPicker != null) __obj.updateDynamic("alignPicker")(alignPicker)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (createPicker != null) __obj.updateDynamic("createPicker")(createPicker)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (getPicker != null) __obj.updateDynamic("getPicker")(getPicker)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (initEvents != null) __obj.updateDynamic("initEvents")(initEvents)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (!js.isUndefined(matchFieldWidth)) __obj.updateDynamic("matchFieldWidth")(matchFieldWidth)
+    if (onTriggerClick != null) __obj.updateDynamic("onTriggerClick")(onTriggerClick)
+    if (openCls != null) __obj.updateDynamic("openCls")(openCls)
+    if (pickerAlign != null) __obj.updateDynamic("pickerAlign")(pickerAlign)
+    if (pickerOffset != null) __obj.updateDynamic("pickerOffset")(pickerOffset)
+    __obj.asInstanceOf[IPicker]
+  }
+}
+

@@ -13,3 +13,18 @@ trait RefsQueryResult extends js.Object {
   var `type`: js.UndefOr[ternLib.ternLibStrings.global | ternLib.ternLibStrings.local] = js.undefined
 }
 
+object RefsQueryResult {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    refs: js.Array[ternLib.Anon_End],
+    `type`: ternLib.ternLibStrings.global | ternLib.ternLibStrings.local = null
+  ): RefsQueryResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("refs")(refs)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RefsQueryResult]
+  }
+}
+

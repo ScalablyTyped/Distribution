@@ -14,3 +14,14 @@ trait Diagnostic extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Diagnostic {
+  @scala.inline
+  def apply(kind: java.lang.String = null, location: java.lang.String = null, message: java.lang.String = null): Diagnostic = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Diagnostic]
+  }
+}
+

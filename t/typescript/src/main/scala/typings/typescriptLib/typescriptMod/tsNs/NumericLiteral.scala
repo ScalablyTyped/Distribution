@@ -6,5 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait NumericLiteral extends LiteralExpression
+trait NumericLiteral
+  extends LiteralExpression
+     with DeclarationName
+     with PropertyName
 

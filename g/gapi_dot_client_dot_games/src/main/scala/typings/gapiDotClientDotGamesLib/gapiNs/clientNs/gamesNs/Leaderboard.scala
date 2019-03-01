@@ -25,3 +25,24 @@ trait Leaderboard extends js.Object {
   var order: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Leaderboard {
+  @scala.inline
+  def apply(
+    iconUrl: java.lang.String = null,
+    id: java.lang.String = null,
+    isIconUrlDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    order: java.lang.String = null
+  ): Leaderboard = {
+    val __obj = js.Dynamic.literal()
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isIconUrlDefault)) __obj.updateDynamic("isIconUrlDefault")(isIconUrlDefault)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (order != null) __obj.updateDynamic("order")(order)
+    __obj.asInstanceOf[Leaderboard]
+  }
+}
+

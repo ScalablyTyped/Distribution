@@ -53,3 +53,44 @@ trait XDeck extends js.Object {
   def setTitle(newTitle: java.lang.String): scala.Unit
 }
 
+object XDeck {
+  @scala.inline
+  def apply(
+    Id: java.lang.String,
+    OrderIndex: scala.Double,
+    Panels: XPanels,
+    Title: java.lang.String,
+    activate: js.Function1[scala.Boolean, scala.Unit],
+    getId: js.Function0[java.lang.String],
+    getOrderIndex: js.Function0[scala.Double],
+    getPanels: js.Function0[XPanels],
+    getTitle: js.Function0[java.lang.String],
+    isActive: js.Function0[scala.Boolean],
+    moveDown: js.Function0[scala.Unit],
+    moveFirst: js.Function0[scala.Unit],
+    moveLast: js.Function0[scala.Unit],
+    moveUp: js.Function0[scala.Unit],
+    setOrderIndex: js.Function1[scala.Double, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit]
+  ): XDeck = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Id")(Id)
+    __obj.updateDynamic("OrderIndex")(OrderIndex)
+    __obj.updateDynamic("Panels")(Panels)
+    __obj.updateDynamic("Title")(Title)
+    __obj.updateDynamic("activate")(activate)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getOrderIndex")(getOrderIndex)
+    __obj.updateDynamic("getPanels")(getPanels)
+    __obj.updateDynamic("getTitle")(getTitle)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("moveDown")(moveDown)
+    __obj.updateDynamic("moveFirst")(moveFirst)
+    __obj.updateDynamic("moveLast")(moveLast)
+    __obj.updateDynamic("moveUp")(moveUp)
+    __obj.updateDynamic("setOrderIndex")(setOrderIndex)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.asInstanceOf[XDeck]
+  }
+}
+

@@ -41,3 +41,12 @@ trait PanResponderStatic extends js.Object {
   def create(config: PanResponderCallbacks): PanResponderInstance
 }
 
+object PanResponderStatic {
+  @scala.inline
+  def apply(create: js.Function1[PanResponderCallbacks, PanResponderInstance]): PanResponderStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.asInstanceOf[PanResponderStatic]
+  }
+}
+

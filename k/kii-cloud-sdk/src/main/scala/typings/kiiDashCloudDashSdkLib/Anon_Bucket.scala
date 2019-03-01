@@ -14,3 +14,21 @@ trait Anon_Bucket extends js.Object {
   ): js.Any
 }
 
+object Anon_Bucket {
+  @scala.inline
+  def apply(
+    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, java.lang.String, js.Any],
+    success: js.Function3[
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket, 
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiQuery, 
+      scala.Double, 
+      js.Any
+    ]
+  ): Anon_Bucket = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failure")(failure)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_Bucket]
+  }
+}
+

@@ -288,3 +288,18 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SwitchActiveProps {
+  @scala.inline
+  def apply(
+    GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLSpanElement] = null,
+    text: java.lang.String = null
+  ): SwitchActiveProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, GeneralPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[SwitchActiveProps]
+  }
+}
+

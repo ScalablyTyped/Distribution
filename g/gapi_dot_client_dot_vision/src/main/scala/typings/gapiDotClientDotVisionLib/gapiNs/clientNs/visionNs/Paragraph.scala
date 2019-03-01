@@ -30,3 +30,14 @@ trait Paragraph extends js.Object {
   var words: js.UndefOr[js.Array[Word]] = js.undefined
 }
 
+object Paragraph {
+  @scala.inline
+  def apply(boundingBox: BoundingPoly = null, property: TextProperty = null, words: js.Array[Word] = null): Paragraph = {
+    val __obj = js.Dynamic.literal()
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox)
+    if (property != null) __obj.updateDynamic("property")(property)
+    if (words != null) __obj.updateDynamic("words")(words)
+    __obj.asInstanceOf[Paragraph]
+  }
+}
+

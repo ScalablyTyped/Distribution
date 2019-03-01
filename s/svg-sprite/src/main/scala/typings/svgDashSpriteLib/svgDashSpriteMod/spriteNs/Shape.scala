@@ -41,3 +41,26 @@ trait Shape extends js.Object {
   ] = js.undefined
 }
 
+object Shape {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    dest: java.lang.String = null,
+    dimension: svgDashSpriteLib.Anon_Attributes = null,
+    id: svgDashSpriteLib.Anon_Generator = null,
+    meta: java.lang.String = null,
+    spacing: svgDashSpriteLib.Anon_Box = null,
+    transform: js.Array[java.lang.String | CustomConfigurationTransform | CustomCallbackTransform] = null
+  ): Shape = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (dest != null) __obj.updateDynamic("dest")(dest)
+    if (dimension != null) __obj.updateDynamic("dimension")(dimension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[Shape]
+  }
+}
+

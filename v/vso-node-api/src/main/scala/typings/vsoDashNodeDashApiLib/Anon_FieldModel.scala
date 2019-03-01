@@ -17,3 +17,30 @@ trait Anon_FieldModel extends js.Object {
   var WorkItemTypeModel: js.Any
 }
 
+object Anon_FieldModel {
+  @scala.inline
+  def apply(
+    FieldModel: js.Any,
+    FieldType: Anon_EnumValuesAnonBooleanDateTimeDoubleGuidHistory,
+    FormLayout: js.Any,
+    GetWorkItemTypeExpand: Anon_EnumValuesAnonBehaviors,
+    Page: js.Any,
+    PageType: Anon_EnumValuesAnonAttachments,
+    WorkItemTypeClass: Anon_EnumValuesAnonCustomDerived,
+    WorkItemTypeFieldModel: js.Any,
+    WorkItemTypeModel: js.Any
+  ): Anon_FieldModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FieldModel")(FieldModel)
+    __obj.updateDynamic("FieldType")(FieldType)
+    __obj.updateDynamic("FormLayout")(FormLayout)
+    __obj.updateDynamic("GetWorkItemTypeExpand")(GetWorkItemTypeExpand)
+    __obj.updateDynamic("Page")(Page)
+    __obj.updateDynamic("PageType")(PageType)
+    __obj.updateDynamic("WorkItemTypeClass")(WorkItemTypeClass)
+    __obj.updateDynamic("WorkItemTypeFieldModel")(WorkItemTypeFieldModel)
+    __obj.updateDynamic("WorkItemTypeModel")(WorkItemTypeModel)
+    __obj.asInstanceOf[Anon_FieldModel]
+  }
+}
+

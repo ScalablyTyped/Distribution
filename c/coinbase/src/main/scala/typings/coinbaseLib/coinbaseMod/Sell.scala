@@ -17,9 +17,17 @@ class Sell () extends Resource {
     */
   var committed: scala.Boolean = js.native
   /**
-    * Fee associated to this sell
+    * ISO timestamp
     */
-  var fee: MoneyHash = js.native
+  var created_at: java.lang.String = js.native
+  /**
+    * Fees associated to this sell
+    */
+  var fees: js.Array[MoneyHash] = js.native
+  /**
+    * Transfer identifier
+    */
+  var id: java.lang.String = js.native
   /**
     * Was this sell executed instantly?
     */
@@ -57,7 +65,15 @@ class Sell () extends Resource {
   /**
     * Associated transaction (e.g. a bank, fiat account)
     */
-  var transaction: ResourceRef = js.native
+  var transaction: ResourceRef | scala.Null = js.native
+  /**
+    * ISO timestamp
+    */
+  var updated_at: java.lang.String = js.native
+  /**
+    * Reference code shown in user's dashboard.
+    */
+  var user_reference: java.lang.String = js.native
   /**
     * Completes a sell that is created in commit: false state.
     * If the exchange rate has changed since the sell was created, this call will fail with the error “The exchange rate updated while you

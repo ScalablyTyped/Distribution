@@ -32,3 +32,37 @@ trait PathFinding extends js.Object {
   def calculateLinkStartEndCoords(matrix: js.Array[js.Array[scala.Double]], path: js.Array[js.Array[scala.Double]]): stormDashReactDashDiagramsLib.Anon_End
 }
 
+object PathFinding {
+  @scala.inline
+  def apply(
+    calculateDirectPath: js.Function2[
+      stormDashReactDashDiagramsLib.Anon_X, 
+      stormDashReactDashDiagramsLib.Anon_X, 
+      js.Array[js.Array[scala.Double]]
+    ],
+    calculateDynamicPath: js.Function5[
+      js.Array[js.Array[scala.Double]], 
+      stormDashReactDashDiagramsLib.Anon_X, 
+      stormDashReactDashDiagramsLib.Anon_X, 
+      js.Array[js.Array[scala.Double]], 
+      js.Array[js.Array[scala.Double]], 
+      js.Any
+    ],
+    calculateLinkStartEndCoords: js.Function2[
+      js.Array[js.Array[scala.Double]], 
+      js.Array[js.Array[scala.Double]], 
+      stormDashReactDashDiagramsLib.Anon_End
+    ],
+    diagramEngine: stormDashReactDashDiagramsLib.distSrcMainMod.DiagramEngine,
+    instance: js.Any
+  ): PathFinding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calculateDirectPath")(calculateDirectPath)
+    __obj.updateDynamic("calculateDynamicPath")(calculateDynamicPath)
+    __obj.updateDynamic("calculateLinkStartEndCoords")(calculateLinkStartEndCoords)
+    __obj.updateDynamic("diagramEngine")(diagramEngine)
+    __obj.updateDynamic("instance")(instance)
+    __obj.asInstanceOf[PathFinding]
+  }
+}
+

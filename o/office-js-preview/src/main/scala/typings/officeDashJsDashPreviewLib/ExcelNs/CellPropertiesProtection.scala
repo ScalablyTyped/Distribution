@@ -17,3 +17,16 @@ trait CellPropertiesProtection extends js.Object {
   var locked: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CellPropertiesProtection {
+  @scala.inline
+  def apply(
+    formulaHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    locked: js.UndefOr[scala.Boolean] = js.undefined
+  ): CellPropertiesProtection = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(formulaHidden)) __obj.updateDynamic("formulaHidden")(formulaHidden)
+    if (!js.isUndefined(locked)) __obj.updateDynamic("locked")(locked)
+    __obj.asInstanceOf[CellPropertiesProtection]
+  }
+}
+

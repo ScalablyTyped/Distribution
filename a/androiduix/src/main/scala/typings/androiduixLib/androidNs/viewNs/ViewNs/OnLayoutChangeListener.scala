@@ -19,3 +19,25 @@ trait OnLayoutChangeListener extends js.Object {
   ): scala.Unit
 }
 
+object OnLayoutChangeListener {
+  @scala.inline
+  def apply(
+    onLayoutChange: js.Function9[
+      androiduixLib.androidNs.viewNs.View, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Unit
+    ]
+  ): OnLayoutChangeListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onLayoutChange")(onLayoutChange)
+    __obj.asInstanceOf[OnLayoutChangeListener]
+  }
+}
+

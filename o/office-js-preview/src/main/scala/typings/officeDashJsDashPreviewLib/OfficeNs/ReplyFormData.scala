@@ -24,3 +24,18 @@ trait ReplyFormData extends js.Object {
   var htmlBody: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReplyFormData {
+  @scala.inline
+  def apply(
+    attachments: js.Array[ReplyFormAttachment] = null,
+    callback: js.Function1[/* asyncResult */ AsyncResult[_], scala.Unit] = null,
+    htmlBody: java.lang.String = null
+  ): ReplyFormData = {
+    val __obj = js.Dynamic.literal()
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (htmlBody != null) __obj.updateDynamic("htmlBody")(htmlBody)
+    __obj.asInstanceOf[ReplyFormData]
+  }
+}
+

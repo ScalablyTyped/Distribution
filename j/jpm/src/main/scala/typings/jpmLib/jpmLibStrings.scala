@@ -46,10 +46,12 @@ object jpmLibStrings {
   sealed trait error extends js.Object
   
   @js.native
-  sealed trait existing extends js.Object
+  sealed trait existing
+    extends jpmLib.sdkPageDashModMod.attachmentMode
   
   @js.native
-  sealed trait frame extends js.Object
+  sealed trait frame
+    extends jpmLib.sdkPageDashModMod.attachmentMode
   
   @js.native
   sealed trait hide extends js.Object
@@ -103,7 +105,8 @@ object jpmLibStrings {
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends jpmLib.sdkPageDashModMod.attachmentMode
   
   @js.native
   sealed trait uninitialized extends js.Object

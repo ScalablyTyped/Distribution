@@ -10,3 +10,13 @@ trait Currency extends js.Object {
   var value: java.lang.String
 }
 
+object Currency {
+  @scala.inline
+  def apply(currency: java.lang.String, value: java.lang.String): Currency = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Currency]
+  }
+}
+

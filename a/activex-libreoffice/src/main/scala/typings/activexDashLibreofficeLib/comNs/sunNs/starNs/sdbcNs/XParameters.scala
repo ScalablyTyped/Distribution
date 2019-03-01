@@ -217,3 +217,82 @@ trait XParameters
   def setTimestamp(parameterIndex: scala.Double, x: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime): scala.Unit
 }
 
+object XParameters {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    clearParameters: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setArray: js.Function2[scala.Double, XArray, scala.Unit],
+    setBinaryStream: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Double, 
+      scala.Unit
+    ],
+    setBlob: js.Function2[scala.Double, XBlob, scala.Unit],
+    setBoolean: js.Function2[scala.Double, scala.Boolean, scala.Unit],
+    setByte: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setBytes: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Unit
+    ],
+    setCharacterStream: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      scala.Double, 
+      scala.Unit
+    ],
+    setClob: js.Function2[scala.Double, XClob, scala.Unit],
+    setDate: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Date, scala.Unit],
+    setDouble: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setFloat: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setInt: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setLong: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setNull: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setObject: js.Function2[scala.Double, js.Any, scala.Unit],
+    setObjectNull: js.Function3[scala.Double, scala.Double, java.lang.String, scala.Unit],
+    setObjectWithInfo: js.Function4[scala.Double, js.Any, scala.Double, scala.Double, scala.Unit],
+    setRef: js.Function2[scala.Double, XRef, scala.Unit],
+    setShort: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setString: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    setTime: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Time, scala.Unit],
+    setTimestamp: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.DateTime, 
+      scala.Unit
+    ]
+  ): XParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("clearParameters")(clearParameters)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setArray")(setArray)
+    __obj.updateDynamic("setBinaryStream")(setBinaryStream)
+    __obj.updateDynamic("setBlob")(setBlob)
+    __obj.updateDynamic("setBoolean")(setBoolean)
+    __obj.updateDynamic("setByte")(setByte)
+    __obj.updateDynamic("setBytes")(setBytes)
+    __obj.updateDynamic("setCharacterStream")(setCharacterStream)
+    __obj.updateDynamic("setClob")(setClob)
+    __obj.updateDynamic("setDate")(setDate)
+    __obj.updateDynamic("setDouble")(setDouble)
+    __obj.updateDynamic("setFloat")(setFloat)
+    __obj.updateDynamic("setInt")(setInt)
+    __obj.updateDynamic("setLong")(setLong)
+    __obj.updateDynamic("setNull")(setNull)
+    __obj.updateDynamic("setObject")(setObject)
+    __obj.updateDynamic("setObjectNull")(setObjectNull)
+    __obj.updateDynamic("setObjectWithInfo")(setObjectWithInfo)
+    __obj.updateDynamic("setRef")(setRef)
+    __obj.updateDynamic("setShort")(setShort)
+    __obj.updateDynamic("setString")(setString)
+    __obj.updateDynamic("setTime")(setTime)
+    __obj.updateDynamic("setTimestamp")(setTimestamp)
+    __obj.asInstanceOf[XParameters]
+  }
+}
+

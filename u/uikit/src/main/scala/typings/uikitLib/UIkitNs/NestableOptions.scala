@@ -121,3 +121,44 @@ trait NestableOptions extends js.Object {
   var threshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NestableOptions {
+  @scala.inline
+  def apply(
+    collapsedClass: java.lang.String = null,
+    dragClass: java.lang.String = null,
+    emptyClass: java.lang.String = null,
+    group: java.lang.String = null,
+    handleClass: java.lang.String = null,
+    itemClass: java.lang.String = null,
+    itemNodeName: java.lang.String = null,
+    listBaseClass: java.lang.String = null,
+    listClass: java.lang.String = null,
+    listNodeName: java.lang.String = null,
+    listitemClass: java.lang.String = null,
+    maxDepth: scala.Int | scala.Double = null,
+    movingClass: java.lang.String = null,
+    noDragClass: java.lang.String = null,
+    placeClass: java.lang.String = null,
+    threshold: scala.Int | scala.Double = null
+  ): NestableOptions = {
+    val __obj = js.Dynamic.literal()
+    if (collapsedClass != null) __obj.updateDynamic("collapsedClass")(collapsedClass)
+    if (dragClass != null) __obj.updateDynamic("dragClass")(dragClass)
+    if (emptyClass != null) __obj.updateDynamic("emptyClass")(emptyClass)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (handleClass != null) __obj.updateDynamic("handleClass")(handleClass)
+    if (itemClass != null) __obj.updateDynamic("itemClass")(itemClass)
+    if (itemNodeName != null) __obj.updateDynamic("itemNodeName")(itemNodeName)
+    if (listBaseClass != null) __obj.updateDynamic("listBaseClass")(listBaseClass)
+    if (listClass != null) __obj.updateDynamic("listClass")(listClass)
+    if (listNodeName != null) __obj.updateDynamic("listNodeName")(listNodeName)
+    if (listitemClass != null) __obj.updateDynamic("listitemClass")(listitemClass)
+    if (maxDepth != null) __obj.updateDynamic("maxDepth")(maxDepth.asInstanceOf[js.Any])
+    if (movingClass != null) __obj.updateDynamic("movingClass")(movingClass)
+    if (noDragClass != null) __obj.updateDynamic("noDragClass")(noDragClass)
+    if (placeClass != null) __obj.updateDynamic("placeClass")(placeClass)
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NestableOptions]
+  }
+}
+

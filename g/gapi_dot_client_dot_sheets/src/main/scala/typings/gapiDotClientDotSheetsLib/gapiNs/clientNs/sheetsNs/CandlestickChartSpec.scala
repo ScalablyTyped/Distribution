@@ -19,3 +19,13 @@ trait CandlestickChartSpec extends js.Object {
   var domain: js.UndefOr[CandlestickDomain] = js.undefined
 }
 
+object CandlestickChartSpec {
+  @scala.inline
+  def apply(data: js.Array[CandlestickData] = null, domain: CandlestickDomain = null): CandlestickChartSpec = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    __obj.asInstanceOf[CandlestickChartSpec]
+  }
+}
+

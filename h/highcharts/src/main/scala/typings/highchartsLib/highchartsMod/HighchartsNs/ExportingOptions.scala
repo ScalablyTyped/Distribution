@@ -121,3 +121,44 @@ trait ExportingOptions extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ExportingOptions {
+  @scala.inline
+  def apply(
+    allowHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    buttons: highchartsLib.Anon_ContextButton = null,
+    chartOptions: Options = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    error: js.Function = null,
+    fallbackToExportServer: js.UndefOr[scala.Boolean] = js.undefined,
+    filename: java.lang.String = null,
+    formAttributes: js.Any = null,
+    libUrl: java.lang.String = null,
+    printMaxWidth: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null,
+    sourceHeight: scala.Int | scala.Double = null,
+    sourceWidth: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    url: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ExportingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowHTML)) __obj.updateDynamic("allowHTML")(allowHTML)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (chartOptions != null) __obj.updateDynamic("chartOptions")(chartOptions)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(fallbackToExportServer)) __obj.updateDynamic("fallbackToExportServer")(fallbackToExportServer)
+    if (filename != null) __obj.updateDynamic("filename")(filename)
+    if (formAttributes != null) __obj.updateDynamic("formAttributes")(formAttributes)
+    if (libUrl != null) __obj.updateDynamic("libUrl")(libUrl)
+    if (printMaxWidth != null) __obj.updateDynamic("printMaxWidth")(printMaxWidth.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (sourceHeight != null) __obj.updateDynamic("sourceHeight")(sourceHeight.asInstanceOf[js.Any])
+    if (sourceWidth != null) __obj.updateDynamic("sourceWidth")(sourceWidth.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExportingOptions]
+  }
+}
+

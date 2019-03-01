@@ -10,3 +10,12 @@ trait ojSwitcherSettableProperties
   var value: java.lang.String
 }
 
+object ojSwitcherSettableProperties {
+  @scala.inline
+  def apply(value: java.lang.String): ojSwitcherSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ojSwitcherSettableProperties]
+  }
+}
+

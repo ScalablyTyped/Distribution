@@ -13,3 +13,22 @@ trait ICacheObject extends js.Object {
   def set(key: js.Any, selectorFn: js.Any): scala.Unit
 }
 
+object ICacheObject {
+  @scala.inline
+  def apply(
+    clear: js.Function0[scala.Unit],
+    get: js.Function1[js.Any, js.Any],
+    remove: js.Function1[js.Any, scala.Unit],
+    set: js.Function2[js.Any, js.Any, scala.Unit],
+    isValidCacheKey: js.Function1[/* key */ js.Any, scala.Boolean] = null
+  ): ICacheObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("set")(set)
+    if (isValidCacheKey != null) __obj.updateDynamic("isValidCacheKey")(isValidCacheKey)
+    __obj.asInstanceOf[ICacheObject]
+  }
+}
+

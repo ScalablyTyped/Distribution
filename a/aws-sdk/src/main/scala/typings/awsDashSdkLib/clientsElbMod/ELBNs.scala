@@ -1689,6 +1689,8 @@ object ELBNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[DescribeEndPointStateOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccessLogEnabled = scala.Boolean
   type AccessLogInterval = scala.Double
@@ -1766,6 +1768,6 @@ object ELBNs extends js.Object {
   type TagValue = java.lang.String
   type UnhealthyThreshold = scala.Double
   type VPCId = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2012-06-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

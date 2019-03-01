@@ -17,3 +17,18 @@ trait Options extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    subDomain: java.lang.String = null,
+    `type`: java.lang.String = null,
+    version: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (subDomain != null) __obj.updateDynamic("subDomain")(subDomain)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Options]
+  }
+}
+

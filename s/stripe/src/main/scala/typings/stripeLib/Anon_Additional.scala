@@ -10,3 +10,13 @@ trait Anon_Additional extends js.Object {
   var minimum: js.Array[java.lang.String]
 }
 
+object Anon_Additional {
+  @scala.inline
+  def apply(additional: js.Array[java.lang.String], minimum: js.Array[java.lang.String]): Anon_Additional = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("additional")(additional)
+    __obj.updateDynamic("minimum")(minimum)
+    __obj.asInstanceOf[Anon_Additional]
+  }
+}
+

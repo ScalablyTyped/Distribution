@@ -435,3 +435,94 @@ trait EChartOption[TSeries] extends js.Object {
   ] = js.undefined
 }
 
+object EChartOption {
+  @scala.inline
+  def apply[TSeries](
+    angleAxis: js.Object = null,
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: scala.Double | js.Function = null,
+    animationDelayUpdate: scala.Double | js.Function = null,
+    animationDuration: scala.Int | scala.Double = null,
+    animationDurationUpdate: scala.Double | js.Function = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    aria: js.Object = null,
+    axisPointer: echartsLib.echartsNs.EChartOptionNs.AxisPointer = null,
+    backgroundColor: java.lang.String = null,
+    blendMode: java.lang.String = null,
+    brush: js.Object = null,
+    calendar: js.Object = null,
+    color: js.Array[java.lang.String] = null,
+    dataZoom: js.Array[echartsLib.echartsNs.EChartOptionNs.DataZoom] = null,
+    dataset: js.Object = null,
+    geo: js.Object = null,
+    graphic: js.Object | js.Array[js.Object] = null,
+    grid: js.Object = null,
+    hoverLayerThreshold: scala.Int | scala.Double = null,
+    legend: js.Object = null,
+    parallel: js.Object = null,
+    parallelAxis: js.Object = null,
+    polar: js.Object = null,
+    progressive: scala.Int | scala.Double = null,
+    progressiveThreshold: scala.Int | scala.Double = null,
+    radar: js.Object = null,
+    radiusAxis: js.Object = null,
+    series: js.Array[TSeries] = null,
+    singleAxis: js.Object = null,
+    textStyle: echartsLib.echartsNs.EChartOptionNs.TextStyle = null,
+    timeline: js.Object = null,
+    title: EChartTitleOption | js.Array[EChartTitleOption] = null,
+    toolbox: js.Object = null,
+    tooltip: echartsLib.echartsNs.EChartOptionNs.Tooltip = null,
+    useUTC: js.UndefOr[scala.Boolean] = js.undefined,
+    visualMap: js.Array[js.Object] = null,
+    xAxis: echartsLib.echartsNs.EChartOptionNs.XAxis | js.Array[echartsLib.echartsNs.EChartOptionNs.XAxis] = null,
+    yAxis: echartsLib.echartsNs.EChartOptionNs.YAxis | js.Array[echartsLib.echartsNs.EChartOptionNs.YAxis] = null
+  ): EChartOption[TSeries] = {
+    val __obj = js.Dynamic.literal()
+    if (angleAxis != null) __obj.updateDynamic("angleAxis")(angleAxis)
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (aria != null) __obj.updateDynamic("aria")(aria)
+    if (axisPointer != null) __obj.updateDynamic("axisPointer")(axisPointer)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (blendMode != null) __obj.updateDynamic("blendMode")(blendMode)
+    if (brush != null) __obj.updateDynamic("brush")(brush)
+    if (calendar != null) __obj.updateDynamic("calendar")(calendar)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (dataZoom != null) __obj.updateDynamic("dataZoom")(dataZoom)
+    if (dataset != null) __obj.updateDynamic("dataset")(dataset)
+    if (geo != null) __obj.updateDynamic("geo")(geo)
+    if (graphic != null) __obj.updateDynamic("graphic")(graphic.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (hoverLayerThreshold != null) __obj.updateDynamic("hoverLayerThreshold")(hoverLayerThreshold.asInstanceOf[js.Any])
+    if (legend != null) __obj.updateDynamic("legend")(legend)
+    if (parallel != null) __obj.updateDynamic("parallel")(parallel)
+    if (parallelAxis != null) __obj.updateDynamic("parallelAxis")(parallelAxis)
+    if (polar != null) __obj.updateDynamic("polar")(polar)
+    if (progressive != null) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
+    if (progressiveThreshold != null) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.asInstanceOf[js.Any])
+    if (radar != null) __obj.updateDynamic("radar")(radar)
+    if (radiusAxis != null) __obj.updateDynamic("radiusAxis")(radiusAxis)
+    if (series != null) __obj.updateDynamic("series")(series)
+    if (singleAxis != null) __obj.updateDynamic("singleAxis")(singleAxis)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    if (timeline != null) __obj.updateDynamic("timeline")(timeline)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (toolbox != null) __obj.updateDynamic("toolbox")(toolbox)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (!js.isUndefined(useUTC)) __obj.updateDynamic("useUTC")(useUTC)
+    if (visualMap != null) __obj.updateDynamic("visualMap")(visualMap)
+    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
+    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EChartOption[TSeries]]
+  }
+}
+

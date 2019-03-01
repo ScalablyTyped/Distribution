@@ -19,3 +19,22 @@ trait OpenDocumentOptions
   ] = js.undefined
 }
 
+object OpenDocumentOptions {
+  @scala.inline
+  def apply(
+    filePath: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    fileType: baiduDashAppLib.baiduDashAppLibStrings.doc | baiduDashAppLib.baiduDashAppLibStrings.xls | baiduDashAppLib.baiduDashAppLibStrings.ppt | baiduDashAppLib.baiduDashAppLibStrings.pdf | baiduDashAppLib.baiduDashAppLibStrings.docx | baiduDashAppLib.baiduDashAppLibStrings.xlsx | baiduDashAppLib.baiduDashAppLibStrings.pptx = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): OpenDocumentOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filePath")(filePath)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (fileType != null) __obj.updateDynamic("fileType")(fileType.asInstanceOf[js.Any])
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[OpenDocumentOptions]
+  }
+}
+

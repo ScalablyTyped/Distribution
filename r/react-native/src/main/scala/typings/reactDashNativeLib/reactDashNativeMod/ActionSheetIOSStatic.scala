@@ -37,3 +37,25 @@ trait ActionSheetIOSStatic extends js.Object {
   ): scala.Unit
 }
 
+object ActionSheetIOSStatic {
+  @scala.inline
+  def apply(
+    showActionSheetWithOptions: js.Function2[
+      ActionSheetIOSOptions, 
+      js.Function1[/* buttonIndex */ scala.Double, scala.Unit], 
+      scala.Unit
+    ],
+    showShareActionSheetWithOptions: js.Function3[
+      ShareActionSheetIOSOptions, 
+      js.Function1[/* error */ stdLib.Error, scala.Unit], 
+      js.Function2[/* success */ scala.Boolean, /* method */ java.lang.String, scala.Unit], 
+      scala.Unit
+    ]
+  ): ActionSheetIOSStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("showActionSheetWithOptions")(showActionSheetWithOptions)
+    __obj.updateDynamic("showShareActionSheetWithOptions")(showShareActionSheetWithOptions)
+    __obj.asInstanceOf[ActionSheetIOSStatic]
+  }
+}
+

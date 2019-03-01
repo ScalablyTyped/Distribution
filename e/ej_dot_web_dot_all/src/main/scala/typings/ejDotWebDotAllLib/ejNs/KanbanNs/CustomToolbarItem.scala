@@ -12,3 +12,12 @@ trait CustomToolbarItem extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomToolbarItem {
+  @scala.inline
+  def apply(template: java.lang.String = null): CustomToolbarItem = {
+    val __obj = js.Dynamic.literal()
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[CustomToolbarItem]
+  }
+}
+

@@ -14,3 +14,24 @@ trait Config extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    entity: js.Any = null,
+    headers: js.Any = null,
+    method: java.lang.String = null,
+    mixin: js.Any = null,
+    params: js.Any = null,
+    path: java.lang.String = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (entity != null) __obj.updateDynamic("entity")(entity)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (mixin != null) __obj.updateDynamic("mixin")(mixin)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Config]
+  }
+}
+

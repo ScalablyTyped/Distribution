@@ -121,3 +121,73 @@ trait SelectListProps
   var valueField: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SelectListProps {
+  @scala.inline
+  def apply(
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    busy: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    data: js.Array[_] = null,
+    defaultValue: js.Any | js.Array[_] = null,
+    delay: scala.Int | scala.Double = null,
+    disabled: scala.Boolean | js.Array[_] = null,
+    groupBy: java.lang.String | (js.Function1[/* dataItem */ js.Any, _]) = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    id: java.lang.String = null,
+    isRtl: js.UndefOr[scala.Boolean] = js.undefined,
+    itemComponent: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    listComponent: reactLib.reactMod.ReactNs.ReactType[_] | java.lang.String = null,
+    listProps: js.Object = null,
+    messages: SelectListMessages = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    onChange: js.Function1[/* values */ js.Any | js.Array[_], scala.Unit] = null,
+    onKeyDown: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
+    onKeyPress: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
+    onMove: js.Function3[
+      /* list */ reactLib.HTMLElement, 
+      /* focusedNode */ reactLib.HTMLElement, 
+      /* focusedItem */ js.Any, 
+      scala.Unit
+    ] = null,
+    readOnly: scala.Boolean | js.Array[_] = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[SelectListClass] = null,
+    tabIndex: scala.Int | scala.Double = null,
+    textField: java.lang.String | (js.Function1[/* dataItem */ js.Any, java.lang.String]) = null,
+    value: js.Any | js.Array[_] = null,
+    valueField: java.lang.String = null
+  ): SelectListProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(busy)) __obj.updateDynamic("busy")(busy)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (groupBy != null) __obj.updateDynamic("groupBy")(groupBy.asInstanceOf[js.Any])
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl)
+    if (itemComponent != null) __obj.updateDynamic("itemComponent")(itemComponent.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (listComponent != null) __obj.updateDynamic("listComponent")(listComponent.asInstanceOf[js.Any])
+    if (listProps != null) __obj.updateDynamic("listProps")(listProps)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (onMove != null) __obj.updateDynamic("onMove")(onMove)
+    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (textField != null) __obj.updateDynamic("textField")(textField.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueField != null) __obj.updateDynamic("valueField")(valueField)
+    __obj.asInstanceOf[SelectListProps]
+  }
+}
+

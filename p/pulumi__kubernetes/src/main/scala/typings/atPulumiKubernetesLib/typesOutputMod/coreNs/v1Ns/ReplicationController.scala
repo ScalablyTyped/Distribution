@@ -42,3 +42,22 @@ trait ReplicationController extends js.Object {
   val status: ReplicationControllerStatus
 }
 
+object ReplicationController {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicationController,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: ReplicationControllerSpec,
+    status: ReplicationControllerStatus
+  ): ReplicationController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[ReplicationController]
+  }
+}
+

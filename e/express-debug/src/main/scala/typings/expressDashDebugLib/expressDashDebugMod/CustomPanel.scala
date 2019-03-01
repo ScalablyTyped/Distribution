@@ -18,3 +18,30 @@ trait CustomPanel extends js.Object {
   def process(locals: js.Any): js.Any
 }
 
+object CustomPanel {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    process: js.Function1[js.Any, js.Any],
+    template: java.lang.String,
+    finalize: js.Function1[/* req */ expressLib.expressMod.eNs.Request, scala.Unit] = null,
+    initialize: js.Function1[/* req */ expressLib.expressMod.eNs.Request, scala.Unit] = null,
+    options: js.Any = null,
+    post_render: js.Function1[/* req */ expressLib.expressMod.eNs.Request, scala.Unit] = null,
+    pre_render: js.Function1[/* req */ expressLib.expressMod.eNs.Request, scala.Unit] = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined
+  ): CustomPanel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("process")(process)
+    __obj.updateDynamic("template")(template)
+    if (finalize != null) __obj.updateDynamic("finalize")(finalize)
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (post_render != null) __obj.updateDynamic("post_render")(post_render)
+    if (pre_render != null) __obj.updateDynamic("pre_render")(pre_render)
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    __obj.asInstanceOf[CustomPanel]
+  }
+}
+

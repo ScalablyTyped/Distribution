@@ -22,3 +22,26 @@ trait SendingDomain extends js.Object {
   var tracking_domain: java.lang.String
 }
 
+object SendingDomain {
+  @scala.inline
+  def apply(
+    domain: java.lang.String,
+    shared_with_subaccounts: scala.Boolean,
+    status: Status,
+    tracking_domain: java.lang.String,
+    dkim: DKIM = null,
+    dkim_key_length: scala.Int | scala.Double = null,
+    generate_dkim: js.UndefOr[scala.Boolean] = js.undefined
+  ): SendingDomain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("shared_with_subaccounts")(shared_with_subaccounts)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("tracking_domain")(tracking_domain)
+    if (dkim != null) __obj.updateDynamic("dkim")(dkim)
+    if (dkim_key_length != null) __obj.updateDynamic("dkim_key_length")(dkim_key_length.asInstanceOf[js.Any])
+    if (!js.isUndefined(generate_dkim)) __obj.updateDynamic("generate_dkim")(generate_dkim)
+    __obj.asInstanceOf[SendingDomain]
+  }
+}
+

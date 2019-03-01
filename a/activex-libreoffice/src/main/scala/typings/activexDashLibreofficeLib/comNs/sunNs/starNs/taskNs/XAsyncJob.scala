@@ -28,3 +28,24 @@ trait XAsyncJob
   ): scala.Unit
 }
 
+object XAsyncJob {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    executeAsync: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue], 
+      XJobListener, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAsyncJob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("executeAsync")(executeAsync)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAsyncJob]
+  }
+}
+

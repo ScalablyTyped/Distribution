@@ -75,3 +75,38 @@ trait IgLinearGaugeMethods extends js.Object {
   def updateRange(value: js.Object): scala.Unit
 }
 
+object IgLinearGaugeMethods {
+  @scala.inline
+  def apply(
+    addRange: js.Function1[js.Object, scala.Unit],
+    changeGlobalLanguage: js.Function0[scala.Unit],
+    changeGlobalRegional: js.Function0[scala.Unit],
+    changeLocale: js.Function1[js.Object, scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    exportVisualData: js.Function0[js.Object],
+    flush: js.Function0[scala.Unit],
+    getRangeNames: js.Function0[java.lang.String],
+    getValueForPoint: js.Function2[js.Object, js.Object, scala.Double],
+    needleContainsPoint: js.Function2[scala.Double, scala.Double, scala.Unit],
+    removeRange: js.Function1[js.Object, scala.Unit],
+    styleUpdated: js.Function0[scala.Unit],
+    updateRange: js.Function1[js.Object, scala.Unit]
+  ): IgLinearGaugeMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addRange")(addRange)
+    __obj.updateDynamic("changeGlobalLanguage")(changeGlobalLanguage)
+    __obj.updateDynamic("changeGlobalRegional")(changeGlobalRegional)
+    __obj.updateDynamic("changeLocale")(changeLocale)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("exportVisualData")(exportVisualData)
+    __obj.updateDynamic("flush")(flush)
+    __obj.updateDynamic("getRangeNames")(getRangeNames)
+    __obj.updateDynamic("getValueForPoint")(getValueForPoint)
+    __obj.updateDynamic("needleContainsPoint")(needleContainsPoint)
+    __obj.updateDynamic("removeRange")(removeRange)
+    __obj.updateDynamic("styleUpdated")(styleUpdated)
+    __obj.updateDynamic("updateRange")(updateRange)
+    __obj.asInstanceOf[IgLinearGaugeMethods]
+  }
+}
+

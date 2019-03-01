@@ -59,3 +59,35 @@ trait IBankAccountHash
   var status: stripeLib.stripeLibStrings.`new` | stripeLib.stripeLibStrings.validated | stripeLib.stripeLibStrings.verified | stripeLib.stripeLibStrings.verification_failed | stripeLib.stripeLibStrings.errored
 }
 
+object IBankAccountHash {
+  @scala.inline
+  def apply(
+    bank_name: java.lang.String,
+    country: java.lang.String,
+    currency: java.lang.String,
+    fingerprint: java.lang.String,
+    id: java.lang.String,
+    last4: java.lang.String,
+    `object`: stripeLib.stripeLibStrings.bank_account,
+    routing_number: java.lang.String,
+    status: stripeLib.stripeLibStrings.`new` | stripeLib.stripeLibStrings.validated | stripeLib.stripeLibStrings.verified | stripeLib.stripeLibStrings.verification_failed | stripeLib.stripeLibStrings.errored,
+    account_holder_name: java.lang.String = null,
+    account_holder_type: stripeLib.stripeLibStrings.individual | stripeLib.stripeLibStrings.company = null,
+    customer: java.lang.String = null
+  ): IBankAccountHash = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("bank_name")(bank_name)
+    __obj.updateDynamic("country")(country)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("fingerprint")(fingerprint)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("last4")(last4)
+    __obj.updateDynamic("routing_number")(routing_number)
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name)
+    if (account_holder_type != null) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer)
+    __obj.asInstanceOf[IBankAccountHash]
+  }
+}
+

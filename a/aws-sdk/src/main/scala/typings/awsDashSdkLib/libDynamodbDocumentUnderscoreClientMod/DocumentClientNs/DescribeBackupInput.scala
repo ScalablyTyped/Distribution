@@ -12,3 +12,12 @@ trait DescribeBackupInput extends js.Object {
   var BackupArn: BackupArn
 }
 
+object DescribeBackupInput {
+  @scala.inline
+  def apply(BackupArn: BackupArn): DescribeBackupInput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BackupArn")(BackupArn)
+    __obj.asInstanceOf[DescribeBackupInput]
+  }
+}
+

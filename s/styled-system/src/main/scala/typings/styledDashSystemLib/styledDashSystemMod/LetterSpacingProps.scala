@@ -14,3 +14,12 @@ trait LetterSpacingProps[TLength] extends js.Object {
   var letterSpacing: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.LetterSpacingProperty[TLength]]] = js.undefined
 }
 
+object LetterSpacingProps {
+  @scala.inline
+  def apply[TLength](letterSpacing: ResponsiveValue[csstypeLib.csstypeMod.LetterSpacingProperty[TLength]] = null): LetterSpacingProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LetterSpacingProps[TLength]]
+  }
+}
+

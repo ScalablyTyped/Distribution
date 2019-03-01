@@ -15,3 +15,24 @@ trait Anon_CommentsLocParameters extends js.Object {
   var typeParameters: js.UndefOr[astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind | scala.Null] = js.undefined
 }
 
+object Anon_CommentsLocParameters {
+  @scala.inline
+  def apply(
+    parameters: js.Array[
+      astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.RestElementKind | astDashTypesLib.genKindsMod.ObjectPatternKind
+    ],
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeAnnotationKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterDeclarationKind = null
+  ): Anon_CommentsLocParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parameters")(parameters)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[Anon_CommentsLocParameters]
+  }
+}
+

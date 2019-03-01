@@ -29,3 +29,24 @@ trait CallSet extends js.Object {
   var variantSetIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object CallSet {
+  @scala.inline
+  def apply(
+    created: java.lang.String = null,
+    id: java.lang.String = null,
+    info: stdLib.Record[java.lang.String, js.Array[_]] = null,
+    name: java.lang.String = null,
+    sampleId: java.lang.String = null,
+    variantSetIds: js.Array[java.lang.String] = null
+  ): CallSet = {
+    val __obj = js.Dynamic.literal()
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (sampleId != null) __obj.updateDynamic("sampleId")(sampleId)
+    if (variantSetIds != null) __obj.updateDynamic("variantSetIds")(variantSetIds)
+    __obj.asInstanceOf[CallSet]
+  }
+}
+

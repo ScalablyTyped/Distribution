@@ -107,3 +107,40 @@ trait RangeLoadOptions extends js.Object {
   var text: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RangeLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    font: FontLoadOptions = null,
+    hyperlink: js.UndefOr[scala.Boolean] = js.undefined,
+    isEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    parentBody: BodyLoadOptions = null,
+    parentContentControl: ContentControlLoadOptions = null,
+    parentContentControlOrNullObject: ContentControlLoadOptions = null,
+    parentTable: TableLoadOptions = null,
+    parentTableCell: TableCellLoadOptions = null,
+    parentTableCellOrNullObject: TableCellLoadOptions = null,
+    parentTableOrNullObject: TableLoadOptions = null,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    styleBuiltIn: js.UndefOr[scala.Boolean] = js.undefined,
+    text: js.UndefOr[scala.Boolean] = js.undefined
+  ): RangeLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (!js.isUndefined(isEmpty)) __obj.updateDynamic("isEmpty")(isEmpty)
+    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
+    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
+    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(styleBuiltIn)) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[RangeLoadOptions]
+  }
+}
+

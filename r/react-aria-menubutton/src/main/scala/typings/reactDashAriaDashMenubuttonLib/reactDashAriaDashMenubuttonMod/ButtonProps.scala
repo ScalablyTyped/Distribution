@@ -20,3 +20,18 @@ trait ButtonProps[T /* <: reactLib.HTMLElement */]
   ] = js.undefined
 }
 
+object ButtonProps {
+  @scala.inline
+  def apply[T /* <: reactLib.HTMLElement */](
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[T] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    tag: /* import warning: ImportType.apply Failed type conversion: T['tagName'] */ js.Any = null
+  ): ButtonProps[T] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[ButtonProps[T]]
+  }
+}
+

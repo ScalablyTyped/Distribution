@@ -98,3 +98,51 @@ trait IgGridPagingLocale
   var prevPageTooltip: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridPagingLocale {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridPagingLocale
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    currentPageDropDownLeadingLabel: java.lang.String = null,
+    currentPageDropDownTooltip: java.lang.String = null,
+    currentPageDropDownTrailingLabel: java.lang.String = null,
+    firstPageLabelText: java.lang.String = null,
+    firstPageTooltip: java.lang.String = null,
+    lastPageLabelText: java.lang.String = null,
+    lastPageTooltip: java.lang.String = null,
+    nextPageLabelText: java.lang.String = null,
+    nextPageTooltip: java.lang.String = null,
+    pageSizeDropDownLabel: java.lang.String = null,
+    pageSizeDropDownTooltip: java.lang.String = null,
+    pageSizeDropDownTrailingLabel: java.lang.String = null,
+    pageTooltipFormat: java.lang.String = null,
+    pagerRecordsLabelTemplate: java.lang.String = null,
+    pagerRecordsLabelTooltip: java.lang.String = null,
+    prevPageLabelText: java.lang.String = null,
+    prevPageTooltip: java.lang.String = null
+  ): IgGridPagingLocale = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (currentPageDropDownLeadingLabel != null) __obj.updateDynamic("currentPageDropDownLeadingLabel")(currentPageDropDownLeadingLabel)
+    if (currentPageDropDownTooltip != null) __obj.updateDynamic("currentPageDropDownTooltip")(currentPageDropDownTooltip)
+    if (currentPageDropDownTrailingLabel != null) __obj.updateDynamic("currentPageDropDownTrailingLabel")(currentPageDropDownTrailingLabel)
+    if (firstPageLabelText != null) __obj.updateDynamic("firstPageLabelText")(firstPageLabelText)
+    if (firstPageTooltip != null) __obj.updateDynamic("firstPageTooltip")(firstPageTooltip)
+    if (lastPageLabelText != null) __obj.updateDynamic("lastPageLabelText")(lastPageLabelText)
+    if (lastPageTooltip != null) __obj.updateDynamic("lastPageTooltip")(lastPageTooltip)
+    if (nextPageLabelText != null) __obj.updateDynamic("nextPageLabelText")(nextPageLabelText)
+    if (nextPageTooltip != null) __obj.updateDynamic("nextPageTooltip")(nextPageTooltip)
+    if (pageSizeDropDownLabel != null) __obj.updateDynamic("pageSizeDropDownLabel")(pageSizeDropDownLabel)
+    if (pageSizeDropDownTooltip != null) __obj.updateDynamic("pageSizeDropDownTooltip")(pageSizeDropDownTooltip)
+    if (pageSizeDropDownTrailingLabel != null) __obj.updateDynamic("pageSizeDropDownTrailingLabel")(pageSizeDropDownTrailingLabel)
+    if (pageTooltipFormat != null) __obj.updateDynamic("pageTooltipFormat")(pageTooltipFormat)
+    if (pagerRecordsLabelTemplate != null) __obj.updateDynamic("pagerRecordsLabelTemplate")(pagerRecordsLabelTemplate)
+    if (pagerRecordsLabelTooltip != null) __obj.updateDynamic("pagerRecordsLabelTooltip")(pagerRecordsLabelTooltip)
+    if (prevPageLabelText != null) __obj.updateDynamic("prevPageLabelText")(prevPageLabelText)
+    if (prevPageTooltip != null) __obj.updateDynamic("prevPageTooltip")(prevPageTooltip)
+    __obj.asInstanceOf[IgGridPagingLocale]
+  }
+}
+

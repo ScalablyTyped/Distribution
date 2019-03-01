@@ -12,3 +12,13 @@ trait Anon_Distance extends js.Object {
   var threshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Distance {
+  @scala.inline
+  def apply(distance: scala.Int | scala.Double = null, threshold: scala.Int | scala.Double = null): Anon_Distance = {
+    val __obj = js.Dynamic.literal()
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (threshold != null) __obj.updateDynamic("threshold")(threshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Distance]
+  }
+}
+

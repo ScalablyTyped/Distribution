@@ -16,3 +16,13 @@ trait IReplaceOptions extends js.Object {
   var indexAction: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IReplaceOptions {
+  @scala.inline
+  def apply(etag: java.lang.String = null, indexAction: java.lang.String = null): IReplaceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (indexAction != null) __obj.updateDynamic("indexAction")(indexAction)
+    __obj.asInstanceOf[IReplaceOptions]
+  }
+}
+

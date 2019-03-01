@@ -22,3 +22,26 @@ trait OperationMetadataV1 extends js.Object {
   var warning: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object OperationMetadataV1 {
+  @scala.inline
+  def apply(
+    endTime: java.lang.String = null,
+    ephemeralMessage: java.lang.String = null,
+    insertTime: java.lang.String = null,
+    method: java.lang.String = null,
+    target: java.lang.String = null,
+    user: java.lang.String = null,
+    warning: js.Array[java.lang.String] = null
+  ): OperationMetadataV1 = {
+    val __obj = js.Dynamic.literal()
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (ephemeralMessage != null) __obj.updateDynamic("ephemeralMessage")(ephemeralMessage)
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (user != null) __obj.updateDynamic("user")(user)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[OperationMetadataV1]
+  }
+}
+

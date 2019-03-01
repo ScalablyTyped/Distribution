@@ -56,3 +56,36 @@ trait GetReplicationGroupResult extends js.Object {
   val snapshotWindow: java.lang.String
 }
 
+object GetReplicationGroupResult {
+  @scala.inline
+  def apply(
+    authTokenEnabled: scala.Boolean,
+    automaticFailoverEnabled: scala.Boolean,
+    configurationEndpointAddress: java.lang.String,
+    id: java.lang.String,
+    memberClusters: js.Array[java.lang.String],
+    nodeType: java.lang.String,
+    numberCacheClusters: scala.Double,
+    port: scala.Double,
+    primaryEndpointAddress: java.lang.String,
+    replicationGroupDescription: java.lang.String,
+    snapshotRetentionLimit: scala.Double,
+    snapshotWindow: java.lang.String
+  ): GetReplicationGroupResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authTokenEnabled")(authTokenEnabled)
+    __obj.updateDynamic("automaticFailoverEnabled")(automaticFailoverEnabled)
+    __obj.updateDynamic("configurationEndpointAddress")(configurationEndpointAddress)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("memberClusters")(memberClusters)
+    __obj.updateDynamic("nodeType")(nodeType)
+    __obj.updateDynamic("numberCacheClusters")(numberCacheClusters)
+    __obj.updateDynamic("port")(port)
+    __obj.updateDynamic("primaryEndpointAddress")(primaryEndpointAddress)
+    __obj.updateDynamic("replicationGroupDescription")(replicationGroupDescription)
+    __obj.updateDynamic("snapshotRetentionLimit")(snapshotRetentionLimit)
+    __obj.updateDynamic("snapshotWindow")(snapshotWindow)
+    __obj.asInstanceOf[GetReplicationGroupResult]
+  }
+}
+

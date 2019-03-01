@@ -14,3 +14,24 @@ trait ProjectActivityMetrics extends js.Object {
   var pullRequestsCreatedCount: scala.Double
 }
 
+object ProjectActivityMetrics {
+  @scala.inline
+  def apply(
+    authorsCount: scala.Double,
+    codeChangesCount: scala.Double,
+    codeChangesTrend: js.Array[CodeChangeTrendItem],
+    projectId: java.lang.String,
+    pullRequestsCompletedCount: scala.Double,
+    pullRequestsCreatedCount: scala.Double
+  ): ProjectActivityMetrics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorsCount")(authorsCount)
+    __obj.updateDynamic("codeChangesCount")(codeChangesCount)
+    __obj.updateDynamic("codeChangesTrend")(codeChangesTrend)
+    __obj.updateDynamic("projectId")(projectId)
+    __obj.updateDynamic("pullRequestsCompletedCount")(pullRequestsCompletedCount)
+    __obj.updateDynamic("pullRequestsCreatedCount")(pullRequestsCreatedCount)
+    __obj.asInstanceOf[ProjectActivityMetrics]
+  }
+}
+

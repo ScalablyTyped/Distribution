@@ -729,6 +729,8 @@ object jestNs extends js.Object {
     var `type`: LogType
   }
   
+  trait LogType extends js.Object
+  
   trait MatcherUtils extends js.Object {
     val expand: scala.Boolean
     val isNot: scala.Boolean
@@ -1199,10 +1201,13 @@ object jestNs extends js.Object {
     var virtual: js.UndefOr[scala.Boolean] = js.undefined
   }
   
+  trait MockResult[T] extends js.Object
+  
   /**
     * Represents the result of a single incomplete call to a mock function.
     */
-  trait MockResultIncomplete extends js.Object {
+  trait MockResultIncomplete
+    extends MockResult[js.Any] {
     var `type`: jestLib.jestLibStrings.incomplete
     var value: js.UndefOr[scala.Nothing]
   }
@@ -1210,7 +1215,7 @@ object jestNs extends js.Object {
   /**
     * Represents the result of a single call to a mock function with a return value.
     */
-  trait MockResultReturn[T] extends js.Object {
+  trait MockResultReturn[T] extends MockResult[T] {
     var `type`: jestLib.jestLibStrings.`return`
     var value: T
   }
@@ -1218,7 +1223,8 @@ object jestNs extends js.Object {
   /**
     * Represents the result of a single call to a mock function with a thrown error.
     */
-  trait MockResultThrow extends js.Object {
+  trait MockResultThrow
+    extends MockResult[js.Any] {
     var `type`: jestLib.jestLibStrings.`throw`
     var value: js.Any
   }
@@ -1384,6 +1390,10 @@ object jestNs extends js.Object {
     var unmatched: scala.Double
     var updated: scala.Double
   }
+  
+  trait SnapshotUpdateState extends js.Object
+  
+  trait Status extends js.Object
   
   // TestRunner
   trait Test extends js.Object {
@@ -1660,7 +1670,6 @@ object jestNs extends js.Object {
   type Lifecycle = js.Function2[/* fn */ ProvidesCallback, /* timeout */ js.UndefOr[scala.Double], js.Any]
   // Console
   type LogMessage = java.lang.String
-  type LogType = jestLib.jestLibStrings.log | jestLib.jestLibStrings.info | jestLib.jestLibStrings.warn | jestLib.jestLibStrings.error
   // types for implementing custom interfaces, from https://github.com/facebook/jest/tree/dd6c5c4/types
   // https://facebook.github.io/jest/docs/en/configuration.html#transform-object-string-string
   // const transformer: Transformer;
@@ -1676,7 +1685,6 @@ object jestNs extends js.Object {
   // flow's Maybe type https://flow.org/en/docs/types/primitives/#toc-maybe-types
   type Maybe[T] = js.UndefOr[scala.Unit | scala.Null | T]
   type Milliseconds = scala.Double
-  type MockResult[T] = MockResultReturn[T] | MockResultThrow | MockResultIncomplete
   /**
     * Wrap module with mock definitions
     *
@@ -1701,9 +1709,7 @@ object jestNs extends js.Object {
   type ResolvedValue[T] = js.Any | T
   type Runtime = js.Any
   type Script = js.Any
-  type SnapshotUpdateState = jestLib.jestLibStrings.all | jestLib.jestLibStrings.`new` | jestLib.jestLibStrings.none
   type SpyInstance[T, Y /* <: js.Array[_] */] = MockInstance[T, Y]
-  type Status = jestLib.jestLibStrings.passed | jestLib.jestLibStrings.failed | jestLib.jestLibStrings.skipped | jestLib.jestLibStrings.pending
   type TestFramework = js.Function5[
     /* globalConfig */ GlobalConfig, 
     /* config */ ProjectConfig, 

@@ -70,3 +70,36 @@ trait SequenceDiagramConfig extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SequenceDiagramConfig {
+  @scala.inline
+  def apply(
+    actorMargin: scala.Int | scala.Double = null,
+    bottomMarginAdj: scala.Int | scala.Double = null,
+    boxMargin: scala.Int | scala.Double = null,
+    boxTextMargin: scala.Int | scala.Double = null,
+    diagramMarginX: scala.Int | scala.Double = null,
+    diagramMarginY: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    messageMargin: scala.Int | scala.Double = null,
+    mirrorActors: js.UndefOr[scala.Boolean] = js.undefined,
+    noteMargin: scala.Int | scala.Double = null,
+    useMaxWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): SequenceDiagramConfig = {
+    val __obj = js.Dynamic.literal()
+    if (actorMargin != null) __obj.updateDynamic("actorMargin")(actorMargin.asInstanceOf[js.Any])
+    if (bottomMarginAdj != null) __obj.updateDynamic("bottomMarginAdj")(bottomMarginAdj.asInstanceOf[js.Any])
+    if (boxMargin != null) __obj.updateDynamic("boxMargin")(boxMargin.asInstanceOf[js.Any])
+    if (boxTextMargin != null) __obj.updateDynamic("boxTextMargin")(boxTextMargin.asInstanceOf[js.Any])
+    if (diagramMarginX != null) __obj.updateDynamic("diagramMarginX")(diagramMarginX.asInstanceOf[js.Any])
+    if (diagramMarginY != null) __obj.updateDynamic("diagramMarginY")(diagramMarginY.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (messageMargin != null) __obj.updateDynamic("messageMargin")(messageMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(mirrorActors)) __obj.updateDynamic("mirrorActors")(mirrorActors)
+    if (noteMargin != null) __obj.updateDynamic("noteMargin")(noteMargin.asInstanceOf[js.Any])
+    if (!js.isUndefined(useMaxWidth)) __obj.updateDynamic("useMaxWidth")(useMaxWidth)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SequenceDiagramConfig]
+  }
+}
+

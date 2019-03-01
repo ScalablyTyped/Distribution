@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object quillLibStrings {
   @js.native
-  sealed trait api extends js.Object
+  sealed trait api
+    extends quillLib.quillMod.Sources
   
   @js.native
   sealed trait `editor-change` extends js.Object
@@ -16,13 +17,15 @@ object quillLibStrings {
   sealed trait `selection-change` extends js.Object
   
   @js.native
-  sealed trait silent extends js.Object
+  sealed trait silent
+    extends quillLib.quillMod.Sources
   
   @js.native
   sealed trait `text-change` extends js.Object
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user
+    extends quillLib.quillMod.Sources
   
   @scala.inline
   def api: api = "api".asInstanceOf[api]

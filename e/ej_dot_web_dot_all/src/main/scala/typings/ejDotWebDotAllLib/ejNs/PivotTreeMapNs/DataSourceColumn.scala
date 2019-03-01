@@ -19,3 +19,18 @@ trait DataSourceColumn extends js.Object {
   var isNamedSets: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataSourceColumn {
+  @scala.inline
+  def apply(
+    fieldName: java.lang.String = null,
+    filterItems: DataSourceColumnsFilterItems = null,
+    isNamedSets: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataSourceColumn = {
+    val __obj = js.Dynamic.literal()
+    if (fieldName != null) __obj.updateDynamic("fieldName")(fieldName)
+    if (filterItems != null) __obj.updateDynamic("filterItems")(filterItems)
+    if (!js.isUndefined(isNamedSets)) __obj.updateDynamic("isNamedSets")(isNamedSets)
+    __obj.asInstanceOf[DataSourceColumn]
+  }
+}
+

@@ -14,3 +14,18 @@ trait ITypeStat extends js.Object {
   var perFieldStat: js.UndefOr[org.scalablytyped.runtime.StringDictionary[IFieldStat] | scala.Null] = js.undefined
 }
 
+object ITypeStat {
+  @scala.inline
+  def apply(
+    field: js.Array[IFieldStat] = null,
+    name: java.lang.String = null,
+    perFieldStat: org.scalablytyped.runtime.StringDictionary[IFieldStat] = null
+  ): ITypeStat = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (perFieldStat != null) __obj.updateDynamic("perFieldStat")(perFieldStat)
+    __obj.asInstanceOf[ITypeStat]
+  }
+}
+

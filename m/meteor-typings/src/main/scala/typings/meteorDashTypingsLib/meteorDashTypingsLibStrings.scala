@@ -7,19 +7,29 @@ import scala.scalajs.js.annotation._
 
 object meteorDashTypingsLibStrings {
   @js.native
-  sealed trait connected extends js.Object
+  sealed trait connected
+    extends meteorDashTypingsLib.DDPNs.Status
+       with meteorDashTypingsLib.meteorDdpMod.DDPNs.Status
   
   @js.native
-  sealed trait connecting extends js.Object
+  sealed trait connecting
+    extends meteorDashTypingsLib.DDPNs.Status
+       with meteorDashTypingsLib.meteorDdpMod.DDPNs.Status
   
   @js.native
-  sealed trait failed extends js.Object
+  sealed trait failed
+    extends meteorDashTypingsLib.DDPNs.Status
+       with meteorDashTypingsLib.meteorDdpMod.DDPNs.Status
   
   @js.native
-  sealed trait offline extends js.Object
+  sealed trait offline
+    extends meteorDashTypingsLib.DDPNs.Status
+       with meteorDashTypingsLib.meteorDdpMod.DDPNs.Status
   
   @js.native
-  sealed trait waiting extends js.Object
+  sealed trait waiting
+    extends meteorDashTypingsLib.DDPNs.Status
+       with meteorDashTypingsLib.meteorDdpMod.DDPNs.Status
   
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]

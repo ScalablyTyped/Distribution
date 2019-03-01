@@ -74,3 +74,60 @@ trait VictoryLegendProps
   var y_VictoryLegendProps: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VictoryLegendProps {
+  @scala.inline
+  def apply(
+    animate: AnimatePropTypeInterface = null,
+    categories: CategoryPropType = null,
+    colorScale: ColorScalePropType = null,
+    containerComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    data: js.Array[victoryLib.Anon_Name] = null,
+    dataComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    domain: DomainPropType = null,
+    groupComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    gutter: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    itemsPerRow: scala.Int | scala.Double = null,
+    label: java.lang.String | victoryLib.Anon_DataAnyString = null,
+    labelComponent: reactLib.reactMod.ReactNs.ReactElement[_] = null,
+    name: java.lang.String = null,
+    orientation: victoryLib.victoryLibStrings.horizontal | victoryLib.victoryLibStrings.vertical = null,
+    padding: scala.Double | victoryLib.Anon_BottomLeft = null,
+    scale: ScalePropType | D3Scale | victoryLib.Anon_XYD3Scale = null,
+    standalone: js.UndefOr[scala.Boolean] = js.undefined,
+    style: VictoryStyleInterface = null,
+    symbolSpacer: scala.Int | scala.Double = null,
+    theme: VictoryThemeDefinition = null,
+    width: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): VictoryLegendProps = {
+    val __obj = js.Dynamic.literal()
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (categories != null) __obj.updateDynamic("categories")(categories.asInstanceOf[js.Any])
+    if (colorScale != null) __obj.updateDynamic("colorScale")(colorScale.asInstanceOf[js.Any])
+    if (containerComponent != null) __obj.updateDynamic("containerComponent")(containerComponent)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataComponent != null) __obj.updateDynamic("dataComponent")(dataComponent)
+    if (domain != null) __obj.updateDynamic("domain")(domain.asInstanceOf[js.Any])
+    if (groupComponent != null) __obj.updateDynamic("groupComponent")(groupComponent)
+    if (gutter != null) __obj.updateDynamic("gutter")(gutter.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (itemsPerRow != null) __obj.updateDynamic("itemsPerRow")(itemsPerRow.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelComponent != null) __obj.updateDynamic("labelComponent")(labelComponent)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(standalone)) __obj.updateDynamic("standalone")(standalone)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (symbolSpacer != null) __obj.updateDynamic("symbolSpacer")(symbolSpacer.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VictoryLegendProps]
+  }
+}
+

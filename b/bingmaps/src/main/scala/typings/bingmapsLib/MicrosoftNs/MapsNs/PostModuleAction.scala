@@ -14,3 +14,18 @@ trait PostModuleAction extends js.Object {
   var geoXmlOption: js.UndefOr[IGeoXmlLayerOptions] = js.undefined
 }
 
+object PostModuleAction {
+  @scala.inline
+  def apply(
+    addLayerFromUrl: java.lang.String,
+    geoJsonOption: IGeoJsonReadOptions = null,
+    geoXmlOption: IGeoXmlLayerOptions = null
+  ): PostModuleAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addLayerFromUrl")(addLayerFromUrl)
+    if (geoJsonOption != null) __obj.updateDynamic("geoJsonOption")(geoJsonOption)
+    if (geoXmlOption != null) __obj.updateDynamic("geoXmlOption")(geoXmlOption)
+    __obj.asInstanceOf[PostModuleAction]
+  }
+}
+

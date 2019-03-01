@@ -18,3 +18,12 @@ import scala.scalajs.js.annotation._
 trait IPoint
   extends /* index */ org.scalablytyped.runtime.NumberDictionary[scala.Double]
 
+object IPoint {
+  @scala.inline
+  def apply(NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[scala.Double] = null): IPoint = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[IPoint]
+  }
+}
+

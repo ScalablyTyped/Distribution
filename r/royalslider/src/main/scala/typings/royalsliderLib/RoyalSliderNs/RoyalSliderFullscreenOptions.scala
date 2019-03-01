@@ -24,3 +24,20 @@ trait RoyalSliderFullscreenOptions extends js.Object {
   var nativeFS: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RoyalSliderFullscreenOptions {
+  @scala.inline
+  def apply(
+    buttonFS: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboardNav: js.UndefOr[scala.Boolean] = js.undefined,
+    nativeFS: js.UndefOr[scala.Boolean] = js.undefined
+  ): RoyalSliderFullscreenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(buttonFS)) __obj.updateDynamic("buttonFS")(buttonFS)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(keyboardNav)) __obj.updateDynamic("keyboardNav")(keyboardNav)
+    if (!js.isUndefined(nativeFS)) __obj.updateDynamic("nativeFS")(nativeFS)
+    __obj.asInstanceOf[RoyalSliderFullscreenOptions]
+  }
+}
+

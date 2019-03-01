@@ -9,3 +9,12 @@ trait TypesRegistryRequest extends js.Object {
   val kind: typescriptLib.typescriptLibStrings.typesRegistry
 }
 
+object TypesRegistryRequest {
+  @scala.inline
+  def apply(kind: typescriptLib.typescriptLibStrings.typesRegistry): TypesRegistryRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[TypesRegistryRequest]
+  }
+}
+

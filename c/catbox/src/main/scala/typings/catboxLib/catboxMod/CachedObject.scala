@@ -14,3 +14,14 @@ trait CachedObject[T] extends js.Object {
   var ttl: scala.Double
 }
 
+object CachedObject {
+  @scala.inline
+  def apply[T](item: T, stored: scala.Double, ttl: scala.Double): CachedObject[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    __obj.updateDynamic("stored")(stored)
+    __obj.updateDynamic("ttl")(ttl)
+    __obj.asInstanceOf[CachedObject[T]]
+  }
+}
+

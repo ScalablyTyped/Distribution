@@ -9,3 +9,12 @@ trait PluginRemoveMetadata extends js.Object {
   var removeMetadata: scala.Boolean | js.Object
 }
 
+object PluginRemoveMetadata {
+  @scala.inline
+  def apply(removeMetadata: scala.Boolean | js.Object): PluginRemoveMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("removeMetadata")(removeMetadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PluginRemoveMetadata]
+  }
+}
+

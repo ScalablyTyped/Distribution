@@ -28,3 +28,22 @@ trait ChordSubgroup extends js.Object {
   var value: scala.Double
 }
 
+object ChordSubgroup {
+  @scala.inline
+  def apply(
+    endAngle: scala.Double,
+    index: scala.Double,
+    startAngle: scala.Double,
+    subindex: scala.Double,
+    value: scala.Double
+  ): ChordSubgroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endAngle")(endAngle)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("startAngle")(startAngle)
+    __obj.updateDynamic("subindex")(subindex)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ChordSubgroup]
+  }
+}
+

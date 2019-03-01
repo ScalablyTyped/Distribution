@@ -10,3 +10,13 @@ trait Anon_ConfigPayload extends js.Object {
   var payload: scala.Double
 }
 
+object Anon_ConfigPayload {
+  @scala.inline
+  def apply(config: java.lang.String, payload: scala.Double): Anon_ConfigPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("payload")(payload)
+    __obj.asInstanceOf[Anon_ConfigPayload]
+  }
+}
+

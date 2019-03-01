@@ -26,3 +26,30 @@ trait XProgressBar
   def setValue(Value: scala.Double): scala.Unit
 }
 
+object XProgressBar {
+  @scala.inline
+  def apply(
+    Value: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getValue: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setBackgroundColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
+    setForegroundColor: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color, scala.Unit],
+    setRange: js.Function2[scala.Double, scala.Double, scala.Unit],
+    setValue: js.Function1[scala.Double, scala.Unit]
+  ): XProgressBar = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Value")(Value)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setBackgroundColor")(setBackgroundColor)
+    __obj.updateDynamic("setForegroundColor")(setForegroundColor)
+    __obj.updateDynamic("setRange")(setRange)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.asInstanceOf[XProgressBar]
+  }
+}
+

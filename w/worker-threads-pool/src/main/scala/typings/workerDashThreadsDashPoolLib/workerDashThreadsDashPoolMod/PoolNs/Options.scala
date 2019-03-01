@@ -19,3 +19,13 @@ trait Options extends js.Object {
   var maxWaiting: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(max: scala.Int | scala.Double = null, maxWaiting: scala.Int | scala.Double = null): Options = {
+    val __obj = js.Dynamic.literal()
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxWaiting != null) __obj.updateDynamic("maxWaiting")(maxWaiting.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

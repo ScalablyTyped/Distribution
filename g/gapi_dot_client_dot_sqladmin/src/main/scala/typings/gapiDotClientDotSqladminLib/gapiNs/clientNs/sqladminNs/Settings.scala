@@ -76,3 +76,52 @@ trait Settings extends js.Object {
   var userLabels: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    activationPolicy: java.lang.String = null,
+    authorizedGaeApplications: js.Array[java.lang.String] = null,
+    availabilityType: java.lang.String = null,
+    backupConfiguration: BackupConfiguration = null,
+    crashSafeReplicationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    dataDiskSizeGb: java.lang.String = null,
+    dataDiskType: java.lang.String = null,
+    databaseFlags: js.Array[DatabaseFlags] = null,
+    databaseReplicationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    ipConfiguration: IpConfiguration = null,
+    kind: java.lang.String = null,
+    locationPreference: LocationPreference = null,
+    maintenanceWindow: MaintenanceWindow = null,
+    pricingPlan: java.lang.String = null,
+    replicationType: java.lang.String = null,
+    settingsVersion: java.lang.String = null,
+    storageAutoResize: js.UndefOr[scala.Boolean] = js.undefined,
+    storageAutoResizeLimit: java.lang.String = null,
+    tier: java.lang.String = null,
+    userLabels: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (activationPolicy != null) __obj.updateDynamic("activationPolicy")(activationPolicy)
+    if (authorizedGaeApplications != null) __obj.updateDynamic("authorizedGaeApplications")(authorizedGaeApplications)
+    if (availabilityType != null) __obj.updateDynamic("availabilityType")(availabilityType)
+    if (backupConfiguration != null) __obj.updateDynamic("backupConfiguration")(backupConfiguration)
+    if (!js.isUndefined(crashSafeReplicationEnabled)) __obj.updateDynamic("crashSafeReplicationEnabled")(crashSafeReplicationEnabled)
+    if (dataDiskSizeGb != null) __obj.updateDynamic("dataDiskSizeGb")(dataDiskSizeGb)
+    if (dataDiskType != null) __obj.updateDynamic("dataDiskType")(dataDiskType)
+    if (databaseFlags != null) __obj.updateDynamic("databaseFlags")(databaseFlags)
+    if (!js.isUndefined(databaseReplicationEnabled)) __obj.updateDynamic("databaseReplicationEnabled")(databaseReplicationEnabled)
+    if (ipConfiguration != null) __obj.updateDynamic("ipConfiguration")(ipConfiguration)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (locationPreference != null) __obj.updateDynamic("locationPreference")(locationPreference)
+    if (maintenanceWindow != null) __obj.updateDynamic("maintenanceWindow")(maintenanceWindow)
+    if (pricingPlan != null) __obj.updateDynamic("pricingPlan")(pricingPlan)
+    if (replicationType != null) __obj.updateDynamic("replicationType")(replicationType)
+    if (settingsVersion != null) __obj.updateDynamic("settingsVersion")(settingsVersion)
+    if (!js.isUndefined(storageAutoResize)) __obj.updateDynamic("storageAutoResize")(storageAutoResize)
+    if (storageAutoResizeLimit != null) __obj.updateDynamic("storageAutoResizeLimit")(storageAutoResizeLimit)
+    if (tier != null) __obj.updateDynamic("tier")(tier)
+    if (userLabels != null) __obj.updateDynamic("userLabels")(userLabels)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

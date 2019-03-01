@@ -16,3 +16,20 @@ trait AppDetails extends js.Object {
   var defaultLanguage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppDetails {
+  @scala.inline
+  def apply(
+    contactEmail: java.lang.String = null,
+    contactPhone: java.lang.String = null,
+    contactWebsite: java.lang.String = null,
+    defaultLanguage: java.lang.String = null
+  ): AppDetails = {
+    val __obj = js.Dynamic.literal()
+    if (contactEmail != null) __obj.updateDynamic("contactEmail")(contactEmail)
+    if (contactPhone != null) __obj.updateDynamic("contactPhone")(contactPhone)
+    if (contactWebsite != null) __obj.updateDynamic("contactWebsite")(contactWebsite)
+    if (defaultLanguage != null) __obj.updateDynamic("defaultLanguage")(defaultLanguage)
+    __obj.asInstanceOf[AppDetails]
+  }
+}
+

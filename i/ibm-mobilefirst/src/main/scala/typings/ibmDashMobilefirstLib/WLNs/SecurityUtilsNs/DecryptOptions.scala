@@ -13,3 +13,22 @@ trait DecryptOptions extends js.Object {
   var v: java.lang.String
 }
 
+object DecryptOptions {
+  @scala.inline
+  def apply(
+    ct: java.lang.String,
+    key: java.lang.String,
+    lv: java.lang.String,
+    src: java.lang.String,
+    v: java.lang.String
+  ): DecryptOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ct")(ct)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("lv")(lv)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("v")(v)
+    __obj.asInstanceOf[DecryptOptions]
+  }
+}
+

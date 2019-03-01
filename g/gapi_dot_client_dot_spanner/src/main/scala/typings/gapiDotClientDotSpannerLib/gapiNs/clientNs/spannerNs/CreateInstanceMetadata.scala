@@ -24,3 +24,20 @@ trait CreateInstanceMetadata extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateInstanceMetadata {
+  @scala.inline
+  def apply(
+    cancelTime: java.lang.String = null,
+    endTime: java.lang.String = null,
+    instance: Instance = null,
+    startTime: java.lang.String = null
+  ): CreateInstanceMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (cancelTime != null) __obj.updateDynamic("cancelTime")(cancelTime)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[CreateInstanceMetadata]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Immunization event information
   */
-trait Immunization extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait Immunization extends DomainResource {
   /**
     * Contains extended information for property 'date'.
     */
@@ -117,5 +118,94 @@ trait Immunization extends DomainResource {
     * Vaccine product administered
     */
   var vaccineCode: CodeableConcept
+}
+
+object Immunization {
+  @scala.inline
+  def apply(
+    notGiven: scala.Boolean,
+    patient: Reference,
+    primarySource: scala.Boolean,
+    status: code,
+    vaccineCode: CodeableConcept,
+    _date: Element = null,
+    _expirationDate: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _lotNumber: Element = null,
+    _notGiven: Element = null,
+    _primarySource: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    contained: js.Array[Resource] = null,
+    date: dateTime = null,
+    doseQuantity: Quantity = null,
+    encounter: Reference = null,
+    expirationDate: date = null,
+    explanation: ImmunizationExplanation = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    location: Reference = null,
+    lotNumber: java.lang.String = null,
+    manufacturer: Reference = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    note: js.Array[Annotation] = null,
+    practitioner: js.Array[ImmunizationPractitioner] = null,
+    reaction: js.Array[ImmunizationReaction] = null,
+    reportOrigin: CodeableConcept = null,
+    resourceType: code = null,
+    route: CodeableConcept = null,
+    site: CodeableConcept = null,
+    text: Narrative = null,
+    vaccinationProtocol: js.Array[ImmunizationVaccinationProtocol] = null
+  ): Immunization = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("notGiven")(notGiven)
+    __obj.updateDynamic("patient")(patient)
+    __obj.updateDynamic("primarySource")(primarySource)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("vaccineCode")(vaccineCode)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_expirationDate != null) __obj.updateDynamic("_expirationDate")(_expirationDate)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_lotNumber != null) __obj.updateDynamic("_lotNumber")(_lotNumber)
+    if (_notGiven != null) __obj.updateDynamic("_notGiven")(_notGiven)
+    if (_primarySource != null) __obj.updateDynamic("_primarySource")(_primarySource)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (doseQuantity != null) __obj.updateDynamic("doseQuantity")(doseQuantity)
+    if (encounter != null) __obj.updateDynamic("encounter")(encounter)
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate)
+    if (explanation != null) __obj.updateDynamic("explanation")(explanation)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (lotNumber != null) __obj.updateDynamic("lotNumber")(lotNumber)
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (note != null) __obj.updateDynamic("note")(note)
+    if (practitioner != null) __obj.updateDynamic("practitioner")(practitioner)
+    if (reaction != null) __obj.updateDynamic("reaction")(reaction)
+    if (reportOrigin != null) __obj.updateDynamic("reportOrigin")(reportOrigin)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (route != null) __obj.updateDynamic("route")(route)
+    if (site != null) __obj.updateDynamic("site")(site)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (vaccinationProtocol != null) __obj.updateDynamic("vaccinationProtocol")(vaccinationProtocol)
+    __obj.asInstanceOf[Immunization]
+  }
 }
 

@@ -18,3 +18,20 @@ trait OnClickData extends js.Object {
   var selected: scala.Boolean
 }
 
+object OnClickData {
+  @scala.inline
+  def apply(
+    e: jqueryLib.JQueryEventObject,
+    key: java.lang.String,
+    selected: scala.Boolean,
+    listTarget: imagemapsterLib.imagemapsterMod.Global.JQuery = null
+  ): OnClickData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("e")(e)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("selected")(selected)
+    if (listTarget != null) __obj.updateDynamic("listTarget")(listTarget)
+    __obj.asInstanceOf[OnClickData]
+  }
+}
+

@@ -14,3 +14,24 @@ trait UnlinkAccountsResponse extends js.Object {
   var user_id: java.lang.String
 }
 
+object UnlinkAccountsResponse {
+  @scala.inline
+  def apply(
+    connection: java.lang.String,
+    provider: java.lang.String,
+    user_id: java.lang.String,
+    access_token: java.lang.String = null,
+    isSocial: js.UndefOr[scala.Boolean] = js.undefined,
+    profileData: UnlinkAccountsResponseProfile = null
+  ): UnlinkAccountsResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.updateDynamic("provider")(provider)
+    __obj.updateDynamic("user_id")(user_id)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (!js.isUndefined(isSocial)) __obj.updateDynamic("isSocial")(isSocial)
+    if (profileData != null) __obj.updateDynamic("profileData")(profileData)
+    __obj.asInstanceOf[UnlinkAccountsResponse]
+  }
+}
+

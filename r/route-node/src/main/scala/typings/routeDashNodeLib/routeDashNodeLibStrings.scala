@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object routeDashNodeLibStrings {
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends routeDashNodeLib.routeDashNodeMod.TrailingSlashMode
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends routeDashNodeLib.routeDashNodeMod.QueryParamsMode
+       with routeDashNodeLib.routeDashNodeMod.TrailingSlashMode
   
   @js.native
-  sealed trait loose extends js.Object
+  sealed trait loose
+    extends routeDashNodeLib.routeDashNodeMod.QueryParamsMode
   
   @js.native
-  sealed trait never extends js.Object
+  sealed trait never
+    extends routeDashNodeLib.routeDashNodeMod.TrailingSlashMode
   
   @js.native
   sealed trait query extends js.Object
   
   @js.native
-  sealed trait strict extends js.Object
+  sealed trait strict
+    extends routeDashNodeLib.routeDashNodeMod.QueryParamsMode
   
   @js.native
   sealed trait url extends js.Object

@@ -13,3 +13,22 @@ trait LanguageStatistics extends js.Object {
   var name: java.lang.String
 }
 
+object LanguageStatistics {
+  @scala.inline
+  def apply(
+    bytes: scala.Double,
+    files: scala.Double,
+    filesPercentage: scala.Double,
+    languagePercentage: scala.Double,
+    name: java.lang.String
+  ): LanguageStatistics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bytes")(bytes)
+    __obj.updateDynamic("files")(files)
+    __obj.updateDynamic("filesPercentage")(filesPercentage)
+    __obj.updateDynamic("languagePercentage")(languagePercentage)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[LanguageStatistics]
+  }
+}
+

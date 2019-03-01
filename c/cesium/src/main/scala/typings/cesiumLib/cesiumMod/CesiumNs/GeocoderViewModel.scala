@@ -16,3 +16,28 @@ trait GeocoderViewModel extends js.Object {
   var url: java.lang.String
 }
 
+object GeocoderViewModel {
+  @scala.inline
+  def apply(
+    complete: Event,
+    flightDuration: scala.Double,
+    isSearchInProgress: scala.Boolean,
+    key: java.lang.String,
+    scene: Scene,
+    search: Command,
+    searchText: java.lang.String,
+    url: java.lang.String
+  ): GeocoderViewModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("flightDuration")(flightDuration)
+    __obj.updateDynamic("isSearchInProgress")(isSearchInProgress)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("scene")(scene)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("searchText")(searchText)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GeocoderViewModel]
+  }
+}
+

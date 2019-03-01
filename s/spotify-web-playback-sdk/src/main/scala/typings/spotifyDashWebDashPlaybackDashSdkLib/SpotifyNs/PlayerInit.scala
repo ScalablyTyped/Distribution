@@ -11,3 +11,18 @@ trait PlayerInit extends js.Object {
   def getOAuthToken(cb: js.Function1[/* token */ java.lang.String, scala.Unit]): scala.Unit
 }
 
+object PlayerInit {
+  @scala.inline
+  def apply(
+    getOAuthToken: js.Function1[js.Function1[/* token */ java.lang.String, scala.Unit], scala.Unit],
+    name: java.lang.String,
+    volume: scala.Int | scala.Double = null
+  ): PlayerInit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getOAuthToken")(getOAuthToken)
+    __obj.updateDynamic("name")(name)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayerInit]
+  }
+}
+

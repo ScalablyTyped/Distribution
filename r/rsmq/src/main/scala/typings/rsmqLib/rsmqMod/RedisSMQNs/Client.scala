@@ -18,3 +18,32 @@ trait Client extends js.Object {
   def setQueueAttributes(options: QueueOptions, cb: CallbackT[QueueAttributes]): scala.Unit
 }
 
+object Client {
+  @scala.inline
+  def apply(
+    changeMessageVisibility: js.Function2[VisibilityOptions, CallbackT[scala.Double], scala.Unit],
+    createQueue: js.Function2[QueueOptions, CallbackT[scala.Double], scala.Unit],
+    deleteMessage: js.Function2[MessageIdentifier, CallbackT[scala.Double], scala.Unit],
+    deleteQueue: js.Function2[QueueIdentifier, CallbackT[scala.Double], scala.Unit],
+    getQueueAttributes: js.Function2[QueueIdentifier, CallbackT[QueueAttributes], scala.Unit],
+    listQueues: js.Function1[CallbackT[js.Array[java.lang.String]], scala.Unit],
+    quit: js.Function0[scala.Unit],
+    receiveMessage: js.Function2[ReceiveOptions, CallbackT[Message], scala.Unit],
+    sendMessage: js.Function2[NewMessage, CallbackT[java.lang.String], scala.Unit],
+    setQueueAttributes: js.Function2[QueueOptions, CallbackT[QueueAttributes], scala.Unit]
+  ): Client = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeMessageVisibility")(changeMessageVisibility)
+    __obj.updateDynamic("createQueue")(createQueue)
+    __obj.updateDynamic("deleteMessage")(deleteMessage)
+    __obj.updateDynamic("deleteQueue")(deleteQueue)
+    __obj.updateDynamic("getQueueAttributes")(getQueueAttributes)
+    __obj.updateDynamic("listQueues")(listQueues)
+    __obj.updateDynamic("quit")(quit)
+    __obj.updateDynamic("receiveMessage")(receiveMessage)
+    __obj.updateDynamic("sendMessage")(sendMessage)
+    __obj.updateDynamic("setQueueAttributes")(setQueueAttributes)
+    __obj.asInstanceOf[Client]
+  }
+}
+

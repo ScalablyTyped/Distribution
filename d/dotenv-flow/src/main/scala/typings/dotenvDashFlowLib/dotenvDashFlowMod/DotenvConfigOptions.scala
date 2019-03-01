@@ -20,3 +20,18 @@ trait DotenvConfigOptions extends js.Object {
   var purge_dotenv: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DotenvConfigOptions {
+  @scala.inline
+  def apply(
+    cwd: java.lang.String = null,
+    encoding: java.lang.String = null,
+    purge_dotenv: js.UndefOr[scala.Boolean] = js.undefined
+  ): DotenvConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(purge_dotenv)) __obj.updateDynamic("purge_dotenv")(purge_dotenv)
+    __obj.asInstanceOf[DotenvConfigOptions]
+  }
+}
+

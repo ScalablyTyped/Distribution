@@ -30,3 +30,56 @@ trait PivotGridOptions extends js.Object {
   var sortable: js.UndefOr[scala.Boolean | PivotGridSortable] = js.undefined
 }
 
+object PivotGridOptions {
+  @scala.inline
+  def apply(
+    autoBind: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseMember: js.Function1[/* e */ PivotGridCollapseMemberEvent, scala.Unit] = null,
+    columnHeaderTemplate: java.lang.String | js.Function = null,
+    columnWidth: scala.Int | scala.Double = null,
+    dataBinding: js.Function1[/* e */ PivotGridDataBindingEvent, scala.Unit] = null,
+    dataBound: js.Function1[/* e */ PivotGridDataBoundEvent, scala.Unit] = null,
+    dataCellTemplate: java.lang.String | js.Function = null,
+    dataSource: js.Any | kendoDashUiLib.kendoNs.dataNs.PivotDataSource = null,
+    excel: PivotGridExcel = null,
+    excelExport: js.Function1[/* e */ PivotGridExcelExportEvent, scala.Unit] = null,
+    expandMember: js.Function1[/* e */ PivotGridExpandMemberEvent, scala.Unit] = null,
+    filterable: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Double | java.lang.String = null,
+    kpiStatusTemplate: java.lang.String | js.Function = null,
+    kpiTrendTemplate: java.lang.String | js.Function = null,
+    messages: PivotGridMessages = null,
+    name: java.lang.String = null,
+    pdf: PivotGridPdf = null,
+    pdfExport: js.Function1[/* e */ PivotGridPdfExportEvent, scala.Unit] = null,
+    reorderable: js.UndefOr[scala.Boolean] = js.undefined,
+    rowHeaderTemplate: java.lang.String | js.Function = null,
+    sortable: scala.Boolean | PivotGridSortable = null
+  ): PivotGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoBind)) __obj.updateDynamic("autoBind")(autoBind)
+    if (collapseMember != null) __obj.updateDynamic("collapseMember")(collapseMember)
+    if (columnHeaderTemplate != null) __obj.updateDynamic("columnHeaderTemplate")(columnHeaderTemplate.asInstanceOf[js.Any])
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataCellTemplate != null) __obj.updateDynamic("dataCellTemplate")(dataCellTemplate.asInstanceOf[js.Any])
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (excel != null) __obj.updateDynamic("excel")(excel)
+    if (excelExport != null) __obj.updateDynamic("excelExport")(excelExport)
+    if (expandMember != null) __obj.updateDynamic("expandMember")(expandMember)
+    if (!js.isUndefined(filterable)) __obj.updateDynamic("filterable")(filterable)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (kpiStatusTemplate != null) __obj.updateDynamic("kpiStatusTemplate")(kpiStatusTemplate.asInstanceOf[js.Any])
+    if (kpiTrendTemplate != null) __obj.updateDynamic("kpiTrendTemplate")(kpiTrendTemplate.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pdf != null) __obj.updateDynamic("pdf")(pdf)
+    if (pdfExport != null) __obj.updateDynamic("pdfExport")(pdfExport)
+    if (!js.isUndefined(reorderable)) __obj.updateDynamic("reorderable")(reorderable)
+    if (rowHeaderTemplate != null) __obj.updateDynamic("rowHeaderTemplate")(rowHeaderTemplate.asInstanceOf[js.Any])
+    if (sortable != null) __obj.updateDynamic("sortable")(sortable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PivotGridOptions]
+  }
+}
+

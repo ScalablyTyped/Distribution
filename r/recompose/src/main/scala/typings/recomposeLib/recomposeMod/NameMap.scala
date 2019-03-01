@@ -9,3 +9,14 @@ import scala.scalajs.js.annotation._
 trait NameMap
   extends /* outterName */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 
+object NameMap {
+  @scala.inline
+  def apply(
+    StringDictionary: /* outterName */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): NameMap = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[NameMap]
+  }
+}
+

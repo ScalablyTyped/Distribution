@@ -17,3 +17,12 @@ trait RemoveCookieParams[T] extends js.Object {
   var filter: T
 }
 
+object RemoveCookieParams {
+  @scala.inline
+  def apply[T](filter: T): RemoveCookieParams[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RemoveCookieParams[T]]
+  }
+}
+

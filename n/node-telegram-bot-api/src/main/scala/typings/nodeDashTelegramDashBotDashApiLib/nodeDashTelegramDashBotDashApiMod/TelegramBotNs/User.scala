@@ -14,3 +14,24 @@ trait User extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object User {
+  @scala.inline
+  def apply(
+    first_name: java.lang.String,
+    id: scala.Double,
+    is_bot: scala.Boolean,
+    language_code: java.lang.String = null,
+    last_name: java.lang.String = null,
+    username: java.lang.String = null
+  ): User = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("first_name")(first_name)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("is_bot")(is_bot)
+    if (language_code != null) __obj.updateDynamic("language_code")(language_code)
+    if (last_name != null) __obj.updateDynamic("last_name")(last_name)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[User]
+  }
+}
+

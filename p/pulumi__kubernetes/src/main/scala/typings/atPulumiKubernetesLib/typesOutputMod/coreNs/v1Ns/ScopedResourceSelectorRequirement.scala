@@ -27,3 +27,14 @@ trait ScopedResourceSelectorRequirement extends js.Object {
   val values: js.Array[java.lang.String]
 }
 
+object ScopedResourceSelectorRequirement {
+  @scala.inline
+  def apply(operator: java.lang.String, scopeName: java.lang.String, values: js.Array[java.lang.String]): ScopedResourceSelectorRequirement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("operator")(operator)
+    __obj.updateDynamic("scopeName")(scopeName)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[ScopedResourceSelectorRequirement]
+  }
+}
+

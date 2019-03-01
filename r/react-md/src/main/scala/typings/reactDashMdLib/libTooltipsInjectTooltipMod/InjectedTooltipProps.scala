@@ -17,3 +17,30 @@ trait InjectedTooltipProps extends js.Object {
   var tooltipTransitionLeaveTimeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object InjectedTooltipProps {
+  @scala.inline
+  def apply(
+    tooltipClassName: java.lang.String = null,
+    tooltipContainerClassName: java.lang.String = null,
+    tooltipContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tooltipDelay: scala.Int | scala.Double = null,
+    tooltipLabel: reactLib.reactMod.ReactNs.ReactNode = null,
+    tooltipPosition: Positions = null,
+    tooltipStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    tooltipTransitionEnterTimeout: scala.Int | scala.Double = null,
+    tooltipTransitionLeaveTimeout: scala.Int | scala.Double = null
+  ): InjectedTooltipProps = {
+    val __obj = js.Dynamic.literal()
+    if (tooltipClassName != null) __obj.updateDynamic("tooltipClassName")(tooltipClassName)
+    if (tooltipContainerClassName != null) __obj.updateDynamic("tooltipContainerClassName")(tooltipContainerClassName)
+    if (tooltipContainerStyle != null) __obj.updateDynamic("tooltipContainerStyle")(tooltipContainerStyle)
+    if (tooltipDelay != null) __obj.updateDynamic("tooltipDelay")(tooltipDelay.asInstanceOf[js.Any])
+    if (tooltipLabel != null) __obj.updateDynamic("tooltipLabel")(tooltipLabel.asInstanceOf[js.Any])
+    if (tooltipPosition != null) __obj.updateDynamic("tooltipPosition")(tooltipPosition)
+    if (tooltipStyle != null) __obj.updateDynamic("tooltipStyle")(tooltipStyle)
+    if (tooltipTransitionEnterTimeout != null) __obj.updateDynamic("tooltipTransitionEnterTimeout")(tooltipTransitionEnterTimeout.asInstanceOf[js.Any])
+    if (tooltipTransitionLeaveTimeout != null) __obj.updateDynamic("tooltipTransitionLeaveTimeout")(tooltipTransitionLeaveTimeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[InjectedTooltipProps]
+  }
+}
+

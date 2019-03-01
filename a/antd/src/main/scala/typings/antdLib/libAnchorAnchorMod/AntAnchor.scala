@@ -19,3 +19,26 @@ trait AntAnchor extends js.Object {
   def unregisterLink(link: java.lang.String): scala.Unit
 }
 
+object AntAnchor {
+  @scala.inline
+  def apply(
+    registerLink: js.Function1[java.lang.String, scala.Unit],
+    scrollTo: js.Function1[java.lang.String, scala.Unit],
+    unregisterLink: js.Function1[java.lang.String, scala.Unit],
+    activeLink: java.lang.String = null,
+    onClick: js.Function2[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* link */ antdLib.Anon_Href, 
+      scala.Unit
+    ] = null
+  ): AntAnchor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("registerLink")(registerLink)
+    __obj.updateDynamic("scrollTo")(scrollTo)
+    __obj.updateDynamic("unregisterLink")(unregisterLink)
+    if (activeLink != null) __obj.updateDynamic("activeLink")(activeLink)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    __obj.asInstanceOf[AntAnchor]
+  }
+}
+

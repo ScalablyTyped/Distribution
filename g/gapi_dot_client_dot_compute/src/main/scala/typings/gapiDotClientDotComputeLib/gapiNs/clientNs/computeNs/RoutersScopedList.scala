@@ -12,3 +12,13 @@ trait RoutersScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object RoutersScopedList {
+  @scala.inline
+  def apply(routers: js.Array[Router] = null, warning: gapiDotClientDotComputeLib.Anon_Code = null): RoutersScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (routers != null) __obj.updateDynamic("routers")(routers)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[RoutersScopedList]
+  }
+}
+

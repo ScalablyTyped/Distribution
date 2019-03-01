@@ -113,3 +113,20 @@ trait ControlValueAccessor extends js.Object {
   def writeValue(obj: js.Any): scala.Unit
 }
 
+object ControlValueAccessor {
+  @scala.inline
+  def apply(
+    registerOnChange: js.Function1[js.Any, scala.Unit],
+    registerOnTouched: js.Function1[js.Any, scala.Unit],
+    writeValue: js.Function1[js.Any, scala.Unit],
+    setDisabledState: js.Function1[/* isDisabled */ scala.Boolean, scala.Unit] = null
+  ): ControlValueAccessor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("registerOnChange")(registerOnChange)
+    __obj.updateDynamic("registerOnTouched")(registerOnTouched)
+    __obj.updateDynamic("writeValue")(writeValue)
+    if (setDisabledState != null) __obj.updateDynamic("setDisabledState")(setDisabledState)
+    __obj.asInstanceOf[ControlValueAccessor]
+  }
+}
+

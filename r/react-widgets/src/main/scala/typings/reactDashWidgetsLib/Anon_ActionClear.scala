@@ -11,3 +11,18 @@ trait Anon_ActionClear extends js.Object {
   var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_ActionClear {
+  @scala.inline
+  def apply(
+    action: reactDashWidgetsLib.reactDashWidgetsLibStrings.clear | reactDashWidgetsLib.reactDashWidgetsLibStrings.input,
+    lastSearchTerm: java.lang.String = null,
+    originalEvent: js.Any = null
+  ): Anon_ActionClear = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    if (lastSearchTerm != null) __obj.updateDynamic("lastSearchTerm")(lastSearchTerm)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    __obj.asInstanceOf[Anon_ActionClear]
+  }
+}
+

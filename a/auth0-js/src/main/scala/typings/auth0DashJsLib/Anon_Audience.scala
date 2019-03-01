@@ -49,3 +49,34 @@ trait Anon_Audience extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Audience {
+  @scala.inline
+  def apply(
+    domain: java.lang.String,
+    redirectUri: java.lang.String,
+    responseType: java.lang.String,
+    audience: java.lang.String = null,
+    clientId: java.lang.String = null,
+    connection: java.lang.String = null,
+    nonce: java.lang.String = null,
+    owp: js.UndefOr[scala.Boolean] = js.undefined,
+    responseMode: auth0DashJsLib.auth0DashJsLibStrings.query | auth0DashJsLib.auth0DashJsLibStrings.fragment | auth0DashJsLib.auth0DashJsLibStrings.form_post = null,
+    scope: java.lang.String = null,
+    state: java.lang.String = null
+  ): Anon_Audience = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("redirectUri")(redirectUri)
+    __obj.updateDynamic("responseType")(responseType)
+    if (audience != null) __obj.updateDynamic("audience")(audience)
+    if (clientId != null) __obj.updateDynamic("clientId")(clientId)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (!js.isUndefined(owp)) __obj.updateDynamic("owp")(owp)
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Anon_Audience]
+  }
+}
+

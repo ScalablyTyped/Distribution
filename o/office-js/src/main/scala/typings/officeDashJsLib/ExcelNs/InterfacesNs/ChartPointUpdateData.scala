@@ -60,3 +60,26 @@ trait ChartPointUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object ChartPointUpdateData {
+  @scala.inline
+  def apply(
+    dataLabel: ChartDataLabelUpdateData = null,
+    format: ChartPointFormatUpdateData = null,
+    hasDataLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    markerBackgroundColor: java.lang.String = null,
+    markerForegroundColor: java.lang.String = null,
+    markerSize: scala.Int | scala.Double = null,
+    markerStyle: officeDashJsLib.ExcelNs.ChartMarkerStyle | officeDashJsLib.officeDashJsLibStrings.Invalid | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.Square | officeDashJsLib.officeDashJsLibStrings.Diamond | officeDashJsLib.officeDashJsLibStrings.Triangle | officeDashJsLib.officeDashJsLibStrings.X | officeDashJsLib.officeDashJsLibStrings.Star | officeDashJsLib.officeDashJsLibStrings.Dot | officeDashJsLib.officeDashJsLibStrings.Dash | officeDashJsLib.officeDashJsLibStrings.Circle | officeDashJsLib.officeDashJsLibStrings.Plus | officeDashJsLib.officeDashJsLibStrings.Picture = null
+  ): ChartPointUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(hasDataLabel)) __obj.updateDynamic("hasDataLabel")(hasDataLabel)
+    if (markerBackgroundColor != null) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor)
+    if (markerForegroundColor != null) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor)
+    if (markerSize != null) __obj.updateDynamic("markerSize")(markerSize.asInstanceOf[js.Any])
+    if (markerStyle != null) __obj.updateDynamic("markerStyle")(markerStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartPointUpdateData]
+  }
+}
+

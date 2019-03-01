@@ -53,3 +53,69 @@ trait ObjectInspector extends XObjectInspector {
   def createWithModel(Model: XObjectInspectorModel): scala.Unit
 }
 
+object ObjectInspector {
+  @scala.inline
+  def apply(
+    Frame: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame,
+    InspectorModel: XObjectInspectorModel,
+    InspectorUI: XObjectInspectorUI,
+    Model: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
+    ViewData: js.Any,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    attachFrame: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame, scala.Unit],
+    attachModel: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel, scala.Boolean],
+    createDefault: js.Function0[scala.Unit],
+    createWithModel: js.Function1[XObjectInspectorModel, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getFrame: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XFrame],
+    getModel: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel],
+    getViewData: js.Function0[js.Any],
+    inspect: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface], 
+      scala.Unit
+    ],
+    queryDispatch: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL, 
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatch
+    ],
+    queryDispatches: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.DispatchDescriptor], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XDispatch]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    restoreViewData: js.Function1[js.Any, scala.Unit],
+    suspend: js.Function1[scala.Boolean, scala.Boolean]
+  ): ObjectInspector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Frame")(Frame)
+    __obj.updateDynamic("InspectorModel")(InspectorModel)
+    __obj.updateDynamic("InspectorUI")(InspectorUI)
+    __obj.updateDynamic("Model")(Model)
+    __obj.updateDynamic("ViewData")(ViewData)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("attachFrame")(attachFrame)
+    __obj.updateDynamic("attachModel")(attachModel)
+    __obj.updateDynamic("createDefault")(createDefault)
+    __obj.updateDynamic("createWithModel")(createWithModel)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getFrame")(getFrame)
+    __obj.updateDynamic("getModel")(getModel)
+    __obj.updateDynamic("getViewData")(getViewData)
+    __obj.updateDynamic("inspect")(inspect)
+    __obj.updateDynamic("queryDispatch")(queryDispatch)
+    __obj.updateDynamic("queryDispatches")(queryDispatches)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("restoreViewData")(restoreViewData)
+    __obj.updateDynamic("suspend")(suspend)
+    __obj.asInstanceOf[ObjectInspector]
+  }
+}
+

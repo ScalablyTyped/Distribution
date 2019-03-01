@@ -54,3 +54,34 @@ trait SecretState extends js.Object {
   val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 
+object SecretState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    kmsKeyId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    recoveryWindowInDays: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    rotationEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    rotationLambdaArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rotationRules: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutomaticallyAfterDaysInput] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): SecretState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (kmsKeyId != null) __obj.updateDynamic("kmsKeyId")(kmsKeyId.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (policy != null) __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    if (recoveryWindowInDays != null) __obj.updateDynamic("recoveryWindowInDays")(recoveryWindowInDays.asInstanceOf[js.Any])
+    if (rotationEnabled != null) __obj.updateDynamic("rotationEnabled")(rotationEnabled.asInstanceOf[js.Any])
+    if (rotationLambdaArn != null) __obj.updateDynamic("rotationLambdaArn")(rotationLambdaArn.asInstanceOf[js.Any])
+    if (rotationRules != null) __obj.updateDynamic("rotationRules")(rotationRules.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SecretState]
+  }
+}
+

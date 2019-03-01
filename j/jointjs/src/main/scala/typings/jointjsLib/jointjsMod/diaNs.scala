@@ -150,6 +150,8 @@ object diaNs extends js.Object {
     def updateTools(opt: org.scalablytyped.runtime.StringDictionary[js.Any]): this.type = js.native
   }
   
+  trait Direction extends js.Object
+  
   @js.native
   class Element () extends Cell {
     def this(attributes: jointjsLib.jointjsMod.diaNs.ElementNs.Attributes) = this()
@@ -512,6 +514,8 @@ object diaNs extends js.Object {
     def vertices(vertices: js.Array[jointjsLib.jointjsMod.diaNs.LinkNs.Vertex]): this.type = js.native
   }
   
+  trait LinkEnd extends js.Object
+  
   @js.native
   class LinkView () extends CellViewGeneric[Link] {
     var options: jointjsLib.Anon_DoubleLinkTools = js.native
@@ -586,6 +590,8 @@ object diaNs extends js.Object {
     var tagName: java.lang.String
     var textContent: js.UndefOr[java.lang.String] = js.undefined
   }
+  
+  trait OrthogonalDirection extends Direction
   
   trait PaddingJSON extends js.Object {
     var bottom: js.UndefOr[scala.Double] = js.undefined
@@ -1237,10 +1243,7 @@ object diaNs extends js.Object {
   }
   
   type BBox = jointjsLib.jointjsMod.gNs.PlainRect
-  type Direction = OrthogonalDirection | jointjsLib.jointjsLibStrings.`top-left` | jointjsLib.jointjsLibStrings.`top-right` | jointjsLib.jointjsLibStrings.`bottom-right` | jointjsLib.jointjsLibStrings.`bottom-left`
-  type LinkEnd = jointjsLib.jointjsLibStrings.source | jointjsLib.jointjsLibStrings.target
   type MarkupJSON = js.Array[MarkupNodeJSON]
-  type OrthogonalDirection = jointjsLib.jointjsLibStrings.left | jointjsLib.jointjsLibStrings.top | jointjsLib.jointjsLibStrings.right | jointjsLib.jointjsLibStrings.bottom
   type Padding = scala.Double | PaddingJSON
   type Point = jointjsLib.jointjsMod.gNs.PlainPoint
   type Sides = scala.Double | SidesJSON

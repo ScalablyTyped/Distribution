@@ -84,3 +84,75 @@ trait ISegmentedButton extends IContainer {
   var setPressedCls: js.UndefOr[js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
 }
 
+object ISegmentedButton {
+  @scala.inline
+  def apply(
+    IContainer: IContainer = null,
+    allowDepress: js.UndefOr[scala.Boolean] = js.undefined,
+    allowMultiple: js.UndefOr[scala.Boolean] = js.undefined,
+    allowToggle: js.UndefOr[scala.Boolean] = js.undefined,
+    applyItems: js.Function0[scala.Unit] = null,
+    baseCls: java.lang.String = null,
+    defaultType: java.lang.String = null,
+    getAllowDepress: js.Function0[scala.Boolean] = null,
+    getAllowMultiple: js.Function0[scala.Boolean] = null,
+    getAllowToggle: js.Function0[scala.Boolean] = null,
+    getBaseCls: js.Function0[java.lang.String] = null,
+    getDefaultType: js.Function0[java.lang.String] = null,
+    getLayout: js.Function0[_] = null,
+    getPressed: js.Function0[scala.Unit] = null,
+    getPressedButtons: js.Function0[Array] = null,
+    getPressedCls: js.Function0[java.lang.String] = null,
+    isPressed: js.Function1[/* button */ js.UndefOr[IButton], scala.Boolean] = null,
+    layout: js.Any = null,
+    pressedButtons: Array = null,
+    pressedCls: java.lang.String = null,
+    setAllowDepress: js.Function1[/* allowDepress */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setAllowMultiple: js.Function1[/* allowMultiple */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setAllowToggle: js.Function1[/* allowToggle */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setBaseCls: js.Function1[/* baseCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setDefaultType: js.Function1[/* defaultType */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setLayout: js.Function1[/* layout */ js.UndefOr[js.Any], scala.Unit] = null,
+    setPressed: js.Function3[
+      /* button */ js.UndefOr[js.Any], 
+      /* pressed */ js.UndefOr[scala.Boolean], 
+      /* suppressEvents */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    setPressedButtons: js.Function1[/* pressedButtons */ js.UndefOr[Array], scala.Unit] = null,
+    setPressedCls: js.Function1[/* pressedCls */ js.UndefOr[java.lang.String], scala.Unit] = null
+  ): ISegmentedButton = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (!js.isUndefined(allowDepress)) __obj.updateDynamic("allowDepress")(allowDepress)
+    if (!js.isUndefined(allowMultiple)) __obj.updateDynamic("allowMultiple")(allowMultiple)
+    if (!js.isUndefined(allowToggle)) __obj.updateDynamic("allowToggle")(allowToggle)
+    if (applyItems != null) __obj.updateDynamic("applyItems")(applyItems)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType)
+    if (getAllowDepress != null) __obj.updateDynamic("getAllowDepress")(getAllowDepress)
+    if (getAllowMultiple != null) __obj.updateDynamic("getAllowMultiple")(getAllowMultiple)
+    if (getAllowToggle != null) __obj.updateDynamic("getAllowToggle")(getAllowToggle)
+    if (getBaseCls != null) __obj.updateDynamic("getBaseCls")(getBaseCls)
+    if (getDefaultType != null) __obj.updateDynamic("getDefaultType")(getDefaultType)
+    if (getLayout != null) __obj.updateDynamic("getLayout")(getLayout)
+    if (getPressed != null) __obj.updateDynamic("getPressed")(getPressed)
+    if (getPressedButtons != null) __obj.updateDynamic("getPressedButtons")(getPressedButtons)
+    if (getPressedCls != null) __obj.updateDynamic("getPressedCls")(getPressedCls)
+    if (isPressed != null) __obj.updateDynamic("isPressed")(isPressed)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (pressedButtons != null) __obj.updateDynamic("pressedButtons")(pressedButtons)
+    if (pressedCls != null) __obj.updateDynamic("pressedCls")(pressedCls)
+    if (setAllowDepress != null) __obj.updateDynamic("setAllowDepress")(setAllowDepress)
+    if (setAllowMultiple != null) __obj.updateDynamic("setAllowMultiple")(setAllowMultiple)
+    if (setAllowToggle != null) __obj.updateDynamic("setAllowToggle")(setAllowToggle)
+    if (setBaseCls != null) __obj.updateDynamic("setBaseCls")(setBaseCls)
+    if (setDefaultType != null) __obj.updateDynamic("setDefaultType")(setDefaultType)
+    if (setLayout != null) __obj.updateDynamic("setLayout")(setLayout)
+    if (setPressed != null) __obj.updateDynamic("setPressed")(setPressed)
+    if (setPressedButtons != null) __obj.updateDynamic("setPressedButtons")(setPressedButtons)
+    if (setPressedCls != null) __obj.updateDynamic("setPressedCls")(setPressedCls)
+    __obj.asInstanceOf[ISegmentedButton]
+  }
+}
+

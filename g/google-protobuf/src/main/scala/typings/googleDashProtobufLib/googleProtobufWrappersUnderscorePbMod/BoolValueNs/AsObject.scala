@@ -9,3 +9,12 @@ trait AsObject extends js.Object {
   var value: scala.Boolean
 }
 
+object AsObject {
+  @scala.inline
+  def apply(value: scala.Boolean): AsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

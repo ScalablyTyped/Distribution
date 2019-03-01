@@ -10,3 +10,16 @@ trait DiagramShapeConnectorHover extends js.Object {
   var stroke: js.UndefOr[java.lang.String | DiagramShapeConnectorHoverStroke] = js.undefined
 }
 
+object DiagramShapeConnectorHover {
+  @scala.inline
+  def apply(
+    fill: java.lang.String | DiagramShapeConnectorHoverFill = null,
+    stroke: java.lang.String | DiagramShapeConnectorHoverStroke = null
+  ): DiagramShapeConnectorHover = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DiagramShapeConnectorHover]
+  }
+}
+

@@ -44,3 +44,22 @@ trait FormatOptions extends js.Object {
   var upperExp: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FormatOptions {
+  @scala.inline
+  def apply(
+    fraction: java.lang.String = null,
+    lowerExp: scala.Int | scala.Double = null,
+    notation: mathjsLib.mathjsLibStrings.fixed | mathjsLib.mathjsLibStrings.exponential | mathjsLib.mathjsLibStrings.engineering | mathjsLib.mathjsLibStrings.auto = null,
+    precision: scala.Int | scala.Double = null,
+    upperExp: scala.Int | scala.Double = null
+  ): FormatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (fraction != null) __obj.updateDynamic("fraction")(fraction)
+    if (lowerExp != null) __obj.updateDynamic("lowerExp")(lowerExp.asInstanceOf[js.Any])
+    if (notation != null) __obj.updateDynamic("notation")(notation.asInstanceOf[js.Any])
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (upperExp != null) __obj.updateDynamic("upperExp")(upperExp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormatOptions]
+  }
+}
+

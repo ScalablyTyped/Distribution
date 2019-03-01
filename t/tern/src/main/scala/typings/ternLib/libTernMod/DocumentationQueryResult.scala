@@ -14,3 +14,14 @@ trait DocumentationQueryResult extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DocumentationQueryResult {
+  @scala.inline
+  def apply(doc: java.lang.String = null, origin: java.lang.String = null, url: java.lang.String = null): DocumentationQueryResult = {
+    val __obj = js.Dynamic.literal()
+    if (doc != null) __obj.updateDynamic("doc")(doc)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[DocumentationQueryResult]
+  }
+}
+

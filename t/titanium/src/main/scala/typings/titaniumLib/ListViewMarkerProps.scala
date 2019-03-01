@@ -19,3 +19,13 @@ trait ListViewMarkerProps extends js.Object {
   var sectionIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListViewMarkerProps {
+  @scala.inline
+  def apply(itemIndex: scala.Int | scala.Double = null, sectionIndex: scala.Int | scala.Double = null): ListViewMarkerProps = {
+    val __obj = js.Dynamic.literal()
+    if (itemIndex != null) __obj.updateDynamic("itemIndex")(itemIndex.asInstanceOf[js.Any])
+    if (sectionIndex != null) __obj.updateDynamic("sectionIndex")(sectionIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListViewMarkerProps]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_DevHotReloader extends js.Object {
   var hotReloader: js.Any
 }
 
+object Anon_DevHotReloader {
+  @scala.inline
+  def apply(dev: nextLib.nextLibNumbers.`true`, hotReloader: js.Any): Anon_DevHotReloader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dev")(dev)
+    __obj.updateDynamic("hotReloader")(hotReloader)
+    __obj.asInstanceOf[Anon_DevHotReloader]
+  }
+}
+

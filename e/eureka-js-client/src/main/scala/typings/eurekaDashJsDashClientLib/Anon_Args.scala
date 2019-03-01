@@ -12,3 +12,20 @@ trait Anon_Args extends js.Object {
   def warn(args: js.Any*): scala.Unit
 }
 
+object Anon_Args {
+  @scala.inline
+  def apply(
+    debug: js.Function1[/* repeated */ js.Any, scala.Unit],
+    error: js.Function1[/* repeated */ js.Any, scala.Unit],
+    info: js.Function1[/* repeated */ js.Any, scala.Unit],
+    warn: js.Function1[/* repeated */ js.Any, scala.Unit]
+  ): Anon_Args = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("warn")(warn)
+    __obj.asInstanceOf[Anon_Args]
+  }
+}
+

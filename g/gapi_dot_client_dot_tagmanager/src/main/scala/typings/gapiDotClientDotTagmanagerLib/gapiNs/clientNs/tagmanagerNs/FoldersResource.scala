@@ -24,3 +24,52 @@ trait FoldersResource extends js.Object {
   def update(request: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint): gapiDotClientLib.gapiNs.clientNs.Request[Folder]
 }
 
+object FoldersResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Folder]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    entities: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPageToken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[FolderEntities]
+    ],
+    get: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Folder]
+    ],
+    list: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListFoldersResponse]
+    ],
+    move_entities_to_folder: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsKeyOauthtokenPathPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    revert: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RevertFolderResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Folder]
+    ]
+  ): FoldersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("entities")(entities)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("move_entities_to_folder")(move_entities_to_folder)
+    __obj.updateDynamic("revert")(revert)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[FoldersResource]
+  }
+}
+

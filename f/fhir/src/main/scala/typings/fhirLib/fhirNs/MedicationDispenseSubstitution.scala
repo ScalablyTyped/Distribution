@@ -31,3 +31,34 @@ trait MedicationDispenseSubstitution extends BackboneElement {
   var wasSubstituted: scala.Boolean
 }
 
+object MedicationDispenseSubstitution {
+  @scala.inline
+  def apply(
+    wasSubstituted: scala.Boolean,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _wasSubstituted: Element = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null,
+    reason: js.Array[CodeableConcept] = null,
+    responsibleParty: js.Array[Reference] = null,
+    `type`: CodeableConcept = null
+  ): MedicationDispenseSubstitution = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("wasSubstituted")(wasSubstituted)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_wasSubstituted != null) __obj.updateDynamic("_wasSubstituted")(_wasSubstituted)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (responsibleParty != null) __obj.updateDynamic("responsibleParty")(responsibleParty)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[MedicationDispenseSubstitution]
+  }
+}
+

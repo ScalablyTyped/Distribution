@@ -13,3 +13,12 @@ trait IMediaProtectionServiceRequest extends js.Object {
   var `type`: java.lang.String
 }
 
+object IMediaProtectionServiceRequest {
+  @scala.inline
+  def apply(protectionSystem: java.lang.String, `type`: java.lang.String): IMediaProtectionServiceRequest = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("protectionSystem")(protectionSystem)
+    __obj.asInstanceOf[IMediaProtectionServiceRequest]
+  }
+}
+

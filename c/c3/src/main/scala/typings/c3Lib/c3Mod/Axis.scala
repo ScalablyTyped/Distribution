@@ -15,3 +15,20 @@ trait Axis extends js.Object {
   var y2: js.UndefOr[YAxisConfiguration] = js.undefined
 }
 
+object Axis {
+  @scala.inline
+  def apply(
+    rotated: js.UndefOr[scala.Boolean] = js.undefined,
+    x: XAxisConfiguration = null,
+    y: YAxisConfiguration = null,
+    y2: YAxisConfiguration = null
+  ): Axis = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(rotated)) __obj.updateDynamic("rotated")(rotated)
+    if (x != null) __obj.updateDynamic("x")(x)
+    if (y != null) __obj.updateDynamic("y")(y)
+    if (y2 != null) __obj.updateDynamic("y2")(y2)
+    __obj.asInstanceOf[Axis]
+  }
+}
+

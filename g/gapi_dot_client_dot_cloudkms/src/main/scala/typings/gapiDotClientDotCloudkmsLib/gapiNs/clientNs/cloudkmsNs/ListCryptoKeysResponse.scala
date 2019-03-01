@@ -17,3 +17,18 @@ trait ListCryptoKeysResponse extends js.Object {
   var totalSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListCryptoKeysResponse {
+  @scala.inline
+  def apply(
+    cryptoKeys: js.Array[CryptoKey] = null,
+    nextPageToken: java.lang.String = null,
+    totalSize: scala.Int | scala.Double = null
+  ): ListCryptoKeysResponse = {
+    val __obj = js.Dynamic.literal()
+    if (cryptoKeys != null) __obj.updateDynamic("cryptoKeys")(cryptoKeys)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListCryptoKeysResponse]
+  }
+}
+

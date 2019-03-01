@@ -24,3 +24,30 @@ trait ojDiagramNodeSettableProperties
   ] = js.undefined
 }
 
+object ojDiagramNodeSettableProperties {
+  @scala.inline
+  def apply(
+    categories: js.Array[java.lang.String] = null,
+    descendantsConnectivity: atOracleOraclejetLib.atOracleOraclejetLibStrings.connected | atOracleOraclejetLib.atOracleOraclejetLibStrings.disjoint | atOracleOraclejetLib.atOracleOraclejetLibStrings.unknown = null,
+    icon: atOracleOraclejetLib.Anon_BorderColorBorderRadiusBorderWidth = null,
+    label: java.lang.String = null,
+    labelStyle: js.Object = null,
+    overview: atOracleOraclejetLib.Anon_IconAnonCircle = null,
+    selectable: atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.off = null,
+    shortDesc: java.lang.String = null,
+    showDisclosure: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off = null
+  ): ojDiagramNodeSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (descendantsConnectivity != null) __obj.updateDynamic("descendantsConnectivity")(descendantsConnectivity.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (labelStyle != null) __obj.updateDynamic("labelStyle")(labelStyle)
+    if (overview != null) __obj.updateDynamic("overview")(overview)
+    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (shortDesc != null) __obj.updateDynamic("shortDesc")(shortDesc)
+    if (showDisclosure != null) __obj.updateDynamic("showDisclosure")(showDisclosure.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ojDiagramNodeSettableProperties]
+  }
+}
+

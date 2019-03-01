@@ -14,3 +14,12 @@ trait HorizontalPodAutoscaling extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HorizontalPodAutoscaling {
+  @scala.inline
+  def apply(disabled: js.UndefOr[scala.Boolean] = js.undefined): HorizontalPodAutoscaling = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    __obj.asInstanceOf[HorizontalPodAutoscaling]
+  }
+}
+

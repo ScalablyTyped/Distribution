@@ -10,3 +10,17 @@ trait ApplicationsResource extends js.Object {
   def get(request: gapiDotClientDotAndroidmanagementLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Application]
 }
 
+object ApplicationsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Application]
+    ]
+  ): ApplicationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[ApplicationsResource]
+  }
+}
+

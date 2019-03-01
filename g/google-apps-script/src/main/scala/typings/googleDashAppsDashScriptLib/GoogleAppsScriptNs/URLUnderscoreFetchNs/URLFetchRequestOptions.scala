@@ -55,3 +55,30 @@ trait URLFetchRequestOptions extends js.Object {
   var validateHttpsCertificates: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object URLFetchRequestOptions {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String = null,
+    escaping: js.UndefOr[scala.Boolean] = js.undefined,
+    followRedirects: js.UndefOr[scala.Boolean] = js.undefined,
+    headers: js.Object = null,
+    method: googleDashAppsDashScriptLib.googleDashAppsDashScriptLibStrings.get | googleDashAppsDashScriptLib.googleDashAppsDashScriptLibStrings.delete | googleDashAppsDashScriptLib.googleDashAppsDashScriptLibStrings.patch | googleDashAppsDashScriptLib.googleDashAppsDashScriptLibStrings.post | googleDashAppsDashScriptLib.googleDashAppsDashScriptLibStrings.put = null,
+    muteHttpExceptions: js.UndefOr[scala.Boolean] = js.undefined,
+    payload: java.lang.String | js.Object | googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Blob = null,
+    useIntranet: js.UndefOr[scala.Boolean] = js.undefined,
+    validateHttpsCertificates: js.UndefOr[scala.Boolean] = js.undefined
+  ): URLFetchRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (!js.isUndefined(escaping)) __obj.updateDynamic("escaping")(escaping)
+    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (!js.isUndefined(muteHttpExceptions)) __obj.updateDynamic("muteHttpExceptions")(muteHttpExceptions)
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (!js.isUndefined(useIntranet)) __obj.updateDynamic("useIntranet")(useIntranet)
+    if (!js.isUndefined(validateHttpsCertificates)) __obj.updateDynamic("validateHttpsCertificates")(validateHttpsCertificates)
+    __obj.asInstanceOf[URLFetchRequestOptions]
+  }
+}
+

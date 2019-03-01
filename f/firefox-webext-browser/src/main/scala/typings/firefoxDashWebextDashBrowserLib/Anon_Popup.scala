@@ -21,3 +21,18 @@ trait Anon_Popup extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Popup {
+  @scala.inline
+  def apply(
+    popup: java.lang.String = null,
+    tabId: scala.Int | scala.Double = null,
+    windowId: scala.Int | scala.Double = null
+  ): Anon_Popup = {
+    val __obj = js.Dynamic.literal()
+    if (popup != null) __obj.updateDynamic("popup")(popup)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Popup]
+  }
+}
+

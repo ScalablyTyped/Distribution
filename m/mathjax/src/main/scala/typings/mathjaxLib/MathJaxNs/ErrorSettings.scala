@@ -17,3 +17,13 @@ trait ErrorSettings extends js.Object {
   var style: js.UndefOr[js.Any] = js.undefined
 }
 
+object ErrorSettings {
+  @scala.inline
+  def apply(message: js.Array[java.lang.String] = null, style: js.Any = null): ErrorSettings = {
+    val __obj = js.Dynamic.literal()
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ErrorSettings]
+  }
+}
+

@@ -11,3 +11,13 @@ trait Anon_Args extends js.Object {
   def teardown(): scala.Unit
 }
 
+object Anon_Args {
+  @scala.inline
+  def apply(teardown: js.Function0[scala.Unit], update: js.Function1[/* repeated */ js.Any, scala.Unit] = null): Anon_Args = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("teardown")(teardown)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Anon_Args]
+  }
+}
+

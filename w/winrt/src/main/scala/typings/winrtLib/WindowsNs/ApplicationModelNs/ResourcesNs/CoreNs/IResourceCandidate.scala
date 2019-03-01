@@ -15,3 +15,28 @@ trait IResourceCandidate extends js.Object {
   def getValueAsFileAsync(): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFile]
 }
 
+object IResourceCandidate {
+  @scala.inline
+  def apply(
+    getQualifierValue: js.Function1[java.lang.String, java.lang.String],
+    getValueAsFileAsync: js.Function0[
+      winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StorageFile]
+    ],
+    isDefault: scala.Boolean,
+    isMatch: scala.Boolean,
+    isMatchAsDefault: scala.Boolean,
+    qualifiers: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ResourceQualifier],
+    valueAsString: java.lang.String
+  ): IResourceCandidate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getQualifierValue")(getQualifierValue)
+    __obj.updateDynamic("getValueAsFileAsync")(getValueAsFileAsync)
+    __obj.updateDynamic("isDefault")(isDefault)
+    __obj.updateDynamic("isMatch")(isMatch)
+    __obj.updateDynamic("isMatchAsDefault")(isMatchAsDefault)
+    __obj.updateDynamic("qualifiers")(qualifiers)
+    __obj.updateDynamic("valueAsString")(valueAsString)
+    __obj.asInstanceOf[IResourceCandidate]
+  }
+}
+

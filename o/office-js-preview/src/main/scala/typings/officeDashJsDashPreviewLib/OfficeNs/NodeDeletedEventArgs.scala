@@ -42,3 +42,14 @@ trait NodeDeletedEventArgs extends js.Object {
   var oldNode: CustomXmlNode
 }
 
+object NodeDeletedEventArgs {
+  @scala.inline
+  def apply(isUndoRedo: scala.Boolean, oldNextSibling: CustomXmlNode, oldNode: CustomXmlNode): NodeDeletedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isUndoRedo")(isUndoRedo)
+    __obj.updateDynamic("oldNextSibling")(oldNextSibling)
+    __obj.updateDynamic("oldNode")(oldNode)
+    __obj.asInstanceOf[NodeDeletedEventArgs]
+  }
+}
+

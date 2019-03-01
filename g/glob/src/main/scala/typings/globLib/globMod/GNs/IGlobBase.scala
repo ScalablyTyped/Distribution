@@ -18,3 +18,30 @@ trait IGlobBase extends js.Object {
   var symlinks: org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]]
 }
 
+object IGlobBase {
+  @scala.inline
+  def apply(
+    aborted: scala.Boolean,
+    cache: org.scalablytyped.runtime.StringDictionary[
+      scala.Boolean | globLib.globLibStrings.DIR | globLib.globLibStrings.FILE | js.Array[java.lang.String]
+    ],
+    found: js.Array[java.lang.String],
+    minimatch: minimatchLib.minimatchMod.MNs.IMinimatch,
+    options: IOptions,
+    realpathCache: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    statCache: org.scalablytyped.runtime.StringDictionary[js.UndefOr[globLib.globLibNumbers.`false` | globLib.Anon_IsDirectory]],
+    symlinks: org.scalablytyped.runtime.StringDictionary[js.UndefOr[scala.Boolean]]
+  ): IGlobBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aborted")(aborted)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("found")(found)
+    __obj.updateDynamic("minimatch")(minimatch)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("realpathCache")(realpathCache)
+    __obj.updateDynamic("statCache")(statCache)
+    __obj.updateDynamic("symlinks")(symlinks)
+    __obj.asInstanceOf[IGlobBase]
+  }
+}
+

@@ -28,3 +28,22 @@ trait ResumableFileObject extends js.Object {
   var uuid: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ResumableFileObject {
+  @scala.inline
+  def apply(
+    customResumeData: js.Any = null,
+    name: java.lang.String = null,
+    remaining: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null,
+    uuid: scala.Int | scala.Double = null
+  ): ResumableFileObject = {
+    val __obj = js.Dynamic.literal()
+    if (customResumeData != null) __obj.updateDynamic("customResumeData")(customResumeData)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (remaining != null) __obj.updateDynamic("remaining")(remaining.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (uuid != null) __obj.updateDynamic("uuid")(uuid.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResumableFileObject]
+  }
+}
+

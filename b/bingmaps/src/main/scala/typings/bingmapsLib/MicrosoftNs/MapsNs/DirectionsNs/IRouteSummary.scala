@@ -23,3 +23,24 @@ trait IRouteSummary extends js.Object {
   var timeWithTraffic: scala.Double
 }
 
+object IRouteSummary {
+  @scala.inline
+  def apply(
+    distance: scala.Double,
+    monetaryCost: scala.Double,
+    northEast: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    southWest: bingmapsLib.MicrosoftNs.MapsNs.Location,
+    time: scala.Double,
+    timeWithTraffic: scala.Double
+  ): IRouteSummary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("monetaryCost")(monetaryCost)
+    __obj.updateDynamic("northEast")(northEast)
+    __obj.updateDynamic("southWest")(southWest)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("timeWithTraffic")(timeWithTraffic)
+    __obj.asInstanceOf[IRouteSummary]
+  }
+}
+

@@ -104,3 +104,61 @@ trait XStringResourceResolver
   def resolveStringForLocale(ResourceID: java.lang.String, locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale): java.lang.String
 }
 
+object XStringResourceResolver {
+  @scala.inline
+  def apply(
+    CurrentLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    DefaultLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Locales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    ResourceIDs: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    addModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    getCurrentLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getDefaultLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getLocales: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    getResourceIDs: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getResourceIDsForLocale: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    hasEntryForId: js.Function1[java.lang.String, scala.Boolean],
+    hasEntryForIdAndLocale: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeModifyListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XModifyListener, scala.Unit],
+    resolveString: js.Function1[java.lang.String, java.lang.String],
+    resolveStringForLocale: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      java.lang.String
+    ]
+  ): XStringResourceResolver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CurrentLocale")(CurrentLocale)
+    __obj.updateDynamic("DefaultLocale")(DefaultLocale)
+    __obj.updateDynamic("Locales")(Locales)
+    __obj.updateDynamic("ResourceIDs")(ResourceIDs)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addModifyListener")(addModifyListener)
+    __obj.updateDynamic("getCurrentLocale")(getCurrentLocale)
+    __obj.updateDynamic("getDefaultLocale")(getDefaultLocale)
+    __obj.updateDynamic("getLocales")(getLocales)
+    __obj.updateDynamic("getResourceIDs")(getResourceIDs)
+    __obj.updateDynamic("getResourceIDsForLocale")(getResourceIDsForLocale)
+    __obj.updateDynamic("hasEntryForId")(hasEntryForId)
+    __obj.updateDynamic("hasEntryForIdAndLocale")(hasEntryForIdAndLocale)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeModifyListener")(removeModifyListener)
+    __obj.updateDynamic("resolveString")(resolveString)
+    __obj.updateDynamic("resolveStringForLocale")(resolveStringForLocale)
+    __obj.asInstanceOf[XStringResourceResolver]
+  }
+}
+

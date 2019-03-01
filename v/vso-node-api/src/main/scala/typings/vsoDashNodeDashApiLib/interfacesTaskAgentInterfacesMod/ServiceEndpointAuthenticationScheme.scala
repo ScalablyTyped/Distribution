@@ -12,3 +12,20 @@ trait ServiceEndpointAuthenticationScheme extends js.Object {
   var scheme: java.lang.String
 }
 
+object ServiceEndpointAuthenticationScheme {
+  @scala.inline
+  def apply(
+    authorizationHeaders: js.Array[AuthorizationHeader],
+    displayName: java.lang.String,
+    inputDescriptors: js.Array[vsoDashNodeDashApiLib.interfacesCommonFormInputInterfacesMod.InputDescriptor],
+    scheme: java.lang.String
+  ): ServiceEndpointAuthenticationScheme = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authorizationHeaders")(authorizationHeaders)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("inputDescriptors")(inputDescriptors)
+    __obj.updateDynamic("scheme")(scheme)
+    __obj.asInstanceOf[ServiceEndpointAuthenticationScheme]
+  }
+}
+

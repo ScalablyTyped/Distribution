@@ -10,3 +10,12 @@ trait ListNamespacesResponse extends js.Object {
   var namespaces: js.UndefOr[js.Array[Namespace]] = js.undefined
 }
 
+object ListNamespacesResponse {
+  @scala.inline
+  def apply(namespaces: js.Array[Namespace] = null): ListNamespacesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (namespaces != null) __obj.updateDynamic("namespaces")(namespaces)
+    __obj.asInstanceOf[ListNamespacesResponse]
+  }
+}
+

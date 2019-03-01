@@ -13,88 +13,88 @@ object prosemirrorDashTestDashBuilderLibStrings {
   sealed trait ProsemirrorTestBuilder extends js.Object
   
   @js.native
-  sealed trait a extends js.Object
+  sealed trait a extends TestMarksUnion
   
   @js.native
-  sealed trait blockquote extends js.Object
+  sealed trait blockquote extends TestNodesUnion
   
   @js.native
-  sealed trait br extends js.Object
+  sealed trait br extends TestNodesUnion
   
   @js.native
-  sealed trait bullet_list extends js.Object
+  sealed trait bullet_list extends TestNodesUnion
   
   @js.native
-  sealed trait code extends js.Object
+  sealed trait code extends TestMarksUnion
   
   @js.native
-  sealed trait code_block extends js.Object
+  sealed trait code_block extends TestNodesUnion
   
   @js.native
-  sealed trait doc extends js.Object
+  sealed trait doc extends TestNodesUnion
   
   @js.native
-  sealed trait em extends js.Object
+  sealed trait em extends TestMarksUnion
   
   @js.native
-  sealed trait h1 extends js.Object
+  sealed trait h1 extends TestNodesUnion
   
   @js.native
-  sealed trait h2 extends js.Object
+  sealed trait h2 extends TestNodesUnion
   
   @js.native
-  sealed trait h3 extends js.Object
+  sealed trait h3 extends TestNodesUnion
   
   @js.native
-  sealed trait hard_break extends js.Object
+  sealed trait hard_break extends TestNodesUnion
   
   @js.native
-  sealed trait heading extends js.Object
+  sealed trait heading extends TestNodesUnion
   
   @js.native
-  sealed trait horizontal_rule extends js.Object
+  sealed trait horizontal_rule extends TestNodesUnion
   
   @js.native
-  sealed trait hr extends js.Object
+  sealed trait hr extends TestNodesUnion
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image extends TestNodesUnion
   
   @js.native
-  sealed trait img extends js.Object
+  sealed trait img extends TestNodesUnion
   
   @js.native
-  sealed trait li extends js.Object
+  sealed trait li extends TestNodesUnion
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link extends TestMarksUnion
   
   @js.native
-  sealed trait list_item extends js.Object
+  sealed trait list_item extends TestNodesUnion
   
   @js.native
-  sealed trait ol extends js.Object
+  sealed trait ol extends TestNodesUnion
   
   @js.native
-  sealed trait ordered_list extends js.Object
+  sealed trait ordered_list extends TestNodesUnion
   
   @js.native
-  sealed trait p extends js.Object
+  sealed trait p extends TestNodesUnion
   
   @js.native
-  sealed trait paragraph extends js.Object
+  sealed trait paragraph extends TestNodesUnion
   
   @js.native
-  sealed trait pre extends js.Object
+  sealed trait pre extends TestNodesUnion
   
   @js.native
-  sealed trait strong extends js.Object
+  sealed trait strong extends TestMarksUnion
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text extends TestNodesUnion
   
   @js.native
-  sealed trait ul extends js.Object
+  sealed trait ul extends TestNodesUnion
   
   @scala.inline
   def Builder: Builder = "Builder".asInstanceOf[Builder]

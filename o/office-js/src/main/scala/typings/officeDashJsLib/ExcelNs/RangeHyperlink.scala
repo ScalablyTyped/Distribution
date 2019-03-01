@@ -42,3 +42,20 @@ trait RangeHyperlink extends js.Object {
   var textToDisplay: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RangeHyperlink {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    documentReference: java.lang.String = null,
+    screenTip: java.lang.String = null,
+    textToDisplay: java.lang.String = null
+  ): RangeHyperlink = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (documentReference != null) __obj.updateDynamic("documentReference")(documentReference)
+    if (screenTip != null) __obj.updateDynamic("screenTip")(screenTip)
+    if (textToDisplay != null) __obj.updateDynamic("textToDisplay")(textToDisplay)
+    __obj.asInstanceOf[RangeHyperlink]
+  }
+}
+

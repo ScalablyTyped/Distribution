@@ -10,3 +10,13 @@ trait OpenReturn extends js.Object {
   var dismissedAction: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OpenReturn {
+  @scala.inline
+  def apply(app: java.lang.String = null, dismissedAction: js.UndefOr[scala.Boolean] = js.undefined): OpenReturn = {
+    val __obj = js.Dynamic.literal()
+    if (app != null) __obj.updateDynamic("app")(app)
+    if (!js.isUndefined(dismissedAction)) __obj.updateDynamic("dismissedAction")(dismissedAction)
+    __obj.asInstanceOf[OpenReturn]
+  }
+}
+

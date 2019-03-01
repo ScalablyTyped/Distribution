@@ -19,3 +19,32 @@ trait PlaylistItemsResource extends js.Object {
   def update(request: gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwner): gapiDotClientLib.gapiNs.clientNs.Request[PlaylistItem]
 }
 
+object PlaylistItemsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwner, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlaylistItem]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyMaxResultsOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlaylistItemListResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsKeyOauthtokenOnBehalfOfContentOwner, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PlaylistItem]
+    ]
+  ): PlaylistItemsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[PlaylistItemsResource]
+  }
+}
+

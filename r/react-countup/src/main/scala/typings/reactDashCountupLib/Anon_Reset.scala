@@ -11,3 +11,14 @@ trait Anon_Reset extends js.Object {
   def update(): scala.Unit
 }
 
+object Anon_Reset {
+  @scala.inline
+  def apply(reset: js.Function0[scala.Unit], start: js.Function0[scala.Unit], update: js.Function0[scala.Unit]): Anon_Reset = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Anon_Reset]
+  }
+}
+

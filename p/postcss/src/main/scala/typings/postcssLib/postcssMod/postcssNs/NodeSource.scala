@@ -17,3 +17,14 @@ trait NodeSource extends js.Object {
   var start: js.UndefOr[postcssLib.Anon_ColumnLine] = js.undefined
 }
 
+object NodeSource {
+  @scala.inline
+  def apply(input: Input, end: postcssLib.Anon_ColumnLine = null, start: postcssLib.Anon_ColumnLine = null): NodeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[NodeSource]
+  }
+}
+

@@ -102,3 +102,31 @@ import scala.scalajs.js.annotation._
   def isStartOfWord(): scala.Boolean
 }
 
+object TextCursor {
+  @scala.inline
+  def apply(
+    XDocumentInsertable: activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XDocumentInsertable = null,
+    XMultiPropertyStates: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XMultiPropertyStates = null,
+    XParagraphCursor: XParagraphCursor = null,
+    XSentenceCursor: XSentenceCursor = null,
+    XSortable: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XSortable = null,
+    XWordCursor: XWordCursor = null,
+    getPropertyStates: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
+    ],
+    TextRange: TextRange = null
+  ): TextCursor = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XDocumentInsertable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XMultiPropertyStates)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XParagraphCursor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSentenceCursor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XSortable)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XWordCursor)
+    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
+    js.Dynamic.global.Object.assign(__obj, TextRange)
+    __obj.asInstanceOf[TextCursor]
+  }
+}
+

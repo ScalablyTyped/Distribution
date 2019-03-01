@@ -26,3 +26,32 @@ trait LiveChatMessageListResponse extends js.Object {
   var visitorId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LiveChatMessageListResponse {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    eventId: java.lang.String = null,
+    items: js.Array[LiveChatMessage] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    offlineAt: java.lang.String = null,
+    pageInfo: PageInfo = null,
+    pollingIntervalMillis: scala.Int | scala.Double = null,
+    tokenPagination: js.Any = null,
+    visitorId: java.lang.String = null
+  ): LiveChatMessageListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (offlineAt != null) __obj.updateDynamic("offlineAt")(offlineAt)
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
+    if (pollingIntervalMillis != null) __obj.updateDynamic("pollingIntervalMillis")(pollingIntervalMillis.asInstanceOf[js.Any])
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
+    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId)
+    __obj.asInstanceOf[LiveChatMessageListResponse]
+  }
+}
+

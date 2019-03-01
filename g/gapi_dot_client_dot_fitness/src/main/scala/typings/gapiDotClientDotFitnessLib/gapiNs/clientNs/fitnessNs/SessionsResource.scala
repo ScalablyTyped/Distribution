@@ -14,3 +14,27 @@ trait SessionsResource extends js.Object {
   def update(request: gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillisFields): gapiDotClientLib.gapiNs.clientNs.Request[Session]
 }
 
+object SessionsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillisFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    list: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltEndTime, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListSessionsResponse]
+    ],
+    update: js.Function1[
+      gapiDotClientDotFitnessLib.Anon_AltCurrentTimeMillisFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Session]
+    ]
+  ): SessionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[SessionsResource]
+  }
+}
+

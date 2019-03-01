@@ -24,3 +24,15 @@ trait SliceClickedEventUIParam extends js.Object {
   var selected: js.UndefOr[js.Any] = js.undefined
 }
 
+object SliceClickedEventUIParam {
+  @scala.inline
+  def apply(index: js.Any = null, item: js.Any = null, owner: js.Any = null, selected: js.Any = null): SliceClickedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (selected != null) __obj.updateDynamic("selected")(selected)
+    __obj.asInstanceOf[SliceClickedEventUIParam]
+  }
+}
+

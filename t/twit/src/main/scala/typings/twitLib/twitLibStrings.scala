@@ -19,31 +19,39 @@ object twitLibStrings {
   sealed trait medium extends js.Object
   
   @js.native
-  sealed trait mixed extends js.Object
+  sealed trait mixed
+    extends twitLib.twitMod.TwitNs.TwitterNs.ResultType
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait popular extends js.Object
+  sealed trait popular
+    extends twitLib.twitMod.TwitNs.TwitterNs.ResultType
   
   @js.native
-  sealed trait recent extends js.Object
+  sealed trait recent
+    extends twitLib.twitMod.TwitNs.TwitterNs.ResultType
   
   @js.native
-  sealed trait site extends js.Object
+  sealed trait site
+    extends twitLib.twitMod.TwitNs.StreamEndpoint
   
   @js.native
-  sealed trait `statuses/filter` extends js.Object
+  sealed trait `statuses/filter`
+    extends twitLib.twitMod.TwitNs.StreamEndpoint
   
   @js.native
-  sealed trait `statuses/firehose` extends js.Object
+  sealed trait `statuses/firehose`
+    extends twitLib.twitMod.TwitNs.StreamEndpoint
   
   @js.native
-  sealed trait `statuses/sample` extends js.Object
+  sealed trait `statuses/sample`
+    extends twitLib.twitMod.TwitNs.StreamEndpoint
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user
+    extends twitLib.twitMod.TwitNs.StreamEndpoint
   
   @scala.inline
   def crop: crop = "crop".asInstanceOf[crop]

@@ -38,3 +38,28 @@ trait Transaction extends js.Object {
   def undo(): scala.Unit
 }
 
+object Transaction {
+  @scala.inline
+  def apply(
+    canRedo: js.Function0[scala.Boolean],
+    canUndo: js.Function0[scala.Boolean],
+    changes: List[ChangedEvent],
+    clear: js.Function0[scala.Unit],
+    isComplete: scala.Boolean,
+    name: java.lang.String,
+    redo: js.Function0[scala.Unit],
+    undo: js.Function0[scala.Unit]
+  ): Transaction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canRedo")(canRedo)
+    __obj.updateDynamic("canUndo")(canUndo)
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("isComplete")(isComplete)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("redo")(redo)
+    __obj.updateDynamic("undo")(undo)
+    __obj.asInstanceOf[Transaction]
+  }
+}
+

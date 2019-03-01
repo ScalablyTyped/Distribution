@@ -10,3 +10,17 @@ trait ArchiveResource extends js.Object {
   def insert(request: gapiDotClientDotGroupsmigrationLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Groups]
 }
 
+object ArchiveResource {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotClientDotGroupsmigrationLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Groups]
+    ]
+  ): ArchiveResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.asInstanceOf[ArchiveResource]
+  }
+}
+

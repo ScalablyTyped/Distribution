@@ -44,3 +44,22 @@ trait HyperlinkCollectionLoadOptions extends js.Object {
   var subAddress: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HyperlinkCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    address: js.UndefOr[scala.Boolean] = js.undefined,
+    description: js.UndefOr[scala.Boolean] = js.undefined,
+    extraInfo: js.UndefOr[scala.Boolean] = js.undefined,
+    subAddress: js.UndefOr[scala.Boolean] = js.undefined
+  ): HyperlinkCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(address)) __obj.updateDynamic("address")(address)
+    if (!js.isUndefined(description)) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(extraInfo)) __obj.updateDynamic("extraInfo")(extraInfo)
+    if (!js.isUndefined(subAddress)) __obj.updateDynamic("subAddress")(subAddress)
+    __obj.asInstanceOf[HyperlinkCollectionLoadOptions]
+  }
+}
+

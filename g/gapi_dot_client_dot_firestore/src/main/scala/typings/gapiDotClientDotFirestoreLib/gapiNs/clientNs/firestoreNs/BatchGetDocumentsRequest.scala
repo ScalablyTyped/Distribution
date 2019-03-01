@@ -36,3 +36,22 @@ trait BatchGetDocumentsRequest extends js.Object {
   var transaction: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BatchGetDocumentsRequest {
+  @scala.inline
+  def apply(
+    documents: js.Array[java.lang.String] = null,
+    mask: DocumentMask = null,
+    newTransaction: TransactionOptions = null,
+    readTime: java.lang.String = null,
+    transaction: java.lang.String = null
+  ): BatchGetDocumentsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (documents != null) __obj.updateDynamic("documents")(documents)
+    if (mask != null) __obj.updateDynamic("mask")(mask)
+    if (newTransaction != null) __obj.updateDynamic("newTransaction")(newTransaction)
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[BatchGetDocumentsRequest]
+  }
+}
+

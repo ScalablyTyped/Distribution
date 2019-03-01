@@ -10,3 +10,13 @@ trait CustomPropertyOption extends js.Object {
   var value: java.lang.String
 }
 
+object CustomPropertyOption {
+  @scala.inline
+  def apply(label: java.lang.String, value: java.lang.String): CustomPropertyOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CustomPropertyOption]
+  }
+}
+

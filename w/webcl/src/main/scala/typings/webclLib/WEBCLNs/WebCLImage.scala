@@ -10,3 +10,13 @@ trait WebCLImage extends WebCLMemoryObject {
   def getInfo(): WebCLImageDescriptor
 }
 
+object WebCLImage {
+  @scala.inline
+  def apply(getInfo: js.Function0[WebCLImageDescriptor], release: js.Function0[scala.Unit]): WebCLImage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getInfo")(getInfo)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[WebCLImage]
+  }
+}
+

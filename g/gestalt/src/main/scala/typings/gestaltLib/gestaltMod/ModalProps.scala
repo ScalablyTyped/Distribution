@@ -18,3 +18,28 @@ trait ModalProps extends js.Object {
   def onDismiss(): scala.Unit
 }
 
+object ModalProps {
+  @scala.inline
+  def apply(
+    accessibilityCloseLabel: java.lang.String,
+    accessibilityModalLabel: java.lang.String,
+    heading: java.lang.String,
+    onDismiss: js.Function0[scala.Unit],
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    role: gestaltLib.gestaltLibStrings.alertdialog | gestaltLib.gestaltLibStrings.dialog = null,
+    size: gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null
+  ): ModalProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessibilityCloseLabel")(accessibilityCloseLabel)
+    __obj.updateDynamic("accessibilityModalLabel")(accessibilityModalLabel)
+    __obj.updateDynamic("heading")(heading)
+    __obj.updateDynamic("onDismiss")(onDismiss)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (role != null) __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ModalProps]
+  }
+}
+

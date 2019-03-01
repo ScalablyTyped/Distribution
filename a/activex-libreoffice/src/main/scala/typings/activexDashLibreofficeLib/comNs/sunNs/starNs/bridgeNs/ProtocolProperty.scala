@@ -11,3 +11,13 @@ trait ProtocolProperty extends js.Object {
   var Value: js.Any
 }
 
+object ProtocolProperty {
+  @scala.inline
+  def apply(Name: java.lang.String, Value: js.Any): ProtocolProperty = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[ProtocolProperty]
+  }
+}
+

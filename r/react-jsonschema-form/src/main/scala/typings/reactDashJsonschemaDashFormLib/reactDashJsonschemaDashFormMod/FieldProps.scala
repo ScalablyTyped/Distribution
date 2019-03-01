@@ -24,3 +24,42 @@ trait FieldProps
   def onChange_MFieldProps(value: js.Any): scala.Unit
 }
 
+object FieldProps {
+  @scala.inline
+  def apply(
+    autofocus: scala.Boolean,
+    disabled: scala.Boolean,
+    errorSchema: js.Object,
+    formContext: js.Any,
+    formData: js.Any,
+    idSchema: IdSchema,
+    name: java.lang.String,
+    onChange: js.Function1[js.Any, scala.Unit],
+    readonly: scala.Boolean,
+    registry: reactDashJsonschemaDashFormLib.Anon_Definitions,
+    required: scala.Boolean,
+    schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6,
+    uiSchema: UiSchema,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): FieldProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autofocus")(autofocus)
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("errorSchema")(errorSchema)
+    __obj.updateDynamic("formContext")(formContext)
+    __obj.updateDynamic("formData")(formData)
+    __obj.updateDynamic("idSchema")(idSchema)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("readonly")(readonly)
+    __obj.updateDynamic("registry")(registry)
+    __obj.updateDynamic("required")(required)
+    __obj.updateDynamic("schema")(schema)
+    __obj.updateDynamic("uiSchema")(uiSchema)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[FieldProps]
+  }
+}
+

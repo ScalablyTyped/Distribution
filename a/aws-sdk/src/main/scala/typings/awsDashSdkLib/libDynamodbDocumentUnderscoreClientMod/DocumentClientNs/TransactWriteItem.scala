@@ -24,3 +24,20 @@ trait TransactWriteItem extends js.Object {
   var Update: js.UndefOr[Update] = js.undefined
 }
 
+object TransactWriteItem {
+  @scala.inline
+  def apply(
+    ConditionCheck: ConditionCheck = null,
+    Delete: Delete = null,
+    Put: Put = null,
+    Update: Update = null
+  ): TransactWriteItem = {
+    val __obj = js.Dynamic.literal()
+    if (ConditionCheck != null) __obj.updateDynamic("ConditionCheck")(ConditionCheck)
+    if (Delete != null) __obj.updateDynamic("Delete")(Delete)
+    if (Put != null) __obj.updateDynamic("Put")(Put)
+    if (Update != null) __obj.updateDynamic("Update")(Update)
+    __obj.asInstanceOf[TransactWriteItem]
+  }
+}
+

@@ -29,3 +29,22 @@ trait Exception extends js.Object {
   var stack: js.UndefOr[Stack] = js.undefined
 }
 
+object Exception {
+  @scala.inline
+  def apply(
+    innerExceptions: js.Array[Exception] = null,
+    kind: java.lang.String = null,
+    message: Message = null,
+    properties: PropertyBag = null,
+    stack: Stack = null
+  ): Exception = {
+    val __obj = js.Dynamic.literal()
+    if (innerExceptions != null) __obj.updateDynamic("innerExceptions")(innerExceptions)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[Exception]
+  }
+}
+

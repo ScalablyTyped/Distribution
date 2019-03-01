@@ -16,3 +16,28 @@ trait CodePath extends js.Object {
   var upper: CodePath | scala.Null
 }
 
+object CodePath {
+  @scala.inline
+  def apply(
+    childCodePaths: js.Array[CodePath],
+    currentSegments: js.Array[CodePathSegment],
+    finalSegments: js.Array[CodePathSegment],
+    id: java.lang.String,
+    initialSegment: CodePathSegment,
+    returnedSegments: js.Array[CodePathSegment],
+    thrownSegments: js.Array[CodePathSegment],
+    upper: CodePath = null
+  ): CodePath = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("childCodePaths")(childCodePaths)
+    __obj.updateDynamic("currentSegments")(currentSegments)
+    __obj.updateDynamic("finalSegments")(finalSegments)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("initialSegment")(initialSegment)
+    __obj.updateDynamic("returnedSegments")(returnedSegments)
+    __obj.updateDynamic("thrownSegments")(thrownSegments)
+    if (upper != null) __obj.updateDynamic("upper")(upper)
+    __obj.asInstanceOf[CodePath]
+  }
+}
+

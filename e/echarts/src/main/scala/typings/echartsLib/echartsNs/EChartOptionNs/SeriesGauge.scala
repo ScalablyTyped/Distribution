@@ -15,7 +15,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge
   */
-trait SeriesGauge extends js.Object {
+trait SeriesGauge extends Series {
   /**
     * Whether to enable animation.
     *
@@ -304,5 +304,76 @@ trait SeriesGauge extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-gauge.type
     */
   var `type`: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object SeriesGauge {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    axisLabel: echartsLib.Anon_BackgroundColorBorderColorBorderRadius = null,
+    axisLine: echartsLib.Anon_LineStyleShow = null,
+    axisTick: echartsLib.Anon_LengthLineStyle = null,
+    clockwise: js.UndefOr[scala.Boolean] = js.undefined,
+    detail: echartsLib.Anon_BackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
+    emphasis: echartsLib.Anon_ItemStyleAnonBorderColor = null,
+    endAngle: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    pointer: echartsLib.Anon_LengthShow = null,
+    radius: scala.Double | java.lang.String = null,
+    splitLine: echartsLib.Anon_Length = null,
+    splitNumber: scala.Int | scala.Double = null,
+    startAngle: scala.Int | scala.Double = null,
+    title: echartsLib.Anon_BackgroundColorBorderColorBorderRadiusBorderWidth = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    `type`: java.lang.String = null
+  ): SeriesGauge = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (axisLabel != null) __obj.updateDynamic("axisLabel")(axisLabel)
+    if (axisLine != null) __obj.updateDynamic("axisLine")(axisLine)
+    if (axisTick != null) __obj.updateDynamic("axisTick")(axisTick)
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (markArea != null) __obj.updateDynamic("markArea")(markArea)
+    if (markLine != null) __obj.updateDynamic("markLine")(markLine)
+    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pointer != null) __obj.updateDynamic("pointer")(pointer)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (splitLine != null) __obj.updateDynamic("splitLine")(splitLine)
+    if (splitNumber != null) __obj.updateDynamic("splitNumber")(splitNumber.asInstanceOf[js.Any])
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SeriesGauge]
+  }
 }
 

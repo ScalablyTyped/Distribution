@@ -16,3 +16,24 @@ trait RouteConfig extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RouteConfig {
+  @scala.inline
+  def apply(
+    component: reactLib.reactMod.ReactNs.ComponentType[RouteConfigComponentProps[_]] | reactLib.reactMod.ReactNs.ComponentType[js.Object] = null,
+    exact: js.UndefOr[scala.Boolean] = js.undefined,
+    location: historyLib.historyMod.Location[historyLib.historyMod.LocationState] = null,
+    path: java.lang.String = null,
+    routes: js.Array[RouteConfig] = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined
+  ): RouteConfig = {
+    val __obj = js.Dynamic.literal()
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(exact)) __obj.updateDynamic("exact")(exact)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (routes != null) __obj.updateDynamic("routes")(routes)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[RouteConfig]
+  }
+}
+

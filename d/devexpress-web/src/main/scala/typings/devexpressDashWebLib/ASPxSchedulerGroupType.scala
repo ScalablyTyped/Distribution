@@ -26,3 +26,14 @@ trait ASPxSchedulerGroupType extends js.Object {
   var Resource: java.lang.String
 }
 
+object ASPxSchedulerGroupType {
+  @scala.inline
+  def apply(Date: java.lang.String, None: java.lang.String, Resource: java.lang.String): ASPxSchedulerGroupType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Date")(Date)
+    __obj.updateDynamic("None")(None)
+    __obj.updateDynamic("Resource")(Resource)
+    __obj.asInstanceOf[ASPxSchedulerGroupType]
+  }
+}
+

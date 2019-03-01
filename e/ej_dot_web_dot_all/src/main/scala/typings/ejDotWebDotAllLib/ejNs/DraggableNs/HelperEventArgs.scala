@@ -14,3 +14,13 @@ trait HelperEventArgs extends js.Object {
   var sender: js.UndefOr[js.Any] = js.undefined
 }
 
+object HelperEventArgs {
+  @scala.inline
+  def apply(element: js.Any = null, sender: js.Any = null): HelperEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (sender != null) __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[HelperEventArgs]
+  }
+}
+

@@ -9,3 +9,12 @@ trait ICoreWindowResizeManagerStatics extends js.Object {
   def getForCurrentView(): CoreWindowResizeManager
 }
 
+object ICoreWindowResizeManagerStatics {
+  @scala.inline
+  def apply(getForCurrentView: js.Function0[CoreWindowResizeManager]): ICoreWindowResizeManagerStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getForCurrentView")(getForCurrentView)
+    __obj.asInstanceOf[ICoreWindowResizeManagerStatics]
+  }
+}
+

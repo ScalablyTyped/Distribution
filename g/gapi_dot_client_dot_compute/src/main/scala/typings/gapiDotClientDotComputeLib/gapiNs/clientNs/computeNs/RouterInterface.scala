@@ -20,3 +20,18 @@ trait RouterInterface extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RouterInterface {
+  @scala.inline
+  def apply(
+    ipRange: java.lang.String = null,
+    linkedVpnTunnel: java.lang.String = null,
+    name: java.lang.String = null
+  ): RouterInterface = {
+    val __obj = js.Dynamic.literal()
+    if (ipRange != null) __obj.updateDynamic("ipRange")(ipRange)
+    if (linkedVpnTunnel != null) __obj.updateDynamic("linkedVpnTunnel")(linkedVpnTunnel)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[RouterInterface]
+  }
+}
+

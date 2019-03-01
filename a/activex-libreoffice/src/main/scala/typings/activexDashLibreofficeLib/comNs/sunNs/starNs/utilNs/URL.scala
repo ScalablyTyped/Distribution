@@ -54,3 +54,34 @@ trait URL extends js.Object {
   var User: java.lang.String
 }
 
+object URL {
+  @scala.inline
+  def apply(
+    Arguments: java.lang.String,
+    Complete: java.lang.String,
+    Main: java.lang.String,
+    Mark: java.lang.String,
+    Name: java.lang.String,
+    Password: java.lang.String,
+    Path: java.lang.String,
+    Port: scala.Double,
+    Protocol: java.lang.String,
+    Server: java.lang.String,
+    User: java.lang.String
+  ): URL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Arguments")(Arguments)
+    __obj.updateDynamic("Complete")(Complete)
+    __obj.updateDynamic("Main")(Main)
+    __obj.updateDynamic("Mark")(Mark)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Password")(Password)
+    __obj.updateDynamic("Path")(Path)
+    __obj.updateDynamic("Port")(Port)
+    __obj.updateDynamic("Protocol")(Protocol)
+    __obj.updateDynamic("Server")(Server)
+    __obj.updateDynamic("User")(User)
+    __obj.asInstanceOf[URL]
+  }
+}
+

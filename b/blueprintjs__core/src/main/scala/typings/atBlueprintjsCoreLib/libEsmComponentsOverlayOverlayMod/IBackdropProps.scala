@@ -23,3 +23,20 @@ trait IBackdropProps extends js.Object {
   var hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IBackdropProps {
+  @scala.inline
+  def apply(
+    backdropClassName: java.lang.String = null,
+    backdropProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLDivElement] = null,
+    canOutsideClickClose: js.UndefOr[scala.Boolean] = js.undefined,
+    hasBackdrop: js.UndefOr[scala.Boolean] = js.undefined
+  ): IBackdropProps = {
+    val __obj = js.Dynamic.literal()
+    if (backdropClassName != null) __obj.updateDynamic("backdropClassName")(backdropClassName)
+    if (backdropProps != null) __obj.updateDynamic("backdropProps")(backdropProps)
+    if (!js.isUndefined(canOutsideClickClose)) __obj.updateDynamic("canOutsideClickClose")(canOutsideClickClose)
+    if (!js.isUndefined(hasBackdrop)) __obj.updateDynamic("hasBackdrop")(hasBackdrop)
+    __obj.asInstanceOf[IBackdropProps]
+  }
+}
+

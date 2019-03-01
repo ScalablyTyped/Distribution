@@ -18,3 +18,13 @@ trait FormSelectOptions extends js.Object {
   var dropdownOptions: stdLib.Partial[DropdownOptions]
 }
 
+object FormSelectOptions {
+  @scala.inline
+  def apply(classes: java.lang.String, dropdownOptions: stdLib.Partial[DropdownOptions]): FormSelectOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("classes")(classes)
+    __obj.updateDynamic("dropdownOptions")(dropdownOptions)
+    __obj.asInstanceOf[FormSelectOptions]
+  }
+}
+

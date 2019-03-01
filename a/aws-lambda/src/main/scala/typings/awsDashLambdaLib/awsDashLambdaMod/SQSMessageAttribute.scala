@@ -11,3 +11,14 @@ trait SQSMessageAttribute extends js.Object {
   var Value: java.lang.String
 }
 
+object SQSMessageAttribute {
+  @scala.inline
+  def apply(Name: java.lang.String, Type: java.lang.String, Value: java.lang.String): SQSMessageAttribute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("Value")(Value)
+    __obj.asInstanceOf[SQSMessageAttribute]
+  }
+}
+

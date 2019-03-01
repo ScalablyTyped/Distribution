@@ -21,3 +21,36 @@ trait ReduxToastrProps extends js.Object {
   var transitionOut: js.UndefOr[transitionOutType] = js.undefined
 }
 
+object ReduxToastrProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    closeOnToastrClick: js.UndefOr[scala.Boolean] = js.undefined,
+    confirmOptions: reactDashReduxDashToastrLib.Anon_CancelText = null,
+    newestOnTop: js.UndefOr[scala.Boolean] = js.undefined,
+    options: js.Any = null,
+    position: positionType = null,
+    preventDuplicates: js.UndefOr[scala.Boolean] = js.undefined,
+    progressBar: js.UndefOr[scala.Boolean] = js.undefined,
+    timeOut: scala.Int | scala.Double = null,
+    toastr: ToastrState = null,
+    transitionIn: transitionInType = null,
+    transitionOut: transitionOutType = null
+  ): ReduxToastrProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(closeOnToastrClick)) __obj.updateDynamic("closeOnToastrClick")(closeOnToastrClick)
+    if (confirmOptions != null) __obj.updateDynamic("confirmOptions")(confirmOptions)
+    if (!js.isUndefined(newestOnTop)) __obj.updateDynamic("newestOnTop")(newestOnTop)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(preventDuplicates)) __obj.updateDynamic("preventDuplicates")(preventDuplicates)
+    if (!js.isUndefined(progressBar)) __obj.updateDynamic("progressBar")(progressBar)
+    if (timeOut != null) __obj.updateDynamic("timeOut")(timeOut.asInstanceOf[js.Any])
+    if (toastr != null) __obj.updateDynamic("toastr")(toastr)
+    if (transitionIn != null) __obj.updateDynamic("transitionIn")(transitionIn)
+    if (transitionOut != null) __obj.updateDynamic("transitionOut")(transitionOut)
+    __obj.asInstanceOf[ReduxToastrProps]
+  }
+}
+

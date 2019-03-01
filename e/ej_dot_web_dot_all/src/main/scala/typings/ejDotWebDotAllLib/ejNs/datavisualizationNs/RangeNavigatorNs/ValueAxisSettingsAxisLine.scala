@@ -12,3 +12,12 @@ trait ValueAxisSettingsAxisLine extends js.Object {
   var visible: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ValueAxisSettingsAxisLine {
+  @scala.inline
+  def apply(visible: java.lang.String = null): ValueAxisSettingsAxisLine = {
+    val __obj = js.Dynamic.literal()
+    if (visible != null) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ValueAxisSettingsAxisLine]
+  }
+}
+

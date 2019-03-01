@@ -10,3 +10,13 @@ trait Anon_PropertiesValueAnonColorHeight extends js.Object {
   var value: js.Array[_]
 }
 
+object Anon_PropertiesValueAnonColorHeight {
+  @scala.inline
+  def apply(properties: Anon_ColorHeight, value: js.Array[_]): Anon_PropertiesValueAnonColorHeight = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_PropertiesValueAnonColorHeight]
+  }
+}
+

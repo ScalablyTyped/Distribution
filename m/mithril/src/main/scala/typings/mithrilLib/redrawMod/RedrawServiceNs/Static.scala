@@ -10,3 +10,16 @@ trait Static extends js.Object {
   var render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any
 }
 
+object Static {
+  @scala.inline
+  def apply(
+    redraw: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof redraw */ js.Any,
+    render: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof render */ js.Any
+  ): Static = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("redraw")(redraw)
+    __obj.updateDynamic("render")(render)
+    __obj.asInstanceOf[Static]
+  }
+}
+

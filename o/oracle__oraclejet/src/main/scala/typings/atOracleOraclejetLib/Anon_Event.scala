@@ -10,3 +10,16 @@ trait Anon_Event
   var event: stdLib.Event
 }
 
+object Anon_Event {
+  @scala.inline
+  def apply(
+    event: stdLib.Event,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Event = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Event]
+  }
+}
+

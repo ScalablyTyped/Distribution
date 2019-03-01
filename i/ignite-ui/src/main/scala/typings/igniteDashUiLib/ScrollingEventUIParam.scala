@@ -32,3 +32,24 @@ trait ScrollingEventUIParam extends js.Object {
   var stepY: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScrollingEventUIParam {
+  @scala.inline
+  def apply(
+    bigIncrement: scala.Int | scala.Double = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    owner: js.Any = null,
+    smallIncrement: scala.Int | scala.Double = null,
+    stepX: scala.Int | scala.Double = null,
+    stepY: scala.Int | scala.Double = null
+  ): ScrollingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (bigIncrement != null) __obj.updateDynamic("bigIncrement")(bigIncrement.asInstanceOf[js.Any])
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (smallIncrement != null) __obj.updateDynamic("smallIncrement")(smallIncrement.asInstanceOf[js.Any])
+    if (stepX != null) __obj.updateDynamic("stepX")(stepX.asInstanceOf[js.Any])
+    if (stepY != null) __obj.updateDynamic("stepY")(stepY.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScrollingEventUIParam]
+  }
+}
+

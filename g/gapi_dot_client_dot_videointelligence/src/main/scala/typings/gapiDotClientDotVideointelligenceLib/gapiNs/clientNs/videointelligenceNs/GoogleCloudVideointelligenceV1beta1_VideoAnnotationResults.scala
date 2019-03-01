@@ -24,3 +24,22 @@ trait GoogleCloudVideointelligenceV1beta1_VideoAnnotationResults extends js.Obje
   var shotAnnotations: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1beta1_VideoSegment]] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta1_VideoAnnotationResults {
+  @scala.inline
+  def apply(
+    error: GoogleRpc_Status = null,
+    inputUri: java.lang.String = null,
+    labelAnnotations: js.Array[GoogleCloudVideointelligenceV1beta1_LabelAnnotation] = null,
+    safeSearchAnnotations: js.Array[GoogleCloudVideointelligenceV1beta1_SafeSearchAnnotation] = null,
+    shotAnnotations: js.Array[GoogleCloudVideointelligenceV1beta1_VideoSegment] = null
+  ): GoogleCloudVideointelligenceV1beta1_VideoAnnotationResults = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri)
+    if (labelAnnotations != null) __obj.updateDynamic("labelAnnotations")(labelAnnotations)
+    if (safeSearchAnnotations != null) __obj.updateDynamic("safeSearchAnnotations")(safeSearchAnnotations)
+    if (shotAnnotations != null) __obj.updateDynamic("shotAnnotations")(shotAnnotations)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_VideoAnnotationResults]
+  }
+}
+

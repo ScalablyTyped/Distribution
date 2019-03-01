@@ -20,3 +20,13 @@ trait RedrivePolicy extends js.Object {
   var maxReceiveCount: scala.Double
 }
 
+object RedrivePolicy {
+  @scala.inline
+  def apply(deadLetterTargetArn: atPulumiAwsLib.arnMod.ARN, maxReceiveCount: scala.Double): RedrivePolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deadLetterTargetArn")(deadLetterTargetArn)
+    __obj.updateDynamic("maxReceiveCount")(maxReceiveCount)
+    __obj.asInstanceOf[RedrivePolicy]
+  }
+}
+

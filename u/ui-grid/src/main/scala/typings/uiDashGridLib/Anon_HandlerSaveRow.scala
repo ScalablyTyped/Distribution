@@ -23,3 +23,18 @@ trait Anon_HandlerSaveRow[TEntity] extends js.Object {
   ): scala.Unit
 }
 
+object Anon_HandlerSaveRow {
+  @scala.inline
+  def apply[TEntity](
+    saveRow: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.rowEditNs.saveRowHandler[TEntity], 
+      scala.Unit
+    ]
+  ): Anon_HandlerSaveRow[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("saveRow")(saveRow)
+    __obj.asInstanceOf[Anon_HandlerSaveRow[TEntity]]
+  }
+}
+

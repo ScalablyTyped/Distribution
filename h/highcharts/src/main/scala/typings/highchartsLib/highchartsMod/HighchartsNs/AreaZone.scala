@@ -34,3 +34,22 @@ trait AreaZone extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AreaZone {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    color: java.lang.String | Gradient = null,
+    dashStyle: java.lang.String = null,
+    fillColor: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): AreaZone = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (dashStyle != null) __obj.updateDynamic("dashStyle")(dashStyle)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AreaZone]
+  }
+}
+

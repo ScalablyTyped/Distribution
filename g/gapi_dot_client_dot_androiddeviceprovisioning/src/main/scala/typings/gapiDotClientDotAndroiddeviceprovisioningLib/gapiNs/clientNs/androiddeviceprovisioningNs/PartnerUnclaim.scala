@@ -14,3 +14,18 @@ trait PartnerUnclaim extends js.Object {
   var sectionType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PartnerUnclaim {
+  @scala.inline
+  def apply(
+    deviceId: java.lang.String = null,
+    deviceIdentifier: DeviceIdentifier = null,
+    sectionType: java.lang.String = null
+  ): PartnerUnclaim = {
+    val __obj = js.Dynamic.literal()
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier)
+    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType)
+    __obj.asInstanceOf[PartnerUnclaim]
+  }
+}
+

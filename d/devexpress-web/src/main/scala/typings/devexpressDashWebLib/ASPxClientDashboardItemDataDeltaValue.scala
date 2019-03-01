@@ -51,3 +51,32 @@ trait ASPxClientDashboardItemDataDeltaValue extends js.Object {
   def GetTargetValue(): ASPxClientDashboardItemDataMeasureValue
 }
 
+object ASPxClientDashboardItemDataDeltaValue {
+  @scala.inline
+  def apply(
+    GetAbsoluteVariation: js.Function0[ASPxClientDashboardItemDataMeasureValue],
+    GetActualValue: js.Function0[ASPxClientDashboardItemDataMeasureValue],
+    GetDisplaySubValue1: js.Function0[ASPxClientDashboardItemDataMeasureValue],
+    GetDisplaySubValue2: js.Function0[ASPxClientDashboardItemDataMeasureValue],
+    GetDisplayValue: js.Function0[ASPxClientDashboardItemDataMeasureValue],
+    GetIndicatorType: js.Function0[ASPxClientDashboardItemDataMeasureValue],
+    GetIsGood: js.Function0[ASPxClientDashboardItemDataMeasureValue],
+    GetPercentOfTarget: js.Function0[ASPxClientDashboardItemDataMeasureValue],
+    GetPercentVariation: js.Function0[ASPxClientDashboardItemDataMeasureValue],
+    GetTargetValue: js.Function0[ASPxClientDashboardItemDataMeasureValue]
+  ): ASPxClientDashboardItemDataDeltaValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetAbsoluteVariation")(GetAbsoluteVariation)
+    __obj.updateDynamic("GetActualValue")(GetActualValue)
+    __obj.updateDynamic("GetDisplaySubValue1")(GetDisplaySubValue1)
+    __obj.updateDynamic("GetDisplaySubValue2")(GetDisplaySubValue2)
+    __obj.updateDynamic("GetDisplayValue")(GetDisplayValue)
+    __obj.updateDynamic("GetIndicatorType")(GetIndicatorType)
+    __obj.updateDynamic("GetIsGood")(GetIsGood)
+    __obj.updateDynamic("GetPercentOfTarget")(GetPercentOfTarget)
+    __obj.updateDynamic("GetPercentVariation")(GetPercentVariation)
+    __obj.updateDynamic("GetTargetValue")(GetTargetValue)
+    __obj.asInstanceOf[ASPxClientDashboardItemDataDeltaValue]
+  }
+}
+

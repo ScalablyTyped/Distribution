@@ -15,3 +15,18 @@ trait Anon_BackwardClipDirectionClosestExclusive extends js.Object {
   ] = js.undefined
 }
 
+object Anon_BackwardClipDirectionClosestExclusive {
+  @scala.inline
+  def apply(
+    clipDirection: atomLib.atomLibStrings.backward | atomLib.atomLibStrings.forward | atomLib.atomLibStrings.closest = null,
+    exclusive: js.UndefOr[scala.Boolean] = js.undefined,
+    invalidate: atomLib.atomLibStrings.never | atomLib.atomLibStrings.surround | atomLib.atomLibStrings.overlap | atomLib.atomLibStrings.inside | atomLib.atomLibStrings.touch = null
+  ): Anon_BackwardClipDirectionClosestExclusive = {
+    val __obj = js.Dynamic.literal()
+    if (clipDirection != null) __obj.updateDynamic("clipDirection")(clipDirection.asInstanceOf[js.Any])
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BackwardClipDirectionClosestExclusive]
+  }
+}
+

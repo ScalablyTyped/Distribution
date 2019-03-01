@@ -12,3 +12,20 @@ trait AccordionUIParams extends js.Object {
   var oldPanel: jqueryuiLib.JQuery
 }
 
+object AccordionUIParams {
+  @scala.inline
+  def apply(
+    newHeader: jqueryuiLib.JQuery,
+    newPanel: jqueryuiLib.JQuery,
+    oldHeader: jqueryuiLib.JQuery,
+    oldPanel: jqueryuiLib.JQuery
+  ): AccordionUIParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newHeader")(newHeader)
+    __obj.updateDynamic("newPanel")(newPanel)
+    __obj.updateDynamic("oldHeader")(oldHeader)
+    __obj.updateDynamic("oldPanel")(oldPanel)
+    __obj.asInstanceOf[AccordionUIParams]
+  }
+}
+

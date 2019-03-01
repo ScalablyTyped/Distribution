@@ -18,3 +18,22 @@ trait DevToolsConfig[Instance, TextInstance] extends js.Object {
   var version: java.lang.String
 }
 
+object DevToolsConfig {
+  @scala.inline
+  def apply[Instance, TextInstance](
+    bundleType: BundleType,
+    rendererPackageName: java.lang.String,
+    version: java.lang.String,
+    findFiberByHostInstance: js.Function1[/* instance */ Instance | TextInstance, Fiber] = null,
+    getInspectorDataForViewTag: js.Function1[/* tag */ scala.Double, js.Object] = null
+  ): DevToolsConfig[Instance, TextInstance] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bundleType")(bundleType)
+    __obj.updateDynamic("rendererPackageName")(rendererPackageName)
+    __obj.updateDynamic("version")(version)
+    if (findFiberByHostInstance != null) __obj.updateDynamic("findFiberByHostInstance")(findFiberByHostInstance)
+    if (getInspectorDataForViewTag != null) __obj.updateDynamic("getInspectorDataForViewTag")(getInspectorDataForViewTag)
+    __obj.asInstanceOf[DevToolsConfig[Instance, TextInstance]]
+  }
+}
+

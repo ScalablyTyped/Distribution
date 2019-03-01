@@ -11,3 +11,12 @@ trait INDSendResult extends js.Object {
   var response: scala.Double
 }
 
+object INDSendResult {
+  @scala.inline
+  def apply(response: scala.Double): INDSendResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[INDSendResult]
+  }
+}
+

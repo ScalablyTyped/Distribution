@@ -30,3 +30,20 @@ trait UpdateCellsRequest extends js.Object {
   var start: js.UndefOr[GridCoordinate] = js.undefined
 }
 
+object UpdateCellsRequest {
+  @scala.inline
+  def apply(
+    fields: java.lang.String = null,
+    range: GridRange = null,
+    rows: js.Array[RowData] = null,
+    start: GridCoordinate = null
+  ): UpdateCellsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[UpdateCellsRequest]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonIncludeEventTypeInformation extends js.Object {
   var enumValues: Anon_IncludeEventTypeInformation
 }
 
+object Anon_EnumValuesAnonIncludeEventTypeInformation {
+  @scala.inline
+  def apply(enumValues: Anon_IncludeEventTypeInformation): Anon_EnumValuesAnonIncludeEventTypeInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonIncludeEventTypeInformation]
+  }
+}
+

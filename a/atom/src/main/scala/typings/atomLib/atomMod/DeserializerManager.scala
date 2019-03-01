@@ -12,3 +12,16 @@ trait DeserializerManager extends js.Object {
   def deserialize(state: js.Object): js.UndefOr[js.Object]
 }
 
+object DeserializerManager {
+  @scala.inline
+  def apply(
+    add: js.Function1[/* repeated */ Deserializer, Disposable],
+    deserialize: js.Function1[js.Object, js.UndefOr[js.Object]]
+  ): DeserializerManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("deserialize")(deserialize)
+    __obj.asInstanceOf[DeserializerManager]
+  }
+}
+

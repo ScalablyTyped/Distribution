@@ -10,3 +10,12 @@ trait UpdateContactGroupRequest extends js.Object {
   var contactGroup: js.UndefOr[ContactGroup] = js.undefined
 }
 
+object UpdateContactGroupRequest {
+  @scala.inline
+  def apply(contactGroup: ContactGroup = null): UpdateContactGroupRequest = {
+    val __obj = js.Dynamic.literal()
+    if (contactGroup != null) __obj.updateDynamic("contactGroup")(contactGroup)
+    __obj.asInstanceOf[UpdateContactGroupRequest]
+  }
+}
+

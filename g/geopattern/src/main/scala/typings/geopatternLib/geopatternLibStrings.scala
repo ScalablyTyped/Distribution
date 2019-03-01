@@ -7,52 +7,68 @@ import scala.scalajs.js.annotation._
 
 object geopatternLibStrings {
   @js.native
-  sealed trait chevrons extends js.Object
+  sealed trait chevrons
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait concentricCircles extends js.Object
+  sealed trait concentricCircles
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait diamonds extends js.Object
+  sealed trait diamonds
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait hexagons extends js.Object
+  sealed trait hexagons
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait mosaicSquares extends js.Object
+  sealed trait mosaicSquares
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait nestedSquares extends js.Object
+  sealed trait nestedSquares
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait octagons extends js.Object
+  sealed trait octagons
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait overlappingCircles extends js.Object
+  sealed trait overlappingCircles
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait overlappingRings extends js.Object
+  sealed trait overlappingRings
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait plaid extends js.Object
+  sealed trait plaid
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait plusSigns extends js.Object
+  sealed trait plusSigns
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait sineWaves extends js.Object
+  sealed trait sineWaves
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait squares extends js.Object
+  sealed trait squares
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait tessellation extends js.Object
+  sealed trait tessellation
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait triangles extends js.Object
+  sealed trait triangles
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @js.native
-  sealed trait xes extends js.Object
+  sealed trait xes
+    extends geopatternLib.geopatternMod.GeneratorType
   
   @scala.inline
   def chevrons: chevrons = "chevrons".asInstanceOf[chevrons]

@@ -18,3 +18,26 @@ trait ICordovaPluginEmailComposerOpenOptions extends js.Object {
   var to: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ICordovaPluginEmailComposerOpenOptions {
+  @scala.inline
+  def apply(
+    attachments: js.Array[_] = null,
+    bcc: js.Array[java.lang.String] = null,
+    body: java.lang.String = null,
+    cc: js.Array[java.lang.String] = null,
+    isHtml: js.UndefOr[scala.Boolean] = js.undefined,
+    subject: java.lang.String = null,
+    to: js.Array[java.lang.String] = null
+  ): ICordovaPluginEmailComposerOpenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (attachments != null) __obj.updateDynamic("attachments")(attachments)
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (cc != null) __obj.updateDynamic("cc")(cc)
+    if (!js.isUndefined(isHtml)) __obj.updateDynamic("isHtml")(isHtml)
+    if (subject != null) __obj.updateDynamic("subject")(subject)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[ICordovaPluginEmailComposerOpenOptions]
+  }
+}
+

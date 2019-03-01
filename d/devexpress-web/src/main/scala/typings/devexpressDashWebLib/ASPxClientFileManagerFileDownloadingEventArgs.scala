@@ -16,3 +16,13 @@ trait ASPxClientFileManagerFileDownloadingEventArgs extends ASPxClientFileManage
   var cancel: scala.Boolean
 }
 
+object ASPxClientFileManagerFileDownloadingEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, file: ASPxClientFileManagerFile): ASPxClientFileManagerFileDownloadingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("file")(file)
+    __obj.asInstanceOf[ASPxClientFileManagerFileDownloadingEventArgs]
+  }
+}
+

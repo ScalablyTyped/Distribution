@@ -7,223 +7,572 @@ import scala.scalajs.js.annotation._
 
 object atGoogleMapsLibStrings {
   @js.native
-  sealed trait `(cities)` extends js.Object
+  sealed trait `(cities)`
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteType
   
   @js.native
-  sealed trait `(regions)` extends js.Object
+  sealed trait `(regions)`
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteType
   
   @js.native
-  sealed trait APP extends js.Object
+  sealed trait APP
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceIdScope
   
   @js.native
-  sealed trait APPROXIMATE extends js.Object
+  sealed trait APPROXIMATE
+    extends atGoogleMapsLib.atGoogleMapsMod.LocationType
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingLocationType
   
   @js.native
-  sealed trait BUS extends js.Object
+  sealed trait BUS
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait CABLE_CAR extends js.Object
+  sealed trait CABLE_CAR
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait COMMUTER_TRAIN extends js.Object
+  sealed trait COMMUTER_TRAIN
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait FERRY extends js.Object
+  sealed trait FERRY
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait FUNICULAR extends js.Object
+  sealed trait FUNICULAR
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait GEOMETRIC_CENTER extends js.Object
+  sealed trait GEOMETRIC_CENTER
+    extends atGoogleMapsLib.atGoogleMapsMod.LocationType
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingLocationType
   
   @js.native
-  sealed trait GONDOLA_LIFT extends js.Object
+  sealed trait GONDOLA_LIFT
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait GOOGLE extends js.Object
+  sealed trait GOOGLE
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceIdScope
   
   @js.native
-  sealed trait HEAVY_RAIL extends js.Object
+  sealed trait HEAVY_RAIL
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait HIGH_SPEED_TRAIN extends js.Object
+  sealed trait HIGH_SPEED_TRAIN
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait INTERCITY_BUS extends js.Object
+  sealed trait INTERCITY_BUS
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait INVALID_REQUEST extends js.Object
+  sealed trait INVALID_REQUEST
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseTopLevelStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ElevationResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.QueryAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.SearchResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.TimeZoneResponseStatus
   
   @js.native
-  sealed trait KPH extends js.Object
+  sealed trait KPH
+    extends atGoogleMapsLib.atGoogleMapsMod.SpeedLimitUnit
   
   @js.native
-  sealed trait MAX_ELEMENTS_EXCEEDED extends js.Object
+  sealed trait MAX_ELEMENTS_EXCEEDED
+    extends atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseTopLevelStatus
   
   @js.native
-  sealed trait MAX_ROUTE_LENGTH_EXCEEDED extends js.Object
+  sealed trait MAX_ROUTE_LENGTH_EXCEEDED
+    extends atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseElementLevelStatus
   
   @js.native
-  sealed trait `MAX_ROUTE_LENGTH_EXCEEDED ` extends js.Object
+  sealed trait `MAX_ROUTE_LENGTH_EXCEEDED `
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
   
   @js.native
-  sealed trait MAX_WAYPOINTS_EXCEEDED extends js.Object
+  sealed trait MAX_WAYPOINTS_EXCEEDED
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
   
   @js.native
-  sealed trait METRO_RAIL extends js.Object
+  sealed trait METRO_RAIL
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait MONORAIL extends js.Object
+  sealed trait MONORAIL
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait MPH extends js.Object
+  sealed trait MPH
+    extends atGoogleMapsLib.atGoogleMapsMod.SpeedLimitUnit
   
   @js.native
-  sealed trait NOT_FOUND extends js.Object
+  sealed trait NOT_FOUND
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseElementLevelStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsResponseStatus
   
   @js.native
-  sealed trait OK extends js.Object
+  sealed trait OK
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseElementLevelStatus
+       with atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseTopLevelStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ElevationResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodedWaypointStatus
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.QueryAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.SearchResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.TimeZoneResponseStatus
   
   @js.native
-  sealed trait OTHER extends js.Object
+  sealed trait OTHER
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait OVER_DAILY_LIMIT extends js.Object
+  sealed trait OVER_DAILY_LIMIT
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseTopLevelStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ElevationResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.TimeZoneResponseStatus
   
   @js.native
-  sealed trait OVER_QUERY_LIMIT extends js.Object
+  sealed trait OVER_QUERY_LIMIT
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseTopLevelStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ElevationResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.QueryAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.SearchResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.TimeZoneResponseStatus
   
   @js.native
-  sealed trait RAIL extends js.Object
+  sealed trait RAIL
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait RANGE_INTERPOLATED extends js.Object
+  sealed trait RANGE_INTERPOLATED
+    extends atGoogleMapsLib.atGoogleMapsMod.LocationType
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingLocationType
   
   @js.native
-  sealed trait REQUEST_DENIED extends js.Object
+  sealed trait REQUEST_DENIED
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseTopLevelStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ElevationResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.QueryAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.SearchResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.TimeZoneResponseStatus
   
   @js.native
-  sealed trait ROOFTOP extends js.Object
+  sealed trait ROOFTOP
+    extends atGoogleMapsLib.atGoogleMapsMod.LocationType
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingLocationType
   
   @js.native
-  sealed trait SHARE_TAXI extends js.Object
+  sealed trait SHARE_TAXI
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait SUBWAY extends js.Object
+  sealed trait SUBWAY
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait TRAM extends js.Object
+  sealed trait TRAM
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait TROLLEYBUS extends js.Object
+  sealed trait TROLLEYBUS
+    extends atGoogleMapsLib.atGoogleMapsMod.VehicleType
   
   @js.native
-  sealed trait UNKNOWN_ERROR extends js.Object
+  sealed trait UNKNOWN_ERROR
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseTopLevelStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ElevationResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.QueryAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.SearchResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.TimeZoneResponseStatus
   
   @js.native
-  sealed trait ZERO_RESULTS extends js.Object
+  sealed trait ZERO_RESULTS
+    extends atGoogleMapsLib.atGoogleMapsMod.DirectionsReponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.DistanceMatrixResponseElementLevelStatus
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodedWaypointStatus
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceDetailsResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.QueryAutocompleteResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.ReverseGeocodingResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.SearchResponseStatus
+       with atGoogleMapsLib.atGoogleMapsMod.TimeZoneResponseStatus
   
   @js.native
-  sealed trait address extends js.Object
+  sealed trait accounting
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait address
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteType
   
   @js.native
   sealed trait address_components extends js.Object
   
   @js.native
-  sealed trait administrative_area_level_1 extends js.Object
+  sealed trait administrative_area_level_1
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait administrative_area_level_2 extends js.Object
+  sealed trait administrative_area_level_2
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait administrative_area_level_3 extends js.Object
+  sealed trait administrative_area_level_3
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait administrative_area_level_4 extends js.Object
+  sealed trait administrative_area_level_4
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait administrative_area_level_5 extends js.Object
+  sealed trait administrative_area_level_5
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
   sealed trait adr_address extends js.Object
   
   @js.native
-  sealed trait airport extends js.Object
+  sealed trait airport
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
   sealed trait alt_ids extends js.Object
   
   @js.native
-  sealed trait appeal extends js.Object
+  sealed trait amusement_park
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait atmosphere extends js.Object
+  sealed trait appeal
+    extends atGoogleMapsLib.atGoogleMapsMod.AspectRatingType
   
   @js.native
-  sealed trait best_guess extends js.Object
+  sealed trait aquarium
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait bicycling extends js.Object
+  sealed trait ar
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait bus extends js.Object
+  sealed trait art_gallery
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait bus_station extends js.Object
+  sealed trait atm
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait cdma extends js.Object
+  sealed trait atmosphere
+    extends atGoogleMapsLib.atGoogleMapsMod.AspectRatingType
   
   @js.native
-  sealed trait colloquial_area extends js.Object
+  sealed trait bakery
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait country extends js.Object
+  sealed trait bank
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait dailyLimitExceeded extends js.Object
+  sealed trait bar
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait decor extends js.Object
+  sealed trait be
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait distance extends js.Object
+  sealed trait beauty_salon
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait driving extends js.Object
+  sealed trait best_guess
+    extends atGoogleMapsLib.atGoogleMapsMod.TrafficModel
   
   @js.native
-  sealed trait establishment extends js.Object
+  sealed trait bg
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait facilities extends js.Object
+  sealed trait bicycle_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait ferries extends js.Object
+  sealed trait bicycling
+    extends atGoogleMapsLib.atGoogleMapsMod.TravelMode
   
   @js.native
-  sealed trait ferry extends js.Object
+  sealed trait bn
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait `ferry-train` extends js.Object
+  sealed trait book_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait fewer_transfers extends js.Object
+  sealed trait bowling_alley
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait finance extends js.Object
+  sealed trait bus
+    extends atGoogleMapsLib.atGoogleMapsMod.TransitMode
   
   @js.native
-  sealed trait floor extends js.Object
+  sealed trait bus_station
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait food extends js.Object
+  sealed trait ca
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait `fork-left` extends js.Object
+  sealed trait cafe
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait `fork-right` extends js.Object
+  sealed trait campground
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait car_dealer
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait car_rental
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait car_repair
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait car_wash
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait casino
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait cdma
+    extends atGoogleMapsLib.atGoogleMapsMod.RadioType
+  
+  @js.native
+  sealed trait cemetery
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait church
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait city_hall
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait clothing_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait colloquial_area
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait convenience_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait country
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait courthouse
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait cs
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait da
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait dailyLimitExceeded
+    extends atGoogleMapsLib.atGoogleMapsMod.GeolocationErrorReason
+  
+  @js.native
+  sealed trait de
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait decor
+    extends atGoogleMapsLib.atGoogleMapsMod.AspectRatingType
+  
+  @js.native
+  sealed trait dentist
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait department_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait distance
+    extends atGoogleMapsLib.atGoogleMapsMod.PlacesNearbyRanking
+  
+  @js.native
+  sealed trait doctor
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait driving
+    extends atGoogleMapsLib.atGoogleMapsMod.TravelMode
+  
+  @js.native
+  sealed trait el
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait electrician
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait electronics_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait embassy
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait en
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait `en-Au`
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait `en-GB`
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait es
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait establishment
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait eu
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait fa
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait facilities
+    extends atGoogleMapsLib.atGoogleMapsMod.AspectRatingType
+  
+  @js.native
+  sealed trait ferries
+    extends atGoogleMapsLib.atGoogleMapsMod.TravelRestriction
+  
+  @js.native
+  sealed trait ferry
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait `ferry-train`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait fewer_transfers
+    extends atGoogleMapsLib.atGoogleMapsMod.TransitRoutingPreference
+  
+  @js.native
+  sealed trait fi
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait fil
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait finance
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait fire_station
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait floor
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait florist
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait food
+    extends atGoogleMapsLib.atGoogleMapsMod.AspectRatingType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait `fork-left`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait `fork-right`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
   
   @js.native
   sealed trait formatted_address extends js.Object
@@ -232,91 +581,329 @@ object atGoogleMapsLibStrings {
   sealed trait formatted_phone_number extends js.Object
   
   @js.native
-  sealed trait general_contractor extends js.Object
+  sealed trait fr
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait geocode extends js.Object
+  sealed trait funeral_home
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait furniture_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait gas_station
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait general_contractor
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait geocode
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceAutocompleteType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
   sealed trait geometry extends js.Object
   
   @js.native
-  sealed trait gsm extends js.Object
+  sealed trait gl
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait health extends js.Object
+  sealed trait gsm
+    extends atGoogleMapsLib.atGoogleMapsMod.RadioType
   
   @js.native
-  sealed trait highways extends js.Object
+  sealed trait gu
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait gym
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait hair_care
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait hardware_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait health
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait hi
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait highways
+    extends atGoogleMapsLib.atGoogleMapsMod.TravelRestriction
+  
+  @js.native
+  sealed trait hindu_temple
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait home_goods_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait hospital
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait hr
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait hu
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
   sealed trait icon extends js.Object
   
   @js.native
-  sealed trait imperial extends js.Object
+  sealed trait id
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait indoor extends js.Object
+  sealed trait imperial
+    extends atGoogleMapsLib.atGoogleMapsMod.UnitSystem
+  
+  @js.native
+  sealed trait indoor
+    extends atGoogleMapsLib.atGoogleMapsMod.TravelRestriction
+  
+  @js.native
+  sealed trait insurance_agency
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
   sealed trait international_phone_number extends js.Object
   
   @js.native
-  sealed trait intersection extends js.Object
+  sealed trait intersection
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait keyInvalid extends js.Object
+  sealed trait it
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait less_walking extends js.Object
+  sealed trait iw
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait locality extends js.Object
+  sealed trait ja
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait lte extends js.Object
+  sealed trait jewelry_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait merge extends js.Object
+  sealed trait keyInvalid
+    extends atGoogleMapsLib.atGoogleMapsMod.GeolocationErrorReason
   
   @js.native
-  sealed trait metric extends js.Object
+  sealed trait kk
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait kn
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait ko
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait ky
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait laundry
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait lawyer
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait less_walking
+    extends atGoogleMapsLib.atGoogleMapsMod.TransitRoutingPreference
+  
+  @js.native
+  sealed trait library
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait liquor_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait local_government_office
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait locality
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait locksmith
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait lodging
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait lt
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait lte
+    extends atGoogleMapsLib.atGoogleMapsMod.RadioType
+  
+  @js.native
+  sealed trait lv
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait meal_delivery
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait meal_takeaway
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait merge
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait metric
+    extends atGoogleMapsLib.atGoogleMapsMod.UnitSystem
+  
+  @js.native
+  sealed trait mk
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait ml
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait mosque
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait movie_rental
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait movie_theater
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait moving_company
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait mr
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait museum
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait my
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
   sealed trait name extends js.Object
   
   @js.native
-  sealed trait natural_feature extends js.Object
+  sealed trait natural_feature
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait neighborhood extends js.Object
+  sealed trait neighborhood
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait notFound extends js.Object
+  sealed trait night_club
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait nl
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait no
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait notFound
+    extends atGoogleMapsLib.atGoogleMapsMod.GeolocationErrorReason
   
   @js.native
   sealed trait opening_hours extends js.Object
   
   @js.native
-  sealed trait optimistic extends js.Object
+  sealed trait optimistic
+    extends atGoogleMapsLib.atGoogleMapsMod.TrafficModel
   
   @js.native
-  sealed trait overall extends js.Object
+  sealed trait overall
+    extends atGoogleMapsLib.atGoogleMapsMod.AspectRatingType
   
   @js.native
-  sealed trait park extends js.Object
+  sealed trait pa
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait parking extends js.Object
+  sealed trait painter
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait parseError extends js.Object
+  sealed trait park
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait parking
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait parseError
+    extends atGoogleMapsLib.atGoogleMapsMod.GeolocationErrorReason
   
   @js.native
   sealed trait permanently_closed extends js.Object
   
   @js.native
-  sealed trait pessimistic extends js.Object
+  sealed trait pessimistic
+    extends atGoogleMapsLib.atGoogleMapsMod.TrafficModel
+  
+  @js.native
+  sealed trait pet_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait pharmacy
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
   sealed trait phonenumber extends js.Object
@@ -325,187 +912,422 @@ object atGoogleMapsLibStrings {
   sealed trait photos extends js.Object
   
   @js.native
+  sealed trait physiotherapist
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait pl
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
   sealed trait place_id extends js.Object
   
   @js.native
-  sealed trait place_of_worship extends js.Object
+  sealed trait place_of_worship
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait plumber
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
   sealed trait plus_code extends js.Object
   
   @js.native
-  sealed trait point_of_interest extends js.Object
+  sealed trait point_of_interest
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait political extends js.Object
+  sealed trait police
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait post_box extends js.Object
+  sealed trait political
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait postal_code extends js.Object
+  sealed trait post_box
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait postal_code_prefix extends js.Object
+  sealed trait post_office
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait postal_code_suffix extends js.Object
+  sealed trait postal_code
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait postal_town extends js.Object
+  sealed trait postal_code_prefix
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait premise extends js.Object
+  sealed trait postal_code_suffix
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait postal_town
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait premise
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
   sealed trait price_level extends js.Object
   
   @js.native
-  sealed trait prominence extends js.Object
+  sealed trait prominence
+    extends atGoogleMapsLib.atGoogleMapsMod.PlacesNearbyRanking
   
   @js.native
-  sealed trait quality extends js.Object
+  sealed trait pt
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait rail extends js.Object
+  sealed trait `pt-BR`
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait `ramp-left` extends js.Object
+  sealed trait `pt-PT`
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait `ramp-right` extends js.Object
+  sealed trait quality
+    extends atGoogleMapsLib.atGoogleMapsMod.AspectRatingType
+  
+  @js.native
+  sealed trait rail
+    extends atGoogleMapsLib.atGoogleMapsMod.TransitMode
+  
+  @js.native
+  sealed trait `ramp-left`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait `ramp-right`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
   
   @js.native
   sealed trait rating extends js.Object
   
   @js.native
+  sealed trait real_estate_agency
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait restaurant
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
   sealed trait reviews extends js.Object
   
   @js.native
-  sealed trait room extends js.Object
+  sealed trait ro
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait `roundabout-left` extends js.Object
+  sealed trait roofing_contractor
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait `roundabout-right` extends js.Object
+  sealed trait room
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
   
   @js.native
-  sealed trait route extends js.Object
+  sealed trait `roundabout-left`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait `roundabout-right`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait route
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait ru
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait rv_park
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait school
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
   sealed trait scope extends js.Object
   
   @js.native
-  sealed trait service extends js.Object
+  sealed trait service
+    extends atGoogleMapsLib.atGoogleMapsMod.AspectRatingType
   
   @js.native
-  sealed trait straight extends js.Object
+  sealed trait shoe_store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait street_address extends js.Object
+  sealed trait shopping_mall
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait street_number extends js.Object
+  sealed trait sk
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait sublocality extends js.Object
+  sealed trait sl
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait sublocality_level_1 extends js.Object
+  sealed trait spa
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait sublocality_level_2 extends js.Object
+  sealed trait sq
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait sublocality_level_3 extends js.Object
+  sealed trait sr
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait sublocality_level_4 extends js.Object
+  sealed trait stadium
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait sublocality_level_5 extends js.Object
+  sealed trait storage
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait subpremise extends js.Object
+  sealed trait store
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait subway extends js.Object
+  sealed trait straight
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait street_address
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait street_number
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait sublocality
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait sublocality_level_1
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait sublocality_level_2
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait sublocality_level_3
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait sublocality_level_4
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait sublocality_level_5
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait subpremise
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType2
+  
+  @js.native
+  sealed trait subway
+    extends atGoogleMapsLib.atGoogleMapsMod.TransitMode
+  
+  @js.native
+  sealed trait subway_station
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait supermarket
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait sv
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait synagogue
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait ta
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait taxi_stand
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait te
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
   sealed trait textquery extends js.Object
   
   @js.native
+  sealed trait th
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
   sealed trait timeout extends js.Object
   
   @js.native
-  sealed trait tolls extends js.Object
+  sealed trait tl
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait train extends js.Object
+  sealed trait tolls
+    extends atGoogleMapsLib.atGoogleMapsMod.TravelRestriction
   
   @js.native
-  sealed trait train_station extends js.Object
+  sealed trait tr
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
-  sealed trait tram extends js.Object
+  sealed trait train
+    extends atGoogleMapsLib.atGoogleMapsMod.TransitMode
   
   @js.native
-  sealed trait transit extends js.Object
+  sealed trait train_station
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait transit_station extends js.Object
+  sealed trait tram
+    extends atGoogleMapsLib.atGoogleMapsMod.TransitMode
   
   @js.native
-  sealed trait `turn-left` extends js.Object
+  sealed trait transit
+    extends atGoogleMapsLib.atGoogleMapsMod.TravelMode
   
   @js.native
-  sealed trait `turn-right` extends js.Object
+  sealed trait transit_station
+    extends atGoogleMapsLib.atGoogleMapsMod.GeocodingAddressComponentType
+       with atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait `turn-sharp-left` extends js.Object
+  sealed trait travel_agency
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @js.native
-  sealed trait `turn-sharp-right` extends js.Object
+  sealed trait `turn-left`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
   
   @js.native
-  sealed trait `turn-slight-left` extends js.Object
+  sealed trait `turn-right`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
   
   @js.native
-  sealed trait `turn-slight-right` extends js.Object
+  sealed trait `turn-sharp-left`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait `turn-sharp-right`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait `turn-slight-left`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait `turn-slight-right`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
   
   @js.native
   sealed trait types extends js.Object
   
   @js.native
+  sealed trait uk
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
   sealed trait url extends js.Object
   
   @js.native
-  sealed trait userRateLimitExceeded extends js.Object
+  sealed trait userRateLimitExceeded
+    extends atGoogleMapsLib.atGoogleMapsMod.GeolocationErrorReason
   
   @js.native
   sealed trait utc_offset extends js.Object
   
   @js.native
-  sealed trait `uturn-left` extends js.Object
+  sealed trait `uturn-left`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
   
   @js.native
-  sealed trait `uturn-right` extends js.Object
+  sealed trait `uturn-right`
+    extends atGoogleMapsLib.atGoogleMapsMod.Maneuver
+  
+  @js.native
+  sealed trait uz
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait veterinary_care
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
+  
+  @js.native
+  sealed trait vi
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
   
   @js.native
   sealed trait vicinity extends js.Object
   
   @js.native
-  sealed trait walking extends js.Object
+  sealed trait walking
+    extends atGoogleMapsLib.atGoogleMapsMod.TravelMode
   
   @js.native
-  sealed trait ward extends js.Object
+  sealed trait ward
+    extends atGoogleMapsLib.atGoogleMapsMod.AddressType
   
   @js.native
-  sealed trait wcdma extends js.Object
+  sealed trait wcdma
+    extends atGoogleMapsLib.atGoogleMapsMod.RadioType
   
   @js.native
   sealed trait website extends js.Object
+  
+  @js.native
+  sealed trait `zh-CN`
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait `zh-TW`
+    extends atGoogleMapsLib.atGoogleMapsMod.Language
+  
+  @js.native
+  sealed trait zoo
+    extends atGoogleMapsLib.atGoogleMapsMod.PlaceType1
   
   @scala.inline
   def `(cities)`: `(cities)` = "(cities)".asInstanceOf[`(cities)`]
@@ -586,6 +1408,8 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def ZERO_RESULTS: ZERO_RESULTS = "ZERO_RESULTS".asInstanceOf[ZERO_RESULTS]
   @scala.inline
+  def accounting: accounting = "accounting".asInstanceOf[accounting]
+  @scala.inline
   def address: address = "address".asInstanceOf[address]
   @scala.inline
   def address_components: address_components = "address_components".asInstanceOf[address_components]
@@ -606,33 +1430,123 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def alt_ids: alt_ids = "alt_ids".asInstanceOf[alt_ids]
   @scala.inline
+  def amusement_park: amusement_park = "amusement_park".asInstanceOf[amusement_park]
+  @scala.inline
   def appeal: appeal = "appeal".asInstanceOf[appeal]
+  @scala.inline
+  def aquarium: aquarium = "aquarium".asInstanceOf[aquarium]
+  @scala.inline
+  def ar: ar = "ar".asInstanceOf[ar]
+  @scala.inline
+  def art_gallery: art_gallery = "art_gallery".asInstanceOf[art_gallery]
+  @scala.inline
+  def atm: atm = "atm".asInstanceOf[atm]
   @scala.inline
   def atmosphere: atmosphere = "atmosphere".asInstanceOf[atmosphere]
   @scala.inline
+  def bakery: bakery = "bakery".asInstanceOf[bakery]
+  @scala.inline
+  def bank: bank = "bank".asInstanceOf[bank]
+  @scala.inline
+  def bar: bar = "bar".asInstanceOf[bar]
+  @scala.inline
+  def be: be = "be".asInstanceOf[be]
+  @scala.inline
+  def beauty_salon: beauty_salon = "beauty_salon".asInstanceOf[beauty_salon]
+  @scala.inline
   def best_guess: best_guess = "best_guess".asInstanceOf[best_guess]
   @scala.inline
+  def bg: bg = "bg".asInstanceOf[bg]
+  @scala.inline
+  def bicycle_store: bicycle_store = "bicycle_store".asInstanceOf[bicycle_store]
+  @scala.inline
   def bicycling: bicycling = "bicycling".asInstanceOf[bicycling]
+  @scala.inline
+  def bn: bn = "bn".asInstanceOf[bn]
+  @scala.inline
+  def book_store: book_store = "book_store".asInstanceOf[book_store]
+  @scala.inline
+  def bowling_alley: bowling_alley = "bowling_alley".asInstanceOf[bowling_alley]
   @scala.inline
   def bus: bus = "bus".asInstanceOf[bus]
   @scala.inline
   def bus_station: bus_station = "bus_station".asInstanceOf[bus_station]
   @scala.inline
+  def ca: ca = "ca".asInstanceOf[ca]
+  @scala.inline
+  def cafe: cafe = "cafe".asInstanceOf[cafe]
+  @scala.inline
+  def campground: campground = "campground".asInstanceOf[campground]
+  @scala.inline
+  def car_dealer: car_dealer = "car_dealer".asInstanceOf[car_dealer]
+  @scala.inline
+  def car_rental: car_rental = "car_rental".asInstanceOf[car_rental]
+  @scala.inline
+  def car_repair: car_repair = "car_repair".asInstanceOf[car_repair]
+  @scala.inline
+  def car_wash: car_wash = "car_wash".asInstanceOf[car_wash]
+  @scala.inline
+  def casino: casino = "casino".asInstanceOf[casino]
+  @scala.inline
   def cdma: cdma = "cdma".asInstanceOf[cdma]
+  @scala.inline
+  def cemetery: cemetery = "cemetery".asInstanceOf[cemetery]
+  @scala.inline
+  def church: church = "church".asInstanceOf[church]
+  @scala.inline
+  def city_hall: city_hall = "city_hall".asInstanceOf[city_hall]
+  @scala.inline
+  def clothing_store: clothing_store = "clothing_store".asInstanceOf[clothing_store]
   @scala.inline
   def colloquial_area: colloquial_area = "colloquial_area".asInstanceOf[colloquial_area]
   @scala.inline
+  def convenience_store: convenience_store = "convenience_store".asInstanceOf[convenience_store]
+  @scala.inline
   def country: country = "country".asInstanceOf[country]
+  @scala.inline
+  def courthouse: courthouse = "courthouse".asInstanceOf[courthouse]
+  @scala.inline
+  def cs: cs = "cs".asInstanceOf[cs]
+  @scala.inline
+  def da: da = "da".asInstanceOf[da]
   @scala.inline
   def dailyLimitExceeded: dailyLimitExceeded = "dailyLimitExceeded".asInstanceOf[dailyLimitExceeded]
   @scala.inline
+  def de: de = "de".asInstanceOf[de]
+  @scala.inline
   def decor: decor = "decor".asInstanceOf[decor]
+  @scala.inline
+  def dentist: dentist = "dentist".asInstanceOf[dentist]
+  @scala.inline
+  def department_store: department_store = "department_store".asInstanceOf[department_store]
   @scala.inline
   def distance: distance = "distance".asInstanceOf[distance]
   @scala.inline
+  def doctor: doctor = "doctor".asInstanceOf[doctor]
+  @scala.inline
   def driving: driving = "driving".asInstanceOf[driving]
   @scala.inline
+  def el: el = "el".asInstanceOf[el]
+  @scala.inline
+  def electrician: electrician = "electrician".asInstanceOf[electrician]
+  @scala.inline
+  def electronics_store: electronics_store = "electronics_store".asInstanceOf[electronics_store]
+  @scala.inline
+  def embassy: embassy = "embassy".asInstanceOf[embassy]
+  @scala.inline
+  def en: en = "en".asInstanceOf[en]
+  @scala.inline
+  def `en-Au`: `en-Au` = "en-Au".asInstanceOf[`en-Au`]
+  @scala.inline
+  def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
+  @scala.inline
+  def es: es = "es".asInstanceOf[es]
+  @scala.inline
   def establishment: establishment = "establishment".asInstanceOf[establishment]
+  @scala.inline
+  def eu: eu = "eu".asInstanceOf[eu]
+  @scala.inline
+  def fa: fa = "fa".asInstanceOf[fa]
   @scala.inline
   def facilities: facilities = "facilities".asInstanceOf[facilities]
   @scala.inline
@@ -644,9 +1558,17 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def fewer_transfers: fewer_transfers = "fewer_transfers".asInstanceOf[fewer_transfers]
   @scala.inline
+  def fi: fi = "fi".asInstanceOf[fi]
+  @scala.inline
+  def fil: fil = "fil".asInstanceOf[fil]
+  @scala.inline
   def finance: finance = "finance".asInstanceOf[finance]
   @scala.inline
+  def fire_station: fire_station = "fire_station".asInstanceOf[fire_station]
+  @scala.inline
   def floor: floor = "floor".asInstanceOf[floor]
+  @scala.inline
+  def florist: florist = "florist".asInstanceOf[florist]
   @scala.inline
   def food: food = "food".asInstanceOf[food]
   @scala.inline
@@ -658,45 +1580,141 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def formatted_phone_number: formatted_phone_number = "formatted_phone_number".asInstanceOf[formatted_phone_number]
   @scala.inline
+  def fr: fr = "fr".asInstanceOf[fr]
+  @scala.inline
+  def funeral_home: funeral_home = "funeral_home".asInstanceOf[funeral_home]
+  @scala.inline
+  def furniture_store: furniture_store = "furniture_store".asInstanceOf[furniture_store]
+  @scala.inline
+  def gas_station: gas_station = "gas_station".asInstanceOf[gas_station]
+  @scala.inline
   def general_contractor: general_contractor = "general_contractor".asInstanceOf[general_contractor]
   @scala.inline
   def geocode: geocode = "geocode".asInstanceOf[geocode]
   @scala.inline
   def geometry: geometry = "geometry".asInstanceOf[geometry]
   @scala.inline
+  def gl: gl = "gl".asInstanceOf[gl]
+  @scala.inline
   def gsm: gsm = "gsm".asInstanceOf[gsm]
+  @scala.inline
+  def gu: gu = "gu".asInstanceOf[gu]
+  @scala.inline
+  def gym: gym = "gym".asInstanceOf[gym]
+  @scala.inline
+  def hair_care: hair_care = "hair_care".asInstanceOf[hair_care]
+  @scala.inline
+  def hardware_store: hardware_store = "hardware_store".asInstanceOf[hardware_store]
   @scala.inline
   def health: health = "health".asInstanceOf[health]
   @scala.inline
+  def hi: hi = "hi".asInstanceOf[hi]
+  @scala.inline
   def highways: highways = "highways".asInstanceOf[highways]
   @scala.inline
+  def hindu_temple: hindu_temple = "hindu_temple".asInstanceOf[hindu_temple]
+  @scala.inline
+  def home_goods_store: home_goods_store = "home_goods_store".asInstanceOf[home_goods_store]
+  @scala.inline
+  def hospital: hospital = "hospital".asInstanceOf[hospital]
+  @scala.inline
+  def hr: hr = "hr".asInstanceOf[hr]
+  @scala.inline
+  def hu: hu = "hu".asInstanceOf[hu]
+  @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
+  @scala.inline
+  def id: id = "id".asInstanceOf[id]
   @scala.inline
   def imperial: imperial = "imperial".asInstanceOf[imperial]
   @scala.inline
   def indoor: indoor = "indoor".asInstanceOf[indoor]
   @scala.inline
+  def insurance_agency: insurance_agency = "insurance_agency".asInstanceOf[insurance_agency]
+  @scala.inline
   def international_phone_number: international_phone_number = "international_phone_number".asInstanceOf[international_phone_number]
   @scala.inline
   def intersection: intersection = "intersection".asInstanceOf[intersection]
   @scala.inline
+  def it: it = "it".asInstanceOf[it]
+  @scala.inline
+  def iw: iw = "iw".asInstanceOf[iw]
+  @scala.inline
+  def ja: ja = "ja".asInstanceOf[ja]
+  @scala.inline
+  def jewelry_store: jewelry_store = "jewelry_store".asInstanceOf[jewelry_store]
+  @scala.inline
   def keyInvalid: keyInvalid = "keyInvalid".asInstanceOf[keyInvalid]
+  @scala.inline
+  def kk: kk = "kk".asInstanceOf[kk]
+  @scala.inline
+  def kn: kn = "kn".asInstanceOf[kn]
+  @scala.inline
+  def ko: ko = "ko".asInstanceOf[ko]
+  @scala.inline
+  def ky: ky = "ky".asInstanceOf[ky]
+  @scala.inline
+  def laundry: laundry = "laundry".asInstanceOf[laundry]
+  @scala.inline
+  def lawyer: lawyer = "lawyer".asInstanceOf[lawyer]
   @scala.inline
   def less_walking: less_walking = "less_walking".asInstanceOf[less_walking]
   @scala.inline
+  def library: library = "library".asInstanceOf[library]
+  @scala.inline
+  def liquor_store: liquor_store = "liquor_store".asInstanceOf[liquor_store]
+  @scala.inline
+  def local_government_office: local_government_office = "local_government_office".asInstanceOf[local_government_office]
+  @scala.inline
   def locality: locality = "locality".asInstanceOf[locality]
   @scala.inline
+  def locksmith: locksmith = "locksmith".asInstanceOf[locksmith]
+  @scala.inline
+  def lodging: lodging = "lodging".asInstanceOf[lodging]
+  @scala.inline
+  def lt: lt = "lt".asInstanceOf[lt]
+  @scala.inline
   def lte: lte = "lte".asInstanceOf[lte]
+  @scala.inline
+  def lv: lv = "lv".asInstanceOf[lv]
+  @scala.inline
+  def meal_delivery: meal_delivery = "meal_delivery".asInstanceOf[meal_delivery]
+  @scala.inline
+  def meal_takeaway: meal_takeaway = "meal_takeaway".asInstanceOf[meal_takeaway]
   @scala.inline
   def merge: merge = "merge".asInstanceOf[merge]
   @scala.inline
   def metric: metric = "metric".asInstanceOf[metric]
+  @scala.inline
+  def mk: mk = "mk".asInstanceOf[mk]
+  @scala.inline
+  def ml: ml = "ml".asInstanceOf[ml]
+  @scala.inline
+  def mosque: mosque = "mosque".asInstanceOf[mosque]
+  @scala.inline
+  def movie_rental: movie_rental = "movie_rental".asInstanceOf[movie_rental]
+  @scala.inline
+  def movie_theater: movie_theater = "movie_theater".asInstanceOf[movie_theater]
+  @scala.inline
+  def moving_company: moving_company = "moving_company".asInstanceOf[moving_company]
+  @scala.inline
+  def mr: mr = "mr".asInstanceOf[mr]
+  @scala.inline
+  def museum: museum = "museum".asInstanceOf[museum]
+  @scala.inline
+  def my: my = "my".asInstanceOf[my]
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   @scala.inline
   def natural_feature: natural_feature = "natural_feature".asInstanceOf[natural_feature]
   @scala.inline
   def neighborhood: neighborhood = "neighborhood".asInstanceOf[neighborhood]
+  @scala.inline
+  def night_club: night_club = "night_club".asInstanceOf[night_club]
+  @scala.inline
+  def nl: nl = "nl".asInstanceOf[nl]
+  @scala.inline
+  def no: no = "no".asInstanceOf[no]
   @scala.inline
   def notFound: notFound = "notFound".asInstanceOf[notFound]
   @scala.inline
@@ -705,6 +1723,10 @@ object atGoogleMapsLibStrings {
   def optimistic: optimistic = "optimistic".asInstanceOf[optimistic]
   @scala.inline
   def overall: overall = "overall".asInstanceOf[overall]
+  @scala.inline
+  def pa: pa = "pa".asInstanceOf[pa]
+  @scala.inline
+  def painter: painter = "painter".asInstanceOf[painter]
   @scala.inline
   def park: park = "park".asInstanceOf[park]
   @scala.inline
@@ -716,21 +1738,35 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def pessimistic: pessimistic = "pessimistic".asInstanceOf[pessimistic]
   @scala.inline
+  def pet_store: pet_store = "pet_store".asInstanceOf[pet_store]
+  @scala.inline
+  def pharmacy: pharmacy = "pharmacy".asInstanceOf[pharmacy]
+  @scala.inline
   def phonenumber: phonenumber = "phonenumber".asInstanceOf[phonenumber]
   @scala.inline
   def photos: photos = "photos".asInstanceOf[photos]
+  @scala.inline
+  def physiotherapist: physiotherapist = "physiotherapist".asInstanceOf[physiotherapist]
+  @scala.inline
+  def pl: pl = "pl".asInstanceOf[pl]
   @scala.inline
   def place_id: place_id = "place_id".asInstanceOf[place_id]
   @scala.inline
   def place_of_worship: place_of_worship = "place_of_worship".asInstanceOf[place_of_worship]
   @scala.inline
+  def plumber: plumber = "plumber".asInstanceOf[plumber]
+  @scala.inline
   def plus_code: plus_code = "plus_code".asInstanceOf[plus_code]
   @scala.inline
   def point_of_interest: point_of_interest = "point_of_interest".asInstanceOf[point_of_interest]
   @scala.inline
+  def police: police = "police".asInstanceOf[police]
+  @scala.inline
   def political: political = "political".asInstanceOf[political]
   @scala.inline
   def post_box: post_box = "post_box".asInstanceOf[post_box]
+  @scala.inline
+  def post_office: post_office = "post_office".asInstanceOf[post_office]
   @scala.inline
   def postal_code: postal_code = "postal_code".asInstanceOf[postal_code]
   @scala.inline
@@ -746,6 +1782,12 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def prominence: prominence = "prominence".asInstanceOf[prominence]
   @scala.inline
+  def pt: pt = "pt".asInstanceOf[pt]
+  @scala.inline
+  def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
+  @scala.inline
+  def `pt-PT`: `pt-PT` = "pt-PT".asInstanceOf[`pt-PT`]
+  @scala.inline
   def quality: quality = "quality".asInstanceOf[quality]
   @scala.inline
   def rail: rail = "rail".asInstanceOf[rail]
@@ -756,7 +1798,15 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def rating: rating = "rating".asInstanceOf[rating]
   @scala.inline
+  def real_estate_agency: real_estate_agency = "real_estate_agency".asInstanceOf[real_estate_agency]
+  @scala.inline
+  def restaurant: restaurant = "restaurant".asInstanceOf[restaurant]
+  @scala.inline
   def reviews: reviews = "reviews".asInstanceOf[reviews]
+  @scala.inline
+  def ro: ro = "ro".asInstanceOf[ro]
+  @scala.inline
+  def roofing_contractor: roofing_contractor = "roofing_contractor".asInstanceOf[roofing_contractor]
   @scala.inline
   def room: room = "room".asInstanceOf[room]
   @scala.inline
@@ -766,9 +1816,35 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def route: route = "route".asInstanceOf[route]
   @scala.inline
+  def ru: ru = "ru".asInstanceOf[ru]
+  @scala.inline
+  def rv_park: rv_park = "rv_park".asInstanceOf[rv_park]
+  @scala.inline
+  def school: school = "school".asInstanceOf[school]
+  @scala.inline
   def scope: scope = "scope".asInstanceOf[scope]
   @scala.inline
   def service: service = "service".asInstanceOf[service]
+  @scala.inline
+  def shoe_store: shoe_store = "shoe_store".asInstanceOf[shoe_store]
+  @scala.inline
+  def shopping_mall: shopping_mall = "shopping_mall".asInstanceOf[shopping_mall]
+  @scala.inline
+  def sk: sk = "sk".asInstanceOf[sk]
+  @scala.inline
+  def sl: sl = "sl".asInstanceOf[sl]
+  @scala.inline
+  def spa: spa = "spa".asInstanceOf[spa]
+  @scala.inline
+  def sq: sq = "sq".asInstanceOf[sq]
+  @scala.inline
+  def sr: sr = "sr".asInstanceOf[sr]
+  @scala.inline
+  def stadium: stadium = "stadium".asInstanceOf[stadium]
+  @scala.inline
+  def storage: storage = "storage".asInstanceOf[storage]
+  @scala.inline
+  def store: store = "store".asInstanceOf[store]
   @scala.inline
   def straight: straight = "straight".asInstanceOf[straight]
   @scala.inline
@@ -792,11 +1868,31 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def subway: subway = "subway".asInstanceOf[subway]
   @scala.inline
+  def subway_station: subway_station = "subway_station".asInstanceOf[subway_station]
+  @scala.inline
+  def supermarket: supermarket = "supermarket".asInstanceOf[supermarket]
+  @scala.inline
+  def sv: sv = "sv".asInstanceOf[sv]
+  @scala.inline
+  def synagogue: synagogue = "synagogue".asInstanceOf[synagogue]
+  @scala.inline
+  def ta: ta = "ta".asInstanceOf[ta]
+  @scala.inline
+  def taxi_stand: taxi_stand = "taxi_stand".asInstanceOf[taxi_stand]
+  @scala.inline
+  def te: te = "te".asInstanceOf[te]
+  @scala.inline
   def textquery: textquery = "textquery".asInstanceOf[textquery]
+  @scala.inline
+  def th: th = "th".asInstanceOf[th]
   @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
   @scala.inline
+  def tl: tl = "tl".asInstanceOf[tl]
+  @scala.inline
   def tolls: tolls = "tolls".asInstanceOf[tolls]
+  @scala.inline
+  def tr: tr = "tr".asInstanceOf[tr]
   @scala.inline
   def train: train = "train".asInstanceOf[train]
   @scala.inline
@@ -807,6 +1903,8 @@ object atGoogleMapsLibStrings {
   def transit: transit = "transit".asInstanceOf[transit]
   @scala.inline
   def transit_station: transit_station = "transit_station".asInstanceOf[transit_station]
+  @scala.inline
+  def travel_agency: travel_agency = "travel_agency".asInstanceOf[travel_agency]
   @scala.inline
   def `turn-left`: `turn-left` = "turn-left".asInstanceOf[`turn-left`]
   @scala.inline
@@ -822,6 +1920,8 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def types: types = "types".asInstanceOf[types]
   @scala.inline
+  def uk: uk = "uk".asInstanceOf[uk]
+  @scala.inline
   def url: url = "url".asInstanceOf[url]
   @scala.inline
   def userRateLimitExceeded: userRateLimitExceeded = "userRateLimitExceeded".asInstanceOf[userRateLimitExceeded]
@@ -832,6 +1932,12 @@ object atGoogleMapsLibStrings {
   @scala.inline
   def `uturn-right`: `uturn-right` = "uturn-right".asInstanceOf[`uturn-right`]
   @scala.inline
+  def uz: uz = "uz".asInstanceOf[uz]
+  @scala.inline
+  def veterinary_care: veterinary_care = "veterinary_care".asInstanceOf[veterinary_care]
+  @scala.inline
+  def vi: vi = "vi".asInstanceOf[vi]
+  @scala.inline
   def vicinity: vicinity = "vicinity".asInstanceOf[vicinity]
   @scala.inline
   def walking: walking = "walking".asInstanceOf[walking]
@@ -841,5 +1947,11 @@ object atGoogleMapsLibStrings {
   def wcdma: wcdma = "wcdma".asInstanceOf[wcdma]
   @scala.inline
   def website: website = "website".asInstanceOf[website]
+  @scala.inline
+  def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
+  @scala.inline
+  def `zh-TW`: `zh-TW` = "zh-TW".asInstanceOf[`zh-TW`]
+  @scala.inline
+  def zoo: zoo = "zoo".asInstanceOf[zoo]
 }
 

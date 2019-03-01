@@ -12,3 +12,20 @@ trait Anon_HAdjustmentFactor extends js.Object {
   var width: scala.Double
 }
 
+object Anon_HAdjustmentFactor {
+  @scala.inline
+  def apply(
+    hAdjustmentFactor: scala.Double,
+    height: scala.Double,
+    vAdjustmentFactor: scala.Double,
+    width: scala.Double
+  ): Anon_HAdjustmentFactor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hAdjustmentFactor")(hAdjustmentFactor)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("vAdjustmentFactor")(vAdjustmentFactor)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Anon_HAdjustmentFactor]
+  }
+}
+

@@ -14,3 +14,14 @@ trait BrowserContextEventObj extends js.Object {
   var targetdestroyed: Target
 }
 
+object BrowserContextEventObj {
+  @scala.inline
+  def apply(targetchanged: Target, targetcreated: Target, targetdestroyed: Target): BrowserContextEventObj = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("targetchanged")(targetchanged)
+    __obj.updateDynamic("targetcreated")(targetcreated)
+    __obj.updateDynamic("targetdestroyed")(targetdestroyed)
+    __obj.asInstanceOf[BrowserContextEventObj]
+  }
+}
+

@@ -154,3 +154,44 @@ trait ObjectMeta extends js.Object {
   val uid: java.lang.String
 }
 
+object ObjectMeta {
+  @scala.inline
+  def apply(
+    annotations: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    clusterName: java.lang.String,
+    creationTimestamp: java.lang.String,
+    deletionGracePeriodSeconds: scala.Double,
+    deletionTimestamp: java.lang.String,
+    finalizers: js.Array[java.lang.String],
+    generateName: java.lang.String,
+    generation: scala.Double,
+    initializers: Initializers,
+    labels: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    name: java.lang.String,
+    namespace: java.lang.String,
+    ownerReferences: js.Array[OwnerReference],
+    resourceVersion: java.lang.String,
+    selfLink: java.lang.String,
+    uid: java.lang.String
+  ): ObjectMeta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotations")(annotations)
+    __obj.updateDynamic("clusterName")(clusterName)
+    __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    __obj.updateDynamic("deletionGracePeriodSeconds")(deletionGracePeriodSeconds)
+    __obj.updateDynamic("deletionTimestamp")(deletionTimestamp)
+    __obj.updateDynamic("finalizers")(finalizers)
+    __obj.updateDynamic("generateName")(generateName)
+    __obj.updateDynamic("generation")(generation)
+    __obj.updateDynamic("initializers")(initializers)
+    __obj.updateDynamic("labels")(labels)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("ownerReferences")(ownerReferences)
+    __obj.updateDynamic("resourceVersion")(resourceVersion)
+    __obj.updateDynamic("selfLink")(selfLink)
+    __obj.updateDynamic("uid")(uid)
+    __obj.asInstanceOf[ObjectMeta]
+  }
+}
+

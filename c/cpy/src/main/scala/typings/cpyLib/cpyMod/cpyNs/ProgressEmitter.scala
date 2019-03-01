@@ -13,3 +13,18 @@ trait ProgressEmitter extends js.Object {
   ): js.Promise[scala.Unit]
 }
 
+object ProgressEmitter {
+  @scala.inline
+  def apply(
+    on_progress: js.Function2[
+      cpyLib.cpyLibStrings.progress, 
+      js.Function1[/* progress */ ProgressData, scala.Unit], 
+      js.Promise[scala.Unit]
+    ]
+  ): ProgressEmitter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("on")(on_progress)
+    __obj.asInstanceOf[ProgressEmitter]
+  }
+}
+

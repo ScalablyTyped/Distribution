@@ -18,3 +18,22 @@ trait StrictImageGroupProps extends js.Object {
   var size: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES] = js.undefined
 }
 
+object StrictImageGroupProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    size: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticSIZES = null
+  ): StrictImageGroupProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[StrictImageGroupProps]
+  }
+}
+

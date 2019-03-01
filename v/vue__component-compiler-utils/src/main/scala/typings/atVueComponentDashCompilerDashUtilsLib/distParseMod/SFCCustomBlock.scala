@@ -16,3 +16,25 @@ trait SFCCustomBlock extends js.Object {
   var `type`: java.lang.String
 }
 
+object SFCCustomBlock {
+  @scala.inline
+  def apply(
+    attrs: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | atVueComponentDashCompilerDashUtilsLib.atVueComponentDashCompilerDashUtilsLibNumbers.`true`
+    ],
+    content: java.lang.String,
+    end: scala.Double,
+    start: scala.Double,
+    `type`: java.lang.String,
+    map: atVueComponentDashCompilerDashUtilsLib.distTypesMod.RawSourceMap = null
+  ): SFCCustomBlock = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("attrs")(attrs)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    if (map != null) __obj.updateDynamic("map")(map)
+    __obj.asInstanceOf[SFCCustomBlock]
+  }
+}
+

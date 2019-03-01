@@ -15,31 +15,29 @@ trait ojDialog
   var modality: atOracleOraclejetLib.atOracleOraclejetLibStrings.modal | atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless = js.native
   var onCancelBehaviorChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['cancelBehavior'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.icon | atOracleOraclejetLib.atOracleOraclejetLibStrings.escape | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
     ], 
     _
   ]) | scala.Null = js.native
   var onDialogTitleChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['dialogTitle'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
     _
   ]) | scala.Null = js.native
   var onDragAffordanceChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['dragAffordance'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.`title-bar` | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
     ], 
     _
   ]) | scala.Null = js.native
   var onInitialVisibilityChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['initialVisibility'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.hide | atOracleOraclejetLib.atOracleOraclejetLibStrings.show
     ], 
     _
   ]) | scala.Null = js.native
   var onModalityChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['modality'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.modal | atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless
     ], 
     _
   ]) | scala.Null = js.native
@@ -54,21 +52,17 @@ trait ojDialog
   var onOjResizeStart: (js.Function1[/* event */ atOracleOraclejetLib.ojdialogMod.ojDialogNs.ojResizeStart, _]) | scala.Null = js.native
   var onOjResizeStop: (js.Function1[/* event */ atOracleOraclejetLib.ojdialogMod.ojDialogNs.ojResizeStop, _]) | scala.Null = js.native
   var onPositionChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['position'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojdialogMod.ojDialogNs.Position], 
     _
   ]) | scala.Null = js.native
   var onResizeBehaviorChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['resizeBehavior'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.resizable | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
     ], 
     _
   ]) | scala.Null = js.native
   var onRoleChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['role'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
     _
   ]) | scala.Null = js.native
   var position: atOracleOraclejetLib.ojdialogMod.ojDialogNs.Position = js.native
@@ -81,7 +75,7 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['cancelBehavior'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.icon | atOracleOraclejetLib.atOracleOraclejetLibStrings.escape | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ]
@@ -91,28 +85,7 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['cancelBehavior'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.dialogTitleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['dialogTitle'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.dialogTitleChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['dialogTitle'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.icon | atOracleOraclejetLib.atOracleOraclejetLibStrings.escape | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ],
@@ -123,7 +96,7 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['dragAffordance'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.`title-bar` | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ]
@@ -133,7 +106,7 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['dragAffordance'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.`title-bar` | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ],
@@ -144,7 +117,7 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['initialVisibility'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.hide | atOracleOraclejetLib.atOracleOraclejetLibStrings.show
       ], 
       _
     ]
@@ -154,7 +127,7 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['initialVisibility'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.hide | atOracleOraclejetLib.atOracleOraclejetLibStrings.show
       ], 
       _
     ],
@@ -165,7 +138,7 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['modality'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.modal | atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless
       ], 
       _
     ]
@@ -175,28 +148,7 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['modality'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['position'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['position'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.modal | atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless
       ], 
       _
     ],
@@ -207,7 +159,7 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['resizeBehavior'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.resizable | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ]
@@ -217,29 +169,27 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['resizeBehavior'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.resizable | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ],
     useCapture: scala.Boolean
   ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.roleChanged,
+  @JSName("addEventListener")
+  def addEventListener_dialogTitleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.dialogTitleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['role'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
       _
     ]
   ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.roleChanged,
+  @JSName("addEventListener")
+  def addEventListener_dialogTitleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.dialogTitleChanged,
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['role'] */ js.Any
-      ], 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String | scala.Null], 
       _
     ],
     useCapture: scala.Boolean
@@ -430,6 +380,44 @@ trait ojDialog
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.ojdialogMod.ojDialogNs.ojResizeStop, 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_positionChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojdialogMod.ojDialogNs.Position], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_positionChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojdialogMod.ojDialogNs.Position], 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_roleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.roleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_roleChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.roleChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[java.lang.String], 
       _
     ],
     useCapture: scala.Boolean

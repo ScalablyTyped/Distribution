@@ -16,3 +16,13 @@ trait Anon_IsInTrial extends js.Object {
   var trialEndTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_IsInTrial {
+  @scala.inline
+  def apply(isInTrial: js.UndefOr[scala.Boolean] = js.undefined, trialEndTime: java.lang.String = null): Anon_IsInTrial = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isInTrial)) __obj.updateDynamic("isInTrial")(isInTrial)
+    if (trialEndTime != null) __obj.updateDynamic("trialEndTime")(trialEndTime)
+    __obj.asInstanceOf[Anon_IsInTrial]
+  }
+}
+

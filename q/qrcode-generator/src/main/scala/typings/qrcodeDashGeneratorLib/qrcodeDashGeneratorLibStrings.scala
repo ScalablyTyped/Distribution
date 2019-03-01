@@ -7,28 +7,28 @@ import scala.scalajs.js.annotation._
 
 object qrcodeDashGeneratorLibStrings {
   @js.native
-  sealed trait Alphanumeric extends js.Object
+  sealed trait Alphanumeric extends Mode
   
   @js.native
-  sealed trait Byte extends js.Object
+  sealed trait Byte extends Mode
   
   @js.native
-  sealed trait H extends js.Object
+  sealed trait H extends ErrorCorrectionLevel
   
   @js.native
-  sealed trait Kanji extends js.Object
+  sealed trait Kanji extends Mode
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait L extends ErrorCorrectionLevel
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait M extends ErrorCorrectionLevel
   
   @js.native
-  sealed trait Numeric extends js.Object
+  sealed trait Numeric extends Mode
   
   @js.native
-  sealed trait Q extends js.Object
+  sealed trait Q extends ErrorCorrectionLevel
   
   @scala.inline
   def Alphanumeric: Alphanumeric = "Alphanumeric".asInstanceOf[Alphanumeric]

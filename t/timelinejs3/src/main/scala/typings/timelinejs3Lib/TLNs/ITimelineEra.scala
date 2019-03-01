@@ -14,3 +14,14 @@ trait ITimelineEra extends js.Object {
   var text: js.UndefOr[ITimelineText] = js.undefined
 }
 
+object ITimelineEra {
+  @scala.inline
+  def apply(end_date: ITimelineDate, start_date: ITimelineDate, text: ITimelineText = null): ITimelineEra = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end_date")(end_date)
+    __obj.updateDynamic("start_date")(start_date)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ITimelineEra]
+  }
+}
+

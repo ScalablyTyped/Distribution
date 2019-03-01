@@ -34,3 +34,40 @@ trait ITransportation extends js.Object {
   ): scala.Unit
 }
 
+object ITransportation {
+  @scala.inline
+  def apply(
+    request: js.Function3[
+      IRequestOptions, 
+      IResponseCallback[js.Any], 
+      mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback, 
+      scala.Unit
+    ],
+    requestFileDownload: js.Function3[
+      IRequestFileDownloadOptions, 
+      mendixmodelsdkLib.distCommonMod.commonNs.ICallback[js.Any], 
+      mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback, 
+      scala.Unit
+    ],
+    requestMultipartBinaryFileUpload: js.Function3[
+      IRequestMultipartBinaryFileUploadOptions, 
+      mendixmodelsdkLib.distCommonMod.commonNs.ICallback[js.Any], 
+      mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback, 
+      scala.Unit
+    ],
+    retryableRequest: js.Function3[
+      IRequestOptions, 
+      IResponseCallback[js.Any], 
+      mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback, 
+      scala.Unit
+    ]
+  ): ITransportation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("requestFileDownload")(requestFileDownload)
+    __obj.updateDynamic("requestMultipartBinaryFileUpload")(requestMultipartBinaryFileUpload)
+    __obj.updateDynamic("retryableRequest")(retryableRequest)
+    __obj.asInstanceOf[ITransportation]
+  }
+}
+

@@ -21,3 +21,26 @@ trait Anon_Appid extends js.Object {
   var template_id: java.lang.String
 }
 
+object Anon_Appid {
+  @scala.inline
+  def apply(
+    app_id: java.lang.String,
+    auth_code: java.lang.String,
+    out_string: java.lang.String,
+    request_id: java.lang.String,
+    scope: java.lang.String,
+    state: java.lang.String,
+    template_id: java.lang.String
+  ): Anon_Appid = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app_id")(app_id)
+    __obj.updateDynamic("auth_code")(auth_code)
+    __obj.updateDynamic("out_string")(out_string)
+    __obj.updateDynamic("request_id")(request_id)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("template_id")(template_id)
+    __obj.asInstanceOf[Anon_Appid]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Window extends js.Object {
   var plugins: Plugins
 }
 
+object Window {
+  @scala.inline
+  def apply(plugins: Plugins): Window = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("plugins")(plugins)
+    __obj.asInstanceOf[Window]
+  }
+}
+

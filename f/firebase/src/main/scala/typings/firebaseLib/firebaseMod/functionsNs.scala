@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("firebase", "functions")
 @js.native
 object functionsNs extends js.Object {
+  trait ErrorStatus extends js.Object
+  
   @js.native
   class Functions protected () extends js.Object {
     def httpsCallable(name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.functionsNs.HttpsCallable = js.native
@@ -24,7 +26,6 @@ object functionsNs extends js.Object {
     val details: js.UndefOr[js.Any] = js.undefined
   }
   
-  type ErrorStatus = firebaseLib.firebaseLibStrings.ok | firebaseLib.firebaseLibStrings.cancelled | firebaseLib.firebaseLibStrings.unknown | firebaseLib.firebaseLibStrings.`invalid-argument` | firebaseLib.firebaseLibStrings.`deadline-exceeded` | firebaseLib.firebaseLibStrings.`not-found` | firebaseLib.firebaseLibStrings.`already-exists` | firebaseLib.firebaseLibStrings.`permission-denied` | firebaseLib.firebaseLibStrings.`resource-exhausted` | firebaseLib.firebaseLibStrings.`failed-precondition` | firebaseLib.firebaseLibStrings.aborted | firebaseLib.firebaseLibStrings.`out-of-range` | firebaseLib.firebaseLibStrings.unimplemented | firebaseLib.firebaseLibStrings.internal | firebaseLib.firebaseLibStrings.unavailable | firebaseLib.firebaseLibStrings.`data-loss` | firebaseLib.firebaseLibStrings.unauthenticated
   type HttpsCallable = js.Function1[
     /* data */ js.UndefOr[js.Any], 
     js.Promise[firebaseLib.firebaseMod.firebaseNs.functionsNs.HttpsCallableResult]

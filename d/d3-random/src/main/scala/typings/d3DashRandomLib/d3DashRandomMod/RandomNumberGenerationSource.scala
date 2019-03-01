@@ -18,3 +18,12 @@ trait RandomNumberGenerationSource extends js.Object {
   def source(source: js.Function0[scala.Double]): this.type
 }
 
+object RandomNumberGenerationSource {
+  @scala.inline
+  def apply(source: js.Function1[js.Function0[scala.Double], RandomNumberGenerationSource]): RandomNumberGenerationSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[RandomNumberGenerationSource]
+  }
+}
+

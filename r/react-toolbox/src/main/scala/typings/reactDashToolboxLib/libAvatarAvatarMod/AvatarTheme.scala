@@ -20,3 +20,14 @@ trait AvatarTheme extends js.Object {
   var letter: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AvatarTheme {
+  @scala.inline
+  def apply(avatar: java.lang.String = null, image: java.lang.String = null, letter: java.lang.String = null): AvatarTheme = {
+    val __obj = js.Dynamic.literal()
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (letter != null) __obj.updateDynamic("letter")(letter)
+    __obj.asInstanceOf[AvatarTheme]
+  }
+}
+

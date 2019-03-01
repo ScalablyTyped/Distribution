@@ -10,3 +10,16 @@ trait Anon_ComparatorNumber extends js.Object {
   var number: reactLib.reactMod.ReactNs.CSSProperties
 }
 
+object Anon_ComparatorNumber {
+  @scala.inline
+  def apply(
+    comparator: reactLib.reactMod.ReactNs.CSSProperties,
+    number: reactLib.reactMod.ReactNs.CSSProperties
+  ): Anon_ComparatorNumber = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("comparator")(comparator)
+    __obj.updateDynamic("number")(number)
+    __obj.asInstanceOf[Anon_ComparatorNumber]
+  }
+}
+

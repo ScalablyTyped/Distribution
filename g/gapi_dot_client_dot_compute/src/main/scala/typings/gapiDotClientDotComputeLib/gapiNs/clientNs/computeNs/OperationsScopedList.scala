@@ -12,3 +12,13 @@ trait OperationsScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object OperationsScopedList {
+  @scala.inline
+  def apply(operations: js.Array[Operation] = null, warning: gapiDotClientDotComputeLib.Anon_Code = null): OperationsScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (operations != null) __obj.updateDynamic("operations")(operations)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[OperationsScopedList]
+  }
+}
+

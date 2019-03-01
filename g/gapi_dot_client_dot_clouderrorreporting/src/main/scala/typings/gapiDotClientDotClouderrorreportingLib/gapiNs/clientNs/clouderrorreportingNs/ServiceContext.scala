@@ -33,3 +33,18 @@ trait ServiceContext extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServiceContext {
+  @scala.inline
+  def apply(
+    resourceType: java.lang.String = null,
+    service: java.lang.String = null,
+    version: java.lang.String = null
+  ): ServiceContext = {
+    val __obj = js.Dynamic.literal()
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[ServiceContext]
+  }
+}
+

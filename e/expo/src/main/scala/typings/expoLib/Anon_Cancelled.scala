@@ -9,3 +9,12 @@ trait Anon_Cancelled extends js.Object {
   var cancelled: expoLib.expoLibNumbers.`true`
 }
 
+object Anon_Cancelled {
+  @scala.inline
+  def apply(cancelled: expoLib.expoLibNumbers.`true`): Anon_Cancelled = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancelled")(cancelled)
+    __obj.asInstanceOf[Anon_Cancelled]
+  }
+}
+

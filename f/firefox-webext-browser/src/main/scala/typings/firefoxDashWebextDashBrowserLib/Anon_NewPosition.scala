@@ -10,3 +10,13 @@ trait Anon_NewPosition extends js.Object {
   var newWindowId: scala.Double
 }
 
+object Anon_NewPosition {
+  @scala.inline
+  def apply(newPosition: scala.Double, newWindowId: scala.Double): Anon_NewPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newPosition")(newPosition)
+    __obj.updateDynamic("newWindowId")(newWindowId)
+    __obj.asInstanceOf[Anon_NewPosition]
+  }
+}
+

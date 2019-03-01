@@ -10,3 +10,12 @@ trait TailOptions extends js.Object {
   var `-n`: scala.Double
 }
 
+object TailOptions {
+  @scala.inline
+  def apply(`-n`: scala.Double): TailOptions = {
+    val __obj = js.Dynamic.literal(`-n` = `-n`)
+  
+    __obj.asInstanceOf[TailOptions]
+  }
+}
+

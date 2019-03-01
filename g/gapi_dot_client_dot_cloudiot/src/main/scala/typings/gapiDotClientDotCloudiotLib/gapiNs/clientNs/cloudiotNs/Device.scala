@@ -112,3 +112,42 @@ trait Device extends js.Object {
   var state: js.UndefOr[DeviceState] = js.undefined
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    blocked: js.UndefOr[scala.Boolean] = js.undefined,
+    config: DeviceConfig = null,
+    credentials: js.Array[DeviceCredential] = null,
+    id: java.lang.String = null,
+    lastConfigAckTime: java.lang.String = null,
+    lastConfigSendTime: java.lang.String = null,
+    lastErrorStatus: Status = null,
+    lastErrorTime: java.lang.String = null,
+    lastEventTime: java.lang.String = null,
+    lastHeartbeatTime: java.lang.String = null,
+    lastStateTime: java.lang.String = null,
+    metadata: stdLib.Record[java.lang.String, java.lang.String] = null,
+    name: java.lang.String = null,
+    numId: java.lang.String = null,
+    state: DeviceState = null
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(blocked)) __obj.updateDynamic("blocked")(blocked)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (lastConfigAckTime != null) __obj.updateDynamic("lastConfigAckTime")(lastConfigAckTime)
+    if (lastConfigSendTime != null) __obj.updateDynamic("lastConfigSendTime")(lastConfigSendTime)
+    if (lastErrorStatus != null) __obj.updateDynamic("lastErrorStatus")(lastErrorStatus)
+    if (lastErrorTime != null) __obj.updateDynamic("lastErrorTime")(lastErrorTime)
+    if (lastEventTime != null) __obj.updateDynamic("lastEventTime")(lastEventTime)
+    if (lastHeartbeatTime != null) __obj.updateDynamic("lastHeartbeatTime")(lastHeartbeatTime)
+    if (lastStateTime != null) __obj.updateDynamic("lastStateTime")(lastStateTime)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (numId != null) __obj.updateDynamic("numId")(numId)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Device]
+  }
+}
+

@@ -18,3 +18,32 @@ trait IOptions extends js.Object {
   var unorderedSets: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IOptions {
+  @scala.inline
+  def apply(
+    algorithm: java.lang.String = null,
+    encoding: java.lang.String = null,
+    excludeKeys: js.Function1[/* key */ java.lang.String, scala.Boolean] = null,
+    excludeValues: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreUnknown: js.UndefOr[scala.Boolean] = js.undefined,
+    replacer: js.Function1[/* value */ js.Any, _] = null,
+    respectFunctionNames: js.UndefOr[scala.Boolean] = js.undefined,
+    respectFunctionProperties: js.UndefOr[scala.Boolean] = js.undefined,
+    unorderedArrays: js.UndefOr[scala.Boolean] = js.undefined,
+    unorderedSets: js.UndefOr[scala.Boolean] = js.undefined
+  ): IOptions = {
+    val __obj = js.Dynamic.literal()
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (excludeKeys != null) __obj.updateDynamic("excludeKeys")(excludeKeys)
+    if (!js.isUndefined(excludeValues)) __obj.updateDynamic("excludeValues")(excludeValues)
+    if (!js.isUndefined(ignoreUnknown)) __obj.updateDynamic("ignoreUnknown")(ignoreUnknown)
+    if (replacer != null) __obj.updateDynamic("replacer")(replacer)
+    if (!js.isUndefined(respectFunctionNames)) __obj.updateDynamic("respectFunctionNames")(respectFunctionNames)
+    if (!js.isUndefined(respectFunctionProperties)) __obj.updateDynamic("respectFunctionProperties")(respectFunctionProperties)
+    if (!js.isUndefined(unorderedArrays)) __obj.updateDynamic("unorderedArrays")(unorderedArrays)
+    if (!js.isUndefined(unorderedSets)) __obj.updateDynamic("unorderedSets")(unorderedSets)
+    __obj.asInstanceOf[IOptions]
+  }
+}
+

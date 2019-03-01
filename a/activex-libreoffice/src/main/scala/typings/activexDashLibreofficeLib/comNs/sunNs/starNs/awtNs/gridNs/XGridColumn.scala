@@ -85,3 +85,52 @@ trait XGridColumn
   def removeGridColumnListener(Listener: XGridColumnListener): scala.Unit
 }
 
+object XGridColumn {
+  @scala.inline
+  def apply(
+    ColumnWidth: scala.Double,
+    DataColumnIndex: scala.Double,
+    Flexibility: scala.Double,
+    HelpText: java.lang.String,
+    HorizontalAlign: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.HorizontalAlignment,
+    Identifier: js.Any,
+    Index: scala.Double,
+    MaxWidth: scala.Double,
+    MinWidth: scala.Double,
+    Resizeable: scala.Boolean,
+    Title: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addGridColumnListener: js.Function1[XGridColumnListener, scala.Unit],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    dispose: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeGridColumnListener: js.Function1[XGridColumnListener, scala.Unit]
+  ): XGridColumn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColumnWidth")(ColumnWidth)
+    __obj.updateDynamic("DataColumnIndex")(DataColumnIndex)
+    __obj.updateDynamic("Flexibility")(Flexibility)
+    __obj.updateDynamic("HelpText")(HelpText)
+    __obj.updateDynamic("HorizontalAlign")(HorizontalAlign)
+    __obj.updateDynamic("Identifier")(Identifier)
+    __obj.updateDynamic("Index")(Index)
+    __obj.updateDynamic("MaxWidth")(MaxWidth)
+    __obj.updateDynamic("MinWidth")(MinWidth)
+    __obj.updateDynamic("Resizeable")(Resizeable)
+    __obj.updateDynamic("Title")(Title)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addGridColumnListener")(addGridColumnListener)
+    __obj.updateDynamic("createClone")(createClone)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removeGridColumnListener")(removeGridColumnListener)
+    __obj.asInstanceOf[XGridColumn]
+  }
+}
+

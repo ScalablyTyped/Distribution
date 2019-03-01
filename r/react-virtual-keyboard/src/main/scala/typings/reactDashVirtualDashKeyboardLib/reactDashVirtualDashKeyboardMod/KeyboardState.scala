@@ -10,3 +10,13 @@ trait KeyboardState extends js.Object {
   var value: java.lang.String
 }
 
+object KeyboardState {
+  @scala.inline
+  def apply(className: java.lang.String, value: java.lang.String): KeyboardState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[KeyboardState]
+  }
+}
+

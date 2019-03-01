@@ -29,3 +29,23 @@ trait ArtifactResource extends js.Object {
   var url: java.lang.String
 }
 
+object ArtifactResource {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    data: java.lang.String,
+    downloadUrl: java.lang.String,
+    properties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    `type`: java.lang.String,
+    url: java.lang.String
+  ): ArtifactResource = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("downloadUrl")(downloadUrl)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ArtifactResource]
+  }
+}
+

@@ -7,52 +7,69 @@ import scala.scalajs.js.annotation._
 
 object googlemapsLibStrings {
   @js.native
-  sealed trait LineString extends js.Object
+  sealed trait LineString
+    extends googlemapsLib.googleNs.mapsNs.DrawingMode
   
   @js.native
-  sealed trait Point extends js.Object
+  sealed trait Point
+    extends googlemapsLib.googleNs.mapsNs.DrawingMode
   
   @js.native
-  sealed trait Polygon extends js.Object
+  sealed trait Polygon
+    extends googlemapsLib.googleNs.mapsNs.DrawingMode
   
   @js.native
-  sealed trait administrative extends js.Object
+  sealed trait administrative
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTcountry extends js.Object
+  sealed trait administrativeDOTcountry
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTland_parcel extends js.Object
+  sealed trait administrativeDOTland_parcel
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTlocality extends js.Object
+  sealed trait administrativeDOTlocality
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTneighborhood extends js.Object
+  sealed trait administrativeDOTneighborhood
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait administrativeDOTprovince extends js.Object
+  sealed trait administrativeDOTprovince
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleElementType
+       with googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends googlemapsLib.googleNs.mapsNs.GestureHandlingOptions
   
   @js.native
-  sealed trait cooperative extends js.Object
+  sealed trait cooperative
+    extends googlemapsLib.googleNs.mapsNs.GestureHandlingOptions
   
   @js.native
-  sealed trait geometry extends js.Object
+  sealed trait geometry
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleElementType
   
   @js.native
-  sealed trait geometryDOTfill extends js.Object
+  sealed trait geometryDOTfill
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleElementType
   
   @js.native
-  sealed trait geometryDOTstroke extends js.Object
+  sealed trait geometryDOTstroke
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleElementType
   
   @js.native
-  sealed trait greedy extends js.Object
+  sealed trait greedy
+    extends googlemapsLib.googleNs.mapsNs.GestureHandlingOptions
   
   @js.native
   sealed trait html4 extends js.Object
@@ -61,100 +78,132 @@ object googlemapsLibStrings {
   sealed trait html5 extends js.Object
   
   @js.native
-  sealed trait labels extends js.Object
+  sealed trait labels
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleElementType
   
   @js.native
-  sealed trait labelsDOTicon extends js.Object
+  sealed trait labelsDOTicon
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleElementType
   
   @js.native
-  sealed trait labelsDOTtext extends js.Object
+  sealed trait labelsDOTtext
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleElementType
   
   @js.native
-  sealed trait labelsDOTtextDOTfill extends js.Object
+  sealed trait labelsDOTtextDOTfill
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleElementType
   
   @js.native
-  sealed trait labelsDOTtextDOTstroke extends js.Object
+  sealed trait labelsDOTtextDOTstroke
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleElementType
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait landscapeDOTman_made extends js.Object
+  sealed trait landscapeDOTman_made
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait landscapeDOTnatural extends js.Object
+  sealed trait landscapeDOTnatural
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait landscapeDOTnaturalDOTlandcover extends js.Object
+  sealed trait landscapeDOTnaturalDOTlandcover
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait landscapeDOTnaturalDOTterrain extends js.Object
+  sealed trait landscapeDOTnaturalDOTterrain
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends googlemapsLib.googleNs.mapsNs.GestureHandlingOptions
   
   @js.native
-  sealed trait poi extends js.Object
+  sealed trait poi
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTattraction extends js.Object
+  sealed trait poiDOTattraction
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTbusiness extends js.Object
+  sealed trait poiDOTbusiness
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTgovernment extends js.Object
+  sealed trait poiDOTgovernment
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTmedical extends js.Object
+  sealed trait poiDOTmedical
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTpark extends js.Object
+  sealed trait poiDOTpark
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTplace_of_worship extends js.Object
+  sealed trait poiDOTplace_of_worship
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTschool extends js.Object
+  sealed trait poiDOTschool
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait poiDOTsports_complex extends js.Object
+  sealed trait poiDOTsports_complex
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait road extends js.Object
+  sealed trait road
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait roadDOTarterial extends js.Object
+  sealed trait roadDOTarterial
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait roadDOThighway extends js.Object
+  sealed trait roadDOThighway
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait roadDOThighwayDOTcontrolled_access extends js.Object
+  sealed trait roadDOThighwayDOTcontrolled_access
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait roadDOTlocal extends js.Object
+  sealed trait roadDOTlocal
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transit extends js.Object
+  sealed trait transit
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTline extends js.Object
+  sealed trait transitDOTline
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTstation extends js.Object
+  sealed trait transitDOTstation
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTstationDOTairport extends js.Object
+  sealed trait transitDOTstationDOTairport
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTstationDOTbus extends js.Object
+  sealed trait transitDOTstationDOTbus
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait transitDOTstationDOTrail extends js.Object
+  sealed trait transitDOTstationDOTrail
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
-  sealed trait water extends js.Object
+  sealed trait water
+    extends googlemapsLib.googleNs.mapsNs.MapTypeStyleFeatureType
   
   @js.native
   sealed trait webgl extends js.Object

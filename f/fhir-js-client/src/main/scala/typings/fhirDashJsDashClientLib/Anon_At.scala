@@ -26,3 +26,21 @@ trait Anon_At
   var _format: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_At {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Making this interface extendable so that we can add more custom filter parameters
+    */
+  /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    _at: java.lang.String = null,
+    _format: java.lang.String = null
+  ): Anon_At = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (_at != null) __obj.updateDynamic("_at")(_at)
+    if (_format != null) __obj.updateDynamic("_format")(_format)
+    __obj.asInstanceOf[Anon_At]
+  }
+}
+

@@ -13,3 +13,21 @@ trait BaseQuery extends js.Object {
   var where: js.UndefOr[js.Array[Pattern]] = js.undefined
 }
 
+object BaseQuery {
+  @scala.inline
+  def apply(
+    prefixes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    `type`: sparqljsLib.sparqljsLibStrings.query,
+    base: java.lang.String = null,
+    values: js.Array[ValuePatternRow] = null,
+    where: js.Array[Pattern] = null
+  ): BaseQuery = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("prefixes")(prefixes)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (values != null) __obj.updateDynamic("values")(values)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[BaseQuery]
+  }
+}
+

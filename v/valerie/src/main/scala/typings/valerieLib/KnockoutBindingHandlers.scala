@@ -148,3 +148,48 @@ trait KnockoutBindingHandlers extends js.Object {
   var visibleWhenValid: knockoutLib.KnockoutBindingHandler[_, _, _]
 }
 
+object KnockoutBindingHandlers {
+  @scala.inline
+  def apply(
+    disabledWhenNotValid: knockoutLib.KnockoutBindingHandler[_, _, _],
+    disabledWhenTouchedAndNotValid: knockoutLib.KnockoutBindingHandler[_, _, _],
+    enabledWhenApplicable: knockoutLib.KnockoutBindingHandler[_, _, _],
+    formattedText: knockoutLib.KnockoutBindingHandler[_, _, _],
+    validatedChecked: knockoutLib.KnockoutBindingHandler[_, _, _],
+    validatedSelectedOptions: knockoutLib.KnockoutBindingHandler[_, _, _],
+    validatedValue: knockoutLib.KnockoutBindingHandler[_, _, _],
+    validationCss: knockoutLib.KnockoutBindingHandler[_, _, _],
+    validationMessage: knockoutLib.KnockoutBindingHandler[_, _, _],
+    validationMessageText: knockoutLib.KnockoutBindingHandler[_, _, _],
+    validationName: knockoutLib.KnockoutBindingHandler[_, _, _],
+    visibleWhenApplicable: knockoutLib.KnockoutBindingHandler[_, _, _],
+    visibleWhenFocused: knockoutLib.KnockoutBindingHandler[_, _, _],
+    visibleWhenInvalid: knockoutLib.KnockoutBindingHandler[_, _, _],
+    visibleWhenSummaryNotEmpty: knockoutLib.KnockoutBindingHandler[_, _, _],
+    visibleWhenTouched: knockoutLib.KnockoutBindingHandler[_, _, _],
+    visibleWhenUntouched: knockoutLib.KnockoutBindingHandler[_, _, _],
+    visibleWhenValid: knockoutLib.KnockoutBindingHandler[_, _, _]
+  ): KnockoutBindingHandlers = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disabledWhenNotValid")(disabledWhenNotValid)
+    __obj.updateDynamic("disabledWhenTouchedAndNotValid")(disabledWhenTouchedAndNotValid)
+    __obj.updateDynamic("enabledWhenApplicable")(enabledWhenApplicable)
+    __obj.updateDynamic("formattedText")(formattedText)
+    __obj.updateDynamic("validatedChecked")(validatedChecked)
+    __obj.updateDynamic("validatedSelectedOptions")(validatedSelectedOptions)
+    __obj.updateDynamic("validatedValue")(validatedValue)
+    __obj.updateDynamic("validationCss")(validationCss)
+    __obj.updateDynamic("validationMessage")(validationMessage)
+    __obj.updateDynamic("validationMessageText")(validationMessageText)
+    __obj.updateDynamic("validationName")(validationName)
+    __obj.updateDynamic("visibleWhenApplicable")(visibleWhenApplicable)
+    __obj.updateDynamic("visibleWhenFocused")(visibleWhenFocused)
+    __obj.updateDynamic("visibleWhenInvalid")(visibleWhenInvalid)
+    __obj.updateDynamic("visibleWhenSummaryNotEmpty")(visibleWhenSummaryNotEmpty)
+    __obj.updateDynamic("visibleWhenTouched")(visibleWhenTouched)
+    __obj.updateDynamic("visibleWhenUntouched")(visibleWhenUntouched)
+    __obj.updateDynamic("visibleWhenValid")(visibleWhenValid)
+    __obj.asInstanceOf[KnockoutBindingHandlers]
+  }
+}
+

@@ -10,3 +10,13 @@ trait MultiColumnComboBoxAnimationOpen extends js.Object {
   var effects: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MultiColumnComboBoxAnimationOpen {
+  @scala.inline
+  def apply(duration: scala.Int | scala.Double = null, effects: java.lang.String = null): MultiColumnComboBoxAnimationOpen = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (effects != null) __obj.updateDynamic("effects")(effects)
+    __obj.asInstanceOf[MultiColumnComboBoxAnimationOpen]
+  }
+}
+

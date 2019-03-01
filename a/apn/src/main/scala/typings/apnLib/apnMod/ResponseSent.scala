@@ -9,3 +9,12 @@ trait ResponseSent extends js.Object {
   var device: java.lang.String
 }
 
+object ResponseSent {
+  @scala.inline
+  def apply(device: java.lang.String): ResponseSent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("device")(device)
+    __obj.asInstanceOf[ResponseSent]
+  }
+}
+

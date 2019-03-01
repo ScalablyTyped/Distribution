@@ -33,3 +33,48 @@ trait ExportingContextButton extends Button {
   var x: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ExportingContextButton {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    menuItems: js.Array[java.lang.String] | js.Array[MenuItem] = null,
+    onclick: js.Function0[scala.Unit] = null,
+    symbol: java.lang.String = null,
+    symbolFill: java.lang.String = null,
+    symbolSize: scala.Int | scala.Double = null,
+    symbolStroke: java.lang.String = null,
+    symbolStrokeWidth: scala.Int | scala.Double = null,
+    symbolX: scala.Int | scala.Double = null,
+    symbolY: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    theme: ButtonStatesTheme = null,
+    verticalAlign: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): ExportingContextButton = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (menuItems != null) __obj.updateDynamic("menuItems")(menuItems.asInstanceOf[js.Any])
+    if (onclick != null) __obj.updateDynamic("onclick")(onclick)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (symbolFill != null) __obj.updateDynamic("symbolFill")(symbolFill)
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (symbolStroke != null) __obj.updateDynamic("symbolStroke")(symbolStroke)
+    if (symbolStrokeWidth != null) __obj.updateDynamic("symbolStrokeWidth")(symbolStrokeWidth.asInstanceOf[js.Any])
+    if (symbolX != null) __obj.updateDynamic("symbolX")(symbolX.asInstanceOf[js.Any])
+    if (symbolY != null) __obj.updateDynamic("symbolY")(symbolY.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExportingContextButton]
+  }
+}
+

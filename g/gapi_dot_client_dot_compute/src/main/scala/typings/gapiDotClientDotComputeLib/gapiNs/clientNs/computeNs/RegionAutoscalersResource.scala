@@ -23,3 +23,42 @@ trait RegionAutoscalersResource extends js.Object {
   def update(request: gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrintProject): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object RegionAutoscalersResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Autoscaler]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RegionAutoscalerList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrintProject, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    update: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltAutoscalerFieldsKeyOauthtokenPrettyPrintProject, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): RegionAutoscalersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[RegionAutoscalersResource]
+  }
+}
+

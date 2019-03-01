@@ -12,3 +12,16 @@ trait Anon_InsertId extends js.Object {
   var json: js.UndefOr[gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.JsonObject] = js.undefined
 }
 
+object Anon_InsertId {
+  @scala.inline
+  def apply(
+    insertId: java.lang.String = null,
+    json: gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.JsonObject = null
+  ): Anon_InsertId = {
+    val __obj = js.Dynamic.literal()
+    if (insertId != null) __obj.updateDynamic("insertId")(insertId)
+    if (json != null) __obj.updateDynamic("json")(json)
+    __obj.asInstanceOf[Anon_InsertId]
+  }
+}
+

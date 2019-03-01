@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object atReachRouterLibStrings {
   @js.native
-  sealed trait POP extends js.Object
+  sealed trait POP
+    extends atReachRouterLib.atReachRouterMod.HistoryActionType
   
   @js.native
-  sealed trait PUSH extends js.Object
+  sealed trait PUSH
+    extends atReachRouterLib.atReachRouterMod.HistoryActionType
   
   @js.native
   sealed trait href extends js.Object

@@ -14,3 +14,24 @@ trait EffectsCommandMap
   def put[A /* <: reduxLib.reduxMod.AnyAction */](action: A): js.Any
 }
 
+object EffectsCommandMap {
+  @scala.inline
+  def apply(
+    call: js.Function,
+    cancel: js.Function,
+    put: js.Function1[js.Any, js.Any],
+    select: js.Function,
+    take: js.Function,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): EffectsCommandMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("call")(call)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("put")(put)
+    __obj.updateDynamic("select")(select)
+    __obj.updateDynamic("take")(take)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[EffectsCommandMap]
+  }
+}
+

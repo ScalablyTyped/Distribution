@@ -12,3 +12,20 @@ trait Anon_ComparisonOperatorFieldToMatch extends js.Object {
   var textTransformation: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_ComparisonOperatorFieldToMatch {
+  @scala.inline
+  def apply(
+    comparisonOperator: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    fieldToMatch: atPulumiPulumiLib.outputMod.Input[Anon_DataTypeInput],
+    size: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    textTransformation: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): Anon_ComparisonOperatorFieldToMatch = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("comparisonOperator")(comparisonOperator.asInstanceOf[js.Any])
+    __obj.updateDynamic("fieldToMatch")(fieldToMatch.asInstanceOf[js.Any])
+    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.updateDynamic("textTransformation")(textTransformation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ComparisonOperatorFieldToMatch]
+  }
+}
+

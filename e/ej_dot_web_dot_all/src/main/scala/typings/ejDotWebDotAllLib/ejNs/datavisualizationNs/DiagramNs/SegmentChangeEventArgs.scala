@@ -23,3 +23,22 @@ trait SegmentChangeEventArgs extends js.Object {
   var point: js.UndefOr[js.Any] = js.undefined
 }
 
+object SegmentChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    diagramId: java.lang.String = null,
+    dragState: java.lang.String = null,
+    element: js.Any = null,
+    point: js.Any = null
+  ): SegmentChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (dragState != null) __obj.updateDynamic("dragState")(dragState)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (point != null) __obj.updateDynamic("point")(point)
+    __obj.asInstanceOf[SegmentChangeEventArgs]
+  }
+}
+

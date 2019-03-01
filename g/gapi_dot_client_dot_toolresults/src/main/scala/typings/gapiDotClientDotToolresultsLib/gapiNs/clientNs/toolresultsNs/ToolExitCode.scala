@@ -14,3 +14,12 @@ trait ToolExitCode extends js.Object {
   var number: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ToolExitCode {
+  @scala.inline
+  def apply(number: scala.Int | scala.Double = null): ToolExitCode = {
+    val __obj = js.Dynamic.literal()
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToolExitCode]
+  }
+}
+

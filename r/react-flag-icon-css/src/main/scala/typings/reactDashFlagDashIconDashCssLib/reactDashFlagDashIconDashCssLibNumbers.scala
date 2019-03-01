@@ -10,19 +10,24 @@ object reactDashFlagDashIconDashCssLibNumbers {
   sealed trait `0` extends js.Object
   
   @js.native
-  sealed trait `180` extends js.Object
+  sealed trait `180`
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconRotate
   
   @js.native
-  sealed trait `270` extends js.Object
+  sealed trait `270`
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconRotate
   
   @js.native
-  sealed trait `30` extends js.Object
+  sealed trait `30`
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconRotate
   
   @js.native
-  sealed trait `60` extends js.Object
+  sealed trait `60`
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconRotate
   
   @js.native
-  sealed trait `90` extends js.Object
+  sealed trait `90`
+    extends reactDashFlagDashIconDashCssLib.reactDashFlagDashIconDashCssMod.FlagIconRotate
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

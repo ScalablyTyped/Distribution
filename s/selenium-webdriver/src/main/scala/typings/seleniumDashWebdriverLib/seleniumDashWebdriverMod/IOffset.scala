@@ -10,3 +10,13 @@ trait IOffset extends js.Object {
   var y: scala.Double
 }
 
+object IOffset {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double): IOffset = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[IOffset]
+  }
+}
+

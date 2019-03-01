@@ -16,3 +16,13 @@ trait ClientSendOptions extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ClientSendOptions {
+  @scala.inline
+  def apply(sandbox: Sandbox = null, url: java.lang.String = null): ClientSendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (sandbox != null) __obj.updateDynamic("sandbox")(sandbox)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ClientSendOptions]
+  }
+}
+

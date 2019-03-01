@@ -41,3 +41,28 @@ trait AuthSetting extends js.Object {
   var `scope.writePhotosAlbum`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AuthSetting {
+  @scala.inline
+  def apply(
+    `scope.address`: js.UndefOr[scala.Boolean] = js.undefined,
+    `scope.camera`: js.UndefOr[scala.Boolean] = js.undefined,
+    `scope.invoiceTitle`: js.UndefOr[scala.Boolean] = js.undefined,
+    `scope.record`: js.UndefOr[scala.Boolean] = js.undefined,
+    `scope.userInfo`: js.UndefOr[scala.Boolean] = js.undefined,
+    `scope.userLocation`: js.UndefOr[scala.Boolean] = js.undefined,
+    `scope.werun`: js.UndefOr[scala.Boolean] = js.undefined,
+    `scope.writePhotosAlbum`: js.UndefOr[scala.Boolean] = js.undefined
+  ): AuthSetting = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(`scope.address`)) __obj.updateDynamic("scope.address")(`scope.address`)
+    if (!js.isUndefined(`scope.camera`)) __obj.updateDynamic("scope.camera")(`scope.camera`)
+    if (!js.isUndefined(`scope.invoiceTitle`)) __obj.updateDynamic("scope.invoiceTitle")(`scope.invoiceTitle`)
+    if (!js.isUndefined(`scope.record`)) __obj.updateDynamic("scope.record")(`scope.record`)
+    if (!js.isUndefined(`scope.userInfo`)) __obj.updateDynamic("scope.userInfo")(`scope.userInfo`)
+    if (!js.isUndefined(`scope.userLocation`)) __obj.updateDynamic("scope.userLocation")(`scope.userLocation`)
+    if (!js.isUndefined(`scope.werun`)) __obj.updateDynamic("scope.werun")(`scope.werun`)
+    if (!js.isUndefined(`scope.writePhotosAlbum`)) __obj.updateDynamic("scope.writePhotosAlbum")(`scope.writePhotosAlbum`)
+    __obj.asInstanceOf[AuthSetting]
+  }
+}
+

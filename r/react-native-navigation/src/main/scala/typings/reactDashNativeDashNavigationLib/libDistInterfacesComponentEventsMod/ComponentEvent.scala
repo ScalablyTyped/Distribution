@@ -9,3 +9,12 @@ trait ComponentEvent extends js.Object {
   var componentId: java.lang.String
 }
 
+object ComponentEvent {
+  @scala.inline
+  def apply(componentId: java.lang.String): ComponentEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("componentId")(componentId)
+    __obj.asInstanceOf[ComponentEvent]
+  }
+}
+

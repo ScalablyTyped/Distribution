@@ -5,10 +5,27 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_DataDescription extends js.Object {
+trait Anon_DataDescription
+  extends firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.NativeManifest {
   var data: js.Any
   var description: java.lang.String
   var name: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionID
   var `type`: firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.storage
+}
+
+object Anon_DataDescription {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    description: java.lang.String,
+    name: firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.ExtensionID,
+    `type`: firefoxDashWebextDashBrowserLib.firefoxDashWebextDashBrowserLibStrings.storage
+  ): Anon_DataDescription = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Anon_DataDescription]
+  }
 }
 

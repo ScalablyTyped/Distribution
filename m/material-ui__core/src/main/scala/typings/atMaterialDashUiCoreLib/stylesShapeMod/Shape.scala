@@ -9,3 +9,12 @@ trait Shape extends js.Object {
   var borderRadius: scala.Double
 }
 
+object Shape {
+  @scala.inline
+  def apply(borderRadius: scala.Double): Shape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("borderRadius")(borderRadius)
+    __obj.asInstanceOf[Shape]
+  }
+}
+

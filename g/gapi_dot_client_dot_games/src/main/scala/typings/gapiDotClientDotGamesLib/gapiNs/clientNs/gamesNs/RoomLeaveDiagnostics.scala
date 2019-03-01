@@ -32,3 +32,28 @@ trait RoomLeaveDiagnostics extends js.Object {
   var socketsUsed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RoomLeaveDiagnostics {
+  @scala.inline
+  def apply(
+    androidNetworkSubtype: scala.Int | scala.Double = null,
+    androidNetworkType: scala.Int | scala.Double = null,
+    iosNetworkType: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    networkOperatorCode: java.lang.String = null,
+    networkOperatorName: java.lang.String = null,
+    peerSession: js.Array[PeerSessionDiagnostics] = null,
+    socketsUsed: js.UndefOr[scala.Boolean] = js.undefined
+  ): RoomLeaveDiagnostics = {
+    val __obj = js.Dynamic.literal()
+    if (androidNetworkSubtype != null) __obj.updateDynamic("androidNetworkSubtype")(androidNetworkSubtype.asInstanceOf[js.Any])
+    if (androidNetworkType != null) __obj.updateDynamic("androidNetworkType")(androidNetworkType.asInstanceOf[js.Any])
+    if (iosNetworkType != null) __obj.updateDynamic("iosNetworkType")(iosNetworkType.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (networkOperatorCode != null) __obj.updateDynamic("networkOperatorCode")(networkOperatorCode)
+    if (networkOperatorName != null) __obj.updateDynamic("networkOperatorName")(networkOperatorName)
+    if (peerSession != null) __obj.updateDynamic("peerSession")(peerSession)
+    if (!js.isUndefined(socketsUsed)) __obj.updateDynamic("socketsUsed")(socketsUsed)
+    __obj.asInstanceOf[RoomLeaveDiagnostics]
+  }
+}
+

@@ -16,3 +16,16 @@ trait VpnGatewayAttachmentArgs extends js.Object {
   val vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object VpnGatewayAttachmentArgs {
+  @scala.inline
+  def apply(
+    vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): VpnGatewayAttachmentArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("vpcId")(vpcId.asInstanceOf[js.Any])
+    __obj.updateDynamic("vpnGatewayId")(vpnGatewayId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VpnGatewayAttachmentArgs]
+  }
+}
+

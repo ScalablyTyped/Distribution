@@ -26,3 +26,24 @@ trait BeforeUploadEventArgs extends js.Object {
   var uploadItemDetails: js.UndefOr[js.Any] = js.undefined
 }
 
+object BeforeUploadEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    path: java.lang.String = null,
+    selectedItems: js.Any = null,
+    `type`: java.lang.String = null,
+    uploadItemDetails: js.Any = null
+  ): BeforeUploadEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (uploadItemDetails != null) __obj.updateDynamic("uploadItemDetails")(uploadItemDetails)
+    __obj.asInstanceOf[BeforeUploadEventArgs]
+  }
+}
+

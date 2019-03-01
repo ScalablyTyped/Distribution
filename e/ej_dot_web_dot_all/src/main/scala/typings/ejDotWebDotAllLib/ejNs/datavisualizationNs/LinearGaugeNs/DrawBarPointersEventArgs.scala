@@ -44,3 +44,36 @@ trait DrawBarPointersEventArgs extends js.Object {
   var `type`: js.UndefOr[js.Any] = js.undefined
 }
 
+object DrawBarPointersEventArgs {
+  @scala.inline
+  def apply(
+    Model: js.Any = null,
+    PointerValue: scala.Int | scala.Double = null,
+    barElement: js.Any = null,
+    barPointerIndex: scala.Int | scala.Double = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    `object`: js.Any = null,
+    position: js.Any = null,
+    scaleElement: js.Any = null,
+    scaleIndex: scala.Int | scala.Double = null,
+    style: java.lang.String = null,
+    `type`: js.Any = null
+  ): DrawBarPointersEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (Model != null) __obj.updateDynamic("Model")(Model)
+    if (PointerValue != null) __obj.updateDynamic("PointerValue")(PointerValue.asInstanceOf[js.Any])
+    if (barElement != null) __obj.updateDynamic("barElement")(barElement)
+    if (barPointerIndex != null) __obj.updateDynamic("barPointerIndex")(barPointerIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (scaleElement != null) __obj.updateDynamic("scaleElement")(scaleElement)
+    if (scaleIndex != null) __obj.updateDynamic("scaleIndex")(scaleIndex.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DrawBarPointersEventArgs]
+  }
+}
+

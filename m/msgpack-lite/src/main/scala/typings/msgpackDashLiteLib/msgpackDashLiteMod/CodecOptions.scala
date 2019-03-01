@@ -49,3 +49,26 @@ trait CodecOptions extends js.Object {
   var useraw: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CodecOptions {
+  @scala.inline
+  def apply(
+    binarraybuffer: js.UndefOr[scala.Boolean] = js.undefined,
+    int64: js.UndefOr[scala.Boolean] = js.undefined,
+    preset: js.UndefOr[scala.Boolean] = js.undefined,
+    safe: js.UndefOr[scala.Boolean] = js.undefined,
+    uint8array: js.UndefOr[scala.Boolean] = js.undefined,
+    usemap: js.UndefOr[scala.Boolean] = js.undefined,
+    useraw: js.UndefOr[scala.Boolean] = js.undefined
+  ): CodecOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(binarraybuffer)) __obj.updateDynamic("binarraybuffer")(binarraybuffer)
+    if (!js.isUndefined(int64)) __obj.updateDynamic("int64")(int64)
+    if (!js.isUndefined(preset)) __obj.updateDynamic("preset")(preset)
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
+    if (!js.isUndefined(uint8array)) __obj.updateDynamic("uint8array")(uint8array)
+    if (!js.isUndefined(usemap)) __obj.updateDynamic("usemap")(usemap)
+    if (!js.isUndefined(useraw)) __obj.updateDynamic("useraw")(useraw)
+    __obj.asInstanceOf[CodecOptions]
+  }
+}
+

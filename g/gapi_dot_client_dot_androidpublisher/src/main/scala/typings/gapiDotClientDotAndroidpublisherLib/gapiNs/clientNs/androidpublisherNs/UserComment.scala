@@ -38,3 +38,36 @@ trait UserComment extends js.Object {
   var thumbsUpCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object UserComment {
+  @scala.inline
+  def apply(
+    androidOsVersion: scala.Int | scala.Double = null,
+    appVersionCode: scala.Int | scala.Double = null,
+    appVersionName: java.lang.String = null,
+    device: java.lang.String = null,
+    deviceMetadata: DeviceMetadata = null,
+    lastModified: Timestamp = null,
+    originalText: java.lang.String = null,
+    reviewerLanguage: java.lang.String = null,
+    starRating: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    thumbsDownCount: scala.Int | scala.Double = null,
+    thumbsUpCount: scala.Int | scala.Double = null
+  ): UserComment = {
+    val __obj = js.Dynamic.literal()
+    if (androidOsVersion != null) __obj.updateDynamic("androidOsVersion")(androidOsVersion.asInstanceOf[js.Any])
+    if (appVersionCode != null) __obj.updateDynamic("appVersionCode")(appVersionCode.asInstanceOf[js.Any])
+    if (appVersionName != null) __obj.updateDynamic("appVersionName")(appVersionName)
+    if (device != null) __obj.updateDynamic("device")(device)
+    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata)
+    if (lastModified != null) __obj.updateDynamic("lastModified")(lastModified)
+    if (originalText != null) __obj.updateDynamic("originalText")(originalText)
+    if (reviewerLanguage != null) __obj.updateDynamic("reviewerLanguage")(reviewerLanguage)
+    if (starRating != null) __obj.updateDynamic("starRating")(starRating.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (thumbsDownCount != null) __obj.updateDynamic("thumbsDownCount")(thumbsDownCount.asInstanceOf[js.Any])
+    if (thumbsUpCount != null) __obj.updateDynamic("thumbsUpCount")(thumbsUpCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserComment]
+  }
+}
+

@@ -32,3 +32,24 @@ trait IgnoreSettings extends js.Object {
   var ignoreUrl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgnoreSettings {
+  @scala.inline
+  def apply(
+    ignoreAlphaNumericWords: java.lang.String = null,
+    ignoreEmailAddress: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreFileNames: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreMixedCaseWords: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreUpperCase: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreUrl: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgnoreSettings = {
+    val __obj = js.Dynamic.literal()
+    if (ignoreAlphaNumericWords != null) __obj.updateDynamic("ignoreAlphaNumericWords")(ignoreAlphaNumericWords)
+    if (!js.isUndefined(ignoreEmailAddress)) __obj.updateDynamic("ignoreEmailAddress")(ignoreEmailAddress)
+    if (!js.isUndefined(ignoreFileNames)) __obj.updateDynamic("ignoreFileNames")(ignoreFileNames)
+    if (!js.isUndefined(ignoreMixedCaseWords)) __obj.updateDynamic("ignoreMixedCaseWords")(ignoreMixedCaseWords)
+    if (!js.isUndefined(ignoreUpperCase)) __obj.updateDynamic("ignoreUpperCase")(ignoreUpperCase)
+    if (!js.isUndefined(ignoreUrl)) __obj.updateDynamic("ignoreUrl")(ignoreUrl)
+    __obj.asInstanceOf[IgnoreSettings]
+  }
+}
+

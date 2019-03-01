@@ -169,3 +169,78 @@ trait PerAxisOptions extends js.Object {
   var valueRange: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object PerAxisOptions {
+  @scala.inline
+  def apply(
+    axisLabelColor: java.lang.String = null,
+    axisLabelFontSize: scala.Int | scala.Double = null,
+    axisLabelFormatter: js.Function4[
+      /* v */ scala.Double | stdLib.Date, 
+      /* granularity */ scala.Double, 
+      /* opts */ js.Function1[/* name */ java.lang.String, _], 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      _
+    ] = null,
+    axisLabelWidth: scala.Int | scala.Double = null,
+    axisLineColor: java.lang.String = null,
+    axisLineWidth: scala.Int | scala.Double = null,
+    axisTickSize: scala.Int | scala.Double = null,
+    drawAxis: js.UndefOr[scala.Boolean] = js.undefined,
+    drawGrid: js.UndefOr[scala.Boolean] = js.undefined,
+    gridLineColor: java.lang.String = null,
+    gridLinePattern: js.Array[scala.Double] = null,
+    gridLineWidth: scala.Int | scala.Double = null,
+    independentTicks: js.UndefOr[scala.Boolean] = js.undefined,
+    labelsKMB: js.UndefOr[scala.Boolean] = js.undefined,
+    labelsKMG2: js.UndefOr[scala.Boolean] = js.undefined,
+    logscale: js.UndefOr[scala.Boolean] = js.undefined,
+    maxNumberWidth: scala.Int | scala.Double = null,
+    pixelsPerLabel: scala.Int | scala.Double = null,
+    sigFigs: scala.Int | scala.Double = null,
+    ticker: js.Function6[
+      /* min */ scala.Double, 
+      /* max */ scala.Double, 
+      /* pixels */ scala.Double, 
+      /* opts */ js.Function1[/* name */ java.lang.String, _], 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      /* vals */ js.Array[scala.Double], 
+      js.Array[dygraphsLib.Anon_Label]
+    ] = null,
+    valueFormatter: js.Function6[
+      /* v */ scala.Double, 
+      /* opts */ js.Function1[/* name */ java.lang.String, _], 
+      /* seriesName */ java.lang.String, 
+      /* dygraph */ dygraphsLib.Dygraph, 
+      /* row */ scala.Double, 
+      /* col */ scala.Double, 
+      _
+    ] = null,
+    valueRange: js.Array[scala.Double] = null
+  ): PerAxisOptions = {
+    val __obj = js.Dynamic.literal()
+    if (axisLabelColor != null) __obj.updateDynamic("axisLabelColor")(axisLabelColor)
+    if (axisLabelFontSize != null) __obj.updateDynamic("axisLabelFontSize")(axisLabelFontSize.asInstanceOf[js.Any])
+    if (axisLabelFormatter != null) __obj.updateDynamic("axisLabelFormatter")(axisLabelFormatter)
+    if (axisLabelWidth != null) __obj.updateDynamic("axisLabelWidth")(axisLabelWidth.asInstanceOf[js.Any])
+    if (axisLineColor != null) __obj.updateDynamic("axisLineColor")(axisLineColor)
+    if (axisLineWidth != null) __obj.updateDynamic("axisLineWidth")(axisLineWidth.asInstanceOf[js.Any])
+    if (axisTickSize != null) __obj.updateDynamic("axisTickSize")(axisTickSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(drawAxis)) __obj.updateDynamic("drawAxis")(drawAxis)
+    if (!js.isUndefined(drawGrid)) __obj.updateDynamic("drawGrid")(drawGrid)
+    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
+    if (gridLinePattern != null) __obj.updateDynamic("gridLinePattern")(gridLinePattern)
+    if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(independentTicks)) __obj.updateDynamic("independentTicks")(independentTicks)
+    if (!js.isUndefined(labelsKMB)) __obj.updateDynamic("labelsKMB")(labelsKMB)
+    if (!js.isUndefined(labelsKMG2)) __obj.updateDynamic("labelsKMG2")(labelsKMG2)
+    if (!js.isUndefined(logscale)) __obj.updateDynamic("logscale")(logscale)
+    if (maxNumberWidth != null) __obj.updateDynamic("maxNumberWidth")(maxNumberWidth.asInstanceOf[js.Any])
+    if (pixelsPerLabel != null) __obj.updateDynamic("pixelsPerLabel")(pixelsPerLabel.asInstanceOf[js.Any])
+    if (sigFigs != null) __obj.updateDynamic("sigFigs")(sigFigs.asInstanceOf[js.Any])
+    if (ticker != null) __obj.updateDynamic("ticker")(ticker)
+    if (valueFormatter != null) __obj.updateDynamic("valueFormatter")(valueFormatter)
+    if (valueRange != null) __obj.updateDynamic("valueRange")(valueRange)
+    __obj.asInstanceOf[PerAxisOptions]
+  }
+}
+

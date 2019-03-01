@@ -22,3 +22,26 @@ trait EmailLinkSigninResponse extends js.Object {
   var refreshToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EmailLinkSigninResponse {
+  @scala.inline
+  def apply(
+    email: java.lang.String = null,
+    expiresIn: java.lang.String = null,
+    idToken: java.lang.String = null,
+    isNewUser: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    localId: java.lang.String = null,
+    refreshToken: java.lang.String = null
+  ): EmailLinkSigninResponse = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (!js.isUndefined(isNewUser)) __obj.updateDynamic("isNewUser")(isNewUser)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (localId != null) __obj.updateDynamic("localId")(localId)
+    if (refreshToken != null) __obj.updateDynamic("refreshToken")(refreshToken)
+    __obj.asInstanceOf[EmailLinkSigninResponse]
+  }
+}
+

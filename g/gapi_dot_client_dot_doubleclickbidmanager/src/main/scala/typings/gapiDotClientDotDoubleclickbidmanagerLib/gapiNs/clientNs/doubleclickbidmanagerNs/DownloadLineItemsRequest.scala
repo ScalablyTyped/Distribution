@@ -16,3 +16,20 @@ trait DownloadLineItemsRequest extends js.Object {
   var format: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DownloadLineItemsRequest {
+  @scala.inline
+  def apply(
+    fileSpec: java.lang.String = null,
+    filterIds: js.Array[java.lang.String] = null,
+    filterType: java.lang.String = null,
+    format: java.lang.String = null
+  ): DownloadLineItemsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fileSpec != null) __obj.updateDynamic("fileSpec")(fileSpec)
+    if (filterIds != null) __obj.updateDynamic("filterIds")(filterIds)
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
+    if (format != null) __obj.updateDynamic("format")(format)
+    __obj.asInstanceOf[DownloadLineItemsRequest]
+  }
+}
+

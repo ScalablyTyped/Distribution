@@ -63,3 +63,26 @@ trait Anon_Clockwise extends js.Object {
   var startAngle: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Clockwise {
+  @scala.inline
+  def apply(
+    clockwise: js.UndefOr[scala.Boolean] = js.undefined,
+    cx: scala.Int | scala.Double = null,
+    cy: scala.Int | scala.Double = null,
+    endAngle: scala.Int | scala.Double = null,
+    r: scala.Int | scala.Double = null,
+    r0: scala.Int | scala.Double = null,
+    startAngle: scala.Int | scala.Double = null
+  ): Anon_Clockwise = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise)
+    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
+    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
+    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    if (r0 != null) __obj.updateDynamic("r0")(r0.asInstanceOf[js.Any])
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Clockwise]
+  }
+}
+

@@ -43,3 +43,22 @@ trait SubscribeOptions extends js.Object {
   var routingKeyInPayload: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SubscribeOptions {
+  @scala.inline
+  def apply(
+    ack: js.UndefOr[scala.Boolean] = js.undefined,
+    deliveryKeyInPayload: js.UndefOr[scala.Boolean] = js.undefined,
+    exclusive: js.UndefOr[scala.Boolean] = js.undefined,
+    prefetchCount: scala.Int | scala.Double = null,
+    routingKeyInPayload: js.UndefOr[scala.Boolean] = js.undefined
+  ): SubscribeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ack)) __obj.updateDynamic("ack")(ack)
+    if (!js.isUndefined(deliveryKeyInPayload)) __obj.updateDynamic("deliveryKeyInPayload")(deliveryKeyInPayload)
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (prefetchCount != null) __obj.updateDynamic("prefetchCount")(prefetchCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(routingKeyInPayload)) __obj.updateDynamic("routingKeyInPayload")(routingKeyInPayload)
+    __obj.asInstanceOf[SubscribeOptions]
+  }
+}
+

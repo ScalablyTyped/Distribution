@@ -10,3 +10,18 @@ trait ReplaceOperation[T] extends BaseOperation {
   var value: T
 }
 
+object ReplaceOperation {
+  @scala.inline
+  def apply[T](
+    op: fastDashJsonDashPatchLib.fastDashJsonDashPatchLibStrings.replace,
+    path: java.lang.String,
+    value: T
+  ): ReplaceOperation[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("op")(op)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReplaceOperation[T]]
+  }
+}
+

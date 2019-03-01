@@ -25,3 +25,20 @@ trait TouchBarPopoverConstructorOptions extends js.Object {
   var showCloseButton: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TouchBarPopoverConstructorOptions {
+  @scala.inline
+  def apply(
+    icon: NativeImage = null,
+    items: TouchBar = null,
+    label: java.lang.String = null,
+    showCloseButton: js.UndefOr[scala.Boolean] = js.undefined
+  ): TouchBarPopoverConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
+    __obj.asInstanceOf[TouchBarPopoverConstructorOptions]
+  }
+}
+

@@ -30,3 +30,28 @@ trait QueueOptions extends js.Object {
   var settings: js.UndefOr[AdvancedSettings] = js.undefined
 }
 
+object QueueOptions {
+  @scala.inline
+  def apply(
+    createClient: js.Function2[
+      /* type */ bullLib.bullLibStrings.client | bullLib.bullLibStrings.subscriber | bullLib.bullLibStrings.bclient, 
+      /* redisOpts */ js.UndefOr[ioredisLib.ioredisMod.IORedisNs.RedisOptions], 
+      ioredisLib.ioredisMod.IORedisNs.Redis
+    ] = null,
+    defaultJobOptions: JobOptions = null,
+    limiter: RateLimiter = null,
+    prefix: java.lang.String = null,
+    redis: ioredisLib.ioredisMod.IORedisNs.RedisOptions = null,
+    settings: AdvancedSettings = null
+  ): QueueOptions = {
+    val __obj = js.Dynamic.literal()
+    if (createClient != null) __obj.updateDynamic("createClient")(createClient)
+    if (defaultJobOptions != null) __obj.updateDynamic("defaultJobOptions")(defaultJobOptions)
+    if (limiter != null) __obj.updateDynamic("limiter")(limiter)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (redis != null) __obj.updateDynamic("redis")(redis)
+    if (settings != null) __obj.updateDynamic("settings")(settings)
+    __obj.asInstanceOf[QueueOptions]
+  }
+}
+

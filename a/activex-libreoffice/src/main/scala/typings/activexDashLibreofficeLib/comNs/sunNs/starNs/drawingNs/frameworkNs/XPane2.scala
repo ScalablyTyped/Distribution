@@ -33,3 +33,25 @@ trait XPane2 extends js.Object {
   def setVisible(bIsVisible: scala.Boolean): scala.Unit
 }
 
+object XPane2 {
+  @scala.inline
+  def apply(
+    Accessible: activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible,
+    getAccessible: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible],
+    isVisible: js.Function0[scala.Boolean],
+    setAccessible: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible, 
+      scala.Unit
+    ],
+    setVisible: js.Function1[scala.Boolean, scala.Unit]
+  ): XPane2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Accessible")(Accessible)
+    __obj.updateDynamic("getAccessible")(getAccessible)
+    __obj.updateDynamic("isVisible")(isVisible)
+    __obj.updateDynamic("setAccessible")(setAccessible)
+    __obj.updateDynamic("setVisible")(setVisible)
+    __obj.asInstanceOf[XPane2]
+  }
+}
+

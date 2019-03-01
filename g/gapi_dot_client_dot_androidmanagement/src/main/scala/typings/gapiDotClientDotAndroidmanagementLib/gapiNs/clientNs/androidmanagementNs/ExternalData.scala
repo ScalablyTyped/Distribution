@@ -16,3 +16,13 @@ trait ExternalData extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExternalData {
+  @scala.inline
+  def apply(sha256Hash: java.lang.String = null, url: java.lang.String = null): ExternalData = {
+    val __obj = js.Dynamic.literal()
+    if (sha256Hash != null) __obj.updateDynamic("sha256Hash")(sha256Hash)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ExternalData]
+  }
+}
+

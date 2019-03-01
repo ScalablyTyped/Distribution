@@ -21,3 +21,32 @@ trait AuthorizeConfig extends js.Object {
   var scope: java.lang.String
 }
 
+object AuthorizeConfig {
+  @scala.inline
+  def apply(
+    client_id: java.lang.String,
+    scope: java.lang.String,
+    app_package_name: java.lang.String = null,
+    cookie_policy: java.lang.String = null,
+    hosted_domain: java.lang.String = null,
+    include_granted_scopes: js.UndefOr[scala.Boolean] = js.undefined,
+    login_hint: java.lang.String = null,
+    openid_realm: java.lang.String = null,
+    prompt: java.lang.String = null,
+    response_type: java.lang.String = null
+  ): AuthorizeConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client_id")(client_id)
+    __obj.updateDynamic("scope")(scope)
+    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name)
+    if (cookie_policy != null) __obj.updateDynamic("cookie_policy")(cookie_policy)
+    if (hosted_domain != null) __obj.updateDynamic("hosted_domain")(hosted_domain)
+    if (!js.isUndefined(include_granted_scopes)) __obj.updateDynamic("include_granted_scopes")(include_granted_scopes)
+    if (login_hint != null) __obj.updateDynamic("login_hint")(login_hint)
+    if (openid_realm != null) __obj.updateDynamic("openid_realm")(openid_realm)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (response_type != null) __obj.updateDynamic("response_type")(response_type)
+    __obj.asInstanceOf[AuthorizeConfig]
+  }
+}
+

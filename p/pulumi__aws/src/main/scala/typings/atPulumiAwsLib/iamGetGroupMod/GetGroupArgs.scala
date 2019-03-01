@@ -12,3 +12,12 @@ trait GetGroupArgs extends js.Object {
   val groupName: java.lang.String
 }
 
+object GetGroupArgs {
+  @scala.inline
+  def apply(groupName: java.lang.String): GetGroupArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("groupName")(groupName)
+    __obj.asInstanceOf[GetGroupArgs]
+  }
+}
+

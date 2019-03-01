@@ -346,3 +346,145 @@ trait IgGridGroupBy
   var useGridColumnFormatter: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgGridGroupBy {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridGroupBy
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    collapseTooltip: java.lang.String = null,
+    columnSettings: IgGridGroupByColumnSettings = null,
+    defaultSortingDirection: java.lang.String = null,
+    dialogWidget: java.lang.String = null,
+    emptyGroupByAreaContentSelectColumnsCaption: java.lang.String = null,
+    expandTooltip: java.lang.String = null,
+    expansionIndicatorVisibility: js.UndefOr[scala.Boolean] = js.undefined,
+    groupByAreaVisibility: java.lang.String = null,
+    groupByDialogContainment: java.lang.String = null,
+    groupByLabelWidth: scala.Int | scala.Double = null,
+    groupByUrlKey: java.lang.String = null,
+    groupByUrlKeyAscValue: java.lang.String = null,
+    groupByUrlKeyDescValue: java.lang.String = null,
+    groupSummaries: js.Any = null,
+    groupSummariesPosition: java.lang.String = null,
+    groupedColumns: js.Array[IgGridGroupByGroupedColumn] = null,
+    groupedColumnsChanged: GroupedColumnsChangedEvent = null,
+    groupedColumnsChanging: GroupedColumnsChangingEvent = null,
+    groupedRowTextTemplate: java.lang.String = null,
+    indentation: scala.Int | scala.Double = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    initialExpand: js.UndefOr[scala.Boolean] = js.undefined,
+    labelDragHelperOpacity: scala.Int | scala.Double = null,
+    language: java.lang.String = null,
+    locale: IgGridGroupByLocale = null,
+    modalDialogAnimationDuration: scala.Int | scala.Double = null,
+    modalDialogButtonApplyClick: ModalDialogButtonApplyClickEvent = null,
+    modalDialogButtonApplyText: java.lang.String = null,
+    modalDialogButtonCancelText: java.lang.String = null,
+    modalDialogButtonResetClick: ModalDialogButtonResetClickEvent = null,
+    modalDialogCaptionButtonAsc: java.lang.String = null,
+    modalDialogCaptionButtonDesc: java.lang.String = null,
+    modalDialogCaptionButtonUngroup: java.lang.String = null,
+    modalDialogCaptionText: java.lang.String = null,
+    modalDialogClearAllButtonLabel: java.lang.String = null,
+    modalDialogClosed: ModalDialogClosedEvent = null,
+    modalDialogClosing: ModalDialogClosingEvent = null,
+    modalDialogContentsRendered: ModalDialogContentsRenderedEvent = null,
+    modalDialogContentsRendering: ModalDialogContentsRenderingEvent = null,
+    modalDialogDropDownAreaWidth: scala.Int | scala.Double = null,
+    modalDialogDropDownButtonCaption: java.lang.String = null,
+    modalDialogDropDownLabel: java.lang.String = null,
+    modalDialogDropDownWidth: scala.Int | scala.Double = null,
+    modalDialogGroupByButtonText: java.lang.String = null,
+    modalDialogGroupByOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    modalDialogGroupColumn: ModalDialogGroupColumnEvent = null,
+    modalDialogGroupingColumn: ModalDialogGroupingColumnEvent = null,
+    modalDialogHeight: java.lang.String | scala.Double = null,
+    modalDialogMoving: ModalDialogMovingEvent = null,
+    modalDialogOpened: ModalDialogOpenedEvent = null,
+    modalDialogOpening: ModalDialogOpeningEvent = null,
+    modalDialogRootLevelHierarchicalGrid: java.lang.String = null,
+    modalDialogSortGroupedColumn: ModalDialogSortGroupedColumnEvent = null,
+    modalDialogUngroupColumn: ModalDialogUngroupColumnEvent = null,
+    modalDialogUngroupingColumn: ModalDialogUngroupingColumnEvent = null,
+    modalDialogWidth: java.lang.String | scala.Double = null,
+    pagingMode: java.lang.String = null,
+    persist: js.UndefOr[scala.Boolean] = js.undefined,
+    regional: java.lang.String | js.Object = null,
+    removeButtonTooltip: java.lang.String = null,
+    resultResponseKey: java.lang.String = null,
+    summarySettings: IgGridGroupBySummarySettings = null,
+    `type`: java.lang.String = null,
+    useGridColumnFormatter: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgGridGroupBy = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (collapseTooltip != null) __obj.updateDynamic("collapseTooltip")(collapseTooltip)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (defaultSortingDirection != null) __obj.updateDynamic("defaultSortingDirection")(defaultSortingDirection)
+    if (dialogWidget != null) __obj.updateDynamic("dialogWidget")(dialogWidget)
+    if (emptyGroupByAreaContentSelectColumnsCaption != null) __obj.updateDynamic("emptyGroupByAreaContentSelectColumnsCaption")(emptyGroupByAreaContentSelectColumnsCaption)
+    if (expandTooltip != null) __obj.updateDynamic("expandTooltip")(expandTooltip)
+    if (!js.isUndefined(expansionIndicatorVisibility)) __obj.updateDynamic("expansionIndicatorVisibility")(expansionIndicatorVisibility)
+    if (groupByAreaVisibility != null) __obj.updateDynamic("groupByAreaVisibility")(groupByAreaVisibility)
+    if (groupByDialogContainment != null) __obj.updateDynamic("groupByDialogContainment")(groupByDialogContainment)
+    if (groupByLabelWidth != null) __obj.updateDynamic("groupByLabelWidth")(groupByLabelWidth.asInstanceOf[js.Any])
+    if (groupByUrlKey != null) __obj.updateDynamic("groupByUrlKey")(groupByUrlKey)
+    if (groupByUrlKeyAscValue != null) __obj.updateDynamic("groupByUrlKeyAscValue")(groupByUrlKeyAscValue)
+    if (groupByUrlKeyDescValue != null) __obj.updateDynamic("groupByUrlKeyDescValue")(groupByUrlKeyDescValue)
+    if (groupSummaries != null) __obj.updateDynamic("groupSummaries")(groupSummaries)
+    if (groupSummariesPosition != null) __obj.updateDynamic("groupSummariesPosition")(groupSummariesPosition)
+    if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns)
+    if (groupedColumnsChanged != null) __obj.updateDynamic("groupedColumnsChanged")(groupedColumnsChanged)
+    if (groupedColumnsChanging != null) __obj.updateDynamic("groupedColumnsChanging")(groupedColumnsChanging)
+    if (groupedRowTextTemplate != null) __obj.updateDynamic("groupedRowTextTemplate")(groupedRowTextTemplate)
+    if (indentation != null) __obj.updateDynamic("indentation")(indentation.asInstanceOf[js.Any])
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (!js.isUndefined(initialExpand)) __obj.updateDynamic("initialExpand")(initialExpand)
+    if (labelDragHelperOpacity != null) __obj.updateDynamic("labelDragHelperOpacity")(labelDragHelperOpacity.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (modalDialogAnimationDuration != null) __obj.updateDynamic("modalDialogAnimationDuration")(modalDialogAnimationDuration.asInstanceOf[js.Any])
+    if (modalDialogButtonApplyClick != null) __obj.updateDynamic("modalDialogButtonApplyClick")(modalDialogButtonApplyClick)
+    if (modalDialogButtonApplyText != null) __obj.updateDynamic("modalDialogButtonApplyText")(modalDialogButtonApplyText)
+    if (modalDialogButtonCancelText != null) __obj.updateDynamic("modalDialogButtonCancelText")(modalDialogButtonCancelText)
+    if (modalDialogButtonResetClick != null) __obj.updateDynamic("modalDialogButtonResetClick")(modalDialogButtonResetClick)
+    if (modalDialogCaptionButtonAsc != null) __obj.updateDynamic("modalDialogCaptionButtonAsc")(modalDialogCaptionButtonAsc)
+    if (modalDialogCaptionButtonDesc != null) __obj.updateDynamic("modalDialogCaptionButtonDesc")(modalDialogCaptionButtonDesc)
+    if (modalDialogCaptionButtonUngroup != null) __obj.updateDynamic("modalDialogCaptionButtonUngroup")(modalDialogCaptionButtonUngroup)
+    if (modalDialogCaptionText != null) __obj.updateDynamic("modalDialogCaptionText")(modalDialogCaptionText)
+    if (modalDialogClearAllButtonLabel != null) __obj.updateDynamic("modalDialogClearAllButtonLabel")(modalDialogClearAllButtonLabel)
+    if (modalDialogClosed != null) __obj.updateDynamic("modalDialogClosed")(modalDialogClosed)
+    if (modalDialogClosing != null) __obj.updateDynamic("modalDialogClosing")(modalDialogClosing)
+    if (modalDialogContentsRendered != null) __obj.updateDynamic("modalDialogContentsRendered")(modalDialogContentsRendered)
+    if (modalDialogContentsRendering != null) __obj.updateDynamic("modalDialogContentsRendering")(modalDialogContentsRendering)
+    if (modalDialogDropDownAreaWidth != null) __obj.updateDynamic("modalDialogDropDownAreaWidth")(modalDialogDropDownAreaWidth.asInstanceOf[js.Any])
+    if (modalDialogDropDownButtonCaption != null) __obj.updateDynamic("modalDialogDropDownButtonCaption")(modalDialogDropDownButtonCaption)
+    if (modalDialogDropDownLabel != null) __obj.updateDynamic("modalDialogDropDownLabel")(modalDialogDropDownLabel)
+    if (modalDialogDropDownWidth != null) __obj.updateDynamic("modalDialogDropDownWidth")(modalDialogDropDownWidth.asInstanceOf[js.Any])
+    if (modalDialogGroupByButtonText != null) __obj.updateDynamic("modalDialogGroupByButtonText")(modalDialogGroupByButtonText)
+    if (!js.isUndefined(modalDialogGroupByOnClick)) __obj.updateDynamic("modalDialogGroupByOnClick")(modalDialogGroupByOnClick)
+    if (modalDialogGroupColumn != null) __obj.updateDynamic("modalDialogGroupColumn")(modalDialogGroupColumn)
+    if (modalDialogGroupingColumn != null) __obj.updateDynamic("modalDialogGroupingColumn")(modalDialogGroupingColumn)
+    if (modalDialogHeight != null) __obj.updateDynamic("modalDialogHeight")(modalDialogHeight.asInstanceOf[js.Any])
+    if (modalDialogMoving != null) __obj.updateDynamic("modalDialogMoving")(modalDialogMoving)
+    if (modalDialogOpened != null) __obj.updateDynamic("modalDialogOpened")(modalDialogOpened)
+    if (modalDialogOpening != null) __obj.updateDynamic("modalDialogOpening")(modalDialogOpening)
+    if (modalDialogRootLevelHierarchicalGrid != null) __obj.updateDynamic("modalDialogRootLevelHierarchicalGrid")(modalDialogRootLevelHierarchicalGrid)
+    if (modalDialogSortGroupedColumn != null) __obj.updateDynamic("modalDialogSortGroupedColumn")(modalDialogSortGroupedColumn)
+    if (modalDialogUngroupColumn != null) __obj.updateDynamic("modalDialogUngroupColumn")(modalDialogUngroupColumn)
+    if (modalDialogUngroupingColumn != null) __obj.updateDynamic("modalDialogUngroupingColumn")(modalDialogUngroupingColumn)
+    if (modalDialogWidth != null) __obj.updateDynamic("modalDialogWidth")(modalDialogWidth.asInstanceOf[js.Any])
+    if (pagingMode != null) __obj.updateDynamic("pagingMode")(pagingMode)
+    if (!js.isUndefined(persist)) __obj.updateDynamic("persist")(persist)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (removeButtonTooltip != null) __obj.updateDynamic("removeButtonTooltip")(removeButtonTooltip)
+    if (resultResponseKey != null) __obj.updateDynamic("resultResponseKey")(resultResponseKey)
+    if (summarySettings != null) __obj.updateDynamic("summarySettings")(summarySettings)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(useGridColumnFormatter)) __obj.updateDynamic("useGridColumnFormatter")(useGridColumnFormatter)
+    __obj.asInstanceOf[IgGridGroupBy]
+  }
+}
+

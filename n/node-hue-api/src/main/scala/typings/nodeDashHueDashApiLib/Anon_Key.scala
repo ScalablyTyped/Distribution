@@ -10,3 +10,16 @@ trait Anon_Key
   var lastupdated: java.lang.String
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    lastupdated: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[scala.Double | java.lang.String] = null
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lastupdated")(lastupdated)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

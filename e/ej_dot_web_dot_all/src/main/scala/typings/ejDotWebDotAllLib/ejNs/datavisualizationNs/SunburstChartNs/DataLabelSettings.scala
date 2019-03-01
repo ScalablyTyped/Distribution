@@ -35,3 +35,24 @@ trait DataLabelSettings extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataLabelSettings {
+  @scala.inline
+  def apply(
+    fill: java.lang.String = null,
+    font: DataLabelSettingsFont = null,
+    labelOverflowMode: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstLabelOverflowMode | java.lang.String = null,
+    labelRotationMode: ejDotWebDotAllLib.ejNs.datavisualizationNs.SunburstNs.SunburstLabelRotationMode | java.lang.String = null,
+    template: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataLabelSettings = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (labelOverflowMode != null) __obj.updateDynamic("labelOverflowMode")(labelOverflowMode.asInstanceOf[js.Any])
+    if (labelRotationMode != null) __obj.updateDynamic("labelRotationMode")(labelRotationMode.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[DataLabelSettings]
+  }
+}
+

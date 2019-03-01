@@ -20,3 +20,13 @@ trait ChangeFloatingObjectRotationCommand extends CommandBase {
   def getState(): js.Any
 }
 
+object ChangeFloatingObjectRotationCommand {
+  @scala.inline
+  def apply(execute: js.Function1[scala.Double, scala.Boolean], getState: js.Function0[js.Any]): ChangeFloatingObjectRotationCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[ChangeFloatingObjectRotationCommand]
+  }
+}
+

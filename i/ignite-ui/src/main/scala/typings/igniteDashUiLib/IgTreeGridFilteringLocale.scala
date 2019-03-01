@@ -23,3 +23,19 @@ trait IgTreeGridFilteringLocale
   var filterSummaryInPagerTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgTreeGridFilteringLocale {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgTreeGridFilteringLocale
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    filterSummaryInPagerTemplate: java.lang.String = null
+  ): IgTreeGridFilteringLocale = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (filterSummaryInPagerTemplate != null) __obj.updateDynamic("filterSummaryInPagerTemplate")(filterSummaryInPagerTemplate)
+    __obj.asInstanceOf[IgTreeGridFilteringLocale]
+  }
+}
+

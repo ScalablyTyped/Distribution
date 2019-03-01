@@ -17,3 +17,30 @@ trait SourceImage extends js.Object {
   var width: scala.Double
 }
 
+object SourceImage {
+  @scala.inline
+  def apply(
+    ext: java.lang.String,
+    height: scala.Double,
+    path: java.lang.String,
+    platform: java.lang.String,
+    resType: java.lang.String,
+    vector: scala.Boolean,
+    width: scala.Double,
+    cachedId: java.lang.String = null,
+    imageId: java.lang.String = null
+  ): SourceImage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ext")(ext)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("platform")(platform)
+    __obj.updateDynamic("resType")(resType)
+    __obj.updateDynamic("vector")(vector)
+    __obj.updateDynamic("width")(width)
+    if (cachedId != null) __obj.updateDynamic("cachedId")(cachedId)
+    if (imageId != null) __obj.updateDynamic("imageId")(imageId)
+    __obj.asInstanceOf[SourceImage]
+  }
+}
+

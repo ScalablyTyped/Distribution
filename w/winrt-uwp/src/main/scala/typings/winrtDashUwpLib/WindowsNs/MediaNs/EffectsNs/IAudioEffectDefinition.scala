@@ -13,3 +13,16 @@ trait IAudioEffectDefinition extends js.Object {
   var properties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
 }
 
+object IAudioEffectDefinition {
+  @scala.inline
+  def apply(
+    activatableClassId: java.lang.String,
+    properties: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IPropertySet
+  ): IAudioEffectDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activatableClassId")(activatableClassId)
+    __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[IAudioEffectDefinition]
+  }
+}
+

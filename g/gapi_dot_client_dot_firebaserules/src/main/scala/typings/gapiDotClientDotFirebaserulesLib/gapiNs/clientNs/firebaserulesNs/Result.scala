@@ -15,3 +15,13 @@ trait Result extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object Result {
+  @scala.inline
+  def apply(undefined: js.Any = null, value: js.Any = null): Result = {
+    val __obj = js.Dynamic.literal()
+    if (undefined != null) __obj.updateDynamic("undefined")(undefined)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Result]
+  }
+}
+

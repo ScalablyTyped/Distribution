@@ -47,3 +47,34 @@ trait ICouponCreationOptions
   var redeem_by: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ICouponCreationOptions {
+  @scala.inline
+  def apply(
+    duration: stripeLib.stripeLibStrings.forever | stripeLib.stripeLibStrings.once | stripeLib.stripeLibStrings.repeating,
+    amount_off: scala.Int | scala.Double = null,
+    currency: java.lang.String = null,
+    duration_in_months: scala.Int | scala.Double = null,
+    expand: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    include: js.Array[java.lang.String] = null,
+    max_redemptions: scala.Int | scala.Double = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    percent_off: scala.Int | scala.Double = null,
+    redeem_by: scala.Int | scala.Double = null
+  ): ICouponCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (amount_off != null) __obj.updateDynamic("amount_off")(amount_off.asInstanceOf[js.Any])
+    if (currency != null) __obj.updateDynamic("currency")(currency)
+    if (duration_in_months != null) __obj.updateDynamic("duration_in_months")(duration_in_months.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (max_redemptions != null) __obj.updateDynamic("max_redemptions")(max_redemptions.asInstanceOf[js.Any])
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (percent_off != null) __obj.updateDynamic("percent_off")(percent_off.asInstanceOf[js.Any])
+    if (redeem_by != null) __obj.updateDynamic("redeem_by")(redeem_by.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICouponCreationOptions]
+  }
+}
+

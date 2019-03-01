@@ -17,3 +17,20 @@ trait FilterOptionsRequest
   var rProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
 }
 
+object FilterOptionsRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    rModel: activexDashLibreofficeLib.comNs.sunNs.starNs.frameNs.XModel,
+    rProperties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+  ): FilterOptionsRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("rModel")(rModel)
+    __obj.updateDynamic("rProperties")(rProperties)
+    __obj.asInstanceOf[FilterOptionsRequest]
+  }
+}
+

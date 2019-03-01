@@ -10,3 +10,13 @@ trait ParserOptions extends js.Object {
   var lexer: js.UndefOr[Lexer] = js.undefined
 }
 
+object ParserOptions {
+  @scala.inline
+  def apply(keepHistory: js.UndefOr[scala.Boolean] = js.undefined, lexer: Lexer = null): ParserOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(keepHistory)) __obj.updateDynamic("keepHistory")(keepHistory)
+    if (lexer != null) __obj.updateDynamic("lexer")(lexer)
+    __obj.asInstanceOf[ParserOptions]
+  }
+}
+

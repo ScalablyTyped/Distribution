@@ -12,3 +12,20 @@ trait HOCProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object HOCProps {
+  @scala.inline
+  def apply(
+    cellClassName: java.lang.String,
+    className: java.lang.String,
+    cellStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): HOCProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cellClassName")(cellClassName)
+    __obj.updateDynamic("className")(className)
+    if (cellStyle != null) __obj.updateDynamic("cellStyle")(cellStyle)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[HOCProps]
+  }
+}
+

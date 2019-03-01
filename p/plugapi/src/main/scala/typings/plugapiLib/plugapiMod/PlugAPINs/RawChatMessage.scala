@@ -13,3 +13,22 @@ trait RawChatMessage extends js.Object {
   var un: java.lang.String
 }
 
+object RawChatMessage {
+  @scala.inline
+  def apply(
+    cid: java.lang.String,
+    message: java.lang.String,
+    sub: scala.Double,
+    uid: scala.Double,
+    un: java.lang.String
+  ): RawChatMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cid")(cid)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("sub")(sub)
+    __obj.updateDynamic("uid")(uid)
+    __obj.updateDynamic("un")(un)
+    __obj.asInstanceOf[RawChatMessage]
+  }
+}
+

@@ -7,49 +7,49 @@ import scala.scalajs.js.annotation._
 
 object typedarrayDashPoolLibStrings {
   @js.native
-  sealed trait arraybuffer extends js.Object
+  sealed trait arraybuffer extends DataType
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait buffer extends DataType
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait data extends DataType
   
   @js.native
-  sealed trait dataview extends js.Object
+  sealed trait dataview extends DataType
   
   @js.native
-  sealed trait double extends js.Object
+  sealed trait double extends DataType
   
   @js.native
-  sealed trait float extends js.Object
+  sealed trait float extends DataType
   
   @js.native
-  sealed trait float32 extends js.Object
+  sealed trait float32 extends DataType
   
   @js.native
-  sealed trait float64 extends js.Object
+  sealed trait float64 extends DataType
   
   @js.native
-  sealed trait int16 extends js.Object
+  sealed trait int16 extends DataType
   
   @js.native
-  sealed trait int32 extends js.Object
+  sealed trait int32 extends DataType
   
   @js.native
-  sealed trait int8 extends js.Object
+  sealed trait int8 extends DataType
   
   @js.native
-  sealed trait uint16 extends js.Object
+  sealed trait uint16 extends DataType
   
   @js.native
-  sealed trait uint32 extends js.Object
+  sealed trait uint32 extends DataType
   
   @js.native
-  sealed trait uint8 extends js.Object
+  sealed trait uint8 extends DataType
   
   @js.native
-  sealed trait uint8_clamped extends js.Object
+  sealed trait uint8_clamped extends DataType
   
   @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]

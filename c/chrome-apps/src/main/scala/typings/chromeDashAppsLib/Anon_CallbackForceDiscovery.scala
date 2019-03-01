@@ -43,3 +43,21 @@ trait Anon_CallbackForceDiscovery extends js.Object {
   def forceDiscovery(callback: js.Function0[scala.Unit]): scala.Unit
 }
 
+object Anon_CallbackForceDiscovery {
+  @scala.inline
+  def apply(
+    MAX_SERVICE_INSTANCES_PER_EVENT: chromeDashAppsLib.chromeNs.integer,
+    forceDiscovery: js.Function1[js.Function0[scala.Unit], scala.Unit],
+    onServiceList: chromeDashAppsLib.chromeNs.eventsNs.FilteredEvent[
+      js.Function1[/* services */ js.Array[chromeDashAppsLib.chromeNs.mdnsNs.Service], scala.Unit], 
+      chromeDashAppsLib.chromeNs.mdnsNs.ServiceTypes
+    ]
+  ): Anon_CallbackForceDiscovery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MAX_SERVICE_INSTANCES_PER_EVENT")(MAX_SERVICE_INSTANCES_PER_EVENT)
+    __obj.updateDynamic("forceDiscovery")(forceDiscovery)
+    __obj.updateDynamic("onServiceList")(onServiceList)
+    __obj.asInstanceOf[Anon_CallbackForceDiscovery]
+  }
+}
+

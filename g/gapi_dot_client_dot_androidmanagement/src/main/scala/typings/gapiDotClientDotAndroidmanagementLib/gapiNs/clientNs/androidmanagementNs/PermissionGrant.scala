@@ -12,3 +12,13 @@ trait PermissionGrant extends js.Object {
   var policy: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PermissionGrant {
+  @scala.inline
+  def apply(permission: java.lang.String = null, policy: java.lang.String = null): PermissionGrant = {
+    val __obj = js.Dynamic.literal()
+    if (permission != null) __obj.updateDynamic("permission")(permission)
+    if (policy != null) __obj.updateDynamic("policy")(policy)
+    __obj.asInstanceOf[PermissionGrant]
+  }
+}
+

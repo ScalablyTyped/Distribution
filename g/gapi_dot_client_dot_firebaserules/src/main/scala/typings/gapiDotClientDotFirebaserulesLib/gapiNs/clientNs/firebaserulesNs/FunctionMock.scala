@@ -22,3 +22,14 @@ trait FunctionMock extends js.Object {
   var result: js.UndefOr[Result] = js.undefined
 }
 
+object FunctionMock {
+  @scala.inline
+  def apply(args: js.Array[Arg] = null, function: java.lang.String = null, result: Result = null): FunctionMock = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (function != null) __obj.updateDynamic("function")(function)
+    if (result != null) __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[FunctionMock]
+  }
+}
+

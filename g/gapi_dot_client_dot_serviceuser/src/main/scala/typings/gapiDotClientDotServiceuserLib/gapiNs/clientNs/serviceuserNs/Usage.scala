@@ -31,3 +31,18 @@ trait Usage extends js.Object {
   var rules: js.UndefOr[js.Array[UsageRule]] = js.undefined
 }
 
+object Usage {
+  @scala.inline
+  def apply(
+    producerNotificationChannel: java.lang.String = null,
+    requirements: js.Array[java.lang.String] = null,
+    rules: js.Array[UsageRule] = null
+  ): Usage = {
+    val __obj = js.Dynamic.literal()
+    if (producerNotificationChannel != null) __obj.updateDynamic("producerNotificationChannel")(producerNotificationChannel)
+    if (requirements != null) __obj.updateDynamic("requirements")(requirements)
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[Usage]
+  }
+}
+

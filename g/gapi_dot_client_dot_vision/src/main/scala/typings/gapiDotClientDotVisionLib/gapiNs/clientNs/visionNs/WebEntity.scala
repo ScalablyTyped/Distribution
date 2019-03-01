@@ -17,3 +17,18 @@ trait WebEntity extends js.Object {
   var score: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WebEntity {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    entityId: java.lang.String = null,
+    score: scala.Int | scala.Double = null
+  ): WebEntity = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (entityId != null) __obj.updateDynamic("entityId")(entityId)
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WebEntity]
+  }
+}
+

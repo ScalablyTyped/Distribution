@@ -11,3 +11,17 @@ trait ColumnRef extends js.Object {
   var `type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.column_ref
 }
 
+object ColumnRef {
+  @scala.inline
+  def apply(
+    column: java.lang.String,
+    `type`: nodeDashSqlDashParserLib.nodeDashSqlDashParserLibStrings.column_ref,
+    table: java.lang.String = null
+  ): ColumnRef = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("column")(column)
+    if (table != null) __obj.updateDynamic("table")(table)
+    __obj.asInstanceOf[ColumnRef]
+  }
+}
+

@@ -24,3 +24,24 @@ trait Options[Data] extends js.Object {
   var statusCode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[Data](
+    ctor: js.Any = null,
+    data: Data = null,
+    decorate: js.Object = null,
+    message: java.lang.String = null,
+    `override`: js.UndefOr[scala.Boolean] = js.undefined,
+    statusCode: scala.Int | scala.Double = null
+  ): Options[Data] = {
+    val __obj = js.Dynamic.literal()
+    if (ctor != null) __obj.updateDynamic("ctor")(ctor)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (decorate != null) __obj.updateDynamic("decorate")(decorate)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(`override`)) __obj.updateDynamic("override")(`override`)
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options[Data]]
+  }
+}
+

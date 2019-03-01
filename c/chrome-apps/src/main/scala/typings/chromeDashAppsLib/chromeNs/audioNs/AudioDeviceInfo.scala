@@ -24,3 +24,28 @@ trait AudioDeviceInfo extends js.Object {
   var streamType: StreamType
 }
 
+object AudioDeviceInfo {
+  @scala.inline
+  def apply(
+    deviceName: java.lang.String,
+    deviceType: DeviceType,
+    displayName: java.lang.String,
+    id: java.lang.String,
+    isActive: scala.Boolean,
+    level: chromeDashAppsLib.chromeNs.integer,
+    streamType: StreamType,
+    stableDeviceId: java.lang.String = null
+  ): AudioDeviceInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceName")(deviceName)
+    __obj.updateDynamic("deviceType")(deviceType)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("streamType")(streamType)
+    if (stableDeviceId != null) __obj.updateDynamic("stableDeviceId")(stableDeviceId)
+    __obj.asInstanceOf[AudioDeviceInfo]
+  }
+}
+

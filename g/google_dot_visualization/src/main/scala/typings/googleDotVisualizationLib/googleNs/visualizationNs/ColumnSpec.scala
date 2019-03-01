@@ -15,3 +15,25 @@ trait ColumnSpec extends js.Object {
   def calc(dataTable: DataTable, row: scala.Double): js.Any
 }
 
+object ColumnSpec {
+  @scala.inline
+  def apply(
+    calc: js.Function2[DataTable, scala.Double, js.Any],
+    `type`: java.lang.String,
+    id: java.lang.String = null,
+    label: java.lang.String = null,
+    properties: Properties = null,
+    role: java.lang.String = null,
+    sourceColumn: scala.Int | scala.Double = null
+  ): ColumnSpec = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("calc")(calc)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (sourceColumn != null) __obj.updateDynamic("sourceColumn")(sourceColumn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnSpec]
+  }
+}
+

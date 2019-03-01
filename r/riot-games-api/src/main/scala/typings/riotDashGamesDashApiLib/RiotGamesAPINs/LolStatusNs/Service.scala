@@ -12,3 +12,20 @@ trait Service extends js.Object {
   var status: java.lang.String
 }
 
+object Service {
+  @scala.inline
+  def apply(
+    incidents: js.Array[Incident],
+    name: java.lang.String,
+    slug: java.lang.String,
+    status: java.lang.String
+  ): Service = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("incidents")(incidents)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("slug")(slug)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Service]
+  }
+}
+

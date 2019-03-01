@@ -99,3 +99,55 @@ trait XRegressionCurveCalculator
   def setXYNames(aXName: java.lang.String, aYName: java.lang.String): scala.Unit
 }
 
+object XRegressionCurveCalculator {
+  @scala.inline
+  def apply(
+    CorrelationCoefficient: scala.Double,
+    Representation: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getCorrelationCoefficient: js.Function0[scala.Double],
+    getCurveValue: js.Function1[scala.Double, scala.Double],
+    getCurveValues: js.Function6[
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      XScaling, 
+      XScaling, 
+      scala.Boolean, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.geometryNs.RealPoint2D]
+    ],
+    getFormattedRepresentation: js.Function3[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XNumberFormatsSupplier, 
+      scala.Double, 
+      scala.Double, 
+      java.lang.String
+    ],
+    getRepresentation: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    recalculateRegression: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Unit
+    ],
+    release: js.Function0[scala.Unit],
+    setRegressionProperties: js.Function4[scala.Double, scala.Boolean, scala.Double, scala.Double, scala.Unit],
+    setXYNames: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): XRegressionCurveCalculator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CorrelationCoefficient")(CorrelationCoefficient)
+    __obj.updateDynamic("Representation")(Representation)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCorrelationCoefficient")(getCorrelationCoefficient)
+    __obj.updateDynamic("getCurveValue")(getCurveValue)
+    __obj.updateDynamic("getCurveValues")(getCurveValues)
+    __obj.updateDynamic("getFormattedRepresentation")(getFormattedRepresentation)
+    __obj.updateDynamic("getRepresentation")(getRepresentation)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("recalculateRegression")(recalculateRegression)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setRegressionProperties")(setRegressionProperties)
+    __obj.updateDynamic("setXYNames")(setXYNames)
+    __obj.asInstanceOf[XRegressionCurveCalculator]
+  }
+}
+

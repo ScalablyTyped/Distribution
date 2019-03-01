@@ -20,3 +20,14 @@ trait ASPxClientHtmlEditorMediaPreloadModeStatic extends js.Object {
   var None: java.lang.String
 }
 
+object ASPxClientHtmlEditorMediaPreloadModeStatic {
+  @scala.inline
+  def apply(Auto: java.lang.String, Metadata: java.lang.String, None: java.lang.String): ASPxClientHtmlEditorMediaPreloadModeStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Auto")(Auto)
+    __obj.updateDynamic("Metadata")(Metadata)
+    __obj.updateDynamic("None")(None)
+    __obj.asInstanceOf[ASPxClientHtmlEditorMediaPreloadModeStatic]
+  }
+}
+

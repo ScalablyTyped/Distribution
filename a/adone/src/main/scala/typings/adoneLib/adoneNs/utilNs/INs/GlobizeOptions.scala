@@ -10,3 +10,13 @@ trait GlobizeOptions extends js.Object {
   var recursively: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GlobizeOptions {
+  @scala.inline
+  def apply(exts: java.lang.String = null, recursively: js.UndefOr[scala.Boolean] = js.undefined): GlobizeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (exts != null) __obj.updateDynamic("exts")(exts)
+    if (!js.isUndefined(recursively)) __obj.updateDynamic("recursively")(recursively)
+    __obj.asInstanceOf[GlobizeOptions]
+  }
+}
+

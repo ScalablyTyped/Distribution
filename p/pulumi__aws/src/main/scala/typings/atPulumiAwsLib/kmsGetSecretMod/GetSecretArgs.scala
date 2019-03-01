@@ -14,3 +14,13 @@ trait GetSecretArgs extends js.Object {
   val secrets: js.Array[atPulumiAwsLib.Anon_Context]
 }
 
+object GetSecretArgs {
+  @scala.inline
+  def apply(secrets: js.Array[atPulumiAwsLib.Anon_Context], __hasDynamicAttributes: java.lang.String = null): GetSecretArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("secrets")(secrets)
+    if (__hasDynamicAttributes != null) __obj.updateDynamic("__hasDynamicAttributes")(__hasDynamicAttributes)
+    __obj.asInstanceOf[GetSecretArgs]
+  }
+}
+

@@ -23,3 +23,13 @@ trait ShapeUpdateData extends js.Object {
   var view: js.UndefOr[ShapeViewUpdateData] = js.undefined
 }
 
+object ShapeUpdateData {
+  @scala.inline
+  def apply(select: js.UndefOr[scala.Boolean] = js.undefined, view: ShapeViewUpdateData = null): ShapeUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[ShapeUpdateData]
+  }
+}
+

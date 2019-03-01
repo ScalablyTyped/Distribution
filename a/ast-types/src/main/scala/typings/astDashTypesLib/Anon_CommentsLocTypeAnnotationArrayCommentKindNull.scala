@@ -11,3 +11,18 @@ trait Anon_CommentsLocTypeAnnotationArrayCommentKindNull extends js.Object {
   var typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind
 }
 
+object Anon_CommentsLocTypeAnnotationArrayCommentKindNull {
+  @scala.inline
+  def apply(
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsLocTypeAnnotationArrayCommentKindNull = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsLocTypeAnnotationArrayCommentKindNull]
+  }
+}
+

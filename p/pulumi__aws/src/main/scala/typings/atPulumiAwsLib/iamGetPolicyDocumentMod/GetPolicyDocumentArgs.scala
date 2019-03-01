@@ -35,3 +35,22 @@ trait GetPolicyDocumentArgs extends js.Object {
   val version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetPolicyDocumentArgs {
+  @scala.inline
+  def apply(
+    overrideJson: java.lang.String = null,
+    policyId: java.lang.String = null,
+    sourceJson: java.lang.String = null,
+    statements: js.Array[atPulumiAwsLib.Anon_ActionsConditions] = null,
+    version: java.lang.String = null
+  ): GetPolicyDocumentArgs = {
+    val __obj = js.Dynamic.literal()
+    if (overrideJson != null) __obj.updateDynamic("overrideJson")(overrideJson)
+    if (policyId != null) __obj.updateDynamic("policyId")(policyId)
+    if (sourceJson != null) __obj.updateDynamic("sourceJson")(sourceJson)
+    if (statements != null) __obj.updateDynamic("statements")(statements)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[GetPolicyDocumentArgs]
+  }
+}
+

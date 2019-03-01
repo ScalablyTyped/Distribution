@@ -17,3 +17,22 @@ trait Options extends js.Object {
   var `type`: js.UndefOr[image_type] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    ec_level: ec_level = null,
+    margin: scala.Int | scala.Double = null,
+    parse_url: js.UndefOr[scala.Boolean] = js.undefined,
+    size: scala.Int | scala.Double = null,
+    `type`: image_type = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (ec_level != null) __obj.updateDynamic("ec_level")(ec_level)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (!js.isUndefined(parse_url)) __obj.updateDynamic("parse_url")(parse_url)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Options]
+  }
+}
+

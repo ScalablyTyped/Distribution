@@ -93,3 +93,36 @@ trait BodyLoadOptions extends js.Object {
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BodyLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    font: FontLoadOptions = null,
+    parentBody: BodyLoadOptions = null,
+    parentBodyOrNullObject: BodyLoadOptions = null,
+    parentContentControl: ContentControlLoadOptions = null,
+    parentContentControlOrNullObject: ContentControlLoadOptions = null,
+    parentSection: SectionLoadOptions = null,
+    parentSectionOrNullObject: SectionLoadOptions = null,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    styleBuiltIn: js.UndefOr[scala.Boolean] = js.undefined,
+    text: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined
+  ): BodyLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (parentBody != null) __obj.updateDynamic("parentBody")(parentBody)
+    if (parentBodyOrNullObject != null) __obj.updateDynamic("parentBodyOrNullObject")(parentBodyOrNullObject)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentSection != null) __obj.updateDynamic("parentSection")(parentSection)
+    if (parentSectionOrNullObject != null) __obj.updateDynamic("parentSectionOrNullObject")(parentSectionOrNullObject)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(styleBuiltIn)) __obj.updateDynamic("styleBuiltIn")(styleBuiltIn)
+    if (!js.isUndefined(text)) __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BodyLoadOptions]
+  }
+}
+

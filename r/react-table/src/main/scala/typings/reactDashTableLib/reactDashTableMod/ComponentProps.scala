@@ -27,3 +27,50 @@ trait ComponentProps extends js.Object {
   var TrGroupComponent: reactLib.reactMod.ReactNs.ReactType[_]
 }
 
+object ComponentProps {
+  @scala.inline
+  def apply(
+    AggregatedComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    ExpanderComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    FilterComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    LoadingComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    NextComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    NoDataComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    PaginationComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    PivotComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    PivotValueComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    PreviousComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    ResizerComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    TableComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    TbodyComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    TdComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    TfootComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    ThComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    TheadComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    TrComponent: reactLib.reactMod.ReactNs.ReactType[_],
+    TrGroupComponent: reactLib.reactMod.ReactNs.ReactType[_]
+  ): ComponentProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AggregatedComponent")(AggregatedComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("ExpanderComponent")(ExpanderComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("FilterComponent")(FilterComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("LoadingComponent")(LoadingComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("NextComponent")(NextComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("NoDataComponent")(NoDataComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("PaginationComponent")(PaginationComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("PivotComponent")(PivotComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("PivotValueComponent")(PivotValueComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("PreviousComponent")(PreviousComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("ResizerComponent")(ResizerComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("TableComponent")(TableComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("TbodyComponent")(TbodyComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("TdComponent")(TdComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("TfootComponent")(TfootComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("ThComponent")(ThComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("TheadComponent")(TheadComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("TrComponent")(TrComponent.asInstanceOf[js.Any])
+    __obj.updateDynamic("TrGroupComponent")(TrGroupComponent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComponentProps]
+  }
+}
+

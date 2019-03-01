@@ -12,3 +12,20 @@ trait Anon_AvailabilityZones extends js.Object {
   var vpcId: java.lang.String
 }
 
+object Anon_AvailabilityZones {
+  @scala.inline
+  def apply(
+    availabilityZones: js.Array[java.lang.String],
+    vpcId: java.lang.String,
+    securityGroupIds: js.Array[java.lang.String] = null,
+    subnetIds: js.Array[java.lang.String] = null
+  ): Anon_AvailabilityZones = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("availabilityZones")(availabilityZones)
+    __obj.updateDynamic("vpcId")(vpcId)
+    if (securityGroupIds != null) __obj.updateDynamic("securityGroupIds")(securityGroupIds)
+    if (subnetIds != null) __obj.updateDynamic("subnetIds")(subnetIds)
+    __obj.asInstanceOf[Anon_AvailabilityZones]
+  }
+}
+

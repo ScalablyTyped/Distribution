@@ -34,3 +34,20 @@ trait ComponentStatus extends js.Object {
   val metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
 }
 
+object ComponentStatus {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1,
+    conditions: js.Array[ComponentCondition],
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatus,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta
+  ): ComponentStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[ComponentStatus]
+  }
+}
+

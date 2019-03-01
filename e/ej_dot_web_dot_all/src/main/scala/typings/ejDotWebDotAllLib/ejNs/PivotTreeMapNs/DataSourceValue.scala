@@ -16,3 +16,13 @@ trait DataSourceValue extends js.Object {
   var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
 }
 
+object DataSourceValue {
+  @scala.inline
+  def apply(axis: java.lang.String = null, measures: js.Array[DataSourceValuesMeasure] = null): DataSourceValue = {
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (measures != null) __obj.updateDynamic("measures")(measures)
+    __obj.asInstanceOf[DataSourceValue]
+  }
+}
+

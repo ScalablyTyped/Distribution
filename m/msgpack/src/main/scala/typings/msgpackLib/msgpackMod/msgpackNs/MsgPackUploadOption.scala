@@ -31,3 +31,27 @@ trait MsgPackUploadOption extends js.Object {
   var worker: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MsgPackUploadOption {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    after: js.Function3[
+      /* xhr */ stdLib.XMLHttpRequest, 
+      /* option */ MsgPackUploadOption, 
+      /* result */ MsgPackCallbackResult, 
+      scala.Unit
+    ] = null,
+    before: js.Function2[/* xhr */ stdLib.XMLHttpRequest, /* option */ MsgPackUploadOption, scala.Unit] = null,
+    timeout: scala.Int | scala.Double = null,
+    worker: js.UndefOr[scala.Boolean] = js.undefined
+  ): MsgPackUploadOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(worker)) __obj.updateDynamic("worker")(worker)
+    __obj.asInstanceOf[MsgPackUploadOption]
+  }
+}
+

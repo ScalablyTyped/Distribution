@@ -43,3 +43,28 @@ trait Gradient extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Gradient {
+  @scala.inline
+  def apply(
+    backfillEnd: js.UndefOr[scala.Boolean] = js.undefined,
+    backfillStart: js.UndefOr[scala.Boolean] = js.undefined,
+    colors: js.Array[java.lang.String] | js.Array[GradientColorRef] = null,
+    endPoint: Point = null,
+    endRadius: scala.Int | scala.Double = null,
+    startPoint: Point = null,
+    startRadius: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): Gradient = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(backfillEnd)) __obj.updateDynamic("backfillEnd")(backfillEnd)
+    if (!js.isUndefined(backfillStart)) __obj.updateDynamic("backfillStart")(backfillStart)
+    if (colors != null) __obj.updateDynamic("colors")(colors.asInstanceOf[js.Any])
+    if (endPoint != null) __obj.updateDynamic("endPoint")(endPoint)
+    if (endRadius != null) __obj.updateDynamic("endRadius")(endRadius.asInstanceOf[js.Any])
+    if (startPoint != null) __obj.updateDynamic("startPoint")(startPoint)
+    if (startRadius != null) __obj.updateDynamic("startRadius")(startRadius.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Gradient]
+  }
+}
+

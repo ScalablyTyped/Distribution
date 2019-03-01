@@ -44,3 +44,30 @@ trait ReplicationTaskArgs extends js.Object {
   val targetEndpointArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object ReplicationTaskArgs {
+  @scala.inline
+  def apply(
+    migrationType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    replicationInstanceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    replicationTaskId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    sourceEndpointArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    tableMappings: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    targetEndpointArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    cdcStartTime: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    replicationTaskSettings: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null
+  ): ReplicationTaskArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("migrationType")(migrationType.asInstanceOf[js.Any])
+    __obj.updateDynamic("replicationInstanceArn")(replicationInstanceArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("replicationTaskId")(replicationTaskId.asInstanceOf[js.Any])
+    __obj.updateDynamic("sourceEndpointArn")(sourceEndpointArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("tableMappings")(tableMappings.asInstanceOf[js.Any])
+    __obj.updateDynamic("targetEndpointArn")(targetEndpointArn.asInstanceOf[js.Any])
+    if (cdcStartTime != null) __obj.updateDynamic("cdcStartTime")(cdcStartTime.asInstanceOf[js.Any])
+    if (replicationTaskSettings != null) __obj.updateDynamic("replicationTaskSettings")(replicationTaskSettings.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReplicationTaskArgs]
+  }
+}
+

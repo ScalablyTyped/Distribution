@@ -14,3 +14,22 @@ trait KnockoutEditable extends js.Object {
   def rollback(): scala.Unit
 }
 
+object KnockoutEditable {
+  @scala.inline
+  def apply(
+    addEditable: js.Function1[js.Any, js.Any],
+    beginEdit: js.Function0[scala.Unit],
+    commit: js.Function0[scala.Unit],
+    hasChanges: js.Function0[scala.Boolean],
+    rollback: js.Function0[scala.Unit]
+  ): KnockoutEditable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEditable")(addEditable)
+    __obj.updateDynamic("beginEdit")(beginEdit)
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("hasChanges")(hasChanges)
+    __obj.updateDynamic("rollback")(rollback)
+    __obj.asInstanceOf[KnockoutEditable]
+  }
+}
+

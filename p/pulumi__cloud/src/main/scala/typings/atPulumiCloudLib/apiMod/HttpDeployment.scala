@@ -18,3 +18,16 @@ trait HttpDeployment extends js.Object {
   var url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]
 }
 
+object HttpDeployment {
+  @scala.inline
+  def apply(
+    customDomainNames: js.Array[atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]],
+    url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String]
+  ): HttpDeployment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customDomainNames")(customDomainNames)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[HttpDeployment]
+  }
+}
+

@@ -42,3 +42,26 @@ trait ScreenshotOptions extends js.Object {
   var `type`: js.UndefOr[puppeteerLib.puppeteerLibStrings.jpeg | puppeteerLib.puppeteerLibStrings.png] = js.undefined
 }
 
+object ScreenshotOptions {
+  @scala.inline
+  def apply(
+    clip: BoundingBox = null,
+    encoding: puppeteerLib.puppeteerLibStrings.base64 | puppeteerLib.puppeteerLibStrings.binary = null,
+    fullPage: js.UndefOr[scala.Boolean] = js.undefined,
+    omitBackground: js.UndefOr[scala.Boolean] = js.undefined,
+    path: java.lang.String = null,
+    quality: scala.Int | scala.Double = null,
+    `type`: puppeteerLib.puppeteerLibStrings.jpeg | puppeteerLib.puppeteerLibStrings.png = null
+  ): ScreenshotOptions = {
+    val __obj = js.Dynamic.literal()
+    if (clip != null) __obj.updateDynamic("clip")(clip)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding.asInstanceOf[js.Any])
+    if (!js.isUndefined(fullPage)) __obj.updateDynamic("fullPage")(fullPage)
+    if (!js.isUndefined(omitBackground)) __obj.updateDynamic("omitBackground")(omitBackground)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScreenshotOptions]
+  }
+}
+

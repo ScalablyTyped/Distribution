@@ -60,3 +60,36 @@ trait PoolConfig extends js.Object {
   var shouldDestroyConnection: js.UndefOr[js.Function1[/* error */ nodeLib.Error, scala.Boolean]] = js.undefined
 }
 
+object PoolConfig {
+  @scala.inline
+  def apply(
+    idleTimeout: scala.Int | scala.Double = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    onConnect: js.Function2[
+      /* connection */ Connection, 
+      /* ready */ js.Function2[/* error */ nodeLib.Error, /* result */ Connection, scala.Unit], 
+      scala.Unit
+    ] = null,
+    reapInterval: scala.Int | scala.Double = null,
+    refreshIdle: js.UndefOr[scala.Boolean] = js.undefined,
+    reset: js.Function2[
+      /* connection */ Connection, 
+      /* done */ js.Function1[/* error */ nodeLib.Error, scala.Unit], 
+      scala.Unit
+    ] = null,
+    shouldDestroyConnection: js.Function1[/* error */ nodeLib.Error, scala.Boolean] = null
+  ): PoolConfig = {
+    val __obj = js.Dynamic.literal()
+    if (idleTimeout != null) __obj.updateDynamic("idleTimeout")(idleTimeout.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (onConnect != null) __obj.updateDynamic("onConnect")(onConnect)
+    if (reapInterval != null) __obj.updateDynamic("reapInterval")(reapInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(refreshIdle)) __obj.updateDynamic("refreshIdle")(refreshIdle)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (shouldDestroyConnection != null) __obj.updateDynamic("shouldDestroyConnection")(shouldDestroyConnection)
+    __obj.asInstanceOf[PoolConfig]
+  }
+}
+

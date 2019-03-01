@@ -7,31 +7,40 @@ import scala.scalajs.js.annotation._
 
 object dockerodeLibStrings {
   @js.native
-  sealed trait awslogs extends js.Object
+  sealed trait awslogs
+    extends dockerodeLib.dockerodeMod.DockerodeNs.LoggingDriverType
   
   @js.native
-  sealed trait bind extends js.Object
+  sealed trait bind
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountType
   
   @js.native
-  sealed trait cached extends js.Object
+  sealed trait cached
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountConsistency
   
   @js.native
-  sealed trait consistent extends js.Object
+  sealed trait consistent
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountConsistency
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountConsistency
   
   @js.native
-  sealed trait delegated extends js.Object
+  sealed trait delegated
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountConsistency
   
   @js.native
-  sealed trait etwlogs extends js.Object
+  sealed trait etwlogs
+    extends dockerodeLib.dockerodeMod.DockerodeNs.LoggingDriverType
   
   @js.native
-  sealed trait fluentd extends js.Object
+  sealed trait fluentd
+    extends dockerodeLib.dockerodeMod.DockerodeNs.LoggingDriverType
   
   @js.native
-  sealed trait gelf extends js.Object
+  sealed trait gelf
+    extends dockerodeLib.dockerodeMod.DockerodeNs.LoggingDriverType
   
   @js.native
   sealed trait global extends js.Object
@@ -43,46 +52,59 @@ object dockerodeLibStrings {
   sealed trait https extends js.Object
   
   @js.native
-  sealed trait journald extends js.Object
+  sealed trait journald
+    extends dockerodeLib.dockerodeMod.DockerodeNs.LoggingDriverType
   
   @js.native
-  sealed trait `json-file` extends js.Object
+  sealed trait `json-file`
+    extends dockerodeLib.dockerodeMod.DockerodeNs.LoggingDriverType
   
   @js.native
   sealed trait local extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends dockerodeLib.dockerodeMod.DockerodeNs.LoggingDriverType
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait `private`
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountPropagation
   
   @js.native
-  sealed trait rprivate extends js.Object
+  sealed trait rprivate
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountPropagation
   
   @js.native
-  sealed trait rshared extends js.Object
+  sealed trait rshared
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountPropagation
   
   @js.native
-  sealed trait rslave extends js.Object
+  sealed trait rslave
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountPropagation
   
   @js.native
-  sealed trait shared extends js.Object
+  sealed trait shared
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountPropagation
   
   @js.native
-  sealed trait slave extends js.Object
+  sealed trait slave
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountPropagation
   
   @js.native
-  sealed trait splunk extends js.Object
+  sealed trait splunk
+    extends dockerodeLib.dockerodeMod.DockerodeNs.LoggingDriverType
   
   @js.native
-  sealed trait syslog extends js.Object
+  sealed trait syslog
+    extends dockerodeLib.dockerodeMod.DockerodeNs.LoggingDriverType
   
   @js.native
-  sealed trait tmpfs extends js.Object
+  sealed trait tmpfs
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountType
   
   @js.native
-  sealed trait volume extends js.Object
+  sealed trait volume
+    extends dockerodeLib.dockerodeMod.DockerodeNs.MountType
   
   @scala.inline
   def awslogs: awslogs = "awslogs".asInstanceOf[awslogs]

@@ -12,3 +12,20 @@ trait Anon_EnvVars extends js.Object {
   var taskNames: js.Array[java.lang.String]
 }
 
+object Anon_EnvVars {
+  @scala.inline
+  def apply(
+    envVars: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    opts: Anon_NameQuiet,
+    taskArgs: js.Array[java.lang.String],
+    taskNames: js.Array[java.lang.String]
+  ): Anon_EnvVars = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("envVars")(envVars)
+    __obj.updateDynamic("opts")(opts)
+    __obj.updateDynamic("taskArgs")(taskArgs)
+    __obj.updateDynamic("taskNames")(taskNames)
+    __obj.asInstanceOf[Anon_EnvVars]
+  }
+}
+

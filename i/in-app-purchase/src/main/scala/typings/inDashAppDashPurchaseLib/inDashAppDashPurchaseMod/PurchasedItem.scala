@@ -28,3 +28,36 @@ trait PurchasedItem extends js.Object {
   var transactionId: java.lang.String
 }
 
+object PurchasedItem {
+  @scala.inline
+  def apply(
+    productId: java.lang.String,
+    purchaseDate: scala.Double | java.lang.String,
+    quantity: scala.Double,
+    transactionId: java.lang.String,
+    appItemId: java.lang.String = null,
+    bundleId: java.lang.String = null,
+    cancellationDate: scala.Int | scala.Double = null,
+    expirationDate: scala.Int | scala.Double = null,
+    isTrial: js.UndefOr[scala.Boolean] = js.undefined,
+    orderId: java.lang.String = null,
+    originalPurchaseDate: java.lang.String = null,
+    originalTransactionId: java.lang.String = null
+  ): PurchasedItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("productId")(productId)
+    __obj.updateDynamic("purchaseDate")(purchaseDate.asInstanceOf[js.Any])
+    __obj.updateDynamic("quantity")(quantity)
+    __obj.updateDynamic("transactionId")(transactionId)
+    if (appItemId != null) __obj.updateDynamic("appItemId")(appItemId)
+    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId)
+    if (cancellationDate != null) __obj.updateDynamic("cancellationDate")(cancellationDate.asInstanceOf[js.Any])
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (!js.isUndefined(isTrial)) __obj.updateDynamic("isTrial")(isTrial)
+    if (orderId != null) __obj.updateDynamic("orderId")(orderId)
+    if (originalPurchaseDate != null) __obj.updateDynamic("originalPurchaseDate")(originalPurchaseDate)
+    if (originalTransactionId != null) __obj.updateDynamic("originalTransactionId")(originalTransactionId)
+    __obj.asInstanceOf[PurchasedItem]
+  }
+}
+

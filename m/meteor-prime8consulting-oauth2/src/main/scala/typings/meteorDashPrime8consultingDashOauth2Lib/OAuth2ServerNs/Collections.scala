@@ -24,3 +24,20 @@ trait Collections extends js.Object {
   var refreshToken: meteorLib.MongoNs.Collection[RefreshToken]
 }
 
+object Collections {
+  @scala.inline
+  def apply(
+    accessToken: meteorLib.MongoNs.Collection[AccessToken],
+    authCode: meteorLib.MongoNs.Collection[AuthCode],
+    client: meteorLib.MongoNs.Collection[Client],
+    refreshToken: meteorLib.MongoNs.Collection[RefreshToken]
+  ): Collections = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessToken")(accessToken)
+    __obj.updateDynamic("authCode")(authCode)
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("refreshToken")(refreshToken)
+    __obj.asInstanceOf[Collections]
+  }
+}
+

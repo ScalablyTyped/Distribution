@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object fancyboxLibNumbers {
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false` extends FancyBoxInteractionTypes
   
   @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]

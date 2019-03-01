@@ -48,3 +48,30 @@ trait SingularPosition extends js.Object {
   def width(): scala.Double
 }
 
+object SingularPosition {
+  @scala.inline
+  def apply(
+    active: js.Function0[scala.Boolean],
+    height: js.Function0[scala.Double],
+    outerHeight: js.Function0[scala.Double],
+    outerWidth: js.Function0[scala.Double],
+    renderedHeight: js.Function0[scala.Double],
+    renderedOuterHeight: js.Function0[scala.Double],
+    renderedOuterWidth: js.Function0[scala.Double],
+    renderedWidth: js.Function0[scala.Double],
+    width: js.Function0[scala.Double]
+  ): SingularPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("outerHeight")(outerHeight)
+    __obj.updateDynamic("outerWidth")(outerWidth)
+    __obj.updateDynamic("renderedHeight")(renderedHeight)
+    __obj.updateDynamic("renderedOuterHeight")(renderedOuterHeight)
+    __obj.updateDynamic("renderedOuterWidth")(renderedOuterWidth)
+    __obj.updateDynamic("renderedWidth")(renderedWidth)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[SingularPosition]
+  }
+}
+

@@ -21,3 +21,22 @@ trait ActivitiesResource extends js.Object {
   def list(request: gapiDotClientDotYoutubeLib.Anon_AltChannelId): gapiDotClientLib.gapiNs.clientNs.Request[ActivityListResponse]
 }
 
+object ActivitiesResource {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Activity]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltChannelId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ActivityListResponse]
+    ]
+  ): ActivitiesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ActivitiesResource]
+  }
+}
+

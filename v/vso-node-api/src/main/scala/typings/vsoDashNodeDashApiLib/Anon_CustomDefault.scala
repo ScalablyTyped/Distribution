@@ -11,3 +11,14 @@ trait Anon_CustomDefault extends js.Object {
   var upgrade: scala.Double
 }
 
+object Anon_CustomDefault {
+  @scala.inline
+  def apply(custom: scala.Double, default: scala.Double, upgrade: scala.Double): Anon_CustomDefault = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custom")(custom)
+    __obj.updateDynamic("default")(default)
+    __obj.updateDynamic("upgrade")(upgrade)
+    __obj.asInstanceOf[Anon_CustomDefault]
+  }
+}
+

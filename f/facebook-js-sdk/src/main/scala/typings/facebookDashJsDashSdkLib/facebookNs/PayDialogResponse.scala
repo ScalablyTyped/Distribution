@@ -15,3 +15,30 @@ trait PayDialogResponse extends DialogResponse {
   var status: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.completed | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.initiated
 }
 
+object PayDialogResponse {
+  @scala.inline
+  def apply(
+    amount: java.lang.String,
+    currency: java.lang.String,
+    payment_id: java.lang.String,
+    quantity: java.lang.String,
+    signed_request: java.lang.String,
+    status: facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.completed | facebookDashJsDashSdkLib.facebookDashJsDashSdkLibStrings.initiated,
+    error_code: scala.Int | scala.Double = null,
+    error_message: java.lang.String = null,
+    request_id: java.lang.String = null
+  ): PayDialogResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("payment_id")(payment_id)
+    __obj.updateDynamic("quantity")(quantity)
+    __obj.updateDynamic("signed_request")(signed_request)
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (error_code != null) __obj.updateDynamic("error_code")(error_code.asInstanceOf[js.Any])
+    if (error_message != null) __obj.updateDynamic("error_message")(error_message)
+    if (request_id != null) __obj.updateDynamic("request_id")(request_id)
+    __obj.asInstanceOf[PayDialogResponse]
+  }
+}
+

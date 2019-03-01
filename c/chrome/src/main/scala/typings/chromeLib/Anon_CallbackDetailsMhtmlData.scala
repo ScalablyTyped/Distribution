@@ -12,3 +12,18 @@ trait Anon_CallbackDetailsMhtmlData extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackDetailsMhtmlData {
+  @scala.inline
+  def apply(
+    saveAsMHTML: js.Function2[
+      chromeLib.chromeNs.pageCaptureNs.SaveDetails, 
+      js.Function1[/* mhtmlData */ js.Any, scala.Unit], 
+      scala.Unit
+    ]
+  ): Anon_CallbackDetailsMhtmlData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("saveAsMHTML")(saveAsMHTML)
+    __obj.asInstanceOf[Anon_CallbackDetailsMhtmlData]
+  }
+}
+

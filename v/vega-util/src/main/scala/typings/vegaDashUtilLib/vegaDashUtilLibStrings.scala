@@ -7,13 +7,15 @@ import scala.scalajs.js.annotation._
 
 object vegaDashUtilLibStrings {
   @js.native
-  sealed trait ascending extends js.Object
+  sealed trait ascending
+    extends vegaDashUtilLib.vegaDashUtilMod.Order
   
   @js.native
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait descending extends js.Object
+  sealed trait descending
+    extends vegaDashUtilLib.vegaDashUtilMod.Order
   
   @js.native
   sealed trait left extends js.Object

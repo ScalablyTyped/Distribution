@@ -9,3 +9,12 @@ trait Anon_Rawcanvas extends js.Object {
   var `type`: croppieLib.croppieLibStrings.rawcanvas
 }
 
+object Anon_Rawcanvas {
+  @scala.inline
+  def apply(`type`: croppieLib.croppieLibStrings.rawcanvas): Anon_Rawcanvas = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Rawcanvas]
+  }
+}
+

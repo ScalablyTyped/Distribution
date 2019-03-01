@@ -31,3 +31,20 @@ trait IDriveInfo extends js.Object {
   var qTypeIdentifier: DriveType
 }
 
+object IDriveInfo {
+  @scala.inline
+  def apply(
+    qDrive: java.lang.String,
+    qName: java.lang.String,
+    qType: java.lang.String,
+    qTypeIdentifier: DriveType
+  ): IDriveInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qDrive")(qDrive)
+    __obj.updateDynamic("qName")(qName)
+    __obj.updateDynamic("qType")(qType)
+    __obj.updateDynamic("qTypeIdentifier")(qTypeIdentifier)
+    __obj.asInstanceOf[IDriveInfo]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Anon_AttributeClass extends js.Object {
   var Style: Anon_KeysNode
 }
 
+object Anon_AttributeClass {
+  @scala.inline
+  def apply(
+    Attribute: Anon_Attribute,
+    Class: Anon_Keys,
+    Store: org.scalablytyped.runtime.Instantiable1[/* domNode */ stdLib.HTMLElement, parchmentLib.distSrcAttributorStoreMod.default],
+    Style: Anon_KeysNode
+  ): Anon_AttributeClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Attribute")(Attribute)
+    __obj.updateDynamic("Class")(Class)
+    __obj.updateDynamic("Store")(Store)
+    __obj.updateDynamic("Style")(Style)
+    __obj.asInstanceOf[Anon_AttributeClass]
+  }
+}
+

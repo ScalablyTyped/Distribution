@@ -315,3 +315,151 @@ trait TableHeaderColumnProps
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TableHeaderColumnProps {
+  @scala.inline
+  def apply(
+    autoValue: scala.Boolean | js.Function0[_] = null,
+    caretRender: js.Function2[
+      /* direction */ SortOrder | scala.Null, 
+      /* fieldName */ java.lang.String, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ] = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String | (js.Function4[
+      /* cell */ js.Any, 
+      /* row */ js.Any, 
+      /* rowIndex */ scala.Double, 
+      /* columnIndex */ scala.Double, 
+      java.lang.String
+    ]) = null,
+    colSpan: scala.Int | scala.Double = null,
+    columnClassName: java.lang.String | (js.Function4[
+      /* cell */ js.Any, 
+      /* row */ js.Any, 
+      /* rowIndex */ scala.Double, 
+      /* columnIndex */ scala.Double, 
+      java.lang.String
+    ]) = null,
+    columnTitle: scala.Boolean | java.lang.String | (js.Function4[
+      /* cell */ js.Any, 
+      /* row */ js.Any, 
+      /* rowIndex */ scala.Double, 
+      /* colIndex */ scala.Double, 
+      java.lang.String
+    ]) = null,
+    csvFieldType: CSVFieldType = null,
+    csvFormat: js.Function2[/* cell */ js.Any, /* row */ js.Any, java.lang.String] = null,
+    csvFormatExtraData: js.Any = null,
+    csvHeader: java.lang.String = null,
+    customEditor: CustomEditor[_, _] = null,
+    customInsertEditor: reactDashBootstrapDashTableLib.Anon_Attr = null,
+    dataAlign: DataAlignType = null,
+    dataField: java.lang.String = null,
+    dataFormat: js.Function4[
+      /* cell */ js.Any, 
+      /* row */ js.Any, 
+      /* formatExtraData */ js.Any, 
+      /* rowIndex */ scala.Double, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ] = null,
+    dataSort: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultASC: js.UndefOr[scala.Boolean] = js.undefined,
+    editColumnClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, java.lang.String]) = null,
+    editTdAttr: CustomAttrs = null,
+    editable: scala.Boolean | (Editable[_, _]) | (js.Function4[
+      /* cell */ js.Any, 
+      /* row */ js.Any, 
+      /* rowIndex */ scala.Double, 
+      /* columnIndex */ scala.Double, 
+      scala.Boolean | java.lang.String | EditValidatorObject
+    ]) = null,
+    expandable: js.UndefOr[scala.Boolean] = js.undefined,
+    export: js.UndefOr[scala.Boolean] = js.undefined,
+    filter: Filter = null,
+    filterFormatted: js.UndefOr[scala.Boolean] = js.undefined,
+    filterValue: js.Function2[/* cell */ js.Any, /* row */ js.Any, _] = null,
+    formatExtraData: js.Any = null,
+    headerAlign: DataAlignType = null,
+    headerText: java.lang.String = null,
+    headerTitle: js.UndefOr[scala.Boolean] = js.undefined,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    hiddenOnInsert: js.UndefOr[scala.Boolean] = js.undefined,
+    invalidEditColumnClassName: java.lang.String | (js.Function2[/* cell */ js.Any, /* row */ js.Any, java.lang.String]) = null,
+    isKey: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[TableHeaderColumn] = null,
+    row: scala.Int | scala.Double = null,
+    rowSpan: scala.Int | scala.Double = null,
+    searchable: js.UndefOr[scala.Boolean] = js.undefined,
+    sortFunc: js.Function5[
+      /* a */ js.Object, 
+      /* b */ js.Object, 
+      /* order */ SortOrder, 
+      /* sortField */ java.lang.String, 
+      /* extraData */ js.Any, 
+      scala.Double
+    ] = null,
+    sortFuncExtraData: js.Any = null,
+    sortHeaderColumnClassName: java.lang.String | (js.Function2[/* order */ SortOrder, /* dataField */ java.lang.String, java.lang.String]) = null,
+    tdAttr: CustomAttrs = null,
+    tdStyle: reactLib.reactMod.ReactNs.CSSProperties | (js.Function4[
+      /* cell */ js.Any, 
+      /* row */ js.Any, 
+      /* rowIndex */ scala.Double, 
+      /* columnIndex */ scala.Double, 
+      reactLib.reactMod.ReactNs.CSSProperties
+    ]) = null,
+    thStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    width: java.lang.String = null
+  ): TableHeaderColumnProps = {
+    val __obj = js.Dynamic.literal()
+    if (autoValue != null) __obj.updateDynamic("autoValue")(autoValue.asInstanceOf[js.Any])
+    if (caretRender != null) __obj.updateDynamic("caretRender")(caretRender)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (colSpan != null) __obj.updateDynamic("colSpan")(colSpan.asInstanceOf[js.Any])
+    if (columnClassName != null) __obj.updateDynamic("columnClassName")(columnClassName.asInstanceOf[js.Any])
+    if (columnTitle != null) __obj.updateDynamic("columnTitle")(columnTitle.asInstanceOf[js.Any])
+    if (csvFieldType != null) __obj.updateDynamic("csvFieldType")(csvFieldType)
+    if (csvFormat != null) __obj.updateDynamic("csvFormat")(csvFormat)
+    if (csvFormatExtraData != null) __obj.updateDynamic("csvFormatExtraData")(csvFormatExtraData)
+    if (csvHeader != null) __obj.updateDynamic("csvHeader")(csvHeader)
+    if (customEditor != null) __obj.updateDynamic("customEditor")(customEditor)
+    if (customInsertEditor != null) __obj.updateDynamic("customInsertEditor")(customInsertEditor)
+    if (dataAlign != null) __obj.updateDynamic("dataAlign")(dataAlign)
+    if (dataField != null) __obj.updateDynamic("dataField")(dataField)
+    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat)
+    if (!js.isUndefined(dataSort)) __obj.updateDynamic("dataSort")(dataSort)
+    if (!js.isUndefined(defaultASC)) __obj.updateDynamic("defaultASC")(defaultASC)
+    if (editColumnClassName != null) __obj.updateDynamic("editColumnClassName")(editColumnClassName.asInstanceOf[js.Any])
+    if (editTdAttr != null) __obj.updateDynamic("editTdAttr")(editTdAttr)
+    if (editable != null) __obj.updateDynamic("editable")(editable.asInstanceOf[js.Any])
+    if (!js.isUndefined(expandable)) __obj.updateDynamic("expandable")(expandable)
+    if (!js.isUndefined(export)) __obj.updateDynamic("export")(export)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(filterFormatted)) __obj.updateDynamic("filterFormatted")(filterFormatted)
+    if (filterValue != null) __obj.updateDynamic("filterValue")(filterValue)
+    if (formatExtraData != null) __obj.updateDynamic("formatExtraData")(formatExtraData)
+    if (headerAlign != null) __obj.updateDynamic("headerAlign")(headerAlign)
+    if (headerText != null) __obj.updateDynamic("headerText")(headerText)
+    if (!js.isUndefined(headerTitle)) __obj.updateDynamic("headerTitle")(headerTitle)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(hiddenOnInsert)) __obj.updateDynamic("hiddenOnInsert")(hiddenOnInsert)
+    if (invalidEditColumnClassName != null) __obj.updateDynamic("invalidEditColumnClassName")(invalidEditColumnClassName.asInstanceOf[js.Any])
+    if (!js.isUndefined(isKey)) __obj.updateDynamic("isKey")(isKey)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (row != null) __obj.updateDynamic("row")(row.asInstanceOf[js.Any])
+    if (rowSpan != null) __obj.updateDynamic("rowSpan")(rowSpan.asInstanceOf[js.Any])
+    if (!js.isUndefined(searchable)) __obj.updateDynamic("searchable")(searchable)
+    if (sortFunc != null) __obj.updateDynamic("sortFunc")(sortFunc)
+    if (sortFuncExtraData != null) __obj.updateDynamic("sortFuncExtraData")(sortFuncExtraData)
+    if (sortHeaderColumnClassName != null) __obj.updateDynamic("sortHeaderColumnClassName")(sortHeaderColumnClassName.asInstanceOf[js.Any])
+    if (tdAttr != null) __obj.updateDynamic("tdAttr")(tdAttr)
+    if (tdStyle != null) __obj.updateDynamic("tdStyle")(tdStyle.asInstanceOf[js.Any])
+    if (thStyle != null) __obj.updateDynamic("thStyle")(thStyle)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[TableHeaderColumnProps]
+  }
+}
+

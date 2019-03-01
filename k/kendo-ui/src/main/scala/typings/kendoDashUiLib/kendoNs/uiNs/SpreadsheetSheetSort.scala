@@ -10,3 +10,13 @@ trait SpreadsheetSheetSort extends js.Object {
   var ref: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SpreadsheetSheetSort {
+  @scala.inline
+  def apply(columns: js.Array[SpreadsheetSheetSortColumn] = null, ref: java.lang.String = null): SpreadsheetSheetSort = {
+    val __obj = js.Dynamic.literal()
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[SpreadsheetSheetSort]
+  }
+}
+

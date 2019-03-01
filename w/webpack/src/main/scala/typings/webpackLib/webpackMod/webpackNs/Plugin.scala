@@ -11,3 +11,12 @@ trait Plugin
   def apply(compiler: Compiler): scala.Unit
 }
 
+object Plugin {
+  @scala.inline
+  def apply(apply: js.Function1[Compiler, scala.Unit]): Plugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apply")(apply)
+    __obj.asInstanceOf[Plugin]
+  }
+}
+

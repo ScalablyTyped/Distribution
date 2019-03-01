@@ -18,3 +18,32 @@ trait Anon_AdditionalGuestsComment extends js.Object {
   var self: scala.Boolean
 }
 
+object Anon_AdditionalGuestsComment {
+  @scala.inline
+  def apply(
+    email: java.lang.String,
+    id: java.lang.String,
+    organizer: scala.Boolean,
+    resource: scala.Boolean,
+    responseStatus: gapiDotCalendarLib.gapiNs.clientNs.calendarNs.AttendeeResponseStatus,
+    self: scala.Boolean,
+    additionalGuests: js.UndefOr[gapiDotCalendarLib.gapiNs.clientNs.calendarNs.integer] = js.undefined,
+    comment: java.lang.String = null,
+    displayName: java.lang.String = null,
+    optional: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AdditionalGuestsComment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("email")(email)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("organizer")(organizer)
+    __obj.updateDynamic("resource")(resource)
+    __obj.updateDynamic("responseStatus")(responseStatus)
+    __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(additionalGuests)) __obj.updateDynamic("additionalGuests")(additionalGuests)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[Anon_AdditionalGuestsComment]
+  }
+}
+

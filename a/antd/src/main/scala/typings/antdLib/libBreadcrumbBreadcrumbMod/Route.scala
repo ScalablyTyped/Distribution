@@ -10,3 +10,13 @@ trait Route extends js.Object {
   var path: java.lang.String
 }
 
+object Route {
+  @scala.inline
+  def apply(breadcrumbName: java.lang.String, path: java.lang.String): Route = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("breadcrumbName")(breadcrumbName)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Route]
+  }
+}
+

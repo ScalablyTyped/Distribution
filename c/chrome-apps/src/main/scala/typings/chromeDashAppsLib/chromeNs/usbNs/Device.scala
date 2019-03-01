@@ -37,3 +37,26 @@ trait Device extends js.Object {
   var version: chromeDashAppsLib.chromeNs.integer
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    device: chromeDashAppsLib.chromeNs.integer,
+    manufacturerName: java.lang.String,
+    productId: chromeDashAppsLib.chromeNs.integer,
+    productName: java.lang.String,
+    serialNumber: java.lang.String,
+    vendorId: chromeDashAppsLib.chromeNs.integer,
+    version: chromeDashAppsLib.chromeNs.integer
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("device")(device)
+    __obj.updateDynamic("manufacturerName")(manufacturerName)
+    __obj.updateDynamic("productId")(productId)
+    __obj.updateDynamic("productName")(productName)
+    __obj.updateDynamic("serialNumber")(serialNumber)
+    __obj.updateDynamic("vendorId")(vendorId)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Device]
+  }
+}
+

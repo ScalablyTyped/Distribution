@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonAllQueued extends js.Object {
   var enumValues: Anon_AllQueued
 }
 
+object Anon_EnumValuesAnonAllQueued {
+  @scala.inline
+  def apply(enumValues: Anon_AllQueued): Anon_EnumValuesAnonAllQueued = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonAllQueued]
+  }
+}
+

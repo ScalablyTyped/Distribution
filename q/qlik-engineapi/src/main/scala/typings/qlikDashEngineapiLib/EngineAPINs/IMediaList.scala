@@ -24,3 +24,12 @@ trait IMediaList extends js.Object {
   var qItems: js.Array[IMediaListItem]
 }
 
+object IMediaList {
+  @scala.inline
+  def apply(qItems: js.Array[IMediaListItem]): IMediaList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qItems")(qItems)
+    __obj.asInstanceOf[IMediaList]
+  }
+}
+

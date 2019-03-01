@@ -51,3 +51,98 @@ trait TestRun extends js.Object {
   var webAccessUrl: java.lang.String
 }
 
+object TestRun {
+  @scala.inline
+  def apply(
+    build: ShallowReference,
+    buildConfiguration: BuildConfiguration,
+    comment: java.lang.String,
+    completedDate: stdLib.Date,
+    controller: java.lang.String,
+    createdDate: stdLib.Date,
+    customFields: js.Array[CustomTestField],
+    dropLocation: java.lang.String,
+    dtlAutEnvironment: ShallowReference,
+    dtlEnvironment: ShallowReference,
+    dtlEnvironmentCreationDetails: DtlEnvironmentDetails,
+    dueDate: stdLib.Date,
+    errorMessage: java.lang.String,
+    filter: RunFilter,
+    id: scala.Double,
+    incompleteTests: scala.Double,
+    isAutomated: scala.Boolean,
+    iteration: java.lang.String,
+    lastUpdatedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastUpdatedDate: stdLib.Date,
+    name: java.lang.String,
+    notApplicableTests: scala.Double,
+    owner: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    passedTests: scala.Double,
+    phase: java.lang.String,
+    plan: ShallowReference,
+    postProcessState: java.lang.String,
+    project: ShallowReference,
+    release: ReleaseReference,
+    releaseEnvironmentUri: java.lang.String,
+    releaseUri: java.lang.String,
+    revision: scala.Double,
+    runStatistics: js.Array[RunStatistic],
+    startedDate: stdLib.Date,
+    state: java.lang.String,
+    substate: TestRunSubstate,
+    testEnvironment: TestEnvironment,
+    testMessageLogId: scala.Double,
+    testSettings: ShallowReference,
+    totalTests: scala.Double,
+    unanalyzedTests: scala.Double,
+    url: java.lang.String,
+    webAccessUrl: java.lang.String
+  ): TestRun = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("buildConfiguration")(buildConfiguration)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("completedDate")(completedDate)
+    __obj.updateDynamic("controller")(controller)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("customFields")(customFields)
+    __obj.updateDynamic("dropLocation")(dropLocation)
+    __obj.updateDynamic("dtlAutEnvironment")(dtlAutEnvironment)
+    __obj.updateDynamic("dtlEnvironment")(dtlEnvironment)
+    __obj.updateDynamic("dtlEnvironmentCreationDetails")(dtlEnvironmentCreationDetails)
+    __obj.updateDynamic("dueDate")(dueDate)
+    __obj.updateDynamic("errorMessage")(errorMessage)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("incompleteTests")(incompleteTests)
+    __obj.updateDynamic("isAutomated")(isAutomated)
+    __obj.updateDynamic("iteration")(iteration)
+    __obj.updateDynamic("lastUpdatedBy")(lastUpdatedBy)
+    __obj.updateDynamic("lastUpdatedDate")(lastUpdatedDate)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("notApplicableTests")(notApplicableTests)
+    __obj.updateDynamic("owner")(owner)
+    __obj.updateDynamic("passedTests")(passedTests)
+    __obj.updateDynamic("phase")(phase)
+    __obj.updateDynamic("plan")(plan)
+    __obj.updateDynamic("postProcessState")(postProcessState)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("releaseEnvironmentUri")(releaseEnvironmentUri)
+    __obj.updateDynamic("releaseUri")(releaseUri)
+    __obj.updateDynamic("revision")(revision)
+    __obj.updateDynamic("runStatistics")(runStatistics)
+    __obj.updateDynamic("startedDate")(startedDate)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("substate")(substate)
+    __obj.updateDynamic("testEnvironment")(testEnvironment)
+    __obj.updateDynamic("testMessageLogId")(testMessageLogId)
+    __obj.updateDynamic("testSettings")(testSettings)
+    __obj.updateDynamic("totalTests")(totalTests)
+    __obj.updateDynamic("unanalyzedTests")(unanalyzedTests)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("webAccessUrl")(webAccessUrl)
+    __obj.asInstanceOf[TestRun]
+  }
+}
+

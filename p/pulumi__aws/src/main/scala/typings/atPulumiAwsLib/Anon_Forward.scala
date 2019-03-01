@@ -10,3 +10,13 @@ trait Anon_Forward extends js.Object {
   var whitelistedNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Forward {
+  @scala.inline
+  def apply(forward: java.lang.String, whitelistedNames: js.Array[java.lang.String] = null): Anon_Forward = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("forward")(forward)
+    if (whitelistedNames != null) __obj.updateDynamic("whitelistedNames")(whitelistedNames)
+    __obj.asInstanceOf[Anon_Forward]
+  }
+}
+

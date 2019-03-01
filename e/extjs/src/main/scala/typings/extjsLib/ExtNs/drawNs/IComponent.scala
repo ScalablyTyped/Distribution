@@ -21,3 +21,32 @@ trait IComponent
   var viewBox: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IComponent {
+  @scala.inline
+  def apply(
+    IComponent: extjsLib.ExtNs.IComponent = null,
+    autoSize: js.UndefOr[scala.Boolean] = js.undefined,
+    baseCls: java.lang.String = null,
+    componentLayout: js.Any = null,
+    enginePriority: extjsLib.ExtNs.Array = null,
+    gradients: extjsLib.ExtNs.Array = null,
+    items: extjsLib.ExtNs.Array = null,
+    shrinkWrap: js.Any = null,
+    surface: ISurface = null,
+    viewBox: js.UndefOr[scala.Boolean] = js.undefined
+  ): IComponent = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (!js.isUndefined(autoSize)) __obj.updateDynamic("autoSize")(autoSize)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (componentLayout != null) __obj.updateDynamic("componentLayout")(componentLayout)
+    if (enginePriority != null) __obj.updateDynamic("enginePriority")(enginePriority)
+    if (gradients != null) __obj.updateDynamic("gradients")(gradients)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (shrinkWrap != null) __obj.updateDynamic("shrinkWrap")(shrinkWrap)
+    if (surface != null) __obj.updateDynamic("surface")(surface)
+    if (!js.isUndefined(viewBox)) __obj.updateDynamic("viewBox")(viewBox)
+    __obj.asInstanceOf[IComponent]
+  }
+}
+

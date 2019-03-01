@@ -1350,6 +1350,24 @@ object Route53DomainsNs extends js.Object {
     var NextPageMarker: js.UndefOr[PageMarker] = js.undefined
   }
   
+  trait _ContactType extends js.Object
+  
+  trait _CountryCode extends js.Object
+  
+  trait _DomainAvailability extends js.Object
+  
+  trait _ExtraParamName extends js.Object
+  
+  trait _OperationStatus extends js.Object
+  
+  trait _OperationType extends js.Object
+  
+  trait _ReachabilityStatus extends js.Object
+  
+  trait _Transferable extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AddressLine = java.lang.String
   type BillingRecords = js.Array[BillingRecord]
@@ -1358,12 +1376,12 @@ object Route53DomainsNs extends js.Object {
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ContactName = java.lang.String
   type ContactNumber = java.lang.String
-  type ContactType = awsDashSdkLib.awsDashSdkLibStrings.PERSON | awsDashSdkLib.awsDashSdkLibStrings.COMPANY | awsDashSdkLib.awsDashSdkLibStrings.ASSOCIATION | awsDashSdkLib.awsDashSdkLibStrings.PUBLIC_BODY | awsDashSdkLib.awsDashSdkLibStrings.RESELLER | java.lang.String
-  type CountryCode = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 230 */ js.Any
+  type ContactType = _ContactType | java.lang.String
+  type CountryCode = _CountryCode | java.lang.String
   type CurrentExpiryYear = scala.Double
   type DNSSec = java.lang.String
   type DomainAuthCode = java.lang.String
-  type DomainAvailability = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE_RESERVED | awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE_PREORDER | awsDashSdkLib.awsDashSdkLibStrings.UNAVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.UNAVAILABLE_PREMIUM | awsDashSdkLib.awsDashSdkLibStrings.UNAVAILABLE_RESTRICTED | awsDashSdkLib.awsDashSdkLibStrings.RESERVED | awsDashSdkLib.awsDashSdkLibStrings.DONT_KNOW | java.lang.String
+  type DomainAvailability = _DomainAvailability | java.lang.String
   type DomainName = java.lang.String
   type DomainStatus = java.lang.String
   type DomainStatusList = js.Array[DomainStatus]
@@ -1373,7 +1391,7 @@ object Route53DomainsNs extends js.Object {
   type Email = java.lang.String
   type ErrorMessage = java.lang.String
   type ExtraParamList = js.Array[ExtraParam]
-  type ExtraParamName = awsDashSdkLib.awsDashSdkLibStrings.DUNS_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.BRAND_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.BIRTH_DEPARTMENT | awsDashSdkLib.awsDashSdkLibStrings.BIRTH_DATE_IN_YYYY_MM_DD | awsDashSdkLib.awsDashSdkLibStrings.BIRTH_COUNTRY | awsDashSdkLib.awsDashSdkLibStrings.BIRTH_CITY | awsDashSdkLib.awsDashSdkLibStrings.DOCUMENT_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.AU_ID_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.AU_ID_TYPE | awsDashSdkLib.awsDashSdkLibStrings.CA_LEGAL_TYPE | awsDashSdkLib.awsDashSdkLibStrings.CA_BUSINESS_ENTITY_TYPE | awsDashSdkLib.awsDashSdkLibStrings.ES_IDENTIFICATION | awsDashSdkLib.awsDashSdkLibStrings.ES_IDENTIFICATION_TYPE | awsDashSdkLib.awsDashSdkLibStrings.ES_LEGAL_FORM | awsDashSdkLib.awsDashSdkLibStrings.FI_BUSINESS_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.FI_ID_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.FI_NATIONALITY | awsDashSdkLib.awsDashSdkLibStrings.FI_ORGANIZATION_TYPE | awsDashSdkLib.awsDashSdkLibStrings.IT_PIN | awsDashSdkLib.awsDashSdkLibStrings.IT_REGISTRANT_ENTITY_TYPE | awsDashSdkLib.awsDashSdkLibStrings.RU_PASSPORT_DATA | awsDashSdkLib.awsDashSdkLibStrings.SE_ID_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.SG_ID_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.VAT_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.UK_CONTACT_TYPE | awsDashSdkLib.awsDashSdkLibStrings.UK_COMPANY_NUMBER | java.lang.String
+  type ExtraParamName = _ExtraParamName | java.lang.String
   type ExtraParamValue = java.lang.String
   type FIAuthKey = java.lang.String
   type GlueIp = java.lang.String
@@ -1384,13 +1402,13 @@ object Route53DomainsNs extends js.Object {
   type LangCode = java.lang.String
   type NameserverList = js.Array[Nameserver]
   type OperationId = java.lang.String
-  type OperationStatus = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.SUCCESSFUL | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type OperationStatus = _OperationStatus | java.lang.String
   type OperationSummaryList = js.Array[OperationSummary]
-  type OperationType = awsDashSdkLib.awsDashSdkLibStrings.REGISTER_DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.DELETE_DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.TRANSFER_IN_DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.UPDATE_DOMAIN_CONTACT | awsDashSdkLib.awsDashSdkLibStrings.UPDATE_NAMESERVER | awsDashSdkLib.awsDashSdkLibStrings.CHANGE_PRIVACY_PROTECTION | awsDashSdkLib.awsDashSdkLibStrings.DOMAIN_LOCK | awsDashSdkLib.awsDashSdkLibStrings.ENABLE_AUTORENEW | awsDashSdkLib.awsDashSdkLibStrings.DISABLE_AUTORENEW | awsDashSdkLib.awsDashSdkLibStrings.ADD_DNSSEC | awsDashSdkLib.awsDashSdkLibStrings.REMOVE_DNSSEC | awsDashSdkLib.awsDashSdkLibStrings.EXPIRE_DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.TRANSFER_OUT_DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.CHANGE_DOMAIN_OWNER | awsDashSdkLib.awsDashSdkLibStrings.RENEW_DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.PUSH_DOMAIN | java.lang.String
+  type OperationType = _OperationType | java.lang.String
   type PageMarker = java.lang.String
   type PageMaxItems = scala.Double
   type Price = scala.Double
-  type ReachabilityStatus = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.DONE | awsDashSdkLib.awsDashSdkLibStrings.EXPIRED | java.lang.String
+  type ReachabilityStatus = _ReachabilityStatus | java.lang.String
   type RegistrarName = java.lang.String
   type RegistrarUrl = java.lang.String
   type RegistrarWhoIsServer = java.lang.String
@@ -1403,8 +1421,8 @@ object Route53DomainsNs extends js.Object {
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
   type Timestamp = stdLib.Date
-  type Transferable = awsDashSdkLib.awsDashSdkLibStrings.TRANSFERABLE | awsDashSdkLib.awsDashSdkLibStrings.UNTRANSFERABLE | awsDashSdkLib.awsDashSdkLibStrings.DONT_KNOW | java.lang.String
+  type Transferable = _Transferable | java.lang.String
   type ZipCode = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2014-05-15` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

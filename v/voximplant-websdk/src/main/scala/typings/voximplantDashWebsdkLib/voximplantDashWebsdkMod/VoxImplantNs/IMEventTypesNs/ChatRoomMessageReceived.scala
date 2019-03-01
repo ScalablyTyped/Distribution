@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when instant message was sent to chat room
 		*/
-trait ChatRoomMessageReceived extends js.Object {
+trait ChatRoomMessageReceived
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* Message content
   			*/
@@ -37,5 +38,28 @@ trait ChatRoomMessageReceived extends js.Object {
   			* Message timestamp
   			*/
   var timestamp: java.lang.String
+}
+
+object ChatRoomMessageReceived {
+  @scala.inline
+  def apply(
+    content: java.lang.String,
+    from: java.lang.String,
+    message_id: java.lang.String,
+    private_message: java.lang.String,
+    resource: java.lang.String,
+    room: java.lang.String,
+    timestamp: java.lang.String
+  ): ChatRoomMessageReceived = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("message_id")(message_id)
+    __obj.updateDynamic("private_message")(private_message)
+    __obj.updateDynamic("resource")(resource)
+    __obj.updateDynamic("room")(room)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[ChatRoomMessageReceived]
+  }
 }
 

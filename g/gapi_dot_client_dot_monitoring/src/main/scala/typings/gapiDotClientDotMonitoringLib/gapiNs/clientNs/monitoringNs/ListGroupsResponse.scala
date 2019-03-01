@@ -15,3 +15,13 @@ trait ListGroupsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListGroupsResponse {
+  @scala.inline
+  def apply(group: js.Array[Group] = null, nextPageToken: java.lang.String = null): ListGroupsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListGroupsResponse]
+  }
+}
+

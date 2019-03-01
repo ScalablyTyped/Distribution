@@ -226,3 +226,66 @@ trait XConnection extends XCloseable {
   def setTypeMap(typeMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess): scala.Unit
 }
 
+object XConnection {
+  @scala.inline
+  def apply(
+    AutoCommit: scala.Boolean,
+    Catalog: java.lang.String,
+    MetaData: XDatabaseMetaData,
+    TransactionIsolation: scala.Double,
+    TypeMap: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    close: js.Function0[scala.Unit],
+    commit: js.Function0[scala.Unit],
+    createStatement: js.Function0[XStatement],
+    getAutoCommit: js.Function0[scala.Boolean],
+    getCatalog: js.Function0[java.lang.String],
+    getMetaData: js.Function0[XDatabaseMetaData],
+    getTransactionIsolation: js.Function0[scala.Double],
+    getTypeMap: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    isClosed: js.Function0[scala.Boolean],
+    isReadOnly: js.Function0[scala.Boolean],
+    nativeSQL: js.Function1[java.lang.String, java.lang.String],
+    prepareCall: js.Function1[java.lang.String, XPreparedStatement],
+    prepareStatement: js.Function1[java.lang.String, XPreparedStatement],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    rollback: js.Function0[scala.Unit],
+    setAutoCommit: js.Function1[scala.Boolean, scala.Unit],
+    setCatalog: js.Function1[java.lang.String, scala.Unit],
+    setReadOnly: js.Function1[scala.Boolean, scala.Unit],
+    setTransactionIsolation: js.Function1[scala.Double, scala.Unit],
+    setTypeMap: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess, scala.Unit]
+  ): XConnection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoCommit")(AutoCommit)
+    __obj.updateDynamic("Catalog")(Catalog)
+    __obj.updateDynamic("MetaData")(MetaData)
+    __obj.updateDynamic("TransactionIsolation")(TransactionIsolation)
+    __obj.updateDynamic("TypeMap")(TypeMap)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("close")(close)
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("createStatement")(createStatement)
+    __obj.updateDynamic("getAutoCommit")(getAutoCommit)
+    __obj.updateDynamic("getCatalog")(getCatalog)
+    __obj.updateDynamic("getMetaData")(getMetaData)
+    __obj.updateDynamic("getTransactionIsolation")(getTransactionIsolation)
+    __obj.updateDynamic("getTypeMap")(getTypeMap)
+    __obj.updateDynamic("isClosed")(isClosed)
+    __obj.updateDynamic("isReadOnly")(isReadOnly)
+    __obj.updateDynamic("nativeSQL")(nativeSQL)
+    __obj.updateDynamic("prepareCall")(prepareCall)
+    __obj.updateDynamic("prepareStatement")(prepareStatement)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("rollback")(rollback)
+    __obj.updateDynamic("setAutoCommit")(setAutoCommit)
+    __obj.updateDynamic("setCatalog")(setCatalog)
+    __obj.updateDynamic("setReadOnly")(setReadOnly)
+    __obj.updateDynamic("setTransactionIsolation")(setTransactionIsolation)
+    __obj.updateDynamic("setTypeMap")(setTypeMap)
+    __obj.asInstanceOf[XConnection]
+  }
+}
+

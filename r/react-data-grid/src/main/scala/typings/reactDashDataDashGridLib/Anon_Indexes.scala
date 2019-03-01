@@ -11,3 +11,18 @@ trait Anon_Indexes extends js.Object {
   var keys: js.UndefOr[Anon_RowKey] = js.undefined
 }
 
+object Anon_Indexes {
+  @scala.inline
+  def apply(
+    indexes: js.Array[scala.Double] = null,
+    isSelectedKey: java.lang.String = null,
+    keys: Anon_RowKey = null
+  ): Anon_Indexes = {
+    val __obj = js.Dynamic.literal()
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
+    if (isSelectedKey != null) __obj.updateDynamic("isSelectedKey")(isSelectedKey)
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    __obj.asInstanceOf[Anon_Indexes]
+  }
+}
+

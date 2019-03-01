@@ -9,3 +9,12 @@ trait Connection extends js.Object {
   var connection: nodeLib.netMod.Socket
 }
 
+object Connection {
+  @scala.inline
+  def apply(connection: nodeLib.netMod.Socket): Connection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connection")(connection)
+    __obj.asInstanceOf[Connection]
+  }
+}
+

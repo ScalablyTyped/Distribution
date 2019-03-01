@@ -16,3 +16,13 @@ trait UpdateNamedRangeRequest extends js.Object {
   var namedRange: js.UndefOr[NamedRange] = js.undefined
 }
 
+object UpdateNamedRangeRequest {
+  @scala.inline
+  def apply(fields: java.lang.String = null, namedRange: NamedRange = null): UpdateNamedRangeRequest = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (namedRange != null) __obj.updateDynamic("namedRange")(namedRange)
+    __obj.asInstanceOf[UpdateNamedRangeRequest]
+  }
+}
+

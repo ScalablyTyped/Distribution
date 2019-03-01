@@ -16,7 +16,8 @@ object jqueryLibStrings {
   sealed trait _TypeEventHandlers extends js.Object
   
   @js.native
-  sealed trait abort extends js.Object
+  sealed trait abort
+    extends jqueryLib.JQueryNs.AjaxNs.ErrorTextStatus
   
   @js.native
   sealed trait array extends js.Object
@@ -43,10 +44,12 @@ object jqueryLibStrings {
   sealed trait dblclick extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends jqueryLib.JQueryNs.AjaxNs.ErrorTextStatus
   
   @js.native
-  sealed trait fast extends js.Object
+  sealed trait fast
+    extends jqueryLib.JQueryNs._Duration
   
   @js.native
   sealed trait focus extends js.Object
@@ -106,10 +109,12 @@ object jqueryLibStrings {
   sealed trait mouseup extends js.Object
   
   @js.native
-  sealed trait nocontent extends js.Object
+  sealed trait nocontent
+    extends jqueryLib.JQueryNs.AjaxNs.SuccessTextStatus
   
   @js.native
-  sealed trait notmodified extends js.Object
+  sealed trait notmodified
+    extends jqueryLib.JQueryNs.AjaxNs.SuccessTextStatus
   
   @js.native
   sealed trait `null` extends js.Object
@@ -121,7 +126,8 @@ object jqueryLibStrings {
   sealed trait `object` extends js.Object
   
   @js.native
-  sealed trait parsererror extends js.Object
+  sealed trait parsererror
+    extends jqueryLib.JQueryNs.AjaxNs.ErrorTextStatus
   
   @js.native
   sealed trait pending extends js.Object
@@ -151,7 +157,8 @@ object jqueryLibStrings {
   sealed trait set extends js.Object
   
   @js.native
-  sealed trait slow extends js.Object
+  sealed trait slow
+    extends jqueryLib.JQueryNs._Duration
   
   @js.native
   sealed trait string extends js.Object
@@ -160,7 +167,8 @@ object jqueryLibStrings {
   sealed trait submit extends js.Object
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends jqueryLib.JQueryNs.AjaxNs.SuccessTextStatus
   
   @js.native
   sealed trait symbol extends js.Object
@@ -169,7 +177,8 @@ object jqueryLibStrings {
   sealed trait text extends js.Object
   
   @js.native
-  sealed trait timeout extends js.Object
+  sealed trait timeout
+    extends jqueryLib.JQueryNs.AjaxNs.ErrorTextStatus
   
   @js.native
   sealed trait top extends js.Object

@@ -40,3 +40,28 @@ trait SeriesLegendData extends js.Object {
   var yHTML: java.lang.String
 }
 
+object SeriesLegendData {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    dashHTML: java.lang.String,
+    isHighlighted: scala.Boolean,
+    isVisible: scala.Boolean,
+    label: java.lang.String,
+    labelHTML: java.lang.String,
+    y: scala.Double,
+    yHTML: java.lang.String
+  ): SeriesLegendData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("dashHTML")(dashHTML)
+    __obj.updateDynamic("isHighlighted")(isHighlighted)
+    __obj.updateDynamic("isVisible")(isVisible)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("labelHTML")(labelHTML)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("yHTML")(yHTML)
+    __obj.asInstanceOf[SeriesLegendData]
+  }
+}
+

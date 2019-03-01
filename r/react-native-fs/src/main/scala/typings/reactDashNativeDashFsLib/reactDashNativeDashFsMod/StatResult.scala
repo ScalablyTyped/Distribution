@@ -24,3 +24,28 @@ trait StatResult extends js.Object {
   def isFile(): scala.Boolean
 }
 
+object StatResult {
+  @scala.inline
+  def apply(
+    ctime: scala.Double,
+    isDirectory: js.Function0[scala.Boolean],
+    isFile: js.Function0[scala.Boolean],
+    mode: scala.Double,
+    mtime: scala.Double,
+    name: java.lang.String,
+    path: java.lang.String,
+    size: java.lang.String
+  ): StatResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ctime")(ctime)
+    __obj.updateDynamic("isDirectory")(isDirectory)
+    __obj.updateDynamic("isFile")(isFile)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("mtime")(mtime)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[StatResult]
+  }
+}
+

@@ -16,3 +16,13 @@ trait AttemptTimeoutOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AttemptTimeoutOptions {
+  @scala.inline
+  def apply(callback: js.Function0[scala.Unit] = null, timeout: scala.Int | scala.Double = null): AttemptTimeoutOptions = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AttemptTimeoutOptions]
+  }
+}
+

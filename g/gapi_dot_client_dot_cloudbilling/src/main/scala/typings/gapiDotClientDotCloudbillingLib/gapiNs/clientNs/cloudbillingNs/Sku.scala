@@ -38,3 +38,26 @@ trait Sku extends js.Object {
   var skuId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Sku {
+  @scala.inline
+  def apply(
+    category: Category = null,
+    description: java.lang.String = null,
+    name: java.lang.String = null,
+    pricingInfo: js.Array[PricingInfo] = null,
+    serviceProviderName: java.lang.String = null,
+    serviceRegions: js.Array[java.lang.String] = null,
+    skuId: java.lang.String = null
+  ): Sku = {
+    val __obj = js.Dynamic.literal()
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pricingInfo != null) __obj.updateDynamic("pricingInfo")(pricingInfo)
+    if (serviceProviderName != null) __obj.updateDynamic("serviceProviderName")(serviceProviderName)
+    if (serviceRegions != null) __obj.updateDynamic("serviceRegions")(serviceRegions)
+    if (skuId != null) __obj.updateDynamic("skuId")(skuId)
+    __obj.asInstanceOf[Sku]
+  }
+}
+

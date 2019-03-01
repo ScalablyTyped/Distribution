@@ -14,3 +14,12 @@ trait GcsData extends js.Object {
   var bucketName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GcsData {
+  @scala.inline
+  def apply(bucketName: java.lang.String = null): GcsData = {
+    val __obj = js.Dynamic.literal()
+    if (bucketName != null) __obj.updateDynamic("bucketName")(bucketName)
+    __obj.asInstanceOf[GcsData]
+  }
+}
+

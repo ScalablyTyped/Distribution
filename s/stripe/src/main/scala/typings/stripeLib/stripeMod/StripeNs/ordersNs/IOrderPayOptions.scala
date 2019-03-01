@@ -36,3 +36,26 @@ trait IOrderPayOptions
   var source: js.UndefOr[stripeLib.stripeMod.StripeNs.sourcesNs.ISourceCreationOptions] = js.undefined
 }
 
+object IOrderPayOptions {
+  @scala.inline
+  def apply(
+    application_fee: scala.Int | scala.Double = null,
+    customer: java.lang.String = null,
+    email: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    source: stripeLib.stripeMod.StripeNs.sourcesNs.ISourceCreationOptions = null
+  ): IOrderPayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
+    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IOrderPayOptions]
+  }
+}
+

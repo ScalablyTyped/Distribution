@@ -10,3 +10,13 @@ trait PromisifyOptions extends js.Object {
   var multiArgs: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PromisifyOptions {
+  @scala.inline
+  def apply(context: js.Any = null, multiArgs: js.UndefOr[scala.Boolean] = js.undefined): PromisifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs)
+    __obj.asInstanceOf[PromisifyOptions]
+  }
+}
+

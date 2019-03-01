@@ -20,3 +20,14 @@ trait Map extends js.Object {
   var editable: scala.Boolean
 }
 
+object Map {
+  @scala.inline
+  def apply(editOptions: EditOptions, editTools: Editable, editable: scala.Boolean): Map = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editOptions")(editOptions)
+    __obj.updateDynamic("editTools")(editTools)
+    __obj.updateDynamic("editable")(editable)
+    __obj.asInstanceOf[Map]
+  }
+}
+

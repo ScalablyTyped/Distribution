@@ -20,3 +20,14 @@ trait ApiResourceVersion extends js.Object {
   var resourceVersion: scala.Double
 }
 
+object ApiResourceVersion {
+  @scala.inline
+  def apply(apiVersion: java.lang.String, isPreview: scala.Boolean, resourceVersion: scala.Double): ApiResourceVersion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("isPreview")(isPreview)
+    __obj.updateDynamic("resourceVersion")(resourceVersion)
+    __obj.asInstanceOf[ApiResourceVersion]
+  }
+}
+

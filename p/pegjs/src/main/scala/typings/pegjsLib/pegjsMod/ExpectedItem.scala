@@ -11,3 +11,13 @@ trait ExpectedItem extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ExpectedItem {
+  @scala.inline
+  def apply(description: java.lang.String, `type`: java.lang.String, value: java.lang.String = null): ExpectedItem = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("description")(description)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ExpectedItem]
+  }
+}
+

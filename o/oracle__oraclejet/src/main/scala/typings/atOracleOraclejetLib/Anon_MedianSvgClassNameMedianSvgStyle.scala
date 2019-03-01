@@ -20,3 +20,36 @@ trait Anon_MedianSvgClassNameMedianSvgStyle extends js.Object {
   var whiskerSvgStyle: js.UndefOr[js.Object] = js.undefined
 }
 
+object Anon_MedianSvgClassNameMedianSvgStyle {
+  @scala.inline
+  def apply(
+    medianSvgClassName: java.lang.String = null,
+    medianSvgStyle: js.Object = null,
+    q2Color: java.lang.String = null,
+    q2SvgClassName: java.lang.String = null,
+    q2SvgStyle: js.Object = null,
+    q3SvgClassName: java.lang.String = null,
+    q3SvgStyle: js.Object = null,
+    whiskerEndLength: java.lang.String = null,
+    whiskerEndSvgClassName: java.lang.String = null,
+    whiskerEndSvgStyle: js.Object = null,
+    whiskerSvgClassName: java.lang.String = null,
+    whiskerSvgStyle: js.Object = null
+  ): Anon_MedianSvgClassNameMedianSvgStyle = {
+    val __obj = js.Dynamic.literal()
+    if (medianSvgClassName != null) __obj.updateDynamic("medianSvgClassName")(medianSvgClassName)
+    if (medianSvgStyle != null) __obj.updateDynamic("medianSvgStyle")(medianSvgStyle)
+    if (q2Color != null) __obj.updateDynamic("q2Color")(q2Color)
+    if (q2SvgClassName != null) __obj.updateDynamic("q2SvgClassName")(q2SvgClassName)
+    if (q2SvgStyle != null) __obj.updateDynamic("q2SvgStyle")(q2SvgStyle)
+    if (q3SvgClassName != null) __obj.updateDynamic("q3SvgClassName")(q3SvgClassName)
+    if (q3SvgStyle != null) __obj.updateDynamic("q3SvgStyle")(q3SvgStyle)
+    if (whiskerEndLength != null) __obj.updateDynamic("whiskerEndLength")(whiskerEndLength)
+    if (whiskerEndSvgClassName != null) __obj.updateDynamic("whiskerEndSvgClassName")(whiskerEndSvgClassName)
+    if (whiskerEndSvgStyle != null) __obj.updateDynamic("whiskerEndSvgStyle")(whiskerEndSvgStyle)
+    if (whiskerSvgClassName != null) __obj.updateDynamic("whiskerSvgClassName")(whiskerSvgClassName)
+    if (whiskerSvgStyle != null) __obj.updateDynamic("whiskerSvgStyle")(whiskerSvgStyle)
+    __obj.asInstanceOf[Anon_MedianSvgClassNameMedianSvgStyle]
+  }
+}
+

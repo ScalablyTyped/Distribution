@@ -36,3 +36,22 @@ trait ASPxClientAppointmentDragInfo extends js.Object {
   var oldResources: js.Array[java.lang.String]
 }
 
+object ASPxClientAppointmentDragInfo {
+  @scala.inline
+  def apply(
+    appointmentId: java.lang.String,
+    newInterval: ASPxClientTimeInterval,
+    newResources: js.Array[java.lang.String],
+    oldInterval: ASPxClientTimeInterval,
+    oldResources: js.Array[java.lang.String]
+  ): ASPxClientAppointmentDragInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appointmentId")(appointmentId)
+    __obj.updateDynamic("newInterval")(newInterval)
+    __obj.updateDynamic("newResources")(newResources)
+    __obj.updateDynamic("oldInterval")(oldInterval)
+    __obj.updateDynamic("oldResources")(oldResources)
+    __obj.asInstanceOf[ASPxClientAppointmentDragInfo]
+  }
+}
+

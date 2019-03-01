@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when chat session state updated
 		*/
-trait ChatRoomStateUpdate extends js.Object {
+trait ChatRoomStateUpdate
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantIMEvent {
   /**
   			* User id
   			*/
@@ -25,5 +26,22 @@ trait ChatRoomStateUpdate extends js.Object {
   			* Current chat session state
   			*/
   var state: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatStateType
+}
+
+object ChatRoomStateUpdate {
+  @scala.inline
+  def apply(
+    from: java.lang.String,
+    resource: java.lang.String,
+    room: java.lang.String,
+    state: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.ChatStateType
+  ): ChatRoomStateUpdate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("resource")(resource)
+    __obj.updateDynamic("room")(room)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ChatRoomStateUpdate]
+  }
 }
 

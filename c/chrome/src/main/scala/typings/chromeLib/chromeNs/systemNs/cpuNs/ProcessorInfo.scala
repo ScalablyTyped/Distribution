@@ -10,3 +10,12 @@ trait ProcessorInfo extends js.Object {
   var usage: ProcessorUsage
 }
 
+object ProcessorInfo {
+  @scala.inline
+  def apply(usage: ProcessorUsage): ProcessorInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("usage")(usage)
+    __obj.asInstanceOf[ProcessorInfo]
+  }
+}
+

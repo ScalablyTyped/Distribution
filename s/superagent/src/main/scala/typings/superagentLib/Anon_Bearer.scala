@@ -9,3 +9,12 @@ trait Anon_Bearer extends js.Object {
   var `type`: superagentLib.superagentLibStrings.bearer
 }
 
+object Anon_Bearer {
+  @scala.inline
+  def apply(`type`: superagentLib.superagentLibStrings.bearer): Anon_Bearer = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Bearer]
+  }
+}
+

@@ -13,3 +13,22 @@ trait PicklistEntry extends js.Object {
   var value: java.lang.String
 }
 
+object PicklistEntry {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    defaultValue: scala.Boolean,
+    value: java.lang.String,
+    label: maybe[java.lang.String] = null,
+    validFor: maybe[java.lang.String] = null
+  ): PicklistEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("defaultValue")(defaultValue)
+    __obj.updateDynamic("value")(value)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (validFor != null) __obj.updateDynamic("validFor")(validFor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PicklistEntry]
+  }
+}
+

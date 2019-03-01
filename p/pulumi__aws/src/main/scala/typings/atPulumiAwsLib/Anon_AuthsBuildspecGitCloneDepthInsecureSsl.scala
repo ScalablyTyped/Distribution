@@ -17,3 +17,25 @@ trait Anon_AuthsBuildspecGitCloneDepthInsecureSsl extends js.Object {
   var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_AuthsBuildspecGitCloneDepthInsecureSsl {
+  @scala.inline
+  def apply(
+    `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    auths: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_ResourceType]]] = null,
+    buildspec: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    gitCloneDepth: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    insecureSsl: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    location: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    reportBuildStatus: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): Anon_AuthsBuildspecGitCloneDepthInsecureSsl = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (auths != null) __obj.updateDynamic("auths")(auths.asInstanceOf[js.Any])
+    if (buildspec != null) __obj.updateDynamic("buildspec")(buildspec.asInstanceOf[js.Any])
+    if (gitCloneDepth != null) __obj.updateDynamic("gitCloneDepth")(gitCloneDepth.asInstanceOf[js.Any])
+    if (insecureSsl != null) __obj.updateDynamic("insecureSsl")(insecureSsl.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (reportBuildStatus != null) __obj.updateDynamic("reportBuildStatus")(reportBuildStatus.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AuthsBuildspecGitCloneDepthInsecureSsl]
+  }
+}
+

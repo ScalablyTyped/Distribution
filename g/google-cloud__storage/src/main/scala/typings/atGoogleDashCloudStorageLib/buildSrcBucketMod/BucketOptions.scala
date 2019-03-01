@@ -9,3 +9,12 @@ trait BucketOptions extends js.Object {
   var userProject: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BucketOptions {
+  @scala.inline
+  def apply(userProject: java.lang.String = null): BucketOptions = {
+    val __obj = js.Dynamic.literal()
+    if (userProject != null) __obj.updateDynamic("userProject")(userProject)
+    __obj.asInstanceOf[BucketOptions]
+  }
+}
+

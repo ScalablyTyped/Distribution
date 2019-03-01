@@ -15,3 +15,30 @@ trait MenuOptions extends MenuEvents {
   var role: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MenuOptions {
+  @scala.inline
+  def apply(
+    blur: MenuEvent = null,
+    create: MenuEvent = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: MenuEvent = null,
+    icons: js.Any = null,
+    menus: java.lang.String = null,
+    position: js.Any = null,
+    role: java.lang.String = null,
+    select: MenuEvent = null
+  ): MenuOptions = {
+    val __obj = js.Dynamic.literal()
+    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (menus != null) __obj.updateDynamic("menus")(menus)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (select != null) __obj.updateDynamic("select")(select)
+    __obj.asInstanceOf[MenuOptions]
+  }
+}
+

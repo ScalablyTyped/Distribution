@@ -36,3 +36,44 @@ trait ContactGroupsResource extends js.Object {
   def update(request: gapiDotClientDotPeopleLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ContactGroup]
 }
 
+object ContactGroupsResource {
+  @scala.inline
+  def apply(
+    batchGet: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchGetContactGroupsResponse]
+    ],
+    create: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ContactGroup]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ContactGroup]
+    ],
+    list: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListContactGroupsResponse]
+    ],
+    members: MembersResource,
+    update: js.Function1[
+      gapiDotClientDotPeopleLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ContactGroup]
+    ]
+  ): ContactGroupsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("batchGet")(batchGet)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("members")(members)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ContactGroupsResource]
+  }
+}
+

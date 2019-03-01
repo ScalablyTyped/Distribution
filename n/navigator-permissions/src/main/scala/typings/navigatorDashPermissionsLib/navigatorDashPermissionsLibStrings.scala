@@ -7,61 +7,80 @@ import scala.scalajs.js.annotation._
 
 object navigatorDashPermissionsLibStrings {
   @js.native
-  sealed trait accelerometer extends js.Object
+  sealed trait accelerometer
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait `accessibility-events` extends js.Object
+  sealed trait `accessibility-events`
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait `ambient-light-sensor` extends js.Object
+  sealed trait `ambient-light-sensor`
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait `background-sync` extends js.Object
+  sealed trait `background-sync`
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait `clipboard-read` extends js.Object
+  sealed trait `clipboard-read`
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait `clipboard-write` extends js.Object
+  sealed trait `clipboard-write`
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait denied extends js.Object
+  sealed trait denied
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionState
   
   @js.native
-  sealed trait geolocation extends js.Object
+  sealed trait geolocation
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait granted extends js.Object
+  sealed trait granted
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionState
   
   @js.native
-  sealed trait gyroscope extends js.Object
+  sealed trait gyroscope
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait magnetometer extends js.Object
+  sealed trait magnetometer
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait microphone extends js.Object
+  sealed trait microphone
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait midi extends js.Object
+  sealed trait midi
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait notifications extends js.Object
+  sealed trait notifications
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait `payment-handler` extends js.Object
+  sealed trait `payment-handler`
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait `persistent-storage` extends js.Object
+  sealed trait `persistent-storage`
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @js.native
-  sealed trait prompt extends js.Object
+  sealed trait prompt
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionState
   
   @js.native
-  sealed trait push extends js.Object
+  sealed trait push
+    extends navigatorDashPermissionsLib.NavigatorPermissionsNs.PermissionName
   
   @scala.inline
   def accelerometer: accelerometer = "accelerometer".asInstanceOf[accelerometer]

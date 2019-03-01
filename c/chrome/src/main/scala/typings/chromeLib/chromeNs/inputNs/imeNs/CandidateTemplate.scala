@@ -32,3 +32,24 @@ trait CandidateTemplate extends js.Object {
   var usage: js.UndefOr[CandidateUsage] = js.undefined
 }
 
+object CandidateTemplate {
+  @scala.inline
+  def apply(
+    candidate: java.lang.String,
+    id: scala.Double,
+    annotation: java.lang.String = null,
+    label: java.lang.String = null,
+    parentId: scala.Int | scala.Double = null,
+    usage: CandidateUsage = null
+  ): CandidateTemplate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("candidate")(candidate)
+    __obj.updateDynamic("id")(id)
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId.asInstanceOf[js.Any])
+    if (usage != null) __obj.updateDynamic("usage")(usage)
+    __obj.asInstanceOf[CandidateTemplate]
+  }
+}
+

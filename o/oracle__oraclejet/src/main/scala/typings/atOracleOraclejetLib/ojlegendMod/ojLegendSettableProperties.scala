@@ -27,3 +27,48 @@ trait ojLegendSettableProperties[K, D]
   var valign: atOracleOraclejetLib.atOracleOraclejetLibStrings.middle | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.top
 }
 
+object ojLegendSettableProperties {
+  @scala.inline
+  def apply[K, D](
+    as: java.lang.String,
+    drilling: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    halign: atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.start,
+    hiddenCategories: js.Array[java.lang.String],
+    hideAndShowBehavior: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    highlightedCategories: js.Array[java.lang.String],
+    hoverBehavior: atOracleOraclejetLib.atOracleOraclejetLibStrings.dim | atOracleOraclejetLib.atOracleOraclejetLibStrings.none,
+    hoverBehaviorDelay: scala.Double,
+    orientation: atOracleOraclejetLib.atOracleOraclejetLibStrings.horizontal | atOracleOraclejetLib.atOracleOraclejetLibStrings.vertical,
+    scrolling: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.asNeeded,
+    symbolHeight: scala.Double,
+    symbolWidth: scala.Double,
+    trackResize: atOracleOraclejetLib.atOracleOraclejetLibStrings.on | atOracleOraclejetLib.atOracleOraclejetLibStrings.off,
+    translations: atOracleOraclejetLib.Anon_ComponentNameLabelAndValue,
+    valign: atOracleOraclejetLib.atOracleOraclejetLibStrings.middle | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.top,
+    data: atOracleOraclejetLib.ojdataproviderMod.DataProvider[K, D] = null,
+    expanded: atOracleOraclejetLib.ojkeysetMod.KeySet[K] = null,
+    textStyle: js.Object = null
+  ): ojLegendSettableProperties[K, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("as")(as)
+    __obj.updateDynamic("drilling")(drilling.asInstanceOf[js.Any])
+    __obj.updateDynamic("halign")(halign.asInstanceOf[js.Any])
+    __obj.updateDynamic("hiddenCategories")(hiddenCategories)
+    __obj.updateDynamic("hideAndShowBehavior")(hideAndShowBehavior.asInstanceOf[js.Any])
+    __obj.updateDynamic("highlightedCategories")(highlightedCategories)
+    __obj.updateDynamic("hoverBehavior")(hoverBehavior.asInstanceOf[js.Any])
+    __obj.updateDynamic("hoverBehaviorDelay")(hoverBehaviorDelay)
+    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    __obj.updateDynamic("scrolling")(scrolling.asInstanceOf[js.Any])
+    __obj.updateDynamic("symbolHeight")(symbolHeight)
+    __obj.updateDynamic("symbolWidth")(symbolWidth)
+    __obj.updateDynamic("trackResize")(trackResize.asInstanceOf[js.Any])
+    __obj.updateDynamic("translations")(translations)
+    __obj.updateDynamic("valign")(valign.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle)
+    __obj.asInstanceOf[ojLegendSettableProperties[K, D]]
+  }
+}
+

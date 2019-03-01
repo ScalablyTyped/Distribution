@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonBehaviors extends js.Object {
   var enumValues: Anon_Behaviors
 }
 
+object Anon_EnumValuesAnonBehaviors {
+  @scala.inline
+  def apply(enumValues: Anon_Behaviors): Anon_EnumValuesAnonBehaviors = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonBehaviors]
+  }
+}
+

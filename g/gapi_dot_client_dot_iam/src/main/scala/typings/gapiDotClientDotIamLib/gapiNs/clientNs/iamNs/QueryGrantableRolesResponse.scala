@@ -15,3 +15,13 @@ trait QueryGrantableRolesResponse extends js.Object {
   var roles: js.UndefOr[js.Array[Role]] = js.undefined
 }
 
+object QueryGrantableRolesResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, roles: js.Array[Role] = null): QueryGrantableRolesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (roles != null) __obj.updateDynamic("roles")(roles)
+    __obj.asInstanceOf[QueryGrantableRolesResponse]
+  }
+}
+

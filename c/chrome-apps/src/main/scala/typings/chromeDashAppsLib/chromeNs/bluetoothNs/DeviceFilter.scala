@@ -15,3 +15,16 @@ trait DeviceFilter extends js.Object {
   var limit: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object DeviceFilter {
+  @scala.inline
+  def apply(
+    filterType: DeviceFilterType = null,
+    limit: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): DeviceFilter = {
+    val __obj = js.Dynamic.literal()
+    if (filterType != null) __obj.updateDynamic("filterType")(filterType)
+    if (!js.isUndefined(limit)) __obj.updateDynamic("limit")(limit)
+    __obj.asInstanceOf[DeviceFilter]
+  }
+}
+

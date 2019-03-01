@@ -16,3 +16,16 @@ trait RangeSelectionEvent
   var RangeDescriptor: java.lang.String
 }
 
+object RangeSelectionEvent {
+  @scala.inline
+  def apply(
+    RangeDescriptor: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): RangeSelectionEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RangeDescriptor")(RangeDescriptor)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[RangeSelectionEvent]
+  }
+}
+

@@ -29,3 +29,26 @@ trait Anon_CompleteDuration extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_CompleteDuration {
+  @scala.inline
+  def apply(
+    complete: js.Function0[scala.Unit] = null,
+    duration: scala.Int | scala.Double = null,
+    fail: js.Function0[scala.Unit] = null,
+    icon: wegameDashApiLib.wegameDashApiLibStrings.success | wegameDashApiLib.wegameDashApiLibStrings.loading = null,
+    image: java.lang.String = null,
+    success: js.Function0[scala.Unit] = null,
+    title: java.lang.String = null
+  ): Anon_CompleteDuration = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_CompleteDuration]
+  }
+}
+

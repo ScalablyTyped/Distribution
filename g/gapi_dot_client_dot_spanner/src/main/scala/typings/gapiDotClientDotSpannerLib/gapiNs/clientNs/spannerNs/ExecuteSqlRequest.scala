@@ -57,3 +57,24 @@ trait ExecuteSqlRequest extends js.Object {
   var transaction: js.UndefOr[TransactionSelector] = js.undefined
 }
 
+object ExecuteSqlRequest {
+  @scala.inline
+  def apply(
+    paramTypes: stdLib.Record[java.lang.String, Type] = null,
+    params: stdLib.Record[java.lang.String, _] = null,
+    queryMode: java.lang.String = null,
+    resumeToken: java.lang.String = null,
+    sql: java.lang.String = null,
+    transaction: TransactionSelector = null
+  ): ExecuteSqlRequest = {
+    val __obj = js.Dynamic.literal()
+    if (paramTypes != null) __obj.updateDynamic("paramTypes")(paramTypes)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (queryMode != null) __obj.updateDynamic("queryMode")(queryMode)
+    if (resumeToken != null) __obj.updateDynamic("resumeToken")(resumeToken)
+    if (sql != null) __obj.updateDynamic("sql")(sql)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[ExecuteSqlRequest]
+  }
+}
+

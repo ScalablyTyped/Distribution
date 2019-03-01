@@ -52,3 +52,26 @@ trait XVisualObject
   def setVisualAreaSize(nAspect: scala.Double, aSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size): scala.Unit
 }
 
+object XVisualObject {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getMapUnit: js.Function1[scala.Double, scala.Double],
+    getPreferredVisualRepresentation: js.Function1[scala.Double, VisualRepresentation],
+    getVisualAreaSize: js.Function1[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setVisualAreaSize: js.Function2[scala.Double, activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
+  ): XVisualObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMapUnit")(getMapUnit)
+    __obj.updateDynamic("getPreferredVisualRepresentation")(getPreferredVisualRepresentation)
+    __obj.updateDynamic("getVisualAreaSize")(getVisualAreaSize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setVisualAreaSize")(setVisualAreaSize)
+    __obj.asInstanceOf[XVisualObject]
+  }
+}
+

@@ -16,3 +16,20 @@ trait ProjectReference extends js.Object {
   var prepend: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ProjectReference {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    circular: js.UndefOr[scala.Boolean] = js.undefined,
+    originalPath: java.lang.String = null,
+    prepend: js.UndefOr[scala.Boolean] = js.undefined
+  ): ProjectReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(circular)) __obj.updateDynamic("circular")(circular)
+    if (originalPath != null) __obj.updateDynamic("originalPath")(originalPath)
+    if (!js.isUndefined(prepend)) __obj.updateDynamic("prepend")(prepend)
+    __obj.asInstanceOf[ProjectReference]
+  }
+}
+

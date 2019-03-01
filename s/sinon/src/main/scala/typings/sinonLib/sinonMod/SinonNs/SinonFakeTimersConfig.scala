@@ -11,3 +11,18 @@ trait SinonFakeTimersConfig extends js.Object {
   var toFake: js.Array[java.lang.String]
 }
 
+object SinonFakeTimersConfig {
+  @scala.inline
+  def apply(
+    now: scala.Double | stdLib.Date,
+    shouldAdvanceTime: scala.Boolean,
+    toFake: js.Array[java.lang.String]
+  ): SinonFakeTimersConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("now")(now.asInstanceOf[js.Any])
+    __obj.updateDynamic("shouldAdvanceTime")(shouldAdvanceTime)
+    __obj.updateDynamic("toFake")(toFake)
+    __obj.asInstanceOf[SinonFakeTimersConfig]
+  }
+}
+

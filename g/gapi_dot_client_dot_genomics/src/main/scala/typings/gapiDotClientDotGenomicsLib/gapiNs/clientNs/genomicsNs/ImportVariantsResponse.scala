@@ -10,3 +10,12 @@ trait ImportVariantsResponse extends js.Object {
   var callSetIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ImportVariantsResponse {
+  @scala.inline
+  def apply(callSetIds: js.Array[java.lang.String] = null): ImportVariantsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (callSetIds != null) __obj.updateDynamic("callSetIds")(callSetIds)
+    __obj.asInstanceOf[ImportVariantsResponse]
+  }
+}
+

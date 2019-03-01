@@ -10,3 +10,13 @@ trait Anon_XYBoolean extends js.Object {
   var y: scala.Boolean
 }
 
+object Anon_XYBoolean {
+  @scala.inline
+  def apply(x: scala.Boolean, y: scala.Boolean): Anon_XYBoolean = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Anon_XYBoolean]
+  }
+}
+

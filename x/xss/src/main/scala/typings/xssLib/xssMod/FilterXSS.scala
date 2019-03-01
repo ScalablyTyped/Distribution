@@ -94,3 +94,12 @@ trait filterXSS extends js.Object {
   def unescapeQuote(str: java.lang.String): java.lang.String = js.native
 }
 
+object FilterXSS {
+  @scala.inline
+  def apply(process: js.Function1[java.lang.String, java.lang.String]): FilterXSS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("process")(process)
+    __obj.asInstanceOf[FilterXSS]
+  }
+}
+

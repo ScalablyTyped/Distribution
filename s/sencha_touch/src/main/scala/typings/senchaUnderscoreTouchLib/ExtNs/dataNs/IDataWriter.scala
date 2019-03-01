@@ -39,3 +39,62 @@ trait IDataWriter
   var writeAllFields: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IDataWriter {
+  @scala.inline
+  def apply(
+    alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    destroy: js.Function0[scala.Unit] = null,
+    extend: java.lang.String = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getNameProperty: js.Function0[java.lang.String] = null,
+    getRecordData: js.Function1[/* record */ js.UndefOr[js.Any], _] = null,
+    getWriteAllFields: js.Function0[scala.Boolean] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    mixins: js.Any = null,
+    nameProperty: java.lang.String = null,
+    platformConfig: js.Any = null,
+    self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
+    setNameProperty: js.Function1[/* nameProperty */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setWriteAllFields: js.Function1[/* writeAllFields */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    uses: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    write: js.Function1[/* request */ js.UndefOr[IRequest], IRequest] = null,
+    writeAllFields: js.UndefOr[scala.Boolean] = js.undefined
+  ): IDataWriter = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getNameProperty != null) __obj.updateDynamic("getNameProperty")(getNameProperty)
+    if (getRecordData != null) __obj.updateDynamic("getRecordData")(getRecordData)
+    if (getWriteAllFields != null) __obj.updateDynamic("getWriteAllFields")(getWriteAllFields)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (nameProperty != null) __obj.updateDynamic("nameProperty")(nameProperty)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (setNameProperty != null) __obj.updateDynamic("setNameProperty")(setNameProperty)
+    if (setWriteAllFields != null) __obj.updateDynamic("setWriteAllFields")(setWriteAllFields)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    if (write != null) __obj.updateDynamic("write")(write)
+    if (!js.isUndefined(writeAllFields)) __obj.updateDynamic("writeAllFields")(writeAllFields)
+    __obj.asInstanceOf[IDataWriter]
+  }
+}
+

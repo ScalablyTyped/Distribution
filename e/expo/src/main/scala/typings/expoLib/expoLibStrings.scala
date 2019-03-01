@@ -67,7 +67,8 @@ object expoLibStrings {
   sealed trait Qclp extends js.Object
   
   @js.native
-  sealed trait SMS extends js.Object
+  sealed trait SMS
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
   sealed trait Videos extends js.Object
@@ -115,7 +116,8 @@ object expoLibStrings {
   sealed trait alaw extends js.Object
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends expoLib.expoMod.FacebookAdsNs.MediaCachePolicy
   
   @js.native
   sealed trait always extends js.Object
@@ -361,16 +363,19 @@ object expoLibStrings {
   sealed trait androidDOTsettingsDOTZEN_MODE_SETTINGS extends js.Object
   
   @js.native
-  sealed trait audioRecording extends js.Object
+  sealed trait audioRecording
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
   sealed trait back extends js.Object
   
   @js.native
-  sealed trait banner extends js.Object
+  sealed trait banner
+    extends expoLib.expoMod.AdMobBannerSize
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends expoLib.expoMod.FileSystemNs.EncodingType
   
   @js.native
   sealed trait birthday extends js.Object
@@ -385,13 +390,16 @@ object expoLibStrings {
   sealed trait cac3 extends js.Object
   
   @js.native
-  sealed trait calendar extends js.Object
+  sealed trait calendar
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
-  sealed trait cameraRoll extends js.Object
+  sealed trait cameraRoll
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
   sealed trait cancel extends js.Object
@@ -421,7 +429,8 @@ object expoLibStrings {
   sealed trait contactType extends js.Object
   
   @js.native
-  sealed trait contacts extends js.Object
+  sealed trait contacts
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
   sealed trait contain extends js.Object
@@ -445,13 +454,15 @@ object expoLibStrings {
   sealed trait day extends js.Object
   
   @js.native
-  sealed trait debug extends js.Object
+  sealed trait debug
+    extends expoLib.expoMod.FacebookAdsNs.AdSettingsNs.SDKLogLevel
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait denied extends js.Object
+  sealed trait denied
+    extends expoLib.expoMod.PermissionsNs.PermissionStatus
   
   @js.native
   sealed trait department extends js.Object
@@ -475,7 +486,8 @@ object expoLibStrings {
   sealed trait emails extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends expoLib.expoMod.FacebookAdsNs.AdSettingsNs.SDKLogLevel
   
   @js.native
   sealed trait evenodd extends js.Object
@@ -499,10 +511,12 @@ object expoLibStrings {
   sealed trait front extends js.Object
   
   @js.native
-  sealed trait fullBanner extends js.Object
+  sealed trait fullBanner
+    extends expoLib.expoMod.AdMobBannerSize
   
   @js.native
-  sealed trait granted extends js.Object
+  sealed trait granted
+    extends expoLib.expoMod.PermissionsNs.PermissionStatus
   
   @js.native
   sealed trait gregorian extends js.Object
@@ -520,7 +534,8 @@ object expoLibStrings {
   sealed trait hvxc extends js.Object
   
   @js.native
-  sealed trait icon extends js.Object
+  sealed trait icon
+    extends expoLib.expoMod.FacebookAdsNs.MediaCachePolicy
   
   @js.native
   sealed trait id extends js.Object
@@ -532,7 +547,8 @@ object expoLibStrings {
   sealed trait ima4 extends js.Object
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends expoLib.expoMod.FacebookAdsNs.MediaCachePolicy
   
   @js.native
   sealed trait imageAvailable extends js.Object
@@ -541,19 +557,24 @@ object expoLibStrings {
   sealed trait instantMessageAddresses extends js.Object
   
   @js.native
-  sealed trait interstitialDidClose extends js.Object
+  sealed trait interstitialDidClose
+    extends expoLib.expoMod.AdMobInterstitialEmptyEvent
   
   @js.native
-  sealed trait interstitialDidFailToLoad extends js.Object
+  sealed trait interstitialDidFailToLoad
+    extends expoLib.expoMod.AdMobInterstitialEvent
   
   @js.native
-  sealed trait interstitialDidLoad extends js.Object
+  sealed trait interstitialDidLoad
+    extends expoLib.expoMod.AdMobInterstitialEmptyEvent
   
   @js.native
-  sealed trait interstitialDidOpen extends js.Object
+  sealed trait interstitialDidOpen
+    extends expoLib.expoMod.AdMobInterstitialEmptyEvent
   
   @js.native
-  sealed trait interstitialWillLeaveApplication extends js.Object
+  sealed trait interstitialWillLeaveApplication
+    extends expoLib.expoMod.AdMobInterstitialEmptyEvent
   
   @js.native
   sealed trait islamic extends js.Object
@@ -568,19 +589,23 @@ object expoLibStrings {
   sealed trait jpg extends js.Object
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape
+    extends expoLib.expoMod.Orientation
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait large
+    extends expoLib.expoMod.FacebookAdsNs.AdType
   
   @js.native
-  sealed trait largeBanner extends js.Object
+  sealed trait largeBanner
+    extends expoLib.expoMod.AdMobBannerSize
   
   @js.native
   sealed trait lastName extends js.Object
   
   @js.native
-  sealed trait leaderboard extends js.Object
+  sealed trait leaderboard
+    extends expoLib.expoMod.AdMobBannerSize
   
   @js.native
   sealed trait light extends js.Object
@@ -592,7 +617,8 @@ object expoLibStrings {
   sealed trait local extends js.Object
   
   @js.native
-  sealed trait location extends js.Object
+  sealed trait location
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
   sealed trait lpcm extends js.Object
@@ -601,7 +627,8 @@ object expoLibStrings {
   sealed trait maidenName extends js.Object
   
   @js.native
-  sealed trait mediumRectangle extends js.Object
+  sealed trait mediumRectangle
+    extends expoLib.expoMod.AdMobBannerSize
   
   @js.native
   sealed trait middleName extends js.Object
@@ -640,7 +667,9 @@ object expoLibStrings {
   sealed trait nonGregorianBirthday extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends expoLib.expoMod.FacebookAdsNs.MediaCachePolicy
+       with expoLib.expoMod.FacebookAdsNs.AdSettingsNs.SDKLogLevel
   
   @js.native
   sealed trait nonzero extends js.Object
@@ -649,10 +678,12 @@ object expoLibStrings {
   sealed trait note extends js.Object
   
   @js.native
-  sealed trait notification extends js.Object
+  sealed trait notification
+    extends expoLib.expoMod.FacebookAdsNs.AdSettingsNs.SDKLogLevel
   
   @js.native
-  sealed trait notifications extends js.Object
+  sealed trait notifications
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
   sealed trait off extends js.Object
@@ -679,7 +710,8 @@ object expoLibStrings {
   sealed trait png extends js.Object
   
   @js.native
-  sealed trait portrait extends js.Object
+  sealed trait portrait
+    extends expoLib.expoMod.Orientation
   
   @js.native
   sealed trait public extends js.Object
@@ -694,34 +726,43 @@ object expoLibStrings {
   sealed trait received extends js.Object
   
   @js.native
-  sealed trait rectangle extends js.Object
+  sealed trait rectangle
+    extends expoLib.expoMod.FacebookAdsNs.AdType
   
   @js.native
   sealed trait relationships extends js.Object
   
   @js.native
-  sealed trait reminders extends js.Object
+  sealed trait reminders
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
-  sealed trait rewardedVideoDidClose extends js.Object
+  sealed trait rewardedVideoDidClose
+    extends expoLib.expoMod.AdMobRewardedEmptyEvent
   
   @js.native
-  sealed trait rewardedVideoDidFailToLoad extends js.Object
+  sealed trait rewardedVideoDidFailToLoad
+    extends expoLib.expoMod.AdMobRewardedEvent
   
   @js.native
-  sealed trait rewardedVideoDidLoad extends js.Object
+  sealed trait rewardedVideoDidLoad
+    extends expoLib.expoMod.AdMobRewardedEmptyEvent
   
   @js.native
-  sealed trait rewardedVideoDidOpen extends js.Object
+  sealed trait rewardedVideoDidOpen
+    extends expoLib.expoMod.AdMobRewardedEmptyEvent
   
   @js.native
-  sealed trait rewardedVideoDidRewardUser extends js.Object
+  sealed trait rewardedVideoDidRewardUser
+    extends expoLib.expoMod.AdMobRewardedEvent
   
   @js.native
-  sealed trait rewardedVideoDidStart extends js.Object
+  sealed trait rewardedVideoDidStart
+    extends expoLib.expoMod.AdMobRewardedEmptyEvent
   
   @js.native
-  sealed trait rewardedVideoWillLeaveApplication extends js.Object
+  sealed trait rewardedVideoWillLeaveApplication
+    extends expoLib.expoMod.AdMobRewardedEmptyEvent
   
   @js.native
   sealed trait samr extends js.Object
@@ -739,10 +780,12 @@ object expoLibStrings {
   sealed trait sent extends js.Object
   
   @js.native
-  sealed trait smartBannerLandscape extends js.Object
+  sealed trait smartBannerLandscape
+    extends expoLib.expoMod.AdMobBannerSize
   
   @js.native
-  sealed trait smartBannerPortrait extends js.Object
+  sealed trait smartBannerPortrait
+    extends expoLib.expoMod.AdMobBannerSize
   
   @js.native
   sealed trait socialProfiles extends js.Object
@@ -751,7 +794,8 @@ object expoLibStrings {
   sealed trait standalone extends js.Object
   
   @js.native
-  sealed trait standard extends js.Object
+  sealed trait standard
+    extends expoLib.expoMod.FacebookAdsNs.AdType
   
   @js.native
   sealed trait stretch extends js.Object
@@ -763,7 +807,8 @@ object expoLibStrings {
   sealed trait system extends js.Object
   
   @js.native
-  sealed trait systemBrightness extends js.Object
+  sealed trait systemBrightness
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
   sealed trait tmpfile extends js.Object
@@ -778,7 +823,8 @@ object expoLibStrings {
   sealed trait unassigned extends js.Object
   
   @js.native
-  sealed trait undetermined extends js.Object
+  sealed trait undetermined
+    extends expoLib.expoMod.PermissionsNs.PermissionStatus
   
   @js.native
   sealed trait unknown extends js.Object
@@ -793,19 +839,23 @@ object expoLibStrings {
   sealed trait userDefault extends js.Object
   
   @js.native
-  sealed trait userFacingNotifications extends js.Object
+  sealed trait userFacingNotifications
+    extends expoLib.expoMod.PermissionsNs.PermissionType
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends expoLib.expoMod.FileSystemNs.EncodingType
   
   @js.native
-  sealed trait verbose extends js.Object
+  sealed trait verbose
+    extends expoLib.expoMod.FacebookAdsNs.AdSettingsNs.SDKLogLevel
   
   @js.native
   sealed trait video extends js.Object
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends expoLib.expoMod.FacebookAdsNs.AdSettingsNs.SDKLogLevel
   
   @js.native
   sealed trait web extends js.Object

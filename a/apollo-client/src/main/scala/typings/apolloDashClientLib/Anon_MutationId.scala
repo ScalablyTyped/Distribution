@@ -10,3 +10,13 @@ trait Anon_MutationId extends js.Object {
   var optimisticResponse: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_MutationId {
+  @scala.inline
+  def apply(mutationId: java.lang.String, optimisticResponse: js.Any = null): Anon_MutationId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mutationId")(mutationId)
+    if (optimisticResponse != null) __obj.updateDynamic("optimisticResponse")(optimisticResponse)
+    __obj.asInstanceOf[Anon_MutationId]
+  }
+}
+

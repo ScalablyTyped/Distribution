@@ -7,7 +7,9 @@ import scala.scalajs.js.annotation._
 
 @JSImport("twilio-video", "LocalAudioTrack")
 @js.native
-class LocalAudioTrack protected () extends AudioTrack {
+class LocalAudioTrack protected ()
+  extends AudioTrack
+     with LocalTrack {
   def this(mediaStreamTrack: stdLib.MediaStreamTrack) = this()
   def this(mediaStreamTrack: stdLib.MediaStreamTrack, options: LocalTrackOptions) = this()
   var id: twilioDashVideoLib.twilioDashVideoMod.TrackNs.ID = js.native

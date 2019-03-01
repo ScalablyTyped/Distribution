@@ -17,3 +17,18 @@ trait GetTargetGroupArgs extends js.Object {
   val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object GetTargetGroupArgs {
+  @scala.inline
+  def apply(
+    arn: java.lang.String = null,
+    name: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): GetTargetGroupArgs = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetTargetGroupArgs]
+  }
+}
+

@@ -16,3 +16,12 @@ trait Anon_Inline extends js.Object {
   var none: java.lang.String
 }
 
+object Anon_Inline {
+  @scala.inline
+  def apply(`inline`: java.lang.String, none: java.lang.String): Anon_Inline = {
+    val __obj = js.Dynamic.literal(`inline` = `inline`)
+    __obj.updateDynamic("none")(none)
+    __obj.asInstanceOf[Anon_Inline]
+  }
+}
+

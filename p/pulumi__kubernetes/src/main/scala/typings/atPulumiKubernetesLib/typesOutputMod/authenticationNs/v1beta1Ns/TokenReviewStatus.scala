@@ -33,3 +33,20 @@ trait TokenReviewStatus extends js.Object {
   val user: UserInfo
 }
 
+object TokenReviewStatus {
+  @scala.inline
+  def apply(
+    audiences: js.Array[java.lang.String],
+    authenticated: scala.Boolean,
+    error: java.lang.String,
+    user: UserInfo
+  ): TokenReviewStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audiences")(audiences)
+    __obj.updateDynamic("authenticated")(authenticated)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[TokenReviewStatus]
+  }
+}
+

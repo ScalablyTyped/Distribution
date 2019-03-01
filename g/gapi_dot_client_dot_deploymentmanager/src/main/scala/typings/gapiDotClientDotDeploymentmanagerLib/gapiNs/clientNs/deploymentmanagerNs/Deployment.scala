@@ -45,3 +45,34 @@ trait Deployment extends js.Object {
   var update: js.UndefOr[DeploymentUpdate] = js.undefined
 }
 
+object Deployment {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    fingerprint: java.lang.String = null,
+    id: java.lang.String = null,
+    insertTime: java.lang.String = null,
+    labels: js.Array[DeploymentLabelEntry] = null,
+    manifest: java.lang.String = null,
+    name: java.lang.String = null,
+    operation: Operation = null,
+    selfLink: java.lang.String = null,
+    target: TargetConfiguration = null,
+    update: DeploymentUpdate = null
+  ): Deployment = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (insertTime != null) __obj.updateDynamic("insertTime")(insertTime)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (manifest != null) __obj.updateDynamic("manifest")(manifest)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (operation != null) __obj.updateDynamic("operation")(operation)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Deployment]
+  }
+}
+

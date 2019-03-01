@@ -13,3 +13,22 @@ trait ResourcesImageConfig extends js.Object {
   var width: scala.Double
 }
 
+object ResourcesImageConfig {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    name: java.lang.String,
+    width: scala.Double,
+    density: java.lang.String = null,
+    orientation: ionicLib.ionicLibStrings.landscape | ionicLib.ionicLibStrings.portrait = null
+  ): ResourcesImageConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("width")(width)
+    if (density != null) __obj.updateDynamic("density")(density)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResourcesImageConfig]
+  }
+}
+

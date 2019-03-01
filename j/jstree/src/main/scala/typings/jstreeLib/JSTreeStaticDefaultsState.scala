@@ -32,3 +32,15 @@ trait JSTreeStaticDefaultsState extends js.Object {
   var ttl: js.Any
 }
 
+object JSTreeStaticDefaultsState {
+  @scala.inline
+  def apply(events: java.lang.String, filter: js.Any, key: java.lang.String, ttl: js.Any): JSTreeStaticDefaultsState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("ttl")(ttl)
+    __obj.asInstanceOf[JSTreeStaticDefaultsState]
+  }
+}
+

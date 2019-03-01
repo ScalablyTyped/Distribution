@@ -25,7 +25,8 @@ object echartsLibStrings {
   sealed trait axis extends js.Object
   
   @js.native
-  sealed trait bar extends js.Object
+  sealed trait bar
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
   sealed trait bold extends js.Object
@@ -34,16 +35,20 @@ object echartsLibStrings {
   sealed trait bolder extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends echartsLib.echartsNs.EChartOptionNs.TooltipNs.PositionNs.Str
   
   @js.native
-  sealed trait boxplot extends js.Object
+  sealed trait boxplot
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait candlestick extends js.Object
+  sealed trait candlestick
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait category extends js.Object
+  sealed trait category
+    extends echartsLib.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Type
   
   @js.native
   sealed trait center extends js.Object
@@ -55,7 +60,8 @@ object echartsLibStrings {
   sealed trait cross extends js.Object
   
   @js.native
-  sealed trait custom extends js.Object
+  sealed trait custom
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
   sealed trait dashed extends js.Object
@@ -64,7 +70,8 @@ object echartsLibStrings {
   sealed trait dotted extends js.Object
   
   @js.native
-  sealed trait effectScatter extends js.Object
+  sealed trait effectScatter
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
   sealed trait empty extends js.Object
@@ -76,16 +83,20 @@ object echartsLibStrings {
   sealed trait filter extends js.Object
   
   @js.native
-  sealed trait funnel extends js.Object
+  sealed trait funnel
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait gauge extends js.Object
+  sealed trait gauge
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait graph extends js.Object
+  sealed trait graph
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait heatmap extends js.Object
+  sealed trait heatmap
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
   sealed trait horizontal extends js.Object
@@ -94,7 +105,8 @@ object echartsLibStrings {
   sealed trait html extends js.Object
   
   @js.native
-  sealed trait inside extends js.Object
+  sealed trait inside
+    extends echartsLib.echartsNs.EChartOptionNs.TooltipNs.PositionNs.Str
   
   @js.native
   sealed trait italic extends js.Object
@@ -103,22 +115,27 @@ object echartsLibStrings {
   sealed trait item extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends echartsLib.echartsNs.EChartOptionNs.TooltipNs.PositionNs.Str
   
   @js.native
   sealed trait lighter extends js.Object
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait line
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait lines extends js.Object
+  sealed trait lines
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log
+    extends echartsLib.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Type
   
   @js.native
-  sealed trait map extends js.Object
+  sealed trait map
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
   sealed trait middle extends js.Object
@@ -139,28 +156,35 @@ object echartsLibStrings {
   sealed trait oblique extends js.Object
   
   @js.native
-  sealed trait parallel extends js.Object
+  sealed trait parallel
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait pictorialBar extends js.Object
+  sealed trait pictorialBar
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait pie extends js.Object
+  sealed trait pie
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait radar extends js.Object
+  sealed trait radar
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
   sealed trait radius extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends echartsLib.echartsNs.EChartOptionNs.TooltipNs.PositionNs.Str
   
   @js.native
-  sealed trait sankey extends js.Object
+  sealed trait sankey
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait scatter extends js.Object
+  sealed trait scatter
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
   sealed trait series extends js.Object
@@ -175,25 +199,32 @@ object echartsLibStrings {
   sealed trait start extends js.Object
   
   @js.native
-  sealed trait sunburst extends js.Object
+  sealed trait sunburst
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait themeRiver extends js.Object
+  sealed trait themeRiver
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends echartsLib.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Type
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends echartsLib.echartsNs.EChartOptionNs.TooltipNs.PositionNs.Str
   
   @js.native
-  sealed trait tree extends js.Object
+  sealed trait tree
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait treemap extends js.Object
+  sealed trait treemap
+    extends echartsLib.echartsNs.EChartsSeriesType
   
   @js.native
-  sealed trait value extends js.Object
+  sealed trait value
+    extends echartsLib.echartsNs.EChartOptionNs.BasicComponentsNs.CartesianAxisNs.Type
   
   @js.native
   sealed trait vertical extends js.Object

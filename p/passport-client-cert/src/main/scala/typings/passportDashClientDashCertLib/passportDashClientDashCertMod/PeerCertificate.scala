@@ -16,3 +16,28 @@ trait PeerCertificate extends js.Object {
   var valid_to: java.lang.String
 }
 
+object PeerCertificate {
+  @scala.inline
+  def apply(
+    fingerprint: java.lang.String,
+    issuer: nodeLib.tlsMod.Certificate,
+    issuerInfo: nodeLib.tlsMod.Certificate,
+    raw: js.Any,
+    serialNumber: java.lang.String,
+    subject: nodeLib.tlsMod.Certificate,
+    valid_from: java.lang.String,
+    valid_to: java.lang.String
+  ): PeerCertificate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fingerprint")(fingerprint)
+    __obj.updateDynamic("issuer")(issuer)
+    __obj.updateDynamic("issuerInfo")(issuerInfo)
+    __obj.updateDynamic("raw")(raw)
+    __obj.updateDynamic("serialNumber")(serialNumber)
+    __obj.updateDynamic("subject")(subject)
+    __obj.updateDynamic("valid_from")(valid_from)
+    __obj.updateDynamic("valid_to")(valid_to)
+    __obj.asInstanceOf[PeerCertificate]
+  }
+}
+

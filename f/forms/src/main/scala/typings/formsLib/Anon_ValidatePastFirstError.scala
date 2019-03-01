@@ -10,3 +10,12 @@ trait Anon_ValidatePastFirstError extends js.Object {
   var validatePastFirstError: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ValidatePastFirstError {
+  @scala.inline
+  def apply(validatePastFirstError: js.UndefOr[scala.Boolean] = js.undefined): Anon_ValidatePastFirstError = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(validatePastFirstError)) __obj.updateDynamic("validatePastFirstError")(validatePastFirstError)
+    __obj.asInstanceOf[Anon_ValidatePastFirstError]
+  }
+}
+

@@ -31,3 +31,26 @@ trait DatePickerOptions
   def success_MDatePickerOptions(result: aliDashAppLib.Anon_Date): scala.Unit
 }
 
+object DatePickerOptions {
+  @scala.inline
+  def apply(
+    currentDate: java.lang.String,
+    endDate: java.lang.String,
+    fail: js.Function1[aliDashAppLib.aliDashAppLibNumbers.`11`, scala.Unit],
+    format: aliDashAppLib.aliDashAppLibStrings.`yyyy-MM-dd` | aliDashAppLib.aliDashAppLibStrings.`HH:mm` | (aliDashAppLib.aliDashAppLibStrings.`yyyy-MM-dd HH:mm`) | aliDashAppLib.aliDashAppLibStrings.`yyyy-MM` | aliDashAppLib.aliDashAppLibStrings.yyyy,
+    startDate: java.lang.String,
+    success: js.Function1[aliDashAppLib.Anon_Date, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null
+  ): DatePickerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentDate")(currentDate)
+    __obj.updateDynamic("endDate")(endDate)
+    __obj.updateDynamic("fail")(fail)
+    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    __obj.updateDynamic("startDate")(startDate)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    __obj.asInstanceOf[DatePickerOptions]
+  }
+}
+

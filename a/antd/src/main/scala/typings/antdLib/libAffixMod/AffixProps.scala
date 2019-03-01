@@ -22,3 +22,28 @@ trait AffixProps extends js.Object {
   var target: js.UndefOr[js.Function0[stdLib.Window | reactLib.HTMLElement | scala.Null]] = js.undefined
 }
 
+object AffixProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
+    offsetBottom: scala.Int | scala.Double = null,
+    offsetTop: scala.Int | scala.Double = null,
+    onChange: js.Function1[/* affixed */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    prefixCls: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    target: js.Function0[stdLib.Window | reactLib.HTMLElement | scala.Null] = null
+  ): AffixProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (offsetBottom != null) __obj.updateDynamic("offsetBottom")(offsetBottom.asInstanceOf[js.Any])
+    if (offsetTop != null) __obj.updateDynamic("offsetTop")(offsetTop.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[AffixProps]
+  }
+}
+

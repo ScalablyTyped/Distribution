@@ -17,3 +17,20 @@ trait NodeParameters extends js.Object {
   var relid: js.UndefOr[webgmeLib.GmeCommonNs.RelId] = js.undefined
 }
 
+object NodeParameters {
+  @scala.inline
+  def apply(
+    base: webgmeLib.CoreNs.Node = null,
+    guid: webgmeLib.CoreNs.GUID = null,
+    parent: webgmeLib.CoreNs.Node = null,
+    relid: webgmeLib.GmeCommonNs.RelId = null
+  ): NodeParameters = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (guid != null) __obj.updateDynamic("guid")(guid)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (relid != null) __obj.updateDynamic("relid")(relid)
+    __obj.asInstanceOf[NodeParameters]
+  }
+}
+

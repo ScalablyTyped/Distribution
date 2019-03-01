@@ -12,3 +12,20 @@ trait Anon_Adaptive extends js.Object {
   var minSegments: scala.Double
 }
 
+object Anon_Adaptive {
+  @scala.inline
+  def apply(
+    adaptive: scala.Boolean,
+    maxLength: scala.Double,
+    maxSegments: scala.Double,
+    minSegments: scala.Double
+  ): Anon_Adaptive = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adaptive")(adaptive)
+    __obj.updateDynamic("maxLength")(maxLength)
+    __obj.updateDynamic("maxSegments")(maxSegments)
+    __obj.updateDynamic("minSegments")(minSegments)
+    __obj.asInstanceOf[Anon_Adaptive]
+  }
+}
+

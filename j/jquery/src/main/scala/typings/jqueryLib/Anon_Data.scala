@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Data[TTarget, TData] extends js.Object {
+trait Anon_Data[TTarget, TData]
+  extends jqueryLib.JQueryNs._SpecialEventHook[TTarget, TData] {
   /**
     * The setup hook is called the first time an event of a particular type is attached to an element; this provides the hook an opportunity to do processing that will apply to all events of this type on this element. The `this` keyword will be a reference to the element where the event is being attached and `eventHandle` is jQuery's event handler function. In most cases the `namespaces` argument should not be used, since it only represents the namespaces of the _first_ event being attached; subsequent events may not have this same namespaces.
     *
@@ -18,5 +19,22 @@ trait Anon_Data[TTarget, TData] extends js.Object {
     namespaces: java.lang.String,
     eventHandle: jqueryLib.JQueryNs.EventHandler[TTarget, TData]
   ): scala.Unit | jqueryLib.jqueryLibNumbers.`false`
+}
+
+object Anon_Data {
+  @scala.inline
+  def apply[TTarget, TData](
+    setup: js.Function4[
+      TTarget, 
+      TData, 
+      java.lang.String, 
+      jqueryLib.JQueryNs.EventHandler[TTarget, TData], 
+      scala.Unit | jqueryLib.jqueryLibNumbers.`false`
+    ]
+  ): Anon_Data[TTarget, TData] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setup")(setup)
+    __obj.asInstanceOf[Anon_Data[TTarget, TData]]
+  }
 }
 

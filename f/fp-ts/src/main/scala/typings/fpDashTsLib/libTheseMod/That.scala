@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("fp-ts/lib/These", "That")
 @js.native
-class That[L, A] protected () extends js.Object {
+class That[L, A] protected () extends These[L, A] {
   def this(value: A) = this()
   val _A: A = js.native
   val _L: L = js.native

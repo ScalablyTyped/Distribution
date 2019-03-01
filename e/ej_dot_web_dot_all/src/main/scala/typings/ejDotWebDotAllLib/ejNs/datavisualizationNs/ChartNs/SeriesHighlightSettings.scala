@@ -33,3 +33,26 @@ trait SeriesHighlightSettings extends js.Object {
   var pattern: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SeriesHighlightSettings {
+  @scala.inline
+  def apply(
+    border: SeriesHighlightSettingsBorder = null,
+    color: java.lang.String = null,
+    customPattern: java.lang.String = null,
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: Mode | java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    pattern: java.lang.String = null
+  ): SeriesHighlightSettings = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (customPattern != null) __obj.updateDynamic("customPattern")(customPattern)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    __obj.asInstanceOf[SeriesHighlightSettings]
+  }
+}
+

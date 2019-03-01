@@ -89,3 +89,56 @@ trait Model extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    autoOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRoundOff: js.UndefOr[scala.Boolean] = js.undefined,
+    endAngle: scala.Int | scala.Double = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    innerCircleImageClass: java.lang.String = null,
+    innerCircleImageUrl: java.lang.String = null,
+    labelSpace: scala.Int | scala.Double = null,
+    locale: java.lang.String = null,
+    mouseover: js.Function1[/* e */ MouseoverEventArgs, scala.Unit] = null,
+    radius: scala.Int | scala.Double = null,
+    showInnerCircle: js.UndefOr[scala.Boolean] = js.undefined,
+    slide: js.Function1[/* e */ SlideEventArgs, scala.Unit] = null,
+    start: js.Function1[/* e */ StartEventArgs, scala.Unit] = null,
+    startAngle: scala.Int | scala.Double = null,
+    stop: js.Function1[/* e */ StopEventArgs, scala.Unit] = null,
+    strokeWidth: scala.Int | scala.Double = null,
+    ticks: js.Array[_] = null,
+    value: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoOpen)) __obj.updateDynamic("autoOpen")(autoOpen)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enableRoundOff)) __obj.updateDynamic("enableRoundOff")(enableRoundOff)
+    if (endAngle != null) __obj.updateDynamic("endAngle")(endAngle.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (innerCircleImageClass != null) __obj.updateDynamic("innerCircleImageClass")(innerCircleImageClass)
+    if (innerCircleImageUrl != null) __obj.updateDynamic("innerCircleImageUrl")(innerCircleImageUrl)
+    if (labelSpace != null) __obj.updateDynamic("labelSpace")(labelSpace.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mouseover != null) __obj.updateDynamic("mouseover")(mouseover)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(showInnerCircle)) __obj.updateDynamic("showInnerCircle")(showInnerCircle)
+    if (slide != null) __obj.updateDynamic("slide")(slide)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (startAngle != null) __obj.updateDynamic("startAngle")(startAngle.asInstanceOf[js.Any])
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (strokeWidth != null) __obj.updateDynamic("strokeWidth")(strokeWidth.asInstanceOf[js.Any])
+    if (ticks != null) __obj.updateDynamic("ticks")(ticks)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

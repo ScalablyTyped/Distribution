@@ -23,3 +23,16 @@ trait ShapeViewLoadOptions extends js.Object {
   var highlight: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ShapeViewLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    highlight: js.UndefOr[scala.Boolean] = js.undefined
+  ): ShapeViewLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    __obj.asInstanceOf[ShapeViewLoadOptions]
+  }
+}
+

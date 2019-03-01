@@ -10,3 +10,13 @@ trait TfIdfTerm extends js.Object {
   var tfidf: scala.Double
 }
 
+object TfIdfTerm {
+  @scala.inline
+  def apply(term: java.lang.String, tfidf: scala.Double): TfIdfTerm = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("term")(term)
+    __obj.updateDynamic("tfidf")(tfidf)
+    __obj.asInstanceOf[TfIdfTerm]
+  }
+}
+

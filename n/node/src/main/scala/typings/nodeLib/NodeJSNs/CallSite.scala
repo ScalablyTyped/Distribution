@@ -67,3 +67,38 @@ trait CallSite extends js.Object {
   def isToplevel(): scala.Boolean
 }
 
+object CallSite {
+  @scala.inline
+  def apply(
+    getColumnNumber: js.Function0[scala.Double | scala.Null],
+    getEvalOrigin: js.Function0[js.UndefOr[java.lang.String]],
+    getFileName: js.Function0[java.lang.String | scala.Null],
+    getFunction: js.Function0[js.UndefOr[js.Function]],
+    getFunctionName: js.Function0[java.lang.String | scala.Null],
+    getLineNumber: js.Function0[scala.Double | scala.Null],
+    getMethodName: js.Function0[java.lang.String | scala.Null],
+    getThis: js.Function0[js.Any],
+    getTypeName: js.Function0[java.lang.String | scala.Null],
+    isConstructor: js.Function0[scala.Boolean],
+    isEval: js.Function0[scala.Boolean],
+    isNative: js.Function0[scala.Boolean],
+    isToplevel: js.Function0[scala.Boolean]
+  ): CallSite = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getColumnNumber")(getColumnNumber)
+    __obj.updateDynamic("getEvalOrigin")(getEvalOrigin)
+    __obj.updateDynamic("getFileName")(getFileName)
+    __obj.updateDynamic("getFunction")(getFunction)
+    __obj.updateDynamic("getFunctionName")(getFunctionName)
+    __obj.updateDynamic("getLineNumber")(getLineNumber)
+    __obj.updateDynamic("getMethodName")(getMethodName)
+    __obj.updateDynamic("getThis")(getThis)
+    __obj.updateDynamic("getTypeName")(getTypeName)
+    __obj.updateDynamic("isConstructor")(isConstructor)
+    __obj.updateDynamic("isEval")(isEval)
+    __obj.updateDynamic("isNative")(isNative)
+    __obj.updateDynamic("isToplevel")(isToplevel)
+    __obj.asInstanceOf[CallSite]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_DescriptionTitle extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DescriptionTitle {
+  @scala.inline
+  def apply(description: java.lang.String, title: java.lang.String = null): Anon_DescriptionTitle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_DescriptionTitle]
+  }
+}
+

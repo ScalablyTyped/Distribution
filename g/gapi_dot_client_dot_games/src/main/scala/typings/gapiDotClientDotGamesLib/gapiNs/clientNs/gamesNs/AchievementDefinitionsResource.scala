@@ -10,3 +10,17 @@ trait AchievementDefinitionsResource extends js.Object {
   def list(request: gapiDotClientDotGamesLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[AchievementDefinitionsListResponse]
 }
 
+object AchievementDefinitionsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotGamesLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AchievementDefinitionsListResponse]
+    ]
+  ): AchievementDefinitionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AchievementDefinitionsResource]
+  }
+}
+

@@ -12,3 +12,20 @@ trait MDCFormFieldAdapter extends js.Object {
   def registerInteractionHandler(`type`: java.lang.String, handler: stdLib.EventListener): scala.Unit
 }
 
+object MDCFormFieldAdapter {
+  @scala.inline
+  def apply(
+    activateInputRipple: js.Function0[scala.Unit],
+    deactivateInputRipple: js.Function0[scala.Unit],
+    deregisterInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit],
+    registerInteractionHandler: js.Function2[java.lang.String, stdLib.EventListener, scala.Unit]
+  ): MDCFormFieldAdapter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activateInputRipple")(activateInputRipple)
+    __obj.updateDynamic("deactivateInputRipple")(deactivateInputRipple)
+    __obj.updateDynamic("deregisterInteractionHandler")(deregisterInteractionHandler)
+    __obj.updateDynamic("registerInteractionHandler")(registerInteractionHandler)
+    __obj.asInstanceOf[MDCFormFieldAdapter]
+  }
+}
+

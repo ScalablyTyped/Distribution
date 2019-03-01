@@ -58,3 +58,28 @@ trait Anon_CookieConfig extends js.Object {
   val trackingProtectionMode: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting
 }
 
+object Anon_CookieConfig {
+  @scala.inline
+  def apply(
+    cookieConfig: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    firstPartyIsolate: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    hyperlinkAuditingEnabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    referrersEnabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    resistFingerprinting: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    trackingProtectionMode: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting,
+    protectedContentEnabled: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting = null,
+    thirdPartyCookiesAllowed: firefoxDashWebextDashBrowserLib.browserNs.typesNs.Setting = null
+  ): Anon_CookieConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cookieConfig")(cookieConfig)
+    __obj.updateDynamic("firstPartyIsolate")(firstPartyIsolate)
+    __obj.updateDynamic("hyperlinkAuditingEnabled")(hyperlinkAuditingEnabled)
+    __obj.updateDynamic("referrersEnabled")(referrersEnabled)
+    __obj.updateDynamic("resistFingerprinting")(resistFingerprinting)
+    __obj.updateDynamic("trackingProtectionMode")(trackingProtectionMode)
+    if (protectedContentEnabled != null) __obj.updateDynamic("protectedContentEnabled")(protectedContentEnabled)
+    if (thirdPartyCookiesAllowed != null) __obj.updateDynamic("thirdPartyCookiesAllowed")(thirdPartyCookiesAllowed)
+    __obj.asInstanceOf[Anon_CookieConfig]
+  }
+}
+

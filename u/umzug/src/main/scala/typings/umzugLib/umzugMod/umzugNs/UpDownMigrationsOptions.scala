@@ -13,3 +13,12 @@ trait UpDownMigrationsOptions extends js.Object {
   var migrations: js.Array[java.lang.String]
 }
 
+object UpDownMigrationsOptions {
+  @scala.inline
+  def apply(migrations: js.Array[java.lang.String]): UpDownMigrationsOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("migrations")(migrations)
+    __obj.asInstanceOf[UpDownMigrationsOptions]
+  }
+}
+

@@ -72,3 +72,46 @@ trait ChartSpec extends js.Object {
   var titleTextPosition: js.UndefOr[TextPosition] = js.undefined
 }
 
+object ChartSpec {
+  @scala.inline
+  def apply(
+    altText: java.lang.String = null,
+    backgroundColor: Color = null,
+    basicChart: BasicChartSpec = null,
+    bubbleChart: BubbleChartSpec = null,
+    candlestickChart: CandlestickChartSpec = null,
+    fontName: java.lang.String = null,
+    hiddenDimensionStrategy: java.lang.String = null,
+    histogramChart: HistogramChartSpec = null,
+    maximized: js.UndefOr[scala.Boolean] = js.undefined,
+    orgChart: OrgChartSpec = null,
+    pieChart: PieChartSpec = null,
+    subtitle: java.lang.String = null,
+    subtitleTextFormat: TextFormat = null,
+    subtitleTextPosition: TextPosition = null,
+    title: java.lang.String = null,
+    titleTextFormat: TextFormat = null,
+    titleTextPosition: TextPosition = null
+  ): ChartSpec = {
+    val __obj = js.Dynamic.literal()
+    if (altText != null) __obj.updateDynamic("altText")(altText)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (basicChart != null) __obj.updateDynamic("basicChart")(basicChart)
+    if (bubbleChart != null) __obj.updateDynamic("bubbleChart")(bubbleChart)
+    if (candlestickChart != null) __obj.updateDynamic("candlestickChart")(candlestickChart)
+    if (fontName != null) __obj.updateDynamic("fontName")(fontName)
+    if (hiddenDimensionStrategy != null) __obj.updateDynamic("hiddenDimensionStrategy")(hiddenDimensionStrategy)
+    if (histogramChart != null) __obj.updateDynamic("histogramChart")(histogramChart)
+    if (!js.isUndefined(maximized)) __obj.updateDynamic("maximized")(maximized)
+    if (orgChart != null) __obj.updateDynamic("orgChart")(orgChart)
+    if (pieChart != null) __obj.updateDynamic("pieChart")(pieChart)
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    if (subtitleTextFormat != null) __obj.updateDynamic("subtitleTextFormat")(subtitleTextFormat)
+    if (subtitleTextPosition != null) __obj.updateDynamic("subtitleTextPosition")(subtitleTextPosition)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleTextFormat != null) __obj.updateDynamic("titleTextFormat")(titleTextFormat)
+    if (titleTextPosition != null) __obj.updateDynamic("titleTextPosition")(titleTextPosition)
+    __obj.asInstanceOf[ChartSpec]
+  }
+}
+

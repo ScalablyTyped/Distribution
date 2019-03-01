@@ -1301,6 +1301,43 @@ trait AlexaForBusiness
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Retrieves the configured values for the user enrollment invitation email template.
+    */
+  def getInvitationConfiguration(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetInvitationConfigurationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getInvitationConfiguration(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetInvitationConfigurationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetInvitationConfigurationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves the configured values for the user enrollment invitation email template.
+    */
+  def getInvitationConfiguration(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetInvitationConfigurationRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetInvitationConfigurationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getInvitationConfiguration(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetInvitationConfigurationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetInvitationConfigurationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.GetInvitationConfigurationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Gets the details of a room profile by profile ARN.
     */
   def getProfile(): awsDashSdkLib.libRequestMod.Request[
@@ -1759,6 +1796,43 @@ trait AlexaForBusiness
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutConferencePreferenceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Configures the email template for the user enrollment invitation with the specified attributes.
+    */
+  def putInvitationConfiguration(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutInvitationConfigurationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def putInvitationConfiguration(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutInvitationConfigurationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutInvitationConfigurationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Configures the email template for the user enrollment invitation with the specified attributes.
+    */
+  def putInvitationConfiguration(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutInvitationConfigurationRequest
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutInvitationConfigurationResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def putInvitationConfiguration(
+    params: awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutInvitationConfigurationRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutInvitationConfigurationResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAlexaforbusinessMod.AlexaForBusinessNs.PutInvitationConfigurationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

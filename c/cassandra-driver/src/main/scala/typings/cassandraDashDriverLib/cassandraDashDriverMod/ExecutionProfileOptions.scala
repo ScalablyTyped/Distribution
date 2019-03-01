@@ -14,3 +14,24 @@ trait ExecutionProfileOptions extends js.Object {
   var serialConsistency: scala.Double
 }
 
+object ExecutionProfileOptions {
+  @scala.inline
+  def apply(
+    consistency: scala.Double,
+    loadBalancing: cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.loadBalancingNs.LoadBalancingPolicy,
+    name: java.lang.String,
+    readTimeout: scala.Double,
+    retry: cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.retryNs.RetryPolicy,
+    serialConsistency: scala.Double
+  ): ExecutionProfileOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("consistency")(consistency)
+    __obj.updateDynamic("loadBalancing")(loadBalancing)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("readTimeout")(readTimeout)
+    __obj.updateDynamic("retry")(retry)
+    __obj.updateDynamic("serialConsistency")(serialConsistency)
+    __obj.asInstanceOf[ExecutionProfileOptions]
+  }
+}
+

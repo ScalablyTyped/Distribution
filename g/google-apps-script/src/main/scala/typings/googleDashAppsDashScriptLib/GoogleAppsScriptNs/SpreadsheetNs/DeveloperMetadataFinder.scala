@@ -15,3 +15,26 @@ trait DeveloperMetadataFinder extends js.Object {
   def withVisibility(visibility: DeveloperMetadataVisibility): DeveloperMetadataFinder
 }
 
+object DeveloperMetadataFinder {
+  @scala.inline
+  def apply(
+    find: js.Function0[js.Array[DeveloperMetadata]],
+    onIntersectingLocations: js.Function0[DeveloperMetadataFinder],
+    withId: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DeveloperMetadataFinder],
+    withKey: js.Function1[java.lang.String, DeveloperMetadataFinder],
+    withLocationType: js.Function1[DeveloperMetadataLocationType, DeveloperMetadataFinder],
+    withValue: js.Function1[java.lang.String, DeveloperMetadataFinder],
+    withVisibility: js.Function1[DeveloperMetadataVisibility, DeveloperMetadataFinder]
+  ): DeveloperMetadataFinder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("find")(find)
+    __obj.updateDynamic("onIntersectingLocations")(onIntersectingLocations)
+    __obj.updateDynamic("withId")(withId)
+    __obj.updateDynamic("withKey")(withKey)
+    __obj.updateDynamic("withLocationType")(withLocationType)
+    __obj.updateDynamic("withValue")(withValue)
+    __obj.updateDynamic("withVisibility")(withVisibility)
+    __obj.asInstanceOf[DeveloperMetadataFinder]
+  }
+}
+

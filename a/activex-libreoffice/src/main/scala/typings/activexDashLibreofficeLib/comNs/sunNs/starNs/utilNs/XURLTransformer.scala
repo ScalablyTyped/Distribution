@@ -49,3 +49,26 @@ trait XURLTransformer
   def parseStrict(aURL: js.Array[URL]): scala.Boolean
 }
 
+object XURLTransformer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    assemble: js.Function1[js.Array[URL], scala.Boolean],
+    getPresentation: js.Function2[URL, scala.Boolean, java.lang.String],
+    parseSmart: js.Function2[js.Array[URL], java.lang.String, scala.Boolean],
+    parseStrict: js.Function1[js.Array[URL], scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XURLTransformer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("assemble")(assemble)
+    __obj.updateDynamic("getPresentation")(getPresentation)
+    __obj.updateDynamic("parseSmart")(parseSmart)
+    __obj.updateDynamic("parseStrict")(parseStrict)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XURLTransformer]
+  }
+}
+

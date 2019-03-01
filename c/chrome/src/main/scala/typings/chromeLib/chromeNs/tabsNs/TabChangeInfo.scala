@@ -47,3 +47,30 @@ trait TabChangeInfo extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabChangeInfo {
+  @scala.inline
+  def apply(
+    audible: js.UndefOr[scala.Boolean] = js.undefined,
+    autoDiscardable: js.UndefOr[scala.Boolean] = js.undefined,
+    discarded: js.UndefOr[scala.Boolean] = js.undefined,
+    favIconUrl: java.lang.String = null,
+    mutedInfo: MutedInfo = null,
+    pinned: js.UndefOr[scala.Boolean] = js.undefined,
+    status: java.lang.String = null,
+    title: java.lang.String = null,
+    url: java.lang.String = null
+  ): TabChangeInfo = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(audible)) __obj.updateDynamic("audible")(audible)
+    if (!js.isUndefined(autoDiscardable)) __obj.updateDynamic("autoDiscardable")(autoDiscardable)
+    if (!js.isUndefined(discarded)) __obj.updateDynamic("discarded")(discarded)
+    if (favIconUrl != null) __obj.updateDynamic("favIconUrl")(favIconUrl)
+    if (mutedInfo != null) __obj.updateDynamic("mutedInfo")(mutedInfo)
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TabChangeInfo]
+  }
+}
+

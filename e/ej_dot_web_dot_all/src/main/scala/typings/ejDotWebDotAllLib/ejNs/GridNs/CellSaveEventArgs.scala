@@ -35,3 +35,30 @@ trait CellSaveEventArgs extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellSaveEventArgs {
+  @scala.inline
+  def apply(
+    cell: js.Any = null,
+    columnName: java.lang.String = null,
+    columnObject: js.Any = null,
+    isForeignKey: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    previousValue: java.lang.String = null,
+    rowData: js.Any = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): CellSaveEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject)
+    if (!js.isUndefined(isForeignKey)) __obj.updateDynamic("isForeignKey")(isForeignKey)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (previousValue != null) __obj.updateDynamic("previousValue")(previousValue)
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CellSaveEventArgs]
+  }
+}
+

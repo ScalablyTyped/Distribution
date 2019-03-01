@@ -9,3 +9,12 @@ trait PivotDiscoverRequestOptions extends js.Object {
   var data: PivotDiscoverRequestDataOptions
 }
 
+object PivotDiscoverRequestOptions {
+  @scala.inline
+  def apply(data: PivotDiscoverRequestDataOptions): PivotDiscoverRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[PivotDiscoverRequestOptions]
+  }
+}
+

@@ -20,3 +20,16 @@ trait UIDisplayOptions extends js.Object {
   var prependFiles: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UIDisplayOptions {
+  @scala.inline
+  def apply(
+    fileSizeOnSubmit: js.UndefOr[scala.Boolean] = js.undefined,
+    prependFiles: js.UndefOr[scala.Boolean] = js.undefined
+  ): UIDisplayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(fileSizeOnSubmit)) __obj.updateDynamic("fileSizeOnSubmit")(fileSizeOnSubmit)
+    if (!js.isUndefined(prependFiles)) __obj.updateDynamic("prependFiles")(prependFiles)
+    __obj.asInstanceOf[UIDisplayOptions]
+  }
+}
+

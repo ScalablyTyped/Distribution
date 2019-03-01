@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ChooseEntryOptionsBase extends js.Object {
+trait ChooseEntryOptionsBase extends ChooseEntryOptions {
   /**
     * The optional list of accept options for this file opener.
     * Each option will be presented as a unique group to the end-user.
@@ -27,5 +27,20 @@ trait ChooseEntryOptionsBase extends js.Object {
     * The suggested file name that will be presented to the user as the default name to read or write.
     */
   var suggestedName: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object ChooseEntryOptionsBase {
+  @scala.inline
+  def apply(
+    accepts: js.Array[AcceptOptions] = null,
+    acceptsAllTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    suggestedName: java.lang.String = null
+  ): ChooseEntryOptionsBase = {
+    val __obj = js.Dynamic.literal()
+    if (accepts != null) __obj.updateDynamic("accepts")(accepts)
+    if (!js.isUndefined(acceptsAllTypes)) __obj.updateDynamic("acceptsAllTypes")(acceptsAllTypes)
+    if (suggestedName != null) __obj.updateDynamic("suggestedName")(suggestedName)
+    __obj.asInstanceOf[ChooseEntryOptionsBase]
+  }
 }
 

@@ -171,3 +171,122 @@ trait SCServerOptions
   var wsEngineServerOptions: js.UndefOr[wsLib.wsMod.WebSocketNs.ClientOptions] = js.undefined
 }
 
+object SCServerOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /* additionalOptions */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    ackTimeout: scala.Int | scala.Double = null,
+    allowClientPublish: js.UndefOr[scala.Boolean] = js.undefined,
+    appName: java.lang.String = null,
+    authAlgorithm: java.lang.String = null,
+    authDefaultExpiry: scala.Int | scala.Double = null,
+    authKey: jsonwebtokenLib.jsonwebtokenMod.Secret = null,
+    authPrivateKey: jsonwebtokenLib.jsonwebtokenMod.Secret = null,
+    authPublicKey: jsonwebtokenLib.jsonwebtokenMod.Secret = null,
+    authSignAsync: js.UndefOr[scala.Boolean] = js.undefined,
+    authVerifyAsync: js.UndefOr[scala.Boolean] = js.undefined,
+    brokerController: java.lang.String = null,
+    brokerEngine: java.lang.String = null,
+    brokers: scala.Int | scala.Double = null,
+    connectTimeout: scala.Int | scala.Double = null,
+    crashWorkerOnError: js.UndefOr[scala.Boolean] = js.undefined,
+    downgradeToUser: scala.Double | java.lang.String = null,
+    environment: java.lang.String = null,
+    handshakeTimeout: scala.Int | scala.Double = null,
+    host: java.lang.String = null,
+    httpServer: nodeLib.httpMod.Server = null,
+    instanceId: java.lang.String = null,
+    ipcAckTimeout: scala.Int | scala.Double = null,
+    killMasterOnSignal: js.UndefOr[scala.Boolean] = js.undefined,
+    killWorkerMemoryThreshold: scala.Int | scala.Double = null,
+    logLevel: socketclusterDashServerLib.socketclusterDashServerLibNumbers.`0` | socketclusterDashServerLib.socketclusterDashServerLibNumbers.`1` | socketclusterDashServerLib.socketclusterDashServerLibNumbers.`2` | socketclusterDashServerLib.socketclusterDashServerLibNumbers.`3` = null,
+    maxPayload: scala.Int | scala.Double = null,
+    middlewareEmitWarnings: scala.Int | scala.Double = null,
+    origins: java.lang.String = null,
+    path: java.lang.String = null,
+    perMessageDeflate: js.UndefOr[scala.Boolean] = js.undefined,
+    pingInterval: scala.Int | scala.Double = null,
+    pingTimeout: scala.Int | scala.Double = null,
+    pingTimeoutDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    port: scala.Int | scala.Double = null,
+    processTermTimeout: scala.Int | scala.Double = null,
+    propagateErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    propagateWarnings: scala.Int | scala.Double = null,
+    protocol: socketclusterDashServerLib.socketclusterDashServerLibStrings.http | socketclusterDashServerLib.socketclusterDashServerLibStrings.https = null,
+    protocolOptions: nodeLib.httpsMod.ServerOptions = null,
+    pubSubBatchDuration: scala.Int | scala.Double = null,
+    rebootOnSignal: js.UndefOr[scala.Boolean] = js.undefined,
+    rebootWorkerOnCrash: js.UndefOr[scala.Boolean] = js.undefined,
+    schedulingPolicy: socketclusterDashServerLib.socketclusterDashServerLibStrings.rr | socketclusterDashServerLib.socketclusterDashServerLibStrings.none = null,
+    secretKey: java.lang.String = null,
+    socketChannelLimit: scala.Int | scala.Double = null,
+    socketRoot: java.lang.String = null,
+    socketUpgradeTimeout: scala.Int | scala.Double = null,
+    tcpSynBacklog: scala.Int | scala.Double = null,
+    workerClusterController: java.lang.String = null,
+    workerController: java.lang.String = null,
+    workerStatusInterval: scala.Int | scala.Double = null,
+    workers: scala.Int | scala.Double = null,
+    wsEngine: js.Any = null,
+    wsEngineServerOptions: wsLib.wsMod.WebSocketNs.ClientOptions = null
+  ): SCServerOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (ackTimeout != null) __obj.updateDynamic("ackTimeout")(ackTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowClientPublish)) __obj.updateDynamic("allowClientPublish")(allowClientPublish)
+    if (appName != null) __obj.updateDynamic("appName")(appName)
+    if (authAlgorithm != null) __obj.updateDynamic("authAlgorithm")(authAlgorithm)
+    if (authDefaultExpiry != null) __obj.updateDynamic("authDefaultExpiry")(authDefaultExpiry.asInstanceOf[js.Any])
+    if (authKey != null) __obj.updateDynamic("authKey")(authKey.asInstanceOf[js.Any])
+    if (authPrivateKey != null) __obj.updateDynamic("authPrivateKey")(authPrivateKey.asInstanceOf[js.Any])
+    if (authPublicKey != null) __obj.updateDynamic("authPublicKey")(authPublicKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(authSignAsync)) __obj.updateDynamic("authSignAsync")(authSignAsync)
+    if (!js.isUndefined(authVerifyAsync)) __obj.updateDynamic("authVerifyAsync")(authVerifyAsync)
+    if (brokerController != null) __obj.updateDynamic("brokerController")(brokerController)
+    if (brokerEngine != null) __obj.updateDynamic("brokerEngine")(brokerEngine)
+    if (brokers != null) __obj.updateDynamic("brokers")(brokers.asInstanceOf[js.Any])
+    if (connectTimeout != null) __obj.updateDynamic("connectTimeout")(connectTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(crashWorkerOnError)) __obj.updateDynamic("crashWorkerOnError")(crashWorkerOnError)
+    if (downgradeToUser != null) __obj.updateDynamic("downgradeToUser")(downgradeToUser.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (handshakeTimeout != null) __obj.updateDynamic("handshakeTimeout")(handshakeTimeout.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (httpServer != null) __obj.updateDynamic("httpServer")(httpServer)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (ipcAckTimeout != null) __obj.updateDynamic("ipcAckTimeout")(ipcAckTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(killMasterOnSignal)) __obj.updateDynamic("killMasterOnSignal")(killMasterOnSignal)
+    if (killWorkerMemoryThreshold != null) __obj.updateDynamic("killWorkerMemoryThreshold")(killWorkerMemoryThreshold.asInstanceOf[js.Any])
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel.asInstanceOf[js.Any])
+    if (maxPayload != null) __obj.updateDynamic("maxPayload")(maxPayload.asInstanceOf[js.Any])
+    if (middlewareEmitWarnings != null) __obj.updateDynamic("middlewareEmitWarnings")(middlewareEmitWarnings.asInstanceOf[js.Any])
+    if (origins != null) __obj.updateDynamic("origins")(origins)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(perMessageDeflate)) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate)
+    if (pingInterval != null) __obj.updateDynamic("pingInterval")(pingInterval.asInstanceOf[js.Any])
+    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(pingTimeoutDisabled)) __obj.updateDynamic("pingTimeoutDisabled")(pingTimeoutDisabled)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (processTermTimeout != null) __obj.updateDynamic("processTermTimeout")(processTermTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(propagateErrors)) __obj.updateDynamic("propagateErrors")(propagateErrors)
+    if (propagateWarnings != null) __obj.updateDynamic("propagateWarnings")(propagateWarnings.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (protocolOptions != null) __obj.updateDynamic("protocolOptions")(protocolOptions)
+    if (pubSubBatchDuration != null) __obj.updateDynamic("pubSubBatchDuration")(pubSubBatchDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(rebootOnSignal)) __obj.updateDynamic("rebootOnSignal")(rebootOnSignal)
+    if (!js.isUndefined(rebootWorkerOnCrash)) __obj.updateDynamic("rebootWorkerOnCrash")(rebootWorkerOnCrash)
+    if (schedulingPolicy != null) __obj.updateDynamic("schedulingPolicy")(schedulingPolicy.asInstanceOf[js.Any])
+    if (secretKey != null) __obj.updateDynamic("secretKey")(secretKey)
+    if (socketChannelLimit != null) __obj.updateDynamic("socketChannelLimit")(socketChannelLimit.asInstanceOf[js.Any])
+    if (socketRoot != null) __obj.updateDynamic("socketRoot")(socketRoot)
+    if (socketUpgradeTimeout != null) __obj.updateDynamic("socketUpgradeTimeout")(socketUpgradeTimeout.asInstanceOf[js.Any])
+    if (tcpSynBacklog != null) __obj.updateDynamic("tcpSynBacklog")(tcpSynBacklog.asInstanceOf[js.Any])
+    if (workerClusterController != null) __obj.updateDynamic("workerClusterController")(workerClusterController)
+    if (workerController != null) __obj.updateDynamic("workerController")(workerController)
+    if (workerStatusInterval != null) __obj.updateDynamic("workerStatusInterval")(workerStatusInterval.asInstanceOf[js.Any])
+    if (workers != null) __obj.updateDynamic("workers")(workers.asInstanceOf[js.Any])
+    if (wsEngine != null) __obj.updateDynamic("wsEngine")(wsEngine)
+    if (wsEngineServerOptions != null) __obj.updateDynamic("wsEngineServerOptions")(wsEngineServerOptions)
+    __obj.asInstanceOf[SCServerOptions]
+  }
+}
+

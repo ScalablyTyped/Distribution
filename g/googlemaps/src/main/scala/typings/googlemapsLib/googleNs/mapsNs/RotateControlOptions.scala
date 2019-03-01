@@ -13,3 +13,12 @@ trait RotateControlOptions extends js.Object {
   var position: js.UndefOr[ControlPosition] = js.undefined
 }
 
+object RotateControlOptions {
+  @scala.inline
+  def apply(position: ControlPosition = null): RotateControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[RotateControlOptions]
+  }
+}
+

@@ -45,3 +45,24 @@ trait GoogleCloudVideointelligenceV1beta1_AnnotateVideoRequest extends js.Object
   var videoContext: js.UndefOr[GoogleCloudVideointelligenceV1beta1_VideoContext] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta1_AnnotateVideoRequest {
+  @scala.inline
+  def apply(
+    features: js.Array[java.lang.String] = null,
+    inputContent: java.lang.String = null,
+    inputUri: java.lang.String = null,
+    locationId: java.lang.String = null,
+    outputUri: java.lang.String = null,
+    videoContext: GoogleCloudVideointelligenceV1beta1_VideoContext = null
+  ): GoogleCloudVideointelligenceV1beta1_AnnotateVideoRequest = {
+    val __obj = js.Dynamic.literal()
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (inputContent != null) __obj.updateDynamic("inputContent")(inputContent)
+    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri)
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
+    if (outputUri != null) __obj.updateDynamic("outputUri")(outputUri)
+    if (videoContext != null) __obj.updateDynamic("videoContext")(videoContext)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_AnnotateVideoRequest]
+  }
+}
+

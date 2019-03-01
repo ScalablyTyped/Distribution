@@ -12,3 +12,20 @@ trait CrossOriginLoginOptions extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CrossOriginLoginOptions {
+  @scala.inline
+  def apply(
+    password: java.lang.String,
+    email: java.lang.String = null,
+    realm: java.lang.String = null,
+    username: java.lang.String = null
+  ): CrossOriginLoginOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("password")(password)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (realm != null) __obj.updateDynamic("realm")(realm)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[CrossOriginLoginOptions]
+  }
+}
+

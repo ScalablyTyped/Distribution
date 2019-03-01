@@ -11,3 +11,18 @@ trait IPrintTaskRequest extends js.Object {
   def getDeferral(): PrintTaskRequestedDeferral
 }
 
+object IPrintTaskRequest {
+  @scala.inline
+  def apply(
+    createPrintTask: js.Function2[java.lang.String, PrintTaskSourceRequestedHandler, PrintTask],
+    deadline: stdLib.Date,
+    getDeferral: js.Function0[PrintTaskRequestedDeferral]
+  ): IPrintTaskRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createPrintTask")(createPrintTask)
+    __obj.updateDynamic("deadline")(deadline)
+    __obj.updateDynamic("getDeferral")(getDeferral)
+    __obj.asInstanceOf[IPrintTaskRequest]
+  }
+}
+

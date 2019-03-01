@@ -17,3 +17,24 @@ trait PDFAnnotationData extends js.Object {
   var subtype: java.lang.String
 }
 
+object PDFAnnotationData {
+  @scala.inline
+  def apply(
+    annotationFlags: js.Any,
+    borderWidth: scala.Double,
+    color: js.Array[scala.Double],
+    hasAppearance: scala.Boolean,
+    rect: js.Array[scala.Double],
+    subtype: java.lang.String
+  ): PDFAnnotationData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotationFlags")(annotationFlags)
+    __obj.updateDynamic("borderWidth")(borderWidth)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("hasAppearance")(hasAppearance)
+    __obj.updateDynamic("rect")(rect)
+    __obj.updateDynamic("subtype")(subtype)
+    __obj.asInstanceOf[PDFAnnotationData]
+  }
+}
+

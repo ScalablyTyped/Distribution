@@ -10,3 +10,18 @@ trait IPiiTokenCreationOptions
   var pii: stripeLib.Anon_Personalidnumber
 }
 
+object IPiiTokenCreationOptions {
+  @scala.inline
+  def apply(
+    pii: stripeLib.Anon_Personalidnumber,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null
+  ): IPiiTokenCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pii")(pii)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    __obj.asInstanceOf[IPiiTokenCreationOptions]
+  }
+}
+

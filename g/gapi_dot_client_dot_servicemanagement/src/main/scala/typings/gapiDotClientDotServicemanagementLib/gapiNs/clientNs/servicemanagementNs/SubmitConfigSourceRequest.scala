@@ -16,3 +16,13 @@ trait SubmitConfigSourceRequest extends js.Object {
   var validateOnly: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SubmitConfigSourceRequest {
+  @scala.inline
+  def apply(configSource: ConfigSource = null, validateOnly: js.UndefOr[scala.Boolean] = js.undefined): SubmitConfigSourceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (configSource != null) __obj.updateDynamic("configSource")(configSource)
+    if (!js.isUndefined(validateOnly)) __obj.updateDynamic("validateOnly")(validateOnly)
+    __obj.asInstanceOf[SubmitConfigSourceRequest]
+  }
+}
+

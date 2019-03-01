@@ -31,3 +31,22 @@ trait CellCopyPasteEvent extends js.Object {
   var value: js.Any
 }
 
+object CellCopyPasteEvent {
+  @scala.inline
+  def apply(
+    cellKey: java.lang.String,
+    fromRow: scala.Double,
+    rowIdx: scala.Double,
+    toRow: scala.Double,
+    value: js.Any
+  ): CellCopyPasteEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cellKey")(cellKey)
+    __obj.updateDynamic("fromRow")(fromRow)
+    __obj.updateDynamic("rowIdx")(rowIdx)
+    __obj.updateDynamic("toRow")(toRow)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CellCopyPasteEvent]
+  }
+}
+

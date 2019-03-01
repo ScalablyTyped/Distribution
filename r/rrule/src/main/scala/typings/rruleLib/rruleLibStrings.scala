@@ -7,37 +7,47 @@ import scala.scalajs.js.annotation._
 
 object rruleLibStrings {
   @js.native
-  sealed trait FR extends js.Object
+  sealed trait FR
+    extends rruleLib.distEsmSrcWeekdayMod.WeekdayStr
   
   @js.native
-  sealed trait MO extends js.Object
+  sealed trait MO
+    extends rruleLib.distEsmSrcWeekdayMod.WeekdayStr
   
   @js.native
-  sealed trait SA extends js.Object
+  sealed trait SA
+    extends rruleLib.distEsmSrcWeekdayMod.WeekdayStr
   
   @js.native
-  sealed trait SU extends js.Object
+  sealed trait SU
+    extends rruleLib.distEsmSrcWeekdayMod.WeekdayStr
   
   @js.native
-  sealed trait TH extends js.Object
+  sealed trait TH
+    extends rruleLib.distEsmSrcWeekdayMod.WeekdayStr
   
   @js.native
-  sealed trait TU extends js.Object
+  sealed trait TU
+    extends rruleLib.distEsmSrcWeekdayMod.WeekdayStr
   
   @js.native
-  sealed trait WE extends js.Object
+  sealed trait WE
+    extends rruleLib.distEsmSrcWeekdayMod.WeekdayStr
   
   @js.native
-  sealed trait after extends js.Object
+  sealed trait after
+    extends rruleLib.distEsmSrcCacheMod.CacheKeys
   
   @js.native
   sealed trait all extends js.Object
   
   @js.native
-  sealed trait before extends js.Object
+  sealed trait before
+    extends rruleLib.distEsmSrcCacheMod.CacheKeys
   
   @js.native
-  sealed trait between extends js.Object
+  sealed trait between
+    extends rruleLib.distEsmSrcCacheMod.CacheKeys
   
   @js.native
   sealed trait byeaster extends js.Object

@@ -46,3 +46,34 @@ trait Anon_Active extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Active {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    cookieStoreId: java.lang.String = null,
+    discarded: js.UndefOr[scala.Boolean] = js.undefined,
+    index: scala.Int | scala.Double = null,
+    openInReaderMode: js.UndefOr[scala.Boolean] = js.undefined,
+    openerTabId: scala.Int | scala.Double = null,
+    pinned: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    url: java.lang.String = null,
+    windowId: scala.Int | scala.Double = null
+  ): Anon_Active = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (cookieStoreId != null) __obj.updateDynamic("cookieStoreId")(cookieStoreId)
+    if (!js.isUndefined(discarded)) __obj.updateDynamic("discarded")(discarded)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(openInReaderMode)) __obj.updateDynamic("openInReaderMode")(openInReaderMode)
+    if (openerTabId != null) __obj.updateDynamic("openerTabId")(openerTabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Active]
+  }
+}
+

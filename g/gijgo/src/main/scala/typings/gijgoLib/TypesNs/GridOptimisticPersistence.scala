@@ -10,3 +10,13 @@ trait GridOptimisticPersistence extends js.Object {
   var sessionStorage: js.Array[java.lang.String]
 }
 
+object GridOptimisticPersistence {
+  @scala.inline
+  def apply(localStorage: js.Array[java.lang.String], sessionStorage: js.Array[java.lang.String]): GridOptimisticPersistence = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("localStorage")(localStorage)
+    __obj.updateDynamic("sessionStorage")(sessionStorage)
+    __obj.asInstanceOf[GridOptimisticPersistence]
+  }
+}
+

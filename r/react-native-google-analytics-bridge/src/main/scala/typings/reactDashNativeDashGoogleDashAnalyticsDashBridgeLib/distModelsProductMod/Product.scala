@@ -16,3 +16,28 @@ trait Product extends js.Object {
   var variant: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Product {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    name: java.lang.String,
+    brand: java.lang.String = null,
+    category: java.lang.String = null,
+    couponCode: java.lang.String = null,
+    price: scala.Int | scala.Double = null,
+    quantity: scala.Int | scala.Double = null,
+    variant: java.lang.String = null
+  ): Product = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    if (brand != null) __obj.updateDynamic("brand")(brand)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (couponCode != null) __obj.updateDynamic("couponCode")(couponCode)
+    if (price != null) __obj.updateDynamic("price")(price.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (variant != null) __obj.updateDynamic("variant")(variant)
+    __obj.asInstanceOf[Product]
+  }
+}
+

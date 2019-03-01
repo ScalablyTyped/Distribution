@@ -23,3 +23,18 @@ trait InitOptions extends js.Object {
   var windows: js.UndefOr[js.Object] = js.undefined
 }
 
+object InitOptions {
+  @scala.inline
+  def apply(
+    android: phonegapDashPluginDashPushLib.Anon_ClearNotifications = null,
+    ios: phonegapDashPluginDashPushLib.Anon_Alert = null,
+    windows: js.Object = null
+  ): InitOptions = {
+    val __obj = js.Dynamic.literal()
+    if (android != null) __obj.updateDynamic("android")(android)
+    if (ios != null) __obj.updateDynamic("ios")(ios)
+    if (windows != null) __obj.updateDynamic("windows")(windows)
+    __obj.asInstanceOf[InitOptions]
+  }
+}
+

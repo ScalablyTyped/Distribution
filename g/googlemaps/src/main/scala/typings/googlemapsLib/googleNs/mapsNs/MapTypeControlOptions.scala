@@ -17,3 +17,18 @@ trait MapTypeControlOptions extends js.Object {
   var style: js.UndefOr[MapTypeControlStyle] = js.undefined
 }
 
+object MapTypeControlOptions {
+  @scala.inline
+  def apply(
+    mapTypeIds: js.Array[MapTypeId | java.lang.String] = null,
+    position: ControlPosition = null,
+    style: MapTypeControlStyle = null
+  ): MapTypeControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (mapTypeIds != null) __obj.updateDynamic("mapTypeIds")(mapTypeIds)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[MapTypeControlOptions]
+  }
+}
+

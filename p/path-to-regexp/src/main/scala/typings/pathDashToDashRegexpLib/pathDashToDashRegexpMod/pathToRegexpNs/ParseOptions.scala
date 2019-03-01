@@ -12,3 +12,12 @@ trait ParseOptions extends js.Object {
   var delimiter: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ParseOptions {
+  @scala.inline
+  def apply(delimiter: java.lang.String = null): ParseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    __obj.asInstanceOf[ParseOptions]
+  }
+}
+

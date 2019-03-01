@@ -16,3 +16,20 @@ trait LogMessageRequest extends js.Object {
   var requestMetadata: js.UndefOr[RequestMetadata] = js.undefined
 }
 
+object LogMessageRequest {
+  @scala.inline
+  def apply(
+    clientInfo: stdLib.Record[java.lang.String, java.lang.String] = null,
+    details: java.lang.String = null,
+    level: java.lang.String = null,
+    requestMetadata: RequestMetadata = null
+  ): LogMessageRequest = {
+    val __obj = js.Dynamic.literal()
+    if (clientInfo != null) __obj.updateDynamic("clientInfo")(clientInfo)
+    if (details != null) __obj.updateDynamic("details")(details)
+    if (level != null) __obj.updateDynamic("level")(level)
+    if (requestMetadata != null) __obj.updateDynamic("requestMetadata")(requestMetadata)
+    __obj.asInstanceOf[LogMessageRequest]
+  }
+}
+

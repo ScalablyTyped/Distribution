@@ -20,3 +20,22 @@ trait XPrintableListener
   def stateChanged(Event: PrintableStateEvent): scala.Unit
 }
 
+object XPrintableListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    stateChanged: js.Function1[PrintableStateEvent, scala.Unit]
+  ): XPrintableListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("stateChanged")(stateChanged)
+    __obj.asInstanceOf[XPrintableListener]
+  }
+}
+

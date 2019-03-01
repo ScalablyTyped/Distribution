@@ -30,3 +30,26 @@ trait NextContext[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends j
   var res: js.UndefOr[nodeLib.httpMod.ServerResponse] = js.undefined
 }
 
+object NextContext {
+  @scala.inline
+  def apply[Q /* <: nextDashServerLib.routerMod.DefaultQuery */](
+    asPath: java.lang.String,
+    pathname: java.lang.String,
+    query: Q,
+    err: nodeLib.Error = null,
+    jsonPageRes: nodeDashFetchLib.nodeDashFetchMod.Response = null,
+    req: nodeLib.httpMod.IncomingMessage = null,
+    res: nodeLib.httpMod.ServerResponse = null
+  ): NextContext[Q] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("asPath")(asPath)
+    __obj.updateDynamic("pathname")(pathname)
+    __obj.updateDynamic("query")(query.asInstanceOf[js.Any])
+    if (err != null) __obj.updateDynamic("err")(err)
+    if (jsonPageRes != null) __obj.updateDynamic("jsonPageRes")(jsonPageRes)
+    if (req != null) __obj.updateDynamic("req")(req)
+    if (res != null) __obj.updateDynamic("res")(res)
+    __obj.asInstanceOf[NextContext[Q]]
+  }
+}
+

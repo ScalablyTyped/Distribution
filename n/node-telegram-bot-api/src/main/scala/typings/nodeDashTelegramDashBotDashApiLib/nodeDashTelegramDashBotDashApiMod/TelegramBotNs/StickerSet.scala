@@ -12,3 +12,20 @@ trait StickerSet extends js.Object {
   var title: java.lang.String
 }
 
+object StickerSet {
+  @scala.inline
+  def apply(
+    contains_masks: scala.Boolean,
+    name: java.lang.String,
+    stickers: js.Array[Sticker],
+    title: java.lang.String
+  ): StickerSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contains_masks")(contains_masks)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("stickers")(stickers)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[StickerSet]
+  }
+}
+

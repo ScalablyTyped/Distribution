@@ -29,3 +29,25 @@ trait IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMe
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    aggregator: js.Function = null,
+    caption: java.lang.String = null,
+    displayFolder: java.lang.String = null,
+    name: java.lang.String = null
+  ): IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (aggregator != null) __obj.updateDynamic("aggregator")(aggregator)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (displayFolder != null) __obj.updateDynamic("displayFolder")(displayFolder)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[IgPivotGridDataSourceOptionsFlatDataOptionsMetadataCubeMeasuresDimensionMeasure]
+  }
+}
+

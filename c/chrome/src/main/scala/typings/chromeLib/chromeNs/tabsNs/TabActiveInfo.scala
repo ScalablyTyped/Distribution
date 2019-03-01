@@ -12,3 +12,13 @@ trait TabActiveInfo extends js.Object {
   var windowId: scala.Double
 }
 
+object TabActiveInfo {
+  @scala.inline
+  def apply(tabId: scala.Double, windowId: scala.Double): TabActiveInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("windowId")(windowId)
+    __obj.asInstanceOf[TabActiveInfo]
+  }
+}
+

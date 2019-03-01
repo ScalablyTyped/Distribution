@@ -36,3 +36,26 @@ trait SeriesMouseLeaveEventUIParam extends js.Object {
   var series: js.UndefOr[js.Any] = js.undefined
 }
 
+object SeriesMouseLeaveEventUIParam {
+  @scala.inline
+  def apply(
+    actualItemBrush: js.Any = null,
+    actualSeriesBrush: js.Any = null,
+    chart: js.Any = null,
+    item: js.Any = null,
+    positionX: js.Any = null,
+    positionY: js.Any = null,
+    series: js.Any = null
+  ): SeriesMouseLeaveEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (actualItemBrush != null) __obj.updateDynamic("actualItemBrush")(actualItemBrush)
+    if (actualSeriesBrush != null) __obj.updateDynamic("actualSeriesBrush")(actualSeriesBrush)
+    if (chart != null) __obj.updateDynamic("chart")(chart)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (positionX != null) __obj.updateDynamic("positionX")(positionX)
+    if (positionY != null) __obj.updateDynamic("positionY")(positionY)
+    if (series != null) __obj.updateDynamic("series")(series)
+    __obj.asInstanceOf[SeriesMouseLeaveEventUIParam]
+  }
+}
+

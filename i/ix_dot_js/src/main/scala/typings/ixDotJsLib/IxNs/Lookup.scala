@@ -12,3 +12,20 @@ trait Lookup[TKey, TValue] extends js.Object {
   def toEnumerable(): Enumerable[Grouping[TKey, TValue]]
 }
 
+object Lookup {
+  @scala.inline
+  def apply[TKey, TValue](
+    get: js.Function1[TKey, Enumerable[TValue]],
+    has: js.Function1[TKey, scala.Boolean],
+    length: js.Function0[scala.Double],
+    toEnumerable: js.Function0[Enumerable[Grouping[TKey, TValue]]]
+  ): Lookup[TKey, TValue] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("has")(has)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("toEnumerable")(toEnumerable)
+    __obj.asInstanceOf[Lookup[TKey, TValue]]
+  }
+}
+

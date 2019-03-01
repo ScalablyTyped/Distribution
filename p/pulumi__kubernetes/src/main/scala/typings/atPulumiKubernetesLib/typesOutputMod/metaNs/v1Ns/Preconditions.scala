@@ -15,3 +15,12 @@ trait Preconditions extends js.Object {
   val uid: java.lang.String
 }
 
+object Preconditions {
+  @scala.inline
+  def apply(uid: java.lang.String): Preconditions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("uid")(uid)
+    __obj.asInstanceOf[Preconditions]
+  }
+}
+

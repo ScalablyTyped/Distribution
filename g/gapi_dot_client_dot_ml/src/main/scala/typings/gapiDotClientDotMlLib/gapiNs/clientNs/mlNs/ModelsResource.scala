@@ -66,3 +66,54 @@ trait ModelsResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__TestIamPermissionsResponse]
 }
 
+object ModelsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Model]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotMlLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__Model]
+    ],
+    getIamPolicy: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__Policy]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleCloudMlV1__ListModelsResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleLongrunning__Operation]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotMlLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[GoogleIamV1__TestIamPermissionsResponse]
+    ],
+    versions: VersionsResource
+  ): ModelsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.updateDynamic("versions")(versions)
+    __obj.asInstanceOf[ModelsResource]
+  }
+}
+

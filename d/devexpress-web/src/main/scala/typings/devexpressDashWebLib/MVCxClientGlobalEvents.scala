@@ -27,3 +27,20 @@ trait MVCxClientGlobalEvents extends js.Object {
   var EndCallback: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[MVCxClientGlobalEvents]]
 }
 
+object MVCxClientGlobalEvents {
+  @scala.inline
+  def apply(
+    BeginCallback: ASPxClientEvent[MVCxClientGlobalBeginCallbackEventHandler[MVCxClientGlobalEvents]],
+    CallbackError: ASPxClientEvent[ASPxClientGlobalCallbackErrorEventHandler[MVCxClientGlobalEvents]],
+    ControlsInitialized: ASPxClientEvent[ASPxClientControlsInitializedEventHandler[MVCxClientGlobalEvents]],
+    EndCallback: ASPxClientEvent[ASPxClientGlobalEndCallbackEventHandler[MVCxClientGlobalEvents]]
+  ): MVCxClientGlobalEvents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BeginCallback")(BeginCallback)
+    __obj.updateDynamic("CallbackError")(CallbackError)
+    __obj.updateDynamic("ControlsInitialized")(ControlsInitialized)
+    __obj.updateDynamic("EndCallback")(EndCallback)
+    __obj.asInstanceOf[MVCxClientGlobalEvents]
+  }
+}
+

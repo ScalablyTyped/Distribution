@@ -64,3 +64,30 @@ trait RemoteOptions[T] extends js.Object {
   var wildcard: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RemoteOptions {
+  @scala.inline
+  def apply[T](
+    url: java.lang.String,
+    filter: js.Function1[/* response */ T, T] = null,
+    prepare: js.Function2[
+      /* query */ java.lang.String, 
+      /* settings */ jqueryLib.JQueryAjaxSettings, 
+      jqueryLib.JQueryAjaxSettings
+    ] = null,
+    rateLimitWait: scala.Int | scala.Double = null,
+    rateLimitby: java.lang.String = null,
+    transform: js.Function1[/* response */ T, T] = null,
+    wildcard: java.lang.String = null
+  ): RemoteOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (prepare != null) __obj.updateDynamic("prepare")(prepare)
+    if (rateLimitWait != null) __obj.updateDynamic("rateLimitWait")(rateLimitWait.asInstanceOf[js.Any])
+    if (rateLimitby != null) __obj.updateDynamic("rateLimitby")(rateLimitby)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (wildcard != null) __obj.updateDynamic("wildcard")(wildcard)
+    __obj.asInstanceOf[RemoteOptions[T]]
+  }
+}
+

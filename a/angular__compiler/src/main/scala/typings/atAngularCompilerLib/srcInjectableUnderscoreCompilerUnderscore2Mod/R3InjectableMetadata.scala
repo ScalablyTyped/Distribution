@@ -20,3 +20,31 @@ trait R3InjectableMetadata extends js.Object {
   ] = js.undefined
 }
 
+object R3InjectableMetadata {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    providedIn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    typeArgumentCount: scala.Double,
+    ctorDeps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null,
+    useClass: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
+    useExisting: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
+    useFactory: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
+    useValue: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression = null,
+    userDeps: js.Array[atAngularCompilerLib.srcRender3R3UnderscoreFactoryMod.R3DependencyMetadata] = null
+  ): R3InjectableMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("providedIn")(providedIn)
+    __obj.updateDynamic("typeArgumentCount")(typeArgumentCount)
+    if (ctorDeps != null) __obj.updateDynamic("ctorDeps")(ctorDeps)
+    if (useClass != null) __obj.updateDynamic("useClass")(useClass)
+    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)
+    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory)
+    if (useValue != null) __obj.updateDynamic("useValue")(useValue)
+    if (userDeps != null) __obj.updateDynamic("userDeps")(userDeps)
+    __obj.asInstanceOf[R3InjectableMetadata]
+  }
+}
+

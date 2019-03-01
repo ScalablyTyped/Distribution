@@ -9,7 +9,6 @@ package object WaterlineNs {
   type Adapter = js.Object
   type ArrayAttribute = BaseAttribute[_] with waterlineLib.Anon_Array
   type Attribute = java.lang.String | StringAttribute | EmailAttribute | IntegerAttribute | FloatAttribute | DateAttribute | TimeAttribute | DatetimeAttribute | BooleanAttribute | BinaryAttribute | ArrayAttribute | JsonAttribute | OneToOneAttribute | OneToManyAttribute | ManyToManyAttribute | FunctionAttribute
-  type AttributeType = waterlineLib.waterlineLibStrings.string | waterlineLib.waterlineLibStrings.text | waterlineLib.waterlineLibStrings.integer | waterlineLib.waterlineLibStrings.float | waterlineLib.waterlineLibStrings.date | waterlineLib.waterlineLibStrings.time | waterlineLib.waterlineLibStrings.datetime | waterlineLib.waterlineLibStrings.boolean | waterlineLib.waterlineLibStrings.binary | waterlineLib.waterlineLibStrings.array | waterlineLib.waterlineLibStrings.json
   type AttributeValidation[T] = T | AttributeValidationSyncFn[T] | AttributeValidationAsyncFn[T]
   type AttributeValidationAsyncFn[T] = js.Function1[/* cb */ js.Function1[/* value */ T, js.Any], scala.Unit]
   type AttributeValidationSyncFn[T] = js.Function0[T]

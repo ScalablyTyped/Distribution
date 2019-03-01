@@ -16,3 +16,13 @@ trait ScalesTicksDistanceFromScale extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScalesTicksDistanceFromScale {
+  @scala.inline
+  def apply(x: scala.Int | scala.Double = null, y: scala.Int | scala.Double = null): ScalesTicksDistanceFromScale = {
+    val __obj = js.Dynamic.literal()
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScalesTicksDistanceFromScale]
+  }
+}
+

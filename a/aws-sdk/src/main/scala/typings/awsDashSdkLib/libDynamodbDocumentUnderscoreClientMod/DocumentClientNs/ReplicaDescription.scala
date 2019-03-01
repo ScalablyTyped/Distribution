@@ -12,3 +12,12 @@ trait ReplicaDescription extends js.Object {
   var RegionName: js.UndefOr[RegionName] = js.undefined
 }
 
+object ReplicaDescription {
+  @scala.inline
+  def apply(RegionName: RegionName = null): ReplicaDescription = {
+    val __obj = js.Dynamic.literal()
+    if (RegionName != null) __obj.updateDynamic("RegionName")(RegionName)
+    __obj.asInstanceOf[ReplicaDescription]
+  }
+}
+

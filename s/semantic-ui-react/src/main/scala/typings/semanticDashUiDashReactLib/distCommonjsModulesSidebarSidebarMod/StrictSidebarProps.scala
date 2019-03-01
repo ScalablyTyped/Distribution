@@ -84,3 +84,54 @@ trait StrictSidebarProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictSidebarProps {
+  @scala.inline
+  def apply(
+    animation: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.overlay | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.push | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`scale down`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.uncover | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`slide out`) | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`slide along`) = null,
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    direction: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left = null,
+    onHidden: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* data */ SidebarProps, 
+      scala.Unit
+    ] = null,
+    onHide: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* data */ SidebarProps, 
+      scala.Unit
+    ] = null,
+    onShow: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* data */ SidebarProps, 
+      scala.Unit
+    ] = null,
+    onVisible: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      /* data */ SidebarProps, 
+      scala.Unit
+    ] = null,
+    target: js.Object = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very thin`) | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.thin | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.wide | (semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.`very wide`) = null
+  ): StrictSidebarProps = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (direction != null) __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    if (onHidden != null) __obj.updateDynamic("onHidden")(onHidden)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onVisible != null) __obj.updateDynamic("onVisible")(onVisible)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictSidebarProps]
+  }
+}
+

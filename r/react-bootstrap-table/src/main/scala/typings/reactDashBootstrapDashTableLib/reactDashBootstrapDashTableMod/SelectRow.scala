@@ -112,3 +112,55 @@ trait SelectRow[TRow /* <: js.Object */] extends js.Object {
   var unselectable: js.UndefOr[js.Array[scala.Double | java.lang.String]] = js.undefined
 }
 
+object SelectRow {
+  @scala.inline
+  def apply[TRow /* <: js.Object */](
+    mode: SelectRowMode,
+    bgColor: java.lang.String | (js.Function2[/* row */ TRow, /* isSelect */ scala.Boolean, java.lang.String]) = null,
+    className: java.lang.String | (js.Function2[/* row */ TRow, /* isSelect */ scala.Boolean, java.lang.String]) = null,
+    clickToExpand: js.UndefOr[scala.Boolean] = js.undefined,
+    clickToSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    clickToSelectAndEditCell: js.UndefOr[scala.Boolean] = js.undefined,
+    columnWidth: java.lang.String = null,
+    customComponent: js.Function1[
+      /* props */ CustomSelectProps, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ] = null,
+    hideSelectColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    onSelect: js.Function4[
+      /* row */ TRow, 
+      /* isSelected */ scala.Boolean, 
+      /* event */ js.Any, 
+      /* rowIndex */ scala.Double, 
+      scala.Boolean | scala.Unit
+    ] = null,
+    onSelectAll: js.Function2[
+      /* isSelected */ scala.Boolean, 
+      /* rows */ js.Array[TRow], 
+      scala.Boolean | (js.Array[scala.Double | java.lang.String])
+    ] = null,
+    onlyUnselectVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: js.Array[scala.Double | java.lang.String] = null,
+    showOnlySelected: js.UndefOr[scala.Boolean] = js.undefined,
+    unselectable: js.Array[scala.Double | java.lang.String] = null
+  ): SelectRow[TRow] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mode")(mode)
+    if (bgColor != null) __obj.updateDynamic("bgColor")(bgColor.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (!js.isUndefined(clickToExpand)) __obj.updateDynamic("clickToExpand")(clickToExpand)
+    if (!js.isUndefined(clickToSelect)) __obj.updateDynamic("clickToSelect")(clickToSelect)
+    if (!js.isUndefined(clickToSelectAndEditCell)) __obj.updateDynamic("clickToSelectAndEditCell")(clickToSelectAndEditCell)
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth)
+    if (customComponent != null) __obj.updateDynamic("customComponent")(customComponent)
+    if (!js.isUndefined(hideSelectColumn)) __obj.updateDynamic("hideSelectColumn")(hideSelectColumn)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (onSelectAll != null) __obj.updateDynamic("onSelectAll")(onSelectAll)
+    if (!js.isUndefined(onlyUnselectVisible)) __obj.updateDynamic("onlyUnselectVisible")(onlyUnselectVisible)
+    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(showOnlySelected)) __obj.updateDynamic("showOnlySelected")(showOnlySelected)
+    if (unselectable != null) __obj.updateDynamic("unselectable")(unselectable)
+    __obj.asInstanceOf[SelectRow[TRow]]
+  }
+}
+

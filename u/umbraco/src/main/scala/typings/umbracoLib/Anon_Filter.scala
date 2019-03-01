@@ -13,3 +13,22 @@ trait Anon_Filter extends js.Object {
   var pageSize: scala.Double
 }
 
+object Anon_Filter {
+  @scala.inline
+  def apply(
+    filter: java.lang.String,
+    orderBy: umbracoLib.umbracoNs.resourcesNs.OrderItemsBy,
+    orderDirection: umbracoLib.umbracoNs.resourcesNs.Direction,
+    pageNumber: scala.Double,
+    pageSize: scala.Double
+  ): Anon_Filter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("orderBy")(orderBy)
+    __obj.updateDynamic("orderDirection")(orderDirection)
+    __obj.updateDynamic("pageNumber")(pageNumber)
+    __obj.updateDynamic("pageSize")(pageSize)
+    __obj.asInstanceOf[Anon_Filter]
+  }
+}
+

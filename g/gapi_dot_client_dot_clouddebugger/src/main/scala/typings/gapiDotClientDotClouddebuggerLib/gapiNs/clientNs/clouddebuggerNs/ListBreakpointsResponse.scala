@@ -20,3 +20,13 @@ trait ListBreakpointsResponse extends js.Object {
   var nextWaitToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListBreakpointsResponse {
+  @scala.inline
+  def apply(breakpoints: js.Array[Breakpoint] = null, nextWaitToken: java.lang.String = null): ListBreakpointsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (breakpoints != null) __obj.updateDynamic("breakpoints")(breakpoints)
+    if (nextWaitToken != null) __obj.updateDynamic("nextWaitToken")(nextWaitToken)
+    __obj.asInstanceOf[ListBreakpointsResponse]
+  }
+}
+

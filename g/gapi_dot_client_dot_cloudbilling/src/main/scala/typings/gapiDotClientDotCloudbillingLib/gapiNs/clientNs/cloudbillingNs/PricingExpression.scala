@@ -53,3 +53,26 @@ trait PricingExpression extends js.Object {
   var usageUnitDescription: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PricingExpression {
+  @scala.inline
+  def apply(
+    baseUnit: java.lang.String = null,
+    baseUnitConversionFactor: scala.Int | scala.Double = null,
+    baseUnitDescription: java.lang.String = null,
+    displayQuantity: scala.Int | scala.Double = null,
+    tieredRates: js.Array[TierRate] = null,
+    usageUnit: java.lang.String = null,
+    usageUnitDescription: java.lang.String = null
+  ): PricingExpression = {
+    val __obj = js.Dynamic.literal()
+    if (baseUnit != null) __obj.updateDynamic("baseUnit")(baseUnit)
+    if (baseUnitConversionFactor != null) __obj.updateDynamic("baseUnitConversionFactor")(baseUnitConversionFactor.asInstanceOf[js.Any])
+    if (baseUnitDescription != null) __obj.updateDynamic("baseUnitDescription")(baseUnitDescription)
+    if (displayQuantity != null) __obj.updateDynamic("displayQuantity")(displayQuantity.asInstanceOf[js.Any])
+    if (tieredRates != null) __obj.updateDynamic("tieredRates")(tieredRates)
+    if (usageUnit != null) __obj.updateDynamic("usageUnit")(usageUnit)
+    if (usageUnitDescription != null) __obj.updateDynamic("usageUnitDescription")(usageUnitDescription)
+    __obj.asInstanceOf[PricingExpression]
+  }
+}
+

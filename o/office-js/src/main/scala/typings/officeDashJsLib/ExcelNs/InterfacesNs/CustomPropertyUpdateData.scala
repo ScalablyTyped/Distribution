@@ -16,3 +16,12 @@ trait CustomPropertyUpdateData extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object CustomPropertyUpdateData {
+  @scala.inline
+  def apply(value: js.Any = null): CustomPropertyUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CustomPropertyUpdateData]
+  }
+}
+

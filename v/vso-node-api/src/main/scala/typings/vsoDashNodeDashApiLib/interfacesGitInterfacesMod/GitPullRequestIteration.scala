@@ -64,3 +64,40 @@ trait GitPullRequestIteration extends js.Object {
   var updatedDate: stdLib.Date
 }
 
+object GitPullRequestIteration {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    author: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    changeList: js.Array[GitPullRequestChange],
+    commits: js.Array[GitCommitRef],
+    commonRefCommit: GitCommitRef,
+    createdDate: stdLib.Date,
+    description: java.lang.String,
+    hasMoreCommits: scala.Boolean,
+    id: scala.Double,
+    push: GitPushRef,
+    reason: IterationReason,
+    sourceRefCommit: GitCommitRef,
+    targetRefCommit: GitCommitRef,
+    updatedDate: stdLib.Date
+  ): GitPullRequestIteration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("author")(author)
+    __obj.updateDynamic("changeList")(changeList)
+    __obj.updateDynamic("commits")(commits)
+    __obj.updateDynamic("commonRefCommit")(commonRefCommit)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("hasMoreCommits")(hasMoreCommits)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("push")(push)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("sourceRefCommit")(sourceRefCommit)
+    __obj.updateDynamic("targetRefCommit")(targetRefCommit)
+    __obj.updateDynamic("updatedDate")(updatedDate)
+    __obj.asInstanceOf[GitPullRequestIteration]
+  }
+}
+

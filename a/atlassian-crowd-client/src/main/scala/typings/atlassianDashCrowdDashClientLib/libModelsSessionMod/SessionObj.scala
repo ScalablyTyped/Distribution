@@ -11,3 +11,12 @@ trait SessionObj extends js.Object {
   val token: java.lang.String
 }
 
+object SessionObj {
+  @scala.inline
+  def apply(`created-date`: scala.Double, `expiry-date`: scala.Double, token: java.lang.String): SessionObj = {
+    val __obj = js.Dynamic.literal(`created-date` = `created-date`, `expiry-date` = `expiry-date`)
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[SessionObj]
+  }
+}
+

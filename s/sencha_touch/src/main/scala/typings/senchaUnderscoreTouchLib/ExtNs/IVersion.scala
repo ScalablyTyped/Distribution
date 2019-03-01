@@ -120,3 +120,60 @@ trait IVersion extends js.Object {
   var toNumber: js.UndefOr[js.Function1[/* value */ js.UndefOr[scala.Double], scala.Double]] = js.undefined
 }
 
+object IVersion {
+  @scala.inline
+  def apply(
+    deprecate: js.Function4[
+      /* packageName */ js.UndefOr[java.lang.String], 
+      /* since */ js.UndefOr[java.lang.String], 
+      /* closure */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    equals: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    getBuild: js.Function0[scala.Double] = null,
+    getMajor: js.Function0[scala.Double] = null,
+    getMinor: js.Function0[scala.Double] = null,
+    getPatch: js.Function0[scala.Double] = null,
+    getRelease: js.Function0[scala.Double] = null,
+    getShortVersion: js.Function0[java.lang.String] = null,
+    getVersion: js.Function1[/* packageName */ js.UndefOr[java.lang.String], IVersion] = null,
+    gt: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    gtEq: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    isGreaterThan: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    isGreaterThanOrEqual: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    isLessThan: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    isLessThanOrEqual: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    lt: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    ltEq: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    `match`: js.Function1[/* target */ js.UndefOr[js.Any], scala.Boolean] = null,
+    setVersion: js.Function2[/* packageName */ js.UndefOr[java.lang.String], /* version */ js.UndefOr[js.Any], _] = null,
+    toArray: js.Function0[Array] = null,
+    toNumber: js.Function1[/* value */ js.UndefOr[scala.Double], scala.Double] = null
+  ): IVersion = {
+    val __obj = js.Dynamic.literal()
+    if (deprecate != null) __obj.updateDynamic("deprecate")(deprecate)
+    if (equals != null) __obj.updateDynamic("equals")(equals)
+    if (getBuild != null) __obj.updateDynamic("getBuild")(getBuild)
+    if (getMajor != null) __obj.updateDynamic("getMajor")(getMajor)
+    if (getMinor != null) __obj.updateDynamic("getMinor")(getMinor)
+    if (getPatch != null) __obj.updateDynamic("getPatch")(getPatch)
+    if (getRelease != null) __obj.updateDynamic("getRelease")(getRelease)
+    if (getShortVersion != null) __obj.updateDynamic("getShortVersion")(getShortVersion)
+    if (getVersion != null) __obj.updateDynamic("getVersion")(getVersion)
+    if (gt != null) __obj.updateDynamic("gt")(gt)
+    if (gtEq != null) __obj.updateDynamic("gtEq")(gtEq)
+    if (isGreaterThan != null) __obj.updateDynamic("isGreaterThan")(isGreaterThan)
+    if (isGreaterThanOrEqual != null) __obj.updateDynamic("isGreaterThanOrEqual")(isGreaterThanOrEqual)
+    if (isLessThan != null) __obj.updateDynamic("isLessThan")(isLessThan)
+    if (isLessThanOrEqual != null) __obj.updateDynamic("isLessThanOrEqual")(isLessThanOrEqual)
+    if (lt != null) __obj.updateDynamic("lt")(lt)
+    if (ltEq != null) __obj.updateDynamic("ltEq")(ltEq)
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    if (setVersion != null) __obj.updateDynamic("setVersion")(setVersion)
+    if (toArray != null) __obj.updateDynamic("toArray")(toArray)
+    if (toNumber != null) __obj.updateDynamic("toNumber")(toNumber)
+    __obj.asInstanceOf[IVersion]
+  }
+}
+

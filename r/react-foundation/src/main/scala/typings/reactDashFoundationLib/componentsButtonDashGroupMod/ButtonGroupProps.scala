@@ -291,3 +291,26 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ButtonGroupProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    color: reactDashFoundationLib.enumsMod.ButtonGroupColors = null,
+    isExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    isStacked: js.UndefOr[scala.Boolean] = js.undefined,
+    size: reactDashFoundationLib.enumsMod.ButtonGroupSizes = null,
+    stackFor: reactDashFoundationLib.enumsMod.Breakpoints = null
+  ): ButtonGroupProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (!js.isUndefined(isStacked)) __obj.updateDynamic("isStacked")(isStacked)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (stackFor != null) __obj.updateDynamic("stackFor")(stackFor)
+    __obj.asInstanceOf[ButtonGroupProps]
+  }
+}
+

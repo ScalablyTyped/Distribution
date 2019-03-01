@@ -126,3 +126,64 @@ trait DistributionArgs extends js.Object {
   val webAclId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object DistributionArgs {
+  @scala.inline
+  def apply(
+    defaultCacheBehavior: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompressDefaultTtl],
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean],
+    origins: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CustomHeadersCustomOriginConfig]
+      ]
+    ],
+    restrictions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_GeoRestrictionAnonLocationsRestrictionType],
+    viewerCertificate: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AcmCertificateArnCloudfrontDefaultCertificate],
+    aliases: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    cacheBehaviors: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+      ]
+    ] = null,
+    comment: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customErrorResponses: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ErrorCachingMinTtlErrorCode]
+      ]
+    ] = null,
+    defaultRootObject: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    httpVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    isIpv6Enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    loggingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketIncludeCookiesPrefix] = null,
+    orderedCacheBehaviors: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowedMethodsCachedMethodsCompress]
+      ]
+    ] = null,
+    priceClass: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    retainOnDelete: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    webAclId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): DistributionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultCacheBehavior")(defaultCacheBehavior.asInstanceOf[js.Any])
+    __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    __obj.updateDynamic("origins")(origins.asInstanceOf[js.Any])
+    __obj.updateDynamic("restrictions")(restrictions.asInstanceOf[js.Any])
+    __obj.updateDynamic("viewerCertificate")(viewerCertificate.asInstanceOf[js.Any])
+    if (aliases != null) __obj.updateDynamic("aliases")(aliases.asInstanceOf[js.Any])
+    if (cacheBehaviors != null) __obj.updateDynamic("cacheBehaviors")(cacheBehaviors.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment.asInstanceOf[js.Any])
+    if (customErrorResponses != null) __obj.updateDynamic("customErrorResponses")(customErrorResponses.asInstanceOf[js.Any])
+    if (defaultRootObject != null) __obj.updateDynamic("defaultRootObject")(defaultRootObject.asInstanceOf[js.Any])
+    if (httpVersion != null) __obj.updateDynamic("httpVersion")(httpVersion.asInstanceOf[js.Any])
+    if (isIpv6Enabled != null) __obj.updateDynamic("isIpv6Enabled")(isIpv6Enabled.asInstanceOf[js.Any])
+    if (loggingConfig != null) __obj.updateDynamic("loggingConfig")(loggingConfig.asInstanceOf[js.Any])
+    if (orderedCacheBehaviors != null) __obj.updateDynamic("orderedCacheBehaviors")(orderedCacheBehaviors.asInstanceOf[js.Any])
+    if (priceClass != null) __obj.updateDynamic("priceClass")(priceClass.asInstanceOf[js.Any])
+    if (retainOnDelete != null) __obj.updateDynamic("retainOnDelete")(retainOnDelete.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (webAclId != null) __obj.updateDynamic("webAclId")(webAclId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DistributionArgs]
+  }
+}
+

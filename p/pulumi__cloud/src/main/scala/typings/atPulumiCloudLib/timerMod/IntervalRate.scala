@@ -20,3 +20,18 @@ trait IntervalRate extends js.Object {
   var minutes: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IntervalRate {
+  @scala.inline
+  def apply(
+    days: scala.Int | scala.Double = null,
+    hours: scala.Int | scala.Double = null,
+    minutes: scala.Int | scala.Double = null
+  ): IntervalRate = {
+    val __obj = js.Dynamic.literal()
+    if (days != null) __obj.updateDynamic("days")(days.asInstanceOf[js.Any])
+    if (hours != null) __obj.updateDynamic("hours")(hours.asInstanceOf[js.Any])
+    if (minutes != null) __obj.updateDynamic("minutes")(minutes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntervalRate]
+  }
+}
+

@@ -38,3 +38,40 @@ trait Anon_AltCountryFields extends js.Object {
   var volumeId: java.lang.String
 }
 
+object Anon_AltCountryFields {
+  @scala.inline
+  def apply(
+    volumeId: java.lang.String,
+    alt: java.lang.String = null,
+    country: java.lang.String = null,
+    fields: java.lang.String = null,
+    includeNonComicsSeries: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    partner: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    projection: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    source: java.lang.String = null,
+    userIp: java.lang.String = null,
+    user_library_consistent_read: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_AltCountryFields = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("volumeId")(volumeId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(includeNonComicsSeries)) __obj.updateDynamic("includeNonComicsSeries")(includeNonComicsSeries)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (partner != null) __obj.updateDynamic("partner")(partner)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (!js.isUndefined(user_library_consistent_read)) __obj.updateDynamic("user_library_consistent_read")(user_library_consistent_read)
+    __obj.asInstanceOf[Anon_AltCountryFields]
+  }
+}
+

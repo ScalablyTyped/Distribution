@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object pahoDashMqttLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends pahoDashMqttLib.pahoDashMqttMod.Global.PahoNs.MQTTNs.Qos
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends pahoDashMqttLib.pahoDashMqttMod.Global.PahoNs.MQTTNs.Qos
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends pahoDashMqttLib.pahoDashMqttMod.Global.PahoNs.MQTTNs.Qos
   
   @js.native
   sealed trait `3` extends js.Object

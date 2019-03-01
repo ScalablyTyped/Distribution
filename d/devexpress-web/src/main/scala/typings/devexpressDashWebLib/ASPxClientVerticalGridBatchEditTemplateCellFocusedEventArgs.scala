@@ -21,3 +21,13 @@ trait ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs extends ASPxCl
   var row: ASPxClientVerticalGridRow
 }
 
+object ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs {
+  @scala.inline
+  def apply(handled: scala.Boolean, row: ASPxClientVerticalGridRow): ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handled")(handled)
+    __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[ASPxClientVerticalGridBatchEditTemplateCellFocusedEventArgs]
+  }
+}
+

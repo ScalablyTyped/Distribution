@@ -19,3 +19,12 @@ trait NodeAddress extends js.Object {
   val `type`: java.lang.String
 }
 
+object NodeAddress {
+  @scala.inline
+  def apply(address: java.lang.String, `type`: java.lang.String): NodeAddress = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("address")(address)
+    __obj.asInstanceOf[NodeAddress]
+  }
+}
+

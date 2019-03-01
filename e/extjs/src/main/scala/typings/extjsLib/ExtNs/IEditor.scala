@@ -78,3 +78,72 @@ trait IEditor
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object IEditor {
+  @scala.inline
+  def apply(
+    IContainer: extjsLib.ExtNs.containerNs.IContainer = null,
+    afterRender: js.Function2[/* ct */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any], scala.Unit] = null,
+    alignment: java.lang.String = null,
+    allowBlur: js.UndefOr[scala.Boolean] = js.undefined,
+    autoSize: js.Any = null,
+    baseCls: java.lang.String = null,
+    cancelEdit: js.Function1[/* remainVisible */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    cancelOnEsc: js.UndefOr[scala.Boolean] = js.undefined,
+    completeEdit: js.Function1[/* remainVisible */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    completeOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    constrain: js.UndefOr[scala.Boolean] = js.undefined,
+    field: extjsLib.ExtNs.formNs.fieldNs.IField = null,
+    focusOnToFront: js.UndefOr[scala.Boolean] = js.undefined,
+    getValue: js.Function0[_] = null,
+    hidden: js.UndefOr[scala.Boolean] = js.undefined,
+    hideEl: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreNoChange: js.UndefOr[scala.Boolean] = js.undefined,
+    layout: js.Any = null,
+    offsets: Array = null,
+    onHide: js.Function0[scala.Unit] = null,
+    onShow: js.Function0[scala.Unit] = null,
+    parentEl: js.Any = null,
+    realign: js.Function1[/* autoSize */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    revertInvalid: js.UndefOr[scala.Boolean] = js.undefined,
+    setValue: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit] = null,
+    shadow: js.Any = null,
+    startEdit: js.Function2[/* el */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    swallowKeys: js.UndefOr[scala.Boolean] = js.undefined,
+    updateEl: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.Any = null
+  ): IEditor = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IContainer)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (!js.isUndefined(allowBlur)) __obj.updateDynamic("allowBlur")(allowBlur)
+    if (autoSize != null) __obj.updateDynamic("autoSize")(autoSize)
+    if (baseCls != null) __obj.updateDynamic("baseCls")(baseCls)
+    if (cancelEdit != null) __obj.updateDynamic("cancelEdit")(cancelEdit)
+    if (!js.isUndefined(cancelOnEsc)) __obj.updateDynamic("cancelOnEsc")(cancelOnEsc)
+    if (completeEdit != null) __obj.updateDynamic("completeEdit")(completeEdit)
+    if (!js.isUndefined(completeOnEnter)) __obj.updateDynamic("completeOnEnter")(completeOnEnter)
+    if (!js.isUndefined(constrain)) __obj.updateDynamic("constrain")(constrain)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (!js.isUndefined(focusOnToFront)) __obj.updateDynamic("focusOnToFront")(focusOnToFront)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (!js.isUndefined(hidden)) __obj.updateDynamic("hidden")(hidden)
+    if (!js.isUndefined(hideEl)) __obj.updateDynamic("hideEl")(hideEl)
+    if (!js.isUndefined(ignoreNoChange)) __obj.updateDynamic("ignoreNoChange")(ignoreNoChange)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (offsets != null) __obj.updateDynamic("offsets")(offsets)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl)
+    if (realign != null) __obj.updateDynamic("realign")(realign)
+    if (!js.isUndefined(revertInvalid)) __obj.updateDynamic("revertInvalid")(revertInvalid)
+    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
+    if (startEdit != null) __obj.updateDynamic("startEdit")(startEdit)
+    if (!js.isUndefined(swallowKeys)) __obj.updateDynamic("swallowKeys")(swallowKeys)
+    if (!js.isUndefined(updateEl)) __obj.updateDynamic("updateEl")(updateEl)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[IEditor]
+  }
+}
+

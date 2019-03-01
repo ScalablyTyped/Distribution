@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ProtectInfo extends js.Object {
+trait ProtectInfo extends _WSKeys {
   /**
     * Filter
     * @default: false
@@ -86,5 +86,46 @@ trait ProtectInfo extends js.Object {
     * @default: false
     */
   var sort: js.UndefOr[scala.Boolean] = js.undefined
+}
+
+object ProtectInfo {
+  @scala.inline
+  def apply(
+    autoFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    deleteColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    deleteRows: js.UndefOr[scala.Boolean] = js.undefined,
+    formatCells: js.UndefOr[scala.Boolean] = js.undefined,
+    formatColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    formatRows: js.UndefOr[scala.Boolean] = js.undefined,
+    insertColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    insertHyperlinks: js.UndefOr[scala.Boolean] = js.undefined,
+    insertRows: js.UndefOr[scala.Boolean] = js.undefined,
+    objects: js.UndefOr[scala.Boolean] = js.undefined,
+    password: java.lang.String = null,
+    pivotTables: js.UndefOr[scala.Boolean] = js.undefined,
+    scenarios: js.UndefOr[scala.Boolean] = js.undefined,
+    selectLockedCells: js.UndefOr[scala.Boolean] = js.undefined,
+    selectUnlockedCells: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: js.UndefOr[scala.Boolean] = js.undefined
+  ): ProtectInfo = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFilter)) __obj.updateDynamic("autoFilter")(autoFilter)
+    if (!js.isUndefined(deleteColumns)) __obj.updateDynamic("deleteColumns")(deleteColumns)
+    if (!js.isUndefined(deleteRows)) __obj.updateDynamic("deleteRows")(deleteRows)
+    if (!js.isUndefined(formatCells)) __obj.updateDynamic("formatCells")(formatCells)
+    if (!js.isUndefined(formatColumns)) __obj.updateDynamic("formatColumns")(formatColumns)
+    if (!js.isUndefined(formatRows)) __obj.updateDynamic("formatRows")(formatRows)
+    if (!js.isUndefined(insertColumns)) __obj.updateDynamic("insertColumns")(insertColumns)
+    if (!js.isUndefined(insertHyperlinks)) __obj.updateDynamic("insertHyperlinks")(insertHyperlinks)
+    if (!js.isUndefined(insertRows)) __obj.updateDynamic("insertRows")(insertRows)
+    if (!js.isUndefined(objects)) __obj.updateDynamic("objects")(objects)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (!js.isUndefined(pivotTables)) __obj.updateDynamic("pivotTables")(pivotTables)
+    if (!js.isUndefined(scenarios)) __obj.updateDynamic("scenarios")(scenarios)
+    if (!js.isUndefined(selectLockedCells)) __obj.updateDynamic("selectLockedCells")(selectLockedCells)
+    if (!js.isUndefined(selectUnlockedCells)) __obj.updateDynamic("selectUnlockedCells")(selectUnlockedCells)
+    if (!js.isUndefined(sort)) __obj.updateDynamic("sort")(sort)
+    __obj.asInstanceOf[ProtectInfo]
+  }
 }
 

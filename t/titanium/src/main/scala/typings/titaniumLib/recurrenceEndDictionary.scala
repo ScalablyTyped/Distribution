@@ -19,3 +19,13 @@ trait recurrenceEndDictionary extends js.Object {
   var occurrenceCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object recurrenceEndDictionary {
+  @scala.inline
+  def apply(endDate: stdLib.Date = null, occurrenceCount: scala.Int | scala.Double = null): recurrenceEndDictionary = {
+    val __obj = js.Dynamic.literal()
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (occurrenceCount != null) __obj.updateDynamic("occurrenceCount")(occurrenceCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[recurrenceEndDictionary]
+  }
+}
+

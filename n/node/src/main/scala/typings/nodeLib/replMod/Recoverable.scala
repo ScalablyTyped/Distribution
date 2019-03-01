@@ -15,3 +15,20 @@ trait Recoverable
   var err: nodeLib.Error
 }
 
+object Recoverable {
+  @scala.inline
+  def apply(
+    err: nodeLib.Error,
+    message: java.lang.String,
+    name: java.lang.String,
+    stack: java.lang.String = null
+  ): Recoverable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("err")(err)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[Recoverable]
+  }
+}
+

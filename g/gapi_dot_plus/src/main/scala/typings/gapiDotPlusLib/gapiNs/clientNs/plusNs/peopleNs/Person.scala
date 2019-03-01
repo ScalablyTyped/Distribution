@@ -37,3 +37,70 @@ trait Person extends js.Object {
   var verified: scala.Boolean
 }
 
+object Person {
+  @scala.inline
+  def apply(
+    aboutMe: java.lang.String,
+    ageRange: gapiDotPlusLib.Anon_Max,
+    birthday: java.lang.String,
+    braggingRights: java.lang.String,
+    circledByCount: scala.Double,
+    cover: gapiDotPlusLib.Anon_CoverInfo,
+    displayName: java.lang.String,
+    domain: java.lang.String,
+    emails: js.Array[gapiDotPlusLib.Anon_Type],
+    etag: java.lang.String,
+    gender: java.lang.String,
+    id: java.lang.String,
+    image: gapiDotPlusLib.Anon_Url,
+    isPlusUser: scala.Boolean,
+    kind: gapiDotPlusLib.gapiDotPlusLibStrings.`plus#person`,
+    language: java.lang.String,
+    name: gapiDotPlusLib.Anon_FamilyName,
+    nickname: java.lang.String,
+    objectType: java.lang.String,
+    occupation: java.lang.String,
+    organizations: js.Array[gapiDotPlusLib.Anon_Department],
+    placesLived: js.Array[gapiDotPlusLib.Anon_Primary],
+    plusOneCount: scala.Double,
+    relationshipStatus: java.lang.String,
+    skills: java.lang.String,
+    tagline: java.lang.String,
+    url: java.lang.String,
+    urls: js.Array[gapiDotPlusLib.Anon_Label],
+    verified: scala.Boolean
+  ): Person = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aboutMe")(aboutMe)
+    __obj.updateDynamic("ageRange")(ageRange)
+    __obj.updateDynamic("birthday")(birthday)
+    __obj.updateDynamic("braggingRights")(braggingRights)
+    __obj.updateDynamic("circledByCount")(circledByCount)
+    __obj.updateDynamic("cover")(cover)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("emails")(emails)
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("gender")(gender)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("isPlusUser")(isPlusUser)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("nickname")(nickname)
+    __obj.updateDynamic("objectType")(objectType)
+    __obj.updateDynamic("occupation")(occupation)
+    __obj.updateDynamic("organizations")(organizations)
+    __obj.updateDynamic("placesLived")(placesLived)
+    __obj.updateDynamic("plusOneCount")(plusOneCount)
+    __obj.updateDynamic("relationshipStatus")(relationshipStatus)
+    __obj.updateDynamic("skills")(skills)
+    __obj.updateDynamic("tagline")(tagline)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("urls")(urls)
+    __obj.updateDynamic("verified")(verified)
+    __obj.asInstanceOf[Person]
+  }
+}
+

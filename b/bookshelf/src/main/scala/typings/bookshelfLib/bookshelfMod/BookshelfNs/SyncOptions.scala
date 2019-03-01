@@ -10,3 +10,16 @@ trait SyncOptions extends js.Object {
   var transacting: js.UndefOr[knexLib.knexMod.KnexNs.Transaction] = js.undefined
 }
 
+object SyncOptions {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    transacting: knexLib.knexMod.KnexNs.Transaction = null
+  ): SyncOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (transacting != null) __obj.updateDynamic("transacting")(transacting)
+    __obj.asInstanceOf[SyncOptions]
+  }
+}
+

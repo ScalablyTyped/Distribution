@@ -34,3 +34,22 @@ trait MockResponseObject extends js.Object {
   var throws: js.UndefOr[stdLib.Error] = js.undefined
 }
 
+object MockResponseObject {
+  @scala.inline
+  def apply(
+    body: java.lang.String | js.Object = null,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    redirectUrl: java.lang.String = null,
+    status: scala.Int | scala.Double = null,
+    throws: stdLib.Error = null
+  ): MockResponseObject = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (redirectUrl != null) __obj.updateDynamic("redirectUrl")(redirectUrl)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (throws != null) __obj.updateDynamic("throws")(throws)
+    __obj.asInstanceOf[MockResponseObject]
+  }
+}
+

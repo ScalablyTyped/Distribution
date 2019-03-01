@@ -14,3 +14,18 @@ trait LaunchTemplateParameters extends js.Object {
   var parameters: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object LaunchTemplateParameters {
+  @scala.inline
+  def apply(
+    environment: RuntimeEnvironment = null,
+    jobName: java.lang.String = null,
+    parameters: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): LaunchTemplateParameters = {
+    val __obj = js.Dynamic.literal()
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (jobName != null) __obj.updateDynamic("jobName")(jobName)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.asInstanceOf[LaunchTemplateParameters]
+  }
+}
+

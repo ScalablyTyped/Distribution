@@ -24,3 +24,22 @@ trait Matter extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Matter {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    matterId: java.lang.String = null,
+    matterPermissions: js.Array[MatterPermission] = null,
+    name: java.lang.String = null,
+    state: java.lang.String = null
+  ): Matter = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (matterId != null) __obj.updateDynamic("matterId")(matterId)
+    if (matterPermissions != null) __obj.updateDynamic("matterPermissions")(matterPermissions)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Matter]
+  }
+}
+

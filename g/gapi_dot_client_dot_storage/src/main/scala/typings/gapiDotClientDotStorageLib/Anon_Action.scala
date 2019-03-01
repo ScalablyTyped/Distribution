@@ -12,3 +12,13 @@ trait Anon_Action extends js.Object {
   var condition: js.UndefOr[Anon_Age] = js.undefined
 }
 
+object Anon_Action {
+  @scala.inline
+  def apply(action: Anon_StorageClass = null, condition: Anon_Age = null): Anon_Action = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    __obj.asInstanceOf[Anon_Action]
+  }
+}
+

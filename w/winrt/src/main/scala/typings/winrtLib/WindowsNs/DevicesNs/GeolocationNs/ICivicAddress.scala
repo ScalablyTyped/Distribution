@@ -13,3 +13,22 @@ trait ICivicAddress extends js.Object {
   var timestamp: stdLib.Date
 }
 
+object ICivicAddress {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    country: java.lang.String,
+    postalCode: java.lang.String,
+    state: java.lang.String,
+    timestamp: stdLib.Date
+  ): ICivicAddress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("city")(city)
+    __obj.updateDynamic("country")(country)
+    __obj.updateDynamic("postalCode")(postalCode)
+    __obj.updateDynamic("state")(state)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[ICivicAddress]
+  }
+}
+

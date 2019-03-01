@@ -13,3 +13,18 @@ trait CpyOptions extends js.Object {
   ] = js.undefined
 }
 
+object CpyOptions {
+  @scala.inline
+  def apply(
+    cwd: java.lang.String = null,
+    parents: js.UndefOr[scala.Boolean] = js.undefined,
+    rename: java.lang.String | (js.Function1[/* basename */ java.lang.String, java.lang.String]) = null
+  ): CpyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (!js.isUndefined(parents)) __obj.updateDynamic("parents")(parents)
+    if (rename != null) __obj.updateDynamic("rename")(rename.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CpyOptions]
+  }
+}
+

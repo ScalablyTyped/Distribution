@@ -79,3 +79,42 @@ trait XResourceId extends js.Object {
   def isBoundToURL(AnchorURL: java.lang.String, eMode: AnchorBindingMode): scala.Boolean
 }
 
+object XResourceId {
+  @scala.inline
+  def apply(
+    Anchor: XResourceId,
+    AnchorURLs: activexDashInteropLib.SafeArray[java.lang.String],
+    FullResourceURL: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL,
+    ResourceTypePrefix: java.lang.String,
+    ResourceURL: java.lang.String,
+    clone: js.Function0[XResourceId],
+    compareTo: js.Function1[XResourceId, scala.Double],
+    getAnchor: js.Function0[XResourceId],
+    getAnchorURLs: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getFullResourceURL: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.URL],
+    getResourceTypePrefix: js.Function0[java.lang.String],
+    getResourceURL: js.Function0[java.lang.String],
+    hasAnchor: js.Function0[scala.Boolean],
+    isBoundTo: js.Function2[XResourceId, AnchorBindingMode, scala.Boolean],
+    isBoundToURL: js.Function2[java.lang.String, AnchorBindingMode, scala.Boolean]
+  ): XResourceId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Anchor")(Anchor)
+    __obj.updateDynamic("AnchorURLs")(AnchorURLs)
+    __obj.updateDynamic("FullResourceURL")(FullResourceURL)
+    __obj.updateDynamic("ResourceTypePrefix")(ResourceTypePrefix)
+    __obj.updateDynamic("ResourceURL")(ResourceURL)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("compareTo")(compareTo)
+    __obj.updateDynamic("getAnchor")(getAnchor)
+    __obj.updateDynamic("getAnchorURLs")(getAnchorURLs)
+    __obj.updateDynamic("getFullResourceURL")(getFullResourceURL)
+    __obj.updateDynamic("getResourceTypePrefix")(getResourceTypePrefix)
+    __obj.updateDynamic("getResourceURL")(getResourceURL)
+    __obj.updateDynamic("hasAnchor")(hasAnchor)
+    __obj.updateDynamic("isBoundTo")(isBoundTo)
+    __obj.updateDynamic("isBoundToURL")(isBoundToURL)
+    __obj.asInstanceOf[XResourceId]
+  }
+}
+

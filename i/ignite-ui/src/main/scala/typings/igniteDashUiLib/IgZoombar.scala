@@ -148,3 +148,67 @@ trait IgZoombar
   var zoomWindowMoveDistance: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgZoombar {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igZoombar
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    clone: java.lang.String | js.Object = null,
+    defaultZoomWindow: IgZoombarDefaultZoomWindow = null,
+    height: scala.Double | java.lang.String = null,
+    hoverStyleAnimationDuration: scala.Int | scala.Double = null,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    provider: js.Any = null,
+    providerCreated: ProviderCreatedEvent = null,
+    regional: java.lang.String | js.Object = null,
+    tabIndex: scala.Int | scala.Double = null,
+    target: java.lang.String | js.Object = null,
+    width: java.lang.String | scala.Double = null,
+    windowDragEnded: WindowDragEndedEvent = null,
+    windowDragEnding: WindowDragEndingEvent = null,
+    windowDragStarted: WindowDragStartedEvent = null,
+    windowDragStarting: WindowDragStartingEvent = null,
+    windowDragging: WindowDraggingEvent = null,
+    windowPanDuration: scala.Int | scala.Double = null,
+    windowResized: WindowResizedEvent = null,
+    windowResizing: WindowResizingEvent = null,
+    zoomAction: java.lang.String = null,
+    zoomChanged: ZoomChangedEvent = null,
+    zoomChanging: ZoomChangingEvent = null,
+    zoomWindowMinWidth: scala.Int | scala.Double = null,
+    zoomWindowMoveDistance: scala.Int | scala.Double = null
+  ): IgZoombar = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (clone != null) __obj.updateDynamic("clone")(clone.asInstanceOf[js.Any])
+    if (defaultZoomWindow != null) __obj.updateDynamic("defaultZoomWindow")(defaultZoomWindow)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hoverStyleAnimationDuration != null) __obj.updateDynamic("hoverStyleAnimationDuration")(hoverStyleAnimationDuration.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (providerCreated != null) __obj.updateDynamic("providerCreated")(providerCreated)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (windowDragEnded != null) __obj.updateDynamic("windowDragEnded")(windowDragEnded)
+    if (windowDragEnding != null) __obj.updateDynamic("windowDragEnding")(windowDragEnding)
+    if (windowDragStarted != null) __obj.updateDynamic("windowDragStarted")(windowDragStarted)
+    if (windowDragStarting != null) __obj.updateDynamic("windowDragStarting")(windowDragStarting)
+    if (windowDragging != null) __obj.updateDynamic("windowDragging")(windowDragging)
+    if (windowPanDuration != null) __obj.updateDynamic("windowPanDuration")(windowPanDuration.asInstanceOf[js.Any])
+    if (windowResized != null) __obj.updateDynamic("windowResized")(windowResized)
+    if (windowResizing != null) __obj.updateDynamic("windowResizing")(windowResizing)
+    if (zoomAction != null) __obj.updateDynamic("zoomAction")(zoomAction)
+    if (zoomChanged != null) __obj.updateDynamic("zoomChanged")(zoomChanged)
+    if (zoomChanging != null) __obj.updateDynamic("zoomChanging")(zoomChanging)
+    if (zoomWindowMinWidth != null) __obj.updateDynamic("zoomWindowMinWidth")(zoomWindowMinWidth.asInstanceOf[js.Any])
+    if (zoomWindowMoveDistance != null) __obj.updateDynamic("zoomWindowMoveDistance")(zoomWindowMoveDistance.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgZoombar]
+  }
+}
+

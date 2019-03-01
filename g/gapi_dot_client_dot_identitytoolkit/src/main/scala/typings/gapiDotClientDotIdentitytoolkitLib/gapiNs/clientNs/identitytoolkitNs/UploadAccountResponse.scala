@@ -12,3 +12,16 @@ trait UploadAccountResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UploadAccountResponse {
+  @scala.inline
+  def apply(
+    error: js.Array[gapiDotClientDotIdentitytoolkitLib.Anon_Index] = null,
+    kind: java.lang.String = null
+  ): UploadAccountResponse = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[UploadAccountResponse]
+  }
+}
+

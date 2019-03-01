@@ -12,3 +12,19 @@ trait Node
   var `type`: java.lang.String
 }
 
+object Node {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    start: scala.Double,
+    `type`: java.lang.String,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Node = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Node]
+  }
+}
+

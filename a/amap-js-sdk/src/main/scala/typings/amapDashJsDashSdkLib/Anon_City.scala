@@ -12,3 +12,20 @@ trait Anon_City extends js.Object {
   var provice: java.lang.String
 }
 
+object Anon_City {
+  @scala.inline
+  def apply(
+    city: java.lang.String,
+    citycode: java.lang.String,
+    district: java.lang.String,
+    provice: java.lang.String
+  ): Anon_City = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("city")(city)
+    __obj.updateDynamic("citycode")(citycode)
+    __obj.updateDynamic("district")(district)
+    __obj.updateDynamic("provice")(provice)
+    __obj.asInstanceOf[Anon_City]
+  }
+}
+

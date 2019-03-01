@@ -9,3 +9,12 @@ trait Anon_StateProperties extends js.Object {
   var stateProperties: js.Array[_]
 }
 
+object Anon_StateProperties {
+  @scala.inline
+  def apply(stateProperties: js.Array[_]): Anon_StateProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stateProperties")(stateProperties)
+    __obj.asInstanceOf[Anon_StateProperties]
+  }
+}
+

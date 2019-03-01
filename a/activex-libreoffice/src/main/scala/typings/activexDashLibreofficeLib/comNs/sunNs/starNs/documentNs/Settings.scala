@@ -121,3 +121,108 @@ trait Settings
   var UpdateFromTemplate: scala.Boolean
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    AddExternalLeading: scala.Boolean,
+    ApplyUserData: scala.Boolean,
+    AutoCalculate: scala.Boolean,
+    BitmapTableURL: java.lang.String,
+    CharacterCompressionType: scala.Double,
+    ColorTableURL: java.lang.String,
+    CurrentDatabaseCommand: java.lang.String,
+    CurrentDatabaseCommandType: scala.Double,
+    CurrentDatabaseDataSource: java.lang.String,
+    DashTableURL: java.lang.String,
+    DefaultTabStop: scala.Double,
+    EmbedFonts: scala.Boolean,
+    EmbedSystemFonts: scala.Boolean,
+    FieldAutoUpdate: scala.Boolean,
+    ForbiddenCharacters: activexDashLibreofficeLib.comNs.sunNs.starNs.i18nNs.XForbiddenCharacters,
+    GradientTableURL: java.lang.String,
+    HatchTableURL: java.lang.String,
+    IsKernAsianPunctuation: scala.Boolean,
+    IsPrintBooklet: scala.Boolean,
+    IsPrintBookletBack: scala.Boolean,
+    IsPrintBookletFront: scala.Boolean,
+    LineEndTableURL: java.lang.String,
+    LinkUpdateMode: scala.Double,
+    PrintQuality: scala.Double,
+    PrinterIndependentLayout: scala.Double,
+    PrinterName: java.lang.String,
+    PrinterSetup: activexDashInteropLib.SafeArray[scala.Double],
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    SaveVersionOnClose: scala.Boolean,
+    UpdateFromTemplate: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AddExternalLeading")(AddExternalLeading)
+    __obj.updateDynamic("ApplyUserData")(ApplyUserData)
+    __obj.updateDynamic("AutoCalculate")(AutoCalculate)
+    __obj.updateDynamic("BitmapTableURL")(BitmapTableURL)
+    __obj.updateDynamic("CharacterCompressionType")(CharacterCompressionType)
+    __obj.updateDynamic("ColorTableURL")(ColorTableURL)
+    __obj.updateDynamic("CurrentDatabaseCommand")(CurrentDatabaseCommand)
+    __obj.updateDynamic("CurrentDatabaseCommandType")(CurrentDatabaseCommandType)
+    __obj.updateDynamic("CurrentDatabaseDataSource")(CurrentDatabaseDataSource)
+    __obj.updateDynamic("DashTableURL")(DashTableURL)
+    __obj.updateDynamic("DefaultTabStop")(DefaultTabStop)
+    __obj.updateDynamic("EmbedFonts")(EmbedFonts)
+    __obj.updateDynamic("EmbedSystemFonts")(EmbedSystemFonts)
+    __obj.updateDynamic("FieldAutoUpdate")(FieldAutoUpdate)
+    __obj.updateDynamic("ForbiddenCharacters")(ForbiddenCharacters)
+    __obj.updateDynamic("GradientTableURL")(GradientTableURL)
+    __obj.updateDynamic("HatchTableURL")(HatchTableURL)
+    __obj.updateDynamic("IsKernAsianPunctuation")(IsKernAsianPunctuation)
+    __obj.updateDynamic("IsPrintBooklet")(IsPrintBooklet)
+    __obj.updateDynamic("IsPrintBookletBack")(IsPrintBookletBack)
+    __obj.updateDynamic("IsPrintBookletFront")(IsPrintBookletFront)
+    __obj.updateDynamic("LineEndTableURL")(LineEndTableURL)
+    __obj.updateDynamic("LinkUpdateMode")(LinkUpdateMode)
+    __obj.updateDynamic("PrintQuality")(PrintQuality)
+    __obj.updateDynamic("PrinterIndependentLayout")(PrinterIndependentLayout)
+    __obj.updateDynamic("PrinterName")(PrinterName)
+    __obj.updateDynamic("PrinterSetup")(PrinterSetup)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("SaveVersionOnClose")(SaveVersionOnClose)
+    __obj.updateDynamic("UpdateFromTemplate")(UpdateFromTemplate)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

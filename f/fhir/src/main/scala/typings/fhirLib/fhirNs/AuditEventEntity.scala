@@ -63,3 +63,50 @@ trait AuditEventEntity extends BackboneElement {
   var `type`: js.UndefOr[Coding] = js.undefined
 }
 
+object AuditEventEntity {
+  @scala.inline
+  def apply(
+    _description: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _name: Element = null,
+    _query: Element = null,
+    description: java.lang.String = null,
+    detail: js.Array[AuditEventEntityDetail] = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    identifier: Identifier = null,
+    lifecycle: Coding = null,
+    modifierExtension: js.Array[Extension] = null,
+    name: java.lang.String = null,
+    query: base64Binary = null,
+    reference: Reference = null,
+    role: Coding = null,
+    securityLabel: js.Array[Coding] = null,
+    `type`: Coding = null
+  ): AuditEventEntity = {
+    val __obj = js.Dynamic.literal()
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_query != null) __obj.updateDynamic("_query")(_query)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (lifecycle != null) __obj.updateDynamic("lifecycle")(lifecycle)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (reference != null) __obj.updateDynamic("reference")(reference)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (securityLabel != null) __obj.updateDynamic("securityLabel")(securityLabel)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AuditEventEntity]
+  }
+}
+

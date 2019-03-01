@@ -41,3 +41,18 @@ trait SearchCriteria extends js.Object {
   ] = js.undefined
 }
 
+object SearchCriteria {
+  @scala.inline
+  def apply(
+    completeMatch: js.UndefOr[scala.Boolean] = js.undefined,
+    matchCase: js.UndefOr[scala.Boolean] = js.undefined,
+    searchDirection: SearchDirection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Forward | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Backwards = null
+  ): SearchCriteria = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(completeMatch)) __obj.updateDynamic("completeMatch")(completeMatch)
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    if (searchDirection != null) __obj.updateDynamic("searchDirection")(searchDirection.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SearchCriteria]
+  }
+}
+

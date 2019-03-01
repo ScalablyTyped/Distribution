@@ -83,3 +83,50 @@ trait Anon_AltChannelIdFieldsForChannelId extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltChannelIdFieldsForChannelId {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    alt: java.lang.String = null,
+    channelId: java.lang.String = null,
+    fields: java.lang.String = null,
+    forChannelId: java.lang.String = null,
+    id: java.lang.String = null,
+    key: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    mine: js.UndefOr[scala.Boolean] = js.undefined,
+    myRecentSubscribers: js.UndefOr[scala.Boolean] = js.undefined,
+    mySubscribers: js.UndefOr[scala.Boolean] = js.undefined,
+    oauth_token: java.lang.String = null,
+    onBehalfOfContentOwner: java.lang.String = null,
+    onBehalfOfContentOwnerChannel: java.lang.String = null,
+    order: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltChannelIdFieldsForChannelId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (forChannelId != null) __obj.updateDynamic("forChannelId")(forChannelId)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
+    if (!js.isUndefined(myRecentSubscribers)) __obj.updateDynamic("myRecentSubscribers")(myRecentSubscribers)
+    if (!js.isUndefined(mySubscribers)) __obj.updateDynamic("mySubscribers")(mySubscribers)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
+    if (onBehalfOfContentOwnerChannel != null) __obj.updateDynamic("onBehalfOfContentOwnerChannel")(onBehalfOfContentOwnerChannel)
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltChannelIdFieldsForChannelId]
+  }
+}
+

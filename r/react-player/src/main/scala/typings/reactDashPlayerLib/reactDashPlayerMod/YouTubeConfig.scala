@@ -11,3 +11,18 @@ trait YouTubeConfig extends js.Object {
   var preload: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object YouTubeConfig {
+  @scala.inline
+  def apply(
+    embedOptions: js.Object = null,
+    playerVars: js.Object = null,
+    preload: js.UndefOr[scala.Boolean] = js.undefined
+  ): YouTubeConfig = {
+    val __obj = js.Dynamic.literal()
+    if (embedOptions != null) __obj.updateDynamic("embedOptions")(embedOptions)
+    if (playerVars != null) __obj.updateDynamic("playerVars")(playerVars)
+    if (!js.isUndefined(preload)) __obj.updateDynamic("preload")(preload)
+    __obj.asInstanceOf[YouTubeConfig]
+  }
+}
+

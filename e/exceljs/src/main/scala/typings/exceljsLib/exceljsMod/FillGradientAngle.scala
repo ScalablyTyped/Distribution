@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FillGradientAngle extends js.Object {
+trait FillGradientAngle extends Fill {
   /**
   	 * For 'angle' gradient, specifies the direction of the gradient. 0 is from the left to the right.
   	 * Values from 1 - 359 rotates the direction clockwise
@@ -19,5 +19,21 @@ trait FillGradientAngle extends js.Object {
   	 */
   var stops: js.Array[GradientStop]
   var `type`: exceljsLib.exceljsLibStrings.gradient
+}
+
+object FillGradientAngle {
+  @scala.inline
+  def apply(
+    degree: scala.Double,
+    gradient: exceljsLib.exceljsLibStrings.angle,
+    stops: js.Array[GradientStop],
+    `type`: exceljsLib.exceljsLibStrings.gradient
+  ): FillGradientAngle = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("degree")(degree)
+    __obj.updateDynamic("gradient")(gradient)
+    __obj.updateDynamic("stops")(stops)
+    __obj.asInstanceOf[FillGradientAngle]
+  }
 }
 

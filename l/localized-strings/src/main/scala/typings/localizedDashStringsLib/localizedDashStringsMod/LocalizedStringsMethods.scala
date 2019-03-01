@@ -46,3 +46,30 @@ trait LocalizedStringsMethods extends js.Object {
   def setLanguage(language: java.lang.String): scala.Unit
 }
 
+object LocalizedStringsMethods {
+  @scala.inline
+  def apply(
+    formatString: js.Function2[
+      java.lang.String, 
+      /* repeated */ js.Any | FormatObject[js.Any], 
+      (js.Array[java.lang.String | js.Any]) | java.lang.String
+    ],
+    getAvailableLanguages: js.Function0[js.Array[java.lang.String]],
+    getInterfaceLanguage: js.Function0[java.lang.String],
+    getLanguage: js.Function0[java.lang.String],
+    getString: js.Function3[java.lang.String, java.lang.String, scala.Boolean, java.lang.String],
+    setContent: js.Function1[js.Any, scala.Unit],
+    setLanguage: js.Function1[java.lang.String, scala.Unit]
+  ): LocalizedStringsMethods = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("formatString")(formatString)
+    __obj.updateDynamic("getAvailableLanguages")(getAvailableLanguages)
+    __obj.updateDynamic("getInterfaceLanguage")(getInterfaceLanguage)
+    __obj.updateDynamic("getLanguage")(getLanguage)
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("setContent")(setContent)
+    __obj.updateDynamic("setLanguage")(setLanguage)
+    __obj.asInstanceOf[LocalizedStringsMethods]
+  }
+}
+

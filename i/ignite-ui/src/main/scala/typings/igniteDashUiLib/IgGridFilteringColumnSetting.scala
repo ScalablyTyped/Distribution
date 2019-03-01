@@ -130,3 +130,37 @@ trait IgGridFilteringColumnSetting
   var editorType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridFilteringColumnSetting {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridFilteringColumnSetting
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    condition: java.lang.String | scala.Boolean = null,
+    conditionList: js.Array[_] = null,
+    customConditions: js.Any = null,
+    defaultExpressions: IgGridFilteringColumnSettingDefaultExpressions = null,
+    editorOptions: js.Any = null,
+    editorProvider: js.Any = null,
+    editorType: java.lang.String = null
+  ): IgGridFilteringColumnSetting = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (conditionList != null) __obj.updateDynamic("conditionList")(conditionList)
+    if (customConditions != null) __obj.updateDynamic("customConditions")(customConditions)
+    if (defaultExpressions != null) __obj.updateDynamic("defaultExpressions")(defaultExpressions)
+    if (editorOptions != null) __obj.updateDynamic("editorOptions")(editorOptions)
+    if (editorProvider != null) __obj.updateDynamic("editorProvider")(editorProvider)
+    if (editorType != null) __obj.updateDynamic("editorType")(editorType)
+    __obj.asInstanceOf[IgGridFilteringColumnSetting]
+  }
+}
+

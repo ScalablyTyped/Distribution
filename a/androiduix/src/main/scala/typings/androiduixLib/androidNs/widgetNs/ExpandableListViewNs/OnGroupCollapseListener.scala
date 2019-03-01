@@ -9,3 +9,12 @@ trait OnGroupCollapseListener extends js.Object {
   def onGroupCollapse(groupPosition: scala.Double): scala.Unit
 }
 
+object OnGroupCollapseListener {
+  @scala.inline
+  def apply(onGroupCollapse: js.Function1[scala.Double, scala.Unit]): OnGroupCollapseListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onGroupCollapse")(onGroupCollapse)
+    __obj.asInstanceOf[OnGroupCollapseListener]
+  }
+}
+

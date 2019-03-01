@@ -20,3 +20,18 @@ trait Options extends js.Object {
   var output: js.UndefOr[uglifyDashJsLib.uglifyDashJsMod.OutputOptions] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    compress: uglifyDashJsLib.uglifyDashJsMod.CompressOptions | scala.Boolean = null,
+    mangle: uglifyDashJsLib.uglifyDashJsMod.MangleOptions | scala.Boolean = null,
+    output: uglifyDashJsLib.uglifyDashJsMod.OutputOptions = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (mangle != null) __obj.updateDynamic("mangle")(mangle.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output)
+    __obj.asInstanceOf[Options]
+  }
+}
+

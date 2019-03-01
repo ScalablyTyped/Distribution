@@ -24,3 +24,20 @@ trait AskmethatRatingPopoverOptions extends js.Object {
   var values: js.Array[scala.Double]
 }
 
+object AskmethatRatingPopoverOptions {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    fontClass: java.lang.String,
+    values: js.Array[scala.Double],
+    direction: AskmethatRatingPopoverDirection = null
+  ): AskmethatRatingPopoverOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("fontClass")(fontClass)
+    __obj.updateDynamic("values")(values)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    __obj.asInstanceOf[AskmethatRatingPopoverOptions]
+  }
+}
+

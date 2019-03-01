@@ -12,3 +12,13 @@ trait X11Options extends js.Object {
   var single: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object X11Options {
+  @scala.inline
+  def apply(screen: scala.Int | scala.Double = null, single: js.UndefOr[scala.Boolean] = js.undefined): X11Options = {
+    val __obj = js.Dynamic.literal()
+    if (screen != null) __obj.updateDynamic("screen")(screen.asInstanceOf[js.Any])
+    if (!js.isUndefined(single)) __obj.updateDynamic("single")(single)
+    __obj.asInstanceOf[X11Options]
+  }
+}
+

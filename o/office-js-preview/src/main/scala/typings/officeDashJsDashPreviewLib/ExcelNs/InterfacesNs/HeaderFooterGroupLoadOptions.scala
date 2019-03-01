@@ -70,3 +70,28 @@ trait HeaderFooterGroupLoadOptions extends js.Object {
   var useSheetScale: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HeaderFooterGroupLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultForAllPages: HeaderFooterLoadOptions = null,
+    evenPages: HeaderFooterLoadOptions = null,
+    firstPage: HeaderFooterLoadOptions = null,
+    oddPages: HeaderFooterLoadOptions = null,
+    state: js.UndefOr[scala.Boolean] = js.undefined,
+    useSheetMargins: js.UndefOr[scala.Boolean] = js.undefined,
+    useSheetScale: js.UndefOr[scala.Boolean] = js.undefined
+  ): HeaderFooterGroupLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (defaultForAllPages != null) __obj.updateDynamic("defaultForAllPages")(defaultForAllPages)
+    if (evenPages != null) __obj.updateDynamic("evenPages")(evenPages)
+    if (firstPage != null) __obj.updateDynamic("firstPage")(firstPage)
+    if (oddPages != null) __obj.updateDynamic("oddPages")(oddPages)
+    if (!js.isUndefined(state)) __obj.updateDynamic("state")(state)
+    if (!js.isUndefined(useSheetMargins)) __obj.updateDynamic("useSheetMargins")(useSheetMargins)
+    if (!js.isUndefined(useSheetScale)) __obj.updateDynamic("useSheetScale")(useSheetScale)
+    __obj.asInstanceOf[HeaderFooterGroupLoadOptions]
+  }
+}
+

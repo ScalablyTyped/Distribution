@@ -14,3 +14,24 @@ trait Swagger20Operation extends js.Object {
   var tags: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Swagger20Operation {
+  @scala.inline
+  def apply(
+    responses: org.scalablytyped.runtime.StringDictionary[Swagger20Response],
+    operationId: java.lang.String = null,
+    parameters: js.Array[SwaggerParameterSchema] = null,
+    security: js.Array[Swagger20Security] = null,
+    summary: java.lang.String = null,
+    tags: js.Array[java.lang.String] = null
+  ): Swagger20Operation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("responses")(responses)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (security != null) __obj.updateDynamic("security")(security)
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[Swagger20Operation]
+  }
+}
+

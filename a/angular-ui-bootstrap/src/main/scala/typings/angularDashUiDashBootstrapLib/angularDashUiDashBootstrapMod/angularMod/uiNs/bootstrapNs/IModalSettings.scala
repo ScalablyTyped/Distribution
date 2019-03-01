@@ -127,3 +127,54 @@ trait IModalSettings extends js.Object {
   var windowTopClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IModalSettings {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    appendTo: angularLib.angularMod.angularNs.IAugmentedJQuery = null,
+    ariaDescribedBy: java.lang.String = null,
+    ariaLabelledBy: java.lang.String = null,
+    backdrop: scala.Boolean | java.lang.String = null,
+    backdropClass: java.lang.String = null,
+    bindToController: js.UndefOr[scala.Boolean] = js.undefined,
+    component: java.lang.String = null,
+    controller: java.lang.String | angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) = null,
+    controllerAs: java.lang.String = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    openedClass: java.lang.String = null,
+    resolve: org.scalablytyped.runtime.StringDictionary[
+      java.lang.String | angularLib.angularMod.Global.Function | (js.Array[java.lang.String | angularLib.angularMod.Global.Function]) | js.Object
+    ] = null,
+    scope: angularLib.angularMod.angularNs.IScope | IModalScope = null,
+    size: java.lang.String = null,
+    template: java.lang.String | js.Function0[java.lang.String] = null,
+    templateUrl: java.lang.String | js.Function0[java.lang.String] = null,
+    windowClass: java.lang.String = null,
+    windowTemplateUrl: java.lang.String = null,
+    windowTopClass: java.lang.String = null
+  ): IModalSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (appendTo != null) __obj.updateDynamic("appendTo")(appendTo)
+    if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy)
+    if (ariaLabelledBy != null) __obj.updateDynamic("ariaLabelledBy")(ariaLabelledBy)
+    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop.asInstanceOf[js.Any])
+    if (backdropClass != null) __obj.updateDynamic("backdropClass")(backdropClass)
+    if (!js.isUndefined(bindToController)) __obj.updateDynamic("bindToController")(bindToController)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (controller != null) __obj.updateDynamic("controller")(controller.asInstanceOf[js.Any])
+    if (controllerAs != null) __obj.updateDynamic("controllerAs")(controllerAs)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (openedClass != null) __obj.updateDynamic("openedClass")(openedClass)
+    if (resolve != null) __obj.updateDynamic("resolve")(resolve)
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (windowClass != null) __obj.updateDynamic("windowClass")(windowClass)
+    if (windowTemplateUrl != null) __obj.updateDynamic("windowTemplateUrl")(windowTemplateUrl)
+    if (windowTopClass != null) __obj.updateDynamic("windowTopClass")(windowTopClass)
+    __obj.asInstanceOf[IModalSettings]
+  }
+}
+

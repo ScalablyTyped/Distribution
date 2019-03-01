@@ -37,3 +37,24 @@ trait JasmineOptions extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object JasmineOptions {
+  @scala.inline
+  def apply(
+    config: js.Object = null,
+    errorOnFail: js.UndefOr[scala.Boolean] = js.undefined,
+    includeStackTrace: js.UndefOr[scala.Boolean] = js.undefined,
+    reporter: jasmineLib.jasmineNs.CustomReporter | js.Array[jasmineLib.jasmineNs.CustomReporter] = null,
+    timeout: scala.Int | scala.Double = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
+  ): JasmineOptions = {
+    val __obj = js.Dynamic.literal()
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(errorOnFail)) __obj.updateDynamic("errorOnFail")(errorOnFail)
+    if (!js.isUndefined(includeStackTrace)) __obj.updateDynamic("includeStackTrace")(includeStackTrace)
+    if (reporter != null) __obj.updateDynamic("reporter")(reporter.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[JasmineOptions]
+  }
+}
+

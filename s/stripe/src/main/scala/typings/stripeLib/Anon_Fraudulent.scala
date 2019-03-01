@@ -16,3 +16,16 @@ trait Anon_Fraudulent extends js.Object {
   var user_report: js.UndefOr[stripeLib.stripeLibStrings.fraudulent | stripeLib.stripeLibStrings.safe] = js.undefined
 }
 
+object Anon_Fraudulent {
+  @scala.inline
+  def apply(
+    stripe_report: stripeLib.stripeLibStrings.fraudulent = null,
+    user_report: stripeLib.stripeLibStrings.fraudulent | stripeLib.stripeLibStrings.safe = null
+  ): Anon_Fraudulent = {
+    val __obj = js.Dynamic.literal()
+    if (stripe_report != null) __obj.updateDynamic("stripe_report")(stripe_report)
+    if (user_report != null) __obj.updateDynamic("user_report")(user_report.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Fraudulent]
+  }
+}
+

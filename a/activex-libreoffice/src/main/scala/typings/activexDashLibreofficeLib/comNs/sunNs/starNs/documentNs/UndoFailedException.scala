@@ -17,3 +17,18 @@ trait UndoFailedException
   var Reason: js.Any
 }
 
+object UndoFailedException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Message: java.lang.String,
+    Reason: js.Any
+  ): UndoFailedException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("Reason")(Reason)
+    __obj.asInstanceOf[UndoFailedException]
+  }
+}
+

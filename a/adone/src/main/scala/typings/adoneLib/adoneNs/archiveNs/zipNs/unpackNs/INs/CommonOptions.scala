@@ -27,3 +27,18 @@ trait CommonOptions extends js.Object {
   var validateEntrySizes: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CommonOptions {
+  @scala.inline
+  def apply(
+    decodeStrings: js.UndefOr[scala.Boolean] = js.undefined,
+    lazyEntries: js.UndefOr[scala.Boolean] = js.undefined,
+    validateEntrySizes: js.UndefOr[scala.Boolean] = js.undefined
+  ): CommonOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(decodeStrings)) __obj.updateDynamic("decodeStrings")(decodeStrings)
+    if (!js.isUndefined(lazyEntries)) __obj.updateDynamic("lazyEntries")(lazyEntries)
+    if (!js.isUndefined(validateEntrySizes)) __obj.updateDynamic("validateEntrySizes")(validateEntrySizes)
+    __obj.asInstanceOf[CommonOptions]
+  }
+}
+

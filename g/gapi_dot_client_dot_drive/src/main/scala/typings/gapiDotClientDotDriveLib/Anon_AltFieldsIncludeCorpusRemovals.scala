@@ -55,3 +55,44 @@ trait Anon_AltFieldsIncludeCorpusRemovals extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltFieldsIncludeCorpusRemovals {
+  @scala.inline
+  def apply(
+    pageToken: java.lang.String,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    includeCorpusRemovals: js.UndefOr[scala.Boolean] = js.undefined,
+    includeRemoved: js.UndefOr[scala.Boolean] = js.undefined,
+    includeTeamDriveItems: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    restrictToMyDrive: js.UndefOr[scala.Boolean] = js.undefined,
+    spaces: java.lang.String = null,
+    supportsTeamDrives: js.UndefOr[scala.Boolean] = js.undefined,
+    teamDriveId: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltFieldsIncludeCorpusRemovals = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pageToken")(pageToken)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(includeCorpusRemovals)) __obj.updateDynamic("includeCorpusRemovals")(includeCorpusRemovals)
+    if (!js.isUndefined(includeRemoved)) __obj.updateDynamic("includeRemoved")(includeRemoved)
+    if (!js.isUndefined(includeTeamDriveItems)) __obj.updateDynamic("includeTeamDriveItems")(includeTeamDriveItems)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (!js.isUndefined(restrictToMyDrive)) __obj.updateDynamic("restrictToMyDrive")(restrictToMyDrive)
+    if (spaces != null) __obj.updateDynamic("spaces")(spaces)
+    if (!js.isUndefined(supportsTeamDrives)) __obj.updateDynamic("supportsTeamDrives")(supportsTeamDrives)
+    if (teamDriveId != null) __obj.updateDynamic("teamDriveId")(teamDriveId)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltFieldsIncludeCorpusRemovals]
+  }
+}
+

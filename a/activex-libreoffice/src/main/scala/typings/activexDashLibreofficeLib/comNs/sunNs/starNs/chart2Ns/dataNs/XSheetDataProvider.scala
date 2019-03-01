@@ -16,3 +16,28 @@ trait XSheetDataProvider
   ): scala.Boolean
 }
 
+object XSheetDataProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createDataSequenceByFormulaTokens: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.FormulaToken], 
+      XDataSequence
+    ],
+    createDataSequenceByFormulaTokensPossible: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.sheetNs.FormulaToken], 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSheetDataProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createDataSequenceByFormulaTokens")(createDataSequenceByFormulaTokens)
+    __obj.updateDynamic("createDataSequenceByFormulaTokensPossible")(createDataSequenceByFormulaTokensPossible)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSheetDataProvider]
+  }
+}
+

@@ -223,3 +223,83 @@ trait DataSourceSettings
   var urlParamsEncoding: js.UndefOr[js.Any] = js.undefined
 }
 
+object DataSourceSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for DataSourceSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    aggregateTransactions: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCommit: js.UndefOr[scala.Boolean] = js.undefined,
+    callback: js.Function = null,
+    callee: js.Any = null,
+    data: js.Array[_] = null,
+    dataBinding: js.Any = null,
+    dataBound: js.Any = null,
+    dataSource: js.Any = null,
+    fields: js.Array[_] = null,
+    filtering: DataSourceSettingsFiltering = null,
+    groupby: DataSourceSettingsGroupby = null,
+    id: java.lang.String = null,
+    localSchemaTransform: js.UndefOr[scala.Boolean] = js.undefined,
+    outputResultsName: java.lang.String = null,
+    paging: DataSourceSettingsPaging = null,
+    primaryKey: java.lang.String = null,
+    requestType: java.lang.String = null,
+    responseContentType: java.lang.String = null,
+    responseDataKey: java.lang.String = null,
+    responseDataType: java.lang.String = null,
+    responseTotalRecCountKey: java.lang.String = null,
+    rowAdded: js.Function = null,
+    rowDeleted: js.Function = null,
+    rowInserted: js.Function = null,
+    rowUpdated: js.Function = null,
+    schema: js.Any = null,
+    serializeTransactionLog: js.UndefOr[scala.Boolean] = js.undefined,
+    sorting: DataSourceSettingsSorting = null,
+    summaries: DataSourceSettingsSummaries = null,
+    `type`: java.lang.String = null,
+    updateUrl: java.lang.String = null,
+    urlParamsEncoded: js.Any = null,
+    urlParamsEncoding: js.Any = null
+  ): DataSourceSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(aggregateTransactions)) __obj.updateDynamic("aggregateTransactions")(aggregateTransactions)
+    if (!js.isUndefined(autoCommit)) __obj.updateDynamic("autoCommit")(autoCommit)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (callee != null) __obj.updateDynamic("callee")(callee)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataBinding != null) __obj.updateDynamic("dataBinding")(dataBinding)
+    if (dataBound != null) __obj.updateDynamic("dataBound")(dataBound)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (groupby != null) __obj.updateDynamic("groupby")(groupby)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(localSchemaTransform)) __obj.updateDynamic("localSchemaTransform")(localSchemaTransform)
+    if (outputResultsName != null) __obj.updateDynamic("outputResultsName")(outputResultsName)
+    if (paging != null) __obj.updateDynamic("paging")(paging)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (responseContentType != null) __obj.updateDynamic("responseContentType")(responseContentType)
+    if (responseDataKey != null) __obj.updateDynamic("responseDataKey")(responseDataKey)
+    if (responseDataType != null) __obj.updateDynamic("responseDataType")(responseDataType)
+    if (responseTotalRecCountKey != null) __obj.updateDynamic("responseTotalRecCountKey")(responseTotalRecCountKey)
+    if (rowAdded != null) __obj.updateDynamic("rowAdded")(rowAdded)
+    if (rowDeleted != null) __obj.updateDynamic("rowDeleted")(rowDeleted)
+    if (rowInserted != null) __obj.updateDynamic("rowInserted")(rowInserted)
+    if (rowUpdated != null) __obj.updateDynamic("rowUpdated")(rowUpdated)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    if (!js.isUndefined(serializeTransactionLog)) __obj.updateDynamic("serializeTransactionLog")(serializeTransactionLog)
+    if (sorting != null) __obj.updateDynamic("sorting")(sorting)
+    if (summaries != null) __obj.updateDynamic("summaries")(summaries)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    if (urlParamsEncoded != null) __obj.updateDynamic("urlParamsEncoded")(urlParamsEncoded)
+    if (urlParamsEncoding != null) __obj.updateDynamic("urlParamsEncoding")(urlParamsEncoding)
+    __obj.asInstanceOf[DataSourceSettings]
+  }
+}
+

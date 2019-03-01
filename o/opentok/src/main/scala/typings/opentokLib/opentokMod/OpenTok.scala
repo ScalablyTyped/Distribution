@@ -52,3 +52,72 @@ trait OpenTok extends js.Object {
   ): scala.Unit
 }
 
+object OpenTok {
+  @scala.inline
+  def apply(
+    createSession: js.Function2[
+      opentokLib.opentokMod.OpenTokNs.SessionOptions, 
+      js.Function2[
+        /* err */ stdLib.Error, 
+        /* session */ opentokLib.opentokMod.OpenTokNs.Session, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    deleteArchive: js.Function2[java.lang.String, js.Function1[/* err */ stdLib.Error, scala.Unit], scala.Unit],
+    generateToken: js.Function2[
+      java.lang.String, 
+      opentokLib.opentokMod.OpenTokNs.TokenOptions, 
+      opentokLib.opentokMod.OpenTokNs.Token
+    ],
+    getArchive: js.Function2[
+      java.lang.String, 
+      js.Function2[
+        /* err */ stdLib.Error, 
+        /* archive */ opentokLib.opentokMod.OpenTokNs.Archive, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    listArchives: js.Function2[
+      opentokLib.opentokMod.OpenTokNs.ListArchivesOptions, 
+      js.Function3[
+        /* err */ stdLib.Error, 
+        /* archives */ js.Array[opentokLib.opentokMod.OpenTokNs.Archive], 
+        /* totalCount */ scala.Double, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    startArchive: js.Function3[
+      java.lang.String, 
+      opentokLib.opentokMod.OpenTokNs.ArchiveOptions, 
+      js.Function2[
+        /* err */ stdLib.Error, 
+        /* archive */ opentokLib.opentokMod.OpenTokNs.Archive, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    stopArchive: js.Function2[
+      java.lang.String, 
+      js.Function2[
+        /* err */ stdLib.Error, 
+        /* archive */ opentokLib.opentokMod.OpenTokNs.Archive, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): OpenTok = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createSession")(createSession)
+    __obj.updateDynamic("deleteArchive")(deleteArchive)
+    __obj.updateDynamic("generateToken")(generateToken)
+    __obj.updateDynamic("getArchive")(getArchive)
+    __obj.updateDynamic("listArchives")(listArchives)
+    __obj.updateDynamic("startArchive")(startArchive)
+    __obj.updateDynamic("stopArchive")(stopArchive)
+    __obj.asInstanceOf[OpenTok]
+  }
+}
+

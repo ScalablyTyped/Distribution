@@ -98,3 +98,46 @@ trait RestlerOptions extends js.Object {
   var xml2js: js.UndefOr[js.Any] = js.undefined
 }
 
+object RestlerOptions {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String = null,
+    agent: js.Any = null,
+    client: js.Any = null,
+    data: js.Any = null,
+    decoding: java.lang.String = null,
+    encoding: java.lang.String = null,
+    followRedirects: js.UndefOr[scala.Boolean] = js.undefined,
+    headers: RestlerOptionsHeader = null,
+    method: java.lang.String = null,
+    multipart: js.UndefOr[scala.Boolean] = js.undefined,
+    parser: js.Any = null,
+    password: java.lang.String = null,
+    query: js.Any = null,
+    rejectUnauthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    username: java.lang.String = null,
+    xml2js: js.Any = null
+  ): RestlerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    if (agent != null) __obj.updateDynamic("agent")(agent)
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (decoding != null) __obj.updateDynamic("decoding")(decoding)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(followRedirects)) __obj.updateDynamic("followRedirects")(followRedirects)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (!js.isUndefined(multipart)) __obj.updateDynamic("multipart")(multipart)
+    if (parser != null) __obj.updateDynamic("parser")(parser)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(rejectUnauthorized)) __obj.updateDynamic("rejectUnauthorized")(rejectUnauthorized)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (username != null) __obj.updateDynamic("username")(username)
+    if (xml2js != null) __obj.updateDynamic("xml2js")(xml2js)
+    __obj.asInstanceOf[RestlerOptions]
+  }
+}
+

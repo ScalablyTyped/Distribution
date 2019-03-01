@@ -65,3 +65,33 @@ trait Options extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    completions: js.Function1[/* completion */ java.lang.String, _] = null,
+    configFiles: org.scalablytyped.runtime.StringDictionary[
+      org.scalablytyped.runtime.StringDictionary[java.lang.String | finedLib.finedMod.finedNs.PathSpec]
+    ] = null,
+    configName: java.lang.String = null,
+    extensions: interpretLib.interpretMod.Extensions = null,
+    moduleName: java.lang.String = null,
+    name: java.lang.String = null,
+    processTitle: java.lang.String = null,
+    v8flags: js.Array[java.lang.String] | (js.Function1[
+      /* cb */ js.Function2[/* err */ js.Any, /* flags */ js.Array[java.lang.String], scala.Unit], 
+      scala.Unit
+    ]) = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (completions != null) __obj.updateDynamic("completions")(completions)
+    if (configFiles != null) __obj.updateDynamic("configFiles")(configFiles)
+    if (configName != null) __obj.updateDynamic("configName")(configName)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (moduleName != null) __obj.updateDynamic("moduleName")(moduleName)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (processTitle != null) __obj.updateDynamic("processTitle")(processTitle)
+    if (v8flags != null) __obj.updateDynamic("v8flags")(v8flags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -33,3 +33,22 @@ trait INxLibraryMeasureDef extends js.Object {
   var qLabel: java.lang.String
 }
 
+object INxLibraryMeasureDef {
+  @scala.inline
+  def apply(
+    qActiveExpression: scala.Double,
+    qDef: java.lang.String,
+    qExpressions: js.Array[java.lang.String],
+    qLabel: java.lang.String,
+    qGrouping: NxGrpType = null
+  ): INxLibraryMeasureDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qActiveExpression")(qActiveExpression)
+    __obj.updateDynamic("qDef")(qDef)
+    __obj.updateDynamic("qExpressions")(qExpressions)
+    __obj.updateDynamic("qLabel")(qLabel)
+    if (qGrouping != null) __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
+    __obj.asInstanceOf[INxLibraryMeasureDef]
+  }
+}
+

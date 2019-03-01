@@ -21,3 +21,13 @@ trait ASPxClientTreeListBatchEditNodeValidatingEventArgs extends ASPxClientEvent
   var validationInfo: js.Object
 }
 
+object ASPxClientTreeListBatchEditNodeValidatingEventArgs {
+  @scala.inline
+  def apply(nodeKey: java.lang.String, validationInfo: js.Object): ASPxClientTreeListBatchEditNodeValidatingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("nodeKey")(nodeKey)
+    __obj.updateDynamic("validationInfo")(validationInfo)
+    __obj.asInstanceOf[ASPxClientTreeListBatchEditNodeValidatingEventArgs]
+  }
+}
+

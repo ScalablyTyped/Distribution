@@ -13,3 +13,18 @@ trait DataTypeField extends js.Object {
   var optional: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataTypeField {
+  @scala.inline
+  def apply(
+    format: java.lang.String = null,
+    name: java.lang.String = null,
+    optional: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataTypeField = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[DataTypeField]
+  }
+}
+

@@ -33,3 +33,60 @@ trait DatePicker extends js.Object {
   def setWidth(width: java.lang.String): DatePicker
 }
 
+object DatePicker {
+  @scala.inline
+  def apply(
+    addStyleDependentName: js.Function1[java.lang.String, DatePicker],
+    addStyleName: js.Function1[java.lang.String, DatePicker],
+    addValueChangeHandler: js.Function1[Handler, DatePicker],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setCurrentMonth: js.Function1[stdLib.Date, DatePicker],
+    setHeight: js.Function1[java.lang.String, DatePicker],
+    setId: js.Function1[java.lang.String, DatePicker],
+    setLayoutData: js.Function1[js.Object, DatePicker],
+    setName: js.Function1[java.lang.String, DatePicker],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      DatePicker
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, DatePicker],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, DatePicker],
+    setStyleAttributes: js.Function1[js.Object, DatePicker],
+    setStyleName: js.Function1[java.lang.String, DatePicker],
+    setStylePrimaryName: js.Function1[java.lang.String, DatePicker],
+    setTag: js.Function1[java.lang.String, DatePicker],
+    setTitle: js.Function1[java.lang.String, DatePicker],
+    setValue: js.Function1[stdLib.Date, DatePicker],
+    setVisible: js.Function1[scala.Boolean, DatePicker],
+    setWidth: js.Function1[java.lang.String, DatePicker]
+  ): DatePicker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
+    __obj.updateDynamic("addStyleName")(addStyleName)
+    __obj.updateDynamic("addValueChangeHandler")(addValueChangeHandler)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getTag")(getTag)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("setCurrentMonth")(setCurrentMonth)
+    __obj.updateDynamic("setHeight")(setHeight)
+    __obj.updateDynamic("setId")(setId)
+    __obj.updateDynamic("setLayoutData")(setLayoutData)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setPixelSize")(setPixelSize)
+    __obj.updateDynamic("setSize")(setSize)
+    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
+    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
+    __obj.updateDynamic("setStyleName")(setStyleName)
+    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
+    __obj.updateDynamic("setTag")(setTag)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.updateDynamic("setVisible")(setVisible)
+    __obj.updateDynamic("setWidth")(setWidth)
+    __obj.asInstanceOf[DatePicker]
+  }
+}
+

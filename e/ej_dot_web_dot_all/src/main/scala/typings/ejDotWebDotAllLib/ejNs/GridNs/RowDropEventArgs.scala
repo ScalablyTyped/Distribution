@@ -32,3 +32,28 @@ trait RowDropEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RowDropEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    draggableType: java.lang.String = null,
+    droppedRecords: js.Any = null,
+    model: js.Any = null,
+    rows: js.Any = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): RowDropEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (draggableType != null) __obj.updateDynamic("draggableType")(draggableType)
+    if (droppedRecords != null) __obj.updateDynamic("droppedRecords")(droppedRecords)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RowDropEventArgs]
+  }
+}
+

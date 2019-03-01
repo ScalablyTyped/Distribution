@@ -31,3 +31,15 @@ trait IRange extends js.Object {
   var qMinInclEq: scala.Boolean
 }
 
+object IRange {
+  @scala.inline
+  def apply(qMax: scala.Double, qMaxInclEq: scala.Boolean, qMin: scala.Double, qMinInclEq: scala.Boolean): IRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qMax")(qMax)
+    __obj.updateDynamic("qMaxInclEq")(qMaxInclEq)
+    __obj.updateDynamic("qMin")(qMin)
+    __obj.updateDynamic("qMinInclEq")(qMinInclEq)
+    __obj.asInstanceOf[IRange]
+  }
+}
+

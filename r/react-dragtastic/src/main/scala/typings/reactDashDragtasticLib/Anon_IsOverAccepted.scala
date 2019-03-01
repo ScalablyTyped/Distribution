@@ -10,3 +10,12 @@ trait Anon_IsOverAccepted extends js.Object {
   var isOverAccepted: scala.Boolean
 }
 
+object Anon_IsOverAccepted {
+  @scala.inline
+  def apply(isOverAccepted: scala.Boolean): Anon_IsOverAccepted = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isOverAccepted")(isOverAccepted)
+    __obj.asInstanceOf[Anon_IsOverAccepted]
+  }
+}
+

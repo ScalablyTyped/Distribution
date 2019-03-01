@@ -19,3 +19,13 @@ trait EntryPreview extends js.Object {
   var value: ObjectPreview
 }
 
+object EntryPreview {
+  @scala.inline
+  def apply(value: ObjectPreview, key: ObjectPreview = null): EntryPreview = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[EntryPreview]
+  }
+}
+

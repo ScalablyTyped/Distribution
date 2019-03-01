@@ -13,3 +13,22 @@ trait RenderItemInfo[ItemR] extends js.Object {
   def moveEnd(): scala.Unit
 }
 
+object RenderItemInfo {
+  @scala.inline
+  def apply[ItemR](
+    index: scala.Double,
+    isActive: scala.Boolean,
+    item: ItemR,
+    move: js.Function0[scala.Unit],
+    moveEnd: js.Function0[scala.Unit]
+  ): RenderItemInfo[ItemR] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    __obj.updateDynamic("move")(move)
+    __obj.updateDynamic("moveEnd")(moveEnd)
+    __obj.asInstanceOf[RenderItemInfo[ItemR]]
+  }
+}
+

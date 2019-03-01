@@ -38,3 +38,22 @@ trait IToasterProps
   var usePortal: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IToasterProps {
+  @scala.inline
+  def apply(
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    canEscapeKeyClear: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    position: ToasterPosition = null,
+    usePortal: js.UndefOr[scala.Boolean] = js.undefined
+  ): IToasterProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(canEscapeKeyClear)) __obj.updateDynamic("canEscapeKeyClear")(canEscapeKeyClear)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(usePortal)) __obj.updateDynamic("usePortal")(usePortal)
+    __obj.asInstanceOf[IToasterProps]
+  }
+}
+

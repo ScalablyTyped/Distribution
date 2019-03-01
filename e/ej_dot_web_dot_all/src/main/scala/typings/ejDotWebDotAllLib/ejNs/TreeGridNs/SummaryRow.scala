@@ -14,3 +14,13 @@ trait SummaryRow extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SummaryRow {
+  @scala.inline
+  def apply(summaryColumns: js.Array[SummaryRowsSummaryColumn] = null, title: java.lang.String = null): SummaryRow = {
+    val __obj = js.Dynamic.literal()
+    if (summaryColumns != null) __obj.updateDynamic("summaryColumns")(summaryColumns)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[SummaryRow]
+  }
+}
+

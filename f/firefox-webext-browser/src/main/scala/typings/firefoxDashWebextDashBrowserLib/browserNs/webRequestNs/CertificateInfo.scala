@@ -18,3 +18,28 @@ trait CertificateInfo extends js.Object {
   var validity: firefoxDashWebextDashBrowserLib.Anon_End
 }
 
+object CertificateInfo {
+  @scala.inline
+  def apply(
+    fingerprint: firefoxDashWebextDashBrowserLib.Anon_Sha1,
+    isBuiltInRoot: scala.Boolean,
+    issuer: java.lang.String,
+    serialNumber: java.lang.String,
+    subject: java.lang.String,
+    subjectPublicKeyInfoDigest: firefoxDashWebextDashBrowserLib.Anon_Sha256,
+    validity: firefoxDashWebextDashBrowserLib.Anon_End,
+    rawDER: js.Array[scala.Double] = null
+  ): CertificateInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fingerprint")(fingerprint)
+    __obj.updateDynamic("isBuiltInRoot")(isBuiltInRoot)
+    __obj.updateDynamic("issuer")(issuer)
+    __obj.updateDynamic("serialNumber")(serialNumber)
+    __obj.updateDynamic("subject")(subject)
+    __obj.updateDynamic("subjectPublicKeyInfoDigest")(subjectPublicKeyInfoDigest)
+    __obj.updateDynamic("validity")(validity)
+    if (rawDER != null) __obj.updateDynamic("rawDER")(rawDER)
+    __obj.asInstanceOf[CertificateInfo]
+  }
+}
+

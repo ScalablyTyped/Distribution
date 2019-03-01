@@ -26,3 +26,30 @@ trait IdentitytoolkitRelyingpartyVerifyPasswordRequest extends js.Object {
   var returnSecureToken: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartyVerifyPasswordRequest {
+  @scala.inline
+  def apply(
+    captchaChallenge: java.lang.String = null,
+    captchaResponse: java.lang.String = null,
+    delegatedProjectNumber: java.lang.String = null,
+    email: java.lang.String = null,
+    idToken: java.lang.String = null,
+    instanceId: java.lang.String = null,
+    password: java.lang.String = null,
+    pendingIdToken: java.lang.String = null,
+    returnSecureToken: js.UndefOr[scala.Boolean] = js.undefined
+  ): IdentitytoolkitRelyingpartyVerifyPasswordRequest = {
+    val __obj = js.Dynamic.literal()
+    if (captchaChallenge != null) __obj.updateDynamic("captchaChallenge")(captchaChallenge)
+    if (captchaResponse != null) __obj.updateDynamic("captchaResponse")(captchaResponse)
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (pendingIdToken != null) __obj.updateDynamic("pendingIdToken")(pendingIdToken)
+    if (!js.isUndefined(returnSecureToken)) __obj.updateDynamic("returnSecureToken")(returnSecureToken)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyPasswordRequest]
+  }
+}
+

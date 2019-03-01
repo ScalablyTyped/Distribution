@@ -10,3 +10,12 @@ trait ReportFailure extends js.Object {
   var errorCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReportFailure {
+  @scala.inline
+  def apply(errorCode: java.lang.String = null): ReportFailure = {
+    val __obj = js.Dynamic.literal()
+    if (errorCode != null) __obj.updateDynamic("errorCode")(errorCode)
+    __obj.asInstanceOf[ReportFailure]
+  }
+}
+

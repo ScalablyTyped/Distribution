@@ -29,3 +29,42 @@ trait Scripto extends js.Object {
   ): scala.Unit
 }
 
+object Scripto {
+  @scala.inline
+  def apply(
+    eval: js.Function4[
+      java.lang.String, 
+      js.Array[java.lang.String], 
+      js.Array[_], 
+      js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    evalSha: js.Function4[
+      java.lang.String, 
+      js.Array[java.lang.String], 
+      js.Array[_], 
+      js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    load: js.Function1[redisDashScriptoLib.redisDashScriptoMod.ScriptoNs.Scripts, scala.Unit],
+    loadFromDir: js.Function1[java.lang.String, scala.Unit],
+    loadFromFile: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    run: js.Function4[
+      java.lang.String, 
+      js.Array[java.lang.String], 
+      js.Array[_], 
+      js.Function2[/* err */ nodeLib.Error, /* result */ js.Any, scala.Unit], 
+      scala.Unit
+    ]
+  ): Scripto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eval")(eval)
+    __obj.updateDynamic("evalSha")(evalSha)
+    __obj.updateDynamic("load")(load)
+    __obj.updateDynamic("loadFromDir")(loadFromDir)
+    __obj.updateDynamic("loadFromFile")(loadFromFile)
+    __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[Scripto]
+  }
+}
+

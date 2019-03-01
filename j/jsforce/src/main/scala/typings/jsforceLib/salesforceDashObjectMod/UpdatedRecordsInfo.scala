@@ -10,3 +10,13 @@ trait UpdatedRecordsInfo extends js.Object {
   var latestDateCovered: java.lang.String
 }
 
+object UpdatedRecordsInfo {
+  @scala.inline
+  def apply(ids: js.Array[java.lang.String], latestDateCovered: java.lang.String): UpdatedRecordsInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ids")(ids)
+    __obj.updateDynamic("latestDateCovered")(latestDateCovered)
+    __obj.asInstanceOf[UpdatedRecordsInfo]
+  }
+}
+

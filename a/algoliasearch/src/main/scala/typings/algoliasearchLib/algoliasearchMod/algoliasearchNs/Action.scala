@@ -21,3 +21,16 @@ trait Action extends js.Object {
   var indexName: java.lang.String
 }
 
+object Action {
+  @scala.inline
+  def apply(
+    action: algoliasearchLib.algoliasearchLibStrings.addObject | algoliasearchLib.algoliasearchLibStrings.updateObject | algoliasearchLib.algoliasearchLibStrings.partialUpdateObject | algoliasearchLib.algoliasearchLibStrings.partialUpdateObjectNoCreate | algoliasearchLib.algoliasearchLibStrings.deleteObject | algoliasearchLib.algoliasearchLibStrings.delete | algoliasearchLib.algoliasearchLibStrings.clear,
+    indexName: java.lang.String
+  ): Action = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    __obj.updateDynamic("indexName")(indexName)
+    __obj.asInstanceOf[Action]
+  }
+}
+

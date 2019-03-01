@@ -15,3 +15,22 @@ trait Anon_3Apple extends js.Object {
   def rgb(apple: colorDashConvertLib.conversionsMod.APPLE): colorDashConvertLib.conversionsMod.RGB
 }
 
+object Anon_3Apple {
+  @scala.inline
+  def apply(
+    channels: colorDashConvertLib.colorDashConvertLibNumbers.`3`,
+    labels: js.Tuple3[
+      colorDashConvertLib.colorDashConvertLibStrings.r16, 
+      colorDashConvertLib.colorDashConvertLibStrings.g16, 
+      colorDashConvertLib.colorDashConvertLibStrings.b16
+    ],
+    rgb: js.Function1[colorDashConvertLib.conversionsMod.APPLE, colorDashConvertLib.conversionsMod.RGB]
+  ): Anon_3Apple = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channels")(channels)
+    __obj.updateDynamic("labels")(labels)
+    __obj.updateDynamic("rgb")(rgb)
+    __obj.asInstanceOf[Anon_3Apple]
+  }
+}
+

@@ -18,3 +18,26 @@ trait ILabelOptions extends js.Object {
   var showIntermediateLabels: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ILabelOptions {
+  @scala.inline
+  def apply(
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fillStyle: java.lang.String = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    intermediateLabelSameAxis: js.UndefOr[scala.Boolean] = js.undefined,
+    precision: scala.Int | scala.Double = null,
+    showIntermediateLabels: js.UndefOr[scala.Boolean] = js.undefined
+  ): ILabelOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (fillStyle != null) __obj.updateDynamic("fillStyle")(fillStyle)
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(intermediateLabelSameAxis)) __obj.updateDynamic("intermediateLabelSameAxis")(intermediateLabelSameAxis)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIntermediateLabels)) __obj.updateDynamic("showIntermediateLabels")(showIntermediateLabels)
+    __obj.asInstanceOf[ILabelOptions]
+  }
+}
+

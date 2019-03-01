@@ -14,3 +14,12 @@ trait StepIntoParameterType extends js.Object {
   var breakOnAsyncCall: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StepIntoParameterType {
+  @scala.inline
+  def apply(breakOnAsyncCall: js.UndefOr[scala.Boolean] = js.undefined): StepIntoParameterType = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(breakOnAsyncCall)) __obj.updateDynamic("breakOnAsyncCall")(breakOnAsyncCall)
+    __obj.asInstanceOf[StepIntoParameterType]
+  }
+}
+

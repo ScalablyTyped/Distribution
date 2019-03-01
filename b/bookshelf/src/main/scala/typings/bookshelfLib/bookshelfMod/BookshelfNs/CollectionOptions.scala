@@ -11,3 +11,14 @@ trait CollectionOptions[T] extends js.Object {
   ] = js.undefined
 }
 
+object CollectionOptions {
+  @scala.inline
+  def apply[T](
+    comparator: scala.Boolean | java.lang.String | (js.Function2[/* a */ T, /* b */ T, scala.Double]) = null
+  ): CollectionOptions[T] = {
+    val __obj = js.Dynamic.literal()
+    if (comparator != null) __obj.updateDynamic("comparator")(comparator.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CollectionOptions[T]]
+  }
+}
+

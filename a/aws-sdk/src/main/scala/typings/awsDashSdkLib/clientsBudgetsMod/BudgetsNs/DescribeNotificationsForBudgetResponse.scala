@@ -16,3 +16,13 @@ trait DescribeNotificationsForBudgetResponse extends js.Object {
   var Notifications: js.UndefOr[Notifications] = js.undefined
 }
 
+object DescribeNotificationsForBudgetResponse {
+  @scala.inline
+  def apply(NextToken: GenericString = null, Notifications: Notifications = null): DescribeNotificationsForBudgetResponse = {
+    val __obj = js.Dynamic.literal()
+    if (NextToken != null) __obj.updateDynamic("NextToken")(NextToken)
+    if (Notifications != null) __obj.updateDynamic("Notifications")(Notifications)
+    __obj.asInstanceOf[DescribeNotificationsForBudgetResponse]
+  }
+}
+

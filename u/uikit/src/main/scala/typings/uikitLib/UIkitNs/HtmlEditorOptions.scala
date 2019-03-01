@@ -34,3 +34,22 @@ trait HtmlEditorOptions extends js.Object {
   var toolbar: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object HtmlEditorOptions {
+  @scala.inline
+  def apply(
+    lblCodeview: java.lang.String = null,
+    lblPreview: java.lang.String = null,
+    maxsplitsize: scala.Int | scala.Double = null,
+    mode: java.lang.String = null,
+    toolbar: js.Array[java.lang.String] = null
+  ): HtmlEditorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (lblCodeview != null) __obj.updateDynamic("lblCodeview")(lblCodeview)
+    if (lblPreview != null) __obj.updateDynamic("lblPreview")(lblPreview)
+    if (maxsplitsize != null) __obj.updateDynamic("maxsplitsize")(maxsplitsize.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (toolbar != null) __obj.updateDynamic("toolbar")(toolbar)
+    __obj.asInstanceOf[HtmlEditorOptions]
+  }
+}
+

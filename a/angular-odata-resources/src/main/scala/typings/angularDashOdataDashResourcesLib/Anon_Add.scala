@@ -24,3 +24,40 @@ trait Anon_Add extends js.Object {
   var sub: js.Array[java.lang.String]
 }
 
+object Anon_Add {
+  @scala.inline
+  def apply(
+    add: js.Array[java.lang.String],
+    and: js.Array[java.lang.String],
+    div: js.Array[java.lang.String],
+    eq: js.Array[java.lang.String],
+    ge: js.Array[java.lang.String],
+    gt: js.Array[java.lang.String],
+    le: js.Array[java.lang.String],
+    lt: js.Array[java.lang.String],
+    mod: js.Array[java.lang.String],
+    mul: js.Array[java.lang.String],
+    ne: js.Array[java.lang.String],
+    not: js.Array[java.lang.String],
+    or: js.Array[java.lang.String],
+    sub: js.Array[java.lang.String]
+  ): Anon_Add = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("div")(div)
+    __obj.updateDynamic("eq")(eq)
+    __obj.updateDynamic("ge")(ge)
+    __obj.updateDynamic("gt")(gt)
+    __obj.updateDynamic("le")(le)
+    __obj.updateDynamic("lt")(lt)
+    __obj.updateDynamic("mod")(mod)
+    __obj.updateDynamic("mul")(mul)
+    __obj.updateDynamic("ne")(ne)
+    __obj.updateDynamic("not")(not)
+    __obj.updateDynamic("or")(or)
+    __obj.updateDynamic("sub")(sub)
+    __obj.asInstanceOf[Anon_Add]
+  }
+}
+

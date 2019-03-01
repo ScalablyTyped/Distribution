@@ -10,3 +10,13 @@ trait StatsParams extends js.Object {
   var to: java.lang.String
 }
 
+object StatsParams {
+  @scala.inline
+  def apply(from: java.lang.String, to: java.lang.String): StatsParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[StatsParams]
+  }
+}
+

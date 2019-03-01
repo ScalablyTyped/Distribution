@@ -50,3 +50,22 @@ trait SourceMapOptions extends js.Object {
   var sourcesContent: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SourceMapOptions {
+  @scala.inline
+  def apply(
+    annotation: scala.Boolean | java.lang.String = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    prev: js.Any = null,
+    safe: js.UndefOr[scala.Boolean] = js.undefined,
+    sourcesContent: js.UndefOr[scala.Boolean] = js.undefined
+  ): SourceMapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (!js.isUndefined(safe)) __obj.updateDynamic("safe")(safe)
+    if (!js.isUndefined(sourcesContent)) __obj.updateDynamic("sourcesContent")(sourcesContent)
+    __obj.asInstanceOf[SourceMapOptions]
+  }
+}
+

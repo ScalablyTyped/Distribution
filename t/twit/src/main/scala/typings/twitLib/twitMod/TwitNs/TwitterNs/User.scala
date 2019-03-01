@@ -51,3 +51,97 @@ trait User extends js.Object {
   var withheld_scope: java.lang.String
 }
 
+object User {
+  @scala.inline
+  def apply(
+    contributors_enabled: scala.Boolean,
+    created_at: java.lang.String,
+    default_profile: java.lang.String,
+    default_profile_image: java.lang.String,
+    description: java.lang.String,
+    entities: Entities,
+    favourites_count: scala.Double,
+    followers_count: scala.Double,
+    friends_count: scala.Double,
+    id: scala.Double,
+    id_str: java.lang.String,
+    lang: java.lang.String,
+    listed_count: scala.Double,
+    location: java.lang.String,
+    name: java.lang.String,
+    profile_background_color: java.lang.String,
+    profile_background_image_url: java.lang.String,
+    profile_background_image_url_https: java.lang.String,
+    profile_background_tile: scala.Boolean,
+    profile_banner_url: java.lang.String,
+    profile_image_url: java.lang.String,
+    profile_image_url_https: java.lang.String,
+    profile_link_color: java.lang.String,
+    profile_sidebar_border_color: java.lang.String,
+    profile_sidebar_fill_color: java.lang.String,
+    profile_text_color: java.lang.String,
+    profile_use_background_image: scala.Boolean,
+    `protected`: scala.Boolean,
+    screen_name: java.lang.String,
+    show_all_inline_media: scala.Boolean,
+    statuses_count: scala.Double,
+    url: java.lang.String,
+    verified: scala.Boolean,
+    withheld_in_countries: java.lang.String,
+    withheld_scope: java.lang.String,
+    follow_request_sent: js.UndefOr[scala.Boolean] = js.undefined,
+    following: js.UndefOr[scala.Boolean] = js.undefined,
+    geo_enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    is_translator: js.UndefOr[scala.Boolean] = js.undefined,
+    notifications: js.UndefOr[scala.Boolean] = js.undefined,
+    status: Status = null,
+    time_zone: java.lang.String = null,
+    utc_offset: scala.Int | scala.Double = null
+  ): User = {
+    val __obj = js.Dynamic.literal(`protected` = `protected`)
+    __obj.updateDynamic("contributors_enabled")(contributors_enabled)
+    __obj.updateDynamic("created_at")(created_at)
+    __obj.updateDynamic("default_profile")(default_profile)
+    __obj.updateDynamic("default_profile_image")(default_profile_image)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("entities")(entities)
+    __obj.updateDynamic("favourites_count")(favourites_count)
+    __obj.updateDynamic("followers_count")(followers_count)
+    __obj.updateDynamic("friends_count")(friends_count)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("id_str")(id_str)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("listed_count")(listed_count)
+    __obj.updateDynamic("location")(location)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("profile_background_color")(profile_background_color)
+    __obj.updateDynamic("profile_background_image_url")(profile_background_image_url)
+    __obj.updateDynamic("profile_background_image_url_https")(profile_background_image_url_https)
+    __obj.updateDynamic("profile_background_tile")(profile_background_tile)
+    __obj.updateDynamic("profile_banner_url")(profile_banner_url)
+    __obj.updateDynamic("profile_image_url")(profile_image_url)
+    __obj.updateDynamic("profile_image_url_https")(profile_image_url_https)
+    __obj.updateDynamic("profile_link_color")(profile_link_color)
+    __obj.updateDynamic("profile_sidebar_border_color")(profile_sidebar_border_color)
+    __obj.updateDynamic("profile_sidebar_fill_color")(profile_sidebar_fill_color)
+    __obj.updateDynamic("profile_text_color")(profile_text_color)
+    __obj.updateDynamic("profile_use_background_image")(profile_use_background_image)
+    __obj.updateDynamic("screen_name")(screen_name)
+    __obj.updateDynamic("show_all_inline_media")(show_all_inline_media)
+    __obj.updateDynamic("statuses_count")(statuses_count)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("verified")(verified)
+    __obj.updateDynamic("withheld_in_countries")(withheld_in_countries)
+    __obj.updateDynamic("withheld_scope")(withheld_scope)
+    if (!js.isUndefined(follow_request_sent)) __obj.updateDynamic("follow_request_sent")(follow_request_sent)
+    if (!js.isUndefined(following)) __obj.updateDynamic("following")(following)
+    if (!js.isUndefined(geo_enabled)) __obj.updateDynamic("geo_enabled")(geo_enabled)
+    if (!js.isUndefined(is_translator)) __obj.updateDynamic("is_translator")(is_translator)
+    if (!js.isUndefined(notifications)) __obj.updateDynamic("notifications")(notifications)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (time_zone != null) __obj.updateDynamic("time_zone")(time_zone)
+    if (utc_offset != null) __obj.updateDynamic("utc_offset")(utc_offset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[User]
+  }
+}
+

@@ -148,3 +148,60 @@ trait INxDimensionInfo extends js.Object {
   var qTags: js.Array[java.lang.String]
 }
 
+object INxDimensionInfo {
+  @scala.inline
+  def apply(
+    qApprMaxGlyphCount: scala.Double,
+    qAttrDimInfo: INxAttrDimInfo,
+    qAttrExprInfo: INxAttrExprInfo,
+    qCardinal: scala.Double,
+    qContinuousAxes: scala.Boolean,
+    qDerivedField: scala.Boolean,
+    qDimensionType: DimensionType,
+    qFallbackTitle: java.lang.String,
+    qGroupFallbackTitles: js.Array[java.lang.String],
+    qGroupFieldDefs: js.Array[java.lang.String],
+    qGroupPos: scala.Double,
+    qGrouping: NxGrpType,
+    qIsAutoFormat: scala.Boolean,
+    qIsCyclic: scala.Boolean,
+    qIsSemantic: scala.Boolean,
+    qLocked: scala.Boolean,
+    qMax: scala.Double,
+    qMin: scala.Double,
+    qReverseSort: scala.Boolean,
+    qStateCounts: INxStateCounts,
+    qTags: js.Array[java.lang.String],
+    qError: INxValidationError = null,
+    qNumFormat: FieldAttributesType = null,
+    qSortIndicator: SortIndicatorType = null
+  ): INxDimensionInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qApprMaxGlyphCount")(qApprMaxGlyphCount)
+    __obj.updateDynamic("qAttrDimInfo")(qAttrDimInfo)
+    __obj.updateDynamic("qAttrExprInfo")(qAttrExprInfo)
+    __obj.updateDynamic("qCardinal")(qCardinal)
+    __obj.updateDynamic("qContinuousAxes")(qContinuousAxes)
+    __obj.updateDynamic("qDerivedField")(qDerivedField)
+    __obj.updateDynamic("qDimensionType")(qDimensionType)
+    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
+    __obj.updateDynamic("qGroupFallbackTitles")(qGroupFallbackTitles)
+    __obj.updateDynamic("qGroupFieldDefs")(qGroupFieldDefs)
+    __obj.updateDynamic("qGroupPos")(qGroupPos)
+    __obj.updateDynamic("qGrouping")(qGrouping.asInstanceOf[js.Any])
+    __obj.updateDynamic("qIsAutoFormat")(qIsAutoFormat)
+    __obj.updateDynamic("qIsCyclic")(qIsCyclic)
+    __obj.updateDynamic("qIsSemantic")(qIsSemantic)
+    __obj.updateDynamic("qLocked")(qLocked)
+    __obj.updateDynamic("qMax")(qMax)
+    __obj.updateDynamic("qMin")(qMin)
+    __obj.updateDynamic("qReverseSort")(qReverseSort)
+    __obj.updateDynamic("qStateCounts")(qStateCounts)
+    __obj.updateDynamic("qTags")(qTags)
+    if (qError != null) __obj.updateDynamic("qError")(qError)
+    if (qNumFormat != null) __obj.updateDynamic("qNumFormat")(qNumFormat)
+    if (qSortIndicator != null) __obj.updateDynamic("qSortIndicator")(qSortIndicator)
+    __obj.asInstanceOf[INxDimensionInfo]
+  }
+}
+

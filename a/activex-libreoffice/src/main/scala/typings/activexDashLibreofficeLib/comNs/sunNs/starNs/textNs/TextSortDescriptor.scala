@@ -35,3 +35,82 @@ trait TextSortDescriptor
   var SortRowOrColumnNo2: scala.Double
 }
 
+object TextSortDescriptor {
+  @scala.inline
+  def apply(
+    CollatorAlgorithm: java.lang.String,
+    CollatorLocale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Delimiter: java.lang.String,
+    IsCaseSensitive: scala.Boolean,
+    IsSortAscending0: scala.Boolean,
+    IsSortAscending1: scala.Boolean,
+    IsSortAscending2: scala.Boolean,
+    IsSortInTable: scala.Boolean,
+    IsSortNumeric0: scala.Boolean,
+    IsSortNumeric1: scala.Boolean,
+    IsSortNumeric2: scala.Boolean,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    SortAscending: scala.Boolean,
+    SortColumns: scala.Boolean,
+    SortRowOrColumnNo0: scala.Double,
+    SortRowOrColumnNo1: scala.Double,
+    SortRowOrColumnNo2: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): TextSortDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CollatorAlgorithm")(CollatorAlgorithm)
+    __obj.updateDynamic("CollatorLocale")(CollatorLocale)
+    __obj.updateDynamic("Delimiter")(Delimiter)
+    __obj.updateDynamic("IsCaseSensitive")(IsCaseSensitive)
+    __obj.updateDynamic("IsSortAscending0")(IsSortAscending0)
+    __obj.updateDynamic("IsSortAscending1")(IsSortAscending1)
+    __obj.updateDynamic("IsSortAscending2")(IsSortAscending2)
+    __obj.updateDynamic("IsSortInTable")(IsSortInTable)
+    __obj.updateDynamic("IsSortNumeric0")(IsSortNumeric0)
+    __obj.updateDynamic("IsSortNumeric1")(IsSortNumeric1)
+    __obj.updateDynamic("IsSortNumeric2")(IsSortNumeric2)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("SortAscending")(SortAscending)
+    __obj.updateDynamic("SortColumns")(SortColumns)
+    __obj.updateDynamic("SortRowOrColumnNo0")(SortRowOrColumnNo0)
+    __obj.updateDynamic("SortRowOrColumnNo1")(SortRowOrColumnNo1)
+    __obj.updateDynamic("SortRowOrColumnNo2")(SortRowOrColumnNo2)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[TextSortDescriptor]
+  }
+}
+

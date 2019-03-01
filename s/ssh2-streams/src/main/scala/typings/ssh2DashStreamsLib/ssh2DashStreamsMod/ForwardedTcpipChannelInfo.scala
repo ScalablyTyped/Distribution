@@ -5,11 +5,29 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ForwardedTcpipChannelInfo extends js.Object {
+trait ForwardedTcpipChannelInfo extends ChannelOpenInfo {
   var data: TcpipChannelData
   var packetSize: scala.Double
   var sender: scala.Double
   var `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`forwarded-tcpip`
   var window: scala.Double
+}
+
+object ForwardedTcpipChannelInfo {
+  @scala.inline
+  def apply(
+    data: TcpipChannelData,
+    packetSize: scala.Double,
+    sender: scala.Double,
+    `type`: ssh2DashStreamsLib.ssh2DashStreamsLibStrings.`forwarded-tcpip`,
+    window: scala.Double
+  ): ForwardedTcpipChannelInfo = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("packetSize")(packetSize)
+    __obj.updateDynamic("sender")(sender)
+    __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[ForwardedTcpipChannelInfo]
+  }
 }
 

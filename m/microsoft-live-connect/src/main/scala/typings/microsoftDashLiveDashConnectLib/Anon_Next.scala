@@ -16,3 +16,13 @@ trait Anon_Next extends js.Object {
   var previous: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Next {
+  @scala.inline
+  def apply(next: java.lang.String = null, previous: java.lang.String = null): Anon_Next = {
+    val __obj = js.Dynamic.literal()
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (previous != null) __obj.updateDynamic("previous")(previous)
+    __obj.asInstanceOf[Anon_Next]
+  }
+}
+

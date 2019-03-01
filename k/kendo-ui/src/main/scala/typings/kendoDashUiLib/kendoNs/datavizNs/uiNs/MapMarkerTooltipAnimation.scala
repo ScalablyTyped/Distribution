@@ -10,3 +10,13 @@ trait MapMarkerTooltipAnimation extends js.Object {
   var open: js.UndefOr[MapMarkerTooltipAnimationOpen] = js.undefined
 }
 
+object MapMarkerTooltipAnimation {
+  @scala.inline
+  def apply(close: MapMarkerTooltipAnimationClose = null, open: MapMarkerTooltipAnimationOpen = null): MapMarkerTooltipAnimation = {
+    val __obj = js.Dynamic.literal()
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (open != null) __obj.updateDynamic("open")(open)
+    __obj.asInstanceOf[MapMarkerTooltipAnimation]
+  }
+}
+

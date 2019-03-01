@@ -10,3 +10,16 @@ trait ResponsesObject
   var default: Response
 }
 
+object ResponsesObject {
+  @scala.inline
+  def apply(
+    default: Response,
+    StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[Response | js.Any] = null
+  ): ResponsesObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("default")(default)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ResponsesObject]
+  }
+}
+

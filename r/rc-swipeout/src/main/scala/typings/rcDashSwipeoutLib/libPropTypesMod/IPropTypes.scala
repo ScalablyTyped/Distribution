@@ -16,3 +16,28 @@ trait IPropTypes extends js.Object {
   var style: js.UndefOr[js.Any] = js.undefined
 }
 
+object IPropTypes {
+  @scala.inline
+  def apply(
+    autoClose: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    left: js.Array[rcDashSwipeoutLib.Anon_ClassName] = null,
+    onClose: js.Function0[scala.Unit] = null,
+    onOpen: js.Function0[scala.Unit] = null,
+    prefixCls: java.lang.String = null,
+    right: js.Array[rcDashSwipeoutLib.Anon_ClassName] = null,
+    style: js.Any = null
+  ): IPropTypes = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoClose)) __obj.updateDynamic("autoClose")(autoClose)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onOpen != null) __obj.updateDynamic("onOpen")(onOpen)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (right != null) __obj.updateDynamic("right")(right)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[IPropTypes]
+  }
+}
+

@@ -9,3 +9,16 @@ trait IConfiguredThemes
   extends IThemes
      with /* name */ org.scalablytyped.runtime.StringDictionary[ITheme]
 
+object IConfiguredThemes {
+  @scala.inline
+  def apply(
+    default: ITheme,
+    StringDictionary: /* name */ org.scalablytyped.runtime.StringDictionary[ITheme] = null
+  ): IConfiguredThemes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("default")(default)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[IConfiguredThemes]
+  }
+}
+

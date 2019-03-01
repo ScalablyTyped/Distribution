@@ -12,3 +12,13 @@ trait ServerCertificateVerificationDetails extends js.Object {
   var serverCertificateChain: js.Array[stdLib.ArrayBuffer]
 }
 
+object ServerCertificateVerificationDetails {
+  @scala.inline
+  def apply(hostname: java.lang.String, serverCertificateChain: js.Array[stdLib.ArrayBuffer]): ServerCertificateVerificationDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hostname")(hostname)
+    __obj.updateDynamic("serverCertificateChain")(serverCertificateChain)
+    __obj.asInstanceOf[ServerCertificateVerificationDetails]
+  }
+}
+

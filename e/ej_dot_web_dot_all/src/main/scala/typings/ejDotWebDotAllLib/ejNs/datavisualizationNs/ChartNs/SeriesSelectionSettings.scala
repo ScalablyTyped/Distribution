@@ -41,3 +41,30 @@ trait SeriesSelectionSettings extends js.Object {
   var `type`: js.UndefOr[SelectionType | java.lang.String] = js.undefined
 }
 
+object SeriesSelectionSettings {
+  @scala.inline
+  def apply(
+    border: SeriesSelectionSettingsBorder = null,
+    color: java.lang.String = null,
+    customPattern: java.lang.String = null,
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: Mode | java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    pattern: java.lang.String = null,
+    rangeType: RangeType | java.lang.String = null,
+    `type`: SelectionType | java.lang.String = null
+  ): SeriesSelectionSettings = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (customPattern != null) __obj.updateDynamic("customPattern")(customPattern)
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (pattern != null) __obj.updateDynamic("pattern")(pattern)
+    if (rangeType != null) __obj.updateDynamic("rangeType")(rangeType.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesSelectionSettings]
+  }
+}
+

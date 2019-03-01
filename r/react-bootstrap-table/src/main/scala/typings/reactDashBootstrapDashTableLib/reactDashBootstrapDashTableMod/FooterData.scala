@@ -33,3 +33,23 @@ trait FooterData extends js.Object {
   var label: java.lang.String
 }
 
+object FooterData {
+  @scala.inline
+  def apply(
+    columnIndex: scala.Double,
+    label: java.lang.String,
+    align: DataAlignType = null,
+    formatter: js.Function1[
+      /* tableData */ js.Array[_], 
+      java.lang.String | scala.Double | reactLib.reactMod.ReactNs.ReactElement[_]
+    ] = null
+  ): FooterData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnIndex")(columnIndex)
+    __obj.updateDynamic("label")(label)
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    __obj.asInstanceOf[FooterData]
+  }
+}
+

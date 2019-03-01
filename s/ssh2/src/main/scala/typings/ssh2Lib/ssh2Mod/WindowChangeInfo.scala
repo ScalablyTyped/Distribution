@@ -16,3 +16,15 @@ trait WindowChangeInfo extends js.Object {
   var width: scala.Double
 }
 
+object WindowChangeInfo {
+  @scala.inline
+  def apply(cols: scala.Double, height: scala.Double, rows: scala.Double, width: scala.Double): WindowChangeInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cols")(cols)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("rows")(rows)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[WindowChangeInfo]
+  }
+}
+

@@ -32,3 +32,36 @@ trait Anon_ApplicationDirectory extends js.Object {
   var tempDirectory: java.lang.String
 }
 
+object Anon_ApplicationDirectory {
+  @scala.inline
+  def apply(
+    applicationDirectory: java.lang.String,
+    applicationStorageDirectory: java.lang.String,
+    cacheDirectory: java.lang.String,
+    dataDirectory: java.lang.String,
+    documentsDirectory: java.lang.String,
+    externalApplicationStorageDirectory: java.lang.String,
+    externalCacheDirectory: java.lang.String,
+    externalDataDirectory: java.lang.String,
+    externalRootDirectory: java.lang.String,
+    sharedDirectory: java.lang.String,
+    syncedDataDirectory: java.lang.String,
+    tempDirectory: java.lang.String
+  ): Anon_ApplicationDirectory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applicationDirectory")(applicationDirectory)
+    __obj.updateDynamic("applicationStorageDirectory")(applicationStorageDirectory)
+    __obj.updateDynamic("cacheDirectory")(cacheDirectory)
+    __obj.updateDynamic("dataDirectory")(dataDirectory)
+    __obj.updateDynamic("documentsDirectory")(documentsDirectory)
+    __obj.updateDynamic("externalApplicationStorageDirectory")(externalApplicationStorageDirectory)
+    __obj.updateDynamic("externalCacheDirectory")(externalCacheDirectory)
+    __obj.updateDynamic("externalDataDirectory")(externalDataDirectory)
+    __obj.updateDynamic("externalRootDirectory")(externalRootDirectory)
+    __obj.updateDynamic("sharedDirectory")(sharedDirectory)
+    __obj.updateDynamic("syncedDataDirectory")(syncedDataDirectory)
+    __obj.updateDynamic("tempDirectory")(tempDirectory)
+    __obj.asInstanceOf[Anon_ApplicationDirectory]
+  }
+}
+

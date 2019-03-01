@@ -10,31 +10,40 @@ object chosenDashJsLibStrings {
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait `chosen:activate` extends js.Object
+  sealed trait `chosen:activate`
+    extends chosenDashJsLib.ChosenNs.TriggerEvent
   
   @js.native
-  sealed trait `chosen:close` extends js.Object
+  sealed trait `chosen:close`
+    extends chosenDashJsLib.ChosenNs.TriggerEvent
   
   @js.native
-  sealed trait `chosen:hiding_dropdown` extends js.Object
+  sealed trait `chosen:hiding_dropdown`
+    extends chosenDashJsLib.ChosenNs.OnEvent
   
   @js.native
-  sealed trait `chosen:maxselected` extends js.Object
+  sealed trait `chosen:maxselected`
+    extends chosenDashJsLib.ChosenNs.OnEvent
   
   @js.native
-  sealed trait `chosen:no_results` extends js.Object
+  sealed trait `chosen:no_results`
+    extends chosenDashJsLib.ChosenNs.OnEvent
   
   @js.native
-  sealed trait `chosen:open` extends js.Object
+  sealed trait `chosen:open`
+    extends chosenDashJsLib.ChosenNs.TriggerEvent
   
   @js.native
-  sealed trait `chosen:ready` extends js.Object
+  sealed trait `chosen:ready`
+    extends chosenDashJsLib.ChosenNs.OnEvent
   
   @js.native
-  sealed trait `chosen:showing_dropdown` extends js.Object
+  sealed trait `chosen:showing_dropdown`
+    extends chosenDashJsLib.ChosenNs.OnEvent
   
   @js.native
-  sealed trait `chosen:updated` extends js.Object
+  sealed trait `chosen:updated`
+    extends chosenDashJsLib.ChosenNs.TriggerEvent
   
   @js.native
   sealed trait destroy extends js.Object

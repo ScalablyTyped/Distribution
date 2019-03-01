@@ -12,3 +12,20 @@ trait Anon_CssModule extends js.Object {
   def onClickHandler(): scala.Unit
 }
 
+object Anon_CssModule {
+  @scala.inline
+  def apply(
+    direction: reactstrapLib.reactstrapLibStrings.prev | reactstrapLib.reactstrapLibStrings.next,
+    directionText: java.lang.String,
+    onClickHandler: js.Function0[scala.Unit],
+    cssModule: reactstrapLib.reactstrapMod.CSSModule = null
+  ): Anon_CssModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("direction")(direction.asInstanceOf[js.Any])
+    __obj.updateDynamic("directionText")(directionText)
+    __obj.updateDynamic("onClickHandler")(onClickHandler)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    __obj.asInstanceOf[Anon_CssModule]
+  }
+}
+

@@ -11,3 +11,14 @@ trait Anon_BucketArn extends js.Object {
   var roleArn: java.lang.String
 }
 
+object Anon_BucketArn {
+  @scala.inline
+  def apply(bucketArn: java.lang.String, fileKey: java.lang.String, roleArn: java.lang.String): Anon_BucketArn = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucketArn")(bucketArn)
+    __obj.updateDynamic("fileKey")(fileKey)
+    __obj.updateDynamic("roleArn")(roleArn)
+    __obj.asInstanceOf[Anon_BucketArn]
+  }
+}
+

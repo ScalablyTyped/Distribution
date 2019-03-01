@@ -15,3 +15,26 @@ trait SubQuery[T] extends js.Object {
   def where(nodes: js.Any*): SubQuery[T]
 }
 
+object SubQuery {
+  @scala.inline
+  def apply[T](
+    exists: js.Function0[BinaryNode],
+    from: js.Function1[TableNode, SubQuery[T]],
+    group: js.Function1[/* repeated */ js.Any, Group[SubQuery[T]]],
+    notExists: js.Function1[SubQuery[_], BinaryNode],
+    order: js.Function1[OrderByValueNode, SubQuery[T]],
+    select: js.Function1[Column[T], SubQuery[T]],
+    where: js.Function1[/* repeated */ js.Any, SubQuery[T]]
+  ): SubQuery[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exists")(exists)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("notExists")(notExists)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("select")(select)
+    __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[SubQuery[T]]
+  }
+}
+

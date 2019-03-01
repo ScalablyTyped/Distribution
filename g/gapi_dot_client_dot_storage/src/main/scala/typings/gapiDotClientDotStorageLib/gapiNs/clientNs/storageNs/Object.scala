@@ -70,3 +70,68 @@ trait Object extends js.Object {
   var updated: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Object {
+  @scala.inline
+  def apply(
+    acl: js.Array[ObjectAccessControl] = null,
+    bucket: java.lang.String = null,
+    cacheControl: java.lang.String = null,
+    componentCount: scala.Int | scala.Double = null,
+    contentDisposition: java.lang.String = null,
+    contentEncoding: java.lang.String = null,
+    contentLanguage: java.lang.String = null,
+    contentType: java.lang.String = null,
+    crc32c: java.lang.String = null,
+    customerEncryption: gapiDotClientDotStorageLib.Anon_EncryptionAlgorithm = null,
+    etag: java.lang.String = null,
+    generation: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    kmsKeyName: java.lang.String = null,
+    md5Hash: java.lang.String = null,
+    mediaLink: java.lang.String = null,
+    metadata: stdLib.Record[java.lang.String, java.lang.String] = null,
+    metageneration: java.lang.String = null,
+    name: java.lang.String = null,
+    owner: gapiDotClientDotStorageLib.Anon_Entity = null,
+    selfLink: java.lang.String = null,
+    size: java.lang.String = null,
+    storageClass: java.lang.String = null,
+    timeCreated: java.lang.String = null,
+    timeDeleted: java.lang.String = null,
+    timeStorageClassUpdated: java.lang.String = null,
+    updated: java.lang.String = null
+  ): Object = {
+    val __obj = js.Dynamic.literal()
+    if (acl != null) __obj.updateDynamic("acl")(acl)
+    if (bucket != null) __obj.updateDynamic("bucket")(bucket)
+    if (cacheControl != null) __obj.updateDynamic("cacheControl")(cacheControl)
+    if (componentCount != null) __obj.updateDynamic("componentCount")(componentCount.asInstanceOf[js.Any])
+    if (contentDisposition != null) __obj.updateDynamic("contentDisposition")(contentDisposition)
+    if (contentEncoding != null) __obj.updateDynamic("contentEncoding")(contentEncoding)
+    if (contentLanguage != null) __obj.updateDynamic("contentLanguage")(contentLanguage)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (crc32c != null) __obj.updateDynamic("crc32c")(crc32c)
+    if (customerEncryption != null) __obj.updateDynamic("customerEncryption")(customerEncryption)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (generation != null) __obj.updateDynamic("generation")(generation)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)
+    if (md5Hash != null) __obj.updateDynamic("md5Hash")(md5Hash)
+    if (mediaLink != null) __obj.updateDynamic("mediaLink")(mediaLink)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (metageneration != null) __obj.updateDynamic("metageneration")(metageneration)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass)
+    if (timeCreated != null) __obj.updateDynamic("timeCreated")(timeCreated)
+    if (timeDeleted != null) __obj.updateDynamic("timeDeleted")(timeDeleted)
+    if (timeStorageClassUpdated != null) __obj.updateDynamic("timeStorageClassUpdated")(timeStorageClassUpdated)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    __obj.asInstanceOf[Object]
+  }
+}
+

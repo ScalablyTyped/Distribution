@@ -52,3 +52,34 @@ trait Label extends js.Object {
   var y: scala.Double | java.lang.String
 }
 
+object Label {
+  @scala.inline
+  def apply(
+    align: java.lang.String,
+    alpha: scala.Double,
+    bold: scala.Boolean,
+    color: java.lang.String,
+    id: java.lang.String,
+    rotation: scala.Double,
+    size: scala.Double,
+    text: java.lang.String,
+    url: java.lang.String,
+    x: scala.Double | java.lang.String,
+    y: scala.Double | java.lang.String
+  ): Label = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("align")(align)
+    __obj.updateDynamic("alpha")(alpha)
+    __obj.updateDynamic("bold")(bold)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("rotation")(rotation)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Label]
+  }
+}
+

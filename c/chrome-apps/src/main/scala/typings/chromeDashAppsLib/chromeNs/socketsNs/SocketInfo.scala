@@ -28,3 +28,32 @@ trait SocketInfo extends js.Object {
   var socketId: chromeDashAppsLib.chromeNs.integer
 }
 
+object SocketInfo {
+  @scala.inline
+  def apply(
+    connected: scala.Boolean,
+    paused: scala.Boolean,
+    persistent: scala.Boolean,
+    socketId: chromeDashAppsLib.chromeNs.integer,
+    bufferSize: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    localAddress: java.lang.String = null,
+    localPort: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    name: java.lang.String = null,
+    peerAddress: java.lang.String = null,
+    peerPort: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): SocketInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connected")(connected)
+    __obj.updateDynamic("paused")(paused)
+    __obj.updateDynamic("persistent")(persistent)
+    __obj.updateDynamic("socketId")(socketId)
+    if (!js.isUndefined(bufferSize)) __obj.updateDynamic("bufferSize")(bufferSize)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (!js.isUndefined(localPort)) __obj.updateDynamic("localPort")(localPort)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (peerAddress != null) __obj.updateDynamic("peerAddress")(peerAddress)
+    if (!js.isUndefined(peerPort)) __obj.updateDynamic("peerPort")(peerPort)
+    __obj.asInstanceOf[SocketInfo]
+  }
+}
+

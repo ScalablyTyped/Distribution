@@ -10,3 +10,12 @@ trait ReturnInfo extends js.Object {
   var reason: java.lang.String
 }
 
+object ReturnInfo {
+  @scala.inline
+  def apply(reason: java.lang.String): ReturnInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[ReturnInfo]
+  }
+}
+

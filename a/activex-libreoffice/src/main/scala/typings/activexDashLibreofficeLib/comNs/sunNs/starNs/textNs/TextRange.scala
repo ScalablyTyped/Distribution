@@ -28,3 +28,32 @@ trait TextRange
      with activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesAsian
      with activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesComplex
 
+object TextRange {
+  @scala.inline
+  def apply(
+    CharacterProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterProperties = null,
+    CharacterPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesAsian = null,
+    CharacterPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.CharacterPropertiesComplex = null,
+    ParagraphProperties: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphProperties = null,
+    ParagraphPropertiesAsian: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesAsian = null,
+    ParagraphPropertiesComplex: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.ParagraphPropertiesComplex = null,
+    XContentEnumerationAccess: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContentEnumerationAccess = null,
+    XPropertySet: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySet = null,
+    XPropertyState: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyState = null,
+    XTextRange: XTextRange = null
+  ): TextRange = {
+    val __obj = js.Dynamic.literal()
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, CharacterPropertiesComplex)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesAsian)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ParagraphPropertiesComplex)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XContentEnumerationAccess)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XPropertySet)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XPropertyState)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XTextRange)
+    __obj.asInstanceOf[TextRange]
+  }
+}
+

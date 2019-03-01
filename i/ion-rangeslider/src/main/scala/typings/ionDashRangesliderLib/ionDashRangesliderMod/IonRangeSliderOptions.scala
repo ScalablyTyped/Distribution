@@ -93,3 +93,98 @@ trait IonRangeSliderOptions extends js.Object {
   var values_separator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IonRangeSliderOptions {
+  @scala.inline
+  def apply(
+    block: js.UndefOr[scala.Boolean] = js.undefined,
+    decorate_both: js.UndefOr[scala.Boolean] = js.undefined,
+    disable: js.UndefOr[scala.Boolean] = js.undefined,
+    drag_interval: js.UndefOr[scala.Boolean] = js.undefined,
+    extra_classes: java.lang.String = null,
+    force_edges: js.UndefOr[scala.Boolean] = js.undefined,
+    from: scala.Int | scala.Double = null,
+    from_fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    from_max: scala.Int | scala.Double = null,
+    from_min: scala.Int | scala.Double = null,
+    from_shadow: js.UndefOr[scala.Boolean] = js.undefined,
+    grid: js.UndefOr[scala.Boolean] = js.undefined,
+    grid_margin: js.UndefOr[scala.Boolean] = js.undefined,
+    grid_num: scala.Int | scala.Double = null,
+    grid_snap: js.UndefOr[scala.Boolean] = js.undefined,
+    hide_from_to: js.UndefOr[scala.Boolean] = js.undefined,
+    hide_min_max: js.UndefOr[scala.Boolean] = js.undefined,
+    input_values_separator: java.lang.String = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    max: scala.Int | scala.Double = null,
+    max_interval: scala.Int | scala.Double = null,
+    max_postfix: java.lang.String = null,
+    min: scala.Int | scala.Double = null,
+    min_interval: scala.Int | scala.Double = null,
+    onChange: js.Function1[/* obj */ IonRangeSliderEvent, scala.Unit] = null,
+    onFinish: js.Function1[/* obj */ IonRangeSliderEvent, scala.Unit] = null,
+    onStart: js.Function1[/* obj */ IonRangeSliderEvent, scala.Unit] = null,
+    onUpdate: js.Function1[/* obj */ IonRangeSliderEvent, scala.Unit] = null,
+    postfix: java.lang.String = null,
+    prefix: java.lang.String = null,
+    prettify: js.Function1[/* num */ scala.Double, java.lang.String] = null,
+    prettify_enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    prettify_separator: java.lang.String = null,
+    scope: js.Any = null,
+    step: scala.Int | scala.Double = null,
+    to: scala.Int | scala.Double = null,
+    to_fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    to_max: scala.Int | scala.Double = null,
+    to_min: scala.Int | scala.Double = null,
+    to_shadow: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    values: js.Array[_] = null,
+    values_separator: java.lang.String = null
+  ): IonRangeSliderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
+    if (!js.isUndefined(decorate_both)) __obj.updateDynamic("decorate_both")(decorate_both)
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (!js.isUndefined(drag_interval)) __obj.updateDynamic("drag_interval")(drag_interval)
+    if (extra_classes != null) __obj.updateDynamic("extra_classes")(extra_classes)
+    if (!js.isUndefined(force_edges)) __obj.updateDynamic("force_edges")(force_edges)
+    if (from != null) __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    if (!js.isUndefined(from_fixed)) __obj.updateDynamic("from_fixed")(from_fixed)
+    if (from_max != null) __obj.updateDynamic("from_max")(from_max.asInstanceOf[js.Any])
+    if (from_min != null) __obj.updateDynamic("from_min")(from_min.asInstanceOf[js.Any])
+    if (!js.isUndefined(from_shadow)) __obj.updateDynamic("from_shadow")(from_shadow)
+    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)
+    if (!js.isUndefined(grid_margin)) __obj.updateDynamic("grid_margin")(grid_margin)
+    if (grid_num != null) __obj.updateDynamic("grid_num")(grid_num.asInstanceOf[js.Any])
+    if (!js.isUndefined(grid_snap)) __obj.updateDynamic("grid_snap")(grid_snap)
+    if (!js.isUndefined(hide_from_to)) __obj.updateDynamic("hide_from_to")(hide_from_to)
+    if (!js.isUndefined(hide_min_max)) __obj.updateDynamic("hide_min_max")(hide_min_max)
+    if (input_values_separator != null) __obj.updateDynamic("input_values_separator")(input_values_separator)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (max_interval != null) __obj.updateDynamic("max_interval")(max_interval.asInstanceOf[js.Any])
+    if (max_postfix != null) __obj.updateDynamic("max_postfix")(max_postfix)
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (min_interval != null) __obj.updateDynamic("min_interval")(min_interval.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onFinish != null) __obj.updateDynamic("onFinish")(onFinish)
+    if (onStart != null) __obj.updateDynamic("onStart")(onStart)
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (postfix != null) __obj.updateDynamic("postfix")(postfix)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (prettify != null) __obj.updateDynamic("prettify")(prettify)
+    if (!js.isUndefined(prettify_enabled)) __obj.updateDynamic("prettify_enabled")(prettify_enabled)
+    if (prettify_separator != null) __obj.updateDynamic("prettify_separator")(prettify_separator)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (to != null) __obj.updateDynamic("to")(to.asInstanceOf[js.Any])
+    if (!js.isUndefined(to_fixed)) __obj.updateDynamic("to_fixed")(to_fixed)
+    if (to_max != null) __obj.updateDynamic("to_max")(to_max.asInstanceOf[js.Any])
+    if (to_min != null) __obj.updateDynamic("to_min")(to_min.asInstanceOf[js.Any])
+    if (!js.isUndefined(to_shadow)) __obj.updateDynamic("to_shadow")(to_shadow)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (values != null) __obj.updateDynamic("values")(values)
+    if (values_separator != null) __obj.updateDynamic("values_separator")(values_separator)
+    __obj.asInstanceOf[IonRangeSliderOptions]
+  }
+}
+

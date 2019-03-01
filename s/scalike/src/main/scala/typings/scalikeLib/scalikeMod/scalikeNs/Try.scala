@@ -26,3 +26,52 @@ trait Try[A] extends js.Object {
   def transform[B](fs: js.Function1[/* a */ A, Try[B]], ff: js.Function1[/* e */ stdLib.Error, Try[B]]): Try[B]
 }
 
+object Try {
+  @scala.inline
+  def apply[A](
+    apply1: js.Function2[Try[js.Any], js.Function2[/* a */ A, js.Any, js.Any], Try[js.Any]],
+    apply2: js.Function3[Try[js.Any], Try[js.Any], js.Function3[/* a */ A, js.Any, js.Any, js.Any], Try[js.Any]],
+    chain: js.Function1[Try[js.Any], TryBuilder1[A, js.Any]],
+    failed: js.Function0[Try[A]],
+    filter: js.Function1[js.Function1[/* a */ A, scala.Boolean], Try[A]],
+    flatMap: js.Function1[js.Function1[/* a */ A, Try[js.Any]], Try[js.Any]],
+    fold: js.Function2[js.Function1[/* e */ stdLib.Error, js.Any], js.Function1[/* a */ A, js.Any], js.Any],
+    foreach: js.Function1[js.Function1[/* a */ A, scala.Unit], scala.Unit],
+    get: js.Function0[A],
+    getError: js.Function0[stdLib.Error],
+    getOrElse: js.Function1[js.Any, A],
+    isFailure: scala.Boolean,
+    isSuccess: scala.Boolean,
+    map: js.Function1[js.Function1[/* a */ A, js.Any], Try[js.Any]],
+    orElse: js.Function1[Try[js.Any], Try[A]],
+    recover: js.Function1[js.Function1[/* e */ stdLib.Error, Optional[Try[js.Any]]], Try[A]],
+    toOptional: js.Function0[Optional[A]],
+    transform: js.Function2[
+      js.Function1[/* a */ A, Try[js.Any]], 
+      js.Function1[/* e */ stdLib.Error, Try[js.Any]], 
+      Try[js.Any]
+    ]
+  ): Try[A] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apply1")(apply1)
+    __obj.updateDynamic("apply2")(apply2)
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("failed")(failed)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("flatMap")(flatMap)
+    __obj.updateDynamic("fold")(fold)
+    __obj.updateDynamic("foreach")(foreach)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getError")(getError)
+    __obj.updateDynamic("getOrElse")(getOrElse)
+    __obj.updateDynamic("isFailure")(isFailure)
+    __obj.updateDynamic("isSuccess")(isSuccess)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("orElse")(orElse)
+    __obj.updateDynamic("recover")(recover)
+    __obj.updateDynamic("toOptional")(toOptional)
+    __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[Try[A]]
+  }
+}
+

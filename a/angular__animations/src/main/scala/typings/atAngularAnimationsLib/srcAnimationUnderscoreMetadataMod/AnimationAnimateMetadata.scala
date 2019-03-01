@@ -16,3 +16,17 @@ trait AnimationAnimateMetadata extends AnimationMetadata {
   var timings: java.lang.String | scala.Double | AnimateTimings
 }
 
+object AnimationAnimateMetadata {
+  @scala.inline
+  def apply(
+    timings: java.lang.String | scala.Double | AnimateTimings,
+    `type`: AnimationMetadataType,
+    styles: AnimationStyleMetadata | AnimationKeyframesSequenceMetadata = null
+  ): AnimationAnimateMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("timings")(timings.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnimationAnimateMetadata]
+  }
+}
+

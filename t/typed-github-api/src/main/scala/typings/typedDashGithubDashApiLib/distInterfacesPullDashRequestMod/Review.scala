@@ -14,3 +14,24 @@ trait Review extends js.Object {
   var state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.APPROVED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.CHANGES_REQUESTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.COMMENTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.DISMISSED
 }
 
+object Review {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    commitSha: java.lang.String,
+    createdBy: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary,
+    htmlUri: java.lang.String,
+    id: scala.Double,
+    state: typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.APPROVED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.CHANGES_REQUESTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.COMMENTED | typedDashGithubDashApiLib.typedDashGithubDashApiLibStrings.DISMISSED
+  ): Review = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("commitSha")(commitSha)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("htmlUri")(htmlUri)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Review]
+  }
+}
+

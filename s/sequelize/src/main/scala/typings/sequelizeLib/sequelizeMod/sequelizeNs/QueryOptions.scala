@@ -81,3 +81,46 @@ trait QueryOptions
   var useMaster: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object QueryOptions {
+  @scala.inline
+  def apply(
+    bind: js.Object | js.Array[java.lang.String] = null,
+    fieldMap: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    instance: Instance[_] = null,
+    logging: scala.Boolean | js.Function = null,
+    mapToModel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model[_, _] = null,
+    nest: js.UndefOr[scala.Boolean] = js.undefined,
+    plain: js.UndefOr[scala.Boolean] = js.undefined,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    replacements: js.Object | js.Array[java.lang.String] = null,
+    retry: RetryOptions = null,
+    returning: js.UndefOr[scala.Boolean] = js.undefined,
+    searchPath: java.lang.String = null,
+    supportsSearchPath: js.UndefOr[scala.Boolean] = js.undefined,
+    transaction: Transaction = null,
+    `type`: java.lang.String = null,
+    useMaster: js.UndefOr[scala.Boolean] = js.undefined
+  ): QueryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bind != null) __obj.updateDynamic("bind")(bind.asInstanceOf[js.Any])
+    if (fieldMap != null) __obj.updateDynamic("fieldMap")(fieldMap)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (!js.isUndefined(mapToModel)) __obj.updateDynamic("mapToModel")(mapToModel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (!js.isUndefined(nest)) __obj.updateDynamic("nest")(nest)
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (replacements != null) __obj.updateDynamic("replacements")(replacements.asInstanceOf[js.Any])
+    if (retry != null) __obj.updateDynamic("retry")(retry)
+    if (!js.isUndefined(returning)) __obj.updateDynamic("returning")(returning)
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath)
+    if (!js.isUndefined(supportsSearchPath)) __obj.updateDynamic("supportsSearchPath")(supportsSearchPath)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(useMaster)) __obj.updateDynamic("useMaster")(useMaster)
+    __obj.asInstanceOf[QueryOptions]
+  }
+}
+

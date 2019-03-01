@@ -11,3 +11,14 @@ trait Anon_BuildId extends js.Object {
   var quiet: scala.Boolean
 }
 
+object Anon_BuildId {
+  @scala.inline
+  def apply(buildId: java.lang.String, config: nextLib.nextMod.nextNs.NextConfig, quiet: scala.Boolean): Anon_BuildId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buildId")(buildId)
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("quiet")(quiet)
+    __obj.asInstanceOf[Anon_BuildId]
+  }
+}
+

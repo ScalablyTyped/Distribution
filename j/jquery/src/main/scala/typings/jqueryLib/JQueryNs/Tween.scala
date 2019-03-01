@@ -76,3 +76,34 @@ trait Tween[TElement] extends js.Object {
   def run(progress: scala.Double): this.type
 }
 
+object Tween {
+  @scala.inline
+  def apply[TElement](
+    cur: js.Function0[js.Any],
+    easing: java.lang.String,
+    elem: TElement,
+    end: scala.Double,
+    now: scala.Double,
+    options: EffectsOptions[TElement],
+    prop: java.lang.String,
+    run: js.Function1[scala.Double, Tween[TElement]],
+    start: scala.Double,
+    unit: java.lang.String,
+    pos: scala.Int | scala.Double = null
+  ): Tween[TElement] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cur")(cur)
+    __obj.updateDynamic("easing")(easing)
+    __obj.updateDynamic("elem")(elem.asInstanceOf[js.Any])
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("now")(now)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("prop")(prop)
+    __obj.updateDynamic("run")(run)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("unit")(unit)
+    if (pos != null) __obj.updateDynamic("pos")(pos.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Tween[TElement]]
+  }
+}
+

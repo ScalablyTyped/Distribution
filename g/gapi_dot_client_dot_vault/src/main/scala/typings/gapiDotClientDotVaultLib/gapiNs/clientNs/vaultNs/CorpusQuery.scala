@@ -14,3 +14,18 @@ trait CorpusQuery extends js.Object {
   var mailQuery: js.UndefOr[HeldMailQuery] = js.undefined
 }
 
+object CorpusQuery {
+  @scala.inline
+  def apply(
+    driveQuery: HeldDriveQuery = null,
+    groupsQuery: HeldGroupsQuery = null,
+    mailQuery: HeldMailQuery = null
+  ): CorpusQuery = {
+    val __obj = js.Dynamic.literal()
+    if (driveQuery != null) __obj.updateDynamic("driveQuery")(driveQuery)
+    if (groupsQuery != null) __obj.updateDynamic("groupsQuery")(groupsQuery)
+    if (mailQuery != null) __obj.updateDynamic("mailQuery")(mailQuery)
+    __obj.asInstanceOf[CorpusQuery]
+  }
+}
+

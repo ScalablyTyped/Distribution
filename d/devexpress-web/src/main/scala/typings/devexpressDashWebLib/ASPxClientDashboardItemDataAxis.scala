@@ -33,3 +33,22 @@ trait ASPxClientDashboardItemDataAxis extends js.Object {
   def GetRootPoint(): ASPxClientDashboardItemDataAxisPoint
 }
 
+object ASPxClientDashboardItemDataAxis {
+  @scala.inline
+  def apply(
+    GetDimensions: js.Function0[js.Array[ASPxClientDashboardItemDataDimension]],
+    GetPointByUniqueValues: js.Function1[js.Array[js.Object], ASPxClientDashboardItemDataAxisPoint],
+    GetPoints: js.Function0[js.Array[ASPxClientDashboardItemDataAxisPoint]],
+    GetPointsByDimension: js.Function1[java.lang.String, js.Array[ASPxClientDashboardItemDataAxisPoint]],
+    GetRootPoint: js.Function0[ASPxClientDashboardItemDataAxisPoint]
+  ): ASPxClientDashboardItemDataAxis = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetDimensions")(GetDimensions)
+    __obj.updateDynamic("GetPointByUniqueValues")(GetPointByUniqueValues)
+    __obj.updateDynamic("GetPoints")(GetPoints)
+    __obj.updateDynamic("GetPointsByDimension")(GetPointsByDimension)
+    __obj.updateDynamic("GetRootPoint")(GetRootPoint)
+    __obj.asInstanceOf[ASPxClientDashboardItemDataAxis]
+  }
+}
+

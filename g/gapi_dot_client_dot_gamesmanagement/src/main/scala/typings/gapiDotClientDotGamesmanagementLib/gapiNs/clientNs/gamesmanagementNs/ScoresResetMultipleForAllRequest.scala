@@ -12,3 +12,13 @@ trait ScoresResetMultipleForAllRequest extends js.Object {
   var leaderboard_ids: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ScoresResetMultipleForAllRequest {
+  @scala.inline
+  def apply(kind: java.lang.String = null, leaderboard_ids: js.Array[java.lang.String] = null): ScoresResetMultipleForAllRequest = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (leaderboard_ids != null) __obj.updateDynamic("leaderboard_ids")(leaderboard_ids)
+    __obj.asInstanceOf[ScoresResetMultipleForAllRequest]
+  }
+}
+

@@ -36,3 +36,26 @@ trait PageSettings extends js.Object {
   var totalRecordsCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PageSettings {
+  @scala.inline
+  def apply(
+    currentPage: scala.Int | scala.Double = null,
+    pageCount: scala.Int | scala.Double = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageSizeMode: PageSizeMode | java.lang.String = null,
+    printMode: PrintMode | java.lang.String = null,
+    template: java.lang.String = null,
+    totalRecordsCount: scala.Int | scala.Double = null
+  ): PageSettings = {
+    val __obj = js.Dynamic.literal()
+    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (pageCount != null) __obj.updateDynamic("pageCount")(pageCount.asInstanceOf[js.Any])
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageSizeMode != null) __obj.updateDynamic("pageSizeMode")(pageSizeMode.asInstanceOf[js.Any])
+    if (printMode != null) __obj.updateDynamic("printMode")(printMode.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (totalRecordsCount != null) __obj.updateDynamic("totalRecordsCount")(totalRecordsCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PageSettings]
+  }
+}
+

@@ -25,3 +25,20 @@ trait ArtifactLocation extends js.Object {
   var uriBaseId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ArtifactLocation {
+  @scala.inline
+  def apply(
+    uri: java.lang.String,
+    index: scala.Int | scala.Double = null,
+    properties: PropertyBag = null,
+    uriBaseId: java.lang.String = null
+  ): ArtifactLocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("uri")(uri)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (uriBaseId != null) __obj.updateDynamic("uriBaseId")(uriBaseId)
+    __obj.asInstanceOf[ArtifactLocation]
+  }
+}
+

@@ -16,3 +16,12 @@ trait RawTag extends js.Object {
   var `type`: java.lang.String
 }
 
+object RawTag {
+  @scala.inline
+  def apply(tags: org.scalablytyped.runtime.StringDictionary[java.lang.String], `type`: java.lang.String): RawTag = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[RawTag]
+  }
+}
+

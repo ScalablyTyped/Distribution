@@ -28,3 +28,20 @@ trait MVCxClientGlobalEventsStatic extends js.Object {
   def AddEndCallbackEventHandler(handler: ASPxClientEndCallbackEventHandler[_]): scala.Unit
 }
 
+object MVCxClientGlobalEventsStatic {
+  @scala.inline
+  def apply(
+    AddBeginCallbackEventHandler: js.Function1[MVCxClientBeginCallbackEventHandler[_], scala.Unit],
+    AddCallbackErrorHandler: js.Function1[ASPxClientCallbackErrorEventHandler[_], scala.Unit],
+    AddControlsInitializedEventHandler: js.Function1[ASPxClientControlsInitializedEventHandler[_], scala.Unit],
+    AddEndCallbackEventHandler: js.Function1[ASPxClientEndCallbackEventHandler[_], scala.Unit]
+  ): MVCxClientGlobalEventsStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AddBeginCallbackEventHandler")(AddBeginCallbackEventHandler)
+    __obj.updateDynamic("AddCallbackErrorHandler")(AddCallbackErrorHandler)
+    __obj.updateDynamic("AddControlsInitializedEventHandler")(AddControlsInitializedEventHandler)
+    __obj.updateDynamic("AddEndCallbackEventHandler")(AddEndCallbackEventHandler)
+    __obj.asInstanceOf[MVCxClientGlobalEventsStatic]
+  }
+}
+

@@ -12,3 +12,18 @@ import scala.scalajs.js.annotation._
   var useNextVariants: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FontStyleOptions {
+  @scala.inline
+  def apply(
+    allVariants: atMaterialDashUiCoreLib.stylesWithStylesMod.CSSProperties = null,
+    htmlFontSize: scala.Int | scala.Double = null,
+    useNextVariants: js.UndefOr[scala.Boolean] = js.undefined
+  ): FontStyleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (allVariants != null) __obj.updateDynamic("allVariants")(allVariants)
+    if (htmlFontSize != null) __obj.updateDynamic("htmlFontSize")(htmlFontSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(useNextVariants)) __obj.updateDynamic("useNextVariants")(useNextVariants)
+    __obj.asInstanceOf[FontStyleOptions]
+  }
+}
+

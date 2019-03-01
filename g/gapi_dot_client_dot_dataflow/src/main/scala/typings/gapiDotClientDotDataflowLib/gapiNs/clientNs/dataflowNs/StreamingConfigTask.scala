@@ -24,3 +24,20 @@ trait StreamingConfigTask extends js.Object {
   var windmillServicePort: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StreamingConfigTask {
+  @scala.inline
+  def apply(
+    streamingComputationConfigs: js.Array[StreamingComputationConfig] = null,
+    userStepToStateFamilyNameMap: stdLib.Record[java.lang.String, java.lang.String] = null,
+    windmillServiceEndpoint: java.lang.String = null,
+    windmillServicePort: java.lang.String = null
+  ): StreamingConfigTask = {
+    val __obj = js.Dynamic.literal()
+    if (streamingComputationConfigs != null) __obj.updateDynamic("streamingComputationConfigs")(streamingComputationConfigs)
+    if (userStepToStateFamilyNameMap != null) __obj.updateDynamic("userStepToStateFamilyNameMap")(userStepToStateFamilyNameMap)
+    if (windmillServiceEndpoint != null) __obj.updateDynamic("windmillServiceEndpoint")(windmillServiceEndpoint)
+    if (windmillServicePort != null) __obj.updateDynamic("windmillServicePort")(windmillServicePort)
+    __obj.asInstanceOf[StreamingConfigTask]
+  }
+}
+

@@ -88,3 +88,123 @@ trait IVaultObjectPropertyOperations extends js.Object {
   ): IObjectVersionAndProperties
 }
 
+object IVaultObjectPropertyOperations {
+  @scala.inline
+  def apply(
+    ApproveOrRejectAssignment: js.Function2[IObjVer, scala.Boolean, IObjectVersionAndProperties],
+    ApproveOrRejectAssignmentByUser: js.Function3[IObjVer, scala.Boolean, scala.Double, IObjectVersionAndProperties],
+    CreatePropertiesFromFileInformation: js.Function1[IFileInformation, IPropertyValues],
+    GenerateAutomaticPermissionsFromPropertyValues: js.Function1[IPropertyValues, IAccessControlList],
+    GetProperties: js.Function2[IObjVer, scala.Boolean, IPropertyValues],
+    GetPropertiesAsXML: js.Function2[IObjVer, scala.Boolean, java.lang.String],
+    GetPropertiesForDisplay: js.Function2[IObjVer, scala.Boolean, IPropertyValuesForDisplay],
+    GetPropertiesForMetadataSync: js.Function2[IObjVer, mfilesLib.MFilesNs.MFMetadataSyncFormat, INamedValues],
+    GetPropertiesOfMultipleObjects: js.Function1[IObjVers, IPropertyValuesOfMultipleObjects],
+    GetPropertiesWithIconClues: js.Function2[IObjVer, scala.Boolean, IPropertyValuesWithIconClues],
+    GetPropertiesWithIconCluesOfMultipleObjects: js.Function1[IObjVers, IPropertyValuesWithIconCluesOfMultipleObjects],
+    GetProperty: js.Function2[IObjVer, scala.Double, IPropertyValue],
+    GetVersionComment: js.Function1[IObjVer, IVersionComment],
+    GetVersionCommentHistory: js.Function1[IObjVer, IVersionComments],
+    GetWorkflowState: js.Function2[IObjVer, scala.Boolean, IObjectVersionWorkflowState],
+    MarkAssignmentComplete: js.Function1[IObjVer, IObjectVersionAndProperties],
+    MarkAssignmentCompleteByUser: js.Function2[IObjVer, scala.Double, IObjectVersionAndProperties],
+    RemoveProperty: js.Function2[IObjVer, scala.Double, IObjectVersionAndProperties],
+    SetAllProperties: js.Function3[IObjVer, scala.Boolean, IPropertyValues, IObjectVersionAndProperties],
+    SetAllPropertiesWithPermissions: js.Function5[
+      IObjVer, 
+      scala.Boolean, 
+      IPropertyValues, 
+      mfilesLib.MFilesNs.MFACLEnforcingMode, 
+      IAccessControlList, 
+      IObjectVersionAndProperties
+    ],
+    SetAllPropertiesWithPermissionsEx: js.Function6[
+      IObjVer, 
+      scala.Boolean, 
+      IPropertyValues, 
+      mfilesLib.MFilesNs.MFACLEnforcingMode, 
+      IAccessControlList, 
+      js.Any, 
+      IObjectVersionAndProperties
+    ],
+    SetCreationInfoAdmin: js.Function5[
+      IObjVer, 
+      scala.Boolean, 
+      ITypedValue, 
+      scala.Boolean, 
+      ITypedValue, 
+      IObjectVersionAndProperties
+    ],
+    SetLastModificationInfoAdmin: js.Function5[
+      IObjVer, 
+      scala.Boolean, 
+      ITypedValue, 
+      scala.Boolean, 
+      ITypedValue, 
+      IObjectVersionAndProperties
+    ],
+    SetProperties: js.Function2[IObjVer, IPropertyValues, IObjectVersionAndProperties],
+    SetPropertiesOfMultipleObjects: js.Function1[
+      ISetPropertiesParamsOfMultipleObjects, 
+      IObjectVersionAndPropertiesOfMultipleObjects
+    ],
+    SetPropertiesWithPermissions: js.Function4[
+      IObjVer, 
+      IPropertyValues, 
+      mfilesLib.MFilesNs.MFACLEnforcingMode, 
+      IAccessControlList, 
+      IObjectVersionAndProperties
+    ],
+    SetPropertiesWithPermissionsEx: js.Function5[
+      IObjVer, 
+      IPropertyValues, 
+      mfilesLib.MFilesNs.MFACLEnforcingMode, 
+      IAccessControlList, 
+      js.Any, 
+      IObjectVersionAndProperties
+    ],
+    SetProperty: js.Function2[IObjVer, IPropertyValue, IObjectVersionAndProperties],
+    SetVersionComment: js.Function2[IObjVer, IPropertyValue, IObjectVersionAndProperties],
+    SetWorkflowState: js.Function2[IObjVer, IObjectVersionWorkflowState, IObjectVersionAndProperties],
+    SetWorkflowStateEx: js.Function3[IObjVer, IObjectVersionWorkflowState, js.Any, IObjectVersionAndProperties],
+    SetWorkflowStateTransition: js.Function4[IObjVer, scala.Double, scala.Double, java.lang.String, IObjectVersionAndProperties],
+    SetWorkflowStateTransitionEx: js.Function5[IObjVer, scala.Double, scala.Double, java.lang.String, js.Any, IObjectVersionAndProperties]
+  ): IVaultObjectPropertyOperations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ApproveOrRejectAssignment")(ApproveOrRejectAssignment)
+    __obj.updateDynamic("ApproveOrRejectAssignmentByUser")(ApproveOrRejectAssignmentByUser)
+    __obj.updateDynamic("CreatePropertiesFromFileInformation")(CreatePropertiesFromFileInformation)
+    __obj.updateDynamic("GenerateAutomaticPermissionsFromPropertyValues")(GenerateAutomaticPermissionsFromPropertyValues)
+    __obj.updateDynamic("GetProperties")(GetProperties)
+    __obj.updateDynamic("GetPropertiesAsXML")(GetPropertiesAsXML)
+    __obj.updateDynamic("GetPropertiesForDisplay")(GetPropertiesForDisplay)
+    __obj.updateDynamic("GetPropertiesForMetadataSync")(GetPropertiesForMetadataSync)
+    __obj.updateDynamic("GetPropertiesOfMultipleObjects")(GetPropertiesOfMultipleObjects)
+    __obj.updateDynamic("GetPropertiesWithIconClues")(GetPropertiesWithIconClues)
+    __obj.updateDynamic("GetPropertiesWithIconCluesOfMultipleObjects")(GetPropertiesWithIconCluesOfMultipleObjects)
+    __obj.updateDynamic("GetProperty")(GetProperty)
+    __obj.updateDynamic("GetVersionComment")(GetVersionComment)
+    __obj.updateDynamic("GetVersionCommentHistory")(GetVersionCommentHistory)
+    __obj.updateDynamic("GetWorkflowState")(GetWorkflowState)
+    __obj.updateDynamic("MarkAssignmentComplete")(MarkAssignmentComplete)
+    __obj.updateDynamic("MarkAssignmentCompleteByUser")(MarkAssignmentCompleteByUser)
+    __obj.updateDynamic("RemoveProperty")(RemoveProperty)
+    __obj.updateDynamic("SetAllProperties")(SetAllProperties)
+    __obj.updateDynamic("SetAllPropertiesWithPermissions")(SetAllPropertiesWithPermissions)
+    __obj.updateDynamic("SetAllPropertiesWithPermissionsEx")(SetAllPropertiesWithPermissionsEx)
+    __obj.updateDynamic("SetCreationInfoAdmin")(SetCreationInfoAdmin)
+    __obj.updateDynamic("SetLastModificationInfoAdmin")(SetLastModificationInfoAdmin)
+    __obj.updateDynamic("SetProperties")(SetProperties)
+    __obj.updateDynamic("SetPropertiesOfMultipleObjects")(SetPropertiesOfMultipleObjects)
+    __obj.updateDynamic("SetPropertiesWithPermissions")(SetPropertiesWithPermissions)
+    __obj.updateDynamic("SetPropertiesWithPermissionsEx")(SetPropertiesWithPermissionsEx)
+    __obj.updateDynamic("SetProperty")(SetProperty)
+    __obj.updateDynamic("SetVersionComment")(SetVersionComment)
+    __obj.updateDynamic("SetWorkflowState")(SetWorkflowState)
+    __obj.updateDynamic("SetWorkflowStateEx")(SetWorkflowStateEx)
+    __obj.updateDynamic("SetWorkflowStateTransition")(SetWorkflowStateTransition)
+    __obj.updateDynamic("SetWorkflowStateTransitionEx")(SetWorkflowStateTransitionEx)
+    __obj.asInstanceOf[IVaultObjectPropertyOperations]
+  }
+}
+

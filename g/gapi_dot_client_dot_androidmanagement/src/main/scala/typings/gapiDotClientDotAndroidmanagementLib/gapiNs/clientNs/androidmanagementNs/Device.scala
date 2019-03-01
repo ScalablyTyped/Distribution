@@ -82,3 +82,64 @@ trait Device extends js.Object {
   var userName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    apiLevel: scala.Int | scala.Double = null,
+    appliedPolicyName: java.lang.String = null,
+    appliedPolicyVersion: java.lang.String = null,
+    appliedState: java.lang.String = null,
+    disabledReason: UserFacingMessage = null,
+    displays: js.Array[Display] = null,
+    enrollmentTime: java.lang.String = null,
+    enrollmentTokenData: java.lang.String = null,
+    enrollmentTokenName: java.lang.String = null,
+    hardwareInfo: HardwareInfo = null,
+    hardwareStatusSamples: js.Array[HardwareStatus] = null,
+    lastPolicyComplianceReportTime: java.lang.String = null,
+    lastPolicySyncTime: java.lang.String = null,
+    lastStatusReportTime: java.lang.String = null,
+    memoryEvents: js.Array[MemoryEvent] = null,
+    memoryInfo: MemoryInfo = null,
+    name: java.lang.String = null,
+    networkInfo: NetworkInfo = null,
+    nonComplianceDetails: js.Array[NonComplianceDetail] = null,
+    policyCompliant: js.UndefOr[scala.Boolean] = js.undefined,
+    policyName: java.lang.String = null,
+    powerManagementEvents: js.Array[PowerManagementEvent] = null,
+    previousDeviceNames: js.Array[java.lang.String] = null,
+    softwareInfo: SoftwareInfo = null,
+    state: java.lang.String = null,
+    userName: java.lang.String = null
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    if (apiLevel != null) __obj.updateDynamic("apiLevel")(apiLevel.asInstanceOf[js.Any])
+    if (appliedPolicyName != null) __obj.updateDynamic("appliedPolicyName")(appliedPolicyName)
+    if (appliedPolicyVersion != null) __obj.updateDynamic("appliedPolicyVersion")(appliedPolicyVersion)
+    if (appliedState != null) __obj.updateDynamic("appliedState")(appliedState)
+    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason)
+    if (displays != null) __obj.updateDynamic("displays")(displays)
+    if (enrollmentTime != null) __obj.updateDynamic("enrollmentTime")(enrollmentTime)
+    if (enrollmentTokenData != null) __obj.updateDynamic("enrollmentTokenData")(enrollmentTokenData)
+    if (enrollmentTokenName != null) __obj.updateDynamic("enrollmentTokenName")(enrollmentTokenName)
+    if (hardwareInfo != null) __obj.updateDynamic("hardwareInfo")(hardwareInfo)
+    if (hardwareStatusSamples != null) __obj.updateDynamic("hardwareStatusSamples")(hardwareStatusSamples)
+    if (lastPolicyComplianceReportTime != null) __obj.updateDynamic("lastPolicyComplianceReportTime")(lastPolicyComplianceReportTime)
+    if (lastPolicySyncTime != null) __obj.updateDynamic("lastPolicySyncTime")(lastPolicySyncTime)
+    if (lastStatusReportTime != null) __obj.updateDynamic("lastStatusReportTime")(lastStatusReportTime)
+    if (memoryEvents != null) __obj.updateDynamic("memoryEvents")(memoryEvents)
+    if (memoryInfo != null) __obj.updateDynamic("memoryInfo")(memoryInfo)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (networkInfo != null) __obj.updateDynamic("networkInfo")(networkInfo)
+    if (nonComplianceDetails != null) __obj.updateDynamic("nonComplianceDetails")(nonComplianceDetails)
+    if (!js.isUndefined(policyCompliant)) __obj.updateDynamic("policyCompliant")(policyCompliant)
+    if (policyName != null) __obj.updateDynamic("policyName")(policyName)
+    if (powerManagementEvents != null) __obj.updateDynamic("powerManagementEvents")(powerManagementEvents)
+    if (previousDeviceNames != null) __obj.updateDynamic("previousDeviceNames")(previousDeviceNames)
+    if (softwareInfo != null) __obj.updateDynamic("softwareInfo")(softwareInfo)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (userName != null) __obj.updateDynamic("userName")(userName)
+    __obj.asInstanceOf[Device]
+  }
+}
+

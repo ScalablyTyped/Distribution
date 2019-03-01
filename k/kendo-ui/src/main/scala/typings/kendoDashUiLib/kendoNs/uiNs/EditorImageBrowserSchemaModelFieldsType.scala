@@ -10,3 +10,13 @@ trait EditorImageBrowserSchemaModelFieldsType extends js.Object {
   var parse: js.UndefOr[js.Function] = js.undefined
 }
 
+object EditorImageBrowserSchemaModelFieldsType {
+  @scala.inline
+  def apply(field: java.lang.String = null, parse: js.Function = null): EditorImageBrowserSchemaModelFieldsType = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    __obj.asInstanceOf[EditorImageBrowserSchemaModelFieldsType]
+  }
+}
+

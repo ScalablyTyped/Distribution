@@ -25,3 +25,13 @@ trait MoveDimensionRequest extends js.Object {
   var source: js.UndefOr[DimensionRange] = js.undefined
 }
 
+object MoveDimensionRequest {
+  @scala.inline
+  def apply(destinationIndex: scala.Int | scala.Double = null, source: DimensionRange = null): MoveDimensionRequest = {
+    val __obj = js.Dynamic.literal()
+    if (destinationIndex != null) __obj.updateDynamic("destinationIndex")(destinationIndex.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[MoveDimensionRequest]
+  }
+}
+

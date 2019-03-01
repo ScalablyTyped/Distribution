@@ -10,3 +10,13 @@ trait ForwardedX11 extends js.Object {
   var originPort: scala.Double
 }
 
+object ForwardedX11 {
+  @scala.inline
+  def apply(originAddr: java.lang.String, originPort: scala.Double): ForwardedX11 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("originAddr")(originAddr)
+    __obj.updateDynamic("originPort")(originPort)
+    __obj.asInstanceOf[ForwardedX11]
+  }
+}
+

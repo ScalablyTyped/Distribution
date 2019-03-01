@@ -12,3 +12,20 @@ trait IMediaCaptureInitializationSettings extends js.Object {
   var videoDeviceId: java.lang.String
 }
 
+object IMediaCaptureInitializationSettings {
+  @scala.inline
+  def apply(
+    audioDeviceId: java.lang.String,
+    photoCaptureSource: PhotoCaptureSource,
+    streamingCaptureMode: StreamingCaptureMode,
+    videoDeviceId: java.lang.String
+  ): IMediaCaptureInitializationSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audioDeviceId")(audioDeviceId)
+    __obj.updateDynamic("photoCaptureSource")(photoCaptureSource)
+    __obj.updateDynamic("streamingCaptureMode")(streamingCaptureMode)
+    __obj.updateDynamic("videoDeviceId")(videoDeviceId)
+    __obj.asInstanceOf[IMediaCaptureInitializationSettings]
+  }
+}
+

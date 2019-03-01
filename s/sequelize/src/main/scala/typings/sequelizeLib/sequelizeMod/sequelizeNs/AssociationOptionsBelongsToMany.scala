@@ -40,3 +40,36 @@ trait AssociationOptionsBelongsToMany extends AssociationOptionsManyToMany {
   var uniqueKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AssociationOptionsBelongsToMany {
+  @scala.inline
+  def apply(
+    through: (Model[_, _]) | java.lang.String | ThroughOptions,
+    as: java.lang.String | sequelizeLib.Anon_Plural = null,
+    constraints: js.UndefOr[scala.Boolean] = js.undefined,
+    foreignKey: java.lang.String | AssociationForeignKeyOptions = null,
+    foreignKeyConstraint: js.UndefOr[scala.Boolean] = js.undefined,
+    hooks: js.UndefOr[scala.Boolean] = js.undefined,
+    onDelete: java.lang.String = null,
+    onUpdate: java.lang.String = null,
+    otherKey: java.lang.String | AssociationForeignKeyOptions = null,
+    scope: AssociationScope = null,
+    timestamps: js.UndefOr[scala.Boolean] = js.undefined,
+    uniqueKey: java.lang.String = null
+  ): AssociationOptionsBelongsToMany = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("through")(through.asInstanceOf[js.Any])
+    if (as != null) __obj.updateDynamic("as")(as.asInstanceOf[js.Any])
+    if (!js.isUndefined(constraints)) __obj.updateDynamic("constraints")(constraints)
+    if (foreignKey != null) __obj.updateDynamic("foreignKey")(foreignKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(foreignKeyConstraint)) __obj.updateDynamic("foreignKeyConstraint")(foreignKeyConstraint)
+    if (!js.isUndefined(hooks)) __obj.updateDynamic("hooks")(hooks)
+    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete)
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (otherKey != null) __obj.updateDynamic("otherKey")(otherKey.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (!js.isUndefined(timestamps)) __obj.updateDynamic("timestamps")(timestamps)
+    if (uniqueKey != null) __obj.updateDynamic("uniqueKey")(uniqueKey)
+    __obj.asInstanceOf[AssociationOptionsBelongsToMany]
+  }
+}
+

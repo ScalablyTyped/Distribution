@@ -10,3 +10,16 @@ trait JasmineNode extends js.Object {
   def loadHelpersInFolder(path: java.lang.String, pattern: stdLib.RegExp): scala.Unit
 }
 
+object JasmineNode {
+  @scala.inline
+  def apply(
+    executeSpecsInFolder: js.Function1[ExecuteSpecsOptions, scala.Unit],
+    loadHelpersInFolder: js.Function2[java.lang.String, stdLib.RegExp, scala.Unit]
+  ): JasmineNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("executeSpecsInFolder")(executeSpecsInFolder)
+    __obj.updateDynamic("loadHelpersInFolder")(loadHelpersInFolder)
+    __obj.asInstanceOf[JasmineNode]
+  }
+}
+

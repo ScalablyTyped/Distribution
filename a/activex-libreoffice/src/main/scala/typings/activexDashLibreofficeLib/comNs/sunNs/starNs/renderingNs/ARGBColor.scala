@@ -17,3 +17,15 @@ trait ARGBColor extends js.Object {
   var Red: ColorComponent
 }
 
+object ARGBColor {
+  @scala.inline
+  def apply(Alpha: ColorComponent, Blue: ColorComponent, Green: ColorComponent, Red: ColorComponent): ARGBColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Alpha")(Alpha)
+    __obj.updateDynamic("Blue")(Blue)
+    __obj.updateDynamic("Green")(Green)
+    __obj.updateDynamic("Red")(Red)
+    __obj.asInstanceOf[ARGBColor]
+  }
+}
+

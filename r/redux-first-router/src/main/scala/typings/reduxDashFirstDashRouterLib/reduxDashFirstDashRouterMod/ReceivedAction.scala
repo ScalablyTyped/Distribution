@@ -14,3 +14,23 @@ trait ReceivedAction extends js.Object {
   var `type`: java.lang.String
 }
 
+object ReceivedAction {
+  @scala.inline
+  def apply(
+    payload: Payload,
+    `type`: java.lang.String,
+    meta: js.Object = null,
+    navKey: Nullable[java.lang.String] = null,
+    query: js.Object = null,
+    search: java.lang.String = null
+  ): ReceivedAction = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("payload")(payload)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (navKey != null) __obj.updateDynamic("navKey")(navKey.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ReceivedAction]
+  }
+}
+

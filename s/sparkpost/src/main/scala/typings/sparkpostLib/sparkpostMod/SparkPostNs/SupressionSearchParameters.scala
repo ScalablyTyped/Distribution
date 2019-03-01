@@ -52,3 +52,32 @@ trait SupressionSearchParameters extends js.Object {
   var types: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SupressionSearchParameters {
+  @scala.inline
+  def apply(
+    cursor: java.lang.String = null,
+    description: java.lang.String = null,
+    domain: java.lang.String = null,
+    from: java.lang.String = null,
+    limit: scala.Int | scala.Double = null,
+    page: java.lang.String | scala.Double = null,
+    per_page: java.lang.String | scala.Double = null,
+    sources: java.lang.String = null,
+    to: java.lang.String = null,
+    types: java.lang.String = null
+  ): SupressionSearchParameters = {
+    val __obj = js.Dynamic.literal()
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (per_page != null) __obj.updateDynamic("per_page")(per_page.asInstanceOf[js.Any])
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (to != null) __obj.updateDynamic("to")(to)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[SupressionSearchParameters]
+  }
+}
+

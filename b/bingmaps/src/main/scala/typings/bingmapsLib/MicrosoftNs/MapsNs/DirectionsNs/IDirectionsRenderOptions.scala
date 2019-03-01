@@ -43,3 +43,44 @@ trait IDirectionsRenderOptions extends js.Object {
   var waypointPushpinOptions: js.UndefOr[bingmapsLib.MicrosoftNs.MapsNs.IPushpinOptions] = js.undefined
 }
 
+object IDirectionsRenderOptions {
+  @scala.inline
+  def apply(
+    autoUpdateMapView: js.UndefOr[scala.Boolean] = js.undefined,
+    displayDisclaimer: js.UndefOr[scala.Boolean] = js.undefined,
+    displayManeuverIcons: js.UndefOr[scala.Boolean] = js.undefined,
+    displayPostItineraryItemHints: js.UndefOr[scala.Boolean] = js.undefined,
+    displayPreItineraryItemHints: js.UndefOr[scala.Boolean] = js.undefined,
+    displayRouteSelector: js.UndefOr[scala.Boolean] = js.undefined,
+    displayStepWarnings: js.UndefOr[scala.Boolean] = js.undefined,
+    displayWalkingWarning: js.UndefOr[scala.Boolean] = js.undefined,
+    drivingPolylineOptions: bingmapsLib.MicrosoftNs.MapsNs.IPolylineOptions = null,
+    firstWaypointPushpinOptions: bingmapsLib.MicrosoftNs.MapsNs.IPushpinOptions = null,
+    itineraryContainer: stdLib.HTMLElement = null,
+    lastWaypointPushpinOptions: bingmapsLib.MicrosoftNs.MapsNs.IPushpinOptions = null,
+    showInputPanel: js.UndefOr[scala.Boolean] = js.undefined,
+    transitPolylineOptions: bingmapsLib.MicrosoftNs.MapsNs.IPolylineOptions = null,
+    walkingPolylineOptions: bingmapsLib.MicrosoftNs.MapsNs.IPolylineOptions = null,
+    waypointPushpinOptions: bingmapsLib.MicrosoftNs.MapsNs.IPushpinOptions = null
+  ): IDirectionsRenderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoUpdateMapView)) __obj.updateDynamic("autoUpdateMapView")(autoUpdateMapView)
+    if (!js.isUndefined(displayDisclaimer)) __obj.updateDynamic("displayDisclaimer")(displayDisclaimer)
+    if (!js.isUndefined(displayManeuverIcons)) __obj.updateDynamic("displayManeuverIcons")(displayManeuverIcons)
+    if (!js.isUndefined(displayPostItineraryItemHints)) __obj.updateDynamic("displayPostItineraryItemHints")(displayPostItineraryItemHints)
+    if (!js.isUndefined(displayPreItineraryItemHints)) __obj.updateDynamic("displayPreItineraryItemHints")(displayPreItineraryItemHints)
+    if (!js.isUndefined(displayRouteSelector)) __obj.updateDynamic("displayRouteSelector")(displayRouteSelector)
+    if (!js.isUndefined(displayStepWarnings)) __obj.updateDynamic("displayStepWarnings")(displayStepWarnings)
+    if (!js.isUndefined(displayWalkingWarning)) __obj.updateDynamic("displayWalkingWarning")(displayWalkingWarning)
+    if (drivingPolylineOptions != null) __obj.updateDynamic("drivingPolylineOptions")(drivingPolylineOptions)
+    if (firstWaypointPushpinOptions != null) __obj.updateDynamic("firstWaypointPushpinOptions")(firstWaypointPushpinOptions)
+    if (itineraryContainer != null) __obj.updateDynamic("itineraryContainer")(itineraryContainer)
+    if (lastWaypointPushpinOptions != null) __obj.updateDynamic("lastWaypointPushpinOptions")(lastWaypointPushpinOptions)
+    if (!js.isUndefined(showInputPanel)) __obj.updateDynamic("showInputPanel")(showInputPanel)
+    if (transitPolylineOptions != null) __obj.updateDynamic("transitPolylineOptions")(transitPolylineOptions)
+    if (walkingPolylineOptions != null) __obj.updateDynamic("walkingPolylineOptions")(walkingPolylineOptions)
+    if (waypointPushpinOptions != null) __obj.updateDynamic("waypointPushpinOptions")(waypointPushpinOptions)
+    __obj.asInstanceOf[IDirectionsRenderOptions]
+  }
+}
+

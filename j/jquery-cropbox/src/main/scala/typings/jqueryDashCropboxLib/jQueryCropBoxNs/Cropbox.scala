@@ -48,3 +48,32 @@ trait Cropbox extends js.Object {
   def zoomOut(): scala.Unit
 }
 
+object Cropbox {
+  @scala.inline
+  def apply(
+    drag: js.Function1[CropboxDragOptions, scala.Unit],
+    getBlob: js.Function0[js.Any],
+    getDataURL: js.Function0[java.lang.String],
+    on: js.Function2[java.lang.String, EventCallback, scala.Unit],
+    remove: js.Function0[scala.Unit],
+    setCrop: js.Function1[CropboxSetCropOptions, scala.Unit],
+    update: js.Function0[scala.Unit],
+    zoom: js.Function1[scala.Double, scala.Unit],
+    zoomIn: js.Function0[scala.Unit],
+    zoomOut: js.Function0[scala.Unit]
+  ): Cropbox = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("drag")(drag)
+    __obj.updateDynamic("getBlob")(getBlob)
+    __obj.updateDynamic("getDataURL")(getDataURL)
+    __obj.updateDynamic("on")(on)
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("setCrop")(setCrop)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("zoom")(zoom)
+    __obj.updateDynamic("zoomIn")(zoomIn)
+    __obj.updateDynamic("zoomOut")(zoomOut)
+    __obj.asInstanceOf[Cropbox]
+  }
+}
+

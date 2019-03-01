@@ -28,3 +28,20 @@ trait SlickGridCheckBoxSelectColumnOptions extends PluginOptions {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SlickGridCheckBoxSelectColumnOptions {
+  @scala.inline
+  def apply(
+    columnId: java.lang.String = null,
+    cssClass: java.lang.String = null,
+    toolTip: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): SlickGridCheckBoxSelectColumnOptions = {
+    val __obj = js.Dynamic.literal()
+    if (columnId != null) __obj.updateDynamic("columnId")(columnId)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (toolTip != null) __obj.updateDynamic("toolTip")(toolTip)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SlickGridCheckBoxSelectColumnOptions]
+  }
+}
+

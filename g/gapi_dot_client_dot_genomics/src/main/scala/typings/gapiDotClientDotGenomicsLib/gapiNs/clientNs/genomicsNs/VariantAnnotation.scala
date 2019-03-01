@@ -40,3 +40,26 @@ trait VariantAnnotation extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VariantAnnotation {
+  @scala.inline
+  def apply(
+    alternateBases: java.lang.String = null,
+    clinicalSignificance: java.lang.String = null,
+    conditions: js.Array[ClinicalCondition] = null,
+    effect: java.lang.String = null,
+    geneId: java.lang.String = null,
+    transcriptIds: js.Array[java.lang.String] = null,
+    `type`: java.lang.String = null
+  ): VariantAnnotation = {
+    val __obj = js.Dynamic.literal()
+    if (alternateBases != null) __obj.updateDynamic("alternateBases")(alternateBases)
+    if (clinicalSignificance != null) __obj.updateDynamic("clinicalSignificance")(clinicalSignificance)
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
+    if (effect != null) __obj.updateDynamic("effect")(effect)
+    if (geneId != null) __obj.updateDynamic("geneId")(geneId)
+    if (transcriptIds != null) __obj.updateDynamic("transcriptIds")(transcriptIds)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[VariantAnnotation]
+  }
+}
+

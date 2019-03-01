@@ -399,3 +399,139 @@ trait IgTimePicker
   var yearShift: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgTimePicker {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igTimePicker
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowNullValue: js.UndefOr[scala.Boolean] = js.undefined,
+    buttonType: java.lang.String = null,
+    centuryThreshold: scala.Int | scala.Double = null,
+    dataMode: java.lang.String = null,
+    dateDisplayFormat: js.Any = null,
+    dateInputFormat: js.Any = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    displayTimeOffset: js.Any = null,
+    dropDownAnimationDuration: scala.Int | scala.Double = null,
+    dropDownAttachedToBody: js.UndefOr[scala.Boolean] = js.undefined,
+    dropDownItemSelected: DropDownItemSelectedEvent = null,
+    dropDownItemSelecting: DropDownItemSelectingEvent = null,
+    dropDownListClosed: DropDownListClosedEvent = null,
+    dropDownListClosing: DropDownListClosingEvent = null,
+    dropDownListOpened: DropDownListOpenedEvent = null,
+    dropDownListOpening: DropDownListOpeningEvent = null,
+    dropDownOnReadOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    dropDownOrientation: java.lang.String = null,
+    emptyChar: java.lang.String = null,
+    enableUTCDates: js.UndefOr[scala.Boolean] = js.undefined,
+    excludeKeys: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    includeKeys: java.lang.String = null,
+    inputMask: java.lang.String = null,
+    inputName: java.lang.String = null,
+    isLimitedToListValues: js.UndefOr[scala.Boolean] = js.undefined,
+    itemsDelta: IgTimePickerItemsDelta = null,
+    language: java.lang.String = null,
+    limitSpinToCurrentField: js.UndefOr[scala.Boolean] = js.undefined,
+    listItemHoverDuration: scala.Int | scala.Double = null,
+    listItems: js.Any = null,
+    listWidth: scala.Int | scala.Double = null,
+    locale: js.Any = null,
+    maxLength: js.Any = null,
+    maxValue: stdLib.Date = null,
+    minValue: stdLib.Date = null,
+    nullValue: java.lang.String | scala.Double | stdLib.Date = null,
+    padChar: java.lang.String = null,
+    placeHolder: java.lang.String = null,
+    preventSubmitOnEnter: js.UndefOr[scala.Boolean] = js.undefined,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    regional: java.lang.String | js.Object = null,
+    revertIfNotValid: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionOnFocus: java.lang.String = null,
+    spinDelta: js.Any = null,
+    spinWrapAround: js.UndefOr[scala.Boolean] = js.undefined,
+    suppressKeyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    suppressNotifications: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null,
+    textAlign: java.lang.String = null,
+    textMode: js.Any = null,
+    timeDisplayFormat: java.lang.String = null,
+    timeInputFormat: java.lang.String = null,
+    toLower: js.UndefOr[scala.Boolean] = js.undefined,
+    toUpper: js.UndefOr[scala.Boolean] = js.undefined,
+    unfilledCharsPrompt: java.lang.String = null,
+    validatorOptions: js.Any = null,
+    value: stdLib.Date = null,
+    visibleItemsCount: scala.Int | scala.Double = null,
+    width: java.lang.String | scala.Double = null,
+    yearShift: js.Any = null
+  ): IgTimePicker = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowNullValue)) __obj.updateDynamic("allowNullValue")(allowNullValue)
+    if (buttonType != null) __obj.updateDynamic("buttonType")(buttonType)
+    if (centuryThreshold != null) __obj.updateDynamic("centuryThreshold")(centuryThreshold.asInstanceOf[js.Any])
+    if (dataMode != null) __obj.updateDynamic("dataMode")(dataMode)
+    if (dateDisplayFormat != null) __obj.updateDynamic("dateDisplayFormat")(dateDisplayFormat)
+    if (dateInputFormat != null) __obj.updateDynamic("dateInputFormat")(dateInputFormat)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (displayTimeOffset != null) __obj.updateDynamic("displayTimeOffset")(displayTimeOffset)
+    if (dropDownAnimationDuration != null) __obj.updateDynamic("dropDownAnimationDuration")(dropDownAnimationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(dropDownAttachedToBody)) __obj.updateDynamic("dropDownAttachedToBody")(dropDownAttachedToBody)
+    if (dropDownItemSelected != null) __obj.updateDynamic("dropDownItemSelected")(dropDownItemSelected)
+    if (dropDownItemSelecting != null) __obj.updateDynamic("dropDownItemSelecting")(dropDownItemSelecting)
+    if (dropDownListClosed != null) __obj.updateDynamic("dropDownListClosed")(dropDownListClosed)
+    if (dropDownListClosing != null) __obj.updateDynamic("dropDownListClosing")(dropDownListClosing)
+    if (dropDownListOpened != null) __obj.updateDynamic("dropDownListOpened")(dropDownListOpened)
+    if (dropDownListOpening != null) __obj.updateDynamic("dropDownListOpening")(dropDownListOpening)
+    if (!js.isUndefined(dropDownOnReadOnly)) __obj.updateDynamic("dropDownOnReadOnly")(dropDownOnReadOnly)
+    if (dropDownOrientation != null) __obj.updateDynamic("dropDownOrientation")(dropDownOrientation)
+    if (emptyChar != null) __obj.updateDynamic("emptyChar")(emptyChar)
+    if (!js.isUndefined(enableUTCDates)) __obj.updateDynamic("enableUTCDates")(enableUTCDates)
+    if (excludeKeys != null) __obj.updateDynamic("excludeKeys")(excludeKeys)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (includeKeys != null) __obj.updateDynamic("includeKeys")(includeKeys)
+    if (inputMask != null) __obj.updateDynamic("inputMask")(inputMask)
+    if (inputName != null) __obj.updateDynamic("inputName")(inputName)
+    if (!js.isUndefined(isLimitedToListValues)) __obj.updateDynamic("isLimitedToListValues")(isLimitedToListValues)
+    if (itemsDelta != null) __obj.updateDynamic("itemsDelta")(itemsDelta)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (!js.isUndefined(limitSpinToCurrentField)) __obj.updateDynamic("limitSpinToCurrentField")(limitSpinToCurrentField)
+    if (listItemHoverDuration != null) __obj.updateDynamic("listItemHoverDuration")(listItemHoverDuration.asInstanceOf[js.Any])
+    if (listItems != null) __obj.updateDynamic("listItems")(listItems)
+    if (listWidth != null) __obj.updateDynamic("listWidth")(listWidth.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue)
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue)
+    if (nullValue != null) __obj.updateDynamic("nullValue")(nullValue.asInstanceOf[js.Any])
+    if (padChar != null) __obj.updateDynamic("padChar")(padChar)
+    if (placeHolder != null) __obj.updateDynamic("placeHolder")(placeHolder)
+    if (!js.isUndefined(preventSubmitOnEnter)) __obj.updateDynamic("preventSubmitOnEnter")(preventSubmitOnEnter)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (!js.isUndefined(revertIfNotValid)) __obj.updateDynamic("revertIfNotValid")(revertIfNotValid)
+    if (selectionOnFocus != null) __obj.updateDynamic("selectionOnFocus")(selectionOnFocus)
+    if (spinDelta != null) __obj.updateDynamic("spinDelta")(spinDelta)
+    if (!js.isUndefined(spinWrapAround)) __obj.updateDynamic("spinWrapAround")(spinWrapAround)
+    if (!js.isUndefined(suppressKeyboard)) __obj.updateDynamic("suppressKeyboard")(suppressKeyboard)
+    if (!js.isUndefined(suppressNotifications)) __obj.updateDynamic("suppressNotifications")(suppressNotifications)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign)
+    if (textMode != null) __obj.updateDynamic("textMode")(textMode)
+    if (timeDisplayFormat != null) __obj.updateDynamic("timeDisplayFormat")(timeDisplayFormat)
+    if (timeInputFormat != null) __obj.updateDynamic("timeInputFormat")(timeInputFormat)
+    if (!js.isUndefined(toLower)) __obj.updateDynamic("toLower")(toLower)
+    if (!js.isUndefined(toUpper)) __obj.updateDynamic("toUpper")(toUpper)
+    if (unfilledCharsPrompt != null) __obj.updateDynamic("unfilledCharsPrompt")(unfilledCharsPrompt)
+    if (validatorOptions != null) __obj.updateDynamic("validatorOptions")(validatorOptions)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (visibleItemsCount != null) __obj.updateDynamic("visibleItemsCount")(visibleItemsCount.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (yearShift != null) __obj.updateDynamic("yearShift")(yearShift)
+    __obj.asInstanceOf[IgTimePicker]
+  }
+}
+

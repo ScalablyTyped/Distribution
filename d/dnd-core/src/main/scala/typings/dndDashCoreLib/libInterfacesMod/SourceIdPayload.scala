@@ -9,3 +9,12 @@ trait SourceIdPayload extends js.Object {
   var sourceId: java.lang.String
 }
 
+object SourceIdPayload {
+  @scala.inline
+  def apply(sourceId: java.lang.String): SourceIdPayload = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sourceId")(sourceId)
+    __obj.asInstanceOf[SourceIdPayload]
+  }
+}
+

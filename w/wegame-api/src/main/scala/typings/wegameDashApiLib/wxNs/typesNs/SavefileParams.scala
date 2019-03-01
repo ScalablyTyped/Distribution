@@ -13,3 +13,22 @@ trait SavefileParams extends js.Object {
   var tempFilePath: java.lang.String
 }
 
+object SavefileParams {
+  @scala.inline
+  def apply(
+    tempFilePath: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
+    filePath: java.lang.String = null,
+    success: js.Function1[/* res */ wegameDashApiLib.Anon_SavedFilePath, scala.Unit] = null
+  ): SavefileParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tempFilePath")(tempFilePath)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[SavefileParams]
+  }
+}
+

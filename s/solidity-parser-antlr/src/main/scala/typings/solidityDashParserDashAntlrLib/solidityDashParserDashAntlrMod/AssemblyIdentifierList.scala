@@ -5,8 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait AssemblyIdentifierList extends BaseASTNode {
+trait AssemblyIdentifierList
+  extends BaseASTNode
+     with ASTNode {
   @JSName("type")
   var type_AssemblyIdentifierList: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.AssemblyIdentifierList
+}
+
+object AssemblyIdentifierList {
+  @scala.inline
+  def apply(
+    `type`: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.AssemblyIdentifierList,
+    loc: Location = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null
+  ): AssemblyIdentifierList = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    __obj.asInstanceOf[AssemblyIdentifierList]
+  }
 }
 

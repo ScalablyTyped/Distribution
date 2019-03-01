@@ -32,3 +32,20 @@ trait i18nextNodeFsBackEndOptions extends js.Object {
   var parse: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.undefined
 }
 
+object i18nextNodeFsBackEndOptions {
+  @scala.inline
+  def apply(
+    addPath: java.lang.String,
+    jsonIndent: scala.Double,
+    loadPath: java.lang.String,
+    parse: js.Function1[/* data */ js.Any, _] = null
+  ): i18nextNodeFsBackEndOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addPath")(addPath)
+    __obj.updateDynamic("jsonIndent")(jsonIndent)
+    __obj.updateDynamic("loadPath")(loadPath)
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    __obj.asInstanceOf[i18nextNodeFsBackEndOptions]
+  }
+}
+

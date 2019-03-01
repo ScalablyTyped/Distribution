@@ -14,3 +14,16 @@ trait IosPlayOptions extends js.Object {
   var playAudioWhenScreenIsLocked: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IosPlayOptions {
+  @scala.inline
+  def apply(
+    numberOfLoops: scala.Int | scala.Double = null,
+    playAudioWhenScreenIsLocked: js.UndefOr[scala.Boolean] = js.undefined
+  ): IosPlayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (numberOfLoops != null) __obj.updateDynamic("numberOfLoops")(numberOfLoops.asInstanceOf[js.Any])
+    if (!js.isUndefined(playAudioWhenScreenIsLocked)) __obj.updateDynamic("playAudioWhenScreenIsLocked")(playAudioWhenScreenIsLocked)
+    __obj.asInstanceOf[IosPlayOptions]
+  }
+}
+

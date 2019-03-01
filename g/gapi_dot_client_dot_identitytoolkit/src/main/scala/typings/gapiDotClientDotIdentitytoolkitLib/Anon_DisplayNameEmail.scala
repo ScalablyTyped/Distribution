@@ -27,3 +27,28 @@ trait Anon_DisplayNameEmail extends js.Object {
   var screenName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DisplayNameEmail {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String = null,
+    email: java.lang.String = null,
+    federatedId: java.lang.String = null,
+    phoneNumber: java.lang.String = null,
+    photoUrl: java.lang.String = null,
+    providerId: java.lang.String = null,
+    rawId: java.lang.String = null,
+    screenName: java.lang.String = null
+  ): Anon_DisplayNameEmail = {
+    val __obj = js.Dynamic.literal()
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (federatedId != null) __obj.updateDynamic("federatedId")(federatedId)
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
+    if (providerId != null) __obj.updateDynamic("providerId")(providerId)
+    if (rawId != null) __obj.updateDynamic("rawId")(rawId)
+    if (screenName != null) __obj.updateDynamic("screenName")(screenName)
+    __obj.asInstanceOf[Anon_DisplayNameEmail]
+  }
+}
+

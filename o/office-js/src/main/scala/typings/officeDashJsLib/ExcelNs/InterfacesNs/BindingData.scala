@@ -25,3 +25,16 @@ trait BindingData extends js.Object {
   ] = js.undefined
 }
 
+object BindingData {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    `type`: officeDashJsLib.ExcelNs.BindingType | officeDashJsLib.officeDashJsLibStrings.Range | officeDashJsLib.officeDashJsLibStrings.Table | officeDashJsLib.officeDashJsLibStrings.Text = null
+  ): BindingData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BindingData]
+  }
+}
+

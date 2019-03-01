@@ -10,3 +10,13 @@ trait UsersOptions extends js.Object {
   var token: java.lang.String
 }
 
+object UsersOptions {
+  @scala.inline
+  def apply(baseUrl: java.lang.String, token: java.lang.String): UsersOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("baseUrl")(baseUrl)
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[UsersOptions]
+  }
+}
+

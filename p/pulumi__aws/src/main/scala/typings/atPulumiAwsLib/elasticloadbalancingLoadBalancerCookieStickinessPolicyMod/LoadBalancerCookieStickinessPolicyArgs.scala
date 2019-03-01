@@ -28,3 +28,20 @@ trait LoadBalancerCookieStickinessPolicyArgs extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object LoadBalancerCookieStickinessPolicyArgs {
+  @scala.inline
+  def apply(
+    lbPort: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    loadBalancer: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    cookieExpirationPeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): LoadBalancerCookieStickinessPolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lbPort")(lbPort.asInstanceOf[js.Any])
+    __obj.updateDynamic("loadBalancer")(loadBalancer.asInstanceOf[js.Any])
+    if (cookieExpirationPeriod != null) __obj.updateDynamic("cookieExpirationPeriod")(cookieExpirationPeriod.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LoadBalancerCookieStickinessPolicyArgs]
+  }
+}
+

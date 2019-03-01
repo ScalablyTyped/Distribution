@@ -13,3 +13,13 @@ trait GitTreeDiffResponse extends js.Object {
   var treeDiff: GitTreeDiff
 }
 
+object GitTreeDiffResponse {
+  @scala.inline
+  def apply(continuationToken: js.Array[java.lang.String], treeDiff: GitTreeDiff): GitTreeDiffResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("continuationToken")(continuationToken)
+    __obj.updateDynamic("treeDiff")(treeDiff)
+    __obj.asInstanceOf[GitTreeDiffResponse]
+  }
+}
+

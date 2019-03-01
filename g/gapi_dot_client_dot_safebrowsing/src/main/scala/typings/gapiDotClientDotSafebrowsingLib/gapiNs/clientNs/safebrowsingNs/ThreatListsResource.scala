@@ -10,3 +10,17 @@ trait ThreatListsResource extends js.Object {
   def list(request: gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListThreatListsResponse]
 }
 
+object ThreatListsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotSafebrowsingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListThreatListsResponse]
+    ]
+  ): ThreatListsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ThreatListsResource]
+  }
+}
+

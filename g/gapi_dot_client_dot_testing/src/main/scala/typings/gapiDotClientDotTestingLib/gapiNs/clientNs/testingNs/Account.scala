@@ -10,3 +10,12 @@ trait Account extends js.Object {
   var googleAuto: js.UndefOr[js.Any] = js.undefined
 }
 
+object Account {
+  @scala.inline
+  def apply(googleAuto: js.Any = null): Account = {
+    val __obj = js.Dynamic.literal()
+    if (googleAuto != null) __obj.updateDynamic("googleAuto")(googleAuto)
+    __obj.asInstanceOf[Account]
+  }
+}
+

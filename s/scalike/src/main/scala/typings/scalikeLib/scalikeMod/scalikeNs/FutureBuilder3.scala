@@ -14,3 +14,24 @@ trait FutureBuilder3[A, B, C, D] extends js.Object {
   def run[E](f: js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, E]): Future[E]
 }
 
+object FutureBuilder3 {
+  @scala.inline
+  def apply[A, B, C, D](
+    chain: js.Function1[Future[js.Any], FutureBuilder4[A, B, C, D, js.Any]],
+    oa: js.Any,
+    ob: js.Any,
+    oc: js.Any,
+    od: js.Any,
+    run: js.Function1[js.Function4[/* a */ A, /* b */ B, /* c */ C, /* d */ D, js.Any], Future[js.Any]]
+  ): FutureBuilder3[A, B, C, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chain")(chain)
+    __obj.updateDynamic("oa")(oa)
+    __obj.updateDynamic("ob")(ob)
+    __obj.updateDynamic("oc")(oc)
+    __obj.updateDynamic("od")(od)
+    __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[FutureBuilder3[A, B, C, D]]
+  }
+}
+

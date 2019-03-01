@@ -42,3 +42,24 @@ trait Callbacks extends js.Object {
   var open: js.UndefOr[js.Function0[scala.Boolean | scala.Unit]] = js.undefined
 }
 
+object Callbacks {
+  @scala.inline
+  def apply(
+    afterClose: js.Function0[scala.Boolean | scala.Unit] = null,
+    afterOpen: js.Function0[scala.Boolean | scala.Unit] = null,
+    beforeClose: js.Function0[scala.Boolean | scala.Unit] = null,
+    beforeOpen: js.Function0[scala.Boolean | scala.Unit] = null,
+    close: js.Function0[scala.Boolean | scala.Unit] = null,
+    open: js.Function0[scala.Boolean | scala.Unit] = null
+  ): Callbacks = {
+    val __obj = js.Dynamic.literal()
+    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (afterOpen != null) __obj.updateDynamic("afterOpen")(afterOpen)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (open != null) __obj.updateDynamic("open")(open)
+    __obj.asInstanceOf[Callbacks]
+  }
+}
+

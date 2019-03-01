@@ -34,3 +34,15 @@ trait ListAction extends js.Object {
   var Position: scala.Double
 }
 
+object ListAction {
+  @scala.inline
+  def apply(ActionInfo: js.Any, Count: scala.Double, ListActionType: scala.Double, Position: scala.Double): ListAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActionInfo")(ActionInfo)
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("ListActionType")(ListActionType)
+    __obj.updateDynamic("Position")(Position)
+    __obj.asInstanceOf[ListAction]
+  }
+}
+

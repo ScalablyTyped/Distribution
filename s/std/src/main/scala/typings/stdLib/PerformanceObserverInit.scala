@@ -10,3 +10,13 @@ trait PerformanceObserverInit extends js.Object {
   var entryTypes: js.Array[java.lang.String]
 }
 
+object PerformanceObserverInit {
+  @scala.inline
+  def apply(entryTypes: js.Array[java.lang.String], buffered: js.UndefOr[scala.Boolean] = js.undefined): PerformanceObserverInit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entryTypes")(entryTypes)
+    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered)
+    __obj.asInstanceOf[PerformanceObserverInit]
+  }
+}
+

@@ -21,3 +21,18 @@ trait ListCryptoKeyVersionsResponse extends js.Object {
   var totalSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListCryptoKeyVersionsResponse {
+  @scala.inline
+  def apply(
+    cryptoKeyVersions: js.Array[CryptoKeyVersion] = null,
+    nextPageToken: java.lang.String = null,
+    totalSize: scala.Int | scala.Double = null
+  ): ListCryptoKeyVersionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (cryptoKeyVersions != null) __obj.updateDynamic("cryptoKeyVersions")(cryptoKeyVersions)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (totalSize != null) __obj.updateDynamic("totalSize")(totalSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListCryptoKeyVersionsResponse]
+  }
+}
+

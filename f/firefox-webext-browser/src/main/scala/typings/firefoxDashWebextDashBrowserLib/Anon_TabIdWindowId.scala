@@ -16,3 +16,13 @@ trait Anon_TabIdWindowId extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_TabIdWindowId {
+  @scala.inline
+  def apply(tabId: scala.Int | scala.Double = null, windowId: scala.Int | scala.Double = null): Anon_TabIdWindowId = {
+    val __obj = js.Dynamic.literal()
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_TabIdWindowId]
+  }
+}
+

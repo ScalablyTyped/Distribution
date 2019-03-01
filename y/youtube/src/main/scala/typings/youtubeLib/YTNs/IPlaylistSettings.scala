@@ -20,3 +20,24 @@ trait IPlaylistSettings extends VideoOrPlaylistSettings {
   var listType: js.UndefOr[ListType] = js.undefined
 }
 
+object IPlaylistSettings {
+  @scala.inline
+  def apply(
+    list: java.lang.String,
+    endSeconds: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null,
+    listType: ListType = null,
+    startSeconds: scala.Int | scala.Double = null,
+    suggestedQuality: SuggestedVideoQuality = null
+  ): IPlaylistSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    if (endSeconds != null) __obj.updateDynamic("endSeconds")(endSeconds.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (listType != null) __obj.updateDynamic("listType")(listType.asInstanceOf[js.Any])
+    if (startSeconds != null) __obj.updateDynamic("startSeconds")(startSeconds.asInstanceOf[js.Any])
+    if (suggestedQuality != null) __obj.updateDynamic("suggestedQuality")(suggestedQuality.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPlaylistSettings]
+  }
+}
+

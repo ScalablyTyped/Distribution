@@ -15,3 +15,12 @@ trait NetworkInfo extends js.Object {
   var packetLoss: scala.Double
 }
 
+object NetworkInfo {
+  @scala.inline
+  def apply(packetLoss: scala.Double): NetworkInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("packetLoss")(packetLoss)
+    __obj.asInstanceOf[NetworkInfo]
+  }
+}
+

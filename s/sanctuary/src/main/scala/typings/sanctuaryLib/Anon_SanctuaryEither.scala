@@ -9,3 +9,12 @@ trait Anon_SanctuaryEither extends js.Object {
   var `@@type`: sanctuaryLib.sanctuaryLibStrings.`sanctuary/Either`
 }
 
+object Anon_SanctuaryEither {
+  @scala.inline
+  def apply(`@@type`: sanctuaryLib.sanctuaryLibStrings.`sanctuary/Either`): Anon_SanctuaryEither = {
+    val __obj = js.Dynamic.literal(`@@type` = `@@type`)
+  
+    __obj.asInstanceOf[Anon_SanctuaryEither]
+  }
+}
+

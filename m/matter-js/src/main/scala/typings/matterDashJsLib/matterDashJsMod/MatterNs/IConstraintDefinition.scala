@@ -100,3 +100,34 @@ trait IConstraintDefinition extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IConstraintDefinition {
+  @scala.inline
+  def apply(
+    bodyA: Body = null,
+    bodyB: Body = null,
+    damping: scala.Int | scala.Double = null,
+    id: scala.Int | scala.Double = null,
+    label: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    pointA: Vector = null,
+    pointB: Vector = null,
+    render: IConstraintRenderDefinition = null,
+    stiffness: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): IConstraintDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (bodyA != null) __obj.updateDynamic("bodyA")(bodyA)
+    if (bodyB != null) __obj.updateDynamic("bodyB")(bodyB)
+    if (damping != null) __obj.updateDynamic("damping")(damping.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (pointA != null) __obj.updateDynamic("pointA")(pointA)
+    if (pointB != null) __obj.updateDynamic("pointB")(pointB)
+    if (render != null) __obj.updateDynamic("render")(render)
+    if (stiffness != null) __obj.updateDynamic("stiffness")(stiffness.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IConstraintDefinition]
+  }
+}
+

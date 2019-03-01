@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * A map from one set of concepts to one or more other concepts
   */
-trait ConceptMap extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ConceptMap extends DomainResource {
   /**
     * Contains extended information for property 'copyright'.
     */
@@ -141,5 +142,106 @@ trait ConceptMap extends DomainResource {
     * Business version of the concept map
     */
   var version: js.UndefOr[java.lang.String] = js.undefined
+}
+
+object ConceptMap {
+  @scala.inline
+  def apply(
+    status: code,
+    _copyright: Element = null,
+    _date: Element = null,
+    _description: Element = null,
+    _experimental: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _name: Element = null,
+    _publisher: Element = null,
+    _purpose: Element = null,
+    _resourceType: Element = null,
+    _sourceUri: Element = null,
+    _status: Element = null,
+    _targetUri: Element = null,
+    _title: Element = null,
+    _url: Element = null,
+    _version: Element = null,
+    contact: js.Array[ContactDetail] = null,
+    contained: js.Array[Resource] = null,
+    copyright: markdown = null,
+    date: dateTime = null,
+    description: markdown = null,
+    experimental: js.UndefOr[scala.Boolean] = js.undefined,
+    extension: js.Array[Extension] = null,
+    group: js.Array[ConceptMapGroup] = null,
+    id: id = null,
+    identifier: Identifier = null,
+    implicitRules: uri = null,
+    jurisdiction: js.Array[CodeableConcept] = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    name: java.lang.String = null,
+    publisher: java.lang.String = null,
+    purpose: markdown = null,
+    resourceType: code = null,
+    sourceReference: Reference = null,
+    sourceUri: uri = null,
+    targetReference: Reference = null,
+    targetUri: uri = null,
+    text: Narrative = null,
+    title: java.lang.String = null,
+    url: uri = null,
+    useContext: js.Array[UsageContext] = null,
+    version: java.lang.String = null
+  ): ConceptMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (_copyright != null) __obj.updateDynamic("_copyright")(_copyright)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_description != null) __obj.updateDynamic("_description")(_description)
+    if (_experimental != null) __obj.updateDynamic("_experimental")(_experimental)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_publisher != null) __obj.updateDynamic("_publisher")(_publisher)
+    if (_purpose != null) __obj.updateDynamic("_purpose")(_purpose)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_sourceUri != null) __obj.updateDynamic("_sourceUri")(_sourceUri)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (_targetUri != null) __obj.updateDynamic("_targetUri")(_targetUri)
+    if (_title != null) __obj.updateDynamic("_title")(_title)
+    if (_url != null) __obj.updateDynamic("_url")(_url)
+    if (_version != null) __obj.updateDynamic("_version")(_version)
+    if (contact != null) __obj.updateDynamic("contact")(contact)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(experimental)) __obj.updateDynamic("experimental")(experimental)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (jurisdiction != null) __obj.updateDynamic("jurisdiction")(jurisdiction)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (publisher != null) __obj.updateDynamic("publisher")(publisher)
+    if (purpose != null) __obj.updateDynamic("purpose")(purpose)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (sourceReference != null) __obj.updateDynamic("sourceReference")(sourceReference)
+    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri)
+    if (targetReference != null) __obj.updateDynamic("targetReference")(targetReference)
+    if (targetUri != null) __obj.updateDynamic("targetUri")(targetUri)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (useContext != null) __obj.updateDynamic("useContext")(useContext)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[ConceptMap]
+  }
 }
 

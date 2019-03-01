@@ -20,3 +20,14 @@ trait BudgetedAndActualAmounts extends js.Object {
   var TimePeriod: js.UndefOr[TimePeriod] = js.undefined
 }
 
+object BudgetedAndActualAmounts {
+  @scala.inline
+  def apply(ActualAmount: Spend = null, BudgetedAmount: Spend = null, TimePeriod: TimePeriod = null): BudgetedAndActualAmounts = {
+    val __obj = js.Dynamic.literal()
+    if (ActualAmount != null) __obj.updateDynamic("ActualAmount")(ActualAmount)
+    if (BudgetedAmount != null) __obj.updateDynamic("BudgetedAmount")(BudgetedAmount)
+    if (TimePeriod != null) __obj.updateDynamic("TimePeriod")(TimePeriod)
+    __obj.asInstanceOf[BudgetedAndActualAmounts]
+  }
+}
+

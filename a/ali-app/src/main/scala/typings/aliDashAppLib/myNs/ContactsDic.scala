@@ -28,3 +28,22 @@ trait ContactsDic extends js.Object {
   var userId: java.lang.String
 }
 
+object ContactsDic {
+  @scala.inline
+  def apply(
+    avatar: java.lang.String,
+    displayName: java.lang.String,
+    mobile: java.lang.String,
+    realName: java.lang.String,
+    userId: java.lang.String
+  ): ContactsDic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("avatar")(avatar)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("mobile")(mobile)
+    __obj.updateDynamic("realName")(realName)
+    __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[ContactsDic]
+  }
+}
+

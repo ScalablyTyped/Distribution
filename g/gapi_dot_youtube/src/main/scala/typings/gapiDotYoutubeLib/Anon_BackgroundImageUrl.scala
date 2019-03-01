@@ -84,3 +84,50 @@ trait Anon_BackgroundImageUrl extends js.Object {
   var watchIconImageUrl: java.lang.String
 }
 
+object Anon_BackgroundImageUrl {
+  @scala.inline
+  def apply(
+    backgroundImageUrl: Anon_Default,
+    bannerExternalUrl: java.lang.String,
+    bannerImageUrl: java.lang.String,
+    bannerMobileExtraHdImageUrl: java.lang.String,
+    bannerMobileHdImageUrl: java.lang.String,
+    bannerMobileImageUrl: java.lang.String,
+    bannerMobileLowImageUrl: java.lang.String,
+    bannerMobileMediumImageUrl: java.lang.String,
+    bannerTabletExtraHdImageUrl: java.lang.String,
+    bannerTabletHdImageUrl: java.lang.String,
+    bannerTabletImageUrl: java.lang.String,
+    bannerTabletLowImageUrl: java.lang.String,
+    bannerTvImageUrl: java.lang.String,
+    largeBrandedBannerImageImapScript: Anon_Default,
+    largeBrandedBannerImageUrl: Anon_Default,
+    smallBrandedBannerImageImapScript: Anon_Default,
+    smallBrandedBannerImageUrl: Anon_Default,
+    trackingImageUrl: java.lang.String,
+    watchIconImageUrl: java.lang.String
+  ): Anon_BackgroundImageUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundImageUrl")(backgroundImageUrl)
+    __obj.updateDynamic("bannerExternalUrl")(bannerExternalUrl)
+    __obj.updateDynamic("bannerImageUrl")(bannerImageUrl)
+    __obj.updateDynamic("bannerMobileExtraHdImageUrl")(bannerMobileExtraHdImageUrl)
+    __obj.updateDynamic("bannerMobileHdImageUrl")(bannerMobileHdImageUrl)
+    __obj.updateDynamic("bannerMobileImageUrl")(bannerMobileImageUrl)
+    __obj.updateDynamic("bannerMobileLowImageUrl")(bannerMobileLowImageUrl)
+    __obj.updateDynamic("bannerMobileMediumImageUrl")(bannerMobileMediumImageUrl)
+    __obj.updateDynamic("bannerTabletExtraHdImageUrl")(bannerTabletExtraHdImageUrl)
+    __obj.updateDynamic("bannerTabletHdImageUrl")(bannerTabletHdImageUrl)
+    __obj.updateDynamic("bannerTabletImageUrl")(bannerTabletImageUrl)
+    __obj.updateDynamic("bannerTabletLowImageUrl")(bannerTabletLowImageUrl)
+    __obj.updateDynamic("bannerTvImageUrl")(bannerTvImageUrl)
+    __obj.updateDynamic("largeBrandedBannerImageImapScript")(largeBrandedBannerImageImapScript)
+    __obj.updateDynamic("largeBrandedBannerImageUrl")(largeBrandedBannerImageUrl)
+    __obj.updateDynamic("smallBrandedBannerImageImapScript")(smallBrandedBannerImageImapScript)
+    __obj.updateDynamic("smallBrandedBannerImageUrl")(smallBrandedBannerImageUrl)
+    __obj.updateDynamic("trackingImageUrl")(trackingImageUrl)
+    __obj.updateDynamic("watchIconImageUrl")(watchIconImageUrl)
+    __obj.asInstanceOf[Anon_BackgroundImageUrl]
+  }
+}
+

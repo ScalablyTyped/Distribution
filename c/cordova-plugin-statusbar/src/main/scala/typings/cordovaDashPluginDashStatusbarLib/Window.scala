@@ -9,3 +9,12 @@ trait Window extends js.Object {
   var StatusBar: StatusBar
 }
 
+object Window {
+  @scala.inline
+  def apply(StatusBar: StatusBar): Window = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("StatusBar")(StatusBar)
+    __obj.asInstanceOf[Window]
+  }
+}
+

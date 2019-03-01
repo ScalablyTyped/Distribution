@@ -12,3 +12,19 @@ trait BaseBuildOptions extends js.Object {
   var project: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BaseBuildOptions {
+  @scala.inline
+  def apply(
+    `--`: js.Array[java.lang.String],
+    engine: java.lang.String,
+    platform: java.lang.String = null,
+    project: java.lang.String = null
+  ): BaseBuildOptions = {
+    val __obj = js.Dynamic.literal(`--` = `--`)
+    __obj.updateDynamic("engine")(engine)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (project != null) __obj.updateDynamic("project")(project)
+    __obj.asInstanceOf[BaseBuildOptions]
+  }
+}
+

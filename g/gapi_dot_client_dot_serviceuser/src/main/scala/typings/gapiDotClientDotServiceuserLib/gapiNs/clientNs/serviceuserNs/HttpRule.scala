@@ -65,3 +65,36 @@ trait HttpRule extends js.Object {
   var selector: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HttpRule {
+  @scala.inline
+  def apply(
+    additionalBindings: js.Array[HttpRule] = null,
+    body: java.lang.String = null,
+    custom: CustomHttpPattern = null,
+    delete: java.lang.String = null,
+    get: java.lang.String = null,
+    mediaDownload: MediaDownload = null,
+    mediaUpload: MediaUpload = null,
+    patch: java.lang.String = null,
+    post: java.lang.String = null,
+    put: java.lang.String = null,
+    responseBody: java.lang.String = null,
+    selector: java.lang.String = null
+  ): HttpRule = {
+    val __obj = js.Dynamic.literal()
+    if (additionalBindings != null) __obj.updateDynamic("additionalBindings")(additionalBindings)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (custom != null) __obj.updateDynamic("custom")(custom)
+    if (delete != null) __obj.updateDynamic("delete")(delete)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (mediaDownload != null) __obj.updateDynamic("mediaDownload")(mediaDownload)
+    if (mediaUpload != null) __obj.updateDynamic("mediaUpload")(mediaUpload)
+    if (patch != null) __obj.updateDynamic("patch")(patch)
+    if (post != null) __obj.updateDynamic("post")(post)
+    if (put != null) __obj.updateDynamic("put")(put)
+    if (responseBody != null) __obj.updateDynamic("responseBody")(responseBody)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[HttpRule]
+  }
+}
+

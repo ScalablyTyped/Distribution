@@ -2723,6 +2723,24 @@ object ComprehendNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[StopTrainingEntityRecognizerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _EntityType extends js.Object
+  
+  trait _InputFormat extends js.Object
+  
+  trait _JobStatus extends js.Object
+  
+  trait _LanguageCode extends js.Object
+  
+  trait _ModelStatus extends js.Object
+  
+  trait _PartOfSpeechTagType extends js.Object
+  
+  trait _SentimentType extends js.Object
+  
+  trait _SyntaxLanguageCode extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AnyLengthString = java.lang.String
   type BatchItemErrorList = js.Array[BatchItemError]
@@ -2738,18 +2756,18 @@ object ComprehendNs extends js.Object {
   type EntityRecognizerArn = java.lang.String
   type EntityRecognizerMetadataEntityTypesList = js.Array[EntityRecognizerMetadataEntityTypesListItem]
   type EntityRecognizerPropertiesList = js.Array[EntityRecognizerProperties]
-  type EntityType = awsDashSdkLib.awsDashSdkLibStrings.PERSON | awsDashSdkLib.awsDashSdkLibStrings.LOCATION | awsDashSdkLib.awsDashSdkLibStrings.ORGANIZATION | awsDashSdkLib.awsDashSdkLibStrings.COMMERCIAL_ITEM | awsDashSdkLib.awsDashSdkLibStrings.EVENT | awsDashSdkLib.awsDashSdkLibStrings.DATE | awsDashSdkLib.awsDashSdkLibStrings.QUANTITY | awsDashSdkLib.awsDashSdkLibStrings.TITLE | awsDashSdkLib.awsDashSdkLibStrings.OTHER | java.lang.String
+  type EntityType = _EntityType | java.lang.String
   type EntityTypeName = java.lang.String
   type EntityTypesList = js.Array[EntityTypesListItem]
   type Float = scala.Double
   type IamRoleArn = java.lang.String
-  type InputFormat = awsDashSdkLib.awsDashSdkLibStrings.ONE_DOC_PER_FILE | awsDashSdkLib.awsDashSdkLibStrings.ONE_DOC_PER_LINE | java.lang.String
+  type InputFormat = _InputFormat | java.lang.String
   type Integer = scala.Double
   type JobId = java.lang.String
   type JobName = java.lang.String
-  type JobStatus = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.STOP_REQUESTED | awsDashSdkLib.awsDashSdkLibStrings.STOPPED | java.lang.String
+  type JobStatus = _JobStatus | java.lang.String
   type KeyPhrasesDetectionJobPropertiesList = js.Array[KeyPhrasesDetectionJobProperties]
-  type LanguageCode = awsDashSdkLib.awsDashSdkLibStrings.en | awsDashSdkLib.awsDashSdkLibStrings.es | awsDashSdkLib.awsDashSdkLibStrings.fr | awsDashSdkLib.awsDashSdkLibStrings.de | awsDashSdkLib.awsDashSdkLibStrings.it | awsDashSdkLib.awsDashSdkLibStrings.pt | java.lang.String
+  type LanguageCode = _LanguageCode | java.lang.String
   type ListOfDetectDominantLanguageResult = js.Array[BatchDetectDominantLanguageItemResult]
   type ListOfDetectEntitiesResult = js.Array[BatchDetectEntitiesItemResult]
   type ListOfDetectKeyPhrasesResult = js.Array[BatchDetectKeyPhrasesItemResult]
@@ -2760,17 +2778,17 @@ object ComprehendNs extends js.Object {
   type ListOfKeyPhrases = js.Array[KeyPhrase]
   type ListOfSyntaxTokens = js.Array[SyntaxToken]
   type MaxResultsInteger = scala.Double
-  type ModelStatus = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.TRAINING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.STOP_REQUESTED | awsDashSdkLib.awsDashSdkLibStrings.STOPPED | awsDashSdkLib.awsDashSdkLibStrings.IN_ERROR | awsDashSdkLib.awsDashSdkLibStrings.TRAINED | java.lang.String
+  type ModelStatus = _ModelStatus | java.lang.String
   type NumberOfTopicsInteger = scala.Double
-  type PartOfSpeechTagType = awsDashSdkLib.awsDashSdkLibStrings.ADJ | awsDashSdkLib.awsDashSdkLibStrings.ADP | awsDashSdkLib.awsDashSdkLibStrings.ADV | awsDashSdkLib.awsDashSdkLibStrings.AUX | awsDashSdkLib.awsDashSdkLibStrings.CONJ | awsDashSdkLib.awsDashSdkLibStrings.CCONJ | awsDashSdkLib.awsDashSdkLibStrings.DET | awsDashSdkLib.awsDashSdkLibStrings.INTJ | awsDashSdkLib.awsDashSdkLibStrings.NOUN | awsDashSdkLib.awsDashSdkLibStrings.NUM | awsDashSdkLib.awsDashSdkLibStrings.O | awsDashSdkLib.awsDashSdkLibStrings.PART | awsDashSdkLib.awsDashSdkLibStrings.PRON | awsDashSdkLib.awsDashSdkLibStrings.PROPN | awsDashSdkLib.awsDashSdkLibStrings.PUNCT | awsDashSdkLib.awsDashSdkLibStrings.SCONJ | awsDashSdkLib.awsDashSdkLibStrings.SYM | awsDashSdkLib.awsDashSdkLibStrings.VERB | java.lang.String
+  type PartOfSpeechTagType = _PartOfSpeechTagType | java.lang.String
   type S3Uri = java.lang.String
   type SentimentDetectionJobPropertiesList = js.Array[SentimentDetectionJobProperties]
-  type SentimentType = awsDashSdkLib.awsDashSdkLibStrings.POSITIVE | awsDashSdkLib.awsDashSdkLibStrings.NEGATIVE | awsDashSdkLib.awsDashSdkLibStrings.NEUTRAL | awsDashSdkLib.awsDashSdkLibStrings.MIXED | java.lang.String
+  type SentimentType = _SentimentType | java.lang.String
   type String = java.lang.String
   type StringList = js.Array[String]
-  type SyntaxLanguageCode = awsDashSdkLib.awsDashSdkLibStrings.en | awsDashSdkLib.awsDashSdkLibStrings.es | awsDashSdkLib.awsDashSdkLibStrings.fr | awsDashSdkLib.awsDashSdkLibStrings.de | awsDashSdkLib.awsDashSdkLibStrings.it | awsDashSdkLib.awsDashSdkLibStrings.pt | java.lang.String
+  type SyntaxLanguageCode = _SyntaxLanguageCode | java.lang.String
   type Timestamp = stdLib.Date
   type TopicsDetectionJobPropertiesList = js.Array[TopicsDetectionJobProperties]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-27` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

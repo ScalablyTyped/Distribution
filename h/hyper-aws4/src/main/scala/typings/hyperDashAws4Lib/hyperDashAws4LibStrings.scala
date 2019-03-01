@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object hyperDashAws4LibStrings {
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends hyperDashAws4Lib.hyperDashAws4Mod.HttpMethods
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends hyperDashAws4Lib.hyperDashAws4Mod.HttpMethods
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH
+    extends hyperDashAws4Lib.hyperDashAws4Mod.HttpMethods
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends hyperDashAws4Lib.hyperDashAws4Mod.HttpMethods
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends hyperDashAws4Lib.hyperDashAws4Mod.HttpMethods
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

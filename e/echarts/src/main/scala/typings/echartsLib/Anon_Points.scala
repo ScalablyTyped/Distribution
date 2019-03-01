@@ -41,3 +41,18 @@ trait Anon_Points extends js.Object {
   var smoothConstraint: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Points {
+  @scala.inline
+  def apply(
+    points: js.Array[_] = null,
+    smooth: scala.Double | java.lang.String = null,
+    smoothConstraint: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Points = {
+    val __obj = js.Dynamic.literal()
+    if (points != null) __obj.updateDynamic("points")(points)
+    if (smooth != null) __obj.updateDynamic("smooth")(smooth.asInstanceOf[js.Any])
+    if (!js.isUndefined(smoothConstraint)) __obj.updateDynamic("smoothConstraint")(smoothConstraint)
+    __obj.asInstanceOf[Anon_Points]
+  }
+}
+

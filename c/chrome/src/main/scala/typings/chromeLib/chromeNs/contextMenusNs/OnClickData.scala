@@ -78,3 +78,36 @@ trait OnClickData extends js.Object {
   var wasChecked: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object OnClickData {
+  @scala.inline
+  def apply(
+    editable: scala.Boolean,
+    menuItemId: js.Any,
+    pageUrl: java.lang.String,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    frameId: scala.Int | scala.Double = null,
+    frameUrl: java.lang.String = null,
+    linkUrl: java.lang.String = null,
+    mediaType: java.lang.String = null,
+    parentMenuItemId: js.Any = null,
+    selectionText: java.lang.String = null,
+    srcUrl: java.lang.String = null,
+    wasChecked: js.UndefOr[scala.Boolean] = js.undefined
+  ): OnClickData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editable")(editable)
+    __obj.updateDynamic("menuItemId")(menuItemId)
+    __obj.updateDynamic("pageUrl")(pageUrl)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (frameId != null) __obj.updateDynamic("frameId")(frameId.asInstanceOf[js.Any])
+    if (frameUrl != null) __obj.updateDynamic("frameUrl")(frameUrl)
+    if (linkUrl != null) __obj.updateDynamic("linkUrl")(linkUrl)
+    if (mediaType != null) __obj.updateDynamic("mediaType")(mediaType)
+    if (parentMenuItemId != null) __obj.updateDynamic("parentMenuItemId")(parentMenuItemId)
+    if (selectionText != null) __obj.updateDynamic("selectionText")(selectionText)
+    if (srcUrl != null) __obj.updateDynamic("srcUrl")(srcUrl)
+    if (!js.isUndefined(wasChecked)) __obj.updateDynamic("wasChecked")(wasChecked)
+    __obj.asInstanceOf[OnClickData]
+  }
+}
+

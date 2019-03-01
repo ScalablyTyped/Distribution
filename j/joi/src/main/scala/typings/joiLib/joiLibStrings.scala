@@ -22,43 +22,53 @@ object joiLibStrings {
   sealed trait Rules extends js.Object
   
   @js.native
-  sealed trait alternatives extends js.Object
+  sealed trait alternatives
+    extends joiLib.joiMod.Types
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any
+    extends joiLib.joiMod.Types
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends joiLib.joiMod.Types
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends joiLib.joiMod.Types
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends joiLib.joiMod.Types
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends joiLib.joiMod.Types
   
   @js.native
   sealed trait forbidden extends js.Object
   
   @js.native
-  sealed trait function extends js.Object
+  sealed trait function
+    extends joiLib.joiMod.Types
   
   @js.native
   sealed trait javascript extends js.Object
   
   @js.native
-  sealed trait `lazy` extends js.Object
+  sealed trait `lazy`
+    extends joiLib.joiMod.Types
   
   @js.native
   sealed trait now extends js.Object
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends joiLib.joiMod.Types
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends joiLib.joiMod.Types
   
   @js.native
   sealed trait optional extends js.Object
@@ -67,25 +77,31 @@ object joiLibStrings {
   sealed trait required extends js.Object
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends joiLib.joiMod.Types
   
   @js.native
   sealed trait unix extends js.Object
   
   @js.native
-  sealed trait uuidv1 extends js.Object
+  sealed trait uuidv1
+    extends joiLib.joiMod.GuidVersions
   
   @js.native
-  sealed trait uuidv2 extends js.Object
+  sealed trait uuidv2
+    extends joiLib.joiMod.GuidVersions
   
   @js.native
-  sealed trait uuidv3 extends js.Object
+  sealed trait uuidv3
+    extends joiLib.joiMod.GuidVersions
   
   @js.native
-  sealed trait uuidv4 extends js.Object
+  sealed trait uuidv4
+    extends joiLib.joiMod.GuidVersions
   
   @js.native
-  sealed trait uuidv5 extends js.Object
+  sealed trait uuidv5
+    extends joiLib.joiMod.GuidVersions
   
   @scala.inline
   def NFC: NFC = "NFC".asInstanceOf[NFC]

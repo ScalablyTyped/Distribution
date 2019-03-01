@@ -31,3 +31,20 @@ trait LoadOptions extends js.Object {
   var longsAsStrings: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LoadOptions {
+  @scala.inline
+  def apply(
+    binaryAsBase64: js.UndefOr[scala.Boolean] = js.undefined,
+    convertFieldsToCamelCase: js.UndefOr[scala.Boolean] = js.undefined,
+    deprecatedArgumentOrder: js.UndefOr[scala.Boolean] = js.undefined,
+    longsAsStrings: js.UndefOr[scala.Boolean] = js.undefined
+  ): LoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(binaryAsBase64)) __obj.updateDynamic("binaryAsBase64")(binaryAsBase64)
+    if (!js.isUndefined(convertFieldsToCamelCase)) __obj.updateDynamic("convertFieldsToCamelCase")(convertFieldsToCamelCase)
+    if (!js.isUndefined(deprecatedArgumentOrder)) __obj.updateDynamic("deprecatedArgumentOrder")(deprecatedArgumentOrder)
+    if (!js.isUndefined(longsAsStrings)) __obj.updateDynamic("longsAsStrings")(longsAsStrings)
+    __obj.asInstanceOf[LoadOptions]
+  }
+}
+

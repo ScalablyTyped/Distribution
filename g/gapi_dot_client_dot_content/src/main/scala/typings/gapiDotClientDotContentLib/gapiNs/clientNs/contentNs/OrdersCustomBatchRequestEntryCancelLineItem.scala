@@ -21,3 +21,22 @@ trait OrdersCustomBatchRequestEntryCancelLineItem extends js.Object {
   var reasonText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OrdersCustomBatchRequestEntryCancelLineItem {
+  @scala.inline
+  def apply(
+    amount: Price = null,
+    lineItemId: java.lang.String = null,
+    quantity: scala.Int | scala.Double = null,
+    reason: java.lang.String = null,
+    reasonText: java.lang.String = null
+  ): OrdersCustomBatchRequestEntryCancelLineItem = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount)
+    if (lineItemId != null) __obj.updateDynamic("lineItemId")(lineItemId)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    if (reasonText != null) __obj.updateDynamic("reasonText")(reasonText)
+    __obj.asInstanceOf[OrdersCustomBatchRequestEntryCancelLineItem]
+  }
+}
+

@@ -12,3 +12,20 @@ trait ResponseStatus extends js.Object {
   var stackTrace: java.lang.String
 }
 
+object ResponseStatus {
+  @scala.inline
+  def apply(
+    errorCode: java.lang.String,
+    errors: js.Array[ResponseError],
+    message: java.lang.String,
+    stackTrace: java.lang.String
+  ): ResponseStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorCode")(errorCode)
+    __obj.updateDynamic("errors")(errors)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("stackTrace")(stackTrace)
+    __obj.asInstanceOf[ResponseStatus]
+  }
+}
+

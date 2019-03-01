@@ -17,3 +17,26 @@ import scala.scalajs.js.annotation._
   var title: reactLib.reactMod.ReactNs.ReactNode
 }
 
+object SplitButtonProps {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    title: reactLib.reactMod.ReactNs.ReactNode,
+    bsSize: reactDashBootstrapLib.reactDashBootstrapMod.Sizes = null,
+    bsStyle: java.lang.String = null,
+    dropdownTitle: js.Any = null,
+    dropup: js.UndefOr[scala.Boolean] = js.undefined,
+    pullRight: js.UndefOr[scala.Boolean] = js.undefined
+  ): SplitButtonProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (bsSize != null) __obj.updateDynamic("bsSize")(bsSize)
+    if (bsStyle != null) __obj.updateDynamic("bsStyle")(bsStyle)
+    if (dropdownTitle != null) __obj.updateDynamic("dropdownTitle")(dropdownTitle)
+    if (!js.isUndefined(dropup)) __obj.updateDynamic("dropup")(dropup)
+    if (!js.isUndefined(pullRight)) __obj.updateDynamic("pullRight")(pullRight)
+    __obj.asInstanceOf[SplitButtonProps]
+  }
+}
+

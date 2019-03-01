@@ -9,3 +9,14 @@ trait Text extends Node {
   var value: java.lang.String
 }
 
+object Text {
+  @scala.inline
+  def apply(`type`: java.lang.String, value: java.lang.String, data: Data = null, position: Location = null): Text = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Text]
+  }
+}
+

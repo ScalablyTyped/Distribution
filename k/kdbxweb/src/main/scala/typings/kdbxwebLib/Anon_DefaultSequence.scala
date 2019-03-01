@@ -12,3 +12,20 @@ trait Anon_DefaultSequence extends js.Object {
   var obfuscation: scala.Double
 }
 
+object Anon_DefaultSequence {
+  @scala.inline
+  def apply(
+    defaultSequence: java.lang.String,
+    enabled: scala.Boolean,
+    items: Anon_KeystrokeSequence,
+    obfuscation: scala.Double
+  ): Anon_DefaultSequence = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultSequence")(defaultSequence)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("obfuscation")(obfuscation)
+    __obj.asInstanceOf[Anon_DefaultSequence]
+  }
+}
+

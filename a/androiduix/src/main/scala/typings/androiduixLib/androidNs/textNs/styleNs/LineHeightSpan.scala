@@ -16,3 +16,22 @@ trait LineHeightSpan extends ParagraphStyle {
   ): scala.Unit
 }
 
+object LineHeightSpan {
+  @scala.inline
+  def apply(
+    chooseHeight: js.Function6[
+      java.lang.String, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      androiduixLib.androidNs.graphicsNs.PaintNs.FontMetricsInt, 
+      scala.Unit
+    ]
+  ): LineHeightSpan = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chooseHeight")(chooseHeight)
+    __obj.asInstanceOf[LineHeightSpan]
+  }
+}
+

@@ -11,3 +11,18 @@ trait GeoJSONOptions extends js.Object {
   var geometryName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GeoJSONOptions {
+  @scala.inline
+  def apply(
+    defaultDataProjection: openlayersLib.openlayersMod.ProjectionLike,
+    featureProjection: openlayersLib.openlayersMod.ProjectionLike,
+    geometryName: java.lang.String = null
+  ): GeoJSONOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultDataProjection")(defaultDataProjection.asInstanceOf[js.Any])
+    __obj.updateDynamic("featureProjection")(featureProjection.asInstanceOf[js.Any])
+    if (geometryName != null) __obj.updateDynamic("geometryName")(geometryName)
+    __obj.asInstanceOf[GeoJSONOptions]
+  }
+}
+

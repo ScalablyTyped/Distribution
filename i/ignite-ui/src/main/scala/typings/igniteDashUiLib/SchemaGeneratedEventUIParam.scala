@@ -20,3 +20,14 @@ trait SchemaGeneratedEventUIParam extends js.Object {
   var schema: js.UndefOr[js.Any] = js.undefined
 }
 
+object SchemaGeneratedEventUIParam {
+  @scala.inline
+  def apply(dataSource: js.Any = null, owner: js.Any = null, schema: js.Any = null): SchemaGeneratedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (schema != null) __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[SchemaGeneratedEventUIParam]
+  }
+}
+

@@ -14,3 +14,18 @@ trait AdWordsAccount extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AdWordsAccount {
+  @scala.inline
+  def apply(
+    autoTaggingEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    customerId: java.lang.String = null,
+    kind: java.lang.String = null
+  ): AdWordsAccount = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoTaggingEnabled)) __obj.updateDynamic("autoTaggingEnabled")(autoTaggingEnabled)
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[AdWordsAccount]
+  }
+}
+

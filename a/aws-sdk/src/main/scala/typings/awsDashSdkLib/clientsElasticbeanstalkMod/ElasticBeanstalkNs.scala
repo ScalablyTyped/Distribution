@@ -3082,12 +3082,52 @@ object ElasticBeanstalkNs extends js.Object {
     var Severity: js.UndefOr[ValidationSeverity] = js.undefined
   }
   
+  trait _ActionHistoryStatus extends js.Object
+  
+  trait _ActionStatus extends js.Object
+  
+  trait _ActionType extends js.Object
+  
+  trait _ApplicationVersionStatus extends js.Object
+  
+  trait _ComputeType extends js.Object
+  
+  trait _ConfigurationDeploymentStatus extends js.Object
+  
+  trait _ConfigurationOptionValueType extends js.Object
+  
+  trait _EnvironmentHealth extends js.Object
+  
+  trait _EnvironmentHealthAttribute extends js.Object
+  
+  trait _EnvironmentHealthStatus extends js.Object
+  
+  trait _EnvironmentInfoType extends js.Object
+  
+  trait _EnvironmentStatus extends js.Object
+  
+  trait _EventSeverity extends js.Object
+  
+  trait _FailureType extends js.Object
+  
+  trait _InstancesHealthAttribute extends js.Object
+  
+  trait _PlatformStatus extends js.Object
+  
+  trait _SourceRepository extends js.Object
+  
+  trait _SourceType extends js.Object
+  
+  trait _ValidationSeverity extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ARN = java.lang.String
   type AbortableOperationInProgress = scala.Boolean
-  type ActionHistoryStatus = awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Unknown | java.lang.String
-  type ActionStatus = awsDashSdkLib.awsDashSdkLibStrings.Scheduled | awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Running | awsDashSdkLib.awsDashSdkLibStrings.Unknown | java.lang.String
-  type ActionType = awsDashSdkLib.awsDashSdkLibStrings.InstanceRefresh | awsDashSdkLib.awsDashSdkLibStrings.PlatformUpdate | awsDashSdkLib.awsDashSdkLibStrings.Unknown | java.lang.String
+  type ActionHistoryStatus = _ActionHistoryStatus | java.lang.String
+  type ActionStatus = _ActionStatus | java.lang.String
+  type ActionType = _ActionType | java.lang.String
   type ApplicationArn = java.lang.String
   type ApplicationDescriptionList = js.Array[ApplicationDescription]
   type ApplicationName = java.lang.String
@@ -3095,7 +3135,7 @@ object ElasticBeanstalkNs extends js.Object {
   type ApplicationVersionArn = java.lang.String
   type ApplicationVersionDescriptionList = js.Array[ApplicationVersionDescription]
   type ApplicationVersionProccess = scala.Boolean
-  type ApplicationVersionStatus = awsDashSdkLib.awsDashSdkLibStrings.Processed | awsDashSdkLib.awsDashSdkLibStrings.Unprocessed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Processing | awsDashSdkLib.awsDashSdkLibStrings.Building | java.lang.String
+  type ApplicationVersionStatus = _ApplicationVersionStatus | java.lang.String
   type AutoCreateApplication = scala.Boolean
   type AutoScalingGroupList = js.Array[AutoScalingGroup]
   type AvailableSolutionStackDetailsList = js.Array[SolutionStackDescription]
@@ -3106,8 +3146,8 @@ object ElasticBeanstalkNs extends js.Object {
   type Causes = js.Array[Cause]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CnameAvailability = scala.Boolean
-  type ComputeType = awsDashSdkLib.awsDashSdkLibStrings.BUILD_GENERAL1_SMALL | awsDashSdkLib.awsDashSdkLibStrings.BUILD_GENERAL1_MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.BUILD_GENERAL1_LARGE | java.lang.String
-  type ConfigurationDeploymentStatus = awsDashSdkLib.awsDashSdkLibStrings.deployed | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
+  type ComputeType = _ComputeType | java.lang.String
+  type ConfigurationDeploymentStatus = _ConfigurationDeploymentStatus | java.lang.String
   type ConfigurationOptionDefaultValue = java.lang.String
   type ConfigurationOptionDescriptionsList = js.Array[ConfigurationOptionDescription]
   type ConfigurationOptionName = java.lang.String
@@ -3116,7 +3156,7 @@ object ElasticBeanstalkNs extends js.Object {
   type ConfigurationOptionSettingsList = js.Array[ConfigurationOptionSetting]
   type ConfigurationOptionSeverity = java.lang.String
   type ConfigurationOptionValue = java.lang.String
-  type ConfigurationOptionValueType = awsDashSdkLib.awsDashSdkLibStrings.Scalar | awsDashSdkLib.awsDashSdkLibStrings.List | java.lang.String
+  type ConfigurationOptionValueType = _ConfigurationOptionValueType | java.lang.String
   type ConfigurationSettingsDescriptionList = js.Array[ConfigurationSettingsDescription]
   type ConfigurationTemplateName = java.lang.String
   type ConfigurationTemplateNamesList = js.Array[ConfigurationTemplateName]
@@ -3131,23 +3171,23 @@ object ElasticBeanstalkNs extends js.Object {
   type EndpointURL = java.lang.String
   type EnvironmentArn = java.lang.String
   type EnvironmentDescriptionsList = js.Array[EnvironmentDescription]
-  type EnvironmentHealth = awsDashSdkLib.awsDashSdkLibStrings.Green | awsDashSdkLib.awsDashSdkLibStrings.Yellow | awsDashSdkLib.awsDashSdkLibStrings.Red | awsDashSdkLib.awsDashSdkLibStrings.Grey | java.lang.String
-  type EnvironmentHealthAttribute = awsDashSdkLib.awsDashSdkLibStrings.Status | awsDashSdkLib.awsDashSdkLibStrings.Color | awsDashSdkLib.awsDashSdkLibStrings.Causes | awsDashSdkLib.awsDashSdkLibStrings.ApplicationMetrics | awsDashSdkLib.awsDashSdkLibStrings.InstancesHealth | awsDashSdkLib.awsDashSdkLibStrings.All | awsDashSdkLib.awsDashSdkLibStrings.HealthStatus | awsDashSdkLib.awsDashSdkLibStrings.RefreshedAt | java.lang.String
+  type EnvironmentHealth = _EnvironmentHealth | java.lang.String
+  type EnvironmentHealthAttribute = _EnvironmentHealthAttribute | java.lang.String
   type EnvironmentHealthAttributes = js.Array[EnvironmentHealthAttribute]
-  type EnvironmentHealthStatus = awsDashSdkLib.awsDashSdkLibStrings.NoData | awsDashSdkLib.awsDashSdkLibStrings.Unknown | awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Ok | awsDashSdkLib.awsDashSdkLibStrings.Info | awsDashSdkLib.awsDashSdkLibStrings.Warning | awsDashSdkLib.awsDashSdkLibStrings.Degraded | awsDashSdkLib.awsDashSdkLibStrings.Severe | awsDashSdkLib.awsDashSdkLibStrings.Suspended | java.lang.String
+  type EnvironmentHealthStatus = _EnvironmentHealthStatus | java.lang.String
   type EnvironmentId = java.lang.String
   type EnvironmentIdList = js.Array[EnvironmentId]
   type EnvironmentInfoDescriptionList = js.Array[EnvironmentInfoDescription]
-  type EnvironmentInfoType = awsDashSdkLib.awsDashSdkLibStrings.tail | awsDashSdkLib.awsDashSdkLibStrings.bundle | java.lang.String
+  type EnvironmentInfoType = _EnvironmentInfoType | java.lang.String
   type EnvironmentLinks = js.Array[EnvironmentLink]
   type EnvironmentName = java.lang.String
   type EnvironmentNamesList = js.Array[EnvironmentName]
-  type EnvironmentStatus = awsDashSdkLib.awsDashSdkLibStrings.Launching | awsDashSdkLib.awsDashSdkLibStrings.Updating | awsDashSdkLib.awsDashSdkLibStrings.Ready | awsDashSdkLib.awsDashSdkLibStrings.Terminating | awsDashSdkLib.awsDashSdkLibStrings.Terminated | java.lang.String
+  type EnvironmentStatus = _EnvironmentStatus | java.lang.String
   type EventDate = stdLib.Date
   type EventDescriptionList = js.Array[EventDescription]
   type EventMessage = java.lang.String
-  type EventSeverity = awsDashSdkLib.awsDashSdkLibStrings.TRACE | awsDashSdkLib.awsDashSdkLibStrings.DEBUG | awsDashSdkLib.awsDashSdkLibStrings.INFO | awsDashSdkLib.awsDashSdkLibStrings.WARN | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.FATAL | java.lang.String
-  type FailureType = awsDashSdkLib.awsDashSdkLibStrings.UpdateCancelled | awsDashSdkLib.awsDashSdkLibStrings.CancellationFailed | awsDashSdkLib.awsDashSdkLibStrings.RollbackFailed | awsDashSdkLib.awsDashSdkLibStrings.RollbackSuccessful | awsDashSdkLib.awsDashSdkLibStrings.InternalFailure | awsDashSdkLib.awsDashSdkLibStrings.InvalidEnvironmentState | awsDashSdkLib.awsDashSdkLibStrings.PermissionsError | java.lang.String
+  type EventSeverity = _EventSeverity | java.lang.String
+  type FailureType = _FailureType | java.lang.String
   type FileTypeExtension = java.lang.String
   type ForceTerminate = scala.Boolean
   type GroupName = java.lang.String
@@ -3157,7 +3197,7 @@ object ElasticBeanstalkNs extends js.Object {
   type InstanceHealthList = js.Array[SingleInstanceHealth]
   type InstanceId = java.lang.String
   type InstanceList = js.Array[Instance]
-  type InstancesHealthAttribute = awsDashSdkLib.awsDashSdkLibStrings.HealthStatus | awsDashSdkLib.awsDashSdkLibStrings.Color | awsDashSdkLib.awsDashSdkLibStrings.Causes | awsDashSdkLib.awsDashSdkLibStrings.ApplicationMetrics | awsDashSdkLib.awsDashSdkLibStrings.RefreshedAt | awsDashSdkLib.awsDashSdkLibStrings.LaunchedAt | awsDashSdkLib.awsDashSdkLibStrings.System | awsDashSdkLib.awsDashSdkLibStrings.Deployment | awsDashSdkLib.awsDashSdkLibStrings.AvailabilityZone | awsDashSdkLib.awsDashSdkLibStrings.InstanceType | awsDashSdkLib.awsDashSdkLibStrings.All | java.lang.String
+  type InstancesHealthAttribute = _InstancesHealthAttribute | java.lang.String
   type InstancesHealthAttributes = js.Array[InstancesHealthAttribute]
   type Integer = scala.Double
   type LaunchConfigurationList = js.Array[LaunchConfiguration]
@@ -3196,7 +3236,7 @@ object ElasticBeanstalkNs extends js.Object {
   type PlatformName = java.lang.String
   type PlatformOwner = java.lang.String
   type PlatformProgrammingLanguages = js.Array[PlatformProgrammingLanguage]
-  type PlatformStatus = awsDashSdkLib.awsDashSdkLibStrings.Creating | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Ready | awsDashSdkLib.awsDashSdkLibStrings.Deleting | awsDashSdkLib.awsDashSdkLibStrings.Deleted | java.lang.String
+  type PlatformStatus = _PlatformStatus | java.lang.String
   type PlatformSummaryList = js.Array[PlatformSummary]
   type PlatformVersion = java.lang.String
   type QueueList = js.Array[Queue]
@@ -3214,8 +3254,8 @@ object ElasticBeanstalkNs extends js.Object {
   type SolutionStackFileTypeList = js.Array[FileTypeExtension]
   type SolutionStackName = java.lang.String
   type SourceLocation = java.lang.String
-  type SourceRepository = awsDashSdkLib.awsDashSdkLibStrings.CodeCommit | awsDashSdkLib.awsDashSdkLibStrings.S3 | java.lang.String
-  type SourceType = awsDashSdkLib.awsDashSdkLibStrings.Git | awsDashSdkLib.awsDashSdkLibStrings.Zip | java.lang.String
+  type SourceRepository = _SourceRepository | java.lang.String
+  type SourceType = _SourceType | java.lang.String
   type String = java.lang.String
   type SupportedAddon = java.lang.String
   type SupportedAddonList = js.Array[SupportedAddon]
@@ -3237,11 +3277,11 @@ object ElasticBeanstalkNs extends js.Object {
   type UserDefinedOption = scala.Boolean
   type ValidationMessageString = java.lang.String
   type ValidationMessagesList = js.Array[ValidationMessage]
-  type ValidationSeverity = awsDashSdkLib.awsDashSdkLibStrings.error | awsDashSdkLib.awsDashSdkLibStrings.warning | java.lang.String
+  type ValidationSeverity = _ValidationSeverity | java.lang.String
   type VersionLabel = java.lang.String
   type VersionLabels = js.Array[VersionLabel]
   type VersionLabelsList = js.Array[VersionLabel]
   type VirtualizationType = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2010-12-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

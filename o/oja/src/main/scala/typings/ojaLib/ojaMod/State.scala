@@ -10,3 +10,13 @@ trait State extends js.Object {
   var queue: js.Array[java.lang.String]
 }
 
+object State {
+  @scala.inline
+  def apply(pending: js.Array[java.lang.String], queue: js.Array[java.lang.String]): State = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pending")(pending)
+    __obj.updateDynamic("queue")(queue)
+    __obj.asInstanceOf[State]
+  }
+}
+

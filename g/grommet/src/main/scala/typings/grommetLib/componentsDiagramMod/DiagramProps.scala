@@ -9,3 +9,12 @@ trait DiagramProps extends js.Object {
   var connections: js.Array[grommetLib.Anon_Anchor]
 }
 
+object DiagramProps {
+  @scala.inline
+  def apply(connections: js.Array[grommetLib.Anon_Anchor]): DiagramProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connections")(connections)
+    __obj.asInstanceOf[DiagramProps]
+  }
+}
+

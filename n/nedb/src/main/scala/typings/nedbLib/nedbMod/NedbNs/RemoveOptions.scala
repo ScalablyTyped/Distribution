@@ -12,3 +12,12 @@ trait RemoveOptions extends js.Object {
   var multi: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RemoveOptions {
+  @scala.inline
+  def apply(multi: js.UndefOr[scala.Boolean] = js.undefined): RemoveOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    __obj.asInstanceOf[RemoveOptions]
+  }
+}
+

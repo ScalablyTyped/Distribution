@@ -39,3 +39,26 @@ trait Hotkey extends js.Object {
   def callback(event: stdLib.Event, hotkey: Hotkey): scala.Unit
 }
 
+object Hotkey {
+  @scala.inline
+  def apply(
+    callback: js.Function2[stdLib.Event, Hotkey, scala.Unit],
+    combo: java.lang.String | js.Array[java.lang.String],
+    action: java.lang.String = null,
+    allowIn: js.Array[
+      angularDashHotkeysLib.angularDashHotkeysLibStrings.INPUT | angularDashHotkeysLib.angularDashHotkeysLibStrings.SELECT | angularDashHotkeysLib.angularDashHotkeysLibStrings.TEXTAREA
+    ] = null,
+    description: java.lang.String = null,
+    persistent: js.UndefOr[scala.Boolean] = js.undefined
+  ): Hotkey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("combo")(combo.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (allowIn != null) __obj.updateDynamic("allowIn")(allowIn)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    __obj.asInstanceOf[Hotkey]
+  }
+}
+

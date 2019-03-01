@@ -12,3 +12,12 @@ trait LoadableCaptureProps extends js.Object {
   def report(moduleName: java.lang.String): scala.Unit
 }
 
+object LoadableCaptureProps {
+  @scala.inline
+  def apply(report: js.Function1[java.lang.String, scala.Unit]): LoadableCaptureProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("report")(report)
+    __obj.asInstanceOf[LoadableCaptureProps]
+  }
+}
+

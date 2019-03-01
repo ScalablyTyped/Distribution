@@ -70,3 +70,28 @@ trait DataBarConditionalFormatData extends js.Object {
   var upperBoundRule: js.UndefOr[officeDashJsLib.ExcelNs.ConditionalDataBarRule] = js.undefined
 }
 
+object DataBarConditionalFormatData {
+  @scala.inline
+  def apply(
+    axisColor: java.lang.String = null,
+    axisFormat: officeDashJsLib.ExcelNs.ConditionalDataBarAxisFormat | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.CellMidPoint = null,
+    barDirection: officeDashJsLib.ExcelNs.ConditionalDataBarDirection | officeDashJsLib.officeDashJsLibStrings.Context | officeDashJsLib.officeDashJsLibStrings.LeftToRight | officeDashJsLib.officeDashJsLibStrings.RightToLeft = null,
+    lowerBoundRule: officeDashJsLib.ExcelNs.ConditionalDataBarRule = null,
+    negativeFormat: ConditionalDataBarNegativeFormatData = null,
+    positiveFormat: ConditionalDataBarPositiveFormatData = null,
+    showDataBarOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    upperBoundRule: officeDashJsLib.ExcelNs.ConditionalDataBarRule = null
+  ): DataBarConditionalFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (axisColor != null) __obj.updateDynamic("axisColor")(axisColor)
+    if (axisFormat != null) __obj.updateDynamic("axisFormat")(axisFormat.asInstanceOf[js.Any])
+    if (barDirection != null) __obj.updateDynamic("barDirection")(barDirection.asInstanceOf[js.Any])
+    if (lowerBoundRule != null) __obj.updateDynamic("lowerBoundRule")(lowerBoundRule)
+    if (negativeFormat != null) __obj.updateDynamic("negativeFormat")(negativeFormat)
+    if (positiveFormat != null) __obj.updateDynamic("positiveFormat")(positiveFormat)
+    if (!js.isUndefined(showDataBarOnly)) __obj.updateDynamic("showDataBarOnly")(showDataBarOnly)
+    if (upperBoundRule != null) __obj.updateDynamic("upperBoundRule")(upperBoundRule)
+    __obj.asInstanceOf[DataBarConditionalFormatData]
+  }
+}
+

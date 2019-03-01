@@ -66,3 +66,34 @@ trait Field extends js.Object {
   var start: scala.Double
 }
 
+object Field {
+  @scala.inline
+  def apply(
+    codeInterval: Interval,
+    hyperlinkAnchor: java.lang.String,
+    hyperlinkTip: java.lang.String,
+    hyperlinkUri: java.lang.String,
+    index: scala.Double,
+    interval: Interval,
+    isHyperlink: scala.Boolean,
+    length: scala.Double,
+    resultInterval: Interval,
+    showCode: scala.Boolean,
+    start: scala.Double
+  ): Field = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("codeInterval")(codeInterval)
+    __obj.updateDynamic("hyperlinkAnchor")(hyperlinkAnchor)
+    __obj.updateDynamic("hyperlinkTip")(hyperlinkTip)
+    __obj.updateDynamic("hyperlinkUri")(hyperlinkUri)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("isHyperlink")(isHyperlink)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("resultInterval")(resultInterval)
+    __obj.updateDynamic("showCode")(showCode)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[Field]
+  }
+}
+

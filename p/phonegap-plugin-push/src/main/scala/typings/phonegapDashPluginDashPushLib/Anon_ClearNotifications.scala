@@ -41,3 +41,28 @@ trait Anon_ClearNotifications extends js.Object {
   var vibrate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ClearNotifications {
+  @scala.inline
+  def apply(
+    senderID: java.lang.String,
+    clearNotifications: js.UndefOr[scala.Boolean] = js.undefined,
+    forceShow: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    iconColor: java.lang.String = null,
+    sound: js.UndefOr[scala.Boolean] = js.undefined,
+    topics: js.Array[java.lang.String] = null,
+    vibrate: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ClearNotifications = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("senderID")(senderID)
+    if (!js.isUndefined(clearNotifications)) __obj.updateDynamic("clearNotifications")(clearNotifications)
+    if (!js.isUndefined(forceShow)) __obj.updateDynamic("forceShow")(forceShow)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconColor != null) __obj.updateDynamic("iconColor")(iconColor)
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
+    if (topics != null) __obj.updateDynamic("topics")(topics)
+    if (!js.isUndefined(vibrate)) __obj.updateDynamic("vibrate")(vibrate)
+    __obj.asInstanceOf[Anon_ClearNotifications]
+  }
+}
+

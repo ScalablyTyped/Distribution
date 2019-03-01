@@ -49,3 +49,22 @@ trait MediaProperties extends js.Object {
   var URL: java.lang.String
 }
 
+object MediaProperties {
+  @scala.inline
+  def apply(
+    FilterData: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues,
+    InputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    MimeType: java.lang.String,
+    OutputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream,
+    URL: java.lang.String
+  ): MediaProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FilterData")(FilterData.asInstanceOf[js.Any])
+    __obj.updateDynamic("InputStream")(InputStream)
+    __obj.updateDynamic("MimeType")(MimeType)
+    __obj.updateDynamic("OutputStream")(OutputStream)
+    __obj.updateDynamic("URL")(URL)
+    __obj.asInstanceOf[MediaProperties]
+  }
+}
+

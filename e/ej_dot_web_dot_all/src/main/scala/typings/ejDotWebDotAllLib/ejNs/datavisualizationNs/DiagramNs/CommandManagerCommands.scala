@@ -21,3 +21,20 @@ trait CommandManagerCommands extends js.Object {
   var parameter: js.UndefOr[js.Any] = js.undefined
 }
 
+object CommandManagerCommands {
+  @scala.inline
+  def apply(
+    canExecute: js.Any = null,
+    execute: js.Any = null,
+    gesture: CommandManagerCommandsGesture = null,
+    parameter: js.Any = null
+  ): CommandManagerCommands = {
+    val __obj = js.Dynamic.literal()
+    if (canExecute != null) __obj.updateDynamic("canExecute")(canExecute)
+    if (execute != null) __obj.updateDynamic("execute")(execute)
+    if (gesture != null) __obj.updateDynamic("gesture")(gesture)
+    if (parameter != null) __obj.updateDynamic("parameter")(parameter)
+    __obj.asInstanceOf[CommandManagerCommands]
+  }
+}
+

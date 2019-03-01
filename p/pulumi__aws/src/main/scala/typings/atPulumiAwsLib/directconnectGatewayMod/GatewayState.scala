@@ -16,3 +16,16 @@ trait GatewayState extends js.Object {
   val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object GatewayState {
+  @scala.inline
+  def apply(
+    amazonSideAsn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): GatewayState = {
+    val __obj = js.Dynamic.literal()
+    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GatewayState]
+  }
+}
+

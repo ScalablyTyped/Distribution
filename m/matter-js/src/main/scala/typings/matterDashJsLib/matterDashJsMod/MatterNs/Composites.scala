@@ -25,3 +25,14 @@ trait Composites extends js.Object {
   ): Composite
 }
 
+object Composites {
+  @scala.inline
+  def apply(
+    newtonsCradle: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, Composite]
+  ): Composites = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newtonsCradle")(newtonsCradle)
+    __obj.asInstanceOf[Composites]
+  }
+}
+

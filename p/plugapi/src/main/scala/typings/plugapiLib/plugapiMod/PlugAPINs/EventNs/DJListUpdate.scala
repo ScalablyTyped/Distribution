@@ -10,3 +10,13 @@ trait DJListUpdate extends js.Object {
   var remove: java.lang.String
 }
 
+object DJListUpdate {
+  @scala.inline
+  def apply(djs: js.Array[plugapiLib.plugapiMod.PlugAPINs.UserNs.DJ], remove: java.lang.String): DJListUpdate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("djs")(djs)
+    __obj.updateDynamic("remove")(remove)
+    __obj.asInstanceOf[DJListUpdate]
+  }
+}
+

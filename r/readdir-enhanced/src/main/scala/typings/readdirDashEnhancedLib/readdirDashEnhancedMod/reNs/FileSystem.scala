@@ -29,3 +29,30 @@ trait FileSystem extends js.Object {
   ] = js.undefined
 }
 
+object FileSystem {
+  @scala.inline
+  def apply(
+    lstat: js.Function2[
+      /* path */ java.lang.String, 
+      /* callback */ Callback[nodeLib.fsMod.Stats], 
+      scala.Unit
+    ] = null,
+    readdir: js.Function2[
+      /* path */ java.lang.String, 
+      /* callback */ Callback[js.Array[java.lang.String]], 
+      scala.Unit
+    ] = null,
+    stat: js.Function2[
+      /* path */ java.lang.String, 
+      /* callback */ Callback[nodeLib.fsMod.Stats], 
+      scala.Unit
+    ] = null
+  ): FileSystem = {
+    val __obj = js.Dynamic.literal()
+    if (lstat != null) __obj.updateDynamic("lstat")(lstat)
+    if (readdir != null) __obj.updateDynamic("readdir")(readdir)
+    if (stat != null) __obj.updateDynamic("stat")(stat)
+    __obj.asInstanceOf[FileSystem]
+  }
+}
+

@@ -22,3 +22,26 @@ trait XResourceBundleLoader
   def loadBundle_Default(aBaseName: java.lang.String): XResourceBundle
 }
 
+object XResourceBundleLoader {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    loadBundle: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      XResourceBundle
+    ],
+    loadBundle_Default: js.Function1[java.lang.String, XResourceBundle],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XResourceBundleLoader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("loadBundle")(loadBundle)
+    __obj.updateDynamic("loadBundle_Default")(loadBundle_Default)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XResourceBundleLoader]
+  }
+}
+

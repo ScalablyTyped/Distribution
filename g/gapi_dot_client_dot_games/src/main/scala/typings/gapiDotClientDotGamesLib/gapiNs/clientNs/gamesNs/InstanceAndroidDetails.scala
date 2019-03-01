@@ -16,3 +16,20 @@ trait InstanceAndroidDetails extends js.Object {
   var preferred: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InstanceAndroidDetails {
+  @scala.inline
+  def apply(
+    enablePiracyCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    packageName: java.lang.String = null,
+    preferred: js.UndefOr[scala.Boolean] = js.undefined
+  ): InstanceAndroidDetails = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enablePiracyCheck)) __obj.updateDynamic("enablePiracyCheck")(enablePiracyCheck)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
+    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred)
+    __obj.asInstanceOf[InstanceAndroidDetails]
+  }
+}
+

@@ -12,3 +12,13 @@ trait DecorationPropsChangedEvent extends js.Object {
   var oldProperties: DecorationOptions
 }
 
+object DecorationPropsChangedEvent {
+  @scala.inline
+  def apply(newProperties: DecorationOptions, oldProperties: DecorationOptions): DecorationPropsChangedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("newProperties")(newProperties)
+    __obj.updateDynamic("oldProperties")(oldProperties)
+    __obj.asInstanceOf[DecorationPropsChangedEvent]
+  }
+}
+

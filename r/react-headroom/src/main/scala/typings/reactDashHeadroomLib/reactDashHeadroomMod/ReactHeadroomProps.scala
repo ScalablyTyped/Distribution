@@ -22,3 +22,40 @@ trait ReactHeadroomProps extends js.Object {
   var wrapperStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object ReactHeadroomProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    calcHeightOnResize: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    disable: js.UndefOr[scala.Boolean] = js.undefined,
+    disableInlineStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    downTolerance: scala.Int | scala.Double = null,
+    onPin: js.Function0[scala.Unit] = null,
+    onUnfix: js.Function0[scala.Unit] = null,
+    onUnpin: js.Function0[scala.Unit] = null,
+    parent: js.Function0[_] = null,
+    pinStart: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    upTolerance: scala.Int | scala.Double = null,
+    wrapperStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): ReactHeadroomProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (!js.isUndefined(calcHeightOnResize)) __obj.updateDynamic("calcHeightOnResize")(calcHeightOnResize)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (!js.isUndefined(disableInlineStyles)) __obj.updateDynamic("disableInlineStyles")(disableInlineStyles)
+    if (downTolerance != null) __obj.updateDynamic("downTolerance")(downTolerance.asInstanceOf[js.Any])
+    if (onPin != null) __obj.updateDynamic("onPin")(onPin)
+    if (onUnfix != null) __obj.updateDynamic("onUnfix")(onUnfix)
+    if (onUnpin != null) __obj.updateDynamic("onUnpin")(onUnpin)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (pinStart != null) __obj.updateDynamic("pinStart")(pinStart.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (upTolerance != null) __obj.updateDynamic("upTolerance")(upTolerance.asInstanceOf[js.Any])
+    if (wrapperStyle != null) __obj.updateDynamic("wrapperStyle")(wrapperStyle)
+    __obj.asInstanceOf[ReactHeadroomProps]
+  }
+}
+

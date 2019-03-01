@@ -11,3 +11,14 @@ trait Anon_DestinationCidrBlock extends js.Object {
   var state: java.lang.String
 }
 
+object Anon_DestinationCidrBlock {
+  @scala.inline
+  def apply(destinationCidrBlock: java.lang.String, source: java.lang.String, state: java.lang.String): Anon_DestinationCidrBlock = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[Anon_DestinationCidrBlock]
+  }
+}
+

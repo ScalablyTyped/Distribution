@@ -58,3 +58,36 @@ trait Artifact extends js.Object {
   var sourceLanguage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Artifact {
+  @scala.inline
+  def apply(
+    contents: ArtifactContent = null,
+    encoding: java.lang.String = null,
+    hashes: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    lastModifiedTimeUtc: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    location: ArtifactLocation = null,
+    mimeType: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
+    parentIndex: scala.Int | scala.Double = null,
+    properties: PropertyBag = null,
+    roles: js.Array[sarifLib.sarifMod.ArtifactNs.roles] = null,
+    sourceLanguage: java.lang.String = null
+  ): Artifact = {
+    val __obj = js.Dynamic.literal()
+    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (hashes != null) __obj.updateDynamic("hashes")(hashes)
+    if (lastModifiedTimeUtc != null) __obj.updateDynamic("lastModifiedTimeUtc")(lastModifiedTimeUtc)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (parentIndex != null) __obj.updateDynamic("parentIndex")(parentIndex.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (roles != null) __obj.updateDynamic("roles")(roles)
+    if (sourceLanguage != null) __obj.updateDynamic("sourceLanguage")(sourceLanguage)
+    __obj.asInstanceOf[Artifact]
+  }
+}
+

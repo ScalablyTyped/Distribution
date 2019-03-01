@@ -18,3 +18,13 @@ trait ListCreativesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListCreativesResponse {
+  @scala.inline
+  def apply(creatives: js.Array[Creative] = null, nextPageToken: java.lang.String = null): ListCreativesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (creatives != null) __obj.updateDynamic("creatives")(creatives)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListCreativesResponse]
+  }
+}
+

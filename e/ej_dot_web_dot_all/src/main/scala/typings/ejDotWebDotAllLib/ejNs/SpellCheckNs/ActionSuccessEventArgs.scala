@@ -26,3 +26,24 @@ trait ActionSuccessEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActionSuccessEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    errorWordDetails: js.Any = null,
+    model: Model = null,
+    requestType: java.lang.String = null,
+    resultHTML: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ActionSuccessEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (errorWordDetails != null) __obj.updateDynamic("errorWordDetails")(errorWordDetails)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (resultHTML != null) __obj.updateDynamic("resultHTML")(resultHTML)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ActionSuccessEventArgs]
+  }
+}
+

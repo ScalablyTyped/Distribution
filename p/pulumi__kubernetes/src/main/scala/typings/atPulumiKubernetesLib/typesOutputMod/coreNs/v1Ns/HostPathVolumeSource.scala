@@ -22,3 +22,12 @@ trait HostPathVolumeSource extends js.Object {
   val `type`: java.lang.String
 }
 
+object HostPathVolumeSource {
+  @scala.inline
+  def apply(path: java.lang.String, `type`: java.lang.String): HostPathVolumeSource = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[HostPathVolumeSource]
+  }
+}
+

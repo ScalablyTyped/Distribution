@@ -23,3 +23,13 @@ trait ObbFile extends js.Object {
   var obbFileName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ObbFile {
+  @scala.inline
+  def apply(obb: FileReference = null, obbFileName: java.lang.String = null): ObbFile = {
+    val __obj = js.Dynamic.literal()
+    if (obb != null) __obj.updateDynamic("obb")(obb)
+    if (obbFileName != null) __obj.updateDynamic("obbFileName")(obbFileName)
+    __obj.asInstanceOf[ObbFile]
+  }
+}
+

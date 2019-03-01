@@ -10,3 +10,25 @@ trait BaseCallExpression extends BaseNode {
   var callee: estreeLib.Expression | Super
 }
 
+object BaseCallExpression {
+  @scala.inline
+  def apply(
+    arguments: js.Array[estreeLib.Expression | SpreadElement],
+    callee: estreeLib.Expression | Super,
+    `type`: java.lang.String,
+    leadingComments: js.Array[Comment] = null,
+    loc: SourceLocation = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null,
+    trailingComments: js.Array[Comment] = null
+  ): BaseCallExpression = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("arguments")(arguments)
+    __obj.updateDynamic("callee")(callee.asInstanceOf[js.Any])
+    if (leadingComments != null) __obj.updateDynamic("leadingComments")(leadingComments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (trailingComments != null) __obj.updateDynamic("trailingComments")(trailingComments)
+    __obj.asInstanceOf[BaseCallExpression]
+  }
+}
+

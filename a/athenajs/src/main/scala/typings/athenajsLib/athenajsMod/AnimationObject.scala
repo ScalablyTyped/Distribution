@@ -12,3 +12,20 @@ trait AnimationObject extends js.Object {
   var speed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AnimationObject {
+  @scala.inline
+  def apply(
+    frames: js.Array[athenajsLib.Anon_Height],
+    frameDuration: scala.Int | scala.Double = null,
+    loop: scala.Int | scala.Double = null,
+    speed: scala.Int | scala.Double = null
+  ): AnimationObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frames")(frames)
+    if (frameDuration != null) __obj.updateDynamic("frameDuration")(frameDuration.asInstanceOf[js.Any])
+    if (loop != null) __obj.updateDynamic("loop")(loop.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnimationObject]
+  }
+}
+

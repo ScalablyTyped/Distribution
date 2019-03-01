@@ -15,3 +15,12 @@ trait Extension extends js.Object {
   var `type`: java.lang.String
 }
 
+object Extension {
+  @scala.inline
+  def apply(`type`: java.lang.String): Extension = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Extension]
+  }
+}
+

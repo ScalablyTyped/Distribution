@@ -10,3 +10,13 @@ trait GeometryDescriptor[T /* <: Geometry[_] */] extends js.Object {
   var schema: Schema[js.Object]
 }
 
+object GeometryDescriptor {
+  @scala.inline
+  def apply[T /* <: Geometry[_] */](Geometry: GeometryConstructor[T], schema: Schema[js.Object]): GeometryDescriptor[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Geometry")(Geometry)
+    __obj.updateDynamic("schema")(schema.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeometryDescriptor[T]]
+  }
+}
+

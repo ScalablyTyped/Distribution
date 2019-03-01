@@ -120,3 +120,67 @@ trait IgPivotViewPivotGridOptions
   var rowHeadersLayout: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgPivotViewPivotGridOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgPivotViewPivotGridOptions
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    allowHeaderColumnsSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowHeaderRowsSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    compactColumnHeaderIndentation: scala.Int | scala.Double = null,
+    compactColumnHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    compactRowHeaderIndentation: scala.Int | scala.Double = null,
+    customMoveValidation: js.Function = null,
+    defaultRowHeaderWidth: scala.Int | scala.Double = null,
+    disableColumnsDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    disableFiltersDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    disableMeasuresDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    disableRowsDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    dragAndDropSettings: IgPivotViewPivotGridOptionsDragAndDropSettings = null,
+    dropDownParent: js.Any = null,
+    firstLevelSortDirection: js.Any = null,
+    firstSortDirection: js.Any = null,
+    gridOptions: IgPivotViewPivotGridOptionsGridOptions = null,
+    hideColumnsDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    hideFiltersDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    hideMeasuresDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    hideRowsDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    isParentInFrontForColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    isParentInFrontForRows: js.UndefOr[scala.Boolean] = js.undefined,
+    levelSortDirections: js.Array[IgPivotViewPivotGridOptionsLevelSortDirection] = null,
+    rowHeadersLayout: js.Any = null
+  ): IgPivotViewPivotGridOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(allowHeaderColumnsSorting)) __obj.updateDynamic("allowHeaderColumnsSorting")(allowHeaderColumnsSorting)
+    if (!js.isUndefined(allowHeaderRowsSorting)) __obj.updateDynamic("allowHeaderRowsSorting")(allowHeaderRowsSorting)
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
+    if (compactColumnHeaderIndentation != null) __obj.updateDynamic("compactColumnHeaderIndentation")(compactColumnHeaderIndentation.asInstanceOf[js.Any])
+    if (!js.isUndefined(compactColumnHeaders)) __obj.updateDynamic("compactColumnHeaders")(compactColumnHeaders)
+    if (compactRowHeaderIndentation != null) __obj.updateDynamic("compactRowHeaderIndentation")(compactRowHeaderIndentation.asInstanceOf[js.Any])
+    if (customMoveValidation != null) __obj.updateDynamic("customMoveValidation")(customMoveValidation)
+    if (defaultRowHeaderWidth != null) __obj.updateDynamic("defaultRowHeaderWidth")(defaultRowHeaderWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableColumnsDropArea)) __obj.updateDynamic("disableColumnsDropArea")(disableColumnsDropArea)
+    if (!js.isUndefined(disableFiltersDropArea)) __obj.updateDynamic("disableFiltersDropArea")(disableFiltersDropArea)
+    if (!js.isUndefined(disableMeasuresDropArea)) __obj.updateDynamic("disableMeasuresDropArea")(disableMeasuresDropArea)
+    if (!js.isUndefined(disableRowsDropArea)) __obj.updateDynamic("disableRowsDropArea")(disableRowsDropArea)
+    if (dragAndDropSettings != null) __obj.updateDynamic("dragAndDropSettings")(dragAndDropSettings)
+    if (dropDownParent != null) __obj.updateDynamic("dropDownParent")(dropDownParent)
+    if (firstLevelSortDirection != null) __obj.updateDynamic("firstLevelSortDirection")(firstLevelSortDirection)
+    if (firstSortDirection != null) __obj.updateDynamic("firstSortDirection")(firstSortDirection)
+    if (gridOptions != null) __obj.updateDynamic("gridOptions")(gridOptions)
+    if (!js.isUndefined(hideColumnsDropArea)) __obj.updateDynamic("hideColumnsDropArea")(hideColumnsDropArea)
+    if (!js.isUndefined(hideFiltersDropArea)) __obj.updateDynamic("hideFiltersDropArea")(hideFiltersDropArea)
+    if (!js.isUndefined(hideMeasuresDropArea)) __obj.updateDynamic("hideMeasuresDropArea")(hideMeasuresDropArea)
+    if (!js.isUndefined(hideRowsDropArea)) __obj.updateDynamic("hideRowsDropArea")(hideRowsDropArea)
+    if (!js.isUndefined(isParentInFrontForColumns)) __obj.updateDynamic("isParentInFrontForColumns")(isParentInFrontForColumns)
+    if (!js.isUndefined(isParentInFrontForRows)) __obj.updateDynamic("isParentInFrontForRows")(isParentInFrontForRows)
+    if (levelSortDirections != null) __obj.updateDynamic("levelSortDirections")(levelSortDirections)
+    if (rowHeadersLayout != null) __obj.updateDynamic("rowHeadersLayout")(rowHeadersLayout)
+    __obj.asInstanceOf[IgPivotViewPivotGridOptions]
+  }
+}
+

@@ -10,3 +10,12 @@ trait LeaseWorkItemResponse extends js.Object {
   var workItems: js.UndefOr[js.Array[WorkItem]] = js.undefined
 }
 
+object LeaseWorkItemResponse {
+  @scala.inline
+  def apply(workItems: js.Array[WorkItem] = null): LeaseWorkItemResponse = {
+    val __obj = js.Dynamic.literal()
+    if (workItems != null) __obj.updateDynamic("workItems")(workItems)
+    __obj.asInstanceOf[LeaseWorkItemResponse]
+  }
+}
+

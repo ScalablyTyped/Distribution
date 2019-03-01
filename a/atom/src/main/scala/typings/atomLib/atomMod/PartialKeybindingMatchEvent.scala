@@ -14,3 +14,18 @@ trait PartialKeybindingMatchEvent extends js.Object {
   var partiallyMatchedBindings: js.Array[KeyBinding]
 }
 
+object PartialKeybindingMatchEvent {
+  @scala.inline
+  def apply(
+    keyboardEventTarget: stdLib.Element,
+    keystrokes: java.lang.String,
+    partiallyMatchedBindings: js.Array[KeyBinding]
+  ): PartialKeybindingMatchEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyboardEventTarget")(keyboardEventTarget)
+    __obj.updateDynamic("keystrokes")(keystrokes)
+    __obj.updateDynamic("partiallyMatchedBindings")(partiallyMatchedBindings)
+    __obj.asInstanceOf[PartialKeybindingMatchEvent]
+  }
+}
+

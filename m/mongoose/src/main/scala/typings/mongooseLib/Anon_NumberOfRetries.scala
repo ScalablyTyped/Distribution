@@ -10,3 +10,16 @@ trait Anon_NumberOfRetries extends js.Object {
   var tailableRetryInterval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_NumberOfRetries {
+  @scala.inline
+  def apply(
+    numberOfRetries: scala.Int | scala.Double = null,
+    tailableRetryInterval: scala.Int | scala.Double = null
+  ): Anon_NumberOfRetries = {
+    val __obj = js.Dynamic.literal()
+    if (numberOfRetries != null) __obj.updateDynamic("numberOfRetries")(numberOfRetries.asInstanceOf[js.Any])
+    if (tailableRetryInterval != null) __obj.updateDynamic("tailableRetryInterval")(tailableRetryInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_NumberOfRetries]
+  }
+}
+

@@ -24,3 +24,20 @@ trait ILockWorkingCopyOptions extends js.Object {
   var lockType: LockType
 }
 
+object ILockWorkingCopyOptions {
+  @scala.inline
+  def apply(
+    lockType: LockType,
+    duration: scala.Int | scala.Double = null,
+    force: js.UndefOr[scala.Boolean] = js.undefined,
+    lockId: java.lang.String = null
+  ): ILockWorkingCopyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lockType")(lockType)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(force)) __obj.updateDynamic("force")(force)
+    if (lockId != null) __obj.updateDynamic("lockId")(lockId)
+    __obj.asInstanceOf[ILockWorkingCopyOptions]
+  }
+}
+

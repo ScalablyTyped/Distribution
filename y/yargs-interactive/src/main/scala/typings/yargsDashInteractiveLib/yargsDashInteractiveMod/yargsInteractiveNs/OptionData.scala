@@ -13,3 +13,21 @@ trait OptionData extends js.Object {
   var `type`: java.lang.String
 }
 
+object OptionData {
+  @scala.inline
+  def apply(
+    describe: java.lang.String,
+    `type`: java.lang.String,
+    default: java.lang.String | scala.Double | scala.Boolean = null,
+    options: js.Array[java.lang.String] = null,
+    prompt: java.lang.String = null
+  ): OptionData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("describe")(describe)
+    if (default != null) __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    __obj.asInstanceOf[OptionData]
+  }
+}
+

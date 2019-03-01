@@ -25,3 +25,22 @@ trait XXMLEncryption
   def encrypt(aTemplate: XXMLEncryptionTemplate, aEnvironment: XSecurityEnvironment): XXMLEncryptionTemplate
 }
 
+object XXMLEncryption {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    decrypt: js.Function2[XXMLEncryptionTemplate, XXMLSecurityContext, XXMLEncryptionTemplate],
+    encrypt: js.Function2[XXMLEncryptionTemplate, XSecurityEnvironment, XXMLEncryptionTemplate],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XXMLEncryption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("decrypt")(decrypt)
+    __obj.updateDynamic("encrypt")(encrypt)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XXMLEncryption]
+  }
+}
+

@@ -90,3 +90,40 @@ trait IPaginationConfig extends js.Object {
   var totalItems: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IPaginationConfig {
+  @scala.inline
+  def apply(
+    boundaryLinkNumbers: js.UndefOr[scala.Boolean] = js.undefined,
+    boundaryLinks: js.UndefOr[scala.Boolean] = js.undefined,
+    directionLinks: js.UndefOr[scala.Boolean] = js.undefined,
+    firstText: java.lang.String = null,
+    forceEllipses: js.UndefOr[scala.Boolean] = js.undefined,
+    itemsPerPage: scala.Int | scala.Double = null,
+    lastText: java.lang.String = null,
+    maxSize: scala.Int | scala.Double = null,
+    nextText: java.lang.String = null,
+    numPages: scala.Int | scala.Double = null,
+    previousText: java.lang.String = null,
+    rotate: js.UndefOr[scala.Boolean] = js.undefined,
+    templateUrl: java.lang.String = null,
+    totalItems: scala.Int | scala.Double = null
+  ): IPaginationConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(boundaryLinkNumbers)) __obj.updateDynamic("boundaryLinkNumbers")(boundaryLinkNumbers)
+    if (!js.isUndefined(boundaryLinks)) __obj.updateDynamic("boundaryLinks")(boundaryLinks)
+    if (!js.isUndefined(directionLinks)) __obj.updateDynamic("directionLinks")(directionLinks)
+    if (firstText != null) __obj.updateDynamic("firstText")(firstText)
+    if (!js.isUndefined(forceEllipses)) __obj.updateDynamic("forceEllipses")(forceEllipses)
+    if (itemsPerPage != null) __obj.updateDynamic("itemsPerPage")(itemsPerPage.asInstanceOf[js.Any])
+    if (lastText != null) __obj.updateDynamic("lastText")(lastText)
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
+    if (numPages != null) __obj.updateDynamic("numPages")(numPages.asInstanceOf[js.Any])
+    if (previousText != null) __obj.updateDynamic("previousText")(previousText)
+    if (!js.isUndefined(rotate)) __obj.updateDynamic("rotate")(rotate)
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl)
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPaginationConfig]
+  }
+}
+

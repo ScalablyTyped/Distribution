@@ -10,3 +10,13 @@ trait Anon_QueryResultRefsQuery extends js.Object {
   var result: ternLib.libTernMod.RefsQueryResult
 }
 
+object Anon_QueryResultRefsQuery {
+  @scala.inline
+  def apply(query: ternLib.libTernMod.RefsQuery, result: ternLib.libTernMod.RefsQueryResult): Anon_QueryResultRefsQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[Anon_QueryResultRefsQuery]
+  }
+}
+

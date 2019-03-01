@@ -18,3 +18,13 @@ trait AuditConfig extends js.Object {
   var service: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuditConfig {
+  @scala.inline
+  def apply(exemptedMembers: js.Array[java.lang.String] = null, service: java.lang.String = null): AuditConfig = {
+    val __obj = js.Dynamic.literal()
+    if (exemptedMembers != null) __obj.updateDynamic("exemptedMembers")(exemptedMembers)
+    if (service != null) __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[AuditConfig]
+  }
+}
+

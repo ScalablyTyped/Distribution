@@ -122,3 +122,45 @@ trait ParseRule extends js.Object {
   var tag: js.UndefOr[java.lang.String | scala.Null] = js.undefined
 }
 
+object ParseRule {
+  @scala.inline
+  def apply(
+    attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    contentElement: java.lang.String | (js.Function1[/* p */ stdLib.Node, stdLib.Node]) = null,
+    context: java.lang.String = null,
+    getAttrs: js.Function1[
+      /* p */ stdLib.Node | java.lang.String, 
+      js.UndefOr[
+        org.scalablytyped.runtime.StringDictionary[_] | prosemirrorDashModelLib.prosemirrorDashModelLibNumbers.`false` | scala.Null
+      ]
+    ] = null,
+    getContent: js.Function2[/* p */ stdLib.Node, /* schema */ Schema[_, _], Fragment[Schema[_, _]]] = null,
+    ignore: js.UndefOr[scala.Boolean] = js.undefined,
+    mark: java.lang.String = null,
+    namespace: java.lang.String = null,
+    node: java.lang.String = null,
+    preserveWhitespace: scala.Boolean | prosemirrorDashModelLib.prosemirrorDashModelLibStrings.full = null,
+    priority: scala.Int | scala.Double = null,
+    skip: js.UndefOr[scala.Boolean] = js.undefined,
+    style: java.lang.String = null,
+    tag: java.lang.String = null
+  ): ParseRule = {
+    val __obj = js.Dynamic.literal()
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (contentElement != null) __obj.updateDynamic("contentElement")(contentElement.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (getAttrs != null) __obj.updateDynamic("getAttrs")(getAttrs)
+    if (getContent != null) __obj.updateDynamic("getContent")(getContent)
+    if (!js.isUndefined(ignore)) __obj.updateDynamic("ignore")(ignore)
+    if (mark != null) __obj.updateDynamic("mark")(mark)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (node != null) __obj.updateDynamic("node")(node)
+    if (preserveWhitespace != null) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(skip)) __obj.updateDynamic("skip")(skip)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[ParseRule]
+  }
+}
+

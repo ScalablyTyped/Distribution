@@ -54,3 +54,12 @@ trait BooleanPolicy extends js.Object {
   var enforced: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BooleanPolicy {
+  @scala.inline
+  def apply(enforced: js.UndefOr[scala.Boolean] = js.undefined): BooleanPolicy = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enforced)) __obj.updateDynamic("enforced")(enforced)
+    __obj.asInstanceOf[BooleanPolicy]
+  }
+}
+

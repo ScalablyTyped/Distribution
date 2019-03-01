@@ -38,3 +38,32 @@ trait ItemDropEventArgs extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ItemDropEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    index: scala.Int | scala.Double = null,
+    isChecked: js.UndefOr[scala.Boolean] = js.undefined,
+    isEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    text: java.lang.String = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): ItemDropEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (!js.isUndefined(isChecked)) __obj.updateDynamic("isChecked")(isChecked)
+    if (!js.isUndefined(isEnabled)) __obj.updateDynamic("isEnabled")(isEnabled)
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ItemDropEventArgs]
+  }
+}
+

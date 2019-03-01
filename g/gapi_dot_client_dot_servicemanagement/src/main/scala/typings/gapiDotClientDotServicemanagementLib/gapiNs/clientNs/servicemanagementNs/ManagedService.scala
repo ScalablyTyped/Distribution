@@ -15,3 +15,13 @@ trait ManagedService extends js.Object {
   var serviceName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ManagedService {
+  @scala.inline
+  def apply(producerProjectId: java.lang.String = null, serviceName: java.lang.String = null): ManagedService = {
+    val __obj = js.Dynamic.literal()
+    if (producerProjectId != null) __obj.updateDynamic("producerProjectId")(producerProjectId)
+    if (serviceName != null) __obj.updateDynamic("serviceName")(serviceName)
+    __obj.asInstanceOf[ManagedService]
+  }
+}
+

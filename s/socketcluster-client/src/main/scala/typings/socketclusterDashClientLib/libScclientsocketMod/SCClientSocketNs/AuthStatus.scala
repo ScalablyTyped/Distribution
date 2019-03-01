@@ -10,3 +10,13 @@ trait AuthStatus extends js.Object {
   var isAuthenticated: AuthStates
 }
 
+object AuthStatus {
+  @scala.inline
+  def apply(authError: nodeLib.Error, isAuthenticated: AuthStates): AuthStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authError")(authError)
+    __obj.updateDynamic("isAuthenticated")(isAuthenticated)
+    __obj.asInstanceOf[AuthStatus]
+  }
+}
+

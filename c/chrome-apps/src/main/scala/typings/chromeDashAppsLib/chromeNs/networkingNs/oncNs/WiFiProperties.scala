@@ -30,3 +30,40 @@ trait WiFiProperties[M /* <: ManagedObject */, OF /* <: chromeDashAppsLib.chrome
   var RoamTreshold: js.UndefOr[L] = js.undefined
 }
 
+object WiFiProperties {
+  @scala.inline
+  def apply[M /* <: ManagedObject */, OF /* <: chromeDashAppsLib.chromeNs.networkingNs.oncNs.underscoreInternalUnderscoreNs.ObjectFunction */, B, S, L](
+    AllowGatewayARPPolling: B = null,
+    AutoConnect: B = null,
+    BSSID: java.lang.String = null,
+    EAP: EAPProperties = null,
+    Frequency: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    FrequencyList: js.Array[chromeDashAppsLib.chromeNs.integer] = null,
+    HexSSID: java.lang.String | ManagedDOMString = null,
+    HiddenSSID: B = null,
+    Passphrase: java.lang.String = null,
+    RoamTreshold: L = null,
+    SSID: java.lang.String | ManagedDOMString = null,
+    Security: java.lang.String | ManagedDOMString = null,
+    SignalStrength: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined,
+    TetheringState: java.lang.String = null
+  ): WiFiProperties[M, OF, B, S, L] = {
+    val __obj = js.Dynamic.literal()
+    if (AllowGatewayARPPolling != null) __obj.updateDynamic("AllowGatewayARPPolling")(AllowGatewayARPPolling.asInstanceOf[js.Any])
+    if (AutoConnect != null) __obj.updateDynamic("AutoConnect")(AutoConnect.asInstanceOf[js.Any])
+    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID)
+    if (EAP != null) __obj.updateDynamic("EAP")(EAP)
+    if (!js.isUndefined(Frequency)) __obj.updateDynamic("Frequency")(Frequency)
+    if (FrequencyList != null) __obj.updateDynamic("FrequencyList")(FrequencyList)
+    if (HexSSID != null) __obj.updateDynamic("HexSSID")(HexSSID.asInstanceOf[js.Any])
+    if (HiddenSSID != null) __obj.updateDynamic("HiddenSSID")(HiddenSSID.asInstanceOf[js.Any])
+    if (Passphrase != null) __obj.updateDynamic("Passphrase")(Passphrase)
+    if (RoamTreshold != null) __obj.updateDynamic("RoamTreshold")(RoamTreshold.asInstanceOf[js.Any])
+    if (SSID != null) __obj.updateDynamic("SSID")(SSID.asInstanceOf[js.Any])
+    if (Security != null) __obj.updateDynamic("Security")(Security.asInstanceOf[js.Any])
+    if (!js.isUndefined(SignalStrength)) __obj.updateDynamic("SignalStrength")(SignalStrength)
+    if (TetheringState != null) __obj.updateDynamic("TetheringState")(TetheringState)
+    __obj.asInstanceOf[WiFiProperties[M, OF, B, S, L]]
+  }
+}
+

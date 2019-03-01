@@ -22,7 +22,7 @@ object modelNs extends js.Object {
   
   // engine/model/documentfragment
   @js.native
-  class DocumentFragment protected () extends js.Object {
+  class DocumentFragment protected () extends _NodeSet {
     protected def this(children: Node) = this()
     protected def this(children: stdLib.Iterable[Node]) = this()
     val childCount: scala.Double = js.native
@@ -88,6 +88,8 @@ object modelNs extends js.Object {
   // engine/model/history
   @js.native
   class History () extends js.Object
+  
+  trait Item extends js.Object
   
   // engine/model/liveposition
   @js.native
@@ -179,7 +181,10 @@ object modelNs extends js.Object {
   
   // engine/model/node
   @js.native
-  class Node () extends js.Object {
+  class Node ()
+    extends Item
+       with _NodeSet
+       with _SchemaContextDefinition {
     def this(attrs: js.Array[js.Tuple2[java.lang.String, _]]) = this()
     def this(attrs: stdLib.Map[java.lang.String, _]) = this()
     val document: Document | scala.Null = js.native
@@ -218,7 +223,8 @@ object modelNs extends js.Object {
   // engine/model/nodelist
   @js.native
   class NodeList ()
-    extends stdLib.Iterable[Node] {
+    extends stdLib.Iterable[Node]
+       with _NodeSet {
     /* CompleteClass */
     @JSName(org.scalablytyped.runtime.Symbol.iterator)
     override var iterator: js.Function0[stdLib.Iterator[Node]] = js.native
@@ -234,7 +240,7 @@ object modelNs extends js.Object {
   
   // engine/model/position
   @js.native
-  class Position protected () extends js.Object {
+  class Position protected () extends _SchemaContextDefinition {
     def this(root: DocumentFragment, path: js.Array[scala.Double]) = this()
     def this(root: Element, path: js.Array[scala.Double]) = this()
     def this(root: DocumentFragment, path: js.Array[scala.Double], stickiness: PositionStickiness) = this()
@@ -267,6 +273,10 @@ object modelNs extends js.Object {
     def isTouching(otherPosition: Position): scala.Boolean = js.native
     def toJSON(): js.Object = js.native
   }
+  
+  trait PositionRelation extends js.Object
+  
+  trait PositionStickiness extends js.Object
   
   // engine/model/range
   @js.native
@@ -326,7 +336,7 @@ object modelNs extends js.Object {
   }
   
   @js.native
-  class SchemaContext () extends js.Object
+  class SchemaContext () extends _SchemaContextDefinition
   
   trait SchemaContextItem extends js.Object {
     var getAttributeKeys: stdLib.Iterable[java.lang.String]
@@ -382,7 +392,9 @@ object modelNs extends js.Object {
   
   // engine/model/textproxy
   @js.native
-  class TextProxy protected () extends js.Object {
+  class TextProxy protected ()
+    extends Item
+       with _NodeSet {
     protected def this(textNode: Text, offsetInText: scala.Double, length: scala.Double) = this()
     val data: java.lang.String = js.native
     val document: Document | scala.Null = js.native
@@ -431,9 +443,15 @@ object modelNs extends js.Object {
     var `type`: TreeWalkerValueType
   }
   
+  trait TreeWalkerValueType extends js.Object
+  
   // engine/model/writer
   @js.native
   class Writer () extends js.Object
+  
+  trait _NodeSet extends js.Object
+  
+  trait _SchemaContextDefinition extends js.Object
   
   def getItems(options: js.Object): stdLib.Iterable[Item] = js.native
   /* static members */
@@ -699,12 +717,7 @@ object modelNs extends js.Object {
     ): scala.Unit = js.native
   }
   
-  // engine/model/item
-  type Item = Node | TextProxy
-  type NodeSet = Node | TextProxy | java.lang.String | NodeList | DocumentFragment | stdLib.Iterable[js.Any]
-  type PositionRelation = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.before | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.after | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.same
-  type PositionStickiness = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.toNone | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.toNext | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.toPrevious
-  type SchemaContextDefinition = Node | Position | SchemaContext | java.lang.String | (js.Array[java.lang.String | Node])
-  type TreeWalkerValueType = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementStart | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementEnd | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.character | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text
+  type NodeSet = _NodeSet | stdLib.Iterable[js.Any] | java.lang.String
+  type SchemaContextDefinition = _SchemaContextDefinition | (js.Array[java.lang.String | Node]) | java.lang.String
 }
 

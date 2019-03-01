@@ -18,3 +18,37 @@ trait PermissionsResource extends js.Object {
   def update(request: gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPermissionId): gapiDotClientLib.gapiNs.clientNs.Request[Permission]
 }
 
+object PermissionsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltEmailMessage, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Permission]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Permission]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPageSize, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PermissionList]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDriveLib.Anon_AltFieldsFileIdKeyOauthtokenPermissionId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Permission]
+    ]
+  ): PermissionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[PermissionsResource]
+  }
+}
+

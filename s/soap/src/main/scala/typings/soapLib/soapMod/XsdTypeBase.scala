@@ -12,3 +12,20 @@ trait XsdTypeBase extends js.Object {
   var xmlns: js.UndefOr[WsdlXmlns] = js.undefined
 }
 
+object XsdTypeBase {
+  @scala.inline
+  def apply(
+    ignoredNamespaces: js.Array[java.lang.String],
+    valueKey: java.lang.String,
+    xmlKey: java.lang.String,
+    xmlns: WsdlXmlns = null
+  ): XsdTypeBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ignoredNamespaces")(ignoredNamespaces)
+    __obj.updateDynamic("valueKey")(valueKey)
+    __obj.updateDynamic("xmlKey")(xmlKey)
+    if (xmlns != null) __obj.updateDynamic("xmlns")(xmlns)
+    __obj.asInstanceOf[XsdTypeBase]
+  }
+}
+

@@ -11,3 +11,18 @@ trait TableDefinition extends js.Object {
   var name: java.lang.String
 }
 
+object TableDefinition {
+  @scala.inline
+  def apply(
+    columns: anydbDashSqlLib.anydbDashSqlMod.Dictionary[ColumnDefinition],
+    name: java.lang.String,
+    has: anydbDashSqlLib.anydbDashSqlMod.Dictionary[anydbDashSqlLib.Anon_From] = null
+  ): TableDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columns")(columns)
+    __obj.updateDynamic("name")(name)
+    if (has != null) __obj.updateDynamic("has")(has)
+    __obj.asInstanceOf[TableDefinition]
+  }
+}
+

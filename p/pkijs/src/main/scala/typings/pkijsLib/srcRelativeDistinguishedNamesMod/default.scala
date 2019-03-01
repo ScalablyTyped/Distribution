@@ -9,16 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends RelativeDistinguishedNames {
   def this(params: js.Any) = this()
-  /* CompleteClass */
-  override var typesAndValues: js.Array[pkijsLib.srcAttributeTypeAndValueMod.default] = js.native
-  /* CompleteClass */
-  override var valueBeforeDecode: stdLib.ArrayBuffer = js.native
-  /* CompleteClass */
-  override def fromSchema(schema: js.Any): scala.Unit = js.native
-  /* CompleteClass */
-  override def toJSON(): js.Any = js.native
-  /* CompleteClass */
-  override def toSchema(): js.Any = js.native
 }
 
 /* static members */

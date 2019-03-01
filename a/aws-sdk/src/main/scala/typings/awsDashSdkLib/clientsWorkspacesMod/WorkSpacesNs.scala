@@ -1774,6 +1774,40 @@ object WorkSpacesNs extends js.Object {
     var userRules: js.UndefOr[IpRuleList] = js.undefined
   }
   
+  trait _Compute extends js.Object
+  
+  trait _ConnectionState extends js.Object
+  
+  trait _DedicatedTenancyModificationStateEnum extends js.Object
+  
+  trait _DedicatedTenancySupportResultEnum extends js.Object
+  
+  trait _ModificationResourceEnum extends js.Object
+  
+  trait _ModificationStateEnum extends js.Object
+  
+  trait _OperatingSystemType extends js.Object
+  
+  trait _ReconnectEnum extends js.Object
+  
+  trait _RunningMode extends js.Object
+  
+  trait _TargetWorkspaceState extends js.Object
+  
+  trait _WorkspaceDirectoryState extends js.Object
+  
+  trait _WorkspaceDirectoryType extends js.Object
+  
+  trait _WorkspaceImageIngestionProcess extends js.Object
+  
+  trait _WorkspaceImageRequiredTenancy extends js.Object
+  
+  trait _WorkspaceImageState extends js.Object
+  
+  trait _WorkspaceState extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ARN = java.lang.String
   type AccountModificationList = js.Array[AccountModification]
@@ -1785,14 +1819,14 @@ object WorkSpacesNs extends js.Object {
   type BundleOwner = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ClientPropertiesList = js.Array[ClientPropertiesResult]
-  type Compute = awsDashSdkLib.awsDashSdkLibStrings.VALUE | awsDashSdkLib.awsDashSdkLibStrings.STANDARD | awsDashSdkLib.awsDashSdkLibStrings.PERFORMANCE | awsDashSdkLib.awsDashSdkLibStrings.POWER | awsDashSdkLib.awsDashSdkLibStrings.GRAPHICS | awsDashSdkLib.awsDashSdkLibStrings.POWERPRO | awsDashSdkLib.awsDashSdkLibStrings.GRAPHICSPRO | java.lang.String
+  type Compute = _Compute | java.lang.String
   type ComputerName = java.lang.String
-  type ConnectionState = awsDashSdkLib.awsDashSdkLibStrings.CONNECTED | awsDashSdkLib.awsDashSdkLibStrings.DISCONNECTED | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | java.lang.String
+  type ConnectionState = _ConnectionState | java.lang.String
   type DedicatedTenancyCidrRangeList = js.Array[DedicatedTenancyManagementCidrRange]
   type DedicatedTenancyManagementCidrRange = java.lang.String
-  type DedicatedTenancyModificationStateEnum = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type DedicatedTenancyModificationStateEnum = _DedicatedTenancyModificationStateEnum | java.lang.String
   type DedicatedTenancySupportEnum = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | java.lang.String
-  type DedicatedTenancySupportResultEnum = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type DedicatedTenancySupportResultEnum = _DedicatedTenancySupportResultEnum | java.lang.String
   type DefaultOu = java.lang.String
   type Description = java.lang.String
   type DirectoryId = java.lang.String
@@ -1820,19 +1854,19 @@ object WorkSpacesNs extends js.Object {
   type Limit = scala.Double
   type ManagementCidrRangeConstraint = java.lang.String
   type ManagementCidrRangeMaxResults = scala.Double
-  type ModificationResourceEnum = awsDashSdkLib.awsDashSdkLibStrings.ROOT_VOLUME | awsDashSdkLib.awsDashSdkLibStrings.USER_VOLUME | awsDashSdkLib.awsDashSdkLibStrings.COMPUTE_TYPE | java.lang.String
-  type ModificationStateEnum = awsDashSdkLib.awsDashSdkLibStrings.UPDATE_INITIATED | awsDashSdkLib.awsDashSdkLibStrings.UPDATE_IN_PROGRESS | java.lang.String
+  type ModificationResourceEnum = _ModificationResourceEnum | java.lang.String
+  type ModificationStateEnum = _ModificationStateEnum | java.lang.String
   type ModificationStateList = js.Array[ModificationState]
   type NonEmptyString = java.lang.String
-  type OperatingSystemType = awsDashSdkLib.awsDashSdkLibStrings.WINDOWS | awsDashSdkLib.awsDashSdkLibStrings.LINUX | java.lang.String
+  type OperatingSystemType = _OperatingSystemType | java.lang.String
   type PaginationToken = java.lang.String
   type RebootWorkspaceRequests = js.Array[RebootRequest]
   type RebuildWorkspaceRequests = js.Array[RebuildRequest]
-  type ReconnectEnum = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type ReconnectEnum = _ReconnectEnum | java.lang.String
   type RegistrationCode = java.lang.String
   type ResourceIdList = js.Array[NonEmptyString]
   type RootVolumeSizeGib = scala.Double
-  type RunningMode = awsDashSdkLib.awsDashSdkLibStrings.AUTO_STOP | awsDashSdkLib.awsDashSdkLibStrings.ALWAYS_ON | java.lang.String
+  type RunningMode = _RunningMode | java.lang.String
   type RunningModeAutoStopTimeoutInMinutes = scala.Double
   type SecurityGroupId = java.lang.String
   type StartWorkspaceRequests = js.Array[StartRequest]
@@ -1843,15 +1877,15 @@ object WorkSpacesNs extends js.Object {
   type TagKeyList = js.Array[NonEmptyString]
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
-  type TargetWorkspaceState = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.ADMIN_MAINTENANCE | java.lang.String
+  type TargetWorkspaceState = _TargetWorkspaceState | java.lang.String
   type TerminateWorkspaceRequests = js.Array[TerminateRequest]
   type Timestamp = stdLib.Date
   type UserName = java.lang.String
   type UserVolumeSizeGib = scala.Double
   type VolumeEncryptionKey = java.lang.String
   type WorkspaceConnectionStatusList = js.Array[WorkspaceConnectionStatus]
-  type WorkspaceDirectoryState = awsDashSdkLib.awsDashSdkLibStrings.REGISTERING | awsDashSdkLib.awsDashSdkLibStrings.REGISTERED | awsDashSdkLib.awsDashSdkLibStrings.DEREGISTERING | awsDashSdkLib.awsDashSdkLibStrings.DEREGISTERED | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
-  type WorkspaceDirectoryType = awsDashSdkLib.awsDashSdkLibStrings.SIMPLE_AD | awsDashSdkLib.awsDashSdkLibStrings.AD_CONNECTOR | java.lang.String
+  type WorkspaceDirectoryState = _WorkspaceDirectoryState | java.lang.String
+  type WorkspaceDirectoryType = _WorkspaceDirectoryType | java.lang.String
   type WorkspaceErrorCode = java.lang.String
   type WorkspaceId = java.lang.String
   type WorkspaceIdList = js.Array[WorkspaceId]
@@ -1859,15 +1893,15 @@ object WorkSpacesNs extends js.Object {
   type WorkspaceImageErrorCode = java.lang.String
   type WorkspaceImageId = java.lang.String
   type WorkspaceImageIdList = js.Array[WorkspaceImageId]
-  type WorkspaceImageIngestionProcess = awsDashSdkLib.awsDashSdkLibStrings.BYOL_REGULAR | awsDashSdkLib.awsDashSdkLibStrings.BYOL_GRAPHICS | awsDashSdkLib.awsDashSdkLibStrings.BYOL_GRAPHICSPRO | java.lang.String
+  type WorkspaceImageIngestionProcess = _WorkspaceImageIngestionProcess | java.lang.String
   type WorkspaceImageList = js.Array[WorkspaceImage]
   type WorkspaceImageName = java.lang.String
-  type WorkspaceImageRequiredTenancy = awsDashSdkLib.awsDashSdkLibStrings.DEFAULT | awsDashSdkLib.awsDashSdkLibStrings.DEDICATED | java.lang.String
-  type WorkspaceImageState = awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
+  type WorkspaceImageRequiredTenancy = _WorkspaceImageRequiredTenancy | java.lang.String
+  type WorkspaceImageState = _WorkspaceImageState | java.lang.String
   type WorkspaceList = js.Array[Workspace]
   type WorkspaceRequestList = js.Array[WorkspaceRequest]
-  type WorkspaceState = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.AVAILABLE | awsDashSdkLib.awsDashSdkLibStrings.IMPAIRED | awsDashSdkLib.awsDashSdkLibStrings.UNHEALTHY | awsDashSdkLib.awsDashSdkLibStrings.REBOOTING | awsDashSdkLib.awsDashSdkLibStrings.STARTING | awsDashSdkLib.awsDashSdkLibStrings.REBUILDING | awsDashSdkLib.awsDashSdkLibStrings.MAINTENANCE | awsDashSdkLib.awsDashSdkLibStrings.ADMIN_MAINTENANCE | awsDashSdkLib.awsDashSdkLibStrings.TERMINATING | awsDashSdkLib.awsDashSdkLibStrings.TERMINATED | awsDashSdkLib.awsDashSdkLibStrings.SUSPENDED | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.STOPPING | awsDashSdkLib.awsDashSdkLibStrings.STOPPED | awsDashSdkLib.awsDashSdkLibStrings.ERROR | java.lang.String
+  type WorkspaceState = _WorkspaceState | java.lang.String
   type WorkspacesIpGroupsList = js.Array[WorkspacesIpGroup]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2015-04-08` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

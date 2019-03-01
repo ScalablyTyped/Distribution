@@ -14,3 +14,28 @@ trait VnodeDOM[Attrs, State /* <: Lifecycle[Attrs, State] */] extends Vnode[Attr
   var domSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object VnodeDOM {
+  @scala.inline
+  def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](
+    attrs: Attrs,
+    dom: stdLib.Element,
+    state: State,
+    tag: java.lang.String | (ComponentTypes[Attrs, State]),
+    children: ChildArrayOrPrimitive = null,
+    domSize: scala.Int | scala.Double = null,
+    key: java.lang.String | scala.Double = null,
+    text: java.lang.String | scala.Double | scala.Boolean = null
+  ): VnodeDOM[Attrs, State] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attrs")(attrs.asInstanceOf[js.Any])
+    __obj.updateDynamic("dom")(dom)
+    __obj.updateDynamic("state")(state.asInstanceOf[js.Any])
+    __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (domSize != null) __obj.updateDynamic("domSize")(domSize.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VnodeDOM[Attrs, State]]
+  }
+}
+

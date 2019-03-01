@@ -9,3 +9,12 @@ trait TranslateXTransform extends js.Object {
   var translateX: scala.Double
 }
 
+object TranslateXTransform {
+  @scala.inline
+  def apply(translateX: scala.Double): TranslateXTransform = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("translateX")(translateX)
+    __obj.asInstanceOf[TranslateXTransform]
+  }
+}
+

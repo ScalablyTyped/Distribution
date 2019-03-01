@@ -16,3 +16,13 @@ trait ButtonCancelClickEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ButtonCancelClickEventUIParam {
+  @scala.inline
+  def apply(modalDialog: java.lang.String = null, owner: js.Any = null): ButtonCancelClickEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (modalDialog != null) __obj.updateDynamic("modalDialog")(modalDialog)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ButtonCancelClickEventUIParam]
+  }
+}
+

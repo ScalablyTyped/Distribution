@@ -34,3 +34,20 @@ trait Anon_ContentTypePretendToBeVisual extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ContentTypePretendToBeVisual {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String = null,
+    pretendToBeVisual: js.UndefOr[scala.Boolean] = js.undefined,
+    storageQuota: scala.Int | scala.Double = null,
+    url: java.lang.String = null
+  ): Anon_ContentTypePretendToBeVisual = {
+    val __obj = js.Dynamic.literal()
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (!js.isUndefined(pretendToBeVisual)) __obj.updateDynamic("pretendToBeVisual")(pretendToBeVisual)
+    if (storageQuota != null) __obj.updateDynamic("storageQuota")(storageQuota.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_ContentTypePretendToBeVisual]
+  }
+}
+

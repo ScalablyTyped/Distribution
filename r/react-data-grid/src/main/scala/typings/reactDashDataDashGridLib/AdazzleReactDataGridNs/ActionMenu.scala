@@ -10,3 +10,13 @@ trait ActionMenu extends js.Object {
   var icon: java.lang.String
 }
 
+object ActionMenu {
+  @scala.inline
+  def apply(actions: js.Array[reactDashDataDashGridLib.Anon_Callback], icon: java.lang.String): ActionMenu = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actions")(actions)
+    __obj.updateDynamic("icon")(icon)
+    __obj.asInstanceOf[ActionMenu]
+  }
+}
+

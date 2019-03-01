@@ -119,3 +119,38 @@ trait SlicerData extends js.Object {
   var worksheet: js.UndefOr[WorksheetData] = js.undefined
 }
 
+object SlicerData {
+  @scala.inline
+  def apply(
+    caption: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    isFilterCleared: js.UndefOr[scala.Boolean] = js.undefined,
+    left: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    nameInFormula: java.lang.String = null,
+    slicerItems: js.Array[SlicerItemData] = null,
+    sortBy: officeDashJsDashPreviewLib.ExcelNs.SlicerSortType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.DataSourceOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Ascending | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Descending = null,
+    style: java.lang.String = null,
+    top: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    worksheet: WorksheetData = null
+  ): SlicerData = {
+    val __obj = js.Dynamic.literal()
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isFilterCleared)) __obj.updateDynamic("isFilterCleared")(isFilterCleared)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nameInFormula != null) __obj.updateDynamic("nameInFormula")(nameInFormula)
+    if (slicerItems != null) __obj.updateDynamic("slicerItems")(slicerItems)
+    if (sortBy != null) __obj.updateDynamic("sortBy")(sortBy.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
+    __obj.asInstanceOf[SlicerData]
+  }
+}
+

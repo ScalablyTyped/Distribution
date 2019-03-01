@@ -11,3 +11,13 @@ trait HistoryLabelRemoved extends js.Object {
   var message: js.UndefOr[Message] = js.undefined
 }
 
+object HistoryLabelRemoved {
+  @scala.inline
+  def apply(labelIds: js.Array[java.lang.String] = null, message: Message = null): HistoryLabelRemoved = {
+    val __obj = js.Dynamic.literal()
+    if (labelIds != null) __obj.updateDynamic("labelIds")(labelIds)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[HistoryLabelRemoved]
+  }
+}
+

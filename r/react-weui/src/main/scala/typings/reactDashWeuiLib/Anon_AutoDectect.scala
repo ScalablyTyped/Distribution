@@ -13,3 +13,21 @@ trait Anon_AutoDectect extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_AutoDectect {
+  @scala.inline
+  def apply(
+    autoDectect: scala.Boolean,
+    buttons: js.Array[_],
+    show: scala.Boolean,
+    title: java.lang.String,
+    `type`: java.lang.String
+  ): Anon_AutoDectect = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("autoDectect")(autoDectect)
+    __obj.updateDynamic("buttons")(buttons)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_AutoDectect]
+  }
+}
+

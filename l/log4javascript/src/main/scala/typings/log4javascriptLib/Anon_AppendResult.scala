@@ -10,3 +10,13 @@ trait Anon_AppendResult extends js.Object {
   var isError: scala.Boolean
 }
 
+object Anon_AppendResult {
+  @scala.inline
+  def apply(appendResult: scala.Boolean, isError: scala.Boolean): Anon_AppendResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appendResult")(appendResult)
+    __obj.updateDynamic("isError")(isError)
+    __obj.asInstanceOf[Anon_AppendResult]
+  }
+}
+

@@ -10,10 +10,12 @@ object adoneLibNumbers {
   sealed trait `-1` extends js.Object
   
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Rounding
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Rounding
   
   @js.native
   sealed trait `100` extends js.Object
@@ -28,40 +30,48 @@ object adoneLibNumbers {
   sealed trait `180` extends js.Object
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Rounding
   
   @js.native
   sealed trait `200` extends js.Object
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Rounding
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Rounding
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Rounding
   
   @js.native
   sealed trait `50` extends js.Object
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Rounding
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Rounding
   
   @js.native
   sealed trait `70` extends js.Object
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Rounding
   
   @js.native
   sealed trait `80` extends js.Object
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends adoneLib.adoneNs.mathNs.INs.DecimalNs.Modulo
   
   @js.native
   sealed trait `false` extends js.Object

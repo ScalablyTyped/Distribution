@@ -70,3 +70,36 @@ trait ASPxClientDiagramCoordinates extends js.Object {
   def IsEmpty(): scala.Boolean
 }
 
+object ASPxClientDiagramCoordinates {
+  @scala.inline
+  def apply(
+    GetAxisValue: js.Function1[ASPxClientAxisBase, ASPxClientAxisValue],
+    IsEmpty: js.Function0[scala.Boolean],
+    argumentScaleType: java.lang.String,
+    axisX: ASPxClientAxisBase,
+    axisY: ASPxClientAxisBase,
+    dateTimeArgument: stdLib.Date,
+    dateTimeValue: stdLib.Date,
+    numericalArgument: scala.Double,
+    numericalValue: scala.Double,
+    pane: ASPxClientXYDiagramPane,
+    qualitativeArgument: java.lang.String,
+    valueScaleType: java.lang.String
+  ): ASPxClientDiagramCoordinates = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetAxisValue")(GetAxisValue)
+    __obj.updateDynamic("IsEmpty")(IsEmpty)
+    __obj.updateDynamic("argumentScaleType")(argumentScaleType)
+    __obj.updateDynamic("axisX")(axisX)
+    __obj.updateDynamic("axisY")(axisY)
+    __obj.updateDynamic("dateTimeArgument")(dateTimeArgument)
+    __obj.updateDynamic("dateTimeValue")(dateTimeValue)
+    __obj.updateDynamic("numericalArgument")(numericalArgument)
+    __obj.updateDynamic("numericalValue")(numericalValue)
+    __obj.updateDynamic("pane")(pane)
+    __obj.updateDynamic("qualitativeArgument")(qualitativeArgument)
+    __obj.updateDynamic("valueScaleType")(valueScaleType)
+    __obj.asInstanceOf[ASPxClientDiagramCoordinates]
+  }
+}
+

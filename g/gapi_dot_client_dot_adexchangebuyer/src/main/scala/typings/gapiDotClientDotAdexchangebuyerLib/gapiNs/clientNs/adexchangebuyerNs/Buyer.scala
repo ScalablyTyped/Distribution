@@ -10,3 +10,12 @@ trait Buyer extends js.Object {
   var accountId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Buyer {
+  @scala.inline
+  def apply(accountId: java.lang.String = null): Buyer = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    __obj.asInstanceOf[Buyer]
+  }
+}
+

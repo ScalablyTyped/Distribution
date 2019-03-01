@@ -10,3 +10,13 @@ trait IROOM_GROUP_SUBSCRIBE_ERROR extends js.Object {
   var errorMessage: java.lang.String
 }
 
+object IROOM_GROUP_SUBSCRIBE_ERROR {
+  @scala.inline
+  def apply(errorCode: scala.Double, errorMessage: java.lang.String): IROOM_GROUP_SUBSCRIBE_ERROR = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorCode")(errorCode)
+    __obj.updateDynamic("errorMessage")(errorMessage)
+    __obj.asInstanceOf[IROOM_GROUP_SUBSCRIBE_ERROR]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Size extends js.Object {
   var qcy: scala.Double
 }
 
+object Size {
+  @scala.inline
+  def apply(qcx: scala.Double, qcy: scala.Double): Size = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qcx")(qcx)
+    __obj.updateDynamic("qcy")(qcy)
+    __obj.asInstanceOf[Size]
+  }
+}
+

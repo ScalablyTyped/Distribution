@@ -20,3 +20,18 @@ trait WorkHours extends js.Object {
   var start: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WorkHours {
+  @scala.inline
+  def apply(
+    end: scala.Int | scala.Double = null,
+    highlight: js.UndefOr[scala.Boolean] = js.undefined,
+    start: scala.Int | scala.Double = null
+  ): WorkHours = {
+    val __obj = js.Dynamic.literal()
+    if (end != null) __obj.updateDynamic("end")(end.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlight)) __obj.updateDynamic("highlight")(highlight)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorkHours]
+  }
+}
+

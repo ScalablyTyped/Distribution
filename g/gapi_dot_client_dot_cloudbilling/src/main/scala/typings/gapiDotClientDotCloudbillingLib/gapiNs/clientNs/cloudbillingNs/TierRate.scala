@@ -19,3 +19,13 @@ trait TierRate extends js.Object {
   var unitPrice: js.UndefOr[Money] = js.undefined
 }
 
+object TierRate {
+  @scala.inline
+  def apply(startUsageAmount: scala.Int | scala.Double = null, unitPrice: Money = null): TierRate = {
+    val __obj = js.Dynamic.literal()
+    if (startUsageAmount != null) __obj.updateDynamic("startUsageAmount")(startUsageAmount.asInstanceOf[js.Any])
+    if (unitPrice != null) __obj.updateDynamic("unitPrice")(unitPrice)
+    __obj.asInstanceOf[TierRate]
+  }
+}
+

@@ -16,3 +16,20 @@ trait Anon_CallerType extends js.Object {
   var profileId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_CallerType {
+  @scala.inline
+  def apply(
+    callerType: java.lang.String = null,
+    email: java.lang.String = null,
+    key: java.lang.String = null,
+    profileId: java.lang.String = null
+  ): Anon_CallerType = {
+    val __obj = js.Dynamic.literal()
+    if (callerType != null) __obj.updateDynamic("callerType")(callerType)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (profileId != null) __obj.updateDynamic("profileId")(profileId)
+    __obj.asInstanceOf[Anon_CallerType]
+  }
+}
+

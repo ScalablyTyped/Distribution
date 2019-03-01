@@ -59,3 +59,36 @@ trait UserSettings extends js.Object {
   def getTimeZoneOffsetMinutes(): scala.Double
 }
 
+object UserSettings {
+  @scala.inline
+  def apply(
+    dateFormattingInfo: js.Function0[DateFormattingInfo],
+    defaultDashboardId: java.lang.String,
+    getTimeZoneOffsetMinutes: js.Function0[scala.Double],
+    isGuidedHelpEnabled: scala.Boolean,
+    isHighContrastEnabled: scala.Boolean,
+    isRTL: scala.Boolean,
+    languageId: scala.Double,
+    securityRolePrivileges: js.Array[java.lang.String],
+    securityRoles: js.Array[java.lang.String],
+    transactionCurrencyId: java.lang.String,
+    userId: java.lang.String,
+    userName: java.lang.String
+  ): UserSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dateFormattingInfo")(dateFormattingInfo)
+    __obj.updateDynamic("defaultDashboardId")(defaultDashboardId)
+    __obj.updateDynamic("getTimeZoneOffsetMinutes")(getTimeZoneOffsetMinutes)
+    __obj.updateDynamic("isGuidedHelpEnabled")(isGuidedHelpEnabled)
+    __obj.updateDynamic("isHighContrastEnabled")(isHighContrastEnabled)
+    __obj.updateDynamic("isRTL")(isRTL)
+    __obj.updateDynamic("languageId")(languageId)
+    __obj.updateDynamic("securityRolePrivileges")(securityRolePrivileges)
+    __obj.updateDynamic("securityRoles")(securityRoles)
+    __obj.updateDynamic("transactionCurrencyId")(transactionCurrencyId)
+    __obj.updateDynamic("userId")(userId)
+    __obj.updateDynamic("userName")(userName)
+    __obj.asInstanceOf[UserSettings]
+  }
+}
+

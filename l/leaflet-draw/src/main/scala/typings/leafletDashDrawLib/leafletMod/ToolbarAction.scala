@@ -12,3 +12,20 @@ trait ToolbarAction extends js.Object {
   def callback(): scala.Unit
 }
 
+object ToolbarAction {
+  @scala.inline
+  def apply(
+    callback: js.Function0[scala.Unit],
+    context: js.Object,
+    text: java.lang.String,
+    title: java.lang.String
+  ): ToolbarAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ToolbarAction]
+  }
+}
+

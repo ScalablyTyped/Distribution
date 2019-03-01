@@ -13,3 +13,22 @@ trait CoverageStatistics extends js.Object {
   var linesPartiallyCovered: scala.Double
 }
 
+object CoverageStatistics {
+  @scala.inline
+  def apply(
+    blocksCovered: scala.Double,
+    blocksNotCovered: scala.Double,
+    linesCovered: scala.Double,
+    linesNotCovered: scala.Double,
+    linesPartiallyCovered: scala.Double
+  ): CoverageStatistics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blocksCovered")(blocksCovered)
+    __obj.updateDynamic("blocksNotCovered")(blocksNotCovered)
+    __obj.updateDynamic("linesCovered")(linesCovered)
+    __obj.updateDynamic("linesNotCovered")(linesNotCovered)
+    __obj.updateDynamic("linesPartiallyCovered")(linesPartiallyCovered)
+    __obj.asInstanceOf[CoverageStatistics]
+  }
+}
+

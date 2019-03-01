@@ -191,3 +191,79 @@ trait XStorage
   def renameElement(sElementName: java.lang.String, sNewName: java.lang.String): scala.Unit
 }
 
+object XStorage {
+  @scala.inline
+  def apply(
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementType: activexDashLibreofficeLib.`type`,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    cloneEncryptedStreamElement: js.Function2[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream
+    ],
+    cloneStreamElement: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream],
+    copyElementTo: js.Function3[java.lang.String, XStorage, java.lang.String, scala.Unit],
+    copyLastCommitTo: js.Function1[XStorage, scala.Unit],
+    copyStorageElementLastCommitTo: js.Function2[java.lang.String, XStorage, scala.Unit],
+    copyToStorage: js.Function1[XStorage, scala.Unit],
+    dispose: js.Function0[scala.Unit],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    isStorageElement: js.Function1[java.lang.String, scala.Boolean],
+    isStreamElement: js.Function1[java.lang.String, scala.Boolean],
+    moveElementTo: js.Function3[java.lang.String, XStorage, java.lang.String, scala.Unit],
+    openEncryptedStreamElement: js.Function3[
+      java.lang.String, 
+      scala.Double, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream
+    ],
+    openStorageElement: js.Function2[java.lang.String, scala.Double, XStorage],
+    openStreamElement: js.Function2[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XStream
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeElement: js.Function1[java.lang.String, scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    renameElement: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): XStorage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementNames")(ElementNames)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("cloneEncryptedStreamElement")(cloneEncryptedStreamElement)
+    __obj.updateDynamic("cloneStreamElement")(cloneStreamElement)
+    __obj.updateDynamic("copyElementTo")(copyElementTo)
+    __obj.updateDynamic("copyLastCommitTo")(copyLastCommitTo)
+    __obj.updateDynamic("copyStorageElementLastCommitTo")(copyStorageElementLastCommitTo)
+    __obj.updateDynamic("copyToStorage")(copyToStorage)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getByName")(getByName)
+    __obj.updateDynamic("getElementNames")(getElementNames)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("hasByName")(hasByName)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("isStorageElement")(isStorageElement)
+    __obj.updateDynamic("isStreamElement")(isStreamElement)
+    __obj.updateDynamic("moveElementTo")(moveElementTo)
+    __obj.updateDynamic("openEncryptedStreamElement")(openEncryptedStreamElement)
+    __obj.updateDynamic("openStorageElement")(openStorageElement)
+    __obj.updateDynamic("openStreamElement")(openStreamElement)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeElement")(removeElement)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("renameElement")(renameElement)
+    __obj.asInstanceOf[XStorage]
+  }
+}
+

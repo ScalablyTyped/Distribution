@@ -478,12 +478,14 @@ object MediaTailorNs extends js.Object {
   trait __mapOf__string
     extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type __integerMin1Max100 = scala.Double
   type __listOfPlaybackConfigurations = js.Array[PlaybackConfiguration]
   type __listOf__string = js.Array[__string]
   type __string = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-04-23` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

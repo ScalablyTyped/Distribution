@@ -24,3 +24,26 @@ trait RetryOptions extends js.Object {
   ] = js.undefined
 }
 
+object RetryOptions {
+  @scala.inline
+  def apply(
+    errorCodes: js.Array[java.lang.String] = null,
+    maxRetryAfter: scala.Int | scala.Double = null,
+    methods: js.Array[
+      gotLib.gotLibStrings.GET | gotLib.gotLibStrings.PUT | gotLib.gotLibStrings.HEAD | gotLib.gotLibStrings.DELETE | gotLib.gotLibStrings.OPTIONS | gotLib.gotLibStrings.TRACE
+    ] = null,
+    retries: scala.Double | RetryFunction = null,
+    statusCodes: js.Array[
+      gotLib.gotLibNumbers.`408` | gotLib.gotLibNumbers.`413` | gotLib.gotLibNumbers.`429` | gotLib.gotLibNumbers.`500` | gotLib.gotLibNumbers.`502` | gotLib.gotLibNumbers.`503` | gotLib.gotLibNumbers.`504`
+    ] = null
+  ): RetryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (errorCodes != null) __obj.updateDynamic("errorCodes")(errorCodes)
+    if (maxRetryAfter != null) __obj.updateDynamic("maxRetryAfter")(maxRetryAfter.asInstanceOf[js.Any])
+    if (methods != null) __obj.updateDynamic("methods")(methods)
+    if (retries != null) __obj.updateDynamic("retries")(retries.asInstanceOf[js.Any])
+    if (statusCodes != null) __obj.updateDynamic("statusCodes")(statusCodes)
+    __obj.asInstanceOf[RetryOptions]
+  }
+}
+

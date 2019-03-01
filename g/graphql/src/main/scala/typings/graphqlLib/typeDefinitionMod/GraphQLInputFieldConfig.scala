@@ -14,3 +14,19 @@ trait GraphQLInputFieldConfig extends js.Object {
   var `type`: GraphQLInputType
 }
 
+object GraphQLInputFieldConfig {
+  @scala.inline
+  def apply(
+    `type`: GraphQLInputType,
+    astNode: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.InputValueDefinitionNode] = null,
+    defaultValue: js.Any = null,
+    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
+  ): GraphQLInputFieldConfig = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GraphQLInputFieldConfig]
+  }
+}
+

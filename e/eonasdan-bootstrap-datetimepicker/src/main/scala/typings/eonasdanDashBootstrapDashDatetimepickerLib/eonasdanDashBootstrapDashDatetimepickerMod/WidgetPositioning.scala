@@ -14,3 +14,16 @@ trait WidgetPositioning extends js.Object {
   ] = js.undefined
 }
 
+object WidgetPositioning {
+  @scala.inline
+  def apply(
+    horizontal: eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.auto | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.left | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.right = null,
+    vertical: eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.auto | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.top | eonasdanDashBootstrapDashDatetimepickerLib.eonasdanDashBootstrapDashDatetimepickerLibStrings.bottom = null
+  ): WidgetPositioning = {
+    val __obj = js.Dynamic.literal()
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WidgetPositioning]
+  }
+}
+

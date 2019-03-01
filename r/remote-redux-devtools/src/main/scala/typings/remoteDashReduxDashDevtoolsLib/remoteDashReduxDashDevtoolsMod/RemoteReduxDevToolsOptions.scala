@@ -107,3 +107,54 @@ trait RemoteReduxDevToolsOptions extends js.Object {
   var stopOn: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object RemoteReduxDevToolsOptions {
+  @scala.inline
+  def apply(
+    actionCreators: js.Array[reduxLib.reduxMod.ActionCreator[_]] | reduxLib.reduxMod.ActionCreatorsMapObject[_] = null,
+    actionSanitizer: js.Function1[/* action */ js.Any, _] = null,
+    actionsBlacklist: java.lang.String | js.Array[java.lang.String] = null,
+    actionsWhitelist: java.lang.String | js.Array[java.lang.String] = null,
+    hostname: java.lang.String = null,
+    id: java.lang.String = null,
+    maxAge: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    realtime: js.UndefOr[scala.Boolean] = js.undefined,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    sendOn: java.lang.String | js.Array[java.lang.String] = null,
+    sendOnError: remoteDashReduxDashDevtoolsLib.remoteDashReduxDashDevtoolsLibNumbers.`0` | remoteDashReduxDashDevtoolsLib.remoteDashReduxDashDevtoolsLibNumbers.`1` | remoteDashReduxDashDevtoolsLib.remoteDashReduxDashDevtoolsLibNumbers.`2` = null,
+    sendTo: java.lang.String = null,
+    shouldCatchErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldHotReload: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldRecordChanges: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldStartLocked: js.UndefOr[scala.Boolean] = js.undefined,
+    startOn: java.lang.String | js.Array[java.lang.String] = null,
+    stateSanitizer: js.Function1[/* state */ js.Any, _] = null,
+    stopOn: java.lang.String | js.Array[java.lang.String] = null
+  ): RemoteReduxDevToolsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (actionCreators != null) __obj.updateDynamic("actionCreators")(actionCreators.asInstanceOf[js.Any])
+    if (actionSanitizer != null) __obj.updateDynamic("actionSanitizer")(actionSanitizer)
+    if (actionsBlacklist != null) __obj.updateDynamic("actionsBlacklist")(actionsBlacklist.asInstanceOf[js.Any])
+    if (actionsWhitelist != null) __obj.updateDynamic("actionsWhitelist")(actionsWhitelist.asInstanceOf[js.Any])
+    if (hostname != null) __obj.updateDynamic("hostname")(hostname)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(realtime)) __obj.updateDynamic("realtime")(realtime)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (sendOn != null) __obj.updateDynamic("sendOn")(sendOn.asInstanceOf[js.Any])
+    if (sendOnError != null) __obj.updateDynamic("sendOnError")(sendOnError.asInstanceOf[js.Any])
+    if (sendTo != null) __obj.updateDynamic("sendTo")(sendTo)
+    if (!js.isUndefined(shouldCatchErrors)) __obj.updateDynamic("shouldCatchErrors")(shouldCatchErrors)
+    if (!js.isUndefined(shouldHotReload)) __obj.updateDynamic("shouldHotReload")(shouldHotReload)
+    if (!js.isUndefined(shouldRecordChanges)) __obj.updateDynamic("shouldRecordChanges")(shouldRecordChanges)
+    if (!js.isUndefined(shouldStartLocked)) __obj.updateDynamic("shouldStartLocked")(shouldStartLocked)
+    if (startOn != null) __obj.updateDynamic("startOn")(startOn.asInstanceOf[js.Any])
+    if (stateSanitizer != null) __obj.updateDynamic("stateSanitizer")(stateSanitizer)
+    if (stopOn != null) __obj.updateDynamic("stopOn")(stopOn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RemoteReduxDevToolsOptions]
+  }
+}
+

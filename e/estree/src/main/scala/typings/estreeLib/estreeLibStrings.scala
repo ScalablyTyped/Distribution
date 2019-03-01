@@ -7,103 +7,138 @@ import scala.scalajs.js.annotation._
 
 object estreeLibStrings {
   @js.native
-  sealed trait `!` extends js.Object
+  sealed trait `!`
+    extends estreeLib.estreeMod.UnaryOperator
   
   @js.native
-  sealed trait `!=` extends js.Object
+  sealed trait `!=`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `!==` extends js.Object
+  sealed trait `!==`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `%` extends js.Object
+  sealed trait `%`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `%=` extends js.Object
+  sealed trait `%=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `&` extends js.Object
+  sealed trait `&`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `&&` extends js.Object
+  sealed trait `&&`
+    extends estreeLib.estreeMod.LogicalOperator
   
   @js.native
-  sealed trait `&=` extends js.Object
+  sealed trait `&=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `*` extends js.Object
+  sealed trait `*`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `**` extends js.Object
+  sealed trait `**`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `**=` extends js.Object
+  sealed trait `**=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `*=` extends js.Object
+  sealed trait `*=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `+` extends js.Object
+  sealed trait `+`
+    extends estreeLib.estreeMod.BinaryOperator
+       with estreeLib.estreeMod.UnaryOperator
   
   @js.native
-  sealed trait `++` extends js.Object
+  sealed trait `++`
+    extends estreeLib.estreeMod.UpdateOperator
   
   @js.native
-  sealed trait `+=` extends js.Object
+  sealed trait `+=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `-` extends js.Object
+  sealed trait `-`
+    extends estreeLib.estreeMod.BinaryOperator
+       with estreeLib.estreeMod.UnaryOperator
   
   @js.native
-  sealed trait `--` extends js.Object
+  sealed trait `--`
+    extends estreeLib.estreeMod.UpdateOperator
   
   @js.native
-  sealed trait `-=` extends js.Object
+  sealed trait `-=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `/` extends js.Object
+  sealed trait `/`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `/=` extends js.Object
+  sealed trait `/=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `<<` extends js.Object
+  sealed trait `<<`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `<<=` extends js.Object
+  sealed trait `<<=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait `=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `==` extends js.Object
+  sealed trait `==`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `===` extends js.Object
+  sealed trait `===`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `>>` extends js.Object
+  sealed trait `>>`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `>>=` extends js.Object
+  sealed trait `>>=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `>>>` extends js.Object
+  sealed trait `>>>`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `>>>=` extends js.Object
+  sealed trait `>>>=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
   sealed trait ArrayExpression extends js.Object
@@ -310,10 +345,12 @@ object estreeLibStrings {
   sealed trait YieldExpression extends js.Object
   
   @js.native
-  sealed trait `^=` extends js.Object
+  sealed trait `^=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `^` extends js.Object
+  sealed trait `_backtick^_backtick`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
   sealed trait const extends js.Object
@@ -322,19 +359,22 @@ object estreeLibStrings {
   sealed trait constructor extends js.Object
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends estreeLib.estreeMod.UnaryOperator
   
   @js.native
   sealed trait get extends js.Object
   
   @js.native
-  sealed trait in extends js.Object
+  sealed trait in
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
   sealed trait init extends js.Object
   
   @js.native
-  sealed trait instanceof extends js.Object
+  sealed trait instanceof
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
   sealed trait let extends js.Object
@@ -352,25 +392,31 @@ object estreeLibStrings {
   sealed trait set extends js.Object
   
   @js.native
-  sealed trait typeof extends js.Object
+  sealed trait typeof
+    extends estreeLib.estreeMod.UnaryOperator
   
   @js.native
   sealed trait `var` extends js.Object
   
   @js.native
-  sealed trait void extends js.Object
+  sealed trait void
+    extends estreeLib.estreeMod.UnaryOperator
   
   @js.native
-  sealed trait `|` extends js.Object
+  sealed trait `|`
+    extends estreeLib.estreeMod.BinaryOperator
   
   @js.native
-  sealed trait `|=` extends js.Object
+  sealed trait `|=`
+    extends estreeLib.estreeMod.AssignmentOperator
   
   @js.native
-  sealed trait `||` extends js.Object
+  sealed trait `||`
+    extends estreeLib.estreeMod.LogicalOperator
   
   @js.native
-  sealed trait `~` extends js.Object
+  sealed trait `~`
+    extends estreeLib.estreeMod.UnaryOperator
   
   @scala.inline
   def `!`: `!` = "!".asInstanceOf[`!`]
@@ -577,7 +623,7 @@ object estreeLibStrings {
   @scala.inline
   def `^=`: `^=` = "^=".asInstanceOf[`^=`]
   @scala.inline
-  def `^`: `^` = "^".asInstanceOf[`^`]
+  def `_backtick^_backtick`: `_backtick^_backtick` = "^".asInstanceOf[`_backtick^_backtick`]
   @scala.inline
   def const: const = "const".asInstanceOf[const]
   @scala.inline

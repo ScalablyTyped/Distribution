@@ -89,3 +89,55 @@ trait EffectsOptions[TElement]
   ] = js.undefined
 }
 
+object EffectsOptions {
+  @scala.inline
+  def apply[TElement](
+    always: js.ThisFunction2[
+      /* this */ TElement, 
+      /* animation */ Animation[TElement], 
+      /* jumpedToEnd */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    complete: js.ThisFunction0[/* this */ TElement, scala.Unit] = null,
+    done: js.ThisFunction2[
+      /* this */ TElement, 
+      /* animation */ Animation[TElement], 
+      /* jumpedToEnd */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    duration: Duration = null,
+    easing: java.lang.String = null,
+    fail: js.ThisFunction2[
+      /* this */ TElement, 
+      /* animation */ Animation[TElement], 
+      /* jumpedToEnd */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    progress: js.ThisFunction3[
+      /* this */ TElement, 
+      /* animation */ Animation[TElement], 
+      /* progress */ scala.Double, 
+      /* remainingMs */ scala.Double, 
+      scala.Unit
+    ] = null,
+    queue: scala.Boolean | java.lang.String = null,
+    specialEasing: PlainObject[java.lang.String] = null,
+    start: js.ThisFunction1[/* this */ TElement, /* animation */ Animation[TElement], scala.Unit] = null,
+    step: js.ThisFunction2[/* this */ TElement, /* now */ scala.Double, /* tween */ Tween[TElement], scala.Unit] = null
+  ): EffectsOptions[TElement] = {
+    val __obj = js.Dynamic.literal()
+    if (always != null) __obj.updateDynamic("always")(always)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (done != null) __obj.updateDynamic("done")(done)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (queue != null) __obj.updateDynamic("queue")(queue.asInstanceOf[js.Any])
+    if (specialEasing != null) __obj.updateDynamic("specialEasing")(specialEasing)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (step != null) __obj.updateDynamic("step")(step)
+    __obj.asInstanceOf[EffectsOptions[TElement]]
+  }
+}
+

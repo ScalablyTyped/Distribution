@@ -34,3 +34,28 @@ trait ITimelineDate extends js.Object {
   var year: scala.Double
 }
 
+object ITimelineDate {
+  @scala.inline
+  def apply(
+    year: scala.Double,
+    day: scala.Int | scala.Double = null,
+    display_date: java.lang.String = null,
+    hour: scala.Int | scala.Double = null,
+    millisecond: scala.Int | scala.Double = null,
+    minute: scala.Int | scala.Double = null,
+    month: scala.Int | scala.Double = null,
+    second: scala.Int | scala.Double = null
+  ): ITimelineDate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("year")(year)
+    if (day != null) __obj.updateDynamic("day")(day.asInstanceOf[js.Any])
+    if (display_date != null) __obj.updateDynamic("display_date")(display_date)
+    if (hour != null) __obj.updateDynamic("hour")(hour.asInstanceOf[js.Any])
+    if (millisecond != null) __obj.updateDynamic("millisecond")(millisecond.asInstanceOf[js.Any])
+    if (minute != null) __obj.updateDynamic("minute")(minute.asInstanceOf[js.Any])
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (second != null) __obj.updateDynamic("second")(second.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITimelineDate]
+  }
+}
+

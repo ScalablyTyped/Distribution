@@ -15,3 +15,12 @@ trait ISearchMatchCombinations extends js.Object {
   var qSearchMatchCombinations: js.Array[ISerachMatchCombination]
 }
 
+object ISearchMatchCombinations {
+  @scala.inline
+  def apply(qSearchMatchCombinations: js.Array[ISerachMatchCombination]): ISearchMatchCombinations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qSearchMatchCombinations")(qSearchMatchCombinations)
+    __obj.asInstanceOf[ISearchMatchCombinations]
+  }
+}
+

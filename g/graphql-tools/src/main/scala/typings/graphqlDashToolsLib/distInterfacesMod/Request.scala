@@ -11,3 +11,18 @@ trait Request extends js.Object {
   var variables: stdLib.Record[java.lang.String, _]
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    document: graphqlLib.languageAstMod.DocumentNode,
+    variables: stdLib.Record[java.lang.String, _],
+    extensions: stdLib.Record[java.lang.String, _] = null
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("document")(document)
+    __obj.updateDynamic("variables")(variables)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    __obj.asInstanceOf[Request]
+  }
+}
+

@@ -10,3 +10,12 @@ trait BufferChanging extends js.Object {
   var oldRange: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Range
 }
 
+object BufferChanging {
+  @scala.inline
+  def apply(oldRange: textDashBufferLib.textDashBufferMod.Global.TextBufferNs.Range): BufferChanging = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("oldRange")(oldRange)
+    __obj.asInstanceOf[BufferChanging]
+  }
+}
+

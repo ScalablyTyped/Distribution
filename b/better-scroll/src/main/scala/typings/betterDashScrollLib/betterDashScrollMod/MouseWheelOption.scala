@@ -11,3 +11,14 @@ trait MouseWheelOption extends js.Object {
   var speed: scala.Double
 }
 
+object MouseWheelOption {
+  @scala.inline
+  def apply(easeTime: scala.Double, invert: scala.Boolean, speed: scala.Double): MouseWheelOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("easeTime")(easeTime)
+    __obj.updateDynamic("invert")(invert)
+    __obj.updateDynamic("speed")(speed)
+    __obj.asInstanceOf[MouseWheelOption]
+  }
+}
+

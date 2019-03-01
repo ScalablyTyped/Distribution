@@ -13,3 +13,13 @@ trait IRequestCallbackError extends js.Object {
   var number: scala.Double
 }
 
+object IRequestCallbackError {
+  @scala.inline
+  def apply(body: java.lang.String, number: scala.Double): IRequestCallbackError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("number")(number)
+    __obj.asInstanceOf[IRequestCallbackError]
+  }
+}
+

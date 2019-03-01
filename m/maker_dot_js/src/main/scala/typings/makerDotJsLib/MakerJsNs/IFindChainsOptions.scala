@@ -19,3 +19,18 @@ trait IFindChainsOptions extends IPointMatchOptions {
   var shallow: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IFindChainsOptions {
+  @scala.inline
+  def apply(
+    byLayers: js.UndefOr[scala.Boolean] = js.undefined,
+    pointMatchingDistance: scala.Int | scala.Double = null,
+    shallow: js.UndefOr[scala.Boolean] = js.undefined
+  ): IFindChainsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(byLayers)) __obj.updateDynamic("byLayers")(byLayers)
+    if (pointMatchingDistance != null) __obj.updateDynamic("pointMatchingDistance")(pointMatchingDistance.asInstanceOf[js.Any])
+    if (!js.isUndefined(shallow)) __obj.updateDynamic("shallow")(shallow)
+    __obj.asInstanceOf[IFindChainsOptions]
+  }
+}
+

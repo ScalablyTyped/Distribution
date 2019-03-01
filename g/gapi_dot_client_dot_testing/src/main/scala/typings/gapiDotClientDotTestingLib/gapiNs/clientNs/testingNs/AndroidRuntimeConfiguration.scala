@@ -18,3 +18,13 @@ trait AndroidRuntimeConfiguration extends js.Object {
   var orientations: js.UndefOr[js.Array[Orientation]] = js.undefined
 }
 
+object AndroidRuntimeConfiguration {
+  @scala.inline
+  def apply(locales: js.Array[Locale] = null, orientations: js.Array[Orientation] = null): AndroidRuntimeConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (locales != null) __obj.updateDynamic("locales")(locales)
+    if (orientations != null) __obj.updateDynamic("orientations")(orientations)
+    __obj.asInstanceOf[AndroidRuntimeConfiguration]
+  }
+}
+

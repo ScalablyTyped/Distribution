@@ -14,3 +14,24 @@ trait ConstructorParams extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ConstructorParams {
+  @scala.inline
+  def apply(
+    autostart: js.UndefOr[scala.Boolean] = js.undefined,
+    fullscreen: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    ratio: scala.Int | scala.Double = null,
+    `type`: Types = null,
+    width: scala.Int | scala.Double = null
+  ): ConstructorParams = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autostart)) __obj.updateDynamic("autostart")(autostart)
+    if (!js.isUndefined(fullscreen)) __obj.updateDynamic("fullscreen")(fullscreen)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConstructorParams]
+  }
+}
+

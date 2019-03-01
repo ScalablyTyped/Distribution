@@ -22,3 +22,20 @@ trait CrosshairMarker extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CrosshairMarker {
+  @scala.inline
+  def apply(
+    border: CrosshairMarkerBorder = null,
+    opacity: js.UndefOr[scala.Boolean] = js.undefined,
+    size: CrosshairMarkerSize = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): CrosshairMarker = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (!js.isUndefined(opacity)) __obj.updateDynamic("opacity")(opacity)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[CrosshairMarker]
+  }
+}
+

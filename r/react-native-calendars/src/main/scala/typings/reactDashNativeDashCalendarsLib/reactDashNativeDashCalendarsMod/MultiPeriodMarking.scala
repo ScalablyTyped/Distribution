@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MultiPeriodMarking extends js.Object {
+trait MultiPeriodMarking extends Marking {
   var periods: js.Array[reactDashNativeDashCalendarsLib.Anon_Color]
+}
+
+object MultiPeriodMarking {
+  @scala.inline
+  def apply(periods: js.Array[reactDashNativeDashCalendarsLib.Anon_Color]): MultiPeriodMarking = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("periods")(periods)
+    __obj.asInstanceOf[MultiPeriodMarking]
+  }
 }
 

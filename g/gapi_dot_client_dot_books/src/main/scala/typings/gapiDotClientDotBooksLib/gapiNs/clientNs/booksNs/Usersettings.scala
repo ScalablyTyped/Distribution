@@ -13,3 +13,18 @@ trait Usersettings extends js.Object {
   var notification: js.UndefOr[gapiDotClientDotBooksLib.Anon_MoreFromAuthors] = js.undefined
 }
 
+object Usersettings {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    notesExport: gapiDotClientDotBooksLib.Anon_FolderName = null,
+    notification: gapiDotClientDotBooksLib.Anon_MoreFromAuthors = null
+  ): Usersettings = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (notesExport != null) __obj.updateDynamic("notesExport")(notesExport)
+    if (notification != null) __obj.updateDynamic("notification")(notification)
+    __obj.asInstanceOf[Usersettings]
+  }
+}
+

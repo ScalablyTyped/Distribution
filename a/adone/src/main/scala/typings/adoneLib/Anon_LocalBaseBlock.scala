@@ -74,3 +74,97 @@ trait Anon_LocalBaseBlock extends js.Object {
   var LocalValueBlock: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalValueBlock]
 }
 
+object Anon_LocalBaseBlock {
+  @scala.inline
+  def apply(
+    LocalBaseBlock: Anon_BlockName,
+    LocalBitStringValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBitStringValueBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBitStringValueBlock
+    ],
+    LocalBmpStringValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBmpStringValueBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBmpStringValueBlock
+    ],
+    LocalBooleanValueBlock: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBooleanValueBlock],
+    LocalConstructedValueBlock: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalConstructedValueBlock],
+    LocalEndOfContentValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalBaseBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalEndOfContentValueBlock
+    ],
+    LocalHexBlock: Anon_BlockNameParams,
+    LocalIdentificationBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalIdentificationBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalIdentificationBlock
+    ],
+    LocalIntegerValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalIntegerValueBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalIntegerValueBlock
+    ],
+    LocalLengthBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalLengthBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalLengthBlock
+    ],
+    LocalObjectIdentifierValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[
+        /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalObjectIdentifierValueBlockParams
+      ], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalObjectIdentifierValueBlock
+    ],
+    LocalOctetStringValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[
+        /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalOctetStringValueBlockParams
+      ], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalOctetStringValueBlock
+    ],
+    LocalPrimitiveValueBlock: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalPrimitiveValueBlock],
+    LocalSidValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalSidValueBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalSidValueBlock
+    ],
+    LocalSimpleLocalSimpleStringValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[
+        /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalSimpleLocalSimpleStringValueBlockParams
+      ], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalSimpleLocalSimpleStringValueBlock
+    ],
+    LocalSimpleStringBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalSimpleStringBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalSimpleStringBlock
+    ],
+    LocalUniversalStringValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[
+        /* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalUniversalStringValueParams
+      ], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalUniversalStringValueBlock
+    ],
+    LocalUtf8StringValueBlock: org.scalablytyped.runtime.Instantiable1[
+      /* params */ js.UndefOr[/* params */ adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalSidValueBlockParams], 
+      adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalUtf8StringValueBlock
+    ],
+    LocalValueBlock: org.scalablytyped.runtime.Instantiable0[adoneLib.adoneNs.cryptoNs.asn1Ns.INs.LocalValueBlock]
+  ): Anon_LocalBaseBlock = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LocalBaseBlock")(LocalBaseBlock)
+    __obj.updateDynamic("LocalBitStringValueBlock")(LocalBitStringValueBlock)
+    __obj.updateDynamic("LocalBmpStringValueBlock")(LocalBmpStringValueBlock)
+    __obj.updateDynamic("LocalBooleanValueBlock")(LocalBooleanValueBlock)
+    __obj.updateDynamic("LocalConstructedValueBlock")(LocalConstructedValueBlock)
+    __obj.updateDynamic("LocalEndOfContentValueBlock")(LocalEndOfContentValueBlock)
+    __obj.updateDynamic("LocalHexBlock")(LocalHexBlock)
+    __obj.updateDynamic("LocalIdentificationBlock")(LocalIdentificationBlock)
+    __obj.updateDynamic("LocalIntegerValueBlock")(LocalIntegerValueBlock)
+    __obj.updateDynamic("LocalLengthBlock")(LocalLengthBlock)
+    __obj.updateDynamic("LocalObjectIdentifierValueBlock")(LocalObjectIdentifierValueBlock)
+    __obj.updateDynamic("LocalOctetStringValueBlock")(LocalOctetStringValueBlock)
+    __obj.updateDynamic("LocalPrimitiveValueBlock")(LocalPrimitiveValueBlock)
+    __obj.updateDynamic("LocalSidValueBlock")(LocalSidValueBlock)
+    __obj.updateDynamic("LocalSimpleLocalSimpleStringValueBlock")(LocalSimpleLocalSimpleStringValueBlock)
+    __obj.updateDynamic("LocalSimpleStringBlock")(LocalSimpleStringBlock)
+    __obj.updateDynamic("LocalUniversalStringValueBlock")(LocalUniversalStringValueBlock)
+    __obj.updateDynamic("LocalUtf8StringValueBlock")(LocalUtf8StringValueBlock)
+    __obj.updateDynamic("LocalValueBlock")(LocalValueBlock)
+    __obj.asInstanceOf[Anon_LocalBaseBlock]
+  }
+}
+

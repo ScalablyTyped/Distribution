@@ -38,3 +38,32 @@ trait CellClickEventArgs extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cell: stdLib.HTMLElement = null,
+    columnIndex: scala.Int | scala.Double = null,
+    columnName: java.lang.String = null,
+    columnObject: js.Any = null,
+    model: Model = null,
+    rowIndex: scala.Int | scala.Double = null,
+    target: stdLib.HTMLElement = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): CellClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CellClickEventArgs]
+  }
+}
+

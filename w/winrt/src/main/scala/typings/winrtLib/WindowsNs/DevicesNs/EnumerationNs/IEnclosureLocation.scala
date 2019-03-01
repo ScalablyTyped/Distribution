@@ -11,3 +11,14 @@ trait IEnclosureLocation extends js.Object {
   var panel: Panel
 }
 
+object IEnclosureLocation {
+  @scala.inline
+  def apply(inDock: scala.Boolean, inLid: scala.Boolean, panel: Panel): IEnclosureLocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inDock")(inDock)
+    __obj.updateDynamic("inLid")(inLid)
+    __obj.updateDynamic("panel")(panel)
+    __obj.asInstanceOf[IEnclosureLocation]
+  }
+}
+

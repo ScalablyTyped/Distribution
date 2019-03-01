@@ -12,3 +12,13 @@ trait ReceiveErrorEventArgs extends js.Object {
   var socketId: chromeDashAppsLib.chromeNs.integer
 }
 
+object ReceiveErrorEventArgs {
+  @scala.inline
+  def apply(resultCode: chromeDashAppsLib.chromeNs.integer, socketId: chromeDashAppsLib.chromeNs.integer): ReceiveErrorEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resultCode")(resultCode)
+    __obj.updateDynamic("socketId")(socketId)
+    __obj.asInstanceOf[ReceiveErrorEventArgs]
+  }
+}
+

@@ -15,3 +15,13 @@ trait Anon_EffectiveLocal extends js.Object {
   var local: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_EffectiveLocal {
+  @scala.inline
+  def apply(effective: js.Array[java.lang.String] = null, local: js.Array[java.lang.String] = null): Anon_EffectiveLocal = {
+    val __obj = js.Dynamic.literal()
+    if (effective != null) __obj.updateDynamic("effective")(effective)
+    if (local != null) __obj.updateDynamic("local")(local)
+    __obj.asInstanceOf[Anon_EffectiveLocal]
+  }
+}
+

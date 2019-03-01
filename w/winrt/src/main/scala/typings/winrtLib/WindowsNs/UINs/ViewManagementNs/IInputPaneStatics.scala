@@ -9,3 +9,12 @@ trait IInputPaneStatics extends js.Object {
   def getForCurrentView(): InputPane
 }
 
+object IInputPaneStatics {
+  @scala.inline
+  def apply(getForCurrentView: js.Function0[InputPane]): IInputPaneStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getForCurrentView")(getForCurrentView)
+    __obj.asInstanceOf[IInputPaneStatics]
+  }
+}
+

@@ -17,3 +17,26 @@ trait ojFilmStripSettableProperties
   var translations_ojFilmStripSettableProperties: atOracleOraclejetLib.Anon_LabelAccArrowNextPage
 }
 
+object ojFilmStripSettableProperties {
+  @scala.inline
+  def apply(
+    arrowPlacement: atOracleOraclejetLib.atOracleOraclejetLibStrings.adjacent | atOracleOraclejetLib.atOracleOraclejetLibStrings.overlay,
+    arrowVisibility: atOracleOraclejetLib.atOracleOraclejetLibStrings.visible | atOracleOraclejetLib.atOracleOraclejetLibStrings.hidden | atOracleOraclejetLib.atOracleOraclejetLibStrings.hover | atOracleOraclejetLib.atOracleOraclejetLibStrings.auto,
+    currentItem: atOracleOraclejetLib.Anon_Id,
+    looping: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.page,
+    maxItemsPerPage: scala.Double,
+    orientation: atOracleOraclejetLib.atOracleOraclejetLibStrings.horizontal | atOracleOraclejetLib.atOracleOraclejetLibStrings.vertical,
+    translations: atOracleOraclejetLib.Anon_LabelAccArrowNextPage
+  ): ojFilmStripSettableProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arrowPlacement")(arrowPlacement.asInstanceOf[js.Any])
+    __obj.updateDynamic("arrowVisibility")(arrowVisibility.asInstanceOf[js.Any])
+    __obj.updateDynamic("currentItem")(currentItem)
+    __obj.updateDynamic("looping")(looping.asInstanceOf[js.Any])
+    __obj.updateDynamic("maxItemsPerPage")(maxItemsPerPage)
+    __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    __obj.updateDynamic("translations")(translations)
+    __obj.asInstanceOf[ojFilmStripSettableProperties]
+  }
+}
+

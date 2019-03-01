@@ -75,3 +75,114 @@ trait DatabaseRange
   override def refresh(): scala.Unit
 }
 
+object DatabaseRange {
+  @scala.inline
+  def apply(
+    AutoFilter: scala.Boolean,
+    ContainsHeader: scala.Boolean,
+    DataArea: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    FilterCriteriaSource: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    FilterDescriptor: XSheetFilterDescriptor,
+    FromSelection: scala.Boolean,
+    ImportDescriptor: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    KeepFormats: scala.Boolean,
+    MoveCells: scala.Boolean,
+    Name: java.lang.String,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    ReferredCells: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange,
+    RefreshPeriod: scala.Double,
+    SortDescriptor: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    StripData: scala.Boolean,
+    SubTotalDescriptor: XSubTotalDescriptor,
+    TokenIndex: scala.Double,
+    TotalsRow: scala.Boolean,
+    UseFilterCriteriaSource: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    getDataArea: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    getFilterDescriptor: js.Function0[XSheetFilterDescriptor],
+    getImportDescriptor: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getName: js.Function0[java.lang.String],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getReferredCells: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.XCellRange],
+    getSortDescriptor: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getSubTotalDescriptor: js.Function0[XSubTotalDescriptor],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    refresh: js.Function0[scala.Unit],
+    release: js.Function0[scala.Unit],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeRefreshListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XRefreshListener, scala.Unit],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setDataArea: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit]
+  ): DatabaseRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutoFilter")(AutoFilter)
+    __obj.updateDynamic("ContainsHeader")(ContainsHeader)
+    __obj.updateDynamic("DataArea")(DataArea)
+    __obj.updateDynamic("FilterCriteriaSource")(FilterCriteriaSource)
+    __obj.updateDynamic("FilterDescriptor")(FilterDescriptor)
+    __obj.updateDynamic("FromSelection")(FromSelection)
+    __obj.updateDynamic("ImportDescriptor")(ImportDescriptor)
+    __obj.updateDynamic("KeepFormats")(KeepFormats)
+    __obj.updateDynamic("MoveCells")(MoveCells)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("ReferredCells")(ReferredCells)
+    __obj.updateDynamic("RefreshPeriod")(RefreshPeriod)
+    __obj.updateDynamic("SortDescriptor")(SortDescriptor)
+    __obj.updateDynamic("StripData")(StripData)
+    __obj.updateDynamic("SubTotalDescriptor")(SubTotalDescriptor)
+    __obj.updateDynamic("TokenIndex")(TokenIndex)
+    __obj.updateDynamic("TotalsRow")(TotalsRow)
+    __obj.updateDynamic("UseFilterCriteriaSource")(UseFilterCriteriaSource)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addRefreshListener")(addRefreshListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("getDataArea")(getDataArea)
+    __obj.updateDynamic("getFilterDescriptor")(getFilterDescriptor)
+    __obj.updateDynamic("getImportDescriptor")(getImportDescriptor)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getReferredCells")(getReferredCells)
+    __obj.updateDynamic("getSortDescriptor")(getSortDescriptor)
+    __obj.updateDynamic("getSubTotalDescriptor")(getSubTotalDescriptor)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("refresh")(refresh)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeRefreshListener")(removeRefreshListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setDataArea")(setDataArea)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.asInstanceOf[DatabaseRange]
+  }
+}
+

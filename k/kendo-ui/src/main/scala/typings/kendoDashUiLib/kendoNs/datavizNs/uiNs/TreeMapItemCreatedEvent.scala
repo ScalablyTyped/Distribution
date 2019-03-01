@@ -9,3 +9,20 @@ trait TreeMapItemCreatedEvent extends TreeMapEvent {
   var element: js.UndefOr[kendoDashUiLib.JQuery | stdLib.Element] = js.undefined
 }
 
+object TreeMapItemCreatedEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: TreeMap,
+    element: kendoDashUiLib.JQuery | stdLib.Element = null
+  ): TreeMapItemCreatedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (element != null) __obj.updateDynamic("element")(element.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TreeMapItemCreatedEvent]
+  }
+}
+

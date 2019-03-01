@@ -93,3 +93,36 @@ trait FontLoadOptions extends js.Object {
   var underline: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FontLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    color: js.UndefOr[scala.Boolean] = js.undefined,
+    doubleStrikeThrough: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightColor: js.UndefOr[scala.Boolean] = js.undefined,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    size: js.UndefOr[scala.Boolean] = js.undefined,
+    strikeThrough: js.UndefOr[scala.Boolean] = js.undefined,
+    subscript: js.UndefOr[scala.Boolean] = js.undefined,
+    superscript: js.UndefOr[scala.Boolean] = js.undefined,
+    underline: js.UndefOr[scala.Boolean] = js.undefined
+  ): FontLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(doubleStrikeThrough)) __obj.updateDynamic("doubleStrikeThrough")(doubleStrikeThrough)
+    if (!js.isUndefined(highlightColor)) __obj.updateDynamic("highlightColor")(highlightColor)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(strikeThrough)) __obj.updateDynamic("strikeThrough")(strikeThrough)
+    if (!js.isUndefined(subscript)) __obj.updateDynamic("subscript")(subscript)
+    if (!js.isUndefined(superscript)) __obj.updateDynamic("superscript")(superscript)
+    if (!js.isUndefined(underline)) __obj.updateDynamic("underline")(underline)
+    __obj.asInstanceOf[FontLoadOptions]
+  }
+}
+

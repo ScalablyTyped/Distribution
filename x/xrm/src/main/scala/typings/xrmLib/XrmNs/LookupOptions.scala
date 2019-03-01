@@ -35,3 +35,24 @@ trait LookupOptions extends js.Object {
   var viewIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object LookupOptions {
+  @scala.inline
+  def apply(
+    allowMultiSelect: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultEntityType: java.lang.String = null,
+    defaultViewId: java.lang.String = null,
+    entityTypes: js.Array[java.lang.String] = null,
+    showBarcodeScanner: js.UndefOr[scala.Boolean] = js.undefined,
+    viewIds: js.Array[java.lang.String] = null
+  ): LookupOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMultiSelect)) __obj.updateDynamic("allowMultiSelect")(allowMultiSelect)
+    if (defaultEntityType != null) __obj.updateDynamic("defaultEntityType")(defaultEntityType)
+    if (defaultViewId != null) __obj.updateDynamic("defaultViewId")(defaultViewId)
+    if (entityTypes != null) __obj.updateDynamic("entityTypes")(entityTypes)
+    if (!js.isUndefined(showBarcodeScanner)) __obj.updateDynamic("showBarcodeScanner")(showBarcodeScanner)
+    if (viewIds != null) __obj.updateDynamic("viewIds")(viewIds)
+    __obj.asInstanceOf[LookupOptions]
+  }
+}
+

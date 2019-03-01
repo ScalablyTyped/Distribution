@@ -13,3 +13,12 @@ trait ApiLevelCondition extends js.Object {
   var minApiLevel: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ApiLevelCondition {
+  @scala.inline
+  def apply(minApiLevel: scala.Int | scala.Double = null): ApiLevelCondition = {
+    val __obj = js.Dynamic.literal()
+    if (minApiLevel != null) __obj.updateDynamic("minApiLevel")(minApiLevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApiLevelCondition]
+  }
+}
+

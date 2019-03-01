@@ -9,3 +9,12 @@ trait IOnMessageEvent extends js.Object {
   var data: java.lang.String
 }
 
+object IOnMessageEvent {
+  @scala.inline
+  def apply(data: java.lang.String): IOnMessageEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[IOnMessageEvent]
+  }
+}
+

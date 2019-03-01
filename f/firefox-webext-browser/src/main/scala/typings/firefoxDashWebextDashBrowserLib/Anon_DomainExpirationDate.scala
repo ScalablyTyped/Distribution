@@ -42,3 +42,34 @@ trait Anon_DomainExpirationDate extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DomainExpirationDate {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    domain: java.lang.String = null,
+    expirationDate: scala.Int | scala.Double = null,
+    firstPartyDomain: java.lang.String = null,
+    httpOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    path: java.lang.String = null,
+    sameSite: firefoxDashWebextDashBrowserLib.browserNs.cookiesNs.SameSiteStatus = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    storeId: java.lang.String = null,
+    value: java.lang.String = null
+  ): Anon_DomainExpirationDate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (firstPartyDomain != null) __obj.updateDynamic("firstPartyDomain")(firstPartyDomain)
+    if (!js.isUndefined(httpOnly)) __obj.updateDynamic("httpOnly")(httpOnly)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (sameSite != null) __obj.updateDynamic("sameSite")(sameSite)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (storeId != null) __obj.updateDynamic("storeId")(storeId)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_DomainExpirationDate]
+  }
+}
+

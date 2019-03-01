@@ -135,3 +135,83 @@ trait ExtensionInfo extends js.Object {
   var versionName: java.lang.String
 }
 
+object ExtensionInfo {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    enabled: scala.Boolean,
+    hostPermissions: js.Array[java.lang.String],
+    id: java.lang.String,
+    installType: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_ADMIN, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_ADMIN[keyof chrome-apps.Anon_ADMIN] */ js.Any
+      ]
+    ],
+    mayDisable: scala.Boolean,
+    name: java.lang.String,
+    offlineEnabled: scala.Boolean,
+    permissions: js.Array[chromeDashAppsLib.chromeNs.runtimeNs.Permission],
+    shortName: java.lang.String,
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.packaged_app,
+    version: java.lang.String,
+    versionName: java.lang.String,
+    appLaunchUrl: java.lang.String = null,
+    availableLaunchTypes: js.Array[
+      chromeDashAppsLib.chromeNs.ToStringLiteral[
+        chromeDashAppsLib.Anon_OPENASPINNEDTAB, 
+        java.lang.String, 
+        stdLib.Exclude[
+          java.lang.String, 
+          /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASPINNEDTAB[keyof chrome-apps.Anon_OPENASPINNEDTAB] */ js.Any
+        ]
+      ]
+    ] = null,
+    disabledReason: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_PERMISSIONSINCREASE, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_PERMISSIONSINCREASE[keyof chrome-apps.Anon_PERMISSIONSINCREASE] */ js.Any
+      ]
+    ] = null,
+    homepageUrl: java.lang.String = null,
+    icons: js.Array[IconInfo] = null,
+    isApp: chromeDashAppsLib.chromeDashAppsLibNumbers.`true` = null,
+    launchType: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_OPENASPINNEDTAB, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_OPENASPINNEDTAB[keyof chrome-apps.Anon_OPENASPINNEDTAB] */ js.Any
+      ]
+    ] = null,
+    updateUrl: java.lang.String = null
+  ): ExtensionInfo = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("hostPermissions")(hostPermissions)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("installType")(installType.asInstanceOf[js.Any])
+    __obj.updateDynamic("mayDisable")(mayDisable)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("offlineEnabled")(offlineEnabled)
+    __obj.updateDynamic("permissions")(permissions)
+    __obj.updateDynamic("shortName")(shortName)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("versionName")(versionName)
+    if (appLaunchUrl != null) __obj.updateDynamic("appLaunchUrl")(appLaunchUrl)
+    if (availableLaunchTypes != null) __obj.updateDynamic("availableLaunchTypes")(availableLaunchTypes)
+    if (disabledReason != null) __obj.updateDynamic("disabledReason")(disabledReason.asInstanceOf[js.Any])
+    if (homepageUrl != null) __obj.updateDynamic("homepageUrl")(homepageUrl)
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (isApp != null) __obj.updateDynamic("isApp")(isApp)
+    if (launchType != null) __obj.updateDynamic("launchType")(launchType.asInstanceOf[js.Any])
+    if (updateUrl != null) __obj.updateDynamic("updateUrl")(updateUrl)
+    __obj.asInstanceOf[ExtensionInfo]
+  }
+}
+

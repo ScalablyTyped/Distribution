@@ -10,3 +10,16 @@ trait CodeParser extends js.Object {
   def expandNames(obj: org.scalablytyped.runtime.StringDictionary[js.Any]): js.Any
 }
 
+object CodeParser {
+  @scala.inline
+  def apply(
+    collapseNames: js.Function1[js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]],
+    expandNames: js.Function1[org.scalablytyped.runtime.StringDictionary[js.Any], js.Any]
+  ): CodeParser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collapseNames")(collapseNames)
+    __obj.updateDynamic("expandNames")(expandNames)
+    __obj.asInstanceOf[CodeParser]
+  }
+}
+

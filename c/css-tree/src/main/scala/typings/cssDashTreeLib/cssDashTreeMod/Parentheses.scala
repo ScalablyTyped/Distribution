@@ -5,9 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Parentheses extends CssNodeCommon {
+trait Parentheses
+  extends CssNodeCommon
+     with CssNode {
   var children: List[CssNode]
   @JSName("type")
   var type_Parentheses: cssDashTreeLib.cssDashTreeLibStrings.Parentheses
+}
+
+object Parentheses {
+  @scala.inline
+  def apply(
+    children: List[CssNode],
+    `type`: cssDashTreeLib.cssDashTreeLibStrings.Parentheses,
+    loc: CssLocation = null
+  ): Parentheses = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("children")(children)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Parentheses]
+  }
 }
 

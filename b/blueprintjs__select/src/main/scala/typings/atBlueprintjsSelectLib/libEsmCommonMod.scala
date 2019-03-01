@@ -29,6 +29,13 @@ object libEsmCommonMod extends js.Object {
     itemB: T
   ): scala.Boolean = js.native
   def executeItemsEqual[T](itemsEqualProp: atBlueprintjsSelectLib.libEsmCommonListItemsPropsMod.ItemsEqualProp[T]): scala.Boolean = js.native
+  def getActiveItem[T](): T | scala.Null = js.native
+  def getActiveItem[T](activeItem: T): T | scala.Null = js.native
+  def getActiveItem[T](activeItem: atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem): T | scala.Null = js.native
+  def getCreateNewItem(): atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem = js.native
+  def isCreateNewItem[T](): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ scala.Boolean = js.native
+  def isCreateNewItem[T](item: T): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ scala.Boolean = js.native
+  def isCreateNewItem[T](item: atBlueprintjsSelectLib.libEsmCommonListItemsUtilsMod.ICreateNewItem): /* is @blueprintjs/select.@blueprintjs/select/lib/esm/common/listItemsUtils.ICreateNewItem */ scala.Boolean = js.native
   def renderFilteredItems(props: atBlueprintjsSelectLib.libEsmCommonItemListRendererMod.IItemListRendererProps[_]): reactLib.reactMod.ReactNs.ReactNode = js.native
   def renderFilteredItems(
     props: atBlueprintjsSelectLib.libEsmCommonItemListRendererMod.IItemListRendererProps[_],

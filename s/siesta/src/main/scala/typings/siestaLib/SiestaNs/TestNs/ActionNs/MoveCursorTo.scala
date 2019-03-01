@@ -12,3 +12,20 @@ trait MoveCursorTo
   extends siestaLib.SiestaNs.TestNs.IAction
      with siestaLib.SiestaNs.TestNs.ActionNs.RoleNs.IHasTarget
 
+object MoveCursorTo {
+  @scala.inline
+  def apply(
+    desc: java.lang.String = null,
+    el: js.Any = null,
+    passTargetToNext: js.UndefOr[scala.Boolean] = js.undefined,
+    target: js.Any = null
+  ): MoveCursorTo = {
+    val __obj = js.Dynamic.literal()
+    if (desc != null) __obj.updateDynamic("desc")(desc)
+    if (el != null) __obj.updateDynamic("el")(el)
+    if (!js.isUndefined(passTargetToNext)) __obj.updateDynamic("passTargetToNext")(passTargetToNext)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[MoveCursorTo]
+  }
+}
+

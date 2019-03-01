@@ -30,3 +30,34 @@ trait DeviceMetadata extends js.Object {
   var screenWidthPx: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DeviceMetadata {
+  @scala.inline
+  def apply(
+    cpuMake: java.lang.String = null,
+    cpuModel: java.lang.String = null,
+    deviceClass: java.lang.String = null,
+    glEsVersion: scala.Int | scala.Double = null,
+    manufacturer: java.lang.String = null,
+    nativePlatform: java.lang.String = null,
+    productName: java.lang.String = null,
+    ramMb: scala.Int | scala.Double = null,
+    screenDensityDpi: scala.Int | scala.Double = null,
+    screenHeightPx: scala.Int | scala.Double = null,
+    screenWidthPx: scala.Int | scala.Double = null
+  ): DeviceMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (cpuMake != null) __obj.updateDynamic("cpuMake")(cpuMake)
+    if (cpuModel != null) __obj.updateDynamic("cpuModel")(cpuModel)
+    if (deviceClass != null) __obj.updateDynamic("deviceClass")(deviceClass)
+    if (glEsVersion != null) __obj.updateDynamic("glEsVersion")(glEsVersion.asInstanceOf[js.Any])
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
+    if (nativePlatform != null) __obj.updateDynamic("nativePlatform")(nativePlatform)
+    if (productName != null) __obj.updateDynamic("productName")(productName)
+    if (ramMb != null) __obj.updateDynamic("ramMb")(ramMb.asInstanceOf[js.Any])
+    if (screenDensityDpi != null) __obj.updateDynamic("screenDensityDpi")(screenDensityDpi.asInstanceOf[js.Any])
+    if (screenHeightPx != null) __obj.updateDynamic("screenHeightPx")(screenHeightPx.asInstanceOf[js.Any])
+    if (screenWidthPx != null) __obj.updateDynamic("screenWidthPx")(screenWidthPx.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeviceMetadata]
+  }
+}
+

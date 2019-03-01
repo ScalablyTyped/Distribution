@@ -28,3 +28,22 @@ trait ContextRowRenderedEventUIParam extends js.Object {
   var parentRows: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object ContextRowRenderedEventUIParam {
+  @scala.inline
+  def apply(
+    contextRowMode: java.lang.String = null,
+    currentPageIndex: scala.Int | scala.Double = null,
+    dataRow: js.Any = null,
+    owner: js.Any = null,
+    parentRows: js.Array[_] = null
+  ): ContextRowRenderedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (contextRowMode != null) __obj.updateDynamic("contextRowMode")(contextRowMode)
+    if (currentPageIndex != null) __obj.updateDynamic("currentPageIndex")(currentPageIndex.asInstanceOf[js.Any])
+    if (dataRow != null) __obj.updateDynamic("dataRow")(dataRow)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (parentRows != null) __obj.updateDynamic("parentRows")(parentRows)
+    __obj.asInstanceOf[ContextRowRenderedEventUIParam]
+  }
+}
+

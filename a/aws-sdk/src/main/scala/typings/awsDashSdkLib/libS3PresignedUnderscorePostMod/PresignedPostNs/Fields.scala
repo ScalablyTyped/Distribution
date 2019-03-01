@@ -25,3 +25,22 @@ trait Fields
   var `X-Amz-Signature`: java.lang.String
 }
 
+object Fields {
+  @scala.inline
+  def apply(
+    Policy: java.lang.String,
+    `X-Amz-Signature`: java.lang.String,
+    StringDictionary: /**
+    * Additional keys that must be included in the form to be submitted. This
+    * will include signature metadata as well as any fields provided to
+    * s3.createPresignedPost
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): Fields = {
+    val __obj = js.Dynamic.literal(`X-Amz-Signature` = `X-Amz-Signature`)
+    __obj.updateDynamic("Policy")(Policy)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Fields]
+  }
+}
+

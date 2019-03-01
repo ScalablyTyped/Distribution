@@ -10,3 +10,13 @@ trait PartialMessageInfo extends js.Object {
   val waitingTime: scala.Double
 }
 
+object PartialMessageInfo {
+  @scala.inline
+  def apply(messageToken: scala.Double, waitingTime: scala.Double): PartialMessageInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("messageToken")(messageToken)
+    __obj.updateDynamic("waitingTime")(waitingTime)
+    __obj.asInstanceOf[PartialMessageInfo]
+  }
+}
+

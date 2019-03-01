@@ -121,3 +121,98 @@ import scala.scalajs.js.annotation._
   var tooltipType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITextItem {
+  @scala.inline
+  def apply(
+    IComponent: extjsLib.ExtNs.IComponent = null,
+    IQueryable: extjsLib.ExtNs.IQueryable = null,
+    activated: js.UndefOr[scala.Boolean] = js.undefined,
+    activeCls: java.lang.String = null,
+    canActivate: js.UndefOr[scala.Boolean] = js.undefined,
+    child: js.Function1[/* selector */ js.UndefOr[js.Any], _] = null,
+    clickHideDelay: scala.Int | scala.Double = null,
+    destroyMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    disabledCls: java.lang.String = null,
+    down: js.Function1[/* selector */ js.UndefOr[js.Any], _] = null,
+    glyph: js.Any = null,
+    handler: js.Any = null,
+    hideOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    href: java.lang.String = null,
+    hrefTarget: java.lang.String = null,
+    icon: java.lang.String = null,
+    iconCls: java.lang.String = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    maskOnDisable: js.UndefOr[scala.Boolean] = js.undefined,
+    menu: js.Any = null,
+    menuAlign: java.lang.String = null,
+    menuExpandDelay: scala.Int | scala.Double = null,
+    menuHideDelay: scala.Int | scala.Double = null,
+    onDestroy: js.Function0[scala.Unit] = null,
+    onRemoved: js.Function0[scala.Unit] = null,
+    onRender: js.Function0[scala.Unit] = null,
+    parentMenu: IMenu = null,
+    plain: js.UndefOr[scala.Boolean] = js.undefined,
+    query: js.Function1[/* selector */ js.UndefOr[java.lang.String], extjsLib.ExtNs.Array] = null,
+    queryBy: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], extjsLib.ExtNs.Array] = null,
+    queryById: js.Function1[/* id */ js.UndefOr[java.lang.String], extjsLib.ExtNs.IComponent] = null,
+    renderTpl: js.Any = null,
+    setHandler: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    setIcon: js.Function1[/* icon */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setIconCls: js.Function1[/* iconCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setMenu: js.Function2[
+      /* menu */ js.UndefOr[js.Any], 
+      /* destroyMenu */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    setText: js.Function1[/* text */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setTooltip: js.Function1[/* tooltip */ js.UndefOr[js.Any], IItem] = null,
+    text: java.lang.String = null,
+    tooltip: js.Any = null,
+    tooltipType: java.lang.String = null
+  ): ITextItem = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    js.Dynamic.global.Object.assign(__obj, IQueryable)
+    if (!js.isUndefined(activated)) __obj.updateDynamic("activated")(activated)
+    if (activeCls != null) __obj.updateDynamic("activeCls")(activeCls)
+    if (!js.isUndefined(canActivate)) __obj.updateDynamic("canActivate")(canActivate)
+    if (child != null) __obj.updateDynamic("child")(child)
+    if (clickHideDelay != null) __obj.updateDynamic("clickHideDelay")(clickHideDelay.asInstanceOf[js.Any])
+    if (!js.isUndefined(destroyMenu)) __obj.updateDynamic("destroyMenu")(destroyMenu)
+    if (disabledCls != null) __obj.updateDynamic("disabledCls")(disabledCls)
+    if (down != null) __obj.updateDynamic("down")(down)
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
+    if (handler != null) __obj.updateDynamic("handler")(handler)
+    if (!js.isUndefined(hideOnClick)) __obj.updateDynamic("hideOnClick")(hideOnClick)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (hrefTarget != null) __obj.updateDynamic("hrefTarget")(hrefTarget)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (!js.isUndefined(maskOnDisable)) __obj.updateDynamic("maskOnDisable")(maskOnDisable)
+    if (menu != null) __obj.updateDynamic("menu")(menu)
+    if (menuAlign != null) __obj.updateDynamic("menuAlign")(menuAlign)
+    if (menuExpandDelay != null) __obj.updateDynamic("menuExpandDelay")(menuExpandDelay.asInstanceOf[js.Any])
+    if (menuHideDelay != null) __obj.updateDynamic("menuHideDelay")(menuHideDelay.asInstanceOf[js.Any])
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (onRemoved != null) __obj.updateDynamic("onRemoved")(onRemoved)
+    if (onRender != null) __obj.updateDynamic("onRender")(onRender)
+    if (parentMenu != null) __obj.updateDynamic("parentMenu")(parentMenu)
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (queryBy != null) __obj.updateDynamic("queryBy")(queryBy)
+    if (queryById != null) __obj.updateDynamic("queryById")(queryById)
+    if (renderTpl != null) __obj.updateDynamic("renderTpl")(renderTpl)
+    if (setHandler != null) __obj.updateDynamic("setHandler")(setHandler)
+    if (setIcon != null) __obj.updateDynamic("setIcon")(setIcon)
+    if (setIconCls != null) __obj.updateDynamic("setIconCls")(setIconCls)
+    if (setMenu != null) __obj.updateDynamic("setMenu")(setMenu)
+    if (setText != null) __obj.updateDynamic("setText")(setText)
+    if (setTooltip != null) __obj.updateDynamic("setTooltip")(setTooltip)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltipType != null) __obj.updateDynamic("tooltipType")(tooltipType)
+    __obj.asInstanceOf[ITextItem]
+  }
+}
+

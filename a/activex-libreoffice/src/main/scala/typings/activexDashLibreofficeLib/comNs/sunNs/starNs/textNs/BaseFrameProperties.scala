@@ -241,3 +241,128 @@ trait BaseFrameProperties
   var WrapInfluenceOnPosition: scala.Double
 }
 
+object BaseFrameProperties {
+  @scala.inline
+  def apply(
+    AnchorFrame: XTextFrame,
+    AnchorPageNo: scala.Double,
+    BackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BackGraphicFilter: java.lang.String,
+    BackGraphicLocation: activexDashLibreofficeLib.comNs.sunNs.starNs.styleNs.GraphicLocation,
+    BackGraphicURL: java.lang.String,
+    BackTransparent: scala.Boolean,
+    BorderDistance: scala.Double,
+    BottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    BottomBorderDistance: scala.Double,
+    BottomMargin: scala.Double,
+    ContentProtected: scala.Boolean,
+    Description: java.lang.String,
+    FillGradient: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Gradient,
+    FillGradientName: java.lang.String,
+    FillStyle: activexDashLibreofficeLib.comNs.sunNs.starNs.drawingNs.FillStyle,
+    FrameInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    Height: scala.Double,
+    HoriOrient: scala.Double,
+    HoriOrientPosition: scala.Double,
+    HoriOrientRelation: scala.Double,
+    HyperLinkName: java.lang.String,
+    HyperLinkTarget: java.lang.String,
+    HyperLinkURL: java.lang.String,
+    IsSyncHeightToWidth: scala.Boolean,
+    IsSyncWidthToHeight: scala.Boolean,
+    LayoutSize: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    LeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    LeftBorderDistance: scala.Double,
+    LeftMargin: scala.Double,
+    Opaque: scala.Boolean,
+    PageToggle: scala.Boolean,
+    PositionProtected: scala.Boolean,
+    Print: scala.Boolean,
+    RelativeHeight: scala.Double,
+    RelativeHeightRelation: scala.Double,
+    RelativeWidth: scala.Double,
+    RelativeWidthRelation: scala.Double,
+    RightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    RightBorderDistance: scala.Double,
+    RightMargin: scala.Double,
+    ServerMap: scala.Boolean,
+    ShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    ShadowTransparence: scala.Double,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    SizeProtected: scala.Boolean,
+    Surround: WrapTextMode,
+    SurroundAnchorOnly: scala.Boolean,
+    Title: java.lang.String,
+    TopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    TopBorderDistance: scala.Double,
+    TopMargin: scala.Double,
+    UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    VertOrient: scala.Double,
+    VertOrientPosition: scala.Double,
+    VertOrientRelation: scala.Double,
+    Width: scala.Double,
+    WrapInfluenceOnPosition: scala.Double
+  ): BaseFrameProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AnchorFrame")(AnchorFrame)
+    __obj.updateDynamic("AnchorPageNo")(AnchorPageNo)
+    __obj.updateDynamic("BackColor")(BackColor)
+    __obj.updateDynamic("BackGraphicFilter")(BackGraphicFilter)
+    __obj.updateDynamic("BackGraphicLocation")(BackGraphicLocation)
+    __obj.updateDynamic("BackGraphicURL")(BackGraphicURL)
+    __obj.updateDynamic("BackTransparent")(BackTransparent)
+    __obj.updateDynamic("BorderDistance")(BorderDistance)
+    __obj.updateDynamic("BottomBorder")(BottomBorder)
+    __obj.updateDynamic("BottomBorderDistance")(BottomBorderDistance)
+    __obj.updateDynamic("BottomMargin")(BottomMargin)
+    __obj.updateDynamic("ContentProtected")(ContentProtected)
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("FillGradient")(FillGradient)
+    __obj.updateDynamic("FillGradientName")(FillGradientName)
+    __obj.updateDynamic("FillStyle")(FillStyle)
+    __obj.updateDynamic("FrameInteropGrabBag")(FrameInteropGrabBag)
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("HoriOrient")(HoriOrient)
+    __obj.updateDynamic("HoriOrientPosition")(HoriOrientPosition)
+    __obj.updateDynamic("HoriOrientRelation")(HoriOrientRelation)
+    __obj.updateDynamic("HyperLinkName")(HyperLinkName)
+    __obj.updateDynamic("HyperLinkTarget")(HyperLinkTarget)
+    __obj.updateDynamic("HyperLinkURL")(HyperLinkURL)
+    __obj.updateDynamic("IsSyncHeightToWidth")(IsSyncHeightToWidth)
+    __obj.updateDynamic("IsSyncWidthToHeight")(IsSyncWidthToHeight)
+    __obj.updateDynamic("LayoutSize")(LayoutSize)
+    __obj.updateDynamic("LeftBorder")(LeftBorder)
+    __obj.updateDynamic("LeftBorderDistance")(LeftBorderDistance)
+    __obj.updateDynamic("LeftMargin")(LeftMargin)
+    __obj.updateDynamic("Opaque")(Opaque)
+    __obj.updateDynamic("PageToggle")(PageToggle)
+    __obj.updateDynamic("PositionProtected")(PositionProtected)
+    __obj.updateDynamic("Print")(Print)
+    __obj.updateDynamic("RelativeHeight")(RelativeHeight)
+    __obj.updateDynamic("RelativeHeightRelation")(RelativeHeightRelation)
+    __obj.updateDynamic("RelativeWidth")(RelativeWidth)
+    __obj.updateDynamic("RelativeWidthRelation")(RelativeWidthRelation)
+    __obj.updateDynamic("RightBorder")(RightBorder)
+    __obj.updateDynamic("RightBorderDistance")(RightBorderDistance)
+    __obj.updateDynamic("RightMargin")(RightMargin)
+    __obj.updateDynamic("ServerMap")(ServerMap)
+    __obj.updateDynamic("ShadowFormat")(ShadowFormat)
+    __obj.updateDynamic("ShadowTransparence")(ShadowTransparence)
+    __obj.updateDynamic("Size")(Size)
+    __obj.updateDynamic("SizeProtected")(SizeProtected)
+    __obj.updateDynamic("Surround")(Surround)
+    __obj.updateDynamic("SurroundAnchorOnly")(SurroundAnchorOnly)
+    __obj.updateDynamic("Title")(Title)
+    __obj.updateDynamic("TopBorder")(TopBorder)
+    __obj.updateDynamic("TopBorderDistance")(TopBorderDistance)
+    __obj.updateDynamic("TopMargin")(TopMargin)
+    __obj.updateDynamic("UserDefinedAttributes")(UserDefinedAttributes)
+    __obj.updateDynamic("VertOrient")(VertOrient)
+    __obj.updateDynamic("VertOrientPosition")(VertOrientPosition)
+    __obj.updateDynamic("VertOrientRelation")(VertOrientRelation)
+    __obj.updateDynamic("Width")(Width)
+    __obj.updateDynamic("WrapInfluenceOnPosition")(WrapInfluenceOnPosition)
+    __obj.asInstanceOf[BaseFrameProperties]
+  }
+}
+

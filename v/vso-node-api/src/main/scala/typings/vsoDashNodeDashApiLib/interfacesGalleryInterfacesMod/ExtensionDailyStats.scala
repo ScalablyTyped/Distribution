@@ -28,3 +28,22 @@ trait ExtensionDailyStats extends js.Object {
   var statCount: scala.Double
 }
 
+object ExtensionDailyStats {
+  @scala.inline
+  def apply(
+    dailyStats: js.Array[ExtensionDailyStat],
+    extensionId: java.lang.String,
+    extensionName: java.lang.String,
+    publisherName: java.lang.String,
+    statCount: scala.Double
+  ): ExtensionDailyStats = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dailyStats")(dailyStats)
+    __obj.updateDynamic("extensionId")(extensionId)
+    __obj.updateDynamic("extensionName")(extensionName)
+    __obj.updateDynamic("publisherName")(publisherName)
+    __obj.updateDynamic("statCount")(statCount)
+    __obj.asInstanceOf[ExtensionDailyStats]
+  }
+}
+

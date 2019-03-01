@@ -18,3 +18,22 @@ trait Characteristic extends js.Object {
   var value: js.UndefOr[stdLib.ArrayBuffer] = js.undefined
 }
 
+object Characteristic {
+  @scala.inline
+  def apply(
+    properties: js.Array[CharacteristicProperties],
+    uuid: java.lang.String,
+    instanceId: java.lang.String = null,
+    service: Service = null,
+    value: stdLib.ArrayBuffer = null
+  ): Characteristic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("uuid")(uuid)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    if (service != null) __obj.updateDynamic("service")(service)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Characteristic]
+  }
+}
+

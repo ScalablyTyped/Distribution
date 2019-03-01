@@ -28,3 +28,22 @@ trait FilterMixin extends js.Object {
   def toJSON(): FilterMixin
 }
 
+object FilterMixin {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, FilterMixin],
+    cacheKey: js.Function1[java.lang.String, FilterMixin],
+    name: js.Function1[java.lang.String, FilterMixin],
+    toJSON: js.Function0[FilterMixin]
+  ): FilterMixin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[FilterMixin]
+  }
+}
+

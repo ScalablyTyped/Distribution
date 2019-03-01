@@ -12,3 +12,13 @@ trait CommitmentsScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object CommitmentsScopedList {
+  @scala.inline
+  def apply(commitments: js.Array[Commitment] = null, warning: gapiDotClientDotComputeLib.Anon_Code = null): CommitmentsScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (commitments != null) __obj.updateDynamic("commitments")(commitments)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[CommitmentsScopedList]
+  }
+}
+

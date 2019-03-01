@@ -20,3 +20,18 @@ trait ContextualTab extends js.Object {
   var tabs: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object ContextualTab {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    tabs: js.Array[_] = null
+  ): ContextualTab = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (tabs != null) __obj.updateDynamic("tabs")(tabs)
+    __obj.asInstanceOf[ContextualTab]
+  }
+}
+

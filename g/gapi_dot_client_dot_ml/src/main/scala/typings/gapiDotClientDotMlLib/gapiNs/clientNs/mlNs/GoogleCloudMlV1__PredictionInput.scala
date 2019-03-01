@@ -59,3 +59,32 @@ trait GoogleCloudMlV1__PredictionInput extends js.Object {
   var versionName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudMlV1__PredictionInput {
+  @scala.inline
+  def apply(
+    batchSize: java.lang.String = null,
+    dataFormat: java.lang.String = null,
+    inputPaths: js.Array[java.lang.String] = null,
+    maxWorkerCount: java.lang.String = null,
+    modelName: java.lang.String = null,
+    outputPath: java.lang.String = null,
+    region: java.lang.String = null,
+    runtimeVersion: java.lang.String = null,
+    uri: java.lang.String = null,
+    versionName: java.lang.String = null
+  ): GoogleCloudMlV1__PredictionInput = {
+    val __obj = js.Dynamic.literal()
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize)
+    if (dataFormat != null) __obj.updateDynamic("dataFormat")(dataFormat)
+    if (inputPaths != null) __obj.updateDynamic("inputPaths")(inputPaths)
+    if (maxWorkerCount != null) __obj.updateDynamic("maxWorkerCount")(maxWorkerCount)
+    if (modelName != null) __obj.updateDynamic("modelName")(modelName)
+    if (outputPath != null) __obj.updateDynamic("outputPath")(outputPath)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (runtimeVersion != null) __obj.updateDynamic("runtimeVersion")(runtimeVersion)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    if (versionName != null) __obj.updateDynamic("versionName")(versionName)
+    __obj.asInstanceOf[GoogleCloudMlV1__PredictionInput]
+  }
+}
+

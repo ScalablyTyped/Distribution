@@ -11,3 +11,18 @@ trait Anon_IndexPropName
   var tile: stdLib.Element
 }
 
+object Anon_IndexPropName {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    tile: stdLib.Element,
+    StringDictionary: /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_IndexPropName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("tile")(tile)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_IndexPropName]
+  }
+}
+

@@ -9,3 +9,12 @@ trait DataTableSource extends js.Object {
   def getDataTable(): DataTable
 }
 
+object DataTableSource {
+  @scala.inline
+  def apply(getDataTable: js.Function0[DataTable]): DataTableSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getDataTable")(getDataTable)
+    __obj.asInstanceOf[DataTableSource]
+  }
+}
+

@@ -18,3 +18,13 @@ trait CommonBucketSubscriptionArgs extends js.Object {
   var filterSuffix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommonBucketSubscriptionArgs {
+  @scala.inline
+  def apply(filterPrefix: java.lang.String = null, filterSuffix: java.lang.String = null): CommonBucketSubscriptionArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filterPrefix != null) __obj.updateDynamic("filterPrefix")(filterPrefix)
+    if (filterSuffix != null) __obj.updateDynamic("filterSuffix")(filterSuffix)
+    __obj.asInstanceOf[CommonBucketSubscriptionArgs]
+  }
+}
+

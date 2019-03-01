@@ -104,3 +104,51 @@ trait IgTreeBindings
   var valueXPath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgTreeBindings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgTreeBindings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    bindings: IgTreeBindingsBindings = null,
+    checkedKey: java.lang.String = null,
+    childDataProperty: java.lang.String = null,
+    childDataXPath: java.lang.String = null,
+    expandedKey: java.lang.String = null,
+    imageUrlKey: java.lang.String = null,
+    imageUrlXPath: java.lang.String = null,
+    navigateUrlKey: java.lang.String = null,
+    navigateUrlXPath: java.lang.String = null,
+    nodeContentTemplate: java.lang.String = null,
+    primaryKey: java.lang.String = null,
+    searchFieldXPath: java.lang.String = null,
+    targetKey: java.lang.String = null,
+    textKey: java.lang.String = null,
+    textXPath: java.lang.String = null,
+    valueKey: java.lang.String = null,
+    valueXPath: java.lang.String = null
+  ): IgTreeBindings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (bindings != null) __obj.updateDynamic("bindings")(bindings)
+    if (checkedKey != null) __obj.updateDynamic("checkedKey")(checkedKey)
+    if (childDataProperty != null) __obj.updateDynamic("childDataProperty")(childDataProperty)
+    if (childDataXPath != null) __obj.updateDynamic("childDataXPath")(childDataXPath)
+    if (expandedKey != null) __obj.updateDynamic("expandedKey")(expandedKey)
+    if (imageUrlKey != null) __obj.updateDynamic("imageUrlKey")(imageUrlKey)
+    if (imageUrlXPath != null) __obj.updateDynamic("imageUrlXPath")(imageUrlXPath)
+    if (navigateUrlKey != null) __obj.updateDynamic("navigateUrlKey")(navigateUrlKey)
+    if (navigateUrlXPath != null) __obj.updateDynamic("navigateUrlXPath")(navigateUrlXPath)
+    if (nodeContentTemplate != null) __obj.updateDynamic("nodeContentTemplate")(nodeContentTemplate)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (searchFieldXPath != null) __obj.updateDynamic("searchFieldXPath")(searchFieldXPath)
+    if (targetKey != null) __obj.updateDynamic("targetKey")(targetKey)
+    if (textKey != null) __obj.updateDynamic("textKey")(textKey)
+    if (textXPath != null) __obj.updateDynamic("textXPath")(textXPath)
+    if (valueKey != null) __obj.updateDynamic("valueKey")(valueKey)
+    if (valueXPath != null) __obj.updateDynamic("valueXPath")(valueXPath)
+    __obj.asInstanceOf[IgTreeBindings]
+  }
+}
+

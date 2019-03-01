@@ -31,3 +31,58 @@ trait Anon_AxisLine extends js.Object {
   var viewportStartGroup: scala.Double | java.lang.String
 }
 
+object Anon_AxisLine {
+  @scala.inline
+  def apply(
+    axisLine: Anon_LineColor,
+    baselineScaling: atOracleOraclejetLib.atOracleOraclejetLibStrings.min | atOracleOraclejetLib.atOracleOraclejetLibStrings.zero,
+    dataMax: scala.Double,
+    dataMin: scala.Double,
+    majorTick: Anon_AutoBaselineColor,
+    max: scala.Double | java.lang.String,
+    maxSize: java.lang.String,
+    min: scala.Double | java.lang.String,
+    minStep: scala.Double,
+    minorStep: scala.Double,
+    minorTick: Anon_AutoDashed,
+    referenceObjects: js.Array[Anon_Area],
+    rendered: atOracleOraclejetLib.atOracleOraclejetLibStrings.off | atOracleOraclejetLib.atOracleOraclejetLibStrings.on,
+    scale: atOracleOraclejetLib.atOracleOraclejetLibStrings.log | atOracleOraclejetLib.atOracleOraclejetLibStrings.linear,
+    size: java.lang.String,
+    step: scala.Double,
+    tickLabel: Anon_AutoBillionConverterMillion,
+    title: java.lang.String,
+    titleStyle: js.Object,
+    viewportEndGroup: scala.Double | java.lang.String,
+    viewportMax: scala.Double | java.lang.String,
+    viewportMin: scala.Double | java.lang.String,
+    viewportStartGroup: scala.Double | java.lang.String
+  ): Anon_AxisLine = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axisLine")(axisLine)
+    __obj.updateDynamic("baselineScaling")(baselineScaling.asInstanceOf[js.Any])
+    __obj.updateDynamic("dataMax")(dataMax)
+    __obj.updateDynamic("dataMin")(dataMin)
+    __obj.updateDynamic("majorTick")(majorTick)
+    __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    __obj.updateDynamic("maxSize")(maxSize)
+    __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    __obj.updateDynamic("minStep")(minStep)
+    __obj.updateDynamic("minorStep")(minorStep)
+    __obj.updateDynamic("minorTick")(minorTick)
+    __obj.updateDynamic("referenceObjects")(referenceObjects)
+    __obj.updateDynamic("rendered")(rendered.asInstanceOf[js.Any])
+    __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("step")(step)
+    __obj.updateDynamic("tickLabel")(tickLabel)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("titleStyle")(titleStyle)
+    __obj.updateDynamic("viewportEndGroup")(viewportEndGroup.asInstanceOf[js.Any])
+    __obj.updateDynamic("viewportMax")(viewportMax.asInstanceOf[js.Any])
+    __obj.updateDynamic("viewportMin")(viewportMin.asInstanceOf[js.Any])
+    __obj.updateDynamic("viewportStartGroup")(viewportStartGroup.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AxisLine]
+  }
+}
+

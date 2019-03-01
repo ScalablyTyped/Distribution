@@ -16,3 +16,27 @@ trait CompileInjectableMetadata extends js.Object {
   var useValue: js.UndefOr[js.Any] = js.undefined
 }
 
+object CompileInjectableMetadata {
+  @scala.inline
+  def apply(
+    symbol: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol,
+    `type`: CompileTypeMetadata,
+    deps: js.Array[_] = null,
+    providedIn: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = null,
+    useClass: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = null,
+    useExisting: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = null,
+    useFactory: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol = null,
+    useValue: js.Any = null
+  ): CompileInjectableMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("symbol")(symbol)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (providedIn != null) __obj.updateDynamic("providedIn")(providedIn)
+    if (useClass != null) __obj.updateDynamic("useClass")(useClass)
+    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)
+    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory)
+    if (useValue != null) __obj.updateDynamic("useValue")(useValue)
+    __obj.asInstanceOf[CompileInjectableMetadata]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("aws-sdk/clients/sts", "STS")
 @js.native
 object STSNs extends js.Object {
-  trait AssumeRoleRequest extends js.Object {
+  trait AssumeRoleRequest
+    extends awsDashSdkLib.libCredentialsTemporaryUnderscoreCredentialsMod.TemporaryCredentialsNs.TemporaryCredentialsOptions {
     /**
       * The duration, in seconds, of the role session. The value can range from 900 seconds (15 minutes) up to the maximum session duration setting for the role. This setting can have a value from 1 hour to 12 hours. If you specify a value higher than this setting, the operation fails. For example, if you specify a session duration of 12 hours, but your administrator set the maximum session duration to 6 hours, your operation fails. To learn how to view the maximum value for your role, see View the Maximum Session Duration Setting for a Role in the IAM User Guide. By default, the value is set to 3600 seconds.   The DurationSeconds parameter is separate from the duration of a console session that you might request using the returned credentials. The request to the federation endpoint for a console sign-in token takes a SessionDuration parameter that specifies the maximum length of the console session. For more information, see Creating a URL that Enables Federated Users to Access the AWS Management Console in the IAM User Guide. 
       */
@@ -112,7 +113,8 @@ object STSNs extends js.Object {
     var SubjectType: js.UndefOr[SubjectType] = js.undefined
   }
   
-  trait AssumeRoleWithWebIdentityRequest extends js.Object {
+  trait AssumeRoleWithWebIdentityRequest
+    extends awsDashSdkLib.libCredentialsCognitoUnderscoreIdentityUnderscoreCredentialsMod.CognitoIdentityCredentialsNs.CognitoIdentityCredentialsInputs {
     /**
       * The duration, in seconds, of the role session. The value can range from 900 seconds (15 minutes) up to the maximum session duration setting for the role. This setting can have a value from 1 hour to 12 hours. If you specify a value higher than this setting, the operation fails. For example, if you specify a session duration of 12 hours, but your administrator set the maximum session duration to 6 hours, your operation fails. To learn how to view the maximum value for your role, see View the Maximum Session Duration Setting for a Role in the IAM User Guide. By default, the value is set to 3600 seconds.   The DurationSeconds parameter is separate from the duration of a console session that you might request using the returned credentials. The request to the federation endpoint for a console sign-in token takes a SessionDuration parameter that specifies the maximum length of the console session. For more information, see Creating a URL that Enables Federated Users to Access the AWS Management Console in the IAM User Guide. 
       */
@@ -275,7 +277,8 @@ object STSNs extends js.Object {
     var PackedPolicySize: js.UndefOr[nonNegativeIntegerType] = js.undefined
   }
   
-  trait GetSessionTokenRequest extends js.Object {
+  trait GetSessionTokenRequest
+    extends awsDashSdkLib.libCredentialsTemporaryUnderscoreCredentialsMod.TemporaryCredentialsNs.TemporaryCredentialsOptions {
     /**
       * The duration, in seconds, that the credentials should remain valid. Acceptable durations for IAM user sessions range from 900 seconds (15 minutes) to 129600 seconds (36 hours), with 43200 seconds (12 hours) as the default. Sessions for AWS account owners are restricted to a maximum of 3600 seconds (one hour). If the duration is longer than one hour, the session for AWS account owners defaults to one hour.
       */
@@ -465,6 +468,8 @@ object STSNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[GetSessionTokenResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Audience = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -476,7 +481,7 @@ object STSNs extends js.Object {
   type accessKeyIdType = java.lang.String
   type accessKeySecretType = java.lang.String
   type accountType = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2011-06-15` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type arnType = java.lang.String
   type assumedRoleIdType = java.lang.String
   type clientTokenType = java.lang.String

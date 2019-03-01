@@ -10,3 +10,12 @@ trait Iterable[T] extends js.Object {
   var iterator: js.Function0[stdLib.Iterator[T]]
 }
 
+object Iterable {
+  @scala.inline
+  def apply[T](iterator: js.Function0[stdLib.Iterator[T]]): Iterable[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iterator")(iterator)
+    __obj.asInstanceOf[Iterable[T]]
+  }
+}
+

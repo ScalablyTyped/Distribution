@@ -14,3 +14,18 @@ trait ConversionStatus extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConversionStatus {
+  @scala.inline
+  def apply(
+    conversion: Conversion = null,
+    errors: js.Array[ConversionError] = null,
+    kind: java.lang.String = null
+  ): ConversionStatus = {
+    val __obj = js.Dynamic.literal()
+    if (conversion != null) __obj.updateDynamic("conversion")(conversion)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[ConversionStatus]
+  }
+}
+

@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
   var ref: js.UndefOr[reactLib.reactMod.ReactNs.LegacyRef[T]] = js.undefined
 }
 
+object CommonEnhancedSwitchProps {
+  @scala.inline
+  def apply[T](
+    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[js.Object] = null,
+    Props: reactLib.reactMod.ReactNs.Props[T] = null,
+    label: reactLib.reactMod.ReactNs.ReactNode = null
+  ): CommonEnhancedSwitchProps[T] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, Props)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CommonEnhancedSwitchProps[T]]
+  }
+}
+

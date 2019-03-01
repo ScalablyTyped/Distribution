@@ -187,3 +187,88 @@ trait Anon_AltChannelIdChannelType extends js.Object {
   var videoType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltChannelIdChannelType {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    alt: java.lang.String = null,
+    channelId: java.lang.String = null,
+    channelType: java.lang.String = null,
+    eventType: java.lang.String = null,
+    fields: java.lang.String = null,
+    forContentOwner: js.UndefOr[scala.Boolean] = js.undefined,
+    forDeveloper: js.UndefOr[scala.Boolean] = js.undefined,
+    forMine: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    location: java.lang.String = null,
+    locationRadius: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    onBehalfOfContentOwner: java.lang.String = null,
+    order: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    publishedAfter: java.lang.String = null,
+    publishedBefore: java.lang.String = null,
+    q: java.lang.String = null,
+    quotaUser: java.lang.String = null,
+    regionCode: java.lang.String = null,
+    relatedToVideoId: java.lang.String = null,
+    relevanceLanguage: java.lang.String = null,
+    safeSearch: java.lang.String = null,
+    topicId: java.lang.String = null,
+    `type`: java.lang.String = null,
+    userIp: java.lang.String = null,
+    videoCaption: java.lang.String = null,
+    videoCategoryId: java.lang.String = null,
+    videoDefinition: java.lang.String = null,
+    videoDimension: java.lang.String = null,
+    videoDuration: java.lang.String = null,
+    videoEmbeddable: java.lang.String = null,
+    videoLicense: java.lang.String = null,
+    videoSyndicated: java.lang.String = null,
+    videoType: java.lang.String = null
+  ): Anon_AltChannelIdChannelType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (channelType != null) __obj.updateDynamic("channelType")(channelType)
+    if (eventType != null) __obj.updateDynamic("eventType")(eventType)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(forContentOwner)) __obj.updateDynamic("forContentOwner")(forContentOwner)
+    if (!js.isUndefined(forDeveloper)) __obj.updateDynamic("forDeveloper")(forDeveloper)
+    if (!js.isUndefined(forMine)) __obj.updateDynamic("forMine")(forMine)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (locationRadius != null) __obj.updateDynamic("locationRadius")(locationRadius)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (publishedAfter != null) __obj.updateDynamic("publishedAfter")(publishedAfter)
+    if (publishedBefore != null) __obj.updateDynamic("publishedBefore")(publishedBefore)
+    if (q != null) __obj.updateDynamic("q")(q)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
+    if (relatedToVideoId != null) __obj.updateDynamic("relatedToVideoId")(relatedToVideoId)
+    if (relevanceLanguage != null) __obj.updateDynamic("relevanceLanguage")(relevanceLanguage)
+    if (safeSearch != null) __obj.updateDynamic("safeSearch")(safeSearch)
+    if (topicId != null) __obj.updateDynamic("topicId")(topicId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (videoCaption != null) __obj.updateDynamic("videoCaption")(videoCaption)
+    if (videoCategoryId != null) __obj.updateDynamic("videoCategoryId")(videoCategoryId)
+    if (videoDefinition != null) __obj.updateDynamic("videoDefinition")(videoDefinition)
+    if (videoDimension != null) __obj.updateDynamic("videoDimension")(videoDimension)
+    if (videoDuration != null) __obj.updateDynamic("videoDuration")(videoDuration)
+    if (videoEmbeddable != null) __obj.updateDynamic("videoEmbeddable")(videoEmbeddable)
+    if (videoLicense != null) __obj.updateDynamic("videoLicense")(videoLicense)
+    if (videoSyndicated != null) __obj.updateDynamic("videoSyndicated")(videoSyndicated)
+    if (videoType != null) __obj.updateDynamic("videoType")(videoType)
+    __obj.asInstanceOf[Anon_AltChannelIdChannelType]
+  }
+}
+

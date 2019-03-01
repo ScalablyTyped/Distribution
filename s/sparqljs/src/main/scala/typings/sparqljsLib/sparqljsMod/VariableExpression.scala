@@ -10,3 +10,13 @@ trait VariableExpression extends js.Object {
   var variable: Term
 }
 
+object VariableExpression {
+  @scala.inline
+  def apply(expression: Expression, variable: Term): VariableExpression = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("expression")(expression.asInstanceOf[js.Any])
+    __obj.updateDynamic("variable")(variable)
+    __obj.asInstanceOf[VariableExpression]
+  }
+}
+

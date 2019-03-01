@@ -9,3 +9,12 @@ trait TextResponse extends js.Object {
   var text: java.lang.String
 }
 
+object TextResponse {
+  @scala.inline
+  def apply(text: java.lang.String): TextResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextResponse]
+  }
+}
+

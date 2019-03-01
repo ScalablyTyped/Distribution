@@ -25,3 +25,31 @@ trait DialogButtonProps extends js.Object {
   ] = js.undefined
 }
 
+object DialogButtonProps {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    activeOpacity: scala.Int | scala.Double = null,
+    align: AlignTypes = null,
+    bordered: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    onPress: js.Function1[
+      /* event */ reactDashNativeLib.reactDashNativeMod.GestureResponderEvent, 
+      scala.Unit
+    ] = null,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    textStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null
+  ): DialogButtonProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (!js.isUndefined(bordered)) __obj.updateDynamic("bordered")(bordered)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (textStyle != null) __obj.updateDynamic("textStyle")(textStyle.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogButtonProps]
+  }
+}
+

@@ -19,3 +19,24 @@ trait XDataPilotTable
   def refresh(): scala.Unit
 }
 
+object XDataPilotTable {
+  @scala.inline
+  def apply(
+    OutputRange: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    acquire: js.Function0[scala.Unit],
+    getOutputRange: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    refresh: js.Function0[scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XDataPilotTable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("OutputRange")(OutputRange)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getOutputRange")(getOutputRange)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("refresh")(refresh)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDataPilotTable]
+  }
+}
+

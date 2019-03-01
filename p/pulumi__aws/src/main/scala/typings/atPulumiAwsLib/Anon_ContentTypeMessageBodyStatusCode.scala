@@ -11,3 +11,18 @@ trait Anon_ContentTypeMessageBodyStatusCode extends js.Object {
   var statusCode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object Anon_ContentTypeMessageBodyStatusCode {
+  @scala.inline
+  def apply(
+    contentType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    messageBody: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    statusCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_ContentTypeMessageBodyStatusCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentType")(contentType.asInstanceOf[js.Any])
+    if (messageBody != null) __obj.updateDynamic("messageBody")(messageBody.asInstanceOf[js.Any])
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ContentTypeMessageBodyStatusCode]
+  }
+}
+

@@ -23,3 +23,18 @@ trait SinonMatcher extends js.Object {
   def test(`val`: js.Any): scala.Boolean
 }
 
+object SinonMatcher {
+  @scala.inline
+  def apply(
+    and: js.Function1[SinonMatcher, SinonMatcher],
+    or: js.Function1[SinonMatcher, SinonMatcher],
+    test: js.Function1[js.Any, scala.Boolean]
+  ): SinonMatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("and")(and)
+    __obj.updateDynamic("or")(or)
+    __obj.updateDynamic("test")(test)
+    __obj.asInstanceOf[SinonMatcher]
+  }
+}
+

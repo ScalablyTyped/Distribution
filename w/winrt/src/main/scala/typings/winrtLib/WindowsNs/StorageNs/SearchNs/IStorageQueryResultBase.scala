@@ -15,3 +15,26 @@ trait IStorageQueryResultBase extends js.Object {
   def getItemCountAsync(): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Double]
 }
 
+object IStorageQueryResultBase {
+  @scala.inline
+  def apply(
+    applyNewQueryOptions: js.Function1[QueryOptions, scala.Unit],
+    findStartIndexAsync: js.Function1[js.Any, winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Double]],
+    folder: winrtLib.WindowsNs.StorageNs.StorageFolder,
+    getCurrentQueryOptions: js.Function0[QueryOptions],
+    getItemCountAsync: js.Function0[winrtLib.WindowsNs.FoundationNs.IAsyncOperation[scala.Double]],
+    oncontentschanged: js.Any,
+    onoptionschanged: js.Any
+  ): IStorageQueryResultBase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applyNewQueryOptions")(applyNewQueryOptions)
+    __obj.updateDynamic("findStartIndexAsync")(findStartIndexAsync)
+    __obj.updateDynamic("folder")(folder)
+    __obj.updateDynamic("getCurrentQueryOptions")(getCurrentQueryOptions)
+    __obj.updateDynamic("getItemCountAsync")(getItemCountAsync)
+    __obj.updateDynamic("oncontentschanged")(oncontentschanged)
+    __obj.updateDynamic("onoptionschanged")(onoptionschanged)
+    __obj.asInstanceOf[IStorageQueryResultBase]
+  }
+}
+

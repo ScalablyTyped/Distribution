@@ -24,3 +24,22 @@ trait BuildEnvironmentOptions extends js.Object {
   var window: js.UndefOr[stdLib.Window] = js.undefined
 }
 
+object BuildEnvironmentOptions {
+  @scala.inline
+  def apply(
+    applicationDelegate: js.Object = null,
+    configDirPath: java.lang.String = null,
+    document: stdLib.Document = null,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    window: stdLib.Window = null
+  ): BuildEnvironmentOptions = {
+    val __obj = js.Dynamic.literal()
+    if (applicationDelegate != null) __obj.updateDynamic("applicationDelegate")(applicationDelegate)
+    if (configDirPath != null) __obj.updateDynamic("configDirPath")(configDirPath)
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (window != null) __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[BuildEnvironmentOptions]
+  }
+}
+

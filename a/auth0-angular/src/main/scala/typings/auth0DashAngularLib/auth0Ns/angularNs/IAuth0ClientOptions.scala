@@ -28,3 +28,22 @@ trait IAuth0ClientOptions extends js.Object {
   var sso: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IAuth0ClientOptions {
+  @scala.inline
+  def apply(
+    clientID: java.lang.String,
+    domain: java.lang.String,
+    loginState: java.lang.String = null,
+    loginUrl: java.lang.String = null,
+    sso: js.UndefOr[scala.Boolean] = js.undefined
+  ): IAuth0ClientOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientID")(clientID)
+    __obj.updateDynamic("domain")(domain)
+    if (loginState != null) __obj.updateDynamic("loginState")(loginState)
+    if (loginUrl != null) __obj.updateDynamic("loginUrl")(loginUrl)
+    if (!js.isUndefined(sso)) __obj.updateDynamic("sso")(sso)
+    __obj.asInstanceOf[IAuth0ClientOptions]
+  }
+}
+

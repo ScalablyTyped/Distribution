@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("@uirouter/core/lib/state/stateObject", "StateObject")
 @js.native
 /** @deprecated use State.create() */
-class StateObject () extends js.Object {
+class StateObject ()
+  extends atUirouterCoreLib.libStateInterfaceMod._StateOrName {
   def this(config: atUirouterCoreLib.libStateInterfaceMod.StateDeclaration) = this()
   /** @hidden */
   var __stateObjectCache: atUirouterCoreLib.Anon_NameGlob = js.native

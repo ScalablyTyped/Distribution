@@ -10,3 +10,13 @@ trait CordovaPluginsFileOpener2Result extends js.Object {
   var status: scala.Double
 }
 
+object CordovaPluginsFileOpener2Result {
+  @scala.inline
+  def apply(message: java.lang.String, status: scala.Double): CordovaPluginsFileOpener2Result = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[CordovaPluginsFileOpener2Result]
+  }
+}
+

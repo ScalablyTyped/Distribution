@@ -46,3 +46,26 @@ trait XAuthorizable
   def revokePrivileges(objName: java.lang.String, objType: scala.Double, objPrivileges: scala.Double): scala.Unit
 }
 
+object XAuthorizable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getGrantablePrivileges: js.Function2[java.lang.String, scala.Double, scala.Double],
+    getPrivileges: js.Function2[java.lang.String, scala.Double, scala.Double],
+    grantPrivileges: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    revokePrivileges: js.Function3[java.lang.String, scala.Double, scala.Double, scala.Unit]
+  ): XAuthorizable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getGrantablePrivileges")(getGrantablePrivileges)
+    __obj.updateDynamic("getPrivileges")(getPrivileges)
+    __obj.updateDynamic("grantPrivileges")(grantPrivileges)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("revokePrivileges")(revokePrivileges)
+    __obj.asInstanceOf[XAuthorizable]
+  }
+}
+

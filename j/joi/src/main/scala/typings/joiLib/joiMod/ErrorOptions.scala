@@ -15,3 +15,12 @@ trait ErrorOptions extends js.Object {
   var self: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ErrorOptions {
+  @scala.inline
+  def apply(self: js.UndefOr[scala.Boolean] = js.undefined): ErrorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(self)) __obj.updateDynamic("self")(self)
+    __obj.asInstanceOf[ErrorOptions]
+  }
+}
+

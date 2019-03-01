@@ -12,3 +12,12 @@ trait EditSettingsBatchEditSettings extends js.Object {
   var editMode: js.UndefOr[BatchEditMode | java.lang.String] = js.undefined
 }
 
+object EditSettingsBatchEditSettings {
+  @scala.inline
+  def apply(editMode: BatchEditMode | java.lang.String = null): EditSettingsBatchEditSettings = {
+    val __obj = js.Dynamic.literal()
+    if (editMode != null) __obj.updateDynamic("editMode")(editMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EditSettingsBatchEditSettings]
+  }
+}
+

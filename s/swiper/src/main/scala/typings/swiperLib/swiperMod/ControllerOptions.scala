@@ -27,3 +27,18 @@ trait ControllerOptions extends js.Object {
   var inverse: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ControllerOptions {
+  @scala.inline
+  def apply(
+    by: swiperLib.swiperLibStrings.slide | swiperLib.swiperLibStrings.container = null,
+    control: Swiper = null,
+    inverse: js.UndefOr[scala.Boolean] = js.undefined
+  ): ControllerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (by != null) __obj.updateDynamic("by")(by.asInstanceOf[js.Any])
+    if (control != null) __obj.updateDynamic("control")(control)
+    if (!js.isUndefined(inverse)) __obj.updateDynamic("inverse")(inverse)
+    __obj.asInstanceOf[ControllerOptions]
+  }
+}
+

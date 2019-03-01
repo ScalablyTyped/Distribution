@@ -12,3 +12,13 @@ trait PlayerScoreSubmissionList extends js.Object {
   var scores: js.UndefOr[js.Array[ScoreSubmission]] = js.undefined
 }
 
+object PlayerScoreSubmissionList {
+  @scala.inline
+  def apply(kind: java.lang.String = null, scores: js.Array[ScoreSubmission] = null): PlayerScoreSubmissionList = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (scores != null) __obj.updateDynamic("scores")(scores)
+    __obj.asInstanceOf[PlayerScoreSubmissionList]
+  }
+}
+

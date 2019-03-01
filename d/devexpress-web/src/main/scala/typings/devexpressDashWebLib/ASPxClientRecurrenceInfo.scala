@@ -110,3 +110,56 @@ trait ASPxClientRecurrenceInfo extends js.Object {
   def SetWeekOfMonth(weekOfMonth: ASPxClientWeekOfMonth): scala.Unit
 }
 
+object ASPxClientRecurrenceInfo {
+  @scala.inline
+  def apply(
+    GetDayNumber: js.Function0[scala.Double],
+    GetDuration: js.Function0[scala.Double],
+    GetEnd: js.Function0[stdLib.Date],
+    GetMonth: js.Function0[scala.Double],
+    GetOccurrenceCount: js.Function0[scala.Double],
+    GetPeriodicity: js.Function0[scala.Double],
+    GetRange: js.Function0[ASPxClientRecurrenceRange],
+    GetRecurrenceType: js.Function0[ASPxClientRecurrenceType],
+    GetStart: js.Function0[stdLib.Date],
+    GetWeekDays: js.Function0[ASPxClientWeekDays],
+    GetWeekOfMonth: js.Function0[ASPxClientWeekOfMonth],
+    SetDayNumber: js.Function1[scala.Double, scala.Unit],
+    SetDuration: js.Function1[js.Any, scala.Unit],
+    SetEnd: js.Function1[stdLib.Date, scala.Unit],
+    SetMonth: js.Function1[scala.Double, scala.Unit],
+    SetOccurrenceCount: js.Function1[scala.Double, scala.Unit],
+    SetPeriodicity: js.Function1[scala.Double, scala.Unit],
+    SetRange: js.Function1[ASPxClientRecurrenceRange, scala.Unit],
+    SetRecurrenceType: js.Function1[ASPxClientRecurrenceType, scala.Unit],
+    SetStart: js.Function1[stdLib.Date, scala.Unit],
+    SetWeekDays: js.Function1[ASPxClientWeekDays, scala.Unit],
+    SetWeekOfMonth: js.Function1[ASPxClientWeekOfMonth, scala.Unit]
+  ): ASPxClientRecurrenceInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetDayNumber")(GetDayNumber)
+    __obj.updateDynamic("GetDuration")(GetDuration)
+    __obj.updateDynamic("GetEnd")(GetEnd)
+    __obj.updateDynamic("GetMonth")(GetMonth)
+    __obj.updateDynamic("GetOccurrenceCount")(GetOccurrenceCount)
+    __obj.updateDynamic("GetPeriodicity")(GetPeriodicity)
+    __obj.updateDynamic("GetRange")(GetRange)
+    __obj.updateDynamic("GetRecurrenceType")(GetRecurrenceType)
+    __obj.updateDynamic("GetStart")(GetStart)
+    __obj.updateDynamic("GetWeekDays")(GetWeekDays)
+    __obj.updateDynamic("GetWeekOfMonth")(GetWeekOfMonth)
+    __obj.updateDynamic("SetDayNumber")(SetDayNumber)
+    __obj.updateDynamic("SetDuration")(SetDuration)
+    __obj.updateDynamic("SetEnd")(SetEnd)
+    __obj.updateDynamic("SetMonth")(SetMonth)
+    __obj.updateDynamic("SetOccurrenceCount")(SetOccurrenceCount)
+    __obj.updateDynamic("SetPeriodicity")(SetPeriodicity)
+    __obj.updateDynamic("SetRange")(SetRange)
+    __obj.updateDynamic("SetRecurrenceType")(SetRecurrenceType)
+    __obj.updateDynamic("SetStart")(SetStart)
+    __obj.updateDynamic("SetWeekDays")(SetWeekDays)
+    __obj.updateDynamic("SetWeekOfMonth")(SetWeekOfMonth)
+    __obj.asInstanceOf[ASPxClientRecurrenceInfo]
+  }
+}
+

@@ -45,3 +45,26 @@ trait NetworkInterface extends js.Object {
   var subnetwork: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NetworkInterface {
+  @scala.inline
+  def apply(
+    accessConfigs: js.Array[AccessConfig] = null,
+    aliasIpRanges: js.Array[AliasIpRange] = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    network: java.lang.String = null,
+    networkIP: java.lang.String = null,
+    subnetwork: java.lang.String = null
+  ): NetworkInterface = {
+    val __obj = js.Dynamic.literal()
+    if (accessConfigs != null) __obj.updateDynamic("accessConfigs")(accessConfigs)
+    if (aliasIpRanges != null) __obj.updateDynamic("aliasIpRanges")(aliasIpRanges)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (networkIP != null) __obj.updateDynamic("networkIP")(networkIP)
+    if (subnetwork != null) __obj.updateDynamic("subnetwork")(subnetwork)
+    __obj.asInstanceOf[NetworkInterface]
+  }
+}
+

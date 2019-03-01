@@ -10,3 +10,12 @@ trait IFinalizableToString extends js.Object {
   def ToString(): java.lang.String
 }
 
+object IFinalizableToString {
+  @scala.inline
+  def apply(ToString: js.Function0[java.lang.String]): IFinalizableToString = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ToString")(ToString)
+    __obj.asInstanceOf[IFinalizableToString]
+  }
+}
+

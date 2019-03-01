@@ -10,3 +10,13 @@ trait MapLayerDefaultsBubbleStyle extends js.Object {
   var stroke: js.UndefOr[MapLayerDefaultsBubbleStyleStroke] = js.undefined
 }
 
+object MapLayerDefaultsBubbleStyle {
+  @scala.inline
+  def apply(fill: MapLayerDefaultsBubbleStyleFill = null, stroke: MapLayerDefaultsBubbleStyleStroke = null): MapLayerDefaultsBubbleStyle = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    __obj.asInstanceOf[MapLayerDefaultsBubbleStyle]
+  }
+}
+

@@ -22,3 +22,40 @@ trait MediaTrackSupportedConstraints extends js.Object {
   var zoom: scala.Boolean
 }
 
+object MediaTrackSupportedConstraints {
+  @scala.inline
+  def apply(
+    brightness: scala.Boolean,
+    colorTemperature: scala.Boolean,
+    contrast: scala.Boolean,
+    exposureCompensation: scala.Boolean,
+    exposureMode: scala.Boolean,
+    focusDistance: scala.Boolean,
+    focusMode: scala.Boolean,
+    iso: scala.Boolean,
+    pointsOfInterest: scala.Boolean,
+    saturation: scala.Boolean,
+    sharpness: scala.Boolean,
+    torch: scala.Boolean,
+    whiteBalanceMode: scala.Boolean,
+    zoom: scala.Boolean
+  ): MediaTrackSupportedConstraints = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("brightness")(brightness)
+    __obj.updateDynamic("colorTemperature")(colorTemperature)
+    __obj.updateDynamic("contrast")(contrast)
+    __obj.updateDynamic("exposureCompensation")(exposureCompensation)
+    __obj.updateDynamic("exposureMode")(exposureMode)
+    __obj.updateDynamic("focusDistance")(focusDistance)
+    __obj.updateDynamic("focusMode")(focusMode)
+    __obj.updateDynamic("iso")(iso)
+    __obj.updateDynamic("pointsOfInterest")(pointsOfInterest)
+    __obj.updateDynamic("saturation")(saturation)
+    __obj.updateDynamic("sharpness")(sharpness)
+    __obj.updateDynamic("torch")(torch)
+    __obj.updateDynamic("whiteBalanceMode")(whiteBalanceMode)
+    __obj.updateDynamic("zoom")(zoom)
+    __obj.asInstanceOf[MediaTrackSupportedConstraints]
+  }
+}
+

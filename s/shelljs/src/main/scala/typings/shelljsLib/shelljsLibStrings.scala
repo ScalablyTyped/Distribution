@@ -10,40 +10,53 @@ object shelljsLibStrings {
   sealed trait `+N` extends js.Object
   
   @js.native
-  sealed trait `-L` extends js.Object
+  sealed trait `-L`
+    extends shelljsLib.shelljsMod.TestOptions
   
   @js.native
   sealed trait `-N` extends js.Object
   
   @js.native
-  sealed trait `-S` extends js.Object
+  sealed trait `-S`
+    extends shelljsLib.shelljsMod.TestOptions
   
   @js.native
-  sealed trait `-a` extends js.Object
+  sealed trait `-a`
+    extends shelljsLib.shelljsMod.TouchOptionsLiteral
   
   @js.native
-  sealed trait `-b` extends js.Object
+  sealed trait `-b`
+    extends shelljsLib.shelljsMod.TestOptions
   
   @js.native
-  sealed trait `-c` extends js.Object
+  sealed trait `-c`
+    extends shelljsLib.shelljsMod.TestOptions
+       with shelljsLib.shelljsMod.TouchOptionsLiteral
   
   @js.native
-  sealed trait `-d` extends js.Object
+  sealed trait `-d`
+    extends shelljsLib.shelljsMod.TestOptions
+       with shelljsLib.shelljsMod.TouchOptionsLiteral
   
   @js.native
-  sealed trait `-e` extends js.Object
+  sealed trait `-e`
+    extends shelljsLib.shelljsMod.TestOptions
   
   @js.native
-  sealed trait `-f` extends js.Object
+  sealed trait `-f`
+    extends shelljsLib.shelljsMod.TestOptions
   
   @js.native
-  sealed trait `-m` extends js.Object
+  sealed trait `-m`
+    extends shelljsLib.shelljsMod.TouchOptionsLiteral
   
   @js.native
-  sealed trait `-p` extends js.Object
+  sealed trait `-p`
+    extends shelljsLib.shelljsMod.TestOptions
   
   @js.native
-  sealed trait `-r` extends js.Object
+  sealed trait `-r`
+    extends shelljsLib.shelljsMod.TouchOptionsLiteral
   
   @scala.inline
   def `+N`: `+N` = "+N".asInstanceOf[`+N`]

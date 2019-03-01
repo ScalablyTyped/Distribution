@@ -11,3 +11,14 @@ trait Entry[K, V] extends js.Object {
   var v: V
 }
 
+object Entry {
+  @scala.inline
+  def apply[K, V](e: scala.Double, k: K, v: V): Entry[K, V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("e")(e)
+    __obj.updateDynamic("k")(k.asInstanceOf[js.Any])
+    __obj.updateDynamic("v")(v.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Entry[K, V]]
+  }
+}
+

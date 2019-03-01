@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "nuka-carousel"
-version := "4.4.8-d38c6b"
+version := "4.4.8-fb5752"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
-  "org.scalablytyped" %%% "d3-ease" % "1.0-dt-20190212Z-54d6e4",
-  "org.scalablytyped" %%% "d3-timer" % "1.0-dt-20190212Z-09fe77",
-  "org.scalablytyped" %%% "exenv" % "1.2-dt-20180321Z-860c93",
-  "org.scalablytyped" %%% "kapellmeister" % "2.0.0-3db3ee",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-3f7dd7",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-3dd766",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-2359a8",
-  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-21a4d4",
-  "org.scalablytyped" %%% "react-move" % "5.2.0-938209",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "csstype" % "2.6.2-481742",
+  "org.scalablytyped" %%% "d3-ease" % "1.0-dt-20190212Z-6ee4e0",
+  "org.scalablytyped" %%% "d3-timer" % "1.0-dt-20190212Z-cdbbbd",
+  "org.scalablytyped" %%% "exenv" % "1.2-dt-20180321Z-330b58",
+  "org.scalablytyped" %%% "kapellmeister" % "2.0.0-8a96d9",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-66c044",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-9e9d73",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-dfd109",
+  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-68cebb",
+  "org.scalablytyped" %%% "react-move" % "5.2.0-67a9f8",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

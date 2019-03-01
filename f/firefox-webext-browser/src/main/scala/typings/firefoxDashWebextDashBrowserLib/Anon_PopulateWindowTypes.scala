@@ -23,3 +23,16 @@ trait Anon_PopulateWindowTypes extends js.Object {
   var windowTypes: js.UndefOr[js.Array[firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowType]] = js.undefined
 }
 
+object Anon_PopulateWindowTypes {
+  @scala.inline
+  def apply(
+    populate: js.UndefOr[scala.Boolean] = js.undefined,
+    windowTypes: js.Array[firefoxDashWebextDashBrowserLib.browserNs.windowsNs.WindowType] = null
+  ): Anon_PopulateWindowTypes = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(populate)) __obj.updateDynamic("populate")(populate)
+    if (windowTypes != null) __obj.updateDynamic("windowTypes")(windowTypes)
+    __obj.asInstanceOf[Anon_PopulateWindowTypes]
+  }
+}
+

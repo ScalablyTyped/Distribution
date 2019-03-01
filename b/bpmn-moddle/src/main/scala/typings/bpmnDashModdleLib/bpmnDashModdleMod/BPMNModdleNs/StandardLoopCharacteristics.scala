@@ -11,3 +11,30 @@ trait StandardLoopCharacteristics extends BaseElement {
   var testBefore: scala.Boolean
 }
 
+object StandardLoopCharacteristics {
+  @scala.inline
+  def apply(
+    $type: ElementType,
+    id: java.lang.String,
+    loopCondition: Expression,
+    loopMaximum: Expression,
+    testBefore: scala.Boolean,
+    $attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    documentation: js.Array[Documentation] = null,
+    extensionDefinitions: js.Array[ExtensionDefinition] = null,
+    extensionElements: ExtensionElements = null
+  ): StandardLoopCharacteristics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$type")($type)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("loopCondition")(loopCondition)
+    __obj.updateDynamic("loopMaximum")(loopMaximum)
+    __obj.updateDynamic("testBefore")(testBefore)
+    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)
+    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements)
+    __obj.asInstanceOf[StandardLoopCharacteristics]
+  }
+}
+

@@ -16,3 +16,16 @@ trait RolePolicyAttachmentArgs extends js.Object {
   val role: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamRoleMod.Role]
 }
 
+object RolePolicyAttachmentArgs {
+  @scala.inline
+  def apply(
+    policyArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN],
+    role: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamRoleMod.Role]
+  ): RolePolicyAttachmentArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("policyArn")(policyArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RolePolicyAttachmentArgs]
+  }
+}
+

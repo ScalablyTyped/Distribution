@@ -17,3 +17,18 @@ trait ColorInfo extends js.Object {
   var score: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ColorInfo {
+  @scala.inline
+  def apply(
+    color: Color = null,
+    pixelFraction: scala.Int | scala.Double = null,
+    score: scala.Int | scala.Double = null
+  ): ColorInfo = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (pixelFraction != null) __obj.updateDynamic("pixelFraction")(pixelFraction.asInstanceOf[js.Any])
+    if (score != null) __obj.updateDynamic("score")(score.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColorInfo]
+  }
+}
+

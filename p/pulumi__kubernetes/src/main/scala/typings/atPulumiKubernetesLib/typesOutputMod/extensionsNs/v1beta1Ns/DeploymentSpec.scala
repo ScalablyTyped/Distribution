@@ -59,3 +59,30 @@ trait DeploymentSpec extends js.Object {
   val template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec
 }
 
+object DeploymentSpec {
+  @scala.inline
+  def apply(
+    minReadySeconds: scala.Double,
+    paused: scala.Boolean,
+    progressDeadlineSeconds: scala.Double,
+    replicas: scala.Double,
+    revisionHistoryLimit: scala.Double,
+    rollbackTo: RollbackConfig,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    strategy: DeploymentStrategy,
+    template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec
+  ): DeploymentSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("minReadySeconds")(minReadySeconds)
+    __obj.updateDynamic("paused")(paused)
+    __obj.updateDynamic("progressDeadlineSeconds")(progressDeadlineSeconds)
+    __obj.updateDynamic("replicas")(replicas)
+    __obj.updateDynamic("revisionHistoryLimit")(revisionHistoryLimit)
+    __obj.updateDynamic("rollbackTo")(rollbackTo)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("strategy")(strategy)
+    __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[DeploymentSpec]
+  }
+}
+

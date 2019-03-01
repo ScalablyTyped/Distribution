@@ -14,3 +14,18 @@ trait Anon_Tcp extends js.Object {
   var udp: js.UndefOr[chromeDashAppsLib.chromeNs.runtimeNs.SocketUdpPermission] = js.undefined
 }
 
+object Anon_Tcp {
+  @scala.inline
+  def apply(
+    tcp: chromeDashAppsLib.chromeNs.runtimeNs.SocketTcpPermission = null,
+    tcpServer: chromeDashAppsLib.chromeNs.runtimeNs.SocketTcpServerPermission = null,
+    udp: chromeDashAppsLib.chromeNs.runtimeNs.SocketUdpPermission = null
+  ): Anon_Tcp = {
+    val __obj = js.Dynamic.literal()
+    if (tcp != null) __obj.updateDynamic("tcp")(tcp)
+    if (tcpServer != null) __obj.updateDynamic("tcpServer")(tcpServer)
+    if (udp != null) __obj.updateDynamic("udp")(udp)
+    __obj.asInstanceOf[Anon_Tcp]
+  }
+}
+

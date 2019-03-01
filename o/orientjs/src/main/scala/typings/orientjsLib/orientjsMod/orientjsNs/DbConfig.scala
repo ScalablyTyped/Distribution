@@ -13,3 +13,22 @@ trait DbConfig extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DbConfig {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    password: java.lang.String = null,
+    storage: java.lang.String = null,
+    `type`: java.lang.String = null,
+    username: java.lang.String = null
+  ): DbConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (storage != null) __obj.updateDynamic("storage")(storage)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[DbConfig]
+  }
+}
+

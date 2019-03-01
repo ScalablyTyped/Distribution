@@ -39,3 +39,44 @@ trait ServerOptions extends ClientOptions {
   var udn: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    adInterval: scala.Int | scala.Double = null,
+    allowWildcards: js.UndefOr[scala.Boolean] = js.undefined,
+    customLogger: js.Function2[/* format */ java.lang.String, /* repeated */ js.Any, scala.Unit] = null,
+    description: java.lang.String = null,
+    explicitSocketBind: js.UndefOr[scala.Boolean] = js.undefined,
+    headers: SsdpHeaders = null,
+    interfaces: js.Array[java.lang.String] = null,
+    location: java.lang.String | ServiceDescriptionLocation = null,
+    reuseAddr: js.UndefOr[scala.Boolean] = js.undefined,
+    ssdpIp: java.lang.String = null,
+    ssdpPort: scala.Int | scala.Double = null,
+    ssdpSig: java.lang.String = null,
+    ssdpTtl: scala.Int | scala.Double = null,
+    suppressRootDeviceAdvertisements: js.UndefOr[scala.Boolean] = js.undefined,
+    ttl: scala.Int | scala.Double = null,
+    udn: java.lang.String = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (adInterval != null) __obj.updateDynamic("adInterval")(adInterval.asInstanceOf[js.Any])
+    if (!js.isUndefined(allowWildcards)) __obj.updateDynamic("allowWildcards")(allowWildcards)
+    if (customLogger != null) __obj.updateDynamic("customLogger")(customLogger)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(explicitSocketBind)) __obj.updateDynamic("explicitSocketBind")(explicitSocketBind)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (!js.isUndefined(reuseAddr)) __obj.updateDynamic("reuseAddr")(reuseAddr)
+    if (ssdpIp != null) __obj.updateDynamic("ssdpIp")(ssdpIp)
+    if (ssdpPort != null) __obj.updateDynamic("ssdpPort")(ssdpPort.asInstanceOf[js.Any])
+    if (ssdpSig != null) __obj.updateDynamic("ssdpSig")(ssdpSig)
+    if (ssdpTtl != null) __obj.updateDynamic("ssdpTtl")(ssdpTtl.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressRootDeviceAdvertisements)) __obj.updateDynamic("suppressRootDeviceAdvertisements")(suppressRootDeviceAdvertisements)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (udn != null) __obj.updateDynamic("udn")(udn)
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

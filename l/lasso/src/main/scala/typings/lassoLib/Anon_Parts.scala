@@ -10,3 +10,13 @@ trait Anon_Parts extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_Parts {
+  @scala.inline
+  def apply(parts: js.Array[java.lang.String], value: java.lang.String): Anon_Parts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parts")(parts)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Parts]
+  }
+}
+

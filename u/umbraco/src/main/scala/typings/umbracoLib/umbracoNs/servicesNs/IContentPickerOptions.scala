@@ -15,3 +15,13 @@ trait IContentPickerOptions extends js.Object {
   var multipicker: scala.Boolean
 }
 
+object IContentPickerOptions {
+  @scala.inline
+  def apply(callback: angularLib.angularMod.Global.Function, multipicker: scala.Boolean): IContentPickerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("multipicker")(multipicker)
+    __obj.asInstanceOf[IContentPickerOptions]
+  }
+}
+

@@ -16,3 +16,21 @@ trait Anon_Icon extends js.Object {
   var `type`: wegameDashApiLib.wxNs.typesNs.ButtonType
 }
 
+object Anon_Icon {
+  @scala.inline
+  def apply(
+    style: wegameDashApiLib.wxNs.typesNs.ButtonStyle,
+    `type`: wegameDashApiLib.wxNs.typesNs.ButtonType,
+    icon: wegameDashApiLib.wxNs.typesNs.GameClubButtonIcon = null,
+    image: java.lang.String = null,
+    text: java.lang.String = null
+  ): Anon_Icon = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("style")(style)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Anon_Icon]
+  }
+}
+

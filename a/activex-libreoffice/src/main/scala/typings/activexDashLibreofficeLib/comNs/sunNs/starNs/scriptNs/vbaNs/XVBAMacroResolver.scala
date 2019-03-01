@@ -23,3 +23,16 @@ trait XVBAMacroResolver extends js.Object {
   def resolveVBAMacroToScriptURL(aVBAMacroName: java.lang.String): java.lang.String
 }
 
+object XVBAMacroResolver {
+  @scala.inline
+  def apply(
+    resolveScriptURLtoVBAMacro: js.Function1[java.lang.String, java.lang.String],
+    resolveVBAMacroToScriptURL: js.Function1[java.lang.String, java.lang.String]
+  ): XVBAMacroResolver = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resolveScriptURLtoVBAMacro")(resolveScriptURLtoVBAMacro)
+    __obj.updateDynamic("resolveVBAMacroToScriptURL")(resolveVBAMacroToScriptURL)
+    __obj.asInstanceOf[XVBAMacroResolver]
+  }
+}
+

@@ -32,3 +32,24 @@ trait EventSourceMappingArgs extends js.Object {
   val startingPositionTimestamp: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object EventSourceMappingArgs {
+  @scala.inline
+  def apply(
+    eventSourceArn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    functionName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    batchSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    enabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    startingPosition: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    startingPositionTimestamp: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): EventSourceMappingArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventSourceArn")(eventSourceArn.asInstanceOf[js.Any])
+    __obj.updateDynamic("functionName")(functionName.asInstanceOf[js.Any])
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (enabled != null) __obj.updateDynamic("enabled")(enabled.asInstanceOf[js.Any])
+    if (startingPosition != null) __obj.updateDynamic("startingPosition")(startingPosition.asInstanceOf[js.Any])
+    if (startingPositionTimestamp != null) __obj.updateDynamic("startingPositionTimestamp")(startingPositionTimestamp.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventSourceMappingArgs]
+  }
+}
+

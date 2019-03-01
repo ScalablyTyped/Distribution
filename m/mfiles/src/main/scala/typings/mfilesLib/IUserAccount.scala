@@ -19,3 +19,34 @@ trait IUserAccount extends js.Object {
   def RemoveVaultRoles(VaultRolesToRemove: mfilesLib.MFilesNs.MFUserAccountVaultRole): scala.Unit
 }
 
+object IUserAccount {
+  @scala.inline
+  def apply(
+    AccessControlList: IAccessControlList,
+    AddVaultRoles: js.Function1[mfilesLib.MFilesNs.MFUserAccountVaultRole, scala.Unit],
+    Clone: js.Function0[IUserAccount],
+    CloneFrom: js.Function1[IUserAccount, scala.Unit],
+    Enabled: scala.Boolean,
+    ID: scala.Double,
+    InternalUser: scala.Boolean,
+    LoginName: java.lang.String,
+    RemoveVaultRoles: js.Function1[mfilesLib.MFilesNs.MFUserAccountVaultRole, scala.Unit],
+    VaultLanguage: scala.Double,
+    VaultRoles: mfilesLib.MFilesNs.MFUserAccountVaultRole
+  ): IUserAccount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessControlList")(AccessControlList)
+    __obj.updateDynamic("AddVaultRoles")(AddVaultRoles)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("CloneFrom")(CloneFrom)
+    __obj.updateDynamic("Enabled")(Enabled)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("InternalUser")(InternalUser)
+    __obj.updateDynamic("LoginName")(LoginName)
+    __obj.updateDynamic("RemoveVaultRoles")(RemoveVaultRoles)
+    __obj.updateDynamic("VaultLanguage")(VaultLanguage)
+    __obj.updateDynamic("VaultRoles")(VaultRoles)
+    __obj.asInstanceOf[IUserAccount]
+  }
+}
+

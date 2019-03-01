@@ -34,3 +34,20 @@ trait NotifyOptions extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NotifyOptions {
+  @scala.inline
+  def apply(
+    message: java.lang.String = null,
+    pos: java.lang.String = null,
+    status: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null
+  ): NotifyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (pos != null) __obj.updateDynamic("pos")(pos)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NotifyOptions]
+  }
+}
+

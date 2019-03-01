@@ -21,3 +21,20 @@ trait OnShowToolTipData extends js.Object {
   var toolTip: imagemapsterLib.imagemapsterMod.Global.JQuery
 }
 
+object OnShowToolTipData {
+  @scala.inline
+  def apply(
+    areaOptions: AreaRenderingOptions,
+    key: java.lang.String,
+    selected: scala.Boolean,
+    toolTip: imagemapsterLib.imagemapsterMod.Global.JQuery
+  ): OnShowToolTipData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("areaOptions")(areaOptions)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("selected")(selected)
+    __obj.updateDynamic("toolTip")(toolTip)
+    __obj.asInstanceOf[OnShowToolTipData]
+  }
+}
+

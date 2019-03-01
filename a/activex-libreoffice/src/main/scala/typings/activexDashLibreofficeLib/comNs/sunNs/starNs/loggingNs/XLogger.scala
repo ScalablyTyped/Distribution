@@ -71,3 +71,26 @@ trait XLogger extends js.Object {
   def removeLogHandler(LogHandler: XLogHandler): scala.Unit
 }
 
+object XLogger {
+  @scala.inline
+  def apply(
+    Level: scala.Double,
+    Name: java.lang.String,
+    addLogHandler: js.Function1[XLogHandler, scala.Unit],
+    isLoggable: js.Function1[scala.Double, scala.Boolean],
+    log: js.Function2[scala.Double, java.lang.String, scala.Unit],
+    logp: js.Function4[scala.Double, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    removeLogHandler: js.Function1[XLogHandler, scala.Unit]
+  ): XLogger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Level")(Level)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("addLogHandler")(addLogHandler)
+    __obj.updateDynamic("isLoggable")(isLoggable)
+    __obj.updateDynamic("log")(log)
+    __obj.updateDynamic("logp")(logp)
+    __obj.updateDynamic("removeLogHandler")(removeLogHandler)
+    __obj.asInstanceOf[XLogger]
+  }
+}
+

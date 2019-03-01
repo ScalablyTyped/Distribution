@@ -10,3 +10,13 @@ trait PlaybackContext extends js.Object {
   var uri: java.lang.String | scala.Null
 }
 
+object PlaybackContext {
+  @scala.inline
+  def apply(metadata: js.Any, uri: java.lang.String = null): PlaybackContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metadata")(metadata)
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[PlaybackContext]
+  }
+}
+

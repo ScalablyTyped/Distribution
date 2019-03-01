@@ -31,3 +31,24 @@ trait Layer extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Layer {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    lock: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    objects: js.Array[_] = null,
+    print: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): Layer = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(lock)) __obj.updateDynamic("lock")(lock)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (objects != null) __obj.updateDynamic("objects")(objects)
+    if (!js.isUndefined(print)) __obj.updateDynamic("print")(print)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[Layer]
+  }
+}
+

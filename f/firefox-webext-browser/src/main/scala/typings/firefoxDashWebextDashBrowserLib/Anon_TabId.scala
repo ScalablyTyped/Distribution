@@ -17,3 +17,18 @@ trait Anon_TabId extends js.Object {
   var windowId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_TabId {
+  @scala.inline
+  def apply(
+    tabId: scala.Int | scala.Double = null,
+    `type`: firefoxDashWebextDashBrowserLib.browserNs.extensionNs.ViewType = null,
+    windowId: scala.Int | scala.Double = null
+  ): Anon_TabId = {
+    val __obj = js.Dynamic.literal()
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (windowId != null) __obj.updateDynamic("windowId")(windowId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_TabId]
+  }
+}
+

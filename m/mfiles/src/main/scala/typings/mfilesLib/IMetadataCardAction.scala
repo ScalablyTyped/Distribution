@@ -14,3 +14,24 @@ trait IMetadataCardAction extends js.Object {
   def IsVisible(): scala.Boolean
 }
 
+object IMetadataCardAction {
+  @scala.inline
+  def apply(
+    Activate: js.Function0[scala.Unit],
+    Events: IEvents,
+    GetExplanation: js.Function0[java.lang.String],
+    GetName: js.Function0[java.lang.String],
+    IsEnabled: js.Function0[scala.Boolean],
+    IsVisible: js.Function0[scala.Boolean]
+  ): IMetadataCardAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Activate")(Activate)
+    __obj.updateDynamic("Events")(Events)
+    __obj.updateDynamic("GetExplanation")(GetExplanation)
+    __obj.updateDynamic("GetName")(GetName)
+    __obj.updateDynamic("IsEnabled")(IsEnabled)
+    __obj.updateDynamic("IsVisible")(IsVisible)
+    __obj.asInstanceOf[IMetadataCardAction]
+  }
+}
+

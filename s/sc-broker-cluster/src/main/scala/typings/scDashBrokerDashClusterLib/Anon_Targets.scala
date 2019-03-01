@@ -10,3 +10,15 @@ trait Anon_Targets extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Targets {
+  @scala.inline
+  def apply(
+    targets: js.Array[scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.Client],
+    `type`: java.lang.String
+  ): Anon_Targets = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("targets")(targets)
+    __obj.asInstanceOf[Anon_Targets]
+  }
+}
+

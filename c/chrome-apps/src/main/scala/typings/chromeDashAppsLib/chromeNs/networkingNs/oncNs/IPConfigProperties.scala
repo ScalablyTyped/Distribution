@@ -20,3 +20,24 @@ trait IPConfigProperties[M /* <: ManagedObject */, B, S, SL, L] extends js.Objec
   var WebProxyAutoDiscoveryUrl: js.UndefOr[S] = js.undefined
 }
 
+object IPConfigProperties {
+  @scala.inline
+  def apply[M /* <: ManagedObject */, B, S, SL, L](
+    Gateway: S = null,
+    IPAddress: S = null,
+    NameServers: SL = null,
+    RoutingPrefix: L = null,
+    Type: IPConfigurationType | ManagedType[IPConfigurationType] = null,
+    WebProxyAutoDiscoveryUrl: S = null
+  ): IPConfigProperties[M, B, S, SL, L] = {
+    val __obj = js.Dynamic.literal()
+    if (Gateway != null) __obj.updateDynamic("Gateway")(Gateway.asInstanceOf[js.Any])
+    if (IPAddress != null) __obj.updateDynamic("IPAddress")(IPAddress.asInstanceOf[js.Any])
+    if (NameServers != null) __obj.updateDynamic("NameServers")(NameServers.asInstanceOf[js.Any])
+    if (RoutingPrefix != null) __obj.updateDynamic("RoutingPrefix")(RoutingPrefix.asInstanceOf[js.Any])
+    if (Type != null) __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    if (WebProxyAutoDiscoveryUrl != null) __obj.updateDynamic("WebProxyAutoDiscoveryUrl")(WebProxyAutoDiscoveryUrl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPConfigProperties[M, B, S, SL, L]]
+  }
+}
+

@@ -12,3 +12,20 @@ trait CollectionCellRendererParams extends js.Object {
   var style: reactLib.reactMod.ReactNs.CSSProperties
 }
 
+object CollectionCellRendererParams {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    isScrolling: scala.Boolean,
+    key: scala.Double,
+    style: reactLib.reactMod.ReactNs.CSSProperties
+  ): CollectionCellRendererParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("isScrolling")(isScrolling)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[CollectionCellRendererParams]
+  }
+}
+

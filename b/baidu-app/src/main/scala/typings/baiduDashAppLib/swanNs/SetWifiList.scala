@@ -14,3 +14,14 @@ trait SetWifiList extends js.Object {
   var password: java.lang.String
 }
 
+object SetWifiList {
+  @scala.inline
+  def apply(BSSID: java.lang.String, SSID: java.lang.String, password: java.lang.String): SetWifiList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BSSID")(BSSID)
+    __obj.updateDynamic("SSID")(SSID)
+    __obj.updateDynamic("password")(password)
+    __obj.asInstanceOf[SetWifiList]
+  }
+}
+

@@ -56,3 +56,32 @@ trait Options extends js.Object {
   var writeToFileEmit: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    basePath: java.lang.String = null,
+    fileName: java.lang.String = null,
+    filter: js.Function1[/* file */ FileDescriptor, scala.Boolean] = null,
+    generate: js.Function2[/* seed */ js.Object, /* files */ js.Array[FileDescriptor], js.Object] = null,
+    map: js.Function1[/* file */ FileDescriptor, FileDescriptor] = null,
+    publicPath: java.lang.String = null,
+    seed: js.Object = null,
+    serialize: js.Function1[/* manifest */ js.Object, java.lang.String] = null,
+    sort: js.Function2[/* a */ FileDescriptor, /* b */ FileDescriptor, scala.Double] = null,
+    writeToFileEmit: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (basePath != null) __obj.updateDynamic("basePath")(basePath)
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (generate != null) __obj.updateDynamic("generate")(generate)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (publicPath != null) __obj.updateDynamic("publicPath")(publicPath)
+    if (seed != null) __obj.updateDynamic("seed")(seed)
+    if (serialize != null) __obj.updateDynamic("serialize")(serialize)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(writeToFileEmit)) __obj.updateDynamic("writeToFileEmit")(writeToFileEmit)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -31,3 +31,20 @@ trait ViewabilityConfig extends js.Object {
   var waitForInteraction: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ViewabilityConfig {
+  @scala.inline
+  def apply(
+    itemVisiblePercentThreshold: scala.Int | scala.Double = null,
+    minimumViewTime: scala.Int | scala.Double = null,
+    viewAreaCoveragePercentThreshold: scala.Int | scala.Double = null,
+    waitForInteraction: js.UndefOr[scala.Boolean] = js.undefined
+  ): ViewabilityConfig = {
+    val __obj = js.Dynamic.literal()
+    if (itemVisiblePercentThreshold != null) __obj.updateDynamic("itemVisiblePercentThreshold")(itemVisiblePercentThreshold.asInstanceOf[js.Any])
+    if (minimumViewTime != null) __obj.updateDynamic("minimumViewTime")(minimumViewTime.asInstanceOf[js.Any])
+    if (viewAreaCoveragePercentThreshold != null) __obj.updateDynamic("viewAreaCoveragePercentThreshold")(viewAreaCoveragePercentThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(waitForInteraction)) __obj.updateDynamic("waitForInteraction")(waitForInteraction)
+    __obj.asInstanceOf[ViewabilityConfig]
+  }
+}
+

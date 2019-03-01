@@ -25,3 +25,12 @@ trait Overlay extends js.Object {
   var `overlay-padding`: scala.Double
 }
 
+object Overlay {
+  @scala.inline
+  def apply(`overlay-color`: Colour, `overlay-opacity`: scala.Double, `overlay-padding`: scala.Double): Overlay = {
+    val __obj = js.Dynamic.literal(`overlay-color` = `overlay-color`, `overlay-opacity` = `overlay-opacity`, `overlay-padding` = `overlay-padding`)
+  
+    __obj.asInstanceOf[Overlay]
+  }
+}
+

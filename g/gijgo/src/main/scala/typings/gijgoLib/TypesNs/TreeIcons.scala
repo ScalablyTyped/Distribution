@@ -11,3 +11,13 @@ trait TreeIcons extends js.Object {
   var expand: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TreeIcons {
+  @scala.inline
+  def apply(collapse: java.lang.String = null, expand: java.lang.String = null): TreeIcons = {
+    val __obj = js.Dynamic.literal()
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    __obj.asInstanceOf[TreeIcons]
+  }
+}
+

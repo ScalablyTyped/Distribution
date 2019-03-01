@@ -19,3 +19,13 @@ trait Webhook extends js.Object {
   val throttle: WebhookThrottleConfig
 }
 
+object Webhook {
+  @scala.inline
+  def apply(clientConfig: WebhookClientConfig, throttle: WebhookThrottleConfig): Webhook = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientConfig")(clientConfig)
+    __obj.updateDynamic("throttle")(throttle)
+    __obj.asInstanceOf[Webhook]
+  }
+}
+

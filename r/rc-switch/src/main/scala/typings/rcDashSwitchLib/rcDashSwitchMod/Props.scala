@@ -20,3 +20,36 @@ trait Props extends js.Object {
   var unCheckedChildren: reactLib.reactMod.ReactNs.ReactNode
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    checkedChildren: reactLib.reactMod.ReactNs.ReactNode,
+    unCheckedChildren: reactLib.reactMod.ReactNs.ReactNode,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    defaultChecked: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    loadingIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    onChange: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
+    onClick: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
+    prefixCls: java.lang.String = null,
+    tabIndex: scala.Int | scala.Double = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkedChildren")(checkedChildren.asInstanceOf[js.Any])
+    __obj.updateDynamic("unCheckedChildren")(unCheckedChildren.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(defaultChecked)) __obj.updateDynamic("defaultChecked")(defaultChecked)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (loadingIcon != null) __obj.updateDynamic("loadingIcon")(loadingIcon.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props]
+  }
+}
+

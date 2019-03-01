@@ -5,7 +5,16 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PatternRequiredParams extends js.Object {
+trait PatternRequiredParams extends ErrorParameters {
   var missingPattern: java.lang.String
+}
+
+object PatternRequiredParams {
+  @scala.inline
+  def apply(missingPattern: java.lang.String): PatternRequiredParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("missingPattern")(missingPattern)
+    __obj.asInstanceOf[PatternRequiredParams]
+  }
 }
 

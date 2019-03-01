@@ -32,3 +32,24 @@ trait TabTheme extends js.Object {
   var withText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabTheme {
+  @scala.inline
+  def apply(
+    active: java.lang.String = null,
+    disabled: java.lang.String = null,
+    hidden: java.lang.String = null,
+    label: java.lang.String = null,
+    withIcon: java.lang.String = null,
+    withText: java.lang.String = null
+  ): TabTheme = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (withIcon != null) __obj.updateDynamic("withIcon")(withIcon)
+    if (withText != null) __obj.updateDynamic("withText")(withText)
+    __obj.asInstanceOf[TabTheme]
+  }
+}
+

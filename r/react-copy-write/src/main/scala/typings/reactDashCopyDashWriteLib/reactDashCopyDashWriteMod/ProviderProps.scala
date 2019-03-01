@@ -10,3 +10,16 @@ trait ProviderProps[T] extends js.Object {
   var initialState: js.UndefOr[stdLib.Partial[T]] = js.undefined
 }
 
+object ProviderProps {
+  @scala.inline
+  def apply[T](
+    children: reactLib.reactMod.Global.JSXNs.Element | js.Array[reactLib.reactMod.Global.JSXNs.Element],
+    initialState: stdLib.Partial[T] = null
+  ): ProviderProps[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
+    __obj.asInstanceOf[ProviderProps[T]]
+  }
+}
+

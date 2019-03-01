@@ -24,3 +24,13 @@ trait TransactionOptions extends js.Object {
   var readWrite: js.UndefOr[js.Any] = js.undefined
 }
 
+object TransactionOptions {
+  @scala.inline
+  def apply(readOnly: ReadOnly = null, readWrite: js.Any = null): TransactionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly)
+    if (readWrite != null) __obj.updateDynamic("readWrite")(readWrite)
+    __obj.asInstanceOf[TransactionOptions]
+  }
+}
+

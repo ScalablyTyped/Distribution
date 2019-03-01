@@ -16,3 +16,18 @@ trait GetOpenRevisions extends Options {
   var revs: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GetOpenRevisions {
+  @scala.inline
+  def apply(
+    open_revs: pouchdbDashCoreLib.pouchdbDashCoreLibStrings.all | js.Array[RevisionId],
+    fetch: pouchdbDashCoreLib.Fetch = null,
+    revs: js.UndefOr[scala.Boolean] = js.undefined
+  ): GetOpenRevisions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("open_revs")(open_revs.asInstanceOf[js.Any])
+    if (fetch != null) __obj.updateDynamic("fetch")(fetch)
+    if (!js.isUndefined(revs)) __obj.updateDynamic("revs")(revs)
+    __obj.asInstanceOf[GetOpenRevisions]
+  }
+}
+

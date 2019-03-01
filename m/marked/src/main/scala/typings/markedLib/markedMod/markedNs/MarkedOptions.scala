@@ -85,3 +85,51 @@ trait MarkedOptions extends js.Object {
   var xhtml: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MarkedOptions {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String = null,
+    breaks: js.UndefOr[scala.Boolean] = js.undefined,
+    gfm: js.UndefOr[scala.Boolean] = js.undefined,
+    headerIds: js.UndefOr[scala.Boolean] = js.undefined,
+    headerPrefix: java.lang.String = null,
+    highlight: js.Function3[
+      /* code */ java.lang.String, 
+      /* lang */ java.lang.String, 
+      /* callback */ js.UndefOr[js.Function2[/* error */ js.UndefOr[_], /* code */ java.lang.String, scala.Unit]], 
+      java.lang.String
+    ] = null,
+    langPrefix: java.lang.String = null,
+    mangle: js.UndefOr[scala.Boolean] = js.undefined,
+    pedantic: js.UndefOr[scala.Boolean] = js.undefined,
+    renderer: Renderer = null,
+    sanitize: js.UndefOr[scala.Boolean] = js.undefined,
+    sanitizer: js.Function1[/* html */ java.lang.String, java.lang.String] = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    smartLists: js.UndefOr[scala.Boolean] = js.undefined,
+    smartypants: js.UndefOr[scala.Boolean] = js.undefined,
+    tables: js.UndefOr[scala.Boolean] = js.undefined,
+    xhtml: js.UndefOr[scala.Boolean] = js.undefined
+  ): MarkedOptions = {
+    val __obj = js.Dynamic.literal()
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (!js.isUndefined(breaks)) __obj.updateDynamic("breaks")(breaks)
+    if (!js.isUndefined(gfm)) __obj.updateDynamic("gfm")(gfm)
+    if (!js.isUndefined(headerIds)) __obj.updateDynamic("headerIds")(headerIds)
+    if (headerPrefix != null) __obj.updateDynamic("headerPrefix")(headerPrefix)
+    if (highlight != null) __obj.updateDynamic("highlight")(highlight)
+    if (langPrefix != null) __obj.updateDynamic("langPrefix")(langPrefix)
+    if (!js.isUndefined(mangle)) __obj.updateDynamic("mangle")(mangle)
+    if (!js.isUndefined(pedantic)) __obj.updateDynamic("pedantic")(pedantic)
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (!js.isUndefined(sanitize)) __obj.updateDynamic("sanitize")(sanitize)
+    if (sanitizer != null) __obj.updateDynamic("sanitizer")(sanitizer)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(smartLists)) __obj.updateDynamic("smartLists")(smartLists)
+    if (!js.isUndefined(smartypants)) __obj.updateDynamic("smartypants")(smartypants)
+    if (!js.isUndefined(tables)) __obj.updateDynamic("tables")(tables)
+    if (!js.isUndefined(xhtml)) __obj.updateDynamic("xhtml")(xhtml)
+    __obj.asInstanceOf[MarkedOptions]
+  }
+}
+

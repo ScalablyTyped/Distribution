@@ -10,3 +10,12 @@ trait SurveysStartRequest extends js.Object {
   var maxCostPerResponseNanos: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SurveysStartRequest {
+  @scala.inline
+  def apply(maxCostPerResponseNanos: java.lang.String = null): SurveysStartRequest = {
+    val __obj = js.Dynamic.literal()
+    if (maxCostPerResponseNanos != null) __obj.updateDynamic("maxCostPerResponseNanos")(maxCostPerResponseNanos)
+    __obj.asInstanceOf[SurveysStartRequest]
+  }
+}
+

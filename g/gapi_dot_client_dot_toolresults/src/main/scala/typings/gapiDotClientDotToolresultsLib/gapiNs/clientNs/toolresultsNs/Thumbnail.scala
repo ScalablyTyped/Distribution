@@ -35,3 +35,20 @@ trait Thumbnail extends js.Object {
   var widthPx: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Thumbnail {
+  @scala.inline
+  def apply(
+    contentType: java.lang.String = null,
+    data: java.lang.String = null,
+    heightPx: scala.Int | scala.Double = null,
+    widthPx: scala.Int | scala.Double = null
+  ): Thumbnail = {
+    val __obj = js.Dynamic.literal()
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (heightPx != null) __obj.updateDynamic("heightPx")(heightPx.asInstanceOf[js.Any])
+    if (widthPx != null) __obj.updateDynamic("widthPx")(widthPx.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Thumbnail]
+  }
+}
+

@@ -12,3 +12,15 @@ trait Coverage extends js.Object {
   var statements: CoverageStats
 }
 
+object Coverage {
+  @scala.inline
+  def apply(branches: CoverageStats, functions: CoverageStats, lines: CoverageStats, statements: CoverageStats): Coverage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("branches")(branches)
+    __obj.updateDynamic("functions")(functions)
+    __obj.updateDynamic("lines")(lines)
+    __obj.updateDynamic("statements")(statements)
+    __obj.asInstanceOf[Coverage]
+  }
+}
+

@@ -42,3 +42,32 @@ trait BucketNotificationArgs extends js.Object {
   ] = js.undefined
 }
 
+object BucketNotificationArgs {
+  @scala.inline
+  def apply(
+    bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    lambdaFunctions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixIdLambdaFunctionArn]
+      ]
+    ] = null,
+    queues: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixIdQueueArn]
+      ]
+    ] = null,
+    topics: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixIdTopicArn]
+      ]
+    ] = null
+  ): BucketNotificationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucket")(bucket.asInstanceOf[js.Any])
+    if (lambdaFunctions != null) __obj.updateDynamic("lambdaFunctions")(lambdaFunctions.asInstanceOf[js.Any])
+    if (queues != null) __obj.updateDynamic("queues")(queues.asInstanceOf[js.Any])
+    if (topics != null) __obj.updateDynamic("topics")(topics.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BucketNotificationArgs]
+  }
+}
+

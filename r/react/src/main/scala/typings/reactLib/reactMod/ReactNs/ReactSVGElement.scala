@@ -7,8 +7,21 @@ import scala.scalajs.js.annotation._
 
 // ReactSVG for ReactSVGElement
 trait ReactSVGElement
-  extends DOMElement[SVGAttributes[reactLib.SVGElement], reactLib.SVGElement] {
-  @JSName("type")
-  var type_ReactSVGElement: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ java.lang.String
+  extends DOMElement[SVGAttributes[reactLib.SVGElement], reactLib.SVGElement]
+
+object ReactSVGElement {
+  @scala.inline
+  def apply(
+    props: SVGAttributes[reactLib.SVGElement],
+    ref: LegacyRef[reactLib.SVGElement],
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any,
+    key: Key = null
+  ): ReactSVGElement = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("props")(props)
+    __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReactSVGElement]
+  }
 }
 

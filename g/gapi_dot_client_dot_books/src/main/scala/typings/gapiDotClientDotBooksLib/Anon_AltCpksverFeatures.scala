@@ -41,3 +41,42 @@ trait Anon_AltCpksverFeatures extends js.Object {
   var volumeIds: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltCpksverFeatures {
+  @scala.inline
+  def apply(
+    cpksver: java.lang.String,
+    nonce: java.lang.String,
+    source: java.lang.String,
+    alt: java.lang.String = null,
+    features: java.lang.String = null,
+    fields: java.lang.String = null,
+    includeNonComicsSeries: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    locale: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    showPreorders: js.UndefOr[scala.Boolean] = js.undefined,
+    userIp: java.lang.String = null,
+    volumeIds: java.lang.String = null
+  ): Anon_AltCpksverFeatures = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cpksver")(cpksver)
+    __obj.updateDynamic("nonce")(nonce)
+    __obj.updateDynamic("source")(source)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(includeNonComicsSeries)) __obj.updateDynamic("includeNonComicsSeries")(includeNonComicsSeries)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (!js.isUndefined(showPreorders)) __obj.updateDynamic("showPreorders")(showPreorders)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (volumeIds != null) __obj.updateDynamic("volumeIds")(volumeIds)
+    __obj.asInstanceOf[Anon_AltCpksverFeatures]
+  }
+}
+

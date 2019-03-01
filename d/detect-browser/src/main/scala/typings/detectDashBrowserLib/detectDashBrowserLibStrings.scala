@@ -7,157 +7,157 @@ import scala.scalajs.js.annotation._
 
 object detectDashBrowserLibStrings {
   @js.native
-  sealed trait `Amazon OS` extends js.Object
+  sealed trait `Amazon OS` extends OperatingSystem
   
   @js.native
-  sealed trait `Android OS` extends js.Object
+  sealed trait `Android OS` extends OperatingSystem
   
   @js.native
-  sealed trait BeOS extends js.Object
+  sealed trait BeOS extends OperatingSystem
   
   @js.native
-  sealed trait `BlackBerry OS` extends js.Object
+  sealed trait `BlackBerry OS` extends OperatingSystem
   
   @js.native
-  sealed trait `Chrome OS` extends js.Object
+  sealed trait `Chrome OS` extends OperatingSystem
   
   @js.native
-  sealed trait Linux extends js.Object
+  sealed trait Linux extends OperatingSystem
   
   @js.native
-  sealed trait `Mac OS` extends js.Object
+  sealed trait `Mac OS` extends OperatingSystem
   
   @js.native
-  sealed trait `OS/2` extends js.Object
+  sealed trait `OS/2` extends OperatingSystem
   
   @js.native
-  sealed trait `Open BSD` extends js.Object
+  sealed trait `Open BSD` extends OperatingSystem
   
   @js.native
-  sealed trait QNX extends js.Object
+  sealed trait QNX extends OperatingSystem
   
   @js.native
-  sealed trait `Search Bot` extends js.Object
+  sealed trait `Search Bot` extends OperatingSystem
   
   @js.native
-  sealed trait `Sun OS` extends js.Object
+  sealed trait `Sun OS` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 10` extends js.Object
+  sealed trait `Windows 10` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 2000` extends js.Object
+  sealed trait `Windows 2000` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 3DOT11` extends js.Object
+  sealed trait `Windows 3DOT11` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 7` extends js.Object
+  sealed trait `Windows 7` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 8` extends js.Object
+  sealed trait `Windows 8` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 8DOT1` extends js.Object
+  sealed trait `Windows 8DOT1` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 95` extends js.Object
+  sealed trait `Windows 95` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows 98` extends js.Object
+  sealed trait `Windows 98` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows ME` extends js.Object
+  sealed trait `Windows ME` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows Mobile` extends js.Object
+  sealed trait `Windows Mobile` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows Server 2003` extends js.Object
+  sealed trait `Windows Server 2003` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows Vista` extends js.Object
+  sealed trait `Windows Vista` extends OperatingSystem
   
   @js.native
-  sealed trait `Windows XP` extends js.Object
+  sealed trait `Windows XP` extends OperatingSystem
   
   @js.native
-  sealed trait android extends js.Object
+  sealed trait android extends Browser
   
   @js.native
-  sealed trait aol extends js.Object
+  sealed trait aol extends Browser
   
   @js.native
-  sealed trait bb10 extends js.Object
+  sealed trait bb10 extends Browser
   
   @js.native
   sealed trait bot extends js.Object
   
   @js.native
-  sealed trait chrome extends js.Object
+  sealed trait chrome extends Browser
   
   @js.native
-  sealed trait crios extends js.Object
+  sealed trait crios extends Browser
   
   @js.native
-  sealed trait edge extends js.Object
+  sealed trait edge extends Browser
   
   @js.native
-  sealed trait facebook extends js.Object
+  sealed trait facebook extends Browser
   
   @js.native
-  sealed trait firefox extends js.Object
+  sealed trait firefox extends Browser
   
   @js.native
-  sealed trait fxios extends js.Object
+  sealed trait fxios extends Browser
   
   @js.native
-  sealed trait iOS extends js.Object
+  sealed trait iOS extends OperatingSystem
   
   @js.native
-  sealed trait ie extends js.Object
+  sealed trait ie extends Browser
   
   @js.native
-  sealed trait instagram extends js.Object
+  sealed trait instagram extends Browser
   
   @js.native
-  sealed trait ios extends js.Object
+  sealed trait ios extends Browser
   
   @js.native
-  sealed trait `ios-webview` extends js.Object
+  sealed trait `ios-webview` extends Browser
   
   @js.native
-  sealed trait kakaotalk extends js.Object
+  sealed trait kakaotalk extends Browser
   
   @js.native
   sealed trait node extends js.Object
   
   @js.native
-  sealed trait opera extends js.Object
+  sealed trait opera extends Browser
   
   @js.native
-  sealed trait `opera-mini` extends js.Object
+  sealed trait `opera-mini` extends Browser
   
   @js.native
-  sealed trait phantomjs extends js.Object
+  sealed trait phantomjs extends Browser
   
   @js.native
-  sealed trait safari extends js.Object
+  sealed trait safari extends Browser
   
   @js.native
-  sealed trait samsung extends js.Object
+  sealed trait samsung extends Browser
   
   @js.native
-  sealed trait searchbot extends js.Object
+  sealed trait searchbot extends Browser
   
   @js.native
-  sealed trait silk extends js.Object
+  sealed trait silk extends Browser
   
   @js.native
-  sealed trait vivaldi extends js.Object
+  sealed trait vivaldi extends Browser
   
   @js.native
-  sealed trait yandexbrowser extends js.Object
+  sealed trait yandexbrowser extends Browser
   
   @scala.inline
   def `Amazon OS`: `Amazon OS` = "Amazon OS".asInstanceOf[`Amazon OS`]

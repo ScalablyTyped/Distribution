@@ -67,3 +67,52 @@ trait ValueSetExpansionContains extends BackboneElement {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ValueSetExpansionContains {
+  @scala.inline
+  def apply(
+    _abstract: Element = null,
+    _code: Element = null,
+    _display: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _inactive: Element = null,
+    _system: Element = null,
+    _version: Element = null,
+    `abstract`: js.UndefOr[scala.Boolean] = js.undefined,
+    code: code = null,
+    contains: js.Array[ValueSetExpansionContains] = null,
+    designation: js.Array[ValueSetComposeIncludeConceptDesignation] = null,
+    display: java.lang.String = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    inactive: js.UndefOr[scala.Boolean] = js.undefined,
+    modifierExtension: js.Array[Extension] = null,
+    system: uri = null,
+    version: java.lang.String = null
+  ): ValueSetExpansionContains = {
+    val __obj = js.Dynamic.literal()
+    if (_abstract != null) __obj.updateDynamic("_abstract")(_abstract)
+    if (_code != null) __obj.updateDynamic("_code")(_code)
+    if (_display != null) __obj.updateDynamic("_display")(_display)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_inactive != null) __obj.updateDynamic("_inactive")(_inactive)
+    if (_system != null) __obj.updateDynamic("_system")(_system)
+    if (_version != null) __obj.updateDynamic("_version")(_version)
+    if (!js.isUndefined(`abstract`)) __obj.updateDynamic("abstract")(`abstract`)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (contains != null) __obj.updateDynamic("contains")(contains)
+    if (designation != null) __obj.updateDynamic("designation")(designation)
+    if (display != null) __obj.updateDynamic("display")(display)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(inactive)) __obj.updateDynamic("inactive")(inactive)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (system != null) __obj.updateDynamic("system")(system)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[ValueSetExpansionContains]
+  }
+}
+

@@ -22,3 +22,26 @@ trait Upload extends js.Object {
   var uploadTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Upload {
+  @scala.inline
+  def apply(
+    accountId: java.lang.String = null,
+    customDataSourceId: java.lang.String = null,
+    errors: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    status: java.lang.String = null,
+    uploadTime: java.lang.String = null
+  ): Upload = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (customDataSourceId != null) __obj.updateDynamic("customDataSourceId")(customDataSourceId)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (uploadTime != null) __obj.updateDynamic("uploadTime")(uploadTime)
+    __obj.asInstanceOf[Upload]
+  }
+}
+

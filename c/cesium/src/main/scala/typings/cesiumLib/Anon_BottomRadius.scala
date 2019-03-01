@@ -13,3 +13,22 @@ trait Anon_BottomRadius extends js.Object {
   var vertexFormat: js.UndefOr[cesiumLib.cesiumMod.CesiumNs.VertexFormat] = js.undefined
 }
 
+object Anon_BottomRadius {
+  @scala.inline
+  def apply(
+    bottomRadius: scala.Double,
+    length: scala.Double,
+    topRadius: scala.Double,
+    slices: scala.Int | scala.Double = null,
+    vertexFormat: cesiumLib.cesiumMod.CesiumNs.VertexFormat = null
+  ): Anon_BottomRadius = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottomRadius")(bottomRadius)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("topRadius")(topRadius)
+    if (slices != null) __obj.updateDynamic("slices")(slices.asInstanceOf[js.Any])
+    if (vertexFormat != null) __obj.updateDynamic("vertexFormat")(vertexFormat)
+    __obj.asInstanceOf[Anon_BottomRadius]
+  }
+}
+

@@ -48,3 +48,28 @@ trait AgendaConfiguration extends js.Object {
   var processEvery: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object AgendaConfiguration {
+  @scala.inline
+  def apply(
+    db: agendaLib.Anon_Address = null,
+    defaultConcurrency: scala.Int | scala.Double = null,
+    defaultLockLifetime: scala.Int | scala.Double = null,
+    defaultLockLimit: scala.Int | scala.Double = null,
+    lockLimit: scala.Int | scala.Double = null,
+    maxConcurrency: scala.Int | scala.Double = null,
+    mongo: mongodbLib.mongodbMod.Db = null,
+    processEvery: java.lang.String | scala.Double = null
+  ): AgendaConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (db != null) __obj.updateDynamic("db")(db)
+    if (defaultConcurrency != null) __obj.updateDynamic("defaultConcurrency")(defaultConcurrency.asInstanceOf[js.Any])
+    if (defaultLockLifetime != null) __obj.updateDynamic("defaultLockLifetime")(defaultLockLifetime.asInstanceOf[js.Any])
+    if (defaultLockLimit != null) __obj.updateDynamic("defaultLockLimit")(defaultLockLimit.asInstanceOf[js.Any])
+    if (lockLimit != null) __obj.updateDynamic("lockLimit")(lockLimit.asInstanceOf[js.Any])
+    if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
+    if (mongo != null) __obj.updateDynamic("mongo")(mongo)
+    if (processEvery != null) __obj.updateDynamic("processEvery")(processEvery.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AgendaConfiguration]
+  }
+}
+

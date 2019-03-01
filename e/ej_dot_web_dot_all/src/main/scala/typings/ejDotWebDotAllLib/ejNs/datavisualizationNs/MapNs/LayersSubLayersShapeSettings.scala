@@ -68,3 +68,42 @@ trait LayersSubLayersShapeSettings extends js.Object {
   var valuePath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LayersSubLayersShapeSettings {
+  @scala.inline
+  def apply(
+    autoFill: js.UndefOr[scala.Boolean] = js.undefined,
+    colorMappings: LayersSubLayersShapeSettingsColorMappings = null,
+    colorPalette: ColorPalette | java.lang.String = null,
+    colorValuePath: java.lang.String = null,
+    enableGradient: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: java.lang.String = null,
+    highlightBorderWidth: scala.Int | scala.Double = null,
+    highlightColor: java.lang.String = null,
+    highlightStroke: java.lang.String = null,
+    selectionColor: java.lang.String = null,
+    selectionStroke: java.lang.String = null,
+    selectionStrokeWidth: scala.Int | scala.Double = null,
+    stroke: java.lang.String = null,
+    strokeThickness: scala.Int | scala.Double = null,
+    valuePath: java.lang.String = null
+  ): LayersSubLayersShapeSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFill)) __obj.updateDynamic("autoFill")(autoFill)
+    if (colorMappings != null) __obj.updateDynamic("colorMappings")(colorMappings)
+    if (colorPalette != null) __obj.updateDynamic("colorPalette")(colorPalette.asInstanceOf[js.Any])
+    if (colorValuePath != null) __obj.updateDynamic("colorValuePath")(colorValuePath)
+    if (!js.isUndefined(enableGradient)) __obj.updateDynamic("enableGradient")(enableGradient)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (highlightBorderWidth != null) __obj.updateDynamic("highlightBorderWidth")(highlightBorderWidth.asInstanceOf[js.Any])
+    if (highlightColor != null) __obj.updateDynamic("highlightColor")(highlightColor)
+    if (highlightStroke != null) __obj.updateDynamic("highlightStroke")(highlightStroke)
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
+    if (selectionStroke != null) __obj.updateDynamic("selectionStroke")(selectionStroke)
+    if (selectionStrokeWidth != null) __obj.updateDynamic("selectionStrokeWidth")(selectionStrokeWidth.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    if (strokeThickness != null) __obj.updateDynamic("strokeThickness")(strokeThickness.asInstanceOf[js.Any])
+    if (valuePath != null) __obj.updateDynamic("valuePath")(valuePath)
+    __obj.asInstanceOf[LayersSubLayersShapeSettings]
+  }
+}
+

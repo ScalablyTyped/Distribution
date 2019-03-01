@@ -12,3 +12,15 @@ trait NetChecksiteData extends js.Object {
   var url: java.lang.String
 }
 
+object NetChecksiteData {
+  @scala.inline
+  def apply(ms: scala.Double, ok: scala.Boolean, status: scala.Double, url: java.lang.String): NetChecksiteData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ms")(ms)
+    __obj.updateDynamic("ok")(ok)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[NetChecksiteData]
+  }
+}
+

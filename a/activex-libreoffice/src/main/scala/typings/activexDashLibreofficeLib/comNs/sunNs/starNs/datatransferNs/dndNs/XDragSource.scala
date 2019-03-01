@@ -50,3 +50,32 @@ trait XDragSource
   ): scala.Unit
 }
 
+object XDragSource {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getDefaultCursor: js.Function1[scala.Double, scala.Double],
+    isDragImageSupported: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    startDrag: js.Function6[
+      DragGestureEvent, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.datatransferNs.XTransferable, 
+      XDragSourceListener, 
+      scala.Unit
+    ]
+  ): XDragSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDefaultCursor")(getDefaultCursor)
+    __obj.updateDynamic("isDragImageSupported")(isDragImageSupported)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("startDrag")(startDrag)
+    __obj.asInstanceOf[XDragSource]
+  }
+}
+

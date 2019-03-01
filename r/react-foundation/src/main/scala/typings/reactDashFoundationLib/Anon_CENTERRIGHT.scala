@@ -10,3 +10,16 @@ trait Anon_CENTERRIGHT extends js.Object {
   var RIGHT: reactDashFoundationLib.enumsMod.MenuAlignments
 }
 
+object Anon_CENTERRIGHT {
+  @scala.inline
+  def apply(
+    CENTER: reactDashFoundationLib.enumsMod.MenuAlignments,
+    RIGHT: reactDashFoundationLib.enumsMod.MenuAlignments
+  ): Anon_CENTERRIGHT = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CENTER")(CENTER)
+    __obj.updateDynamic("RIGHT")(RIGHT)
+    __obj.asInstanceOf[Anon_CENTERRIGHT]
+  }
+}
+

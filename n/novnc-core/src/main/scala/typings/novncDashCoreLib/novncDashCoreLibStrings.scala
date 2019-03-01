@@ -7,19 +7,23 @@ import scala.scalajs.js.annotation._
 
 object novncDashCoreLibStrings {
   @js.native
-  sealed trait connected extends js.Object
+  sealed trait connected
+    extends novncDashCoreLib.novncDashCoreMod.NvConnectionState
   
   @js.native
-  sealed trait connecting extends js.Object
+  sealed trait connecting
+    extends novncDashCoreLib.novncDashCoreMod.NvConnectionState
   
   @js.native
   sealed trait debug extends js.Object
   
   @js.native
-  sealed trait disconnected extends js.Object
+  sealed trait disconnected
+    extends novncDashCoreLib.novncDashCoreMod.NvConnectionState
   
   @js.native
-  sealed trait disconnecting extends js.Object
+  sealed trait disconnecting
+    extends novncDashCoreLib.novncDashCoreMod.NvConnectionState
   
   @js.native
   sealed trait error extends js.Object

@@ -20,3 +20,14 @@ trait Anon_ProfilingPlugin extends js.Object {
   var ProfilingPlugin: org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.debugNs.ProfilingPlugin]
 }
 
+object Anon_ProfilingPlugin {
+  @scala.inline
+  def apply(
+    ProfilingPlugin: org.scalablytyped.runtime.Instantiable0[webpackLib.webpackMod.debugNs.ProfilingPlugin]
+  ): Anon_ProfilingPlugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ProfilingPlugin")(ProfilingPlugin)
+    __obj.asInstanceOf[Anon_ProfilingPlugin]
+  }
+}
+

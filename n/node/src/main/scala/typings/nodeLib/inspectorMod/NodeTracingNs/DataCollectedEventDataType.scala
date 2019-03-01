@@ -9,3 +9,12 @@ trait DataCollectedEventDataType extends js.Object {
   var value: js.Array[js.Object]
 }
 
+object DataCollectedEventDataType {
+  @scala.inline
+  def apply(value: js.Array[js.Object]): DataCollectedEventDataType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DataCollectedEventDataType]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_False extends js.Object {
   var read: adoneLib.adoneLibNumbers.`false`
 }
 
+object Anon_False {
+  @scala.inline
+  def apply(read: adoneLib.adoneLibNumbers.`false`): Anon_False = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("read")(read)
+    __obj.asInstanceOf[Anon_False]
+  }
+}
+

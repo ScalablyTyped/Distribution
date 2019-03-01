@@ -18,3 +18,20 @@ trait DSAKeyPairOptions[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */] exten
   var publicKeyEncoding: nodeLib.Anon_FormatSpki[PubF]
 }
 
+object DSAKeyPairOptions {
+  @scala.inline
+  def apply[PubF /* <: KeyFormat */, PrivF /* <: KeyFormat */](
+    divisorLength: scala.Double,
+    modulusLength: scala.Double,
+    privateKeyEncoding: BasePrivateKeyEncodingOptions[PrivF] with nodeLib.Anon_Pkcs8,
+    publicKeyEncoding: nodeLib.Anon_FormatSpki[PubF]
+  ): DSAKeyPairOptions[PubF, PrivF] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("divisorLength")(divisorLength)
+    __obj.updateDynamic("modulusLength")(modulusLength)
+    __obj.updateDynamic("privateKeyEncoding")(privateKeyEncoding)
+    __obj.updateDynamic("publicKeyEncoding")(publicKeyEncoding)
+    __obj.asInstanceOf[DSAKeyPairOptions[PubF, PrivF]]
+  }
+}
+

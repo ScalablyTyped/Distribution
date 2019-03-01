@@ -20,3 +20,42 @@ trait XDriverManager2
      with XDriverManager
      with XDriverAccess
 
+object XDriverManager2 {
+  @scala.inline
+  def apply(
+    ElementType: activexDashLibreofficeLib.`type`,
+    LoginTimeout: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    createEnumeration: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XEnumeration],
+    getConnection: js.Function1[java.lang.String, XConnection],
+    getConnectionWithInfo: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      XConnection
+    ],
+    getDriverByURL: js.Function1[java.lang.String, XDriver],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getLoginTimeout: js.Function0[scala.Double],
+    hasElements: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setLoginTimeout: js.Function1[scala.Double, scala.Unit]
+  ): XDriverManager2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("LoginTimeout")(LoginTimeout)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createEnumeration")(createEnumeration)
+    __obj.updateDynamic("getConnection")(getConnection)
+    __obj.updateDynamic("getConnectionWithInfo")(getConnectionWithInfo)
+    __obj.updateDynamic("getDriverByURL")(getDriverByURL)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getLoginTimeout")(getLoginTimeout)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setLoginTimeout")(setLoginTimeout)
+    __obj.asInstanceOf[XDriverManager2]
+  }
+}
+

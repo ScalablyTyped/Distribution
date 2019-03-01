@@ -10,10 +10,12 @@ object minimistDashOptionsLibStrings {
   sealed trait Options extends js.Object
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends minimistDashOptionsLib.minimistDashOptionsMod.buildNs.Type
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends minimistDashOptionsLib.minimistDashOptionsMod.buildNs.Type
   
   @scala.inline
   def Options: Options = "Options".asInstanceOf[Options]

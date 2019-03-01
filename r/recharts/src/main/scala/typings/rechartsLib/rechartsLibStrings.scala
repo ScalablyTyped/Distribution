@@ -7,28 +7,37 @@ import scala.scalajs.js.annotation._
 
 object rechartsLibStrings {
   @js.native
-  sealed trait alignmentBaseline extends js.Object
+  sealed trait alignmentBaseline
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
   sealed trait area extends js.Object
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends rechartsLib.rechartsMod.ScaleType
+       with rechartsLib.rechartsMod._AxisDomain
+       with rechartsLib.rechartsMod._PolarRadiusAxisDomain
   
   @js.native
-  sealed trait band extends js.Object
+  sealed trait band
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait baselineShift extends js.Object
+  sealed trait baselineShift
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait basis extends js.Object
+  sealed trait basis
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait basisClosed extends js.Object
+  sealed trait basisClosed
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait basisOpen extends js.Object
+  sealed trait basisOpen
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
   sealed trait bold extends js.Object
@@ -37,142 +46,184 @@ object rechartsLibStrings {
   sealed trait bolder extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
   sealed trait category extends js.Object
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
   sealed trait centric extends js.Object
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle
+    extends rechartsLib.rechartsMod.IconType
   
   @js.native
-  sealed trait clip extends js.Object
+  sealed trait clip
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait clipPath extends js.Object
+  sealed trait clipPath
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait clipRule extends js.Object
+  sealed trait clipRule
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait color
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait colorInterpolationFilters extends js.Object
+  sealed trait colorInterpolationFilters
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
   sealed trait crispEdges extends js.Object
   
   @js.native
-  sealed trait cross extends js.Object
+  sealed trait cross
+    extends rechartsLib.rechartsMod.IconType
   
   @js.native
-  sealed trait cursor extends js.Object
+  sealed trait cursor
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait dataMax extends js.Object
+  sealed trait dataMax
+    extends rechartsLib.rechartsMod._AxisDomain
+       with rechartsLib.rechartsMod._PolarRadiusAxisDomain
   
   @js.native
-  sealed trait dataMin extends js.Object
+  sealed trait dataMin
+    extends rechartsLib.rechartsMod._AxisDomain
+       with rechartsLib.rechartsMod._PolarRadiusAxisDomain
   
   @js.native
   sealed trait diameter extends js.Object
   
   @js.native
-  sealed trait diamond extends js.Object
+  sealed trait diamond
+    extends rechartsLib.rechartsMod.IconType
   
   @js.native
-  sealed trait direction extends js.Object
+  sealed trait direction
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait discard extends js.Object
+  sealed trait discard
+    extends rechartsLib.rechartsMod.IfOverflowType
   
   @js.native
-  sealed trait display extends js.Object
+  sealed trait display
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait dominantBaseline extends js.Object
+  sealed trait dominantBaseline
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait ease extends js.Object
+  sealed trait ease
+    extends rechartsLib.rechartsMod.AnimationEasingType
   
   @js.native
-  sealed trait `ease-in` extends js.Object
+  sealed trait `ease-in`
+    extends rechartsLib.rechartsMod.AnimationEasingType
   
   @js.native
-  sealed trait `ease-in-out` extends js.Object
+  sealed trait `ease-in-out`
+    extends rechartsLib.rechartsMod.AnimationEasingType
   
   @js.native
-  sealed trait `ease-out` extends js.Object
+  sealed trait `ease-out`
+    extends rechartsLib.rechartsMod.AnimationEasingType
   
   @js.native
-  sealed trait enableBackground extends js.Object
+  sealed trait enableBackground
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait end extends js.Object
+  sealed trait end
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait expand extends js.Object
+  sealed trait expand
+    extends rechartsLib.rechartsMod.StackOffsetType
   
   @js.native
-  sealed trait extendDomain extends js.Object
+  sealed trait extendDomain
+    extends rechartsLib.rechartsMod.IfOverflowType
   
   @js.native
-  sealed trait fill extends js.Object
+  sealed trait fill
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait fillRule extends js.Object
+  sealed trait fillRule
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait filter extends js.Object
+  sealed trait filter
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
   sealed trait fitting extends js.Object
   
   @js.native
-  sealed trait floodColor extends js.Object
+  sealed trait floodColor
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait floodOpacity extends js.Object
+  sealed trait floodOpacity
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait font extends js.Object
+  sealed trait font
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait fontFamily extends js.Object
+  sealed trait fontFamily
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait fontStretch extends js.Object
+  sealed trait fontStretch
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait fontStyle extends js.Object
+  sealed trait fontStyle
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait fontVariant extends js.Object
+  sealed trait fontVariant
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
   sealed trait geometricPrecision extends js.Object
   
   @js.native
-  sealed trait glyphOrientationHorizontal extends js.Object
+  sealed trait glyphOrientationHorizontal
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait glyphOrientationVertical extends js.Object
+  sealed trait glyphOrientationVertical
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hidden
+    extends rechartsLib.rechartsMod.IfOverflowType
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends rechartsLib.rechartsMod.LayoutType
   
   @js.native
-  sealed trait identity extends js.Object
+  sealed trait identity
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
   sealed trait inherit extends js.Object
@@ -181,94 +232,124 @@ object rechartsLibStrings {
   sealed trait inner extends js.Object
   
   @js.native
-  sealed trait inside extends js.Object
+  sealed trait inside
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideBottom extends js.Object
+  sealed trait insideBottom
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideBottomLeft extends js.Object
+  sealed trait insideBottomLeft
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideBottomRight extends js.Object
+  sealed trait insideBottomRight
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideEnd extends js.Object
+  sealed trait insideEnd
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideLeft extends js.Object
+  sealed trait insideLeft
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideRight extends js.Object
+  sealed trait insideRight
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideStart extends js.Object
+  sealed trait insideStart
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideTop extends js.Object
+  sealed trait insideTop
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideTopLeft extends js.Object
+  sealed trait insideTopLeft
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait insideTopRight extends js.Object
+  sealed trait insideTopRight
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
   sealed trait joint extends js.Object
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait letterSpacing extends js.Object
+  sealed trait letterSpacing
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
   sealed trait lighter extends js.Object
   
   @js.native
-  sealed trait lightingColor extends js.Object
+  sealed trait lightingColor
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait line
+    extends rechartsLib.rechartsMod.IconType
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends rechartsLib.rechartsMod.AnimationEasingType
+       with rechartsLib.rechartsMod.ScaleType
+       with rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait linearClosed extends js.Object
+  sealed trait linearClosed
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait markerEnd extends js.Object
+  sealed trait markerEnd
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait markerMid extends js.Object
+  sealed trait markerMid
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait markerStart extends js.Object
+  sealed trait markerStart
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait mask extends js.Object
+  sealed trait mask
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
   sealed trait middle extends js.Object
   
   @js.native
-  sealed trait monotone extends js.Object
+  sealed trait monotone
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait monotoneX extends js.Object
+  sealed trait monotoneX
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait monotoneY extends js.Object
+  sealed trait monotoneY
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait natural extends js.Object
+  sealed trait natural
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends rechartsLib.rechartsMod.LegendType
+       with rechartsLib.rechartsMod.StackOffsetType
   
   @js.native
   sealed trait normal extends js.Object
@@ -286,142 +367,184 @@ object rechartsLibStrings {
   sealed trait optimizeSpeed extends js.Object
   
   @js.native
-  sealed trait ordinal extends js.Object
+  sealed trait ordinal
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
   sealed trait outer extends js.Object
   
   @js.native
-  sealed trait outside extends js.Object
+  sealed trait outside
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait overflow extends js.Object
+  sealed trait overflow
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait plainline extends js.Object
+  sealed trait plainline
+    extends rechartsLib.rechartsMod.IconType
   
   @js.native
-  sealed trait point extends js.Object
+  sealed trait point
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait pointerEvents extends js.Object
+  sealed trait pointerEvents
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
   sealed trait polygon extends js.Object
   
   @js.native
-  sealed trait pow extends js.Object
+  sealed trait pow
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait preserveEnd extends js.Object
+  sealed trait preserveEnd
+    extends rechartsLib.rechartsMod._AxisInterval
   
   @js.native
-  sealed trait preserveStart extends js.Object
+  sealed trait preserveStart
+    extends rechartsLib.rechartsMod._AxisInterval
   
   @js.native
-  sealed trait preserveStartEnd extends js.Object
+  sealed trait preserveStartEnd
+    extends rechartsLib.rechartsMod._AxisInterval
   
   @js.native
-  sealed trait quantile extends js.Object
+  sealed trait quantile
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait quantize extends js.Object
+  sealed trait quantize
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
   sealed trait radial extends js.Object
   
   @js.native
-  sealed trait rect extends js.Object
+  sealed trait rect
+    extends rechartsLib.rechartsMod.IconType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait sequential extends js.Object
+  sealed trait sequential
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait sign extends js.Object
+  sealed trait sign
+    extends rechartsLib.rechartsMod.StackOffsetType
   
   @js.native
-  sealed trait silhouette extends js.Object
+  sealed trait silhouette
+    extends rechartsLib.rechartsMod.StackOffsetType
   
   @js.native
-  sealed trait sqrt extends js.Object
+  sealed trait sqrt
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends rechartsLib.rechartsMod.IconType
   
   @js.native
-  sealed trait star extends js.Object
+  sealed trait star
+    extends rechartsLib.rechartsMod.IconType
   
   @js.native
   sealed trait start extends js.Object
   
   @js.native
-  sealed trait step extends js.Object
+  sealed trait step
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait stepAfter extends js.Object
+  sealed trait stepAfter
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait stepBefore extends js.Object
+  sealed trait stepBefore
+    extends rechartsLib.rechartsMod._LineType
   
   @js.native
-  sealed trait stopColor extends js.Object
+  sealed trait stopColor
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait strokeDasharray extends js.Object
+  sealed trait strokeDasharray
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait strokeLinecap extends js.Object
+  sealed trait strokeLinecap
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait strokeLinejoin extends js.Object
+  sealed trait strokeLinejoin
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait textAnchor extends js.Object
+  sealed trait textAnchor
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait textDecoration extends js.Object
+  sealed trait textDecoration
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait threshold extends js.Object
+  sealed trait threshold
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends rechartsLib.rechartsMod.PositionType
   
   @js.native
-  sealed trait transform extends js.Object
+  sealed trait transform
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait triangle extends js.Object
+  sealed trait triangle
+    extends rechartsLib.rechartsMod.IconType
   
   @js.native
-  sealed trait unicodeBidi extends js.Object
+  sealed trait unicodeBidi
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait utcTime extends js.Object
+  sealed trait utcTime
+    extends rechartsLib.rechartsMod.ScaleType
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends rechartsLib.rechartsMod.LayoutType
   
   @js.native
-  sealed trait visibility extends js.Object
+  sealed trait visibility
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait visible extends js.Object
+  sealed trait visible
+    extends rechartsLib.rechartsMod.IfOverflowType
   
   @js.native
-  sealed trait wiggle extends js.Object
+  sealed trait wiggle
+    extends rechartsLib.rechartsMod.StackOffsetType
   
   @js.native
-  sealed trait writingMode extends js.Object
+  sealed trait writingMode
+    extends rechartsLib.rechartsMod.PickedCSSStyleDeclarationKeys
   
   @js.native
-  sealed trait wye extends js.Object
+  sealed trait wye
+    extends rechartsLib.rechartsMod.IconType
   
   @scala.inline
   def alignmentBaseline: alignmentBaseline = "alignmentBaseline".asInstanceOf[alignmentBaseline]

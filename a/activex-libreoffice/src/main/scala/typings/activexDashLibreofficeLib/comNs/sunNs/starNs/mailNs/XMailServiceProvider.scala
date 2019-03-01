@@ -21,3 +21,20 @@ trait XMailServiceProvider
   def create(aType: MailServiceType): XMailService
 }
 
+object XMailServiceProvider {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    create: js.Function1[MailServiceType, XMailService],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMailServiceProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMailServiceProvider]
+  }
+}
+

@@ -15,3 +15,26 @@ trait Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeSize extend
   var volumeType: java.lang.String
 }
 
+object Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeSize {
+  @scala.inline
+  def apply(
+    deviceName: java.lang.String,
+    encrypted: scala.Boolean,
+    iops: scala.Double,
+    snapshotId: java.lang.String,
+    volumeSize: scala.Double,
+    volumeType: java.lang.String,
+    deleteOnTermination: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeSize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceName")(deviceName)
+    __obj.updateDynamic("encrypted")(encrypted)
+    __obj.updateDynamic("iops")(iops)
+    __obj.updateDynamic("snapshotId")(snapshotId)
+    __obj.updateDynamic("volumeSize")(volumeSize)
+    __obj.updateDynamic("volumeType")(volumeType)
+    if (!js.isUndefined(deleteOnTermination)) __obj.updateDynamic("deleteOnTermination")(deleteOnTermination)
+    __obj.asInstanceOf[Anon_DeleteOnTerminationDeviceNameEncryptedIopsSnapshotIdVolumeSize]
+  }
+}
+

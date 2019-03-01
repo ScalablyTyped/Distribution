@@ -10,3 +10,13 @@ trait Anon_Dkimrecord extends js.Object {
   var spf_record: java.lang.String
 }
 
+object Anon_Dkimrecord {
+  @scala.inline
+  def apply(dkim_record: java.lang.String, spf_record: java.lang.String): Anon_Dkimrecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dkim_record")(dkim_record)
+    __obj.updateDynamic("spf_record")(spf_record)
+    __obj.asInstanceOf[Anon_Dkimrecord]
+  }
+}
+

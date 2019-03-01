@@ -13,3 +13,23 @@ trait ProjectsResource extends js.Object {
   def deleteEvents(request: gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    deleteEvents: js.Function1[
+      gapiDotClientDotClouderrorreportingLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    events: EventsResource,
+    groupStats: GroupStatsResource,
+    groups: GroupsResource
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deleteEvents")(deleteEvents)
+    __obj.updateDynamic("events")(events)
+    __obj.updateDynamic("groupStats")(groupStats)
+    __obj.updateDynamic("groups")(groups)
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

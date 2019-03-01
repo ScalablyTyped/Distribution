@@ -17,3 +17,30 @@ trait State[OptionType] extends js.Object {
   var selectValue: reactDashSelectLib.libTypesMod.OptionsType[OptionType]
 }
 
+object State {
+  @scala.inline
+  def apply[OptionType](
+    ariaLiveContext: java.lang.String,
+    ariaLiveSelection: java.lang.String,
+    inputIsHidden: scala.Boolean,
+    isComposing: scala.Boolean,
+    isFocused: scala.Boolean,
+    menuOptions: MenuOptions[OptionType],
+    selectValue: reactDashSelectLib.libTypesMod.OptionsType[OptionType],
+    focusedOption: OptionType = null,
+    focusedValue: OptionType = null
+  ): State[OptionType] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ariaLiveContext")(ariaLiveContext)
+    __obj.updateDynamic("ariaLiveSelection")(ariaLiveSelection)
+    __obj.updateDynamic("inputIsHidden")(inputIsHidden)
+    __obj.updateDynamic("isComposing")(isComposing)
+    __obj.updateDynamic("isFocused")(isFocused)
+    __obj.updateDynamic("menuOptions")(menuOptions)
+    __obj.updateDynamic("selectValue")(selectValue)
+    if (focusedOption != null) __obj.updateDynamic("focusedOption")(focusedOption.asInstanceOf[js.Any])
+    if (focusedValue != null) __obj.updateDynamic("focusedValue")(focusedValue.asInstanceOf[js.Any])
+    __obj.asInstanceOf[State[OptionType]]
+  }
+}
+

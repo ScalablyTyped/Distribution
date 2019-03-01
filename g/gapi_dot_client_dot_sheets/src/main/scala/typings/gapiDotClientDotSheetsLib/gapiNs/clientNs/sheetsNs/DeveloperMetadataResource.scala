@@ -22,3 +22,22 @@ trait DeveloperMetadataResource extends js.Object {
   def search(request: gapiDotClientDotSheetsLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[SearchDeveloperMetadataResponse]
 }
 
+object DeveloperMetadataResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DeveloperMetadata]
+    ],
+    search: js.Function1[
+      gapiDotClientDotSheetsLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchDeveloperMetadataResponse]
+    ]
+  ): DeveloperMetadataResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[DeveloperMetadataResource]
+  }
+}
+

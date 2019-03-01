@@ -12,3 +12,20 @@ trait SymbolProps extends js.Object {
   var viewBox: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SymbolProps {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    opacity: reactDashNativeDashSvgLib.NumberProp = null,
+    preserveAspectRatio: java.lang.String = null,
+    viewBox: java.lang.String = null
+  ): SymbolProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (preserveAspectRatio != null) __obj.updateDynamic("preserveAspectRatio")(preserveAspectRatio)
+    if (viewBox != null) __obj.updateDynamic("viewBox")(viewBox)
+    __obj.asInstanceOf[SymbolProps]
+  }
+}
+

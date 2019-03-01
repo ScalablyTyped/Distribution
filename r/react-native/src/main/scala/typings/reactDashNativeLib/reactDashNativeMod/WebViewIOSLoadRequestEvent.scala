@@ -16,3 +16,28 @@ trait WebViewIOSLoadRequestEvent extends js.Object {
   var url: java.lang.String
 }
 
+object WebViewIOSLoadRequestEvent {
+  @scala.inline
+  def apply(
+    canGoBack: scala.Boolean,
+    canGoForward: scala.Boolean,
+    loading: scala.Boolean,
+    lockIdentifier: scala.Double,
+    navigationType: reactDashNativeLib.reactDashNativeLibStrings.click | reactDashNativeLib.reactDashNativeLibStrings.formsubmit | reactDashNativeLib.reactDashNativeLibStrings.backforward | reactDashNativeLib.reactDashNativeLibStrings.reload | reactDashNativeLib.reactDashNativeLibStrings.formresubmit | reactDashNativeLib.reactDashNativeLibStrings.other,
+    target: scala.Double,
+    title: java.lang.String,
+    url: java.lang.String
+  ): WebViewIOSLoadRequestEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canGoBack")(canGoBack)
+    __obj.updateDynamic("canGoForward")(canGoForward)
+    __obj.updateDynamic("loading")(loading)
+    __obj.updateDynamic("lockIdentifier")(lockIdentifier)
+    __obj.updateDynamic("navigationType")(navigationType.asInstanceOf[js.Any])
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[WebViewIOSLoadRequestEvent]
+  }
+}
+

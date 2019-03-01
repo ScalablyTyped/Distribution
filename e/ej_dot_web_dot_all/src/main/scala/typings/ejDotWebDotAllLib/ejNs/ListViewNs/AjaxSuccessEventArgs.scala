@@ -32,3 +32,28 @@ trait AjaxSuccessEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AjaxSuccessEventArgs {
+  @scala.inline
+  def apply(
+    URL: java.lang.String = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    content: java.lang.String = null,
+    index: scala.Int | scala.Double = null,
+    item: js.Any = null,
+    model: Model = null,
+    text: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): AjaxSuccessEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (URL != null) __obj.updateDynamic("URL")(URL)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AjaxSuccessEventArgs]
+  }
+}
+

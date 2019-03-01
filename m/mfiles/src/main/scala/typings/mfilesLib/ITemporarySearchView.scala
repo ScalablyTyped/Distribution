@@ -11,3 +11,14 @@ trait ITemporarySearchView extends js.Object {
   val View: IView
 }
 
+object ITemporarySearchView {
+  @scala.inline
+  def apply(BaseSearchConditions: ISearchConditions, SearchCriteria: ISearchCriteria, View: IView): ITemporarySearchView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BaseSearchConditions")(BaseSearchConditions)
+    __obj.updateDynamic("SearchCriteria")(SearchCriteria)
+    __obj.updateDynamic("View")(View)
+    __obj.asInstanceOf[ITemporarySearchView]
+  }
+}
+

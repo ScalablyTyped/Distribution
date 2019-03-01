@@ -37,3 +37,70 @@ trait Person extends js.Object {
   var urls: js.UndefOr[js.Array[Url]] = js.undefined
 }
 
+object Person {
+  @scala.inline
+  def apply(
+    coverPhotos: js.Array[CoverPhoto],
+    etag: java.lang.String,
+    locales: js.Array[Locale],
+    metadata: PersonMetadata,
+    names: js.Array[Name],
+    resourceName: java.lang.String,
+    BraggingRights: js.Array[BraggingRights] = null,
+    addresses: js.Array[Address] = null,
+    ageRange: AgeRange = null,
+    biographies: js.Array[Biography] = null,
+    birthdays: js.Array[Birthday] = null,
+    emailAddresses: js.Array[EmailAddress] = null,
+    events: js.Array[Event] = null,
+    genders: js.Array[Gender] = null,
+    imClients: js.Array[ImClient] = null,
+    interests: js.Array[Interest] = null,
+    memberships: js.Array[Membership] = null,
+    nicknames: js.Array[Nickname] = null,
+    occupations: js.Array[Occupation] = null,
+    organizations: js.Array[Organization] = null,
+    phoneNumbers: js.Array[PhoneNumber] = null,
+    photos: js.Array[Photo] = null,
+    relations: js.Array[Relation] = null,
+    relationshipInterests: js.Array[RelationshipInterest] = null,
+    relationshipStatuses: js.Array[RelationshipStatus] = null,
+    residences: js.Array[Residence] = null,
+    skills: js.Array[Skill] = null,
+    taglines: js.Array[Tagline] = null,
+    urls: js.Array[Url] = null
+  ): Person = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coverPhotos")(coverPhotos)
+    __obj.updateDynamic("etag")(etag)
+    __obj.updateDynamic("locales")(locales)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("names")(names)
+    __obj.updateDynamic("resourceName")(resourceName)
+    if (BraggingRights != null) __obj.updateDynamic("BraggingRights")(BraggingRights)
+    if (addresses != null) __obj.updateDynamic("addresses")(addresses)
+    if (ageRange != null) __obj.updateDynamic("ageRange")(ageRange)
+    if (biographies != null) __obj.updateDynamic("biographies")(biographies)
+    if (birthdays != null) __obj.updateDynamic("birthdays")(birthdays)
+    if (emailAddresses != null) __obj.updateDynamic("emailAddresses")(emailAddresses)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (genders != null) __obj.updateDynamic("genders")(genders)
+    if (imClients != null) __obj.updateDynamic("imClients")(imClients)
+    if (interests != null) __obj.updateDynamic("interests")(interests)
+    if (memberships != null) __obj.updateDynamic("memberships")(memberships)
+    if (nicknames != null) __obj.updateDynamic("nicknames")(nicknames)
+    if (occupations != null) __obj.updateDynamic("occupations")(occupations)
+    if (organizations != null) __obj.updateDynamic("organizations")(organizations)
+    if (phoneNumbers != null) __obj.updateDynamic("phoneNumbers")(phoneNumbers)
+    if (photos != null) __obj.updateDynamic("photos")(photos)
+    if (relations != null) __obj.updateDynamic("relations")(relations)
+    if (relationshipInterests != null) __obj.updateDynamic("relationshipInterests")(relationshipInterests)
+    if (relationshipStatuses != null) __obj.updateDynamic("relationshipStatuses")(relationshipStatuses)
+    if (residences != null) __obj.updateDynamic("residences")(residences)
+    if (skills != null) __obj.updateDynamic("skills")(skills)
+    if (taglines != null) __obj.updateDynamic("taglines")(taglines)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[Person]
+  }
+}
+

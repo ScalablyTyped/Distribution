@@ -16,3 +16,12 @@ trait ASPxClientFilterAppliedEventArgs extends ASPxClientEventArgs {
   var filterExpression: java.lang.String
 }
 
+object ASPxClientFilterAppliedEventArgs {
+  @scala.inline
+  def apply(filterExpression: java.lang.String): ASPxClientFilterAppliedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filterExpression")(filterExpression)
+    __obj.asInstanceOf[ASPxClientFilterAppliedEventArgs]
+  }
+}
+

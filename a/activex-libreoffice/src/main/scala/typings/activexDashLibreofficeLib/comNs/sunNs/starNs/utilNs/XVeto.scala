@@ -17,3 +17,13 @@ trait XVeto extends js.Object {
   var Reason: java.lang.String
 }
 
+object XVeto {
+  @scala.inline
+  def apply(Details: js.Any, Reason: java.lang.String): XVeto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Details")(Details)
+    __obj.updateDynamic("Reason")(Reason)
+    __obj.asInstanceOf[XVeto]
+  }
+}
+

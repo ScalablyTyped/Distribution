@@ -13,3 +13,22 @@ trait JInfoMap extends js.Object {
   var myVersion: java.lang.String
 }
 
+object JInfoMap {
+  @scala.inline
+  def apply(
+    myAppKey: java.lang.String,
+    myDeviceId: java.lang.String,
+    myImei: java.lang.String,
+    myPackageName: java.lang.String,
+    myVersion: java.lang.String
+  ): JInfoMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("myAppKey")(myAppKey)
+    __obj.updateDynamic("myDeviceId")(myDeviceId)
+    __obj.updateDynamic("myImei")(myImei)
+    __obj.updateDynamic("myPackageName")(myPackageName)
+    __obj.updateDynamic("myVersion")(myVersion)
+    __obj.asInstanceOf[JInfoMap]
+  }
+}
+

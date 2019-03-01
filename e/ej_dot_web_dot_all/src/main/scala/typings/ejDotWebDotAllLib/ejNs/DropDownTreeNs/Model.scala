@@ -132,3 +132,78 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    Create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    blur: js.Function1[/* e */ BlurEventArgs, scala.Unit] = null,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    checkChange: js.Function1[/* e */ CheckChangeEventArgs, scala.Unit] = null,
+    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    delimiter: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    filtering: js.Function1[/* e */ FilteringEventArgs, scala.Unit] = null,
+    focus: js.Function1[/* e */ FocusEventArgs, scala.Unit] = null,
+    footerTemplate: java.lang.String = null,
+    fullPathDelimiter: java.lang.String = null,
+    headerTemplate: java.lang.String = null,
+    height: java.lang.String | scala.Double = null,
+    locale: java.lang.String = null,
+    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    popupSettings: PopupSettings = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    targetID: java.lang.String = null,
+    textMode: ejDotWebDotAllLib.ejNs.Textmode | java.lang.String = null,
+    treeViewSettings: js.Any = null,
+    validationMessage: js.Any = null,
+    validationRules: js.Any = null,
+    value: java.lang.String = null,
+    watermarkText: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (Create != null) __obj.updateDynamic("Create")(Create)
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (blur != null) __obj.updateDynamic("blur")(blur)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (checkChange != null) __obj.updateDynamic("checkChange")(checkChange)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate)
+    if (fullPathDelimiter != null) __obj.updateDynamic("fullPathDelimiter")(fullPathDelimiter)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (popupSettings != null) __obj.updateDynamic("popupSettings")(popupSettings)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (targetID != null) __obj.updateDynamic("targetID")(targetID)
+    if (textMode != null) __obj.updateDynamic("textMode")(textMode.asInstanceOf[js.Any])
+    if (treeViewSettings != null) __obj.updateDynamic("treeViewSettings")(treeViewSettings)
+    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (watermarkText != null) __obj.updateDynamic("watermarkText")(watermarkText)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

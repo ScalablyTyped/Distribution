@@ -23,3 +23,42 @@ trait CommentsResource extends js.Object {
   def update(request: gapiDotClientDotYoutubeLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[Comment]
 }
 
+object CommentsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
+    ],
+    list: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyMaxResults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CommentListResponse]
+    ],
+    markAsSpam: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltFieldsIdKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    setModerationStatus: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_AltBanAuthor, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    update: js.Function1[
+      gapiDotClientDotYoutubeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Comment]
+    ]
+  ): CommentsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("markAsSpam")(markAsSpam)
+    __obj.updateDynamic("setModerationStatus")(setModerationStatus)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[CommentsResource]
+  }
+}
+

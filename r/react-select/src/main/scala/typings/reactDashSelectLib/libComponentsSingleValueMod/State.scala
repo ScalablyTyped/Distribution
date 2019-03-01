@@ -10,3 +10,12 @@ trait State extends js.Object {
   var isDisabled: scala.Boolean
 }
 
+object State {
+  @scala.inline
+  def apply(isDisabled: scala.Boolean): State = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDisabled")(isDisabled)
+    __obj.asInstanceOf[State]
+  }
+}
+

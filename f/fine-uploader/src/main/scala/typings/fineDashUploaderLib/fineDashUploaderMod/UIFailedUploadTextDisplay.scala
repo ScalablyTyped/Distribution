@@ -28,3 +28,18 @@ trait UIFailedUploadTextDisplay extends js.Object {
   var responseProperty: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UIFailedUploadTextDisplay {
+  @scala.inline
+  def apply(
+    enableTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: java.lang.String = null,
+    responseProperty: java.lang.String = null
+  ): UIFailedUploadTextDisplay = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableTooltip)) __obj.updateDynamic("enableTooltip")(enableTooltip)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (responseProperty != null) __obj.updateDynamic("responseProperty")(responseProperty)
+    __obj.asInstanceOf[UIFailedUploadTextDisplay]
+  }
+}
+

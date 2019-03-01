@@ -20,3 +20,18 @@ trait RedisOptions extends js.Object {
   var port: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RedisOptions {
+  @scala.inline
+  def apply(
+    host: java.lang.String = null,
+    options: redisLib.redisMod.ClientOpts = null,
+    port: scala.Int | scala.Double = null
+  ): RedisOptions = {
+    val __obj = js.Dynamic.literal()
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RedisOptions]
+  }
+}
+

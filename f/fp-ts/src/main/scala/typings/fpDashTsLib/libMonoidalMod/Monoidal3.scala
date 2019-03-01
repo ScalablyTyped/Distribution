@@ -11,3 +11,28 @@ trait Monoidal3[F /* <: fpDashTsLib.libHKTMod.URIS3 */]
   def unit[U, L](): fpDashTsLib.libHKTMod.Type3[F, U, L, scala.Unit]
 }
 
+object Monoidal3 {
+  @scala.inline
+  def apply[F /* <: fpDashTsLib.libHKTMod.URIS3 */](
+    URI: F,
+    map: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      js.Function1[js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any]
+    ],
+    mult: js.Function2[
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Any], 
+      fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, js.Tuple2[js.Any, js.Any]]
+    ],
+    unit: js.Function0[fpDashTsLib.libHKTMod.Type3[F, js.Any, js.Any, scala.Unit]]
+  ): Monoidal3[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("mult")(mult)
+    __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[Monoidal3[F]]
+  }
+}
+

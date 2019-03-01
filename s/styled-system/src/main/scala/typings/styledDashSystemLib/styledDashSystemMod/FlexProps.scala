@@ -15,3 +15,12 @@ trait FlexProps[TLength] extends js.Object {
   var flex: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.FlexProperty[TLength]]] = js.undefined
 }
 
+object FlexProps {
+  @scala.inline
+  def apply[TLength](flex: ResponsiveValue[csstypeLib.csstypeMod.FlexProperty[TLength]] = null): FlexProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlexProps[TLength]]
+  }
+}
+

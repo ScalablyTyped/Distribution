@@ -13,3 +13,22 @@ trait StockChartValueAxisItemNotesDataItem extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object StockChartValueAxisItemNotesDataItem {
+  @scala.inline
+  def apply(
+    icon: StockChartValueAxisItemNotesDataItemIcon = null,
+    label: StockChartValueAxisItemNotesDataItemLabel = null,
+    line: StockChartValueAxisItemNotesDataItemLine = null,
+    position: java.lang.String = null,
+    value: js.Any = null
+  ): StockChartValueAxisItemNotesDataItem = {
+    val __obj = js.Dynamic.literal()
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (line != null) __obj.updateDynamic("line")(line)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[StockChartValueAxisItemNotesDataItem]
+  }
+}
+

@@ -26,3 +26,30 @@ trait Icons extends js.Object {
   var up: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Icons {
+  @scala.inline
+  def apply(
+    clear: java.lang.String = null,
+    close: java.lang.String = null,
+    date: java.lang.String = null,
+    down: java.lang.String = null,
+    next: java.lang.String = null,
+    previous: java.lang.String = null,
+    time: java.lang.String = null,
+    today: java.lang.String = null,
+    up: java.lang.String = null
+  ): Icons = {
+    val __obj = js.Dynamic.literal()
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (down != null) __obj.updateDynamic("down")(down)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (previous != null) __obj.updateDynamic("previous")(previous)
+    if (time != null) __obj.updateDynamic("time")(time)
+    if (today != null) __obj.updateDynamic("today")(today)
+    if (up != null) __obj.updateDynamic("up")(up)
+    __obj.asInstanceOf[Icons]
+  }
+}
+

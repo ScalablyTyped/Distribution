@@ -10,3 +10,13 @@ trait Anon_Compressed extends js.Object {
   var privateKey: nodeLib.Buffer
 }
 
+object Anon_Compressed {
+  @scala.inline
+  def apply(compressed: scala.Boolean, privateKey: nodeLib.Buffer): Anon_Compressed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("compressed")(compressed)
+    __obj.updateDynamic("privateKey")(privateKey)
+    __obj.asInstanceOf[Anon_Compressed]
+  }
+}
+

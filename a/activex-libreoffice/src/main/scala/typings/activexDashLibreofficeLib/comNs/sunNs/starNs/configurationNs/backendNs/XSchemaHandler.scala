@@ -152,3 +152,48 @@ trait XSchemaHandler
   def startSetTemplate(aTemplate: TemplateIdentifier, aAttributes: scala.Double, aItemType: TemplateIdentifier): scala.Unit
 }
 
+object XSchemaHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addInstance: js.Function2[java.lang.String, TemplateIdentifier, scala.Unit],
+    addItemType: js.Function1[TemplateIdentifier, scala.Unit],
+    addProperty: js.Function3[java.lang.String, scala.Double, activexDashLibreofficeLib.`type`, scala.Unit],
+    addPropertyWithDefault: js.Function3[java.lang.String, scala.Double, js.Any, scala.Unit],
+    endComponent: js.Function0[scala.Unit],
+    endNode: js.Function0[scala.Unit],
+    endSchema: js.Function0[scala.Unit],
+    endTemplate: js.Function0[scala.Unit],
+    importComponent: js.Function1[java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    startComponent: js.Function1[java.lang.String, scala.Unit],
+    startGroup: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    startGroupTemplate: js.Function2[TemplateIdentifier, scala.Double, scala.Unit],
+    startSchema: js.Function0[scala.Unit],
+    startSet: js.Function3[java.lang.String, scala.Double, TemplateIdentifier, scala.Unit],
+    startSetTemplate: js.Function3[TemplateIdentifier, scala.Double, TemplateIdentifier, scala.Unit]
+  ): XSchemaHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addInstance")(addInstance)
+    __obj.updateDynamic("addItemType")(addItemType)
+    __obj.updateDynamic("addProperty")(addProperty)
+    __obj.updateDynamic("addPropertyWithDefault")(addPropertyWithDefault)
+    __obj.updateDynamic("endComponent")(endComponent)
+    __obj.updateDynamic("endNode")(endNode)
+    __obj.updateDynamic("endSchema")(endSchema)
+    __obj.updateDynamic("endTemplate")(endTemplate)
+    __obj.updateDynamic("importComponent")(importComponent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("startComponent")(startComponent)
+    __obj.updateDynamic("startGroup")(startGroup)
+    __obj.updateDynamic("startGroupTemplate")(startGroupTemplate)
+    __obj.updateDynamic("startSchema")(startSchema)
+    __obj.updateDynamic("startSet")(startSet)
+    __obj.updateDynamic("startSetTemplate")(startSetTemplate)
+    __obj.asInstanceOf[XSchemaHandler]
+  }
+}
+

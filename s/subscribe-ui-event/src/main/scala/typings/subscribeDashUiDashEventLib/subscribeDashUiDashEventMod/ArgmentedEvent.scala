@@ -14,3 +14,23 @@ trait ArgmentedEvent[T /* <: EventType */] extends js.Object {
   var `type`: T
 }
 
+object ArgmentedEvent {
+  @scala.inline
+  def apply[T /* <: EventType */](
+    mainType: java.lang.String,
+    resize: subscribeDashUiDashEventLib.Anon_Height,
+    scroll: subscribeDashUiDashEventLib.Anon_Delta,
+    subType: java.lang.String,
+    touch: subscribeDashUiDashEventLib.`Anon_`,
+    `type`: T
+  ): ArgmentedEvent[T] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("mainType")(mainType)
+    __obj.updateDynamic("resize")(resize)
+    __obj.updateDynamic("scroll")(scroll)
+    __obj.updateDynamic("subType")(subType)
+    __obj.updateDynamic("touch")(touch)
+    __obj.asInstanceOf[ArgmentedEvent[T]]
+  }
+}
+

@@ -12,3 +12,20 @@ trait IApprovalAssignmentClassInfo extends js.Object {
   def Clone(): IApprovalAssignmentClassInfo
 }
 
+object IApprovalAssignmentClassInfo {
+  @scala.inline
+  def apply(
+    AnyAssigneeApproves: scala.Boolean,
+    Clone: js.Function0[IApprovalAssignmentClassInfo],
+    SignatureForApproval: ISignatureSettings,
+    SignatureForRejection: ISignatureSettings
+  ): IApprovalAssignmentClassInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AnyAssigneeApproves")(AnyAssigneeApproves)
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("SignatureForApproval")(SignatureForApproval)
+    __obj.updateDynamic("SignatureForRejection")(SignatureForRejection)
+    __obj.asInstanceOf[IApprovalAssignmentClassInfo]
+  }
+}
+

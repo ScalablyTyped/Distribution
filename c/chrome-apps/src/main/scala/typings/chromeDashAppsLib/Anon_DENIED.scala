@@ -10,3 +10,16 @@ trait Anon_DENIED extends js.Object {
   var GRANTED: chromeDashAppsLib.chromeDashAppsLibStrings.granted
 }
 
+object Anon_DENIED {
+  @scala.inline
+  def apply(
+    DENIED: chromeDashAppsLib.chromeDashAppsLibStrings.denied,
+    GRANTED: chromeDashAppsLib.chromeDashAppsLibStrings.granted
+  ): Anon_DENIED = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DENIED")(DENIED)
+    __obj.updateDynamic("GRANTED")(GRANTED)
+    __obj.asInstanceOf[Anon_DENIED]
+  }
+}
+

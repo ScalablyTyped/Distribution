@@ -26,3 +26,26 @@ trait SignaleOptions[TTypes /* <: java.lang.String */] extends js.Object {
   var types: js.UndefOr[stdLib.Partial[stdLib.Record[TTypes, CommandType]]] = js.undefined
 }
 
+object SignaleOptions {
+  @scala.inline
+  def apply[TTypes /* <: java.lang.String */](
+    config: SignaleConfig = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    interactive: js.UndefOr[scala.Boolean] = js.undefined,
+    scope: java.lang.String = null,
+    stream: nodeLib.NodeJSNs.WriteStream = null,
+    timers: stdLib.Map[java.lang.String, stdLib.Date] = null,
+    types: stdLib.Partial[stdLib.Record[TTypes, CommandType]] = null
+  ): SignaleOptions[TTypes] = {
+    val __obj = js.Dynamic.literal()
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(interactive)) __obj.updateDynamic("interactive")(interactive)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (stream != null) __obj.updateDynamic("stream")(stream)
+    if (timers != null) __obj.updateDynamic("timers")(timers)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[SignaleOptions[TTypes]]
+  }
+}
+

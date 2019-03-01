@@ -89,3 +89,56 @@ trait ProductVariant
   var weight_unit: java.lang.String
 }
 
+object ProductVariant {
+  @scala.inline
+  def apply(
+    barcode: java.lang.String,
+    created_at: java.lang.String,
+    fulfillment_service: java.lang.String,
+    grams: scala.Double,
+    inventory_item_id: scala.Double,
+    inventory_management: java.lang.String,
+    inventory_policy: java.lang.String,
+    inventory_quantity: scala.Double,
+    option1: java.lang.String,
+    position: scala.Double,
+    price: scala.Double,
+    product_id: scala.Double,
+    requires_shipping: scala.Boolean,
+    sku: java.lang.String,
+    taxable: scala.Boolean,
+    title: java.lang.String,
+    updated_at: java.lang.String,
+    weight: scala.Double,
+    weight_unit: java.lang.String,
+    admin_graphql_api_id: java.lang.String = null,
+    compare_at_price: js.Any = null,
+    id: scala.Int | scala.Double = null
+  ): ProductVariant = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("barcode")(barcode)
+    __obj.updateDynamic("created_at")(created_at)
+    __obj.updateDynamic("fulfillment_service")(fulfillment_service)
+    __obj.updateDynamic("grams")(grams)
+    __obj.updateDynamic("inventory_item_id")(inventory_item_id)
+    __obj.updateDynamic("inventory_management")(inventory_management)
+    __obj.updateDynamic("inventory_policy")(inventory_policy)
+    __obj.updateDynamic("inventory_quantity")(inventory_quantity)
+    __obj.updateDynamic("option1")(option1)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("price")(price)
+    __obj.updateDynamic("product_id")(product_id)
+    __obj.updateDynamic("requires_shipping")(requires_shipping)
+    __obj.updateDynamic("sku")(sku)
+    __obj.updateDynamic("taxable")(taxable)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("updated_at")(updated_at)
+    __obj.updateDynamic("weight")(weight)
+    __obj.updateDynamic("weight_unit")(weight_unit)
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (compare_at_price != null) __obj.updateDynamic("compare_at_price")(compare_at_price)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProductVariant]
+  }
+}
+

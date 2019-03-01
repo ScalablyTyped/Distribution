@@ -16,3 +16,13 @@ trait Anon_FieldsRequestBody extends js.Object {
   var fields: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_FieldsRequestBody {
+  @scala.inline
+  def apply(RequestBody: java.lang.String = null, fields: java.lang.String = null): Anon_FieldsRequestBody = {
+    val __obj = js.Dynamic.literal()
+    if (RequestBody != null) __obj.updateDynamic("RequestBody")(RequestBody)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[Anon_FieldsRequestBody]
+  }
+}
+

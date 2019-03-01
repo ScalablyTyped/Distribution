@@ -32,3 +32,36 @@ trait Page extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Page {
+  @scala.inline
+  def apply(
+    author: gapiDotClientDotBloggerLib.Anon_DisplayName = null,
+    blog: gapiDotClientDotBloggerLib.Anon_Id = null,
+    content: java.lang.String = null,
+    etag: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    published: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    status: java.lang.String = null,
+    title: java.lang.String = null,
+    updated: java.lang.String = null,
+    url: java.lang.String = null
+  ): Page = {
+    val __obj = js.Dynamic.literal()
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (blog != null) __obj.updateDynamic("blog")(blog)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (published != null) __obj.updateDynamic("published")(published)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Page]
+  }
+}
+

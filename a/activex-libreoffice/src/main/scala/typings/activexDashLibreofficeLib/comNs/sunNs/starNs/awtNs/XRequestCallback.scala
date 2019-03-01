@@ -15,3 +15,12 @@ trait XRequestCallback extends js.Object {
   def addCallback(xCallback: XCallback, aData: js.Any): scala.Unit
 }
 
+object XRequestCallback {
+  @scala.inline
+  def apply(addCallback: js.Function2[XCallback, js.Any, scala.Unit]): XRequestCallback = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addCallback")(addCallback)
+    __obj.asInstanceOf[XRequestCallback]
+  }
+}
+

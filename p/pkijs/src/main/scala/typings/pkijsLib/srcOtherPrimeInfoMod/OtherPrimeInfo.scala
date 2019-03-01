@@ -19,3 +19,26 @@ trait OtherPrimeInfo extends js.Object {
   def toSchema(): js.Any
 }
 
+object OtherPrimeInfo {
+  @scala.inline
+  def apply(
+    coefficient: asn1jsLib.asn1jsMod.Integer,
+    exponent: asn1jsLib.asn1jsMod.Integer,
+    fromJSON: js.Function1[pkijsLib.JsonOtherPrimeInfo, scala.Unit],
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    prime: asn1jsLib.asn1jsMod.Integer,
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any]
+  ): OtherPrimeInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coefficient")(coefficient)
+    __obj.updateDynamic("exponent")(exponent)
+    __obj.updateDynamic("fromJSON")(fromJSON)
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("prime")(prime)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    __obj.asInstanceOf[OtherPrimeInfo]
+  }
+}
+

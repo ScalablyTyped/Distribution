@@ -14,3 +14,12 @@ trait GetReportsRequest extends js.Object {
   var reportRequests: js.UndefOr[js.Array[ReportRequest]] = js.undefined
 }
 
+object GetReportsRequest {
+  @scala.inline
+  def apply(reportRequests: js.Array[ReportRequest] = null): GetReportsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (reportRequests != null) __obj.updateDynamic("reportRequests")(reportRequests)
+    __obj.asInstanceOf[GetReportsRequest]
+  }
+}
+

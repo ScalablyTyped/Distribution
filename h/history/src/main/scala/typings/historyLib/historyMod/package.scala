@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object historyMod {
-  type Action = historyLib.historyLibStrings.PUSH | historyLib.historyLibStrings.POP | historyLib.historyLibStrings.REPLACE
   type Hash = historyLib.historyMod.HistoryNs.Hash
   type Href = historyLib.historyMod.HistoryNs.Href
   type LocationDescriptor[S] = historyLib.historyMod.HistoryNs.LocationDescriptor[S]

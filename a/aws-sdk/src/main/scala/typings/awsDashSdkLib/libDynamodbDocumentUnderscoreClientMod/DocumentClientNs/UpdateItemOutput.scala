@@ -20,3 +20,18 @@ trait UpdateItemOutput extends js.Object {
   var ItemCollectionMetrics: js.UndefOr[ItemCollectionMetrics] = js.undefined
 }
 
+object UpdateItemOutput {
+  @scala.inline
+  def apply(
+    Attributes: AttributeMap = null,
+    ConsumedCapacity: ConsumedCapacity = null,
+    ItemCollectionMetrics: ItemCollectionMetrics = null
+  ): UpdateItemOutput = {
+    val __obj = js.Dynamic.literal()
+    if (Attributes != null) __obj.updateDynamic("Attributes")(Attributes)
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
+    if (ItemCollectionMetrics != null) __obj.updateDynamic("ItemCollectionMetrics")(ItemCollectionMetrics)
+    __obj.asInstanceOf[UpdateItemOutput]
+  }
+}
+

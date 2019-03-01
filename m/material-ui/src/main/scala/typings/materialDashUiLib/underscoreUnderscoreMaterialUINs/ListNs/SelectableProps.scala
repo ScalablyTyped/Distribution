@@ -17,3 +17,22 @@ trait SelectableProps extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object SelectableProps {
+  @scala.inline
+  def apply(
+    onChange: js.Function2[
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[js.Object, reactLib.Event], 
+      /* value */ js.Any, 
+      scala.Unit
+    ] = null,
+    selectedItemStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    value: js.Any = null
+  ): SelectableProps = {
+    val __obj = js.Dynamic.literal()
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (selectedItemStyle != null) __obj.updateDynamic("selectedItemStyle")(selectedItemStyle)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SelectableProps]
+  }
+}
+

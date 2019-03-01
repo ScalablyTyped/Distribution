@@ -13,3 +13,12 @@ trait AuthorizationConfig extends js.Object {
   var provider: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthorizationConfig {
+  @scala.inline
+  def apply(provider: java.lang.String = null): AuthorizationConfig = {
+    val __obj = js.Dynamic.literal()
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    __obj.asInstanceOf[AuthorizationConfig]
+  }
+}
+

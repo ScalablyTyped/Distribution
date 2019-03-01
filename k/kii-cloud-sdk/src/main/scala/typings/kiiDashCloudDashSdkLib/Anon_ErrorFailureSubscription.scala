@@ -10,3 +10,16 @@ trait Anon_ErrorFailureSubscription[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.Ki
   def success(subscription: kiiDashCloudDashSdkLib.KiiCloudNs.KiiPushSubscription, topic: T): js.Any
 }
 
+object Anon_ErrorFailureSubscription {
+  @scala.inline
+  def apply[T /* <: kiiDashCloudDashSdkLib.KiiCloudNs.KiiBucket | kiiDashCloudDashSdkLib.KiiCloudNs.KiiTopic */](
+    failure: js.Function1[stdLib.Error, js.Any],
+    success: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiPushSubscription, T, js.Any]
+  ): Anon_ErrorFailureSubscription[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failure")(failure)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_ErrorFailureSubscription[T]]
+  }
+}
+

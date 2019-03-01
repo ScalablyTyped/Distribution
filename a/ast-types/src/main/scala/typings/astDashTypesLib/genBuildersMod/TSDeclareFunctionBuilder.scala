@@ -8,16 +8,27 @@ import scala.scalajs.js.annotation._
 @js.native
 trait TSDeclareFunctionBuilder extends js.Object {
   def apply(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind]
   ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
   def apply(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.NoopKind
   ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
   def apply(
-    id: astDashTypesLib.genKindsMod.IdentifierKind | js.UndefOr[scala.Nothing],
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
+  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  def apply(id: js.UndefOr[scala.Nothing], params: js.Array[astDashTypesLib.genKindsMod.PatternKind]): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
+    params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
+    returnType: astDashTypesLib.genKindsMod.NoopKind
+  ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native
+  def apply(
+    id: js.UndefOr[scala.Nothing],
     params: js.Array[astDashTypesLib.genKindsMod.PatternKind],
     returnType: astDashTypesLib.genKindsMod.TSTypeAnnotationKind
   ): astDashTypesLib.genNodesMod.TSDeclareFunction = js.native

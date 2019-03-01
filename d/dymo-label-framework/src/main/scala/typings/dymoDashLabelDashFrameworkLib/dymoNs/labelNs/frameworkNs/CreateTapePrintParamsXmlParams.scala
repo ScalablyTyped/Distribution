@@ -18,3 +18,22 @@ trait CreateTapePrintParamsXmlParams extends js.Object {
   var jobTitle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateTapePrintParamsXmlParams {
+  @scala.inline
+  def apply(
+    alignment: TapeAlignment = null,
+    copies: scala.Int | scala.Double = null,
+    cutMode: TapeCutMode = null,
+    flowDirection: FlowDirection = null,
+    jobTitle: java.lang.String = null
+  ): CreateTapePrintParamsXmlParams = {
+    val __obj = js.Dynamic.literal()
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (copies != null) __obj.updateDynamic("copies")(copies.asInstanceOf[js.Any])
+    if (cutMode != null) __obj.updateDynamic("cutMode")(cutMode)
+    if (flowDirection != null) __obj.updateDynamic("flowDirection")(flowDirection)
+    if (jobTitle != null) __obj.updateDynamic("jobTitle")(jobTitle)
+    __obj.asInstanceOf[CreateTapePrintParamsXmlParams]
+  }
+}
+

@@ -11,3 +11,14 @@ trait DialogContentProps extends js.Object {
   ] = js.undefined
 }
 
+object DialogContentProps {
+  @scala.inline
+  def apply(
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): DialogContentProps = {
+    val __obj = js.Dynamic.literal()
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DialogContentProps]
+  }
+}
+

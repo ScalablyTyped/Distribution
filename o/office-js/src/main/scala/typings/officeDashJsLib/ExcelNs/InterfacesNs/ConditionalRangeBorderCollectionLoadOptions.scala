@@ -37,3 +37,20 @@ trait ConditionalRangeBorderCollectionLoadOptions extends js.Object {
   var style: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConditionalRangeBorderCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    color: js.UndefOr[scala.Boolean] = js.undefined,
+    sideIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    style: js.UndefOr[scala.Boolean] = js.undefined
+  ): ConditionalRangeBorderCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(color)) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(sideIndex)) __obj.updateDynamic("sideIndex")(sideIndex)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ConditionalRangeBorderCollectionLoadOptions]
+  }
+}
+

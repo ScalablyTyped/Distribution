@@ -38,3 +38,20 @@ trait ImportReadGroupSetsRequest extends js.Object {
   var sourceUris: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ImportReadGroupSetsRequest {
+  @scala.inline
+  def apply(
+    datasetId: java.lang.String = null,
+    partitionStrategy: java.lang.String = null,
+    referenceSetId: java.lang.String = null,
+    sourceUris: js.Array[java.lang.String] = null
+  ): ImportReadGroupSetsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
+    if (partitionStrategy != null) __obj.updateDynamic("partitionStrategy")(partitionStrategy)
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
+    if (sourceUris != null) __obj.updateDynamic("sourceUris")(sourceUris)
+    __obj.asInstanceOf[ImportReadGroupSetsRequest]
+  }
+}
+

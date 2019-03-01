@@ -26,3 +26,20 @@ trait JobOptions extends js.Object {
   var priority: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object JobOptions {
+  @scala.inline
+  def apply(
+    concurrency: scala.Int | scala.Double = null,
+    lockLifetime: scala.Int | scala.Double = null,
+    lockLimit: scala.Int | scala.Double = null,
+    priority: java.lang.String | scala.Double = null
+  ): JobOptions = {
+    val __obj = js.Dynamic.literal()
+    if (concurrency != null) __obj.updateDynamic("concurrency")(concurrency.asInstanceOf[js.Any])
+    if (lockLifetime != null) __obj.updateDynamic("lockLifetime")(lockLifetime.asInstanceOf[js.Any])
+    if (lockLimit != null) __obj.updateDynamic("lockLimit")(lockLimit.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JobOptions]
+  }
+}
+

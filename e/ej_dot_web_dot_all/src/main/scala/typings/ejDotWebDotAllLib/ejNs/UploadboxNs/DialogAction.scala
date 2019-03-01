@@ -20,3 +20,20 @@ trait DialogAction extends js.Object {
   var modal: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DialogAction {
+  @scala.inline
+  def apply(
+    closeOnComplete: js.UndefOr[scala.Boolean] = js.undefined,
+    content: java.lang.String = null,
+    drag: js.UndefOr[scala.Boolean] = js.undefined,
+    modal: js.UndefOr[scala.Boolean] = js.undefined
+  ): DialogAction = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(closeOnComplete)) __obj.updateDynamic("closeOnComplete")(closeOnComplete)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (!js.isUndefined(drag)) __obj.updateDynamic("drag")(drag)
+    if (!js.isUndefined(modal)) __obj.updateDynamic("modal")(modal)
+    __obj.asInstanceOf[DialogAction]
+  }
+}
+

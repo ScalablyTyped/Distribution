@@ -14,3 +14,12 @@ trait DefineContextOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DefineContextOptions {
+  @scala.inline
+  def apply(name: java.lang.String = null): DefineContextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[DefineContextOptions]
+  }
+}
+

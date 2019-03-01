@@ -21,3 +21,30 @@ trait EllipseShape
   var CircleStartAngle: scala.Double
 }
 
+object EllipseShape {
+  @scala.inline
+  def apply(
+    CircleEndAngle: scala.Double,
+    CircleKind: CircleKind,
+    CircleStartAngle: scala.Double,
+    FillProperties: FillProperties = null,
+    LineProperties: LineProperties = null,
+    RotationDescriptor: RotationDescriptor = null,
+    ShadowProperties: ShadowProperties = null,
+    Shape: Shape = null,
+    Text: Text = null
+  ): EllipseShape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CircleEndAngle")(CircleEndAngle)
+    __obj.updateDynamic("CircleKind")(CircleKind)
+    __obj.updateDynamic("CircleStartAngle")(CircleStartAngle)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, FillProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
+    js.Dynamic.global.Object.assign(__obj, Text)
+    __obj.asInstanceOf[EllipseShape]
+  }
+}
+

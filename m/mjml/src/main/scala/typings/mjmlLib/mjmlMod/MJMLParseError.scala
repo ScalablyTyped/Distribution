@@ -12,3 +12,20 @@ trait MJMLParseError extends js.Object {
   var tagName: java.lang.String
 }
 
+object MJMLParseError {
+  @scala.inline
+  def apply(
+    formattedMessage: java.lang.String,
+    line: scala.Double,
+    message: java.lang.String,
+    tagName: java.lang.String
+  ): MJMLParseError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("formattedMessage")(formattedMessage)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("tagName")(tagName)
+    __obj.asInstanceOf[MJMLParseError]
+  }
+}
+

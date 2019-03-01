@@ -16,3 +16,12 @@ trait ChecksumOptions extends js.Object {
   var algorithm: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChecksumOptions {
+  @scala.inline
+  def apply(algorithm: java.lang.String = null): ChecksumOptions = {
+    val __obj = js.Dynamic.literal()
+    if (algorithm != null) __obj.updateDynamic("algorithm")(algorithm)
+    __obj.asInstanceOf[ChecksumOptions]
+  }
+}
+

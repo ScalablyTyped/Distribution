@@ -602,6 +602,12 @@ object MediaStoreNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[StopAccessLoggingOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _ContainerStatus extends js.Object
+  
+  trait _MethodName extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AllowedHeaders = js.Array[Header]
   type AllowedMethods = js.Array[MethodName]
@@ -613,17 +619,17 @@ object MediaStoreNs extends js.Object {
   type ContainerListLimit = scala.Double
   type ContainerName = java.lang.String
   type ContainerPolicy = java.lang.String
-  type ContainerStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type ContainerStatus = _ContainerStatus | java.lang.String
   type CorsPolicy = js.Array[CorsRule]
   type Endpoint = java.lang.String
   type ExposeHeaders = js.Array[Header]
   type Header = java.lang.String
   type LifecyclePolicy = java.lang.String
   type MaxAgeSeconds = scala.Double
-  type MethodName = awsDashSdkLib.awsDashSdkLibStrings.PUT | awsDashSdkLib.awsDashSdkLibStrings.GET | awsDashSdkLib.awsDashSdkLibStrings.DELETE | awsDashSdkLib.awsDashSdkLibStrings.HEAD | java.lang.String
+  type MethodName = _MethodName | java.lang.String
   type Origin = java.lang.String
   type PaginationToken = java.lang.String
   type TimeStamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-09-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -19,3 +19,20 @@ trait Location extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Location {
+  @scala.inline
+  def apply(
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    locationId: java.lang.String = null,
+    metadata: stdLib.Record[java.lang.String, _] = null,
+    name: java.lang.String = null
+  ): Location = {
+    val __obj = js.Dynamic.literal()
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Location]
+  }
+}
+

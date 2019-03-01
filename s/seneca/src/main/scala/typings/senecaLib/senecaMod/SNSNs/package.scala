@@ -25,9 +25,6 @@ package object SNSNs {
   type ExecutorCallback = js.Function2[/* err */ stdLib.Error, /* result */ js.Any, scala.Unit]
   type ExecutorWorker = js.Function1[/* callback */ js.Any, scala.Unit]
   type GlobalErrorHandler = js.Function1[/* error */ stdLib.Error, scala.Unit]
-  // { level: 'warn+' }
-  type LogLevel = senecaLib.senecaLibStrings.none | senecaLib.senecaLibStrings.`debug+` | senecaLib.senecaLibStrings.`info+` | senecaLib.senecaLibStrings.`warn+`
-  type LogSpec = senecaLib.senecaLibStrings.quiet | senecaLib.senecaLibStrings.silent | senecaLib.senecaLibStrings.any | senecaLib.senecaLibStrings.all | senecaLib.senecaLibStrings.print | senecaLib.senecaLibStrings.standard | senecaLib.senecaLibStrings.test
   type MessagePayload[T] = PartialMessagePayload with T
   type Pattern = java.lang.String | MinimalPattern
   type PluginModule = js.Function1[/* options */ js.Any, scala.Unit]

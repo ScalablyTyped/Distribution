@@ -19,3 +19,20 @@ trait ScreenshotCluster extends js.Object {
   var screens: js.UndefOr[js.Array[Screen]] = js.undefined
 }
 
+object ScreenshotCluster {
+  @scala.inline
+  def apply(
+    activity: java.lang.String = null,
+    clusterId: java.lang.String = null,
+    keyScreen: Screen = null,
+    screens: js.Array[Screen] = null
+  ): ScreenshotCluster = {
+    val __obj = js.Dynamic.literal()
+    if (activity != null) __obj.updateDynamic("activity")(activity)
+    if (clusterId != null) __obj.updateDynamic("clusterId")(clusterId)
+    if (keyScreen != null) __obj.updateDynamic("keyScreen")(keyScreen)
+    if (screens != null) __obj.updateDynamic("screens")(screens)
+    __obj.asInstanceOf[ScreenshotCluster]
+  }
+}
+

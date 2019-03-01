@@ -21,3 +21,36 @@ trait MapReduceOptions extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MapReduceOptions {
+  @scala.inline
+  def apply(
+    bypassDocumentValidation: js.UndefOr[scala.Boolean] = js.undefined,
+    finalize: js.Function | java.lang.String = null,
+    jsMode: js.UndefOr[scala.Boolean] = js.undefined,
+    keeptemp: js.UndefOr[scala.Boolean] = js.undefined,
+    limit: scala.Int | scala.Double = null,
+    out: js.Object = null,
+    query: js.Object = null,
+    readPreference: ReadPreference | java.lang.String = null,
+    scope: js.Object = null,
+    session: ClientSession = null,
+    sort: js.Object = null,
+    verbose: js.UndefOr[scala.Boolean] = js.undefined
+  ): MapReduceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bypassDocumentValidation)) __obj.updateDynamic("bypassDocumentValidation")(bypassDocumentValidation)
+    if (finalize != null) __obj.updateDynamic("finalize")(finalize.asInstanceOf[js.Any])
+    if (!js.isUndefined(jsMode)) __obj.updateDynamic("jsMode")(jsMode)
+    if (!js.isUndefined(keeptemp)) __obj.updateDynamic("keeptemp")(keeptemp)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (out != null) __obj.updateDynamic("out")(out)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (session != null) __obj.updateDynamic("session")(session)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[MapReduceOptions]
+  }
+}
+

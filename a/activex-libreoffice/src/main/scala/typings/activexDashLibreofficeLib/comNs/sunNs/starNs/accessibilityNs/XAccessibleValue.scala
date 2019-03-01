@@ -68,3 +68,32 @@ trait XAccessibleValue
   def setCurrentValue(aNumber: js.Any): scala.Boolean
 }
 
+object XAccessibleValue {
+  @scala.inline
+  def apply(
+    CurrentValue: js.Any,
+    MaximumValue: js.Any,
+    MinimumValue: js.Any,
+    acquire: js.Function0[scala.Unit],
+    getCurrentValue: js.Function0[js.Any],
+    getMaximumValue: js.Function0[js.Any],
+    getMinimumValue: js.Function0[js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setCurrentValue: js.Function1[js.Any, scala.Boolean]
+  ): XAccessibleValue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CurrentValue")(CurrentValue)
+    __obj.updateDynamic("MaximumValue")(MaximumValue)
+    __obj.updateDynamic("MinimumValue")(MinimumValue)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCurrentValue")(getCurrentValue)
+    __obj.updateDynamic("getMaximumValue")(getMaximumValue)
+    __obj.updateDynamic("getMinimumValue")(getMinimumValue)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setCurrentValue")(setCurrentValue)
+    __obj.asInstanceOf[XAccessibleValue]
+  }
+}
+

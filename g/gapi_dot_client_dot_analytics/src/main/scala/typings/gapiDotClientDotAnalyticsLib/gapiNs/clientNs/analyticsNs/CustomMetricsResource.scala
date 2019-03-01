@@ -18,3 +18,37 @@ trait CustomMetricsResource extends js.Object {
   def update(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricIdFields): gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
 }
 
+object CustomMetricsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetrics]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomMetricIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CustomMetric]
+    ]
+  ): CustomMetricsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[CustomMetricsResource]
+  }
+}
+

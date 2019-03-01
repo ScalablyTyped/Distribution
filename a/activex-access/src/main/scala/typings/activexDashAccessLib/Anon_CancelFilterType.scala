@@ -10,3 +10,13 @@ trait Anon_CancelFilterType extends js.Object {
   var FilterType: scala.Double
 }
 
+object Anon_CancelFilterType {
+  @scala.inline
+  def apply(Cancel: scala.Double, FilterType: scala.Double): Anon_CancelFilterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("FilterType")(FilterType)
+    __obj.asInstanceOf[Anon_CancelFilterType]
+  }
+}
+

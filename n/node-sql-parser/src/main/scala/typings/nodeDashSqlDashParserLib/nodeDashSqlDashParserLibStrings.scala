@@ -19,7 +19,8 @@ object nodeDashSqlDashParserLibStrings {
   sealed trait DISTINCT extends js.Object
   
   @js.native
-  sealed trait column extends js.Object
+  sealed trait column
+    extends nodeDashSqlDashParserLib.nodeDashSqlDashParserMod.WhilteListCheckMode
   
   @js.native
   sealed trait column_ref extends js.Object
@@ -43,7 +44,8 @@ object nodeDashSqlDashParserLibStrings {
   sealed trait select extends js.Object
   
   @js.native
-  sealed trait table extends js.Object
+  sealed trait table
+    extends nodeDashSqlDashParserLib.nodeDashSqlDashParserMod.WhilteListCheckMode
   
   @js.native
   sealed trait udpate extends js.Object

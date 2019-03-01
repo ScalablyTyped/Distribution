@@ -24,3 +24,44 @@ trait CommandBuilderA0[R] extends js.Object {
   def timeout(value: scala.Double): CommandBuilderA0[R]
 }
 
+object CommandBuilderA0 {
+  @scala.inline
+  def apply[R](
+    build: js.Function0[CommandA0[R]],
+    circuitBreakerErrorThresholdPercentage: js.Function1[scala.Double, CommandBuilderA0[R]],
+    circuitBreakerForceClosed: js.Function1[scala.Boolean, CommandBuilderA0[R]],
+    circuitBreakerForceOpened: js.Function1[scala.Boolean, CommandBuilderA0[R]],
+    circuitBreakerRequestVolumeThreshold: js.Function1[scala.Double, CommandBuilderA0[R]],
+    circuitBreakerSleepWindowInMilliseconds: js.Function1[scala.Double, CommandBuilderA0[R]],
+    context: js.Function1[js.Any, CommandBuilderA0[R]],
+    errorHandler: js.Function1[js.Function1[/* error */ js.Any, scala.Boolean], CommandBuilderA0[R]],
+    fallbackTo: js.Function1[js.Function1[/* error */ stdLib.Error, js.Thenable[R]], CommandBuilderA0[R]],
+    percentileWindowLength: js.Function1[scala.Double, CommandBuilderA0[R]],
+    percentileWindowNumberOfBuckets: js.Function1[scala.Double, CommandBuilderA0[R]],
+    requestVolumeRejectionThreshold: js.Function1[scala.Double, CommandBuilderA0[R]],
+    run: js.Function1[js.Function0[js.Thenable[R]], CommandBuilderA0[R]],
+    statisticalWindowLength: js.Function1[scala.Double, CommandBuilderA0[R]],
+    statisticalWindowNumberOfBuckets: js.Function1[scala.Double, CommandBuilderA0[R]],
+    timeout: js.Function1[scala.Double, CommandBuilderA0[R]]
+  ): CommandBuilderA0[R] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("circuitBreakerErrorThresholdPercentage")(circuitBreakerErrorThresholdPercentage)
+    __obj.updateDynamic("circuitBreakerForceClosed")(circuitBreakerForceClosed)
+    __obj.updateDynamic("circuitBreakerForceOpened")(circuitBreakerForceOpened)
+    __obj.updateDynamic("circuitBreakerRequestVolumeThreshold")(circuitBreakerRequestVolumeThreshold)
+    __obj.updateDynamic("circuitBreakerSleepWindowInMilliseconds")(circuitBreakerSleepWindowInMilliseconds)
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("errorHandler")(errorHandler)
+    __obj.updateDynamic("fallbackTo")(fallbackTo)
+    __obj.updateDynamic("percentileWindowLength")(percentileWindowLength)
+    __obj.updateDynamic("percentileWindowNumberOfBuckets")(percentileWindowNumberOfBuckets)
+    __obj.updateDynamic("requestVolumeRejectionThreshold")(requestVolumeRejectionThreshold)
+    __obj.updateDynamic("run")(run)
+    __obj.updateDynamic("statisticalWindowLength")(statisticalWindowLength)
+    __obj.updateDynamic("statisticalWindowNumberOfBuckets")(statisticalWindowNumberOfBuckets)
+    __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[CommandBuilderA0[R]]
+  }
+}
+

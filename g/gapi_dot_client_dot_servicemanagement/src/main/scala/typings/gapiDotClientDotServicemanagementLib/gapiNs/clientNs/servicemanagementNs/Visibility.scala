@@ -14,3 +14,12 @@ trait Visibility extends js.Object {
   var rules: js.UndefOr[js.Array[VisibilityRule]] = js.undefined
 }
 
+object Visibility {
+  @scala.inline
+  def apply(rules: js.Array[VisibilityRule] = null): Visibility = {
+    val __obj = js.Dynamic.literal()
+    if (rules != null) __obj.updateDynamic("rules")(rules)
+    __obj.asInstanceOf[Visibility]
+  }
+}
+

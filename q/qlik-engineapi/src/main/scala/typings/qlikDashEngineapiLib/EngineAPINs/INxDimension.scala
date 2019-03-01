@@ -82,3 +82,36 @@ trait INxDimension extends js.Object {
   var qTotalLabel: js.UndefOr[IStringExpressionContainer] = js.undefined
 }
 
+object INxDimension {
+  @scala.inline
+  def apply(
+    qDef: INxInlineDimensionDef,
+    qAttributeDimensions: js.Array[INxAttrDimDef] = null,
+    qAttributeExpressions: js.Array[INxAttrExprDef] = null,
+    qCalcCond: IValueExpr = null,
+    qIncludeElemValue: js.UndefOr[scala.Boolean] = js.undefined,
+    qLibraryId: java.lang.String = null,
+    qNullSuppression: js.UndefOr[scala.Boolean] = js.undefined,
+    qOtherLabel: IStringExpressionContainer = null,
+    qOtherTotalSpec: IOtherTotalSpecProp = null,
+    qShowAll: js.UndefOr[scala.Boolean] = js.undefined,
+    qShowTotal: js.UndefOr[scala.Boolean] = js.undefined,
+    qTotalLabel: IStringExpressionContainer = null
+  ): INxDimension = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qDef")(qDef)
+    if (qAttributeDimensions != null) __obj.updateDynamic("qAttributeDimensions")(qAttributeDimensions)
+    if (qAttributeExpressions != null) __obj.updateDynamic("qAttributeExpressions")(qAttributeExpressions)
+    if (qCalcCond != null) __obj.updateDynamic("qCalcCond")(qCalcCond)
+    if (!js.isUndefined(qIncludeElemValue)) __obj.updateDynamic("qIncludeElemValue")(qIncludeElemValue)
+    if (qLibraryId != null) __obj.updateDynamic("qLibraryId")(qLibraryId)
+    if (!js.isUndefined(qNullSuppression)) __obj.updateDynamic("qNullSuppression")(qNullSuppression)
+    if (qOtherLabel != null) __obj.updateDynamic("qOtherLabel")(qOtherLabel)
+    if (qOtherTotalSpec != null) __obj.updateDynamic("qOtherTotalSpec")(qOtherTotalSpec)
+    if (!js.isUndefined(qShowAll)) __obj.updateDynamic("qShowAll")(qShowAll)
+    if (!js.isUndefined(qShowTotal)) __obj.updateDynamic("qShowTotal")(qShowTotal)
+    if (qTotalLabel != null) __obj.updateDynamic("qTotalLabel")(qTotalLabel)
+    __obj.asInstanceOf[INxDimension]
+  }
+}
+

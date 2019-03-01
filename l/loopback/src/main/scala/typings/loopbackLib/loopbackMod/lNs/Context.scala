@@ -37,3 +37,28 @@ trait Context extends js.Object {
   def model(): scala.Unit
 }
 
+object Context {
+  @scala.inline
+  def apply(
+    accesType: java.lang.String,
+    accessToken: AccessToken,
+    method: java.lang.String,
+    model: js.Function0[scala.Unit],
+    modelId: java.lang.String,
+    modelName: java.lang.String,
+    principals: js.Array[Principal],
+    property: java.lang.String
+  ): Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accesType")(accesType)
+    __obj.updateDynamic("accessToken")(accessToken)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("modelId")(modelId)
+    __obj.updateDynamic("modelName")(modelName)
+    __obj.updateDynamic("principals")(principals)
+    __obj.updateDynamic("property")(property)
+    __obj.asInstanceOf[Context]
+  }
+}
+

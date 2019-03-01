@@ -13,3 +13,12 @@ trait TextDocumentRegistrationOptions extends js.Object {
   var documentSelector: DocumentSelector | scala.Null
 }
 
+object TextDocumentRegistrationOptions {
+  @scala.inline
+  def apply(documentSelector: DocumentSelector = null): TextDocumentRegistrationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (documentSelector != null) __obj.updateDynamic("documentSelector")(documentSelector)
+    __obj.asInstanceOf[TextDocumentRegistrationOptions]
+  }
+}
+

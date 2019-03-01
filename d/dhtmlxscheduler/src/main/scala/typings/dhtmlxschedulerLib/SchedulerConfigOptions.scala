@@ -436,3 +436,226 @@ trait SchedulerConfigOptions extends js.Object {
   var year_y: scala.Double
 }
 
+object SchedulerConfigOptions {
+  @scala.inline
+  def apply(
+    active_link_view: java.lang.String,
+    agenda_end: stdLib.Date,
+    agenda_start: stdLib.Date,
+    ajax_error: java.lang.String | scala.Boolean,
+    all_timed: scala.Boolean | java.lang.String,
+    api_date: java.lang.String,
+    auto_end_date: scala.Boolean,
+    buttons_left: js.Array[_],
+    buttons_right: js.Array[_],
+    cascade_event_count: scala.Double,
+    cascade_event_display: scala.Boolean,
+    cascade_event_margin: scala.Double,
+    check_limits: scala.Boolean,
+    collision_limit: scala.Double,
+    container_autoresize: scala.Boolean,
+    day_date: java.lang.String,
+    dblclick_create: scala.Boolean,
+    default_date: java.lang.String,
+    delay_render: scala.Double,
+    details_on_create: scala.Boolean,
+    details_on_dblclick: scala.Boolean,
+    display_marked_timespans: scala.Boolean,
+    displayed_event_color: java.lang.String,
+    displayed_event_text_color: java.lang.String,
+    drag_create: scala.Boolean,
+    drag_highlight: scala.Boolean,
+    drag_in: scala.Boolean,
+    drag_lightbox: scala.Boolean,
+    drag_move: scala.Boolean,
+    drag_out: scala.Boolean,
+    drag_resize: scala.Boolean,
+    edit_on_create: scala.Boolean,
+    event_duration: scala.Double,
+    first_hour: scala.Double,
+    fix_tab_position: scala.Boolean,
+    full_day: scala.Boolean,
+    highlight_displayed_event: scala.Boolean,
+    hour_date: java.lang.String,
+    hour_size_px: scala.Double,
+    icons_edit: js.Array[_],
+    icons_select: js.Array[_],
+    include_end_by: scala.Boolean,
+    key_nav: scala.Boolean,
+    last_hour: scala.Double,
+    left_border: scala.Boolean,
+    lightbox: js.Any,
+    lightbox_recurring: java.lang.String,
+    limit_drag_out: scala.Boolean,
+    limit_end: stdLib.Date,
+    limit_start: stdLib.Date,
+    limit_time_select: scala.Boolean,
+    limit_view: scala.Boolean,
+    load_date: java.lang.String,
+    map_end: stdLib.Date,
+    map_error_position: js.Any,
+    map_infowindow_max_width: scala.Double,
+    map_initial_position: js.Any,
+    map_initial_zoom: scala.Double,
+    map_resolve_event_location: scala.Boolean,
+    map_resolve_user_location: scala.Boolean,
+    map_start: stdLib.Date,
+    map_type: js.Any,
+    map_zoom_after_resolve: scala.Double,
+    mark_now: scala.Boolean,
+    max_month_events: scala.Double,
+    minicalendar: js.Any,
+    month_date: java.lang.String,
+    month_day: java.lang.String,
+    month_day_min_height: scala.Double,
+    multi_day: scala.Boolean,
+    multi_day_height_limit: scala.Double | scala.Boolean,
+    multisection: scala.Boolean,
+    multisection_shift_all: scala.Boolean,
+    now_date: stdLib.Date,
+    occurrence_timestamp_in_utc: scala.Boolean,
+    positive_closing: scala.Boolean,
+    preserve_length: scala.Boolean,
+    preserve_scroll: scala.Boolean,
+    prevent_cache: scala.Boolean,
+    quick_info_detached: scala.Boolean,
+    readonly: scala.Boolean,
+    readonly_form: scala.Boolean,
+    recurring_workdays: js.Array[_],
+    repeat_date: java.lang.String,
+    repeat_precise: scala.Boolean,
+    resize_month_events: scala.Boolean,
+    resize_month_timed: scala.Boolean,
+    scroll_hour: scala.Double,
+    section_delemiter: java.lang.String,
+    select: scala.Boolean,
+    separate_short_events: scala.Boolean,
+    server_utc: scala.Boolean,
+    show_loading: scala.Boolean,
+    show_quick_info: scala.Boolean,
+    start_on_monday: scala.Boolean,
+    time_step: scala.Double,
+    touch: scala.Boolean | java.lang.String,
+    touch_drag: scala.Double | scala.Boolean,
+    touch_tip: scala.Boolean,
+    touch_tooltip: scala.Boolean,
+    update_render: scala.Boolean,
+    use_select_menu_space: scala.Boolean,
+    week_date: java.lang.String,
+    wide_form: scala.Boolean,
+    xml_date: java.lang.String,
+    year_x: scala.Double,
+    year_y: scala.Double
+  ): SchedulerConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active_link_view")(active_link_view)
+    __obj.updateDynamic("agenda_end")(agenda_end)
+    __obj.updateDynamic("agenda_start")(agenda_start)
+    __obj.updateDynamic("ajax_error")(ajax_error.asInstanceOf[js.Any])
+    __obj.updateDynamic("all_timed")(all_timed.asInstanceOf[js.Any])
+    __obj.updateDynamic("api_date")(api_date)
+    __obj.updateDynamic("auto_end_date")(auto_end_date)
+    __obj.updateDynamic("buttons_left")(buttons_left)
+    __obj.updateDynamic("buttons_right")(buttons_right)
+    __obj.updateDynamic("cascade_event_count")(cascade_event_count)
+    __obj.updateDynamic("cascade_event_display")(cascade_event_display)
+    __obj.updateDynamic("cascade_event_margin")(cascade_event_margin)
+    __obj.updateDynamic("check_limits")(check_limits)
+    __obj.updateDynamic("collision_limit")(collision_limit)
+    __obj.updateDynamic("container_autoresize")(container_autoresize)
+    __obj.updateDynamic("day_date")(day_date)
+    __obj.updateDynamic("dblclick_create")(dblclick_create)
+    __obj.updateDynamic("default_date")(default_date)
+    __obj.updateDynamic("delay_render")(delay_render)
+    __obj.updateDynamic("details_on_create")(details_on_create)
+    __obj.updateDynamic("details_on_dblclick")(details_on_dblclick)
+    __obj.updateDynamic("display_marked_timespans")(display_marked_timespans)
+    __obj.updateDynamic("displayed_event_color")(displayed_event_color)
+    __obj.updateDynamic("displayed_event_text_color")(displayed_event_text_color)
+    __obj.updateDynamic("drag_create")(drag_create)
+    __obj.updateDynamic("drag_highlight")(drag_highlight)
+    __obj.updateDynamic("drag_in")(drag_in)
+    __obj.updateDynamic("drag_lightbox")(drag_lightbox)
+    __obj.updateDynamic("drag_move")(drag_move)
+    __obj.updateDynamic("drag_out")(drag_out)
+    __obj.updateDynamic("drag_resize")(drag_resize)
+    __obj.updateDynamic("edit_on_create")(edit_on_create)
+    __obj.updateDynamic("event_duration")(event_duration)
+    __obj.updateDynamic("first_hour")(first_hour)
+    __obj.updateDynamic("fix_tab_position")(fix_tab_position)
+    __obj.updateDynamic("full_day")(full_day)
+    __obj.updateDynamic("highlight_displayed_event")(highlight_displayed_event)
+    __obj.updateDynamic("hour_date")(hour_date)
+    __obj.updateDynamic("hour_size_px")(hour_size_px)
+    __obj.updateDynamic("icons_edit")(icons_edit)
+    __obj.updateDynamic("icons_select")(icons_select)
+    __obj.updateDynamic("include_end_by")(include_end_by)
+    __obj.updateDynamic("key_nav")(key_nav)
+    __obj.updateDynamic("last_hour")(last_hour)
+    __obj.updateDynamic("left_border")(left_border)
+    __obj.updateDynamic("lightbox")(lightbox)
+    __obj.updateDynamic("lightbox_recurring")(lightbox_recurring)
+    __obj.updateDynamic("limit_drag_out")(limit_drag_out)
+    __obj.updateDynamic("limit_end")(limit_end)
+    __obj.updateDynamic("limit_start")(limit_start)
+    __obj.updateDynamic("limit_time_select")(limit_time_select)
+    __obj.updateDynamic("limit_view")(limit_view)
+    __obj.updateDynamic("load_date")(load_date)
+    __obj.updateDynamic("map_end")(map_end)
+    __obj.updateDynamic("map_error_position")(map_error_position)
+    __obj.updateDynamic("map_infowindow_max_width")(map_infowindow_max_width)
+    __obj.updateDynamic("map_initial_position")(map_initial_position)
+    __obj.updateDynamic("map_initial_zoom")(map_initial_zoom)
+    __obj.updateDynamic("map_resolve_event_location")(map_resolve_event_location)
+    __obj.updateDynamic("map_resolve_user_location")(map_resolve_user_location)
+    __obj.updateDynamic("map_start")(map_start)
+    __obj.updateDynamic("map_type")(map_type)
+    __obj.updateDynamic("map_zoom_after_resolve")(map_zoom_after_resolve)
+    __obj.updateDynamic("mark_now")(mark_now)
+    __obj.updateDynamic("max_month_events")(max_month_events)
+    __obj.updateDynamic("minicalendar")(minicalendar)
+    __obj.updateDynamic("month_date")(month_date)
+    __obj.updateDynamic("month_day")(month_day)
+    __obj.updateDynamic("month_day_min_height")(month_day_min_height)
+    __obj.updateDynamic("multi_day")(multi_day)
+    __obj.updateDynamic("multi_day_height_limit")(multi_day_height_limit.asInstanceOf[js.Any])
+    __obj.updateDynamic("multisection")(multisection)
+    __obj.updateDynamic("multisection_shift_all")(multisection_shift_all)
+    __obj.updateDynamic("now_date")(now_date)
+    __obj.updateDynamic("occurrence_timestamp_in_utc")(occurrence_timestamp_in_utc)
+    __obj.updateDynamic("positive_closing")(positive_closing)
+    __obj.updateDynamic("preserve_length")(preserve_length)
+    __obj.updateDynamic("preserve_scroll")(preserve_scroll)
+    __obj.updateDynamic("prevent_cache")(prevent_cache)
+    __obj.updateDynamic("quick_info_detached")(quick_info_detached)
+    __obj.updateDynamic("readonly")(readonly)
+    __obj.updateDynamic("readonly_form")(readonly_form)
+    __obj.updateDynamic("recurring_workdays")(recurring_workdays)
+    __obj.updateDynamic("repeat_date")(repeat_date)
+    __obj.updateDynamic("repeat_precise")(repeat_precise)
+    __obj.updateDynamic("resize_month_events")(resize_month_events)
+    __obj.updateDynamic("resize_month_timed")(resize_month_timed)
+    __obj.updateDynamic("scroll_hour")(scroll_hour)
+    __obj.updateDynamic("section_delemiter")(section_delemiter)
+    __obj.updateDynamic("select")(select)
+    __obj.updateDynamic("separate_short_events")(separate_short_events)
+    __obj.updateDynamic("server_utc")(server_utc)
+    __obj.updateDynamic("show_loading")(show_loading)
+    __obj.updateDynamic("show_quick_info")(show_quick_info)
+    __obj.updateDynamic("start_on_monday")(start_on_monday)
+    __obj.updateDynamic("time_step")(time_step)
+    __obj.updateDynamic("touch")(touch.asInstanceOf[js.Any])
+    __obj.updateDynamic("touch_drag")(touch_drag.asInstanceOf[js.Any])
+    __obj.updateDynamic("touch_tip")(touch_tip)
+    __obj.updateDynamic("touch_tooltip")(touch_tooltip)
+    __obj.updateDynamic("update_render")(update_render)
+    __obj.updateDynamic("use_select_menu_space")(use_select_menu_space)
+    __obj.updateDynamic("week_date")(week_date)
+    __obj.updateDynamic("wide_form")(wide_form)
+    __obj.updateDynamic("xml_date")(xml_date)
+    __obj.updateDynamic("year_x")(year_x)
+    __obj.updateDynamic("year_y")(year_y)
+    __obj.asInstanceOf[SchedulerConfigOptions]
+  }
+}
+

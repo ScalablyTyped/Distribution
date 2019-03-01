@@ -18,3 +18,18 @@ trait DocumentDelete extends js.Object {
   var removedTargetIds: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object DocumentDelete {
+  @scala.inline
+  def apply(
+    document: java.lang.String = null,
+    readTime: java.lang.String = null,
+    removedTargetIds: js.Array[scala.Double] = null
+  ): DocumentDelete = {
+    val __obj = js.Dynamic.literal()
+    if (document != null) __obj.updateDynamic("document")(document)
+    if (readTime != null) __obj.updateDynamic("readTime")(readTime)
+    if (removedTargetIds != null) __obj.updateDynamic("removedTargetIds")(removedTargetIds)
+    __obj.asInstanceOf[DocumentDelete]
+  }
+}
+

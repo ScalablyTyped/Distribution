@@ -9,3 +9,12 @@ trait QueryModel extends js.Object {
   var query: java.lang.String
 }
 
+object QueryModel {
+  @scala.inline
+  def apply(query: java.lang.String): QueryModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[QueryModel]
+  }
+}
+

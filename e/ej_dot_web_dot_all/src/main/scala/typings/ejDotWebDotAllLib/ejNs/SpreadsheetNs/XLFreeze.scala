@@ -36,3 +36,24 @@ trait XLFreeze extends js.Object {
   def unfreezePanes(): scala.Unit
 }
 
+object XLFreeze {
+  @scala.inline
+  def apply(
+    freezeColumns: js.Function1[scala.Double, scala.Unit],
+    freezeLeftColumn: js.Function0[scala.Unit],
+    freezePanes: js.Function2[scala.Double, scala.Double, scala.Unit],
+    freezeRows: js.Function1[scala.Double, scala.Unit],
+    freezeTopRow: js.Function0[scala.Unit],
+    unfreezePanes: js.Function0[scala.Unit]
+  ): XLFreeze = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("freezeColumns")(freezeColumns)
+    __obj.updateDynamic("freezeLeftColumn")(freezeLeftColumn)
+    __obj.updateDynamic("freezePanes")(freezePanes)
+    __obj.updateDynamic("freezeRows")(freezeRows)
+    __obj.updateDynamic("freezeTopRow")(freezeTopRow)
+    __obj.updateDynamic("unfreezePanes")(unfreezePanes)
+    __obj.asInstanceOf[XLFreeze]
+  }
+}
+

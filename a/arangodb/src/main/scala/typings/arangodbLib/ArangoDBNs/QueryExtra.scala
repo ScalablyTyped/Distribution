@@ -10,3 +10,13 @@ trait QueryExtra extends js.Object {
   var warnings: js.Array[java.lang.String]
 }
 
+object QueryExtra {
+  @scala.inline
+  def apply(stats: arangodbLib.Anon_ExecutionTime, warnings: js.Array[java.lang.String]): QueryExtra = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("stats")(stats)
+    __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[QueryExtra]
+  }
+}
+

@@ -21,3 +21,13 @@ trait GroupVersionForDiscovery extends js.Object {
   val version: java.lang.String
 }
 
+object GroupVersionForDiscovery {
+  @scala.inline
+  def apply(groupVersion: java.lang.String, version: java.lang.String): GroupVersionForDiscovery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("groupVersion")(groupVersion)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[GroupVersionForDiscovery]
+  }
+}
+

@@ -12,3 +12,12 @@ trait DataProviderContext extends js.Object {
   var properties: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object DataProviderContext {
+  @scala.inline
+  def apply(properties: org.scalablytyped.runtime.StringDictionary[js.Any]): DataProviderContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[DataProviderContext]
+  }
+}
+

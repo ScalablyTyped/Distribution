@@ -10,3 +10,13 @@ trait ParseOptionsResult extends js.Object {
   var unknown: js.Array[java.lang.String]
 }
 
+object ParseOptionsResult {
+  @scala.inline
+  def apply(args: js.Array[java.lang.String], unknown: js.Array[java.lang.String]): ParseOptionsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("unknown")(unknown)
+    __obj.asInstanceOf[ParseOptionsResult]
+  }
+}
+

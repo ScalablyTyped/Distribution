@@ -28,3 +28,34 @@ trait Options extends js.Object {
   var validateResponse: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    schema: java.lang.String,
+    allowNullable: js.UndefOr[scala.Boolean] = js.undefined,
+    requestValidationFn: js.Function3[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* data */ js.Any, 
+      /* errors */ js.Any, 
+      scala.Unit
+    ] = null,
+    responseValidationFn: js.Function3[
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* data */ js.Any, 
+      /* errors */ js.Any, 
+      scala.Unit
+    ] = null,
+    validateRequest: js.UndefOr[scala.Boolean] = js.undefined,
+    validateResponse: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("schema")(schema)
+    if (!js.isUndefined(allowNullable)) __obj.updateDynamic("allowNullable")(allowNullable)
+    if (requestValidationFn != null) __obj.updateDynamic("requestValidationFn")(requestValidationFn)
+    if (responseValidationFn != null) __obj.updateDynamic("responseValidationFn")(responseValidationFn)
+    if (!js.isUndefined(validateRequest)) __obj.updateDynamic("validateRequest")(validateRequest)
+    if (!js.isUndefined(validateResponse)) __obj.updateDynamic("validateResponse")(validateResponse)
+    __obj.asInstanceOf[Options]
+  }
+}
+

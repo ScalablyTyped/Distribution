@@ -10,3 +10,13 @@ trait IPrintNotificationEventDetails extends js.Object {
   var printerName: java.lang.String
 }
 
+object IPrintNotificationEventDetails {
+  @scala.inline
+  def apply(eventData: java.lang.String, printerName: java.lang.String): IPrintNotificationEventDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventData")(eventData)
+    __obj.updateDynamic("printerName")(printerName)
+    __obj.asInstanceOf[IPrintNotificationEventDetails]
+  }
+}
+

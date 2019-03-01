@@ -40,3 +40,28 @@ trait NotificationSubscriptionUpdateParameters extends js.Object {
   var userSettings: SubscriptionUserSettings
 }
 
+object NotificationSubscriptionUpdateParameters {
+  @scala.inline
+  def apply(
+    adminSettings: SubscriptionAdminSettings,
+    channel: ISubscriptionChannel,
+    description: java.lang.String,
+    filter: ISubscriptionFilter,
+    scope: SubscriptionScope,
+    status: SubscriptionStatus,
+    statusMessage: java.lang.String,
+    userSettings: SubscriptionUserSettings
+  ): NotificationSubscriptionUpdateParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adminSettings")(adminSettings)
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("statusMessage")(statusMessage)
+    __obj.updateDynamic("userSettings")(userSettings)
+    __obj.asInstanceOf[NotificationSubscriptionUpdateParameters]
+  }
+}
+

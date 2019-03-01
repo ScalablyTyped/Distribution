@@ -27,3 +27,28 @@ trait UrlMap extends js.Object {
   var urlRegex: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UrlMap {
+  @scala.inline
+  def apply(
+    apiEndpoint: ApiEndpointHandler = null,
+    authFailAction: java.lang.String = null,
+    login: java.lang.String = null,
+    redirectHttpResponseCode: java.lang.String = null,
+    script: ScriptHandler = null,
+    securityLevel: java.lang.String = null,
+    staticFiles: StaticFilesHandler = null,
+    urlRegex: java.lang.String = null
+  ): UrlMap = {
+    val __obj = js.Dynamic.literal()
+    if (apiEndpoint != null) __obj.updateDynamic("apiEndpoint")(apiEndpoint)
+    if (authFailAction != null) __obj.updateDynamic("authFailAction")(authFailAction)
+    if (login != null) __obj.updateDynamic("login")(login)
+    if (redirectHttpResponseCode != null) __obj.updateDynamic("redirectHttpResponseCode")(redirectHttpResponseCode)
+    if (script != null) __obj.updateDynamic("script")(script)
+    if (securityLevel != null) __obj.updateDynamic("securityLevel")(securityLevel)
+    if (staticFiles != null) __obj.updateDynamic("staticFiles")(staticFiles)
+    if (urlRegex != null) __obj.updateDynamic("urlRegex")(urlRegex)
+    __obj.asInstanceOf[UrlMap]
+  }
+}
+

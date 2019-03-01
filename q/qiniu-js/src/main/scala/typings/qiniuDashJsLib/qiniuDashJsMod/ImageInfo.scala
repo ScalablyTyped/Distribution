@@ -19,3 +19,24 @@ trait ImageInfo extends js.Object {
   var width: scala.Double
 }
 
+object ImageInfo {
+  @scala.inline
+  def apply(
+    colorModel: java.lang.String,
+    format: qiniuDashJsLib.qiniuDashJsLibStrings.png | qiniuDashJsLib.qiniuDashJsLibStrings.jpeg | qiniuDashJsLib.qiniuDashJsLibStrings.gif | qiniuDashJsLib.qiniuDashJsLibStrings.bmp,
+    frameNumber: scala.Double,
+    height: scala.Double,
+    size: scala.Double,
+    width: scala.Double
+  ): ImageInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("colorModel")(colorModel)
+    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    __obj.updateDynamic("frameNumber")(frameNumber)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ImageInfo]
+  }
+}
+

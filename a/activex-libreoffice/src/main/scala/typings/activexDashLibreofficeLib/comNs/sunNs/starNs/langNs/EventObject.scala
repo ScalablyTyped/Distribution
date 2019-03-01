@@ -11,3 +11,12 @@ trait EventObject extends js.Object {
   var Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
 }
 
+object EventObject {
+  @scala.inline
+  def apply(Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface): EventObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[EventObject]
+  }
+}
+

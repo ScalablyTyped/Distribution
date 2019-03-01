@@ -12,3 +12,20 @@ trait Anon_AllowedCharacterCountLimitType extends js.Object {
   var updated: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AllowedCharacterCountLimitType {
+  @scala.inline
+  def apply(
+    allowedCharacterCount: scala.Int | scala.Double = null,
+    limitType: java.lang.String = null,
+    remainingCharacterCount: scala.Int | scala.Double = null,
+    updated: java.lang.String = null
+  ): Anon_AllowedCharacterCountLimitType = {
+    val __obj = js.Dynamic.literal()
+    if (allowedCharacterCount != null) __obj.updateDynamic("allowedCharacterCount")(allowedCharacterCount.asInstanceOf[js.Any])
+    if (limitType != null) __obj.updateDynamic("limitType")(limitType)
+    if (remainingCharacterCount != null) __obj.updateDynamic("remainingCharacterCount")(remainingCharacterCount.asInstanceOf[js.Any])
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    __obj.asInstanceOf[Anon_AllowedCharacterCountLimitType]
+  }
+}
+

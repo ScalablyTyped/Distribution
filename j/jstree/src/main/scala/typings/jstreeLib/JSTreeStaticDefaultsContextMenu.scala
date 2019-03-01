@@ -40,3 +40,14 @@ trait JSTreeStaticDefaultsContextMenu extends js.Object {
   var show_at_node: scala.Boolean
 }
 
+object JSTreeStaticDefaultsContextMenu {
+  @scala.inline
+  def apply(items: js.Any, select_node: scala.Boolean, show_at_node: scala.Boolean): JSTreeStaticDefaultsContextMenu = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("select_node")(select_node)
+    __obj.updateDynamic("show_at_node")(show_at_node)
+    __obj.asInstanceOf[JSTreeStaticDefaultsContextMenu]
+  }
+}
+

@@ -12,3 +12,20 @@ trait ThreeTrianglesSet
   var yellowDash: Icon
 }
 
+object ThreeTrianglesSet {
+  @scala.inline
+  def apply(
+    greenUpTriangle: Icon,
+    redDownTriangle: Icon,
+    yellowDash: Icon,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
+  ): ThreeTrianglesSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("greenUpTriangle")(greenUpTriangle)
+    __obj.updateDynamic("redDownTriangle")(redDownTriangle)
+    __obj.updateDynamic("yellowDash")(yellowDash)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[ThreeTrianglesSet]
+  }
+}
+

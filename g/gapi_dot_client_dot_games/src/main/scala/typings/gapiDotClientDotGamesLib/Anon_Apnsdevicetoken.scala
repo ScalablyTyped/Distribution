@@ -12,3 +12,13 @@ trait Anon_Apnsdevicetoken extends js.Object {
   var apns_environment: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Apnsdevicetoken {
+  @scala.inline
+  def apply(apns_device_token: java.lang.String = null, apns_environment: java.lang.String = null): Anon_Apnsdevicetoken = {
+    val __obj = js.Dynamic.literal()
+    if (apns_device_token != null) __obj.updateDynamic("apns_device_token")(apns_device_token)
+    if (apns_environment != null) __obj.updateDynamic("apns_environment")(apns_environment)
+    __obj.asInstanceOf[Anon_Apnsdevicetoken]
+  }
+}
+

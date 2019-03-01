@@ -16,3 +16,13 @@ trait IValidationResult extends js.Object {
   var isValid: scala.Boolean
 }
 
+object IValidationResult {
+  @scala.inline
+  def apply(errors: js.Array[IFieldValidationError], isValid: scala.Boolean): IValidationResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errors")(errors)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.asInstanceOf[IValidationResult]
+  }
+}
+

@@ -17,3 +17,16 @@ trait SessionOptions extends js.Object {
   var defaultTransactionOptions: js.UndefOr[TransactionOptions] = js.undefined
 }
 
+object SessionOptions {
+  @scala.inline
+  def apply(
+    causalConsistency: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultTransactionOptions: TransactionOptions = null
+  ): SessionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(causalConsistency)) __obj.updateDynamic("causalConsistency")(causalConsistency)
+    if (defaultTransactionOptions != null) __obj.updateDynamic("defaultTransactionOptions")(defaultTransactionOptions)
+    __obj.asInstanceOf[SessionOptions]
+  }
+}
+

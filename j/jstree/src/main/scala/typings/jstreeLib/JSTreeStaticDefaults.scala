@@ -76,3 +76,34 @@ trait JSTreeStaticDefaults extends js.Object {
   var unique: js.UndefOr[JSTreeStaticDefaultsUnique] = js.undefined
 }
 
+object JSTreeStaticDefaults {
+  @scala.inline
+  def apply(
+    core: JSTreeStaticDefaultsCore,
+    plugins: js.Array[java.lang.String],
+    checkbox: JSTreeStaticDefaultsCheckbox = null,
+    contextmenu: JSTreeStaticDefaultsContextMenu = null,
+    dnd: JSTreeStaticDefaultsDragNDrop = null,
+    massload: JSTreeStaticDefaultsMassload = null,
+    search: JSTreeStaticDefaultsSearch = null,
+    sort: js.Function2[/* x */ js.Any, /* y */ js.Any, scala.Double] = null,
+    state: JSTreeStaticDefaultsState = null,
+    types: js.Any = null,
+    unique: JSTreeStaticDefaultsUnique = null
+  ): JSTreeStaticDefaults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("core")(core)
+    __obj.updateDynamic("plugins")(plugins)
+    if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox)
+    if (contextmenu != null) __obj.updateDynamic("contextmenu")(contextmenu)
+    if (dnd != null) __obj.updateDynamic("dnd")(dnd)
+    if (massload != null) __obj.updateDynamic("massload")(massload)
+    if (search != null) __obj.updateDynamic("search")(search)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (types != null) __obj.updateDynamic("types")(types)
+    if (unique != null) __obj.updateDynamic("unique")(unique)
+    __obj.asInstanceOf[JSTreeStaticDefaults]
+  }
+}
+

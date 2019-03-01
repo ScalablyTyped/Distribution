@@ -37,3 +37,42 @@ trait IntrinsicElements extends js.Object {
   var `blessed-textbox`: js.Any
 }
 
+object IntrinsicElements {
+  @scala.inline
+  def apply(
+    `blessed-bigtext`: js.Any,
+    `blessed-box`: js.Any,
+    `blessed-button`: js.Any,
+    `blessed-checkbox`: js.Any,
+    `blessed-escape`: js.Any,
+    `blessed-filemanager`: js.Any,
+    `blessed-form`: js.Any,
+    `blessed-input`: js.Any,
+    `blessed-layout`: js.Any,
+    `blessed-line`: js.Any,
+    `blessed-list`: js.Any,
+    `blessed-listbar`: js.Any,
+    `blessed-listtable`: js.Any,
+    `blessed-loading`: js.Any,
+    `blessed-log`: js.Any,
+    `blessed-message`: js.Any,
+    `blessed-program`: js.Any,
+    `blessed-progressbar`: js.Any,
+    `blessed-prompt`: js.Any,
+    `blessed-question`: js.Any,
+    `blessed-radiobutton`: js.Any,
+    `blessed-radioset`: js.Any,
+    `blessed-scrollablebox`: js.Any,
+    `blessed-scrollabletext`: js.Any,
+    `blessed-table`: js.Any,
+    `blessed-terminal`: js.Any,
+    `blessed-text`: js.Any,
+    `blessed-textarea`: js.Any,
+    `blessed-textbox`: js.Any
+  ): IntrinsicElements = {
+    val __obj = js.Dynamic.literal(`blessed-bigtext` = `blessed-bigtext`, `blessed-box` = `blessed-box`, `blessed-button` = `blessed-button`, `blessed-checkbox` = `blessed-checkbox`, `blessed-escape` = `blessed-escape`, `blessed-filemanager` = `blessed-filemanager`, `blessed-form` = `blessed-form`, `blessed-input` = `blessed-input`, `blessed-layout` = `blessed-layout`, `blessed-line` = `blessed-line`, `blessed-list` = `blessed-list`, `blessed-listbar` = `blessed-listbar`, `blessed-listtable` = `blessed-listtable`, `blessed-loading` = `blessed-loading`, `blessed-log` = `blessed-log`, `blessed-message` = `blessed-message`, `blessed-program` = `blessed-program`, `blessed-progressbar` = `blessed-progressbar`, `blessed-prompt` = `blessed-prompt`, `blessed-question` = `blessed-question`, `blessed-radiobutton` = `blessed-radiobutton`, `blessed-radioset` = `blessed-radioset`, `blessed-scrollablebox` = `blessed-scrollablebox`, `blessed-scrollabletext` = `blessed-scrollabletext`, `blessed-table` = `blessed-table`, `blessed-terminal` = `blessed-terminal`, `blessed-text` = `blessed-text`, `blessed-textarea` = `blessed-textarea`, `blessed-textbox` = `blessed-textbox`)
+  
+    __obj.asInstanceOf[IntrinsicElements]
+  }
+}
+

@@ -13,3 +13,12 @@ trait DeviceCapabilities extends js.Object {
   var frequencyRanges: js.UndefOr[js.Array[FrequencyRange]] = js.undefined
 }
 
+object DeviceCapabilities {
+  @scala.inline
+  def apply(frequencyRanges: js.Array[FrequencyRange] = null): DeviceCapabilities = {
+    val __obj = js.Dynamic.literal()
+    if (frequencyRanges != null) __obj.updateDynamic("frequencyRanges")(frequencyRanges)
+    __obj.asInstanceOf[DeviceCapabilities]
+  }
+}
+

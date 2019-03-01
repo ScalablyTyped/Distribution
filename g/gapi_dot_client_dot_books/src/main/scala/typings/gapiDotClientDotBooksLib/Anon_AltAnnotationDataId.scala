@@ -51,3 +51,52 @@ trait Anon_AltAnnotationDataId extends js.Object {
   var w: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AltAnnotationDataId {
+  @scala.inline
+  def apply(
+    contentVersion: java.lang.String,
+    layerId: java.lang.String,
+    volumeId: java.lang.String,
+    alt: java.lang.String = null,
+    annotationDataId: java.lang.String = null,
+    fields: java.lang.String = null,
+    h: scala.Int | scala.Double = null,
+    key: java.lang.String = null,
+    locale: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    scale: scala.Int | scala.Double = null,
+    source: java.lang.String = null,
+    updatedMax: java.lang.String = null,
+    updatedMin: java.lang.String = null,
+    userIp: java.lang.String = null,
+    w: scala.Int | scala.Double = null
+  ): Anon_AltAnnotationDataId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentVersion")(contentVersion)
+    __obj.updateDynamic("layerId")(layerId)
+    __obj.updateDynamic("volumeId")(volumeId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (annotationDataId != null) __obj.updateDynamic("annotationDataId")(annotationDataId)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (h != null) __obj.updateDynamic("h")(h.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (updatedMax != null) __obj.updateDynamic("updatedMax")(updatedMax)
+    if (updatedMin != null) __obj.updateDynamic("updatedMin")(updatedMin)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (w != null) __obj.updateDynamic("w")(w.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AltAnnotationDataId]
+  }
+}
+

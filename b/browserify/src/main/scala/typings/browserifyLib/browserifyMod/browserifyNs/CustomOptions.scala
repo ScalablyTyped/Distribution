@@ -18,3 +18,20 @@ trait CustomOptions
   var basedir: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Custom properties can be defined on Options.
+    * These options are forwarded along to module-deps and browser-pack directly.
+    */
+  /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    basedir: java.lang.String = null
+  ): CustomOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (basedir != null) __obj.updateDynamic("basedir")(basedir)
+    __obj.asInstanceOf[CustomOptions]
+  }
+}
+

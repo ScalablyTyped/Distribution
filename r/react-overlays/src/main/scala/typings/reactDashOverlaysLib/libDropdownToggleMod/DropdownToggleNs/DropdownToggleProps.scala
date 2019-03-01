@@ -14,3 +14,12 @@ trait DropdownToggleProps extends js.Object {
   def children(renderProps: DropdownToggleRenderProps): reactLib.reactMod.ReactNs.ReactElement[_]
 }
 
+object DropdownToggleProps {
+  @scala.inline
+  def apply(children: js.Function1[DropdownToggleRenderProps, reactLib.reactMod.ReactNs.ReactElement[_]]): DropdownToggleProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.asInstanceOf[DropdownToggleProps]
+  }
+}
+

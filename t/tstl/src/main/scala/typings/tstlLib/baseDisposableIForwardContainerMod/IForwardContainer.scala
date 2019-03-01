@@ -20,3 +20,13 @@ trait IForwardContainer[Iterator /* <: tstlLib.iteratorIForwardIteratorMod.IForw
   def end(): Iterator
 }
 
+object IForwardContainer {
+  @scala.inline
+  def apply[Iterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator] */](begin: js.Function0[Iterator], end: js.Function0[Iterator]): IForwardContainer[Iterator] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("begin")(begin)
+    __obj.updateDynamic("end")(end)
+    __obj.asInstanceOf[IForwardContainer[Iterator]]
+  }
+}
+

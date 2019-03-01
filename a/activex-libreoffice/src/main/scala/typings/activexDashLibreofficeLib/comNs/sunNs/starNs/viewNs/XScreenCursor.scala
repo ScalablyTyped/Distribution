@@ -14,3 +14,22 @@ trait XScreenCursor
   def screenUp(): scala.Boolean
 }
 
+object XScreenCursor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    screenDown: js.Function0[scala.Boolean],
+    screenUp: js.Function0[scala.Boolean]
+  ): XScreenCursor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("screenDown")(screenDown)
+    __obj.updateDynamic("screenUp")(screenUp)
+    __obj.asInstanceOf[XScreenCursor]
+  }
+}
+

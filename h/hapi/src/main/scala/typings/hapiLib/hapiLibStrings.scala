@@ -10,31 +10,39 @@ object hapiLibStrings {
   sealed trait `*` extends js.Object
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends hapiLib.hapiMod.ReferrerPolicy
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait HEAD
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS
   
   @js.native
   sealed trait Lax extends js.Object
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait OPTIONS
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL
   
   @js.native
   sealed trait RouteOptions extends js.Object
@@ -49,10 +57,12 @@ object hapiLibStrings {
   sealed trait annotated extends js.Object
   
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any
+    extends hapiLib.hapiMod.RouteOptionsAccessEntity
   
   @js.native
-  sealed trait app extends js.Object
+  sealed trait app
+    extends hapiLib.hapiMod.RouteOptionsAccessEntity
   
   @js.native
   sealed trait ascii extends js.Object
@@ -70,34 +80,41 @@ object hapiLibStrings {
   sealed trait buffer extends js.Object
   
   @js.native
-  sealed trait data extends js.Object
+  sealed trait data
+    extends hapiLib.hapiMod.PayloadOutput
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait deny extends js.Object
   
   @js.native
-  sealed trait disconnect extends js.Object
+  sealed trait disconnect
+    extends hapiLib.hapiMod.RequestEventType
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends hapiLib.hapiMod.LifecycleNs._FailAction
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends hapiLib.hapiMod.PayloadOutput
   
   @js.native
-  sealed trait finish extends js.Object
+  sealed trait finish
+    extends hapiLib.hapiMod.RequestEventType
   
   @js.native
   sealed trait form extends js.Object
   
   @js.native
-  sealed trait get extends js.Object
+  sealed trait get
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait gunzip extends js.Object
@@ -106,7 +123,8 @@ object hapiLibStrings {
   sealed trait handler extends js.Object
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait head
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS
   
   @js.native
   sealed trait hex extends js.Object
@@ -118,7 +136,8 @@ object hapiLibStrings {
   sealed trait https extends js.Object
   
   @js.native
-  sealed trait ignore extends js.Object
+  sealed trait ignore
+    extends hapiLib.hapiMod.LifecycleNs._FailAction
   
   @js.native
   sealed trait internal extends js.Object
@@ -130,67 +149,86 @@ object hapiLibStrings {
   sealed trait latin1 extends js.Object
   
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log
+    extends hapiLib.hapiMod.LifecycleNs._FailAction
   
   @js.native
-  sealed trait `no-referrer` extends js.Object
+  sealed trait `no-referrer`
+    extends hapiLib.hapiMod.ReferrerPolicy
   
   @js.native
-  sealed trait `no-referrer-when-downgrade` extends js.Object
+  sealed trait `no-referrer-when-downgrade`
+    extends hapiLib.hapiMod.ReferrerPolicy
   
   @js.native
   sealed trait none extends js.Object
   
   @js.native
-  sealed trait onCredentials extends js.Object
+  sealed trait onCredentials
+    extends hapiLib.hapiMod.RouteRequestExtType
   
   @js.native
-  sealed trait onPostAuth extends js.Object
+  sealed trait onPostAuth
+    extends hapiLib.hapiMod.RouteRequestExtType
   
   @js.native
-  sealed trait onPostHandler extends js.Object
+  sealed trait onPostHandler
+    extends hapiLib.hapiMod.RouteRequestExtType
   
   @js.native
-  sealed trait onPostStart extends js.Object
+  sealed trait onPostStart
+    extends hapiLib.hapiMod.ServerExtType
   
   @js.native
-  sealed trait onPostStop extends js.Object
+  sealed trait onPostStop
+    extends hapiLib.hapiMod.ServerExtType
   
   @js.native
-  sealed trait onPreAuth extends js.Object
+  sealed trait onPreAuth
+    extends hapiLib.hapiMod.RouteRequestExtType
   
   @js.native
-  sealed trait onPreHandler extends js.Object
+  sealed trait onPreHandler
+    extends hapiLib.hapiMod.RouteRequestExtType
   
   @js.native
-  sealed trait onPreResponse extends js.Object
+  sealed trait onPreResponse
+    extends hapiLib.hapiMod.RouteRequestExtType
   
   @js.native
-  sealed trait onPreStart extends js.Object
+  sealed trait onPreStart
+    extends hapiLib.hapiMod.ServerExtType
   
   @js.native
-  sealed trait onPreStop extends js.Object
+  sealed trait onPreStop
+    extends hapiLib.hapiMod.ServerExtType
   
   @js.native
-  sealed trait onRequest extends js.Object
+  sealed trait onRequest
+    extends hapiLib.hapiMod.ServerRequestExtType
   
   @js.native
   sealed trait optional extends js.Object
   
   @js.native
-  sealed trait options extends js.Object
+  sealed trait options
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
-  sealed trait origin extends js.Object
+  sealed trait origin
+    extends hapiLib.hapiMod.ReferrerPolicy
   
   @js.native
-  sealed trait `origin-when-cross-origin` extends js.Object
+  sealed trait `origin-when-cross-origin`
+    extends hapiLib.hapiMod.ReferrerPolicy
   
   @js.native
-  sealed trait patch extends js.Object
+  sealed trait patch
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
-  sealed trait peek extends js.Object
+  sealed trait peek
+    extends hapiLib.hapiMod.RequestEventType
   
   @js.native
   sealed trait plain extends js.Object
@@ -199,7 +237,8 @@ object hapiLibStrings {
   sealed trait plugin extends js.Object
   
   @js.native
-  sealed trait post extends js.Object
+  sealed trait post
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait `private` extends js.Object
@@ -208,7 +247,8 @@ object hapiLibStrings {
   sealed trait public extends js.Object
   
   @js.native
-  sealed trait put extends js.Object
+  sealed trait put
+    extends hapiLib.hapiMod.UtilNs.HTTP_METHODS_PARTIAL_LOWERCASE
   
   @js.native
   sealed trait request extends js.Object
@@ -223,7 +263,8 @@ object hapiLibStrings {
   sealed trait route extends js.Object
   
   @js.native
-  sealed trait `same-origin` extends js.Object
+  sealed trait `same-origin`
+    extends hapiLib.hapiMod.ReferrerPolicy
   
   @js.native
   sealed trait sameorigin extends js.Object
@@ -241,13 +282,16 @@ object hapiLibStrings {
   sealed trait stop extends js.Object
   
   @js.native
-  sealed trait stream extends js.Object
+  sealed trait stream
+    extends hapiLib.hapiMod.PayloadOutput
   
   @js.native
-  sealed trait `strict-origin` extends js.Object
+  sealed trait `strict-origin`
+    extends hapiLib.hapiMod.ReferrerPolicy
   
   @js.native
-  sealed trait `strict-origin-when-cross-origin` extends js.Object
+  sealed trait `strict-origin-when-cross-origin`
+    extends hapiLib.hapiMod.ReferrerPolicy
   
   @js.native
   sealed trait tcp extends js.Object
@@ -262,10 +306,12 @@ object hapiLibStrings {
   sealed trait ucs2 extends js.Object
   
   @js.native
-  sealed trait `unsafe-url` extends js.Object
+  sealed trait `unsafe-url`
+    extends hapiLib.hapiMod.ReferrerPolicy
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user
+    extends hapiLib.hapiMod.RouteOptionsAccessEntity
   
   @js.native
   sealed trait utf16le extends js.Object

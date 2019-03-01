@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "Virtual")
 @js.native
-class Virtual () extends js.Object {
+class Virtual ()
+  extends swiperLib.swiperMod.SwiperModule {
   /**
     * Object with cached slides HTML elements
     */

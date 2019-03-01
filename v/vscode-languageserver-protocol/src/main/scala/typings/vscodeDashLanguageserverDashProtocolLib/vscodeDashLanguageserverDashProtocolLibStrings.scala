@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object vscodeDashLanguageserverDashProtocolLibStrings {
   @js.native
-  sealed trait abort extends js.Object
+  sealed trait abort
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.FailureHandlingKind
   
   @js.native
-  sealed trait create extends js.Object
+  sealed trait create
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ResourceOperationKind
   
   @js.native
-  sealed trait delete extends js.Object
+  sealed trait delete
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ResourceOperationKind
   
   @js.native
   sealed trait markdown extends js.Object
@@ -28,16 +31,20 @@ object vscodeDashLanguageserverDashProtocolLibStrings {
   sealed trait plaintext extends js.Object
   
   @js.native
-  sealed trait rename extends js.Object
+  sealed trait rename
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.ResourceOperationKind
   
   @js.native
-  sealed trait textOnlyTransactional extends js.Object
+  sealed trait textOnlyTransactional
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.FailureHandlingKind
   
   @js.native
-  sealed trait transactional extends js.Object
+  sealed trait transactional
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.FailureHandlingKind
   
   @js.native
-  sealed trait undo extends js.Object
+  sealed trait undo
+    extends vscodeDashLanguageserverDashProtocolLib.libProtocolMod.FailureHandlingKind
   
   @js.native
   sealed trait verbose extends js.Object

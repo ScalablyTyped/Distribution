@@ -10,3 +10,16 @@ trait DiagramEditableResizeHandlesHover extends js.Object {
   var stroke: js.UndefOr[DiagramEditableResizeHandlesHoverStroke] = js.undefined
 }
 
+object DiagramEditableResizeHandlesHover {
+  @scala.inline
+  def apply(
+    fill: java.lang.String | DiagramEditableResizeHandlesHoverFill = null,
+    stroke: DiagramEditableResizeHandlesHoverStroke = null
+  ): DiagramEditableResizeHandlesHover = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill.asInstanceOf[js.Any])
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    __obj.asInstanceOf[DiagramEditableResizeHandlesHover]
+  }
+}
+

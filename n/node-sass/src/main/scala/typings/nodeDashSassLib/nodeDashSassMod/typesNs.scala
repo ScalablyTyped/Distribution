@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("node-sass", "types")
 @js.native
 object typesNs extends js.Object {
-  trait Boolean extends js.Object {
+  trait Boolean extends Value {
     def getValue(): scala.Boolean
   }
   
@@ -19,7 +19,7 @@ object typesNs extends js.Object {
     def apply(bool: scala.Boolean): Boolean = js.native
   }
   
-  trait Color extends js.Object {
+  trait Color extends Value {
     /**
     		 * Get the alpha transparency component of the color.
     		 * @returns number between 0 and 1 inclusive;
@@ -142,7 +142,9 @@ object typesNs extends js.Object {
     def setValue(index: scala.Double, value: Value): scala.Unit
   }
   
-  trait Error extends js.Object {
+  trait Error
+    extends ReturnValue
+       with nodeDashSassLib.nodeDashSassMod._ImporterReturnType {
     /**
     		 * This property doesn't exist, but its presence forces the typescript
     		 * compiler to properly type check this type. Without it, it seems to
@@ -166,7 +168,9 @@ object typesNs extends js.Object {
     def apply(message: java.lang.String): Error = js.native
   }
   
-  trait List extends Enumerable {
+  trait List
+    extends Value
+       with Enumerable {
     def getSeparator(): scala.Boolean
     def setSeparator(isComma: scala.Boolean): scala.Unit
   }
@@ -179,7 +183,9 @@ object typesNs extends js.Object {
     def apply(length: scala.Double, commaSeparator: scala.Boolean): List = js.native
   }
   
-  trait Map extends Enumerable {
+  trait Map
+    extends Value
+       with Enumerable {
     def getKey(index: scala.Double): Value
     def setKey(index: scala.Double, key: Value): scala.Unit
   }
@@ -190,7 +196,9 @@ object typesNs extends js.Object {
     def apply(length: scala.Double): Map = js.native
   }
   
-  trait Null extends js.Object {
+  trait Null
+    extends Value
+       with nodeDashSassLib.nodeDashSassMod._ImporterReturnType {
     /**
     		 * This property doesn't exist, but its presence forces the typescript
     		 * compiler to properly type check this type. Without it, it seems to
@@ -206,7 +214,7 @@ object typesNs extends js.Object {
     def apply(): Null = js.native
   }
   
-  trait Number extends js.Object {
+  trait Number extends Value {
     def getUnit(): java.lang.String
     def getValue(): scala.Double
     def setUnit(u: java.lang.String): scala.Unit
@@ -227,7 +235,9 @@ object typesNs extends js.Object {
     def apply(value: scala.Double, unit: java.lang.String): Number = js.native
   }
   
-  trait String extends js.Object {
+  trait ReturnValue extends js.Object
+  
+  trait String extends Value {
     def getValue(): java.lang.String
     def setValue(s: java.lang.String): scala.Unit
   }
@@ -244,6 +254,8 @@ object typesNs extends js.Object {
     def apply(value: java.lang.String): String = js.native
   }
   
+  trait Value extends ReturnValue
+  
   val Boolean: BooleanConstructor = js.native
   val Color: ColorConstructor = js.native
   val Error: ErrorConstructor = js.native
@@ -252,7 +264,5 @@ object typesNs extends js.Object {
   val Null: NullConstructor = js.native
   val Number: NumberConstructor = js.native
   val String: StringConstructor = js.native
-  type ReturnValue = Value | Error
-  type Value = Null | Number | String | Color | Boolean | List | Map
 }
 

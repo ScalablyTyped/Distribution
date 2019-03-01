@@ -10,3 +10,12 @@ trait CheckValidCredsResponse extends js.Object {
   var hasValidCreds: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CheckValidCredsResponse {
+  @scala.inline
+  def apply(hasValidCreds: js.UndefOr[scala.Boolean] = js.undefined): CheckValidCredsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(hasValidCreds)) __obj.updateDynamic("hasValidCreds")(hasValidCreds)
+    __obj.asInstanceOf[CheckValidCredsResponse]
+  }
+}
+

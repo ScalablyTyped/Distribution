@@ -15,3 +15,16 @@ trait RibbonSettingsApplicationTab extends js.Object {
   var `type`: js.UndefOr[ejDotWebDotAllLib.ejNs.RibbonNs.ApplicationTabType | java.lang.String] = js.undefined
 }
 
+object RibbonSettingsApplicationTab {
+  @scala.inline
+  def apply(
+    menuSettings: RibbonSettingsApplicationTabMenuSettings = null,
+    `type`: ejDotWebDotAllLib.ejNs.RibbonNs.ApplicationTabType | java.lang.String = null
+  ): RibbonSettingsApplicationTab = {
+    val __obj = js.Dynamic.literal()
+    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RibbonSettingsApplicationTab]
+  }
+}
+

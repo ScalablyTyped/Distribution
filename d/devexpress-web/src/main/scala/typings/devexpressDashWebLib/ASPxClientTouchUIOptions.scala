@@ -31,3 +31,20 @@ trait ASPxClientTouchUIOptions extends js.Object {
   var vScrollClassName: java.lang.String
 }
 
+object ASPxClientTouchUIOptions {
+  @scala.inline
+  def apply(
+    hScrollClassName: java.lang.String,
+    showHorizontalScrollbar: scala.Boolean,
+    showVerticalScrollbar: scala.Boolean,
+    vScrollClassName: java.lang.String
+  ): ASPxClientTouchUIOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hScrollClassName")(hScrollClassName)
+    __obj.updateDynamic("showHorizontalScrollbar")(showHorizontalScrollbar)
+    __obj.updateDynamic("showVerticalScrollbar")(showVerticalScrollbar)
+    __obj.updateDynamic("vScrollClassName")(vScrollClassName)
+    __obj.asInstanceOf[ASPxClientTouchUIOptions]
+  }
+}
+

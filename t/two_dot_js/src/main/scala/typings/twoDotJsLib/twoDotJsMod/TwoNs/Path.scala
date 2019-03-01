@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Path extends js.Object {
+trait Path extends Object {
   var automatic: scala.Boolean = js.native
   var beginning: scala.Double = js.native
   var cap: java.lang.String = js.native

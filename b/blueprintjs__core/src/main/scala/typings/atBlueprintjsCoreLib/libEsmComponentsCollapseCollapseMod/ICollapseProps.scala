@@ -34,3 +34,22 @@ trait ICollapseProps
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ICollapseProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    isOpen: js.UndefOr[scala.Boolean] = js.undefined,
+    keepChildrenMounted: js.UndefOr[scala.Boolean] = js.undefined,
+    transitionDuration: scala.Int | scala.Double = null
+  ): ICollapseProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(isOpen)) __obj.updateDynamic("isOpen")(isOpen)
+    if (!js.isUndefined(keepChildrenMounted)) __obj.updateDynamic("keepChildrenMounted")(keepChildrenMounted)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICollapseProps]
+  }
+}
+

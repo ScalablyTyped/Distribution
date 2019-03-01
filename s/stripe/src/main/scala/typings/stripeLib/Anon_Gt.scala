@@ -24,3 +24,20 @@ trait Anon_Gt extends js.Object {
   var lte: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Gt {
+  @scala.inline
+  def apply(
+    gt: java.lang.String = null,
+    gte: java.lang.String = null,
+    lt: java.lang.String = null,
+    lte: java.lang.String = null
+  ): Anon_Gt = {
+    val __obj = js.Dynamic.literal()
+    if (gt != null) __obj.updateDynamic("gt")(gt)
+    if (gte != null) __obj.updateDynamic("gte")(gte)
+    if (lt != null) __obj.updateDynamic("lt")(lt)
+    if (lte != null) __obj.updateDynamic("lte")(lte)
+    __obj.asInstanceOf[Anon_Gt]
+  }
+}
+

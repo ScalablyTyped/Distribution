@@ -16,3 +16,12 @@ trait UiCanGetVisibleElement extends js.Object {
   def getVisible(): scala.Boolean
 }
 
+object UiCanGetVisibleElement {
+  @scala.inline
+  def apply(getVisible: js.Function0[scala.Boolean]): UiCanGetVisibleElement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getVisible")(getVisible)
+    __obj.asInstanceOf[UiCanGetVisibleElement]
+  }
+}
+

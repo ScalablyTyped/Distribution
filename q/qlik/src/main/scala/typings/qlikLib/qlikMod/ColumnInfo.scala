@@ -20,3 +20,36 @@ trait ColumnInfo extends js.Object {
   var qSortIndicator: qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.A | qlikLib.qlikLibStrings.D
 }
 
+object ColumnInfo {
+  @scala.inline
+  def apply(
+    qApprMaxGlyphCount: scala.Double,
+    qAttrDimInfo: js.Array[NxAttrDimInfo],
+    qAttrExprInfo: js.Array[NxAttrExprInfo],
+    qCardinal: java.lang.String,
+    qError: NxValidationError,
+    qFallbackTitle: java.lang.String,
+    qIsAutoFormat: scala.Boolean,
+    qMax: scala.Double,
+    qMin: scala.Double,
+    qNumFormat: FieldAttributes,
+    qReverseSort: scala.Boolean,
+    qSortIndicator: qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.A | qlikLib.qlikLibStrings.D
+  ): ColumnInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qApprMaxGlyphCount")(qApprMaxGlyphCount)
+    __obj.updateDynamic("qAttrDimInfo")(qAttrDimInfo)
+    __obj.updateDynamic("qAttrExprInfo")(qAttrExprInfo)
+    __obj.updateDynamic("qCardinal")(qCardinal)
+    __obj.updateDynamic("qError")(qError)
+    __obj.updateDynamic("qFallbackTitle")(qFallbackTitle)
+    __obj.updateDynamic("qIsAutoFormat")(qIsAutoFormat)
+    __obj.updateDynamic("qMax")(qMax)
+    __obj.updateDynamic("qMin")(qMin)
+    __obj.updateDynamic("qNumFormat")(qNumFormat)
+    __obj.updateDynamic("qReverseSort")(qReverseSort)
+    __obj.updateDynamic("qSortIndicator")(qSortIndicator.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnInfo]
+  }
+}
+

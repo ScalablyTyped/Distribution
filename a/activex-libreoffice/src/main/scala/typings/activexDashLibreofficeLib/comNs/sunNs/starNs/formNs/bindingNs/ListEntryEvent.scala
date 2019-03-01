@@ -28,3 +28,20 @@ trait ListEntryEvent
   var Position: scala.Double
 }
 
+object ListEntryEvent {
+  @scala.inline
+  def apply(
+    Count: scala.Double,
+    Entries: activexDashInteropLib.SafeArray[java.lang.String],
+    Position: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ListEntryEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("Entries")(Entries)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[ListEntryEvent]
+  }
+}
+

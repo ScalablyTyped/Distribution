@@ -53,3 +53,24 @@ trait ChartFontUpdateData extends js.Object {
   ] = js.undefined
 }
 
+object ChartFontUpdateData {
+  @scala.inline
+  def apply(
+    bold: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    italic: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    underline: officeDashJsDashPreviewLib.ExcelNs.ChartUnderlineStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Single = null
+  ): ChartFontUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bold)) __obj.updateDynamic("bold")(bold)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (!js.isUndefined(italic)) __obj.updateDynamic("italic")(italic)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (underline != null) __obj.updateDynamic("underline")(underline.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartFontUpdateData]
+  }
+}
+

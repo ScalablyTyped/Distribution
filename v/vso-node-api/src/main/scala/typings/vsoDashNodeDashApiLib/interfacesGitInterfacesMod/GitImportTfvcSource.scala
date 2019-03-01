@@ -20,3 +20,14 @@ trait GitImportTfvcSource extends js.Object {
   var path: java.lang.String
 }
 
+object GitImportTfvcSource {
+  @scala.inline
+  def apply(importHistory: scala.Boolean, importHistoryDurationInDays: scala.Double, path: java.lang.String): GitImportTfvcSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("importHistory")(importHistory)
+    __obj.updateDynamic("importHistoryDurationInDays")(importHistoryDurationInDays)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[GitImportTfvcSource]
+  }
+}
+

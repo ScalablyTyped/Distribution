@@ -13,3 +13,12 @@ trait BatchDeletePhotosResponse extends js.Object {
   var status: js.UndefOr[js.Array[Status]] = js.undefined
 }
 
+object BatchDeletePhotosResponse {
+  @scala.inline
+  def apply(status: js.Array[Status] = null): BatchDeletePhotosResponse = {
+    val __obj = js.Dynamic.literal()
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[BatchDeletePhotosResponse]
+  }
+}
+

@@ -48,3 +48,26 @@ trait OnChange extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object OnChange {
+  @scala.inline
+  def apply(
+    bankName: java.lang.String,
+    complete: scala.Boolean,
+    empty: scala.Boolean,
+    error: stripejsLib.stripejsMod.StripeError,
+    brand: java.lang.String = null,
+    country: java.lang.String = null,
+    value: js.Any = null
+  ): OnChange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bankName")(bankName)
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("empty")(empty)
+    __obj.updateDynamic("error")(error)
+    if (brand != null) __obj.updateDynamic("brand")(brand)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[OnChange]
+  }
+}
+

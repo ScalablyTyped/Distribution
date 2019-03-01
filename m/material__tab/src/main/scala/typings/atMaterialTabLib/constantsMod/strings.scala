@@ -10,3 +10,12 @@ trait strings
   var ARIA_SELECTED: atMaterialTabLib.atMaterialTabLibStrings.`aria-selected`
 }
 
+object strings {
+  @scala.inline
+  def apply(ARIA_SELECTED: atMaterialTabLib.atMaterialTabLibStrings.`aria-selected`): strings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ARIA_SELECTED")(ARIA_SELECTED)
+    __obj.asInstanceOf[strings]
+  }
+}
+

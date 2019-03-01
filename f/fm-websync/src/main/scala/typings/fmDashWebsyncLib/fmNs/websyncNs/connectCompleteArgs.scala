@@ -12,3 +12,22 @@ trait connectCompleteArgs extends baseResponseArgs {
   var isReconnect: scala.Boolean
 }
 
+object connectCompleteArgs {
+  @scala.inline
+  def apply(
+    client: client,
+    clientId: java.lang.String,
+    isReconnect: scala.Boolean,
+    meta: js.Any,
+    timestamp: stdLib.Date
+  ): connectCompleteArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("isReconnect")(isReconnect)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[connectCompleteArgs]
+  }
+}
+

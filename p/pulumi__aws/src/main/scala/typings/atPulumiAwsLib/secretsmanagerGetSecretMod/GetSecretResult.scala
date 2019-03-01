@@ -45,3 +45,32 @@ trait GetSecretResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetSecretResult {
+  @scala.inline
+  def apply(
+    arn: java.lang.String,
+    description: java.lang.String,
+    id: java.lang.String,
+    kmsKeyId: java.lang.String,
+    name: java.lang.String,
+    policy: java.lang.String,
+    rotationEnabled: scala.Boolean,
+    rotationLambdaArn: java.lang.String,
+    rotationRules: js.Array[atPulumiAwsLib.Anon_AutomaticallyAfterDays],
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetSecretResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("kmsKeyId")(kmsKeyId)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("policy")(policy)
+    __obj.updateDynamic("rotationEnabled")(rotationEnabled)
+    __obj.updateDynamic("rotationLambdaArn")(rotationLambdaArn)
+    __obj.updateDynamic("rotationRules")(rotationRules)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetSecretResult]
+  }
+}
+

@@ -20,3 +20,32 @@ trait NockDefinition extends js.Object {
   var status: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NockDefinition {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    scope: java.lang.String,
+    body: java.lang.String | js.Any = null,
+    headers: HttpHeaders = null,
+    method: java.lang.String = null,
+    options: Options = null,
+    port: scala.Double | java.lang.String = null,
+    reqheaders: org.scalablytyped.runtime.StringDictionary[java.lang.String | stdLib.RegExp | nockLib.Anon_HeaderValue] = null,
+    response: java.lang.String | js.Any = null,
+    status: scala.Int | scala.Double = null
+  ): NockDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("scope")(scope)
+    if (body != null) __obj.updateDynamic("body")(body.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (reqheaders != null) __obj.updateDynamic("reqheaders")(reqheaders)
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NockDefinition]
+  }
+}
+

@@ -9,3 +9,12 @@ trait NotificationStatisticsQuery extends js.Object {
   var conditions: js.Array[NotificationStatisticsQueryConditions]
 }
 
+object NotificationStatisticsQuery {
+  @scala.inline
+  def apply(conditions: js.Array[NotificationStatisticsQueryConditions]): NotificationStatisticsQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.asInstanceOf[NotificationStatisticsQuery]
+  }
+}
+

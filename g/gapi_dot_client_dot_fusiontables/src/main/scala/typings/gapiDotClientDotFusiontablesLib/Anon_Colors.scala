@@ -14,3 +14,18 @@ trait Anon_Colors extends js.Object {
   var min: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Colors {
+  @scala.inline
+  def apply(
+    colors: js.Array[Anon_Color] = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null
+  ): Anon_Colors = {
+    val __obj = js.Dynamic.literal()
+    if (colors != null) __obj.updateDynamic("colors")(colors)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Colors]
+  }
+}
+

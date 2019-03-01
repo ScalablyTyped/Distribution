@@ -32,3 +32,22 @@ trait CodeAction extends js.Object {
   var title: java.lang.String
 }
 
+object CodeAction {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    command: Command = null,
+    diagnostics: js.Array[Diagnostic] = null,
+    edit: WorkspaceEdit = null,
+    kind: CodeActionKind = null
+  ): CodeAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (command != null) __obj.updateDynamic("command")(command)
+    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
+    if (edit != null) __obj.updateDynamic("edit")(edit)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[CodeAction]
+  }
+}
+

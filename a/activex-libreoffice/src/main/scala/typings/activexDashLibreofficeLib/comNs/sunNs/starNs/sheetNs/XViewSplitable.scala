@@ -47,3 +47,40 @@ trait XViewSplitable
   def splitAtPosition(nPixelX: scala.Double, nPixelY: scala.Double): scala.Unit
 }
 
+object XViewSplitable {
+  @scala.inline
+  def apply(
+    IsWindowSplit: scala.Boolean,
+    SplitColumn: scala.Double,
+    SplitHorizontal: scala.Double,
+    SplitRow: scala.Double,
+    SplitVertical: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    getIsWindowSplit: js.Function0[scala.Boolean],
+    getSplitColumn: js.Function0[scala.Double],
+    getSplitHorizontal: js.Function0[scala.Double],
+    getSplitRow: js.Function0[scala.Double],
+    getSplitVertical: js.Function0[scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    splitAtPosition: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): XViewSplitable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("IsWindowSplit")(IsWindowSplit)
+    __obj.updateDynamic("SplitColumn")(SplitColumn)
+    __obj.updateDynamic("SplitHorizontal")(SplitHorizontal)
+    __obj.updateDynamic("SplitRow")(SplitRow)
+    __obj.updateDynamic("SplitVertical")(SplitVertical)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getIsWindowSplit")(getIsWindowSplit)
+    __obj.updateDynamic("getSplitColumn")(getSplitColumn)
+    __obj.updateDynamic("getSplitHorizontal")(getSplitHorizontal)
+    __obj.updateDynamic("getSplitRow")(getSplitRow)
+    __obj.updateDynamic("getSplitVertical")(getSplitVertical)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("splitAtPosition")(splitAtPosition)
+    __obj.asInstanceOf[XViewSplitable]
+  }
+}
+

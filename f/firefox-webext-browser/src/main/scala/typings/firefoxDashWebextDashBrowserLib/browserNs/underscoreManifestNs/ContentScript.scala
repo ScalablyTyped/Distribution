@@ -34,3 +34,30 @@ trait ContentScript extends js.Object {
   var run_at: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.RunAt] = js.undefined
 }
 
+object ContentScript {
+  @scala.inline
+  def apply(
+    matches: js.Array[MatchPattern],
+    all_frames: js.UndefOr[scala.Boolean] = js.undefined,
+    css: js.Array[ExtensionURL] = null,
+    exclude_globs: js.Array[java.lang.String] = null,
+    exclude_matches: js.Array[MatchPattern] = null,
+    include_globs: js.Array[java.lang.String] = null,
+    `js_`: js.Array[ExtensionURL] = null,
+    match_about_blank: js.UndefOr[scala.Boolean] = js.undefined,
+    run_at: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.RunAt = null
+  ): ContentScript = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("matches")(matches)
+    if (!js.isUndefined(all_frames)) __obj.updateDynamic("all_frames")(all_frames)
+    if (css != null) __obj.updateDynamic("css")(css)
+    if (exclude_globs != null) __obj.updateDynamic("exclude_globs")(exclude_globs)
+    if (exclude_matches != null) __obj.updateDynamic("exclude_matches")(exclude_matches)
+    if (include_globs != null) __obj.updateDynamic("include_globs")(include_globs)
+    if (`js_` != null) __obj.updateDynamic("js")(`js_`)
+    if (!js.isUndefined(match_about_blank)) __obj.updateDynamic("match_about_blank")(match_about_blank)
+    if (run_at != null) __obj.updateDynamic("run_at")(run_at)
+    __obj.asInstanceOf[ContentScript]
+  }
+}
+

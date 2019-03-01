@@ -17,3 +17,18 @@ trait AntennaCharacteristics extends js.Object {
   var heightUncertainty: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AntennaCharacteristics {
+  @scala.inline
+  def apply(
+    height: scala.Int | scala.Double = null,
+    heightType: java.lang.String = null,
+    heightUncertainty: scala.Int | scala.Double = null
+  ): AntennaCharacteristics = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (heightType != null) __obj.updateDynamic("heightType")(heightType)
+    if (heightUncertainty != null) __obj.updateDynamic("heightUncertainty")(heightUncertainty.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AntennaCharacteristics]
+  }
+}
+

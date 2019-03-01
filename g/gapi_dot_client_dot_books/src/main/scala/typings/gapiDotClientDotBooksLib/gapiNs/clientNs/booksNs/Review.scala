@@ -28,3 +28,32 @@ trait Review extends js.Object {
   var volumeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Review {
+  @scala.inline
+  def apply(
+    author: gapiDotClientDotBooksLib.Anon_DisplayName = null,
+    content: java.lang.String = null,
+    date: java.lang.String = null,
+    fullTextUrl: java.lang.String = null,
+    kind: java.lang.String = null,
+    rating: java.lang.String = null,
+    source: gapiDotClientDotBooksLib.Anon_Description = null,
+    title: java.lang.String = null,
+    `type`: java.lang.String = null,
+    volumeId: java.lang.String = null
+  ): Review = {
+    val __obj = js.Dynamic.literal()
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (fullTextUrl != null) __obj.updateDynamic("fullTextUrl")(fullTextUrl)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (rating != null) __obj.updateDynamic("rating")(rating)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    __obj.asInstanceOf[Review]
+  }
+}
+

@@ -23,3 +23,24 @@ trait ServingContext extends js.Object {
   var securityType: js.UndefOr[SecurityContext] = js.undefined
 }
 
+object ServingContext {
+  @scala.inline
+  def apply(
+    all: java.lang.String = null,
+    appType: AppContext = null,
+    auctionType: AuctionContext = null,
+    location: LocationContext = null,
+    platform: PlatformContext = null,
+    securityType: SecurityContext = null
+  ): ServingContext = {
+    val __obj = js.Dynamic.literal()
+    if (all != null) __obj.updateDynamic("all")(all)
+    if (appType != null) __obj.updateDynamic("appType")(appType)
+    if (auctionType != null) __obj.updateDynamic("auctionType")(auctionType)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (securityType != null) __obj.updateDynamic("securityType")(securityType)
+    __obj.asInstanceOf[ServingContext]
+  }
+}
+

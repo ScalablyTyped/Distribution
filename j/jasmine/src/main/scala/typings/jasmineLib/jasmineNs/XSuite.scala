@@ -9,3 +9,12 @@ trait XSuite extends js.Object {
   def execute(): scala.Unit
 }
 
+object XSuite {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Unit]): XSuite = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.asInstanceOf[XSuite]
+  }
+}
+

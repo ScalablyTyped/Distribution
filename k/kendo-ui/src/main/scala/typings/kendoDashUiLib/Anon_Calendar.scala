@@ -12,3 +12,15 @@ trait Anon_Calendar extends js.Object {
   var numberFormat: Anon_Currency
 }
 
+object Anon_Calendar {
+  @scala.inline
+  def apply(calendar: `Anon_`, calendars: Anon_Standard, name: java.lang.String, numberFormat: Anon_Currency): Anon_Calendar = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("calendar")(calendar)
+    __obj.updateDynamic("calendars")(calendars)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("numberFormat")(numberFormat)
+    __obj.asInstanceOf[Anon_Calendar]
+  }
+}
+

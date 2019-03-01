@@ -20,3 +20,12 @@ trait Anon_Id extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Id {
+  @scala.inline
+  def apply(id: scala.Double, `type`: java.lang.String): Anon_Id = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[Anon_Id]
+  }
+}
+

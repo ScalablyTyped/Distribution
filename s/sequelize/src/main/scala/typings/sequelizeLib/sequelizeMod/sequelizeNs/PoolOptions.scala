@@ -38,3 +38,24 @@ trait PoolOptions extends js.Object {
   var validate: js.UndefOr[js.Function1[/* client */ js.UndefOr[js.Any], scala.Boolean]] = js.undefined
 }
 
+object PoolOptions {
+  @scala.inline
+  def apply(
+    acquire: scala.Int | scala.Double = null,
+    evict: scala.Int | scala.Double = null,
+    idle: scala.Int | scala.Double = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    validate: js.Function1[/* client */ js.UndefOr[js.Any], scala.Boolean] = null
+  ): PoolOptions = {
+    val __obj = js.Dynamic.literal()
+    if (acquire != null) __obj.updateDynamic("acquire")(acquire.asInstanceOf[js.Any])
+    if (evict != null) __obj.updateDynamic("evict")(evict.asInstanceOf[js.Any])
+    if (idle != null) __obj.updateDynamic("idle")(idle.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (validate != null) __obj.updateDynamic("validate")(validate)
+    __obj.asInstanceOf[PoolOptions]
+  }
+}
+

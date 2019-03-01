@@ -16,3 +16,13 @@ trait ReadResult extends js.Object {
   val props: js.UndefOr[js.Any] = js.undefined
 }
 
+object ReadResult {
+  @scala.inline
+  def apply(id: atPulumiPulumiLib.resourceMod.ID = null, props: js.Any = null): ReadResult = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (props != null) __obj.updateDynamic("props")(props)
+    __obj.asInstanceOf[ReadResult]
+  }
+}
+

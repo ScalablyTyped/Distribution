@@ -20,3 +20,24 @@ trait AchievementConfigurationDetail extends js.Object {
   var sortRank: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AchievementConfigurationDetail {
+  @scala.inline
+  def apply(
+    description: LocalizedStringBundle = null,
+    iconUrl: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: LocalizedStringBundle = null,
+    pointValue: scala.Int | scala.Double = null,
+    sortRank: scala.Int | scala.Double = null
+  ): AchievementConfigurationDetail = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pointValue != null) __obj.updateDynamic("pointValue")(pointValue.asInstanceOf[js.Any])
+    if (sortRank != null) __obj.updateDynamic("sortRank")(sortRank.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AchievementConfigurationDetail]
+  }
+}
+

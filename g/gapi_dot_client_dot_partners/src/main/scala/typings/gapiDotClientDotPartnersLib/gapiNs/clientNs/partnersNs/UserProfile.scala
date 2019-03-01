@@ -40,3 +40,40 @@ trait UserProfile extends js.Object {
   var profilePublic: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UserProfile {
+  @scala.inline
+  def apply(
+    address: Location = null,
+    adwordsManagerAccount: java.lang.String = null,
+    channels: js.Array[java.lang.String] = null,
+    emailAddress: java.lang.String = null,
+    emailOptIns: OptIns = null,
+    familyName: java.lang.String = null,
+    givenName: java.lang.String = null,
+    industries: js.Array[java.lang.String] = null,
+    jobFunctions: js.Array[java.lang.String] = null,
+    languages: js.Array[java.lang.String] = null,
+    markets: js.Array[java.lang.String] = null,
+    phoneNumber: java.lang.String = null,
+    primaryCountryCode: java.lang.String = null,
+    profilePublic: js.UndefOr[scala.Boolean] = js.undefined
+  ): UserProfile = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (adwordsManagerAccount != null) __obj.updateDynamic("adwordsManagerAccount")(adwordsManagerAccount)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
+    if (emailOptIns != null) __obj.updateDynamic("emailOptIns")(emailOptIns)
+    if (familyName != null) __obj.updateDynamic("familyName")(familyName)
+    if (givenName != null) __obj.updateDynamic("givenName")(givenName)
+    if (industries != null) __obj.updateDynamic("industries")(industries)
+    if (jobFunctions != null) __obj.updateDynamic("jobFunctions")(jobFunctions)
+    if (languages != null) __obj.updateDynamic("languages")(languages)
+    if (markets != null) __obj.updateDynamic("markets")(markets)
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (primaryCountryCode != null) __obj.updateDynamic("primaryCountryCode")(primaryCountryCode)
+    if (!js.isUndefined(profilePublic)) __obj.updateDynamic("profilePublic")(profilePublic)
+    __obj.asInstanceOf[UserProfile]
+  }
+}
+

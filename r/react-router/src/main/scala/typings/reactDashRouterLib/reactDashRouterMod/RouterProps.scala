@@ -9,3 +9,12 @@ trait RouterProps extends js.Object {
   var history: historyLib.historyMod.History[historyLib.historyMod.LocationState]
 }
 
+object RouterProps {
+  @scala.inline
+  def apply(history: historyLib.historyMod.History[historyLib.historyMod.LocationState]): RouterProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("history")(history)
+    __obj.asInstanceOf[RouterProps]
+  }
+}
+

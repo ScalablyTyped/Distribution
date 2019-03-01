@@ -28,3 +28,32 @@ trait Options extends js.Object {
   var withCredentials: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    attempts: scala.Int | scala.Double = null,
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    dataType: java.lang.String = null,
+    headers: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    password: java.lang.String = null,
+    responseType: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    user: java.lang.String = null,
+    withCredentials: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (attempts != null) __obj.updateDynamic("attempts")(attempts.asInstanceOf[js.Any])
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (user != null) __obj.updateDynamic("user")(user)
+    if (!js.isUndefined(withCredentials)) __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[Options]
+  }
+}
+

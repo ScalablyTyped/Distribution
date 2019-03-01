@@ -10,3 +10,16 @@ trait NxFieldSelectionInfo extends js.Object {
   var qName: java.lang.String
 }
 
+object NxFieldSelectionInfo {
+  @scala.inline
+  def apply(
+    qFieldSelectionmode: qlikLib.qlikLibStrings.NORMAL | qlikLib.qlikLibStrings.AND | qlikLib.qlikLibStrings.NOT,
+    qName: java.lang.String
+  ): NxFieldSelectionInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFieldSelectionmode")(qFieldSelectionmode.asInstanceOf[js.Any])
+    __obj.updateDynamic("qName")(qName)
+    __obj.asInstanceOf[NxFieldSelectionInfo]
+  }
+}
+

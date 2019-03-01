@@ -67,3 +67,38 @@ trait UserNotificationDictionary extends js.Object {
   var userInfo: js.UndefOr[js.Any] = js.undefined
 }
 
+object UserNotificationDictionary {
+  @scala.inline
+  def apply(
+    identifier: java.lang.String,
+    alertAction: java.lang.String = null,
+    alertBody: java.lang.String = null,
+    alertLaunchImage: java.lang.String = null,
+    alertSubtitle: java.lang.String = null,
+    alertTitle: java.lang.String = null,
+    badge: scala.Int | scala.Double = null,
+    category: java.lang.String = null,
+    date: stdLib.Date = null,
+    region: js.Any = null,
+    sound: java.lang.String = null,
+    timezone: java.lang.String = null,
+    userInfo: js.Any = null
+  ): UserNotificationDictionary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("identifier")(identifier)
+    if (alertAction != null) __obj.updateDynamic("alertAction")(alertAction)
+    if (alertBody != null) __obj.updateDynamic("alertBody")(alertBody)
+    if (alertLaunchImage != null) __obj.updateDynamic("alertLaunchImage")(alertLaunchImage)
+    if (alertSubtitle != null) __obj.updateDynamic("alertSubtitle")(alertSubtitle)
+    if (alertTitle != null) __obj.updateDynamic("alertTitle")(alertTitle)
+    if (badge != null) __obj.updateDynamic("badge")(badge.asInstanceOf[js.Any])
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (sound != null) __obj.updateDynamic("sound")(sound)
+    if (timezone != null) __obj.updateDynamic("timezone")(timezone)
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
+    __obj.asInstanceOf[UserNotificationDictionary]
+  }
+}
+

@@ -58,3 +58,62 @@ trait FlashStroke extends js.Object {
   var waveLength: java.lang.String
 }
 
+object FlashStroke {
+  @scala.inline
+  def apply(
+    breakAtCorners: scala.Boolean,
+    capType: java.lang.String,
+    color: js.Any,
+    curve: java.lang.String,
+    dash1: scala.Double,
+    dash2: scala.Double,
+    density: java.lang.String,
+    dotSize: java.lang.String,
+    dotSpace: scala.Double,
+    hatchThickness: java.lang.String,
+    jiggle: java.lang.String,
+    joinType: java.lang.String,
+    length: java.lang.String,
+    miterLimit: scala.Double,
+    pattern: java.lang.String,
+    rotate: java.lang.String,
+    scaleType: java.lang.String,
+    shapeFill: FlashFill,
+    space: java.lang.String,
+    strokeHinting: scala.Boolean,
+    style: java.lang.String,
+    thickness: scala.Double,
+    variation: java.lang.String,
+    waveHeight: java.lang.String,
+    waveLength: java.lang.String
+  ): FlashStroke = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("breakAtCorners")(breakAtCorners)
+    __obj.updateDynamic("capType")(capType)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("curve")(curve)
+    __obj.updateDynamic("dash1")(dash1)
+    __obj.updateDynamic("dash2")(dash2)
+    __obj.updateDynamic("density")(density)
+    __obj.updateDynamic("dotSize")(dotSize)
+    __obj.updateDynamic("dotSpace")(dotSpace)
+    __obj.updateDynamic("hatchThickness")(hatchThickness)
+    __obj.updateDynamic("jiggle")(jiggle)
+    __obj.updateDynamic("joinType")(joinType)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("miterLimit")(miterLimit)
+    __obj.updateDynamic("pattern")(pattern)
+    __obj.updateDynamic("rotate")(rotate)
+    __obj.updateDynamic("scaleType")(scaleType)
+    __obj.updateDynamic("shapeFill")(shapeFill)
+    __obj.updateDynamic("space")(space)
+    __obj.updateDynamic("strokeHinting")(strokeHinting)
+    __obj.updateDynamic("style")(style)
+    __obj.updateDynamic("thickness")(thickness)
+    __obj.updateDynamic("variation")(variation)
+    __obj.updateDynamic("waveHeight")(waveHeight)
+    __obj.updateDynamic("waveLength")(waveLength)
+    __obj.asInstanceOf[FlashStroke]
+  }
+}
+

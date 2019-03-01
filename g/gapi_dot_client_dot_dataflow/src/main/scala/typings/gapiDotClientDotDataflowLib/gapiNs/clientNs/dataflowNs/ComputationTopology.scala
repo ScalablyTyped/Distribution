@@ -20,3 +20,24 @@ trait ComputationTopology extends js.Object {
   var systemStageName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ComputationTopology {
+  @scala.inline
+  def apply(
+    computationId: java.lang.String = null,
+    inputs: js.Array[StreamLocation] = null,
+    keyRanges: js.Array[KeyRangeLocation] = null,
+    outputs: js.Array[StreamLocation] = null,
+    stateFamilies: js.Array[StateFamilyConfig] = null,
+    systemStageName: java.lang.String = null
+  ): ComputationTopology = {
+    val __obj = js.Dynamic.literal()
+    if (computationId != null) __obj.updateDynamic("computationId")(computationId)
+    if (inputs != null) __obj.updateDynamic("inputs")(inputs)
+    if (keyRanges != null) __obj.updateDynamic("keyRanges")(keyRanges)
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    if (stateFamilies != null) __obj.updateDynamic("stateFamilies")(stateFamilies)
+    if (systemStageName != null) __obj.updateDynamic("systemStageName")(systemStageName)
+    __obj.asInstanceOf[ComputationTopology]
+  }
+}
+

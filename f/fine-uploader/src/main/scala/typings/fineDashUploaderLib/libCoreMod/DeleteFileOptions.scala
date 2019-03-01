@@ -40,3 +40,22 @@ trait DeleteFileOptions extends js.Object {
   var params: js.UndefOr[js.Any] = js.undefined
 }
 
+object DeleteFileOptions {
+  @scala.inline
+  def apply(
+    customHeaders: js.Any = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    endpoint: java.lang.String = null,
+    method: java.lang.String = null,
+    params: js.Any = null
+  ): DeleteFileOptions = {
+    val __obj = js.Dynamic.literal()
+    if (customHeaders != null) __obj.updateDynamic("customHeaders")(customHeaders)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[DeleteFileOptions]
+  }
+}
+

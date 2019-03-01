@@ -12,3 +12,12 @@ trait ListSubHeaderTheme extends js.Object {
   var subheader: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListSubHeaderTheme {
+  @scala.inline
+  def apply(subheader: java.lang.String = null): ListSubHeaderTheme = {
+    val __obj = js.Dynamic.literal()
+    if (subheader != null) __obj.updateDynamic("subheader")(subheader)
+    __obj.asInstanceOf[ListSubHeaderTheme]
+  }
+}
+

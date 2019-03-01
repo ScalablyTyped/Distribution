@@ -12,6 +12,8 @@ object projectsNs extends js.Object {
   - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument because var conflicts: id, isLoaded, model, structureTypeName, unit. Inlined name, asLoaded, load, load, load, load */ @js.native
   abstract class Document protected () extends ModuleDocument {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
+    @JSName("containerAsFolderBase")
+    val containerAsFolderBase_Document: FolderBase = js.native
     var documentation: java.lang.String = js.native
     var excluded: scala.Boolean = js.native
     var name: java.lang.String = js.native
@@ -25,6 +27,8 @@ object projectsNs extends js.Object {
   - mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolder because var conflicts: documents, folders, id, isLoaded, model, structureTypeName, unit. Inlined name */ @js.native
   class Folder protected () extends FolderBase {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: IFolderBase) = this()
+    @JSName("containerAsFolderBase")
+    val containerAsFolderBase_Folder: FolderBase = js.native
     var name: java.lang.String = js.native
   }
   
@@ -149,6 +153,8 @@ object projectsNs extends js.Object {
     var appStoreGuid: java.lang.String = js.native
     var appStoreVersion: java.lang.String = js.native
     var appStoreVersionGuid: java.lang.String = js.native
+    @JSName("containerAsProject")
+    val containerAsProject_Module: Project = js.native
     var domainModel: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IDomainModel = js.native
     var fromAppStore: scala.Boolean = js.native
     var moduleSecurity: mendixmodelsdkLib.distGenSecurityMod.securityNs.IModuleSecurity = js.native

@@ -20,3 +20,14 @@ trait ShareOption extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ShareOption {
+  @scala.inline
+  def apply(imageUrl: java.lang.String = null, query: java.lang.String = null, title: java.lang.String = null): ShareOption = {
+    val __obj = js.Dynamic.literal()
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ShareOption]
+  }
+}
+

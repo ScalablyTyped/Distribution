@@ -16,3 +16,28 @@ trait Anon_AuthenticationRequestExtraParams extends js.Object {
   var userPoolDomain: java.lang.String
 }
 
+object Anon_AuthenticationRequestExtraParams {
+  @scala.inline
+  def apply(
+    authenticationRequestExtraParams: org.scalablytyped.runtime.StringDictionary[js.Any],
+    onUnauthenticatedRequest: java.lang.String,
+    scope: java.lang.String,
+    sessionCookieName: java.lang.String,
+    sessionTimeout: scala.Double,
+    userPoolArn: java.lang.String,
+    userPoolClientId: java.lang.String,
+    userPoolDomain: java.lang.String
+  ): Anon_AuthenticationRequestExtraParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("authenticationRequestExtraParams")(authenticationRequestExtraParams)
+    __obj.updateDynamic("onUnauthenticatedRequest")(onUnauthenticatedRequest)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("sessionCookieName")(sessionCookieName)
+    __obj.updateDynamic("sessionTimeout")(sessionTimeout)
+    __obj.updateDynamic("userPoolArn")(userPoolArn)
+    __obj.updateDynamic("userPoolClientId")(userPoolClientId)
+    __obj.updateDynamic("userPoolDomain")(userPoolDomain)
+    __obj.asInstanceOf[Anon_AuthenticationRequestExtraParams]
+  }
+}
+

@@ -15,3 +15,13 @@ trait ListClustersResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListClustersResponse {
+  @scala.inline
+  def apply(clusters: js.Array[Cluster] = null, nextPageToken: java.lang.String = null): ListClustersResponse = {
+    val __obj = js.Dynamic.literal()
+    if (clusters != null) __obj.updateDynamic("clusters")(clusters)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListClustersResponse]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_Default[Props] extends js.Object {
   var default: reactLib.reactMod.ReactNs.ComponentType[Props]
 }
 
+object Anon_Default {
+  @scala.inline
+  def apply[Props](default: reactLib.reactMod.ReactNs.ComponentType[Props]): Anon_Default[Props] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("default")(default.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Default[Props]]
+  }
+}
+

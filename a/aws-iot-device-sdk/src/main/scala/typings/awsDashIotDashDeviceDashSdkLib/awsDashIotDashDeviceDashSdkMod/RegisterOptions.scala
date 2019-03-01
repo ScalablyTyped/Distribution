@@ -26,3 +26,20 @@ trait RegisterOptions extends js.Object {
   var persistentSubscribe: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RegisterOptions {
+  @scala.inline
+  def apply(
+    discardStale: js.UndefOr[scala.Boolean] = js.undefined,
+    enableVersioning: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreDeltas: js.UndefOr[scala.Boolean] = js.undefined,
+    persistentSubscribe: js.UndefOr[scala.Boolean] = js.undefined
+  ): RegisterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(discardStale)) __obj.updateDynamic("discardStale")(discardStale)
+    if (!js.isUndefined(enableVersioning)) __obj.updateDynamic("enableVersioning")(enableVersioning)
+    if (!js.isUndefined(ignoreDeltas)) __obj.updateDynamic("ignoreDeltas")(ignoreDeltas)
+    if (!js.isUndefined(persistentSubscribe)) __obj.updateDynamic("persistentSubscribe")(persistentSubscribe)
+    __obj.asInstanceOf[RegisterOptions]
+  }
+}
+

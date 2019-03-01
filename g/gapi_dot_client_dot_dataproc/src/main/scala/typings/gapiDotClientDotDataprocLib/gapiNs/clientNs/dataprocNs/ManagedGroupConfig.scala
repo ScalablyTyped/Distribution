@@ -12,3 +12,13 @@ trait ManagedGroupConfig extends js.Object {
   var instanceTemplateName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ManagedGroupConfig {
+  @scala.inline
+  def apply(instanceGroupManagerName: java.lang.String = null, instanceTemplateName: java.lang.String = null): ManagedGroupConfig = {
+    val __obj = js.Dynamic.literal()
+    if (instanceGroupManagerName != null) __obj.updateDynamic("instanceGroupManagerName")(instanceGroupManagerName)
+    if (instanceTemplateName != null) __obj.updateDynamic("instanceTemplateName")(instanceTemplateName)
+    __obj.asInstanceOf[ManagedGroupConfig]
+  }
+}
+

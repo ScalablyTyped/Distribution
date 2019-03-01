@@ -230,3 +230,322 @@ import scala.scalajs.js.annotation._
   var WritingMode: scala.Double
 }
 
+object PageStyle {
+  @scala.inline
+  def apply(
+    BackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    BackGraphicFilter: java.lang.String,
+    BackGraphicLocation: GraphicLocation,
+    BackGraphicURL: java.lang.String,
+    BackTransparent: scala.Boolean,
+    BorderDistance: scala.Double,
+    BottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    BottomBorderDistance: scala.Double,
+    BottomMargin: scala.Double,
+    DisplayName: java.lang.String,
+    FirstIsShared: scala.Boolean,
+    FollowStyle: java.lang.String,
+    FooterBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FooterBackGraphicFilter: java.lang.String,
+    FooterBackGraphicLocation: GraphicLocation,
+    FooterBackGraphicURL: java.lang.String,
+    FooterBackTransparent: scala.Boolean,
+    FooterBodyDistance: scala.Double,
+    FooterBorderDistance: scala.Double,
+    FooterBottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    FooterBottomBorderDistance: scala.Double,
+    FooterDynamicSpacing: scala.Boolean,
+    FooterHeight: scala.Double,
+    FooterIsDynamicHeight: scala.Boolean,
+    FooterIsOn: scala.Boolean,
+    FooterIsShared: scala.Boolean,
+    FooterLeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    FooterLeftBorderDistance: scala.Double,
+    FooterLeftMargin: scala.Double,
+    FooterRightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    FooterRightBorderDistance: scala.Double,
+    FooterRightMargin: scala.Double,
+    FooterShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    FooterText: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    FooterTextLeft: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    FooterTextRight: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    FooterTopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    FooterTopBorderDistance: scala.Double,
+    FootnoteHeight: scala.Double,
+    FootnoteLineAdjust: scala.Double,
+    FootnoteLineColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    FootnoteLineDistance: scala.Double,
+    FootnoteLineRelativeWidth: scala.Double,
+    FootnoteLineStyle: scala.Double,
+    FootnoteLineTextDistance: scala.Double,
+    FootnoteLineWeight: scala.Double,
+    GridBaseHeight: scala.Double,
+    GridColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    GridDisplay: scala.Boolean,
+    GridLines: scala.Double,
+    GridMode: scala.Double,
+    GridPrint: scala.Boolean,
+    GridRubyBelow: scala.Boolean,
+    GridRubyHeight: scala.Double,
+    HeaderBackColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    HeaderBackGraphicFilter: java.lang.String,
+    HeaderBackGraphicLocation: GraphicLocation,
+    HeaderBackGraphicURL: java.lang.String,
+    HeaderBackTransparent: scala.Boolean,
+    HeaderBodyDistance: scala.Double,
+    HeaderBorderDistance: scala.Double,
+    HeaderBottomBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    HeaderBottomBorderDistance: scala.Double,
+    HeaderDynamicSpacing: scala.Boolean,
+    HeaderHeight: scala.Double,
+    HeaderIsDynamicHeight: scala.Boolean,
+    HeaderIsOn: scala.Boolean,
+    HeaderIsShared: scala.Boolean,
+    HeaderLeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    HeaderLeftBorderDistance: scala.Double,
+    HeaderLeftMargin: scala.Double,
+    HeaderRightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    HeaderRightBorderDistance: scala.Double,
+    HeaderRightMargin: scala.Double,
+    HeaderShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    HeaderText: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    HeaderTextLeft: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    HeaderTextRight: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XText,
+    HeaderTopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    HeaderTopBorderDistance: scala.Double,
+    Height: scala.Double,
+    Hidden: scala.Boolean,
+    IsAutoUpdate: java.lang.String,
+    IsLandscape: scala.Boolean,
+    IsPhysical: scala.Boolean,
+    LeftBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    LeftBorderDistance: scala.Double,
+    LeftMargin: scala.Double,
+    Name: java.lang.String,
+    NumberingType: scala.Double,
+    PageStyleLayout: PageStyleLayout,
+    ParaStyleConditions: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.NamedValue],
+    ParentStyle: java.lang.String,
+    PrinterPaperTray: java.lang.String,
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    RegisterModeActive: scala.Boolean,
+    RegisterParagraphStyle: java.lang.String,
+    RightBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    RightBorderDistance: scala.Double,
+    RightMargin: scala.Double,
+    ShadowFormat: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.ShadowFormat,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    StyleInteropGrabBag: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    TextColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XTextColumns,
+    TopBorder: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.BorderLine,
+    TopBorderDistance: scala.Double,
+    TopMargin: scala.Double,
+    UserDefinedAttributes: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    Width: scala.Double,
+    WritingMode: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addPropertiesChangeListener: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    firePropertiesChangeEvent: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    getName: js.Function0[java.lang.String],
+    getParentStyle: js.Function0[java.lang.String],
+    getPropertyDefaults: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyStates: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
+    ],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    isInUse: js.Function0[scala.Boolean],
+    isUserDefined: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePropertiesChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setAllPropertiesToDefault: js.Function0[scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setParentStyle: js.Function1[java.lang.String, scala.Unit],
+    setPropertiesToDefault: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ]
+  ): PageStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BackColor")(BackColor)
+    __obj.updateDynamic("BackGraphicFilter")(BackGraphicFilter)
+    __obj.updateDynamic("BackGraphicLocation")(BackGraphicLocation)
+    __obj.updateDynamic("BackGraphicURL")(BackGraphicURL)
+    __obj.updateDynamic("BackTransparent")(BackTransparent)
+    __obj.updateDynamic("BorderDistance")(BorderDistance)
+    __obj.updateDynamic("BottomBorder")(BottomBorder)
+    __obj.updateDynamic("BottomBorderDistance")(BottomBorderDistance)
+    __obj.updateDynamic("BottomMargin")(BottomMargin)
+    __obj.updateDynamic("DisplayName")(DisplayName)
+    __obj.updateDynamic("FirstIsShared")(FirstIsShared)
+    __obj.updateDynamic("FollowStyle")(FollowStyle)
+    __obj.updateDynamic("FooterBackColor")(FooterBackColor)
+    __obj.updateDynamic("FooterBackGraphicFilter")(FooterBackGraphicFilter)
+    __obj.updateDynamic("FooterBackGraphicLocation")(FooterBackGraphicLocation)
+    __obj.updateDynamic("FooterBackGraphicURL")(FooterBackGraphicURL)
+    __obj.updateDynamic("FooterBackTransparent")(FooterBackTransparent)
+    __obj.updateDynamic("FooterBodyDistance")(FooterBodyDistance)
+    __obj.updateDynamic("FooterBorderDistance")(FooterBorderDistance)
+    __obj.updateDynamic("FooterBottomBorder")(FooterBottomBorder)
+    __obj.updateDynamic("FooterBottomBorderDistance")(FooterBottomBorderDistance)
+    __obj.updateDynamic("FooterDynamicSpacing")(FooterDynamicSpacing)
+    __obj.updateDynamic("FooterHeight")(FooterHeight)
+    __obj.updateDynamic("FooterIsDynamicHeight")(FooterIsDynamicHeight)
+    __obj.updateDynamic("FooterIsOn")(FooterIsOn)
+    __obj.updateDynamic("FooterIsShared")(FooterIsShared)
+    __obj.updateDynamic("FooterLeftBorder")(FooterLeftBorder)
+    __obj.updateDynamic("FooterLeftBorderDistance")(FooterLeftBorderDistance)
+    __obj.updateDynamic("FooterLeftMargin")(FooterLeftMargin)
+    __obj.updateDynamic("FooterRightBorder")(FooterRightBorder)
+    __obj.updateDynamic("FooterRightBorderDistance")(FooterRightBorderDistance)
+    __obj.updateDynamic("FooterRightMargin")(FooterRightMargin)
+    __obj.updateDynamic("FooterShadowFormat")(FooterShadowFormat)
+    __obj.updateDynamic("FooterText")(FooterText)
+    __obj.updateDynamic("FooterTextLeft")(FooterTextLeft)
+    __obj.updateDynamic("FooterTextRight")(FooterTextRight)
+    __obj.updateDynamic("FooterTopBorder")(FooterTopBorder)
+    __obj.updateDynamic("FooterTopBorderDistance")(FooterTopBorderDistance)
+    __obj.updateDynamic("FootnoteHeight")(FootnoteHeight)
+    __obj.updateDynamic("FootnoteLineAdjust")(FootnoteLineAdjust)
+    __obj.updateDynamic("FootnoteLineColor")(FootnoteLineColor)
+    __obj.updateDynamic("FootnoteLineDistance")(FootnoteLineDistance)
+    __obj.updateDynamic("FootnoteLineRelativeWidth")(FootnoteLineRelativeWidth)
+    __obj.updateDynamic("FootnoteLineStyle")(FootnoteLineStyle)
+    __obj.updateDynamic("FootnoteLineTextDistance")(FootnoteLineTextDistance)
+    __obj.updateDynamic("FootnoteLineWeight")(FootnoteLineWeight)
+    __obj.updateDynamic("GridBaseHeight")(GridBaseHeight)
+    __obj.updateDynamic("GridColor")(GridColor)
+    __obj.updateDynamic("GridDisplay")(GridDisplay)
+    __obj.updateDynamic("GridLines")(GridLines)
+    __obj.updateDynamic("GridMode")(GridMode)
+    __obj.updateDynamic("GridPrint")(GridPrint)
+    __obj.updateDynamic("GridRubyBelow")(GridRubyBelow)
+    __obj.updateDynamic("GridRubyHeight")(GridRubyHeight)
+    __obj.updateDynamic("HeaderBackColor")(HeaderBackColor)
+    __obj.updateDynamic("HeaderBackGraphicFilter")(HeaderBackGraphicFilter)
+    __obj.updateDynamic("HeaderBackGraphicLocation")(HeaderBackGraphicLocation)
+    __obj.updateDynamic("HeaderBackGraphicURL")(HeaderBackGraphicURL)
+    __obj.updateDynamic("HeaderBackTransparent")(HeaderBackTransparent)
+    __obj.updateDynamic("HeaderBodyDistance")(HeaderBodyDistance)
+    __obj.updateDynamic("HeaderBorderDistance")(HeaderBorderDistance)
+    __obj.updateDynamic("HeaderBottomBorder")(HeaderBottomBorder)
+    __obj.updateDynamic("HeaderBottomBorderDistance")(HeaderBottomBorderDistance)
+    __obj.updateDynamic("HeaderDynamicSpacing")(HeaderDynamicSpacing)
+    __obj.updateDynamic("HeaderHeight")(HeaderHeight)
+    __obj.updateDynamic("HeaderIsDynamicHeight")(HeaderIsDynamicHeight)
+    __obj.updateDynamic("HeaderIsOn")(HeaderIsOn)
+    __obj.updateDynamic("HeaderIsShared")(HeaderIsShared)
+    __obj.updateDynamic("HeaderLeftBorder")(HeaderLeftBorder)
+    __obj.updateDynamic("HeaderLeftBorderDistance")(HeaderLeftBorderDistance)
+    __obj.updateDynamic("HeaderLeftMargin")(HeaderLeftMargin)
+    __obj.updateDynamic("HeaderRightBorder")(HeaderRightBorder)
+    __obj.updateDynamic("HeaderRightBorderDistance")(HeaderRightBorderDistance)
+    __obj.updateDynamic("HeaderRightMargin")(HeaderRightMargin)
+    __obj.updateDynamic("HeaderShadowFormat")(HeaderShadowFormat)
+    __obj.updateDynamic("HeaderText")(HeaderText)
+    __obj.updateDynamic("HeaderTextLeft")(HeaderTextLeft)
+    __obj.updateDynamic("HeaderTextRight")(HeaderTextRight)
+    __obj.updateDynamic("HeaderTopBorder")(HeaderTopBorder)
+    __obj.updateDynamic("HeaderTopBorderDistance")(HeaderTopBorderDistance)
+    __obj.updateDynamic("Height")(Height)
+    __obj.updateDynamic("Hidden")(Hidden)
+    __obj.updateDynamic("IsAutoUpdate")(IsAutoUpdate)
+    __obj.updateDynamic("IsLandscape")(IsLandscape)
+    __obj.updateDynamic("IsPhysical")(IsPhysical)
+    __obj.updateDynamic("LeftBorder")(LeftBorder)
+    __obj.updateDynamic("LeftBorderDistance")(LeftBorderDistance)
+    __obj.updateDynamic("LeftMargin")(LeftMargin)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("NumberingType")(NumberingType)
+    __obj.updateDynamic("PageStyleLayout")(PageStyleLayout)
+    __obj.updateDynamic("ParaStyleConditions")(ParaStyleConditions)
+    __obj.updateDynamic("ParentStyle")(ParentStyle)
+    __obj.updateDynamic("PrinterPaperTray")(PrinterPaperTray)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("RegisterModeActive")(RegisterModeActive)
+    __obj.updateDynamic("RegisterParagraphStyle")(RegisterParagraphStyle)
+    __obj.updateDynamic("RightBorder")(RightBorder)
+    __obj.updateDynamic("RightBorderDistance")(RightBorderDistance)
+    __obj.updateDynamic("RightMargin")(RightMargin)
+    __obj.updateDynamic("ShadowFormat")(ShadowFormat)
+    __obj.updateDynamic("Size")(Size)
+    __obj.updateDynamic("StyleInteropGrabBag")(StyleInteropGrabBag)
+    __obj.updateDynamic("TextColumns")(TextColumns)
+    __obj.updateDynamic("TopBorder")(TopBorder)
+    __obj.updateDynamic("TopBorderDistance")(TopBorderDistance)
+    __obj.updateDynamic("TopMargin")(TopMargin)
+    __obj.updateDynamic("UserDefinedAttributes")(UserDefinedAttributes)
+    __obj.updateDynamic("Width")(Width)
+    __obj.updateDynamic("WritingMode")(WritingMode)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getParentStyle")(getParentStyle)
+    __obj.updateDynamic("getPropertyDefaults")(getPropertyDefaults)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
+    __obj.updateDynamic("isInUse")(isInUse)
+    __obj.updateDynamic("isUserDefined")(isUserDefined)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setAllPropertiesToDefault")(setAllPropertiesToDefault)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setParentStyle")(setParentStyle)
+    __obj.updateDynamic("setPropertiesToDefault")(setPropertiesToDefault)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    __obj.asInstanceOf[PageStyle]
+  }
+}
+

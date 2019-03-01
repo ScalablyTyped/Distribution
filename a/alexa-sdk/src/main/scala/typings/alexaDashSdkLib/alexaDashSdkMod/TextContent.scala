@@ -11,3 +11,14 @@ trait TextContent extends js.Object {
   var tertiaryText: js.UndefOr[TextField] = js.undefined
 }
 
+object TextContent {
+  @scala.inline
+  def apply(primaryText: TextField = null, secondaryText: TextField = null, tertiaryText: TextField = null): TextContent = {
+    val __obj = js.Dynamic.literal()
+    if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText)
+    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText)
+    if (tertiaryText != null) __obj.updateDynamic("tertiaryText")(tertiaryText)
+    __obj.asInstanceOf[TextContent]
+  }
+}
+

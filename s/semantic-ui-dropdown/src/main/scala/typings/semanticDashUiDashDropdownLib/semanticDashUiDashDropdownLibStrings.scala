@@ -262,6 +262,33 @@ object semanticDashUiDashDropdownLibStrings {
   sealed trait on extends js.Object
   
   @js.native
+  sealed trait onAdd extends js.Object
+  
+  @js.native
+  sealed trait onChange extends js.Object
+  
+  @js.native
+  sealed trait onHide extends js.Object
+  
+  @js.native
+  sealed trait onLabelCreate extends js.Object
+  
+  @js.native
+  sealed trait onLabelRemove extends js.Object
+  
+  @js.native
+  sealed trait onLabelSelect extends js.Object
+  
+  @js.native
+  sealed trait onNoResults extends js.Object
+  
+  @js.native
+  sealed trait onRemove extends js.Object
+  
+  @js.native
+  sealed trait onShow extends js.Object
+  
+  @js.native
   sealed trait pageDown extends js.Object
   
   @js.native
@@ -587,6 +614,24 @@ object semanticDashUiDashDropdownLibStrings {
   def nothing: nothing = "nothing".asInstanceOf[nothing]
   @scala.inline
   def on: on = "on".asInstanceOf[on]
+  @scala.inline
+  def onAdd: onAdd = "onAdd".asInstanceOf[onAdd]
+  @scala.inline
+  def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
+  def onHide: onHide = "onHide".asInstanceOf[onHide]
+  @scala.inline
+  def onLabelCreate: onLabelCreate = "onLabelCreate".asInstanceOf[onLabelCreate]
+  @scala.inline
+  def onLabelRemove: onLabelRemove = "onLabelRemove".asInstanceOf[onLabelRemove]
+  @scala.inline
+  def onLabelSelect: onLabelSelect = "onLabelSelect".asInstanceOf[onLabelSelect]
+  @scala.inline
+  def onNoResults: onNoResults = "onNoResults".asInstanceOf[onNoResults]
+  @scala.inline
+  def onRemove: onRemove = "onRemove".asInstanceOf[onRemove]
+  @scala.inline
+  def onShow: onShow = "onShow".asInstanceOf[onShow]
   @scala.inline
   def pageDown: pageDown = "pageDown".asInstanceOf[pageDown]
   @scala.inline

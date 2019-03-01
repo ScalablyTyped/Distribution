@@ -27,3 +27,15 @@ trait IVariableListDef extends js.Object {
   var qType: java.lang.String
 }
 
+object IVariableListDef {
+  @scala.inline
+  def apply(qData: js.Any, qShowConfig: scala.Boolean, qShowReserved: scala.Boolean, qType: java.lang.String): IVariableListDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qData")(qData)
+    __obj.updateDynamic("qShowConfig")(qShowConfig)
+    __obj.updateDynamic("qShowReserved")(qShowReserved)
+    __obj.updateDynamic("qType")(qType)
+    __obj.asInstanceOf[IVariableListDef]
+  }
+}
+

@@ -36,3 +36,24 @@ trait RuleArgs extends js.Object {
   val source: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_OwnerSourceDetails]
 }
 
+object RuleArgs {
+  @scala.inline
+  def apply(
+    source: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_OwnerSourceDetails],
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    inputParameters: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    maximumExecutionFrequency: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    scope: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ComplianceResourceIdComplianceResourceTypes] = null
+  ): RuleArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (inputParameters != null) __obj.updateDynamic("inputParameters")(inputParameters.asInstanceOf[js.Any])
+    if (maximumExecutionFrequency != null) __obj.updateDynamic("maximumExecutionFrequency")(maximumExecutionFrequency.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RuleArgs]
+  }
+}
+

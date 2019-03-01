@@ -12,3 +12,12 @@ trait LazyOptions extends js.Object {
   var once: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LazyOptions {
+  @scala.inline
+  def apply(once: js.UndefOr[scala.Boolean] = js.undefined): LazyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(once)) __obj.updateDynamic("once")(once)
+    __obj.asInstanceOf[LazyOptions]
+  }
+}
+

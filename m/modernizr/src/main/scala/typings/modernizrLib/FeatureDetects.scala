@@ -304,3 +304,306 @@ trait FeatureDetects extends js.Object {
   var xhrresponsetypetext: scala.Boolean
 }
 
+object FeatureDetects {
+  @scala.inline
+  def apply(
+    adownload: scala.Boolean,
+    ambientlight: scala.Boolean,
+    animation: scala.Boolean,
+    apng: scala.Boolean,
+    appearance: scala.Boolean,
+    applicationcache: scala.Boolean,
+    arrow: scala.Boolean,
+    `atob-btoa`: scala.Boolean,
+    atobbtoa: scala.Boolean,
+    audio: AudioBoolean,
+    audioloop: scala.Boolean,
+    audiopreload: scala.Boolean,
+    backdropfilter: scala.Boolean,
+    backgroundblendmode: scala.Boolean,
+    backgroundcliptext: scala.Boolean,
+    backgroundsize: scala.Boolean,
+    `battery-api`: scala.Boolean,
+    batteryapi: scala.Boolean,
+    bdi: scala.Boolean,
+    beacon: scala.Boolean,
+    bgpositionshorthand: scala.Boolean,
+    bgpositionxy: scala.Boolean,
+    bgrepeatround: scala.Boolean,
+    bgrepeatspace: scala.Boolean,
+    bgsizecover: scala.Boolean,
+    `blob-constructor`: scala.Boolean,
+    blobconstructor: scala.Boolean,
+    bloburls: scala.Boolean,
+    blobworkers: scala.Boolean,
+    borderimage: scala.Boolean,
+    borderradius: scala.Boolean,
+    boxshadow: scala.Boolean,
+    boxsizing: scala.Boolean,
+    canvas: scala.Boolean,
+    canvasblending: scala.Boolean,
+    canvastext: scala.Boolean,
+    canvaswinding: scala.Boolean,
+    capture: scala.Boolean,
+    checked: scala.Boolean,
+    classlist: scala.Boolean,
+    contains: scala.Boolean,
+    contenteditable: scala.Boolean,
+    contextmenu: scala.Boolean,
+    cookies: scala.Boolean,
+    cors: scala.Boolean,
+    `createelement-attrs`: scala.Boolean,
+    createelementattrs: scala.Boolean,
+    crypto: scala.Boolean,
+    cryptography: scala.Boolean,
+    cssall: scala.Boolean,
+    cssanimations: scala.Boolean,
+    csscalc: scala.Boolean,
+    csschunit: scala.Boolean,
+    csscolumns: modernizrLib.modernizrLibNumbers.`false` | CssColumnsBoolean,
+    cssescape: scala.Boolean,
+    cssexunit: scala.Boolean,
+    cssfilters: scala.Boolean,
+    cssgradients: scala.Boolean,
+    cssgrid: scala.Boolean,
+    cssgridlegacy: scala.Boolean,
+    csshyphens: scala.Boolean,
+    cssinvalid: scala.Boolean,
+    cssmask: scala.Boolean,
+    csspointerevents: scala.Boolean,
+    csspositionsticky: scala.Boolean,
+    csspseudoanimations: scala.Boolean,
+    csspseudotransitions: scala.Boolean,
+    cssreflections: scala.Boolean,
+    cssremunit: scala.Boolean,
+    cssresize: scala.Boolean,
+    cssscrollbar: scala.Boolean,
+    csstransforms: scala.Boolean,
+    csstransforms3d: scala.Boolean,
+    csstransformslevel2: scala.Boolean,
+    csstransitions: scala.Boolean,
+    cssvalid: scala.Boolean,
+    cssvhunit: scala.Boolean,
+    cssvmaxunit: scala.Boolean,
+    cssvminunit: scala.Boolean,
+    cssvwunit: scala.Boolean,
+    cubicbezierrange: scala.Boolean,
+    customelements: scala.Boolean,
+    customevent: scala.Boolean,
+    customprotocolhandler: scala.Boolean,
+    dart: scala.Boolean,
+    datachannel: scala.Boolean,
+    datalistelem: scala.Boolean,
+    dataset: scala.Boolean,
+    datauri: modernizrLib.modernizrLibNumbers.`false` | DatauriBoolean,
+    dataview: scala.Boolean,
+    dataworkers: scala.Boolean,
+    details: scala.Boolean,
+    devicemotion: scala.Boolean,
+    deviceorientation: scala.Boolean,
+    directory: scala.Boolean,
+    `display-runin`: scala.Boolean,
+    `display-table`: scala.Boolean,
+    displayrunin: scala.Boolean,
+    displaytable: scala.Boolean,
+    documentfragment: scala.Boolean,
+    ellipsis: scala.Boolean,
+    emoji: scala.Boolean,
+    es5: scala.Boolean,
+    es5array: scala.Boolean,
+    es5date: scala.Boolean,
+    es5function: scala.Boolean,
+    es5object: scala.Boolean,
+    es5string: scala.Boolean,
+    es5syntax: scala.Boolean,
+    es5undefined: scala.Boolean,
+    es6array: scala.Boolean,
+    es6collections: scala.Boolean,
+    es6math: scala.Boolean,
+    es6number: scala.Boolean,
+    es6object: scala.Boolean,
+    es6string: scala.Boolean,
+    eventlistener: scala.Boolean,
+    eventsource: scala.Boolean,
+    exiforientation: scala.Boolean,
+    fetch: scala.Boolean,
+    fileinput: scala.Boolean,
+    fileinputdirectory: scala.Boolean,
+    filereader: scala.Boolean,
+    filesystem: scala.Boolean,
+    flash: modernizrLib.modernizrLibNumbers.`false` | FlashBoolean,
+    flexbox: scala.Boolean,
+    flexboxlegacy: scala.Boolean,
+    flexboxtweener: scala.Boolean,
+    flexwrap: scala.Boolean,
+    fontface: scala.Boolean,
+    forcetouch: scala.Boolean,
+    formattribute: scala.Boolean,
+    formvalidation: scala.Boolean,
+    framed: scala.Boolean,
+    fullscreen: scala.Boolean,
+    gamepads: scala.Boolean,
+    generatedcontent: scala.Boolean,
+    generators: scala.Boolean,
+    geolocation: scala.Boolean,
+    getrandomvalues: scala.Boolean,
+    getusermedia: scala.Boolean,
+    hairline: scala.Boolean,
+    hashchange: scala.Boolean,
+    hidden: scala.Boolean,
+    hiddenscroll: scala.Boolean,
+    history: scala.Boolean,
+    hovermq: scala.Boolean,
+    hsla: scala.Boolean,
+    htmlimports: scala.Boolean,
+    ie8compat: scala.Boolean
+  ): FeatureDetects = {
+    val __obj = js.Dynamic.literal(`atob-btoa` = `atob-btoa`, `battery-api` = `battery-api`, `blob-constructor` = `blob-constructor`, `createelement-attrs` = `createelement-attrs`, `display-runin` = `display-runin`, `display-table` = `display-table`)
+    __obj.updateDynamic("adownload")(adownload)
+    __obj.updateDynamic("ambientlight")(ambientlight)
+    __obj.updateDynamic("animation")(animation)
+    __obj.updateDynamic("apng")(apng)
+    __obj.updateDynamic("appearance")(appearance)
+    __obj.updateDynamic("applicationcache")(applicationcache)
+    __obj.updateDynamic("arrow")(arrow)
+    __obj.updateDynamic("atobbtoa")(atobbtoa)
+    __obj.updateDynamic("audio")(audio)
+    __obj.updateDynamic("audioloop")(audioloop)
+    __obj.updateDynamic("audiopreload")(audiopreload)
+    __obj.updateDynamic("backdropfilter")(backdropfilter)
+    __obj.updateDynamic("backgroundblendmode")(backgroundblendmode)
+    __obj.updateDynamic("backgroundcliptext")(backgroundcliptext)
+    __obj.updateDynamic("backgroundsize")(backgroundsize)
+    __obj.updateDynamic("batteryapi")(batteryapi)
+    __obj.updateDynamic("bdi")(bdi)
+    __obj.updateDynamic("beacon")(beacon)
+    __obj.updateDynamic("bgpositionshorthand")(bgpositionshorthand)
+    __obj.updateDynamic("bgpositionxy")(bgpositionxy)
+    __obj.updateDynamic("bgrepeatround")(bgrepeatround)
+    __obj.updateDynamic("bgrepeatspace")(bgrepeatspace)
+    __obj.updateDynamic("bgsizecover")(bgsizecover)
+    __obj.updateDynamic("blobconstructor")(blobconstructor)
+    __obj.updateDynamic("bloburls")(bloburls)
+    __obj.updateDynamic("blobworkers")(blobworkers)
+    __obj.updateDynamic("borderimage")(borderimage)
+    __obj.updateDynamic("borderradius")(borderradius)
+    __obj.updateDynamic("boxshadow")(boxshadow)
+    __obj.updateDynamic("boxsizing")(boxsizing)
+    __obj.updateDynamic("canvas")(canvas)
+    __obj.updateDynamic("canvasblending")(canvasblending)
+    __obj.updateDynamic("canvastext")(canvastext)
+    __obj.updateDynamic("canvaswinding")(canvaswinding)
+    __obj.updateDynamic("capture")(capture)
+    __obj.updateDynamic("checked")(checked)
+    __obj.updateDynamic("classlist")(classlist)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("contenteditable")(contenteditable)
+    __obj.updateDynamic("contextmenu")(contextmenu)
+    __obj.updateDynamic("cookies")(cookies)
+    __obj.updateDynamic("cors")(cors)
+    __obj.updateDynamic("createelementattrs")(createelementattrs)
+    __obj.updateDynamic("crypto")(crypto)
+    __obj.updateDynamic("cryptography")(cryptography)
+    __obj.updateDynamic("cssall")(cssall)
+    __obj.updateDynamic("cssanimations")(cssanimations)
+    __obj.updateDynamic("csscalc")(csscalc)
+    __obj.updateDynamic("csschunit")(csschunit)
+    __obj.updateDynamic("csscolumns")(csscolumns.asInstanceOf[js.Any])
+    __obj.updateDynamic("cssescape")(cssescape)
+    __obj.updateDynamic("cssexunit")(cssexunit)
+    __obj.updateDynamic("cssfilters")(cssfilters)
+    __obj.updateDynamic("cssgradients")(cssgradients)
+    __obj.updateDynamic("cssgrid")(cssgrid)
+    __obj.updateDynamic("cssgridlegacy")(cssgridlegacy)
+    __obj.updateDynamic("csshyphens")(csshyphens)
+    __obj.updateDynamic("cssinvalid")(cssinvalid)
+    __obj.updateDynamic("cssmask")(cssmask)
+    __obj.updateDynamic("csspointerevents")(csspointerevents)
+    __obj.updateDynamic("csspositionsticky")(csspositionsticky)
+    __obj.updateDynamic("csspseudoanimations")(csspseudoanimations)
+    __obj.updateDynamic("csspseudotransitions")(csspseudotransitions)
+    __obj.updateDynamic("cssreflections")(cssreflections)
+    __obj.updateDynamic("cssremunit")(cssremunit)
+    __obj.updateDynamic("cssresize")(cssresize)
+    __obj.updateDynamic("cssscrollbar")(cssscrollbar)
+    __obj.updateDynamic("csstransforms")(csstransforms)
+    __obj.updateDynamic("csstransforms3d")(csstransforms3d)
+    __obj.updateDynamic("csstransformslevel2")(csstransformslevel2)
+    __obj.updateDynamic("csstransitions")(csstransitions)
+    __obj.updateDynamic("cssvalid")(cssvalid)
+    __obj.updateDynamic("cssvhunit")(cssvhunit)
+    __obj.updateDynamic("cssvmaxunit")(cssvmaxunit)
+    __obj.updateDynamic("cssvminunit")(cssvminunit)
+    __obj.updateDynamic("cssvwunit")(cssvwunit)
+    __obj.updateDynamic("cubicbezierrange")(cubicbezierrange)
+    __obj.updateDynamic("customelements")(customelements)
+    __obj.updateDynamic("customevent")(customevent)
+    __obj.updateDynamic("customprotocolhandler")(customprotocolhandler)
+    __obj.updateDynamic("dart")(dart)
+    __obj.updateDynamic("datachannel")(datachannel)
+    __obj.updateDynamic("datalistelem")(datalistelem)
+    __obj.updateDynamic("dataset")(dataset)
+    __obj.updateDynamic("datauri")(datauri.asInstanceOf[js.Any])
+    __obj.updateDynamic("dataview")(dataview)
+    __obj.updateDynamic("dataworkers")(dataworkers)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("devicemotion")(devicemotion)
+    __obj.updateDynamic("deviceorientation")(deviceorientation)
+    __obj.updateDynamic("directory")(directory)
+    __obj.updateDynamic("displayrunin")(displayrunin)
+    __obj.updateDynamic("displaytable")(displaytable)
+    __obj.updateDynamic("documentfragment")(documentfragment)
+    __obj.updateDynamic("ellipsis")(ellipsis)
+    __obj.updateDynamic("emoji")(emoji)
+    __obj.updateDynamic("es5")(es5)
+    __obj.updateDynamic("es5array")(es5array)
+    __obj.updateDynamic("es5date")(es5date)
+    __obj.updateDynamic("es5function")(es5function)
+    __obj.updateDynamic("es5object")(es5object)
+    __obj.updateDynamic("es5string")(es5string)
+    __obj.updateDynamic("es5syntax")(es5syntax)
+    __obj.updateDynamic("es5undefined")(es5undefined)
+    __obj.updateDynamic("es6array")(es6array)
+    __obj.updateDynamic("es6collections")(es6collections)
+    __obj.updateDynamic("es6math")(es6math)
+    __obj.updateDynamic("es6number")(es6number)
+    __obj.updateDynamic("es6object")(es6object)
+    __obj.updateDynamic("es6string")(es6string)
+    __obj.updateDynamic("eventlistener")(eventlistener)
+    __obj.updateDynamic("eventsource")(eventsource)
+    __obj.updateDynamic("exiforientation")(exiforientation)
+    __obj.updateDynamic("fetch")(fetch)
+    __obj.updateDynamic("fileinput")(fileinput)
+    __obj.updateDynamic("fileinputdirectory")(fileinputdirectory)
+    __obj.updateDynamic("filereader")(filereader)
+    __obj.updateDynamic("filesystem")(filesystem)
+    __obj.updateDynamic("flash")(flash.asInstanceOf[js.Any])
+    __obj.updateDynamic("flexbox")(flexbox)
+    __obj.updateDynamic("flexboxlegacy")(flexboxlegacy)
+    __obj.updateDynamic("flexboxtweener")(flexboxtweener)
+    __obj.updateDynamic("flexwrap")(flexwrap)
+    __obj.updateDynamic("fontface")(fontface)
+    __obj.updateDynamic("forcetouch")(forcetouch)
+    __obj.updateDynamic("formattribute")(formattribute)
+    __obj.updateDynamic("formvalidation")(formvalidation)
+    __obj.updateDynamic("framed")(framed)
+    __obj.updateDynamic("fullscreen")(fullscreen)
+    __obj.updateDynamic("gamepads")(gamepads)
+    __obj.updateDynamic("generatedcontent")(generatedcontent)
+    __obj.updateDynamic("generators")(generators)
+    __obj.updateDynamic("geolocation")(geolocation)
+    __obj.updateDynamic("getrandomvalues")(getrandomvalues)
+    __obj.updateDynamic("getusermedia")(getusermedia)
+    __obj.updateDynamic("hairline")(hairline)
+    __obj.updateDynamic("hashchange")(hashchange)
+    __obj.updateDynamic("hidden")(hidden)
+    __obj.updateDynamic("hiddenscroll")(hiddenscroll)
+    __obj.updateDynamic("history")(history)
+    __obj.updateDynamic("hovermq")(hovermq)
+    __obj.updateDynamic("hsla")(hsla)
+    __obj.updateDynamic("htmlimports")(htmlimports)
+    __obj.updateDynamic("ie8compat")(ie8compat)
+    __obj.asInstanceOf[FeatureDetects]
+  }
+}
+

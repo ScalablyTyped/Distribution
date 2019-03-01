@@ -23,3 +23,16 @@ trait Anon_ValueSetArray extends js.Object {
   ] = js.undefined
 }
 
+object Anon_ValueSetArray {
+  @scala.inline
+  def apply(
+    valueSet: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.CompletionItemKind
+    ] = null
+  ): Anon_ValueSetArray = {
+    val __obj = js.Dynamic.literal()
+    if (valueSet != null) __obj.updateDynamic("valueSet")(valueSet)
+    __obj.asInstanceOf[Anon_ValueSetArray]
+  }
+}
+

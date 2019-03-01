@@ -15,3 +15,26 @@ trait PresenceMessage extends js.Object {
   var timestamp: scala.Double
 }
 
+object PresenceMessage {
+  @scala.inline
+  def apply(
+    action: PresenceAction,
+    clientId: java.lang.String,
+    connectionId: java.lang.String,
+    data: js.Any,
+    encoding: java.lang.String,
+    id: java.lang.String,
+    timestamp: scala.Double
+  ): PresenceMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("connectionId")(connectionId)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("encoding")(encoding)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[PresenceMessage]
+  }
+}
+

@@ -34,3 +34,26 @@ trait AggregateOptions extends LoggingOptions {
   var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 
+object AggregateOptions {
+  @scala.inline
+  def apply(
+    benchmark: js.UndefOr[scala.Boolean] = js.undefined,
+    dataType: DataTypeAbstract | java.lang.String = null,
+    distinct: js.UndefOr[scala.Boolean] = js.undefined,
+    logging: scala.Boolean | js.Function = null,
+    plain: js.UndefOr[scala.Boolean] = js.undefined,
+    transaction: Transaction = null,
+    where: AnyWhereOptions = null
+  ): AggregateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(benchmark)) __obj.updateDynamic("benchmark")(benchmark)
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (!js.isUndefined(distinct)) __obj.updateDynamic("distinct")(distinct)
+    if (logging != null) __obj.updateDynamic("logging")(logging.asInstanceOf[js.Any])
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    if (where != null) __obj.updateDynamic("where")(where)
+    __obj.asInstanceOf[AggregateOptions]
+  }
+}
+

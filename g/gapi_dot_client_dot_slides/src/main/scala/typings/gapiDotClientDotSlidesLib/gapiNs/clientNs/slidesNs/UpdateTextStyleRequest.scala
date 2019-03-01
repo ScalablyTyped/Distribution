@@ -49,3 +49,22 @@ trait UpdateTextStyleRequest extends js.Object {
   var textRange: js.UndefOr[Range] = js.undefined
 }
 
+object UpdateTextStyleRequest {
+  @scala.inline
+  def apply(
+    cellLocation: TableCellLocation = null,
+    fields: java.lang.String = null,
+    objectId: java.lang.String = null,
+    style: TextStyle = null,
+    textRange: Range = null
+  ): UpdateTextStyleRequest = {
+    val __obj = js.Dynamic.literal()
+    if (cellLocation != null) __obj.updateDynamic("cellLocation")(cellLocation)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (textRange != null) __obj.updateDynamic("textRange")(textRange)
+    __obj.asInstanceOf[UpdateTextStyleRequest]
+  }
+}
+

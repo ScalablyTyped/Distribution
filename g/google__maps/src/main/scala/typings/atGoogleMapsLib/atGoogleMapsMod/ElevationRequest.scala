@@ -14,3 +14,12 @@ trait ElevationRequest extends js.Object {
   var locations: js.Array[LatLng]
 }
 
+object ElevationRequest {
+  @scala.inline
+  def apply(locations: js.Array[LatLng]): ElevationRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("locations")(locations)
+    __obj.asInstanceOf[ElevationRequest]
+  }
+}
+

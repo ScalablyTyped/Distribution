@@ -24,3 +24,20 @@ trait AliasState extends js.Object {
   val routingStrategy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FleetIdMessage]] = js.undefined
 }
 
+object AliasState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    routingStrategy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FleetIdMessage] = null
+  ): AliasState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (routingStrategy != null) __obj.updateDynamic("routingStrategy")(routingStrategy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AliasState]
+  }
+}
+

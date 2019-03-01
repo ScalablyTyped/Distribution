@@ -38,3 +38,26 @@ trait GroupSettings extends js.Object {
   var showUngroupButton: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object GroupSettings {
+  @scala.inline
+  def apply(
+    captionFormat: java.lang.String = null,
+    enableDropAreaAutoSizing: js.UndefOr[scala.Boolean] = js.undefined,
+    groupedColumns: js.Array[_] = null,
+    showDropArea: js.UndefOr[scala.Boolean] = js.undefined,
+    showGroupedColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    showToggleButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showUngroupButton: js.UndefOr[scala.Boolean] = js.undefined
+  ): GroupSettings = {
+    val __obj = js.Dynamic.literal()
+    if (captionFormat != null) __obj.updateDynamic("captionFormat")(captionFormat)
+    if (!js.isUndefined(enableDropAreaAutoSizing)) __obj.updateDynamic("enableDropAreaAutoSizing")(enableDropAreaAutoSizing)
+    if (groupedColumns != null) __obj.updateDynamic("groupedColumns")(groupedColumns)
+    if (!js.isUndefined(showDropArea)) __obj.updateDynamic("showDropArea")(showDropArea)
+    if (!js.isUndefined(showGroupedColumn)) __obj.updateDynamic("showGroupedColumn")(showGroupedColumn)
+    if (!js.isUndefined(showToggleButton)) __obj.updateDynamic("showToggleButton")(showToggleButton)
+    if (!js.isUndefined(showUngroupButton)) __obj.updateDynamic("showUngroupButton")(showUngroupButton)
+    __obj.asInstanceOf[GroupSettings]
+  }
+}
+

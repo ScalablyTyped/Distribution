@@ -30,3 +30,18 @@ trait ChartAxisFormatLoadOptions extends js.Object {
   var line: js.UndefOr[ChartLineFormatLoadOptions] = js.undefined
 }
 
+object ChartAxisFormatLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    font: ChartFontLoadOptions = null,
+    line: ChartLineFormatLoadOptions = null
+  ): ChartAxisFormatLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (line != null) __obj.updateDynamic("line")(line)
+    __obj.asInstanceOf[ChartAxisFormatLoadOptions]
+  }
+}
+

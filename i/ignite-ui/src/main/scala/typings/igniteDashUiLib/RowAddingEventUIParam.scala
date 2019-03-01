@@ -20,3 +20,14 @@ trait RowAddingEventUIParam extends js.Object {
   var values: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowAddingEventUIParam {
+  @scala.inline
+  def apply(oldValues: js.Any = null, owner: js.Any = null, values: js.Any = null): RowAddingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (oldValues != null) __obj.updateDynamic("oldValues")(oldValues)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[RowAddingEventUIParam]
+  }
+}
+

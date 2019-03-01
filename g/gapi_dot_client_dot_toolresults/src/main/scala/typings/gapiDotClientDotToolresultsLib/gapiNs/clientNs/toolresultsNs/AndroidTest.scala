@@ -16,3 +16,20 @@ trait AndroidTest extends js.Object {
   var testTimeout: js.UndefOr[Duration] = js.undefined
 }
 
+object AndroidTest {
+  @scala.inline
+  def apply(
+    androidAppInfo: AndroidAppInfo = null,
+    androidInstrumentationTest: AndroidInstrumentationTest = null,
+    androidRoboTest: AndroidRoboTest = null,
+    testTimeout: Duration = null
+  ): AndroidTest = {
+    val __obj = js.Dynamic.literal()
+    if (androidAppInfo != null) __obj.updateDynamic("androidAppInfo")(androidAppInfo)
+    if (androidInstrumentationTest != null) __obj.updateDynamic("androidInstrumentationTest")(androidInstrumentationTest)
+    if (androidRoboTest != null) __obj.updateDynamic("androidRoboTest")(androidRoboTest)
+    if (testTimeout != null) __obj.updateDynamic("testTimeout")(testTimeout)
+    __obj.asInstanceOf[AndroidTest]
+  }
+}
+

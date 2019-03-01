@@ -14,3 +14,24 @@ trait ChartXAxisItemMinorTicks extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartXAxisItemMinorTicks {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    skip: scala.Int | scala.Double = null,
+    step: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): ChartXAxisItemMinorTicks = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartXAxisItemMinorTicks]
+  }
+}
+

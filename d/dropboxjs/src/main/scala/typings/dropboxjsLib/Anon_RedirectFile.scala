@@ -12,3 +12,20 @@ trait Anon_RedirectFile extends js.Object {
   var scope: java.lang.String
 }
 
+object Anon_RedirectFile {
+  @scala.inline
+  def apply(
+    redirectFile: java.lang.String,
+    redirectUrl: java.lang.String,
+    rememberUser: scala.Boolean,
+    scope: java.lang.String
+  ): Anon_RedirectFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("redirectFile")(redirectFile)
+    __obj.updateDynamic("redirectUrl")(redirectUrl)
+    __obj.updateDynamic("rememberUser")(rememberUser)
+    __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[Anon_RedirectFile]
+  }
+}
+

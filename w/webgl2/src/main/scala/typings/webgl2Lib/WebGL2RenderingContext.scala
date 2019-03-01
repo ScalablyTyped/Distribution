@@ -580,6 +580,14 @@ trait WebGL2RenderingContext
   ): scala.Unit = js.native
   // For compatibility with WebGL 1 context in older Typescript versions.
   def bufferData(target: scala.Double, data: stdLib.ArrayBufferView, usage: scala.Double): scala.Unit = js.native
+                   // 0x9247
+  /* Buffer objects */
+  // WebGL1:
+  def bufferData(
+    target: scala.Double,
+    sizeOrData: scala.Double | stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Uint8ClampedArray | stdLib.Float32Array | stdLib.Float64Array | stdLib.DataView | stdLib.ArrayBuffer | scala.Null,
+    usage: scala.Double
+  ): scala.Unit = js.native
   // WebGL2:
   def bufferData(
     target: scala.Double,
@@ -595,6 +603,11 @@ trait WebGL2RenderingContext
     length: scala.Double
   ): scala.Unit = js.native
   def bufferSubData(target: scala.Double, dstByteOffset: scala.Double): scala.Unit = js.native
+  def bufferSubData(
+    target: scala.Double,
+    dstByteOffset: scala.Double,
+    srcData: stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Uint8Array | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Uint8ClampedArray | stdLib.Float32Array | stdLib.Float64Array | stdLib.DataView | stdLib.ArrayBuffer
+  ): scala.Unit = js.native
   def bufferSubData(target: scala.Double, dstByteOffset: scala.Double, srcData: stdLib.ArrayBufferView): scala.Unit = js.native
   def bufferSubData(
     target: scala.Double,

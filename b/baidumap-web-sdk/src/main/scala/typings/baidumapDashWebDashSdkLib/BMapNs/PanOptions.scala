@@ -9,3 +9,12 @@ trait PanOptions extends js.Object {
   var noAnimation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PanOptions {
+  @scala.inline
+  def apply(noAnimation: js.UndefOr[scala.Boolean] = js.undefined): PanOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(noAnimation)) __obj.updateDynamic("noAnimation")(noAnimation)
+    __obj.asInstanceOf[PanOptions]
+  }
+}
+

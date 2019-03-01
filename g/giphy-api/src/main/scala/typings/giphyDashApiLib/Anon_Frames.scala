@@ -14,3 +14,24 @@ trait Anon_Frames extends js.Object {
   var webp_size: java.lang.String
 }
 
+object Anon_Frames {
+  @scala.inline
+  def apply(
+    frames: java.lang.String,
+    mp4: java.lang.String,
+    mp4_size: java.lang.String,
+    size: java.lang.String,
+    webp: java.lang.String,
+    webp_size: java.lang.String
+  ): Anon_Frames = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("frames")(frames)
+    __obj.updateDynamic("mp4")(mp4)
+    __obj.updateDynamic("mp4_size")(mp4_size)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("webp")(webp)
+    __obj.updateDynamic("webp_size")(webp_size)
+    __obj.asInstanceOf[Anon_Frames]
+  }
+}
+

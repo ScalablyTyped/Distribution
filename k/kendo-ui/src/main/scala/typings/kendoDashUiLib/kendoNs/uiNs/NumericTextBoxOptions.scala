@@ -25,3 +25,46 @@ trait NumericTextBoxOptions extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NumericTextBoxOptions {
+  @scala.inline
+  def apply(
+    change: js.Function1[/* e */ NumericTextBoxChangeEvent, scala.Unit] = null,
+    culture: java.lang.String = null,
+    decimals: scala.Int | scala.Double = null,
+    downArrowText: java.lang.String = null,
+    factor: scala.Int | scala.Double = null,
+    format: java.lang.String = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    placeholder: java.lang.String = null,
+    restrictDecimals: js.UndefOr[scala.Boolean] = js.undefined,
+    round: js.UndefOr[scala.Boolean] = js.undefined,
+    spin: js.Function1[/* e */ NumericTextBoxSpinEvent, scala.Unit] = null,
+    spinners: js.UndefOr[scala.Boolean] = js.undefined,
+    step: scala.Int | scala.Double = null,
+    upArrowText: java.lang.String = null,
+    value: scala.Int | scala.Double = null
+  ): NumericTextBoxOptions = {
+    val __obj = js.Dynamic.literal()
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (decimals != null) __obj.updateDynamic("decimals")(decimals.asInstanceOf[js.Any])
+    if (downArrowText != null) __obj.updateDynamic("downArrowText")(downArrowText)
+    if (factor != null) __obj.updateDynamic("factor")(factor.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(restrictDecimals)) __obj.updateDynamic("restrictDecimals")(restrictDecimals)
+    if (!js.isUndefined(round)) __obj.updateDynamic("round")(round)
+    if (spin != null) __obj.updateDynamic("spin")(spin)
+    if (!js.isUndefined(spinners)) __obj.updateDynamic("spinners")(spinners)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (upArrowText != null) __obj.updateDynamic("upArrowText")(upArrowText)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NumericTextBoxOptions]
+  }
+}
+

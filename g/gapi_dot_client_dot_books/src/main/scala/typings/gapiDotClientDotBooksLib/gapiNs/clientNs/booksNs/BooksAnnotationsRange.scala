@@ -16,3 +16,20 @@ trait BooksAnnotationsRange extends js.Object {
   var startPosition: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BooksAnnotationsRange {
+  @scala.inline
+  def apply(
+    endOffset: java.lang.String = null,
+    endPosition: java.lang.String = null,
+    startOffset: java.lang.String = null,
+    startPosition: java.lang.String = null
+  ): BooksAnnotationsRange = {
+    val __obj = js.Dynamic.literal()
+    if (endOffset != null) __obj.updateDynamic("endOffset")(endOffset)
+    if (endPosition != null) __obj.updateDynamic("endPosition")(endPosition)
+    if (startOffset != null) __obj.updateDynamic("startOffset")(startOffset)
+    if (startPosition != null) __obj.updateDynamic("startPosition")(startPosition)
+    __obj.asInstanceOf[BooksAnnotationsRange]
+  }
+}
+

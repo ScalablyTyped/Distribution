@@ -9,3 +9,12 @@ trait ExecutorOperations extends js.Object {
   val RPC: java.lang.String
 }
 
+object ExecutorOperations {
+  @scala.inline
+  def apply(RPC: java.lang.String): ExecutorOperations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RPC")(RPC)
+    __obj.asInstanceOf[ExecutorOperations]
+  }
+}
+

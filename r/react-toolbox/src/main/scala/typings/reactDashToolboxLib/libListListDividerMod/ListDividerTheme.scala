@@ -16,3 +16,13 @@ trait ListDividerTheme extends js.Object {
   var inset: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListDividerTheme {
+  @scala.inline
+  def apply(divider: java.lang.String = null, inset: java.lang.String = null): ListDividerTheme = {
+    val __obj = js.Dynamic.literal()
+    if (divider != null) __obj.updateDynamic("divider")(divider)
+    if (inset != null) __obj.updateDynamic("inset")(inset)
+    __obj.asInstanceOf[ListDividerTheme]
+  }
+}
+

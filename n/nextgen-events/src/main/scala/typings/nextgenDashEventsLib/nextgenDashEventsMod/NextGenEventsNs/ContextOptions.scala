@@ -13,3 +13,22 @@ trait ContextOptions extends js.Object {
   var status: js.UndefOr[js.Any] = js.undefined
 }
 
+object ContextOptions {
+  @scala.inline
+  def apply(
+    ready: scala.Boolean,
+    scopes: org.scalablytyped.runtime.StringDictionary[Scope],
+    nice: scala.Int | scala.Double = null,
+    serial: js.Any = null,
+    status: js.Any = null
+  ): ContextOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ready")(ready)
+    __obj.updateDynamic("scopes")(scopes)
+    if (nice != null) __obj.updateDynamic("nice")(nice.asInstanceOf[js.Any])
+    if (serial != null) __obj.updateDynamic("serial")(serial)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[ContextOptions]
+  }
+}
+

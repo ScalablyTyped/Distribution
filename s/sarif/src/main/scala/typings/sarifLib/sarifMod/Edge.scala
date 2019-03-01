@@ -28,3 +28,22 @@ trait Edge extends js.Object {
   var targetNodeId: java.lang.String
 }
 
+object Edge {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    sourceNodeId: java.lang.String,
+    targetNodeId: java.lang.String,
+    label: Message = null,
+    properties: PropertyBag = null
+  ): Edge = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("sourceNodeId")(sourceNodeId)
+    __obj.updateDynamic("targetNodeId")(targetNodeId)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Edge]
+  }
+}
+

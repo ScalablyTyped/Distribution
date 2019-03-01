@@ -93,3 +93,36 @@ trait TableCellCollectionLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TableCellCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    body: BodyLoadOptions = null,
+    cellIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    columnWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    parentRow: TableRowLoadOptions = null,
+    parentTable: TableLoadOptions = null,
+    rowIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    shadingColor: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): TableCellCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (!js.isUndefined(cellIndex)) __obj.updateDynamic("cellIndex")(cellIndex)
+    if (!js.isUndefined(columnWidth)) __obj.updateDynamic("columnWidth")(columnWidth)
+    if (!js.isUndefined(horizontalAlignment)) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (parentRow != null) __obj.updateDynamic("parentRow")(parentRow)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (!js.isUndefined(rowIndex)) __obj.updateDynamic("rowIndex")(rowIndex)
+    if (!js.isUndefined(shadingColor)) __obj.updateDynamic("shadingColor")(shadingColor)
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(verticalAlignment)) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[TableCellCollectionLoadOptions]
+  }
+}
+

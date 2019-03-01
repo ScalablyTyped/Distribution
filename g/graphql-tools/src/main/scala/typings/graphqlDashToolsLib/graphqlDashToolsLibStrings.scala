@@ -16,13 +16,16 @@ object graphqlDashToolsLibStrings {
   sealed trait Subscription extends js.Object
   
   @js.native
-  sealed trait mutation extends js.Object
+  sealed trait mutation
+    extends graphqlDashToolsLib.distInterfacesMod.Operation
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait query
+    extends graphqlDashToolsLib.distInterfacesMod.Operation
   
   @js.native
-  sealed trait subscription extends js.Object
+  sealed trait subscription
+    extends graphqlDashToolsLib.distInterfacesMod.Operation
   
   @scala.inline
   def Mutation: Mutation = "Mutation".asInstanceOf[Mutation]

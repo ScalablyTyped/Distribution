@@ -26,3 +26,30 @@ trait Tokeninfo extends js.Object {
   var verified_email: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Tokeninfo {
+  @scala.inline
+  def apply(
+    access_type: java.lang.String = null,
+    audience: java.lang.String = null,
+    email: java.lang.String = null,
+    expires_in: scala.Int | scala.Double = null,
+    issued_to: java.lang.String = null,
+    scope: java.lang.String = null,
+    token_handle: java.lang.String = null,
+    user_id: java.lang.String = null,
+    verified_email: js.UndefOr[scala.Boolean] = js.undefined
+  ): Tokeninfo = {
+    val __obj = js.Dynamic.literal()
+    if (access_type != null) __obj.updateDynamic("access_type")(access_type)
+    if (audience != null) __obj.updateDynamic("audience")(audience)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (expires_in != null) __obj.updateDynamic("expires_in")(expires_in.asInstanceOf[js.Any])
+    if (issued_to != null) __obj.updateDynamic("issued_to")(issued_to)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (token_handle != null) __obj.updateDynamic("token_handle")(token_handle)
+    if (user_id != null) __obj.updateDynamic("user_id")(user_id)
+    if (!js.isUndefined(verified_email)) __obj.updateDynamic("verified_email")(verified_email)
+    __obj.asInstanceOf[Tokeninfo]
+  }
+}
+

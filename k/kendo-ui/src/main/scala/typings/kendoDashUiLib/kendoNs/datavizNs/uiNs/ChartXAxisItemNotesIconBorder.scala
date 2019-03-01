@@ -10,3 +10,13 @@ trait ChartXAxisItemNotesIconBorder extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartXAxisItemNotesIconBorder {
+  @scala.inline
+  def apply(color: java.lang.String = null, width: scala.Int | scala.Double = null): ChartXAxisItemNotesIconBorder = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartXAxisItemNotesIconBorder]
+  }
+}
+

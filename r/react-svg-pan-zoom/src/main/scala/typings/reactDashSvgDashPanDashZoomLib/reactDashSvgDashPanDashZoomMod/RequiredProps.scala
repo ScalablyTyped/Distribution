@@ -12,3 +12,13 @@ trait RequiredProps extends js.Object {
   var width: scala.Double
 }
 
+object RequiredProps {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): RequiredProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[RequiredProps]
+  }
+}
+

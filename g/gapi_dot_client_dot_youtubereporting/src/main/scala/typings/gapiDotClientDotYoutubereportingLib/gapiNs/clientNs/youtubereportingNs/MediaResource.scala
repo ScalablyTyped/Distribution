@@ -13,3 +13,17 @@ trait MediaResource extends js.Object {
   def download(request: gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Media]
 }
 
+object MediaResource {
+  @scala.inline
+  def apply(
+    download: js.Function1[
+      gapiDotClientDotYoutubereportingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Media]
+    ]
+  ): MediaResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("download")(download)
+    __obj.asInstanceOf[MediaResource]
+  }
+}
+

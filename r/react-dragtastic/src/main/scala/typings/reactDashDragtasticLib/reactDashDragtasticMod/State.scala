@@ -28,3 +28,32 @@ trait State extends js.Object {
   var y: scala.Double
 }
 
+object State {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    isDragging: scala.Boolean,
+    startingX: scala.Double,
+    startingY: scala.Double,
+    x: scala.Double,
+    y: scala.Double,
+    currentlyDraggingId: Id = null,
+    currentlyHoveredDroppableAccepts: Accepts = null,
+    currentlyHoveredDroppableId: Id = null,
+    `type`: Type = null
+  ): State = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("isDragging")(isDragging)
+    __obj.updateDynamic("startingX")(startingX)
+    __obj.updateDynamic("startingY")(startingY)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    if (currentlyDraggingId != null) __obj.updateDynamic("currentlyDraggingId")(currentlyDraggingId.asInstanceOf[js.Any])
+    if (currentlyHoveredDroppableAccepts != null) __obj.updateDynamic("currentlyHoveredDroppableAccepts")(currentlyHoveredDroppableAccepts.asInstanceOf[js.Any])
+    if (currentlyHoveredDroppableId != null) __obj.updateDynamic("currentlyHoveredDroppableId")(currentlyHoveredDroppableId.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[State]
+  }
+}
+

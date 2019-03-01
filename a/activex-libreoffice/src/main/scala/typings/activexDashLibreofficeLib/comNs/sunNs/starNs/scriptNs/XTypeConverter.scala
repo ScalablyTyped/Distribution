@@ -28,3 +28,22 @@ trait XTypeConverter
   def convertToSimpleType(aFrom: js.Any, aDestinationType: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass): js.Any
 }
 
+object XTypeConverter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    convertTo: js.Function2[js.Any, activexDashLibreofficeLib.`type`, js.Any],
+    convertToSimpleType: js.Function2[js.Any, activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.TypeClass, js.Any],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTypeConverter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("convertTo")(convertTo)
+    __obj.updateDynamic("convertToSimpleType")(convertToSimpleType)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTypeConverter]
+  }
+}
+

@@ -10,3 +10,16 @@ trait PlayParam extends js.Object {
   var viewable: jwplayerLib.jwplayerLibNumbers.`0` | jwplayerLib.jwplayerLibNumbers.`1`
 }
 
+object PlayParam {
+  @scala.inline
+  def apply(
+    oldstate: jwplayerLib.jwplayerLibStrings.buffering | jwplayerLib.jwplayerLibStrings.playing,
+    viewable: jwplayerLib.jwplayerLibNumbers.`0` | jwplayerLib.jwplayerLibNumbers.`1`
+  ): PlayParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("oldstate")(oldstate.asInstanceOf[js.Any])
+    __obj.updateDynamic("viewable")(viewable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PlayParam]
+  }
+}
+

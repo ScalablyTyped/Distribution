@@ -11,3 +11,18 @@ trait Amount extends js.Object {
   var total: java.lang.String
 }
 
+object Amount {
+  @scala.inline
+  def apply(
+    currency: java.lang.String,
+    total: java.lang.String,
+    details: paypalDashRestDashSdkLib.Anon_Giftwrap = null
+  ): Amount = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("total")(total)
+    if (details != null) __obj.updateDynamic("details")(details)
+    __obj.asInstanceOf[Amount]
+  }
+}
+

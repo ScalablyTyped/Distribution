@@ -16,3 +16,17 @@ trait DefineScopeOptions
   */
 /* scopeName */ org.scalablytyped.runtime.StringDictionary[AnyFindOptions | js.Function]
 
+object DefineScopeOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Name of the scope and it's query
+    */
+  /* scopeName */ org.scalablytyped.runtime.StringDictionary[AnyFindOptions | js.Function] = null
+  ): DefineScopeOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[DefineScopeOptions]
+  }
+}
+

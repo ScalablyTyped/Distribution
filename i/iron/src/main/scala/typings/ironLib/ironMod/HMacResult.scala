@@ -10,3 +10,13 @@ trait HMacResult extends js.Object {
   var salt: java.lang.String
 }
 
+object HMacResult {
+  @scala.inline
+  def apply(digest: java.lang.String, salt: java.lang.String): HMacResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("digest")(digest)
+    __obj.updateDynamic("salt")(salt)
+    __obj.asInstanceOf[HMacResult]
+  }
+}
+

@@ -32,3 +32,24 @@ trait GoogleApiUrlShortenerUrlResourceAnalyticsObject extends js.Object {
   var shortUrlClicks: java.lang.String
 }
 
+object GoogleApiUrlShortenerUrlResourceAnalyticsObject {
+  @scala.inline
+  def apply(
+    browsers: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject],
+    countries: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject],
+    longUrlClicks: java.lang.String,
+    platforms: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject],
+    referrers: js.Array[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject],
+    shortUrlClicks: java.lang.String
+  ): GoogleApiUrlShortenerUrlResourceAnalyticsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("browsers")(browsers)
+    __obj.updateDynamic("countries")(countries)
+    __obj.updateDynamic("longUrlClicks")(longUrlClicks)
+    __obj.updateDynamic("platforms")(platforms)
+    __obj.updateDynamic("referrers")(referrers)
+    __obj.updateDynamic("shortUrlClicks")(shortUrlClicks)
+    __obj.asInstanceOf[GoogleApiUrlShortenerUrlResourceAnalyticsObject]
+  }
+}
+

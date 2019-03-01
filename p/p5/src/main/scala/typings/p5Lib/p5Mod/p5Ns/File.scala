@@ -34,3 +34,16 @@ trait File extends js.Object {
   var `type`: js.Any
 }
 
+object File {
+  @scala.inline
+  def apply(data: js.Any, file: js.Any, name: js.Any, size: js.Any, subtype: js.Any, `type`: js.Any): File = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("subtype")(subtype)
+    __obj.asInstanceOf[File]
+  }
+}
+

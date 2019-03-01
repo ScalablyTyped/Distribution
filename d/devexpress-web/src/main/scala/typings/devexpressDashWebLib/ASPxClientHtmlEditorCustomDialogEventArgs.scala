@@ -16,3 +16,12 @@ trait ASPxClientHtmlEditorCustomDialogEventArgs extends ASPxClientEventArgs {
   var name: java.lang.String
 }
 
+object ASPxClientHtmlEditorCustomDialogEventArgs {
+  @scala.inline
+  def apply(name: java.lang.String): ASPxClientHtmlEditorCustomDialogEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientHtmlEditorCustomDialogEventArgs]
+  }
+}
+

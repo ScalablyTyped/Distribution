@@ -10,3 +10,13 @@ trait ClassificationInfo extends js.Object {
   var length: scala.Double
 }
 
+object ClassificationInfo {
+  @scala.inline
+  def apply(classification: TokenClass, length: scala.Double): ClassificationInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("classification")(classification)
+    __obj.updateDynamic("length")(length)
+    __obj.asInstanceOf[ClassificationInfo]
+  }
+}
+

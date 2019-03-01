@@ -14,3 +14,24 @@ trait FinalCommonWindowsInstallerOptions extends js.Object {
   var shortcutName: java.lang.String
 }
 
+object FinalCommonWindowsInstallerOptions {
+  @scala.inline
+  def apply(
+    isAssisted: scala.Boolean,
+    isCreateDesktopShortcut: DesktopShortcutCreationPolicy,
+    isCreateStartMenuShortcut: scala.Boolean,
+    isPerMachine: scala.Boolean,
+    shortcutName: java.lang.String,
+    menuCategory: java.lang.String = null
+  ): FinalCommonWindowsInstallerOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isAssisted")(isAssisted)
+    __obj.updateDynamic("isCreateDesktopShortcut")(isCreateDesktopShortcut)
+    __obj.updateDynamic("isCreateStartMenuShortcut")(isCreateStartMenuShortcut)
+    __obj.updateDynamic("isPerMachine")(isPerMachine)
+    __obj.updateDynamic("shortcutName")(shortcutName)
+    if (menuCategory != null) __obj.updateDynamic("menuCategory")(menuCategory)
+    __obj.asInstanceOf[FinalCommonWindowsInstallerOptions]
+  }
+}
+

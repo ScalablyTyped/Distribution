@@ -60,3 +60,38 @@ trait InputTheme extends js.Object {
   var withIcon: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object InputTheme {
+  @scala.inline
+  def apply(
+    bar: java.lang.String = null,
+    counter: java.lang.String = null,
+    disabled: java.lang.String = null,
+    error: java.lang.String = null,
+    errored: java.lang.String = null,
+    hidden: java.lang.String = null,
+    hint: java.lang.String = null,
+    icon: java.lang.String = null,
+    input: java.lang.String = null,
+    inputElement: java.lang.String = null,
+    label: java.lang.String = null,
+    required: java.lang.String = null,
+    withIcon: java.lang.String = null
+  ): InputTheme = {
+    val __obj = js.Dynamic.literal()
+    if (bar != null) __obj.updateDynamic("bar")(bar)
+    if (counter != null) __obj.updateDynamic("counter")(counter)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (errored != null) __obj.updateDynamic("errored")(errored)
+    if (hidden != null) __obj.updateDynamic("hidden")(hidden)
+    if (hint != null) __obj.updateDynamic("hint")(hint)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (inputElement != null) __obj.updateDynamic("inputElement")(inputElement)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (required != null) __obj.updateDynamic("required")(required)
+    if (withIcon != null) __obj.updateDynamic("withIcon")(withIcon)
+    __obj.asInstanceOf[InputTheme]
+  }
+}
+

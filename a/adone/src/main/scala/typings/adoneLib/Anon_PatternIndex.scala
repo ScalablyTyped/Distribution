@@ -10,3 +10,13 @@ trait Anon_PatternIndex extends js.Object {
   var stat: adoneLib.adoneLibNumbers.`true`
 }
 
+object Anon_PatternIndex {
+  @scala.inline
+  def apply(patternIndex: adoneLib.adoneLibNumbers.`true`, stat: adoneLib.adoneLibNumbers.`true`): Anon_PatternIndex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("patternIndex")(patternIndex)
+    __obj.updateDynamic("stat")(stat)
+    __obj.asInstanceOf[Anon_PatternIndex]
+  }
+}
+

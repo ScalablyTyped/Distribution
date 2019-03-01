@@ -23,3 +23,42 @@ trait EntityCollection extends js.Object {
   def suspendEvents(): scala.Unit
 }
 
+object EntityCollection {
+  @scala.inline
+  def apply(
+    add: js.Function1[Entity, Entity],
+    collectionChanged: Event,
+    computeAvailability: js.Function0[TimeInterval],
+    contains: js.Function1[Entity, scala.Boolean],
+    getById: js.Function1[java.lang.String, Entity],
+    getOrCreateEntity: js.Function1[java.lang.String, Entity],
+    id: java.lang.String,
+    owner: DataSource | CompositeEntityCollection,
+    remove: js.Function1[Entity, scala.Boolean],
+    removeAll: js.Function0[scala.Unit],
+    removeById: js.Function1[java.lang.String, scala.Boolean],
+    resumeEvents: js.Function0[scala.Unit],
+    show: scala.Boolean,
+    suspendEvents: js.Function0[scala.Unit],
+    values: js.Array[Entity]
+  ): EntityCollection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("collectionChanged")(collectionChanged)
+    __obj.updateDynamic("computeAvailability")(computeAvailability)
+    __obj.updateDynamic("contains")(contains)
+    __obj.updateDynamic("getById")(getById)
+    __obj.updateDynamic("getOrCreateEntity")(getOrCreateEntity)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("owner")(owner.asInstanceOf[js.Any])
+    __obj.updateDynamic("remove")(remove)
+    __obj.updateDynamic("removeAll")(removeAll)
+    __obj.updateDynamic("removeById")(removeById)
+    __obj.updateDynamic("resumeEvents")(resumeEvents)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("suspendEvents")(suspendEvents)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[EntityCollection]
+  }
+}
+

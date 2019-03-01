@@ -32,3 +32,26 @@ trait XPolicy
   def refresh(): scala.Unit
 }
 
+object XPolicy {
+  @scala.inline
+  def apply(
+    DefaultPermissions: activexDashInteropLib.SafeArray[_],
+    acquire: js.Function0[scala.Unit],
+    getDefaultPermissions: js.Function0[activexDashInteropLib.SafeArray[_]],
+    getPermissions: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[_]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    refresh: js.Function0[scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): XPolicy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DefaultPermissions")(DefaultPermissions)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getDefaultPermissions")(getDefaultPermissions)
+    __obj.updateDynamic("getPermissions")(getPermissions)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("refresh")(refresh)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XPolicy]
+  }
+}
+

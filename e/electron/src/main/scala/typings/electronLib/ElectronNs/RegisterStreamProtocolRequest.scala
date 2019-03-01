@@ -13,3 +13,22 @@ trait RegisterStreamProtocolRequest extends js.Object {
   var url: java.lang.String
 }
 
+object RegisterStreamProtocolRequest {
+  @scala.inline
+  def apply(
+    headers: Headers,
+    method: java.lang.String,
+    referrer: java.lang.String,
+    uploadData: js.Array[UploadData],
+    url: java.lang.String
+  ): RegisterStreamProtocolRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("referrer")(referrer)
+    __obj.updateDynamic("uploadData")(uploadData)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[RegisterStreamProtocolRequest]
+  }
+}
+

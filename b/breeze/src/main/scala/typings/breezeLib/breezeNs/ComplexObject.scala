@@ -10,3 +10,13 @@ trait ComplexObject extends js.Object {
   var complexType: ComplexType
 }
 
+object ComplexObject {
+  @scala.inline
+  def apply(complexAspect: ComplexAspect, complexType: ComplexType): ComplexObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complexAspect")(complexAspect)
+    __obj.updateDynamic("complexType")(complexType)
+    __obj.asInstanceOf[ComplexObject]
+  }
+}
+

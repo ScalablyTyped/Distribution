@@ -44,3 +44,28 @@ trait XControlInformation
   def isControlSupported(aControlName: java.lang.String): scala.Boolean
 }
 
+object XControlInformation {
+  @scala.inline
+  def apply(
+    SupportedControls: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getSupportedControlProperties: js.Function1[java.lang.String, activexDashInteropLib.SafeArray[java.lang.String]],
+    getSupportedControls: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    isControlPropertySupported: js.Function2[java.lang.String, java.lang.String, scala.Boolean],
+    isControlSupported: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XControlInformation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SupportedControls")(SupportedControls)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getSupportedControlProperties")(getSupportedControlProperties)
+    __obj.updateDynamic("getSupportedControls")(getSupportedControls)
+    __obj.updateDynamic("isControlPropertySupported")(isControlPropertySupported)
+    __obj.updateDynamic("isControlSupported")(isControlSupported)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XControlInformation]
+  }
+}
+

@@ -304,3 +304,50 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RowProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    collapseOnLarge: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseOnMedium: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseOnSmall: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontalAlignment: java.lang.String = null,
+    isCollapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    isColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    isExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    uncollapseOnLarge: js.UndefOr[scala.Boolean] = js.undefined,
+    uncollapseOnMedium: js.UndefOr[scala.Boolean] = js.undefined,
+    uncollapseOnSmall: js.UndefOr[scala.Boolean] = js.undefined,
+    unstackOnLarge: js.UndefOr[scala.Boolean] = js.undefined,
+    unstackOnMedium: js.UndefOr[scala.Boolean] = js.undefined,
+    unstackOnSmall: js.UndefOr[scala.Boolean] = js.undefined,
+    upOnLarge: scala.Int | scala.Double = null,
+    upOnMedium: scala.Int | scala.Double = null,
+    upOnSmall: scala.Int | scala.Double = null,
+    verticalAlignment: java.lang.String = null
+  ): RowProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (!js.isUndefined(collapseOnLarge)) __obj.updateDynamic("collapseOnLarge")(collapseOnLarge)
+    if (!js.isUndefined(collapseOnMedium)) __obj.updateDynamic("collapseOnMedium")(collapseOnMedium)
+    if (!js.isUndefined(collapseOnSmall)) __obj.updateDynamic("collapseOnSmall")(collapseOnSmall)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment)
+    if (!js.isUndefined(isCollapsed)) __obj.updateDynamic("isCollapsed")(isCollapsed)
+    if (!js.isUndefined(isColumn)) __obj.updateDynamic("isColumn")(isColumn)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (!js.isUndefined(uncollapseOnLarge)) __obj.updateDynamic("uncollapseOnLarge")(uncollapseOnLarge)
+    if (!js.isUndefined(uncollapseOnMedium)) __obj.updateDynamic("uncollapseOnMedium")(uncollapseOnMedium)
+    if (!js.isUndefined(uncollapseOnSmall)) __obj.updateDynamic("uncollapseOnSmall")(uncollapseOnSmall)
+    if (!js.isUndefined(unstackOnLarge)) __obj.updateDynamic("unstackOnLarge")(unstackOnLarge)
+    if (!js.isUndefined(unstackOnMedium)) __obj.updateDynamic("unstackOnMedium")(unstackOnMedium)
+    if (!js.isUndefined(unstackOnSmall)) __obj.updateDynamic("unstackOnSmall")(unstackOnSmall)
+    if (upOnLarge != null) __obj.updateDynamic("upOnLarge")(upOnLarge.asInstanceOf[js.Any])
+    if (upOnMedium != null) __obj.updateDynamic("upOnMedium")(upOnMedium.asInstanceOf[js.Any])
+    if (upOnSmall != null) __obj.updateDynamic("upOnSmall")(upOnSmall.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment)
+    __obj.asInstanceOf[RowProps]
+  }
+}
+

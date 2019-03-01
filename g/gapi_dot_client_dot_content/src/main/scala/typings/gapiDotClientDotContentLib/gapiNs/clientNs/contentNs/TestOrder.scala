@@ -26,3 +26,30 @@ trait TestOrder extends js.Object {
   var shippingOption: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TestOrder {
+  @scala.inline
+  def apply(
+    customer: TestOrderCustomer = null,
+    kind: java.lang.String = null,
+    lineItems: js.Array[TestOrderLineItem] = null,
+    paymentMethod: TestOrderPaymentMethod = null,
+    predefinedDeliveryAddress: java.lang.String = null,
+    promotions: js.Array[OrderPromotion] = null,
+    shippingCost: Price = null,
+    shippingCostTax: Price = null,
+    shippingOption: java.lang.String = null
+  ): TestOrder = {
+    val __obj = js.Dynamic.literal()
+    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lineItems != null) __obj.updateDynamic("lineItems")(lineItems)
+    if (paymentMethod != null) __obj.updateDynamic("paymentMethod")(paymentMethod)
+    if (predefinedDeliveryAddress != null) __obj.updateDynamic("predefinedDeliveryAddress")(predefinedDeliveryAddress)
+    if (promotions != null) __obj.updateDynamic("promotions")(promotions)
+    if (shippingCost != null) __obj.updateDynamic("shippingCost")(shippingCost)
+    if (shippingCostTax != null) __obj.updateDynamic("shippingCostTax")(shippingCostTax)
+    if (shippingOption != null) __obj.updateDynamic("shippingOption")(shippingOption)
+    __obj.asInstanceOf[TestOrder]
+  }
+}
+

@@ -39,3 +39,24 @@ trait ModalBaseProps extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ModalBaseProps {
+  @scala.inline
+  def apply(
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    animationType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.slide | reactDashNativeLib.reactDashNativeLibStrings.fade = null,
+    onRequestClose: js.Function0[scala.Unit] = null,
+    onShow: js.Function1[/* event */ NativeSyntheticEvent[_], scala.Unit] = null,
+    transparent: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ModalBaseProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (animationType != null) __obj.updateDynamic("animationType")(animationType.asInstanceOf[js.Any])
+    if (onRequestClose != null) __obj.updateDynamic("onRequestClose")(onRequestClose)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (!js.isUndefined(transparent)) __obj.updateDynamic("transparent")(transparent)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ModalBaseProps]
+  }
+}
+

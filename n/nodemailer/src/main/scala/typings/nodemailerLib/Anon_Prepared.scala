@@ -10,3 +10,13 @@ trait Anon_Prepared extends js.Object {
   var value: java.lang.String
 }
 
+object Anon_Prepared {
+  @scala.inline
+  def apply(prepared: scala.Boolean, value: java.lang.String): Anon_Prepared = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("prepared")(prepared)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Prepared]
+  }
+}
+

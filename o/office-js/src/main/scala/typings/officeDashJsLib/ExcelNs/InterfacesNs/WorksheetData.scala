@@ -114,3 +114,40 @@ trait WorksheetData extends js.Object {
   ] = js.undefined
 }
 
+object WorksheetData {
+  @scala.inline
+  def apply(
+    charts: js.Array[ChartData] = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    names: js.Array[NamedItemData] = null,
+    pivotTables: js.Array[PivotTableData] = null,
+    position: scala.Int | scala.Double = null,
+    protection: WorksheetProtectionData = null,
+    showGridlines: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeadings: js.UndefOr[scala.Boolean] = js.undefined,
+    standardHeight: scala.Int | scala.Double = null,
+    standardWidth: scala.Int | scala.Double = null,
+    tabColor: java.lang.String = null,
+    tables: js.Array[TableData] = null,
+    visibility: officeDashJsLib.ExcelNs.SheetVisibility | officeDashJsLib.officeDashJsLibStrings.Visible | officeDashJsLib.officeDashJsLibStrings.Hidden | officeDashJsLib.officeDashJsLibStrings.VeryHidden = null
+  ): WorksheetData = {
+    val __obj = js.Dynamic.literal()
+    if (charts != null) __obj.updateDynamic("charts")(charts)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (pivotTables != null) __obj.updateDynamic("pivotTables")(pivotTables)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (!js.isUndefined(showGridlines)) __obj.updateDynamic("showGridlines")(showGridlines)
+    if (!js.isUndefined(showHeadings)) __obj.updateDynamic("showHeadings")(showHeadings)
+    if (standardHeight != null) __obj.updateDynamic("standardHeight")(standardHeight.asInstanceOf[js.Any])
+    if (standardWidth != null) __obj.updateDynamic("standardWidth")(standardWidth.asInstanceOf[js.Any])
+    if (tabColor != null) __obj.updateDynamic("tabColor")(tabColor)
+    if (tables != null) __obj.updateDynamic("tables")(tables)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetData]
+  }
+}
+

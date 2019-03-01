@@ -22,3 +22,22 @@ trait XCellRangeAddressable
   def getRangeAddress(): activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress
 }
 
+object XCellRangeAddressable {
+  @scala.inline
+  def apply(
+    RangeAddress: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    acquire: js.Function0[scala.Unit],
+    getRangeAddress: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XCellRangeAddressable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RangeAddress")(RangeAddress)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getRangeAddress")(getRangeAddress)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XCellRangeAddressable]
+  }
+}
+

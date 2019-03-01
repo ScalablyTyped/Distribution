@@ -17,3 +17,12 @@ trait WidthProps[TLength] extends js.Object {
   var width: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.WidthProperty[TLength]]] = js.undefined
 }
 
+object WidthProps {
+  @scala.inline
+  def apply[TLength](width: ResponsiveValue[csstypeLib.csstypeMod.WidthProperty[TLength]] = null): WidthProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WidthProps[TLength]]
+  }
+}
+

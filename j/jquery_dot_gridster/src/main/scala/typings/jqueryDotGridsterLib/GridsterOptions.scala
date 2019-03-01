@@ -89,3 +89,46 @@ trait GridsterOptions extends js.Object {
   var widget_selector: js.UndefOr[java.lang.String | js.Array[stdLib.HTMLElement]] = js.undefined
 }
 
+object GridsterOptions {
+  @scala.inline
+  def apply(
+    autogenerate_stylesheet: js.UndefOr[scala.Boolean] = js.undefined,
+    autogenerate_sytesheet: js.UndefOr[scala.Boolean] = js.undefined,
+    avoid_overlapped_widgets: js.UndefOr[scala.Boolean] = js.undefined,
+    collision: GridsterCollision = null,
+    draggable: GridsterDraggable = null,
+    extra_cols: scala.Int | scala.Double = null,
+    extra_rows: scala.Int | scala.Double = null,
+    max_cols: scala.Int | scala.Double = null,
+    max_size_x: scala.Int | scala.Double = null,
+    min_cols: scala.Int | scala.Double = null,
+    min_rows: scala.Int | scala.Double = null,
+    namespace: java.lang.String = null,
+    resize: GridsterResizable = null,
+    serialize_params: js.Function2[/* $w */ JQuery, /* wgd */ GridsterCoords, _] = null,
+    widget_base_dimensions: js.Array[jqueryDotGridsterLib.jqueryDotGridsterLibStrings.auto | scala.Double] = null,
+    widget_margins: js.Array[scala.Double] = null,
+    widget_selector: java.lang.String | js.Array[stdLib.HTMLElement] = null
+  ): GridsterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autogenerate_stylesheet)) __obj.updateDynamic("autogenerate_stylesheet")(autogenerate_stylesheet)
+    if (!js.isUndefined(autogenerate_sytesheet)) __obj.updateDynamic("autogenerate_sytesheet")(autogenerate_sytesheet)
+    if (!js.isUndefined(avoid_overlapped_widgets)) __obj.updateDynamic("avoid_overlapped_widgets")(avoid_overlapped_widgets)
+    if (collision != null) __obj.updateDynamic("collision")(collision)
+    if (draggable != null) __obj.updateDynamic("draggable")(draggable)
+    if (extra_cols != null) __obj.updateDynamic("extra_cols")(extra_cols.asInstanceOf[js.Any])
+    if (extra_rows != null) __obj.updateDynamic("extra_rows")(extra_rows.asInstanceOf[js.Any])
+    if (max_cols != null) __obj.updateDynamic("max_cols")(max_cols.asInstanceOf[js.Any])
+    if (max_size_x != null) __obj.updateDynamic("max_size_x")(max_size_x.asInstanceOf[js.Any])
+    if (min_cols != null) __obj.updateDynamic("min_cols")(min_cols.asInstanceOf[js.Any])
+    if (min_rows != null) __obj.updateDynamic("min_rows")(min_rows.asInstanceOf[js.Any])
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (resize != null) __obj.updateDynamic("resize")(resize)
+    if (serialize_params != null) __obj.updateDynamic("serialize_params")(serialize_params)
+    if (widget_base_dimensions != null) __obj.updateDynamic("widget_base_dimensions")(widget_base_dimensions)
+    if (widget_margins != null) __obj.updateDynamic("widget_margins")(widget_margins)
+    if (widget_selector != null) __obj.updateDynamic("widget_selector")(widget_selector.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridsterOptions]
+  }
+}
+

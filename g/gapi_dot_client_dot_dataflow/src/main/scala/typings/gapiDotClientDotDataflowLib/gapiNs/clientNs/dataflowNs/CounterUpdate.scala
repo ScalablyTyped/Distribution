@@ -45,3 +45,40 @@ trait CounterUpdate extends js.Object {
   var structuredNameAndMetadata: js.UndefOr[CounterStructuredNameAndMetadata] = js.undefined
 }
 
+object CounterUpdate {
+  @scala.inline
+  def apply(
+    boolean: js.UndefOr[scala.Boolean] = js.undefined,
+    cumulative: js.UndefOr[scala.Boolean] = js.undefined,
+    distribution: DistributionUpdate = null,
+    floatingPoint: scala.Int | scala.Double = null,
+    floatingPointList: FloatingPointList = null,
+    floatingPointMean: FloatingPointMean = null,
+    integer: SplitInt64 = null,
+    integerList: IntegerList = null,
+    integerMean: IntegerMean = null,
+    internal: js.Any = null,
+    nameAndKind: NameAndKind = null,
+    shortId: java.lang.String = null,
+    stringList: StringList = null,
+    structuredNameAndMetadata: CounterStructuredNameAndMetadata = null
+  ): CounterUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(boolean)) __obj.updateDynamic("boolean")(boolean)
+    if (!js.isUndefined(cumulative)) __obj.updateDynamic("cumulative")(cumulative)
+    if (distribution != null) __obj.updateDynamic("distribution")(distribution)
+    if (floatingPoint != null) __obj.updateDynamic("floatingPoint")(floatingPoint.asInstanceOf[js.Any])
+    if (floatingPointList != null) __obj.updateDynamic("floatingPointList")(floatingPointList)
+    if (floatingPointMean != null) __obj.updateDynamic("floatingPointMean")(floatingPointMean)
+    if (integer != null) __obj.updateDynamic("integer")(integer)
+    if (integerList != null) __obj.updateDynamic("integerList")(integerList)
+    if (integerMean != null) __obj.updateDynamic("integerMean")(integerMean)
+    if (internal != null) __obj.updateDynamic("internal")(internal)
+    if (nameAndKind != null) __obj.updateDynamic("nameAndKind")(nameAndKind)
+    if (shortId != null) __obj.updateDynamic("shortId")(shortId)
+    if (stringList != null) __obj.updateDynamic("stringList")(stringList)
+    if (structuredNameAndMetadata != null) __obj.updateDynamic("structuredNameAndMetadata")(structuredNameAndMetadata)
+    __obj.asInstanceOf[CounterUpdate]
+  }
+}
+

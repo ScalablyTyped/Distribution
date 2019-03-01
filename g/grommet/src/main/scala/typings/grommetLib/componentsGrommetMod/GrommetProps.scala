@@ -12,3 +12,20 @@ trait GrommetProps extends js.Object {
   var userAgent: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GrommetProps {
+  @scala.inline
+  def apply(
+    full: js.UndefOr[scala.Boolean] = js.undefined,
+    plain: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: js.Object = null,
+    userAgent: java.lang.String = null
+  ): GrommetProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
+    if (!js.isUndefined(plain)) __obj.updateDynamic("plain")(plain)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    __obj.asInstanceOf[GrommetProps]
+  }
+}
+

@@ -67,3 +67,40 @@ trait LiveBroadcastContentDetails extends js.Object {
   var startWithSlate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LiveBroadcastContentDetails {
+  @scala.inline
+  def apply(
+    boundStreamId: java.lang.String = null,
+    boundStreamLastUpdateTimeMs: java.lang.String = null,
+    closedCaptionsType: java.lang.String = null,
+    enableClosedCaptions: js.UndefOr[scala.Boolean] = js.undefined,
+    enableContentEncryption: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDvr: js.UndefOr[scala.Boolean] = js.undefined,
+    enableEmbed: js.UndefOr[scala.Boolean] = js.undefined,
+    enableLowLatency: js.UndefOr[scala.Boolean] = js.undefined,
+    latencyPreference: java.lang.String = null,
+    mesh: java.lang.String = null,
+    monitorStream: MonitorStreamInfo = null,
+    projection: java.lang.String = null,
+    recordFromStart: js.UndefOr[scala.Boolean] = js.undefined,
+    startWithSlate: js.UndefOr[scala.Boolean] = js.undefined
+  ): LiveBroadcastContentDetails = {
+    val __obj = js.Dynamic.literal()
+    if (boundStreamId != null) __obj.updateDynamic("boundStreamId")(boundStreamId)
+    if (boundStreamLastUpdateTimeMs != null) __obj.updateDynamic("boundStreamLastUpdateTimeMs")(boundStreamLastUpdateTimeMs)
+    if (closedCaptionsType != null) __obj.updateDynamic("closedCaptionsType")(closedCaptionsType)
+    if (!js.isUndefined(enableClosedCaptions)) __obj.updateDynamic("enableClosedCaptions")(enableClosedCaptions)
+    if (!js.isUndefined(enableContentEncryption)) __obj.updateDynamic("enableContentEncryption")(enableContentEncryption)
+    if (!js.isUndefined(enableDvr)) __obj.updateDynamic("enableDvr")(enableDvr)
+    if (!js.isUndefined(enableEmbed)) __obj.updateDynamic("enableEmbed")(enableEmbed)
+    if (!js.isUndefined(enableLowLatency)) __obj.updateDynamic("enableLowLatency")(enableLowLatency)
+    if (latencyPreference != null) __obj.updateDynamic("latencyPreference")(latencyPreference)
+    if (mesh != null) __obj.updateDynamic("mesh")(mesh)
+    if (monitorStream != null) __obj.updateDynamic("monitorStream")(monitorStream)
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (!js.isUndefined(recordFromStart)) __obj.updateDynamic("recordFromStart")(recordFromStart)
+    if (!js.isUndefined(startWithSlate)) __obj.updateDynamic("startWithSlate")(startWithSlate)
+    __obj.asInstanceOf[LiveBroadcastContentDetails]
+  }
+}
+

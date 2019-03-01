@@ -24,3 +24,26 @@ trait XSubTotalDescriptor
   def clear(): scala.Unit
 }
 
+object XSubTotalDescriptor {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addNew: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[SubTotalColumn], 
+      scala.Double, 
+      scala.Unit
+    ],
+    clear: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XSubTotalDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addNew")(addNew)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XSubTotalDescriptor]
+  }
+}
+

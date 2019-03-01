@@ -21,3 +21,14 @@ trait ASPxClientPaneTitle extends ASPxClientWebChartElement {
   var text: java.lang.String
 }
 
+object ASPxClientPaneTitle {
+  @scala.inline
+  def apply(alignment: java.lang.String, chart: ASPxClientWebChart, text: java.lang.String): ASPxClientPaneTitle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alignment")(alignment)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ASPxClientPaneTitle]
+  }
+}
+

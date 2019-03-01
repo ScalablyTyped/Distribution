@@ -55,3 +55,36 @@ trait Model extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    append: java.lang.String = null,
+    beforeStart: js.Function1[/* e */ BeforeStartEventArgs, scala.Unit] = null,
+    docType: java.lang.String = null,
+    excludeSelector: java.lang.String = null,
+    externalStyles: java.lang.String = null,
+    globalStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    prepend: java.lang.String = null,
+    printInNewWindow: js.UndefOr[scala.Boolean] = js.undefined,
+    timeOutPeriod: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (append != null) __obj.updateDynamic("append")(append)
+    if (beforeStart != null) __obj.updateDynamic("beforeStart")(beforeStart)
+    if (docType != null) __obj.updateDynamic("docType")(docType)
+    if (excludeSelector != null) __obj.updateDynamic("excludeSelector")(excludeSelector)
+    if (externalStyles != null) __obj.updateDynamic("externalStyles")(externalStyles)
+    if (!js.isUndefined(globalStyles)) __obj.updateDynamic("globalStyles")(globalStyles)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (prepend != null) __obj.updateDynamic("prepend")(prepend)
+    if (!js.isUndefined(printInNewWindow)) __obj.updateDynamic("printInNewWindow")(printInNewWindow)
+    if (timeOutPeriod != null) __obj.updateDynamic("timeOutPeriod")(timeOutPeriod.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

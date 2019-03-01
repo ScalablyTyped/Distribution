@@ -46,3 +46,26 @@ trait JoyrideTemplate extends js.Object {
   var wrapper: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JoyrideTemplate {
+  @scala.inline
+  def apply(
+    button: java.lang.String = null,
+    exposeCover: java.lang.String = null,
+    link: java.lang.String = null,
+    modal: java.lang.String = null,
+    timer: java.lang.String = null,
+    tip: java.lang.String = null,
+    wrapper: java.lang.String = null
+  ): JoyrideTemplate = {
+    val __obj = js.Dynamic.literal()
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (exposeCover != null) __obj.updateDynamic("exposeCover")(exposeCover)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (modal != null) __obj.updateDynamic("modal")(modal)
+    if (timer != null) __obj.updateDynamic("timer")(timer)
+    if (tip != null) __obj.updateDynamic("tip")(tip)
+    if (wrapper != null) __obj.updateDynamic("wrapper")(wrapper)
+    __obj.asInstanceOf[JoyrideTemplate]
+  }
+}
+

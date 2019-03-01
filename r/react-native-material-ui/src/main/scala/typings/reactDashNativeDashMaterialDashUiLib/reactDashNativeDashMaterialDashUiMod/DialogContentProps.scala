@@ -10,3 +10,16 @@ trait DialogContentProps extends js.Object {
   var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ContentContainer] = js.undefined
 }
 
+object DialogContentProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.Global.JSXNs.Element,
+    style: reactDashNativeDashMaterialDashUiLib.Anon_ContentContainer = null
+  ): DialogContentProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[DialogContentProps]
+  }
+}
+

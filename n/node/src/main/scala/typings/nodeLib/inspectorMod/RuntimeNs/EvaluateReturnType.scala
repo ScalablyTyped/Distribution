@@ -16,3 +16,13 @@ trait EvaluateReturnType extends js.Object {
   var result: RemoteObject
 }
 
+object EvaluateReturnType {
+  @scala.inline
+  def apply(result: RemoteObject, exceptionDetails: ExceptionDetails = null): EvaluateReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
+    __obj.asInstanceOf[EvaluateReturnType]
+  }
+}
+

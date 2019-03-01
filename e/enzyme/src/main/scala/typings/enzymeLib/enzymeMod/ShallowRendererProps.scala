@@ -22,3 +22,18 @@ trait ShallowRendererProps extends js.Object {
   var lifecycleExperimental: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ShallowRendererProps {
+  @scala.inline
+  def apply(
+    context: js.Object = null,
+    disableLifecycleMethods: js.UndefOr[scala.Boolean] = js.undefined,
+    lifecycleExperimental: js.UndefOr[scala.Boolean] = js.undefined
+  ): ShallowRendererProps = {
+    val __obj = js.Dynamic.literal()
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (!js.isUndefined(disableLifecycleMethods)) __obj.updateDynamic("disableLifecycleMethods")(disableLifecycleMethods)
+    if (!js.isUndefined(lifecycleExperimental)) __obj.updateDynamic("lifecycleExperimental")(lifecycleExperimental)
+    __obj.asInstanceOf[ShallowRendererProps]
+  }
+}
+

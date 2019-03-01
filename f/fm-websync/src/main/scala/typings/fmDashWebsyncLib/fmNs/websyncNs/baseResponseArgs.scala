@@ -24,3 +24,15 @@ trait baseResponseArgs extends baseArgs {
   var timestamp: stdLib.Date
 }
 
+object baseResponseArgs {
+  @scala.inline
+  def apply(client: client, clientId: java.lang.String, meta: js.Any, timestamp: stdLib.Date): baseResponseArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("clientId")(clientId)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[baseResponseArgs]
+  }
+}
+

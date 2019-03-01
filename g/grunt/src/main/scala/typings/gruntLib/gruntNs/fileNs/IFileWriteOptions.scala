@@ -23,3 +23,12 @@ trait IFileWriteOptions extends js.Object {
   var noProcess: js.UndefOr[js.Any] = js.undefined
 }
 
+object IFileWriteOptions {
+  @scala.inline
+  def apply(noProcess: js.Any = null): IFileWriteOptions = {
+    val __obj = js.Dynamic.literal()
+    if (noProcess != null) __obj.updateDynamic("noProcess")(noProcess)
+    __obj.asInstanceOf[IFileWriteOptions]
+  }
+}
+

@@ -71,3 +71,38 @@ trait CompletionSuggester extends Suggest {
   def unicodeAware(trueFalse: scala.Boolean): CompletionSuggester
 }
 
+object CompletionSuggester {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    analyzer: js.Function1[java.lang.String, CompletionSuggester],
+    editDistance: js.Function1[scala.Double, CompletionSuggester],
+    field: js.Function1[java.lang.String, CompletionSuggester],
+    fuzzy: js.Function1[scala.Boolean, CompletionSuggester],
+    minLength: js.Function1[scala.Double, CompletionSuggester],
+    prefixLength: js.Function1[scala.Double, CompletionSuggester],
+    shardSize: js.Function1[scala.Double, CompletionSuggester],
+    size: js.Function1[scala.Double, CompletionSuggester],
+    text: js.Function1[java.lang.String, CompletionSuggester],
+    toJSON: js.Function0[js.Any],
+    transpositions: js.Function1[scala.Boolean, CompletionSuggester],
+    unicodeAware: js.Function1[scala.Boolean, CompletionSuggester]
+  ): CompletionSuggester = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("analyzer")(analyzer)
+    __obj.updateDynamic("editDistance")(editDistance)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("fuzzy")(fuzzy)
+    __obj.updateDynamic("minLength")(minLength)
+    __obj.updateDynamic("prefixLength")(prefixLength)
+    __obj.updateDynamic("shardSize")(shardSize)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("transpositions")(transpositions)
+    __obj.updateDynamic("unicodeAware")(unicodeAware)
+    __obj.asInstanceOf[CompletionSuggester]
+  }
+}
+

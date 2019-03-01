@@ -19,3 +19,24 @@ trait XTypeDescriptionEnumeration
   def nextTypeDescription(): XTypeDescription
 }
 
+object XTypeDescriptionEnumeration {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    hasMoreElements: js.Function0[scala.Boolean],
+    nextElement: js.Function0[js.Any],
+    nextTypeDescription: js.Function0[XTypeDescription],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTypeDescriptionEnumeration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("hasMoreElements")(hasMoreElements)
+    __obj.updateDynamic("nextElement")(nextElement)
+    __obj.updateDynamic("nextTypeDescription")(nextTypeDescription)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTypeDescriptionEnumeration]
+  }
+}
+

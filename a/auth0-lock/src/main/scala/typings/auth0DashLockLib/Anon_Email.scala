@@ -10,3 +10,13 @@ trait Anon_Email extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Email {
+  @scala.inline
+  def apply(email: java.lang.String = null, username: java.lang.String = null): Anon_Email = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[Anon_Email]
+  }
+}
+

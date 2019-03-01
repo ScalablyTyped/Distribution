@@ -14,3 +14,27 @@ trait AcceleratorTypesResource extends js.Object {
   def list(request: gapiDotClientDotComputeLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[AcceleratorTypeList]
 }
 
+object AcceleratorTypesResource {
+  @scala.inline
+  def apply(
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AcceleratorTypeAggregatedList]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AcceleratorType, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AcceleratorType]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AcceleratorTypeList]
+    ]
+  ): AcceleratorTypesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AcceleratorTypesResource]
+  }
+}
+

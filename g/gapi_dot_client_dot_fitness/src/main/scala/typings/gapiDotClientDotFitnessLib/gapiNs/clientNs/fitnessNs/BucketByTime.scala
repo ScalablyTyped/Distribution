@@ -14,3 +14,13 @@ trait BucketByTime extends js.Object {
   var period: js.UndefOr[BucketByTimePeriod] = js.undefined
 }
 
+object BucketByTime {
+  @scala.inline
+  def apply(durationMillis: java.lang.String = null, period: BucketByTimePeriod = null): BucketByTime = {
+    val __obj = js.Dynamic.literal()
+    if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis)
+    if (period != null) __obj.updateDynamic("period")(period)
+    __obj.asInstanceOf[BucketByTime]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_History extends js.Object {
   var history: java.lang.String
 }
 
+object Anon_History {
+  @scala.inline
+  def apply(history: java.lang.String): Anon_History = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("history")(history)
+    __obj.asInstanceOf[Anon_History]
+  }
+}
+

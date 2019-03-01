@@ -10,3 +10,16 @@ trait Anon_Color extends js.Object {
   var points: js.Array[signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Point]
 }
 
+object Anon_Color {
+  @scala.inline
+  def apply(
+    color: java.lang.String,
+    points: js.Array[signatureUnderscorePadLib.signatureUnderscorePadMod.SignaturePadNs.Point]
+  ): Anon_Color = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("points")(points)
+    __obj.asInstanceOf[Anon_Color]
+  }
+}
+

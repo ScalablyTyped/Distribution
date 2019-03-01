@@ -183,3 +183,109 @@ trait QuestionnaireItem extends BackboneElement {
   var `type`: code
 }
 
+object QuestionnaireItem {
+  @scala.inline
+  def apply(
+    linkId: java.lang.String,
+    `type`: code,
+    _definition: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _initialBoolean: Element = null,
+    _initialDate: Element = null,
+    _initialDateTime: Element = null,
+    _initialDecimal: Element = null,
+    _initialInteger: Element = null,
+    _initialString: Element = null,
+    _initialTime: Element = null,
+    _initialUri: Element = null,
+    _linkId: Element = null,
+    _maxLength: Element = null,
+    _prefix: Element = null,
+    _readOnly: Element = null,
+    _repeats: Element = null,
+    _required: Element = null,
+    _text: Element = null,
+    _type: Element = null,
+    code: js.Array[Coding] = null,
+    definition: uri = null,
+    enableWhen: js.Array[QuestionnaireItemEnableWhen] = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    initialAttachment: Attachment = null,
+    initialBoolean: js.UndefOr[scala.Boolean] = js.undefined,
+    initialCoding: Coding = null,
+    initialDate: date = null,
+    initialDateTime: dateTime = null,
+    initialDecimal: js.UndefOr[decimal] = js.undefined,
+    initialInteger: js.UndefOr[integer] = js.undefined,
+    initialQuantity: Quantity = null,
+    initialReference: Reference = null,
+    initialString: java.lang.String = null,
+    initialTime: time = null,
+    initialUri: uri = null,
+    item: js.Array[QuestionnaireItem] = null,
+    maxLength: js.UndefOr[integer] = js.undefined,
+    modifierExtension: js.Array[Extension] = null,
+    option: js.Array[QuestionnaireItemOption] = null,
+    options: Reference = null,
+    prefix: java.lang.String = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    repeats: js.UndefOr[scala.Boolean] = js.undefined,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    text: java.lang.String = null
+  ): QuestionnaireItem = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("linkId")(linkId)
+    if (_definition != null) __obj.updateDynamic("_definition")(_definition)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_initialBoolean != null) __obj.updateDynamic("_initialBoolean")(_initialBoolean)
+    if (_initialDate != null) __obj.updateDynamic("_initialDate")(_initialDate)
+    if (_initialDateTime != null) __obj.updateDynamic("_initialDateTime")(_initialDateTime)
+    if (_initialDecimal != null) __obj.updateDynamic("_initialDecimal")(_initialDecimal)
+    if (_initialInteger != null) __obj.updateDynamic("_initialInteger")(_initialInteger)
+    if (_initialString != null) __obj.updateDynamic("_initialString")(_initialString)
+    if (_initialTime != null) __obj.updateDynamic("_initialTime")(_initialTime)
+    if (_initialUri != null) __obj.updateDynamic("_initialUri")(_initialUri)
+    if (_linkId != null) __obj.updateDynamic("_linkId")(_linkId)
+    if (_maxLength != null) __obj.updateDynamic("_maxLength")(_maxLength)
+    if (_prefix != null) __obj.updateDynamic("_prefix")(_prefix)
+    if (_readOnly != null) __obj.updateDynamic("_readOnly")(_readOnly)
+    if (_repeats != null) __obj.updateDynamic("_repeats")(_repeats)
+    if (_required != null) __obj.updateDynamic("_required")(_required)
+    if (_text != null) __obj.updateDynamic("_text")(_text)
+    if (_type != null) __obj.updateDynamic("_type")(_type)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (definition != null) __obj.updateDynamic("definition")(definition)
+    if (enableWhen != null) __obj.updateDynamic("enableWhen")(enableWhen)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (initialAttachment != null) __obj.updateDynamic("initialAttachment")(initialAttachment)
+    if (!js.isUndefined(initialBoolean)) __obj.updateDynamic("initialBoolean")(initialBoolean)
+    if (initialCoding != null) __obj.updateDynamic("initialCoding")(initialCoding)
+    if (initialDate != null) __obj.updateDynamic("initialDate")(initialDate)
+    if (initialDateTime != null) __obj.updateDynamic("initialDateTime")(initialDateTime)
+    if (!js.isUndefined(initialDecimal)) __obj.updateDynamic("initialDecimal")(initialDecimal)
+    if (!js.isUndefined(initialInteger)) __obj.updateDynamic("initialInteger")(initialInteger)
+    if (initialQuantity != null) __obj.updateDynamic("initialQuantity")(initialQuantity)
+    if (initialReference != null) __obj.updateDynamic("initialReference")(initialReference)
+    if (initialString != null) __obj.updateDynamic("initialString")(initialString)
+    if (initialTime != null) __obj.updateDynamic("initialTime")(initialTime)
+    if (initialUri != null) __obj.updateDynamic("initialUri")(initialUri)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (!js.isUndefined(maxLength)) __obj.updateDynamic("maxLength")(maxLength)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (option != null) __obj.updateDynamic("option")(option)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(repeats)) __obj.updateDynamic("repeats")(repeats)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[QuestionnaireItem]
+  }
+}
+

@@ -48,3 +48,32 @@ trait Anon_CategoryId extends js.Object {
   var part: java.lang.String
 }
 
+object Anon_CategoryId {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    categoryId: java.lang.String = null,
+    forUsername: java.lang.String = null,
+    id: java.lang.String = null,
+    managedByMe: js.UndefOr[scala.Boolean] = js.undefined,
+    maxResults: scala.Int | scala.Double = null,
+    mine: js.UndefOr[scala.Boolean] = js.undefined,
+    mySubscribers: js.UndefOr[scala.Boolean] = js.undefined,
+    onBehalfOfContentOwner: java.lang.String = null,
+    pageToken: java.lang.String = null
+  ): Anon_CategoryId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    if (categoryId != null) __obj.updateDynamic("categoryId")(categoryId)
+    if (forUsername != null) __obj.updateDynamic("forUsername")(forUsername)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(managedByMe)) __obj.updateDynamic("managedByMe")(managedByMe)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (!js.isUndefined(mine)) __obj.updateDynamic("mine")(mine)
+    if (!js.isUndefined(mySubscribers)) __obj.updateDynamic("mySubscribers")(mySubscribers)
+    if (onBehalfOfContentOwner != null) __obj.updateDynamic("onBehalfOfContentOwner")(onBehalfOfContentOwner)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    __obj.asInstanceOf[Anon_CategoryId]
+  }
+}
+

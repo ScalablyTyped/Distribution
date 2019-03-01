@@ -10,3 +10,20 @@ trait BranchSummaryWithRepository extends BranchSummary {
   var repository_BranchSummaryWithRepository: typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository
 }
 
+object BranchSummaryWithRepository {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    repository: typedDashGithubDashApiLib.distInterfacesRepositoryMod.Repository,
+    sha: java.lang.String,
+    user: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary
+  ): BranchSummaryWithRepository = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("repository")(repository)
+    __obj.updateDynamic("sha")(sha)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[BranchSummaryWithRepository]
+  }
+}
+

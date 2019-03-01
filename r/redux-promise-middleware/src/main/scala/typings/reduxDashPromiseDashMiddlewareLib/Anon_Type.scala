@@ -10,3 +10,15 @@ trait Anon_Type[PA /* <: reduxDashPromiseDashMiddlewareLib.reduxDashPromiseDashM
   var value: reduxDashPromiseDashMiddlewareLib.reduxDashPromiseDashMiddlewareMod.reduxMod.PayloadType[PA]
 }
 
+object Anon_Type {
+  @scala.inline
+  def apply[PA /* <: reduxDashPromiseDashMiddlewareLib.reduxDashPromiseDashMiddlewareMod.reduxMod.PromiseAction[R] */](
+    `type`: java.lang.String,
+    value: reduxDashPromiseDashMiddlewareLib.reduxDashPromiseDashMiddlewareMod.reduxMod.PayloadType[PA]
+  ): Anon_Type[PA] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Type[PA]]
+  }
+}
+

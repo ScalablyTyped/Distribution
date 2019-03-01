@@ -14,3 +14,12 @@ trait Anon_AsAny extends js.Object {
   var as: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AsAny {
+  @scala.inline
+  def apply(as: java.lang.String = null): Anon_AsAny = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    __obj.asInstanceOf[Anon_AsAny]
+  }
+}
+

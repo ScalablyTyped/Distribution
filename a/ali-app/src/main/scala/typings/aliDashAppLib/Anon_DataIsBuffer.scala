@@ -16,3 +16,13 @@ trait Anon_DataIsBuffer extends js.Object {
   var isBuffer: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_DataIsBuffer {
+  @scala.inline
+  def apply(data: java.lang.String | stdLib.ArrayBuffer, isBuffer: js.UndefOr[scala.Boolean] = js.undefined): Anon_DataIsBuffer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBuffer)) __obj.updateDynamic("isBuffer")(isBuffer)
+    __obj.asInstanceOf[Anon_DataIsBuffer]
+  }
+}
+

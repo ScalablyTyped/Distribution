@@ -11,7 +11,6 @@ package object YTNs {
   type ListTypeSearch = youtubeLib.youtubeLibStrings.search
   type ListTypeUserUploads = youtubeLib.youtubeLibStrings.user_uploads
   type PlayerEventHandler[TEvent /* <: PlayerEvent */] = js.Function1[/* event */ TEvent, scala.Unit]
-  type ProgressBarColor = youtubeLib.youtubeLibStrings.red | youtubeLib.youtubeLibStrings.white
   type SuggestedVideoQuality = VideoQualityDefault | VideoQualitySmall | VideoQualityMedium | VideoQualityLarge | VideoQualityHD720 | VideoQualityHD1080 | VideoQualityHighRes
   type VideoQualityDefault = youtubeLib.youtubeLibStrings.default
   type VideoQualityHD1080 = youtubeLib.youtubeLibStrings.hd1080

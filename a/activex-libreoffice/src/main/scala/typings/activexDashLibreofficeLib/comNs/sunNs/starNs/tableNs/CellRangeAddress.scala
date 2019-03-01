@@ -19,3 +19,22 @@ trait CellRangeAddress extends js.Object {
   var StartRow: scala.Double
 }
 
+object CellRangeAddress {
+  @scala.inline
+  def apply(
+    EndColumn: scala.Double,
+    EndRow: scala.Double,
+    Sheet: scala.Double,
+    StartColumn: scala.Double,
+    StartRow: scala.Double
+  ): CellRangeAddress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("EndColumn")(EndColumn)
+    __obj.updateDynamic("EndRow")(EndRow)
+    __obj.updateDynamic("Sheet")(Sheet)
+    __obj.updateDynamic("StartColumn")(StartColumn)
+    __obj.updateDynamic("StartRow")(StartRow)
+    __obj.asInstanceOf[CellRangeAddress]
+  }
+}
+

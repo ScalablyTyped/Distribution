@@ -24,3 +24,44 @@ trait ApplePaySession extends js.Object {
   def supportsVersion(version: scala.Double): scala.Boolean
 }
 
+object ApplePaySession {
+  @scala.inline
+  def apply(
+    abort: js.Function0[scala.Unit],
+    begin: js.Function0[scala.Unit],
+    canMakePayments: js.Function0[scala.Boolean],
+    canMakePaymentsWithActiveCard: js.Function1[java.lang.String, scala.Boolean],
+    completeMerchantValidation: js.Function1[js.Any, scala.Unit],
+    completePayment: js.Function1[ApplePayStatusCodes, scala.Unit],
+    completePaymentMethodSelection: js.Function2[js.Any, js.Any, scala.Unit],
+    completeShippingContactSelection: js.Function4[ApplePayStatusCodes, js.Any, js.Any, js.Any, scala.Unit],
+    completeShippingMethodSelection: js.Function3[ApplePayStatusCodes, js.Any, js.Any, scala.Unit],
+    oncancel: js.Function1[js.Any, scala.Unit],
+    onpaymentauthorized: js.Function1[js.Any, scala.Unit],
+    onpaymentmethodselected: js.Function1[js.Any, scala.Unit],
+    onshippingcontactselected: js.Function1[js.Any, scala.Unit],
+    onshippingmethodselected: js.Function1[js.Any, scala.Unit],
+    onvalidatemerchant: js.Function1[js.Any, scala.Unit],
+    supportsVersion: js.Function1[scala.Double, scala.Boolean]
+  ): ApplePaySession = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abort")(abort)
+    __obj.updateDynamic("begin")(begin)
+    __obj.updateDynamic("canMakePayments")(canMakePayments)
+    __obj.updateDynamic("canMakePaymentsWithActiveCard")(canMakePaymentsWithActiveCard)
+    __obj.updateDynamic("completeMerchantValidation")(completeMerchantValidation)
+    __obj.updateDynamic("completePayment")(completePayment)
+    __obj.updateDynamic("completePaymentMethodSelection")(completePaymentMethodSelection)
+    __obj.updateDynamic("completeShippingContactSelection")(completeShippingContactSelection)
+    __obj.updateDynamic("completeShippingMethodSelection")(completeShippingMethodSelection)
+    __obj.updateDynamic("oncancel")(oncancel)
+    __obj.updateDynamic("onpaymentauthorized")(onpaymentauthorized)
+    __obj.updateDynamic("onpaymentmethodselected")(onpaymentmethodselected)
+    __obj.updateDynamic("onshippingcontactselected")(onshippingcontactselected)
+    __obj.updateDynamic("onshippingmethodselected")(onshippingmethodselected)
+    __obj.updateDynamic("onvalidatemerchant")(onvalidatemerchant)
+    __obj.updateDynamic("supportsVersion")(supportsVersion)
+    __obj.asInstanceOf[ApplePaySession]
+  }
+}
+

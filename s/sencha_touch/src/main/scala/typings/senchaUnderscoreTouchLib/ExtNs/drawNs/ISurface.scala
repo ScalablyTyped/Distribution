@@ -119,3 +119,81 @@ trait ISurface
   var waitFor: js.UndefOr[js.Function1[/* surface */ js.UndefOr[this.type], scala.Unit]] = js.undefined
 }
 
+object ISurface {
+  @scala.inline
+  def apply(
+    IComponent: senchaUnderscoreTouchLib.ExtNs.IComponent = null,
+    add: js.Function0[scala.Unit] = null,
+    background: js.Any = null,
+    clear: js.Function0[scala.Unit] = null,
+    destroy: js.Function0[scala.Unit] = null,
+    devicePixelRatio: js.Any = null,
+    dirty: js.UndefOr[scala.Boolean] = js.undefined,
+    getBBox: js.Function2[
+      /* sprite */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite], 
+      /* isWithoutTransform */ js.UndefOr[scala.Boolean], 
+      _
+    ] = null,
+    getBackground: js.Function0[_] = null,
+    getDirty: js.Function0[scala.Boolean] = null,
+    getGroup: js.Function1[/* id */ js.UndefOr[java.lang.String], IGroup] = null,
+    getGroups: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getItems: js.Function0[IGroup] = null,
+    getRegion: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    groups: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    items: IGroup = null,
+    onAdd: js.Function1[
+      /* sprite */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite], 
+      scala.Unit
+    ] = null,
+    region: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    remove: js.Function2[
+      /* sprite */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.drawNs.spriteNs.ISprite], 
+      /* destroySprite */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    removeAll: js.Function0[scala.Unit] = null,
+    renderFrame: js.Function0[scala.Unit] = null,
+    repaint: js.Function0[scala.Unit] = null,
+    resetTransform: js.Function0[scala.Unit] = null,
+    roundPixel: js.Function1[/* num */ js.UndefOr[scala.Double], scala.Double] = null,
+    setBackground: js.Function1[/* background */ js.UndefOr[js.Any], scala.Unit] = null,
+    setGroups: js.Function1[/* groups */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    setItems: js.Function1[/* items */ js.UndefOr[IGroup], scala.Unit] = null,
+    setRegion: js.Function1[/* region */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    waitFor: js.Function1[/* surface */ js.UndefOr[ISurface], scala.Unit] = null
+  ): ISurface = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IComponent)
+    if (add != null) __obj.updateDynamic("add")(add)
+    if (background != null) __obj.updateDynamic("background")(background)
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (devicePixelRatio != null) __obj.updateDynamic("devicePixelRatio")(devicePixelRatio)
+    if (!js.isUndefined(dirty)) __obj.updateDynamic("dirty")(dirty)
+    if (getBBox != null) __obj.updateDynamic("getBBox")(getBBox)
+    if (getBackground != null) __obj.updateDynamic("getBackground")(getBackground)
+    if (getDirty != null) __obj.updateDynamic("getDirty")(getDirty)
+    if (getGroup != null) __obj.updateDynamic("getGroup")(getGroup)
+    if (getGroups != null) __obj.updateDynamic("getGroups")(getGroups)
+    if (getItems != null) __obj.updateDynamic("getItems")(getItems)
+    if (getRegion != null) __obj.updateDynamic("getRegion")(getRegion)
+    if (groups != null) __obj.updateDynamic("groups")(groups)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (removeAll != null) __obj.updateDynamic("removeAll")(removeAll)
+    if (renderFrame != null) __obj.updateDynamic("renderFrame")(renderFrame)
+    if (repaint != null) __obj.updateDynamic("repaint")(repaint)
+    if (resetTransform != null) __obj.updateDynamic("resetTransform")(resetTransform)
+    if (roundPixel != null) __obj.updateDynamic("roundPixel")(roundPixel)
+    if (setBackground != null) __obj.updateDynamic("setBackground")(setBackground)
+    if (setGroups != null) __obj.updateDynamic("setGroups")(setGroups)
+    if (setItems != null) __obj.updateDynamic("setItems")(setItems)
+    if (setRegion != null) __obj.updateDynamic("setRegion")(setRegion)
+    if (waitFor != null) __obj.updateDynamic("waitFor")(waitFor)
+    __obj.asInstanceOf[ISurface]
+  }
+}
+

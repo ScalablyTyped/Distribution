@@ -12,3 +12,20 @@ trait ReadConfigRequest extends js.Object {
   var projectDir: java.lang.String
 }
 
+object ReadConfigRequest {
+  @scala.inline
+  def apply(
+    configFilename: java.lang.String,
+    packageKey: java.lang.String,
+    projectDir: java.lang.String,
+    packageMetadata: lazyDashValLib.lazyDashValMod.Lazy[org.scalablytyped.runtime.StringDictionary[_] | scala.Null] = null
+  ): ReadConfigRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configFilename")(configFilename)
+    __obj.updateDynamic("packageKey")(packageKey)
+    __obj.updateDynamic("projectDir")(projectDir)
+    if (packageMetadata != null) __obj.updateDynamic("packageMetadata")(packageMetadata)
+    __obj.asInstanceOf[ReadConfigRequest]
+  }
+}
+

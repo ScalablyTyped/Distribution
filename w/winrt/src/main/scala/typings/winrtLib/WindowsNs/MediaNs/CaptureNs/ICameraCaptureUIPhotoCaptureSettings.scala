@@ -13,3 +13,22 @@ trait ICameraCaptureUIPhotoCaptureSettings extends js.Object {
   var maxResolution: CameraCaptureUIMaxPhotoResolution
 }
 
+object ICameraCaptureUIPhotoCaptureSettings {
+  @scala.inline
+  def apply(
+    allowCropping: scala.Boolean,
+    croppedAspectRatio: winrtLib.WindowsNs.FoundationNs.Size,
+    croppedSizeInPixels: winrtLib.WindowsNs.FoundationNs.Size,
+    format: CameraCaptureUIPhotoFormat,
+    maxResolution: CameraCaptureUIMaxPhotoResolution
+  ): ICameraCaptureUIPhotoCaptureSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowCropping")(allowCropping)
+    __obj.updateDynamic("croppedAspectRatio")(croppedAspectRatio)
+    __obj.updateDynamic("croppedSizeInPixels")(croppedSizeInPixels)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("maxResolution")(maxResolution)
+    __obj.asInstanceOf[ICameraCaptureUIPhotoCaptureSettings]
+  }
+}
+

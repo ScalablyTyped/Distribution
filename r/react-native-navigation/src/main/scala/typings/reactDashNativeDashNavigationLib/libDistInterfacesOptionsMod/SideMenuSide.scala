@@ -16,3 +16,16 @@ trait SideMenuSide extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SideMenuSide {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): SideMenuSide = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[SideMenuSide]
+  }
+}
+

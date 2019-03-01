@@ -15,3 +15,24 @@ import scala.scalajs.js.annotation._
   def renderToken(selectedItem: T, props: TypeaheadMenuProps[T], index: scala.Double): reactLib.reactMod.ReactNs.ReactNode
 }
 
+object InputContainerPropsMultiple {
+  @scala.inline
+  def apply[T /* <: TypeaheadModel */](
+    inputClassName: java.lang.String,
+    labelKey: TypeaheadLabelKey[T],
+    onRemove: js.Function1[reactLib.Event, scala.Unit],
+    renderToken: js.Function3[T, TypeaheadMenuProps[T], scala.Double, reactLib.reactMod.ReactNs.ReactNode],
+    role: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.Empty,
+    selected: js.Array[T]
+  ): InputContainerPropsMultiple[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inputClassName")(inputClassName)
+    __obj.updateDynamic("labelKey")(labelKey.asInstanceOf[js.Any])
+    __obj.updateDynamic("onRemove")(onRemove)
+    __obj.updateDynamic("renderToken")(renderToken)
+    __obj.updateDynamic("role")(role)
+    __obj.updateDynamic("selected")(selected)
+    __obj.asInstanceOf[InputContainerPropsMultiple[T]]
+  }
+}
+

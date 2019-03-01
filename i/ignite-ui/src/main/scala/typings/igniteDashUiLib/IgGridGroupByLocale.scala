@@ -107,3 +107,55 @@ trait IgGridGroupByLocale
   var summaryRowTitle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IgGridGroupByLocale {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridGroupByLocale
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    collapseTooltip: java.lang.String = null,
+    emptyGroupByAreaContent: java.lang.String = null,
+    emptyGroupByAreaContentSelectColumns: java.lang.String = null,
+    emptyGroupByAreaContentSelectColumnsCaption: java.lang.String = null,
+    expandTooltip: java.lang.String = null,
+    modalDialogButtonApplyText: java.lang.String = null,
+    modalDialogButtonCancelText: java.lang.String = null,
+    modalDialogCaptionButtonAsc: java.lang.String = null,
+    modalDialogCaptionButtonDesc: java.lang.String = null,
+    modalDialogCaptionButtonUngroup: java.lang.String = null,
+    modalDialogCaptionText: java.lang.String = null,
+    modalDialogClearAllButtonLabel: java.lang.String = null,
+    modalDialogDropDownButtonCaption: java.lang.String = null,
+    modalDialogDropDownLabel: java.lang.String = null,
+    modalDialogGroupByButtonText: java.lang.String = null,
+    modalDialogRootLevelHierarchicalGrid: java.lang.String = null,
+    removeButtonTooltip: java.lang.String = null,
+    summaryIconTitle: java.lang.String = null,
+    summaryRowTitle: java.lang.String = null
+  ): IgGridGroupByLocale = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (collapseTooltip != null) __obj.updateDynamic("collapseTooltip")(collapseTooltip)
+    if (emptyGroupByAreaContent != null) __obj.updateDynamic("emptyGroupByAreaContent")(emptyGroupByAreaContent)
+    if (emptyGroupByAreaContentSelectColumns != null) __obj.updateDynamic("emptyGroupByAreaContentSelectColumns")(emptyGroupByAreaContentSelectColumns)
+    if (emptyGroupByAreaContentSelectColumnsCaption != null) __obj.updateDynamic("emptyGroupByAreaContentSelectColumnsCaption")(emptyGroupByAreaContentSelectColumnsCaption)
+    if (expandTooltip != null) __obj.updateDynamic("expandTooltip")(expandTooltip)
+    if (modalDialogButtonApplyText != null) __obj.updateDynamic("modalDialogButtonApplyText")(modalDialogButtonApplyText)
+    if (modalDialogButtonCancelText != null) __obj.updateDynamic("modalDialogButtonCancelText")(modalDialogButtonCancelText)
+    if (modalDialogCaptionButtonAsc != null) __obj.updateDynamic("modalDialogCaptionButtonAsc")(modalDialogCaptionButtonAsc)
+    if (modalDialogCaptionButtonDesc != null) __obj.updateDynamic("modalDialogCaptionButtonDesc")(modalDialogCaptionButtonDesc)
+    if (modalDialogCaptionButtonUngroup != null) __obj.updateDynamic("modalDialogCaptionButtonUngroup")(modalDialogCaptionButtonUngroup)
+    if (modalDialogCaptionText != null) __obj.updateDynamic("modalDialogCaptionText")(modalDialogCaptionText)
+    if (modalDialogClearAllButtonLabel != null) __obj.updateDynamic("modalDialogClearAllButtonLabel")(modalDialogClearAllButtonLabel)
+    if (modalDialogDropDownButtonCaption != null) __obj.updateDynamic("modalDialogDropDownButtonCaption")(modalDialogDropDownButtonCaption)
+    if (modalDialogDropDownLabel != null) __obj.updateDynamic("modalDialogDropDownLabel")(modalDialogDropDownLabel)
+    if (modalDialogGroupByButtonText != null) __obj.updateDynamic("modalDialogGroupByButtonText")(modalDialogGroupByButtonText)
+    if (modalDialogRootLevelHierarchicalGrid != null) __obj.updateDynamic("modalDialogRootLevelHierarchicalGrid")(modalDialogRootLevelHierarchicalGrid)
+    if (removeButtonTooltip != null) __obj.updateDynamic("removeButtonTooltip")(removeButtonTooltip)
+    if (summaryIconTitle != null) __obj.updateDynamic("summaryIconTitle")(summaryIconTitle)
+    if (summaryRowTitle != null) __obj.updateDynamic("summaryRowTitle")(summaryRowTitle)
+    __obj.asInstanceOf[IgGridGroupByLocale]
+  }
+}
+

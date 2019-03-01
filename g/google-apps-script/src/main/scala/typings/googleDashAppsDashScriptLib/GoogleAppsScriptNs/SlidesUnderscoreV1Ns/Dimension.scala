@@ -12,3 +12,13 @@ trait Dimension extends js.Object {
   var unit: Unit
 }
 
+object Dimension {
+  @scala.inline
+  def apply(magnitude: scala.Double, unit: Unit): Dimension = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("magnitude")(magnitude)
+    __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[Dimension]
+  }
+}
+

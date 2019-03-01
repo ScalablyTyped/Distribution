@@ -17,6 +17,4 @@ package object netMod {
     ], 
     scala.Unit
   ]
-  type NetConnectOpts = TcpNetConnectOpts | IpcNetConnectOpts
-  type SocketConnectOpts = TcpSocketConnectOpts | IpcSocketConnectOpts
 }

@@ -13,3 +13,25 @@ trait MustacheStatement extends Node {
   var strip: StripFlags
 }
 
+object MustacheStatement {
+  @scala.inline
+  def apply(
+    escaped: scala.Boolean,
+    hash: Hash,
+    loc: SourceLocation,
+    params: js.Array[Expression],
+    path: PathExpression | Literal,
+    strip: StripFlags,
+    `type`: java.lang.String
+  ): MustacheStatement = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("escaped")(escaped)
+    __obj.updateDynamic("hash")(hash)
+    __obj.updateDynamic("loc")(loc)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    __obj.updateDynamic("strip")(strip)
+    __obj.asInstanceOf[MustacheStatement]
+  }
+}
+

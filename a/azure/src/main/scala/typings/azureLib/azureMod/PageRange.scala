@@ -10,3 +10,13 @@ trait PageRange extends js.Object {
   var start: scala.Double
 }
 
+object PageRange {
+  @scala.inline
+  def apply(end: scala.Double, start: scala.Double): PageRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[PageRange]
+  }
+}
+

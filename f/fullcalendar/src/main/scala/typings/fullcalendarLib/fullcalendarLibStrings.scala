@@ -22,7 +22,8 @@ object fullcalendarLibStrings {
   sealed trait bootstrap4 extends js.Object
   
   @js.native
-  sealed trait businessHours extends js.Object
+  sealed trait businessHours
+    extends fullcalendarLib.srcTypesInputDashTypesMod.ConstraintInput
   
   @js.native
   sealed trait changeView extends js.Object

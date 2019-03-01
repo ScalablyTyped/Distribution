@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "mobx-apollo"
-version := "0.0-dt-20181017Z-c6cb7b"
+version := "0.0-dt-20181017Z-0ec212"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-cache" % "1.2.1-42c569",
-  "org.scalablytyped" %%% "apollo-client" % "2.5.1-f2e35d",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.8-9b747f",
-  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.15-55234c",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-807ec5",
-  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f8efaa",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-467272",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-31ba1a",
-  "org.scalablytyped" %%% "ts-invariant" % "0.2.1-28b003",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9",
-  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-6cdd80",
-  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.15-0ed4ab")
+  "org.scalablytyped" %%% "apollo-cache" % "1.2.1-244c1b",
+  "org.scalablytyped" %%% "apollo-client" % "2.5.1-486e74",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.8-778406",
+  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.15-cca711",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.2.1-e0abb3",
+  "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f61f0c",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-f9010a",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388",
+  "org.scalablytyped" %%% "symbol-observable" % "1.2.0-3596cc",
+  "org.scalablytyped" %%% "ts-invariant" % "0.2.1-9c7de5",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-9355d3",
+  "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-5c7895",
+  "org.scalablytyped" %%% "zen-observable-ts" % "0.8.15-197aae")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

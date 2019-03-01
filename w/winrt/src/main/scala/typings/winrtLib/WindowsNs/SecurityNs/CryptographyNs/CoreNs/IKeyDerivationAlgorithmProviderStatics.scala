@@ -9,3 +9,12 @@ trait IKeyDerivationAlgorithmProviderStatics extends js.Object {
   def openAlgorithm(algorithm: java.lang.String): KeyDerivationAlgorithmProvider
 }
 
+object IKeyDerivationAlgorithmProviderStatics {
+  @scala.inline
+  def apply(openAlgorithm: js.Function1[java.lang.String, KeyDerivationAlgorithmProvider]): IKeyDerivationAlgorithmProviderStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("openAlgorithm")(openAlgorithm)
+    __obj.asInstanceOf[IKeyDerivationAlgorithmProviderStatics]
+  }
+}
+

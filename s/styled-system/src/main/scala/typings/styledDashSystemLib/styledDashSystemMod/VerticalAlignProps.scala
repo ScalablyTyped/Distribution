@@ -14,3 +14,12 @@ trait VerticalAlignProps[TLength] extends js.Object {
   var verticalAlign: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.VerticalAlignProperty[TLength]]] = js.undefined
 }
 
+object VerticalAlignProps {
+  @scala.inline
+  def apply[TLength](verticalAlign: ResponsiveValue[csstypeLib.csstypeMod.VerticalAlignProperty[TLength]] = null): VerticalAlignProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VerticalAlignProps[TLength]]
+  }
+}
+

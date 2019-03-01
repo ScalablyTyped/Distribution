@@ -20,3 +20,12 @@ trait INgMapProvider extends js.Object {
   def setDefaultOptions(options: INgMapOptions): scala.Unit
 }
 
+object INgMapProvider {
+  @scala.inline
+  def apply(setDefaultOptions: js.Function1[INgMapOptions, scala.Unit]): INgMapProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setDefaultOptions")(setDefaultOptions)
+    __obj.asInstanceOf[INgMapProvider]
+  }
+}
+

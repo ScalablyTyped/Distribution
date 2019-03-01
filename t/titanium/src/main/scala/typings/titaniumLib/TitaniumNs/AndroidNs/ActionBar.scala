@@ -125,3 +125,92 @@ trait ActionBar
   def show(): scala.Unit
 }
 
+object ActionBar {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    backgroundImage: java.lang.String,
+    bubbleParent: scala.Boolean,
+    customView: titaniumLib.TitaniumNs.UINs.View,
+    displayHomeAsUp: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getCustomView: js.Function0[titaniumLib.TitaniumNs.UINs.View],
+    getNavigationMode: js.Function0[scala.Double],
+    getSubtitle: js.Function0[java.lang.String],
+    getTitle: js.Function0[java.lang.String],
+    hide: js.Function0[scala.Unit],
+    homeButtonEnabled: scala.Boolean,
+    icon: java.lang.String,
+    logo: java.lang.String,
+    navigationMode: scala.Double,
+    onHomeIconItemSelected: js.Function0[js.Any],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBackgroundImage: js.Function1[java.lang.String, scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    setCustomView: js.Function1[js.Any, scala.Unit],
+    setDisplayHomeAsUp: js.Function1[scala.Boolean, scala.Unit],
+    setDisplayShowHomeEnabled: js.Function1[scala.Boolean, scala.Unit],
+    setDisplayShowTitleEnabled: js.Function1[scala.Boolean, scala.Unit],
+    setHomeButtonEnabled: js.Function1[scala.Boolean, scala.Unit],
+    setIcon: js.Function1[java.lang.String, scala.Unit],
+    setLogo: js.Function1[java.lang.String, scala.Unit],
+    setNavigationMode: js.Function1[scala.Double, scala.Unit],
+    setOnHomeIconItemSelected: js.Function1[js.Function0[_], scala.Unit],
+    setSubtitle: js.Function1[java.lang.String, scala.Unit],
+    setTitle: js.Function1[java.lang.String, scala.Unit],
+    show: js.Function0[scala.Unit],
+    subtitle: java.lang.String,
+    title: java.lang.String,
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): ActionBar = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("backgroundImage")(backgroundImage)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("customView")(customView)
+    __obj.updateDynamic("displayHomeAsUp")(displayHomeAsUp)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getCustomView")(getCustomView)
+    __obj.updateDynamic("getNavigationMode")(getNavigationMode)
+    __obj.updateDynamic("getSubtitle")(getSubtitle)
+    __obj.updateDynamic("getTitle")(getTitle)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("homeButtonEnabled")(homeButtonEnabled)
+    __obj.updateDynamic("icon")(icon)
+    __obj.updateDynamic("logo")(logo)
+    __obj.updateDynamic("navigationMode")(navigationMode)
+    __obj.updateDynamic("onHomeIconItemSelected")(onHomeIconItemSelected)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setBackgroundImage")(setBackgroundImage)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.updateDynamic("setCustomView")(setCustomView)
+    __obj.updateDynamic("setDisplayHomeAsUp")(setDisplayHomeAsUp)
+    __obj.updateDynamic("setDisplayShowHomeEnabled")(setDisplayShowHomeEnabled)
+    __obj.updateDynamic("setDisplayShowTitleEnabled")(setDisplayShowTitleEnabled)
+    __obj.updateDynamic("setHomeButtonEnabled")(setHomeButtonEnabled)
+    __obj.updateDynamic("setIcon")(setIcon)
+    __obj.updateDynamic("setLogo")(setLogo)
+    __obj.updateDynamic("setNavigationMode")(setNavigationMode)
+    __obj.updateDynamic("setOnHomeIconItemSelected")(setOnHomeIconItemSelected)
+    __obj.updateDynamic("setSubtitle")(setSubtitle)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("subtitle")(subtitle)
+    __obj.updateDynamic("title")(title)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[ActionBar]
+  }
+}
+

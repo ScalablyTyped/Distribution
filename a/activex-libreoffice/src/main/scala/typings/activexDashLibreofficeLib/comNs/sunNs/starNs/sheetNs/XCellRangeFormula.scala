@@ -39,3 +39,29 @@ trait XCellRangeFormula
   ): scala.Unit
 }
 
+object XCellRangeFormula {
+  @scala.inline
+  def apply(
+    FormulaArray: activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]],
+    acquire: js.Function0[scala.Unit],
+    getFormulaArray: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashInteropLib.SafeArray[java.lang.String]]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setFormulaArray: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]], 
+      scala.Unit
+    ]
+  ): XCellRangeFormula = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FormulaArray")(FormulaArray)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFormulaArray")(getFormulaArray)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setFormulaArray")(setFormulaArray)
+    __obj.asInstanceOf[XCellRangeFormula]
+  }
+}
+

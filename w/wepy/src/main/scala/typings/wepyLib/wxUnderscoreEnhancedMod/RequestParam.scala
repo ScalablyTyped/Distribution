@@ -15,3 +15,24 @@ trait RequestParam extends UrlParam {
   var responseType: js.UndefOr[wepyLib.wepyLibStrings.text | wepyLib.wepyLibStrings.arraybuffer] = js.undefined
 }
 
+object RequestParam {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    data: js.Object | java.lang.String | stdLib.ArrayBuffer = null,
+    dataType: wepyLib.wepyLibStrings.json | wepyLib.wepyLibStrings.text = null,
+    header: js.Object = null,
+    method: wepyLib.wepyLibStrings.GET | wepyLib.wepyLibStrings.OPTIONS | wepyLib.wepyLibStrings.HEAD | wepyLib.wepyLibStrings.POST | wepyLib.wepyLibStrings.PUT | wepyLib.wepyLibStrings.DELETE | wepyLib.wepyLibStrings.TRACE | wepyLib.wepyLibStrings.CONNECT = null,
+    responseType: wepyLib.wepyLibStrings.text | wepyLib.wepyLibStrings.arraybuffer = null
+  ): RequestParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (dataType != null) __obj.updateDynamic("dataType")(dataType.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RequestParam]
+  }
+}
+

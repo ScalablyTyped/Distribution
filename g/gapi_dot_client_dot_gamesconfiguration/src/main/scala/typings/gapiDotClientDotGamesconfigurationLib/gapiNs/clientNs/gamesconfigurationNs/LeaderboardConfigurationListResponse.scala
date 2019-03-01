@@ -14,3 +14,18 @@ trait LeaderboardConfigurationListResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LeaderboardConfigurationListResponse {
+  @scala.inline
+  def apply(
+    items: js.Array[LeaderboardConfiguration] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null
+  ): LeaderboardConfigurationListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[LeaderboardConfigurationListResponse]
+  }
+}
+

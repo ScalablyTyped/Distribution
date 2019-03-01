@@ -10,3 +10,18 @@ trait SourceRepoTrigger extends ReleaseTriggerBase {
   var branchFilters: js.Array[java.lang.String]
 }
 
+object SourceRepoTrigger {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    branchFilters: js.Array[java.lang.String],
+    triggerType: ReleaseTriggerType
+  ): SourceRepoTrigger = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alias")(alias)
+    __obj.updateDynamic("branchFilters")(branchFilters)
+    __obj.updateDynamic("triggerType")(triggerType)
+    __obj.asInstanceOf[SourceRepoTrigger]
+  }
+}
+

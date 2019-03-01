@@ -23,3 +23,24 @@ trait CommentThreadSnippet extends js.Object {
   var videoId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommentThreadSnippet {
+  @scala.inline
+  def apply(
+    canReply: js.UndefOr[scala.Boolean] = js.undefined,
+    channelId: java.lang.String = null,
+    isPublic: js.UndefOr[scala.Boolean] = js.undefined,
+    topLevelComment: Comment = null,
+    totalReplyCount: scala.Int | scala.Double = null,
+    videoId: java.lang.String = null
+  ): CommentThreadSnippet = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canReply)) __obj.updateDynamic("canReply")(canReply)
+    if (channelId != null) __obj.updateDynamic("channelId")(channelId)
+    if (!js.isUndefined(isPublic)) __obj.updateDynamic("isPublic")(isPublic)
+    if (topLevelComment != null) __obj.updateDynamic("topLevelComment")(topLevelComment)
+    if (totalReplyCount != null) __obj.updateDynamic("totalReplyCount")(totalReplyCount.asInstanceOf[js.Any])
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    __obj.asInstanceOf[CommentThreadSnippet]
+  }
+}
+

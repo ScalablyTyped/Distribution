@@ -32,3 +32,24 @@ trait DialogTheme extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DialogTheme {
+  @scala.inline
+  def apply(
+    active: java.lang.String = null,
+    body: java.lang.String = null,
+    button: java.lang.String = null,
+    dialog: java.lang.String = null,
+    navigation: java.lang.String = null,
+    title: java.lang.String = null
+  ): DialogTheme = {
+    val __obj = js.Dynamic.literal()
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (dialog != null) __obj.updateDynamic("dialog")(dialog)
+    if (navigation != null) __obj.updateDynamic("navigation")(navigation)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[DialogTheme]
+  }
+}
+

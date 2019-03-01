@@ -14,3 +14,18 @@ trait CFB$Container extends js.Object {
   var raw: js.UndefOr[cfbLib.Anon_Header] = js.undefined
 }
 
+object CFB$Container {
+  @scala.inline
+  def apply(
+    FileIndex: js.Array[CFB$Entry],
+    FullPaths: js.Array[java.lang.String],
+    raw: cfbLib.Anon_Header = null
+  ): CFB$Container = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FileIndex")(FileIndex)
+    __obj.updateDynamic("FullPaths")(FullPaths)
+    if (raw != null) __obj.updateDynamic("raw")(raw)
+    __obj.asInstanceOf[CFB$Container]
+  }
+}
+

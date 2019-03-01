@@ -13,3 +13,12 @@ trait Anon_Sloppy extends js.Object {
   var sloppy: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Sloppy {
+  @scala.inline
+  def apply(sloppy: js.UndefOr[scala.Boolean] = js.undefined): Anon_Sloppy = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(sloppy)) __obj.updateDynamic("sloppy")(sloppy)
+    __obj.asInstanceOf[Anon_Sloppy]
+  }
+}
+

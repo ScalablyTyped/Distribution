@@ -18,3 +18,18 @@ trait AddDialogField extends js.Object {
   var field: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AddDialogField {
+  @scala.inline
+  def apply(
+    displayInGeneralTab: js.UndefOr[scala.Boolean] = js.undefined,
+    editType: java.lang.String = null,
+    field: java.lang.String = null
+  ): AddDialogField = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(displayInGeneralTab)) __obj.updateDynamic("displayInGeneralTab")(displayInGeneralTab)
+    if (editType != null) __obj.updateDynamic("editType")(editType)
+    if (field != null) __obj.updateDynamic("field")(field)
+    __obj.asInstanceOf[AddDialogField]
+  }
+}
+

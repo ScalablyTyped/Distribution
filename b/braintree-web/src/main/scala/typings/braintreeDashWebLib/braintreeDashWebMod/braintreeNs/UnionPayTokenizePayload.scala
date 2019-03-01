@@ -11,3 +11,13 @@ trait UnionPayTokenizePayload extends js.Object {
   var `type`: java.lang.String
 }
 
+object UnionPayTokenizePayload {
+  @scala.inline
+  def apply(details: UnionPayAccountDetails, nonce: java.lang.String, `type`: java.lang.String): UnionPayTokenizePayload = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("nonce")(nonce)
+    __obj.asInstanceOf[UnionPayTokenizePayload]
+  }
+}
+

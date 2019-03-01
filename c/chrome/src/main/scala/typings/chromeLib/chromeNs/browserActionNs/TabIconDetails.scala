@@ -14,3 +14,18 @@ trait TabIconDetails extends js.Object {
   var tabId: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TabIconDetails {
+  @scala.inline
+  def apply(
+    imageData: stdLib.ImageData | org.scalablytyped.runtime.NumberDictionary[stdLib.ImageData] = null,
+    path: js.Any = null,
+    tabId: scala.Int | scala.Double = null
+  ): TabIconDetails = {
+    val __obj = js.Dynamic.literal()
+    if (imageData != null) __obj.updateDynamic("imageData")(imageData.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TabIconDetails]
+  }
+}
+

@@ -39,3 +39,28 @@ trait SeriesTrendlinesTooltip extends js.Object {
   var ry: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SeriesTrendlinesTooltip {
+  @scala.inline
+  def apply(
+    border: SeriesTrendlinesTooltipBorder = null,
+    duration: java.lang.String = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    fill: java.lang.String = null,
+    format: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    rx: scala.Int | scala.Double = null,
+    ry: scala.Int | scala.Double = null
+  ): SeriesTrendlinesTooltip = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (duration != null) __obj.updateDynamic("duration")(duration)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (rx != null) __obj.updateDynamic("rx")(rx.asInstanceOf[js.Any])
+    if (ry != null) __obj.updateDynamic("ry")(ry.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesTrendlinesTooltip]
+  }
+}
+

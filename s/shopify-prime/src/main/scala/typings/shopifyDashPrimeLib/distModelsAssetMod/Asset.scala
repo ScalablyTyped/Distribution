@@ -44,3 +44,30 @@ trait Asset extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Asset {
+  @scala.inline
+  def apply(
+    attachment: java.lang.String = null,
+    content_type: java.lang.String = null,
+    created_at: java.lang.String = null,
+    key: java.lang.String = null,
+    public_url: java.lang.String = null,
+    size: scala.Int | scala.Double = null,
+    theme_id: scala.Int | scala.Double = null,
+    updated_at: java.lang.String = null,
+    value: java.lang.String = null
+  ): Asset = {
+    val __obj = js.Dynamic.literal()
+    if (attachment != null) __obj.updateDynamic("attachment")(attachment)
+    if (content_type != null) __obj.updateDynamic("content_type")(content_type)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (public_url != null) __obj.updateDynamic("public_url")(public_url)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (theme_id != null) __obj.updateDynamic("theme_id")(theme_id.asInstanceOf[js.Any])
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Asset]
+  }
+}
+

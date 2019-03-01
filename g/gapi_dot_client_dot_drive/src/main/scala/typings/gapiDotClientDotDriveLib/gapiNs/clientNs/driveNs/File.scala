@@ -154,3 +154,116 @@ trait File extends js.Object {
   var writersCanShare: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object File {
+  @scala.inline
+  def apply(
+    appProperties: stdLib.Record[java.lang.String, java.lang.String] = null,
+    capabilities: gapiDotClientDotDriveLib.Anon_CanAddChildren = null,
+    contentHints: gapiDotClientDotDriveLib.Anon_IndexableText = null,
+    createdTime: java.lang.String = null,
+    description: java.lang.String = null,
+    explicitlyTrashed: js.UndefOr[scala.Boolean] = js.undefined,
+    fileExtension: java.lang.String = null,
+    folderColorRgb: java.lang.String = null,
+    fullFileExtension: java.lang.String = null,
+    hasAugmentedPermissions: js.UndefOr[scala.Boolean] = js.undefined,
+    hasThumbnail: js.UndefOr[scala.Boolean] = js.undefined,
+    headRevisionId: java.lang.String = null,
+    iconLink: java.lang.String = null,
+    id: java.lang.String = null,
+    imageMediaMetadata: gapiDotClientDotDriveLib.Anon_Aperture = null,
+    isAppAuthorized: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    lastModifyingUser: User = null,
+    md5Checksum: java.lang.String = null,
+    mimeType: java.lang.String = null,
+    modifiedByMe: js.UndefOr[scala.Boolean] = js.undefined,
+    modifiedByMeTime: java.lang.String = null,
+    modifiedTime: java.lang.String = null,
+    name: java.lang.String = null,
+    originalFilename: java.lang.String = null,
+    ownedByMe: js.UndefOr[scala.Boolean] = js.undefined,
+    owners: js.Array[User] = null,
+    parents: js.Array[java.lang.String] = null,
+    permissionIds: js.Array[java.lang.String] = null,
+    permissions: js.Array[Permission] = null,
+    properties: stdLib.Record[java.lang.String, java.lang.String] = null,
+    quotaBytesUsed: java.lang.String = null,
+    shared: js.UndefOr[scala.Boolean] = js.undefined,
+    sharedWithMeTime: java.lang.String = null,
+    sharingUser: User = null,
+    size: java.lang.String = null,
+    spaces: js.Array[java.lang.String] = null,
+    starred: js.UndefOr[scala.Boolean] = js.undefined,
+    teamDriveId: java.lang.String = null,
+    thumbnailLink: java.lang.String = null,
+    thumbnailVersion: java.lang.String = null,
+    trashed: js.UndefOr[scala.Boolean] = js.undefined,
+    trashedTime: java.lang.String = null,
+    trashingUser: User = null,
+    version: java.lang.String = null,
+    videoMediaMetadata: gapiDotClientDotDriveLib.Anon_DurationMillis = null,
+    viewedByMe: js.UndefOr[scala.Boolean] = js.undefined,
+    viewedByMeTime: java.lang.String = null,
+    viewersCanCopyContent: js.UndefOr[scala.Boolean] = js.undefined,
+    webContentLink: java.lang.String = null,
+    webViewLink: java.lang.String = null,
+    writersCanShare: js.UndefOr[scala.Boolean] = js.undefined
+  ): File = {
+    val __obj = js.Dynamic.literal()
+    if (appProperties != null) __obj.updateDynamic("appProperties")(appProperties)
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    if (contentHints != null) __obj.updateDynamic("contentHints")(contentHints)
+    if (createdTime != null) __obj.updateDynamic("createdTime")(createdTime)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(explicitlyTrashed)) __obj.updateDynamic("explicitlyTrashed")(explicitlyTrashed)
+    if (fileExtension != null) __obj.updateDynamic("fileExtension")(fileExtension)
+    if (folderColorRgb != null) __obj.updateDynamic("folderColorRgb")(folderColorRgb)
+    if (fullFileExtension != null) __obj.updateDynamic("fullFileExtension")(fullFileExtension)
+    if (!js.isUndefined(hasAugmentedPermissions)) __obj.updateDynamic("hasAugmentedPermissions")(hasAugmentedPermissions)
+    if (!js.isUndefined(hasThumbnail)) __obj.updateDynamic("hasThumbnail")(hasThumbnail)
+    if (headRevisionId != null) __obj.updateDynamic("headRevisionId")(headRevisionId)
+    if (iconLink != null) __obj.updateDynamic("iconLink")(iconLink)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imageMediaMetadata != null) __obj.updateDynamic("imageMediaMetadata")(imageMediaMetadata)
+    if (!js.isUndefined(isAppAuthorized)) __obj.updateDynamic("isAppAuthorized")(isAppAuthorized)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastModifyingUser != null) __obj.updateDynamic("lastModifyingUser")(lastModifyingUser)
+    if (md5Checksum != null) __obj.updateDynamic("md5Checksum")(md5Checksum)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (!js.isUndefined(modifiedByMe)) __obj.updateDynamic("modifiedByMe")(modifiedByMe)
+    if (modifiedByMeTime != null) __obj.updateDynamic("modifiedByMeTime")(modifiedByMeTime)
+    if (modifiedTime != null) __obj.updateDynamic("modifiedTime")(modifiedTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (originalFilename != null) __obj.updateDynamic("originalFilename")(originalFilename)
+    if (!js.isUndefined(ownedByMe)) __obj.updateDynamic("ownedByMe")(ownedByMe)
+    if (owners != null) __obj.updateDynamic("owners")(owners)
+    if (parents != null) __obj.updateDynamic("parents")(parents)
+    if (permissionIds != null) __obj.updateDynamic("permissionIds")(permissionIds)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (quotaBytesUsed != null) __obj.updateDynamic("quotaBytesUsed")(quotaBytesUsed)
+    if (!js.isUndefined(shared)) __obj.updateDynamic("shared")(shared)
+    if (sharedWithMeTime != null) __obj.updateDynamic("sharedWithMeTime")(sharedWithMeTime)
+    if (sharingUser != null) __obj.updateDynamic("sharingUser")(sharingUser)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (spaces != null) __obj.updateDynamic("spaces")(spaces)
+    if (!js.isUndefined(starred)) __obj.updateDynamic("starred")(starred)
+    if (teamDriveId != null) __obj.updateDynamic("teamDriveId")(teamDriveId)
+    if (thumbnailLink != null) __obj.updateDynamic("thumbnailLink")(thumbnailLink)
+    if (thumbnailVersion != null) __obj.updateDynamic("thumbnailVersion")(thumbnailVersion)
+    if (!js.isUndefined(trashed)) __obj.updateDynamic("trashed")(trashed)
+    if (trashedTime != null) __obj.updateDynamic("trashedTime")(trashedTime)
+    if (trashingUser != null) __obj.updateDynamic("trashingUser")(trashingUser)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (videoMediaMetadata != null) __obj.updateDynamic("videoMediaMetadata")(videoMediaMetadata)
+    if (!js.isUndefined(viewedByMe)) __obj.updateDynamic("viewedByMe")(viewedByMe)
+    if (viewedByMeTime != null) __obj.updateDynamic("viewedByMeTime")(viewedByMeTime)
+    if (!js.isUndefined(viewersCanCopyContent)) __obj.updateDynamic("viewersCanCopyContent")(viewersCanCopyContent)
+    if (webContentLink != null) __obj.updateDynamic("webContentLink")(webContentLink)
+    if (webViewLink != null) __obj.updateDynamic("webViewLink")(webViewLink)
+    if (!js.isUndefined(writersCanShare)) __obj.updateDynamic("writersCanShare")(writersCanShare)
+    __obj.asInstanceOf[File]
+  }
+}
+

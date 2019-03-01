@@ -12,3 +12,20 @@ trait ThreeTrafficLights1Set
   var yellowCircle: Icon
 }
 
+object ThreeTrafficLights1Set {
+  @scala.inline
+  def apply(
+    greenCircle: Icon,
+    redCircleWithBorder: Icon,
+    yellowCircle: Icon,
+    NumberDictionary: /* index */ org.scalablytyped.runtime.NumberDictionary[Icon] = null
+  ): ThreeTrafficLights1Set = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("greenCircle")(greenCircle)
+    __obj.updateDynamic("redCircleWithBorder")(redCircleWithBorder)
+    __obj.updateDynamic("yellowCircle")(yellowCircle)
+    js.Dynamic.global.Object.assign(__obj, NumberDictionary)
+    __obj.asInstanceOf[ThreeTrafficLights1Set]
+  }
+}
+

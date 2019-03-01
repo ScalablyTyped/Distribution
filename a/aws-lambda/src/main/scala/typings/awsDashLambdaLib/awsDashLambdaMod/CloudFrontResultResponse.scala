@@ -15,3 +15,22 @@ trait CloudFrontResultResponse extends js.Object {
   var statusDescription: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CloudFrontResultResponse {
+  @scala.inline
+  def apply(
+    status: java.lang.String,
+    body: java.lang.String = null,
+    bodyEncoding: awsDashLambdaLib.awsDashLambdaLibStrings.text | awsDashLambdaLib.awsDashLambdaLibStrings.base64 = null,
+    headers: CloudFrontHeaders = null,
+    statusDescription: java.lang.String = null
+  ): CloudFrontResultResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (bodyEncoding != null) __obj.updateDynamic("bodyEncoding")(bodyEncoding.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (statusDescription != null) __obj.updateDynamic("statusDescription")(statusDescription)
+    __obj.asInstanceOf[CloudFrontResultResponse]
+  }
+}
+

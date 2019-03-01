@@ -35,3 +35,20 @@ trait ValidatingWebhookConfiguration extends js.Object {
   val webhooks: js.Array[Webhook]
 }
 
+object ValidatingWebhookConfiguration {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ValidatingWebhookConfiguration,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    webhooks: js.Array[Webhook]
+  ): ValidatingWebhookConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("webhooks")(webhooks)
+    __obj.asInstanceOf[ValidatingWebhookConfiguration]
+  }
+}
+

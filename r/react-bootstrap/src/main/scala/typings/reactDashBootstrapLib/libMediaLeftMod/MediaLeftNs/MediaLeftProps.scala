@@ -10,3 +10,16 @@ trait MediaLeftProps
   var align: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MediaLeftProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libMediaLeftMod.MediaLeft] = null,
+    align: java.lang.String = null
+  ): MediaLeftProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (align != null) __obj.updateDynamic("align")(align)
+    __obj.asInstanceOf[MediaLeftProps]
+  }
+}
+

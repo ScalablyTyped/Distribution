@@ -18,3 +18,18 @@ trait AnalyzeSyntaxResponse extends js.Object {
   var tokens: js.UndefOr[js.Array[Token]] = js.undefined
 }
 
+object AnalyzeSyntaxResponse {
+  @scala.inline
+  def apply(
+    language: java.lang.String = null,
+    sentences: js.Array[Sentence] = null,
+    tokens: js.Array[Token] = null
+  ): AnalyzeSyntaxResponse = {
+    val __obj = js.Dynamic.literal()
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (sentences != null) __obj.updateDynamic("sentences")(sentences)
+    if (tokens != null) __obj.updateDynamic("tokens")(tokens)
+    __obj.asInstanceOf[AnalyzeSyntaxResponse]
+  }
+}
+

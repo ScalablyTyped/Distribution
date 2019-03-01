@@ -21,3 +21,18 @@ trait GetPossibleBreakpointsParameterType extends js.Object {
   var start: Location
 }
 
+object GetPossibleBreakpointsParameterType {
+  @scala.inline
+  def apply(
+    start: Location,
+    end: Location = null,
+    restrictToFunction: js.UndefOr[scala.Boolean] = js.undefined
+  ): GetPossibleBreakpointsParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("start")(start)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (!js.isUndefined(restrictToFunction)) __obj.updateDynamic("restrictToFunction")(restrictToFunction)
+    __obj.asInstanceOf[GetPossibleBreakpointsParameterType]
+  }
+}
+

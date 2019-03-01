@@ -53,3 +53,30 @@ trait Anon_CityName extends js.Object {
   var userName: java.lang.String
 }
 
+object Anon_CityName {
+  @scala.inline
+  def apply(
+    cityName: java.lang.String,
+    countyName: java.lang.String,
+    detailInfo: java.lang.String,
+    errMsg: java.lang.String,
+    nationalCode: java.lang.String,
+    postalCode: java.lang.String,
+    provinceName: java.lang.String,
+    telNumber: java.lang.String,
+    userName: java.lang.String
+  ): Anon_CityName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cityName")(cityName)
+    __obj.updateDynamic("countyName")(countyName)
+    __obj.updateDynamic("detailInfo")(detailInfo)
+    __obj.updateDynamic("errMsg")(errMsg)
+    __obj.updateDynamic("nationalCode")(nationalCode)
+    __obj.updateDynamic("postalCode")(postalCode)
+    __obj.updateDynamic("provinceName")(provinceName)
+    __obj.updateDynamic("telNumber")(telNumber)
+    __obj.updateDynamic("userName")(userName)
+    __obj.asInstanceOf[Anon_CityName]
+  }
+}
+

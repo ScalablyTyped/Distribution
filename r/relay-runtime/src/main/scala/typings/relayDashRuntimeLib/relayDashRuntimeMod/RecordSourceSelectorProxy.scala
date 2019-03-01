@@ -14,3 +14,24 @@ trait RecordSourceSelectorProxy extends js.Object {
   def getRootField(fieldName: java.lang.String): RecordProxy | scala.Null
 }
 
+object RecordSourceSelectorProxy {
+  @scala.inline
+  def apply(
+    create: js.Function2[DataID, java.lang.String, RecordProxy],
+    delete: js.Function1[DataID, scala.Unit],
+    get: js.Function1[DataID, RecordProxy | scala.Null],
+    getPluralRootField: js.Function1[java.lang.String, js.Array[RecordProxy] | scala.Null],
+    getRoot: js.Function0[RecordProxy],
+    getRootField: js.Function1[java.lang.String, RecordProxy | scala.Null]
+  ): RecordSourceSelectorProxy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getPluralRootField")(getPluralRootField)
+    __obj.updateDynamic("getRoot")(getRoot)
+    __obj.updateDynamic("getRootField")(getRootField)
+    __obj.asInstanceOf[RecordSourceSelectorProxy]
+  }
+}
+

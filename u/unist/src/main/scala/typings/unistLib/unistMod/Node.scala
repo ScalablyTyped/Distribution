@@ -22,3 +22,19 @@ trait Node
   var `type`: java.lang.String
 }
 
+object Node {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    data: Data = null,
+    position: Position = null
+  ): Node = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Node]
+  }
+}
+

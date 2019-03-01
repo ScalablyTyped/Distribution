@@ -30,3 +30,18 @@ trait ConditionalFormatRuleUpdateData extends js.Object {
   var formulaR1C1: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConditionalFormatRuleUpdateData {
+  @scala.inline
+  def apply(
+    formula: java.lang.String = null,
+    formulaLocal: java.lang.String = null,
+    formulaR1C1: java.lang.String = null
+  ): ConditionalFormatRuleUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (formula != null) __obj.updateDynamic("formula")(formula)
+    if (formulaLocal != null) __obj.updateDynamic("formulaLocal")(formulaLocal)
+    if (formulaR1C1 != null) __obj.updateDynamic("formulaR1C1")(formulaR1C1)
+    __obj.asInstanceOf[ConditionalFormatRuleUpdateData]
+  }
+}
+

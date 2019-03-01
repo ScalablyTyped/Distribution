@@ -20,3 +20,14 @@ trait ColorType extends js.Object {
   var ansi256: Conversions
 }
 
+object ColorType {
+  @scala.inline
+  def apply(ansi: Conversions, ansi16m: Conversions, ansi256: Conversions): ColorType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ansi")(ansi)
+    __obj.updateDynamic("ansi16m")(ansi16m)
+    __obj.updateDynamic("ansi256")(ansi256)
+    __obj.asInstanceOf[ColorType]
+  }
+}
+

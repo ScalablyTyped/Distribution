@@ -24,3 +24,20 @@ trait ClientCertificateState extends js.Object {
   val pemEncodedCertificate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ClientCertificateState {
+  @scala.inline
+  def apply(
+    createdDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    expirationDate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    pemEncodedCertificate: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ClientCertificateState = {
+    val __obj = js.Dynamic.literal()
+    if (createdDate != null) __obj.updateDynamic("createdDate")(createdDate.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (expirationDate != null) __obj.updateDynamic("expirationDate")(expirationDate.asInstanceOf[js.Any])
+    if (pemEncodedCertificate != null) __obj.updateDynamic("pemEncodedCertificate")(pemEncodedCertificate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientCertificateState]
+  }
+}
+

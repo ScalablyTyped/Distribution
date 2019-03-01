@@ -27,5 +27,4 @@ package object atGoogleDashCloudTasksMod {
     scala.Unit
   ]
   type UpdateNamedRequest[N /* <: java.lang.String */, T] = ParentRequest with atGoogleDashCloudTasksLib.atGoogleDashCloudTasksLibStrings.UpdateNamedRequest with js.Any
-  type View = atGoogleDashCloudTasksLib.atGoogleDashCloudTasksLibNumbers.`0` | atGoogleDashCloudTasksLib.atGoogleDashCloudTasksLibNumbers.`1` | atGoogleDashCloudTasksLib.atGoogleDashCloudTasksLibNumbers.`2`
 }

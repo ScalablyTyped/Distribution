@@ -18,3 +18,12 @@ trait HandlerDecorations extends js.Object {
   var view: js.UndefOr[java.lang.String | visionLib.Anon_Context] = js.undefined
 }
 
+object HandlerDecorations {
+  @scala.inline
+  def apply(view: java.lang.String | visionLib.Anon_Context = null): HandlerDecorations = {
+    val __obj = js.Dynamic.literal()
+    if (view != null) __obj.updateDynamic("view")(view.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HandlerDecorations]
+  }
+}
+

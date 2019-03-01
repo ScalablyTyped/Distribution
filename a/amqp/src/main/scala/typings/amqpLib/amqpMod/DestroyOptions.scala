@@ -20,3 +20,16 @@ trait DestroyOptions extends js.Object {
   var ifUnused: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DestroyOptions {
+  @scala.inline
+  def apply(
+    ifEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    ifUnused: js.UndefOr[scala.Boolean] = js.undefined
+  ): DestroyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ifEmpty)) __obj.updateDynamic("ifEmpty")(ifEmpty)
+    if (!js.isUndefined(ifUnused)) __obj.updateDynamic("ifUnused")(ifUnused)
+    __obj.asInstanceOf[DestroyOptions]
+  }
+}
+

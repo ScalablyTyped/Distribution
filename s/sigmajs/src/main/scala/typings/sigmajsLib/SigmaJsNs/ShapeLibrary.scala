@@ -9,3 +9,12 @@ trait ShapeLibrary extends js.Object {
   def enumerate(): js.Any
 }
 
+object ShapeLibrary {
+  @scala.inline
+  def apply(enumerate: js.Function0[js.Any]): ShapeLibrary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumerate")(enumerate)
+    __obj.asInstanceOf[ShapeLibrary]
+  }
+}
+

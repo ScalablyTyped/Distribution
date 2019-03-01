@@ -28,3 +28,42 @@ trait DeckProps extends js.Object {
   var transitionDuration: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DeckProps {
+  @scala.inline
+  def apply(
+    autoplay: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplayDuration: scala.Int | scala.Double = null,
+    autoplayLoop: js.UndefOr[scala.Boolean] = js.undefined,
+    autoplayOnStart: js.UndefOr[scala.Boolean] = js.undefined,
+    controls: js.UndefOr[scala.Boolean] = js.undefined,
+    globalStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    history: js.Any = null,
+    onStateChange: js.Function2[
+      /* previousState */ js.UndefOr[java.lang.String], 
+      /* nextState */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ] = null,
+    progress: progressType = null,
+    showFullscreenControl: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: Theme = null,
+    transition: coreDashJsLib.Array[transitionType] = null,
+    transitionDuration: scala.Int | scala.Double = null
+  ): DeckProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoplay)) __obj.updateDynamic("autoplay")(autoplay)
+    if (autoplayDuration != null) __obj.updateDynamic("autoplayDuration")(autoplayDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoplayLoop)) __obj.updateDynamic("autoplayLoop")(autoplayLoop)
+    if (!js.isUndefined(autoplayOnStart)) __obj.updateDynamic("autoplayOnStart")(autoplayOnStart)
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
+    if (!js.isUndefined(globalStyles)) __obj.updateDynamic("globalStyles")(globalStyles)
+    if (history != null) __obj.updateDynamic("history")(history)
+    if (onStateChange != null) __obj.updateDynamic("onStateChange")(onStateChange)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (!js.isUndefined(showFullscreenControl)) __obj.updateDynamic("showFullscreenControl")(showFullscreenControl)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (transition != null) __obj.updateDynamic("transition")(transition)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeckProps]
+  }
+}
+

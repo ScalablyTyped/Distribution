@@ -29,3 +29,22 @@ trait KeyRangeLocation extends js.Object {
   var start: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeyRangeLocation {
+  @scala.inline
+  def apply(
+    dataDisk: java.lang.String = null,
+    deliveryEndpoint: java.lang.String = null,
+    deprecatedPersistentDirectory: java.lang.String = null,
+    end: java.lang.String = null,
+    start: java.lang.String = null
+  ): KeyRangeLocation = {
+    val __obj = js.Dynamic.literal()
+    if (dataDisk != null) __obj.updateDynamic("dataDisk")(dataDisk)
+    if (deliveryEndpoint != null) __obj.updateDynamic("deliveryEndpoint")(deliveryEndpoint)
+    if (deprecatedPersistentDirectory != null) __obj.updateDynamic("deprecatedPersistentDirectory")(deprecatedPersistentDirectory)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[KeyRangeLocation]
+  }
+}
+

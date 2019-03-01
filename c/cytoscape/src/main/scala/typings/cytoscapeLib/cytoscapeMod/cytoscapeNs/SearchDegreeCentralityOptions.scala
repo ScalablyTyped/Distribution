@@ -31,3 +31,20 @@ trait SearchDegreeCentralityOptions extends js.Object {
   var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, scala.Double]] = js.undefined
 }
 
+object SearchDegreeCentralityOptions {
+  @scala.inline
+  def apply(
+    root: NodeSingular | Selector,
+    alpha: scala.Int | scala.Double = null,
+    directed: js.UndefOr[scala.Boolean] = js.undefined,
+    weight: js.Function1[/* edge */ EdgeSingular, scala.Double] = null
+  ): SearchDegreeCentralityOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("root")(root.asInstanceOf[js.Any])
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (!js.isUndefined(directed)) __obj.updateDynamic("directed")(directed)
+    if (weight != null) __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[SearchDegreeCentralityOptions]
+  }
+}
+

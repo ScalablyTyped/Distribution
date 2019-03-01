@@ -17,3 +17,18 @@ trait TimeOfDayRange extends js.Object {
   var latestTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimeOfDayRange {
+  @scala.inline
+  def apply(
+    earliestTime: java.lang.String = null,
+    kind: java.lang.String = null,
+    latestTime: java.lang.String = null
+  ): TimeOfDayRange = {
+    val __obj = js.Dynamic.literal()
+    if (earliestTime != null) __obj.updateDynamic("earliestTime")(earliestTime)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (latestTime != null) __obj.updateDynamic("latestTime")(latestTime)
+    __obj.asInstanceOf[TimeOfDayRange]
+  }
+}
+

@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object atGoogleDashCloudStorageLibStrings {
   @js.native
-  sealed trait authenticatedRead extends js.Object
+  sealed trait authenticatedRead
+    extends atGoogleDashCloudStorageLib.buildSrcFileMod.PredefinedAcl
   
   @js.native
-  sealed trait bucketOwnerFullControl extends js.Object
+  sealed trait bucketOwnerFullControl
+    extends atGoogleDashCloudStorageLib.buildSrcFileMod.PredefinedAcl
   
   @js.native
-  sealed trait bucketOwnerRead extends js.Object
+  sealed trait bucketOwnerRead
+    extends atGoogleDashCloudStorageLib.buildSrcFileMod.PredefinedAcl
   
   @js.native
   sealed trait crc32c extends js.Object
@@ -25,13 +28,16 @@ object atGoogleDashCloudStorageLibStrings {
   sealed trait md5 extends js.Object
   
   @js.native
-  sealed trait `private` extends js.Object
+  sealed trait `private`
+    extends atGoogleDashCloudStorageLib.buildSrcFileMod.PredefinedAcl
   
   @js.native
-  sealed trait projectPrivate extends js.Object
+  sealed trait projectPrivate
+    extends atGoogleDashCloudStorageLib.buildSrcFileMod.PredefinedAcl
   
   @js.native
-  sealed trait publicRead extends js.Object
+  sealed trait publicRead
+    extends atGoogleDashCloudStorageLib.buildSrcFileMod.PredefinedAcl
   
   @js.native
   sealed trait read extends js.Object

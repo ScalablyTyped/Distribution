@@ -11,3 +11,14 @@ trait GoToAction extends js.Object {
   var text: java.lang.String
 }
 
+object GoToAction {
+  @scala.inline
+  def apply(description: java.lang.String, link: java.lang.String, text: java.lang.String): GoToAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[GoToAction]
+  }
+}
+

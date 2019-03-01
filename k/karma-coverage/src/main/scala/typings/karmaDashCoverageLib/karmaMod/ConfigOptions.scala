@@ -12,3 +12,12 @@ trait ConfigOptions extends js.Object {
   var coverageReporter: js.UndefOr[KarmaCoverageReporter with karmaDashCoverageLib.Anon_Reporters] = js.undefined
 }
 
+object ConfigOptions {
+  @scala.inline
+  def apply(coverageReporter: KarmaCoverageReporter with karmaDashCoverageLib.Anon_Reporters = null): ConfigOptions = {
+    val __obj = js.Dynamic.literal()
+    if (coverageReporter != null) __obj.updateDynamic("coverageReporter")(coverageReporter)
+    __obj.asInstanceOf[ConfigOptions]
+  }
+}
+

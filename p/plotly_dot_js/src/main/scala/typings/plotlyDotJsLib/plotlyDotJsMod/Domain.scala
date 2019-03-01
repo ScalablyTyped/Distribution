@@ -10,3 +10,13 @@ trait Domain extends js.Object {
   var y: js.Array[scala.Double]
 }
 
+object Domain {
+  @scala.inline
+  def apply(x: js.Array[scala.Double], y: js.Array[scala.Double]): Domain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Domain]
+  }
+}
+

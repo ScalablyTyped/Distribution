@@ -12,3 +12,20 @@ trait Anon_HighlightLuminosity extends js.Object {
   var pullOutSegmentOnClick: js.UndefOr[Anon_Back] = js.undefined
 }
 
+object Anon_HighlightLuminosity {
+  @scala.inline
+  def apply(
+    highlightLuminosity: scala.Int | scala.Double = null,
+    highlightSegmentOnMouseover: js.UndefOr[scala.Boolean] = js.undefined,
+    load: Anon_Default = null,
+    pullOutSegmentOnClick: Anon_Back = null
+  ): Anon_HighlightLuminosity = {
+    val __obj = js.Dynamic.literal()
+    if (highlightLuminosity != null) __obj.updateDynamic("highlightLuminosity")(highlightLuminosity.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightSegmentOnMouseover)) __obj.updateDynamic("highlightSegmentOnMouseover")(highlightSegmentOnMouseover)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (pullOutSegmentOnClick != null) __obj.updateDynamic("pullOutSegmentOnClick")(pullOutSegmentOnClick)
+    __obj.asInstanceOf[Anon_HighlightLuminosity]
+  }
+}
+

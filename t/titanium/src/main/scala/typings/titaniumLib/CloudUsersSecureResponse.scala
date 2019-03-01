@@ -39,3 +39,26 @@ trait CloudUsersSecureResponse extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CloudUsersSecureResponse {
+  @scala.inline
+  def apply(
+    accessToken: java.lang.String = null,
+    code: scala.Int | scala.Double = null,
+    error: js.UndefOr[scala.Boolean] = js.undefined,
+    expiresIn: scala.Int | scala.Double = null,
+    message: java.lang.String = null,
+    meta: js.Any = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): CloudUsersSecureResponse = {
+    val __obj = js.Dynamic.literal()
+    if (accessToken != null) __obj.updateDynamic("accessToken")(accessToken)
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (expiresIn != null) __obj.updateDynamic("expiresIn")(expiresIn.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[CloudUsersSecureResponse]
+  }
+}
+

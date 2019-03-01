@@ -26,3 +26,14 @@ trait ShareOpenGraphDialogOptions extends BaseDialogOptions {
   var action_type: java.lang.String
 }
 
+object ShareOpenGraphDialogOptions {
+  @scala.inline
+  def apply(action_properties: java.lang.String, action_type: java.lang.String, method: java.lang.String): ShareOpenGraphDialogOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action_properties")(action_properties)
+    __obj.updateDynamic("action_type")(action_type)
+    __obj.updateDynamic("method")(method)
+    __obj.asInstanceOf[ShareOpenGraphDialogOptions]
+  }
+}
+

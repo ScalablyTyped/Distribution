@@ -9,3 +9,12 @@ trait Api extends js.Object {
   var colReorder: datatablesDotNetDashColreorderLib.Anon_Direction
 }
 
+object Api {
+  @scala.inline
+  def apply(colReorder: datatablesDotNetDashColreorderLib.Anon_Direction): Api = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("colReorder")(colReorder)
+    __obj.asInstanceOf[Api]
+  }
+}
+

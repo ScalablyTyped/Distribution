@@ -20,3 +20,14 @@ trait _Impl extends js.Object {
   var noStorage: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(method: java.lang.String, noCookieStorage: java.lang.String, noStorage: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("noCookieStorage")(noCookieStorage)
+    __obj.updateDynamic("noStorage")(noStorage)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

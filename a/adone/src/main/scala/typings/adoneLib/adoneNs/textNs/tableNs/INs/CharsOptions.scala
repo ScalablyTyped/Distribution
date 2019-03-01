@@ -23,3 +23,33 @@ trait CharsOptions extends js.Object {
   var `top-right`: java.lang.String
 }
 
+object CharsOptions {
+  @scala.inline
+  def apply(
+    bottom: java.lang.String,
+    `bottom-left`: java.lang.String,
+    `bottom-mid`: java.lang.String,
+    `bottom-right`: java.lang.String,
+    left: java.lang.String,
+    `left-mid`: java.lang.String,
+    mid: java.lang.String,
+    `mid-mid`: java.lang.String,
+    middle: java.lang.String,
+    right: java.lang.String,
+    `right-mid`: java.lang.String,
+    top: java.lang.String,
+    `top-left`: java.lang.String,
+    `top-mid`: java.lang.String,
+    `top-right`: java.lang.String
+  ): CharsOptions = {
+    val __obj = js.Dynamic.literal(`bottom-left` = `bottom-left`, `bottom-mid` = `bottom-mid`, `bottom-right` = `bottom-right`, `left-mid` = `left-mid`, `mid-mid` = `mid-mid`, `right-mid` = `right-mid`, `top-left` = `top-left`, `top-mid` = `top-mid`, `top-right` = `top-right`)
+    __obj.updateDynamic("bottom")(bottom)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("mid")(mid)
+    __obj.updateDynamic("middle")(middle)
+    __obj.updateDynamic("right")(right)
+    __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[CharsOptions]
+  }
+}
+

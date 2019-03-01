@@ -18,3 +18,32 @@ trait Hooks extends js.Object {
   var update: js.UndefOr[UpdateHook] = js.undefined
 }
 
+object Hooks {
+  @scala.inline
+  def apply(
+    create: CreateHook = null,
+    destroy: DestroyHook = null,
+    init: InitHook = null,
+    insert: InsertHook = null,
+    post: PostHook = null,
+    postpatch: PostPatchHook = null,
+    pre: PreHook = null,
+    prepatch: PrePatchHook = null,
+    remove: RemoveHook = null,
+    update: UpdateHook = null
+  ): Hooks = {
+    val __obj = js.Dynamic.literal()
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (insert != null) __obj.updateDynamic("insert")(insert)
+    if (post != null) __obj.updateDynamic("post")(post)
+    if (postpatch != null) __obj.updateDynamic("postpatch")(postpatch)
+    if (pre != null) __obj.updateDynamic("pre")(pre)
+    if (prepatch != null) __obj.updateDynamic("prepatch")(prepatch)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Hooks]
+  }
+}
+

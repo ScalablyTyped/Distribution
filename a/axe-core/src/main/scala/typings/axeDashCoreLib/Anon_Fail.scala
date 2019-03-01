@@ -11,3 +11,18 @@ trait Anon_Fail extends js.Object {
   var pass: java.lang.String
 }
 
+object Anon_Fail {
+  @scala.inline
+  def apply(
+    fail: java.lang.String,
+    incomplete: java.lang.String | org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    pass: java.lang.String
+  ): Anon_Fail = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fail")(fail)
+    __obj.updateDynamic("incomplete")(incomplete.asInstanceOf[js.Any])
+    __obj.updateDynamic("pass")(pass)
+    __obj.asInstanceOf[Anon_Fail]
+  }
+}
+

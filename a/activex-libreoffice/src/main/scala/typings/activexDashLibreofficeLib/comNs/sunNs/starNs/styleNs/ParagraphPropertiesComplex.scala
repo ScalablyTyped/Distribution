@@ -11,3 +11,12 @@ trait ParagraphPropertiesComplex extends js.Object {
   var WritingMode: scala.Double
 }
 
+object ParagraphPropertiesComplex {
+  @scala.inline
+  def apply(WritingMode: scala.Double): ParagraphPropertiesComplex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("WritingMode")(WritingMode)
+    __obj.asInstanceOf[ParagraphPropertiesComplex]
+  }
+}
+

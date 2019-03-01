@@ -20,3 +20,14 @@ trait Mode extends js.Object {
   var owner: js.UndefOr[Access] = js.undefined
 }
 
+object Mode {
+  @scala.inline
+  def apply(group: Access = null, others: Access = null, owner: Access = null): Mode = {
+    val __obj = js.Dynamic.literal()
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (others != null) __obj.updateDynamic("others")(others)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[Mode]
+  }
+}
+

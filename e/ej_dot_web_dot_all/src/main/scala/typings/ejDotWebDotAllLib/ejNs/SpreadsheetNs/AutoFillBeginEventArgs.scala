@@ -32,3 +32,28 @@ trait AutoFillBeginEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AutoFillBeginEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    dataRange: js.Array[_] = null,
+    direction: java.lang.String = null,
+    fillRange: js.Array[_] = null,
+    fillType: java.lang.String = null,
+    model: Model = null,
+    sheetIdx: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): AutoFillBeginEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (dataRange != null) __obj.updateDynamic("dataRange")(dataRange)
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (fillRange != null) __obj.updateDynamic("fillRange")(fillRange)
+    if (fillType != null) __obj.updateDynamic("fillType")(fillType)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AutoFillBeginEventArgs]
+  }
+}
+

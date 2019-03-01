@@ -10,3 +10,13 @@ trait SpreadsheetSheetFilterColumnCriteriaItem extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SpreadsheetSheetFilterColumnCriteriaItem {
+  @scala.inline
+  def apply(operator: java.lang.String = null, value: java.lang.String = null): SpreadsheetSheetFilterColumnCriteriaItem = {
+    val __obj = js.Dynamic.literal()
+    if (operator != null) __obj.updateDynamic("operator")(operator)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[SpreadsheetSheetFilterColumnCriteriaItem]
+  }
+}
+

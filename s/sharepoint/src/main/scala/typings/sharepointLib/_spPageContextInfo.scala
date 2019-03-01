@@ -164,3 +164,176 @@ trait _spPageContextInfo extends js.Object {
   var webUIVersion: scala.Double
 }
 
+object _spPageContextInfo {
+  @scala.inline
+  def apply(
+    CorrelationId: java.lang.String,
+    PreviewFeaturesEnabled: scala.Boolean,
+    ProfileUrl: java.lang.String,
+    PublishingFeatureOn: scala.Boolean,
+    RecycleBinItemCount: scala.Double,
+    alertsEnabled: scala.Boolean,
+    allowSilverlightPrompt: java.lang.String,
+    blockDownloadsExperienceEnabled: scala.Boolean,
+    canUserCreateMicrosoftForm: scala.Boolean,
+    cdnPrefix: java.lang.String,
+    clientServerTimeDelta: scala.Double,
+    crossDomainPhotosEnabled: scala.Boolean,
+    currentCultureName: java.lang.String,
+    currentLanguage: scala.Double,
+    currentUICultureName: java.lang.String,
+    disableAppViews: scala.Boolean,
+    disableFlows: scala.Boolean,
+    env: java.lang.String,
+    farmLabel: java.lang.String,
+    formDigestTimeoutSeconds: scala.Double,
+    formDigestValue: java.lang.String,
+    groupColor: java.lang.String,
+    groupHasHomepage: scala.Boolean,
+    groupId: java.lang.String,
+    guestsEnabled: scala.Boolean,
+    hasManageWebPermissions: scala.Boolean,
+    isAnonymousGuestUser: scala.Boolean,
+    isAppWeb: scala.Boolean,
+    isExternalGuestUser: scala.Boolean,
+    isNoScriptEnabled: scala.Boolean,
+    isSPO: scala.Boolean,
+    isSiteAdmin: scala.Boolean,
+    isTenantDevSite: scala.Boolean,
+    isWebWelcomePage: scala.Boolean,
+    layoutsUrl: java.lang.String,
+    listBaseTemplate: scala.Double,
+    listId: java.lang.String,
+    listPermsMask: Anon_High,
+    listTitle: java.lang.String,
+    listUrl: java.lang.String,
+    maximumFileSize: scala.Double,
+    openInClient: scala.Boolean,
+    pageItemId: scala.Double,
+    pageListId: java.lang.String,
+    pagePermsMask: Anon_High,
+    pagePersonalizationScope: java.lang.String,
+    preferUserTimeZone: scala.Boolean,
+    serverRedirectedUrl: java.lang.String,
+    serverRequestPath: java.lang.String,
+    serverTime: java.lang.String,
+    siteAbsoluteUrl: java.lang.String,
+    siteClassification: java.lang.String,
+    siteClientTag: java.lang.String,
+    siteColor: java.lang.String,
+    siteId: java.lang.String,
+    sitePagesEnabled: scala.Boolean,
+    siteServerRelativeUrl: java.lang.String,
+    siteSubscriptionId: java.lang.String,
+    supportPercentStorePath: scala.Boolean,
+    supportPoundStorePath: scala.Boolean,
+    systemUserKey: java.lang.String,
+    tenantAppVersion: java.lang.String,
+    themeCacheToken: java.lang.String,
+    themedCssFolderUrl: java.lang.String,
+    themedImageFileNames: java.lang.String,
+    updateFormDigestPageLoaded: java.lang.String,
+    userDisplayName: java.lang.String,
+    userEmail: java.lang.String,
+    userId: scala.Double,
+    userLoginName: java.lang.String,
+    viewId: java.lang.String,
+    viewOnlyExperienceEnabled: scala.Boolean,
+    webAbsoluteUrl: java.lang.String,
+    webDescription: java.lang.String,
+    webId: java.lang.String,
+    webLanguage: scala.Double,
+    webLogoUrl: java.lang.String,
+    webPermMasks: Anon_High,
+    webServerRelativeUrl: java.lang.String,
+    webTemplate: java.lang.String,
+    webTitle: java.lang.String,
+    webUIVersion: scala.Double
+  ): _spPageContextInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CorrelationId")(CorrelationId)
+    __obj.updateDynamic("PreviewFeaturesEnabled")(PreviewFeaturesEnabled)
+    __obj.updateDynamic("ProfileUrl")(ProfileUrl)
+    __obj.updateDynamic("PublishingFeatureOn")(PublishingFeatureOn)
+    __obj.updateDynamic("RecycleBinItemCount")(RecycleBinItemCount)
+    __obj.updateDynamic("alertsEnabled")(alertsEnabled)
+    __obj.updateDynamic("allowSilverlightPrompt")(allowSilverlightPrompt)
+    __obj.updateDynamic("blockDownloadsExperienceEnabled")(blockDownloadsExperienceEnabled)
+    __obj.updateDynamic("canUserCreateMicrosoftForm")(canUserCreateMicrosoftForm)
+    __obj.updateDynamic("cdnPrefix")(cdnPrefix)
+    __obj.updateDynamic("clientServerTimeDelta")(clientServerTimeDelta)
+    __obj.updateDynamic("crossDomainPhotosEnabled")(crossDomainPhotosEnabled)
+    __obj.updateDynamic("currentCultureName")(currentCultureName)
+    __obj.updateDynamic("currentLanguage")(currentLanguage)
+    __obj.updateDynamic("currentUICultureName")(currentUICultureName)
+    __obj.updateDynamic("disableAppViews")(disableAppViews)
+    __obj.updateDynamic("disableFlows")(disableFlows)
+    __obj.updateDynamic("env")(env)
+    __obj.updateDynamic("farmLabel")(farmLabel)
+    __obj.updateDynamic("formDigestTimeoutSeconds")(formDigestTimeoutSeconds)
+    __obj.updateDynamic("formDigestValue")(formDigestValue)
+    __obj.updateDynamic("groupColor")(groupColor)
+    __obj.updateDynamic("groupHasHomepage")(groupHasHomepage)
+    __obj.updateDynamic("groupId")(groupId)
+    __obj.updateDynamic("guestsEnabled")(guestsEnabled)
+    __obj.updateDynamic("hasManageWebPermissions")(hasManageWebPermissions)
+    __obj.updateDynamic("isAnonymousGuestUser")(isAnonymousGuestUser)
+    __obj.updateDynamic("isAppWeb")(isAppWeb)
+    __obj.updateDynamic("isExternalGuestUser")(isExternalGuestUser)
+    __obj.updateDynamic("isNoScriptEnabled")(isNoScriptEnabled)
+    __obj.updateDynamic("isSPO")(isSPO)
+    __obj.updateDynamic("isSiteAdmin")(isSiteAdmin)
+    __obj.updateDynamic("isTenantDevSite")(isTenantDevSite)
+    __obj.updateDynamic("isWebWelcomePage")(isWebWelcomePage)
+    __obj.updateDynamic("layoutsUrl")(layoutsUrl)
+    __obj.updateDynamic("listBaseTemplate")(listBaseTemplate)
+    __obj.updateDynamic("listId")(listId)
+    __obj.updateDynamic("listPermsMask")(listPermsMask)
+    __obj.updateDynamic("listTitle")(listTitle)
+    __obj.updateDynamic("listUrl")(listUrl)
+    __obj.updateDynamic("maximumFileSize")(maximumFileSize)
+    __obj.updateDynamic("openInClient")(openInClient)
+    __obj.updateDynamic("pageItemId")(pageItemId)
+    __obj.updateDynamic("pageListId")(pageListId)
+    __obj.updateDynamic("pagePermsMask")(pagePermsMask)
+    __obj.updateDynamic("pagePersonalizationScope")(pagePersonalizationScope)
+    __obj.updateDynamic("preferUserTimeZone")(preferUserTimeZone)
+    __obj.updateDynamic("serverRedirectedUrl")(serverRedirectedUrl)
+    __obj.updateDynamic("serverRequestPath")(serverRequestPath)
+    __obj.updateDynamic("serverTime")(serverTime)
+    __obj.updateDynamic("siteAbsoluteUrl")(siteAbsoluteUrl)
+    __obj.updateDynamic("siteClassification")(siteClassification)
+    __obj.updateDynamic("siteClientTag")(siteClientTag)
+    __obj.updateDynamic("siteColor")(siteColor)
+    __obj.updateDynamic("siteId")(siteId)
+    __obj.updateDynamic("sitePagesEnabled")(sitePagesEnabled)
+    __obj.updateDynamic("siteServerRelativeUrl")(siteServerRelativeUrl)
+    __obj.updateDynamic("siteSubscriptionId")(siteSubscriptionId)
+    __obj.updateDynamic("supportPercentStorePath")(supportPercentStorePath)
+    __obj.updateDynamic("supportPoundStorePath")(supportPoundStorePath)
+    __obj.updateDynamic("systemUserKey")(systemUserKey)
+    __obj.updateDynamic("tenantAppVersion")(tenantAppVersion)
+    __obj.updateDynamic("themeCacheToken")(themeCacheToken)
+    __obj.updateDynamic("themedCssFolderUrl")(themedCssFolderUrl)
+    __obj.updateDynamic("themedImageFileNames")(themedImageFileNames)
+    __obj.updateDynamic("updateFormDigestPageLoaded")(updateFormDigestPageLoaded)
+    __obj.updateDynamic("userDisplayName")(userDisplayName)
+    __obj.updateDynamic("userEmail")(userEmail)
+    __obj.updateDynamic("userId")(userId)
+    __obj.updateDynamic("userLoginName")(userLoginName)
+    __obj.updateDynamic("viewId")(viewId)
+    __obj.updateDynamic("viewOnlyExperienceEnabled")(viewOnlyExperienceEnabled)
+    __obj.updateDynamic("webAbsoluteUrl")(webAbsoluteUrl)
+    __obj.updateDynamic("webDescription")(webDescription)
+    __obj.updateDynamic("webId")(webId)
+    __obj.updateDynamic("webLanguage")(webLanguage)
+    __obj.updateDynamic("webLogoUrl")(webLogoUrl)
+    __obj.updateDynamic("webPermMasks")(webPermMasks)
+    __obj.updateDynamic("webServerRelativeUrl")(webServerRelativeUrl)
+    __obj.updateDynamic("webTemplate")(webTemplate)
+    __obj.updateDynamic("webTitle")(webTitle)
+    __obj.updateDynamic("webUIVersion")(webUIVersion)
+    __obj.asInstanceOf[_spPageContextInfo]
+  }
+}
+

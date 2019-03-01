@@ -11,3 +11,14 @@ trait Anon_DurationMillis extends js.Object {
   var width: scala.Double
 }
 
+object Anon_DurationMillis {
+  @scala.inline
+  def apply(durationMillis: scala.Double, height: scala.Double, width: scala.Double): Anon_DurationMillis = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("durationMillis")(durationMillis)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Anon_DurationMillis]
+  }
+}
+

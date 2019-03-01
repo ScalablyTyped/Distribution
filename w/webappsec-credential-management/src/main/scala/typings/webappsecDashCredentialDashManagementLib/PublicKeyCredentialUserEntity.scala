@@ -14,3 +14,14 @@ trait PublicKeyCredentialUserEntity extends js.Object {
   var name: java.lang.String
 }
 
+object PublicKeyCredentialUserEntity {
+  @scala.inline
+  def apply(displayName: java.lang.String, id: stdLib.BufferSource, name: java.lang.String): PublicKeyCredentialUserEntity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[PublicKeyCredentialUserEntity]
+  }
+}
+

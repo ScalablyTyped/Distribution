@@ -27,3 +27,22 @@ trait TooltipSettings extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TooltipSettings {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String = null,
+    font: TooltipSettingsFont = null,
+    labelFormat: java.lang.String = null,
+    tooltipDisplayMode: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): TooltipSettings = {
+    val __obj = js.Dynamic.literal()
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (labelFormat != null) __obj.updateDynamic("labelFormat")(labelFormat)
+    if (tooltipDisplayMode != null) __obj.updateDynamic("tooltipDisplayMode")(tooltipDisplayMode)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[TooltipSettings]
+  }
+}
+

@@ -25,3 +25,20 @@ trait ITileSourceOptions extends js.Object {
   var uriConstructor: java.lang.String | (js.Function1[/* tile */ PyramidTileId, java.lang.String])
 }
 
+object ITileSourceOptions {
+  @scala.inline
+  def apply(
+    uriConstructor: java.lang.String | (js.Function1[/* tile */ PyramidTileId, java.lang.String]),
+    bounds: LocationRect = null,
+    maxZoom: scala.Int | scala.Double = null,
+    minZoom: scala.Int | scala.Double = null
+  ): ITileSourceOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("uriConstructor")(uriConstructor.asInstanceOf[js.Any])
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITileSourceOptions]
+  }
+}
+

@@ -22,3 +22,26 @@ trait ManagedProperty extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ManagedProperty {
+  @scala.inline
+  def apply(
+    defaultValue: js.Any = null,
+    description: java.lang.String = null,
+    entries: js.Array[ManagedPropertyEntry] = null,
+    key: java.lang.String = null,
+    nestedProperties: js.Array[ManagedProperty] = null,
+    title: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ManagedProperty = {
+    val __obj = js.Dynamic.literal()
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (entries != null) __obj.updateDynamic("entries")(entries)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (nestedProperties != null) __obj.updateDynamic("nestedProperties")(nestedProperties)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ManagedProperty]
+  }
+}
+

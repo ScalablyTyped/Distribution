@@ -31,3 +31,20 @@ trait ASPxClientWebDocumentViewerDocumentOperationResponse extends js.Object {
   var succeeded: scala.Boolean
 }
 
+object ASPxClientWebDocumentViewerDocumentOperationResponse {
+  @scala.inline
+  def apply(
+    customData: java.lang.String,
+    documentId: java.lang.String,
+    message: java.lang.String,
+    succeeded: scala.Boolean
+  ): ASPxClientWebDocumentViewerDocumentOperationResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customData")(customData)
+    __obj.updateDynamic("documentId")(documentId)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("succeeded")(succeeded)
+    __obj.asInstanceOf[ASPxClientWebDocumentViewerDocumentOperationResponse]
+  }
+}
+

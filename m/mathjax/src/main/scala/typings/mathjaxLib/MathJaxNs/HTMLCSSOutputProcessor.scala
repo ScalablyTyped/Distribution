@@ -96,3 +96,44 @@ trait HTMLCSSOutputProcessor extends js.Object {
   var webFont: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HTMLCSSOutputProcessor {
+  @scala.inline
+  def apply(
+    EqnChunk: scala.Int | scala.Double = null,
+    EqnChunkDelay: scala.Int | scala.Double = null,
+    EqnChunkFactor: scala.Int | scala.Double = null,
+    availableFonts: js.Array[java.lang.String] = null,
+    imageFont: java.lang.String = null,
+    linebreaks: LineBreaks = null,
+    matchFontHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    minScaleAdjust: scala.Int | scala.Double = null,
+    mtextFontInherit: js.UndefOr[scala.Boolean] = js.undefined,
+    preferredFont: java.lang.String = null,
+    scale: scala.Int | scala.Double = null,
+    showMathMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    styles: js.Any = null,
+    tooltip: ToolTip = null,
+    undefinedFamily: js.Array[java.lang.String] = null,
+    webFont: java.lang.String = null
+  ): HTMLCSSOutputProcessor = {
+    val __obj = js.Dynamic.literal()
+    if (EqnChunk != null) __obj.updateDynamic("EqnChunk")(EqnChunk.asInstanceOf[js.Any])
+    if (EqnChunkDelay != null) __obj.updateDynamic("EqnChunkDelay")(EqnChunkDelay.asInstanceOf[js.Any])
+    if (EqnChunkFactor != null) __obj.updateDynamic("EqnChunkFactor")(EqnChunkFactor.asInstanceOf[js.Any])
+    if (availableFonts != null) __obj.updateDynamic("availableFonts")(availableFonts)
+    if (imageFont != null) __obj.updateDynamic("imageFont")(imageFont)
+    if (linebreaks != null) __obj.updateDynamic("linebreaks")(linebreaks)
+    if (!js.isUndefined(matchFontHeight)) __obj.updateDynamic("matchFontHeight")(matchFontHeight)
+    if (minScaleAdjust != null) __obj.updateDynamic("minScaleAdjust")(minScaleAdjust.asInstanceOf[js.Any])
+    if (!js.isUndefined(mtextFontInherit)) __obj.updateDynamic("mtextFontInherit")(mtextFontInherit)
+    if (preferredFont != null) __obj.updateDynamic("preferredFont")(preferredFont)
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    if (!js.isUndefined(showMathMenu)) __obj.updateDynamic("showMathMenu")(showMathMenu)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (undefinedFamily != null) __obj.updateDynamic("undefinedFamily")(undefinedFamily)
+    if (webFont != null) __obj.updateDynamic("webFont")(webFont)
+    __obj.asInstanceOf[HTMLCSSOutputProcessor]
+  }
+}
+

@@ -13,3 +13,18 @@ trait GroupAvatarProps extends js.Object {
   ] = js.undefined
 }
 
+object GroupAvatarProps {
+  @scala.inline
+  def apply(
+    collaborators: js.Array[gestaltLib.Anon_Name],
+    outline: js.UndefOr[scala.Boolean] = js.undefined,
+    size: gestaltLib.gestaltLibStrings.sm | gestaltLib.gestaltLibStrings.md | gestaltLib.gestaltLibStrings.lg = null
+  ): GroupAvatarProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("collaborators")(collaborators)
+    if (!js.isUndefined(outline)) __obj.updateDynamic("outline")(outline)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupAvatarProps]
+  }
+}
+

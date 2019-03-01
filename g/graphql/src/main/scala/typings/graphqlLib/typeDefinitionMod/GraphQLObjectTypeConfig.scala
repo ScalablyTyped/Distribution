@@ -19,3 +19,26 @@ trait GraphQLObjectTypeConfig[TSource, TContext, TArgs] extends js.Object {
   var name: java.lang.String
 }
 
+object GraphQLObjectTypeConfig {
+  @scala.inline
+  def apply[TSource, TContext, TArgs](
+    fields: Thunk[GraphQLFieldConfigMap[TSource, TContext, TArgs]],
+    name: java.lang.String,
+    astNode: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.ObjectTypeDefinitionNode] = null,
+    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null,
+    extensionASTNodes: graphqlLib.tsutilsMaybeMod.Maybe[js.Array[graphqlLib.languageAstMod.ObjectTypeExtensionNode]] = null,
+    interfaces: Thunk[graphqlLib.tsutilsMaybeMod.Maybe[js.Array[GraphQLInterfaceType]]] = null,
+    isTypeOf: graphqlLib.tsutilsMaybeMod.Maybe[GraphQLIsTypeOfFn[TSource, TContext]] = null
+  ): GraphQLObjectTypeConfig[TSource, TContext, TArgs] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fields")(fields.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (extensionASTNodes != null) __obj.updateDynamic("extensionASTNodes")(extensionASTNodes.asInstanceOf[js.Any])
+    if (interfaces != null) __obj.updateDynamic("interfaces")(interfaces.asInstanceOf[js.Any])
+    if (isTypeOf != null) __obj.updateDynamic("isTypeOf")(isTypeOf.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GraphQLObjectTypeConfig[TSource, TContext, TArgs]]
+  }
+}
+

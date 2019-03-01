@@ -11,3 +11,16 @@ trait cssClasses
   var ROOT: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`mdc-icon-toggle`
 }
 
+object cssClasses {
+  @scala.inline
+  def apply(
+    DISABLED: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`mdc-icon-toggle--disabled`,
+    ROOT: atMaterialIconDashToggleLib.atMaterialIconDashToggleLibStrings.`mdc-icon-toggle`
+  ): cssClasses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DISABLED")(DISABLED)
+    __obj.updateDynamic("ROOT")(ROOT)
+    __obj.asInstanceOf[cssClasses]
+  }
+}
+

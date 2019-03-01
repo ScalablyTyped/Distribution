@@ -32,3 +32,28 @@ trait ActionSheetOptions
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActionSheetOptions {
+  @scala.inline
+  def apply(
+    items: js.Array[java.lang.String],
+    badges: js.Array[stdLib.Partial[Badge]] = null,
+    cancelButtonText: java.lang.String = null,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    destructiveBtnIndex: scala.Int | scala.Double = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[/* res */ aliDashAppLib.Anon_Index, scala.Unit] = null,
+    title: java.lang.String = null
+  ): ActionSheetOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    if (badges != null) __obj.updateDynamic("badges")(badges)
+    if (cancelButtonText != null) __obj.updateDynamic("cancelButtonText")(cancelButtonText)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (destructiveBtnIndex != null) __obj.updateDynamic("destructiveBtnIndex")(destructiveBtnIndex.asInstanceOf[js.Any])
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ActionSheetOptions]
+  }
+}
+

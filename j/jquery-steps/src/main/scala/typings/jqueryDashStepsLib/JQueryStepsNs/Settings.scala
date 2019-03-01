@@ -142,3 +142,74 @@ trait Settings extends js.Object {
   var transitionEffectSpeed: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    actionContainerTag: java.lang.String = null,
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    bodyTag: java.lang.String = null,
+    contentContainerTag: java.lang.String = null,
+    cssClass: java.lang.String = null,
+    enableAllSteps: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCancelButton: js.UndefOr[scala.Boolean] = js.undefined,
+    enableContentCache: js.UndefOr[scala.Boolean] = js.undefined,
+    enableFinishButton: js.UndefOr[scala.Boolean] = js.undefined,
+    enableKeyNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePagination: js.UndefOr[scala.Boolean] = js.undefined,
+    forceMoveForward: js.UndefOr[scala.Boolean] = js.undefined,
+    headerTag: java.lang.String = null,
+    labels: LabelSettings = null,
+    loadingTemplate: java.lang.String = null,
+    onCanceled: FunctionOnCancelled = null,
+    onContentLoaded: FunctionOnContentLoaded = null,
+    onFinished: FunctionOnFinished = null,
+    onFinishing: FunctionOnFinishing = null,
+    onInit: FunctionOnInit = null,
+    onStepChanged: FunctionOnStepChanged = null,
+    onStepChanging: FunctionOnStepChanging = null,
+    saveState: js.UndefOr[scala.Boolean] = js.undefined,
+    showFinishButtonAlways: js.UndefOr[scala.Boolean] = js.undefined,
+    startIndex: scala.Int | scala.Double = null,
+    stepsContainerTag: java.lang.String = null,
+    stepsOrientation: java.lang.String | scala.Double = null,
+    suppressPaginationOnFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    titleTemplate: java.lang.String = null,
+    transitionEffect: java.lang.String | scala.Double = null,
+    transitionEffectSpeed: scala.Int | scala.Double = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (actionContainerTag != null) __obj.updateDynamic("actionContainerTag")(actionContainerTag)
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (bodyTag != null) __obj.updateDynamic("bodyTag")(bodyTag)
+    if (contentContainerTag != null) __obj.updateDynamic("contentContainerTag")(contentContainerTag)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (!js.isUndefined(enableAllSteps)) __obj.updateDynamic("enableAllSteps")(enableAllSteps)
+    if (!js.isUndefined(enableCancelButton)) __obj.updateDynamic("enableCancelButton")(enableCancelButton)
+    if (!js.isUndefined(enableContentCache)) __obj.updateDynamic("enableContentCache")(enableContentCache)
+    if (!js.isUndefined(enableFinishButton)) __obj.updateDynamic("enableFinishButton")(enableFinishButton)
+    if (!js.isUndefined(enableKeyNavigation)) __obj.updateDynamic("enableKeyNavigation")(enableKeyNavigation)
+    if (!js.isUndefined(enablePagination)) __obj.updateDynamic("enablePagination")(enablePagination)
+    if (!js.isUndefined(forceMoveForward)) __obj.updateDynamic("forceMoveForward")(forceMoveForward)
+    if (headerTag != null) __obj.updateDynamic("headerTag")(headerTag)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (loadingTemplate != null) __obj.updateDynamic("loadingTemplate")(loadingTemplate)
+    if (onCanceled != null) __obj.updateDynamic("onCanceled")(onCanceled)
+    if (onContentLoaded != null) __obj.updateDynamic("onContentLoaded")(onContentLoaded)
+    if (onFinished != null) __obj.updateDynamic("onFinished")(onFinished)
+    if (onFinishing != null) __obj.updateDynamic("onFinishing")(onFinishing)
+    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    if (onStepChanged != null) __obj.updateDynamic("onStepChanged")(onStepChanged)
+    if (onStepChanging != null) __obj.updateDynamic("onStepChanging")(onStepChanging)
+    if (!js.isUndefined(saveState)) __obj.updateDynamic("saveState")(saveState)
+    if (!js.isUndefined(showFinishButtonAlways)) __obj.updateDynamic("showFinishButtonAlways")(showFinishButtonAlways)
+    if (startIndex != null) __obj.updateDynamic("startIndex")(startIndex.asInstanceOf[js.Any])
+    if (stepsContainerTag != null) __obj.updateDynamic("stepsContainerTag")(stepsContainerTag)
+    if (stepsOrientation != null) __obj.updateDynamic("stepsOrientation")(stepsOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressPaginationOnFocus)) __obj.updateDynamic("suppressPaginationOnFocus")(suppressPaginationOnFocus)
+    if (titleTemplate != null) __obj.updateDynamic("titleTemplate")(titleTemplate)
+    if (transitionEffect != null) __obj.updateDynamic("transitionEffect")(transitionEffect.asInstanceOf[js.Any])
+    if (transitionEffectSpeed != null) __obj.updateDynamic("transitionEffectSpeed")(transitionEffectSpeed.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Settings]
+  }
+}
+

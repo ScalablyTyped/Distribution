@@ -51,3 +51,44 @@ trait StructureMapGroup extends BackboneElement {
   var typeMode: code
 }
 
+object StructureMapGroup {
+  @scala.inline
+  def apply(
+    input: js.Array[StructureMapGroupInput],
+    name: id,
+    rule: js.Array[StructureMapGroupRule],
+    typeMode: code,
+    _documentation: Element = null,
+    _extends: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _id: Element = null,
+    _name: Element = null,
+    _typeMode: Element = null,
+    documentation: java.lang.String = null,
+    `extends`: id = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null
+  ): StructureMapGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("rule")(rule)
+    __obj.updateDynamic("typeMode")(typeMode)
+    if (_documentation != null) __obj.updateDynamic("_documentation")(_documentation)
+    if (_extends != null) __obj.updateDynamic("_extends")(_extends)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_name != null) __obj.updateDynamic("_name")(_name)
+    if (_typeMode != null) __obj.updateDynamic("_typeMode")(_typeMode)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (`extends` != null) __obj.updateDynamic("extends")(`extends`)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    __obj.asInstanceOf[StructureMapGroup]
+  }
+}
+

@@ -15,3 +15,20 @@ trait IBankAccountTokenCreationOptions extends ITokenCreationOptionsBase {
   var bank_account: stripeLib.stripeMod.StripeNs.bankAccountsNs.ISourceCreationOptions
 }
 
+object IBankAccountTokenCreationOptions {
+  @scala.inline
+  def apply(
+    bank_account: stripeLib.stripeMod.StripeNs.bankAccountsNs.ISourceCreationOptions,
+    customer: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null
+  ): IBankAccountTokenCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bank_account")(bank_account)
+    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    __obj.asInstanceOf[IBankAccountTokenCreationOptions]
+  }
+}
+

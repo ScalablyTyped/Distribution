@@ -11,3 +11,14 @@ trait ICallbackObj extends js.Object {
   var success: scala.Boolean
 }
 
+object ICallbackObj {
+  @scala.inline
+  def apply(id: java.lang.String, success: scala.Boolean, ref: stdLib.HTMLElement = null): ICallbackObj = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("success")(success)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    __obj.asInstanceOf[ICallbackObj]
+  }
+}
+

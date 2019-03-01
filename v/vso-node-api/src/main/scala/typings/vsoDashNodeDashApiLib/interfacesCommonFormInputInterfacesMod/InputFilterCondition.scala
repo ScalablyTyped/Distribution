@@ -24,3 +24,20 @@ trait InputFilterCondition extends js.Object {
   var operator: InputFilterOperator
 }
 
+object InputFilterCondition {
+  @scala.inline
+  def apply(
+    caseSensitive: scala.Boolean,
+    inputId: java.lang.String,
+    inputValue: java.lang.String,
+    operator: InputFilterOperator
+  ): InputFilterCondition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("caseSensitive")(caseSensitive)
+    __obj.updateDynamic("inputId")(inputId)
+    __obj.updateDynamic("inputValue")(inputValue)
+    __obj.updateDynamic("operator")(operator)
+    __obj.asInstanceOf[InputFilterCondition]
+  }
+}
+

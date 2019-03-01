@@ -44,3 +44,34 @@ trait Metadata extends js.Object {
   val version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Metadata {
+  @scala.inline
+  def apply(
+    author: AuthorMetadata = null,
+    build: appDashBuilderDashLibLib.outConfigurationMod.Configuration = null,
+    dependencies: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    description: java.lang.String = null,
+    homepage: java.lang.String = null,
+    license: java.lang.String = null,
+    main: java.lang.String = null,
+    name: java.lang.String = null,
+    productName: java.lang.String = null,
+    repository: java.lang.String | RepositoryInfo = null,
+    version: java.lang.String = null
+  ): Metadata = {
+    val __obj = js.Dynamic.literal()
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (build != null) __obj.updateDynamic("build")(build)
+    if (dependencies != null) __obj.updateDynamic("dependencies")(dependencies)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (homepage != null) __obj.updateDynamic("homepage")(homepage)
+    if (license != null) __obj.updateDynamic("license")(license)
+    if (main != null) __obj.updateDynamic("main")(main)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (productName != null) __obj.updateDynamic("productName")(productName)
+    if (repository != null) __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Metadata]
+  }
+}
+

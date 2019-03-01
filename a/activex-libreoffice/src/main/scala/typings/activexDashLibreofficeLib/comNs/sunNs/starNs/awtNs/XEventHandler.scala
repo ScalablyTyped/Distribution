@@ -16,3 +16,20 @@ trait XEventHandler
   def handleEvent(event: js.Any): scala.Boolean
 }
 
+object XEventHandler {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    handleEvent: js.Function1[js.Any, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XEventHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("handleEvent")(handleEvent)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XEventHandler]
+  }
+}
+

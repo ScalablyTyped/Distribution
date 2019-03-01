@@ -21,3 +21,16 @@ trait AnimationOptions extends js.Object {
   var params: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object AnimationOptions {
+  @scala.inline
+  def apply(
+    delay: scala.Double | java.lang.String = null,
+    params: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): AnimationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[AnimationOptions]
+  }
+}
+

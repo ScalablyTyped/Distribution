@@ -18,3 +18,13 @@ trait CalendarMessages extends js.Object {
   var moveForward: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CalendarMessages {
+  @scala.inline
+  def apply(moveBack: java.lang.String = null, moveForward: java.lang.String = null): CalendarMessages = {
+    val __obj = js.Dynamic.literal()
+    if (moveBack != null) __obj.updateDynamic("moveBack")(moveBack)
+    if (moveForward != null) __obj.updateDynamic("moveForward")(moveForward)
+    __obj.asInstanceOf[CalendarMessages]
+  }
+}
+

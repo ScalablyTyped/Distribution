@@ -22,3 +22,20 @@ trait Verb extends js.Object {
   var VerbName: java.lang.String
 }
 
+object Verb {
+  @scala.inline
+  def apply(
+    VerbId: scala.Double,
+    VerbIsConst: scala.Boolean,
+    VerbIsOnMenu: scala.Boolean,
+    VerbName: java.lang.String
+  ): Verb = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("VerbId")(VerbId)
+    __obj.updateDynamic("VerbIsConst")(VerbIsConst)
+    __obj.updateDynamic("VerbIsOnMenu")(VerbIsOnMenu)
+    __obj.updateDynamic("VerbName")(VerbName)
+    __obj.asInstanceOf[Verb]
+  }
+}
+

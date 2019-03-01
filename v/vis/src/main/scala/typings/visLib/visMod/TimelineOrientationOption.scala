@@ -10,3 +10,13 @@ trait TimelineOrientationOption extends js.Object {
   var item: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimelineOrientationOption {
+  @scala.inline
+  def apply(axis: java.lang.String = null, item: java.lang.String = null): TimelineOrientationOption = {
+    val __obj = js.Dynamic.literal()
+    if (axis != null) __obj.updateDynamic("axis")(axis)
+    if (item != null) __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[TimelineOrientationOption]
+  }
+}
+

@@ -16,3 +16,13 @@ trait GetPrefixListArgs extends js.Object {
   val prefixListId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetPrefixListArgs {
+  @scala.inline
+  def apply(name: java.lang.String = null, prefixListId: java.lang.String = null): GetPrefixListArgs = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (prefixListId != null) __obj.updateDynamic("prefixListId")(prefixListId)
+    __obj.asInstanceOf[GetPrefixListArgs]
+  }
+}
+

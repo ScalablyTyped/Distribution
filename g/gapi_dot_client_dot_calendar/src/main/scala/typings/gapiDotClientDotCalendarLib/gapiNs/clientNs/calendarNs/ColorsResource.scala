@@ -10,3 +10,17 @@ trait ColorsResource extends js.Object {
   def get(request: gapiDotClientDotCalendarLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Colors]
 }
 
+object ColorsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotCalendarLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Colors]
+    ]
+  ): ColorsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[ColorsResource]
+  }
+}
+

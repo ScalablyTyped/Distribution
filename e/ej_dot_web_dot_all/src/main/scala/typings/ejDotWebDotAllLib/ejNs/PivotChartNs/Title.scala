@@ -11,3 +11,12 @@ trait Title extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Title {
+  @scala.inline
+  def apply(text: java.lang.String = null): Title = {
+    val __obj = js.Dynamic.literal()
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Title]
+  }
+}
+

@@ -13,5 +13,4 @@ package object MailNs {
     /* callback */ js.Function1[/* err */ js.UndefOr[nodeLib.Error | scala.Null], scala.Unit], 
     scala.Unit
   ]
-  type TextEncoding = nodemailerLib.nodemailerLibStrings.`quoted-printable` | nodemailerLib.nodemailerLibStrings.base64
 }

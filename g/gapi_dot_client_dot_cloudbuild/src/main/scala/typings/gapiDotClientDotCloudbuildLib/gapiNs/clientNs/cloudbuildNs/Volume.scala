@@ -22,3 +22,13 @@ trait Volume extends js.Object {
   var path: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Volume {
+  @scala.inline
+  def apply(name: java.lang.String = null, path: java.lang.String = null): Volume = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (path != null) __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Volume]
+  }
+}
+

@@ -43,3 +43,66 @@ trait IShadow extends IBase {
   var show: js.UndefOr[js.Function1[/* targetEl */ js.UndefOr[js.Any], scala.Unit]] = js.undefined
 }
 
+object IShadow {
+  @scala.inline
+  def apply(
+    alias: Array = null,
+    alternateClassName: js.Any = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    extend: java.lang.String = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    hide: js.Function0[scala.Unit] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IShadow] = null,
+    isVisible: js.Function0[scala.Unit] = null,
+    mixins: js.Any = null,
+    mode: java.lang.String = null,
+    offset: scala.Int | scala.Double = null,
+    realign: js.Function4[
+      /* left */ js.UndefOr[scala.Double], 
+      /* top */ js.UndefOr[scala.Double], 
+      /* width */ js.UndefOr[scala.Double], 
+      /* height */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    requires: Array = null,
+    self: IClass = null,
+    setOpacity: js.Function1[/* opacity */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setZIndex: js.Function1[/* zindex */ js.UndefOr[scala.Double], scala.Unit] = null,
+    show: js.Function1[/* targetEl */ js.UndefOr[js.Any], scala.Unit] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    uses: Array = null
+  ): IShadow = {
+    val __obj = js.Dynamic.literal()
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (isVisible != null) __obj.updateDynamic("isVisible")(isVisible)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (realign != null) __obj.updateDynamic("realign")(realign)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (setOpacity != null) __obj.updateDynamic("setOpacity")(setOpacity)
+    if (setZIndex != null) __obj.updateDynamic("setZIndex")(setZIndex)
+    if (show != null) __obj.updateDynamic("show")(show)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IShadow]
+  }
+}
+

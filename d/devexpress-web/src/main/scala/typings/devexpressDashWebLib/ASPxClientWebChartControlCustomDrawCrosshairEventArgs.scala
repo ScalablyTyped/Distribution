@@ -41,3 +41,26 @@ trait ASPxClientWebChartControlCustomDrawCrosshairEventArgs extends ASPxClientPr
   var cursorCrosshairLineElement: ASPxClientCrosshairLineElement
 }
 
+object ASPxClientWebChartControlCustomDrawCrosshairEventArgs {
+  @scala.inline
+  def apply(
+    crosshairElementGroups: js.Array[ASPxClientCrosshairElementGroup],
+    crosshairElements: js.Array[ASPxClientCrosshairElement],
+    crosshairGroupHeaderElements: js.Array[ASPxClientCrosshairGroupHeaderElement],
+    crosshairLegendElements: js.Array[ASPxClientCrosshairLegendElement],
+    cursorCrosshairAxisLabelElements: js.Array[ASPxClientCrosshairAxisLabelElement],
+    cursorCrosshairLineElement: ASPxClientCrosshairLineElement,
+    processOnServer: scala.Boolean
+  ): ASPxClientWebChartControlCustomDrawCrosshairEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("crosshairElementGroups")(crosshairElementGroups)
+    __obj.updateDynamic("crosshairElements")(crosshairElements)
+    __obj.updateDynamic("crosshairGroupHeaderElements")(crosshairGroupHeaderElements)
+    __obj.updateDynamic("crosshairLegendElements")(crosshairLegendElements)
+    __obj.updateDynamic("cursorCrosshairAxisLabelElements")(cursorCrosshairAxisLabelElements)
+    __obj.updateDynamic("cursorCrosshairLineElement")(cursorCrosshairLineElement)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[ASPxClientWebChartControlCustomDrawCrosshairEventArgs]
+  }
+}
+

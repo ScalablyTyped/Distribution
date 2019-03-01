@@ -10,3 +10,13 @@ trait BaseResult extends js.Object {
   var response_type: java.lang.String
 }
 
+object BaseResult {
+  @scala.inline
+  def apply(client: Client, response_type: java.lang.String): BaseResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("response_type")(response_type)
+    __obj.asInstanceOf[BaseResult]
+  }
+}
+

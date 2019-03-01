@@ -11,3 +11,18 @@ trait Anon_ItemPriority[T] extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ItemPriority {
+  @scala.inline
+  def apply[T](
+    item: T,
+    priority: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ItemPriority[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[Anon_ItemPriority[T]]
+  }
+}
+

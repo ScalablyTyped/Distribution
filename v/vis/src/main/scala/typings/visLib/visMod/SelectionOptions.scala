@@ -10,3 +10,16 @@ trait SelectionOptions extends js.Object {
   var unselectAll: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SelectionOptions {
+  @scala.inline
+  def apply(
+    highlightEdges: js.UndefOr[scala.Boolean] = js.undefined,
+    unselectAll: js.UndefOr[scala.Boolean] = js.undefined
+  ): SelectionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(highlightEdges)) __obj.updateDynamic("highlightEdges")(highlightEdges)
+    if (!js.isUndefined(unselectAll)) __obj.updateDynamic("unselectAll")(unselectAll)
+    __obj.asInstanceOf[SelectionOptions]
+  }
+}
+

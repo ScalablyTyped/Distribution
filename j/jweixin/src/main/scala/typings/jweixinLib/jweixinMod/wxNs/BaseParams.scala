@@ -13,3 +13,18 @@ trait BaseParams extends js.Object {
   var success: js.UndefOr[js.Function1[/* repeated */ js.Any, scala.Unit]] = js.undefined
 }
 
+object BaseParams {
+  @scala.inline
+  def apply(
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    success: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): BaseParams = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[BaseParams]
+  }
+}
+

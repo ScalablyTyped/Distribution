@@ -20,7 +20,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar
   */
-trait SeriesRadar extends js.Object {
+trait SeriesRadar extends Series {
   /**
     * Whether to enable animation.
     *
@@ -363,5 +363,68 @@ trait SeriesRadar extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-radar.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesRadar {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    areaStyle: echartsLib.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetYNumber = null,
+    data: js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesRadarNs.DataObject] = null,
+    emphasis: echartsLib.Anon_AreaStyle = null,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidthColor = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
+    lineStyle: echartsLib.Anon_ColorOpacityShadowBlurShadowColorShadowOffsetXShadowOffsetY = null,
+    name: java.lang.String = null,
+    radarIndex: scala.Int | scala.Double = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    symbol: java.lang.String = null,
+    symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolOffset: js.Array[_] = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | js.Function | scala.Double = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    `type`: java.lang.String = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesRadar = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (areaStyle != null) __obj.updateDynamic("areaStyle")(areaStyle)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (radarIndex != null) __obj.updateDynamic("radarIndex")(radarIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesRadar]
+  }
 }
 

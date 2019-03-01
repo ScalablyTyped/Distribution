@@ -12,3 +12,13 @@ trait Anon_Features extends js.Object {
   var outputFeature: js.UndefOr[Anon_Numeric] = js.undefined
 }
 
+object Anon_Features {
+  @scala.inline
+  def apply(features: js.Array[Anon_Categorical] = null, outputFeature: Anon_Numeric = null): Anon_Features = {
+    val __obj = js.Dynamic.literal()
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (outputFeature != null) __obj.updateDynamic("outputFeature")(outputFeature)
+    __obj.asInstanceOf[Anon_Features]
+  }
+}
+

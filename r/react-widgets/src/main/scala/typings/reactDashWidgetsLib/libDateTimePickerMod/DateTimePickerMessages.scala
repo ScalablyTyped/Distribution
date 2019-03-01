@@ -18,3 +18,13 @@ trait DateTimePickerMessages extends js.Object {
   var timeButton: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DateTimePickerMessages {
+  @scala.inline
+  def apply(dateButton: java.lang.String = null, timeButton: java.lang.String = null): DateTimePickerMessages = {
+    val __obj = js.Dynamic.literal()
+    if (dateButton != null) __obj.updateDynamic("dateButton")(dateButton)
+    if (timeButton != null) __obj.updateDynamic("timeButton")(timeButton)
+    __obj.asInstanceOf[DateTimePickerMessages]
+  }
+}
+

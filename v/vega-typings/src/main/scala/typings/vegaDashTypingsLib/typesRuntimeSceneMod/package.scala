@@ -11,6 +11,4 @@ package object typesRuntimeSceneMod {
   type SceneRect = SceneItem with vegaDashTypingsLib.Anon_FillHeight
   type SceneSymbol = SceneItem with vegaDashTypingsLib.Anon_FillShape
   type SceneText = SceneItem with vegaDashTypingsLib.Anon_Align
-  type SceneTextAlign = vegaDashTypingsLib.vegaDashTypingsLibStrings.left | vegaDashTypingsLib.vegaDashTypingsLibStrings.center | vegaDashTypingsLib.vegaDashTypingsLibStrings.right
-  type SceneTextBaseline = vegaDashTypingsLib.vegaDashTypingsLibStrings.top | vegaDashTypingsLib.vegaDashTypingsLibStrings.middle | vegaDashTypingsLib.vegaDashTypingsLibStrings.bottom
 }

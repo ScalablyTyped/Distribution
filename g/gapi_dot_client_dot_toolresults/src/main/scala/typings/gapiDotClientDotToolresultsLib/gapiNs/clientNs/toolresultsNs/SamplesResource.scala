@@ -25,3 +25,22 @@ trait SamplesResource extends js.Object {
   def list(request: gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKey): gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSamplesResponse]
 }
 
+object SamplesResource {
+  @scala.inline
+  def apply(
+    batchCreate: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[BatchCreatePerfSamplesResponse]
+    ],
+    list: js.Function1[
+      gapiDotClientDotToolresultsLib.Anon_AltExecutionIdFieldsHistoryIdKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListPerfSamplesResponse]
+    ]
+  ): SamplesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("batchCreate")(batchCreate)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[SamplesResource]
+  }
+}
+

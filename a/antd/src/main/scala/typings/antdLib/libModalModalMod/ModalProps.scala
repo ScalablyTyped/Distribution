@@ -65,3 +65,80 @@ trait ModalProps extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ModalProps {
+  @scala.inline
+  def apply(
+    afterClose: js.Function0[scala.Unit] = null,
+    bodyStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    cancelButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
+    cancelText: reactLib.reactMod.ReactNs.ReactNode = null,
+    centered: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    closable: js.UndefOr[scala.Boolean] = js.undefined,
+    confirmLoading: js.UndefOr[scala.Boolean] = js.undefined,
+    destroyOnClose: js.UndefOr[scala.Boolean] = js.undefined,
+    footer: reactLib.reactMod.ReactNs.ReactNode = null,
+    forceRender: js.UndefOr[scala.Boolean] = js.undefined,
+    getContainer: js.Function1[/* instance */ reactLib.reactMod.ReactNs.ReactInstance, reactLib.HTMLElement] = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    mask: js.UndefOr[scala.Boolean] = js.undefined,
+    maskClosable: js.UndefOr[scala.Boolean] = js.undefined,
+    maskStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    maskTransitionName: java.lang.String = null,
+    okButtonProps: antdLib.libButtonButtonMod.NativeButtonProps = null,
+    okText: reactLib.reactMod.ReactNs.ReactNode = null,
+    okType: antdLib.libButtonButtonMod.ButtonType = null,
+    onCancel: js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    onOk: js.Function1[
+      /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    prefixCls: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    title: reactLib.reactMod.ReactNs.ReactNode | java.lang.String = null,
+    transitionName: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String | scala.Double = null,
+    wrapClassName: java.lang.String = null,
+    wrapProps: js.Any = null,
+    zIndex: scala.Int | scala.Double = null
+  ): ModalProps = {
+    val __obj = js.Dynamic.literal()
+    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (bodyStyle != null) __obj.updateDynamic("bodyStyle")(bodyStyle)
+    if (cancelButtonProps != null) __obj.updateDynamic("cancelButtonProps")(cancelButtonProps)
+    if (cancelText != null) __obj.updateDynamic("cancelText")(cancelText.asInstanceOf[js.Any])
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
+    if (!js.isUndefined(confirmLoading)) __obj.updateDynamic("confirmLoading")(confirmLoading)
+    if (!js.isUndefined(destroyOnClose)) __obj.updateDynamic("destroyOnClose")(destroyOnClose)
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (!js.isUndefined(forceRender)) __obj.updateDynamic("forceRender")(forceRender)
+    if (getContainer != null) __obj.updateDynamic("getContainer")(getContainer)
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (!js.isUndefined(maskClosable)) __obj.updateDynamic("maskClosable")(maskClosable)
+    if (maskStyle != null) __obj.updateDynamic("maskStyle")(maskStyle)
+    if (maskTransitionName != null) __obj.updateDynamic("maskTransitionName")(maskTransitionName)
+    if (okButtonProps != null) __obj.updateDynamic("okButtonProps")(okButtonProps)
+    if (okText != null) __obj.updateDynamic("okText")(okText.asInstanceOf[js.Any])
+    if (okType != null) __obj.updateDynamic("okType")(okType)
+    if (onCancel != null) __obj.updateDynamic("onCancel")(onCancel)
+    if (onOk != null) __obj.updateDynamic("onOk")(onOk)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    if (transitionName != null) __obj.updateDynamic("transitionName")(transitionName)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (wrapClassName != null) __obj.updateDynamic("wrapClassName")(wrapClassName)
+    if (wrapProps != null) __obj.updateDynamic("wrapProps")(wrapProps)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ModalProps]
+  }
+}
+

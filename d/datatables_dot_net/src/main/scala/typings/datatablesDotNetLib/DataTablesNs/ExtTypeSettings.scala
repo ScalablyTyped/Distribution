@@ -32,3 +32,14 @@ trait ExtTypeSettings extends js.Object {
   var search: js.Object
 }
 
+object ExtTypeSettings {
+  @scala.inline
+  def apply(detect: js.Array[FunctionExtTypeSettingsDetect], order: js.Object, search: js.Object): ExtTypeSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("detect")(detect)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ExtTypeSettings]
+  }
+}
+

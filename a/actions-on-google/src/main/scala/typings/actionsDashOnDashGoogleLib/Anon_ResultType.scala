@@ -10,3 +10,12 @@ trait Anon_ResultType extends js.Object {
   var resultType: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType
 }
 
+object Anon_ResultType {
+  @scala.inline
+  def apply(resultType: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.ResultType): Anon_ResultType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resultType")(resultType)
+    __obj.asInstanceOf[Anon_ResultType]
+  }
+}
+

@@ -28,3 +28,22 @@ trait KeysAndAttributes extends js.Object {
   var ProjectionExpression: js.UndefOr[ProjectionExpression] = js.undefined
 }
 
+object KeysAndAttributes {
+  @scala.inline
+  def apply(
+    Keys: KeyList,
+    AttributesToGet: AttributeNameList = null,
+    ConsistentRead: js.UndefOr[ConsistentRead] = js.undefined,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ProjectionExpression: ProjectionExpression = null
+  ): KeysAndAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Keys")(Keys)
+    if (AttributesToGet != null) __obj.updateDynamic("AttributesToGet")(AttributesToGet)
+    if (!js.isUndefined(ConsistentRead)) __obj.updateDynamic("ConsistentRead")(ConsistentRead)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression)
+    __obj.asInstanceOf[KeysAndAttributes]
+  }
+}
+

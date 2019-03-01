@@ -78,3 +78,50 @@ trait ReleaseApproval extends js.Object {
   var url: java.lang.String
 }
 
+object ReleaseApproval {
+  @scala.inline
+  def apply(
+    approvalType: ApprovalType,
+    approvedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    approver: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    attempt: scala.Double,
+    comments: java.lang.String,
+    createdOn: stdLib.Date,
+    history: js.Array[ReleaseApprovalHistory],
+    id: scala.Double,
+    isAutomated: scala.Boolean,
+    isNotificationOn: scala.Boolean,
+    modifiedOn: stdLib.Date,
+    rank: scala.Double,
+    release: ReleaseShallowReference,
+    releaseDefinition: ReleaseDefinitionShallowReference,
+    releaseEnvironment: ReleaseEnvironmentShallowReference,
+    revision: scala.Double,
+    status: ApprovalStatus,
+    trialNumber: scala.Double,
+    url: java.lang.String
+  ): ReleaseApproval = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("approvalType")(approvalType)
+    __obj.updateDynamic("approvedBy")(approvedBy)
+    __obj.updateDynamic("approver")(approver)
+    __obj.updateDynamic("attempt")(attempt)
+    __obj.updateDynamic("comments")(comments)
+    __obj.updateDynamic("createdOn")(createdOn)
+    __obj.updateDynamic("history")(history)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("isAutomated")(isAutomated)
+    __obj.updateDynamic("isNotificationOn")(isNotificationOn)
+    __obj.updateDynamic("modifiedOn")(modifiedOn)
+    __obj.updateDynamic("rank")(rank)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("releaseDefinition")(releaseDefinition)
+    __obj.updateDynamic("releaseEnvironment")(releaseEnvironment)
+    __obj.updateDynamic("revision")(revision)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("trialNumber")(trialNumber)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ReleaseApproval]
+  }
+}
+

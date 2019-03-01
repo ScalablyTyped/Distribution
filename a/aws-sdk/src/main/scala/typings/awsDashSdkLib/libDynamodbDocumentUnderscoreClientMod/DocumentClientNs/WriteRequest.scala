@@ -16,3 +16,13 @@ trait WriteRequest extends js.Object {
   var PutRequest: js.UndefOr[PutRequest] = js.undefined
 }
 
+object WriteRequest {
+  @scala.inline
+  def apply(DeleteRequest: DeleteRequest = null, PutRequest: PutRequest = null): WriteRequest = {
+    val __obj = js.Dynamic.literal()
+    if (DeleteRequest != null) __obj.updateDynamic("DeleteRequest")(DeleteRequest)
+    if (PutRequest != null) __obj.updateDynamic("PutRequest")(PutRequest)
+    __obj.asInstanceOf[WriteRequest]
+  }
+}
+

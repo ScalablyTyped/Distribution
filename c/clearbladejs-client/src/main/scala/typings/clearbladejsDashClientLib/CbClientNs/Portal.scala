@@ -15,3 +15,26 @@ trait Portal extends js.Object {
   def update(data: js.Object, callback: CbCallback): scala.Unit
 }
 
+object Portal {
+  @scala.inline
+  def apply(
+    URI: java.lang.String,
+    fetch: js.Function1[CbCallback, scala.Unit],
+    name: java.lang.String,
+    systemKey: java.lang.String,
+    systemSecret: java.lang.String,
+    update: js.Function2[js.Object, CbCallback, scala.Unit],
+    user: APIUser
+  ): Portal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI)
+    __obj.updateDynamic("fetch")(fetch)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("systemKey")(systemKey)
+    __obj.updateDynamic("systemSecret")(systemSecret)
+    __obj.updateDynamic("update")(update)
+    __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[Portal]
+  }
+}
+

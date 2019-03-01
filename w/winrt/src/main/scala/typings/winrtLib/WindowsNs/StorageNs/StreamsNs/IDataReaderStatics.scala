@@ -9,3 +9,12 @@ trait IDataReaderStatics extends js.Object {
   def fromBuffer(buffer: IBuffer): DataReader
 }
 
+object IDataReaderStatics {
+  @scala.inline
+  def apply(fromBuffer: js.Function1[IBuffer, DataReader]): IDataReaderStatics = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromBuffer")(fromBuffer)
+    __obj.asInstanceOf[IDataReaderStatics]
+  }
+}
+

@@ -32,3 +32,13 @@ trait UpdateDatabaseDdlRequest extends js.Object {
   var statements: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object UpdateDatabaseDdlRequest {
+  @scala.inline
+  def apply(operationId: java.lang.String = null, statements: js.Array[java.lang.String] = null): UpdateDatabaseDdlRequest = {
+    val __obj = js.Dynamic.literal()
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (statements != null) __obj.updateDynamic("statements")(statements)
+    __obj.asInstanceOf[UpdateDatabaseDdlRequest]
+  }
+}
+

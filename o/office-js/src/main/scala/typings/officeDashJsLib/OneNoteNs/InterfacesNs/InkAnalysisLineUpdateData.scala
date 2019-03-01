@@ -16,3 +16,12 @@ trait InkAnalysisLineUpdateData extends js.Object {
   var paragraph: js.UndefOr[InkAnalysisParagraphUpdateData] = js.undefined
 }
 
+object InkAnalysisLineUpdateData {
+  @scala.inline
+  def apply(paragraph: InkAnalysisParagraphUpdateData = null): InkAnalysisLineUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    __obj.asInstanceOf[InkAnalysisLineUpdateData]
+  }
+}
+

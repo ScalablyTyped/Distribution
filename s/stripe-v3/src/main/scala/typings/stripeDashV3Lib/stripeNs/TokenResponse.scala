@@ -10,3 +10,13 @@ trait TokenResponse extends js.Object {
   var token: js.UndefOr[Token] = js.undefined
 }
 
+object TokenResponse {
+  @scala.inline
+  def apply(error: Error = null, token: Token = null): TokenResponse = {
+    val __obj = js.Dynamic.literal()
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (token != null) __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[TokenResponse]
+  }
+}
+

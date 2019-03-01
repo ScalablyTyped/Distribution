@@ -11,3 +11,18 @@ trait INavigationOptions extends js.Object {
   var title: js.UndefOr[java.lang.String | Callback] = js.undefined
 }
 
+object INavigationOptions {
+  @scala.inline
+  def apply(
+    directions: js.Function1[/* params */ js.Any, _] = null,
+    path: java.lang.String = null,
+    title: java.lang.String | Callback = null
+  ): INavigationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (directions != null) __obj.updateDynamic("directions")(directions)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[INavigationOptions]
+  }
+}
+

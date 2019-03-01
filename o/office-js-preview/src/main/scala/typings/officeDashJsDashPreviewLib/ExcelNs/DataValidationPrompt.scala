@@ -35,3 +35,14 @@ trait DataValidationPrompt extends js.Object {
   var title: java.lang.String
 }
 
+object DataValidationPrompt {
+  @scala.inline
+  def apply(message: java.lang.String, showPrompt: scala.Boolean, title: java.lang.String): DataValidationPrompt = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("showPrompt")(showPrompt)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[DataValidationPrompt]
+  }
+}
+

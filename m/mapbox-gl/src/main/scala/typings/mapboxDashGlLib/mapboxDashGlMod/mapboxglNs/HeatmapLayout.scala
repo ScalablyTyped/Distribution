@@ -11,3 +11,14 @@ trait HeatmapLayout extends js.Object {
   ] = js.undefined
 }
 
+object HeatmapLayout {
+  @scala.inline
+  def apply(
+    visibility: mapboxDashGlLib.mapboxDashGlLibStrings.visible | mapboxDashGlLib.mapboxDashGlLibStrings.none = null
+  ): HeatmapLayout = {
+    val __obj = js.Dynamic.literal()
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HeatmapLayout]
+  }
+}
+

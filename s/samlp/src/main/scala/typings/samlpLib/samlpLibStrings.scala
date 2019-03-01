@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object samlpLibStrings {
   @js.native
-  sealed trait `rsa-sha1` extends js.Object
+  sealed trait `rsa-sha1`
+    extends samlpLib.samlpMod.SignatureAlgorithmType
   
   @js.native
-  sealed trait `rsa-sha256` extends js.Object
+  sealed trait `rsa-sha256`
+    extends samlpLib.samlpMod.SignatureAlgorithmType
   
   @js.native
-  sealed trait sha1 extends js.Object
+  sealed trait sha1
+    extends samlpLib.samlpMod.DigestAlgorithmType
   
   @js.native
-  sealed trait sha256 extends js.Object
+  sealed trait sha256
+    extends samlpLib.samlpMod.DigestAlgorithmType
   
   @scala.inline
   def `rsa-sha1`: `rsa-sha1` = "rsa-sha1".asInstanceOf[`rsa-sha1`]

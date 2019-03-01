@@ -15,3 +15,18 @@ trait GraphicFilterRequest
   var ErrCode: scala.Double
 }
 
+object GraphicFilterRequest {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrCode: scala.Double,
+    Message: java.lang.String
+  ): GraphicFilterRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("ErrCode")(ErrCode)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[GraphicFilterRequest]
+  }
+}
+

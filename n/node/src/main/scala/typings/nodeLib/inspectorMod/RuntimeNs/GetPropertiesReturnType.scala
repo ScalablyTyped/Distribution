@@ -20,3 +20,18 @@ trait GetPropertiesReturnType extends js.Object {
   var result: js.Array[PropertyDescriptor]
 }
 
+object GetPropertiesReturnType {
+  @scala.inline
+  def apply(
+    result: js.Array[PropertyDescriptor],
+    exceptionDetails: ExceptionDetails = null,
+    internalProperties: js.Array[InternalPropertyDescriptor] = null
+  ): GetPropertiesReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("result")(result)
+    if (exceptionDetails != null) __obj.updateDynamic("exceptionDetails")(exceptionDetails)
+    if (internalProperties != null) __obj.updateDynamic("internalProperties")(internalProperties)
+    __obj.asInstanceOf[GetPropertiesReturnType]
+  }
+}
+

@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait R3ConstructorFactoryMetadata extends js.Object {
+trait R3ConstructorFactoryMetadata extends R3FactoryMetadata {
   /**
     * Regardless of whether `fnOrClass` is a constructor function or a user-defined factory, it
     * may have 0 or more parameters, which will be injected according to the `R3DependencyMetadata`
@@ -30,5 +30,21 @@ trait R3ConstructorFactoryMetadata extends js.Object {
     * `useNew` property determines whether it will be called as a constructor or not.
     */
   var `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression
+}
+
+object R3ConstructorFactoryMetadata {
+  @scala.inline
+  def apply(
+    injectFn: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.ExternalReference,
+    name: java.lang.String,
+    `type`: atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Expression,
+    deps: js.Array[R3DependencyMetadata] = null
+  ): R3ConstructorFactoryMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("injectFn")(injectFn)
+    __obj.updateDynamic("name")(name)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    __obj.asInstanceOf[R3ConstructorFactoryMetadata]
+  }
 }
 

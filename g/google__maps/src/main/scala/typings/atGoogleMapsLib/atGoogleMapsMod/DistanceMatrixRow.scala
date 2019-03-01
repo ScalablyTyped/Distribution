@@ -9,3 +9,12 @@ trait DistanceMatrixRow extends js.Object {
   var elements: js.Array[DistanceMatrixRowElement]
 }
 
+object DistanceMatrixRow {
+  @scala.inline
+  def apply(elements: js.Array[DistanceMatrixRowElement]): DistanceMatrixRow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("elements")(elements)
+    __obj.asInstanceOf[DistanceMatrixRow]
+  }
+}
+

@@ -12,3 +12,20 @@ trait AxePlugin extends js.Object {
   def run(args: js.Any*): js.Any
 }
 
+object AxePlugin {
+  @scala.inline
+  def apply(
+    commands: js.Array[axeDashCoreLib.Anon_Args],
+    id: java.lang.String,
+    run: js.Function1[/* repeated */ js.Any, js.Any],
+    cleanup: js.Function1[/* callback */ js.Function, scala.Unit] = null
+  ): AxePlugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commands")(commands)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("run")(run)
+    if (cleanup != null) __obj.updateDynamic("cleanup")(cleanup)
+    __obj.asInstanceOf[AxePlugin]
+  }
+}
+

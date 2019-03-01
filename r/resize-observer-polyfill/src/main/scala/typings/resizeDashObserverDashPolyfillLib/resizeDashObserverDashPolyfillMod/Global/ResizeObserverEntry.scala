@@ -10,3 +10,16 @@ trait ResizeObserverEntry extends js.Object {
   val target: stdLib.Element
 }
 
+object ResizeObserverEntry {
+  @scala.inline
+  def apply(
+    contentRect: resizeDashObserverDashPolyfillLib.resizeDashObserverDashPolyfillMod.DOMRectReadOnly,
+    target: stdLib.Element
+  ): ResizeObserverEntry = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentRect")(contentRect)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ResizeObserverEntry]
+  }
+}
+

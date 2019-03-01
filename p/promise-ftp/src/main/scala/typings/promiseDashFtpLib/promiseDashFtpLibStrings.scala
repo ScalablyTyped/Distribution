@@ -10,7 +10,7 @@ object promiseDashFtpLibStrings {
   sealed trait `Bad sequence of commands` extends js.Object
   
   @js.native
-  sealed trait `Can't open data connection` extends js.Object
+  sealed trait `Can_quotet open data connection` extends js.Object
   
   @js.native
   sealed trait `Command not implemented` extends js.Object
@@ -60,7 +60,7 @@ object promiseDashFtpLibStrings {
   @scala.inline
   def `Bad sequence of commands`: `Bad sequence of commands` = "Bad sequence of commands".asInstanceOf[`Bad sequence of commands`]
   @scala.inline
-  def `Can't open data connection`: `Can't open data connection` = "Can't open data connection".asInstanceOf[`Can't open data connection`]
+  def `Can_quotet open data connection`: `Can_quotet open data connection` = "Can't open data connection".asInstanceOf[`Can_quotet open data connection`]
   @scala.inline
   def `Command not implemented`: `Command not implemented` = "Command not implemented".asInstanceOf[`Command not implemented`]
   @scala.inline

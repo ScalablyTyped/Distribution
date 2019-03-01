@@ -26,3 +26,20 @@ trait DecompressOptions extends js.Object {
   var strip: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DecompressOptions {
+  @scala.inline
+  def apply(
+    filter: js.Function1[/* file */ File, scala.Boolean] = null,
+    map: js.Function1[/* file */ File, File] = null,
+    plugins: js.Array[_] = null,
+    strip: scala.Int | scala.Double = null
+  ): DecompressOptions = {
+    val __obj = js.Dynamic.literal()
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (strip != null) __obj.updateDynamic("strip")(strip.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DecompressOptions]
+  }
+}
+

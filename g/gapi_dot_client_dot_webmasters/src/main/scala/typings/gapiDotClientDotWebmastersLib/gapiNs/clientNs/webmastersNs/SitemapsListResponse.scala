@@ -10,3 +10,12 @@ trait SitemapsListResponse extends js.Object {
   var sitemap: js.UndefOr[js.Array[WmxSitemap]] = js.undefined
 }
 
+object SitemapsListResponse {
+  @scala.inline
+  def apply(sitemap: js.Array[WmxSitemap] = null): SitemapsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (sitemap != null) __obj.updateDynamic("sitemap")(sitemap)
+    __obj.asInstanceOf[SitemapsListResponse]
+  }
+}
+

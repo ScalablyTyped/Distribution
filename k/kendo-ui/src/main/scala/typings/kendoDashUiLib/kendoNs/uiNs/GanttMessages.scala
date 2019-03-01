@@ -18,3 +18,32 @@ trait GanttMessages extends js.Object {
   var views: js.UndefOr[GanttMessagesViews] = js.undefined
 }
 
+object GanttMessages {
+  @scala.inline
+  def apply(
+    actions: GanttMessagesActions = null,
+    cancel: java.lang.String = null,
+    deleteDependencyConfirmation: java.lang.String = null,
+    deleteDependencyWindowTitle: java.lang.String = null,
+    deleteTaskConfirmation: java.lang.String = null,
+    deleteTaskWindowTitle: java.lang.String = null,
+    destroy: java.lang.String = null,
+    editor: GanttMessagesEditor = null,
+    save: java.lang.String = null,
+    views: GanttMessagesViews = null
+  ): GanttMessages = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (deleteDependencyConfirmation != null) __obj.updateDynamic("deleteDependencyConfirmation")(deleteDependencyConfirmation)
+    if (deleteDependencyWindowTitle != null) __obj.updateDynamic("deleteDependencyWindowTitle")(deleteDependencyWindowTitle)
+    if (deleteTaskConfirmation != null) __obj.updateDynamic("deleteTaskConfirmation")(deleteTaskConfirmation)
+    if (deleteTaskWindowTitle != null) __obj.updateDynamic("deleteTaskWindowTitle")(deleteTaskWindowTitle)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (editor != null) __obj.updateDynamic("editor")(editor)
+    if (save != null) __obj.updateDynamic("save")(save)
+    if (views != null) __obj.updateDynamic("views")(views)
+    __obj.asInstanceOf[GanttMessages]
+  }
+}
+

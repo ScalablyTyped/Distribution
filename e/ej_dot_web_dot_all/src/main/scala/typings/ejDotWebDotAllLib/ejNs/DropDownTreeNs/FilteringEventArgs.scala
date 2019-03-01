@@ -26,3 +26,24 @@ trait FilteringEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FilteringEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    items: js.Any = null,
+    model: js.Any = null,
+    searchString: java.lang.String = null,
+    selectedText: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): FilteringEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (searchString != null) __obj.updateDynamic("searchString")(searchString)
+    if (selectedText != null) __obj.updateDynamic("selectedText")(selectedText)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[FilteringEventArgs]
+  }
+}
+

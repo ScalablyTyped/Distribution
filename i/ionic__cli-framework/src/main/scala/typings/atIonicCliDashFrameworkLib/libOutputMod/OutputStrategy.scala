@@ -10,3 +10,16 @@ trait OutputStrategy extends js.Object {
   def createTaskChain(): atIonicCliDashFrameworkLib.libTasksMod.TaskChain
 }
 
+object OutputStrategy {
+  @scala.inline
+  def apply(
+    createTaskChain: js.Function0[atIonicCliDashFrameworkLib.libTasksMod.TaskChain],
+    stream: nodeLib.NodeJSNs.WritableStream
+  ): OutputStrategy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createTaskChain")(createTaskChain)
+    __obj.updateDynamic("stream")(stream)
+    __obj.asInstanceOf[OutputStrategy]
+  }
+}
+

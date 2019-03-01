@@ -33,3 +33,28 @@ trait IHandleProps
   var value: scala.Double
 }
 
+object IHandleProps {
+  @scala.inline
+  def apply(
+    value: scala.Double,
+    className: java.lang.String = null,
+    intentAfter: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    intentBefore: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    interactionKind: HandleInteractionKind = null,
+    onChange: js.Function1[/* newValue */ scala.Double, scala.Unit] = null,
+    onRelease: js.Function1[/* newValue */ scala.Double, scala.Unit] = null,
+    `type`: HandleType = null
+  ): IHandleProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("value")(value)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (intentAfter != null) __obj.updateDynamic("intentAfter")(intentAfter)
+    if (intentBefore != null) __obj.updateDynamic("intentBefore")(intentBefore)
+    if (interactionKind != null) __obj.updateDynamic("interactionKind")(interactionKind)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onRelease != null) __obj.updateDynamic("onRelease")(onRelease)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IHandleProps]
+  }
+}
+

@@ -36,3 +36,30 @@ trait IOrderCreationOptions
   var shipping: js.UndefOr[stripeLib.stripeMod.StripeNs.IShippingInformation] = js.undefined
 }
 
+object IOrderCreationOptions {
+  @scala.inline
+  def apply(
+    currency: java.lang.String,
+    coupon: java.lang.String = null,
+    customer: java.lang.String = null,
+    email: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    items: js.Array[IOrderItemCreationHash] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    shipping: stripeLib.stripeMod.StripeNs.IShippingInformation = null
+  ): IOrderCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currency")(currency)
+    if (coupon != null) __obj.updateDynamic("coupon")(coupon)
+    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    __obj.asInstanceOf[IOrderCreationOptions]
+  }
+}
+

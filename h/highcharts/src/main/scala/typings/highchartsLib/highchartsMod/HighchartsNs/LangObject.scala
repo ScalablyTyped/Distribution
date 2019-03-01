@@ -146,3 +146,58 @@ trait LangObject extends js.Object {
   var weekdays: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object LangObject {
+  @scala.inline
+  def apply(
+    contextButtonTitle: java.lang.String = null,
+    decimalPoint: java.lang.String = null,
+    downloadJPEG: java.lang.String = null,
+    downloadPDF: java.lang.String = null,
+    downloadPNG: java.lang.String = null,
+    downloadSVG: java.lang.String = null,
+    drillUpText: java.lang.String = null,
+    invalidDate: java.lang.String = null,
+    loading: java.lang.String = null,
+    months: js.Array[java.lang.String] = null,
+    noData: java.lang.String = null,
+    numericSymbolMagnitude: scala.Int | scala.Double = null,
+    numericSymbols: js.Array[java.lang.String] = null,
+    printChart: java.lang.String = null,
+    rangeSelectorFrom: java.lang.String = null,
+    rangeSelectorTo: java.lang.String = null,
+    rangeSelectorZoom: java.lang.String = null,
+    resetZoom: java.lang.String = null,
+    resetZoomTitle: java.lang.String = null,
+    shortMonths: js.Array[java.lang.String] = null,
+    shortWeekdays: js.Array[java.lang.String] = null,
+    thousandsSep: java.lang.String = null,
+    weekdays: js.Array[java.lang.String] = null
+  ): LangObject = {
+    val __obj = js.Dynamic.literal()
+    if (contextButtonTitle != null) __obj.updateDynamic("contextButtonTitle")(contextButtonTitle)
+    if (decimalPoint != null) __obj.updateDynamic("decimalPoint")(decimalPoint)
+    if (downloadJPEG != null) __obj.updateDynamic("downloadJPEG")(downloadJPEG)
+    if (downloadPDF != null) __obj.updateDynamic("downloadPDF")(downloadPDF)
+    if (downloadPNG != null) __obj.updateDynamic("downloadPNG")(downloadPNG)
+    if (downloadSVG != null) __obj.updateDynamic("downloadSVG")(downloadSVG)
+    if (drillUpText != null) __obj.updateDynamic("drillUpText")(drillUpText)
+    if (invalidDate != null) __obj.updateDynamic("invalidDate")(invalidDate)
+    if (loading != null) __obj.updateDynamic("loading")(loading)
+    if (months != null) __obj.updateDynamic("months")(months)
+    if (noData != null) __obj.updateDynamic("noData")(noData)
+    if (numericSymbolMagnitude != null) __obj.updateDynamic("numericSymbolMagnitude")(numericSymbolMagnitude.asInstanceOf[js.Any])
+    if (numericSymbols != null) __obj.updateDynamic("numericSymbols")(numericSymbols)
+    if (printChart != null) __obj.updateDynamic("printChart")(printChart)
+    if (rangeSelectorFrom != null) __obj.updateDynamic("rangeSelectorFrom")(rangeSelectorFrom)
+    if (rangeSelectorTo != null) __obj.updateDynamic("rangeSelectorTo")(rangeSelectorTo)
+    if (rangeSelectorZoom != null) __obj.updateDynamic("rangeSelectorZoom")(rangeSelectorZoom)
+    if (resetZoom != null) __obj.updateDynamic("resetZoom")(resetZoom)
+    if (resetZoomTitle != null) __obj.updateDynamic("resetZoomTitle")(resetZoomTitle)
+    if (shortMonths != null) __obj.updateDynamic("shortMonths")(shortMonths)
+    if (shortWeekdays != null) __obj.updateDynamic("shortWeekdays")(shortWeekdays)
+    if (thousandsSep != null) __obj.updateDynamic("thousandsSep")(thousandsSep)
+    if (weekdays != null) __obj.updateDynamic("weekdays")(weekdays)
+    __obj.asInstanceOf[LangObject]
+  }
+}
+

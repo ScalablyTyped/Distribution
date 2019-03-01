@@ -26,3 +26,20 @@ trait CertPattern extends js.Object {
   var IssuerSubjectPattern: js.UndefOr[IssuerSubjectPattern] = js.undefined
 }
 
+object CertPattern {
+  @scala.inline
+  def apply(
+    EnrollmentURI: js.Array[java.lang.String] = null,
+    Issuer: IssuerSubjectPattern = null,
+    IssuerCARef: js.Array[java.lang.String] = null,
+    IssuerSubjectPattern: IssuerSubjectPattern = null
+  ): CertPattern = {
+    val __obj = js.Dynamic.literal()
+    if (EnrollmentURI != null) __obj.updateDynamic("EnrollmentURI")(EnrollmentURI)
+    if (Issuer != null) __obj.updateDynamic("Issuer")(Issuer)
+    if (IssuerCARef != null) __obj.updateDynamic("IssuerCARef")(IssuerCARef)
+    if (IssuerSubjectPattern != null) __obj.updateDynamic("IssuerSubjectPattern")(IssuerSubjectPattern)
+    __obj.asInstanceOf[CertPattern]
+  }
+}
+

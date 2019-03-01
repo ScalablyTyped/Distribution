@@ -10,3 +10,16 @@ trait Anon_InputPaths extends js.Object {
   var inputTemplate: java.lang.String
 }
 
+object Anon_InputPaths {
+  @scala.inline
+  def apply(
+    inputTemplate: java.lang.String,
+    inputPaths: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_InputPaths = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inputTemplate")(inputTemplate)
+    if (inputPaths != null) __obj.updateDynamic("inputPaths")(inputPaths)
+    __obj.asInstanceOf[Anon_InputPaths]
+  }
+}
+

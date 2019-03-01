@@ -19,3 +19,26 @@ trait openShareOptions
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object openShareOptions {
+  @scala.inline
+  def apply(
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    content: java.lang.String = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    imageUrl: java.lang.String = null,
+    path: java.lang.String = null,
+    success: js.Function1[/* res */ baiduDashAppLib.Anon_AuthSetting, scala.Unit] = null,
+    title: java.lang.String = null
+  ): openShareOptions = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[openShareOptions]
+  }
+}
+

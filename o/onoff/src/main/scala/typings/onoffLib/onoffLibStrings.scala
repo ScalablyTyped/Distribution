@@ -7,28 +7,36 @@ import scala.scalajs.js.annotation._
 
 object onoffLibStrings {
   @js.native
-  sealed trait both extends js.Object
+  sealed trait both
+    extends onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Edge
   
   @js.native
-  sealed trait falling extends js.Object
+  sealed trait falling
+    extends onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Edge
   
   @js.native
-  sealed trait high extends js.Object
+  sealed trait high
+    extends onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Direction
   
   @js.native
-  sealed trait in extends js.Object
+  sealed trait in
+    extends onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Direction
   
   @js.native
-  sealed trait low extends js.Object
+  sealed trait low
+    extends onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Direction
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Edge
   
   @js.native
-  sealed trait out extends js.Object
+  sealed trait out
+    extends onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Direction
   
   @js.native
-  sealed trait rising extends js.Object
+  sealed trait rising
+    extends onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Edge
   
   @scala.inline
   def both: both = "both".asInstanceOf[both]

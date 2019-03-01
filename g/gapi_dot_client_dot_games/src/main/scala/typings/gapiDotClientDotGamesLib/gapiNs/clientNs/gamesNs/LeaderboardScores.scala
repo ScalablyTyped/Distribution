@@ -23,3 +23,24 @@ trait LeaderboardScores extends js.Object {
   var prevPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LeaderboardScores {
+  @scala.inline
+  def apply(
+    items: js.Array[LeaderboardEntry] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    numScores: java.lang.String = null,
+    playerScore: LeaderboardEntry = null,
+    prevPageToken: java.lang.String = null
+  ): LeaderboardScores = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (numScores != null) __obj.updateDynamic("numScores")(numScores)
+    if (playerScore != null) __obj.updateDynamic("playerScore")(playerScore)
+    if (prevPageToken != null) __obj.updateDynamic("prevPageToken")(prevPageToken)
+    __obj.asInstanceOf[LeaderboardScores]
+  }
+}
+

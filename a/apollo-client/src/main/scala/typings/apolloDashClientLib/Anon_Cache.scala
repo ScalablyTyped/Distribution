@@ -10,3 +10,16 @@ trait Anon_Cache[TCacheShape] extends js.Object {
   def getCacheKey(obj: Anon_Id): js.Any
 }
 
+object Anon_Cache {
+  @scala.inline
+  def apply[TCacheShape](
+    cache: apolloDashCacheLib.apolloDashCacheMod.ApolloCache[TCacheShape],
+    getCacheKey: js.Function1[Anon_Id, js.Any]
+  ): Anon_Cache[TCacheShape] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("getCacheKey")(getCacheKey)
+    __obj.asInstanceOf[Anon_Cache[TCacheShape]]
+  }
+}
+

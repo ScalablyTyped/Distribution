@@ -12,3 +12,13 @@ trait WmxSite extends js.Object {
   var siteUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WmxSite {
+  @scala.inline
+  def apply(permissionLevel: java.lang.String = null, siteUrl: java.lang.String = null): WmxSite = {
+    val __obj = js.Dynamic.literal()
+    if (permissionLevel != null) __obj.updateDynamic("permissionLevel")(permissionLevel)
+    if (siteUrl != null) __obj.updateDynamic("siteUrl")(siteUrl)
+    __obj.asInstanceOf[WmxSite]
+  }
+}
+

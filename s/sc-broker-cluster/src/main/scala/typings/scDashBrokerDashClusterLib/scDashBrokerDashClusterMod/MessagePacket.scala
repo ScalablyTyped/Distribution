@@ -10,3 +10,13 @@ trait MessagePacket extends js.Object {
   var data: js.Any
 }
 
+object MessagePacket {
+  @scala.inline
+  def apply(channel: java.lang.String, data: js.Any): MessagePacket = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[MessagePacket]
+  }
+}
+

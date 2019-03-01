@@ -7,34 +7,45 @@ import scala.scalajs.js.annotation._
 
 object hellojsLibStrings {
   @js.native
-  sealed trait code extends js.Object
+  sealed trait code
+    extends hellojsLib.hellojsMod.helloNs.HelloJSTokenResponseType
   
   @js.native
-  sealed trait `code id_token` extends js.Object
+  sealed trait `code id_token`
+    extends hellojsLib.hellojsMod.helloNs.HelloJSTokenResponseType
   
   @js.native
-  sealed trait `code id_token token` extends js.Object
+  sealed trait `code id_token token`
+    extends hellojsLib.hellojsMod.helloNs.HelloJSTokenResponseType
   
   @js.native
-  sealed trait `code token` extends js.Object
+  sealed trait `code token`
+    extends hellojsLib.hellojsMod.helloNs.HelloJSTokenResponseType
   
   @js.native
-  sealed trait id_token extends js.Object
+  sealed trait id_token
+    extends hellojsLib.hellojsMod.helloNs.HelloJSTokenResponseType
   
   @js.native
-  sealed trait `id_token token` extends js.Object
+  sealed trait `id_token token`
+    extends hellojsLib.hellojsMod.helloNs.HelloJSTokenResponseType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends hellojsLib.hellojsMod.helloNs.HelloJSDisplayType
+       with hellojsLib.hellojsMod.helloNs.HelloJSTokenResponseType
   
   @js.native
-  sealed trait page extends js.Object
+  sealed trait page
+    extends hellojsLib.hellojsMod.helloNs.HelloJSDisplayType
   
   @js.native
-  sealed trait popup extends js.Object
+  sealed trait popup
+    extends hellojsLib.hellojsMod.helloNs.HelloJSDisplayType
   
   @js.native
-  sealed trait token extends js.Object
+  sealed trait token
+    extends hellojsLib.hellojsMod.helloNs.HelloJSTokenResponseType
   
   @scala.inline
   def code: code = "code".asInstanceOf[code]

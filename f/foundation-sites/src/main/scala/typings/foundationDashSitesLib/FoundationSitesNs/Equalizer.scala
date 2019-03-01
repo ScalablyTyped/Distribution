@@ -14,3 +14,22 @@ trait Equalizer extends js.Object {
   def getHeightsByRow(cb: js.Function): js.Array[_]
 }
 
+object Equalizer {
+  @scala.inline
+  def apply(
+    applyHeight: js.Function1[js.Array[_], scala.Unit],
+    applyHeightByRow: js.Function1[js.Array[_], scala.Unit],
+    destroy: js.Function0[scala.Unit],
+    getHeights: js.Function1[js.Function, js.Array[_]],
+    getHeightsByRow: js.Function1[js.Function, js.Array[_]]
+  ): Equalizer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applyHeight")(applyHeight)
+    __obj.updateDynamic("applyHeightByRow")(applyHeightByRow)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getHeights")(getHeights)
+    __obj.updateDynamic("getHeightsByRow")(getHeightsByRow)
+    __obj.asInstanceOf[Equalizer]
+  }
+}
+

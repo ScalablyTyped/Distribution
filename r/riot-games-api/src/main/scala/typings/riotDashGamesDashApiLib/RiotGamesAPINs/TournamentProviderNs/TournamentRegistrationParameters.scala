@@ -10,3 +10,13 @@ trait TournamentRegistrationParameters extends js.Object {
   var providerId: scala.Double
 }
 
+object TournamentRegistrationParameters {
+  @scala.inline
+  def apply(name: java.lang.String, providerId: scala.Double): TournamentRegistrationParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("providerId")(providerId)
+    __obj.asInstanceOf[TournamentRegistrationParameters]
+  }
+}
+

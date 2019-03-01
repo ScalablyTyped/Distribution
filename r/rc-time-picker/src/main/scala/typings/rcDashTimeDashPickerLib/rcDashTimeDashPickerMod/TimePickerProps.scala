@@ -42,3 +42,80 @@ trait TimePickerProps extends js.Object {
   def onOpen(state: rcDashTimeDashPickerLib.Anon_Open): scala.Unit
 }
 
+object TimePickerProps {
+  @scala.inline
+  def apply(
+    addon: js.Function1[TimePicker, reactLib.reactMod.Global.JSXNs.Element],
+    allowEmpty: scala.Boolean,
+    className: java.lang.String,
+    clearIcon: reactLib.reactMod.ReactNs.ReactNode,
+    clearText: java.lang.String,
+    defaultOpenValue: momentLib.momentMod.momentNs.Moment,
+    defaultValue: momentLib.momentMod.momentNs.Moment,
+    disabled: scala.Boolean,
+    disabledHours: js.Function0[js.Array[scala.Double]],
+    disabledMinutes: js.Function1[scala.Double, js.Array[scala.Double]],
+    disabledSeconds: js.Function2[scala.Double, scala.Double, js.Array[scala.Double]],
+    focusOnOpen: scala.Boolean,
+    format: java.lang.String,
+    hideDisabledOptions: scala.Boolean,
+    hourStep: scala.Double,
+    id: java.lang.String,
+    inputIcon: reactLib.reactMod.ReactNs.ReactNode,
+    inputReadOnly: scala.Boolean,
+    minuteStep: scala.Double,
+    onChange: js.Function1[momentLib.momentMod.momentNs.Moment, scala.Unit],
+    onClose: js.Function1[rcDashTimeDashPickerLib.Anon_Open, scala.Unit],
+    onOpen: js.Function1[rcDashTimeDashPickerLib.Anon_Open, scala.Unit],
+    open: scala.Boolean,
+    placeholder: java.lang.String,
+    placement: java.lang.String,
+    popupClassName: java.lang.String,
+    prefixCls: java.lang.String,
+    secondStep: scala.Double,
+    showHour: scala.Boolean,
+    showMinute: scala.Boolean,
+    showSecond: scala.Boolean,
+    transitionName: java.lang.String,
+    use12Hours: scala.Boolean,
+    value: momentLib.momentMod.momentNs.Moment
+  ): TimePickerProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addon")(addon)
+    __obj.updateDynamic("allowEmpty")(allowEmpty)
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("clearIcon")(clearIcon.asInstanceOf[js.Any])
+    __obj.updateDynamic("clearText")(clearText)
+    __obj.updateDynamic("defaultOpenValue")(defaultOpenValue)
+    __obj.updateDynamic("defaultValue")(defaultValue)
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("disabledHours")(disabledHours)
+    __obj.updateDynamic("disabledMinutes")(disabledMinutes)
+    __obj.updateDynamic("disabledSeconds")(disabledSeconds)
+    __obj.updateDynamic("focusOnOpen")(focusOnOpen)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("hideDisabledOptions")(hideDisabledOptions)
+    __obj.updateDynamic("hourStep")(hourStep)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("inputIcon")(inputIcon.asInstanceOf[js.Any])
+    __obj.updateDynamic("inputReadOnly")(inputReadOnly)
+    __obj.updateDynamic("minuteStep")(minuteStep)
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("onClose")(onClose)
+    __obj.updateDynamic("onOpen")(onOpen)
+    __obj.updateDynamic("open")(open)
+    __obj.updateDynamic("placeholder")(placeholder)
+    __obj.updateDynamic("placement")(placement)
+    __obj.updateDynamic("popupClassName")(popupClassName)
+    __obj.updateDynamic("prefixCls")(prefixCls)
+    __obj.updateDynamic("secondStep")(secondStep)
+    __obj.updateDynamic("showHour")(showHour)
+    __obj.updateDynamic("showMinute")(showMinute)
+    __obj.updateDynamic("showSecond")(showSecond)
+    __obj.updateDynamic("transitionName")(transitionName)
+    __obj.updateDynamic("use12Hours")(use12Hours)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[TimePickerProps]
+  }
+}
+

@@ -41,3 +41,28 @@ trait XChartData
   def removeChartDataChangeEventListener(aListener: XChartDataChangeEventListener): scala.Unit
 }
 
+object XChartData {
+  @scala.inline
+  def apply(
+    NotANumber: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    addChartDataChangeEventListener: js.Function1[XChartDataChangeEventListener, scala.Unit],
+    getNotANumber: js.Function0[scala.Double],
+    isNotANumber: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChartDataChangeEventListener: js.Function1[XChartDataChangeEventListener, scala.Unit]
+  ): XChartData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NotANumber")(NotANumber)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addChartDataChangeEventListener")(addChartDataChangeEventListener)
+    __obj.updateDynamic("getNotANumber")(getNotANumber)
+    __obj.updateDynamic("isNotANumber")(isNotANumber)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeChartDataChangeEventListener")(removeChartDataChangeEventListener)
+    __obj.asInstanceOf[XChartData]
+  }
+}
+

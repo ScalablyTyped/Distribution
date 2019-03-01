@@ -35,3 +35,30 @@ trait RowDropActionBeginEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RowDropActionBeginEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    draggedRecords: js.Array[_] = null,
+    draggedRow: js.Any = null,
+    draggedRowIndex: scala.Int | scala.Double = null,
+    dropPosition: java.lang.String = null,
+    model: js.Any = null,
+    targetRow: js.Any = null,
+    targetRowIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): RowDropActionBeginEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (draggedRecords != null) __obj.updateDynamic("draggedRecords")(draggedRecords)
+    if (draggedRow != null) __obj.updateDynamic("draggedRow")(draggedRow)
+    if (draggedRowIndex != null) __obj.updateDynamic("draggedRowIndex")(draggedRowIndex.asInstanceOf[js.Any])
+    if (dropPosition != null) __obj.updateDynamic("dropPosition")(dropPosition)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (targetRow != null) __obj.updateDynamic("targetRow")(targetRow)
+    if (targetRowIndex != null) __obj.updateDynamic("targetRowIndex")(targetRowIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RowDropActionBeginEventArgs]
+  }
+}
+

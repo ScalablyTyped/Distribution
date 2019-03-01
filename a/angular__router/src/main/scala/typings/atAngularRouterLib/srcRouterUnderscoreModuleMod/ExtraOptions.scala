@@ -183,3 +183,43 @@ trait ExtraOptions extends js.Object {
   var useHash: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ExtraOptions {
+  @scala.inline
+  def apply(
+    anchorScrolling: atAngularRouterLib.atAngularRouterLibStrings.disabled | atAngularRouterLib.atAngularRouterLibStrings.enabled = null,
+    enableTracing: js.UndefOr[scala.Boolean] = js.undefined,
+    errorHandler: atAngularRouterLib.srcRouterMod.ErrorHandler = null,
+    initialNavigation: InitialNavigation = null,
+    malformedUriErrorHandler: js.Function3[
+      /* error */ stdLib.URIError, 
+      /* urlSerializer */ atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlSerializer, 
+      /* url */ java.lang.String, 
+      atAngularRouterLib.srcUrlUnderscoreTreeMod.UrlTree
+    ] = null,
+    onSameUrlNavigation: atAngularRouterLib.atAngularRouterLibStrings.reload | atAngularRouterLib.atAngularRouterLibStrings.ignore = null,
+    paramsInheritanceStrategy: atAngularRouterLib.atAngularRouterLibStrings.emptyOnly | atAngularRouterLib.atAngularRouterLibStrings.always = null,
+    preloadingStrategy: js.Any = null,
+    relativeLinkResolution: atAngularRouterLib.atAngularRouterLibStrings.legacy | atAngularRouterLib.atAngularRouterLibStrings.corrected = null,
+    scrollOffset: (js.Tuple2[scala.Double, scala.Double]) | (js.Function0[js.Tuple2[scala.Double, scala.Double]]) = null,
+    scrollPositionRestoration: atAngularRouterLib.atAngularRouterLibStrings.disabled | atAngularRouterLib.atAngularRouterLibStrings.enabled | atAngularRouterLib.atAngularRouterLibStrings.top = null,
+    urlUpdateStrategy: atAngularRouterLib.atAngularRouterLibStrings.deferred | atAngularRouterLib.atAngularRouterLibStrings.eager = null,
+    useHash: js.UndefOr[scala.Boolean] = js.undefined
+  ): ExtraOptions = {
+    val __obj = js.Dynamic.literal()
+    if (anchorScrolling != null) __obj.updateDynamic("anchorScrolling")(anchorScrolling.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableTracing)) __obj.updateDynamic("enableTracing")(enableTracing)
+    if (errorHandler != null) __obj.updateDynamic("errorHandler")(errorHandler)
+    if (initialNavigation != null) __obj.updateDynamic("initialNavigation")(initialNavigation)
+    if (malformedUriErrorHandler != null) __obj.updateDynamic("malformedUriErrorHandler")(malformedUriErrorHandler)
+    if (onSameUrlNavigation != null) __obj.updateDynamic("onSameUrlNavigation")(onSameUrlNavigation.asInstanceOf[js.Any])
+    if (paramsInheritanceStrategy != null) __obj.updateDynamic("paramsInheritanceStrategy")(paramsInheritanceStrategy.asInstanceOf[js.Any])
+    if (preloadingStrategy != null) __obj.updateDynamic("preloadingStrategy")(preloadingStrategy)
+    if (relativeLinkResolution != null) __obj.updateDynamic("relativeLinkResolution")(relativeLinkResolution.asInstanceOf[js.Any])
+    if (scrollOffset != null) __obj.updateDynamic("scrollOffset")(scrollOffset.asInstanceOf[js.Any])
+    if (scrollPositionRestoration != null) __obj.updateDynamic("scrollPositionRestoration")(scrollPositionRestoration.asInstanceOf[js.Any])
+    if (urlUpdateStrategy != null) __obj.updateDynamic("urlUpdateStrategy")(urlUpdateStrategy.asInstanceOf[js.Any])
+    if (!js.isUndefined(useHash)) __obj.updateDynamic("useHash")(useHash)
+    __obj.asInstanceOf[ExtraOptions]
+  }
+}
+

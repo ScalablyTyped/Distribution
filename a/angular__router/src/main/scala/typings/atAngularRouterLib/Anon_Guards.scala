@@ -10,3 +10,13 @@ trait Anon_Guards extends js.Object {
   var node: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot
 }
 
+object Anon_Guards {
+  @scala.inline
+  def apply(guards: js.Array[_], node: atAngularRouterLib.srcRouterUnderscoreStateMod.ActivatedRouteSnapshot): Anon_Guards = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("guards")(guards)
+    __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[Anon_Guards]
+  }
+}
+

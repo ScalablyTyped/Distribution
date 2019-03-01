@@ -10,3 +10,13 @@ trait Message
   var message: java.lang.String
 }
 
+object Message {
+  @scala.inline
+  def apply(annotationType: java.lang.String, message: java.lang.String): Message = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotationType")(annotationType)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Message]
+  }
+}
+

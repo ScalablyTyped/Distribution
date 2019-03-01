@@ -10,3 +10,13 @@ trait Anon_Scroll extends js.Object {
   var size: Anon_Height
 }
 
+object Anon_Scroll {
+  @scala.inline
+  def apply(scroll: Anon_Left, size: Anon_Height): Anon_Scroll = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scroll")(scroll)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Anon_Scroll]
+  }
+}
+

@@ -13,3 +13,22 @@ trait SpecificationOptions extends js.Object {
   var title: java.lang.String
 }
 
+object SpecificationOptions {
+  @scala.inline
+  def apply(
+    app: java.lang.String,
+    background: java.lang.String,
+    icon: java.lang.String,
+    iconSize: scala.Double,
+    title: java.lang.String
+  ): SpecificationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("app")(app)
+    __obj.updateDynamic("background")(background)
+    __obj.updateDynamic("icon")(icon)
+    __obj.updateDynamic("iconSize")(iconSize)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[SpecificationOptions]
+  }
+}
+

@@ -34,3 +34,40 @@ trait AlertProps extends js.Object {
   ] = js.undefined
 }
 
+object AlertProps {
+  @scala.inline
+  def apply(
+    message: reactLib.reactMod.ReactNs.ReactNode,
+    afterClose: js.Function0[scala.Unit] = null,
+    banner: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    closable: js.UndefOr[scala.Boolean] = js.undefined,
+    closeText: reactLib.reactMod.ReactNs.ReactNode = null,
+    description: reactLib.reactMod.ReactNs.ReactNode = null,
+    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    iconType: java.lang.String = null,
+    onClose: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.HTMLAnchorElement] = null,
+    prefixCls: java.lang.String = null,
+    showIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    `type`: antdLib.antdLibStrings.success | antdLib.antdLibStrings.info | antdLib.antdLibStrings.warning | antdLib.antdLibStrings.error = null
+  ): AlertProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (afterClose != null) __obj.updateDynamic("afterClose")(afterClose)
+    if (!js.isUndefined(banner)) __obj.updateDynamic("banner")(banner)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
+    if (closeText != null) __obj.updateDynamic("closeText")(closeText.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconType != null) __obj.updateDynamic("iconType")(iconType)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AlertProps]
+  }
+}
+

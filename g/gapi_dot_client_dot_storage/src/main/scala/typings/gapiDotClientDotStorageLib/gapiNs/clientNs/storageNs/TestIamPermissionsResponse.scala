@@ -29,3 +29,13 @@ trait TestIamPermissionsResponse extends js.Object {
   var permissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object TestIamPermissionsResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, permissions: js.Array[java.lang.String] = null): TestIamPermissionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[TestIamPermissionsResponse]
+  }
+}
+

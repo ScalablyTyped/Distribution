@@ -16,3 +16,28 @@ trait Bezier extends js.Object {
   def length(): scala.Double
 }
 
+object Bezier {
+  @scala.inline
+  def apply(
+    _point: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Double],
+    control1: CurveControl,
+    control2: CurveControl,
+    endPoint: Point,
+    endWidth: scala.Double,
+    length: js.Function0[scala.Double],
+    startPoint: Point,
+    startWidth: scala.Double
+  ): Bezier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_point")(_point)
+    __obj.updateDynamic("control1")(control1)
+    __obj.updateDynamic("control2")(control2)
+    __obj.updateDynamic("endPoint")(endPoint)
+    __obj.updateDynamic("endWidth")(endWidth)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("startPoint")(startPoint)
+    __obj.updateDynamic("startWidth")(startWidth)
+    __obj.asInstanceOf[Bezier]
+  }
+}
+

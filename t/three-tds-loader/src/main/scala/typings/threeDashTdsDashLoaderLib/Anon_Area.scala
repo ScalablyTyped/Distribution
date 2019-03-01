@@ -12,3 +12,24 @@ trait Anon_Area extends js.Object {
   def triangulateShape(contour: js.Array[threeLib.threeDashCoreMod.Vec2], holes: js.Array[threeLib.threeDashCoreMod.Vec2]): js.Array[js.Array[scala.Double]]
 }
 
+object Anon_Area {
+  @scala.inline
+  def apply(
+    area: js.Function1[js.Array[threeLib.threeDashCoreMod.Vec2], scala.Double],
+    isClockWise: js.Function1[js.Array[threeLib.threeDashCoreMod.Vec2], scala.Boolean],
+    triangulate: js.Function2[js.Array[threeLib.threeDashCoreMod.Vec2], scala.Boolean, js.Array[scala.Double]],
+    triangulateShape: js.Function2[
+      js.Array[threeLib.threeDashCoreMod.Vec2], 
+      js.Array[threeLib.threeDashCoreMod.Vec2], 
+      js.Array[js.Array[scala.Double]]
+    ]
+  ): Anon_Area = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("area")(area)
+    __obj.updateDynamic("isClockWise")(isClockWise)
+    __obj.updateDynamic("triangulate")(triangulate)
+    __obj.updateDynamic("triangulateShape")(triangulateShape)
+    __obj.asInstanceOf[Anon_Area]
+  }
+}
+

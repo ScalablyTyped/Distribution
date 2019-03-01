@@ -44,3 +44,30 @@ trait Anon_AmpmNames extends js.Object {
   def getSuffix(num: scala.Double): java.lang.String
 }
 
+object Anon_AmpmNames {
+  @scala.inline
+  def apply(
+    ampmNames: js.Array[java.lang.String],
+    attribute: java.lang.String,
+    dayNames: js.Array[java.lang.String],
+    dayNamesShort: js.Array[java.lang.String],
+    formatAttribute: java.lang.String,
+    getSuffix: js.Function1[scala.Double, java.lang.String],
+    monthNames: js.Array[java.lang.String],
+    monthNamesShort: js.Array[java.lang.String],
+    utc: scala.Boolean
+  ): Anon_AmpmNames = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ampmNames")(ampmNames)
+    __obj.updateDynamic("attribute")(attribute)
+    __obj.updateDynamic("dayNames")(dayNames)
+    __obj.updateDynamic("dayNamesShort")(dayNamesShort)
+    __obj.updateDynamic("formatAttribute")(formatAttribute)
+    __obj.updateDynamic("getSuffix")(getSuffix)
+    __obj.updateDynamic("monthNames")(monthNames)
+    __obj.updateDynamic("monthNamesShort")(monthNamesShort)
+    __obj.updateDynamic("utc")(utc)
+    __obj.asInstanceOf[Anon_AmpmNames]
+  }
+}
+

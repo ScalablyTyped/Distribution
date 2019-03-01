@@ -7,16 +7,20 @@ import scala.scalajs.js.annotation._
 
 object snowboyLibStrings {
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends snowboyLib.snowboyMod.State
   
   @js.native
-  sealed trait hotword extends js.Object
+  sealed trait hotword
+    extends snowboyLib.snowboyMod.State
   
   @js.native
-  sealed trait silence extends js.Object
+  sealed trait silence
+    extends snowboyLib.snowboyMod.State
   
   @js.native
-  sealed trait sound extends js.Object
+  sealed trait sound
+    extends snowboyLib.snowboyMod.State
   
   @scala.inline
   def error: error = "error".asInstanceOf[error]

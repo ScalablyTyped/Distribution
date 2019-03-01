@@ -10,3 +10,13 @@ trait ChartStemAndStyle extends js.Object {
   var style: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChartStemAndStyle {
+  @scala.inline
+  def apply(stem: ChartStem = null, style: java.lang.String = null): ChartStemAndStyle = {
+    val __obj = js.Dynamic.literal()
+    if (stem != null) __obj.updateDynamic("stem")(stem)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ChartStemAndStyle]
+  }
+}
+

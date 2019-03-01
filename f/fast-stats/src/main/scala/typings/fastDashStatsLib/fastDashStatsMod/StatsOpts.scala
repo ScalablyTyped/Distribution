@@ -39,3 +39,22 @@ trait StatsOpts extends js.Object {
   var store_data: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StatsOpts {
+  @scala.inline
+  def apply(
+    bucket_extension_interval: scala.Int | scala.Double = null,
+    bucket_precision: scala.Int | scala.Double = null,
+    buckets: js.Array[scala.Double] = null,
+    sampling: js.UndefOr[scala.Boolean] = js.undefined,
+    store_data: js.UndefOr[scala.Boolean] = js.undefined
+  ): StatsOpts = {
+    val __obj = js.Dynamic.literal()
+    if (bucket_extension_interval != null) __obj.updateDynamic("bucket_extension_interval")(bucket_extension_interval.asInstanceOf[js.Any])
+    if (bucket_precision != null) __obj.updateDynamic("bucket_precision")(bucket_precision.asInstanceOf[js.Any])
+    if (buckets != null) __obj.updateDynamic("buckets")(buckets)
+    if (!js.isUndefined(sampling)) __obj.updateDynamic("sampling")(sampling)
+    if (!js.isUndefined(store_data)) __obj.updateDynamic("store_data")(store_data)
+    __obj.asInstanceOf[StatsOpts]
+  }
+}
+

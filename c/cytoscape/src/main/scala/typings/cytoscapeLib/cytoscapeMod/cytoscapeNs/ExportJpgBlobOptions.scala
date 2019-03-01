@@ -13,3 +13,26 @@ import scala.scalajs.js.annotation._
   var output: js.UndefOr[cytoscapeLib.cytoscapeLibStrings.blob] = js.undefined
 }
 
+object ExportJpgBlobOptions {
+  @scala.inline
+  def apply(
+    bg: java.lang.String = null,
+    full: js.UndefOr[scala.Boolean] = js.undefined,
+    maxHeight: scala.Int | scala.Double = null,
+    maxWidth: scala.Int | scala.Double = null,
+    output: cytoscapeLib.cytoscapeLibStrings.blob = null,
+    quality: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null
+  ): ExportJpgBlobOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bg != null) __obj.updateDynamic("bg")(bg)
+    if (!js.isUndefined(full)) __obj.updateDynamic("full")(full)
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (output != null) __obj.updateDynamic("output")(output)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExportJpgBlobOptions]
+  }
+}
+

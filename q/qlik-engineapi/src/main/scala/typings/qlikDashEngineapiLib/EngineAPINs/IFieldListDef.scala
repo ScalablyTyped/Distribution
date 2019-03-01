@@ -39,3 +39,26 @@ trait IFieldListDef extends js.Object {
   var qShowSystem: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IFieldListDef {
+  @scala.inline
+  def apply(
+    qShowDefinitionOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    qShowDerivedFields: js.UndefOr[scala.Boolean] = js.undefined,
+    qShowHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    qShowImplicit: js.UndefOr[scala.Boolean] = js.undefined,
+    qShowSemantic: js.UndefOr[scala.Boolean] = js.undefined,
+    qShowSrcTables: js.UndefOr[scala.Boolean] = js.undefined,
+    qShowSystem: js.UndefOr[scala.Boolean] = js.undefined
+  ): IFieldListDef = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(qShowDefinitionOnly)) __obj.updateDynamic("qShowDefinitionOnly")(qShowDefinitionOnly)
+    if (!js.isUndefined(qShowDerivedFields)) __obj.updateDynamic("qShowDerivedFields")(qShowDerivedFields)
+    if (!js.isUndefined(qShowHidden)) __obj.updateDynamic("qShowHidden")(qShowHidden)
+    if (!js.isUndefined(qShowImplicit)) __obj.updateDynamic("qShowImplicit")(qShowImplicit)
+    if (!js.isUndefined(qShowSemantic)) __obj.updateDynamic("qShowSemantic")(qShowSemantic)
+    if (!js.isUndefined(qShowSrcTables)) __obj.updateDynamic("qShowSrcTables")(qShowSrcTables)
+    if (!js.isUndefined(qShowSystem)) __obj.updateDynamic("qShowSystem")(qShowSystem)
+    __obj.asInstanceOf[IFieldListDef]
+  }
+}
+

@@ -34,3 +34,20 @@ trait ReleaseQuotaResponse extends js.Object {
   var serviceConfigId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReleaseQuotaResponse {
+  @scala.inline
+  def apply(
+    operationId: java.lang.String = null,
+    quotaMetrics: js.Array[MetricValueSet] = null,
+    releaseErrors: js.Array[QuotaError] = null,
+    serviceConfigId: java.lang.String = null
+  ): ReleaseQuotaResponse = {
+    val __obj = js.Dynamic.literal()
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (quotaMetrics != null) __obj.updateDynamic("quotaMetrics")(quotaMetrics)
+    if (releaseErrors != null) __obj.updateDynamic("releaseErrors")(releaseErrors)
+    if (serviceConfigId != null) __obj.updateDynamic("serviceConfigId")(serviceConfigId)
+    __obj.asInstanceOf[ReleaseQuotaResponse]
+  }
+}
+

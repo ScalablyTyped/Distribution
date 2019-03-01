@@ -74,3 +74,26 @@ trait IAngularHelper extends js.Object {
   def safeApply(scope: angularLib.angularMod.angularNs.IScope, fn: angularLib.angularMod.Global.Function): scala.Unit
 }
 
+object IAngularHelper {
+  @scala.inline
+  def apply(
+    getCurrentForm: js.Function1[angularLib.angularMod.angularNs.IScope, js.Any],
+    getNullForm: js.Function1[java.lang.String, angularLib.angularMod.angularNs.IFormController],
+    getRequiredCurrentForm: js.Function1[angularLib.angularMod.angularNs.IScope, js.Object],
+    rejectedPromise: js.Function1[js.Object, scala.Unit],
+    safeApply: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      angularLib.angularMod.Global.Function, 
+      scala.Unit
+    ]
+  ): IAngularHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCurrentForm")(getCurrentForm)
+    __obj.updateDynamic("getNullForm")(getNullForm)
+    __obj.updateDynamic("getRequiredCurrentForm")(getRequiredCurrentForm)
+    __obj.updateDynamic("rejectedPromise")(rejectedPromise)
+    __obj.updateDynamic("safeApply")(safeApply)
+    __obj.asInstanceOf[IAngularHelper]
+  }
+}
+

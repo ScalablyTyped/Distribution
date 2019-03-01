@@ -12,3 +12,19 @@ trait FilterProperties extends js.Object {
   var `type`: java.lang.String
 }
 
+object FilterProperties {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    measure: MeasureObject = null,
+    members: js.Array[FilterItem] = null,
+    quantity: scala.Int | scala.Double = null
+  ): FilterProperties = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (measure != null) __obj.updateDynamic("measure")(measure)
+    if (members != null) __obj.updateDynamic("members")(members)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FilterProperties]
+  }
+}
+

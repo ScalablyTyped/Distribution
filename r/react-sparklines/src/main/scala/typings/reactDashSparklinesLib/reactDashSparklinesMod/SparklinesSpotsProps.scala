@@ -11,3 +11,18 @@ trait SparklinesSpotsProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object SparklinesSpotsProps {
+  @scala.inline
+  def apply(
+    size: scala.Int | scala.Double = null,
+    spotColors: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): SparklinesSpotsProps = {
+    val __obj = js.Dynamic.literal()
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (spotColors != null) __obj.updateDynamic("spotColors")(spotColors)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[SparklinesSpotsProps]
+  }
+}
+

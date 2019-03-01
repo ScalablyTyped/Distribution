@@ -21,3 +21,13 @@ trait ListDataItem extends js.Object {
   var template: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object ListDataItem {
+  @scala.inline
+  def apply(properties: js.Any = null, template: java.lang.String | scala.Double = null): ListDataItem = {
+    val __obj = js.Dynamic.literal()
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (template != null) __obj.updateDynamic("template")(template.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListDataItem]
+  }
+}
+

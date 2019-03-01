@@ -40,3 +40,28 @@ trait ReleaseDefinitionRevision extends js.Object {
   var revision: scala.Double
 }
 
+object ReleaseDefinitionRevision {
+  @scala.inline
+  def apply(
+    apiVersion: java.lang.String,
+    changeType: AuditAction,
+    changedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    changedDate: stdLib.Date,
+    comment: java.lang.String,
+    definitionId: scala.Double,
+    definitionUrl: java.lang.String,
+    revision: scala.Double
+  ): ReleaseDefinitionRevision = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("changeType")(changeType)
+    __obj.updateDynamic("changedBy")(changedBy)
+    __obj.updateDynamic("changedDate")(changedDate)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("definitionId")(definitionId)
+    __obj.updateDynamic("definitionUrl")(definitionUrl)
+    __obj.updateDynamic("revision")(revision)
+    __obj.asInstanceOf[ReleaseDefinitionRevision]
+  }
+}
+

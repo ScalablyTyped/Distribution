@@ -26,3 +26,28 @@ trait Worker extends js.Object {
   def url(): java.lang.String
 }
 
+object Worker {
+  @scala.inline
+  def apply(
+    evaluate: js.Function2[
+      js.Any, 
+      /* repeated */ SerializableOrJSHandle, 
+      js.Promise[EvaluateFnReturnType[js.Any]]
+    ],
+    evaluateHandle: js.Function2[
+      js.Function1[/* repeated */ js.Any, js.Any | js.Promise[js.Any]], 
+      /* repeated */ SerializableOrJSHandle, 
+      js.Promise[js.Any]
+    ],
+    executionContext: js.Function0[js.Promise[ExecutionContext]],
+    url: js.Function0[java.lang.String]
+  ): Worker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("evaluate")(evaluate)
+    __obj.updateDynamic("evaluateHandle")(evaluateHandle)
+    __obj.updateDynamic("executionContext")(executionContext)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Worker]
+  }
+}
+

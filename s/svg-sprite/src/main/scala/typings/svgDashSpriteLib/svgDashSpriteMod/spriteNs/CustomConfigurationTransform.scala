@@ -11,3 +11,14 @@ import scala.scalajs.js.annotation._
 trait CustomConfigurationTransform
   extends /* transformationName */ org.scalablytyped.runtime.StringDictionary[svgDashSpriteLib.Anon_Plugins]
 
+object CustomConfigurationTransform {
+  @scala.inline
+  def apply(
+    StringDictionary: /* transformationName */ org.scalablytyped.runtime.StringDictionary[svgDashSpriteLib.Anon_Plugins] = null
+  ): CustomConfigurationTransform = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[CustomConfigurationTransform]
+  }
+}
+

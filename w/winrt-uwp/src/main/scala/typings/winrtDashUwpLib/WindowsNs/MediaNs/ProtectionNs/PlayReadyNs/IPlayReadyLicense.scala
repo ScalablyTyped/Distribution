@@ -27,3 +27,26 @@ trait IPlayReadyLicense extends js.Object {
   def getKIDAtChainDepth(chainDepth: scala.Double): java.lang.String
 }
 
+object IPlayReadyLicense {
+  @scala.inline
+  def apply(
+    chainDepth: scala.Double,
+    domainAccountID: java.lang.String,
+    expirationDate: stdLib.Date,
+    expireAfterFirstPlay: scala.Double,
+    fullyEvaluated: scala.Boolean,
+    getKIDAtChainDepth: js.Function1[scala.Double, java.lang.String],
+    usableForPlay: scala.Boolean
+  ): IPlayReadyLicense = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chainDepth")(chainDepth)
+    __obj.updateDynamic("domainAccountID")(domainAccountID)
+    __obj.updateDynamic("expirationDate")(expirationDate)
+    __obj.updateDynamic("expireAfterFirstPlay")(expireAfterFirstPlay)
+    __obj.updateDynamic("fullyEvaluated")(fullyEvaluated)
+    __obj.updateDynamic("getKIDAtChainDepth")(getKIDAtChainDepth)
+    __obj.updateDynamic("usableForPlay")(usableForPlay)
+    __obj.asInstanceOf[IPlayReadyLicense]
+  }
+}
+

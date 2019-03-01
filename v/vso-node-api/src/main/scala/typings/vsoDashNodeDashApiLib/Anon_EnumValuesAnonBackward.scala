@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonBackward extends js.Object {
   var enumValues: Anon_Backward
 }
 
+object Anon_EnumValuesAnonBackward {
+  @scala.inline
+  def apply(enumValues: Anon_Backward): Anon_EnumValuesAnonBackward = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonBackward]
+  }
+}
+

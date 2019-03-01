@@ -13,3 +13,22 @@ trait Score extends js.Object {
   var skipped: scala.Double
 }
 
+object Score {
+  @scala.inline
+  def apply(
+    grabs: scala.Double,
+    listeners: scala.Double,
+    negative: scala.Double,
+    positive: scala.Double,
+    skipped: scala.Double
+  ): Score = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("grabs")(grabs)
+    __obj.updateDynamic("listeners")(listeners)
+    __obj.updateDynamic("negative")(negative)
+    __obj.updateDynamic("positive")(positive)
+    __obj.updateDynamic("skipped")(skipped)
+    __obj.asInstanceOf[Score]
+  }
+}
+

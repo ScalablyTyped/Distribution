@@ -11,3 +11,14 @@ trait ImportAgentRequest extends js.Object {
   var parent: java.lang.String
 }
 
+object ImportAgentRequest {
+  @scala.inline
+  def apply(parent: java.lang.String, agentContent: java.lang.String = null, agentUri: java.lang.String = null): ImportAgentRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parent")(parent)
+    if (agentContent != null) __obj.updateDynamic("agentContent")(agentContent)
+    if (agentUri != null) __obj.updateDynamic("agentUri")(agentUri)
+    __obj.asInstanceOf[ImportAgentRequest]
+  }
+}
+

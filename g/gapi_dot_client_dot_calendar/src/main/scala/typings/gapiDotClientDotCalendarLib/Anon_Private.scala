@@ -12,3 +12,16 @@ trait Anon_Private extends js.Object {
   var shared: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object Anon_Private {
+  @scala.inline
+  def apply(
+    `private`: stdLib.Record[java.lang.String, java.lang.String] = null,
+    shared: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): Anon_Private = {
+    val __obj = js.Dynamic.literal()
+    if (`private` != null) __obj.updateDynamic("private")(`private`)
+    if (shared != null) __obj.updateDynamic("shared")(shared)
+    __obj.asInstanceOf[Anon_Private]
+  }
+}
+

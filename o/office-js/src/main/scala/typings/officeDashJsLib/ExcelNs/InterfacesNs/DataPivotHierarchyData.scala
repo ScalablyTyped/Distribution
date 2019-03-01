@@ -60,3 +60,26 @@ trait DataPivotHierarchyData extends js.Object {
   ] = js.undefined
 }
 
+object DataPivotHierarchyData {
+  @scala.inline
+  def apply(
+    field: PivotFieldData = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    numberFormat: java.lang.String = null,
+    position: scala.Int | scala.Double = null,
+    showAs: officeDashJsLib.ExcelNs.ShowAsRule = null,
+    summarizeBy: officeDashJsLib.ExcelNs.AggregationFunction | officeDashJsLib.officeDashJsLibStrings.Unknown | officeDashJsLib.officeDashJsLibStrings.Automatic | officeDashJsLib.officeDashJsLibStrings.Sum | officeDashJsLib.officeDashJsLibStrings.Count | officeDashJsLib.officeDashJsLibStrings.Average | officeDashJsLib.officeDashJsLibStrings.Max | officeDashJsLib.officeDashJsLibStrings.Min | officeDashJsLib.officeDashJsLibStrings.Product | officeDashJsLib.officeDashJsLibStrings.CountNumbers | officeDashJsLib.officeDashJsLibStrings.StandardDeviation | officeDashJsLib.officeDashJsLibStrings.StandardDeviationP | officeDashJsLib.officeDashJsLibStrings.Variance | officeDashJsLib.officeDashJsLibStrings.VarianceP = null
+  ): DataPivotHierarchyData = {
+    val __obj = js.Dynamic.literal()
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (showAs != null) __obj.updateDynamic("showAs")(showAs)
+    if (summarizeBy != null) __obj.updateDynamic("summarizeBy")(summarizeBy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DataPivotHierarchyData]
+  }
+}
+

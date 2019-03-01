@@ -14,3 +14,16 @@ trait Navigator extends js.Object {
   def webkitGetGamepads(): w3cDashGamepadLib.GamepadNs.GamepadList
 }
 
+object Navigator {
+  @scala.inline
+  def apply(
+    getGamepads: js.Function0[js.Array[w3cDashGamepadLib.GamepadNs.Gamepad]],
+    webkitGetGamepads: js.Function0[w3cDashGamepadLib.GamepadNs.GamepadList]
+  ): Navigator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getGamepads")(getGamepads)
+    __obj.updateDynamic("webkitGetGamepads")(webkitGetGamepads)
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

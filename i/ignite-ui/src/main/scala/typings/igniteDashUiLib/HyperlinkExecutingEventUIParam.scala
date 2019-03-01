@@ -16,3 +16,13 @@ trait HyperlinkExecutingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object HyperlinkExecutingEventUIParam {
+  @scala.inline
+  def apply(hyperlink: js.Any = null, owner: js.Any = null): HyperlinkExecutingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (hyperlink != null) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[HyperlinkExecutingEventUIParam]
+  }
+}
+

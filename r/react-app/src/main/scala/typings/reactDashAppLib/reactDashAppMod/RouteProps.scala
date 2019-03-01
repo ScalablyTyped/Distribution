@@ -11,3 +11,13 @@ trait RouteProps extends js.Object {
   var path: java.lang.String
 }
 
+object RouteProps {
+  @scala.inline
+  def apply(children: js.Array[ChildProps], path: java.lang.String): RouteProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[RouteProps]
+  }
+}
+

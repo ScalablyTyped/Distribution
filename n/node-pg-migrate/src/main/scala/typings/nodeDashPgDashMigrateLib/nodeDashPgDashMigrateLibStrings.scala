@@ -10,25 +10,30 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait AFTER extends js.Object
   
   @js.native
-  sealed trait ALL extends js.Object
+  sealed trait ALL
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Like
   
   @js.native
   sealed trait BEFORE extends js.Object
   
   @js.native
-  sealed trait CASCADE extends js.Object
+  sealed trait CASCADE
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Action
   
   @js.native
   sealed trait CASCADED extends js.Object
   
   @js.native
-  sealed trait COMMENTS extends js.Object
+  sealed trait COMMENTS
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Like
   
   @js.native
-  sealed trait CONSTRAINTS extends js.Object
+  sealed trait CONSTRAINTS
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Like
   
   @js.native
-  sealed trait DEFAULTS extends js.Object
+  sealed trait DEFAULTS
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Like
   
   @js.native
   sealed trait DELETE extends js.Object
@@ -46,7 +51,8 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait FULL extends js.Object
   
   @js.native
-  sealed trait IDENTITY extends js.Object
+  sealed trait IDENTITY
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Like
   
   @js.native
   sealed trait IMMUTABLE extends js.Object
@@ -55,7 +61,8 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait IN extends js.Object
   
   @js.native
-  sealed trait INDEXES extends js.Object
+  sealed trait INDEXES
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Like
   
   @js.native
   sealed trait INOUT extends js.Object
@@ -70,7 +77,8 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait LOCAL extends js.Object
   
   @js.native
-  sealed trait `NO ACTION` extends js.Object
+  sealed trait `NO ACTION`
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Action
   
   @js.native
   sealed trait `NO FORCE` extends js.Object
@@ -79,7 +87,8 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait OUT extends js.Object
   
   @js.native
-  sealed trait RESTRICT extends js.Object
+  sealed trait RESTRICT
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Action
   
   @js.native
   sealed trait RESTRICTED extends js.Object
@@ -94,10 +103,12 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait SELECT extends js.Object
   
   @js.native
-  sealed trait `SET DEFAULT` extends js.Object
+  sealed trait `SET DEFAULT`
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Action
   
   @js.native
-  sealed trait `SET NULL` extends js.Object
+  sealed trait `SET NULL`
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Action
   
   @js.native
   sealed trait SIMPLE extends js.Object
@@ -109,10 +120,12 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait STATEMENT extends js.Object
   
   @js.native
-  sealed trait STATISTICS extends js.Object
+  sealed trait STATISTICS
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Like
   
   @js.native
-  sealed trait STORAGE extends js.Object
+  sealed trait STORAGE
+    extends nodeDashPgDashMigrateLib.nodeDashPgDashMigrateMod.Like
   
   @js.native
   sealed trait UNSAFE extends js.Object

@@ -16,3 +16,16 @@ trait TransactWriteItemsOutput extends js.Object {
   var ItemCollectionMetrics: js.UndefOr[ItemCollectionMetricsPerTable] = js.undefined
 }
 
+object TransactWriteItemsOutput {
+  @scala.inline
+  def apply(
+    ConsumedCapacity: ConsumedCapacityMultiple = null,
+    ItemCollectionMetrics: ItemCollectionMetricsPerTable = null
+  ): TransactWriteItemsOutput = {
+    val __obj = js.Dynamic.literal()
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
+    if (ItemCollectionMetrics != null) __obj.updateDynamic("ItemCollectionMetrics")(ItemCollectionMetrics)
+    __obj.asInstanceOf[TransactWriteItemsOutput]
+  }
+}
+

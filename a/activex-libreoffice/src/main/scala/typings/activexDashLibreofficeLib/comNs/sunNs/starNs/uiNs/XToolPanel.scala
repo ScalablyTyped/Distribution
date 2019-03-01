@@ -21,3 +21,19 @@ trait XToolPanel extends js.Object {
   def createAccessible(ParentAccessible: activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible): activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible
 }
 
+object XToolPanel {
+  @scala.inline
+  def apply(
+    Window: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    createAccessible: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.accessibilityNs.XAccessible
+    ]
+  ): XToolPanel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Window")(Window)
+    __obj.updateDynamic("createAccessible")(createAccessible)
+    __obj.asInstanceOf[XToolPanel]
+  }
+}
+

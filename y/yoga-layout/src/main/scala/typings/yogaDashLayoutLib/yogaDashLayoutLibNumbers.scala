@@ -7,31 +7,76 @@ import scala.scalajs.js.annotation._
 
 object yogaDashLayoutLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends yogaDashLayoutLib.yogaDashLayoutMod.YogaAlign
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaDirection
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaDisplay
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaEdge
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaFlexDirection
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaFlexWrap
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaJustifyContent
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaOverflow
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaPositionType
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaUnit
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends yogaDashLayoutLib.yogaDashLayoutMod.YogaAlign
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaDirection
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaDisplay
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaEdge
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaFlexDirection
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaFlexWrap
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaJustifyContent
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaOverflow
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaPositionType
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaUnit
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends yogaDashLayoutLib.yogaDashLayoutMod.YogaAlign
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaDirection
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaEdge
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaFlexDirection
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaFlexWrap
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaJustifyContent
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaOverflow
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaUnit
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends yogaDashLayoutLib.yogaDashLayoutMod.YogaAlign
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaEdge
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaFlexDirection
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaJustifyContent
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaUnit
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends yogaDashLayoutLib.yogaDashLayoutMod.YogaAlign
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaEdge
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaFlexDirection
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaJustifyContent
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends yogaDashLayoutLib.yogaDashLayoutMod.YogaAlign
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaEdge
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaJustifyContent
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends yogaDashLayoutLib.yogaDashLayoutMod.YogaAlign
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaEdge
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends yogaDashLayoutLib.yogaDashLayoutMod.YogaAlign
+       with yogaDashLayoutLib.yogaDashLayoutMod.YogaEdge
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends yogaDashLayoutLib.yogaDashLayoutMod.YogaEdge
   
   @js.native
   sealed trait `9` extends js.Object

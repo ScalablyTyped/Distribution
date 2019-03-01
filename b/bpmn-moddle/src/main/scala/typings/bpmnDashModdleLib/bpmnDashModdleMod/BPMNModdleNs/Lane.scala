@@ -13,3 +13,34 @@ trait Lane extends BaseElement {
   var partitionElementRef: BaseElement
 }
 
+object Lane {
+  @scala.inline
+  def apply(
+    $type: ElementType,
+    childLaneSet: LaneSet,
+    flowNodeRef: js.Array[FlowNode],
+    id: java.lang.String,
+    name: java.lang.String,
+    partitionElement: BaseElement,
+    partitionElementRef: BaseElement,
+    $attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    documentation: js.Array[Documentation] = null,
+    extensionDefinitions: js.Array[ExtensionDefinition] = null,
+    extensionElements: ExtensionElements = null
+  ): Lane = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$type")($type)
+    __obj.updateDynamic("childLaneSet")(childLaneSet)
+    __obj.updateDynamic("flowNodeRef")(flowNodeRef)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("partitionElement")(partitionElement)
+    __obj.updateDynamic("partitionElementRef")(partitionElementRef)
+    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)
+    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements)
+    __obj.asInstanceOf[Lane]
+  }
+}
+

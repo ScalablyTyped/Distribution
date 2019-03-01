@@ -10,3 +10,16 @@ trait Anon_Close extends js.Object {
   var open: js.UndefOr[foundationLib.FoundationNs.RevealCSSOptions] = js.undefined
 }
 
+object Anon_Close {
+  @scala.inline
+  def apply(
+    close: foundationLib.FoundationNs.RevealCSSOptions = null,
+    open: foundationLib.FoundationNs.RevealCSSOptions = null
+  ): Anon_Close = {
+    val __obj = js.Dynamic.literal()
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (open != null) __obj.updateDynamic("open")(open)
+    __obj.asInstanceOf[Anon_Close]
+  }
+}
+

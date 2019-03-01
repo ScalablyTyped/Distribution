@@ -90,3 +90,36 @@ trait SeriesTooltipOptions extends js.Object {
   var xDateFormat: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SeriesTooltipOptions {
+  @scala.inline
+  def apply(
+    dateTimeLabelFormats: DateTimeFormats = null,
+    followPointer: js.UndefOr[scala.Boolean] = js.undefined,
+    followTouchMove: js.UndefOr[scala.Boolean] = js.undefined,
+    footerFormat: java.lang.String = null,
+    headerFormat: java.lang.String = null,
+    hideDelay: scala.Int | scala.Double = null,
+    pointFormat: java.lang.String = null,
+    pointFormatter: js.Function0[java.lang.String] = null,
+    valueDecimals: scala.Int | scala.Double = null,
+    valuePrefix: java.lang.String = null,
+    valueSuffix: java.lang.String = null,
+    xDateFormat: java.lang.String = null
+  ): SeriesTooltipOptions = {
+    val __obj = js.Dynamic.literal()
+    if (dateTimeLabelFormats != null) __obj.updateDynamic("dateTimeLabelFormats")(dateTimeLabelFormats)
+    if (!js.isUndefined(followPointer)) __obj.updateDynamic("followPointer")(followPointer)
+    if (!js.isUndefined(followTouchMove)) __obj.updateDynamic("followTouchMove")(followTouchMove)
+    if (footerFormat != null) __obj.updateDynamic("footerFormat")(footerFormat)
+    if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat)
+    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
+    if (pointFormat != null) __obj.updateDynamic("pointFormat")(pointFormat)
+    if (pointFormatter != null) __obj.updateDynamic("pointFormatter")(pointFormatter)
+    if (valueDecimals != null) __obj.updateDynamic("valueDecimals")(valueDecimals.asInstanceOf[js.Any])
+    if (valuePrefix != null) __obj.updateDynamic("valuePrefix")(valuePrefix)
+    if (valueSuffix != null) __obj.updateDynamic("valueSuffix")(valueSuffix)
+    if (xDateFormat != null) __obj.updateDynamic("xDateFormat")(xDateFormat)
+    __obj.asInstanceOf[SeriesTooltipOptions]
+  }
+}
+

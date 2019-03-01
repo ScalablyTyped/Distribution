@@ -10,3 +10,16 @@ trait Anon_CapacityReservationPreference extends js.Object {
   var capacityReservationTarget: js.UndefOr[Anon_CapacityReservationId] = js.undefined
 }
 
+object Anon_CapacityReservationPreference {
+  @scala.inline
+  def apply(
+    capacityReservationPreference: java.lang.String = null,
+    capacityReservationTarget: Anon_CapacityReservationId = null
+  ): Anon_CapacityReservationPreference = {
+    val __obj = js.Dynamic.literal()
+    if (capacityReservationPreference != null) __obj.updateDynamic("capacityReservationPreference")(capacityReservationPreference)
+    if (capacityReservationTarget != null) __obj.updateDynamic("capacityReservationTarget")(capacityReservationTarget)
+    __obj.asInstanceOf[Anon_CapacityReservationPreference]
+  }
+}
+

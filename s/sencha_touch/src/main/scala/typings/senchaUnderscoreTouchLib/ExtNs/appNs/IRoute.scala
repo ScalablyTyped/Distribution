@@ -56,3 +56,74 @@ trait IRoute
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IRoute {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    alias: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    conditions: js.Any = null,
+    config: js.Any = null,
+    controller: java.lang.String = null,
+    destroy: js.Function0[scala.Unit] = null,
+    extend: java.lang.String = null,
+    getAction: js.Function0[java.lang.String] = null,
+    getConditions: js.Function0[_] = null,
+    getController: js.Function0[java.lang.String] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    getUrl: js.Function0[java.lang.String] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* instanceConfig */ js.UndefOr[js.Any], _] = null,
+    mixins: js.Any = null,
+    paramsInMatchString: js.Any = null,
+    platformConfig: js.Any = null,
+    recognize: js.Function1[/* url */ js.UndefOr[java.lang.String], _] = null,
+    self: senchaUnderscoreTouchLib.ExtNs.IClass = null,
+    setAction: js.Function1[/* action */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setConditions: js.Function1[/* conditions */ js.UndefOr[js.Any], scala.Unit] = null,
+    setController: js.Function1[/* controller */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setUrl: js.Function1[/* url */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    url: java.lang.String = null,
+    uses: senchaUnderscoreTouchLib.ExtNs.Array = null
+  ): IRoute = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (conditions != null) __obj.updateDynamic("conditions")(conditions)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (controller != null) __obj.updateDynamic("controller")(controller)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (getAction != null) __obj.updateDynamic("getAction")(getAction)
+    if (getConditions != null) __obj.updateDynamic("getConditions")(getConditions)
+    if (getController != null) __obj.updateDynamic("getController")(getController)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (getUrl != null) __obj.updateDynamic("getUrl")(getUrl)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (paramsInMatchString != null) __obj.updateDynamic("paramsInMatchString")(paramsInMatchString)
+    if (platformConfig != null) __obj.updateDynamic("platformConfig")(platformConfig)
+    if (recognize != null) __obj.updateDynamic("recognize")(recognize)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (setAction != null) __obj.updateDynamic("setAction")(setAction)
+    if (setConditions != null) __obj.updateDynamic("setConditions")(setConditions)
+    if (setController != null) __obj.updateDynamic("setController")(setController)
+    if (setUrl != null) __obj.updateDynamic("setUrl")(setUrl)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IRoute]
+  }
+}
+

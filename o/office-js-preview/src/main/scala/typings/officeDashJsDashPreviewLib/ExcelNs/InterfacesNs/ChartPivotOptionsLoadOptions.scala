@@ -50,3 +50,22 @@ trait ChartPivotOptionsLoadOptions extends js.Object {
   var showValueFieldButtons: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartPivotOptionsLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    showAxisFieldButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    showLegendFieldButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    showReportFilterFieldButtons: js.UndefOr[scala.Boolean] = js.undefined,
+    showValueFieldButtons: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartPivotOptionsLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(showAxisFieldButtons)) __obj.updateDynamic("showAxisFieldButtons")(showAxisFieldButtons)
+    if (!js.isUndefined(showLegendFieldButtons)) __obj.updateDynamic("showLegendFieldButtons")(showLegendFieldButtons)
+    if (!js.isUndefined(showReportFilterFieldButtons)) __obj.updateDynamic("showReportFilterFieldButtons")(showReportFilterFieldButtons)
+    if (!js.isUndefined(showValueFieldButtons)) __obj.updateDynamic("showValueFieldButtons")(showValueFieldButtons)
+    __obj.asInstanceOf[ChartPivotOptionsLoadOptions]
+  }
+}
+

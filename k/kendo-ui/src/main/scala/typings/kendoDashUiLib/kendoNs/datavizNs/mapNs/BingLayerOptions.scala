@@ -11,3 +11,18 @@ trait BingLayerOptions extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BingLayerOptions {
+  @scala.inline
+  def apply(
+    baseUrl: java.lang.String = null,
+    imagerySet: java.lang.String = null,
+    name: java.lang.String = null
+  ): BingLayerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (baseUrl != null) __obj.updateDynamic("baseUrl")(baseUrl)
+    if (imagerySet != null) __obj.updateDynamic("imagerySet")(imagerySet)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[BingLayerOptions]
+  }
+}
+

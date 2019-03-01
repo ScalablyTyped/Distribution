@@ -14,3 +14,24 @@ trait GetChannelResult extends js.Object {
   var res: NormalSuccessResponse
 }
 
+object GetChannelResult {
+  @scala.inline
+  def apply(
+    Status: java.lang.String,
+    res: NormalSuccessResponse,
+    Audio: js.Object = null,
+    ConnectedTime: java.lang.String = null,
+    RemoteAddr: java.lang.String = null,
+    Video: js.Object = null
+  ): GetChannelResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Status")(Status)
+    __obj.updateDynamic("res")(res)
+    if (Audio != null) __obj.updateDynamic("Audio")(Audio)
+    if (ConnectedTime != null) __obj.updateDynamic("ConnectedTime")(ConnectedTime)
+    if (RemoteAddr != null) __obj.updateDynamic("RemoteAddr")(RemoteAddr)
+    if (Video != null) __obj.updateDynamic("Video")(Video)
+    __obj.asInstanceOf[GetChannelResult]
+  }
+}
+

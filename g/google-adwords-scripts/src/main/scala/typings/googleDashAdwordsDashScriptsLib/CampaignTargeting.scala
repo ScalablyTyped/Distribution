@@ -18,3 +18,36 @@ trait CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience] 
   def targetedProximities(): AdWordsSelector[TargetedProximity]
 }
 
+object CampaignTargeting {
+  @scala.inline
+  def apply[SearchCampaignAudience, SearchCampaignExcludedAudience](
+    adSchedules: js.Function0[AdWordsSelector[AdSchedule]],
+    audiences: js.Function0[AdWordsSelector[AdWordsEntity]],
+    excludedContentLabels: js.Function0[AdWordsSelector[ExcludedContentLabel]],
+    excludedLocations: js.Function0[AdWordsSelector[ExcludedLocation]],
+    exculdedAudiences: js.Function0[AdWordsSelector[AdWordsEntity]],
+    getTargetingSetting: js.Function1[CriterionTypeGroup, TargetingSetting],
+    languages: js.Function0[AdWordsSelector[Language]],
+    newUserListBuilder: js.Function0[SearchCampaignAudienceBuilder[SearchCampaignAudience]],
+    platforms: js.Function0[AdWordsSelector[Platform]],
+    setTargetingSetting: js.Function2[CriterionTypeGroup, TargetingSetting, scala.Unit],
+    targetedLocations: js.Function0[AdWordsSelector[TargetedLocation]],
+    targetedProximities: js.Function0[AdWordsSelector[TargetedProximity]]
+  ): CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adSchedules")(adSchedules)
+    __obj.updateDynamic("audiences")(audiences)
+    __obj.updateDynamic("excludedContentLabels")(excludedContentLabels)
+    __obj.updateDynamic("excludedLocations")(excludedLocations)
+    __obj.updateDynamic("exculdedAudiences")(exculdedAudiences)
+    __obj.updateDynamic("getTargetingSetting")(getTargetingSetting)
+    __obj.updateDynamic("languages")(languages)
+    __obj.updateDynamic("newUserListBuilder")(newUserListBuilder)
+    __obj.updateDynamic("platforms")(platforms)
+    __obj.updateDynamic("setTargetingSetting")(setTargetingSetting)
+    __obj.updateDynamic("targetedLocations")(targetedLocations)
+    __obj.updateDynamic("targetedProximities")(targetedProximities)
+    __obj.asInstanceOf[CampaignTargeting[SearchCampaignAudience, SearchCampaignExcludedAudience]]
+  }
+}
+

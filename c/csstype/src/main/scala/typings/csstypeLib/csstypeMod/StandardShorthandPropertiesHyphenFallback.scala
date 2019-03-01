@@ -477,3 +477,96 @@ trait StandardShorthandPropertiesHyphenFallback[TLength] extends js.Object {
   var transition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
 }
 
+object StandardShorthandPropertiesHyphenFallback {
+  @scala.inline
+  def apply[TLength](
+    all: Globals | js.Array[Globals] = null,
+    animation: AnimationProperty | js.Array[AnimationProperty] = null,
+    background: BackgroundProperty[TLength] | js.Array[BackgroundProperty[TLength]] = null,
+    border: BorderProperty[TLength] | js.Array[BorderProperty[TLength]] = null,
+    `border-block-end`: BorderBlockEndProperty[TLength] | js.Array[BorderBlockEndProperty[TLength]] = null,
+    `border-block-start`: BorderBlockStartProperty[TLength] | js.Array[BorderBlockStartProperty[TLength]] = null,
+    `border-bottom`: BorderBottomProperty[TLength] | js.Array[BorderBottomProperty[TLength]] = null,
+    `border-color`: BorderColorProperty | js.Array[BorderColorProperty] = null,
+    `border-image`: BorderImageProperty | js.Array[BorderImageProperty] = null,
+    `border-inline-end`: BorderInlineEndProperty[TLength] | js.Array[BorderInlineEndProperty[TLength]] = null,
+    `border-inline-start`: BorderInlineStartProperty[TLength] | js.Array[BorderInlineStartProperty[TLength]] = null,
+    `border-left`: BorderLeftProperty[TLength] | js.Array[BorderLeftProperty[TLength]] = null,
+    `border-radius`: BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]] = null,
+    `border-right`: BorderRightProperty[TLength] | js.Array[BorderRightProperty[TLength]] = null,
+    `border-style`: BorderStyleProperty | js.Array[BorderStyleProperty] = null,
+    `border-top`: BorderTopProperty[TLength] | js.Array[BorderTopProperty[TLength]] = null,
+    `border-width`: BorderWidthProperty[TLength] | js.Array[BorderWidthProperty[TLength]] = null,
+    `column-rule`: ColumnRuleProperty[TLength] | js.Array[ColumnRuleProperty[TLength]] = null,
+    columns: ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]] = null,
+    flex: FlexProperty[TLength] | js.Array[FlexProperty[TLength]] = null,
+    `flex-flow`: FlexFlowProperty | js.Array[FlexFlowProperty] = null,
+    font: FontProperty | js.Array[FontProperty] = null,
+    gap: GapProperty[TLength] | js.Array[GapProperty[TLength]] = null,
+    grid: GridProperty | js.Array[GridProperty] = null,
+    `grid-area`: GridAreaProperty | js.Array[GridAreaProperty] = null,
+    `grid-column`: GridColumnProperty | js.Array[GridColumnProperty] = null,
+    `grid-row`: GridRowProperty | js.Array[GridRowProperty] = null,
+    `grid-template`: GridTemplateProperty | js.Array[GridTemplateProperty] = null,
+    `line-clamp`: LineClampProperty | js.Array[LineClampProperty] = null,
+    `list-style`: ListStyleProperty | js.Array[ListStyleProperty] = null,
+    margin: MarginProperty[TLength] | js.Array[MarginProperty[TLength]] = null,
+    mask: MaskProperty[TLength] | js.Array[MaskProperty[TLength]] = null,
+    `mask-border`: MaskBorderProperty | js.Array[MaskBorderProperty] = null,
+    motion: OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]] = null,
+    offset: OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]] = null,
+    outline: OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]] = null,
+    padding: PaddingProperty[TLength] | js.Array[PaddingProperty[TLength]] = null,
+    `place-items`: PlaceItemsProperty | js.Array[PlaceItemsProperty] = null,
+    `place-self`: PlaceSelfProperty | js.Array[PlaceSelfProperty] = null,
+    `text-decoration`: TextDecorationProperty | js.Array[TextDecorationProperty] = null,
+    `text-emphasis`: TextEmphasisProperty | js.Array[TextEmphasisProperty] = null,
+    transition: TransitionProperty | js.Array[TransitionProperty] = null
+  ): StandardShorthandPropertiesHyphenFallback[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (all != null) __obj.updateDynamic("all")(all.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (`border-block-end` != null) __obj.updateDynamic("border-block-end")(`border-block-end`.asInstanceOf[js.Any])
+    if (`border-block-start` != null) __obj.updateDynamic("border-block-start")(`border-block-start`.asInstanceOf[js.Any])
+    if (`border-bottom` != null) __obj.updateDynamic("border-bottom")(`border-bottom`.asInstanceOf[js.Any])
+    if (`border-color` != null) __obj.updateDynamic("border-color")(`border-color`.asInstanceOf[js.Any])
+    if (`border-image` != null) __obj.updateDynamic("border-image")(`border-image`.asInstanceOf[js.Any])
+    if (`border-inline-end` != null) __obj.updateDynamic("border-inline-end")(`border-inline-end`.asInstanceOf[js.Any])
+    if (`border-inline-start` != null) __obj.updateDynamic("border-inline-start")(`border-inline-start`.asInstanceOf[js.Any])
+    if (`border-left` != null) __obj.updateDynamic("border-left")(`border-left`.asInstanceOf[js.Any])
+    if (`border-radius` != null) __obj.updateDynamic("border-radius")(`border-radius`.asInstanceOf[js.Any])
+    if (`border-right` != null) __obj.updateDynamic("border-right")(`border-right`.asInstanceOf[js.Any])
+    if (`border-style` != null) __obj.updateDynamic("border-style")(`border-style`.asInstanceOf[js.Any])
+    if (`border-top` != null) __obj.updateDynamic("border-top")(`border-top`.asInstanceOf[js.Any])
+    if (`border-width` != null) __obj.updateDynamic("border-width")(`border-width`.asInstanceOf[js.Any])
+    if (`column-rule` != null) __obj.updateDynamic("column-rule")(`column-rule`.asInstanceOf[js.Any])
+    if (columns != null) __obj.updateDynamic("columns")(columns.asInstanceOf[js.Any])
+    if (flex != null) __obj.updateDynamic("flex")(flex.asInstanceOf[js.Any])
+    if (`flex-flow` != null) __obj.updateDynamic("flex-flow")(`flex-flow`.asInstanceOf[js.Any])
+    if (font != null) __obj.updateDynamic("font")(font.asInstanceOf[js.Any])
+    if (gap != null) __obj.updateDynamic("gap")(gap.asInstanceOf[js.Any])
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
+    if (`grid-area` != null) __obj.updateDynamic("grid-area")(`grid-area`.asInstanceOf[js.Any])
+    if (`grid-column` != null) __obj.updateDynamic("grid-column")(`grid-column`.asInstanceOf[js.Any])
+    if (`grid-row` != null) __obj.updateDynamic("grid-row")(`grid-row`.asInstanceOf[js.Any])
+    if (`grid-template` != null) __obj.updateDynamic("grid-template")(`grid-template`.asInstanceOf[js.Any])
+    if (`line-clamp` != null) __obj.updateDynamic("line-clamp")(`line-clamp`.asInstanceOf[js.Any])
+    if (`list-style` != null) __obj.updateDynamic("list-style")(`list-style`.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (mask != null) __obj.updateDynamic("mask")(mask.asInstanceOf[js.Any])
+    if (`mask-border` != null) __obj.updateDynamic("mask-border")(`mask-border`.asInstanceOf[js.Any])
+    if (motion != null) __obj.updateDynamic("motion")(motion.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (outline != null) __obj.updateDynamic("outline")(outline.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (`place-items` != null) __obj.updateDynamic("place-items")(`place-items`.asInstanceOf[js.Any])
+    if (`place-self` != null) __obj.updateDynamic("place-self")(`place-self`.asInstanceOf[js.Any])
+    if (`text-decoration` != null) __obj.updateDynamic("text-decoration")(`text-decoration`.asInstanceOf[js.Any])
+    if (`text-emphasis` != null) __obj.updateDynamic("text-emphasis")(`text-emphasis`.asInstanceOf[js.Any])
+    if (transition != null) __obj.updateDynamic("transition")(transition.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StandardShorthandPropertiesHyphenFallback[TLength]]
+  }
+}
+

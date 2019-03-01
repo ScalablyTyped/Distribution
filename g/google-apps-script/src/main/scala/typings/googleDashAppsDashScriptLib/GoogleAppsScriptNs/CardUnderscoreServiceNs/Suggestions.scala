@@ -10,3 +10,16 @@ trait Suggestions extends js.Object {
   def addSuggestions(suggestions: js.Array[js.Object]): Suggestions
 }
 
+object Suggestions {
+  @scala.inline
+  def apply(
+    addSuggestion: js.Function1[java.lang.String, Suggestions],
+    addSuggestions: js.Function1[js.Array[js.Object], Suggestions]
+  ): Suggestions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addSuggestion")(addSuggestion)
+    __obj.updateDynamic("addSuggestions")(addSuggestions)
+    __obj.asInstanceOf[Suggestions]
+  }
+}
+

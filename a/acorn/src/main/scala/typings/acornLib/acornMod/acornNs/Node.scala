@@ -14,3 +14,23 @@ trait Node extends js.Object {
   var `type`: java.lang.String
 }
 
+object Node {
+  @scala.inline
+  def apply(
+    end: scala.Double,
+    start: scala.Double,
+    `type`: java.lang.String,
+    loc: estreeLib.estreeMod.SourceLocation = null,
+    range: js.Tuple2[scala.Double, scala.Double] = null,
+    sourceFile: java.lang.String = null
+  ): Node = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("start")(start)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (sourceFile != null) __obj.updateDynamic("sourceFile")(sourceFile)
+    __obj.asInstanceOf[Node]
+  }
+}
+

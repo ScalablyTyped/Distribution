@@ -28,3 +28,16 @@ trait ApplicationUpdateData extends js.Object {
   var iterativeCalculation: js.UndefOr[IterativeCalculationUpdateData] = js.undefined
 }
 
+object ApplicationUpdateData {
+  @scala.inline
+  def apply(
+    calculationMode: officeDashJsDashPreviewLib.ExcelNs.CalculationMode | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Automatic | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.AutomaticExceptTables | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Manual = null,
+    iterativeCalculation: IterativeCalculationUpdateData = null
+  ): ApplicationUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (calculationMode != null) __obj.updateDynamic("calculationMode")(calculationMode.asInstanceOf[js.Any])
+    if (iterativeCalculation != null) __obj.updateDynamic("iterativeCalculation")(iterativeCalculation)
+    __obj.asInstanceOf[ApplicationUpdateData]
+  }
+}
+

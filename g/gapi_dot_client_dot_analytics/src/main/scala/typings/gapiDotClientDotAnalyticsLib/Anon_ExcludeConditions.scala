@@ -12,3 +12,16 @@ trait Anon_ExcludeConditions extends js.Object {
   var includeConditions: js.UndefOr[gapiDotClientDotAnalyticsLib.gapiNs.clientNs.analyticsNs.IncludeConditions] = js.undefined
 }
 
+object Anon_ExcludeConditions {
+  @scala.inline
+  def apply(
+    excludeConditions: Anon_ExclusionDuration = null,
+    includeConditions: gapiDotClientDotAnalyticsLib.gapiNs.clientNs.analyticsNs.IncludeConditions = null
+  ): Anon_ExcludeConditions = {
+    val __obj = js.Dynamic.literal()
+    if (excludeConditions != null) __obj.updateDynamic("excludeConditions")(excludeConditions)
+    if (includeConditions != null) __obj.updateDynamic("includeConditions")(includeConditions)
+    __obj.asInstanceOf[Anon_ExcludeConditions]
+  }
+}
+

@@ -12,3 +12,20 @@ trait GetConnectedBluetoothDevicesOptions
   def success_MGetConnectedBluetoothDevicesOptions(res: baiduDashAppLib.Anon_Devices with ErrMsgResponse): scala.Unit
 }
 
+object GetConnectedBluetoothDevicesOptions {
+  @scala.inline
+  def apply(
+    services: js.Array[java.lang.String],
+    success: js.Function1[baiduDashAppLib.Anon_Devices with ErrMsgResponse, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null
+  ): GetConnectedBluetoothDevicesOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("services")(services)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[GetConnectedBluetoothDevicesOptions]
+  }
+}
+

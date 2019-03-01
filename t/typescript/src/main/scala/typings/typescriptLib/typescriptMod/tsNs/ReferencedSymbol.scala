@@ -10,3 +10,13 @@ trait ReferencedSymbol extends js.Object {
   var references: js.Array[ReferenceEntry]
 }
 
+object ReferencedSymbol {
+  @scala.inline
+  def apply(definition: ReferencedSymbolDefinitionInfo, references: js.Array[ReferenceEntry]): ReferencedSymbol = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("definition")(definition)
+    __obj.updateDynamic("references")(references)
+    __obj.asInstanceOf[ReferencedSymbol]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Anon_IndexableText extends js.Object {
   var thumbnail: js.UndefOr[Anon_Image] = js.undefined
 }
 
+object Anon_IndexableText {
+  @scala.inline
+  def apply(indexableText: java.lang.String = null, thumbnail: Anon_Image = null): Anon_IndexableText = {
+    val __obj = js.Dynamic.literal()
+    if (indexableText != null) __obj.updateDynamic("indexableText")(indexableText)
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[Anon_IndexableText]
+  }
+}
+

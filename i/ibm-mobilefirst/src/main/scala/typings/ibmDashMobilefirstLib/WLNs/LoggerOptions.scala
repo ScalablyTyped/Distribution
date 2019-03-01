@@ -27,3 +27,38 @@ trait LoggerOptions extends js.Object {
   var whitelist: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object LoggerOptions {
+  @scala.inline
+  def apply(
+    autoSendLogs: js.UndefOr[scala.Boolean] = js.undefined,
+    blacklist: js.Array[java.lang.String] = null,
+    callback: LoggerCallback = null,
+    capture: js.UndefOr[scala.Boolean] = js.undefined,
+    filters: Filter = null,
+    level: js.Array[java.lang.String] | java.lang.String | scala.Double = null,
+    maxFileSize: scala.Int | scala.Double = null,
+    pkg: java.lang.String = null,
+    pretty: js.UndefOr[scala.Boolean] = js.undefined,
+    stacktrace: js.UndefOr[scala.Boolean] = js.undefined,
+    stringify: js.UndefOr[scala.Boolean] = js.undefined,
+    tag: Tag = null,
+    whitelist: js.Array[java.lang.String] = null
+  ): LoggerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoSendLogs)) __obj.updateDynamic("autoSendLogs")(autoSendLogs)
+    if (blacklist != null) __obj.updateDynamic("blacklist")(blacklist)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    if (maxFileSize != null) __obj.updateDynamic("maxFileSize")(maxFileSize.asInstanceOf[js.Any])
+    if (pkg != null) __obj.updateDynamic("pkg")(pkg)
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    if (!js.isUndefined(stacktrace)) __obj.updateDynamic("stacktrace")(stacktrace)
+    if (!js.isUndefined(stringify)) __obj.updateDynamic("stringify")(stringify)
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    if (whitelist != null) __obj.updateDynamic("whitelist")(whitelist)
+    __obj.asInstanceOf[LoggerOptions]
+  }
+}
+

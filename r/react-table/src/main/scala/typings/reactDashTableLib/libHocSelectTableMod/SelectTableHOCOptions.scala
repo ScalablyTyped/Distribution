@@ -12,3 +12,12 @@ trait SelectTableHOCOptions extends js.Object {
   var floatingLeft: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SelectTableHOCOptions {
+  @scala.inline
+  def apply(floatingLeft: js.UndefOr[scala.Boolean] = js.undefined): SelectTableHOCOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(floatingLeft)) __obj.updateDynamic("floatingLeft")(floatingLeft)
+    __obj.asInstanceOf[SelectTableHOCOptions]
+  }
+}
+

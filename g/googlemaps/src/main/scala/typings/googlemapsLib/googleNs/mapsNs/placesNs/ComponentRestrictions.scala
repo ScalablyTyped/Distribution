@@ -9,3 +9,12 @@ trait ComponentRestrictions extends js.Object {
   var country: java.lang.String | js.Array[java.lang.String]
 }
 
+object ComponentRestrictions {
+  @scala.inline
+  def apply(country: java.lang.String | js.Array[java.lang.String]): ComponentRestrictions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("country")(country.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComponentRestrictions]
+  }
+}
+

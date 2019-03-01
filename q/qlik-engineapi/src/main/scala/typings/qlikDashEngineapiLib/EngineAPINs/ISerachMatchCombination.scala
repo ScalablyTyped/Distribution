@@ -19,3 +19,13 @@ trait ISerachMatchCombination extends js.Object {
   var qId: scala.Double
 }
 
+object ISerachMatchCombination {
+  @scala.inline
+  def apply(qFieldMatches: js.Array[ISerachFieldMatch], qId: scala.Double): ISerachMatchCombination = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qFieldMatches")(qFieldMatches)
+    __obj.updateDynamic("qId")(qId)
+    __obj.asInstanceOf[ISerachMatchCombination]
+  }
+}
+

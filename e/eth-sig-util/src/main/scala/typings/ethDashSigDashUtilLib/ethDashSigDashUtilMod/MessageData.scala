@@ -9,3 +9,12 @@ trait MessageData[T] extends js.Object {
   var data: T
 }
 
+object MessageData {
+  @scala.inline
+  def apply[T](data: T): MessageData[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MessageData[T]]
+  }
+}
+

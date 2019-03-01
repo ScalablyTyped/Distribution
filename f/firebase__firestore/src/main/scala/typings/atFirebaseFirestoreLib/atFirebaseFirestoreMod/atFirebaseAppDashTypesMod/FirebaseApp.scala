@@ -13,3 +13,16 @@ trait FirebaseApp extends js.Object {
   ] = js.undefined
 }
 
+object FirebaseApp {
+  @scala.inline
+  def apply(
+    firestore: js.Function0[
+      atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.FirebaseFirestore
+    ] = null
+  ): FirebaseApp = {
+    val __obj = js.Dynamic.literal()
+    if (firestore != null) __obj.updateDynamic("firestore")(firestore)
+    __obj.asInstanceOf[FirebaseApp]
+  }
+}
+

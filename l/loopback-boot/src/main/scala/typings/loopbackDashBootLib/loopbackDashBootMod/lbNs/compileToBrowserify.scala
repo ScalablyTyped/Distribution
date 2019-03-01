@@ -20,3 +20,12 @@ trait compileToBrowserify extends js.Object {
   var appId: java.lang.String
 }
 
+object compileToBrowserify {
+  @scala.inline
+  def apply(appId: java.lang.String): compileToBrowserify = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appId")(appId)
+    __obj.asInstanceOf[compileToBrowserify]
+  }
+}
+

@@ -24,3 +24,15 @@ trait Node[K, V] extends js.Object {
   var value: V
 }
 
+object Node {
+  @scala.inline
+  def apply[K, V](key: K, value: V, left: Node[K, V] = null, right: Node[K, V] = null): Node[K, V] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (right != null) __obj.updateDynamic("right")(right)
+    __obj.asInstanceOf[Node[K, V]]
+  }
+}
+

@@ -10,3 +10,12 @@ trait ErrMsgResponse extends js.Object {
   var errMsg: weixinDashAppLib.weixinDashAppLibStrings.ok | java.lang.String
 }
 
+object ErrMsgResponse {
+  @scala.inline
+  def apply(errMsg: weixinDashAppLib.weixinDashAppLibStrings.ok | java.lang.String): ErrMsgResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ErrMsgResponse]
+  }
+}
+

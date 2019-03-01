@@ -16,3 +16,13 @@ trait LayersSubLayersShapeSettingsColorMappingsEqualColorMapping extends js.Obje
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LayersSubLayersShapeSettingsColorMappingsEqualColorMapping {
+  @scala.inline
+  def apply(color: java.lang.String = null, value: java.lang.String = null): LayersSubLayersShapeSettingsColorMappingsEqualColorMapping = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[LayersSubLayersShapeSettingsColorMappingsEqualColorMapping]
+  }
+}
+

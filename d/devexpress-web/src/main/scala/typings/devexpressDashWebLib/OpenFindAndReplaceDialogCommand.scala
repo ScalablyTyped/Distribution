@@ -15,3 +15,13 @@ trait OpenFindAndReplaceDialogCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object OpenFindAndReplaceDialogCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): OpenFindAndReplaceDialogCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[OpenFindAndReplaceDialogCommand]
+  }
+}
+

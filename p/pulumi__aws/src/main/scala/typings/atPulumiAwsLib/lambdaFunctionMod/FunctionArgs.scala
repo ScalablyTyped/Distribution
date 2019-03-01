@@ -95,3 +95,54 @@ trait FunctionArgs extends js.Object {
   ] = js.undefined
 }
 
+object FunctionArgs {
+  @scala.inline
+  def apply(
+    handler: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    role: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN],
+    runtime: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    code: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.atPulumiPulumiMod.assetNs.Archive] = null,
+    deadLetterConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TargetArnInput] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    environment: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyVariablesInput] = null,
+    kmsKeyArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    layers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    memorySize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    publish: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    reservedConcurrentExecutions: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    s3Bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3Key: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    s3ObjectVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    sourceCodeHash: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    timeout: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    tracingConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ModeInput] = null,
+    vpcConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArrayInput] = null
+  ): FunctionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    __obj.updateDynamic("role")(role.asInstanceOf[js.Any])
+    __obj.updateDynamic("runtime")(runtime.asInstanceOf[js.Any])
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (deadLetterConfig != null) __obj.updateDynamic("deadLetterConfig")(deadLetterConfig.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (kmsKeyArn != null) __obj.updateDynamic("kmsKeyArn")(kmsKeyArn.asInstanceOf[js.Any])
+    if (layers != null) __obj.updateDynamic("layers")(layers.asInstanceOf[js.Any])
+    if (memorySize != null) __obj.updateDynamic("memorySize")(memorySize.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (publish != null) __obj.updateDynamic("publish")(publish.asInstanceOf[js.Any])
+    if (reservedConcurrentExecutions != null) __obj.updateDynamic("reservedConcurrentExecutions")(reservedConcurrentExecutions.asInstanceOf[js.Any])
+    if (s3Bucket != null) __obj.updateDynamic("s3Bucket")(s3Bucket.asInstanceOf[js.Any])
+    if (s3Key != null) __obj.updateDynamic("s3Key")(s3Key.asInstanceOf[js.Any])
+    if (s3ObjectVersion != null) __obj.updateDynamic("s3ObjectVersion")(s3ObjectVersion.asInstanceOf[js.Any])
+    if (sourceCodeHash != null) __obj.updateDynamic("sourceCodeHash")(sourceCodeHash.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (tracingConfig != null) __obj.updateDynamic("tracingConfig")(tracingConfig.asInstanceOf[js.Any])
+    if (vpcConfig != null) __obj.updateDynamic("vpcConfig")(vpcConfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FunctionArgs]
+  }
+}
+

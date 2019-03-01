@@ -10,3 +10,13 @@ trait Duration extends js.Object {
   var unit: java.lang.String
 }
 
+object Duration {
+  @scala.inline
+  def apply(amount: scala.Double, unit: java.lang.String): Duration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("unit")(unit)
+    __obj.asInstanceOf[Duration]
+  }
+}
+

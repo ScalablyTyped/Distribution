@@ -14,3 +14,14 @@ trait LegendTitleTemplates extends js.Object {
   var upper: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LegendTitleTemplates {
+  @scala.inline
+  def apply(inner: java.lang.String = null, lower: java.lang.String = null, upper: java.lang.String = null): LegendTitleTemplates = {
+    val __obj = js.Dynamic.literal()
+    if (inner != null) __obj.updateDynamic("inner")(inner)
+    if (lower != null) __obj.updateDynamic("lower")(lower)
+    if (upper != null) __obj.updateDynamic("upper")(upper)
+    __obj.asInstanceOf[LegendTitleTemplates]
+  }
+}
+

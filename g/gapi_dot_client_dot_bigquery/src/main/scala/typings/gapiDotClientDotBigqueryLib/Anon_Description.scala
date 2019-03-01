@@ -14,3 +14,18 @@ trait Anon_Description extends js.Object {
   var `type`: js.UndefOr[gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.QueryParameterType] = js.undefined
 }
 
+object Anon_Description {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    name: java.lang.String = null,
+    `type`: gapiDotClientDotBigqueryLib.gapiNs.clientNs.bigqueryNs.QueryParameterType = null
+  ): Anon_Description = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_Description]
+  }
+}
+

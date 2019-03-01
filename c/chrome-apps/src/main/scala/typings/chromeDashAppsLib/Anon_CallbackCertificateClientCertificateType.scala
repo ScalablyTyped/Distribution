@@ -87,3 +87,45 @@ trait Anon_CallbackCertificateClientCertificateType extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackCertificateClientCertificateType {
+  @scala.inline
+  def apply(
+    ClientCertificateType: Anon_ECDSASIGN,
+    getKeyPair: js.Function3[
+      stdLib.ArrayBuffer, 
+      js.Object, 
+      js.Function2[
+        /* publicKey */ stdLib.CryptoKey, 
+        /* privateKey */ stdLib.CryptoKey | scala.Null, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    selectClientCertificates: js.Function2[
+      chromeDashAppsLib.chromeNs.platformKeysNs.SelectDetails, 
+      js.Function1[
+        /* matches */ js.Array[chromeDashAppsLib.chromeNs.platformKeysNs.Match], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    subtleCrypto: js.Function0[stdLib.SubtleCrypto],
+    verifyTLSServerCertificate: js.Function2[
+      chromeDashAppsLib.chromeNs.platformKeysNs.VerificationDetails, 
+      js.Function1[
+        /* result */ chromeDashAppsLib.chromeNs.platformKeysNs.VerificationResult, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ]
+  ): Anon_CallbackCertificateClientCertificateType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ClientCertificateType")(ClientCertificateType)
+    __obj.updateDynamic("getKeyPair")(getKeyPair)
+    __obj.updateDynamic("selectClientCertificates")(selectClientCertificates)
+    __obj.updateDynamic("subtleCrypto")(subtleCrypto)
+    __obj.updateDynamic("verifyTLSServerCertificate")(verifyTLSServerCertificate)
+    __obj.asInstanceOf[Anon_CallbackCertificateClientCertificateType]
+  }
+}
+

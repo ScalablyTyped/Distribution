@@ -14,3 +14,14 @@ trait NonBillableWinningBidStatusRow extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NonBillableWinningBidStatusRow {
+  @scala.inline
+  def apply(bidCount: MetricValue = null, rowDimensions: RowDimensions = null, status: java.lang.String = null): NonBillableWinningBidStatusRow = {
+    val __obj = js.Dynamic.literal()
+    if (bidCount != null) __obj.updateDynamic("bidCount")(bidCount)
+    if (rowDimensions != null) __obj.updateDynamic("rowDimensions")(rowDimensions)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[NonBillableWinningBidStatusRow]
+  }
+}
+

@@ -10,3 +10,15 @@ trait Scheduler extends js.Object {
   def catchException(handler: js.Function1[/* exception */ js.Any, scala.Boolean]): Scheduler
 }
 
+object Scheduler {
+  @scala.inline
+  def apply(
+    `catch`: js.Function1[js.Function1[/* exception */ js.Any, scala.Boolean], Scheduler],
+    catchException: js.Function1[js.Function1[/* exception */ js.Any, scala.Boolean], Scheduler]
+  ): Scheduler = {
+    val __obj = js.Dynamic.literal(`catch` = `catch`)
+    __obj.updateDynamic("catchException")(catchException)
+    __obj.asInstanceOf[Scheduler]
+  }
+}
+

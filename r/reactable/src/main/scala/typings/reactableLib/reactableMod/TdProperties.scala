@@ -11,3 +11,14 @@ trait TdProperties extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object TdProperties {
+  @scala.inline
+  def apply(column: java.lang.String, data: js.Any = null, value: js.Any = null): TdProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[TdProperties]
+  }
+}
+

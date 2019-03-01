@@ -14,3 +14,24 @@ trait PropertyDescriptor extends js.Object {
   var writable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PropertyDescriptor {
+  @scala.inline
+  def apply(
+    configurable: js.UndefOr[scala.Boolean] = js.undefined,
+    enumerable: js.UndefOr[scala.Boolean] = js.undefined,
+    get: js.Function0[_] = null,
+    set: js.Function1[/* v */ js.Any, scala.Unit] = null,
+    value: js.Any = null,
+    writable: js.UndefOr[scala.Boolean] = js.undefined
+  ): PropertyDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(configurable)) __obj.updateDynamic("configurable")(configurable)
+    if (!js.isUndefined(enumerable)) __obj.updateDynamic("enumerable")(enumerable)
+    if (get != null) __obj.updateDynamic("get")(get)
+    if (set != null) __obj.updateDynamic("set")(set)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (!js.isUndefined(writable)) __obj.updateDynamic("writable")(writable)
+    __obj.asInstanceOf[PropertyDescriptor]
+  }
+}
+

@@ -11,3 +11,14 @@ trait IKeyNamePair extends js.Object {
   def Clone(): IKeyNamePair
 }
 
+object IKeyNamePair {
+  @scala.inline
+  def apply(Clone: js.Function0[IKeyNamePair], Key: scala.Double, Name: java.lang.String): IKeyNamePair = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Key")(Key)
+    __obj.updateDynamic("Name")(Name)
+    __obj.asInstanceOf[IKeyNamePair]
+  }
+}
+

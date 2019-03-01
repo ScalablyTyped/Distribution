@@ -175,3 +175,144 @@ trait IPanel extends IAbstractPanel {
   var tools: js.UndefOr[js.Any] = js.undefined
 }
 
+object IPanel {
+  @scala.inline
+  def apply(
+    IAbstractPanel: IAbstractPanel = null,
+    addTool: js.Function1[/* tools */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterCollapse: js.Function1[/* animated */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    afterExpand: js.Function1[/* animated */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    animCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    bbar: js.Any = null,
+    buttonAlign: java.lang.String = null,
+    buttons: js.Any = null,
+    closable: js.UndefOr[scala.Boolean] = js.undefined,
+    close: js.Function0[scala.Unit] = null,
+    closeAction: java.lang.String = null,
+    collapse: js.Function2[
+      /* direction */ js.UndefOr[java.lang.String], 
+      /* animate */ js.UndefOr[scala.Boolean], 
+      IPanel
+    ] = null,
+    collapseDirection: java.lang.String = null,
+    collapseFirst: js.UndefOr[scala.Boolean] = js.undefined,
+    collapseMode: java.lang.String = null,
+    collapsed: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsedCls: java.lang.String = null,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    constrain: js.UndefOr[scala.Boolean] = js.undefined,
+    constrainHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    convertCollapseDir: js.Function1[/* collapseDir */ js.UndefOr[js.Any], scala.Unit] = null,
+    dd: js.Any = null,
+    dockedItems: js.Any = null,
+    expand: js.Function1[/* animate */ js.UndefOr[scala.Boolean], IPanel] = null,
+    fbar: js.Any = null,
+    floatable: js.UndefOr[scala.Boolean] = js.undefined,
+    frame: js.UndefOr[scala.Boolean] = js.undefined,
+    frameHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    getCollapsed: js.Function0[_] = null,
+    getHeader: js.Function0[scala.Unit] = null,
+    getState: js.Function0[_] = null,
+    glyph: js.Any = null,
+    header: js.Any = null,
+    headerOverCls: java.lang.String = null,
+    headerPosition: java.lang.String = null,
+    hideCollapseTool: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: java.lang.String = null,
+    iconCls: java.lang.String = null,
+    isLayoutRoot: js.Function0[scala.Unit] = null,
+    isVisible: js.Function1[/* deep */ js.UndefOr[js.Any], scala.Boolean] = null,
+    lbar: js.Any = null,
+    manageHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    minButtonWidth: scala.Int | scala.Double = null,
+    onHide: js.Function0[scala.Unit] = null,
+    onRemoved: js.Function1[/* destroying */ js.UndefOr[js.Any], scala.Unit] = null,
+    onShow: js.Function0[scala.Unit] = null,
+    overlapHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    placeholder: js.Any = null,
+    placeholderCollapseHideMode: scala.Int | scala.Double = null,
+    preventHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    rbar: js.Any = null,
+    setBorder: js.Function2[/* border */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[js.Any], scala.Unit] = null,
+    setGlyph: js.Function1[/* newGlyph */ js.UndefOr[js.Any], scala.Unit] = null,
+    setIcon: js.Function1[/* newIcon */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setIconCls: js.Function1[/* newIconCls */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setTitle: js.Function1[/* newTitle */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setUI: js.Function1[/* ui */ js.UndefOr[js.Any], scala.Unit] = null,
+    simpleDrag: js.UndefOr[scala.Boolean] = js.undefined,
+    tbar: js.Any = null,
+    title: java.lang.String = null,
+    titleAlign: java.lang.String = null,
+    titleCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    toggleCollapse: js.Function0[IPanel] = null,
+    tools: js.Any = null
+  ): IPanel = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IAbstractPanel)
+    if (addTool != null) __obj.updateDynamic("addTool")(addTool)
+    if (afterCollapse != null) __obj.updateDynamic("afterCollapse")(afterCollapse)
+    if (afterExpand != null) __obj.updateDynamic("afterExpand")(afterExpand)
+    if (!js.isUndefined(animCollapse)) __obj.updateDynamic("animCollapse")(animCollapse)
+    if (bbar != null) __obj.updateDynamic("bbar")(bbar)
+    if (buttonAlign != null) __obj.updateDynamic("buttonAlign")(buttonAlign)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (!js.isUndefined(closable)) __obj.updateDynamic("closable")(closable)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (closeAction != null) __obj.updateDynamic("closeAction")(closeAction)
+    if (collapse != null) __obj.updateDynamic("collapse")(collapse)
+    if (collapseDirection != null) __obj.updateDynamic("collapseDirection")(collapseDirection)
+    if (!js.isUndefined(collapseFirst)) __obj.updateDynamic("collapseFirst")(collapseFirst)
+    if (collapseMode != null) __obj.updateDynamic("collapseMode")(collapseMode)
+    if (!js.isUndefined(collapsed)) __obj.updateDynamic("collapsed")(collapsed)
+    if (collapsedCls != null) __obj.updateDynamic("collapsedCls")(collapsedCls)
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (!js.isUndefined(constrain)) __obj.updateDynamic("constrain")(constrain)
+    if (!js.isUndefined(constrainHeader)) __obj.updateDynamic("constrainHeader")(constrainHeader)
+    if (convertCollapseDir != null) __obj.updateDynamic("convertCollapseDir")(convertCollapseDir)
+    if (dd != null) __obj.updateDynamic("dd")(dd)
+    if (dockedItems != null) __obj.updateDynamic("dockedItems")(dockedItems)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (fbar != null) __obj.updateDynamic("fbar")(fbar)
+    if (!js.isUndefined(floatable)) __obj.updateDynamic("floatable")(floatable)
+    if (!js.isUndefined(frame)) __obj.updateDynamic("frame")(frame)
+    if (!js.isUndefined(frameHeader)) __obj.updateDynamic("frameHeader")(frameHeader)
+    if (getCollapsed != null) __obj.updateDynamic("getCollapsed")(getCollapsed)
+    if (getHeader != null) __obj.updateDynamic("getHeader")(getHeader)
+    if (getState != null) __obj.updateDynamic("getState")(getState)
+    if (glyph != null) __obj.updateDynamic("glyph")(glyph)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (headerOverCls != null) __obj.updateDynamic("headerOverCls")(headerOverCls)
+    if (headerPosition != null) __obj.updateDynamic("headerPosition")(headerPosition)
+    if (!js.isUndefined(hideCollapseTool)) __obj.updateDynamic("hideCollapseTool")(hideCollapseTool)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (iconCls != null) __obj.updateDynamic("iconCls")(iconCls)
+    if (isLayoutRoot != null) __obj.updateDynamic("isLayoutRoot")(isLayoutRoot)
+    if (isVisible != null) __obj.updateDynamic("isVisible")(isVisible)
+    if (lbar != null) __obj.updateDynamic("lbar")(lbar)
+    if (!js.isUndefined(manageHeight)) __obj.updateDynamic("manageHeight")(manageHeight)
+    if (minButtonWidth != null) __obj.updateDynamic("minButtonWidth")(minButtonWidth.asInstanceOf[js.Any])
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onRemoved != null) __obj.updateDynamic("onRemoved")(onRemoved)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (!js.isUndefined(overlapHeader)) __obj.updateDynamic("overlapHeader")(overlapHeader)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (placeholderCollapseHideMode != null) __obj.updateDynamic("placeholderCollapseHideMode")(placeholderCollapseHideMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(preventHeader)) __obj.updateDynamic("preventHeader")(preventHeader)
+    if (rbar != null) __obj.updateDynamic("rbar")(rbar)
+    if (setBorder != null) __obj.updateDynamic("setBorder")(setBorder)
+    if (setGlyph != null) __obj.updateDynamic("setGlyph")(setGlyph)
+    if (setIcon != null) __obj.updateDynamic("setIcon")(setIcon)
+    if (setIconCls != null) __obj.updateDynamic("setIconCls")(setIconCls)
+    if (setTitle != null) __obj.updateDynamic("setTitle")(setTitle)
+    if (setUI != null) __obj.updateDynamic("setUI")(setUI)
+    if (!js.isUndefined(simpleDrag)) __obj.updateDynamic("simpleDrag")(simpleDrag)
+    if (tbar != null) __obj.updateDynamic("tbar")(tbar)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleAlign != null) __obj.updateDynamic("titleAlign")(titleAlign)
+    if (!js.isUndefined(titleCollapse)) __obj.updateDynamic("titleCollapse")(titleCollapse)
+    if (toggleCollapse != null) __obj.updateDynamic("toggleCollapse")(toggleCollapse)
+    if (tools != null) __obj.updateDynamic("tools")(tools)
+    __obj.asInstanceOf[IPanel]
+  }
+}
+

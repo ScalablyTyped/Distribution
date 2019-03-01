@@ -14,3 +14,22 @@ trait XTextFramesSupplier
   def getTextFrames(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XTextFramesSupplier {
+  @scala.inline
+  def apply(
+    TextFrames: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getTextFrames: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextFramesSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TextFrames")(TextFrames)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getTextFrames")(getTextFrames)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTextFramesSupplier]
+  }
+}
+

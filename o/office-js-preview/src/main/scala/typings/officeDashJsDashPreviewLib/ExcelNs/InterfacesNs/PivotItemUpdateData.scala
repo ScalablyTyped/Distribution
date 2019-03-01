@@ -30,3 +30,18 @@ trait PivotItemUpdateData extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PivotItemUpdateData {
+  @scala.inline
+  def apply(
+    isExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): PivotItemUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[PivotItemUpdateData]
+  }
+}
+

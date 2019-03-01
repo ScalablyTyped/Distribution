@@ -38,3 +38,24 @@ trait FormatOptions extends js.Object {
   var wrapAt: js.UndefOr[cleanDashCssLib.cleanDashCssLibNumbers.`false` | scala.Double] = js.undefined
 }
 
+object FormatOptions {
+  @scala.inline
+  def apply(
+    breakWith: java.lang.String = null,
+    breaks: cleanDashCssLib.Anon_AfterAtRule = null,
+    indentBy: scala.Int | scala.Double = null,
+    indentWith: cleanDashCssLib.cleanDashCssLibStrings.space | cleanDashCssLib.cleanDashCssLibStrings.tab = null,
+    spaces: cleanDashCssLib.Anon_AroundSelectorRelation = null,
+    wrapAt: cleanDashCssLib.cleanDashCssLibNumbers.`false` | scala.Double = null
+  ): FormatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (breakWith != null) __obj.updateDynamic("breakWith")(breakWith)
+    if (breaks != null) __obj.updateDynamic("breaks")(breaks)
+    if (indentBy != null) __obj.updateDynamic("indentBy")(indentBy.asInstanceOf[js.Any])
+    if (indentWith != null) __obj.updateDynamic("indentWith")(indentWith.asInstanceOf[js.Any])
+    if (spaces != null) __obj.updateDynamic("spaces")(spaces)
+    if (wrapAt != null) __obj.updateDynamic("wrapAt")(wrapAt.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FormatOptions]
+  }
+}
+

@@ -20,3 +20,18 @@ trait ListCompaniesResponse extends js.Object {
   var responseMetadata: js.UndefOr[ResponseMetadata] = js.undefined
 }
 
+object ListCompaniesResponse {
+  @scala.inline
+  def apply(
+    companies: js.Array[Company] = null,
+    nextPageToken: java.lang.String = null,
+    responseMetadata: ResponseMetadata = null
+  ): ListCompaniesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (companies != null) __obj.updateDynamic("companies")(companies)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    __obj.asInstanceOf[ListCompaniesResponse]
+  }
+}
+

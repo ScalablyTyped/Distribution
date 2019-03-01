@@ -17,3 +17,18 @@ trait Options extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    callback: js.Function1[/* event */ heremapsLib.HNs.utilNs.Event, scala.Unit] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    label: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -15,3 +15,13 @@ trait AndroidDevicePolicyConfig extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AndroidDevicePolicyConfig {
+  @scala.inline
+  def apply(kind: java.lang.String = null, state: java.lang.String = null): AndroidDevicePolicyConfig = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[AndroidDevicePolicyConfig]
+  }
+}
+

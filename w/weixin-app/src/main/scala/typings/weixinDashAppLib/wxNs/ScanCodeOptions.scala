@@ -22,3 +22,22 @@ trait ScanCodeOptions
   def success_MScanCodeOptions(res: ScanCodeData): scala.Unit
 }
 
+object ScanCodeOptions {
+  @scala.inline
+  def apply(
+    success: js.Function1[ScanCodeData, scala.Unit],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    onlyFromCamera: js.UndefOr[scala.Boolean] = js.undefined,
+    scanType: js.Array[java.lang.String] = null
+  ): ScanCodeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(onlyFromCamera)) __obj.updateDynamic("onlyFromCamera")(onlyFromCamera)
+    if (scanType != null) __obj.updateDynamic("scanType")(scanType)
+    __obj.asInstanceOf[ScanCodeOptions]
+  }
+}
+

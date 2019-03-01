@@ -9,3 +9,12 @@ trait URI2HKT[A] extends js.Object {
   var NonEmptyArray: fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]
 }
 
+object URI2HKT {
+  @scala.inline
+  def apply[A](NonEmptyArray: fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]): URI2HKT[A] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NonEmptyArray")(NonEmptyArray)
+    __obj.asInstanceOf[URI2HKT[A]]
+  }
+}
+

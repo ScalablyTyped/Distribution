@@ -11,3 +11,14 @@ trait SubscribeData extends js.Object {
   var targetURI: java.lang.String
 }
 
+object SubscribeData {
+  @scala.inline
+  def apply(channel: java.lang.String, poolIndex: scala.Double, targetURI: java.lang.String): SubscribeData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("poolIndex")(poolIndex)
+    __obj.updateDynamic("targetURI")(targetURI)
+    __obj.asInstanceOf[SubscribeData]
+  }
+}
+

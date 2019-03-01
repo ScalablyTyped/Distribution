@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait StringSchemaConstructor
-  extends org.scalablytyped.runtime.Instantiable0[StringSchema] {
+  extends AnySchemaConstructor
+     with org.scalablytyped.runtime.Instantiable0[StringSchema] {
   def apply(): StringSchema = js.native
 }
 

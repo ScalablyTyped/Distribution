@@ -15,7 +15,6 @@ package object distTypesOptionsMod {
     /* data */ js.UndefOr[js.Any], 
     scala.Unit
   ]
-  type HookKey = flatpickrLib.flatpickrLibStrings.onChange | flatpickrLib.flatpickrLibStrings.onClose | flatpickrLib.flatpickrLibStrings.onDayCreate | flatpickrLib.flatpickrLibStrings.onDestroy | flatpickrLib.flatpickrLibStrings.onKeyDown | flatpickrLib.flatpickrLibStrings.onMonthChange | flatpickrLib.flatpickrLibStrings.onOpen | flatpickrLib.flatpickrLibStrings.onParseConfig | flatpickrLib.flatpickrLibStrings.onReady | flatpickrLib.flatpickrLibStrings.onValueUpdate | flatpickrLib.flatpickrLibStrings.onYearChange | flatpickrLib.flatpickrLibStrings.onPreCalendarPosition
   type Options = stdLib.Partial[BaseOptions]
   type Plugin[E] = js.Function1[/* fp */ flatpickrLib.distTypesInstanceMod.Instance with E, Options]
 }

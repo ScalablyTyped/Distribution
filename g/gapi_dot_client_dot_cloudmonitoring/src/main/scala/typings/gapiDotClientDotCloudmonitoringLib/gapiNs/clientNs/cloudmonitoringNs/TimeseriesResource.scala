@@ -21,3 +21,22 @@ trait TimeseriesResource extends js.Object {
   def write(request: gapiDotClientDotCloudmonitoringLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[WriteTimeseriesResponse]
 }
 
+object TimeseriesResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotCloudmonitoringLib.Anon_Aggregator, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTimeseriesResponse]
+    ],
+    write: js.Function1[
+      gapiDotClientDotCloudmonitoringLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WriteTimeseriesResponse]
+    ]
+  ): TimeseriesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[TimeseriesResource]
+  }
+}
+

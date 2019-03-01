@@ -15,3 +15,26 @@ trait ApplicationOptions extends js.Object {
   var touch: js.UndefOr[TouchDevice] = js.undefined
 }
 
+object ApplicationOptions {
+  @scala.inline
+  def apply(
+    assetPrefix: java.lang.String = null,
+    gamepads: GamePads = null,
+    graphicsDeviceOptions: js.Object = null,
+    keyboard: Keyboard = null,
+    mouse: Mouse = null,
+    scriptPrefix: java.lang.String = null,
+    touch: TouchDevice = null
+  ): ApplicationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (assetPrefix != null) __obj.updateDynamic("assetPrefix")(assetPrefix)
+    if (gamepads != null) __obj.updateDynamic("gamepads")(gamepads)
+    if (graphicsDeviceOptions != null) __obj.updateDynamic("graphicsDeviceOptions")(graphicsDeviceOptions)
+    if (keyboard != null) __obj.updateDynamic("keyboard")(keyboard)
+    if (mouse != null) __obj.updateDynamic("mouse")(mouse)
+    if (scriptPrefix != null) __obj.updateDynamic("scriptPrefix")(scriptPrefix)
+    if (touch != null) __obj.updateDynamic("touch")(touch)
+    __obj.asInstanceOf[ApplicationOptions]
+  }
+}
+

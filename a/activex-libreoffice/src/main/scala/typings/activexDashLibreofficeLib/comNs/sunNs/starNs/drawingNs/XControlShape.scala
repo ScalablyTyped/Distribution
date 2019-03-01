@@ -28,3 +28,40 @@ trait XControlShape extends XShape {
   def setControl(xControl: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel): scala.Unit
 }
 
+object XControlShape {
+  @scala.inline
+  def apply(
+    Control: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel,
+    Position: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point,
+    ShapeType: java.lang.String,
+    Size: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size,
+    acquire: js.Function0[scala.Unit],
+    getControl: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel],
+    getPosition: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point],
+    getShapeType: js.Function0[java.lang.String],
+    getSize: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setControl: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XControlModel, scala.Unit],
+    setPosition: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Point, scala.Unit],
+    setSize: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Size, scala.Unit]
+  ): XControlShape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Control")(Control)
+    __obj.updateDynamic("Position")(Position)
+    __obj.updateDynamic("ShapeType")(ShapeType)
+    __obj.updateDynamic("Size")(Size)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getControl")(getControl)
+    __obj.updateDynamic("getPosition")(getPosition)
+    __obj.updateDynamic("getShapeType")(getShapeType)
+    __obj.updateDynamic("getSize")(getSize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setControl")(setControl)
+    __obj.updateDynamic("setPosition")(setPosition)
+    __obj.updateDynamic("setSize")(setSize)
+    __obj.asInstanceOf[XControlShape]
+  }
+}
+

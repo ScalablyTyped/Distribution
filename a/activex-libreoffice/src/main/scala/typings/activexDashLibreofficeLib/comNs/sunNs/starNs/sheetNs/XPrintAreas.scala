@@ -88,3 +88,53 @@ trait XPrintAreas
   def setTitleRows(aTitleRows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress): scala.Unit
 }
 
+object XPrintAreas {
+  @scala.inline
+  def apply(
+    PrintAreas: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    PrintTitleColumns: scala.Boolean,
+    PrintTitleRows: scala.Boolean,
+    TitleColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    TitleRows: activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress,
+    acquire: js.Function0[scala.Unit],
+    getPrintAreas: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress]
+    ],
+    getPrintTitleColumns: js.Function0[scala.Boolean],
+    getPrintTitleRows: js.Function0[scala.Boolean],
+    getTitleColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    getTitleRows: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPrintAreas: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress], 
+      scala.Unit
+    ],
+    setPrintTitleColumns: js.Function1[scala.Boolean, scala.Unit],
+    setPrintTitleRows: js.Function1[scala.Boolean, scala.Unit],
+    setTitleColumns: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit],
+    setTitleRows: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, scala.Unit]
+  ): XPrintAreas = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("PrintAreas")(PrintAreas)
+    __obj.updateDynamic("PrintTitleColumns")(PrintTitleColumns)
+    __obj.updateDynamic("PrintTitleRows")(PrintTitleRows)
+    __obj.updateDynamic("TitleColumns")(TitleColumns)
+    __obj.updateDynamic("TitleRows")(TitleRows)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getPrintAreas")(getPrintAreas)
+    __obj.updateDynamic("getPrintTitleColumns")(getPrintTitleColumns)
+    __obj.updateDynamic("getPrintTitleRows")(getPrintTitleRows)
+    __obj.updateDynamic("getTitleColumns")(getTitleColumns)
+    __obj.updateDynamic("getTitleRows")(getTitleRows)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setPrintAreas")(setPrintAreas)
+    __obj.updateDynamic("setPrintTitleColumns")(setPrintTitleColumns)
+    __obj.updateDynamic("setPrintTitleRows")(setPrintTitleRows)
+    __obj.updateDynamic("setTitleColumns")(setTitleColumns)
+    __obj.updateDynamic("setTitleRows")(setTitleRows)
+    __obj.asInstanceOf[XPrintAreas]
+  }
+}
+

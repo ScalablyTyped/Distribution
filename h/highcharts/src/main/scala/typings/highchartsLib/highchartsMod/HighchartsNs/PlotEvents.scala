@@ -73,3 +73,28 @@ trait PlotEvents extends js.Object {
   var show: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object PlotEvents {
+  @scala.inline
+  def apply(
+    afterAnimate: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    checkboxClick: js.Function1[/* event */ AreaCheckboxEvent, scala.Boolean | scala.Unit] = null,
+    click: js.Function1[/* event */ AreaClickEvent, scala.Unit] = null,
+    hide: js.Function0[scala.Unit] = null,
+    legendItemClick: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
+    mouseOut: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    mouseOver: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    show: js.Function0[scala.Unit] = null
+  ): PlotEvents = {
+    val __obj = js.Dynamic.literal()
+    if (afterAnimate != null) __obj.updateDynamic("afterAnimate")(afterAnimate)
+    if (checkboxClick != null) __obj.updateDynamic("checkboxClick")(checkboxClick)
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick)
+    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut)
+    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver)
+    if (show != null) __obj.updateDynamic("show")(show)
+    __obj.asInstanceOf[PlotEvents]
+  }
+}
+

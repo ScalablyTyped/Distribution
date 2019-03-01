@@ -17,3 +17,22 @@ trait LayerFilter
   extends XLayer
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XInitialization
 
+object LayerFilter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    initialize: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    readData: js.Function1[XLayerHandler, scala.Unit],
+    release: js.Function0[scala.Unit]
+  ): LayerFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("initialize")(initialize)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("readData")(readData)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[LayerFilter]
+  }
+}
+

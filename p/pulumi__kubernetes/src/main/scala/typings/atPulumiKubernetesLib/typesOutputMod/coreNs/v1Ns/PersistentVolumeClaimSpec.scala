@@ -49,3 +49,26 @@ trait PersistentVolumeClaimSpec extends js.Object {
   val volumeName: java.lang.String
 }
 
+object PersistentVolumeClaimSpec {
+  @scala.inline
+  def apply(
+    accessModes: js.Array[java.lang.String],
+    dataSource: TypedLocalObjectReference,
+    resources: ResourceRequirements,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    storageClassName: java.lang.String,
+    volumeMode: java.lang.String,
+    volumeName: java.lang.String
+  ): PersistentVolumeClaimSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessModes")(accessModes)
+    __obj.updateDynamic("dataSource")(dataSource)
+    __obj.updateDynamic("resources")(resources)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("storageClassName")(storageClassName)
+    __obj.updateDynamic("volumeMode")(volumeMode)
+    __obj.updateDynamic("volumeName")(volumeName)
+    __obj.asInstanceOf[PersistentVolumeClaimSpec]
+  }
+}
+

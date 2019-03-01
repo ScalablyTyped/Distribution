@@ -22,3 +22,18 @@ trait Options extends js.Object {
   var signingScheme: js.UndefOr[SigningScheme | SigningSchemeHash | AdvancedSigningScheme] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    encryptionScheme: EncryptionScheme | AdvancedEncryptionScheme = null,
+    environment: nodeDashRsaLib.nodeDashRsaLibStrings.browser | nodeDashRsaLib.nodeDashRsaLibStrings.node = null,
+    signingScheme: SigningScheme | SigningSchemeHash | AdvancedSigningScheme = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (encryptionScheme != null) __obj.updateDynamic("encryptionScheme")(encryptionScheme.asInstanceOf[js.Any])
+    if (environment != null) __obj.updateDynamic("environment")(environment.asInstanceOf[js.Any])
+    if (signingScheme != null) __obj.updateDynamic("signingScheme")(signingScheme.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

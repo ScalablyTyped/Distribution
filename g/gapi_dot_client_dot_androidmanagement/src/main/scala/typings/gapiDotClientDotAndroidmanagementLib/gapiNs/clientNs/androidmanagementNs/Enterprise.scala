@@ -36,3 +36,26 @@ trait Enterprise extends js.Object {
   var pubsubTopic: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Enterprise {
+  @scala.inline
+  def apply(
+    appAutoApprovalEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    enabledNotificationTypes: js.Array[java.lang.String] = null,
+    enterpriseDisplayName: java.lang.String = null,
+    logo: ExternalData = null,
+    name: java.lang.String = null,
+    primaryColor: scala.Int | scala.Double = null,
+    pubsubTopic: java.lang.String = null
+  ): Enterprise = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(appAutoApprovalEnabled)) __obj.updateDynamic("appAutoApprovalEnabled")(appAutoApprovalEnabled)
+    if (enabledNotificationTypes != null) __obj.updateDynamic("enabledNotificationTypes")(enabledNotificationTypes)
+    if (enterpriseDisplayName != null) __obj.updateDynamic("enterpriseDisplayName")(enterpriseDisplayName)
+    if (logo != null) __obj.updateDynamic("logo")(logo)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor.asInstanceOf[js.Any])
+    if (pubsubTopic != null) __obj.updateDynamic("pubsubTopic")(pubsubTopic)
+    __obj.asInstanceOf[Enterprise]
+  }
+}
+

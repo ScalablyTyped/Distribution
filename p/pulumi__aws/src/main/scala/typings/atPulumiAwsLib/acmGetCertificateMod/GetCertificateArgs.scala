@@ -26,3 +26,20 @@ trait GetCertificateArgs extends js.Object {
   val types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object GetCertificateArgs {
+  @scala.inline
+  def apply(
+    domain: java.lang.String,
+    mostRecent: js.UndefOr[scala.Boolean] = js.undefined,
+    statuses: js.Array[java.lang.String] = null,
+    types: js.Array[java.lang.String] = null
+  ): GetCertificateArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain)
+    if (!js.isUndefined(mostRecent)) __obj.updateDynamic("mostRecent")(mostRecent)
+    if (statuses != null) __obj.updateDynamic("statuses")(statuses)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[GetCertificateArgs]
+  }
+}
+

@@ -23,3 +23,22 @@ trait GalleryItemClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GalleryItemClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    galleryModel: js.Any = null,
+    model: js.Any = null,
+    target: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): GalleryItemClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (galleryModel != null) __obj.updateDynamic("galleryModel")(galleryModel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[GalleryItemClickEventArgs]
+  }
+}
+

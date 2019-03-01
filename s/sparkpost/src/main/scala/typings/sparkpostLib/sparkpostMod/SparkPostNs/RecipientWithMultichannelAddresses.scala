@@ -20,3 +20,13 @@ trait RecipientWithMultichannelAddresses extends js.Object {
   var multichannel_addresses: js.Array[MultichannelAddress]
 }
 
+object RecipientWithMultichannelAddresses {
+  @scala.inline
+  def apply(multichannel_addresses: js.Array[MultichannelAddress], address: Address | java.lang.String = null): RecipientWithMultichannelAddresses = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("multichannel_addresses")(multichannel_addresses)
+    if (address != null) __obj.updateDynamic("address")(address.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecipientWithMultichannelAddresses]
+  }
+}
+

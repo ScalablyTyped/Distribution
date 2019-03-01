@@ -11,3 +11,12 @@ trait AjaxSuccessEventArgs extends js.Object {
   var data: js.UndefOr[js.Any] = js.undefined
 }
 
+object AjaxSuccessEventArgs {
+  @scala.inline
+  def apply(data: js.Any = null): AjaxSuccessEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[AjaxSuccessEventArgs]
+  }
+}
+

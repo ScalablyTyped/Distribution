@@ -12,3 +12,20 @@ trait JQueryEventSpy extends js.Object {
   def reset(): js.Any
 }
 
+object JQueryEventSpy {
+  @scala.inline
+  def apply(
+    eventName: java.lang.String,
+    handler: js.Function1[jqueryLib.JQueryEventObject, js.Any],
+    reset: js.Function0[js.Any],
+    selector: java.lang.String
+  ): JQueryEventSpy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventName")(eventName)
+    __obj.updateDynamic("handler")(handler)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("selector")(selector)
+    __obj.asInstanceOf[JQueryEventSpy]
+  }
+}
+

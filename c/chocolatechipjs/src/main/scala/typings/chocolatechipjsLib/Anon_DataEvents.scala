@@ -12,3 +12,12 @@ trait Anon_DataEvents extends js.Object {
   var events: Anon_Delete
 }
 
+object Anon_DataEvents {
+  @scala.inline
+  def apply(events: Anon_Delete): Anon_DataEvents = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("events")(events)
+    __obj.asInstanceOf[Anon_DataEvents]
+  }
+}
+

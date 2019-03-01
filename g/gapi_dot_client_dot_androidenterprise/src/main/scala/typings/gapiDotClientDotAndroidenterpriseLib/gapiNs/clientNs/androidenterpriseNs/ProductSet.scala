@@ -27,3 +27,20 @@ trait ProductSet extends js.Object {
   var productVisibility: js.UndefOr[js.Array[ProductVisibility]] = js.undefined
 }
 
+object ProductSet {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    productId: js.Array[java.lang.String] = null,
+    productSetBehavior: java.lang.String = null,
+    productVisibility: js.Array[ProductVisibility] = null
+  ): ProductSet = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (productSetBehavior != null) __obj.updateDynamic("productSetBehavior")(productSetBehavior)
+    if (productVisibility != null) __obj.updateDynamic("productVisibility")(productVisibility)
+    __obj.asInstanceOf[ProductSet]
+  }
+}
+

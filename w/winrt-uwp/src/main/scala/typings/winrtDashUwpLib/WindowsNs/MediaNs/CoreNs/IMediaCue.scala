@@ -15,3 +15,14 @@ trait IMediaCue extends js.Object {
   var startTime: scala.Double
 }
 
+object IMediaCue {
+  @scala.inline
+  def apply(duration: scala.Double, id: java.lang.String, startTime: scala.Double): IMediaCue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[IMediaCue]
+  }
+}
+

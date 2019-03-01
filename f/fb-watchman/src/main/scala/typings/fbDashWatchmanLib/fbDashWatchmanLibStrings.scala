@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object fbDashWatchmanLibStrings {
   @js.native
-  sealed trait log extends js.Object
+  sealed trait log
+    extends fbDashWatchmanLib.fbDashWatchmanMod.UnilateralTags
   
   @js.native
-  sealed trait unilateralTags extends js.Object
+  sealed trait unilateralTags
+    extends fbDashWatchmanLib.fbDashWatchmanMod.UnilateralTags
   
   @scala.inline
   def log: log = "log".asInstanceOf[log]

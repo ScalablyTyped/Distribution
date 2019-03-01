@@ -21,3 +21,22 @@ trait Volumeannotations extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Volumeannotations {
+  @scala.inline
+  def apply(
+    items: js.Array[Volumeannotation] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    totalItems: scala.Int | scala.Double = null,
+    version: java.lang.String = null
+  ): Volumeannotations = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (totalItems != null) __obj.updateDynamic("totalItems")(totalItems.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Volumeannotations]
+  }
+}
+

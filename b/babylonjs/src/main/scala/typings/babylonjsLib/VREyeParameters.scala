@@ -13,3 +13,20 @@ trait VREyeParameters extends js.Object {
   val renderWidth: scala.Double
 }
 
+object VREyeParameters {
+  @scala.inline
+  def apply(
+    fieldOfView: VRFieldOfView,
+    offset: stdLib.Float32Array,
+    renderHeight: scala.Double,
+    renderWidth: scala.Double
+  ): VREyeParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fieldOfView")(fieldOfView)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("renderHeight")(renderHeight)
+    __obj.updateDynamic("renderWidth")(renderWidth)
+    __obj.asInstanceOf[VREyeParameters]
+  }
+}
+

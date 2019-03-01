@@ -15,3 +15,12 @@ trait Billing extends js.Object {
   var consumerDestinations: js.UndefOr[js.Array[BillingDestination]] = js.undefined
 }
 
+object Billing {
+  @scala.inline
+  def apply(consumerDestinations: js.Array[BillingDestination] = null): Billing = {
+    val __obj = js.Dynamic.literal()
+    if (consumerDestinations != null) __obj.updateDynamic("consumerDestinations")(consumerDestinations)
+    __obj.asInstanceOf[Billing]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_2UpgradeController extends js.Object {
   var upgradeController: screepsLib.screepsLibNumbers.`2`
 }
 
+object Anon_2UpgradeController {
+  @scala.inline
+  def apply(upgradeController: screepsLib.screepsLibNumbers.`2`): Anon_2UpgradeController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("upgradeController")(upgradeController)
+    __obj.asInstanceOf[Anon_2UpgradeController]
+  }
+}
+

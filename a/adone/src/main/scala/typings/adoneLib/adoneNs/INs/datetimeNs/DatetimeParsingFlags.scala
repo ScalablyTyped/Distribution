@@ -20,3 +20,36 @@ trait DatetimeParsingFlags extends js.Object {
   var userInvalidated: scala.Boolean
 }
 
+object DatetimeParsingFlags {
+  @scala.inline
+  def apply(
+    charsLeftOver: scala.Double,
+    empty: scala.Boolean,
+    invalidFormat: scala.Boolean,
+    iso: scala.Boolean,
+    nullInput: scala.Boolean,
+    overflow: scala.Double,
+    parsedDateParts: js.Array[_],
+    unusedInput: js.Array[java.lang.String],
+    unusedTokens: js.Array[java.lang.String],
+    userInvalidated: scala.Boolean,
+    invalidMonth: java.lang.String = null,
+    meridiem: java.lang.String = null
+  ): DatetimeParsingFlags = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("charsLeftOver")(charsLeftOver)
+    __obj.updateDynamic("empty")(empty)
+    __obj.updateDynamic("invalidFormat")(invalidFormat)
+    __obj.updateDynamic("iso")(iso)
+    __obj.updateDynamic("nullInput")(nullInput)
+    __obj.updateDynamic("overflow")(overflow)
+    __obj.updateDynamic("parsedDateParts")(parsedDateParts)
+    __obj.updateDynamic("unusedInput")(unusedInput)
+    __obj.updateDynamic("unusedTokens")(unusedTokens)
+    __obj.updateDynamic("userInvalidated")(userInvalidated)
+    if (invalidMonth != null) __obj.updateDynamic("invalidMonth")(invalidMonth)
+    if (meridiem != null) __obj.updateDynamic("meridiem")(meridiem)
+    __obj.asInstanceOf[DatetimeParsingFlags]
+  }
+}
+

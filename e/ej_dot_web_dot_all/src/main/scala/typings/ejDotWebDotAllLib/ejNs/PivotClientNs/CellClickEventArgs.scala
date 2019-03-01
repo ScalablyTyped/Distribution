@@ -17,3 +17,14 @@ trait CellClickEventArgs extends js.Object {
   var selectedData: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object CellClickEventArgs {
+  @scala.inline
+  def apply(customObject: js.Any = null, element: js.Any = null, selectedData: js.Array[_] = null): CellClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (selectedData != null) __obj.updateDynamic("selectedData")(selectedData)
+    __obj.asInstanceOf[CellClickEventArgs]
+  }
+}
+

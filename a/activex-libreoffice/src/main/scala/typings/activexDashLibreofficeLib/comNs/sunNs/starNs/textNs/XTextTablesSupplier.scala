@@ -22,3 +22,22 @@ trait XTextTablesSupplier
   def getTextTables(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
 }
 
+object XTextTablesSupplier {
+  @scala.inline
+  def apply(
+    TextTables: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess,
+    acquire: js.Function0[scala.Unit],
+    getTextTables: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTextTablesSupplier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("TextTables")(TextTables)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getTextTables")(getTextTables)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTextTablesSupplier]
+  }
+}
+

@@ -12,3 +12,12 @@ trait DescribeEndpointsResponse extends js.Object {
   var Endpoints: Endpoints
 }
 
+object DescribeEndpointsResponse {
+  @scala.inline
+  def apply(Endpoints: Endpoints): DescribeEndpointsResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Endpoints")(Endpoints)
+    __obj.asInstanceOf[DescribeEndpointsResponse]
+  }
+}
+

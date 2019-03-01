@@ -50,3 +50,34 @@ trait NodesLane extends js.Object {
   var zorder: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NodesLane {
+  @scala.inline
+  def apply(
+    addInfo: js.Any = null,
+    children: js.Array[_] = null,
+    cssClass: java.lang.String = null,
+    fillColor: java.lang.String = null,
+    header: js.Any = null,
+    height: scala.Int | scala.Double = null,
+    isLane: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    orientation: java.lang.String = null,
+    width: scala.Int | scala.Double = null,
+    zorder: scala.Int | scala.Double = null
+  ): NodesLane = {
+    val __obj = js.Dynamic.literal()
+    if (addInfo != null) __obj.updateDynamic("addInfo")(addInfo)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(isLane)) __obj.updateDynamic("isLane")(isLane)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zorder != null) __obj.updateDynamic("zorder")(zorder.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodesLane]
+  }
+}
+

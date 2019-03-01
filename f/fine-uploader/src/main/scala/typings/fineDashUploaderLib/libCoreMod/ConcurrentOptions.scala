@@ -14,3 +14,12 @@ trait ConcurrentOptions extends js.Object {
   var enabled: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ConcurrentOptions {
+  @scala.inline
+  def apply(enabled: js.UndefOr[scala.Boolean] = js.undefined): ConcurrentOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[ConcurrentOptions]
+  }
+}
+

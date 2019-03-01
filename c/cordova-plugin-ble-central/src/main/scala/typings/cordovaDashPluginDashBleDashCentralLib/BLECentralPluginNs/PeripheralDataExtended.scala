@@ -10,3 +10,24 @@ trait PeripheralDataExtended extends PeripheralData {
   var services: js.Array[java.lang.String]
 }
 
+object PeripheralDataExtended {
+  @scala.inline
+  def apply(
+    advertising: stdLib.ArrayBuffer | js.Any,
+    characteristics: js.Array[PeripheralCharacteristic],
+    id: java.lang.String,
+    name: java.lang.String,
+    rssi: scala.Double,
+    services: js.Array[java.lang.String]
+  ): PeripheralDataExtended = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("advertising")(advertising.asInstanceOf[js.Any])
+    __obj.updateDynamic("characteristics")(characteristics)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("rssi")(rssi)
+    __obj.updateDynamic("services")(services)
+    __obj.asInstanceOf[PeripheralDataExtended]
+  }
+}
+

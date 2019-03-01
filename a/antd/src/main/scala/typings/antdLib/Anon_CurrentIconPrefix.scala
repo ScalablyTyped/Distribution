@@ -11,3 +11,18 @@ trait Anon_CurrentIconPrefix extends js.Object {
   var prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
 }
 
+object Anon_CurrentIconPrefix {
+  @scala.inline
+  def apply(
+    current: propDashTypesLib.propDashTypesMod.Requireable[scala.Double],
+    iconPrefix: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String],
+    prefixCls: propDashTypesLib.propDashTypesMod.Requireable[java.lang.String]
+  ): Anon_CurrentIconPrefix = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("current")(current)
+    __obj.updateDynamic("iconPrefix")(iconPrefix)
+    __obj.updateDynamic("prefixCls")(prefixCls)
+    __obj.asInstanceOf[Anon_CurrentIconPrefix]
+  }
+}
+

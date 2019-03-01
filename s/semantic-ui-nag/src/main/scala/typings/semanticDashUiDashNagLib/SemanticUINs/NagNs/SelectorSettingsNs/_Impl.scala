@@ -12,3 +12,12 @@ trait _Impl extends js.Object {
   var close: java.lang.String
 }
 
+object _Impl {
+  @scala.inline
+  def apply(close: java.lang.String): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("close")(close)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

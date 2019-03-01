@@ -20,3 +20,20 @@ trait BeforePrintEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforePrintEventArgs {
+  @scala.inline
+  def apply(
+    element: js.Any = null,
+    model: js.Any = null,
+    selectedRows: js.Any = null,
+    `type`: java.lang.String = null
+  ): BeforePrintEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (selectedRows != null) __obj.updateDynamic("selectedRows")(selectedRows)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforePrintEventArgs]
+  }
+}
+

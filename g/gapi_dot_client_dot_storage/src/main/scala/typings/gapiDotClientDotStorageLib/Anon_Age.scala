@@ -27,3 +27,22 @@ trait Anon_Age extends js.Object {
   var numNewerVersions: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Age {
+  @scala.inline
+  def apply(
+    age: scala.Int | scala.Double = null,
+    createdBefore: java.lang.String = null,
+    isLive: js.UndefOr[scala.Boolean] = js.undefined,
+    matchesStorageClass: js.Array[java.lang.String] = null,
+    numNewerVersions: scala.Int | scala.Double = null
+  ): Anon_Age = {
+    val __obj = js.Dynamic.literal()
+    if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
+    if (createdBefore != null) __obj.updateDynamic("createdBefore")(createdBefore)
+    if (!js.isUndefined(isLive)) __obj.updateDynamic("isLive")(isLive)
+    if (matchesStorageClass != null) __obj.updateDynamic("matchesStorageClass")(matchesStorageClass)
+    if (numNewerVersions != null) __obj.updateDynamic("numNewerVersions")(numNewerVersions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Age]
+  }
+}
+

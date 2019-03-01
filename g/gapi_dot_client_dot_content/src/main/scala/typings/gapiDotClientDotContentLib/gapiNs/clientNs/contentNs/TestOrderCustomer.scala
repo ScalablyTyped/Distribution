@@ -17,3 +17,18 @@ trait TestOrderCustomer extends js.Object {
   var fullName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TestOrderCustomer {
+  @scala.inline
+  def apply(
+    email: java.lang.String = null,
+    explicitMarketingPreference: js.UndefOr[scala.Boolean] = js.undefined,
+    fullName: java.lang.String = null
+  ): TestOrderCustomer = {
+    val __obj = js.Dynamic.literal()
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (!js.isUndefined(explicitMarketingPreference)) __obj.updateDynamic("explicitMarketingPreference")(explicitMarketingPreference)
+    if (fullName != null) __obj.updateDynamic("fullName")(fullName)
+    __obj.asInstanceOf[TestOrderCustomer]
+  }
+}
+

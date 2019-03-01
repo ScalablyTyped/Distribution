@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object colorDashNamerLibStrings {
   @js.native
-  sealed trait basic extends js.Object
+  sealed trait basic
+    extends colorDashNamerLib.colorDashNamerMod.ColorNamerNs.Palette
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait html
+    extends colorDashNamerLib.colorDashNamerMod.ColorNamerNs.Palette
   
   @js.native
-  sealed trait ntc extends js.Object
+  sealed trait ntc
+    extends colorDashNamerLib.colorDashNamerMod.ColorNamerNs.Palette
   
   @js.native
-  sealed trait pantone extends js.Object
+  sealed trait pantone
+    extends colorDashNamerLib.colorDashNamerMod.ColorNamerNs.Palette
   
   @js.native
-  sealed trait roygbiv extends js.Object
+  sealed trait roygbiv
+    extends colorDashNamerLib.colorDashNamerMod.ColorNamerNs.Palette
   
   @js.native
-  sealed trait x11 extends js.Object
+  sealed trait x11
+    extends colorDashNamerLib.colorDashNamerMod.ColorNamerNs.Palette
   
   @scala.inline
   def basic: basic = "basic".asInstanceOf[basic]

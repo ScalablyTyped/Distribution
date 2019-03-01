@@ -16,3 +16,22 @@ trait IArrayStore extends IStore {
   ] = js.undefined
 }
 
+object IArrayStore {
+  @scala.inline
+  def apply(
+    IStore: IStore = null,
+    getProxy: js.Function0[_] = null,
+    loadData: js.Function2[/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[js.Any], scala.Unit] = null,
+    proxy: js.Any = null,
+    setProxy: js.Function1[/* proxy */ js.UndefOr[js.Any], scala.Unit] = null
+  ): IArrayStore = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IStore)
+    if (getProxy != null) __obj.updateDynamic("getProxy")(getProxy)
+    if (loadData != null) __obj.updateDynamic("loadData")(loadData)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (setProxy != null) __obj.updateDynamic("setProxy")(setProxy)
+    __obj.asInstanceOf[IArrayStore]
+  }
+}
+

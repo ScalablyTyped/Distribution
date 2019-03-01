@@ -221,3 +221,42 @@ trait Anon_Coord extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Coord {
+  @scala.inline
+  def apply(
+    coord: js.Array[_] = null,
+    itemStyle: Anon_BorderColorBorderType = null,
+    label: Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColor = null,
+    name: java.lang.String = null,
+    symbol: java.lang.String = null,
+    symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolOffset: js.Array[_] = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | scala.Double = null,
+    `type`: java.lang.String = null,
+    value: scala.Int | scala.Double = null,
+    valueDim: java.lang.String = null,
+    valueIndex: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Anon_Coord = {
+    val __obj = js.Dynamic.literal()
+    if (coord != null) __obj.updateDynamic("coord")(coord)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (valueDim != null) __obj.updateDynamic("valueDim")(valueDim)
+    if (valueIndex != null) __obj.updateDynamic("valueIndex")(valueIndex.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Coord]
+  }
+}
+

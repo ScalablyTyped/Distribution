@@ -16,3 +16,32 @@ trait SitemapsResource extends js.Object {
   def submit(request: gapiDotClientDotWebmastersLib.Anon_AltFeedpath): gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
 }
 
+object SitemapsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_AltFeedpath, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_AltFeedpath, 
+      gapiDotClientLib.gapiNs.clientNs.Request[WmxSitemap]
+    ],
+    list: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SitemapsListResponse]
+    ],
+    submit: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_AltFeedpath, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ]
+  ): SitemapsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("submit")(submit)
+    __obj.asInstanceOf[SitemapsResource]
+  }
+}
+

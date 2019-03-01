@@ -18,3 +18,22 @@ trait IdentitytoolkitRelyingpartyGetAccountInfoRequest extends js.Object {
   var phoneNumber: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object IdentitytoolkitRelyingpartyGetAccountInfoRequest {
+  @scala.inline
+  def apply(
+    delegatedProjectNumber: java.lang.String = null,
+    email: js.Array[java.lang.String] = null,
+    idToken: java.lang.String = null,
+    localId: js.Array[java.lang.String] = null,
+    phoneNumber: js.Array[java.lang.String] = null
+  ): IdentitytoolkitRelyingpartyGetAccountInfoRequest = {
+    val __obj = js.Dynamic.literal()
+    if (delegatedProjectNumber != null) __obj.updateDynamic("delegatedProjectNumber")(delegatedProjectNumber)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (idToken != null) __obj.updateDynamic("idToken")(idToken)
+    if (localId != null) __obj.updateDynamic("localId")(localId)
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    __obj.asInstanceOf[IdentitytoolkitRelyingpartyGetAccountInfoRequest]
+  }
+}
+

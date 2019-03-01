@@ -44,3 +44,29 @@ trait ListingElement extends js.Object {
   var `type`: java.lang.String
 }
 
+object ListingElement {
+  @scala.inline
+  def apply(
+    date: stdLib.Date,
+    name: java.lang.String,
+    size: java.lang.String,
+    `type`: java.lang.String,
+    group: java.lang.String = null,
+    owner: java.lang.String = null,
+    rights: ftpLib.Anon_Group = null,
+    sticky: js.UndefOr[scala.Boolean] = js.undefined,
+    target: java.lang.String = null
+  ): ListingElement = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("size")(size)
+    if (group != null) __obj.updateDynamic("group")(group)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (rights != null) __obj.updateDynamic("rights")(rights)
+    if (!js.isUndefined(sticky)) __obj.updateDynamic("sticky")(sticky)
+    if (target != null) __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[ListingElement]
+  }
+}
+

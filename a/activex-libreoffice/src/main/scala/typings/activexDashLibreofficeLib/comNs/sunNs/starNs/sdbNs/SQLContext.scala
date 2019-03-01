@@ -21,3 +21,24 @@ trait SQLContext
   var Details: java.lang.String
 }
 
+object SQLContext {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Details: java.lang.String,
+    ErrorCode: scala.Double,
+    Message: java.lang.String,
+    NextException: js.Any,
+    SQLState: java.lang.String
+  ): SQLContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Details")(Details)
+    __obj.updateDynamic("ErrorCode")(ErrorCode)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("NextException")(NextException)
+    __obj.updateDynamic("SQLState")(SQLState)
+    __obj.asInstanceOf[SQLContext]
+  }
+}
+

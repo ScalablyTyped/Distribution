@@ -16,3 +16,13 @@ trait Anon_PathStat extends js.Object {
   var stat: adoneLib.adoneNs.fsNs.INs.Stats
 }
 
+object Anon_PathStat {
+  @scala.inline
+  def apply(path: java.lang.String, stat: adoneLib.adoneNs.fsNs.INs.Stats): Anon_PathStat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("stat")(stat)
+    __obj.asInstanceOf[Anon_PathStat]
+  }
+}
+

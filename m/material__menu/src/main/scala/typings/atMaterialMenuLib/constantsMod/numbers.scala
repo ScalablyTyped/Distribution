@@ -23,3 +23,24 @@ trait numbers
   var TRANSITION_OPEN_DURATION: atMaterialMenuLib.atMaterialMenuLibNumbers.`120`
 }
 
+object numbers {
+  @scala.inline
+  def apply(
+    ANCHOR_TO_MENU_WIDTH_RATIO: atMaterialMenuLib.atMaterialMenuLibNumbers.`0DOT67`,
+    MARGIN_TO_EDGE: atMaterialMenuLib.atMaterialMenuLibNumbers.`32`,
+    OFFSET_TO_MENU_HEIGHT_RATIO: atMaterialMenuLib.atMaterialMenuLibNumbers.`0DOT1`,
+    SELECTED_TRIGGER_DELAY: atMaterialMenuLib.atMaterialMenuLibNumbers.`50`,
+    TRANSITION_CLOSE_DURATION: atMaterialMenuLib.atMaterialMenuLibNumbers.`75`,
+    TRANSITION_OPEN_DURATION: atMaterialMenuLib.atMaterialMenuLibNumbers.`120`
+  ): numbers = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ANCHOR_TO_MENU_WIDTH_RATIO")(ANCHOR_TO_MENU_WIDTH_RATIO)
+    __obj.updateDynamic("MARGIN_TO_EDGE")(MARGIN_TO_EDGE)
+    __obj.updateDynamic("OFFSET_TO_MENU_HEIGHT_RATIO")(OFFSET_TO_MENU_HEIGHT_RATIO)
+    __obj.updateDynamic("SELECTED_TRIGGER_DELAY")(SELECTED_TRIGGER_DELAY)
+    __obj.updateDynamic("TRANSITION_CLOSE_DURATION")(TRANSITION_CLOSE_DURATION)
+    __obj.updateDynamic("TRANSITION_OPEN_DURATION")(TRANSITION_OPEN_DURATION)
+    __obj.asInstanceOf[numbers]
+  }
+}
+

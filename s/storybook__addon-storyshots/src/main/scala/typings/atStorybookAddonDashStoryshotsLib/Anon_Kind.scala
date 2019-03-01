@@ -10,3 +10,13 @@ trait Anon_Kind extends js.Object {
   var story: java.lang.String
 }
 
+object Anon_Kind {
+  @scala.inline
+  def apply(kind: js.Any, story: java.lang.String): Anon_Kind = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("story")(story)
+    __obj.asInstanceOf[Anon_Kind]
+  }
+}
+

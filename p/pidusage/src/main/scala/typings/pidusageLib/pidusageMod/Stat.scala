@@ -36,3 +36,26 @@ trait Stat extends js.Object {
   var timestamp: scala.Double
 }
 
+object Stat {
+  @scala.inline
+  def apply(
+    cpu: scala.Double,
+    ctime: scala.Double,
+    elapsed: scala.Double,
+    memory: scala.Double,
+    pid: scala.Double,
+    ppid: scala.Double,
+    timestamp: scala.Double
+  ): Stat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cpu")(cpu)
+    __obj.updateDynamic("ctime")(ctime)
+    __obj.updateDynamic("elapsed")(elapsed)
+    __obj.updateDynamic("memory")(memory)
+    __obj.updateDynamic("pid")(pid)
+    __obj.updateDynamic("ppid")(ppid)
+    __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[Stat]
+  }
+}
+

@@ -22,3 +22,22 @@ trait ActionSheetOptions
   var success_ActionSheetOptions: js.UndefOr[js.Function1[/* res */ baiduDashAppLib.Anon_TapIndex, scala.Unit]] = js.undefined
 }
 
+object ActionSheetOptions {
+  @scala.inline
+  def apply(
+    itemList: js.Array[java.lang.String],
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    itemColor: java.lang.String = null,
+    success: js.Function1[/* res */ baiduDashAppLib.Anon_TapIndex, scala.Unit] = null
+  ): ActionSheetOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("itemList")(itemList)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (itemColor != null) __obj.updateDynamic("itemColor")(itemColor)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ActionSheetOptions]
+  }
+}
+

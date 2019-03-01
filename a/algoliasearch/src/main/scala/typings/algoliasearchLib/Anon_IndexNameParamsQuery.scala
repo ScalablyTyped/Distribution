@@ -11,3 +11,18 @@ trait Anon_IndexNameParamsQuery extends js.Object {
   var query: java.lang.String
 }
 
+object Anon_IndexNameParamsQuery {
+  @scala.inline
+  def apply(
+    indexName: java.lang.String,
+    params: algoliasearchLib.liteMod.algoliasearchNs.QueryParameters,
+    query: java.lang.String
+  ): Anon_IndexNameParamsQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("indexName")(indexName)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[Anon_IndexNameParamsQuery]
+  }
+}
+

@@ -52,3 +52,52 @@ trait Activity extends js.Object {
   var verb: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Activity {
+  @scala.inline
+  def apply(
+    access: Acl = null,
+    actor: gapiDotClientDotPlusdomainsLib.Anon_ClientSpecificActorInfo = null,
+    address: java.lang.String = null,
+    annotation: java.lang.String = null,
+    crosspostSource: java.lang.String = null,
+    etag: java.lang.String = null,
+    geocode: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    location: Place = null,
+    `object`: gapiDotClientDotPlusdomainsLib.Anon_Actor = null,
+    placeId: java.lang.String = null,
+    placeName: java.lang.String = null,
+    provider: gapiDotClientDotPlusdomainsLib.Anon_Title = null,
+    published: java.lang.String = null,
+    radius: java.lang.String = null,
+    title: java.lang.String = null,
+    updated: java.lang.String = null,
+    url: java.lang.String = null,
+    verb: java.lang.String = null
+  ): Activity = {
+    val __obj = js.Dynamic.literal()
+    if (access != null) __obj.updateDynamic("access")(access)
+    if (actor != null) __obj.updateDynamic("actor")(actor)
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    if (crosspostSource != null) __obj.updateDynamic("crosspostSource")(crosspostSource)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (geocode != null) __obj.updateDynamic("geocode")(geocode)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (`object` != null) __obj.updateDynamic("object")(`object`)
+    if (placeId != null) __obj.updateDynamic("placeId")(placeId)
+    if (placeName != null) __obj.updateDynamic("placeName")(placeName)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (published != null) __obj.updateDynamic("published")(published)
+    if (radius != null) __obj.updateDynamic("radius")(radius)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (verb != null) __obj.updateDynamic("verb")(verb)
+    __obj.asInstanceOf[Activity]
+  }
+}
+

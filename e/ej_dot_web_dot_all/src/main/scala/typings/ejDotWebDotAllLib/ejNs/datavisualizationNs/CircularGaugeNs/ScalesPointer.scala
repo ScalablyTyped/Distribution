@@ -76,3 +76,46 @@ trait ScalesPointer extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScalesPointer {
+  @scala.inline
+  def apply(
+    backNeedleLength: scala.Int | scala.Double = null,
+    backgroundColor: java.lang.String = null,
+    border: ScalesPointersBorder = null,
+    distanceFromScale: scala.Int | scala.Double = null,
+    gradients: js.Any = null,
+    imageUrl: java.lang.String = null,
+    length: scala.Int | scala.Double = null,
+    markerType: MarkerType | java.lang.String = null,
+    needleType: NeedleType | java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    placement: Placement | java.lang.String = null,
+    pointerValueText: ScalesPointersPointerValueText = null,
+    radius: scala.Int | scala.Double = null,
+    showBackNeedle: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: PointerType | java.lang.String = null,
+    value: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): ScalesPointer = {
+    val __obj = js.Dynamic.literal()
+    if (backNeedleLength != null) __obj.updateDynamic("backNeedleLength")(backNeedleLength.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale.asInstanceOf[js.Any])
+    if (gradients != null) __obj.updateDynamic("gradients")(gradients)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (markerType != null) __obj.updateDynamic("markerType")(markerType.asInstanceOf[js.Any])
+    if (needleType != null) __obj.updateDynamic("needleType")(needleType.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (pointerValueText != null) __obj.updateDynamic("pointerValueText")(pointerValueText)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBackNeedle)) __obj.updateDynamic("showBackNeedle")(showBackNeedle)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScalesPointer]
+  }
+}
+

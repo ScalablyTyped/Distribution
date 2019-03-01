@@ -10,3 +10,13 @@ trait GanttRange extends js.Object {
   var start: js.UndefOr[stdLib.Date] = js.undefined
 }
 
+object GanttRange {
+  @scala.inline
+  def apply(end: stdLib.Date = null, start: stdLib.Date = null): GanttRange = {
+    val __obj = js.Dynamic.literal()
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[GanttRange]
+  }
+}
+

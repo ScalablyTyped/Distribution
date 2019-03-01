@@ -61,3 +61,36 @@ trait ColumnProps extends js.Object {
   var xsShift: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ColumnProps {
+  @scala.inline
+  def apply(
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    divisions: scala.Int | scala.Double = null,
+    fluid: js.UndefOr[scala.Boolean] = js.undefined,
+    lg: scala.Int | scala.Double = null,
+    lgShift: scala.Int | scala.Double = null,
+    md: scala.Int | scala.Double = null,
+    mdShift: scala.Int | scala.Double = null,
+    sm: scala.Int | scala.Double = null,
+    smShift: scala.Int | scala.Double = null,
+    tagName: java.lang.String = null,
+    xs: scala.Int | scala.Double = null,
+    xsShift: scala.Int | scala.Double = null
+  ): ColumnProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (divisions != null) __obj.updateDynamic("divisions")(divisions.asInstanceOf[js.Any])
+    if (!js.isUndefined(fluid)) __obj.updateDynamic("fluid")(fluid)
+    if (lg != null) __obj.updateDynamic("lg")(lg.asInstanceOf[js.Any])
+    if (lgShift != null) __obj.updateDynamic("lgShift")(lgShift.asInstanceOf[js.Any])
+    if (md != null) __obj.updateDynamic("md")(md.asInstanceOf[js.Any])
+    if (mdShift != null) __obj.updateDynamic("mdShift")(mdShift.asInstanceOf[js.Any])
+    if (sm != null) __obj.updateDynamic("sm")(sm.asInstanceOf[js.Any])
+    if (smShift != null) __obj.updateDynamic("smShift")(smShift.asInstanceOf[js.Any])
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (xs != null) __obj.updateDynamic("xs")(xs.asInstanceOf[js.Any])
+    if (xsShift != null) __obj.updateDynamic("xsShift")(xsShift.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnProps]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Time extends js.Object {
   def validator(value: js.Any, callback: js.Function1[/* valid */ scala.Boolean, scala.Unit]): scala.Unit
 }
 
+object Time {
+  @scala.inline
+  def apply(
+    editor: handsontableLib.handsontableMod.HandsontableNs.underscoreEditorsNs.Text,
+    renderer: handsontableLib.handsontableMod.HandsontableNs.renderersNs.Text,
+    validator: js.Function2[js.Any, js.Function1[/* valid */ scala.Boolean, scala.Unit], scala.Unit]
+  ): Time = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editor")(editor)
+    __obj.updateDynamic("renderer")(renderer)
+    __obj.updateDynamic("validator")(validator)
+    __obj.asInstanceOf[Time]
+  }
+}
+

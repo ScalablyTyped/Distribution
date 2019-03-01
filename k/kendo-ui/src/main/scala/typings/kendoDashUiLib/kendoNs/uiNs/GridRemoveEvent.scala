@@ -10,3 +10,22 @@ trait GridRemoveEvent extends GridEvent {
   var row: js.UndefOr[kendoDashUiLib.JQuery] = js.undefined
 }
 
+object GridRemoveEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Grid,
+    model: kendoDashUiLib.kendoNs.dataNs.Model = null,
+    row: kendoDashUiLib.JQuery = null
+  ): GridRemoveEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (row != null) __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[GridRemoveEvent]
+  }
+}
+

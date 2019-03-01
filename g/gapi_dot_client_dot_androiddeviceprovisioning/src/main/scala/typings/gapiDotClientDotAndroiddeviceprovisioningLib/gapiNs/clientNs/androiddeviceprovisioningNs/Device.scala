@@ -23,3 +23,24 @@ trait Device extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Device {
+  @scala.inline
+  def apply(
+    claims: js.Array[DeviceClaim] = null,
+    configuration: java.lang.String = null,
+    deviceId: java.lang.String = null,
+    deviceIdentifier: DeviceIdentifier = null,
+    deviceMetadata: DeviceMetadata = null,
+    name: java.lang.String = null
+  ): Device = {
+    val __obj = js.Dynamic.literal()
+    if (claims != null) __obj.updateDynamic("claims")(claims)
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    if (deviceId != null) __obj.updateDynamic("deviceId")(deviceId)
+    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier)
+    if (deviceMetadata != null) __obj.updateDynamic("deviceMetadata")(deviceMetadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Device]
+  }
+}
+

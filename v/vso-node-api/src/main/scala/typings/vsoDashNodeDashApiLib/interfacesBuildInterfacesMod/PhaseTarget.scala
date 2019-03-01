@@ -12,3 +12,12 @@ trait PhaseTarget extends js.Object {
   var `type`: scala.Double
 }
 
+object PhaseTarget {
+  @scala.inline
+  def apply(`type`: scala.Double): PhaseTarget = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[PhaseTarget]
+  }
+}
+

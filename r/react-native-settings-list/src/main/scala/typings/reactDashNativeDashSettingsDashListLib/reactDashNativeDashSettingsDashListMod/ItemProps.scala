@@ -114,3 +114,68 @@ trait ItemProps extends js.Object {
   var underlayColor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ItemProps {
+  @scala.inline
+  def apply(
+    arrowIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    arrowStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ImageStyle] = null,
+    authPropsPW: js.Object = null,
+    authPropsUser: js.Object = null,
+    backgroundColor: java.lang.String = null,
+    borderHide: reactDashNativeDashSettingsDashListLib.reactDashNativeDashSettingsDashListLibStrings.Top | reactDashNativeDashSettingsDashListLib.reactDashNativeDashSettingsDashListLibStrings.Bottom | reactDashNativeDashSettingsDashListLib.reactDashNativeDashSettingsDashListLibStrings.Both = null,
+    editableTextStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    hasNavArrow: js.UndefOr[scala.Boolean] = js.undefined,
+    hasSwitch: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    isAuth: js.UndefOr[scala.Boolean] = js.undefined,
+    itemBoxStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    itemRef: js.Function0[scala.Unit] = null,
+    itemWidth: scala.Int | scala.Double = null,
+    onLongPress: js.Function0[scala.Unit] = null,
+    onPress: js.Function0[scala.Unit] = null,
+    rightSideContent: reactLib.reactMod.ReactNs.ReactNode = null,
+    rightSideStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    switchOnValueChange: js.Function0[scala.Unit] = null,
+    switchProps: js.Object = null,
+    switchState: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    titleBoxStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    titleInfo: java.lang.String = null,
+    titleInfoPosition: java.lang.String = null,
+    titleInfoStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    titleStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle] = null,
+    underlayColor: java.lang.String = null
+  ): ItemProps = {
+    val __obj = js.Dynamic.literal()
+    if (arrowIcon != null) __obj.updateDynamic("arrowIcon")(arrowIcon.asInstanceOf[js.Any])
+    if (arrowStyle != null) __obj.updateDynamic("arrowStyle")(arrowStyle.asInstanceOf[js.Any])
+    if (authPropsPW != null) __obj.updateDynamic("authPropsPW")(authPropsPW)
+    if (authPropsUser != null) __obj.updateDynamic("authPropsUser")(authPropsUser)
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderHide != null) __obj.updateDynamic("borderHide")(borderHide.asInstanceOf[js.Any])
+    if (editableTextStyle != null) __obj.updateDynamic("editableTextStyle")(editableTextStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasNavArrow)) __obj.updateDynamic("hasNavArrow")(hasNavArrow)
+    if (!js.isUndefined(hasSwitch)) __obj.updateDynamic("hasSwitch")(hasSwitch)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (!js.isUndefined(isAuth)) __obj.updateDynamic("isAuth")(isAuth)
+    if (itemBoxStyle != null) __obj.updateDynamic("itemBoxStyle")(itemBoxStyle.asInstanceOf[js.Any])
+    if (itemRef != null) __obj.updateDynamic("itemRef")(itemRef)
+    if (itemWidth != null) __obj.updateDynamic("itemWidth")(itemWidth.asInstanceOf[js.Any])
+    if (onLongPress != null) __obj.updateDynamic("onLongPress")(onLongPress)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (rightSideContent != null) __obj.updateDynamic("rightSideContent")(rightSideContent.asInstanceOf[js.Any])
+    if (rightSideStyle != null) __obj.updateDynamic("rightSideStyle")(rightSideStyle.asInstanceOf[js.Any])
+    if (switchOnValueChange != null) __obj.updateDynamic("switchOnValueChange")(switchOnValueChange)
+    if (switchProps != null) __obj.updateDynamic("switchProps")(switchProps)
+    if (!js.isUndefined(switchState)) __obj.updateDynamic("switchState")(switchState)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleBoxStyle != null) __obj.updateDynamic("titleBoxStyle")(titleBoxStyle.asInstanceOf[js.Any])
+    if (titleInfo != null) __obj.updateDynamic("titleInfo")(titleInfo)
+    if (titleInfoPosition != null) __obj.updateDynamic("titleInfoPosition")(titleInfoPosition)
+    if (titleInfoStyle != null) __obj.updateDynamic("titleInfoStyle")(titleInfoStyle.asInstanceOf[js.Any])
+    if (titleStyle != null) __obj.updateDynamic("titleStyle")(titleStyle.asInstanceOf[js.Any])
+    if (underlayColor != null) __obj.updateDynamic("underlayColor")(underlayColor)
+    __obj.asInstanceOf[ItemProps]
+  }
+}
+

@@ -53,3 +53,32 @@ trait XTickConfiguration extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object XTickConfiguration {
+  @scala.inline
+  def apply(
+    centered: js.UndefOr[scala.Boolean] = js.undefined,
+    count: scala.Int | scala.Double = null,
+    culling: scala.Boolean | CullingConfiguration = null,
+    fit: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String | (js.Function1[/* x */ scala.Double | stdLib.Date, java.lang.String | scala.Double]) = null,
+    multiline: js.UndefOr[scala.Boolean] = js.undefined,
+    outer: js.UndefOr[scala.Boolean] = js.undefined,
+    rotate: scala.Int | scala.Double = null,
+    values: js.Array[scala.Double] | js.Array[java.lang.String] = null,
+    width: scala.Int | scala.Double = null
+  ): XTickConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(centered)) __obj.updateDynamic("centered")(centered)
+    if (count != null) __obj.updateDynamic("count")(count.asInstanceOf[js.Any])
+    if (culling != null) __obj.updateDynamic("culling")(culling.asInstanceOf[js.Any])
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (!js.isUndefined(outer)) __obj.updateDynamic("outer")(outer)
+    if (rotate != null) __obj.updateDynamic("rotate")(rotate.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[XTickConfiguration]
+  }
+}
+

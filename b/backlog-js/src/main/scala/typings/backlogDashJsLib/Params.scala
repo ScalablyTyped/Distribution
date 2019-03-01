@@ -10,3 +10,16 @@ trait Params
       scala.Double | java.lang.String | js.Array[scala.Double] | js.Array[java.lang.String]
     ]
 
+object Params {
+  @scala.inline
+  def apply(
+    StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[
+      scala.Double | java.lang.String | js.Array[scala.Double] | js.Array[java.lang.String]
+    ] = null
+  ): Params = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Params]
+  }
+}
+

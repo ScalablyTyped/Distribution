@@ -11,3 +11,24 @@ trait ChatPostEvent extends ChatEvent {
   var timestamp: js.UndefOr[stdLib.Date] = js.undefined
 }
 
+object ChatPostEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Chat,
+    from: js.Any = null,
+    text: java.lang.String = null,
+    timestamp: stdLib.Date = null
+  ): ChatPostEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (timestamp != null) __obj.updateDynamic("timestamp")(timestamp)
+    __obj.asInstanceOf[ChatPostEvent]
+  }
+}
+

@@ -36,3 +36,24 @@ trait Anon_Click extends js.Object {
   var touchleave: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Click {
+  @scala.inline
+  def apply(
+    click: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseleave: js.UndefOr[scala.Boolean] = js.undefined,
+    originClick: js.UndefOr[scala.Boolean] = js.undefined,
+    scroll: js.UndefOr[scala.Boolean] = js.undefined,
+    tap: js.UndefOr[scala.Boolean] = js.undefined,
+    touchleave: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Click = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(click)) __obj.updateDynamic("click")(click)
+    if (!js.isUndefined(mouseleave)) __obj.updateDynamic("mouseleave")(mouseleave)
+    if (!js.isUndefined(originClick)) __obj.updateDynamic("originClick")(originClick)
+    if (!js.isUndefined(scroll)) __obj.updateDynamic("scroll")(scroll)
+    if (!js.isUndefined(tap)) __obj.updateDynamic("tap")(tap)
+    if (!js.isUndefined(touchleave)) __obj.updateDynamic("touchleave")(touchleave)
+    __obj.asInstanceOf[Anon_Click]
+  }
+}
+

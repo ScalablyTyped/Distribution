@@ -13,3 +13,13 @@ trait ElementDataDefinition extends js.Object {
   var position: js.UndefOr[Position] = js.undefined
 }
 
+object ElementDataDefinition {
+  @scala.inline
+  def apply(id: java.lang.String = null, position: Position = null): ElementDataDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[ElementDataDefinition]
+  }
+}
+

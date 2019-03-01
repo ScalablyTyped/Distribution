@@ -12,3 +12,20 @@ trait CompileResult extends js.Object {
   var userDoc: web3Lib.Anon_Methods
 }
 
+object CompileResult {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    developerDoc: web3Lib.Anon_Methods,
+    info: web3Lib.Anon_AbiDefinition,
+    userDoc: web3Lib.Anon_Methods
+  ): CompileResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("developerDoc")(developerDoc)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("userDoc")(userDoc)
+    __obj.asInstanceOf[CompileResult]
+  }
+}
+

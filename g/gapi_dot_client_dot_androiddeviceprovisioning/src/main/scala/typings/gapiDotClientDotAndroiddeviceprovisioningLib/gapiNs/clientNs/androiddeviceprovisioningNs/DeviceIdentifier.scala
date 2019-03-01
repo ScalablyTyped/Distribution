@@ -20,3 +20,20 @@ trait DeviceIdentifier extends js.Object {
   var serialNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeviceIdentifier {
+  @scala.inline
+  def apply(
+    imei: java.lang.String = null,
+    manufacturer: java.lang.String = null,
+    meid: java.lang.String = null,
+    serialNumber: java.lang.String = null
+  ): DeviceIdentifier = {
+    val __obj = js.Dynamic.literal()
+    if (imei != null) __obj.updateDynamic("imei")(imei)
+    if (manufacturer != null) __obj.updateDynamic("manufacturer")(manufacturer)
+    if (meid != null) __obj.updateDynamic("meid")(meid)
+    if (serialNumber != null) __obj.updateDynamic("serialNumber")(serialNumber)
+    __obj.asInstanceOf[DeviceIdentifier]
+  }
+}
+

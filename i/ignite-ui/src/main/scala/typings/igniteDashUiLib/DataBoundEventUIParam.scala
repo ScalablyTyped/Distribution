@@ -20,3 +20,14 @@ trait DataBoundEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object DataBoundEventUIParam {
+  @scala.inline
+  def apply(data: js.Any = null, dataSource: js.Any = null, owner: js.Any = null): DataBoundEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[DataBoundEventUIParam]
+  }
+}
+

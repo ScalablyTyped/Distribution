@@ -18,3 +18,32 @@ trait Options extends js.Object {
   var webpackConfig: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    filename: java.lang.String,
+    detective: js.Any = null,
+    directory: java.lang.String = null,
+    filter: js.Function1[/* path */ java.lang.String, scala.Boolean] = null,
+    isListForm: js.UndefOr[scala.Boolean] = js.undefined,
+    nodeModulesConfig: js.Any = null,
+    nonExistent: js.Array[java.lang.String] = null,
+    requireConfig: java.lang.String = null,
+    visited: DependencyObj = null,
+    webpackConfig: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filename")(filename)
+    if (detective != null) __obj.updateDynamic("detective")(detective)
+    if (directory != null) __obj.updateDynamic("directory")(directory)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (!js.isUndefined(isListForm)) __obj.updateDynamic("isListForm")(isListForm)
+    if (nodeModulesConfig != null) __obj.updateDynamic("nodeModulesConfig")(nodeModulesConfig)
+    if (nonExistent != null) __obj.updateDynamic("nonExistent")(nonExistent)
+    if (requireConfig != null) __obj.updateDynamic("requireConfig")(requireConfig)
+    if (visited != null) __obj.updateDynamic("visited")(visited)
+    if (webpackConfig != null) __obj.updateDynamic("webpackConfig")(webpackConfig)
+    __obj.asInstanceOf[Options]
+  }
+}
+

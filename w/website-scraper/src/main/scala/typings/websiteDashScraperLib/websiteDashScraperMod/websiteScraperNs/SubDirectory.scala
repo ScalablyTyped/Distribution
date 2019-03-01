@@ -10,3 +10,13 @@ trait SubDirectory extends js.Object {
   var extensions: js.Array[java.lang.String]
 }
 
+object SubDirectory {
+  @scala.inline
+  def apply(directory: java.lang.String, extensions: js.Array[java.lang.String]): SubDirectory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("directory")(directory)
+    __obj.updateDynamic("extensions")(extensions)
+    __obj.asInstanceOf[SubDirectory]
+  }
+}
+

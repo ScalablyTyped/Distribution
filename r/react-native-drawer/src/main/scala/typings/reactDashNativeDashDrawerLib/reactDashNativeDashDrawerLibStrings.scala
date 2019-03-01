@@ -16,100 +16,131 @@ object reactDashNativeDashDrawerLibStrings {
   sealed trait displace extends js.Object
   
   @js.native
-  sealed trait easeInBack extends js.Object
+  sealed trait easeInBack
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInBounce extends js.Object
+  sealed trait easeInBounce
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInCirc extends js.Object
+  sealed trait easeInCirc
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInCubic extends js.Object
+  sealed trait easeInCubic
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInElastic extends js.Object
+  sealed trait easeInElastic
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInExpo extends js.Object
+  sealed trait easeInExpo
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutBack extends js.Object
+  sealed trait easeInOutBack
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutBounce extends js.Object
+  sealed trait easeInOutBounce
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutCirc extends js.Object
+  sealed trait easeInOutCirc
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutCubic extends js.Object
+  sealed trait easeInOutCubic
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutElastic extends js.Object
+  sealed trait easeInOutElastic
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutExpo extends js.Object
+  sealed trait easeInOutExpo
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutQuad extends js.Object
+  sealed trait easeInOutQuad
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutQuart extends js.Object
+  sealed trait easeInOutQuart
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutQuint extends js.Object
+  sealed trait easeInOutQuint
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInOutSine extends js.Object
+  sealed trait easeInOutSine
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInQuad extends js.Object
+  sealed trait easeInQuad
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInQuart extends js.Object
+  sealed trait easeInQuart
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInQuint extends js.Object
+  sealed trait easeInQuint
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeInSine extends js.Object
+  sealed trait easeInSine
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutBack extends js.Object
+  sealed trait easeOutBack
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutBounce extends js.Object
+  sealed trait easeOutBounce
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutCirc extends js.Object
+  sealed trait easeOutCirc
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutCubic extends js.Object
+  sealed trait easeOutCubic
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutElastic extends js.Object
+  sealed trait easeOutElastic
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutExpo extends js.Object
+  sealed trait easeOutExpo
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutQuad extends js.Object
+  sealed trait easeOutQuad
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutQuart extends js.Object
+  sealed trait easeOutQuart
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutQuint extends js.Object
+  sealed trait easeOutQuint
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
-  sealed trait easeOutSine extends js.Object
+  sealed trait easeOutSine
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends reactDashNativeDashDrawerLib.reactDashNativeDashDrawerMod.TweenFunctions
   
   @js.native
   sealed trait open extends js.Object

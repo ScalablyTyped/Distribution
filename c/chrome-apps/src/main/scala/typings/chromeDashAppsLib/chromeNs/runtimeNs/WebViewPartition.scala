@@ -17,3 +17,13 @@ trait WebViewPartition extends js.Object {
   var name: java.lang.String
 }
 
+object WebViewPartition {
+  @scala.inline
+  def apply(accessible_resources: js.Array[java.lang.String], name: java.lang.String): WebViewPartition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessible_resources")(accessible_resources)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[WebViewPartition]
+  }
+}
+

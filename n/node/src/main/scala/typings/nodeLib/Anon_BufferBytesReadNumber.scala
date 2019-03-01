@@ -10,3 +10,13 @@ trait Anon_BufferBytesReadNumber[TBuffer /* <: Buffer | stdLib.Uint8Array */] ex
   var bytesRead: scala.Double
 }
 
+object Anon_BufferBytesReadNumber {
+  @scala.inline
+  def apply[TBuffer /* <: Buffer | stdLib.Uint8Array */](buffer: TBuffer, bytesRead: scala.Double): Anon_BufferBytesReadNumber[TBuffer] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    __obj.updateDynamic("bytesRead")(bytesRead)
+    __obj.asInstanceOf[Anon_BufferBytesReadNumber[TBuffer]]
+  }
+}
+

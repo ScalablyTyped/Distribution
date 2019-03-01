@@ -488,3 +488,154 @@ trait bxSliderOptions extends js.Object {
   var wrapperClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object bxSliderOptions {
+  @scala.inline
+  def apply(
+    adaptiveHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    adaptiveHeightSpeed: scala.Int | scala.Double = null,
+    ariaHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    ariaLive: js.UndefOr[scala.Boolean] = js.undefined,
+    auto: js.UndefOr[scala.Boolean] = js.undefined,
+    autoControls: js.UndefOr[scala.Boolean] = js.undefined,
+    autoControlsCombine: js.UndefOr[scala.Boolean] = js.undefined,
+    autoControlsSelector: java.lang.String = null,
+    autoDelay: scala.Int | scala.Double = null,
+    autoDirection: java.lang.String = null,
+    autoHover: js.UndefOr[scala.Boolean] = js.undefined,
+    autoStart: js.UndefOr[scala.Boolean] = js.undefined,
+    buildPager: js.Function1[/* slideIndex */ scala.Double, scala.Unit] = null,
+    captions: js.UndefOr[scala.Boolean] = js.undefined,
+    controls: js.UndefOr[scala.Boolean] = js.undefined,
+    easing: java.lang.String = null,
+    hideControlOnEnd: js.UndefOr[scala.Boolean] = js.undefined,
+    infiniteLoop: js.UndefOr[scala.Boolean] = js.undefined,
+    keyboardEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maxSlides: scala.Int | scala.Double = null,
+    minSlides: scala.Int | scala.Double = null,
+    mode: java.lang.String = null,
+    moveSlides: scala.Int | scala.Double = null,
+    nextSelector: java.lang.String = null,
+    nextText: java.lang.String = null,
+    onSlideAfter: js.Function3[
+      /* $slideElement */ js.UndefOr[JQuery], 
+      /* oldIndex */ js.UndefOr[scala.Double], 
+      /* newIndex */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    onSlideBefore: js.Function3[
+      /* $slideElement */ js.UndefOr[JQuery], 
+      /* oldIndex */ js.UndefOr[scala.Double], 
+      /* newIndex */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    onSlideNext: js.Function3[
+      /* $slideElement */ js.UndefOr[JQuery], 
+      /* oldIndex */ js.UndefOr[scala.Double], 
+      /* newIndex */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    onSlidePrev: js.Function3[
+      /* $slideElement */ js.UndefOr[JQuery], 
+      /* oldIndex */ js.UndefOr[scala.Double], 
+      /* newIndex */ js.UndefOr[scala.Double], 
+      scala.Unit
+    ] = null,
+    onSliderLoad: js.Function1[/* currentIndex */ js.UndefOr[scala.Double], scala.Unit] = null,
+    onSliderResize: js.Function1[/* currentIndex */ js.UndefOr[scala.Double], scala.Unit] = null,
+    oneToOneTouch: js.UndefOr[scala.Boolean] = js.undefined,
+    pager: js.UndefOr[scala.Boolean] = js.undefined,
+    pagerCustom: java.lang.String = null,
+    pagerSelector: java.lang.String = null,
+    pagerShortSeparator: java.lang.String = null,
+    pagerType: java.lang.String = null,
+    pause: scala.Int | scala.Double = null,
+    preloadImages: java.lang.String = null,
+    prevSelector: java.lang.String = null,
+    prevText: java.lang.String = null,
+    preventDefaultSwipeX: js.UndefOr[scala.Boolean] = js.undefined,
+    preventDefaultSwipeY: js.UndefOr[scala.Boolean] = js.undefined,
+    randomStart: js.UndefOr[scala.Boolean] = js.undefined,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    shrinkItems: js.UndefOr[scala.Boolean] = js.undefined,
+    slideMargin: scala.Int | scala.Double = null,
+    slideSelector: java.lang.String = null,
+    slideWidth: scala.Int | scala.Double = null,
+    speed: scala.Int | scala.Double = null,
+    startSlide: scala.Int | scala.Double = null,
+    startText: java.lang.String = null,
+    stopAutoOnClick: js.UndefOr[scala.Boolean] = js.undefined,
+    stopText: java.lang.String = null,
+    swipeThreshold: scala.Int | scala.Double = null,
+    ticker: js.UndefOr[scala.Boolean] = js.undefined,
+    tickerHover: js.UndefOr[scala.Boolean] = js.undefined,
+    touchEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    useCSS: js.UndefOr[scala.Boolean] = js.undefined,
+    video: js.UndefOr[scala.Boolean] = js.undefined,
+    wrapperClass: java.lang.String = null
+  ): bxSliderOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(adaptiveHeight)) __obj.updateDynamic("adaptiveHeight")(adaptiveHeight)
+    if (adaptiveHeightSpeed != null) __obj.updateDynamic("adaptiveHeightSpeed")(adaptiveHeightSpeed.asInstanceOf[js.Any])
+    if (!js.isUndefined(ariaHidden)) __obj.updateDynamic("ariaHidden")(ariaHidden)
+    if (!js.isUndefined(ariaLive)) __obj.updateDynamic("ariaLive")(ariaLive)
+    if (!js.isUndefined(auto)) __obj.updateDynamic("auto")(auto)
+    if (!js.isUndefined(autoControls)) __obj.updateDynamic("autoControls")(autoControls)
+    if (!js.isUndefined(autoControlsCombine)) __obj.updateDynamic("autoControlsCombine")(autoControlsCombine)
+    if (autoControlsSelector != null) __obj.updateDynamic("autoControlsSelector")(autoControlsSelector)
+    if (autoDelay != null) __obj.updateDynamic("autoDelay")(autoDelay.asInstanceOf[js.Any])
+    if (autoDirection != null) __obj.updateDynamic("autoDirection")(autoDirection)
+    if (!js.isUndefined(autoHover)) __obj.updateDynamic("autoHover")(autoHover)
+    if (!js.isUndefined(autoStart)) __obj.updateDynamic("autoStart")(autoStart)
+    if (buildPager != null) __obj.updateDynamic("buildPager")(buildPager)
+    if (!js.isUndefined(captions)) __obj.updateDynamic("captions")(captions)
+    if (!js.isUndefined(controls)) __obj.updateDynamic("controls")(controls)
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (!js.isUndefined(hideControlOnEnd)) __obj.updateDynamic("hideControlOnEnd")(hideControlOnEnd)
+    if (!js.isUndefined(infiniteLoop)) __obj.updateDynamic("infiniteLoop")(infiniteLoop)
+    if (!js.isUndefined(keyboardEnabled)) __obj.updateDynamic("keyboardEnabled")(keyboardEnabled)
+    if (maxSlides != null) __obj.updateDynamic("maxSlides")(maxSlides.asInstanceOf[js.Any])
+    if (minSlides != null) __obj.updateDynamic("minSlides")(minSlides.asInstanceOf[js.Any])
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (moveSlides != null) __obj.updateDynamic("moveSlides")(moveSlides.asInstanceOf[js.Any])
+    if (nextSelector != null) __obj.updateDynamic("nextSelector")(nextSelector)
+    if (nextText != null) __obj.updateDynamic("nextText")(nextText)
+    if (onSlideAfter != null) __obj.updateDynamic("onSlideAfter")(onSlideAfter)
+    if (onSlideBefore != null) __obj.updateDynamic("onSlideBefore")(onSlideBefore)
+    if (onSlideNext != null) __obj.updateDynamic("onSlideNext")(onSlideNext)
+    if (onSlidePrev != null) __obj.updateDynamic("onSlidePrev")(onSlidePrev)
+    if (onSliderLoad != null) __obj.updateDynamic("onSliderLoad")(onSliderLoad)
+    if (onSliderResize != null) __obj.updateDynamic("onSliderResize")(onSliderResize)
+    if (!js.isUndefined(oneToOneTouch)) __obj.updateDynamic("oneToOneTouch")(oneToOneTouch)
+    if (!js.isUndefined(pager)) __obj.updateDynamic("pager")(pager)
+    if (pagerCustom != null) __obj.updateDynamic("pagerCustom")(pagerCustom)
+    if (pagerSelector != null) __obj.updateDynamic("pagerSelector")(pagerSelector)
+    if (pagerShortSeparator != null) __obj.updateDynamic("pagerShortSeparator")(pagerShortSeparator)
+    if (pagerType != null) __obj.updateDynamic("pagerType")(pagerType)
+    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (preloadImages != null) __obj.updateDynamic("preloadImages")(preloadImages)
+    if (prevSelector != null) __obj.updateDynamic("prevSelector")(prevSelector)
+    if (prevText != null) __obj.updateDynamic("prevText")(prevText)
+    if (!js.isUndefined(preventDefaultSwipeX)) __obj.updateDynamic("preventDefaultSwipeX")(preventDefaultSwipeX)
+    if (!js.isUndefined(preventDefaultSwipeY)) __obj.updateDynamic("preventDefaultSwipeY")(preventDefaultSwipeY)
+    if (!js.isUndefined(randomStart)) __obj.updateDynamic("randomStart")(randomStart)
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (!js.isUndefined(shrinkItems)) __obj.updateDynamic("shrinkItems")(shrinkItems)
+    if (slideMargin != null) __obj.updateDynamic("slideMargin")(slideMargin.asInstanceOf[js.Any])
+    if (slideSelector != null) __obj.updateDynamic("slideSelector")(slideSelector)
+    if (slideWidth != null) __obj.updateDynamic("slideWidth")(slideWidth.asInstanceOf[js.Any])
+    if (speed != null) __obj.updateDynamic("speed")(speed.asInstanceOf[js.Any])
+    if (startSlide != null) __obj.updateDynamic("startSlide")(startSlide.asInstanceOf[js.Any])
+    if (startText != null) __obj.updateDynamic("startText")(startText)
+    if (!js.isUndefined(stopAutoOnClick)) __obj.updateDynamic("stopAutoOnClick")(stopAutoOnClick)
+    if (stopText != null) __obj.updateDynamic("stopText")(stopText)
+    if (swipeThreshold != null) __obj.updateDynamic("swipeThreshold")(swipeThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(ticker)) __obj.updateDynamic("ticker")(ticker)
+    if (!js.isUndefined(tickerHover)) __obj.updateDynamic("tickerHover")(tickerHover)
+    if (!js.isUndefined(touchEnabled)) __obj.updateDynamic("touchEnabled")(touchEnabled)
+    if (!js.isUndefined(useCSS)) __obj.updateDynamic("useCSS")(useCSS)
+    if (!js.isUndefined(video)) __obj.updateDynamic("video")(video)
+    if (wrapperClass != null) __obj.updateDynamic("wrapperClass")(wrapperClass)
+    __obj.asInstanceOf[bxSliderOptions]
+  }
+}
+

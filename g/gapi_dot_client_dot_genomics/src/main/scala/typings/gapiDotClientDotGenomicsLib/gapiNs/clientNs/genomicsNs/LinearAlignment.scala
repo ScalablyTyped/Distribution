@@ -23,3 +23,18 @@ trait LinearAlignment extends js.Object {
   var position: js.UndefOr[Position] = js.undefined
 }
 
+object LinearAlignment {
+  @scala.inline
+  def apply(
+    cigar: js.Array[CigarUnit] = null,
+    mappingQuality: scala.Int | scala.Double = null,
+    position: Position = null
+  ): LinearAlignment = {
+    val __obj = js.Dynamic.literal()
+    if (cigar != null) __obj.updateDynamic("cigar")(cigar)
+    if (mappingQuality != null) __obj.updateDynamic("mappingQuality")(mappingQuality.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[LinearAlignment]
+  }
+}
+

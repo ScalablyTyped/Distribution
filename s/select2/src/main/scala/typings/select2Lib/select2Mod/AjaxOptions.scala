@@ -23,3 +23,27 @@ import scala.scalajs.js.annotation._
   var url: js.UndefOr[java.lang.String | (js.Function1[/* params */ QueryOptions, java.lang.String])] = js.undefined
 }
 
+object AjaxOptions {
+  @scala.inline
+  def apply[Result, RemoteResult](
+    data: js.Function1[/* params */ QueryOptions, PlainObject[_]] = null,
+    delay: scala.Int | scala.Double = null,
+    processResults: js.Function2[/* data */ RemoteResult, /* params */ QueryOptions, ProcessedResult[Result]] = null,
+    transport: js.Function3[
+      /* settings */ jqueryLib.JQueryAjaxSettings, 
+      /* success */ js.UndefOr[js.Function1[/* data */ RemoteResult, js.UndefOr[scala.Nothing]]], 
+      /* failure */ js.UndefOr[js.Function0[js.UndefOr[scala.Nothing]]], 
+      scala.Unit
+    ] = null,
+    url: java.lang.String | (js.Function1[/* params */ QueryOptions, java.lang.String]) = null
+  ): AjaxOptions[Result, RemoteResult] = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (processResults != null) __obj.updateDynamic("processResults")(processResults)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    if (url != null) __obj.updateDynamic("url")(url.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AjaxOptions[Result, RemoteResult]]
+  }
+}
+

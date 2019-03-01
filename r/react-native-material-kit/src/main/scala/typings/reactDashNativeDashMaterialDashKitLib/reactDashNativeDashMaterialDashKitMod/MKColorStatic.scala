@@ -38,3 +38,72 @@ trait MKColorStatic extends js.Object {
   var palette_yellow_600: java.lang.String
 }
 
+object MKColorStatic {
+  @scala.inline
+  def apply(
+    Amber: java.lang.String,
+    Blue: java.lang.String,
+    BlueGrey: java.lang.String,
+    Brown: java.lang.String,
+    Cyan: java.lang.String,
+    DeepOrange: java.lang.String,
+    DeepPurple: java.lang.String,
+    Green: java.lang.String,
+    Grey: java.lang.String,
+    Indigo: java.lang.String,
+    LightBlue: java.lang.String,
+    LightGreen: java.lang.String,
+    Lime: java.lang.String,
+    Orange: java.lang.String,
+    Pink: java.lang.String,
+    Purple: java.lang.String,
+    RGBIndigo: java.lang.String,
+    RGBPink: java.lang.String,
+    RGBPurple: java.lang.String,
+    RGBTeal: java.lang.String,
+    Red: java.lang.String,
+    Silver: java.lang.String,
+    Teal: java.lang.String,
+    Transparent: java.lang.String,
+    Yellow: java.lang.String,
+    default: reactDashNativeDashMaterialDashKitLib.Anon_Amber,
+    palette_blue_400: java.lang.String,
+    palette_green_500: java.lang.String,
+    palette_red_500: java.lang.String,
+    palette_yellow_600: java.lang.String
+  ): MKColorStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Amber")(Amber)
+    __obj.updateDynamic("Blue")(Blue)
+    __obj.updateDynamic("BlueGrey")(BlueGrey)
+    __obj.updateDynamic("Brown")(Brown)
+    __obj.updateDynamic("Cyan")(Cyan)
+    __obj.updateDynamic("DeepOrange")(DeepOrange)
+    __obj.updateDynamic("DeepPurple")(DeepPurple)
+    __obj.updateDynamic("Green")(Green)
+    __obj.updateDynamic("Grey")(Grey)
+    __obj.updateDynamic("Indigo")(Indigo)
+    __obj.updateDynamic("LightBlue")(LightBlue)
+    __obj.updateDynamic("LightGreen")(LightGreen)
+    __obj.updateDynamic("Lime")(Lime)
+    __obj.updateDynamic("Orange")(Orange)
+    __obj.updateDynamic("Pink")(Pink)
+    __obj.updateDynamic("Purple")(Purple)
+    __obj.updateDynamic("RGBIndigo")(RGBIndigo)
+    __obj.updateDynamic("RGBPink")(RGBPink)
+    __obj.updateDynamic("RGBPurple")(RGBPurple)
+    __obj.updateDynamic("RGBTeal")(RGBTeal)
+    __obj.updateDynamic("Red")(Red)
+    __obj.updateDynamic("Silver")(Silver)
+    __obj.updateDynamic("Teal")(Teal)
+    __obj.updateDynamic("Transparent")(Transparent)
+    __obj.updateDynamic("Yellow")(Yellow)
+    __obj.updateDynamic("default")(default)
+    __obj.updateDynamic("palette_blue_400")(palette_blue_400)
+    __obj.updateDynamic("palette_green_500")(palette_green_500)
+    __obj.updateDynamic("palette_red_500")(palette_red_500)
+    __obj.updateDynamic("palette_yellow_600")(palette_yellow_600)
+    __obj.asInstanceOf[MKColorStatic]
+  }
+}
+

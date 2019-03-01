@@ -21,3 +21,13 @@ trait DailyMaintenanceWindow extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DailyMaintenanceWindow {
+  @scala.inline
+  def apply(duration: java.lang.String = null, startTime: java.lang.String = null): DailyMaintenanceWindow = {
+    val __obj = js.Dynamic.literal()
+    if (duration != null) __obj.updateDynamic("duration")(duration)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[DailyMaintenanceWindow]
+  }
+}
+

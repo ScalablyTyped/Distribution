@@ -19,3 +19,33 @@ trait errorData extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object errorData {
+  @scala.inline
+  def apply(
+    details: java.lang.String,
+    fatal: scala.Boolean,
+    `type`: java.lang.String,
+    buffer: scala.Int | scala.Double = null,
+    context: LoaderContext = null,
+    frag: Fragment = null,
+    levelRetry: js.UndefOr[scala.Boolean] = js.undefined,
+    loader: Loader = null,
+    networkDetails: stdLib.XMLHttpRequest = null,
+    response: LoaderError = null,
+    url: java.lang.String = null
+  ): errorData = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("fatal")(fatal)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (frag != null) __obj.updateDynamic("frag")(frag)
+    if (!js.isUndefined(levelRetry)) __obj.updateDynamic("levelRetry")(levelRetry)
+    if (loader != null) __obj.updateDynamic("loader")(loader)
+    if (networkDetails != null) __obj.updateDynamic("networkDetails")(networkDetails)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[errorData]
+  }
+}
+

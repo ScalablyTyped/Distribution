@@ -52,3 +52,30 @@ trait Records extends js.Object {
   def updateFromJson(data: js.Any): scala.Unit
 }
 
+object Records {
+  @scala.inline
+  def apply(
+    count: js.Function0[scala.Double],
+    getFromTable: js.Function0[js.Array[js.Object]],
+    init: js.Function0[scala.Unit],
+    initOnLoad: js.Function0[scala.Boolean],
+    pageBounds: js.Function0[js.Array[scala.Double]],
+    paginate: js.Function0[scala.Unit],
+    resetOriginal: js.Function0[scala.Unit],
+    sort: js.Function0[scala.Double],
+    updateFromJson: js.Function1[js.Any, scala.Unit]
+  ): Records = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("getFromTable")(getFromTable)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("initOnLoad")(initOnLoad)
+    __obj.updateDynamic("pageBounds")(pageBounds)
+    __obj.updateDynamic("paginate")(paginate)
+    __obj.updateDynamic("resetOriginal")(resetOriginal)
+    __obj.updateDynamic("sort")(sort)
+    __obj.updateDynamic("updateFromJson")(updateFromJson)
+    __obj.asInstanceOf[Records]
+  }
+}
+

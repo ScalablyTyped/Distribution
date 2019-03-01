@@ -11,3 +11,18 @@ trait AliasItem extends js.Object {
   var onlyModule: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AliasItem {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    name: java.lang.String,
+    onlyModule: js.UndefOr[scala.Boolean] = js.undefined
+  ): AliasItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alias")(alias)
+    __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(onlyModule)) __obj.updateDynamic("onlyModule")(onlyModule)
+    __obj.asInstanceOf[AliasItem]
+  }
+}
+

@@ -71,3 +71,40 @@ trait Ajax extends js.Object {
   def loadTimeout(file: java.lang.String): scala.Unit
 }
 
+object Ajax {
+  @scala.inline
+  def apply(
+    Load: js.Function2[java.lang.String, js.Any, js.Any],
+    LoadHook: js.Function2[java.lang.String, js.Any, js.Any],
+    Preloading: js.Function1[/* repeated */ js.Any, scala.Unit],
+    Require: js.Function2[java.lang.String, js.Any, js.Any],
+    STATUS: STATUS,
+    Styles: js.Function2[js.Any, js.Any, js.Any],
+    fileURL: js.Function1[java.lang.String, java.lang.String],
+    loadComplete: js.Function1[java.lang.String, scala.Unit],
+    loadError: js.Function1[java.lang.String, scala.Unit],
+    loadHooks: js.Any,
+    loadTimeout: js.Function1[java.lang.String, scala.Unit],
+    loaded: js.Any,
+    loading: scala.Boolean,
+    timeout: scala.Int | scala.Double = null
+  ): Ajax = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Load")(Load)
+    __obj.updateDynamic("LoadHook")(LoadHook)
+    __obj.updateDynamic("Preloading")(Preloading)
+    __obj.updateDynamic("Require")(Require)
+    __obj.updateDynamic("STATUS")(STATUS)
+    __obj.updateDynamic("Styles")(Styles)
+    __obj.updateDynamic("fileURL")(fileURL)
+    __obj.updateDynamic("loadComplete")(loadComplete)
+    __obj.updateDynamic("loadError")(loadError)
+    __obj.updateDynamic("loadHooks")(loadHooks)
+    __obj.updateDynamic("loadTimeout")(loadTimeout)
+    __obj.updateDynamic("loaded")(loaded)
+    __obj.updateDynamic("loading")(loading)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Ajax]
+  }
+}
+

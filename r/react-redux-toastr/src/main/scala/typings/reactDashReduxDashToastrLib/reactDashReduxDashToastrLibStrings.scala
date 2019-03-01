@@ -7,61 +7,84 @@ import scala.scalajs.js.annotation._
 
 object reactDashReduxDashToastrLibStrings {
   @js.native
-  sealed trait `bottom-center` extends js.Object
+  sealed trait `bottom-center`
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.positionType
   
   @js.native
-  sealed trait `bottom-left` extends js.Object
+  sealed trait `bottom-left`
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.positionType
   
   @js.native
-  sealed trait `bottom-right` extends js.Object
+  sealed trait `bottom-right`
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.positionType
   
   @js.native
-  sealed trait bounceIn extends js.Object
+  sealed trait bounceIn
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.transitionInType
   
   @js.native
-  sealed trait bounceInDown extends js.Object
+  sealed trait bounceInDown
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.transitionInType
   
   @js.native
-  sealed trait bounceOut extends js.Object
+  sealed trait bounceOut
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.transitionOutType
   
   @js.native
-  sealed trait bounceOutUp extends js.Object
+  sealed trait bounceOutUp
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.transitionOutType
   
   @js.native
-  sealed trait confirm extends js.Object
+  sealed trait confirm
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.toastType
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.iconType
+       with reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.toastType
   
   @js.native
-  sealed trait fadeIn extends js.Object
+  sealed trait fadeIn
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.transitionInType
   
   @js.native
-  sealed trait fadeOut extends js.Object
+  sealed trait fadeOut
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.transitionOutType
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.iconType
+       with reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.toastType
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.toastType
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait message
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.toastType
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.iconType
+       with reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.toastType
   
   @js.native
-  sealed trait `top-center` extends js.Object
+  sealed trait `top-center`
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.positionType
   
   @js.native
-  sealed trait `top-left` extends js.Object
+  sealed trait `top-left`
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.positionType
   
   @js.native
-  sealed trait `top-right` extends js.Object
+  sealed trait `top-right`
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.positionType
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.iconType
+       with reactDashReduxDashToastrLib.reactDashReduxDashToastrMod.toastType
   
   @scala.inline
   def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]

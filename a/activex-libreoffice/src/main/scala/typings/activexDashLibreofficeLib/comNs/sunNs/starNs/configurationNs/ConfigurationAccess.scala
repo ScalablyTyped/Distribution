@@ -136,3 +136,222 @@ import scala.scalajs.js.annotation._
   override def getPropertyStates(aPropertyName: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
 }
 
+object ConfigurationAccess {
+  @scala.inline
+  def apply(
+    AsProperty: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property,
+    DefaultAsProperty: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ElementNames: activexDashInteropLib.SafeArray[java.lang.String],
+    ElementTemplateName: java.lang.String,
+    ElementType: activexDashLibreofficeLib.`type`,
+    HierarchicalName: java.lang.String,
+    HierarchicalPropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XHierarchicalPropertySetInfo,
+    Locale: activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale,
+    Name: java.lang.String,
+    Parent: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Properties: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    PropertySetInfo: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo,
+    StateAsProperty: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState,
+    TemplateName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    addChangesListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XChangesListener, scala.Unit],
+    addContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addPropertiesChangeListener: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    addPropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    addVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    composeHierarchicalName: js.Function1[java.lang.String, java.lang.String],
+    dispose: js.Function0[scala.Unit],
+    escapeString: js.Function1[java.lang.String, java.lang.String],
+    firePropertiesChangeEvent: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    getAsProperty: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    getByHierarchicalName: js.Function1[java.lang.String, js.Any],
+    getByName: js.Function1[java.lang.String, js.Any],
+    getDefaultAsProperty: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getElementNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    getElementTemplateName: js.Function0[java.lang.String],
+    getElementType: js.Function0[activexDashLibreofficeLib.`type`],
+    getExactName: js.Function1[java.lang.String, java.lang.String],
+    getHierarchicalName: js.Function0[java.lang.String],
+    getHierarchicalPropertySetInfo: js.Function0[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XHierarchicalPropertySetInfo
+    ],
+    getHierarchicalPropertyValue: js.Function1[java.lang.String, js.Any],
+    getHierarchicalPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getLocale: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    getName: js.Function0[java.lang.String],
+    getParent: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface],
+    getProperties: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property]
+    ],
+    getPropertyByName: js.Function1[java.lang.String, activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Property],
+    getPropertyDefault: js.Function1[java.lang.String, js.Any],
+    getPropertyDefaults: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getPropertySetInfo: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertySetInfo],
+    getPropertyState: js.Function1[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState
+    ],
+    getPropertyStates: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState]
+    ],
+    getPropertyValue: js.Function1[java.lang.String, js.Any],
+    getPropertyValues: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getStateAsProperty: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyState],
+    getTemplateName: js.Function0[java.lang.String],
+    hasByHierarchicalName: js.Function1[java.lang.String, scala.Boolean],
+    hasByName: js.Function1[java.lang.String, scala.Boolean],
+    hasElements: js.Function0[scala.Boolean],
+    hasPropertyByName: js.Function1[java.lang.String, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeChangesListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XChangesListener, scala.Unit],
+    removeContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removePropertiesChangeListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertiesChangeListener, 
+      scala.Unit
+    ],
+    removePropertyChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XPropertyChangeListener, 
+      scala.Unit
+    ],
+    removeVetoableChangeListener: js.Function2[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.XVetoableChangeListener, 
+      scala.Unit
+    ],
+    setAllPropertiesToDefault: js.Function0[scala.Unit],
+    setHierarchicalPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setHierarchicalPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ],
+    setLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Unit],
+    setName: js.Function1[java.lang.String, scala.Unit],
+    setParent: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Unit],
+    setPropertiesToDefault: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit],
+    setPropertyToDefault: js.Function1[java.lang.String, scala.Unit],
+    setPropertyValue: js.Function2[java.lang.String, js.Any, scala.Unit],
+    setPropertyValues: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[_], 
+      scala.Unit
+    ],
+    setToDefaultAsProperty: js.Function0[scala.Unit],
+    unescapeString: js.Function1[java.lang.String, java.lang.String]
+  ): ConfigurationAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AsProperty")(AsProperty)
+    __obj.updateDynamic("DefaultAsProperty")(DefaultAsProperty)
+    __obj.updateDynamic("ElementNames")(ElementNames)
+    __obj.updateDynamic("ElementTemplateName")(ElementTemplateName)
+    __obj.updateDynamic("ElementType")(ElementType)
+    __obj.updateDynamic("HierarchicalName")(HierarchicalName)
+    __obj.updateDynamic("HierarchicalPropertySetInfo")(HierarchicalPropertySetInfo)
+    __obj.updateDynamic("Locale")(Locale)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Parent")(Parent)
+    __obj.updateDynamic("Properties")(Properties)
+    __obj.updateDynamic("PropertySetInfo")(PropertySetInfo)
+    __obj.updateDynamic("StateAsProperty")(StateAsProperty)
+    __obj.updateDynamic("TemplateName")(TemplateName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addChangesListener")(addChangesListener)
+    __obj.updateDynamic("addContainerListener")(addContainerListener)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addPropertiesChangeListener")(addPropertiesChangeListener)
+    __obj.updateDynamic("addPropertyChangeListener")(addPropertyChangeListener)
+    __obj.updateDynamic("addVetoableChangeListener")(addVetoableChangeListener)
+    __obj.updateDynamic("composeHierarchicalName")(composeHierarchicalName)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("escapeString")(escapeString)
+    __obj.updateDynamic("firePropertiesChangeEvent")(firePropertiesChangeEvent)
+    __obj.updateDynamic("getAsProperty")(getAsProperty)
+    __obj.updateDynamic("getByHierarchicalName")(getByHierarchicalName)
+    __obj.updateDynamic("getByName")(getByName)
+    __obj.updateDynamic("getDefaultAsProperty")(getDefaultAsProperty)
+    __obj.updateDynamic("getElementNames")(getElementNames)
+    __obj.updateDynamic("getElementTemplateName")(getElementTemplateName)
+    __obj.updateDynamic("getElementType")(getElementType)
+    __obj.updateDynamic("getExactName")(getExactName)
+    __obj.updateDynamic("getHierarchicalName")(getHierarchicalName)
+    __obj.updateDynamic("getHierarchicalPropertySetInfo")(getHierarchicalPropertySetInfo)
+    __obj.updateDynamic("getHierarchicalPropertyValue")(getHierarchicalPropertyValue)
+    __obj.updateDynamic("getHierarchicalPropertyValues")(getHierarchicalPropertyValues)
+    __obj.updateDynamic("getLocale")(getLocale)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getParent")(getParent)
+    __obj.updateDynamic("getProperties")(getProperties)
+    __obj.updateDynamic("getPropertyByName")(getPropertyByName)
+    __obj.updateDynamic("getPropertyDefault")(getPropertyDefault)
+    __obj.updateDynamic("getPropertyDefaults")(getPropertyDefaults)
+    __obj.updateDynamic("getPropertySetInfo")(getPropertySetInfo)
+    __obj.updateDynamic("getPropertyState")(getPropertyState)
+    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
+    __obj.updateDynamic("getPropertyValue")(getPropertyValue)
+    __obj.updateDynamic("getPropertyValues")(getPropertyValues)
+    __obj.updateDynamic("getStateAsProperty")(getStateAsProperty)
+    __obj.updateDynamic("getTemplateName")(getTemplateName)
+    __obj.updateDynamic("hasByHierarchicalName")(hasByHierarchicalName)
+    __obj.updateDynamic("hasByName")(hasByName)
+    __obj.updateDynamic("hasElements")(hasElements)
+    __obj.updateDynamic("hasPropertyByName")(hasPropertyByName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeChangesListener")(removeChangesListener)
+    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removePropertiesChangeListener")(removePropertiesChangeListener)
+    __obj.updateDynamic("removePropertyChangeListener")(removePropertyChangeListener)
+    __obj.updateDynamic("removeVetoableChangeListener")(removeVetoableChangeListener)
+    __obj.updateDynamic("setAllPropertiesToDefault")(setAllPropertiesToDefault)
+    __obj.updateDynamic("setHierarchicalPropertyValue")(setHierarchicalPropertyValue)
+    __obj.updateDynamic("setHierarchicalPropertyValues")(setHierarchicalPropertyValues)
+    __obj.updateDynamic("setLocale")(setLocale)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setParent")(setParent)
+    __obj.updateDynamic("setPropertiesToDefault")(setPropertiesToDefault)
+    __obj.updateDynamic("setPropertyToDefault")(setPropertyToDefault)
+    __obj.updateDynamic("setPropertyValue")(setPropertyValue)
+    __obj.updateDynamic("setPropertyValues")(setPropertyValues)
+    __obj.updateDynamic("setToDefaultAsProperty")(setToDefaultAsProperty)
+    __obj.updateDynamic("unescapeString")(unescapeString)
+    __obj.asInstanceOf[ConfigurationAccess]
+  }
+}
+

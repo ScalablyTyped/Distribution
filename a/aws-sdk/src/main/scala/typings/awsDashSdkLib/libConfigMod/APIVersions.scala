@@ -18,3 +18,16 @@ trait APIVersions extends js.Object {
   ] = js.undefined
 }
 
+object APIVersions {
+  @scala.inline
+  def apply(
+    apiVersion: awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String = null,
+    apiVersions: awsDashSdkLib.libConfigUnderscoreServiceUnderscorePlaceholdersMod.ConfigurationServiceApiVersions = null
+  ): APIVersions = {
+    val __obj = js.Dynamic.literal()
+    if (apiVersion != null) __obj.updateDynamic("apiVersion")(apiVersion.asInstanceOf[js.Any])
+    if (apiVersions != null) __obj.updateDynamic("apiVersions")(apiVersions)
+    __obj.asInstanceOf[APIVersions]
+  }
+}
+

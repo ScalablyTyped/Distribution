@@ -151,3 +151,124 @@ trait FormulaProperties extends js.Object {
   var TopMargin: scala.Double
 }
 
+object FormulaProperties {
+  @scala.inline
+  def apply(
+    Alignment: scala.Double,
+    BaseFontHeight: scala.Double,
+    BaseLine: scala.Double,
+    BottomMargin: scala.Double,
+    CustomFontNameFixed: java.lang.String,
+    CustomFontNameSans: java.lang.String,
+    CustomFontNameSerif: java.lang.String,
+    FontFixedIsBold: scala.Boolean,
+    FontFixedIsItalic: scala.Boolean,
+    FontFunctionsIsBold: scala.Boolean,
+    FontFunctionsIsItalic: scala.Boolean,
+    FontNameFunctions: java.lang.String,
+    FontNameNumbers: java.lang.String,
+    FontNameText: java.lang.String,
+    FontNameVariables: java.lang.String,
+    FontNumbersIsBold: scala.Boolean,
+    FontNumbersIsItalic: scala.Boolean,
+    FontSansIsBold: scala.Boolean,
+    FontSansIsItalic: scala.Boolean,
+    FontSerifIsBold: scala.Boolean,
+    FontSerifIsItalic: scala.Boolean,
+    FontTextIsBold: scala.Boolean,
+    FontTextIsItalic: scala.Boolean,
+    FontVariablesIsBold: scala.Boolean,
+    FontVariablesIsItalic: scala.Boolean,
+    Formula: java.lang.String,
+    IsScaleAllBrackets: scala.Boolean,
+    IsTextMode: scala.Boolean,
+    LeftMargin: scala.Double,
+    RelativeBracketDistance: scala.Double,
+    RelativeBracketExcessSize: scala.Double,
+    RelativeFontHeightFunctions: scala.Double,
+    RelativeFontHeightIndices: scala.Double,
+    RelativeFontHeightLimits: scala.Double,
+    RelativeFontHeightOperators: scala.Double,
+    RelativeFontHeightText: scala.Double,
+    RelativeFractionBarExcessLength: scala.Double,
+    RelativeFractionBarLineWeight: scala.Double,
+    RelativeFractionDenominatorDepth: scala.Double,
+    RelativeFractionNumeratorHeight: scala.Double,
+    RelativeIndexSubscript: scala.Double,
+    RelativeIndexSuperscript: scala.Double,
+    RelativeLineSpacing: scala.Double,
+    RelativeLowerLimitDistance: scala.Double,
+    RelativeMatrixColumnSpacing: scala.Double,
+    RelativeMatrixLineSpacing: scala.Double,
+    RelativeOperatorExcessSize: scala.Double,
+    RelativeOperatorSpacing: scala.Double,
+    RelativeRootSpacing: scala.Double,
+    RelativeScaleBracketExcessSize: scala.Double,
+    RelativeSpacing: scala.Double,
+    RelativeSymbolMinimumHeight: scala.Double,
+    RelativeSymbolPrimaryHeight: scala.Double,
+    RelativeUpperLimitDistance: scala.Double,
+    RightMargin: scala.Double,
+    TopMargin: scala.Double
+  ): FormulaProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Alignment")(Alignment)
+    __obj.updateDynamic("BaseFontHeight")(BaseFontHeight)
+    __obj.updateDynamic("BaseLine")(BaseLine)
+    __obj.updateDynamic("BottomMargin")(BottomMargin)
+    __obj.updateDynamic("CustomFontNameFixed")(CustomFontNameFixed)
+    __obj.updateDynamic("CustomFontNameSans")(CustomFontNameSans)
+    __obj.updateDynamic("CustomFontNameSerif")(CustomFontNameSerif)
+    __obj.updateDynamic("FontFixedIsBold")(FontFixedIsBold)
+    __obj.updateDynamic("FontFixedIsItalic")(FontFixedIsItalic)
+    __obj.updateDynamic("FontFunctionsIsBold")(FontFunctionsIsBold)
+    __obj.updateDynamic("FontFunctionsIsItalic")(FontFunctionsIsItalic)
+    __obj.updateDynamic("FontNameFunctions")(FontNameFunctions)
+    __obj.updateDynamic("FontNameNumbers")(FontNameNumbers)
+    __obj.updateDynamic("FontNameText")(FontNameText)
+    __obj.updateDynamic("FontNameVariables")(FontNameVariables)
+    __obj.updateDynamic("FontNumbersIsBold")(FontNumbersIsBold)
+    __obj.updateDynamic("FontNumbersIsItalic")(FontNumbersIsItalic)
+    __obj.updateDynamic("FontSansIsBold")(FontSansIsBold)
+    __obj.updateDynamic("FontSansIsItalic")(FontSansIsItalic)
+    __obj.updateDynamic("FontSerifIsBold")(FontSerifIsBold)
+    __obj.updateDynamic("FontSerifIsItalic")(FontSerifIsItalic)
+    __obj.updateDynamic("FontTextIsBold")(FontTextIsBold)
+    __obj.updateDynamic("FontTextIsItalic")(FontTextIsItalic)
+    __obj.updateDynamic("FontVariablesIsBold")(FontVariablesIsBold)
+    __obj.updateDynamic("FontVariablesIsItalic")(FontVariablesIsItalic)
+    __obj.updateDynamic("Formula")(Formula)
+    __obj.updateDynamic("IsScaleAllBrackets")(IsScaleAllBrackets)
+    __obj.updateDynamic("IsTextMode")(IsTextMode)
+    __obj.updateDynamic("LeftMargin")(LeftMargin)
+    __obj.updateDynamic("RelativeBracketDistance")(RelativeBracketDistance)
+    __obj.updateDynamic("RelativeBracketExcessSize")(RelativeBracketExcessSize)
+    __obj.updateDynamic("RelativeFontHeightFunctions")(RelativeFontHeightFunctions)
+    __obj.updateDynamic("RelativeFontHeightIndices")(RelativeFontHeightIndices)
+    __obj.updateDynamic("RelativeFontHeightLimits")(RelativeFontHeightLimits)
+    __obj.updateDynamic("RelativeFontHeightOperators")(RelativeFontHeightOperators)
+    __obj.updateDynamic("RelativeFontHeightText")(RelativeFontHeightText)
+    __obj.updateDynamic("RelativeFractionBarExcessLength")(RelativeFractionBarExcessLength)
+    __obj.updateDynamic("RelativeFractionBarLineWeight")(RelativeFractionBarLineWeight)
+    __obj.updateDynamic("RelativeFractionDenominatorDepth")(RelativeFractionDenominatorDepth)
+    __obj.updateDynamic("RelativeFractionNumeratorHeight")(RelativeFractionNumeratorHeight)
+    __obj.updateDynamic("RelativeIndexSubscript")(RelativeIndexSubscript)
+    __obj.updateDynamic("RelativeIndexSuperscript")(RelativeIndexSuperscript)
+    __obj.updateDynamic("RelativeLineSpacing")(RelativeLineSpacing)
+    __obj.updateDynamic("RelativeLowerLimitDistance")(RelativeLowerLimitDistance)
+    __obj.updateDynamic("RelativeMatrixColumnSpacing")(RelativeMatrixColumnSpacing)
+    __obj.updateDynamic("RelativeMatrixLineSpacing")(RelativeMatrixLineSpacing)
+    __obj.updateDynamic("RelativeOperatorExcessSize")(RelativeOperatorExcessSize)
+    __obj.updateDynamic("RelativeOperatorSpacing")(RelativeOperatorSpacing)
+    __obj.updateDynamic("RelativeRootSpacing")(RelativeRootSpacing)
+    __obj.updateDynamic("RelativeScaleBracketExcessSize")(RelativeScaleBracketExcessSize)
+    __obj.updateDynamic("RelativeSpacing")(RelativeSpacing)
+    __obj.updateDynamic("RelativeSymbolMinimumHeight")(RelativeSymbolMinimumHeight)
+    __obj.updateDynamic("RelativeSymbolPrimaryHeight")(RelativeSymbolPrimaryHeight)
+    __obj.updateDynamic("RelativeUpperLimitDistance")(RelativeUpperLimitDistance)
+    __obj.updateDynamic("RightMargin")(RightMargin)
+    __obj.updateDynamic("TopMargin")(TopMargin)
+    __obj.asInstanceOf[FormulaProperties]
+  }
+}
+

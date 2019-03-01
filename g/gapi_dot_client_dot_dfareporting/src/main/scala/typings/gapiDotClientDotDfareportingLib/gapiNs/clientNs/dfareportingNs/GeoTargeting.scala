@@ -39,3 +39,24 @@ trait GeoTargeting extends js.Object {
   var regions: js.UndefOr[js.Array[Region]] = js.undefined
 }
 
+object GeoTargeting {
+  @scala.inline
+  def apply(
+    cities: js.Array[City] = null,
+    countries: js.Array[Country] = null,
+    excludeCountries: js.UndefOr[scala.Boolean] = js.undefined,
+    metros: js.Array[Metro] = null,
+    postalCodes: js.Array[PostalCode] = null,
+    regions: js.Array[Region] = null
+  ): GeoTargeting = {
+    val __obj = js.Dynamic.literal()
+    if (cities != null) __obj.updateDynamic("cities")(cities)
+    if (countries != null) __obj.updateDynamic("countries")(countries)
+    if (!js.isUndefined(excludeCountries)) __obj.updateDynamic("excludeCountries")(excludeCountries)
+    if (metros != null) __obj.updateDynamic("metros")(metros)
+    if (postalCodes != null) __obj.updateDynamic("postalCodes")(postalCodes)
+    if (regions != null) __obj.updateDynamic("regions")(regions)
+    __obj.asInstanceOf[GeoTargeting]
+  }
+}
+

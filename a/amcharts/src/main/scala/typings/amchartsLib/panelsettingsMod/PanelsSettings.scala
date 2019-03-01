@@ -145,3 +145,62 @@ trait PanelsSettings extends js.Object {
   var usePrefixes: scala.Boolean
 }
 
+object PanelsSettings {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    backgroundAlpha: scala.Double,
+    backgroundColor: java.lang.String,
+    columnSpacing: scala.Double,
+    columnWidth: scala.Double,
+    depth3D: scala.Double,
+    fontFamily: java.lang.String,
+    fontSize: java.lang.String,
+    marginBottom: scala.Double,
+    marginLeft: scala.Double,
+    marginRight: scala.Double,
+    marginTop: scala.Double,
+    panEventsEnabled: scala.Boolean,
+    panelSpacing: scala.Double,
+    plotAreaBorderAlpha: scala.Double,
+    plotAreaBorderColor: java.lang.String,
+    plotAreaFillAlphas: scala.Double,
+    plotAreaFillColors: js.Any,
+    prefixesOfBigNumbers: js.Array[_],
+    prefixesOfSmallNumbers: js.Array[_],
+    sequencedAnimation: scala.Boolean,
+    startAlpha: scala.Double,
+    startDuration: scala.Double,
+    startEffect: java.lang.String,
+    usePrefixes: scala.Boolean
+  ): PanelsSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("backgroundAlpha")(backgroundAlpha)
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("columnSpacing")(columnSpacing)
+    __obj.updateDynamic("columnWidth")(columnWidth)
+    __obj.updateDynamic("depth3D")(depth3D)
+    __obj.updateDynamic("fontFamily")(fontFamily)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("marginBottom")(marginBottom)
+    __obj.updateDynamic("marginLeft")(marginLeft)
+    __obj.updateDynamic("marginRight")(marginRight)
+    __obj.updateDynamic("marginTop")(marginTop)
+    __obj.updateDynamic("panEventsEnabled")(panEventsEnabled)
+    __obj.updateDynamic("panelSpacing")(panelSpacing)
+    __obj.updateDynamic("plotAreaBorderAlpha")(plotAreaBorderAlpha)
+    __obj.updateDynamic("plotAreaBorderColor")(plotAreaBorderColor)
+    __obj.updateDynamic("plotAreaFillAlphas")(plotAreaFillAlphas)
+    __obj.updateDynamic("plotAreaFillColors")(plotAreaFillColors)
+    __obj.updateDynamic("prefixesOfBigNumbers")(prefixesOfBigNumbers)
+    __obj.updateDynamic("prefixesOfSmallNumbers")(prefixesOfSmallNumbers)
+    __obj.updateDynamic("sequencedAnimation")(sequencedAnimation)
+    __obj.updateDynamic("startAlpha")(startAlpha)
+    __obj.updateDynamic("startDuration")(startDuration)
+    __obj.updateDynamic("startEffect")(startEffect)
+    __obj.updateDynamic("usePrefixes")(usePrefixes)
+    __obj.asInstanceOf[PanelsSettings]
+  }
+}
+

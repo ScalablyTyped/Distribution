@@ -21,3 +21,13 @@ trait SearchReadsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchReadsResponse {
+  @scala.inline
+  def apply(alignments: js.Array[Read] = null, nextPageToken: java.lang.String = null): SearchReadsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (alignments != null) __obj.updateDynamic("alignments")(alignments)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[SearchReadsResponse]
+  }
+}
+

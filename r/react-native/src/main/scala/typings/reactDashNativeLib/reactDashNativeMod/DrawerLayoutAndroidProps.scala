@@ -93,3 +93,125 @@ trait DrawerLayoutAndroidProps extends ViewProps {
   def renderNavigationView(): reactLib.reactMod.Global.JSXNs.Element
 }
 
+object DrawerLayoutAndroidProps {
+  @scala.inline
+  def apply(
+    renderNavigationView: js.Function0[reactLib.reactMod.Global.JSXNs.Element],
+    accessibilityActions: js.Array[java.lang.String] = null,
+    accessibilityComponentType: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.button | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_checked | reactDashNativeLib.reactDashNativeLibStrings.radiobutton_unchecked = null,
+    accessibilityElementsHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityHint: java.lang.String = null,
+    accessibilityIgnoresInvertColors: js.UndefOr[scala.Boolean] = js.undefined,
+    accessibilityLabel: java.lang.String = null,
+    accessibilityLiveRegion: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.polite | reactDashNativeLib.reactDashNativeLibStrings.assertive = null,
+    accessibilityRole: AccessibilityRole = null,
+    accessibilityStates: js.Array[AccessibilityState] = null,
+    accessibilityTraits: reactDashNativeLib.AccessibilityTrait | js.Array[reactDashNativeLib.AccessibilityTrait] = null,
+    accessibilityViewIsModal: js.UndefOr[scala.Boolean] = js.undefined,
+    accessible: js.UndefOr[scala.Boolean] = js.undefined,
+    collapsable: js.UndefOr[scala.Boolean] = js.undefined,
+    drawerBackgroundColor: java.lang.String = null,
+    drawerLockMode: reactDashNativeLib.reactDashNativeLibStrings.unlocked | reactDashNativeLib.reactDashNativeLibStrings.`locked-closed` | reactDashNativeLib.reactDashNativeLibStrings.`locked-open` = null,
+    drawerPosition: scala.Int | scala.Double = null,
+    drawerWidth: scala.Int | scala.Double = null,
+    hitSlop: Insets = null,
+    importantForAccessibility: reactDashNativeLib.reactDashNativeLibStrings.auto | reactDashNativeLib.reactDashNativeLibStrings.yes | reactDashNativeLib.reactDashNativeLibStrings.no | reactDashNativeLib.reactDashNativeLibStrings.`no-hide-descendants` = null,
+    keyboardDismissMode: reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`on-drag` = null,
+    nativeID: java.lang.String = null,
+    needsOffscreenAlphaCompositing: js.UndefOr[scala.Boolean] = js.undefined,
+    onAccessibilityAction: js.Function0[scala.Unit] = null,
+    onAccessibilityTap: js.Function0[scala.Unit] = null,
+    onDrawerClose: js.Function0[scala.Unit] = null,
+    onDrawerOpen: js.Function0[scala.Unit] = null,
+    onDrawerSlide: js.Function1[/* event */ DrawerSlideEvent, scala.Unit] = null,
+    onDrawerStateChanged: js.Function1[
+      /* event */ reactDashNativeLib.reactDashNativeLibStrings.Idle | reactDashNativeLib.reactDashNativeLibStrings.Dragging | reactDashNativeLib.reactDashNativeLibStrings.Settling, 
+      scala.Unit
+    ] = null,
+    onLayout: js.Function1[/* event */ LayoutChangeEvent, scala.Unit] = null,
+    onMagicTap: js.Function0[scala.Unit] = null,
+    onMoveShouldSetResponder: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
+    onMoveShouldSetResponderCapture: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
+    onResponderEnd: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onResponderGrant: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onResponderMove: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onResponderReject: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onResponderRelease: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onResponderStart: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onResponderTerminate: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onResponderTerminationRequest: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
+    onStartShouldSetResponder: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
+    onStartShouldSetResponderCapture: js.Function1[/* event */ GestureResponderEvent, scala.Boolean] = null,
+    onTouchCancel: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onTouchEnd: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onTouchEndCapture: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onTouchMove: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    onTouchStart: js.Function1[/* event */ GestureResponderEvent, scala.Unit] = null,
+    pointerEvents: reactDashNativeLib.reactDashNativeLibStrings.`box-none` | reactDashNativeLib.reactDashNativeLibStrings.none | reactDashNativeLib.reactDashNativeLibStrings.`box-only` | reactDashNativeLib.reactDashNativeLibStrings.auto = null,
+    removeClippedSubviews: js.UndefOr[scala.Boolean] = js.undefined,
+    renderToHardwareTextureAndroid: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldRasterizeIOS: js.UndefOr[scala.Boolean] = js.undefined,
+    statusBarBackgroundColor: java.lang.String = null,
+    style: StyleProp[ViewStyle] = null,
+    testID: java.lang.String = null
+  ): DrawerLayoutAndroidProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderNavigationView")(renderNavigationView)
+    if (accessibilityActions != null) __obj.updateDynamic("accessibilityActions")(accessibilityActions)
+    if (accessibilityComponentType != null) __obj.updateDynamic("accessibilityComponentType")(accessibilityComponentType.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityElementsHidden)) __obj.updateDynamic("accessibilityElementsHidden")(accessibilityElementsHidden)
+    if (accessibilityHint != null) __obj.updateDynamic("accessibilityHint")(accessibilityHint)
+    if (!js.isUndefined(accessibilityIgnoresInvertColors)) __obj.updateDynamic("accessibilityIgnoresInvertColors")(accessibilityIgnoresInvertColors)
+    if (accessibilityLabel != null) __obj.updateDynamic("accessibilityLabel")(accessibilityLabel)
+    if (accessibilityLiveRegion != null) __obj.updateDynamic("accessibilityLiveRegion")(accessibilityLiveRegion.asInstanceOf[js.Any])
+    if (accessibilityRole != null) __obj.updateDynamic("accessibilityRole")(accessibilityRole)
+    if (accessibilityStates != null) __obj.updateDynamic("accessibilityStates")(accessibilityStates)
+    if (accessibilityTraits != null) __obj.updateDynamic("accessibilityTraits")(accessibilityTraits.asInstanceOf[js.Any])
+    if (!js.isUndefined(accessibilityViewIsModal)) __obj.updateDynamic("accessibilityViewIsModal")(accessibilityViewIsModal)
+    if (!js.isUndefined(accessible)) __obj.updateDynamic("accessible")(accessible)
+    if (!js.isUndefined(collapsable)) __obj.updateDynamic("collapsable")(collapsable)
+    if (drawerBackgroundColor != null) __obj.updateDynamic("drawerBackgroundColor")(drawerBackgroundColor)
+    if (drawerLockMode != null) __obj.updateDynamic("drawerLockMode")(drawerLockMode.asInstanceOf[js.Any])
+    if (drawerPosition != null) __obj.updateDynamic("drawerPosition")(drawerPosition.asInstanceOf[js.Any])
+    if (drawerWidth != null) __obj.updateDynamic("drawerWidth")(drawerWidth.asInstanceOf[js.Any])
+    if (hitSlop != null) __obj.updateDynamic("hitSlop")(hitSlop)
+    if (importantForAccessibility != null) __obj.updateDynamic("importantForAccessibility")(importantForAccessibility.asInstanceOf[js.Any])
+    if (keyboardDismissMode != null) __obj.updateDynamic("keyboardDismissMode")(keyboardDismissMode.asInstanceOf[js.Any])
+    if (nativeID != null) __obj.updateDynamic("nativeID")(nativeID)
+    if (!js.isUndefined(needsOffscreenAlphaCompositing)) __obj.updateDynamic("needsOffscreenAlphaCompositing")(needsOffscreenAlphaCompositing)
+    if (onAccessibilityAction != null) __obj.updateDynamic("onAccessibilityAction")(onAccessibilityAction)
+    if (onAccessibilityTap != null) __obj.updateDynamic("onAccessibilityTap")(onAccessibilityTap)
+    if (onDrawerClose != null) __obj.updateDynamic("onDrawerClose")(onDrawerClose)
+    if (onDrawerOpen != null) __obj.updateDynamic("onDrawerOpen")(onDrawerOpen)
+    if (onDrawerSlide != null) __obj.updateDynamic("onDrawerSlide")(onDrawerSlide)
+    if (onDrawerStateChanged != null) __obj.updateDynamic("onDrawerStateChanged")(onDrawerStateChanged)
+    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
+    if (onMagicTap != null) __obj.updateDynamic("onMagicTap")(onMagicTap)
+    if (onMoveShouldSetResponder != null) __obj.updateDynamic("onMoveShouldSetResponder")(onMoveShouldSetResponder)
+    if (onMoveShouldSetResponderCapture != null) __obj.updateDynamic("onMoveShouldSetResponderCapture")(onMoveShouldSetResponderCapture)
+    if (onResponderEnd != null) __obj.updateDynamic("onResponderEnd")(onResponderEnd)
+    if (onResponderGrant != null) __obj.updateDynamic("onResponderGrant")(onResponderGrant)
+    if (onResponderMove != null) __obj.updateDynamic("onResponderMove")(onResponderMove)
+    if (onResponderReject != null) __obj.updateDynamic("onResponderReject")(onResponderReject)
+    if (onResponderRelease != null) __obj.updateDynamic("onResponderRelease")(onResponderRelease)
+    if (onResponderStart != null) __obj.updateDynamic("onResponderStart")(onResponderStart)
+    if (onResponderTerminate != null) __obj.updateDynamic("onResponderTerminate")(onResponderTerminate)
+    if (onResponderTerminationRequest != null) __obj.updateDynamic("onResponderTerminationRequest")(onResponderTerminationRequest)
+    if (onStartShouldSetResponder != null) __obj.updateDynamic("onStartShouldSetResponder")(onStartShouldSetResponder)
+    if (onStartShouldSetResponderCapture != null) __obj.updateDynamic("onStartShouldSetResponderCapture")(onStartShouldSetResponderCapture)
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
+    if (onTouchEndCapture != null) __obj.updateDynamic("onTouchEndCapture")(onTouchEndCapture)
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (pointerEvents != null) __obj.updateDynamic("pointerEvents")(pointerEvents.asInstanceOf[js.Any])
+    if (!js.isUndefined(removeClippedSubviews)) __obj.updateDynamic("removeClippedSubviews")(removeClippedSubviews)
+    if (!js.isUndefined(renderToHardwareTextureAndroid)) __obj.updateDynamic("renderToHardwareTextureAndroid")(renderToHardwareTextureAndroid)
+    if (!js.isUndefined(shouldRasterizeIOS)) __obj.updateDynamic("shouldRasterizeIOS")(shouldRasterizeIOS)
+    if (statusBarBackgroundColor != null) __obj.updateDynamic("statusBarBackgroundColor")(statusBarBackgroundColor)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID)
+    __obj.asInstanceOf[DrawerLayoutAndroidProps]
+  }
+}
+

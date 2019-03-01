@@ -7,106 +7,141 @@ import scala.scalajs.js.annotation._
 
 object nodeDashHueDashApiLibStrings {
   @js.native
-  sealed trait Bathroom extends js.Object
+  sealed trait Bathroom
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Bedroom extends js.Object
+  sealed trait Bedroom
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Carport extends js.Object
+  sealed trait Carport
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Dining extends js.Object
+  sealed trait Dining
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Driveway extends js.Object
+  sealed trait Driveway
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait `Front door` extends js.Object
+  sealed trait `Front door`
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait `Garage Terrace` extends js.Object
+  sealed trait `Garage Terrace`
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Garden extends js.Object
+  sealed trait Garden
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Gym extends js.Object
+  sealed trait Gym
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Hallway extends js.Object
+  sealed trait Hallway
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait `Kids bedroom` extends js.Object
+  sealed trait `Kids bedroom`
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Kitchen extends js.Object
+  sealed trait Kitchen
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait LightGroup extends js.Object
+  sealed trait LightGroup
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightGroupType
   
   @js.native
-  sealed trait LightSource extends js.Object
+  sealed trait LightSource
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightGroupType
   
   @js.native
-  sealed trait `Living room` extends js.Object
+  sealed trait `Living room`
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Luminaire extends js.Object
+  sealed trait Luminaire
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightGroupType
   
   @js.native
-  sealed trait Nursery extends js.Object
+  sealed trait Nursery
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Office extends js.Object
+  sealed trait Office
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Other extends js.Object
+  sealed trait Other
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Recreation extends js.Object
+  sealed trait Recreation
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait Room extends js.Object
+  sealed trait Room
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightGroupType
   
   @js.native
-  sealed trait Toilet extends js.Object
+  sealed trait Toilet
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.RoomType
   
   @js.native
-  sealed trait colorloop extends js.Object
+  sealed trait colorloop
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightEffect
   
   @js.native
-  sealed trait ct extends js.Object
+  sealed trait ct
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.ColorMode
   
   @js.native
-  sealed trait fileready_disabled extends js.Object
+  sealed trait fileready_disabled
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.BackupStatus
   
   @js.native
-  sealed trait hs extends js.Object
+  sealed trait hs
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.ColorMode
   
   @js.native
-  sealed trait idle extends js.Object
+  sealed trait idle
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.BackupStatus
   
   @js.native
-  sealed trait lselect extends js.Object
+  sealed trait lselect
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightAlert
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightAlert
+       with nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightEffect
   
   @js.native
-  sealed trait prepare_restore extends js.Object
+  sealed trait prepare_restore
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.BackupStatus
   
   @js.native
-  sealed trait restoring extends js.Object
+  sealed trait restoring
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.BackupStatus
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait select
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.LightAlert
   
   @js.native
-  sealed trait startmigration extends js.Object
+  sealed trait startmigration
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.BackupStatus
   
   @js.native
-  sealed trait xy extends js.Object
+  sealed trait xy
+    extends nodeDashHueDashApiLib.nodeDashHueDashApiMod.ColorMode
   
   @scala.inline
   def Bathroom: Bathroom = "Bathroom".asInstanceOf[Bathroom]

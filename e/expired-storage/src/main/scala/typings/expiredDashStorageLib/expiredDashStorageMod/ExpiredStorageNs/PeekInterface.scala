@@ -20,3 +20,18 @@ trait PeekInterface extends js.Object {
   var value: java.lang.String | scala.Null
 }
 
+object PeekInterface {
+  @scala.inline
+  def apply(
+    isExpired: scala.Boolean,
+    timeLeft: scala.Int | scala.Double = null,
+    value: java.lang.String = null
+  ): PeekInterface = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isExpired")(isExpired)
+    if (timeLeft != null) __obj.updateDynamic("timeLeft")(timeLeft.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[PeekInterface]
+  }
+}
+

@@ -28,3 +28,20 @@ trait RegionConstructionOptions extends js.Object {
   var replaceElement: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RegionConstructionOptions {
+  @scala.inline
+  def apply(
+    allowMissingEl: js.UndefOr[scala.Boolean] = js.undefined,
+    el: js.Any = null,
+    parentEl: java.lang.String = null,
+    replaceElement: java.lang.String = null
+  ): RegionConstructionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowMissingEl)) __obj.updateDynamic("allowMissingEl")(allowMissingEl)
+    if (el != null) __obj.updateDynamic("el")(el)
+    if (parentEl != null) __obj.updateDynamic("parentEl")(parentEl)
+    if (replaceElement != null) __obj.updateDynamic("replaceElement")(replaceElement)
+    __obj.asInstanceOf[RegionConstructionOptions]
+  }
+}
+

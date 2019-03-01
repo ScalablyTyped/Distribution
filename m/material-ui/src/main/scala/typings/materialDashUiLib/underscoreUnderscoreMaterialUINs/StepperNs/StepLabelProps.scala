@@ -14,3 +14,24 @@ trait StepLabelProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object StepLabelProps {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    completed: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    icon: reactLib.reactMod.ReactNs.ReactNode | java.lang.String | scala.Double = null,
+    iconContainerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): StepLabelProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (iconContainerStyle != null) __obj.updateDynamic("iconContainerStyle")(iconContainerStyle)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[StepLabelProps]
+  }
+}
+

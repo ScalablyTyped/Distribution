@@ -35,3 +35,22 @@ trait CustomResourceDefinition extends js.Object {
   val status: CustomResourceDefinitionStatus
 }
 
+object CustomResourceDefinition {
+  @scala.inline
+  def apply(
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinition,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    spec: CustomResourceDefinitionSpec,
+    status: CustomResourceDefinitionStatus
+  ): CustomResourceDefinition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("spec")(spec)
+    __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[CustomResourceDefinition]
+  }
+}
+

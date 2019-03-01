@@ -31,3 +31,24 @@ trait ExpressMiddlewareOptions extends js.Object {
   var timeByUrl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ExpressMiddlewareOptions {
+  @scala.inline
+  def apply(
+    notFoundRouteName: java.lang.String = null,
+    onResponseEnd: js.Function4[
+      /* client */ StatsdClient, 
+      /* startTime */ stdLib.Date, 
+      /* req */ expressLib.expressMod.eNs.Request, 
+      /* res */ expressLib.expressMod.eNs.Response, 
+      scala.Unit
+    ] = null,
+    timeByUrl: js.UndefOr[scala.Boolean] = js.undefined
+  ): ExpressMiddlewareOptions = {
+    val __obj = js.Dynamic.literal()
+    if (notFoundRouteName != null) __obj.updateDynamic("notFoundRouteName")(notFoundRouteName)
+    if (onResponseEnd != null) __obj.updateDynamic("onResponseEnd")(onResponseEnd)
+    if (!js.isUndefined(timeByUrl)) __obj.updateDynamic("timeByUrl")(timeByUrl)
+    __obj.asInstanceOf[ExpressMiddlewareOptions]
+  }
+}
+

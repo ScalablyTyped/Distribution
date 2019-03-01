@@ -52,3 +52,34 @@ trait NetworkAclRuleState extends js.Object {
   val toPort: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object NetworkAclRuleState {
+  @scala.inline
+  def apply(
+    cidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    egress: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    fromPort: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    icmpCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    icmpType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ipv6CidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    networkAclId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    protocol: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ruleAction: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ruleNumber: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    toPort: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): NetworkAclRuleState = {
+    val __obj = js.Dynamic.literal()
+    if (cidrBlock != null) __obj.updateDynamic("cidrBlock")(cidrBlock.asInstanceOf[js.Any])
+    if (egress != null) __obj.updateDynamic("egress")(egress.asInstanceOf[js.Any])
+    if (fromPort != null) __obj.updateDynamic("fromPort")(fromPort.asInstanceOf[js.Any])
+    if (icmpCode != null) __obj.updateDynamic("icmpCode")(icmpCode.asInstanceOf[js.Any])
+    if (icmpType != null) __obj.updateDynamic("icmpType")(icmpType.asInstanceOf[js.Any])
+    if (ipv6CidrBlock != null) __obj.updateDynamic("ipv6CidrBlock")(ipv6CidrBlock.asInstanceOf[js.Any])
+    if (networkAclId != null) __obj.updateDynamic("networkAclId")(networkAclId.asInstanceOf[js.Any])
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (ruleAction != null) __obj.updateDynamic("ruleAction")(ruleAction.asInstanceOf[js.Any])
+    if (ruleNumber != null) __obj.updateDynamic("ruleNumber")(ruleNumber.asInstanceOf[js.Any])
+    if (toPort != null) __obj.updateDynamic("toPort")(toPort.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkAclRuleState]
+  }
+}
+

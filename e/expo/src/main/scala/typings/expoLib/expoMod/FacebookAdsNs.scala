@@ -20,6 +20,8 @@ object FacebookAdsNs extends js.Object {
   class AdTriggerView[P] ()
     extends reactLib.reactMod.Component[AdTriggerViewProps[P], js.Object, js.Any]
   
+  trait AdType extends js.Object
+  
   @js.native
   class BannerView ()
     extends reactLib.reactMod.Component[BannerViewProps, js.Object, js.Any]
@@ -30,6 +32,8 @@ object FacebookAdsNs extends js.Object {
     def onError(): scala.Unit
     def onPress(): scala.Unit
   }
+  
+  trait MediaCachePolicy extends js.Object
   
   trait NativeAd extends js.Object {
     /**
@@ -87,6 +91,8 @@ object FacebookAdsNs extends js.Object {
   @JSName("AdSettings")
   @js.native
   object AdSettingsNs extends js.Object {
+    trait SDKLogLevel extends js.Object
+    
     val currentDeviceHash: java.lang.String = js.native
     def addTestDevice(device: java.lang.String): scala.Unit = js.native
     def clearTestDevices(): scala.Unit = js.native
@@ -94,7 +100,6 @@ object FacebookAdsNs extends js.Object {
     def setLogLevel(logLevel: SDKLogLevel): scala.Unit = js.native
     def setMediationService(mediationService: java.lang.String): scala.Unit = js.native
     def setUrlPrefix(urlPrefix: java.lang.String): scala.Unit = js.native
-    type SDKLogLevel = expoLib.expoLibStrings.none | expoLib.expoLibStrings.debug | expoLib.expoLibStrings.verbose | expoLib.expoLibStrings.warning | expoLib.expoLibStrings.error | expoLib.expoLibStrings.notification
   }
   
   /**
@@ -107,13 +112,5 @@ object FacebookAdsNs extends js.Object {
   }
   
   type AdTriggerViewProps[P] = expoLib.Anon_Props[P] with P
-  /**
-    * Banner View
-    */
-  type AdType = expoLib.expoLibStrings.large | expoLib.expoLibStrings.rectangle | expoLib.expoLibStrings.standard
-  /**
-    * Native Ads
-    */
-  type MediaCachePolicy = expoLib.expoLibStrings.none | expoLib.expoLibStrings.icon | expoLib.expoLibStrings.image | expoLib.expoLibStrings.all
 }
 

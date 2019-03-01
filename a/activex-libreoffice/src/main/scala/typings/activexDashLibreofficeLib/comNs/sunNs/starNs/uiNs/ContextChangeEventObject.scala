@@ -13,3 +13,18 @@ trait ContextChangeEventObject
   var ContextName: java.lang.String
 }
 
+object ContextChangeEventObject {
+  @scala.inline
+  def apply(
+    ApplicationName: java.lang.String,
+    ContextName: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ContextChangeEventObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ApplicationName")(ApplicationName)
+    __obj.updateDynamic("ContextName")(ContextName)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[ContextChangeEventObject]
+  }
+}
+

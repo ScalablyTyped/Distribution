@@ -37,3 +37,26 @@ trait FileSystemInfo extends js.Object {
   var writable: scala.Boolean
 }
 
+object FileSystemInfo {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    fileSystemId: java.lang.String,
+    openedFiles: js.Array[OpenedFileInfo],
+    openedFilesLimit: chromeDashAppsLib.chromeNs.integer,
+    watchers: js.Array[FileWatchersInfo],
+    writable: scala.Boolean,
+    supportsNotifyTag: js.UndefOr[scala.Boolean] = js.undefined
+  ): FileSystemInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("openedFiles")(openedFiles)
+    __obj.updateDynamic("openedFilesLimit")(openedFilesLimit)
+    __obj.updateDynamic("watchers")(watchers)
+    __obj.updateDynamic("writable")(writable)
+    if (!js.isUndefined(supportsNotifyTag)) __obj.updateDynamic("supportsNotifyTag")(supportsNotifyTag)
+    __obj.asInstanceOf[FileSystemInfo]
+  }
+}
+

@@ -33,3 +33,24 @@ trait Anon_Center extends js.Object {
   var xanchor: plotlyDotJsLib.plotlyDotJsLibStrings.left | plotlyDotJsLib.plotlyDotJsLibStrings.center | plotlyDotJsLib.plotlyDotJsLibStrings.right
 }
 
+object Anon_Center {
+  @scala.inline
+  def apply(
+    font: stdLib.Partial[plotlyDotJsLib.plotlyDotJsMod.Font],
+    offset: scala.Double,
+    prefix: java.lang.String,
+    suffix: java.lang.String,
+    visible: scala.Boolean,
+    xanchor: plotlyDotJsLib.plotlyDotJsLibStrings.left | plotlyDotJsLib.plotlyDotJsLibStrings.center | plotlyDotJsLib.plotlyDotJsLibStrings.right
+  ): Anon_Center = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("font")(font)
+    __obj.updateDynamic("offset")(offset)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.updateDynamic("suffix")(suffix)
+    __obj.updateDynamic("visible")(visible)
+    __obj.updateDynamic("xanchor")(xanchor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Center]
+  }
+}
+

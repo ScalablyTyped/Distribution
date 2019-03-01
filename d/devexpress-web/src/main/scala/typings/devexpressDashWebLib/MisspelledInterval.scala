@@ -41,3 +41,24 @@ trait MisspelledInterval extends js.Object {
   var word: java.lang.String
 }
 
+object MisspelledInterval {
+  @scala.inline
+  def apply(
+    errorType: js.Any,
+    interval: Interval,
+    length: scala.Double,
+    start: scala.Double,
+    suggestions: js.Array[java.lang.String],
+    word: java.lang.String
+  ): MisspelledInterval = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorType")(errorType)
+    __obj.updateDynamic("interval")(interval)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("suggestions")(suggestions)
+    __obj.updateDynamic("word")(word)
+    __obj.asInstanceOf[MisspelledInterval]
+  }
+}
+

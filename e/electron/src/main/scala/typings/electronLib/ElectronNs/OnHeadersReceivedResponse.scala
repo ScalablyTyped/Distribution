@@ -18,3 +18,18 @@ trait OnHeadersReceivedResponse extends js.Object {
   var statusLine: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OnHeadersReceivedResponse {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    responseHeaders: ResponseHeaders = null,
+    statusLine: java.lang.String = null
+  ): OnHeadersReceivedResponse = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (responseHeaders != null) __obj.updateDynamic("responseHeaders")(responseHeaders)
+    if (statusLine != null) __obj.updateDynamic("statusLine")(statusLine)
+    __obj.asInstanceOf[OnHeadersReceivedResponse]
+  }
+}
+

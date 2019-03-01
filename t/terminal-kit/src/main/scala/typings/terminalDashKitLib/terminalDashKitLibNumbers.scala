@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 object terminalDashKitLibNumbers {
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends terminalDashKitLib.screenbufferhdMod.ScreenBufferHDNs.IsBlending
   
   @js.native
   sealed trait `true` extends js.Object

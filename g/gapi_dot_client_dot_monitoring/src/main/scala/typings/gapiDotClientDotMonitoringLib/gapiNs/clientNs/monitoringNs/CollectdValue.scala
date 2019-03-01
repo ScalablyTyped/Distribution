@@ -14,3 +14,18 @@ trait CollectdValue extends js.Object {
   var value: js.UndefOr[TypedValue] = js.undefined
 }
 
+object CollectdValue {
+  @scala.inline
+  def apply(
+    dataSourceName: java.lang.String = null,
+    dataSourceType: java.lang.String = null,
+    value: TypedValue = null
+  ): CollectdValue = {
+    val __obj = js.Dynamic.literal()
+    if (dataSourceName != null) __obj.updateDynamic("dataSourceName")(dataSourceName)
+    if (dataSourceType != null) __obj.updateDynamic("dataSourceType")(dataSourceType)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CollectdValue]
+  }
+}
+

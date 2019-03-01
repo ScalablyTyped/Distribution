@@ -17,3 +17,13 @@ trait Anon_ConnectNull extends js.Object {
   var step: js.UndefOr[Anon_Type] = js.undefined
 }
 
+object Anon_ConnectNull {
+  @scala.inline
+  def apply(connectNull: js.UndefOr[scala.Boolean] = js.undefined, step: Anon_Type = null): Anon_ConnectNull = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(connectNull)) __obj.updateDynamic("connectNull")(connectNull)
+    if (step != null) __obj.updateDynamic("step")(step)
+    __obj.asInstanceOf[Anon_ConnectNull]
+  }
+}
+

@@ -121,3 +121,66 @@ trait Guide extends js.Object {
   var valueAxis: amchartsLib.valueaxisMod.default
 }
 
+object Guide {
+  @scala.inline
+  def apply(
+    above: scala.Boolean,
+    angle: scala.Double,
+    balloonColor: java.lang.String,
+    balloonText: java.lang.String,
+    boldLabel: scala.Boolean,
+    category: java.lang.String,
+    dashLength: scala.Double,
+    date: stdLib.Date,
+    expand: scala.Boolean,
+    fillAlpha: scala.Double,
+    fillColor: java.lang.String,
+    fontSize: java.lang.String,
+    id: java.lang.String,
+    inside: scala.Boolean,
+    label: java.lang.String,
+    labelRotation: scala.Double,
+    lineAlpha: scala.Double,
+    lineColor: java.lang.String,
+    lineThickness: scala.Double,
+    position: java.lang.String,
+    tickLength: scala.Double,
+    toAngle: scala.Double,
+    toCategory: java.lang.String,
+    toDate: stdLib.Date,
+    toValue: scala.Double,
+    value: scala.Double,
+    valueAxis: amchartsLib.valueaxisMod.default
+  ): Guide = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("above")(above)
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("balloonColor")(balloonColor)
+    __obj.updateDynamic("balloonText")(balloonText)
+    __obj.updateDynamic("boldLabel")(boldLabel)
+    __obj.updateDynamic("category")(category)
+    __obj.updateDynamic("dashLength")(dashLength)
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("expand")(expand)
+    __obj.updateDynamic("fillAlpha")(fillAlpha)
+    __obj.updateDynamic("fillColor")(fillColor)
+    __obj.updateDynamic("fontSize")(fontSize)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("inside")(inside)
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("labelRotation")(labelRotation)
+    __obj.updateDynamic("lineAlpha")(lineAlpha)
+    __obj.updateDynamic("lineColor")(lineColor)
+    __obj.updateDynamic("lineThickness")(lineThickness)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("tickLength")(tickLength)
+    __obj.updateDynamic("toAngle")(toAngle)
+    __obj.updateDynamic("toCategory")(toCategory)
+    __obj.updateDynamic("toDate")(toDate)
+    __obj.updateDynamic("toValue")(toValue)
+    __obj.updateDynamic("value")(value)
+    __obj.updateDynamic("valueAxis")(valueAxis)
+    __obj.asInstanceOf[Guide]
+  }
+}
+

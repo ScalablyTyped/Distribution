@@ -9,3 +9,12 @@ trait Window extends js.Object {
   var jQBrowser: jqueryDotBrowserLib.jqueryDotBrowserMod.Matchs
 }
 
+object Window {
+  @scala.inline
+  def apply(jQBrowser: jqueryDotBrowserLib.jqueryDotBrowserMod.Matchs): Window = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jQBrowser")(jQBrowser)
+    __obj.asInstanceOf[Window]
+  }
+}
+

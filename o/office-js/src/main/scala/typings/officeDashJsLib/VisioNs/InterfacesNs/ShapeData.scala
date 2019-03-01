@@ -72,3 +72,30 @@ trait ShapeData extends js.Object {
   var view: js.UndefOr[ShapeViewData] = js.undefined
 }
 
+object ShapeData {
+  @scala.inline
+  def apply(
+    comments: js.Array[CommentData] = null,
+    hyperlinks: js.Array[HyperlinkData] = null,
+    id: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    select: js.UndefOr[scala.Boolean] = js.undefined,
+    shapeDataItems: js.Array[ShapeDataItemData] = null,
+    subShapes: js.Array[ShapeData] = null,
+    text: java.lang.String = null,
+    view: ShapeViewData = null
+  ): ShapeData = {
+    val __obj = js.Dynamic.literal()
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (hyperlinks != null) __obj.updateDynamic("hyperlinks")(hyperlinks)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(select)) __obj.updateDynamic("select")(select)
+    if (shapeDataItems != null) __obj.updateDynamic("shapeDataItems")(shapeDataItems)
+    if (subShapes != null) __obj.updateDynamic("subShapes")(subShapes)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[ShapeData]
+  }
+}
+

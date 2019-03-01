@@ -27,3 +27,20 @@ trait PawsInitRequest extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PawsInitRequest {
+  @scala.inline
+  def apply(
+    deviceDesc: DeviceDescriptor = null,
+    location: GeoLocation = null,
+    `type`: java.lang.String = null,
+    version: java.lang.String = null
+  ): PawsInitRequest = {
+    val __obj = js.Dynamic.literal()
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PawsInitRequest]
+  }
+}
+

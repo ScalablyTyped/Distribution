@@ -9,3 +9,14 @@ trait FetchByKeysCapability[D] extends js.Object {
   var implementation: atOracleOraclejetLib.atOracleOraclejetLibStrings.iteration | atOracleOraclejetLib.atOracleOraclejetLibStrings.lookup
 }
 
+object FetchByKeysCapability {
+  @scala.inline
+  def apply[D](
+    implementation: atOracleOraclejetLib.atOracleOraclejetLibStrings.iteration | atOracleOraclejetLib.atOracleOraclejetLibStrings.lookup
+  ): FetchByKeysCapability[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("implementation")(implementation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FetchByKeysCapability[D]]
+  }
+}
+

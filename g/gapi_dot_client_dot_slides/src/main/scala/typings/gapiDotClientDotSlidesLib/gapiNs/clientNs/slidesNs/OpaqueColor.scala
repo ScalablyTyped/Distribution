@@ -12,3 +12,13 @@ trait OpaqueColor extends js.Object {
   var themeColor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OpaqueColor {
+  @scala.inline
+  def apply(rgbColor: RgbColor = null, themeColor: java.lang.String = null): OpaqueColor = {
+    val __obj = js.Dynamic.literal()
+    if (rgbColor != null) __obj.updateDynamic("rgbColor")(rgbColor)
+    if (themeColor != null) __obj.updateDynamic("themeColor")(themeColor)
+    __obj.asInstanceOf[OpaqueColor]
+  }
+}
+

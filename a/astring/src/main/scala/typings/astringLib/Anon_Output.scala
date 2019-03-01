@@ -10,3 +10,12 @@ trait Anon_Output extends js.Object {
   var output: nodeLib.streamMod.Stream
 }
 
+object Anon_Output {
+  @scala.inline
+  def apply(output: nodeLib.streamMod.Stream): Anon_Output = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("output")(output)
+    __obj.asInstanceOf[Anon_Output]
+  }
+}
+

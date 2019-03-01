@@ -122,3 +122,57 @@ trait TasksResource extends js.Object {
   def run(request: gapiDotClientDotCloudtasksLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[Task]
 }
 
+object TasksResource {
+  @scala.inline
+  def apply(
+    acknowledge: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    cancelLease: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    create: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    list: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListTasksResponse]
+    ],
+    pull: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PullTasksResponse]
+    ],
+    renewLease: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ],
+    run: js.Function1[
+      gapiDotClientDotCloudtasksLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Task]
+    ]
+  ): TasksResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acknowledge")(acknowledge)
+    __obj.updateDynamic("cancelLease")(cancelLease)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("pull")(pull)
+    __obj.updateDynamic("renewLease")(renewLease)
+    __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[TasksResource]
+  }
+}
+

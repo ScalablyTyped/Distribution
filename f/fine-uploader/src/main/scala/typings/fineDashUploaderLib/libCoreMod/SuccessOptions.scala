@@ -48,3 +48,24 @@ trait SuccessOptions extends js.Object {
   var resetOnStatus: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object SuccessOptions {
+  @scala.inline
+  def apply(
+    endpoint: java.lang.String | js.Function = null,
+    headers: js.Function = null,
+    jsonPayload: js.UndefOr[scala.Boolean] = js.undefined,
+    method: java.lang.String = null,
+    params: js.Function = null,
+    resetOnStatus: js.Array[_] = null
+  ): SuccessOptions = {
+    val __obj = js.Dynamic.literal()
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(jsonPayload)) __obj.updateDynamic("jsonPayload")(jsonPayload)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (resetOnStatus != null) __obj.updateDynamic("resetOnStatus")(resetOnStatus)
+    __obj.asInstanceOf[SuccessOptions]
+  }
+}
+

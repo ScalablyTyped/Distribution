@@ -24,3 +24,20 @@ trait Options extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    arch: java.lang.String = null,
+    hive: java.lang.String = null,
+    host: java.lang.String = null,
+    key: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (arch != null) __obj.updateDynamic("arch")(arch)
+    if (hive != null) __obj.updateDynamic("hive")(hive)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (key != null) __obj.updateDynamic("key")(key)
+    __obj.asInstanceOf[Options]
+  }
+}
+

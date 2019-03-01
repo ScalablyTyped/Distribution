@@ -11,3 +11,18 @@ trait ITriggeredConnectionStateChangedEventArgs extends js.Object {
   var state: TriggeredConnectState
 }
 
+object ITriggeredConnectionStateChangedEventArgs {
+  @scala.inline
+  def apply(
+    id: scala.Double,
+    socket: winrtLib.WindowsNs.NetworkingNs.SocketsNs.StreamSocket,
+    state: TriggeredConnectState
+  ): ITriggeredConnectionStateChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("socket")(socket)
+    __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[ITriggeredConnectionStateChangedEventArgs]
+  }
+}
+

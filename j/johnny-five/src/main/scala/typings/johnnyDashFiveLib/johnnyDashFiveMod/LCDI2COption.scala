@@ -10,3 +10,20 @@ trait LCDI2COption extends LCDGeneralOption {
   var controller: java.lang.String
 }
 
+object LCDI2COption {
+  @scala.inline
+  def apply(
+    controller: java.lang.String,
+    backlight: scala.Int | scala.Double = null,
+    cols: scala.Int | scala.Double = null,
+    rows: scala.Int | scala.Double = null
+  ): LCDI2COption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("controller")(controller)
+    if (backlight != null) __obj.updateDynamic("backlight")(backlight.asInstanceOf[js.Any])
+    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LCDI2COption]
+  }
+}
+

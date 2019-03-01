@@ -35,3 +35,28 @@ trait Lexer[TOptions] extends js.Object {
   def lookahead(): graphqlLib.languageAstMod.Token
 }
 
+object Lexer {
+  @scala.inline
+  def apply[TOptions](
+    advance: js.Function0[graphqlLib.languageAstMod.Token],
+    lastToken: graphqlLib.languageAstMod.Token,
+    line: scala.Double,
+    lineStart: scala.Double,
+    lookahead: js.Function0[graphqlLib.languageAstMod.Token],
+    options: TOptions,
+    source: graphqlLib.languageSourceMod.Source,
+    token: graphqlLib.languageAstMod.Token
+  ): Lexer[TOptions] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("advance")(advance)
+    __obj.updateDynamic("lastToken")(lastToken)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("lineStart")(lineStart)
+    __obj.updateDynamic("lookahead")(lookahead)
+    __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[Lexer[TOptions]]
+  }
+}
+

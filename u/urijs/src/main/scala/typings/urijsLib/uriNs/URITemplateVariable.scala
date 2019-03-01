@@ -11,3 +11,14 @@ trait URITemplateVariable extends js.Object {
   var name: java.lang.String
 }
 
+object URITemplateVariable {
+  @scala.inline
+  def apply(explode: scala.Boolean, name: java.lang.String, maxLength: scala.Int | scala.Double = null): URITemplateVariable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("explode")(explode)
+    __obj.updateDynamic("name")(name)
+    if (maxLength != null) __obj.updateDynamic("maxLength")(maxLength.asInstanceOf[js.Any])
+    __obj.asInstanceOf[URITemplateVariable]
+  }
+}
+

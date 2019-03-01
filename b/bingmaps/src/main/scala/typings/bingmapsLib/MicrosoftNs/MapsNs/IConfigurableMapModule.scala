@@ -12,3 +12,13 @@ trait IConfigurableMapModule extends js.Object {
   var moduleOptions: PostModuleAction | js.Array[PostModuleAction]
 }
 
+object IConfigurableMapModule {
+  @scala.inline
+  def apply(moduleName: java.lang.String, moduleOptions: PostModuleAction | js.Array[PostModuleAction]): IConfigurableMapModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("moduleName")(moduleName)
+    __obj.updateDynamic("moduleOptions")(moduleOptions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IConfigurableMapModule]
+  }
+}
+

@@ -19,3 +19,16 @@ trait ListNonBillableWinningBidsResponse extends js.Object {
   var nonBillableWinningBidStatusRows: js.UndefOr[js.Array[NonBillableWinningBidStatusRow]] = js.undefined
 }
 
+object ListNonBillableWinningBidsResponse {
+  @scala.inline
+  def apply(
+    nextPageToken: java.lang.String = null,
+    nonBillableWinningBidStatusRows: js.Array[NonBillableWinningBidStatusRow] = null
+  ): ListNonBillableWinningBidsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (nonBillableWinningBidStatusRows != null) __obj.updateDynamic("nonBillableWinningBidStatusRows")(nonBillableWinningBidStatusRows)
+    __obj.asInstanceOf[ListNonBillableWinningBidsResponse]
+  }
+}
+

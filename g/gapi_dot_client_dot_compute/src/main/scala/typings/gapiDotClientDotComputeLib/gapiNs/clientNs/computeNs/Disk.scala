@@ -116,3 +116,60 @@ trait Disk extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Disk {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    diskEncryptionKey: CustomerEncryptionKey = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    labelFingerprint: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    lastAttachTimestamp: java.lang.String = null,
+    lastDetachTimestamp: java.lang.String = null,
+    licenses: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    options: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    sizeGb: java.lang.String = null,
+    sourceImage: java.lang.String = null,
+    sourceImageEncryptionKey: CustomerEncryptionKey = null,
+    sourceImageId: java.lang.String = null,
+    sourceSnapshot: java.lang.String = null,
+    sourceSnapshotEncryptionKey: CustomerEncryptionKey = null,
+    sourceSnapshotId: java.lang.String = null,
+    status: java.lang.String = null,
+    `type`: java.lang.String = null,
+    users: js.Array[java.lang.String] = null,
+    zone: java.lang.String = null
+  ): Disk = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (diskEncryptionKey != null) __obj.updateDynamic("diskEncryptionKey")(diskEncryptionKey)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labelFingerprint != null) __obj.updateDynamic("labelFingerprint")(labelFingerprint)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (lastAttachTimestamp != null) __obj.updateDynamic("lastAttachTimestamp")(lastAttachTimestamp)
+    if (lastDetachTimestamp != null) __obj.updateDynamic("lastDetachTimestamp")(lastDetachTimestamp)
+    if (licenses != null) __obj.updateDynamic("licenses")(licenses)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (sizeGb != null) __obj.updateDynamic("sizeGb")(sizeGb)
+    if (sourceImage != null) __obj.updateDynamic("sourceImage")(sourceImage)
+    if (sourceImageEncryptionKey != null) __obj.updateDynamic("sourceImageEncryptionKey")(sourceImageEncryptionKey)
+    if (sourceImageId != null) __obj.updateDynamic("sourceImageId")(sourceImageId)
+    if (sourceSnapshot != null) __obj.updateDynamic("sourceSnapshot")(sourceSnapshot)
+    if (sourceSnapshotEncryptionKey != null) __obj.updateDynamic("sourceSnapshotEncryptionKey")(sourceSnapshotEncryptionKey)
+    if (sourceSnapshotId != null) __obj.updateDynamic("sourceSnapshotId")(sourceSnapshotId)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (users != null) __obj.updateDynamic("users")(users)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[Disk]
+  }
+}
+

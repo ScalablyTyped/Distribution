@@ -10,3 +10,26 @@ trait ViewportProps extends BaseViewportProps {
   var pitch: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ViewportProps {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    latitude: scala.Double,
+    longitude: scala.Double,
+    width: scala.Double,
+    zoom: scala.Double,
+    bearing: scala.Int | scala.Double = null,
+    pitch: scala.Int | scala.Double = null
+  ): ViewportProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("latitude")(latitude)
+    __obj.updateDynamic("longitude")(longitude)
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("zoom")(zoom)
+    if (bearing != null) __obj.updateDynamic("bearing")(bearing.asInstanceOf[js.Any])
+    if (pitch != null) __obj.updateDynamic("pitch")(pitch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ViewportProps]
+  }
+}
+

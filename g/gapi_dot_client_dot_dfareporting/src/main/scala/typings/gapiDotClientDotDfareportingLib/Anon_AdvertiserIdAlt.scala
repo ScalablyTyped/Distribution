@@ -35,3 +35,36 @@ trait Anon_AdvertiserIdAlt extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AdvertiserIdAlt {
+  @scala.inline
+  def apply(
+    profileId: java.lang.String,
+    advertiserId: java.lang.String = null,
+    alt: java.lang.String = null,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    names: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    objectId: java.lang.String = null,
+    objectType: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AdvertiserIdAlt = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("profileId")(profileId)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (names != null) __obj.updateDynamic("names")(names)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (objectId != null) __obj.updateDynamic("objectId")(objectId)
+    if (objectType != null) __obj.updateDynamic("objectType")(objectType)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AdvertiserIdAlt]
+  }
+}
+

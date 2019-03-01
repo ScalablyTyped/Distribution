@@ -9,3 +9,12 @@ trait Anon_Pages extends js.Object {
   val Pages: activexDashOutlookLib.OutlookNs.PropertyPages
 }
 
+object Anon_Pages {
+  @scala.inline
+  def apply(Pages: activexDashOutlookLib.OutlookNs.PropertyPages): Anon_Pages = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Pages")(Pages)
+    __obj.asInstanceOf[Anon_Pages]
+  }
+}
+

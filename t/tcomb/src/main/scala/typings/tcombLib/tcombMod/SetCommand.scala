@@ -10,3 +10,12 @@ trait SetCommand extends js.Object {
   var $set: js.Any
 }
 
+object SetCommand {
+  @scala.inline
+  def apply($set: js.Any): SetCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$set")($set)
+    __obj.asInstanceOf[SetCommand]
+  }
+}
+

@@ -7,46 +7,60 @@ import scala.scalajs.js.annotation._
 
 object inversifyLibStrings {
   @js.native
-  sealed trait ClassProperty extends js.Object
+  sealed trait ClassProperty
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.TargetType
   
   @js.native
-  sealed trait ConstantValue extends js.Object
+  sealed trait ConstantValue
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingType
   
   @js.native
-  sealed trait Constructor extends js.Object
+  sealed trait Constructor
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingType
   
   @js.native
-  sealed trait ConstructorArgument extends js.Object
+  sealed trait ConstructorArgument
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.TargetType
   
   @js.native
-  sealed trait DynamicValue extends js.Object
+  sealed trait DynamicValue
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingType
   
   @js.native
-  sealed trait Factory extends js.Object
+  sealed trait Factory
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingType
   
   @js.native
-  sealed trait Function extends js.Object
+  sealed trait Function
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingType
   
   @js.native
-  sealed trait Instance extends js.Object
+  sealed trait Instance
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingType
   
   @js.native
-  sealed trait Invalid extends js.Object
+  sealed trait Invalid
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingType
   
   @js.native
-  sealed trait Provider extends js.Object
+  sealed trait Provider
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingType
   
   @js.native
-  sealed trait Request extends js.Object
+  sealed trait Request
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingScope
   
   @js.native
-  sealed trait Singleton extends js.Object
+  sealed trait Singleton
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingScope
   
   @js.native
-  sealed trait Transient extends js.Object
+  sealed trait Transient
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.BindingScope
   
   @js.native
-  sealed trait Variable extends js.Object
+  sealed trait Variable
+    extends inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.TargetType
   
   @scala.inline
   def ClassProperty: ClassProperty = "ClassProperty".asInstanceOf[ClassProperty]

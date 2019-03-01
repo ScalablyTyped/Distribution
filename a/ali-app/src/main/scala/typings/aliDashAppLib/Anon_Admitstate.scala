@@ -37,3 +37,24 @@ trait Anon_Admitstate extends js.Object {
   var user_id: java.lang.String
 }
 
+object Anon_Admitstate {
+  @scala.inline
+  def apply(
+    admit_state: aliDashAppLib.aliDashAppLibStrings.Y | aliDashAppLib.aliDashAppLibStrings.N | java.lang.String,
+    callbackData: js.Any,
+    invoke_state: java.lang.String,
+    order_no: java.lang.String,
+    out_order_no: java.lang.String,
+    user_id: java.lang.String
+  ): Anon_Admitstate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("admit_state")(admit_state.asInstanceOf[js.Any])
+    __obj.updateDynamic("callbackData")(callbackData)
+    __obj.updateDynamic("invoke_state")(invoke_state)
+    __obj.updateDynamic("order_no")(order_no)
+    __obj.updateDynamic("out_order_no")(out_order_no)
+    __obj.updateDynamic("user_id")(user_id)
+    __obj.asInstanceOf[Anon_Admitstate]
+  }
+}
+

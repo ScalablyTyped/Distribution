@@ -20,3 +20,36 @@ trait BaseListItemProps extends js.Object {
   var tileStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object BaseListItemProps {
+  @scala.inline
+  def apply(
+    `aria-posinset`: scala.Int | scala.Double = null,
+    `aria-setsize`: scala.Int | scala.Double = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    leftAvatar: reactLib.reactMod.ReactNs.ReactNode = null,
+    leftIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    primaryText: reactLib.reactMod.ReactNs.ReactNode = null,
+    rightAvatar: reactLib.reactMod.ReactNs.ReactNode = null,
+    rightIcon: reactLib.reactMod.ReactNs.ReactNode = null,
+    secondaryText: reactLib.reactMod.ReactNs.ReactNode = null,
+    threeLines: js.UndefOr[scala.Boolean] = js.undefined,
+    tileClassName: java.lang.String = null,
+    tileStyle: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): BaseListItemProps = {
+    val __obj = js.Dynamic.literal()
+    if (`aria-posinset` != null) __obj.updateDynamic("aria-posinset")(`aria-posinset`.asInstanceOf[js.Any])
+    if (`aria-setsize` != null) __obj.updateDynamic("aria-setsize")(`aria-setsize`.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (leftAvatar != null) __obj.updateDynamic("leftAvatar")(leftAvatar.asInstanceOf[js.Any])
+    if (leftIcon != null) __obj.updateDynamic("leftIcon")(leftIcon.asInstanceOf[js.Any])
+    if (primaryText != null) __obj.updateDynamic("primaryText")(primaryText.asInstanceOf[js.Any])
+    if (rightAvatar != null) __obj.updateDynamic("rightAvatar")(rightAvatar.asInstanceOf[js.Any])
+    if (rightIcon != null) __obj.updateDynamic("rightIcon")(rightIcon.asInstanceOf[js.Any])
+    if (secondaryText != null) __obj.updateDynamic("secondaryText")(secondaryText.asInstanceOf[js.Any])
+    if (!js.isUndefined(threeLines)) __obj.updateDynamic("threeLines")(threeLines)
+    if (tileClassName != null) __obj.updateDynamic("tileClassName")(tileClassName)
+    if (tileStyle != null) __obj.updateDynamic("tileStyle")(tileStyle)
+    __obj.asInstanceOf[BaseListItemProps]
+  }
+}
+

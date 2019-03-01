@@ -11,3 +11,14 @@ trait VueTemplateCompilerParseOptions extends js.Object {
   ] = js.undefined
 }
 
+object VueTemplateCompilerParseOptions {
+  @scala.inline
+  def apply(
+    pad: atVueComponentDashCompilerDashUtilsLib.atVueComponentDashCompilerDashUtilsLibStrings.line | atVueComponentDashCompilerDashUtilsLib.atVueComponentDashCompilerDashUtilsLibStrings.space = null
+  ): VueTemplateCompilerParseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (pad != null) __obj.updateDynamic("pad")(pad.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VueTemplateCompilerParseOptions]
+  }
+}
+

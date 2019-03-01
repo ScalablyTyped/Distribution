@@ -55,3 +55,42 @@ trait ICustomRenderers[U] extends js.Object {
   ] = js.undefined
 }
 
+object ICustomRenderers {
+  @scala.inline
+  def apply[U](
+    item: js.Function2[
+      /* data */ U, 
+      /* escape */ js.Function1[/* input */ java.lang.String, java.lang.String], 
+      java.lang.String
+    ] = null,
+    optgroup: js.Function2[
+      /* data */ U, 
+      /* escape */ js.Function1[/* input */ java.lang.String, java.lang.String], 
+      java.lang.String
+    ] = null,
+    optgroup_header: js.Function2[
+      /* data */ U, 
+      /* escape */ js.Function1[/* input */ java.lang.String, java.lang.String], 
+      java.lang.String
+    ] = null,
+    option: js.Function2[
+      /* data */ U, 
+      /* escape */ js.Function1[/* input */ java.lang.String, java.lang.String], 
+      java.lang.String
+    ] = null,
+    option_create: js.Function2[
+      /* data */ U, 
+      /* escape */ js.Function1[/* input */ java.lang.String, java.lang.String], 
+      java.lang.String
+    ] = null
+  ): ICustomRenderers[U] = {
+    val __obj = js.Dynamic.literal()
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (optgroup != null) __obj.updateDynamic("optgroup")(optgroup)
+    if (optgroup_header != null) __obj.updateDynamic("optgroup_header")(optgroup_header)
+    if (option != null) __obj.updateDynamic("option")(option)
+    if (option_create != null) __obj.updateDynamic("option_create")(option_create)
+    __obj.asInstanceOf[ICustomRenderers[U]]
+  }
+}
+

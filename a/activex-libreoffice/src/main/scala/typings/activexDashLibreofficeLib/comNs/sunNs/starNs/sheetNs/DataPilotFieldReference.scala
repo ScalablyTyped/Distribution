@@ -26,3 +26,20 @@ trait DataPilotFieldReference extends js.Object {
   var ReferenceType: scala.Double
 }
 
+object DataPilotFieldReference {
+  @scala.inline
+  def apply(
+    ReferenceField: java.lang.String,
+    ReferenceItemName: java.lang.String,
+    ReferenceItemType: scala.Double,
+    ReferenceType: scala.Double
+  ): DataPilotFieldReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ReferenceField")(ReferenceField)
+    __obj.updateDynamic("ReferenceItemName")(ReferenceItemName)
+    __obj.updateDynamic("ReferenceItemType")(ReferenceItemType)
+    __obj.updateDynamic("ReferenceType")(ReferenceType)
+    __obj.asInstanceOf[DataPilotFieldReference]
+  }
+}
+

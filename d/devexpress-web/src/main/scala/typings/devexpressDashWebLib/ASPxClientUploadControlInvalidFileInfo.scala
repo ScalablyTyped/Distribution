@@ -26,3 +26,18 @@ trait ASPxClientUploadControlInvalidFileInfo extends js.Object {
   var fileSize: scala.Double
 }
 
+object ASPxClientUploadControlInvalidFileInfo {
+  @scala.inline
+  def apply(
+    errorType: ASPxClientUploadControlValidationErrorTypeConsts,
+    fileName: java.lang.String,
+    fileSize: scala.Double
+  ): ASPxClientUploadControlInvalidFileInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorType")(errorType)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("fileSize")(fileSize)
+    __obj.asInstanceOf[ASPxClientUploadControlInvalidFileInfo]
+  }
+}
+

@@ -46,3 +46,34 @@ trait StrictFeedEventProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictFeedEventProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedContentMod.FeedContentProps] = null,
+    date: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedDateMod.FeedDateProps] = null,
+    extraImages: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedExtraMod.FeedExtraProps] = null,
+    extraText: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedExtraMod.FeedExtraProps] = null,
+    icon: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedLabelMod.FeedLabelProps] = null,
+    image: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedLabelMod.FeedLabelProps] = null,
+    meta: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedMetaMod.FeedMetaProps] = null,
+    summary: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedSummaryMod.FeedSummaryProps] = null
+  ): StrictFeedEventProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (extraImages != null) __obj.updateDynamic("extraImages")(extraImages.asInstanceOf[js.Any])
+    if (extraText != null) __obj.updateDynamic("extraText")(extraText.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (image != null) __obj.updateDynamic("image")(image.asInstanceOf[js.Any])
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (summary != null) __obj.updateDynamic("summary")(summary.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictFeedEventProps]
+  }
+}
+

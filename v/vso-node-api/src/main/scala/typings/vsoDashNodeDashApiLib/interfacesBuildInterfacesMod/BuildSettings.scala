@@ -20,3 +20,18 @@ trait BuildSettings extends js.Object {
   var maximumRetentionPolicy: RetentionPolicy
 }
 
+object BuildSettings {
+  @scala.inline
+  def apply(
+    daysToKeepDeletedBuildsBeforeDestroy: scala.Double,
+    defaultRetentionPolicy: RetentionPolicy,
+    maximumRetentionPolicy: RetentionPolicy
+  ): BuildSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("daysToKeepDeletedBuildsBeforeDestroy")(daysToKeepDeletedBuildsBeforeDestroy)
+    __obj.updateDynamic("defaultRetentionPolicy")(defaultRetentionPolicy)
+    __obj.updateDynamic("maximumRetentionPolicy")(maximumRetentionPolicy)
+    __obj.asInstanceOf[BuildSettings]
+  }
+}
+

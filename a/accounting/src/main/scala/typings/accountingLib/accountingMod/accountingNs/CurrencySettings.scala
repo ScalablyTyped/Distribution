@@ -17,3 +17,22 @@ trait CurrencySettings[TFormat] extends js.Object {
   var thousand: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CurrencySettings {
+  @scala.inline
+  def apply[TFormat](
+    decimal: java.lang.String = null,
+    format: TFormat = null,
+    precision: scala.Int | scala.Double = null,
+    symbol: java.lang.String = null,
+    thousand: java.lang.String = null
+  ): CurrencySettings[TFormat] = {
+    val __obj = js.Dynamic.literal()
+    if (decimal != null) __obj.updateDynamic("decimal")(decimal)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (thousand != null) __obj.updateDynamic("thousand")(thousand)
+    __obj.asInstanceOf[CurrencySettings[TFormat]]
+  }
+}
+

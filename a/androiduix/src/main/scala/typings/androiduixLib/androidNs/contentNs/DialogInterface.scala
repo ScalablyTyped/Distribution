@@ -10,3 +10,13 @@ trait DialogInterface extends js.Object {
   def dismiss(): scala.Unit
 }
 
+object DialogInterface {
+  @scala.inline
+  def apply(cancel: js.Function0[scala.Unit], dismiss: js.Function0[scala.Unit]): DialogInterface = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("dismiss")(dismiss)
+    __obj.asInstanceOf[DialogInterface]
+  }
+}
+

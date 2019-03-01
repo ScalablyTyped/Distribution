@@ -13,3 +13,19 @@ trait NewDocument
   var ttl: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NewDocument {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    StringDictionary: /** Custom properties */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    ttl: scala.Int | scala.Double = null
+  ): NewDocument = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NewDocument]
+  }
+}
+

@@ -10,3 +10,13 @@ trait IIconRecord extends js.Object {
   var subset: IIconSubsetRecord
 }
 
+object IIconRecord {
+  @scala.inline
+  def apply(subset: IIconSubsetRecord, code: java.lang.String = null): IIconRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("subset")(subset)
+    if (code != null) __obj.updateDynamic("code")(code)
+    __obj.asInstanceOf[IIconRecord]
+  }
+}
+

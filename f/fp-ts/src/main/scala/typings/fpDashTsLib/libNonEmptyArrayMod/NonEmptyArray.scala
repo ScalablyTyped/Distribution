@@ -23,7 +23,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def ap[B](fab: NonEmptyArray[js.Function1[/* a */ A, B]]): NonEmptyArray[B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
@@ -52,7 +52,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def concat(y: NonEmptyArray[A]): NonEmptyArray[A] = js.native
   /**
-    * Concatenates this {@link NonEmptyArray} and passed {@link Array}
+    * Concatenates this `NonEmptyArray` and passed `Array`
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
@@ -177,11 +177,11 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def insertAt(i: scala.Double, a: A): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
   /**
-    * Same as {@link toString}
+    * Same as `toString`
     */
   def inspect(): java.lang.String = js.native
   /**
-    * Gets last element of this {@link NonEmptyArray}
+    * Gets last element of this `NonEmptyArray`
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
@@ -219,7 +219,7 @@ class NonEmptyArray[A] protected () extends js.Object {
   def map[B](f: js.Function1[/* a */ A, B]): NonEmptyArray[B] = js.native
   def mapWithIndex[B](f: js.Function2[/* i */ scala.Double, /* a */ A, B]): NonEmptyArray[B] = js.native
   /**
-    * Gets maximum of this {@link NonEmptyArray} using specified {@link Ord} instance
+    * Gets maximum of this `NonEmptyArray` using specified `Ord` instance
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
@@ -231,7 +231,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def max(ord: fpDashTsLib.libOrdMod.Ord[A]): A = js.native
   /**
-    * Gets minimum of this {@link NonEmptyArray} using specified {@link Ord} instance
+    * Gets minimum of this `NonEmptyArray` using specified `Ord` instance
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
@@ -255,7 +255,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def reduceWithIndex[B](b: B, f: js.Function3[/* i */ scala.Double, /* b */ B, /* a */ A, B]): B = js.native
   /**
-    * Reverts this {@link NonEmptyArray}
+    * Reverts this `NonEmptyArray`
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
@@ -270,7 +270,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def some(predicate: fpDashTsLib.libFunctionMod.Predicate[A]): scala.Boolean = js.native
   /**
-    * Sorts this {@link NonEmptyArray} using specified {@link Ord} instance
+    * Sorts this `NonEmptyArray` using specified `Ord` instance
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
@@ -282,7 +282,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def sort(ord: fpDashTsLib.libOrdMod.Ord[A]): NonEmptyArray[A] = js.native
   /**
-    * Converts this {@link NonEmptyArray} to a plain {@link Array}
+    * Converts this `NonEmptyArray` to a plain `Array`
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
@@ -291,7 +291,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def toArray(): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   /**
-    * Converts this {@link NonEmptyArray} to a plain {@link Array} using the given map function
+    * Converts this `NonEmptyArray` to a plain `Array` using the given map function
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'

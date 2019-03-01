@@ -15,3 +15,13 @@ trait KeyRing extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeyRing {
+  @scala.inline
+  def apply(createTime: java.lang.String = null, name: java.lang.String = null): KeyRing = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[KeyRing]
+  }
+}
+

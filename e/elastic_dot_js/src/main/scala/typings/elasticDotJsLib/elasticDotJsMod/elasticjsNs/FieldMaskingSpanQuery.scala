@@ -29,3 +29,22 @@ trait FieldMaskingSpanQuery extends Query {
   def toJSON(): js.Any
 }
 
+object FieldMaskingSpanQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    boost: js.Function1[scala.Double, FieldMaskingSpanQuery],
+    field: js.Function1[java.lang.String, FieldMaskingSpanQuery],
+    query: js.Function1[Query, FieldMaskingSpanQuery],
+    toJSON: js.Function0[js.Any]
+  ): FieldMaskingSpanQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[FieldMaskingSpanQuery]
+  }
+}
+

@@ -23,3 +23,13 @@ trait ChartGridlinesUpdateData extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartGridlinesUpdateData {
+  @scala.inline
+  def apply(format: ChartGridlinesFormatUpdateData = null, visible: js.UndefOr[scala.Boolean] = js.undefined): ChartGridlinesUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ChartGridlinesUpdateData]
+  }
+}
+

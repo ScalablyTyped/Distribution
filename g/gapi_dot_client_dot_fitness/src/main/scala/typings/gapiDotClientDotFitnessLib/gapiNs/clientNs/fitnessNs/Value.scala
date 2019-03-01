@@ -22,3 +22,20 @@ trait Value extends js.Object {
   var stringVal: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Value {
+  @scala.inline
+  def apply(
+    fpVal: scala.Int | scala.Double = null,
+    intVal: scala.Int | scala.Double = null,
+    mapVal: js.Array[ValueMapValEntry] = null,
+    stringVal: java.lang.String = null
+  ): Value = {
+    val __obj = js.Dynamic.literal()
+    if (fpVal != null) __obj.updateDynamic("fpVal")(fpVal.asInstanceOf[js.Any])
+    if (intVal != null) __obj.updateDynamic("intVal")(intVal.asInstanceOf[js.Any])
+    if (mapVal != null) __obj.updateDynamic("mapVal")(mapVal)
+    if (stringVal != null) __obj.updateDynamic("stringVal")(stringVal)
+    __obj.asInstanceOf[Value]
+  }
+}
+

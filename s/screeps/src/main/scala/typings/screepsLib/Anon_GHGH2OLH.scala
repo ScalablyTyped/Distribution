@@ -20,3 +20,36 @@ trait Anon_GHGH2OLH extends js.Object {
   var ZH2O: Anon_3Dismantle
 }
 
+object Anon_GHGH2OLH {
+  @scala.inline
+  def apply(
+    GH: Anon_15UpgradeController,
+    GH2O: Anon_18UpgradeController,
+    LH: Anon_15,
+    LH2O: Anon_18,
+    UHO2: Anon_5,
+    UO: Anon_3,
+    XGH2O: Anon_2UpgradeController,
+    XLH2O: Anon_2,
+    XUHO2: Anon_7,
+    XZH2O: Anon_4,
+    ZH: Anon_2Dismantle,
+    ZH2O: Anon_3Dismantle
+  ): Anon_GHGH2OLH = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GH")(GH)
+    __obj.updateDynamic("GH2O")(GH2O)
+    __obj.updateDynamic("LH")(LH)
+    __obj.updateDynamic("LH2O")(LH2O)
+    __obj.updateDynamic("UHO2")(UHO2)
+    __obj.updateDynamic("UO")(UO)
+    __obj.updateDynamic("XGH2O")(XGH2O)
+    __obj.updateDynamic("XLH2O")(XLH2O)
+    __obj.updateDynamic("XUHO2")(XUHO2)
+    __obj.updateDynamic("XZH2O")(XZH2O)
+    __obj.updateDynamic("ZH")(ZH)
+    __obj.updateDynamic("ZH2O")(ZH2O)
+    __obj.asInstanceOf[Anon_GHGH2OLH]
+  }
+}
+

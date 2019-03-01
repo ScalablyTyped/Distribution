@@ -11,3 +11,14 @@ trait AdScheduleParam extends js.Object {
   var tag: java.lang.String
 }
 
+object AdScheduleParam {
+  @scala.inline
+  def apply(adbreaks: js.Array[js.Object], client: java.lang.String, tag: java.lang.String): AdScheduleParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adbreaks")(adbreaks)
+    __obj.updateDynamic("client")(client)
+    __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[AdScheduleParam]
+  }
+}
+

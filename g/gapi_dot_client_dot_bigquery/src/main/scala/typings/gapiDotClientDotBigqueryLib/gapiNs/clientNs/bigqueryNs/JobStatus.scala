@@ -17,3 +17,18 @@ trait JobStatus extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JobStatus {
+  @scala.inline
+  def apply(
+    errorResult: ErrorProto = null,
+    errors: js.Array[ErrorProto] = null,
+    state: java.lang.String = null
+  ): JobStatus = {
+    val __obj = js.Dynamic.literal()
+    if (errorResult != null) __obj.updateDynamic("errorResult")(errorResult)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[JobStatus]
+  }
+}
+

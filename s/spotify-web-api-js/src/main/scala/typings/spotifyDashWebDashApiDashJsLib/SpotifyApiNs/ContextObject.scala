@@ -16,3 +16,19 @@ trait ContextObject extends js.Object {
   var uri: java.lang.String
 }
 
+object ContextObject {
+  @scala.inline
+  def apply(
+    `type`: ContextObjectType,
+    uri: java.lang.String,
+    external_urls: ExternalUrlObject = null,
+    href: java.lang.String = null
+  ): ContextObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("uri")(uri)
+    if (external_urls != null) __obj.updateDynamic("external_urls")(external_urls)
+    if (href != null) __obj.updateDynamic("href")(href)
+    __obj.asInstanceOf[ContextObject]
+  }
+}
+

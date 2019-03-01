@@ -14,3 +14,22 @@ trait SnapshotsResource extends js.Object {
   def list(request: gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMaxResults): gapiDotClientLib.gapiNs.clientNs.Request[SnapshotListResponse]
 }
 
+object SnapshotsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageOauthtokenPrettyPrintQuotaUserSnapshotId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Snapshot]
+    ],
+    list: js.Function1[
+      gapiDotClientDotGamesLib.Anon_AltConsistencyTokenFieldsKeyLanguageMaxResults, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SnapshotListResponse]
+    ]
+  ): SnapshotsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[SnapshotsResource]
+  }
+}
+

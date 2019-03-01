@@ -54,3 +54,28 @@ import scala.scalajs.js.annotation._
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    default: DefaultImage = null,
+    email: java.lang.String = null,
+    md5: java.lang.String = null,
+    protocol: java.lang.String = null,
+    rating: Rating = null,
+    size: scala.Int | scala.Double = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (md5 != null) __obj.updateDynamic("md5")(md5)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (rating != null) __obj.updateDynamic("rating")(rating)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[Props]
+  }
+}
+

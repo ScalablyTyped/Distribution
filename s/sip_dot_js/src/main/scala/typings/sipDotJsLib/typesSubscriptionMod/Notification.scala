@@ -9,3 +9,12 @@ trait Notification extends js.Object {
   var request: js.Any
 }
 
+object Notification {
+  @scala.inline
+  def apply(request: js.Any): Notification = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("request")(request)
+    __obj.asInstanceOf[Notification]
+  }
+}
+

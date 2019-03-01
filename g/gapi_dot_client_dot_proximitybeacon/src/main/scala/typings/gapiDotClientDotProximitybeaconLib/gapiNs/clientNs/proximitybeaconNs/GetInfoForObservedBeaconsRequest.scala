@@ -22,3 +22,13 @@ trait GetInfoForObservedBeaconsRequest extends js.Object {
   var observations: js.UndefOr[js.Array[Observation]] = js.undefined
 }
 
+object GetInfoForObservedBeaconsRequest {
+  @scala.inline
+  def apply(namespacedTypes: js.Array[java.lang.String] = null, observations: js.Array[Observation] = null): GetInfoForObservedBeaconsRequest = {
+    val __obj = js.Dynamic.literal()
+    if (namespacedTypes != null) __obj.updateDynamic("namespacedTypes")(namespacedTypes)
+    if (observations != null) __obj.updateDynamic("observations")(observations)
+    __obj.asInstanceOf[GetInfoForObservedBeaconsRequest]
+  }
+}
+

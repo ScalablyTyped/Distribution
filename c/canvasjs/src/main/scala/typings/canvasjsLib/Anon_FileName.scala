@@ -11,3 +11,18 @@ trait Anon_FileName extends js.Object {
   var toDataURL: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_FileName {
+  @scala.inline
+  def apply(
+    format: canvasjsLib.canvasjsLibStrings.jpg | canvasjsLib.canvasjsLibStrings.png,
+    fileName: java.lang.String = null,
+    toDataURL: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_FileName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (fileName != null) __obj.updateDynamic("fileName")(fileName)
+    if (!js.isUndefined(toDataURL)) __obj.updateDynamic("toDataURL")(toDataURL)
+    __obj.asInstanceOf[Anon_FileName]
+  }
+}
+

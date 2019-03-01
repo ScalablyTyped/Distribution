@@ -15,3 +15,16 @@ trait PositionAlign extends js.Object {
   ] = js.undefined
 }
 
+object PositionAlign {
+  @scala.inline
+  def apply(
+    horizontal: atOracleOraclejetLib.atOracleOraclejetLibStrings.start | atOracleOraclejetLib.atOracleOraclejetLibStrings.end | atOracleOraclejetLib.atOracleOraclejetLibStrings.left | atOracleOraclejetLib.atOracleOraclejetLibStrings.center | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom = null,
+    vertical: atOracleOraclejetLib.atOracleOraclejetLibStrings.top | atOracleOraclejetLib.atOracleOraclejetLibStrings.bottom | atOracleOraclejetLib.atOracleOraclejetLibStrings.center = null
+  ): PositionAlign = {
+    val __obj = js.Dynamic.literal()
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PositionAlign]
+  }
+}
+

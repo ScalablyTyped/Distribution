@@ -21,3 +21,22 @@ trait CustomersResource extends js.Object {
   def list(request: gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken): gapiDotClientLib.gapiNs.clientNs.Request[ListCustomersResponse]
 }
 
+object CustomersResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Company]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroiddeviceprovisioningLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListCustomersResponse]
+    ]
+  ): CustomersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[CustomersResource]
+  }
+}
+

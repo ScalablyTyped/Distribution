@@ -12,3 +12,15 @@ trait RequestLogger extends js.Object {
   var serializers: js.UndefOr[js.Any] = js.undefined
 }
 
+object RequestLogger {
+  @scala.inline
+  def apply(headers: js.Any = null, log: js.Any = null, properties: js.Any = null, serializers: js.Any = null): RequestLogger = {
+    val __obj = js.Dynamic.literal()
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (log != null) __obj.updateDynamic("log")(log)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (serializers != null) __obj.updateDynamic("serializers")(serializers)
+    __obj.asInstanceOf[RequestLogger]
+  }
+}
+

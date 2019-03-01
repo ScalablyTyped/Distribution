@@ -15,3 +15,12 @@ trait _IPush[T] extends js.Object {
   def push(items: T*): scala.Double
 }
 
+object _IPush {
+  @scala.inline
+  def apply[T](push: js.Function1[/* repeated */ T, scala.Double]): _IPush[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("push")(push)
+    __obj.asInstanceOf[_IPush[T]]
+  }
+}
+

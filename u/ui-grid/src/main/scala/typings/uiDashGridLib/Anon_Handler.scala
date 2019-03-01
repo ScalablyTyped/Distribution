@@ -39,3 +39,30 @@ trait Anon_Handler[TEntity] extends js.Object {
   ): scala.Unit
 }
 
+object Anon_Handler {
+  @scala.inline
+  def apply[TEntity](
+    navigate: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.navigateHandler[TEntity], 
+      scala.Unit
+    ],
+    viewPortKeyDown: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyDownHandler[TEntity], 
+      scala.Unit
+    ],
+    viewPortKeyPress: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.cellNavNs.viewportKeyPressHandler[TEntity], 
+      scala.Unit
+    ]
+  ): Anon_Handler[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("navigate")(navigate)
+    __obj.updateDynamic("viewPortKeyDown")(viewPortKeyDown)
+    __obj.updateDynamic("viewPortKeyPress")(viewPortKeyPress)
+    __obj.asInstanceOf[Anon_Handler[TEntity]]
+  }
+}
+

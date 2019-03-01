@@ -21,3 +21,13 @@ trait DefineNameOptions extends js.Object {
   var singular: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DefineNameOptions {
+  @scala.inline
+  def apply(plural: java.lang.String = null, singular: java.lang.String = null): DefineNameOptions = {
+    val __obj = js.Dynamic.literal()
+    if (plural != null) __obj.updateDynamic("plural")(plural)
+    if (singular != null) __obj.updateDynamic("singular")(singular)
+    __obj.asInstanceOf[DefineNameOptions]
+  }
+}
+

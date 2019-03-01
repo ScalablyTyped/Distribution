@@ -46,3 +46,28 @@ trait ASPxClientHtmlEditorTablePropertiesCommandArguments extends ASPxClientHtml
   var summary: java.lang.String
 }
 
+object ASPxClientHtmlEditorTablePropertiesCommandArguments {
+  @scala.inline
+  def apply(
+    align: java.lang.String,
+    caption: java.lang.String,
+    cellPadding: scala.Double,
+    cellSpacing: scala.Double,
+    headers: java.lang.String,
+    selectedElement: js.Object,
+    styleSettings: ASPxClientHtmlEditorCommandStyleSettings,
+    summary: java.lang.String
+  ): ASPxClientHtmlEditorTablePropertiesCommandArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("align")(align)
+    __obj.updateDynamic("caption")(caption)
+    __obj.updateDynamic("cellPadding")(cellPadding)
+    __obj.updateDynamic("cellSpacing")(cellSpacing)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("selectedElement")(selectedElement)
+    __obj.updateDynamic("styleSettings")(styleSettings)
+    __obj.updateDynamic("summary")(summary)
+    __obj.asInstanceOf[ASPxClientHtmlEditorTablePropertiesCommandArguments]
+  }
+}
+

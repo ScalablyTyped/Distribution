@@ -25,3 +25,46 @@ trait I2cBusFuncs extends js.Object {
   var tenBitAddr: scala.Boolean
 }
 
+object I2cBusFuncs {
+  @scala.inline
+  def apply(
+    i2c: scala.Boolean,
+    protocolMangling: scala.Boolean,
+    smbusBlockProcCall: scala.Boolean,
+    smbusPec: scala.Boolean,
+    smbusProcCall: scala.Boolean,
+    smbusQuick: scala.Boolean,
+    smbusReadBlock: scala.Boolean,
+    smbusReadByte: scala.Boolean,
+    smbusReadI2cBlock: scala.Boolean,
+    smbusReadWord: scala.Boolean,
+    smbusReceiveByte: scala.Boolean,
+    smbusSendByte: scala.Boolean,
+    smbusWriteBlock: scala.Boolean,
+    smbusWriteByte: scala.Boolean,
+    smbusWriteI2cBlock: scala.Boolean,
+    smbusWriteWord: scala.Boolean,
+    tenBitAddr: scala.Boolean
+  ): I2cBusFuncs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("i2c")(i2c)
+    __obj.updateDynamic("protocolMangling")(protocolMangling)
+    __obj.updateDynamic("smbusBlockProcCall")(smbusBlockProcCall)
+    __obj.updateDynamic("smbusPec")(smbusPec)
+    __obj.updateDynamic("smbusProcCall")(smbusProcCall)
+    __obj.updateDynamic("smbusQuick")(smbusQuick)
+    __obj.updateDynamic("smbusReadBlock")(smbusReadBlock)
+    __obj.updateDynamic("smbusReadByte")(smbusReadByte)
+    __obj.updateDynamic("smbusReadI2cBlock")(smbusReadI2cBlock)
+    __obj.updateDynamic("smbusReadWord")(smbusReadWord)
+    __obj.updateDynamic("smbusReceiveByte")(smbusReceiveByte)
+    __obj.updateDynamic("smbusSendByte")(smbusSendByte)
+    __obj.updateDynamic("smbusWriteBlock")(smbusWriteBlock)
+    __obj.updateDynamic("smbusWriteByte")(smbusWriteByte)
+    __obj.updateDynamic("smbusWriteI2cBlock")(smbusWriteI2cBlock)
+    __obj.updateDynamic("smbusWriteWord")(smbusWriteWord)
+    __obj.updateDynamic("tenBitAddr")(tenBitAddr)
+    __obj.asInstanceOf[I2cBusFuncs]
+  }
+}
+

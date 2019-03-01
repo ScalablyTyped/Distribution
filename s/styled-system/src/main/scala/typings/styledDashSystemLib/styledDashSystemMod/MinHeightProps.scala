@@ -15,3 +15,12 @@ trait MinHeightProps[TLength] extends js.Object {
   var minHeight: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MinHeightProperty[TLength]]] = js.undefined
 }
 
+object MinHeightProps {
+  @scala.inline
+  def apply[TLength](minHeight: ResponsiveValue[csstypeLib.csstypeMod.MinHeightProperty[TLength]] = null): MinHeightProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (minHeight != null) __obj.updateDynamic("minHeight")(minHeight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MinHeightProps[TLength]]
+  }
+}
+

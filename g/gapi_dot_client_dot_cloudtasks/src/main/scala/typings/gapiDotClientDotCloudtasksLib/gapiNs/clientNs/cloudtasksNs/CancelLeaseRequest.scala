@@ -32,3 +32,13 @@ trait CancelLeaseRequest extends js.Object {
   var scheduleTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CancelLeaseRequest {
+  @scala.inline
+  def apply(responseView: java.lang.String = null, scheduleTime: java.lang.String = null): CancelLeaseRequest = {
+    val __obj = js.Dynamic.literal()
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
+    if (scheduleTime != null) __obj.updateDynamic("scheduleTime")(scheduleTime)
+    __obj.asInstanceOf[CancelLeaseRequest]
+  }
+}
+

@@ -11,3 +11,14 @@ trait HighlightResult extends js.Object {
   var value: js.Array[HastNode]
 }
 
+object HighlightResult {
+  @scala.inline
+  def apply(language: java.lang.String, relevance: scala.Double, value: js.Array[HastNode]): HighlightResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("relevance")(relevance)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[HighlightResult]
+  }
+}
+

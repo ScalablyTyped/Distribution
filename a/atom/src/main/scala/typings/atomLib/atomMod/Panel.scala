@@ -29,3 +29,30 @@ trait Panel[T] extends js.Object {
   def show(): scala.Unit
 }
 
+object Panel {
+  @scala.inline
+  def apply[T](
+    destroy: js.Function0[scala.Unit],
+    getItem: js.Function0[T],
+    getPriority: js.Function0[scala.Double],
+    hide: js.Function0[scala.Unit],
+    isVisible: js.Function0[scala.Boolean],
+    onDidChangeVisible: js.Function1[js.Function1[/* visible */ scala.Boolean, scala.Unit], Disposable],
+    onDidDestroy: js.Function1[js.Function1[/* panel */ Panel[T], scala.Unit], Disposable],
+    show: js.Function0[scala.Unit],
+    visible: scala.Boolean
+  ): Panel[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("getItem")(getItem)
+    __obj.updateDynamic("getPriority")(getPriority)
+    __obj.updateDynamic("hide")(hide)
+    __obj.updateDynamic("isVisible")(isVisible)
+    __obj.updateDynamic("onDidChangeVisible")(onDidChangeVisible)
+    __obj.updateDynamic("onDidDestroy")(onDidDestroy)
+    __obj.updateDynamic("show")(show)
+    __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[Panel[T]]
+  }
+}
+

@@ -11,3 +11,18 @@ trait Anon_Config extends js.Object {
   var isEmpty: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Config {
+  @scala.inline
+  def apply(
+    config: cosmiconfigLib.cosmiconfigMod.cosmiconfigNs.Config,
+    filepath: java.lang.String,
+    isEmpty: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("filepath")(filepath)
+    if (!js.isUndefined(isEmpty)) __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.asInstanceOf[Anon_Config]
+  }
+}
+

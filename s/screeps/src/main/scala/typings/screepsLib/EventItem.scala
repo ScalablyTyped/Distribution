@@ -11,3 +11,18 @@ trait EventItem[T /* <: EventConstant */] extends js.Object {
   var objectId: java.lang.String
 }
 
+object EventItem {
+  @scala.inline
+  def apply[T /* <: EventConstant */](
+    data: /* import warning: ImportType.apply Failed type conversion: screeps.EventData[T] */ js.Any,
+    event: T,
+    objectId: java.lang.String
+  ): EventItem[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("event")(event.asInstanceOf[js.Any])
+    __obj.updateDynamic("objectId")(objectId)
+    __obj.asInstanceOf[EventItem[T]]
+  }
+}
+

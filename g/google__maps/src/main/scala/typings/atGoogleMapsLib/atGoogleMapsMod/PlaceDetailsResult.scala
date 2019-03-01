@@ -149,3 +149,58 @@ trait PlaceDetailsResult extends js.Object {
   var website: java.lang.String
 }
 
+object PlaceDetailsResult {
+  @scala.inline
+  def apply(
+    address_components: js.Array[AddressComponent],
+    adr_address: java.lang.String,
+    alt_ids: js.Array[AlternativePlaceId],
+    formatted_address: java.lang.String,
+    formatted_phone_number: java.lang.String,
+    geometry: AddressGeometry,
+    icon: java.lang.String,
+    international_phone_number: java.lang.String,
+    name: java.lang.String,
+    opening_hours: OpeningHours,
+    permanently_closed: scala.Boolean,
+    photos: js.Array[PlacePhoto],
+    place_id: java.lang.String,
+    plus_code: PlusCode,
+    price_level: scala.Double,
+    rating: scala.Double,
+    reviews: js.Array[PlaceReview],
+    scope: PlaceIdScope,
+    types: js.Array[AddressType],
+    url: java.lang.String,
+    utc_offset: scala.Double,
+    vicinity: scala.Double,
+    website: java.lang.String
+  ): PlaceDetailsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address_components")(address_components)
+    __obj.updateDynamic("adr_address")(adr_address)
+    __obj.updateDynamic("alt_ids")(alt_ids)
+    __obj.updateDynamic("formatted_address")(formatted_address)
+    __obj.updateDynamic("formatted_phone_number")(formatted_phone_number)
+    __obj.updateDynamic("geometry")(geometry)
+    __obj.updateDynamic("icon")(icon)
+    __obj.updateDynamic("international_phone_number")(international_phone_number)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("opening_hours")(opening_hours)
+    __obj.updateDynamic("permanently_closed")(permanently_closed)
+    __obj.updateDynamic("photos")(photos)
+    __obj.updateDynamic("place_id")(place_id)
+    __obj.updateDynamic("plus_code")(plus_code)
+    __obj.updateDynamic("price_level")(price_level)
+    __obj.updateDynamic("rating")(rating)
+    __obj.updateDynamic("reviews")(reviews)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("types")(types)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("utc_offset")(utc_offset)
+    __obj.updateDynamic("vicinity")(vicinity)
+    __obj.updateDynamic("website")(website)
+    __obj.asInstanceOf[PlaceDetailsResult]
+  }
+}
+

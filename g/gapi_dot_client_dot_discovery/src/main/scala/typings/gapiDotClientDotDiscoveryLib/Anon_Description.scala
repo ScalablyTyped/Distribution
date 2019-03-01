@@ -32,3 +32,36 @@ trait Anon_Description extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Description {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    discoveryLink: java.lang.String = null,
+    discoveryRestUrl: java.lang.String = null,
+    documentationLink: java.lang.String = null,
+    icons: Anon_X16 = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    labels: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    preferred: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null,
+    version: java.lang.String = null
+  ): Anon_Description = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (discoveryLink != null) __obj.updateDynamic("discoveryLink")(discoveryLink)
+    if (discoveryRestUrl != null) __obj.updateDynamic("discoveryRestUrl")(discoveryRestUrl)
+    if (documentationLink != null) __obj.updateDynamic("documentationLink")(documentationLink)
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(preferred)) __obj.updateDynamic("preferred")(preferred)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[Anon_Description]
+  }
+}
+

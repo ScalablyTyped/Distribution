@@ -28,3 +28,22 @@ trait AboutPanelOptionsOptions extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AboutPanelOptionsOptions {
+  @scala.inline
+  def apply(
+    applicationName: java.lang.String = null,
+    applicationVersion: java.lang.String = null,
+    copyright: java.lang.String = null,
+    credits: java.lang.String = null,
+    version: java.lang.String = null
+  ): AboutPanelOptionsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (applicationName != null) __obj.updateDynamic("applicationName")(applicationName)
+    if (applicationVersion != null) __obj.updateDynamic("applicationVersion")(applicationVersion)
+    if (copyright != null) __obj.updateDynamic("copyright")(copyright)
+    if (credits != null) __obj.updateDynamic("credits")(credits)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[AboutPanelOptionsOptions]
+  }
+}
+

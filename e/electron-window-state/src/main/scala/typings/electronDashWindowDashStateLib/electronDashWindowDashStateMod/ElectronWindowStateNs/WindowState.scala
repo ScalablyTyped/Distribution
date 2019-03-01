@@ -50,3 +50,28 @@ trait WindowState extends js.Object {
   def saveState(win: electronLib.ElectronNs.BrowserWindow): scala.Unit
 }
 
+object WindowState {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    isFullScreen: scala.Boolean,
+    isMaximized: scala.Boolean,
+    manage: js.Function1[electronLib.ElectronNs.BrowserWindow, scala.Unit],
+    saveState: js.Function1[electronLib.ElectronNs.BrowserWindow, scala.Unit],
+    width: scala.Double,
+    x: scala.Double,
+    y: scala.Double
+  ): WindowState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("isFullScreen")(isFullScreen)
+    __obj.updateDynamic("isMaximized")(isMaximized)
+    __obj.updateDynamic("manage")(manage)
+    __obj.updateDynamic("saveState")(saveState)
+    __obj.updateDynamic("width")(width)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[WindowState]
+  }
+}
+

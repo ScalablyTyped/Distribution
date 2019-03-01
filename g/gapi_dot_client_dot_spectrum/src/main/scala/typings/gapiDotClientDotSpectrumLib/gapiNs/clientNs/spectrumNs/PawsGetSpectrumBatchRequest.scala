@@ -62,3 +62,30 @@ trait PawsGetSpectrumBatchRequest extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PawsGetSpectrumBatchRequest {
+  @scala.inline
+  def apply(
+    antenna: AntennaCharacteristics = null,
+    capabilities: DeviceCapabilities = null,
+    deviceDesc: DeviceDescriptor = null,
+    locations: js.Array[GeoLocation] = null,
+    masterDeviceDesc: DeviceDescriptor = null,
+    owner: DeviceOwner = null,
+    requestType: java.lang.String = null,
+    `type`: java.lang.String = null,
+    version: java.lang.String = null
+  ): PawsGetSpectrumBatchRequest = {
+    val __obj = js.Dynamic.literal()
+    if (antenna != null) __obj.updateDynamic("antenna")(antenna)
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities)
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (masterDeviceDesc != null) __obj.updateDynamic("masterDeviceDesc")(masterDeviceDesc)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PawsGetSpectrumBatchRequest]
+  }
+}
+

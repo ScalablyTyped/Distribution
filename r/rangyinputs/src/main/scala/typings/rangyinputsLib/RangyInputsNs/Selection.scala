@@ -16,3 +16,15 @@ trait Selection extends js.Object {
   var text: java.lang.String
 }
 
+object Selection {
+  @scala.inline
+  def apply(end: scala.Double, length: scala.Double, start: scala.Double, text: java.lang.String): Selection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("end")(end)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Selection]
+  }
+}
+

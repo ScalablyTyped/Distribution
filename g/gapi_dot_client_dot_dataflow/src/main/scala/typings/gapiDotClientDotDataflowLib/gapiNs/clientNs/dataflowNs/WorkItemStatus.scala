@@ -87,3 +87,40 @@ trait WorkItemStatus extends js.Object {
   var workItemId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WorkItemStatus {
+  @scala.inline
+  def apply(
+    completed: js.UndefOr[scala.Boolean] = js.undefined,
+    counterUpdates: js.Array[CounterUpdate] = null,
+    dynamicSourceSplit: DynamicSourceSplit = null,
+    errors: js.Array[Status] = null,
+    metricUpdates: js.Array[MetricUpdate] = null,
+    progress: ApproximateProgress = null,
+    reportIndex: java.lang.String = null,
+    reportedProgress: ApproximateReportedProgress = null,
+    requestedLeaseDuration: java.lang.String = null,
+    sourceFork: SourceFork = null,
+    sourceOperationResponse: SourceOperationResponse = null,
+    stopPosition: Position = null,
+    totalThrottlerWaitTimeSeconds: scala.Int | scala.Double = null,
+    workItemId: java.lang.String = null
+  ): WorkItemStatus = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(completed)) __obj.updateDynamic("completed")(completed)
+    if (counterUpdates != null) __obj.updateDynamic("counterUpdates")(counterUpdates)
+    if (dynamicSourceSplit != null) __obj.updateDynamic("dynamicSourceSplit")(dynamicSourceSplit)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (metricUpdates != null) __obj.updateDynamic("metricUpdates")(metricUpdates)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    if (reportIndex != null) __obj.updateDynamic("reportIndex")(reportIndex)
+    if (reportedProgress != null) __obj.updateDynamic("reportedProgress")(reportedProgress)
+    if (requestedLeaseDuration != null) __obj.updateDynamic("requestedLeaseDuration")(requestedLeaseDuration)
+    if (sourceFork != null) __obj.updateDynamic("sourceFork")(sourceFork)
+    if (sourceOperationResponse != null) __obj.updateDynamic("sourceOperationResponse")(sourceOperationResponse)
+    if (stopPosition != null) __obj.updateDynamic("stopPosition")(stopPosition)
+    if (totalThrottlerWaitTimeSeconds != null) __obj.updateDynamic("totalThrottlerWaitTimeSeconds")(totalThrottlerWaitTimeSeconds.asInstanceOf[js.Any])
+    if (workItemId != null) __obj.updateDynamic("workItemId")(workItemId)
+    __obj.asInstanceOf[WorkItemStatus]
+  }
+}
+

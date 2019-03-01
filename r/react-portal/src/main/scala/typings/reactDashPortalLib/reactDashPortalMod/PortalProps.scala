@@ -12,3 +12,20 @@ trait PortalProps
   var node: js.UndefOr[reactLib.Element | scala.Null] = js.undefined
 }
 
+object PortalProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    node: reactLib.Element = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[js.Any] = null
+  ): PortalProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (node != null) __obj.updateDynamic("node")(node)
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PortalProps]
+  }
+}
+

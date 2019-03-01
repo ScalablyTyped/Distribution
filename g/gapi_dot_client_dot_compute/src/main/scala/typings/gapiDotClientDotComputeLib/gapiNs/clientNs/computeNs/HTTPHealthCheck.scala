@@ -60,3 +60,57 @@ trait HttpHealthCheck extends js.Object {
   var unhealthyThreshold: js.UndefOr[scala.Double] = js.undefined
 }
 
+object HTTPHealthCheck {
+  @scala.inline
+  def apply(
+    host: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    portName: java.lang.String = null,
+    proxyHeader: java.lang.String = null,
+    requestPath: java.lang.String = null
+  ): HTTPHealthCheck = {
+    val __obj = js.Dynamic.literal()
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (portName != null) __obj.updateDynamic("portName")(portName)
+    if (proxyHeader != null) __obj.updateDynamic("proxyHeader")(proxyHeader)
+    if (requestPath != null) __obj.updateDynamic("requestPath")(requestPath)
+    __obj.asInstanceOf[HTTPHealthCheck]
+  }
+}
+
+object HttpHealthCheck {
+  @scala.inline
+  def apply(
+    checkIntervalSec: scala.Int | scala.Double = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    healthyThreshold: scala.Int | scala.Double = null,
+    host: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    requestPath: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    timeoutSec: scala.Int | scala.Double = null,
+    unhealthyThreshold: scala.Int | scala.Double = null
+  ): HttpHealthCheck = {
+    val __obj = js.Dynamic.literal()
+    if (checkIntervalSec != null) __obj.updateDynamic("checkIntervalSec")(checkIntervalSec.asInstanceOf[js.Any])
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (healthyThreshold != null) __obj.updateDynamic("healthyThreshold")(healthyThreshold.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (requestPath != null) __obj.updateDynamic("requestPath")(requestPath)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (timeoutSec != null) __obj.updateDynamic("timeoutSec")(timeoutSec.asInstanceOf[js.Any])
+    if (unhealthyThreshold != null) __obj.updateDynamic("unhealthyThreshold")(unhealthyThreshold.asInstanceOf[js.Any])
+    __obj.asInstanceOf[HttpHealthCheck]
+  }
+}
+

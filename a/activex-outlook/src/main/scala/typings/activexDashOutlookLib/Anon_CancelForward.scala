@@ -10,3 +10,13 @@ trait Anon_CancelForward extends js.Object {
   val Forward: js.Any
 }
 
+object Anon_CancelForward {
+  @scala.inline
+  def apply(Cancel: scala.Boolean, Forward: js.Any): Anon_CancelForward = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("Forward")(Forward)
+    __obj.asInstanceOf[Anon_CancelForward]
+  }
+}
+

@@ -12,3 +12,12 @@ trait LayersSubLayersBubbleSettingsColorMappings extends js.Object {
   var rangeColorMapping: js.UndefOr[js.Array[LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping]] = js.undefined
 }
 
+object LayersSubLayersBubbleSettingsColorMappings {
+  @scala.inline
+  def apply(rangeColorMapping: js.Array[LayersSubLayersBubbleSettingsColorMappingsRangeColorMapping] = null): LayersSubLayersBubbleSettingsColorMappings = {
+    val __obj = js.Dynamic.literal()
+    if (rangeColorMapping != null) __obj.updateDynamic("rangeColorMapping")(rangeColorMapping)
+    __obj.asInstanceOf[LayersSubLayersBubbleSettingsColorMappings]
+  }
+}
+

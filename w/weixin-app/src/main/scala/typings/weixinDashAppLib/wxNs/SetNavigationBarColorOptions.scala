@@ -21,3 +21,24 @@ trait SetNavigationBarColorOptions
   var frontColor: weixinDashAppLib.weixinDashAppLibStrings.`#ffffff` | weixinDashAppLib.weixinDashAppLibStrings.`#000000`
 }
 
+object SetNavigationBarColorOptions {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    frontColor: weixinDashAppLib.weixinDashAppLibStrings.`#ffffff` | weixinDashAppLib.weixinDashAppLibStrings.`#000000`,
+    animation: weixinDashAppLib.Anon_Duratio = null,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): SetNavigationBarColorOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("frontColor")(frontColor.asInstanceOf[js.Any])
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[SetNavigationBarColorOptions]
+  }
+}
+

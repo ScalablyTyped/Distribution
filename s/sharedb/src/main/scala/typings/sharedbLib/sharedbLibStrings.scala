@@ -7,82 +7,110 @@ import scala.scalajs.js.annotation._
 
 object sharedbLibStrings {
   @js.native
-  sealed trait `after submit` extends js.Object
+  sealed trait `after submit`
+    extends sharedbLib.sharedbMod.sharedbNs.UseAction
   
   @js.native
-  sealed trait apply extends js.Object
+  sealed trait apply
+    extends sharedbLib.sharedbMod.sharedbNs.UseAction
   
   @js.native
-  sealed trait `before op` extends js.Object
+  sealed trait `before op`
+    extends sharedbLib.libSharedbMod.DocEvent
   
   @js.native
-  sealed trait changed extends js.Object
+  sealed trait changed
+    extends sharedbLib.libSharedbMod.QueryEvent
   
   @js.native
-  sealed trait commit extends js.Object
+  sealed trait commit
+    extends sharedbLib.sharedbMod.sharedbNs.UseAction
   
   @js.native
-  sealed trait connect extends js.Object
+  sealed trait connect
+    extends sharedbLib.sharedbMod.sharedbNs.UseAction
   
   @js.native
-  sealed trait create extends js.Object
+  sealed trait create
+    extends sharedbLib.libSharedbMod.DocEvent
   
   @js.native
-  sealed trait del extends js.Object
+  sealed trait del
+    extends sharedbLib.libSharedbMod.DocEvent
   
   @js.native
-  sealed trait doc extends js.Object
+  sealed trait doc
+    extends sharedbLib.sharedbMod.sharedbNs.UseAction
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends sharedbLib.libSharedbMod.DocEvent
+       with sharedbLib.libSharedbMod.QueryEvent
   
   @js.native
-  sealed trait extra extends js.Object
+  sealed trait extra
+    extends sharedbLib.libSharedbMod.QueryEvent
   
   @js.native
-  sealed trait insert extends js.Object
+  sealed trait insert
+    extends sharedbLib.libSharedbMod.QueryEvent
   
   @js.native
-  sealed trait load extends js.Object
+  sealed trait load
+    extends sharedbLib.libSharedbMod.DocEvent
   
   @js.native
-  sealed trait move extends js.Object
+  sealed trait move
+    extends sharedbLib.libSharedbMod.QueryEvent
   
   @js.native
-  sealed trait `no write pending` extends js.Object
+  sealed trait `no write pending`
+    extends sharedbLib.libSharedbMod.DocEvent
   
   @js.native
-  sealed trait `nothing pending` extends js.Object
+  sealed trait `nothing pending`
+    extends sharedbLib.libSharedbMod.DocEvent
   
   @js.native
-  sealed trait op extends js.Object
+  sealed trait op
+    extends sharedbLib.libSharedbMod.DocEvent
+       with sharedbLib.sharedbMod.sharedbNs.UseAction
   
   @js.native
-  sealed trait `ot-json0` extends js.Object
+  sealed trait `ot-json0`
+    extends sharedbLib.libSharedbMod.OTType
   
   @js.native
-  sealed trait `ot-text` extends js.Object
+  sealed trait `ot-text`
+    extends sharedbLib.libSharedbMod.OTType
   
   @js.native
-  sealed trait `ot-text-tp2` extends js.Object
+  sealed trait `ot-text-tp2`
+    extends sharedbLib.libSharedbMod.OTType
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait query
+    extends sharedbLib.sharedbMod.sharedbNs.UseAction
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait ready
+    extends sharedbLib.libSharedbMod.QueryEvent
   
   @js.native
-  sealed trait receive extends js.Object
+  sealed trait receive
+    extends sharedbLib.sharedbMod.sharedbNs.UseAction
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait remove
+    extends sharedbLib.libSharedbMod.QueryEvent
   
   @js.native
-  sealed trait `rich-text` extends js.Object
+  sealed trait `rich-text`
+    extends sharedbLib.libSharedbMod.OTType
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends sharedbLib.sharedbMod.sharedbNs.UseAction
   
   @scala.inline
   def `after submit`: `after submit` = "after submit".asInstanceOf[`after submit`]

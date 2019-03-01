@@ -26,3 +26,30 @@ trait Notification extends js.Object {
   var topic: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Notification {
+  @scala.inline
+  def apply(
+    custom_attributes: stdLib.Record[java.lang.String, java.lang.String] = null,
+    etag: java.lang.String = null,
+    event_types: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    object_name_prefix: java.lang.String = null,
+    payload_format: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    topic: java.lang.String = null
+  ): Notification = {
+    val __obj = js.Dynamic.literal()
+    if (custom_attributes != null) __obj.updateDynamic("custom_attributes")(custom_attributes)
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (event_types != null) __obj.updateDynamic("event_types")(event_types)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (object_name_prefix != null) __obj.updateDynamic("object_name_prefix")(object_name_prefix)
+    if (payload_format != null) __obj.updateDynamic("payload_format")(payload_format)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (topic != null) __obj.updateDynamic("topic")(topic)
+    __obj.asInstanceOf[Notification]
+  }
+}
+

@@ -14,3 +14,23 @@ trait IconProps extends js.Object {
   var `type`: java.lang.String | atAntDashDesignIconsLib.libTypesMod.IconDefinition
 }
 
+object IconProps {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String | atAntDashDesignIconsLib.libTypesMod.IconDefinition,
+    className: java.lang.String = null,
+    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[reactLib.SVGSVGElement] = null,
+    primaryColor: java.lang.String = null,
+    secondaryColor: java.lang.String = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): IconProps = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (primaryColor != null) __obj.updateDynamic("primaryColor")(primaryColor)
+    if (secondaryColor != null) __obj.updateDynamic("secondaryColor")(secondaryColor)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[IconProps]
+  }
+}
+

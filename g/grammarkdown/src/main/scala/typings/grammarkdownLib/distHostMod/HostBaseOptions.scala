@@ -11,3 +11,18 @@ trait HostBaseOptions extends js.Object {
   var useBuiltinGrammars: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HostBaseOptions {
+  @scala.inline
+  def apply(
+    ignoreCase: js.UndefOr[scala.Boolean] = js.undefined,
+    knownGrammars: stdLib.Record[java.lang.String, java.lang.String] = null,
+    useBuiltinGrammars: js.UndefOr[scala.Boolean] = js.undefined
+  ): HostBaseOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignoreCase)) __obj.updateDynamic("ignoreCase")(ignoreCase)
+    if (knownGrammars != null) __obj.updateDynamic("knownGrammars")(knownGrammars)
+    if (!js.isUndefined(useBuiltinGrammars)) __obj.updateDynamic("useBuiltinGrammars")(useBuiltinGrammars)
+    __obj.asInstanceOf[HostBaseOptions]
+  }
+}
+

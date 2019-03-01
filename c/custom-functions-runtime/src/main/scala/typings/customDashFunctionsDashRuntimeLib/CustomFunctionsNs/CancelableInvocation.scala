@@ -23,3 +23,13 @@ trait CancelableInvocation extends Invocation {
   def onCanceled(): scala.Unit
 }
 
+object CancelableInvocation {
+  @scala.inline
+  def apply(onCanceled: js.Function0[scala.Unit], address: java.lang.String = null): CancelableInvocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onCanceled")(onCanceled)
+    if (address != null) __obj.updateDynamic("address")(address)
+    __obj.asInstanceOf[CancelableInvocation]
+  }
+}
+

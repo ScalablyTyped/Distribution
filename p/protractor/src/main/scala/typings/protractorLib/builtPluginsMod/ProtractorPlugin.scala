@@ -281,3 +281,66 @@ trait ProtractorPlugin extends js.Object {
   ] = js.undefined
 }
 
+object ProtractorPlugin {
+  @scala.inline
+  def apply(
+    addFailure: js.Function2[
+      /* message */ js.UndefOr[java.lang.String], 
+      /* info */ js.UndefOr[protractorLib.Anon_SpecName], 
+      scala.Unit
+    ] = null,
+    addSuccess: js.Function1[/* info */ js.UndefOr[protractorLib.Anon_SpecNameString], scala.Unit] = null,
+    addWarning: js.Function2[
+      /* message */ js.UndefOr[java.lang.String], 
+      /* info */ js.UndefOr[protractorLib.Anon_SpecNameString], 
+      scala.Unit
+    ] = null,
+    config: PluginConfig = null,
+    name: java.lang.String = null,
+    onPageLoad: js.Function1[
+      /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser, 
+      scala.Unit | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
+    ] = null,
+    onPageStable: js.Function1[
+      /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser, 
+      scala.Unit | seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
+    ] = null,
+    onPrepare: js.Function0[scala.Unit | js.Promise[scala.Unit]] = null,
+    postResults: js.Function0[scala.Unit | js.Promise[scala.Unit]] = null,
+    postTest: js.Function2[
+      /* passed */ scala.Boolean, 
+      /* testInfo */ js.Any, 
+      scala.Unit | js.Promise[scala.Unit]
+    ] = null,
+    setup: js.Function0[scala.Unit | js.Promise[scala.Unit]] = null,
+    skipAngularStability: js.UndefOr[scala.Boolean] = js.undefined,
+    teardown: js.Function0[scala.Unit | js.Promise[scala.Unit]] = null,
+    waitForCondition: js.Function1[
+      /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser, 
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] | scala.Boolean
+    ] = null,
+    waitForPromise: js.Function1[
+      /* browser */ protractorLib.builtBrowserMod.ProtractorBrowser, 
+      seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Unit]
+    ] = null
+  ): ProtractorPlugin = {
+    val __obj = js.Dynamic.literal()
+    if (addFailure != null) __obj.updateDynamic("addFailure")(addFailure)
+    if (addSuccess != null) __obj.updateDynamic("addSuccess")(addSuccess)
+    if (addWarning != null) __obj.updateDynamic("addWarning")(addWarning)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onPageLoad != null) __obj.updateDynamic("onPageLoad")(onPageLoad)
+    if (onPageStable != null) __obj.updateDynamic("onPageStable")(onPageStable)
+    if (onPrepare != null) __obj.updateDynamic("onPrepare")(onPrepare)
+    if (postResults != null) __obj.updateDynamic("postResults")(postResults)
+    if (postTest != null) __obj.updateDynamic("postTest")(postTest)
+    if (setup != null) __obj.updateDynamic("setup")(setup)
+    if (!js.isUndefined(skipAngularStability)) __obj.updateDynamic("skipAngularStability")(skipAngularStability)
+    if (teardown != null) __obj.updateDynamic("teardown")(teardown)
+    if (waitForCondition != null) __obj.updateDynamic("waitForCondition")(waitForCondition)
+    if (waitForPromise != null) __obj.updateDynamic("waitForPromise")(waitForPromise)
+    __obj.asInstanceOf[ProtractorPlugin]
+  }
+}
+

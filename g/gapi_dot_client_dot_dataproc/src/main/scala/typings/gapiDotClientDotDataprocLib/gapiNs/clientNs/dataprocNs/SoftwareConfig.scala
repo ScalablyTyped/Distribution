@@ -27,3 +27,16 @@ trait SoftwareConfig extends js.Object {
   var properties: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object SoftwareConfig {
+  @scala.inline
+  def apply(
+    imageVersion: java.lang.String = null,
+    properties: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): SoftwareConfig = {
+    val __obj = js.Dynamic.literal()
+    if (imageVersion != null) __obj.updateDynamic("imageVersion")(imageVersion)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[SoftwareConfig]
+  }
+}
+

@@ -12,3 +12,12 @@ trait GetBucketArgs extends js.Object {
   val bucket: java.lang.String
 }
 
+object GetBucketArgs {
+  @scala.inline
+  def apply(bucket: java.lang.String): GetBucketArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucket")(bucket)
+    __obj.asInstanceOf[GetBucketArgs]
+  }
+}
+

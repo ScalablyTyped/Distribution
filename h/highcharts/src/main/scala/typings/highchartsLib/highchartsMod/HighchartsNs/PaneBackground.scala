@@ -38,3 +38,26 @@ trait PaneBackground extends js.Object {
   var shape: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PaneBackground {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String | Gradient,
+    borderColor: java.lang.String | Gradient = null,
+    borderWidth: scala.Int | scala.Double = null,
+    className: java.lang.String = null,
+    innerRadius: scala.Double | java.lang.String = null,
+    outerRadius: scala.Double | java.lang.String = null,
+    shape: java.lang.String = null
+  ): PaneBackground = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundColor")(backgroundColor.asInstanceOf[js.Any])
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor.asInstanceOf[js.Any])
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (innerRadius != null) __obj.updateDynamic("innerRadius")(innerRadius.asInstanceOf[js.Any])
+    if (outerRadius != null) __obj.updateDynamic("outerRadius")(outerRadius.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    __obj.asInstanceOf[PaneBackground]
+  }
+}
+

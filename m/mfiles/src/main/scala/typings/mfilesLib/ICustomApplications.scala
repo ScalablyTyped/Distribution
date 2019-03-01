@@ -11,3 +11,18 @@ trait ICustomApplications extends js.Object {
   def Item(Index: scala.Double): ICustomApplication
 }
 
+object ICustomApplications {
+  @scala.inline
+  def apply(
+    Clone: js.Function0[ICustomApplications],
+    Count: scala.Double,
+    Item: js.Function1[scala.Double, ICustomApplication]
+  ): ICustomApplications = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Clone")(Clone)
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("Item")(Item)
+    __obj.asInstanceOf[ICustomApplications]
+  }
+}
+

@@ -12,3 +12,12 @@ trait DropIndexOptions extends js.Object {
   var ignoreIfNotExists: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DropIndexOptions {
+  @scala.inline
+  def apply(ignoreIfNotExists: js.UndefOr[scala.Boolean] = js.undefined): DropIndexOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignoreIfNotExists)) __obj.updateDynamic("ignoreIfNotExists")(ignoreIfNotExists)
+    __obj.asInstanceOf[DropIndexOptions]
+  }
+}
+

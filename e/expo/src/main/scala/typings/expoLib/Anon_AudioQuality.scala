@@ -19,3 +19,34 @@ trait Anon_AudioQuality extends js.Object {
   var sampleRate: scala.Double
 }
 
+object Anon_AudioQuality {
+  @scala.inline
+  def apply(
+    audioQuality: scala.Double,
+    bitRate: scala.Double,
+    extension: java.lang.String,
+    numberOfChannels: scala.Double,
+    sampleRate: scala.Double,
+    bitDepthHint: scala.Int | scala.Double = null,
+    bitRateStrategy: scala.Int | scala.Double = null,
+    linearPCMBitDepth: scala.Int | scala.Double = null,
+    linearPCMIsBigEndian: js.UndefOr[scala.Boolean] = js.undefined,
+    linearPCMIsFloat: js.UndefOr[scala.Boolean] = js.undefined,
+    outputFormat: java.lang.String | scala.Double = null
+  ): Anon_AudioQuality = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("audioQuality")(audioQuality)
+    __obj.updateDynamic("bitRate")(bitRate)
+    __obj.updateDynamic("extension")(extension)
+    __obj.updateDynamic("numberOfChannels")(numberOfChannels)
+    __obj.updateDynamic("sampleRate")(sampleRate)
+    if (bitDepthHint != null) __obj.updateDynamic("bitDepthHint")(bitDepthHint.asInstanceOf[js.Any])
+    if (bitRateStrategy != null) __obj.updateDynamic("bitRateStrategy")(bitRateStrategy.asInstanceOf[js.Any])
+    if (linearPCMBitDepth != null) __obj.updateDynamic("linearPCMBitDepth")(linearPCMBitDepth.asInstanceOf[js.Any])
+    if (!js.isUndefined(linearPCMIsBigEndian)) __obj.updateDynamic("linearPCMIsBigEndian")(linearPCMIsBigEndian)
+    if (!js.isUndefined(linearPCMIsFloat)) __obj.updateDynamic("linearPCMIsFloat")(linearPCMIsFloat)
+    if (outputFormat != null) __obj.updateDynamic("outputFormat")(outputFormat.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AudioQuality]
+  }
+}
+

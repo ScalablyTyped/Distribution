@@ -28,3 +28,20 @@ trait Anon_Error extends js.Object {
   var warning: java.lang.String
 }
 
+object Anon_Error {
+  @scala.inline
+  def apply(
+    error: java.lang.String,
+    info: java.lang.String,
+    success: java.lang.String,
+    warning: java.lang.String
+  ): Anon_Error = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("success")(success)
+    __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[Anon_Error]
+  }
+}
+

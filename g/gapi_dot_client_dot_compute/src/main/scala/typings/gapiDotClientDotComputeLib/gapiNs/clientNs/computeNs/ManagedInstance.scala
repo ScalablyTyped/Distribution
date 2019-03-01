@@ -31,3 +31,22 @@ trait ManagedInstance extends js.Object {
   var lastAttempt: js.UndefOr[ManagedInstanceLastAttempt] = js.undefined
 }
 
+object ManagedInstance {
+  @scala.inline
+  def apply(
+    currentAction: java.lang.String = null,
+    id: java.lang.String = null,
+    instance: java.lang.String = null,
+    instanceStatus: java.lang.String = null,
+    lastAttempt: ManagedInstanceLastAttempt = null
+  ): ManagedInstance = {
+    val __obj = js.Dynamic.literal()
+    if (currentAction != null) __obj.updateDynamic("currentAction")(currentAction)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (instanceStatus != null) __obj.updateDynamic("instanceStatus")(instanceStatus)
+    if (lastAttempt != null) __obj.updateDynamic("lastAttempt")(lastAttempt)
+    __obj.asInstanceOf[ManagedInstance]
+  }
+}
+

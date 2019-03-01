@@ -14,3 +14,24 @@ trait SingleLineMenuResponse extends js.Object {
   var y: scala.Double
 }
 
+object SingleLineMenuResponse {
+  @scala.inline
+  def apply(
+    canceled: scala.Boolean,
+    selectedIndex: scala.Double,
+    selectedText: java.lang.String,
+    unexpectedKey: java.lang.String,
+    x: scala.Double,
+    y: scala.Double
+  ): SingleLineMenuResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("canceled")(canceled)
+    __obj.updateDynamic("selectedIndex")(selectedIndex)
+    __obj.updateDynamic("selectedText")(selectedText)
+    __obj.updateDynamic("unexpectedKey")(unexpectedKey)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[SingleLineMenuResponse]
+  }
+}
+

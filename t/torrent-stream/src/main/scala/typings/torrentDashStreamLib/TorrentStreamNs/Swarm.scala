@@ -9,3 +9,12 @@ trait Swarm extends js.Object {
   var downloaded: scala.Double
 }
 
+object Swarm {
+  @scala.inline
+  def apply(downloaded: scala.Double): Swarm = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("downloaded")(downloaded)
+    __obj.asInstanceOf[Swarm]
+  }
+}
+

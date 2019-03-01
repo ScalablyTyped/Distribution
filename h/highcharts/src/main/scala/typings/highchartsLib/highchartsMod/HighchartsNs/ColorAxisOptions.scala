@@ -239,3 +239,92 @@ trait ColorAxisOptions extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColorAxisOptions {
+  @scala.inline
+  def apply(
+    dataClassColor: java.lang.String = null,
+    dataClasses: js.Array[ColorAxisDataClass] = null,
+    endOnTick: js.UndefOr[scala.Boolean] = js.undefined,
+    events: highchartsLib.Anon_AfterSetExtremes = null,
+    gridLineColor: java.lang.String = null,
+    gridLineDashStyle: java.lang.String = null,
+    gridLineWidth: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    labels: AxisLabels = null,
+    lineColor: java.lang.String | Gradient = null,
+    lineWidth: scala.Int | scala.Double = null,
+    marker: highchartsLib.Anon_Animation = null,
+    max: scala.Int | scala.Double = null,
+    maxColor: java.lang.String = null,
+    maxPadding: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    minColor: java.lang.String = null,
+    minPadding: scala.Int | scala.Double = null,
+    minorGridLineColor: java.lang.String = null,
+    minorGridLineDashStyle: java.lang.String = null,
+    minorGridLineWidth: scala.Int | scala.Double = null,
+    minorTickColor: java.lang.String = null,
+    minorTickInterval: java.lang.String | scala.Double = null,
+    minorTickLength: scala.Int | scala.Double = null,
+    minorTickPosition: java.lang.String = null,
+    minorTickWidth: scala.Int | scala.Double = null,
+    reversed: js.UndefOr[scala.Boolean] = js.undefined,
+    showFirstLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    showLastLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    startOnTick: js.UndefOr[scala.Boolean] = js.undefined,
+    stops: js.Array[js.Tuple2[scala.Double, java.lang.String]] = null,
+    tickColor: java.lang.String = null,
+    tickInterval: scala.Int | scala.Double = null,
+    tickLength: scala.Int | scala.Double = null,
+    tickPixelInterval: scala.Int | scala.Double = null,
+    tickPosition: java.lang.String = null,
+    tickPositioner: js.Function2[/* min */ scala.Double, /* max */ scala.Double, scala.Unit] = null,
+    tickPositions: js.Array[scala.Double] = null,
+    tickWidth: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): ColorAxisOptions = {
+    val __obj = js.Dynamic.literal()
+    if (dataClassColor != null) __obj.updateDynamic("dataClassColor")(dataClassColor)
+    if (dataClasses != null) __obj.updateDynamic("dataClasses")(dataClasses)
+    if (!js.isUndefined(endOnTick)) __obj.updateDynamic("endOnTick")(endOnTick)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (gridLineColor != null) __obj.updateDynamic("gridLineColor")(gridLineColor)
+    if (gridLineDashStyle != null) __obj.updateDynamic("gridLineDashStyle")(gridLineDashStyle)
+    if (gridLineWidth != null) __obj.updateDynamic("gridLineWidth")(gridLineWidth.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (lineColor != null) __obj.updateDynamic("lineColor")(lineColor.asInstanceOf[js.Any])
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (maxColor != null) __obj.updateDynamic("maxColor")(maxColor)
+    if (maxPadding != null) __obj.updateDynamic("maxPadding")(maxPadding.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (minColor != null) __obj.updateDynamic("minColor")(minColor)
+    if (minPadding != null) __obj.updateDynamic("minPadding")(minPadding.asInstanceOf[js.Any])
+    if (minorGridLineColor != null) __obj.updateDynamic("minorGridLineColor")(minorGridLineColor)
+    if (minorGridLineDashStyle != null) __obj.updateDynamic("minorGridLineDashStyle")(minorGridLineDashStyle)
+    if (minorGridLineWidth != null) __obj.updateDynamic("minorGridLineWidth")(minorGridLineWidth.asInstanceOf[js.Any])
+    if (minorTickColor != null) __obj.updateDynamic("minorTickColor")(minorTickColor)
+    if (minorTickInterval != null) __obj.updateDynamic("minorTickInterval")(minorTickInterval.asInstanceOf[js.Any])
+    if (minorTickLength != null) __obj.updateDynamic("minorTickLength")(minorTickLength.asInstanceOf[js.Any])
+    if (minorTickPosition != null) __obj.updateDynamic("minorTickPosition")(minorTickPosition)
+    if (minorTickWidth != null) __obj.updateDynamic("minorTickWidth")(minorTickWidth.asInstanceOf[js.Any])
+    if (!js.isUndefined(reversed)) __obj.updateDynamic("reversed")(reversed)
+    if (!js.isUndefined(showFirstLabel)) __obj.updateDynamic("showFirstLabel")(showFirstLabel)
+    if (!js.isUndefined(showLastLabel)) __obj.updateDynamic("showLastLabel")(showLastLabel)
+    if (!js.isUndefined(startOnTick)) __obj.updateDynamic("startOnTick")(startOnTick)
+    if (stops != null) __obj.updateDynamic("stops")(stops)
+    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor)
+    if (tickInterval != null) __obj.updateDynamic("tickInterval")(tickInterval.asInstanceOf[js.Any])
+    if (tickLength != null) __obj.updateDynamic("tickLength")(tickLength.asInstanceOf[js.Any])
+    if (tickPixelInterval != null) __obj.updateDynamic("tickPixelInterval")(tickPixelInterval.asInstanceOf[js.Any])
+    if (tickPosition != null) __obj.updateDynamic("tickPosition")(tickPosition)
+    if (tickPositioner != null) __obj.updateDynamic("tickPositioner")(tickPositioner)
+    if (tickPositions != null) __obj.updateDynamic("tickPositions")(tickPositions)
+    if (tickWidth != null) __obj.updateDynamic("tickWidth")(tickWidth.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ColorAxisOptions]
+  }
+}
+

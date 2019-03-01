@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object historyLibStrings {
   @js.native
-  sealed trait POP extends js.Object
+  sealed trait POP
+    extends historyLib.historyMod.Action
   
   @js.native
-  sealed trait PUSH extends js.Object
+  sealed trait PUSH
+    extends historyLib.historyMod.Action
   
   @js.native
-  sealed trait REPLACE extends js.Object
+  sealed trait REPLACE
+    extends historyLib.historyMod.Action
   
   @js.native
-  sealed trait hashbang extends js.Object
+  sealed trait hashbang
+    extends historyLib.createHashHistoryMod.HashType
   
   @js.native
-  sealed trait noslash extends js.Object
+  sealed trait noslash
+    extends historyLib.createHashHistoryMod.HashType
   
   @js.native
-  sealed trait slash extends js.Object
+  sealed trait slash
+    extends historyLib.createHashHistoryMod.HashType
   
   @scala.inline
   def POP: POP = "POP".asInstanceOf[POP]

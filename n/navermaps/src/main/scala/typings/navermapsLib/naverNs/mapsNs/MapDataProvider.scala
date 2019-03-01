@@ -11,3 +11,18 @@ trait MapDataProvider extends js.Object {
   var title: java.lang.String
 }
 
+object MapDataProvider {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    bounds: Bounds | BoundsLiteral | ArrayOfBounds | ArrayOfBoundsLiteral = null,
+    link: java.lang.String = null
+  ): MapDataProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds.asInstanceOf[js.Any])
+    if (link != null) __obj.updateDynamic("link")(link)
+    __obj.asInstanceOf[MapDataProvider]
+  }
+}
+

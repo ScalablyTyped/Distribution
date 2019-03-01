@@ -23,3 +23,16 @@ trait TopBottomConditionalFormatData extends js.Object {
   var rule: js.UndefOr[officeDashJsDashPreviewLib.ExcelNs.ConditionalTopBottomRule] = js.undefined
 }
 
+object TopBottomConditionalFormatData {
+  @scala.inline
+  def apply(
+    format: ConditionalRangeFormatData = null,
+    rule: officeDashJsDashPreviewLib.ExcelNs.ConditionalTopBottomRule = null
+  ): TopBottomConditionalFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    __obj.asInstanceOf[TopBottomConditionalFormatData]
+  }
+}
+

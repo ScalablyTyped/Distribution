@@ -10,3 +10,13 @@ trait Anon_DestPos extends js.Object {
   var duration: scala.Double
 }
 
+object Anon_DestPos {
+  @scala.inline
+  def apply(destPos: atEgjsAxesLib.axismanagerMod.Axis, duration: scala.Double): Anon_DestPos = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destPos")(destPos)
+    __obj.updateDynamic("duration")(duration)
+    __obj.asInstanceOf[Anon_DestPos]
+  }
+}
+

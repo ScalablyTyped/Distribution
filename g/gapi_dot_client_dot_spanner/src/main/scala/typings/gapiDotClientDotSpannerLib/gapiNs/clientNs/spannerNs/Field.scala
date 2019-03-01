@@ -20,3 +20,13 @@ trait Field extends js.Object {
   var `type`: js.UndefOr[Type] = js.undefined
 }
 
+object Field {
+  @scala.inline
+  def apply(name: java.lang.String = null, `type`: Type = null): Field = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Field]
+  }
+}
+

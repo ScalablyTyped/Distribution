@@ -10,3 +10,12 @@ trait AuthenticateOptions extends js.Object {
   var interactive: scala.Boolean
 }
 
+object AuthenticateOptions {
+  @scala.inline
+  def apply(interactive: scala.Boolean): AuthenticateOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("interactive")(interactive)
+    __obj.asInstanceOf[AuthenticateOptions]
+  }
+}
+

@@ -22,3 +22,18 @@ trait IFutureStateProvider extends js.Object {
   def stateFactory(`type`: java.lang.String, stateFactory: IFutureStateFactory): scala.Unit
 }
 
+object IFutureStateProvider {
+  @scala.inline
+  def apply(
+    addResolve: js.Function1[IResolveFunction, scala.Unit],
+    futureState: js.Function1[IFutureState, scala.Unit],
+    stateFactory: js.Function2[java.lang.String, IFutureStateFactory, scala.Unit]
+  ): IFutureStateProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addResolve")(addResolve)
+    __obj.updateDynamic("futureState")(futureState)
+    __obj.updateDynamic("stateFactory")(stateFactory)
+    __obj.asInstanceOf[IFutureStateProvider]
+  }
+}
+

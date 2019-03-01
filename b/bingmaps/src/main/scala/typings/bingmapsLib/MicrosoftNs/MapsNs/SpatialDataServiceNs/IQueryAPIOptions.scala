@@ -33,3 +33,30 @@ trait IQueryAPIOptions extends js.Object {
   var top: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IQueryAPIOptions {
+  @scala.inline
+  def apply(
+    queryUrl: java.lang.String,
+    filter: java.lang.String | IFilter = null,
+    inlineCount: js.UndefOr[scala.Boolean] = js.undefined,
+    isStaging: js.UndefOr[scala.Boolean] = js.undefined,
+    orderBy: js.Array[java.lang.String] = null,
+    select: js.Array[java.lang.String] = null,
+    skip: scala.Int | scala.Double = null,
+    spatialFilter: ISpatialFilterOptions | IFindNearRouteOptions = null,
+    top: scala.Int | scala.Double = null
+  ): IQueryAPIOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("queryUrl")(queryUrl)
+    if (filter != null) __obj.updateDynamic("filter")(filter.asInstanceOf[js.Any])
+    if (!js.isUndefined(inlineCount)) __obj.updateDynamic("inlineCount")(inlineCount)
+    if (!js.isUndefined(isStaging)) __obj.updateDynamic("isStaging")(isStaging)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (skip != null) __obj.updateDynamic("skip")(skip.asInstanceOf[js.Any])
+    if (spatialFilter != null) __obj.updateDynamic("spatialFilter")(spatialFilter.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IQueryAPIOptions]
+  }
+}
+

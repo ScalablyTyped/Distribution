@@ -10,3 +10,12 @@ trait GetEffectiveOrgPolicyRequest extends js.Object {
   var constraint: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetEffectiveOrgPolicyRequest {
+  @scala.inline
+  def apply(constraint: java.lang.String = null): GetEffectiveOrgPolicyRequest = {
+    val __obj = js.Dynamic.literal()
+    if (constraint != null) __obj.updateDynamic("constraint")(constraint)
+    __obj.asInstanceOf[GetEffectiveOrgPolicyRequest]
+  }
+}
+

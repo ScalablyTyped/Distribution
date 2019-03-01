@@ -18,3 +18,13 @@ trait SourceReference extends js.Object {
   var revisionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SourceReference {
+  @scala.inline
+  def apply(repository: java.lang.String = null, revisionId: java.lang.String = null): SourceReference = {
+    val __obj = js.Dynamic.literal()
+    if (repository != null) __obj.updateDynamic("repository")(repository)
+    if (revisionId != null) __obj.updateDynamic("revisionId")(revisionId)
+    __obj.asInstanceOf[SourceReference]
+  }
+}
+

@@ -27,3 +27,28 @@ trait PreferredDeal extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PreferredDeal {
+  @scala.inline
+  def apply(
+    advertiserName: java.lang.String = null,
+    buyerNetworkName: java.lang.String = null,
+    currencyCode: java.lang.String = null,
+    endTime: java.lang.String = null,
+    fixedCpm: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    startTime: java.lang.String = null
+  ): PreferredDeal = {
+    val __obj = js.Dynamic.literal()
+    if (advertiserName != null) __obj.updateDynamic("advertiserName")(advertiserName)
+    if (buyerNetworkName != null) __obj.updateDynamic("buyerNetworkName")(buyerNetworkName)
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (fixedCpm != null) __obj.updateDynamic("fixedCpm")(fixedCpm)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[PreferredDeal]
+  }
+}
+

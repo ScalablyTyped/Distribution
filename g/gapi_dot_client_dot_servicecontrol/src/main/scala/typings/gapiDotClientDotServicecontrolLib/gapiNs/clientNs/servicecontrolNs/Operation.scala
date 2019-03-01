@@ -101,3 +101,38 @@ trait Operation extends js.Object {
   var userLabels: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object Operation {
+  @scala.inline
+  def apply(
+    consumerId: java.lang.String = null,
+    endTime: java.lang.String = null,
+    importance: java.lang.String = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    logEntries: js.Array[LogEntry] = null,
+    metricValueSets: js.Array[MetricValueSet] = null,
+    operationId: java.lang.String = null,
+    operationName: java.lang.String = null,
+    quotaProperties: QuotaProperties = null,
+    resourceContainer: java.lang.String = null,
+    resources: js.Array[ResourceInfo] = null,
+    startTime: java.lang.String = null,
+    userLabels: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): Operation = {
+    val __obj = js.Dynamic.literal()
+    if (consumerId != null) __obj.updateDynamic("consumerId")(consumerId)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (importance != null) __obj.updateDynamic("importance")(importance)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (logEntries != null) __obj.updateDynamic("logEntries")(logEntries)
+    if (metricValueSets != null) __obj.updateDynamic("metricValueSets")(metricValueSets)
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (operationName != null) __obj.updateDynamic("operationName")(operationName)
+    if (quotaProperties != null) __obj.updateDynamic("quotaProperties")(quotaProperties)
+    if (resourceContainer != null) __obj.updateDynamic("resourceContainer")(resourceContainer)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (userLabels != null) __obj.updateDynamic("userLabels")(userLabels)
+    __obj.asInstanceOf[Operation]
+  }
+}
+

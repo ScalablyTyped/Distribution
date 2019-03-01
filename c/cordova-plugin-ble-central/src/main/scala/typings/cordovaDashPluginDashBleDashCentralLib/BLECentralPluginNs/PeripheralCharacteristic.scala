@@ -12,3 +12,20 @@ trait PeripheralCharacteristic extends js.Object {
   var service: java.lang.String
 }
 
+object PeripheralCharacteristic {
+  @scala.inline
+  def apply(
+    characteristic: java.lang.String,
+    properties: js.Array[java.lang.String],
+    service: java.lang.String,
+    descriptors: js.Array[_] = null
+  ): PeripheralCharacteristic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("characteristic")(characteristic)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("service")(service)
+    if (descriptors != null) __obj.updateDynamic("descriptors")(descriptors)
+    __obj.asInstanceOf[PeripheralCharacteristic]
+  }
+}
+

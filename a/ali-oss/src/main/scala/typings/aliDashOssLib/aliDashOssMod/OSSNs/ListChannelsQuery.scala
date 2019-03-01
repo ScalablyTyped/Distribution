@@ -13,3 +13,13 @@ trait ListChannelsQuery extends js.Object {
   var prefix: java.lang.String
 }
 
+object ListChannelsQuery {
+  @scala.inline
+  def apply(marker: java.lang.String, `max-keys `: scala.Double, prefix: java.lang.String): ListChannelsQuery = {
+    val __obj = js.Dynamic.literal(`max-keys ` = `max-keys `)
+    __obj.updateDynamic("marker")(marker)
+    __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[ListChannelsQuery]
+  }
+}
+

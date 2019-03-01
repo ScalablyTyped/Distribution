@@ -14,3 +14,24 @@ trait Options extends js.Object {
   var transformPath: js.UndefOr[js.Function1[/* filePath */ java.lang.String, scala.Unit]] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    additionalStreams: js.Array[nodeLib.NodeJSNs.ReadWriteStream] = null,
+    base: java.lang.String = null,
+    noAssets: js.UndefOr[scala.Boolean] = js.undefined,
+    noconcat: js.UndefOr[scala.Boolean] = js.undefined,
+    searchPath: java.lang.String | js.Array[java.lang.String] = null,
+    transformPath: js.Function1[/* filePath */ java.lang.String, scala.Unit] = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (additionalStreams != null) __obj.updateDynamic("additionalStreams")(additionalStreams)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (!js.isUndefined(noAssets)) __obj.updateDynamic("noAssets")(noAssets)
+    if (!js.isUndefined(noconcat)) __obj.updateDynamic("noconcat")(noconcat)
+    if (searchPath != null) __obj.updateDynamic("searchPath")(searchPath.asInstanceOf[js.Any])
+    if (transformPath != null) __obj.updateDynamic("transformPath")(transformPath)
+    __obj.asInstanceOf[Options]
+  }
+}
+

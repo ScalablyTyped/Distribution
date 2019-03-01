@@ -12,3 +12,20 @@ trait Anon_Cookies extends js.Object {
   var queryStringCacheKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Cookies {
+  @scala.inline
+  def apply(
+    cookies: Anon_Forward,
+    queryString: scala.Boolean,
+    headers: js.Array[java.lang.String] = null,
+    queryStringCacheKeys: js.Array[java.lang.String] = null
+  ): Anon_Cookies = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cookies")(cookies)
+    __obj.updateDynamic("queryString")(queryString)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (queryStringCacheKeys != null) __obj.updateDynamic("queryStringCacheKeys")(queryStringCacheKeys)
+    __obj.asInstanceOf[Anon_Cookies]
+  }
+}
+

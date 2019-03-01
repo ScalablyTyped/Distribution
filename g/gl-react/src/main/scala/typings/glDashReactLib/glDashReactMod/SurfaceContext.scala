@@ -11,3 +11,14 @@ trait SurfaceContext extends js.Object {
   var glSurface: Surface[_]
 }
 
+object SurfaceContext {
+  @scala.inline
+  def apply(glParent: Node | Surface[_] | Bus, glSizable: glDashReactLib.Anon_GetGLSize, glSurface: Surface[_]): SurfaceContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("glParent")(glParent.asInstanceOf[js.Any])
+    __obj.updateDynamic("glSizable")(glSizable)
+    __obj.updateDynamic("glSurface")(glSurface)
+    __obj.asInstanceOf[SurfaceContext]
+  }
+}
+

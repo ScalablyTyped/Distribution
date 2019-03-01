@@ -79,3 +79,54 @@ trait XGridColumnModel
   def setDefaultColumns(elements: scala.Double): scala.Unit
 }
 
+object XGridColumnModel {
+  @scala.inline
+  def apply(
+    ColumnCount: scala.Double,
+    Columns: activexDashInteropLib.SafeArray[XGridColumn],
+    acquire: js.Function0[scala.Unit],
+    addColumn: js.Function1[XGridColumn, scala.Double],
+    addContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    createClone: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XCloneable],
+    createColumn: js.Function0[XGridColumn],
+    dispose: js.Function0[scala.Unit],
+    getColumn: js.Function1[scala.Double, XGridColumn],
+    getColumnCount: js.Function0[scala.Double],
+    getColumns: js.Function0[activexDashInteropLib.SafeArray[XGridColumn]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeColumn: js.Function1[scala.Double, scala.Unit],
+    removeContainerListener: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XContainerListener, 
+      scala.Unit
+    ],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    setDefaultColumns: js.Function1[scala.Double, scala.Unit]
+  ): XGridColumnModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ColumnCount")(ColumnCount)
+    __obj.updateDynamic("Columns")(Columns)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addColumn")(addColumn)
+    __obj.updateDynamic("addContainerListener")(addContainerListener)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("createClone")(createClone)
+    __obj.updateDynamic("createColumn")(createColumn)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getColumn")(getColumn)
+    __obj.updateDynamic("getColumnCount")(getColumnCount)
+    __obj.updateDynamic("getColumns")(getColumns)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeColumn")(removeColumn)
+    __obj.updateDynamic("removeContainerListener")(removeContainerListener)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setDefaultColumns")(setDefaultColumns)
+    __obj.asInstanceOf[XGridColumnModel]
+  }
+}
+

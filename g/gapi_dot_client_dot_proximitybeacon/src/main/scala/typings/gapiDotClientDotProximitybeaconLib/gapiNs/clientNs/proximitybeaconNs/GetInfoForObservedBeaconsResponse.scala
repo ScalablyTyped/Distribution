@@ -13,3 +13,12 @@ trait GetInfoForObservedBeaconsResponse extends js.Object {
   var beacons: js.UndefOr[js.Array[BeaconInfo]] = js.undefined
 }
 
+object GetInfoForObservedBeaconsResponse {
+  @scala.inline
+  def apply(beacons: js.Array[BeaconInfo] = null): GetInfoForObservedBeaconsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (beacons != null) __obj.updateDynamic("beacons")(beacons)
+    __obj.asInstanceOf[GetInfoForObservedBeaconsResponse]
+  }
+}
+

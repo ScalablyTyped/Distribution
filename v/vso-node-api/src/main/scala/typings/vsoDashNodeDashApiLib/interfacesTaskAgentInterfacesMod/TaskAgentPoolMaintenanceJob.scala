@@ -61,3 +61,40 @@ trait TaskAgentPoolMaintenanceJob extends js.Object {
   var warningCount: scala.Double
 }
 
+object TaskAgentPoolMaintenanceJob {
+  @scala.inline
+  def apply(
+    definitionId: scala.Double,
+    errorCount: scala.Double,
+    finishTime: stdLib.Date,
+    jobId: scala.Double,
+    logsDownloadUrl: java.lang.String,
+    orchestrationId: java.lang.String,
+    pool: TaskAgentPoolReference,
+    queueTime: stdLib.Date,
+    requestedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    result: TaskAgentPoolMaintenanceJobResult,
+    startTime: stdLib.Date,
+    status: TaskAgentPoolMaintenanceJobStatus,
+    targetAgents: js.Array[TaskAgentReference],
+    warningCount: scala.Double
+  ): TaskAgentPoolMaintenanceJob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("definitionId")(definitionId)
+    __obj.updateDynamic("errorCount")(errorCount)
+    __obj.updateDynamic("finishTime")(finishTime)
+    __obj.updateDynamic("jobId")(jobId)
+    __obj.updateDynamic("logsDownloadUrl")(logsDownloadUrl)
+    __obj.updateDynamic("orchestrationId")(orchestrationId)
+    __obj.updateDynamic("pool")(pool)
+    __obj.updateDynamic("queueTime")(queueTime)
+    __obj.updateDynamic("requestedBy")(requestedBy)
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("targetAgents")(targetAgents)
+    __obj.updateDynamic("warningCount")(warningCount)
+    __obj.asInstanceOf[TaskAgentPoolMaintenanceJob]
+  }
+}
+

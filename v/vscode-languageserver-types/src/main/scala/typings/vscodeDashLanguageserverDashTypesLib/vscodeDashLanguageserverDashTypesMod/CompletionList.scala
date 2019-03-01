@@ -16,3 +16,13 @@ trait CompletionList extends js.Object {
   var items: js.Array[CompletionItem]
 }
 
+object CompletionList {
+  @scala.inline
+  def apply(isIncomplete: scala.Boolean, items: js.Array[CompletionItem]): CompletionList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isIncomplete")(isIncomplete)
+    __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[CompletionList]
+  }
+}
+

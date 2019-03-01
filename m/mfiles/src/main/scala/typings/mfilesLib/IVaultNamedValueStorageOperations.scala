@@ -19,3 +19,18 @@ trait IVaultNamedValueStorageOperations extends js.Object {
   ): scala.Unit
 }
 
+object IVaultNamedValueStorageOperations {
+  @scala.inline
+  def apply(
+    GetNamedValues: js.Function2[mfilesLib.MFilesNs.MFNamedValueType, java.lang.String, INamedValues],
+    RemoveNamedValues: js.Function3[mfilesLib.MFilesNs.MFNamedValueType, java.lang.String, IStrings, scala.Unit],
+    SetNamedValues: js.Function3[mfilesLib.MFilesNs.MFNamedValueType, java.lang.String, INamedValues, scala.Unit]
+  ): IVaultNamedValueStorageOperations = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetNamedValues")(GetNamedValues)
+    __obj.updateDynamic("RemoveNamedValues")(RemoveNamedValues)
+    __obj.updateDynamic("SetNamedValues")(SetNamedValues)
+    __obj.asInstanceOf[IVaultNamedValueStorageOperations]
+  }
+}
+

@@ -10,3 +10,12 @@ trait TypeDerived extends js.Object {
   var $type: ElementType
 }
 
+object TypeDerived {
+  @scala.inline
+  def apply($type: ElementType): TypeDerived = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$type")($type)
+    __obj.asInstanceOf[TypeDerived]
+  }
+}
+

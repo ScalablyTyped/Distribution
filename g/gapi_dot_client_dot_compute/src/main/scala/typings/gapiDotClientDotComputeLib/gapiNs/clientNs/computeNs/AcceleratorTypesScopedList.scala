@@ -12,3 +12,16 @@ trait AcceleratorTypesScopedList extends js.Object {
   var warning: js.UndefOr[gapiDotClientDotComputeLib.Anon_Code] = js.undefined
 }
 
+object AcceleratorTypesScopedList {
+  @scala.inline
+  def apply(
+    acceleratorTypes: js.Array[AcceleratorType] = null,
+    warning: gapiDotClientDotComputeLib.Anon_Code = null
+  ): AcceleratorTypesScopedList = {
+    val __obj = js.Dynamic.literal()
+    if (acceleratorTypes != null) __obj.updateDynamic("acceleratorTypes")(acceleratorTypes)
+    if (warning != null) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[AcceleratorTypesScopedList]
+  }
+}
+

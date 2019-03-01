@@ -32,3 +32,24 @@ trait XDialogEventHandler
   def getSupportedMethodNames(): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XDialogEventHandler {
+  @scala.inline
+  def apply(
+    SupportedMethodNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    callHandlerMethod: js.Function3[XDialog, js.Any, java.lang.String, scala.Boolean],
+    getSupportedMethodNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDialogEventHandler = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SupportedMethodNames")(SupportedMethodNames)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("callHandlerMethod")(callHandlerMethod)
+    __obj.updateDynamic("getSupportedMethodNames")(getSupportedMethodNames)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDialogEventHandler]
+  }
+}
+

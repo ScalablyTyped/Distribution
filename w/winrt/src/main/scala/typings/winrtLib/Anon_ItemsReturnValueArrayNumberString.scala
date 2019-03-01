@@ -10,3 +10,13 @@ trait Anon_ItemsReturnValueArrayNumberString extends js.Object {
   var returnValue: scala.Double
 }
 
+object Anon_ItemsReturnValueArrayNumberString {
+  @scala.inline
+  def apply(items: js.Array[java.lang.String], returnValue: scala.Double): Anon_ItemsReturnValueArrayNumberString = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.asInstanceOf[Anon_ItemsReturnValueArrayNumberString]
+  }
+}
+

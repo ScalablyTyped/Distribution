@@ -22,3 +22,18 @@ trait AcceptOptions extends js.Object {
   var mimeTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object AcceptOptions {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    extensions: js.Array[java.lang.String] = null,
+    mimeTypes: js.Array[java.lang.String] = null
+  ): AcceptOptions = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (mimeTypes != null) __obj.updateDynamic("mimeTypes")(mimeTypes)
+    __obj.asInstanceOf[AcceptOptions]
+  }
+}
+

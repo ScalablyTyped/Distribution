@@ -16,3 +16,13 @@ trait ITier extends js.Object {
   var up_to: scala.Double
 }
 
+object ITier {
+  @scala.inline
+  def apply(amount: scala.Double, up_to: scala.Double): ITier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("up_to")(up_to)
+    __obj.asInstanceOf[ITier]
+  }
+}
+

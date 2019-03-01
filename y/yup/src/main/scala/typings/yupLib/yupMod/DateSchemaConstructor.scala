@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DateSchemaConstructor
-  extends org.scalablytyped.runtime.Instantiable0[DateSchema] {
+  extends AnySchemaConstructor
+     with org.scalablytyped.runtime.Instantiable0[DateSchema] {
   def apply(): DateSchema = js.native
 }
 

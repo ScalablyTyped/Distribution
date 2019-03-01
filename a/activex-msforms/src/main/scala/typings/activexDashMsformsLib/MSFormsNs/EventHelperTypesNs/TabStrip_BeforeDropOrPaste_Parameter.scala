@@ -16,3 +16,28 @@ trait TabStrip_BeforeDropOrPaste_Parameter extends js.Object {
   val Y: scala.Double
 }
 
+object TabStrip_BeforeDropOrPaste_Parameter {
+  @scala.inline
+  def apply(
+    Action: activexDashMsformsLib.MSFormsNs.fmAction,
+    Cancel: activexDashMsformsLib.MSFormsNs.ReturnBoolean,
+    Data: activexDashMsformsLib.MSFormsNs.DataObject,
+    Effect: activexDashMsformsLib.MSFormsNs.ReturnEffect,
+    Index: scala.Double,
+    Shift: scala.Double,
+    X: scala.Double,
+    Y: scala.Double
+  ): TabStrip_BeforeDropOrPaste_Parameter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Action")(Action)
+    __obj.updateDynamic("Cancel")(Cancel)
+    __obj.updateDynamic("Data")(Data)
+    __obj.updateDynamic("Effect")(Effect)
+    __obj.updateDynamic("Index")(Index)
+    __obj.updateDynamic("Shift")(Shift)
+    __obj.updateDynamic("X")(X)
+    __obj.updateDynamic("Y")(Y)
+    __obj.asInstanceOf[TabStrip_BeforeDropOrPaste_Parameter]
+  }
+}
+

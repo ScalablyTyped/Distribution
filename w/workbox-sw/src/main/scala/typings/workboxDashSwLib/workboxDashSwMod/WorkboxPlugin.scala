@@ -51,3 +51,28 @@ trait WorkboxPlugin extends js.Object {
   val requestWillFetch: js.UndefOr[js.Function1[/* context */ RequestWillFetchPluginContext, stdLib.Request]] = js.undefined
 }
 
+object WorkboxPlugin {
+  @scala.inline
+  def apply(
+    cacheDidUpdate: js.Function1[/* context */ CacheDidUpdatePluginContext, scala.Unit] = null,
+    cacheWillUpdate: js.Function1[
+      /* context */ CacheWillUpdatePluginContext, 
+      js.Promise[stdLib.Response] | stdLib.Response | scala.Null
+    ] = null,
+    cachedResponseWillBeUsed: js.Function1[
+      /* context */ CacheResponseWillBeUsedPluginContext, 
+      js.Promise[stdLib.Response] | stdLib.Response | scala.Null
+    ] = null,
+    fetchDidFail: js.Function1[/* context */ FetchDidFailPluginContext, scala.Unit] = null,
+    requestWillFetch: js.Function1[/* context */ RequestWillFetchPluginContext, stdLib.Request] = null
+  ): WorkboxPlugin = {
+    val __obj = js.Dynamic.literal()
+    if (cacheDidUpdate != null) __obj.updateDynamic("cacheDidUpdate")(cacheDidUpdate)
+    if (cacheWillUpdate != null) __obj.updateDynamic("cacheWillUpdate")(cacheWillUpdate)
+    if (cachedResponseWillBeUsed != null) __obj.updateDynamic("cachedResponseWillBeUsed")(cachedResponseWillBeUsed)
+    if (fetchDidFail != null) __obj.updateDynamic("fetchDidFail")(fetchDidFail)
+    if (requestWillFetch != null) __obj.updateDynamic("requestWillFetch")(requestWillFetch)
+    __obj.asInstanceOf[WorkboxPlugin]
+  }
+}
+

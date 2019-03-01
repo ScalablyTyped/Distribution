@@ -28,7 +28,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph
   */
-trait SeriesGraph extends js.Object {
+trait SeriesGraph extends Series {
   /**
     * Whether to enable animation.
     *
@@ -731,5 +731,128 @@ trait SeriesGraph extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-graph.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesGraph {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    bottom: scala.Double | java.lang.String = null,
+    calendarIndex: scala.Int | scala.Double = null,
+    categories: echartsLib.Anon_EmphasisItemStyle = null,
+    circular: echartsLib.Anon_RotateLabel = null,
+    coordinateSystem: java.lang.String = null,
+    cursor: java.lang.String = null,
+    data: js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesGraphNs.DataObject] = null,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    edgeLabel: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
+    edgeSymbol: js.Array[_] | java.lang.String = null,
+    edgeSymbolSize: js.Array[_] | scala.Double = null,
+    edges: js.Array[_] = null,
+    emphasis: echartsLib.Anon_EdgeLabel = null,
+    focusNodeAdjacency: js.UndefOr[scala.Boolean] = js.undefined,
+    force: echartsLib.Anon_EdgeLength = null,
+    geoIndex: scala.Int | scala.Double = null,
+    height: scala.Double | java.lang.String = null,
+    hoverAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidthColor = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
+    layout: java.lang.String = null,
+    left: scala.Double | java.lang.String = null,
+    legendHoverLink: js.UndefOr[scala.Boolean] = js.undefined,
+    lineStyle: echartsLib.Anon_ColorCurvenessOpacityShadowBlur = null,
+    links: echartsLib.Anon_EmphasisLabel = null,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelay = null,
+    markPoint: echartsLib.Anon_Animation = null,
+    name: java.lang.String = null,
+    nodeScaleRatio: scala.Int | scala.Double = null,
+    nodes: js.Array[_] = null,
+    polarIndex: scala.Int | scala.Double = null,
+    right: scala.Double | java.lang.String = null,
+    roam: scala.Boolean | java.lang.String = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    symbol: java.lang.String = null,
+    symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolOffset: js.Array[_] = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | js.Function | scala.Double = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    top: scala.Double | java.lang.String = null,
+    `type`: java.lang.String = null,
+    width: scala.Double | java.lang.String = null,
+    xAxisIndex: scala.Int | scala.Double = null,
+    yAxisIndex: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesGraph = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (calendarIndex != null) __obj.updateDynamic("calendarIndex")(calendarIndex.asInstanceOf[js.Any])
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (circular != null) __obj.updateDynamic("circular")(circular)
+    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (edgeLabel != null) __obj.updateDynamic("edgeLabel")(edgeLabel)
+    if (edgeSymbol != null) __obj.updateDynamic("edgeSymbol")(edgeSymbol.asInstanceOf[js.Any])
+    if (edgeSymbolSize != null) __obj.updateDynamic("edgeSymbolSize")(edgeSymbolSize.asInstanceOf[js.Any])
+    if (edges != null) __obj.updateDynamic("edges")(edges)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (!js.isUndefined(focusNodeAdjacency)) __obj.updateDynamic("focusNodeAdjacency")(focusNodeAdjacency)
+    if (force != null) __obj.updateDynamic("force")(force)
+    if (geoIndex != null) __obj.updateDynamic("geoIndex")(geoIndex.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink)
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (links != null) __obj.updateDynamic("links")(links)
+    if (markArea != null) __obj.updateDynamic("markArea")(markArea)
+    if (markLine != null) __obj.updateDynamic("markLine")(markLine)
+    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (nodeScaleRatio != null) __obj.updateDynamic("nodeScaleRatio")(nodeScaleRatio.asInstanceOf[js.Any])
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (polarIndex != null) __obj.updateDynamic("polarIndex")(polarIndex.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (roam != null) __obj.updateDynamic("roam")(roam.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
+    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesGraph]
+  }
 }
 

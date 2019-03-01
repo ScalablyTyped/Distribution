@@ -20,3 +20,20 @@ trait AjaxRequestSuccessEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AjaxRequestSuccessEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    responseData: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): AjaxRequestSuccessEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (responseData != null) __obj.updateDynamic("responseData")(responseData)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AjaxRequestSuccessEventArgs]
+  }
+}
+

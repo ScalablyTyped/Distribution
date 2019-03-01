@@ -292,3 +292,28 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SwitchProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    active: SwitchActiveProps = null,
+    id: java.lang.String = null,
+    inactive: SwitchInactiveProps = null,
+    input: SwitchInputProps = null,
+    paddle: SwitchPaddleProps = null,
+    size: reactDashFoundationLib.enumsMod.SwitchSizes = null
+  ): SwitchProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (active != null) __obj.updateDynamic("active")(active)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inactive != null) __obj.updateDynamic("inactive")(inactive)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (paddle != null) __obj.updateDynamic("paddle")(paddle)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[SwitchProps]
+  }
+}
+

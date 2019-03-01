@@ -17,3 +17,30 @@ trait ZoomableGroupProps extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ZoomableGroupProps {
+  @scala.inline
+  def apply(
+    backdrop: reactDashSimpleDashMapsLib.Anon_X = null,
+    center: Point = null,
+    disablePanning: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Int | scala.Double = null,
+    onMoveEnd: js.Function1[/* newCenter */ Point, scala.Unit] = null,
+    onMoveStart: js.Function1[/* currentCenter */ Point, scala.Unit] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    width: scala.Int | scala.Double = null,
+    zoom: scala.Int | scala.Double = null
+  ): ZoomableGroupProps = {
+    val __obj = js.Dynamic.literal()
+    if (backdrop != null) __obj.updateDynamic("backdrop")(backdrop)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (!js.isUndefined(disablePanning)) __obj.updateDynamic("disablePanning")(disablePanning)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (onMoveEnd != null) __obj.updateDynamic("onMoveEnd")(onMoveEnd)
+    if (onMoveStart != null) __obj.updateDynamic("onMoveStart")(onMoveStart)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ZoomableGroupProps]
+  }
+}
+

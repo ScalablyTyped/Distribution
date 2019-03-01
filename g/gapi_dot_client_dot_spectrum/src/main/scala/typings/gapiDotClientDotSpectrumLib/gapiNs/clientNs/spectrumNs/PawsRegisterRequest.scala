@@ -28,3 +28,24 @@ trait PawsRegisterRequest extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PawsRegisterRequest {
+  @scala.inline
+  def apply(
+    antenna: AntennaCharacteristics = null,
+    deviceDesc: DeviceDescriptor = null,
+    deviceOwner: DeviceOwner = null,
+    location: GeoLocation = null,
+    `type`: java.lang.String = null,
+    version: java.lang.String = null
+  ): PawsRegisterRequest = {
+    val __obj = js.Dynamic.literal()
+    if (antenna != null) __obj.updateDynamic("antenna")(antenna)
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
+    if (deviceOwner != null) __obj.updateDynamic("deviceOwner")(deviceOwner)
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[PawsRegisterRequest]
+  }
+}
+

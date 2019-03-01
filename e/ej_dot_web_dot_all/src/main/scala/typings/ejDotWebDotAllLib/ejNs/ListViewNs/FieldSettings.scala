@@ -47,3 +47,38 @@ trait FieldSettings extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FieldSettings {
+  @scala.inline
+  def apply(
+    attributes: js.Any = null,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    imageClass: java.lang.String = null,
+    imageUrl: java.lang.String = null,
+    mouseDown: java.lang.String = null,
+    mouseUP: java.lang.String = null,
+    navigateUrl: java.lang.String = null,
+    parentPrimaryKey: java.lang.String = null,
+    persistSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    preventSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    primaryKey: java.lang.String = null,
+    text: java.lang.String = null
+  ): FieldSettings = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (mouseDown != null) __obj.updateDynamic("mouseDown")(mouseDown)
+    if (mouseUP != null) __obj.updateDynamic("mouseUP")(mouseUP)
+    if (navigateUrl != null) __obj.updateDynamic("navigateUrl")(navigateUrl)
+    if (parentPrimaryKey != null) __obj.updateDynamic("parentPrimaryKey")(parentPrimaryKey)
+    if (!js.isUndefined(persistSelection)) __obj.updateDynamic("persistSelection")(persistSelection)
+    if (!js.isUndefined(preventSelection)) __obj.updateDynamic("preventSelection")(preventSelection)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[FieldSettings]
+  }
+}
+

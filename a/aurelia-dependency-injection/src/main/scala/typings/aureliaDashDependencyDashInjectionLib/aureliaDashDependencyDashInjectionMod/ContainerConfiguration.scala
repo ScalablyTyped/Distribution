@@ -13,3 +13,16 @@ trait ContainerConfiguration extends js.Object {
   var onHandlerCreated: js.UndefOr[js.Function1[/* handler */ InvocationHandler, InvocationHandler]] = js.undefined
 }
 
+object ContainerConfiguration {
+  @scala.inline
+  def apply(
+    handlers: stdLib.Map[_, _] = null,
+    onHandlerCreated: js.Function1[/* handler */ InvocationHandler, InvocationHandler] = null
+  ): ContainerConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (handlers != null) __obj.updateDynamic("handlers")(handlers)
+    if (onHandlerCreated != null) __obj.updateDynamic("onHandlerCreated")(onHandlerCreated)
+    __obj.asInstanceOf[ContainerConfiguration]
+  }
+}
+

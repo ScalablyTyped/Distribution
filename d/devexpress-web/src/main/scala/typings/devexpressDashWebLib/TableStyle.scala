@@ -16,3 +16,14 @@ trait TableStyle extends StyleBase {
   var parent: TableStyle
 }
 
+object TableStyle {
+  @scala.inline
+  def apply(isDeleted: scala.Boolean, name: java.lang.String, parent: TableStyle): TableStyle = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDeleted")(isDeleted)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[TableStyle]
+  }
+}
+

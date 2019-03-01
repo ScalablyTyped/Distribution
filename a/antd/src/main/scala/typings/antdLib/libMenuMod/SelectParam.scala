@@ -13,3 +13,22 @@ trait SelectParam extends js.Object {
   var selectedKeys: js.Array[java.lang.String]
 }
 
+object SelectParam {
+  @scala.inline
+  def apply(
+    domEvent: js.Any,
+    item: js.Any,
+    key: java.lang.String,
+    keyPath: js.Array[java.lang.String],
+    selectedKeys: js.Array[java.lang.String]
+  ): SelectParam = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domEvent")(domEvent)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("keyPath")(keyPath)
+    __obj.updateDynamic("selectedKeys")(selectedKeys)
+    __obj.asInstanceOf[SelectParam]
+  }
+}
+

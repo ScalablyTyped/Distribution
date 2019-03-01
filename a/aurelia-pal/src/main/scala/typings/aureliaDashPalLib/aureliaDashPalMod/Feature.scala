@@ -24,3 +24,20 @@ trait Feature extends js.Object {
   var shadowDOM: scala.Boolean
 }
 
+object Feature {
+  @scala.inline
+  def apply(
+    htmlTemplateElement: scala.Boolean,
+    mutationObserver: scala.Boolean,
+    scopedCSS: scala.Boolean,
+    shadowDOM: scala.Boolean
+  ): Feature = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("htmlTemplateElement")(htmlTemplateElement)
+    __obj.updateDynamic("mutationObserver")(mutationObserver)
+    __obj.updateDynamic("scopedCSS")(scopedCSS)
+    __obj.updateDynamic("shadowDOM")(shadowDOM)
+    __obj.asInstanceOf[Feature]
+  }
+}
+

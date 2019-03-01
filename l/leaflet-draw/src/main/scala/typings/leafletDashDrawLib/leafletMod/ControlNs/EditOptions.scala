@@ -31,3 +31,18 @@ trait EditOptions extends js.Object {
   ] = js.undefined
 }
 
+object EditOptions {
+  @scala.inline
+  def apply(
+    featureGroup: leafletLib.leafletMod.FeatureGroup[_],
+    edit: leafletDashDrawLib.leafletMod.DrawOptionsNs.EditHandlerOptions | leafletDashDrawLib.leafletDashDrawLibNumbers.`false` = null,
+    remove: leafletDashDrawLib.leafletMod.DrawOptionsNs.DeleteHandlerOptions | leafletDashDrawLib.leafletDashDrawLibNumbers.`false` = null
+  ): EditOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("featureGroup")(featureGroup)
+    if (edit != null) __obj.updateDynamic("edit")(edit.asInstanceOf[js.Any])
+    if (remove != null) __obj.updateDynamic("remove")(remove.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EditOptions]
+  }
+}
+

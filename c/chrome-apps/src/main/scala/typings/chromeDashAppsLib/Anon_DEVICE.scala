@@ -12,3 +12,20 @@ trait Anon_DEVICE extends js.Object {
   var OTHER: chromeDashAppsLib.chromeDashAppsLibStrings.other
 }
 
+object Anon_DEVICE {
+  @scala.inline
+  def apply(
+    DEVICE: chromeDashAppsLib.chromeDashAppsLibStrings.device,
+    ENDPOINT: chromeDashAppsLib.chromeDashAppsLibStrings.endpoint,
+    INTERFACE: chromeDashAppsLib.chromeDashAppsLibStrings.interface,
+    OTHER: chromeDashAppsLib.chromeDashAppsLibStrings.other
+  ): Anon_DEVICE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DEVICE")(DEVICE)
+    __obj.updateDynamic("ENDPOINT")(ENDPOINT)
+    __obj.updateDynamic("INTERFACE")(INTERFACE)
+    __obj.updateDynamic("OTHER")(OTHER)
+    __obj.asInstanceOf[Anon_DEVICE]
+  }
+}
+

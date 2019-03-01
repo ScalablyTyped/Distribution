@@ -139,3 +139,44 @@ trait RangeFormatData extends js.Object {
   var wrapText: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RangeFormatData {
+  @scala.inline
+  def apply(
+    autoIndent: js.UndefOr[scala.Boolean] = js.undefined,
+    borders: js.Array[RangeBorderData] = null,
+    columnWidth: scala.Int | scala.Double = null,
+    fill: RangeFillData = null,
+    font: RangeFontData = null,
+    horizontalAlignment: officeDashJsDashPreviewLib.ExcelNs.HorizontalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.General | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Fill | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CenterAcrossSelection | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed = null,
+    indentLevel: scala.Int | scala.Double = null,
+    protection: FormatProtectionData = null,
+    readingOrder: officeDashJsDashPreviewLib.ExcelNs.ReadingOrder | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Context | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LeftToRight | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RightToLeft = null,
+    rowHeight: scala.Int | scala.Double = null,
+    shrinkToFit: js.UndefOr[scala.Boolean] = js.undefined,
+    textOrientation: scala.Int | scala.Double = null,
+    useStandardHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    useStandardWidth: js.UndefOr[scala.Boolean] = js.undefined,
+    verticalAlignment: officeDashJsDashPreviewLib.ExcelNs.VerticalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Top | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed = null,
+    wrapText: js.UndefOr[scala.Boolean] = js.undefined
+  ): RangeFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoIndent)) __obj.updateDynamic("autoIndent")(autoIndent)
+    if (borders != null) __obj.updateDynamic("borders")(borders)
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (indentLevel != null) __obj.updateDynamic("indentLevel")(indentLevel.asInstanceOf[js.Any])
+    if (protection != null) __obj.updateDynamic("protection")(protection)
+    if (readingOrder != null) __obj.updateDynamic("readingOrder")(readingOrder.asInstanceOf[js.Any])
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(shrinkToFit)) __obj.updateDynamic("shrinkToFit")(shrinkToFit)
+    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
+    if (!js.isUndefined(useStandardHeight)) __obj.updateDynamic("useStandardHeight")(useStandardHeight)
+    if (!js.isUndefined(useStandardWidth)) __obj.updateDynamic("useStandardWidth")(useStandardWidth)
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (!js.isUndefined(wrapText)) __obj.updateDynamic("wrapText")(wrapText)
+    __obj.asInstanceOf[RangeFormatData]
+  }
+}
+

@@ -11,3 +11,18 @@ trait HostedFieldsStateObject extends js.Object {
   var fields: HostedFieldsFieldDataFields
 }
 
+object HostedFieldsStateObject {
+  @scala.inline
+  def apply(
+    cards: js.Array[HostedFieldsHostedFieldsCard],
+    emittedBy: HostedFieldsHostedFieldsFieldName,
+    fields: HostedFieldsFieldDataFields
+  ): HostedFieldsStateObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cards")(cards)
+    __obj.updateDynamic("emittedBy")(emittedBy)
+    __obj.updateDynamic("fields")(fields)
+    __obj.asInstanceOf[HostedFieldsStateObject]
+  }
+}
+

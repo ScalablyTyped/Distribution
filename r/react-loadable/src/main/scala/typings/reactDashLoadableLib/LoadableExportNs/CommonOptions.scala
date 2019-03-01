@@ -55,3 +55,22 @@ trait CommonOptions extends js.Object {
   var webpack: js.UndefOr[js.Function0[js.Array[scala.Double]]] = js.undefined
 }
 
+object CommonOptions {
+  @scala.inline
+  def apply(
+    loading: reactLib.reactMod.ReactNs.ComponentType[LoadingComponentProps] | js.Function0[scala.Null],
+    delay: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
+    modules: js.Array[java.lang.String] = null,
+    timeout: scala.Double | reactDashLoadableLib.reactDashLoadableLibNumbers.`false` = null,
+    webpack: js.Function0[js.Array[scala.Double]] = null
+  ): CommonOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("loading")(loading.asInstanceOf[js.Any])
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (modules != null) __obj.updateDynamic("modules")(modules)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (webpack != null) __obj.updateDynamic("webpack")(webpack)
+    __obj.asInstanceOf[CommonOptions]
+  }
+}
+

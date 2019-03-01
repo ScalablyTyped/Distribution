@@ -12,3 +12,12 @@ trait MovingDialogMoveUpButtonPressedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object MovingDialogMoveUpButtonPressedEventUIParam {
+  @scala.inline
+  def apply(owner: js.Any = null): MovingDialogMoveUpButtonPressedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[MovingDialogMoveUpButtonPressedEventUIParam]
+  }
+}
+

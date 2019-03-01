@@ -11,3 +11,18 @@ trait TransformableInfo
   var message: java.lang.String
 }
 
+object TransformableInfo {
+  @scala.inline
+  def apply(
+    level: java.lang.String,
+    message: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): TransformableInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("level")(level)
+    __obj.updateDynamic("message")(message)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[TransformableInfo]
+  }
+}
+

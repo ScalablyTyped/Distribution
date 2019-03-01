@@ -12,3 +12,16 @@ trait Anon_ExclusiveInside extends js.Object {
   ] = js.undefined
 }
 
+object Anon_ExclusiveInside {
+  @scala.inline
+  def apply(
+    exclusive: js.UndefOr[scala.Boolean] = js.undefined,
+    invalidate: atomLib.atomLibStrings.never | atomLib.atomLibStrings.surround | atomLib.atomLibStrings.overlap | atomLib.atomLibStrings.inside | atomLib.atomLibStrings.touch = null
+  ): Anon_ExclusiveInside = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(exclusive)) __obj.updateDynamic("exclusive")(exclusive)
+    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ExclusiveInside]
+  }
+}
+

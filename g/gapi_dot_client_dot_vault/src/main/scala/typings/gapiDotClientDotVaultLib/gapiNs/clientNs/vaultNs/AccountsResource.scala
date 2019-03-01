@@ -26,3 +26,27 @@ trait AccountsResource extends js.Object {
   def list(request: gapiDotClientDotVaultLib.Anon_Accesstoken): gapiDotClientLib.gapiNs.clientNs.Request[ListHeldAccountsResponse]
 }
 
+object AccountsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotVaultLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[HeldAccount]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotVaultLib.Anon_AccesstokenAccountId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    list: js.Function1[
+      gapiDotClientDotVaultLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListHeldAccountsResponse]
+    ]
+  ): AccountsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AccountsResource]
+  }
+}
+

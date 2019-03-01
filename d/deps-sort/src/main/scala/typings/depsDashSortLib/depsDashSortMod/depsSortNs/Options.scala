@@ -29,3 +29,20 @@ trait Options
   var index: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    StringDictionary: /* prop */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    dedupe: js.UndefOr[scala.Boolean] = js.undefined,
+    expose: js.Array[java.lang.String] | (org.scalablytyped.runtime.StringDictionary[scala.Boolean | java.lang.String]) = null,
+    index: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(dedupe)) __obj.updateDynamic("dedupe")(dedupe)
+    if (expose != null) __obj.updateDynamic("expose")(expose.asInstanceOf[js.Any])
+    if (!js.isUndefined(index)) __obj.updateDynamic("index")(index)
+    __obj.asInstanceOf[Options]
+  }
+}
+

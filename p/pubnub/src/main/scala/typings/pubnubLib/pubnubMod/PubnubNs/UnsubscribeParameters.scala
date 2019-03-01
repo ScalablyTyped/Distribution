@@ -11,3 +11,13 @@ trait UnsubscribeParameters extends js.Object {
   var channels: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object UnsubscribeParameters {
+  @scala.inline
+  def apply(channelGroups: js.Array[java.lang.String] = null, channels: js.Array[java.lang.String] = null): UnsubscribeParameters = {
+    val __obj = js.Dynamic.literal()
+    if (channelGroups != null) __obj.updateDynamic("channelGroups")(channelGroups)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    __obj.asInstanceOf[UnsubscribeParameters]
+  }
+}
+

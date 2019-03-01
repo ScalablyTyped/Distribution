@@ -12,3 +12,16 @@ trait BluetoothAdapterStateData extends ErrMsgResponse {
   var adapterState: BluetoothAdapterState
 }
 
+object BluetoothAdapterStateData {
+  @scala.inline
+  def apply(
+    adapterState: BluetoothAdapterState,
+    errMsg: weixinDashAppLib.weixinDashAppLibStrings.ok | java.lang.String
+  ): BluetoothAdapterStateData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adapterState")(adapterState)
+    __obj.updateDynamic("errMsg")(errMsg.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BluetoothAdapterStateData]
+  }
+}
+

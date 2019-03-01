@@ -22,3 +22,20 @@ trait GoogleCloudVideointelligenceV1beta1_VideoAnnotationProgress extends js.Obj
   var updateTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta1_VideoAnnotationProgress {
+  @scala.inline
+  def apply(
+    inputUri: java.lang.String = null,
+    progressPercent: scala.Int | scala.Double = null,
+    startTime: java.lang.String = null,
+    updateTime: java.lang.String = null
+  ): GoogleCloudVideointelligenceV1beta1_VideoAnnotationProgress = {
+    val __obj = js.Dynamic.literal()
+    if (inputUri != null) __obj.updateDynamic("inputUri")(inputUri)
+    if (progressPercent != null) __obj.updateDynamic("progressPercent")(progressPercent.asInstanceOf[js.Any])
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    if (updateTime != null) __obj.updateDynamic("updateTime")(updateTime)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_VideoAnnotationProgress]
+  }
+}
+

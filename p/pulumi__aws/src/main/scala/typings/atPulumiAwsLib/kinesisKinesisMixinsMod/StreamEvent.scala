@@ -9,3 +9,12 @@ trait StreamEvent extends js.Object {
   var Records: js.Array[StreamEventRecord]
 }
 
+object StreamEvent {
+  @scala.inline
+  def apply(Records: js.Array[StreamEventRecord]): StreamEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Records")(Records)
+    __obj.asInstanceOf[StreamEvent]
+  }
+}
+

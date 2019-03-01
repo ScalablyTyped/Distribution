@@ -41,3 +41,34 @@ trait ChooseCardConfig extends WxBaseRequestConfig {
   var timestamp: scala.Double
 }
 
+object ChooseCardConfig {
+  @scala.inline
+  def apply(
+    cardSign: java.lang.String,
+    nonceStr: java.lang.String,
+    signType: java.lang.String,
+    timestamp: scala.Double,
+    cancel: js.Function0[scala.Unit] = null,
+    cardId: java.lang.String = null,
+    cardType: java.lang.String = null,
+    complete: js.Function1[/* res */ js.UndefOr[js.Any], scala.Unit] = null,
+    fail: js.Function1[/* error */ js.UndefOr[js.Any], scala.Unit] = null,
+    shopId: java.lang.String = null,
+    success: js.Function1[/* res */ wxDashJsDashSdkDashDtLib.Anon_CardList, scala.Unit] = null
+  ): ChooseCardConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cardSign")(cardSign)
+    __obj.updateDynamic("nonceStr")(nonceStr)
+    __obj.updateDynamic("signType")(signType)
+    __obj.updateDynamic("timestamp")(timestamp)
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (cardId != null) __obj.updateDynamic("cardId")(cardId)
+    if (cardType != null) __obj.updateDynamic("cardType")(cardType)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (shopId != null) __obj.updateDynamic("shopId")(shopId)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[ChooseCardConfig]
+  }
+}
+

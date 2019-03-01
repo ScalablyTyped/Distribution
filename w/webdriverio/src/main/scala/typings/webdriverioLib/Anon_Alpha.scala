@@ -18,3 +18,26 @@ trait Anon_Alpha extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_Alpha {
+  @scala.inline
+  def apply(
+    string: java.lang.String,
+    alpha: scala.Int | scala.Double = null,
+    hex: java.lang.String = null,
+    rgba: java.lang.String = null,
+    `type`: java.lang.String = null,
+    unit: java.lang.String = null,
+    value: js.Any = null
+  ): Anon_Alpha = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("string")(string)
+    if (alpha != null) __obj.updateDynamic("alpha")(alpha.asInstanceOf[js.Any])
+    if (hex != null) __obj.updateDynamic("hex")(hex)
+    if (rgba != null) __obj.updateDynamic("rgba")(rgba)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Alpha]
+  }
+}
+

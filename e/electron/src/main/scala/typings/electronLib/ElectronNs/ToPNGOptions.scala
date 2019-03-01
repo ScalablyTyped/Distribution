@@ -12,3 +12,12 @@ trait ToPNGOptions extends js.Object {
   var scaleFactor: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ToPNGOptions {
+  @scala.inline
+  def apply(scaleFactor: scala.Int | scala.Double = null): ToPNGOptions = {
+    val __obj = js.Dynamic.literal()
+    if (scaleFactor != null) __obj.updateDynamic("scaleFactor")(scaleFactor.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ToPNGOptions]
+  }
+}
+

@@ -46,3 +46,26 @@ trait TimeoutOptions extends js.Object {
   var socket: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TimeoutOptions {
+  @scala.inline
+  def apply(
+    connect: scala.Int | scala.Double = null,
+    lookup: scala.Int | scala.Double = null,
+    request: scala.Int | scala.Double = null,
+    response: scala.Int | scala.Double = null,
+    secureConnect: scala.Int | scala.Double = null,
+    send: scala.Int | scala.Double = null,
+    socket: scala.Int | scala.Double = null
+  ): TimeoutOptions = {
+    val __obj = js.Dynamic.literal()
+    if (connect != null) __obj.updateDynamic("connect")(connect.asInstanceOf[js.Any])
+    if (lookup != null) __obj.updateDynamic("lookup")(lookup.asInstanceOf[js.Any])
+    if (request != null) __obj.updateDynamic("request")(request.asInstanceOf[js.Any])
+    if (response != null) __obj.updateDynamic("response")(response.asInstanceOf[js.Any])
+    if (secureConnect != null) __obj.updateDynamic("secureConnect")(secureConnect.asInstanceOf[js.Any])
+    if (send != null) __obj.updateDynamic("send")(send.asInstanceOf[js.Any])
+    if (socket != null) __obj.updateDynamic("socket")(socket.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TimeoutOptions]
+  }
+}
+

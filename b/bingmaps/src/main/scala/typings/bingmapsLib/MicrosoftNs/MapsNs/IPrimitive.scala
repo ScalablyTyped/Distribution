@@ -25,3 +25,20 @@ trait IPrimitive extends js.Object {
   def setOptions(options: IPrimitiveOptions): scala.Unit
 }
 
+object IPrimitive {
+  @scala.inline
+  def apply(
+    getCursor: js.Function0[java.lang.String],
+    getVisible: js.Function0[scala.Boolean],
+    setOptions: js.Function1[IPrimitiveOptions, scala.Unit],
+    metadata: js.Any = null
+  ): IPrimitive = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCursor")(getCursor)
+    __obj.updateDynamic("getVisible")(getVisible)
+    __obj.updateDynamic("setOptions")(setOptions)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    __obj.asInstanceOf[IPrimitive]
+  }
+}
+

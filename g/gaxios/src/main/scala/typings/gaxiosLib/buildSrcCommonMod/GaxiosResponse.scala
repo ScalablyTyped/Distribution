@@ -13,3 +13,22 @@ trait GaxiosResponse[T] extends js.Object {
   var statusText: java.lang.String
 }
 
+object GaxiosResponse {
+  @scala.inline
+  def apply[T](
+    config: GaxiosOptions,
+    data: T,
+    headers: Headers,
+    status: scala.Double,
+    statusText: java.lang.String
+  ): GaxiosResponse[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("statusText")(statusText)
+    __obj.asInstanceOf[GaxiosResponse[T]]
+  }
+}
+

@@ -15,3 +15,26 @@ trait Option extends js.Object {
   var short: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Option {
+  @scala.inline
+  def apply(
+    bool: scala.Boolean,
+    description: java.lang.String,
+    flags: java.lang.String,
+    long: java.lang.String,
+    optional: scala.Boolean,
+    required: scala.Boolean,
+    short: java.lang.String = null
+  ): Option = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bool")(bool)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("long")(long)
+    __obj.updateDynamic("optional")(optional)
+    __obj.updateDynamic("required")(required)
+    if (short != null) __obj.updateDynamic("short")(short)
+    __obj.asInstanceOf[Option]
+  }
+}
+

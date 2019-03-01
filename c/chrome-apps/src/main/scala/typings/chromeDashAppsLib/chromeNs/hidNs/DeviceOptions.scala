@@ -24,3 +24,18 @@ trait DeviceOptions extends js.Object {
   var vendorId: js.UndefOr[chromeDashAppsLib.chromeNs.deprecated] = js.undefined
 }
 
+object DeviceOptions {
+  @scala.inline
+  def apply(
+    filters: js.Array[DeviceFilter] = null,
+    productId: js.UndefOr[chromeDashAppsLib.chromeNs.deprecated] = js.undefined,
+    vendorId: js.UndefOr[chromeDashAppsLib.chromeNs.deprecated] = js.undefined
+  ): DeviceOptions = {
+    val __obj = js.Dynamic.literal()
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (!js.isUndefined(productId)) __obj.updateDynamic("productId")(productId)
+    if (!js.isUndefined(vendorId)) __obj.updateDynamic("vendorId")(vendorId)
+    __obj.asInstanceOf[DeviceOptions]
+  }
+}
+

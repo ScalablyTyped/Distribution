@@ -10,5 +10,4 @@ package object CollectionEventNs {
     /* event */ ecolLib.libBasicCollectionEventMod.CollectionEvent[T, SourceT, IteratorT, ReverseT], 
     scala.Unit
   ]
-  type Type = ecolLib.ecolLibStrings.insert | ecolLib.ecolLibStrings.erase | ecolLib.ecolLibStrings.refresh
 }

@@ -18,3 +18,14 @@ trait Anon_Circular extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Circular {
+  @scala.inline
+  def apply(
+    circular: scala.Boolean | jsonDashSchemaDashRefDashParserLib.jsonDashSchemaDashRefDashParserLibStrings.ignore = null
+  ): Anon_Circular = {
+    val __obj = js.Dynamic.literal()
+    if (circular != null) __obj.updateDynamic("circular")(circular.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Circular]
+  }
+}
+

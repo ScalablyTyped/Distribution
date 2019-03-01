@@ -12,3 +12,20 @@ trait DrawerHeaderAccountProps extends js.Object {
   var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_AccountContainer] = js.undefined
 }
 
+object DrawerHeaderAccountProps {
+  @scala.inline
+  def apply(
+    accounts: js.Array[reactDashNativeDashMaterialDashUiLib.Anon_Avatar] = null,
+    avatar: reactLib.reactMod.Global.JSXNs.Element = null,
+    footer: js.Object = null,
+    style: reactDashNativeDashMaterialDashUiLib.Anon_AccountContainer = null
+  ): DrawerHeaderAccountProps = {
+    val __obj = js.Dynamic.literal()
+    if (accounts != null) __obj.updateDynamic("accounts")(accounts)
+    if (avatar != null) __obj.updateDynamic("avatar")(avatar)
+    if (footer != null) __obj.updateDynamic("footer")(footer)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[DrawerHeaderAccountProps]
+  }
+}
+

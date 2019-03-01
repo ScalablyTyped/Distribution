@@ -11,3 +11,18 @@ trait TracingStartOptions extends js.Object {
   var screenshots: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TracingStartOptions {
+  @scala.inline
+  def apply(
+    path: java.lang.String,
+    categories: js.Array[java.lang.String] = null,
+    screenshots: js.UndefOr[scala.Boolean] = js.undefined
+  ): TracingStartOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("path")(path)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (!js.isUndefined(screenshots)) __obj.updateDynamic("screenshots")(screenshots)
+    __obj.asInstanceOf[TracingStartOptions]
+  }
+}
+

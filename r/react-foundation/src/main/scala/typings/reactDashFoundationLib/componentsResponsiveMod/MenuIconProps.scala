@@ -24,3 +24,16 @@ import scala.scalajs.js.annotation._
   var showOnlyFor: js.UndefOr[reactDashFoundationLib.enumsMod.Breakpoints] = js.undefined
 }
 
+object MenuIconProps {
+  @scala.inline
+  def apply(
+    ButtonHTMLAttributes: reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement] = null,
+    GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null
+  ): MenuIconProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ButtonHTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, GeneralPropTypes)
+    __obj.asInstanceOf[MenuIconProps]
+  }
+}
+

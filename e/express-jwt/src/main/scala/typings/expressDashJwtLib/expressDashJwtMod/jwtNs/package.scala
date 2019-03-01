@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object jwtNs {
-  type ErrorCode = expressDashJwtLib.expressDashJwtLibStrings.revoked_token | expressDashJwtLib.expressDashJwtLibStrings.invalid_token | expressDashJwtLib.expressDashJwtLibStrings.credentials_bad_scheme | expressDashJwtLib.expressDashJwtLibStrings.credentials_bad_format | expressDashJwtLib.expressDashJwtLibStrings.credentials_required
   type GetTokenCallback = js.Function1[/* req */ expressLib.expressMod.eNs.Request, js.Any]
   type IsRevokedCallback = js.Function3[
     /* req */ expressLib.expressMod.eNs.Request, 

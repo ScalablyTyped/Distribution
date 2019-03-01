@@ -12,3 +12,22 @@ trait LocationsResource extends js.Object {
   def list(request: gapiDotClientDotMirrorLib.Anon_AltFields): gapiDotClientLib.gapiNs.clientNs.Request[LocationsListResponse]
 }
 
+object LocationsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Location]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[LocationsListResponse]
+    ]
+  ): LocationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[LocationsResource]
+  }
+}
+

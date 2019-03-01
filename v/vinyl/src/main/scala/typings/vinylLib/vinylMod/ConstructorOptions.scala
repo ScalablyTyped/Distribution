@@ -43,3 +43,29 @@ trait ConstructorOptions
   var stat: js.UndefOr[nodeLib.fsMod.Stats] = js.undefined
 }
 
+object ConstructorOptions {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Any custom option properties will be directly assigned to the new Vinyl object.
+    */
+  /* customOption */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    base: java.lang.String = null,
+    contents: nodeLib.Buffer | nodeLib.NodeJSNs.ReadableStream = null,
+    cwd: java.lang.String = null,
+    history: js.Array[java.lang.String] = null,
+    path: java.lang.String = null,
+    stat: nodeLib.fsMod.Stats = null
+  ): ConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (contents != null) __obj.updateDynamic("contents")(contents.asInstanceOf[js.Any])
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (history != null) __obj.updateDynamic("history")(history)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (stat != null) __obj.updateDynamic("stat")(stat)
+    __obj.asInstanceOf[ConstructorOptions]
+  }
+}
+

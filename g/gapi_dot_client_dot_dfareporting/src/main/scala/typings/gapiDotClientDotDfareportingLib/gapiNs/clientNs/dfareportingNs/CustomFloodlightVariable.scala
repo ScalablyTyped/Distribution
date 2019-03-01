@@ -14,3 +14,14 @@ trait CustomFloodlightVariable extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomFloodlightVariable {
+  @scala.inline
+  def apply(kind: java.lang.String = null, `type`: java.lang.String = null, value: java.lang.String = null): CustomFloodlightVariable = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[CustomFloodlightVariable]
+  }
+}
+

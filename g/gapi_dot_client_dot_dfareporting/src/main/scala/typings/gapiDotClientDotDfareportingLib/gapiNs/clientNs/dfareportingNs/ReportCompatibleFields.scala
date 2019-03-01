@@ -18,3 +18,22 @@ trait ReportCompatibleFields extends js.Object {
   var pivotedActivityMetrics: js.UndefOr[js.Array[Metric]] = js.undefined
 }
 
+object ReportCompatibleFields {
+  @scala.inline
+  def apply(
+    dimensionFilters: js.Array[Dimension] = null,
+    dimensions: js.Array[Dimension] = null,
+    kind: java.lang.String = null,
+    metrics: js.Array[Metric] = null,
+    pivotedActivityMetrics: js.Array[Metric] = null
+  ): ReportCompatibleFields = {
+    val __obj = js.Dynamic.literal()
+    if (dimensionFilters != null) __obj.updateDynamic("dimensionFilters")(dimensionFilters)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (pivotedActivityMetrics != null) __obj.updateDynamic("pivotedActivityMetrics")(pivotedActivityMetrics)
+    __obj.asInstanceOf[ReportCompatibleFields]
+  }
+}
+

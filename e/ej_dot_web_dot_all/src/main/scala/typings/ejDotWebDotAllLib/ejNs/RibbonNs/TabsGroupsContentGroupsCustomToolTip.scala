@@ -20,3 +20,18 @@ trait TabsGroupsContentGroupsCustomToolTip extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabsGroupsContentGroupsCustomToolTip {
+  @scala.inline
+  def apply(
+    content: java.lang.String = null,
+    prefixIcon: java.lang.String = null,
+    title: java.lang.String = null
+  ): TabsGroupsContentGroupsCustomToolTip = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content)
+    if (prefixIcon != null) __obj.updateDynamic("prefixIcon")(prefixIcon)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[TabsGroupsContentGroupsCustomToolTip]
+  }
+}
+

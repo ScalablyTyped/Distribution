@@ -14,3 +14,18 @@ trait MetagameConfig extends js.Object {
   var playerLevels: js.UndefOr[js.Array[PlayerLevel]] = js.undefined
 }
 
+object MetagameConfig {
+  @scala.inline
+  def apply(
+    currentVersion: scala.Int | scala.Double = null,
+    kind: java.lang.String = null,
+    playerLevels: js.Array[PlayerLevel] = null
+  ): MetagameConfig = {
+    val __obj = js.Dynamic.literal()
+    if (currentVersion != null) __obj.updateDynamic("currentVersion")(currentVersion.asInstanceOf[js.Any])
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (playerLevels != null) __obj.updateDynamic("playerLevels")(playerLevels)
+    __obj.asInstanceOf[MetagameConfig]
+  }
+}
+

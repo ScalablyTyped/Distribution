@@ -15,3 +15,22 @@ trait LinearGradientProps extends js.Object {
   ] = js.undefined
 }
 
+object LinearGradientProps {
+  @scala.inline
+  def apply(
+    colors: js.Array[java.lang.String],
+    end: js.Tuple2[scala.Double, scala.Double] = null,
+    locations: js.Array[scala.Double] = null,
+    start: js.Tuple2[scala.Double, scala.Double] = null,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null
+  ): LinearGradientProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("colors")(colors)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (start != null) __obj.updateDynamic("start")(start)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LinearGradientProps]
+  }
+}
+

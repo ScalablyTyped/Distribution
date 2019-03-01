@@ -22,3 +22,24 @@ trait XMasterPageTarget
   def setMasterPage(xMasterPage: XDrawPage): scala.Unit
 }
 
+object XMasterPageTarget {
+  @scala.inline
+  def apply(
+    MasterPage: XDrawPage,
+    acquire: js.Function0[scala.Unit],
+    getMasterPage: js.Function0[XDrawPage],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setMasterPage: js.Function1[XDrawPage, scala.Unit]
+  ): XMasterPageTarget = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("MasterPage")(MasterPage)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getMasterPage")(getMasterPage)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setMasterPage")(setMasterPage)
+    __obj.asInstanceOf[XMasterPageTarget]
+  }
+}
+

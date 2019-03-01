@@ -34,3 +34,24 @@ trait Options[T /* <: js.Thenable[scala.Unit] */] extends js.Object {
   var writeStreamAtomic: js.UndefOr[js.Any] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[T /* <: js.Thenable[scala.Unit] */](
+    Promise: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T] = null,
+    fs: js.Any = null,
+    getuid: js.Any = null,
+    isWindows: js.UndefOr[scala.Boolean] = js.undefined,
+    maxConcurrency: scala.Int | scala.Double = null,
+    writeStreamAtomic: js.Any = null
+  ): Options[T] = {
+    val __obj = js.Dynamic.literal()
+    if (Promise != null) __obj.updateDynamic("Promise")(Promise)
+    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (getuid != null) __obj.updateDynamic("getuid")(getuid)
+    if (!js.isUndefined(isWindows)) __obj.updateDynamic("isWindows")(isWindows)
+    if (maxConcurrency != null) __obj.updateDynamic("maxConcurrency")(maxConcurrency.asInstanceOf[js.Any])
+    if (writeStreamAtomic != null) __obj.updateDynamic("writeStreamAtomic")(writeStreamAtomic)
+    __obj.asInstanceOf[Options[T]]
+  }
+}
+

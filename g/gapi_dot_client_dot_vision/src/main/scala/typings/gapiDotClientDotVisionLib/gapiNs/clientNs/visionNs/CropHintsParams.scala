@@ -17,3 +17,12 @@ trait CropHintsParams extends js.Object {
   var aspectRatios: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object CropHintsParams {
+  @scala.inline
+  def apply(aspectRatios: js.Array[scala.Double] = null): CropHintsParams = {
+    val __obj = js.Dynamic.literal()
+    if (aspectRatios != null) __obj.updateDynamic("aspectRatios")(aspectRatios)
+    __obj.asInstanceOf[CropHintsParams]
+  }
+}
+

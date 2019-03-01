@@ -11,3 +11,18 @@ trait Anon_AlwaysShowFocus extends js.Object {
   def onlyShowFocusOnTabs(): scala.Boolean | scala.Unit
 }
 
+object Anon_AlwaysShowFocus {
+  @scala.inline
+  def apply(
+    alwaysShowFocus: js.Function0[scala.Boolean | scala.Unit],
+    isActive: js.Function0[scala.Boolean],
+    onlyShowFocusOnTabs: js.Function0[scala.Boolean | scala.Unit]
+  ): Anon_AlwaysShowFocus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alwaysShowFocus")(alwaysShowFocus)
+    __obj.updateDynamic("isActive")(isActive)
+    __obj.updateDynamic("onlyShowFocusOnTabs")(onlyShowFocusOnTabs)
+    __obj.asInstanceOf[Anon_AlwaysShowFocus]
+  }
+}
+

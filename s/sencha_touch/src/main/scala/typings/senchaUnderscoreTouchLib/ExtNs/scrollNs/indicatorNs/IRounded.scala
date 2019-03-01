@@ -18,3 +18,20 @@ trait IRounded extends IAbstract {
   var setCls_IRounded: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], scala.Unit]] = js.undefined
 }
 
+object IRounded {
+  @scala.inline
+  def apply(
+    IAbstract: IAbstract = null,
+    cls: js.Any = null,
+    getCls: js.Function0[java.lang.String] = null,
+    setCls: js.Function1[/* cls */ js.UndefOr[java.lang.String], scala.Unit] = null
+  ): IRounded = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IAbstract)
+    if (cls != null) __obj.updateDynamic("cls")(cls)
+    if (getCls != null) __obj.updateDynamic("getCls")(getCls)
+    if (setCls != null) __obj.updateDynamic("setCls")(setCls)
+    __obj.asInstanceOf[IRounded]
+  }
+}
+

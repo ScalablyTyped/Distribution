@@ -1,0 +1,20 @@
+package typings
+package arcgisDashJsDashApiLib.underscoreUnderscoreEsriNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait PopupViewModelTriggerActionEvent extends js.Object {
+  var action: ActionButton | ActionToggle
+}
+
+object PopupViewModelTriggerActionEvent {
+  @scala.inline
+  def apply(action: ActionButton | ActionToggle): PopupViewModelTriggerActionEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PopupViewModelTriggerActionEvent]
+  }
+}
+

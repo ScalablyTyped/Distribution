@@ -12,3 +12,20 @@ trait UserVoiceSettings extends js.Object {
   var volume: js.UndefOr[scala.Double] = js.undefined
 }
 
+object UserVoiceSettings {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    mute: js.UndefOr[scala.Boolean] = js.undefined,
+    pan: discordDashRpcLib.Anon_Left = null,
+    volume: scala.Int | scala.Double = null
+  ): UserVoiceSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(mute)) __obj.updateDynamic("mute")(mute)
+    if (pan != null) __obj.updateDynamic("pan")(pan)
+    if (volume != null) __obj.updateDynamic("volume")(volume.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserVoiceSettings]
+  }
+}
+

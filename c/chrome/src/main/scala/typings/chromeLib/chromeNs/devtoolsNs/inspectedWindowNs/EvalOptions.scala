@@ -14,3 +14,18 @@ trait EvalOptions extends js.Object {
   var useContentScriptContext: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object EvalOptions {
+  @scala.inline
+  def apply(
+    contextSecurityOrigin: java.lang.String = null,
+    frameURL: java.lang.String = null,
+    useContentScriptContext: js.UndefOr[scala.Boolean] = js.undefined
+  ): EvalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (contextSecurityOrigin != null) __obj.updateDynamic("contextSecurityOrigin")(contextSecurityOrigin)
+    if (frameURL != null) __obj.updateDynamic("frameURL")(frameURL)
+    if (!js.isUndefined(useContentScriptContext)) __obj.updateDynamic("useContentScriptContext")(useContentScriptContext)
+    __obj.asInstanceOf[EvalOptions]
+  }
+}
+

@@ -28,3 +28,24 @@ trait NonComplianceDetail extends js.Object {
   var settingName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NonComplianceDetail {
+  @scala.inline
+  def apply(
+    currentValue: js.Any = null,
+    fieldPath: java.lang.String = null,
+    installationFailureReason: java.lang.String = null,
+    nonComplianceReason: java.lang.String = null,
+    packageName: java.lang.String = null,
+    settingName: java.lang.String = null
+  ): NonComplianceDetail = {
+    val __obj = js.Dynamic.literal()
+    if (currentValue != null) __obj.updateDynamic("currentValue")(currentValue)
+    if (fieldPath != null) __obj.updateDynamic("fieldPath")(fieldPath)
+    if (installationFailureReason != null) __obj.updateDynamic("installationFailureReason")(installationFailureReason)
+    if (nonComplianceReason != null) __obj.updateDynamic("nonComplianceReason")(nonComplianceReason)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
+    if (settingName != null) __obj.updateDynamic("settingName")(settingName)
+    __obj.asInstanceOf[NonComplianceDetail]
+  }
+}
+

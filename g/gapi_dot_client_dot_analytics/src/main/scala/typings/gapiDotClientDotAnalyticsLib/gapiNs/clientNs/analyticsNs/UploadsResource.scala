@@ -16,3 +16,32 @@ trait UploadsResource extends js.Object {
   def uploadData(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceId): gapiDotClientLib.gapiNs.clientNs.Request[Upload]
 }
 
+object UploadsResource {
+  @scala.inline
+  def apply(
+    deleteUploadData: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Upload]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceIdFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Uploads]
+    ],
+    uploadData: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltCustomDataSourceId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Upload]
+    ]
+  ): UploadsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deleteUploadData")(deleteUploadData)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("uploadData")(uploadData)
+    __obj.asInstanceOf[UploadsResource]
+  }
+}
+

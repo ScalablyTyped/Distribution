@@ -9,3 +9,12 @@ trait Array[T] extends js.Object {
   var should: chaiDashArraysLib.chaiDashArraysMod.Global.ChaiNs.Assertion
 }
 
+object Array {
+  @scala.inline
+  def apply[T](should: chaiDashArraysLib.chaiDashArraysMod.Global.ChaiNs.Assertion): Array[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("should")(should)
+    __obj.asInstanceOf[Array[T]]
+  }
+}
+

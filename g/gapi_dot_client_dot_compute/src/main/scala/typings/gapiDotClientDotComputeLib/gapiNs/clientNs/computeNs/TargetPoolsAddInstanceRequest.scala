@@ -15,3 +15,12 @@ trait TargetPoolsAddInstanceRequest extends js.Object {
   var instances: js.UndefOr[js.Array[InstanceReference]] = js.undefined
 }
 
+object TargetPoolsAddInstanceRequest {
+  @scala.inline
+  def apply(instances: js.Array[InstanceReference] = null): TargetPoolsAddInstanceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (instances != null) __obj.updateDynamic("instances")(instances)
+    __obj.asInstanceOf[TargetPoolsAddInstanceRequest]
+  }
+}
+

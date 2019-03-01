@@ -9,3 +9,12 @@ trait NearestResults extends js.Object {
   var waypoints: js.Array[Waypoint]
 }
 
+object NearestResults {
+  @scala.inline
+  def apply(waypoints: js.Array[Waypoint]): NearestResults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("waypoints")(waypoints)
+    __obj.asInstanceOf[NearestResults]
+  }
+}
+

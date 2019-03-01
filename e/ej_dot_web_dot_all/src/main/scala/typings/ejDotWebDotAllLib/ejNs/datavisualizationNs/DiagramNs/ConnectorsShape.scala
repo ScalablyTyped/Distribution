@@ -40,3 +40,28 @@ trait ConnectorsShape extends js.Object {
   var `type`: js.UndefOr[ConnectorShapes | java.lang.String] = js.undefined
 }
 
+object ConnectorsShape {
+  @scala.inline
+  def apply(
+    ActivityFlow: UMLActivityFlow | java.lang.String = null,
+    association: AssociationFlows | java.lang.String = null,
+    flow: BPMNFlows | java.lang.String = null,
+    message: BPMNMessageFlows | java.lang.String = null,
+    multiplicity: ConnectorsShapeMultiplicity = null,
+    relationship: ClassifierShapes | java.lang.String = null,
+    sequence: BPMNSequenceFlows | java.lang.String = null,
+    `type`: ConnectorShapes | java.lang.String = null
+  ): ConnectorsShape = {
+    val __obj = js.Dynamic.literal()
+    if (ActivityFlow != null) __obj.updateDynamic("ActivityFlow")(ActivityFlow.asInstanceOf[js.Any])
+    if (association != null) __obj.updateDynamic("association")(association.asInstanceOf[js.Any])
+    if (flow != null) __obj.updateDynamic("flow")(flow.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (multiplicity != null) __obj.updateDynamic("multiplicity")(multiplicity)
+    if (relationship != null) __obj.updateDynamic("relationship")(relationship.asInstanceOf[js.Any])
+    if (sequence != null) __obj.updateDynamic("sequence")(sequence.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectorsShape]
+  }
+}
+

@@ -15,3 +15,12 @@ trait IBookmarkList extends js.Object {
   var qItems: js.Array[IGenericBookmarkLayout]
 }
 
+object IBookmarkList {
+  @scala.inline
+  def apply(qItems: js.Array[IGenericBookmarkLayout]): IBookmarkList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qItems")(qItems)
+    __obj.asInstanceOf[IBookmarkList]
+  }
+}
+

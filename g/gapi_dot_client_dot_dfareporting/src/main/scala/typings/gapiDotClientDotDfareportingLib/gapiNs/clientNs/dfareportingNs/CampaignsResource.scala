@@ -18,3 +18,37 @@ trait CampaignsResource extends js.Object {
   def update(request: gapiDotClientDotDfareportingLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
 }
 
+object CampaignsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltDefaultLandingPageName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AdvertiserGroupIdsAdvertiserIds, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CampaignsListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
+    ],
+    update: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Campaign]
+    ]
+  ): CampaignsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[CampaignsResource]
+  }
+}
+

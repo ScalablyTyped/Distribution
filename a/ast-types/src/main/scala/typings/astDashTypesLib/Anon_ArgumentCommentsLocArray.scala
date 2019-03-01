@@ -11,3 +11,18 @@ trait Anon_ArgumentCommentsLocArray extends js.Object {
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
 }
 
+object Anon_ArgumentCommentsLocArray {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.PatternKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_ArgumentCommentsLocArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("argument")(argument)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_ArgumentCommentsLocArray]
+  }
+}
+

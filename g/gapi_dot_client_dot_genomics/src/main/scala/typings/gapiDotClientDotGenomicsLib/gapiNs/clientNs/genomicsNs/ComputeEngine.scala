@@ -16,3 +16,20 @@ trait ComputeEngine extends js.Object {
   var zone: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ComputeEngine {
+  @scala.inline
+  def apply(
+    diskNames: js.Array[java.lang.String] = null,
+    instanceName: java.lang.String = null,
+    machineType: java.lang.String = null,
+    zone: java.lang.String = null
+  ): ComputeEngine = {
+    val __obj = js.Dynamic.literal()
+    if (diskNames != null) __obj.updateDynamic("diskNames")(diskNames)
+    if (instanceName != null) __obj.updateDynamic("instanceName")(instanceName)
+    if (machineType != null) __obj.updateDynamic("machineType")(machineType)
+    if (zone != null) __obj.updateDynamic("zone")(zone)
+    __obj.asInstanceOf[ComputeEngine]
+  }
+}
+

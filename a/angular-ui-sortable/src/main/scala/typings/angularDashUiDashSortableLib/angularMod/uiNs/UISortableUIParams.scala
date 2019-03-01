@@ -10,3 +10,12 @@ import scala.scalajs.js.annotation._
   var item: UISortableUIItem[T]
 }
 
+object UISortableUIParams {
+  @scala.inline
+  def apply[T](item: UISortableUIItem[T]): UISortableUIParams[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[UISortableUIParams[T]]
+  }
+}
+

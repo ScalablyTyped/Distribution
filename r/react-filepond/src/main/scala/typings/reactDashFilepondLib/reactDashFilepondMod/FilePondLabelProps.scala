@@ -60,3 +60,54 @@ trait FilePondLabelProps extends js.Object {
   var labelThousandsSeparator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FilePondLabelProps {
+  @scala.inline
+  def apply(
+    labelButtonAbortItemLoad: java.lang.String = null,
+    labelButtonAbortItemProcessing: java.lang.String = null,
+    labelButtonProcessItem: java.lang.String = null,
+    labelButtonRemoveItem: java.lang.String = null,
+    labelButtonRetryItemLoad: java.lang.String = null,
+    labelButtonRetryItemProcessing: java.lang.String = null,
+    labelButtonUndoItemProcessing: java.lang.String = null,
+    labelDecimalSeparator: java.lang.String = null,
+    labelFileLoadError: java.lang.String = null,
+    labelFileLoading: java.lang.String = null,
+    labelFileProcessing: java.lang.String = null,
+    labelFileProcessingAborted: java.lang.String = null,
+    labelFileProcessingComplete: java.lang.String = null,
+    labelFileProcessingError: java.lang.String = null,
+    labelFileSizeNotAvailable: java.lang.String = null,
+    labelFileWaitingForSize: java.lang.String = null,
+    labelIdle: java.lang.String = null,
+    labelTapToCancel: java.lang.String = null,
+    labelTapToRetry: java.lang.String = null,
+    labelTapToUndo: java.lang.String = null,
+    labelThousandsSeparator: java.lang.String = null
+  ): FilePondLabelProps = {
+    val __obj = js.Dynamic.literal()
+    if (labelButtonAbortItemLoad != null) __obj.updateDynamic("labelButtonAbortItemLoad")(labelButtonAbortItemLoad)
+    if (labelButtonAbortItemProcessing != null) __obj.updateDynamic("labelButtonAbortItemProcessing")(labelButtonAbortItemProcessing)
+    if (labelButtonProcessItem != null) __obj.updateDynamic("labelButtonProcessItem")(labelButtonProcessItem)
+    if (labelButtonRemoveItem != null) __obj.updateDynamic("labelButtonRemoveItem")(labelButtonRemoveItem)
+    if (labelButtonRetryItemLoad != null) __obj.updateDynamic("labelButtonRetryItemLoad")(labelButtonRetryItemLoad)
+    if (labelButtonRetryItemProcessing != null) __obj.updateDynamic("labelButtonRetryItemProcessing")(labelButtonRetryItemProcessing)
+    if (labelButtonUndoItemProcessing != null) __obj.updateDynamic("labelButtonUndoItemProcessing")(labelButtonUndoItemProcessing)
+    if (labelDecimalSeparator != null) __obj.updateDynamic("labelDecimalSeparator")(labelDecimalSeparator)
+    if (labelFileLoadError != null) __obj.updateDynamic("labelFileLoadError")(labelFileLoadError)
+    if (labelFileLoading != null) __obj.updateDynamic("labelFileLoading")(labelFileLoading)
+    if (labelFileProcessing != null) __obj.updateDynamic("labelFileProcessing")(labelFileProcessing)
+    if (labelFileProcessingAborted != null) __obj.updateDynamic("labelFileProcessingAborted")(labelFileProcessingAborted)
+    if (labelFileProcessingComplete != null) __obj.updateDynamic("labelFileProcessingComplete")(labelFileProcessingComplete)
+    if (labelFileProcessingError != null) __obj.updateDynamic("labelFileProcessingError")(labelFileProcessingError)
+    if (labelFileSizeNotAvailable != null) __obj.updateDynamic("labelFileSizeNotAvailable")(labelFileSizeNotAvailable)
+    if (labelFileWaitingForSize != null) __obj.updateDynamic("labelFileWaitingForSize")(labelFileWaitingForSize)
+    if (labelIdle != null) __obj.updateDynamic("labelIdle")(labelIdle)
+    if (labelTapToCancel != null) __obj.updateDynamic("labelTapToCancel")(labelTapToCancel)
+    if (labelTapToRetry != null) __obj.updateDynamic("labelTapToRetry")(labelTapToRetry)
+    if (labelTapToUndo != null) __obj.updateDynamic("labelTapToUndo")(labelTapToUndo)
+    if (labelThousandsSeparator != null) __obj.updateDynamic("labelThousandsSeparator")(labelThousandsSeparator)
+    __obj.asInstanceOf[FilePondLabelProps]
+  }
+}
+

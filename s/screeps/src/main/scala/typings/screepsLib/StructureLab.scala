@@ -9,7 +9,9 @@ import scala.scalajs.js.annotation._
   * Produces mineral compounds from base minerals and boosts creeps.
   */
 @js.native
-trait StructureLab extends OwnedStructure[STRUCTURE_LAB] {
+trait StructureLab
+  extends OwnedStructure[STRUCTURE_LAB]
+     with AnyOwnedStructure {
   /**
     * The amount of game ticks the lab has to wait until the next reaction is possible.
     */

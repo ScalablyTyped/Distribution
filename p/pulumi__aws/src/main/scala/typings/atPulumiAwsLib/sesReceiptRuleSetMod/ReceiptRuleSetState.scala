@@ -12,3 +12,12 @@ trait ReceiptRuleSetState extends js.Object {
   val ruleSetName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ReceiptRuleSetState {
+  @scala.inline
+  def apply(ruleSetName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null): ReceiptRuleSetState = {
+    val __obj = js.Dynamic.literal()
+    if (ruleSetName != null) __obj.updateDynamic("ruleSetName")(ruleSetName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ReceiptRuleSetState]
+  }
+}
+

@@ -13,3 +13,12 @@ trait LogGroupEventSubscriptionArgs extends js.Object {
   var filterPattern: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LogGroupEventSubscriptionArgs {
+  @scala.inline
+  def apply(filterPattern: java.lang.String = null): LogGroupEventSubscriptionArgs = {
+    val __obj = js.Dynamic.literal()
+    if (filterPattern != null) __obj.updateDynamic("filterPattern")(filterPattern)
+    __obj.asInstanceOf[LogGroupEventSubscriptionArgs]
+  }
+}
+

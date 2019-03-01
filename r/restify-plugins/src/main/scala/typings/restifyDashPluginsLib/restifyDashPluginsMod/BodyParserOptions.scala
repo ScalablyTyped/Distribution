@@ -62,3 +62,38 @@ trait BodyParserOptions extends js.Object {
   var uploadDir: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BodyParserOptions {
+  @scala.inline
+  def apply(
+    hash: java.lang.String = null,
+    keepExtensions: js.UndefOr[scala.Boolean] = js.undefined,
+    mapFiles: js.UndefOr[scala.Boolean] = js.undefined,
+    mapParams: js.UndefOr[scala.Boolean] = js.undefined,
+    maxBodySize: scala.Int | scala.Double = null,
+    maxFieldsSize: scala.Int | scala.Double = null,
+    multipartFileHandler: js.Function0[scala.Unit] = null,
+    multipartHandler: js.Function0[scala.Unit] = null,
+    multiples: js.UndefOr[scala.Boolean] = js.undefined,
+    overrideParams: js.UndefOr[scala.Boolean] = js.undefined,
+    rejectUnknown: js.UndefOr[scala.Boolean] = js.undefined,
+    reviver: js.Any = null,
+    uploadDir: java.lang.String = null
+  ): BodyParserOptions = {
+    val __obj = js.Dynamic.literal()
+    if (hash != null) __obj.updateDynamic("hash")(hash)
+    if (!js.isUndefined(keepExtensions)) __obj.updateDynamic("keepExtensions")(keepExtensions)
+    if (!js.isUndefined(mapFiles)) __obj.updateDynamic("mapFiles")(mapFiles)
+    if (!js.isUndefined(mapParams)) __obj.updateDynamic("mapParams")(mapParams)
+    if (maxBodySize != null) __obj.updateDynamic("maxBodySize")(maxBodySize.asInstanceOf[js.Any])
+    if (maxFieldsSize != null) __obj.updateDynamic("maxFieldsSize")(maxFieldsSize.asInstanceOf[js.Any])
+    if (multipartFileHandler != null) __obj.updateDynamic("multipartFileHandler")(multipartFileHandler)
+    if (multipartHandler != null) __obj.updateDynamic("multipartHandler")(multipartHandler)
+    if (!js.isUndefined(multiples)) __obj.updateDynamic("multiples")(multiples)
+    if (!js.isUndefined(overrideParams)) __obj.updateDynamic("overrideParams")(overrideParams)
+    if (!js.isUndefined(rejectUnknown)) __obj.updateDynamic("rejectUnknown")(rejectUnknown)
+    if (reviver != null) __obj.updateDynamic("reviver")(reviver)
+    if (uploadDir != null) __obj.updateDynamic("uploadDir")(uploadDir)
+    __obj.asInstanceOf[BodyParserOptions]
+  }
+}
+

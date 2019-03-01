@@ -12,3 +12,20 @@ trait Anon_CommentsIdInitializer extends js.Object {
   var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
 }
 
+object Anon_CommentsIdInitializer {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.StringLiteralKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    initializer: astDashTypesLib.genKindsMod.ExpressionKind = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null
+  ): Anon_CommentsIdInitializer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (initializer != null) __obj.updateDynamic("initializer")(initializer)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    __obj.asInstanceOf[Anon_CommentsIdInitializer]
+  }
+}
+

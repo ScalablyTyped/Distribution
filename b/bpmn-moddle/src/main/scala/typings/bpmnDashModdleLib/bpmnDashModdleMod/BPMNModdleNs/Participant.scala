@@ -36,3 +36,38 @@ import scala.scalajs.js.annotation._
   var processRef: Process
 }
 
+object Participant {
+  @scala.inline
+  def apply(
+    $type: ElementType,
+    endPointRefs: js.Array[EndPoint],
+    id: java.lang.String,
+    incomingConversationLinks: js.Array[ConversationLink],
+    interfaceRef: js.Array[Interface],
+    name: java.lang.String,
+    outgoingConversationLinks: js.Array[ConversationLink],
+    participantMultiplicity: ParticipantMultiplicity,
+    processRef: Process,
+    $attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    documentation: js.Array[Documentation] = null,
+    extensionDefinitions: js.Array[ExtensionDefinition] = null,
+    extensionElements: ExtensionElements = null
+  ): Participant = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$type")($type)
+    __obj.updateDynamic("endPointRefs")(endPointRefs)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("incomingConversationLinks")(incomingConversationLinks)
+    __obj.updateDynamic("interfaceRef")(interfaceRef)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("outgoingConversationLinks")(outgoingConversationLinks)
+    __obj.updateDynamic("participantMultiplicity")(participantMultiplicity)
+    __obj.updateDynamic("processRef")(processRef)
+    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)
+    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements)
+    __obj.asInstanceOf[Participant]
+  }
+}
+

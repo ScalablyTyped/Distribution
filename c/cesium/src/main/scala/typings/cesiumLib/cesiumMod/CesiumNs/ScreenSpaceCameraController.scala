@@ -32,3 +32,60 @@ trait ScreenSpaceCameraController extends js.Object {
   def isDestroyed(): scala.Boolean
 }
 
+object ScreenSpaceCameraController {
+  @scala.inline
+  def apply(
+    bounceAnimationTime: scala.Double,
+    destroy: js.Function0[scala.Unit],
+    enableCollisionDetection: scala.Boolean,
+    enableInputs: scala.Boolean,
+    enableLook: scala.Boolean,
+    enableRotate: scala.Boolean,
+    enableTilt: scala.Boolean,
+    enableTranslate: scala.Boolean,
+    enableZoom: scala.Boolean,
+    inertiaSpin: scala.Double,
+    inertiaTranslate: scala.Double,
+    inertiaZoom: scala.Double,
+    isDestroyed: js.Function0[scala.Boolean],
+    lookEventTypes: CameraEventType | js.Array[_],
+    maximumMovementRatio: scala.Double,
+    maximumZoomDistance: scala.Double,
+    minimumCollisionTerrainHeight: scala.Double,
+    minimumPickingTerrainHeight: scala.Double,
+    minimumTrackBallHeight: scala.Double,
+    minimumZoomDistance: scala.Double,
+    rotateEventTypes: CameraEventType | js.Array[_],
+    tiltEventTypes: CameraEventType | js.Array[_],
+    translateEventTypes: CameraEventType | js.Array[_],
+    zoomEventTypes: CameraEventType | js.Array[_]
+  ): ScreenSpaceCameraController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounceAnimationTime")(bounceAnimationTime)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("enableCollisionDetection")(enableCollisionDetection)
+    __obj.updateDynamic("enableInputs")(enableInputs)
+    __obj.updateDynamic("enableLook")(enableLook)
+    __obj.updateDynamic("enableRotate")(enableRotate)
+    __obj.updateDynamic("enableTilt")(enableTilt)
+    __obj.updateDynamic("enableTranslate")(enableTranslate)
+    __obj.updateDynamic("enableZoom")(enableZoom)
+    __obj.updateDynamic("inertiaSpin")(inertiaSpin)
+    __obj.updateDynamic("inertiaTranslate")(inertiaTranslate)
+    __obj.updateDynamic("inertiaZoom")(inertiaZoom)
+    __obj.updateDynamic("isDestroyed")(isDestroyed)
+    __obj.updateDynamic("lookEventTypes")(lookEventTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("maximumMovementRatio")(maximumMovementRatio)
+    __obj.updateDynamic("maximumZoomDistance")(maximumZoomDistance)
+    __obj.updateDynamic("minimumCollisionTerrainHeight")(minimumCollisionTerrainHeight)
+    __obj.updateDynamic("minimumPickingTerrainHeight")(minimumPickingTerrainHeight)
+    __obj.updateDynamic("minimumTrackBallHeight")(minimumTrackBallHeight)
+    __obj.updateDynamic("minimumZoomDistance")(minimumZoomDistance)
+    __obj.updateDynamic("rotateEventTypes")(rotateEventTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("tiltEventTypes")(tiltEventTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("translateEventTypes")(translateEventTypes.asInstanceOf[js.Any])
+    __obj.updateDynamic("zoomEventTypes")(zoomEventTypes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScreenSpaceCameraController]
+  }
+}
+

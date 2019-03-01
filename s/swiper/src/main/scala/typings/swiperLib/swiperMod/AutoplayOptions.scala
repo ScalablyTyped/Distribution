@@ -49,3 +49,22 @@ trait AutoplayOptions extends js.Object {
   var waitForTransition: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AutoplayOptions {
+  @scala.inline
+  def apply(
+    delay: scala.Int | scala.Double = null,
+    disableOnInteraction: js.UndefOr[scala.Boolean] = js.undefined,
+    reverseDirection: js.UndefOr[scala.Boolean] = js.undefined,
+    stopOnLastSlide: js.UndefOr[scala.Boolean] = js.undefined,
+    waitForTransition: js.UndefOr[scala.Boolean] = js.undefined
+  ): AutoplayOptions = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableOnInteraction)) __obj.updateDynamic("disableOnInteraction")(disableOnInteraction)
+    if (!js.isUndefined(reverseDirection)) __obj.updateDynamic("reverseDirection")(reverseDirection)
+    if (!js.isUndefined(stopOnLastSlide)) __obj.updateDynamic("stopOnLastSlide")(stopOnLastSlide)
+    if (!js.isUndefined(waitForTransition)) __obj.updateDynamic("waitForTransition")(waitForTransition)
+    __obj.asInstanceOf[AutoplayOptions]
+  }
+}
+

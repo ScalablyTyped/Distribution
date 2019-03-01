@@ -9,3 +9,12 @@ trait ConfigFile extends js.Object {
   var configFile: java.lang.String
 }
 
+object ConfigFile {
+  @scala.inline
+  def apply(configFile: java.lang.String): ConfigFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("configFile")(configFile)
+    __obj.asInstanceOf[ConfigFile]
+  }
+}
+

@@ -12,3 +12,13 @@ trait ReportInfo extends js.Object {
   var quotaInfo: js.UndefOr[QuotaInfo] = js.undefined
 }
 
+object ReportInfo {
+  @scala.inline
+  def apply(operationId: java.lang.String = null, quotaInfo: QuotaInfo = null): ReportInfo = {
+    val __obj = js.Dynamic.literal()
+    if (operationId != null) __obj.updateDynamic("operationId")(operationId)
+    if (quotaInfo != null) __obj.updateDynamic("quotaInfo")(quotaInfo)
+    __obj.asInstanceOf[ReportInfo]
+  }
+}
+

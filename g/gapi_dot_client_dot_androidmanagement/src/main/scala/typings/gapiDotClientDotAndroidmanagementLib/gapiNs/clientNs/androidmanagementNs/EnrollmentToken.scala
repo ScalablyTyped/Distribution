@@ -36,3 +36,26 @@ trait EnrollmentToken extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EnrollmentToken {
+  @scala.inline
+  def apply(
+    additionalData: java.lang.String = null,
+    duration: java.lang.String = null,
+    expirationTimestamp: java.lang.String = null,
+    name: java.lang.String = null,
+    policyName: java.lang.String = null,
+    qrCode: java.lang.String = null,
+    value: java.lang.String = null
+  ): EnrollmentToken = {
+    val __obj = js.Dynamic.literal()
+    if (additionalData != null) __obj.updateDynamic("additionalData")(additionalData)
+    if (duration != null) __obj.updateDynamic("duration")(duration)
+    if (expirationTimestamp != null) __obj.updateDynamic("expirationTimestamp")(expirationTimestamp)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (policyName != null) __obj.updateDynamic("policyName")(policyName)
+    if (qrCode != null) __obj.updateDynamic("qrCode")(qrCode)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[EnrollmentToken]
+  }
+}
+

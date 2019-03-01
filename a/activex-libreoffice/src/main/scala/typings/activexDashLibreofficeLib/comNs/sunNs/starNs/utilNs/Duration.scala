@@ -33,3 +33,28 @@ trait Duration extends js.Object {
   var Years: scala.Double
 }
 
+object Duration {
+  @scala.inline
+  def apply(
+    Days: scala.Double,
+    Hours: scala.Double,
+    Minutes: scala.Double,
+    Months: scala.Double,
+    NanoSeconds: scala.Double,
+    Negative: scala.Boolean,
+    Seconds: scala.Double,
+    Years: scala.Double
+  ): Duration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Days")(Days)
+    __obj.updateDynamic("Hours")(Hours)
+    __obj.updateDynamic("Minutes")(Minutes)
+    __obj.updateDynamic("Months")(Months)
+    __obj.updateDynamic("NanoSeconds")(NanoSeconds)
+    __obj.updateDynamic("Negative")(Negative)
+    __obj.updateDynamic("Seconds")(Seconds)
+    __obj.updateDynamic("Years")(Years)
+    __obj.asInstanceOf[Duration]
+  }
+}
+

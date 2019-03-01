@@ -40,3 +40,28 @@ trait ScalesTick extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ScalesTick {
+  @scala.inline
+  def apply(
+    angle: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    distanceFromScale: ScalesTicksDistanceFromScale = null,
+    height: scala.Int | scala.Double = null,
+    opacity: scala.Int | scala.Double = null,
+    placement: PointerPlacement | java.lang.String = null,
+    `type`: TicksType | java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ScalesTick = {
+    val __obj = js.Dynamic.literal()
+    if (angle != null) __obj.updateDynamic("angle")(angle.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (distanceFromScale != null) __obj.updateDynamic("distanceFromScale")(distanceFromScale)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ScalesTick]
+  }
+}
+

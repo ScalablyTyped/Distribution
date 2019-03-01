@@ -12,3 +12,15 @@ trait Anon_BottomCenter extends js.Object {
   var `type`: antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType
 }
 
+object Anon_BottomCenter {
+  @scala.inline
+  def apply(
+    `type`: antdLib.libDropdownDropdownDashButtonMod.DropdownButtonType,
+    placement: antdLib.antdLibStrings.bottomLeft | antdLib.antdLibStrings.bottomRight | antdLib.antdLibStrings.topLeft | antdLib.antdLibStrings.topCenter | antdLib.antdLibStrings.topRight | antdLib.antdLibStrings.bottomCenter = null
+  ): Anon_BottomCenter = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (placement != null) __obj.updateDynamic("placement")(placement.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BottomCenter]
+  }
+}
+

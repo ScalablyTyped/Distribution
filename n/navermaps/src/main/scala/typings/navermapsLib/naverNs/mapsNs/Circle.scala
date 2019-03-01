@@ -21,7 +21,8 @@ class Circle () extends OverlayView {
   def getStyles(key: java.lang.String): CircleOptions = js.native
   def getVisible(): scala.Boolean = js.native
   def getZIndex(): scala.Double = js.native
-  def setCenter(center: Coord | CoordLiteral): scala.Unit = js.native
+  def setCenter(center: Coord): scala.Unit = js.native
+  def setCenter(center: CoordLiteral): scala.Unit = js.native
   def setClickable(clickable: scala.Boolean): scala.Unit = js.native
   def setOptions(key: java.lang.String, value: js.Any): scala.Unit = js.native
   def setOptions(options: CircleOptions): scala.Unit = js.native

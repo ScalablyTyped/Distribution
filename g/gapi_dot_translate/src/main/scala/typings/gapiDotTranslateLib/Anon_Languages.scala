@@ -9,3 +9,12 @@ trait Anon_Languages extends js.Object {
   var languages: js.Array[Anon_Language]
 }
 
+object Anon_Languages {
+  @scala.inline
+  def apply(languages: js.Array[Anon_Language]): Anon_Languages = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("languages")(languages)
+    __obj.asInstanceOf[Anon_Languages]
+  }
+}
+

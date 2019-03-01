@@ -1961,9 +1961,27 @@ object PinpointEmailNs extends js.Object {
     var SpamRawCount: js.UndefOr[Volume] = js.undefined
   }
   
+  trait _BehaviorOnMxFailure extends js.Object
+  
+  trait _DeliverabilityTestStatus extends js.Object
+  
+  trait _DimensionValueSource extends js.Object
+  
+  trait _DkimStatus extends js.Object
+  
+  trait _EventType extends js.Object
+  
+  trait _IdentityType extends js.Object
+  
+  trait _MailFromDomainStatus extends js.Object
+  
+  trait _WarmupStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AmazonResourceName = java.lang.String
-  type BehaviorOnMxFailure = awsDashSdkLib.awsDashSdkLibStrings.USE_DEFAULT_VALUE | awsDashSdkLib.awsDashSdkLibStrings.REJECT_MESSAGE | java.lang.String
+  type BehaviorOnMxFailure = _BehaviorOnMxFailure | java.lang.String
   type BlacklistEntries = js.Array[BlacklistEntry]
   type BlacklistItemName = java.lang.String
   type BlacklistItemNames = js.Array[BlacklistItemName]
@@ -1978,11 +1996,11 @@ object PinpointEmailNs extends js.Object {
   type DedicatedIpList = js.Array[DedicatedIp]
   type DefaultDimensionValue = java.lang.String
   type DeliverabilityTestReports = js.Array[DeliverabilityTestReport]
-  type DeliverabilityTestStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.COMPLETED | java.lang.String
+  type DeliverabilityTestStatus = _DeliverabilityTestStatus | java.lang.String
   type DeliverabilityTestSubject = java.lang.String
   type DimensionName = java.lang.String
-  type DimensionValueSource = awsDashSdkLib.awsDashSdkLibStrings.MESSAGE_TAG | awsDashSdkLib.awsDashSdkLibStrings.EMAIL_HEADER | awsDashSdkLib.awsDashSdkLibStrings.LINK_TAG | java.lang.String
-  type DkimStatus = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TEMPORARY_FAILURE | awsDashSdkLib.awsDashSdkLibStrings.NOT_STARTED | java.lang.String
+  type DimensionValueSource = _DimensionValueSource | java.lang.String
+  type DkimStatus = _DkimStatus | java.lang.String
   type DnsToken = java.lang.String
   type DnsTokenList = js.Array[DnsToken]
   type DomainIspPlacements = js.Array[DomainIspPlacement]
@@ -1991,19 +2009,19 @@ object PinpointEmailNs extends js.Object {
   type Enabled = scala.Boolean
   type EventDestinationName = java.lang.String
   type EventDestinations = js.Array[EventDestination]
-  type EventType = awsDashSdkLib.awsDashSdkLibStrings.SEND | awsDashSdkLib.awsDashSdkLibStrings.REJECT | awsDashSdkLib.awsDashSdkLibStrings.BOUNCE | awsDashSdkLib.awsDashSdkLibStrings.COMPLAINT | awsDashSdkLib.awsDashSdkLibStrings.DELIVERY | awsDashSdkLib.awsDashSdkLibStrings.OPEN | awsDashSdkLib.awsDashSdkLibStrings.CLICK | awsDashSdkLib.awsDashSdkLibStrings.RENDERING_FAILURE | java.lang.String
+  type EventType = _EventType | java.lang.String
   type EventTypes = js.Array[EventType]
   type GeneralEnforcementStatus = java.lang.String
   type Identity = java.lang.String
   type IdentityInfoList = js.Array[IdentityInfo]
-  type IdentityType = awsDashSdkLib.awsDashSdkLibStrings.EMAIL_ADDRESS | awsDashSdkLib.awsDashSdkLibStrings.DOMAIN | awsDashSdkLib.awsDashSdkLibStrings.MANAGED_DOMAIN | java.lang.String
+  type IdentityType = _IdentityType | java.lang.String
   type Ip = java.lang.String
   type IspName = java.lang.String
   type IspPlacements = js.Array[IspPlacement]
   type LastFreshStart = stdLib.Date
   type ListOfDedicatedIpPools = js.Array[PoolName]
   type MailFromDomainName = java.lang.String
-  type MailFromDomainStatus = awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TEMPORARY_FAILURE | java.lang.String
+  type MailFromDomainStatus = _MailFromDomainStatus | java.lang.String
   type Max24HourSend = scala.Double
   type MaxItems = scala.Double
   type MaxSendRate = scala.Double
@@ -2025,7 +2043,7 @@ object PinpointEmailNs extends js.Object {
   type SentLast24Hours = scala.Double
   type Timestamp = stdLib.Date
   type Volume = scala.Double
-  type WarmupStatus = awsDashSdkLib.awsDashSdkLibStrings.IN_PROGRESS | awsDashSdkLib.awsDashSdkLibStrings.DONE | java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-07-26` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type WarmupStatus = _WarmupStatus | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

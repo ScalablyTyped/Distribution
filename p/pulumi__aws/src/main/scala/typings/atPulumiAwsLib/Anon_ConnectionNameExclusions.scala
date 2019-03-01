@@ -13,3 +13,18 @@ trait Anon_ConnectionNameExclusions extends js.Object {
   var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_ConnectionNameExclusions {
+  @scala.inline
+  def apply(
+    connectionName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    path: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    exclusions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): Anon_ConnectionNameExclusions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connectionName")(connectionName.asInstanceOf[js.Any])
+    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (exclusions != null) __obj.updateDynamic("exclusions")(exclusions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ConnectionNameExclusions]
+  }
+}
+

@@ -35,3 +35,56 @@ import scala.scalajs.js.annotation._
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object ModalProps {
+  @scala.inline
+  def apply(
+    open: scala.Boolean,
+    BackdropComponent: reactLib.reactMod.ReactNs.ReactType[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
+    BackdropProps: stdLib.Partial[atMaterialDashUiCoreLib.backdropBackdropMod.BackdropProps] = null,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[ModalClassKey]] = null,
+    closeAfterTransition: js.UndefOr[scala.Boolean] = js.undefined,
+    container: reactLib.reactMod.ReactNs.ReactInstance | js.Function0[reactLib.reactMod.ReactNs.ReactInstance] = null,
+    disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    disableBackdropClick: js.UndefOr[scala.Boolean] = js.undefined,
+    disableEnforceFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    disableEscapeKeyDown: js.UndefOr[scala.Boolean] = js.undefined,
+    disablePortal: js.UndefOr[scala.Boolean] = js.undefined,
+    disableRestoreFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    hideBackdrop: js.UndefOr[scala.Boolean] = js.undefined,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    keepMounted: js.UndefOr[scala.Boolean] = js.undefined,
+    manager: atMaterialDashUiCoreLib.modalModalManagerMod.ModalManager = null,
+    onBackdropClick: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
+    onClose: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
+    onEscapeKeyDown: reactLib.reactMod.ReactNs.ReactEventHandler[js.Object] = null,
+    onRendered: js.Function0[scala.Unit] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): ModalProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("open")(open)
+    if (BackdropComponent != null) __obj.updateDynamic("BackdropComponent")(BackdropComponent.asInstanceOf[js.Any])
+    if (BackdropProps != null) __obj.updateDynamic("BackdropProps")(BackdropProps)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (!js.isUndefined(closeAfterTransition)) __obj.updateDynamic("closeAfterTransition")(closeAfterTransition)
+    if (container != null) __obj.updateDynamic("container")(container.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableAutoFocus)) __obj.updateDynamic("disableAutoFocus")(disableAutoFocus)
+    if (!js.isUndefined(disableBackdropClick)) __obj.updateDynamic("disableBackdropClick")(disableBackdropClick)
+    if (!js.isUndefined(disableEnforceFocus)) __obj.updateDynamic("disableEnforceFocus")(disableEnforceFocus)
+    if (!js.isUndefined(disableEscapeKeyDown)) __obj.updateDynamic("disableEscapeKeyDown")(disableEscapeKeyDown)
+    if (!js.isUndefined(disablePortal)) __obj.updateDynamic("disablePortal")(disablePortal)
+    if (!js.isUndefined(disableRestoreFocus)) __obj.updateDynamic("disableRestoreFocus")(disableRestoreFocus)
+    if (!js.isUndefined(hideBackdrop)) __obj.updateDynamic("hideBackdrop")(hideBackdrop)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (!js.isUndefined(keepMounted)) __obj.updateDynamic("keepMounted")(keepMounted)
+    if (manager != null) __obj.updateDynamic("manager")(manager)
+    if (onBackdropClick != null) __obj.updateDynamic("onBackdropClick")(onBackdropClick)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onEscapeKeyDown != null) __obj.updateDynamic("onEscapeKeyDown")(onEscapeKeyDown)
+    if (onRendered != null) __obj.updateDynamic("onRendered")(onRendered)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[ModalProps]
+  }
+}
+

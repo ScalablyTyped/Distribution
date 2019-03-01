@@ -11,3 +11,18 @@ trait Configuration extends js.Object {
   var webSocketImpl: js.UndefOr[js.Any] = js.undefined
 }
 
+object Configuration {
+  @scala.inline
+  def apply(
+    uri: java.lang.String,
+    options: subscriptionsDashTransportDashWsLib.distClientMod.ClientOptions = null,
+    webSocketImpl: js.Any = null
+  ): Configuration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("uri")(uri)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (webSocketImpl != null) __obj.updateDynamic("webSocketImpl")(webSocketImpl)
+    __obj.asInstanceOf[Configuration]
+  }
+}
+

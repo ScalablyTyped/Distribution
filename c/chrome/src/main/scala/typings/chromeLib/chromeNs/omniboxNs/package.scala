@@ -19,5 +19,4 @@ package object omniboxNs {
   ]
   type OmniboxInputStartedEvent = chromeLib.chromeNs.eventsNs.Event[js.Function0[scala.Unit]]
   type OmniboxSuggestionDeletedEvent = chromeLib.chromeNs.eventsNs.Event[js.Function1[/* text */ java.lang.String, scala.Unit]]
-  type OnInputEnteredDisposition = chromeLib.chromeLibStrings.currentTab | chromeLib.chromeLibStrings.newForegroundTab | chromeLib.chromeLibStrings.newBackgroundTab
 }

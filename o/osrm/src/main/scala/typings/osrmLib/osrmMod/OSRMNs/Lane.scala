@@ -15,3 +15,13 @@ trait Lane extends js.Object {
   var valid: scala.Boolean
 }
 
+object Lane {
+  @scala.inline
+  def apply(indications: js.Array[Indication], valid: scala.Boolean): Lane = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("indications")(indications)
+    __obj.updateDynamic("valid")(valid)
+    __obj.asInstanceOf[Lane]
+  }
+}
+

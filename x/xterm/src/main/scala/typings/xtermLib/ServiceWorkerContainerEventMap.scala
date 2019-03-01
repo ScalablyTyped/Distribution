@@ -11,3 +11,14 @@ trait ServiceWorkerContainerEventMap extends js.Object {
   var messageerror: MessageEvent
 }
 
+object ServiceWorkerContainerEventMap {
+  @scala.inline
+  def apply(controllerchange: Event, message: MessageEvent, messageerror: MessageEvent): ServiceWorkerContainerEventMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("controllerchange")(controllerchange)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("messageerror")(messageerror)
+    __obj.asInstanceOf[ServiceWorkerContainerEventMap]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_Date extends js.Object {
   var `type`: waterlineLib.waterlineLibStrings.date
 }
 
+object Anon_Date {
+  @scala.inline
+  def apply(`type`: waterlineLib.waterlineLibStrings.date): Anon_Date = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Date]
+  }
+}
+

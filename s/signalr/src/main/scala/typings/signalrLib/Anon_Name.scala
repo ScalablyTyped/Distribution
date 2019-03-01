@@ -10,3 +10,13 @@ trait Anon_Name extends js.Object {
   def supportsKeepAlive(): scala.Boolean
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(name: java.lang.String, supportsKeepAlive: js.Function0[scala.Boolean]): Anon_Name = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("supportsKeepAlive")(supportsKeepAlive)
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

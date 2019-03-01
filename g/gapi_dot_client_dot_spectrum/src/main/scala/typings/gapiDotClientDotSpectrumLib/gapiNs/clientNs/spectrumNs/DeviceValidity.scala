@@ -17,3 +17,18 @@ trait DeviceValidity extends js.Object {
   var reason: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeviceValidity {
+  @scala.inline
+  def apply(
+    deviceDesc: DeviceDescriptor = null,
+    isValid: js.UndefOr[scala.Boolean] = js.undefined,
+    reason: java.lang.String = null
+  ): DeviceValidity = {
+    val __obj = js.Dynamic.literal()
+    if (deviceDesc != null) __obj.updateDynamic("deviceDesc")(deviceDesc)
+    if (!js.isUndefined(isValid)) __obj.updateDynamic("isValid")(isValid)
+    if (reason != null) __obj.updateDynamic("reason")(reason)
+    __obj.asInstanceOf[DeviceValidity]
+  }
+}
+

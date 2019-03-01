@@ -10,3 +10,13 @@ trait PropertySelector extends js.Object {
   var selectorType: PropertySelectorType
 }
 
+object PropertySelector {
+  @scala.inline
+  def apply(properties: js.Array[java.lang.String], selectorType: PropertySelectorType): PropertySelector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("selectorType")(selectorType)
+    __obj.asInstanceOf[PropertySelector]
+  }
+}
+

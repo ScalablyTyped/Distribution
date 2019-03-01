@@ -20,3 +20,24 @@ trait ListOffersHistoryResponse extends js.Object {
   var totalResults: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListOffersHistoryResponse {
+  @scala.inline
+  def apply(
+    canShowEntireCompany: js.UndefOr[scala.Boolean] = js.undefined,
+    nextPageToken: java.lang.String = null,
+    offers: js.Array[HistoricalOffer] = null,
+    responseMetadata: ResponseMetadata = null,
+    showingEntireCompany: js.UndefOr[scala.Boolean] = js.undefined,
+    totalResults: scala.Int | scala.Double = null
+  ): ListOffersHistoryResponse = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canShowEntireCompany)) __obj.updateDynamic("canShowEntireCompany")(canShowEntireCompany)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (offers != null) __obj.updateDynamic("offers")(offers)
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    if (!js.isUndefined(showingEntireCompany)) __obj.updateDynamic("showingEntireCompany")(showingEntireCompany)
+    if (totalResults != null) __obj.updateDynamic("totalResults")(totalResults.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListOffersHistoryResponse]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_Enter extends js.Object {
   var exit: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Enter {
+  @scala.inline
+  def apply(enter: scala.Int | scala.Double = null, exit: scala.Int | scala.Double = null): Anon_Enter = {
+    val __obj = js.Dynamic.literal()
+    if (enter != null) __obj.updateDynamic("enter")(enter.asInstanceOf[js.Any])
+    if (exit != null) __obj.updateDynamic("exit")(exit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Enter]
+  }
+}
+

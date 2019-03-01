@@ -29,3 +29,38 @@ trait Anon_0 extends js.Object {
   ])
 }
 
+object Anon_0 {
+  @scala.inline
+  def apply(
+    attachment: js.Any,
+    color: js.Any,
+    image: js.Any,
+    position: js.Any | (js.Tuple2[
+      js.UndefOr[
+        csstypeLib.csstypeMod.BackgroundPositionProperty[java.lang.String | jssLib.jssLibNumbers.`0`]
+      ], 
+      js.UndefOr[
+        csstypeLib.csstypeMod.BackgroundPositionProperty[java.lang.String | jssLib.jssLibNumbers.`0`]
+      ]
+    ]),
+    repeat: js.Any,
+    size: js.Any | (js.Tuple2[
+      js.UndefOr[
+        csstypeLib.csstypeMod.BackgroundSizeProperty[java.lang.String | jssLib.jssLibNumbers.`0`]
+      ], 
+      js.UndefOr[
+        csstypeLib.csstypeMod.BackgroundSizeProperty[java.lang.String | jssLib.jssLibNumbers.`0`]
+      ]
+    ])
+  ): Anon_0 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attachment")(attachment)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("image")(image)
+    __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.updateDynamic("repeat")(repeat)
+    __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_0]
+  }
+}
+

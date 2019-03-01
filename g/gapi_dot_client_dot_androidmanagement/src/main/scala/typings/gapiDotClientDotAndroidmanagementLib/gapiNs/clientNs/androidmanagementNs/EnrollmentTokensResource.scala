@@ -12,3 +12,22 @@ trait EnrollmentTokensResource extends js.Object {
   def delete(request: gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 
+object EnrollmentTokensResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[EnrollmentToken]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ]
+  ): EnrollmentTokensResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.asInstanceOf[EnrollmentTokensResource]
+  }
+}
+

@@ -26,3 +26,20 @@ trait Anon_Cmp extends js.Object {
   var space: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Cmp {
+  @scala.inline
+  def apply(
+    cmp: adoneLib.adoneNs.dataNs.jsonNs.INs.CompareFunction = null,
+    cycles: js.UndefOr[scala.Boolean] = js.undefined,
+    replacer: adoneLib.adoneNs.dataNs.jsonNs.INs.Replacer = null,
+    space: java.lang.String = null
+  ): Anon_Cmp = {
+    val __obj = js.Dynamic.literal()
+    if (cmp != null) __obj.updateDynamic("cmp")(cmp)
+    if (!js.isUndefined(cycles)) __obj.updateDynamic("cycles")(cycles)
+    if (replacer != null) __obj.updateDynamic("replacer")(replacer.asInstanceOf[js.Any])
+    if (space != null) __obj.updateDynamic("space")(space)
+    __obj.asInstanceOf[Anon_Cmp]
+  }
+}
+

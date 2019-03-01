@@ -243,3 +243,101 @@ trait IgSpreadsheet
   var zoomLevel: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgSpreadsheet {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igSpreadsheet
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    actionExecuted: ActionExecutedEvent = null,
+    actionExecuting: ActionExecutingEvent = null,
+    activeCell: java.lang.String = null,
+    activeCellChanged: ActiveCellChangedEvent = null,
+    activePaneChanged: ActivePaneChangedEvent = null,
+    activeTableChanged: ActiveTableChangedEvent = null,
+    activeWorksheet: js.Any = null,
+    activeWorksheetChanged: ActiveWorksheetChangedEvent = null,
+    allowAddWorksheet: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDeleteWorksheet: js.UndefOr[scala.Boolean] = js.undefined,
+    areGridlinesVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    areHeadersVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    brushes: IgSpreadsheetBrushes = null,
+    editModeEntered: EditModeEnteredEvent = null,
+    editModeEntering: EditModeEnteringEvent = null,
+    editModeExited: EditModeExitedEvent = null,
+    editModeExiting: EditModeExitingEvent = null,
+    editModeValidationError: EditModeValidationErrorEvent = null,
+    editRangePasswordNeeded: EditRangePasswordNeededEvent = null,
+    enterKeyNavigationDirection: java.lang.String = null,
+    fixedDecimalPlaceCount: scala.Int | scala.Double = null,
+    height: java.lang.String | scala.Double = null,
+    hyperlinkExecuting: HyperlinkExecutingEvent = null,
+    isEnterKeyNavigationEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isFixedDecimalEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isFormulaBarVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    isInEndMode: js.UndefOr[scala.Boolean] = js.undefined,
+    isScrollLocked: js.UndefOr[scala.Boolean] = js.undefined,
+    isUndoEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    nameBoxWidth: scala.Int | scala.Double = null,
+    regional: java.lang.String | js.Object = null,
+    selectedWorksheets: js.Any = null,
+    selectionChanged: IgSpreadsheetSelectionChangedEvent = null,
+    selectionMode: java.lang.String = null,
+    userPromptDisplaying: UserPromptDisplayingEvent = null,
+    validationInputMessagePosition: js.Any = null,
+    width: java.lang.String | scala.Double = null,
+    workbook: js.Any = null,
+    workbookDirtied: WorkbookDirtiedEvent = null,
+    zoomLevel: scala.Int | scala.Double = null
+  ): IgSpreadsheet = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (actionExecuted != null) __obj.updateDynamic("actionExecuted")(actionExecuted)
+    if (actionExecuting != null) __obj.updateDynamic("actionExecuting")(actionExecuting)
+    if (activeCell != null) __obj.updateDynamic("activeCell")(activeCell)
+    if (activeCellChanged != null) __obj.updateDynamic("activeCellChanged")(activeCellChanged)
+    if (activePaneChanged != null) __obj.updateDynamic("activePaneChanged")(activePaneChanged)
+    if (activeTableChanged != null) __obj.updateDynamic("activeTableChanged")(activeTableChanged)
+    if (activeWorksheet != null) __obj.updateDynamic("activeWorksheet")(activeWorksheet)
+    if (activeWorksheetChanged != null) __obj.updateDynamic("activeWorksheetChanged")(activeWorksheetChanged)
+    if (!js.isUndefined(allowAddWorksheet)) __obj.updateDynamic("allowAddWorksheet")(allowAddWorksheet)
+    if (!js.isUndefined(allowDeleteWorksheet)) __obj.updateDynamic("allowDeleteWorksheet")(allowDeleteWorksheet)
+    if (!js.isUndefined(areGridlinesVisible)) __obj.updateDynamic("areGridlinesVisible")(areGridlinesVisible)
+    if (!js.isUndefined(areHeadersVisible)) __obj.updateDynamic("areHeadersVisible")(areHeadersVisible)
+    if (brushes != null) __obj.updateDynamic("brushes")(brushes)
+    if (editModeEntered != null) __obj.updateDynamic("editModeEntered")(editModeEntered)
+    if (editModeEntering != null) __obj.updateDynamic("editModeEntering")(editModeEntering)
+    if (editModeExited != null) __obj.updateDynamic("editModeExited")(editModeExited)
+    if (editModeExiting != null) __obj.updateDynamic("editModeExiting")(editModeExiting)
+    if (editModeValidationError != null) __obj.updateDynamic("editModeValidationError")(editModeValidationError)
+    if (editRangePasswordNeeded != null) __obj.updateDynamic("editRangePasswordNeeded")(editRangePasswordNeeded)
+    if (enterKeyNavigationDirection != null) __obj.updateDynamic("enterKeyNavigationDirection")(enterKeyNavigationDirection)
+    if (fixedDecimalPlaceCount != null) __obj.updateDynamic("fixedDecimalPlaceCount")(fixedDecimalPlaceCount.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (hyperlinkExecuting != null) __obj.updateDynamic("hyperlinkExecuting")(hyperlinkExecuting)
+    if (!js.isUndefined(isEnterKeyNavigationEnabled)) __obj.updateDynamic("isEnterKeyNavigationEnabled")(isEnterKeyNavigationEnabled)
+    if (!js.isUndefined(isFixedDecimalEnabled)) __obj.updateDynamic("isFixedDecimalEnabled")(isFixedDecimalEnabled)
+    if (!js.isUndefined(isFormulaBarVisible)) __obj.updateDynamic("isFormulaBarVisible")(isFormulaBarVisible)
+    if (!js.isUndefined(isInEndMode)) __obj.updateDynamic("isInEndMode")(isInEndMode)
+    if (!js.isUndefined(isScrollLocked)) __obj.updateDynamic("isScrollLocked")(isScrollLocked)
+    if (!js.isUndefined(isUndoEnabled)) __obj.updateDynamic("isUndoEnabled")(isUndoEnabled)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (nameBoxWidth != null) __obj.updateDynamic("nameBoxWidth")(nameBoxWidth.asInstanceOf[js.Any])
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (selectedWorksheets != null) __obj.updateDynamic("selectedWorksheets")(selectedWorksheets)
+    if (selectionChanged != null) __obj.updateDynamic("selectionChanged")(selectionChanged)
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
+    if (userPromptDisplaying != null) __obj.updateDynamic("userPromptDisplaying")(userPromptDisplaying)
+    if (validationInputMessagePosition != null) __obj.updateDynamic("validationInputMessagePosition")(validationInputMessagePosition)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (workbook != null) __obj.updateDynamic("workbook")(workbook)
+    if (workbookDirtied != null) __obj.updateDynamic("workbookDirtied")(workbookDirtied)
+    if (zoomLevel != null) __obj.updateDynamic("zoomLevel")(zoomLevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgSpreadsheet]
+  }
+}
+

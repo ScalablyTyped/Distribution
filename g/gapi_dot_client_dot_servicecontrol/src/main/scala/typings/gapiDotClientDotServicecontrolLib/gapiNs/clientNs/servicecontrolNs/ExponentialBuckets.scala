@@ -28,3 +28,18 @@ trait ExponentialBuckets extends js.Object {
   var scale: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ExponentialBuckets {
+  @scala.inline
+  def apply(
+    growthFactor: scala.Int | scala.Double = null,
+    numFiniteBuckets: scala.Int | scala.Double = null,
+    scale: scala.Int | scala.Double = null
+  ): ExponentialBuckets = {
+    val __obj = js.Dynamic.literal()
+    if (growthFactor != null) __obj.updateDynamic("growthFactor")(growthFactor.asInstanceOf[js.Any])
+    if (numFiniteBuckets != null) __obj.updateDynamic("numFiniteBuckets")(numFiniteBuckets.asInstanceOf[js.Any])
+    if (scale != null) __obj.updateDynamic("scale")(scale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExponentialBuckets]
+  }
+}
+

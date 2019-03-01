@@ -24,3 +24,20 @@ trait ColumnResizingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object ColumnResizingEventUIParam {
+  @scala.inline
+  def apply(
+    columnIndex: scala.Int | scala.Double = null,
+    columnKey: java.lang.String = null,
+    desiredWidth: scala.Int | scala.Double = null,
+    owner: js.Any = null
+  ): ColumnResizingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey)
+    if (desiredWidth != null) __obj.updateDynamic("desiredWidth")(desiredWidth.asInstanceOf[js.Any])
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[ColumnResizingEventUIParam]
+  }
+}
+

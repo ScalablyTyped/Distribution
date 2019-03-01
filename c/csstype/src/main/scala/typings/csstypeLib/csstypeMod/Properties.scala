@@ -42,3 +42,20 @@ import scala.scalajs.js.annotation._
   var vectorEffect: js.UndefOr[VectorEffectProperty] = js.undefined
 }
 
+object Properties {
+  @scala.inline
+  def apply[TLength](
+    ObsoleteProperties: ObsoleteProperties[TLength] = null,
+    StandardProperties: StandardProperties[TLength] = null,
+    SvgProperties: SvgProperties[TLength] = null,
+    VendorProperties: VendorProperties[TLength] = null
+  ): Properties[TLength] = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, ObsoleteProperties)
+    js.Dynamic.global.Object.assign(__obj, StandardProperties)
+    js.Dynamic.global.Object.assign(__obj, SvgProperties)
+    js.Dynamic.global.Object.assign(__obj, VendorProperties)
+    __obj.asInstanceOf[Properties[TLength]]
+  }
+}
+

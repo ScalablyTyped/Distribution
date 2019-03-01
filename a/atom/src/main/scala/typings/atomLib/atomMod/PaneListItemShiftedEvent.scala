@@ -12,3 +12,13 @@ trait PaneListItemShiftedEvent extends js.Object {
   var item: js.Object
 }
 
+object PaneListItemShiftedEvent {
+  @scala.inline
+  def apply(index: scala.Double, item: js.Object): PaneListItemShiftedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[PaneListItemShiftedEvent]
+  }
+}
+

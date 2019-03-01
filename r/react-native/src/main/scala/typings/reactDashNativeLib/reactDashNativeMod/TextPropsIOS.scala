@@ -21,3 +21,18 @@ trait TextPropsIOS extends js.Object {
   var suppressHighlighting: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TextPropsIOS {
+  @scala.inline
+  def apply(
+    adjustsFontSizeToFit: js.UndefOr[scala.Boolean] = js.undefined,
+    minimumFontScale: scala.Int | scala.Double = null,
+    suppressHighlighting: js.UndefOr[scala.Boolean] = js.undefined
+  ): TextPropsIOS = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(adjustsFontSizeToFit)) __obj.updateDynamic("adjustsFontSizeToFit")(adjustsFontSizeToFit)
+    if (minimumFontScale != null) __obj.updateDynamic("minimumFontScale")(minimumFontScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(suppressHighlighting)) __obj.updateDynamic("suppressHighlighting")(suppressHighlighting)
+    __obj.asInstanceOf[TextPropsIOS]
+  }
+}
+

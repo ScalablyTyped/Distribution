@@ -101,3 +101,44 @@ trait ColorPickerOptions extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ColorPickerOptions {
+  @scala.inline
+  def apply(
+    align: ColorPickerAlignOptions = null,
+    color: java.lang.String = null,
+    colorSelectors: js.Object = null,
+    component: java.lang.String | JQuery = null,
+    container: js.UndefOr[scala.Boolean] = js.undefined,
+    customClass: java.lang.String = null,
+    fallbackColor: java.lang.String = null,
+    fallbackFormat: java.lang.String = null,
+    format: ColorFormat = null,
+    hexNumberSignPrefix: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    input: java.lang.String | JQuery = null,
+    sliders: js.Object = null,
+    slidersHorz: js.Object = null,
+    template: java.lang.String = null
+  ): ColorPickerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colorSelectors != null) __obj.updateDynamic("colorSelectors")(colorSelectors)
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(container)) __obj.updateDynamic("container")(container)
+    if (customClass != null) __obj.updateDynamic("customClass")(customClass)
+    if (fallbackColor != null) __obj.updateDynamic("fallbackColor")(fallbackColor)
+    if (fallbackFormat != null) __obj.updateDynamic("fallbackFormat")(fallbackFormat)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(hexNumberSignPrefix)) __obj.updateDynamic("hexNumberSignPrefix")(hexNumberSignPrefix)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (sliders != null) __obj.updateDynamic("sliders")(sliders)
+    if (slidersHorz != null) __obj.updateDynamic("slidersHorz")(slidersHorz)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[ColorPickerOptions]
+  }
+}
+

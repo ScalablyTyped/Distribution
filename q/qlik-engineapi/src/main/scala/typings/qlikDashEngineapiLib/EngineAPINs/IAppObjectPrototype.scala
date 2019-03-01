@@ -10,3 +10,13 @@ trait IAppObjectPrototype[P /* <: IGenericObjectProperties */, O /* <: IGenericO
   def createSessionObject(qProp: P): js.Promise[O]
 }
 
+object IAppObjectPrototype {
+  @scala.inline
+  def apply[P /* <: IGenericObjectProperties */, O /* <: IGenericObject */](createObject: js.Function1[P, js.Promise[O]], createSessionObject: js.Function1[P, js.Promise[O]]): IAppObjectPrototype[P, O] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createObject")(createObject)
+    __obj.updateDynamic("createSessionObject")(createSessionObject)
+    __obj.asInstanceOf[IAppObjectPrototype[P, O]]
+  }
+}
+

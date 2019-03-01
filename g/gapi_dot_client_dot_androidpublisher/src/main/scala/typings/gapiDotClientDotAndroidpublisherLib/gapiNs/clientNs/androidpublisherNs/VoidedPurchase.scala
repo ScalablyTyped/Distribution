@@ -16,3 +16,20 @@ trait VoidedPurchase extends js.Object {
   var voidedTimeMillis: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VoidedPurchase {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    purchaseTimeMillis: java.lang.String = null,
+    purchaseToken: java.lang.String = null,
+    voidedTimeMillis: java.lang.String = null
+  ): VoidedPurchase = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (purchaseTimeMillis != null) __obj.updateDynamic("purchaseTimeMillis")(purchaseTimeMillis)
+    if (purchaseToken != null) __obj.updateDynamic("purchaseToken")(purchaseToken)
+    if (voidedTimeMillis != null) __obj.updateDynamic("voidedTimeMillis")(voidedTimeMillis)
+    __obj.asInstanceOf[VoidedPurchase]
+  }
+}
+

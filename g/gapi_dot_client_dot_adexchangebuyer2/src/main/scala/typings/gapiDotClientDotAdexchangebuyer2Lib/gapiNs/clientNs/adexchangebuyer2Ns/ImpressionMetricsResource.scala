@@ -12,3 +12,17 @@ trait ImpressionMetricsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListImpressionMetricsResponse]
 }
 
+object ImpressionMetricsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAdexchangebuyer2Lib.Anon_AccesstokenAccountIdAltBearertokenCallbackFieldsFilterSetId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListImpressionMetricsResponse]
+    ]
+  ): ImpressionMetricsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ImpressionMetricsResource]
+  }
+}
+

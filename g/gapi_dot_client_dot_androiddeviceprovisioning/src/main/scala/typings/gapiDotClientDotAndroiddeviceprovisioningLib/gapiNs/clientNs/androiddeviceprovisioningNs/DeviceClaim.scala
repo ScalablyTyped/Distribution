@@ -12,3 +12,13 @@ trait DeviceClaim extends js.Object {
   var sectionType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeviceClaim {
+  @scala.inline
+  def apply(ownerCompanyId: java.lang.String = null, sectionType: java.lang.String = null): DeviceClaim = {
+    val __obj = js.Dynamic.literal()
+    if (ownerCompanyId != null) __obj.updateDynamic("ownerCompanyId")(ownerCompanyId)
+    if (sectionType != null) __obj.updateDynamic("sectionType")(sectionType)
+    __obj.asInstanceOf[DeviceClaim]
+  }
+}
+

@@ -7,10 +7,10 @@ import scala.scalajs.js.annotation._
 
 object numeralLibStrings {
   @js.native
-  sealed trait format extends js.Object
+  sealed trait format extends RegisterType
   
   @js.native
-  sealed trait locale extends js.Object
+  sealed trait locale extends RegisterType
   
   @scala.inline
   def format: format = "format".asInstanceOf[format]

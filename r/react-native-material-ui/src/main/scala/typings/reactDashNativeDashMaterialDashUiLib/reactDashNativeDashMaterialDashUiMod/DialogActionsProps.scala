@@ -10,3 +10,16 @@ trait DialogActionsProps extends js.Object {
   var style: js.UndefOr[reactDashNativeDashMaterialDashUiLib.Anon_ActionsContainer] = js.undefined
 }
 
+object DialogActionsProps {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.Global.JSXNs.Element,
+    style: reactDashNativeDashMaterialDashUiLib.Anon_ActionsContainer = null
+  ): DialogActionsProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[DialogActionsProps]
+  }
+}
+

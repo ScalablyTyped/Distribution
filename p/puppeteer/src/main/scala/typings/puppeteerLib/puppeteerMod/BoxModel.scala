@@ -18,3 +18,24 @@ trait BoxModel extends js.Object {
   var width: scala.Double
 }
 
+object BoxModel {
+  @scala.inline
+  def apply(
+    border: js.Array[Box],
+    content: js.Array[Box],
+    height: scala.Double,
+    margin: js.Array[Box],
+    padding: js.Array[Box],
+    width: scala.Double
+  ): BoxModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("border")(border)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("margin")(margin)
+    __obj.updateDynamic("padding")(padding)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[BoxModel]
+  }
+}
+

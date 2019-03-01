@@ -12,3 +12,13 @@ trait Anon_Index extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Index {
+  @scala.inline
+  def apply(index: scala.Int | scala.Double = null, message: java.lang.String = null): Anon_Index = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[Anon_Index]
+  }
+}
+

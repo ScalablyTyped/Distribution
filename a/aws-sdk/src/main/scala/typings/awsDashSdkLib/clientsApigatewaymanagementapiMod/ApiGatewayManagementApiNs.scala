@@ -48,10 +48,12 @@ object ApiGatewayManagementApiNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type Data = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsApigatewaymanagementapiMod.Blob | java.lang.String
   type __string = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-11-29` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

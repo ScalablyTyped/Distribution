@@ -11,3 +11,18 @@ trait DialogStackedActionsProps extends js.Object {
   def onActionPress(action: java.lang.String): scala.Unit
 }
 
+object DialogStackedActionsProps {
+  @scala.inline
+  def apply(
+    actions: js.Array[java.lang.String],
+    onActionPress: js.Function1[java.lang.String, scala.Unit],
+    style: reactDashNativeDashMaterialDashUiLib.Anon_StackedActionsContainer = null
+  ): DialogStackedActionsProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actions")(actions)
+    __obj.updateDynamic("onActionPress")(onActionPress)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[DialogStackedActionsProps]
+  }
+}
+

@@ -15,3 +15,12 @@ trait UsersFollowedArtistsResponse extends js.Object {
   var artists: CursorBasedPagingObject[ArtistObjectFull]
 }
 
+object UsersFollowedArtistsResponse {
+  @scala.inline
+  def apply(artists: CursorBasedPagingObject[ArtistObjectFull]): UsersFollowedArtistsResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artists")(artists)
+    __obj.asInstanceOf[UsersFollowedArtistsResponse]
+  }
+}
+

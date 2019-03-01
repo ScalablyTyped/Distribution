@@ -32,3 +32,24 @@ trait ExistsFilter extends Filter {
   def toJSON(): ExistsFilter
 }
 
+object ExistsFilter {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cache: js.Function1[scala.Boolean, ExistsFilter],
+    cacheKey: js.Function1[java.lang.String, ExistsFilter],
+    field: js.Function1[java.lang.String, ExistsFilter],
+    name: js.Function1[java.lang.String, ExistsFilter],
+    toJSON: js.Function0[ExistsFilter]
+  ): ExistsFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheKey")(cacheKey)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[ExistsFilter]
+  }
+}
+

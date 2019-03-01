@@ -36,3 +36,26 @@ trait IToastProps
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IToastProps {
+  @scala.inline
+  def apply(
+    message: reactLib.reactMod.ReactNs.ReactNode,
+    action: atBlueprintjsCoreLib.libEsmCommonPropsMod.IActionProps with atBlueprintjsCoreLib.libEsmCommonPropsMod.ILinkProps = null,
+    className: java.lang.String = null,
+    icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
+    intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    onDismiss: js.Function1[/* didTimeoutExpire */ scala.Boolean, scala.Unit] = null,
+    timeout: scala.Int | scala.Double = null
+  ): IToastProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message.asInstanceOf[js.Any])
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IToastProps]
+  }
+}
+

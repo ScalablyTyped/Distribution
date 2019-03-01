@@ -27,3 +27,24 @@ trait INonIdealStateProps
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object INonIdealStateProps {
+  @scala.inline
+  def apply(
+    action: reactLib.reactMod.Global.JSXNs.Element = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    description: reactLib.reactMod.ReactNs.ReactChild = null,
+    icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null
+  ): INonIdealStateProps = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[INonIdealStateProps]
+  }
+}
+

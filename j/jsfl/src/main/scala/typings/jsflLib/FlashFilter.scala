@@ -27,3 +27,49 @@ trait FlashFilter extends js.Object {
   var `type`: java.lang.String
 }
 
+object FlashFilter {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    blurX: scala.Double,
+    blurY: scala.Double,
+    brightness: scala.Double,
+    color: js.Any,
+    contrast: scala.Double,
+    distance: scala.Double,
+    enabled: scala.Boolean,
+    hideObject: scala.Boolean,
+    highlightColor: js.Any,
+    hue: scala.Double,
+    inner: scala.Boolean,
+    knockout: scala.Boolean,
+    name: java.lang.String,
+    quality: java.lang.String,
+    saturation: scala.Double,
+    shadowColor: js.Any,
+    strength: scala.Double,
+    `type`: java.lang.String
+  ): FlashFilter = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("blurX")(blurX)
+    __obj.updateDynamic("blurY")(blurY)
+    __obj.updateDynamic("brightness")(brightness)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("contrast")(contrast)
+    __obj.updateDynamic("distance")(distance)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("hideObject")(hideObject)
+    __obj.updateDynamic("highlightColor")(highlightColor)
+    __obj.updateDynamic("hue")(hue)
+    __obj.updateDynamic("inner")(inner)
+    __obj.updateDynamic("knockout")(knockout)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("quality")(quality)
+    __obj.updateDynamic("saturation")(saturation)
+    __obj.updateDynamic("shadowColor")(shadowColor)
+    __obj.updateDynamic("strength")(strength)
+    __obj.asInstanceOf[FlashFilter]
+  }
+}
+

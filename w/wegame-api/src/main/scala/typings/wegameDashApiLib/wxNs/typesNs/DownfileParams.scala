@@ -24,3 +24,24 @@ trait DownfileParams extends js.Object {
   var url: java.lang.String
 }
 
+object DownfileParams {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function1[/* res */ wegameDashApiLib.Anon_ErrMsg, scala.Unit] = null,
+    filePath: java.lang.String = null,
+    header: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    success: js.Function1[/* res */ wegameDashApiLib.Anon_StatusCode, scala.Unit] = null
+  ): DownfileParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (filePath != null) __obj.updateDynamic("filePath")(filePath)
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[DownfileParams]
+  }
+}
+

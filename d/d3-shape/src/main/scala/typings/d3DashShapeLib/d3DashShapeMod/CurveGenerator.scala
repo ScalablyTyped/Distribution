@@ -17,3 +17,22 @@ trait CurveGenerator extends CurveGeneratorLineOnly {
   def areaStart(): scala.Unit
 }
 
+object CurveGenerator {
+  @scala.inline
+  def apply(
+    areaEnd: js.Function0[scala.Unit],
+    areaStart: js.Function0[scala.Unit],
+    lineEnd: js.Function0[scala.Unit],
+    lineStart: js.Function0[scala.Unit],
+    point: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): CurveGenerator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("areaEnd")(areaEnd)
+    __obj.updateDynamic("areaStart")(areaStart)
+    __obj.updateDynamic("lineEnd")(lineEnd)
+    __obj.updateDynamic("lineStart")(lineStart)
+    __obj.updateDynamic("point")(point)
+    __obj.asInstanceOf[CurveGenerator]
+  }
+}
+

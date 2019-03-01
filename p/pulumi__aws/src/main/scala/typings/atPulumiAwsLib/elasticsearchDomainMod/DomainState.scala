@@ -94,3 +94,50 @@ trait DomainState extends js.Object {
   ] = js.undefined
 }
 
+object DomainState {
+  @scala.inline
+  def apply(
+    accessPolicies: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    advancedOptions: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DedicatedMasterCountDedicatedMasterEnabled] = null,
+    cognitoOptions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledIdentityPoolIdRoleArn] = null,
+    domainId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ebsOptions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EbsEnabledIops] = null,
+    elasticsearchVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    encryptAtRest: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledKmsKeyIdBoolean] = null,
+    endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    kibanaEndpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    logPublishingOptions: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CloudwatchLogGroupArnEnabled]
+      ]
+    ] = null,
+    nodeToNodeEncryption: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_654448986] = null,
+    snapshotOptions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AutomatedSnapshotStartHourInput] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    vpcOptions: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AvailabilityZonesSecurityGroupIds] = null
+  ): DomainState = {
+    val __obj = js.Dynamic.literal()
+    if (accessPolicies != null) __obj.updateDynamic("accessPolicies")(accessPolicies.asInstanceOf[js.Any])
+    if (advancedOptions != null) __obj.updateDynamic("advancedOptions")(advancedOptions.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (clusterConfig != null) __obj.updateDynamic("clusterConfig")(clusterConfig.asInstanceOf[js.Any])
+    if (cognitoOptions != null) __obj.updateDynamic("cognitoOptions")(cognitoOptions.asInstanceOf[js.Any])
+    if (domainId != null) __obj.updateDynamic("domainId")(domainId.asInstanceOf[js.Any])
+    if (domainName != null) __obj.updateDynamic("domainName")(domainName.asInstanceOf[js.Any])
+    if (ebsOptions != null) __obj.updateDynamic("ebsOptions")(ebsOptions.asInstanceOf[js.Any])
+    if (elasticsearchVersion != null) __obj.updateDynamic("elasticsearchVersion")(elasticsearchVersion.asInstanceOf[js.Any])
+    if (encryptAtRest != null) __obj.updateDynamic("encryptAtRest")(encryptAtRest.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (kibanaEndpoint != null) __obj.updateDynamic("kibanaEndpoint")(kibanaEndpoint.asInstanceOf[js.Any])
+    if (logPublishingOptions != null) __obj.updateDynamic("logPublishingOptions")(logPublishingOptions.asInstanceOf[js.Any])
+    if (nodeToNodeEncryption != null) __obj.updateDynamic("nodeToNodeEncryption")(nodeToNodeEncryption.asInstanceOf[js.Any])
+    if (snapshotOptions != null) __obj.updateDynamic("snapshotOptions")(snapshotOptions.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpcOptions != null) __obj.updateDynamic("vpcOptions")(vpcOptions.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DomainState]
+  }
+}
+

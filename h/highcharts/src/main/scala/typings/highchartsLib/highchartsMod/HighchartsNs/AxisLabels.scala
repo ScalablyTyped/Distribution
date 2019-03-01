@@ -127,3 +127,50 @@ trait AxisLabels extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object AxisLabels {
+  @scala.inline
+  def apply(
+    align: java.lang.String = null,
+    autoRotation: js.Array[scala.Double] = null,
+    autoRotationLimit: scala.Int | scala.Double = null,
+    distance: scala.Int | scala.Double = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    format: java.lang.String = null,
+    formatter: js.ThisFunction0[/* this */ AxisLabelFormatterOptions, java.lang.String] = null,
+    maxStaggerLines: scala.Int | scala.Double = null,
+    overflow: java.lang.String | scala.Boolean = null,
+    padding: scala.Int | scala.Double = null,
+    reserveSpace: js.UndefOr[scala.Boolean] = js.undefined,
+    rotation: scala.Int | scala.Double = null,
+    staggerLines: scala.Int | scala.Double = null,
+    step: scala.Int | scala.Double = null,
+    style: CSSObject = null,
+    useHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): AxisLabels = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (autoRotation != null) __obj.updateDynamic("autoRotation")(autoRotation)
+    if (autoRotationLimit != null) __obj.updateDynamic("autoRotationLimit")(autoRotationLimit.asInstanceOf[js.Any])
+    if (distance != null) __obj.updateDynamic("distance")(distance.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (maxStaggerLines != null) __obj.updateDynamic("maxStaggerLines")(maxStaggerLines.asInstanceOf[js.Any])
+    if (overflow != null) __obj.updateDynamic("overflow")(overflow.asInstanceOf[js.Any])
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (!js.isUndefined(reserveSpace)) __obj.updateDynamic("reserveSpace")(reserveSpace)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    if (staggerLines != null) __obj.updateDynamic("staggerLines")(staggerLines.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(useHTML)) __obj.updateDynamic("useHTML")(useHTML)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AxisLabels]
+  }
+}
+

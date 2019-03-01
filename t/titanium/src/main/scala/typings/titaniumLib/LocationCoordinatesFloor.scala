@@ -15,3 +15,12 @@ trait LocationCoordinatesFloor extends js.Object {
   var level: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LocationCoordinatesFloor {
+  @scala.inline
+  def apply(level: scala.Int | scala.Double = null): LocationCoordinatesFloor = {
+    val __obj = js.Dynamic.literal()
+    if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LocationCoordinatesFloor]
+  }
+}
+

@@ -14,3 +14,14 @@ trait AppendOptions extends js.Object {
   var mailbox: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppendOptions {
+  @scala.inline
+  def apply(date: stdLib.Date = null, flags: js.Any = null, mailbox: java.lang.String = null): AppendOptions = {
+    val __obj = js.Dynamic.literal()
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (mailbox != null) __obj.updateDynamic("mailbox")(mailbox)
+    __obj.asInstanceOf[AppendOptions]
+  }
+}
+

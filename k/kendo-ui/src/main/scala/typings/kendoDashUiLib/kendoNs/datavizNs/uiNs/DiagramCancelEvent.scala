@@ -11,3 +11,24 @@ trait DiagramCancelEvent extends DiagramEvent {
   var shape: js.UndefOr[kendoDashUiLib.kendoNs.dataNs.Model] = js.undefined
 }
 
+object DiagramCancelEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: Diagram,
+    connection: kendoDashUiLib.kendoNs.dataNs.Model = null,
+    container: kendoDashUiLib.JQuery = null,
+    shape: kendoDashUiLib.kendoNs.dataNs.Model = null
+  ): DiagramCancelEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    __obj.asInstanceOf[DiagramCancelEvent]
+  }
+}
+

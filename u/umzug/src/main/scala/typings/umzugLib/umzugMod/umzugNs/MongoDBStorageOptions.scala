@@ -22,3 +22,24 @@ trait MongoDBStorageOptions extends Storage {
   var connection: js.UndefOr[mongodbLib.mongodbMod.Db] = js.undefined
 }
 
+object MongoDBStorageOptions {
+  @scala.inline
+  def apply(
+    executed: js.Function0[js.Promise[js.Array[nodeLib.String]]],
+    logMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    unlogMigration: js.Function1[java.lang.String, js.Promise[scala.Unit]],
+    collection: mongodbLib.mongodbMod.Collection[mongodbLib.Default] = null,
+    collectionName: java.lang.String = null,
+    connection: mongodbLib.mongodbMod.Db = null
+  ): MongoDBStorageOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("executed")(executed)
+    __obj.updateDynamic("logMigration")(logMigration)
+    __obj.updateDynamic("unlogMigration")(unlogMigration)
+    if (collection != null) __obj.updateDynamic("collection")(collection)
+    if (collectionName != null) __obj.updateDynamic("collectionName")(collectionName)
+    if (connection != null) __obj.updateDynamic("connection")(connection)
+    __obj.asInstanceOf[MongoDBStorageOptions]
+  }
+}
+

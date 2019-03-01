@@ -16,3 +16,20 @@ trait MediaMetadataInit extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MediaMetadataInit {
+  @scala.inline
+  def apply(
+    album: java.lang.String = null,
+    artist: java.lang.String = null,
+    artwork: js.Array[MediaImage] = null,
+    title: java.lang.String = null
+  ): MediaMetadataInit = {
+    val __obj = js.Dynamic.literal()
+    if (album != null) __obj.updateDynamic("album")(album)
+    if (artist != null) __obj.updateDynamic("artist")(artist)
+    if (artwork != null) __obj.updateDynamic("artwork")(artwork)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[MediaMetadataInit]
+  }
+}
+

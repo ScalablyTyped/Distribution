@@ -9,3 +9,12 @@ trait IThemes extends js.Object {
   var default: ITheme
 }
 
+object IThemes {
+  @scala.inline
+  def apply(default: ITheme): IThemes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("default")(default)
+    __obj.asInstanceOf[IThemes]
+  }
+}
+

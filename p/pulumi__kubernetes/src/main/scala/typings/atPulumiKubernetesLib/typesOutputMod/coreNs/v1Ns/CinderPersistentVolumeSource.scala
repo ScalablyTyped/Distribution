@@ -33,3 +33,20 @@ trait CinderPersistentVolumeSource extends js.Object {
   val volumeID: java.lang.String
 }
 
+object CinderPersistentVolumeSource {
+  @scala.inline
+  def apply(
+    fsType: java.lang.String,
+    readOnly: scala.Boolean,
+    secretRef: SecretReference,
+    volumeID: java.lang.String
+  ): CinderPersistentVolumeSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fsType")(fsType)
+    __obj.updateDynamic("readOnly")(readOnly)
+    __obj.updateDynamic("secretRef")(secretRef)
+    __obj.updateDynamic("volumeID")(volumeID)
+    __obj.asInstanceOf[CinderPersistentVolumeSource]
+  }
+}
+

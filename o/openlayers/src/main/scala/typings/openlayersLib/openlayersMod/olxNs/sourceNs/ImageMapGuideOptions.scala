@@ -18,3 +18,32 @@ trait ImageMapGuideOptions extends js.Object {
   var useOverlay: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ImageMapGuideOptions {
+  @scala.inline
+  def apply(
+    projection: openlayersLib.openlayersMod.ProjectionLike,
+    displayDpi: scala.Int | scala.Double = null,
+    hidpi: js.UndefOr[scala.Boolean] = js.undefined,
+    imageLoadFunction: openlayersLib.openlayersMod.ImageLoadFunctionType = null,
+    metersPerUnit: scala.Int | scala.Double = null,
+    params: openlayersLib.openlayersMod.GlobalObject = null,
+    ratio: scala.Int | scala.Double = null,
+    resolutions: js.Array[scala.Double] = null,
+    url: java.lang.String = null,
+    useOverlay: js.UndefOr[scala.Boolean] = js.undefined
+  ): ImageMapGuideOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("projection")(projection.asInstanceOf[js.Any])
+    if (displayDpi != null) __obj.updateDynamic("displayDpi")(displayDpi.asInstanceOf[js.Any])
+    if (!js.isUndefined(hidpi)) __obj.updateDynamic("hidpi")(hidpi)
+    if (imageLoadFunction != null) __obj.updateDynamic("imageLoadFunction")(imageLoadFunction)
+    if (metersPerUnit != null) __obj.updateDynamic("metersPerUnit")(metersPerUnit.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (ratio != null) __obj.updateDynamic("ratio")(ratio.asInstanceOf[js.Any])
+    if (resolutions != null) __obj.updateDynamic("resolutions")(resolutions)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(useOverlay)) __obj.updateDynamic("useOverlay")(useOverlay)
+    __obj.asInstanceOf[ImageMapGuideOptions]
+  }
+}
+

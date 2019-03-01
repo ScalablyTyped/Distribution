@@ -12,3 +12,20 @@ trait Anon_Context extends js.Object {
   var payload: java.lang.String
 }
 
+object Anon_Context {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    payload: java.lang.String,
+    context: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    grantTokens: js.Array[java.lang.String] = null
+  ): Anon_Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("payload")(payload)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (grantTokens != null) __obj.updateDynamic("grantTokens")(grantTokens)
+    __obj.asInstanceOf[Anon_Context]
+  }
+}
+

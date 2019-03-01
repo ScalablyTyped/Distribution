@@ -19,3 +19,13 @@ trait ListProjectBillingInfoResponse extends js.Object {
   var projectBillingInfo: js.UndefOr[js.Array[ProjectBillingInfo]] = js.undefined
 }
 
+object ListProjectBillingInfoResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, projectBillingInfo: js.Array[ProjectBillingInfo] = null): ListProjectBillingInfoResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (projectBillingInfo != null) __obj.updateDynamic("projectBillingInfo")(projectBillingInfo)
+    __obj.asInstanceOf[ListProjectBillingInfoResponse]
+  }
+}
+

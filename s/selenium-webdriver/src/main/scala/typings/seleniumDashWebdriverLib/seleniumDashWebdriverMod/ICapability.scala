@@ -77,3 +77,46 @@ trait ICapability extends js.Object {
   var VERSION: java.lang.String
 }
 
+object ICapability {
+  @scala.inline
+  def apply(
+    ACCEPT_SSL_CERTS: java.lang.String,
+    BROWSER_NAME: java.lang.String,
+    ELEMENT_SCROLL_BEHAVIOR: java.lang.String,
+    HANDLES_ALERTS: java.lang.String,
+    LOGGING_PREFS: java.lang.String,
+    NATIVE_EVENTS: java.lang.String,
+    PLATFORM: java.lang.String,
+    PROXY: java.lang.String,
+    ROTATABLE: java.lang.String,
+    SECURE_SSL: java.lang.String,
+    SUPPORTS_APPLICATION_CACHE: java.lang.String,
+    SUPPORTS_CSS_SELECTORS: java.lang.String,
+    SUPPORTS_JAVASCRIPT: java.lang.String,
+    SUPPORTS_LOCATION_CONTEXT: java.lang.String,
+    TAKES_SCREENSHOT: java.lang.String,
+    UNEXPECTED_ALERT_BEHAVIOR: java.lang.String,
+    VERSION: java.lang.String
+  ): ICapability = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ACCEPT_SSL_CERTS")(ACCEPT_SSL_CERTS)
+    __obj.updateDynamic("BROWSER_NAME")(BROWSER_NAME)
+    __obj.updateDynamic("ELEMENT_SCROLL_BEHAVIOR")(ELEMENT_SCROLL_BEHAVIOR)
+    __obj.updateDynamic("HANDLES_ALERTS")(HANDLES_ALERTS)
+    __obj.updateDynamic("LOGGING_PREFS")(LOGGING_PREFS)
+    __obj.updateDynamic("NATIVE_EVENTS")(NATIVE_EVENTS)
+    __obj.updateDynamic("PLATFORM")(PLATFORM)
+    __obj.updateDynamic("PROXY")(PROXY)
+    __obj.updateDynamic("ROTATABLE")(ROTATABLE)
+    __obj.updateDynamic("SECURE_SSL")(SECURE_SSL)
+    __obj.updateDynamic("SUPPORTS_APPLICATION_CACHE")(SUPPORTS_APPLICATION_CACHE)
+    __obj.updateDynamic("SUPPORTS_CSS_SELECTORS")(SUPPORTS_CSS_SELECTORS)
+    __obj.updateDynamic("SUPPORTS_JAVASCRIPT")(SUPPORTS_JAVASCRIPT)
+    __obj.updateDynamic("SUPPORTS_LOCATION_CONTEXT")(SUPPORTS_LOCATION_CONTEXT)
+    __obj.updateDynamic("TAKES_SCREENSHOT")(TAKES_SCREENSHOT)
+    __obj.updateDynamic("UNEXPECTED_ALERT_BEHAVIOR")(UNEXPECTED_ALERT_BEHAVIOR)
+    __obj.updateDynamic("VERSION")(VERSION)
+    __obj.asInstanceOf[ICapability]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Anon_CsvInstanceOutput extends js.Object {
   var output: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_CsvInstanceOutput {
+  @scala.inline
+  def apply(csvInstance: js.Array[_] = null, output: java.lang.String = null): Anon_CsvInstanceOutput = {
+    val __obj = js.Dynamic.literal()
+    if (csvInstance != null) __obj.updateDynamic("csvInstance")(csvInstance)
+    if (output != null) __obj.updateDynamic("output")(output)
+    __obj.asInstanceOf[Anon_CsvInstanceOutput]
+  }
+}
+

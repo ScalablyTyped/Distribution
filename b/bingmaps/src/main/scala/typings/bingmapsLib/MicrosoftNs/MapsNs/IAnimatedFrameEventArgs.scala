@@ -12,3 +12,13 @@ trait IAnimatedFrameEventArgs extends js.Object {
   var index: scala.Double
 }
 
+object IAnimatedFrameEventArgs {
+  @scala.inline
+  def apply(animatedTileLayer: AnimatedTileLayer, index: scala.Double): IAnimatedFrameEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("animatedTileLayer")(animatedTileLayer)
+    __obj.updateDynamic("index")(index)
+    __obj.asInstanceOf[IAnimatedFrameEventArgs]
+  }
+}
+

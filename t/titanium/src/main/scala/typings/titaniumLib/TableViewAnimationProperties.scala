@@ -23,3 +23,18 @@ trait TableViewAnimationProperties extends js.Object {
   var position: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TableViewAnimationProperties {
+  @scala.inline
+  def apply(
+    animated: js.UndefOr[scala.Boolean] = js.undefined,
+    animationStyle: scala.Int | scala.Double = null,
+    position: scala.Int | scala.Double = null
+  ): TableViewAnimationProperties = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (animationStyle != null) __obj.updateDynamic("animationStyle")(animationStyle.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableViewAnimationProperties]
+  }
+}
+

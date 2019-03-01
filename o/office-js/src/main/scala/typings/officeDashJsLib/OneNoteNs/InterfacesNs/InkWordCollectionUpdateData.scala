@@ -10,3 +10,12 @@ trait InkWordCollectionUpdateData extends js.Object {
   var items: js.UndefOr[js.Array[InkWordData]] = js.undefined
 }
 
+object InkWordCollectionUpdateData {
+  @scala.inline
+  def apply(items: js.Array[InkWordData] = null): InkWordCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    __obj.asInstanceOf[InkWordCollectionUpdateData]
+  }
+}
+

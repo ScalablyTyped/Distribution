@@ -39,3 +39,38 @@ trait UpdateNotificationOptions extends js.Object {
   var `type`: js.UndefOr[TemplateType] = js.undefined
 }
 
+object UpdateNotificationOptions {
+  @scala.inline
+  def apply(
+    appIconMaskUrl: java.lang.String = null,
+    buttons: js.Array[firefoxDashWebextDashBrowserLib.Anon_IconUrl] = null,
+    contextMessage: java.lang.String = null,
+    eventTime: scala.Int | scala.Double = null,
+    iconUrl: java.lang.String = null,
+    imageUrl: java.lang.String = null,
+    isClickable: js.UndefOr[scala.Boolean] = js.undefined,
+    items: js.Array[NotificationItem] = null,
+    message: java.lang.String = null,
+    priority: scala.Int | scala.Double = null,
+    progress: scala.Int | scala.Double = null,
+    title: java.lang.String = null,
+    `type`: TemplateType = null
+  ): UpdateNotificationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (appIconMaskUrl != null) __obj.updateDynamic("appIconMaskUrl")(appIconMaskUrl)
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (contextMessage != null) __obj.updateDynamic("contextMessage")(contextMessage)
+    if (eventTime != null) __obj.updateDynamic("eventTime")(eventTime.asInstanceOf[js.Any])
+    if (iconUrl != null) __obj.updateDynamic("iconUrl")(iconUrl)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (!js.isUndefined(isClickable)) __obj.updateDynamic("isClickable")(isClickable)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (progress != null) __obj.updateDynamic("progress")(progress.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[UpdateNotificationOptions]
+  }
+}
+

@@ -10,3 +10,13 @@ trait TextInputSelectionChangeEventData extends js.Object {
   var target: scala.Double
 }
 
+object TextInputSelectionChangeEventData {
+  @scala.inline
+  def apply(selection: reactDashNativeLib.Anon_End, target: scala.Double): TextInputSelectionChangeEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("selection")(selection)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[TextInputSelectionChangeEventData]
+  }
+}
+

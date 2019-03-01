@@ -21,3 +21,13 @@ trait FederatedCredentialRequestOptions extends js.Object {
   var providers: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object FederatedCredentialRequestOptions {
+  @scala.inline
+  def apply(protocols: js.Array[java.lang.String] = null, providers: js.Array[java.lang.String] = null): FederatedCredentialRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    if (protocols != null) __obj.updateDynamic("protocols")(protocols)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    __obj.asInstanceOf[FederatedCredentialRequestOptions]
+  }
+}
+

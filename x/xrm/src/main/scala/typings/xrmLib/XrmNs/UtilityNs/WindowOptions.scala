@@ -15,3 +15,12 @@ trait WindowOptions extends js.Object {
   var openInNewWindow: scala.Boolean
 }
 
+object WindowOptions {
+  @scala.inline
+  def apply(openInNewWindow: scala.Boolean): WindowOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("openInNewWindow")(openInNewWindow)
+    __obj.asInstanceOf[WindowOptions]
+  }
+}
+

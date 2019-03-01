@@ -13,3 +13,12 @@ trait PanControlOptions extends js.Object {
   var position: js.UndefOr[ControlPosition] = js.undefined
 }
 
+object PanControlOptions {
+  @scala.inline
+  def apply(position: ControlPosition = null): PanControlOptions = {
+    val __obj = js.Dynamic.literal()
+    if (position != null) __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[PanControlOptions]
+  }
+}
+

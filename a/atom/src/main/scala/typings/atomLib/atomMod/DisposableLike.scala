@@ -9,3 +9,12 @@ trait DisposableLike extends js.Object {
   def dispose(): scala.Unit
 }
 
+object DisposableLike {
+  @scala.inline
+  def apply(dispose: js.Function0[scala.Unit]): DisposableLike = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.asInstanceOf[DisposableLike]
+  }
+}
+

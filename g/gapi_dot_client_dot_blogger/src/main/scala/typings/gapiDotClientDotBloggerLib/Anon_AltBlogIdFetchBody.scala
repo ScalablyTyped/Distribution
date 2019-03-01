@@ -40,3 +40,38 @@ trait Anon_AltBlogIdFetchBody extends js.Object {
   var view: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltBlogIdFetchBody {
+  @scala.inline
+  def apply(
+    blogId: java.lang.String,
+    postId: java.lang.String,
+    alt: java.lang.String = null,
+    fetchBody: js.UndefOr[scala.Boolean] = js.undefined,
+    fetchImages: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: java.lang.String = null,
+    key: java.lang.String = null,
+    maxComments: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null,
+    view: java.lang.String = null
+  ): Anon_AltBlogIdFetchBody = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("blogId")(blogId)
+    __obj.updateDynamic("postId")(postId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(fetchBody)) __obj.updateDynamic("fetchBody")(fetchBody)
+    if (!js.isUndefined(fetchImages)) __obj.updateDynamic("fetchImages")(fetchImages)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxComments != null) __obj.updateDynamic("maxComments")(maxComments.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[Anon_AltBlogIdFetchBody]
+  }
+}
+

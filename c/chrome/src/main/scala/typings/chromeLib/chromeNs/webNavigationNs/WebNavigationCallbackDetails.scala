@@ -12,3 +12,13 @@ trait WebNavigationCallbackDetails extends js.Object {
   var timeStamp: scala.Double
 }
 
+object WebNavigationCallbackDetails {
+  @scala.inline
+  def apply(tabId: scala.Double, timeStamp: scala.Double): WebNavigationCallbackDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tabId")(tabId)
+    __obj.updateDynamic("timeStamp")(timeStamp)
+    __obj.asInstanceOf[WebNavigationCallbackDetails]
+  }
+}
+

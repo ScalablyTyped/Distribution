@@ -16,3 +16,32 @@ trait AttachmentsResource extends js.Object {
   def list(request: gapiDotClientDotMirrorLib.Anon_AltFieldsItemId): gapiDotClientLib.gapiNs.clientNs.Request[AttachmentsListResponse]
 }
 
+object AttachmentsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AltAttachmentId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AltAttachmentId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Attachment]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AltFieldsItemId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Attachment]
+    ],
+    list: js.Function1[
+      gapiDotClientDotMirrorLib.Anon_AltFieldsItemId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AttachmentsListResponse]
+    ]
+  ): AttachmentsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[AttachmentsResource]
+  }
+}
+

@@ -39,3 +39,40 @@ trait Anon_AltCustomerIdDate extends js.Object {
   var userKey: java.lang.String
 }
 
+object Anon_AltCustomerIdDate {
+  @scala.inline
+  def apply(
+    date: java.lang.String,
+    userKey: java.lang.String,
+    alt: java.lang.String = null,
+    customerId: java.lang.String = null,
+    fields: java.lang.String = null,
+    filters: java.lang.String = null,
+    key: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    parameters: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltCustomerIdDate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("userKey")(userKey)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltCustomerIdDate]
+  }
+}
+

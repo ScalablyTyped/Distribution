@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object soundmanager2LibStrings {
   @js.native
-  sealed trait always extends js.Object
+  sealed trait always
+    extends soundmanager2Lib.soundmanagerNs.ScriptAccess
   
   @js.native
-  sealed trait sameDomain extends js.Object
+  sealed trait sameDomain
+    extends soundmanager2Lib.soundmanagerNs.ScriptAccess
   
   @scala.inline
   def always: always = "always".asInstanceOf[always]

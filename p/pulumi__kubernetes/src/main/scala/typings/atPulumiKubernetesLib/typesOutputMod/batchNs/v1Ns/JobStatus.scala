@@ -40,3 +40,24 @@ trait JobStatus extends js.Object {
   val succeeded: scala.Double
 }
 
+object JobStatus {
+  @scala.inline
+  def apply(
+    active: scala.Double,
+    completionTime: java.lang.String,
+    conditions: js.Array[JobCondition],
+    failed: scala.Double,
+    startTime: java.lang.String,
+    succeeded: scala.Double
+  ): JobStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("active")(active)
+    __obj.updateDynamic("completionTime")(completionTime)
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.updateDynamic("failed")(failed)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("succeeded")(succeeded)
+    __obj.asInstanceOf[JobStatus]
+  }
+}
+

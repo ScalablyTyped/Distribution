@@ -24,3 +24,12 @@ trait GeoJsonObject extends js.Object {
   var `type`: GeoJsonTypes
 }
 
+object GeoJsonObject {
+  @scala.inline
+  def apply(`type`: GeoJsonTypes, bbox: BBox = null): GeoJsonObject = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GeoJsonObject]
+  }
+}
+

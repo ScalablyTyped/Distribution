@@ -28,3 +28,22 @@ trait EdgeTraversal extends js.Object {
   var stepOverEdgeCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object EdgeTraversal {
+  @scala.inline
+  def apply(
+    edgeId: java.lang.String,
+    finalState: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    message: Message = null,
+    properties: PropertyBag = null,
+    stepOverEdgeCount: scala.Int | scala.Double = null
+  ): EdgeTraversal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("edgeId")(edgeId)
+    if (finalState != null) __obj.updateDynamic("finalState")(finalState)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (stepOverEdgeCount != null) __obj.updateDynamic("stepOverEdgeCount")(stepOverEdgeCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EdgeTraversal]
+  }
+}
+

@@ -18,3 +18,22 @@ trait EntitySpecification extends js.Object {
   var schema: java.lang.String
 }
 
+object EntitySpecification {
+  @scala.inline
+  def apply(
+    db: Database,
+    loader: java.lang.String,
+    name: java.lang.String,
+    path: java.lang.String,
+    schema: java.lang.String
+  ): EntitySpecification = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("db")(db)
+    __obj.updateDynamic("loader")(loader)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[EntitySpecification]
+  }
+}
+

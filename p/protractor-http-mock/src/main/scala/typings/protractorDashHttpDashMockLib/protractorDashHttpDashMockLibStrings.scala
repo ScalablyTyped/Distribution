@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object protractorDashHttpDashMockLibStrings {
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait HEAD
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
   
   @js.native
-  sealed trait JSONP extends js.Object
+  sealed trait JSONP
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

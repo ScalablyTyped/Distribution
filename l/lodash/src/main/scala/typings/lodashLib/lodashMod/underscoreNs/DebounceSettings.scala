@@ -21,3 +21,18 @@ trait DebounceSettings extends js.Object {
   var trailing: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DebounceSettings {
+  @scala.inline
+  def apply(
+    leading: js.UndefOr[scala.Boolean] = js.undefined,
+    maxWait: scala.Int | scala.Double = null,
+    trailing: js.UndefOr[scala.Boolean] = js.undefined
+  ): DebounceSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(leading)) __obj.updateDynamic("leading")(leading)
+    if (maxWait != null) __obj.updateDynamic("maxWait")(maxWait.asInstanceOf[js.Any])
+    if (!js.isUndefined(trailing)) __obj.updateDynamic("trailing")(trailing)
+    __obj.asInstanceOf[DebounceSettings]
+  }
+}
+

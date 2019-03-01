@@ -28,3 +28,22 @@ trait FunctionDescription extends js.Object {
   var Name: java.lang.String
 }
 
+object FunctionDescription {
+  @scala.inline
+  def apply(
+    Arguments: activexDashInteropLib.SafeArray[FunctionArgument],
+    Category: scala.Double,
+    Description: java.lang.String,
+    Id: scala.Double,
+    Name: java.lang.String
+  ): FunctionDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Arguments")(Arguments)
+    __obj.updateDynamic("Category")(Category)
+    __obj.updateDynamic("Description")(Description)
+    __obj.updateDynamic("Id")(Id)
+    __obj.updateDynamic("Name")(Name)
+    __obj.asInstanceOf[FunctionDescription]
+  }
+}
+

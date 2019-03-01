@@ -14,3 +14,27 @@ trait ProductstatusesResource extends js.Object {
   def list(request: gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributesIncludeInvalidInsertedItems): gapiDotClientLib.gapiNs.clientNs.Request[ProductstatusesListResponse]
 }
 
+object ProductstatusesResource {
+  @scala.inline
+  def apply(
+    custombatch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributes, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductstatusesCustomBatchResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributesKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductStatus]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFieldsIncludeAttributesIncludeInvalidInsertedItems, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ProductstatusesListResponse]
+    ]
+  ): ProductstatusesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custombatch")(custombatch)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ProductstatusesResource]
+  }
+}
+

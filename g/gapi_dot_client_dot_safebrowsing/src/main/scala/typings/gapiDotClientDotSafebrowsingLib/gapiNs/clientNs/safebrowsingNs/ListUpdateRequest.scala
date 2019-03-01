@@ -21,3 +21,22 @@ trait ListUpdateRequest extends js.Object {
   var threatType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListUpdateRequest {
+  @scala.inline
+  def apply(
+    constraints: Constraints = null,
+    platformType: java.lang.String = null,
+    state: java.lang.String = null,
+    threatEntryType: java.lang.String = null,
+    threatType: java.lang.String = null
+  ): ListUpdateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (constraints != null) __obj.updateDynamic("constraints")(constraints)
+    if (platformType != null) __obj.updateDynamic("platformType")(platformType)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (threatEntryType != null) __obj.updateDynamic("threatEntryType")(threatEntryType)
+    if (threatType != null) __obj.updateDynamic("threatType")(threatType)
+    __obj.asInstanceOf[ListUpdateRequest]
+  }
+}
+

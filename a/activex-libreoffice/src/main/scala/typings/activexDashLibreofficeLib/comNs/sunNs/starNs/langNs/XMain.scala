@@ -19,3 +19,20 @@ trait XMain
   def run(aArguments: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): scala.Double
 }
 
+object XMain {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    run: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Double]
+  ): XMain = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("run")(run)
+    __obj.asInstanceOf[XMain]
+  }
+}
+

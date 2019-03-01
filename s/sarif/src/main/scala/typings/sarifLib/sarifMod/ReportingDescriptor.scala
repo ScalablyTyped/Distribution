@@ -53,3 +53,32 @@ trait ReportingDescriptor extends js.Object {
   var shortDescription: js.UndefOr[Message] = js.undefined
 }
 
+object ReportingDescriptor {
+  @scala.inline
+  def apply(
+    defaultConfiguration: ReportingConfiguration = null,
+    deprecatedIds: js.Array[java.lang.String] = null,
+    fullDescription: Message = null,
+    help: Message = null,
+    helpUri: java.lang.String = null,
+    id: java.lang.String = null,
+    messageStrings: org.scalablytyped.runtime.StringDictionary[MultiformatMessageString] = null,
+    name: Message = null,
+    properties: PropertyBag = null,
+    shortDescription: Message = null
+  ): ReportingDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (defaultConfiguration != null) __obj.updateDynamic("defaultConfiguration")(defaultConfiguration)
+    if (deprecatedIds != null) __obj.updateDynamic("deprecatedIds")(deprecatedIds)
+    if (fullDescription != null) __obj.updateDynamic("fullDescription")(fullDescription)
+    if (help != null) __obj.updateDynamic("help")(help)
+    if (helpUri != null) __obj.updateDynamic("helpUri")(helpUri)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (messageStrings != null) __obj.updateDynamic("messageStrings")(messageStrings)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (shortDescription != null) __obj.updateDynamic("shortDescription")(shortDescription)
+    __obj.asInstanceOf[ReportingDescriptor]
+  }
+}
+

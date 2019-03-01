@@ -49,3 +49,33 @@ trait XStarBasicAccess
   def getLibraryContainer(): activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer
 }
 
+object XStarBasicAccess {
+  @scala.inline
+  def apply(
+    LibraryContainer: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer,
+    acquire: js.Function0[scala.Unit],
+    addDialog: js.Function3[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Unit
+    ],
+    addModule: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    createLibrary: js.Function4[java.lang.String, java.lang.String, java.lang.String, java.lang.String, scala.Unit],
+    getLibraryContainer: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameContainer],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XStarBasicAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LibraryContainer")(LibraryContainer)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addDialog")(addDialog)
+    __obj.updateDynamic("addModule")(addModule)
+    __obj.updateDynamic("createLibrary")(createLibrary)
+    __obj.updateDynamic("getLibraryContainer")(getLibraryContainer)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStarBasicAccess]
+  }
+}
+

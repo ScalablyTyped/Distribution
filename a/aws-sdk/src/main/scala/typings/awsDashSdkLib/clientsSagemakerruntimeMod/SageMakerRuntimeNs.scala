@@ -87,12 +87,14 @@ object SageMakerRuntimeNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[InvokeEndpointOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type BodyBlob = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsSagemakerruntimeMod.Blob | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CustomAttributesHeader = java.lang.String
   type EndpointName = java.lang.String
   type Header = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-05-13` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

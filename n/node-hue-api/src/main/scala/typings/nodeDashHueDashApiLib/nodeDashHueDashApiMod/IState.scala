@@ -12,3 +12,20 @@ trait IState extends js.Object {
   var schedules: org.scalablytyped.runtime.StringDictionary[ISchedule]
 }
 
+object IState {
+  @scala.inline
+  def apply(
+    config: IBridgeConfig,
+    groups: org.scalablytyped.runtime.StringDictionary[ILightGroup],
+    lights: org.scalablytyped.runtime.StringDictionary[ILight],
+    schedules: org.scalablytyped.runtime.StringDictionary[ISchedule]
+  ): IState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    __obj.updateDynamic("groups")(groups)
+    __obj.updateDynamic("lights")(lights)
+    __obj.updateDynamic("schedules")(schedules)
+    __obj.asInstanceOf[IState]
+  }
+}
+

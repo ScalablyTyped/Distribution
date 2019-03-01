@@ -28,3 +28,20 @@ trait Anon_AutoEnableScrollAmount extends js.Object {
   var tabindex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_AutoEnableScrollAmount {
+  @scala.inline
+  def apply(
+    enable: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollAmount: mcustomscrollbarLib.mcustomscrollbarLibStrings.auto | scala.Double = null,
+    scrollType: mcustomscrollbarLib.mcustomscrollbarLibStrings.stepless | mcustomscrollbarLib.mcustomscrollbarLibStrings.stepped = null,
+    tabindex: scala.Int | scala.Double = null
+  ): Anon_AutoEnableScrollAmount = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (scrollAmount != null) __obj.updateDynamic("scrollAmount")(scrollAmount.asInstanceOf[js.Any])
+    if (scrollType != null) __obj.updateDynamic("scrollType")(scrollType.asInstanceOf[js.Any])
+    if (tabindex != null) __obj.updateDynamic("tabindex")(tabindex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_AutoEnableScrollAmount]
+  }
+}
+

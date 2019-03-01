@@ -14,3 +14,14 @@ trait Anon_Block extends js.Object {
   var replace: Anon_AnotherTypeOfBowerFile
 }
 
+object Anon_Block {
+  @scala.inline
+  def apply(block: stdLib.RegExp, detect: Anon_TypeOfBowerFile, replace: Anon_AnotherTypeOfBowerFile): Anon_Block = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("block")(block)
+    __obj.updateDynamic("detect")(detect)
+    __obj.updateDynamic("replace")(replace)
+    __obj.asInstanceOf[Anon_Block]
+  }
+}
+

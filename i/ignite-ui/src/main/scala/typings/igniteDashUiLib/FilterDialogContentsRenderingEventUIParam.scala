@@ -16,3 +16,13 @@ trait FilterDialogContentsRenderingEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object FilterDialogContentsRenderingEventUIParam {
+  @scala.inline
+  def apply(dialogElement: java.lang.String = null, owner: js.Any = null): FilterDialogContentsRenderingEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (dialogElement != null) __obj.updateDynamic("dialogElement")(dialogElement)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[FilterDialogContentsRenderingEventUIParam]
+  }
+}
+

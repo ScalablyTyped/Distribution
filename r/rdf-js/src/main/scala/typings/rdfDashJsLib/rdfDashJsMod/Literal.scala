@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Literal extends js.Object {
+trait Literal
+  extends Quad_Object
+     with Term {
   /**
     * A NamedNode whose IRI represents the datatype of the literal.
     */
@@ -30,5 +32,24 @@ trait Literal extends js.Object {
     *                   and the same `value`, `language`, and `datatype`.
     */
   def equals(other: Term): scala.Boolean
+}
+
+object Literal {
+  @scala.inline
+  def apply(
+    datatype: NamedNode,
+    equals: js.Function1[Term, scala.Boolean],
+    language: java.lang.String,
+    termType: rdfDashJsLib.rdfDashJsLibStrings.Literal,
+    value: java.lang.String
+  ): Literal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("datatype")(datatype)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("language")(language)
+    __obj.updateDynamic("termType")(termType)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Literal]
+  }
 }
 

@@ -9,3 +9,12 @@ trait Anon_MsaaSamples extends js.Object {
   var msaaSamples: scala.Double
 }
 
+object Anon_MsaaSamples {
+  @scala.inline
+  def apply(msaaSamples: scala.Double): Anon_MsaaSamples = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("msaaSamples")(msaaSamples)
+    __obj.asInstanceOf[Anon_MsaaSamples]
+  }
+}
+

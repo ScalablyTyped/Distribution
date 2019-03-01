@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 object dfDashVisibleLibStrings {
   @js.native
-  sealed trait both extends js.Object
+  sealed trait both extends Direction
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal extends Direction
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical extends Direction
   
   @scala.inline
   def both: both = "both".asInstanceOf[both]

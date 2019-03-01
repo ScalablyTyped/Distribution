@@ -47,3 +47,21 @@ trait NotificationMessageDetails extends js.Object {
   var `type`: officeDashJsLib.OfficeNs.MailboxEnumsNs.ItemNotificationMessageType
 }
 
+object NotificationMessageDetails {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    `type`: officeDashJsLib.OfficeNs.MailboxEnumsNs.ItemNotificationMessageType,
+    icon: java.lang.String = null,
+    key: java.lang.String = null,
+    persistent: js.UndefOr[scala.Boolean] = js.undefined
+  ): NotificationMessageDetails = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("message")(message)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(persistent)) __obj.updateDynamic("persistent")(persistent)
+    __obj.asInstanceOf[NotificationMessageDetails]
+  }
+}
+

@@ -33,3 +33,22 @@ trait ShortcutParams extends js.Object {
   var userInfo: js.UndefOr[js.Any] = js.undefined
 }
 
+object ShortcutParams {
+  @scala.inline
+  def apply(
+    itemtype: java.lang.String,
+    title: java.lang.String,
+    icon: scala.Double | java.lang.String | titaniumLib.TitaniumNs.ContactsNs.Person = null,
+    subtitle: java.lang.String = null,
+    userInfo: js.Any = null
+  ): ShortcutParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("itemtype")(itemtype)
+    __obj.updateDynamic("title")(title)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (subtitle != null) __obj.updateDynamic("subtitle")(subtitle)
+    if (userInfo != null) __obj.updateDynamic("userInfo")(userInfo)
+    __obj.asInstanceOf[ShortcutParams]
+  }
+}
+

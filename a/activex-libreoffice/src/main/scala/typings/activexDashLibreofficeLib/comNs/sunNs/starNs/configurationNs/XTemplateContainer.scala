@@ -37,3 +37,22 @@ trait XTemplateContainer
   def getElementTemplateName(): java.lang.String
 }
 
+object XTemplateContainer {
+  @scala.inline
+  def apply(
+    ElementTemplateName: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    getElementTemplateName: js.Function0[java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XTemplateContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ElementTemplateName")(ElementTemplateName)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getElementTemplateName")(getElementTemplateName)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XTemplateContainer]
+  }
+}
+

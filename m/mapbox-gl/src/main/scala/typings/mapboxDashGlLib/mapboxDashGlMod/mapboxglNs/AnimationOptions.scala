@@ -19,3 +19,20 @@ trait AnimationOptions extends js.Object {
   var offset: js.UndefOr[PointLike] = js.undefined
 }
 
+object AnimationOptions {
+  @scala.inline
+  def apply(
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    easing: js.Function1[/* time */ scala.Double, scala.Double] = null,
+    offset: PointLike = null
+  ): AnimationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AnimationOptions]
+  }
+}
+

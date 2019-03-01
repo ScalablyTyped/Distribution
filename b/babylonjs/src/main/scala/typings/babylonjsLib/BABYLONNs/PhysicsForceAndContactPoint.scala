@@ -20,3 +20,13 @@ trait PhysicsForceAndContactPoint extends js.Object {
   var force: Vector3
 }
 
+object PhysicsForceAndContactPoint {
+  @scala.inline
+  def apply(contactPoint: Vector3, force: Vector3): PhysicsForceAndContactPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contactPoint")(contactPoint)
+    __obj.updateDynamic("force")(force)
+    __obj.asInstanceOf[PhysicsForceAndContactPoint]
+  }
+}
+

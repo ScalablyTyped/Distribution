@@ -12,3 +12,13 @@ trait ListIndexesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListIndexesResponse {
+  @scala.inline
+  def apply(indexes: js.Array[Index] = null, nextPageToken: java.lang.String = null): ListIndexesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (indexes != null) __obj.updateDynamic("indexes")(indexes)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListIndexesResponse]
+  }
+}
+

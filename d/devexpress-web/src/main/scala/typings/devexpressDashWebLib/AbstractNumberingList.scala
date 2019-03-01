@@ -16,3 +16,12 @@ trait AbstractNumberingList extends js.Object {
   var deleted: scala.Boolean
 }
 
+object AbstractNumberingList {
+  @scala.inline
+  def apply(deleted: scala.Boolean): AbstractNumberingList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deleted")(deleted)
+    __obj.asInstanceOf[AbstractNumberingList]
+  }
+}
+

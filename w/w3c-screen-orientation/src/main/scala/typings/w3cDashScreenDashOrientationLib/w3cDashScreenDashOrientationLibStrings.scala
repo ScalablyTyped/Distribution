@@ -7,31 +7,39 @@ import scala.scalajs.js.annotation._
 
 object w3cDashScreenDashOrientationLibStrings {
   @js.native
-  sealed trait any extends js.Object
+  sealed trait any extends ScreenOrientationLockType
   
   @js.native
   sealed trait change extends js.Object
   
   @js.native
-  sealed trait landscape extends js.Object
+  sealed trait landscape extends ScreenOrientationLockType
   
   @js.native
-  sealed trait `landscape-primary` extends js.Object
+  sealed trait `landscape-primary`
+    extends OrientationType
+       with ScreenOrientationLockType
   
   @js.native
-  sealed trait `landscape-secondary` extends js.Object
+  sealed trait `landscape-secondary`
+    extends OrientationType
+       with ScreenOrientationLockType
   
   @js.native
-  sealed trait natural extends js.Object
+  sealed trait natural extends ScreenOrientationLockType
   
   @js.native
-  sealed trait portrait extends js.Object
+  sealed trait portrait extends ScreenOrientationLockType
   
   @js.native
-  sealed trait `portrait-primary` extends js.Object
+  sealed trait `portrait-primary`
+    extends OrientationType
+       with ScreenOrientationLockType
   
   @js.native
-  sealed trait `portrait-secondary` extends js.Object
+  sealed trait `portrait-secondary`
+    extends OrientationType
+       with ScreenOrientationLockType
   
   @scala.inline
   def any: any = "any".asInstanceOf[any]

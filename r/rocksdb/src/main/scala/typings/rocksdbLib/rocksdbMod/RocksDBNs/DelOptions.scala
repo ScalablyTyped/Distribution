@@ -10,3 +10,12 @@ trait DelOptions
   var sync: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DelOptions {
+  @scala.inline
+  def apply(sync: js.UndefOr[scala.Boolean] = js.undefined): DelOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    __obj.asInstanceOf[DelOptions]
+  }
+}
+

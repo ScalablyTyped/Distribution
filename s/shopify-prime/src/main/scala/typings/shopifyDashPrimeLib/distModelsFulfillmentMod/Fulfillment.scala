@@ -56,3 +56,38 @@ trait Fulfillment
   var updated_at: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Fulfillment {
+  @scala.inline
+  def apply(
+    admin_graphql_api_id: java.lang.String = null,
+    created_at: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    line_items: js.Array[shopifyDashPrimeLib.distModelsLineUnderscoreItemMod.LineItem] = null,
+    order_id: scala.Int | scala.Double = null,
+    receipt: js.Any = null,
+    status: java.lang.String = null,
+    tracking_company: java.lang.String = null,
+    tracking_number: java.lang.String = null,
+    tracking_numbers: js.Array[java.lang.String] = null,
+    tracking_url: java.lang.String = null,
+    tracking_urls: js.Array[java.lang.String] = null,
+    updated_at: java.lang.String = null
+  ): Fulfillment = {
+    val __obj = js.Dynamic.literal()
+    if (admin_graphql_api_id != null) __obj.updateDynamic("admin_graphql_api_id")(admin_graphql_api_id)
+    if (created_at != null) __obj.updateDynamic("created_at")(created_at)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (line_items != null) __obj.updateDynamic("line_items")(line_items)
+    if (order_id != null) __obj.updateDynamic("order_id")(order_id.asInstanceOf[js.Any])
+    if (receipt != null) __obj.updateDynamic("receipt")(receipt)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (tracking_company != null) __obj.updateDynamic("tracking_company")(tracking_company)
+    if (tracking_number != null) __obj.updateDynamic("tracking_number")(tracking_number)
+    if (tracking_numbers != null) __obj.updateDynamic("tracking_numbers")(tracking_numbers)
+    if (tracking_url != null) __obj.updateDynamic("tracking_url")(tracking_url)
+    if (tracking_urls != null) __obj.updateDynamic("tracking_urls")(tracking_urls)
+    if (updated_at != null) __obj.updateDynamic("updated_at")(updated_at)
+    __obj.asInstanceOf[Fulfillment]
+  }
+}
+

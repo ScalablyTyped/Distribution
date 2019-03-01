@@ -33,3 +33,28 @@ trait UpdateInfo extends js.Object {
   val version: java.lang.String
 }
 
+object UpdateInfo {
+  @scala.inline
+  def apply(
+    files: js.Array[UpdateFileInfo],
+    path: java.lang.String,
+    releaseDate: java.lang.String,
+    sha512: java.lang.String,
+    version: java.lang.String,
+    releaseName: java.lang.String = null,
+    releaseNotes: java.lang.String | js.Array[ReleaseNoteInfo] = null,
+    stagingPercentage: scala.Int | scala.Double = null
+  ): UpdateInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("files")(files)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("releaseDate")(releaseDate)
+    __obj.updateDynamic("sha512")(sha512)
+    __obj.updateDynamic("version")(version)
+    if (releaseName != null) __obj.updateDynamic("releaseName")(releaseName)
+    if (releaseNotes != null) __obj.updateDynamic("releaseNotes")(releaseNotes.asInstanceOf[js.Any])
+    if (stagingPercentage != null) __obj.updateDynamic("stagingPercentage")(stagingPercentage.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UpdateInfo]
+  }
+}
+

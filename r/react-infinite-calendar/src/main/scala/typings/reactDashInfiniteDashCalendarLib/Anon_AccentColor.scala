@@ -15,3 +15,26 @@ trait Anon_AccentColor extends js.Object {
   var weekdayColor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccentColor {
+  @scala.inline
+  def apply(
+    accentColor: java.lang.String = null,
+    floatingNav: Anon_Background = null,
+    headerColor: java.lang.String = null,
+    selectionColor: java.lang.String = null,
+    textColor: Anon_Active = null,
+    todayColor: java.lang.String = null,
+    weekdayColor: java.lang.String = null
+  ): Anon_AccentColor = {
+    val __obj = js.Dynamic.literal()
+    if (accentColor != null) __obj.updateDynamic("accentColor")(accentColor)
+    if (floatingNav != null) __obj.updateDynamic("floatingNav")(floatingNav)
+    if (headerColor != null) __obj.updateDynamic("headerColor")(headerColor)
+    if (selectionColor != null) __obj.updateDynamic("selectionColor")(selectionColor)
+    if (textColor != null) __obj.updateDynamic("textColor")(textColor)
+    if (todayColor != null) __obj.updateDynamic("todayColor")(todayColor)
+    if (weekdayColor != null) __obj.updateDynamic("weekdayColor")(weekdayColor)
+    __obj.asInstanceOf[Anon_AccentColor]
+  }
+}
+

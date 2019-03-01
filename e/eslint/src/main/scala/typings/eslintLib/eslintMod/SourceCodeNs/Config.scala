@@ -13,3 +13,22 @@ trait Config extends js.Object {
   var visitorKeys: js.UndefOr[VisitorKeys] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    ast: eslintLib.eslintMod.ASTNs.Program,
+    text: java.lang.String,
+    parserServices: ParserServices = null,
+    scopeManager: eslintLib.eslintMod.ScopeNs.ScopeManager = null,
+    visitorKeys: VisitorKeys = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ast")(ast)
+    __obj.updateDynamic("text")(text)
+    if (parserServices != null) __obj.updateDynamic("parserServices")(parserServices)
+    if (scopeManager != null) __obj.updateDynamic("scopeManager")(scopeManager)
+    if (visitorKeys != null) __obj.updateDynamic("visitorKeys")(visitorKeys)
+    __obj.asInstanceOf[Config]
+  }
+}
+

@@ -7,40 +7,46 @@ import scala.scalajs.js.annotation._
 
 object activedirectory2LibStrings {
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all extends MembershipType
   
   @js.native
   sealed trait base extends js.Object
   
   @js.native
-  sealed trait cn extends js.Object
+  sealed trait cn
+    extends GroupAttributes
+       with UserAttributes
   
   @js.native
-  sealed trait comment extends js.Object
+  sealed trait comment extends UserAttributes
   
   @js.native
-  sealed trait description extends js.Object
+  sealed trait description
+    extends GroupAttributes
+       with UserAttributes
   
   @js.native
-  sealed trait displayName extends js.Object
+  sealed trait displayName extends UserAttributes
   
   @js.native
-  sealed trait distinguishedName extends js.Object
+  sealed trait distinguishedName
+    extends GroupAttributes
+       with UserAttributes
   
   @js.native
   sealed trait dn extends js.Object
   
   @js.native
-  sealed trait employeeID extends js.Object
+  sealed trait employeeID extends UserAttributes
   
   @js.native
-  sealed trait givenName extends js.Object
+  sealed trait givenName extends UserAttributes
   
   @js.native
-  sealed trait group extends js.Object
+  sealed trait group extends MembershipType
   
   @js.native
-  sealed trait initials extends js.Object
+  sealed trait initials extends UserAttributes
   
   @js.native
   sealed trait `ldaps?://DOT*/CN=Configuration,DOT*` extends js.Object
@@ -52,40 +58,40 @@ object activedirectory2LibStrings {
   sealed trait `ldaps?://ForestDnsZonesBACKSLASHBACKSLASHDOTDOT*/DOT*` extends js.Object
   
   @js.native
-  sealed trait lockoutTime extends js.Object
+  sealed trait lockoutTime extends UserAttributes
   
   @js.native
-  sealed trait mail extends js.Object
+  sealed trait mail extends UserAttributes
   
   @js.native
-  sealed trait objectCategory extends js.Object
+  sealed trait objectCategory extends GroupAttributes
   
   @js.native
   sealed trait one extends js.Object
   
   @js.native
-  sealed trait pwdLastSet extends js.Object
+  sealed trait pwdLastSet extends UserAttributes
   
   @js.native
-  sealed trait sAMAccountName extends js.Object
+  sealed trait sAMAccountName extends UserAttributes
   
   @js.native
-  sealed trait sn extends js.Object
+  sealed trait sn extends UserAttributes
   
   @js.native
   sealed trait sub extends js.Object
   
   @js.native
-  sealed trait user extends js.Object
+  sealed trait user extends MembershipType
   
   @js.native
-  sealed trait userAccountControl extends js.Object
+  sealed trait userAccountControl extends UserAttributes
   
   @js.native
-  sealed trait userPrincipalName extends js.Object
+  sealed trait userPrincipalName extends UserAttributes
   
   @js.native
-  sealed trait whenCreated extends js.Object
+  sealed trait whenCreated extends UserAttributes
   
   @scala.inline
   def all: all = "all".asInstanceOf[all]

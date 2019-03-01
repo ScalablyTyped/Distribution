@@ -31,3 +31,20 @@ trait ASPxClientFileManagerSelectionChangedEventArgs extends ASPxClientEventArgs
   var name: java.lang.String
 }
 
+object ASPxClientFileManagerSelectionChangedEventArgs {
+  @scala.inline
+  def apply(
+    fullName: java.lang.String,
+    isSelected: scala.Boolean,
+    item: ASPxClientFileManagerItem,
+    name: java.lang.String
+  ): ASPxClientFileManagerSelectionChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fullName")(fullName)
+    __obj.updateDynamic("isSelected")(isSelected)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[ASPxClientFileManagerSelectionChangedEventArgs]
+  }
+}
+

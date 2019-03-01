@@ -11,3 +11,12 @@ trait RibbonSettings extends js.Object {
   var applicationTab: js.UndefOr[RibbonSettingsApplicationTab] = js.undefined
 }
 
+object RibbonSettings {
+  @scala.inline
+  def apply(applicationTab: RibbonSettingsApplicationTab = null): RibbonSettings = {
+    val __obj = js.Dynamic.literal()
+    if (applicationTab != null) __obj.updateDynamic("applicationTab")(applicationTab)
+    __obj.asInstanceOf[RibbonSettings]
+  }
+}
+

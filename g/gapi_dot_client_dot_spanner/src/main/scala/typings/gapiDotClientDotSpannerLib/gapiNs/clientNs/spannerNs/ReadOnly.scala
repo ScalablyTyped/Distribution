@@ -70,3 +70,24 @@ trait ReadOnly extends js.Object {
   var strong: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ReadOnly {
+  @scala.inline
+  def apply(
+    exactStaleness: java.lang.String = null,
+    maxStaleness: java.lang.String = null,
+    minReadTimestamp: java.lang.String = null,
+    readTimestamp: java.lang.String = null,
+    returnReadTimestamp: js.UndefOr[scala.Boolean] = js.undefined,
+    strong: js.UndefOr[scala.Boolean] = js.undefined
+  ): ReadOnly = {
+    val __obj = js.Dynamic.literal()
+    if (exactStaleness != null) __obj.updateDynamic("exactStaleness")(exactStaleness)
+    if (maxStaleness != null) __obj.updateDynamic("maxStaleness")(maxStaleness)
+    if (minReadTimestamp != null) __obj.updateDynamic("minReadTimestamp")(minReadTimestamp)
+    if (readTimestamp != null) __obj.updateDynamic("readTimestamp")(readTimestamp)
+    if (!js.isUndefined(returnReadTimestamp)) __obj.updateDynamic("returnReadTimestamp")(returnReadTimestamp)
+    if (!js.isUndefined(strong)) __obj.updateDynamic("strong")(strong)
+    __obj.asInstanceOf[ReadOnly]
+  }
+}
+

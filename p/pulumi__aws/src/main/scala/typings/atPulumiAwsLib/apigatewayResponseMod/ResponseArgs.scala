@@ -36,3 +36,26 @@ trait ResponseArgs extends js.Object {
   val statusCode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ResponseArgs {
+  @scala.inline
+  def apply(
+    responseType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    restApiId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    responseParameters: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null,
+    responseTemplates: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null,
+    statusCode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ResponseArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("responseType")(responseType.asInstanceOf[js.Any])
+    __obj.updateDynamic("restApiId")(restApiId.asInstanceOf[js.Any])
+    if (responseParameters != null) __obj.updateDynamic("responseParameters")(responseParameters.asInstanceOf[js.Any])
+    if (responseTemplates != null) __obj.updateDynamic("responseTemplates")(responseTemplates.asInstanceOf[js.Any])
+    if (statusCode != null) __obj.updateDynamic("statusCode")(statusCode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ResponseArgs]
+  }
+}
+

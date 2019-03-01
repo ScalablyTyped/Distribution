@@ -193,3 +193,82 @@ trait GroupState extends js.Object {
   val waitForElbCapacity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object GroupState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    availabilityZones: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    defaultCooldown: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    desiredCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    enabledMetrics: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.autoscalingMetricsMod.Metric]]
+    ] = null,
+    forceDelete: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    healthCheckGracePeriod: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    healthCheckType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    initialLifecycleHooks: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DefaultResultHeartbeatTimeout]
+      ]
+    ] = null,
+    launchConfiguration: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.ec2LaunchConfigurationMod.LaunchConfiguration] = null,
+    launchTemplate: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IdName] = null,
+    loadBalancers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    maxSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    metricsGranularity: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.autoscalingMetricsMod.MetricsGranularity] = null,
+    minElbCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    minSize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    mixedInstancesPolicy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_InstancesDistributionLaunchTemplate] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    placementGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.ec2PlacementGroupMod.PlacementGroup] = null,
+    protectFromScaleIn: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    serviceLinkedRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    suspendedProcesses: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyPropagateAtLaunch]]
+    ] = null,
+    tagsCollection: atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]]
+    ] = null,
+    targetGroupArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    terminationPolicies: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    vpcZoneIdentifiers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    waitForCapacityTimeout: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    waitForElbCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): GroupState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (availabilityZones != null) __obj.updateDynamic("availabilityZones")(availabilityZones.asInstanceOf[js.Any])
+    if (defaultCooldown != null) __obj.updateDynamic("defaultCooldown")(defaultCooldown.asInstanceOf[js.Any])
+    if (desiredCapacity != null) __obj.updateDynamic("desiredCapacity")(desiredCapacity.asInstanceOf[js.Any])
+    if (enabledMetrics != null) __obj.updateDynamic("enabledMetrics")(enabledMetrics.asInstanceOf[js.Any])
+    if (forceDelete != null) __obj.updateDynamic("forceDelete")(forceDelete.asInstanceOf[js.Any])
+    if (healthCheckGracePeriod != null) __obj.updateDynamic("healthCheckGracePeriod")(healthCheckGracePeriod.asInstanceOf[js.Any])
+    if (healthCheckType != null) __obj.updateDynamic("healthCheckType")(healthCheckType.asInstanceOf[js.Any])
+    if (initialLifecycleHooks != null) __obj.updateDynamic("initialLifecycleHooks")(initialLifecycleHooks.asInstanceOf[js.Any])
+    if (launchConfiguration != null) __obj.updateDynamic("launchConfiguration")(launchConfiguration.asInstanceOf[js.Any])
+    if (launchTemplate != null) __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])
+    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (metricsGranularity != null) __obj.updateDynamic("metricsGranularity")(metricsGranularity.asInstanceOf[js.Any])
+    if (minElbCapacity != null) __obj.updateDynamic("minElbCapacity")(minElbCapacity.asInstanceOf[js.Any])
+    if (minSize != null) __obj.updateDynamic("minSize")(minSize.asInstanceOf[js.Any])
+    if (mixedInstancesPolicy != null) __obj.updateDynamic("mixedInstancesPolicy")(mixedInstancesPolicy.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (placementGroup != null) __obj.updateDynamic("placementGroup")(placementGroup.asInstanceOf[js.Any])
+    if (protectFromScaleIn != null) __obj.updateDynamic("protectFromScaleIn")(protectFromScaleIn.asInstanceOf[js.Any])
+    if (serviceLinkedRoleArn != null) __obj.updateDynamic("serviceLinkedRoleArn")(serviceLinkedRoleArn.asInstanceOf[js.Any])
+    if (suspendedProcesses != null) __obj.updateDynamic("suspendedProcesses")(suspendedProcesses.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (tagsCollection != null) __obj.updateDynamic("tagsCollection")(tagsCollection.asInstanceOf[js.Any])
+    if (targetGroupArns != null) __obj.updateDynamic("targetGroupArns")(targetGroupArns.asInstanceOf[js.Any])
+    if (terminationPolicies != null) __obj.updateDynamic("terminationPolicies")(terminationPolicies.asInstanceOf[js.Any])
+    if (vpcZoneIdentifiers != null) __obj.updateDynamic("vpcZoneIdentifiers")(vpcZoneIdentifiers.asInstanceOf[js.Any])
+    if (waitForCapacityTimeout != null) __obj.updateDynamic("waitForCapacityTimeout")(waitForCapacityTimeout.asInstanceOf[js.Any])
+    if (waitForElbCapacity != null) __obj.updateDynamic("waitForElbCapacity")(waitForElbCapacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GroupState]
+  }
+}
+

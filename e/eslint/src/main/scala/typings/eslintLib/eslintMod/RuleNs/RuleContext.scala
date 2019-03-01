@@ -21,3 +21,38 @@ trait RuleContext extends js.Object {
   def report(descriptor: ReportDescriptor): scala.Unit
 }
 
+object RuleContext {
+  @scala.inline
+  def apply(
+    getAncestors: js.Function0[js.Array[estreeLib.estreeMod.Node]],
+    getDeclaredVariables: js.Function1[estreeLib.estreeMod.Node, js.Array[eslintLib.eslintMod.ScopeNs.Variable]],
+    getFilename: js.Function0[java.lang.String],
+    getScope: js.Function0[eslintLib.eslintMod.ScopeNs.Scope],
+    getSourceCode: js.Function0[eslintLib.eslintMod.SourceCode],
+    id: java.lang.String,
+    markVariableAsUsed: js.Function1[java.lang.String, scala.Boolean],
+    options: js.Array[_],
+    parserOptions: eslintLib.eslintMod.LinterNs.ParserOptions,
+    parserPath: java.lang.String,
+    parserServices: eslintLib.eslintMod.SourceCodeNs.ParserServices,
+    report: js.Function1[ReportDescriptor, scala.Unit],
+    settings: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): RuleContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAncestors")(getAncestors)
+    __obj.updateDynamic("getDeclaredVariables")(getDeclaredVariables)
+    __obj.updateDynamic("getFilename")(getFilename)
+    __obj.updateDynamic("getScope")(getScope)
+    __obj.updateDynamic("getSourceCode")(getSourceCode)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("markVariableAsUsed")(markVariableAsUsed)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("parserOptions")(parserOptions)
+    __obj.updateDynamic("parserPath")(parserPath)
+    __obj.updateDynamic("parserServices")(parserServices)
+    __obj.updateDynamic("report")(report)
+    __obj.updateDynamic("settings")(settings)
+    __obj.asInstanceOf[RuleContext]
+  }
+}
+

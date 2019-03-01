@@ -14,3 +14,12 @@ trait GridAutoRowsProps[TLength] extends js.Object {
   var gridAutoRows: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.GridAutoRowsProperty[TLength]]] = js.undefined
 }
 
+object GridAutoRowsProps {
+  @scala.inline
+  def apply[TLength](gridAutoRows: ResponsiveValue[csstypeLib.csstypeMod.GridAutoRowsProperty[TLength]] = null): GridAutoRowsProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (gridAutoRows != null) __obj.updateDynamic("gridAutoRows")(gridAutoRows.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridAutoRowsProps[TLength]]
+  }
+}
+

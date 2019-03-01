@@ -10,3 +10,13 @@ trait IntrinsicProps extends js.Object {
   var key: js.UndefOr[Key] = js.undefined
 }
 
+object IntrinsicProps {
+  @scala.inline
+  def apply(content: Content | js.Array[Content] = null, key: Key = null): IntrinsicProps = {
+    val __obj = js.Dynamic.literal()
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IntrinsicProps]
+  }
+}
+

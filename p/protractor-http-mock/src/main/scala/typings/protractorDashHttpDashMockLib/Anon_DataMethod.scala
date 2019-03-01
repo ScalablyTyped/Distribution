@@ -12,3 +12,20 @@ trait Anon_DataMethod[TPayload] extends js.Object {
   var regex: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_DataMethod {
+  @scala.inline
+  def apply[TPayload](
+    data: TPayload,
+    method: protractorDashHttpDashMockLib.protractorDashHttpDashMockMod.mockNs.requestsNs.Method,
+    path: java.lang.String,
+    regex: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_DataMethod[TPayload] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(regex)) __obj.updateDynamic("regex")(regex)
+    __obj.asInstanceOf[Anon_DataMethod[TPayload]]
+  }
+}
+

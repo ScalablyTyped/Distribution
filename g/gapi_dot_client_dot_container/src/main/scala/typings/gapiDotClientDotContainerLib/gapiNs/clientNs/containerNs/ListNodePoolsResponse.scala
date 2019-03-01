@@ -10,3 +10,12 @@ trait ListNodePoolsResponse extends js.Object {
   var nodePools: js.UndefOr[js.Array[NodePool]] = js.undefined
 }
 
+object ListNodePoolsResponse {
+  @scala.inline
+  def apply(nodePools: js.Array[NodePool] = null): ListNodePoolsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nodePools != null) __obj.updateDynamic("nodePools")(nodePools)
+    __obj.asInstanceOf[ListNodePoolsResponse]
+  }
+}
+

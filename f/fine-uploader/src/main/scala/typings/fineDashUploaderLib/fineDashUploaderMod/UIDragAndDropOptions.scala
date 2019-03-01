@@ -20,3 +20,13 @@ trait UIDragAndDropOptions extends js.Object {
   var reportDirectoryPaths: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UIDragAndDropOptions {
+  @scala.inline
+  def apply(extraDropzones: js.Array[_] = null, reportDirectoryPaths: js.UndefOr[scala.Boolean] = js.undefined): UIDragAndDropOptions = {
+    val __obj = js.Dynamic.literal()
+    if (extraDropzones != null) __obj.updateDynamic("extraDropzones")(extraDropzones)
+    if (!js.isUndefined(reportDirectoryPaths)) __obj.updateDynamic("reportDirectoryPaths")(reportDirectoryPaths)
+    __obj.asInstanceOf[UIDragAndDropOptions]
+  }
+}
+

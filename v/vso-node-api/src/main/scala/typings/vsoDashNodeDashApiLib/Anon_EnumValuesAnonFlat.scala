@@ -9,3 +9,12 @@ trait Anon_EnumValuesAnonFlat extends js.Object {
   var enumValues: Anon_Flat
 }
 
+object Anon_EnumValuesAnonFlat {
+  @scala.inline
+  def apply(enumValues: Anon_Flat): Anon_EnumValuesAnonFlat = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enumValues")(enumValues)
+    __obj.asInstanceOf[Anon_EnumValuesAnonFlat]
+  }
+}
+

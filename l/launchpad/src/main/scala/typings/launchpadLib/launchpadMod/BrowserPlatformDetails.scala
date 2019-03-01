@@ -27,3 +27,41 @@ trait BrowserPlatformDetails extends js.Object {
   var versionKey: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BrowserPlatformDetails {
+  @scala.inline
+  def apply(
+    args: js.Array[java.lang.String] = null,
+    command: java.lang.String = null,
+    cwd: java.lang.String = null,
+    defaultLocation: java.lang.String = null,
+    getCommand: js.Function3[
+      /* browser */ BrowserPlatformDetails, 
+      /* url */ java.lang.String, 
+      /* args */ js.Array[java.lang.String], 
+      java.lang.String
+    ] = null,
+    imageName: java.lang.String = null,
+    multi: js.UndefOr[scala.Boolean] = js.undefined,
+    opensTab: js.UndefOr[scala.Boolean] = js.undefined,
+    pathQuery: java.lang.String = null,
+    plistPath: java.lang.String = null,
+    process: java.lang.String = null,
+    versionKey: java.lang.String = null
+  ): BrowserPlatformDetails = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (command != null) __obj.updateDynamic("command")(command)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (defaultLocation != null) __obj.updateDynamic("defaultLocation")(defaultLocation)
+    if (getCommand != null) __obj.updateDynamic("getCommand")(getCommand)
+    if (imageName != null) __obj.updateDynamic("imageName")(imageName)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    if (!js.isUndefined(opensTab)) __obj.updateDynamic("opensTab")(opensTab)
+    if (pathQuery != null) __obj.updateDynamic("pathQuery")(pathQuery)
+    if (plistPath != null) __obj.updateDynamic("plistPath")(plistPath)
+    if (process != null) __obj.updateDynamic("process")(process)
+    if (versionKey != null) __obj.updateDynamic("versionKey")(versionKey)
+    __obj.asInstanceOf[BrowserPlatformDetails]
+  }
+}
+

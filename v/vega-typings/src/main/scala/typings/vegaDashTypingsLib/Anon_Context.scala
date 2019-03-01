@@ -13,3 +13,22 @@ trait Anon_Context extends js.Object {
   var width: scala.Double
 }
 
+object Anon_Context {
+  @scala.inline
+  def apply(
+    context: vegaDashTypingsLib.typesRuntimeSceneMod.SceneContext,
+    height: scala.Double,
+    items: js.Array[vegaDashTypingsLib.typesRuntimeSceneMod.SceneItem],
+    width: scala.Double,
+    stroke: java.lang.String = null
+  ): Anon_Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("width")(width)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    __obj.asInstanceOf[Anon_Context]
+  }
+}
+

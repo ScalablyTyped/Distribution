@@ -39,3 +39,34 @@ trait AnnotateImageResponse extends js.Object {
   var webDetection: js.UndefOr[WebDetection] = js.undefined
 }
 
+object AnnotateImageResponse {
+  @scala.inline
+  def apply(
+    cropHintsAnnotation: CropHintsAnnotation = null,
+    error: Status = null,
+    faceAnnotations: js.Array[FaceAnnotation] = null,
+    fullTextAnnotation: TextAnnotation = null,
+    imagePropertiesAnnotation: ImageProperties = null,
+    labelAnnotations: js.Array[EntityAnnotation] = null,
+    landmarkAnnotations: js.Array[EntityAnnotation] = null,
+    logoAnnotations: js.Array[EntityAnnotation] = null,
+    safeSearchAnnotation: SafeSearchAnnotation = null,
+    textAnnotations: js.Array[EntityAnnotation] = null,
+    webDetection: WebDetection = null
+  ): AnnotateImageResponse = {
+    val __obj = js.Dynamic.literal()
+    if (cropHintsAnnotation != null) __obj.updateDynamic("cropHintsAnnotation")(cropHintsAnnotation)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (faceAnnotations != null) __obj.updateDynamic("faceAnnotations")(faceAnnotations)
+    if (fullTextAnnotation != null) __obj.updateDynamic("fullTextAnnotation")(fullTextAnnotation)
+    if (imagePropertiesAnnotation != null) __obj.updateDynamic("imagePropertiesAnnotation")(imagePropertiesAnnotation)
+    if (labelAnnotations != null) __obj.updateDynamic("labelAnnotations")(labelAnnotations)
+    if (landmarkAnnotations != null) __obj.updateDynamic("landmarkAnnotations")(landmarkAnnotations)
+    if (logoAnnotations != null) __obj.updateDynamic("logoAnnotations")(logoAnnotations)
+    if (safeSearchAnnotation != null) __obj.updateDynamic("safeSearchAnnotation")(safeSearchAnnotation)
+    if (textAnnotations != null) __obj.updateDynamic("textAnnotations")(textAnnotations)
+    if (webDetection != null) __obj.updateDynamic("webDetection")(webDetection)
+    __obj.asInstanceOf[AnnotateImageResponse]
+  }
+}
+

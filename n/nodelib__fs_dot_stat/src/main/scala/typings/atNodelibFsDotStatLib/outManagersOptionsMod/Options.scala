@@ -11,3 +11,18 @@ trait Options extends js.Object {
   var throwErrorOnBrokenSymlinks: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    followSymlinks: js.UndefOr[scala.Boolean] = js.undefined,
+    fs: stdLib.Partial[atNodelibFsDotStatLib.outAdaptersFsMod.FileSystemAdapter] = null,
+    throwErrorOnBrokenSymlinks: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(followSymlinks)) __obj.updateDynamic("followSymlinks")(followSymlinks)
+    if (fs != null) __obj.updateDynamic("fs")(fs)
+    if (!js.isUndefined(throwErrorOnBrokenSymlinks)) __obj.updateDynamic("throwErrorOnBrokenSymlinks")(throwErrorOnBrokenSymlinks)
+    __obj.asInstanceOf[Options]
+  }
+}
+

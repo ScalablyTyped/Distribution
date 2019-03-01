@@ -57,3 +57,36 @@ trait MiscTokenProps extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MiscTokenProps {
+  @scala.inline
+  def apply(
+    alt: java.lang.String = null,
+    block: js.UndefOr[scala.Boolean] = js.undefined,
+    hLevel: scala.Int | scala.Double = null,
+    href: java.lang.String = null,
+    id: scala.Int | scala.Double = null,
+    label: js.Any = null,
+    order: scala.Int | scala.Double = null,
+    params: js.Array[_] = null,
+    src: java.lang.String = null,
+    subId: scala.Int | scala.Double = null,
+    tight: js.UndefOr[scala.Boolean] = js.undefined,
+    title: java.lang.String = null
+  ): MiscTokenProps = {
+    val __obj = js.Dynamic.literal()
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(block)) __obj.updateDynamic("block")(block)
+    if (hLevel != null) __obj.updateDynamic("hLevel")(hLevel.asInstanceOf[js.Any])
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (src != null) __obj.updateDynamic("src")(src)
+    if (subId != null) __obj.updateDynamic("subId")(subId.asInstanceOf[js.Any])
+    if (!js.isUndefined(tight)) __obj.updateDynamic("tight")(tight)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[MiscTokenProps]
+  }
+}
+

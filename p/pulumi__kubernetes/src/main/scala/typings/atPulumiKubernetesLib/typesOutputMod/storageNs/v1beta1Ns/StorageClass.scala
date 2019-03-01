@@ -71,3 +71,32 @@ trait StorageClass extends js.Object {
   val volumeBindingMode: java.lang.String
 }
 
+object StorageClass {
+  @scala.inline
+  def apply(
+    allowVolumeExpansion: scala.Boolean,
+    allowedTopologies: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.TopologySelectorTerm],
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    mountOptions: js.Array[java.lang.String],
+    parameters: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    provisioner: java.lang.String,
+    reclaimPolicy: java.lang.String,
+    volumeBindingMode: java.lang.String
+  ): StorageClass = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowVolumeExpansion")(allowVolumeExpansion)
+    __obj.updateDynamic("allowedTopologies")(allowedTopologies)
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("mountOptions")(mountOptions)
+    __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("provisioner")(provisioner)
+    __obj.updateDynamic("reclaimPolicy")(reclaimPolicy)
+    __obj.updateDynamic("volumeBindingMode")(volumeBindingMode)
+    __obj.asInstanceOf[StorageClass]
+  }
+}
+

@@ -28,3 +28,25 @@ trait TreeHierarchicalDataSourceSettingsTreeDSFiltering
   var toLevel: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TreeHierarchicalDataSourceSettingsTreeDSFiltering {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for TreeHierarchicalDataSourceSettingsTreeDSFiltering
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    displayMode: js.Any = null,
+    fromLevel: scala.Int | scala.Double = null,
+    matchFiltering: java.lang.String = null,
+    toLevel: scala.Int | scala.Double = null
+  ): TreeHierarchicalDataSourceSettingsTreeDSFiltering = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode)
+    if (fromLevel != null) __obj.updateDynamic("fromLevel")(fromLevel.asInstanceOf[js.Any])
+    if (matchFiltering != null) __obj.updateDynamic("matchFiltering")(matchFiltering)
+    if (toLevel != null) __obj.updateDynamic("toLevel")(toLevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSFiltering]
+  }
+}
+

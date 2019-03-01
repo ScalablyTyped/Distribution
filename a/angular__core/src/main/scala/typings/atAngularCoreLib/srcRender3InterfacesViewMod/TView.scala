@@ -214,3 +214,64 @@ trait TView extends js.Object {
   var viewQuery: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentQuery[js.Object] | scala.Null
 }
 
+object TView {
+  @scala.inline
+  def apply(
+    bindingStartIndex: scala.Double,
+    blueprint: LView,
+    childIndex: scala.Double,
+    data: TData,
+    expandoStartIndex: scala.Double,
+    firstTemplatePass: scala.Boolean,
+    id: scala.Double,
+    checkHooks: HookData = null,
+    cleanup: js.Array[_] = null,
+    components: js.Array[scala.Double] = null,
+    contentCheckHooks: HookData = null,
+    contentHooks: HookData = null,
+    contentQueries: js.Array[scala.Double] = null,
+    destroyHooks: HookData = null,
+    directiveRegistry: atAngularCoreLib.srcRender3InterfacesDefinitionMod.DirectiveDefList = null,
+    expandoInstructions: js.Array[
+      scala.Double | atAngularCoreLib.srcRender3InterfacesDefinitionMod.HostBindingsFunction[_] | scala.Null
+    ] = null,
+    firstChild: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode = null,
+    initHooks: HookData = null,
+    node: atAngularCoreLib.srcRender3InterfacesNodeMod.TViewNode | atAngularCoreLib.srcRender3InterfacesNodeMod.TElementNode = null,
+    pipeDestroyHooks: HookData = null,
+    pipeRegistry: atAngularCoreLib.srcRender3InterfacesDefinitionMod.PipeDefList = null,
+    template: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentTemplate[js.Object] = null,
+    viewCheckHooks: HookData = null,
+    viewHooks: HookData = null,
+    viewQuery: atAngularCoreLib.srcRender3InterfacesDefinitionMod.ComponentQuery[js.Object] = null
+  ): TView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bindingStartIndex")(bindingStartIndex)
+    __obj.updateDynamic("blueprint")(blueprint)
+    __obj.updateDynamic("childIndex")(childIndex)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("expandoStartIndex")(expandoStartIndex)
+    __obj.updateDynamic("firstTemplatePass")(firstTemplatePass)
+    __obj.updateDynamic("id")(id)
+    if (checkHooks != null) __obj.updateDynamic("checkHooks")(checkHooks)
+    if (cleanup != null) __obj.updateDynamic("cleanup")(cleanup)
+    if (components != null) __obj.updateDynamic("components")(components)
+    if (contentCheckHooks != null) __obj.updateDynamic("contentCheckHooks")(contentCheckHooks)
+    if (contentHooks != null) __obj.updateDynamic("contentHooks")(contentHooks)
+    if (contentQueries != null) __obj.updateDynamic("contentQueries")(contentQueries)
+    if (destroyHooks != null) __obj.updateDynamic("destroyHooks")(destroyHooks)
+    if (directiveRegistry != null) __obj.updateDynamic("directiveRegistry")(directiveRegistry)
+    if (expandoInstructions != null) __obj.updateDynamic("expandoInstructions")(expandoInstructions)
+    if (firstChild != null) __obj.updateDynamic("firstChild")(firstChild)
+    if (initHooks != null) __obj.updateDynamic("initHooks")(initHooks)
+    if (node != null) __obj.updateDynamic("node")(node.asInstanceOf[js.Any])
+    if (pipeDestroyHooks != null) __obj.updateDynamic("pipeDestroyHooks")(pipeDestroyHooks)
+    if (pipeRegistry != null) __obj.updateDynamic("pipeRegistry")(pipeRegistry)
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (viewCheckHooks != null) __obj.updateDynamic("viewCheckHooks")(viewCheckHooks)
+    if (viewHooks != null) __obj.updateDynamic("viewHooks")(viewHooks)
+    if (viewQuery != null) __obj.updateDynamic("viewQuery")(viewQuery)
+    __obj.asInstanceOf[TView]
+  }
+}
+

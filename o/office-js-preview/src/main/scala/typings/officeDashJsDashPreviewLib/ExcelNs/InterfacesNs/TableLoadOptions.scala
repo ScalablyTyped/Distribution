@@ -129,3 +129,46 @@ trait TableLoadOptions extends js.Object {
   var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 
+object TableLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    autoFilter: AutoFilterLoadOptions = null,
+    columns: TableColumnCollectionLoadOptions = null,
+    highlightFirstColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightLastColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    legacyId: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    rows: TableRowCollectionLoadOptions = null,
+    showBandedColumns: js.UndefOr[scala.Boolean] = js.undefined,
+    showBandedRows: js.UndefOr[scala.Boolean] = js.undefined,
+    showFilterButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showHeaders: js.UndefOr[scala.Boolean] = js.undefined,
+    showTotals: js.UndefOr[scala.Boolean] = js.undefined,
+    sort: TableSortLoadOptions = null,
+    style: js.UndefOr[scala.Boolean] = js.undefined,
+    worksheet: WorksheetLoadOptions = null
+  ): TableLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (autoFilter != null) __obj.updateDynamic("autoFilter")(autoFilter)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (!js.isUndefined(highlightFirstColumn)) __obj.updateDynamic("highlightFirstColumn")(highlightFirstColumn)
+    if (!js.isUndefined(highlightLastColumn)) __obj.updateDynamic("highlightLastColumn")(highlightLastColumn)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(legacyId)) __obj.updateDynamic("legacyId")(legacyId)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (!js.isUndefined(showBandedColumns)) __obj.updateDynamic("showBandedColumns")(showBandedColumns)
+    if (!js.isUndefined(showBandedRows)) __obj.updateDynamic("showBandedRows")(showBandedRows)
+    if (!js.isUndefined(showFilterButton)) __obj.updateDynamic("showFilterButton")(showFilterButton)
+    if (!js.isUndefined(showHeaders)) __obj.updateDynamic("showHeaders")(showHeaders)
+    if (!js.isUndefined(showTotals)) __obj.updateDynamic("showTotals")(showTotals)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(style)) __obj.updateDynamic("style")(style)
+    if (worksheet != null) __obj.updateDynamic("worksheet")(worksheet)
+    __obj.asInstanceOf[TableLoadOptions]
+  }
+}
+

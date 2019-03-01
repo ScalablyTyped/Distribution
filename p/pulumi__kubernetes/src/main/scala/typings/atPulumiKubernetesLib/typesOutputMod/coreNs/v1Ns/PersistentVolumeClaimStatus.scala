@@ -29,3 +29,20 @@ trait PersistentVolumeClaimStatus extends js.Object {
   val phase: java.lang.String
 }
 
+object PersistentVolumeClaimStatus {
+  @scala.inline
+  def apply(
+    accessModes: js.Array[java.lang.String],
+    capacity: js.Object,
+    conditions: js.Array[PersistentVolumeClaimCondition],
+    phase: java.lang.String
+  ): PersistentVolumeClaimStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessModes")(accessModes)
+    __obj.updateDynamic("capacity")(capacity)
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.updateDynamic("phase")(phase)
+    __obj.asInstanceOf[PersistentVolumeClaimStatus]
+  }
+}
+

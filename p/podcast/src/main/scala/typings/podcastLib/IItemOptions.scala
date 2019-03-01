@@ -24,3 +24,44 @@ trait IItemOptions extends js.Object {
   var url: java.lang.String
 }
 
+object IItemOptions {
+  @scala.inline
+  def apply(
+    date: stdLib.Date,
+    description: java.lang.String,
+    guid: java.lang.String,
+    title: java.lang.String,
+    url: java.lang.String,
+    author: java.lang.String = null,
+    categories: js.Array[java.lang.String] = null,
+    enclosure: Anon_File = null,
+    itunesAuthor: java.lang.String = null,
+    itunesDuration: scala.Int | scala.Double = null,
+    itunesExplicit: js.UndefOr[scala.Boolean] = js.undefined,
+    itunesKeywords: js.Array[java.lang.String] = null,
+    itunesSubtitle: java.lang.String = null,
+    itunesSummary: java.lang.String = null,
+    lat: scala.Int | scala.Double = null,
+    long: scala.Int | scala.Double = null
+  ): IItemOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("guid")(guid)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("url")(url)
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (categories != null) __obj.updateDynamic("categories")(categories)
+    if (enclosure != null) __obj.updateDynamic("enclosure")(enclosure)
+    if (itunesAuthor != null) __obj.updateDynamic("itunesAuthor")(itunesAuthor)
+    if (itunesDuration != null) __obj.updateDynamic("itunesDuration")(itunesDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(itunesExplicit)) __obj.updateDynamic("itunesExplicit")(itunesExplicit)
+    if (itunesKeywords != null) __obj.updateDynamic("itunesKeywords")(itunesKeywords)
+    if (itunesSubtitle != null) __obj.updateDynamic("itunesSubtitle")(itunesSubtitle)
+    if (itunesSummary != null) __obj.updateDynamic("itunesSummary")(itunesSummary)
+    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
+    if (long != null) __obj.updateDynamic("long")(long.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IItemOptions]
+  }
+}
+

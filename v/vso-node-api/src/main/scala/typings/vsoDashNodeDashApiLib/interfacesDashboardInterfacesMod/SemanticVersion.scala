@@ -20,3 +20,14 @@ trait SemanticVersion extends js.Object {
   var patch: scala.Double
 }
 
+object SemanticVersion {
+  @scala.inline
+  def apply(major: scala.Double, minor: scala.Double, patch: scala.Double): SemanticVersion = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("major")(major)
+    __obj.updateDynamic("minor")(minor)
+    __obj.updateDynamic("patch")(patch)
+    __obj.asInstanceOf[SemanticVersion]
+  }
+}
+

@@ -21,3 +21,27 @@ trait XFilterAdapter
   ): scala.Unit
 }
 
+object XFilterAdapter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    convert: js.Function5[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XOutputStream, 
+      scala.Boolean, 
+      java.lang.String, 
+      java.lang.String, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFilterAdapter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("convert")(convert)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFilterAdapter]
+  }
+}
+

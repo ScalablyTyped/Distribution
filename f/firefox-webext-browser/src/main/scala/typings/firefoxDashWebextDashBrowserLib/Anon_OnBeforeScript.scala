@@ -21,3 +21,19 @@ trait Anon_OnBeforeScript extends js.Object {
   def register(userScriptOptions: firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.UserScriptOptions): js.Promise[firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.RegisteredUserScript]
 }
 
+object Anon_OnBeforeScript {
+  @scala.inline
+  def apply(
+    onBeforeScript: WebExtEvent[js.Function1[/* userScript */ Anon_DefineGlobals, scala.Unit]],
+    register: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.UserScriptOptions, 
+      js.Promise[firefoxDashWebextDashBrowserLib.browserNs.userScriptsNs.RegisteredUserScript]
+    ]
+  ): Anon_OnBeforeScript = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onBeforeScript")(onBeforeScript)
+    __obj.updateDynamic("register")(register)
+    __obj.asInstanceOf[Anon_OnBeforeScript]
+  }
+}
+

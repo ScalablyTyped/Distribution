@@ -27,8 +27,7 @@ package object xmlNs {
   type EncapsulatedTimeStampCollection = XadesCollection[EncapsulatedTimeStamp]
   type EncapsulatedX509Certificate = EncapsulatedPKIData
   type EncapsulatedX509CertificateCollection = XadesCollection[EncapsulatedX509Certificate]
-  type EncodingType = xadesjsLib.xadesjsLibStrings.der | xadesjsLib.xadesjsLibStrings.ber | xadesjsLib.xadesjsLibStrings.cer | xadesjsLib.xadesjsLibStrings.per | xadesjsLib.xadesjsLibStrings.xer | scala.Null
-  type IdentifierQualifier = xadesjsLib.xadesjsLibStrings.OIDAsURI | xadesjsLib.xadesjsLibStrings.OIDAsURN
+  type EncodingType = _EncodingType | scala.Null
   type IndividualDataObjectsTimeStamp = XAdESTimeStamp
   type IndividualDataObjectsTimeStampCollection = XadesCollection[IndividualDataObjectsTimeStamp]
   type IntegerList = XadesCollection[Integer]

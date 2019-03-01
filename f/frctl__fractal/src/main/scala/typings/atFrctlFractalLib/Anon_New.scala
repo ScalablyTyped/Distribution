@@ -9,3 +9,12 @@ trait Anon_New extends js.Object {
   var `new`: atFrctlFractalLib.atFrctlFractalMod.Fractal
 }
 
+object Anon_New {
+  @scala.inline
+  def apply(`new`: atFrctlFractalLib.atFrctlFractalMod.Fractal): Anon_New = {
+    val __obj = js.Dynamic.literal(`new` = `new`)
+  
+    __obj.asInstanceOf[Anon_New]
+  }
+}
+

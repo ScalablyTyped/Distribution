@@ -32,3 +32,20 @@ trait ICookiesOptions extends js.Object {
   var secure: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ICookiesOptions {
+  @scala.inline
+  def apply(
+    domain: java.lang.String = null,
+    expires: java.lang.String | stdLib.Date = null,
+    path: java.lang.String = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined
+  ): ICookiesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    __obj.asInstanceOf[ICookiesOptions]
+  }
+}
+

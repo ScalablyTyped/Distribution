@@ -151,3 +151,82 @@ trait Anon_ACTION extends js.Object {
   def setBubbleParent(bubbleParent: scala.Boolean): scala.Unit
 }
 
+object Anon_ACTION {
+  @scala.inline
+  def apply(
+    ACTION: scala.Double,
+    ACTIVITY: scala.Double,
+    ADD: scala.Double,
+    BOOKMARKS: scala.Double,
+    CAMERA: scala.Double,
+    CANCEL: scala.Double,
+    COMPOSE: scala.Double,
+    CONTACT_ADD: scala.Double,
+    DISCLOSURE: scala.Double,
+    DONE: scala.Double,
+    EDIT: scala.Double,
+    FAST_FORWARD: scala.Double,
+    FIXED_SPACE: scala.Double,
+    FLEXIBLE_SPACE: scala.Double,
+    INFO_DARK: scala.Double,
+    INFO_LIGHT: scala.Double,
+    ORGANIZE: scala.Double,
+    PAUSE: scala.Double,
+    PLAY: scala.Double,
+    REFRESH: scala.Double,
+    REPLY: scala.Double,
+    REWIND: scala.Double,
+    SAVE: scala.Double,
+    SPINNER: scala.Double,
+    STOP: scala.Double,
+    TRASH: scala.Double,
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+  ): Anon_ACTION = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ACTION")(ACTION)
+    __obj.updateDynamic("ACTIVITY")(ACTIVITY)
+    __obj.updateDynamic("ADD")(ADD)
+    __obj.updateDynamic("BOOKMARKS")(BOOKMARKS)
+    __obj.updateDynamic("CAMERA")(CAMERA)
+    __obj.updateDynamic("CANCEL")(CANCEL)
+    __obj.updateDynamic("COMPOSE")(COMPOSE)
+    __obj.updateDynamic("CONTACT_ADD")(CONTACT_ADD)
+    __obj.updateDynamic("DISCLOSURE")(DISCLOSURE)
+    __obj.updateDynamic("DONE")(DONE)
+    __obj.updateDynamic("EDIT")(EDIT)
+    __obj.updateDynamic("FAST_FORWARD")(FAST_FORWARD)
+    __obj.updateDynamic("FIXED_SPACE")(FIXED_SPACE)
+    __obj.updateDynamic("FLEXIBLE_SPACE")(FLEXIBLE_SPACE)
+    __obj.updateDynamic("INFO_DARK")(INFO_DARK)
+    __obj.updateDynamic("INFO_LIGHT")(INFO_LIGHT)
+    __obj.updateDynamic("ORGANIZE")(ORGANIZE)
+    __obj.updateDynamic("PAUSE")(PAUSE)
+    __obj.updateDynamic("PLAY")(PLAY)
+    __obj.updateDynamic("REFRESH")(REFRESH)
+    __obj.updateDynamic("REPLY")(REPLY)
+    __obj.updateDynamic("REWIND")(REWIND)
+    __obj.updateDynamic("SAVE")(SAVE)
+    __obj.updateDynamic("SPINNER")(SPINNER)
+    __obj.updateDynamic("STOP")(STOP)
+    __obj.updateDynamic("TRASH")(TRASH)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.asInstanceOf[Anon_ACTION]
+  }
+}
+

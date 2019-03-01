@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ExportSpecifier extends NamedDeclaration {
+trait ExportSpecifier
+  extends NamedDeclaration
+     with ImportOrExportSpecifier {
   @JSName("name")
   var name_ExportSpecifier: Identifier = js.native
   @JSName("parent")

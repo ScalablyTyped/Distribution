@@ -971,6 +971,12 @@ object WorkLinkNs extends js.Object {
     var WebsiteCaId: js.UndefOr[Id] = js.undefined
   }
   
+  trait _DeviceStatus extends js.Object
+  
+  trait _FleetStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AuditStreamArn = java.lang.String
   type Boolean = scala.Boolean
@@ -984,12 +990,12 @@ object WorkLinkNs extends js.Object {
   type DeviceOperatingSystemName = java.lang.String
   type DeviceOperatingSystemVersion = java.lang.String
   type DevicePatchLevel = java.lang.String
-  type DeviceStatus = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.SIGNED_OUT | java.lang.String
+  type DeviceStatus = _DeviceStatus | java.lang.String
   type DeviceSummaryList = js.Array[DeviceSummary]
   type DisplayName = java.lang.String
   type FleetArn = java.lang.String
   type FleetName = java.lang.String
-  type FleetStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | awsDashSdkLib.awsDashSdkLibStrings.FAILED_TO_CREATE | awsDashSdkLib.awsDashSdkLibStrings.FAILED_TO_DELETE | java.lang.String
+  type FleetStatus = _FleetStatus | java.lang.String
   type FleetSummaryList = js.Array[FleetSummary]
   type Id = java.lang.String
   type IdentityProviderType = awsDashSdkLib.awsDashSdkLibStrings.SAML | java.lang.String
@@ -1003,6 +1009,6 @@ object WorkLinkNs extends js.Object {
   type Username = java.lang.String
   type VpcId = java.lang.String
   type WebsiteCaSummaryList = js.Array[WebsiteCaSummary]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-09-25` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

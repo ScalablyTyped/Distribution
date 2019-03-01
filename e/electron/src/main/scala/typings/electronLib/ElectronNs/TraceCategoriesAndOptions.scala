@@ -30,3 +30,13 @@ trait TraceCategoriesAndOptions extends js.Object {
   var traceOptions: java.lang.String
 }
 
+object TraceCategoriesAndOptions {
+  @scala.inline
+  def apply(categoryFilter: java.lang.String, traceOptions: java.lang.String): TraceCategoriesAndOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("categoryFilter")(categoryFilter)
+    __obj.updateDynamic("traceOptions")(traceOptions)
+    __obj.asInstanceOf[TraceCategoriesAndOptions]
+  }
+}
+

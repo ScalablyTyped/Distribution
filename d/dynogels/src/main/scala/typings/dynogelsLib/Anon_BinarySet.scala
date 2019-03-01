@@ -13,3 +13,22 @@ trait Anon_BinarySet extends js.Object {
   def uuid(): joiLib.joiMod.AnySchema
 }
 
+object Anon_BinarySet {
+  @scala.inline
+  def apply(
+    binarySet: js.Function0[joiLib.joiMod.AnySchema],
+    numberSet: js.Function0[joiLib.joiMod.AnySchema],
+    stringSet: js.Function0[joiLib.joiMod.AnySchema],
+    timeUUID: js.Function0[joiLib.joiMod.AnySchema],
+    uuid: js.Function0[joiLib.joiMod.AnySchema]
+  ): Anon_BinarySet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("binarySet")(binarySet)
+    __obj.updateDynamic("numberSet")(numberSet)
+    __obj.updateDynamic("stringSet")(stringSet)
+    __obj.updateDynamic("timeUUID")(timeUUID)
+    __obj.updateDynamic("uuid")(uuid)
+    __obj.asInstanceOf[Anon_BinarySet]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Seller extends js.Object {
   var subAccountId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Seller {
+  @scala.inline
+  def apply(accountId: java.lang.String = null, subAccountId: java.lang.String = null): Seller = {
+    val __obj = js.Dynamic.literal()
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId)
+    if (subAccountId != null) __obj.updateDynamic("subAccountId")(subAccountId)
+    __obj.asInstanceOf[Seller]
+  }
+}
+

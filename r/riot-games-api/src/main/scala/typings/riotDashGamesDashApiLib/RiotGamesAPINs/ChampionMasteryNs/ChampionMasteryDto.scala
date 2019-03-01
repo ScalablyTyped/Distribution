@@ -17,3 +17,30 @@ trait ChampionMasteryDto extends js.Object {
   var playerId: scala.Double
 }
 
+object ChampionMasteryDto {
+  @scala.inline
+  def apply(
+    championId: scala.Double,
+    championLevel: scala.Double,
+    championPoints: scala.Double,
+    championPointsSinceLastLevel: scala.Double,
+    championPointsUntilNextLevel: scala.Double,
+    chestGranted: scala.Boolean,
+    highestGrade: java.lang.String,
+    lastPlayTime: scala.Double,
+    playerId: scala.Double
+  ): ChampionMasteryDto = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("championId")(championId)
+    __obj.updateDynamic("championLevel")(championLevel)
+    __obj.updateDynamic("championPoints")(championPoints)
+    __obj.updateDynamic("championPointsSinceLastLevel")(championPointsSinceLastLevel)
+    __obj.updateDynamic("championPointsUntilNextLevel")(championPointsUntilNextLevel)
+    __obj.updateDynamic("chestGranted")(chestGranted)
+    __obj.updateDynamic("highestGrade")(highestGrade)
+    __obj.updateDynamic("lastPlayTime")(lastPlayTime)
+    __obj.updateDynamic("playerId")(playerId)
+    __obj.asInstanceOf[ChampionMasteryDto]
+  }
+}
+

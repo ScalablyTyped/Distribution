@@ -14,5 +14,4 @@ package object VirtualDOMNs {
     T
   ]
   type VChild = js.Array[VTree] | VTree | js.Array[java.lang.String] | java.lang.String
-  type VTree = VText | VNode | Widget | Thunk
 }

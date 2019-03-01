@@ -12,3 +12,13 @@ trait EventChild extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EventChild {
+  @scala.inline
+  def apply(childId: java.lang.String = null, kind: java.lang.String = null): EventChild = {
+    val __obj = js.Dynamic.literal()
+    if (childId != null) __obj.updateDynamic("childId")(childId)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[EventChild]
+  }
+}
+

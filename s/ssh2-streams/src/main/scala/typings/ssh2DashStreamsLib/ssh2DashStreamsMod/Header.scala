@@ -24,3 +24,20 @@ trait Header extends js.Object {
   var versions: Versions
 }
 
+object Header {
+  @scala.inline
+  def apply(
+    comments: java.lang.String,
+    identRaw: java.lang.String,
+    versions: Versions,
+    greeting: java.lang.String = null
+  ): Header = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("comments")(comments)
+    __obj.updateDynamic("identRaw")(identRaw)
+    __obj.updateDynamic("versions")(versions)
+    if (greeting != null) __obj.updateDynamic("greeting")(greeting)
+    __obj.asInstanceOf[Header]
+  }
+}
+

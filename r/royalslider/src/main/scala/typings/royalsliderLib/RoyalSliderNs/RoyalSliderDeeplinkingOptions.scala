@@ -20,3 +20,18 @@ trait RoyalSliderDeeplinkingOptions extends js.Object {
   var prefix: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RoyalSliderDeeplinkingOptions {
+  @scala.inline
+  def apply(
+    change: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    prefix: java.lang.String = null
+  ): RoyalSliderDeeplinkingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(change)) __obj.updateDynamic("change")(change)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (prefix != null) __obj.updateDynamic("prefix")(prefix)
+    __obj.asInstanceOf[RoyalSliderDeeplinkingOptions]
+  }
+}
+

@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object atEmberRunloopLibStrings {
   @js.native
-  sealed trait actions extends js.Object
+  sealed trait actions
+    extends atEmberRunloopLib.dashPrivateTypesMod.EmberRunQueues
   
   @js.native
-  sealed trait afterRender extends js.Object
+  sealed trait afterRender
+    extends atEmberRunloopLib.dashPrivateTypesMod.EmberRunQueues
   
   @js.native
-  sealed trait destroy extends js.Object
+  sealed trait destroy
+    extends atEmberRunloopLib.dashPrivateTypesMod.EmberRunQueues
   
   @js.native
-  sealed trait render extends js.Object
+  sealed trait render
+    extends atEmberRunloopLib.dashPrivateTypesMod.EmberRunQueues
   
   @js.native
-  sealed trait routerTransitions extends js.Object
+  sealed trait routerTransitions
+    extends atEmberRunloopLib.dashPrivateTypesMod.EmberRunQueues
   
   @js.native
-  sealed trait sync extends js.Object
+  sealed trait sync
+    extends atEmberRunloopLib.dashPrivateTypesMod.EmberRunQueues
   
   @scala.inline
   def actions: actions = "actions".asInstanceOf[actions]

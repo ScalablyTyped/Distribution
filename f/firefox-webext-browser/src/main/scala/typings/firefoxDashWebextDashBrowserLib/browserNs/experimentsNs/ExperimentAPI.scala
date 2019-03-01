@@ -12,3 +12,18 @@ trait ExperimentAPI extends js.Object {
   var schema: ExperimentURL
 }
 
+object ExperimentAPI {
+  @scala.inline
+  def apply(
+    schema: ExperimentURL,
+    child: firefoxDashWebextDashBrowserLib.Anon_Paths = null,
+    parent: firefoxDashWebextDashBrowserLib.Anon_Events = null
+  ): ExperimentAPI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("schema")(schema)
+    if (child != null) __obj.updateDynamic("child")(child)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[ExperimentAPI]
+  }
+}
+

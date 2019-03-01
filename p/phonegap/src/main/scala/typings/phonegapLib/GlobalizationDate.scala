@@ -15,3 +15,26 @@ trait GlobalizationDate extends js.Object {
   var year: scala.Double
 }
 
+object GlobalizationDate {
+  @scala.inline
+  def apply(
+    day: scala.Double,
+    hour: scala.Double,
+    millisecond: scala.Double,
+    minute: scala.Double,
+    month: scala.Double,
+    second: scala.Double,
+    year: scala.Double
+  ): GlobalizationDate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("day")(day)
+    __obj.updateDynamic("hour")(hour)
+    __obj.updateDynamic("millisecond")(millisecond)
+    __obj.updateDynamic("minute")(minute)
+    __obj.updateDynamic("month")(month)
+    __obj.updateDynamic("second")(second)
+    __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[GlobalizationDate]
+  }
+}
+

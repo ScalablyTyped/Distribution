@@ -100,3 +100,56 @@ trait BeaconsResource extends js.Object {
   def update(request: gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName): gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
 }
 
+object BeaconsResource {
+  @scala.inline
+  def apply(
+    activate: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    attachments: AttachmentsResource,
+    deactivate: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    decommission: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    diagnostics: DiagnosticsResource,
+    get: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
+    ],
+    list: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListBeaconsResponse]
+    ],
+    register: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
+    ],
+    update: js.Function1[
+      gapiDotClientDotProximitybeaconLib.Anon_AccesstokenAltBeaconName, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Beacon]
+    ]
+  ): BeaconsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activate")(activate)
+    __obj.updateDynamic("attachments")(attachments)
+    __obj.updateDynamic("deactivate")(deactivate)
+    __obj.updateDynamic("decommission")(decommission)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("diagnostics")(diagnostics)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("register")(register)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[BeaconsResource]
+  }
+}
+

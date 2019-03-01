@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- natsDashHemeraLib.natsDashHemeraMod.HemeraNs.Schema because Already inherited */ @js.native
 trait DateSchema extends AnySchema {
   /**
     * Specifies the allowed date format:

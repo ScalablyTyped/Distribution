@@ -7,43 +7,54 @@ import scala.scalajs.js.annotation._
 
 object wpapiLibStrings {
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPMethod
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPMethod
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPMethod
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPMethod
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPMethod
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPArgumentType
   
   @js.native
   sealed trait asc extends js.Object
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPArgumentType
   
   @js.native
   sealed trait desc extends js.Object
   
   @js.native
-  sealed trait integer extends js.Object
+  sealed trait integer
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPArgumentType
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPArgumentType
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPArgumentType
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends wpapiLib.wpapiMod.WPAPINs.HTTPArgumentType
   
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]

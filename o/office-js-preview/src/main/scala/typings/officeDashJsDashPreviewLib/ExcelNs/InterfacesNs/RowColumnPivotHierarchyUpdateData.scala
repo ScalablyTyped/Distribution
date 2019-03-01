@@ -23,3 +23,13 @@ trait RowColumnPivotHierarchyUpdateData extends js.Object {
   var position: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RowColumnPivotHierarchyUpdateData {
+  @scala.inline
+  def apply(name: java.lang.String = null, position: scala.Int | scala.Double = null): RowColumnPivotHierarchyUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RowColumnPivotHierarchyUpdateData]
+  }
+}
+

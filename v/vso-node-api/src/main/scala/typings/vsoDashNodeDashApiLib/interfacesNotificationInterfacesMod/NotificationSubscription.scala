@@ -80,3 +80,48 @@ trait NotificationSubscription extends js.Object {
   var userSettings: SubscriptionUserSettings
 }
 
+object NotificationSubscription {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    adminSettings: SubscriptionAdminSettings,
+    channel: ISubscriptionChannel,
+    description: java.lang.String,
+    diagnostics: SubscriptionDiagnostics,
+    extendedProperties: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    filter: ISubscriptionFilter,
+    flags: SubscriptionFlags,
+    id: java.lang.String,
+    lastModifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    modifiedDate: stdLib.Date,
+    permissions: SubscriptionPermissions,
+    scope: SubscriptionScope,
+    status: SubscriptionStatus,
+    statusMessage: java.lang.String,
+    subscriber: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    url: java.lang.String,
+    userSettings: SubscriptionUserSettings
+  ): NotificationSubscription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("adminSettings")(adminSettings)
+    __obj.updateDynamic("channel")(channel)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("diagnostics")(diagnostics)
+    __obj.updateDynamic("extendedProperties")(extendedProperties)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("flags")(flags)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
+    __obj.updateDynamic("modifiedDate")(modifiedDate)
+    __obj.updateDynamic("permissions")(permissions)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("statusMessage")(statusMessage)
+    __obj.updateDynamic("subscriber")(subscriber)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("userSettings")(userSettings)
+    __obj.asInstanceOf[NotificationSubscription]
+  }
+}
+

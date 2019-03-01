@@ -94,3 +94,30 @@ trait Queue extends js.Object {
   var retryConfig: js.UndefOr[RetryConfig] = js.undefined
 }
 
+object Queue {
+  @scala.inline
+  def apply(
+    appEngineHttpTarget: AppEngineHttpTarget = null,
+    appEngineQueueConfig: AppEngineQueueConfig = null,
+    name: java.lang.String = null,
+    pullQueueConfig: js.Any = null,
+    pullTarget: js.Any = null,
+    purgeTime: java.lang.String = null,
+    queueState: java.lang.String = null,
+    rateLimits: RateLimits = null,
+    retryConfig: RetryConfig = null
+  ): Queue = {
+    val __obj = js.Dynamic.literal()
+    if (appEngineHttpTarget != null) __obj.updateDynamic("appEngineHttpTarget")(appEngineHttpTarget)
+    if (appEngineQueueConfig != null) __obj.updateDynamic("appEngineQueueConfig")(appEngineQueueConfig)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pullQueueConfig != null) __obj.updateDynamic("pullQueueConfig")(pullQueueConfig)
+    if (pullTarget != null) __obj.updateDynamic("pullTarget")(pullTarget)
+    if (purgeTime != null) __obj.updateDynamic("purgeTime")(purgeTime)
+    if (queueState != null) __obj.updateDynamic("queueState")(queueState)
+    if (rateLimits != null) __obj.updateDynamic("rateLimits")(rateLimits)
+    if (retryConfig != null) __obj.updateDynamic("retryConfig")(retryConfig)
+    __obj.asInstanceOf[Queue]
+  }
+}
+

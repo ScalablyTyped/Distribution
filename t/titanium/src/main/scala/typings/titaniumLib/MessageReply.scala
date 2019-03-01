@@ -27,3 +27,20 @@ trait MessageReply extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MessageReply {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    error: java.lang.String = null,
+    message: js.Any = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): MessageReply = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[MessageReply]
+  }
+}
+

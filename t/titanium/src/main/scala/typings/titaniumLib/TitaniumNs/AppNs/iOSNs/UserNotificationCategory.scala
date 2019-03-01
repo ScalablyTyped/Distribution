@@ -40,3 +40,50 @@ trait UserNotificationCategory
   var options: js.Array[scala.Double]
 }
 
+object UserNotificationCategory {
+  @scala.inline
+  def apply(
+    actionsForDefaultContext: js.Array[UserNotificationAction],
+    actionsForMinimalContext: js.Array[UserNotificationAction],
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    categorySummaryFormat: java.lang.String,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    hiddenPreviewsBodyPlaceholder: java.lang.String,
+    identifier: java.lang.String,
+    intentIdentifiers: js.Array[java.lang.String],
+    options: js.Array[scala.Double],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit],
+    getLifecycleContainer: js.Function0[titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup] = null,
+    lifecycleContainer: titaniumLib.TitaniumNs.UINs.Window | titaniumLib.TitaniumNs.UINs.TabGroup = null,
+    setLifecycleContainer: (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.Window, scala.Unit]) with (js.Function1[/* lifecycleContainer */ titaniumLib.TitaniumNs.UINs.TabGroup, scala.Unit]) = null
+  ): UserNotificationCategory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actionsForDefaultContext")(actionsForDefaultContext)
+    __obj.updateDynamic("actionsForMinimalContext")(actionsForMinimalContext)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("categorySummaryFormat")(categorySummaryFormat)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("hiddenPreviewsBodyPlaceholder")(hiddenPreviewsBodyPlaceholder)
+    __obj.updateDynamic("identifier")(identifier)
+    __obj.updateDynamic("intentIdentifiers")(intentIdentifiers)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    if (getLifecycleContainer != null) __obj.updateDynamic("getLifecycleContainer")(getLifecycleContainer)
+    if (lifecycleContainer != null) __obj.updateDynamic("lifecycleContainer")(lifecycleContainer.asInstanceOf[js.Any])
+    if (setLifecycleContainer != null) __obj.updateDynamic("setLifecycleContainer")(setLifecycleContainer)
+    __obj.asInstanceOf[UserNotificationCategory]
+  }
+}
+

@@ -1391,6 +1391,18 @@ object KinesisNs extends js.Object {
     var TargetShardCount: js.UndefOr[PositiveIntegerObject] = js.undefined
   }
   
+  trait _ConsumerStatus extends js.Object
+  
+  trait _EncryptionType extends js.Object
+  
+  trait _MetricsName extends js.Object
+  
+  trait _ShardIteratorType extends js.Object
+  
+  trait _StreamStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type BooleanObject = scala.Boolean
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
@@ -1398,10 +1410,10 @@ object KinesisNs extends js.Object {
   type ConsumerCountObject = scala.Double
   type ConsumerList = js.Array[Consumer]
   type ConsumerName = java.lang.String
-  type ConsumerStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | java.lang.String
+  type ConsumerStatus = _ConsumerStatus | java.lang.String
   type Data = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsKinesisMod.Blob | java.lang.String
   type DescribeStreamInputLimit = scala.Double
-  type EncryptionType = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.KMS | java.lang.String
+  type EncryptionType = _EncryptionType | java.lang.String
   type EnhancedMonitoringList = js.Array[EnhancedMetrics]
   type ErrorCode = java.lang.String
   type ErrorMessage = java.lang.String
@@ -1412,7 +1424,7 @@ object KinesisNs extends js.Object {
   type ListStreamConsumersInputLimit = scala.Double
   type ListStreamsInputLimit = scala.Double
   type ListTagsForStreamInputLimit = scala.Double
-  type MetricsName = awsDashSdkLib.awsDashSdkLibStrings.IncomingBytes | awsDashSdkLib.awsDashSdkLibStrings.IncomingRecords | awsDashSdkLib.awsDashSdkLibStrings.OutgoingBytes | awsDashSdkLib.awsDashSdkLibStrings.OutgoingRecords | awsDashSdkLib.awsDashSdkLibStrings.WriteProvisionedThroughputExceeded | awsDashSdkLib.awsDashSdkLibStrings.ReadProvisionedThroughputExceeded | awsDashSdkLib.awsDashSdkLibStrings.IteratorAgeMilliseconds | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+  type MetricsName = _MetricsName | java.lang.String
   type MetricsNameList = js.Array[MetricsName]
   type MillisBehindLatest = scala.Double
   type NextToken = java.lang.String
@@ -1427,17 +1439,17 @@ object KinesisNs extends js.Object {
   type ShardCountObject = scala.Double
   type ShardId = java.lang.String
   type ShardIterator = java.lang.String
-  type ShardIteratorType = awsDashSdkLib.awsDashSdkLibStrings.AT_SEQUENCE_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.AFTER_SEQUENCE_NUMBER | awsDashSdkLib.awsDashSdkLibStrings.TRIM_HORIZON | awsDashSdkLib.awsDashSdkLibStrings.LATEST | awsDashSdkLib.awsDashSdkLibStrings.AT_TIMESTAMP | java.lang.String
+  type ShardIteratorType = _ShardIteratorType | java.lang.String
   type ShardList = js.Array[Shard]
   type StreamARN = java.lang.String
   type StreamName = java.lang.String
   type StreamNameList = js.Array[StreamName]
-  type StreamStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | java.lang.String
+  type StreamStatus = _StreamStatus | java.lang.String
   type TagKey = java.lang.String
   type TagKeyList = js.Array[TagKey]
   type TagList = js.Array[Tag]
   type TagValue = java.lang.String
   type Timestamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2013-12-02` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

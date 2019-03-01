@@ -26,3 +26,24 @@ trait RowDragStartEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RowDragStartEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    draggedRow: js.Any = null,
+    draggedRowIndex: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    requestType: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): RowDragStartEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (draggedRow != null) __obj.updateDynamic("draggedRow")(draggedRow)
+    if (!js.isUndefined(draggedRowIndex)) __obj.updateDynamic("draggedRowIndex")(draggedRowIndex)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[RowDragStartEventArgs]
+  }
+}
+

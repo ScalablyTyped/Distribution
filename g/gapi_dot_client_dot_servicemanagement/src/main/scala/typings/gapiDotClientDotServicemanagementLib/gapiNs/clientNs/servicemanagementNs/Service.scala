@@ -114,3 +114,70 @@ trait Service extends js.Object {
   var visibility: js.UndefOr[Visibility] = js.undefined
 }
 
+object Service {
+  @scala.inline
+  def apply(
+    apis: js.Array[Api] = null,
+    authentication: Authentication = null,
+    backend: Backend = null,
+    billing: Billing = null,
+    configVersion: scala.Int | scala.Double = null,
+    context: Context = null,
+    control: Control = null,
+    customError: CustomError = null,
+    documentation: Documentation = null,
+    endpoints: js.Array[Endpoint] = null,
+    enums: js.Array[Enum] = null,
+    experimental: Experimental = null,
+    http: Http = null,
+    id: java.lang.String = null,
+    logging: Logging = null,
+    logs: js.Array[LogDescriptor] = null,
+    metrics: js.Array[MetricDescriptor] = null,
+    monitoredResources: js.Array[MonitoredResourceDescriptor] = null,
+    monitoring: Monitoring = null,
+    name: java.lang.String = null,
+    producerProjectId: java.lang.String = null,
+    quota: Quota = null,
+    sourceInfo: SourceInfo = null,
+    systemParameters: SystemParameters = null,
+    systemTypes: js.Array[Type] = null,
+    title: java.lang.String = null,
+    types: js.Array[Type] = null,
+    usage: Usage = null,
+    visibility: Visibility = null
+  ): Service = {
+    val __obj = js.Dynamic.literal()
+    if (apis != null) __obj.updateDynamic("apis")(apis)
+    if (authentication != null) __obj.updateDynamic("authentication")(authentication)
+    if (backend != null) __obj.updateDynamic("backend")(backend)
+    if (billing != null) __obj.updateDynamic("billing")(billing)
+    if (configVersion != null) __obj.updateDynamic("configVersion")(configVersion.asInstanceOf[js.Any])
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (control != null) __obj.updateDynamic("control")(control)
+    if (customError != null) __obj.updateDynamic("customError")(customError)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (endpoints != null) __obj.updateDynamic("endpoints")(endpoints)
+    if (enums != null) __obj.updateDynamic("enums")(enums)
+    if (experimental != null) __obj.updateDynamic("experimental")(experimental)
+    if (http != null) __obj.updateDynamic("http")(http)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (logging != null) __obj.updateDynamic("logging")(logging)
+    if (logs != null) __obj.updateDynamic("logs")(logs)
+    if (metrics != null) __obj.updateDynamic("metrics")(metrics)
+    if (monitoredResources != null) __obj.updateDynamic("monitoredResources")(monitoredResources)
+    if (monitoring != null) __obj.updateDynamic("monitoring")(monitoring)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (producerProjectId != null) __obj.updateDynamic("producerProjectId")(producerProjectId)
+    if (quota != null) __obj.updateDynamic("quota")(quota)
+    if (sourceInfo != null) __obj.updateDynamic("sourceInfo")(sourceInfo)
+    if (systemParameters != null) __obj.updateDynamic("systemParameters")(systemParameters)
+    if (systemTypes != null) __obj.updateDynamic("systemTypes")(systemTypes)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (types != null) __obj.updateDynamic("types")(types)
+    if (usage != null) __obj.updateDynamic("usage")(usage)
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility)
+    __obj.asInstanceOf[Service]
+  }
+}
+

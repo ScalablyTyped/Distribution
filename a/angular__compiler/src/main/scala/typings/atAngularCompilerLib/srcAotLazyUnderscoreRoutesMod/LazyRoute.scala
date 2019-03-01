@@ -11,3 +11,18 @@ trait LazyRoute extends js.Object {
   var route: java.lang.String
 }
 
+object LazyRoute {
+  @scala.inline
+  def apply(
+    module: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol,
+    referencedModule: atAngularCompilerLib.srcAotStaticUnderscoreSymbolMod.StaticSymbol,
+    route: java.lang.String
+  ): LazyRoute = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("module")(module)
+    __obj.updateDynamic("referencedModule")(referencedModule)
+    __obj.updateDynamic("route")(route)
+    __obj.asInstanceOf[LazyRoute]
+  }
+}
+

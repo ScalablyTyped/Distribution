@@ -32,3 +32,50 @@ trait Email extends Model {
   def send(): scala.Unit
 }
 
+object Email {
+  @scala.inline
+  def apply(
+    afterRemote: js.Function2[
+      java.lang.String, 
+      js.Function3[
+        /* ctx */ Context, 
+        /* modelInstanceOrNext */ Email | expressLib.expressMod.eNs.NextFunction, 
+        /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    afterRemoteError: js.Function2[java.lang.String, expressLib.expressMod.eNs.NextFunction, scala.Unit],
+    beforeRemote: js.Function2[
+      java.lang.String, 
+      js.Function3[
+        /* ctx */ Context, 
+        /* modelInstanceOrNext */ Email | expressLib.expressMod.eNs.NextFunction, 
+        /* next */ js.UndefOr[expressLib.expressMod.eNs.NextFunction], 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    from: java.lang.String,
+    html: java.lang.String,
+    send: js.Function0[scala.Unit],
+    settings: Settings,
+    subject: java.lang.String,
+    text: java.lang.String,
+    to: java.lang.String
+  ): Email = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("afterRemote")(afterRemote)
+    __obj.updateDynamic("afterRemoteError")(afterRemoteError)
+    __obj.updateDynamic("beforeRemote")(beforeRemote)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("html")(html)
+    __obj.updateDynamic("send")(send)
+    __obj.updateDynamic("settings")(settings)
+    __obj.updateDynamic("subject")(subject)
+    __obj.updateDynamic("text")(text)
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Email]
+  }
+}
+

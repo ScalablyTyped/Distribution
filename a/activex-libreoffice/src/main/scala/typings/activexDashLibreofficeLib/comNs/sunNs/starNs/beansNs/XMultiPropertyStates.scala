@@ -43,3 +43,32 @@ trait XMultiPropertyStates
   def setPropertiesToDefault(aPropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String]): scala.Unit
 }
 
+object XMultiPropertyStates {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getPropertyDefaults: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[_]
+    ],
+    getPropertyStates: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[PropertyState]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setAllPropertiesToDefault: js.Function0[scala.Unit],
+    setPropertiesToDefault: js.Function1[activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], scala.Unit]
+  ): XMultiPropertyStates = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getPropertyDefaults")(getPropertyDefaults)
+    __obj.updateDynamic("getPropertyStates")(getPropertyStates)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setAllPropertiesToDefault")(setAllPropertiesToDefault)
+    __obj.updateDynamic("setPropertiesToDefault")(setPropertiesToDefault)
+    __obj.asInstanceOf[XMultiPropertyStates]
+  }
+}
+

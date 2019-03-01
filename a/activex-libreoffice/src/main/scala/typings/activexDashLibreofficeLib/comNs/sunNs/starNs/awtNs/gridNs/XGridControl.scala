@@ -63,3 +63,26 @@ trait XGridControl extends js.Object {
   def goToCell(ColumnIndex: scala.Double, RowIndex: scala.Double): scala.Unit
 }
 
+object XGridControl {
+  @scala.inline
+  def apply(
+    CurrentColumn: scala.Double,
+    CurrentRow: scala.Double,
+    getColumnAtPoint: js.Function2[scala.Double, scala.Double, scala.Double],
+    getCurrentColumn: js.Function0[scala.Double],
+    getCurrentRow: js.Function0[scala.Double],
+    getRowAtPoint: js.Function2[scala.Double, scala.Double, scala.Double],
+    goToCell: js.Function2[scala.Double, scala.Double, scala.Unit]
+  ): XGridControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CurrentColumn")(CurrentColumn)
+    __obj.updateDynamic("CurrentRow")(CurrentRow)
+    __obj.updateDynamic("getColumnAtPoint")(getColumnAtPoint)
+    __obj.updateDynamic("getCurrentColumn")(getCurrentColumn)
+    __obj.updateDynamic("getCurrentRow")(getCurrentRow)
+    __obj.updateDynamic("getRowAtPoint")(getRowAtPoint)
+    __obj.updateDynamic("goToCell")(goToCell)
+    __obj.asInstanceOf[XGridControl]
+  }
+}
+

@@ -17,3 +17,32 @@ trait XWebDAVCommandEnvironment extends XCommandEnvironment {
   def getUserRequestHeaders(aURI: java.lang.String, eMethod: WebDAVHTTPMethod): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
 }
 
+object XWebDAVCommandEnvironment {
+  @scala.inline
+  def apply(
+    InteractionHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler,
+    ProgressHandler: XProgressHandler,
+    acquire: js.Function0[scala.Unit],
+    getInteractionHandler: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.taskNs.XInteractionHandler],
+    getProgressHandler: js.Function0[XProgressHandler],
+    getUserRequestHeaders: js.Function2[
+      java.lang.String, 
+      WebDAVHTTPMethod, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.StringPair]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XWebDAVCommandEnvironment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("InteractionHandler")(InteractionHandler)
+    __obj.updateDynamic("ProgressHandler")(ProgressHandler)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getInteractionHandler")(getInteractionHandler)
+    __obj.updateDynamic("getProgressHandler")(getProgressHandler)
+    __obj.updateDynamic("getUserRequestHeaders")(getUserRequestHeaders)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XWebDAVCommandEnvironment]
+  }
+}
+

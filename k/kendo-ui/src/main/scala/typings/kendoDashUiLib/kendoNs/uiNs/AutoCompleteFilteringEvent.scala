@@ -9,3 +9,20 @@ trait AutoCompleteFilteringEvent extends AutoCompleteEvent {
   var filter: js.UndefOr[js.Any] = js.undefined
 }
 
+object AutoCompleteFilteringEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: AutoComplete,
+    filter: js.Any = null
+  ): AutoCompleteFilteringEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    __obj.asInstanceOf[AutoCompleteFilteringEvent]
+  }
+}
+

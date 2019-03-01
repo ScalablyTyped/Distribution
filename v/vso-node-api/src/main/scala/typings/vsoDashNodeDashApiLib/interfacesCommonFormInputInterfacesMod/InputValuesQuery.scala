@@ -17,3 +17,18 @@ trait InputValuesQuery extends js.Object {
   var resource: js.Any
 }
 
+object InputValuesQuery {
+  @scala.inline
+  def apply(
+    currentValues: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    inputValues: js.Array[InputValues],
+    resource: js.Any
+  ): InputValuesQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentValues")(currentValues)
+    __obj.updateDynamic("inputValues")(inputValues)
+    __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[InputValuesQuery]
+  }
+}
+

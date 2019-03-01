@@ -10,3 +10,14 @@ trait AboutResource extends js.Object {
   def get(request: gapiDotClientDotDriveLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[About]
 }
 
+object AboutResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[gapiDotClientDotDriveLib.Anon_Alt, gapiDotClientLib.gapiNs.clientNs.Request[About]]
+  ): AboutResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[AboutResource]
+  }
+}
+

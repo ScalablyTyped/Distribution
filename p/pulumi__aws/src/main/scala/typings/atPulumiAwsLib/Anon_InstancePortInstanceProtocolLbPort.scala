@@ -13,3 +13,22 @@ trait Anon_InstancePortInstanceProtocolLbPort extends js.Object {
   var sslCertificateId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object Anon_InstancePortInstanceProtocolLbPort {
+  @scala.inline
+  def apply(
+    instancePort: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    instanceProtocol: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    lbPort: atPulumiPulumiLib.outputMod.Input[scala.Double],
+    lbProtocol: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    sslCertificateId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): Anon_InstancePortInstanceProtocolLbPort = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("instancePort")(instancePort.asInstanceOf[js.Any])
+    __obj.updateDynamic("instanceProtocol")(instanceProtocol.asInstanceOf[js.Any])
+    __obj.updateDynamic("lbPort")(lbPort.asInstanceOf[js.Any])
+    __obj.updateDynamic("lbProtocol")(lbProtocol.asInstanceOf[js.Any])
+    if (sslCertificateId != null) __obj.updateDynamic("sslCertificateId")(sslCertificateId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_InstancePortInstanceProtocolLbPort]
+  }
+}
+

@@ -20,3 +20,14 @@ trait GetScriptResult extends js.Object {
   val scalaCode: java.lang.String
 }
 
+object GetScriptResult {
+  @scala.inline
+  def apply(id: java.lang.String, pythonScript: java.lang.String, scalaCode: java.lang.String): GetScriptResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("pythonScript")(pythonScript)
+    __obj.updateDynamic("scalaCode")(scalaCode)
+    __obj.asInstanceOf[GetScriptResult]
+  }
+}
+

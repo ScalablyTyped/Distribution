@@ -15,3 +15,26 @@ trait Operation extends js.Object {
   def toKey(): java.lang.String
 }
 
+object Operation {
+  @scala.inline
+  def apply(
+    extensions: stdLib.Record[java.lang.String, _],
+    getContext: js.Function0[stdLib.Record[java.lang.String, _]],
+    operationName: java.lang.String,
+    query: graphqlLib.languageAstMod.DocumentNode,
+    setContext: js.Function1[stdLib.Record[java.lang.String, _], stdLib.Record[java.lang.String, _]],
+    toKey: js.Function0[java.lang.String],
+    variables: stdLib.Record[java.lang.String, _]
+  ): Operation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extensions")(extensions)
+    __obj.updateDynamic("getContext")(getContext)
+    __obj.updateDynamic("operationName")(operationName)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("setContext")(setContext)
+    __obj.updateDynamic("toKey")(toKey)
+    __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[Operation]
+  }
+}
+

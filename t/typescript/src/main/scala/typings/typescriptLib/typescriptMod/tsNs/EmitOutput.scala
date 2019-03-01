@@ -10,3 +10,13 @@ trait EmitOutput extends js.Object {
   var outputFiles: js.Array[OutputFile]
 }
 
+object EmitOutput {
+  @scala.inline
+  def apply(emitSkipped: scala.Boolean, outputFiles: js.Array[OutputFile]): EmitOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("emitSkipped")(emitSkipped)
+    __obj.updateDynamic("outputFiles")(outputFiles)
+    __obj.asInstanceOf[EmitOutput]
+  }
+}
+

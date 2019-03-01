@@ -14,3 +14,12 @@ trait Anon_FraudulentSafe extends js.Object {
   var user_report: js.UndefOr[stripeLib.stripeLibStrings.fraudulent | stripeLib.stripeLibStrings.safe] = js.undefined
 }
 
+object Anon_FraudulentSafe {
+  @scala.inline
+  def apply(user_report: stripeLib.stripeLibStrings.fraudulent | stripeLib.stripeLibStrings.safe = null): Anon_FraudulentSafe = {
+    val __obj = js.Dynamic.literal()
+    if (user_report != null) __obj.updateDynamic("user_report")(user_report.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_FraudulentSafe]
+  }
+}
+

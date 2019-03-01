@@ -15,3 +15,16 @@ trait EnginesConfiguration extends js.Object {
   var engines: org.scalablytyped.runtime.StringDictionary[NpmModule] | ServerViewsEnginesOptions
 }
 
+object EnginesConfiguration {
+  @scala.inline
+  def apply(
+    engines: org.scalablytyped.runtime.StringDictionary[NpmModule] | ServerViewsEnginesOptions,
+    defaultExtension: java.lang.String = null
+  ): EnginesConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("engines")(engines.asInstanceOf[js.Any])
+    if (defaultExtension != null) __obj.updateDynamic("defaultExtension")(defaultExtension)
+    __obj.asInstanceOf[EnginesConfiguration]
+  }
+}
+

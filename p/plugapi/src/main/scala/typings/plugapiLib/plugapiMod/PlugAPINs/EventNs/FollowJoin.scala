@@ -10,3 +10,12 @@ trait FollowJoin extends js.Object {
   var `type`: java.lang.String
 }
 
+object FollowJoin {
+  @scala.inline
+  def apply(data: plugapiLib.plugapiMod.PlugAPINs.FollowJoinData, `type`: java.lang.String): FollowJoin = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[FollowJoin]
+  }
+}
+

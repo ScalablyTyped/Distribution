@@ -51,3 +51,33 @@ trait TextareaAutosizeProps
   var value_TextareaAutosizeProps: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TextareaAutosizeProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactLib.HTMLTextAreaElement] = null,
+    inputRef: js.Function1[/* node */ reactLib.HTMLTextAreaElement, scala.Unit] = null,
+    maxRows: scala.Int | scala.Double = null,
+    minRows: scala.Int | scala.Double = null,
+    onChange: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLTextAreaElement], 
+      scala.Unit
+    ] = null,
+    onHeightChange: js.Function1[/* height */ scala.Double, scala.Unit] = null,
+    rows: scala.Int | scala.Double = null,
+    useCacheForDOMMeasurements: js.UndefOr[scala.Boolean] = js.undefined,
+    value: java.lang.String = null
+  ): TextareaAutosizeProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (inputRef != null) __obj.updateDynamic("inputRef")(inputRef)
+    if (maxRows != null) __obj.updateDynamic("maxRows")(maxRows.asInstanceOf[js.Any])
+    if (minRows != null) __obj.updateDynamic("minRows")(minRows.asInstanceOf[js.Any])
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onHeightChange != null) __obj.updateDynamic("onHeightChange")(onHeightChange)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCacheForDOMMeasurements)) __obj.updateDynamic("useCacheForDOMMeasurements")(useCacheForDOMMeasurements)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[TextareaAutosizeProps]
+  }
+}
+

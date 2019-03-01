@@ -12,3 +12,12 @@ trait FileProperties extends js.Object {
   var url: java.lang.String
 }
 
+object FileProperties {
+  @scala.inline
+  def apply(url: java.lang.String): FileProperties = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[FileProperties]
+  }
+}
+

@@ -12,3 +12,13 @@ trait TimeseriesPoint extends js.Object {
   var timeseriesDesc: js.UndefOr[TimeseriesDescriptor] = js.undefined
 }
 
+object TimeseriesPoint {
+  @scala.inline
+  def apply(point: Point = null, timeseriesDesc: TimeseriesDescriptor = null): TimeseriesPoint = {
+    val __obj = js.Dynamic.literal()
+    if (point != null) __obj.updateDynamic("point")(point)
+    if (timeseriesDesc != null) __obj.updateDynamic("timeseriesDesc")(timeseriesDesc)
+    __obj.asInstanceOf[TimeseriesPoint]
+  }
+}
+

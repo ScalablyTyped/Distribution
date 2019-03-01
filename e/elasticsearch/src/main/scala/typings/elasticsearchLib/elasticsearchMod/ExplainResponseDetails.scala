@@ -11,3 +11,14 @@ trait ExplainResponseDetails extends js.Object {
   var value: scala.Double
 }
 
+object ExplainResponseDetails {
+  @scala.inline
+  def apply(description: java.lang.String, details: js.Array[ExplainResponseDetails], value: scala.Double): ExplainResponseDetails = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("details")(details)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ExplainResponseDetails]
+  }
+}
+

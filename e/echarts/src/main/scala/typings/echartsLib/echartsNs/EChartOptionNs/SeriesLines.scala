@@ -23,7 +23,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines
   */
-trait SeriesLines extends js.Object {
+trait SeriesLines extends Series {
   /**
     * Whether to enable animation.
     *
@@ -410,5 +410,80 @@ trait SeriesLines extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-lines.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesLines {
+  @scala.inline
+  def apply(
+    animation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDelay: js.Function | scala.Double = null,
+    animationDelayUpdate: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationDurationUpdate: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    animationEasingUpdate: java.lang.String = null,
+    animationThreshold: scala.Int | scala.Double = null,
+    coordinateSystem: java.lang.String = null,
+    data: js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesLinesNs.DataObject] = null,
+    effect: echartsLib.Anon_ColorConstantSpeed = null,
+    emphasis: echartsLib.Anon_LabelLineStyleAnonAlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamilyFontSizeFontStyleFontWeightFormatter = null,
+    geoIndex: scala.Int | scala.Double = null,
+    id: java.lang.String = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorFontFamily = null,
+    large: js.UndefOr[scala.Boolean] = js.undefined,
+    largeThreshold: scala.Int | scala.Double = null,
+    lineStyle: echartsLib.Anon_ColorCurvenessOpacityShadowBlur = null,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdateAnimationEasing = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDurationAnimationDurationUpdate = null,
+    markPoint: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdateAnimationDuration = null,
+    name: java.lang.String = null,
+    polyline: js.UndefOr[scala.Boolean] = js.undefined,
+    progressive: scala.Int | scala.Double = null,
+    progressiveThreshold: scala.Int | scala.Double = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    symbol: js.Array[_] | java.lang.String = null,
+    symbolSize: js.Array[_] | scala.Double = null,
+    `type`: java.lang.String = null,
+    xAxisIndex: scala.Int | scala.Double = null,
+    yAxisIndex: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesLines = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animation)) __obj.updateDynamic("animation")(animation)
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDelayUpdate != null) __obj.updateDynamic("animationDelayUpdate")(animationDelayUpdate.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationDurationUpdate != null) __obj.updateDynamic("animationDurationUpdate")(animationDurationUpdate.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (animationEasingUpdate != null) __obj.updateDynamic("animationEasingUpdate")(animationEasingUpdate)
+    if (animationThreshold != null) __obj.updateDynamic("animationThreshold")(animationThreshold.asInstanceOf[js.Any])
+    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (effect != null) __obj.updateDynamic("effect")(effect)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (geoIndex != null) __obj.updateDynamic("geoIndex")(geoIndex.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (largeThreshold != null) __obj.updateDynamic("largeThreshold")(largeThreshold.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (markArea != null) __obj.updateDynamic("markArea")(markArea)
+    if (markLine != null) __obj.updateDynamic("markLine")(markLine)
+    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(polyline)) __obj.updateDynamic("polyline")(polyline)
+    if (progressive != null) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
+    if (progressiveThreshold != null) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
+    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesLines]
+  }
 }
 

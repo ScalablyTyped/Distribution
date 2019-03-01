@@ -14,3 +14,22 @@ trait IActionDescriptor extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IActionDescriptor {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    headers: js.Any = null,
+    isArray: js.UndefOr[scala.Boolean] = js.undefined,
+    params: js.Any = null,
+    url: java.lang.String = null
+  ): IActionDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(isArray)) __obj.updateDynamic("isArray")(isArray)
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[IActionDescriptor]
+  }
+}
+

@@ -53,3 +53,36 @@ trait Product extends GraphModel {
   var vendor: java.lang.String
 }
 
+object Product {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    id: java.lang.String | scala.Double,
+    images: js.Array[Image],
+    options: js.Array[Option],
+    selectedVariant: ProductVariant,
+    selectedVariantImage: Image,
+    selections: js.Array[java.lang.String],
+    title: java.lang.String,
+    variants: js.Array[ProductVariant],
+    vendor: java.lang.String,
+    attrs: js.Any = null,
+    onlineStoreUrl: java.lang.String = null
+  ): Product = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("images")(images)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("selectedVariant")(selectedVariant)
+    __obj.updateDynamic("selectedVariantImage")(selectedVariantImage)
+    __obj.updateDynamic("selections")(selections)
+    __obj.updateDynamic("title")(title)
+    __obj.updateDynamic("variants")(variants)
+    __obj.updateDynamic("vendor")(vendor)
+    if (attrs != null) __obj.updateDynamic("attrs")(attrs)
+    if (onlineStoreUrl != null) __obj.updateDynamic("onlineStoreUrl")(onlineStoreUrl)
+    __obj.asInstanceOf[Product]
+  }
+}
+

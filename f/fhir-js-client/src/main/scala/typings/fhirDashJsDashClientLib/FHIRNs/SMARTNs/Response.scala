@@ -31,3 +31,22 @@ trait Response extends js.Object {
   var status: js.UndefOr[js.Any] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    config: js.Any = null,
+    data: js.Any = null,
+    error: js.Any = null,
+    headers: js.Any = null,
+    status: js.Any = null
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[Response]
+  }
+}
+

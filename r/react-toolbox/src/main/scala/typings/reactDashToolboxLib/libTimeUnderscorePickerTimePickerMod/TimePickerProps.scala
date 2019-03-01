@@ -86,3 +86,51 @@ trait TimePickerProps
   var value: js.UndefOr[coreDashJsLib.Date] = js.undefined
 }
 
+object TimePickerProps {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+    * Additional attributes passed to inner Input component.
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelLabel: java.lang.String = null,
+    error: java.lang.String = null,
+    format: reactDashToolboxLib.reactDashToolboxLibStrings.`24hr` | reactDashToolboxLib.reactDashToolboxLibStrings.ampm = null,
+    icon: reactLib.reactMod.ReactNs.ReactNode = null,
+    inputClassName: java.lang.String = null,
+    label: java.lang.String = null,
+    okLabel: java.lang.String = null,
+    onChange: coreDashJsLib.Function = null,
+    onClick: coreDashJsLib.Function = null,
+    onDismiss: coreDashJsLib.Function = null,
+    onEscKeyDown: coreDashJsLib.Function = null,
+    onKeyPress: coreDashJsLib.Function = null,
+    onOverlayClick: coreDashJsLib.Function = null,
+    readonly: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: TimePickerTheme = null,
+    value: coreDashJsLib.Date = null
+  ): TimePickerProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (cancelLabel != null) __obj.updateDynamic("cancelLabel")(cancelLabel)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (inputClassName != null) __obj.updateDynamic("inputClassName")(inputClassName)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (okLabel != null) __obj.updateDynamic("okLabel")(okLabel)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onDismiss != null) __obj.updateDynamic("onDismiss")(onDismiss)
+    if (onEscKeyDown != null) __obj.updateDynamic("onEscKeyDown")(onEscKeyDown)
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (onOverlayClick != null) __obj.updateDynamic("onOverlayClick")(onOverlayClick)
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[TimePickerProps]
+  }
+}
+

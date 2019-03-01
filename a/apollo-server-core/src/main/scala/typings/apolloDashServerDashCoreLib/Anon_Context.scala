@@ -9,3 +9,12 @@ trait Anon_Context[TContext] extends js.Object {
   var context: TContext
 }
 
+object Anon_Context {
+  @scala.inline
+  def apply[TContext](context: TContext): Anon_Context[TContext] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Context[TContext]]
+  }
+}
+

@@ -12,3 +12,13 @@ trait CustomMetric extends js.Object {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CustomMetric {
+  @scala.inline
+  def apply(name: java.lang.String = null, value: scala.Int | scala.Double = null): CustomMetric = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CustomMetric]
+  }
+}
+

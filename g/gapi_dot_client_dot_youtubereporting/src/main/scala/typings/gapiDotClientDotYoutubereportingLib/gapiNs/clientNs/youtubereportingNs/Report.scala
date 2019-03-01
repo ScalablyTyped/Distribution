@@ -28,3 +28,26 @@ trait Report extends js.Object {
   var startTime: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Report {
+  @scala.inline
+  def apply(
+    createTime: java.lang.String = null,
+    downloadUrl: java.lang.String = null,
+    endTime: java.lang.String = null,
+    id: java.lang.String = null,
+    jobExpireTime: java.lang.String = null,
+    jobId: java.lang.String = null,
+    startTime: java.lang.String = null
+  ): Report = {
+    val __obj = js.Dynamic.literal()
+    if (createTime != null) __obj.updateDynamic("createTime")(createTime)
+    if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl)
+    if (endTime != null) __obj.updateDynamic("endTime")(endTime)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (jobExpireTime != null) __obj.updateDynamic("jobExpireTime")(jobExpireTime)
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
+    if (startTime != null) __obj.updateDynamic("startTime")(startTime)
+    __obj.asInstanceOf[Report]
+  }
+}
+

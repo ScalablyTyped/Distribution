@@ -17,3 +17,18 @@ trait SheetsBorder extends js.Object {
   var `type`: js.UndefOr[BorderType | java.lang.String] = js.undefined
 }
 
+object SheetsBorder {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    range: java.lang.String = null,
+    `type`: BorderType | java.lang.String = null
+  ): SheetsBorder = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SheetsBorder]
+  }
+}
+

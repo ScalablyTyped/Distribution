@@ -25,3 +25,26 @@ trait GraphicObject extends XGraphicObject {
   def createWithId(uniqueId: java.lang.String): scala.Unit
 }
 
+object GraphicObject {
+  @scala.inline
+  def apply(
+    Graphic: XGraphic,
+    UniqueID: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    create: js.Function0[scala.Unit],
+    createWithId: js.Function1[java.lang.String, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): GraphicObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Graphic")(Graphic)
+    __obj.updateDynamic("UniqueID")(UniqueID)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("createWithId")(createWithId)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[GraphicObject]
+  }
+}
+

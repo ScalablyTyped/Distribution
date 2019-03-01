@@ -7,22 +7,28 @@ import scala.scalajs.js.annotation._
 
 object chaiDashUuidLibStrings {
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends chaiDashUuidLib.chaiDashUuidMod.Global.ChaiNs.UuidVersion
   
   @js.native
-  sealed trait v1 extends js.Object
+  sealed trait v1
+    extends chaiDashUuidLib.chaiDashUuidMod.Global.ChaiNs.UuidVersion
   
   @js.native
-  sealed trait v2 extends js.Object
+  sealed trait v2
+    extends chaiDashUuidLib.chaiDashUuidMod.Global.ChaiNs.UuidVersion
   
   @js.native
-  sealed trait v3 extends js.Object
+  sealed trait v3
+    extends chaiDashUuidLib.chaiDashUuidMod.Global.ChaiNs.UuidVersion
   
   @js.native
-  sealed trait v4 extends js.Object
+  sealed trait v4
+    extends chaiDashUuidLib.chaiDashUuidMod.Global.ChaiNs.UuidVersion
   
   @js.native
-  sealed trait v5 extends js.Object
+  sealed trait v5
+    extends chaiDashUuidLib.chaiDashUuidMod.Global.ChaiNs.UuidVersion
   
   @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]

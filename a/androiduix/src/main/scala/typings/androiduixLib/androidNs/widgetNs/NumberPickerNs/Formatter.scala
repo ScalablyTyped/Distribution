@@ -9,3 +9,12 @@ trait Formatter extends js.Object {
   def format(value: scala.Double): java.lang.String
 }
 
+object Formatter {
+  @scala.inline
+  def apply(format: js.Function1[scala.Double, java.lang.String]): Formatter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("format")(format)
+    __obj.asInstanceOf[Formatter]
+  }
+}
+

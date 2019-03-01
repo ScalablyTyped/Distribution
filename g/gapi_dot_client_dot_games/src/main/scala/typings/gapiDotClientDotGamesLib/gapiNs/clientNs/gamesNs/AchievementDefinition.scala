@@ -45,3 +45,38 @@ trait AchievementDefinition extends js.Object {
   var unlockedIconUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AchievementDefinition {
+  @scala.inline
+  def apply(
+    achievementType: java.lang.String = null,
+    description: java.lang.String = null,
+    experiencePoints: java.lang.String = null,
+    formattedTotalSteps: java.lang.String = null,
+    id: java.lang.String = null,
+    initialState: java.lang.String = null,
+    isRevealedIconUrlDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    isUnlockedIconUrlDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    revealedIconUrl: java.lang.String = null,
+    totalSteps: scala.Int | scala.Double = null,
+    unlockedIconUrl: java.lang.String = null
+  ): AchievementDefinition = {
+    val __obj = js.Dynamic.literal()
+    if (achievementType != null) __obj.updateDynamic("achievementType")(achievementType)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (experiencePoints != null) __obj.updateDynamic("experiencePoints")(experiencePoints)
+    if (formattedTotalSteps != null) __obj.updateDynamic("formattedTotalSteps")(formattedTotalSteps)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (initialState != null) __obj.updateDynamic("initialState")(initialState)
+    if (!js.isUndefined(isRevealedIconUrlDefault)) __obj.updateDynamic("isRevealedIconUrlDefault")(isRevealedIconUrlDefault)
+    if (!js.isUndefined(isUnlockedIconUrlDefault)) __obj.updateDynamic("isUnlockedIconUrlDefault")(isUnlockedIconUrlDefault)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (revealedIconUrl != null) __obj.updateDynamic("revealedIconUrl")(revealedIconUrl)
+    if (totalSteps != null) __obj.updateDynamic("totalSteps")(totalSteps.asInstanceOf[js.Any])
+    if (unlockedIconUrl != null) __obj.updateDynamic("unlockedIconUrl")(unlockedIconUrl)
+    __obj.asInstanceOf[AchievementDefinition]
+  }
+}
+

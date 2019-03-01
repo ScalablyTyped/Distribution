@@ -15,3 +15,12 @@ trait BottomProps[TLength] extends js.Object {
   var bottom: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.BottomProperty[TLength]]] = js.undefined
 }
 
+object BottomProps {
+  @scala.inline
+  def apply[TLength](bottom: ResponsiveValue[csstypeLib.csstypeMod.BottomProperty[TLength]] = null): BottomProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BottomProps[TLength]]
+  }
+}
+

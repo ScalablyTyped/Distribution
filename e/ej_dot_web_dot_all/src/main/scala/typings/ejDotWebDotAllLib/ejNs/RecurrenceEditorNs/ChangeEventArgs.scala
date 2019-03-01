@@ -20,3 +20,20 @@ trait ChangeEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    recurrenceRule: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (recurrenceRule != null) __obj.updateDynamic("recurrenceRule")(recurrenceRule)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ChangeEventArgs]
+  }
+}
+

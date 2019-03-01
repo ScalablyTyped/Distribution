@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait SharePhotoContent extends js.Object {
+trait SharePhotoContent extends ShareContent {
   /**
     * Common parameters for share content;
     */
@@ -22,5 +22,22 @@ trait SharePhotoContent extends js.Object {
     * Photos to be shared.
     */
   var photos: js.Array[SharePhoto]
+}
+
+object SharePhotoContent {
+  @scala.inline
+  def apply(
+    contentType: reactDashNativeDashFbsdkLib.reactDashNativeDashFbsdkLibStrings.photo,
+    photos: js.Array[SharePhoto],
+    commonParameters: ShareContentCommonParameters = null,
+    contentUrl: java.lang.String = null
+  ): SharePhotoContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("contentType")(contentType)
+    __obj.updateDynamic("photos")(photos)
+    if (commonParameters != null) __obj.updateDynamic("commonParameters")(commonParameters)
+    if (contentUrl != null) __obj.updateDynamic("contentUrl")(contentUrl)
+    __obj.asInstanceOf[SharePhotoContent]
+  }
 }
 

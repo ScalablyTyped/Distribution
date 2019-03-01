@@ -117,6 +117,75 @@
  * @internal
  */
 /**
+ * Attached interface for elements which support virtual references.
+ * Used internally by the virtual hierarchy methods.
+ */
+/**
+ * Determines whether or not a parent element contains a given child element.
+ * If `allowVirtualParents` is true, this method may return `true` if the child
+ * has the parent in its virtual element hierarchy.
+ *
+ * @public
+ */
+/**
+ * Determines if an element, or any of its ancestors, contain the given attribute
+ * @param element - element to start searching at
+ * @param attribute - the attribute to search for
+ * @returns the value of the first instance found
+ */
+/**
+ * Finds the first parent element where the matchFunction returns true
+ * @param element - element to start searching at
+ * @param matchFunction - the function that determines if the element is a match
+ * @returns the matched element or null no match was found
+ */
+/**
+ * Gets the elements which are child elements of the given element.
+ * If `allowVirtualChildren` is `true`, this method enumerates virtual child elements
+ * after the original children.
+ * @param parent - The element to get the children of.
+ * @param allowVirtualChildren - true if the method should enumerate virtual child elements.
+ */
+/**
+ * Helper to get the document object. Note that in popup window cases, document
+ * might be the wrong document, which is why we look at ownerDocument for the
+ * truth. Also note that the SSR flag is used to test ssr scenarios even if
+ * document is defined (from JSDOM for example.)
+ *
+ * @public
+ */
+/**
+ * Gets the element which is the parent of a given element.
+ * If `allowVirtuaParents` is `true`, this method prefers the virtual parent over
+ * real DOM parent when present.
+ *
+ * @public
+ */
+/**
+ * Gets the virtual parent given the child element, if it exists.
+ *
+ * @public
+ */
+/**
+ * Helper to get the window object. Note that in popup scenarios the window object
+ * may not be the window use ex
+ *
+ * @public
+ */
+/**
+ * Determine whether a target is within a portal from perspective of root or optional parent.
+ * This function only works against portal components that use the setPortalAttribute function.
+ * If both parent and child are within the same portal this function will return false.
+ * @param target - Element to query portal containment status of.
+ * @param parent - Optional parent perspective. Search for containing portal stops at parent (or root if parent is undefined or invalid.)
+ */
+/**
+ * Sets the virtual parent of an element.
+ * Pass `undefined` as the `parent` to clear the virtual parent.
+ *
+ * @public
+ */
+/**
  * Gets the first focusable element.
  *
  * @public
@@ -204,5 +273,15 @@
  * will result in a Debug Exception.
  *
  * @public
+ */
+/**
+ * Warns when props are required if a condition is met.
+ *
+ * @public
+ * @param componentName - The name of the component being used.
+ * @param props - The props passed into the component.
+ * @param requiredProps - The name of the props that are required when the condition is met.
+ * @param conditionalPropName - The name of the prop that the condition is based on.
+ * @param condition - Whether the condition is met.
  */
 ```

@@ -54,3 +54,34 @@ trait BudgetArgs extends js.Object {
   val timeUnit: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object BudgetArgs {
+  @scala.inline
+  def apply(
+    budgetType: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    limitAmount: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    limitUnit: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    timePeriodStart: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    timeUnit: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    costFilters: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    costTypes: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IncludeCreditIncludeDiscount] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    namePrefix: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    timePeriodEnd: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): BudgetArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("budgetType")(budgetType.asInstanceOf[js.Any])
+    __obj.updateDynamic("limitAmount")(limitAmount.asInstanceOf[js.Any])
+    __obj.updateDynamic("limitUnit")(limitUnit.asInstanceOf[js.Any])
+    __obj.updateDynamic("timePeriodStart")(timePeriodStart.asInstanceOf[js.Any])
+    __obj.updateDynamic("timeUnit")(timeUnit.asInstanceOf[js.Any])
+    if (accountId != null) __obj.updateDynamic("accountId")(accountId.asInstanceOf[js.Any])
+    if (costFilters != null) __obj.updateDynamic("costFilters")(costFilters.asInstanceOf[js.Any])
+    if (costTypes != null) __obj.updateDynamic("costTypes")(costTypes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (namePrefix != null) __obj.updateDynamic("namePrefix")(namePrefix.asInstanceOf[js.Any])
+    if (timePeriodEnd != null) __obj.updateDynamic("timePeriodEnd")(timePeriodEnd.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BudgetArgs]
+  }
+}
+

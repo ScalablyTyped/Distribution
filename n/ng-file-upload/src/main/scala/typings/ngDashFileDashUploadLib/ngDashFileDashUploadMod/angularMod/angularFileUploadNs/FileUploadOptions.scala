@@ -85,3 +85,42 @@ trait FileUploadOptions extends js.Object {
   var ngfValidateForce: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FileUploadOptions {
+  @scala.inline
+  def apply(
+    ngfAccept: java.lang.String = null,
+    ngfAllowDir: js.UndefOr[scala.Boolean] = js.undefined,
+    ngfEnableFirefoxPaste: js.UndefOr[scala.Boolean] = js.undefined,
+    ngfHideOnDropNotAvailable: js.UndefOr[scala.Boolean] = js.undefined,
+    ngfMaxDuration: scala.Double | java.lang.String = null,
+    ngfMaxFiles: scala.Int | scala.Double = null,
+    ngfMaxSize: scala.Double | java.lang.String = null,
+    ngfMaxTotalSize: scala.Double | java.lang.String = null,
+    ngfMinDuration: scala.Double | java.lang.String = null,
+    ngfMinRatio: scala.Double | java.lang.String = null,
+    ngfMinSize: scala.Double | java.lang.String = null,
+    ngfMultiple: js.UndefOr[scala.Boolean] = js.undefined,
+    ngfRatio: java.lang.String = null,
+    ngfStopPropagation: js.UndefOr[scala.Boolean] = js.undefined,
+    ngfValidateForce: js.UndefOr[scala.Boolean] = js.undefined
+  ): FileUploadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ngfAccept != null) __obj.updateDynamic("ngfAccept")(ngfAccept)
+    if (!js.isUndefined(ngfAllowDir)) __obj.updateDynamic("ngfAllowDir")(ngfAllowDir)
+    if (!js.isUndefined(ngfEnableFirefoxPaste)) __obj.updateDynamic("ngfEnableFirefoxPaste")(ngfEnableFirefoxPaste)
+    if (!js.isUndefined(ngfHideOnDropNotAvailable)) __obj.updateDynamic("ngfHideOnDropNotAvailable")(ngfHideOnDropNotAvailable)
+    if (ngfMaxDuration != null) __obj.updateDynamic("ngfMaxDuration")(ngfMaxDuration.asInstanceOf[js.Any])
+    if (ngfMaxFiles != null) __obj.updateDynamic("ngfMaxFiles")(ngfMaxFiles.asInstanceOf[js.Any])
+    if (ngfMaxSize != null) __obj.updateDynamic("ngfMaxSize")(ngfMaxSize.asInstanceOf[js.Any])
+    if (ngfMaxTotalSize != null) __obj.updateDynamic("ngfMaxTotalSize")(ngfMaxTotalSize.asInstanceOf[js.Any])
+    if (ngfMinDuration != null) __obj.updateDynamic("ngfMinDuration")(ngfMinDuration.asInstanceOf[js.Any])
+    if (ngfMinRatio != null) __obj.updateDynamic("ngfMinRatio")(ngfMinRatio.asInstanceOf[js.Any])
+    if (ngfMinSize != null) __obj.updateDynamic("ngfMinSize")(ngfMinSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(ngfMultiple)) __obj.updateDynamic("ngfMultiple")(ngfMultiple)
+    if (ngfRatio != null) __obj.updateDynamic("ngfRatio")(ngfRatio)
+    if (!js.isUndefined(ngfStopPropagation)) __obj.updateDynamic("ngfStopPropagation")(ngfStopPropagation)
+    if (!js.isUndefined(ngfValidateForce)) __obj.updateDynamic("ngfValidateForce")(ngfValidateForce)
+    __obj.asInstanceOf[FileUploadOptions]
+  }
+}
+

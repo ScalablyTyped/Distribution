@@ -1187,6 +1187,8 @@ object SNSNs extends js.Object {
     var SubscriptionArn: subscriptionARN
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActionsList = js.Array[action]
   type Binary = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsSnsMod.Blob | java.lang.String
@@ -1202,7 +1204,7 @@ object SNSNs extends js.Object {
   type TopicsList = js.Array[Topic]
   type account = java.lang.String
   type action = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2010-03-31` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
   type attributeName = java.lang.String
   type attributeValue = java.lang.String
   type authenticateOnUnsubscribe = java.lang.String

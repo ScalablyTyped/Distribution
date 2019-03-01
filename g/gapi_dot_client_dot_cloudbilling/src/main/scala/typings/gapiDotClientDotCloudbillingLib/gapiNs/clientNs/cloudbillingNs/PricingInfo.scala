@@ -28,3 +28,22 @@ trait PricingInfo extends js.Object {
   var summary: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PricingInfo {
+  @scala.inline
+  def apply(
+    aggregationInfo: AggregationInfo = null,
+    currencyConversionRate: scala.Int | scala.Double = null,
+    effectiveTime: java.lang.String = null,
+    pricingExpression: PricingExpression = null,
+    summary: java.lang.String = null
+  ): PricingInfo = {
+    val __obj = js.Dynamic.literal()
+    if (aggregationInfo != null) __obj.updateDynamic("aggregationInfo")(aggregationInfo)
+    if (currencyConversionRate != null) __obj.updateDynamic("currencyConversionRate")(currencyConversionRate.asInstanceOf[js.Any])
+    if (effectiveTime != null) __obj.updateDynamic("effectiveTime")(effectiveTime)
+    if (pricingExpression != null) __obj.updateDynamic("pricingExpression")(pricingExpression)
+    if (summary != null) __obj.updateDynamic("summary")(summary)
+    __obj.asInstanceOf[PricingInfo]
+  }
+}
+

@@ -30,3 +30,18 @@ trait ChartGridlinesLoadOptions extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartGridlinesLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartGridlinesFormatLoadOptions = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartGridlinesLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[ChartGridlinesLoadOptions]
+  }
+}
+

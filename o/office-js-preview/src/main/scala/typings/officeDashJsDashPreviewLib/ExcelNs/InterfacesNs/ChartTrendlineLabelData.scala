@@ -107,3 +107,38 @@ trait ChartTrendlineLabelData extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ChartTrendlineLabelData {
+  @scala.inline
+  def apply(
+    autoText: js.UndefOr[scala.Boolean] = js.undefined,
+    format: ChartTrendlineLabelFormatData = null,
+    formula: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    horizontalAlignment: officeDashJsDashPreviewLib.ExcelNs.ChartTextHorizontalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Left | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Right | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed = null,
+    left: scala.Int | scala.Double = null,
+    linkNumberFormat: js.UndefOr[scala.Boolean] = js.undefined,
+    numberFormat: java.lang.String = null,
+    text: java.lang.String = null,
+    textOrientation: scala.Int | scala.Double = null,
+    top: scala.Int | scala.Double = null,
+    verticalAlignment: officeDashJsDashPreviewLib.ExcelNs.ChartTextVerticalAlignment | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Center | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Bottom | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Top | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Justify | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Distributed = null,
+    width: scala.Int | scala.Double = null
+  ): ChartTrendlineLabelData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoText)) __obj.updateDynamic("autoText")(autoText)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (formula != null) __obj.updateDynamic("formula")(formula)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (!js.isUndefined(linkNumberFormat)) __obj.updateDynamic("linkNumberFormat")(linkNumberFormat)
+    if (numberFormat != null) __obj.updateDynamic("numberFormat")(numberFormat)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (textOrientation != null) __obj.updateDynamic("textOrientation")(textOrientation.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChartTrendlineLabelData]
+  }
+}
+

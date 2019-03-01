@@ -24,3 +24,18 @@ trait IPanel[P] extends js.Object {
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
 }
 
+object IPanel {
+  @scala.inline
+  def apply[P](
+    component: reactLib.reactMod.ReactNs.ComponentType[P with IPanelProps],
+    props: P = null,
+    title: reactLib.reactMod.ReactNs.ReactNode = null
+  ): IPanel[P] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (props != null) __obj.updateDynamic("props")(props.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPanel[P]]
+  }
+}
+

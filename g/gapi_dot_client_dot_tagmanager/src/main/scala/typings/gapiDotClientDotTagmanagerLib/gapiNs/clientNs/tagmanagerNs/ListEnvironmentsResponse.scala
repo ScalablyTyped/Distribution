@@ -12,3 +12,13 @@ trait ListEnvironmentsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListEnvironmentsResponse {
+  @scala.inline
+  def apply(environment: js.Array[Environment] = null, nextPageToken: java.lang.String = null): ListEnvironmentsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListEnvironmentsResponse]
+  }
+}
+

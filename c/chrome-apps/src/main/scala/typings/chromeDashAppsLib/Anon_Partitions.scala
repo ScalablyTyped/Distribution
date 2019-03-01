@@ -10,3 +10,12 @@ trait Anon_Partitions extends js.Object {
   var partitions: js.Array[chromeDashAppsLib.chromeNs.runtimeNs.WebViewPartition]
 }
 
+object Anon_Partitions {
+  @scala.inline
+  def apply(partitions: js.Array[chromeDashAppsLib.chromeNs.runtimeNs.WebViewPartition]): Anon_Partitions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("partitions")(partitions)
+    __obj.asInstanceOf[Anon_Partitions]
+  }
+}
+

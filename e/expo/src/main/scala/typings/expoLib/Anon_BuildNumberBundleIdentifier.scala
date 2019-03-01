@@ -13,3 +13,22 @@ trait Anon_BuildNumberBundleIdentifier extends js.Object {
   var supportsTablet: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_BuildNumberBundleIdentifier {
+  @scala.inline
+  def apply(
+    buildNumber: java.lang.String = null,
+    bundleIdentifier: java.lang.String = null,
+    config: Anon_GoogleSignIn = null,
+    infoPlist: js.Any = null,
+    supportsTablet: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_BuildNumberBundleIdentifier = {
+    val __obj = js.Dynamic.literal()
+    if (buildNumber != null) __obj.updateDynamic("buildNumber")(buildNumber)
+    if (bundleIdentifier != null) __obj.updateDynamic("bundleIdentifier")(bundleIdentifier)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (infoPlist != null) __obj.updateDynamic("infoPlist")(infoPlist)
+    if (!js.isUndefined(supportsTablet)) __obj.updateDynamic("supportsTablet")(supportsTablet)
+    __obj.asInstanceOf[Anon_BuildNumberBundleIdentifier]
+  }
+}
+

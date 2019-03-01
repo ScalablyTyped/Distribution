@@ -13,3 +13,20 @@ trait RouteChildrenProps[Params /* <: /* import warning: ImportType.apply c Unsu
   var `match`: `match`[Params] | scala.Null
 }
 
+object RouteChildrenProps {
+  @scala.inline
+  def apply[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ reactDashRouterLib.reactDashRouterLibStrings.RouteChildrenProps with js.Any */, S](
+    history: historyLib.historyMod.History[historyLib.historyMod.LocationState],
+    location: historyLib.historyMod.Location[S],
+    `match`: `match`[Params] = null
+  ): RouteChildrenProps[Params, S] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("history")(history)
+    __obj.updateDynamic("location")(location)
+    if (`match` != null) __obj.updateDynamic("match")(`match`)
+    __obj.asInstanceOf[RouteChildrenProps[Params, S]]
+  }
+}
+

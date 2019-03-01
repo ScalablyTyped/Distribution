@@ -13,3 +13,12 @@ trait Anon_FdGid extends js.Object {
   def `__promisify__`(fd: scala.Double, uid: scala.Double, gid: scala.Double): js.Promise[scala.Unit]
 }
 
+object Anon_FdGid {
+  @scala.inline
+  def apply(`__promisify__`: js.Function3[scala.Double, scala.Double, scala.Double, js.Promise[scala.Unit]]): Anon_FdGid = {
+    val __obj = js.Dynamic.literal(`__promisify__` = `__promisify__`)
+  
+    __obj.asInstanceOf[Anon_FdGid]
+  }
+}
+

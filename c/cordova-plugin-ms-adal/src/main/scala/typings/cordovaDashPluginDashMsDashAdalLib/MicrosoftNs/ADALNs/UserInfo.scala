@@ -16,3 +16,28 @@ trait UserInfo extends js.Object {
   var userId: java.lang.String
 }
 
+object UserInfo {
+  @scala.inline
+  def apply(
+    displayableId: java.lang.String,
+    familyName: java.lang.String,
+    givenName: java.lang.String,
+    identityProvider: java.lang.String,
+    passwordChangeUrl: java.lang.String,
+    passwordExpiresOn: stdLib.Date,
+    uniqueId: java.lang.String,
+    userId: java.lang.String
+  ): UserInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayableId")(displayableId)
+    __obj.updateDynamic("familyName")(familyName)
+    __obj.updateDynamic("givenName")(givenName)
+    __obj.updateDynamic("identityProvider")(identityProvider)
+    __obj.updateDynamic("passwordChangeUrl")(passwordChangeUrl)
+    __obj.updateDynamic("passwordExpiresOn")(passwordExpiresOn)
+    __obj.updateDynamic("uniqueId")(uniqueId)
+    __obj.updateDynamic("userId")(userId)
+    __obj.asInstanceOf[UserInfo]
+  }
+}
+

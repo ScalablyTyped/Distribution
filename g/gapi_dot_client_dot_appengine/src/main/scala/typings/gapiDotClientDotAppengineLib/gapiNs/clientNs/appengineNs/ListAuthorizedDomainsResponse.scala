@@ -12,3 +12,13 @@ trait ListAuthorizedDomainsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListAuthorizedDomainsResponse {
+  @scala.inline
+  def apply(domains: js.Array[AuthorizedDomain] = null, nextPageToken: java.lang.String = null): ListAuthorizedDomainsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (domains != null) __obj.updateDynamic("domains")(domains)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListAuthorizedDomainsResponse]
+  }
+}
+

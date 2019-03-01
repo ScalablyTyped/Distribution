@@ -30,3 +30,18 @@ trait WorksheetProtectionLoadOptions extends js.Object {
   var `protected`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object WorksheetProtectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    options: js.UndefOr[scala.Boolean] = js.undefined,
+    `protected`: js.UndefOr[scala.Boolean] = js.undefined
+  ): WorksheetProtectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(options)) __obj.updateDynamic("options")(options)
+    if (!js.isUndefined(`protected`)) __obj.updateDynamic("protected")(`protected`)
+    __obj.asInstanceOf[WorksheetProtectionLoadOptions]
+  }
+}
+

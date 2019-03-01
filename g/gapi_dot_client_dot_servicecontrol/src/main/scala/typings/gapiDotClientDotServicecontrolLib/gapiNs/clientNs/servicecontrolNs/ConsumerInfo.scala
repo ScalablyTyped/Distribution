@@ -13,3 +13,12 @@ trait ConsumerInfo extends js.Object {
   var projectNumber: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConsumerInfo {
+  @scala.inline
+  def apply(projectNumber: java.lang.String = null): ConsumerInfo = {
+    val __obj = js.Dynamic.literal()
+    if (projectNumber != null) __obj.updateDynamic("projectNumber")(projectNumber)
+    __obj.asInstanceOf[ConsumerInfo]
+  }
+}
+

@@ -10,3 +10,13 @@ trait IDataPlanUsage extends js.Object {
   var megabytesUsed: scala.Double
 }
 
+object IDataPlanUsage {
+  @scala.inline
+  def apply(lastSyncTime: stdLib.Date, megabytesUsed: scala.Double): IDataPlanUsage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("lastSyncTime")(lastSyncTime)
+    __obj.updateDynamic("megabytesUsed")(megabytesUsed)
+    __obj.asInstanceOf[IDataPlanUsage]
+  }
+}
+

@@ -10,3 +10,12 @@ trait DeleteAttachmentsResponse extends js.Object {
   var numDeleted: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DeleteAttachmentsResponse {
+  @scala.inline
+  def apply(numDeleted: scala.Int | scala.Double = null): DeleteAttachmentsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (numDeleted != null) __obj.updateDynamic("numDeleted")(numDeleted.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeleteAttachmentsResponse]
+  }
+}
+

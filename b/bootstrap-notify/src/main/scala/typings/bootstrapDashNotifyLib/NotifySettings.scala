@@ -30,3 +30,56 @@ trait NotifySettings extends js.Object {
   var z_index: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NotifySettings {
+  @scala.inline
+  def apply(
+    allow_dismiss: js.UndefOr[scala.Boolean] = js.undefined,
+    allow_duplicates: js.UndefOr[scala.Boolean] = js.undefined,
+    animate: Anon_Enter = null,
+    delay: scala.Int | scala.Double = null,
+    element: java.lang.String = null,
+    icon_type: java.lang.String = null,
+    mouse_over: java.lang.String = null,
+    newest_on_top: js.UndefOr[scala.Boolean] = js.undefined,
+    offset: scala.Double | Anon_X = null,
+    onClose: js.Function0[scala.Unit] = null,
+    onClosed: js.Function0[scala.Unit] = null,
+    onShow: js.Function0[scala.Unit] = null,
+    onShown: js.Function0[scala.Unit] = null,
+    placement: Anon_Align = null,
+    position: java.lang.String = null,
+    showProgressbar: js.UndefOr[scala.Boolean] = js.undefined,
+    spacing: scala.Int | scala.Double = null,
+    template: java.lang.String = null,
+    timer: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    url_target: java.lang.String = null,
+    z_index: scala.Int | scala.Double = null
+  ): NotifySettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allow_dismiss)) __obj.updateDynamic("allow_dismiss")(allow_dismiss)
+    if (!js.isUndefined(allow_duplicates)) __obj.updateDynamic("allow_duplicates")(allow_duplicates)
+    if (animate != null) __obj.updateDynamic("animate")(animate)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (icon_type != null) __obj.updateDynamic("icon_type")(icon_type)
+    if (mouse_over != null) __obj.updateDynamic("mouse_over")(mouse_over)
+    if (!js.isUndefined(newest_on_top)) __obj.updateDynamic("newest_on_top")(newest_on_top)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onClosed != null) __obj.updateDynamic("onClosed")(onClosed)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onShown != null) __obj.updateDynamic("onShown")(onShown)
+    if (placement != null) __obj.updateDynamic("placement")(placement)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (!js.isUndefined(showProgressbar)) __obj.updateDynamic("showProgressbar")(showProgressbar)
+    if (spacing != null) __obj.updateDynamic("spacing")(spacing.asInstanceOf[js.Any])
+    if (template != null) __obj.updateDynamic("template")(template)
+    if (timer != null) __obj.updateDynamic("timer")(timer.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url_target != null) __obj.updateDynamic("url_target")(url_target)
+    if (z_index != null) __obj.updateDynamic("z_index")(z_index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NotifySettings]
+  }
+}
+

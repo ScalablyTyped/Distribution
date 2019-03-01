@@ -26,3 +26,48 @@ trait Anon_AUTH extends js.Object {
   var XHTML_IM: java.lang.String
 }
 
+object Anon_AUTH {
+  @scala.inline
+  def apply(
+    AUTH: java.lang.String,
+    BIND: java.lang.String,
+    BOSH: java.lang.String,
+    CLIENT: java.lang.String,
+    DISCO_INFO: java.lang.String,
+    DISCO_ITEMS: java.lang.String,
+    FRAMING: java.lang.String,
+    HTTPBIND: java.lang.String,
+    MUC: java.lang.String,
+    PROFILE: java.lang.String,
+    ROSTER: java.lang.String,
+    SASL: java.lang.String,
+    SESSION: java.lang.String,
+    STANZAS: java.lang.String,
+    STREAM: java.lang.String,
+    VERSION: java.lang.String,
+    XHTML: java.lang.String,
+    XHTML_IM: java.lang.String
+  ): Anon_AUTH = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AUTH")(AUTH)
+    __obj.updateDynamic("BIND")(BIND)
+    __obj.updateDynamic("BOSH")(BOSH)
+    __obj.updateDynamic("CLIENT")(CLIENT)
+    __obj.updateDynamic("DISCO_INFO")(DISCO_INFO)
+    __obj.updateDynamic("DISCO_ITEMS")(DISCO_ITEMS)
+    __obj.updateDynamic("FRAMING")(FRAMING)
+    __obj.updateDynamic("HTTPBIND")(HTTPBIND)
+    __obj.updateDynamic("MUC")(MUC)
+    __obj.updateDynamic("PROFILE")(PROFILE)
+    __obj.updateDynamic("ROSTER")(ROSTER)
+    __obj.updateDynamic("SASL")(SASL)
+    __obj.updateDynamic("SESSION")(SESSION)
+    __obj.updateDynamic("STANZAS")(STANZAS)
+    __obj.updateDynamic("STREAM")(STREAM)
+    __obj.updateDynamic("VERSION")(VERSION)
+    __obj.updateDynamic("XHTML")(XHTML)
+    __obj.updateDynamic("XHTML_IM")(XHTML_IM)
+    __obj.asInstanceOf[Anon_AUTH]
+  }
+}
+

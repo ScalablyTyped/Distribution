@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object dropboxDashChooserLibNumbers {
   @js.native
-  sealed trait `1280` extends js.Object
+  sealed trait `1280`
+    extends dropboxDashChooserLib.DropboxNs.ChooserFileBoundingBox
   
   @js.native
-  sealed trait `2048` extends js.Object
+  sealed trait `2048`
+    extends dropboxDashChooserLib.DropboxNs.ChooserFileBoundingBox
   
   @js.native
-  sealed trait `256` extends js.Object
+  sealed trait `256`
+    extends dropboxDashChooserLib.DropboxNs.ChooserFileBoundingBox
   
   @js.native
-  sealed trait `75` extends js.Object
+  sealed trait `75`
+    extends dropboxDashChooserLib.DropboxNs.ChooserFileBoundingBox
   
   @js.native
-  sealed trait `800` extends js.Object
+  sealed trait `800`
+    extends dropboxDashChooserLib.DropboxNs.ChooserFileBoundingBox
   
   @scala.inline
   def `1280`: `1280` = 1280.asInstanceOf[`1280`]

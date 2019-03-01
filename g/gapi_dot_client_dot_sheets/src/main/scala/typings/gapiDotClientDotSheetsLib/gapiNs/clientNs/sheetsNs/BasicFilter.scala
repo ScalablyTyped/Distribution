@@ -21,3 +21,18 @@ trait BasicFilter extends js.Object {
   var sortSpecs: js.UndefOr[js.Array[SortSpec]] = js.undefined
 }
 
+object BasicFilter {
+  @scala.inline
+  def apply(
+    criteria: stdLib.Record[java.lang.String, FilterCriteria] = null,
+    range: GridRange = null,
+    sortSpecs: js.Array[SortSpec] = null
+  ): BasicFilter = {
+    val __obj = js.Dynamic.literal()
+    if (criteria != null) __obj.updateDynamic("criteria")(criteria)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (sortSpecs != null) __obj.updateDynamic("sortSpecs")(sortSpecs)
+    __obj.asInstanceOf[BasicFilter]
+  }
+}
+

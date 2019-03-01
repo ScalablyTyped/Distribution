@@ -29,3 +29,26 @@ trait NodeDeleteEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeDeleteEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    model: Model = null,
+    parentDetails: js.Any = null,
+    parentElement: js.Any = null,
+    removedNodes: js.Array[_] = null,
+    `type`: java.lang.String = null
+  ): NodeDeleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (parentDetails != null) __obj.updateDynamic("parentDetails")(parentDetails)
+    if (parentElement != null) __obj.updateDynamic("parentElement")(parentElement)
+    if (removedNodes != null) __obj.updateDynamic("removedNodes")(removedNodes)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodeDeleteEventArgs]
+  }
+}
+

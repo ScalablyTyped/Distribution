@@ -12,3 +12,13 @@ trait IntegerMean extends js.Object {
   var sum: js.UndefOr[SplitInt64] = js.undefined
 }
 
+object IntegerMean {
+  @scala.inline
+  def apply(count: SplitInt64 = null, sum: SplitInt64 = null): IntegerMean = {
+    val __obj = js.Dynamic.literal()
+    if (count != null) __obj.updateDynamic("count")(count)
+    if (sum != null) __obj.updateDynamic("sum")(sum)
+    __obj.asInstanceOf[IntegerMean]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_PollTime extends js.Object {
   var pollTime: scala.Double
 }
 
+object Anon_PollTime {
+  @scala.inline
+  def apply(pollTime: scala.Double): Anon_PollTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pollTime")(pollTime)
+    __obj.asInstanceOf[Anon_PollTime]
+  }
+}
+

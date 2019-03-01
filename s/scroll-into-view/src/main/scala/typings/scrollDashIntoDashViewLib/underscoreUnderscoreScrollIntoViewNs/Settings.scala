@@ -14,3 +14,20 @@ trait Settings extends js.Object {
   ] = js.undefined
 }
 
+object Settings {
+  @scala.inline
+  def apply(
+    align: Alignment = null,
+    ease: js.Function1[/* value */ scala.Double, scala.Double] = null,
+    time: scala.Int | scala.Double = null,
+    validTarget: js.Function2[/* target */ stdLib.HTMLElement, /* parentsScrolled */ scala.Double, scala.Boolean] = null
+  ): Settings = {
+    val __obj = js.Dynamic.literal()
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (ease != null) __obj.updateDynamic("ease")(ease)
+    if (time != null) __obj.updateDynamic("time")(time.asInstanceOf[js.Any])
+    if (validTarget != null) __obj.updateDynamic("validTarget")(validTarget)
+    __obj.asInstanceOf[Settings]
+  }
+}
+

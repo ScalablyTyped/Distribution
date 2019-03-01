@@ -64,3 +64,46 @@ trait ValidationOptions extends js.Object {
   ] = js.undefined
 }
 
+object ValidationOptions {
+  @scala.inline
+  def apply(
+    exampleConfig: js.Object,
+    comment: java.lang.String = null,
+    condition: js.Function2[/* value */ js.Any, /* exampleValue */ js.Any, scala.Boolean] = null,
+    deprecate: js.Function4[
+      /* config */ js.Object, 
+      /* key */ java.lang.String, 
+      /* deprecatedConfig */ DeprecatedConfig, 
+      ValidationOptions, 
+      scala.Boolean
+    ] = null,
+    deprecatedConfig: DeprecatedConfig = null,
+    error: js.Function4[
+      /* key */ java.lang.String, 
+      /* received */ js.Any, 
+      /* exampleValue */ js.Any, 
+      ValidationOptions, 
+      scala.Unit
+    ] = null,
+    title: Title = null,
+    unknown: js.Function4[
+      /* config */ js.Object, 
+      /* exampleConfig */ js.Object, 
+      /* key */ java.lang.String, 
+      ValidationOptions, 
+      scala.Unit
+    ] = null
+  ): ValidationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exampleConfig")(exampleConfig)
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (deprecate != null) __obj.updateDynamic("deprecate")(deprecate)
+    if (deprecatedConfig != null) __obj.updateDynamic("deprecatedConfig")(deprecatedConfig)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (unknown != null) __obj.updateDynamic("unknown")(unknown)
+    __obj.asInstanceOf[ValidationOptions]
+  }
+}
+

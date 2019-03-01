@@ -9,3 +9,16 @@ trait FirebaseApp extends js.Object {
   def messaging(): atFirebaseMessagingDashTypesLib.atFirebaseMessagingDashTypesMod.FirebaseMessaging
 }
 
+object FirebaseApp {
+  @scala.inline
+  def apply(
+    messaging: js.Function0[
+      atFirebaseMessagingDashTypesLib.atFirebaseMessagingDashTypesMod.FirebaseMessaging
+    ]
+  ): FirebaseApp = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("messaging")(messaging)
+    __obj.asInstanceOf[FirebaseApp]
+  }
+}
+

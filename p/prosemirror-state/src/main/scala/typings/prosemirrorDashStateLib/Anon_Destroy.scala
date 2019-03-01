@@ -16,3 +16,20 @@ trait Anon_Destroy[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schem
   ] = js.undefined
 }
 
+object Anon_Destroy {
+  @scala.inline
+  def apply[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
+    destroy: js.Function0[scala.Unit] = null,
+    update: js.Function2[
+      /* view */ prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S], 
+      /* prevState */ prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S], 
+      scala.Unit
+    ] = null
+  ): Anon_Destroy[S] = {
+    val __obj = js.Dynamic.literal()
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Anon_Destroy[S]]
+  }
+}
+

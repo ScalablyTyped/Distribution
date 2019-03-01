@@ -42,3 +42,26 @@ trait bindCollectionOptions extends js.Object {
   var withRefs: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object bindCollectionOptions {
+  @scala.inline
+  def apply(
+    context: js.Object,
+    onFailure: js.Function0[scala.Unit] = null,
+    query: js.Function0[scala.Unit] = null,
+    state: java.lang.String = null,
+    `then`: js.Function0[scala.Unit] = null,
+    withIds: js.UndefOr[scala.Boolean] = js.undefined,
+    withRefs: js.UndefOr[scala.Boolean] = js.undefined
+  ): bindCollectionOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("context")(context)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (`then` != null) __obj.updateDynamic("then")(`then`)
+    if (!js.isUndefined(withIds)) __obj.updateDynamic("withIds")(withIds)
+    if (!js.isUndefined(withRefs)) __obj.updateDynamic("withRefs")(withRefs)
+    __obj.asInstanceOf[bindCollectionOptions]
+  }
+}
+

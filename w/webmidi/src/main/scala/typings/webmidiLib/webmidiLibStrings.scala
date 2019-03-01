@@ -7,25 +7,32 @@ import scala.scalajs.js.annotation._
 
 object webmidiLibStrings {
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait closed
+    extends webmidiLib.WebMidiNs.MIDIPortConnectionState
   
   @js.native
-  sealed trait connected extends js.Object
+  sealed trait connected
+    extends webmidiLib.WebMidiNs.MIDIPortDeviceState
   
   @js.native
-  sealed trait disconnected extends js.Object
+  sealed trait disconnected
+    extends webmidiLib.WebMidiNs.MIDIPortDeviceState
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait input
+    extends webmidiLib.WebMidiNs.MIDIPortType
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open
+    extends webmidiLib.WebMidiNs.MIDIPortConnectionState
   
   @js.native
-  sealed trait output extends js.Object
+  sealed trait output
+    extends webmidiLib.WebMidiNs.MIDIPortType
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends webmidiLib.WebMidiNs.MIDIPortConnectionState
   
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]

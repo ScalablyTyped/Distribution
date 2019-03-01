@@ -9,3 +9,12 @@ trait Anon_GetPortalPlacement extends js.Object {
   def getPortalPlacement(state: reactDashSelectLib.libComponentsMenuMod.MenuState): scala.Unit
 }
 
+object Anon_GetPortalPlacement {
+  @scala.inline
+  def apply(getPortalPlacement: js.Function1[reactDashSelectLib.libComponentsMenuMod.MenuState, scala.Unit]): Anon_GetPortalPlacement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getPortalPlacement")(getPortalPlacement)
+    __obj.asInstanceOf[Anon_GetPortalPlacement]
+  }
+}
+

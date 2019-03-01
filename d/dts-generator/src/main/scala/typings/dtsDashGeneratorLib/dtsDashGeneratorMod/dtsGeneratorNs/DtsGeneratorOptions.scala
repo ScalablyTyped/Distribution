@@ -61,3 +61,42 @@ trait DtsGeneratorOptions extends js.Object {
   var types: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object DtsGeneratorOptions {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    out: java.lang.String,
+    baseDir: java.lang.String = null,
+    eol: java.lang.String = null,
+    exclude: js.Array[java.lang.String] = null,
+    externs: js.Array[java.lang.String] = null,
+    files: js.Array[java.lang.String] = null,
+    indent: java.lang.String = null,
+    main: java.lang.String = null,
+    moduleResolution: typescriptLib.typescriptMod.tsNs.ModuleResolutionKind = null,
+    project: java.lang.String = null,
+    resolveModuleId: js.Function1[/* params */ ResolveModuleIdParams, java.lang.String] = null,
+    resolveModuleImport: js.Function1[/* params */ ResolveModuleImportParams, java.lang.String] = null,
+    target: typescriptLib.typescriptMod.tsNs.ScriptTarget = null,
+    types: js.Array[java.lang.String] = null
+  ): DtsGeneratorOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("out")(out)
+    if (baseDir != null) __obj.updateDynamic("baseDir")(baseDir)
+    if (eol != null) __obj.updateDynamic("eol")(eol)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (externs != null) __obj.updateDynamic("externs")(externs)
+    if (files != null) __obj.updateDynamic("files")(files)
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (main != null) __obj.updateDynamic("main")(main)
+    if (moduleResolution != null) __obj.updateDynamic("moduleResolution")(moduleResolution)
+    if (project != null) __obj.updateDynamic("project")(project)
+    if (resolveModuleId != null) __obj.updateDynamic("resolveModuleId")(resolveModuleId)
+    if (resolveModuleImport != null) __obj.updateDynamic("resolveModuleImport")(resolveModuleImport)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[DtsGeneratorOptions]
+  }
+}
+

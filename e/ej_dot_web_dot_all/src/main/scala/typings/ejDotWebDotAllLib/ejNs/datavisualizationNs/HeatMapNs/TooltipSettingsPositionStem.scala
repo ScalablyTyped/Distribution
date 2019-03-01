@@ -16,3 +16,13 @@ trait TooltipSettingsPositionStem extends js.Object {
   var vertical: js.UndefOr[Vertical | java.lang.String] = js.undefined
 }
 
+object TooltipSettingsPositionStem {
+  @scala.inline
+  def apply(horizontal: Horizontal | java.lang.String = null, vertical: Vertical | java.lang.String = null): TooltipSettingsPositionStem = {
+    val __obj = js.Dynamic.literal()
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TooltipSettingsPositionStem]
+  }
+}
+

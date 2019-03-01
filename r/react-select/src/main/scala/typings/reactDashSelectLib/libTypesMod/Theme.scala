@@ -11,3 +11,18 @@ trait Theme extends js.Object {
   var spacing: ThemeSpacing
 }
 
+object Theme {
+  @scala.inline
+  def apply(
+    borderRadius: scala.Double,
+    colors: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    spacing: ThemeSpacing
+  ): Theme = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("borderRadius")(borderRadius)
+    __obj.updateDynamic("colors")(colors)
+    __obj.updateDynamic("spacing")(spacing)
+    __obj.asInstanceOf[Theme]
+  }
+}
+

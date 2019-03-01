@@ -15,3 +15,30 @@ trait TransPropsWithoutI18n
   var values: js.UndefOr[js.Object] = js.undefined
 }
 
+object TransPropsWithoutI18n {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    components: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = null,
+    defaults: java.lang.String = null,
+    description: java.lang.String = null,
+    formats: js.Object = null,
+    id: java.lang.String = null,
+    render: reactLib.reactMod.ReactNs.ReactNode = null,
+    values: js.Object = null
+  ): TransPropsWithoutI18n = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (components != null) __obj.updateDynamic("components")(components)
+    if (defaults != null) __obj.updateDynamic("defaults")(defaults)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (formats != null) __obj.updateDynamic("formats")(formats)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (render != null) __obj.updateDynamic("render")(render.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[TransPropsWithoutI18n]
+  }
+}
+

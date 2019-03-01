@@ -165,3 +165,61 @@ trait ReactJsonViewProps extends js.Object {
   var validationMessage: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReactJsonViewProps {
+  @scala.inline
+  def apply(
+    src: js.Object,
+    collapseStringsAfterLength: scala.Double | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` = null,
+    collapsed: scala.Boolean | scala.Double = null,
+    defaultValue: TypeDefaultValue | js.Array[TypeDefaultValue] = null,
+    displayDataTypes: js.UndefOr[scala.Boolean] = js.undefined,
+    displayObjectSize: js.UndefOr[scala.Boolean] = js.undefined,
+    enableClipboard: scala.Boolean | (js.Function1[/* copy */ OnCopyProps, scala.Unit]) = null,
+    groupArraysAfterLength: scala.Int | scala.Double = null,
+    iconStyle: reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.circle | reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.triangle | reactDashJsonDashViewLib.reactDashJsonDashViewLibStrings.square = null,
+    indentWidth: scala.Int | scala.Double = null,
+    name: java.lang.String | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` = null,
+    onAdd: (js.Function1[
+      /* add */ InteractionProps, 
+      reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` | _
+    ]) | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` = null,
+    onDelete: (js.Function1[
+      /* del */ InteractionProps, 
+      reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` | _
+    ]) | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` = null,
+    onEdit: (js.Function1[
+      /* edit */ InteractionProps, 
+      reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` | _
+    ]) | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` = null,
+    onSelect: (js.Function1[/* select */ OnSelectProps, scala.Unit]) | reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` = null,
+    shouldCollapse: reactDashJsonDashViewLib.reactDashJsonDashViewLibNumbers.`false` | (js.Function1[/* field */ CollapsedFieldProps, scala.Boolean]) = null,
+    sortKeys: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    theme: ThemeKeys | ThemeObject = null,
+    validationMessage: java.lang.String = null
+  ): ReactJsonViewProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("src")(src)
+    if (collapseStringsAfterLength != null) __obj.updateDynamic("collapseStringsAfterLength")(collapseStringsAfterLength.asInstanceOf[js.Any])
+    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(displayDataTypes)) __obj.updateDynamic("displayDataTypes")(displayDataTypes)
+    if (!js.isUndefined(displayObjectSize)) __obj.updateDynamic("displayObjectSize")(displayObjectSize)
+    if (enableClipboard != null) __obj.updateDynamic("enableClipboard")(enableClipboard.asInstanceOf[js.Any])
+    if (groupArraysAfterLength != null) __obj.updateDynamic("groupArraysAfterLength")(groupArraysAfterLength.asInstanceOf[js.Any])
+    if (iconStyle != null) __obj.updateDynamic("iconStyle")(iconStyle.asInstanceOf[js.Any])
+    if (indentWidth != null) __obj.updateDynamic("indentWidth")(indentWidth.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd.asInstanceOf[js.Any])
+    if (onDelete != null) __obj.updateDynamic("onDelete")(onDelete.asInstanceOf[js.Any])
+    if (onEdit != null) __obj.updateDynamic("onEdit")(onEdit.asInstanceOf[js.Any])
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect.asInstanceOf[js.Any])
+    if (shouldCollapse != null) __obj.updateDynamic("shouldCollapse")(shouldCollapse.asInstanceOf[js.Any])
+    if (!js.isUndefined(sortKeys)) __obj.updateDynamic("sortKeys")(sortKeys)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage)
+    __obj.asInstanceOf[ReactJsonViewProps]
+  }
+}
+

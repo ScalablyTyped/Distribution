@@ -10,3 +10,17 @@ trait ReportsResource extends js.Object {
   def query(request: gapiDotClientDotYoutubeanalyticsLib.Anon_AltCurrency): gapiDotClientLib.gapiNs.clientNs.Request[ResultTable]
 }
 
+object ReportsResource {
+  @scala.inline
+  def apply(
+    query: js.Function1[
+      gapiDotClientDotYoutubeanalyticsLib.Anon_AltCurrency, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResultTable]
+    ]
+  ): ReportsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[ReportsResource]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_Address extends js.Object {
   var position: js.Array[scala.Double]
 }
 
+object Anon_Address {
+  @scala.inline
+  def apply(address: Anon_City, position: js.Array[scala.Double]): Anon_Address = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("position")(position)
+    __obj.asInstanceOf[Anon_Address]
+  }
+}
+

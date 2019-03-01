@@ -12,3 +12,20 @@ trait Anon_ColumnFilename extends js.Object {
   var nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
 }
 
+object Anon_ColumnFilename {
+  @scala.inline
+  def apply(
+    column: scala.Double,
+    filename: java.lang.String,
+    lineno: scala.Double,
+    nodes: js.Array[stylusLib.stylusMod.StylusNs.NodesNs.Node]
+  ): Anon_ColumnFilename = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("filename")(filename)
+    __obj.updateDynamic("lineno")(lineno)
+    __obj.updateDynamic("nodes")(nodes)
+    __obj.asInstanceOf[Anon_ColumnFilename]
+  }
+}
+

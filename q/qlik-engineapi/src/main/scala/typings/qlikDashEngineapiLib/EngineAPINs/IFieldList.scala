@@ -15,3 +15,12 @@ trait IFieldList extends js.Object {
   var qItems: js.Array[INxFieldDescription]
 }
 
+object IFieldList {
+  @scala.inline
+  def apply(qItems: js.Array[INxFieldDescription]): IFieldList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qItems")(qItems)
+    __obj.asInstanceOf[IFieldList]
+  }
+}
+

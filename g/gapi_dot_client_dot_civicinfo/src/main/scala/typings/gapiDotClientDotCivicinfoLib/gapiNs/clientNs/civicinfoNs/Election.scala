@@ -20,3 +20,20 @@ trait Election extends js.Object {
   var ocdDivisionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Election {
+  @scala.inline
+  def apply(
+    electionDay: java.lang.String = null,
+    id: java.lang.String = null,
+    name: java.lang.String = null,
+    ocdDivisionId: java.lang.String = null
+  ): Election = {
+    val __obj = js.Dynamic.literal()
+    if (electionDay != null) __obj.updateDynamic("electionDay")(electionDay)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (ocdDivisionId != null) __obj.updateDynamic("ocdDivisionId")(ocdDivisionId)
+    __obj.asInstanceOf[Election]
+  }
+}
+

@@ -15,3 +15,26 @@ trait Either[A, B] extends js.Object {
   def swap(): Either[B, A]
 }
 
+object Either {
+  @scala.inline
+  def apply[A, B](
+    fold: js.Function2[js.Function1[/* a */ A, js.Any], js.Function1[/* b */ B, js.Any], js.Any],
+    isLeft: scala.Boolean,
+    isRight: scala.Boolean,
+    left: js.Function0[LeftProjection[A, B]],
+    right: js.Function0[RightProjection[A, B]],
+    swap: js.Function0[Either[B, A]],
+    value: A | B
+  ): Either[A, B] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fold")(fold)
+    __obj.updateDynamic("isLeft")(isLeft)
+    __obj.updateDynamic("isRight")(isRight)
+    __obj.updateDynamic("left")(left)
+    __obj.updateDynamic("right")(right)
+    __obj.updateDynamic("swap")(swap)
+    __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Either[A, B]]
+  }
+}
+

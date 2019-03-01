@@ -12,3 +12,16 @@ trait SiteVerificationWebResourceGettokenRequest extends js.Object {
   var verificationMethod: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SiteVerificationWebResourceGettokenRequest {
+  @scala.inline
+  def apply(
+    site: gapiDotClientDotSiteverificationLib.Anon_Identifier = null,
+    verificationMethod: java.lang.String = null
+  ): SiteVerificationWebResourceGettokenRequest = {
+    val __obj = js.Dynamic.literal()
+    if (site != null) __obj.updateDynamic("site")(site)
+    if (verificationMethod != null) __obj.updateDynamic("verificationMethod")(verificationMethod)
+    __obj.asInstanceOf[SiteVerificationWebResourceGettokenRequest]
+  }
+}
+

@@ -33,3 +33,24 @@ trait MediaDownload extends js.Object {
   var useDirectDownload: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MediaDownload {
+  @scala.inline
+  def apply(
+    completeNotification: js.UndefOr[scala.Boolean] = js.undefined,
+    downloadService: java.lang.String = null,
+    dropzone: java.lang.String = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    maxDirectDownloadSize: java.lang.String = null,
+    useDirectDownload: js.UndefOr[scala.Boolean] = js.undefined
+  ): MediaDownload = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(completeNotification)) __obj.updateDynamic("completeNotification")(completeNotification)
+    if (downloadService != null) __obj.updateDynamic("downloadService")(downloadService)
+    if (dropzone != null) __obj.updateDynamic("dropzone")(dropzone)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (maxDirectDownloadSize != null) __obj.updateDynamic("maxDirectDownloadSize")(maxDirectDownloadSize)
+    if (!js.isUndefined(useDirectDownload)) __obj.updateDynamic("useDirectDownload")(useDirectDownload)
+    __obj.asInstanceOf[MediaDownload]
+  }
+}
+

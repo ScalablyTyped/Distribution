@@ -22,3 +22,22 @@ trait Progress extends js.Object {
   var timeDelta: scala.Double
 }
 
+object Progress {
+  @scala.inline
+  def apply(
+    completed: scala.Boolean,
+    req: requestDashStatsLib.Anon_BytesBytesDelta,
+    res: requestDashStatsLib.Anon_BytesBytesDeltaSpeed,
+    time: scala.Double,
+    timeDelta: scala.Double
+  ): Progress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("completed")(completed)
+    __obj.updateDynamic("req")(req)
+    __obj.updateDynamic("res")(res)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("timeDelta")(timeDelta)
+    __obj.asInstanceOf[Progress]
+  }
+}
+

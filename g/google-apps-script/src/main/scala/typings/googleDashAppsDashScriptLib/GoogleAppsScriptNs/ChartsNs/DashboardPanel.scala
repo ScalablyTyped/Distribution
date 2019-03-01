@@ -12,3 +12,20 @@ trait DashboardPanel extends js.Object {
   def setId(id: java.lang.String): DashboardPanel
 }
 
+object DashboardPanel {
+  @scala.inline
+  def apply(
+    add: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.UINs.Widget, DashboardPanel],
+    getId: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    setId: js.Function1[java.lang.String, DashboardPanel]
+  ): DashboardPanel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("setId")(setId)
+    __obj.asInstanceOf[DashboardPanel]
+  }
+}
+

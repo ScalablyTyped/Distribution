@@ -16,3 +16,28 @@ trait StrategyOption extends js.Object {
   var tokenURL: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StrategyOption {
+  @scala.inline
+  def apply(
+    callbackURL: java.lang.String,
+    clientID: java.lang.String,
+    clientSecret: java.lang.String,
+    authType: java.lang.String = null,
+    authorizationURL: java.lang.String = null,
+    profileURL: java.lang.String = null,
+    svcType: scala.Int | scala.Double = null,
+    tokenURL: java.lang.String = null
+  ): StrategyOption = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callbackURL")(callbackURL)
+    __obj.updateDynamic("clientID")(clientID)
+    __obj.updateDynamic("clientSecret")(clientSecret)
+    if (authType != null) __obj.updateDynamic("authType")(authType)
+    if (authorizationURL != null) __obj.updateDynamic("authorizationURL")(authorizationURL)
+    if (profileURL != null) __obj.updateDynamic("profileURL")(profileURL)
+    if (svcType != null) __obj.updateDynamic("svcType")(svcType.asInstanceOf[js.Any])
+    if (tokenURL != null) __obj.updateDynamic("tokenURL")(tokenURL)
+    __obj.asInstanceOf[StrategyOption]
+  }
+}
+

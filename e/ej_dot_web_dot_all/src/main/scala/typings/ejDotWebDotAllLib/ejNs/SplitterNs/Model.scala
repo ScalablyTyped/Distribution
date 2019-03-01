@@ -74,3 +74,48 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    animationSpeed: scala.Int | scala.Double = null,
+    beforeExpandCollapse: js.Function1[/* e */ BeforeExpandCollapseEventArgs, scala.Unit] = null,
+    clickOnExpander: js.Function1[/* e */ ClickOnExpanderEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    expandCollapse: js.Function1[/* e */ ExpandCollapseEventArgs, scala.Unit] = null,
+    expanderTemplate: java.lang.String = null,
+    height: java.lang.String = null,
+    htmlAttributes: js.Any = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    orientation: ejDotWebDotAllLib.ejNs.Orientation | java.lang.String = null,
+    properties: js.Array[_] = null,
+    resize: js.Function1[/* e */ ResizeEventArgs, scala.Unit] = null,
+    width: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
+    if (beforeExpandCollapse != null) __obj.updateDynamic("beforeExpandCollapse")(beforeExpandCollapse)
+    if (clickOnExpander != null) __obj.updateDynamic("clickOnExpander")(clickOnExpander)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (expandCollapse != null) __obj.updateDynamic("expandCollapse")(expandCollapse)
+    if (expanderTemplate != null) __obj.updateDynamic("expanderTemplate")(expanderTemplate)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (resize != null) __obj.updateDynamic("resize")(resize)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Model]
+  }
+}
+

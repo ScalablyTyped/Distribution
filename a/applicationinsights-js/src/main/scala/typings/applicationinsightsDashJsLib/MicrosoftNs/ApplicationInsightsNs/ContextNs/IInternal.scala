@@ -16,3 +16,13 @@ trait IInternal extends js.Object {
   var sdkVersion: java.lang.String
 }
 
+object IInternal {
+  @scala.inline
+  def apply(agentVersion: java.lang.String, sdkVersion: java.lang.String): IInternal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("agentVersion")(agentVersion)
+    __obj.updateDynamic("sdkVersion")(sdkVersion)
+    __obj.asInstanceOf[IInternal]
+  }
+}
+

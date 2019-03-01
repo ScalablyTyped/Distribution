@@ -70,3 +70,74 @@ trait Request extends js.Object {
   var updateVideoProperties: js.UndefOr[UpdateVideoPropertiesRequest] = js.undefined
 }
 
+object Request {
+  @scala.inline
+  def apply(
+    createImage: CreateImageRequest = null,
+    createLine: CreateLineRequest = null,
+    createParagraphBullets: CreateParagraphBulletsRequest = null,
+    createShape: CreateShapeRequest = null,
+    createSheetsChart: CreateSheetsChartRequest = null,
+    createSlide: CreateSlideRequest = null,
+    createTable: CreateTableRequest = null,
+    createVideo: CreateVideoRequest = null,
+    deleteObject: DeleteObjectRequest = null,
+    deleteParagraphBullets: DeleteParagraphBulletsRequest = null,
+    deleteTableColumn: DeleteTableColumnRequest = null,
+    deleteTableRow: DeleteTableRowRequest = null,
+    deleteText: DeleteTextRequest = null,
+    duplicateObject: DuplicateObjectRequest = null,
+    insertTableColumns: InsertTableColumnsRequest = null,
+    insertTableRows: InsertTableRowsRequest = null,
+    insertText: InsertTextRequest = null,
+    refreshSheetsChart: RefreshSheetsChartRequest = null,
+    replaceAllShapesWithImage: ReplaceAllShapesWithImageRequest = null,
+    replaceAllShapesWithSheetsChart: ReplaceAllShapesWithSheetsChartRequest = null,
+    replaceAllText: ReplaceAllTextRequest = null,
+    updateImageProperties: UpdateImagePropertiesRequest = null,
+    updateLineProperties: UpdateLinePropertiesRequest = null,
+    updatePageElementTransform: UpdatePageElementTransformRequest = null,
+    updatePageProperties: UpdatePagePropertiesRequest = null,
+    updateParagraphStyle: UpdateParagraphStyleRequest = null,
+    updateShapeProperties: UpdateShapePropertiesRequest = null,
+    updateSlidesPosition: UpdateSlidesPositionRequest = null,
+    updateTableCellProperties: UpdateTableCellPropertiesRequest = null,
+    updateTextStyle: UpdateTextStyleRequest = null,
+    updateVideoProperties: UpdateVideoPropertiesRequest = null
+  ): Request = {
+    val __obj = js.Dynamic.literal()
+    if (createImage != null) __obj.updateDynamic("createImage")(createImage)
+    if (createLine != null) __obj.updateDynamic("createLine")(createLine)
+    if (createParagraphBullets != null) __obj.updateDynamic("createParagraphBullets")(createParagraphBullets)
+    if (createShape != null) __obj.updateDynamic("createShape")(createShape)
+    if (createSheetsChart != null) __obj.updateDynamic("createSheetsChart")(createSheetsChart)
+    if (createSlide != null) __obj.updateDynamic("createSlide")(createSlide)
+    if (createTable != null) __obj.updateDynamic("createTable")(createTable)
+    if (createVideo != null) __obj.updateDynamic("createVideo")(createVideo)
+    if (deleteObject != null) __obj.updateDynamic("deleteObject")(deleteObject)
+    if (deleteParagraphBullets != null) __obj.updateDynamic("deleteParagraphBullets")(deleteParagraphBullets)
+    if (deleteTableColumn != null) __obj.updateDynamic("deleteTableColumn")(deleteTableColumn)
+    if (deleteTableRow != null) __obj.updateDynamic("deleteTableRow")(deleteTableRow)
+    if (deleteText != null) __obj.updateDynamic("deleteText")(deleteText)
+    if (duplicateObject != null) __obj.updateDynamic("duplicateObject")(duplicateObject)
+    if (insertTableColumns != null) __obj.updateDynamic("insertTableColumns")(insertTableColumns)
+    if (insertTableRows != null) __obj.updateDynamic("insertTableRows")(insertTableRows)
+    if (insertText != null) __obj.updateDynamic("insertText")(insertText)
+    if (refreshSheetsChart != null) __obj.updateDynamic("refreshSheetsChart")(refreshSheetsChart)
+    if (replaceAllShapesWithImage != null) __obj.updateDynamic("replaceAllShapesWithImage")(replaceAllShapesWithImage)
+    if (replaceAllShapesWithSheetsChart != null) __obj.updateDynamic("replaceAllShapesWithSheetsChart")(replaceAllShapesWithSheetsChart)
+    if (replaceAllText != null) __obj.updateDynamic("replaceAllText")(replaceAllText)
+    if (updateImageProperties != null) __obj.updateDynamic("updateImageProperties")(updateImageProperties)
+    if (updateLineProperties != null) __obj.updateDynamic("updateLineProperties")(updateLineProperties)
+    if (updatePageElementTransform != null) __obj.updateDynamic("updatePageElementTransform")(updatePageElementTransform)
+    if (updatePageProperties != null) __obj.updateDynamic("updatePageProperties")(updatePageProperties)
+    if (updateParagraphStyle != null) __obj.updateDynamic("updateParagraphStyle")(updateParagraphStyle)
+    if (updateShapeProperties != null) __obj.updateDynamic("updateShapeProperties")(updateShapeProperties)
+    if (updateSlidesPosition != null) __obj.updateDynamic("updateSlidesPosition")(updateSlidesPosition)
+    if (updateTableCellProperties != null) __obj.updateDynamic("updateTableCellProperties")(updateTableCellProperties)
+    if (updateTextStyle != null) __obj.updateDynamic("updateTextStyle")(updateTextStyle)
+    if (updateVideoProperties != null) __obj.updateDynamic("updateVideoProperties")(updateVideoProperties)
+    __obj.asInstanceOf[Request]
+  }
+}
+

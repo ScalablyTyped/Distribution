@@ -30,3 +30,26 @@ trait XModeChangeBroadcaster
   def removeModeChangeListener(rxListener: XModeChangeListener): scala.Unit
 }
 
+object XModeChangeBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addModeChangeApproveListener: js.Function1[XModeChangeApproveListener, scala.Unit],
+    addModeChangeListener: js.Function1[XModeChangeListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeModeChangeApproveListener: js.Function1[XModeChangeApproveListener, scala.Unit],
+    removeModeChangeListener: js.Function1[XModeChangeListener, scala.Unit]
+  ): XModeChangeBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addModeChangeApproveListener")(addModeChangeApproveListener)
+    __obj.updateDynamic("addModeChangeListener")(addModeChangeListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeModeChangeApproveListener")(removeModeChangeApproveListener)
+    __obj.updateDynamic("removeModeChangeListener")(removeModeChangeListener)
+    __obj.asInstanceOf[XModeChangeBroadcaster]
+  }
+}
+

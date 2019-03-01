@@ -11,3 +11,16 @@ import scala.scalajs.js.annotation._
   var timeout: js.UndefOr[js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
 }
 
+object GrowProps {
+  @scala.inline
+  def apply(
+    theme: atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Theme = null,
+    timeout: js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
+  ): GrowProps = {
+    val __obj = js.Dynamic.literal()
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GrowProps]
+  }
+}
+

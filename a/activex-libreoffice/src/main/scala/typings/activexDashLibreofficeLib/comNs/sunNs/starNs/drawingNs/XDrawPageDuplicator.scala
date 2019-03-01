@@ -16,3 +16,20 @@ trait XDrawPageDuplicator
   def duplicate(xPage: XDrawPage): XDrawPage
 }
 
+object XDrawPageDuplicator {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    duplicate: js.Function1[XDrawPage, XDrawPage],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDrawPageDuplicator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("duplicate")(duplicate)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDrawPageDuplicator]
+  }
+}
+

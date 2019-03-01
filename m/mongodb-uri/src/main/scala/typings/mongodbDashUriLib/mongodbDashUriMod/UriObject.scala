@@ -14,3 +14,24 @@ trait UriObject extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UriObject {
+  @scala.inline
+  def apply(
+    hosts: js.Array[Host],
+    scheme: java.lang.String,
+    database: java.lang.String = null,
+    options: js.Any = null,
+    password: java.lang.String = null,
+    username: java.lang.String = null
+  ): UriObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hosts")(hosts)
+    __obj.updateDynamic("scheme")(scheme)
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[UriObject]
+  }
+}
+

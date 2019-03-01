@@ -22,3 +22,39 @@ trait DevicesResource extends js.Object {
   def patch(request: gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[Device]
 }
 
+object DevicesResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Device]
+    ],
+    issueCommand: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallback, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDevicesResponse]
+    ],
+    operations: OperationsResource,
+    patch: js.Function1[
+      gapiDotClientDotAndroidmanagementLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Device]
+    ]
+  ): DevicesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("issueCommand")(issueCommand)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("operations")(operations)
+    __obj.updateDynamic("patch")(patch)
+    __obj.asInstanceOf[DevicesResource]
+  }
+}
+

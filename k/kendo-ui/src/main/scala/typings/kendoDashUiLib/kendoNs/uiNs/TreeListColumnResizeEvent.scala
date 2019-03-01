@@ -11,3 +11,24 @@ trait TreeListColumnResizeEvent extends TreeListEvent {
   var oldWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TreeListColumnResizeEvent {
+  @scala.inline
+  def apply(
+    isDefaultPrevented: js.Function0[scala.Boolean],
+    preventDefault: js.Function,
+    sender: TreeList,
+    column: js.Any = null,
+    newWidth: scala.Int | scala.Double = null,
+    oldWidth: scala.Int | scala.Double = null
+  ): TreeListColumnResizeEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isDefaultPrevented")(isDefaultPrevented)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("sender")(sender)
+    if (column != null) __obj.updateDynamic("column")(column)
+    if (newWidth != null) __obj.updateDynamic("newWidth")(newWidth.asInstanceOf[js.Any])
+    if (oldWidth != null) __obj.updateDynamic("oldWidth")(oldWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TreeListColumnResizeEvent]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Anon_Cwd extends js.Object {
   var ignore: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Cwd {
+  @scala.inline
+  def apply(cwd: java.lang.String = null, ignore: js.Array[java.lang.String] = null): Anon_Cwd = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (ignore != null) __obj.updateDynamic("ignore")(ignore)
+    __obj.asInstanceOf[Anon_Cwd]
+  }
+}
+

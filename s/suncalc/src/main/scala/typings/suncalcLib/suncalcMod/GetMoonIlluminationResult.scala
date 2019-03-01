@@ -11,3 +11,14 @@ trait GetMoonIlluminationResult extends js.Object {
   var phase: scala.Double
 }
 
+object GetMoonIlluminationResult {
+  @scala.inline
+  def apply(angle: scala.Double, fraction: scala.Double, phase: scala.Double): GetMoonIlluminationResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("fraction")(fraction)
+    __obj.updateDynamic("phase")(phase)
+    __obj.asInstanceOf[GetMoonIlluminationResult]
+  }
+}
+

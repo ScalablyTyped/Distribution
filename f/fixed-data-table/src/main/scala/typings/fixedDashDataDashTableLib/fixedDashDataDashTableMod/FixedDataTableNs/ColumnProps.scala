@@ -159,3 +159,51 @@ trait ColumnProps
   var width: scala.Double
 }
 
+object ColumnProps {
+  @scala.inline
+  def apply(
+    width: scala.Double,
+    align: java.lang.String = null,
+    allowCellsRecycling: js.UndefOr[scala.Boolean] = js.undefined,
+    cell: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+      /* props */ CellProps, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ]) = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    columnKey: java.lang.String | scala.Double = null,
+    fixed: js.UndefOr[scala.Boolean] = js.undefined,
+    flexGrow: scala.Int | scala.Double = null,
+    footer: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+      /* props */ CellProps, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ]) = null,
+    header: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+      /* props */ CellProps, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ]) = null,
+    isResizable: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    maxWidth: scala.Int | scala.Double = null,
+    minWidth: scala.Int | scala.Double = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[Column] = null
+  ): ColumnProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("width")(width)
+    if (align != null) __obj.updateDynamic("align")(align)
+    if (!js.isUndefined(allowCellsRecycling)) __obj.updateDynamic("allowCellsRecycling")(allowCellsRecycling)
+    if (cell != null) __obj.updateDynamic("cell")(cell.asInstanceOf[js.Any])
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (columnKey != null) __obj.updateDynamic("columnKey")(columnKey.asInstanceOf[js.Any])
+    if (!js.isUndefined(fixed)) __obj.updateDynamic("fixed")(fixed)
+    if (flexGrow != null) __obj.updateDynamic("flexGrow")(flexGrow.asInstanceOf[js.Any])
+    if (footer != null) __obj.updateDynamic("footer")(footer.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResizable)) __obj.updateDynamic("isResizable")(isResizable)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (maxWidth != null) __obj.updateDynamic("maxWidth")(maxWidth.asInstanceOf[js.Any])
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ColumnProps]
+  }
+}
+

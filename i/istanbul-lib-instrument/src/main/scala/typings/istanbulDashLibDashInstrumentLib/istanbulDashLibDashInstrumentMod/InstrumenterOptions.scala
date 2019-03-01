@@ -16,3 +16,28 @@ trait InstrumenterOptions extends js.Object {
   def sourceMapUrlCallback(filename: java.lang.String, url: java.lang.String): scala.Unit
 }
 
+object InstrumenterOptions {
+  @scala.inline
+  def apply(
+    autoWrap: scala.Boolean,
+    compact: scala.Boolean,
+    coverageVariable: java.lang.String,
+    debug: scala.Boolean,
+    esModules: scala.Boolean,
+    preserveComments: scala.Boolean,
+    produceSourceMap: scala.Boolean,
+    sourceMapUrlCallback: js.Function2[java.lang.String, java.lang.String, scala.Unit]
+  ): InstrumenterOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("autoWrap")(autoWrap)
+    __obj.updateDynamic("compact")(compact)
+    __obj.updateDynamic("coverageVariable")(coverageVariable)
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("esModules")(esModules)
+    __obj.updateDynamic("preserveComments")(preserveComments)
+    __obj.updateDynamic("produceSourceMap")(produceSourceMap)
+    __obj.updateDynamic("sourceMapUrlCallback")(sourceMapUrlCallback)
+    __obj.asInstanceOf[InstrumenterOptions]
+  }
+}
+

@@ -156,3 +156,90 @@ trait Config extends js.Object {
   var `v1.0-compatible`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    AsciiMath: AsciiMathInputProcessor = null,
+    CommonHTML: CommonHTMLOutputProcessor = null,
+    FontWarnings: FontWarnings = null,
+    `HTML-CSS`: HTMLCSSOutputProcessor = null,
+    MMLorHTML: MMLorHTMLConfiguration = null,
+    MatchWebFonts: MatchWebFonts = null,
+    MathEvents: MathEvents = null,
+    MathML: MathMLInputProcessor = null,
+    MathMenu: MathMenu = null,
+    MathZoom: MathZoom = null,
+    NativeMML: NativeMMLOutputProcessor = null,
+    SVG: SVGOutputProcessor = null,
+    Safe: Safe = null,
+    TeX: TeXInputProcessor = null,
+    asciimath2jax: Asciimath2jaxPreprocessor = null,
+    config: js.Array[java.lang.String] = null,
+    delayStartupUntil: java.lang.String = null,
+    displayAlign: java.lang.String = null,
+    displayIndent: java.lang.String = null,
+    elements: js.Array[java.lang.String] = null,
+    errorSettings: ErrorSettings = null,
+    extensions: js.Array[java.lang.String] = null,
+    jax: js.Array[java.lang.String] = null,
+    jsMath2jax: JSMath2jaxPreprocessor = null,
+    menuSettings: MenuSettings = null,
+    messageStyle: java.lang.String = null,
+    mml2jax: MML2jaxPreprocessor = null,
+    positionToHash: js.UndefOr[scala.Boolean] = js.undefined,
+    postJax: js.Any = null,
+    preJax: js.Any = null,
+    preRemoveClass: java.lang.String = null,
+    showMathMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    showMathMenuMSIE: js.UndefOr[scala.Boolean] = js.undefined,
+    showProcessingMessages: js.UndefOr[scala.Boolean] = js.undefined,
+    skipStartupTypeset: js.UndefOr[scala.Boolean] = js.undefined,
+    styleSheets: js.Array[java.lang.String] = null,
+    styles: js.Any = null,
+    tex2jax: TEX2jaxPreprocessor = null,
+    `v1.0-compatible`: js.UndefOr[scala.Boolean] = js.undefined
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (AsciiMath != null) __obj.updateDynamic("AsciiMath")(AsciiMath)
+    if (CommonHTML != null) __obj.updateDynamic("CommonHTML")(CommonHTML)
+    if (FontWarnings != null) __obj.updateDynamic("FontWarnings")(FontWarnings)
+    if (`HTML-CSS` != null) __obj.updateDynamic("HTML-CSS")(`HTML-CSS`)
+    if (MMLorHTML != null) __obj.updateDynamic("MMLorHTML")(MMLorHTML)
+    if (MatchWebFonts != null) __obj.updateDynamic("MatchWebFonts")(MatchWebFonts)
+    if (MathEvents != null) __obj.updateDynamic("MathEvents")(MathEvents)
+    if (MathML != null) __obj.updateDynamic("MathML")(MathML)
+    if (MathMenu != null) __obj.updateDynamic("MathMenu")(MathMenu)
+    if (MathZoom != null) __obj.updateDynamic("MathZoom")(MathZoom)
+    if (NativeMML != null) __obj.updateDynamic("NativeMML")(NativeMML)
+    if (SVG != null) __obj.updateDynamic("SVG")(SVG)
+    if (Safe != null) __obj.updateDynamic("Safe")(Safe)
+    if (TeX != null) __obj.updateDynamic("TeX")(TeX)
+    if (asciimath2jax != null) __obj.updateDynamic("asciimath2jax")(asciimath2jax)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (delayStartupUntil != null) __obj.updateDynamic("delayStartupUntil")(delayStartupUntil)
+    if (displayAlign != null) __obj.updateDynamic("displayAlign")(displayAlign)
+    if (displayIndent != null) __obj.updateDynamic("displayIndent")(displayIndent)
+    if (elements != null) __obj.updateDynamic("elements")(elements)
+    if (errorSettings != null) __obj.updateDynamic("errorSettings")(errorSettings)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (jax != null) __obj.updateDynamic("jax")(jax)
+    if (jsMath2jax != null) __obj.updateDynamic("jsMath2jax")(jsMath2jax)
+    if (menuSettings != null) __obj.updateDynamic("menuSettings")(menuSettings)
+    if (messageStyle != null) __obj.updateDynamic("messageStyle")(messageStyle)
+    if (mml2jax != null) __obj.updateDynamic("mml2jax")(mml2jax)
+    if (!js.isUndefined(positionToHash)) __obj.updateDynamic("positionToHash")(positionToHash)
+    if (postJax != null) __obj.updateDynamic("postJax")(postJax)
+    if (preJax != null) __obj.updateDynamic("preJax")(preJax)
+    if (preRemoveClass != null) __obj.updateDynamic("preRemoveClass")(preRemoveClass)
+    if (!js.isUndefined(showMathMenu)) __obj.updateDynamic("showMathMenu")(showMathMenu)
+    if (!js.isUndefined(showMathMenuMSIE)) __obj.updateDynamic("showMathMenuMSIE")(showMathMenuMSIE)
+    if (!js.isUndefined(showProcessingMessages)) __obj.updateDynamic("showProcessingMessages")(showProcessingMessages)
+    if (!js.isUndefined(skipStartupTypeset)) __obj.updateDynamic("skipStartupTypeset")(skipStartupTypeset)
+    if (styleSheets != null) __obj.updateDynamic("styleSheets")(styleSheets)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    if (tex2jax != null) __obj.updateDynamic("tex2jax")(tex2jax)
+    if (!js.isUndefined(`v1.0-compatible`)) __obj.updateDynamic("v1.0-compatible")(`v1.0-compatible`)
+    __obj.asInstanceOf[Config]
+  }
+}
+

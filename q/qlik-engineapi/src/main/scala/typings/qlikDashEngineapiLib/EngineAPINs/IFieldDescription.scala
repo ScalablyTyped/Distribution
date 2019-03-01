@@ -87,3 +87,44 @@ trait IFieldDescription extends js.Object {
   var qTotalCount: scala.Double
 }
 
+object IFieldDescription {
+  @scala.inline
+  def apply(
+    qCardinal: scala.Double,
+    qComment: java.lang.String,
+    qInternalNumber: scala.Double,
+    qName: java.lang.String,
+    qSrcTables: js.Array[java.lang.String],
+    qTags: js.Array[java.lang.String],
+    qTotalCount: scala.Double,
+    qAlwaysOneSelected: js.UndefOr[scala.Boolean] = js.undefined,
+    qAndMode: js.UndefOr[scala.Boolean] = js.undefined,
+    qDistinctOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    qIsDefinitionOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    qIsHidden: js.UndefOr[scala.Boolean] = js.undefined,
+    qIsLocked: js.UndefOr[scala.Boolean] = js.undefined,
+    qIsNumeric: js.UndefOr[scala.Boolean] = js.undefined,
+    qIsSemantic: js.UndefOr[scala.Boolean] = js.undefined,
+    qIsSystem: js.UndefOr[scala.Boolean] = js.undefined
+  ): IFieldDescription = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qCardinal")(qCardinal)
+    __obj.updateDynamic("qComment")(qComment)
+    __obj.updateDynamic("qInternalNumber")(qInternalNumber)
+    __obj.updateDynamic("qName")(qName)
+    __obj.updateDynamic("qSrcTables")(qSrcTables)
+    __obj.updateDynamic("qTags")(qTags)
+    __obj.updateDynamic("qTotalCount")(qTotalCount)
+    if (!js.isUndefined(qAlwaysOneSelected)) __obj.updateDynamic("qAlwaysOneSelected")(qAlwaysOneSelected)
+    if (!js.isUndefined(qAndMode)) __obj.updateDynamic("qAndMode")(qAndMode)
+    if (!js.isUndefined(qDistinctOnly)) __obj.updateDynamic("qDistinctOnly")(qDistinctOnly)
+    if (!js.isUndefined(qIsDefinitionOnly)) __obj.updateDynamic("qIsDefinitionOnly")(qIsDefinitionOnly)
+    if (!js.isUndefined(qIsHidden)) __obj.updateDynamic("qIsHidden")(qIsHidden)
+    if (!js.isUndefined(qIsLocked)) __obj.updateDynamic("qIsLocked")(qIsLocked)
+    if (!js.isUndefined(qIsNumeric)) __obj.updateDynamic("qIsNumeric")(qIsNumeric)
+    if (!js.isUndefined(qIsSemantic)) __obj.updateDynamic("qIsSemantic")(qIsSemantic)
+    if (!js.isUndefined(qIsSystem)) __obj.updateDynamic("qIsSystem")(qIsSystem)
+    __obj.asInstanceOf[IFieldDescription]
+  }
+}
+

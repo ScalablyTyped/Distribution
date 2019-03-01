@@ -27,3 +27,20 @@ trait PreviewImageError extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PreviewImageError {
+  @scala.inline
+  def apply(
+    code: scala.Int | scala.Double = null,
+    error: java.lang.String = null,
+    message: java.lang.String = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): PreviewImageError = {
+    val __obj = js.Dynamic.literal()
+    if (code != null) __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[PreviewImageError]
+  }
+}
+

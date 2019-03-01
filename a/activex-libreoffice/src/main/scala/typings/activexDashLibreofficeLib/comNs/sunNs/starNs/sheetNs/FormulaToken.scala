@@ -20,3 +20,13 @@ trait FormulaToken extends js.Object {
   var OpCode: scala.Double
 }
 
+object FormulaToken {
+  @scala.inline
+  def apply(Data: js.Any, OpCode: scala.Double): FormulaToken = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Data")(Data)
+    __obj.updateDynamic("OpCode")(OpCode)
+    __obj.asInstanceOf[FormulaToken]
+  }
+}
+

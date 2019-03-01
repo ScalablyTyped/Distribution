@@ -18,3 +18,32 @@ trait TextareaState[TItem] extends js.Object {
   var value: java.lang.String
 }
 
+object TextareaState {
+  @scala.inline
+  def apply[TItem](
+    actualToken: java.lang.String,
+    dataLoading: scala.Boolean,
+    selectionEnd: scala.Double,
+    selectionStart: scala.Double,
+    value: java.lang.String,
+    component: reactLib.reactMod.ReactNs.SFC[ItemComponentProps[TItem]] = null,
+    currentTrigger: java.lang.String = null,
+    data: js.Array[TItem] = null,
+    left: scala.Int | scala.Double = null,
+    top: scala.Int | scala.Double = null
+  ): TextareaState[TItem] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("actualToken")(actualToken)
+    __obj.updateDynamic("dataLoading")(dataLoading)
+    __obj.updateDynamic("selectionEnd")(selectionEnd)
+    __obj.updateDynamic("selectionStart")(selectionStart)
+    __obj.updateDynamic("value")(value)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (currentTrigger != null) __obj.updateDynamic("currentTrigger")(currentTrigger)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TextareaState[TItem]]
+  }
+}
+

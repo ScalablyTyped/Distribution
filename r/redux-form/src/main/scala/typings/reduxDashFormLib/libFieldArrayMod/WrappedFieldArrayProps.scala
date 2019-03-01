@@ -10,3 +10,13 @@ trait WrappedFieldArrayProps[FieldValue] extends js.Object {
   var meta: FieldArrayMetaProps
 }
 
+object WrappedFieldArrayProps {
+  @scala.inline
+  def apply[FieldValue](fields: FieldArrayFieldsProps[FieldValue], meta: FieldArrayMetaProps): WrappedFieldArrayProps[FieldValue] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("meta")(meta)
+    __obj.asInstanceOf[WrappedFieldArrayProps[FieldValue]]
+  }
+}
+

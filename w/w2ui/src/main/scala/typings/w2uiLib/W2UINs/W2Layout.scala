@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait W2Layout extends W2Common {
+trait W2Layout
+  extends W2Common
+     with W2Object {
   var padding: scala.Double = js.native
   var panels: js.Array[W2Panel] = js.native
   var resizer: scala.Double = js.native

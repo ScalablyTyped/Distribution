@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object reactDashMeasureLibStrings {
   @js.native
-  sealed trait bounds extends js.Object
+  sealed trait bounds
+    extends reactDashMeasureLib.reactDashMeasureMod.MeasurementType
   
   @js.native
-  sealed trait client extends js.Object
+  sealed trait client
+    extends reactDashMeasureLib.reactDashMeasureMod.MeasurementType
   
   @js.native
-  sealed trait margin extends js.Object
+  sealed trait margin
+    extends reactDashMeasureLib.reactDashMeasureMod.MeasurementType
   
   @js.native
-  sealed trait offset extends js.Object
+  sealed trait offset
+    extends reactDashMeasureLib.reactDashMeasureMod.MeasurementType
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scroll
+    extends reactDashMeasureLib.reactDashMeasureMod.MeasurementType
   
   @scala.inline
   def bounds: bounds = "bounds".asInstanceOf[bounds]

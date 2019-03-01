@@ -24,3 +24,20 @@ trait RowProps extends js.Object {
   var selectedClassName: java.lang.String
 }
 
+object RowProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String,
+    index: scala.Double,
+    overClassName: java.lang.String,
+    selectedClassName: java.lang.String
+  ): RowProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("className")(className)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("overClassName")(overClassName)
+    __obj.updateDynamic("selectedClassName")(selectedClassName)
+    __obj.asInstanceOf[RowProps]
+  }
+}
+

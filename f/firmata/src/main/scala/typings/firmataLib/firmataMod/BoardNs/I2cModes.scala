@@ -13,3 +13,15 @@ trait I2cModes extends js.Object {
   var WRITE: I2C_MODE
 }
 
+object I2cModes {
+  @scala.inline
+  def apply(CONTINUOUS_READ: I2C_MODE, READ: I2C_MODE, STOP_READING: I2C_MODE, WRITE: I2C_MODE): I2cModes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CONTINUOUS_READ")(CONTINUOUS_READ)
+    __obj.updateDynamic("READ")(READ)
+    __obj.updateDynamic("STOP_READING")(STOP_READING)
+    __obj.updateDynamic("WRITE")(WRITE)
+    __obj.asInstanceOf[I2cModes]
+  }
+}
+

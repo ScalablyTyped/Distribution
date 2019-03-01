@@ -16,3 +16,16 @@ trait ProductSubscriptionState extends js.Object {
   val productArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ProductSubscriptionState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    productArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ProductSubscriptionState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (productArn != null) __obj.updateDynamic("productArn")(productArn.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ProductSubscriptionState]
+  }
+}
+

@@ -27,3 +27,32 @@ trait Format extends js.Object {
   var value: js.UndefOr[scala.Double | js.Array[_]] = js.undefined
 }
 
+object Format {
+  @scala.inline
+  def apply(
+    color: java.lang.String = null,
+    componentType: echartsLib.echartsLibStrings.series = null,
+    data: js.Any = null,
+    dataIndex: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    percent: scala.Int | scala.Double = null,
+    seriesIndex: scala.Int | scala.Double = null,
+    seriesName: java.lang.String = null,
+    seriesType: java.lang.String = null,
+    value: scala.Double | js.Array[_] = null
+  ): Format = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (componentType != null) __obj.updateDynamic("componentType")(componentType)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dataIndex != null) __obj.updateDynamic("dataIndex")(dataIndex.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (percent != null) __obj.updateDynamic("percent")(percent.asInstanceOf[js.Any])
+    if (seriesIndex != null) __obj.updateDynamic("seriesIndex")(seriesIndex.asInstanceOf[js.Any])
+    if (seriesName != null) __obj.updateDynamic("seriesName")(seriesName)
+    if (seriesType != null) __obj.updateDynamic("seriesType")(seriesType)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Format]
+  }
+}
+

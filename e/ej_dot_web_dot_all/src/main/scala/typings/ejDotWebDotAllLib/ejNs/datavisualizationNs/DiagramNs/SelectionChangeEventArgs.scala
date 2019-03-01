@@ -36,3 +36,30 @@ trait SelectionChangeEventArgs extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SelectionChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cause: java.lang.String = null,
+    changeType: java.lang.String = null,
+    diagramId: java.lang.String = null,
+    element: js.Any = null,
+    newItems: js.Array[_] = null,
+    oldItems: js.Array[_] = null,
+    selectedItems: js.Array[_] = null,
+    state: java.lang.String = null
+  ): SelectionChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cause != null) __obj.updateDynamic("cause")(cause)
+    if (changeType != null) __obj.updateDynamic("changeType")(changeType)
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (newItems != null) __obj.updateDynamic("newItems")(newItems)
+    if (oldItems != null) __obj.updateDynamic("oldItems")(oldItems)
+    if (selectedItems != null) __obj.updateDynamic("selectedItems")(selectedItems)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[SelectionChangeEventArgs]
+  }
+}
+

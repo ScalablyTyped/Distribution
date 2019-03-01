@@ -28,3 +28,26 @@ trait LayoutEdge extends js.Object {
   def getOtherVertex(v: LayoutVertex): scala.Unit
 }
 
+object LayoutEdge {
+  @scala.inline
+  def apply(
+    commit: js.Function0[scala.Unit],
+    data: js.Any,
+    fromVertex: LayoutVertex,
+    getOtherVertex: js.Function1[LayoutVertex, scala.Unit],
+    link: Link,
+    network: LayoutNetwork,
+    toVertex: LayoutVertex
+  ): LayoutEdge = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commit")(commit)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("fromVertex")(fromVertex)
+    __obj.updateDynamic("getOtherVertex")(getOtherVertex)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("network")(network)
+    __obj.updateDynamic("toVertex")(toVertex)
+    __obj.asInstanceOf[LayoutEdge]
+  }
+}
+

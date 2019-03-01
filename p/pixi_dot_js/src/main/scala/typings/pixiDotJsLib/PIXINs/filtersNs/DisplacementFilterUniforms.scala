@@ -11,3 +11,18 @@ trait DisplacementFilterUniforms extends js.Object {
   var scale: pixiDotJsLib.PIXINs.Point
 }
 
+object DisplacementFilterUniforms {
+  @scala.inline
+  def apply(
+    filterMatrix: pixiDotJsLib.PIXINs.Matrix,
+    mapSampler: pixiDotJsLib.PIXINs.Texture,
+    scale: pixiDotJsLib.PIXINs.Point
+  ): DisplacementFilterUniforms = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filterMatrix")(filterMatrix)
+    __obj.updateDynamic("mapSampler")(mapSampler)
+    __obj.updateDynamic("scale")(scale)
+    __obj.asInstanceOf[DisplacementFilterUniforms]
+  }
+}
+

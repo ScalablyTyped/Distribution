@@ -12,3 +12,12 @@ trait DescribeTableOutput extends js.Object {
   var Table: js.UndefOr[TableDescription] = js.undefined
 }
 
+object DescribeTableOutput {
+  @scala.inline
+  def apply(Table: TableDescription = null): DescribeTableOutput = {
+    val __obj = js.Dynamic.literal()
+    if (Table != null) __obj.updateDynamic("Table")(Table)
+    __obj.asInstanceOf[DescribeTableOutput]
+  }
+}
+

@@ -43,3 +43,28 @@ trait ImageProperties extends js.Object {
   var transparency: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ImageProperties {
+  @scala.inline
+  def apply(
+    brightness: scala.Int | scala.Double = null,
+    contrast: scala.Int | scala.Double = null,
+    cropProperties: CropProperties = null,
+    link: Link = null,
+    outline: Outline = null,
+    recolor: Recolor = null,
+    shadow: Shadow = null,
+    transparency: scala.Int | scala.Double = null
+  ): ImageProperties = {
+    val __obj = js.Dynamic.literal()
+    if (brightness != null) __obj.updateDynamic("brightness")(brightness.asInstanceOf[js.Any])
+    if (contrast != null) __obj.updateDynamic("contrast")(contrast.asInstanceOf[js.Any])
+    if (cropProperties != null) __obj.updateDynamic("cropProperties")(cropProperties)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (recolor != null) __obj.updateDynamic("recolor")(recolor)
+    if (shadow != null) __obj.updateDynamic("shadow")(shadow)
+    if (transparency != null) __obj.updateDynamic("transparency")(transparency.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageProperties]
+  }
+}
+

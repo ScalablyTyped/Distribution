@@ -40,3 +40,44 @@ trait TfvcChangeset extends TfvcChangesetRef {
   var workItems: js.Array[AssociatedWorkItem]
 }
 
+object TfvcChangeset {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    accountId: java.lang.String,
+    author: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    changes: js.Array[TfvcChange],
+    changesetId: scala.Double,
+    checkedInBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    checkinNotes: js.Array[CheckinNote],
+    collectionId: java.lang.String,
+    comment: java.lang.String,
+    commentTruncated: scala.Boolean,
+    createdDate: stdLib.Date,
+    hasMoreChanges: scala.Boolean,
+    policyOverride: TfvcPolicyOverrideInfo,
+    teamProjectIds: js.Array[java.lang.String],
+    url: java.lang.String,
+    workItems: js.Array[AssociatedWorkItem]
+  ): TfvcChangeset = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("accountId")(accountId)
+    __obj.updateDynamic("author")(author)
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("changesetId")(changesetId)
+    __obj.updateDynamic("checkedInBy")(checkedInBy)
+    __obj.updateDynamic("checkinNotes")(checkinNotes)
+    __obj.updateDynamic("collectionId")(collectionId)
+    __obj.updateDynamic("comment")(comment)
+    __obj.updateDynamic("commentTruncated")(commentTruncated)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("hasMoreChanges")(hasMoreChanges)
+    __obj.updateDynamic("policyOverride")(policyOverride)
+    __obj.updateDynamic("teamProjectIds")(teamProjectIds)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("workItems")(workItems)
+    __obj.asInstanceOf[TfvcChangeset]
+  }
+}
+

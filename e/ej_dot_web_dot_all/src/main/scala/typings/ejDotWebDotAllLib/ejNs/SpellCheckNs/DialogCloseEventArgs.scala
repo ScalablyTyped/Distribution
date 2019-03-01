@@ -23,3 +23,22 @@ trait DialogCloseEventArgs extends js.Object {
   var updatedText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DialogCloseEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    requestType: java.lang.String = null,
+    `type`: java.lang.String = null,
+    updatedText: java.lang.String = null
+  ): DialogCloseEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (updatedText != null) __obj.updateDynamic("updatedText")(updatedText)
+    __obj.asInstanceOf[DialogCloseEventArgs]
+  }
+}
+

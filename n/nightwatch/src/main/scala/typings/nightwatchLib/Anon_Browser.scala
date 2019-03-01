@@ -11,3 +11,14 @@ trait Anon_Browser extends js.Object {
   var server: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Browser {
+  @scala.inline
+  def apply(browser: java.lang.String = null, driver: java.lang.String = null, server: java.lang.String = null): Anon_Browser = {
+    val __obj = js.Dynamic.literal()
+    if (browser != null) __obj.updateDynamic("browser")(browser)
+    if (driver != null) __obj.updateDynamic("driver")(driver)
+    if (server != null) __obj.updateDynamic("server")(server)
+    __obj.asInstanceOf[Anon_Browser]
+  }
+}
+

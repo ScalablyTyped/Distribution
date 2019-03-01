@@ -53,3 +53,34 @@ trait ComponentPropsGaeaEdit extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ComponentPropsGaeaEdit {
+  @scala.inline
+  def apply(
+    editable: scala.Boolean,
+    editor: java.lang.String,
+    field: java.lang.String,
+    hideTool: scala.Boolean,
+    label: java.lang.String,
+    array: js.Array[ComponentPropsOptionsArrayValue] = null,
+    emptyValue: js.Any = null,
+    instance: js.Array[org.scalablytyped.runtime.StringDictionary[ComponentPropsOptionValue]] = null,
+    number: gaeaDashModelLib.Anon_CurrentUnit = null,
+    selector: js.Array[ComponentPropsOptionsSelector] = null,
+    `type`: java.lang.String = null
+  ): ComponentPropsGaeaEdit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editable")(editable)
+    __obj.updateDynamic("editor")(editor)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("hideTool")(hideTool)
+    __obj.updateDynamic("label")(label)
+    if (array != null) __obj.updateDynamic("array")(array)
+    if (emptyValue != null) __obj.updateDynamic("emptyValue")(emptyValue)
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (number != null) __obj.updateDynamic("number")(number)
+    if (selector != null) __obj.updateDynamic("selector")(selector)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ComponentPropsGaeaEdit]
+  }
+}
+

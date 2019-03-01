@@ -9,3 +9,12 @@ trait Anon_Points extends js.Object {
   var points: java.lang.String
 }
 
+object Anon_Points {
+  @scala.inline
+  def apply(points: java.lang.String): Anon_Points = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("points")(points)
+    __obj.asInstanceOf[Anon_Points]
+  }
+}
+

@@ -10,3 +10,12 @@ trait AppEngineQueueConfig extends js.Object {
   var appEngineRoutingOverride: js.UndefOr[AppEngineRouting] = js.undefined
 }
 
+object AppEngineQueueConfig {
+  @scala.inline
+  def apply(appEngineRoutingOverride: AppEngineRouting = null): AppEngineQueueConfig = {
+    val __obj = js.Dynamic.literal()
+    if (appEngineRoutingOverride != null) __obj.updateDynamic("appEngineRoutingOverride")(appEngineRoutingOverride)
+    __obj.asInstanceOf[AppEngineQueueConfig]
+  }
+}
+

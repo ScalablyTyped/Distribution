@@ -20,3 +20,18 @@ trait SourceProviderAttributes extends js.Object {
   var supportedTriggers: js.Array[SupportedTrigger]
 }
 
+object SourceProviderAttributes {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    supportedCapabilities: org.scalablytyped.runtime.StringDictionary[scala.Boolean],
+    supportedTriggers: js.Array[SupportedTrigger]
+  ): SourceProviderAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("supportedCapabilities")(supportedCapabilities)
+    __obj.updateDynamic("supportedTriggers")(supportedTriggers)
+    __obj.asInstanceOf[SourceProviderAttributes]
+  }
+}
+

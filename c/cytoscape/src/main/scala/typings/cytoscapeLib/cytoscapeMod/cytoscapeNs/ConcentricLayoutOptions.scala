@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * http://js.cytoscape.org/#layouts/concentric
   */
-trait ConcentricLayoutOptions extends ShapedLayoutOptions {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- cytoscapeLib.cytoscapeMod.cytoscapeNs.LayoutOptions because Already inherited */ trait ConcentricLayoutOptions extends ShapedLayoutOptions {
   // whether the layout should go clockwise (true) or counterclockwise/anticlockwise (false)
   var clockwise: js.UndefOr[scala.Boolean] = js.undefined
   // whether levels have an equal radial distance betwen them, may cause bounding box overflow
@@ -32,5 +33,58 @@ trait ConcentricLayoutOptions extends ShapedLayoutOptions {
   def concentric(node: cytoscapeLib.Anon_Degree): scala.Double
   // the variation of concentric values in each level
   def levelWidth(node: cytoscapeLib.Anon_MaxDegree): scala.Double
+}
+
+object ConcentricLayoutOptions {
+  @scala.inline
+  def apply(
+    concentric: js.Function1[cytoscapeLib.Anon_Degree, scala.Double],
+    equidistant: cytoscapeLib.cytoscapeLibNumbers.`false`,
+    fit: scala.Boolean,
+    levelWidth: js.Function1[cytoscapeLib.Anon_MaxDegree, scala.Double],
+    minNodeSpacing: cytoscapeLib.cytoscapeLibNumbers.`10`,
+    name: cytoscapeLib.cytoscapeLibStrings.concentric,
+    nodeDimensionsIncludeLabels: scala.Boolean,
+    startAngle: scala.Double,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDuration: scala.Int | scala.Double = null,
+    animationEasing: js.UndefOr[scala.Boolean] = js.undefined,
+    avoidOverlap: js.UndefOr[scala.Boolean] = js.undefined,
+    boundingBox: BoundingBox12 | BoundingBoxWH = null,
+    clockwise: js.UndefOr[scala.Boolean] = js.undefined,
+    height: js.UndefOr[scala.Nothing] = js.undefined,
+    padding: scala.Int | scala.Double = null,
+    ready: LayoutHandler = null,
+    sort: SortingFunction = null,
+    spacingFactor: js.UndefOr[scala.Nothing] = js.undefined,
+    stop: LayoutHandler = null,
+    sweep: scala.Int | scala.Double = null,
+    width: js.UndefOr[scala.Nothing] = js.undefined
+  ): ConcentricLayoutOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("concentric")(concentric)
+    __obj.updateDynamic("equidistant")(equidistant)
+    __obj.updateDynamic("fit")(fit)
+    __obj.updateDynamic("levelWidth")(levelWidth)
+    __obj.updateDynamic("minNodeSpacing")(minNodeSpacing)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("nodeDimensionsIncludeLabels")(nodeDimensionsIncludeLabels)
+    __obj.updateDynamic("startAngle")(startAngle)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(animationEasing)) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (!js.isUndefined(avoidOverlap)) __obj.updateDynamic("avoidOverlap")(avoidOverlap)
+    if (boundingBox != null) __obj.updateDynamic("boundingBox")(boundingBox.asInstanceOf[js.Any])
+    if (!js.isUndefined(clockwise)) __obj.updateDynamic("clockwise")(clockwise)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (ready != null) __obj.updateDynamic("ready")(ready)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (!js.isUndefined(spacingFactor)) __obj.updateDynamic("spacingFactor")(spacingFactor)
+    if (stop != null) __obj.updateDynamic("stop")(stop)
+    if (sweep != null) __obj.updateDynamic("sweep")(sweep.asInstanceOf[js.Any])
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[ConcentricLayoutOptions]
+  }
 }
 

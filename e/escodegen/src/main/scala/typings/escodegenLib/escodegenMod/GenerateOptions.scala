@@ -57,3 +57,36 @@ trait GenerateOptions extends js.Object {
   var verbatim: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GenerateOptions {
+  @scala.inline
+  def apply(
+    comment: js.UndefOr[scala.Boolean] = js.undefined,
+    directive: js.UndefOr[scala.Boolean] = js.undefined,
+    file: java.lang.String = null,
+    format: FormatOptions = null,
+    moz: MozillaOptions = null,
+    parse: js.Function = null,
+    sourceCode: java.lang.String = null,
+    sourceContent: java.lang.String = null,
+    sourceMap: java.lang.String = null,
+    sourceMapRoot: java.lang.String = null,
+    sourceMapWithCode: js.UndefOr[scala.Boolean] = js.undefined,
+    verbatim: java.lang.String = null
+  ): GenerateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(comment)) __obj.updateDynamic("comment")(comment)
+    if (!js.isUndefined(directive)) __obj.updateDynamic("directive")(directive)
+    if (file != null) __obj.updateDynamic("file")(file)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (moz != null) __obj.updateDynamic("moz")(moz)
+    if (parse != null) __obj.updateDynamic("parse")(parse)
+    if (sourceCode != null) __obj.updateDynamic("sourceCode")(sourceCode)
+    if (sourceContent != null) __obj.updateDynamic("sourceContent")(sourceContent)
+    if (sourceMap != null) __obj.updateDynamic("sourceMap")(sourceMap)
+    if (sourceMapRoot != null) __obj.updateDynamic("sourceMapRoot")(sourceMapRoot)
+    if (!js.isUndefined(sourceMapWithCode)) __obj.updateDynamic("sourceMapWithCode")(sourceMapWithCode)
+    if (verbatim != null) __obj.updateDynamic("verbatim")(verbatim)
+    __obj.asInstanceOf[GenerateOptions]
+  }
+}
+

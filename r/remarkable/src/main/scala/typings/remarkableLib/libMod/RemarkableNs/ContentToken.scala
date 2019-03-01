@@ -17,3 +17,21 @@ trait ContentToken extends TagToken {
   var content: js.Any
 }
 
+object ContentToken {
+  @scala.inline
+  def apply(
+    block: scala.Boolean,
+    content: js.Any,
+    level: scala.Double,
+    `type`: java.lang.String,
+    lines: js.Tuple2[scala.Double, scala.Double] = null
+  ): ContentToken = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("block")(block)
+    __obj.updateDynamic("content")(content)
+    __obj.updateDynamic("level")(level)
+    if (lines != null) __obj.updateDynamic("lines")(lines)
+    __obj.asInstanceOf[ContentToken]
+  }
+}
+

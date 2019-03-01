@@ -16,3 +16,27 @@ trait CalendarSpec
   var sameElse: js.UndefOr[CalendarSpecVal] = js.undefined
 }
 
+object CalendarSpec {
+  @scala.inline
+  def apply(
+    StringDictionary: // any additional properties might be used with datetime.calendarFormat
+  /* x */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[CalendarSpecVal]] = null,
+    lastDay: CalendarSpecVal = null,
+    lastWeek: CalendarSpecVal = null,
+    nextDay: CalendarSpecVal = null,
+    nextWeek: CalendarSpecVal = null,
+    sameDay: CalendarSpecVal = null,
+    sameElse: CalendarSpecVal = null
+  ): CalendarSpec = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (lastDay != null) __obj.updateDynamic("lastDay")(lastDay.asInstanceOf[js.Any])
+    if (lastWeek != null) __obj.updateDynamic("lastWeek")(lastWeek.asInstanceOf[js.Any])
+    if (nextDay != null) __obj.updateDynamic("nextDay")(nextDay.asInstanceOf[js.Any])
+    if (nextWeek != null) __obj.updateDynamic("nextWeek")(nextWeek.asInstanceOf[js.Any])
+    if (sameDay != null) __obj.updateDynamic("sameDay")(sameDay.asInstanceOf[js.Any])
+    if (sameElse != null) __obj.updateDynamic("sameElse")(sameElse.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CalendarSpec]
+  }
+}
+

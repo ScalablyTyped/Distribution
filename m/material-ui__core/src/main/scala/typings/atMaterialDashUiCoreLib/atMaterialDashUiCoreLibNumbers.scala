@@ -7,58 +7,77 @@ import scala.scalajs.js.annotation._
 
 object atMaterialDashUiCoreLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSpacing
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `10` extends js.Object
+  sealed trait `10`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `11` extends js.Object
+  sealed trait `11`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `12` extends js.Object
+  sealed trait `12`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `16` extends js.Object
+  sealed trait `16`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSpacing
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `24` extends js.Object
+  sealed trait `24`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSpacing
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `32` extends js.Object
+  sealed trait `32`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSpacing
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `40` extends js.Object
+  sealed trait `40`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSpacing
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
+       with atMaterialDashUiCoreLib.gridGridMod.GridSpacing
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.SortDirection
   
   @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]

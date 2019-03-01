@@ -9,3 +9,12 @@ trait ICoreWindowStatic extends js.Object {
   def getForCurrentThread(): CoreWindow
 }
 
+object ICoreWindowStatic {
+  @scala.inline
+  def apply(getForCurrentThread: js.Function0[CoreWindow]): ICoreWindowStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getForCurrentThread")(getForCurrentThread)
+    __obj.asInstanceOf[ICoreWindowStatic]
+  }
+}
+

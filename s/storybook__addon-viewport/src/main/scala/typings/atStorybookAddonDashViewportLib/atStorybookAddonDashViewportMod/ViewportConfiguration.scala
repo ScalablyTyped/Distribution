@@ -10,3 +10,13 @@ trait ViewportConfiguration extends js.Object {
   var viewports: js.UndefOr[ViewportDefinitions] = js.undefined
 }
 
+object ViewportConfiguration {
+  @scala.inline
+  def apply(defaultViewport: ViewportName = null, viewports: ViewportDefinitions = null): ViewportConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (defaultViewport != null) __obj.updateDynamic("defaultViewport")(defaultViewport)
+    if (viewports != null) __obj.updateDynamic("viewports")(viewports)
+    __obj.asInstanceOf[ViewportConfiguration]
+  }
+}
+

@@ -7,31 +7,38 @@ import scala.scalajs.js.annotation._
 
 object elasticsearchLibStrings {
   @js.native
-  sealed trait AND extends js.Object
+  sealed trait AND
+    extends elasticsearchLib.elasticsearchMod.DefaultOperator
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends elasticsearchLib.elasticsearchMod._Refresh
   
   @js.native
-  sealed trait OR extends js.Object
+  sealed trait OR
+    extends elasticsearchLib.elasticsearchMod.DefaultOperator
   
   @js.native
-  sealed trait abort extends js.Object
+  sealed trait abort
+    extends elasticsearchLib.elasticsearchMod.Conflicts
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends elasticsearchLib.elasticsearchMod.ExpandWildcards
   
   @js.native
   sealed trait always extends js.Object
   
   @js.native
-  sealed trait b extends js.Object
+  sealed trait b
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
   sealed trait blocked extends js.Object
   
   @js.native
-  sealed trait closed extends js.Object
+  sealed trait closed
+    extends elasticsearchLib.elasticsearchMod.ExpandWildcards
   
   @js.native
   sealed trait cluster extends js.Object
@@ -49,22 +56,28 @@ object elasticsearchLibStrings {
   sealed trait dfs_query_then_fetch extends js.Object
   
   @js.native
-  sealed trait external extends js.Object
+  sealed trait external
+    extends elasticsearchLib.elasticsearchMod.VersionType
   
   @js.native
-  sealed trait external_gte extends js.Object
+  sealed trait external_gte
+    extends elasticsearchLib.elasticsearchMod.VersionType
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends elasticsearchLib.elasticsearchMod._Refresh
   
   @js.native
-  sealed trait force extends js.Object
+  sealed trait force
+    extends elasticsearchLib.elasticsearchMod.VersionType
   
   @js.native
-  sealed trait g extends js.Object
+  sealed trait g
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
-  sealed trait gb extends js.Object
+  sealed trait gb
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
   sealed trait green extends js.Object
@@ -82,13 +95,16 @@ object elasticsearchLibStrings {
   sealed trait indices extends js.Object
   
   @js.native
-  sealed trait internal extends js.Object
+  sealed trait internal
+    extends elasticsearchLib.elasticsearchMod.VersionType
   
   @js.native
-  sealed trait k extends js.Object
+  sealed trait k
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
-  sealed trait kb extends js.Object
+  sealed trait kb
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
   sealed trait languid extends js.Object
@@ -97,10 +113,12 @@ object elasticsearchLibStrings {
   sealed trait low extends js.Object
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait m
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
-  sealed trait mb extends js.Object
+  sealed trait mb
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
   sealed trait missing extends js.Object
@@ -112,28 +130,33 @@ object elasticsearchLibStrings {
   sealed trait nodes extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends elasticsearchLib.elasticsearchMod.ExpandWildcards
   
   @js.native
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait open extends js.Object
+  sealed trait open
+    extends elasticsearchLib.elasticsearchMod.ExpandWildcards
   
   @js.native
-  sealed trait p extends js.Object
+  sealed trait p
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
   sealed trait parents extends js.Object
   
   @js.native
-  sealed trait pb extends js.Object
+  sealed trait pb
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
   sealed trait popular extends js.Object
   
   @js.native
-  sealed trait proceed extends js.Object
+  sealed trait proceed
+    extends elasticsearchLib.elasticsearchMod.Conflicts
   
   @js.native
   sealed trait query_and_fetch extends js.Object
@@ -148,13 +171,16 @@ object elasticsearchLibStrings {
   sealed trait shards extends js.Object
   
   @js.native
-  sealed trait t extends js.Object
+  sealed trait t
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
-  sealed trait tb extends js.Object
+  sealed trait tb
+    extends elasticsearchLib.elasticsearchMod.CatBytes
   
   @js.native
-  sealed trait `true` extends js.Object
+  sealed trait `true`
+    extends elasticsearchLib.elasticsearchMod._Refresh
   
   @js.native
   sealed trait urgent extends js.Object
@@ -163,7 +189,8 @@ object elasticsearchLibStrings {
   sealed trait wait extends js.Object
   
   @js.native
-  sealed trait wait_for extends js.Object
+  sealed trait wait_for
+    extends elasticsearchLib.elasticsearchMod._Refresh
   
   @js.native
   sealed trait yellow extends js.Object

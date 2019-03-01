@@ -12,3 +12,12 @@ trait GetIsolateIdReturnType extends js.Object {
   var id: java.lang.String
 }
 
+object GetIsolateIdReturnType {
+  @scala.inline
+  def apply(id: java.lang.String): GetIsolateIdReturnType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[GetIsolateIdReturnType]
+  }
+}
+

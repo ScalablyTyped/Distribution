@@ -74,3 +74,52 @@ trait ParsingOptions extends CommonOptions {
   ] = js.undefined
 }
 
+object ParsingOptions {
+  @scala.inline
+  def apply(
+    WTF: js.UndefOr[scala.Boolean] = js.undefined,
+    bookDeps: js.UndefOr[scala.Boolean] = js.undefined,
+    bookFiles: js.UndefOr[scala.Boolean] = js.undefined,
+    bookProps: js.UndefOr[scala.Boolean] = js.undefined,
+    bookSheets: js.UndefOr[scala.Boolean] = js.undefined,
+    bookVBA: js.UndefOr[scala.Boolean] = js.undefined,
+    cellDates: js.UndefOr[scala.Boolean] = js.undefined,
+    cellFormula: js.UndefOr[scala.Boolean] = js.undefined,
+    cellHTML: js.UndefOr[scala.Boolean] = js.undefined,
+    cellNF: js.UndefOr[scala.Boolean] = js.undefined,
+    cellStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    cellText: js.UndefOr[scala.Boolean] = js.undefined,
+    codepage: scala.Int | scala.Double = null,
+    dateNF: java.lang.String = null,
+    dense: js.UndefOr[scala.Boolean] = js.undefined,
+    password: java.lang.String = null,
+    raw: js.UndefOr[scala.Boolean] = js.undefined,
+    sheetRows: scala.Int | scala.Double = null,
+    sheetStubs: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: xlsxLib.xlsxLibStrings.base64 | xlsxLib.xlsxLibStrings.binary | xlsxLib.xlsxLibStrings.buffer | xlsxLib.xlsxLibStrings.file | xlsxLib.xlsxLibStrings.array | xlsxLib.xlsxLibStrings.string = null
+  ): ParsingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(WTF)) __obj.updateDynamic("WTF")(WTF)
+    if (!js.isUndefined(bookDeps)) __obj.updateDynamic("bookDeps")(bookDeps)
+    if (!js.isUndefined(bookFiles)) __obj.updateDynamic("bookFiles")(bookFiles)
+    if (!js.isUndefined(bookProps)) __obj.updateDynamic("bookProps")(bookProps)
+    if (!js.isUndefined(bookSheets)) __obj.updateDynamic("bookSheets")(bookSheets)
+    if (!js.isUndefined(bookVBA)) __obj.updateDynamic("bookVBA")(bookVBA)
+    if (!js.isUndefined(cellDates)) __obj.updateDynamic("cellDates")(cellDates)
+    if (!js.isUndefined(cellFormula)) __obj.updateDynamic("cellFormula")(cellFormula)
+    if (!js.isUndefined(cellHTML)) __obj.updateDynamic("cellHTML")(cellHTML)
+    if (!js.isUndefined(cellNF)) __obj.updateDynamic("cellNF")(cellNF)
+    if (!js.isUndefined(cellStyles)) __obj.updateDynamic("cellStyles")(cellStyles)
+    if (!js.isUndefined(cellText)) __obj.updateDynamic("cellText")(cellText)
+    if (codepage != null) __obj.updateDynamic("codepage")(codepage.asInstanceOf[js.Any])
+    if (dateNF != null) __obj.updateDynamic("dateNF")(dateNF)
+    if (!js.isUndefined(dense)) __obj.updateDynamic("dense")(dense)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
+    if (sheetRows != null) __obj.updateDynamic("sheetRows")(sheetRows.asInstanceOf[js.Any])
+    if (!js.isUndefined(sheetStubs)) __obj.updateDynamic("sheetStubs")(sheetStubs)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ParsingOptions]
+  }
+}
+

@@ -47,3 +47,22 @@ trait RegistrationsResource extends js.Object {
   def delete(request: gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
 }
 
+object RegistrationsResource {
+  @scala.inline
+  def apply(
+    create: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Registration]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotClassroomLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[js.Object]
+    ]
+  ): RegistrationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.asInstanceOf[RegistrationsResource]
+  }
+}
+

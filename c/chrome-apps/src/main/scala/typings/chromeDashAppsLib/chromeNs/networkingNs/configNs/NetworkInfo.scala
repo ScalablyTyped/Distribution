@@ -39,3 +39,31 @@ trait NetworkInfo extends js.Object {
   ]
 }
 
+object NetworkInfo {
+  @scala.inline
+  def apply(
+    Type: chromeDashAppsLib.chromeNs.ToStringLiteral[
+      chromeDashAppsLib.Anon_WIFI, 
+      java.lang.String, 
+      stdLib.Exclude[
+        java.lang.String, 
+        /* import warning: ImportType.apply Failed type conversion: chrome-apps.Anon_WIFI[keyof chrome-apps.Anon_WIFI] */ js.Any
+      ]
+    ],
+    BSSID: java.lang.String = null,
+    GUID: java.lang.String = null,
+    HexSSID: java.lang.String = null,
+    SSID: java.lang.String = null,
+    Security: chromeDashAppsLib.chromeDashAppsLibStrings.None | chromeDashAppsLib.chromeDashAppsLibStrings.`WEP-PSK` | chromeDashAppsLib.chromeDashAppsLibStrings.`WPA-PSK` | chromeDashAppsLib.chromeDashAppsLibStrings.`WPA-EAP` = null
+  ): NetworkInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Type")(Type.asInstanceOf[js.Any])
+    if (BSSID != null) __obj.updateDynamic("BSSID")(BSSID)
+    if (GUID != null) __obj.updateDynamic("GUID")(GUID)
+    if (HexSSID != null) __obj.updateDynamic("HexSSID")(HexSSID)
+    if (SSID != null) __obj.updateDynamic("SSID")(SSID)
+    if (Security != null) __obj.updateDynamic("Security")(Security.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NetworkInfo]
+  }
+}
+

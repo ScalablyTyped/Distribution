@@ -40,3 +40,28 @@ trait StickemSettings extends js.Object {
   var stickClass: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StickemSettings {
+  @scala.inline
+  def apply(
+    container: java.lang.String = null,
+    endStickClass: java.lang.String = null,
+    item: java.lang.String = null,
+    offset: scala.Double | java.lang.String = null,
+    onStick: js.Function0[scala.Unit] = null,
+    onUnstick: js.Function0[scala.Unit] = null,
+    start: scala.Double | java.lang.String = null,
+    stickClass: java.lang.String = null
+  ): StickemSettings = {
+    val __obj = js.Dynamic.literal()
+    if (container != null) __obj.updateDynamic("container")(container)
+    if (endStickClass != null) __obj.updateDynamic("endStickClass")(endStickClass)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (onStick != null) __obj.updateDynamic("onStick")(onStick)
+    if (onUnstick != null) __obj.updateDynamic("onUnstick")(onUnstick)
+    if (start != null) __obj.updateDynamic("start")(start.asInstanceOf[js.Any])
+    if (stickClass != null) __obj.updateDynamic("stickClass")(stickClass)
+    __obj.asInstanceOf[StickemSettings]
+  }
+}
+

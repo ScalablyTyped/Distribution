@@ -61,3 +61,26 @@ trait PodSecurityContext extends js.Object {
   val sysctls: js.Array[Sysctl]
 }
 
+object PodSecurityContext {
+  @scala.inline
+  def apply(
+    fsGroup: scala.Double,
+    runAsGroup: scala.Double,
+    runAsNonRoot: scala.Boolean,
+    runAsUser: scala.Double,
+    seLinuxOptions: SELinuxOptions,
+    supplementalGroups: js.Array[scala.Double],
+    sysctls: js.Array[Sysctl]
+  ): PodSecurityContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fsGroup")(fsGroup)
+    __obj.updateDynamic("runAsGroup")(runAsGroup)
+    __obj.updateDynamic("runAsNonRoot")(runAsNonRoot)
+    __obj.updateDynamic("runAsUser")(runAsUser)
+    __obj.updateDynamic("seLinuxOptions")(seLinuxOptions)
+    __obj.updateDynamic("supplementalGroups")(supplementalGroups)
+    __obj.updateDynamic("sysctls")(sysctls)
+    __obj.asInstanceOf[PodSecurityContext]
+  }
+}
+

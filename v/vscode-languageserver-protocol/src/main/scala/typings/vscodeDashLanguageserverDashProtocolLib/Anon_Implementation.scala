@@ -12,3 +12,12 @@ trait Anon_Implementation extends js.Object {
   var implementation: js.UndefOr[Anon_DynamicRegistrationLinkSupport] = js.undefined
 }
 
+object Anon_Implementation {
+  @scala.inline
+  def apply(implementation: Anon_DynamicRegistrationLinkSupport = null): Anon_Implementation = {
+    val __obj = js.Dynamic.literal()
+    if (implementation != null) __obj.updateDynamic("implementation")(implementation)
+    __obj.asInstanceOf[Anon_Implementation]
+  }
+}
+

@@ -31,3 +31,26 @@ trait AnnotationSet extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AnnotationSet {
+  @scala.inline
+  def apply(
+    datasetId: java.lang.String = null,
+    id: java.lang.String = null,
+    info: stdLib.Record[java.lang.String, js.Array[_]] = null,
+    name: java.lang.String = null,
+    referenceSetId: java.lang.String = null,
+    sourceUri: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): AnnotationSet = {
+    val __obj = js.Dynamic.literal()
+    if (datasetId != null) __obj.updateDynamic("datasetId")(datasetId)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (referenceSetId != null) __obj.updateDynamic("referenceSetId")(referenceSetId)
+    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[AnnotationSet]
+  }
+}
+

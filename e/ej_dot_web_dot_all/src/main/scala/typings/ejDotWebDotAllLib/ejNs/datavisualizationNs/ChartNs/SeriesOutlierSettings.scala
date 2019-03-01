@@ -15,3 +15,13 @@ trait SeriesOutlierSettings extends js.Object {
   var size: js.UndefOr[SeriesOutlierSettingsSize] = js.undefined
 }
 
+object SeriesOutlierSettings {
+  @scala.inline
+  def apply(shape: Shape | java.lang.String = null, size: SeriesOutlierSettingsSize = null): SeriesOutlierSettings = {
+    val __obj = js.Dynamic.literal()
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[SeriesOutlierSettings]
+  }
+}
+

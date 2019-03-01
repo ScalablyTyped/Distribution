@@ -12,3 +12,18 @@ trait CombinatorEffect[T, E] extends js.Object {
   var `type`: T
 }
 
+object CombinatorEffect {
+  @scala.inline
+  def apply[T, E](
+    `@@redux-saga/IO`: atReduxDashSagaTypesLib.atReduxDashSagaTypesLibNumbers.`true`,
+    combinator: atReduxDashSagaTypesLib.atReduxDashSagaTypesLibNumbers.`true`,
+    payload: CombinatorEffectDescriptor[E],
+    `type`: T
+  ): CombinatorEffect[T, E] = {
+    val __obj = js.Dynamic.literal(`@@redux-saga/IO` = `@@redux-saga/IO`, `type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("combinator")(combinator)
+    __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CombinatorEffect[T, E]]
+  }
+}
+

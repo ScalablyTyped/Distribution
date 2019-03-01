@@ -16,7 +16,7 @@ class Pure[F, A] protected () extends js.Object {
   val value: A = js.native
   def ap[B](fab: Free[F, js.Function1[/* a */ A, B]]): Free[F, B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     */
   def `ap_`[B, C](`this`: Free[F, js.Function1[/* b */ B, C]], fb: Free[F, B]): Free[F, C] = js.native
   def chain[B](f: js.Function1[/* a */ A, Free[F, B]]): Free[F, B] = js.native

@@ -22,3 +22,22 @@ trait TurnBasedMatchTurn extends js.Object {
   var results: js.UndefOr[js.Array[ParticipantResult]] = js.undefined
 }
 
+object TurnBasedMatchTurn {
+  @scala.inline
+  def apply(
+    data: TurnBasedMatchDataRequest = null,
+    kind: java.lang.String = null,
+    matchVersion: scala.Int | scala.Double = null,
+    pendingParticipantId: java.lang.String = null,
+    results: js.Array[ParticipantResult] = null
+  ): TurnBasedMatchTurn = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (matchVersion != null) __obj.updateDynamic("matchVersion")(matchVersion.asInstanceOf[js.Any])
+    if (pendingParticipantId != null) __obj.updateDynamic("pendingParticipantId")(pendingParticipantId)
+    if (results != null) __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[TurnBasedMatchTurn]
+  }
+}
+

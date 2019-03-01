@@ -89,3 +89,50 @@ trait TableArgs extends js.Object {
   val writeCapacity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object TableArgs {
+  @scala.inline
+  def apply(
+    attributes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameTypeInput]]],
+    hashKey: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    billingMode: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    globalSecondaryIndexes: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HashKeyNameNonKeyAttributes]
+      ]
+    ] = null,
+    localSecondaryIndexes: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameNonKeyAttributesProjectionTypeRangeKey]
+      ]
+    ] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    pointInTimeRecovery: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_654448986] = null,
+    rangeKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    readCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    serverSideEncryption: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EnabledBooleanInput_654448986] = null,
+    streamEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    streamViewType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    ttl: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AttributeNameEnabled] = null,
+    writeCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): TableArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("attributes")(attributes.asInstanceOf[js.Any])
+    __obj.updateDynamic("hashKey")(hashKey.asInstanceOf[js.Any])
+    if (billingMode != null) __obj.updateDynamic("billingMode")(billingMode.asInstanceOf[js.Any])
+    if (globalSecondaryIndexes != null) __obj.updateDynamic("globalSecondaryIndexes")(globalSecondaryIndexes.asInstanceOf[js.Any])
+    if (localSecondaryIndexes != null) __obj.updateDynamic("localSecondaryIndexes")(localSecondaryIndexes.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (pointInTimeRecovery != null) __obj.updateDynamic("pointInTimeRecovery")(pointInTimeRecovery.asInstanceOf[js.Any])
+    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
+    if (readCapacity != null) __obj.updateDynamic("readCapacity")(readCapacity.asInstanceOf[js.Any])
+    if (serverSideEncryption != null) __obj.updateDynamic("serverSideEncryption")(serverSideEncryption.asInstanceOf[js.Any])
+    if (streamEnabled != null) __obj.updateDynamic("streamEnabled")(streamEnabled.asInstanceOf[js.Any])
+    if (streamViewType != null) __obj.updateDynamic("streamViewType")(streamViewType.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (ttl != null) __obj.updateDynamic("ttl")(ttl.asInstanceOf[js.Any])
+    if (writeCapacity != null) __obj.updateDynamic("writeCapacity")(writeCapacity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableArgs]
+  }
+}
+

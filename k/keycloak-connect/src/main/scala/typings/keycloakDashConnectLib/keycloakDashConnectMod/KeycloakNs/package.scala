@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object KeycloakNs {
-  type Config = StoreConfig | CookiesConfig | BaseConfig
   type SpecHandler = js.Function3[
     /* token */ Token, 
     /* request */ expressLib.expressMod.eNs.Request, 

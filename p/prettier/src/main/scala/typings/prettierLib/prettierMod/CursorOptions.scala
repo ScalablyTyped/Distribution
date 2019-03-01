@@ -14,3 +14,18 @@ trait CursorOptions extends Options {
   var rangeStart: js.UndefOr[scala.Nothing] = js.undefined
 }
 
+object CursorOptions {
+  @scala.inline
+  def apply(
+    cursorOffset: scala.Double,
+    rangeEnd: js.UndefOr[scala.Nothing] = js.undefined,
+    rangeStart: js.UndefOr[scala.Nothing] = js.undefined
+  ): CursorOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cursorOffset")(cursorOffset)
+    if (!js.isUndefined(rangeEnd)) __obj.updateDynamic("rangeEnd")(rangeEnd)
+    if (!js.isUndefined(rangeStart)) __obj.updateDynamic("rangeStart")(rangeStart)
+    __obj.asInstanceOf[CursorOptions]
+  }
+}
+

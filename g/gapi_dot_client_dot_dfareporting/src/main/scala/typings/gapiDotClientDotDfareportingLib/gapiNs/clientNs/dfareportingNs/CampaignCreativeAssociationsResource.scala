@@ -15,3 +15,22 @@ trait CampaignCreativeAssociationsResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFields): gapiDotClientLib.gapiNs.clientNs.Request[CampaignCreativeAssociationsListResponse]
 }
 
+object CampaignCreativeAssociationsResource {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCampaignId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CampaignCreativeAssociation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltCampaignIdFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CampaignCreativeAssociationsListResponse]
+    ]
+  ): CampaignCreativeAssociationsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[CampaignCreativeAssociationsResource]
+  }
+}
+

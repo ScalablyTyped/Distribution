@@ -12,3 +12,20 @@ trait Anon_Async extends js.Object {
   var withCredentials: scala.Boolean
 }
 
+object Anon_Async {
+  @scala.inline
+  def apply(
+    async: scala.Boolean,
+    postData: stdLib.Document | js.Object,
+    responseType: java.lang.String,
+    withCredentials: scala.Boolean
+  ): Anon_Async = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("async")(async)
+    __obj.updateDynamic("postData")(postData.asInstanceOf[js.Any])
+    __obj.updateDynamic("responseType")(responseType)
+    __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[Anon_Async]
+  }
+}
+

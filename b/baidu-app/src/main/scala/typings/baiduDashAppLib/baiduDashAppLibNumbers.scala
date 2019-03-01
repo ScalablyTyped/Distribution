@@ -16,13 +16,16 @@ object baiduDashAppLibNumbers {
   sealed trait `1` extends js.Object
   
   @js.native
-  sealed trait `11025` extends js.Object
+  sealed trait `11025`
+    extends baiduDashAppLib.swanNs.EncodeBitRate
   
   @js.native
-  sealed trait `12000` extends js.Object
+  sealed trait `12000`
+    extends baiduDashAppLib.swanNs.EncodeBitRate
   
   @js.native
-  sealed trait `16000` extends js.Object
+  sealed trait `16000`
+    extends baiduDashAppLib.swanNs.EncodeBitRate
   
   @js.native
   sealed trait `1DOT0` extends js.Object
@@ -34,22 +37,28 @@ object baiduDashAppLibNumbers {
   sealed trait `1DOT5` extends js.Object
   
   @js.native
-  sealed trait `22050` extends js.Object
+  sealed trait `22050`
+    extends baiduDashAppLib.swanNs.EncodeBitRate
   
   @js.native
-  sealed trait `24000` extends js.Object
+  sealed trait `24000`
+    extends baiduDashAppLib.swanNs.EncodeBitRate
   
   @js.native
-  sealed trait `32000` extends js.Object
+  sealed trait `32000`
+    extends baiduDashAppLib.swanNs.EncodeBitRate
   
   @js.native
-  sealed trait `44100` extends js.Object
+  sealed trait `44100`
+    extends baiduDashAppLib.swanNs.EncodeBitRate
   
   @js.native
-  sealed trait `48000` extends js.Object
+  sealed trait `48000`
+    extends baiduDashAppLib.swanNs.EncodeBitRate
   
   @js.native
-  sealed trait `8000` extends js.Object
+  sealed trait `8000`
+    extends baiduDashAppLib.swanNs.EncodeBitRate
   
   @scala.inline
   def `0DOT5`: `0DOT5` = 0.5.asInstanceOf[`0DOT5`]

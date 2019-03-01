@@ -10,3 +10,16 @@ trait ITargetFileRequest extends js.Object {
   def getDeferral(): TargetFileRequestDeferral
 }
 
+object ITargetFileRequest {
+  @scala.inline
+  def apply(
+    getDeferral: js.Function0[TargetFileRequestDeferral],
+    targetFile: winrtLib.WindowsNs.StorageNs.IStorageFile
+  ): ITargetFileRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getDeferral")(getDeferral)
+    __obj.updateDynamic("targetFile")(targetFile)
+    __obj.asInstanceOf[ITargetFileRequest]
+  }
+}
+

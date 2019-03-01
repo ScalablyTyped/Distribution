@@ -11,3 +11,18 @@ trait Repeater extends js.Object {
   def row(index: scala.Double): Future
 }
 
+object Repeater {
+  @scala.inline
+  def apply(
+    column: js.Function1[java.lang.String, Future],
+    count: js.Function0[Future],
+    row: js.Function1[scala.Double, Future]
+  ): Repeater = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("row")(row)
+    __obj.asInstanceOf[Repeater]
+  }
+}
+

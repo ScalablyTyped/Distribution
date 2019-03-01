@@ -217,3 +217,126 @@ trait Model extends js.Object {
   var valueSortSettings: js.UndefOr[ValueSortSettings] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    afterServiceInvoke: js.Function1[/* e */ AfterServiceInvokeEventArgs, scala.Unit] = null,
+    analysisMode: ejDotWebDotAllLib.ejNs.PivotNs.AnalysisMode | java.lang.String = null,
+    axesLabelRendering: js.Function1[/* e */ AxesLabelRenderingEventArgs, scala.Unit] = null,
+    beforeExport: js.Function1[/* e */ BeforeExportEventArgs, scala.Unit] = null,
+    beforeServiceInvoke: js.Function1[/* e */ BeforeServiceInvokeEventArgs, scala.Unit] = null,
+    cellClick: js.Function1[/* e */ CellClickEventArgs, scala.Unit] = null,
+    chartLoad: js.Function1[/* e */ ChartLoadEventArgs, scala.Unit] = null,
+    chartType: ejDotWebDotAllLib.ejNs.PivotChartNs.ChartTypes | java.lang.String = null,
+    clientExportMode: ClientExportMode | java.lang.String = null,
+    collapseCubeBrowserByDefault: js.UndefOr[scala.Boolean] = js.undefined,
+    cssClass: java.lang.String = null,
+    customObject: js.Any = null,
+    dataSource: DataSource = null,
+    displaySettings: DisplaySettings = null,
+    drillThrough: js.Function1[/* e */ DrillThroughEventArgs, scala.Unit] = null,
+    enableAdvancedFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCellClick: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCellDoubleClick: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCompleteDataExport: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDeferUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    enableDrillThrough: js.UndefOr[scala.Boolean] = js.undefined,
+    enableKPI: js.UndefOr[scala.Boolean] = js.undefined,
+    enableLocalStorage: js.UndefOr[scala.Boolean] = js.undefined,
+    enableMeasureGroups: js.UndefOr[scala.Boolean] = js.undefined,
+    enableMemberEditorPaging: js.UndefOr[scala.Boolean] = js.undefined,
+    enableMemberEditorSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePaging: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePivotTreeMap: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSplitter: js.UndefOr[scala.Boolean] = js.undefined,
+    enableVirtualScrolling: js.UndefOr[scala.Boolean] = js.undefined,
+    enableXHRCredentials: js.UndefOr[scala.Boolean] = js.undefined,
+    fetchReport: js.Function1[/* e */ FetchReportEventArgs, scala.Unit] = null,
+    gridLayout: ejDotWebDotAllLib.ejNs.PivotGridNs.Layout | java.lang.String = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    loadReport: js.Function1[/* e */ LoadReportEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    maxNodeLimitInMemberEditor: scala.Int | scala.Double = null,
+    memberEditorPageSize: scala.Int | scala.Double = null,
+    operationalMode: ejDotWebDotAllLib.ejNs.PivotNs.OperationalMode | java.lang.String = null,
+    pointRegionClick: js.Function1[/* e */ PointRegionClickEventArgs, scala.Unit] = null,
+    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
+    renderFailure: js.Function1[/* e */ RenderFailureEventArgs, scala.Unit] = null,
+    renderSuccess: js.Function1[/* e */ RenderSuccessEventArgs, scala.Unit] = null,
+    saveReport: js.Function1[/* e */ SaveReportEventArgs, scala.Unit] = null,
+    schemaLoad: js.Function1[/* e */ SchemaLoadEventArgs, scala.Unit] = null,
+    serviceMethodSettings: ServiceMethodSettings = null,
+    showReportCollection: js.UndefOr[scala.Boolean] = js.undefined,
+    showUniqueNameOnPivotButton: js.UndefOr[scala.Boolean] = js.undefined,
+    size: js.Any = null,
+    title: java.lang.String = null,
+    toolbarIconSettings: ToolbarIconSettings = null,
+    treeMapLoad: js.Function1[/* e */ TreeMapLoadEventArgs, scala.Unit] = null,
+    url: java.lang.String = null,
+    valueCellHyperlinkClick: js.Function1[/* e */ ValueCellHyperlinkClickEventArgs, scala.Unit] = null,
+    valueSortSettings: ValueSortSettings = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (afterServiceInvoke != null) __obj.updateDynamic("afterServiceInvoke")(afterServiceInvoke)
+    if (analysisMode != null) __obj.updateDynamic("analysisMode")(analysisMode.asInstanceOf[js.Any])
+    if (axesLabelRendering != null) __obj.updateDynamic("axesLabelRendering")(axesLabelRendering)
+    if (beforeExport != null) __obj.updateDynamic("beforeExport")(beforeExport)
+    if (beforeServiceInvoke != null) __obj.updateDynamic("beforeServiceInvoke")(beforeServiceInvoke)
+    if (cellClick != null) __obj.updateDynamic("cellClick")(cellClick)
+    if (chartLoad != null) __obj.updateDynamic("chartLoad")(chartLoad)
+    if (chartType != null) __obj.updateDynamic("chartType")(chartType.asInstanceOf[js.Any])
+    if (clientExportMode != null) __obj.updateDynamic("clientExportMode")(clientExportMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(collapseCubeBrowserByDefault)) __obj.updateDynamic("collapseCubeBrowserByDefault")(collapseCubeBrowserByDefault)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (displaySettings != null) __obj.updateDynamic("displaySettings")(displaySettings)
+    if (drillThrough != null) __obj.updateDynamic("drillThrough")(drillThrough)
+    if (!js.isUndefined(enableAdvancedFilter)) __obj.updateDynamic("enableAdvancedFilter")(enableAdvancedFilter)
+    if (!js.isUndefined(enableCellClick)) __obj.updateDynamic("enableCellClick")(enableCellClick)
+    if (!js.isUndefined(enableCellDoubleClick)) __obj.updateDynamic("enableCellDoubleClick")(enableCellDoubleClick)
+    if (!js.isUndefined(enableCompleteDataExport)) __obj.updateDynamic("enableCompleteDataExport")(enableCompleteDataExport)
+    if (!js.isUndefined(enableDeferUpdate)) __obj.updateDynamic("enableDeferUpdate")(enableDeferUpdate)
+    if (!js.isUndefined(enableDrillThrough)) __obj.updateDynamic("enableDrillThrough")(enableDrillThrough)
+    if (!js.isUndefined(enableKPI)) __obj.updateDynamic("enableKPI")(enableKPI)
+    if (!js.isUndefined(enableLocalStorage)) __obj.updateDynamic("enableLocalStorage")(enableLocalStorage)
+    if (!js.isUndefined(enableMeasureGroups)) __obj.updateDynamic("enableMeasureGroups")(enableMeasureGroups)
+    if (!js.isUndefined(enableMemberEditorPaging)) __obj.updateDynamic("enableMemberEditorPaging")(enableMemberEditorPaging)
+    if (!js.isUndefined(enableMemberEditorSorting)) __obj.updateDynamic("enableMemberEditorSorting")(enableMemberEditorSorting)
+    if (!js.isUndefined(enablePaging)) __obj.updateDynamic("enablePaging")(enablePaging)
+    if (!js.isUndefined(enablePivotTreeMap)) __obj.updateDynamic("enablePivotTreeMap")(enablePivotTreeMap)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableSplitter)) __obj.updateDynamic("enableSplitter")(enableSplitter)
+    if (!js.isUndefined(enableVirtualScrolling)) __obj.updateDynamic("enableVirtualScrolling")(enableVirtualScrolling)
+    if (!js.isUndefined(enableXHRCredentials)) __obj.updateDynamic("enableXHRCredentials")(enableXHRCredentials)
+    if (fetchReport != null) __obj.updateDynamic("fetchReport")(fetchReport)
+    if (gridLayout != null) __obj.updateDynamic("gridLayout")(gridLayout.asInstanceOf[js.Any])
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loadReport != null) __obj.updateDynamic("loadReport")(loadReport)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxNodeLimitInMemberEditor != null) __obj.updateDynamic("maxNodeLimitInMemberEditor")(maxNodeLimitInMemberEditor.asInstanceOf[js.Any])
+    if (memberEditorPageSize != null) __obj.updateDynamic("memberEditorPageSize")(memberEditorPageSize.asInstanceOf[js.Any])
+    if (operationalMode != null) __obj.updateDynamic("operationalMode")(operationalMode.asInstanceOf[js.Any])
+    if (pointRegionClick != null) __obj.updateDynamic("pointRegionClick")(pointRegionClick)
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
+    if (renderFailure != null) __obj.updateDynamic("renderFailure")(renderFailure)
+    if (renderSuccess != null) __obj.updateDynamic("renderSuccess")(renderSuccess)
+    if (saveReport != null) __obj.updateDynamic("saveReport")(saveReport)
+    if (schemaLoad != null) __obj.updateDynamic("schemaLoad")(schemaLoad)
+    if (serviceMethodSettings != null) __obj.updateDynamic("serviceMethodSettings")(serviceMethodSettings)
+    if (!js.isUndefined(showReportCollection)) __obj.updateDynamic("showReportCollection")(showReportCollection)
+    if (!js.isUndefined(showUniqueNameOnPivotButton)) __obj.updateDynamic("showUniqueNameOnPivotButton")(showUniqueNameOnPivotButton)
+    if (size != null) __obj.updateDynamic("size")(size)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (toolbarIconSettings != null) __obj.updateDynamic("toolbarIconSettings")(toolbarIconSettings)
+    if (treeMapLoad != null) __obj.updateDynamic("treeMapLoad")(treeMapLoad)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (valueCellHyperlinkClick != null) __obj.updateDynamic("valueCellHyperlinkClick")(valueCellHyperlinkClick)
+    if (valueSortSettings != null) __obj.updateDynamic("valueSortSettings")(valueSortSettings)
+    __obj.asInstanceOf[Model]
+  }
+}
+

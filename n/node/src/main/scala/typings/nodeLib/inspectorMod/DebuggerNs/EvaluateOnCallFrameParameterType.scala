@@ -49,3 +49,30 @@ trait EvaluateOnCallFrameParameterType extends js.Object {
   var timeout: js.UndefOr[nodeLib.inspectorMod.RuntimeNs.TimeDelta] = js.undefined
 }
 
+object EvaluateOnCallFrameParameterType {
+  @scala.inline
+  def apply(
+    callFrameId: CallFrameId,
+    expression: java.lang.String,
+    generatePreview: js.UndefOr[scala.Boolean] = js.undefined,
+    includeCommandLineAPI: js.UndefOr[scala.Boolean] = js.undefined,
+    objectGroup: java.lang.String = null,
+    returnByValue: js.UndefOr[scala.Boolean] = js.undefined,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    throwOnSideEffect: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: js.UndefOr[nodeLib.inspectorMod.RuntimeNs.TimeDelta] = js.undefined
+  ): EvaluateOnCallFrameParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callFrameId")(callFrameId)
+    __obj.updateDynamic("expression")(expression)
+    if (!js.isUndefined(generatePreview)) __obj.updateDynamic("generatePreview")(generatePreview)
+    if (!js.isUndefined(includeCommandLineAPI)) __obj.updateDynamic("includeCommandLineAPI")(includeCommandLineAPI)
+    if (objectGroup != null) __obj.updateDynamic("objectGroup")(objectGroup)
+    if (!js.isUndefined(returnByValue)) __obj.updateDynamic("returnByValue")(returnByValue)
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (!js.isUndefined(throwOnSideEffect)) __obj.updateDynamic("throwOnSideEffect")(throwOnSideEffect)
+    if (!js.isUndefined(timeout)) __obj.updateDynamic("timeout")(timeout)
+    __obj.asInstanceOf[EvaluateOnCallFrameParameterType]
+  }
+}
+

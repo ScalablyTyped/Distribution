@@ -287,6 +287,8 @@ object PINs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[GetResourceMetricsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DataPointsList = js.Array[DataPoint]
@@ -303,6 +305,6 @@ object PINs extends js.Object {
   type ServiceType = awsDashSdkLib.awsDashSdkLibStrings.RDS | java.lang.String
   type String = java.lang.String
   type StringList = js.Array[String]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-02-27` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

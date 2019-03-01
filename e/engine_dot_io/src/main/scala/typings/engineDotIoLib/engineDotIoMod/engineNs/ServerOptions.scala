@@ -76,3 +76,40 @@ trait ServerOptions extends js.Object {
   ] = js.undefined
 }
 
+object ServerOptions {
+  @scala.inline
+  def apply(
+    allowRequest: AllowRequestFunction = null,
+    allowUpgrades: js.UndefOr[scala.Boolean] = js.undefined,
+    cookie: java.lang.String | scala.Boolean = null,
+    cookieHttpOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    cookiePath: java.lang.String | scala.Boolean = null,
+    httpCompression: js.Any = null,
+    initialPacket: Message = null,
+    maxHttpBufferSize: scala.Int | scala.Double = null,
+    perMessageDeflate: js.Any = null,
+    pingInterval: scala.Int | scala.Double = null,
+    pingTimeout: scala.Int | scala.Double = null,
+    transports: js.Array[Transport] = null,
+    upgradeTimeout: scala.Int | scala.Double = null,
+    wsEngine: engineDotIoLib.engineDotIoLibStrings.ws | engineDotIoLib.engineDotIoLibStrings.uws = null
+  ): ServerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (allowRequest != null) __obj.updateDynamic("allowRequest")(allowRequest)
+    if (!js.isUndefined(allowUpgrades)) __obj.updateDynamic("allowUpgrades")(allowUpgrades)
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie.asInstanceOf[js.Any])
+    if (!js.isUndefined(cookieHttpOnly)) __obj.updateDynamic("cookieHttpOnly")(cookieHttpOnly)
+    if (cookiePath != null) __obj.updateDynamic("cookiePath")(cookiePath.asInstanceOf[js.Any])
+    if (httpCompression != null) __obj.updateDynamic("httpCompression")(httpCompression)
+    if (initialPacket != null) __obj.updateDynamic("initialPacket")(initialPacket.asInstanceOf[js.Any])
+    if (maxHttpBufferSize != null) __obj.updateDynamic("maxHttpBufferSize")(maxHttpBufferSize.asInstanceOf[js.Any])
+    if (perMessageDeflate != null) __obj.updateDynamic("perMessageDeflate")(perMessageDeflate)
+    if (pingInterval != null) __obj.updateDynamic("pingInterval")(pingInterval.asInstanceOf[js.Any])
+    if (pingTimeout != null) __obj.updateDynamic("pingTimeout")(pingTimeout.asInstanceOf[js.Any])
+    if (transports != null) __obj.updateDynamic("transports")(transports)
+    if (upgradeTimeout != null) __obj.updateDynamic("upgradeTimeout")(upgradeTimeout.asInstanceOf[js.Any])
+    if (wsEngine != null) __obj.updateDynamic("wsEngine")(wsEngine.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ServerOptions]
+  }
+}
+

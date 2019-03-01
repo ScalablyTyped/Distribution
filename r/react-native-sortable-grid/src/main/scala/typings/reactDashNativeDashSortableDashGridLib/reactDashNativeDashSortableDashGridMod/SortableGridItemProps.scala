@@ -26,3 +26,20 @@ trait SortableGridItemProps extends js.Object {
   var onTap: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object SortableGridItemProps {
+  @scala.inline
+  def apply(
+    key: java.lang.String,
+    inactive: js.UndefOr[scala.Boolean] = js.undefined,
+    onDoubleTap: js.Function0[scala.Unit] = null,
+    onTap: js.Function0[scala.Unit] = null
+  ): SortableGridItemProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(inactive)) __obj.updateDynamic("inactive")(inactive)
+    if (onDoubleTap != null) __obj.updateDynamic("onDoubleTap")(onDoubleTap)
+    if (onTap != null) __obj.updateDynamic("onTap")(onTap)
+    __obj.asInstanceOf[SortableGridItemProps]
+  }
+}
+

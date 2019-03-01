@@ -24,3 +24,18 @@ trait OptionsSideMenu extends js.Object {
   var right: js.UndefOr[SideMenuSide] = js.undefined
 }
 
+object OptionsSideMenu {
+  @scala.inline
+  def apply(
+    left: SideMenuSide = null,
+    openGestureMode: reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.entireScreen | reactDashNativeDashNavigationLib.reactDashNativeDashNavigationLibStrings.bezel = null,
+    right: SideMenuSide = null
+  ): OptionsSideMenu = {
+    val __obj = js.Dynamic.literal()
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (openGestureMode != null) __obj.updateDynamic("openGestureMode")(openGestureMode.asInstanceOf[js.Any])
+    if (right != null) __obj.updateDynamic("right")(right)
+    __obj.asInstanceOf[OptionsSideMenu]
+  }
+}
+

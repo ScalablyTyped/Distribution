@@ -20,3 +20,18 @@ trait IGridGroupingConfiguration extends js.Object {
   var treeAggregations: js.Array[IGridTreeAggregations]
 }
 
+object IGridGroupingConfiguration {
+  @scala.inline
+  def apply(
+    grouping: js.Array[IGripGroup],
+    treeAggregations: js.Array[IGridTreeAggregations],
+    expandedState: IGridExpandedHash = null
+  ): IGridGroupingConfiguration = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("grouping")(grouping)
+    __obj.updateDynamic("treeAggregations")(treeAggregations)
+    if (expandedState != null) __obj.updateDynamic("expandedState")(expandedState)
+    __obj.asInstanceOf[IGridGroupingConfiguration]
+  }
+}
+

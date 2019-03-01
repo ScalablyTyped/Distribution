@@ -8,5 +8,5 @@ import scala.scalajs.js.annotation._
 @JSImport("@uifabric/utilities", "Customizer")
 @js.native
 class Customizer ()
-  extends atUifabricUtilitiesLib.libCustomizerMod.Customizer
+  extends atUifabricUtilitiesLib.libCustomizationsCustomizerMod.Customizer
 

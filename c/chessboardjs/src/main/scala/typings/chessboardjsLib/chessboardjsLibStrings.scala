@@ -10,10 +10,12 @@ object chessboardjsLibStrings {
   sealed trait BoardPositionType extends js.Object
   
   @js.native
-  sealed trait black extends js.Object
+  sealed trait black
+    extends chessboardjsLib.chessboardjsMod.OrientationType
   
   @js.native
-  sealed trait fast extends js.Object
+  sealed trait fast
+    extends chessboardjsLib.chessboardjsMod.SpeedType
   
   @js.native
   sealed trait fen extends js.Object
@@ -22,19 +24,23 @@ object chessboardjsLibStrings {
   sealed trait flip extends js.Object
   
   @js.native
-  sealed trait slow extends js.Object
+  sealed trait slow
+    extends chessboardjsLib.chessboardjsMod.SpeedType
   
   @js.native
-  sealed trait snapback extends js.Object
+  sealed trait snapback
+    extends chessboardjsLib.chessboardjsMod.DropOffBoardType
   
   @js.native
   sealed trait start extends js.Object
   
   @js.native
-  sealed trait trash extends js.Object
+  sealed trait trash
+    extends chessboardjsLib.chessboardjsMod.DropOffBoardType
   
   @js.native
-  sealed trait white extends js.Object
+  sealed trait white
+    extends chessboardjsLib.chessboardjsMod.OrientationType
   
   @scala.inline
   def BoardPositionType: BoardPositionType = "BoardPositionType".asInstanceOf[BoardPositionType]

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- joiLib.joiMod._Schema because Already inherited */ @js.native
 trait ArraySchema extends AnySchema {
   /**
     * Verifies that an assertion passes for at least one item in the array, where:

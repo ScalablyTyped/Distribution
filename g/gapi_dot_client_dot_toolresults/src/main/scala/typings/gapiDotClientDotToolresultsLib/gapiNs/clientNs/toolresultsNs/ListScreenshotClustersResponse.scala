@@ -10,3 +10,12 @@ trait ListScreenshotClustersResponse extends js.Object {
   var clusters: js.UndefOr[js.Array[ScreenshotCluster]] = js.undefined
 }
 
+object ListScreenshotClustersResponse {
+  @scala.inline
+  def apply(clusters: js.Array[ScreenshotCluster] = null): ListScreenshotClustersResponse = {
+    val __obj = js.Dynamic.literal()
+    if (clusters != null) __obj.updateDynamic("clusters")(clusters)
+    __obj.asInstanceOf[ListScreenshotClustersResponse]
+  }
+}
+

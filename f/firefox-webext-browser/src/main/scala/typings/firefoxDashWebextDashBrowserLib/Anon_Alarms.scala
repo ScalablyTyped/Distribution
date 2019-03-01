@@ -348,3 +348,108 @@ trait Anon_Alarms extends js.Object {
   val windowsNs: Anon_CreateCreateData
 }
 
+object Anon_Alarms {
+  @scala.inline
+  def apply(
+    alarmsNs: Anon_AlarmInfo,
+    bookmarksNs: Anon_Bookmark,
+    browserActionNs: Anon_DetailsDisable,
+    browserSettingsNs: Anon_AllowPopupsForUserEvents,
+    browsingDataNs: Anon_DataToRemove,
+    clipboardNs: Anon_ImageData,
+    commandsNs: Anon_Command,
+    contentScriptsNs: Anon_ContentScriptOptions,
+    contextMenusNs: Anon_ACTIONMENUTOPLEVELLIMIT,
+    contextualIdentitiesNs: Anon_ChangeInfo,
+    cookiesNs: Anon_ChangeInfoDetails,
+    devtoolsNs: Anon_InspectedWindow,
+    dnsNs: Anon_Flags,
+    downloadsNs: Anon_AcceptDanger,
+    eventsNs: js.Any,
+    experimentsNs: js.Any,
+    extensionNs: Anon_Data,
+    extensionTypesNs: js.Any,
+    findNs: Anon_Find,
+    geckoProfilerNs: Anon_BreakpadId,
+    historyNs: Anon_AddUrl,
+    i18nNs: Anon_DetectLanguage,
+    identityNs: Anon_AccountDetails,
+    idleNs: Anon_DetectionIntervalInSeconds,
+    managementNs: Anon_Enabled,
+    menusNs: Anon_ACTIONMENUTOPLEVELLIMITCallback,
+    notificationsNs: Anon_ButtonIndex,
+    omniboxNs: Anon_Disposition,
+    pageActionNs: Anon_DetailsGetPopup,
+    permissionsNs: Anon_Contains,
+    pkcs11Ns: Anon_FlagsGetModuleSlots,
+    privacyNs: Anon_Network,
+    proxyNs: Anon_Details,
+    runtimeNs: Anon_Application,
+    searchNs: Anon_GetSearch,
+    sessionsNs: Anon_Callback,
+    sidebarActionNs: Anon_Close,
+    storageNs: Anon_AreaName,
+    tabsNs: Anon_ActiveInfo,
+    telemetryNs: Anon_CanUpload,
+    themeNs: Anon_DetailsGetCurrent,
+    topSitesNs: Anon_Get,
+    typesNs: js.Any,
+    underscoreManifestNs: js.Any,
+    userScriptsNs: Anon_OnBeforeScript,
+    webNavigationNs: Anon_DetailsGetAllFrames,
+    webRequestNs: Anon_DetailsFilterResponseData,
+    windowsNs: Anon_CreateCreateData
+  ): Anon_Alarms = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alarmsNs")(alarmsNs)
+    __obj.updateDynamic("bookmarksNs")(bookmarksNs)
+    __obj.updateDynamic("browserActionNs")(browserActionNs)
+    __obj.updateDynamic("browserSettingsNs")(browserSettingsNs)
+    __obj.updateDynamic("browsingDataNs")(browsingDataNs)
+    __obj.updateDynamic("clipboardNs")(clipboardNs)
+    __obj.updateDynamic("commandsNs")(commandsNs)
+    __obj.updateDynamic("contentScriptsNs")(contentScriptsNs)
+    __obj.updateDynamic("contextMenusNs")(contextMenusNs)
+    __obj.updateDynamic("contextualIdentitiesNs")(contextualIdentitiesNs)
+    __obj.updateDynamic("cookiesNs")(cookiesNs)
+    __obj.updateDynamic("devtoolsNs")(devtoolsNs)
+    __obj.updateDynamic("dnsNs")(dnsNs)
+    __obj.updateDynamic("downloadsNs")(downloadsNs)
+    __obj.updateDynamic("eventsNs")(eventsNs)
+    __obj.updateDynamic("experimentsNs")(experimentsNs)
+    __obj.updateDynamic("extensionNs")(extensionNs)
+    __obj.updateDynamic("extensionTypesNs")(extensionTypesNs)
+    __obj.updateDynamic("findNs")(findNs)
+    __obj.updateDynamic("geckoProfilerNs")(geckoProfilerNs)
+    __obj.updateDynamic("historyNs")(historyNs)
+    __obj.updateDynamic("i18nNs")(i18nNs)
+    __obj.updateDynamic("identityNs")(identityNs)
+    __obj.updateDynamic("idleNs")(idleNs)
+    __obj.updateDynamic("managementNs")(managementNs)
+    __obj.updateDynamic("menusNs")(menusNs)
+    __obj.updateDynamic("notificationsNs")(notificationsNs)
+    __obj.updateDynamic("omniboxNs")(omniboxNs)
+    __obj.updateDynamic("pageActionNs")(pageActionNs)
+    __obj.updateDynamic("permissionsNs")(permissionsNs)
+    __obj.updateDynamic("pkcs11Ns")(pkcs11Ns)
+    __obj.updateDynamic("privacyNs")(privacyNs)
+    __obj.updateDynamic("proxyNs")(proxyNs)
+    __obj.updateDynamic("runtimeNs")(runtimeNs)
+    __obj.updateDynamic("searchNs")(searchNs)
+    __obj.updateDynamic("sessionsNs")(sessionsNs)
+    __obj.updateDynamic("sidebarActionNs")(sidebarActionNs)
+    __obj.updateDynamic("storageNs")(storageNs)
+    __obj.updateDynamic("tabsNs")(tabsNs)
+    __obj.updateDynamic("telemetryNs")(telemetryNs)
+    __obj.updateDynamic("themeNs")(themeNs)
+    __obj.updateDynamic("topSitesNs")(topSitesNs)
+    __obj.updateDynamic("typesNs")(typesNs)
+    __obj.updateDynamic("underscoreManifestNs")(underscoreManifestNs)
+    __obj.updateDynamic("userScriptsNs")(userScriptsNs)
+    __obj.updateDynamic("webNavigationNs")(webNavigationNs)
+    __obj.updateDynamic("webRequestNs")(webRequestNs)
+    __obj.updateDynamic("windowsNs")(windowsNs)
+    __obj.asInstanceOf[Anon_Alarms]
+  }
+}
+

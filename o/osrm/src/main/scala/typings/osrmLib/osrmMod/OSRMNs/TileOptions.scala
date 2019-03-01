@@ -21,3 +21,24 @@ trait TileOptions extends Options {
   var ZXY: js.UndefOr[Tile] = js.undefined
 }
 
+object TileOptions {
+  @scala.inline
+  def apply(
+    ZXY: Tile = null,
+    bearings: js.Array[Bearing] = null,
+    coordinates: js.Array[Coordinate] = null,
+    generate_hints: js.UndefOr[scala.Boolean] = js.undefined,
+    hints: js.Array[Hint] = null,
+    radiuses: js.Array[Radius] = null
+  ): TileOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ZXY != null) __obj.updateDynamic("ZXY")(ZXY)
+    if (bearings != null) __obj.updateDynamic("bearings")(bearings)
+    if (coordinates != null) __obj.updateDynamic("coordinates")(coordinates)
+    if (!js.isUndefined(generate_hints)) __obj.updateDynamic("generate_hints")(generate_hints)
+    if (hints != null) __obj.updateDynamic("hints")(hints)
+    if (radiuses != null) __obj.updateDynamic("radiuses")(radiuses)
+    __obj.asInstanceOf[TileOptions]
+  }
+}
+

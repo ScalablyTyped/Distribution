@@ -15,3 +15,19 @@ trait Anon_ContentScriptOptions extends js.Object {
   ]
 }
 
+object Anon_ContentScriptOptions {
+  @scala.inline
+  def apply(
+    register: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.contentScriptsNs.RegisteredContentScriptOptions, 
+      js.Promise[
+        firefoxDashWebextDashBrowserLib.browserNs.contentScriptsNs.RegisteredContentScript
+      ]
+    ]
+  ): Anon_ContentScriptOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("register")(register)
+    __obj.asInstanceOf[Anon_ContentScriptOptions]
+  }
+}
+

@@ -16,3 +16,12 @@ trait SecureOptions extends js.Object {
   var tlsVersion: js.UndefOr[chromeDashAppsLib.Anon_Max] = js.undefined
 }
 
+object SecureOptions {
+  @scala.inline
+  def apply(tlsVersion: chromeDashAppsLib.Anon_Max = null): SecureOptions = {
+    val __obj = js.Dynamic.literal()
+    if (tlsVersion != null) __obj.updateDynamic("tlsVersion")(tlsVersion)
+    __obj.asInstanceOf[SecureOptions]
+  }
+}
+

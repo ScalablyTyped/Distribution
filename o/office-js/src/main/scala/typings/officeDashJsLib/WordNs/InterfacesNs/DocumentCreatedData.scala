@@ -44,3 +44,22 @@ trait DocumentCreatedData extends js.Object {
   var sections: js.UndefOr[js.Array[SectionData]] = js.undefined
 }
 
+object DocumentCreatedData {
+  @scala.inline
+  def apply(
+    body: BodyData = null,
+    contentControls: js.Array[ContentControlData] = null,
+    properties: DocumentPropertiesData = null,
+    saved: js.UndefOr[scala.Boolean] = js.undefined,
+    sections: js.Array[SectionData] = null
+  ): DocumentCreatedData = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (contentControls != null) __obj.updateDynamic("contentControls")(contentControls)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (!js.isUndefined(saved)) __obj.updateDynamic("saved")(saved)
+    if (sections != null) __obj.updateDynamic("sections")(sections)
+    __obj.asInstanceOf[DocumentCreatedData]
+  }
+}
+

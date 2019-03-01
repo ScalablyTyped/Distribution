@@ -48,3 +48,32 @@ trait LayersBubbleSettings extends js.Object {
   var valuePath: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LayersBubbleSettings {
+  @scala.inline
+  def apply(
+    bubbleOpacity: scala.Int | scala.Double = null,
+    color: java.lang.String = null,
+    colorMappings: LayersBubbleSettingsColorMappings = null,
+    colorValuePath: java.lang.String = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    showBubble: js.UndefOr[scala.Boolean] = js.undefined,
+    showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltipTemplate: java.lang.String = null,
+    valuePath: java.lang.String = null
+  ): LayersBubbleSettings = {
+    val __obj = js.Dynamic.literal()
+    if (bubbleOpacity != null) __obj.updateDynamic("bubbleOpacity")(bubbleOpacity.asInstanceOf[js.Any])
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (colorMappings != null) __obj.updateDynamic("colorMappings")(colorMappings)
+    if (colorValuePath != null) __obj.updateDynamic("colorValuePath")(colorValuePath)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (!js.isUndefined(showBubble)) __obj.updateDynamic("showBubble")(showBubble)
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (valuePath != null) __obj.updateDynamic("valuePath")(valuePath)
+    __obj.asInstanceOf[LayersBubbleSettings]
+  }
+}
+

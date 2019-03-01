@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "prosemirror-markdown"
-version := "1.0-dt-20181102Z-aa2def"
+version := "1.0-dt-20181102Z-112ea8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "linkify-it" % "2.0.3-dt-20181017Z-1d8b8f",
-  "org.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20181102Z-ce765b",
-  "org.scalablytyped" %%% "orderedmap" % "1.0-dt-20180214Z-bb4865",
-  "org.scalablytyped" %%% "prosemirror-model" % "1.7-dt-20190130Z-f9fb8e",
-  "org.scalablytyped" %%% "std" % "3.3-0ec965")
+  "org.scalablytyped" %%% "linkify-it" % "2.0.3-dt-20181017Z-10a958",
+  "org.scalablytyped" %%% "markdown-it" % "0.0-unknown-dt-20181102Z-68e566",
+  "org.scalablytyped" %%% "orderedmap" % "1.0-dt-20180214Z-dfcb54",
+  "org.scalablytyped" %%% "prosemirror-model" % "1.7-dt-20190130Z-2d0189",
+  "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

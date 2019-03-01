@@ -17,3 +17,18 @@ trait ObjectFilter extends js.Object {
   var status: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ObjectFilter {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    objectIds: js.Array[java.lang.String] = null,
+    status: java.lang.String = null
+  ): ObjectFilter = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (objectIds != null) __obj.updateDynamic("objectIds")(objectIds)
+    if (status != null) __obj.updateDynamic("status")(status)
+    __obj.asInstanceOf[ObjectFilter]
+  }
+}
+

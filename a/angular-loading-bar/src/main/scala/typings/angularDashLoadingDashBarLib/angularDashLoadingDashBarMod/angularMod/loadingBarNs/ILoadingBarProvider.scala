@@ -62,3 +62,38 @@ trait ILoadingBarProvider extends js.Object {
   def status(): scala.Double
 }
 
+object ILoadingBarProvider {
+  @scala.inline
+  def apply(
+    complete: js.Function0[scala.Unit],
+    inc: js.Function0[scala.Unit],
+    set: js.Function1[scala.Double, scala.Unit],
+    start: js.Function0[scala.Unit],
+    status: js.Function0[scala.Double],
+    autoIncrement: js.UndefOr[scala.Boolean] = js.undefined,
+    includeBar: js.UndefOr[scala.Boolean] = js.undefined,
+    includeSpinner: js.UndefOr[scala.Boolean] = js.undefined,
+    latencyThreshold: scala.Int | scala.Double = null,
+    loadingBarTemplate: java.lang.String = null,
+    parentSelector: java.lang.String = null,
+    spinnerTemplate: java.lang.String = null,
+    startSize: scala.Int | scala.Double = null
+  ): ILoadingBarProvider = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("complete")(complete)
+    __obj.updateDynamic("inc")(inc)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("start")(start)
+    __obj.updateDynamic("status")(status)
+    if (!js.isUndefined(autoIncrement)) __obj.updateDynamic("autoIncrement")(autoIncrement)
+    if (!js.isUndefined(includeBar)) __obj.updateDynamic("includeBar")(includeBar)
+    if (!js.isUndefined(includeSpinner)) __obj.updateDynamic("includeSpinner")(includeSpinner)
+    if (latencyThreshold != null) __obj.updateDynamic("latencyThreshold")(latencyThreshold.asInstanceOf[js.Any])
+    if (loadingBarTemplate != null) __obj.updateDynamic("loadingBarTemplate")(loadingBarTemplate)
+    if (parentSelector != null) __obj.updateDynamic("parentSelector")(parentSelector)
+    if (spinnerTemplate != null) __obj.updateDynamic("spinnerTemplate")(spinnerTemplate)
+    if (startSize != null) __obj.updateDynamic("startSize")(startSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ILoadingBarProvider]
+  }
+}
+

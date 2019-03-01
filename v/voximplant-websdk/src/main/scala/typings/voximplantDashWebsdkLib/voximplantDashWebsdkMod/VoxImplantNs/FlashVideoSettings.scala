@@ -43,3 +43,28 @@ trait FlashVideoSettings extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object FlashVideoSettings {
+  @scala.inline
+  def apply(
+    bandwidth: scala.Int | scala.Double = null,
+    fps: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    keyframeInterval: scala.Int | scala.Double = null,
+    level: java.lang.String = null,
+    profile: java.lang.String = null,
+    quality: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): FlashVideoSettings = {
+    val __obj = js.Dynamic.literal()
+    if (bandwidth != null) __obj.updateDynamic("bandwidth")(bandwidth.asInstanceOf[js.Any])
+    if (fps != null) __obj.updateDynamic("fps")(fps.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (keyframeInterval != null) __obj.updateDynamic("keyframeInterval")(keyframeInterval.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level)
+    if (profile != null) __obj.updateDynamic("profile")(profile)
+    if (quality != null) __obj.updateDynamic("quality")(quality.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlashVideoSettings]
+  }
+}
+

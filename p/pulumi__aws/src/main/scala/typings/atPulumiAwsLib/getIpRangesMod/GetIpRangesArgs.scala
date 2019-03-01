@@ -23,3 +23,18 @@ trait GetIpRangesArgs extends js.Object {
   val url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetIpRangesArgs {
+  @scala.inline
+  def apply(
+    services: js.Array[java.lang.String],
+    regions: js.Array[java.lang.String] = null,
+    url: java.lang.String = null
+  ): GetIpRangesArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("services")(services)
+    if (regions != null) __obj.updateDynamic("regions")(regions)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GetIpRangesArgs]
+  }
+}
+

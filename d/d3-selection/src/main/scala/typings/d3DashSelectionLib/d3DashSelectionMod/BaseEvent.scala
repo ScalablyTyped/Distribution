@@ -16,3 +16,12 @@ trait BaseEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object BaseEvent {
+  @scala.inline
+  def apply(`type`: java.lang.String, sourceEvent: js.Any = null): BaseEvent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (sourceEvent != null) __obj.updateDynamic("sourceEvent")(sourceEvent)
+    __obj.asInstanceOf[BaseEvent]
+  }
+}
+

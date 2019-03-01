@@ -44,3 +44,22 @@ trait PivotFieldData extends js.Object {
   var subtotals: js.UndefOr[officeDashJsLib.ExcelNs.Subtotals] = js.undefined
 }
 
+object PivotFieldData {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    items: js.Array[PivotItemData] = null,
+    name: java.lang.String = null,
+    showAllItems: js.UndefOr[scala.Boolean] = js.undefined,
+    subtotals: officeDashJsLib.ExcelNs.Subtotals = null
+  ): PivotFieldData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(showAllItems)) __obj.updateDynamic("showAllItems")(showAllItems)
+    if (subtotals != null) __obj.updateDynamic("subtotals")(subtotals)
+    __obj.asInstanceOf[PivotFieldData]
+  }
+}
+

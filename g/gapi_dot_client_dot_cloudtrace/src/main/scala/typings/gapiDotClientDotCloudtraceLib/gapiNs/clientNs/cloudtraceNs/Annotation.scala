@@ -18,3 +18,13 @@ trait Annotation extends js.Object {
   var description: js.UndefOr[TruncatableString] = js.undefined
 }
 
+object Annotation {
+  @scala.inline
+  def apply(attributes: Attributes = null, description: TruncatableString = null): Annotation = {
+    val __obj = js.Dynamic.literal()
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (description != null) __obj.updateDynamic("description")(description)
+    __obj.asInstanceOf[Annotation]
+  }
+}
+

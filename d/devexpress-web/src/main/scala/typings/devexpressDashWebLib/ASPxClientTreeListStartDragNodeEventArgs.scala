@@ -16,3 +16,20 @@ trait ASPxClientTreeListStartDragNodeEventArgs extends ASPxClientTreeListNodeEve
   var targets: js.Array[js.Object]
 }
 
+object ASPxClientTreeListStartDragNodeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    htmlEvent: js.Object,
+    nodeKey: java.lang.String,
+    targets: js.Array[js.Object]
+  ): ASPxClientTreeListStartDragNodeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.updateDynamic("nodeKey")(nodeKey)
+    __obj.updateDynamic("targets")(targets)
+    __obj.asInstanceOf[ASPxClientTreeListStartDragNodeEventArgs]
+  }
+}
+

@@ -46,3 +46,50 @@ trait UserInfo extends js.Object {
   var version: js.UndefOr[scala.Double] = js.undefined
 }
 
+object UserInfo {
+  @scala.inline
+  def apply(
+    createdAt: java.lang.String = null,
+    customAttributes: java.lang.String = null,
+    customAuth: js.UndefOr[scala.Boolean] = js.undefined,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    displayName: java.lang.String = null,
+    email: java.lang.String = null,
+    emailVerified: js.UndefOr[scala.Boolean] = js.undefined,
+    lastLoginAt: java.lang.String = null,
+    localId: java.lang.String = null,
+    passwordHash: java.lang.String = null,
+    passwordUpdatedAt: scala.Int | scala.Double = null,
+    phoneNumber: java.lang.String = null,
+    photoUrl: java.lang.String = null,
+    providerUserInfo: js.Array[gapiDotClientDotIdentitytoolkitLib.Anon_DisplayNameEmail] = null,
+    rawPassword: java.lang.String = null,
+    salt: java.lang.String = null,
+    screenName: java.lang.String = null,
+    validSince: java.lang.String = null,
+    version: scala.Int | scala.Double = null
+  ): UserInfo = {
+    val __obj = js.Dynamic.literal()
+    if (createdAt != null) __obj.updateDynamic("createdAt")(createdAt)
+    if (customAttributes != null) __obj.updateDynamic("customAttributes")(customAttributes)
+    if (!js.isUndefined(customAuth)) __obj.updateDynamic("customAuth")(customAuth)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (!js.isUndefined(emailVerified)) __obj.updateDynamic("emailVerified")(emailVerified)
+    if (lastLoginAt != null) __obj.updateDynamic("lastLoginAt")(lastLoginAt)
+    if (localId != null) __obj.updateDynamic("localId")(localId)
+    if (passwordHash != null) __obj.updateDynamic("passwordHash")(passwordHash)
+    if (passwordUpdatedAt != null) __obj.updateDynamic("passwordUpdatedAt")(passwordUpdatedAt.asInstanceOf[js.Any])
+    if (phoneNumber != null) __obj.updateDynamic("phoneNumber")(phoneNumber)
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
+    if (providerUserInfo != null) __obj.updateDynamic("providerUserInfo")(providerUserInfo)
+    if (rawPassword != null) __obj.updateDynamic("rawPassword")(rawPassword)
+    if (salt != null) __obj.updateDynamic("salt")(salt)
+    if (screenName != null) __obj.updateDynamic("screenName")(screenName)
+    if (validSince != null) __obj.updateDynamic("validSince")(validSince)
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserInfo]
+  }
+}
+

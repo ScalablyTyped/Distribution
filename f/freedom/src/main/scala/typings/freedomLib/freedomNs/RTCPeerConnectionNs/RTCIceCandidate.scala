@@ -11,3 +11,18 @@ trait RTCIceCandidate extends js.Object {
   var sdpMid: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object RTCIceCandidate {
+  @scala.inline
+  def apply(
+    candidate: java.lang.String,
+    sdpMLineIndex: scala.Int | scala.Double = null,
+    sdpMid: java.lang.String = null
+  ): RTCIceCandidate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("candidate")(candidate)
+    if (sdpMLineIndex != null) __obj.updateDynamic("sdpMLineIndex")(sdpMLineIndex.asInstanceOf[js.Any])
+    if (sdpMid != null) __obj.updateDynamic("sdpMid")(sdpMid)
+    __obj.asInstanceOf[RTCIceCandidate]
+  }
+}
+

@@ -27,3 +27,28 @@ trait MicroModalConfig extends js.Object {
   var openTrigger: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MicroModalConfig {
+  @scala.inline
+  def apply(
+    awaitCloseAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    closeTrigger: java.lang.String = null,
+    debugMode: js.UndefOr[scala.Boolean] = js.undefined,
+    disableFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    disableScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    onClose: js.Function1[/* modal */ js.UndefOr[stdLib.HTMLElement], scala.Unit] = null,
+    onShow: js.Function1[/* modal */ js.UndefOr[stdLib.HTMLElement], scala.Unit] = null,
+    openTrigger: java.lang.String = null
+  ): MicroModalConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(awaitCloseAnimation)) __obj.updateDynamic("awaitCloseAnimation")(awaitCloseAnimation)
+    if (closeTrigger != null) __obj.updateDynamic("closeTrigger")(closeTrigger)
+    if (!js.isUndefined(debugMode)) __obj.updateDynamic("debugMode")(debugMode)
+    if (!js.isUndefined(disableFocus)) __obj.updateDynamic("disableFocus")(disableFocus)
+    if (!js.isUndefined(disableScroll)) __obj.updateDynamic("disableScroll")(disableScroll)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (openTrigger != null) __obj.updateDynamic("openTrigger")(openTrigger)
+    __obj.asInstanceOf[MicroModalConfig]
+  }
+}
+

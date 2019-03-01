@@ -10,3 +10,12 @@ trait IStyleUrl extends js.Object {
   var styleURLs: js.Array[java.lang.String]
 }
 
+object IStyleUrl {
+  @scala.inline
+  def apply(styleURLs: js.Array[java.lang.String]): IStyleUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("styleURLs")(styleURLs)
+    __obj.asInstanceOf[IStyleUrl]
+  }
+}
+

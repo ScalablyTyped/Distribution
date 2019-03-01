@@ -13,3 +13,22 @@ trait NaverImageMapTypeOptions extends js.Object {
   var tileSize: js.UndefOr[Size] = js.undefined
 }
 
+object NaverImageMapTypeOptions {
+  @scala.inline
+  def apply(
+    hd: java.lang.String = null,
+    maxZoom: scala.Int | scala.Double = null,
+    minZoom: scala.Int | scala.Double = null,
+    projection: Projection = null,
+    tileSize: Size = null
+  ): NaverImageMapTypeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (hd != null) __obj.updateDynamic("hd")(hd)
+    if (maxZoom != null) __obj.updateDynamic("maxZoom")(maxZoom.asInstanceOf[js.Any])
+    if (minZoom != null) __obj.updateDynamic("minZoom")(minZoom.asInstanceOf[js.Any])
+    if (projection != null) __obj.updateDynamic("projection")(projection)
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize)
+    __obj.asInstanceOf[NaverImageMapTypeOptions]
+  }
+}
+

@@ -27,3 +27,24 @@ trait JobConfiguration extends js.Object {
   var query: js.UndefOr[JobConfigurationQuery] = js.undefined
 }
 
+object JobConfiguration {
+  @scala.inline
+  def apply(
+    copy: JobConfigurationTableCopy = null,
+    dryRun: js.UndefOr[scala.Boolean] = js.undefined,
+    extract: JobConfigurationExtract = null,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    load: JobConfigurationLoad = null,
+    query: JobConfigurationQuery = null
+  ): JobConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (copy != null) __obj.updateDynamic("copy")(copy)
+    if (!js.isUndefined(dryRun)) __obj.updateDynamic("dryRun")(dryRun)
+    if (extract != null) __obj.updateDynamic("extract")(extract)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (query != null) __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[JobConfiguration]
+  }
+}
+

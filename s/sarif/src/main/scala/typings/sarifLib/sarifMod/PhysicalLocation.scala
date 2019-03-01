@@ -29,3 +29,22 @@ trait PhysicalLocation extends js.Object {
   var region: js.UndefOr[Region] = js.undefined
 }
 
+object PhysicalLocation {
+  @scala.inline
+  def apply(
+    artifactLocation: ArtifactLocation,
+    contextRegion: Region = null,
+    id: scala.Int | scala.Double = null,
+    properties: PropertyBag = null,
+    region: Region = null
+  ): PhysicalLocation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifactLocation")(artifactLocation)
+    if (contextRegion != null) __obj.updateDynamic("contextRegion")(contextRegion)
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (region != null) __obj.updateDynamic("region")(region)
+    __obj.asInstanceOf[PhysicalLocation]
+  }
+}
+

@@ -10,3 +10,13 @@ trait DevicePermissionDescriptor extends PermissionDescriptor {
   var deviceId: java.lang.String
 }
 
+object DevicePermissionDescriptor {
+  @scala.inline
+  def apply(deviceId: java.lang.String, name: java.lang.String): DevicePermissionDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceId")(deviceId)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[DevicePermissionDescriptor]
+  }
+}
+

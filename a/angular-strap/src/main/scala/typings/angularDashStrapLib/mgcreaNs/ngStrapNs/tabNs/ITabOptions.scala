@@ -12,3 +12,20 @@ trait ITabOptions extends js.Object {
   var template: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ITabOptions {
+  @scala.inline
+  def apply(
+    activeClass: java.lang.String = null,
+    animation: java.lang.String = null,
+    navClass: java.lang.String = null,
+    template: java.lang.String = null
+  ): ITabOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activeClass != null) __obj.updateDynamic("activeClass")(activeClass)
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (navClass != null) __obj.updateDynamic("navClass")(navClass)
+    if (template != null) __obj.updateDynamic("template")(template)
+    __obj.asInstanceOf[ITabOptions]
+  }
+}
+

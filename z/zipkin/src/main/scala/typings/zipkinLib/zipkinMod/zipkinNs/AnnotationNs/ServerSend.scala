@@ -8,3 +8,12 @@ import scala.scalajs.js.annotation._
 trait ServerSend
   extends zipkinLib.zipkinMod.zipkinNs.IAnnotation
 
+object ServerSend {
+  @scala.inline
+  def apply(annotationType: java.lang.String): ServerSend = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("annotationType")(annotationType)
+    __obj.asInstanceOf[ServerSend]
+  }
+}
+

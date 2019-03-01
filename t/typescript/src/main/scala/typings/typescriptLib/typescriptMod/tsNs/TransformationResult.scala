@@ -35,3 +35,27 @@ trait TransformationResult[T /* <: Node */] extends js.Object {
   def substituteNode(hint: EmitHint, node: Node): Node
 }
 
+object TransformationResult {
+  @scala.inline
+  def apply[T /* <: Node */](
+    dispose: js.Function0[scala.Unit],
+    emitNodeWithNotification: js.Function3[
+      EmitHint, 
+      Node, 
+      js.Function2[/* hint */ EmitHint, /* node */ Node, scala.Unit], 
+      scala.Unit
+    ],
+    substituteNode: js.Function2[EmitHint, Node, Node],
+    transformed: js.Array[T],
+    diagnostics: js.Array[DiagnosticWithLocation] = null
+  ): TransformationResult[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("emitNodeWithNotification")(emitNodeWithNotification)
+    __obj.updateDynamic("substituteNode")(substituteNode)
+    __obj.updateDynamic("transformed")(transformed)
+    if (diagnostics != null) __obj.updateDynamic("diagnostics")(diagnostics)
+    __obj.asInstanceOf[TransformationResult[T]]
+  }
+}
+

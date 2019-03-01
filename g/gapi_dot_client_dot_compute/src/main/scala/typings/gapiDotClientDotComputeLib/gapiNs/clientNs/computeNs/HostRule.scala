@@ -17,3 +17,18 @@ trait HostRule extends js.Object {
   var pathMatcher: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HostRule {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    hosts: js.Array[java.lang.String] = null,
+    pathMatcher: java.lang.String = null
+  ): HostRule = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (hosts != null) __obj.updateDynamic("hosts")(hosts)
+    if (pathMatcher != null) __obj.updateDynamic("pathMatcher")(pathMatcher)
+    __obj.asInstanceOf[HostRule]
+  }
+}
+

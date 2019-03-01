@@ -26,3 +26,24 @@ trait BackstageItemClickEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BackstageItemClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    model: js.Any = null,
+    target: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): BackstageItemClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BackstageItemClickEventArgs]
+  }
+}
+

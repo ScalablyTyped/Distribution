@@ -17,3 +17,30 @@ trait ToolbarTab extends js.Object {
   var title: java.lang.String
 }
 
+object ToolbarTab {
+  @scala.inline
+  def apply(
+    android: scala.Boolean,
+    args: js.Any,
+    handler: js.Function0[scala.Unit] | java.lang.String,
+    icon: java.lang.String,
+    id: java.lang.String,
+    ios: scala.Boolean,
+    menu: js.Array[ToolbarTab],
+    mobile: scala.Boolean,
+    title: java.lang.String
+  ): ToolbarTab = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("android")(android)
+    __obj.updateDynamic("args")(args)
+    __obj.updateDynamic("handler")(handler.asInstanceOf[js.Any])
+    __obj.updateDynamic("icon")(icon)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("ios")(ios)
+    __obj.updateDynamic("menu")(menu)
+    __obj.updateDynamic("mobile")(mobile)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ToolbarTab]
+  }
+}
+

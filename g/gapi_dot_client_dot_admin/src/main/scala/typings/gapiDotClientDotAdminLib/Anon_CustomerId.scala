@@ -16,3 +16,20 @@ trait Anon_CustomerId extends js.Object {
   var userEmail: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_CustomerId {
+  @scala.inline
+  def apply(
+    customerId: java.lang.String = null,
+    profileId: java.lang.String = null,
+    `type`: java.lang.String = null,
+    userEmail: java.lang.String = null
+  ): Anon_CustomerId = {
+    val __obj = js.Dynamic.literal()
+    if (customerId != null) __obj.updateDynamic("customerId")(customerId)
+    if (profileId != null) __obj.updateDynamic("profileId")(profileId)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (userEmail != null) __obj.updateDynamic("userEmail")(userEmail)
+    __obj.asInstanceOf[Anon_CustomerId]
+  }
+}
+

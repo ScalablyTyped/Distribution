@@ -12,3 +12,12 @@ trait WebViewMessageEventData extends js.Object {
   var data: java.lang.String
 }
 
+object WebViewMessageEventData {
+  @scala.inline
+  def apply(data: java.lang.String): WebViewMessageEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.asInstanceOf[WebViewMessageEventData]
+  }
+}
+

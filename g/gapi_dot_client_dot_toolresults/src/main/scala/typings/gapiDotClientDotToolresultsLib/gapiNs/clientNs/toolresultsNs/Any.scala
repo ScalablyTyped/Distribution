@@ -24,3 +24,13 @@ trait Any extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Any {
+  @scala.inline
+  def apply(typeUrl: java.lang.String = null, value: java.lang.String = null): Any = {
+    val __obj = js.Dynamic.literal()
+    if (typeUrl != null) __obj.updateDynamic("typeUrl")(typeUrl)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Any]
+  }
+}
+

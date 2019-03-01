@@ -32,3 +32,13 @@ trait RelativeSize extends js.Object {
   var Secondary: scala.Double
 }
 
+object RelativeSize {
+  @scala.inline
+  def apply(Primary: scala.Double, Secondary: scala.Double): RelativeSize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Primary")(Primary)
+    __obj.updateDynamic("Secondary")(Secondary)
+    __obj.asInstanceOf[RelativeSize]
+  }
+}
+

@@ -2078,6 +2078,22 @@ object IoTAnalyticsNs extends js.Object {
     var stringValue: js.UndefOr[StringValue] = js.undefined
   }
   
+  trait _ChannelStatus extends js.Object
+  
+  trait _ComputeType extends js.Object
+  
+  trait _DatasetActionType extends js.Object
+  
+  trait _DatasetContentState extends js.Object
+  
+  trait _DatasetStatus extends js.Object
+  
+  trait _DatastoreStatus extends js.Object
+  
+  trait _ReprocessingStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type ActivityBatchSize = scala.Double
   type ActivityName = java.lang.String
@@ -2086,27 +2102,27 @@ object IoTAnalyticsNs extends js.Object {
   type BatchPutMessageErrorEntries = js.Array[BatchPutMessageErrorEntry]
   type ChannelArn = java.lang.String
   type ChannelName = java.lang.String
-  type ChannelStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type ChannelStatus = _ChannelStatus | java.lang.String
   type ChannelSummaries = js.Array[ChannelSummary]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type ComputeType = awsDashSdkLib.awsDashSdkLibStrings.ACU_1 | awsDashSdkLib.awsDashSdkLibStrings.ACU_2 | java.lang.String
+  type ComputeType = _ComputeType | java.lang.String
   type DatasetActionName = java.lang.String
   type DatasetActionSummaries = js.Array[DatasetActionSummary]
-  type DatasetActionType = awsDashSdkLib.awsDashSdkLibStrings.QUERY | awsDashSdkLib.awsDashSdkLibStrings.CONTAINER | java.lang.String
+  type DatasetActionType = _DatasetActionType | java.lang.String
   type DatasetActions = js.Array[DatasetAction]
   type DatasetArn = java.lang.String
   type DatasetContentDeliveryRules = js.Array[DatasetContentDeliveryRule]
-  type DatasetContentState = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type DatasetContentState = _DatasetContentState | java.lang.String
   type DatasetContentSummaries = js.Array[DatasetContentSummary]
   type DatasetContentVersion = java.lang.String
   type DatasetEntries = js.Array[DatasetEntry]
   type DatasetName = java.lang.String
-  type DatasetStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type DatasetStatus = _DatasetStatus | java.lang.String
   type DatasetSummaries = js.Array[DatasetSummary]
   type DatasetTriggers = js.Array[DatasetTrigger]
   type DatastoreArn = java.lang.String
   type DatastoreName = java.lang.String
-  type DatastoreStatus = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DELETING | java.lang.String
+  type DatastoreStatus = _DatastoreStatus | java.lang.String
   type DatastoreSummaries = js.Array[DatastoreSummary]
   type DoubleValue = scala.Double
   type EndTime = stdLib.Date
@@ -2139,7 +2155,7 @@ object IoTAnalyticsNs extends js.Object {
   type QueryFilters = js.Array[QueryFilter]
   type Reason = java.lang.String
   type ReprocessingId = java.lang.String
-  type ReprocessingStatus = awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.CANCELLED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | java.lang.String
+  type ReprocessingStatus = _ReprocessingStatus | java.lang.String
   type ReprocessingSummaries = js.Array[ReprocessingSummary]
   type ResourceArn = java.lang.String
   type RetentionPeriodInDays = scala.Double
@@ -2159,6 +2175,6 @@ object IoTAnalyticsNs extends js.Object {
   type VariableName = java.lang.String
   type Variables = js.Array[Variable]
   type VolumeSizeInGB = scala.Double
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-27` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

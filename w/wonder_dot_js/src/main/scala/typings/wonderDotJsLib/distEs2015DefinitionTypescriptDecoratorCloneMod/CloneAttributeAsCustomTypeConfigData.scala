@@ -9,3 +9,12 @@ trait CloneAttributeAsCustomTypeConfigData extends js.Object {
   var order: js.UndefOr[scala.Double] = js.undefined
 }
 
+object CloneAttributeAsCustomTypeConfigData {
+  @scala.inline
+  def apply(order: scala.Int | scala.Double = null): CloneAttributeAsCustomTypeConfigData = {
+    val __obj = js.Dynamic.literal()
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CloneAttributeAsCustomTypeConfigData]
+  }
+}
+

@@ -43,3 +43,42 @@ trait PropsType extends js.Object {
   ] = js.undefined
 }
 
+object PropsType {
+  @scala.inline
+  def apply(
+    defaultDate: stdLib.Date = null,
+    endDate: stdLib.Date = null,
+    getDateExtra: js.Function1[/* date */ stdLib.Date, rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.ExtraData] = null,
+    infiniteOpt: js.UndefOr[scala.Boolean] = js.undefined,
+    initalMonths: scala.Int | scala.Double = null,
+    locale: rmcDashCalendarLib.libDateDataTypesMod.ModelsNs.Locale = null,
+    maxDate: stdLib.Date = null,
+    minDate: stdLib.Date = null,
+    onCellClick: js.Function1[/* date */ stdLib.Date, scala.Unit] = null,
+    onLayout: js.Function1[/* clientHight */ scala.Double, scala.Unit] = null,
+    onSelectHasDisableDate: js.Function1[/* date */ js.Array[stdLib.Date], scala.Unit] = null,
+    prefixCls: java.lang.String = null,
+    rowSize: rmcDashCalendarLib.rmcDashCalendarLibStrings.normal | rmcDashCalendarLib.rmcDashCalendarLibStrings.xl = null,
+    startDate: stdLib.Date = null,
+    `type`: rmcDashCalendarLib.rmcDashCalendarLibStrings.one | rmcDashCalendarLib.rmcDashCalendarLibStrings.range = null
+  ): PropsType = {
+    val __obj = js.Dynamic.literal()
+    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (getDateExtra != null) __obj.updateDynamic("getDateExtra")(getDateExtra)
+    if (!js.isUndefined(infiniteOpt)) __obj.updateDynamic("infiniteOpt")(infiniteOpt)
+    if (initalMonths != null) __obj.updateDynamic("initalMonths")(initalMonths.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate)
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate)
+    if (onCellClick != null) __obj.updateDynamic("onCellClick")(onCellClick)
+    if (onLayout != null) __obj.updateDynamic("onLayout")(onLayout)
+    if (onSelectHasDisableDate != null) __obj.updateDynamic("onSelectHasDisableDate")(onSelectHasDisableDate)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (rowSize != null) __obj.updateDynamic("rowSize")(rowSize.asInstanceOf[js.Any])
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PropsType]
+  }
+}
+

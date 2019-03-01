@@ -57,3 +57,26 @@ trait XLCMenu extends js.Object {
   def showItem(cMenuType: java.lang.String, idxColl: js.Array[_]): scala.Unit
 }
 
+object XLCMenu {
+  @scala.inline
+  def apply(
+    addItem: js.Function4[java.lang.String, js.Array[_], java.lang.String, scala.Double, scala.Unit],
+    changeDataSource: js.Function2[java.lang.String, js.Array[_], scala.Unit],
+    disableItem: js.Function2[java.lang.String, js.Array[_], scala.Unit],
+    enableItem: js.Function2[java.lang.String, js.Array[_], scala.Unit],
+    hideItem: js.Function2[java.lang.String, js.Array[_], scala.Unit],
+    removeItem: js.Function2[java.lang.String, js.Array[_], scala.Unit],
+    showItem: js.Function2[java.lang.String, js.Array[_], scala.Unit]
+  ): XLCMenu = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addItem")(addItem)
+    __obj.updateDynamic("changeDataSource")(changeDataSource)
+    __obj.updateDynamic("disableItem")(disableItem)
+    __obj.updateDynamic("enableItem")(enableItem)
+    __obj.updateDynamic("hideItem")(hideItem)
+    __obj.updateDynamic("removeItem")(removeItem)
+    __obj.updateDynamic("showItem")(showItem)
+    __obj.asInstanceOf[XLCMenu]
+  }
+}
+

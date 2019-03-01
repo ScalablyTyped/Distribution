@@ -44,3 +44,30 @@ trait GetVpcDhcpOptionsResult extends js.Object {
   val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object GetVpcDhcpOptionsResult {
+  @scala.inline
+  def apply(
+    dhcpOptionsId: java.lang.String,
+    domainName: java.lang.String,
+    domainNameServers: js.Array[java.lang.String],
+    id: java.lang.String,
+    netbiosNameServers: js.Array[java.lang.String],
+    netbiosNodeType: java.lang.String,
+    ntpServers: js.Array[java.lang.String],
+    ownerId: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): GetVpcDhcpOptionsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dhcpOptionsId")(dhcpOptionsId)
+    __obj.updateDynamic("domainName")(domainName)
+    __obj.updateDynamic("domainNameServers")(domainNameServers)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("netbiosNameServers")(netbiosNameServers)
+    __obj.updateDynamic("netbiosNodeType")(netbiosNodeType)
+    __obj.updateDynamic("ntpServers")(ntpServers)
+    __obj.updateDynamic("ownerId")(ownerId)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetVpcDhcpOptionsResult]
+  }
+}
+

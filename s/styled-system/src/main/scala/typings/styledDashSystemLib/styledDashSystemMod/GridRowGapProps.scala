@@ -16,3 +16,12 @@ trait GridRowGapProps[TLength] extends js.Object {
   var gridRowGap: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.GridRowGapProperty[TLength]]] = js.undefined
 }
 
+object GridRowGapProps {
+  @scala.inline
+  def apply[TLength](gridRowGap: ResponsiveValue[csstypeLib.csstypeMod.GridRowGapProperty[TLength]] = null): GridRowGapProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (gridRowGap != null) __obj.updateDynamic("gridRowGap")(gridRowGap.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GridRowGapProps[TLength]]
+  }
+}
+

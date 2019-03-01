@@ -5,9 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Event extends js.Object {
+trait Anon_Event
+  extends expoLib.expoMod.AuthSessionNs.StartAsyncResponse {
   var event: expoLib.expoMod.HashMap
   var params: expoLib.expoMod.HashMap
   var `type`: expoLib.expoLibStrings.success
+}
+
+object Anon_Event {
+  @scala.inline
+  def apply(
+    event: expoLib.expoMod.HashMap,
+    params: expoLib.expoMod.HashMap,
+    `type`: expoLib.expoLibStrings.success
+  ): Anon_Event = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[Anon_Event]
+  }
 }
 

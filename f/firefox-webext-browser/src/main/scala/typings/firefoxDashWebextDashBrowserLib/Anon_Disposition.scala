@@ -45,3 +45,40 @@ trait Anon_Disposition extends js.Object {
   def setDefaultSuggestion(suggestion: firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DefaultSuggestResult): scala.Unit
 }
 
+object Anon_Disposition {
+  @scala.inline
+  def apply(
+    onInputCancelled: WebExtEvent[js.Function0[scala.Unit]],
+    onInputChanged: WebExtEvent[
+      js.Function2[
+        /* text */ java.lang.String, 
+        /* suggest */ js.Function1[
+          /* suggestResults */ js.Array[firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.SuggestResult], 
+          scala.Unit
+        ], 
+        scala.Unit
+      ]
+    ],
+    onInputEntered: WebExtEvent[
+      js.Function2[
+        /* text */ java.lang.String, 
+        /* disposition */ firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.OnInputEnteredDisposition, 
+        scala.Unit
+      ]
+    ],
+    onInputStarted: WebExtEvent[js.Function0[scala.Unit]],
+    setDefaultSuggestion: js.Function1[
+      firefoxDashWebextDashBrowserLib.browserNs.omniboxNs.DefaultSuggestResult, 
+      scala.Unit
+    ]
+  ): Anon_Disposition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onInputCancelled")(onInputCancelled)
+    __obj.updateDynamic("onInputChanged")(onInputChanged)
+    __obj.updateDynamic("onInputEntered")(onInputEntered)
+    __obj.updateDynamic("onInputStarted")(onInputStarted)
+    __obj.updateDynamic("setDefaultSuggestion")(setDefaultSuggestion)
+    __obj.asInstanceOf[Anon_Disposition]
+  }
+}
+

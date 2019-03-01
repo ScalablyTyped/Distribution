@@ -22,3 +22,21 @@ trait IPointerPointTransform extends js.Object {
   def tryTransform(inPoint: winrtDashUwpLib.WindowsNs.FoundationNs.Point): winrtDashUwpLib.Anon_OutPoint
 }
 
+object IPointerPointTransform {
+  @scala.inline
+  def apply(
+    inverse: IPointerPointTransform,
+    transformBounds: js.Function1[
+      winrtDashUwpLib.WindowsNs.FoundationNs.Rect, 
+      winrtDashUwpLib.WindowsNs.FoundationNs.Rect
+    ],
+    tryTransform: js.Function1[winrtDashUwpLib.WindowsNs.FoundationNs.Point, winrtDashUwpLib.Anon_OutPoint]
+  ): IPointerPointTransform = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("inverse")(inverse)
+    __obj.updateDynamic("transformBounds")(transformBounds)
+    __obj.updateDynamic("tryTransform")(tryTransform)
+    __obj.asInstanceOf[IPointerPointTransform]
+  }
+}
+

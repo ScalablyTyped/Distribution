@@ -32,3 +32,26 @@ trait Reference extends js.Object {
   var sourceUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Reference {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    length: java.lang.String = null,
+    md5checksum: java.lang.String = null,
+    name: java.lang.String = null,
+    ncbiTaxonId: scala.Int | scala.Double = null,
+    sourceAccessions: js.Array[java.lang.String] = null,
+    sourceUri: java.lang.String = null
+  ): Reference = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (length != null) __obj.updateDynamic("length")(length)
+    if (md5checksum != null) __obj.updateDynamic("md5checksum")(md5checksum)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (ncbiTaxonId != null) __obj.updateDynamic("ncbiTaxonId")(ncbiTaxonId.asInstanceOf[js.Any])
+    if (sourceAccessions != null) __obj.updateDynamic("sourceAccessions")(sourceAccessions)
+    if (sourceUri != null) __obj.updateDynamic("sourceUri")(sourceUri)
+    __obj.asInstanceOf[Reference]
+  }
+}
+

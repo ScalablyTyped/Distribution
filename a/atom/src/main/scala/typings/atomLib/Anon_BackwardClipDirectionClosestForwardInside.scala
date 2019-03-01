@@ -14,3 +14,16 @@ trait Anon_BackwardClipDirectionClosestForwardInside extends js.Object {
   ] = js.undefined
 }
 
+object Anon_BackwardClipDirectionClosestForwardInside {
+  @scala.inline
+  def apply(
+    clipDirection: atomLib.atomLibStrings.backward | atomLib.atomLibStrings.forward | atomLib.atomLibStrings.closest = null,
+    invalidate: atomLib.atomLibStrings.never | atomLib.atomLibStrings.surround | atomLib.atomLibStrings.overlap | atomLib.atomLibStrings.inside | atomLib.atomLibStrings.touch = null
+  ): Anon_BackwardClipDirectionClosestForwardInside = {
+    val __obj = js.Dynamic.literal()
+    if (clipDirection != null) __obj.updateDynamic("clipDirection")(clipDirection.asInstanceOf[js.Any])
+    if (invalidate != null) __obj.updateDynamic("invalidate")(invalidate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BackwardClipDirectionClosestForwardInside]
+  }
+}
+

@@ -17,3 +17,18 @@ trait CodeAction extends js.Object {
   var description: java.lang.String
 }
 
+object CodeAction {
+  @scala.inline
+  def apply(
+    changes: js.Array[FileTextChanges],
+    description: java.lang.String,
+    commands: js.Array[CodeActionCommand] = null
+  ): CodeAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("description")(description)
+    if (commands != null) __obj.updateDynamic("commands")(commands)
+    __obj.asInstanceOf[CodeAction]
+  }
+}
+

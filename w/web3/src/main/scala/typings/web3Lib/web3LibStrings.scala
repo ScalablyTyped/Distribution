@@ -7,28 +7,35 @@ import scala.scalajs.js.annotation._
 
 object web3LibStrings {
   @js.native
-  sealed trait Gwei extends js.Object
+  sealed trait Gwei
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait Kwei extends js.Object
+  sealed trait Kwei
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait Mwei extends js.Object
+  sealed trait Mwei
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait babbage extends js.Object
+  sealed trait babbage
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends web3Lib.ethAbiMod._ABIDataTypes
   
   @js.native
-  sealed trait bytes extends js.Object
+  sealed trait bytes
+    extends web3Lib.ethAbiMod._ABIDataTypes
   
   @js.native
   sealed trait changed extends js.Object
   
   @js.native
-  sealed trait confirmation extends js.Object
+  sealed trait confirmation
+    extends web3Lib.promiEventMod.PromiEventType
   
   @js.native
   sealed trait constructor extends js.Object
@@ -37,10 +44,12 @@ object web3LibStrings {
   sealed trait data extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends web3Lib.promiEventMod.PromiEventType
   
   @js.native
-  sealed trait ether extends js.Object
+  sealed trait ether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
   sealed trait event extends js.Object
@@ -49,70 +58,89 @@ object web3LibStrings {
   sealed trait fallback extends js.Object
   
   @js.native
-  sealed trait femtoether extends js.Object
+  sealed trait femtoether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait finney extends js.Object
+  sealed trait finney
+    extends web3Lib.utilsMod.Unit
   
   @js.native
   sealed trait function extends js.Object
   
   @js.native
-  sealed trait genesis extends js.Object
+  sealed trait genesis
+    extends web3Lib.ethTypesMod._BlockType
   
   @js.native
-  sealed trait gether extends js.Object
+  sealed trait gether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait grand extends js.Object
+  sealed trait grand
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait gwei extends js.Object
+  sealed trait gwei
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait kether extends js.Object
+  sealed trait kether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait kwei extends js.Object
+  sealed trait kwei
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait latest extends js.Object
+  sealed trait latest
+    extends web3Lib.ethTypesMod._BlockType
   
   @js.native
   sealed trait logs extends js.Object
   
   @js.native
-  sealed trait lovelace extends js.Object
+  sealed trait lovelace
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait mether extends js.Object
+  sealed trait mether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait micro extends js.Object
+  sealed trait micro
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait microether extends js.Object
+  sealed trait microether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait milli extends js.Object
+  sealed trait milli
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait milliether extends js.Object
+  sealed trait milliether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait mwei extends js.Object
+  sealed trait mwei
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait nano extends js.Object
+  sealed trait nano
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait nanoether extends js.Object
+  sealed trait nanoether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
   sealed trait newBlockHeaders extends js.Object
   
   @js.native
-  sealed trait noether extends js.Object
+  sealed trait noether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
   sealed trait nonpayable extends js.Object
@@ -121,46 +149,56 @@ object web3LibStrings {
   sealed trait payable extends js.Object
   
   @js.native
-  sealed trait pending extends js.Object
+  sealed trait pending
+    extends web3Lib.ethTypesMod._BlockType
   
   @js.native
   sealed trait pendingTransactions extends js.Object
   
   @js.native
-  sealed trait picoether extends js.Object
+  sealed trait picoether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
   sealed trait pure extends js.Object
   
   @js.native
-  sealed trait receipt extends js.Object
+  sealed trait receipt
+    extends web3Lib.promiEventMod.PromiEventType
   
   @js.native
-  sealed trait shannon extends js.Object
+  sealed trait shannon
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends web3Lib.ethAbiMod._ABIDataTypes
   
   @js.native
   sealed trait syncing extends js.Object
   
   @js.native
-  sealed trait szabo extends js.Object
+  sealed trait szabo
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait tether extends js.Object
+  sealed trait tether
+    extends web3Lib.utilsMod.Unit
   
   @js.native
-  sealed trait transactionHash extends js.Object
+  sealed trait transactionHash
+    extends web3Lib.promiEventMod.PromiEventType
   
   @js.native
-  sealed trait uint256 extends js.Object
+  sealed trait uint256
+    extends web3Lib.ethAbiMod._ABIDataTypes
   
   @js.native
   sealed trait view extends js.Object
   
   @js.native
-  sealed trait wei extends js.Object
+  sealed trait wei
+    extends web3Lib.utilsMod.Unit
   
   @scala.inline
   def Gwei: Gwei = "Gwei".asInstanceOf[Gwei]

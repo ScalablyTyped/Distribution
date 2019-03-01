@@ -10,3 +10,12 @@ trait OnShowEvent extends js.Object {
   def preventDefault(): scala.Unit
 }
 
+object OnShowEvent {
+  @scala.inline
+  def apply(preventDefault: js.Function0[scala.Unit]): OnShowEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.asInstanceOf[OnShowEvent]
+  }
+}
+

@@ -28,3 +28,21 @@ trait IgTileManagerSplitterOptionsEvents
   var expanded: js.UndefOr[js.Any] = js.undefined
 }
 
+object IgTileManagerSplitterOptionsEvents {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgTileManagerSplitterOptionsEvents
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    collapsed: js.Any = null,
+    expanded: js.Any = null
+  ): IgTileManagerSplitterOptionsEvents = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
+    __obj.asInstanceOf[IgTileManagerSplitterOptionsEvents]
+  }
+}
+

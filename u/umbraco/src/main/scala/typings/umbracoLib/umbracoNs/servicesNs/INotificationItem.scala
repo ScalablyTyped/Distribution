@@ -25,3 +25,25 @@ trait INotificationItem extends js.Object {
   var view: java.lang.String
 }
 
+object INotificationItem {
+  @scala.inline
+  def apply(
+    actions: js.Array[IButtonAction],
+    headline: java.lang.String,
+    message: java.lang.String,
+    sticky: scala.Boolean,
+    `type`: NotificationType,
+    url: java.lang.String,
+    view: java.lang.String
+  ): INotificationItem = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("actions")(actions)
+    __obj.updateDynamic("headline")(headline)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("sticky")(sticky)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[INotificationItem]
+  }
+}
+

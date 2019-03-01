@@ -17,3 +17,24 @@ trait Response extends js.Object {
   var `type`: js.UndefOr[js.Any] = js.undefined
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    status: scala.Double,
+    code: js.Any = null,
+    name: java.lang.String = null,
+    stack: java.lang.String = null,
+    `type`: js.Any = null
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("status")(status)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Response]
+  }
+}
+

@@ -48,3 +48,32 @@ trait BackupSummary extends js.Object {
   var TableName: js.UndefOr[TableName] = js.undefined
 }
 
+object BackupSummary {
+  @scala.inline
+  def apply(
+    BackupArn: BackupArn = null,
+    BackupCreationDateTime: BackupCreationDateTime = null,
+    BackupExpiryDateTime: _Date = null,
+    BackupName: BackupName = null,
+    BackupSizeBytes: js.UndefOr[BackupSizeBytes] = js.undefined,
+    BackupStatus: BackupStatus = null,
+    BackupType: BackupType = null,
+    TableArn: TableArn = null,
+    TableId: TableId = null,
+    TableName: TableName = null
+  ): BackupSummary = {
+    val __obj = js.Dynamic.literal()
+    if (BackupArn != null) __obj.updateDynamic("BackupArn")(BackupArn)
+    if (BackupCreationDateTime != null) __obj.updateDynamic("BackupCreationDateTime")(BackupCreationDateTime)
+    if (BackupExpiryDateTime != null) __obj.updateDynamic("BackupExpiryDateTime")(BackupExpiryDateTime)
+    if (BackupName != null) __obj.updateDynamic("BackupName")(BackupName)
+    if (!js.isUndefined(BackupSizeBytes)) __obj.updateDynamic("BackupSizeBytes")(BackupSizeBytes)
+    if (BackupStatus != null) __obj.updateDynamic("BackupStatus")(BackupStatus.asInstanceOf[js.Any])
+    if (BackupType != null) __obj.updateDynamic("BackupType")(BackupType.asInstanceOf[js.Any])
+    if (TableArn != null) __obj.updateDynamic("TableArn")(TableArn)
+    if (TableId != null) __obj.updateDynamic("TableId")(TableId)
+    if (TableName != null) __obj.updateDynamic("TableName")(TableName)
+    __obj.asInstanceOf[BackupSummary]
+  }
+}
+

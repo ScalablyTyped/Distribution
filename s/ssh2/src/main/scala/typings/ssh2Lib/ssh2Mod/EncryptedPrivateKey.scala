@@ -12,3 +12,13 @@ trait EncryptedPrivateKey extends js.Object {
   var passphrase: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EncryptedPrivateKey {
+  @scala.inline
+  def apply(key: nodeLib.Buffer | java.lang.String, passphrase: java.lang.String = null): EncryptedPrivateKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    __obj.asInstanceOf[EncryptedPrivateKey]
+  }
+}
+

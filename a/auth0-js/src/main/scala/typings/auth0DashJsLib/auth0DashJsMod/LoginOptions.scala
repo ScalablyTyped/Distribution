@@ -11,3 +11,14 @@ trait LoginOptions extends js.Object {
   var username: java.lang.String
 }
 
+object LoginOptions {
+  @scala.inline
+  def apply(password: java.lang.String, username: java.lang.String, scope: java.lang.String = null): LoginOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("username")(username)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[LoginOptions]
+  }
+}
+

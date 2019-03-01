@@ -19,3 +19,34 @@ trait FeaturesLegacy extends js.Object {
   var bStateSave: scala.Boolean
 }
 
+object FeaturesLegacy {
+  @scala.inline
+  def apply(
+    bAutoWidth: scala.Boolean,
+    bDeferRender: scala.Boolean,
+    bFilter: scala.Boolean,
+    bInfo: scala.Boolean,
+    bLengthChange: scala.Boolean,
+    bPaginate: scala.Boolean,
+    bProcessing: scala.Boolean,
+    bServerSide: scala.Boolean,
+    bSort: scala.Boolean,
+    bSortClasses: scala.Boolean,
+    bStateSave: scala.Boolean
+  ): FeaturesLegacy = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bAutoWidth")(bAutoWidth)
+    __obj.updateDynamic("bDeferRender")(bDeferRender)
+    __obj.updateDynamic("bFilter")(bFilter)
+    __obj.updateDynamic("bInfo")(bInfo)
+    __obj.updateDynamic("bLengthChange")(bLengthChange)
+    __obj.updateDynamic("bPaginate")(bPaginate)
+    __obj.updateDynamic("bProcessing")(bProcessing)
+    __obj.updateDynamic("bServerSide")(bServerSide)
+    __obj.updateDynamic("bSort")(bSort)
+    __obj.updateDynamic("bSortClasses")(bSortClasses)
+    __obj.updateDynamic("bStateSave")(bStateSave)
+    __obj.asInstanceOf[FeaturesLegacy]
+  }
+}
+

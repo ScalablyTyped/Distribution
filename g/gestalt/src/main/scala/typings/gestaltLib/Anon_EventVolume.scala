@@ -10,3 +10,16 @@ trait Anon_EventVolume extends js.Object {
   var volume: scala.Double
 }
 
+object Anon_EventVolume {
+  @scala.inline
+  def apply(
+    event: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLDivElement, reactLib.Event],
+    volume: scala.Double
+  ): Anon_EventVolume = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("event")(event)
+    __obj.updateDynamic("volume")(volume)
+    __obj.asInstanceOf[Anon_EventVolume]
+  }
+}
+

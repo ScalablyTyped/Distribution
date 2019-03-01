@@ -23,3 +23,22 @@ trait MouseoverEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MouseoverEventArgs {
+  @scala.inline
+  def apply(
+    URL: java.lang.String = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    text: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): MouseoverEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (URL != null) __obj.updateDynamic("URL")(URL)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[MouseoverEventArgs]
+  }
+}
+

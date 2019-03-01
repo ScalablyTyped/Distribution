@@ -12,3 +12,16 @@ trait StoreSpec extends js.Object {
   ] = js.undefined
 }
 
+object StoreSpec {
+  @scala.inline
+  def apply(
+    actions: js.Any = null,
+    initialize: js.Function2[/* instance */ js.UndefOr[js.Any], /* options */ js.UndefOr[js.Object], scala.Unit] = null
+  ): StoreSpec = {
+    val __obj = js.Dynamic.literal()
+    if (actions != null) __obj.updateDynamic("actions")(actions)
+    if (initialize != null) __obj.updateDynamic("initialize")(initialize)
+    __obj.asInstanceOf[StoreSpec]
+  }
+}
+

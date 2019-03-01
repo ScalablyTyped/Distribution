@@ -11,3 +11,18 @@ trait BlockHash[T] extends js.Object {
   var padLength: scala.Double
 }
 
+object BlockHash {
+  @scala.inline
+  def apply[T](
+    endian: hashDotJsLib.hashDotJsLibStrings.big | hashDotJsLib.hashDotJsLibStrings.little,
+    hmacStrength: scala.Double,
+    padLength: scala.Double
+  ): BlockHash[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endian")(endian.asInstanceOf[js.Any])
+    __obj.updateDynamic("hmacStrength")(hmacStrength)
+    __obj.updateDynamic("padLength")(padLength)
+    __obj.asInstanceOf[BlockHash[T]]
+  }
+}
+

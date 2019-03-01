@@ -11,3 +11,17 @@ trait InsertChange extends js.Object {
   var values: js.Array[java.lang.String]
 }
 
+object InsertChange {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    `type`: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsLibStrings.insert,
+    values: js.Array[java.lang.String]
+  ): InsertChange = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("index")(index)
+    __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[InsertChange]
+  }
+}
+

@@ -16,3 +16,17 @@ trait SearchanalyticsResource extends js.Object {
   def query(request: gapiDotClientDotWebmastersLib.Anon_Alt): gapiDotClientLib.gapiNs.clientNs.Request[SearchAnalyticsQueryResponse]
 }
 
+object SearchanalyticsResource {
+  @scala.inline
+  def apply(
+    query: js.Function1[
+      gapiDotClientDotWebmastersLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SearchAnalyticsQueryResponse]
+    ]
+  ): SearchanalyticsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    __obj.asInstanceOf[SearchanalyticsResource]
+  }
+}
+

@@ -20,3 +20,14 @@ trait ChildType extends js.Object {
   var min: scala.Double
 }
 
+object ChildType {
+  @scala.inline
+  def apply(id: java.lang.String, max: scala.Double, min: scala.Double): ChildType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("max")(max)
+    __obj.updateDynamic("min")(min)
+    __obj.asInstanceOf[ChildType]
+  }
+}
+

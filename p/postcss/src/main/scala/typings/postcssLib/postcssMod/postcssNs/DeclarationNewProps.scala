@@ -20,3 +20,14 @@ trait DeclarationNewProps extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DeclarationNewProps {
+  @scala.inline
+  def apply(prop: java.lang.String = null, raws: DeclarationRaws = null, value: java.lang.String = null): DeclarationNewProps = {
+    val __obj = js.Dynamic.literal()
+    if (prop != null) __obj.updateDynamic("prop")(prop)
+    if (raws != null) __obj.updateDynamic("raws")(raws)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[DeclarationNewProps]
+  }
+}
+

@@ -22,7 +22,7 @@ package object styledDashComponentsMod {
   type CSSProp[T] = java.lang.String | FlattenInterpolation[ThemeProps[T]]
   type FalseyValue = js.UndefOr[scala.Null | styledDashComponentsLib.styledDashComponentsLibNumbers.`false`]
   type GlobalStyleComponent[P, T] = reactLib.reactMod.ReactNs.ComponentClass[ThemedGlobalStyledClassProps[P, T], reactLib.reactMod.ReactNs.ComponentState]
-  type Interpolation[P] = InterpolationValue | FlattenInterpolation[P] | InterpolationFunction[P]
+  type Interpolation[P] = _Interpolation[P] | InterpolationValue
   type InterpolationValue = java.lang.String | scala.Double | FalseyValue | Keyframes | styledDashComponentsLib.StyledComponentInterpolation | CSSObject
   type OmitU[T, K /* <: java.lang.String */] = PickU[T, stdLib.Exclude[java.lang.String, K]]
   type PickU[T, K /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 

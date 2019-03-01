@@ -15,3 +15,22 @@ trait Anon_ArgumentCommentsLocQualifier extends js.Object {
   var typeParameters: js.UndefOr[astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind | scala.Null] = js.undefined
 }
 
+object Anon_ArgumentCommentsLocQualifier {
+  @scala.inline
+  def apply(
+    argument: astDashTypesLib.genKindsMod.StringLiteralKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    qualifier: astDashTypesLib.genKindsMod.IdentifierKind | astDashTypesLib.genKindsMod.TSQualifiedNameKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TSTypeParameterInstantiationKind = null
+  ): Anon_ArgumentCommentsLocQualifier = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("argument")(argument)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (qualifier != null) __obj.updateDynamic("qualifier")(qualifier.asInstanceOf[js.Any])
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[Anon_ArgumentCommentsLocQualifier]
+  }
+}
+

@@ -25,3 +25,20 @@ trait ITimelineMedia extends js.Object {
   var url: java.lang.String
 }
 
+object ITimelineMedia {
+  @scala.inline
+  def apply(
+    url: java.lang.String,
+    caption: java.lang.String = null,
+    credit: java.lang.String = null,
+    thumbnail: java.lang.String = null
+  ): ITimelineMedia = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("url")(url)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (credit != null) __obj.updateDynamic("credit")(credit)
+    if (thumbnail != null) __obj.updateDynamic("thumbnail")(thumbnail)
+    __obj.asInstanceOf[ITimelineMedia]
+  }
+}
+

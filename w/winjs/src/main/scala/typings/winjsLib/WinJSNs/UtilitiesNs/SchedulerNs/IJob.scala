@@ -48,3 +48,28 @@ trait IJob extends js.Object {
   def resume(): scala.Unit
 }
 
+object IJob {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[scala.Unit],
+    completed: scala.Boolean,
+    id: scala.Double,
+    name: java.lang.String,
+    owner: IOwnerToken,
+    pause: js.Function0[scala.Unit],
+    priority: Priority,
+    resume: js.Function0[scala.Unit]
+  ): IJob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("completed")(completed)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("owner")(owner)
+    __obj.updateDynamic("pause")(pause)
+    __obj.updateDynamic("priority")(priority)
+    __obj.updateDynamic("resume")(resume)
+    __obj.asInstanceOf[IJob]
+  }
+}
+

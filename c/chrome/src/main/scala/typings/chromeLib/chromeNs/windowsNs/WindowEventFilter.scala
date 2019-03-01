@@ -13,3 +13,12 @@ trait WindowEventFilter extends js.Object {
   var windowTypes: js.Array[java.lang.String]
 }
 
+object WindowEventFilter {
+  @scala.inline
+  def apply(windowTypes: js.Array[java.lang.String]): WindowEventFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("windowTypes")(windowTypes)
+    __obj.asInstanceOf[WindowEventFilter]
+  }
+}
+

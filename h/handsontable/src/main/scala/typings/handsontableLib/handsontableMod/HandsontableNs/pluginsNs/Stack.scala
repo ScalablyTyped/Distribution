@@ -14,3 +14,24 @@ trait Stack extends js.Object {
   def size(): scala.Double
 }
 
+object Stack {
+  @scala.inline
+  def apply(
+    isEmpty: js.Function0[scala.Boolean],
+    items: js.Array[_],
+    peek: js.Function0[js.Any],
+    pop: js.Function0[js.Any],
+    push: js.Function1[js.Any, scala.Unit],
+    size: js.Function0[scala.Double]
+  ): Stack = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isEmpty")(isEmpty)
+    __obj.updateDynamic("items")(items)
+    __obj.updateDynamic("peek")(peek)
+    __obj.updateDynamic("pop")(pop)
+    __obj.updateDynamic("push")(push)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[Stack]
+  }
+}
+

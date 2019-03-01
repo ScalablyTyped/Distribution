@@ -43,3 +43,26 @@ trait ListOptions extends js.Object {
   var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ListOptions {
+  @scala.inline
+  def apply(
+    C: java.lang.String = null,
+    cwd: java.lang.String = null,
+    filter: js.Function2[/* path */ java.lang.String, /* entry */ FileStat, scala.Boolean] = null,
+    maxReadSize: scala.Int | scala.Double = null,
+    noResume: js.UndefOr[scala.Boolean] = js.undefined,
+    onentry: js.Function1[/* entry */ FileStat, scala.Unit] = null,
+    strict: js.UndefOr[scala.Boolean] = js.undefined
+  ): ListOptions = {
+    val __obj = js.Dynamic.literal()
+    if (C != null) __obj.updateDynamic("C")(C)
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (maxReadSize != null) __obj.updateDynamic("maxReadSize")(maxReadSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(noResume)) __obj.updateDynamic("noResume")(noResume)
+    if (onentry != null) __obj.updateDynamic("onentry")(onentry)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    __obj.asInstanceOf[ListOptions]
+  }
+}
+

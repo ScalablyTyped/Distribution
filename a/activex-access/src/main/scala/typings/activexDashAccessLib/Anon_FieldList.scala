@@ -9,3 +9,12 @@ trait Anon_FieldList extends js.Object {
   val FieldList: scala.Double
 }
 
+object Anon_FieldList {
+  @scala.inline
+  def apply(FieldList: scala.Double): Anon_FieldList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FieldList")(FieldList)
+    __obj.asInstanceOf[Anon_FieldList]
+  }
+}
+

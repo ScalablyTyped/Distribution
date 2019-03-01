@@ -25,3 +25,18 @@ trait Scheduling extends js.Object {
   var preemptible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Scheduling {
+  @scala.inline
+  def apply(
+    automaticRestart: js.UndefOr[scala.Boolean] = js.undefined,
+    onHostMaintenance: java.lang.String = null,
+    preemptible: js.UndefOr[scala.Boolean] = js.undefined
+  ): Scheduling = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(automaticRestart)) __obj.updateDynamic("automaticRestart")(automaticRestart)
+    if (onHostMaintenance != null) __obj.updateDynamic("onHostMaintenance")(onHostMaintenance)
+    if (!js.isUndefined(preemptible)) __obj.updateDynamic("preemptible")(preemptible)
+    __obj.asInstanceOf[Scheduling]
+  }
+}
+

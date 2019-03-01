@@ -17,3 +17,14 @@ trait RowHeaderHyperlinkClickEventArgs extends js.Object {
   var element: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowHeaderHyperlinkClickEventArgs {
+  @scala.inline
+  def apply(args: js.Any = null, customObject: js.Any = null, element: js.Any = null): RowHeaderHyperlinkClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (args != null) __obj.updateDynamic("args")(args)
+    if (customObject != null) __obj.updateDynamic("customObject")(customObject)
+    if (element != null) __obj.updateDynamic("element")(element)
+    __obj.asInstanceOf[RowHeaderHyperlinkClickEventArgs]
+  }
+}
+

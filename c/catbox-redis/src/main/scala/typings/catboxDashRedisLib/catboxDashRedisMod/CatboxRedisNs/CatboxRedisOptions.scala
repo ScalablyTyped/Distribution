@@ -48,3 +48,32 @@ trait CatboxRedisOptions
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CatboxRedisOptions {
+  @scala.inline
+  def apply(
+    partition: java.lang.String,
+    client: ioredisLib.ioredisMod.IORedisNs.Redis = null,
+    database: java.lang.String = null,
+    host: java.lang.String = null,
+    password: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    sentinelName: java.lang.String = null,
+    sentinels: js.Array[catboxDashRedisLib.Anon_Host] = null,
+    socket: java.lang.String = null,
+    url: java.lang.String = null
+  ): CatboxRedisOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("partition")(partition)
+    if (client != null) __obj.updateDynamic("client")(client)
+    if (database != null) __obj.updateDynamic("database")(database)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (sentinelName != null) __obj.updateDynamic("sentinelName")(sentinelName)
+    if (sentinels != null) __obj.updateDynamic("sentinels")(sentinels)
+    if (socket != null) __obj.updateDynamic("socket")(socket)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[CatboxRedisOptions]
+  }
+}
+

@@ -11,3 +11,22 @@ trait SerializerError
   var data: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object SerializerError {
+  @scala.inline
+  def apply(
+    code: scala.Double,
+    message: java.lang.String,
+    name: java.lang.String,
+    data: js.Array[_] = null,
+    stack: java.lang.String = null
+  ): SerializerError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[SerializerError]
+  }
+}
+

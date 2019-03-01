@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BlockMapBuilder ()
   extends draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.BlockMapBuilder
 
+/* static members */
 @JSImport("draft-js", "BlockMapBuilder")
 @js.native
 object BlockMapBuilder extends js.Object {

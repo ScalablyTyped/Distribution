@@ -19,3 +19,20 @@ trait StageSource extends js.Object {
   var userName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StageSource {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    originalTransformOrCollection: java.lang.String = null,
+    sizeBytes: java.lang.String = null,
+    userName: java.lang.String = null
+  ): StageSource = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (originalTransformOrCollection != null) __obj.updateDynamic("originalTransformOrCollection")(originalTransformOrCollection)
+    if (sizeBytes != null) __obj.updateDynamic("sizeBytes")(sizeBytes)
+    if (userName != null) __obj.updateDynamic("userName")(userName)
+    __obj.asInstanceOf[StageSource]
+  }
+}
+

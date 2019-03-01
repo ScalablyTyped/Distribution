@@ -26,3 +26,24 @@ trait GamesNumberAffixConfiguration extends js.Object {
   var zero: js.UndefOr[LocalizedStringBundle] = js.undefined
 }
 
+object GamesNumberAffixConfiguration {
+  @scala.inline
+  def apply(
+    few: LocalizedStringBundle = null,
+    many: LocalizedStringBundle = null,
+    one: LocalizedStringBundle = null,
+    other: LocalizedStringBundle = null,
+    two: LocalizedStringBundle = null,
+    zero: LocalizedStringBundle = null
+  ): GamesNumberAffixConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (few != null) __obj.updateDynamic("few")(few)
+    if (many != null) __obj.updateDynamic("many")(many)
+    if (one != null) __obj.updateDynamic("one")(one)
+    if (other != null) __obj.updateDynamic("other")(other)
+    if (two != null) __obj.updateDynamic("two")(two)
+    if (zero != null) __obj.updateDynamic("zero")(zero)
+    __obj.asInstanceOf[GamesNumberAffixConfiguration]
+  }
+}
+

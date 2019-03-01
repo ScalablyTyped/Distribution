@@ -12,3 +12,20 @@ trait DragZoomOptions extends js.Object {
   var out: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DragZoomOptions {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    condition: openlayersLib.openlayersMod.EventsConditionType = null,
+    duration: scala.Int | scala.Double = null,
+    out: js.UndefOr[scala.Boolean] = js.undefined
+  ): DragZoomOptions = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (!js.isUndefined(out)) __obj.updateDynamic("out")(out)
+    __obj.asInstanceOf[DragZoomOptions]
+  }
+}
+

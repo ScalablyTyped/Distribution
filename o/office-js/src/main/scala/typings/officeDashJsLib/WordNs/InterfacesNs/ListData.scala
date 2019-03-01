@@ -37,3 +37,20 @@ trait ListData extends js.Object {
   var paragraphs: js.UndefOr[js.Array[ParagraphData]] = js.undefined
 }
 
+object ListData {
+  @scala.inline
+  def apply(
+    id: scala.Int | scala.Double = null,
+    levelExistences: js.Array[scala.Boolean] = null,
+    levelTypes: js.Array[officeDashJsLib.WordNs.ListLevelType] = null,
+    paragraphs: js.Array[ParagraphData] = null
+  ): ListData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (levelExistences != null) __obj.updateDynamic("levelExistences")(levelExistences)
+    if (levelTypes != null) __obj.updateDynamic("levelTypes")(levelTypes)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    __obj.asInstanceOf[ListData]
+  }
+}
+

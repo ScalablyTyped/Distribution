@@ -10,3 +10,17 @@ trait ProjectsResource extends js.Object {
   def get(request: gapiDotClientDotDnsLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[Project]
 }
 
+object ProjectsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDnsLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Project]
+    ]
+  ): ProjectsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[ProjectsResource]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_LASTWRITEWIN extends js.Object {
   var MANUAL: chromeDashAppsLib.chromeDashAppsLibStrings.manual
 }
 
+object Anon_LASTWRITEWIN {
+  @scala.inline
+  def apply(
+    LAST_WRITE_WIN: chromeDashAppsLib.chromeDashAppsLibStrings.last_write_win,
+    MANUAL: chromeDashAppsLib.chromeDashAppsLibStrings.manual
+  ): Anon_LASTWRITEWIN = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LAST_WRITE_WIN")(LAST_WRITE_WIN)
+    __obj.updateDynamic("MANUAL")(MANUAL)
+    __obj.asInstanceOf[Anon_LASTWRITEWIN]
+  }
+}
+

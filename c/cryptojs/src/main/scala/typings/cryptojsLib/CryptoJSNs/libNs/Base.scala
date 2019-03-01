@@ -13,3 +13,22 @@ trait Base extends js.Object {
   def mixIn(properties: js.Object): scala.Unit
 }
 
+object Base {
+  @scala.inline
+  def apply(
+    clone: js.Function0[Base],
+    create: js.Function1[/* repeated */ js.Any, Base],
+    extend: js.Function1[js.Object, js.Object],
+    init: js.Function1[/* repeated */ js.Any, scala.Unit],
+    mixIn: js.Function1[js.Object, scala.Unit]
+  ): Base = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("extend")(extend)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("mixIn")(mixIn)
+    __obj.asInstanceOf[Base]
+  }
+}
+

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @js.native
 trait W2Sidebar
   extends W2Common
-     with W2OnClickable {
+     with W2OnClickable
+     with W2Object {
   var bottomHTML: java.lang.String = js.native
   var icon: java.lang.String = js.native
   var img: java.lang.String = js.native

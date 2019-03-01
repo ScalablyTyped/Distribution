@@ -59,3 +59,35 @@ trait GetCertificateAuthorityResult extends js.Object {
   val `type`: java.lang.String
 }
 
+object GetCertificateAuthorityResult {
+  @scala.inline
+  def apply(
+    certificate: java.lang.String,
+    certificateChain: java.lang.String,
+    certificateSigningRequest: java.lang.String,
+    id: java.lang.String,
+    notAfter: java.lang.String,
+    notBefore: java.lang.String,
+    revocationConfigurations: js.Array[
+      atPulumiAwsLib.Anon_CrlConfigurationsAnonCustomCnameEnabledExpirationInDaysS3BucketName
+    ],
+    serial: java.lang.String,
+    status: java.lang.String,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any],
+    `type`: java.lang.String
+  ): GetCertificateAuthorityResult = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("certificate")(certificate)
+    __obj.updateDynamic("certificateChain")(certificateChain)
+    __obj.updateDynamic("certificateSigningRequest")(certificateSigningRequest)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("notAfter")(notAfter)
+    __obj.updateDynamic("notBefore")(notBefore)
+    __obj.updateDynamic("revocationConfigurations")(revocationConfigurations)
+    __obj.updateDynamic("serial")(serial)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("tags")(tags)
+    __obj.asInstanceOf[GetCertificateAuthorityResult]
+  }
+}
+

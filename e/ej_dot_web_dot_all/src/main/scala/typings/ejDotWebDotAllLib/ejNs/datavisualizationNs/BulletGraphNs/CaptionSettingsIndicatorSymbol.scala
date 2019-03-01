@@ -28,3 +28,24 @@ trait CaptionSettingsIndicatorSymbol extends js.Object {
   var size: js.UndefOr[CaptionSettingsIndicatorSymbolSize] = js.undefined
 }
 
+object CaptionSettingsIndicatorSymbol {
+  @scala.inline
+  def apply(
+    border: CaptionSettingsIndicatorSymbolBorder = null,
+    color: java.lang.String = null,
+    imageURL: java.lang.String = null,
+    opacity: scala.Int | scala.Double = null,
+    shape: java.lang.String = null,
+    size: CaptionSettingsIndicatorSymbolSize = null
+  ): CaptionSettingsIndicatorSymbol = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (imageURL != null) __obj.updateDynamic("imageURL")(imageURL)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (shape != null) __obj.updateDynamic("shape")(shape)
+    if (size != null) __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[CaptionSettingsIndicatorSymbol]
+  }
+}
+

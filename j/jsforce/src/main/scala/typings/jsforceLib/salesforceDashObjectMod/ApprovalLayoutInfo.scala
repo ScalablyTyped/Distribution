@@ -9,3 +9,12 @@ trait ApprovalLayoutInfo extends js.Object {
   var approvalLayouts: js.Array[js.Object]
 }
 
+object ApprovalLayoutInfo {
+  @scala.inline
+  def apply(approvalLayouts: js.Array[js.Object]): ApprovalLayoutInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("approvalLayouts")(approvalLayouts)
+    __obj.asInstanceOf[ApprovalLayoutInfo]
+  }
+}
+

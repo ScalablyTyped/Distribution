@@ -17,3 +17,18 @@ trait ComponentTransform extends js.Object {
   var userName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ComponentTransform {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    originalTransform: java.lang.String = null,
+    userName: java.lang.String = null
+  ): ComponentTransform = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (originalTransform != null) __obj.updateDynamic("originalTransform")(originalTransform)
+    if (userName != null) __obj.updateDynamic("userName")(userName)
+    __obj.asInstanceOf[ComponentTransform]
+  }
+}
+

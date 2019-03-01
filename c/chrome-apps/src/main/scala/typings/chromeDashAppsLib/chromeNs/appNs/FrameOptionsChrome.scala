@@ -32,3 +32,19 @@ trait FrameOptionsChrome extends js.Object {
   var `type`: chromeDashAppsLib.chromeDashAppsLibStrings.chrome
 }
 
+object FrameOptionsChrome {
+  @scala.inline
+  def apply(
+    `type`: chromeDashAppsLib.chromeDashAppsLibStrings.chrome,
+    activeColor: java.lang.String = null,
+    color: java.lang.String = null,
+    inactiveColor: java.lang.String = null
+  ): FrameOptionsChrome = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (activeColor != null) __obj.updateDynamic("activeColor")(activeColor)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (inactiveColor != null) __obj.updateDynamic("inactiveColor")(inactiveColor)
+    __obj.asInstanceOf[FrameOptionsChrome]
+  }
+}
+

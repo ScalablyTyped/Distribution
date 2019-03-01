@@ -31,3 +31,22 @@ trait ASPxClientAxisLabelItem extends ASPxClientWebChartElement {
   var text: java.lang.String
 }
 
+object ASPxClientAxisLabelItem {
+  @scala.inline
+  def apply(
+    axis: ASPxClientAxisBase,
+    axisValue: js.Object,
+    axisValueInternal: scala.Double,
+    chart: ASPxClientWebChart,
+    text: java.lang.String
+  ): ASPxClientAxisLabelItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axis")(axis)
+    __obj.updateDynamic("axisValue")(axisValue)
+    __obj.updateDynamic("axisValueInternal")(axisValueInternal)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ASPxClientAxisLabelItem]
+  }
+}
+

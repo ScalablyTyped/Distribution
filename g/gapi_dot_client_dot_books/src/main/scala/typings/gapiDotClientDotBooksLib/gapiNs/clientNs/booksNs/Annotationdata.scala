@@ -25,3 +25,30 @@ trait Annotationdata extends js.Object {
   var volumeId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Annotationdata {
+  @scala.inline
+  def apply(
+    annotationType: java.lang.String = null,
+    data: js.Any = null,
+    encoded_data: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    layerId: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    updated: java.lang.String = null,
+    volumeId: java.lang.String = null
+  ): Annotationdata = {
+    val __obj = js.Dynamic.literal()
+    if (annotationType != null) __obj.updateDynamic("annotationType")(annotationType)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (encoded_data != null) __obj.updateDynamic("encoded_data")(encoded_data)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (layerId != null) __obj.updateDynamic("layerId")(layerId)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (updated != null) __obj.updateDynamic("updated")(updated)
+    if (volumeId != null) __obj.updateDynamic("volumeId")(volumeId)
+    __obj.asInstanceOf[Annotationdata]
+  }
+}
+

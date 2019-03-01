@@ -12,3 +12,13 @@ trait NameAndKind extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NameAndKind {
+  @scala.inline
+  def apply(kind: java.lang.String = null, name: java.lang.String = null): NameAndKind = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[NameAndKind]
+  }
+}
+

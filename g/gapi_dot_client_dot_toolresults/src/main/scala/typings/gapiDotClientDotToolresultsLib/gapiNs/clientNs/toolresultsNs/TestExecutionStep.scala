@@ -40,3 +40,20 @@ trait TestExecutionStep extends js.Object {
   var toolExecution: js.UndefOr[ToolExecution] = js.undefined
 }
 
+object TestExecutionStep {
+  @scala.inline
+  def apply(
+    testIssues: js.Array[TestIssue] = null,
+    testSuiteOverviews: js.Array[TestSuiteOverview] = null,
+    testTiming: TestTiming = null,
+    toolExecution: ToolExecution = null
+  ): TestExecutionStep = {
+    val __obj = js.Dynamic.literal()
+    if (testIssues != null) __obj.updateDynamic("testIssues")(testIssues)
+    if (testSuiteOverviews != null) __obj.updateDynamic("testSuiteOverviews")(testSuiteOverviews)
+    if (testTiming != null) __obj.updateDynamic("testTiming")(testTiming)
+    if (toolExecution != null) __obj.updateDynamic("toolExecution")(toolExecution)
+    __obj.asInstanceOf[TestExecutionStep]
+  }
+}
+

@@ -15,3 +15,26 @@ trait Options extends js.Object {
   var suppressComponentDidCatchWarning: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    React: singleDashSpaDashReactLib.Anon_A,
+    ReactDOM: singleDashSpaDashReactLib.Anon_AB,
+    domElementGetter: js.Function0[reactLib.Element] = null,
+    loadRootComponent: js.Function0[js.Promise[reactLib.reactMod.ReactNs.ComponentClass[_, _]]] = null,
+    parcelCanUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    rootComponent: reactLib.reactMod.ReactNs.ComponentClass[_, _] = null,
+    suppressComponentDidCatchWarning: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("React")(React)
+    __obj.updateDynamic("ReactDOM")(ReactDOM)
+    if (domElementGetter != null) __obj.updateDynamic("domElementGetter")(domElementGetter)
+    if (loadRootComponent != null) __obj.updateDynamic("loadRootComponent")(loadRootComponent)
+    if (!js.isUndefined(parcelCanUpdate)) __obj.updateDynamic("parcelCanUpdate")(parcelCanUpdate)
+    if (rootComponent != null) __obj.updateDynamic("rootComponent")(rootComponent)
+    if (!js.isUndefined(suppressComponentDidCatchWarning)) __obj.updateDynamic("suppressComponentDidCatchWarning")(suppressComponentDidCatchWarning)
+    __obj.asInstanceOf[Options]
+  }
+}
+

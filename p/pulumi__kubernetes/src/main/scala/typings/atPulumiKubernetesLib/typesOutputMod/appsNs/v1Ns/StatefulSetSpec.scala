@@ -65,3 +65,28 @@ trait StatefulSetSpec extends js.Object {
   val volumeClaimTemplates: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PersistentVolumeClaim]
 }
 
+object StatefulSetSpec {
+  @scala.inline
+  def apply(
+    podManagementPolicy: java.lang.String,
+    replicas: scala.Double,
+    revisionHistoryLimit: scala.Double,
+    selector: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.LabelSelector,
+    serviceName: java.lang.String,
+    template: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PodTemplateSpec,
+    updateStrategy: StatefulSetUpdateStrategy,
+    volumeClaimTemplates: js.Array[atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.PersistentVolumeClaim]
+  ): StatefulSetSpec = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("podManagementPolicy")(podManagementPolicy)
+    __obj.updateDynamic("replicas")(replicas)
+    __obj.updateDynamic("revisionHistoryLimit")(revisionHistoryLimit)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("serviceName")(serviceName)
+    __obj.updateDynamic("template")(template)
+    __obj.updateDynamic("updateStrategy")(updateStrategy)
+    __obj.updateDynamic("volumeClaimTemplates")(volumeClaimTemplates)
+    __obj.asInstanceOf[StatefulSetSpec]
+  }
+}
+

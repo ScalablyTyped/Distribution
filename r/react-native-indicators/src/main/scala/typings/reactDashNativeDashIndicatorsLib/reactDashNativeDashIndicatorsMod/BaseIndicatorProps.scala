@@ -18,3 +18,16 @@ trait BaseIndicatorProps extends js.Object {
   var animationEasing: js.UndefOr[reactDashNativeLib.reactDashNativeMod.EasingFunction] = js.undefined
 }
 
+object BaseIndicatorProps {
+  @scala.inline
+  def apply(
+    animationDuration: scala.Int | scala.Double = null,
+    animationEasing: reactDashNativeLib.reactDashNativeMod.EasingFunction = null
+  ): BaseIndicatorProps = {
+    val __obj = js.Dynamic.literal()
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    __obj.asInstanceOf[BaseIndicatorProps]
+  }
+}
+

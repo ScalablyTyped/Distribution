@@ -41,3 +41,34 @@ trait KeyPressEventArgs extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeyPressEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentElement: js.Any = null,
+    event: js.Any = null,
+    id: java.lang.String = null,
+    isExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    keyCode: scala.Int | scala.Double = null,
+    model: Model = null,
+    parentId: java.lang.String = null,
+    path: java.lang.String = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): KeyPressEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isExpanded)) __obj.updateDynamic("isExpanded")(isExpanded)
+    if (keyCode != null) __obj.updateDynamic("keyCode")(keyCode.asInstanceOf[js.Any])
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (parentId != null) __obj.updateDynamic("parentId")(parentId)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[KeyPressEventArgs]
+  }
+}
+

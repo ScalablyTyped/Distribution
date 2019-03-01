@@ -26,3 +26,37 @@ trait ManagedconfigurationsforuserResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
 }
 
+object ManagedconfigurationsforuserResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfigurationsForUserListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltEnterpriseIdFieldsKeyManagedConfigurationForUserId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ManagedConfiguration]
+    ]
+  ): ManagedconfigurationsforuserResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ManagedconfigurationsforuserResource]
+  }
+}
+

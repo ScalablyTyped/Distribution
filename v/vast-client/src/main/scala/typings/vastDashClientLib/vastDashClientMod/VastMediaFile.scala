@@ -21,3 +21,38 @@ trait VastMediaFile extends js.Object {
   var width: scala.Double
 }
 
+object VastMediaFile {
+  @scala.inline
+  def apply(
+    bitrate: scala.Double,
+    deliveryType: java.lang.String,
+    height: scala.Double,
+    maxBitrate: scala.Double,
+    minBitrate: scala.Double,
+    width: scala.Double,
+    apiFramework: java.lang.String = null,
+    codec: java.lang.String = null,
+    fileURL: java.lang.String = null,
+    id: java.lang.String = null,
+    maintainAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
+    mimeType: java.lang.String = null,
+    scalable: js.UndefOr[scala.Boolean] = js.undefined
+  ): VastMediaFile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bitrate")(bitrate)
+    __obj.updateDynamic("deliveryType")(deliveryType)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("maxBitrate")(maxBitrate)
+    __obj.updateDynamic("minBitrate")(minBitrate)
+    __obj.updateDynamic("width")(width)
+    if (apiFramework != null) __obj.updateDynamic("apiFramework")(apiFramework)
+    if (codec != null) __obj.updateDynamic("codec")(codec)
+    if (fileURL != null) __obj.updateDynamic("fileURL")(fileURL)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(maintainAspectRatio)) __obj.updateDynamic("maintainAspectRatio")(maintainAspectRatio)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (!js.isUndefined(scalable)) __obj.updateDynamic("scalable")(scalable)
+    __obj.asInstanceOf[VastMediaFile]
+  }
+}
+

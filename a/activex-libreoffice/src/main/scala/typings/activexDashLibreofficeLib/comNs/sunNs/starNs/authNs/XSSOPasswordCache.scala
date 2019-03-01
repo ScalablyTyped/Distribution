@@ -38,3 +38,24 @@ trait XSSOPasswordCache
   def removePassword(UserName: java.lang.String, RemovePersist: scala.Boolean): scala.Unit
 }
 
+object XSSOPasswordCache {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addPassword: js.Function3[java.lang.String, java.lang.String, scala.Boolean, scala.Unit],
+    getPassword: js.Function2[java.lang.String, js.Array[scala.Boolean], java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removePassword: js.Function2[java.lang.String, scala.Boolean, scala.Unit]
+  ): XSSOPasswordCache = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addPassword")(addPassword)
+    __obj.updateDynamic("getPassword")(getPassword)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removePassword")(removePassword)
+    __obj.asInstanceOf[XSSOPasswordCache]
+  }
+}
+

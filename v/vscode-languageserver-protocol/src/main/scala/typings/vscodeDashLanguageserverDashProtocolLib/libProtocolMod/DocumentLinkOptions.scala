@@ -12,3 +12,12 @@ trait DocumentLinkOptions extends js.Object {
   var resolveProvider: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DocumentLinkOptions {
+  @scala.inline
+  def apply(resolveProvider: js.UndefOr[scala.Boolean] = js.undefined): DocumentLinkOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(resolveProvider)) __obj.updateDynamic("resolveProvider")(resolveProvider)
+    __obj.asInstanceOf[DocumentLinkOptions]
+  }
+}
+

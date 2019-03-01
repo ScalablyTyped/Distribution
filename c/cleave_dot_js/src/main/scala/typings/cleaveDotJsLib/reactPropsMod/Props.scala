@@ -14,3 +14,22 @@ trait Props
   var options: cleaveDotJsLib.optionsMod.CleaveOptions
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    options: cleaveDotJsLib.optionsMod.CleaveOptions,
+    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] = null,
+    htmlRef: js.Function1[/* i */ js.Any, scala.Unit] = null,
+    onChange: ChangeEventHandler[reactLib.HTMLInputElement] = null,
+    onInit: InitHandler = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("options")(options)
+    js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
+    if (htmlRef != null) __obj.updateDynamic("htmlRef")(htmlRef)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onInit != null) __obj.updateDynamic("onInit")(onInit)
+    __obj.asInstanceOf[Props]
+  }
+}
+

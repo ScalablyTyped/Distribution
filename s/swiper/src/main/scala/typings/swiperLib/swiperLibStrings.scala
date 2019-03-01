@@ -13,22 +13,27 @@ object swiperLibStrings {
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait autoplay extends js.Object
+  sealed trait autoplay
+    extends swiperLib.swiperMod.AutoplayEvent
   
   @js.native
-  sealed trait autoplayStart extends js.Object
+  sealed trait autoplayStart
+    extends swiperLib.swiperMod.AutoplayEvent
   
   @js.native
-  sealed trait autoplayStop extends js.Object
+  sealed trait autoplayStop
+    extends swiperLib.swiperMod.AutoplayEvent
   
   @js.native
-  sealed trait beforeDestroy extends js.Object
+  sealed trait beforeDestroy
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
   sealed trait bullets extends js.Object
   
   @js.native
-  sealed trait click extends js.Object
+  sealed trait click
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
   sealed trait column extends js.Object
@@ -46,7 +51,8 @@ object swiperLibStrings {
   sealed trait custom extends js.Object
   
   @js.native
-  sealed trait doubleTap extends js.Object
+  sealed trait doubleTap
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
   sealed trait fade extends js.Object
@@ -58,100 +64,128 @@ object swiperLibStrings {
   sealed trait fraction extends js.Object
   
   @js.native
-  sealed trait fromEdge extends js.Object
+  sealed trait fromEdge
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
   sealed trait horizontal extends js.Object
   
   @js.native
-  sealed trait imagesReady extends js.Object
+  sealed trait imagesReady
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait init extends js.Object
+  sealed trait init
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait lazyImageLoad extends js.Object
+  sealed trait lazyImageLoad
+    extends swiperLib.swiperMod.LazyLoadingEvent
   
   @js.native
-  sealed trait lazyImageReady extends js.Object
+  sealed trait lazyImageReady
+    extends swiperLib.swiperMod.LazyLoadingEvent
   
   @js.native
-  sealed trait paginationRender extends js.Object
+  sealed trait paginationRender
+    extends swiperLib.swiperMod.PaginationEvent
   
   @js.native
-  sealed trait paginationUpdate extends js.Object
+  sealed trait paginationUpdate
+    extends swiperLib.swiperMod.PaginationEvent
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
   sealed trait progressbar extends js.Object
   
   @js.native
-  sealed trait reachBeginning extends js.Object
+  sealed trait reachBeginning
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait reachEnd extends js.Object
+  sealed trait reachEnd
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait resize extends js.Object
+  sealed trait resize
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
   sealed trait row extends js.Object
   
   @js.native
-  sealed trait setTransition extends js.Object
+  sealed trait setTransition
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait setTranslate extends js.Object
+  sealed trait setTranslate
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
   sealed trait slide extends js.Object
   
   @js.native
-  sealed trait slideChange extends js.Object
+  sealed trait slideChange
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait slideChangeTransitionEnd extends js.Object
+  sealed trait slideChangeTransitionEnd
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait slideChangeTransitionStart extends js.Object
+  sealed trait slideChangeTransitionStart
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait slideNextTransitionEnd extends js.Object
+  sealed trait slideNextTransitionEnd
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait slideNextTransitionStart extends js.Object
+  sealed trait slideNextTransitionStart
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait slidePrevTransitionEnd extends js.Object
+  sealed trait slidePrevTransitionEnd
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait slidePrevTransitionStart extends js.Object
+  sealed trait slidePrevTransitionStart
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait sliderMove extends js.Object
+  sealed trait sliderMove
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait tap extends js.Object
+  sealed trait tap
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait touchEnd extends js.Object
+  sealed trait touchEnd
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait touchMove extends js.Object
+  sealed trait touchMove
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait touchMoveOpposite extends js.Object
+  sealed trait touchMoveOpposite
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait touchStart extends js.Object
+  sealed trait touchStart
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait transitionEnd extends js.Object
+  sealed trait transitionEnd
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
-  sealed trait transitionStart extends js.Object
+  sealed trait transitionStart
+    extends swiperLib.swiperMod.CommonEvent
   
   @js.native
   sealed trait vertical extends js.Object

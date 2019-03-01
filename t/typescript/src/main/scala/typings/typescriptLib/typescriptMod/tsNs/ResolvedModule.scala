@@ -19,3 +19,16 @@ trait ResolvedModule extends js.Object {
   var resolvedFileName: java.lang.String
 }
 
+object ResolvedModule {
+  @scala.inline
+  def apply(
+    resolvedFileName: java.lang.String,
+    isExternalLibraryImport: js.UndefOr[scala.Boolean] = js.undefined
+  ): ResolvedModule = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resolvedFileName")(resolvedFileName)
+    if (!js.isUndefined(isExternalLibraryImport)) __obj.updateDynamic("isExternalLibraryImport")(isExternalLibraryImport)
+    __obj.asInstanceOf[ResolvedModule]
+  }
+}
+

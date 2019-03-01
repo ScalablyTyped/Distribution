@@ -14,3 +14,18 @@ trait QueryParameterValue extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object QueryParameterValue {
+  @scala.inline
+  def apply(
+    arrayValues: js.Array[QueryParameterValue] = null,
+    structValues: stdLib.Record[java.lang.String, QueryParameterValue] = null,
+    value: java.lang.String = null
+  ): QueryParameterValue = {
+    val __obj = js.Dynamic.literal()
+    if (arrayValues != null) __obj.updateDynamic("arrayValues")(arrayValues)
+    if (structValues != null) __obj.updateDynamic("structValues")(structValues)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[QueryParameterValue]
+  }
+}
+

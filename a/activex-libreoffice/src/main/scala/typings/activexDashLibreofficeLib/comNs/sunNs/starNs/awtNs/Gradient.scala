@@ -35,3 +35,32 @@ trait Gradient extends js.Object {
   var YOffset: scala.Double
 }
 
+object Gradient {
+  @scala.inline
+  def apply(
+    Angle: scala.Double,
+    Border: scala.Double,
+    EndColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    EndIntensity: scala.Double,
+    StartColor: activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.Color,
+    StartIntensity: scala.Double,
+    StepCount: scala.Double,
+    Style: GradientStyle,
+    XOffset: scala.Double,
+    YOffset: scala.Double
+  ): Gradient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Angle")(Angle)
+    __obj.updateDynamic("Border")(Border)
+    __obj.updateDynamic("EndColor")(EndColor)
+    __obj.updateDynamic("EndIntensity")(EndIntensity)
+    __obj.updateDynamic("StartColor")(StartColor)
+    __obj.updateDynamic("StartIntensity")(StartIntensity)
+    __obj.updateDynamic("StepCount")(StepCount)
+    __obj.updateDynamic("Style")(Style)
+    __obj.updateDynamic("XOffset")(XOffset)
+    __obj.updateDynamic("YOffset")(YOffset)
+    __obj.asInstanceOf[Gradient]
+  }
+}
+

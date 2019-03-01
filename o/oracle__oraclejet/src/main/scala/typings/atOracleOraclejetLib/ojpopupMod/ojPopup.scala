@@ -14,25 +14,25 @@ trait ojPopup
   var modality: atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless | atOracleOraclejetLib.atOracleOraclejetLibStrings.modal = js.native
   var onAutoDismissChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['autoDismiss'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.focusLoss
     ], 
     _
   ]) | scala.Null = js.native
   var onChromeChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['chrome'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.default | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
     ], 
     _
   ]) | scala.Null = js.native
   var onInitialFocusChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['initialFocus'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.firstFocusable | atOracleOraclejetLib.atOracleOraclejetLibStrings.popup
     ], 
     _
   ]) | scala.Null = js.native
   var onModalityChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['modality'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless | atOracleOraclejetLib.atOracleOraclejetLibStrings.modal
     ], 
     _
   ]) | scala.Null = js.native
@@ -44,14 +44,12 @@ trait ojPopup
   var onOjFocus: (js.Function1[/* event */ atOracleOraclejetLib.ojpopupMod.ojPopupNs.ojFocus, _]) | scala.Null = js.native
   var onOjOpen: (js.Function1[/* event */ atOracleOraclejetLib.ojpopupMod.ojPopupNs.ojOpen, _]) | scala.Null = js.native
   var onPositionChanged: (js.Function1[
-    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['position'] */ js.Any
-    ], 
+    /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojpopupMod.ojPopupNs.Position], 
     _
   ]) | scala.Null = js.native
   var onTailChanged: (js.Function1[
     /* event */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-      /* import warning: ImportType.apply Failed type conversion: this['tail'] */ js.Any
+      atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.simple
     ], 
     _
   ]) | scala.Null = js.native
@@ -64,7 +62,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['autoDismiss'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.focusLoss
       ], 
       _
     ]
@@ -74,7 +72,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['autoDismiss'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.focusLoss
       ], 
       _
     ],
@@ -85,7 +83,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['chrome'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.default | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ]
@@ -95,7 +93,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['chrome'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.default | atOracleOraclejetLib.atOracleOraclejetLibStrings.none
       ], 
       _
     ],
@@ -106,7 +104,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['initialFocus'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.firstFocusable | atOracleOraclejetLib.atOracleOraclejetLibStrings.popup
       ], 
       _
     ]
@@ -116,7 +114,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['initialFocus'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.auto | atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.firstFocusable | atOracleOraclejetLib.atOracleOraclejetLibStrings.popup
       ], 
       _
     ],
@@ -127,7 +125,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['modality'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless | atOracleOraclejetLib.atOracleOraclejetLibStrings.modal
       ], 
       _
     ]
@@ -137,28 +135,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['modality'] */ js.Any
-      ], 
-      _
-    ],
-    useCapture: scala.Boolean
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['position'] */ js.Any
-      ], 
-      _
-    ]
-  ): scala.Unit = js.native
-  def addEventListener(
-    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
-    listener: js.ThisFunction1[
-      /* this */ stdLib.HTMLElement, 
-      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['position'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.modeless | atOracleOraclejetLib.atOracleOraclejetLibStrings.modal
       ], 
       _
     ],
@@ -169,7 +146,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['tail'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.simple
       ], 
       _
     ]
@@ -179,7 +156,7 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[
-        /* import warning: ImportType.apply Failed type conversion: this['tail'] */ js.Any
+        atOracleOraclejetLib.atOracleOraclejetLibStrings.none | atOracleOraclejetLib.atOracleOraclejetLibStrings.simple
       ], 
       _
     ],
@@ -314,6 +291,25 @@ trait ojPopup
     listener: js.ThisFunction1[
       /* this */ stdLib.HTMLElement, 
       /* ev */ atOracleOraclejetLib.ojpopupMod.ojPopupNs.ojOpen, 
+      _
+    ],
+    useCapture: scala.Boolean
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_positionChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojpopupMod.ojPopupNs.Position], 
+      _
+    ]
+  ): scala.Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_positionChanged(
+    `type`: atOracleOraclejetLib.atOracleOraclejetLibStrings.positionChanged,
+    listener: js.ThisFunction1[
+      /* this */ stdLib.HTMLElement, 
+      /* ev */ atOracleOraclejetLib.atOracleOraclejetMod.JetElementCustomEvent[atOracleOraclejetLib.ojpopupMod.ojPopupNs.Position], 
       _
     ],
     useCapture: scala.Boolean

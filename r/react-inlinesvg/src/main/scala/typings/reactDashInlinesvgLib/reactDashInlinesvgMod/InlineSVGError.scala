@@ -14,3 +14,24 @@ trait InlineSVGError
   var name_InlineSVGError: reactDashInlinesvgLib.reactDashInlinesvgLibStrings.InlineSVGError
 }
 
+object InlineSVGError {
+  @scala.inline
+  def apply(
+    isConfigurationError: scala.Boolean,
+    isSupportedBrowser: scala.Boolean,
+    isUnsupportedBrowserError: scala.Boolean,
+    message: java.lang.String,
+    name: reactDashInlinesvgLib.reactDashInlinesvgLibStrings.InlineSVGError,
+    stack: java.lang.String = null
+  ): InlineSVGError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isConfigurationError")(isConfigurationError)
+    __obj.updateDynamic("isSupportedBrowser")(isSupportedBrowser)
+    __obj.updateDynamic("isUnsupportedBrowserError")(isUnsupportedBrowserError)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("name")(name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[InlineSVGError]
+  }
+}
+

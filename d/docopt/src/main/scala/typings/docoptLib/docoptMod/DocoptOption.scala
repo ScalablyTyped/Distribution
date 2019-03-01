@@ -18,3 +18,22 @@ trait DocoptOption extends js.Object {
   var version: js.UndefOr[js.Any] = js.undefined
 }
 
+object DocoptOption {
+  @scala.inline
+  def apply(
+    argv: js.Array[java.lang.String] = null,
+    exit: js.UndefOr[scala.Boolean] = js.undefined,
+    help: js.UndefOr[scala.Boolean] = js.undefined,
+    options_first: js.UndefOr[scala.Boolean] = js.undefined,
+    version: js.Any = null
+  ): DocoptOption = {
+    val __obj = js.Dynamic.literal()
+    if (argv != null) __obj.updateDynamic("argv")(argv)
+    if (!js.isUndefined(exit)) __obj.updateDynamic("exit")(exit)
+    if (!js.isUndefined(help)) __obj.updateDynamic("help")(help)
+    if (!js.isUndefined(options_first)) __obj.updateDynamic("options_first")(options_first)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[DocoptOption]
+  }
+}
+

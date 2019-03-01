@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-
 trait DraftEditorProps extends js.Object {
   var ariaActiveDescendantID: js.UndefOr[java.lang.String] = js.undefined
   var ariaAutoComplete: js.UndefOr[java.lang.String] = js.undefined
@@ -103,10 +102,9 @@ trait DraftEditorProps extends js.Object {
     ]
   ] = js.undefined
   /**
-                   * Cancelable event handlers, handled from the top level down. A handler
-                   * that returns `handled` will be the last handler to execute for that event.
-                   */
-  
+    * Cancelable event handlers, handled from the top level down. A handler
+    * that returns `handled` will be the last handler to execute for that event.
+    */
   // Useful for managing special behavior for pressing the `Return` key. E.g.
   // removing the style from an empty list item.
   var handleReturn: js.UndefOr[
@@ -125,8 +123,8 @@ trait DraftEditorProps extends js.Object {
   var onBlur: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticEvent, scala.Unit]] = js.undefined
   var onDownArrow: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
   /**
-                   * Non-cancelable event triggers.
-                   */
+    * Non-cancelable event triggers.
+    */
   var onEscape: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticEvent, scala.Unit]] = js.undefined
   var onLeftArrow: js.UndefOr[js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit]] = js.undefined
@@ -151,5 +149,135 @@ trait DraftEditorProps extends js.Object {
   var textAlignment: js.UndefOr[DraftTextAlignment] = js.undefined
   var webDriverTestID: js.UndefOr[java.lang.String] = js.undefined
   def onChange(editorState: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState): scala.Unit
+}
+
+object DraftEditorProps {
+  @scala.inline
+  def apply(
+    editorState: draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState,
+    onChange: js.Function1[
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, 
+      scala.Unit
+    ],
+    ariaActiveDescendantID: java.lang.String = null,
+    ariaAutoComplete: java.lang.String = null,
+    ariaControls: java.lang.String = null,
+    ariaDescribedBy: java.lang.String = null,
+    ariaExpanded: js.UndefOr[scala.Boolean] = js.undefined,
+    ariaLabel: java.lang.String = null,
+    ariaMultiline: js.UndefOr[scala.Boolean] = js.undefined,
+    autoCapitalize: java.lang.String = null,
+    autoComplete: java.lang.String = null,
+    autoCorrect: java.lang.String = null,
+    blockRenderMap: DraftBlockRenderMap = null,
+    blockRendererFn: js.Function1[
+      /* block */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock, 
+      _
+    ] = null,
+    blockStyleFn: js.Function1[
+      /* block */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.ContentBlock, 
+      java.lang.String
+    ] = null,
+    customStyleFn: js.Function1[
+      /* style */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.DraftInlineStyle, 
+      js.Object
+    ] = null,
+    customStyleMap: js.Any = null,
+    handleBeforeInput: js.Function2[
+      /* chars */ java.lang.String, 
+      /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, 
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
+    ] = null,
+    handleDrop: js.Function3[
+      /* selection */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState, 
+      /* dataTransfer */ js.Object, 
+      /* isInternal */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftDragType, 
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
+    ] = null,
+    handleDroppedFiles: js.Function2[
+      /* selection */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.SelectionState, 
+      /* files */ js.Array[stdLib.Blob], 
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
+    ] = null,
+    handleKeyCommand: js.Function2[
+      /* command */ EditorCommand, 
+      /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, 
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
+    ] = null,
+    handlePastedFiles: js.Function1[
+      /* files */ js.Array[stdLib.Blob], 
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
+    ] = null,
+    handlePastedText: js.Function3[
+      /* text */ java.lang.String, 
+      /* html */ js.UndefOr[java.lang.String], 
+      /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, 
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
+    ] = null,
+    handleReturn: js.Function2[
+      /* e */ draftDashJsLib.SyntheticKeyboardEvent, 
+      /* editorState */ draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ImmutableDataNs.EditorState, 
+      draftDashJsLib.draftDashJsMod.DraftNs.ModelNs.ConstantsNs.DraftHandleValue
+    ] = null,
+    keyBindingFn: js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, EditorCommand | scala.Null] = null,
+    onBlur: js.Function1[/* e */ draftDashJsLib.SyntheticEvent, scala.Unit] = null,
+    onDownArrow: js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit] = null,
+    onEscape: js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit] = null,
+    onFocus: js.Function1[/* e */ draftDashJsLib.SyntheticEvent, scala.Unit] = null,
+    onLeftArrow: js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit] = null,
+    onRightArrow: js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit] = null,
+    onTab: js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit] = null,
+    onUpArrow: js.Function1[/* e */ draftDashJsLib.SyntheticKeyboardEvent, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    spellCheck: js.UndefOr[scala.Boolean] = js.undefined,
+    stripPastedStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    tabIndex: scala.Int | scala.Double = null,
+    textAlignment: DraftTextAlignment = null,
+    webDriverTestID: java.lang.String = null
+  ): DraftEditorProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("editorState")(editorState)
+    __obj.updateDynamic("onChange")(onChange)
+    if (ariaActiveDescendantID != null) __obj.updateDynamic("ariaActiveDescendantID")(ariaActiveDescendantID)
+    if (ariaAutoComplete != null) __obj.updateDynamic("ariaAutoComplete")(ariaAutoComplete)
+    if (ariaControls != null) __obj.updateDynamic("ariaControls")(ariaControls)
+    if (ariaDescribedBy != null) __obj.updateDynamic("ariaDescribedBy")(ariaDescribedBy)
+    if (!js.isUndefined(ariaExpanded)) __obj.updateDynamic("ariaExpanded")(ariaExpanded)
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    if (!js.isUndefined(ariaMultiline)) __obj.updateDynamic("ariaMultiline")(ariaMultiline)
+    if (autoCapitalize != null) __obj.updateDynamic("autoCapitalize")(autoCapitalize)
+    if (autoComplete != null) __obj.updateDynamic("autoComplete")(autoComplete)
+    if (autoCorrect != null) __obj.updateDynamic("autoCorrect")(autoCorrect)
+    if (blockRenderMap != null) __obj.updateDynamic("blockRenderMap")(blockRenderMap)
+    if (blockRendererFn != null) __obj.updateDynamic("blockRendererFn")(blockRendererFn)
+    if (blockStyleFn != null) __obj.updateDynamic("blockStyleFn")(blockStyleFn)
+    if (customStyleFn != null) __obj.updateDynamic("customStyleFn")(customStyleFn)
+    if (customStyleMap != null) __obj.updateDynamic("customStyleMap")(customStyleMap)
+    if (handleBeforeInput != null) __obj.updateDynamic("handleBeforeInput")(handleBeforeInput)
+    if (handleDrop != null) __obj.updateDynamic("handleDrop")(handleDrop)
+    if (handleDroppedFiles != null) __obj.updateDynamic("handleDroppedFiles")(handleDroppedFiles)
+    if (handleKeyCommand != null) __obj.updateDynamic("handleKeyCommand")(handleKeyCommand)
+    if (handlePastedFiles != null) __obj.updateDynamic("handlePastedFiles")(handlePastedFiles)
+    if (handlePastedText != null) __obj.updateDynamic("handlePastedText")(handlePastedText)
+    if (handleReturn != null) __obj.updateDynamic("handleReturn")(handleReturn)
+    if (keyBindingFn != null) __obj.updateDynamic("keyBindingFn")(keyBindingFn)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    if (onDownArrow != null) __obj.updateDynamic("onDownArrow")(onDownArrow)
+    if (onEscape != null) __obj.updateDynamic("onEscape")(onEscape)
+    if (onFocus != null) __obj.updateDynamic("onFocus")(onFocus)
+    if (onLeftArrow != null) __obj.updateDynamic("onLeftArrow")(onLeftArrow)
+    if (onRightArrow != null) __obj.updateDynamic("onRightArrow")(onRightArrow)
+    if (onTab != null) __obj.updateDynamic("onTab")(onTab)
+    if (onUpArrow != null) __obj.updateDynamic("onUpArrow")(onUpArrow)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(spellCheck)) __obj.updateDynamic("spellCheck")(spellCheck)
+    if (!js.isUndefined(stripPastedStyles)) __obj.updateDynamic("stripPastedStyles")(stripPastedStyles)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (textAlignment != null) __obj.updateDynamic("textAlignment")(textAlignment)
+    if (webDriverTestID != null) __obj.updateDynamic("webDriverTestID")(webDriverTestID)
+    __obj.asInstanceOf[DraftEditorProps]
+  }
 }
 

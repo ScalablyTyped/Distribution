@@ -47,7 +47,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick
   */
-trait SeriesCandlestick extends js.Object {
+trait SeriesCandlestick extends Series {
   /**
     * Delay before updating the first animation, which supports callback
     * function for different data to have different animation effect.
@@ -471,5 +471,82 @@ trait SeriesCandlestick extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-candlestick.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesCandlestick {
+  @scala.inline
+  def apply(
+    animationDelay: js.Function | scala.Double = null,
+    animationDuration: js.Function | scala.Double = null,
+    animationEasing: java.lang.String = null,
+    barMaxWidth: scala.Int | scala.Double = null,
+    barMinWidth: scala.Int | scala.Double = null,
+    barWidth: scala.Int | scala.Double = null,
+    coordinateSystem: java.lang.String = null,
+    data: js.Array[
+      js.Array[
+        scala.Double | echartsLib.echartsNs.EChartOptionNs.SeriesCandlestickNs.DataObject
+      ]
+    ] = null,
+    dimensions: js.Array[_] = null,
+    emphasis: echartsLib.Anon_ItemStyleAnonBorderColorBorderColor0BorderWidth = null,
+    encode: js.Object = null,
+    hoverAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderColor0 = null,
+    large: js.UndefOr[scala.Boolean] = js.undefined,
+    largeThreshold: scala.Int | scala.Double = null,
+    layout: java.lang.String = null,
+    legendHoverLink: js.UndefOr[scala.Boolean] = js.undefined,
+    markArea: echartsLib.Anon_AnimationAnimationDelayAnimationDelayUpdate = null,
+    markLine: echartsLib.Anon_AnimationAnimationDelay = null,
+    markPoint: echartsLib.Anon_Animation = null,
+    name: java.lang.String = null,
+    progressive: scala.Int | scala.Double = null,
+    progressiveChunkMode: java.lang.String = null,
+    progressiveThreshold: scala.Int | scala.Double = null,
+    silent: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    `type`: java.lang.String = null,
+    xAxisIndex: scala.Int | scala.Double = null,
+    yAxisIndex: scala.Int | scala.Double = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesCandlestick = {
+    val __obj = js.Dynamic.literal()
+    if (animationDelay != null) __obj.updateDynamic("animationDelay")(animationDelay.asInstanceOf[js.Any])
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (animationEasing != null) __obj.updateDynamic("animationEasing")(animationEasing)
+    if (barMaxWidth != null) __obj.updateDynamic("barMaxWidth")(barMaxWidth.asInstanceOf[js.Any])
+    if (barMinWidth != null) __obj.updateDynamic("barMinWidth")(barMinWidth.asInstanceOf[js.Any])
+    if (barWidth != null) __obj.updateDynamic("barWidth")(barWidth.asInstanceOf[js.Any])
+    if (coordinateSystem != null) __obj.updateDynamic("coordinateSystem")(coordinateSystem)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (encode != null) __obj.updateDynamic("encode")(encode)
+    if (!js.isUndefined(hoverAnimation)) __obj.updateDynamic("hoverAnimation")(hoverAnimation)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (largeThreshold != null) __obj.updateDynamic("largeThreshold")(largeThreshold.asInstanceOf[js.Any])
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (!js.isUndefined(legendHoverLink)) __obj.updateDynamic("legendHoverLink")(legendHoverLink)
+    if (markArea != null) __obj.updateDynamic("markArea")(markArea)
+    if (markLine != null) __obj.updateDynamic("markLine")(markLine)
+    if (markPoint != null) __obj.updateDynamic("markPoint")(markPoint)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (progressive != null) __obj.updateDynamic("progressive")(progressive.asInstanceOf[js.Any])
+    if (progressiveChunkMode != null) __obj.updateDynamic("progressiveChunkMode")(progressiveChunkMode)
+    if (progressiveThreshold != null) __obj.updateDynamic("progressiveThreshold")(progressiveThreshold.asInstanceOf[js.Any])
+    if (!js.isUndefined(silent)) __obj.updateDynamic("silent")(silent)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (xAxisIndex != null) __obj.updateDynamic("xAxisIndex")(xAxisIndex.asInstanceOf[js.Any])
+    if (yAxisIndex != null) __obj.updateDynamic("yAxisIndex")(yAxisIndex.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesCandlestick]
+  }
 }
 

@@ -12,3 +12,12 @@ trait CardTextTheme extends js.Object {
   var cardText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CardTextTheme {
+  @scala.inline
+  def apply(cardText: java.lang.String = null): CardTextTheme = {
+    val __obj = js.Dynamic.literal()
+    if (cardText != null) __obj.updateDynamic("cardText")(cardText)
+    __obj.asInstanceOf[CardTextTheme]
+  }
+}
+

@@ -11,3 +11,14 @@ trait HSL extends js.Object {
   var s: scala.Double
 }
 
+object HSL {
+  @scala.inline
+  def apply(h: scala.Double, l: scala.Double, s: scala.Double): HSL = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("h")(h)
+    __obj.updateDynamic("l")(l)
+    __obj.updateDynamic("s")(s)
+    __obj.asInstanceOf[HSL]
+  }
+}
+

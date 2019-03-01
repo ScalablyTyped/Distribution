@@ -19,3 +19,13 @@ import scala.scalajs.js.annotation._
   def source(): SourceT
 }
 
+object Iterator {
+  @scala.inline
+  def apply[T /* <: Elem */, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem](reverse: js.Function0[ReverseIteratorT], source: js.Function0[SourceT]): Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("reverse")(reverse)
+    __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem]]
+  }
+}
+

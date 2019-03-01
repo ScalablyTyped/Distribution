@@ -10,3 +10,12 @@ trait MessageConfig extends js.Object {
   var `type`: java.lang.String
 }
 
+object MessageConfig {
+  @scala.inline
+  def apply(`type`: java.lang.String, name: java.lang.String = null): MessageConfig = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[MessageConfig]
+  }
+}
+

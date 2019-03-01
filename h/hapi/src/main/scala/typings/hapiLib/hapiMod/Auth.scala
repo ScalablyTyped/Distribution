@@ -11,3 +11,18 @@ trait Auth extends js.Object {
   val isAuth: hapiLib.hapiLibNumbers.`true`
 }
 
+object Auth {
+  @scala.inline
+  def apply(
+    isAuth: hapiLib.hapiLibNumbers.`true`,
+    data: AuthenticationData = null,
+    error: nodeLib.Error = null
+  ): Auth = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isAuth")(isAuth)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[Auth]
+  }
+}
+

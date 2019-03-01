@@ -12,3 +12,13 @@ trait Anon_StorageClass extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_StorageClass {
+  @scala.inline
+  def apply(storageClass: java.lang.String = null, `type`: java.lang.String = null): Anon_StorageClass = {
+    val __obj = js.Dynamic.literal()
+    if (storageClass != null) __obj.updateDynamic("storageClass")(storageClass)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Anon_StorageClass]
+  }
+}
+

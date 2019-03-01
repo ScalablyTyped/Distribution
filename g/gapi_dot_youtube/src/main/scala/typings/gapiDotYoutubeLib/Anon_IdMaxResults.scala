@@ -32,3 +32,24 @@ trait Anon_IdMaxResults extends js.Object {
   var videoId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_IdMaxResults {
+  @scala.inline
+  def apply(
+    part: java.lang.String,
+    id: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    playlistId: java.lang.String = null,
+    videoId: java.lang.String = null
+  ): Anon_IdMaxResults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("part")(part)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (playlistId != null) __obj.updateDynamic("playlistId")(playlistId)
+    if (videoId != null) __obj.updateDynamic("videoId")(videoId)
+    __obj.asInstanceOf[Anon_IdMaxResults]
+  }
+}
+

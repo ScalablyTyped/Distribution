@@ -15,3 +15,12 @@ trait AttributeSpec extends js.Object {
   var default: js.UndefOr[js.Any] = js.undefined
 }
 
+object AttributeSpec {
+  @scala.inline
+  def apply(default: js.Any = null): AttributeSpec = {
+    val __obj = js.Dynamic.literal()
+    if (default != null) __obj.updateDynamic("default")(default)
+    __obj.asInstanceOf[AttributeSpec]
+  }
+}
+

@@ -7,379 +7,542 @@ import scala.scalajs.js.annotation._
 
 object qlikDashEngineapiLibStrings {
   @js.native
-  sealed trait `-1` extends js.Object
+  sealed trait `-1`
+    extends qlikDashEngineapiLib.EngineAPINs.TypeSortDirection
   
   @js.native
   sealed trait `/qListObjectDef` extends js.Object
   
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends qlikDashEngineapiLib.EngineAPINs.ErrorDataCodeType
+       with qlikDashEngineapiLib.EngineAPINs.FieldDefExType
+       with qlikDashEngineapiLib.EngineAPINs.SearchObjectsItemType
+       with qlikDashEngineapiLib.EngineAPINs.TypeSortDirection
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends qlikDashEngineapiLib.EngineAPINs.ErrorDataCodeType
+       with qlikDashEngineapiLib.EngineAPINs.FieldDefExType
+       with qlikDashEngineapiLib.EngineAPINs.SearchObjectsItemType
+       with qlikDashEngineapiLib.EngineAPINs.TypeSortDirection
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends qlikDashEngineapiLib.EngineAPINs.ErrorDataCodeType
+       with qlikDashEngineapiLib.EngineAPINs.FieldDefExType
   
   @js.native
-  sealed trait A extends js.Object
+  sealed trait A
+    extends qlikDashEngineapiLib.EngineAPINs.ExportStateType
+       with qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
+       with qlikDashEngineapiLib.EngineAPINs.NxCellStateType
+       with qlikDashEngineapiLib.EngineAPINs.SortIndicatorType
   
   @js.native
-  sealed trait AGGR extends js.Object
+  sealed trait AGGR
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait ALL extends js.Object
+  sealed trait ALL
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait AND extends js.Object
+  sealed trait AND
+    extends qlikDashEngineapiLib.EngineAPINs.FieldSelectionModeType
   
   @js.native
-  sealed trait ANY_KEY extends js.Object
+  sealed trait ANY_KEY
+    extends qlikDashEngineapiLib.EngineAPINs.TableRecordKeyType
   
   @js.native
-  sealed trait Add extends js.Object
+  sealed trait Add
+    extends qlikDashEngineapiLib.EngineAPINs.NxPatchOpType
   
   @js.native
   sealed trait BookmarkList extends js.Object
   
   @js.native
-  sealed trait C extends js.Object
+  sealed trait C
+    extends qlikDashEngineapiLib.EngineAPINs.ReductionModeType
+       with qlikDashEngineapiLib.EngineAPINs._NxGrpType
   
   @js.native
-  sealed trait CD_ROM extends js.Object
+  sealed trait CD_ROM
+    extends qlikDashEngineapiLib.EngineAPINs.DriveType
   
   @js.native
-  sealed trait CLR extends js.Object
+  sealed trait CLR
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait CND extends js.Object
+  sealed trait CND
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait CONNECT_32 extends js.Object
+  sealed trait CONNECT_32
+    extends qlikDashEngineapiLib.EngineAPINs.MachineModeType
   
   @js.native
-  sealed trait CONNECT_64 extends js.Object
+  sealed trait CONNECT_64
+    extends qlikDashEngineapiLib.EngineAPINs.MachineModeType
   
   @js.native
-  sealed trait CONNECT_DEFAULT extends js.Object
+  sealed trait CONNECT_DEFAULT
+    extends qlikDashEngineapiLib.EngineAPINs.MachineModeType
   
   @js.native
-  sealed trait COUNT extends js.Object
+  sealed trait COUNT
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait CSV extends js.Object
+  sealed trait CSV
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait CSV_C extends js.Object
+  sealed trait CSV_C
+    extends qlikDashEngineapiLib.EngineAPINs.FileType
   
   @js.native
-  sealed trait CSV_T extends js.Object
+  sealed trait CSV_T
+    extends qlikDashEngineapiLib.EngineAPINs.FileType
   
   @js.native
-  sealed trait Cleared extends js.Object
+  sealed trait Cleared
+    extends qlikDashEngineapiLib.EngineAPINs.ContextType
   
   @js.native
   sealed trait CurrentSelection extends js.Object
   
   @js.native
-  sealed trait CurrentSelections extends js.Object
+  sealed trait CurrentSelections
+    extends qlikDashEngineapiLib.EngineAPINs.ContextType
   
   @js.native
-  sealed trait D extends js.Object
+  sealed trait D
+    extends qlikDashEngineapiLib.EngineAPINs.DimensionType
+       with qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
+       with qlikDashEngineapiLib.EngineAPINs.MTType
+       with qlikDashEngineapiLib.EngineAPINs.NxCellStateType
+       with qlikDashEngineapiLib.EngineAPINs.NxSelectionCellType
+       with qlikDashEngineapiLib.EngineAPINs.SortIndicatorType
   
   @js.native
-  sealed trait D1 extends js.Object
+  sealed trait D1
+    extends qlikDashEngineapiLib.EngineAPINs.ReductionModeType
   
   @js.native
-  sealed trait DATE extends js.Object
+  sealed trait DATE
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait DIF extends js.Object
+  sealed trait DIF
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait DatasetType extends js.Object
+  sealed trait DatasetType
+    extends qlikDashEngineapiLib.EngineAPINs.SearchObjectsGroupType
   
   @js.native
   sealed trait DimensionList extends js.Object
   
   @js.native
-  sealed trait DisableQlikViewSelectButton extends js.Object
+  sealed trait DisableQlikViewSelectButton
+    extends qlikDashEngineapiLib.EngineAPINs.CommandType
   
   @js.native
-  sealed trait E extends js.Object
+  sealed trait E
+    extends qlikDashEngineapiLib.EngineAPINs.BnfType
+       with qlikDashEngineapiLib.EngineAPINs.NxCellType
+       with qlikDashEngineapiLib.EngineAPINs.NxTreeNodeType
   
   @js.native
-  sealed trait EXCEL_BIFF extends js.Object
+  sealed trait EXCEL_BIFF
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait EXCEL_OOXML extends js.Object
+  sealed trait EXCEL_OOXML
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait EXP extends js.Object
+  sealed trait EXP
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait EXT extends js.Object
+  sealed trait EXT
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait F extends js.Object
+  sealed trait F
+    extends qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
   
   @js.native
-  sealed trait FILE extends js.Object
+  sealed trait FILE
+    extends qlikDashEngineapiLib.EngineAPINs.FolderItemType
+       with qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait FIN extends js.Object
+  sealed trait FIN
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait FIX extends js.Object
+  sealed trait FIX
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait FIXED extends js.Object
+  sealed trait FIXED
+    extends qlikDashEngineapiLib.EngineAPINs.DriveType
   
   @js.native
-  sealed trait FOLDER extends js.Object
+  sealed trait FOLDER
+    extends qlikDashEngineapiLib.EngineAPINs.FolderItemType
   
   @js.native
-  sealed trait FRMT extends js.Object
+  sealed trait FRMT
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait G extends js.Object
+  sealed trait G
+    extends qlikDashEngineapiLib.EngineAPINs.NxTreeNodeType
   
   @js.native
-  sealed trait GEO extends js.Object
+  sealed trait GEO
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait GenericObjectsType extends js.Object
+  sealed trait GenericObjectsType
+    extends qlikDashEngineapiLib.EngineAPINs.SearchObjectsGroupType
   
   @js.native
-  sealed trait GetCustomCaption extends js.Object
+  sealed trait GetCustomCaption
+    extends qlikDashEngineapiLib.EngineAPINs.CommandType
   
   @js.native
-  sealed trait H extends js.Object
+  sealed trait H
+    extends qlikDashEngineapiLib.EngineAPINs._NxGrpType
   
   @js.native
-  sealed trait HTML extends js.Object
+  sealed trait HTML
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait HaveStarField extends js.Object
+  sealed trait HaveStarField
+    extends qlikDashEngineapiLib.EngineAPINs.CommandType
   
   @js.native
-  sealed trait I extends js.Object
+  sealed trait I
+    extends qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
   
   @js.native
-  sealed trait IT_BREAK extends js.Object
+  sealed trait IT_BREAK
+    extends qlikDashEngineapiLib.EngineAPINs.InteractionType
   
   @js.native
-  sealed trait IT_END extends js.Object
+  sealed trait IT_END
+    extends qlikDashEngineapiLib.EngineAPINs.InteractionType
   
   @js.native
-  sealed trait IT_MSGBOX extends js.Object
+  sealed trait IT_MSGBOX
+    extends qlikDashEngineapiLib.EngineAPINs.InteractionType
   
   @js.native
-  sealed trait IT_SCRIPTLINE extends js.Object
+  sealed trait IT_SCRIPTLINE
+    extends qlikDashEngineapiLib.EngineAPINs.InteractionType
   
   @js.native
-  sealed trait IV extends js.Object
+  sealed trait IV
+    extends qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
   
   @js.native
-  sealed trait IsConnected extends js.Object
+  sealed trait IsConnected
+    extends qlikDashEngineapiLib.EngineAPINs.CommandType
   
   @js.native
-  sealed trait JSON extends js.Object
+  sealed trait JSON
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait JsonRequest extends js.Object
+  sealed trait JsonRequest
+    extends qlikDashEngineapiLib.EngineAPINs.CommandType
   
   @js.native
-  sealed trait K extends js.Object
+  sealed trait K
+    extends qlikDashEngineapiLib.EngineAPINs.NxHypercubeMode
   
   @js.native
-  sealed trait KML extends js.Object
+  sealed trait KML
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait L
+    extends qlikDashEngineapiLib.EngineAPINs.NxCellStateType
+       with qlikDashEngineapiLib.EngineAPINs.NxSelectionCellType
   
   @js.native
-  sealed trait LOG extends js.Object
+  sealed trait LOG
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait LOG_ON_CURRENT_USER extends js.Object
+  sealed trait LOG_ON_CURRENT_USER
+    extends qlikDashEngineapiLib.EngineAPINs.LogonType
   
   @js.native
-  sealed trait LOG_ON_SERVICE_USER extends js.Object
+  sealed trait LOG_ON_SERVICE_USER
+    extends qlikDashEngineapiLib.EngineAPINs.LogonType
   
   @js.native
-  sealed trait LockedFieldsOnly extends js.Object
+  sealed trait LockedFieldsOnly
+    extends qlikDashEngineapiLib.EngineAPINs.ContextType
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait M
+    extends qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
   
   @js.native
-  sealed trait MAPP extends js.Object
+  sealed trait MAPP
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait MATH extends js.Object
+  sealed trait MATH
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
   sealed trait MeasureList extends js.Object
   
   @js.native
-  sealed trait N extends js.Object
+  sealed trait N
+    extends qlikDashEngineapiLib.EngineAPINs.DimensionType
+       with qlikDashEngineapiLib.EngineAPINs.MTType
+       with qlikDashEngineapiLib.EngineAPINs.NxCellType
+       with qlikDashEngineapiLib.EngineAPINs.NxTreeNodeType
+       with qlikDashEngineapiLib.EngineAPINs.ReductionModeType
+       with qlikDashEngineapiLib.EngineAPINs.SortIndicatorType
+       with qlikDashEngineapiLib.EngineAPINs._NxGrpType
   
   @js.native
-  sealed trait NETWORK extends js.Object
+  sealed trait NETWORK
+    extends qlikDashEngineapiLib.EngineAPINs.DriveType
   
   @js.native
-  sealed trait NONE extends js.Object
+  sealed trait NONE
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait NORMAL extends js.Object
+  sealed trait NORMAL
+    extends qlikDashEngineapiLib.EngineAPINs.FieldSelectionModeType
   
   @js.native
-  sealed trait NOT extends js.Object
+  sealed trait NOT
+    extends qlikDashEngineapiLib.EngineAPINs.FieldSelectionModeType
   
   @js.native
-  sealed trait NOT_KEY extends js.Object
+  sealed trait NOT_KEY
+    extends qlikDashEngineapiLib.EngineAPINs.TableRecordKeyType
   
   @js.native
-  sealed trait NULL extends js.Object
+  sealed trait NULL
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait NUM extends js.Object
+  sealed trait NUM
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait NUMI extends js.Object
+  sealed trait NUMI
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait NX_FREQUENCY_NONE extends js.Object
+  sealed trait NX_FREQUENCY_NONE
+    extends qlikDashEngineapiLib.EngineAPINs.FrequencyModeType
   
   @js.native
-  sealed trait NX_FREQUENCY_PERCENT extends js.Object
+  sealed trait NX_FREQUENCY_PERCENT
+    extends qlikDashEngineapiLib.EngineAPINs.FrequencyModeType
   
   @js.native
-  sealed trait NX_FREQUENCY_RELATIVE extends js.Object
+  sealed trait NX_FREQUENCY_RELATIVE
+    extends qlikDashEngineapiLib.EngineAPINs.FrequencyModeType
   
   @js.native
-  sealed trait NX_FREQUENCY_VALUE extends js.Object
+  sealed trait NX_FREQUENCY_VALUE
+    extends qlikDashEngineapiLib.EngineAPINs.FrequencyModeType
   
   @js.native
-  sealed trait O extends js.Object
+  sealed trait O
+    extends qlikDashEngineapiLib.EngineAPINs.NxCellStateType
   
   @js.native
-  sealed trait OOXML extends js.Object
+  sealed trait OOXML
+    extends qlikDashEngineapiLib.EngineAPINs.FileType
   
   @js.native
-  sealed trait OTHER extends js.Object
+  sealed trait OTHER
+    extends qlikDashEngineapiLib.EngineAPINs.FolderItemType
   
   @js.native
-  sealed trait OTHER_ABS_ACC_TARGET extends js.Object
+  sealed trait OTHER_ABS_ACC_TARGET
+    extends qlikDashEngineapiLib.EngineAPINs.OtherModeType
   
   @js.native
-  sealed trait OTHER_ABS_LIMITED extends js.Object
+  sealed trait OTHER_ABS_LIMITED
+    extends qlikDashEngineapiLib.EngineAPINs.OtherModeType
   
   @js.native
-  sealed trait OTHER_COUNTED extends js.Object
+  sealed trait OTHER_COUNTED
+    extends qlikDashEngineapiLib.EngineAPINs.OtherModeType
   
   @js.native
-  sealed trait OTHER_GE_LIMIT extends js.Object
+  sealed trait OTHER_GE_LIMIT
+    extends qlikDashEngineapiLib.EngineAPINs.OtherLimitModeType
   
   @js.native
-  sealed trait OTHER_GT_LIMIT extends js.Object
+  sealed trait OTHER_GT_LIMIT
+    extends qlikDashEngineapiLib.EngineAPINs.OtherLimitModeType
   
   @js.native
-  sealed trait OTHER_LE_LIMIT extends js.Object
+  sealed trait OTHER_LE_LIMIT
+    extends qlikDashEngineapiLib.EngineAPINs.OtherLimitModeType
   
   @js.native
-  sealed trait OTHER_LT_LIMIT extends js.Object
+  sealed trait OTHER_LT_LIMIT
+    extends qlikDashEngineapiLib.EngineAPINs.OtherLimitModeType
   
   @js.native
-  sealed trait OTHER_OFF extends js.Object
+  sealed trait OTHER_OFF
+    extends qlikDashEngineapiLib.EngineAPINs.OtherModeType
   
   @js.native
-  sealed trait OTHER_REL_ACC_TARGET extends js.Object
+  sealed trait OTHER_REL_ACC_TARGET
+    extends qlikDashEngineapiLib.EngineAPINs.OtherModeType
   
   @js.native
-  sealed trait OTHER_REL_LIMITED extends js.Object
+  sealed trait OTHER_REL_LIMITED
+    extends qlikDashEngineapiLib.EngineAPINs.OtherModeType
   
   @js.native
-  sealed trait OTHER_SORT_ASCENDING extends js.Object
+  sealed trait OTHER_SORT_ASCENDING
+    extends qlikDashEngineapiLib.EngineAPINs.OtherSortModeType
   
   @js.native
-  sealed trait OTHER_SORT_DEFAULT extends js.Object
+  sealed trait OTHER_SORT_DEFAULT
+    extends qlikDashEngineapiLib.EngineAPINs.OtherSortModeType
   
   @js.native
-  sealed trait OTHER_SORT_DESCENDING extends js.Object
+  sealed trait OTHER_SORT_DESCENDING
+    extends qlikDashEngineapiLib.EngineAPINs.OtherSortModeType
   
   @js.native
-  sealed trait P extends js.Object
+  sealed trait P
+    extends qlikDashEngineapiLib.EngineAPINs.ExportStateType
+       with qlikDashEngineapiLib.EngineAPINs.NxCellType
+       with qlikDashEngineapiLib.EngineAPINs.NxHypercubeMode
+       with qlikDashEngineapiLib.EngineAPINs.NxTreeNodeType
   
   @js.native
-  sealed trait PERFECT_KEY extends js.Object
+  sealed trait PERFECT_KEY
+    extends qlikDashEngineapiLib.EngineAPINs.TableRecordKeyType
   
   @js.native
-  sealed trait PRIMARY_KEY extends js.Object
+  sealed trait PRIMARY_KEY
+    extends qlikDashEngineapiLib.EngineAPINs.TableRecordKeyType
   
   @js.native
-  sealed trait QVX extends js.Object
+  sealed trait QVX
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait R extends js.Object
+  sealed trait R
+    extends qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
+       with qlikDashEngineapiLib.EngineAPINs.MTType
+       with qlikDashEngineapiLib.EngineAPINs.NxCellType
+       with qlikDashEngineapiLib.EngineAPINs.NxTreeNodeType
   
   @js.native
-  sealed trait RAM extends js.Object
+  sealed trait RAM
+    extends qlikDashEngineapiLib.EngineAPINs.DriveType
   
   @js.native
-  sealed trait RCRD extends js.Object
+  sealed trait RCRD
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait REMOVABLE extends js.Object
+  sealed trait REMOVABLE
+    extends qlikDashEngineapiLib.EngineAPINs.DriveType
   
   @js.native
-  sealed trait RNG extends js.Object
+  sealed trait RNG
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait RNK extends js.Object
+  sealed trait RNK
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait Remove extends js.Object
+  sealed trait Remove
+    extends qlikDashEngineapiLib.EngineAPINs.NxPatchOpType
   
   @js.native
-  sealed trait Replace extends js.Object
+  sealed trait Replace
+    extends qlikDashEngineapiLib.EngineAPINs.NxPatchOpType
   
   @js.native
-  sealed trait S extends js.Object
+  sealed trait S
+    extends qlikDashEngineapiLib.EngineAPINs.BnfType
+       with qlikDashEngineapiLib.EngineAPINs.NxCellStateType
+       with qlikDashEngineapiLib.EngineAPINs.NxHypercubeMode
+       with qlikDashEngineapiLib.EngineAPINs.ReductionModeType
   
   @js.native
-  sealed trait ST extends js.Object
+  sealed trait ST
+    extends qlikDashEngineapiLib.EngineAPINs.ReductionModeType
   
   @js.native
-  sealed trait STR extends js.Object
+  sealed trait STR
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait SYS extends js.Object
+  sealed trait SYS
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait T extends js.Object
+  sealed trait T
+    extends qlikDashEngineapiLib.EngineAPINs.DimensionType
+       with qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
+       with qlikDashEngineapiLib.EngineAPINs.NxCellType
+       with qlikDashEngineapiLib.EngineAPINs.NxHypercubeMode
+       with qlikDashEngineapiLib.EngineAPINs.NxSelectionCellType
+       with qlikDashEngineapiLib.EngineAPINs.NxTreeNodeType
   
   @js.native
-  sealed trait TBL extends js.Object
+  sealed trait TBL
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait TOTAL_EXPR extends js.Object
+  sealed trait TOTAL_EXPR
+    extends qlikDashEngineapiLib.EngineAPINs.TotalModeType
   
   @js.native
-  sealed trait TOTAL_OFF extends js.Object
+  sealed trait TOTAL_OFF
+    extends qlikDashEngineapiLib.EngineAPINs.TotalModeType
   
   @js.native
-  sealed trait TRIG extends js.Object
+  sealed trait TRIG
+    extends qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
   
   @js.native
-  sealed trait TS extends js.Object
+  sealed trait TS
+    extends qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
   
   @js.native
-  sealed trait U extends js.Object
+  sealed trait U
+    extends qlikDashEngineapiLib.EngineAPINs.FieldAttributesType
+       with qlikDashEngineapiLib.EngineAPINs.FunctionGroupType
+       with qlikDashEngineapiLib.EngineAPINs.NxCellType
+       with qlikDashEngineapiLib.EngineAPINs.NxTreeNodeType
   
   @js.native
-  sealed trait UNKNOWN_TYPE extends js.Object
+  sealed trait UNKNOWN_TYPE
+    extends qlikDashEngineapiLib.EngineAPINs.DriveType
   
   @js.native
   sealed trait Utf16 extends js.Object
@@ -388,19 +551,25 @@ object qlikDashEngineapiLibStrings {
   sealed trait Utf8 extends js.Object
   
   @js.native
-  sealed trait V extends js.Object
+  sealed trait V
+    extends qlikDashEngineapiLib.EngineAPINs.NxCellType
+       with qlikDashEngineapiLib.EngineAPINs.NxTreeNodeType
   
   @js.native
-  sealed trait X extends js.Object
+  sealed trait X
+    extends qlikDashEngineapiLib.EngineAPINs.NxCellStateType
   
   @js.native
-  sealed trait XL extends js.Object
+  sealed trait XL
+    extends qlikDashEngineapiLib.EngineAPINs.NxCellStateType
   
   @js.native
-  sealed trait XML extends js.Object
+  sealed trait XML
+    extends qlikDashEngineapiLib.EngineAPINs.FileDataFormatType
   
   @js.native
-  sealed trait XS extends js.Object
+  sealed trait XS
+    extends qlikDashEngineapiLib.EngineAPINs.NxCellStateType
   
   @js.native
   sealed trait bookmark extends js.Object

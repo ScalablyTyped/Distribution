@@ -151,3 +151,64 @@ trait ITerminalOptions extends js.Object {
   var theme: js.UndefOr[ITheme] = js.undefined
 }
 
+object ITerminalOptions {
+  @scala.inline
+  def apply(
+    allowTransparency: js.UndefOr[scala.Boolean] = js.undefined,
+    bellSound: java.lang.String = null,
+    bellStyle: xtermLib.xtermLibStrings.none | xtermLib.xtermLibStrings.sound = null,
+    cols: scala.Int | scala.Double = null,
+    convertEol: js.UndefOr[scala.Boolean] = js.undefined,
+    cursorBlink: js.UndefOr[scala.Boolean] = js.undefined,
+    cursorStyle: xtermLib.xtermLibStrings.block | xtermLib.xtermLibStrings.underline | xtermLib.xtermLibStrings.bar = null,
+    disableStdin: js.UndefOr[scala.Boolean] = js.undefined,
+    drawBoldTextInBrightColors: js.UndefOr[scala.Boolean] = js.undefined,
+    enableBold: js.UndefOr[scala.Boolean] = js.undefined,
+    experimentalCharAtlas: xtermLib.xtermLibStrings.none | xtermLib.xtermLibStrings.static | xtermLib.xtermLibStrings.dynamic = null,
+    fontFamily: java.lang.String = null,
+    fontSize: scala.Int | scala.Double = null,
+    fontWeight: FontWeight = null,
+    fontWeightBold: FontWeight = null,
+    letterSpacing: scala.Int | scala.Double = null,
+    lineHeight: scala.Int | scala.Double = null,
+    macOptionClickForcesSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    macOptionIsMeta: js.UndefOr[scala.Boolean] = js.undefined,
+    rendererType: RendererType = null,
+    rightClickSelectsWord: js.UndefOr[scala.Boolean] = js.undefined,
+    rows: scala.Int | scala.Double = null,
+    screenReaderMode: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollback: scala.Int | scala.Double = null,
+    tabStopWidth: scala.Int | scala.Double = null,
+    theme: ITheme = null
+  ): ITerminalOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowTransparency)) __obj.updateDynamic("allowTransparency")(allowTransparency)
+    if (bellSound != null) __obj.updateDynamic("bellSound")(bellSound)
+    if (bellStyle != null) __obj.updateDynamic("bellStyle")(bellStyle.asInstanceOf[js.Any])
+    if (cols != null) __obj.updateDynamic("cols")(cols.asInstanceOf[js.Any])
+    if (!js.isUndefined(convertEol)) __obj.updateDynamic("convertEol")(convertEol)
+    if (!js.isUndefined(cursorBlink)) __obj.updateDynamic("cursorBlink")(cursorBlink)
+    if (cursorStyle != null) __obj.updateDynamic("cursorStyle")(cursorStyle.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableStdin)) __obj.updateDynamic("disableStdin")(disableStdin)
+    if (!js.isUndefined(drawBoldTextInBrightColors)) __obj.updateDynamic("drawBoldTextInBrightColors")(drawBoldTextInBrightColors)
+    if (!js.isUndefined(enableBold)) __obj.updateDynamic("enableBold")(enableBold)
+    if (experimentalCharAtlas != null) __obj.updateDynamic("experimentalCharAtlas")(experimentalCharAtlas.asInstanceOf[js.Any])
+    if (fontFamily != null) __obj.updateDynamic("fontFamily")(fontFamily)
+    if (fontSize != null) __obj.updateDynamic("fontSize")(fontSize.asInstanceOf[js.Any])
+    if (fontWeight != null) __obj.updateDynamic("fontWeight")(fontWeight)
+    if (fontWeightBold != null) __obj.updateDynamic("fontWeightBold")(fontWeightBold)
+    if (letterSpacing != null) __obj.updateDynamic("letterSpacing")(letterSpacing.asInstanceOf[js.Any])
+    if (lineHeight != null) __obj.updateDynamic("lineHeight")(lineHeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(macOptionClickForcesSelection)) __obj.updateDynamic("macOptionClickForcesSelection")(macOptionClickForcesSelection)
+    if (!js.isUndefined(macOptionIsMeta)) __obj.updateDynamic("macOptionIsMeta")(macOptionIsMeta)
+    if (rendererType != null) __obj.updateDynamic("rendererType")(rendererType)
+    if (!js.isUndefined(rightClickSelectsWord)) __obj.updateDynamic("rightClickSelectsWord")(rightClickSelectsWord)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (!js.isUndefined(screenReaderMode)) __obj.updateDynamic("screenReaderMode")(screenReaderMode)
+    if (scrollback != null) __obj.updateDynamic("scrollback")(scrollback.asInstanceOf[js.Any])
+    if (tabStopWidth != null) __obj.updateDynamic("tabStopWidth")(tabStopWidth.asInstanceOf[js.Any])
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[ITerminalOptions]
+  }
+}
+

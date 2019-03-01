@@ -8,10 +8,20 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when progress tone playback starts
 		*/
-trait ProgressToneStart extends js.Object {
+trait ProgressToneStart
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantCallEvent {
   /**
   			*	Call that dispatched the event
   			*/
   var call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call
+}
+
+object ProgressToneStart {
+  @scala.inline
+  def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call): ProgressToneStart = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("call")(call)
+    __obj.asInstanceOf[ProgressToneStart]
+  }
 }
 

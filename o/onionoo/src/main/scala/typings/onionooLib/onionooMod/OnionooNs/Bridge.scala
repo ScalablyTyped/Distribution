@@ -86,3 +86,40 @@ trait Bridge extends js.Object {
   ] = js.undefined
 }
 
+object Bridge {
+  @scala.inline
+  def apply(
+    first_seen: java.lang.String,
+    hashed_fingerprint: java.lang.String,
+    last_seen: java.lang.String,
+    nickname: java.lang.String,
+    or_addresses: js.Array[java.lang.String],
+    running: scala.Boolean,
+    advertised_bandwidth: scala.Int | scala.Double = null,
+    flags: js.Array[java.lang.String] = null,
+    last_restarted: java.lang.String = null,
+    platform: java.lang.String = null,
+    recommended_version: js.UndefOr[scala.Boolean] = js.undefined,
+    transports: js.Array[java.lang.String] = null,
+    version: java.lang.String = null,
+    version_status: onionooLib.onionooLibStrings.recommended | onionooLib.onionooLibStrings.experimental | onionooLib.onionooLibStrings.obsolete | (onionooLib.onionooLibStrings.`new in series`) | onionooLib.onionooLibStrings.unrecommended = null
+  ): Bridge = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("first_seen")(first_seen)
+    __obj.updateDynamic("hashed_fingerprint")(hashed_fingerprint)
+    __obj.updateDynamic("last_seen")(last_seen)
+    __obj.updateDynamic("nickname")(nickname)
+    __obj.updateDynamic("or_addresses")(or_addresses)
+    __obj.updateDynamic("running")(running)
+    if (advertised_bandwidth != null) __obj.updateDynamic("advertised_bandwidth")(advertised_bandwidth.asInstanceOf[js.Any])
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (last_restarted != null) __obj.updateDynamic("last_restarted")(last_restarted)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (!js.isUndefined(recommended_version)) __obj.updateDynamic("recommended_version")(recommended_version)
+    if (transports != null) __obj.updateDynamic("transports")(transports)
+    if (version != null) __obj.updateDynamic("version")(version)
+    if (version_status != null) __obj.updateDynamic("version_status")(version_status.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Bridge]
+  }
+}
+

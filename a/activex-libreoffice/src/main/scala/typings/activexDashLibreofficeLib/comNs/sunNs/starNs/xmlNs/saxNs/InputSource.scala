@@ -28,3 +28,20 @@ trait InputSource extends js.Object {
   var sSystemId: java.lang.String
 }
 
+object InputSource {
+  @scala.inline
+  def apply(
+    aInputStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    sEncoding: java.lang.String,
+    sPublicId: java.lang.String,
+    sSystemId: java.lang.String
+  ): InputSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aInputStream")(aInputStream)
+    __obj.updateDynamic("sEncoding")(sEncoding)
+    __obj.updateDynamic("sPublicId")(sPublicId)
+    __obj.updateDynamic("sSystemId")(sSystemId)
+    __obj.asInstanceOf[InputSource]
+  }
+}
+

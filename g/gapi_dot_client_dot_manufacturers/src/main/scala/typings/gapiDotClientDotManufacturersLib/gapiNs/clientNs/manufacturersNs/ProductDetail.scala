@@ -14,3 +14,18 @@ trait ProductDetail extends js.Object {
   var sectionName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ProductDetail {
+  @scala.inline
+  def apply(
+    attributeName: java.lang.String = null,
+    attributeValue: java.lang.String = null,
+    sectionName: java.lang.String = null
+  ): ProductDetail = {
+    val __obj = js.Dynamic.literal()
+    if (attributeName != null) __obj.updateDynamic("attributeName")(attributeName)
+    if (attributeValue != null) __obj.updateDynamic("attributeValue")(attributeValue)
+    if (sectionName != null) __obj.updateDynamic("sectionName")(sectionName)
+    __obj.asInstanceOf[ProductDetail]
+  }
+}
+

@@ -48,3 +48,32 @@ trait Photo extends js.Object {
   var viewCount: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Photo {
+  @scala.inline
+  def apply(
+    captureTime: java.lang.String = null,
+    connections: js.Array[Connection] = null,
+    downloadUrl: java.lang.String = null,
+    photoId: PhotoId = null,
+    places: js.Array[Place] = null,
+    pose: Pose = null,
+    shareLink: java.lang.String = null,
+    thumbnailUrl: java.lang.String = null,
+    uploadReference: UploadRef = null,
+    viewCount: java.lang.String = null
+  ): Photo = {
+    val __obj = js.Dynamic.literal()
+    if (captureTime != null) __obj.updateDynamic("captureTime")(captureTime)
+    if (connections != null) __obj.updateDynamic("connections")(connections)
+    if (downloadUrl != null) __obj.updateDynamic("downloadUrl")(downloadUrl)
+    if (photoId != null) __obj.updateDynamic("photoId")(photoId)
+    if (places != null) __obj.updateDynamic("places")(places)
+    if (pose != null) __obj.updateDynamic("pose")(pose)
+    if (shareLink != null) __obj.updateDynamic("shareLink")(shareLink)
+    if (thumbnailUrl != null) __obj.updateDynamic("thumbnailUrl")(thumbnailUrl)
+    if (uploadReference != null) __obj.updateDynamic("uploadReference")(uploadReference)
+    if (viewCount != null) __obj.updateDynamic("viewCount")(viewCount)
+    __obj.asInstanceOf[Photo]
+  }
+}
+

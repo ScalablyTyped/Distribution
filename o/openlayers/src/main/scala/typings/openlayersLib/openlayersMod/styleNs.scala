@@ -184,6 +184,10 @@ object styleNs extends js.Object {
     def load(): scala.Unit = js.native
   }
   
+  trait IconAnchorUnits extends js.Object
+  
+  trait IconOrigin extends js.Object
+  
   /**
     * @classdesc
     * A base class used for creating subclasses and not instantiated in
@@ -726,13 +730,5 @@ object styleNs extends js.Object {
     def setTextBaseline(textBaseline: java.lang.String): scala.Unit = js.native
   }
   
-  /**
-    * Icon anchor units. One of 'fraction', 'pixels'.
-    */
-  type IconAnchorUnits = openlayersLib.openlayersLibStrings.fraction | openlayersLib.openlayersLibStrings.pixels
-  /**
-    * Icon origin. One of 'bottom-left', 'bottom-right', 'top-left', 'top-right'.
-    */
-  type IconOrigin = openlayersLib.openlayersLibStrings.`bottom-left` | openlayersLib.openlayersLibStrings.`bottom-right` | openlayersLib.openlayersLibStrings.`top-left` | openlayersLib.openlayersLibStrings.`top-right`
 }
 

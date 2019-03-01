@@ -21,3 +21,22 @@ trait RequestMetadata extends js.Object {
   var userOverrides: js.UndefOr[UserOverrides] = js.undefined
 }
 
+object RequestMetadata {
+  @scala.inline
+  def apply(
+    experimentIds: js.Array[java.lang.String] = null,
+    locale: java.lang.String = null,
+    partnersSessionId: java.lang.String = null,
+    trafficSource: TrafficSource = null,
+    userOverrides: UserOverrides = null
+  ): RequestMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (experimentIds != null) __obj.updateDynamic("experimentIds")(experimentIds)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (partnersSessionId != null) __obj.updateDynamic("partnersSessionId")(partnersSessionId)
+    if (trafficSource != null) __obj.updateDynamic("trafficSource")(trafficSource)
+    if (userOverrides != null) __obj.updateDynamic("userOverrides")(userOverrides)
+    __obj.asInstanceOf[RequestMetadata]
+  }
+}
+

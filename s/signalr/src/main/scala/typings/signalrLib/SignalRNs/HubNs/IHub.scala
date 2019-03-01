@@ -9,3 +9,12 @@ trait IHub extends js.Object {
   def start(): scala.Unit
 }
 
+object IHub {
+  @scala.inline
+  def apply(start: js.Function0[scala.Unit]): IHub = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[IHub]
+  }
+}
+

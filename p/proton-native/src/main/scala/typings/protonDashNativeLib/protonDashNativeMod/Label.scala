@@ -12,3 +12,12 @@ trait Label extends js.Object {
   var label: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Label {
+  @scala.inline
+  def apply(label: java.lang.String = null): Label = {
+    val __obj = js.Dynamic.literal()
+    if (label != null) __obj.updateDynamic("label")(label)
+    __obj.asInstanceOf[Label]
+  }
+}
+

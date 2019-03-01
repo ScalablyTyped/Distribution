@@ -11,3 +11,12 @@ trait ImportExportSettings extends js.Object {
   var importUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ImportExportSettings {
+  @scala.inline
+  def apply(importUrl: java.lang.String = null): ImportExportSettings = {
+    val __obj = js.Dynamic.literal()
+    if (importUrl != null) __obj.updateDynamic("importUrl")(importUrl)
+    __obj.asInstanceOf[ImportExportSettings]
+  }
+}
+

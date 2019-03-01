@@ -29,3 +29,22 @@ trait AppDetailsOptions extends js.Object {
   var relaunchDisplayName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppDetailsOptions {
+  @scala.inline
+  def apply(
+    appIconIndex: scala.Int | scala.Double = null,
+    appIconPath: java.lang.String = null,
+    appId: java.lang.String = null,
+    relaunchCommand: java.lang.String = null,
+    relaunchDisplayName: java.lang.String = null
+  ): AppDetailsOptions = {
+    val __obj = js.Dynamic.literal()
+    if (appIconIndex != null) __obj.updateDynamic("appIconIndex")(appIconIndex.asInstanceOf[js.Any])
+    if (appIconPath != null) __obj.updateDynamic("appIconPath")(appIconPath)
+    if (appId != null) __obj.updateDynamic("appId")(appId)
+    if (relaunchCommand != null) __obj.updateDynamic("relaunchCommand")(relaunchCommand)
+    if (relaunchDisplayName != null) __obj.updateDynamic("relaunchDisplayName")(relaunchDisplayName)
+    __obj.asInstanceOf[AppDetailsOptions]
+  }
+}
+

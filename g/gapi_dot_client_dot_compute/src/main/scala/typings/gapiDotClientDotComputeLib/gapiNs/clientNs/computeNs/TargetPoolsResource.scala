@@ -44,3 +44,67 @@ trait TargetPoolsResource extends js.Object {
   def setBackup(request: gapiDotClientDotComputeLib.Anon_AltFailoverRatio): gapiDotClientLib.gapiNs.clientNs.Request[Operation]
 }
 
+object TargetPoolsResource {
+  @scala.inline
+  def apply(
+    addHealthCheck: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdTargetPool, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    addInstance: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdTargetPool, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    aggregatedList: js.Function1[
+      gapiDotClientDotComputeLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetPoolAggregatedList]
+    ],
+    delete: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdTargetPool, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    get: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionTargetPool, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetPool]
+    ],
+    getHealth: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionTargetPool, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetPoolInstanceHealth]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    list: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsFilter, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TargetPoolList]
+    ],
+    removeHealthCheck: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdTargetPool, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    removeInstance: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFieldsKeyOauthtokenPrettyPrintProjectQuotaUserRegionRequestIdTargetPool, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ],
+    setBackup: js.Function1[
+      gapiDotClientDotComputeLib.Anon_AltFailoverRatio, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Operation]
+    ]
+  ): TargetPoolsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addHealthCheck")(addHealthCheck)
+    __obj.updateDynamic("addInstance")(addInstance)
+    __obj.updateDynamic("aggregatedList")(aggregatedList)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getHealth")(getHealth)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("removeHealthCheck")(removeHealthCheck)
+    __obj.updateDynamic("removeInstance")(removeInstance)
+    __obj.updateDynamic("setBackup")(setBackup)
+    __obj.asInstanceOf[TargetPoolsResource]
+  }
+}
+

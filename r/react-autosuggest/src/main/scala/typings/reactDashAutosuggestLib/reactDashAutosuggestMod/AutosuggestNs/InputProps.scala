@@ -19,3 +19,24 @@ import scala.scalajs.js.annotation._
   def onChange(event: reactLib.reactMod.ReactNs.FormEvent[_], params: ChangeEvent): scala.Unit
 }
 
+object InputProps {
+  @scala.inline
+  def apply[TSuggestion](
+    onChange: js.Function2[reactLib.reactMod.ReactNs.FormEvent[_], ChangeEvent, scala.Unit],
+    value: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    onBlur: js.Function2[
+      /* event */ reactLib.reactMod.ReactNs.FormEvent[_], 
+      /* params */ js.UndefOr[BlurEvent[TSuggestion]], 
+      scala.Unit
+    ] = null
+  ): InputProps[TSuggestion] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("value")(value)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (onBlur != null) __obj.updateDynamic("onBlur")(onBlur)
+    __obj.asInstanceOf[InputProps[TSuggestion]]
+  }
+}
+

@@ -44,3 +44,26 @@ trait GoogleCloudMlV1__ParameterSpec extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GoogleCloudMlV1__ParameterSpec {
+  @scala.inline
+  def apply(
+    categoricalValues: js.Array[java.lang.String] = null,
+    discreteValues: js.Array[scala.Double] = null,
+    maxValue: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    parameterName: java.lang.String = null,
+    scaleType: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): GoogleCloudMlV1__ParameterSpec = {
+    val __obj = js.Dynamic.literal()
+    if (categoricalValues != null) __obj.updateDynamic("categoricalValues")(categoricalValues)
+    if (discreteValues != null) __obj.updateDynamic("discreteValues")(discreteValues)
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (parameterName != null) __obj.updateDynamic("parameterName")(parameterName)
+    if (scaleType != null) __obj.updateDynamic("scaleType")(scaleType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[GoogleCloudMlV1__ParameterSpec]
+  }
+}
+

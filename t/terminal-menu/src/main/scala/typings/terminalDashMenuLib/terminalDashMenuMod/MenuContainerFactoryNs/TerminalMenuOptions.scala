@@ -50,3 +50,26 @@ trait TerminalMenuOptions extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TerminalMenuOptions {
+  @scala.inline
+  def apply(
+    bg: java.lang.String = null,
+    fg: java.lang.String = null,
+    padding: scala.Double | Thickness = null,
+    selected: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): TerminalMenuOptions = {
+    val __obj = js.Dynamic.literal()
+    if (bg != null) __obj.updateDynamic("bg")(bg)
+    if (fg != null) __obj.updateDynamic("fg")(fg)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TerminalMenuOptions]
+  }
+}
+

@@ -12,3 +12,20 @@ trait IonicContext extends js.Object {
   val version: java.lang.String
 }
 
+object IonicContext {
+  @scala.inline
+  def apply(
+    binPath: java.lang.String,
+    execPath: java.lang.String,
+    libPath: java.lang.String,
+    version: java.lang.String
+  ): IonicContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("binPath")(binPath)
+    __obj.updateDynamic("execPath")(execPath)
+    __obj.updateDynamic("libPath")(libPath)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[IonicContext]
+  }
+}
+

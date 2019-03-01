@@ -16,3 +16,16 @@ trait LifecyclePolicyArgs extends js.Object {
   val repository: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object LifecyclePolicyArgs {
+  @scala.inline
+  def apply(
+    policy: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    repository: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): LifecyclePolicyArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("policy")(policy.asInstanceOf[js.Any])
+    __obj.updateDynamic("repository")(repository.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LifecyclePolicyArgs]
+  }
+}
+

@@ -12,3 +12,13 @@ trait StrictMountNodeProps extends js.Object {
   var node: js.UndefOr[reactLib.HTMLElement] = js.undefined
 }
 
+object StrictMountNodeProps {
+  @scala.inline
+  def apply(className: java.lang.String = null, node: reactLib.HTMLElement = null): StrictMountNodeProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (node != null) __obj.updateDynamic("node")(node)
+    __obj.asInstanceOf[StrictMountNodeProps]
+  }
+}
+

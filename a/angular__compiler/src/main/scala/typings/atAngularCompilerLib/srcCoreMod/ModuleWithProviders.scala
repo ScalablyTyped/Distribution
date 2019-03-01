@@ -10,3 +10,13 @@ trait ModuleWithProviders extends js.Object {
   var providers: js.UndefOr[js.Array[Provider]] = js.undefined
 }
 
+object ModuleWithProviders {
+  @scala.inline
+  def apply(ngModule: Type, providers: js.Array[Provider] = null): ModuleWithProviders = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ngModule")(ngModule)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    __obj.asInstanceOf[ModuleWithProviders]
+  }
+}
+

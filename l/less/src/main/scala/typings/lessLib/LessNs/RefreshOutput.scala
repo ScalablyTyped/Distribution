@@ -12,3 +12,20 @@ trait RefreshOutput extends js.Object {
   var totalMilliseconds: scala.Double
 }
 
+object RefreshOutput {
+  @scala.inline
+  def apply(
+    endTime: stdLib.Date,
+    sheets: scala.Double,
+    startTime: stdLib.Date,
+    totalMilliseconds: scala.Double
+  ): RefreshOutput = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endTime")(endTime)
+    __obj.updateDynamic("sheets")(sheets)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("totalMilliseconds")(totalMilliseconds)
+    __obj.asInstanceOf[RefreshOutput]
+  }
+}
+

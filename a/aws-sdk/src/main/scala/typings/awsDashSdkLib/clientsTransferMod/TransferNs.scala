@@ -904,12 +904,18 @@ object TransferNs extends js.Object {
     var UserName: UserName
   }
   
+  trait _IdentityProviderType extends js.Object
+  
+  trait _State extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Arn = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type DateImported = stdLib.Date
   type HomeDirectory = java.lang.String
-  type IdentityProviderType = awsDashSdkLib.awsDashSdkLibStrings.SERVICE_MANAGED | awsDashSdkLib.awsDashSdkLibStrings.API_GATEWAY | java.lang.String
+  type IdentityProviderType = _IdentityProviderType | java.lang.String
   type ListedServers = js.Array[ListedServer]
   type ListedUsers = js.Array[ListedUser]
   type MaxResults = scala.Double
@@ -923,7 +929,7 @@ object TransferNs extends js.Object {
   type SshPublicKeyCount = scala.Double
   type SshPublicKeyId = java.lang.String
   type SshPublicKeys = js.Array[SshPublicKey]
-  type State = awsDashSdkLib.awsDashSdkLibStrings.OFFLINE | awsDashSdkLib.awsDashSdkLibStrings.ONLINE | awsDashSdkLib.awsDashSdkLibStrings.STARTING | awsDashSdkLib.awsDashSdkLibStrings.STOPPING | awsDashSdkLib.awsDashSdkLibStrings.START_FAILED | awsDashSdkLib.awsDashSdkLibStrings.STOP_FAILED | java.lang.String
+  type State = _State | java.lang.String
   type StatusCode = scala.Double
   type TagKey = java.lang.String
   type TagKeys = js.Array[TagKey]
@@ -933,6 +939,6 @@ object TransferNs extends js.Object {
   type UserCount = scala.Double
   type UserName = java.lang.String
   type UserPassword = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-11-05` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

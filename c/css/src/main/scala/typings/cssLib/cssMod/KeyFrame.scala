@@ -12,3 +12,22 @@ trait KeyFrame extends Node {
   var values: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object KeyFrame {
+  @scala.inline
+  def apply(
+    declarations: js.Array[Declaration | Comment] = null,
+    parent: Node = null,
+    position: cssLib.Anon_Content = null,
+    `type`: java.lang.String = null,
+    values: js.Array[java.lang.String] = null
+  ): KeyFrame = {
+    val __obj = js.Dynamic.literal()
+    if (declarations != null) __obj.updateDynamic("declarations")(declarations)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (position != null) __obj.updateDynamic("position")(position)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[KeyFrame]
+  }
+}
+

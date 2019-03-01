@@ -11,3 +11,21 @@ trait Anon_Clear extends js.Object {
   def done(): scala.Unit
 }
 
+object Anon_Clear {
+  @scala.inline
+  def apply(
+    clear: js.Function0[scala.Unit],
+    create: js.Function1[
+      nodeLib.NodeJSNs.WritableStream, 
+      /* import warning: ImportType.apply Failed type conversion: typeof logUpdate */ js.Any
+    ],
+    done: js.Function0[scala.Unit]
+  ): Anon_Clear = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("done")(done)
+    __obj.asInstanceOf[Anon_Clear]
+  }
+}
+

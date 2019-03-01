@@ -12,3 +12,20 @@ trait ImageProps extends js.Object {
   var style: js.UndefOr[Style | StyleReference] = js.undefined
 }
 
+object ImageProps {
+  @scala.inline
+  def apply(
+    resizeMode: ResizeMode,
+    children: js.Any = null,
+    source: ImageSource = null,
+    style: Style | StyleReference = null
+  ): ImageProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("resizeMode")(resizeMode)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ImageProps]
+  }
+}
+

@@ -28,3 +28,22 @@ trait QRCode extends js.Object {
   var version: scala.Double
 }
 
+object QRCode {
+  @scala.inline
+  def apply(
+    errorCorrectionLevel: scala.Double,
+    maskPattern: js.Any,
+    modules: js.Any,
+    segments: js.Array[QRCodeSegment],
+    version: scala.Double
+  ): QRCode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorCorrectionLevel")(errorCorrectionLevel)
+    __obj.updateDynamic("maskPattern")(maskPattern)
+    __obj.updateDynamic("modules")(modules)
+    __obj.updateDynamic("segments")(segments)
+    __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[QRCode]
+  }
+}
+

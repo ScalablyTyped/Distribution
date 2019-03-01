@@ -21,3 +21,18 @@ trait Anon_ContentFormat extends js.Object {
   var dynamicRegistration: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_ContentFormat {
+  @scala.inline
+  def apply(
+    contentFormat: js.Array[
+      vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.MarkupKind
+    ] = null,
+    dynamicRegistration: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_ContentFormat = {
+    val __obj = js.Dynamic.literal()
+    if (contentFormat != null) __obj.updateDynamic("contentFormat")(contentFormat)
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
+    __obj.asInstanceOf[Anon_ContentFormat]
+  }
+}
+

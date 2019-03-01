@@ -22,3 +22,47 @@ trait VersionsResource extends js.Object {
   def update(request: gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint): gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersion]
 }
 
+object VersionsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltContainerVersionId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersion]
+    ],
+    live: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_Alt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersion]
+    ],
+    publish: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PublishContainerVersionResponse]
+    ],
+    set_latest: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersion]
+    ],
+    undelete: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersion]
+    ],
+    update: js.Function1[
+      gapiDotClientDotTagmanagerLib.Anon_AltFieldsFingerprint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ContainerVersion]
+    ]
+  ): VersionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("live")(live)
+    __obj.updateDynamic("publish")(publish)
+    __obj.updateDynamic("set_latest")(set_latest)
+    __obj.updateDynamic("undelete")(undelete)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[VersionsResource]
+  }
+}
+

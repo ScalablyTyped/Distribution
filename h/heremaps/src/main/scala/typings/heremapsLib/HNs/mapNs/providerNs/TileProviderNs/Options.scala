@@ -27,3 +27,26 @@ trait Options extends js.Object {
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    getCopyrights: js.Function2[
+      /* rect */ heremapsLib.HNs.geoNs.Rect, 
+      /* number */ scala.Double, 
+      js.Array[heremapsLib.HNs.mapNs.ICopyright]
+    ] = null,
+    max: scala.Int | scala.Double = null,
+    min: scala.Int | scala.Double = null,
+    tileSize: scala.Int | scala.Double = null,
+    uri: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (getCopyrights != null) __obj.updateDynamic("getCopyrights")(getCopyrights)
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (tileSize != null) __obj.updateDynamic("tileSize")(tileSize.asInstanceOf[js.Any])
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[Options]
+  }
+}
+

@@ -16,3 +16,13 @@ trait LaunchDataItem extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LaunchDataItem {
+  @scala.inline
+  def apply(entry: filesystemLib.FileEntry, `type`: java.lang.String = null): LaunchDataItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("entry")(entry)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[LaunchDataItem]
+  }
+}
+

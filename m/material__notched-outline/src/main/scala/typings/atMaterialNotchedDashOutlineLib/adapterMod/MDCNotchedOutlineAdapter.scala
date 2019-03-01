@@ -33,3 +33,24 @@ trait MDCNotchedOutlineAdapter extends js.Object {
   def setOutlinePathAttr(value: java.lang.String): scala.Unit
 }
 
+object MDCNotchedOutlineAdapter {
+  @scala.inline
+  def apply(
+    addClass: js.Function1[java.lang.String, scala.Unit],
+    getHeight: js.Function0[scala.Double],
+    getIdleOutlineStyleValue: js.Function1[java.lang.String, java.lang.String],
+    getWidth: js.Function0[scala.Double],
+    removeClass: js.Function1[java.lang.String, scala.Unit],
+    setOutlinePathAttr: js.Function1[java.lang.String, scala.Unit]
+  ): MDCNotchedOutlineAdapter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addClass")(addClass)
+    __obj.updateDynamic("getHeight")(getHeight)
+    __obj.updateDynamic("getIdleOutlineStyleValue")(getIdleOutlineStyleValue)
+    __obj.updateDynamic("getWidth")(getWidth)
+    __obj.updateDynamic("removeClass")(removeClass)
+    __obj.updateDynamic("setOutlinePathAttr")(setOutlinePathAttr)
+    __obj.asInstanceOf[MDCNotchedOutlineAdapter]
+  }
+}
+

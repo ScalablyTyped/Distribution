@@ -25,3 +25,28 @@ import scala.scalajs.js.annotation._
   var subset: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object StatusAdvertisement {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    broadcasts: js.Array[java.lang.String] = null,
+    key: java.lang.String = null,
+    namespace: java.lang.String = null,
+    requests: js.Array[java.lang.String] = null,
+    respondsTo: js.Array[java.lang.String] = null,
+    subscribesTo: js.Array[java.lang.String] = null,
+    subset: java.lang.String = null
+  ): StatusAdvertisement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (broadcasts != null) __obj.updateDynamic("broadcasts")(broadcasts)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    if (requests != null) __obj.updateDynamic("requests")(requests)
+    if (respondsTo != null) __obj.updateDynamic("respondsTo")(respondsTo)
+    if (subscribesTo != null) __obj.updateDynamic("subscribesTo")(subscribesTo)
+    if (subset != null) __obj.updateDynamic("subset")(subset)
+    __obj.asInstanceOf[StatusAdvertisement]
+  }
+}
+

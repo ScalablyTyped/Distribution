@@ -19,3 +19,20 @@ trait XDrawPageExpander
   def expand(xPage: XDrawPage): XDrawPages
 }
 
+object XDrawPageExpander {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    expand: js.Function1[XDrawPage, XDrawPages],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDrawPageExpander = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("expand")(expand)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDrawPageExpander]
+  }
+}
+

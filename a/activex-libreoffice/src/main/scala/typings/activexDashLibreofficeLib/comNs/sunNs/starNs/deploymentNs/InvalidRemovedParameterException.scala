@@ -25,3 +25,20 @@ trait InvalidRemovedParameterException
   var PreviousValue: scala.Boolean
 }
 
+object InvalidRemovedParameterException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Extension: XPackage,
+    Message: java.lang.String,
+    PreviousValue: scala.Boolean
+  ): InvalidRemovedParameterException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Extension")(Extension)
+    __obj.updateDynamic("Message")(Message)
+    __obj.updateDynamic("PreviousValue")(PreviousValue)
+    __obj.asInstanceOf[InvalidRemovedParameterException]
+  }
+}
+

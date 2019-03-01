@@ -12,3 +12,20 @@ trait VaultOptions extends js.Object {
   var seedPhrase: java.lang.String
 }
 
+object VaultOptions {
+  @scala.inline
+  def apply(
+    hdPathString: java.lang.String,
+    password: java.lang.String,
+    seedPhrase: java.lang.String,
+    salt: java.lang.String = null
+  ): VaultOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("hdPathString")(hdPathString)
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("seedPhrase")(seedPhrase)
+    if (salt != null) __obj.updateDynamic("salt")(salt)
+    __obj.asInstanceOf[VaultOptions]
+  }
+}
+

@@ -16,3 +16,18 @@ trait Anon_CallbackDetailsSetWallpaper extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackDetailsSetWallpaper {
+  @scala.inline
+  def apply(
+    setWallpaper: js.Function2[
+      chromeDashAppsLib.chromeNs.wallpaperNs.WallpaperDetails, 
+      js.Function1[/* thumbnail */ js.UndefOr[java.lang.String], scala.Unit], 
+      scala.Unit
+    ]
+  ): Anon_CallbackDetailsSetWallpaper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setWallpaper")(setWallpaper)
+    __obj.asInstanceOf[Anon_CallbackDetailsSetWallpaper]
+  }
+}
+

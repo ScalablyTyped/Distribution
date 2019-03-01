@@ -28,3 +28,22 @@ trait EditModeValidationErrorEventUIParam extends js.Object {
   var validationRule: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EditModeValidationErrorEventUIParam {
+  @scala.inline
+  def apply(
+    action: java.lang.String = null,
+    canStayInEditMode: js.UndefOr[scala.Boolean] = js.undefined,
+    cell: java.lang.String = null,
+    owner: js.Any = null,
+    validationRule: java.lang.String = null
+  ): EditModeValidationErrorEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (!js.isUndefined(canStayInEditMode)) __obj.updateDynamic("canStayInEditMode")(canStayInEditMode)
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (validationRule != null) __obj.updateDynamic("validationRule")(validationRule)
+    __obj.asInstanceOf[EditModeValidationErrorEventUIParam]
+  }
+}
+

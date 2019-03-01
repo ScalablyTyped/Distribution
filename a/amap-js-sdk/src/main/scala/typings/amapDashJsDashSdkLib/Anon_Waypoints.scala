@@ -9,3 +9,12 @@ trait Anon_Waypoints extends js.Object {
   var waypoints: js.Array[amapDashJsDashSdkLib.AMapNs.LngLat]
 }
 
+object Anon_Waypoints {
+  @scala.inline
+  def apply(waypoints: js.Array[amapDashJsDashSdkLib.AMapNs.LngLat]): Anon_Waypoints = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("waypoints")(waypoints)
+    __obj.asInstanceOf[Anon_Waypoints]
+  }
+}
+

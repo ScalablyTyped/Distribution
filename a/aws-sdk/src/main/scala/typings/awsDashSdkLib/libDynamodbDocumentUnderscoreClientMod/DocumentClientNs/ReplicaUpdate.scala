@@ -16,3 +16,13 @@ trait ReplicaUpdate extends js.Object {
   var Delete: js.UndefOr[DeleteReplicaAction] = js.undefined
 }
 
+object ReplicaUpdate {
+  @scala.inline
+  def apply(Create: CreateReplicaAction = null, Delete: DeleteReplicaAction = null): ReplicaUpdate = {
+    val __obj = js.Dynamic.literal()
+    if (Create != null) __obj.updateDynamic("Create")(Create)
+    if (Delete != null) __obj.updateDynamic("Delete")(Delete)
+    __obj.asInstanceOf[ReplicaUpdate]
+  }
+}
+

@@ -23,3 +23,24 @@ trait History extends js.Object {
   var messagesDeleted: js.UndefOr[js.Array[HistoryMessageDeleted]] = js.undefined
 }
 
+object History {
+  @scala.inline
+  def apply(
+    id: java.lang.String = null,
+    labelsAdded: js.Array[HistoryLabelAdded] = null,
+    labelsRemoved: js.Array[HistoryLabelRemoved] = null,
+    messages: js.Array[Message] = null,
+    messagesAdded: js.Array[HistoryMessageAdded] = null,
+    messagesDeleted: js.Array[HistoryMessageDeleted] = null
+  ): History = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (labelsAdded != null) __obj.updateDynamic("labelsAdded")(labelsAdded)
+    if (labelsRemoved != null) __obj.updateDynamic("labelsRemoved")(labelsRemoved)
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (messagesAdded != null) __obj.updateDynamic("messagesAdded")(messagesAdded)
+    if (messagesDeleted != null) __obj.updateDynamic("messagesDeleted")(messagesDeleted)
+    __obj.asInstanceOf[History]
+  }
+}
+

@@ -12,3 +12,20 @@ trait Anon_Name extends js.Object {
   var use: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object Anon_Name {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    npmDependencies: js.Object = null,
+    sources: js.Array[java.lang.String] = null,
+    use: java.lang.String | js.Array[java.lang.String] = null
+  ): Anon_Name = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (npmDependencies != null) __obj.updateDynamic("npmDependencies")(npmDependencies)
+    if (sources != null) __obj.updateDynamic("sources")(sources)
+    if (use != null) __obj.updateDynamic("use")(use.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Name]
+  }
+}
+

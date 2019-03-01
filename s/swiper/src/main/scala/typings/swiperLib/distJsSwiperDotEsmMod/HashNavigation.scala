@@ -7,5 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("swiper/dist/js/swiper.esm", "HashNavigation")
 @js.native
-class HashNavigation () extends js.Object
+class HashNavigation ()
+  extends swiperLib.swiperMod.SwiperModule
 

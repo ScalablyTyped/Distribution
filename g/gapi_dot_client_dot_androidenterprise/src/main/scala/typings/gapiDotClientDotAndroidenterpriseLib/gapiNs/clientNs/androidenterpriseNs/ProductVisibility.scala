@@ -22,3 +22,13 @@ trait ProductVisibility extends js.Object {
   var tracks: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object ProductVisibility {
+  @scala.inline
+  def apply(productId: java.lang.String = null, tracks: js.Array[java.lang.String] = null): ProductVisibility = {
+    val __obj = js.Dynamic.literal()
+    if (productId != null) __obj.updateDynamic("productId")(productId)
+    if (tracks != null) __obj.updateDynamic("tracks")(tracks)
+    __obj.asInstanceOf[ProductVisibility]
+  }
+}
+

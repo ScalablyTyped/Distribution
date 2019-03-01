@@ -16,3 +16,27 @@ trait Anon_BlockColumn extends js.Object {
   var `val`: java.lang.String
 }
 
+object Anon_BlockColumn {
+  @scala.inline
+  def apply(
+    __type: java.lang.String,
+    block: stylusLib.stylusMod.StylusNs.NodesNs.Block,
+    column: scala.Double,
+    expr: stylusLib.stylusMod.StylusNs.NodesNs.Expression,
+    filename: java.lang.String,
+    key: java.lang.String,
+    lineno: scala.Double,
+    `val`: java.lang.String
+  ): Anon_BlockColumn = {
+    val __obj = js.Dynamic.literal(`val` = `val`)
+    __obj.updateDynamic("__type")(__type)
+    __obj.updateDynamic("block")(block)
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("expr")(expr)
+    __obj.updateDynamic("filename")(filename)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("lineno")(lineno)
+    __obj.asInstanceOf[Anon_BlockColumn]
+  }
+}
+

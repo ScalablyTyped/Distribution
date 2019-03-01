@@ -11,3 +11,18 @@ trait Timeouts extends js.Object {
   var script: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Timeouts {
+  @scala.inline
+  def apply(
+    `implicit`: scala.Int | scala.Double = null,
+    pageLoad: scala.Int | scala.Double = null,
+    script: scala.Int | scala.Double = null
+  ): Timeouts = {
+    val __obj = js.Dynamic.literal()
+    if (`implicit` != null) __obj.updateDynamic("implicit")(`implicit`.asInstanceOf[js.Any])
+    if (pageLoad != null) __obj.updateDynamic("pageLoad")(pageLoad.asInstanceOf[js.Any])
+    if (script != null) __obj.updateDynamic("script")(script.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Timeouts]
+  }
+}
+

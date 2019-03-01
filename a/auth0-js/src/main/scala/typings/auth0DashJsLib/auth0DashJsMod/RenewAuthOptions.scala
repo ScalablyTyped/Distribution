@@ -74,3 +74,38 @@ trait RenewAuthOptions extends js.Object {
   var usePostMessage: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object RenewAuthOptions {
+  @scala.inline
+  def apply(
+    audience: java.lang.String = null,
+    clientID: java.lang.String = null,
+    domain: java.lang.String = null,
+    nonce: java.lang.String = null,
+    postMessageDataType: java.lang.String = null,
+    postMessageOrigin: java.lang.String = null,
+    redirectUri: java.lang.String = null,
+    responseMode: java.lang.String = null,
+    responseType: java.lang.String = null,
+    scope: java.lang.String = null,
+    state: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    usePostMessage: js.UndefOr[scala.Boolean] = js.undefined
+  ): RenewAuthOptions = {
+    val __obj = js.Dynamic.literal()
+    if (audience != null) __obj.updateDynamic("audience")(audience)
+    if (clientID != null) __obj.updateDynamic("clientID")(clientID)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    if (postMessageDataType != null) __obj.updateDynamic("postMessageDataType")(postMessageDataType)
+    if (postMessageOrigin != null) __obj.updateDynamic("postMessageOrigin")(postMessageOrigin)
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (responseMode != null) __obj.updateDynamic("responseMode")(responseMode)
+    if (responseType != null) __obj.updateDynamic("responseType")(responseType)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(usePostMessage)) __obj.updateDynamic("usePostMessage")(usePostMessage)
+    __obj.asInstanceOf[RenewAuthOptions]
+  }
+}
+

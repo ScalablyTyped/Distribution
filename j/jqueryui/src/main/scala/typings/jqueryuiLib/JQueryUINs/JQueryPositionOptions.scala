@@ -14,3 +14,24 @@ trait JQueryPositionOptions extends js.Object {
   var within: js.UndefOr[js.Any] = js.undefined
 }
 
+object JQueryPositionOptions {
+  @scala.inline
+  def apply(
+    at: java.lang.String = null,
+    collision: java.lang.String = null,
+    my: java.lang.String = null,
+    of: js.Any = null,
+    using: js.Function = null,
+    within: js.Any = null
+  ): JQueryPositionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (at != null) __obj.updateDynamic("at")(at)
+    if (collision != null) __obj.updateDynamic("collision")(collision)
+    if (my != null) __obj.updateDynamic("my")(my)
+    if (of != null) __obj.updateDynamic("of")(of)
+    if (using != null) __obj.updateDynamic("using")(using)
+    if (within != null) __obj.updateDynamic("within")(within)
+    __obj.asInstanceOf[JQueryPositionOptions]
+  }
+}
+

@@ -74,3 +74,49 @@ trait ChangedEvent extends js.Object {
   def undo(): scala.Unit
 }
 
+object ChangedEvent {
+  @scala.inline
+  def apply(
+    canRedo: js.Function0[scala.Boolean],
+    canUndo: js.Function0[scala.Boolean],
+    change: EnumValue,
+    clear: js.Function0[scala.Unit],
+    copy: js.Function0[ChangedEvent],
+    diagram: Diagram,
+    getParam: js.Function1[scala.Boolean, js.Any],
+    getValue: js.Function1[scala.Boolean, js.Any],
+    isTransactionFinished: scala.Boolean,
+    model: Model,
+    modelChange: java.lang.String,
+    newParam: js.Any,
+    newValue: js.Any,
+    `object`: js.Any,
+    oldParam: js.Any,
+    oldValue: js.Any,
+    propertyName: PropertyAccessor,
+    redo: js.Function0[scala.Unit],
+    undo: js.Function0[scala.Unit]
+  ): ChangedEvent = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("canRedo")(canRedo)
+    __obj.updateDynamic("canUndo")(canUndo)
+    __obj.updateDynamic("change")(change)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("diagram")(diagram)
+    __obj.updateDynamic("getParam")(getParam)
+    __obj.updateDynamic("getValue")(getValue)
+    __obj.updateDynamic("isTransactionFinished")(isTransactionFinished)
+    __obj.updateDynamic("model")(model)
+    __obj.updateDynamic("modelChange")(modelChange)
+    __obj.updateDynamic("newParam")(newParam)
+    __obj.updateDynamic("newValue")(newValue)
+    __obj.updateDynamic("oldParam")(oldParam)
+    __obj.updateDynamic("oldValue")(oldValue)
+    __obj.updateDynamic("propertyName")(propertyName.asInstanceOf[js.Any])
+    __obj.updateDynamic("redo")(redo)
+    __obj.updateDynamic("undo")(undo)
+    __obj.asInstanceOf[ChangedEvent]
+  }
+}
+

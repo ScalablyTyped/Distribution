@@ -65,7 +65,6 @@ package object SpotifyApiNs {
     * https://developer.spotify.com/web-api/check-users-saved-tracks/
     */
   type CheckUsersSavedTracksResponse = js.Array[scala.Boolean]
-  type ContextObjectType = spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.artist | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.playlist | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.album
   /**
     * Create a Playlist
     * 
@@ -109,7 +108,6 @@ package object SpotifyApiNs {
     * https://developer.spotify.com/web-api/get-list-users-playlists/
     */
   type ListOfUsersPlaylistsResponse = PagingObject[PlaylistObjectSimplified]
-  type PlaybackRepeatState = spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.off | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.track | spotifyDashWebDashApiDashJsLib.spotifyDashWebDashApiDashJsLibStrings.context
   /**
     * Get a playlist's tracks
     * 

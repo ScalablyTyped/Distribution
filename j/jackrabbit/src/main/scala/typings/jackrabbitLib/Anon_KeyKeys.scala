@@ -12,3 +12,20 @@ trait Anon_KeyKeys extends js.Object {
   var prefetch: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_KeyKeys {
+  @scala.inline
+  def apply(
+    key: java.lang.String = null,
+    keys: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    prefetch: scala.Int | scala.Double = null
+  ): Anon_KeyKeys = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (prefetch != null) __obj.updateDynamic("prefetch")(prefetch.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_KeyKeys]
+  }
+}
+

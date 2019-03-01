@@ -135,3 +135,48 @@ trait DocumentPropertiesLoadOptions extends js.Object {
   var title: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DocumentPropertiesLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    applicationName: js.UndefOr[scala.Boolean] = js.undefined,
+    author: js.UndefOr[scala.Boolean] = js.undefined,
+    category: js.UndefOr[scala.Boolean] = js.undefined,
+    comments: js.UndefOr[scala.Boolean] = js.undefined,
+    company: js.UndefOr[scala.Boolean] = js.undefined,
+    creationDate: js.UndefOr[scala.Boolean] = js.undefined,
+    format: js.UndefOr[scala.Boolean] = js.undefined,
+    keywords: js.UndefOr[scala.Boolean] = js.undefined,
+    lastAuthor: js.UndefOr[scala.Boolean] = js.undefined,
+    lastPrintDate: js.UndefOr[scala.Boolean] = js.undefined,
+    lastSaveTime: js.UndefOr[scala.Boolean] = js.undefined,
+    manager: js.UndefOr[scala.Boolean] = js.undefined,
+    revisionNumber: js.UndefOr[scala.Boolean] = js.undefined,
+    security: js.UndefOr[scala.Boolean] = js.undefined,
+    subject: js.UndefOr[scala.Boolean] = js.undefined,
+    template: js.UndefOr[scala.Boolean] = js.undefined,
+    title: js.UndefOr[scala.Boolean] = js.undefined
+  ): DocumentPropertiesLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(applicationName)) __obj.updateDynamic("applicationName")(applicationName)
+    if (!js.isUndefined(author)) __obj.updateDynamic("author")(author)
+    if (!js.isUndefined(category)) __obj.updateDynamic("category")(category)
+    if (!js.isUndefined(comments)) __obj.updateDynamic("comments")(comments)
+    if (!js.isUndefined(company)) __obj.updateDynamic("company")(company)
+    if (!js.isUndefined(creationDate)) __obj.updateDynamic("creationDate")(creationDate)
+    if (!js.isUndefined(format)) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(keywords)) __obj.updateDynamic("keywords")(keywords)
+    if (!js.isUndefined(lastAuthor)) __obj.updateDynamic("lastAuthor")(lastAuthor)
+    if (!js.isUndefined(lastPrintDate)) __obj.updateDynamic("lastPrintDate")(lastPrintDate)
+    if (!js.isUndefined(lastSaveTime)) __obj.updateDynamic("lastSaveTime")(lastSaveTime)
+    if (!js.isUndefined(manager)) __obj.updateDynamic("manager")(manager)
+    if (!js.isUndefined(revisionNumber)) __obj.updateDynamic("revisionNumber")(revisionNumber)
+    if (!js.isUndefined(security)) __obj.updateDynamic("security")(security)
+    if (!js.isUndefined(subject)) __obj.updateDynamic("subject")(subject)
+    if (!js.isUndefined(template)) __obj.updateDynamic("template")(template)
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[DocumentPropertiesLoadOptions]
+  }
+}
+

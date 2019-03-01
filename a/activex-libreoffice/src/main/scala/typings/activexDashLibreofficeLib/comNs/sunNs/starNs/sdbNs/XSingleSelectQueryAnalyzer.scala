@@ -210,3 +210,74 @@ trait XSingleSelectQueryAnalyzer
   def setQuery(command: java.lang.String): scala.Unit
 }
 
+object XSingleSelectQueryAnalyzer {
+  @scala.inline
+  def apply(
+    Filter: java.lang.String,
+    Group: java.lang.String,
+    GroupColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    HavingClause: java.lang.String,
+    Order: java.lang.String,
+    OrderColumns: activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess,
+    Query: java.lang.String,
+    QueryWithSubstitution: java.lang.String,
+    StructuredFilter: activexDashInteropLib.SafeArray[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    StructuredHavingClause: activexDashInteropLib.SafeArray[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    acquire: js.Function0[scala.Unit],
+    getFilter: js.Function0[java.lang.String],
+    getGroup: js.Function0[java.lang.String],
+    getGroupColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getHavingClause: js.Function0[java.lang.String],
+    getOrder: js.Function0[java.lang.String],
+    getOrderColumns: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XIndexAccess],
+    getQuery: js.Function0[java.lang.String],
+    getQueryWithSubstitution: js.Function0[java.lang.String],
+    getStructuredFilter: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ]
+    ],
+    getStructuredHavingClause: js.Function0[
+      activexDashInteropLib.SafeArray[
+        activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+      ]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setCommand: js.Function2[java.lang.String, scala.Double, scala.Unit],
+    setQuery: js.Function1[java.lang.String, scala.Unit]
+  ): XSingleSelectQueryAnalyzer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Filter")(Filter)
+    __obj.updateDynamic("Group")(Group)
+    __obj.updateDynamic("GroupColumns")(GroupColumns)
+    __obj.updateDynamic("HavingClause")(HavingClause)
+    __obj.updateDynamic("Order")(Order)
+    __obj.updateDynamic("OrderColumns")(OrderColumns)
+    __obj.updateDynamic("Query")(Query)
+    __obj.updateDynamic("QueryWithSubstitution")(QueryWithSubstitution)
+    __obj.updateDynamic("StructuredFilter")(StructuredFilter)
+    __obj.updateDynamic("StructuredHavingClause")(StructuredHavingClause)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getFilter")(getFilter)
+    __obj.updateDynamic("getGroup")(getGroup)
+    __obj.updateDynamic("getGroupColumns")(getGroupColumns)
+    __obj.updateDynamic("getHavingClause")(getHavingClause)
+    __obj.updateDynamic("getOrder")(getOrder)
+    __obj.updateDynamic("getOrderColumns")(getOrderColumns)
+    __obj.updateDynamic("getQuery")(getQuery)
+    __obj.updateDynamic("getQueryWithSubstitution")(getQueryWithSubstitution)
+    __obj.updateDynamic("getStructuredFilter")(getStructuredFilter)
+    __obj.updateDynamic("getStructuredHavingClause")(getStructuredHavingClause)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setCommand")(setCommand)
+    __obj.updateDynamic("setQuery")(setQuery)
+    __obj.asInstanceOf[XSingleSelectQueryAnalyzer]
+  }
+}
+

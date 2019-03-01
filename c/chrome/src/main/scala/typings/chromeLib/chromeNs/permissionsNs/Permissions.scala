@@ -18,3 +18,13 @@ trait Permissions extends js.Object {
   var permissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Permissions {
+  @scala.inline
+  def apply(origins: js.Array[java.lang.String] = null, permissions: js.Array[java.lang.String] = null): Permissions = {
+    val __obj = js.Dynamic.literal()
+    if (origins != null) __obj.updateDynamic("origins")(origins)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[Permissions]
+  }
+}
+

@@ -11,3 +11,18 @@ trait DefaultProps extends js.Object {
   var useCapture: scala.Boolean
 }
 
+object DefaultProps {
+  @scala.inline
+  def apply(
+    disabled: scala.Boolean,
+    display: reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerLibStrings.block | reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerLibStrings.flex | reactDashOutsideDashClickDashHandlerLib.reactDashOutsideDashClickDashHandlerLibStrings.`inline-block`,
+    useCapture: scala.Boolean
+  ): DefaultProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("display")(display.asInstanceOf[js.Any])
+    __obj.updateDynamic("useCapture")(useCapture)
+    __obj.asInstanceOf[DefaultProps]
+  }
+}
+

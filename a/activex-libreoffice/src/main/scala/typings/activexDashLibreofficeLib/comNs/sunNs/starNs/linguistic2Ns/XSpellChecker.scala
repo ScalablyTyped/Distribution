@@ -42,3 +42,40 @@ trait XSpellChecker extends XSupportedLocales {
   ): XSpellAlternatives
 }
 
+object XSpellChecker {
+  @scala.inline
+  def apply(
+    Locales: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale],
+    acquire: js.Function0[scala.Unit],
+    getLocales: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale]
+    ],
+    hasLocale: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, scala.Boolean],
+    isValid: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    spell: js.Function3[
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValues, 
+      XSpellAlternatives
+    ]
+  ): XSpellChecker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Locales")(Locales)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLocales")(getLocales)
+    __obj.updateDynamic("hasLocale")(hasLocale)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("spell")(spell)
+    __obj.asInstanceOf[XSpellChecker]
+  }
+}
+

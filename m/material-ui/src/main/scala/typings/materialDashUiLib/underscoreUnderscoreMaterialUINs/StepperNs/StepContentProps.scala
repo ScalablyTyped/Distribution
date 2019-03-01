@@ -11,3 +11,18 @@ trait StepContentProps extends js.Object {
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object StepContentProps {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    last: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): StepContentProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(last)) __obj.updateDynamic("last")(last)
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[StepContentProps]
+  }
+}
+

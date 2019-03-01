@@ -20,3 +20,18 @@ trait CreateBudgetRequest extends js.Object {
   var NotificationsWithSubscribers: js.UndefOr[NotificationWithSubscribersList] = js.undefined
 }
 
+object CreateBudgetRequest {
+  @scala.inline
+  def apply(
+    AccountId: AccountId,
+    Budget: Budget,
+    NotificationsWithSubscribers: NotificationWithSubscribersList = null
+  ): CreateBudgetRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccountId")(AccountId)
+    __obj.updateDynamic("Budget")(Budget)
+    if (NotificationsWithSubscribers != null) __obj.updateDynamic("NotificationsWithSubscribers")(NotificationsWithSubscribers)
+    __obj.asInstanceOf[CreateBudgetRequest]
+  }
+}
+

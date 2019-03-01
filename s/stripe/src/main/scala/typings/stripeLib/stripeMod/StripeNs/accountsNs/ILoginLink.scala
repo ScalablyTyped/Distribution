@@ -14,3 +14,13 @@ trait ILoginLink extends js.Object {
   var url: java.lang.String
 }
 
+object ILoginLink {
+  @scala.inline
+  def apply(created: scala.Double, `object`: stripeLib.stripeLibStrings.login_link, url: java.lang.String): ILoginLink = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ILoginLink]
+  }
+}
+

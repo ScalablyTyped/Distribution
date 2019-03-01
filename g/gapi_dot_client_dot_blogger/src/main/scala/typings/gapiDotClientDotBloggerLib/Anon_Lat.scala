@@ -16,3 +16,20 @@ trait Anon_Lat extends js.Object {
   var span: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Lat {
+  @scala.inline
+  def apply(
+    lat: scala.Int | scala.Double = null,
+    lng: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    span: java.lang.String = null
+  ): Anon_Lat = {
+    val __obj = js.Dynamic.literal()
+    if (lat != null) __obj.updateDynamic("lat")(lat.asInstanceOf[js.Any])
+    if (lng != null) __obj.updateDynamic("lng")(lng.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (span != null) __obj.updateDynamic("span")(span)
+    __obj.asInstanceOf[Anon_Lat]
+  }
+}
+

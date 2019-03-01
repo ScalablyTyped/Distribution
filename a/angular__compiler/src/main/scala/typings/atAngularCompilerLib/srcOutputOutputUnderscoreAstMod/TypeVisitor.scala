@@ -12,3 +12,20 @@ trait TypeVisitor extends js.Object {
   def visitMapType(`type`: MapType, context: js.Any): js.Any
 }
 
+object TypeVisitor {
+  @scala.inline
+  def apply(
+    visitArrayType: js.Function2[ArrayType, js.Any, js.Any],
+    visitBuiltinType: js.Function2[BuiltinType, js.Any, js.Any],
+    visitExpressionType: js.Function2[ExpressionType, js.Any, js.Any],
+    visitMapType: js.Function2[MapType, js.Any, js.Any]
+  ): TypeVisitor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("visitArrayType")(visitArrayType)
+    __obj.updateDynamic("visitBuiltinType")(visitBuiltinType)
+    __obj.updateDynamic("visitExpressionType")(visitExpressionType)
+    __obj.updateDynamic("visitMapType")(visitMapType)
+    __obj.asInstanceOf[TypeVisitor]
+  }
+}
+

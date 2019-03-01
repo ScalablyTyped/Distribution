@@ -18,3 +18,13 @@ trait RelativeDateRange extends js.Object {
   var offsetDays: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RelativeDateRange {
+  @scala.inline
+  def apply(durationDays: scala.Int | scala.Double = null, offsetDays: scala.Int | scala.Double = null): RelativeDateRange = {
+    val __obj = js.Dynamic.literal()
+    if (durationDays != null) __obj.updateDynamic("durationDays")(durationDays.asInstanceOf[js.Any])
+    if (offsetDays != null) __obj.updateDynamic("offsetDays")(offsetDays.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RelativeDateRange]
+  }
+}
+

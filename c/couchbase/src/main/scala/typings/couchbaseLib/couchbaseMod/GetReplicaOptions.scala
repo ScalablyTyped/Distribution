@@ -12,3 +12,12 @@ trait GetReplicaOptions extends js.Object {
   var index: js.UndefOr[scala.Double] = js.undefined
 }
 
+object GetReplicaOptions {
+  @scala.inline
+  def apply(index: scala.Int | scala.Double = null): GetReplicaOptions = {
+    val __obj = js.Dynamic.literal()
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GetReplicaOptions]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_Byob extends js.Object {
   var mode: whatwgDashStreamsLib.whatwgDashStreamsLibStrings.byob
 }
 
+object Anon_Byob {
+  @scala.inline
+  def apply(mode: whatwgDashStreamsLib.whatwgDashStreamsLibStrings.byob): Anon_Byob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mode")(mode)
+    __obj.asInstanceOf[Anon_Byob]
+  }
+}
+

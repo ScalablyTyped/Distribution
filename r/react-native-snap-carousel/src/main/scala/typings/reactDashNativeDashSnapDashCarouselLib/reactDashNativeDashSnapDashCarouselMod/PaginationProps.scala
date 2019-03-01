@@ -103,3 +103,51 @@ trait PaginationProps extends js.Object {
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PaginationProps {
+  @scala.inline
+  def apply(
+    activeDotIndex: scala.Double,
+    dotsLength: scala.Double,
+    activeOpacity: scala.Int | scala.Double = null,
+    carouselRef: reactLib.reactMod.Component[reactDashNativeLib.reactDashNativeMod.FlatListProps[_], js.Object, _] = null,
+    containerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    dotColor: java.lang.String = null,
+    dotContainerStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    dotElement: reactLib.reactMod.ReactNs.ReactNode = null,
+    dotStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    inactiveDotColor: java.lang.String = null,
+    inactiveDotElement: reactLib.reactMod.ReactNs.ReactNode = null,
+    inactiveDotOpacity: scala.Int | scala.Double = null,
+    inactiveDotScale: scala.Int | scala.Double = null,
+    inactiveDotStyle: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle] = null,
+    renderDots: js.Function3[
+      /* activeIndex */ scala.Double, 
+      /* total */ scala.Double, 
+      /* context */ js.Any, 
+      reactLib.reactMod.ReactNs.ReactNode
+    ] = null,
+    tappableDots: js.UndefOr[scala.Boolean] = js.undefined,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): PaginationProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activeDotIndex")(activeDotIndex)
+    __obj.updateDynamic("dotsLength")(dotsLength)
+    if (activeOpacity != null) __obj.updateDynamic("activeOpacity")(activeOpacity.asInstanceOf[js.Any])
+    if (carouselRef != null) __obj.updateDynamic("carouselRef")(carouselRef)
+    if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle.asInstanceOf[js.Any])
+    if (dotColor != null) __obj.updateDynamic("dotColor")(dotColor)
+    if (dotContainerStyle != null) __obj.updateDynamic("dotContainerStyle")(dotContainerStyle.asInstanceOf[js.Any])
+    if (dotElement != null) __obj.updateDynamic("dotElement")(dotElement.asInstanceOf[js.Any])
+    if (dotStyle != null) __obj.updateDynamic("dotStyle")(dotStyle.asInstanceOf[js.Any])
+    if (inactiveDotColor != null) __obj.updateDynamic("inactiveDotColor")(inactiveDotColor)
+    if (inactiveDotElement != null) __obj.updateDynamic("inactiveDotElement")(inactiveDotElement.asInstanceOf[js.Any])
+    if (inactiveDotOpacity != null) __obj.updateDynamic("inactiveDotOpacity")(inactiveDotOpacity.asInstanceOf[js.Any])
+    if (inactiveDotScale != null) __obj.updateDynamic("inactiveDotScale")(inactiveDotScale.asInstanceOf[js.Any])
+    if (inactiveDotStyle != null) __obj.updateDynamic("inactiveDotStyle")(inactiveDotStyle.asInstanceOf[js.Any])
+    if (renderDots != null) __obj.updateDynamic("renderDots")(renderDots)
+    if (!js.isUndefined(tappableDots)) __obj.updateDynamic("tappableDots")(tappableDots)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[PaginationProps]
+  }
+}
+

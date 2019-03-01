@@ -9,3 +9,12 @@ trait ZlibParams extends js.Object {
   def params(level: scala.Double, strategy: scala.Double, callback: js.Function0[scala.Unit]): scala.Unit
 }
 
+object ZlibParams {
+  @scala.inline
+  def apply(params: js.Function3[scala.Double, scala.Double, js.Function0[scala.Unit], scala.Unit]): ZlibParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[ZlibParams]
+  }
+}
+

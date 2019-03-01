@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object memcachedLibStrings {
   @js.native
-  sealed trait failure extends js.Object
+  sealed trait failure
+    extends memcachedLib.memcachedMod.MemcachedNs.EventNames
   
   @js.native
-  sealed trait issue extends js.Object
+  sealed trait issue
+    extends memcachedLib.memcachedMod.MemcachedNs.EventNames
   
   @js.native
-  sealed trait reconnect extends js.Object
+  sealed trait reconnect
+    extends memcachedLib.memcachedMod.MemcachedNs.EventNames
   
   @js.native
-  sealed trait reconnecting extends js.Object
+  sealed trait reconnecting
+    extends memcachedLib.memcachedMod.MemcachedNs.EventNames
   
   @js.native
-  sealed trait remove extends js.Object
+  sealed trait remove
+    extends memcachedLib.memcachedMod.MemcachedNs.EventNames
   
   @scala.inline
   def failure: failure = "failure".asInstanceOf[failure]

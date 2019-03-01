@@ -33,3 +33,48 @@ trait GMXMLHttpRequestOptions extends js.Object {
   var user: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GMXMLHttpRequestOptions {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    url: java.lang.String,
+    binary: js.UndefOr[scala.Boolean] = js.undefined,
+    context: js.Any = null,
+    data: java.lang.String = null,
+    headers: js.Object = null,
+    onabort: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
+    onerror: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
+    onload: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
+    onprogress: js.Function1[/* response */ GMXMLHttpRequestProgressResponse, _] = null,
+    onreadystatechange: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
+    ontimeout: js.Function1[/* response */ GMXMLHttpRequestResponse, _] = null,
+    overrideMimeType: java.lang.String = null,
+    password: java.lang.String = null,
+    synchronous: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    upload: Anon_Onabort = null,
+    user: java.lang.String = null
+  ): GMXMLHttpRequestOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("url")(url)
+    if (!js.isUndefined(binary)) __obj.updateDynamic("binary")(binary)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (onabort != null) __obj.updateDynamic("onabort")(onabort)
+    if (onerror != null) __obj.updateDynamic("onerror")(onerror)
+    if (onload != null) __obj.updateDynamic("onload")(onload)
+    if (onprogress != null) __obj.updateDynamic("onprogress")(onprogress)
+    if (onreadystatechange != null) __obj.updateDynamic("onreadystatechange")(onreadystatechange)
+    if (ontimeout != null) __obj.updateDynamic("ontimeout")(ontimeout)
+    if (overrideMimeType != null) __obj.updateDynamic("overrideMimeType")(overrideMimeType)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (!js.isUndefined(synchronous)) __obj.updateDynamic("synchronous")(synchronous)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (upload != null) __obj.updateDynamic("upload")(upload)
+    if (user != null) __obj.updateDynamic("user")(user)
+    __obj.asInstanceOf[GMXMLHttpRequestOptions]
+  }
+}
+

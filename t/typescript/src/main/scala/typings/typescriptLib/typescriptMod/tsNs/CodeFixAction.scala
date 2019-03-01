@@ -16,3 +16,24 @@ trait CodeFixAction extends CodeAction {
   var fixName: java.lang.String
 }
 
+object CodeFixAction {
+  @scala.inline
+  def apply(
+    changes: js.Array[FileTextChanges],
+    description: java.lang.String,
+    fixName: java.lang.String,
+    commands: js.Array[CodeActionCommand] = null,
+    fixAllDescription: java.lang.String = null,
+    fixId: js.Object = null
+  ): CodeFixAction = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changes")(changes)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("fixName")(fixName)
+    if (commands != null) __obj.updateDynamic("commands")(commands)
+    if (fixAllDescription != null) __obj.updateDynamic("fixAllDescription")(fixAllDescription)
+    if (fixId != null) __obj.updateDynamic("fixId")(fixId)
+    __obj.asInstanceOf[CodeFixAction]
+  }
+}
+

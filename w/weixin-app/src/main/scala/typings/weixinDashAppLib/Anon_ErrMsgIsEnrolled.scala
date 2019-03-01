@@ -11,3 +11,13 @@ trait Anon_ErrMsgIsEnrolled extends js.Object {
   var isEnrolled: scala.Boolean
 }
 
+object Anon_ErrMsgIsEnrolled {
+  @scala.inline
+  def apply(errMsg: java.lang.String, isEnrolled: scala.Boolean): Anon_ErrMsgIsEnrolled = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errMsg")(errMsg)
+    __obj.updateDynamic("isEnrolled")(isEnrolled)
+    __obj.asInstanceOf[Anon_ErrMsgIsEnrolled]
+  }
+}
+

@@ -39,3 +39,40 @@ trait Anon_AltBundleId extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AltBundleId {
+  @scala.inline
+  def apply(
+    alt: java.lang.String = null,
+    bundleId: java.lang.String = null,
+    fields: java.lang.String = null,
+    includeDeleted: js.UndefOr[scala.Boolean] = js.undefined,
+    key: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    orderBy: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    pinnedOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    sourceItemId: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_AltBundleId = {
+    val __obj = js.Dynamic.literal()
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (bundleId != null) __obj.updateDynamic("bundleId")(bundleId)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(includeDeleted)) __obj.updateDynamic("includeDeleted")(includeDeleted)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(pinnedOnly)) __obj.updateDynamic("pinnedOnly")(pinnedOnly)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (sourceItemId != null) __obj.updateDynamic("sourceItemId")(sourceItemId)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_AltBundleId]
+  }
+}
+

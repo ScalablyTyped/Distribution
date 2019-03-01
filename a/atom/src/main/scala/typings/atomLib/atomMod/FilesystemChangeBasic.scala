@@ -12,3 +12,13 @@ trait FilesystemChangeBasic[Action /* <: atomLib.atomLibStrings.created | atomLi
   var path: java.lang.String
 }
 
+object FilesystemChangeBasic {
+  @scala.inline
+  def apply[Action /* <: atomLib.atomLibStrings.created | atomLib.atomLibStrings.modified | atomLib.atomLibStrings.deleted | atomLib.atomLibStrings.renamed */](action: Action, path: java.lang.String): FilesystemChangeBasic[Action] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("action")(action.asInstanceOf[js.Any])
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[FilesystemChangeBasic[Action]]
+  }
+}
+

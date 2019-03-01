@@ -10,3 +10,13 @@ trait Anon_Address extends js.Object {
   var latlng: leafletLib.leafletMod.LatLng
 }
 
+object Anon_Address {
+  @scala.inline
+  def apply(address: java.lang.String, latlng: leafletLib.leafletMod.LatLng): Anon_Address = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("latlng")(latlng)
+    __obj.asInstanceOf[Anon_Address]
+  }
+}
+

@@ -59,3 +59,24 @@ trait IGridOptions[TEntity] extends js.Object {
   var treeRowHeaderBaseWidth: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply[TEntity](
+    showTreeExpandNoChildren: js.UndefOr[scala.Boolean] = js.undefined,
+    showTreeRowHeader: js.UndefOr[scala.Boolean] = js.undefined,
+    treeCustomAggregations: org.scalablytyped.runtime.StringDictionary[IGridTreeBaseCustomAggregation[TEntity]] = null,
+    treeIndent: scala.Int | scala.Double = null,
+    treeRowHeaderAlwaysVisible: js.UndefOr[scala.Boolean] = js.undefined,
+    treeRowHeaderBaseWidth: scala.Int | scala.Double = null
+  ): IGridOptions[TEntity] = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(showTreeExpandNoChildren)) __obj.updateDynamic("showTreeExpandNoChildren")(showTreeExpandNoChildren)
+    if (!js.isUndefined(showTreeRowHeader)) __obj.updateDynamic("showTreeRowHeader")(showTreeRowHeader)
+    if (treeCustomAggregations != null) __obj.updateDynamic("treeCustomAggregations")(treeCustomAggregations)
+    if (treeIndent != null) __obj.updateDynamic("treeIndent")(treeIndent.asInstanceOf[js.Any])
+    if (!js.isUndefined(treeRowHeaderAlwaysVisible)) __obj.updateDynamic("treeRowHeaderAlwaysVisible")(treeRowHeaderAlwaysVisible)
+    if (treeRowHeaderBaseWidth != null) __obj.updateDynamic("treeRowHeaderBaseWidth")(treeRowHeaderBaseWidth.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IGridOptions[TEntity]]
+  }
+}
+

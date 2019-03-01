@@ -27,3 +27,23 @@ trait Table
   var nodeColumnIdx: scala.Double
 }
 
+object Table {
+  @scala.inline
+  def apply(
+    checkboxColumnIdx: js.Any,
+    indentation: scala.Double,
+    nodeColumnIdx: scala.Double,
+    StringDictionary: /**
+    * Support misc options
+    */
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Table = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkboxColumnIdx")(checkboxColumnIdx)
+    __obj.updateDynamic("indentation")(indentation)
+    __obj.updateDynamic("nodeColumnIdx")(nodeColumnIdx)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Table]
+  }
+}
+

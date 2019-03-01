@@ -10,3 +10,13 @@ trait GradientOptions extends js.Object {
   var stops: js.UndefOr[js.Any] = js.undefined
 }
 
+object GradientOptions {
+  @scala.inline
+  def apply(name: java.lang.String = null, stops: js.Any = null): GradientOptions = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (stops != null) __obj.updateDynamic("stops")(stops)
+    __obj.asInstanceOf[GradientOptions]
+  }
+}
+

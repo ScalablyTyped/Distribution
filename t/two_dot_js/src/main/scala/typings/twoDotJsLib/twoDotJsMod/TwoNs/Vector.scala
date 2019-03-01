@@ -31,3 +31,60 @@ trait Vector extends js.Object {
   def subSelf(v: Vector): this.type
 }
 
+object Vector {
+  @scala.inline
+  def apply(
+    add: js.Function2[Vector, Vector, Vector],
+    addSelf: js.Function1[Vector, Vector],
+    clear: js.Function0[Vector],
+    clone: js.Function0[Vector],
+    copy: js.Function1[Vector, Vector],
+    distanceSquared: js.Function1[Vector, scala.Double],
+    distanceTo: js.Function1[Vector, scala.Double],
+    divideScalar: js.Function1[scala.Double, Vector],
+    dot: js.Function1[Vector, scala.Double],
+    equals: js.Function1[Vector, scala.Boolean],
+    isZero: js.Function0[scala.Boolean],
+    length: js.Function0[scala.Double],
+    lengthSquared: js.Function0[scala.Double],
+    lerp: js.Function2[Vector, scala.Double, Vector],
+    multiplyScalar: js.Function1[scala.Double, Vector],
+    multiplySelf: js.Function1[Vector, Vector],
+    negate: js.Function0[Vector],
+    normalize: js.Function0[Vector],
+    set: js.Function2[scala.Double, scala.Double, Vector],
+    setLength: js.Function1[scala.Double, Vector],
+    sub: js.Function2[Vector, Vector, Vector],
+    subSelf: js.Function1[Vector, Vector],
+    x: scala.Double,
+    y: scala.Double
+  ): Vector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("addSelf")(addSelf)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("clone")(clone)
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("distanceSquared")(distanceSquared)
+    __obj.updateDynamic("distanceTo")(distanceTo)
+    __obj.updateDynamic("divideScalar")(divideScalar)
+    __obj.updateDynamic("dot")(dot)
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("isZero")(isZero)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("lengthSquared")(lengthSquared)
+    __obj.updateDynamic("lerp")(lerp)
+    __obj.updateDynamic("multiplyScalar")(multiplyScalar)
+    __obj.updateDynamic("multiplySelf")(multiplySelf)
+    __obj.updateDynamic("negate")(negate)
+    __obj.updateDynamic("normalize")(normalize)
+    __obj.updateDynamic("set")(set)
+    __obj.updateDynamic("setLength")(setLength)
+    __obj.updateDynamic("sub")(sub)
+    __obj.updateDynamic("subSelf")(subSelf)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[Vector]
+  }
+}
+

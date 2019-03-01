@@ -35,3 +35,30 @@ trait Anon_ActiveHighlighted extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ActiveHighlighted {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    highlighted: js.UndefOr[scala.Boolean] = js.undefined,
+    loadReplace: js.UndefOr[scala.Boolean] = js.undefined,
+    muted: js.UndefOr[scala.Boolean] = js.undefined,
+    openerTabId: scala.Int | scala.Double = null,
+    pinned: js.UndefOr[scala.Boolean] = js.undefined,
+    selected: js.UndefOr[scala.Boolean] = js.undefined,
+    successorTabId: scala.Int | scala.Double = null,
+    url: java.lang.String = null
+  ): Anon_ActiveHighlighted = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(highlighted)) __obj.updateDynamic("highlighted")(highlighted)
+    if (!js.isUndefined(loadReplace)) __obj.updateDynamic("loadReplace")(loadReplace)
+    if (!js.isUndefined(muted)) __obj.updateDynamic("muted")(muted)
+    if (openerTabId != null) __obj.updateDynamic("openerTabId")(openerTabId.asInstanceOf[js.Any])
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
+    if (!js.isUndefined(selected)) __obj.updateDynamic("selected")(selected)
+    if (successorTabId != null) __obj.updateDynamic("successorTabId")(successorTabId.asInstanceOf[js.Any])
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Anon_ActiveHighlighted]
+  }
+}
+

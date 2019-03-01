@@ -11,3 +11,18 @@ trait PureQueryOptions extends js.Object {
   var variables: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 
+object PureQueryOptions {
+  @scala.inline
+  def apply(
+    query: graphqlLib.languageAstMod.DocumentNode,
+    context: js.Any = null,
+    variables: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): PureQueryOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("query")(query)
+    if (context != null) __obj.updateDynamic("context")(context)
+    if (variables != null) __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[PureQueryOptions]
+  }
+}
+

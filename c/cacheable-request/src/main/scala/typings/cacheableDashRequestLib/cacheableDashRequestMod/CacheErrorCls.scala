@@ -10,3 +10,16 @@ trait CacheErrorCls
   val name: cacheableDashRequestLib.cacheableDashRequestLibStrings.CacheError
 }
 
+object CacheErrorCls {
+  @scala.inline
+  def apply(
+    name: cacheableDashRequestLib.cacheableDashRequestLibStrings.CacheError,
+    stack: java.lang.String = null
+  ): CacheErrorCls = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[CacheErrorCls]
+  }
+}
+

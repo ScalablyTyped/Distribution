@@ -10,31 +10,39 @@ object reactDashRndLibStrings {
   sealed trait body extends js.Object
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashRndLib.reactDashRndMod.Direction
   
   @js.native
-  sealed trait bottomLeft extends js.Object
+  sealed trait bottomLeft
+    extends reactDashRndLib.reactDashRndMod.Direction
   
   @js.native
-  sealed trait bottomRight extends js.Object
+  sealed trait bottomRight
+    extends reactDashRndLib.reactDashRndMod.Direction
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashRndLib.reactDashRndMod.Direction
   
   @js.native
   sealed trait parent extends js.Object
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashRndLib.reactDashRndMod.Direction
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashRndLib.reactDashRndMod.Direction
   
   @js.native
-  sealed trait topLeft extends js.Object
+  sealed trait topLeft
+    extends reactDashRndLib.reactDashRndMod.Direction
   
   @js.native
-  sealed trait topRight extends js.Object
+  sealed trait topRight
+    extends reactDashRndLib.reactDashRndMod.Direction
   
   @js.native
   sealed trait window extends js.Object

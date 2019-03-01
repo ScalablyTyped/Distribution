@@ -20,3 +20,14 @@ trait HistoryEntry[T] extends js.Object {
   var serverItem: java.lang.String
 }
 
+object HistoryEntry {
+  @scala.inline
+  def apply[T](changeList: ChangeList[T], itemChangeType: VersionControlChangeType, serverItem: java.lang.String): HistoryEntry[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("changeList")(changeList)
+    __obj.updateDynamic("itemChangeType")(itemChangeType)
+    __obj.updateDynamic("serverItem")(serverItem)
+    __obj.asInstanceOf[HistoryEntry[T]]
+  }
+}
+

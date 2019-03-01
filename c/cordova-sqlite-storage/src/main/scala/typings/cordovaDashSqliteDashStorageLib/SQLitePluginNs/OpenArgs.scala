@@ -15,3 +15,26 @@ trait OpenArgs
   var name: java.lang.String
 }
 
+object OpenArgs {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    androidDatabaseImplementation: scala.Int | scala.Double = null,
+    androidLockWorkaround: scala.Int | scala.Double = null,
+    createFromLocation: scala.Int | scala.Double = null,
+    iosDatabaseLocation: java.lang.String = null,
+    location: java.lang.String = null
+  ): OpenArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (androidDatabaseImplementation != null) __obj.updateDynamic("androidDatabaseImplementation")(androidDatabaseImplementation.asInstanceOf[js.Any])
+    if (androidLockWorkaround != null) __obj.updateDynamic("androidLockWorkaround")(androidLockWorkaround.asInstanceOf[js.Any])
+    if (createFromLocation != null) __obj.updateDynamic("createFromLocation")(createFromLocation.asInstanceOf[js.Any])
+    if (iosDatabaseLocation != null) __obj.updateDynamic("iosDatabaseLocation")(iosDatabaseLocation)
+    if (location != null) __obj.updateDynamic("location")(location)
+    __obj.asInstanceOf[OpenArgs]
+  }
+}
+

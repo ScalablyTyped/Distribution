@@ -12,3 +12,19 @@ trait IPageButton extends js.Object {
   var `type`: java.lang.String
 }
 
+object IPageButton {
+  @scala.inline
+  def apply(
+    active: scala.Boolean,
+    `type`: java.lang.String,
+    current: js.UndefOr[scala.Boolean] = js.undefined,
+    number: scala.Int | scala.Double = null
+  ): IPageButton = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("active")(active)
+    if (!js.isUndefined(current)) __obj.updateDynamic("current")(current)
+    if (number != null) __obj.updateDynamic("number")(number.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPageButton]
+  }
+}
+

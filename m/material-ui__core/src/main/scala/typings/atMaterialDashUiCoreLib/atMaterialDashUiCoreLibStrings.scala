@@ -31,526 +31,823 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait TypographyProps extends js.Object
   
   @js.native
-  sealed trait absolute extends js.Object
+  sealed trait absolute
+    extends atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey
   
   @js.native
-  sealed trait action extends js.Object
+  sealed trait action
+    extends atMaterialDashUiCoreLib.cardactionsCardActionsMod.CardActionsClassKey
+       with atMaterialDashUiCoreLib.cardheaderCardHeaderMod.CardHeaderClassKey
+       with atMaterialDashUiCoreLib.dialogactionsDialogActionsMod.DialogActionsClassKey
+       with atMaterialDashUiCoreLib.expansionpanelactionsExpansionPanelActionsMod.ExpansionPanelActionsClassKey
+       with atMaterialDashUiCoreLib.snackbarcontentSnackbarContentMod.SnackbarContentClassKey
   
   @js.native
-  sealed trait actionIcon extends js.Object
+  sealed trait actionIcon
+    extends atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
   
   @js.native
-  sealed trait actionIconActionPosLeft extends js.Object
+  sealed trait actionIconActionPosLeft
+    extends atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
   
   @js.native
-  sealed trait actions extends js.Object
+  sealed trait actions
+    extends atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
+       with atMaterialDashUiCoreLib.stepiconStepIconMod.StepIconClasskey
+       with atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
+       with atMaterialDashUiCoreLib.tablesortlabelTableSortLabelMod.TableSortLabelClassKey
   
   @js.native
-  sealed trait addEndListener extends js.Object
+  sealed trait addEndListener
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionKeys
   
   @js.native
-  sealed trait adornedEnd extends js.Object
+  sealed trait adornedEnd
+    extends atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
-  sealed trait adornedStart extends js.Object
+  sealed trait adornedStart
+    extends atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
-  sealed trait `align-content-xs-center` extends js.Object
+  sealed trait `align-content-xs-center`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `align-content-xs-flex-end` extends js.Object
+  sealed trait `align-content-xs-flex-end`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `align-content-xs-flex-start` extends js.Object
+  sealed trait `align-content-xs-flex-start`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `align-content-xs-space-around` extends js.Object
+  sealed trait `align-content-xs-space-around`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `align-content-xs-space-between` extends js.Object
+  sealed trait `align-content-xs-space-between`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `align-items-xs-baseline` extends js.Object
+  sealed trait `align-items-xs-baseline`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `align-items-xs-center` extends js.Object
+  sealed trait `align-items-xs-center`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `align-items-xs-flex-end` extends js.Object
+  sealed trait `align-items-xs-flex-end`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `align-items-xs-flex-start` extends js.Object
+  sealed trait `align-items-xs-flex-start`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait alignCenter extends js.Object
+  sealed trait alignCenter
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait alignContent extends js.Object
+  sealed trait alignContent
+    extends atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait alignItems extends js.Object
+  sealed trait alignItems
+    extends atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait alignJustify extends js.Object
+  sealed trait alignJustify
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait alignLeft extends js.Object
+  sealed trait alignLeft
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait alignRight extends js.Object
+  sealed trait alignRight
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait alternativeLabel extends js.Object
+  sealed trait alternativeLabel
+    extends atMaterialDashUiCoreLib.stepStepMod.StepClasskey
+       with atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
+       with atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
+       with atMaterialDashUiCoreLib.stepperStepperMod.StepperClasskey
   
   @js.native
   sealed trait always extends js.Object
   
   @js.native
-  sealed trait anchorEl extends js.Object
+  sealed trait anchorEl
+    extends atMaterialDashUiCoreLib.popoverPopoverMod.PopoverReference
   
   @js.native
-  sealed trait anchorOriginBottomCenter extends js.Object
+  sealed trait anchorOriginBottomCenter
+    extends atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarClassKey
   
   @js.native
-  sealed trait anchorOriginBottomLeft extends js.Object
+  sealed trait anchorOriginBottomLeft
+    extends atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarClassKey
   
   @js.native
-  sealed trait anchorOriginBottomRight extends js.Object
+  sealed trait anchorOriginBottomRight
+    extends atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarClassKey
   
   @js.native
-  sealed trait anchorOriginTopCenter extends js.Object
+  sealed trait anchorOriginTopCenter
+    extends atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarClassKey
   
   @js.native
-  sealed trait anchorOriginTopLeft extends js.Object
+  sealed trait anchorOriginTopLeft
+    extends atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarClassKey
   
   @js.native
-  sealed trait anchorOriginTopRight extends js.Object
+  sealed trait anchorOriginTopRight
+    extends atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarClassKey
   
   @js.native
-  sealed trait anchorPosition extends js.Object
+  sealed trait anchorPosition
+    extends atMaterialDashUiCoreLib.popoverPopoverMod.PopoverReference
   
   @js.native
-  sealed trait animated extends js.Object
+  sealed trait animated
+    extends atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
   
   @js.native
-  sealed trait asc extends js.Object
+  sealed trait asc
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.SortDirection
   
   @js.native
-  sealed trait asterisk extends js.Object
+  sealed trait asterisk
+    extends atMaterialDashUiCoreLib.formlabelFormLabelMod.FormLabelClassKey
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends atMaterialDashUiCoreLib.gridGridMod.GridSize
   
   @js.native
-  sealed trait avatar extends js.Object
+  sealed trait avatar
+    extends atMaterialDashUiCoreLib.cardheaderCardHeaderMod.CardHeaderClassKey
+       with atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait avatarChildren extends js.Object
+  sealed trait avatarChildren
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait avatarPrimary extends js.Object
+  sealed trait avatarPrimary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait avatarSecondary extends js.Object
+  sealed trait avatarSecondary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait badge extends js.Object
+  sealed trait badge
+    extends atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey
   
   @js.native
-  sealed trait bar extends js.Object
+  sealed trait bar
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
+       with atMaterialDashUiCoreLib.switchSwitchMod.SwitchClassKey
   
   @js.native
-  sealed trait bar1Buffer extends js.Object
+  sealed trait bar1Buffer
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait bar1Determinate extends js.Object
+  sealed trait bar1Determinate
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait bar1Indeterminate extends js.Object
+  sealed trait bar1Indeterminate
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait bar2Buffer extends js.Object
+  sealed trait bar2Buffer
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait bar2Indeterminate extends js.Object
+  sealed trait bar2Indeterminate
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait barColorPrimary extends js.Object
+  sealed trait barColorPrimary
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait barColorSecondary extends js.Object
+  sealed trait barColorSecondary
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait baseline extends js.Object
+  sealed trait baseline
+    extends atMaterialDashUiCoreLib.gridGridMod.GridItemsAlignment
   
   @js.native
-  sealed trait body extends js.Object
+  sealed trait body
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellClassKey
   
   @js.native
-  sealed trait body1 extends js.Object
+  sealed trait body1
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait body2 extends js.Object
+  sealed trait body2
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait `bottom-end` extends js.Object
+  sealed trait `bottom-end`
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait `bottom-start` extends js.Object
+  sealed trait `bottom-start`
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait buffer extends js.Object
+  sealed trait buffer
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.linkLinkMod.LinkClassKey
+       with atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait caption extends js.Object
+  sealed trait caption
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridContentAlignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridItemsAlignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridJustification
   
   @js.native
-  sealed trait centered extends js.Object
+  sealed trait centered
+    extends atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait checkbox
+    extends atMaterialDashUiCoreLib.tableTableMod.Padding
+       with atMaterialDashUiCoreLib.tablecellTableCellMod.Padding
   
   @js.native
-  sealed trait checked extends js.Object
+  sealed trait checked
+    extends atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseClassKey
   
   @js.native
-  sealed trait child extends js.Object
+  sealed trait child
+    extends atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleClassKey
   
   @js.native
-  sealed trait childLeaving extends js.Object
+  sealed trait childLeaving
+    extends atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleClassKey
   
   @js.native
-  sealed trait childPulsate extends js.Object
+  sealed trait childPulsate
+    extends atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleClassKey
   
   @js.native
-  sealed trait circle extends js.Object
+  sealed trait circle
+    extends atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
   
   @js.native
-  sealed trait circleDisableShrink extends js.Object
+  sealed trait circleDisableShrink
+    extends atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
   
   @js.native
-  sealed trait circleIndeterminate extends js.Object
+  sealed trait circleIndeterminate
+    extends atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
   
   @js.native
-  sealed trait circleStatic extends js.Object
+  sealed trait circleStatic
+    extends atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
   
   @js.native
-  sealed trait className extends js.Object
+  sealed trait className
+    extends atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait classes extends js.Object
+  sealed trait classes
+    extends atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait clickable extends js.Object
+  sealed trait clickable
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait clickablePrimary extends js.Object
+  sealed trait clickablePrimary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait clickableSecondary extends js.Object
+  sealed trait clickableSecondary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
   sealed trait color extends js.Object
   
   @js.native
-  sealed trait colorAction extends js.Object
+  sealed trait colorAction
+    extends atMaterialDashUiCoreLib.iconIconMod.IconClassKey
+       with atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconClassKey
   
   @js.native
-  sealed trait colorDefault extends js.Object
+  sealed trait colorDefault
+    extends atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
+       with atMaterialDashUiCoreLib.avatarAvatarMod.AvatarClassKey
   
   @js.native
-  sealed trait colorDisabled extends js.Object
+  sealed trait colorDisabled
+    extends atMaterialDashUiCoreLib.iconIconMod.IconClassKey
+       with atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconClassKey
   
   @js.native
-  sealed trait colorError extends js.Object
+  sealed trait colorError
+    extends atMaterialDashUiCoreLib.iconIconMod.IconClassKey
+       with atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconClassKey
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait colorInherit extends js.Object
+  sealed trait colorInherit
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.fabFabMod.FabClassKey
+       with atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonClassKey
+       with atMaterialDashUiCoreLib.listsubheaderListSubheaderMod.ListSubheaderClassKey
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait colorPrimary extends js.Object
+  sealed trait colorPrimary
+    extends atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
+       with atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey
+       with atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxClassKey
+       with atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
+       with atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
+       with atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonClassKey
+       with atMaterialDashUiCoreLib.iconIconMod.IconClassKey
+       with atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
+       with atMaterialDashUiCoreLib.listsubheaderListSubheaderMod.ListSubheaderClassKey
+       with atMaterialDashUiCoreLib.radioRadioMod.RadioClassKey
+       with atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconClassKey
+       with atMaterialDashUiCoreLib.switchSwitchMod.SwitchClassKey
+       with atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorClassKey
   
   @js.native
-  sealed trait colorSecondary extends js.Object
+  sealed trait colorSecondary
+    extends atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
+       with atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey
+       with atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxClassKey
+       with atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
+       with atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
+       with atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonClassKey
+       with atMaterialDashUiCoreLib.iconIconMod.IconClassKey
+       with atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
+       with atMaterialDashUiCoreLib.radioRadioMod.RadioClassKey
+       with atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconClassKey
+       with atMaterialDashUiCoreLib.switchSwitchMod.SwitchClassKey
+       with atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorClassKey
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait colorTextSecondary extends js.Object
+  sealed trait colorTextSecondary
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait column extends js.Object
+  sealed trait column
+    extends atMaterialDashUiCoreLib.gridGridMod.GridDirection
   
   @js.native
-  sealed trait `column-reverse` extends js.Object
+  sealed trait `column-reverse`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridDirection
   
   @js.native
-  sealed trait completed extends js.Object
+  sealed trait completed
+    extends atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
+       with atMaterialDashUiCoreLib.stepiconStepIconMod.StepIconClasskey
+       with atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
   
   @js.native
-  sealed trait component extends js.Object
+  sealed trait component
+    extends atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait contained extends js.Object
+  sealed trait contained
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextClassKey
   
   @js.native
-  sealed trait containedPrimary extends js.Object
+  sealed trait containedPrimary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait containedSecondary extends js.Object
+  sealed trait containedSecondary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait container extends js.Object
+  sealed trait container
+    extends atMaterialDashUiCoreLib.collapseCollapseMod.CollapseClassKey
+       with atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
+       with atMaterialDashUiCoreLib.gridGridMod.GridClassKey
+       with atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait content extends js.Object
+  sealed trait content
+    extends atMaterialDashUiCoreLib.cardheaderCardHeaderMod.CardHeaderClassKey
+       with atMaterialDashUiCoreLib.expansionpanelsummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
   
   @js.native
   sealed trait css extends js.Object
   
   @js.native
-  sealed trait dark extends js.Object
+  sealed trait dark
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PaletteType
   
   @js.native
-  sealed trait dashed extends js.Object
+  sealed trait dashed
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait dashedColorPrimary extends js.Object
+  sealed trait dashedColorPrimary
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait dashedColorSecondary extends js.Object
+  sealed trait dashedColorSecondary
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color
+       with atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
+       with atMaterialDashUiCoreLib.tableTableMod.Padding
+       with atMaterialDashUiCoreLib.tablecellTableCellMod.Padding
   
   @js.native
-  sealed trait deletable extends js.Object
+  sealed trait deletable
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait deletablePrimary extends js.Object
+  sealed trait deletablePrimary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait deletableSecondary extends js.Object
+  sealed trait deletableSecondary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait deleteIcon extends js.Object
+  sealed trait deleteIcon
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait deleteIconOutlinedColorPrimary extends js.Object
+  sealed trait deleteIconOutlinedColorPrimary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait deleteIconOutlinedColorSecondary extends js.Object
+  sealed trait deleteIconOutlinedColorSecondary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait deleteIconPrimary extends js.Object
+  sealed trait deleteIconPrimary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait deleteIconSecondary extends js.Object
+  sealed trait deleteIconSecondary
+    extends atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait dense extends js.Object
+  sealed trait dense
+    extends atMaterialDashUiCoreLib.listListMod.ListClassKey
+       with atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
+       with atMaterialDashUiCoreLib.listitemtextListItemTextMod.ListItemTextClassKey
+       with atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin
+       with atMaterialDashUiCoreLib.tableTableMod.Padding
+       with atMaterialDashUiCoreLib.tablecellTableCellMod.Padding
+       with atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarClassKey
   
   @js.native
-  sealed trait desc extends js.Object
+  sealed trait desc
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.SortDirection
   
   @js.native
-  sealed trait determinate extends js.Object
+  sealed trait determinate
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait direction extends js.Object
+  sealed trait direction
+    extends atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait `direction-xs-column` extends js.Object
+  sealed trait `direction-xs-column`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `direction-xs-column-reverse` extends js.Object
+  sealed trait `direction-xs-column-reverse`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `direction-xs-row-reverse` extends js.Object
+  sealed trait `direction-xs-row-reverse`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait disableActionSpacing extends js.Object
+  sealed trait disableActionSpacing
+    extends atMaterialDashUiCoreLib.cardactionsCardActionsMod.CardActionsClassKey
   
   @js.native
-  sealed trait disablePointerEvents extends js.Object
+  sealed trait disablePointerEvents
+    extends atMaterialDashUiCoreLib.inputadornmentInputAdornmentMod.InputAdornmentClassKey
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait disabled
+    extends atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseClassKey
+       with atMaterialDashUiCoreLib.buttonbaseButtonBaseMod.ButtonBaseClassKey
+       with atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.expansionpanelExpansionPanelMod.ExpansionPanelClassKey
+       with atMaterialDashUiCoreLib.expansionpanelsummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
+       with atMaterialDashUiCoreLib.fabFabMod.FabClassKey
+       with atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.formcontrollabelFormControlLabelMod.FormControlLabelClassKey
+       with atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextClassKey
+       with atMaterialDashUiCoreLib.formlabelFormLabelMod.FormLabelClassKey
+       with atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonClassKey
+       with atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
+       with atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
+       with atMaterialDashUiCoreLib.nativeselectNativeSelectMod.NativeSelectClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
+       with atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey
+       with atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
+       with atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
+       with atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
-  sealed trait display1 extends js.Object
+  sealed trait display1
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait display2 extends js.Object
+  sealed trait display2
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait display3 extends js.Object
+  sealed trait display3
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait display4 extends js.Object
+  sealed trait display4
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
   sealed trait div extends js.Object
   
   @js.native
-  sealed trait divider extends js.Object
+  sealed trait divider
+    extends atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
   
   @js.native
-  sealed trait docked extends js.Object
+  sealed trait docked
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait dot extends js.Object
+  sealed trait dot
+    extends atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey
+       with atMaterialDashUiCoreLib.mobilestepperMobileStepperMod.MobileStepperClassKey
   
   @js.native
-  sealed trait dotActive extends js.Object
+  sealed trait dotActive
+    extends atMaterialDashUiCoreLib.mobilestepperMobileStepperMod.MobileStepperClassKey
   
   @js.native
-  sealed trait dots extends js.Object
+  sealed trait dots
+    extends atMaterialDashUiCoreLib.mobilestepperMobileStepperMod.MobileStepperClassKey
   
   @js.native
   sealed trait down extends js.Object
   
   @js.native
-  sealed trait elevation0 extends js.Object
+  sealed trait elevation0
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation1 extends js.Object
+  sealed trait elevation1
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation10 extends js.Object
+  sealed trait elevation10
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation11 extends js.Object
+  sealed trait elevation11
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation12 extends js.Object
+  sealed trait elevation12
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation13 extends js.Object
+  sealed trait elevation13
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation14 extends js.Object
+  sealed trait elevation14
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation15 extends js.Object
+  sealed trait elevation15
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation16 extends js.Object
+  sealed trait elevation16
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation17 extends js.Object
+  sealed trait elevation17
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation18 extends js.Object
+  sealed trait elevation18
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation19 extends js.Object
+  sealed trait elevation19
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation2 extends js.Object
+  sealed trait elevation2
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation20 extends js.Object
+  sealed trait elevation20
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation21 extends js.Object
+  sealed trait elevation21
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation22 extends js.Object
+  sealed trait elevation22
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation23 extends js.Object
+  sealed trait elevation23
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation24 extends js.Object
+  sealed trait elevation24
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation3 extends js.Object
+  sealed trait elevation3
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation4 extends js.Object
+  sealed trait elevation4
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation5 extends js.Object
+  sealed trait elevation5
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation6 extends js.Object
+  sealed trait elevation6
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation7 extends js.Object
+  sealed trait elevation7
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation8 extends js.Object
+  sealed trait elevation8
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait elevation9 extends js.Object
+  sealed trait elevation9
+    extends atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait entered extends js.Object
+  sealed trait entered
+    extends atMaterialDashUiCoreLib.collapseCollapseMod.CollapseClassKey
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextClassKey
+       with atMaterialDashUiCoreLib.formlabelFormLabelMod.FormLabelClassKey
+       with atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
+       with atMaterialDashUiCoreLib.stepiconStepIconMod.StepIconClasskey
+       with atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
   
   @js.native
-  sealed trait expandIcon extends js.Object
+  sealed trait expandIcon
+    extends atMaterialDashUiCoreLib.expansionpanelsummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
   
   @js.native
-  sealed trait expanded extends js.Object
+  sealed trait expanded
+    extends atMaterialDashUiCoreLib.expansionpanelExpansionPanelMod.ExpansionPanelClassKey
+       with atMaterialDashUiCoreLib.expansionpanelsummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
   
   @js.native
-  sealed trait extended extends js.Object
+  sealed trait extended
+    extends atMaterialDashUiCoreLib.fabFabMod.FabClassKey
   
   @js.native
-  sealed trait extendedFab extends js.Object
+  sealed trait extendedFab
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait fab extends js.Object
+  sealed trait fab
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait filled extends js.Object
+  sealed trait filled
+    extends atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextClassKey
+       with atMaterialDashUiCoreLib.formlabelFormLabelMod.FormLabelClassKey
+       with atMaterialDashUiCoreLib.inputadornmentInputAdornmentMod.InputAdornmentClassKey
+       with atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
+       with atMaterialDashUiCoreLib.nativeselectNativeSelectMod.NativeSelectClassKey
+       with atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey
   
   @js.native
-  sealed trait fixed extends js.Object
+  sealed trait fixed
+    extends atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
   
   @js.native
-  sealed trait flat extends js.Object
+  sealed trait flat
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait flatPrimary extends js.Object
+  sealed trait flatPrimary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait flatSecondary extends js.Object
+  sealed trait flatSecondary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait `flex-end` extends js.Object
+  sealed trait `flex-end`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridContentAlignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridItemsAlignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridJustification
   
   @js.native
-  sealed trait `flex-start` extends js.Object
+  sealed trait `flex-start`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridContentAlignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridItemsAlignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridJustification
   
   @js.native
-  sealed trait flexContainer extends js.Object
+  sealed trait flexContainer
+    extends atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
   
   @js.native
-  sealed trait focusHighlight extends js.Object
+  sealed trait focusHighlight
+    extends atMaterialDashUiCoreLib.cardactionareaCardActionAreaMod.CardActionAreaClassKey
   
   @js.native
-  sealed trait focusVisible extends js.Object
+  sealed trait focusVisible
+    extends atMaterialDashUiCoreLib.buttonbaseButtonBaseMod.ButtonBaseClassKey
+       with atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.cardactionareaCardActionAreaMod.CardActionAreaClassKey
+       with atMaterialDashUiCoreLib.fabFabMod.FabClassKey
+       with atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
   
   @js.native
-  sealed trait focused extends js.Object
+  sealed trait focused
+    extends atMaterialDashUiCoreLib.expansionpanelsummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
+       with atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextClassKey
+       with atMaterialDashUiCoreLib.formlabelFormLabelMod.FormLabelClassKey
+       with atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
   sealed trait fontFamily extends js.Object
@@ -559,301 +856,468 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait fontSize extends js.Object
   
   @js.native
-  sealed trait fontSizeInherit extends js.Object
+  sealed trait fontSizeInherit
+    extends atMaterialDashUiCoreLib.iconIconMod.IconClassKey
+       with atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconClassKey
   
   @js.native
-  sealed trait fontSizeLarge extends js.Object
+  sealed trait fontSizeLarge
+    extends atMaterialDashUiCoreLib.iconIconMod.IconClassKey
+       with atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconClassKey
   
   @js.native
-  sealed trait fontSizeSmall extends js.Object
+  sealed trait fontSizeSmall
+    extends atMaterialDashUiCoreLib.iconIconMod.IconClassKey
+       with atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconClassKey
   
   @js.native
   sealed trait fontWeight extends js.Object
   
   @js.native
-  sealed trait footer extends js.Object
+  sealed trait footer
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellClassKey
+       with atMaterialDashUiCoreLib.tablerowTableRowMod.TableRowClassKey
   
   @js.native
-  sealed trait formControl extends js.Object
+  sealed trait formControl
+    extends atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
   
   @js.native
-  sealed trait fullWidth extends js.Object
+  sealed trait fullWidth
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.formcontrolFormControlMod.FormControlClassKey
+       with atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
-  sealed trait `grid-xs-1` extends js.Object
+  sealed trait `grid-xs-1`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-10` extends js.Object
+  sealed trait `grid-xs-10`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-11` extends js.Object
+  sealed trait `grid-xs-11`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-12` extends js.Object
+  sealed trait `grid-xs-12`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-2` extends js.Object
+  sealed trait `grid-xs-2`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-3` extends js.Object
+  sealed trait `grid-xs-3`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-4` extends js.Object
+  sealed trait `grid-xs-4`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-5` extends js.Object
+  sealed trait `grid-xs-5`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-6` extends js.Object
+  sealed trait `grid-xs-6`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-7` extends js.Object
+  sealed trait `grid-xs-7`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-8` extends js.Object
+  sealed trait `grid-xs-8`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-9` extends js.Object
+  sealed trait `grid-xs-9`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-auto` extends js.Object
+  sealed trait `grid-xs-auto`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `grid-xs-true` extends js.Object
+  sealed trait `grid-xs-true`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait gutterBottom extends js.Object
+  sealed trait gutterBottom
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait gutters extends js.Object
+  sealed trait gutters
+    extends atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
+       with atMaterialDashUiCoreLib.listsubheaderListSubheaderMod.ListSubheaderClassKey
+       with atMaterialDashUiCoreLib.menuitemMenuItemMod.MenuItemClassKey
+       with atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarClassKey
   
   @js.native
-  sealed trait h1 extends js.Object
+  sealed trait h1
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait h2 extends js.Object
+  sealed trait h2
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait h3 extends js.Object
+  sealed trait h3
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait h4 extends js.Object
+  sealed trait h4
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait h5 extends js.Object
+  sealed trait h5
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait h6 extends js.Object
+  sealed trait h6
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait head extends js.Object
+  sealed trait head
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellClassKey
+       with atMaterialDashUiCoreLib.tablerowTableRowMod.TableRowClassKey
   
   @js.native
-  sealed trait headline extends js.Object
+  sealed trait headline
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hidden
+    extends atMaterialDashUiCoreLib.modalModalMod.ModalClassKey
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait horizontal extends js.Object
+  sealed trait horizontal
+    extends atMaterialDashUiCoreLib.stepperStepperMod.Orientation
+       with atMaterialDashUiCoreLib.stepStepMod.StepClasskey
+       with atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
+       with atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
+       with atMaterialDashUiCoreLib.stepperStepperMod.StepperClasskey
   
   @js.native
-  sealed trait hover extends js.Object
+  sealed trait hover
+    extends atMaterialDashUiCoreLib.tablerowTableRowMod.TableRowClassKey
   
   @js.native
-  sealed trait icon extends js.Object
+  sealed trait icon
+    extends atMaterialDashUiCoreLib.listitemavatarListItemAvatarMod.ListItemAvatarClassKey
+       with atMaterialDashUiCoreLib.nativeselectNativeSelectMod.NativeSelectClassKey
+       with atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey
+       with atMaterialDashUiCoreLib.switchSwitchMod.SwitchClassKey
+       with atMaterialDashUiCoreLib.tablesortlabelTableSortLabelMod.TableSortLabelClassKey
   
   @js.native
-  sealed trait iconChecked extends js.Object
+  sealed trait iconChecked
+    extends atMaterialDashUiCoreLib.switchSwitchMod.SwitchClassKey
   
   @js.native
-  sealed trait iconContainer extends js.Object
+  sealed trait iconContainer
+    extends atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
   
   @js.native
-  sealed trait iconDirectionAsc extends js.Object
+  sealed trait iconDirectionAsc
+    extends atMaterialDashUiCoreLib.tablesortlabelTableSortLabelMod.TableSortLabelClassKey
   
   @js.native
-  sealed trait iconDirectionDesc extends js.Object
+  sealed trait iconDirectionDesc
+    extends atMaterialDashUiCoreLib.tablesortlabelTableSortLabelMod.TableSortLabelClassKey
   
   @js.native
-  sealed trait iconOnly extends js.Object
+  sealed trait iconOnly
+    extends atMaterialDashUiCoreLib.bottomnavigationactionBottomNavigationActionMod.BottomNavigationActionClassKey
   
   @js.native
-  sealed trait img extends js.Object
+  sealed trait img
+    extends atMaterialDashUiCoreLib.avatarAvatarMod.AvatarClassKey
   
   @js.native
-  sealed trait imgFullHeight extends js.Object
+  sealed trait imgFullHeight
+    extends atMaterialDashUiCoreLib.gridlisttileGridListTileMod.GridListTileClassKey
   
   @js.native
-  sealed trait imgFullWidth extends js.Object
+  sealed trait imgFullWidth
+    extends atMaterialDashUiCoreLib.gridlisttileGridListTileMod.GridListTileClassKey
   
   @js.native
-  sealed trait in extends js.Object
+  sealed trait in
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionKeys
   
   @js.native
-  sealed trait indeterminate extends js.Object
+  sealed trait indeterminate
+    extends atMaterialDashUiCoreLib.checkboxCheckboxMod.CheckboxClassKey
+       with atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
+       with atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait indicator extends js.Object
+  sealed trait indicator
+    extends atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
   
   @js.native
-  sealed trait inherit extends js.Object
+  sealed trait inherit
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment
+       with atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color
   
   @js.native
-  sealed trait `inline` extends js.Object
+  sealed trait `inline`
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait input
+    extends atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseClassKey
+       with atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
+       with atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
   
   @js.native
-  sealed trait inputAdornedEnd extends js.Object
+  sealed trait inputAdornedEnd
+    extends atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
-  sealed trait inputAdornedStart extends js.Object
+  sealed trait inputAdornedStart
+    extends atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
-  sealed trait inputDisabled extends js.Object
+  sealed trait inputDisabled
+    extends atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
   
   @js.native
-  sealed trait inputMarginDense extends js.Object
+  sealed trait inputMarginDense
+    extends atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
-  sealed trait inputMultiline extends js.Object
+  sealed trait inputMultiline
+    extends atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
-  sealed trait inputType extends js.Object
+  sealed trait inputType
+    extends atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
   
   @js.native
-  sealed trait inputTypeSearch extends js.Object
+  sealed trait inputTypeSearch
+    extends atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
   
   @js.native
-  sealed trait inset extends js.Object
+  sealed trait inset
+    extends atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey
+       with atMaterialDashUiCoreLib.listitemtextListItemTextMod.ListItemTextClassKey
+       with atMaterialDashUiCoreLib.listsubheaderListSubheaderMod.ListSubheaderClassKey
   
   @js.native
-  sealed trait invisible extends js.Object
+  sealed trait invisible
+    extends atMaterialDashUiCoreLib.backdropBackdropMod.BackdropClassKey
+       with atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey
   
   @js.native
-  sealed trait item extends js.Object
+  sealed trait item
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait justify extends js.Object
+  sealed trait justify
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait `justify-xs-center` extends js.Object
+  sealed trait `justify-xs-center`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `justify-xs-flex-end` extends js.Object
+  sealed trait `justify-xs-flex-end`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `justify-xs-space-around` extends js.Object
+  sealed trait `justify-xs-space-around`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `justify-xs-space-between` extends js.Object
+  sealed trait `justify-xs-space-between`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait label extends js.Object
+  sealed trait label
+    extends atMaterialDashUiCoreLib.bottomnavigationactionBottomNavigationActionMod.BottomNavigationActionClassKey
+       with atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
+       with atMaterialDashUiCoreLib.fabFabMod.FabClassKey
+       with atMaterialDashUiCoreLib.formcontrollabelFormControlLabelMod.FormControlLabelClassKey
+       with atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonClassKey
+       with atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
+       with atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
-  sealed trait labelContainer extends js.Object
+  sealed trait labelContainer
+    extends atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
+       with atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
-  sealed trait labelIcon extends js.Object
+  sealed trait labelIcon
+    extends atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
-  sealed trait labelWrapped extends js.Object
+  sealed trait labelWrapped
+    extends atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
   sealed trait large extends js.Object
   
   @js.native
-  sealed trait last extends js.Object
+  sealed trait last
+    extends atMaterialDashUiCoreLib.stepcontentStepContentMod.StepContentClasskey
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment
+       with atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait `left-end` extends js.Object
+  sealed trait `left-end`
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait `left-start` extends js.Object
+  sealed trait `left-start`
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
   sealed trait letterSpacing extends js.Object
   
   @js.native
-  sealed trait lg extends js.Object
+  sealed trait lg
+    extends atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait light extends js.Object
+  sealed trait light
+    extends atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey
+       with atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PaletteType
   
   @js.native
-  sealed trait line extends js.Object
+  sealed trait line
+    extends atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
   
   @js.native
   sealed trait lineHeight extends js.Object
   
   @js.native
-  sealed trait lineHorizontal extends js.Object
+  sealed trait lineHorizontal
+    extends atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
   
   @js.native
-  sealed trait lineVertical extends js.Object
+  sealed trait lineVertical
+    extends atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
   
   @js.native
-  sealed trait ltr extends js.Object
+  sealed trait ltr
+    extends atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Direction
   
   @js.native
-  sealed trait marginDense extends js.Object
+  sealed trait marginDense
+    extends atMaterialDashUiCoreLib.formcontrolFormControlMod.FormControlClassKey
+       with atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextClassKey
+       with atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
   
   @js.native
-  sealed trait marginNormal extends js.Object
+  sealed trait marginNormal
+    extends atMaterialDashUiCoreLib.formcontrolFormControlMod.FormControlClassKey
   
   @js.native
-  sealed trait md extends js.Object
+  sealed trait md
+    extends atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait media extends js.Object
+  sealed trait media
+    extends atMaterialDashUiCoreLib.cardmediaCardMediaMod.CardMediaClassKey
   
   @js.native
   sealed trait medium extends js.Object
   
   @js.native
-  sealed trait menuItem extends js.Object
+  sealed trait menuItem
+    extends atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
   
   @js.native
-  sealed trait message extends js.Object
+  sealed trait message
+    extends atMaterialDashUiCoreLib.snackbarcontentSnackbarContentMod.SnackbarContentClassKey
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle
+    extends atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey
   
   @js.native
-  sealed trait mini extends js.Object
+  sealed trait mini
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait modal extends js.Object
+  sealed trait modal
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait mountOnEnter extends js.Object
+  sealed trait mountOnEnter
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionKeys
   
   @js.native
-  sealed trait multiline extends js.Object
+  sealed trait multiline
+    extends atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
-  sealed trait noWrap extends js.Object
+  sealed trait noWrap
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin
+       with atMaterialDashUiCoreLib.tableTableMod.Padding
+       with atMaterialDashUiCoreLib.tablecellTableCellMod.Padding
+       with atMaterialDashUiCoreLib.popoverPopoverMod.PopoverReference
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Margin
   
   @js.native
-  sealed trait notchedOutline extends js.Object
+  sealed trait notchedOutline
+    extends atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
   
   @js.native
-  sealed trait nowrap extends js.Object
+  sealed trait nowrap
+    extends atMaterialDashUiCoreLib.gridGridMod.GridWrap
   
   @js.native
-  sealed trait numeric extends js.Object
+  sealed trait numeric
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellClassKey
   
   @js.native
   sealed trait off extends js.Object
@@ -865,22 +1329,28 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait onClick extends js.Object
   
   @js.native
-  sealed trait onEnter extends js.Object
+  sealed trait onEnter
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionHandlerKeys
   
   @js.native
-  sealed trait onEntered extends js.Object
+  sealed trait onEntered
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionHandlerKeys
   
   @js.native
-  sealed trait onEntering extends js.Object
+  sealed trait onEntering
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionHandlerKeys
   
   @js.native
-  sealed trait onExit extends js.Object
+  sealed trait onExit
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionHandlerKeys
   
   @js.native
-  sealed trait onExited extends js.Object
+  sealed trait onExited
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionHandlerKeys
   
   @js.native
-  sealed trait onExiting extends js.Object
+  sealed trait onExiting
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionHandlerKeys
   
   @js.native
   sealed trait onMouseDown extends js.Object
@@ -895,85 +1365,120 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait onTouchStart extends js.Object
   
   @js.native
-  sealed trait outlined extends js.Object
+  sealed trait outlined
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
+       with atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
+       with atMaterialDashUiCoreLib.nativeselectNativeSelectMod.NativeSelectClassKey
+       with atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey
   
   @js.native
-  sealed trait outlinedPrimary extends js.Object
+  sealed trait outlinedPrimary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait outlinedSecondary extends js.Object
+  sealed trait outlinedSecondary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
   
   @js.native
-  sealed trait overline extends js.Object
+  sealed trait overline
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait padding extends js.Object
+  sealed trait padding
+    extends atMaterialDashUiCoreLib.listListMod.ListClassKey
   
   @js.native
-  sealed trait paddingCheckbox extends js.Object
+  sealed trait paddingCheckbox
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellClassKey
   
   @js.native
-  sealed trait paddingDense extends js.Object
+  sealed trait paddingDense
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellClassKey
   
   @js.native
-  sealed trait paddingNone extends js.Object
+  sealed trait paddingNone
+    extends atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellClassKey
   
   @js.native
-  sealed trait paper extends js.Object
+  sealed trait paper
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
+       with atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait paperAnchorBottom extends js.Object
+  sealed trait paperAnchorBottom
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait paperAnchorDockedBottom extends js.Object
+  sealed trait paperAnchorDockedBottom
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait paperAnchorDockedLeft extends js.Object
+  sealed trait paperAnchorDockedLeft
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait paperAnchorDockedRight extends js.Object
+  sealed trait paperAnchorDockedRight
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait paperAnchorDockedTop extends js.Object
+  sealed trait paperAnchorDockedTop
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait paperAnchorLeft extends js.Object
+  sealed trait paperAnchorLeft
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait paperAnchorRight extends js.Object
+  sealed trait paperAnchorRight
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait paperAnchorTop extends js.Object
+  sealed trait paperAnchorTop
+    extends atMaterialDashUiCoreLib.drawerDrawerMod.DrawerClassKey
   
   @js.native
-  sealed trait paperFullScreen extends js.Object
+  sealed trait paperFullScreen
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait paperFullWidth extends js.Object
+  sealed trait paperFullWidth
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait paperScrollBody extends js.Object
+  sealed trait paperScrollBody
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait paperScrollPaper extends js.Object
+  sealed trait paperScrollPaper
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait paperWidthLg extends js.Object
+  sealed trait paperWidthLg
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait paperWidthMd extends js.Object
+  sealed trait paperWidthMd
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait paperWidthSm extends js.Object
+  sealed trait paperWidthSm
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait paperWidthXl extends js.Object
+  sealed trait paperWidthXl
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait paperWidthXs extends js.Object
+  sealed trait paperWidthXs
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait paragraph extends js.Object
+  sealed trait paragraph
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
   sealed trait permanent extends js.Object
@@ -982,358 +1487,579 @@ object atMaterialDashUiCoreLibStrings {
   sealed trait persistent extends js.Object
   
   @js.native
-  sealed trait popper extends js.Object
+  sealed trait popper
+    extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
   
   @js.native
-  sealed trait popperInteractive extends js.Object
+  sealed trait popperInteractive
+    extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
   
   @js.native
-  sealed trait positionAbsolute extends js.Object
+  sealed trait positionAbsolute
+    extends atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
   
   @js.native
-  sealed trait positionBottom extends js.Object
+  sealed trait positionBottom
+    extends atMaterialDashUiCoreLib.mobilestepperMobileStepperMod.MobileStepperClassKey
   
   @js.native
-  sealed trait positionEnd extends js.Object
+  sealed trait positionEnd
+    extends atMaterialDashUiCoreLib.inputadornmentInputAdornmentMod.InputAdornmentClassKey
   
   @js.native
-  sealed trait positionFixed extends js.Object
+  sealed trait positionFixed
+    extends atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
   
   @js.native
-  sealed trait positionRelative extends js.Object
+  sealed trait positionRelative
+    extends atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
   
   @js.native
-  sealed trait positionStart extends js.Object
+  sealed trait positionStart
+    extends atMaterialDashUiCoreLib.inputadornmentInputAdornmentMod.InputAdornmentClassKey
   
   @js.native
-  sealed trait positionStatic extends js.Object
+  sealed trait positionStatic
+    extends atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
+       with atMaterialDashUiCoreLib.mobilestepperMobileStepperMod.MobileStepperClassKey
   
   @js.native
-  sealed trait positionSticky extends js.Object
+  sealed trait positionSticky
+    extends atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
   
   @js.native
-  sealed trait positionTop extends js.Object
+  sealed trait positionTop
+    extends atMaterialDashUiCoreLib.mobilestepperMobileStepperMod.MobileStepperClassKey
   
   @js.native
-  sealed trait primary extends js.Object
+  sealed trait primary
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color
+       with atMaterialDashUiCoreLib.fabFabMod.FabClassKey
+       with atMaterialDashUiCoreLib.listitemtextListItemTextMod.ListItemTextClassKey
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress
+    extends atMaterialDashUiCoreLib.mobilestepperMobileStepperMod.MobileStepperClassKey
   
   @js.native
-  sealed trait query extends js.Object
+  sealed trait query
+    extends atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
   
   @js.native
-  sealed trait raised extends js.Object
+  sealed trait raised
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait raisedPrimary extends js.Object
+  sealed trait raisedPrimary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait raisedSecondary extends js.Object
+  sealed trait raisedSecondary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait regular extends js.Object
+  sealed trait regular
+    extends atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarClassKey
   
   @js.native
   sealed trait relative extends js.Object
   
   @js.native
-  sealed trait required extends js.Object
+  sealed trait required
+    extends atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextClassKey
+       with atMaterialDashUiCoreLib.formlabelFormLabelMod.FormLabelClassKey
+       with atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Alignment
+       with atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait `right-end` extends js.Object
+  sealed trait `right-end`
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait `right-start` extends js.Object
+  sealed trait `right-start`
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait ripple extends js.Object
+  sealed trait ripple
+    extends atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleClassKey
   
   @js.native
-  sealed trait ripplePulsate extends js.Object
+  sealed trait ripplePulsate
+    extends atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleClassKey
   
   @js.native
-  sealed trait rippleVisible extends js.Object
+  sealed trait rippleVisible
+    extends atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleClassKey
   
   @js.native
-  sealed trait root extends js.Object
+  sealed trait root
+    extends atMaterialDashUiCoreLib.internalSwitchBaseMod.SwitchBaseClassKey
+       with atMaterialDashUiCoreLib.appbarAppBarMod.AppBarClassKey
+       with atMaterialDashUiCoreLib.avatarAvatarMod.AvatarClassKey
+       with atMaterialDashUiCoreLib.backdropBackdropMod.BackdropClassKey
+       with atMaterialDashUiCoreLib.badgeBadgeMod.BadgeClassKey
+       with atMaterialDashUiCoreLib.bottomnavigationactionBottomNavigationActionMod.BottomNavigationActionClassKey
+       with atMaterialDashUiCoreLib.buttonbaseButtonBaseMod.ButtonBaseClassKey
+       with atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.cardactionareaCardActionAreaMod.CardActionAreaClassKey
+       with atMaterialDashUiCoreLib.cardactionsCardActionsMod.CardActionsClassKey
+       with atMaterialDashUiCoreLib.cardheaderCardHeaderMod.CardHeaderClassKey
+       with atMaterialDashUiCoreLib.cardmediaCardMediaMod.CardMediaClassKey
+       with atMaterialDashUiCoreLib.chipChipMod.ChipClassKey
+       with atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
+       with atMaterialDashUiCoreLib.dialogactionsDialogActionsMod.DialogActionsClassKey
+       with atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
+       with atMaterialDashUiCoreLib.dividerDividerMod.DividerClassKey
+       with atMaterialDashUiCoreLib.expansionpanelactionsExpansionPanelActionsMod.ExpansionPanelActionsClassKey
+       with atMaterialDashUiCoreLib.expansionpanelExpansionPanelMod.ExpansionPanelClassKey
+       with atMaterialDashUiCoreLib.expansionpanelsummaryExpansionPanelSummaryMod.ExpansionPanelSummaryClassKey
+       with atMaterialDashUiCoreLib.fabFabMod.FabClassKey
+       with atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.formcontrolFormControlMod.FormControlClassKey
+       with atMaterialDashUiCoreLib.formcontrollabelFormControlLabelMod.FormControlLabelClassKey
+       with atMaterialDashUiCoreLib.formgroupFormGroupMod.FormGroupClassKey
+       with atMaterialDashUiCoreLib.formhelpertextFormHelperTextMod.FormHelperTextClassKey
+       with atMaterialDashUiCoreLib.formlabelFormLabelMod.FormLabelClassKey
+       with atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
+       with atMaterialDashUiCoreLib.gridlisttileGridListTileMod.GridListTileClassKey
+       with atMaterialDashUiCoreLib.iconbuttonIconButtonMod.IconButtonClassKey
+       with atMaterialDashUiCoreLib.iconIconMod.IconClassKey
+       with atMaterialDashUiCoreLib.inputadornmentInputAdornmentMod.InputAdornmentClassKey
+       with atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
+       with atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
+       with atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressClassKey
+       with atMaterialDashUiCoreLib.linkLinkMod.LinkClassKey
+       with atMaterialDashUiCoreLib.listListMod.ListClassKey
+       with atMaterialDashUiCoreLib.listitemavatarListItemAvatarMod.ListItemAvatarClassKey
+       with atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
+       with atMaterialDashUiCoreLib.listitemtextListItemTextMod.ListItemTextClassKey
+       with atMaterialDashUiCoreLib.listsubheaderListSubheaderMod.ListSubheaderClassKey
+       with atMaterialDashUiCoreLib.menuitemMenuItemMod.MenuItemClassKey
+       with atMaterialDashUiCoreLib.mobilestepperMobileStepperMod.MobileStepperClassKey
+       with atMaterialDashUiCoreLib.modalModalMod.ModalClassKey
+       with atMaterialDashUiCoreLib.nativeselectNativeSelectMod.NativeSelectClassKey
+       with atMaterialDashUiCoreLib.outlinedinputOutlinedInputMod.OutlinedInputClassKey
+       with atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
+       with atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey
+       with atMaterialDashUiCoreLib.snackbarSnackbarMod.SnackbarClassKey
+       with atMaterialDashUiCoreLib.snackbarcontentSnackbarContentMod.SnackbarContentClassKey
+       with atMaterialDashUiCoreLib.stepbuttonStepButtonMod.StepButtonClasskey
+       with atMaterialDashUiCoreLib.stepStepMod.StepClasskey
+       with atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
+       with atMaterialDashUiCoreLib.stepcontentStepContentMod.StepContentClasskey
+       with atMaterialDashUiCoreLib.stepiconStepIconMod.StepIconClasskey
+       with atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
+       with atMaterialDashUiCoreLib.stepperStepperMod.StepperClasskey
+       with atMaterialDashUiCoreLib.svgiconSvgIconMod.SvgIconClassKey
+       with atMaterialDashUiCoreLib.tabTabMod.TabClassKey
+       with atMaterialDashUiCoreLib.tabsTabIndicatorMod.TabIndicatorClassKey
+       with atMaterialDashUiCoreLib.tablecellTableCellMod.TableCellClassKey
+       with atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
+       with atMaterialDashUiCoreLib.tablerowTableRowMod.TableRowClassKey
+       with atMaterialDashUiCoreLib.tablesortlabelTableSortLabelMod.TableSortLabelClassKey
+       with atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
+       with atMaterialDashUiCoreLib.toolbarToolbarMod.ToolbarClassKey
+       with atMaterialDashUiCoreLib.buttonbaseTouchRippleMod.TouchRippleClassKey
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait rootSubtitle extends js.Object
+  sealed trait rootSubtitle
+    extends atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
   
   @js.native
   sealed trait round extends js.Object
   
   @js.native
-  sealed trait rounded extends js.Object
+  sealed trait rounded
+    extends atMaterialDashUiCoreLib.expansionpanelExpansionPanelMod.ExpansionPanelClassKey
+       with atMaterialDashUiCoreLib.paperPaperMod.PaperClassKey
   
   @js.native
-  sealed trait row extends js.Object
+  sealed trait row
+    extends atMaterialDashUiCoreLib.formgroupFormGroupMod.FormGroupClassKey
+       with atMaterialDashUiCoreLib.gridGridMod.GridDirection
   
   @js.native
-  sealed trait `row-reverse` extends js.Object
+  sealed trait `row-reverse`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridDirection
   
   @js.native
-  sealed trait rtl extends js.Object
+  sealed trait rtl
+    extends atMaterialDashUiCoreLib.stylesCreateMuiThemeMod.Direction
   
   @js.native
-  sealed trait scrollBody extends js.Object
+  sealed trait scrollBody
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait scrollButtons extends js.Object
+  sealed trait scrollButtons
+    extends atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
   
   @js.native
-  sealed trait scrollButtonsAuto extends js.Object
+  sealed trait scrollButtonsAuto
+    extends atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
   
   @js.native
-  sealed trait scrollPaper extends js.Object
+  sealed trait scrollPaper
+    extends atMaterialDashUiCoreLib.dialogDialogMod.DialogClassKey
   
   @js.native
-  sealed trait scrollable extends js.Object
+  sealed trait scrollable
+    extends atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
   
   @js.native
-  sealed trait scroller extends js.Object
+  sealed trait scroller
+    extends atMaterialDashUiCoreLib.tabsTabsMod.TabsClassKey
   
   @js.native
-  sealed trait secondary extends js.Object
+  sealed trait secondary
+    extends atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropTypesNs.Color
+       with atMaterialDashUiCoreLib.fabFabMod.FabClassKey
+       with atMaterialDashUiCoreLib.listitemtextListItemTextMod.ListItemTextClassKey
   
   @js.native
-  sealed trait secondaryAction extends js.Object
+  sealed trait secondaryAction
+    extends atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait select
+    extends atMaterialDashUiCoreLib.nativeselectNativeSelectMod.NativeSelectClassKey
+       with atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey
+       with atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
   
   @js.native
-  sealed trait selectIcon extends js.Object
+  sealed trait selectIcon
+    extends atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
   
   @js.native
-  sealed trait selectMenu extends js.Object
+  sealed trait selectMenu
+    extends atMaterialDashUiCoreLib.nativeselectNativeSelectMod.NativeSelectClassKey
+       with atMaterialDashUiCoreLib.selectSelectMod.SelectClassKey
   
   @js.native
-  sealed trait selectRoot extends js.Object
+  sealed trait selectRoot
+    extends atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
   
   @js.native
-  sealed trait selected extends js.Object
+  sealed trait selected
+    extends atMaterialDashUiCoreLib.bottomnavigationactionBottomNavigationActionMod.BottomNavigationActionClassKey
+       with atMaterialDashUiCoreLib.listitemListItemMod.ListItemClassKey
+       with atMaterialDashUiCoreLib.menuitemMenuItemMod.MenuItemClassKey
+       with atMaterialDashUiCoreLib.tabTabMod.TabClassKey
+       with atMaterialDashUiCoreLib.tablerowTableRowMod.TableRowClassKey
   
   @js.native
-  sealed trait shrink extends js.Object
+  sealed trait shrink
+    extends atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelClassKey
   
   @js.native
-  sealed trait sizeLarge extends js.Object
+  sealed trait sizeLarge
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait sizeMedium extends js.Object
+  sealed trait sizeMedium
+    extends atMaterialDashUiCoreLib.fabFabMod.FabClassKey
   
   @js.native
-  sealed trait sizeSmall extends js.Object
+  sealed trait sizeSmall
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.fabFabMod.FabClassKey
   
   @js.native
-  sealed trait sm extends js.Object
+  sealed trait sm
+    extends atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
   sealed trait small extends js.Object
   
   @js.native
-  sealed trait `space-around` extends js.Object
+  sealed trait `space-around`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridContentAlignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridJustification
   
   @js.native
-  sealed trait `space-between` extends js.Object
+  sealed trait `space-between`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridContentAlignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridJustification
   
   @js.native
-  sealed trait `space-evenly` extends js.Object
+  sealed trait `space-evenly`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridJustification
   
   @js.native
-  sealed trait spacer extends js.Object
+  sealed trait spacer
+    extends atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
   
   @js.native
-  sealed trait spacing extends js.Object
+  sealed trait spacing
+    extends atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait `spacing-xs-16` extends js.Object
+  sealed trait `spacing-xs-16`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `spacing-xs-24` extends js.Object
+  sealed trait `spacing-xs-24`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `spacing-xs-40` extends js.Object
+  sealed trait `spacing-xs-40`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `spacing-xs-8` extends js.Object
+  sealed trait `spacing-xs-8`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait srOnly extends js.Object
+  sealed trait srOnly
+    extends atMaterialDashUiCoreLib.typographyTypographyMod.Style
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
   sealed trait standard extends js.Object
   
   @js.native
-  sealed trait start extends js.Object
+  sealed trait start
+    extends atMaterialDashUiCoreLib.formcontrollabelFormControlLabelMod.FormControlLabelClassKey
   
   @js.native
-  sealed trait static extends js.Object
+  sealed trait static
+    extends atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
   
   @js.native
-  sealed trait sticky extends js.Object
+  sealed trait sticky
+    extends atMaterialDashUiCoreLib.listsubheaderListSubheaderMod.ListSubheaderClassKey
   
   @js.native
-  sealed trait stretch extends js.Object
+  sealed trait stretch
+    extends atMaterialDashUiCoreLib.gridGridMod.GridContentAlignment
+       with atMaterialDashUiCoreLib.gridGridMod.GridItemsAlignment
   
   @js.native
-  sealed trait subheader extends js.Object
+  sealed trait subheader
+    extends atMaterialDashUiCoreLib.cardheaderCardHeaderMod.CardHeaderClassKey
+       with atMaterialDashUiCoreLib.listListMod.ListClassKey
   
   @js.native
-  sealed trait subheading extends js.Object
+  sealed trait subheading
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait subtitle extends js.Object
+  sealed trait subtitle
+    extends atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
   
   @js.native
-  sealed trait subtitle1 extends js.Object
+  sealed trait subtitle1
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait subtitle2 extends js.Object
+  sealed trait subtitle2
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait svg extends js.Object
+  sealed trait svg
+    extends atMaterialDashUiCoreLib.circularprogressCircularProgressMod.CircularProgressClassKey
   
   @js.native
-  sealed trait switchBase extends js.Object
+  sealed trait switchBase
+    extends atMaterialDashUiCoreLib.switchSwitchMod.SwitchClassKey
   
   @js.native
   sealed trait temporary extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
+       with atMaterialDashUiCoreLib.stepiconStepIconMod.StepIconClasskey
   
   @js.native
-  sealed trait textColorInherit extends js.Object
+  sealed trait textColorInherit
+    extends atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
-  sealed trait textColorPrimary extends js.Object
+  sealed trait textColorPrimary
+    extends atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
-  sealed trait textColorSecondary extends js.Object
+  sealed trait textColorSecondary
+    extends atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
-  sealed trait textDense extends js.Object
+  sealed trait textDense
+    extends atMaterialDashUiCoreLib.listitemtextListItemTextMod.ListItemTextClassKey
   
   @js.native
-  sealed trait textPrimary extends js.Object
+  sealed trait textPrimary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
-  sealed trait textSecondary extends js.Object
+  sealed trait textSecondary
+    extends atMaterialDashUiCoreLib.buttonButtonMod.ButtonClassKey
   
   @js.native
   sealed trait textTransform extends js.Object
   
   @js.native
-  sealed trait tile extends js.Object
+  sealed trait tile
+    extends atMaterialDashUiCoreLib.gridlisttileGridListTileMod.GridListTileClassKey
   
   @js.native
-  sealed trait timeout extends js.Object
+  sealed trait timeout
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionKeys
   
   @js.native
-  sealed trait title extends js.Object
+  sealed trait title
+    extends atMaterialDashUiCoreLib.stylesCreateTypographyMod.ThemeStyle
+       with atMaterialDashUiCoreLib.cardheaderCardHeaderMod.CardHeaderClassKey
+       with atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
+       with atMaterialDashUiCoreLib.typographyTypographyMod.TypographyClassKey
   
   @js.native
-  sealed trait titlePositionBottom extends js.Object
+  sealed trait titlePositionBottom
+    extends atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
   
   @js.native
-  sealed trait titlePositionTop extends js.Object
+  sealed trait titlePositionTop
+    extends atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
   
   @js.native
-  sealed trait titleWrap extends js.Object
+  sealed trait titleWrap
+    extends atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
   
   @js.native
-  sealed trait titleWrapActionPosLeft extends js.Object
+  sealed trait titleWrapActionPosLeft
+    extends atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
   
   @js.native
-  sealed trait titleWrapActionPosRight extends js.Object
+  sealed trait titleWrapActionPosRight
+    extends atMaterialDashUiCoreLib.gridlisttilebarGridListTileBarMod.GridListTileBarClassKey
   
   @js.native
-  sealed trait toolbar extends js.Object
+  sealed trait toolbar
+    extends atMaterialDashUiCoreLib.tablepaginationTablePaginationMod.TablePaginationClassKey
   
   @js.native
-  sealed trait tooltip extends js.Object
+  sealed trait tooltip
+    extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
   
   @js.native
-  sealed trait tooltipPlacementBottom extends js.Object
+  sealed trait tooltipPlacementBottom
+    extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
   
   @js.native
-  sealed trait tooltipPlacementLeft extends js.Object
+  sealed trait tooltipPlacementLeft
+    extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
   
   @js.native
-  sealed trait tooltipPlacementRight extends js.Object
+  sealed trait tooltipPlacementRight
+    extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
   
   @js.native
-  sealed trait tooltipPlacementTop extends js.Object
+  sealed trait tooltipPlacementTop
+    extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait `top-end` extends js.Object
+  sealed trait `top-end`
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait `top-start` extends js.Object
+  sealed trait `top-start`
+    extends atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
   
   @js.native
-  sealed trait touch extends js.Object
+  sealed trait touch
+    extends atMaterialDashUiCoreLib.tooltipTooltipMod.TooltipClassKey
   
   @js.native
-  sealed trait touchRipple extends js.Object
+  sealed trait touchRipple
+    extends atMaterialDashUiCoreLib.stepbuttonStepButtonMod.StepButtonClasskey
   
   @js.native
-  sealed trait transition extends js.Object
+  sealed trait transition
+    extends atMaterialDashUiCoreLib.stepcontentStepContentMod.StepContentClasskey
   
   @js.native
-  sealed trait underline extends js.Object
+  sealed trait underline
+    extends atMaterialDashUiCoreLib.filledinputFilledInputMod.FilledInputClassKey
+       with atMaterialDashUiCoreLib.inputInputMod.InputClassKey
   
   @js.native
-  sealed trait underlineAlways extends js.Object
+  sealed trait underlineAlways
+    extends atMaterialDashUiCoreLib.linkLinkMod.LinkClassKey
   
   @js.native
-  sealed trait underlineHover extends js.Object
+  sealed trait underlineHover
+    extends atMaterialDashUiCoreLib.linkLinkMod.LinkClassKey
   
   @js.native
-  sealed trait underlineNone extends js.Object
+  sealed trait underlineNone
+    extends atMaterialDashUiCoreLib.linkLinkMod.LinkClassKey
   
   @js.native
-  sealed trait unmountOnExit extends js.Object
+  sealed trait unmountOnExit
+    extends atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionKeys
   
   @js.native
   sealed trait up extends js.Object
   
   @js.native
-  sealed trait vertical extends js.Object
+  sealed trait vertical
+    extends atMaterialDashUiCoreLib.stepperStepperMod.Orientation
+       with atMaterialDashUiCoreLib.stepbuttonStepButtonMod.StepButtonClasskey
+       with atMaterialDashUiCoreLib.stepStepMod.StepClasskey
+       with atMaterialDashUiCoreLib.stepconnectorStepConnectorMod.StepConnectorClasskey
+       with atMaterialDashUiCoreLib.steplabelStepLabelMod.StepLabelClasskey
+       with atMaterialDashUiCoreLib.stepperStepperMod.StepperClasskey
   
   @js.native
-  sealed trait wrap extends js.Object
+  sealed trait wrap
+    extends atMaterialDashUiCoreLib.gridGridMod.GridWrap
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait `wrap-reverse` extends js.Object
+  sealed trait `wrap-reverse`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridWrap
   
   @js.native
-  sealed trait `wrap-xs-nowrap` extends js.Object
+  sealed trait `wrap-xs-nowrap`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait `wrap-xs-wrap-reverse` extends js.Object
+  sealed trait `wrap-xs-wrap-reverse`
+    extends atMaterialDashUiCoreLib.gridGridMod.GridClassKey
   
   @js.native
-  sealed trait wrapper extends js.Object
+  sealed trait wrapper
+    extends atMaterialDashUiCoreLib.bottomnavigationactionBottomNavigationActionMod.BottomNavigationActionClassKey
+       with atMaterialDashUiCoreLib.collapseCollapseMod.CollapseClassKey
+       with atMaterialDashUiCoreLib.tabTabMod.TabClassKey
   
   @js.native
-  sealed trait wrapperInner extends js.Object
+  sealed trait wrapperInner
+    extends atMaterialDashUiCoreLib.collapseCollapseMod.CollapseClassKey
   
   @js.native
-  sealed trait xl extends js.Object
+  sealed trait xl
+    extends atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @js.native
-  sealed trait xs extends js.Object
+  sealed trait xs
+    extends atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint
+       with atMaterialDashUiCoreLib.gridGridMod.StrippedProps
   
   @scala.inline
   def `@global`: `@global` = "@global".asInstanceOf[`@global`]

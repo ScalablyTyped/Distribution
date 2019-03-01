@@ -16,3 +16,28 @@ trait MapOptions extends js.Object {
   var width: scala.Double
 }
 
+object MapOptions {
+  @scala.inline
+  def apply(
+    height: scala.Double,
+    src: java.lang.String,
+    tileHeight: scala.Double,
+    tileWidth: scala.Double,
+    width: scala.Double,
+    buffer: stdLib.ArrayBuffer = null,
+    viewportH: scala.Int | scala.Double = null,
+    viewportW: scala.Int | scala.Double = null
+  ): MapOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("src")(src)
+    __obj.updateDynamic("tileHeight")(tileHeight)
+    __obj.updateDynamic("tileWidth")(tileWidth)
+    __obj.updateDynamic("width")(width)
+    if (buffer != null) __obj.updateDynamic("buffer")(buffer)
+    if (viewportH != null) __obj.updateDynamic("viewportH")(viewportH.asInstanceOf[js.Any])
+    if (viewportW != null) __obj.updateDynamic("viewportW")(viewportW.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MapOptions]
+  }
+}
+

@@ -17,3 +17,13 @@ trait ListTransferLogsResponse extends js.Object {
   var transferMessages: js.UndefOr[js.Array[TransferMessage]] = js.undefined
 }
 
+object ListTransferLogsResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, transferMessages: js.Array[TransferMessage] = null): ListTransferLogsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (transferMessages != null) __obj.updateDynamic("transferMessages")(transferMessages)
+    __obj.asInstanceOf[ListTransferLogsResponse]
+  }
+}
+

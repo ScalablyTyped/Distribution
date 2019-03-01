@@ -11,3 +11,14 @@ trait BackgroundLayout extends js.Object {
   ] = js.undefined
 }
 
+object BackgroundLayout {
+  @scala.inline
+  def apply(
+    visibility: mapboxDashGlLib.mapboxDashGlLibStrings.visible | mapboxDashGlLib.mapboxDashGlLibStrings.none = null
+  ): BackgroundLayout = {
+    val __obj = js.Dynamic.literal()
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackgroundLayout]
+  }
+}
+

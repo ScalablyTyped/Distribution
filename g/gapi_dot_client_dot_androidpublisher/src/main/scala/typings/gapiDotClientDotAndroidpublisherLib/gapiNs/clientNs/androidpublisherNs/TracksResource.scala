@@ -22,3 +22,32 @@ trait TracksResource extends js.Object {
   def update(request: gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken): gapiDotClientLib.gapiNs.clientNs.Request[Track]
 }
 
+object TracksResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Track]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TracksListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Track]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAndroidpublisherLib.Anon_AltEditIdFieldsKeyOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Track]
+    ]
+  ): TracksResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[TracksResource]
+  }
+}
+

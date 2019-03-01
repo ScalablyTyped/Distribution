@@ -93,3 +93,32 @@ trait Anon_0 extends js.Object {
   var zoneId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_0 {
+  @scala.inline
+  def apply(
+    currencyType: wegameDashApiLib.wegameDashApiLibStrings.CNY,
+    mode: wegameDashApiLib.wegameDashApiLibStrings.game,
+    offerId: java.lang.String,
+    buyQuantity: scala.Int | scala.Double = null,
+    complete: js.Function0[scala.Unit] = null,
+    env: wegameDashApiLib.wegameDashApiLibNumbers.`0` | wegameDashApiLib.wegameDashApiLibNumbers.`1` = null,
+    fail: js.Function1[/* res */ Anon_ErrCode, scala.Unit] = null,
+    platform: wegameDashApiLib.wegameDashApiLibStrings.android = null,
+    success: js.Function0[scala.Unit] = null,
+    zoneId: java.lang.String = null
+  ): Anon_0 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currencyType")(currencyType)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("offerId")(offerId)
+    if (buyQuantity != null) __obj.updateDynamic("buyQuantity")(buyQuantity.asInstanceOf[js.Any])
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (env != null) __obj.updateDynamic("env")(env.asInstanceOf[js.Any])
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (platform != null) __obj.updateDynamic("platform")(platform)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (zoneId != null) __obj.updateDynamic("zoneId")(zoneId)
+    __obj.asInstanceOf[Anon_0]
+  }
+}
+

@@ -17,3 +17,18 @@ trait CorruptedConfigurationException
   var Details: java.lang.String
 }
 
+object CorruptedConfigurationException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    Details: java.lang.String,
+    Message: java.lang.String
+  ): CorruptedConfigurationException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("Details")(Details)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[CorruptedConfigurationException]
+  }
+}
+

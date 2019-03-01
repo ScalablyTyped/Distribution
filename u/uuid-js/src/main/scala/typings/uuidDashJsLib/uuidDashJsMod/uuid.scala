@@ -19,3 +19,22 @@ trait uuid extends js.Object {
   def toURN(): java.lang.String
 }
 
+object uuid {
+  @scala.inline
+  def apply(
+    equals: js.Function1[uuid, scala.Boolean],
+    fromParts: js.Function6[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, uuid],
+    toBytes: js.Function0[js.Array[_]],
+    toString: js.Function0[java.lang.String],
+    toURN: js.Function0[java.lang.String]
+  ): uuid = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("equals")(equals)
+    __obj.updateDynamic("fromParts")(fromParts)
+    __obj.updateDynamic("toBytes")(toBytes)
+    __obj.updateDynamic("toString")(toString)
+    __obj.updateDynamic("toURN")(toURN)
+    __obj.asInstanceOf[uuid]
+  }
+}
+

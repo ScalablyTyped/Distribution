@@ -32,3 +32,24 @@ trait Anon_AdjacentSpace extends js.Object {
   var multiplePseudoMerging: scala.Boolean
 }
 
+object Anon_AdjacentSpace {
+  @scala.inline
+  def apply(
+    mergeLimit: scala.Double,
+    mergeablePseudoElements: js.Array[java.lang.String],
+    multiplePseudoMerging: scala.Boolean,
+    adjacentSpace: js.UndefOr[scala.Boolean] = js.undefined,
+    ie7Hack: js.UndefOr[scala.Boolean] = js.undefined,
+    mergeablePseudoClasses: js.Array[java.lang.String] = null
+  ): Anon_AdjacentSpace = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mergeLimit")(mergeLimit)
+    __obj.updateDynamic("mergeablePseudoElements")(mergeablePseudoElements)
+    __obj.updateDynamic("multiplePseudoMerging")(multiplePseudoMerging)
+    if (!js.isUndefined(adjacentSpace)) __obj.updateDynamic("adjacentSpace")(adjacentSpace)
+    if (!js.isUndefined(ie7Hack)) __obj.updateDynamic("ie7Hack")(ie7Hack)
+    if (mergeablePseudoClasses != null) __obj.updateDynamic("mergeablePseudoClasses")(mergeablePseudoClasses)
+    __obj.asInstanceOf[Anon_AdjacentSpace]
+  }
+}
+

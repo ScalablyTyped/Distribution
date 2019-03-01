@@ -20,3 +20,20 @@ trait EditorFocusChangeEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object EditorFocusChangeEventArgs {
+  @scala.inline
+  def apply(
+    diagramId: java.lang.String = null,
+    event: js.Any = null,
+    model: js.Any = null,
+    `type`: java.lang.String = null
+  ): EditorFocusChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (diagramId != null) __obj.updateDynamic("diagramId")(diagramId)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[EditorFocusChangeEventArgs]
+  }
+}
+

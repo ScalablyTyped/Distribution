@@ -36,3 +36,30 @@ trait UserScriptOptions extends js.Object {
   var scriptMetadata: js.UndefOr[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.PlainJSONValue] = js.undefined
 }
 
+object UserScriptOptions {
+  @scala.inline
+  def apply(
+    matches: js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.MatchPattern],
+    allFrames: js.UndefOr[scala.Boolean] = js.undefined,
+    excludeGlobs: js.Array[java.lang.String] = null,
+    excludeMatches: js.Array[firefoxDashWebextDashBrowserLib.browserNs.underscoreManifestNs.MatchPattern] = null,
+    includeGlobs: js.Array[java.lang.String] = null,
+    `js_`: js.Array[firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.ExtensionFileOrCode] = null,
+    matchAboutBlank: js.UndefOr[scala.Boolean] = js.undefined,
+    runAt: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.RunAt = null,
+    scriptMetadata: firefoxDashWebextDashBrowserLib.browserNs.extensionTypesNs.PlainJSONValue = null
+  ): UserScriptOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("matches")(matches)
+    if (!js.isUndefined(allFrames)) __obj.updateDynamic("allFrames")(allFrames)
+    if (excludeGlobs != null) __obj.updateDynamic("excludeGlobs")(excludeGlobs)
+    if (excludeMatches != null) __obj.updateDynamic("excludeMatches")(excludeMatches)
+    if (includeGlobs != null) __obj.updateDynamic("includeGlobs")(includeGlobs)
+    if (`js_` != null) __obj.updateDynamic("js")(`js_`)
+    if (!js.isUndefined(matchAboutBlank)) __obj.updateDynamic("matchAboutBlank")(matchAboutBlank)
+    if (runAt != null) __obj.updateDynamic("runAt")(runAt)
+    if (scriptMetadata != null) __obj.updateDynamic("scriptMetadata")(scriptMetadata.asInstanceOf[js.Any])
+    __obj.asInstanceOf[UserScriptOptions]
+  }
+}
+

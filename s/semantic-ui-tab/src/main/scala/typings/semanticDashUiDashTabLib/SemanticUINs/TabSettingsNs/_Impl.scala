@@ -187,3 +187,72 @@ trait _Impl extends js.Object {
   def onVisible(`this`: semanticDashUiDashTabLib.JQuery, tabPath: java.lang.String): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    alwaysRefresh: scala.Boolean,
+    apiSettings: semanticDashUiDashApiLib.SemanticUINs.ApiSettings,
+    auto: scala.Boolean,
+    cache: scala.Boolean,
+    cacheType: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.response | semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.DOM | semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.html,
+    childrenOnly: scala.Boolean,
+    className: semanticDashUiDashTabLib.SemanticUINs.TabNs.ClassNameSettings,
+    context: semanticDashUiDashTabLib.semanticDashUiDashTabLibNumbers.`false` | java.lang.String | semanticDashUiDashTabLib.JQuery,
+    deactivate: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.siblings | semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.all,
+    debug: scala.Boolean,
+    error: semanticDashUiDashTabLib.SemanticUINs.TabNs.ErrorSettings,
+    evaluateScripts: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.once | scala.Boolean,
+    history: scala.Boolean,
+    historyType: semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.hash | semanticDashUiDashTabLib.semanticDashUiDashTabLibStrings.state,
+    ignoreFirstLoad: scala.Boolean,
+    loadOnce: scala.Boolean,
+    maxDepth: scala.Double,
+    metadata: semanticDashUiDashTabLib.SemanticUINs.TabNs.MetadataSettings,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onFirstLoad: js.Function4[semanticDashUiDashTabLib.JQuery, java.lang.String, js.Array[_], js.Any, scala.Unit],
+    onLoad: js.Function4[semanticDashUiDashTabLib.JQuery, java.lang.String, js.Array[_], js.Any, scala.Unit],
+    onRequest: js.Function2[semanticDashUiDashTabLib.JQuery, java.lang.String, scala.Unit],
+    onVisible: js.Function2[semanticDashUiDashTabLib.JQuery, java.lang.String, scala.Unit],
+    path: semanticDashUiDashTabLib.semanticDashUiDashTabLibNumbers.`false` | java.lang.String,
+    performance: scala.Boolean,
+    selector: semanticDashUiDashTabLib.SemanticUINs.TabNs.SelectorSettings,
+    silent: scala.Boolean,
+    templates: semanticDashUiDashTabLib.SemanticUINs.TabNs.TemplatesSettings,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alwaysRefresh")(alwaysRefresh)
+    __obj.updateDynamic("apiSettings")(apiSettings.asInstanceOf[js.Any])
+    __obj.updateDynamic("auto")(auto)
+    __obj.updateDynamic("cache")(cache)
+    __obj.updateDynamic("cacheType")(cacheType.asInstanceOf[js.Any])
+    __obj.updateDynamic("childrenOnly")(childrenOnly)
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.updateDynamic("deactivate")(deactivate.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("evaluateScripts")(evaluateScripts.asInstanceOf[js.Any])
+    __obj.updateDynamic("history")(history)
+    __obj.updateDynamic("historyType")(historyType.asInstanceOf[js.Any])
+    __obj.updateDynamic("ignoreFirstLoad")(ignoreFirstLoad)
+    __obj.updateDynamic("loadOnce")(loadOnce)
+    __obj.updateDynamic("maxDepth")(maxDepth)
+    __obj.updateDynamic("metadata")(metadata.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("onFirstLoad")(onFirstLoad)
+    __obj.updateDynamic("onLoad")(onLoad)
+    __obj.updateDynamic("onRequest")(onRequest)
+    __obj.updateDynamic("onVisible")(onVisible)
+    __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("templates")(templates)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

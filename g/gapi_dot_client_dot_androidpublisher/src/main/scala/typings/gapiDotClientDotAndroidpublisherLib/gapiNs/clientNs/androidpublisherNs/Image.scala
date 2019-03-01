@@ -14,3 +14,14 @@ trait Image extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Image {
+  @scala.inline
+  def apply(id: java.lang.String = null, sha1: java.lang.String = null, url: java.lang.String = null): Image = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (sha1 != null) __obj.updateDynamic("sha1")(sha1)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Image]
+  }
+}
+

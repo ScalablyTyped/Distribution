@@ -21,3 +21,22 @@ trait GetMeta extends js.Object {
   var _revs_info: js.UndefOr[js.Array[RevisionInfo]] = js.undefined
 }
 
+object GetMeta {
+  @scala.inline
+  def apply(
+    _rev: RevisionId,
+    _attachments: Attachments = null,
+    _conflicts: js.Array[RevisionId] = null,
+    _revisions: pouchdbDashCoreLib.Anon_Ids = null,
+    _revs_info: js.Array[RevisionInfo] = null
+  ): GetMeta = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_rev")(_rev)
+    if (_attachments != null) __obj.updateDynamic("_attachments")(_attachments)
+    if (_conflicts != null) __obj.updateDynamic("_conflicts")(_conflicts)
+    if (_revisions != null) __obj.updateDynamic("_revisions")(_revisions)
+    if (_revs_info != null) __obj.updateDynamic("_revs_info")(_revs_info)
+    __obj.asInstanceOf[GetMeta]
+  }
+}
+

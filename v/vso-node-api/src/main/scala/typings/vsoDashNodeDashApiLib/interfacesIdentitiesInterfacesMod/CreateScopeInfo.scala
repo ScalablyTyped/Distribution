@@ -14,3 +14,24 @@ trait CreateScopeInfo extends js.Object {
   var scopeType: GroupScopeType
 }
 
+object CreateScopeInfo {
+  @scala.inline
+  def apply(
+    adminGroupDescription: java.lang.String,
+    adminGroupName: java.lang.String,
+    creatorId: java.lang.String,
+    parentScopeId: java.lang.String,
+    scopeName: java.lang.String,
+    scopeType: GroupScopeType
+  ): CreateScopeInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("adminGroupDescription")(adminGroupDescription)
+    __obj.updateDynamic("adminGroupName")(adminGroupName)
+    __obj.updateDynamic("creatorId")(creatorId)
+    __obj.updateDynamic("parentScopeId")(parentScopeId)
+    __obj.updateDynamic("scopeName")(scopeName)
+    __obj.updateDynamic("scopeType")(scopeType)
+    __obj.asInstanceOf[CreateScopeInfo]
+  }
+}
+

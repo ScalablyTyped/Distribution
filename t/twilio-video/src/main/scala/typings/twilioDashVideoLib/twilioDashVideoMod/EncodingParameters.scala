@@ -10,3 +10,13 @@ trait EncodingParameters extends js.Object {
   var maxVideoBitrate: js.UndefOr[scala.Double | scala.Null] = js.undefined
 }
 
+object EncodingParameters {
+  @scala.inline
+  def apply(maxAudioBitrate: scala.Int | scala.Double = null, maxVideoBitrate: scala.Int | scala.Double = null): EncodingParameters = {
+    val __obj = js.Dynamic.literal()
+    if (maxAudioBitrate != null) __obj.updateDynamic("maxAudioBitrate")(maxAudioBitrate.asInstanceOf[js.Any])
+    if (maxVideoBitrate != null) __obj.updateDynamic("maxVideoBitrate")(maxVideoBitrate.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EncodingParameters]
+  }
+}
+

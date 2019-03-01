@@ -12,3 +12,13 @@ trait XpnResourceId extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object XpnResourceId {
+  @scala.inline
+  def apply(id: java.lang.String = null, `type`: java.lang.String = null): XpnResourceId = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[XpnResourceId]
+  }
+}
+

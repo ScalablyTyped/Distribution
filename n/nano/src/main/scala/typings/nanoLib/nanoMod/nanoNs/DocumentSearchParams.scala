@@ -47,3 +47,50 @@ trait DocumentSearchParams extends js.Object {
   var stale: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DocumentSearchParams {
+  @scala.inline
+  def apply(
+    bookmark: java.lang.String = null,
+    counts: js.Array[java.lang.String] = null,
+    drilldown: js.Array[java.lang.String] = null,
+    group_field: java.lang.String = null,
+    group_limit: scala.Int | scala.Double = null,
+    group_sort: java.lang.String | js.Array[java.lang.String] = null,
+    highlight_fields: js.Array[java.lang.String] = null,
+    highlight_number: scala.Int | scala.Double = null,
+    highlight_post_tag: java.lang.String = null,
+    highlight_pre_tag: java.lang.String = null,
+    highlight_size: scala.Int | scala.Double = null,
+    include_docs: js.UndefOr[scala.Boolean] = js.undefined,
+    include_fields: js.Array[java.lang.String] = null,
+    limit: scala.Int | scala.Double = null,
+    q: java.lang.String = null,
+    query: java.lang.String = null,
+    ranges: js.Object = null,
+    sort: java.lang.String | js.Array[java.lang.String] = null,
+    stale: js.UndefOr[scala.Boolean] = js.undefined
+  ): DocumentSearchParams = {
+    val __obj = js.Dynamic.literal()
+    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark)
+    if (counts != null) __obj.updateDynamic("counts")(counts)
+    if (drilldown != null) __obj.updateDynamic("drilldown")(drilldown)
+    if (group_field != null) __obj.updateDynamic("group_field")(group_field)
+    if (group_limit != null) __obj.updateDynamic("group_limit")(group_limit.asInstanceOf[js.Any])
+    if (group_sort != null) __obj.updateDynamic("group_sort")(group_sort.asInstanceOf[js.Any])
+    if (highlight_fields != null) __obj.updateDynamic("highlight_fields")(highlight_fields)
+    if (highlight_number != null) __obj.updateDynamic("highlight_number")(highlight_number.asInstanceOf[js.Any])
+    if (highlight_post_tag != null) __obj.updateDynamic("highlight_post_tag")(highlight_post_tag)
+    if (highlight_pre_tag != null) __obj.updateDynamic("highlight_pre_tag")(highlight_pre_tag)
+    if (highlight_size != null) __obj.updateDynamic("highlight_size")(highlight_size.asInstanceOf[js.Any])
+    if (!js.isUndefined(include_docs)) __obj.updateDynamic("include_docs")(include_docs)
+    if (include_fields != null) __obj.updateDynamic("include_fields")(include_fields)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (q != null) __obj.updateDynamic("q")(q)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (sort != null) __obj.updateDynamic("sort")(sort.asInstanceOf[js.Any])
+    if (!js.isUndefined(stale)) __obj.updateDynamic("stale")(stale)
+    __obj.asInstanceOf[DocumentSearchParams]
+  }
+}
+

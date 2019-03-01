@@ -37,3 +37,22 @@ trait LDEvaluationReason extends js.Object {
   var ruleIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LDEvaluationReason {
+  @scala.inline
+  def apply(
+    kind: java.lang.String,
+    errorKind: java.lang.String = null,
+    prerequisiteKey: java.lang.String = null,
+    ruleId: java.lang.String = null,
+    ruleIndex: scala.Int | scala.Double = null
+  ): LDEvaluationReason = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    if (errorKind != null) __obj.updateDynamic("errorKind")(errorKind)
+    if (prerequisiteKey != null) __obj.updateDynamic("prerequisiteKey")(prerequisiteKey)
+    if (ruleId != null) __obj.updateDynamic("ruleId")(ruleId)
+    if (ruleIndex != null) __obj.updateDynamic("ruleIndex")(ruleIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LDEvaluationReason]
+  }
+}
+

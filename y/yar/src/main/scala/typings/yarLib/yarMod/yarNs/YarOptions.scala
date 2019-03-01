@@ -37,3 +37,24 @@ trait YarOptions extends js.Object {
   var storeBlank: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object YarOptions {
+  @scala.inline
+  def apply(
+    cookieOptions: yarLib.Anon_ClearInvalid,
+    cache: hapiLib.hapiMod.CachePolicyOptions[_] = null,
+    errorOnCacheNotReady: js.UndefOr[scala.Boolean] = js.undefined,
+    maxCookieSize: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    storeBlank: js.UndefOr[scala.Boolean] = js.undefined
+  ): YarOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cookieOptions")(cookieOptions)
+    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (!js.isUndefined(errorOnCacheNotReady)) __obj.updateDynamic("errorOnCacheNotReady")(errorOnCacheNotReady)
+    if (maxCookieSize != null) __obj.updateDynamic("maxCookieSize")(maxCookieSize.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(storeBlank)) __obj.updateDynamic("storeBlank")(storeBlank)
+    __obj.asInstanceOf[YarOptions]
+  }
+}
+

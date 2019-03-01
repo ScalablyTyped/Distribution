@@ -82,3 +82,30 @@ trait DisplayPropertiesInfo extends js.Object {
   ] = js.undefined
 }
 
+object DisplayPropertiesInfo {
+  @scala.inline
+  def apply(
+    boundsOriginY: scala.Double,
+    boundsOriginX: scala.Int | scala.Double = null,
+    displayMode: DisplayMode = null,
+    displayZoomFactor: scala.Int | scala.Double = null,
+    isPrimary: js.UndefOr[scala.Boolean] = js.undefined,
+    isUnified: js.UndefOr[scala.Boolean] = js.undefined,
+    mirroringSourceId: java.lang.String = null,
+    overscan: Insets = null,
+    rotation: chromeLib.chromeLibNumbers.`0` | chromeLib.chromeLibNumbers.`90` | chromeLib.chromeLibNumbers.`180` | chromeLib.chromeLibNumbers.`270` = null
+  ): DisplayPropertiesInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("boundsOriginY")(boundsOriginY)
+    if (boundsOriginX != null) __obj.updateDynamic("boundsOriginX")(boundsOriginX.asInstanceOf[js.Any])
+    if (displayMode != null) __obj.updateDynamic("displayMode")(displayMode)
+    if (displayZoomFactor != null) __obj.updateDynamic("displayZoomFactor")(displayZoomFactor.asInstanceOf[js.Any])
+    if (!js.isUndefined(isPrimary)) __obj.updateDynamic("isPrimary")(isPrimary)
+    if (!js.isUndefined(isUnified)) __obj.updateDynamic("isUnified")(isUnified)
+    if (mirroringSourceId != null) __obj.updateDynamic("mirroringSourceId")(mirroringSourceId)
+    if (overscan != null) __obj.updateDynamic("overscan")(overscan)
+    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DisplayPropertiesInfo]
+  }
+}
+

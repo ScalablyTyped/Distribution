@@ -59,3 +59,36 @@ trait EventTargetArgs extends js.Object {
   val targetId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object EventTargetArgs {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    rule: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    batchTarget: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ArraySizeJobAttempts] = null,
+    ecsTarget: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_GroupLaunchType] = null,
+    input: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    inputPath: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    inputTransformer: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_InputPathsInputTemplate] = null,
+    kinesisTarget: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_PartitionKeyPathInput] = null,
+    roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    runCommandTargets: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_KeyValuesArray]]] = null,
+    sqsTarget: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MessageGroupIdInput] = null,
+    targetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): EventTargetArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    __obj.updateDynamic("rule")(rule.asInstanceOf[js.Any])
+    if (batchTarget != null) __obj.updateDynamic("batchTarget")(batchTarget.asInstanceOf[js.Any])
+    if (ecsTarget != null) __obj.updateDynamic("ecsTarget")(ecsTarget.asInstanceOf[js.Any])
+    if (input != null) __obj.updateDynamic("input")(input.asInstanceOf[js.Any])
+    if (inputPath != null) __obj.updateDynamic("inputPath")(inputPath.asInstanceOf[js.Any])
+    if (inputTransformer != null) __obj.updateDynamic("inputTransformer")(inputTransformer.asInstanceOf[js.Any])
+    if (kinesisTarget != null) __obj.updateDynamic("kinesisTarget")(kinesisTarget.asInstanceOf[js.Any])
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn.asInstanceOf[js.Any])
+    if (runCommandTargets != null) __obj.updateDynamic("runCommandTargets")(runCommandTargets.asInstanceOf[js.Any])
+    if (sqsTarget != null) __obj.updateDynamic("sqsTarget")(sqsTarget.asInstanceOf[js.Any])
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EventTargetArgs]
+  }
+}
+

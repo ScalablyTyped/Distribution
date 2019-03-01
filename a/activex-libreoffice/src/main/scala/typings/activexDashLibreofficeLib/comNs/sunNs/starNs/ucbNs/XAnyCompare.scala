@@ -17,3 +17,20 @@ trait XAnyCompare
   def compare(Any1: js.Any, Any2: js.Any): scala.Double
 }
 
+object XAnyCompare {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    compare: js.Function2[js.Any, js.Any, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XAnyCompare = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("compare")(compare)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XAnyCompare]
+  }
+}
+

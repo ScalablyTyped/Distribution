@@ -26,3 +26,24 @@ trait MenuOpenEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MenuOpenEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    contextMenu: java.lang.String = null,
+    element: js.Any = null,
+    model: Model = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): MenuOpenEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (contextMenu != null) __obj.updateDynamic("contextMenu")(contextMenu)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[MenuOpenEventArgs]
+  }
+}
+

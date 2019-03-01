@@ -10,3 +10,16 @@ trait Anon_AnErrorStringFailureObjPublishedUrl extends js.Object {
   def success(obj: kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, publishedUrl: java.lang.String): js.Any
 }
 
+object Anon_AnErrorStringFailureObjPublishedUrl {
+  @scala.inline
+  def apply(
+    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, java.lang.String, js.Any],
+    success: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiObject, java.lang.String, js.Any]
+  ): Anon_AnErrorStringFailureObjPublishedUrl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failure")(failure)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_AnErrorStringFailureObjPublishedUrl]
+  }
+}
+

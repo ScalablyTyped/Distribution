@@ -16,13 +16,15 @@ object adoneLibStrings {
   sealed trait ` DOTDOT` extends js.Object
   
   @js.native
-  sealed trait `!=` extends js.Object
+  sealed trait `!=`
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait `!==` extends js.Object
+  sealed trait `!==`
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait `'` extends js.Object
+  sealed trait _quote extends js.Object
   
   @js.native
   sealed trait `( )` extends js.Object
@@ -88,31 +90,68 @@ object adoneLibStrings {
   sealed trait `1/9` extends js.Object
   
   @js.native
-  sealed trait `1250` extends js.Object
+  sealed trait `1046`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `1251` extends js.Object
+  sealed trait `1124`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `1252` extends js.Object
+  sealed trait `1125`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `1253` extends js.Object
+  sealed trait `1129`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `1254` extends js.Object
+  sealed trait `1133`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `1255` extends js.Object
+  sealed trait `1161`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `1256` extends js.Object
+  sealed trait `1163`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `1257` extends js.Object
+  sealed trait `1250`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `1258` extends js.Object
+  sealed trait `1251`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait `1252`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait `1253`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait `1254`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait `1255`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait `1256`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait `1257`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait `1258`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
   sealed trait `2/3` extends js.Object
@@ -136,6 +175,10 @@ object adoneLibStrings {
   sealed trait `4/5` extends js.Object
   
   @js.native
+  sealed trait `437`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
   sealed trait `5/6` extends js.Object
   
   @js.native
@@ -145,7 +188,80 @@ object adoneLibStrings {
   sealed trait `7/8` extends js.Object
   
   @js.native
-  sealed trait `874` extends js.Object
+  sealed trait `737`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `775`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `808`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `850`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `852`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `855`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `856`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `857`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `858`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `860`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `861`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `862`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `863`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `864`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `865`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `866`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `869`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `874`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait `922`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
   sealed trait `:` extends js.Object
@@ -154,25 +270,32 @@ object adoneLibStrings {
   sealed trait `;` extends js.Object
   
   @js.native
-  sealed trait `<` extends js.Object
+  sealed trait `<`
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait `<=` extends js.Object
+  sealed trait `<=`
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait `=` extends js.Object
+  sealed trait `=`
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait `==` extends js.Object
+  sealed trait `==`
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait `===` extends js.Object
+  sealed trait `===`
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait `>` extends js.Object
+  sealed trait `>`
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait `>=` extends js.Object
+  sealed trait `>=`
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
   sealed trait `?` extends js.Object
@@ -190,16 +313,20 @@ object adoneLibStrings {
   sealed trait ANY extends js.Object
   
   @js.native
-  sealed trait ASCII extends js.Object
+  sealed trait ASCII
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Native
   
   @js.native
-  sealed trait ArmSCII8 extends js.Object
+  sealed trait ArmSCII8
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
   
   @js.native
-  sealed trait Array extends js.Object
+  sealed trait Array
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait `Array Iterator` extends js.Object
+  sealed trait `Array Iterator`
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait BACKSLASHBACKSLASH extends js.Object
@@ -757,58 +884,177 @@ object adoneLibStrings {
   sealed trait BSONRegExp extends js.Object
   
   @js.native
-  sealed trait Base64 extends js.Object
+  sealed trait Base64
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Native
   
   @js.native
-  sealed trait Big5 extends js.Object
+  sealed trait Big5
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.TaiwanHongKong
   
   @js.native
-  sealed trait `Big5-HKSCS` extends js.Object
+  sealed trait `Big5-HKSCS`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.TaiwanHongKong
   
   @js.native
-  sealed trait Binary extends js.Object
+  sealed trait Binary
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Native
   
   @js.native
   sealed trait CNAME extends js.Object
   
   @js.native
-  sealed trait CP1251 extends js.Object
+  sealed trait CP1046
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait CP1252 extends js.Object
+  sealed trait CP1124
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait CP1253 extends js.Object
+  sealed trait CP1125
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait CP1254 extends js.Object
+  sealed trait CP1129
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait CP1255 extends js.Object
+  sealed trait CP1133
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait CP1256 extends js.Object
+  sealed trait CP1161
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait CP1257 extends js.Object
+  sealed trait CP1163
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait CP1258 extends js.Object
+  sealed trait CP1251
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait CP874 extends js.Object
+  sealed trait CP1252
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait CP1253
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait CP1254
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait CP1255
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait CP1256
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait CP1257
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait CP1258
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait CP437
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP737
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP775
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP808
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP850
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP852
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP855
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP856
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP857
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP858
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP860
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP861
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP862
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP863
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP864
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP865
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP866
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP869
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait CP874
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
+  
+  @js.native
+  sealed trait CP922
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
   sealed trait Code extends js.Object
   
   @js.native
-  sealed trait D extends js.Object
+  sealed trait D
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs._date
   
   @js.native
   sealed trait DBRef extends js.Object
   
   @js.native
-  sealed trait DDD extends js.Object
+  sealed trait DDD
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
   sealed trait DELETE extends js.Object
@@ -826,10 +1072,12 @@ object adoneLibStrings {
   sealed trait DOTDOTDOT extends js.Object
   
   @js.native
-  sealed trait DataView extends js.Object
+  sealed trait DataView
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait Date extends js.Object
+  sealed trait Date
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait Decimal128 extends js.Object
@@ -838,139 +1086,285 @@ object adoneLibStrings {
   sealed trait Double extends js.Object
   
   @js.native
-  sealed trait E extends js.Object
+  sealed trait E
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait `EUC-CN` extends js.Object
+  sealed trait `EUC-CN`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Chinese
   
   @js.native
-  sealed trait `EUC-JP` extends js.Object
+  sealed trait `EUC-JP`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Japanese
   
   @js.native
-  sealed trait `EUC-KR` extends js.Object
+  sealed trait `EUC-KR`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Korean
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty
+    extends adoneLib.adoneNs.semverNs.INs.Operator
   
   @js.native
-  sealed trait GB18030 extends js.Object
+  sealed trait GB18030
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Chinese
   
   @js.native
-  sealed trait GB2312 extends js.Object
+  sealed trait GB2312
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Chinese
   
   @js.native
-  sealed trait GBK extends js.Object
+  sealed trait GBK
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Chinese
   
   @js.native
-  sealed trait `GEORGIAN-ACADEMY` extends js.Object
+  sealed trait `GEORGIAN-ACADEMY`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
   
   @js.native
-  sealed trait `GEORGIAN-PS` extends js.Object
+  sealed trait `GEORGIAN-PS`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
   
   @js.native
   sealed trait GET extends js.Object
   
   @js.native
-  sealed trait GG extends js.Object
+  sealed trait GG
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait `HP Roman-8` extends js.Object
+  sealed trait `HP Roman-8`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
   
   @js.native
-  sealed trait Hex extends js.Object
+  sealed trait Hex
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Native
   
   @js.native
-  sealed trait `ISO-646-CN` extends js.Object
+  sealed trait IBM1046
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-646-JP` extends js.Object
+  sealed trait IBM1124
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8829-1` extends js.Object
+  sealed trait IBM1125
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-10` extends js.Object
+  sealed trait IBM1129
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-11` extends js.Object
+  sealed trait IBM1133
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-12` extends js.Object
+  sealed trait IBM1161
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-13` extends js.Object
+  sealed trait IBM1163
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-14` extends js.Object
+  sealed trait IBM437
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-15` extends js.Object
+  sealed trait IBM737
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-16` extends js.Object
+  sealed trait IBM775
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-2` extends js.Object
+  sealed trait IBM808
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-3` extends js.Object
+  sealed trait IBM850
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-4` extends js.Object
+  sealed trait IBM852
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-5` extends js.Object
+  sealed trait IBM855
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-6` extends js.Object
+  sealed trait IBM856
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-7` extends js.Object
+  sealed trait IBM857
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-8` extends js.Object
+  sealed trait IBM858
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
   
   @js.native
-  sealed trait `ISO-8859-9` extends js.Object
+  sealed trait IBM860
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait IBM861
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait IBM862
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait IBM863
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait IBM864
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait IBM865
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait IBM866
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait IBM869
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait IBM922
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.IBM
+  
+  @js.native
+  sealed trait `ISO-646-CN`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
+  
+  @js.native
+  sealed trait `ISO-646-JP`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
+  
+  @js.native
+  sealed trait `ISO-8829-1`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-10`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-11`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-12`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-13`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-14`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-15`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-16`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-2`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-3`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-4`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-5`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-6`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-7`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-8`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
+  
+  @js.native
+  sealed trait `ISO-8859-9`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.ISO
   
   @js.native
   sealed trait Int32 extends js.Object
   
   @js.native
-  sealed trait `KOI8-R` extends js.Object
+  sealed trait `KOI8-R`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.KOI8
   
   @js.native
-  sealed trait `KOI8-RU` extends js.Object
+  sealed trait `KOI8-RU`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.KOI8
   
   @js.native
-  sealed trait `KOI8-T` extends js.Object
+  sealed trait `KOI8-T`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.KOI8
   
   @js.native
-  sealed trait `KOI8-U` extends js.Object
+  sealed trait `KOI8-U`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.KOI8
   
   @js.native
-  sealed trait KS_C_5601 extends js.Object
+  sealed trait KS_C_5601
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Korean
   
   @js.native
-  sealed trait L extends js.Object
+  sealed trait L
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
   sealed trait LE extends js.Object
   
   @js.native
-  sealed trait LL extends js.Object
+  sealed trait LL
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait LLL extends js.Object
+  sealed trait LLL
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait LLLL extends js.Object
+  sealed trait LLLL
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait LT extends js.Object
+  sealed trait LT
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait LTS extends js.Object
+  sealed trait LTS
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
   sealed trait LZMA_FILTERS_MAX extends js.Object
@@ -1006,49 +1400,64 @@ object adoneLibStrings {
   sealed trait Long extends js.Object
   
   @js.native
-  sealed trait M extends js.Object
+  sealed trait M
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
+       with adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
-  sealed trait MM extends js.Object
+  sealed trait MM
+    extends adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
   sealed trait MX extends js.Object
   
   @js.native
-  sealed trait MacCentEuro extends js.Object
+  sealed trait MacCentEuro
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait MacCroatian extends js.Object
+  sealed trait MacCroatian
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait MacCyrillic extends js.Object
+  sealed trait MacCyrillic
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait MacGreek extends js.Object
+  sealed trait MacGreek
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait MacIceland extends js.Object
+  sealed trait MacIceland
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait MacRoman extends js.Object
+  sealed trait MacRoman
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait MacThai extends js.Object
+  sealed trait MacThai
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait MacTurkish extends js.Object
+  sealed trait MacTurkish
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait MacUkraine extends js.Object
+  sealed trait MacUkraine
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait Macintosh extends js.Object
+  sealed trait Macintosh
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Mac
   
   @js.native
-  sealed trait Map extends js.Object
+  sealed trait Map
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait `Map Iterator` extends js.Object
+  sealed trait `Map Iterator`
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait MaxKey extends js.Object
@@ -1066,7 +1475,8 @@ object adoneLibStrings {
   sealed trait OPTIONS extends js.Object
   
   @js.native
-  sealed trait Object extends js.Object
+  sealed trait Object
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait ObjectId extends js.Object
@@ -1081,7 +1491,8 @@ object adoneLibStrings {
   sealed trait POST extends js.Object
   
   @js.native
-  sealed trait PT154 extends js.Object
+  sealed trait PT154
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
   
   @js.native
   sealed trait PTR extends js.Object
@@ -1090,10 +1501,12 @@ object adoneLibStrings {
   sealed trait PUT extends js.Object
   
   @js.native
-  sealed trait Promise extends js.Object
+  sealed trait Promise
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait Q extends js.Object
+  sealed trait Q
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs._quarter
   
   @js.native
   sealed trait RFC1738 extends js.Object
@@ -1102,10 +1515,12 @@ object adoneLibStrings {
   sealed trait RFC3986 extends js.Object
   
   @js.native
-  sealed trait RK1048 extends js.Object
+  sealed trait RK1048
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
   
   @js.native
-  sealed trait RegExp extends js.Object
+  sealed trait RegExp
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait ResolvableProps extends js.Object
@@ -1117,25 +1532,31 @@ object adoneLibStrings {
   sealed trait SRV extends js.Object
   
   @js.native
-  sealed trait Set extends js.Object
+  sealed trait Set
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait `Set Iterator` extends js.Object
+  sealed trait `Set Iterator`
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait Shift_JIS extends js.Object
+  sealed trait Shift_JIS
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Japanese
   
   @js.native
-  sealed trait `String Iterator` extends js.Object
+  sealed trait `String Iterator`
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait Symbol extends js.Object
   
   @js.native
-  sealed trait TCVN extends js.Object
+  sealed trait TCVN
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
   
   @js.native
-  sealed trait `TIS-620` extends js.Object
+  sealed trait `TIS-620`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
   
   @js.native
   sealed trait TXT extends js.Object
@@ -1144,91 +1565,119 @@ object adoneLibStrings {
   sealed trait Timestamp extends js.Object
   
   @js.native
-  sealed trait `UCS-2` extends js.Object
+  sealed trait `UCS-2`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Native
   
   @js.native
-  sealed trait `UTF-16` extends js.Object
+  sealed trait `UTF-16`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Unicode
   
   @js.native
-  sealed trait `UTF-16BE` extends js.Object
+  sealed trait `UTF-16BE`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Unicode
   
   @js.native
-  sealed trait `UTF-16LE` extends js.Object
+  sealed trait `UTF-16LE`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Native
   
   @js.native
-  sealed trait `UTF-8` extends js.Object
+  sealed trait `UTF-8`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Native
   
   @js.native
   sealed trait Underscore extends js.Object
   
   @js.native
-  sealed trait VISCII extends js.Object
+  sealed trait VISCII
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Misc
   
   @js.native
-  sealed trait W extends js.Object
+  sealed trait W
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs._isoWeek
   
   @js.native
-  sealed trait WeakSet extends js.Object
+  sealed trait WeakSet
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait `Win-1251` extends js.Object
+  sealed trait `Win-1251`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Win-1252` extends js.Object
+  sealed trait `Win-1252`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Win-1253` extends js.Object
+  sealed trait `Win-1253`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Win-1254` extends js.Object
+  sealed trait `Win-1254`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Win-1255` extends js.Object
+  sealed trait `Win-1255`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Win-1256` extends js.Object
+  sealed trait `Win-1256`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Win-1257` extends js.Object
+  sealed trait `Win-1257`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Win-1258` extends js.Object
+  sealed trait `Win-1258`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Windows-1251` extends js.Object
+  sealed trait `Windows-1251`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Windows-1252` extends js.Object
+  sealed trait `Windows-1252`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Windows-1253` extends js.Object
+  sealed trait `Windows-1253`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Windows-1254` extends js.Object
+  sealed trait `Windows-1254`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Windows-1255` extends js.Object
+  sealed trait `Windows-1255`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Windows-1256` extends js.Object
+  sealed trait `Windows-1256`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Windows-1257` extends js.Object
+  sealed trait `Windows-1257`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Windows-1258` extends js.Object
+  sealed trait `Windows-1258`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Windows
   
   @js.native
-  sealed trait `Windows-31J` extends js.Object
+  sealed trait `Windows-31J`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Japanese
   
   @js.native
-  sealed trait `Windows-936` extends js.Object
+  sealed trait `Windows-936`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Chinese
   
   @js.native
-  sealed trait `Windows-949` extends js.Object
+  sealed trait `Windows-949`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Korean
   
   @js.native
-  sealed trait `Windows-950` extends js.Object
+  sealed trait `Windows-950`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.TaiwanHongKong
   
   @js.native
   sealed trait `[    ]` extends js.Object
@@ -1270,52 +1719,65 @@ object adoneLibStrings {
   sealed trait `[]` extends js.Object
   
   @js.native
-  sealed trait a extends js.Object
+  sealed trait a
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait `a+` extends js.Object
+  sealed trait `a+`
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait add extends js.Object
+  sealed trait add
+    extends adoneLib.adoneNs.fsNs.INs.WatcherNs.Event
   
   @js.native
-  sealed trait addDir extends js.Object
+  sealed trait addDir
+    extends adoneLib.adoneNs.fsNs.INs.WatcherNs.Event
   
   @js.native
   sealed trait all extends js.Object
   
   @js.native
-  sealed trait aloneDecoder extends js.Object
+  sealed trait aloneDecoder
+    extends adoneLib.adoneNs.compressorNs.INs.lzmaNs.Coder
   
   @js.native
-  sealed trait aloneEncoder extends js.Object
+  sealed trait aloneEncoder
+    extends adoneLib.adoneNs.compressorNs.INs.lzmaNs.Coder
   
   @js.native
   sealed trait append extends js.Object
   
   @js.native
-  sealed trait array extends js.Object
+  sealed trait array
+    extends adoneLib.adoneNs.assertionNs.INs.PossibleTypes
   
   @js.native
-  sealed trait ascii extends js.Object
+  sealed trait ascii
+    extends adoneLib.adoneNs.fsNs.INs.Encoding
   
   @js.native
   sealed trait auto extends js.Object
   
   @js.native
-  sealed trait autoDecoder extends js.Object
+  sealed trait autoDecoder
+    extends adoneLib.adoneNs.compressorNs.INs.lzmaNs.Coder
   
   @js.native
-  sealed trait ax extends js.Object
+  sealed trait ax
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait `ax+` extends js.Object
+  sealed trait `ax+`
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait az extends js.Object
+  sealed trait az
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait b extends js.Object
+  sealed trait b
+    extends adoneLib.adoneNs.collectionNs.INs.ByteArrayNs.Metrics
   
   @js.native
   sealed trait bad extends js.Object
@@ -1324,19 +1786,22 @@ object adoneLibStrings {
   sealed trait base32hex extends js.Object
   
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends adoneLib.adoneNs.fsNs.INs.Encoding
   
   @js.native
   sealed trait big extends js.Object
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends adoneLib.adoneNs.fsNs.INs.Encoding
   
   @js.native
   sealed trait `block-device` extends js.Object
   
   @js.native
-  sealed trait boolean extends js.Object
+  sealed trait boolean
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait bottom extends js.Object
@@ -1345,25 +1810,29 @@ object adoneLibStrings {
   sealed trait brackets extends js.Object
   
   @js.native
-  sealed trait brotli extends js.Object
+  sealed trait brotli
+    extends adoneLib.adoneNs.fastNs.INs.pluginNs.compressorNs.Compressor
   
   @js.native
   sealed trait buffer extends js.Object
   
   @js.native
-  sealed trait c extends js.Object
+  sealed trait c
+    extends adoneLib.adoneNs.collectionNs.INs.ByteArrayNs.Metrics
   
   @js.native
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change
+    extends adoneLib.adoneNs.fsNs.INs.WatcherNs.Event
   
   @js.native
   sealed trait `character-device` extends js.Object
   
   @js.native
-  sealed trait `class` extends js.Object
+  sealed trait `class`
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait close extends js.Object
@@ -1381,52 +1850,67 @@ object adoneLibStrings {
   sealed trait crockford extends js.Object
   
   @js.native
-  sealed trait cz extends js.Object
+  sealed trait cz
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait d extends js.Object
+  sealed trait d
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
+       with adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs._date
   
   @js.native
-  sealed trait dates extends js.Object
+  sealed trait dates
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs._date
   
   @js.native
-  sealed trait day extends js.Object
+  sealed trait day
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait dayOfYear extends js.Object
+  sealed trait dayOfYear
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait dayOfYears extends js.Object
+  sealed trait dayOfYears
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait days extends js.Object
+  sealed trait days
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait dd extends js.Object
+  sealed trait dd
+    extends adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
-  sealed trait de extends js.Object
+  sealed trait de
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait de_AT extends js.Object
+  sealed trait de_AT
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait de_CH extends js.Object
+  sealed trait de_CH
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait default extends js.Object
   
   @js.native
-  sealed trait deflate extends js.Object
+  sealed trait deflate
+    extends adoneLib.adoneNs.fastNs.INs.pluginNs.compressorNs.Compressor
   
   @js.native
   sealed trait der extends js.Object
   
   @js.native
-  sealed trait dir extends js.Object
+  sealed trait dir
+    extends adoneLib.adoneNs.fsNs.INs.SymlinkType
   
   @js.native
   sealed trait directory extends js.Object
@@ -1444,64 +1928,82 @@ object adoneLibStrings {
   sealed trait dsa extends js.Object
   
   @js.native
-  sealed trait e extends js.Object
+  sealed trait e
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait easyEncoder extends js.Object
+  sealed trait easyEncoder
+    extends adoneLib.adoneNs.compressorNs.INs.lzmaNs.Coder
   
   @js.native
   sealed trait ec extends js.Object
   
   @js.native
-  sealed trait el extends js.Object
+  sealed trait el
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait en extends js.Object
+  sealed trait en
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait en_AU extends js.Object
+  sealed trait en_AU
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait en_BORK extends js.Object
+  sealed trait en_BORK
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait en_CA extends js.Object
+  sealed trait en_CA
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait en_GB extends js.Object
+  sealed trait en_GB
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait en_IE extends js.Object
+  sealed trait en_IE
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait en_IND extends js.Object
+  sealed trait en_IND
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait en_US extends js.Object
+  sealed trait en_US
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait en_au_ocker extends js.Object
+  sealed trait en_au_ocker
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait `end after each hook` extends js.Object
+  sealed trait `end after each hook`
+    extends adoneLib.adoneNs.shaniNs.INs.EndHookEvent
   
   @js.native
-  sealed trait `end after hook` extends js.Object
+  sealed trait `end after hook`
+    extends adoneLib.adoneNs.shaniNs.INs.EndHookEvent
   
   @js.native
-  sealed trait `end after test hook` extends js.Object
+  sealed trait `end after test hook`
+    extends adoneLib.adoneNs.shaniNs.INs.EndHookEvent
   
   @js.native
-  sealed trait `end before each hook` extends js.Object
+  sealed trait `end before each hook`
+    extends adoneLib.adoneNs.shaniNs.INs.EndHookEvent
   
   @js.native
-  sealed trait `end before hook` extends js.Object
+  sealed trait `end before hook`
+    extends adoneLib.adoneNs.shaniNs.INs.EndHookEvent
   
   @js.native
-  sealed trait `end before test hook` extends js.Object
+  sealed trait `end before test hook`
+    extends adoneLib.adoneNs.shaniNs.INs.EndHookEvent
   
   @js.native
   sealed trait `end test` extends js.Object
@@ -1513,13 +2015,16 @@ object adoneLibStrings {
   sealed trait entry extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends adoneLib.adoneNs.fsNs.INs.WatcherNs.Event
   
   @js.native
-  sealed trait es extends js.Object
+  sealed trait es
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait es_MX extends js.Object
+  sealed trait es_MX
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait ex extends js.Object
@@ -1534,13 +2039,15 @@ object adoneLibStrings {
   sealed trait exnb extends js.Object
   
   @js.native
-  sealed trait fa extends js.Object
+  sealed trait fa
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait fifo extends js.Object
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends adoneLib.adoneNs.fsNs.INs.SymlinkType
   
   @js.native
   sealed trait finish extends js.Object
@@ -1549,43 +2056,56 @@ object adoneLibStrings {
   sealed trait fork extends js.Object
   
   @js.native
-  sealed trait fr extends js.Object
+  sealed trait fr
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait fr_CA extends js.Object
+  sealed trait fr_CA
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait function extends js.Object
+  sealed trait function
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait ge extends js.Object
+  sealed trait ge
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait gg extends js.Object
+  sealed trait gg
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait global extends js.Object
+  sealed trait global
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait gz extends js.Object
+  sealed trait gz
+    extends adoneLib.adoneNs.fastNs.INs.pluginNs.compressorNs.Compressor
   
   @js.native
-  sealed trait h extends js.Object
+  sealed trait h
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
+       with adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
   sealed trait hard extends js.Object
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends adoneLib.adoneNs.fsNs.INs.Encoding
   
   @js.native
-  sealed trait hh extends js.Object
+  sealed trait hh
+    extends adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
-  sealed trait hour extends js.Object
+  sealed trait hour
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait hours extends js.Object
+  sealed trait hours
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
   sealed trait hybrid extends js.Object
@@ -1594,7 +2114,8 @@ object adoneLibStrings {
   sealed trait i extends js.Object
   
   @js.native
-  sealed trait id_ID extends js.Object
+  sealed trait id_ID
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait ignore extends js.Object
@@ -1609,52 +2130,66 @@ object adoneLibStrings {
   sealed trait ipc extends js.Object
   
   @js.native
-  sealed trait isoWeek extends js.Object
+  sealed trait isoWeek
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs._isoWeek
   
   @js.native
-  sealed trait isoWeekYear extends js.Object
+  sealed trait isoWeekYear
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait isoWeekYears extends js.Object
+  sealed trait isoWeekYears
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait isoWeekday extends js.Object
+  sealed trait isoWeekday
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait isoWeekdays extends js.Object
+  sealed trait isoWeekdays
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait isoWeeks extends js.Object
+  sealed trait isoWeeks
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs._isoWeek
   
   @js.native
-  sealed trait it extends js.Object
+  sealed trait it
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait ja extends js.Object
+  sealed trait ja
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait junction extends js.Object
+  sealed trait junction
+    extends adoneLib.adoneNs.fsNs.INs.SymlinkType
   
   @js.native
   sealed trait key extends js.Object
   
   @js.native
-  sealed trait ko extends js.Object
+  sealed trait ko
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait l extends js.Object
+  sealed trait l
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait lastDay extends js.Object
+  sealed trait lastDay
+    extends adoneLib.adoneNs.INs.datetimeNs.CalendarKey
   
   @js.native
-  sealed trait lastWeek extends js.Object
+  sealed trait lastWeek
+    extends adoneLib.adoneNs.INs.datetimeNs.CalendarKey
   
   @js.native
-  sealed trait latin1 extends js.Object
+  sealed trait latin1
+    extends adoneLib.adoneNs.fsNs.INs.Encoding
   
   @js.native
   sealed trait left extends js.Object
@@ -1672,34 +2207,45 @@ object adoneLibStrings {
   sealed trait little extends js.Object
   
   @js.native
-  sealed trait ll extends js.Object
+  sealed trait ll
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait lll extends js.Object
+  sealed trait lll
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait llll extends js.Object
+  sealed trait llll
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait lt extends js.Object
+  sealed trait lt
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait lts extends js.Object
+  sealed trait lts
+    extends adoneLib.adoneNs.INs.datetimeNs.LongDateFormatKey
   
   @js.native
-  sealed trait lv extends js.Object
+  sealed trait lv
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait lzma extends js.Object
+  sealed trait lzma
+    extends adoneLib.adoneNs.fastNs.INs.pluginNs.compressorNs.Compressor
   
   @js.native
-  sealed trait m extends js.Object
+  sealed trait m
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
+       with adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
-  sealed trait major extends js.Object
+  sealed trait major
+    extends adoneLib.adoneNs.semverNs.INs.ReleaseType
   
   @js.native
-  sealed trait mapping extends js.Object
+  sealed trait mapping
+    extends adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Kind
   
   @js.native
   sealed trait `match` extends js.Object
@@ -1711,49 +2257,64 @@ object adoneLibStrings {
   sealed trait message extends js.Object
   
   @js.native
-  sealed trait millisecond extends js.Object
+  sealed trait millisecond
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait milliseconds extends js.Object
+  sealed trait milliseconds
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait minor extends js.Object
+  sealed trait minor
+    extends adoneLib.adoneNs.semverNs.INs.ReleaseType
   
   @js.native
-  sealed trait minute extends js.Object
+  sealed trait minute
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait minutes extends js.Object
+  sealed trait minutes
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait mm extends js.Object
+  sealed trait mm
+    extends adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait months extends js.Object
+  sealed trait months
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait ms extends js.Object
+  sealed trait ms
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait nb_NO extends js.Object
+  sealed trait nb_NO
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait nep extends js.Object
+  sealed trait nep
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait nextDay extends js.Object
+  sealed trait nextDay
+    extends adoneLib.adoneNs.INs.datetimeNs.CalendarKey
   
   @js.native
-  sealed trait nextWeek extends js.Object
+  sealed trait nextWeek
+    extends adoneLib.adoneNs.INs.datetimeNs.CalendarKey
   
   @js.native
-  sealed trait nl extends js.Object
+  sealed trait nl
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait nl_BE extends js.Object
+  sealed trait nl_BE
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait none extends js.Object
@@ -1762,13 +2323,16 @@ object adoneLibStrings {
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait `null` extends js.Object
+  sealed trait `null`
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait `object` extends js.Object
+  sealed trait `object`
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait ok extends js.Object
@@ -1783,7 +2347,8 @@ object adoneLibStrings {
   sealed trait onlyName extends js.Object
   
   @js.native
-  sealed trait patch extends js.Object
+  sealed trait patch
+    extends adoneLib.adoneNs.semverNs.INs.ReleaseType
   
   @js.native
   sealed trait pem extends js.Object
@@ -1792,46 +2357,60 @@ object adoneLibStrings {
   sealed trait pipe extends js.Object
   
   @js.native
-  sealed trait pl extends js.Object
+  sealed trait pl
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait premajor extends js.Object
+  sealed trait premajor
+    extends adoneLib.adoneNs.semverNs.INs.ReleaseType
   
   @js.native
-  sealed trait preminor extends js.Object
+  sealed trait preminor
+    extends adoneLib.adoneNs.semverNs.INs.ReleaseType
   
   @js.native
-  sealed trait prepatch extends js.Object
+  sealed trait prepatch
+    extends adoneLib.adoneNs.semverNs.INs.ReleaseType
   
   @js.native
-  sealed trait prerelease extends js.Object
+  sealed trait prerelease
+    extends adoneLib.adoneNs.semverNs.INs.ReleaseType
   
   @js.native
-  sealed trait pt_BR extends js.Object
+  sealed trait pt_BR
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait quarter extends js.Object
+  sealed trait quarter
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs._quarter
   
   @js.native
-  sealed trait quarters extends js.Object
+  sealed trait quarters
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs._quarter
   
   @js.native
-  sealed trait r extends js.Object
+  sealed trait r
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait `r+` extends js.Object
+  sealed trait `r+`
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait raw extends js.Object
+  sealed trait raw
+    extends adoneLib.adoneNs.fsNs.INs.WatcherNs.Event
   
   @js.native
-  sealed trait rawDecoder extends js.Object
+  sealed trait rawDecoder
+    extends adoneLib.adoneNs.compressorNs.INs.lzmaNs.Coder
   
   @js.native
-  sealed trait rawEncoder extends js.Object
+  sealed trait rawEncoder
+    extends adoneLib.adoneNs.compressorNs.INs.lzmaNs.Coder
   
   @js.native
-  sealed trait ready extends js.Object
+  sealed trait ready
+    extends adoneLib.adoneNs.fsNs.INs.WatcherNs.Event
   
   @js.native
   sealed trait repeat extends js.Object
@@ -1843,37 +2422,48 @@ object adoneLibStrings {
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait ro extends js.Object
+  sealed trait ro
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait `rs+` extends js.Object
+  sealed trait `rs+`
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
   sealed trait rsa extends js.Object
   
   @js.native
-  sealed trait ru extends js.Object
+  sealed trait ru
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
+       with adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
-  sealed trait sameDay extends js.Object
+  sealed trait sameDay
+    extends adoneLib.adoneNs.INs.datetimeNs.CalendarKey
   
   @js.native
-  sealed trait sameElse extends js.Object
+  sealed trait sameElse
+    extends adoneLib.adoneNs.INs.datetimeNs.CalendarKey
   
   @js.native
-  sealed trait scalar extends js.Object
+  sealed trait scalar
+    extends adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Kind
   
   @js.native
-  sealed trait second extends js.Object
+  sealed trait second
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait seconds extends js.Object
+  sealed trait seconds
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait sequence extends js.Object
+  sealed trait sequence
+    extends adoneLib.adoneNs.dataNs.yamlNs.typeNs.INs.Kind
   
   @js.native
   sealed trait set extends js.Object
@@ -1888,34 +2478,42 @@ object adoneLibStrings {
   sealed trait shnb extends js.Object
   
   @js.native
-  sealed trait sk extends js.Object
+  sealed trait sk
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait `skip test` extends js.Object
   
   @js.native
-  sealed trait snappy extends js.Object
+  sealed trait snappy
+    extends adoneLib.adoneNs.fastNs.INs.pluginNs.compressorNs.Compressor
   
   @js.native
   sealed trait soft extends js.Object
   
   @js.native
-  sealed trait `start after each hook` extends js.Object
+  sealed trait `start after each hook`
+    extends adoneLib.adoneNs.shaniNs.INs.StartHookEvent
   
   @js.native
-  sealed trait `start after hook` extends js.Object
+  sealed trait `start after hook`
+    extends adoneLib.adoneNs.shaniNs.INs.StartHookEvent
   
   @js.native
-  sealed trait `start after test hook` extends js.Object
+  sealed trait `start after test hook`
+    extends adoneLib.adoneNs.shaniNs.INs.StartHookEvent
   
   @js.native
-  sealed trait `start before each hook` extends js.Object
+  sealed trait `start before each hook`
+    extends adoneLib.adoneNs.shaniNs.INs.StartHookEvent
   
   @js.native
-  sealed trait `start before hook` extends js.Object
+  sealed trait `start before hook`
+    extends adoneLib.adoneNs.shaniNs.INs.StartHookEvent
   
   @js.native
-  sealed trait `start before test hook` extends js.Object
+  sealed trait `start before test hook`
+    extends adoneLib.adoneNs.shaniNs.INs.StartHookEvent
   
   @js.native
   sealed trait `start test` extends js.Object
@@ -1936,37 +2534,45 @@ object adoneLibStrings {
   sealed trait stream extends js.Object
   
   @js.native
-  sealed trait streamDecoder extends js.Object
+  sealed trait streamDecoder
+    extends adoneLib.adoneNs.compressorNs.INs.lzmaNs.Coder
   
   @js.native
-  sealed trait streamEncoder extends js.Object
+  sealed trait streamEncoder
+    extends adoneLib.adoneNs.compressorNs.INs.lzmaNs.Coder
   
   @js.native
-  sealed trait string extends js.Object
+  sealed trait string
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait sv extends js.Object
+  sealed trait sv
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait symblink extends js.Object
   
   @js.native
-  sealed trait symbol extends js.Object
+  sealed trait symbol
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
   sealed trait symlink extends js.Object
   
   @js.native
-  sealed trait tar extends js.Object
+  sealed trait tar
+    extends adoneLib.adoneNs.fastNs.INs.pluginNs.archiveNs.Archiver
   
   @js.native
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait tr extends js.Object
+  sealed trait tr
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait uk extends js.Object
+  sealed trait uk
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
   sealed trait un extends js.Object
@@ -1975,85 +2581,113 @@ object adoneLibStrings {
   sealed trait uncompressed extends js.Object
   
   @js.native
-  sealed trait undefined extends js.Object
+  sealed trait undefined
+    extends adoneLib.adoneNs.metaNs.INs.PossibleTypes
   
   @js.native
-  sealed trait unlink extends js.Object
+  sealed trait unlink
+    extends adoneLib.adoneNs.fsNs.INs.WatcherNs.Event
   
   @js.native
-  sealed trait unlinkDir extends js.Object
+  sealed trait unlinkDir
+    extends adoneLib.adoneNs.fsNs.INs.WatcherNs.Event
   
   @js.native
   sealed trait unpipe extends js.Object
   
   @js.native
-  sealed trait usc2 extends js.Object
+  sealed trait usc2
+    extends adoneLib.adoneNs.fsNs.INs.Encoding
   
   @js.native
-  sealed trait utf16le extends js.Object
+  sealed trait utf16le
+    extends adoneLib.adoneNs.fsNs.INs.Encoding
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends adoneLib.adoneNs.fsNs.INs.Encoding
   
   @js.native
-  sealed trait vi extends js.Object
+  sealed trait vi
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait w extends js.Object
+  sealed trait w
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
+       with adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait `w+` extends js.Object
+  sealed trait `w+`
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait weekYear extends js.Object
+  sealed trait weekYear
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait weekYears extends js.Object
+  sealed trait weekYears
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait weekday extends js.Object
+  sealed trait weekday
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait weekdays extends js.Object
+  sealed trait weekdays
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.All
   
   @js.native
-  sealed trait weeks extends js.Object
+  sealed trait weeks
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait `windows-932` extends js.Object
+  sealed trait `windows-932`
+    extends adoneLib.adoneNs.utilNs.iconvNs.INs.encodingNs.Japanese
   
   @js.native
-  sealed trait wx extends js.Object
+  sealed trait wx
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait `wx+` extends js.Object
+  sealed trait `wx+`
+    extends adoneLib.adoneNs.fsNs.INs.Flag
   
   @js.native
-  sealed trait xz extends js.Object
+  sealed trait xz
+    extends adoneLib.adoneNs.fastNs.INs.pluginNs.compressorNs.Compressor
   
   @js.native
-  sealed trait y extends js.Object
+  sealed trait y
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
+       with adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
-  sealed trait year extends js.Object
+  sealed trait year
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait years extends js.Object
+  sealed trait years
+    extends adoneLib.adoneNs.INs.datetimeNs.unitOfTimeNs.Base
   
   @js.native
-  sealed trait yy extends js.Object
+  sealed trait yy
+    extends adoneLib.adoneNs.INs.datetimeNs.RelativeTimeKey
   
   @js.native
-  sealed trait zh_CN extends js.Object
+  sealed trait zh_CN
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait zh_TW extends js.Object
+  sealed trait zh_TW
+    extends adoneLib.adoneNs.fakeNs.INs.Locale
   
   @js.native
-  sealed trait zip extends js.Object
+  sealed trait zip
+    extends adoneLib.adoneNs.fastNs.INs.pluginNs.archiveNs.Archiver
   
   @js.native
   sealed trait `|` extends js.Object
@@ -2069,7 +2703,7 @@ object adoneLibStrings {
   @scala.inline
   def `!==`: `!==` = "!==".asInstanceOf[`!==`]
   @scala.inline
-  def `'`: `'` = "'".asInstanceOf[`'`]
+  def _quote: _quote = "'".asInstanceOf[_quote]
   @scala.inline
   def `( )`: `( )` = "( )".asInstanceOf[`( )`]
   @scala.inline
@@ -2113,6 +2747,20 @@ object adoneLibStrings {
   @scala.inline
   def `1/9`: `1/9` = "1/9".asInstanceOf[`1/9`]
   @scala.inline
+  def `1046`: `1046` = "1046".asInstanceOf[`1046`]
+  @scala.inline
+  def `1124`: `1124` = "1124".asInstanceOf[`1124`]
+  @scala.inline
+  def `1125`: `1125` = "1125".asInstanceOf[`1125`]
+  @scala.inline
+  def `1129`: `1129` = "1129".asInstanceOf[`1129`]
+  @scala.inline
+  def `1133`: `1133` = "1133".asInstanceOf[`1133`]
+  @scala.inline
+  def `1161`: `1161` = "1161".asInstanceOf[`1161`]
+  @scala.inline
+  def `1163`: `1163` = "1163".asInstanceOf[`1163`]
+  @scala.inline
   def `1250`: `1250` = "1250".asInstanceOf[`1250`]
   @scala.inline
   def `1251`: `1251` = "1251".asInstanceOf[`1251`]
@@ -2145,13 +2793,51 @@ object adoneLibStrings {
   @scala.inline
   def `4/5`: `4/5` = "4/5".asInstanceOf[`4/5`]
   @scala.inline
+  def `437`: `437` = "437".asInstanceOf[`437`]
+  @scala.inline
   def `5/6`: `5/6` = "5/6".asInstanceOf[`5/6`]
   @scala.inline
   def `5/8`: `5/8` = "5/8".asInstanceOf[`5/8`]
   @scala.inline
   def `7/8`: `7/8` = "7/8".asInstanceOf[`7/8`]
   @scala.inline
+  def `737`: `737` = "737".asInstanceOf[`737`]
+  @scala.inline
+  def `775`: `775` = "775".asInstanceOf[`775`]
+  @scala.inline
+  def `808`: `808` = "808".asInstanceOf[`808`]
+  @scala.inline
+  def `850`: `850` = "850".asInstanceOf[`850`]
+  @scala.inline
+  def `852`: `852` = "852".asInstanceOf[`852`]
+  @scala.inline
+  def `855`: `855` = "855".asInstanceOf[`855`]
+  @scala.inline
+  def `856`: `856` = "856".asInstanceOf[`856`]
+  @scala.inline
+  def `857`: `857` = "857".asInstanceOf[`857`]
+  @scala.inline
+  def `858`: `858` = "858".asInstanceOf[`858`]
+  @scala.inline
+  def `860`: `860` = "860".asInstanceOf[`860`]
+  @scala.inline
+  def `861`: `861` = "861".asInstanceOf[`861`]
+  @scala.inline
+  def `862`: `862` = "862".asInstanceOf[`862`]
+  @scala.inline
+  def `863`: `863` = "863".asInstanceOf[`863`]
+  @scala.inline
+  def `864`: `864` = "864".asInstanceOf[`864`]
+  @scala.inline
+  def `865`: `865` = "865".asInstanceOf[`865`]
+  @scala.inline
+  def `866`: `866` = "866".asInstanceOf[`866`]
+  @scala.inline
+  def `869`: `869` = "869".asInstanceOf[`869`]
+  @scala.inline
   def `874`: `874` = "874".asInstanceOf[`874`]
+  @scala.inline
+  def `922`: `922` = "922".asInstanceOf[`922`]
   @scala.inline
   def `:`: `:` = ":".asInstanceOf[`:`]
   @scala.inline
@@ -2569,6 +3255,20 @@ object adoneLibStrings {
   @scala.inline
   def CNAME: CNAME = "CNAME".asInstanceOf[CNAME]
   @scala.inline
+  def CP1046: CP1046 = "CP1046".asInstanceOf[CP1046]
+  @scala.inline
+  def CP1124: CP1124 = "CP1124".asInstanceOf[CP1124]
+  @scala.inline
+  def CP1125: CP1125 = "CP1125".asInstanceOf[CP1125]
+  @scala.inline
+  def CP1129: CP1129 = "CP1129".asInstanceOf[CP1129]
+  @scala.inline
+  def CP1133: CP1133 = "CP1133".asInstanceOf[CP1133]
+  @scala.inline
+  def CP1161: CP1161 = "CP1161".asInstanceOf[CP1161]
+  @scala.inline
+  def CP1163: CP1163 = "CP1163".asInstanceOf[CP1163]
+  @scala.inline
   def CP1251: CP1251 = "CP1251".asInstanceOf[CP1251]
   @scala.inline
   def CP1252: CP1252 = "CP1252".asInstanceOf[CP1252]
@@ -2585,7 +3285,45 @@ object adoneLibStrings {
   @scala.inline
   def CP1258: CP1258 = "CP1258".asInstanceOf[CP1258]
   @scala.inline
+  def CP437: CP437 = "CP437".asInstanceOf[CP437]
+  @scala.inline
+  def CP737: CP737 = "CP737".asInstanceOf[CP737]
+  @scala.inline
+  def CP775: CP775 = "CP775".asInstanceOf[CP775]
+  @scala.inline
+  def CP808: CP808 = "CP808".asInstanceOf[CP808]
+  @scala.inline
+  def CP850: CP850 = "CP850".asInstanceOf[CP850]
+  @scala.inline
+  def CP852: CP852 = "CP852".asInstanceOf[CP852]
+  @scala.inline
+  def CP855: CP855 = "CP855".asInstanceOf[CP855]
+  @scala.inline
+  def CP856: CP856 = "CP856".asInstanceOf[CP856]
+  @scala.inline
+  def CP857: CP857 = "CP857".asInstanceOf[CP857]
+  @scala.inline
+  def CP858: CP858 = "CP858".asInstanceOf[CP858]
+  @scala.inline
+  def CP860: CP860 = "CP860".asInstanceOf[CP860]
+  @scala.inline
+  def CP861: CP861 = "CP861".asInstanceOf[CP861]
+  @scala.inline
+  def CP862: CP862 = "CP862".asInstanceOf[CP862]
+  @scala.inline
+  def CP863: CP863 = "CP863".asInstanceOf[CP863]
+  @scala.inline
+  def CP864: CP864 = "CP864".asInstanceOf[CP864]
+  @scala.inline
+  def CP865: CP865 = "CP865".asInstanceOf[CP865]
+  @scala.inline
+  def CP866: CP866 = "CP866".asInstanceOf[CP866]
+  @scala.inline
+  def CP869: CP869 = "CP869".asInstanceOf[CP869]
+  @scala.inline
   def CP874: CP874 = "CP874".asInstanceOf[CP874]
+  @scala.inline
+  def CP922: CP922 = "CP922".asInstanceOf[CP922]
   @scala.inline
   def Code: Code = "Code".asInstanceOf[Code]
   @scala.inline
@@ -2640,6 +3378,58 @@ object adoneLibStrings {
   def `HP Roman-8`: `HP Roman-8` = "HP Roman-8".asInstanceOf[`HP Roman-8`]
   @scala.inline
   def Hex: Hex = "Hex".asInstanceOf[Hex]
+  @scala.inline
+  def IBM1046: IBM1046 = "IBM1046".asInstanceOf[IBM1046]
+  @scala.inline
+  def IBM1124: IBM1124 = "IBM1124".asInstanceOf[IBM1124]
+  @scala.inline
+  def IBM1125: IBM1125 = "IBM1125".asInstanceOf[IBM1125]
+  @scala.inline
+  def IBM1129: IBM1129 = "IBM1129".asInstanceOf[IBM1129]
+  @scala.inline
+  def IBM1133: IBM1133 = "IBM1133".asInstanceOf[IBM1133]
+  @scala.inline
+  def IBM1161: IBM1161 = "IBM1161".asInstanceOf[IBM1161]
+  @scala.inline
+  def IBM1163: IBM1163 = "IBM1163".asInstanceOf[IBM1163]
+  @scala.inline
+  def IBM437: IBM437 = "IBM437".asInstanceOf[IBM437]
+  @scala.inline
+  def IBM737: IBM737 = "IBM737".asInstanceOf[IBM737]
+  @scala.inline
+  def IBM775: IBM775 = "IBM775".asInstanceOf[IBM775]
+  @scala.inline
+  def IBM808: IBM808 = "IBM808".asInstanceOf[IBM808]
+  @scala.inline
+  def IBM850: IBM850 = "IBM850".asInstanceOf[IBM850]
+  @scala.inline
+  def IBM852: IBM852 = "IBM852".asInstanceOf[IBM852]
+  @scala.inline
+  def IBM855: IBM855 = "IBM855".asInstanceOf[IBM855]
+  @scala.inline
+  def IBM856: IBM856 = "IBM856".asInstanceOf[IBM856]
+  @scala.inline
+  def IBM857: IBM857 = "IBM857".asInstanceOf[IBM857]
+  @scala.inline
+  def IBM858: IBM858 = "IBM858".asInstanceOf[IBM858]
+  @scala.inline
+  def IBM860: IBM860 = "IBM860".asInstanceOf[IBM860]
+  @scala.inline
+  def IBM861: IBM861 = "IBM861".asInstanceOf[IBM861]
+  @scala.inline
+  def IBM862: IBM862 = "IBM862".asInstanceOf[IBM862]
+  @scala.inline
+  def IBM863: IBM863 = "IBM863".asInstanceOf[IBM863]
+  @scala.inline
+  def IBM864: IBM864 = "IBM864".asInstanceOf[IBM864]
+  @scala.inline
+  def IBM865: IBM865 = "IBM865".asInstanceOf[IBM865]
+  @scala.inline
+  def IBM866: IBM866 = "IBM866".asInstanceOf[IBM866]
+  @scala.inline
+  def IBM869: IBM869 = "IBM869".asInstanceOf[IBM869]
+  @scala.inline
+  def IBM922: IBM922 = "IBM922".asInstanceOf[IBM922]
   @scala.inline
   def `ISO-646-CN`: `ISO-646-CN` = "ISO-646-CN".asInstanceOf[`ISO-646-CN`]
   @scala.inline

@@ -17,3 +17,26 @@ trait RectangleShape
   var CornerRadius: scala.Double
 }
 
+object RectangleShape {
+  @scala.inline
+  def apply(
+    CornerRadius: scala.Double,
+    FillProperties: FillProperties = null,
+    LineProperties: LineProperties = null,
+    RotationDescriptor: RotationDescriptor = null,
+    ShadowProperties: ShadowProperties = null,
+    Shape: Shape = null,
+    Text: Text = null
+  ): RectangleShape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CornerRadius")(CornerRadius)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, FillProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, LineProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, RotationDescriptor)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, ShadowProperties)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, Shape)
+    js.Dynamic.global.Object.assign(__obj, Text)
+    __obj.asInstanceOf[RectangleShape]
+  }
+}
+

@@ -146,3 +146,56 @@ trait IndividualSeriesOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IndividualSeriesOptions {
+  @scala.inline
+  def apply(
+    color: java.lang.String | Gradient = null,
+    colorIndex: scala.Int | scala.Double = null,
+    crisp: js.UndefOr[scala.Boolean] = js.undefined,
+    cursor: java.lang.String = null,
+    data: js.Array[
+      scala.Double | (js.Tuple2[scala.Double, scala.Double]) | (js.Tuple2[java.lang.String, scala.Double]) | (js.Tuple3[java.lang.String, scala.Double, scala.Double]) | (js.Tuple3[scala.Double, scala.Double, scala.Double]) | DataPoint
+    ] = null,
+    description: java.lang.String = null,
+    id: java.lang.String = null,
+    index: scala.Int | scala.Double = null,
+    innerSize: scala.Double | java.lang.String = null,
+    legendIndex: scala.Int | scala.Double = null,
+    maxFontSize: scala.Int | scala.Double = null,
+    minFontSize: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    pointWidth: scala.Int | scala.Double = null,
+    size: scala.Double | java.lang.String = null,
+    stack: js.Any = null,
+    `type`: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    xAxis: java.lang.String | scala.Double = null,
+    yAxis: java.lang.String | scala.Double = null,
+    zIndex: scala.Int | scala.Double = null
+  ): IndividualSeriesOptions = {
+    val __obj = js.Dynamic.literal()
+    if (color != null) __obj.updateDynamic("color")(color.asInstanceOf[js.Any])
+    if (colorIndex != null) __obj.updateDynamic("colorIndex")(colorIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(crisp)) __obj.updateDynamic("crisp")(crisp)
+    if (cursor != null) __obj.updateDynamic("cursor")(cursor)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (innerSize != null) __obj.updateDynamic("innerSize")(innerSize.asInstanceOf[js.Any])
+    if (legendIndex != null) __obj.updateDynamic("legendIndex")(legendIndex.asInstanceOf[js.Any])
+    if (maxFontSize != null) __obj.updateDynamic("maxFontSize")(maxFontSize.asInstanceOf[js.Any])
+    if (minFontSize != null) __obj.updateDynamic("minFontSize")(minFontSize.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pointWidth != null) __obj.updateDynamic("pointWidth")(pointWidth.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (xAxis != null) __obj.updateDynamic("xAxis")(xAxis.asInstanceOf[js.Any])
+    if (yAxis != null) __obj.updateDynamic("yAxis")(yAxis.asInstanceOf[js.Any])
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IndividualSeriesOptions]
+  }
+}
+

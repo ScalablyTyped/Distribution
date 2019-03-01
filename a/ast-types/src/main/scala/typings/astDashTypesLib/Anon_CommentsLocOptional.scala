@@ -18,3 +18,24 @@ trait Anon_CommentsLocOptional extends js.Object {
   var typeParameter: astDashTypesLib.genKindsMod.TSTypeParameterKind
 }
 
+object Anon_CommentsLocOptional {
+  @scala.inline
+  def apply(
+    typeParameter: astDashTypesLib.genKindsMod.TSTypeParameterKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    optional: scala.Boolean | astDashTypesLib.astDashTypesLibStrings.`+` | astDashTypesLib.astDashTypesLibStrings.`-` = null,
+    readonly: scala.Boolean | astDashTypesLib.astDashTypesLibStrings.`+` | astDashTypesLib.astDashTypesLibStrings.`-` = null,
+    typeAnnotation: astDashTypesLib.genKindsMod.TSTypeKind = null
+  ): Anon_CommentsLocOptional = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("typeParameter")(typeParameter)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (optional != null) __obj.updateDynamic("optional")(optional.asInstanceOf[js.Any])
+    if (readonly != null) __obj.updateDynamic("readonly")(readonly.asInstanceOf[js.Any])
+    if (typeAnnotation != null) __obj.updateDynamic("typeAnnotation")(typeAnnotation)
+    __obj.asInstanceOf[Anon_CommentsLocOptional]
+  }
+}
+

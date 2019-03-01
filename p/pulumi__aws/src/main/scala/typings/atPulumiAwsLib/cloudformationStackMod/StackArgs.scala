@@ -69,3 +69,38 @@ trait StackArgs extends js.Object {
   val timeoutInMinutes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
 }
 
+object StackArgs {
+  @scala.inline
+  def apply(
+    capabilities: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    disableRollback: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    iamRoleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    name: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    notificationArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    onFailure: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    parameters: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    policyBody: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    policyUrl: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]] = null,
+    templateBody: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    templateUrl: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    timeoutInMinutes: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): StackArgs = {
+    val __obj = js.Dynamic.literal()
+    if (capabilities != null) __obj.updateDynamic("capabilities")(capabilities.asInstanceOf[js.Any])
+    if (disableRollback != null) __obj.updateDynamic("disableRollback")(disableRollback.asInstanceOf[js.Any])
+    if (iamRoleArn != null) __obj.updateDynamic("iamRoleArn")(iamRoleArn.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (notificationArns != null) __obj.updateDynamic("notificationArns")(notificationArns.asInstanceOf[js.Any])
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure.asInstanceOf[js.Any])
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters.asInstanceOf[js.Any])
+    if (policyBody != null) __obj.updateDynamic("policyBody")(policyBody.asInstanceOf[js.Any])
+    if (policyUrl != null) __obj.updateDynamic("policyUrl")(policyUrl.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (templateBody != null) __obj.updateDynamic("templateBody")(templateBody.asInstanceOf[js.Any])
+    if (templateUrl != null) __obj.updateDynamic("templateUrl")(templateUrl.asInstanceOf[js.Any])
+    if (timeoutInMinutes != null) __obj.updateDynamic("timeoutInMinutes")(timeoutInMinutes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StackArgs]
+  }
+}
+

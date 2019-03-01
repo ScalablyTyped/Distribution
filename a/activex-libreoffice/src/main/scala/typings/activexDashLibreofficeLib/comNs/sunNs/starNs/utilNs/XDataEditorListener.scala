@@ -12,3 +12,20 @@ trait XDataEditorListener
   def updateDataEditorState(event: DataEditorEvent): scala.Unit
 }
 
+object XDataEditorListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    updateDataEditorState: js.Function1[DataEditorEvent, scala.Unit]
+  ): XDataEditorListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("updateDataEditorState")(updateDataEditorState)
+    __obj.asInstanceOf[XDataEditorListener]
+  }
+}
+

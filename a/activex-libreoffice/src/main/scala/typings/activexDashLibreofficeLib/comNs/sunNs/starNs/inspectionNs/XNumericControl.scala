@@ -35,3 +35,36 @@ trait XNumericControl extends XPropertyControl {
   var ValueUnit: scala.Double
 }
 
+object XNumericControl {
+  @scala.inline
+  def apply(
+    ControlContext: XPropertyControlContext,
+    ControlType: scala.Double,
+    ControlWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    DecimalDigits: scala.Double,
+    DisplayUnit: scala.Double,
+    MaxValue: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[scala.Double],
+    MinValue: activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Optional[scala.Double],
+    Value: js.Any,
+    ValueType: activexDashLibreofficeLib.`type`,
+    ValueUnit: scala.Double,
+    isModified: js.Function0[scala.Boolean],
+    notifyModifiedValue: js.Function0[scala.Unit]
+  ): XNumericControl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ControlContext")(ControlContext)
+    __obj.updateDynamic("ControlType")(ControlType)
+    __obj.updateDynamic("ControlWindow")(ControlWindow)
+    __obj.updateDynamic("DecimalDigits")(DecimalDigits)
+    __obj.updateDynamic("DisplayUnit")(DisplayUnit)
+    __obj.updateDynamic("MaxValue")(MaxValue)
+    __obj.updateDynamic("MinValue")(MinValue)
+    __obj.updateDynamic("Value")(Value)
+    __obj.updateDynamic("ValueType")(ValueType)
+    __obj.updateDynamic("ValueUnit")(ValueUnit)
+    __obj.updateDynamic("isModified")(isModified)
+    __obj.updateDynamic("notifyModifiedValue")(notifyModifiedValue)
+    __obj.asInstanceOf[XNumericControl]
+  }
+}
+

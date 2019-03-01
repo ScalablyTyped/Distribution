@@ -10,3 +10,12 @@ trait ChromeSettingGetDetails extends js.Object {
   var incognito: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChromeSettingGetDetails {
+  @scala.inline
+  def apply(incognito: js.UndefOr[scala.Boolean] = js.undefined): ChromeSettingGetDetails = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(incognito)) __obj.updateDynamic("incognito")(incognito)
+    __obj.asInstanceOf[ChromeSettingGetDetails]
+  }
+}
+

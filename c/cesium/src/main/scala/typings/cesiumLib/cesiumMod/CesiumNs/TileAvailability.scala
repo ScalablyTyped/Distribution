@@ -19,3 +19,22 @@ trait TileAvailability extends js.Object {
   def isTileAvailable(level: scala.Double, x: scala.Double, y: scala.Double): scala.Boolean
 }
 
+object TileAvailability {
+  @scala.inline
+  def apply(
+    addAvailableTileRange: js.Function5[scala.Double, scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit],
+    computeBestAvailableLevelOverRectangle: js.Function1[Rectangle, scala.Double],
+    computeChildMaskForTile: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double],
+    computeMaximumLevelAtPosition: js.Function1[Cartographic, scala.Double],
+    isTileAvailable: js.Function3[scala.Double, scala.Double, scala.Double, scala.Boolean]
+  ): TileAvailability = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addAvailableTileRange")(addAvailableTileRange)
+    __obj.updateDynamic("computeBestAvailableLevelOverRectangle")(computeBestAvailableLevelOverRectangle)
+    __obj.updateDynamic("computeChildMaskForTile")(computeChildMaskForTile)
+    __obj.updateDynamic("computeMaximumLevelAtPosition")(computeMaximumLevelAtPosition)
+    __obj.updateDynamic("isTileAvailable")(isTileAvailable)
+    __obj.asInstanceOf[TileAvailability]
+  }
+}
+

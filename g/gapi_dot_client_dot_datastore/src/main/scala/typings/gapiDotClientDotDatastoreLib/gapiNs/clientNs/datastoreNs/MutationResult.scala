@@ -26,3 +26,18 @@ trait MutationResult extends js.Object {
   var version: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object MutationResult {
+  @scala.inline
+  def apply(
+    conflictDetected: js.UndefOr[scala.Boolean] = js.undefined,
+    key: Key = null,
+    version: java.lang.String = null
+  ): MutationResult = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(conflictDetected)) __obj.updateDynamic("conflictDetected")(conflictDetected)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (version != null) __obj.updateDynamic("version")(version)
+    __obj.asInstanceOf[MutationResult]
+  }
+}
+

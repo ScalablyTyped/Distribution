@@ -67,3 +67,26 @@ trait SortField extends js.Object {
   var subField: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SortField {
+  @scala.inline
+  def apply(
+    key: scala.Double,
+    ascending: js.UndefOr[scala.Boolean] = js.undefined,
+    color: java.lang.String = null,
+    dataOption: SortDataOption | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Normal | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.TextAsNumber = null,
+    icon: Icon = null,
+    sortOn: SortOn | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Value | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellColor | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FontColor | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Icon = null,
+    subField: java.lang.String = null
+  ): SortField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(ascending)) __obj.updateDynamic("ascending")(ascending)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (dataOption != null) __obj.updateDynamic("dataOption")(dataOption.asInstanceOf[js.Any])
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (sortOn != null) __obj.updateDynamic("sortOn")(sortOn.asInstanceOf[js.Any])
+    if (subField != null) __obj.updateDynamic("subField")(subField)
+    __obj.asInstanceOf[SortField]
+  }
+}
+

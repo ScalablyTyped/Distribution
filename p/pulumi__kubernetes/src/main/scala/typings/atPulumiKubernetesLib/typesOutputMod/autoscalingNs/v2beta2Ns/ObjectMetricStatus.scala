@@ -21,3 +21,14 @@ trait ObjectMetricStatus extends js.Object {
   val metric: MetricIdentifier
 }
 
+object ObjectMetricStatus {
+  @scala.inline
+  def apply(current: MetricValueStatus, describedObject: CrossVersionObjectReference, metric: MetricIdentifier): ObjectMetricStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("current")(current)
+    __obj.updateDynamic("describedObject")(describedObject)
+    __obj.updateDynamic("metric")(metric)
+    __obj.asInstanceOf[ObjectMetricStatus]
+  }
+}
+

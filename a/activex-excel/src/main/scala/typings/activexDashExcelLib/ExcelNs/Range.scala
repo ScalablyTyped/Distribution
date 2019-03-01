@@ -88,7 +88,7 @@ trait Range extends js.Object {
   val PivotTable: PivotTable = js.native
   @JSName("Precedents")
   val Precedents_Original: Range = js.native
-  val PrefixCharacter: activexDashExcelLib.activexDashExcelLibStrings.`'` | activexDashExcelLib.activexDashExcelLibStrings.BACKSLASH | activexDashExcelLib.activexDashExcelLibStrings.`^` | activexDashExcelLib.activexDashExcelLibStrings.BACKSLASHBACKSLASH | activexDashExcelLib.activexDashExcelLibStrings.Empty = js.native
+  val PrefixCharacter: activexDashExcelLib.activexDashExcelLibStrings._quote | activexDashExcelLib.activexDashExcelLibStrings.BACKSLASH | activexDashExcelLib.activexDashExcelLibStrings.`_backtick^_backtick` | activexDashExcelLib.activexDashExcelLibStrings.BACKSLASHBACKSLASH | activexDashExcelLib.activexDashExcelLibStrings.Empty = js.native
   @JSName("Previous")
   val Previous_Original: Range = js.native
   val QueryTable: QueryTable = js.native

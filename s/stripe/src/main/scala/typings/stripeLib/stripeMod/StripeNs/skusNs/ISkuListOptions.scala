@@ -33,3 +33,32 @@ trait ISkuListOptions
   var product: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ISkuListOptions {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    attributes: ISkuAttributes = null,
+    ending_before: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    ids: js.Array[java.lang.String] = null,
+    in_stock: js.UndefOr[scala.Boolean] = js.undefined,
+    include: js.Array[java.lang.String] = null,
+    limit: scala.Int | scala.Double = null,
+    product: java.lang.String = null,
+    starting_after: java.lang.String = null
+  ): ISkuListOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (attributes != null) __obj.updateDynamic("attributes")(attributes)
+    if (ending_before != null) __obj.updateDynamic("ending_before")(ending_before)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (!js.isUndefined(in_stock)) __obj.updateDynamic("in_stock")(in_stock)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (product != null) __obj.updateDynamic("product")(product)
+    if (starting_after != null) __obj.updateDynamic("starting_after")(starting_after)
+    __obj.asInstanceOf[ISkuListOptions]
+  }
+}
+

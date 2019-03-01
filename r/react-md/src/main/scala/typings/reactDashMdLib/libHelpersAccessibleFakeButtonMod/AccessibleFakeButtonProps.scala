@@ -18,3 +18,31 @@ trait AccessibleFakeButtonProps
   var tabbedClassName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccessibleFakeButtonProps {
+  @scala.inline
+  def apply(
+    StringDictionary: // for the `component` prop until refactored out
+  /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    component: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    noFocusOutline: js.UndefOr[scala.Boolean] = js.undefined,
+    onTabFocus: js.Function1[/* event */ reactLib.Event, scala.Unit] = null,
+    role: java.lang.String = null,
+    tabIndex: scala.Int | scala.Double = null,
+    tabbedClassName: java.lang.String = null
+  ): AccessibleFakeButtonProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(noFocusOutline)) __obj.updateDynamic("noFocusOutline")(noFocusOutline)
+    if (onTabFocus != null) __obj.updateDynamic("onTabFocus")(onTabFocus)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (tabIndex != null) __obj.updateDynamic("tabIndex")(tabIndex.asInstanceOf[js.Any])
+    if (tabbedClassName != null) __obj.updateDynamic("tabbedClassName")(tabbedClassName)
+    __obj.asInstanceOf[AccessibleFakeButtonProps]
+  }
+}
+

@@ -14,3 +14,14 @@ trait TimeEvent extends js.Object {
   var time: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimeEvent {
+  @scala.inline
+  def apply(annotation: Annotation = null, networkEvent: NetworkEvent = null, time: java.lang.String = null): TimeEvent = {
+    val __obj = js.Dynamic.literal()
+    if (annotation != null) __obj.updateDynamic("annotation")(annotation)
+    if (networkEvent != null) __obj.updateDynamic("networkEvent")(networkEvent)
+    if (time != null) __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[TimeEvent]
+  }
+}
+

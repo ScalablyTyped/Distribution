@@ -23,3 +23,22 @@ trait BeginEditEventArgs extends js.Object {
   var rowElement: js.UndefOr[js.Any] = js.undefined
 }
 
+object BeginEditEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cellElement: js.Any = null,
+    columnIndex: scala.Int | scala.Double = null,
+    data: js.Any = null,
+    rowElement: js.Any = null
+  ): BeginEditEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement)
+    if (columnIndex != null) __obj.updateDynamic("columnIndex")(columnIndex.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (rowElement != null) __obj.updateDynamic("rowElement")(rowElement)
+    __obj.asInstanceOf[BeginEditEventArgs]
+  }
+}
+

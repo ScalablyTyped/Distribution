@@ -14,3 +14,18 @@ trait EthernetProperties[M /* <: ManagedObject */] extends js.Object {
   var EAP: js.UndefOr[EAPProperties] = js.undefined
 }
 
+object EthernetProperties {
+  @scala.inline
+  def apply[M /* <: ManagedObject */](
+    Authentication: EthernetAuthenticationType | ManagedType[EthernetAuthenticationType] = null,
+    AutoConnect: scala.Boolean | ManagedBoolean = null,
+    EAP: EAPProperties = null
+  ): EthernetProperties[M] = {
+    val __obj = js.Dynamic.literal()
+    if (Authentication != null) __obj.updateDynamic("Authentication")(Authentication.asInstanceOf[js.Any])
+    if (AutoConnect != null) __obj.updateDynamic("AutoConnect")(AutoConnect.asInstanceOf[js.Any])
+    if (EAP != null) __obj.updateDynamic("EAP")(EAP)
+    __obj.asInstanceOf[EthernetProperties[M]]
+  }
+}
+

@@ -20,3 +20,14 @@ trait FormLayout extends js.Object {
   var systemControls: js.Array[Control]
 }
 
+object FormLayout {
+  @scala.inline
+  def apply(extensions: js.Array[Extension], pages: js.Array[Page], systemControls: js.Array[Control]): FormLayout = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extensions")(extensions)
+    __obj.updateDynamic("pages")(pages)
+    __obj.updateDynamic("systemControls")(systemControls)
+    __obj.asInstanceOf[FormLayout]
+  }
+}
+

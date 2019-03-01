@@ -13,3 +13,24 @@ trait GridViewColumnMovingEventArgs extends EventArgs {
   val sourceColumn: BootstrapGridViewColumn
 }
 
+object GridViewColumnMovingEventArgs {
+  @scala.inline
+  def apply(
+    allow: scala.Boolean,
+    destinationColumn: BootstrapGridViewColumn,
+    isDropBefore: scala.Boolean,
+    isGroupPanel: scala.Boolean,
+    sender: Control,
+    sourceColumn: BootstrapGridViewColumn
+  ): GridViewColumnMovingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allow")(allow)
+    __obj.updateDynamic("destinationColumn")(destinationColumn)
+    __obj.updateDynamic("isDropBefore")(isDropBefore)
+    __obj.updateDynamic("isGroupPanel")(isGroupPanel)
+    __obj.updateDynamic("sender")(sender)
+    __obj.updateDynamic("sourceColumn")(sourceColumn)
+    __obj.asInstanceOf[GridViewColumnMovingEventArgs]
+  }
+}
+

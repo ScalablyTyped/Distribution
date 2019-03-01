@@ -16,7 +16,7 @@ class ReaderTaskEither[E, L, A] protected () extends js.Object {
   def alt(fy: ReaderTaskEither[E, L, A]): ReaderTaskEither[E, L, A] = js.native
   def ap[B](fab: ReaderTaskEither[E, L, js.Function1[/* a */ A, B]]): ReaderTaskEither[E, L, B] = js.native
   /**
-    * Flipped version of {@link ap}
+    * Flipped version of `ap`
     */
   def `ap_`[B, C](`this`: ReaderTaskEither[E, L, js.Function1[/* b */ B, C]], fb: ReaderTaskEither[E, L, B]): ReaderTaskEither[E, L, C] = js.native
   /**

@@ -13,3 +13,20 @@ import scala.scalajs.js.annotation._
 trait GridEntity
   extends xrmLib.XrmNs.ControlsNs.GridNs.GridEntity
 
+object GridEntity {
+  @scala.inline
+  def apply(
+    getEntityName: js.Function0[java.lang.String],
+    getEntityReference: js.Function0[xrmLib.XrmNs.LookupValue],
+    getId: js.Function0[java.lang.String],
+    getPrimaryAttributeValue: js.Function0[java.lang.String]
+  ): GridEntity = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getEntityName")(getEntityName)
+    __obj.updateDynamic("getEntityReference")(getEntityReference)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getPrimaryAttributeValue")(getPrimaryAttributeValue)
+    __obj.asInstanceOf[GridEntity]
+  }
+}
+

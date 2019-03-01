@@ -27,3 +27,24 @@ trait Button extends js.Object {
   def callback(btn: Button, wnd: Window): scala.Unit
 }
 
+object Button {
+  @scala.inline
+  def apply(
+    callback: js.Function2[Button, Window, scala.Unit],
+    id: java.lang.String,
+    image: java.lang.String,
+    clazz: java.lang.String = null,
+    style: java.lang.String = null,
+    title: java.lang.String = null
+  ): Button = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callback")(callback)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("image")(image)
+    if (clazz != null) __obj.updateDynamic("clazz")(clazz)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Button]
+  }
+}
+

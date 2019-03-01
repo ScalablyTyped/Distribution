@@ -15,3 +15,12 @@ trait IByNameReferrable extends js.Object {
   val qualifiedName: java.lang.String | scala.Null
 }
 
+object IByNameReferrable {
+  @scala.inline
+  def apply(qualifiedName: java.lang.String = null): IByNameReferrable = {
+    val __obj = js.Dynamic.literal()
+    if (qualifiedName != null) __obj.updateDynamic("qualifiedName")(qualifiedName)
+    __obj.asInstanceOf[IByNameReferrable]
+  }
+}
+

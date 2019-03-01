@@ -35,3 +35,22 @@ trait ISceneComponent extends js.Object {
   def register(): scala.Unit
 }
 
+object ISceneComponent {
+  @scala.inline
+  def apply(
+    dispose: js.Function0[scala.Unit],
+    name: java.lang.String,
+    rebuild: js.Function0[scala.Unit],
+    register: js.Function0[scala.Unit],
+    scene: Scene
+  ): ISceneComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("rebuild")(rebuild)
+    __obj.updateDynamic("register")(register)
+    __obj.updateDynamic("scene")(scene)
+    __obj.asInstanceOf[ISceneComponent]
+  }
+}
+

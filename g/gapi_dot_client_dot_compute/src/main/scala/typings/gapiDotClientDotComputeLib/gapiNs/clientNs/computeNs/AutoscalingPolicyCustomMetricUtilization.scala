@@ -27,3 +27,18 @@ trait AutoscalingPolicyCustomMetricUtilization extends js.Object {
   var utilizationTargetType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AutoscalingPolicyCustomMetricUtilization {
+  @scala.inline
+  def apply(
+    metric: java.lang.String = null,
+    utilizationTarget: scala.Int | scala.Double = null,
+    utilizationTargetType: java.lang.String = null
+  ): AutoscalingPolicyCustomMetricUtilization = {
+    val __obj = js.Dynamic.literal()
+    if (metric != null) __obj.updateDynamic("metric")(metric)
+    if (utilizationTarget != null) __obj.updateDynamic("utilizationTarget")(utilizationTarget.asInstanceOf[js.Any])
+    if (utilizationTargetType != null) __obj.updateDynamic("utilizationTargetType")(utilizationTargetType)
+    __obj.asInstanceOf[AutoscalingPolicyCustomMetricUtilization]
+  }
+}
+

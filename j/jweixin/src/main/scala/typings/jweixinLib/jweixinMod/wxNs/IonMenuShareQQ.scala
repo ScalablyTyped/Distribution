@@ -21,3 +21,28 @@ trait IonMenuShareQQ extends BaseParams {
   def success_MIonMenuShareQQ(): scala.Unit
 }
 
+object IonMenuShareQQ {
+  @scala.inline
+  def apply(
+    cancel: js.Function0[scala.Unit],
+    desc: java.lang.String,
+    imgUrl: java.lang.String,
+    link: java.lang.String,
+    success: js.Function0[scala.Unit],
+    title: java.lang.String,
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): IonMenuShareQQ = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("desc")(desc)
+    __obj.updateDynamic("imgUrl")(imgUrl)
+    __obj.updateDynamic("link")(link)
+    __obj.updateDynamic("success")(success)
+    __obj.updateDynamic("title")(title)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[IonMenuShareQQ]
+  }
+}
+

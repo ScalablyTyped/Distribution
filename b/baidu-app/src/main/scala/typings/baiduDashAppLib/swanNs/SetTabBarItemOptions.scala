@@ -25,3 +25,26 @@ trait SetTabBarItemOptions
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SetTabBarItemOptions {
+  @scala.inline
+  def apply(
+    index: scala.Double,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    iconPath: java.lang.String = null,
+    selectedIconPath: java.lang.String = null,
+    success: js.Function1[js.Any, scala.Unit] = null,
+    text: java.lang.String = null
+  ): SetTabBarItemOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("index")(index)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (iconPath != null) __obj.updateDynamic("iconPath")(iconPath)
+    if (selectedIconPath != null) __obj.updateDynamic("selectedIconPath")(selectedIconPath)
+    if (success != null) __obj.updateDynamic("success")(success)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[SetTabBarItemOptions]
+  }
+}
+

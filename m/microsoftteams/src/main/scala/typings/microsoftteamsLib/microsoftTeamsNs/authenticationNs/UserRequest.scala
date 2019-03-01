@@ -16,3 +16,16 @@ trait UserRequest extends js.Object {
   var successCallback: js.UndefOr[js.Function1[/* user */ UserProfile, scala.Unit]] = js.undefined
 }
 
+object UserRequest {
+  @scala.inline
+  def apply(
+    failureCallback: js.Function1[/* reason */ java.lang.String, scala.Unit] = null,
+    successCallback: js.Function1[/* user */ UserProfile, scala.Unit] = null
+  ): UserRequest = {
+    val __obj = js.Dynamic.literal()
+    if (failureCallback != null) __obj.updateDynamic("failureCallback")(failureCallback)
+    if (successCallback != null) __obj.updateDynamic("successCallback")(successCallback)
+    __obj.asInstanceOf[UserRequest]
+  }
+}
+

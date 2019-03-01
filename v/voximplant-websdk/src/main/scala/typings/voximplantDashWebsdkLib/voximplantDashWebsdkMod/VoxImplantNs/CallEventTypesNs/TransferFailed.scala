@@ -8,10 +8,20 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched when call transfer failed
 		*/
-trait TransferFailed extends js.Object {
+trait TransferFailed
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantCallEvent {
   /**
   			*	Call that dispatched the event
   			*/
   var call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call
+}
+
+object TransferFailed {
+  @scala.inline
+  def apply(call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call): TransferFailed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("call")(call)
+    __obj.asInstanceOf[TransferFailed]
+  }
 }
 

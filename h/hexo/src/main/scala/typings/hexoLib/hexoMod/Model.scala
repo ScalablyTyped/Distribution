@@ -33,3 +33,22 @@ trait Model[T] extends js.Object {
   def toArray(): js.Array[T]
 }
 
+object Model {
+  @scala.inline
+  def apply[T](
+    count: js.Function0[scala.Double],
+    filter: js.Function1[js.Function2[/* v */ T, /* i */ scala.Double, scala.Boolean], Model[T]],
+    forEach: js.Function1[js.Function2[/* v */ T, /* i */ scala.Double, scala.Unit], scala.Unit],
+    map: js.Function1[js.Function2[/* v */ T, /* i */ scala.Double, js.Any], js.Array[js.Any]],
+    toArray: js.Function0[js.Array[T]]
+  ): Model[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("forEach")(forEach)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("toArray")(toArray)
+    __obj.asInstanceOf[Model[T]]
+  }
+}
+

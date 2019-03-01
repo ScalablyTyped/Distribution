@@ -12,3 +12,20 @@ trait SubheaderProps extends js.Object {
   var text: java.lang.String
 }
 
+object SubheaderProps {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    inset: js.UndefOr[scala.Boolean] = js.undefined,
+    lines: scala.Int | scala.Double = null,
+    style: reactDashNativeDashMaterialDashUiLib.Anon_ContainerText = null
+  ): SubheaderProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (!js.isUndefined(inset)) __obj.updateDynamic("inset")(inset)
+    if (lines != null) __obj.updateDynamic("lines")(lines.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[SubheaderProps]
+  }
+}
+

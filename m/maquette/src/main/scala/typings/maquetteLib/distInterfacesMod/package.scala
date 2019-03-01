@@ -13,7 +13,6 @@ package object distInterfacesMod {
     /* properties */ VNodeProperties, 
     js.UndefOr[js.Function]
   ]
-  type PerformanceLoggerEvent = maquetteLib.maquetteLibStrings.domEvent | maquetteLib.maquetteLibStrings.domEventProcessed | maquetteLib.maquetteLibStrings.renderStart | maquetteLib.maquetteLibStrings.rendered | maquetteLib.maquetteLibStrings.patched | maquetteLib.maquetteLibStrings.renderDone
   type ProjectorPerformanceLogger = js.Function2[
     /* eventType */ PerformanceLoggerEvent, 
     /* trigger */ js.UndefOr[stdLib.Event], 

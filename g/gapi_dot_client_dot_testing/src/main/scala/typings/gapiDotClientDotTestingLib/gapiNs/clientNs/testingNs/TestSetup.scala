@@ -32,3 +32,22 @@ trait TestSetup extends js.Object {
   var networkProfile: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TestSetup {
+  @scala.inline
+  def apply(
+    account: Account = null,
+    directoriesToPull: js.Array[java.lang.String] = null,
+    environmentVariables: js.Array[EnvironmentVariable] = null,
+    filesToPush: js.Array[DeviceFile] = null,
+    networkProfile: java.lang.String = null
+  ): TestSetup = {
+    val __obj = js.Dynamic.literal()
+    if (account != null) __obj.updateDynamic("account")(account)
+    if (directoriesToPull != null) __obj.updateDynamic("directoriesToPull")(directoriesToPull)
+    if (environmentVariables != null) __obj.updateDynamic("environmentVariables")(environmentVariables)
+    if (filesToPush != null) __obj.updateDynamic("filesToPush")(filesToPush)
+    if (networkProfile != null) __obj.updateDynamic("networkProfile")(networkProfile)
+    __obj.asInstanceOf[TestSetup]
+  }
+}
+

@@ -19,7 +19,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var into: java.lang.String = js.native
   }
   
@@ -86,7 +87,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var asset_code: java.lang.String = js.native
     var asset_issuer: java.lang.String = js.native
     var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetType = js.native
@@ -139,7 +141,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var bump_to: java.lang.String = js.native
   }
   
@@ -172,7 +175,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var asset_code: java.lang.String = js.native
     var asset_issuer: java.lang.String = js.native
     var asset_type: stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit4 | stellarDashBaseLib.stellarDashBaseMod.AssetTypeNs.credit12 = js.native
@@ -199,7 +203,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var account: java.lang.String = js.native
     var funder: java.lang.String = js.native
     var starting_balance: java.lang.String = js.native
@@ -232,6 +237,7 @@ object ServerNs extends js.Object {
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
         ]
+       with OperationRecord
   
   @js.native
   abstract class LedgerCallBuilder () extends CallBuilder[LedgerRecord]
@@ -279,7 +285,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var name: java.lang.String = js.native
     var value: nodeLib.Buffer = js.native
   }
@@ -290,7 +297,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var amount: java.lang.String = js.native
     var buying_asset_code: js.UndefOr[java.lang.String] = js.native
     var buying_asset_issuer: js.UndefOr[java.lang.String] = js.native
@@ -326,6 +334,8 @@ object ServerNs extends js.Object {
     def forTransaction(transactionId: java.lang.String): this.type = js.native
   }
   
+  trait OperationRecord extends js.Object
+  
   trait Options extends js.Object {
     var allowHttp: scala.Boolean
   }
@@ -347,7 +357,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var amount: java.lang.String = js.native
     var buying_asset_code: js.UndefOr[java.lang.String] = js.native
     var buying_asset_issuer: js.UndefOr[java.lang.String] = js.native
@@ -369,7 +380,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var amount: java.lang.String = js.native
     var asset_code: js.UndefOr[java.lang.String] = js.native
     var asset_issuer: js.UndefOr[java.lang.String] = js.native
@@ -396,7 +408,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var amount: java.lang.String = js.native
     var asset_code: js.UndefOr[java.lang.String] = js.native
     var asset_issuer: js.UndefOr[java.lang.String] = js.native
@@ -430,7 +443,8 @@ object ServerNs extends js.Object {
     extends BaseOperationRecord[
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseType, 
           stellarDashSdkLib.stellarDashSdkMod.HorizonNs.OperationResponseTypeI
-        ] {
+        ]
+       with OperationRecord {
     var clear_flags: js.Array[
         stellarDashSdkLib.stellarDashSdkLibNumbers.`1` | stellarDashSdkLib.stellarDashSdkLibNumbers.`2`
       ] = js.native
@@ -547,6 +561,5 @@ object ServerNs extends js.Object {
     js.Promise[CollectionRecord[T]]
   ]
   type CallFunction[T /* <: stellarDashSdkLib.stellarDashSdkMod.HorizonNs.BaseResponse[scala.Nothing] */] = js.Function0[js.Promise[T]]
-  type OperationRecord = CreateAccountOperationRecord | PaymentOperationRecord | PathPaymentOperationRecord | ManageOfferOperationRecord | PassiveOfferOperationRecord | SetOptionsOperationRecord | ChangeTrustOperationRecord | AllowTrustOperationRecord | AccountMergeOperationRecord | InflationOperationRecord | ManageDataOperationRecord | BumpSequenceOperationRecord
 }
 

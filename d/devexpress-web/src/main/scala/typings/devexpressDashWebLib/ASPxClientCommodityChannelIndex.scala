@@ -16,3 +16,24 @@ trait ASPxClientCommodityChannelIndex extends ASPxSeparatePaneIndicator {
   var pointsCount: scala.Double
 }
 
+object ASPxClientCommodityChannelIndex {
+  @scala.inline
+  def apply(
+    axisY: java.lang.String,
+    chart: ASPxClientWebChart,
+    name: java.lang.String,
+    pane: java.lang.String,
+    pointsCount: scala.Double,
+    series: ASPxClientSeries
+  ): ASPxClientCommodityChannelIndex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("axisY")(axisY)
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("pane")(pane)
+    __obj.updateDynamic("pointsCount")(pointsCount)
+    __obj.updateDynamic("series")(series)
+    __obj.asInstanceOf[ASPxClientCommodityChannelIndex]
+  }
+}
+

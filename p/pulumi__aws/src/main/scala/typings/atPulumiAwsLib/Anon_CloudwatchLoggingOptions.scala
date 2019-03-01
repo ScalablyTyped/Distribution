@@ -20,3 +20,36 @@ trait Anon_CloudwatchLoggingOptions extends js.Object {
   var username: java.lang.String
 }
 
+object Anon_CloudwatchLoggingOptions {
+  @scala.inline
+  def apply(
+    cloudwatchLoggingOptions: Anon_EnabledLogGroupName,
+    clusterJdbcurl: java.lang.String,
+    dataTableName: java.lang.String,
+    password: java.lang.String,
+    roleArn: java.lang.String,
+    username: java.lang.String,
+    copyOptions: java.lang.String = null,
+    dataTableColumns: java.lang.String = null,
+    processingConfiguration: Anon_EnabledProcessors = null,
+    retryDuration: scala.Int | scala.Double = null,
+    s3BackupConfiguration: Anon_BucketArnBufferInterval = null,
+    s3BackupMode: java.lang.String = null
+  ): Anon_CloudwatchLoggingOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cloudwatchLoggingOptions")(cloudwatchLoggingOptions)
+    __obj.updateDynamic("clusterJdbcurl")(clusterJdbcurl)
+    __obj.updateDynamic("dataTableName")(dataTableName)
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("roleArn")(roleArn)
+    __obj.updateDynamic("username")(username)
+    if (copyOptions != null) __obj.updateDynamic("copyOptions")(copyOptions)
+    if (dataTableColumns != null) __obj.updateDynamic("dataTableColumns")(dataTableColumns)
+    if (processingConfiguration != null) __obj.updateDynamic("processingConfiguration")(processingConfiguration)
+    if (retryDuration != null) __obj.updateDynamic("retryDuration")(retryDuration.asInstanceOf[js.Any])
+    if (s3BackupConfiguration != null) __obj.updateDynamic("s3BackupConfiguration")(s3BackupConfiguration)
+    if (s3BackupMode != null) __obj.updateDynamic("s3BackupMode")(s3BackupMode)
+    __obj.asInstanceOf[Anon_CloudwatchLoggingOptions]
+  }
+}
+

@@ -22,3 +22,30 @@ trait XRadioButton
   def setState(b: scala.Boolean): scala.Unit
 }
 
+object XRadioButton {
+  @scala.inline
+  def apply(
+    State: scala.Boolean,
+    acquire: js.Function0[scala.Unit],
+    addItemListener: js.Function1[XItemListener, scala.Unit],
+    getState: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeItemListener: js.Function1[XItemListener, scala.Unit],
+    setLabel: js.Function1[java.lang.String, scala.Unit],
+    setState: js.Function1[scala.Boolean, scala.Unit]
+  ): XRadioButton = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("State")(State)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addItemListener")(addItemListener)
+    __obj.updateDynamic("getState")(getState)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeItemListener")(removeItemListener)
+    __obj.updateDynamic("setLabel")(setLabel)
+    __obj.updateDynamic("setState")(setState)
+    __obj.asInstanceOf[XRadioButton]
+  }
+}
+

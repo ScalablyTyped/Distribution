@@ -68,6 +68,8 @@ object AnimatedNs extends js.Object {
     var useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
   }
   
+  trait ExtrapolateType extends js.Object
+  
   trait InterpolationConfigType extends js.Object {
     var easing: js.UndefOr[js.Function1[/* input */ scala.Double, scala.Double]] = js.undefined
     var extrapolate: js.UndefOr[ExtrapolateType] = js.undefined
@@ -219,7 +221,6 @@ object AnimatedNs extends js.Object {
   type AnimatedValueXY = ValueXY
   type Base = Animated
   type EndCallback = js.Function1[/* result */ EndResult, scala.Unit]
-  type ExtrapolateType = reactDashNativeLib.reactDashNativeLibStrings.extend | reactDashNativeLib.reactDashNativeLibStrings.identity | reactDashNativeLib.reactDashNativeLibStrings.clamp
   type Mapping = (org.scalablytyped.runtime.StringDictionary[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-native.react-native.Animated.Mapping */ js.Object
   ]) | AnimatedValue

@@ -12,3 +12,32 @@ trait MessageFlow extends BaseElement {
   var targetRef: InteractionNode
 }
 
+object MessageFlow {
+  @scala.inline
+  def apply(
+    $type: ElementType,
+    id: java.lang.String,
+    messageRef: Message,
+    name: java.lang.String,
+    sourceRef: InteractionNode,
+    targetRef: InteractionNode,
+    $attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    documentation: js.Array[Documentation] = null,
+    extensionDefinitions: js.Array[ExtensionDefinition] = null,
+    extensionElements: ExtensionElements = null
+  ): MessageFlow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$type")($type)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("messageRef")(messageRef)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("sourceRef")(sourceRef)
+    __obj.updateDynamic("targetRef")(targetRef)
+    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)
+    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements)
+    __obj.asInstanceOf[MessageFlow]
+  }
+}
+

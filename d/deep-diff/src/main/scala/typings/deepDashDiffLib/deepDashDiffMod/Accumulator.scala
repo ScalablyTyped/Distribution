@@ -10,3 +10,13 @@ trait Accumulator[LHS, RHS] extends js.Object {
   def push(diff: Diff[LHS, RHS]): scala.Unit
 }
 
+object Accumulator {
+  @scala.inline
+  def apply[LHS, RHS](length: scala.Double, push: js.Function1[Diff[LHS, RHS], scala.Unit]): Accumulator[LHS, RHS] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("push")(push)
+    __obj.asInstanceOf[Accumulator[LHS, RHS]]
+  }
+}
+

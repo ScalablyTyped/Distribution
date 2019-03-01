@@ -115,3 +115,70 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    Change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    allowEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeClose: js.Function1[/* e */ BeforeCloseEventArgs, scala.Unit] = null,
+    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
+    buttonText: js.Any = null,
+    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    dateFormat: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTimePicker: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    endDate: java.lang.String | stdLib.Date = null,
+    height: java.lang.String | scala.Double = null,
+    locale: java.lang.String = null,
+    maxDate: java.lang.String | stdLib.Date = null,
+    minDate: java.lang.String | stdLib.Date = null,
+    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    ranges: js.Any = null,
+    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    separator: java.lang.String = null,
+    showPopupButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    startDate: java.lang.String | stdLib.Date = null,
+    timeFormat: java.lang.String = null,
+    value: java.lang.String = null,
+    watermarkText: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (Change != null) __obj.updateDynamic("Change")(Change)
+    if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableTimePicker)) __obj.updateDynamic("enableTimePicker")(enableTimePicker)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (ranges != null) __obj.updateDynamic("ranges")(ranges)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate.asInstanceOf[js.Any])
+    if (timeFormat != null) __obj.updateDynamic("timeFormat")(timeFormat)
+    if (value != null) __obj.updateDynamic("value")(value)
+    if (watermarkText != null) __obj.updateDynamic("watermarkText")(watermarkText)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

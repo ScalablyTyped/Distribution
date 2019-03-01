@@ -10,3 +10,17 @@ trait UrlchannelsResource extends js.Object {
   def list(request: gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientIdAlt): gapiDotClientLib.gapiNs.clientNs.Request[UrlChannels]
 }
 
+object UrlchannelsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotAdexchangesellerLib.Anon_AccountIdAdClientIdAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UrlChannels]
+    ]
+  ): UrlchannelsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[UrlchannelsResource]
+  }
+}
+

@@ -80,3 +80,18 @@ trait ILogResource extends js.Object {
   def getUserLog(`type`: LogType, since: stdLib.Date): angularLib.angularMod.angularNs.IPromise[IResourcePromise]
 }
 
+object ILogResource {
+  @scala.inline
+  def apply(
+    getEntityLog: js.Function1[scala.Double, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getLog: js.Function2[LogType, stdLib.Date, angularLib.angularMod.angularNs.IPromise[IResourcePromise]],
+    getUserLog: js.Function2[LogType, stdLib.Date, angularLib.angularMod.angularNs.IPromise[IResourcePromise]]
+  ): ILogResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getEntityLog")(getEntityLog)
+    __obj.updateDynamic("getLog")(getLog)
+    __obj.updateDynamic("getUserLog")(getUserLog)
+    __obj.asInstanceOf[ILogResource]
+  }
+}
+

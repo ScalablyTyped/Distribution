@@ -55,3 +55,36 @@ trait PolylineOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PolylineOptions {
+  @scala.inline
+  def apply(
+    clickable: js.UndefOr[scala.Boolean] = js.undefined,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    editable: js.UndefOr[scala.Boolean] = js.undefined,
+    geodesic: js.UndefOr[scala.Boolean] = js.undefined,
+    icons: js.Array[IconSequence] = null,
+    map: Map = null,
+    path: MVCArray[LatLng] | js.Array[LatLng] | js.Array[LatLngLiteral] = null,
+    strokeColor: java.lang.String = null,
+    strokeOpacity: scala.Int | scala.Double = null,
+    strokeWeight: scala.Int | scala.Double = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): PolylineOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(clickable)) __obj.updateDynamic("clickable")(clickable)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    if (!js.isUndefined(geodesic)) __obj.updateDynamic("geodesic")(geodesic)
+    if (icons != null) __obj.updateDynamic("icons")(icons)
+    if (map != null) __obj.updateDynamic("map")(map)
+    if (path != null) __obj.updateDynamic("path")(path.asInstanceOf[js.Any])
+    if (strokeColor != null) __obj.updateDynamic("strokeColor")(strokeColor)
+    if (strokeOpacity != null) __obj.updateDynamic("strokeOpacity")(strokeOpacity.asInstanceOf[js.Any])
+    if (strokeWeight != null) __obj.updateDynamic("strokeWeight")(strokeWeight.asInstanceOf[js.Any])
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PolylineOptions]
+  }
+}
+

@@ -7,37 +7,51 @@ import scala.scalajs.js.annotation._
 
 object activexDashIwshruntimelibraryLibNumbers {
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ShortcutWindowStyle
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `10` extends js.Object
+  sealed trait `10`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ShortcutWindowStyle
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.ShortcutWindowStyle
+       with activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends activexDashIwshruntimelibraryLib.IWshRuntimeLibraryNs.WindowStyle
   
   @js.native
   sealed trait `true` extends js.Object

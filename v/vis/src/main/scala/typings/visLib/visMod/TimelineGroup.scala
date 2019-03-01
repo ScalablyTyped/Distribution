@@ -18,3 +18,32 @@ trait TimelineGroup extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TimelineGroup {
+  @scala.inline
+  def apply(
+    content: java.lang.String | stdLib.HTMLElement,
+    id: IdType,
+    className: java.lang.String = null,
+    nestedGroups: js.Array[IdType] = null,
+    order: scala.Int | scala.Double = null,
+    showNested: js.UndefOr[scala.Boolean] = js.undefined,
+    style: java.lang.String = null,
+    subgroupOrder: TimelineOptionsGroupOrderType = null,
+    title: java.lang.String = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): TimelineGroup = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (nestedGroups != null) __obj.updateDynamic("nestedGroups")(nestedGroups)
+    if (order != null) __obj.updateDynamic("order")(order.asInstanceOf[js.Any])
+    if (!js.isUndefined(showNested)) __obj.updateDynamic("showNested")(showNested)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (subgroupOrder != null) __obj.updateDynamic("subgroupOrder")(subgroupOrder.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[TimelineGroup]
+  }
+}
+

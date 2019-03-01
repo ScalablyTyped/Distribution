@@ -7,40 +7,54 @@ import scala.scalajs.js.annotation._
 
 object audiospriteLibNumbers {
   @js.native
-  sealed trait `-1` extends js.Object
+  sealed trait `-1`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
   
   @js.native
-  sealed trait `0` extends js.Object
+  sealed trait `0`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
   
   @js.native
-  sealed trait `1` extends js.Object
+  sealed trait `1`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+       with audiospriteLib.audiospriteMod.audiospriteNs.Channels
   
   @js.native
-  sealed trait `10` extends js.Object
+  sealed trait `10`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR_Vorbis
   
   @js.native
-  sealed trait `2` extends js.Object
+  sealed trait `2`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
+       with audiospriteLib.audiospriteMod.audiospriteNs.Channels
   
   @js.native
-  sealed trait `3` extends js.Object
+  sealed trait `3`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
   
   @js.native
-  sealed trait `4` extends js.Object
+  sealed trait `4`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
   
   @js.native
-  sealed trait `5` extends js.Object
+  sealed trait `5`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
   
   @js.native
-  sealed trait `6` extends js.Object
+  sealed trait `6`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
   
   @js.native
-  sealed trait `7` extends js.Object
+  sealed trait `7`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
   
   @js.native
-  sealed trait `8` extends js.Object
+  sealed trait `8`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
   
   @js.native
-  sealed trait `9` extends js.Object
+  sealed trait `9`
+    extends audiospriteLib.audiospriteMod.audiospriteNs.VBR
   
   @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]

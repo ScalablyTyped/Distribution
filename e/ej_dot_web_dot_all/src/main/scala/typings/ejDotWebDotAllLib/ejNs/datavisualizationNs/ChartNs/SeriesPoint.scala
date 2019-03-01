@@ -62,3 +62,40 @@ trait SeriesPoint extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SeriesPoint {
+  @scala.inline
+  def apply(
+    border: SeriesPointsBorder = null,
+    close: scala.Int | scala.Double = null,
+    fill: java.lang.String = null,
+    high: scala.Int | scala.Double = null,
+    low: scala.Int | scala.Double = null,
+    marker: SeriesPointsMarker = null,
+    open: scala.Int | scala.Double = null,
+    showIntermediateSum: js.UndefOr[scala.Boolean] = js.undefined,
+    showTotalSum: js.UndefOr[scala.Boolean] = js.undefined,
+    size: scala.Int | scala.Double = null,
+    text: java.lang.String = null,
+    visibleOnLegend: java.lang.String = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): SeriesPoint = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (close != null) __obj.updateDynamic("close")(close.asInstanceOf[js.Any])
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (high != null) __obj.updateDynamic("high")(high.asInstanceOf[js.Any])
+    if (low != null) __obj.updateDynamic("low")(low.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker)
+    if (open != null) __obj.updateDynamic("open")(open.asInstanceOf[js.Any])
+    if (!js.isUndefined(showIntermediateSum)) __obj.updateDynamic("showIntermediateSum")(showIntermediateSum)
+    if (!js.isUndefined(showTotalSum)) __obj.updateDynamic("showTotalSum")(showTotalSum)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (visibleOnLegend != null) __obj.updateDynamic("visibleOnLegend")(visibleOnLegend)
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesPoint]
+  }
+}
+

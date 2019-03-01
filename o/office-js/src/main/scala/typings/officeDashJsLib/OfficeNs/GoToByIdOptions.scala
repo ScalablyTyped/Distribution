@@ -32,3 +32,13 @@ trait GoToByIdOptions extends js.Object {
   var selectionMode: js.UndefOr[SelectionMode | java.lang.String] = js.undefined
 }
 
+object GoToByIdOptions {
+  @scala.inline
+  def apply(asyncContext: js.Any = null, selectionMode: SelectionMode | java.lang.String = null): GoToByIdOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GoToByIdOptions]
+  }
+}
+

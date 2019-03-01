@@ -21,3 +21,16 @@ trait Options extends js.Object {
   ] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    timeout: scala.Int | scala.Double = null,
+    version: isDashOnlineLib.isDashOnlineLibStrings.v4 | isDashOnlineLib.isDashOnlineLibStrings.v6 = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (version != null) __obj.updateDynamic("version")(version.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options]
+  }
+}
+

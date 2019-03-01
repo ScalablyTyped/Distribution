@@ -21,3 +21,20 @@ trait IRouterParamContext[StateT, CustomT] extends js.Object {
   var router: koaDashRouterLib.koaDashRouterMod.Router[StateT, CustomT]
 }
 
+object IRouterParamContext {
+  @scala.inline
+  def apply[StateT, CustomT](
+    params: js.Any,
+    router: koaDashRouterLib.koaDashRouterMod.Router[StateT, CustomT],
+    _matchedRoute: java.lang.String | stdLib.RegExp = null,
+    _matchedRouteName: java.lang.String = null
+  ): IRouterParamContext[StateT, CustomT] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("router")(router)
+    if (_matchedRoute != null) __obj.updateDynamic("_matchedRoute")(_matchedRoute.asInstanceOf[js.Any])
+    if (_matchedRouteName != null) __obj.updateDynamic("_matchedRouteName")(_matchedRouteName)
+    __obj.asInstanceOf[IRouterParamContext[StateT, CustomT]]
+  }
+}
+

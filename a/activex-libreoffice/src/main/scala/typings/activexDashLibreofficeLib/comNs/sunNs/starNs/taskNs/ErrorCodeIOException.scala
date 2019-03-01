@@ -12,3 +12,18 @@ trait ErrorCodeIOException
   var ErrCode: scala.Double
 }
 
+object ErrorCodeIOException {
+  @scala.inline
+  def apply(
+    Context: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    ErrCode: scala.Double,
+    Message: java.lang.String
+  ): ErrorCodeIOException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Context")(Context)
+    __obj.updateDynamic("ErrCode")(ErrCode)
+    __obj.updateDynamic("Message")(Message)
+    __obj.asInstanceOf[ErrorCodeIOException]
+  }
+}
+

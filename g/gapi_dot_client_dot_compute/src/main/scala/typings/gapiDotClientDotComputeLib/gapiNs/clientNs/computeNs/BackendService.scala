@@ -96,3 +96,54 @@ trait BackendService extends js.Object {
   var timeoutSec: js.UndefOr[scala.Double] = js.undefined
 }
 
+object BackendService {
+  @scala.inline
+  def apply(
+    affinityCookieTtlSec: scala.Int | scala.Double = null,
+    backends: js.Array[Backend] = null,
+    cdnPolicy: BackendServiceCdnPolicy = null,
+    connectionDraining: ConnectionDraining = null,
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    enableCDN: js.UndefOr[scala.Boolean] = js.undefined,
+    fingerprint: java.lang.String = null,
+    healthChecks: js.Array[java.lang.String] = null,
+    iap: BackendServiceIAP = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    loadBalancingScheme: java.lang.String = null,
+    name: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    portName: java.lang.String = null,
+    protocol: java.lang.String = null,
+    region: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    sessionAffinity: java.lang.String = null,
+    timeoutSec: scala.Int | scala.Double = null
+  ): BackendService = {
+    val __obj = js.Dynamic.literal()
+    if (affinityCookieTtlSec != null) __obj.updateDynamic("affinityCookieTtlSec")(affinityCookieTtlSec.asInstanceOf[js.Any])
+    if (backends != null) __obj.updateDynamic("backends")(backends)
+    if (cdnPolicy != null) __obj.updateDynamic("cdnPolicy")(cdnPolicy)
+    if (connectionDraining != null) __obj.updateDynamic("connectionDraining")(connectionDraining)
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(enableCDN)) __obj.updateDynamic("enableCDN")(enableCDN)
+    if (fingerprint != null) __obj.updateDynamic("fingerprint")(fingerprint)
+    if (healthChecks != null) __obj.updateDynamic("healthChecks")(healthChecks)
+    if (iap != null) __obj.updateDynamic("iap")(iap)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (loadBalancingScheme != null) __obj.updateDynamic("loadBalancingScheme")(loadBalancingScheme)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (portName != null) __obj.updateDynamic("portName")(portName)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (sessionAffinity != null) __obj.updateDynamic("sessionAffinity")(sessionAffinity)
+    if (timeoutSec != null) __obj.updateDynamic("timeoutSec")(timeoutSec.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BackendService]
+  }
+}
+

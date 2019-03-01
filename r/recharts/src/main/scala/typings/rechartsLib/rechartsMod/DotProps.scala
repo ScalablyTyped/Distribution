@@ -12,3 +12,44 @@ trait DotProps extends EventAttributes {
   var r: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DotProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    cx: scala.Int | scala.Double = null,
+    cy: scala.Int | scala.Double = null,
+    onClick: RechartsFunction = null,
+    onMouseDown: RechartsFunction = null,
+    onMouseEnter: RechartsFunction = null,
+    onMouseLeave: RechartsFunction = null,
+    onMouseMove: RechartsFunction = null,
+    onMouseOut: RechartsFunction = null,
+    onMouseOver: RechartsFunction = null,
+    onMouseUp: RechartsFunction = null,
+    onTouchCancel: RechartsFunction = null,
+    onTouchEnd: RechartsFunction = null,
+    onTouchMove: RechartsFunction = null,
+    onTouchStart: RechartsFunction = null,
+    r: scala.Int | scala.Double = null
+  ): DotProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
+    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onMouseDown != null) __obj.updateDynamic("onMouseDown")(onMouseDown)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onMouseMove != null) __obj.updateDynamic("onMouseMove")(onMouseMove)
+    if (onMouseOut != null) __obj.updateDynamic("onMouseOut")(onMouseOut)
+    if (onMouseOver != null) __obj.updateDynamic("onMouseOver")(onMouseOver)
+    if (onMouseUp != null) __obj.updateDynamic("onMouseUp")(onMouseUp)
+    if (onTouchCancel != null) __obj.updateDynamic("onTouchCancel")(onTouchCancel)
+    if (onTouchEnd != null) __obj.updateDynamic("onTouchEnd")(onTouchEnd)
+    if (onTouchMove != null) __obj.updateDynamic("onTouchMove")(onTouchMove)
+    if (onTouchStart != null) __obj.updateDynamic("onTouchStart")(onTouchStart)
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DotProps]
+  }
+}
+

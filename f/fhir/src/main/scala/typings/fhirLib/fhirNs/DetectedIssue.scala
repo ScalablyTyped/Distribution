@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Clinical issue with action
   */
-trait DetectedIssue extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait DetectedIssue extends DomainResource {
   /**
     * Contains extended information for property 'date'.
     */
@@ -73,5 +74,72 @@ trait DetectedIssue extends DomainResource {
     * registered | preliminary | final | amended +
     */
   var status: code
+}
+
+object DetectedIssue {
+  @scala.inline
+  def apply(
+    status: code,
+    _date: Element = null,
+    _detail: Element = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _language: Element = null,
+    _reference: Element = null,
+    _resourceType: Element = null,
+    _severity: Element = null,
+    _status: Element = null,
+    author: Reference = null,
+    category: CodeableConcept = null,
+    contained: js.Array[Resource] = null,
+    date: dateTime = null,
+    detail: java.lang.String = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: Identifier = null,
+    implicated: js.Array[Reference] = null,
+    implicitRules: uri = null,
+    language: code = null,
+    meta: Meta = null,
+    mitigation: js.Array[DetectedIssueMitigation] = null,
+    modifierExtension: js.Array[Extension] = null,
+    patient: Reference = null,
+    reference: uri = null,
+    resourceType: code = null,
+    severity: code = null,
+    text: Narrative = null
+  ): DetectedIssue = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("status")(status)
+    if (_date != null) __obj.updateDynamic("_date")(_date)
+    if (_detail != null) __obj.updateDynamic("_detail")(_detail)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_reference != null) __obj.updateDynamic("_reference")(_reference)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_severity != null) __obj.updateDynamic("_severity")(_severity)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (author != null) __obj.updateDynamic("author")(author)
+    if (category != null) __obj.updateDynamic("category")(category)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (date != null) __obj.updateDynamic("date")(date)
+    if (detail != null) __obj.updateDynamic("detail")(detail)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicated != null) __obj.updateDynamic("implicated")(implicated)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (mitigation != null) __obj.updateDynamic("mitigation")(mitigation)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (patient != null) __obj.updateDynamic("patient")(patient)
+    if (reference != null) __obj.updateDynamic("reference")(reference)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (severity != null) __obj.updateDynamic("severity")(severity)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[DetectedIssue]
+  }
 }
 

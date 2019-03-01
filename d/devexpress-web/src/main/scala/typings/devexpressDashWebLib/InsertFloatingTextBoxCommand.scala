@@ -15,3 +15,13 @@ trait InsertFloatingTextBoxCommand extends CommandWithSimpleStateBase {
   def execute(): scala.Boolean
 }
 
+object InsertFloatingTextBoxCommand {
+  @scala.inline
+  def apply(execute: js.Function0[scala.Boolean], getState: js.Function0[SimpleCommandState]): InsertFloatingTextBoxCommand = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("execute")(execute)
+    __obj.updateDynamic("getState")(getState)
+    __obj.asInstanceOf[InsertFloatingTextBoxCommand]
+  }
+}
+

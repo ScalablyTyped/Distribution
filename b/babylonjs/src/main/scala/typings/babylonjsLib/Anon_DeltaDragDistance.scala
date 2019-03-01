@@ -13,3 +13,22 @@ trait Anon_DeltaDragDistance extends js.Object {
   var pointerId: scala.Double
 }
 
+object Anon_DeltaDragDistance {
+  @scala.inline
+  def apply(
+    delta: babylonjsLib.BABYLONNs.Vector3,
+    dragDistance: scala.Double,
+    dragPlaneNormal: babylonjsLib.BABYLONNs.Vector3,
+    dragPlanePoint: babylonjsLib.BABYLONNs.Vector3,
+    pointerId: scala.Double
+  ): Anon_DeltaDragDistance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delta")(delta)
+    __obj.updateDynamic("dragDistance")(dragDistance)
+    __obj.updateDynamic("dragPlaneNormal")(dragPlaneNormal)
+    __obj.updateDynamic("dragPlanePoint")(dragPlanePoint)
+    __obj.updateDynamic("pointerId")(pointerId)
+    __obj.asInstanceOf[Anon_DeltaDragDistance]
+  }
+}
+

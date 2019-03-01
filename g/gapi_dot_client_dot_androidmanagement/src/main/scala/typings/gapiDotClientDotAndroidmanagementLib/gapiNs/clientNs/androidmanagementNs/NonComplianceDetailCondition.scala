@@ -14,3 +14,18 @@ trait NonComplianceDetailCondition extends js.Object {
   var settingName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NonComplianceDetailCondition {
+  @scala.inline
+  def apply(
+    nonComplianceReason: java.lang.String = null,
+    packageName: java.lang.String = null,
+    settingName: java.lang.String = null
+  ): NonComplianceDetailCondition = {
+    val __obj = js.Dynamic.literal()
+    if (nonComplianceReason != null) __obj.updateDynamic("nonComplianceReason")(nonComplianceReason)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
+    if (settingName != null) __obj.updateDynamic("settingName")(settingName)
+    __obj.asInstanceOf[NonComplianceDetailCondition]
+  }
+}
+

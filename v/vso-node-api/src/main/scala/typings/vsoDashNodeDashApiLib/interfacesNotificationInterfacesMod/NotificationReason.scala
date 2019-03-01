@@ -10,3 +10,16 @@ trait NotificationReason extends js.Object {
   var targetIdentities: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
 }
 
+object NotificationReason {
+  @scala.inline
+  def apply(
+    notificationReasonType: NotificationReasonType,
+    targetIdentities: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
+  ): NotificationReason = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("notificationReasonType")(notificationReasonType)
+    __obj.updateDynamic("targetIdentities")(targetIdentities)
+    __obj.asInstanceOf[NotificationReason]
+  }
+}
+

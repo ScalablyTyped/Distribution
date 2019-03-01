@@ -12,3 +12,13 @@ trait BraggingRights extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BraggingRights {
+  @scala.inline
+  def apply(metadata: FieldMetadata = null, value: java.lang.String = null): BraggingRights = {
+    val __obj = js.Dynamic.literal()
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[BraggingRights]
+  }
+}
+

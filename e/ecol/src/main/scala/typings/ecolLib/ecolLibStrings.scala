@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object ecolLibStrings {
   @js.native
-  sealed trait erase extends js.Object
+  sealed trait erase
+    extends ecolLib.libBasicCollectionEventMod.CollectionEventNs.Type
   
   @js.native
-  sealed trait insert extends js.Object
+  sealed trait insert
+    extends ecolLib.libBasicCollectionEventMod.CollectionEventNs.Type
   
   @js.native
-  sealed trait refresh extends js.Object
+  sealed trait refresh
+    extends ecolLib.libBasicCollectionEventMod.CollectionEventNs.Type
   
   @scala.inline
   def erase: erase = "erase".asInstanceOf[erase]

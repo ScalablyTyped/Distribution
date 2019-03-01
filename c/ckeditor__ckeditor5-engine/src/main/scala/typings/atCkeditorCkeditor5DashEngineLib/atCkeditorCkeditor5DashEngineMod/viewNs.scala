@@ -29,6 +29,8 @@ object viewNs extends js.Object {
     def getElementsWithSameId(): stdLib.Set[AttributeElement] = js.native
   }
   
+  trait ChangeType extends js.Object
+  
   // engine/view/containerelement
   @js.native
   class ContainerElement protected () extends Element {
@@ -199,13 +201,15 @@ object viewNs extends js.Object {
     protected def this(name: java.lang.String, attrs: stdLib.Map[java.lang.String, java.lang.String], children: stdLib.Iterable[Node]) = this()
   }
   
+  trait Item extends js.Object
+  
   // engine/view/matcher
   @js.native
   class Matcher () extends js.Object
   
   // engine/view/node
   @js.native
-  class Node () extends js.Object {
+  class Node () extends Item {
     val document: Document | scala.Null = js.native
     val index: scala.Double | scala.Null = js.native
     val nextSibling: Node | scala.Null = js.native
@@ -245,6 +249,8 @@ object viewNs extends js.Object {
   @js.native
   class Position () extends js.Object
   
+  trait PositionRelation extends js.Object
+  
   // engine/view/range
   @js.native
   class Range () extends js.Object
@@ -273,7 +279,7 @@ object viewNs extends js.Object {
   
   // engine/view/textproxy
   @js.native
-  class TextProxy protected () extends js.Object {
+  class TextProxy protected () extends Item {
     protected def this(textNode: Text, offsetInText: scala.Double, length: scala.Double) = this()
     val data: java.lang.String = js.native
     val document: Document | scala.Null = js.native
@@ -305,6 +311,8 @@ object viewNs extends js.Object {
     def skip(skip: js.Function1[/* treeWalkerValue */ TreeWalkerValue, scala.Boolean]): scala.Unit = js.native
   }
   
+  trait TreeWalkerDirection extends js.Object
+  
   trait TreeWalkerValue extends js.Object {
     var item: Item
     var length: scala.Double
@@ -312,6 +320,8 @@ object viewNs extends js.Object {
     var previousPosition: Position
     var `type`: TreeWalkerValueType
   }
+  
+  trait TreeWalkerValueType extends js.Object
   
   // engine/view/uielement
   @js.native
@@ -473,17 +483,11 @@ object viewNs extends js.Object {
     
   }
   
-  type ChangeType = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.children | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.attributes | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text
   // engine/view/elementdefinition
   type ElementDefinition = java.lang.String | atCkeditorCkeditor5DashEngineLib.Anon_Attributes
-  // engine/view/item
-  type Item = Node | TextProxy
   type MatcherPattern = (js.Function1[
     /* element */ Element, 
     scala.Null | atCkeditorCkeditor5DashEngineLib.Anon_Attribute
   ]) | java.lang.String | stdLib.RegExp | atCkeditorCkeditor5DashEngineLib.Anon_AttributesClasses
-  type PositionRelation = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.before | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.after | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.same | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.different
-  type TreeWalkerDirection = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.forward | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.backward
-  type TreeWalkerValueType = atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementStart | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.elementEnd | atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineLibStrings.text
 }
 

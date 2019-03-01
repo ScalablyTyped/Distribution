@@ -38,3 +38,42 @@ trait OrderLineItem extends js.Object {
   var tax: js.UndefOr[Price] = js.undefined
 }
 
+object OrderLineItem {
+  @scala.inline
+  def apply(
+    cancellations: js.Array[OrderCancellation] = null,
+    channelType: java.lang.String = null,
+    id: java.lang.String = null,
+    price: Price = null,
+    product: OrderLineItemProduct = null,
+    quantityCanceled: scala.Int | scala.Double = null,
+    quantityDelivered: scala.Int | scala.Double = null,
+    quantityOrdered: scala.Int | scala.Double = null,
+    quantityPending: scala.Int | scala.Double = null,
+    quantityReturned: scala.Int | scala.Double = null,
+    quantityShipped: scala.Int | scala.Double = null,
+    returnInfo: OrderLineItemReturnInfo = null,
+    returns: js.Array[OrderReturn] = null,
+    shippingDetails: OrderLineItemShippingDetails = null,
+    tax: Price = null
+  ): OrderLineItem = {
+    val __obj = js.Dynamic.literal()
+    if (cancellations != null) __obj.updateDynamic("cancellations")(cancellations)
+    if (channelType != null) __obj.updateDynamic("channelType")(channelType)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (price != null) __obj.updateDynamic("price")(price)
+    if (product != null) __obj.updateDynamic("product")(product)
+    if (quantityCanceled != null) __obj.updateDynamic("quantityCanceled")(quantityCanceled.asInstanceOf[js.Any])
+    if (quantityDelivered != null) __obj.updateDynamic("quantityDelivered")(quantityDelivered.asInstanceOf[js.Any])
+    if (quantityOrdered != null) __obj.updateDynamic("quantityOrdered")(quantityOrdered.asInstanceOf[js.Any])
+    if (quantityPending != null) __obj.updateDynamic("quantityPending")(quantityPending.asInstanceOf[js.Any])
+    if (quantityReturned != null) __obj.updateDynamic("quantityReturned")(quantityReturned.asInstanceOf[js.Any])
+    if (quantityShipped != null) __obj.updateDynamic("quantityShipped")(quantityShipped.asInstanceOf[js.Any])
+    if (returnInfo != null) __obj.updateDynamic("returnInfo")(returnInfo)
+    if (returns != null) __obj.updateDynamic("returns")(returns)
+    if (shippingDetails != null) __obj.updateDynamic("shippingDetails")(shippingDetails)
+    if (tax != null) __obj.updateDynamic("tax")(tax)
+    __obj.asInstanceOf[OrderLineItem]
+  }
+}
+

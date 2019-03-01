@@ -14,3 +14,24 @@ trait Edge
   var target: java.lang.String
 }
 
+object Edge {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    source: java.lang.String,
+    target: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    color: java.lang.String = null,
+    size: scala.Int | scala.Double = null
+  ): Edge = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("target")(target)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Edge]
+  }
+}
+

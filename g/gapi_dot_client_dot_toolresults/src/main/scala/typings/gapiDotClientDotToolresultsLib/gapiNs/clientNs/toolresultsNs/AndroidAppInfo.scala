@@ -16,3 +16,20 @@ trait AndroidAppInfo extends js.Object {
   var versionName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AndroidAppInfo {
+  @scala.inline
+  def apply(
+    name: java.lang.String = null,
+    packageName: java.lang.String = null,
+    versionCode: java.lang.String = null,
+    versionName: java.lang.String = null
+  ): AndroidAppInfo = {
+    val __obj = js.Dynamic.literal()
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (packageName != null) __obj.updateDynamic("packageName")(packageName)
+    if (versionCode != null) __obj.updateDynamic("versionCode")(versionCode)
+    if (versionName != null) __obj.updateDynamic("versionName")(versionName)
+    __obj.asInstanceOf[AndroidAppInfo]
+  }
+}
+

@@ -148,3 +148,88 @@ trait Anon_AccesstokenAddressAlt extends js.Object {
   var websiteUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccesstokenAddressAlt {
+  @scala.inline
+  def apply(
+    `$.xgafv`: java.lang.String = null,
+    access_token: java.lang.String = null,
+    address: java.lang.String = null,
+    alt: java.lang.String = null,
+    bearer_token: java.lang.String = null,
+    callback: java.lang.String = null,
+    companyName: java.lang.String = null,
+    fields: java.lang.String = null,
+    gpsMotivations: java.lang.String = null,
+    industries: java.lang.String = null,
+    key: java.lang.String = null,
+    languageCodes: java.lang.String = null,
+    `maxMonthlyBudget.currencyCode`: java.lang.String = null,
+    `maxMonthlyBudget.nanos`: scala.Int | scala.Double = null,
+    `maxMonthlyBudget.units`: java.lang.String = null,
+    `minMonthlyBudget.currencyCode`: java.lang.String = null,
+    `minMonthlyBudget.nanos`: scala.Int | scala.Double = null,
+    `minMonthlyBudget.units`: java.lang.String = null,
+    oauth_token: java.lang.String = null,
+    orderBy: java.lang.String = null,
+    pageSize: scala.Int | scala.Double = null,
+    pageToken: java.lang.String = null,
+    pp: js.UndefOr[scala.Boolean] = js.undefined,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    `requestMetadata.experimentIds`: java.lang.String = null,
+    `requestMetadata.locale`: java.lang.String = null,
+    `requestMetadata.partnersSessionId`: java.lang.String = null,
+    `requestMetadata.trafficSource.trafficSourceId`: java.lang.String = null,
+    `requestMetadata.trafficSource.trafficSubId`: java.lang.String = null,
+    `requestMetadata.userOverrides.ipAddress`: java.lang.String = null,
+    `requestMetadata.userOverrides.userId`: java.lang.String = null,
+    services: java.lang.String = null,
+    specializations: java.lang.String = null,
+    uploadType: java.lang.String = null,
+    upload_protocol: java.lang.String = null,
+    view: java.lang.String = null,
+    websiteUrl: java.lang.String = null
+  ): Anon_AccesstokenAddressAlt = {
+    val __obj = js.Dynamic.literal()
+    if (`$.xgafv` != null) __obj.updateDynamic("$.xgafv")(`$.xgafv`)
+    if (access_token != null) __obj.updateDynamic("access_token")(access_token)
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (bearer_token != null) __obj.updateDynamic("bearer_token")(bearer_token)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (companyName != null) __obj.updateDynamic("companyName")(companyName)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (gpsMotivations != null) __obj.updateDynamic("gpsMotivations")(gpsMotivations)
+    if (industries != null) __obj.updateDynamic("industries")(industries)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (languageCodes != null) __obj.updateDynamic("languageCodes")(languageCodes)
+    if (`maxMonthlyBudget.currencyCode` != null) __obj.updateDynamic("maxMonthlyBudget.currencyCode")(`maxMonthlyBudget.currencyCode`)
+    if (`maxMonthlyBudget.nanos` != null) __obj.updateDynamic("maxMonthlyBudget.nanos")(`maxMonthlyBudget.nanos`.asInstanceOf[js.Any])
+    if (`maxMonthlyBudget.units` != null) __obj.updateDynamic("maxMonthlyBudget.units")(`maxMonthlyBudget.units`)
+    if (`minMonthlyBudget.currencyCode` != null) __obj.updateDynamic("minMonthlyBudget.currencyCode")(`minMonthlyBudget.currencyCode`)
+    if (`minMonthlyBudget.nanos` != null) __obj.updateDynamic("minMonthlyBudget.nanos")(`minMonthlyBudget.nanos`.asInstanceOf[js.Any])
+    if (`minMonthlyBudget.units` != null) __obj.updateDynamic("minMonthlyBudget.units")(`minMonthlyBudget.units`)
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (orderBy != null) __obj.updateDynamic("orderBy")(orderBy)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (!js.isUndefined(pp)) __obj.updateDynamic("pp")(pp)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (`requestMetadata.experimentIds` != null) __obj.updateDynamic("requestMetadata.experimentIds")(`requestMetadata.experimentIds`)
+    if (`requestMetadata.locale` != null) __obj.updateDynamic("requestMetadata.locale")(`requestMetadata.locale`)
+    if (`requestMetadata.partnersSessionId` != null) __obj.updateDynamic("requestMetadata.partnersSessionId")(`requestMetadata.partnersSessionId`)
+    if (`requestMetadata.trafficSource.trafficSourceId` != null) __obj.updateDynamic("requestMetadata.trafficSource.trafficSourceId")(`requestMetadata.trafficSource.trafficSourceId`)
+    if (`requestMetadata.trafficSource.trafficSubId` != null) __obj.updateDynamic("requestMetadata.trafficSource.trafficSubId")(`requestMetadata.trafficSource.trafficSubId`)
+    if (`requestMetadata.userOverrides.ipAddress` != null) __obj.updateDynamic("requestMetadata.userOverrides.ipAddress")(`requestMetadata.userOverrides.ipAddress`)
+    if (`requestMetadata.userOverrides.userId` != null) __obj.updateDynamic("requestMetadata.userOverrides.userId")(`requestMetadata.userOverrides.userId`)
+    if (services != null) __obj.updateDynamic("services")(services)
+    if (specializations != null) __obj.updateDynamic("specializations")(specializations)
+    if (uploadType != null) __obj.updateDynamic("uploadType")(uploadType)
+    if (upload_protocol != null) __obj.updateDynamic("upload_protocol")(upload_protocol)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    __obj.asInstanceOf[Anon_AccesstokenAddressAlt]
+  }
+}
+

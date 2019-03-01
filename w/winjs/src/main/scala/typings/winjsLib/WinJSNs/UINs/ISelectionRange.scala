@@ -28,3 +28,15 @@ trait ISelectionRange extends js.Object {
   var lastKey: js.Any
 }
 
+object ISelectionRange {
+  @scala.inline
+  def apply(firstIndex: scala.Double, firstKey: js.Any, lastIndex: scala.Double, lastKey: js.Any): ISelectionRange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("firstIndex")(firstIndex)
+    __obj.updateDynamic("firstKey")(firstKey)
+    __obj.updateDynamic("lastIndex")(lastIndex)
+    __obj.updateDynamic("lastKey")(lastKey)
+    __obj.asInstanceOf[ISelectionRange]
+  }
+}
+

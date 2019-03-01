@@ -208,3 +208,118 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    allowDrillDown: js.UndefOr[scala.Boolean] = js.undefined,
+    allowEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeClose: js.Function1[/* e */ BeforeCloseEventArgs, scala.Unit] = null,
+    beforeDateCreate: js.Function1[/* e */ BeforeDateCreateEventArgs, scala.Unit] = null,
+    beforeOpen: js.Function1[/* e */ BeforeOpenEventArgs, scala.Unit] = null,
+    blackoutDates: js.Any = null,
+    buttonText: java.lang.String = null,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    dateFormat: java.lang.String = null,
+    dayHeaderFormat: java.lang.String | Header = null,
+    depthLevel: java.lang.String | Level = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    displayInline: js.UndefOr[scala.Boolean] = js.undefined,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableStrictMode: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: Fields = null,
+    focusIn: js.Function1[/* e */ FocusInEventArgs, scala.Unit] = null,
+    focusOut: js.Function1[/* e */ FocusOutEventArgs, scala.Unit] = null,
+    headerFormat: java.lang.String = null,
+    height: java.lang.String = null,
+    highlightSection: java.lang.String | HighlightSection = null,
+    highlightWeekend: js.UndefOr[scala.Boolean] = js.undefined,
+    htmlAttributes: js.Any = null,
+    locale: java.lang.String = null,
+    maxDate: java.lang.String | stdLib.Date = null,
+    minDate: java.lang.String | stdLib.Date = null,
+    navigate: js.Function1[/* e */ NavigateEventArgs, scala.Unit] = null,
+    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    showDisabledRange: js.UndefOr[scala.Boolean] = js.undefined,
+    showFooter: js.UndefOr[scala.Boolean] = js.undefined,
+    showOtherMonths: js.UndefOr[scala.Boolean] = js.undefined,
+    showPopupButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    specialDates: js.Any = null,
+    startDay: scala.Int | scala.Double = null,
+    startLevel: java.lang.String | Level = null,
+    stepMonths: scala.Int | scala.Double = null,
+    tooltipFormat: java.lang.String = null,
+    validationMessage: js.Any = null,
+    validationRules: js.Any = null,
+    value: java.lang.String | stdLib.Date = null,
+    watermarkText: java.lang.String = null,
+    weekNumber: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDrillDown)) __obj.updateDynamic("allowDrillDown")(allowDrillDown)
+    if (!js.isUndefined(allowEdit)) __obj.updateDynamic("allowEdit")(allowEdit)
+    if (beforeClose != null) __obj.updateDynamic("beforeClose")(beforeClose)
+    if (beforeDateCreate != null) __obj.updateDynamic("beforeDateCreate")(beforeDateCreate)
+    if (beforeOpen != null) __obj.updateDynamic("beforeOpen")(beforeOpen)
+    if (blackoutDates != null) __obj.updateDynamic("blackoutDates")(blackoutDates)
+    if (buttonText != null) __obj.updateDynamic("buttonText")(buttonText)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (dayHeaderFormat != null) __obj.updateDynamic("dayHeaderFormat")(dayHeaderFormat.asInstanceOf[js.Any])
+    if (depthLevel != null) __obj.updateDynamic("depthLevel")(depthLevel.asInstanceOf[js.Any])
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(displayInline)) __obj.updateDynamic("displayInline")(displayInline)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableStrictMode)) __obj.updateDynamic("enableStrictMode")(enableStrictMode)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (focusIn != null) __obj.updateDynamic("focusIn")(focusIn)
+    if (focusOut != null) __obj.updateDynamic("focusOut")(focusOut)
+    if (headerFormat != null) __obj.updateDynamic("headerFormat")(headerFormat)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (highlightSection != null) __obj.updateDynamic("highlightSection")(highlightSection.asInstanceOf[js.Any])
+    if (!js.isUndefined(highlightWeekend)) __obj.updateDynamic("highlightWeekend")(highlightWeekend)
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (navigate != null) __obj.updateDynamic("navigate")(navigate)
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (!js.isUndefined(showDisabledRange)) __obj.updateDynamic("showDisabledRange")(showDisabledRange)
+    if (!js.isUndefined(showFooter)) __obj.updateDynamic("showFooter")(showFooter)
+    if (!js.isUndefined(showOtherMonths)) __obj.updateDynamic("showOtherMonths")(showOtherMonths)
+    if (!js.isUndefined(showPopupButton)) __obj.updateDynamic("showPopupButton")(showPopupButton)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
+    if (specialDates != null) __obj.updateDynamic("specialDates")(specialDates)
+    if (startDay != null) __obj.updateDynamic("startDay")(startDay.asInstanceOf[js.Any])
+    if (startLevel != null) __obj.updateDynamic("startLevel")(startLevel.asInstanceOf[js.Any])
+    if (stepMonths != null) __obj.updateDynamic("stepMonths")(stepMonths.asInstanceOf[js.Any])
+    if (tooltipFormat != null) __obj.updateDynamic("tooltipFormat")(tooltipFormat)
+    if (validationMessage != null) __obj.updateDynamic("validationMessage")(validationMessage)
+    if (validationRules != null) __obj.updateDynamic("validationRules")(validationRules)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (watermarkText != null) __obj.updateDynamic("watermarkText")(watermarkText)
+    if (!js.isUndefined(weekNumber)) __obj.updateDynamic("weekNumber")(weekNumber)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Model]
+  }
+}
+

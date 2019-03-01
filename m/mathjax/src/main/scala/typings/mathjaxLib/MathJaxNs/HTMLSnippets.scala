@@ -22,3 +22,22 @@ trait HTMLSnippets extends js.Object {
   var webfonts: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object HTMLSnippets {
+  @scala.inline
+  def apply(
+    STIXfonts: java.lang.String = null,
+    TeXfonts: java.lang.String = null,
+    closeBox: java.lang.String = null,
+    fonts: java.lang.String = null,
+    webfonts: java.lang.String = null
+  ): HTMLSnippets = {
+    val __obj = js.Dynamic.literal()
+    if (STIXfonts != null) __obj.updateDynamic("STIXfonts")(STIXfonts)
+    if (TeXfonts != null) __obj.updateDynamic("TeXfonts")(TeXfonts)
+    if (closeBox != null) __obj.updateDynamic("closeBox")(closeBox)
+    if (fonts != null) __obj.updateDynamic("fonts")(fonts)
+    if (webfonts != null) __obj.updateDynamic("webfonts")(webfonts)
+    __obj.asInstanceOf[HTMLSnippets]
+  }
+}
+

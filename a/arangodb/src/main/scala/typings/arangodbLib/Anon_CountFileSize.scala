@@ -10,3 +10,13 @@ trait Anon_CountFileSize extends js.Object {
   var fileSize: scala.Double
 }
 
+object Anon_CountFileSize {
+  @scala.inline
+  def apply(count: scala.Double, fileSize: scala.Double): Anon_CountFileSize = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("fileSize")(fileSize)
+    __obj.asInstanceOf[Anon_CountFileSize]
+  }
+}
+

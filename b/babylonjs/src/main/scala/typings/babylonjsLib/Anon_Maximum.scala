@@ -10,3 +10,13 @@ trait Anon_Maximum extends js.Object {
   var minimum: babylonjsLib.BABYLONNs.Vector3
 }
 
+object Anon_Maximum {
+  @scala.inline
+  def apply(maximum: babylonjsLib.BABYLONNs.Vector3, minimum: babylonjsLib.BABYLONNs.Vector3): Anon_Maximum = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("maximum")(maximum)
+    __obj.updateDynamic("minimum")(minimum)
+    __obj.asInstanceOf[Anon_Maximum]
+  }
+}
+

@@ -92,3 +92,54 @@ trait Deployment extends js.Object {
   var startedOn: stdLib.Date
 }
 
+object Deployment {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    attempt: scala.Double,
+    completedOn: stdLib.Date,
+    conditions: js.Array[Condition],
+    definitionEnvironmentId: scala.Double,
+    deploymentStatus: DeploymentStatus,
+    id: scala.Double,
+    lastModifiedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastModifiedOn: stdLib.Date,
+    operationStatus: DeploymentOperationStatus,
+    postDeployApprovals: js.Array[ReleaseApproval],
+    preDeployApprovals: js.Array[ReleaseApproval],
+    queuedOn: stdLib.Date,
+    reason: DeploymentReason,
+    release: ReleaseReference,
+    releaseDefinition: ReleaseDefinitionShallowReference,
+    releaseEnvironment: ReleaseEnvironmentShallowReference,
+    requestedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    requestedFor: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    scheduledDeploymentTime: stdLib.Date,
+    startedOn: stdLib.Date
+  ): Deployment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("attempt")(attempt)
+    __obj.updateDynamic("completedOn")(completedOn)
+    __obj.updateDynamic("conditions")(conditions)
+    __obj.updateDynamic("definitionEnvironmentId")(definitionEnvironmentId)
+    __obj.updateDynamic("deploymentStatus")(deploymentStatus)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("lastModifiedBy")(lastModifiedBy)
+    __obj.updateDynamic("lastModifiedOn")(lastModifiedOn)
+    __obj.updateDynamic("operationStatus")(operationStatus)
+    __obj.updateDynamic("postDeployApprovals")(postDeployApprovals)
+    __obj.updateDynamic("preDeployApprovals")(preDeployApprovals)
+    __obj.updateDynamic("queuedOn")(queuedOn)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("releaseDefinition")(releaseDefinition)
+    __obj.updateDynamic("releaseEnvironment")(releaseEnvironment)
+    __obj.updateDynamic("requestedBy")(requestedBy)
+    __obj.updateDynamic("requestedFor")(requestedFor)
+    __obj.updateDynamic("scheduledDeploymentTime")(scheduledDeploymentTime)
+    __obj.updateDynamic("startedOn")(startedOn)
+    __obj.asInstanceOf[Deployment]
+  }
+}
+

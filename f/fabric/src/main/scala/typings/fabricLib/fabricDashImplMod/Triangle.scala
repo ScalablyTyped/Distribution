@@ -13,13 +13,6 @@ import scala.scalajs.js.annotation._
 	 */
 class Triangle () extends Object {
   def this(options: ITriangleOptions) = this()
-  /**
-  	 * Returns SVG representation of an instance
-  	 * @param [reviver] Method for further parsing of svg representation.
-  	 * @return svg representation of an instance
-  	 */
-  def toSVG(): java.lang.String = js.native
-  def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
 /* static members */

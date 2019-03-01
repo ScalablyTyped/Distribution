@@ -37,3 +37,28 @@ trait DataViewTreeNode extends js.Object {
   var values: js.UndefOr[org.scalablytyped.runtime.NumberDictionary[DataViewTreeNodeValue]] = js.undefined
 }
 
+object DataViewTreeNode {
+  @scala.inline
+  def apply(
+    childIdentityFields: js.Array[
+      powerbiDashVisualsDashToolsLib.powerbiDashVisualsDashToolsMod.powerbiNs.dataNs.ISQExpr
+    ] = null,
+    children: js.Array[DataViewTreeNode] = null,
+    identity: DataViewScopeIdentity = null,
+    name: PrimitiveValue = null,
+    objects: DataViewObjects = null,
+    value: PrimitiveValue = null,
+    values: org.scalablytyped.runtime.NumberDictionary[DataViewTreeNodeValue] = null
+  ): DataViewTreeNode = {
+    val __obj = js.Dynamic.literal()
+    if (childIdentityFields != null) __obj.updateDynamic("childIdentityFields")(childIdentityFields)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (identity != null) __obj.updateDynamic("identity")(identity)
+    if (name != null) __obj.updateDynamic("name")(name.asInstanceOf[js.Any])
+    if (objects != null) __obj.updateDynamic("objects")(objects)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[DataViewTreeNode]
+  }
+}
+

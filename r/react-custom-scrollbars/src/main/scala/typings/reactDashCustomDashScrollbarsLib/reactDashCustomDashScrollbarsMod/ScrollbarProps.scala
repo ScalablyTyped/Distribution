@@ -31,3 +31,56 @@ trait ScrollbarProps
   var universal: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ScrollbarProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[Scrollbars] = null,
+    autoHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHeightMax: scala.Double | java.lang.String = null,
+    autoHeightMin: scala.Double | java.lang.String = null,
+    autoHide: js.UndefOr[scala.Boolean] = js.undefined,
+    autoHideDuration: scala.Int | scala.Double = null,
+    autoHideTimeout: scala.Int | scala.Double = null,
+    hideTracksWhenNotNeeded: js.UndefOr[scala.Boolean] = js.undefined,
+    onScroll: reactLib.reactMod.ReactNs.UIEventHandler[_] = null,
+    onScrollFrame: js.Function1[/* values */ positionValues, scala.Unit] = null,
+    onScrollStart: js.Function0[scala.Unit] = null,
+    onScrollStop: js.Function0[scala.Unit] = null,
+    onUpdate: js.Function1[/* values */ positionValues, scala.Unit] = null,
+    renderThumbHorizontal: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    renderThumbVertical: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    renderTrackHorizontal: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    renderTrackVertical: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    renderView: reactLib.reactMod.ReactNs.StatelessComponent[_] = null,
+    tagName: java.lang.String = null,
+    thumbMinSize: scala.Int | scala.Double = null,
+    thumbSize: scala.Int | scala.Double = null,
+    universal: js.UndefOr[scala.Boolean] = js.undefined
+  ): ScrollbarProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (!js.isUndefined(autoHeight)) __obj.updateDynamic("autoHeight")(autoHeight)
+    if (autoHeightMax != null) __obj.updateDynamic("autoHeightMax")(autoHeightMax.asInstanceOf[js.Any])
+    if (autoHeightMin != null) __obj.updateDynamic("autoHeightMin")(autoHeightMin.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
+    if (autoHideDuration != null) __obj.updateDynamic("autoHideDuration")(autoHideDuration.asInstanceOf[js.Any])
+    if (autoHideTimeout != null) __obj.updateDynamic("autoHideTimeout")(autoHideTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideTracksWhenNotNeeded)) __obj.updateDynamic("hideTracksWhenNotNeeded")(hideTracksWhenNotNeeded)
+    if (onScroll != null) __obj.updateDynamic("onScroll")(onScroll)
+    if (onScrollFrame != null) __obj.updateDynamic("onScrollFrame")(onScrollFrame)
+    if (onScrollStart != null) __obj.updateDynamic("onScrollStart")(onScrollStart)
+    if (onScrollStop != null) __obj.updateDynamic("onScrollStop")(onScrollStop)
+    if (onUpdate != null) __obj.updateDynamic("onUpdate")(onUpdate)
+    if (renderThumbHorizontal != null) __obj.updateDynamic("renderThumbHorizontal")(renderThumbHorizontal)
+    if (renderThumbVertical != null) __obj.updateDynamic("renderThumbVertical")(renderThumbVertical)
+    if (renderTrackHorizontal != null) __obj.updateDynamic("renderTrackHorizontal")(renderTrackHorizontal)
+    if (renderTrackVertical != null) __obj.updateDynamic("renderTrackVertical")(renderTrackVertical)
+    if (renderView != null) __obj.updateDynamic("renderView")(renderView)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (thumbMinSize != null) __obj.updateDynamic("thumbMinSize")(thumbMinSize.asInstanceOf[js.Any])
+    if (thumbSize != null) __obj.updateDynamic("thumbSize")(thumbSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(universal)) __obj.updateDynamic("universal")(universal)
+    __obj.asInstanceOf[ScrollbarProps]
+  }
+}
+

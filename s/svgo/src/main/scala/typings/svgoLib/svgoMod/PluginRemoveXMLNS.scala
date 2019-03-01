@@ -9,3 +9,12 @@ trait PluginRemoveXMLNS extends js.Object {
   var removeXMLNS: scala.Boolean | js.Object
 }
 
+object PluginRemoveXMLNS {
+  @scala.inline
+  def apply(removeXMLNS: scala.Boolean | js.Object): PluginRemoveXMLNS = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("removeXMLNS")(removeXMLNS.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PluginRemoveXMLNS]
+  }
+}
+

@@ -10,3 +10,17 @@ trait TiersResource extends js.Object {
   def list(request: gapiDotClientDotSqladminLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TiersListResponse]
 }
 
+object TiersResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotSqladminLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TiersListResponse]
+    ]
+  ): TiersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[TiersResource]
+  }
+}
+

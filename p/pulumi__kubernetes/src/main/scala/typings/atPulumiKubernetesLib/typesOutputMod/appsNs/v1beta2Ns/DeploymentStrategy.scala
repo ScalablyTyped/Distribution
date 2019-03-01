@@ -19,3 +19,12 @@ trait DeploymentStrategy extends js.Object {
   val `type`: java.lang.String
 }
 
+object DeploymentStrategy {
+  @scala.inline
+  def apply(rollingUpdate: RollingUpdateDeployment, `type`: java.lang.String): DeploymentStrategy = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("rollingUpdate")(rollingUpdate)
+    __obj.asInstanceOf[DeploymentStrategy]
+  }
+}
+

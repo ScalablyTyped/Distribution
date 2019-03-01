@@ -12,3 +12,20 @@ trait IPROXIMITY_LIST_UPDATE extends js.Object {
   var removedUsers: js.Array[smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser]
 }
 
+object IPROXIMITY_LIST_UPDATE {
+  @scala.inline
+  def apply(
+    addedItems: js.Array[smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.MMOItem],
+    addedUsers: js.Array[smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser],
+    removedItems: js.Array[smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.MMOItem],
+    removedUsers: js.Array[smartDashFoxDashServerLib.SFS2XNs.EntitiesNs.SFSUser]
+  ): IPROXIMITY_LIST_UPDATE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addedItems")(addedItems)
+    __obj.updateDynamic("addedUsers")(addedUsers)
+    __obj.updateDynamic("removedItems")(removedItems)
+    __obj.updateDynamic("removedUsers")(removedUsers)
+    __obj.asInstanceOf[IPROXIMITY_LIST_UPDATE]
+  }
+}
+

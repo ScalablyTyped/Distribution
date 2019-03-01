@@ -51,3 +51,44 @@ trait ClaimInsurance extends BackboneElement {
   var sequence: positiveInt
 }
 
+object ClaimInsurance {
+  @scala.inline
+  def apply(
+    coverage: Reference,
+    focal: scala.Boolean,
+    sequence: positiveInt,
+    _businessArrangement: Element = null,
+    _fhir_comments: js.Array[Element] = null,
+    _focal: Element = null,
+    _id: Element = null,
+    _preAuthRef: js.Array[Element] = null,
+    _sequence: Element = null,
+    businessArrangement: java.lang.String = null,
+    claimResponse: Reference = null,
+    extension: js.Array[Extension] = null,
+    fhir_comments: js.Array[java.lang.String] = null,
+    id: java.lang.String = null,
+    modifierExtension: js.Array[Extension] = null,
+    preAuthRef: js.Array[java.lang.String] = null
+  ): ClaimInsurance = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("coverage")(coverage)
+    __obj.updateDynamic("focal")(focal)
+    __obj.updateDynamic("sequence")(sequence)
+    if (_businessArrangement != null) __obj.updateDynamic("_businessArrangement")(_businessArrangement)
+    if (_fhir_comments != null) __obj.updateDynamic("_fhir_comments")(_fhir_comments)
+    if (_focal != null) __obj.updateDynamic("_focal")(_focal)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_preAuthRef != null) __obj.updateDynamic("_preAuthRef")(_preAuthRef)
+    if (_sequence != null) __obj.updateDynamic("_sequence")(_sequence)
+    if (businessArrangement != null) __obj.updateDynamic("businessArrangement")(businessArrangement)
+    if (claimResponse != null) __obj.updateDynamic("claimResponse")(claimResponse)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (fhir_comments != null) __obj.updateDynamic("fhir_comments")(fhir_comments)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (preAuthRef != null) __obj.updateDynamic("preAuthRef")(preAuthRef)
+    __obj.asInstanceOf[ClaimInsurance]
+  }
+}
+

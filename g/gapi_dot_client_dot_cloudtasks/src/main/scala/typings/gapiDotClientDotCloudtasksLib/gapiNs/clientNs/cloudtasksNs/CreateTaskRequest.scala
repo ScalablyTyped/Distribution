@@ -61,3 +61,13 @@ trait CreateTaskRequest extends js.Object {
   var task: js.UndefOr[Task] = js.undefined
 }
 
+object CreateTaskRequest {
+  @scala.inline
+  def apply(responseView: java.lang.String = null, task: Task = null): CreateTaskRequest = {
+    val __obj = js.Dynamic.literal()
+    if (responseView != null) __obj.updateDynamic("responseView")(responseView)
+    if (task != null) __obj.updateDynamic("task")(task)
+    __obj.asInstanceOf[CreateTaskRequest]
+  }
+}
+

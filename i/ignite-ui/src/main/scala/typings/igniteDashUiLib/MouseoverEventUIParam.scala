@@ -24,3 +24,20 @@ trait MouseoverEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object MouseoverEventUIParam {
+  @scala.inline
+  def apply(
+    editorInput: js.Any = null,
+    element: js.Any = null,
+    originalEvent: js.Any = null,
+    owner: js.Any = null
+  ): MouseoverEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (editorInput != null) __obj.updateDynamic("editorInput")(editorInput)
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (originalEvent != null) __obj.updateDynamic("originalEvent")(originalEvent)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[MouseoverEventUIParam]
+  }
+}
+

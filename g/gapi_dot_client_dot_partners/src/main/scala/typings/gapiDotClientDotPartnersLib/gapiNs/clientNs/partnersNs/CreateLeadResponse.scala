@@ -20,3 +20,18 @@ trait CreateLeadResponse extends js.Object {
   var responseMetadata: js.UndefOr[ResponseMetadata] = js.undefined
 }
 
+object CreateLeadResponse {
+  @scala.inline
+  def apply(
+    lead: Lead = null,
+    recaptchaStatus: java.lang.String = null,
+    responseMetadata: ResponseMetadata = null
+  ): CreateLeadResponse = {
+    val __obj = js.Dynamic.literal()
+    if (lead != null) __obj.updateDynamic("lead")(lead)
+    if (recaptchaStatus != null) __obj.updateDynamic("recaptchaStatus")(recaptchaStatus)
+    if (responseMetadata != null) __obj.updateDynamic("responseMetadata")(responseMetadata)
+    __obj.asInstanceOf[CreateLeadResponse]
+  }
+}
+

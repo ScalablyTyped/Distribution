@@ -13,28 +13,34 @@ object spotifyDashWebDashApiDashJsLibStrings {
   sealed trait P extends js.Object
   
   @js.native
-  sealed trait album extends js.Object
+  sealed trait album
+    extends spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ContextObjectType
   
   @js.native
-  sealed trait artist extends js.Object
+  sealed trait artist
+    extends spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ContextObjectType
   
   @js.native
   sealed trait audio_features extends js.Object
   
   @js.native
-  sealed trait context extends js.Object
+  sealed trait context
+    extends spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaybackRepeatState
   
   @js.native
   sealed trait genre extends js.Object
   
   @js.native
-  sealed trait off extends js.Object
+  sealed trait off
+    extends spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaybackRepeatState
   
   @js.native
-  sealed trait playlist extends js.Object
+  sealed trait playlist
+    extends spotifyDashWebDashApiDashJsLib.SpotifyApiNs.ContextObjectType
   
   @js.native
-  sealed trait track extends js.Object
+  sealed trait track
+    extends spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlaybackRepeatState
   
   @js.native
   sealed trait user extends js.Object

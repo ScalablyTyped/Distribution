@@ -6,7 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object soapMod {
-  type ISoapFault = ISoapFault12 | ISoapFault11
   type ISoapMethod = js.Function4[
     /* args */ js.Any, 
     /* callback */ js.Function4[
@@ -30,5 +29,4 @@ package object soapMod {
   type Option = IOptions
   type Security = ISecurity
   type SoapMethod = ISoapMethod
-  type XsdElement = XsdElementType | XsdComplexType
 }

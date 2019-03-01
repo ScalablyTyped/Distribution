@@ -7,7 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object interfacesMod {
   type OutputBuffer = stdLib.ArrayLike[scala.Double] | nodeLib.Buffer
-  type V4Options = uuidLib.Anon_Random | uuidLib.Anon_Rng
   type v1 = v1String with v1Buffer
   type v1Buffer = js.Function3[
     /* options */ js.UndefOr[V1Options | scala.Null], 

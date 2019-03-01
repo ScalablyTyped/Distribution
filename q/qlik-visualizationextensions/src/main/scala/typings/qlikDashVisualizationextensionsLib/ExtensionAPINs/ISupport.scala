@@ -14,3 +14,20 @@ trait ISupport extends js.Object {
   var snapshot: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ISupport {
+  @scala.inline
+  def apply(
+    canTakeSnapshot: js.UndefOr[scala.Boolean] = js.undefined,
+    export: js.UndefOr[scala.Boolean] = js.undefined,
+    exportData: js.UndefOr[scala.Boolean] = js.undefined,
+    snapshot: js.UndefOr[scala.Boolean] = js.undefined
+  ): ISupport = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(canTakeSnapshot)) __obj.updateDynamic("canTakeSnapshot")(canTakeSnapshot)
+    if (!js.isUndefined(export)) __obj.updateDynamic("export")(export)
+    if (!js.isUndefined(exportData)) __obj.updateDynamic("exportData")(exportData)
+    if (!js.isUndefined(snapshot)) __obj.updateDynamic("snapshot")(snapshot)
+    __obj.asInstanceOf[ISupport]
+  }
+}
+

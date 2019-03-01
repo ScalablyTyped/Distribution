@@ -33,3 +33,19 @@ trait FluxStandardAction[Payload, Meta] extends js.Object {
   var `type`: java.lang.String
 }
 
+object FluxStandardAction {
+  @scala.inline
+  def apply[Payload, Meta](
+    `type`: java.lang.String,
+    error: js.UndefOr[scala.Boolean] = js.undefined,
+    meta: Meta = null,
+    payload: Payload = null
+  ): FluxStandardAction[Payload, Meta] = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (meta != null) __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    if (payload != null) __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FluxStandardAction[Payload, Meta]]
+  }
+}
+

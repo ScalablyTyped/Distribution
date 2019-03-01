@@ -9,3 +9,12 @@ trait RevokeCredentialsResult extends js.Object {
   var success: scala.Boolean
 }
 
+object RevokeCredentialsResult {
+  @scala.inline
+  def apply(success: scala.Boolean): RevokeCredentialsResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[RevokeCredentialsResult]
+  }
+}
+

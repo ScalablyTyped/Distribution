@@ -23,3 +23,24 @@ trait StyleManager extends js.Object {
   def onDidUpdateStyleElement(callback: js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit]): Disposable
 }
 
+object StyleManager {
+  @scala.inline
+  def apply(
+    getStyleElements: js.Function0[js.Array[stdLib.HTMLStyleElement]],
+    getUserStyleSheetPath: js.Function0[java.lang.String],
+    observeStyleElements: js.Function1[js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit], Disposable],
+    onDidAddStyleElement: js.Function1[js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit], Disposable],
+    onDidRemoveStyleElement: js.Function1[js.Function1[/* styleElement */ stdLib.HTMLStyleElement, scala.Unit], Disposable],
+    onDidUpdateStyleElement: js.Function1[js.Function1[/* styleElement */ StyleElementObservedEvent, scala.Unit], Disposable]
+  ): StyleManager = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getStyleElements")(getStyleElements)
+    __obj.updateDynamic("getUserStyleSheetPath")(getUserStyleSheetPath)
+    __obj.updateDynamic("observeStyleElements")(observeStyleElements)
+    __obj.updateDynamic("onDidAddStyleElement")(onDidAddStyleElement)
+    __obj.updateDynamic("onDidRemoveStyleElement")(onDidRemoveStyleElement)
+    __obj.updateDynamic("onDidUpdateStyleElement")(onDidUpdateStyleElement)
+    __obj.asInstanceOf[StyleManager]
+  }
+}
+

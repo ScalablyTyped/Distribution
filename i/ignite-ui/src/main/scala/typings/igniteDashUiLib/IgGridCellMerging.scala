@@ -83,3 +83,41 @@ trait IgGridCellMerging
   var rowMergeStrategy: js.UndefOr[java.lang.String | js.Function] = js.undefined
 }
 
+object IgGridCellMerging {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igGridCellMerging
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    cellsMerged: CellsMergedEvent = null,
+    cellsMerging: CellsMergingEvent = null,
+    columnSettings: js.Array[IgGridCellMergingColumnSetting] = null,
+    inherit: js.UndefOr[scala.Boolean] = js.undefined,
+    language: java.lang.String = null,
+    locale: js.Any = null,
+    mergeOn: java.lang.String = null,
+    mergeRows: js.Any = null,
+    mergeStrategy: java.lang.String | js.Function = null,
+    mergeType: java.lang.String = null,
+    regional: java.lang.String | js.Object = null,
+    rowMergeStrategy: java.lang.String | js.Function = null
+  ): IgGridCellMerging = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (cellsMerged != null) __obj.updateDynamic("cellsMerged")(cellsMerged)
+    if (cellsMerging != null) __obj.updateDynamic("cellsMerging")(cellsMerging)
+    if (columnSettings != null) __obj.updateDynamic("columnSettings")(columnSettings)
+    if (!js.isUndefined(inherit)) __obj.updateDynamic("inherit")(inherit)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (mergeOn != null) __obj.updateDynamic("mergeOn")(mergeOn)
+    if (mergeRows != null) __obj.updateDynamic("mergeRows")(mergeRows)
+    if (mergeStrategy != null) __obj.updateDynamic("mergeStrategy")(mergeStrategy.asInstanceOf[js.Any])
+    if (mergeType != null) __obj.updateDynamic("mergeType")(mergeType)
+    if (regional != null) __obj.updateDynamic("regional")(regional.asInstanceOf[js.Any])
+    if (rowMergeStrategy != null) __obj.updateDynamic("rowMergeStrategy")(rowMergeStrategy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgGridCellMerging]
+  }
+}
+

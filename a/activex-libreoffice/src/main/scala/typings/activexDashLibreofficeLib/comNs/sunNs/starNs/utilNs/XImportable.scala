@@ -16,3 +16,28 @@ trait XImportable
   ): scala.Unit
 }
 
+object XImportable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createImportDescriptor: js.Function1[
+      scala.Boolean, 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    doImport: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XImportable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createImportDescriptor")(createImportDescriptor)
+    __obj.updateDynamic("doImport")(doImport)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XImportable]
+  }
+}
+

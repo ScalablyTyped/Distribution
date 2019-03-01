@@ -20,3 +20,18 @@ trait Anon_BackgroundColor extends js.Object {
   var textColor: java.lang.String
 }
 
+object Anon_BackgroundColor {
+  @scala.inline
+  def apply(
+    backgroundColor: java.lang.String,
+    featuredPlaylistId: java.lang.String,
+    textColor: java.lang.String
+  ): Anon_BackgroundColor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("backgroundColor")(backgroundColor)
+    __obj.updateDynamic("featuredPlaylistId")(featuredPlaylistId)
+    __obj.updateDynamic("textColor")(textColor)
+    __obj.asInstanceOf[Anon_BackgroundColor]
+  }
+}
+

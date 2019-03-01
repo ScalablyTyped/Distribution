@@ -19,3 +19,13 @@ trait ListViewContentInsetOption extends js.Object {
   var duration: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ListViewContentInsetOption {
+  @scala.inline
+  def apply(animated: js.UndefOr[scala.Boolean] = js.undefined, duration: scala.Int | scala.Double = null): ListViewContentInsetOption = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(animated)) __obj.updateDynamic("animated")(animated)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ListViewContentInsetOption]
+  }
+}
+

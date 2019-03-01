@@ -16,3 +16,26 @@ trait DataView extends js.Object {
   var tree: js.UndefOr[DataViewTree] = js.undefined
 }
 
+object DataView {
+  @scala.inline
+  def apply(
+    metadata: DataViewMetadata,
+    categorical: DataViewCategorical = null,
+    matrix: DataViewMatrix = null,
+    scriptResult: DataViewScriptResultData = null,
+    single: DataViewSingle = null,
+    table: DataViewTable = null,
+    tree: DataViewTree = null
+  ): DataView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("metadata")(metadata)
+    if (categorical != null) __obj.updateDynamic("categorical")(categorical)
+    if (matrix != null) __obj.updateDynamic("matrix")(matrix)
+    if (scriptResult != null) __obj.updateDynamic("scriptResult")(scriptResult)
+    if (single != null) __obj.updateDynamic("single")(single)
+    if (table != null) __obj.updateDynamic("table")(table)
+    if (tree != null) __obj.updateDynamic("tree")(tree)
+    __obj.asInstanceOf[DataView]
+  }
+}
+

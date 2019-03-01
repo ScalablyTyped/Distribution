@@ -68,3 +68,56 @@ trait ICheckbox
   var value_ICheckbox: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ICheckbox {
+  @scala.inline
+  def apply(
+    IField: senchaUnderscoreTouchLib.ExtNs.fieldNs.IField = null,
+    check: js.Function0[ICheckbox] = null,
+    checked: js.UndefOr[scala.Boolean] = js.undefined,
+    component: js.Any = null,
+    doChecked: js.Function0[scala.Unit] = null,
+    doUnChecked: js.Function0[scala.Unit] = null,
+    getChecked: js.Function0[_] = null,
+    getComponent: js.Function0[_] = null,
+    getGroupValues: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getSubmitValue: js.Function0[_] = null,
+    getUi: js.Function0[java.lang.String] = null,
+    getValue: js.Function0[java.lang.String] = null,
+    isChecked: js.Function0[scala.Boolean] = null,
+    reset: js.Function0[senchaUnderscoreTouchLib.ExtNs.fieldNs.IField] = null,
+    resetGroupValues: js.Function0[ICheckbox] = null,
+    setComponent: js.Function1[/* component */ js.UndefOr[js.Any], scala.Unit] = null,
+    setGroupValues: js.Function1[/* values */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], ICheckbox] = null,
+    setUi: js.Function1[/* ui */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setValue: js.Function1[/* value */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    ui: java.lang.String = null,
+    uncheck: js.Function0[ICheckbox] = null,
+    value: java.lang.String = null
+  ): ICheckbox = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IField)
+    if (check != null) __obj.updateDynamic("check")(check)
+    if (!js.isUndefined(checked)) __obj.updateDynamic("checked")(checked)
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (doChecked != null) __obj.updateDynamic("doChecked")(doChecked)
+    if (doUnChecked != null) __obj.updateDynamic("doUnChecked")(doUnChecked)
+    if (getChecked != null) __obj.updateDynamic("getChecked")(getChecked)
+    if (getComponent != null) __obj.updateDynamic("getComponent")(getComponent)
+    if (getGroupValues != null) __obj.updateDynamic("getGroupValues")(getGroupValues)
+    if (getSubmitValue != null) __obj.updateDynamic("getSubmitValue")(getSubmitValue)
+    if (getUi != null) __obj.updateDynamic("getUi")(getUi)
+    if (getValue != null) __obj.updateDynamic("getValue")(getValue)
+    if (isChecked != null) __obj.updateDynamic("isChecked")(isChecked)
+    if (reset != null) __obj.updateDynamic("reset")(reset)
+    if (resetGroupValues != null) __obj.updateDynamic("resetGroupValues")(resetGroupValues)
+    if (setComponent != null) __obj.updateDynamic("setComponent")(setComponent)
+    if (setGroupValues != null) __obj.updateDynamic("setGroupValues")(setGroupValues)
+    if (setUi != null) __obj.updateDynamic("setUi")(setUi)
+    if (setValue != null) __obj.updateDynamic("setValue")(setValue)
+    if (ui != null) __obj.updateDynamic("ui")(ui)
+    if (uncheck != null) __obj.updateDynamic("uncheck")(uncheck)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ICheckbox]
+  }
+}
+

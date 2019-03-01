@@ -40,3 +40,26 @@ trait ClusterEndpointState extends js.Object {
   ] = js.undefined
 }
 
+object ClusterEndpointState {
+  @scala.inline
+  def apply(
+    arn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterEndpointIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    customEndpointType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    endpoint: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    excludedMembers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    staticMembers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null
+  ): ClusterEndpointState = {
+    val __obj = js.Dynamic.literal()
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (clusterEndpointIdentifier != null) __obj.updateDynamic("clusterEndpointIdentifier")(clusterEndpointIdentifier.asInstanceOf[js.Any])
+    if (clusterIdentifier != null) __obj.updateDynamic("clusterIdentifier")(clusterIdentifier.asInstanceOf[js.Any])
+    if (customEndpointType != null) __obj.updateDynamic("customEndpointType")(customEndpointType.asInstanceOf[js.Any])
+    if (endpoint != null) __obj.updateDynamic("endpoint")(endpoint.asInstanceOf[js.Any])
+    if (excludedMembers != null) __obj.updateDynamic("excludedMembers")(excludedMembers.asInstanceOf[js.Any])
+    if (staticMembers != null) __obj.updateDynamic("staticMembers")(staticMembers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClusterEndpointState]
+  }
+}
+

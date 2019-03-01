@@ -10,3 +10,13 @@ trait IDownsampleInfo extends js.Object {
   var stepWidth: scala.Double
 }
 
+object IDownsampleInfo {
+  @scala.inline
+  def apply(domain: js.Array[java.lang.String], stepWidth: scala.Double): IDownsampleInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("domain")(domain)
+    __obj.updateDynamic("stepWidth")(stepWidth)
+    __obj.asInstanceOf[IDownsampleInfo]
+  }
+}
+

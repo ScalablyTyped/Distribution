@@ -24,3 +24,18 @@ trait SourceMetadata extends js.Object {
   var producesSortedKeys: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object SourceMetadata {
+  @scala.inline
+  def apply(
+    estimatedSizeBytes: java.lang.String = null,
+    infinite: js.UndefOr[scala.Boolean] = js.undefined,
+    producesSortedKeys: js.UndefOr[scala.Boolean] = js.undefined
+  ): SourceMetadata = {
+    val __obj = js.Dynamic.literal()
+    if (estimatedSizeBytes != null) __obj.updateDynamic("estimatedSizeBytes")(estimatedSizeBytes)
+    if (!js.isUndefined(infinite)) __obj.updateDynamic("infinite")(infinite)
+    if (!js.isUndefined(producesSortedKeys)) __obj.updateDynamic("producesSortedKeys")(producesSortedKeys)
+    __obj.asInstanceOf[SourceMetadata]
+  }
+}
+

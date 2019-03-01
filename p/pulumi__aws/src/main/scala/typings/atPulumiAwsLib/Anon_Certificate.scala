@@ -14,3 +14,23 @@ trait Anon_Certificate extends js.Object {
   var `type`: java.lang.String
 }
 
+object Anon_Certificate {
+  @scala.inline
+  def apply(
+    computeType: java.lang.String,
+    environmentVariables: js.Array[Anon_NameType],
+    image: java.lang.String,
+    `type`: java.lang.String,
+    certificate: java.lang.String = null,
+    privilegedMode: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Certificate = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("computeType")(computeType)
+    __obj.updateDynamic("environmentVariables")(environmentVariables)
+    __obj.updateDynamic("image")(image)
+    if (certificate != null) __obj.updateDynamic("certificate")(certificate)
+    if (!js.isUndefined(privilegedMode)) __obj.updateDynamic("privilegedMode")(privilegedMode)
+    __obj.asInstanceOf[Anon_Certificate]
+  }
+}
+

@@ -17,3 +17,14 @@ trait Return extends js.Object {
   var path: java.lang.String
 }
 
+object Return {
+  @scala.inline
+  def apply(data: js.Any, layout: java.lang.String | js.Array[java.lang.String], path: java.lang.String): Return = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("layout")(layout.asInstanceOf[js.Any])
+    __obj.updateDynamic("path")(path)
+    __obj.asInstanceOf[Return]
+  }
+}
+

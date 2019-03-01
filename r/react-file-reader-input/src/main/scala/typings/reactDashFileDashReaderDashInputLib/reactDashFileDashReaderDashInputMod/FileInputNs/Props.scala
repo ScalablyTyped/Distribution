@@ -34,3 +34,20 @@ trait Props extends js.Object {
   def onChange(event: reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], results: js.Array[Result]): scala.Unit
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    onChange: js.Function2[
+      reactLib.reactMod.ReactNs.SyntheticEvent[_, reactLib.Event], 
+      js.Array[Result], 
+      scala.Unit
+    ],
+    as: Format = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onChange")(onChange)
+    if (as != null) __obj.updateDynamic("as")(as)
+    __obj.asInstanceOf[Props]
+  }
+}
+

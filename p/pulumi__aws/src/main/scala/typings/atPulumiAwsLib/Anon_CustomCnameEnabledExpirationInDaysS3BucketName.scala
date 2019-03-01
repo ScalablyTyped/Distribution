@@ -12,3 +12,20 @@ trait Anon_CustomCnameEnabledExpirationInDaysS3BucketName extends js.Object {
   var s3BucketName: java.lang.String
 }
 
+object Anon_CustomCnameEnabledExpirationInDaysS3BucketName {
+  @scala.inline
+  def apply(
+    customCname: java.lang.String,
+    enabled: scala.Boolean,
+    expirationInDays: scala.Double,
+    s3BucketName: java.lang.String
+  ): Anon_CustomCnameEnabledExpirationInDaysS3BucketName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("customCname")(customCname)
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.updateDynamic("expirationInDays")(expirationInDays)
+    __obj.updateDynamic("s3BucketName")(s3BucketName)
+    __obj.asInstanceOf[Anon_CustomCnameEnabledExpirationInDaysS3BucketName]
+  }
+}
+

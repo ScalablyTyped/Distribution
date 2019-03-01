@@ -39,3 +39,46 @@ trait CreateOptions extends js.Object {
   var zoomFactor: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateOptions {
+  @scala.inline
+  def apply(
+    base: java.lang.String = null,
+    border: java.lang.String | htmlDashPdfLib.Anon_Bottom = null,
+    directory: java.lang.String = null,
+    footer: htmlDashPdfLib.Anon_ContentsHeight = null,
+    format: htmlDashPdfLib.htmlDashPdfLibStrings.A3 | htmlDashPdfLib.htmlDashPdfLibStrings.A4 | htmlDashPdfLib.htmlDashPdfLibStrings.A5 | htmlDashPdfLib.htmlDashPdfLibStrings.Legal | htmlDashPdfLib.htmlDashPdfLibStrings.Letter | htmlDashPdfLib.htmlDashPdfLibStrings.Tabloid = null,
+    header: htmlDashPdfLib.Anon_Contents = null,
+    height: java.lang.String = null,
+    httpHeaders: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    orientation: htmlDashPdfLib.htmlDashPdfLibStrings.portrait | htmlDashPdfLib.htmlDashPdfLibStrings.landscape = null,
+    phantomArgs: js.Array[java.lang.String] = null,
+    phantomPath: java.lang.String = null,
+    quality: java.lang.String = null,
+    script: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    `type`: htmlDashPdfLib.htmlDashPdfLibStrings.png | htmlDashPdfLib.htmlDashPdfLibStrings.jpeg | htmlDashPdfLib.htmlDashPdfLibStrings.pdf = null,
+    width: java.lang.String = null,
+    zoomFactor: java.lang.String = null
+  ): CreateOptions = {
+    val __obj = js.Dynamic.literal()
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (border != null) __obj.updateDynamic("border")(border.asInstanceOf[js.Any])
+    if (directory != null) __obj.updateDynamic("directory")(directory)
+    if (footer != null) __obj.updateDynamic("footer")(footer)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (header != null) __obj.updateDynamic("header")(header)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (httpHeaders != null) __obj.updateDynamic("httpHeaders")(httpHeaders)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation.asInstanceOf[js.Any])
+    if (phantomArgs != null) __obj.updateDynamic("phantomArgs")(phantomArgs)
+    if (phantomPath != null) __obj.updateDynamic("phantomPath")(phantomPath)
+    if (quality != null) __obj.updateDynamic("quality")(quality)
+    if (script != null) __obj.updateDynamic("script")(script)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width)
+    if (zoomFactor != null) __obj.updateDynamic("zoomFactor")(zoomFactor)
+    __obj.asInstanceOf[CreateOptions]
+  }
+}
+

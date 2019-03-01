@@ -24,3 +24,28 @@ trait Task extends js.Object {
   var tag: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Task {
+  @scala.inline
+  def apply(
+    enqueueTimestamp: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    leaseTimestamp: java.lang.String = null,
+    payloadBase64: java.lang.String = null,
+    queueName: java.lang.String = null,
+    retry_count: scala.Int | scala.Double = null,
+    tag: java.lang.String = null
+  ): Task = {
+    val __obj = js.Dynamic.literal()
+    if (enqueueTimestamp != null) __obj.updateDynamic("enqueueTimestamp")(enqueueTimestamp)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (leaseTimestamp != null) __obj.updateDynamic("leaseTimestamp")(leaseTimestamp)
+    if (payloadBase64 != null) __obj.updateDynamic("payloadBase64")(payloadBase64)
+    if (queueName != null) __obj.updateDynamic("queueName")(queueName)
+    if (retry_count != null) __obj.updateDynamic("retry_count")(retry_count.asInstanceOf[js.Any])
+    if (tag != null) __obj.updateDynamic("tag")(tag)
+    __obj.asInstanceOf[Task]
+  }
+}
+

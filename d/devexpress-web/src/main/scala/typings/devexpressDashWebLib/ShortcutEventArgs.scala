@@ -26,3 +26,14 @@ trait ShortcutEventArgs extends ASPxClientEventArgs {
   var htmlEvent: js.Object
 }
 
+object ShortcutEventArgs {
+  @scala.inline
+  def apply(commandName: java.lang.String, handled: scala.Boolean, htmlEvent: js.Object): ShortcutEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commandName")(commandName)
+    __obj.updateDynamic("handled")(handled)
+    __obj.updateDynamic("htmlEvent")(htmlEvent)
+    __obj.asInstanceOf[ShortcutEventArgs]
+  }
+}
+

@@ -14,3 +14,24 @@ trait IVaultConnections extends js.Object {
   def Remove(Index: scala.Double): scala.Unit
 }
 
+object IVaultConnections {
+  @scala.inline
+  def apply(
+    Add: js.Function2[scala.Double, IVaultConnection, scala.Unit],
+    Count: scala.Double,
+    GetVaultConnectionByName: js.Function1[java.lang.String, IVaultConnection],
+    GetVaultConnectionIndexByName: js.Function1[java.lang.String, scala.Double],
+    Item: js.Function1[scala.Double, IVaultConnection],
+    Remove: js.Function1[scala.Double, scala.Unit]
+  ): IVaultConnections = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Add")(Add)
+    __obj.updateDynamic("Count")(Count)
+    __obj.updateDynamic("GetVaultConnectionByName")(GetVaultConnectionByName)
+    __obj.updateDynamic("GetVaultConnectionIndexByName")(GetVaultConnectionIndexByName)
+    __obj.updateDynamic("Item")(Item)
+    __obj.updateDynamic("Remove")(Remove)
+    __obj.asInstanceOf[IVaultConnections]
+  }
+}
+

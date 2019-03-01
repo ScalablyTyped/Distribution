@@ -12,3 +12,20 @@ trait MetadataItem extends js.Object {
   var optional: scala.Boolean
 }
 
+object MetadataItem {
+  @scala.inline
+  def apply(
+    description: java.lang.String,
+    displayName: java.lang.String,
+    id: java.lang.String,
+    optional: scala.Boolean
+  ): MetadataItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("optional")(optional)
+    __obj.asInstanceOf[MetadataItem]
+  }
+}
+

@@ -12,3 +12,20 @@ trait SetKeepScreenOnParams extends js.Object {
   var success: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
 }
 
+object SetKeepScreenOnParams {
+  @scala.inline
+  def apply(
+    keepScreenOn: scala.Boolean,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    success: js.Function0[scala.Unit] = null
+  ): SetKeepScreenOnParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keepScreenOn")(keepScreenOn)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[SetKeepScreenOnParams]
+  }
+}
+

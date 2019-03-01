@@ -31,3 +31,18 @@ trait Anon_Cx extends js.Object {
   var r: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Cx {
+  @scala.inline
+  def apply(
+    cx: scala.Int | scala.Double = null,
+    cy: scala.Int | scala.Double = null,
+    r: scala.Int | scala.Double = null
+  ): Anon_Cx = {
+    val __obj = js.Dynamic.literal()
+    if (cx != null) __obj.updateDynamic("cx")(cx.asInstanceOf[js.Any])
+    if (cy != null) __obj.updateDynamic("cy")(cy.asInstanceOf[js.Any])
+    if (r != null) __obj.updateDynamic("r")(r.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Cx]
+  }
+}
+

@@ -9,3 +9,12 @@ trait IEvent extends js.Object {
   var `type`: java.lang.String
 }
 
+object IEvent {
+  @scala.inline
+  def apply(`type`: java.lang.String): IEvent = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[IEvent]
+  }
+}
+

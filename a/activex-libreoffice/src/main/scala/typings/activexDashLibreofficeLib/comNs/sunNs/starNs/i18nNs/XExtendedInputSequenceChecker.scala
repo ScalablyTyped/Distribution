@@ -27,3 +27,22 @@ trait XExtendedInputSequenceChecker extends XInputSequenceChecker {
   ): scala.Double
 }
 
+object XExtendedInputSequenceChecker {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    checkInputSequence: js.Function4[java.lang.String, scala.Double, java.lang.String, scala.Double, scala.Boolean],
+    correctInputSequence: js.Function4[js.Array[java.lang.String], scala.Double, java.lang.String, scala.Double, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XExtendedInputSequenceChecker = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("checkInputSequence")(checkInputSequence)
+    __obj.updateDynamic("correctInputSequence")(correctInputSequence)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XExtendedInputSequenceChecker]
+  }
+}
+

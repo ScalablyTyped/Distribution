@@ -11,3 +11,15 @@ trait ListEditItemFilteringEventArgs extends EventArgs {
   val item: BootstrapListBoxItem
 }
 
+object ListEditItemFilteringEventArgs {
+  @scala.inline
+  def apply(filter: java.lang.String, isFit: scala.Boolean, item: BootstrapListBoxItem, sender: Control): ListEditItemFilteringEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("isFit")(isFit)
+    __obj.updateDynamic("item")(item)
+    __obj.updateDynamic("sender")(sender)
+    __obj.asInstanceOf[ListEditItemFilteringEventArgs]
+  }
+}
+

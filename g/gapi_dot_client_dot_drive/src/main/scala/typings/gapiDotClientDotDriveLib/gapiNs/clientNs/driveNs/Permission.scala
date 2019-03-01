@@ -53,3 +53,36 @@ trait Permission extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Permission {
+  @scala.inline
+  def apply(
+    allowFileDiscovery: js.UndefOr[scala.Boolean] = js.undefined,
+    deleted: js.UndefOr[scala.Boolean] = js.undefined,
+    displayName: java.lang.String = null,
+    domain: java.lang.String = null,
+    emailAddress: java.lang.String = null,
+    expirationTime: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    photoLink: java.lang.String = null,
+    role: java.lang.String = null,
+    teamDrivePermissionDetails: js.Array[gapiDotClientDotDriveLib.Anon_Inherited] = null,
+    `type`: java.lang.String = null
+  ): Permission = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowFileDiscovery)) __obj.updateDynamic("allowFileDiscovery")(allowFileDiscovery)
+    if (!js.isUndefined(deleted)) __obj.updateDynamic("deleted")(deleted)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (domain != null) __obj.updateDynamic("domain")(domain)
+    if (emailAddress != null) __obj.updateDynamic("emailAddress")(emailAddress)
+    if (expirationTime != null) __obj.updateDynamic("expirationTime")(expirationTime)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (photoLink != null) __obj.updateDynamic("photoLink")(photoLink)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (teamDrivePermissionDetails != null) __obj.updateDynamic("teamDrivePermissionDetails")(teamDrivePermissionDetails)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[Permission]
+  }
+}
+

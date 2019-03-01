@@ -21,3 +21,26 @@ trait ScriptEvent extends AllEventObject {
   var ScriptType: java.lang.String
 }
 
+object ScriptEvent {
+  @scala.inline
+  def apply(
+    Arguments: activexDashInteropLib.SafeArray[_],
+    Helper: js.Any,
+    ListenerType: activexDashLibreofficeLib.`type`,
+    MethodName: java.lang.String,
+    ScriptCode: java.lang.String,
+    ScriptType: java.lang.String,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface
+  ): ScriptEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Arguments")(Arguments)
+    __obj.updateDynamic("Helper")(Helper)
+    __obj.updateDynamic("ListenerType")(ListenerType)
+    __obj.updateDynamic("MethodName")(MethodName)
+    __obj.updateDynamic("ScriptCode")(ScriptCode)
+    __obj.updateDynamic("ScriptType")(ScriptType)
+    __obj.updateDynamic("Source")(Source)
+    __obj.asInstanceOf[ScriptEvent]
+  }
+}
+

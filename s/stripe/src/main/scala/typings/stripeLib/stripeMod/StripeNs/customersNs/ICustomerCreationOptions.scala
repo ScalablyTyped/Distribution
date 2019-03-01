@@ -61,3 +61,38 @@ trait ICustomerCreationOptions
   var trial_end: js.UndefOr[scala.Double | stripeLib.stripeLibStrings.now] = js.undefined
 }
 
+object ICustomerCreationOptions {
+  @scala.inline
+  def apply(
+    account_balance: scala.Int | scala.Double = null,
+    coupon: java.lang.String = null,
+    description: java.lang.String = null,
+    email: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    plan: java.lang.String = null,
+    quantity: scala.Int | scala.Double = null,
+    shipping: stripeLib.stripeMod.StripeNs.IShippingInformation = null,
+    source: stripeLib.stripeMod.StripeNs.sourcesNs.ISourceCreationOptionsExtended = null,
+    tax_percent: scala.Int | scala.Double = null,
+    trial_end: scala.Double | stripeLib.stripeLibStrings.now = null
+  ): ICustomerCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (account_balance != null) __obj.updateDynamic("account_balance")(account_balance.asInstanceOf[js.Any])
+    if (coupon != null) __obj.updateDynamic("coupon")(coupon)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (plan != null) __obj.updateDynamic("plan")(plan)
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (tax_percent != null) __obj.updateDynamic("tax_percent")(tax_percent.asInstanceOf[js.Any])
+    if (trial_end != null) __obj.updateDynamic("trial_end")(trial_end.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ICustomerCreationOptions]
+  }
+}
+

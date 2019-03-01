@@ -52,3 +52,42 @@ trait XCellRangeMovement
   ): scala.Unit
 }
 
+object XCellRangeMovement {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    copyRange: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      scala.Unit
+    ],
+    insertCells: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      CellInsertMode, 
+      scala.Unit
+    ],
+    moveRange: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellAddress, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeRange: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.tableNs.CellRangeAddress, 
+      CellDeleteMode, 
+      scala.Unit
+    ]
+  ): XCellRangeMovement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("copyRange")(copyRange)
+    __obj.updateDynamic("insertCells")(insertCells)
+    __obj.updateDynamic("moveRange")(moveRange)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeRange")(removeRange)
+    __obj.asInstanceOf[XCellRangeMovement]
+  }
+}
+

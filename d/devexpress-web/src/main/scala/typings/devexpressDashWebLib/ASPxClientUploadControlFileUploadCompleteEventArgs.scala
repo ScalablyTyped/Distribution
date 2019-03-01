@@ -31,3 +31,20 @@ trait ASPxClientUploadControlFileUploadCompleteEventArgs extends ASPxClientEvent
   var isValid: scala.Boolean
 }
 
+object ASPxClientUploadControlFileUploadCompleteEventArgs {
+  @scala.inline
+  def apply(
+    callbackData: java.lang.String,
+    errorText: java.lang.String,
+    inputIndex: scala.Double,
+    isValid: scala.Boolean
+  ): ASPxClientUploadControlFileUploadCompleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("callbackData")(callbackData)
+    __obj.updateDynamic("errorText")(errorText)
+    __obj.updateDynamic("inputIndex")(inputIndex)
+    __obj.updateDynamic("isValid")(isValid)
+    __obj.asInstanceOf[ASPxClientUploadControlFileUploadCompleteEventArgs]
+  }
+}
+

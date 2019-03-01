@@ -33,3 +33,38 @@ trait SpecificDateTimeFormatOptions
   var year_SpecificDateTimeFormatOptions: js.UndefOr[DateTimeDigital] = js.undefined
 }
 
+object SpecificDateTimeFormatOptions {
+  @scala.inline
+  def apply(
+    day: DateTimeDigital = null,
+    era: DateTimeHumanReadable = null,
+    formatMatcher: FormatMatcher = null,
+    hour: DateTimeDigital = null,
+    hour12: js.UndefOr[scala.Boolean] = js.undefined,
+    localeMatcher: LocaleMatcher = null,
+    minute: DateTimeDigital = null,
+    month: DateTimeDigital | DateTimeHumanReadable = null,
+    second: DateTimeDigital = null,
+    timeZone: java.lang.String = null,
+    timeZoneName: vueDashI18nLib.vueDashI18nLibStrings.long | vueDashI18nLib.vueDashI18nLibStrings.short = null,
+    weekday: DateTimeHumanReadable = null,
+    year: DateTimeDigital = null
+  ): SpecificDateTimeFormatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (day != null) __obj.updateDynamic("day")(day)
+    if (era != null) __obj.updateDynamic("era")(era)
+    if (formatMatcher != null) __obj.updateDynamic("formatMatcher")(formatMatcher)
+    if (hour != null) __obj.updateDynamic("hour")(hour)
+    if (!js.isUndefined(hour12)) __obj.updateDynamic("hour12")(hour12)
+    if (localeMatcher != null) __obj.updateDynamic("localeMatcher")(localeMatcher)
+    if (minute != null) __obj.updateDynamic("minute")(minute)
+    if (month != null) __obj.updateDynamic("month")(month.asInstanceOf[js.Any])
+    if (second != null) __obj.updateDynamic("second")(second)
+    if (timeZone != null) __obj.updateDynamic("timeZone")(timeZone)
+    if (timeZoneName != null) __obj.updateDynamic("timeZoneName")(timeZoneName.asInstanceOf[js.Any])
+    if (weekday != null) __obj.updateDynamic("weekday")(weekday)
+    if (year != null) __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[SpecificDateTimeFormatOptions]
+  }
+}
+

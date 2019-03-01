@@ -47,3 +47,25 @@ trait Anon_Accountholdername extends js.Object {
   var routing_number: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Accountholdername {
+  @scala.inline
+  def apply(
+    account_number: java.lang.String,
+    country: java.lang.String,
+    currency: java.lang.String,
+    `object`: java.lang.String,
+    account_holder_name: java.lang.String = null,
+    account_holder_type: stripeLib.stripeLibStrings.individual | stripeLib.stripeLibStrings.company = null,
+    routing_number: java.lang.String = null
+  ): Anon_Accountholdername = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("account_number")(account_number)
+    __obj.updateDynamic("country")(country)
+    __obj.updateDynamic("currency")(currency)
+    if (account_holder_name != null) __obj.updateDynamic("account_holder_name")(account_holder_name)
+    if (account_holder_type != null) __obj.updateDynamic("account_holder_type")(account_holder_type.asInstanceOf[js.Any])
+    if (routing_number != null) __obj.updateDynamic("routing_number")(routing_number)
+    __obj.asInstanceOf[Anon_Accountholdername]
+  }
+}
+

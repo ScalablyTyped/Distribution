@@ -32,3 +32,15 @@ trait KeyStroke extends js.Object {
   var Modifiers: scala.Double
 }
 
+object KeyStroke {
+  @scala.inline
+  def apply(KeyChar: java.lang.String, KeyCode: scala.Double, KeyFunc: scala.Double, Modifiers: scala.Double): KeyStroke = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("KeyChar")(KeyChar)
+    __obj.updateDynamic("KeyCode")(KeyCode)
+    __obj.updateDynamic("KeyFunc")(KeyFunc)
+    __obj.updateDynamic("Modifiers")(Modifiers)
+    __obj.asInstanceOf[KeyStroke]
+  }
+}
+

@@ -12,3 +12,13 @@ trait Anon_Amount extends js.Object {
   var currencyCode: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Amount {
+  @scala.inline
+  def apply(amount: scala.Int | scala.Double = null, currencyCode: java.lang.String = null): Anon_Amount = {
+    val __obj = js.Dynamic.literal()
+    if (amount != null) __obj.updateDynamic("amount")(amount.asInstanceOf[js.Any])
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    __obj.asInstanceOf[Anon_Amount]
+  }
+}
+

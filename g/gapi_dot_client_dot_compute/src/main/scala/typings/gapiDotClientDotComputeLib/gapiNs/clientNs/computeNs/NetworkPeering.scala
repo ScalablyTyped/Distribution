@@ -28,3 +28,22 @@ trait NetworkPeering extends js.Object {
   var stateDetails: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NetworkPeering {
+  @scala.inline
+  def apply(
+    autoCreateRoutes: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    network: java.lang.String = null,
+    state: java.lang.String = null,
+    stateDetails: java.lang.String = null
+  ): NetworkPeering = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoCreateRoutes)) __obj.updateDynamic("autoCreateRoutes")(autoCreateRoutes)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (stateDetails != null) __obj.updateDynamic("stateDetails")(stateDetails)
+    __obj.asInstanceOf[NetworkPeering]
+  }
+}
+

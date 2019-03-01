@@ -86,3 +86,132 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var views: js.UndefOr[Views] = js.undefined
 }
 
+object BigCalendarProps {
+  @scala.inline
+  def apply[TEvent /* <: Event */, TResource /* <: js.Object */](
+    localizer: DateLocalizer,
+    allDayAccessor: java.lang.String = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    components: Components = null,
+    culture: java.lang.String = null,
+    date: stringOrDate = null,
+    dayPropGetter: DayPropGetter = null,
+    defaultDate: stdLib.Date = null,
+    defaultView: View = null,
+    drilldownView: View = null,
+    elementProps: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLElement] = null,
+    endAccessor: java.lang.String = null,
+    eventPropGetter: EventPropGetter[TEvent] = null,
+    events: js.Array[TEvent] = null,
+    formats: Formats = null,
+    getDrilldownView: js.Function3[
+      /* targetDate */ stdLib.Date, 
+      /* currentViewName */ View, 
+      /* configuredViewNames */ js.Array[View], 
+      scala.Unit
+    ] = null,
+    getNow: js.Function0[stdLib.Date] = null,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    length: scala.Int | scala.Double = null,
+    longPressThreshold: scala.Int | scala.Double = null,
+    max: stringOrDate = null,
+    messages: Messages = null,
+    min: stringOrDate = null,
+    onDoubleClickEvent: js.Function2[
+      /* event */ TEvent, 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      scala.Unit
+    ] = null,
+    onDrillDown: js.Function2[/* date */ stdLib.Date, /* view */ View, scala.Unit] = null,
+    onNavigate: js.Function3[/* newDate */ stdLib.Date, /* view */ View, /* action */ Navigate, scala.Unit] = null,
+    onRangeChange: js.Function1[/* range */ reactDashBigDashCalendarLib.Anon_EndStart, scala.Unit] = null,
+    onSelectEvent: js.Function2[
+      /* event */ TEvent, 
+      /* e */ reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event], 
+      scala.Unit
+    ] = null,
+    onSelectSlot: js.Function1[/* slotInfo */ reactDashBigDashCalendarLib.Anon_Action, scala.Unit] = null,
+    onSelecting: js.Function1[
+      /* range */ reactDashBigDashCalendarLib.Anon_EndStart, 
+      js.UndefOr[scala.Boolean | scala.Null]
+    ] = null,
+    onView: js.Function1[/* view */ View, scala.Unit] = null,
+    popup: js.UndefOr[scala.Boolean] = js.undefined,
+    popupOffset: scala.Double | reactDashBigDashCalendarLib.Anon_X = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[BigCalendar[TEvent, TResource]] = null,
+    resourceAccessor: java.lang.String = null,
+    resourceIdAccessor: java.lang.String = null,
+    resourceTitleAccessor: java.lang.String = null,
+    resources: js.Array[TResource] = null,
+    rtl: js.UndefOr[scala.Boolean] = js.undefined,
+    scrollToTime: stdLib.Date = null,
+    selectable: scala.Boolean | reactDashBigDashCalendarLib.reactDashBigDashCalendarLibStrings.ignoreEvents = null,
+    selected: js.Any = null,
+    showMultiDayTimes: js.UndefOr[scala.Boolean] = js.undefined,
+    slotPropGetter: SlotPropGetter = null,
+    startAccessor: java.lang.String = null,
+    step: scala.Int | scala.Double = null,
+    timeslots: scala.Int | scala.Double = null,
+    titleAccessor: java.lang.String = null,
+    toolbar: js.UndefOr[scala.Boolean] = js.undefined,
+    view: View = null,
+    views: Views = null
+  ): BigCalendarProps[TEvent, TResource] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("localizer")(localizer)
+    if (allDayAccessor != null) __obj.updateDynamic("allDayAccessor")(allDayAccessor)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (components != null) __obj.updateDynamic("components")(components)
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (dayPropGetter != null) __obj.updateDynamic("dayPropGetter")(dayPropGetter)
+    if (defaultDate != null) __obj.updateDynamic("defaultDate")(defaultDate)
+    if (defaultView != null) __obj.updateDynamic("defaultView")(defaultView)
+    if (drilldownView != null) __obj.updateDynamic("drilldownView")(drilldownView)
+    if (elementProps != null) __obj.updateDynamic("elementProps")(elementProps)
+    if (endAccessor != null) __obj.updateDynamic("endAccessor")(endAccessor)
+    if (eventPropGetter != null) __obj.updateDynamic("eventPropGetter")(eventPropGetter)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (formats != null) __obj.updateDynamic("formats")(formats)
+    if (getDrilldownView != null) __obj.updateDynamic("getDrilldownView")(getDrilldownView)
+    if (getNow != null) __obj.updateDynamic("getNow")(getNow)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (length != null) __obj.updateDynamic("length")(length.asInstanceOf[js.Any])
+    if (longPressThreshold != null) __obj.updateDynamic("longPressThreshold")(longPressThreshold.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (onDoubleClickEvent != null) __obj.updateDynamic("onDoubleClickEvent")(onDoubleClickEvent)
+    if (onDrillDown != null) __obj.updateDynamic("onDrillDown")(onDrillDown)
+    if (onNavigate != null) __obj.updateDynamic("onNavigate")(onNavigate)
+    if (onRangeChange != null) __obj.updateDynamic("onRangeChange")(onRangeChange)
+    if (onSelectEvent != null) __obj.updateDynamic("onSelectEvent")(onSelectEvent)
+    if (onSelectSlot != null) __obj.updateDynamic("onSelectSlot")(onSelectSlot)
+    if (onSelecting != null) __obj.updateDynamic("onSelecting")(onSelecting)
+    if (onView != null) __obj.updateDynamic("onView")(onView)
+    if (!js.isUndefined(popup)) __obj.updateDynamic("popup")(popup)
+    if (popupOffset != null) __obj.updateDynamic("popupOffset")(popupOffset.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (resourceAccessor != null) __obj.updateDynamic("resourceAccessor")(resourceAccessor)
+    if (resourceIdAccessor != null) __obj.updateDynamic("resourceIdAccessor")(resourceIdAccessor)
+    if (resourceTitleAccessor != null) __obj.updateDynamic("resourceTitleAccessor")(resourceTitleAccessor)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (!js.isUndefined(rtl)) __obj.updateDynamic("rtl")(rtl)
+    if (scrollToTime != null) __obj.updateDynamic("scrollToTime")(scrollToTime)
+    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    if (selected != null) __obj.updateDynamic("selected")(selected)
+    if (!js.isUndefined(showMultiDayTimes)) __obj.updateDynamic("showMultiDayTimes")(showMultiDayTimes)
+    if (slotPropGetter != null) __obj.updateDynamic("slotPropGetter")(slotPropGetter)
+    if (startAccessor != null) __obj.updateDynamic("startAccessor")(startAccessor)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (timeslots != null) __obj.updateDynamic("timeslots")(timeslots.asInstanceOf[js.Any])
+    if (titleAccessor != null) __obj.updateDynamic("titleAccessor")(titleAccessor)
+    if (!js.isUndefined(toolbar)) __obj.updateDynamic("toolbar")(toolbar)
+    if (view != null) __obj.updateDynamic("view")(view)
+    if (views != null) __obj.updateDynamic("views")(views.asInstanceOf[js.Any])
+    __obj.asInstanceOf[BigCalendarProps[TEvent, TResource]]
+  }
+}
+

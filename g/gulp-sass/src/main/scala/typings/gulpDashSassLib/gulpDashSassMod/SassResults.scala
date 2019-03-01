@@ -11,3 +11,14 @@ trait SassResults extends js.Object {
   var stats: gulpDashSassLib.Anon_Duration
 }
 
+object SassResults {
+  @scala.inline
+  def apply(css: java.lang.String, map: java.lang.String, stats: gulpDashSassLib.Anon_Duration): SassResults = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("css")(css)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("stats")(stats)
+    __obj.asInstanceOf[SassResults]
+  }
+}
+

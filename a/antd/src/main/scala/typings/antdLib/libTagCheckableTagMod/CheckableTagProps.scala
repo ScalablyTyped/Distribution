@@ -12,3 +12,20 @@ trait CheckableTagProps extends js.Object {
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CheckableTagProps {
+  @scala.inline
+  def apply(
+    checked: scala.Boolean,
+    className: java.lang.String = null,
+    onChange: js.Function1[/* checked */ scala.Boolean, scala.Unit] = null,
+    prefixCls: java.lang.String = null
+  ): CheckableTagProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checked")(checked)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    __obj.asInstanceOf[CheckableTagProps]
+  }
+}
+

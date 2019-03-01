@@ -9,3 +9,12 @@ trait Anon_RETURNDOM extends js.Object {
   var RETURN_DOM: dompurifyLib.dompurifyLibNumbers.`true`
 }
 
+object Anon_RETURNDOM {
+  @scala.inline
+  def apply(RETURN_DOM: dompurifyLib.dompurifyLibNumbers.`true`): Anon_RETURNDOM = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RETURN_DOM")(RETURN_DOM)
+    __obj.asInstanceOf[Anon_RETURNDOM]
+  }
+}
+

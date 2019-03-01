@@ -60,3 +60,25 @@ trait RemoteMethodArgument extends js.Object {
   var `type`: loopbackLib.loopbackLibStrings.any | loopbackLib.loopbackLibStrings.Array | loopbackLib.loopbackLibStrings.Boolean | loopbackLib.loopbackLibStrings.Buffer | loopbackLib.loopbackLibStrings.Date | loopbackLib.loopbackLibStrings.GeoPoint | loopbackLib.loopbackLibStrings.`null` | loopbackLib.loopbackLibStrings.Number | loopbackLib.loopbackLibStrings.Object | loopbackLib.loopbackLibStrings.String
 }
 
+object RemoteMethodArgument {
+  @scala.inline
+  def apply(
+    arg: java.lang.String,
+    `type`: loopbackLib.loopbackLibStrings.any | loopbackLib.loopbackLibStrings.Array | loopbackLib.loopbackLibStrings.Boolean | loopbackLib.loopbackLibStrings.Buffer | loopbackLib.loopbackLibStrings.Date | loopbackLib.loopbackLibStrings.GeoPoint | loopbackLib.loopbackLibStrings.`null` | loopbackLib.loopbackLibStrings.Number | loopbackLib.loopbackLibStrings.Object | loopbackLib.loopbackLibStrings.String,
+    default: java.lang.String = null,
+    description: java.lang.String | js.Array[java.lang.String] = null,
+    http: RemoteHttpOptions = null,
+    required: js.UndefOr[scala.Boolean] = js.undefined,
+    root: js.UndefOr[scala.Boolean] = js.undefined
+  ): RemoteMethodArgument = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("arg")(arg)
+    if (default != null) __obj.updateDynamic("default")(default)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (http != null) __obj.updateDynamic("http")(http)
+    if (!js.isUndefined(required)) __obj.updateDynamic("required")(required)
+    if (!js.isUndefined(root)) __obj.updateDynamic("root")(root)
+    __obj.asInstanceOf[RemoteMethodArgument]
+  }
+}
+

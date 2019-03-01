@@ -37,3 +37,26 @@ import scala.scalajs.js.annotation._
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IButtonGroupProps {
+  @scala.inline
+  def apply(
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    IProps: atBlueprintjsCoreLib.libEsmCommonPropsMod.IProps = null,
+    alignText: atBlueprintjsCoreLib.libEsmCommonAlignmentMod.Alignment = null,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    large: js.UndefOr[scala.Boolean] = js.undefined,
+    minimal: js.UndefOr[scala.Boolean] = js.undefined,
+    vertical: js.UndefOr[scala.Boolean] = js.undefined
+  ): IButtonGroupProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    js.Dynamic.global.Object.assign(__obj, IProps)
+    if (alignText != null) __obj.updateDynamic("alignText")(alignText)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (!js.isUndefined(large)) __obj.updateDynamic("large")(large)
+    if (!js.isUndefined(minimal)) __obj.updateDynamic("minimal")(minimal)
+    if (!js.isUndefined(vertical)) __obj.updateDynamic("vertical")(vertical)
+    __obj.asInstanceOf[IButtonGroupProps]
+  }
+}
+

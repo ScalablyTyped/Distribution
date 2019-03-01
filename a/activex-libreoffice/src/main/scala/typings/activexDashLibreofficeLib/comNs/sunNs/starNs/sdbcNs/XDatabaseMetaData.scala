@@ -1471,3 +1471,332 @@ trait XDatabaseMetaData
   def usesLocalFiles(): scala.Boolean
 }
 
+object XDatabaseMetaData {
+  @scala.inline
+  def apply(
+    CatalogSeparator: java.lang.String,
+    CatalogTerm: java.lang.String,
+    Catalogs: XResultSet,
+    Connection: XConnection,
+    DatabaseProductName: java.lang.String,
+    DatabaseProductVersion: java.lang.String,
+    DefaultTransactionIsolation: scala.Double,
+    DriverMajorVersion: scala.Double,
+    DriverMinorVersion: scala.Double,
+    DriverName: java.lang.String,
+    DriverVersion: java.lang.String,
+    ExtraNameCharacters: java.lang.String,
+    IdentifierQuoteString: java.lang.String,
+    MaxBinaryLiteralLength: scala.Double,
+    MaxCatalogNameLength: scala.Double,
+    MaxCharLiteralLength: scala.Double,
+    MaxColumnNameLength: scala.Double,
+    MaxColumnsInGroupBy: scala.Double,
+    MaxColumnsInIndex: scala.Double,
+    MaxColumnsInOrderBy: scala.Double,
+    MaxColumnsInSelect: scala.Double,
+    MaxColumnsInTable: scala.Double,
+    MaxConnections: scala.Double,
+    MaxCursorNameLength: scala.Double,
+    MaxIndexLength: scala.Double,
+    MaxProcedureNameLength: scala.Double,
+    MaxRowSize: scala.Double,
+    MaxSchemaNameLength: scala.Double,
+    MaxStatementLength: scala.Double,
+    MaxStatements: scala.Double,
+    MaxTableNameLength: scala.Double,
+    MaxTablesInSelect: scala.Double,
+    MaxUserNameLength: scala.Double,
+    NumericFunctions: java.lang.String,
+    ProcedureTerm: java.lang.String,
+    SQLKeywords: java.lang.String,
+    SchemaTerm: java.lang.String,
+    Schemas: XResultSet,
+    SearchStringEscape: java.lang.String,
+    StringFunctions: java.lang.String,
+    SystemFunctions: java.lang.String,
+    TableTypes: XResultSet,
+    TimeDateFunctions: java.lang.String,
+    TypeInfo: XResultSet,
+    URL: java.lang.String,
+    UserName: java.lang.String,
+    XInterface: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface = null,
+    allProceduresAreCallable: js.Function0[scala.Boolean],
+    allTablesAreSelectable: js.Function0[scala.Boolean],
+    dataDefinitionCausesTransactionCommit: js.Function0[scala.Boolean],
+    dataDefinitionIgnoredInTransactions: js.Function0[scala.Boolean],
+    deletesAreDetected: js.Function1[scala.Double, scala.Boolean],
+    doesMaxRowSizeIncludeBlobs: js.Function0[scala.Boolean],
+    getBestRowIdentifier: js.Function5[js.Any, java.lang.String, java.lang.String, scala.Double, scala.Boolean, XResultSet],
+    getCatalogSeparator: js.Function0[java.lang.String],
+    getCatalogTerm: js.Function0[java.lang.String],
+    getCatalogs: js.Function0[XResultSet],
+    getColumnPrivileges: js.Function4[js.Any, java.lang.String, java.lang.String, java.lang.String, XResultSet],
+    getColumns: js.Function4[js.Any, java.lang.String, java.lang.String, java.lang.String, XResultSet],
+    getConnection: js.Function0[XConnection],
+    getCrossReference: js.Function6[
+      js.Any, 
+      java.lang.String, 
+      java.lang.String, 
+      js.Any, 
+      java.lang.String, 
+      java.lang.String, 
+      XResultSet
+    ],
+    getDatabaseProductName: js.Function0[java.lang.String],
+    getDatabaseProductVersion: js.Function0[java.lang.String],
+    getDefaultTransactionIsolation: js.Function0[scala.Double],
+    getDriverMajorVersion: js.Function0[scala.Double],
+    getDriverMinorVersion: js.Function0[scala.Double],
+    getDriverName: js.Function0[java.lang.String],
+    getDriverVersion: js.Function0[java.lang.String],
+    getExportedKeys: js.Function3[js.Any, java.lang.String, java.lang.String, XResultSet],
+    getExtraNameCharacters: js.Function0[java.lang.String],
+    getIdentifierQuoteString: js.Function0[java.lang.String],
+    getImportedKeys: js.Function3[js.Any, java.lang.String, java.lang.String, XResultSet],
+    getIndexInfo: js.Function5[js.Any, java.lang.String, java.lang.String, scala.Boolean, scala.Boolean, XResultSet],
+    getMaxBinaryLiteralLength: js.Function0[scala.Double],
+    getMaxCatalogNameLength: js.Function0[scala.Double],
+    getMaxCharLiteralLength: js.Function0[scala.Double],
+    getMaxColumnNameLength: js.Function0[scala.Double],
+    getMaxColumnsInGroupBy: js.Function0[scala.Double],
+    getMaxColumnsInIndex: js.Function0[scala.Double],
+    getMaxColumnsInOrderBy: js.Function0[scala.Double],
+    getMaxColumnsInSelect: js.Function0[scala.Double],
+    getMaxColumnsInTable: js.Function0[scala.Double],
+    getMaxConnections: js.Function0[scala.Double],
+    getMaxCursorNameLength: js.Function0[scala.Double],
+    getMaxIndexLength: js.Function0[scala.Double],
+    getMaxProcedureNameLength: js.Function0[scala.Double],
+    getMaxRowSize: js.Function0[scala.Double],
+    getMaxSchemaNameLength: js.Function0[scala.Double],
+    getMaxStatementLength: js.Function0[scala.Double],
+    getMaxStatements: js.Function0[scala.Double],
+    getMaxTableNameLength: js.Function0[scala.Double],
+    getMaxTablesInSelect: js.Function0[scala.Double],
+    getMaxUserNameLength: js.Function0[scala.Double],
+    getNumericFunctions: js.Function0[java.lang.String],
+    getPrimaryKeys: js.Function3[js.Any, java.lang.String, java.lang.String, XResultSet],
+    getProcedureColumns: js.Function4[js.Any, java.lang.String, java.lang.String, java.lang.String, XResultSet],
+    getProcedureTerm: js.Function0[java.lang.String],
+    getProcedures: js.Function3[js.Any, java.lang.String, java.lang.String, XResultSet],
+    getSQLKeywords: js.Function0[java.lang.String],
+    getSchemaTerm: js.Function0[java.lang.String],
+    getSchemas: js.Function0[XResultSet],
+    getSearchStringEscape: js.Function0[java.lang.String],
+    getStringFunctions: js.Function0[java.lang.String],
+    getSystemFunctions: js.Function0[java.lang.String],
+    getTablePrivileges: js.Function3[js.Any, java.lang.String, java.lang.String, XResultSet],
+    getTableTypes: js.Function0[XResultSet],
+    getTables: js.Function4[
+      js.Any, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      XResultSet
+    ],
+    getTimeDateFunctions: js.Function0[java.lang.String],
+    getTypeInfo: js.Function0[XResultSet],
+    getUDTs: js.Function4[
+      js.Any, 
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      XResultSet
+    ],
+    getURL: js.Function0[java.lang.String],
+    getUserName: js.Function0[java.lang.String],
+    getVersionColumns: js.Function3[js.Any, java.lang.String, java.lang.String, XResultSet],
+    insertsAreDetected: js.Function1[scala.Double, scala.Boolean],
+    isCatalogAtStart: js.Function0[scala.Boolean],
+    isReadOnly: js.Function0[scala.Boolean],
+    nullPlusNonNullIsNull: js.Function0[scala.Boolean],
+    nullsAreSortedAtEnd: js.Function0[scala.Boolean],
+    nullsAreSortedAtStart: js.Function0[scala.Boolean],
+    nullsAreSortedHigh: js.Function0[scala.Boolean],
+    nullsAreSortedLow: js.Function0[scala.Boolean],
+    othersDeletesAreVisible: js.Function1[scala.Double, scala.Boolean],
+    othersInsertsAreVisible: js.Function1[scala.Double, scala.Boolean],
+    othersUpdatesAreVisible: js.Function1[scala.Double, scala.Boolean],
+    ownDeletesAreVisible: js.Function1[scala.Double, scala.Boolean],
+    ownInsertsAreVisible: js.Function1[scala.Double, scala.Boolean],
+    ownUpdatesAreVisible: js.Function1[scala.Double, scala.Boolean],
+    storesLowerCaseIdentifiers: js.Function0[scala.Boolean],
+    storesLowerCaseQuotedIdentifiers: js.Function0[scala.Boolean],
+    storesMixedCaseIdentifiers: js.Function0[scala.Boolean],
+    storesMixedCaseQuotedIdentifiers: js.Function0[scala.Boolean],
+    storesUpperCaseIdentifiers: js.Function0[scala.Boolean],
+    storesUpperCaseQuotedIdentifiers: js.Function0[scala.Boolean],
+    supportsANSI92EntryLevelSQL: js.Function0[scala.Boolean],
+    supportsANSI92FullSQL: js.Function0[scala.Boolean],
+    supportsANSI92IntermediateSQL: js.Function0[scala.Boolean],
+    supportsAlterTableWithAddColumn: js.Function0[scala.Boolean],
+    supportsAlterTableWithDropColumn: js.Function0[scala.Boolean],
+    supportsBatchUpdates: js.Function0[scala.Boolean],
+    supportsCatalogsInDataManipulation: js.Function0[scala.Boolean],
+    supportsCatalogsInIndexDefinitions: js.Function0[scala.Boolean],
+    supportsCatalogsInPrivilegeDefinitions: js.Function0[scala.Boolean],
+    supportsCatalogsInProcedureCalls: js.Function0[scala.Boolean],
+    supportsCatalogsInTableDefinitions: js.Function0[scala.Boolean],
+    supportsColumnAliasing: js.Function0[scala.Boolean],
+    supportsConvert: js.Function2[scala.Double, scala.Double, scala.Boolean],
+    supportsCoreSQLGrammar: js.Function0[scala.Boolean],
+    supportsCorrelatedSubqueries: js.Function0[scala.Boolean],
+    supportsDataDefinitionAndDataManipulationTransactions: js.Function0[scala.Boolean],
+    supportsDataManipulationTransactionsOnly: js.Function0[scala.Boolean]
+  ): XDatabaseMetaData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CatalogSeparator")(CatalogSeparator)
+    __obj.updateDynamic("CatalogTerm")(CatalogTerm)
+    __obj.updateDynamic("Catalogs")(Catalogs)
+    __obj.updateDynamic("Connection")(Connection)
+    __obj.updateDynamic("DatabaseProductName")(DatabaseProductName)
+    __obj.updateDynamic("DatabaseProductVersion")(DatabaseProductVersion)
+    __obj.updateDynamic("DefaultTransactionIsolation")(DefaultTransactionIsolation)
+    __obj.updateDynamic("DriverMajorVersion")(DriverMajorVersion)
+    __obj.updateDynamic("DriverMinorVersion")(DriverMinorVersion)
+    __obj.updateDynamic("DriverName")(DriverName)
+    __obj.updateDynamic("DriverVersion")(DriverVersion)
+    __obj.updateDynamic("ExtraNameCharacters")(ExtraNameCharacters)
+    __obj.updateDynamic("IdentifierQuoteString")(IdentifierQuoteString)
+    __obj.updateDynamic("MaxBinaryLiteralLength")(MaxBinaryLiteralLength)
+    __obj.updateDynamic("MaxCatalogNameLength")(MaxCatalogNameLength)
+    __obj.updateDynamic("MaxCharLiteralLength")(MaxCharLiteralLength)
+    __obj.updateDynamic("MaxColumnNameLength")(MaxColumnNameLength)
+    __obj.updateDynamic("MaxColumnsInGroupBy")(MaxColumnsInGroupBy)
+    __obj.updateDynamic("MaxColumnsInIndex")(MaxColumnsInIndex)
+    __obj.updateDynamic("MaxColumnsInOrderBy")(MaxColumnsInOrderBy)
+    __obj.updateDynamic("MaxColumnsInSelect")(MaxColumnsInSelect)
+    __obj.updateDynamic("MaxColumnsInTable")(MaxColumnsInTable)
+    __obj.updateDynamic("MaxConnections")(MaxConnections)
+    __obj.updateDynamic("MaxCursorNameLength")(MaxCursorNameLength)
+    __obj.updateDynamic("MaxIndexLength")(MaxIndexLength)
+    __obj.updateDynamic("MaxProcedureNameLength")(MaxProcedureNameLength)
+    __obj.updateDynamic("MaxRowSize")(MaxRowSize)
+    __obj.updateDynamic("MaxSchemaNameLength")(MaxSchemaNameLength)
+    __obj.updateDynamic("MaxStatementLength")(MaxStatementLength)
+    __obj.updateDynamic("MaxStatements")(MaxStatements)
+    __obj.updateDynamic("MaxTableNameLength")(MaxTableNameLength)
+    __obj.updateDynamic("MaxTablesInSelect")(MaxTablesInSelect)
+    __obj.updateDynamic("MaxUserNameLength")(MaxUserNameLength)
+    __obj.updateDynamic("NumericFunctions")(NumericFunctions)
+    __obj.updateDynamic("ProcedureTerm")(ProcedureTerm)
+    __obj.updateDynamic("SQLKeywords")(SQLKeywords)
+    __obj.updateDynamic("SchemaTerm")(SchemaTerm)
+    __obj.updateDynamic("Schemas")(Schemas)
+    __obj.updateDynamic("SearchStringEscape")(SearchStringEscape)
+    __obj.updateDynamic("StringFunctions")(StringFunctions)
+    __obj.updateDynamic("SystemFunctions")(SystemFunctions)
+    __obj.updateDynamic("TableTypes")(TableTypes)
+    __obj.updateDynamic("TimeDateFunctions")(TimeDateFunctions)
+    __obj.updateDynamic("TypeInfo")(TypeInfo)
+    __obj.updateDynamic("URL")(URL)
+    __obj.updateDynamic("UserName")(UserName)
+    if (__obj != null) js.Dynamic.global.Object.assign(__obj, XInterface)
+    __obj.updateDynamic("allProceduresAreCallable")(allProceduresAreCallable)
+    __obj.updateDynamic("allTablesAreSelectable")(allTablesAreSelectable)
+    __obj.updateDynamic("dataDefinitionCausesTransactionCommit")(dataDefinitionCausesTransactionCommit)
+    __obj.updateDynamic("dataDefinitionIgnoredInTransactions")(dataDefinitionIgnoredInTransactions)
+    __obj.updateDynamic("deletesAreDetected")(deletesAreDetected)
+    __obj.updateDynamic("doesMaxRowSizeIncludeBlobs")(doesMaxRowSizeIncludeBlobs)
+    __obj.updateDynamic("getBestRowIdentifier")(getBestRowIdentifier)
+    __obj.updateDynamic("getCatalogSeparator")(getCatalogSeparator)
+    __obj.updateDynamic("getCatalogTerm")(getCatalogTerm)
+    __obj.updateDynamic("getCatalogs")(getCatalogs)
+    __obj.updateDynamic("getColumnPrivileges")(getColumnPrivileges)
+    __obj.updateDynamic("getColumns")(getColumns)
+    __obj.updateDynamic("getConnection")(getConnection)
+    __obj.updateDynamic("getCrossReference")(getCrossReference)
+    __obj.updateDynamic("getDatabaseProductName")(getDatabaseProductName)
+    __obj.updateDynamic("getDatabaseProductVersion")(getDatabaseProductVersion)
+    __obj.updateDynamic("getDefaultTransactionIsolation")(getDefaultTransactionIsolation)
+    __obj.updateDynamic("getDriverMajorVersion")(getDriverMajorVersion)
+    __obj.updateDynamic("getDriverMinorVersion")(getDriverMinorVersion)
+    __obj.updateDynamic("getDriverName")(getDriverName)
+    __obj.updateDynamic("getDriverVersion")(getDriverVersion)
+    __obj.updateDynamic("getExportedKeys")(getExportedKeys)
+    __obj.updateDynamic("getExtraNameCharacters")(getExtraNameCharacters)
+    __obj.updateDynamic("getIdentifierQuoteString")(getIdentifierQuoteString)
+    __obj.updateDynamic("getImportedKeys")(getImportedKeys)
+    __obj.updateDynamic("getIndexInfo")(getIndexInfo)
+    __obj.updateDynamic("getMaxBinaryLiteralLength")(getMaxBinaryLiteralLength)
+    __obj.updateDynamic("getMaxCatalogNameLength")(getMaxCatalogNameLength)
+    __obj.updateDynamic("getMaxCharLiteralLength")(getMaxCharLiteralLength)
+    __obj.updateDynamic("getMaxColumnNameLength")(getMaxColumnNameLength)
+    __obj.updateDynamic("getMaxColumnsInGroupBy")(getMaxColumnsInGroupBy)
+    __obj.updateDynamic("getMaxColumnsInIndex")(getMaxColumnsInIndex)
+    __obj.updateDynamic("getMaxColumnsInOrderBy")(getMaxColumnsInOrderBy)
+    __obj.updateDynamic("getMaxColumnsInSelect")(getMaxColumnsInSelect)
+    __obj.updateDynamic("getMaxColumnsInTable")(getMaxColumnsInTable)
+    __obj.updateDynamic("getMaxConnections")(getMaxConnections)
+    __obj.updateDynamic("getMaxCursorNameLength")(getMaxCursorNameLength)
+    __obj.updateDynamic("getMaxIndexLength")(getMaxIndexLength)
+    __obj.updateDynamic("getMaxProcedureNameLength")(getMaxProcedureNameLength)
+    __obj.updateDynamic("getMaxRowSize")(getMaxRowSize)
+    __obj.updateDynamic("getMaxSchemaNameLength")(getMaxSchemaNameLength)
+    __obj.updateDynamic("getMaxStatementLength")(getMaxStatementLength)
+    __obj.updateDynamic("getMaxStatements")(getMaxStatements)
+    __obj.updateDynamic("getMaxTableNameLength")(getMaxTableNameLength)
+    __obj.updateDynamic("getMaxTablesInSelect")(getMaxTablesInSelect)
+    __obj.updateDynamic("getMaxUserNameLength")(getMaxUserNameLength)
+    __obj.updateDynamic("getNumericFunctions")(getNumericFunctions)
+    __obj.updateDynamic("getPrimaryKeys")(getPrimaryKeys)
+    __obj.updateDynamic("getProcedureColumns")(getProcedureColumns)
+    __obj.updateDynamic("getProcedureTerm")(getProcedureTerm)
+    __obj.updateDynamic("getProcedures")(getProcedures)
+    __obj.updateDynamic("getSQLKeywords")(getSQLKeywords)
+    __obj.updateDynamic("getSchemaTerm")(getSchemaTerm)
+    __obj.updateDynamic("getSchemas")(getSchemas)
+    __obj.updateDynamic("getSearchStringEscape")(getSearchStringEscape)
+    __obj.updateDynamic("getStringFunctions")(getStringFunctions)
+    __obj.updateDynamic("getSystemFunctions")(getSystemFunctions)
+    __obj.updateDynamic("getTablePrivileges")(getTablePrivileges)
+    __obj.updateDynamic("getTableTypes")(getTableTypes)
+    __obj.updateDynamic("getTables")(getTables)
+    __obj.updateDynamic("getTimeDateFunctions")(getTimeDateFunctions)
+    __obj.updateDynamic("getTypeInfo")(getTypeInfo)
+    __obj.updateDynamic("getUDTs")(getUDTs)
+    __obj.updateDynamic("getURL")(getURL)
+    __obj.updateDynamic("getUserName")(getUserName)
+    __obj.updateDynamic("getVersionColumns")(getVersionColumns)
+    __obj.updateDynamic("insertsAreDetected")(insertsAreDetected)
+    __obj.updateDynamic("isCatalogAtStart")(isCatalogAtStart)
+    __obj.updateDynamic("isReadOnly")(isReadOnly)
+    __obj.updateDynamic("nullPlusNonNullIsNull")(nullPlusNonNullIsNull)
+    __obj.updateDynamic("nullsAreSortedAtEnd")(nullsAreSortedAtEnd)
+    __obj.updateDynamic("nullsAreSortedAtStart")(nullsAreSortedAtStart)
+    __obj.updateDynamic("nullsAreSortedHigh")(nullsAreSortedHigh)
+    __obj.updateDynamic("nullsAreSortedLow")(nullsAreSortedLow)
+    __obj.updateDynamic("othersDeletesAreVisible")(othersDeletesAreVisible)
+    __obj.updateDynamic("othersInsertsAreVisible")(othersInsertsAreVisible)
+    __obj.updateDynamic("othersUpdatesAreVisible")(othersUpdatesAreVisible)
+    __obj.updateDynamic("ownDeletesAreVisible")(ownDeletesAreVisible)
+    __obj.updateDynamic("ownInsertsAreVisible")(ownInsertsAreVisible)
+    __obj.updateDynamic("ownUpdatesAreVisible")(ownUpdatesAreVisible)
+    __obj.updateDynamic("storesLowerCaseIdentifiers")(storesLowerCaseIdentifiers)
+    __obj.updateDynamic("storesLowerCaseQuotedIdentifiers")(storesLowerCaseQuotedIdentifiers)
+    __obj.updateDynamic("storesMixedCaseIdentifiers")(storesMixedCaseIdentifiers)
+    __obj.updateDynamic("storesMixedCaseQuotedIdentifiers")(storesMixedCaseQuotedIdentifiers)
+    __obj.updateDynamic("storesUpperCaseIdentifiers")(storesUpperCaseIdentifiers)
+    __obj.updateDynamic("storesUpperCaseQuotedIdentifiers")(storesUpperCaseQuotedIdentifiers)
+    __obj.updateDynamic("supportsANSI92EntryLevelSQL")(supportsANSI92EntryLevelSQL)
+    __obj.updateDynamic("supportsANSI92FullSQL")(supportsANSI92FullSQL)
+    __obj.updateDynamic("supportsANSI92IntermediateSQL")(supportsANSI92IntermediateSQL)
+    __obj.updateDynamic("supportsAlterTableWithAddColumn")(supportsAlterTableWithAddColumn)
+    __obj.updateDynamic("supportsAlterTableWithDropColumn")(supportsAlterTableWithDropColumn)
+    __obj.updateDynamic("supportsBatchUpdates")(supportsBatchUpdates)
+    __obj.updateDynamic("supportsCatalogsInDataManipulation")(supportsCatalogsInDataManipulation)
+    __obj.updateDynamic("supportsCatalogsInIndexDefinitions")(supportsCatalogsInIndexDefinitions)
+    __obj.updateDynamic("supportsCatalogsInPrivilegeDefinitions")(supportsCatalogsInPrivilegeDefinitions)
+    __obj.updateDynamic("supportsCatalogsInProcedureCalls")(supportsCatalogsInProcedureCalls)
+    __obj.updateDynamic("supportsCatalogsInTableDefinitions")(supportsCatalogsInTableDefinitions)
+    __obj.updateDynamic("supportsColumnAliasing")(supportsColumnAliasing)
+    __obj.updateDynamic("supportsConvert")(supportsConvert)
+    __obj.updateDynamic("supportsCoreSQLGrammar")(supportsCoreSQLGrammar)
+    __obj.updateDynamic("supportsCorrelatedSubqueries")(supportsCorrelatedSubqueries)
+    __obj.updateDynamic("supportsDataDefinitionAndDataManipulationTransactions")(supportsDataDefinitionAndDataManipulationTransactions)
+    __obj.updateDynamic("supportsDataManipulationTransactionsOnly")(supportsDataManipulationTransactionsOnly)
+    __obj.asInstanceOf[XDatabaseMetaData]
+  }
+}
+

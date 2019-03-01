@@ -82,3 +82,42 @@ trait GaugeArrow extends js.Object {
   def setValue(value: scala.Double): scala.Unit
 }
 
+object GaugeArrow {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    axis: amchartsLib.gaugeaxisMod.default,
+    borderAlpha: scala.Double,
+    clockWiseOnly: scala.Boolean,
+    color: java.lang.String,
+    id: java.lang.String,
+    innerRadius: js.Any,
+    nailAlpha: scala.Double,
+    nailBorderAlpha: scala.Double,
+    nailBorderThickness: scala.Double,
+    nailRadius: scala.Double,
+    radius: js.Any,
+    setValue: js.Function1[scala.Double, scala.Unit],
+    startWidth: scala.Double,
+    value: scala.Double
+  ): GaugeArrow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alpha")(alpha)
+    __obj.updateDynamic("axis")(axis)
+    __obj.updateDynamic("borderAlpha")(borderAlpha)
+    __obj.updateDynamic("clockWiseOnly")(clockWiseOnly)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("innerRadius")(innerRadius)
+    __obj.updateDynamic("nailAlpha")(nailAlpha)
+    __obj.updateDynamic("nailBorderAlpha")(nailBorderAlpha)
+    __obj.updateDynamic("nailBorderThickness")(nailBorderThickness)
+    __obj.updateDynamic("nailRadius")(nailRadius)
+    __obj.updateDynamic("radius")(radius)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.updateDynamic("startWidth")(startWidth)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[GaugeArrow]
+  }
+}
+

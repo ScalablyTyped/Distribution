@@ -13,19 +13,22 @@ object reactDashNativeLibStrings {
   sealed trait `200` extends js.Object
   
   @js.native
-  sealed trait `2g` extends js.Object
+  sealed trait `2g`
+    extends reactDashNativeLib.reactDashNativeMod.EffectiveConnectionType
   
   @js.native
   sealed trait `300` extends js.Object
   
   @js.native
-  sealed trait `3g` extends js.Object
+  sealed trait `3g`
+    extends reactDashNativeLib.reactDashNativeMod.EffectiveConnectionType
   
   @js.native
   sealed trait `400` extends js.Object
   
   @js.native
-  sealed trait `4g` extends js.Object
+  sealed trait `4g`
+    extends reactDashNativeLib.reactDashNativeMod.EffectiveConnectionType
   
   @js.native
   sealed trait `500` extends js.Object
@@ -43,31 +46,39 @@ object reactDashNativeLibStrings {
   sealed trait `900` extends js.Object
   
   @js.native
-  sealed trait Album extends js.Object
+  sealed trait Album
+    extends reactDashNativeLib.reactDashNativeMod.CameraRollGroupType
   
   @js.native
-  sealed trait All extends js.Object
+  sealed trait All
+    extends reactDashNativeLib.reactDashNativeMod.CameraRollAssetType
+       with reactDashNativeLib.reactDashNativeMod.CameraRollGroupType
   
   @js.native
-  sealed trait BLUETOOTH extends js.Object
+  sealed trait BLUETOOTH
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait DUMMY extends js.Object
+  sealed trait DUMMY
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
   sealed trait Dragging extends js.Object
   
   @js.native
-  sealed trait ETHERNET extends js.Object
+  sealed trait ETHERNET
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait Empty extends js.Object
+  sealed trait Empty extends XMLHttpRequestResponseType
   
   @js.native
-  sealed trait Event extends js.Object
+  sealed trait Event
+    extends reactDashNativeLib.reactDashNativeMod.CameraRollGroupType
   
   @js.native
-  sealed trait Faces extends js.Object
+  sealed trait Faces
+    extends reactDashNativeLib.reactDashNativeMod.CameraRollGroupType
   
   @js.native
   sealed trait GET extends js.Object
@@ -88,40 +99,52 @@ object reactDashNativeLibStrings {
   sealed trait LargeInverse extends js.Object
   
   @js.native
-  sealed trait Library extends js.Object
+  sealed trait Library
+    extends reactDashNativeLib.reactDashNativeMod.CameraRollGroupType
   
   @js.native
-  sealed trait MOBILE extends js.Object
+  sealed trait MOBILE
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait MOBILE_CBS extends js.Object
+  sealed trait MOBILE_CBS
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait MOBILE_DUN extends js.Object
+  sealed trait MOBILE_DUN
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait MOBILE_EMERGENCY extends js.Object
+  sealed trait MOBILE_EMERGENCY
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait MOBILE_FOTA extends js.Object
+  sealed trait MOBILE_FOTA
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait MOBILE_HIPRI extends js.Object
+  sealed trait MOBILE_HIPRI
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait MOBILE_IA extends js.Object
+  sealed trait MOBILE_IA
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait MOBILE_IMS extends js.Object
+  sealed trait MOBILE_IMS
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait MOBILE_MMS extends js.Object
+  sealed trait MOBILE_MMS
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait MOBILE_SUPL extends js.Object
+  sealed trait MOBILE_SUPL
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait NONE extends js.Object
+  sealed trait NONE
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
   sealed trait NamedStyles extends js.Object
@@ -133,13 +156,16 @@ object reactDashNativeLibStrings {
   sealed trait POST extends js.Object
   
   @js.native
-  sealed trait PROXY extends js.Object
+  sealed trait PROXY
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait PhotoStream extends js.Object
+  sealed trait PhotoStream
+    extends reactDashNativeLib.reactDashNativeMod.CameraRollGroupType
   
   @js.native
-  sealed trait Photos extends js.Object
+  sealed trait Photos
+    extends reactDashNativeLib.reactDashNativeMod.CameraRollAssetType
   
   @js.native
   sealed trait PlatformStatic extends js.Object
@@ -148,7 +174,8 @@ object reactDashNativeLibStrings {
   sealed trait RippleAndroid extends js.Object
   
   @js.native
-  sealed trait SavedPhotos extends js.Object
+  sealed trait SavedPhotos
+    extends reactDashNativeLib.reactDashNativeMod.CameraRollGroupType
   
   @js.native
   sealed trait Settling extends js.Object
@@ -172,25 +199,31 @@ object reactDashNativeLibStrings {
   sealed trait UIBackgroundFetchResultNoData extends js.Object
   
   @js.native
-  sealed trait UNKNOWN extends js.Object
+  sealed trait UNKNOWN
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
   sealed trait URL extends js.Object
   
   @js.native
-  sealed trait VPN extends js.Object
+  sealed trait VPN
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait Videos extends js.Object
+  sealed trait Videos
+    extends reactDashNativeLib.reactDashNativeMod.CameraRollAssetType
   
   @js.native
-  sealed trait WIFI extends js.Object
+  sealed trait WIFI
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait WIFI_P2P extends js.Object
+  sealed trait WIFI_P2P
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait WIMAX extends js.Object
+  sealed trait WIMAX
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
   sealed trait abort extends js.Object
@@ -199,10 +232,11 @@ object reactDashNativeLibStrings {
   sealed trait absolute extends js.Object
   
   @js.native
-  sealed trait active extends js.Object
+  sealed trait active
+    extends reactDashNativeLib.reactDashNativeMod.AppStateStatus
   
   @js.native
-  sealed trait address extends js.Object
+  sealed trait address extends DataDetectorTypes
   
   @js.native
   sealed trait addressCity extends js.Object
@@ -214,97 +248,124 @@ object reactDashNativeLibStrings {
   sealed trait addressState extends js.Object
   
   @js.native
-  sealed trait adjustable extends js.Object
+  sealed trait adjustable
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+       with AccessibilityTrait
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all extends DataDetectorTypes
   
   @js.native
-  sealed trait allowsDirectInteraction extends js.Object
+  sealed trait allowsDirectInteraction extends AccessibilityTrait
   
   @js.native
   sealed trait always extends js.Object
   
   @js.native
-  sealed trait android extends js.Object
+  sealed trait android
+    extends reactDashNativeLib.reactDashNativeMod.PlatformOSType
   
   @js.native
-  sealed trait androidDOTpermissionDOTACCESS_COARSE_LOCATION extends js.Object
+  sealed trait androidDOTpermissionDOTACCESS_COARSE_LOCATION
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTACCESS_FINE_LOCATION extends js.Object
+  sealed trait androidDOTpermissionDOTACCESS_FINE_LOCATION
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTBODY_SENSORS extends js.Object
+  sealed trait androidDOTpermissionDOTBODY_SENSORS
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTCALL_PHONE extends js.Object
+  sealed trait androidDOTpermissionDOTCALL_PHONE
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTCAMERA extends js.Object
+  sealed trait androidDOTpermissionDOTCAMERA
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTGET_ACCOUNTS extends js.Object
+  sealed trait androidDOTpermissionDOTGET_ACCOUNTS
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTPROCESS_OUTGOING_CALLS extends js.Object
+  sealed trait androidDOTpermissionDOTPROCESS_OUTGOING_CALLS
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_CALENDAR extends js.Object
+  sealed trait androidDOTpermissionDOTREAD_CALENDAR
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_CALL_LOG extends js.Object
+  sealed trait androidDOTpermissionDOTREAD_CALL_LOG
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_CONTACTS extends js.Object
+  sealed trait androidDOTpermissionDOTREAD_CONTACTS
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_EXTERNAL_STORAGE extends js.Object
+  sealed trait androidDOTpermissionDOTREAD_EXTERNAL_STORAGE
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_PHONE_STATE extends js.Object
+  sealed trait androidDOTpermissionDOTREAD_PHONE_STATE
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTREAD_SMS extends js.Object
+  sealed trait androidDOTpermissionDOTREAD_SMS
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTRECEIVE_MMS extends js.Object
+  sealed trait androidDOTpermissionDOTRECEIVE_MMS
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTRECEIVE_SMS extends js.Object
+  sealed trait androidDOTpermissionDOTRECEIVE_SMS
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTRECEIVE_WAP_PUSH extends js.Object
+  sealed trait androidDOTpermissionDOTRECEIVE_WAP_PUSH
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTRECORD_AUDIO extends js.Object
+  sealed trait androidDOTpermissionDOTRECORD_AUDIO
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTSEND_SMS extends js.Object
+  sealed trait androidDOTpermissionDOTSEND_SMS
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTUSE_SIP extends js.Object
+  sealed trait androidDOTpermissionDOTUSE_SIP
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTWRITE_CALENDAR extends js.Object
+  sealed trait androidDOTpermissionDOTWRITE_CALENDAR
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTWRITE_CALL_LOG extends js.Object
+  sealed trait androidDOTpermissionDOTWRITE_CALL_LOG
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTWRITE_CONTACTS extends js.Object
+  sealed trait androidDOTpermissionDOTWRITE_CONTACTS
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE extends js.Object
+  sealed trait androidDOTpermissionDOTWRITE_EXTERNAL_STORAGE
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
-  sealed trait announcementFinished extends js.Object
+  sealed trait announcementFinished extends AccessibilityEventName
   
   @js.native
-  sealed trait arraybuffer extends js.Object
+  sealed trait arraybuffer extends XMLHttpRequestResponseType
   
   @js.native
-  sealed trait `ascii-capable` extends js.Object
+  sealed trait `ascii-capable`
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
   @js.native
   sealed trait assertive extends js.Object
@@ -319,7 +380,8 @@ object reactDashNativeLibStrings {
   sealed trait backforward extends js.Object
   
   @js.native
-  sealed trait background extends js.Object
+  sealed trait background
+    extends reactDashNativeLib.reactDashNativeMod.AppStateStatus
   
   @js.native
   sealed trait balanced extends js.Object
@@ -328,10 +390,10 @@ object reactDashNativeLibStrings {
   sealed trait bar extends js.Object
   
   @js.native
-  sealed trait baseline extends js.Object
+  sealed trait baseline extends FlexAlignType
   
   @js.native
-  sealed trait basic extends js.Object
+  sealed trait basic extends `ResponseType_`
   
   @js.native
   sealed trait bevel extends js.Object
@@ -340,7 +402,7 @@ object reactDashNativeLibStrings {
   sealed trait black extends js.Object
   
   @js.native
-  sealed trait blob extends js.Object
+  sealed trait blob extends XMLHttpRequestResponseType
   
   @js.native
   sealed trait bold extends js.Object
@@ -361,13 +423,15 @@ object reactDashNativeLibStrings {
   sealed trait butt extends js.Object
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+       with AccessibilityTrait
   
   @js.native
   sealed trait calendar extends js.Object
   
   @js.native
-  sealed trait calendarEvent extends js.Object
+  sealed trait calendarEvent extends DataDetectorTypes
   
   @js.native
   sealed trait cancel extends js.Object
@@ -376,19 +440,25 @@ object reactDashNativeLibStrings {
   sealed trait capitalize extends js.Object
   
   @js.native
-  sealed trait cell extends js.Object
+  sealed trait cell
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends FlexAlignType
+       with reactDashNativeLib.reactDashNativeMod.ImageResizeMode
   
   @js.native
-  sealed trait change extends js.Object
+  sealed trait change
+    extends AccessibilityEventName
+       with reactDashNativeLib.reactDashNativeMod.AppStateEvent
   
   @js.native
   sealed trait characters extends js.Object
   
   @js.native
-  sealed trait clamp extends js.Object
+  sealed trait clamp
+    extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.ExtrapolateType
   
   @js.native
   sealed trait click extends js.Object
@@ -406,7 +476,8 @@ object reactDashNativeLibStrings {
   sealed trait `column-reverse` extends js.Object
   
   @js.native
-  sealed trait comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL extends js.Object
+  sealed trait comDOTandroidDOTvoicemailDOTpermissionDOTADD_VOICEMAIL
+    extends reactDashNativeLib.reactDashNativeMod.Permission
   
   @js.native
   sealed trait compatibility extends js.Object
@@ -415,16 +486,20 @@ object reactDashNativeLibStrings {
   sealed trait contacts extends js.Object
   
   @js.native
-  sealed trait contain extends js.Object
+  sealed trait contain
+    extends reactDashNativeLib.reactDashNativeMod.ImageResizeMode
   
   @js.native
-  sealed trait cors extends js.Object
+  sealed trait cors
+    extends `RequestMode_`
+       with `ResponseType_`
   
   @js.native
   sealed trait countryName extends js.Object
   
   @js.native
-  sealed trait cover extends js.Object
+  sealed trait cover
+    extends reactDashNativeLib.reactDashNativeMod.ImageResizeMode
   
   @js.native
   sealed trait creditCardNumber extends js.Object
@@ -433,7 +508,8 @@ object reactDashNativeLibStrings {
   sealed trait dark extends js.Object
   
   @js.native
-  sealed trait `dark-content` extends js.Object
+  sealed trait `dark-content`
+    extends reactDashNativeLib.reactDashNativeMod.StatusBarStyle
   
   @js.native
   sealed trait dashed extends js.Object
@@ -448,13 +524,20 @@ object reactDashNativeLibStrings {
   sealed trait datetime extends js.Object
   
   @js.native
-  sealed trait `decimal-pad` extends js.Object
+  sealed trait `decimal-pad`
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
   @js.native
-  sealed trait default extends js.Object
+  sealed trait default
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardType
+       with reactDashNativeLib.reactDashNativeMod.AlertType
+       with `ResponseType_`
+       with reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeIOS
+       with reactDashNativeLib.reactDashNativeMod.StatusBarStyle
   
   @js.native
-  sealed trait denied extends js.Object
+  sealed trait denied
+    extends reactDashNativeLib.reactDashNativeMod.PermissionStatus
   
   @js.native
   sealed trait destructive extends js.Object
@@ -463,7 +546,9 @@ object reactDashNativeLibStrings {
   sealed trait dialog extends js.Object
   
   @js.native
-  sealed trait disabled extends js.Object
+  sealed trait disabled
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityState
+       with AccessibilityTrait
   
   @js.native
   sealed trait disk extends js.Object
@@ -472,10 +557,11 @@ object reactDashNativeLibStrings {
   sealed trait dismissedAction extends js.Object
   
   @js.native
-  sealed trait document extends js.Object
+  sealed trait document extends XMLHttpRequestResponseType
   
   @js.native
-  sealed trait done extends js.Object
+  sealed trait done
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyType
   
   @js.native
   sealed trait dotted extends js.Object
@@ -490,34 +576,41 @@ object reactDashNativeLibStrings {
   sealed trait dropdown extends js.Object
   
   @js.native
-  sealed trait easeIn extends js.Object
+  sealed trait easeIn
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventEasing
   
   @js.native
-  sealed trait easeInEaseOut extends js.Object
+  sealed trait easeInEaseOut
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventEasing
   
   @js.native
-  sealed trait easeOut extends js.Object
+  sealed trait easeOut
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventEasing
   
   @js.native
-  sealed trait `email-address` extends js.Object
+  sealed trait `email-address`
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardType
   
   @js.native
   sealed trait emailAddress extends js.Object
   
   @js.native
-  sealed trait `emergency-call` extends js.Object
+  sealed trait `emergency-call`
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeIOS
   
   @js.native
   sealed trait end extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error extends `ResponseType_`
   
   @js.native
-  sealed trait extend extends js.Object
+  sealed trait extend
+    extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.ExtrapolateType
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait fade
+    extends reactDashNativeLib.reactDashNativeMod.StatusBarAnimation
   
   @js.native
   sealed trait familyName extends js.Object
@@ -538,10 +631,10 @@ object reactDashNativeLibStrings {
   sealed trait flex extends js.Object
   
   @js.native
-  sealed trait `flex-end` extends js.Object
+  sealed trait `flex-end` extends FlexAlignType
   
   @js.native
-  sealed trait `flex-start` extends js.Object
+  sealed trait `flex-start` extends FlexAlignType
   
   @js.native
   sealed trait `force-cache` extends js.Object
@@ -556,7 +649,7 @@ object reactDashNativeLibStrings {
   sealed trait formsubmit extends js.Object
   
   @js.native
-  sealed trait frequentUpdates extends js.Object
+  sealed trait frequentUpdates extends AccessibilityTrait
   
   @js.native
   sealed trait fullScreen extends js.Object
@@ -568,13 +661,16 @@ object reactDashNativeLibStrings {
   sealed trait givenName extends js.Object
   
   @js.native
-  sealed trait go extends js.Object
+  sealed trait go
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyType
   
   @js.native
-  sealed trait google extends js.Object
+  sealed trait google
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeIOS
   
   @js.native
-  sealed trait granted extends js.Object
+  sealed trait granted
+    extends reactDashNativeLib.reactDashNativeMod.PermissionStatus
   
   @js.native
   sealed trait handled extends js.Object
@@ -586,7 +682,9 @@ object reactDashNativeLibStrings {
   sealed trait head extends js.Object
   
   @js.native
-  sealed trait header extends js.Object
+  sealed trait header
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+       with AccessibilityTrait
   
   @js.native
   sealed trait height extends js.Object
@@ -604,22 +702,27 @@ object reactDashNativeLibStrings {
   sealed trait hybrid extends js.Object
   
   @js.native
-  sealed trait identity extends js.Object
+  sealed trait identity
+    extends reactDashNativeLib.reactDashNativeMod.AnimatedNs.ExtrapolateType
   
   @js.native
   sealed trait ifRoom extends js.Object
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+       with AccessibilityTrait
   
   @js.native
-  sealed trait imagebutton extends js.Object
+  sealed trait imagebutton
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
   
   @js.native
-  sealed trait inactive extends js.Object
+  sealed trait inactive
+    extends reactDashNativeLib.reactDashNativeMod.AppStateStatus
   
   @js.native
-  sealed trait include extends js.Object
+  sealed trait include extends `RequestCredentials_`
   
   @js.native
   sealed trait inherit extends js.Object
@@ -628,7 +731,8 @@ object reactDashNativeLibStrings {
   sealed trait interactive extends js.Object
   
   @js.native
-  sealed trait ios extends js.Object
+  sealed trait ios
+    extends reactDashNativeLib.reactDashNativeMod.PlatformOSType
   
   @js.native
   sealed trait italic extends js.Object
@@ -637,43 +741,52 @@ object reactDashNativeLibStrings {
   sealed trait jobTitle extends js.Object
   
   @js.native
-  sealed trait join extends js.Object
+  sealed trait join
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeIOS
   
   @js.native
   sealed trait jpeg extends js.Object
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json extends XMLHttpRequestResponseType
   
   @js.native
   sealed trait justify extends js.Object
   
   @js.native
-  sealed trait key extends js.Object
+  sealed trait key extends AccessibilityTrait
   
   @js.native
-  sealed trait keyboard extends js.Object
+  sealed trait keyboard
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventEasing
   
   @js.native
-  sealed trait keyboardDidChangeFrame extends js.Object
+  sealed trait keyboardDidChangeFrame
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventName
   
   @js.native
-  sealed trait keyboardDidHide extends js.Object
+  sealed trait keyboardDidHide
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventName
   
   @js.native
-  sealed trait keyboardDidShow extends js.Object
+  sealed trait keyboardDidShow
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventName
   
   @js.native
-  sealed trait keyboardWillChangeFrame extends js.Object
+  sealed trait keyboardWillChangeFrame
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventName
   
   @js.native
-  sealed trait keyboardWillHide extends js.Object
+  sealed trait keyboardWillHide
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventName
   
   @js.native
-  sealed trait keyboardWillShow extends js.Object
+  sealed trait keyboardWillShow
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventName
   
   @js.native
-  sealed trait keyboardkey extends js.Object
+  sealed trait keyboardkey
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
   
   @js.native
   sealed trait landscape extends js.Object
@@ -697,16 +810,21 @@ object reactDashNativeLibStrings {
   sealed trait light extends js.Object
   
   @js.native
-  sealed trait `light-content` extends js.Object
+  sealed trait `light-content`
+    extends reactDashNativeLib.reactDashNativeMod.StatusBarStyle
   
   @js.native
   sealed trait `line-through` extends js.Object
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardEventEasing
   
   @js.native
-  sealed trait link extends js.Object
+  sealed trait link
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+       with AccessibilityTrait
+       with DataDetectorTypes
   
   @js.native
   sealed trait load extends js.Object
@@ -718,7 +836,8 @@ object reactDashNativeLibStrings {
   sealed trait loadstart extends js.Object
   
   @js.native
-  sealed trait localNotification extends js.Object
+  sealed trait localNotification
+    extends reactDashNativeLib.reactDashNativeMod.PushNotificationEventName
   
   @js.native
   sealed trait location extends js.Object
@@ -730,7 +849,8 @@ object reactDashNativeLibStrings {
   sealed trait `locked-open` extends js.Object
   
   @js.native
-  sealed trait `login-password` extends js.Object
+  sealed trait `login-password`
+    extends reactDashNativeLib.reactDashNativeMod.AlertType
   
   @js.native
   sealed trait lowercase extends js.Object
@@ -739,13 +859,15 @@ object reactDashNativeLibStrings {
   sealed trait ltr extends js.Object
   
   @js.native
-  sealed trait macos extends js.Object
+  sealed trait macos
+    extends reactDashNativeLib.reactDashNativeMod.PlatformOSType
   
   @js.native
   sealed trait memory extends js.Object
   
   @js.native
-  sealed trait memoryWarning extends js.Object
+  sealed trait memoryWarning
+    extends reactDashNativeLib.reactDashNativeMod.AppStateEvent
   
   @js.native
   sealed trait middle extends js.Object
@@ -769,7 +891,8 @@ object reactDashNativeLibStrings {
   sealed trait name extends js.Object
   
   @js.native
-  sealed trait `name-phone-pad` extends js.Object
+  sealed trait `name-phone-pad`
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
   @js.native
   sealed trait namePrefix extends js.Object
@@ -778,19 +901,21 @@ object reactDashNativeLibStrings {
   sealed trait nameSuffix extends js.Object
   
   @js.native
-  sealed trait navigate extends js.Object
+  sealed trait navigate extends `RequestMode_`
   
   @js.native
   sealed trait never extends js.Object
   
   @js.native
-  sealed trait never_ask_again extends js.Object
+  sealed trait never_ask_again
+    extends reactDashNativeLib.reactDashNativeMod.PermissionStatus
   
   @js.native
   sealed trait newPassword extends js.Object
   
   @js.native
-  sealed trait next extends js.Object
+  sealed trait next
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyType
   
   @js.native
   sealed trait nickname extends js.Object
@@ -799,34 +924,44 @@ object reactDashNativeLibStrings {
   sealed trait no extends js.Object
   
   @js.native
-  sealed trait `no-cors` extends js.Object
+  sealed trait `no-cors` extends `RequestMode_`
   
   @js.native
   sealed trait `no-hide-descendants` extends js.Object
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeAndroid
+       with reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+       with AccessibilityTrait
+       with reactDashNativeLib.reactDashNativeMod.ConnectionType
+       with DataDetectorTypes
+       with reactDashNativeLib.reactDashNativeMod.StatusBarAnimation
   
   @js.native
   sealed trait normal extends js.Object
   
   @js.native
-  sealed trait notification extends js.Object
+  sealed trait notification
+    extends reactDashNativeLib.reactDashNativeMod.PushNotificationEventName
   
   @js.native
   sealed trait nowrap extends js.Object
   
   @js.native
-  sealed trait `number-pad` extends js.Object
+  sealed trait `number-pad`
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
   @js.native
-  sealed trait `numbers-and-punctuation` extends js.Object
+  sealed trait `numbers-and-punctuation`
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
   @js.native
-  sealed trait numeric extends js.Object
+  sealed trait numeric
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardType
   
   @js.native
-  sealed trait omit extends js.Object
+  sealed trait omit extends `RequestCredentials_`
   
   @js.native
   sealed trait `on-drag` extends js.Object
@@ -838,10 +973,10 @@ object reactDashNativeLibStrings {
   sealed trait `only-if-cached` extends js.Object
   
   @js.native
-  sealed trait opaque extends js.Object
+  sealed trait opaque extends `ResponseType_`
   
   @js.native
-  sealed trait opaqueredirect extends js.Object
+  sealed trait opaqueredirect extends `ResponseType_`
   
   @js.native
   sealed trait organizationName extends js.Object
@@ -859,25 +994,27 @@ object reactDashNativeLibStrings {
   sealed trait pageSheet extends js.Object
   
   @js.native
-  sealed trait pageTurn extends js.Object
+  sealed trait pageTurn extends AccessibilityTrait
   
   @js.native
   sealed trait password extends js.Object
   
   @js.native
-  sealed trait `phone-pad` extends js.Object
+  sealed trait `phone-pad`
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardType
   
   @js.native
-  sealed trait phoneNumber extends js.Object
+  sealed trait phoneNumber extends DataDetectorTypes
   
   @js.native
   sealed trait photo extends js.Object
   
   @js.native
-  sealed trait `plain-text` extends js.Object
+  sealed trait `plain-text`
+    extends reactDashNativeLib.reactDashNativeMod.AlertType
   
   @js.native
-  sealed trait plays extends js.Object
+  sealed trait plays extends AccessibilityTrait
   
   @js.native
   sealed trait png extends js.Object
@@ -898,7 +1035,8 @@ object reactDashNativeLibStrings {
   sealed trait postalCode extends js.Object
   
   @js.native
-  sealed trait previous extends js.Object
+  sealed trait previous
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeAndroid
   
   @js.native
   sealed trait progress extends js.Object
@@ -916,10 +1054,12 @@ object reactDashNativeLibStrings {
   sealed trait recents extends js.Object
   
   @js.native
-  sealed trait register extends js.Object
+  sealed trait register
+    extends reactDashNativeLib.reactDashNativeMod.PushNotificationEventName
   
   @js.native
-  sealed trait registrationError extends js.Object
+  sealed trait registrationError
+    extends reactDashNativeLib.reactDashNativeMod.PushNotificationEventName
   
   @js.native
   sealed trait relative extends js.Object
@@ -928,7 +1068,8 @@ object reactDashNativeLibStrings {
   sealed trait reload extends js.Object
   
   @js.native
-  sealed trait repeat extends js.Object
+  sealed trait repeat
+    extends reactDashNativeLib.reactDashNativeMod.ImageResizeMode
   
   @js.native
   sealed trait resize extends js.Object
@@ -940,7 +1081,8 @@ object reactDashNativeLibStrings {
   sealed trait round extends js.Object
   
   @js.native
-  sealed trait route extends js.Object
+  sealed trait route
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeIOS
   
   @js.native
   sealed trait row extends js.Object
@@ -952,7 +1094,9 @@ object reactDashNativeLibStrings {
   sealed trait rtl extends js.Object
   
   @js.native
-  sealed trait `same-origin` extends js.Object
+  sealed trait `same-origin`
+    extends `RequestCredentials_`
+       with `RequestMode_`
   
   @js.native
   sealed trait satellite extends js.Object
@@ -970,16 +1114,23 @@ object reactDashNativeLibStrings {
   sealed trait scrollableAxes extends js.Object
   
   @js.native
-  sealed trait search extends js.Object
+  sealed trait search
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyType
+       with reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+       with AccessibilityTrait
   
   @js.native
-  sealed trait `secure-text` extends js.Object
+  sealed trait `secure-text`
+    extends reactDashNativeLib.reactDashNativeMod.AlertType
   
   @js.native
-  sealed trait selected extends js.Object
+  sealed trait selected
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityState
+       with AccessibilityTrait
   
   @js.native
-  sealed trait send extends js.Object
+  sealed trait send
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyType
   
   @js.native
   sealed trait sentences extends js.Object
@@ -991,7 +1142,8 @@ object reactDashNativeLibStrings {
   sealed trait simple extends js.Object
   
   @js.native
-  sealed trait slide extends js.Object
+  sealed trait slide
+    extends reactDashNativeLib.reactDashNativeMod.StatusBarAnimation
   
   @js.native
   sealed trait small extends js.Object
@@ -1021,7 +1173,7 @@ object reactDashNativeLibStrings {
   sealed trait start extends js.Object
   
   @js.native
-  sealed trait startsMedia extends js.Object
+  sealed trait startsMedia extends AccessibilityTrait
   
   @js.native
   sealed trait streetAddressLine1 extends js.Object
@@ -1030,13 +1182,17 @@ object reactDashNativeLibStrings {
   sealed trait streetAddressLine2 extends js.Object
   
   @js.native
-  sealed trait stretch extends js.Object
+  sealed trait stretch
+    extends FlexAlignType
+       with reactDashNativeLib.reactDashNativeMod.ImageResizeMode
   
   @js.native
   sealed trait sublocality extends js.Object
   
   @js.native
-  sealed trait summary extends js.Object
+  sealed trait summary
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+       with AccessibilityTrait
   
   @js.native
   sealed trait tail extends js.Object
@@ -1045,7 +1201,10 @@ object reactDashNativeLibStrings {
   sealed trait telephoneNumber extends js.Object
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends reactDashNativeLib.reactDashNativeMod.AccessibilityRole
+       with AccessibilityTrait
+       with XMLHttpRequestResponseType
   
   @js.native
   sealed trait time extends js.Object
@@ -1066,7 +1225,8 @@ object reactDashNativeLibStrings {
   sealed trait trailing extends js.Object
   
   @js.native
-  sealed trait twitter extends js.Object
+  sealed trait twitter
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
   @js.native
   sealed trait underline extends js.Object
@@ -1075,7 +1235,9 @@ object reactDashNativeLibStrings {
   sealed trait `underline line-through` extends js.Object
   
   @js.native
-  sealed trait unknown extends js.Object
+  sealed trait unknown
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
+       with reactDashNativeLib.reactDashNativeMod.EffectiveConnectionType
   
   @js.native
   sealed trait `unless-editing` extends js.Object
@@ -1087,7 +1249,8 @@ object reactDashNativeLibStrings {
   sealed trait uppercase extends js.Object
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
   @js.native
   sealed trait username extends js.Object
@@ -1102,10 +1265,12 @@ object reactDashNativeLibStrings {
   sealed trait `visible-password` extends js.Object
   
   @js.native
-  sealed trait web extends js.Object
+  sealed trait web
+    extends reactDashNativeLib.reactDashNativeMod.PlatformOSType
   
   @js.native
-  sealed trait `web-search` extends js.Object
+  sealed trait `web-search`
+    extends reactDashNativeLib.reactDashNativeMod.KeyboardTypeIOS
   
   @js.native
   sealed trait `while-editing` extends js.Object
@@ -1114,13 +1279,15 @@ object reactDashNativeLibStrings {
   sealed trait white extends js.Object
   
   @js.native
-  sealed trait wifi extends js.Object
+  sealed trait wifi
+    extends reactDashNativeLib.reactDashNativeMod.ConnectionType
   
   @js.native
   sealed trait window extends js.Object
   
   @js.native
-  sealed trait windows extends js.Object
+  sealed trait windows
+    extends reactDashNativeLib.reactDashNativeMod.PlatformOSType
   
   @js.native
   sealed trait words extends js.Object
@@ -1132,7 +1299,8 @@ object reactDashNativeLibStrings {
   sealed trait `wrap-reverse` extends js.Object
   
   @js.native
-  sealed trait yahoo extends js.Object
+  sealed trait yahoo
+    extends reactDashNativeLib.reactDashNativeMod.ReturnKeyTypeIOS
   
   @js.native
   sealed trait yes extends js.Object

@@ -19,3 +19,13 @@ trait ListFilterSetsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListFilterSetsResponse {
+  @scala.inline
+  def apply(filterSets: js.Array[FilterSet] = null, nextPageToken: java.lang.String = null): ListFilterSetsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (filterSets != null) __obj.updateDynamic("filterSets")(filterSets)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListFilterSetsResponse]
+  }
+}
+

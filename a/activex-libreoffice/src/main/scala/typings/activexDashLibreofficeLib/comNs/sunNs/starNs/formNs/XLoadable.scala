@@ -42,3 +42,30 @@ trait XLoadable
   def unload(): scala.Unit
 }
 
+object XLoadable {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addLoadListener: js.Function1[XLoadListener, scala.Unit],
+    isLoaded: js.Function0[scala.Boolean],
+    load: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    reload: js.Function0[scala.Unit],
+    removeLoadListener: js.Function1[XLoadListener, scala.Unit],
+    unload: js.Function0[scala.Unit]
+  ): XLoadable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addLoadListener")(addLoadListener)
+    __obj.updateDynamic("isLoaded")(isLoaded)
+    __obj.updateDynamic("load")(load)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("reload")(reload)
+    __obj.updateDynamic("removeLoadListener")(removeLoadListener)
+    __obj.updateDynamic("unload")(unload)
+    __obj.asInstanceOf[XLoadable]
+  }
+}
+

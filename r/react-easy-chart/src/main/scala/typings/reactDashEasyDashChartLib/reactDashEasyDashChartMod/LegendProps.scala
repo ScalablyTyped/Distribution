@@ -18,3 +18,22 @@ trait LegendProps extends js.Object {
   ] = js.undefined
 }
 
+object LegendProps {
+  @scala.inline
+  def apply(
+    data: js.Array[_],
+    dataId: java.lang.String,
+    config: js.Array[reactDashEasyDashChartLib.Anon_ColorString] = null,
+    horizontal: js.UndefOr[scala.Boolean] = js.undefined,
+    styles: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties] = null
+  ): LegendProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("dataId")(dataId)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (!js.isUndefined(horizontal)) __obj.updateDynamic("horizontal")(horizontal)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[LegendProps]
+  }
+}
+

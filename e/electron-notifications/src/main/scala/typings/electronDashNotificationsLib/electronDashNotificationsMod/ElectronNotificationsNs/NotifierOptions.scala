@@ -14,3 +14,18 @@ trait NotifierOptions extends js.Object {
   var message: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NotifierOptions {
+  @scala.inline
+  def apply(
+    buttons: js.Array[java.lang.String] = null,
+    icon: java.lang.String = null,
+    message: java.lang.String = null
+  ): NotifierOptions = {
+    val __obj = js.Dynamic.literal()
+    if (buttons != null) __obj.updateDynamic("buttons")(buttons)
+    if (icon != null) __obj.updateDynamic("icon")(icon)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[NotifierOptions]
+  }
+}
+

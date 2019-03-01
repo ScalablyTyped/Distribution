@@ -28,3 +28,31 @@ trait Anon_ClassNameContextLabelRenderer[K, D] extends js.Object {
   ] = js.undefined
 }
 
+object Anon_ClassNameContextLabelRenderer {
+  @scala.inline
+  def apply[K, D](
+    label: Anon_ClassNameContextRenderer[K, D],
+    resizable: Anon_ContextDisable[K, D],
+    className: (js.Function1[
+      /* context */ atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.HeaderContext[K, D], 
+      java.lang.String | scala.Unit | scala.Null
+    ]) | java.lang.String = null,
+    renderer: js.Function1[
+      /* context */ atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.HeaderContext[K, D], 
+      Anon_InsertHTMLElement | scala.Unit | scala.Null
+    ] = null,
+    style: (js.Function1[
+      /* context */ atOracleOraclejetLib.ojdatagridMod.ojDataGridNs.HeaderContext[K, D], 
+      java.lang.String | scala.Unit | scala.Null
+    ]) | java.lang.String = null
+  ): Anon_ClassNameContextLabelRenderer[K, D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("label")(label)
+    __obj.updateDynamic("resizable")(resizable)
+    if (className != null) __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ClassNameContextLabelRenderer[K, D]]
+  }
+}
+

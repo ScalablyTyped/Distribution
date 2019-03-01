@@ -16,3 +16,14 @@ trait ASPxClientNavBarGroupCancelEventArgs extends ASPxClientProcessingModeCance
   var group: ASPxClientNavBarGroup
 }
 
+object ASPxClientNavBarGroupCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, group: ASPxClientNavBarGroup, processOnServer: scala.Boolean): ASPxClientNavBarGroupCancelEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("group")(group)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[ASPxClientNavBarGroupCancelEventArgs]
+  }
+}
+

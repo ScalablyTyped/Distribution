@@ -24,3 +24,20 @@ trait HyperlinkSettings extends js.Object {
   var enableValueCellHyperlink: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HyperlinkSettings {
+  @scala.inline
+  def apply(
+    enableColumnHeaderHyperlink: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRowHeaderHyperlink: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSummaryCellHyperlink: js.UndefOr[scala.Boolean] = js.undefined,
+    enableValueCellHyperlink: js.UndefOr[scala.Boolean] = js.undefined
+  ): HyperlinkSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enableColumnHeaderHyperlink)) __obj.updateDynamic("enableColumnHeaderHyperlink")(enableColumnHeaderHyperlink)
+    if (!js.isUndefined(enableRowHeaderHyperlink)) __obj.updateDynamic("enableRowHeaderHyperlink")(enableRowHeaderHyperlink)
+    if (!js.isUndefined(enableSummaryCellHyperlink)) __obj.updateDynamic("enableSummaryCellHyperlink")(enableSummaryCellHyperlink)
+    if (!js.isUndefined(enableValueCellHyperlink)) __obj.updateDynamic("enableValueCellHyperlink")(enableValueCellHyperlink)
+    __obj.asInstanceOf[HyperlinkSettings]
+  }
+}
+

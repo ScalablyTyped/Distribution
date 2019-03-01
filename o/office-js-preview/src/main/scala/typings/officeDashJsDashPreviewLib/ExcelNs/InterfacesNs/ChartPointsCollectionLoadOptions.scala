@@ -72,3 +72,30 @@ trait ChartPointsCollectionLoadOptions extends js.Object {
   var value: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ChartPointsCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    dataLabel: ChartDataLabelLoadOptions = null,
+    format: ChartPointFormatLoadOptions = null,
+    hasDataLabel: js.UndefOr[scala.Boolean] = js.undefined,
+    markerBackgroundColor: js.UndefOr[scala.Boolean] = js.undefined,
+    markerForegroundColor: js.UndefOr[scala.Boolean] = js.undefined,
+    markerSize: js.UndefOr[scala.Boolean] = js.undefined,
+    markerStyle: js.UndefOr[scala.Boolean] = js.undefined,
+    value: js.UndefOr[scala.Boolean] = js.undefined
+  ): ChartPointsCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (dataLabel != null) __obj.updateDynamic("dataLabel")(dataLabel)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (!js.isUndefined(hasDataLabel)) __obj.updateDynamic("hasDataLabel")(hasDataLabel)
+    if (!js.isUndefined(markerBackgroundColor)) __obj.updateDynamic("markerBackgroundColor")(markerBackgroundColor)
+    if (!js.isUndefined(markerForegroundColor)) __obj.updateDynamic("markerForegroundColor")(markerForegroundColor)
+    if (!js.isUndefined(markerSize)) __obj.updateDynamic("markerSize")(markerSize)
+    if (!js.isUndefined(markerStyle)) __obj.updateDynamic("markerStyle")(markerStyle)
+    if (!js.isUndefined(value)) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ChartPointsCollectionLoadOptions]
+  }
+}
+

@@ -17,3 +17,22 @@ trait LoadingOptions
   var title: java.lang.String
 }
 
+object LoadingOptions {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    complete: js.Function1[/* res */ js.Any, scala.Unit] = null,
+    fail: js.Function1[js.Any, scala.Unit] = null,
+    mask: js.UndefOr[scala.Boolean] = js.undefined,
+    success: js.Function1[js.Any, scala.Unit] = null
+  ): LoadingOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (!js.isUndefined(mask)) __obj.updateDynamic("mask")(mask)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[LoadingOptions]
+  }
+}
+

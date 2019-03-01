@@ -87,3 +87,45 @@ trait Event extends js.Object {
   val `type`: java.lang.String
 }
 
+object Event {
+  @scala.inline
+  def apply(
+    action: java.lang.String,
+    apiVersion: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`,
+    deprecatedCount: scala.Double,
+    deprecatedFirstTimestamp: java.lang.String,
+    deprecatedLastTimestamp: java.lang.String,
+    deprecatedSource: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.EventSource,
+    eventTime: java.lang.String,
+    kind: atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event,
+    metadata: atPulumiKubernetesLib.typesOutputMod.metaNs.v1Ns.ObjectMeta,
+    note: java.lang.String,
+    reason: java.lang.String,
+    regarding: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference,
+    related: atPulumiKubernetesLib.typesOutputMod.coreNs.v1Ns.ObjectReference,
+    reportingController: java.lang.String,
+    reportingInstance: java.lang.String,
+    series: EventSeries,
+    `type`: java.lang.String
+  ): Event = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("action")(action)
+    __obj.updateDynamic("apiVersion")(apiVersion)
+    __obj.updateDynamic("deprecatedCount")(deprecatedCount)
+    __obj.updateDynamic("deprecatedFirstTimestamp")(deprecatedFirstTimestamp)
+    __obj.updateDynamic("deprecatedLastTimestamp")(deprecatedLastTimestamp)
+    __obj.updateDynamic("deprecatedSource")(deprecatedSource)
+    __obj.updateDynamic("eventTime")(eventTime)
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("note")(note)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("regarding")(regarding)
+    __obj.updateDynamic("related")(related)
+    __obj.updateDynamic("reportingController")(reportingController)
+    __obj.updateDynamic("reportingInstance")(reportingInstance)
+    __obj.updateDynamic("series")(series)
+    __obj.asInstanceOf[Event]
+  }
+}
+

@@ -25,3 +25,24 @@ trait XDrawView
   def setCurrentPage(xPage: XDrawPage): scala.Unit
 }
 
+object XDrawView {
+  @scala.inline
+  def apply(
+    CurrentPage: XDrawPage,
+    acquire: js.Function0[scala.Unit],
+    getCurrentPage: js.Function0[XDrawPage],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setCurrentPage: js.Function1[XDrawPage, scala.Unit]
+  ): XDrawView = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CurrentPage")(CurrentPage)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getCurrentPage")(getCurrentPage)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setCurrentPage")(setCurrentPage)
+    __obj.asInstanceOf[XDrawView]
+  }
+}
+

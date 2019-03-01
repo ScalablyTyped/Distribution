@@ -27,3 +27,27 @@ trait DataSourcesResource extends js.Object {
   def list(request: gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAlt): gapiDotClientLib.gapiNs.clientNs.Request[ListDataSourcesResponse]
 }
 
+object DataSourcesResource {
+  @scala.inline
+  def apply(
+    checkValidCreds: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[CheckValidCredsResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_Accesstoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DataSource]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBigquerydatatransferLib.Anon_AccesstokenAlt, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDataSourcesResponse]
+    ]
+  ): DataSourcesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkValidCreds")(checkValidCreds)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[DataSourcesResource]
+  }
+}
+

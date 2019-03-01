@@ -40,3 +40,40 @@ trait StrictTableRowProps extends js.Object {
   var warning: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object StrictTableRowProps {
+  @scala.inline
+  def apply(
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    as: js.Any = null,
+    cellAs: js.Any = null,
+    cells: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandCollection[
+      semanticDashUiDashReactLib.distCommonjsCollectionsTableTableCellMod.TableCellProps
+    ] = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    error: js.UndefOr[scala.Boolean] = js.undefined,
+    negative: js.UndefOr[scala.Boolean] = js.undefined,
+    positive: js.UndefOr[scala.Boolean] = js.undefined,
+    textAlign: semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.center | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right = null,
+    verticalAlign: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticVERTICALALIGNMENTS = null,
+    warning: js.UndefOr[scala.Boolean] = js.undefined
+  ): StrictTableRowProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (cellAs != null) __obj.updateDynamic("cellAs")(cellAs)
+    if (cells != null) __obj.updateDynamic("cells")(cells)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(error)) __obj.updateDynamic("error")(error)
+    if (!js.isUndefined(negative)) __obj.updateDynamic("negative")(negative)
+    if (!js.isUndefined(positive)) __obj.updateDynamic("positive")(positive)
+    if (textAlign != null) __obj.updateDynamic("textAlign")(textAlign.asInstanceOf[js.Any])
+    if (verticalAlign != null) __obj.updateDynamic("verticalAlign")(verticalAlign)
+    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[StrictTableRowProps]
+  }
+}
+

@@ -40,3 +40,22 @@ trait Write extends js.Object {
   var updateMask: js.UndefOr[DocumentMask] = js.undefined
 }
 
+object Write {
+  @scala.inline
+  def apply(
+    currentDocument: Precondition = null,
+    delete: java.lang.String = null,
+    transform: DocumentTransform = null,
+    update: Document = null,
+    updateMask: DocumentMask = null
+  ): Write = {
+    val __obj = js.Dynamic.literal()
+    if (currentDocument != null) __obj.updateDynamic("currentDocument")(currentDocument)
+    if (delete != null) __obj.updateDynamic("delete")(delete)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    if (update != null) __obj.updateDynamic("update")(update)
+    if (updateMask != null) __obj.updateDynamic("updateMask")(updateMask)
+    __obj.asInstanceOf[Write]
+  }
+}
+

@@ -14,3 +14,22 @@ trait Props
   var paused: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactElement[_],
+    AllHTMLAttributes: reactLib.reactMod.ReactNs.AllHTMLAttributes[js.Any] = null,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    focusTrapOptions: focusDashTrapLib.focusDashTrapMod.Options = null,
+    paused: js.UndefOr[scala.Boolean] = js.undefined
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    js.Dynamic.global.Object.assign(__obj, AllHTMLAttributes)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (focusTrapOptions != null) __obj.updateDynamic("focusTrapOptions")(focusTrapOptions)
+    if (!js.isUndefined(paused)) __obj.updateDynamic("paused")(paused)
+    __obj.asInstanceOf[Props]
+  }
+}
+

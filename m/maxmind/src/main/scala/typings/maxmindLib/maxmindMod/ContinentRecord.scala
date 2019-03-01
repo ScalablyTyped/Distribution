@@ -11,3 +11,18 @@ trait ContinentRecord extends js.Object {
   val names: Names
 }
 
+object ContinentRecord {
+  @scala.inline
+  def apply(
+    code: maxmindLib.maxmindLibStrings.AF | maxmindLib.maxmindLibStrings.AN | maxmindLib.maxmindLibStrings.AS | maxmindLib.maxmindLibStrings.EU | maxmindLib.maxmindLibStrings.NA | maxmindLib.maxmindLibStrings.OC | maxmindLib.maxmindLibStrings.SA,
+    geoname_id: scala.Double,
+    names: Names
+  ): ContinentRecord = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code.asInstanceOf[js.Any])
+    __obj.updateDynamic("geoname_id")(geoname_id)
+    __obj.updateDynamic("names")(names)
+    __obj.asInstanceOf[ContinentRecord]
+  }
+}
+

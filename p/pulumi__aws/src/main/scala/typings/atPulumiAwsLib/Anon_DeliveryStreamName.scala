@@ -11,3 +11,18 @@ trait Anon_DeliveryStreamName extends js.Object {
   var separator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DeliveryStreamName {
+  @scala.inline
+  def apply(
+    deliveryStreamName: java.lang.String,
+    roleArn: java.lang.String,
+    separator: java.lang.String = null
+  ): Anon_DeliveryStreamName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deliveryStreamName")(deliveryStreamName)
+    __obj.updateDynamic("roleArn")(roleArn)
+    if (separator != null) __obj.updateDynamic("separator")(separator)
+    __obj.asInstanceOf[Anon_DeliveryStreamName]
+  }
+}
+

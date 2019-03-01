@@ -29,3 +29,30 @@ trait ParallelInstruction extends js.Object {
   var write: js.UndefOr[WriteInstruction] = js.undefined
 }
 
+object ParallelInstruction {
+  @scala.inline
+  def apply(
+    flatten: FlattenInstruction = null,
+    name: java.lang.String = null,
+    originalName: java.lang.String = null,
+    outputs: js.Array[InstructionOutput] = null,
+    parDo: ParDoInstruction = null,
+    partialGroupByKey: PartialGroupByKeyInstruction = null,
+    read: ReadInstruction = null,
+    systemName: java.lang.String = null,
+    write: WriteInstruction = null
+  ): ParallelInstruction = {
+    val __obj = js.Dynamic.literal()
+    if (flatten != null) __obj.updateDynamic("flatten")(flatten)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (originalName != null) __obj.updateDynamic("originalName")(originalName)
+    if (outputs != null) __obj.updateDynamic("outputs")(outputs)
+    if (parDo != null) __obj.updateDynamic("parDo")(parDo)
+    if (partialGroupByKey != null) __obj.updateDynamic("partialGroupByKey")(partialGroupByKey)
+    if (read != null) __obj.updateDynamic("read")(read)
+    if (systemName != null) __obj.updateDynamic("systemName")(systemName)
+    if (write != null) __obj.updateDynamic("write")(write)
+    __obj.asInstanceOf[ParallelInstruction]
+  }
+}
+

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object cliDashBoxLibStrings {
   @js.native
-  sealed trait b extends js.Object
+  sealed trait b extends MarksKeys
   
   @js.native
   sealed trait bottom extends js.Object
@@ -16,7 +16,7 @@ object cliDashBoxLibStrings {
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait e extends js.Object
+  sealed trait e extends MarksKeys
   
   @js.native
   sealed trait left extends js.Object
@@ -25,34 +25,34 @@ object cliDashBoxLibStrings {
   sealed trait middle extends js.Object
   
   @js.native
-  sealed trait n extends js.Object
+  sealed trait n extends MarksKeys
   
   @js.native
-  sealed trait ne extends js.Object
+  sealed trait ne extends MarksKeys
   
   @js.native
-  sealed trait nw extends js.Object
+  sealed trait nw extends MarksKeys
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait s extends js.Object
+  sealed trait s extends MarksKeys
   
   @js.native
-  sealed trait se extends js.Object
+  sealed trait se extends MarksKeys
   
   @js.native
   sealed trait stringify extends js.Object
   
   @js.native
-  sealed trait sw extends js.Object
+  sealed trait sw extends MarksKeys
   
   @js.native
   sealed trait top extends js.Object
   
   @js.native
-  sealed trait w extends js.Object
+  sealed trait w extends MarksKeys
   
   @scala.inline
   def b: b = "b".asInstanceOf[b]

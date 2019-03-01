@@ -19,3 +19,20 @@ trait IPathIntersectionOptions extends IPathIntersectionBaseOptions {
   var path2Offset: js.UndefOr[IPoint] = js.undefined
 }
 
+object IPathIntersectionOptions {
+  @scala.inline
+  def apply(
+    excludeTangents: js.UndefOr[scala.Boolean] = js.undefined,
+    out_AreOverlapped: js.UndefOr[scala.Boolean] = js.undefined,
+    path1Offset: IPoint = null,
+    path2Offset: IPoint = null
+  ): IPathIntersectionOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(excludeTangents)) __obj.updateDynamic("excludeTangents")(excludeTangents)
+    if (!js.isUndefined(out_AreOverlapped)) __obj.updateDynamic("out_AreOverlapped")(out_AreOverlapped)
+    if (path1Offset != null) __obj.updateDynamic("path1Offset")(path1Offset)
+    if (path2Offset != null) __obj.updateDynamic("path2Offset")(path2Offset)
+    __obj.asInstanceOf[IPathIntersectionOptions]
+  }
+}
+

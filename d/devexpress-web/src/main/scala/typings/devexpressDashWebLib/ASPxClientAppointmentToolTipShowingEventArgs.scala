@@ -16,3 +16,13 @@ trait ASPxClientAppointmentToolTipShowingEventArgs extends ASPxClientCancelEvent
   var appointment: ASPxClientAppointment
 }
 
+object ASPxClientAppointmentToolTipShowingEventArgs {
+  @scala.inline
+  def apply(appointment: ASPxClientAppointment, cancel: scala.Boolean): ASPxClientAppointmentToolTipShowingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appointment")(appointment)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.asInstanceOf[ASPxClientAppointmentToolTipShowingEventArgs]
+  }
+}
+

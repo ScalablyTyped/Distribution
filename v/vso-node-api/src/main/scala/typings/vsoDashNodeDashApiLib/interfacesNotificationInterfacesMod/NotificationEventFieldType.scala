@@ -22,3 +22,22 @@ trait NotificationEventFieldType extends js.Object {
   var value: ValueDefinition
 }
 
+object NotificationEventFieldType {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    operatorConstraints: js.Array[OperatorConstraint],
+    operators: js.Array[NotificationEventFieldOperator],
+    subscriptionFieldType: SubscriptionFieldType,
+    value: ValueDefinition
+  ): NotificationEventFieldType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("operatorConstraints")(operatorConstraints)
+    __obj.updateDynamic("operators")(operators)
+    __obj.updateDynamic("subscriptionFieldType")(subscriptionFieldType)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[NotificationEventFieldType]
+  }
+}
+

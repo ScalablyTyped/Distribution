@@ -76,3 +76,34 @@ trait XAccessibleSelection
   def selectAllAccessibleChildren(): scala.Unit
 }
 
+object XAccessibleSelection {
+  @scala.inline
+  def apply(
+    SelectedAccessibleChildCount: scala.Double,
+    acquire: js.Function0[scala.Unit],
+    clearAccessibleSelection: js.Function0[scala.Unit],
+    deselectAccessibleChild: js.Function1[scala.Double, scala.Unit],
+    getSelectedAccessibleChild: js.Function1[scala.Double, XAccessible],
+    getSelectedAccessibleChildCount: js.Function0[scala.Double],
+    isAccessibleChildSelected: js.Function1[scala.Double, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    selectAccessibleChild: js.Function1[scala.Double, scala.Unit],
+    selectAllAccessibleChildren: js.Function0[scala.Unit]
+  ): XAccessibleSelection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SelectedAccessibleChildCount")(SelectedAccessibleChildCount)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("clearAccessibleSelection")(clearAccessibleSelection)
+    __obj.updateDynamic("deselectAccessibleChild")(deselectAccessibleChild)
+    __obj.updateDynamic("getSelectedAccessibleChild")(getSelectedAccessibleChild)
+    __obj.updateDynamic("getSelectedAccessibleChildCount")(getSelectedAccessibleChildCount)
+    __obj.updateDynamic("isAccessibleChildSelected")(isAccessibleChildSelected)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("selectAccessibleChild")(selectAccessibleChild)
+    __obj.updateDynamic("selectAllAccessibleChildren")(selectAllAccessibleChildren)
+    __obj.asInstanceOf[XAccessibleSelection]
+  }
+}
+

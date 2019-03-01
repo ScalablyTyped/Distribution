@@ -77,3 +77,47 @@ trait IStaticResourceConfig extends js.Object {
   var usesShadowDOM: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IStaticResourceConfig {
+  @scala.inline
+  def apply(
+    bindables: java.lang.String | js.Array[IBindablePropertyConfig] = null,
+    containerless: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultBindingMode: aureliaDashBindingLib.aureliaDashBindingMod.bindingMode | aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.oneTime | aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.oneWay | aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.twoWay | aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.fromView | aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.toView = null,
+    hasDynamicOptions: js.UndefOr[scala.Boolean] = js.undefined,
+    name: java.lang.String = null,
+    processAttributes: js.Function5[
+      /* viewCompiler */ ViewCompiler, 
+      /* resources */ ViewResources, 
+      /* node */ stdLib.Element, 
+      /* attributes */ stdLib.NamedNodeMap, 
+      /* elementInstruction */ BehaviorInstruction, 
+      scala.Unit
+    ] = null,
+    processContent: js.Function4[
+      /* viewCompiler */ ViewCompiler, 
+      /* resources */ ViewResources, 
+      /* node */ stdLib.Element, 
+      /* instruction */ BehaviorInstruction, 
+      scala.Boolean
+    ] = null,
+    shadowDOMOptions: stdLib.ShadowRootInit = null,
+    templateController: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.element | aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.attribute | aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.valueConverter | aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.bindingBehavior | aureliaDashTemplatingLib.aureliaDashTemplatingLibStrings.viewEngineHooks = null,
+    usesShadowDOM: js.UndefOr[scala.Boolean] = js.undefined
+  ): IStaticResourceConfig = {
+    val __obj = js.Dynamic.literal()
+    if (bindables != null) __obj.updateDynamic("bindables")(bindables.asInstanceOf[js.Any])
+    if (!js.isUndefined(containerless)) __obj.updateDynamic("containerless")(containerless)
+    if (defaultBindingMode != null) __obj.updateDynamic("defaultBindingMode")(defaultBindingMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(hasDynamicOptions)) __obj.updateDynamic("hasDynamicOptions")(hasDynamicOptions)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (processAttributes != null) __obj.updateDynamic("processAttributes")(processAttributes)
+    if (processContent != null) __obj.updateDynamic("processContent")(processContent)
+    if (shadowDOMOptions != null) __obj.updateDynamic("shadowDOMOptions")(shadowDOMOptions)
+    if (!js.isUndefined(templateController)) __obj.updateDynamic("templateController")(templateController)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(usesShadowDOM)) __obj.updateDynamic("usesShadowDOM")(usesShadowDOM)
+    __obj.asInstanceOf[IStaticResourceConfig]
+  }
+}
+

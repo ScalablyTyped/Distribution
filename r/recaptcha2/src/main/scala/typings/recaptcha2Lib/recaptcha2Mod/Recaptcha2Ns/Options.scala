@@ -11,3 +11,18 @@ trait Options extends js.Object {
   var ssl: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    secretKey: java.lang.String,
+    siteKey: java.lang.String,
+    ssl: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("secretKey")(secretKey)
+    __obj.updateDynamic("siteKey")(siteKey)
+    if (!js.isUndefined(ssl)) __obj.updateDynamic("ssl")(ssl)
+    __obj.asInstanceOf[Options]
+  }
+}
+

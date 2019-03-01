@@ -9,3 +9,18 @@ trait PhononDialogComponent extends js.Object {
   def on(event: java.lang.String, callback: js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit]): PhononDialogComponent
 }
 
+object PhononDialogComponent {
+  @scala.inline
+  def apply(
+    on: js.Function2[
+      java.lang.String, 
+      js.Function1[/* value */ js.UndefOr[js.Any], scala.Unit], 
+      PhononDialogComponent
+    ]
+  ): PhononDialogComponent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("on")(on)
+    __obj.asInstanceOf[PhononDialogComponent]
+  }
+}
+

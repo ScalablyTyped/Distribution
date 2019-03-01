@@ -38,3 +38,22 @@ trait ConditionalRangeBorderCollectionUpdateData extends js.Object {
   var top: js.UndefOr[ConditionalRangeBorderUpdateData] = js.undefined
 }
 
+object ConditionalRangeBorderCollectionUpdateData {
+  @scala.inline
+  def apply(
+    bottom: ConditionalRangeBorderUpdateData = null,
+    items: js.Array[ConditionalRangeBorderData] = null,
+    left: ConditionalRangeBorderUpdateData = null,
+    right: ConditionalRangeBorderUpdateData = null,
+    top: ConditionalRangeBorderUpdateData = null
+  ): ConditionalRangeBorderCollectionUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (left != null) __obj.updateDynamic("left")(left)
+    if (right != null) __obj.updateDynamic("right")(right)
+    if (top != null) __obj.updateDynamic("top")(top)
+    __obj.asInstanceOf[ConditionalRangeBorderCollectionUpdateData]
+  }
+}
+

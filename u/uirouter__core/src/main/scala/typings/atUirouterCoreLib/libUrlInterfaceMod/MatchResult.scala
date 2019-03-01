@@ -14,3 +14,13 @@ trait MatchResult extends js.Object {
   var weight: scala.Double
 }
 
+object MatchResult {
+  @scala.inline
+  def apply(`match`: js.Any, rule: UrlRule, weight: scala.Double): MatchResult = {
+    val __obj = js.Dynamic.literal(`match` = `match`)
+    __obj.updateDynamic("rule")(rule)
+    __obj.updateDynamic("weight")(weight)
+    __obj.asInstanceOf[MatchResult]
+  }
+}
+

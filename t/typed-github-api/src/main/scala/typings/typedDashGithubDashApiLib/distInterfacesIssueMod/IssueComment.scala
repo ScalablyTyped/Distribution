@@ -14,3 +14,24 @@ trait IssueComment extends js.Object {
   var updatedAt: momentLib.momentMod.momentNs.Moment
 }
 
+object IssueComment {
+  @scala.inline
+  def apply(
+    body: java.lang.String,
+    createdAt: momentLib.momentMod.momentNs.Moment,
+    createdBy: typedDashGithubDashApiLib.distInterfacesUserMod.UserSummary,
+    htmlUri: java.lang.String,
+    id: scala.Double,
+    updatedAt: momentLib.momentMod.momentNs.Moment
+  ): IssueComment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("body")(body)
+    __obj.updateDynamic("createdAt")(createdAt)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("htmlUri")(htmlUri)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("updatedAt")(updatedAt)
+    __obj.asInstanceOf[IssueComment]
+  }
+}
+

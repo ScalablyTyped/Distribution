@@ -10,3 +10,13 @@ trait IValueListItemsWithPermissions extends js.Object {
   val ValueListItems: IValueListItems
 }
 
+object IValueListItemsWithPermissions {
+  @scala.inline
+  def apply(Permissions: IAccessControlLists, ValueListItems: IValueListItems): IValueListItemsWithPermissions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Permissions")(Permissions)
+    __obj.updateDynamic("ValueListItems")(ValueListItems)
+    __obj.asInstanceOf[IValueListItemsWithPermissions]
+  }
+}
+

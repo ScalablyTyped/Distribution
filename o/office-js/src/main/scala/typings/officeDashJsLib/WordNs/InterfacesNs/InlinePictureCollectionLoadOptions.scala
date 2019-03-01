@@ -107,3 +107,40 @@ trait InlinePictureCollectionLoadOptions extends js.Object {
   var width: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object InlinePictureCollectionLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    altTextDescription: js.UndefOr[scala.Boolean] = js.undefined,
+    altTextTitle: js.UndefOr[scala.Boolean] = js.undefined,
+    height: js.UndefOr[scala.Boolean] = js.undefined,
+    hyperlink: js.UndefOr[scala.Boolean] = js.undefined,
+    lockAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
+    paragraph: ParagraphLoadOptions = null,
+    parentContentControl: ContentControlLoadOptions = null,
+    parentContentControlOrNullObject: ContentControlLoadOptions = null,
+    parentTable: TableLoadOptions = null,
+    parentTableCell: TableCellLoadOptions = null,
+    parentTableCellOrNullObject: TableCellLoadOptions = null,
+    parentTableOrNullObject: TableLoadOptions = null,
+    width: js.UndefOr[scala.Boolean] = js.undefined
+  ): InlinePictureCollectionLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(altTextDescription)) __obj.updateDynamic("altTextDescription")(altTextDescription)
+    if (!js.isUndefined(altTextTitle)) __obj.updateDynamic("altTextTitle")(altTextTitle)
+    if (!js.isUndefined(height)) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(hyperlink)) __obj.updateDynamic("hyperlink")(hyperlink)
+    if (!js.isUndefined(lockAspectRatio)) __obj.updateDynamic("lockAspectRatio")(lockAspectRatio)
+    if (paragraph != null) __obj.updateDynamic("paragraph")(paragraph)
+    if (parentContentControl != null) __obj.updateDynamic("parentContentControl")(parentContentControl)
+    if (parentContentControlOrNullObject != null) __obj.updateDynamic("parentContentControlOrNullObject")(parentContentControlOrNullObject)
+    if (parentTable != null) __obj.updateDynamic("parentTable")(parentTable)
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
+    if (parentTableCellOrNullObject != null) __obj.updateDynamic("parentTableCellOrNullObject")(parentTableCellOrNullObject)
+    if (parentTableOrNullObject != null) __obj.updateDynamic("parentTableOrNullObject")(parentTableOrNullObject)
+    if (!js.isUndefined(width)) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[InlinePictureCollectionLoadOptions]
+  }
+}
+

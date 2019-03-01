@@ -10,3 +10,16 @@ trait Anon_Path extends js.Object {
   def statSync(path: java.lang.String): nodeLib.fsMod.Stats
 }
 
+object Anon_Path {
+  @scala.inline
+  def apply(
+    readdirSync: js.Function1[java.lang.String, js.Array[java.lang.String]],
+    statSync: js.Function1[java.lang.String, nodeLib.fsMod.Stats]
+  ): Anon_Path = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("readdirSync")(readdirSync)
+    __obj.updateDynamic("statSync")(statSync)
+    __obj.asInstanceOf[Anon_Path]
+  }
+}
+

@@ -16,3 +16,13 @@ trait Anon_Hashtag extends js.Object {
   var quote: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Hashtag {
+  @scala.inline
+  def apply(hashtag: java.lang.String = null, quote: java.lang.String = null): Anon_Hashtag = {
+    val __obj = js.Dynamic.literal()
+    if (hashtag != null) __obj.updateDynamic("hashtag")(hashtag)
+    if (quote != null) __obj.updateDynamic("quote")(quote)
+    __obj.asInstanceOf[Anon_Hashtag]
+  }
+}
+

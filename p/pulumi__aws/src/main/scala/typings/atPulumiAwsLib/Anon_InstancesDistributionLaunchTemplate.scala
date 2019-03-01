@@ -12,3 +12,16 @@ trait Anon_InstancesDistributionLaunchTemplate extends js.Object {
   var launchTemplate: atPulumiPulumiLib.outputMod.Input[Anon_LaunchTemplateSpecificationOverrides]
 }
 
+object Anon_InstancesDistributionLaunchTemplate {
+  @scala.inline
+  def apply(
+    launchTemplate: atPulumiPulumiLib.outputMod.Input[Anon_LaunchTemplateSpecificationOverrides],
+    instancesDistribution: atPulumiPulumiLib.outputMod.Input[Anon_OnDemandAllocationStrategyOnDemandBaseCapacity] = null
+  ): Anon_InstancesDistributionLaunchTemplate = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("launchTemplate")(launchTemplate.asInstanceOf[js.Any])
+    if (instancesDistribution != null) __obj.updateDynamic("instancesDistribution")(instancesDistribution.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_InstancesDistributionLaunchTemplate]
+  }
+}
+

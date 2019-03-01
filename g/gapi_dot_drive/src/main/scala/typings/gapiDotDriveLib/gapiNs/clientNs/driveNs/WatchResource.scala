@@ -13,3 +13,21 @@ trait WatchResource extends js.Object {
   var `type`: java.lang.String
 }
 
+object WatchResource {
+  @scala.inline
+  def apply(
+    address: java.lang.String,
+    expiration: scala.Double,
+    id: java.lang.String,
+    token: java.lang.String,
+    `type`: java.lang.String
+  ): WatchResource = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("expiration")(expiration)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("token")(token)
+    __obj.asInstanceOf[WatchResource]
+  }
+}
+

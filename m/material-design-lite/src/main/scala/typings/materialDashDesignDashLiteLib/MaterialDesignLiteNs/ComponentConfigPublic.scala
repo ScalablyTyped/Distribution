@@ -11,3 +11,18 @@ trait ComponentConfigPublic extends js.Object {
   var widget: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
 }
 
+object ComponentConfigPublic {
+  @scala.inline
+  def apply(
+    classAsString: java.lang.String,
+    cssClass: java.lang.String,
+    widget: java.lang.String | scala.Boolean = null
+  ): ComponentConfigPublic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("classAsString")(classAsString)
+    __obj.updateDynamic("cssClass")(cssClass)
+    if (widget != null) __obj.updateDynamic("widget")(widget.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ComponentConfigPublic]
+  }
+}
+

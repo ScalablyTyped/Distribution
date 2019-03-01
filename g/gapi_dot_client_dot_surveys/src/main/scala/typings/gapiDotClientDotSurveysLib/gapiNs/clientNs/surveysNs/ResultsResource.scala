@@ -13,3 +13,17 @@ trait ResultsResource extends js.Object {
   def get(request: gapiDotClientDotSurveysLib.Anon_AltFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[SurveyResults]
 }
 
+object ResultsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotSurveysLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[SurveyResults]
+    ]
+  ): ResultsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[ResultsResource]
+  }
+}
+

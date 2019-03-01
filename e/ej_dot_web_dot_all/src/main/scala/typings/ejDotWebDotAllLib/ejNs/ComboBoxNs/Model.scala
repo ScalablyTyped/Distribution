@@ -149,3 +149,88 @@ trait Model extends js.Object {
   var width: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
+    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
+    actionFailure: js.Function1[/* e */ ActionFailureEventArgs, scala.Unit] = null,
+    actionFailureTemplate: java.lang.String = null,
+    allowCustom: js.UndefOr[scala.Boolean] = js.undefined,
+    allowFiltering: js.UndefOr[scala.Boolean] = js.undefined,
+    autofill: js.UndefOr[scala.Boolean] = js.undefined,
+    change: js.Function1[/* e */ ChangeEventArgs, scala.Unit] = null,
+    close: js.Function1[/* e */ CloseEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    customValueSpecifier: js.Function1[/* e */ CustomValueSpecifierEventArgs, scala.Unit] = null,
+    dataSource: js.Any | js.Array[_] = null,
+    enableRtl: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: Fields = null,
+    filtering: js.Function1[/* e */ FilteringEventArgs, scala.Unit] = null,
+    focus: js.Function1[/* e */ FocusEventArgs, scala.Unit] = null,
+    footerTemplate: java.lang.String = null,
+    groupTemplate: java.lang.String = null,
+    headerTemplate: java.lang.String = null,
+    htmlAttributes: js.Any = null,
+    index: scala.Int | scala.Double = null,
+    itemTemplate: java.lang.String = null,
+    locale: java.lang.String = null,
+    noRecordsTemplate: java.lang.String = null,
+    open: js.Function1[/* e */ OpenEventArgs, scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    popupHeight: java.lang.String | scala.Double = null,
+    popupWidth: java.lang.String | scala.Double = null,
+    query: ejDotWebDotAllLib.ejNs.Query = null,
+    readonly: js.UndefOr[scala.Boolean] = js.undefined,
+    select: js.Function1[/* e */ SelectEventArgs, scala.Unit] = null,
+    showClearButton: js.UndefOr[scala.Boolean] = js.undefined,
+    sortOrder: SortOrder | java.lang.String = null,
+    text: java.lang.String = null,
+    value: scala.Double | java.lang.String = null,
+    width: scala.Double | java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
+    if (actionFailure != null) __obj.updateDynamic("actionFailure")(actionFailure)
+    if (actionFailureTemplate != null) __obj.updateDynamic("actionFailureTemplate")(actionFailureTemplate)
+    if (!js.isUndefined(allowCustom)) __obj.updateDynamic("allowCustom")(allowCustom)
+    if (!js.isUndefined(allowFiltering)) __obj.updateDynamic("allowFiltering")(allowFiltering)
+    if (!js.isUndefined(autofill)) __obj.updateDynamic("autofill")(autofill)
+    if (change != null) __obj.updateDynamic("change")(change)
+    if (close != null) __obj.updateDynamic("close")(close)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (customValueSpecifier != null) __obj.updateDynamic("customValueSpecifier")(customValueSpecifier)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableRtl)) __obj.updateDynamic("enableRtl")(enableRtl)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filtering != null) __obj.updateDynamic("filtering")(filtering)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (footerTemplate != null) __obj.updateDynamic("footerTemplate")(footerTemplate)
+    if (groupTemplate != null) __obj.updateDynamic("groupTemplate")(groupTemplate)
+    if (headerTemplate != null) __obj.updateDynamic("headerTemplate")(headerTemplate)
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (itemTemplate != null) __obj.updateDynamic("itemTemplate")(itemTemplate)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (noRecordsTemplate != null) __obj.updateDynamic("noRecordsTemplate")(noRecordsTemplate)
+    if (open != null) __obj.updateDynamic("open")(open)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (popupHeight != null) __obj.updateDynamic("popupHeight")(popupHeight.asInstanceOf[js.Any])
+    if (popupWidth != null) __obj.updateDynamic("popupWidth")(popupWidth.asInstanceOf[js.Any])
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (!js.isUndefined(readonly)) __obj.updateDynamic("readonly")(readonly)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (!js.isUndefined(showClearButton)) __obj.updateDynamic("showClearButton")(showClearButton)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder.asInstanceOf[js.Any])
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

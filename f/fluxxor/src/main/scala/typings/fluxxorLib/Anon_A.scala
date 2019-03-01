@@ -135,23 +135,19 @@ trait Anon_A extends js.Object {
     props: reactLib.reactMod.ReactNs.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNs.ReactNode*
   ): reactLib.reactMod.ReactNs.FunctionComponentElement[P] = js.native
+  def createElement[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[T] */, T /* <: reactLib.Element */](
+    `type`: java.lang.String,
+    props: reactLib.reactMod.ReactNs.ClassAttributes[T] with (P | scala.Null),
+    children: reactLib.reactMod.ReactNs.ReactNode*
+  ): reactLib.reactMod.ReactNs.DOMElement[P, T] = js.native
+  def createElement[P /* <: reactLib.reactMod.ReactNs.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[P, T] = js.native
   def createElement[P /* <: reactLib.reactMod.ReactNs.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ java.lang.String,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any,
     props: reactLib.reactMod.ReactNs.ClassAttributes[T] with (P | scala.Null),
     children: reactLib.reactMod.ReactNs.ReactNode*
   ): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[P, T] = js.native
   @JSName("createElement")
   def createElement_PDOMAttributesTElementDOMElement[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[T] */, T /* <: reactLib.Element */](`type`: java.lang.String): reactLib.reactMod.ReactNs.DOMElement[P, T] = js.native
-  @JSName("createElement")
-  def createElement_PDOMAttributesTElementDOMElement[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[T] */, T /* <: reactLib.Element */](
-    `type`: java.lang.String,
-    props: reactLib.reactMod.ReactNs.ClassAttributes[T] with (P | scala.Null),
-    children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.DOMElement[P, T] = js.native
-  @JSName("createElement")
-  def createElement_PHTMLAttributesTHTMLElementDetailedReactHTMLElement[P /* <: reactLib.reactMod.ReactNs.HTMLAttributes[T] */, T /* <: reactLib.HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ java.lang.String
-  ): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[P, T] = js.native
   @JSName("createElement")
   def createElement_PObjectReactElement[P /* <: js.Object */](`type`: reactLib.reactMod.ReactNs.FunctionComponent[P]): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   @JSName("createElement")
@@ -169,12 +165,10 @@ trait Anon_A extends js.Object {
     children: reactLib.reactMod.ReactNs.ReactNode*
   ): reactLib.reactMod.ReactNs.CElement[P, T] = js.native
   @JSName("createElement")
-  def createElement_PSVGAttributesTSVGElementReactSVGElement[P /* <: reactLib.reactMod.ReactNs.SVGAttributes[T] */, T /* <: reactLib.SVGElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ java.lang.String
-  ): reactLib.reactMod.ReactNs.ReactSVGElement = js.native
+  def createElement_PSVGAttributesTSVGElementReactSVGElement[P /* <: reactLib.reactMod.ReactNs.SVGAttributes[T] */, T /* <: reactLib.SVGElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any): reactLib.reactMod.ReactNs.ReactSVGElement = js.native
   @JSName("createElement")
   def createElement_PSVGAttributesTSVGElementReactSVGElement[P /* <: reactLib.reactMod.ReactNs.SVGAttributes[T] */, T /* <: reactLib.SVGElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ java.lang.String,
+    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any,
     props: reactLib.reactMod.ReactNs.ClassAttributes[T] with (P | scala.Null),
     children: reactLib.reactMod.ReactNs.ReactNode*
   ): reactLib.reactMod.ReactNs.ReactSVGElement = js.native
@@ -194,9 +188,7 @@ trait Anon_A extends js.Object {
     reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
     reactLib.HTMLInputElement
   ] = js.native
-  def createFactory(
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ java.lang.String
-  ): reactLib.reactMod.ReactNs.SVGFactory = js.native
+  def createFactory(`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 55 */ js.Any): reactLib.reactMod.ReactNs.SVGFactory = js.native
   def createFactory[P](
     `type`: reactLib.reactMod.ReactNs.ClassType[
       P, 
@@ -210,8 +202,7 @@ trait Anon_A extends js.Object {
   def createFactory[P](`type`: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]): reactLib.reactMod.ReactNs.Factory[P] = js.native
   // Custom components
   def createFactory[P](`type`: reactLib.reactMod.ReactNs.FunctionComponent[P]): reactLib.reactMod.ReactNs.FunctionComponentFactory[P] = js.native
-  @JSName("createFactory")
-  def createFactory_PDOMAttributesTElementDOMFactory[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[T] */, T /* <: reactLib.Element */](`type`: java.lang.String): reactLib.reactMod.ReactNs.DOMFactory[P, T] = js.native
+  def createFactory[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[T] */, T /* <: reactLib.Element */](`type`: java.lang.String): reactLib.reactMod.ReactNs.DOMFactory[P, T] = js.native
   @JSName("createFactory")
   def createFactory_PTComponentCComponentClass[P, T /* <: reactLib.reactMod.ReactNs.Component[P, reactLib.reactMod.ReactNs.ComponentState, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] */](`type`: reactLib.reactMod.ReactNs.ClassType[P, T, C]): reactLib.reactMod.ReactNs.CFactory[P, T] = js.native
   //
@@ -219,9 +210,7 @@ trait Anon_A extends js.Object {
   // ----------------------------------------------------------------------
   // DOM Elements
   @JSName("createFactory")
-  def createFactory_THTMLElementHTMLFactory[T /* <: reactLib.HTMLElement */](
-    `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ java.lang.String
-  ): reactLib.reactMod.ReactNs.HTMLFactory[T] = js.native
+  def createFactory_THTMLElementHTMLFactory[T /* <: reactLib.HTMLElement */](`type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ js.Any): reactLib.reactMod.ReactNs.HTMLFactory[T] = js.native
   def createRef[T](): reactLib.reactMod.ReactNs.RefObject[T] = js.native
   def forwardRef[T, P](Component: reactLib.reactMod.ReactNs.RefForwardingComponent[T, P]): reactLib.reactMod.ReactNs.ForwardRefExoticComponent[
     reactLib.reactMod.ReactNs.PropsWithoutRef[P] with reactLib.reactMod.ReactNs.RefAttributes[T]

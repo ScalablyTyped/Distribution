@@ -24,3 +24,20 @@ trait IGradientColor extends js.Object {
   var radial: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGradientColor {
+  @scala.inline
+  def apply(
+    destination: Point = null,
+    gradient: Gradient = null,
+    origin: Point = null,
+    radial: js.UndefOr[scala.Boolean] = js.undefined
+  ): IGradientColor = {
+    val __obj = js.Dynamic.literal()
+    if (destination != null) __obj.updateDynamic("destination")(destination)
+    if (gradient != null) __obj.updateDynamic("gradient")(gradient)
+    if (origin != null) __obj.updateDynamic("origin")(origin)
+    if (!js.isUndefined(radial)) __obj.updateDynamic("radial")(radial)
+    __obj.asInstanceOf[IGradientColor]
+  }
+}
+

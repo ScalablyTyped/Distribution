@@ -58,3 +58,36 @@ trait IFilterOptions extends js.Object {
   var `type`: js.UndefOr[scala.Double | java.lang.String] = js.undefined
 }
 
+object IFilterOptions {
+  @scala.inline
+  def apply(
+    ariaLabel: java.lang.String = null,
+    condition: scala.Double | (js.Function4[
+      /* searchTerm */ java.lang.String, 
+      /* cellValue */ js.Any, 
+      /* row */ IGridRow, 
+      /* column */ IGridColumn, 
+      scala.Boolean
+    ]) = null,
+    disableCancelFilterButton: js.UndefOr[scala.Boolean] = js.undefined,
+    flags: IFilterFlags = null,
+    noTerm: js.UndefOr[scala.Boolean] = js.undefined,
+    placeholder: java.lang.String = null,
+    selectOptions: js.Array[ISelectOption] = null,
+    term: java.lang.String = null,
+    `type`: scala.Double | java.lang.String = null
+  ): IFilterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (ariaLabel != null) __obj.updateDynamic("ariaLabel")(ariaLabel)
+    if (condition != null) __obj.updateDynamic("condition")(condition.asInstanceOf[js.Any])
+    if (!js.isUndefined(disableCancelFilterButton)) __obj.updateDynamic("disableCancelFilterButton")(disableCancelFilterButton)
+    if (flags != null) __obj.updateDynamic("flags")(flags)
+    if (!js.isUndefined(noTerm)) __obj.updateDynamic("noTerm")(noTerm)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (selectOptions != null) __obj.updateDynamic("selectOptions")(selectOptions)
+    if (term != null) __obj.updateDynamic("term")(term)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IFilterOptions]
+  }
+}
+

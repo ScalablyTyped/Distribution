@@ -15,3 +15,26 @@ trait MoleOptions extends js.Object {
   var titleEl: js.UndefOr[stdLib.HTMLElement] = js.undefined
 }
 
+object MoleOptions {
+  @scala.inline
+  def apply(
+    el: stdLib.HTMLElement,
+    chrome: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    minimizedTitleEl: stdLib.HTMLElement = null,
+    title: java.lang.String = null,
+    titleButtons: js.Array[MoleButtonDescriptor] = null,
+    titleEl: stdLib.HTMLElement = null
+  ): MoleOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("el")(el)
+    if (!js.isUndefined(chrome)) __obj.updateDynamic("chrome")(chrome)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (minimizedTitleEl != null) __obj.updateDynamic("minimizedTitleEl")(minimizedTitleEl)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (titleButtons != null) __obj.updateDynamic("titleButtons")(titleButtons)
+    if (titleEl != null) __obj.updateDynamic("titleEl")(titleEl)
+    __obj.asInstanceOf[MoleOptions]
+  }
+}
+

@@ -23,3 +23,22 @@ trait CustomFileDetails extends js.Object {
   var title: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CustomFileDetails {
+  @scala.inline
+  def apply(
+    action: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    size: js.UndefOr[scala.Boolean] = js.undefined,
+    status: js.UndefOr[scala.Boolean] = js.undefined,
+    title: js.UndefOr[scala.Boolean] = js.undefined
+  ): CustomFileDetails = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(action)) __obj.updateDynamic("action")(action)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(size)) __obj.updateDynamic("size")(size)
+    if (!js.isUndefined(status)) __obj.updateDynamic("status")(status)
+    if (!js.isUndefined(title)) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[CustomFileDetails]
+  }
+}
+

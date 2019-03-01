@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object prettierLibStrings {
   @js.native
-  sealed trait `'` extends js.Object
+  sealed trait _quote extends js.Object
   
   @js.native
   sealed trait BACKSLASH extends js.Object
@@ -22,7 +22,8 @@ object prettierLibStrings {
   sealed trait always extends js.Object
   
   @js.native
-  sealed trait angular extends js.Object
+  sealed trait angular
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
   sealed trait auto extends js.Object
@@ -31,13 +32,16 @@ object prettierLibStrings {
   sealed trait avoid extends js.Object
   
   @js.native
-  sealed trait babel extends js.Object
+  sealed trait babel
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
-  sealed trait `babel-flow` extends js.Object
+  sealed trait `babel-flow`
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
-  sealed trait babylon extends js.Object
+  sealed trait babylon
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
   sealed trait boolean extends js.Object
@@ -58,7 +62,8 @@ object prettierLibStrings {
   sealed trait crlf extends js.Object
   
   @js.native
-  sealed trait css extends js.Object
+  sealed trait css
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
   sealed trait es5 extends js.Object
@@ -67,16 +72,19 @@ object prettierLibStrings {
   sealed trait fill extends js.Object
   
   @js.native
-  sealed trait flow extends js.Object
+  sealed trait flow
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
-  sealed trait graphql extends js.Object
+  sealed trait graphql
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
   sealed trait group extends js.Object
   
   @js.native
-  sealed trait html extends js.Object
+  sealed trait html
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
   sealed trait `if-break` extends js.Object
@@ -91,16 +99,20 @@ object prettierLibStrings {
   sealed trait int extends js.Object
   
   @js.native
-  sealed trait json extends js.Object
+  sealed trait json
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
-  sealed trait `json-stringify` extends js.Object
+  sealed trait `json-stringify`
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
-  sealed trait json5 extends js.Object
+  sealed trait json5
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
-  sealed trait less extends js.Object
+  sealed trait less
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
   sealed trait lf extends js.Object
@@ -115,10 +127,12 @@ object prettierLibStrings {
   sealed trait `line-suffix-boundary` extends js.Object
   
   @js.native
-  sealed trait markdown extends js.Object
+  sealed trait markdown
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
-  sealed trait mdx extends js.Object
+  sealed trait mdx
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
   sealed trait never extends js.Object
@@ -130,7 +144,8 @@ object prettierLibStrings {
   sealed trait path extends js.Object
   
   @js.native
-  sealed trait postcss extends js.Object
+  sealed trait postcss
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
   sealed trait preserve extends js.Object
@@ -139,22 +154,26 @@ object prettierLibStrings {
   sealed trait root extends js.Object
   
   @js.native
-  sealed trait scss extends js.Object
+  sealed trait scss
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
   sealed trait strict extends js.Object
   
   @js.native
-  sealed trait typescript extends js.Object
+  sealed trait typescript
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
-  sealed trait vue extends js.Object
+  sealed trait vue
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @js.native
-  sealed trait yaml extends js.Object
+  sealed trait yaml
+    extends prettierLib.prettierMod.BuiltInParserName
   
   @scala.inline
-  def `'`: `'` = "'".asInstanceOf[`'`]
+  def _quote: _quote = "'".asInstanceOf[_quote]
   @scala.inline
   def BACKSLASH: BACKSLASH = "\"".asInstanceOf[BACKSLASH]
   @scala.inline

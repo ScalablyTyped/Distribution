@@ -15,3 +15,20 @@ trait AggregatedDataForResultTrend extends js.Object {
   var totalTests: scala.Double
 }
 
+object AggregatedDataForResultTrend {
+  @scala.inline
+  def apply(
+    duration: js.Any,
+    resultsByOutcome: org.scalablytyped.runtime.NumberDictionary[AggregatedResultsByOutcome],
+    testResultsContext: TestResultsContext,
+    totalTests: scala.Double
+  ): AggregatedDataForResultTrend = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("resultsByOutcome")(resultsByOutcome)
+    __obj.updateDynamic("testResultsContext")(testResultsContext)
+    __obj.updateDynamic("totalTests")(totalTests)
+    __obj.asInstanceOf[AggregatedDataForResultTrend]
+  }
+}
+

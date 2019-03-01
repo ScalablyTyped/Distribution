@@ -7,13 +7,16 @@ import scala.scalajs.js.annotation._
 
 object pouchdbDashMapreduceLibStrings {
   @js.native
-  sealed trait _count extends js.Object
+  sealed trait _count
+    extends pouchdbDashMapreduceLib.PouchDBNs.BuiltInReducers
   
   @js.native
-  sealed trait _stats extends js.Object
+  sealed trait _stats
+    extends pouchdbDashMapreduceLib.PouchDBNs.BuiltInReducers
   
   @js.native
-  sealed trait _sum extends js.Object
+  sealed trait _sum
+    extends pouchdbDashMapreduceLib.PouchDBNs.BuiltInReducers
   
   @js.native
   sealed trait ok extends js.Object

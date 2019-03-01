@@ -68,3 +68,42 @@ trait SmtpPoolOptions extends js.Object {
   var tls: js.UndefOr[nodeLib.tlsMod.ConnectionOptions] = js.undefined
 }
 
+object SmtpPoolOptions {
+  @scala.inline
+  def apply(
+    auth: AuthOptions = null,
+    authMethod: java.lang.String = null,
+    connectionTimeout: scala.Int | scala.Double = null,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    greetingTimeout: scala.Int | scala.Double = null,
+    host: java.lang.String = null,
+    ignoreTLS: js.UndefOr[scala.Boolean] = js.undefined,
+    localAddress: java.lang.String = null,
+    maxConnections: scala.Int | scala.Double = null,
+    maxMessages: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    secure: js.UndefOr[scala.Boolean] = js.undefined,
+    socketTimeout: scala.Int | scala.Double = null,
+    tls: nodeLib.tlsMod.ConnectionOptions = null
+  ): SmtpPoolOptions = {
+    val __obj = js.Dynamic.literal()
+    if (auth != null) __obj.updateDynamic("auth")(auth)
+    if (authMethod != null) __obj.updateDynamic("authMethod")(authMethod)
+    if (connectionTimeout != null) __obj.updateDynamic("connectionTimeout")(connectionTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (greetingTimeout != null) __obj.updateDynamic("greetingTimeout")(greetingTimeout.asInstanceOf[js.Any])
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (!js.isUndefined(ignoreTLS)) __obj.updateDynamic("ignoreTLS")(ignoreTLS)
+    if (localAddress != null) __obj.updateDynamic("localAddress")(localAddress)
+    if (maxConnections != null) __obj.updateDynamic("maxConnections")(maxConnections.asInstanceOf[js.Any])
+    if (maxMessages != null) __obj.updateDynamic("maxMessages")(maxMessages.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(secure)) __obj.updateDynamic("secure")(secure)
+    if (socketTimeout != null) __obj.updateDynamic("socketTimeout")(socketTimeout.asInstanceOf[js.Any])
+    if (tls != null) __obj.updateDynamic("tls")(tls)
+    __obj.asInstanceOf[SmtpPoolOptions]
+  }
+}
+

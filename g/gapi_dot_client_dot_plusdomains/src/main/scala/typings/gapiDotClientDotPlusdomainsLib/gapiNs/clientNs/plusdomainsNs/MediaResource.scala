@@ -13,3 +13,17 @@ trait MediaResource extends js.Object {
   def insert(request: gapiDotClientDotPlusdomainsLib.Anon_AltCollectionFields): gapiDotClientLib.gapiNs.clientNs.Request[Media]
 }
 
+object MediaResource {
+  @scala.inline
+  def apply(
+    insert: js.Function1[
+      gapiDotClientDotPlusdomainsLib.Anon_AltCollectionFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Media]
+    ]
+  ): MediaResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("insert")(insert)
+    __obj.asInstanceOf[MediaResource]
+  }
+}
+

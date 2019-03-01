@@ -37,3 +37,34 @@ trait Snapshot extends js.Object {
   var uniqueName: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Snapshot {
+  @scala.inline
+  def apply(
+    coverImage: SnapshotImage = null,
+    description: java.lang.String = null,
+    driveId: java.lang.String = null,
+    durationMillis: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    lastModifiedMillis: java.lang.String = null,
+    progressValue: java.lang.String = null,
+    title: java.lang.String = null,
+    `type`: java.lang.String = null,
+    uniqueName: java.lang.String = null
+  ): Snapshot = {
+    val __obj = js.Dynamic.literal()
+    if (coverImage != null) __obj.updateDynamic("coverImage")(coverImage)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (driveId != null) __obj.updateDynamic("driveId")(driveId)
+    if (durationMillis != null) __obj.updateDynamic("durationMillis")(durationMillis)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastModifiedMillis != null) __obj.updateDynamic("lastModifiedMillis")(lastModifiedMillis)
+    if (progressValue != null) __obj.updateDynamic("progressValue")(progressValue)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (uniqueName != null) __obj.updateDynamic("uniqueName")(uniqueName)
+    __obj.asInstanceOf[Snapshot]
+  }
+}
+

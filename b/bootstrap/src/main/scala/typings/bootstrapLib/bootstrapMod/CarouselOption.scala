@@ -53,3 +53,24 @@ trait CarouselOption extends js.Object {
   var wrap: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CarouselOption {
+  @scala.inline
+  def apply(
+    interval: bootstrapLib.bootstrapLibNumbers.`false` | scala.Double = null,
+    keyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    pause: bootstrapLib.bootstrapLibStrings.hover | bootstrapLib.bootstrapLibNumbers.`false` = null,
+    slide: bootstrapLib.bootstrapLibStrings.next | bootstrapLib.bootstrapLibStrings.prev | bootstrapLib.bootstrapLibNumbers.`false` = null,
+    touch: js.UndefOr[scala.Boolean] = js.undefined,
+    wrap: js.UndefOr[scala.Boolean] = js.undefined
+  ): CarouselOption = {
+    val __obj = js.Dynamic.literal()
+    if (interval != null) __obj.updateDynamic("interval")(interval.asInstanceOf[js.Any])
+    if (!js.isUndefined(keyboard)) __obj.updateDynamic("keyboard")(keyboard)
+    if (pause != null) __obj.updateDynamic("pause")(pause.asInstanceOf[js.Any])
+    if (slide != null) __obj.updateDynamic("slide")(slide.asInstanceOf[js.Any])
+    if (!js.isUndefined(touch)) __obj.updateDynamic("touch")(touch)
+    if (!js.isUndefined(wrap)) __obj.updateDynamic("wrap")(wrap)
+    __obj.asInstanceOf[CarouselOption]
+  }
+}
+

@@ -26,3 +26,24 @@ trait OpenFailureEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object OpenFailureEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    failureType: java.lang.String = null,
+    model: Model = null,
+    status: scala.Int | scala.Double = null,
+    statusText: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): OpenFailureEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (failureType != null) __obj.updateDynamic("failureType")(failureType)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (status != null) __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (statusText != null) __obj.updateDynamic("statusText")(statusText)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[OpenFailureEventArgs]
+  }
+}
+

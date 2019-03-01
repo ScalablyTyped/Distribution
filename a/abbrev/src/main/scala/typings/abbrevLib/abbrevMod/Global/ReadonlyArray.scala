@@ -9,3 +9,12 @@ trait ReadonlyArray[T] extends js.Object {
   def abbrev(): org.scalablytyped.runtime.StringDictionary[java.lang.String]
 }
 
+object ReadonlyArray {
+  @scala.inline
+  def apply[T](abbrev: js.Function0[org.scalablytyped.runtime.StringDictionary[java.lang.String]]): ReadonlyArray[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("abbrev")(abbrev)
+    __obj.asInstanceOf[ReadonlyArray[T]]
+  }
+}
+

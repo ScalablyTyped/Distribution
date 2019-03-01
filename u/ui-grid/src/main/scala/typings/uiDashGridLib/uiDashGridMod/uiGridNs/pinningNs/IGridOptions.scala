@@ -14,3 +14,12 @@ trait IGridOptions extends js.Object {
   var enablePinning: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IGridOptions {
+  @scala.inline
+  def apply(enablePinning: js.UndefOr[scala.Boolean] = js.undefined): IGridOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enablePinning)) __obj.updateDynamic("enablePinning")(enablePinning)
+    __obj.asInstanceOf[IGridOptions]
+  }
+}
+

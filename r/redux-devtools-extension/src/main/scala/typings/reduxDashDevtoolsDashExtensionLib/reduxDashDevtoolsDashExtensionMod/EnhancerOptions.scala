@@ -132,3 +132,54 @@ trait EnhancerOptions extends js.Object {
   var traceLimit: js.UndefOr[scala.Double] = js.undefined
 }
 
+object EnhancerOptions {
+  @scala.inline
+  def apply(
+    actionCreators: js.Array[reduxLib.reduxMod.ActionCreator[_]] | org.scalablytyped.runtime.StringDictionary[reduxLib.reduxMod.ActionCreator[_]] = null,
+    actionSanitizer: js.Function2[
+      /* action */ reduxLib.reduxMod.Action[_], 
+      /* id */ scala.Double, 
+      reduxLib.reduxMod.Action[_]
+    ] = null,
+    actionsBlacklist: java.lang.String | js.Array[java.lang.String] = null,
+    actionsWhitelist: java.lang.String | js.Array[java.lang.String] = null,
+    autoPause: js.UndefOr[scala.Boolean] = js.undefined,
+    features: reduxDashDevtoolsDashExtensionLib.Anon_Custom = null,
+    latency: scala.Int | scala.Double = null,
+    maxAge: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    pauseActionType: java.lang.String = null,
+    predicate: js.Function2[/* state */ js.Any, /* action */ reduxLib.reduxMod.Action[_], scala.Boolean] = null,
+    serialize: scala.Boolean | reduxDashDevtoolsDashExtensionLib.Anon_Date = null,
+    shouldCatchErrors: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldHotReload: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldRecordChanges: js.UndefOr[scala.Boolean] = js.undefined,
+    shouldStartLocked: js.UndefOr[scala.Boolean] = js.undefined,
+    stateSanitizer: js.Function2[/* state */ js.Any, /* index */ scala.Double, _] = null,
+    trace: scala.Boolean | (js.Function1[/* action */ reduxLib.reduxMod.Action[_], java.lang.String]) = null,
+    traceLimit: scala.Int | scala.Double = null
+  ): EnhancerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (actionCreators != null) __obj.updateDynamic("actionCreators")(actionCreators.asInstanceOf[js.Any])
+    if (actionSanitizer != null) __obj.updateDynamic("actionSanitizer")(actionSanitizer)
+    if (actionsBlacklist != null) __obj.updateDynamic("actionsBlacklist")(actionsBlacklist.asInstanceOf[js.Any])
+    if (actionsWhitelist != null) __obj.updateDynamic("actionsWhitelist")(actionsWhitelist.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoPause)) __obj.updateDynamic("autoPause")(autoPause)
+    if (features != null) __obj.updateDynamic("features")(features)
+    if (latency != null) __obj.updateDynamic("latency")(latency.asInstanceOf[js.Any])
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (pauseActionType != null) __obj.updateDynamic("pauseActionType")(pauseActionType)
+    if (predicate != null) __obj.updateDynamic("predicate")(predicate)
+    if (serialize != null) __obj.updateDynamic("serialize")(serialize.asInstanceOf[js.Any])
+    if (!js.isUndefined(shouldCatchErrors)) __obj.updateDynamic("shouldCatchErrors")(shouldCatchErrors)
+    if (!js.isUndefined(shouldHotReload)) __obj.updateDynamic("shouldHotReload")(shouldHotReload)
+    if (!js.isUndefined(shouldRecordChanges)) __obj.updateDynamic("shouldRecordChanges")(shouldRecordChanges)
+    if (!js.isUndefined(shouldStartLocked)) __obj.updateDynamic("shouldStartLocked")(shouldStartLocked)
+    if (stateSanitizer != null) __obj.updateDynamic("stateSanitizer")(stateSanitizer)
+    if (trace != null) __obj.updateDynamic("trace")(trace.asInstanceOf[js.Any])
+    if (traceLimit != null) __obj.updateDynamic("traceLimit")(traceLimit.asInstanceOf[js.Any])
+    __obj.asInstanceOf[EnhancerOptions]
+  }
+}
+

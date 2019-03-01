@@ -24,3 +24,20 @@ trait TabsGroupsContentDefaults extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object TabsGroupsContentDefaults {
+  @scala.inline
+  def apply(
+    height: java.lang.String | scala.Double = null,
+    isBig: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    width: java.lang.String | scala.Double = null
+  ): TabsGroupsContentDefaults = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(isBig)) __obj.updateDynamic("isBig")(isBig)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TabsGroupsContentDefaults]
+  }
+}
+

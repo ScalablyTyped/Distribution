@@ -103,3 +103,48 @@ trait ConverterOptions extends js.Object {
   var workerNum: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ConverterOptions {
+  @scala.inline
+  def apply(
+    checkColumn: js.UndefOr[scala.Boolean] = js.undefined,
+    checkType: js.UndefOr[scala.Boolean] = js.undefined,
+    constructResult: js.UndefOr[scala.Boolean] = js.undefined,
+    delimiter: java.lang.String | js.Array[java.lang.String] = null,
+    eol: java.lang.String = null,
+    escape: java.lang.String = null,
+    flatKeys: js.UndefOr[scala.Boolean] = js.undefined,
+    fork: scala.Int | scala.Double = null,
+    headers: js.Array[java.lang.String] = null,
+    ignoreColumns: js.Array[scala.Double] = null,
+    ignoreEmpty: js.UndefOr[scala.Boolean] = js.undefined,
+    includeColumns: js.Array[scala.Double] = null,
+    maxRowLength: scala.Int | scala.Double = null,
+    noheader: js.UndefOr[scala.Boolean] = js.undefined,
+    quote: java.lang.String = null,
+    toArrayString: js.UndefOr[scala.Boolean] = js.undefined,
+    trim: js.UndefOr[scala.Boolean] = js.undefined,
+    workerNum: scala.Int | scala.Double = null
+  ): ConverterOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(checkColumn)) __obj.updateDynamic("checkColumn")(checkColumn)
+    if (!js.isUndefined(checkType)) __obj.updateDynamic("checkType")(checkType)
+    if (!js.isUndefined(constructResult)) __obj.updateDynamic("constructResult")(constructResult)
+    if (delimiter != null) __obj.updateDynamic("delimiter")(delimiter.asInstanceOf[js.Any])
+    if (eol != null) __obj.updateDynamic("eol")(eol)
+    if (escape != null) __obj.updateDynamic("escape")(escape)
+    if (!js.isUndefined(flatKeys)) __obj.updateDynamic("flatKeys")(flatKeys)
+    if (fork != null) __obj.updateDynamic("fork")(fork.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (ignoreColumns != null) __obj.updateDynamic("ignoreColumns")(ignoreColumns)
+    if (!js.isUndefined(ignoreEmpty)) __obj.updateDynamic("ignoreEmpty")(ignoreEmpty)
+    if (includeColumns != null) __obj.updateDynamic("includeColumns")(includeColumns)
+    if (maxRowLength != null) __obj.updateDynamic("maxRowLength")(maxRowLength.asInstanceOf[js.Any])
+    if (!js.isUndefined(noheader)) __obj.updateDynamic("noheader")(noheader)
+    if (quote != null) __obj.updateDynamic("quote")(quote)
+    if (!js.isUndefined(toArrayString)) __obj.updateDynamic("toArrayString")(toArrayString)
+    if (!js.isUndefined(trim)) __obj.updateDynamic("trim")(trim)
+    if (workerNum != null) __obj.updateDynamic("workerNum")(workerNum.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConverterOptions]
+  }
+}
+

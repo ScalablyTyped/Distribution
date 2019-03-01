@@ -19,3 +19,20 @@ trait ListSessionsResponse extends js.Object {
   var session: js.UndefOr[js.Array[Session]] = js.undefined
 }
 
+object ListSessionsResponse {
+  @scala.inline
+  def apply(
+    deletedSession: js.Array[Session] = null,
+    hasMoreData: js.UndefOr[scala.Boolean] = js.undefined,
+    nextPageToken: java.lang.String = null,
+    session: js.Array[Session] = null
+  ): ListSessionsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (deletedSession != null) __obj.updateDynamic("deletedSession")(deletedSession)
+    if (!js.isUndefined(hasMoreData)) __obj.updateDynamic("hasMoreData")(hasMoreData)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (session != null) __obj.updateDynamic("session")(session)
+    __obj.asInstanceOf[ListSessionsResponse]
+  }
+}
+

@@ -32,3 +32,24 @@ trait UpdateTooltipEventUIParam extends js.Object {
   var y: js.UndefOr[js.Any] = js.undefined
 }
 
+object UpdateTooltipEventUIParam {
+  @scala.inline
+  def apply(
+    element: js.Any = null,
+    item: js.Any = null,
+    owner: js.Any = null,
+    text: js.Any = null,
+    x: js.Any = null,
+    y: js.Any = null
+  ): UpdateTooltipEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (x != null) __obj.updateDynamic("x")(x)
+    if (y != null) __obj.updateDynamic("y")(y)
+    __obj.asInstanceOf[UpdateTooltipEventUIParam]
+  }
+}
+

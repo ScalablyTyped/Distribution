@@ -59,3 +59,32 @@ trait FeedDialogOptions extends BaseDialogOptions {
   var to: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FeedDialogOptions {
+  @scala.inline
+  def apply(
+    method: java.lang.String,
+    caption: java.lang.String = null,
+    description: java.lang.String = null,
+    from: java.lang.String = null,
+    link: java.lang.String = null,
+    name: java.lang.String = null,
+    picture: java.lang.String = null,
+    ref: java.lang.String = null,
+    source: java.lang.String = null,
+    to: java.lang.String = null
+  ): FeedDialogOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("method")(method)
+    if (caption != null) __obj.updateDynamic("caption")(caption)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (link != null) __obj.updateDynamic("link")(link)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (picture != null) __obj.updateDynamic("picture")(picture)
+    if (ref != null) __obj.updateDynamic("ref")(ref)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (to != null) __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[FeedDialogOptions]
+  }
+}
+

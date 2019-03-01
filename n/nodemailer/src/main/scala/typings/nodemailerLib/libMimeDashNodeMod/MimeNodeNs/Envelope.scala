@@ -12,3 +12,16 @@ trait Envelope extends js.Object {
   var to: js.Array[java.lang.String]
 }
 
+object Envelope {
+  @scala.inline
+  def apply(
+    from: java.lang.String | nodemailerLib.nodemailerLibNumbers.`false`,
+    to: js.Array[java.lang.String]
+  ): Envelope = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("from")(from.asInstanceOf[js.Any])
+    __obj.updateDynamic("to")(to)
+    __obj.asInstanceOf[Envelope]
+  }
+}
+

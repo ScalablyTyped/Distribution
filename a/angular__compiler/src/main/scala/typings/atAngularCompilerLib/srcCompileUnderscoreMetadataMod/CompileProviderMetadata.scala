@@ -15,3 +15,26 @@ trait CompileProviderMetadata extends js.Object {
   var useValue: js.UndefOr[js.Any] = js.undefined
 }
 
+object CompileProviderMetadata {
+  @scala.inline
+  def apply(
+    token: CompileTokenMetadata,
+    deps: js.Array[CompileDiDependencyMetadata] = null,
+    multi: js.UndefOr[scala.Boolean] = js.undefined,
+    useClass: CompileTypeMetadata = null,
+    useExisting: CompileTokenMetadata = null,
+    useFactory: CompileFactoryMetadata = null,
+    useValue: js.Any = null
+  ): CompileProviderMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("token")(token)
+    if (deps != null) __obj.updateDynamic("deps")(deps)
+    if (!js.isUndefined(multi)) __obj.updateDynamic("multi")(multi)
+    if (useClass != null) __obj.updateDynamic("useClass")(useClass)
+    if (useExisting != null) __obj.updateDynamic("useExisting")(useExisting)
+    if (useFactory != null) __obj.updateDynamic("useFactory")(useFactory)
+    if (useValue != null) __obj.updateDynamic("useValue")(useValue)
+    __obj.asInstanceOf[CompileProviderMetadata]
+  }
+}
+

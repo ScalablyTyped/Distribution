@@ -11,3 +11,18 @@ trait Keyboard extends js.Object {
   def parseKey(event: js.Any): java.lang.String
 }
 
+object Keyboard {
+  @scala.inline
+  def apply(
+    findFocusable: js.Function1[js.Object, js.Object],
+    handleKey: js.Function3[js.Any, js.Any, js.Any, scala.Unit],
+    parseKey: js.Function1[js.Any, java.lang.String]
+  ): Keyboard = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("findFocusable")(findFocusable)
+    __obj.updateDynamic("handleKey")(handleKey)
+    __obj.updateDynamic("parseKey")(parseKey)
+    __obj.asInstanceOf[Keyboard]
+  }
+}
+

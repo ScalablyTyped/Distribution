@@ -20,3 +20,18 @@ trait FilterMembersLoadedEventUIParam extends js.Object {
   var rootFilterMembers: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object FilterMembersLoadedEventUIParam {
+  @scala.inline
+  def apply(
+    filterMembers: js.Array[_] = null,
+    parent: java.lang.String = null,
+    rootFilterMembers: js.Array[_] = null
+  ): FilterMembersLoadedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (filterMembers != null) __obj.updateDynamic("filterMembers")(filterMembers)
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (rootFilterMembers != null) __obj.updateDynamic("rootFilterMembers")(rootFilterMembers)
+    __obj.asInstanceOf[FilterMembersLoadedEventUIParam]
+  }
+}
+

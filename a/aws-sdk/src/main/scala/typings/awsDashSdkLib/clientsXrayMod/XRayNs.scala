@@ -1706,6 +1706,12 @@ object XRayNs extends js.Object {
     var ServiceIds: js.UndefOr[ServiceIds] = js.undefined
   }
   
+  trait _EncryptionStatus extends js.Object
+  
+  trait _EncryptionType extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AliasList = js.Array[Alias]
   type AliasNames = js.Array[String]
@@ -1720,8 +1726,8 @@ object XRayNs extends js.Object {
   type EC2InstanceId = java.lang.String
   type EdgeList = js.Array[Edge]
   type EncryptionKeyId = java.lang.String
-  type EncryptionStatus = awsDashSdkLib.awsDashSdkLibStrings.UPDATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | java.lang.String
-  type EncryptionType = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.KMS | java.lang.String
+  type EncryptionStatus = _EncryptionStatus | java.lang.String
+  type EncryptionType = _EncryptionType | java.lang.String
   type ErrorRootCauseEntityPath = js.Array[ErrorRootCauseEntity]
   type ErrorRootCauseServices = js.Array[ErrorRootCauseService]
   type ErrorRootCauses = js.Array[ErrorRootCause]
@@ -1784,6 +1790,6 @@ object XRayNs extends js.Object {
   type UnprocessedTraceSegmentList = js.Array[UnprocessedTraceSegment]
   type ValuesWithServiceIds = js.Array[ValueWithServiceIds]
   type Version = scala.Double
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2016-04-12` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

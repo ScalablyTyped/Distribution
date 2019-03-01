@@ -5,8 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CustomArchiveLayoutOptions extends js.Object {
+trait CustomArchiveLayoutOptions extends ArchiveLayoutOptions {
   var stylesheet: java.lang.String
   var `type`: opentokLib.opentokLibStrings.custom
+}
+
+object CustomArchiveLayoutOptions {
+  @scala.inline
+  def apply(stylesheet: java.lang.String, `type`: opentokLib.opentokLibStrings.custom): CustomArchiveLayoutOptions = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("stylesheet")(stylesheet)
+    __obj.asInstanceOf[CustomArchiveLayoutOptions]
+  }
 }
 

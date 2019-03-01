@@ -7,43 +7,56 @@ import scala.scalajs.js.annotation._
 
 object jwsLibStrings {
   @js.native
-  sealed trait ES256 extends js.Object
+  sealed trait ES256
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait ES384 extends js.Object
+  sealed trait ES384
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait ES512 extends js.Object
+  sealed trait ES512
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait HS256 extends js.Object
+  sealed trait HS256
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait HS384 extends js.Object
+  sealed trait HS384
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait HS512 extends js.Object
+  sealed trait HS512
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait PS256 extends js.Object
+  sealed trait PS256
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait PS384 extends js.Object
+  sealed trait PS384
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait PS512 extends js.Object
+  sealed trait PS512
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait RS256 extends js.Object
+  sealed trait RS256
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait RS384 extends js.Object
+  sealed trait RS384
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait RS512 extends js.Object
+  sealed trait RS512
+    extends jwsLib.jwsMod.Algorithm
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends jwsLib.jwsMod.Algorithm
   
   @scala.inline
   def ES256: ES256 = "ES256".asInstanceOf[ES256]

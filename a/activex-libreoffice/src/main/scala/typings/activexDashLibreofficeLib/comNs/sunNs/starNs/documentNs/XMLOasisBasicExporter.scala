@@ -16,3 +16,32 @@ trait XMLOasisBasicExporter extends XXMLBasicExporter {
   def createWithHandler(DocumentHandler: activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler): scala.Unit
 }
 
+object XMLOasisBasicExporter {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    createWithHandler: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.xmlNs.saxNs.XDocumentHandler, 
+      scala.Unit
+    ],
+    filter: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Boolean
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setSourceDocument: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, scala.Unit]
+  ): XMLOasisBasicExporter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("createWithHandler")(createWithHandler)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setSourceDocument")(setSourceDocument)
+    __obj.asInstanceOf[XMLOasisBasicExporter]
+  }
+}
+

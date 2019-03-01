@@ -16,3 +16,12 @@ trait LogMessageParams extends js.Object {
   var `type`: MessageType
 }
 
+object LogMessageParams {
+  @scala.inline
+  def apply(message: java.lang.String, `type`: MessageType): LogMessageParams = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[LogMessageParams]
+  }
+}
+

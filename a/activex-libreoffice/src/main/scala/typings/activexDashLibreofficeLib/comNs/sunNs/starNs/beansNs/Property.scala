@@ -33,3 +33,20 @@ trait Property extends js.Object {
   var Type: activexDashLibreofficeLib.`type`
 }
 
+object Property {
+  @scala.inline
+  def apply(
+    Attributes: scala.Double,
+    Handle: scala.Double,
+    Name: java.lang.String,
+    Type: activexDashLibreofficeLib.`type`
+  ): Property = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Attributes")(Attributes)
+    __obj.updateDynamic("Handle")(Handle)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("Type")(Type)
+    __obj.asInstanceOf[Property]
+  }
+}
+

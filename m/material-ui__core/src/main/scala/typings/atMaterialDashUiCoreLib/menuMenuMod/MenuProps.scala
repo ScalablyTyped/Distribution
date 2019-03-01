@@ -22,3 +22,32 @@ import scala.scalajs.js.annotation._
   var transitionDuration: js.UndefOr[js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto] = js.undefined
 }
 
+object MenuProps {
+  @scala.inline
+  def apply(
+    MenuListProps: stdLib.Partial[atMaterialDashUiCoreLib.menulistMenuListMod.MenuListProps] = null,
+    PaperProps: stdLib.Partial[atMaterialDashUiCoreLib.paperPaperMod.PaperProps] = null,
+    PopoverClasses: stdLib.Partial[
+      atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[atMaterialDashUiCoreLib.popoverPopoverMod.PopoverClassKey]
+    ] = null,
+    className: java.lang.String = null,
+    classes: stdLib.Partial[atMaterialDashUiCoreLib.stylesWithStylesMod.ClassNameMap[MenuClassKey]] = null,
+    disableAutoFocusItem: js.UndefOr[scala.Boolean] = js.undefined,
+    innerRef: reactLib.reactMod.ReactNs.Ref[_] | reactLib.reactMod.ReactNs.RefObject[_] = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null,
+    transitionDuration: js.Any | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.auto = null
+  ): MenuProps = {
+    val __obj = js.Dynamic.literal()
+    if (MenuListProps != null) __obj.updateDynamic("MenuListProps")(MenuListProps)
+    if (PaperProps != null) __obj.updateDynamic("PaperProps")(PaperProps)
+    if (PopoverClasses != null) __obj.updateDynamic("PopoverClasses")(PopoverClasses)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (!js.isUndefined(disableAutoFocusItem)) __obj.updateDynamic("disableAutoFocusItem")(disableAutoFocusItem)
+    if (innerRef != null) __obj.updateDynamic("innerRef")(innerRef.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (transitionDuration != null) __obj.updateDynamic("transitionDuration")(transitionDuration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MenuProps]
+  }
+}
+

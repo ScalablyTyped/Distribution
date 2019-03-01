@@ -180,3 +180,169 @@ trait CycleOptions extends js.Object {
   var width: js.UndefOr[js.Any] = js.undefined
 }
 
+object CycleOptions {
+  @scala.inline
+  def apply(
+    activePagerClass: java.lang.String = null,
+    after: js.Function4[
+      /* currSlideElement */ stdLib.Element, 
+      /* nextSlideElement */ stdLib.Element, 
+      /* options */ CycleOptions, 
+      /* forwardFlag */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    allowPagerClickBubble: js.UndefOr[scala.Boolean] = js.undefined,
+    animIn: js.Any = null,
+    animOut: js.Any = null,
+    aspect: js.UndefOr[scala.Boolean] = js.undefined,
+    autostop: js.UndefOr[scala.Boolean] = js.undefined,
+    autostopCount: scala.Int | scala.Double = null,
+    backwards: js.UndefOr[scala.Boolean] = js.undefined,
+    before: js.Function4[
+      /* currSlideElement */ stdLib.Element, 
+      /* nextSlideElement */ stdLib.Element, 
+      /* options */ CycleOptions, 
+      /* forwardFlag */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    center: js.UndefOr[scala.Boolean] = js.undefined,
+    cleartype: js.UndefOr[scala.Boolean] = js.undefined,
+    cleartypeNoBg: js.UndefOr[scala.Boolean] = js.undefined,
+    containerResize: js.UndefOr[scala.Boolean] = js.undefined,
+    containerResizeHeight: js.UndefOr[scala.Boolean] = js.undefined,
+    continuous: js.UndefOr[scala.Boolean] = js.undefined,
+    cssAfter: js.Any = null,
+    cssBefore: js.Any = null,
+    delay: scala.Int | scala.Double = null,
+    easeIn: java.lang.String = null,
+    easeOut: java.lang.String = null,
+    easing: java.lang.String = null,
+    end: js.Function1[/* options */ CycleOptions, scala.Unit] = null,
+    fastOnEvent: js.UndefOr[scala.Boolean] = js.undefined,
+    fit: js.UndefOr[scala.Boolean] = js.undefined,
+    fx: java.lang.String = null,
+    fxFn: js.Function5[
+      /* currSlideElement */ stdLib.Element, 
+      /* nextSlideElement */ stdLib.Element, 
+      /* options */ CycleOptions, 
+      /* afterCalback */ js.Function, 
+      /* forwardFlag */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    height: js.Any = null,
+    manualTrump: js.UndefOr[scala.Boolean] = js.undefined,
+    metaAttr: java.lang.String = null,
+    next: js.Any = null,
+    nowrap: js.UndefOr[scala.Boolean] = js.undefined,
+    onPagerEvent: js.Function2[
+      /* zeroBasedSlideIndex */ scala.Double, 
+      /* slideElement */ stdLib.Element, 
+      scala.Unit
+    ] = null,
+    onPrevNextEvent: js.Function3[
+      /* isNext */ scala.Boolean, 
+      /* zeroBasedSlideIndex */ scala.Double, 
+      /* slideElement */ stdLib.Element, 
+      scala.Unit
+    ] = null,
+    pager: js.Any = null,
+    pagerAnchorBuilder: js.Function2[/* index */ scala.Double, /* DOMelement */ stdLib.Element, java.lang.String] = null,
+    pagerEvent: java.lang.String = null,
+    pause: js.UndefOr[scala.Boolean] = js.undefined,
+    pauseOnPagerHover: js.UndefOr[scala.Boolean] = js.undefined,
+    prev: js.Any = null,
+    prevNextEvent: java.lang.String = null,
+    random: js.UndefOr[scala.Boolean] = js.undefined,
+    randomizeEffects: js.UndefOr[scala.Boolean] = js.undefined,
+    requeueOnImageNotLoaded: js.UndefOr[scala.Boolean] = js.undefined,
+    requeueTimeout: scala.Int | scala.Double = null,
+    rev: js.UndefOr[scala.Boolean] = js.undefined,
+    shuffle: js.Any = null,
+    skipInitializationCallbacks: js.UndefOr[scala.Boolean] = js.undefined,
+    slideExpr: java.lang.String = null,
+    slideResize: js.UndefOr[scala.Boolean] = js.undefined,
+    speed: js.Any = null,
+    speedIn: js.Any = null,
+    speedOut: js.Any = null,
+    startingSlide: scala.Int | scala.Double = null,
+    sync: js.UndefOr[scala.Boolean] = js.undefined,
+    timeout: scala.Int | scala.Double = null,
+    timeoutFn: js.Function4[
+      /* currSlideElement */ stdLib.Element, 
+      /* nextSlideElement */ stdLib.Element, 
+      /* options */ CycleOptions, 
+      /* forwardFlag */ scala.Boolean, 
+      scala.Unit
+    ] = null,
+    updateActivePagerLink: js.Function3[
+      /* pager */ js.Any, 
+      /* currSlide */ scala.Double, 
+      /* clsName */ java.lang.String, 
+      scala.Unit
+    ] = null,
+    width: js.Any = null
+  ): CycleOptions = {
+    val __obj = js.Dynamic.literal()
+    if (activePagerClass != null) __obj.updateDynamic("activePagerClass")(activePagerClass)
+    if (after != null) __obj.updateDynamic("after")(after)
+    if (!js.isUndefined(allowPagerClickBubble)) __obj.updateDynamic("allowPagerClickBubble")(allowPagerClickBubble)
+    if (animIn != null) __obj.updateDynamic("animIn")(animIn)
+    if (animOut != null) __obj.updateDynamic("animOut")(animOut)
+    if (!js.isUndefined(aspect)) __obj.updateDynamic("aspect")(aspect)
+    if (!js.isUndefined(autostop)) __obj.updateDynamic("autostop")(autostop)
+    if (autostopCount != null) __obj.updateDynamic("autostopCount")(autostopCount.asInstanceOf[js.Any])
+    if (!js.isUndefined(backwards)) __obj.updateDynamic("backwards")(backwards)
+    if (before != null) __obj.updateDynamic("before")(before)
+    if (!js.isUndefined(center)) __obj.updateDynamic("center")(center)
+    if (!js.isUndefined(cleartype)) __obj.updateDynamic("cleartype")(cleartype)
+    if (!js.isUndefined(cleartypeNoBg)) __obj.updateDynamic("cleartypeNoBg")(cleartypeNoBg)
+    if (!js.isUndefined(containerResize)) __obj.updateDynamic("containerResize")(containerResize)
+    if (!js.isUndefined(containerResizeHeight)) __obj.updateDynamic("containerResizeHeight")(containerResizeHeight)
+    if (!js.isUndefined(continuous)) __obj.updateDynamic("continuous")(continuous)
+    if (cssAfter != null) __obj.updateDynamic("cssAfter")(cssAfter)
+    if (cssBefore != null) __obj.updateDynamic("cssBefore")(cssBefore)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (easeIn != null) __obj.updateDynamic("easeIn")(easeIn)
+    if (easeOut != null) __obj.updateDynamic("easeOut")(easeOut)
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (!js.isUndefined(fastOnEvent)) __obj.updateDynamic("fastOnEvent")(fastOnEvent)
+    if (!js.isUndefined(fit)) __obj.updateDynamic("fit")(fit)
+    if (fx != null) __obj.updateDynamic("fx")(fx)
+    if (fxFn != null) __obj.updateDynamic("fxFn")(fxFn)
+    if (height != null) __obj.updateDynamic("height")(height)
+    if (!js.isUndefined(manualTrump)) __obj.updateDynamic("manualTrump")(manualTrump)
+    if (metaAttr != null) __obj.updateDynamic("metaAttr")(metaAttr)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (!js.isUndefined(nowrap)) __obj.updateDynamic("nowrap")(nowrap)
+    if (onPagerEvent != null) __obj.updateDynamic("onPagerEvent")(onPagerEvent)
+    if (onPrevNextEvent != null) __obj.updateDynamic("onPrevNextEvent")(onPrevNextEvent)
+    if (pager != null) __obj.updateDynamic("pager")(pager)
+    if (pagerAnchorBuilder != null) __obj.updateDynamic("pagerAnchorBuilder")(pagerAnchorBuilder)
+    if (pagerEvent != null) __obj.updateDynamic("pagerEvent")(pagerEvent)
+    if (!js.isUndefined(pause)) __obj.updateDynamic("pause")(pause)
+    if (!js.isUndefined(pauseOnPagerHover)) __obj.updateDynamic("pauseOnPagerHover")(pauseOnPagerHover)
+    if (prev != null) __obj.updateDynamic("prev")(prev)
+    if (prevNextEvent != null) __obj.updateDynamic("prevNextEvent")(prevNextEvent)
+    if (!js.isUndefined(random)) __obj.updateDynamic("random")(random)
+    if (!js.isUndefined(randomizeEffects)) __obj.updateDynamic("randomizeEffects")(randomizeEffects)
+    if (!js.isUndefined(requeueOnImageNotLoaded)) __obj.updateDynamic("requeueOnImageNotLoaded")(requeueOnImageNotLoaded)
+    if (requeueTimeout != null) __obj.updateDynamic("requeueTimeout")(requeueTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(rev)) __obj.updateDynamic("rev")(rev)
+    if (shuffle != null) __obj.updateDynamic("shuffle")(shuffle)
+    if (!js.isUndefined(skipInitializationCallbacks)) __obj.updateDynamic("skipInitializationCallbacks")(skipInitializationCallbacks)
+    if (slideExpr != null) __obj.updateDynamic("slideExpr")(slideExpr)
+    if (!js.isUndefined(slideResize)) __obj.updateDynamic("slideResize")(slideResize)
+    if (speed != null) __obj.updateDynamic("speed")(speed)
+    if (speedIn != null) __obj.updateDynamic("speedIn")(speedIn)
+    if (speedOut != null) __obj.updateDynamic("speedOut")(speedOut)
+    if (startingSlide != null) __obj.updateDynamic("startingSlide")(startingSlide.asInstanceOf[js.Any])
+    if (!js.isUndefined(sync)) __obj.updateDynamic("sync")(sync)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (timeoutFn != null) __obj.updateDynamic("timeoutFn")(timeoutFn)
+    if (updateActivePagerLink != null) __obj.updateDynamic("updateActivePagerLink")(updateActivePagerLink)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[CycleOptions]
+  }
+}
+

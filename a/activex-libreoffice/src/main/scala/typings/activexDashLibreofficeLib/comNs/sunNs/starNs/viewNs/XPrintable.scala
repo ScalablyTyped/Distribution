@@ -37,3 +37,34 @@ trait XPrintable
   ): scala.Unit
 }
 
+object XPrintable {
+  @scala.inline
+  def apply(
+    Printer: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue],
+    acquire: js.Function0[scala.Unit],
+    getPrinter: js.Function0[
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    print: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPrinter: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Unit
+    ]
+  ): XPrintable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Printer")(Printer)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getPrinter")(getPrinter)
+    __obj.updateDynamic("print")(print)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setPrinter")(setPrinter)
+    __obj.asInstanceOf[XPrintable]
+  }
+}
+

@@ -9,3 +9,12 @@ trait Anon_False extends js.Object {
   var pipeline: ioredisLib.ioredisLibNumbers.`false`
 }
 
+object Anon_False {
+  @scala.inline
+  def apply(pipeline: ioredisLib.ioredisLibNumbers.`false`): Anon_False = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("pipeline")(pipeline)
+    __obj.asInstanceOf[Anon_False]
+  }
+}
+

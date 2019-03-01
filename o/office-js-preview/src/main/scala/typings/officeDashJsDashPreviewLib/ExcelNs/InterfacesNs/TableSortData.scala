@@ -32,3 +32,18 @@ trait TableSortData extends js.Object {
   ] = js.undefined
 }
 
+object TableSortData {
+  @scala.inline
+  def apply(
+    fields: js.Array[officeDashJsDashPreviewLib.ExcelNs.SortField] = null,
+    matchCase: js.UndefOr[scala.Boolean] = js.undefined,
+    method: officeDashJsDashPreviewLib.ExcelNs.SortMethod | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.PinYin | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.StrokeCount = null
+  ): TableSortData = {
+    val __obj = js.Dynamic.literal()
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (!js.isUndefined(matchCase)) __obj.updateDynamic("matchCase")(matchCase)
+    if (method != null) __obj.updateDynamic("method")(method.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableSortData]
+  }
+}
+

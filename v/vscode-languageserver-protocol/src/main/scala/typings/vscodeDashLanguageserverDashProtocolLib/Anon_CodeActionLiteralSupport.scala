@@ -17,3 +17,16 @@ trait Anon_CodeActionLiteralSupport extends js.Object {
   var dynamicRegistration: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_CodeActionLiteralSupport {
+  @scala.inline
+  def apply(
+    codeActionLiteralSupport: Anon_CodeActionKind = null,
+    dynamicRegistration: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_CodeActionLiteralSupport = {
+    val __obj = js.Dynamic.literal()
+    if (codeActionLiteralSupport != null) __obj.updateDynamic("codeActionLiteralSupport")(codeActionLiteralSupport)
+    if (!js.isUndefined(dynamicRegistration)) __obj.updateDynamic("dynamicRegistration")(dynamicRegistration)
+    __obj.asInstanceOf[Anon_CodeActionLiteralSupport]
+  }
+}
+

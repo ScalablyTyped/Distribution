@@ -48,3 +48,20 @@ trait Options[T] extends js.Object {
   var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply[T](
+    filter: FilterFn[T] = null,
+    multiArgs: js.UndefOr[scala.Boolean] = js.undefined,
+    rejectionEvents: js.Array[java.lang.String | js.Symbol] = null,
+    timeout: scala.Int | scala.Double = null
+  ): Options[T] = {
+    val __obj = js.Dynamic.literal()
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (!js.isUndefined(multiArgs)) __obj.updateDynamic("multiArgs")(multiArgs)
+    if (rejectionEvents != null) __obj.updateDynamic("rejectionEvents")(rejectionEvents)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Options[T]]
+  }
+}
+

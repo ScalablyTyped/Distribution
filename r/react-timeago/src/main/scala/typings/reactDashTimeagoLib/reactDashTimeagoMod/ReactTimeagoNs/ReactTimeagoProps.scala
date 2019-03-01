@@ -16,3 +16,28 @@ trait ReactTimeagoProps extends js.Object {
   val title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReactTimeagoProps {
+  @scala.inline
+  def apply(
+    date: java.lang.String | scala.Double | stdLib.Date,
+    component: java.lang.String | reactLib.reactMod.ReactNs.ComponentType[_] = null,
+    formatter: Formatter = null,
+    live: js.UndefOr[scala.Boolean] = js.undefined,
+    maxPeriod: scala.Int | scala.Double = null,
+    minPeriod: scala.Int | scala.Double = null,
+    now: js.Function0[scala.Double] = null,
+    title: java.lang.String = null
+  ): ReactTimeagoProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (component != null) __obj.updateDynamic("component")(component.asInstanceOf[js.Any])
+    if (formatter != null) __obj.updateDynamic("formatter")(formatter)
+    if (!js.isUndefined(live)) __obj.updateDynamic("live")(live)
+    if (maxPeriod != null) __obj.updateDynamic("maxPeriod")(maxPeriod.asInstanceOf[js.Any])
+    if (minPeriod != null) __obj.updateDynamic("minPeriod")(minPeriod.asInstanceOf[js.Any])
+    if (now != null) __obj.updateDynamic("now")(now)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ReactTimeagoProps]
+  }
+}
+

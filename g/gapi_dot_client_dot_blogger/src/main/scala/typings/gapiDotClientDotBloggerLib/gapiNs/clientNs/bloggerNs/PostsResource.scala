@@ -28,3 +28,62 @@ trait PostsResource extends js.Object {
   def update(request: gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields): gapiDotClientLib.gapiNs.clientNs.Request[Post]
 }
 
+object PostsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBody, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    getByPath: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyMaxCommentsOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImages, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    list: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdEndDateFetchBodiesFetchImages, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PostList]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    publish: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostIdPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    revert: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFieldsKeyOauthtokenPostId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ],
+    search: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodiesFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[PostList]
+    ],
+    update: js.Function1[
+      gapiDotClientDotBloggerLib.Anon_AltBlogIdFetchBodyFetchImagesFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Post]
+    ]
+  ): PostsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getByPath")(getByPath)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("publish")(publish)
+    __obj.updateDynamic("revert")(revert)
+    __obj.updateDynamic("search")(search)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[PostsResource]
+  }
+}
+

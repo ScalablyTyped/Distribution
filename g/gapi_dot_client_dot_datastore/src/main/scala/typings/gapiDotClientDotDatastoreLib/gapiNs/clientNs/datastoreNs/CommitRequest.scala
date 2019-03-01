@@ -32,3 +32,18 @@ trait CommitRequest extends js.Object {
   var transaction: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CommitRequest {
+  @scala.inline
+  def apply(
+    mode: java.lang.String = null,
+    mutations: js.Array[Mutation] = null,
+    transaction: java.lang.String = null
+  ): CommitRequest = {
+    val __obj = js.Dynamic.literal()
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (mutations != null) __obj.updateDynamic("mutations")(mutations)
+    if (transaction != null) __obj.updateDynamic("transaction")(transaction)
+    __obj.asInstanceOf[CommitRequest]
+  }
+}
+

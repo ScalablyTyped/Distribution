@@ -9,3 +9,12 @@ trait Anon_Access extends js.Object {
   var access: scala.Boolean
 }
 
+object Anon_Access {
+  @scala.inline
+  def apply(access: scala.Boolean): Anon_Access = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("access")(access)
+    __obj.asInstanceOf[Anon_Access]
+  }
+}
+

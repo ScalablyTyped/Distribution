@@ -17,3 +17,12 @@ trait ChartErrorBarsFormatData extends js.Object {
   var line: js.UndefOr[ChartLineFormatData] = js.undefined
 }
 
+object ChartErrorBarsFormatData {
+  @scala.inline
+  def apply(line: ChartLineFormatData = null): ChartErrorBarsFormatData = {
+    val __obj = js.Dynamic.literal()
+    if (line != null) __obj.updateDynamic("line")(line)
+    __obj.asInstanceOf[ChartErrorBarsFormatData]
+  }
+}
+

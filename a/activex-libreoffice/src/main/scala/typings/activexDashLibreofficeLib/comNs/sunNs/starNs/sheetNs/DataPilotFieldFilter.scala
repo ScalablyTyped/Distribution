@@ -22,3 +22,14 @@ trait DataPilotFieldFilter extends js.Object {
   var MatchValueName: java.lang.String
 }
 
+object DataPilotFieldFilter {
+  @scala.inline
+  def apply(FieldName: java.lang.String, MatchValue: java.lang.String, MatchValueName: java.lang.String): DataPilotFieldFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FieldName")(FieldName)
+    __obj.updateDynamic("MatchValue")(MatchValue)
+    __obj.updateDynamic("MatchValueName")(MatchValueName)
+    __obj.asInstanceOf[DataPilotFieldFilter]
+  }
+}
+

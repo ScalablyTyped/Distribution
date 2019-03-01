@@ -65,3 +65,34 @@ trait XBlob
   def positionOfBlob(pattern: XBlob, start: scala.Double): scala.Double
 }
 
+object XBlob {
+  @scala.inline
+  def apply(
+    BinaryStream: activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream,
+    acquire: js.Function0[scala.Unit],
+    getBinaryStream: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.ioNs.XInputStream],
+    getBytes: js.Function2[scala.Double, scala.Double, activexDashInteropLib.SafeArray[scala.Double]],
+    length: js.Function0[scala.Double],
+    position: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[scala.Double], 
+      scala.Double, 
+      scala.Double
+    ],
+    positionOfBlob: js.Function2[XBlob, scala.Double, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBlob = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BinaryStream")(BinaryStream)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getBinaryStream")(getBinaryStream)
+    __obj.updateDynamic("getBytes")(getBytes)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("position")(position)
+    __obj.updateDynamic("positionOfBlob")(positionOfBlob)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XBlob]
+  }
+}
+

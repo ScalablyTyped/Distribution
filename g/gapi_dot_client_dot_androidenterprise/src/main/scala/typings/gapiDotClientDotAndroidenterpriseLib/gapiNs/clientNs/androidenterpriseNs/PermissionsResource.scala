@@ -10,3 +10,17 @@ trait PermissionsResource extends js.Object {
   def get(request: gapiDotClientDotAndroidenterpriseLib.Anon_AltFieldsKeyLanguage): gapiDotClientLib.gapiNs.clientNs.Request[Permission]
 }
 
+object PermissionsResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotAndroidenterpriseLib.Anon_AltFieldsKeyLanguage, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Permission]
+    ]
+  ): PermissionsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.asInstanceOf[PermissionsResource]
+  }
+}
+

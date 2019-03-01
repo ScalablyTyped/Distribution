@@ -135,3 +135,82 @@ trait Model extends js.Object {
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    ajaxBeforeLoad: js.Function1[/* e */ AjaxBeforeLoadEventArgs, scala.Unit] = null,
+    ajaxError: js.Function1[/* e */ AjaxErrorEventArgs, scala.Unit] = null,
+    ajaxLoad: js.Function1[/* e */ AjaxLoadEventArgs, scala.Unit] = null,
+    ajaxSettings: AjaxSettings = null,
+    ajaxSuccess: js.Function1[/* e */ AjaxSuccessEventArgs, scala.Unit] = null,
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeActive: js.Function1[/* e */ BeforeActiveEventArgs, scala.Unit] = null,
+    beforeItemRemove: js.Function1[/* e */ BeforeItemRemoveEventArgs, scala.Unit] = null,
+    collapsible: js.UndefOr[scala.Boolean] = js.undefined,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    destroy: js.Function1[/* e */ DestroyEventArgs, scala.Unit] = null,
+    disabledItemIndex: js.Array[scala.Double] = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePersistence: js.UndefOr[scala.Boolean] = js.undefined,
+    enableRTL: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTabScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    enabledItemIndex: js.Array[scala.Double] = null,
+    events: java.lang.String = null,
+    headerPosition: java.lang.String | Position = null,
+    headerSize: java.lang.String | scala.Double = null,
+    height: java.lang.String | scala.Double = null,
+    heightAdjustMode: java.lang.String | HeightAdjustMode = null,
+    hiddenItemIndex: js.Array[_] = null,
+    htmlAttributes: js.Any = null,
+    idPrefix: java.lang.String = null,
+    itemActive: js.Function1[/* e */ ItemActiveEventArgs, scala.Unit] = null,
+    itemAdd: js.Function1[/* e */ ItemAddEventArgs, scala.Unit] = null,
+    itemRemove: js.Function1[/* e */ ItemRemoveEventArgs, scala.Unit] = null,
+    selectedItemIndex: scala.Int | scala.Double = null,
+    showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showReloadIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    showRoundedCorner: js.UndefOr[scala.Boolean] = js.undefined,
+    width: java.lang.String | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (ajaxBeforeLoad != null) __obj.updateDynamic("ajaxBeforeLoad")(ajaxBeforeLoad)
+    if (ajaxError != null) __obj.updateDynamic("ajaxError")(ajaxError)
+    if (ajaxLoad != null) __obj.updateDynamic("ajaxLoad")(ajaxLoad)
+    if (ajaxSettings != null) __obj.updateDynamic("ajaxSettings")(ajaxSettings)
+    if (ajaxSuccess != null) __obj.updateDynamic("ajaxSuccess")(ajaxSuccess)
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (beforeActive != null) __obj.updateDynamic("beforeActive")(beforeActive)
+    if (beforeItemRemove != null) __obj.updateDynamic("beforeItemRemove")(beforeItemRemove)
+    if (!js.isUndefined(collapsible)) __obj.updateDynamic("collapsible")(collapsible)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (disabledItemIndex != null) __obj.updateDynamic("disabledItemIndex")(disabledItemIndex)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enablePersistence)) __obj.updateDynamic("enablePersistence")(enablePersistence)
+    if (!js.isUndefined(enableRTL)) __obj.updateDynamic("enableRTL")(enableRTL)
+    if (!js.isUndefined(enableTabScroll)) __obj.updateDynamic("enableTabScroll")(enableTabScroll)
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (enabledItemIndex != null) __obj.updateDynamic("enabledItemIndex")(enabledItemIndex)
+    if (events != null) __obj.updateDynamic("events")(events)
+    if (headerPosition != null) __obj.updateDynamic("headerPosition")(headerPosition.asInstanceOf[js.Any])
+    if (headerSize != null) __obj.updateDynamic("headerSize")(headerSize.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (heightAdjustMode != null) __obj.updateDynamic("heightAdjustMode")(heightAdjustMode.asInstanceOf[js.Any])
+    if (hiddenItemIndex != null) __obj.updateDynamic("hiddenItemIndex")(hiddenItemIndex)
+    if (htmlAttributes != null) __obj.updateDynamic("htmlAttributes")(htmlAttributes)
+    if (idPrefix != null) __obj.updateDynamic("idPrefix")(idPrefix)
+    if (itemActive != null) __obj.updateDynamic("itemActive")(itemActive)
+    if (itemAdd != null) __obj.updateDynamic("itemAdd")(itemAdd)
+    if (itemRemove != null) __obj.updateDynamic("itemRemove")(itemRemove)
+    if (selectedItemIndex != null) __obj.updateDynamic("selectedItemIndex")(selectedItemIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
+    if (!js.isUndefined(showReloadIcon)) __obj.updateDynamic("showReloadIcon")(showReloadIcon)
+    if (!js.isUndefined(showRoundedCorner)) __obj.updateDynamic("showRoundedCorner")(showRoundedCorner)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

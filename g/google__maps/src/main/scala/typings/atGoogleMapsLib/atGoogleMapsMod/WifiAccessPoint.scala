@@ -18,3 +18,22 @@ trait WifiAccessPoint extends js.Object {
   var signalToNoiseRatio: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WifiAccessPoint {
+  @scala.inline
+  def apply(
+    macAddress: java.lang.String,
+    age: scala.Int | scala.Double = null,
+    channel: scala.Int | scala.Double = null,
+    signalStrength: scala.Int | scala.Double = null,
+    signalToNoiseRatio: scala.Int | scala.Double = null
+  ): WifiAccessPoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("macAddress")(macAddress)
+    if (age != null) __obj.updateDynamic("age")(age.asInstanceOf[js.Any])
+    if (channel != null) __obj.updateDynamic("channel")(channel.asInstanceOf[js.Any])
+    if (signalStrength != null) __obj.updateDynamic("signalStrength")(signalStrength.asInstanceOf[js.Any])
+    if (signalToNoiseRatio != null) __obj.updateDynamic("signalToNoiseRatio")(signalToNoiseRatio.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WifiAccessPoint]
+  }
+}
+

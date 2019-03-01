@@ -16,3 +16,13 @@ trait NodeCollapsedEventUIParam extends js.Object {
   var owner: js.UndefOr[js.Any] = js.undefined
 }
 
+object NodeCollapsedEventUIParam {
+  @scala.inline
+  def apply(node: js.Any = null, owner: js.Any = null): NodeCollapsedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (node != null) __obj.updateDynamic("node")(node)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    __obj.asInstanceOf[NodeCollapsedEventUIParam]
+  }
+}
+

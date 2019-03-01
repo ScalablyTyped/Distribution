@@ -16,3 +16,13 @@ trait HierarchyCircularLink[Datum] extends js.Object {
   var target: HierarchyCircularNode[Datum]
 }
 
+object HierarchyCircularLink {
+  @scala.inline
+  def apply[Datum](source: HierarchyCircularNode[Datum], target: HierarchyCircularNode[Datum]): HierarchyCircularLink[Datum] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("source")(source)
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[HierarchyCircularLink[Datum]]
+  }
+}
+

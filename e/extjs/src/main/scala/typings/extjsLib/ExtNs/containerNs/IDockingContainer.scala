@@ -66,3 +66,72 @@ trait IDockingContainer
   ] = js.undefined
 }
 
+object IDockingContainer {
+  @scala.inline
+  def apply(
+    addDocked: js.Function2[
+      /* component */ js.UndefOr[js.Any], 
+      /* pos */ js.UndefOr[scala.Double], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    alias: extjsLib.ExtNs.Array = null,
+    alternateClassName: js.Any = null,
+    callOverridden: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callParent: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    callSuper: js.Function1[/* args */ js.UndefOr[js.Any], _] = null,
+    config: js.Any = null,
+    defaultDockWeights: js.Any = null,
+    extend: java.lang.String = null,
+    getDockedComponent: js.Function1[/* comp */ js.UndefOr[js.Any], extjsLib.ExtNs.IComponent] = null,
+    getDockedItems: js.Function2[
+      /* selector */ js.UndefOr[java.lang.String], 
+      /* beforeBody */ js.UndefOr[scala.Boolean], 
+      extjsLib.ExtNs.Array
+    ] = null,
+    getInitialConfig: js.Function1[/* name */ js.UndefOr[java.lang.String], _] = null,
+    inheritableStatics: js.Any = null,
+    initConfig: js.Function1[/* config */ js.UndefOr[js.Any], IDockingContainer] = null,
+    insertDocked: js.Function2[/* pos */ js.UndefOr[scala.Double], /* component */ js.UndefOr[js.Any], scala.Unit] = null,
+    mixins: js.Any = null,
+    onDockedAdd: js.Function1[/* component */ js.UndefOr[extjsLib.ExtNs.IComponent], scala.Unit] = null,
+    onDockedRemove: js.Function1[/* component */ js.UndefOr[extjsLib.ExtNs.IComponent], scala.Unit] = null,
+    removeDocked: js.Function2[
+      /* item */ js.UndefOr[extjsLib.ExtNs.IComponent], 
+      /* autoDestroy */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    requires: extjsLib.ExtNs.Array = null,
+    self: extjsLib.ExtNs.IClass = null,
+    singleton: js.UndefOr[scala.Boolean] = js.undefined,
+    statics: js.Any = null,
+    uses: extjsLib.ExtNs.Array = null
+  ): IDockingContainer = {
+    val __obj = js.Dynamic.literal()
+    if (addDocked != null) __obj.updateDynamic("addDocked")(addDocked)
+    if (alias != null) __obj.updateDynamic("alias")(alias)
+    if (alternateClassName != null) __obj.updateDynamic("alternateClassName")(alternateClassName)
+    if (callOverridden != null) __obj.updateDynamic("callOverridden")(callOverridden)
+    if (callParent != null) __obj.updateDynamic("callParent")(callParent)
+    if (callSuper != null) __obj.updateDynamic("callSuper")(callSuper)
+    if (config != null) __obj.updateDynamic("config")(config)
+    if (defaultDockWeights != null) __obj.updateDynamic("defaultDockWeights")(defaultDockWeights)
+    if (extend != null) __obj.updateDynamic("extend")(extend)
+    if (getDockedComponent != null) __obj.updateDynamic("getDockedComponent")(getDockedComponent)
+    if (getDockedItems != null) __obj.updateDynamic("getDockedItems")(getDockedItems)
+    if (getInitialConfig != null) __obj.updateDynamic("getInitialConfig")(getInitialConfig)
+    if (inheritableStatics != null) __obj.updateDynamic("inheritableStatics")(inheritableStatics)
+    if (initConfig != null) __obj.updateDynamic("initConfig")(initConfig)
+    if (insertDocked != null) __obj.updateDynamic("insertDocked")(insertDocked)
+    if (mixins != null) __obj.updateDynamic("mixins")(mixins)
+    if (onDockedAdd != null) __obj.updateDynamic("onDockedAdd")(onDockedAdd)
+    if (onDockedRemove != null) __obj.updateDynamic("onDockedRemove")(onDockedRemove)
+    if (removeDocked != null) __obj.updateDynamic("removeDocked")(removeDocked)
+    if (requires != null) __obj.updateDynamic("requires")(requires)
+    if (self != null) __obj.updateDynamic("self")(self)
+    if (!js.isUndefined(singleton)) __obj.updateDynamic("singleton")(singleton)
+    if (statics != null) __obj.updateDynamic("statics")(statics)
+    if (uses != null) __obj.updateDynamic("uses")(uses)
+    __obj.asInstanceOf[IDockingContainer]
+  }
+}
+

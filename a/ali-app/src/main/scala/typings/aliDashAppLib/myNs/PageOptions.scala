@@ -26,3 +26,26 @@ trait PageOptions
   def onShow(`this`: Page, options: Options): scala.Unit
 }
 
+object PageOptions {
+  @scala.inline
+  def apply(
+    data: js.Any,
+    onError: js.Function1[Page, scala.Unit],
+    onHide: js.Function1[Page, scala.Unit],
+    onLaunch: js.Function2[Page, Options, scala.Unit],
+    onShow: js.Function2[Page, Options, scala.Unit],
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    onPullDownRefresh: js.ThisFunction0[/* this */ Page, scala.Unit] = null
+  ): PageOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("onError")(onError)
+    __obj.updateDynamic("onHide")(onHide)
+    __obj.updateDynamic("onLaunch")(onLaunch)
+    __obj.updateDynamic("onShow")(onShow)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (onPullDownRefresh != null) __obj.updateDynamic("onPullDownRefresh")(onPullDownRefresh)
+    __obj.asInstanceOf[PageOptions]
+  }
+}
+

@@ -16,3 +16,13 @@ trait NotificationEventTypeCategory extends js.Object {
   var name: java.lang.String
 }
 
+object NotificationEventTypeCategory {
+  @scala.inline
+  def apply(id: java.lang.String, name: java.lang.String): NotificationEventTypeCategory = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[NotificationEventTypeCategory]
+  }
+}
+

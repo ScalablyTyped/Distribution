@@ -19,3 +19,34 @@ trait PivotConfiguratorMessagesFieldMenu extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object PivotConfiguratorMessagesFieldMenu {
+  @scala.inline
+  def apply(
+    cancel: java.lang.String = null,
+    clear: java.lang.String = null,
+    filter: java.lang.String = null,
+    filterFields: java.lang.String = null,
+    include: java.lang.String = null,
+    info: java.lang.String = null,
+    ok: java.lang.String = null,
+    operators: PivotConfiguratorMessagesFieldMenuOperators = null,
+    sortAscending: java.lang.String = null,
+    sortDescending: java.lang.String = null,
+    title: java.lang.String = null
+  ): PivotConfiguratorMessagesFieldMenu = {
+    val __obj = js.Dynamic.literal()
+    if (cancel != null) __obj.updateDynamic("cancel")(cancel)
+    if (clear != null) __obj.updateDynamic("clear")(clear)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filterFields != null) __obj.updateDynamic("filterFields")(filterFields)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (ok != null) __obj.updateDynamic("ok")(ok)
+    if (operators != null) __obj.updateDynamic("operators")(operators)
+    if (sortAscending != null) __obj.updateDynamic("sortAscending")(sortAscending)
+    if (sortDescending != null) __obj.updateDynamic("sortDescending")(sortDescending)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[PivotConfiguratorMessagesFieldMenu]
+  }
+}
+

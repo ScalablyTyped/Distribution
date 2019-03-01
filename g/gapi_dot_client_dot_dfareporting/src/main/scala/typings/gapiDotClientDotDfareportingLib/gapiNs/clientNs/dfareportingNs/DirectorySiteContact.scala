@@ -28,3 +28,32 @@ trait DirectorySiteContact extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DirectorySiteContact {
+  @scala.inline
+  def apply(
+    address: java.lang.String = null,
+    email: java.lang.String = null,
+    firstName: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    lastName: java.lang.String = null,
+    phone: java.lang.String = null,
+    role: java.lang.String = null,
+    title: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DirectorySiteContact = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (email != null) __obj.updateDynamic("email")(email)
+    if (firstName != null) __obj.updateDynamic("firstName")(firstName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (lastName != null) __obj.updateDynamic("lastName")(lastName)
+    if (phone != null) __obj.updateDynamic("phone")(phone)
+    if (role != null) __obj.updateDynamic("role")(role)
+    if (title != null) __obj.updateDynamic("title")(title)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DirectorySiteContact]
+  }
+}
+

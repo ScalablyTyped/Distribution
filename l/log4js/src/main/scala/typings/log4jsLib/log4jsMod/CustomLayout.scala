@@ -6,7 +6,20 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait CustomLayout
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  extends Layout
+     with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var `type`: java.lang.String
+}
+
+object CustomLayout {
+  @scala.inline
+  def apply(
+    `type`: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): CustomLayout = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[CustomLayout]
+  }
 }
 

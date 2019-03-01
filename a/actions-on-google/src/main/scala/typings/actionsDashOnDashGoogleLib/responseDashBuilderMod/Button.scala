@@ -12,3 +12,13 @@ trait Button extends js.Object {
   var title: java.lang.String
 }
 
+object Button {
+  @scala.inline
+  def apply(openUrlAction: actionsDashOnDashGoogleLib.Anon_Url, title: java.lang.String): Button = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("openUrlAction")(openUrlAction)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Button]
+  }
+}
+

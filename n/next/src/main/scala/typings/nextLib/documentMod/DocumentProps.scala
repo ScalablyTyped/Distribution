@@ -17,3 +17,29 @@ trait DocumentProps[Q /* <: nextDashServerLib.routerMod.DefaultQuery */] extends
   var staticMarkup: scala.Boolean
 }
 
+object DocumentProps {
+  @scala.inline
+  def apply[Q /* <: nextDashServerLib.routerMod.DefaultQuery */](
+    `__NEXT_DATA__`: nextLib.Anon_AssetPrefix[Q],
+    assetPrefix: java.lang.String,
+    buildManifest: stdLib.Record[java.lang.String, _],
+    dev: scala.Boolean,
+    devFiles: js.Array[java.lang.String],
+    dynamicImports: js.Array[java.lang.String],
+    files: js.Array[java.lang.String],
+    staticMarkup: scala.Boolean,
+    dir: java.lang.String = null
+  ): DocumentProps[Q] = {
+    val __obj = js.Dynamic.literal(`__NEXT_DATA__` = `__NEXT_DATA__`)
+    __obj.updateDynamic("assetPrefix")(assetPrefix)
+    __obj.updateDynamic("buildManifest")(buildManifest)
+    __obj.updateDynamic("dev")(dev)
+    __obj.updateDynamic("devFiles")(devFiles)
+    __obj.updateDynamic("dynamicImports")(dynamicImports)
+    __obj.updateDynamic("files")(files)
+    __obj.updateDynamic("staticMarkup")(staticMarkup)
+    if (dir != null) __obj.updateDynamic("dir")(dir)
+    __obj.asInstanceOf[DocumentProps[Q]]
+  }
+}
+

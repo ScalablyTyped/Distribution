@@ -36,3 +36,22 @@ trait ConfigMapNodeConfigSource extends js.Object {
   val uid: java.lang.String
 }
 
+object ConfigMapNodeConfigSource {
+  @scala.inline
+  def apply(
+    kubeletConfigKey: java.lang.String,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    resourceVersion: java.lang.String,
+    uid: java.lang.String
+  ): ConfigMapNodeConfigSource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kubeletConfigKey")(kubeletConfigKey)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("resourceVersion")(resourceVersion)
+    __obj.updateDynamic("uid")(uid)
+    __obj.asInstanceOf[ConfigMapNodeConfigSource]
+  }
+}
+

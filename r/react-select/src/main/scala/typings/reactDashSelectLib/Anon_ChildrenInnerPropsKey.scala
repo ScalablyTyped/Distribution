@@ -12,3 +12,16 @@ trait Anon_ChildrenInnerPropsKey extends js.Object {
   var innerProps: org.scalablytyped.runtime.StringDictionary[js.Any]
 }
 
+object Anon_ChildrenInnerPropsKey {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    innerProps: org.scalablytyped.runtime.StringDictionary[js.Any]
+  ): Anon_ChildrenInnerPropsKey = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    __obj.updateDynamic("innerProps")(innerProps)
+    __obj.asInstanceOf[Anon_ChildrenInnerPropsKey]
+  }
+}
+

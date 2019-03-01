@@ -15,3 +15,14 @@ trait ParamInfo extends js.Object {
   var aType: XIdlClass[_]
 }
 
+object ParamInfo {
+  @scala.inline
+  def apply(aMode: ParamMode, aName: java.lang.String, aType: XIdlClass[_]): ParamInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("aMode")(aMode)
+    __obj.updateDynamic("aName")(aName)
+    __obj.updateDynamic("aType")(aType)
+    __obj.asInstanceOf[ParamInfo]
+  }
+}
+

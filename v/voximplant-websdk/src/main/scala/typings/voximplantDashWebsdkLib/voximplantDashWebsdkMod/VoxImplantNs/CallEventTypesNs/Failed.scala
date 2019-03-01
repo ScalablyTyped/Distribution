@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
 		*	Event dispatched after if call failed
 		*/
-trait Failed extends js.Object {
+trait Failed
+  extends voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.VoxImplantCallEvent {
   /**
   			*	Call that dispatched the event
   			*/
@@ -25,5 +26,22 @@ trait Failed extends js.Object {
   			*	Status message of call failure (i.e. Busy Here)
   			*/
   var reason: java.lang.String
+}
+
+object Failed {
+  @scala.inline
+  def apply(
+    call: voximplantDashWebsdkLib.voximplantDashWebsdkMod.VoxImplantNs.Call,
+    code: scala.Double,
+    reason: java.lang.String,
+    headers: js.Object = null
+  ): Failed = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("call")(call)
+    __obj.updateDynamic("code")(code)
+    __obj.updateDynamic("reason")(reason)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    __obj.asInstanceOf[Failed]
+  }
 }
 

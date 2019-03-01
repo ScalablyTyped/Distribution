@@ -11,3 +11,13 @@ trait SuspenseProps extends js.Object {
   var fallback: stdLib.NonNullable[ReactNode] | scala.Null
 }
 
+object SuspenseProps {
+  @scala.inline
+  def apply(children: ReactNode = null, fallback: stdLib.NonNullable[ReactNode] = null): SuspenseProps = {
+    val __obj = js.Dynamic.literal()
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (fallback != null) __obj.updateDynamic("fallback")(fallback.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SuspenseProps]
+  }
+}
+

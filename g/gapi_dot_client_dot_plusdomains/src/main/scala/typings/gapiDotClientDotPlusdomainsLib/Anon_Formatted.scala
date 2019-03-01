@@ -10,3 +10,12 @@ trait Anon_Formatted extends js.Object {
   var formatted: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Formatted {
+  @scala.inline
+  def apply(formatted: java.lang.String = null): Anon_Formatted = {
+    val __obj = js.Dynamic.literal()
+    if (formatted != null) __obj.updateDynamic("formatted")(formatted)
+    __obj.asInstanceOf[Anon_Formatted]
+  }
+}
+

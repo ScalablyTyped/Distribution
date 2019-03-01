@@ -12,3 +12,13 @@ trait Notifications extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Notifications {
+  @scala.inline
+  def apply(items: js.Array[Notification] = null, kind: java.lang.String = null): Notifications = {
+    val __obj = js.Dynamic.literal()
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[Notifications]
+  }
+}
+

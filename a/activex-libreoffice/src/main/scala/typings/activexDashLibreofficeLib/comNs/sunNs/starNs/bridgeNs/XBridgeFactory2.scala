@@ -13,3 +13,38 @@ trait XBridgeFactory2
   extends XBridgeFactory
      with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
 
+object XBridgeFactory2 {
+  @scala.inline
+  def apply(
+    ExistingBridges: activexDashInteropLib.SafeArray[XBridge],
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    createBridge: js.Function4[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.connectionNs.XConnection, 
+      XInstanceProvider, 
+      XBridge
+    ],
+    dispose: js.Function0[scala.Unit],
+    getBridge: js.Function1[java.lang.String, XBridge],
+    getExistingBridges: js.Function0[activexDashInteropLib.SafeArray[XBridge]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit]
+  ): XBridgeFactory2 = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ExistingBridges")(ExistingBridges)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("createBridge")(createBridge)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getBridge")(getBridge)
+    __obj.updateDynamic("getExistingBridges")(getExistingBridges)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.asInstanceOf[XBridgeFactory2]
+  }
+}
+

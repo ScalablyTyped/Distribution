@@ -14,3 +14,27 @@ trait DirectorySitesResource extends js.Object {
   def list(request: gapiDotClientDotDfareportingLib.Anon_AcceptsInStreamVideoPlacements): gapiDotClientLib.gapiNs.clientNs.Request[DirectorySitesListResponse]
 }
 
+object DirectorySitesResource {
+  @scala.inline
+  def apply(
+    get: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DirectorySite]
+    ],
+    list: js.Function1[
+      gapiDotClientDotDfareportingLib.Anon_AcceptsInStreamVideoPlacements, 
+      gapiDotClientLib.gapiNs.clientNs.Request[DirectorySitesListResponse]
+    ]
+  ): DirectorySitesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[DirectorySitesResource]
+  }
+}
+

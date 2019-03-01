@@ -14,3 +14,20 @@ trait MobileAppPanelsListResponse extends js.Object {
   var tokenPagination: js.UndefOr[TokenPagination] = js.undefined
 }
 
+object MobileAppPanelsListResponse {
+  @scala.inline
+  def apply(
+    pageInfo: PageInfo = null,
+    requestId: java.lang.String = null,
+    resources: js.Array[MobileAppPanel] = null,
+    tokenPagination: TokenPagination = null
+  ): MobileAppPanelsListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
+    __obj.asInstanceOf[MobileAppPanelsListResponse]
+  }
+}
+

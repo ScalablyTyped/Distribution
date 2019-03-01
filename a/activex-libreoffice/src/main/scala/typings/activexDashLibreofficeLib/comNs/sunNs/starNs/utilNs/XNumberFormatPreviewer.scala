@@ -45,3 +45,35 @@ trait XNumberFormatPreviewer
   ): Color
 }
 
+object XNumberFormatPreviewer {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    convertNumberToPreviewString: js.Function4[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean, 
+      java.lang.String
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryPreviewColorForNumber: js.Function5[
+      java.lang.String, 
+      scala.Double, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Boolean, 
+      Color, 
+      Color
+    ],
+    release: js.Function0[scala.Unit]
+  ): XNumberFormatPreviewer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("convertNumberToPreviewString")(convertNumberToPreviewString)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("queryPreviewColorForNumber")(queryPreviewColorForNumber)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XNumberFormatPreviewer]
+  }
+}
+

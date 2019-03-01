@@ -16,3 +16,28 @@ trait TupleDictionary extends js.Object {
   def set(i: scala.Double, j: scala.Double, value: scala.Double): scala.Double
 }
 
+object TupleDictionary {
+  @scala.inline
+  def apply(
+    copy: js.Function1[TupleDictionary, scala.Unit],
+    data: js.Any,
+    get: js.Function2[scala.Double, scala.Double, scala.Double],
+    getByKey: js.Function1[scala.Double, js.Any],
+    getKey: js.Function2[scala.Double, scala.Double, java.lang.String],
+    keys: js.Array[scala.Double],
+    reset: js.Function0[scala.Unit],
+    set: js.Function3[scala.Double, scala.Double, scala.Double, scala.Double]
+  ): TupleDictionary = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("copy")(copy)
+    __obj.updateDynamic("data")(data)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("getByKey")(getByKey)
+    __obj.updateDynamic("getKey")(getKey)
+    __obj.updateDynamic("keys")(keys)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("set")(set)
+    __obj.asInstanceOf[TupleDictionary]
+  }
+}
+

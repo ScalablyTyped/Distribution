@@ -40,3 +40,44 @@ trait LiveChatMessageSnippet extends js.Object {
   var userBannedDetails: js.UndefOr[LiveChatUserBannedMessageDetails] = js.undefined
 }
 
+object LiveChatMessageSnippet {
+  @scala.inline
+  def apply(
+    authorChannelId: java.lang.String = null,
+    displayMessage: java.lang.String = null,
+    fanFundingEventDetails: LiveChatFanFundingEventDetails = null,
+    hasDisplayContent: js.UndefOr[scala.Boolean] = js.undefined,
+    liveChatId: java.lang.String = null,
+    messageDeletedDetails: LiveChatMessageDeletedDetails = null,
+    messageRetractedDetails: LiveChatMessageRetractedDetails = null,
+    pollClosedDetails: LiveChatPollClosedDetails = null,
+    pollEditedDetails: LiveChatPollEditedDetails = null,
+    pollOpenedDetails: LiveChatPollOpenedDetails = null,
+    pollVotedDetails: LiveChatPollVotedDetails = null,
+    publishedAt: java.lang.String = null,
+    superChatDetails: LiveChatSuperChatDetails = null,
+    textMessageDetails: LiveChatTextMessageDetails = null,
+    `type`: java.lang.String = null,
+    userBannedDetails: LiveChatUserBannedMessageDetails = null
+  ): LiveChatMessageSnippet = {
+    val __obj = js.Dynamic.literal()
+    if (authorChannelId != null) __obj.updateDynamic("authorChannelId")(authorChannelId)
+    if (displayMessage != null) __obj.updateDynamic("displayMessage")(displayMessage)
+    if (fanFundingEventDetails != null) __obj.updateDynamic("fanFundingEventDetails")(fanFundingEventDetails)
+    if (!js.isUndefined(hasDisplayContent)) __obj.updateDynamic("hasDisplayContent")(hasDisplayContent)
+    if (liveChatId != null) __obj.updateDynamic("liveChatId")(liveChatId)
+    if (messageDeletedDetails != null) __obj.updateDynamic("messageDeletedDetails")(messageDeletedDetails)
+    if (messageRetractedDetails != null) __obj.updateDynamic("messageRetractedDetails")(messageRetractedDetails)
+    if (pollClosedDetails != null) __obj.updateDynamic("pollClosedDetails")(pollClosedDetails)
+    if (pollEditedDetails != null) __obj.updateDynamic("pollEditedDetails")(pollEditedDetails)
+    if (pollOpenedDetails != null) __obj.updateDynamic("pollOpenedDetails")(pollOpenedDetails)
+    if (pollVotedDetails != null) __obj.updateDynamic("pollVotedDetails")(pollVotedDetails)
+    if (publishedAt != null) __obj.updateDynamic("publishedAt")(publishedAt)
+    if (superChatDetails != null) __obj.updateDynamic("superChatDetails")(superChatDetails)
+    if (textMessageDetails != null) __obj.updateDynamic("textMessageDetails")(textMessageDetails)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (userBannedDetails != null) __obj.updateDynamic("userBannedDetails")(userBannedDetails)
+    __obj.asInstanceOf[LiveChatMessageSnippet]
+  }
+}
+

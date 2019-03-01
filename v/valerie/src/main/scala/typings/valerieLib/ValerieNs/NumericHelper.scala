@@ -32,3 +32,30 @@ trait NumericHelper extends js.Object {
   def unformat(numericString: java.lang.String): java.lang.String
 }
 
+object NumericHelper {
+  @scala.inline
+  def apply(
+    addThousandsSeparator: js.Function1[java.lang.String, java.lang.String],
+    format: js.Function2[scala.Double, java.lang.String, java.lang.String],
+    init: js.Function4[java.lang.String, java.lang.String, java.lang.String, scala.Double, NumericHelper],
+    isCurrencyMajor: js.Function1[java.lang.String, scala.Boolean],
+    isCurrencyMajorMinor: js.Function1[java.lang.String, scala.Boolean],
+    isFloat: js.Function1[java.lang.String, scala.Boolean],
+    isInteger: js.Function1[java.lang.String, scala.Boolean],
+    parse: js.Function1[java.lang.String, scala.Double],
+    unformat: js.Function1[java.lang.String, java.lang.String]
+  ): NumericHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addThousandsSeparator")(addThousandsSeparator)
+    __obj.updateDynamic("format")(format)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("isCurrencyMajor")(isCurrencyMajor)
+    __obj.updateDynamic("isCurrencyMajorMinor")(isCurrencyMajorMinor)
+    __obj.updateDynamic("isFloat")(isFloat)
+    __obj.updateDynamic("isInteger")(isInteger)
+    __obj.updateDynamic("parse")(parse)
+    __obj.updateDynamic("unformat")(unformat)
+    __obj.asInstanceOf[NumericHelper]
+  }
+}
+

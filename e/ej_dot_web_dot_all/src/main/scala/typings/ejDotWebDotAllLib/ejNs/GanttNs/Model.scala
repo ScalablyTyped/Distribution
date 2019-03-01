@@ -530,3 +530,312 @@ trait Model extends js.Object {
   var workingTimeScale: js.UndefOr[workingTimeScale | java.lang.String] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    actionBegin: js.Function1[/* e */ ActionBeginEventArgs, scala.Unit] = null,
+    actionComplete: js.Function1[/* e */ ActionCompleteEventArgs, scala.Unit] = null,
+    addDialogFields: js.Array[AddDialogField] = null,
+    allowColumnResize: js.UndefOr[scala.Boolean] = js.undefined,
+    allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    allowGanttChartEditing: js.UndefOr[scala.Boolean] = js.undefined,
+    allowKeyboardNavigation: js.UndefOr[scala.Boolean] = js.undefined,
+    allowMultiSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowMultipleExporting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    allowSorting: js.UndefOr[scala.Boolean] = js.undefined,
+    allowUnscheduledTask: js.UndefOr[scala.Boolean] = js.undefined,
+    baselineColor: java.lang.String = null,
+    baselineEndDateMapping: java.lang.String = null,
+    baselineStartDateMapping: java.lang.String = null,
+    beginEdit: js.Function1[/* e */ BeginEditEventArgs, scala.Unit] = null,
+    cellSelected: js.Function1[/* e */ CellSelectedEventArgs, scala.Unit] = null,
+    cellSelecting: js.Function1[/* e */ CellSelectingEventArgs, scala.Unit] = null,
+    cellTooltipTemplate: java.lang.String = null,
+    childMapping: java.lang.String = null,
+    collapsed: js.Function1[/* e */ CollapsedEventArgs, scala.Unit] = null,
+    collapsing: js.Function1[/* e */ CollapsingEventArgs, scala.Unit] = null,
+    columnDialogFields: js.Array[_] = null,
+    connectorLineBackground: java.lang.String = null,
+    connectorlineWidth: scala.Int | scala.Double = null,
+    contextMenuOpen: js.Function1[/* e */ ContextMenuOpenEventArgs, scala.Unit] = null,
+    create: js.Function1[/* e */ CreateEventArgs, scala.Unit] = null,
+    cssClass: java.lang.String = null,
+    dataSource: js.Array[_] = null,
+    dateFormat: java.lang.String = null,
+    dayWorkingTime: js.Array[_] = null,
+    dragTooltip: DragTooltip = null,
+    durationMapping: java.lang.String = null,
+    durationUnit: DurationUnit | java.lang.String = null,
+    durationUnitMapping: java.lang.String = null,
+    editDialogFields: js.Array[EditDialogField] = null,
+    editSettings: EditSettings = null,
+    enableAltRow: js.UndefOr[scala.Boolean] = js.undefined,
+    enableCollapseAll: js.UndefOr[scala.Boolean] = js.undefined,
+    enableContextMenu: js.UndefOr[scala.Boolean] = js.undefined,
+    enablePredecessorValidation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableProgressBarResizing: js.UndefOr[scala.Boolean] = js.undefined,
+    enableResize: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSerialNumber: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTaskbarDragTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    enableTaskbarTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    enableVirtualization: js.UndefOr[scala.Boolean] = js.undefined,
+    enableWBS: js.UndefOr[scala.Boolean] = js.undefined,
+    enableWBSPredecessor: js.UndefOr[scala.Boolean] = js.undefined,
+    endDateMapping: java.lang.String = null,
+    endEdit: js.Function1[/* e */ EndEditEventArgs, scala.Unit] = null,
+    expandStateMapping: java.lang.String = null,
+    expanded: js.Function1[/* e */ ExpandedEventArgs, scala.Unit] = null,
+    expanding: js.Function1[/* e */ ExpandingEventArgs, scala.Unit] = null,
+    filterSettings: FilterSettings = null,
+    groupCollection: js.Array[_] = null,
+    groupIdMapping: java.lang.String = null,
+    groupNameMapping: java.lang.String = null,
+    highlightNonWorkingTime: js.UndefOr[scala.Boolean] = js.undefined,
+    highlightWeekends: js.UndefOr[scala.Boolean] = js.undefined,
+    holidays: js.Array[Holiday] = null,
+    includeWeekend: js.UndefOr[scala.Boolean] = js.undefined,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    leftTaskLabelMapping: java.lang.String = null,
+    leftTaskLabelTemplate: java.lang.String = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    milestoneMapping: java.lang.String = null,
+    milestoneTemplate: java.lang.String = null,
+    nonWorkingBackground: java.lang.String = null,
+    notesMapping: java.lang.String = null,
+    parentProgressbarBackground: java.lang.String = null,
+    parentTaskIdMapping: java.lang.String = null,
+    parentTaskbarBackground: java.lang.String = null,
+    parentTaskbarTemplate: java.lang.String = null,
+    predecessorMapping: java.lang.String = null,
+    predecessorTooltipTemplate: java.lang.String = null,
+    progressMapping: java.lang.String = null,
+    progressbarBackground: java.lang.String = null,
+    progressbarHeight: scala.Int | scala.Double = null,
+    progressbarTooltipTemplate: java.lang.String = null,
+    progressbarTooltipTemplateId: java.lang.String = null,
+    query: js.Any = null,
+    queryCellInfo: js.Function1[/* e */ QueryCellInfoEventArgs, scala.Unit] = null,
+    queryTaskbarInfo: js.Function1[/* e */ QueryTaskbarInfoEventArgs, scala.Unit] = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    renderBaseline: js.UndefOr[scala.Boolean] = js.undefined,
+    resourceCollectionMapping: java.lang.String = null,
+    resourceIdMapping: java.lang.String = null,
+    resourceInfoMapping: java.lang.String = null,
+    resourceNameMapping: java.lang.String = null,
+    resourceUnitMapping: java.lang.String = null,
+    resources: js.Array[_] = null,
+    rightTaskLabelMapping: java.lang.String = null,
+    rightTaskLabelTemplate: java.lang.String = null,
+    roundOffDayworkingTime: js.UndefOr[scala.Boolean] = js.undefined,
+    rowDataBound: js.Function1[/* e */ RowDataBoundEventArgs, scala.Unit] = null,
+    rowDrag: js.Function1[/* e */ RowDragEventArgs, scala.Unit] = null,
+    rowDragStart: js.Function1[/* e */ RowDragStartEventArgs, scala.Unit] = null,
+    rowDragStop: js.Function1[/* e */ RowDragStopEventArgs, scala.Unit] = null,
+    rowHeight: scala.Int | scala.Double = null,
+    rowSelected: js.Function1[/* e */ RowSelectedEventArgs, scala.Unit] = null,
+    rowSelecting: js.Function1[/* e */ RowSelectingEventArgs, scala.Unit] = null,
+    scheduleEndDate: java.lang.String = null,
+    scheduleHeaderSettings: ScheduleHeaderSettings = null,
+    scheduleStartDate: java.lang.String = null,
+    selectedCellIndexes: js.Array[SelectedCellIndex] = null,
+    selectedRowIndex: scala.Int | scala.Double = null,
+    selectionMode: SelectionMode | java.lang.String = null,
+    selectionType: SelectionType | java.lang.String = null,
+    showColumnChooser: js.UndefOr[scala.Boolean] = js.undefined,
+    showColumnOptions: js.UndefOr[scala.Boolean] = js.undefined,
+    showGridCellTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    showGridExpandCellTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    showProgressStatus: js.UndefOr[scala.Boolean] = js.undefined,
+    showResourceNames: js.UndefOr[scala.Boolean] = js.undefined,
+    showTaskNames: js.UndefOr[scala.Boolean] = js.undefined,
+    sizeSettings: SizeSettings = null,
+    sortSettings: SortSettings = null,
+    splitterPosition: java.lang.String = null,
+    splitterResized: js.Function1[/* e */ SplitterResizedEventArgs, scala.Unit] = null,
+    splitterSettings: SplitterSettings = null,
+    startDateMapping: java.lang.String = null,
+    stripLines: js.Array[StripLine] = null,
+    taskCollectionMapping: java.lang.String = null,
+    taskIdMapping: java.lang.String = null,
+    taskNameMapping: java.lang.String = null,
+    taskSchedulingMode: TaskSchedulingMode | java.lang.String = null,
+    taskSchedulingModeMapping: java.lang.String = null,
+    taskType: TaskType | java.lang.String = null,
+    taskbarBackground: java.lang.String = null,
+    taskbarClick: js.Function1[/* e */ TaskbarClickEventArgs, scala.Unit] = null,
+    taskbarEdited: js.Function1[/* e */ TaskbarEditedEventArgs, scala.Unit] = null,
+    taskbarEditing: js.Function1[/* e */ TaskbarEditingEventArgs, scala.Unit] = null,
+    taskbarEditingTooltipTemplate: java.lang.String = null,
+    taskbarEditingTooltipTemplateId: java.lang.String = null,
+    taskbarHeight: scala.Int | scala.Double = null,
+    taskbarTemplate: java.lang.String = null,
+    taskbarTooltipTemplate: java.lang.String = null,
+    taskbarTooltipTemplateId: java.lang.String = null,
+    toolbarClick: js.Function1[/* e */ ToolbarClickEventArgs, scala.Unit] = null,
+    toolbarSettings: ToolbarSettings = null,
+    treeColumnIndex: scala.Int | scala.Double = null,
+    validateManualTasksOnLinking: js.UndefOr[scala.Boolean] = js.undefined,
+    viewType: ViewType | java.lang.String = null,
+    weekendBackground: java.lang.String = null,
+    workMapping: java.lang.String = null,
+    workUnit: WorkUnit | java.lang.String = null,
+    workWeek: js.Array[_] = null,
+    workingTimeScale: workingTimeScale | java.lang.String = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (actionBegin != null) __obj.updateDynamic("actionBegin")(actionBegin)
+    if (actionComplete != null) __obj.updateDynamic("actionComplete")(actionComplete)
+    if (addDialogFields != null) __obj.updateDynamic("addDialogFields")(addDialogFields)
+    if (!js.isUndefined(allowColumnResize)) __obj.updateDynamic("allowColumnResize")(allowColumnResize)
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
+    if (!js.isUndefined(allowGanttChartEditing)) __obj.updateDynamic("allowGanttChartEditing")(allowGanttChartEditing)
+    if (!js.isUndefined(allowKeyboardNavigation)) __obj.updateDynamic("allowKeyboardNavigation")(allowKeyboardNavigation)
+    if (!js.isUndefined(allowMultiSorting)) __obj.updateDynamic("allowMultiSorting")(allowMultiSorting)
+    if (!js.isUndefined(allowMultipleExporting)) __obj.updateDynamic("allowMultipleExporting")(allowMultipleExporting)
+    if (!js.isUndefined(allowSelection)) __obj.updateDynamic("allowSelection")(allowSelection)
+    if (!js.isUndefined(allowSorting)) __obj.updateDynamic("allowSorting")(allowSorting)
+    if (!js.isUndefined(allowUnscheduledTask)) __obj.updateDynamic("allowUnscheduledTask")(allowUnscheduledTask)
+    if (baselineColor != null) __obj.updateDynamic("baselineColor")(baselineColor)
+    if (baselineEndDateMapping != null) __obj.updateDynamic("baselineEndDateMapping")(baselineEndDateMapping)
+    if (baselineStartDateMapping != null) __obj.updateDynamic("baselineStartDateMapping")(baselineStartDateMapping)
+    if (beginEdit != null) __obj.updateDynamic("beginEdit")(beginEdit)
+    if (cellSelected != null) __obj.updateDynamic("cellSelected")(cellSelected)
+    if (cellSelecting != null) __obj.updateDynamic("cellSelecting")(cellSelecting)
+    if (cellTooltipTemplate != null) __obj.updateDynamic("cellTooltipTemplate")(cellTooltipTemplate)
+    if (childMapping != null) __obj.updateDynamic("childMapping")(childMapping)
+    if (collapsed != null) __obj.updateDynamic("collapsed")(collapsed)
+    if (collapsing != null) __obj.updateDynamic("collapsing")(collapsing)
+    if (columnDialogFields != null) __obj.updateDynamic("columnDialogFields")(columnDialogFields)
+    if (connectorLineBackground != null) __obj.updateDynamic("connectorLineBackground")(connectorLineBackground)
+    if (connectorlineWidth != null) __obj.updateDynamic("connectorlineWidth")(connectorlineWidth.asInstanceOf[js.Any])
+    if (contextMenuOpen != null) __obj.updateDynamic("contextMenuOpen")(contextMenuOpen)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (dateFormat != null) __obj.updateDynamic("dateFormat")(dateFormat)
+    if (dayWorkingTime != null) __obj.updateDynamic("dayWorkingTime")(dayWorkingTime)
+    if (dragTooltip != null) __obj.updateDynamic("dragTooltip")(dragTooltip)
+    if (durationMapping != null) __obj.updateDynamic("durationMapping")(durationMapping)
+    if (durationUnit != null) __obj.updateDynamic("durationUnit")(durationUnit.asInstanceOf[js.Any])
+    if (durationUnitMapping != null) __obj.updateDynamic("durationUnitMapping")(durationUnitMapping)
+    if (editDialogFields != null) __obj.updateDynamic("editDialogFields")(editDialogFields)
+    if (editSettings != null) __obj.updateDynamic("editSettings")(editSettings)
+    if (!js.isUndefined(enableAltRow)) __obj.updateDynamic("enableAltRow")(enableAltRow)
+    if (!js.isUndefined(enableCollapseAll)) __obj.updateDynamic("enableCollapseAll")(enableCollapseAll)
+    if (!js.isUndefined(enableContextMenu)) __obj.updateDynamic("enableContextMenu")(enableContextMenu)
+    if (!js.isUndefined(enablePredecessorValidation)) __obj.updateDynamic("enablePredecessorValidation")(enablePredecessorValidation)
+    if (!js.isUndefined(enableProgressBarResizing)) __obj.updateDynamic("enableProgressBarResizing")(enableProgressBarResizing)
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize)
+    if (!js.isUndefined(enableSerialNumber)) __obj.updateDynamic("enableSerialNumber")(enableSerialNumber)
+    if (!js.isUndefined(enableTaskbarDragTooltip)) __obj.updateDynamic("enableTaskbarDragTooltip")(enableTaskbarDragTooltip)
+    if (!js.isUndefined(enableTaskbarTooltip)) __obj.updateDynamic("enableTaskbarTooltip")(enableTaskbarTooltip)
+    if (!js.isUndefined(enableVirtualization)) __obj.updateDynamic("enableVirtualization")(enableVirtualization)
+    if (!js.isUndefined(enableWBS)) __obj.updateDynamic("enableWBS")(enableWBS)
+    if (!js.isUndefined(enableWBSPredecessor)) __obj.updateDynamic("enableWBSPredecessor")(enableWBSPredecessor)
+    if (endDateMapping != null) __obj.updateDynamic("endDateMapping")(endDateMapping)
+    if (endEdit != null) __obj.updateDynamic("endEdit")(endEdit)
+    if (expandStateMapping != null) __obj.updateDynamic("expandStateMapping")(expandStateMapping)
+    if (expanded != null) __obj.updateDynamic("expanded")(expanded)
+    if (expanding != null) __obj.updateDynamic("expanding")(expanding)
+    if (filterSettings != null) __obj.updateDynamic("filterSettings")(filterSettings)
+    if (groupCollection != null) __obj.updateDynamic("groupCollection")(groupCollection)
+    if (groupIdMapping != null) __obj.updateDynamic("groupIdMapping")(groupIdMapping)
+    if (groupNameMapping != null) __obj.updateDynamic("groupNameMapping")(groupNameMapping)
+    if (!js.isUndefined(highlightNonWorkingTime)) __obj.updateDynamic("highlightNonWorkingTime")(highlightNonWorkingTime)
+    if (!js.isUndefined(highlightWeekends)) __obj.updateDynamic("highlightWeekends")(highlightWeekends)
+    if (holidays != null) __obj.updateDynamic("holidays")(holidays)
+    if (!js.isUndefined(includeWeekend)) __obj.updateDynamic("includeWeekend")(includeWeekend)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (leftTaskLabelMapping != null) __obj.updateDynamic("leftTaskLabelMapping")(leftTaskLabelMapping)
+    if (leftTaskLabelTemplate != null) __obj.updateDynamic("leftTaskLabelTemplate")(leftTaskLabelTemplate)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (milestoneMapping != null) __obj.updateDynamic("milestoneMapping")(milestoneMapping)
+    if (milestoneTemplate != null) __obj.updateDynamic("milestoneTemplate")(milestoneTemplate)
+    if (nonWorkingBackground != null) __obj.updateDynamic("nonWorkingBackground")(nonWorkingBackground)
+    if (notesMapping != null) __obj.updateDynamic("notesMapping")(notesMapping)
+    if (parentProgressbarBackground != null) __obj.updateDynamic("parentProgressbarBackground")(parentProgressbarBackground)
+    if (parentTaskIdMapping != null) __obj.updateDynamic("parentTaskIdMapping")(parentTaskIdMapping)
+    if (parentTaskbarBackground != null) __obj.updateDynamic("parentTaskbarBackground")(parentTaskbarBackground)
+    if (parentTaskbarTemplate != null) __obj.updateDynamic("parentTaskbarTemplate")(parentTaskbarTemplate)
+    if (predecessorMapping != null) __obj.updateDynamic("predecessorMapping")(predecessorMapping)
+    if (predecessorTooltipTemplate != null) __obj.updateDynamic("predecessorTooltipTemplate")(predecessorTooltipTemplate)
+    if (progressMapping != null) __obj.updateDynamic("progressMapping")(progressMapping)
+    if (progressbarBackground != null) __obj.updateDynamic("progressbarBackground")(progressbarBackground)
+    if (progressbarHeight != null) __obj.updateDynamic("progressbarHeight")(progressbarHeight.asInstanceOf[js.Any])
+    if (progressbarTooltipTemplate != null) __obj.updateDynamic("progressbarTooltipTemplate")(progressbarTooltipTemplate)
+    if (progressbarTooltipTemplateId != null) __obj.updateDynamic("progressbarTooltipTemplateId")(progressbarTooltipTemplateId)
+    if (query != null) __obj.updateDynamic("query")(query)
+    if (queryCellInfo != null) __obj.updateDynamic("queryCellInfo")(queryCellInfo)
+    if (queryTaskbarInfo != null) __obj.updateDynamic("queryTaskbarInfo")(queryTaskbarInfo)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (!js.isUndefined(renderBaseline)) __obj.updateDynamic("renderBaseline")(renderBaseline)
+    if (resourceCollectionMapping != null) __obj.updateDynamic("resourceCollectionMapping")(resourceCollectionMapping)
+    if (resourceIdMapping != null) __obj.updateDynamic("resourceIdMapping")(resourceIdMapping)
+    if (resourceInfoMapping != null) __obj.updateDynamic("resourceInfoMapping")(resourceInfoMapping)
+    if (resourceNameMapping != null) __obj.updateDynamic("resourceNameMapping")(resourceNameMapping)
+    if (resourceUnitMapping != null) __obj.updateDynamic("resourceUnitMapping")(resourceUnitMapping)
+    if (resources != null) __obj.updateDynamic("resources")(resources)
+    if (rightTaskLabelMapping != null) __obj.updateDynamic("rightTaskLabelMapping")(rightTaskLabelMapping)
+    if (rightTaskLabelTemplate != null) __obj.updateDynamic("rightTaskLabelTemplate")(rightTaskLabelTemplate)
+    if (!js.isUndefined(roundOffDayworkingTime)) __obj.updateDynamic("roundOffDayworkingTime")(roundOffDayworkingTime)
+    if (rowDataBound != null) __obj.updateDynamic("rowDataBound")(rowDataBound)
+    if (rowDrag != null) __obj.updateDynamic("rowDrag")(rowDrag)
+    if (rowDragStart != null) __obj.updateDynamic("rowDragStart")(rowDragStart)
+    if (rowDragStop != null) __obj.updateDynamic("rowDragStop")(rowDragStop)
+    if (rowHeight != null) __obj.updateDynamic("rowHeight")(rowHeight.asInstanceOf[js.Any])
+    if (rowSelected != null) __obj.updateDynamic("rowSelected")(rowSelected)
+    if (rowSelecting != null) __obj.updateDynamic("rowSelecting")(rowSelecting)
+    if (scheduleEndDate != null) __obj.updateDynamic("scheduleEndDate")(scheduleEndDate)
+    if (scheduleHeaderSettings != null) __obj.updateDynamic("scheduleHeaderSettings")(scheduleHeaderSettings)
+    if (scheduleStartDate != null) __obj.updateDynamic("scheduleStartDate")(scheduleStartDate)
+    if (selectedCellIndexes != null) __obj.updateDynamic("selectedCellIndexes")(selectedCellIndexes)
+    if (selectedRowIndex != null) __obj.updateDynamic("selectedRowIndex")(selectedRowIndex.asInstanceOf[js.Any])
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    if (selectionType != null) __obj.updateDynamic("selectionType")(selectionType.asInstanceOf[js.Any])
+    if (!js.isUndefined(showColumnChooser)) __obj.updateDynamic("showColumnChooser")(showColumnChooser)
+    if (!js.isUndefined(showColumnOptions)) __obj.updateDynamic("showColumnOptions")(showColumnOptions)
+    if (!js.isUndefined(showGridCellTooltip)) __obj.updateDynamic("showGridCellTooltip")(showGridCellTooltip)
+    if (!js.isUndefined(showGridExpandCellTooltip)) __obj.updateDynamic("showGridExpandCellTooltip")(showGridExpandCellTooltip)
+    if (!js.isUndefined(showProgressStatus)) __obj.updateDynamic("showProgressStatus")(showProgressStatus)
+    if (!js.isUndefined(showResourceNames)) __obj.updateDynamic("showResourceNames")(showResourceNames)
+    if (!js.isUndefined(showTaskNames)) __obj.updateDynamic("showTaskNames")(showTaskNames)
+    if (sizeSettings != null) __obj.updateDynamic("sizeSettings")(sizeSettings)
+    if (sortSettings != null) __obj.updateDynamic("sortSettings")(sortSettings)
+    if (splitterPosition != null) __obj.updateDynamic("splitterPosition")(splitterPosition)
+    if (splitterResized != null) __obj.updateDynamic("splitterResized")(splitterResized)
+    if (splitterSettings != null) __obj.updateDynamic("splitterSettings")(splitterSettings)
+    if (startDateMapping != null) __obj.updateDynamic("startDateMapping")(startDateMapping)
+    if (stripLines != null) __obj.updateDynamic("stripLines")(stripLines)
+    if (taskCollectionMapping != null) __obj.updateDynamic("taskCollectionMapping")(taskCollectionMapping)
+    if (taskIdMapping != null) __obj.updateDynamic("taskIdMapping")(taskIdMapping)
+    if (taskNameMapping != null) __obj.updateDynamic("taskNameMapping")(taskNameMapping)
+    if (taskSchedulingMode != null) __obj.updateDynamic("taskSchedulingMode")(taskSchedulingMode.asInstanceOf[js.Any])
+    if (taskSchedulingModeMapping != null) __obj.updateDynamic("taskSchedulingModeMapping")(taskSchedulingModeMapping)
+    if (taskType != null) __obj.updateDynamic("taskType")(taskType.asInstanceOf[js.Any])
+    if (taskbarBackground != null) __obj.updateDynamic("taskbarBackground")(taskbarBackground)
+    if (taskbarClick != null) __obj.updateDynamic("taskbarClick")(taskbarClick)
+    if (taskbarEdited != null) __obj.updateDynamic("taskbarEdited")(taskbarEdited)
+    if (taskbarEditing != null) __obj.updateDynamic("taskbarEditing")(taskbarEditing)
+    if (taskbarEditingTooltipTemplate != null) __obj.updateDynamic("taskbarEditingTooltipTemplate")(taskbarEditingTooltipTemplate)
+    if (taskbarEditingTooltipTemplateId != null) __obj.updateDynamic("taskbarEditingTooltipTemplateId")(taskbarEditingTooltipTemplateId)
+    if (taskbarHeight != null) __obj.updateDynamic("taskbarHeight")(taskbarHeight.asInstanceOf[js.Any])
+    if (taskbarTemplate != null) __obj.updateDynamic("taskbarTemplate")(taskbarTemplate)
+    if (taskbarTooltipTemplate != null) __obj.updateDynamic("taskbarTooltipTemplate")(taskbarTooltipTemplate)
+    if (taskbarTooltipTemplateId != null) __obj.updateDynamic("taskbarTooltipTemplateId")(taskbarTooltipTemplateId)
+    if (toolbarClick != null) __obj.updateDynamic("toolbarClick")(toolbarClick)
+    if (toolbarSettings != null) __obj.updateDynamic("toolbarSettings")(toolbarSettings)
+    if (treeColumnIndex != null) __obj.updateDynamic("treeColumnIndex")(treeColumnIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(validateManualTasksOnLinking)) __obj.updateDynamic("validateManualTasksOnLinking")(validateManualTasksOnLinking)
+    if (viewType != null) __obj.updateDynamic("viewType")(viewType.asInstanceOf[js.Any])
+    if (weekendBackground != null) __obj.updateDynamic("weekendBackground")(weekendBackground)
+    if (workMapping != null) __obj.updateDynamic("workMapping")(workMapping)
+    if (workUnit != null) __obj.updateDynamic("workUnit")(workUnit.asInstanceOf[js.Any])
+    if (workWeek != null) __obj.updateDynamic("workWeek")(workWeek)
+    if (workingTimeScale != null) __obj.updateDynamic("workingTimeScale")(workingTimeScale.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

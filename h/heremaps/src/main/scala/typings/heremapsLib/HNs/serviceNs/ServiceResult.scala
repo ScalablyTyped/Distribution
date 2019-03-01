@@ -16,3 +16,22 @@ trait ServiceResult
   var search: js.UndefOr[heremapsLib.Anon_Context] = js.undefined
 }
 
+object ServiceResult {
+  @scala.inline
+  def apply(
+    Response: heremapsLib.Anon_Isolines = null,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    response: heremapsLib.Anon_Language = null,
+    results: heremapsLib.Anon_Items = null,
+    search: heremapsLib.Anon_Context = null
+  ): ServiceResult = {
+    val __obj = js.Dynamic.literal()
+    if (Response != null) __obj.updateDynamic("Response")(Response)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (results != null) __obj.updateDynamic("results")(results)
+    if (search != null) __obj.updateDynamic("search")(search)
+    __obj.asInstanceOf[ServiceResult]
+  }
+}
+

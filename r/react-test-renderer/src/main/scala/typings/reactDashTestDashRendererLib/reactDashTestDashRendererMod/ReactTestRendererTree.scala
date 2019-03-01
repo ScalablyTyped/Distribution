@@ -11,3 +11,23 @@ trait ReactTestRendererTree extends ReactTestRendererJSON {
   var rendered: scala.Null | ReactTestRendererTree
 }
 
+object ReactTestRendererTree {
+  @scala.inline
+  def apply(
+    instance: js.Any,
+    nodeType: reactDashTestDashRendererLib.reactDashTestDashRendererLibStrings.component | reactDashTestDashRendererLib.reactDashTestDashRendererLibStrings.host,
+    props: org.scalablytyped.runtime.StringDictionary[js.Any],
+    `type`: java.lang.String,
+    children: js.Array[ReactTestRendererJSON] = null,
+    rendered: ReactTestRendererTree = null
+  ): ReactTestRendererTree = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("instance")(instance)
+    __obj.updateDynamic("nodeType")(nodeType.asInstanceOf[js.Any])
+    __obj.updateDynamic("props")(props)
+    if (children != null) __obj.updateDynamic("children")(children)
+    if (rendered != null) __obj.updateDynamic("rendered")(rendered)
+    __obj.asInstanceOf[ReactTestRendererTree]
+  }
+}
+

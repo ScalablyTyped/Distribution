@@ -40,3 +40,28 @@ trait SwitchTheme extends js.Object {
   var thumb: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SwitchTheme {
+  @scala.inline
+  def apply(
+    disabled: java.lang.String = null,
+    field: java.lang.String = null,
+    input: java.lang.String = null,
+    off: java.lang.String = null,
+    on: java.lang.String = null,
+    ripple: java.lang.String = null,
+    text: java.lang.String = null,
+    thumb: java.lang.String = null
+  ): SwitchTheme = {
+    val __obj = js.Dynamic.literal()
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (input != null) __obj.updateDynamic("input")(input)
+    if (off != null) __obj.updateDynamic("off")(off)
+    if (on != null) __obj.updateDynamic("on")(on)
+    if (ripple != null) __obj.updateDynamic("ripple")(ripple)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (thumb != null) __obj.updateDynamic("thumb")(thumb)
+    __obj.asInstanceOf[SwitchTheme]
+  }
+}
+

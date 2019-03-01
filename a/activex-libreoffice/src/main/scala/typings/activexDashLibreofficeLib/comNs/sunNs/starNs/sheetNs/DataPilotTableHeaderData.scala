@@ -30,3 +30,22 @@ trait DataPilotTableHeaderData extends js.Object {
   var MemberName: java.lang.String
 }
 
+object DataPilotTableHeaderData {
+  @scala.inline
+  def apply(
+    Dimension: scala.Double,
+    Flags: scala.Double,
+    Hierarchy: scala.Double,
+    Level: scala.Double,
+    MemberName: java.lang.String
+  ): DataPilotTableHeaderData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Dimension")(Dimension)
+    __obj.updateDynamic("Flags")(Flags)
+    __obj.updateDynamic("Hierarchy")(Hierarchy)
+    __obj.updateDynamic("Level")(Level)
+    __obj.updateDynamic("MemberName")(MemberName)
+    __obj.asInstanceOf[DataPilotTableHeaderData]
+  }
+}
+

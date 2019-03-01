@@ -24,3 +24,22 @@ trait LandingPage extends js.Object {
   var url: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LandingPage {
+  @scala.inline
+  def apply(
+    default: js.UndefOr[scala.Boolean] = js.undefined,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    url: java.lang.String = null
+  ): LandingPage = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(default)) __obj.updateDynamic("default")(default)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (url != null) __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[LandingPage]
+  }
+}
+

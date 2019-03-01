@@ -34,3 +34,32 @@ trait CreateTransmission extends js.Object {
   var substitution_data: js.UndefOr[js.Any] = js.undefined
 }
 
+object CreateTransmission {
+  @scala.inline
+  def apply(
+    content: InlineContent | sparkpostLib.Anon_Templateid | sparkpostLib.Anon_Emailrfc822,
+    bcc: js.Array[Recipient] = null,
+    campaign_id: java.lang.String = null,
+    cc: js.Array[Recipient] = null,
+    description: java.lang.String = null,
+    metadata: js.Any = null,
+    options: TransmissionOptions = null,
+    recipients: js.Array[Recipient] | sparkpostLib.Anon_Listid = null,
+    return_path: java.lang.String = null,
+    substitution_data: js.Any = null
+  ): CreateTransmission = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (bcc != null) __obj.updateDynamic("bcc")(bcc)
+    if (campaign_id != null) __obj.updateDynamic("campaign_id")(campaign_id)
+    if (cc != null) __obj.updateDynamic("cc")(cc)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (options != null) __obj.updateDynamic("options")(options)
+    if (recipients != null) __obj.updateDynamic("recipients")(recipients.asInstanceOf[js.Any])
+    if (return_path != null) __obj.updateDynamic("return_path")(return_path)
+    if (substitution_data != null) __obj.updateDynamic("substitution_data")(substitution_data)
+    __obj.asInstanceOf[CreateTransmission]
+  }
+}
+

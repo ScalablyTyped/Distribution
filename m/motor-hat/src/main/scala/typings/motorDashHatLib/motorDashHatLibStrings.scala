@@ -7,25 +7,31 @@ import scala.scalajs.js.annotation._
 
 object motorDashHatLibStrings {
   @js.native
-  sealed trait M1 extends js.Object
+  sealed trait M1
+    extends motorDashHatLib.motorDashHatMod.Motor
   
   @js.native
-  sealed trait M2 extends js.Object
+  sealed trait M2
+    extends motorDashHatLib.motorDashHatMod.Motor
   
   @js.native
-  sealed trait M3 extends js.Object
+  sealed trait M3
+    extends motorDashHatLib.motorDashHatMod.Motor
   
   @js.native
-  sealed trait M4 extends js.Object
+  sealed trait M4
+    extends motorDashHatLib.motorDashHatMod.Motor
   
   @js.native
-  sealed trait back extends js.Object
+  sealed trait back
+    extends motorDashHatLib.motorDashHatMod.Direction
   
   @js.native
   sealed trait double extends js.Object
   
   @js.native
-  sealed trait fwd extends js.Object
+  sealed trait fwd
+    extends motorDashHatLib.motorDashHatMod.Direction
   
   @js.native
   sealed trait interleaved extends js.Object

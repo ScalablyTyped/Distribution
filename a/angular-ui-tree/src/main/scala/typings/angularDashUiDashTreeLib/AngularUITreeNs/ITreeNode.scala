@@ -14,3 +14,14 @@ trait ITreeNode extends js.Object {
   var title: java.lang.String
 }
 
+object ITreeNode {
+  @scala.inline
+  def apply(id: scala.Double | java.lang.String, nodes: js.Array[ITreeNode], title: java.lang.String): ITreeNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.updateDynamic("nodes")(nodes)
+    __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[ITreeNode]
+  }
+}
+

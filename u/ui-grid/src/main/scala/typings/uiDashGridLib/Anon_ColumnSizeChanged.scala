@@ -17,3 +17,18 @@ trait Anon_ColumnSizeChanged extends js.Object {
   ): scala.Unit
 }
 
+object Anon_ColumnSizeChanged {
+  @scala.inline
+  def apply(
+    columnSizeChanged: js.Function2[
+      angularLib.angularMod.angularNs.IScope, 
+      uiDashGridLib.uiDashGridMod.uiGridNs.resizeColumnsNs.columnSizeChangedHandler, 
+      scala.Unit
+    ]
+  ): Anon_ColumnSizeChanged = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columnSizeChanged")(columnSizeChanged)
+    __obj.asInstanceOf[Anon_ColumnSizeChanged]
+  }
+}
+

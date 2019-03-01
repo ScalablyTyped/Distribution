@@ -110,3 +110,44 @@ trait IChargeCreationOptions
   var transfer_group: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IChargeCreationOptions {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    currency: java.lang.String,
+    application_fee: scala.Int | scala.Double = null,
+    capture: js.UndefOr[scala.Boolean] = js.undefined,
+    customer: java.lang.String = null,
+    description: java.lang.String = null,
+    destination: java.lang.String | stripeLib.Anon_Account = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    on_behalf_of: java.lang.String = null,
+    receipt_email: java.lang.String = null,
+    shipping: stripeLib.stripeMod.StripeNs.IShippingInformation = null,
+    source: stripeLib.stripeMod.StripeNs.sourcesNs.ISourceCreationOptions = null,
+    statement_descriptor: java.lang.String = null,
+    transfer_group: java.lang.String = null
+  ): IChargeCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("currency")(currency)
+    if (application_fee != null) __obj.updateDynamic("application_fee")(application_fee.asInstanceOf[js.Any])
+    if (!js.isUndefined(capture)) __obj.updateDynamic("capture")(capture)
+    if (customer != null) __obj.updateDynamic("customer")(customer)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (destination != null) __obj.updateDynamic("destination")(destination.asInstanceOf[js.Any])
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (on_behalf_of != null) __obj.updateDynamic("on_behalf_of")(on_behalf_of)
+    if (receipt_email != null) __obj.updateDynamic("receipt_email")(receipt_email)
+    if (shipping != null) __obj.updateDynamic("shipping")(shipping)
+    if (source != null) __obj.updateDynamic("source")(source.asInstanceOf[js.Any])
+    if (statement_descriptor != null) __obj.updateDynamic("statement_descriptor")(statement_descriptor)
+    if (transfer_group != null) __obj.updateDynamic("transfer_group")(transfer_group)
+    __obj.asInstanceOf[IChargeCreationOptions]
+  }
+}
+

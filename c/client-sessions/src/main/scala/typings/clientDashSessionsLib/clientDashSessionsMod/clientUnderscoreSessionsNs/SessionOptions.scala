@@ -34,3 +34,24 @@ trait SessionOptions extends js.Object {
   var secret: java.lang.String
 }
 
+object SessionOptions {
+  @scala.inline
+  def apply(
+    secret: java.lang.String,
+    activeDuration: scala.Int | scala.Double = null,
+    cookie: cookiesLib.cookiesMod.CookiesNs.IOptions = null,
+    cookieName: java.lang.String = null,
+    duration: scala.Int | scala.Double = null,
+    requestKey: java.lang.String = null
+  ): SessionOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("secret")(secret)
+    if (activeDuration != null) __obj.updateDynamic("activeDuration")(activeDuration.asInstanceOf[js.Any])
+    if (cookie != null) __obj.updateDynamic("cookie")(cookie)
+    if (cookieName != null) __obj.updateDynamic("cookieName")(cookieName)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (requestKey != null) __obj.updateDynamic("requestKey")(requestKey)
+    __obj.asInstanceOf[SessionOptions]
+  }
+}
+

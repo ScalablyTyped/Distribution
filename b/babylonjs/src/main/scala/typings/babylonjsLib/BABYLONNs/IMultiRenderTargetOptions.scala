@@ -47,3 +47,30 @@ trait IMultiRenderTargetOptions extends js.Object {
   var types: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object IMultiRenderTargetOptions {
+  @scala.inline
+  def apply(
+    defaultType: scala.Int | scala.Double = null,
+    doNotChangeAspectRatio: js.UndefOr[scala.Boolean] = js.undefined,
+    generateDepthBuffer: js.UndefOr[scala.Boolean] = js.undefined,
+    generateDepthTexture: js.UndefOr[scala.Boolean] = js.undefined,
+    generateMipMaps: js.UndefOr[scala.Boolean] = js.undefined,
+    generateStencilBuffer: js.UndefOr[scala.Boolean] = js.undefined,
+    samplingModes: js.Array[scala.Double] = null,
+    textureCount: scala.Int | scala.Double = null,
+    types: js.Array[scala.Double] = null
+  ): IMultiRenderTargetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (defaultType != null) __obj.updateDynamic("defaultType")(defaultType.asInstanceOf[js.Any])
+    if (!js.isUndefined(doNotChangeAspectRatio)) __obj.updateDynamic("doNotChangeAspectRatio")(doNotChangeAspectRatio)
+    if (!js.isUndefined(generateDepthBuffer)) __obj.updateDynamic("generateDepthBuffer")(generateDepthBuffer)
+    if (!js.isUndefined(generateDepthTexture)) __obj.updateDynamic("generateDepthTexture")(generateDepthTexture)
+    if (!js.isUndefined(generateMipMaps)) __obj.updateDynamic("generateMipMaps")(generateMipMaps)
+    if (!js.isUndefined(generateStencilBuffer)) __obj.updateDynamic("generateStencilBuffer")(generateStencilBuffer)
+    if (samplingModes != null) __obj.updateDynamic("samplingModes")(samplingModes)
+    if (textureCount != null) __obj.updateDynamic("textureCount")(textureCount.asInstanceOf[js.Any])
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[IMultiRenderTargetOptions]
+  }
+}
+

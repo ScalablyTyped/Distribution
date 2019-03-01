@@ -42,3 +42,30 @@ trait Config extends js.Object {
   var theme: js.UndefOr[Theme] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    arrowMarkerAbsolute: js.UndefOr[scala.Boolean] = js.undefined,
+    `class`: js.Any = null,
+    flowchart: FlowChartConfig = null,
+    git: js.Any = null,
+    gnatt: GnattConfig = null,
+    logLevel: LogLevel = null,
+    sequence: SequenceDiagramConfig = null,
+    startOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: Theme = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(arrowMarkerAbsolute)) __obj.updateDynamic("arrowMarkerAbsolute")(arrowMarkerAbsolute)
+    if (`class` != null) __obj.updateDynamic("class")(`class`)
+    if (flowchart != null) __obj.updateDynamic("flowchart")(flowchart)
+    if (git != null) __obj.updateDynamic("git")(git)
+    if (gnatt != null) __obj.updateDynamic("gnatt")(gnatt)
+    if (logLevel != null) __obj.updateDynamic("logLevel")(logLevel)
+    if (sequence != null) __obj.updateDynamic("sequence")(sequence)
+    if (!js.isUndefined(startOnLoad)) __obj.updateDynamic("startOnLoad")(startOnLoad)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    __obj.asInstanceOf[Config]
+  }
+}
+

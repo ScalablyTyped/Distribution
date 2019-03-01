@@ -25,3 +25,36 @@ trait CMRequestInit extends js.Object {
   var window: js.UndefOr[js.Any] = js.undefined
 }
 
+object CMRequestInit {
+  @scala.inline
+  def apply(
+    body: js.Any = null,
+    cache: java.lang.String = null,
+    credentials: PasswordCredential | java.lang.String = null,
+    headers: js.Any = null,
+    integrity: java.lang.String = null,
+    keepalive: js.UndefOr[scala.Boolean] = js.undefined,
+    method: java.lang.String = null,
+    mode: java.lang.String = null,
+    redirect: java.lang.String = null,
+    referrer: java.lang.String = null,
+    referrerPolicy: java.lang.String = null,
+    window: js.Any = null
+  ): CMRequestInit = {
+    val __obj = js.Dynamic.literal()
+    if (body != null) __obj.updateDynamic("body")(body)
+    if (cache != null) __obj.updateDynamic("cache")(cache)
+    if (credentials != null) __obj.updateDynamic("credentials")(credentials.asInstanceOf[js.Any])
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (integrity != null) __obj.updateDynamic("integrity")(integrity)
+    if (!js.isUndefined(keepalive)) __obj.updateDynamic("keepalive")(keepalive)
+    if (method != null) __obj.updateDynamic("method")(method)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (redirect != null) __obj.updateDynamic("redirect")(redirect)
+    if (referrer != null) __obj.updateDynamic("referrer")(referrer)
+    if (referrerPolicy != null) __obj.updateDynamic("referrerPolicy")(referrerPolicy)
+    if (window != null) __obj.updateDynamic("window")(window)
+    __obj.asInstanceOf[CMRequestInit]
+  }
+}
+

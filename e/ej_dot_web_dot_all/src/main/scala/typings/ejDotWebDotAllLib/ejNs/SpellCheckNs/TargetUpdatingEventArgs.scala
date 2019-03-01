@@ -26,3 +26,24 @@ trait TargetUpdatingEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TargetUpdatingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentElement: js.Any = null,
+    model: Model = null,
+    previousElement: js.Any = null,
+    targetHtml: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): TargetUpdatingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentElement != null) __obj.updateDynamic("currentElement")(currentElement)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (previousElement != null) __obj.updateDynamic("previousElement")(previousElement)
+    if (targetHtml != null) __obj.updateDynamic("targetHtml")(targetHtml)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[TargetUpdatingEventArgs]
+  }
+}
+

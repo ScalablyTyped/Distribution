@@ -7,91 +7,162 @@ import scala.scalajs.js.annotation._
 
 object reactDashFoundationLibStrings {
   @js.native
-  sealed trait alert extends js.Object
+  sealed trait alert
+    extends reactDashFoundationLib.enumsMod.BadgeColors
+       with reactDashFoundationLib.enumsMod.ButtonColors
+       with reactDashFoundationLib.enumsMod.ButtonGroupColors
+       with reactDashFoundationLib.enumsMod.CalloutColors
+       with reactDashFoundationLib.enumsMod.LabelColors
+       with reactDashFoundationLib.enumsMod.ProgressColors
   
   @js.native
-  sealed trait all extends js.Object
+  sealed trait all
+    extends reactDashFoundationLib.enumsMod.ExtendedBreakpoints
   
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends reactDashFoundationLib.enumsMod.SpaceControls
   
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends reactDashFoundationLib.enumsMod.VerticalAlignments
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends reactDashFoundationLib.enumsMod.FloatTypes
+       with reactDashFoundationLib.enumsMod.HorizontalAlignments
+       with reactDashFoundationLib.enumsMod.MenuAlignments
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait checkbox
+    extends reactDashFoundationLib.enumsMod.SwitchInputTypes
   
   @js.native
-  sealed trait grow extends js.Object
+  sealed trait grow
+    extends reactDashFoundationLib.enumsMod.SpaceControls
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends reactDashFoundationLib.enumsMod.BadgeColors
+       with reactDashFoundationLib.enumsMod.LabelColors
   
   @js.native
-  sealed trait justify extends js.Object
+  sealed trait justify
+    extends reactDashFoundationLib.enumsMod.HorizontalAlignments
   
   @js.native
-  sealed trait large extends js.Object
+  sealed trait large
+    extends reactDashFoundationLib.enumsMod.Breakpoints
+       with reactDashFoundationLib.enumsMod.ButtonGroupSizes
+       with reactDashFoundationLib.enumsMod.ButtonSizes
+       with reactDashFoundationLib.enumsMod.CalloutSizes
+       with reactDashFoundationLib.enumsMod.ExtendedBreakpoints
+       with reactDashFoundationLib.enumsMod.SwitchSizes
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactDashFoundationLib.enumsMod.FloatTypes
   
   @js.native
-  sealed trait margin extends js.Object
+  sealed trait margin
+    extends reactDashFoundationLib.enumsMod.GutterTypes
   
   @js.native
-  sealed trait medium extends js.Object
+  sealed trait medium
+    extends reactDashFoundationLib.enumsMod.Breakpoints
+       with reactDashFoundationLib.enumsMod.ExtendedBreakpoints
   
   @js.native
-  sealed trait middle extends js.Object
+  sealed trait middle
+    extends reactDashFoundationLib.enumsMod.VerticalAlignments
   
   @js.native
-  sealed trait padding extends js.Object
+  sealed trait padding
+    extends reactDashFoundationLib.enumsMod.GutterTypes
   
   @js.native
-  sealed trait primary extends js.Object
+  sealed trait primary
+    extends reactDashFoundationLib.enumsMod.ButtonColors
+       with reactDashFoundationLib.enumsMod.ButtonGroupColors
+       with reactDashFoundationLib.enumsMod.CalloutColors
   
   @js.native
-  sealed trait radio extends js.Object
+  sealed trait radio
+    extends reactDashFoundationLib.enumsMod.SwitchInputTypes
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactDashFoundationLib.enumsMod.FloatTypes
+       with reactDashFoundationLib.enumsMod.HorizontalAlignments
+       with reactDashFoundationLib.enumsMod.MenuAlignments
   
   @js.native
-  sealed trait secondary extends js.Object
+  sealed trait secondary
+    extends reactDashFoundationLib.enumsMod.BadgeColors
+       with reactDashFoundationLib.enumsMod.ButtonColors
+       with reactDashFoundationLib.enumsMod.ButtonGroupColors
+       with reactDashFoundationLib.enumsMod.CalloutColors
+       with reactDashFoundationLib.enumsMod.LabelColors
+       with reactDashFoundationLib.enumsMod.ProgressColors
   
   @js.native
-  sealed trait shrink extends js.Object
+  sealed trait shrink
+    extends reactDashFoundationLib.enumsMod.SpaceControls
   
   @js.native
-  sealed trait small extends js.Object
+  sealed trait small
+    extends reactDashFoundationLib.enumsMod.Breakpoints
+       with reactDashFoundationLib.enumsMod.ButtonGroupSizes
+       with reactDashFoundationLib.enumsMod.ButtonSizes
+       with reactDashFoundationLib.enumsMod.CalloutSizes
+       with reactDashFoundationLib.enumsMod.ExtendedBreakpoints
+       with reactDashFoundationLib.enumsMod.SwitchSizes
   
   @js.native
-  sealed trait spaced extends js.Object
+  sealed trait spaced
+    extends reactDashFoundationLib.enumsMod.HorizontalAlignments
   
   @js.native
-  sealed trait stretch extends js.Object
+  sealed trait stretch
+    extends reactDashFoundationLib.enumsMod.VerticalAlignments
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends reactDashFoundationLib.enumsMod.BadgeColors
+       with reactDashFoundationLib.enumsMod.ButtonColors
+       with reactDashFoundationLib.enumsMod.ButtonGroupColors
+       with reactDashFoundationLib.enumsMod.CalloutColors
+       with reactDashFoundationLib.enumsMod.LabelColors
+       with reactDashFoundationLib.enumsMod.ProgressColors
   
   @js.native
-  sealed trait tiny extends js.Object
+  sealed trait tiny
+    extends reactDashFoundationLib.enumsMod.ButtonGroupSizes
+       with reactDashFoundationLib.enumsMod.ButtonSizes
+       with reactDashFoundationLib.enumsMod.SwitchSizes
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends reactDashFoundationLib.enumsMod.VerticalAlignments
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends reactDashFoundationLib.enumsMod.BadgeColors
+       with reactDashFoundationLib.enumsMod.ButtonColors
+       with reactDashFoundationLib.enumsMod.ButtonGroupColors
+       with reactDashFoundationLib.enumsMod.CalloutColors
+       with reactDashFoundationLib.enumsMod.LabelColors
+       with reactDashFoundationLib.enumsMod.ProgressColors
   
   @js.native
-  sealed trait xlarge extends js.Object
+  sealed trait xlarge
+    extends reactDashFoundationLib.enumsMod.Breakpoints
+       with reactDashFoundationLib.enumsMod.ExtendedBreakpoints
   
   @js.native
-  sealed trait xxlarge extends js.Object
+  sealed trait xxlarge
+    extends reactDashFoundationLib.enumsMod.Breakpoints
+       with reactDashFoundationLib.enumsMod.ExtendedBreakpoints
   
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]

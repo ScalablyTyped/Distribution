@@ -16,3 +16,12 @@ trait PageUpdateData extends js.Object {
   var view: js.UndefOr[PageViewUpdateData] = js.undefined
 }
 
+object PageUpdateData {
+  @scala.inline
+  def apply(view: PageViewUpdateData = null): PageUpdateData = {
+    val __obj = js.Dynamic.literal()
+    if (view != null) __obj.updateDynamic("view")(view)
+    __obj.asInstanceOf[PageUpdateData]
+  }
+}
+

@@ -12,3 +12,20 @@ trait IOwnerPropertyDef extends js.Object {
   val IsRelationFiltering: scala.Boolean
 }
 
+object IOwnerPropertyDef {
+  @scala.inline
+  def apply(
+    DependencyRelation: mfilesLib.MFilesNs.MFDependencyRelation,
+    ID: scala.Double,
+    IndexForAutomaticFilling: scala.Double,
+    IsRelationFiltering: scala.Boolean
+  ): IOwnerPropertyDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DependencyRelation")(DependencyRelation)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("IndexForAutomaticFilling")(IndexForAutomaticFilling)
+    __obj.updateDynamic("IsRelationFiltering")(IsRelationFiltering)
+    __obj.asInstanceOf[IOwnerPropertyDef]
+  }
+}
+

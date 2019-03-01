@@ -13,3 +13,22 @@ trait NameConstraints extends js.Object {
   def toSchema(): js.Any
 }
 
+object NameConstraints {
+  @scala.inline
+  def apply(
+    fromSchema: js.Function1[js.Any, scala.Unit],
+    toJSON: js.Function0[js.Any],
+    toSchema: js.Function0[js.Any],
+    excludedSubtrees: js.Array[pkijsLib.srcGeneralSubtreeMod.default] = null,
+    permittedSubtrees: js.Array[pkijsLib.srcGeneralSubtreeMod.default] = null
+  ): NameConstraints = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fromSchema")(fromSchema)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("toSchema")(toSchema)
+    if (excludedSubtrees != null) __obj.updateDynamic("excludedSubtrees")(excludedSubtrees)
+    if (permittedSubtrees != null) __obj.updateDynamic("permittedSubtrees")(permittedSubtrees)
+    __obj.asInstanceOf[NameConstraints]
+  }
+}
+

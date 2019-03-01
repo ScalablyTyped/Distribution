@@ -16,3 +16,13 @@ trait WhenSchemaOptions extends js.Object {
   var `then`: js.UndefOr[SchemaLike] = js.undefined
 }
 
+object WhenSchemaOptions {
+  @scala.inline
+  def apply(otherwise: SchemaLike = null, `then`: SchemaLike = null): WhenSchemaOptions = {
+    val __obj = js.Dynamic.literal()
+    if (otherwise != null) __obj.updateDynamic("otherwise")(otherwise.asInstanceOf[js.Any])
+    if (`then` != null) __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WhenSchemaOptions]
+  }
+}
+

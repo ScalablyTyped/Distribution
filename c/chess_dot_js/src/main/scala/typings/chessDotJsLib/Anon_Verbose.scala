@@ -13,3 +13,12 @@ trait Anon_Verbose extends js.Object {
   var verbose: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Verbose {
+  @scala.inline
+  def apply(verbose: js.UndefOr[scala.Boolean] = js.undefined): Anon_Verbose = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(verbose)) __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[Anon_Verbose]
+  }
+}
+

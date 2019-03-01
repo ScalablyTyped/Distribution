@@ -39,3 +39,29 @@ trait IgGridRestSettings
   var update: js.UndefOr[IgGridRestSettingsUpdate] = js.undefined
 }
 
+object IgGridRestSettings {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgGridRestSettings
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    contentSerializer: js.Function = null,
+    contentType: java.lang.String = null,
+    create: IgGridRestSettingsCreate = null,
+    encodeRemoveInRequestUri: js.UndefOr[scala.Boolean] = js.undefined,
+    remove: IgGridRestSettingsRemove = null,
+    update: IgGridRestSettingsUpdate = null
+  ): IgGridRestSettings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (contentSerializer != null) __obj.updateDynamic("contentSerializer")(contentSerializer)
+    if (contentType != null) __obj.updateDynamic("contentType")(contentType)
+    if (create != null) __obj.updateDynamic("create")(create)
+    if (!js.isUndefined(encodeRemoveInRequestUri)) __obj.updateDynamic("encodeRemoveInRequestUri")(encodeRemoveInRequestUri)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[IgGridRestSettings]
+  }
+}
+

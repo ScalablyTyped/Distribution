@@ -44,3 +44,30 @@ trait Budget extends js.Object {
   var TimeUnit: TimeUnit
 }
 
+object Budget {
+  @scala.inline
+  def apply(
+    BudgetName: BudgetName,
+    BudgetType: BudgetType,
+    TimeUnit: TimeUnit,
+    BudgetLimit: Spend = null,
+    CalculatedSpend: CalculatedSpend = null,
+    CostFilters: CostFilters = null,
+    CostTypes: CostTypes = null,
+    LastUpdatedTime: GenericTimestamp = null,
+    TimePeriod: TimePeriod = null
+  ): Budget = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BudgetName")(BudgetName)
+    __obj.updateDynamic("BudgetType")(BudgetType.asInstanceOf[js.Any])
+    __obj.updateDynamic("TimeUnit")(TimeUnit.asInstanceOf[js.Any])
+    if (BudgetLimit != null) __obj.updateDynamic("BudgetLimit")(BudgetLimit)
+    if (CalculatedSpend != null) __obj.updateDynamic("CalculatedSpend")(CalculatedSpend)
+    if (CostFilters != null) __obj.updateDynamic("CostFilters")(CostFilters)
+    if (CostTypes != null) __obj.updateDynamic("CostTypes")(CostTypes)
+    if (LastUpdatedTime != null) __obj.updateDynamic("LastUpdatedTime")(LastUpdatedTime)
+    if (TimePeriod != null) __obj.updateDynamic("TimePeriod")(TimePeriod)
+    __obj.asInstanceOf[Budget]
+  }
+}
+

@@ -13,3 +13,20 @@ trait Anon_AnErrorStringFailureGroupList extends js.Object {
   ): js.Any
 }
 
+object Anon_AnErrorStringFailureGroupList {
+  @scala.inline
+  def apply(
+    failure: js.Function2[kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, java.lang.String, js.Any],
+    success: js.Function2[
+      kiiDashCloudDashSdkLib.KiiCloudNs.KiiUser, 
+      js.Array[kiiDashCloudDashSdkLib.KiiCloudNs.KiiGroup], 
+      js.Any
+    ]
+  ): Anon_AnErrorStringFailureGroupList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("failure")(failure)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_AnErrorStringFailureGroupList]
+  }
+}
+

@@ -90,3 +90,62 @@ trait NumberPickerProps
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object NumberPickerProps {
+  @scala.inline
+  def apply(
+    autoFocus: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    culture: java.lang.String = null,
+    defaultValue: scala.Int | scala.Double = null,
+    disabled: scala.Boolean | js.Array[_] = null,
+    format: js.Any = null,
+    id: java.lang.String = null,
+    inputProps: js.Object = null,
+    isRtl: js.UndefOr[scala.Boolean] = js.undefined,
+    key: reactLib.reactMod.ReactNs.Key = null,
+    max: scala.Int | scala.Double = null,
+    messages: NumberPickerMessages = null,
+    min: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    onChange: js.Function1[/* value */ js.UndefOr[scala.Double], scala.Unit] = null,
+    onKeyDown: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
+    onKeyPress: js.Function1[/* event */ reactLib.KeyboardEvent, scala.Unit] = null,
+    open: js.UndefOr[scala.Boolean] = js.undefined,
+    parse: js.Array[java.lang.String] | (js.Function2[/* str */ java.lang.String, /* culture */ java.lang.String, scala.Double]) = null,
+    placeholder: java.lang.String = null,
+    precision: scala.Int | scala.Double = null,
+    readOnly: scala.Boolean | js.Array[_] = null,
+    ref: reactLib.reactMod.ReactNs.LegacyRef[NumberPickerClass] = null,
+    step: scala.Int | scala.Double = null,
+    value: scala.Int | scala.Double = null
+  ): NumberPickerProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoFocus)) __obj.updateDynamic("autoFocus")(autoFocus)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (culture != null) __obj.updateDynamic("culture")(culture)
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue.asInstanceOf[js.Any])
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (inputProps != null) __obj.updateDynamic("inputProps")(inputProps)
+    if (!js.isUndefined(isRtl)) __obj.updateDynamic("isRtl")(isRtl)
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    if (max != null) __obj.updateDynamic("max")(max.asInstanceOf[js.Any])
+    if (messages != null) __obj.updateDynamic("messages")(messages)
+    if (min != null) __obj.updateDynamic("min")(min.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onKeyDown != null) __obj.updateDynamic("onKeyDown")(onKeyDown)
+    if (onKeyPress != null) __obj.updateDynamic("onKeyPress")(onKeyPress)
+    if (!js.isUndefined(open)) __obj.updateDynamic("open")(open)
+    if (parse != null) __obj.updateDynamic("parse")(parse.asInstanceOf[js.Any])
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (precision != null) __obj.updateDynamic("precision")(precision.asInstanceOf[js.Any])
+    if (readOnly != null) __obj.updateDynamic("readOnly")(readOnly.asInstanceOf[js.Any])
+    if (ref != null) __obj.updateDynamic("ref")(ref.asInstanceOf[js.Any])
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NumberPickerProps]
+  }
+}
+

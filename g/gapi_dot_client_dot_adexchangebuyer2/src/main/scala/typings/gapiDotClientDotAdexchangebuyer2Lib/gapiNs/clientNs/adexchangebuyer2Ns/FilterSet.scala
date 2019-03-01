@@ -64,3 +64,38 @@ trait FilterSet extends js.Object {
   var timeSeriesGranularity: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FilterSet {
+  @scala.inline
+  def apply(
+    absoluteDateRange: AbsoluteDateRange = null,
+    buyerAccountId: java.lang.String = null,
+    creativeId: java.lang.String = null,
+    dealId: java.lang.String = null,
+    environment: java.lang.String = null,
+    filterSetId: java.lang.String = null,
+    format: java.lang.String = null,
+    ownerAccountId: java.lang.String = null,
+    platforms: js.Array[java.lang.String] = null,
+    realtimeTimeRange: RealtimeTimeRange = null,
+    relativeDateRange: RelativeDateRange = null,
+    sellerNetworkIds: js.Array[scala.Double] = null,
+    timeSeriesGranularity: java.lang.String = null
+  ): FilterSet = {
+    val __obj = js.Dynamic.literal()
+    if (absoluteDateRange != null) __obj.updateDynamic("absoluteDateRange")(absoluteDateRange)
+    if (buyerAccountId != null) __obj.updateDynamic("buyerAccountId")(buyerAccountId)
+    if (creativeId != null) __obj.updateDynamic("creativeId")(creativeId)
+    if (dealId != null) __obj.updateDynamic("dealId")(dealId)
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (filterSetId != null) __obj.updateDynamic("filterSetId")(filterSetId)
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (ownerAccountId != null) __obj.updateDynamic("ownerAccountId")(ownerAccountId)
+    if (platforms != null) __obj.updateDynamic("platforms")(platforms)
+    if (realtimeTimeRange != null) __obj.updateDynamic("realtimeTimeRange")(realtimeTimeRange)
+    if (relativeDateRange != null) __obj.updateDynamic("relativeDateRange")(relativeDateRange)
+    if (sellerNetworkIds != null) __obj.updateDynamic("sellerNetworkIds")(sellerNetworkIds)
+    if (timeSeriesGranularity != null) __obj.updateDynamic("timeSeriesGranularity")(timeSeriesGranularity)
+    __obj.asInstanceOf[FilterSet]
+  }
+}
+

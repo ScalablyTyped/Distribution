@@ -16,3 +16,16 @@ trait MapOptions extends js.Object {
   var editable: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object MapOptions {
+  @scala.inline
+  def apply(
+    editOptions: leafletDashEditableLib.leafletMod.EditOptions = null,
+    editable: js.UndefOr[scala.Boolean] = js.undefined
+  ): MapOptions = {
+    val __obj = js.Dynamic.literal()
+    if (editOptions != null) __obj.updateDynamic("editOptions")(editOptions)
+    if (!js.isUndefined(editable)) __obj.updateDynamic("editable")(editable)
+    __obj.asInstanceOf[MapOptions]
+  }
+}
+

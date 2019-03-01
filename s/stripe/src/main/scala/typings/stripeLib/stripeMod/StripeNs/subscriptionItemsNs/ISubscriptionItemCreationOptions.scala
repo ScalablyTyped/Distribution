@@ -30,3 +30,28 @@ trait ISubscriptionItemCreationOptions
   var subscription: java.lang.String
 }
 
+object ISubscriptionItemCreationOptions {
+  @scala.inline
+  def apply(
+    plan: java.lang.String,
+    subscription: java.lang.String,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    metadata: stripeLib.stripeMod.StripeNs.IOptionsMetadata = null,
+    prorate: js.UndefOr[scala.Boolean] = js.undefined,
+    proration_date: scala.Int | scala.Double = null,
+    quantity: scala.Int | scala.Double = null
+  ): ISubscriptionItemCreationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("plan")(plan)
+    __obj.updateDynamic("subscription")(subscription)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (!js.isUndefined(prorate)) __obj.updateDynamic("prorate")(prorate)
+    if (proration_date != null) __obj.updateDynamic("proration_date")(proration_date.asInstanceOf[js.Any])
+    if (quantity != null) __obj.updateDynamic("quantity")(quantity.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISubscriptionItemCreationOptions]
+  }
+}
+

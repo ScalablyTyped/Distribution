@@ -35,3 +35,22 @@ trait XConversionPropertyType
   def setPropertyType(aLeftText: java.lang.String, aRightText: java.lang.String, nPropertyType: scala.Double): scala.Unit
 }
 
+object XConversionPropertyType {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getPropertyType: js.Function2[java.lang.String, java.lang.String, scala.Double],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setPropertyType: js.Function3[java.lang.String, java.lang.String, scala.Double, scala.Unit]
+  ): XConversionPropertyType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getPropertyType")(getPropertyType)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setPropertyType")(setPropertyType)
+    __obj.asInstanceOf[XConversionPropertyType]
+  }
+}
+

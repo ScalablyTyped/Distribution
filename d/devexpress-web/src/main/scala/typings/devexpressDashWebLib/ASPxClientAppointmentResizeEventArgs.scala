@@ -36,3 +36,22 @@ trait ASPxClientAppointmentResizeEventArgs extends ASPxClientEventArgs {
   var operation: ASPxClientAppointmentOperation
 }
 
+object ASPxClientAppointmentResizeEventArgs {
+  @scala.inline
+  def apply(
+    appointmentId: java.lang.String,
+    handled: scala.Boolean,
+    newInterval: ASPxClientTimeInterval,
+    oldInterval: ASPxClientTimeInterval,
+    operation: ASPxClientAppointmentOperation
+  ): ASPxClientAppointmentResizeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appointmentId")(appointmentId)
+    __obj.updateDynamic("handled")(handled)
+    __obj.updateDynamic("newInterval")(newInterval)
+    __obj.updateDynamic("oldInterval")(oldInterval)
+    __obj.updateDynamic("operation")(operation)
+    __obj.asInstanceOf[ASPxClientAppointmentResizeEventArgs]
+  }
+}
+

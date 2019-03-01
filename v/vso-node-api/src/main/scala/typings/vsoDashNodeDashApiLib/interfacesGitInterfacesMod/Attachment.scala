@@ -44,3 +44,30 @@ trait Attachment extends js.Object {
   var url: java.lang.String
 }
 
+object Attachment {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    author: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    contentHash: java.lang.String,
+    createdDate: stdLib.Date,
+    description: java.lang.String,
+    displayName: java.lang.String,
+    id: scala.Double,
+    properties: js.Any,
+    url: java.lang.String
+  ): Attachment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("author")(author)
+    __obj.updateDynamic("contentHash")(contentHash)
+    __obj.updateDynamic("createdDate")(createdDate)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[Attachment]
+  }
+}
+

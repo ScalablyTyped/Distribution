@@ -16,3 +16,13 @@ trait SwimlaneSettingsUnassignedGroup extends js.Object {
   var keys: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object SwimlaneSettingsUnassignedGroup {
+  @scala.inline
+  def apply(enable: js.UndefOr[scala.Boolean] = js.undefined, keys: js.Array[_] = null): SwimlaneSettingsUnassignedGroup = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enable)) __obj.updateDynamic("enable")(enable)
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    __obj.asInstanceOf[SwimlaneSettingsUnassignedGroup]
+  }
+}
+

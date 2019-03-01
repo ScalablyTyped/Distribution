@@ -2426,11 +2426,31 @@ object GuardDutyNs extends js.Object {
   
   trait UpdateThreatIntelSetResponse extends js.Object
   
+  trait _DetectorStatus extends js.Object
+  
+  trait _Feedback extends js.Object
+  
+  trait _FilterAction extends js.Object
+  
+  trait _FindingPublishingFrequency extends js.Object
+  
+  trait _IpSetFormat extends js.Object
+  
+  trait _IpSetStatus extends js.Object
+  
+  trait _OrderBy extends js.Object
+  
+  trait _ThreatIntelSetFormat extends js.Object
+  
+  trait _ThreatIntelSetStatus extends js.Object
+  
   trait __mapOfCondition
     extends /* key */ org.scalablytyped.runtime.StringDictionary[Condition]
   
   trait __mapOfCountBySeverityFindingStatistic
     extends /* key */ org.scalablytyped.runtime.StringDictionary[CountBySeverityFindingStatistic]
+  
+  trait _apiVersion extends js.Object
   
   val TypesNs: this.type = js.native
   type AccountDetails = js.Array[AccountDetail]
@@ -2443,20 +2463,20 @@ object GuardDutyNs extends js.Object {
   type CreatedAt = java.lang.String
   type DetectorId = java.lang.String
   type DetectorIds = js.Array[DetectorId]
-  type DetectorStatus = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type DetectorStatus = _DetectorStatus | java.lang.String
   type Domain = java.lang.String
   type Email = java.lang.String
   type Enable = scala.Boolean
   type Eq = js.Array[__string]
-  type Feedback = awsDashSdkLib.awsDashSdkLibStrings.USEFUL | awsDashSdkLib.awsDashSdkLibStrings.NOT_USEFUL | java.lang.String
-  type FilterAction = awsDashSdkLib.awsDashSdkLibStrings.NOOP | awsDashSdkLib.awsDashSdkLibStrings.ARCHIVE | java.lang.String
+  type Feedback = _Feedback | java.lang.String
+  type FilterAction = _FilterAction | java.lang.String
   type FilterDescription = java.lang.String
   type FilterName = java.lang.String
   type FilterNames = js.Array[FilterName]
   type FilterRank = scala.Double
   type FindingId = java.lang.String
   type FindingIds = js.Array[FindingId]
-  type FindingPublishingFrequency = awsDashSdkLib.awsDashSdkLibStrings.FIFTEEN_MINUTES | awsDashSdkLib.awsDashSdkLibStrings.ONE_HOUR | awsDashSdkLib.awsDashSdkLibStrings.SIX_HOURS | java.lang.String
+  type FindingPublishingFrequency = _FindingPublishingFrequency | java.lang.String
   type FindingStatisticType = awsDashSdkLib.awsDashSdkLibStrings.COUNT_BY_SEVERITY | java.lang.String
   type FindingStatisticTypes = js.Array[FindingStatisticType]
   type FindingType = java.lang.String
@@ -2465,10 +2485,10 @@ object GuardDutyNs extends js.Object {
   type InvitationId = java.lang.String
   type Invitations = js.Array[Invitation]
   type InvitedAt = java.lang.String
-  type IpSetFormat = awsDashSdkLib.awsDashSdkLibStrings.TXT | awsDashSdkLib.awsDashSdkLibStrings.STIX | awsDashSdkLib.awsDashSdkLibStrings.OTX_CSV | awsDashSdkLib.awsDashSdkLibStrings.ALIEN_VAULT | awsDashSdkLib.awsDashSdkLibStrings.PROOF_POINT | awsDashSdkLib.awsDashSdkLibStrings.FIRE_EYE | java.lang.String
+  type IpSetFormat = _IpSetFormat | java.lang.String
   type IpSetId = java.lang.String
   type IpSetIds = js.Array[IpSetId]
-  type IpSetStatus = awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | awsDashSdkLib.awsDashSdkLibStrings.ACTIVATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DEACTIVATING | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.DELETE_PENDING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
+  type IpSetStatus = _IpSetStatus | java.lang.String
   type Ipv6Address = java.lang.String
   type Ipv6Addresses = js.Array[Ipv6Address]
   type Location = java.lang.String
@@ -2481,7 +2501,7 @@ object GuardDutyNs extends js.Object {
   type NetworkInterfaceId = java.lang.String
   type NetworkInterfaces = js.Array[NetworkInterface]
   type NextToken = java.lang.String
-  type OrderBy = awsDashSdkLib.awsDashSdkLibStrings.ASC | awsDashSdkLib.awsDashSdkLibStrings.DESC | java.lang.String
+  type OrderBy = _OrderBy | java.lang.String
   type PrivateDnsName = java.lang.String
   type PrivateIpAddress = java.lang.String
   type PrivateIpAddresses = js.Array[PrivateIpAddressDetails]
@@ -2489,10 +2509,10 @@ object GuardDutyNs extends js.Object {
   type SecurityGroups = js.Array[SecurityGroup]
   type ServiceRole = java.lang.String
   type Tags = js.Array[Tag]
-  type ThreatIntelSetFormat = awsDashSdkLib.awsDashSdkLibStrings.TXT | awsDashSdkLib.awsDashSdkLibStrings.STIX | awsDashSdkLib.awsDashSdkLibStrings.OTX_CSV | awsDashSdkLib.awsDashSdkLibStrings.ALIEN_VAULT | awsDashSdkLib.awsDashSdkLibStrings.PROOF_POINT | awsDashSdkLib.awsDashSdkLibStrings.FIRE_EYE | java.lang.String
+  type ThreatIntelSetFormat = _ThreatIntelSetFormat | java.lang.String
   type ThreatIntelSetId = java.lang.String
   type ThreatIntelSetIds = js.Array[ThreatIntelSetId]
-  type ThreatIntelSetStatus = awsDashSdkLib.awsDashSdkLibStrings.INACTIVE | awsDashSdkLib.awsDashSdkLibStrings.ACTIVATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.DEACTIVATING | awsDashSdkLib.awsDashSdkLibStrings.ERROR | awsDashSdkLib.awsDashSdkLibStrings.DELETE_PENDING | awsDashSdkLib.awsDashSdkLibStrings.DELETED | java.lang.String
+  type ThreatIntelSetStatus = _ThreatIntelSetStatus | java.lang.String
   type UnprocessedAccounts = js.Array[UnprocessedAccount]
   type UpdatedAt = java.lang.String
   type __boolean = scala.Boolean
@@ -2501,6 +2521,6 @@ object GuardDutyNs extends js.Object {
   type __listOfPortProbeDetail = js.Array[PortProbeDetail]
   type __string = java.lang.String
   type __stringMin0Max64 = java.lang.String
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-11-28` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

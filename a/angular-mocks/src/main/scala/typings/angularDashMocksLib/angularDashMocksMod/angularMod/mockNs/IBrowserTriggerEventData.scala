@@ -72,3 +72,36 @@ trait IBrowserTriggerEventData extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IBrowserTriggerEventData {
+  @scala.inline
+  def apply(
+    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
+    charcode: scala.Int | scala.Double = null,
+    data: java.lang.String = null,
+    elapsedTime: scala.Int | scala.Double = null,
+    keycode: scala.Int | scala.Double = null,
+    keys: js.Array[
+      angularDashMocksLib.angularDashMocksLibStrings.ctrl | angularDashMocksLib.angularDashMocksLibStrings.alt | angularDashMocksLib.angularDashMocksLibStrings.shift | angularDashMocksLib.angularDashMocksLibStrings.meta
+    ] = null,
+    relatedTarget: stdLib.Node = null,
+    which: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): IBrowserTriggerEventData = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
+    if (charcode != null) __obj.updateDynamic("charcode")(charcode.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (elapsedTime != null) __obj.updateDynamic("elapsedTime")(elapsedTime.asInstanceOf[js.Any])
+    if (keycode != null) __obj.updateDynamic("keycode")(keycode.asInstanceOf[js.Any])
+    if (keys != null) __obj.updateDynamic("keys")(keys)
+    if (relatedTarget != null) __obj.updateDynamic("relatedTarget")(relatedTarget)
+    if (which != null) __obj.updateDynamic("which")(which.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IBrowserTriggerEventData]
+  }
+}
+

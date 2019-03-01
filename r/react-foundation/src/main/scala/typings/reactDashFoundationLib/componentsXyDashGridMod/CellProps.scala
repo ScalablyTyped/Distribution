@@ -295,3 +295,32 @@ import scala.scalajs.js.annotation._
   var vocab: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CellProps {
+  @scala.inline
+  def apply(
+    FlexboxPropTypes: reactDashFoundationLib.utilsMod.FlexboxPropTypes = null,
+    HTMLAttributes: reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement] = null,
+    auto: reactDashFoundationLib.enumsMod.ExtendedBreakpoints = null,
+    large: scala.Int | scala.Double = null,
+    medium: scala.Int | scala.Double = null,
+    offsetOnLarge: scala.Int | scala.Double = null,
+    offsetOnMedium: scala.Int | scala.Double = null,
+    offsetOnSmall: scala.Int | scala.Double = null,
+    shrink: reactDashFoundationLib.enumsMod.ExtendedBreakpoints = null,
+    small: scala.Int | scala.Double = null
+  ): CellProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, FlexboxPropTypes)
+    js.Dynamic.global.Object.assign(__obj, HTMLAttributes)
+    if (auto != null) __obj.updateDynamic("auto")(auto)
+    if (large != null) __obj.updateDynamic("large")(large.asInstanceOf[js.Any])
+    if (medium != null) __obj.updateDynamic("medium")(medium.asInstanceOf[js.Any])
+    if (offsetOnLarge != null) __obj.updateDynamic("offsetOnLarge")(offsetOnLarge.asInstanceOf[js.Any])
+    if (offsetOnMedium != null) __obj.updateDynamic("offsetOnMedium")(offsetOnMedium.asInstanceOf[js.Any])
+    if (offsetOnSmall != null) __obj.updateDynamic("offsetOnSmall")(offsetOnSmall.asInstanceOf[js.Any])
+    if (shrink != null) __obj.updateDynamic("shrink")(shrink)
+    if (small != null) __obj.updateDynamic("small")(small.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CellProps]
+  }
+}
+

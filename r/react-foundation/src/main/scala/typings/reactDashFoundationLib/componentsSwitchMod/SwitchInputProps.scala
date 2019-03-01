@@ -26,3 +26,20 @@ import scala.scalajs.js.annotation._
   var type_SwitchInputProps: js.UndefOr[reactDashFoundationLib.enumsMod.SwitchInputTypes] = js.undefined
 }
 
+object SwitchInputProps {
+  @scala.inline
+  def apply(
+    GeneralPropTypes: reactDashFoundationLib.utilsMod.GeneralPropTypes = null,
+    InputHTMLAttributes: reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement] = null,
+    id: java.lang.String = null,
+    `type`: reactDashFoundationLib.enumsMod.SwitchInputTypes = null
+  ): SwitchInputProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, GeneralPropTypes)
+    js.Dynamic.global.Object.assign(__obj, InputHTMLAttributes)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SwitchInputProps]
+  }
+}
+

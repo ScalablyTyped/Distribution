@@ -11,3 +11,14 @@ trait HelloJSLoginEventArguement extends js.Object {
   var network: java.lang.String
 }
 
+object HelloJSLoginEventArguement {
+  @scala.inline
+  def apply(network: java.lang.String, authResponse: HelloJSAuthResponse = null, error: stdLib.Error = null): HelloJSLoginEventArguement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("network")(network)
+    if (authResponse != null) __obj.updateDynamic("authResponse")(authResponse)
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[HelloJSLoginEventArguement]
+  }
+}
+

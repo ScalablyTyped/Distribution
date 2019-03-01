@@ -39,3 +39,20 @@ trait TestResult extends js.Object {
   var state: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TestResult {
+  @scala.inline
+  def apply(
+    debugMessages: js.Array[java.lang.String] = null,
+    errorPosition: SourcePosition = null,
+    functionCalls: js.Array[FunctionCall] = null,
+    state: java.lang.String = null
+  ): TestResult = {
+    val __obj = js.Dynamic.literal()
+    if (debugMessages != null) __obj.updateDynamic("debugMessages")(debugMessages)
+    if (errorPosition != null) __obj.updateDynamic("errorPosition")(errorPosition)
+    if (functionCalls != null) __obj.updateDynamic("functionCalls")(functionCalls)
+    if (state != null) __obj.updateDynamic("state")(state)
+    __obj.asInstanceOf[TestResult]
+  }
+}
+

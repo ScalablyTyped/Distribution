@@ -37,3 +37,26 @@ trait AnimationEvent extends js.Object {
   var triggerName: java.lang.String
 }
 
+object AnimationEvent {
+  @scala.inline
+  def apply(
+    disabled: scala.Boolean,
+    element: js.Any,
+    fromState: java.lang.String,
+    phaseName: java.lang.String,
+    toState: java.lang.String,
+    totalTime: scala.Double,
+    triggerName: java.lang.String
+  ): AnimationEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("disabled")(disabled)
+    __obj.updateDynamic("element")(element)
+    __obj.updateDynamic("fromState")(fromState)
+    __obj.updateDynamic("phaseName")(phaseName)
+    __obj.updateDynamic("toState")(toState)
+    __obj.updateDynamic("totalTime")(totalTime)
+    __obj.updateDynamic("triggerName")(triggerName)
+    __obj.asInstanceOf[AnimationEvent]
+  }
+}
+

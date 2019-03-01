@@ -17,3 +17,26 @@ trait IMapState extends js.Object {
   var zoom: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IMapState {
+  @scala.inline
+  def apply(
+    behaviors: js.Array[java.lang.String] = null,
+    bounds: js.Array[js.Array[scala.Double]] = null,
+    center: js.Array[scala.Double] = null,
+    controls: js.Array[java.lang.String] = null,
+    margin: js.Array[js.Array[scala.Double]] | js.Array[scala.Double] = null,
+    `type`: yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#map` | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#satellite` | yandexDashMapsLib.yandexDashMapsLibStrings.`yandex#hybrid` = null,
+    zoom: scala.Int | scala.Double = null
+  ): IMapState = {
+    val __obj = js.Dynamic.literal()
+    if (behaviors != null) __obj.updateDynamic("behaviors")(behaviors)
+    if (bounds != null) __obj.updateDynamic("bounds")(bounds)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (controls != null) __obj.updateDynamic("controls")(controls)
+    if (margin != null) __obj.updateDynamic("margin")(margin.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (zoom != null) __obj.updateDynamic("zoom")(zoom.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IMapState]
+  }
+}
+

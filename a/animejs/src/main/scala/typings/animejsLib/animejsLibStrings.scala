@@ -7,97 +7,128 @@ import scala.scalajs.js.annotation._
 
 object animejsLibStrings {
   @js.native
-  sealed trait alternate extends js.Object
+  sealed trait alternate
+    extends animejsLib.animejsMod.animeNs.DirectionOptions
   
   @js.native
-  sealed trait easeInBack extends js.Object
+  sealed trait easeInBack
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInCirc extends js.Object
+  sealed trait easeInCirc
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInCubic extends js.Object
+  sealed trait easeInCubic
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInElastic extends js.Object
+  sealed trait easeInElastic
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInExpo extends js.Object
+  sealed trait easeInExpo
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInOutBack extends js.Object
+  sealed trait easeInOutBack
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInOutCirc extends js.Object
+  sealed trait easeInOutCirc
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInOutCubic extends js.Object
+  sealed trait easeInOutCubic
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInOutElastic extends js.Object
+  sealed trait easeInOutElastic
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInOutExpo extends js.Object
+  sealed trait easeInOutExpo
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInOutQuad extends js.Object
+  sealed trait easeInOutQuad
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInOutQuart extends js.Object
+  sealed trait easeInOutQuart
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInOutQuint extends js.Object
+  sealed trait easeInOutQuint
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInOutSine extends js.Object
+  sealed trait easeInOutSine
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInQuad extends js.Object
+  sealed trait easeInQuad
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInQuart extends js.Object
+  sealed trait easeInQuart
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInQuint extends js.Object
+  sealed trait easeInQuint
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeInSine extends js.Object
+  sealed trait easeInSine
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeOutBack extends js.Object
+  sealed trait easeOutBack
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeOutCirc extends js.Object
+  sealed trait easeOutCirc
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeOutCubic extends js.Object
+  sealed trait easeOutCubic
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeOutElastic extends js.Object
+  sealed trait easeOutElastic
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeOutExpo extends js.Object
+  sealed trait easeOutExpo
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeOutQuad extends js.Object
+  sealed trait easeOutQuad
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeOutQuart extends js.Object
+  sealed trait easeOutQuart
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeOutQuint extends js.Object
+  sealed trait easeOutQuint
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait easeOutSine extends js.Object
+  sealed trait easeOutSine
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends animejsLib.animejsMod.animeNs.EasingOptions
   
   @js.native
-  sealed trait normal extends js.Object
+  sealed trait normal
+    extends animejsLib.animejsMod.animeNs.DirectionOptions
   
   @js.native
-  sealed trait reverse extends js.Object
+  sealed trait reverse
+    extends animejsLib.animejsMod.animeNs.DirectionOptions
   
   @scala.inline
   def alternate: alternate = "alternate".asInstanceOf[alternate]

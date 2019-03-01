@@ -40,3 +40,22 @@ trait GoogleLongrunning_Operation extends js.Object {
   var response: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object GoogleLongrunning_Operation {
+  @scala.inline
+  def apply(
+    done: js.UndefOr[scala.Boolean] = js.undefined,
+    error: GoogleRpc_Status = null,
+    metadata: stdLib.Record[java.lang.String, _] = null,
+    name: java.lang.String = null,
+    response: stdLib.Record[java.lang.String, _] = null
+  ): GoogleLongrunning_Operation = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(done)) __obj.updateDynamic("done")(done)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (metadata != null) __obj.updateDynamic("metadata")(metadata)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (response != null) __obj.updateDynamic("response")(response)
+    __obj.asInstanceOf[GoogleLongrunning_Operation]
+  }
+}
+

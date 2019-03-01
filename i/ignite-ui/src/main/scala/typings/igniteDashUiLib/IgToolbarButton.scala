@@ -46,3 +46,29 @@ trait IgToolbarButton
   var isSelected: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IgToolbarButton {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for igToolbarButton
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    activated: ActivatedEvent = null,
+    activating: ActivatingEvent = null,
+    allowToggling: js.UndefOr[scala.Boolean] = js.undefined,
+    deactivated: DeactivatedEvent = null,
+    deactivating: DeactivatingEvent = null,
+    isSelected: js.UndefOr[scala.Boolean] = js.undefined
+  ): IgToolbarButton = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (activated != null) __obj.updateDynamic("activated")(activated)
+    if (activating != null) __obj.updateDynamic("activating")(activating)
+    if (!js.isUndefined(allowToggling)) __obj.updateDynamic("allowToggling")(allowToggling)
+    if (deactivated != null) __obj.updateDynamic("deactivated")(deactivated)
+    if (deactivating != null) __obj.updateDynamic("deactivating")(deactivating)
+    if (!js.isUndefined(isSelected)) __obj.updateDynamic("isSelected")(isSelected)
+    __obj.asInstanceOf[IgToolbarButton]
+  }
+}
+

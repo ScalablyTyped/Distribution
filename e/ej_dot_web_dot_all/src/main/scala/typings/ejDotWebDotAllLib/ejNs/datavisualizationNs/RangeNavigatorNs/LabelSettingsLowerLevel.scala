@@ -41,3 +41,30 @@ trait LabelSettingsLowerLevel extends js.Object {
   var visible: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object LabelSettingsLowerLevel {
+  @scala.inline
+  def apply(
+    border: LabelSettingsLowerLevelBorder = null,
+    fill: java.lang.String = null,
+    gridLineStyle: LabelSettingsLowerLevelGridLineStyle = null,
+    intervalType: IntervalType | java.lang.String = null,
+    labelIntersectAction: LabelIntersectAction | java.lang.String = null,
+    labelPlacement: LabelPlacement | java.lang.String = null,
+    position: Position | java.lang.String = null,
+    style: LabelSettingsLowerLevelStyle = null,
+    visible: js.UndefOr[scala.Boolean] = js.undefined
+  ): LabelSettingsLowerLevel = {
+    val __obj = js.Dynamic.literal()
+    if (border != null) __obj.updateDynamic("border")(border)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (gridLineStyle != null) __obj.updateDynamic("gridLineStyle")(gridLineStyle)
+    if (intervalType != null) __obj.updateDynamic("intervalType")(intervalType.asInstanceOf[js.Any])
+    if (labelIntersectAction != null) __obj.updateDynamic("labelIntersectAction")(labelIntersectAction.asInstanceOf[js.Any])
+    if (labelPlacement != null) __obj.updateDynamic("labelPlacement")(labelPlacement.asInstanceOf[js.Any])
+    if (position != null) __obj.updateDynamic("position")(position.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    __obj.asInstanceOf[LabelSettingsLowerLevel]
+  }
+}
+

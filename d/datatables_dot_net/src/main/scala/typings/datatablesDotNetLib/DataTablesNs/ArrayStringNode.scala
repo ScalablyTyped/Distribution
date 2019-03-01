@@ -11,3 +11,12 @@ import scala.scalajs.js.annotation._
 trait ArrayStringNode
   extends /* index */ org.scalablytyped.runtime.StringDictionary[stdLib.Node]
 
+object ArrayStringNode {
+  @scala.inline
+  def apply(StringDictionary: /* index */ org.scalablytyped.runtime.StringDictionary[stdLib.Node] = null): ArrayStringNode = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ArrayStringNode]
+  }
+}
+

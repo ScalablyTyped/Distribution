@@ -28,3 +28,30 @@ trait DraggableProps extends js.Object {
   def children(arg: State with reactDashDragtasticLib.Anon_Events): reactLib.reactMod.ReactNs.ReactNode
 }
 
+object DraggableProps {
+  @scala.inline
+  def apply(
+    children: js.Function1[State with reactDashDragtasticLib.Anon_Events, reactLib.reactMod.ReactNs.ReactNode],
+    data: js.Any = null,
+    delay: scala.Int | scala.Double = null,
+    id: Id = null,
+    onDrag: js.Function0[scala.Unit] = null,
+    onDragEnd: js.Function1[/* data */ js.Any, scala.Unit] = null,
+    onDragStart: js.Function1[/* data */ js.Any, scala.Unit] = null,
+    subscribeTo: js.Array[java.lang.String] = null,
+    `type`: Type = null
+  ): DraggableProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    if (onDrag != null) __obj.updateDynamic("onDrag")(onDrag)
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (subscribeTo != null) __obj.updateDynamic("subscribeTo")(subscribeTo)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DraggableProps]
+  }
+}
+

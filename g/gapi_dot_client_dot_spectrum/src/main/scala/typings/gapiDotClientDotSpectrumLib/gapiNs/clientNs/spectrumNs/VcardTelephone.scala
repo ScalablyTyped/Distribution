@@ -10,3 +10,12 @@ trait VcardTelephone extends js.Object {
   var uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object VcardTelephone {
+  @scala.inline
+  def apply(uri: java.lang.String = null): VcardTelephone = {
+    val __obj = js.Dynamic.literal()
+    if (uri != null) __obj.updateDynamic("uri")(uri)
+    __obj.asInstanceOf[VcardTelephone]
+  }
+}
+

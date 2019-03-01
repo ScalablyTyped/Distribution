@@ -17,3 +17,13 @@ trait AccountsAuthInfoResponse extends js.Object {
   var kind: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AccountsAuthInfoResponse {
+  @scala.inline
+  def apply(accountIdentifiers: js.Array[AccountIdentifier] = null, kind: java.lang.String = null): AccountsAuthInfoResponse = {
+    val __obj = js.Dynamic.literal()
+    if (accountIdentifiers != null) __obj.updateDynamic("accountIdentifiers")(accountIdentifiers)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    __obj.asInstanceOf[AccountsAuthInfoResponse]
+  }
+}
+

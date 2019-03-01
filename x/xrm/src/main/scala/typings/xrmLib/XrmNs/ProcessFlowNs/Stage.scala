@@ -43,3 +43,24 @@ trait Stage extends js.Object {
   def getSteps(): js.Array[Step]
 }
 
+object Stage {
+  @scala.inline
+  def apply(
+    getCategory: js.Function0[xrmLib.Anon_GetValue],
+    getEntityName: js.Function0[java.lang.String],
+    getId: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getStatus: js.Function0[StageStatus],
+    getSteps: js.Function0[js.Array[Step]]
+  ): Stage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCategory")(getCategory)
+    __obj.updateDynamic("getEntityName")(getEntityName)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getStatus")(getStatus)
+    __obj.updateDynamic("getSteps")(getSteps)
+    __obj.asInstanceOf[Stage]
+  }
+}
+

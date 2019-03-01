@@ -16,3 +16,28 @@ trait POSITIONS_TYPES extends js.Object {
   var topRight: reapopLib.TOP_RIGHT_POSITION
 }
 
+object POSITIONS_TYPES {
+  @scala.inline
+  def apply(
+    bottom: reapopLib.BOTTOM,
+    bottomCenter: reapopLib.BOTTOM_CENTER,
+    bottomLeft: reapopLib.BOTTOM_LEFT_POSITION,
+    bottomRight: reapopLib.BOTTOM_RIGHT_POSITION,
+    top: reapopLib.TOP,
+    topCenter: reapopLib.TOP_CENTER,
+    topLeft: reapopLib.TOP_LEFT_POSITION,
+    topRight: reapopLib.TOP_RIGHT_POSITION
+  ): POSITIONS_TYPES = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bottom")(bottom)
+    __obj.updateDynamic("bottomCenter")(bottomCenter)
+    __obj.updateDynamic("bottomLeft")(bottomLeft)
+    __obj.updateDynamic("bottomRight")(bottomRight)
+    __obj.updateDynamic("top")(top)
+    __obj.updateDynamic("topCenter")(topCenter)
+    __obj.updateDynamic("topLeft")(topLeft)
+    __obj.updateDynamic("topRight")(topRight)
+    __obj.asInstanceOf[POSITIONS_TYPES]
+  }
+}
+

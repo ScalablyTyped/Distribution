@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends LineContent
 
+/* static members */
 @JSImport("react-lazylog/build/LineContent", JSImport.Default)
 @js.native
 object default extends js.Object {

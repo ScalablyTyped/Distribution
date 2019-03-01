@@ -54,3 +54,58 @@ trait ConnectConfig extends js.Object {
   var username: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ConnectConfig {
+  @scala.inline
+  def apply(
+    agent: java.lang.String = null,
+    agentForward: js.UndefOr[scala.Boolean] = js.undefined,
+    algorithms: ssh2DashStreamsLib.ssh2DashStreamsMod.Algorithms = null,
+    compress: scala.Boolean | ssh2Lib.ssh2LibStrings.force = null,
+    debug: js.Function1[/* information */ java.lang.String, _] = null,
+    forceIPv4: js.UndefOr[scala.Boolean] = js.undefined,
+    forceIPv6: js.UndefOr[scala.Boolean] = js.undefined,
+    host: java.lang.String = null,
+    hostHash: ssh2Lib.ssh2LibStrings.md5 | ssh2Lib.ssh2LibStrings.sha1 = null,
+    hostVerifier: js.Function1[/* keyHash */ java.lang.String, scala.Boolean] = null,
+    keepaliveCountMax: scala.Int | scala.Double = null,
+    keepaliveInterval: scala.Int | scala.Double = null,
+    localHostname: java.lang.String = null,
+    localUsername: java.lang.String = null,
+    passphrase: java.lang.String = null,
+    password: java.lang.String = null,
+    port: scala.Int | scala.Double = null,
+    privateKey: nodeLib.Buffer | java.lang.String = null,
+    readyTimeout: scala.Int | scala.Double = null,
+    sock: nodeLib.NodeJSNs.ReadableStream = null,
+    strictVendor: js.UndefOr[scala.Boolean] = js.undefined,
+    tryKeyboard: js.UndefOr[scala.Boolean] = js.undefined,
+    username: java.lang.String = null
+  ): ConnectConfig = {
+    val __obj = js.Dynamic.literal()
+    if (agent != null) __obj.updateDynamic("agent")(agent)
+    if (!js.isUndefined(agentForward)) __obj.updateDynamic("agentForward")(agentForward)
+    if (algorithms != null) __obj.updateDynamic("algorithms")(algorithms)
+    if (compress != null) __obj.updateDynamic("compress")(compress.asInstanceOf[js.Any])
+    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(forceIPv4)) __obj.updateDynamic("forceIPv4")(forceIPv4)
+    if (!js.isUndefined(forceIPv6)) __obj.updateDynamic("forceIPv6")(forceIPv6)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (hostHash != null) __obj.updateDynamic("hostHash")(hostHash.asInstanceOf[js.Any])
+    if (hostVerifier != null) __obj.updateDynamic("hostVerifier")(hostVerifier)
+    if (keepaliveCountMax != null) __obj.updateDynamic("keepaliveCountMax")(keepaliveCountMax.asInstanceOf[js.Any])
+    if (keepaliveInterval != null) __obj.updateDynamic("keepaliveInterval")(keepaliveInterval.asInstanceOf[js.Any])
+    if (localHostname != null) __obj.updateDynamic("localHostname")(localHostname)
+    if (localUsername != null) __obj.updateDynamic("localUsername")(localUsername)
+    if (passphrase != null) __obj.updateDynamic("passphrase")(passphrase)
+    if (password != null) __obj.updateDynamic("password")(password)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (privateKey != null) __obj.updateDynamic("privateKey")(privateKey.asInstanceOf[js.Any])
+    if (readyTimeout != null) __obj.updateDynamic("readyTimeout")(readyTimeout.asInstanceOf[js.Any])
+    if (sock != null) __obj.updateDynamic("sock")(sock)
+    if (!js.isUndefined(strictVendor)) __obj.updateDynamic("strictVendor")(strictVendor)
+    if (!js.isUndefined(tryKeyboard)) __obj.updateDynamic("tryKeyboard")(tryKeyboard)
+    if (username != null) __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[ConnectConfig]
+  }
+}
+

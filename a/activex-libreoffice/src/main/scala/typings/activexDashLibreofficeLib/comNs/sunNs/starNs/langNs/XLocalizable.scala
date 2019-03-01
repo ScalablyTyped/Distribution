@@ -16,3 +16,24 @@ trait XLocalizable
   def setLocale(eLocale: Locale): scala.Unit
 }
 
+object XLocalizable {
+  @scala.inline
+  def apply(
+    Locale: Locale,
+    acquire: js.Function0[scala.Unit],
+    getLocale: js.Function0[Locale],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setLocale: js.Function1[Locale, scala.Unit]
+  ): XLocalizable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Locale")(Locale)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLocale")(getLocale)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setLocale")(setLocale)
+    __obj.asInstanceOf[XLocalizable]
+  }
+}
+

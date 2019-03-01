@@ -28,3 +28,42 @@ trait XSmtpService extends XMailService {
   def sendMailMessage(xMailMessage: XMailMessage): scala.Unit
 }
 
+object XSmtpService {
+  @scala.inline
+  def apply(
+    CurrentConnectionContext: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XCurrentContext,
+    SupportedConnectionTypes: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    addConnectionListener: js.Function1[XConnectionListener, scala.Unit],
+    connect: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XCurrentContext, 
+      XAuthenticator, 
+      scala.Unit
+    ],
+    disconnect: js.Function0[scala.Unit],
+    getCurrentConnectionContext: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XCurrentContext],
+    getSupportedConnectionTypes: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    isConnected: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeConnectionListener: js.Function1[XConnectionListener, scala.Unit],
+    sendMailMessage: js.Function1[XMailMessage, scala.Unit]
+  ): XSmtpService = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CurrentConnectionContext")(CurrentConnectionContext)
+    __obj.updateDynamic("SupportedConnectionTypes")(SupportedConnectionTypes)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addConnectionListener")(addConnectionListener)
+    __obj.updateDynamic("connect")(connect)
+    __obj.updateDynamic("disconnect")(disconnect)
+    __obj.updateDynamic("getCurrentConnectionContext")(getCurrentConnectionContext)
+    __obj.updateDynamic("getSupportedConnectionTypes")(getSupportedConnectionTypes)
+    __obj.updateDynamic("isConnected")(isConnected)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeConnectionListener")(removeConnectionListener)
+    __obj.updateDynamic("sendMailMessage")(sendMailMessage)
+    __obj.asInstanceOf[XSmtpService]
+  }
+}
+

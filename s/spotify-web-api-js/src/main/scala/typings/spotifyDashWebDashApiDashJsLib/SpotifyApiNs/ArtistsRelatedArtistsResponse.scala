@@ -15,3 +15,12 @@ trait ArtistsRelatedArtistsResponse extends js.Object {
   var artists: js.Array[ArtistObjectFull]
 }
 
+object ArtistsRelatedArtistsResponse {
+  @scala.inline
+  def apply(artists: js.Array[ArtistObjectFull]): ArtistsRelatedArtistsResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artists")(artists)
+    __obj.asInstanceOf[ArtistsRelatedArtistsResponse]
+  }
+}
+

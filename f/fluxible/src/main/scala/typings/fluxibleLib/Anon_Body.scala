@@ -56,3 +56,42 @@ trait Anon_Body extends js.Object {
   ): scala.Unit
 }
 
+object Anon_Body {
+  @scala.inline
+  def apply(
+    create: js.Function4[
+      java.lang.String, 
+      js.Any, 
+      js.Any, 
+      js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    delete: js.Function3[
+      java.lang.String, 
+      js.Any, 
+      js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    read: js.Function3[
+      java.lang.String, 
+      js.Any, 
+      js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit], 
+      scala.Unit
+    ],
+    update: js.Function4[
+      java.lang.String, 
+      js.Any, 
+      js.Any, 
+      js.Function2[/* error */ nodeLib.Error, /* data */ js.Any, scala.Unit], 
+      scala.Unit
+    ]
+  ): Anon_Body = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("read")(read)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[Anon_Body]
+  }
+}
+

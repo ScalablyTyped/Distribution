@@ -40,3 +40,74 @@ trait DateBox extends js.Object {
   def showDatePicker(): DateBox
 }
 
+object DateBox {
+  @scala.inline
+  def apply(
+    addStyleDependentName: js.Function1[java.lang.String, DateBox],
+    addStyleName: js.Function1[java.lang.String, DateBox],
+    addValueChangeHandler: js.Function1[Handler, DateBox],
+    getId: js.Function0[java.lang.String],
+    getTag: js.Function0[java.lang.String],
+    getType: js.Function0[java.lang.String],
+    hideDatePicker: js.Function0[DateBox],
+    setAccessKey: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Char, DateBox],
+    setEnabled: js.Function1[scala.Boolean, DateBox],
+    setFireEventsForInvalid: js.Function1[scala.Boolean, DateBox],
+    setFocus: js.Function1[scala.Boolean, DateBox],
+    setFormat: js.Function1[DateTimeFormat, DateBox],
+    setHeight: js.Function1[java.lang.String, DateBox],
+    setId: js.Function1[java.lang.String, DateBox],
+    setLayoutData: js.Function1[js.Object, DateBox],
+    setName: js.Function1[java.lang.String, DateBox],
+    setPixelSize: js.Function2[
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, 
+      DateBox
+    ],
+    setSize: js.Function2[java.lang.String, java.lang.String, DateBox],
+    setStyleAttribute: js.Function2[java.lang.String, java.lang.String, DateBox],
+    setStyleAttributes: js.Function1[js.Object, DateBox],
+    setStyleName: js.Function1[java.lang.String, DateBox],
+    setStylePrimaryName: js.Function1[java.lang.String, DateBox],
+    setTabIndex: js.Function1[googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer, DateBox],
+    setTag: js.Function1[java.lang.String, DateBox],
+    setTitle: js.Function1[java.lang.String, DateBox],
+    setValue: js.Function1[stdLib.Date, DateBox],
+    setVisible: js.Function1[scala.Boolean, DateBox],
+    setWidth: js.Function1[java.lang.String, DateBox],
+    showDatePicker: js.Function0[DateBox]
+  ): DateBox = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addStyleDependentName")(addStyleDependentName)
+    __obj.updateDynamic("addStyleName")(addStyleName)
+    __obj.updateDynamic("addValueChangeHandler")(addValueChangeHandler)
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getTag")(getTag)
+    __obj.updateDynamic("getType")(getType)
+    __obj.updateDynamic("hideDatePicker")(hideDatePicker)
+    __obj.updateDynamic("setAccessKey")(setAccessKey)
+    __obj.updateDynamic("setEnabled")(setEnabled)
+    __obj.updateDynamic("setFireEventsForInvalid")(setFireEventsForInvalid)
+    __obj.updateDynamic("setFocus")(setFocus)
+    __obj.updateDynamic("setFormat")(setFormat)
+    __obj.updateDynamic("setHeight")(setHeight)
+    __obj.updateDynamic("setId")(setId)
+    __obj.updateDynamic("setLayoutData")(setLayoutData)
+    __obj.updateDynamic("setName")(setName)
+    __obj.updateDynamic("setPixelSize")(setPixelSize)
+    __obj.updateDynamic("setSize")(setSize)
+    __obj.updateDynamic("setStyleAttribute")(setStyleAttribute)
+    __obj.updateDynamic("setStyleAttributes")(setStyleAttributes)
+    __obj.updateDynamic("setStyleName")(setStyleName)
+    __obj.updateDynamic("setStylePrimaryName")(setStylePrimaryName)
+    __obj.updateDynamic("setTabIndex")(setTabIndex)
+    __obj.updateDynamic("setTag")(setTag)
+    __obj.updateDynamic("setTitle")(setTitle)
+    __obj.updateDynamic("setValue")(setValue)
+    __obj.updateDynamic("setVisible")(setVisible)
+    __obj.updateDynamic("setWidth")(setWidth)
+    __obj.updateDynamic("showDatePicker")(showDatePicker)
+    __obj.asInstanceOf[DateBox]
+  }
+}
+

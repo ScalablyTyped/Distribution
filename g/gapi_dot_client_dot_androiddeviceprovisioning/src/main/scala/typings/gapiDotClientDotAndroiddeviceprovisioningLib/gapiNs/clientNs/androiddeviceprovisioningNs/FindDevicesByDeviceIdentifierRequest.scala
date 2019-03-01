@@ -14,3 +14,18 @@ trait FindDevicesByDeviceIdentifierRequest extends js.Object {
   var pageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object FindDevicesByDeviceIdentifierRequest {
+  @scala.inline
+  def apply(
+    deviceIdentifier: DeviceIdentifier = null,
+    limit: java.lang.String = null,
+    pageToken: java.lang.String = null
+  ): FindDevicesByDeviceIdentifierRequest = {
+    val __obj = js.Dynamic.literal()
+    if (deviceIdentifier != null) __obj.updateDynamic("deviceIdentifier")(deviceIdentifier)
+    if (limit != null) __obj.updateDynamic("limit")(limit)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    __obj.asInstanceOf[FindDevicesByDeviceIdentifierRequest]
+  }
+}
+

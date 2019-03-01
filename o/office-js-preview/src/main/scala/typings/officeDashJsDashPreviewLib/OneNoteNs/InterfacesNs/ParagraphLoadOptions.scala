@@ -100,3 +100,38 @@ trait ParagraphLoadOptions extends js.Object {
   var `type`: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ParagraphLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    image: ImageLoadOptions = null,
+    inkWords: InkWordCollectionLoadOptions = null,
+    outline: OutlineLoadOptions = null,
+    paragraphs: ParagraphCollectionLoadOptions = null,
+    parentParagraph: ParagraphLoadOptions = null,
+    parentParagraphOrNull: ParagraphLoadOptions = null,
+    parentTableCell: TableCellLoadOptions = null,
+    parentTableCellOrNull: TableCellLoadOptions = null,
+    richText: RichTextLoadOptions = null,
+    table: TableLoadOptions = null,
+    `type`: js.UndefOr[scala.Boolean] = js.undefined
+  ): ParagraphLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (inkWords != null) __obj.updateDynamic("inkWords")(inkWords)
+    if (outline != null) __obj.updateDynamic("outline")(outline)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (parentParagraph != null) __obj.updateDynamic("parentParagraph")(parentParagraph)
+    if (parentParagraphOrNull != null) __obj.updateDynamic("parentParagraphOrNull")(parentParagraphOrNull)
+    if (parentTableCell != null) __obj.updateDynamic("parentTableCell")(parentTableCell)
+    if (parentTableCellOrNull != null) __obj.updateDynamic("parentTableCellOrNull")(parentTableCellOrNull)
+    if (richText != null) __obj.updateDynamic("richText")(richText)
+    if (table != null) __obj.updateDynamic("table")(table)
+    if (!js.isUndefined(`type`)) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ParagraphLoadOptions]
+  }
+}
+

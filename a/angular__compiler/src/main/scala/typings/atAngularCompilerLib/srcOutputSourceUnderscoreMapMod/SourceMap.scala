@@ -14,3 +14,24 @@ trait SourceMap extends js.Object {
   var version: scala.Double
 }
 
+object SourceMap {
+  @scala.inline
+  def apply(
+    mappings: java.lang.String,
+    sourceRoot: java.lang.String,
+    sources: js.Array[java.lang.String],
+    sourcesContent: js.Array[java.lang.String | scala.Null],
+    version: scala.Double,
+    file: java.lang.String = null
+  ): SourceMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("mappings")(mappings)
+    __obj.updateDynamic("sourceRoot")(sourceRoot)
+    __obj.updateDynamic("sources")(sources)
+    __obj.updateDynamic("sourcesContent")(sourcesContent)
+    __obj.updateDynamic("version")(version)
+    if (file != null) __obj.updateDynamic("file")(file)
+    __obj.asInstanceOf[SourceMap]
+  }
+}
+

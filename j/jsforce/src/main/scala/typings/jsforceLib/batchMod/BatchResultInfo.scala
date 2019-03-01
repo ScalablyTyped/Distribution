@@ -13,3 +13,22 @@ trait BatchResultInfo extends js.Object {
   var success: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BatchResultInfo {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    batchId: java.lang.String = null,
+    errors: js.Array[java.lang.String] = null,
+    jobId: java.lang.String = null,
+    success: js.UndefOr[scala.Boolean] = js.undefined
+  ): BatchResultInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (batchId != null) __obj.updateDynamic("batchId")(batchId)
+    if (errors != null) __obj.updateDynamic("errors")(errors)
+    if (jobId != null) __obj.updateDynamic("jobId")(jobId)
+    if (!js.isUndefined(success)) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[BatchResultInfo]
+  }
+}
+

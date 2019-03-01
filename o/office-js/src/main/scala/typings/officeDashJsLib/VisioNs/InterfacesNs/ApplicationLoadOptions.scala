@@ -30,3 +30,18 @@ trait ApplicationLoadOptions extends js.Object {
   var showToolbars: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object ApplicationLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    showBorders: js.UndefOr[scala.Boolean] = js.undefined,
+    showToolbars: js.UndefOr[scala.Boolean] = js.undefined
+  ): ApplicationLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(showBorders)) __obj.updateDynamic("showBorders")(showBorders)
+    if (!js.isUndefined(showToolbars)) __obj.updateDynamic("showToolbars")(showToolbars)
+    __obj.asInstanceOf[ApplicationLoadOptions]
+  }
+}
+

@@ -17,3 +17,22 @@ trait GraphQLDirectiveConfig extends js.Object {
   var name: java.lang.String
 }
 
+object GraphQLDirectiveConfig {
+  @scala.inline
+  def apply(
+    locations: js.Array[graphqlLib.languageDirectiveLocationMod.DirectiveLocationEnum],
+    name: java.lang.String,
+    args: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLFieldConfigArgumentMap] = null,
+    astNode: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.DirectiveDefinitionNode] = null,
+    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
+  ): GraphQLDirectiveConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("locations")(locations)
+    __obj.updateDynamic("name")(name)
+    if (args != null) __obj.updateDynamic("args")(args.asInstanceOf[js.Any])
+    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GraphQLDirectiveConfig]
+  }
+}
+

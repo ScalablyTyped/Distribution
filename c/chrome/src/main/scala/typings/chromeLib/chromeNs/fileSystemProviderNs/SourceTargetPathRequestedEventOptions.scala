@@ -12,3 +12,20 @@ trait SourceTargetPathRequestedEventOptions extends RequestedEventOptions {
   var targetPath: java.lang.String
 }
 
+object SourceTargetPathRequestedEventOptions {
+  @scala.inline
+  def apply(
+    fileSystemId: java.lang.String,
+    requestId: scala.Double,
+    sourcePath: java.lang.String,
+    targetPath: java.lang.String
+  ): SourceTargetPathRequestedEventOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileSystemId")(fileSystemId)
+    __obj.updateDynamic("requestId")(requestId)
+    __obj.updateDynamic("sourcePath")(sourcePath)
+    __obj.updateDynamic("targetPath")(targetPath)
+    __obj.asInstanceOf[SourceTargetPathRequestedEventOptions]
+  }
+}
+

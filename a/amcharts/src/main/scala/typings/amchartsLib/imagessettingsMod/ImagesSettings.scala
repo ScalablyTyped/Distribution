@@ -100,3 +100,48 @@ trait ImagesSettings extends js.Object {
   var selectedScale: scala.Double
 }
 
+object ImagesSettings {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    balloonText: java.lang.String,
+    centered: scala.Boolean,
+    color: java.lang.String,
+    descriptionWindowHeight: scala.Double,
+    descriptionWindowWidth: scala.Double,
+    descriptionWindowX: scala.Double,
+    descriptionWindowY: scala.Double,
+    labelColor: java.lang.String,
+    labelPosition: java.lang.String,
+    labelRollOverColor: java.lang.String,
+    labelfontSize: java.lang.String,
+    outlineAlpha: scala.Double,
+    outlineColor: java.lang.String,
+    outlineThickness: scala.Double,
+    rollOverColor: java.lang.String,
+    rollOverScale: scala.Double,
+    selectedScale: scala.Double
+  ): ImagesSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alpha")(alpha)
+    __obj.updateDynamic("balloonText")(balloonText)
+    __obj.updateDynamic("centered")(centered)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("descriptionWindowHeight")(descriptionWindowHeight)
+    __obj.updateDynamic("descriptionWindowWidth")(descriptionWindowWidth)
+    __obj.updateDynamic("descriptionWindowX")(descriptionWindowX)
+    __obj.updateDynamic("descriptionWindowY")(descriptionWindowY)
+    __obj.updateDynamic("labelColor")(labelColor)
+    __obj.updateDynamic("labelPosition")(labelPosition)
+    __obj.updateDynamic("labelRollOverColor")(labelRollOverColor)
+    __obj.updateDynamic("labelfontSize")(labelfontSize)
+    __obj.updateDynamic("outlineAlpha")(outlineAlpha)
+    __obj.updateDynamic("outlineColor")(outlineColor)
+    __obj.updateDynamic("outlineThickness")(outlineThickness)
+    __obj.updateDynamic("rollOverColor")(rollOverColor)
+    __obj.updateDynamic("rollOverScale")(rollOverScale)
+    __obj.updateDynamic("selectedScale")(selectedScale)
+    __obj.asInstanceOf[ImagesSettings]
+  }
+}
+

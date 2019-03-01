@@ -15,3 +15,26 @@ trait UrlPatternOptions extends js.Object {
   var wildcardChar: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UrlPatternOptions {
+  @scala.inline
+  def apply(
+    escapeChar: java.lang.String = null,
+    optionalSegmentEndChar: java.lang.String = null,
+    optionalSegmentStartChar: java.lang.String = null,
+    segmentNameCharset: java.lang.String = null,
+    segmentNameStartChar: java.lang.String = null,
+    segmentValueCharset: java.lang.String = null,
+    wildcardChar: java.lang.String = null
+  ): UrlPatternOptions = {
+    val __obj = js.Dynamic.literal()
+    if (escapeChar != null) __obj.updateDynamic("escapeChar")(escapeChar)
+    if (optionalSegmentEndChar != null) __obj.updateDynamic("optionalSegmentEndChar")(optionalSegmentEndChar)
+    if (optionalSegmentStartChar != null) __obj.updateDynamic("optionalSegmentStartChar")(optionalSegmentStartChar)
+    if (segmentNameCharset != null) __obj.updateDynamic("segmentNameCharset")(segmentNameCharset)
+    if (segmentNameStartChar != null) __obj.updateDynamic("segmentNameStartChar")(segmentNameStartChar)
+    if (segmentValueCharset != null) __obj.updateDynamic("segmentValueCharset")(segmentValueCharset)
+    if (wildcardChar != null) __obj.updateDynamic("wildcardChar")(wildcardChar)
+    __obj.asInstanceOf[UrlPatternOptions]
+  }
+}
+

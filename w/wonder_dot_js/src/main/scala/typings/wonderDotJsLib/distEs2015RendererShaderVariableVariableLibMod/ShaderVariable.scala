@@ -10,3 +10,15 @@ trait ShaderVariable extends js.Object {
   var value: js.Any
 }
 
+object ShaderVariable {
+  @scala.inline
+  def apply(
+    `type`: wonderDotJsLib.distEs2015RendererShaderVariableEVariableTypeMod.EVariableType,
+    value: js.Any
+  ): ShaderVariable = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ShaderVariable]
+  }
+}
+

@@ -9,3 +9,12 @@ trait StartParameterType extends js.Object {
   var traceConfig: TraceConfig
 }
 
+object StartParameterType {
+  @scala.inline
+  def apply(traceConfig: TraceConfig): StartParameterType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("traceConfig")(traceConfig)
+    __obj.asInstanceOf[StartParameterType]
+  }
+}
+

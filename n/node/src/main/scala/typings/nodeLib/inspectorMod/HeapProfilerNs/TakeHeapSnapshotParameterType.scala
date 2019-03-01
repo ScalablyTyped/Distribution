@@ -12,3 +12,12 @@ trait TakeHeapSnapshotParameterType extends js.Object {
   var reportProgress: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TakeHeapSnapshotParameterType {
+  @scala.inline
+  def apply(reportProgress: js.UndefOr[scala.Boolean] = js.undefined): TakeHeapSnapshotParameterType = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(reportProgress)) __obj.updateDynamic("reportProgress")(reportProgress)
+    __obj.asInstanceOf[TakeHeapSnapshotParameterType]
+  }
+}
+

@@ -60,3 +60,38 @@ trait TransitGatewayState extends js.Object {
   val vpnEcmpSupport: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object TransitGatewayState {
+  @scala.inline
+  def apply(
+    amazonSideAsn: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    arn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN] = null,
+    associationDefaultRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    autoAcceptSharedAttachments: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultRouteTableAssociation: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    defaultRouteTablePropagation: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    dnsSupport: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    ownerId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    propagationDefaultRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tags: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null,
+    vpnEcmpSupport: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): TransitGatewayState = {
+    val __obj = js.Dynamic.literal()
+    if (amazonSideAsn != null) __obj.updateDynamic("amazonSideAsn")(amazonSideAsn.asInstanceOf[js.Any])
+    if (arn != null) __obj.updateDynamic("arn")(arn.asInstanceOf[js.Any])
+    if (associationDefaultRouteTableId != null) __obj.updateDynamic("associationDefaultRouteTableId")(associationDefaultRouteTableId.asInstanceOf[js.Any])
+    if (autoAcceptSharedAttachments != null) __obj.updateDynamic("autoAcceptSharedAttachments")(autoAcceptSharedAttachments.asInstanceOf[js.Any])
+    if (defaultRouteTableAssociation != null) __obj.updateDynamic("defaultRouteTableAssociation")(defaultRouteTableAssociation.asInstanceOf[js.Any])
+    if (defaultRouteTablePropagation != null) __obj.updateDynamic("defaultRouteTablePropagation")(defaultRouteTablePropagation.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (dnsSupport != null) __obj.updateDynamic("dnsSupport")(dnsSupport.asInstanceOf[js.Any])
+    if (ownerId != null) __obj.updateDynamic("ownerId")(ownerId.asInstanceOf[js.Any])
+    if (propagationDefaultRouteTableId != null) __obj.updateDynamic("propagationDefaultRouteTableId")(propagationDefaultRouteTableId.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    if (vpnEcmpSupport != null) __obj.updateDynamic("vpnEcmpSupport")(vpnEcmpSupport.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TransitGatewayState]
+  }
+}
+

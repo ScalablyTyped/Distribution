@@ -25,3 +25,22 @@ trait XSimpleMailClient
   def sendSimpleMailMessage(xSimpleMailMessage: XSimpleMailMessage, aFlag: scala.Double): scala.Unit
 }
 
+object XSimpleMailClient {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    createSimpleMailMessage: js.Function0[XSimpleMailMessage],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    sendSimpleMailMessage: js.Function2[XSimpleMailMessage, scala.Double, scala.Unit]
+  ): XSimpleMailClient = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("createSimpleMailMessage")(createSimpleMailMessage)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("sendSimpleMailMessage")(sendSimpleMailMessage)
+    __obj.asInstanceOf[XSimpleMailClient]
+  }
+}
+

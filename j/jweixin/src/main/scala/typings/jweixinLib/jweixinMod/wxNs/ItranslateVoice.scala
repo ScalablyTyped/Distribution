@@ -16,3 +16,22 @@ trait ItranslateVoice extends BaseParams {
   def success_MItranslateVoice(res: jweixinLib.Anon_TranslateResult): scala.Unit
 }
 
+object ItranslateVoice {
+  @scala.inline
+  def apply(
+    isShowProgressTips: scala.Double,
+    localId: java.lang.String,
+    success: js.Function1[jweixinLib.Anon_TranslateResult, scala.Unit],
+    complete: js.Function1[/* repeated */ js.Any, scala.Unit] = null,
+    fail: js.Function1[/* repeated */ js.Any, scala.Unit] = null
+  ): ItranslateVoice = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("isShowProgressTips")(isShowProgressTips)
+    __obj.updateDynamic("localId")(localId)
+    __obj.updateDynamic("success")(success)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    __obj.asInstanceOf[ItranslateVoice]
+  }
+}
+

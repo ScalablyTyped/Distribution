@@ -25,3 +25,32 @@ trait SearchListResponse extends js.Object {
   var visitorId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SearchListResponse {
+  @scala.inline
+  def apply(
+    etag: java.lang.String = null,
+    eventId: java.lang.String = null,
+    items: js.Array[SearchResult] = null,
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    pageInfo: PageInfo = null,
+    prevPageToken: java.lang.String = null,
+    regionCode: java.lang.String = null,
+    tokenPagination: js.Any = null,
+    visitorId: java.lang.String = null
+  ): SearchListResponse = {
+    val __obj = js.Dynamic.literal()
+    if (etag != null) __obj.updateDynamic("etag")(etag)
+    if (eventId != null) __obj.updateDynamic("eventId")(eventId)
+    if (items != null) __obj.updateDynamic("items")(items)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (pageInfo != null) __obj.updateDynamic("pageInfo")(pageInfo)
+    if (prevPageToken != null) __obj.updateDynamic("prevPageToken")(prevPageToken)
+    if (regionCode != null) __obj.updateDynamic("regionCode")(regionCode)
+    if (tokenPagination != null) __obj.updateDynamic("tokenPagination")(tokenPagination)
+    if (visitorId != null) __obj.updateDynamic("visitorId")(visitorId)
+    __obj.asInstanceOf[SearchListResponse]
+  }
+}
+

@@ -10,3 +10,16 @@ trait Anon_CurrentTarget
   var currentTarget: js.Any
 }
 
+object Anon_CurrentTarget {
+  @scala.inline
+  def apply(
+    currentTarget: js.Any,
+    StringDictionary: /* p */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_CurrentTarget = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentTarget")(currentTarget)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_CurrentTarget]
+  }
+}
+

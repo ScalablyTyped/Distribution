@@ -41,3 +41,24 @@ trait ASPxClientSpreadsheetSelection extends js.Object {
   var topRowIndex: scala.Double
 }
 
+object ASPxClientSpreadsheetSelection {
+  @scala.inline
+  def apply(
+    activeCellColumnIndex: scala.Double,
+    activeCellRowIndex: scala.Double,
+    bottomRowIndex: scala.Double,
+    leftColumnIndex: scala.Double,
+    rightColumnIndex: scala.Double,
+    topRowIndex: scala.Double
+  ): ASPxClientSpreadsheetSelection = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("activeCellColumnIndex")(activeCellColumnIndex)
+    __obj.updateDynamic("activeCellRowIndex")(activeCellRowIndex)
+    __obj.updateDynamic("bottomRowIndex")(bottomRowIndex)
+    __obj.updateDynamic("leftColumnIndex")(leftColumnIndex)
+    __obj.updateDynamic("rightColumnIndex")(rightColumnIndex)
+    __obj.updateDynamic("topRowIndex")(topRowIndex)
+    __obj.asInstanceOf[ASPxClientSpreadsheetSelection]
+  }
+}
+

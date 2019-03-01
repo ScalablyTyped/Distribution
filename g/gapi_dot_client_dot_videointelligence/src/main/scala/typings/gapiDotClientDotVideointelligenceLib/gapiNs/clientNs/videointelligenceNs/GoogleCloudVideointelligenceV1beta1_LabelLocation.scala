@@ -19,3 +19,18 @@ trait GoogleCloudVideointelligenceV1beta1_LabelLocation extends js.Object {
   var segment: js.UndefOr[GoogleCloudVideointelligenceV1beta1_VideoSegment] = js.undefined
 }
 
+object GoogleCloudVideointelligenceV1beta1_LabelLocation {
+  @scala.inline
+  def apply(
+    confidence: scala.Int | scala.Double = null,
+    level: java.lang.String = null,
+    segment: GoogleCloudVideointelligenceV1beta1_VideoSegment = null
+  ): GoogleCloudVideointelligenceV1beta1_LabelLocation = {
+    val __obj = js.Dynamic.literal()
+    if (confidence != null) __obj.updateDynamic("confidence")(confidence.asInstanceOf[js.Any])
+    if (level != null) __obj.updateDynamic("level")(level)
+    if (segment != null) __obj.updateDynamic("segment")(segment)
+    __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta1_LabelLocation]
+  }
+}
+

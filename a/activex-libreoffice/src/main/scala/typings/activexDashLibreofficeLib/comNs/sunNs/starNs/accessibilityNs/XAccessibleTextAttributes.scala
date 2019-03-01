@@ -35,3 +35,23 @@ trait XAccessibleTextAttributes extends js.Object {
   ): activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
 }
 
+object XAccessibleTextAttributes {
+  @scala.inline
+  def apply(
+    getDefaultAttributes: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ],
+    getRunAttributes: js.Function2[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue]
+    ]
+  ): XAccessibleTextAttributes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getDefaultAttributes")(getDefaultAttributes)
+    __obj.updateDynamic("getRunAttributes")(getRunAttributes)
+    __obj.asInstanceOf[XAccessibleTextAttributes]
+  }
+}
+

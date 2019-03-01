@@ -10,22 +10,26 @@ object tableLibStrings {
   sealed trait center extends js.Object
   
   @js.native
-  sealed trait honeywell extends js.Object
+  sealed trait honeywell
+    extends tableLib.tableMod.BorderType
   
   @js.native
   sealed trait left extends js.Object
   
   @js.native
-  sealed trait norc extends js.Object
+  sealed trait norc
+    extends tableLib.tableMod.BorderType
   
   @js.native
-  sealed trait ramac extends js.Object
+  sealed trait ramac
+    extends tableLib.tableMod.BorderType
   
   @js.native
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait void extends js.Object
+  sealed trait void
+    extends tableLib.tableMod.BorderType
   
   @scala.inline
   def center: center = "center".asInstanceOf[center]

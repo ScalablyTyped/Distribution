@@ -9,3 +9,12 @@ trait AsyncGitOperationNotification extends js.Object {
   var operationId: scala.Double
 }
 
+object AsyncGitOperationNotification {
+  @scala.inline
+  def apply(operationId: scala.Double): AsyncGitOperationNotification = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("operationId")(operationId)
+    __obj.asInstanceOf[AsyncGitOperationNotification]
+  }
+}
+

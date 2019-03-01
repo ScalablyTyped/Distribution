@@ -9,3 +9,12 @@ trait Anon_Children extends js.Object {
   var children: java.lang.String
 }
 
+object Anon_Children {
+  @scala.inline
+  def apply(children: java.lang.String): Anon_Children = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children)
+    __obj.asInstanceOf[Anon_Children]
+  }
+}
+

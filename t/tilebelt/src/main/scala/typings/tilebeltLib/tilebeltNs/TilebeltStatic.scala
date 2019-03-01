@@ -169,3 +169,41 @@ trait TilebeltStatic extends js.Object {
   def tilesEqual(tile1: js.Array[scala.Double], tile2: js.Array[scala.Double]): scala.Boolean
 }
 
+object TilebeltStatic {
+  @scala.inline
+  def apply(
+    bboxToTile: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
+    getChildren: js.Function1[js.Array[scala.Double], js.Array[js.Array[scala.Double]]],
+    getParent: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
+    getSiblings: js.Function1[js.Array[scala.Double], js.Array[js.Array[scala.Double]]],
+    hasSiblings: js.Function2[js.Array[scala.Double], js.Array[js.Array[scala.Double]], scala.Boolean],
+    hasTile: js.Function2[js.Array[js.Array[scala.Double]], js.Array[scala.Double], scala.Boolean],
+    pointToTile: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
+    pointToTileFraction: js.Function3[scala.Double, scala.Double, scala.Double, js.Array[scala.Double]],
+    quadkeyToTile: js.Function1[java.lang.String, js.Array[scala.Double]],
+    tileToBBOX: js.Function1[js.Array[scala.Double], js.Array[scala.Double]],
+    tileToGeoJSON: js.Function1[
+      js.Array[scala.Double], 
+      geojsonLib.geojsonMod.Feature[geojsonLib.geojsonMod.Polygon, geojsonLib.geojsonMod.GeoJsonProperties]
+    ],
+    tileToQuadkey: js.Function1[js.Array[scala.Double], java.lang.String],
+    tilesEqual: js.Function2[js.Array[scala.Double], js.Array[scala.Double], scala.Boolean]
+  ): TilebeltStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bboxToTile")(bboxToTile)
+    __obj.updateDynamic("getChildren")(getChildren)
+    __obj.updateDynamic("getParent")(getParent)
+    __obj.updateDynamic("getSiblings")(getSiblings)
+    __obj.updateDynamic("hasSiblings")(hasSiblings)
+    __obj.updateDynamic("hasTile")(hasTile)
+    __obj.updateDynamic("pointToTile")(pointToTile)
+    __obj.updateDynamic("pointToTileFraction")(pointToTileFraction)
+    __obj.updateDynamic("quadkeyToTile")(quadkeyToTile)
+    __obj.updateDynamic("tileToBBOX")(tileToBBOX)
+    __obj.updateDynamic("tileToGeoJSON")(tileToGeoJSON)
+    __obj.updateDynamic("tileToQuadkey")(tileToQuadkey)
+    __obj.updateDynamic("tilesEqual")(tilesEqual)
+    __obj.asInstanceOf[TilebeltStatic]
+  }
+}
+

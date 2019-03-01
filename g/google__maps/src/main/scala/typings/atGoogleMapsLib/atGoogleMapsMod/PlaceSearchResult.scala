@@ -96,3 +96,42 @@ trait PlaceSearchResult extends js.Object {
   var vicinity: scala.Double
 }
 
+object PlaceSearchResult {
+  @scala.inline
+  def apply(
+    alt_ids: js.Array[AlternativePlaceId],
+    formatted_address: java.lang.String,
+    geometry: AddressGeometry,
+    icon: java.lang.String,
+    name: java.lang.String,
+    opening_hours: OpeningHours,
+    permanently_closed: scala.Boolean,
+    photos: js.Array[PlacePhoto],
+    place_id: java.lang.String,
+    plus_code: PlusCode,
+    price_level: scala.Double,
+    rating: scala.Double,
+    scope: PlaceIdScope,
+    types: js.Array[PlaceType1 | PlaceType2],
+    vicinity: scala.Double
+  ): PlaceSearchResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alt_ids")(alt_ids)
+    __obj.updateDynamic("formatted_address")(formatted_address)
+    __obj.updateDynamic("geometry")(geometry)
+    __obj.updateDynamic("icon")(icon)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("opening_hours")(opening_hours)
+    __obj.updateDynamic("permanently_closed")(permanently_closed)
+    __obj.updateDynamic("photos")(photos)
+    __obj.updateDynamic("place_id")(place_id)
+    __obj.updateDynamic("plus_code")(plus_code)
+    __obj.updateDynamic("price_level")(price_level)
+    __obj.updateDynamic("rating")(rating)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("types")(types)
+    __obj.updateDynamic("vicinity")(vicinity)
+    __obj.asInstanceOf[PlaceSearchResult]
+  }
+}
+

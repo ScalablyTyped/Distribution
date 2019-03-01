@@ -10,3 +10,13 @@ trait AclSet extends js.Object {
   var roles: aclLib.strings
 }
 
+object AclSet {
+  @scala.inline
+  def apply(allows: js.Array[AclAllow], roles: aclLib.strings): AclSet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allows")(allows)
+    __obj.updateDynamic("roles")(roles.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AclSet]
+  }
+}
+

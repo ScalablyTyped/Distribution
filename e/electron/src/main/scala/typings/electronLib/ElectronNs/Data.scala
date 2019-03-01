@@ -16,3 +16,22 @@ trait Data extends js.Object {
   var text: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Data {
+  @scala.inline
+  def apply(
+    bookmark: java.lang.String = null,
+    html: java.lang.String = null,
+    image: NativeImage = null,
+    rtf: java.lang.String = null,
+    text: java.lang.String = null
+  ): Data = {
+    val __obj = js.Dynamic.literal()
+    if (bookmark != null) __obj.updateDynamic("bookmark")(bookmark)
+    if (html != null) __obj.updateDynamic("html")(html)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (rtf != null) __obj.updateDynamic("rtf")(rtf)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Data]
+  }
+}
+

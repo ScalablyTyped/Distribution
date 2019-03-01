@@ -25,3 +25,20 @@ trait TableItemState extends js.Object {
   val tableName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object TableItemState {
+  @scala.inline
+  def apply(
+    hashKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    item: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    rangeKey: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    tableName: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): TableItemState = {
+    val __obj = js.Dynamic.literal()
+    if (hashKey != null) __obj.updateDynamic("hashKey")(hashKey.asInstanceOf[js.Any])
+    if (item != null) __obj.updateDynamic("item")(item.asInstanceOf[js.Any])
+    if (rangeKey != null) __obj.updateDynamic("rangeKey")(rangeKey.asInstanceOf[js.Any])
+    if (tableName != null) __obj.updateDynamic("tableName")(tableName.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TableItemState]
+  }
+}
+

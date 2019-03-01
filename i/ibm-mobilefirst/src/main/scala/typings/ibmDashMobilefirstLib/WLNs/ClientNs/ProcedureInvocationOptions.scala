@@ -12,3 +12,20 @@ trait ProcedureInvocationOptions
   def onSuccess_MProcedureInvocationOptions(response: ProcedureResponse): scala.Unit
 }
 
+object ProcedureInvocationOptions {
+  @scala.inline
+  def apply(
+    onSuccess: js.Function1[ProcedureResponse, scala.Unit],
+    timeout: scala.Double,
+    invocationContext: js.Any = null,
+    onFailure: js.Function1[/* response */ ibmDashMobilefirstLib.WLNs.IResponse, scala.Unit] = null
+  ): ProcedureInvocationOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onSuccess")(onSuccess)
+    __obj.updateDynamic("timeout")(timeout)
+    if (invocationContext != null) __obj.updateDynamic("invocationContext")(invocationContext)
+    if (onFailure != null) __obj.updateDynamic("onFailure")(onFailure)
+    __obj.asInstanceOf[ProcedureInvocationOptions]
+  }
+}
+

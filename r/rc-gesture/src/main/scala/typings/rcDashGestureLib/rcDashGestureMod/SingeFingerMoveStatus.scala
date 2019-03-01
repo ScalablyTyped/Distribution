@@ -14,3 +14,24 @@ trait SingeFingerMoveStatus extends js.Object {
   var z: scala.Double
 }
 
+object SingeFingerMoveStatus {
+  @scala.inline
+  def apply(
+    angle: scala.Double,
+    time: scala.Double,
+    velocity: scala.Double,
+    x: scala.Double,
+    y: scala.Double,
+    z: scala.Double
+  ): SingeFingerMoveStatus = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("angle")(angle)
+    __obj.updateDynamic("time")(time)
+    __obj.updateDynamic("velocity")(velocity)
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("z")(z)
+    __obj.asInstanceOf[SingeFingerMoveStatus]
+  }
+}
+

@@ -22,3 +22,20 @@ trait XStringWidth
   def queryStringWidth(aString: java.lang.String): scala.Double
 }
 
+object XStringWidth {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    queryStringWidth: js.Function1[java.lang.String, scala.Double],
+    release: js.Function0[scala.Unit]
+  ): XStringWidth = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("queryStringWidth")(queryStringWidth)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XStringWidth]
+  }
+}
+

@@ -15,3 +15,13 @@ trait ListHoldsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListHoldsResponse {
+  @scala.inline
+  def apply(holds: js.Array[Hold] = null, nextPageToken: java.lang.String = null): ListHoldsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (holds != null) __obj.updateDynamic("holds")(holds)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListHoldsResponse]
+  }
+}
+

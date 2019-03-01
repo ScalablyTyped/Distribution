@@ -21,3 +21,18 @@ trait AuthorizationInfo extends js.Object {
   var resource: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthorizationInfo {
+  @scala.inline
+  def apply(
+    granted: js.UndefOr[scala.Boolean] = js.undefined,
+    permission: java.lang.String = null,
+    resource: java.lang.String = null
+  ): AuthorizationInfo = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(granted)) __obj.updateDynamic("granted")(granted)
+    if (permission != null) __obj.updateDynamic("permission")(permission)
+    if (resource != null) __obj.updateDynamic("resource")(resource)
+    __obj.asInstanceOf[AuthorizationInfo]
+  }
+}
+

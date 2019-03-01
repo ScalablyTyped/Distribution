@@ -14,3 +14,14 @@ trait Target extends js.Object {
   var name: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Target {
+  @scala.inline
+  def apply(id: java.lang.String = null, mimeType: java.lang.String = null, name: java.lang.String = null): Target = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (mimeType != null) __obj.updateDynamic("mimeType")(mimeType)
+    if (name != null) __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Target]
+  }
+}
+

@@ -10,3 +10,13 @@ trait Change extends js.Object {
   var operation: java.lang.String
 }
 
+object Change {
+  @scala.inline
+  def apply(modification: org.scalablytyped.runtime.StringDictionary[js.Any], operation: java.lang.String): Change = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("modification")(modification)
+    __obj.updateDynamic("operation")(operation)
+    __obj.asInstanceOf[Change]
+  }
+}
+

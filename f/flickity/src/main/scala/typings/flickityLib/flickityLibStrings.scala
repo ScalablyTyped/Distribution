@@ -7,43 +7,56 @@ import scala.scalajs.js.annotation._
 
 object flickityLibStrings {
   @js.native
-  sealed trait bgLazyLoad extends js.Object
+  sealed trait bgLazyLoad
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait cellSelect extends js.Object
+  sealed trait cellSelect
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait dragEnd extends js.Object
+  sealed trait dragEnd
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait dragMove extends js.Object
+  sealed trait dragMove
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait dragStart extends js.Object
+  sealed trait dragStart
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait lazyLoad extends js.Object
+  sealed trait lazyLoad
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait pointerDown extends js.Object
+  sealed trait pointerDown
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait pointerMove extends js.Object
+  sealed trait pointerMove
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait pointerUp extends js.Object
+  sealed trait pointerUp
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait scroll extends js.Object
+  sealed trait scroll
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait select
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait settle extends js.Object
+  sealed trait settle
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @js.native
-  sealed trait staticClick extends js.Object
+  sealed trait staticClick
+    extends flickityLib.flickityMod.FlickityNs.FlickityEvents
   
   @scala.inline
   def bgLazyLoad: bgLazyLoad = "bgLazyLoad".asInstanceOf[bgLazyLoad]

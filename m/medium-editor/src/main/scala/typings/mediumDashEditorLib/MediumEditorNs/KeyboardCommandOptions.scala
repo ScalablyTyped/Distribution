@@ -13,3 +13,22 @@ trait KeyboardCommandOptions extends js.Object {
   var shift: scala.Boolean
 }
 
+object KeyboardCommandOptions {
+  @scala.inline
+  def apply(
+    alt: scala.Boolean,
+    command: java.lang.String,
+    key: java.lang.String,
+    meta: scala.Boolean,
+    shift: scala.Boolean
+  ): KeyboardCommandOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alt")(alt)
+    __obj.updateDynamic("command")(command)
+    __obj.updateDynamic("key")(key)
+    __obj.updateDynamic("meta")(meta)
+    __obj.updateDynamic("shift")(shift)
+    __obj.asInstanceOf[KeyboardCommandOptions]
+  }
+}
+

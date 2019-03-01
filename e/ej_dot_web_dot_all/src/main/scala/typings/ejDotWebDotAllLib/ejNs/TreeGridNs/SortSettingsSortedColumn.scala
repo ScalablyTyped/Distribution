@@ -14,3 +14,13 @@ trait SortSettingsSortedColumn extends js.Object {
   var field: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SortSettingsSortedColumn {
+  @scala.inline
+  def apply(direction: java.lang.String = null, field: java.lang.String = null): SortSettingsSortedColumn = {
+    val __obj = js.Dynamic.literal()
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (field != null) __obj.updateDynamic("field")(field)
+    __obj.asInstanceOf[SortSettingsSortedColumn]
+  }
+}
+

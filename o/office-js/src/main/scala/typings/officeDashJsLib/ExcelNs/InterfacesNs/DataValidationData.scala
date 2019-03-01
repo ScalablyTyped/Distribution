@@ -55,3 +55,24 @@ trait DataValidationData extends js.Object {
   var valid: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DataValidationData {
+  @scala.inline
+  def apply(
+    errorAlert: officeDashJsLib.ExcelNs.DataValidationErrorAlert = null,
+    ignoreBlanks: js.UndefOr[scala.Boolean] = js.undefined,
+    prompt: officeDashJsLib.ExcelNs.DataValidationPrompt = null,
+    rule: officeDashJsLib.ExcelNs.DataValidationRule = null,
+    `type`: officeDashJsLib.ExcelNs.DataValidationType | officeDashJsLib.officeDashJsLibStrings.None | officeDashJsLib.officeDashJsLibStrings.WholeNumber | officeDashJsLib.officeDashJsLibStrings.Decimal | officeDashJsLib.officeDashJsLibStrings.List | officeDashJsLib.officeDashJsLibStrings.Date | officeDashJsLib.officeDashJsLibStrings.Time | officeDashJsLib.officeDashJsLibStrings.TextLength | officeDashJsLib.officeDashJsLibStrings.Custom | officeDashJsLib.officeDashJsLibStrings.Inconsistent | officeDashJsLib.officeDashJsLibStrings.MixedCriteria = null,
+    valid: js.UndefOr[scala.Boolean] = js.undefined
+  ): DataValidationData = {
+    val __obj = js.Dynamic.literal()
+    if (errorAlert != null) __obj.updateDynamic("errorAlert")(errorAlert)
+    if (!js.isUndefined(ignoreBlanks)) __obj.updateDynamic("ignoreBlanks")(ignoreBlanks)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (rule != null) __obj.updateDynamic("rule")(rule)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (!js.isUndefined(valid)) __obj.updateDynamic("valid")(valid)
+    __obj.asInstanceOf[DataValidationData]
+  }
+}
+

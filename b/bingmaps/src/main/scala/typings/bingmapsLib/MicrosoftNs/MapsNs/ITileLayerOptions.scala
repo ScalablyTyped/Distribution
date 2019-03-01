@@ -28,3 +28,26 @@ trait ITileLayerOptions extends js.Object {
   var zIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ITileLayerOptions {
+  @scala.inline
+  def apply(
+    downloadTimeout: scala.Int | scala.Double = null,
+    enableCORS: js.UndefOr[scala.Boolean] = js.undefined,
+    mercator: TileSource = null,
+    opacity: scala.Int | scala.Double = null,
+    useCredentialsForCORS: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    zIndex: scala.Int | scala.Double = null
+  ): ITileLayerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (downloadTimeout != null) __obj.updateDynamic("downloadTimeout")(downloadTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableCORS)) __obj.updateDynamic("enableCORS")(enableCORS)
+    if (mercator != null) __obj.updateDynamic("mercator")(mercator)
+    if (opacity != null) __obj.updateDynamic("opacity")(opacity.asInstanceOf[js.Any])
+    if (!js.isUndefined(useCredentialsForCORS)) __obj.updateDynamic("useCredentialsForCORS")(useCredentialsForCORS)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (zIndex != null) __obj.updateDynamic("zIndex")(zIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ITileLayerOptions]
+  }
+}
+

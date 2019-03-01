@@ -17,3 +17,30 @@ trait RenderedChunk extends js.Object {
   var name: java.lang.String
 }
 
+object RenderedChunk {
+  @scala.inline
+  def apply(
+    dynamicImports: js.Array[java.lang.String],
+    exports: js.Array[java.lang.String],
+    fileName: java.lang.String,
+    imports: js.Array[java.lang.String],
+    isDynamicEntry: scala.Boolean,
+    isEntry: scala.Boolean,
+    modules: org.scalablytyped.runtime.StringDictionary[RenderedModule],
+    name: java.lang.String,
+    facadeModuleId: java.lang.String = null
+  ): RenderedChunk = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dynamicImports")(dynamicImports)
+    __obj.updateDynamic("exports")(exports)
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("imports")(imports)
+    __obj.updateDynamic("isDynamicEntry")(isDynamicEntry)
+    __obj.updateDynamic("isEntry")(isEntry)
+    __obj.updateDynamic("modules")(modules)
+    __obj.updateDynamic("name")(name)
+    if (facadeModuleId != null) __obj.updateDynamic("facadeModuleId")(facadeModuleId)
+    __obj.asInstanceOf[RenderedChunk]
+  }
+}
+

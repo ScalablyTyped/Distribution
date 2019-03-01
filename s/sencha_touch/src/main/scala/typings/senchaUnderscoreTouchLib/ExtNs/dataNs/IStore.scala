@@ -580,3 +580,310 @@ trait IStore
   var totalCount: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IStore {
+  @scala.inline
+  def apply(
+    IEvented: senchaUnderscoreTouchLib.ExtNs.IEvented = null,
+    add: js.Function1[/* model */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    addData: js.Function1[/* data */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    applyData: js.Function1[/* data */ js.UndefOr[js.Any], scala.Unit] = null,
+    autoLoad: js.Any = null,
+    autoSync: js.UndefOr[scala.Boolean] = js.undefined,
+    average: js.Function1[/* field */ js.UndefOr[java.lang.String], scala.Double] = null,
+    buffered: js.UndefOr[scala.Boolean] = js.undefined,
+    clearFilter: js.Function1[/* suppressEvent */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    clearOnPageLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    currentPage: scala.Int | scala.Double = null,
+    data: js.Any = null,
+    destroy: js.Function0[scala.Unit] = null,
+    destroyRemovedRecords: js.UndefOr[scala.Boolean] = js.undefined,
+    each: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    fields: js.Any = null,
+    filter: js.Function4[
+      /* filters */ js.UndefOr[js.Any], 
+      /* value */ js.UndefOr[java.lang.String], 
+      /* anyMatch */ js.UndefOr[scala.Boolean], 
+      /* caseSensitive */ js.UndefOr[scala.Boolean], 
+      scala.Unit
+    ] = null,
+    filterBy: js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    filters: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    find: js.Function6[
+      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* startIndex */ js.UndefOr[scala.Double], 
+      /* anyMatch */ js.UndefOr[scala.Boolean], 
+      /* caseSensitive */ js.UndefOr[scala.Boolean], 
+      /* exactMatch */ js.UndefOr[scala.Boolean], 
+      scala.Double
+    ] = null,
+    findBy: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* startIndex */ js.UndefOr[scala.Double], 
+      scala.Double
+    ] = null,
+    findExact: js.Function3[
+      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* startIndex */ js.UndefOr[scala.Double], 
+      scala.Double
+    ] = null,
+    findRecord: js.Function6[
+      /* fieldName */ js.UndefOr[java.lang.String], 
+      /* value */ js.UndefOr[js.Any], 
+      /* startIndex */ js.UndefOr[scala.Double], 
+      /* anyMatch */ js.UndefOr[scala.Boolean], 
+      /* caseSensitive */ js.UndefOr[scala.Boolean], 
+      /* exactMatch */ js.UndefOr[scala.Boolean], 
+      IModel
+    ] = null,
+    first: js.Function0[_] = null,
+    getAllCount: js.Function0[scala.Double] = null,
+    getAt: js.Function1[/* index */ js.UndefOr[scala.Double], _] = null,
+    getAutoLoad: js.Function0[_] = null,
+    getAutoSync: js.Function0[scala.Boolean] = null,
+    getBuffered: js.Function0[scala.Boolean] = null,
+    getById: js.Function1[/* id */ js.UndefOr[java.lang.String], _] = null,
+    getClearOnPageLoad: js.Function0[scala.Boolean] = null,
+    getCount: js.Function0[scala.Double] = null,
+    getData: js.Function0[_] = null,
+    getDestroyRemovedRecords: js.Function0[scala.Boolean] = null,
+    getFields: js.Function0[_] = null,
+    getGetGroupString: js.Function0[_] = null,
+    getGroupDir: js.Function0[java.lang.String] = null,
+    getGroupField: js.Function0[java.lang.String] = null,
+    getGroupString: js.Any = null,
+    getGrouper: js.Function0[_] = null,
+    getGroups: js.Function1[/* groupName */ js.UndefOr[java.lang.String], _] = null,
+    getModel: js.Function0[java.lang.String] = null,
+    getModelDefaults: js.Function0[_] = null,
+    getNewRecords: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getPageSize: js.Function0[scala.Double] = null,
+    getParams: js.Function0[_] = null,
+    getPlugins: js.Function0[_] = null,
+    getProxy: js.Function0[_] = null,
+    getRange: js.Function2[
+      /* startIndex */ js.UndefOr[scala.Double], 
+      /* endIndex */ js.UndefOr[scala.Double], 
+      senchaUnderscoreTouchLib.ExtNs.Array
+    ] = null,
+    getRemoteFilter: js.Function0[scala.Boolean] = null,
+    getRemoteGroup: js.Function0[scala.Boolean] = null,
+    getRemoteSort: js.Function0[scala.Boolean] = null,
+    getRemovedRecords: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    getStoreId: js.Function0[java.lang.String] = null,
+    getSyncRemovedRecords: js.Function0[scala.Boolean] = null,
+    getTotalCount: js.Function0[scala.Double] = null,
+    getUpdatedRecords: js.Function0[senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    groupDir: java.lang.String = null,
+    groupField: java.lang.String = null,
+    grouper: js.Any = null,
+    indexOf: js.Function1[/* record */ js.UndefOr[IModel], scala.Double] = null,
+    indexOfId: js.Function1[/* id */ js.UndefOr[java.lang.String], scala.Double] = null,
+    insert: js.Function2[
+      /* index */ js.UndefOr[scala.Double], 
+      /* records */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], 
+      _
+    ] = null,
+    isAutoLoading: js.Function0[scala.Boolean] = null,
+    isFiltered: js.Function0[scala.Boolean] = null,
+    isGrouped: js.Function0[scala.Boolean] = null,
+    isLoaded: js.Function0[scala.Boolean] = null,
+    isLoading: js.Function0[scala.Boolean] = null,
+    isSorted: js.Function0[scala.Boolean] = null,
+    last: js.Function0[_] = null,
+    load: js.Function2[/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], _] = null,
+    loadData: js.Function2[/* data */ js.UndefOr[js.Any], /* append */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    loadPage: js.Function3[
+      /* page */ js.UndefOr[scala.Double], 
+      /* options */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    loadRecords: js.Function1[/* model */ js.UndefOr[js.Any], senchaUnderscoreTouchLib.ExtNs.Array] = null,
+    max: js.Function1[/* field */ js.UndefOr[java.lang.String], _] = null,
+    min: js.Function1[/* field */ js.UndefOr[java.lang.String], _] = null,
+    model: java.lang.String = null,
+    nextPage: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    pageSize: scala.Int | scala.Double = null,
+    params: js.Any = null,
+    plugins: js.Any = null,
+    previousPage: js.Function1[/* options */ js.UndefOr[js.Any], scala.Unit] = null,
+    proxy: js.Any = null,
+    queryBy: js.Function2[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      senchaUnderscoreTouchLib.ExtNs.utilNs.IMixedCollection
+    ] = null,
+    remoteFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteGroup: js.UndefOr[scala.Boolean] = js.undefined,
+    remoteSort: js.UndefOr[scala.Boolean] = js.undefined,
+    remove: js.Function1[/* records */ js.UndefOr[js.Any], scala.Unit] = null,
+    removeAll: js.Function1[/* silent */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    removeAt: js.Function1[/* index */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setAutoLoad: js.Function1[/* autoLoad */ js.UndefOr[js.Any], scala.Unit] = null,
+    setAutoSync: js.Function1[/* autoSync */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setBuffered: js.Function1[/* buffered */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setClearOnPageLoad: js.Function1[/* clearOnPageLoad */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setData: js.Function1[/* data */ js.UndefOr[js.Any], scala.Unit] = null,
+    setDestroyRemovedRecords: js.Function1[/* destroyRemovedRecords */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setFields: js.Function1[/* fields */ js.UndefOr[js.Any], _] = null,
+    setFilters: js.Function1[/* filters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    setGetGroupString: js.Function1[/* getGroupString */ js.UndefOr[js.Any], scala.Unit] = null,
+    setGroupDir: js.Function1[/* groupDir */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setGroupField: js.Function1[/* groupField */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setGrouper: js.Function1[/* grouper */ js.UndefOr[js.Any], scala.Unit] = null,
+    setModel: js.Function1[/* model */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setModelDefaults: js.Function1[/* modelDefaults */ js.UndefOr[js.Any], scala.Unit] = null,
+    setPageSize: js.Function1[/* pageSize */ js.UndefOr[scala.Double], scala.Unit] = null,
+    setParams: js.Function1[/* params */ js.UndefOr[js.Any], scala.Unit] = null,
+    setPlugins: js.Function1[/* plugins */ js.UndefOr[js.Any], scala.Unit] = null,
+    setProxy: js.Function1[/* proxy */ js.UndefOr[js.Any], scala.Unit] = null,
+    setRemoteFilter: js.Function1[/* remoteFilter */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setRemoteGroup: js.Function1[/* remoteGroup */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setRemoteSort: js.Function1[/* remoteSort */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setSorters: js.Function1[/* sorters */ js.UndefOr[senchaUnderscoreTouchLib.ExtNs.Array], scala.Unit] = null,
+    setStoreId: js.Function1[/* storeId */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    setSyncRemovedRecords: js.Function1[/* syncRemovedRecords */ js.UndefOr[scala.Boolean], scala.Unit] = null,
+    setTotalCount: js.Function1[/* totalCount */ js.UndefOr[scala.Double], scala.Unit] = null,
+    sort: js.Function3[
+      /* sorters */ js.UndefOr[js.Any], 
+      /* defaultDirection */ js.UndefOr[java.lang.String], 
+      /* where */ js.UndefOr[java.lang.String], 
+      scala.Unit
+    ] = null,
+    sorters: senchaUnderscoreTouchLib.ExtNs.Array = null,
+    storeId: java.lang.String = null,
+    sum: js.Function1[/* field */ js.UndefOr[java.lang.String], scala.Double] = null,
+    sync: js.Function1[/* options */ js.UndefOr[js.Any], _] = null,
+    syncRemovedRecords: js.UndefOr[scala.Boolean] = js.undefined,
+    totalCount: scala.Int | scala.Double = null
+  ): IStore = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IEvented)
+    if (add != null) __obj.updateDynamic("add")(add)
+    if (addData != null) __obj.updateDynamic("addData")(addData)
+    if (applyData != null) __obj.updateDynamic("applyData")(applyData)
+    if (autoLoad != null) __obj.updateDynamic("autoLoad")(autoLoad)
+    if (!js.isUndefined(autoSync)) __obj.updateDynamic("autoSync")(autoSync)
+    if (average != null) __obj.updateDynamic("average")(average)
+    if (!js.isUndefined(buffered)) __obj.updateDynamic("buffered")(buffered)
+    if (clearFilter != null) __obj.updateDynamic("clearFilter")(clearFilter)
+    if (!js.isUndefined(clearOnPageLoad)) __obj.updateDynamic("clearOnPageLoad")(clearOnPageLoad)
+    if (currentPage != null) __obj.updateDynamic("currentPage")(currentPage.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (destroy != null) __obj.updateDynamic("destroy")(destroy)
+    if (!js.isUndefined(destroyRemovedRecords)) __obj.updateDynamic("destroyRemovedRecords")(destroyRemovedRecords)
+    if (each != null) __obj.updateDynamic("each")(each)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (filterBy != null) __obj.updateDynamic("filterBy")(filterBy)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (find != null) __obj.updateDynamic("find")(find)
+    if (findBy != null) __obj.updateDynamic("findBy")(findBy)
+    if (findExact != null) __obj.updateDynamic("findExact")(findExact)
+    if (findRecord != null) __obj.updateDynamic("findRecord")(findRecord)
+    if (first != null) __obj.updateDynamic("first")(first)
+    if (getAllCount != null) __obj.updateDynamic("getAllCount")(getAllCount)
+    if (getAt != null) __obj.updateDynamic("getAt")(getAt)
+    if (getAutoLoad != null) __obj.updateDynamic("getAutoLoad")(getAutoLoad)
+    if (getAutoSync != null) __obj.updateDynamic("getAutoSync")(getAutoSync)
+    if (getBuffered != null) __obj.updateDynamic("getBuffered")(getBuffered)
+    if (getById != null) __obj.updateDynamic("getById")(getById)
+    if (getClearOnPageLoad != null) __obj.updateDynamic("getClearOnPageLoad")(getClearOnPageLoad)
+    if (getCount != null) __obj.updateDynamic("getCount")(getCount)
+    if (getData != null) __obj.updateDynamic("getData")(getData)
+    if (getDestroyRemovedRecords != null) __obj.updateDynamic("getDestroyRemovedRecords")(getDestroyRemovedRecords)
+    if (getFields != null) __obj.updateDynamic("getFields")(getFields)
+    if (getGetGroupString != null) __obj.updateDynamic("getGetGroupString")(getGetGroupString)
+    if (getGroupDir != null) __obj.updateDynamic("getGroupDir")(getGroupDir)
+    if (getGroupField != null) __obj.updateDynamic("getGroupField")(getGroupField)
+    if (getGroupString != null) __obj.updateDynamic("getGroupString")(getGroupString)
+    if (getGrouper != null) __obj.updateDynamic("getGrouper")(getGrouper)
+    if (getGroups != null) __obj.updateDynamic("getGroups")(getGroups)
+    if (getModel != null) __obj.updateDynamic("getModel")(getModel)
+    if (getModelDefaults != null) __obj.updateDynamic("getModelDefaults")(getModelDefaults)
+    if (getNewRecords != null) __obj.updateDynamic("getNewRecords")(getNewRecords)
+    if (getPageSize != null) __obj.updateDynamic("getPageSize")(getPageSize)
+    if (getParams != null) __obj.updateDynamic("getParams")(getParams)
+    if (getPlugins != null) __obj.updateDynamic("getPlugins")(getPlugins)
+    if (getProxy != null) __obj.updateDynamic("getProxy")(getProxy)
+    if (getRange != null) __obj.updateDynamic("getRange")(getRange)
+    if (getRemoteFilter != null) __obj.updateDynamic("getRemoteFilter")(getRemoteFilter)
+    if (getRemoteGroup != null) __obj.updateDynamic("getRemoteGroup")(getRemoteGroup)
+    if (getRemoteSort != null) __obj.updateDynamic("getRemoteSort")(getRemoteSort)
+    if (getRemovedRecords != null) __obj.updateDynamic("getRemovedRecords")(getRemovedRecords)
+    if (getStoreId != null) __obj.updateDynamic("getStoreId")(getStoreId)
+    if (getSyncRemovedRecords != null) __obj.updateDynamic("getSyncRemovedRecords")(getSyncRemovedRecords)
+    if (getTotalCount != null) __obj.updateDynamic("getTotalCount")(getTotalCount)
+    if (getUpdatedRecords != null) __obj.updateDynamic("getUpdatedRecords")(getUpdatedRecords)
+    if (groupDir != null) __obj.updateDynamic("groupDir")(groupDir)
+    if (groupField != null) __obj.updateDynamic("groupField")(groupField)
+    if (grouper != null) __obj.updateDynamic("grouper")(grouper)
+    if (indexOf != null) __obj.updateDynamic("indexOf")(indexOf)
+    if (indexOfId != null) __obj.updateDynamic("indexOfId")(indexOfId)
+    if (insert != null) __obj.updateDynamic("insert")(insert)
+    if (isAutoLoading != null) __obj.updateDynamic("isAutoLoading")(isAutoLoading)
+    if (isFiltered != null) __obj.updateDynamic("isFiltered")(isFiltered)
+    if (isGrouped != null) __obj.updateDynamic("isGrouped")(isGrouped)
+    if (isLoaded != null) __obj.updateDynamic("isLoaded")(isLoaded)
+    if (isLoading != null) __obj.updateDynamic("isLoading")(isLoading)
+    if (isSorted != null) __obj.updateDynamic("isSorted")(isSorted)
+    if (last != null) __obj.updateDynamic("last")(last)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (loadData != null) __obj.updateDynamic("loadData")(loadData)
+    if (loadPage != null) __obj.updateDynamic("loadPage")(loadPage)
+    if (loadRecords != null) __obj.updateDynamic("loadRecords")(loadRecords)
+    if (max != null) __obj.updateDynamic("max")(max)
+    if (min != null) __obj.updateDynamic("min")(min)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (nextPage != null) __obj.updateDynamic("nextPage")(nextPage)
+    if (pageSize != null) __obj.updateDynamic("pageSize")(pageSize.asInstanceOf[js.Any])
+    if (params != null) __obj.updateDynamic("params")(params)
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (previousPage != null) __obj.updateDynamic("previousPage")(previousPage)
+    if (proxy != null) __obj.updateDynamic("proxy")(proxy)
+    if (queryBy != null) __obj.updateDynamic("queryBy")(queryBy)
+    if (!js.isUndefined(remoteFilter)) __obj.updateDynamic("remoteFilter")(remoteFilter)
+    if (!js.isUndefined(remoteGroup)) __obj.updateDynamic("remoteGroup")(remoteGroup)
+    if (!js.isUndefined(remoteSort)) __obj.updateDynamic("remoteSort")(remoteSort)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (removeAll != null) __obj.updateDynamic("removeAll")(removeAll)
+    if (removeAt != null) __obj.updateDynamic("removeAt")(removeAt)
+    if (setAutoLoad != null) __obj.updateDynamic("setAutoLoad")(setAutoLoad)
+    if (setAutoSync != null) __obj.updateDynamic("setAutoSync")(setAutoSync)
+    if (setBuffered != null) __obj.updateDynamic("setBuffered")(setBuffered)
+    if (setClearOnPageLoad != null) __obj.updateDynamic("setClearOnPageLoad")(setClearOnPageLoad)
+    if (setData != null) __obj.updateDynamic("setData")(setData)
+    if (setDestroyRemovedRecords != null) __obj.updateDynamic("setDestroyRemovedRecords")(setDestroyRemovedRecords)
+    if (setFields != null) __obj.updateDynamic("setFields")(setFields)
+    if (setFilters != null) __obj.updateDynamic("setFilters")(setFilters)
+    if (setGetGroupString != null) __obj.updateDynamic("setGetGroupString")(setGetGroupString)
+    if (setGroupDir != null) __obj.updateDynamic("setGroupDir")(setGroupDir)
+    if (setGroupField != null) __obj.updateDynamic("setGroupField")(setGroupField)
+    if (setGrouper != null) __obj.updateDynamic("setGrouper")(setGrouper)
+    if (setModel != null) __obj.updateDynamic("setModel")(setModel)
+    if (setModelDefaults != null) __obj.updateDynamic("setModelDefaults")(setModelDefaults)
+    if (setPageSize != null) __obj.updateDynamic("setPageSize")(setPageSize)
+    if (setParams != null) __obj.updateDynamic("setParams")(setParams)
+    if (setPlugins != null) __obj.updateDynamic("setPlugins")(setPlugins)
+    if (setProxy != null) __obj.updateDynamic("setProxy")(setProxy)
+    if (setRemoteFilter != null) __obj.updateDynamic("setRemoteFilter")(setRemoteFilter)
+    if (setRemoteGroup != null) __obj.updateDynamic("setRemoteGroup")(setRemoteGroup)
+    if (setRemoteSort != null) __obj.updateDynamic("setRemoteSort")(setRemoteSort)
+    if (setSorters != null) __obj.updateDynamic("setSorters")(setSorters)
+    if (setStoreId != null) __obj.updateDynamic("setStoreId")(setStoreId)
+    if (setSyncRemovedRecords != null) __obj.updateDynamic("setSyncRemovedRecords")(setSyncRemovedRecords)
+    if (setTotalCount != null) __obj.updateDynamic("setTotalCount")(setTotalCount)
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (sorters != null) __obj.updateDynamic("sorters")(sorters)
+    if (storeId != null) __obj.updateDynamic("storeId")(storeId)
+    if (sum != null) __obj.updateDynamic("sum")(sum)
+    if (sync != null) __obj.updateDynamic("sync")(sync)
+    if (!js.isUndefined(syncRemovedRecords)) __obj.updateDynamic("syncRemovedRecords")(syncRemovedRecords)
+    if (totalCount != null) __obj.updateDynamic("totalCount")(totalCount.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IStore]
+  }
+}
+

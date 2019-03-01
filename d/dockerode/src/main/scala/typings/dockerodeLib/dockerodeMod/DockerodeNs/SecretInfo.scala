@@ -13,3 +13,22 @@ trait SecretInfo extends js.Object {
   var Version: SecretVersion
 }
 
+object SecretInfo {
+  @scala.inline
+  def apply(
+    CreatedAt: java.lang.String,
+    ID: java.lang.String,
+    Version: SecretVersion,
+    Spec: ServiceSpec = null,
+    UpdatedAt: java.lang.String = null
+  ): SecretInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("CreatedAt")(CreatedAt)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("Version")(Version)
+    if (Spec != null) __obj.updateDynamic("Spec")(Spec)
+    if (UpdatedAt != null) __obj.updateDynamic("UpdatedAt")(UpdatedAt)
+    __obj.asInstanceOf[SecretInfo]
+  }
+}
+

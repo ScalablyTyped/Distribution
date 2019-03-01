@@ -29,3 +29,27 @@ trait ConsumersResource extends js.Object {
   def testIamPermissions(request: gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey): gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
 }
 
+object ConsumersResource {
+  @scala.inline
+  def apply(
+    getIamPolicy: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    setIamPolicy: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Policy]
+    ],
+    testIamPermissions: js.Function1[
+      gapiDotClientDotServicemanagementLib.Anon_AccesstokenAltBearertokenCallbackFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[TestIamPermissionsResponse]
+    ]
+  ): ConsumersResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getIamPolicy")(getIamPolicy)
+    __obj.updateDynamic("setIamPolicy")(setIamPolicy)
+    __obj.updateDynamic("testIamPermissions")(testIamPermissions)
+    __obj.asInstanceOf[ConsumersResource]
+  }
+}
+

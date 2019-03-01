@@ -140,3 +140,59 @@ trait XDatabaseDocumentUI extends js.Object {
   ): activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
 }
 
+object XDatabaseDocumentUI {
+  @scala.inline
+  def apply(
+    ActiveConnection: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XConnection,
+    ApplicationMainWindow: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.XWindow,
+    DataSource: activexDashLibreofficeLib.comNs.sunNs.starNs.sdbcNs.XDataSource,
+    SubComponents: activexDashInteropLib.SafeArray[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent],
+    closeSubComponents: js.Function0[scala.Boolean],
+    connect: js.Function0[scala.Unit],
+    createComponent: js.Function2[
+      scala.Double, 
+      js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
+    ],
+    createComponentWithArguments: js.Function3[
+      scala.Double, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      js.Array[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
+    ],
+    identifySubComponent: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.Pair[scala.Double, java.lang.String]
+    ],
+    isConnected: js.Function0[scala.Boolean],
+    loadComponent: js.Function3[
+      scala.Double, 
+      java.lang.String, 
+      scala.Boolean, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
+    ],
+    loadComponentWithArguments: js.Function4[
+      scala.Double, 
+      java.lang.String, 
+      scala.Boolean, 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
+    ]
+  ): XDatabaseDocumentUI = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ActiveConnection")(ActiveConnection)
+    __obj.updateDynamic("ApplicationMainWindow")(ApplicationMainWindow)
+    __obj.updateDynamic("DataSource")(DataSource)
+    __obj.updateDynamic("SubComponents")(SubComponents)
+    __obj.updateDynamic("closeSubComponents")(closeSubComponents)
+    __obj.updateDynamic("connect")(connect)
+    __obj.updateDynamic("createComponent")(createComponent)
+    __obj.updateDynamic("createComponentWithArguments")(createComponentWithArguments)
+    __obj.updateDynamic("identifySubComponent")(identifySubComponent)
+    __obj.updateDynamic("isConnected")(isConnected)
+    __obj.updateDynamic("loadComponent")(loadComponent)
+    __obj.updateDynamic("loadComponentWithArguments")(loadComponentWithArguments)
+    __obj.asInstanceOf[XDatabaseDocumentUI]
+  }
+}
+

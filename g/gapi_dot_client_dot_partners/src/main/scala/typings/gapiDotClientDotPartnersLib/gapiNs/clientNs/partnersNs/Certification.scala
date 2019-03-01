@@ -18,3 +18,22 @@ trait Certification extends js.Object {
   var warning: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Certification {
+  @scala.inline
+  def apply(
+    achieved: js.UndefOr[scala.Boolean] = js.undefined,
+    certificationType: java.lang.String = null,
+    expiration: java.lang.String = null,
+    lastAchieved: java.lang.String = null,
+    warning: js.UndefOr[scala.Boolean] = js.undefined
+  ): Certification = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(achieved)) __obj.updateDynamic("achieved")(achieved)
+    if (certificationType != null) __obj.updateDynamic("certificationType")(certificationType)
+    if (expiration != null) __obj.updateDynamic("expiration")(expiration)
+    if (lastAchieved != null) __obj.updateDynamic("lastAchieved")(lastAchieved)
+    if (!js.isUndefined(warning)) __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[Certification]
+  }
+}
+

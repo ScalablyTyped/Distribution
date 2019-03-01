@@ -13,3 +13,22 @@ trait ModalHeaderProps
   var onHide: js.UndefOr[js.Function] = js.undefined
 }
 
+object ModalHeaderProps {
+  @scala.inline
+  def apply(
+    HTMLProps: reactLib.reactMod.ReactNs.HTMLProps[reactDashBootstrapLib.libModalHeaderMod.ModalHeader] = null,
+    bsClass: java.lang.String = null,
+    closeButton: js.UndefOr[scala.Boolean] = js.undefined,
+    closeLabel: java.lang.String = null,
+    onHide: js.Function = null
+  ): ModalHeaderProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, HTMLProps)
+    if (bsClass != null) __obj.updateDynamic("bsClass")(bsClass)
+    if (!js.isUndefined(closeButton)) __obj.updateDynamic("closeButton")(closeButton)
+    if (closeLabel != null) __obj.updateDynamic("closeLabel")(closeLabel)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    __obj.asInstanceOf[ModalHeaderProps]
+  }
+}
+

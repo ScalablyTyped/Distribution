@@ -20,3 +20,24 @@ trait Availability extends js.Object {
   var segmentationType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Availability {
+  @scala.inline
+  def apply(
+    advertiserId: java.lang.String = null,
+    agencyId: java.lang.String = null,
+    availabilityTimestamp: java.lang.String = null,
+    segmentationId: java.lang.String = null,
+    segmentationName: java.lang.String = null,
+    segmentationType: java.lang.String = null
+  ): Availability = {
+    val __obj = js.Dynamic.literal()
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
+    if (agencyId != null) __obj.updateDynamic("agencyId")(agencyId)
+    if (availabilityTimestamp != null) __obj.updateDynamic("availabilityTimestamp")(availabilityTimestamp)
+    if (segmentationId != null) __obj.updateDynamic("segmentationId")(segmentationId)
+    if (segmentationName != null) __obj.updateDynamic("segmentationName")(segmentationName)
+    if (segmentationType != null) __obj.updateDynamic("segmentationType")(segmentationType)
+    __obj.asInstanceOf[Availability]
+  }
+}
+

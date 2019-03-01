@@ -16,3 +16,21 @@ trait Anon_CompleteError extends js.Object {
   ] = js.undefined
 }
 
+object Anon_CompleteError {
+  @scala.inline
+  def apply(
+    complete: js.Function0[scala.Unit] = null,
+    error: js.Function1[/* error */ stdLib.Error, scala.Unit] = null,
+    next: js.Function1[
+      /* snapshot */ atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesMod.DocumentSnapshot, 
+      scala.Unit
+    ] = null
+  ): Anon_CompleteError = {
+    val __obj = js.Dynamic.literal()
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (error != null) __obj.updateDynamic("error")(error)
+    if (next != null) __obj.updateDynamic("next")(next)
+    __obj.asInstanceOf[Anon_CompleteError]
+  }
+}
+

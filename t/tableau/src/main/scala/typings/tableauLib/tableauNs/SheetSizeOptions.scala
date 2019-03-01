@@ -14,3 +14,14 @@ trait SheetSizeOptions extends js.Object {
   var minSize: scala.Double
 }
 
+object SheetSizeOptions {
+  @scala.inline
+  def apply(behavior: SheetSizeBehaviour, maxSize: scala.Double, minSize: scala.Double): SheetSizeOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("behavior")(behavior)
+    __obj.updateDynamic("maxSize")(maxSize)
+    __obj.updateDynamic("minSize")(minSize)
+    __obj.asInstanceOf[SheetSizeOptions]
+  }
+}
+

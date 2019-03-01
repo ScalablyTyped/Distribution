@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object semverDashDiffLibStrings {
   @js.native
-  sealed trait build extends js.Object
+  sealed trait build
+    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
   
   @js.native
-  sealed trait major extends js.Object
+  sealed trait major
+    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
   
   @js.native
-  sealed trait minor extends js.Object
+  sealed trait minor
+    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
   
   @js.native
-  sealed trait patch extends js.Object
+  sealed trait patch
+    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
   
   @js.native
-  sealed trait prerelease extends js.Object
+  sealed trait prerelease
+    extends semverDashDiffLib.semverDashDiffMod.SemverDiffNs._SemverDiffReturn
   
   @scala.inline
   def build: build = "build".asInstanceOf[build]

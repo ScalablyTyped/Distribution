@@ -16,3 +16,20 @@ trait Anon_Height extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Height {
+  @scala.inline
+  def apply(
+    height: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    url: java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): Anon_Height = {
+    val __obj = js.Dynamic.literal()
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (url != null) __obj.updateDynamic("url")(url)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Height]
+  }
+}
+

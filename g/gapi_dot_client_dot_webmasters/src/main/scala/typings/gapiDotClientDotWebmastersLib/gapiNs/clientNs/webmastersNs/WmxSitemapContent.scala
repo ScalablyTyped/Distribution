@@ -14,3 +14,18 @@ trait WmxSitemapContent extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object WmxSitemapContent {
+  @scala.inline
+  def apply(
+    indexed: java.lang.String = null,
+    submitted: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): WmxSitemapContent = {
+    val __obj = js.Dynamic.literal()
+    if (indexed != null) __obj.updateDynamic("indexed")(indexed)
+    if (submitted != null) __obj.updateDynamic("submitted")(submitted)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[WmxSitemapContent]
+  }
+}
+

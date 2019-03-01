@@ -17,3 +17,12 @@ trait GeometricShapeData extends js.Object {
   var id: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GeometricShapeData {
+  @scala.inline
+  def apply(id: java.lang.String = null): GeometricShapeData = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[GeometricShapeData]
+  }
+}
+

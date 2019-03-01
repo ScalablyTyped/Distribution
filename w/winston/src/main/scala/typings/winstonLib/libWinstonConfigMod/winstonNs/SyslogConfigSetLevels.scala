@@ -16,3 +16,28 @@ trait SyslogConfigSetLevels extends AbstractConfigSetLevels {
   var warning: scala.Double
 }
 
+object SyslogConfigSetLevels {
+  @scala.inline
+  def apply(
+    alert: scala.Double,
+    crit: scala.Double,
+    debug: scala.Double,
+    emerg: scala.Double,
+    error: scala.Double,
+    info: scala.Double,
+    notice: scala.Double,
+    warning: scala.Double
+  ): SyslogConfigSetLevels = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alert")(alert)
+    __obj.updateDynamic("crit")(crit)
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("emerg")(emerg)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("info")(info)
+    __obj.updateDynamic("notice")(notice)
+    __obj.updateDynamic("warning")(warning)
+    __obj.asInstanceOf[SyslogConfigSetLevels]
+  }
+}
+

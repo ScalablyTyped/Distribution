@@ -70,3 +70,39 @@ trait IDispute
   var status: stripeLib.stripeLibStrings.warning_needs_response | stripeLib.stripeLibStrings.warning_under_review | stripeLib.stripeLibStrings.warning_closed | stripeLib.stripeLibStrings.needs_response | stripeLib.stripeLibStrings.response_disabled | stripeLib.stripeLibStrings.under_review | stripeLib.stripeLibStrings.charge_refunded | stripeLib.stripeLibStrings.won | stripeLib.stripeLibStrings.lost
 }
 
+object IDispute {
+  @scala.inline
+  def apply(
+    amount: scala.Double,
+    balance_transactions: js.Array[stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction],
+    charge: java.lang.String | stripeLib.stripeMod.StripeNs.chargesNs.ICharge,
+    created: scala.Double,
+    currency: java.lang.String,
+    evidence: IDisputeEvidence,
+    id: java.lang.String,
+    is_charge_refundable: scala.Boolean,
+    livemode: scala.Boolean,
+    metadata: stripeLib.stripeMod.StripeNs.IMetadata,
+    `object`: stripeLib.stripeLibStrings.dispute,
+    reason: stripeLib.stripeLibStrings.duplicate | stripeLib.stripeLibStrings.fraudulent | stripeLib.stripeLibStrings.subscription_canceled | stripeLib.stripeLibStrings.product_unacceptable | stripeLib.stripeLibStrings.product_not_received | stripeLib.stripeLibStrings.unrecognized | stripeLib.stripeLibStrings.credit_not_processed | stripeLib.stripeLibStrings.incorrect_account_details | stripeLib.stripeLibStrings.insufficient_funds | stripeLib.stripeLibStrings.bank_cannot_process | stripeLib.stripeLibStrings.debit_not_authorized | stripeLib.stripeLibStrings.general,
+    status: stripeLib.stripeLibStrings.warning_needs_response | stripeLib.stripeLibStrings.warning_under_review | stripeLib.stripeLibStrings.warning_closed | stripeLib.stripeLibStrings.needs_response | stripeLib.stripeLibStrings.response_disabled | stripeLib.stripeLibStrings.under_review | stripeLib.stripeLibStrings.charge_refunded | stripeLib.stripeLibStrings.won | stripeLib.stripeLibStrings.lost,
+    evidence_details: stripeLib.Anon_Dueby = null
+  ): IDispute = {
+    val __obj = js.Dynamic.literal(`object` = `object`)
+    __obj.updateDynamic("amount")(amount)
+    __obj.updateDynamic("balance_transactions")(balance_transactions)
+    __obj.updateDynamic("charge")(charge.asInstanceOf[js.Any])
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("currency")(currency)
+    __obj.updateDynamic("evidence")(evidence)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("is_charge_refundable")(is_charge_refundable)
+    __obj.updateDynamic("livemode")(livemode)
+    __obj.updateDynamic("metadata")(metadata)
+    __obj.updateDynamic("reason")(reason.asInstanceOf[js.Any])
+    __obj.updateDynamic("status")(status.asInstanceOf[js.Any])
+    if (evidence_details != null) __obj.updateDynamic("evidence_details")(evidence_details)
+    __obj.asInstanceOf[IDispute]
+  }
+}
+

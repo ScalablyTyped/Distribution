@@ -16,3 +16,32 @@ trait ScrollbarPlugin extends js.Object {
   def transformDelta(delta: smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d, fromEvent: js.Any): smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d
 }
 
+object ScrollbarPlugin {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    onDestory: js.Function0[scala.Unit],
+    onInit: js.Function0[scala.Unit],
+    onRender: js.Function1[smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d, scala.Unit],
+    onUpdate: js.Function0[scala.Unit],
+    options: js.Any,
+    scrollbar: smoothDashScrollbarLib.interfacesScrollbarMod.Scrollbar,
+    transformDelta: js.Function2[
+      smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d, 
+      js.Any, 
+      smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d
+    ]
+  ): ScrollbarPlugin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("onDestory")(onDestory)
+    __obj.updateDynamic("onInit")(onInit)
+    __obj.updateDynamic("onRender")(onRender)
+    __obj.updateDynamic("onUpdate")(onUpdate)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("scrollbar")(scrollbar)
+    __obj.updateDynamic("transformDelta")(transformDelta)
+    __obj.asInstanceOf[ScrollbarPlugin]
+  }
+}
+

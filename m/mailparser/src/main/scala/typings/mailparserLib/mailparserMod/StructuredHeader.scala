@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   * }
   * ```
   */
-trait StructuredHeader extends js.Object {
+trait StructuredHeader extends _HeaderValue {
   /**
   	 * Additional arguments.
   	 */
@@ -27,5 +27,15 @@ trait StructuredHeader extends js.Object {
   	 * The main value.
   	 */
   var value: java.lang.String
+}
+
+object StructuredHeader {
+  @scala.inline
+  def apply(params: org.scalablytyped.runtime.StringDictionary[java.lang.String], value: java.lang.String): StructuredHeader = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[StructuredHeader]
+  }
 }
 

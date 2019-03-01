@@ -12,3 +12,13 @@ trait SendWorkerMessagesRequest extends js.Object {
   var workerMessages: js.UndefOr[js.Array[WorkerMessage]] = js.undefined
 }
 
+object SendWorkerMessagesRequest {
+  @scala.inline
+  def apply(location: java.lang.String = null, workerMessages: js.Array[WorkerMessage] = null): SendWorkerMessagesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (location != null) __obj.updateDynamic("location")(location)
+    if (workerMessages != null) __obj.updateDynamic("workerMessages")(workerMessages)
+    __obj.asInstanceOf[SendWorkerMessagesRequest]
+  }
+}
+

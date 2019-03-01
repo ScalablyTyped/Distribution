@@ -13,3 +13,18 @@ trait AlertIOSButton extends js.Object {
   var text: java.lang.String
 }
 
+object AlertIOSButton {
+  @scala.inline
+  def apply(
+    text: java.lang.String,
+    onPress: js.Function1[/* message */ js.UndefOr[java.lang.String], scala.Unit] = null,
+    style: reactDashNativeLib.reactDashNativeLibStrings.default | reactDashNativeLib.reactDashNativeLibStrings.cancel | reactDashNativeLib.reactDashNativeLibStrings.destructive = null
+  ): AlertIOSButton = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AlertIOSButton]
+  }
+}
+

@@ -44,3 +44,22 @@ trait PivotFieldLoadOptions extends js.Object {
   var subtotals: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object PivotFieldLoadOptions {
+  @scala.inline
+  def apply(
+    $all: js.UndefOr[scala.Boolean] = js.undefined,
+    id: js.UndefOr[scala.Boolean] = js.undefined,
+    name: js.UndefOr[scala.Boolean] = js.undefined,
+    showAllItems: js.UndefOr[scala.Boolean] = js.undefined,
+    subtotals: js.UndefOr[scala.Boolean] = js.undefined
+  ): PivotFieldLoadOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined($all)) __obj.updateDynamic("$all")($all)
+    if (!js.isUndefined(id)) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(name)) __obj.updateDynamic("name")(name)
+    if (!js.isUndefined(showAllItems)) __obj.updateDynamic("showAllItems")(showAllItems)
+    if (!js.isUndefined(subtotals)) __obj.updateDynamic("subtotals")(subtotals)
+    __obj.asInstanceOf[PivotFieldLoadOptions]
+  }
+}
+

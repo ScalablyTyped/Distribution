@@ -12,3 +12,13 @@ trait Order extends js.Object {
   var field: js.UndefOr[FieldReference] = js.undefined
 }
 
+object Order {
+  @scala.inline
+  def apply(direction: java.lang.String = null, field: FieldReference = null): Order = {
+    val __obj = js.Dynamic.literal()
+    if (direction != null) __obj.updateDynamic("direction")(direction)
+    if (field != null) __obj.updateDynamic("field")(field)
+    __obj.asInstanceOf[Order]
+  }
+}
+

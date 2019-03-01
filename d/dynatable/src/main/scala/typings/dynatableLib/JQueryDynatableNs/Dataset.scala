@@ -113,3 +113,44 @@ trait Dataset extends js.Object {
   var totalRecordCount: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Dataset {
+  @scala.inline
+  def apply(
+    ajax: js.UndefOr[scala.Boolean] = js.undefined,
+    ajaxCache: js.UndefOr[scala.Boolean] = js.undefined,
+    ajaxDataType: java.lang.String = null,
+    ajaxMethod: java.lang.String = null,
+    ajaxOnLoad: js.UndefOr[scala.Boolean] = js.undefined,
+    ajaxUrl: java.lang.String = null,
+    page: scala.Int | scala.Double = null,
+    perPageDefault: scala.Int | scala.Double = null,
+    perPageOptions: js.Array[scala.Double] = null,
+    queries: js.Object = null,
+    queryRecordCount: java.lang.String = null,
+    records: js.Any = null,
+    sortTypes: js.Object = null,
+    sorts: js.Object = null,
+    sortsKeys: js.Array[java.lang.String] = null,
+    totalRecordCount: java.lang.String = null
+  ): Dataset = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ajax)) __obj.updateDynamic("ajax")(ajax)
+    if (!js.isUndefined(ajaxCache)) __obj.updateDynamic("ajaxCache")(ajaxCache)
+    if (ajaxDataType != null) __obj.updateDynamic("ajaxDataType")(ajaxDataType)
+    if (ajaxMethod != null) __obj.updateDynamic("ajaxMethod")(ajaxMethod)
+    if (!js.isUndefined(ajaxOnLoad)) __obj.updateDynamic("ajaxOnLoad")(ajaxOnLoad)
+    if (ajaxUrl != null) __obj.updateDynamic("ajaxUrl")(ajaxUrl)
+    if (page != null) __obj.updateDynamic("page")(page.asInstanceOf[js.Any])
+    if (perPageDefault != null) __obj.updateDynamic("perPageDefault")(perPageDefault.asInstanceOf[js.Any])
+    if (perPageOptions != null) __obj.updateDynamic("perPageOptions")(perPageOptions)
+    if (queries != null) __obj.updateDynamic("queries")(queries)
+    if (queryRecordCount != null) __obj.updateDynamic("queryRecordCount")(queryRecordCount)
+    if (records != null) __obj.updateDynamic("records")(records)
+    if (sortTypes != null) __obj.updateDynamic("sortTypes")(sortTypes)
+    if (sorts != null) __obj.updateDynamic("sorts")(sorts)
+    if (sortsKeys != null) __obj.updateDynamic("sortsKeys")(sortsKeys)
+    if (totalRecordCount != null) __obj.updateDynamic("totalRecordCount")(totalRecordCount)
+    __obj.asInstanceOf[Dataset]
+  }
+}
+

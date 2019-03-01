@@ -43,3 +43,24 @@ trait TextEditChange extends js.Object {
   def replace(range: Range, newText: java.lang.String): scala.Unit
 }
 
+object TextEditChange {
+  @scala.inline
+  def apply(
+    add: js.Function1[TextEdit, scala.Unit],
+    all: js.Function0[js.Array[TextEdit]],
+    clear: js.Function0[scala.Unit],
+    delete: js.Function1[Range, scala.Unit],
+    insert: js.Function2[Position, java.lang.String, scala.Unit],
+    replace: js.Function2[Range, java.lang.String, scala.Unit]
+  ): TextEditChange = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("add")(add)
+    __obj.updateDynamic("all")(all)
+    __obj.updateDynamic("clear")(clear)
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("replace")(replace)
+    __obj.asInstanceOf[TextEditChange]
+  }
+}
+

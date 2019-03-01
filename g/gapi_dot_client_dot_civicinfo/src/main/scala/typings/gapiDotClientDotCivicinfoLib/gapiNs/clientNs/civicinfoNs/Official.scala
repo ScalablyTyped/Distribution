@@ -24,3 +24,28 @@ trait Official extends js.Object {
   var urls: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object Official {
+  @scala.inline
+  def apply(
+    address: js.Array[SimpleAddressType] = null,
+    channels: js.Array[Channel] = null,
+    emails: js.Array[java.lang.String] = null,
+    name: java.lang.String = null,
+    party: java.lang.String = null,
+    phones: js.Array[java.lang.String] = null,
+    photoUrl: java.lang.String = null,
+    urls: js.Array[java.lang.String] = null
+  ): Official = {
+    val __obj = js.Dynamic.literal()
+    if (address != null) __obj.updateDynamic("address")(address)
+    if (channels != null) __obj.updateDynamic("channels")(channels)
+    if (emails != null) __obj.updateDynamic("emails")(emails)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (party != null) __obj.updateDynamic("party")(party)
+    if (phones != null) __obj.updateDynamic("phones")(phones)
+    if (photoUrl != null) __obj.updateDynamic("photoUrl")(photoUrl)
+    if (urls != null) __obj.updateDynamic("urls")(urls)
+    __obj.asInstanceOf[Official]
+  }
+}
+

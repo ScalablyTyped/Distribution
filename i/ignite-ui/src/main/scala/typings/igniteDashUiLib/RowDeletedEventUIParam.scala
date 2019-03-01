@@ -20,3 +20,14 @@ trait RowDeletedEventUIParam extends js.Object {
   var rowID: js.UndefOr[js.Any] = js.undefined
 }
 
+object RowDeletedEventUIParam {
+  @scala.inline
+  def apply(element: js.Any = null, owner: js.Any = null, rowID: js.Any = null): RowDeletedEventUIParam = {
+    val __obj = js.Dynamic.literal()
+    if (element != null) __obj.updateDynamic("element")(element)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (rowID != null) __obj.updateDynamic("rowID")(rowID)
+    __obj.asInstanceOf[RowDeletedEventUIParam]
+  }
+}
+

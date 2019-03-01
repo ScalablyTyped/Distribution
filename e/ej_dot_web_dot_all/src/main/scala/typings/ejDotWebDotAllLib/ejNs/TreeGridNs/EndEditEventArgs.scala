@@ -26,3 +26,24 @@ trait EndEditEventArgs extends js.Object {
   var rowElement: js.UndefOr[js.Any] = js.undefined
 }
 
+object EndEditEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cellElement: js.Any = null,
+    columnName: java.lang.String = null,
+    columnObject: js.Any = null,
+    data: js.Any = null,
+    rowElement: js.Any = null
+  ): EndEditEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cellElement != null) __obj.updateDynamic("cellElement")(cellElement)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (columnObject != null) __obj.updateDynamic("columnObject")(columnObject)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (rowElement != null) __obj.updateDynamic("rowElement")(rowElement)
+    __obj.asInstanceOf[EndEditEventArgs]
+  }
+}
+

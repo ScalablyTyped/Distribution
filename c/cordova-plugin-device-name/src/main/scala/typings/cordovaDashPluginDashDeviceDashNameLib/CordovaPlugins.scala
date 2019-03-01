@@ -12,3 +12,14 @@ trait CordovaPlugins extends js.Object {
   var deviceName: cordovaDashPluginDashDeviceDashNameLib.CordovaPluginDeviceNameNs.CordovaPluginDeviceName
 }
 
+object CordovaPlugins {
+  @scala.inline
+  def apply(
+    deviceName: cordovaDashPluginDashDeviceDashNameLib.CordovaPluginDeviceNameNs.CordovaPluginDeviceName
+  ): CordovaPlugins = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("deviceName")(deviceName)
+    __obj.asInstanceOf[CordovaPlugins]
+  }
+}
+

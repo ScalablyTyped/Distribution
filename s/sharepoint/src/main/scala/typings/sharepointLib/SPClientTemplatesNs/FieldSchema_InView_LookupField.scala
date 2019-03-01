@@ -14,3 +14,58 @@ trait FieldSchema_InView_LookupField extends FieldSchema_InView {
   var HasPrefix: java.lang.String
 }
 
+object FieldSchema_InView_LookupField {
+  @scala.inline
+  def apply(
+    AllowGridEditing: scala.Boolean,
+    AllowMultipleValues: java.lang.String,
+    CalloutMenu: java.lang.String,
+    ClassInfo: java.lang.String,
+    DispFormUrl: java.lang.String,
+    DisplayName: java.lang.String,
+    Explicit: java.lang.String,
+    FieldTitle: java.lang.String,
+    FieldType: java.lang.String,
+    Filterable: java.lang.String,
+    GridActiveAndReadOnly: java.lang.String,
+    GroupField: java.lang.String,
+    HasPrefix: java.lang.String,
+    ID: java.lang.String,
+    Name: java.lang.String,
+    ReadOnly: java.lang.String,
+    RealFieldName: java.lang.String,
+    ResultType: java.lang.String,
+    Sortable: java.lang.String,
+    Type: java.lang.String,
+    css: java.lang.String,
+    fieldRenderer: js.Any,
+    listItemMenu: java.lang.String
+  ): FieldSchema_InView_LookupField = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AllowGridEditing")(AllowGridEditing)
+    __obj.updateDynamic("AllowMultipleValues")(AllowMultipleValues)
+    __obj.updateDynamic("CalloutMenu")(CalloutMenu)
+    __obj.updateDynamic("ClassInfo")(ClassInfo)
+    __obj.updateDynamic("DispFormUrl")(DispFormUrl)
+    __obj.updateDynamic("DisplayName")(DisplayName)
+    __obj.updateDynamic("Explicit")(Explicit)
+    __obj.updateDynamic("FieldTitle")(FieldTitle)
+    __obj.updateDynamic("FieldType")(FieldType)
+    __obj.updateDynamic("Filterable")(Filterable)
+    __obj.updateDynamic("GridActiveAndReadOnly")(GridActiveAndReadOnly)
+    __obj.updateDynamic("GroupField")(GroupField)
+    __obj.updateDynamic("HasPrefix")(HasPrefix)
+    __obj.updateDynamic("ID")(ID)
+    __obj.updateDynamic("Name")(Name)
+    __obj.updateDynamic("ReadOnly")(ReadOnly)
+    __obj.updateDynamic("RealFieldName")(RealFieldName)
+    __obj.updateDynamic("ResultType")(ResultType)
+    __obj.updateDynamic("Sortable")(Sortable)
+    __obj.updateDynamic("Type")(Type)
+    __obj.updateDynamic("css")(css)
+    __obj.updateDynamic("fieldRenderer")(fieldRenderer)
+    __obj.updateDynamic("listItemMenu")(listItemMenu)
+    __obj.asInstanceOf[FieldSchema_InView_LookupField]
+  }
+}
+

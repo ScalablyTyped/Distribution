@@ -11,3 +11,18 @@ trait INumberParser extends js.Object {
   def parseUInt(text: java.lang.String): scala.Double
 }
 
+object INumberParser {
+  @scala.inline
+  def apply(
+    parseDouble: js.Function1[java.lang.String, scala.Double],
+    parseInt: js.Function1[java.lang.String, scala.Double],
+    parseUInt: js.Function1[java.lang.String, scala.Double]
+  ): INumberParser = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("parseDouble")(parseDouble)
+    __obj.updateDynamic("parseInt")(parseInt)
+    __obj.updateDynamic("parseUInt")(parseUInt)
+    __obj.asInstanceOf[INumberParser]
+  }
+}
+

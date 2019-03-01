@@ -18,3 +18,13 @@ trait Anon_DeflateLevel extends js.Object {
   var deflateStrategy: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_DeflateLevel {
+  @scala.inline
+  def apply(deflateLevel: scala.Int | scala.Double = null, deflateStrategy: scala.Int | scala.Double = null): Anon_DeflateLevel = {
+    val __obj = js.Dynamic.literal()
+    if (deflateLevel != null) __obj.updateDynamic("deflateLevel")(deflateLevel.asInstanceOf[js.Any])
+    if (deflateStrategy != null) __obj.updateDynamic("deflateStrategy")(deflateStrategy.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_DeflateLevel]
+  }
+}
+

@@ -22,3 +22,40 @@ trait NxStackedPivotCell extends js.Object {
   var qValue: scala.Double
 }
 
+object NxStackedPivotCell {
+  @scala.inline
+  def apply(
+    qAttrDims: NxAttributeDimValues,
+    qAttrExps: NxAttributeExpressionValues,
+    qCanCollapse: scala.Boolean,
+    qCanExpand: scala.Boolean,
+    qDown: scala.Double,
+    qElemNo: scala.Double,
+    qMaxPos: scala.Double,
+    qMinNeg: scala.Double,
+    qRow: scala.Double,
+    qSubNodes: js.Array[NxStackedPivotCell],
+    qText: java.lang.String,
+    qType: qlikLib.qlikLibStrings.V | qlikLib.qlikLibStrings.E | qlikLib.qlikLibStrings.N | qlikLib.qlikLibStrings.T | qlikLib.qlikLibStrings.P | qlikLib.qlikLibStrings.R | qlikLib.qlikLibStrings.U,
+    qUp: scala.Double,
+    qValue: scala.Double
+  ): NxStackedPivotCell = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qAttrDims")(qAttrDims)
+    __obj.updateDynamic("qAttrExps")(qAttrExps)
+    __obj.updateDynamic("qCanCollapse")(qCanCollapse)
+    __obj.updateDynamic("qCanExpand")(qCanExpand)
+    __obj.updateDynamic("qDown")(qDown)
+    __obj.updateDynamic("qElemNo")(qElemNo)
+    __obj.updateDynamic("qMaxPos")(qMaxPos)
+    __obj.updateDynamic("qMinNeg")(qMinNeg)
+    __obj.updateDynamic("qRow")(qRow)
+    __obj.updateDynamic("qSubNodes")(qSubNodes)
+    __obj.updateDynamic("qText")(qText)
+    __obj.updateDynamic("qType")(qType.asInstanceOf[js.Any])
+    __obj.updateDynamic("qUp")(qUp)
+    __obj.updateDynamic("qValue")(qValue)
+    __obj.asInstanceOf[NxStackedPivotCell]
+  }
+}
+

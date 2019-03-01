@@ -35,3 +35,20 @@ trait Anon_IgnoreCache extends js.Object {
   var userAgent: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_IgnoreCache {
+  @scala.inline
+  def apply(
+    ignoreCache: js.UndefOr[scala.Boolean] = js.undefined,
+    injectedScript: java.lang.String = null,
+    preprocessorScript: java.lang.String = null,
+    userAgent: java.lang.String = null
+  ): Anon_IgnoreCache = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(ignoreCache)) __obj.updateDynamic("ignoreCache")(ignoreCache)
+    if (injectedScript != null) __obj.updateDynamic("injectedScript")(injectedScript)
+    if (preprocessorScript != null) __obj.updateDynamic("preprocessorScript")(preprocessorScript)
+    if (userAgent != null) __obj.updateDynamic("userAgent")(userAgent)
+    __obj.asInstanceOf[Anon_IgnoreCache]
+  }
+}
+

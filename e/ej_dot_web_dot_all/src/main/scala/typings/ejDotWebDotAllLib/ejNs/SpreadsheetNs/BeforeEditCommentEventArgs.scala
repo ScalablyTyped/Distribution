@@ -29,3 +29,26 @@ trait BeforeEditCommentEventArgs extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeEditCommentEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cellIndex: js.Any = null,
+    disable: js.UndefOr[scala.Boolean] = js.undefined,
+    model: js.Any = null,
+    sheetIdx: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): BeforeEditCommentEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex)
+    if (!js.isUndefined(disable)) __obj.updateDynamic("disable")(disable)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[BeforeEditCommentEventArgs]
+  }
+}
+

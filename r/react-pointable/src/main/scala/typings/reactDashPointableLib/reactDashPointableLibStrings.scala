@@ -7,22 +7,27 @@ import scala.scalajs.js.annotation._
 
 object reactDashPointableLibStrings {
   @js.native
-  sealed trait auto extends js.Object
+  sealed trait auto
+    extends reactDashPointableLib.reactDashPointableMod.TouchAction
   
   @js.native
   sealed trait div extends js.Object
   
   @js.native
-  sealed trait manipulation extends js.Object
+  sealed trait manipulation
+    extends reactDashPointableLib.reactDashPointableMod.TouchAction
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends reactDashPointableLib.reactDashPointableMod.TouchAction
   
   @js.native
-  sealed trait `pan-x` extends js.Object
+  sealed trait `pan-x`
+    extends reactDashPointableLib.reactDashPointableMod.TouchAction
   
   @js.native
-  sealed trait `pan-y` extends js.Object
+  sealed trait `pan-y`
+    extends reactDashPointableLib.reactDashPointableMod.TouchAction
   
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]

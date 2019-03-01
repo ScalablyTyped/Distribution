@@ -17,3 +17,30 @@ trait CreditDisplay extends js.Object {
   def update(): scala.Unit
 }
 
+object CreditDisplay {
+  @scala.inline
+  def apply(
+    addCredit: js.Function1[Credit, scala.Unit],
+    addDefaultCredit: js.Function1[Credit, scala.Unit],
+    beginFrame: js.Function1[Credit, scala.Unit],
+    container: stdLib.HTMLElement,
+    destroy: js.Function0[scala.Unit],
+    endFrame: js.Function1[Credit, scala.Unit],
+    isDestroyed: js.Function0[scala.Boolean],
+    removeDefaultCredit: js.Function1[Credit, scala.Unit],
+    update: js.Function0[scala.Unit]
+  ): CreditDisplay = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addCredit")(addCredit)
+    __obj.updateDynamic("addDefaultCredit")(addDefaultCredit)
+    __obj.updateDynamic("beginFrame")(beginFrame)
+    __obj.updateDynamic("container")(container)
+    __obj.updateDynamic("destroy")(destroy)
+    __obj.updateDynamic("endFrame")(endFrame)
+    __obj.updateDynamic("isDestroyed")(isDestroyed)
+    __obj.updateDynamic("removeDefaultCredit")(removeDefaultCredit)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[CreditDisplay]
+  }
+}
+

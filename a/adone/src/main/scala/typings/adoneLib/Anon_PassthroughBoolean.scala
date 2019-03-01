@@ -12,3 +12,12 @@ trait Anon_PassthroughBoolean extends js.Object {
   var passthrough: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_PassthroughBoolean {
+  @scala.inline
+  def apply(passthrough: js.UndefOr[scala.Boolean] = js.undefined): Anon_PassthroughBoolean = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(passthrough)) __obj.updateDynamic("passthrough")(passthrough)
+    __obj.asInstanceOf[Anon_PassthroughBoolean]
+  }
+}
+

@@ -16,3 +16,13 @@ trait LayoutBottomTabsChildren extends js.Object {
   var stack: js.UndefOr[LayoutStack] = js.undefined
 }
 
+object LayoutBottomTabsChildren {
+  @scala.inline
+  def apply(component: LayoutComponent[js.Object] = null, stack: LayoutStack = null): LayoutBottomTabsChildren = {
+    val __obj = js.Dynamic.literal()
+    if (component != null) __obj.updateDynamic("component")(component)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[LayoutBottomTabsChildren]
+  }
+}
+

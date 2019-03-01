@@ -44,3 +44,34 @@ trait ApplePayPaymentRequest extends js.Object {
   var total: braintreeDashWebLib.Anon_AmountLabel
 }
 
+object ApplePayPaymentRequest {
+  @scala.inline
+  def apply(
+    countryCode: java.lang.String,
+    currencyCode: java.lang.String,
+    merchantCapabilities: js.Array[java.lang.String],
+    supportedNetworks: js.Array[java.lang.String],
+    total: braintreeDashWebLib.Anon_AmountLabel,
+    billingContact: js.Any = null,
+    requiredBillingContactFields: js.Any = null,
+    requiredShippingContactFields: js.Any = null,
+    shippingContact: js.Any = null,
+    shippingMethods: js.Any = null,
+    shippingType: js.Any = null
+  ): ApplePayPaymentRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("countryCode")(countryCode)
+    __obj.updateDynamic("currencyCode")(currencyCode)
+    __obj.updateDynamic("merchantCapabilities")(merchantCapabilities)
+    __obj.updateDynamic("supportedNetworks")(supportedNetworks)
+    __obj.updateDynamic("total")(total)
+    if (billingContact != null) __obj.updateDynamic("billingContact")(billingContact)
+    if (requiredBillingContactFields != null) __obj.updateDynamic("requiredBillingContactFields")(requiredBillingContactFields)
+    if (requiredShippingContactFields != null) __obj.updateDynamic("requiredShippingContactFields")(requiredShippingContactFields)
+    if (shippingContact != null) __obj.updateDynamic("shippingContact")(shippingContact)
+    if (shippingMethods != null) __obj.updateDynamic("shippingMethods")(shippingMethods)
+    if (shippingType != null) __obj.updateDynamic("shippingType")(shippingType)
+    __obj.asInstanceOf[ApplePayPaymentRequest]
+  }
+}
+

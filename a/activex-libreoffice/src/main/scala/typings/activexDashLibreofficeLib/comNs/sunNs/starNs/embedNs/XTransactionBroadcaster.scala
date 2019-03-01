@@ -14,3 +14,22 @@ trait XTransactionBroadcaster
   def removeTransactionListener(aListener: XTransactionListener): scala.Unit
 }
 
+object XTransactionBroadcaster {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addTransactionListener: js.Function1[XTransactionListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTransactionListener: js.Function1[XTransactionListener, scala.Unit]
+  ): XTransactionBroadcaster = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addTransactionListener")(addTransactionListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeTransactionListener")(removeTransactionListener)
+    __obj.asInstanceOf[XTransactionBroadcaster]
+  }
+}
+

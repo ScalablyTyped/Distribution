@@ -60,3 +60,34 @@ trait DDSInfo extends js.Object {
   var width: scala.Double
 }
 
+object DDSInfo {
+  @scala.inline
+  def apply(
+    dxgiFormat: scala.Double,
+    height: scala.Double,
+    isCompressed: scala.Boolean,
+    isCube: scala.Boolean,
+    isFourCC: scala.Boolean,
+    isLuminance: scala.Boolean,
+    isRGB: scala.Boolean,
+    mipmapCount: scala.Double,
+    textureType: scala.Double,
+    width: scala.Double,
+    sphericalPolynomial: SphericalPolynomial = null
+  ): DDSInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("dxgiFormat")(dxgiFormat)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("isCompressed")(isCompressed)
+    __obj.updateDynamic("isCube")(isCube)
+    __obj.updateDynamic("isFourCC")(isFourCC)
+    __obj.updateDynamic("isLuminance")(isLuminance)
+    __obj.updateDynamic("isRGB")(isRGB)
+    __obj.updateDynamic("mipmapCount")(mipmapCount)
+    __obj.updateDynamic("textureType")(textureType)
+    __obj.updateDynamic("width")(width)
+    if (sphericalPolynomial != null) __obj.updateDynamic("sphericalPolynomial")(sphericalPolynomial)
+    __obj.asInstanceOf[DDSInfo]
+  }
+}
+

@@ -17,3 +17,18 @@ trait PermissionList extends js.Object {
   var permissions: js.UndefOr[js.Array[Permission]] = js.undefined
 }
 
+object PermissionList {
+  @scala.inline
+  def apply(
+    kind: java.lang.String = null,
+    nextPageToken: java.lang.String = null,
+    permissions: js.Array[Permission] = null
+  ): PermissionList = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (permissions != null) __obj.updateDynamic("permissions")(permissions)
+    __obj.asInstanceOf[PermissionList]
+  }
+}
+

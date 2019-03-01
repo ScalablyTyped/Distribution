@@ -10,3 +10,12 @@ trait Anon_NumberDecimal extends js.Object {
   var $numberDecimal: java.lang.String
 }
 
+object Anon_NumberDecimal {
+  @scala.inline
+  def apply($numberDecimal: java.lang.String): Anon_NumberDecimal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$numberDecimal")($numberDecimal)
+    __obj.asInstanceOf[Anon_NumberDecimal]
+  }
+}
+

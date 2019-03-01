@@ -15,3 +15,26 @@ trait Anon_DefaultResult extends js.Object {
   var roleArn: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_DefaultResult {
+  @scala.inline
+  def apply(
+    defaultResult: java.lang.String,
+    lifecycleTransition: java.lang.String,
+    name: java.lang.String,
+    heartbeatTimeout: scala.Int | scala.Double = null,
+    notificationMetadata: java.lang.String = null,
+    notificationTargetArn: java.lang.String = null,
+    roleArn: java.lang.String = null
+  ): Anon_DefaultResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultResult")(defaultResult)
+    __obj.updateDynamic("lifecycleTransition")(lifecycleTransition)
+    __obj.updateDynamic("name")(name)
+    if (heartbeatTimeout != null) __obj.updateDynamic("heartbeatTimeout")(heartbeatTimeout.asInstanceOf[js.Any])
+    if (notificationMetadata != null) __obj.updateDynamic("notificationMetadata")(notificationMetadata)
+    if (notificationTargetArn != null) __obj.updateDynamic("notificationTargetArn")(notificationTargetArn)
+    if (roleArn != null) __obj.updateDynamic("roleArn")(roleArn)
+    __obj.asInstanceOf[Anon_DefaultResult]
+  }
+}
+

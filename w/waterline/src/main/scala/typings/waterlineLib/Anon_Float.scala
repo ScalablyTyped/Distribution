@@ -9,3 +9,12 @@ trait Anon_Float extends js.Object {
   var `type`: waterlineLib.waterlineLibStrings.float
 }
 
+object Anon_Float {
+  @scala.inline
+  def apply(`type`: waterlineLib.waterlineLibStrings.float): Anon_Float = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+  
+    __obj.asInstanceOf[Anon_Float]
+  }
+}
+

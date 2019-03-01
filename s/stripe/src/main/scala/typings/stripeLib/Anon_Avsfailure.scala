@@ -20,3 +20,16 @@ trait Anon_Avsfailure extends js.Object {
   var cvc_failure: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Anon_Avsfailure {
+  @scala.inline
+  def apply(
+    avs_failure: js.UndefOr[scala.Boolean] = js.undefined,
+    cvc_failure: js.UndefOr[scala.Boolean] = js.undefined
+  ): Anon_Avsfailure = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(avs_failure)) __obj.updateDynamic("avs_failure")(avs_failure)
+    if (!js.isUndefined(cvc_failure)) __obj.updateDynamic("cvc_failure")(cvc_failure)
+    __obj.asInstanceOf[Anon_Avsfailure]
+  }
+}
+

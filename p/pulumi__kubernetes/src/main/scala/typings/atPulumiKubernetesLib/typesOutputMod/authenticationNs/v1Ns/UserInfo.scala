@@ -28,3 +28,20 @@ trait UserInfo extends js.Object {
   val username: java.lang.String
 }
 
+object UserInfo {
+  @scala.inline
+  def apply(
+    extra: js.Object,
+    groups: js.Array[java.lang.String],
+    uid: java.lang.String,
+    username: java.lang.String
+  ): UserInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extra")(extra)
+    __obj.updateDynamic("groups")(groups)
+    __obj.updateDynamic("uid")(uid)
+    __obj.updateDynamic("username")(username)
+    __obj.asInstanceOf[UserInfo]
+  }
+}
+

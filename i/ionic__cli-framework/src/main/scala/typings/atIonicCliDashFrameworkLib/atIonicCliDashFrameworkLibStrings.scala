@@ -7,19 +7,23 @@ import scala.scalajs.js.annotation._
 
 object atIonicCliDashFrameworkLibStrings {
   @js.native
-  sealed trait DEBUG extends js.Object
+  sealed trait DEBUG
+    extends atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel
   
   @js.native
-  sealed trait ERROR extends js.Object
+  sealed trait ERROR
+    extends atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel
   
   @js.native
-  sealed trait INFO extends js.Object
+  sealed trait INFO
+    extends atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel
   
   @js.native
   sealed trait LoggerColors extends js.Object
   
   @js.native
-  sealed trait WARN extends js.Object
+  sealed trait WARN
+    extends atIonicCliDashFrameworkLib.libLoggerMod.LoggerLevel
   
   @js.native
   sealed trait checkbox extends js.Object
@@ -40,7 +44,8 @@ object atIonicCliDashFrameworkLibStrings {
   sealed trait help extends js.Object
   
   @js.native
-  sealed trait input extends js.Object
+  sealed trait input
+    extends atIonicCliDashFrameworkLib.libPromptsMod.PromptTypeOther
   
   @js.native
   sealed trait json extends js.Object
@@ -49,7 +54,8 @@ object atIonicCliDashFrameworkLibStrings {
   sealed trait link extends js.Object
   
   @js.native
-  sealed trait list extends js.Object
+  sealed trait list
+    extends atIonicCliDashFrameworkLib.libPromptsMod.PromptTypeOther
   
   @js.native
   sealed trait next extends js.Object
@@ -58,7 +64,8 @@ object atIonicCliDashFrameworkLibStrings {
   sealed trait `operation-rpc` extends js.Object
   
   @js.native
-  sealed trait password extends js.Object
+  sealed trait password
+    extends atIonicCliDashFrameworkLib.libPromptsMod.PromptTypeOther
   
   @js.native
   sealed trait `rpc-request` extends js.Object

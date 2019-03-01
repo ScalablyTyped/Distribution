@@ -24,3 +24,20 @@ trait TargetGroupAttachmentState extends js.Object {
   val targetId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object TargetGroupAttachmentState {
+  @scala.inline
+  def apply(
+    availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    port: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    targetGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targetId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): TargetGroupAttachmentState = {
+    val __obj = js.Dynamic.literal()
+    if (availabilityZone != null) __obj.updateDynamic("availabilityZone")(availabilityZone.asInstanceOf[js.Any])
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (targetGroupArn != null) __obj.updateDynamic("targetGroupArn")(targetGroupArn.asInstanceOf[js.Any])
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TargetGroupAttachmentState]
+  }
+}
+

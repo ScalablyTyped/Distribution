@@ -20,3 +20,22 @@ trait StrictFeedMetaProps extends js.Object {
   ] = js.undefined
 }
 
+object StrictFeedMetaProps {
+  @scala.inline
+  def apply(
+    as: js.Any = null,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    content: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandContent = null,
+    like: semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticShorthandItem[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedLikeMod.FeedLikeProps] = null
+  ): StrictFeedMetaProps = {
+    val __obj = js.Dynamic.literal()
+    if (as != null) __obj.updateDynamic("as")(as)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (content != null) __obj.updateDynamic("content")(content.asInstanceOf[js.Any])
+    if (like != null) __obj.updateDynamic("like")(like.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StrictFeedMetaProps]
+  }
+}
+

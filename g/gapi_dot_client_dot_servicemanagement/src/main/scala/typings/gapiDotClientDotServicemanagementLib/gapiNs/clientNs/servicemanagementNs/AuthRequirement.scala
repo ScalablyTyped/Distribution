@@ -35,3 +35,13 @@ trait AuthRequirement extends js.Object {
   var providerId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AuthRequirement {
+  @scala.inline
+  def apply(audiences: java.lang.String = null, providerId: java.lang.String = null): AuthRequirement = {
+    val __obj = js.Dynamic.literal()
+    if (audiences != null) __obj.updateDynamic("audiences")(audiences)
+    if (providerId != null) __obj.updateDynamic("providerId")(providerId)
+    __obj.asInstanceOf[AuthRequirement]
+  }
+}
+

@@ -24,3 +24,24 @@ trait DebuggeesResource extends js.Object {
   def register(request: gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallbackFields): gapiDotClientLib.gapiNs.clientNs.Request[RegisterDebuggeeResponse]
 }
 
+object DebuggeesResource {
+  @scala.inline
+  def apply(
+    breakpoints: BreakpointsResource,
+    list: js.Function1[
+      gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallbackClientVersion, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListDebuggeesResponse]
+    ],
+    register: js.Function1[
+      gapiDotClientDotClouddebuggerLib.Anon_AccesstokenAltBearertokenCallbackFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[RegisterDebuggeeResponse]
+    ]
+  ): DebuggeesResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("breakpoints")(breakpoints)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("register")(register)
+    __obj.asInstanceOf[DebuggeesResource]
+  }
+}
+

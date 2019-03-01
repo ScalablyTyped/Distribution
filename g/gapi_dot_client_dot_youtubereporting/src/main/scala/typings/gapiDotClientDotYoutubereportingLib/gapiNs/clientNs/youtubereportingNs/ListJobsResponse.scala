@@ -18,3 +18,13 @@ trait ListJobsResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListJobsResponse {
+  @scala.inline
+  def apply(jobs: js.Array[Job] = null, nextPageToken: java.lang.String = null): ListJobsResponse = {
+    val __obj = js.Dynamic.literal()
+    if (jobs != null) __obj.updateDynamic("jobs")(jobs)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListJobsResponse]
+  }
+}
+

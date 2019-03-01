@@ -24,3 +24,18 @@ trait Money extends js.Object {
   var units: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Money {
+  @scala.inline
+  def apply(
+    currencyCode: java.lang.String = null,
+    nanos: scala.Int | scala.Double = null,
+    units: java.lang.String = null
+  ): Money = {
+    val __obj = js.Dynamic.literal()
+    if (currencyCode != null) __obj.updateDynamic("currencyCode")(currencyCode)
+    if (nanos != null) __obj.updateDynamic("nanos")(nanos.asInstanceOf[js.Any])
+    if (units != null) __obj.updateDynamic("units")(units)
+    __obj.asInstanceOf[Money]
+  }
+}
+

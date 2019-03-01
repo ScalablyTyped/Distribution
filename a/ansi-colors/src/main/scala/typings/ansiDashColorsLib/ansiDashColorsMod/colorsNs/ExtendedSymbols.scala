@@ -10,3 +10,13 @@ trait ExtendedSymbols extends js.Object {
   var questionFull: java.lang.String
 }
 
+object ExtendedSymbols {
+  @scala.inline
+  def apply(ballotCross: java.lang.String, questionFull: java.lang.String): ExtendedSymbols = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ballotCross")(ballotCross)
+    __obj.updateDynamic("questionFull")(questionFull)
+    __obj.asInstanceOf[ExtendedSymbols]
+  }
+}
+

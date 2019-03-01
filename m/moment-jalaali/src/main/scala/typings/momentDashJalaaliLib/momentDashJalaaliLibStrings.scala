@@ -7,10 +7,12 @@ import scala.scalajs.js.annotation._
 
 object momentDashJalaaliLibStrings {
   @js.native
-  sealed trait jMonth extends js.Object
+  sealed trait jMonth
+    extends momentDashJalaaliLib.momentDashJalaaliMod.momentMod.JUnitOfTime
   
   @js.native
-  sealed trait jYear extends js.Object
+  sealed trait jYear
+    extends momentDashJalaaliLib.momentDashJalaaliMod.momentMod.JUnitOfTime
   
   @js.native
   sealed trait persian extends js.Object

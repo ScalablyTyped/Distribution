@@ -12,3 +12,20 @@ trait WriteFileAtomicOptions extends js.Object {
   var mode: js.UndefOr[scala.Double] = js.undefined
 }
 
+object WriteFileAtomicOptions {
+  @scala.inline
+  def apply(
+    chown: adoneLib.Anon_GidUid = null,
+    encoding: java.lang.String = null,
+    fsync: js.UndefOr[scala.Boolean] = js.undefined,
+    mode: scala.Int | scala.Double = null
+  ): WriteFileAtomicOptions = {
+    val __obj = js.Dynamic.literal()
+    if (chown != null) __obj.updateDynamic("chown")(chown)
+    if (encoding != null) __obj.updateDynamic("encoding")(encoding)
+    if (!js.isUndefined(fsync)) __obj.updateDynamic("fsync")(fsync)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WriteFileAtomicOptions]
+  }
+}
+

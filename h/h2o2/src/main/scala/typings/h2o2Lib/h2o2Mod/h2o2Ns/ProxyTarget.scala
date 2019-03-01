@@ -12,3 +12,16 @@ trait ProxyTarget extends js.Object {
   var uri: java.lang.String
 }
 
+object ProxyTarget {
+  @scala.inline
+  def apply(
+    uri: java.lang.String,
+    headers: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null
+  ): ProxyTarget = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("uri")(uri)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    __obj.asInstanceOf[ProxyTarget]
+  }
+}
+

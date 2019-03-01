@@ -7,19 +7,24 @@ import scala.scalajs.js.annotation._
 
 object xmlDashCoreLibStrings {
   @js.native
-  sealed trait base64 extends js.Object
+  sealed trait base64
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
   
   @js.native
-  sealed trait base64url extends js.Object
+  sealed trait base64url
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
   
   @js.native
-  sealed trait binary extends js.Object
+  sealed trait binary
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
   
   @js.native
-  sealed trait hex extends js.Object
+  sealed trait hex
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
   
   @js.native
-  sealed trait utf8 extends js.Object
+  sealed trait utf8
+    extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs._XmlBufferEncoding
   
   @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]

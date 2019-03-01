@@ -156,3 +156,94 @@ trait Model extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Model {
+  @scala.inline
+  def apply(
+    animationSpeed: scala.Int | scala.Double = null,
+    backgroundColor: java.lang.String = null,
+    borderColor: java.lang.String = null,
+    doubleClick: js.Function1[/* e */ DoubleClickEventArgs, scala.Unit] = null,
+    drawBarPointers: js.Function1[/* e */ DrawBarPointersEventArgs, scala.Unit] = null,
+    drawCustomLabel: js.Function1[/* e */ DrawCustomLabelEventArgs, scala.Unit] = null,
+    drawIndicators: js.Function1[/* e */ DrawIndicatorsEventArgs, scala.Unit] = null,
+    drawLabels: js.Function1[/* e */ DrawLabelsEventArgs, scala.Unit] = null,
+    drawMarkerPointers: js.Function1[/* e */ DrawMarkerPointersEventArgs, scala.Unit] = null,
+    drawRange: js.Function1[/* e */ DrawRangeEventArgs, scala.Unit] = null,
+    drawTicks: js.Function1[/* e */ DrawTicksEventArgs, scala.Unit] = null,
+    enableAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableGroupSeparator: js.UndefOr[scala.Boolean] = js.undefined,
+    enableMarkerPointerAnimation: js.UndefOr[scala.Boolean] = js.undefined,
+    enableResize: js.UndefOr[scala.Boolean] = js.undefined,
+    exportSettings: ExportSettings = null,
+    frame: Frame = null,
+    height: scala.Int | scala.Double = null,
+    init: js.Function1[/* e */ InitEventArgs, scala.Unit] = null,
+    isResponsive: js.UndefOr[scala.Boolean] = js.undefined,
+    labelColor: java.lang.String = null,
+    load: js.Function1[/* e */ LoadEventArgs, scala.Unit] = null,
+    locale: java.lang.String = null,
+    maximum: scala.Int | scala.Double = null,
+    minimum: scala.Int | scala.Double = null,
+    mouseClick: js.Function1[/* e */ MouseClickEventArgs, scala.Unit] = null,
+    mouseClickMove: js.Function1[/* e */ MouseClickMoveEventArgs, scala.Unit] = null,
+    mouseClickUp: js.Function1[/* e */ MouseClickUpEventArgs, scala.Unit] = null,
+    orientation: java.lang.String = null,
+    outerCustomLabelPosition: OuterCustomLabelPosition | java.lang.String = null,
+    pointerGradient1: js.Any = null,
+    pointerGradient2: js.Any = null,
+    readOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    renderComplete: js.Function1[/* e */ RenderCompleteEventArgs, scala.Unit] = null,
+    rightClick: js.Function1[/* e */ RightClickEventArgs, scala.Unit] = null,
+    scales: js.Array[Scale] = null,
+    theme: Themes | java.lang.String = null,
+    tickColor: java.lang.String = null,
+    tooltip: Tooltip = null,
+    value: scala.Int | scala.Double = null,
+    width: scala.Int | scala.Double = null
+  ): Model = {
+    val __obj = js.Dynamic.literal()
+    if (animationSpeed != null) __obj.updateDynamic("animationSpeed")(animationSpeed.asInstanceOf[js.Any])
+    if (backgroundColor != null) __obj.updateDynamic("backgroundColor")(backgroundColor)
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (doubleClick != null) __obj.updateDynamic("doubleClick")(doubleClick)
+    if (drawBarPointers != null) __obj.updateDynamic("drawBarPointers")(drawBarPointers)
+    if (drawCustomLabel != null) __obj.updateDynamic("drawCustomLabel")(drawCustomLabel)
+    if (drawIndicators != null) __obj.updateDynamic("drawIndicators")(drawIndicators)
+    if (drawLabels != null) __obj.updateDynamic("drawLabels")(drawLabels)
+    if (drawMarkerPointers != null) __obj.updateDynamic("drawMarkerPointers")(drawMarkerPointers)
+    if (drawRange != null) __obj.updateDynamic("drawRange")(drawRange)
+    if (drawTicks != null) __obj.updateDynamic("drawTicks")(drawTicks)
+    if (!js.isUndefined(enableAnimation)) __obj.updateDynamic("enableAnimation")(enableAnimation)
+    if (!js.isUndefined(enableGroupSeparator)) __obj.updateDynamic("enableGroupSeparator")(enableGroupSeparator)
+    if (!js.isUndefined(enableMarkerPointerAnimation)) __obj.updateDynamic("enableMarkerPointerAnimation")(enableMarkerPointerAnimation)
+    if (!js.isUndefined(enableResize)) __obj.updateDynamic("enableResize")(enableResize)
+    if (exportSettings != null) __obj.updateDynamic("exportSettings")(exportSettings)
+    if (frame != null) __obj.updateDynamic("frame")(frame)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (init != null) __obj.updateDynamic("init")(init)
+    if (!js.isUndefined(isResponsive)) __obj.updateDynamic("isResponsive")(isResponsive)
+    if (labelColor != null) __obj.updateDynamic("labelColor")(labelColor)
+    if (load != null) __obj.updateDynamic("load")(load)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maximum != null) __obj.updateDynamic("maximum")(maximum.asInstanceOf[js.Any])
+    if (minimum != null) __obj.updateDynamic("minimum")(minimum.asInstanceOf[js.Any])
+    if (mouseClick != null) __obj.updateDynamic("mouseClick")(mouseClick)
+    if (mouseClickMove != null) __obj.updateDynamic("mouseClickMove")(mouseClickMove)
+    if (mouseClickUp != null) __obj.updateDynamic("mouseClickUp")(mouseClickUp)
+    if (orientation != null) __obj.updateDynamic("orientation")(orientation)
+    if (outerCustomLabelPosition != null) __obj.updateDynamic("outerCustomLabelPosition")(outerCustomLabelPosition.asInstanceOf[js.Any])
+    if (pointerGradient1 != null) __obj.updateDynamic("pointerGradient1")(pointerGradient1)
+    if (pointerGradient2 != null) __obj.updateDynamic("pointerGradient2")(pointerGradient2)
+    if (!js.isUndefined(readOnly)) __obj.updateDynamic("readOnly")(readOnly)
+    if (renderComplete != null) __obj.updateDynamic("renderComplete")(renderComplete)
+    if (rightClick != null) __obj.updateDynamic("rightClick")(rightClick)
+    if (scales != null) __obj.updateDynamic("scales")(scales)
+    if (theme != null) __obj.updateDynamic("theme")(theme.asInstanceOf[js.Any])
+    if (tickColor != null) __obj.updateDynamic("tickColor")(tickColor)
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Model]
+  }
+}
+

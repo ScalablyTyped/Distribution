@@ -11,3 +11,13 @@ trait ISettingsLink extends js.Object {
   var linkUrl: java.lang.String
 }
 
+object ISettingsLink {
+  @scala.inline
+  def apply(displayName: java.lang.String, linkUrl: java.lang.String): ISettingsLink = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("linkUrl")(linkUrl)
+    __obj.asInstanceOf[ISettingsLink]
+  }
+}
+

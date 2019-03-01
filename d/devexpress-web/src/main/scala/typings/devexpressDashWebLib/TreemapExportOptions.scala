@@ -21,3 +21,13 @@ trait TreemapExportOptions extends js.Object {
   var SizeMode: java.lang.String
 }
 
+object TreemapExportOptions {
+  @scala.inline
+  def apply(AutomaticPageLayout: scala.Boolean, SizeMode: java.lang.String): TreemapExportOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AutomaticPageLayout")(AutomaticPageLayout)
+    __obj.updateDynamic("SizeMode")(SizeMode)
+    __obj.asInstanceOf[TreemapExportOptions]
+  }
+}
+

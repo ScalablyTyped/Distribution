@@ -24,3 +24,20 @@ trait Get extends js.Object {
   var TableName: TableName
 }
 
+object Get {
+  @scala.inline
+  def apply(
+    Key: Key,
+    TableName: TableName,
+    ExpressionAttributeNames: ExpressionAttributeNameMap = null,
+    ProjectionExpression: ProjectionExpression = null
+  ): Get = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Key")(Key)
+    __obj.updateDynamic("TableName")(TableName)
+    if (ExpressionAttributeNames != null) __obj.updateDynamic("ExpressionAttributeNames")(ExpressionAttributeNames)
+    if (ProjectionExpression != null) __obj.updateDynamic("ProjectionExpression")(ProjectionExpression)
+    __obj.asInstanceOf[Get]
+  }
+}
+

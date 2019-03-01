@@ -65,3 +65,26 @@ trait Execution extends js.Object {
   var testExecutionMatrixId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Execution {
+  @scala.inline
+  def apply(
+    completionTime: Timestamp = null,
+    creationTime: Timestamp = null,
+    executionId: java.lang.String = null,
+    outcome: Outcome = null,
+    specification: Specification = null,
+    state: java.lang.String = null,
+    testExecutionMatrixId: java.lang.String = null
+  ): Execution = {
+    val __obj = js.Dynamic.literal()
+    if (completionTime != null) __obj.updateDynamic("completionTime")(completionTime)
+    if (creationTime != null) __obj.updateDynamic("creationTime")(creationTime)
+    if (executionId != null) __obj.updateDynamic("executionId")(executionId)
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    if (specification != null) __obj.updateDynamic("specification")(specification)
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (testExecutionMatrixId != null) __obj.updateDynamic("testExecutionMatrixId")(testExecutionMatrixId)
+    __obj.asInstanceOf[Execution]
+  }
+}
+

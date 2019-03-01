@@ -25,3 +25,14 @@ trait SnapshotOptions extends js.Object {
   ] = js.undefined
 }
 
+object SnapshotOptions {
+  @scala.inline
+  def apply(
+    serverTimestamps: atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesLibStrings.estimate | atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesLibStrings.previous | atFirebaseFirestoreDashTypesLib.atFirebaseFirestoreDashTypesLibStrings.none = null
+  ): SnapshotOptions = {
+    val __obj = js.Dynamic.literal()
+    if (serverTimestamps != null) __obj.updateDynamic("serverTimestamps")(serverTimestamps.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SnapshotOptions]
+  }
+}
+

@@ -27,3 +27,18 @@ trait AuthenticationInfo extends js.Object {
   var thirdPartyPrincipal: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
 }
 
+object AuthenticationInfo {
+  @scala.inline
+  def apply(
+    authoritySelector: java.lang.String = null,
+    principalEmail: java.lang.String = null,
+    thirdPartyPrincipal: stdLib.Record[java.lang.String, _] = null
+  ): AuthenticationInfo = {
+    val __obj = js.Dynamic.literal()
+    if (authoritySelector != null) __obj.updateDynamic("authoritySelector")(authoritySelector)
+    if (principalEmail != null) __obj.updateDynamic("principalEmail")(principalEmail)
+    if (thirdPartyPrincipal != null) __obj.updateDynamic("thirdPartyPrincipal")(thirdPartyPrincipal)
+    __obj.asInstanceOf[AuthenticationInfo]
+  }
+}
+

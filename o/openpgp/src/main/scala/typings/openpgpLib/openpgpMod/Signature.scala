@@ -11,3 +11,14 @@ trait Signature extends js.Object {
   var verified: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Signature {
+  @scala.inline
+  def apply(keyid: Keyid, valid: scala.Boolean, verified: js.UndefOr[scala.Boolean] = js.undefined): Signature = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("keyid")(keyid)
+    __obj.updateDynamic("valid")(valid)
+    if (!js.isUndefined(verified)) __obj.updateDynamic("verified")(verified)
+    __obj.asInstanceOf[Signature]
+  }
+}
+

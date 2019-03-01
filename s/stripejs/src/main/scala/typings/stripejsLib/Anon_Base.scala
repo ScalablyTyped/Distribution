@@ -12,3 +12,20 @@ trait Anon_Base extends js.Object {
    /** @default StripeElement--focus */ var invalid: java.lang.String
 }
 
+object Anon_Base {
+  @scala.inline
+  def apply(
+    focus: java.lang.String,
+    invalid: java.lang.String,
+    base: java.lang.String = null,
+    complete: java.lang.String = null
+  ): Anon_Base = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("focus")(focus)
+    __obj.updateDynamic("invalid")(invalid)
+    if (base != null) __obj.updateDynamic("base")(base)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    __obj.asInstanceOf[Anon_Base]
+  }
+}
+

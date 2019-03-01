@@ -46,3 +46,40 @@ trait Anon_AccessViewStatus extends js.Object {
   var webReaderLink: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_AccessViewStatus {
+  @scala.inline
+  def apply(
+    accessViewStatus: java.lang.String = null,
+    country: java.lang.String = null,
+    downloadAccess: gapiDotClientDotBooksLib.gapiNs.clientNs.booksNs.DownloadAccessRestriction = null,
+    driveImportedContentLink: java.lang.String = null,
+    embeddable: js.UndefOr[scala.Boolean] = js.undefined,
+    epub: Anon_AcsTokenLink = null,
+    explicitOfflineLicenseManagement: js.UndefOr[scala.Boolean] = js.undefined,
+    pdf: Anon_AcsTokenLink = null,
+    publicDomain: js.UndefOr[scala.Boolean] = js.undefined,
+    quoteSharingAllowed: js.UndefOr[scala.Boolean] = js.undefined,
+    textToSpeechPermission: java.lang.String = null,
+    viewOrderUrl: java.lang.String = null,
+    viewability: java.lang.String = null,
+    webReaderLink: java.lang.String = null
+  ): Anon_AccessViewStatus = {
+    val __obj = js.Dynamic.literal()
+    if (accessViewStatus != null) __obj.updateDynamic("accessViewStatus")(accessViewStatus)
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (downloadAccess != null) __obj.updateDynamic("downloadAccess")(downloadAccess)
+    if (driveImportedContentLink != null) __obj.updateDynamic("driveImportedContentLink")(driveImportedContentLink)
+    if (!js.isUndefined(embeddable)) __obj.updateDynamic("embeddable")(embeddable)
+    if (epub != null) __obj.updateDynamic("epub")(epub)
+    if (!js.isUndefined(explicitOfflineLicenseManagement)) __obj.updateDynamic("explicitOfflineLicenseManagement")(explicitOfflineLicenseManagement)
+    if (pdf != null) __obj.updateDynamic("pdf")(pdf)
+    if (!js.isUndefined(publicDomain)) __obj.updateDynamic("publicDomain")(publicDomain)
+    if (!js.isUndefined(quoteSharingAllowed)) __obj.updateDynamic("quoteSharingAllowed")(quoteSharingAllowed)
+    if (textToSpeechPermission != null) __obj.updateDynamic("textToSpeechPermission")(textToSpeechPermission)
+    if (viewOrderUrl != null) __obj.updateDynamic("viewOrderUrl")(viewOrderUrl)
+    if (viewability != null) __obj.updateDynamic("viewability")(viewability)
+    if (webReaderLink != null) __obj.updateDynamic("webReaderLink")(webReaderLink)
+    __obj.asInstanceOf[Anon_AccessViewStatus]
+  }
+}
+

@@ -126,10 +126,12 @@ object S3ControlNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type AccountId = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with awsDashSdkLib.libConfigUnderscoreUseUnderscoreDualstackMod.UseDualstackConfigOptions with ClientApiVersions
   type Setting = scala.Boolean
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-08-20` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -29,3 +29,26 @@ trait NodeAddEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object NodeAddEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    data: js.Any = null,
+    model: Model = null,
+    nodes: js.Any = null,
+    parentDetails: js.Any = null,
+    parentElement: js.Any = null,
+    `type`: java.lang.String = null
+  ): NodeAddEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (parentDetails != null) __obj.updateDynamic("parentDetails")(parentDetails)
+    if (parentElement != null) __obj.updateDynamic("parentElement")(parentElement)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[NodeAddEventArgs]
+  }
+}
+

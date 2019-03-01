@@ -38,3 +38,26 @@ trait MaxAggregation extends Aggregation {
   def toJSON(): js.Any
 }
 
+object MaxAggregation {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    field: js.Function1[java.lang.String, MaxAggregation],
+    lang: js.Function1[java.lang.String, MaxAggregation],
+    params: js.Function1[js.Object, MaxAggregation],
+    script: js.Function1[java.lang.String, MaxAggregation],
+    scriptValuesSorted: js.Function1[scala.Boolean, MaxAggregation],
+    toJSON: js.Function0[js.Any]
+  ): MaxAggregation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("lang")(lang)
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("script")(script)
+    __obj.updateDynamic("scriptValuesSorted")(scriptValuesSorted)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[MaxAggregation]
+  }
+}
+

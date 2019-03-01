@@ -9,3 +9,12 @@ trait IPrintTaskOptionChangedEventArgs extends js.Object {
   var optionId: js.Any
 }
 
+object IPrintTaskOptionChangedEventArgs {
+  @scala.inline
+  def apply(optionId: js.Any): IPrintTaskOptionChangedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("optionId")(optionId)
+    __obj.asInstanceOf[IPrintTaskOptionChangedEventArgs]
+  }
+}
+

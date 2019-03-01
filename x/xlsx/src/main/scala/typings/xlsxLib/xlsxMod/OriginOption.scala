@@ -10,3 +10,12 @@ trait OriginOption extends js.Object {
   var origin: js.UndefOr[scala.Double | java.lang.String | CellAddress] = js.undefined
 }
 
+object OriginOption {
+  @scala.inline
+  def apply(origin: scala.Double | java.lang.String | CellAddress = null): OriginOption = {
+    val __obj = js.Dynamic.literal()
+    if (origin != null) __obj.updateDynamic("origin")(origin.asInstanceOf[js.Any])
+    __obj.asInstanceOf[OriginOption]
+  }
+}
+

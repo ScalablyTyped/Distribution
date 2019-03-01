@@ -73,3 +73,28 @@ trait PointEvents extends js.Object {
   var update: js.UndefOr[js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit]] = js.undefined
 }
 
+object PointEvents {
+  @scala.inline
+  def apply(
+    click: js.Function1[/* event */ stdLib.Event, scala.Boolean] = null,
+    legendItemClick: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
+    mouseOut: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    mouseOver: js.Function1[/* event */ stdLib.Event, scala.Unit] = null,
+    remove: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
+    select: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
+    unselect: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null,
+    update: js.Function1[/* event */ stdLib.Event, scala.Boolean | scala.Unit] = null
+  ): PointEvents = {
+    val __obj = js.Dynamic.literal()
+    if (click != null) __obj.updateDynamic("click")(click)
+    if (legendItemClick != null) __obj.updateDynamic("legendItemClick")(legendItemClick)
+    if (mouseOut != null) __obj.updateDynamic("mouseOut")(mouseOut)
+    if (mouseOver != null) __obj.updateDynamic("mouseOver")(mouseOver)
+    if (remove != null) __obj.updateDynamic("remove")(remove)
+    if (select != null) __obj.updateDynamic("select")(select)
+    if (unselect != null) __obj.updateDynamic("unselect")(unselect)
+    if (update != null) __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[PointEvents]
+  }
+}
+

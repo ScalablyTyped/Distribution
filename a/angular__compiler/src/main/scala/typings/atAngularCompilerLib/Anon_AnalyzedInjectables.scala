@@ -10,3 +10,16 @@ trait Anon_AnalyzedInjectables extends js.Object {
   var analyzedModules: atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedModules
 }
 
+object Anon_AnalyzedInjectables {
+  @scala.inline
+  def apply(
+    analyzedInjectables: js.Array[atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedFileWithInjectables],
+    analyzedModules: atAngularCompilerLib.srcAotCompilerMod.NgAnalyzedModules
+  ): Anon_AnalyzedInjectables = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("analyzedInjectables")(analyzedInjectables)
+    __obj.updateDynamic("analyzedModules")(analyzedModules)
+    __obj.asInstanceOf[Anon_AnalyzedInjectables]
+  }
+}
+

@@ -52,3 +52,34 @@ trait ASPxClientFileManagerErrorConstsStatic extends js.Object {
   var WrongExtension: scala.Double
 }
 
+object ASPxClientFileManagerErrorConstsStatic {
+  @scala.inline
+  def apply(
+    AccessDenied: scala.Double,
+    AlreadyExists: scala.Double,
+    CanceledOperation: scala.Double,
+    EmptyName: scala.Double,
+    FileNotFound: scala.Double,
+    FolderNotFound: scala.Double,
+    InvalidSymbols: scala.Double,
+    Unspecified: scala.Double,
+    UnspecifiedIO: scala.Double,
+    UsedByAnotherProcess: scala.Double,
+    WrongExtension: scala.Double
+  ): ASPxClientFileManagerErrorConstsStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AccessDenied")(AccessDenied)
+    __obj.updateDynamic("AlreadyExists")(AlreadyExists)
+    __obj.updateDynamic("CanceledOperation")(CanceledOperation)
+    __obj.updateDynamic("EmptyName")(EmptyName)
+    __obj.updateDynamic("FileNotFound")(FileNotFound)
+    __obj.updateDynamic("FolderNotFound")(FolderNotFound)
+    __obj.updateDynamic("InvalidSymbols")(InvalidSymbols)
+    __obj.updateDynamic("Unspecified")(Unspecified)
+    __obj.updateDynamic("UnspecifiedIO")(UnspecifiedIO)
+    __obj.updateDynamic("UsedByAnotherProcess")(UsedByAnotherProcess)
+    __obj.updateDynamic("WrongExtension")(WrongExtension)
+    __obj.asInstanceOf[ASPxClientFileManagerErrorConstsStatic]
+  }
+}
+

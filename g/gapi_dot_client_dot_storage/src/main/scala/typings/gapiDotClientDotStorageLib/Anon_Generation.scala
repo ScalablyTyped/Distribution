@@ -14,3 +14,18 @@ trait Anon_Generation extends js.Object {
   var objectPreconditions: js.UndefOr[Anon_IfGenerationMatch] = js.undefined
 }
 
+object Anon_Generation {
+  @scala.inline
+  def apply(
+    generation: java.lang.String = null,
+    name: java.lang.String = null,
+    objectPreconditions: Anon_IfGenerationMatch = null
+  ): Anon_Generation = {
+    val __obj = js.Dynamic.literal()
+    if (generation != null) __obj.updateDynamic("generation")(generation)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (objectPreconditions != null) __obj.updateDynamic("objectPreconditions")(objectPreconditions)
+    __obj.asInstanceOf[Anon_Generation]
+  }
+}
+

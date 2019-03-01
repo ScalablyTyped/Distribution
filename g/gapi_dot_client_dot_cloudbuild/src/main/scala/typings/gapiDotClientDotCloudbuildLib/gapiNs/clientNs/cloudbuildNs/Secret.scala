@@ -19,3 +19,16 @@ trait Secret extends js.Object {
   var secretEnv: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
 }
 
+object Secret {
+  @scala.inline
+  def apply(
+    kmsKeyName: java.lang.String = null,
+    secretEnv: stdLib.Record[java.lang.String, java.lang.String] = null
+  ): Secret = {
+    val __obj = js.Dynamic.literal()
+    if (kmsKeyName != null) __obj.updateDynamic("kmsKeyName")(kmsKeyName)
+    if (secretEnv != null) __obj.updateDynamic("secretEnv")(secretEnv)
+    __obj.asInstanceOf[Secret]
+  }
+}
+

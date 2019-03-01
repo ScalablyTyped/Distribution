@@ -20,3 +20,19 @@ trait AnimationQueryMetadata extends AnimationMetadata {
   var selector: java.lang.String
 }
 
+object AnimationQueryMetadata {
+  @scala.inline
+  def apply(
+    animation: AnimationMetadata | js.Array[AnimationMetadata],
+    selector: java.lang.String,
+    `type`: AnimationMetadataType,
+    options: AnimationQueryOptions = null
+  ): AnimationQueryMetadata = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    __obj.updateDynamic("selector")(selector)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[AnimationQueryMetadata]
+  }
+}
+

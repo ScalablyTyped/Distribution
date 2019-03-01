@@ -9,3 +9,17 @@ trait Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext extends js.
   def renderer(context: atOracleOraclejetLib.ojgaugeMod.ojLedGaugeNs.TooltipContext): Anon_Insert | Anon_PreventDefault
 }
 
+object Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext {
+  @scala.inline
+  def apply(
+    renderer: js.Function1[
+      atOracleOraclejetLib.ojgaugeMod.ojLedGaugeNs.TooltipContext, 
+      Anon_Insert | Anon_PreventDefault
+    ]
+  ): Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("renderer")(renderer)
+    __obj.asInstanceOf[Anon_ContextRendererAnonInsertAnonPreventDefaultTooltipContext]
+  }
+}
+

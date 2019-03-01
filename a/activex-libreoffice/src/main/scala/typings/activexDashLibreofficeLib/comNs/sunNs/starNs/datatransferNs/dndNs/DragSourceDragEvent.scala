@@ -26,3 +26,22 @@ trait DragSourceDragEvent extends DragSourceEvent {
   var UserAction: scala.Double
 }
 
+object DragSourceDragEvent {
+  @scala.inline
+  def apply(
+    DragSource: XDragSource,
+    DragSourceContext: XDragSourceContext,
+    DropAction: scala.Double,
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    UserAction: scala.Double
+  ): DragSourceDragEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DragSource")(DragSource)
+    __obj.updateDynamic("DragSourceContext")(DragSourceContext)
+    __obj.updateDynamic("DropAction")(DropAction)
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("UserAction")(UserAction)
+    __obj.asInstanceOf[DragSourceDragEvent]
+  }
+}
+

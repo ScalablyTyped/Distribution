@@ -24,3 +24,18 @@ trait SourceSplitResponse extends js.Object {
   var shards: js.UndefOr[js.Array[SourceSplitShard]] = js.undefined
 }
 
+object SourceSplitResponse {
+  @scala.inline
+  def apply(
+    bundles: js.Array[DerivedSource] = null,
+    outcome: java.lang.String = null,
+    shards: js.Array[SourceSplitShard] = null
+  ): SourceSplitResponse = {
+    val __obj = js.Dynamic.literal()
+    if (bundles != null) __obj.updateDynamic("bundles")(bundles)
+    if (outcome != null) __obj.updateDynamic("outcome")(outcome)
+    if (shards != null) __obj.updateDynamic("shards")(shards)
+    __obj.asInstanceOf[SourceSplitResponse]
+  }
+}
+

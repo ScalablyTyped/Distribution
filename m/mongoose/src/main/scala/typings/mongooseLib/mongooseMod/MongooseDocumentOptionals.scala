@@ -15,3 +15,12 @@ trait MongooseDocumentOptionals extends js.Object {
   var id: js.UndefOr[js.Any] = js.undefined
 }
 
+object MongooseDocumentOptionals {
+  @scala.inline
+  def apply(id: js.Any = null): MongooseDocumentOptionals = {
+    val __obj = js.Dynamic.literal()
+    if (id != null) __obj.updateDynamic("id")(id)
+    __obj.asInstanceOf[MongooseDocumentOptionals]
+  }
+}
+

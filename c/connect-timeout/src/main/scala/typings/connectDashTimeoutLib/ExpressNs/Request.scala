@@ -16,3 +16,13 @@ trait Request extends js.Object {
   def clearTimeout(): scala.Unit
 }
 
+object Request {
+  @scala.inline
+  def apply(clearTimeout: js.Function0[scala.Unit], timedout: scala.Boolean): Request = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clearTimeout")(clearTimeout)
+    __obj.updateDynamic("timedout")(timedout)
+    __obj.asInstanceOf[Request]
+  }
+}
+

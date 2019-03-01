@@ -55,3 +55,28 @@ trait IListObjectDef extends js.Object {
   var qStateName: java.lang.String
 }
 
+object IListObjectDef {
+  @scala.inline
+  def apply(
+    qAutoSortByState: INxAutoSortByStateDef,
+    qDef: INxInlineDimensionDef,
+    qInitialDataFetch: js.Array[INxPage],
+    qLibraryId: java.lang.String,
+    qStateName: java.lang.String,
+    qExpressions: js.Array[INxListObjectExpressionDef] = null,
+    qFrequencyMode: FrequencyModeType = null,
+    qShowAlternatives: js.UndefOr[scala.Boolean] = js.undefined
+  ): IListObjectDef = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qAutoSortByState")(qAutoSortByState)
+    __obj.updateDynamic("qDef")(qDef)
+    __obj.updateDynamic("qInitialDataFetch")(qInitialDataFetch)
+    __obj.updateDynamic("qLibraryId")(qLibraryId)
+    __obj.updateDynamic("qStateName")(qStateName)
+    if (qExpressions != null) __obj.updateDynamic("qExpressions")(qExpressions)
+    if (qFrequencyMode != null) __obj.updateDynamic("qFrequencyMode")(qFrequencyMode)
+    if (!js.isUndefined(qShowAlternatives)) __obj.updateDynamic("qShowAlternatives")(qShowAlternatives)
+    __obj.asInstanceOf[IListObjectDef]
+  }
+}
+

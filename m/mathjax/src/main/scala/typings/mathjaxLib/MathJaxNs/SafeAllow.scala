@@ -38,3 +38,24 @@ trait SafeAllow extends js.Object {
   var styles: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SafeAllow {
+  @scala.inline
+  def apply(
+    URLs: java.lang.String = null,
+    classes: java.lang.String = null,
+    cssIDs: java.lang.String = null,
+    fontsize: java.lang.String = null,
+    require: java.lang.String = null,
+    styles: java.lang.String = null
+  ): SafeAllow = {
+    val __obj = js.Dynamic.literal()
+    if (URLs != null) __obj.updateDynamic("URLs")(URLs)
+    if (classes != null) __obj.updateDynamic("classes")(classes)
+    if (cssIDs != null) __obj.updateDynamic("cssIDs")(cssIDs)
+    if (fontsize != null) __obj.updateDynamic("fontsize")(fontsize)
+    if (require != null) __obj.updateDynamic("require")(require)
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[SafeAllow]
+  }
+}
+

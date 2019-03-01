@@ -10,3 +10,12 @@ trait ClientCredentialTokenConfig extends js.Object {
   var scope: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
 }
 
+object ClientCredentialTokenConfig {
+  @scala.inline
+  def apply(scope: java.lang.String | js.Array[java.lang.String] = null): ClientCredentialTokenConfig = {
+    val __obj = js.Dynamic.literal()
+    if (scope != null) __obj.updateDynamic("scope")(scope.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ClientCredentialTokenConfig]
+  }
+}
+

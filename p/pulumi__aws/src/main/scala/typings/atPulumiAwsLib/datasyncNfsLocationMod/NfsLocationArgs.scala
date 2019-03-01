@@ -28,3 +28,22 @@ trait NfsLocationArgs extends js.Object {
   ] = js.undefined
 }
 
+object NfsLocationArgs {
+  @scala.inline
+  def apply(
+    onPremConfig: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AgentArnsArray],
+    serverHostname: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    subdirectory: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    tags: atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
+    ] = null
+  ): NfsLocationArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("onPremConfig")(onPremConfig.asInstanceOf[js.Any])
+    __obj.updateDynamic("serverHostname")(serverHostname.asInstanceOf[js.Any])
+    __obj.updateDynamic("subdirectory")(subdirectory.asInstanceOf[js.Any])
+    if (tags != null) __obj.updateDynamic("tags")(tags.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NfsLocationArgs]
+  }
+}
+

@@ -11,3 +11,33 @@ trait XGraphicExportFilter
      with activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XExporter
      with activexDashLibreofficeLib.comNs.sunNs.starNs.documentNs.XMimeTypeInfo
 
+object XGraphicExportFilter {
+  @scala.inline
+  def apply(
+    SupportedMimeTypeNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    cancel: js.Function0[scala.Unit],
+    filter: js.Function1[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs.PropertyValue], 
+      scala.Boolean
+    ],
+    getSupportedMimeTypeNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setSourceDocument: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent, scala.Unit],
+    supportsMimeType: js.Function1[java.lang.String, scala.Boolean]
+  ): XGraphicExportFilter = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SupportedMimeTypeNames")(SupportedMimeTypeNames)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("getSupportedMimeTypeNames")(getSupportedMimeTypeNames)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setSourceDocument")(setSourceDocument)
+    __obj.updateDynamic("supportsMimeType")(supportsMimeType)
+    __obj.asInstanceOf[XGraphicExportFilter]
+  }
+}
+

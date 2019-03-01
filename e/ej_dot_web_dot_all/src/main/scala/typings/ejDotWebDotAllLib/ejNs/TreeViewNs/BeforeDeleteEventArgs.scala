@@ -35,3 +35,30 @@ trait BeforeDeleteEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeDeleteEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    event: js.Any = null,
+    model: Model = null,
+    nodeDetails: js.Any = null,
+    parentDetails: js.Any = null,
+    parentElement: js.Any = null,
+    removedNodes: js.Array[_] = null,
+    target: js.Any = null,
+    `type`: java.lang.String = null
+  ): BeforeDeleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (nodeDetails != null) __obj.updateDynamic("nodeDetails")(nodeDetails)
+    if (parentDetails != null) __obj.updateDynamic("parentDetails")(parentDetails)
+    if (parentElement != null) __obj.updateDynamic("parentElement")(parentElement)
+    if (removedNodes != null) __obj.updateDynamic("removedNodes")(removedNodes)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeDeleteEventArgs]
+  }
+}
+

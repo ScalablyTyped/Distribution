@@ -21,3 +21,22 @@ trait SerialPortOutput extends js.Object {
   var start: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SerialPortOutput {
+  @scala.inline
+  def apply(
+    contents: java.lang.String = null,
+    kind: java.lang.String = null,
+    next: java.lang.String = null,
+    selfLink: java.lang.String = null,
+    start: java.lang.String = null
+  ): SerialPortOutput = {
+    val __obj = js.Dynamic.literal()
+    if (contents != null) __obj.updateDynamic("contents")(contents)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (next != null) __obj.updateDynamic("next")(next)
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[SerialPortOutput]
+  }
+}
+

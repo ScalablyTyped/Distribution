@@ -7,34 +7,44 @@ import scala.scalajs.js.annotation._
 
 object angularDashUiDashNotificationLibStrings {
   @js.native
-  sealed trait bottom extends js.Object
+  sealed trait bottom
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.YPosition
   
   @js.native
-  sealed trait center extends js.Object
+  sealed trait center
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.XPosition
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.MessageType
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.MessageType
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.XPosition
   
   @js.native
-  sealed trait primary extends js.Object
+  sealed trait primary
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.MessageType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.XPosition
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.MessageType
   
   @js.native
-  sealed trait top extends js.Object
+  sealed trait top
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.YPosition
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends angularDashUiDashNotificationLib.angularMod.uiNotificationNs.MessageType
   
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]

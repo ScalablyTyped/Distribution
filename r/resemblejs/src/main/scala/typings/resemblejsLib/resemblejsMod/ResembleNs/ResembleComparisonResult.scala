@@ -26,3 +26,24 @@ trait ResembleComparisonResult extends js.Object {
   def getImageDataUrl(): java.lang.String
 }
 
+object ResembleComparisonResult {
+  @scala.inline
+  def apply(
+    analysisTime: scala.Double,
+    diffBounds: resemblejsLib.Anon_Bottom,
+    dimensionDifference: resemblejsLib.Anon_Height,
+    getImageDataUrl: js.Function0[java.lang.String],
+    isSameDimensions: scala.Boolean,
+    misMatchPercentage: scala.Double
+  ): ResembleComparisonResult = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("analysisTime")(analysisTime)
+    __obj.updateDynamic("diffBounds")(diffBounds)
+    __obj.updateDynamic("dimensionDifference")(dimensionDifference)
+    __obj.updateDynamic("getImageDataUrl")(getImageDataUrl)
+    __obj.updateDynamic("isSameDimensions")(isSameDimensions)
+    __obj.updateDynamic("misMatchPercentage")(misMatchPercentage)
+    __obj.asInstanceOf[ResembleComparisonResult]
+  }
+}
+

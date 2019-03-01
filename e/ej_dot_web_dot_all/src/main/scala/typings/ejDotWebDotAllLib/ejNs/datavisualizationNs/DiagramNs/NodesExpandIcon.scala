@@ -44,3 +44,30 @@ trait NodesExpandIcon extends js.Object {
   var verticalAlignment: js.UndefOr[VerticalAlignment | java.lang.String] = js.undefined
 }
 
+object NodesExpandIcon {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String = null,
+    borderWidth: scala.Int | scala.Double = null,
+    fillColor: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    horizontalAlignment: HorizontalAlignment | java.lang.String = null,
+    margin: js.Any = null,
+    offset: js.Any = null,
+    shape: IconShapes | java.lang.String = null,
+    verticalAlignment: VerticalAlignment | java.lang.String = null
+  ): NodesExpandIcon = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (borderWidth != null) __obj.updateDynamic("borderWidth")(borderWidth.asInstanceOf[js.Any])
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (horizontalAlignment != null) __obj.updateDynamic("horizontalAlignment")(horizontalAlignment.asInstanceOf[js.Any])
+    if (margin != null) __obj.updateDynamic("margin")(margin)
+    if (offset != null) __obj.updateDynamic("offset")(offset)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (verticalAlignment != null) __obj.updateDynamic("verticalAlignment")(verticalAlignment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NodesExpandIcon]
+  }
+}
+

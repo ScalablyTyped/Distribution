@@ -51,3 +51,39 @@ trait XProofreadingIterator
   ): scala.Unit
 }
 
+object XProofreadingIterator {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    checkSentenceAtPosition: js.Function7[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XFlatParagraph, 
+      java.lang.String, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.Locale, 
+      scala.Double, 
+      scala.Double, 
+      scala.Double, 
+      ProofreadingResult
+    ],
+    isProofreading: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    resetIgnoreRules: js.Function0[scala.Unit],
+    startProofreading: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.textNs.XFlatParagraphIteratorProvider, 
+      scala.Unit
+    ]
+  ): XProofreadingIterator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("checkSentenceAtPosition")(checkSentenceAtPosition)
+    __obj.updateDynamic("isProofreading")(isProofreading)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("resetIgnoreRules")(resetIgnoreRules)
+    __obj.updateDynamic("startProofreading")(startProofreading)
+    __obj.asInstanceOf[XProofreadingIterator]
+  }
+}
+

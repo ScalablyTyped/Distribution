@@ -11,3 +11,14 @@ trait TextInputFocusEventData extends js.Object {
   var text: java.lang.String
 }
 
+object TextInputFocusEventData {
+  @scala.inline
+  def apply(eventCount: scala.Double, target: scala.Double, text: java.lang.String): TextInputFocusEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("eventCount")(eventCount)
+    __obj.updateDynamic("target")(target)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[TextInputFocusEventData]
+  }
+}
+

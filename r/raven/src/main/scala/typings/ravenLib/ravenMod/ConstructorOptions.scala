@@ -24,3 +24,44 @@ trait ConstructorOptions extends js.Object {
   var transport: js.UndefOr[ravenLib.ravenMod.transportsNs.Transport] = js.undefined
 }
 
+object ConstructorOptions {
+  @scala.inline
+  def apply(
+    autoBreadcrumbs: scala.Boolean | org.scalablytyped.runtime.StringDictionary[scala.Boolean] = null,
+    captureUnhandledRejections: js.UndefOr[scala.Boolean] = js.undefined,
+    dataCallback: DataCallback = null,
+    environment: java.lang.String = null,
+    extra: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    logger: java.lang.String = null,
+    maxBreadcrumbs: scala.Int | scala.Double = null,
+    maxReqQueueCount: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    parseUser: scala.Boolean | js.Array[java.lang.String] | parseUserCallback = null,
+    release: java.lang.String = null,
+    sampleRate: scala.Int | scala.Double = null,
+    sendTimeout: scala.Int | scala.Double = null,
+    shouldSendCallback: ShouldSendCallback = null,
+    tags: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    transport: ravenLib.ravenMod.transportsNs.Transport = null
+  ): ConstructorOptions = {
+    val __obj = js.Dynamic.literal()
+    if (autoBreadcrumbs != null) __obj.updateDynamic("autoBreadcrumbs")(autoBreadcrumbs.asInstanceOf[js.Any])
+    if (!js.isUndefined(captureUnhandledRejections)) __obj.updateDynamic("captureUnhandledRejections")(captureUnhandledRejections)
+    if (dataCallback != null) __obj.updateDynamic("dataCallback")(dataCallback)
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    if (extra != null) __obj.updateDynamic("extra")(extra)
+    if (logger != null) __obj.updateDynamic("logger")(logger)
+    if (maxBreadcrumbs != null) __obj.updateDynamic("maxBreadcrumbs")(maxBreadcrumbs.asInstanceOf[js.Any])
+    if (maxReqQueueCount != null) __obj.updateDynamic("maxReqQueueCount")(maxReqQueueCount.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (parseUser != null) __obj.updateDynamic("parseUser")(parseUser.asInstanceOf[js.Any])
+    if (release != null) __obj.updateDynamic("release")(release)
+    if (sampleRate != null) __obj.updateDynamic("sampleRate")(sampleRate.asInstanceOf[js.Any])
+    if (sendTimeout != null) __obj.updateDynamic("sendTimeout")(sendTimeout.asInstanceOf[js.Any])
+    if (shouldSendCallback != null) __obj.updateDynamic("shouldSendCallback")(shouldSendCallback)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (transport != null) __obj.updateDynamic("transport")(transport)
+    __obj.asInstanceOf[ConstructorOptions]
+  }
+}
+

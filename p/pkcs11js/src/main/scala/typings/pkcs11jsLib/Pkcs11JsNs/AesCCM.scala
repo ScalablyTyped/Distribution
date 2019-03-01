@@ -12,3 +12,21 @@ trait AesCCM extends IParams {
   var nonce: js.UndefOr[nodeLib.Buffer] = js.undefined
 }
 
+object AesCCM {
+  @scala.inline
+  def apply(
+    dataLen: scala.Double,
+    macLen: scala.Double,
+    `type`: scala.Double,
+    aad: nodeLib.Buffer = null,
+    nonce: nodeLib.Buffer = null
+  ): AesCCM = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("dataLen")(dataLen)
+    __obj.updateDynamic("macLen")(macLen)
+    if (aad != null) __obj.updateDynamic("aad")(aad)
+    if (nonce != null) __obj.updateDynamic("nonce")(nonce)
+    __obj.asInstanceOf[AesCCM]
+  }
+}
+

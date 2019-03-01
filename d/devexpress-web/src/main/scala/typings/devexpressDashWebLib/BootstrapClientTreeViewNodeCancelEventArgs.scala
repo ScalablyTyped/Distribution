@@ -16,3 +16,14 @@ trait BootstrapClientTreeViewNodeCancelEventArgs extends ASPxClientProcessingMod
   var node: BootstrapClientTreeViewNode
 }
 
+object BootstrapClientTreeViewNodeCancelEventArgs {
+  @scala.inline
+  def apply(cancel: scala.Boolean, node: BootstrapClientTreeViewNode, processOnServer: scala.Boolean): BootstrapClientTreeViewNodeCancelEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("node")(node)
+    __obj.updateDynamic("processOnServer")(processOnServer)
+    __obj.asInstanceOf[BootstrapClientTreeViewNodeCancelEventArgs]
+  }
+}
+

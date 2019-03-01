@@ -12,3 +12,17 @@ trait MonitoredResourceDescriptorsResource extends js.Object {
   ): gapiDotClientLib.gapiNs.clientNs.Request[ListMonitoredResourceDescriptorsResponse]
 }
 
+object MonitoredResourceDescriptorsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotLoggingLib.Anon_AccesstokenAltBearertokenCallbackFieldsKeyOauthtokenPageSize, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ListMonitoredResourceDescriptorsResponse]
+    ]
+  ): MonitoredResourceDescriptorsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[MonitoredResourceDescriptorsResource]
+  }
+}
+

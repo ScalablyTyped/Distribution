@@ -3319,44 +3319,76 @@ object SESNs extends js.Object {
     var TopicArn: js.UndefOr[AmazonResourceName] = js.undefined
   }
   
+  trait _BehaviorOnMXFailure extends js.Object
+  
+  trait _BounceType extends js.Object
+  
+  trait _BulkEmailStatus extends js.Object
+  
+  trait _ConfigurationSetAttribute extends js.Object
+  
+  trait _CustomMailFromStatus extends js.Object
+  
+  trait _DimensionValueSource extends js.Object
+  
+  trait _DsnAction extends js.Object
+  
+  trait _EventType extends js.Object
+  
+  trait _IdentityType extends js.Object
+  
+  trait _InvocationType extends js.Object
+  
+  trait _NotificationType extends js.Object
+  
+  trait _ReceiptFilterPolicy extends js.Object
+  
+  trait _SNSActionEncoding extends js.Object
+  
+  trait _TlsPolicy extends js.Object
+  
+  trait _VerificationStatus extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Address = java.lang.String
   type AddressList = js.Array[Address]
   type AmazonResourceName = java.lang.String
   type ArrivalDate = stdLib.Date
-  type BehaviorOnMXFailure = awsDashSdkLib.awsDashSdkLibStrings.UseDefaultValue | awsDashSdkLib.awsDashSdkLibStrings.RejectMessage | java.lang.String
+  type BehaviorOnMXFailure = _BehaviorOnMXFailure | java.lang.String
   type BounceMessage = java.lang.String
   type BounceSmtpReplyCode = java.lang.String
   type BounceStatusCode = java.lang.String
-  type BounceType = awsDashSdkLib.awsDashSdkLibStrings.DoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.MessageTooLarge | awsDashSdkLib.awsDashSdkLibStrings.ExceededQuota | awsDashSdkLib.awsDashSdkLibStrings.ContentRejected | awsDashSdkLib.awsDashSdkLibStrings.Undefined | awsDashSdkLib.awsDashSdkLibStrings.TemporaryFailure | java.lang.String
+  type BounceType = _BounceType | java.lang.String
   type BouncedRecipientInfoList = js.Array[BouncedRecipientInfo]
   type BulkEmailDestinationList = js.Array[BulkEmailDestination]
   type BulkEmailDestinationStatusList = js.Array[BulkEmailDestinationStatus]
-  type BulkEmailStatus = awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.MessageRejected | awsDashSdkLib.awsDashSdkLibStrings.MailFromDomainNotVerified | awsDashSdkLib.awsDashSdkLibStrings.ConfigurationSetDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.TemplateDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.AccountSuspended | awsDashSdkLib.awsDashSdkLibStrings.AccountThrottled | awsDashSdkLib.awsDashSdkLibStrings.AccountDailyQuotaExceeded | awsDashSdkLib.awsDashSdkLibStrings.InvalidSendingPoolName | awsDashSdkLib.awsDashSdkLibStrings.AccountSendingPaused | awsDashSdkLib.awsDashSdkLibStrings.ConfigurationSetSendingPaused | awsDashSdkLib.awsDashSdkLibStrings.InvalidParameterValue | awsDashSdkLib.awsDashSdkLibStrings.TransientFailure | awsDashSdkLib.awsDashSdkLibStrings.Failed | java.lang.String
+  type BulkEmailStatus = _BulkEmailStatus | java.lang.String
   type Charset = java.lang.String
   type Cidr = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type CloudWatchDimensionConfigurations = js.Array[CloudWatchDimensionConfiguration]
-  type ConfigurationSetAttribute = awsDashSdkLib.awsDashSdkLibStrings.eventDestinations | awsDashSdkLib.awsDashSdkLibStrings.trackingOptions | awsDashSdkLib.awsDashSdkLibStrings.reputationOptions | java.lang.String
+  type ConfigurationSetAttribute = _ConfigurationSetAttribute | java.lang.String
   type ConfigurationSetAttributeList = js.Array[ConfigurationSetAttribute]
   type ConfigurationSetName = java.lang.String
   type ConfigurationSets = js.Array[ConfigurationSet]
   type Counter = scala.Double
-  type CustomMailFromStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.TemporaryFailure | java.lang.String
+  type CustomMailFromStatus = _CustomMailFromStatus | java.lang.String
   type CustomRedirectDomain = java.lang.String
   type CustomVerificationEmailTemplates = js.Array[CustomVerificationEmailTemplate]
   type DefaultDimensionValue = java.lang.String
   type DiagnosticCode = java.lang.String
   type DimensionName = java.lang.String
-  type DimensionValueSource = awsDashSdkLib.awsDashSdkLibStrings.messageTag | awsDashSdkLib.awsDashSdkLibStrings.emailHeader | awsDashSdkLib.awsDashSdkLibStrings.linkTag | java.lang.String
+  type DimensionValueSource = _DimensionValueSource | java.lang.String
   type Domain = java.lang.String
-  type DsnAction = awsDashSdkLib.awsDashSdkLibStrings.failed | awsDashSdkLib.awsDashSdkLibStrings.delayed | awsDashSdkLib.awsDashSdkLibStrings.delivered | awsDashSdkLib.awsDashSdkLibStrings.relayed | awsDashSdkLib.awsDashSdkLibStrings.expanded | java.lang.String
+  type DsnAction = _DsnAction | java.lang.String
   type DsnStatus = java.lang.String
   type Enabled = scala.Boolean
   type Error = java.lang.String
   type EventDestinationName = java.lang.String
   type EventDestinations = js.Array[EventDestination]
-  type EventType = awsDashSdkLib.awsDashSdkLibStrings.send | awsDashSdkLib.awsDashSdkLibStrings.reject | awsDashSdkLib.awsDashSdkLibStrings.bounce | awsDashSdkLib.awsDashSdkLibStrings.complaint | awsDashSdkLib.awsDashSdkLibStrings.delivery | awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.click | awsDashSdkLib.awsDashSdkLibStrings.renderingFailure | java.lang.String
+  type EventType = _EventType | java.lang.String
   type EventTypes = js.Array[EventType]
   type Explanation = java.lang.String
   type ExtensionFieldList = js.Array[ExtensionField]
@@ -3369,8 +3401,8 @@ object SESNs extends js.Object {
   type HtmlPart = java.lang.String
   type Identity = java.lang.String
   type IdentityList = js.Array[Identity]
-  type IdentityType = awsDashSdkLib.awsDashSdkLibStrings.EmailAddress | awsDashSdkLib.awsDashSdkLibStrings.Domain | java.lang.String
-  type InvocationType = awsDashSdkLib.awsDashSdkLibStrings.Event | awsDashSdkLib.awsDashSdkLibStrings.RequestResponse | java.lang.String
+  type IdentityType = _IdentityType | java.lang.String
+  type InvocationType = _InvocationType | java.lang.String
   type LastAttemptDate = stdLib.Date
   type LastFreshStart = stdLib.Date
   type MailFromDomainName = java.lang.String
@@ -3385,7 +3417,7 @@ object SESNs extends js.Object {
   type MessageTagValue = java.lang.String
   type NextToken = java.lang.String
   type NotificationTopic = java.lang.String
-  type NotificationType = awsDashSdkLib.awsDashSdkLibStrings.Bounce | awsDashSdkLib.awsDashSdkLibStrings.Complaint | awsDashSdkLib.awsDashSdkLibStrings.Delivery | java.lang.String
+  type NotificationType = _NotificationType | java.lang.String
   type Policy = java.lang.String
   type PolicyName = java.lang.String
   type PolicyNameList = js.Array[PolicyName]
@@ -3393,7 +3425,7 @@ object SESNs extends js.Object {
   type ReceiptActionsList = js.Array[ReceiptAction]
   type ReceiptFilterList = js.Array[ReceiptFilter]
   type ReceiptFilterName = java.lang.String
-  type ReceiptFilterPolicy = awsDashSdkLib.awsDashSdkLibStrings.Block | awsDashSdkLib.awsDashSdkLibStrings.Allow | java.lang.String
+  type ReceiptFilterPolicy = _ReceiptFilterPolicy | java.lang.String
   type ReceiptRuleName = java.lang.String
   type ReceiptRuleNamesList = js.Array[ReceiptRuleName]
   type ReceiptRuleSetName = java.lang.String
@@ -3406,7 +3438,7 @@ object SESNs extends js.Object {
   type ReportingMta = java.lang.String
   type S3BucketName = java.lang.String
   type S3KeyPrefix = java.lang.String
-  type SNSActionEncoding = awsDashSdkLib.awsDashSdkLibStrings.`UTF-8` | awsDashSdkLib.awsDashSdkLibStrings.Base64 | java.lang.String
+  type SNSActionEncoding = _SNSActionEncoding | java.lang.String
   type SendDataPointList = js.Array[SendDataPoint]
   type SentLast24Hours = scala.Double
   type StopScope = awsDashSdkLib.awsDashSdkLibStrings.RuleSet | java.lang.String
@@ -3419,10 +3451,10 @@ object SESNs extends js.Object {
   type TemplateName = java.lang.String
   type TextPart = java.lang.String
   type Timestamp = stdLib.Date
-  type TlsPolicy = awsDashSdkLib.awsDashSdkLibStrings.Require | awsDashSdkLib.awsDashSdkLibStrings.Optional | java.lang.String
-  type VerificationStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Success | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.TemporaryFailure | awsDashSdkLib.awsDashSdkLibStrings.NotStarted | java.lang.String
+  type TlsPolicy = _TlsPolicy | java.lang.String
+  type VerificationStatus = _VerificationStatus | java.lang.String
   type VerificationToken = java.lang.String
   type VerificationTokenList = js.Array[VerificationToken]
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2010-12-01` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

@@ -34,3 +34,38 @@ trait Config extends js.Object {
   var xoauth2: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Config {
+  @scala.inline
+  def apply(
+    password: java.lang.String,
+    user: java.lang.String,
+    authTimeout: scala.Int | scala.Double = null,
+    autotls: java.lang.String = null,
+    connTimeout: scala.Int | scala.Double = null,
+    debug: js.Function = null,
+    host: java.lang.String = null,
+    keepalive: js.Any = null,
+    port: scala.Int | scala.Double = null,
+    tls: js.UndefOr[scala.Boolean] = js.undefined,
+    tlsOptions: js.Object = null,
+    xoauth: java.lang.String = null,
+    xoauth2: java.lang.String = null
+  ): Config = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("password")(password)
+    __obj.updateDynamic("user")(user)
+    if (authTimeout != null) __obj.updateDynamic("authTimeout")(authTimeout.asInstanceOf[js.Any])
+    if (autotls != null) __obj.updateDynamic("autotls")(autotls)
+    if (connTimeout != null) __obj.updateDynamic("connTimeout")(connTimeout.asInstanceOf[js.Any])
+    if (debug != null) __obj.updateDynamic("debug")(debug)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (keepalive != null) __obj.updateDynamic("keepalive")(keepalive)
+    if (port != null) __obj.updateDynamic("port")(port.asInstanceOf[js.Any])
+    if (!js.isUndefined(tls)) __obj.updateDynamic("tls")(tls)
+    if (tlsOptions != null) __obj.updateDynamic("tlsOptions")(tlsOptions)
+    if (xoauth != null) __obj.updateDynamic("xoauth")(xoauth)
+    if (xoauth2 != null) __obj.updateDynamic("xoauth2")(xoauth2)
+    __obj.asInstanceOf[Config]
+  }
+}
+

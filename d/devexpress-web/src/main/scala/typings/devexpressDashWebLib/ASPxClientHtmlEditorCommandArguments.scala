@@ -16,3 +16,12 @@ trait ASPxClientHtmlEditorCommandArguments extends js.Object {
   var selectedElement: js.Object
 }
 
+object ASPxClientHtmlEditorCommandArguments {
+  @scala.inline
+  def apply(selectedElement: js.Object): ASPxClientHtmlEditorCommandArguments = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("selectedElement")(selectedElement)
+    __obj.asInstanceOf[ASPxClientHtmlEditorCommandArguments]
+  }
+}
+

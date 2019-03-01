@@ -17,3 +17,14 @@ trait CellSelectedEventArgs extends js.Object {
   var source: js.UndefOr[js.Any] = js.undefined
 }
 
+object CellSelectedEventArgs {
+  @scala.inline
+  def apply(cell: js.Any = null, cellValue: java.lang.String = null, source: js.Any = null): CellSelectedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
+    if (source != null) __obj.updateDynamic("source")(source)
+    __obj.asInstanceOf[CellSelectedEventArgs]
+  }
+}
+

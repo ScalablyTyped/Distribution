@@ -10,3 +10,12 @@ trait FlattenOptions extends js.Object {
   var background: js.UndefOr[Color] = js.undefined
 }
 
+object FlattenOptions {
+  @scala.inline
+  def apply(background: Color = null): FlattenOptions = {
+    val __obj = js.Dynamic.literal()
+    if (background != null) __obj.updateDynamic("background")(background.asInstanceOf[js.Any])
+    __obj.asInstanceOf[FlattenOptions]
+  }
+}
+

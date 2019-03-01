@@ -37,3 +37,24 @@ trait XFetchProviderForContentAccess
   def fetchContents(nRowStartPosition: scala.Double, nRowCount: scala.Double, bDirection: scala.Boolean): FetchResult
 }
 
+object XFetchProviderForContentAccess {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    fetchContentIdentifierStrings: js.Function3[scala.Double, scala.Double, scala.Boolean, FetchResult],
+    fetchContentIdentifiers: js.Function3[scala.Double, scala.Double, scala.Boolean, FetchResult],
+    fetchContents: js.Function3[scala.Double, scala.Double, scala.Boolean, FetchResult],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XFetchProviderForContentAccess = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("fetchContentIdentifierStrings")(fetchContentIdentifierStrings)
+    __obj.updateDynamic("fetchContentIdentifiers")(fetchContentIdentifiers)
+    __obj.updateDynamic("fetchContents")(fetchContents)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XFetchProviderForContentAccess]
+  }
+}
+

@@ -85,3 +85,30 @@ trait KatexOptions extends js.Object {
   var throwOnError: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object KatexOptions {
+  @scala.inline
+  def apply(
+    allowedProtocols: js.Array[java.lang.String] = null,
+    colorIsTextColor: js.UndefOr[scala.Boolean] = js.undefined,
+    displayMode: js.UndefOr[scala.Boolean] = js.undefined,
+    errorColor: java.lang.String = null,
+    macros: js.Any = null,
+    maxExpand: scala.Int | scala.Double = null,
+    maxSize: scala.Int | scala.Double = null,
+    strict: scala.Boolean | java.lang.String | js.Function = null,
+    throwOnError: js.UndefOr[scala.Boolean] = js.undefined
+  ): KatexOptions = {
+    val __obj = js.Dynamic.literal()
+    if (allowedProtocols != null) __obj.updateDynamic("allowedProtocols")(allowedProtocols)
+    if (!js.isUndefined(colorIsTextColor)) __obj.updateDynamic("colorIsTextColor")(colorIsTextColor)
+    if (!js.isUndefined(displayMode)) __obj.updateDynamic("displayMode")(displayMode)
+    if (errorColor != null) __obj.updateDynamic("errorColor")(errorColor)
+    if (macros != null) __obj.updateDynamic("macros")(macros)
+    if (maxExpand != null) __obj.updateDynamic("maxExpand")(maxExpand.asInstanceOf[js.Any])
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (strict != null) __obj.updateDynamic("strict")(strict.asInstanceOf[js.Any])
+    if (!js.isUndefined(throwOnError)) __obj.updateDynamic("throwOnError")(throwOnError)
+    __obj.asInstanceOf[KatexOptions]
+  }
+}
+

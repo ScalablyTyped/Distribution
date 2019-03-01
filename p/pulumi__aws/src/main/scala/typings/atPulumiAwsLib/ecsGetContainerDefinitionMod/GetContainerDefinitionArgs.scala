@@ -16,3 +16,13 @@ trait GetContainerDefinitionArgs extends js.Object {
   val taskDefinition: java.lang.String
 }
 
+object GetContainerDefinitionArgs {
+  @scala.inline
+  def apply(containerName: java.lang.String, taskDefinition: java.lang.String): GetContainerDefinitionArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("containerName")(containerName)
+    __obj.updateDynamic("taskDefinition")(taskDefinition)
+    __obj.asInstanceOf[GetContainerDefinitionArgs]
+  }
+}
+

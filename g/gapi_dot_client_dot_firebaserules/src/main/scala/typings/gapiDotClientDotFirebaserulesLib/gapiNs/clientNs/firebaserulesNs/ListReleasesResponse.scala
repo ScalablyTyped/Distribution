@@ -15,3 +15,13 @@ trait ListReleasesResponse extends js.Object {
   var releases: js.UndefOr[js.Array[Release]] = js.undefined
 }
 
+object ListReleasesResponse {
+  @scala.inline
+  def apply(nextPageToken: java.lang.String = null, releases: js.Array[Release] = null): ListReleasesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    if (releases != null) __obj.updateDynamic("releases")(releases)
+    __obj.asInstanceOf[ListReleasesResponse]
+  }
+}
+

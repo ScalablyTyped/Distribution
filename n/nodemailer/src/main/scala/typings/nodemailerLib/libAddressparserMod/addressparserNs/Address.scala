@@ -10,3 +10,13 @@ trait Address extends js.Object {
   var name: java.lang.String
 }
 
+object Address {
+  @scala.inline
+  def apply(address: java.lang.String, name: java.lang.String): Address = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("address")(address)
+    __obj.updateDynamic("name")(name)
+    __obj.asInstanceOf[Address]
+  }
+}
+

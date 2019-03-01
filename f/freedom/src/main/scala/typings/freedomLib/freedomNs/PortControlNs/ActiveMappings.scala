@@ -9,3 +9,12 @@ import scala.scalajs.js.annotation._
 trait ActiveMappings
   extends /* extPort */ org.scalablytyped.runtime.StringDictionary[Mapping]
 
+object ActiveMappings {
+  @scala.inline
+  def apply(StringDictionary: /* extPort */ org.scalablytyped.runtime.StringDictionary[Mapping] = null): ActiveMappings = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ActiveMappings]
+  }
+}
+

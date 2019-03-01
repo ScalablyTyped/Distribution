@@ -29,3 +29,14 @@ trait ICanvasFontStyle extends js.Object {
   var stroke: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ICanvasFontStyle {
+  @scala.inline
+  def apply(fill: java.lang.String = null, font: java.lang.String = null, stroke: java.lang.String = null): ICanvasFontStyle = {
+    val __obj = js.Dynamic.literal()
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (font != null) __obj.updateDynamic("font")(font)
+    if (stroke != null) __obj.updateDynamic("stroke")(stroke)
+    __obj.asInstanceOf[ICanvasFontStyle]
+  }
+}
+

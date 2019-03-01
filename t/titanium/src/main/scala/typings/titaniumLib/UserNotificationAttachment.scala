@@ -26,3 +26,14 @@ trait UserNotificationAttachment extends js.Object {
   var url: java.lang.String
 }
 
+object UserNotificationAttachment {
+  @scala.inline
+  def apply(identifier: java.lang.String, url: java.lang.String, options: js.Any = null): UserNotificationAttachment = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("identifier")(identifier)
+    __obj.updateDynamic("url")(url)
+    if (options != null) __obj.updateDynamic("options")(options)
+    __obj.asInstanceOf[UserNotificationAttachment]
+  }
+}
+

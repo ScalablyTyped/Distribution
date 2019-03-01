@@ -10,100 +10,132 @@ object osrmLibStrings {
   sealed trait LineString extends js.Object
   
   @js.native
-  sealed trait arrive extends js.Object
+  sealed trait arrive
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait continue extends js.Object
+  sealed trait continue
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait depart extends js.Object
+  sealed trait depart
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `end of road` extends js.Object
+  sealed trait `end of road`
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `exit rotary` extends js.Object
+  sealed trait `exit rotary`
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `exit roundabout` extends js.Object
+  sealed trait `exit roundabout`
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `false` extends js.Object
+  sealed trait `false`
+    extends osrmLib.osrmMod.OSRMNs.OverviewTypes
   
   @js.native
-  sealed trait fork extends js.Object
+  sealed trait fork
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait full extends js.Object
+  sealed trait full
+    extends osrmLib.osrmMod.OSRMNs.OverviewTypes
   
   @js.native
-  sealed trait geojson extends js.Object
+  sealed trait geojson
+    extends osrmLib.osrmMod.OSRMNs.GeometriesTypes
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends osrmLib.osrmMod.OSRMNs.Indication
   
   @js.native
-  sealed trait merge extends js.Object
+  sealed trait merge
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `new name` extends js.Object
+  sealed trait `new name`
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait notification extends js.Object
+  sealed trait notification
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `off ramp` extends js.Object
+  sealed trait `off ramp`
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `on ramp` extends js.Object
+  sealed trait `on ramp`
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait polyline extends js.Object
+  sealed trait polyline
+    extends osrmLib.osrmMod.OSRMNs.GeometriesTypes
   
   @js.native
-  sealed trait polyline6 extends js.Object
+  sealed trait polyline6
+    extends osrmLib.osrmMod.OSRMNs.GeometriesTypes
   
   @js.native
-  sealed trait ramp extends js.Object
+  sealed trait ramp
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends osrmLib.osrmMod.OSRMNs.Indication
   
   @js.native
-  sealed trait rotary extends js.Object
+  sealed trait rotary
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait roundabout extends js.Object
+  sealed trait roundabout
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `roundabout turn` extends js.Object
+  sealed trait `roundabout turn`
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `sharp left` extends js.Object
+  sealed trait `sharp left`
+    extends osrmLib.osrmMod.OSRMNs.Indication
   
   @js.native
-  sealed trait `sharp right` extends js.Object
+  sealed trait `sharp right`
+    extends osrmLib.osrmMod.OSRMNs.Indication
   
   @js.native
-  sealed trait simplified extends js.Object
+  sealed trait simplified
+    extends osrmLib.osrmMod.OSRMNs.OverviewTypes
   
   @js.native
-  sealed trait `slight left` extends js.Object
+  sealed trait `slight left`
+    extends osrmLib.osrmMod.OSRMNs.Indication
   
   @js.native
-  sealed trait `slight rigth` extends js.Object
+  sealed trait `slight rigth`
+    extends osrmLib.osrmMod.OSRMNs.Indication
   
   @js.native
-  sealed trait straight extends js.Object
+  sealed trait straight
+    extends osrmLib.osrmMod.OSRMNs.Indication
   
   @js.native
-  sealed trait turn extends js.Object
+  sealed trait turn
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait `use lane` extends js.Object
+  sealed trait `use lane`
+    extends osrmLib.osrmMod.OSRMNs.StepManeuverTypes
   
   @js.native
-  sealed trait uturn extends js.Object
+  sealed trait uturn
+    extends osrmLib.osrmMod.OSRMNs.Indication
   
   @scala.inline
   def LineString: LineString = "LineString".asInstanceOf[LineString]

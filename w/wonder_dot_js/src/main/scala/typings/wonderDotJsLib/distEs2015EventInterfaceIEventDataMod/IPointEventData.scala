@@ -23,3 +23,46 @@ trait IPointEventData extends IEventData {
   var wheelDelta: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IPointEventData {
+  @scala.inline
+  def apply(
+    clientX: scala.Double,
+    clientY: scala.Double,
+    pageX: scala.Double,
+    pageY: scala.Double,
+    preventDefault: js.Function0[scala.Unit],
+    returnValue: scala.Boolean,
+    target: stdLib.HTMLElement,
+    button: scala.Int | scala.Double = null,
+    currentTarget: stdLib.HTMLElement = null,
+    detail: scala.Int | scala.Double = null,
+    movementX: scala.Int | scala.Double = null,
+    movementY: scala.Int | scala.Double = null,
+    mozMovementX: scala.Int | scala.Double = null,
+    mozMovementY: scala.Int | scala.Double = null,
+    webkitMovementX: scala.Int | scala.Double = null,
+    webkitMovementY: scala.Int | scala.Double = null,
+    wheelDelta: scala.Int | scala.Double = null
+  ): IPointEventData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("clientX")(clientX)
+    __obj.updateDynamic("clientY")(clientY)
+    __obj.updateDynamic("pageX")(pageX)
+    __obj.updateDynamic("pageY")(pageY)
+    __obj.updateDynamic("preventDefault")(preventDefault)
+    __obj.updateDynamic("returnValue")(returnValue)
+    __obj.updateDynamic("target")(target)
+    if (button != null) __obj.updateDynamic("button")(button.asInstanceOf[js.Any])
+    if (currentTarget != null) __obj.updateDynamic("currentTarget")(currentTarget)
+    if (detail != null) __obj.updateDynamic("detail")(detail.asInstanceOf[js.Any])
+    if (movementX != null) __obj.updateDynamic("movementX")(movementX.asInstanceOf[js.Any])
+    if (movementY != null) __obj.updateDynamic("movementY")(movementY.asInstanceOf[js.Any])
+    if (mozMovementX != null) __obj.updateDynamic("mozMovementX")(mozMovementX.asInstanceOf[js.Any])
+    if (mozMovementY != null) __obj.updateDynamic("mozMovementY")(mozMovementY.asInstanceOf[js.Any])
+    if (webkitMovementX != null) __obj.updateDynamic("webkitMovementX")(webkitMovementX.asInstanceOf[js.Any])
+    if (webkitMovementY != null) __obj.updateDynamic("webkitMovementY")(webkitMovementY.asInstanceOf[js.Any])
+    if (wheelDelta != null) __obj.updateDynamic("wheelDelta")(wheelDelta.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IPointEventData]
+  }
+}
+

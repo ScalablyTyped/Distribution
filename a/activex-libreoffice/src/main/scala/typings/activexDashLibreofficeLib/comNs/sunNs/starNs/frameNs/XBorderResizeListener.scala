@@ -16,3 +16,26 @@ trait XBorderResizeListener
   def borderWidthsChanged(Object: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, NewSize: BorderWidths): scala.Unit
 }
 
+object XBorderResizeListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    borderWidthsChanged: js.Function2[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface, 
+      BorderWidths, 
+      scala.Unit
+    ],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XBorderResizeListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("borderWidthsChanged")(borderWidthsChanged)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XBorderResizeListener]
+  }
+}
+

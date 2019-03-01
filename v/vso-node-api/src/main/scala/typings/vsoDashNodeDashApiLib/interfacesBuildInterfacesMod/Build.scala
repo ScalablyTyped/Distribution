@@ -164,3 +164,96 @@ trait Build extends js.Object {
   var validationResults: js.Array[BuildRequestValidationResult]
 }
 
+object Build {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    buildNumber: java.lang.String,
+    buildNumberRevision: scala.Double,
+    controller: BuildController,
+    definition: DefinitionReference,
+    deleted: scala.Boolean,
+    deletedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    deletedDate: stdLib.Date,
+    deletedReason: java.lang.String,
+    demands: js.Array[_],
+    finishTime: stdLib.Date,
+    id: scala.Double,
+    keepForever: scala.Boolean,
+    lastChangedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    lastChangedDate: stdLib.Date,
+    logs: BuildLogReference,
+    orchestrationPlan: TaskOrchestrationPlanReference,
+    parameters: java.lang.String,
+    plans: js.Array[TaskOrchestrationPlanReference],
+    priority: QueuePriority,
+    project: vsoDashNodeDashApiLib.interfacesCoreInterfacesMod.TeamProjectReference,
+    properties: js.Any,
+    quality: java.lang.String,
+    queue: AgentPoolQueue,
+    queueOptions: QueueOptions,
+    queuePosition: scala.Double,
+    queueTime: stdLib.Date,
+    reason: BuildReason,
+    repository: BuildRepository,
+    requestedBy: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    requestedFor: vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef,
+    result: BuildResult,
+    retainedByRelease: scala.Boolean,
+    sourceBranch: java.lang.String,
+    sourceVersion: java.lang.String,
+    startTime: stdLib.Date,
+    status: BuildStatus,
+    tags: js.Array[java.lang.String],
+    triggerInfo: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    uri: java.lang.String,
+    url: java.lang.String,
+    validationResults: js.Array[BuildRequestValidationResult]
+  ): Build = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("buildNumber")(buildNumber)
+    __obj.updateDynamic("buildNumberRevision")(buildNumberRevision)
+    __obj.updateDynamic("controller")(controller)
+    __obj.updateDynamic("definition")(definition)
+    __obj.updateDynamic("deleted")(deleted)
+    __obj.updateDynamic("deletedBy")(deletedBy)
+    __obj.updateDynamic("deletedDate")(deletedDate)
+    __obj.updateDynamic("deletedReason")(deletedReason)
+    __obj.updateDynamic("demands")(demands)
+    __obj.updateDynamic("finishTime")(finishTime)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("keepForever")(keepForever)
+    __obj.updateDynamic("lastChangedBy")(lastChangedBy)
+    __obj.updateDynamic("lastChangedDate")(lastChangedDate)
+    __obj.updateDynamic("logs")(logs)
+    __obj.updateDynamic("orchestrationPlan")(orchestrationPlan)
+    __obj.updateDynamic("parameters")(parameters)
+    __obj.updateDynamic("plans")(plans)
+    __obj.updateDynamic("priority")(priority)
+    __obj.updateDynamic("project")(project)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("quality")(quality)
+    __obj.updateDynamic("queue")(queue)
+    __obj.updateDynamic("queueOptions")(queueOptions)
+    __obj.updateDynamic("queuePosition")(queuePosition)
+    __obj.updateDynamic("queueTime")(queueTime)
+    __obj.updateDynamic("reason")(reason)
+    __obj.updateDynamic("repository")(repository)
+    __obj.updateDynamic("requestedBy")(requestedBy)
+    __obj.updateDynamic("requestedFor")(requestedFor)
+    __obj.updateDynamic("result")(result)
+    __obj.updateDynamic("retainedByRelease")(retainedByRelease)
+    __obj.updateDynamic("sourceBranch")(sourceBranch)
+    __obj.updateDynamic("sourceVersion")(sourceVersion)
+    __obj.updateDynamic("startTime")(startTime)
+    __obj.updateDynamic("status")(status)
+    __obj.updateDynamic("tags")(tags)
+    __obj.updateDynamic("triggerInfo")(triggerInfo)
+    __obj.updateDynamic("uri")(uri)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("validationResults")(validationResults)
+    __obj.asInstanceOf[Build]
+  }
+}
+

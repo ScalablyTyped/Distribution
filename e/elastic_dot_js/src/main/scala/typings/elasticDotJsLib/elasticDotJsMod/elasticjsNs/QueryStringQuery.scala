@@ -169,3 +169,64 @@ trait QueryStringQuery extends Query {
   def useDisMax(trueFalse: java.lang.String): QueryStringQuery
 }
 
+object QueryStringQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    allowLeadingWildcard: js.Function1[scala.Boolean, QueryStringQuery],
+    analyzeWildcard: js.Function1[scala.Boolean, QueryStringQuery],
+    analyzer: js.Function1[java.lang.String, QueryStringQuery],
+    autoGeneratePhraseQueries: js.Function1[scala.Boolean, QueryStringQuery],
+    boost: js.Function1[scala.Double, QueryStringQuery],
+    defaultField: js.Function1[java.lang.String, QueryStringQuery],
+    defaultOperator: js.Function1[java.lang.String, QueryStringQuery],
+    enablePositionIncrements: js.Function1[scala.Boolean, QueryStringQuery],
+    escape: js.Function1[scala.Boolean, QueryStringQuery],
+    fields: js.Function1[js.Array[_], QueryStringQuery],
+    fuzzyMaxExpansions: js.Function1[scala.Double, QueryStringQuery],
+    fuzzyMinSim: js.Function1[scala.Double, QueryStringQuery],
+    fuzzyPrefixLength: js.Function1[scala.Double, QueryStringQuery],
+    fuzzyRewrite: js.Function1[java.lang.String, QueryStringQuery],
+    lenient: js.Function1[scala.Boolean, QueryStringQuery],
+    lowercaseExpandedTerms: js.Function1[scala.Boolean, QueryStringQuery],
+    minimumShouldMatch: js.Function1[scala.Double, QueryStringQuery],
+    phraseSlop: js.Function1[scala.Double, QueryStringQuery],
+    query: js.Function1[java.lang.String, QueryStringQuery],
+    quoteAnalyzer: js.Function1[java.lang.String, QueryStringQuery],
+    quoteFieldSuffix: js.Function1[java.lang.String, QueryStringQuery],
+    rewrite: js.Function1[java.lang.String, QueryStringQuery],
+    tieBreaker: js.Function1[scala.Double, QueryStringQuery],
+    toJSON: js.Function0[js.Any],
+    useDisMax: js.Function1[java.lang.String, QueryStringQuery]
+  ): QueryStringQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("allowLeadingWildcard")(allowLeadingWildcard)
+    __obj.updateDynamic("analyzeWildcard")(analyzeWildcard)
+    __obj.updateDynamic("analyzer")(analyzer)
+    __obj.updateDynamic("autoGeneratePhraseQueries")(autoGeneratePhraseQueries)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("defaultField")(defaultField)
+    __obj.updateDynamic("defaultOperator")(defaultOperator)
+    __obj.updateDynamic("enablePositionIncrements")(enablePositionIncrements)
+    __obj.updateDynamic("escape")(escape)
+    __obj.updateDynamic("fields")(fields)
+    __obj.updateDynamic("fuzzyMaxExpansions")(fuzzyMaxExpansions)
+    __obj.updateDynamic("fuzzyMinSim")(fuzzyMinSim)
+    __obj.updateDynamic("fuzzyPrefixLength")(fuzzyPrefixLength)
+    __obj.updateDynamic("fuzzyRewrite")(fuzzyRewrite)
+    __obj.updateDynamic("lenient")(lenient)
+    __obj.updateDynamic("lowercaseExpandedTerms")(lowercaseExpandedTerms)
+    __obj.updateDynamic("minimumShouldMatch")(minimumShouldMatch)
+    __obj.updateDynamic("phraseSlop")(phraseSlop)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("quoteAnalyzer")(quoteAnalyzer)
+    __obj.updateDynamic("quoteFieldSuffix")(quoteFieldSuffix)
+    __obj.updateDynamic("rewrite")(rewrite)
+    __obj.updateDynamic("tieBreaker")(tieBreaker)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.updateDynamic("useDisMax")(useDisMax)
+    __obj.asInstanceOf[QueryStringQuery]
+  }
+}
+

@@ -49,3 +49,30 @@ trait IInvoiceUpcomingOptions
   var subscription_trial_end: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IInvoiceUpcomingOptions {
+  @scala.inline
+  def apply(
+    coupon: java.lang.String = null,
+    expand: js.Array[java.lang.String] = null,
+    include: js.Array[java.lang.String] = null,
+    subscription: java.lang.String = null,
+    subscription_plan: java.lang.String = null,
+    subscription_prorate: js.UndefOr[scala.Boolean] = js.undefined,
+    subscription_proration_date: scala.Int | scala.Double = null,
+    subscription_quantity: scala.Int | scala.Double = null,
+    subscription_trial_end: scala.Int | scala.Double = null
+  ): IInvoiceUpcomingOptions = {
+    val __obj = js.Dynamic.literal()
+    if (coupon != null) __obj.updateDynamic("coupon")(coupon)
+    if (expand != null) __obj.updateDynamic("expand")(expand)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (subscription != null) __obj.updateDynamic("subscription")(subscription)
+    if (subscription_plan != null) __obj.updateDynamic("subscription_plan")(subscription_plan)
+    if (!js.isUndefined(subscription_prorate)) __obj.updateDynamic("subscription_prorate")(subscription_prorate)
+    if (subscription_proration_date != null) __obj.updateDynamic("subscription_proration_date")(subscription_proration_date.asInstanceOf[js.Any])
+    if (subscription_quantity != null) __obj.updateDynamic("subscription_quantity")(subscription_quantity.asInstanceOf[js.Any])
+    if (subscription_trial_end != null) __obj.updateDynamic("subscription_trial_end")(subscription_trial_end.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IInvoiceUpcomingOptions]
+  }
+}
+

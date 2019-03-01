@@ -55,3 +55,36 @@ trait DataSource extends js.Object {
   var values: js.UndefOr[js.Array[DataSourceValue]] = js.undefined
 }
 
+object DataSource {
+  @scala.inline
+  def apply(
+    catalog: java.lang.String = null,
+    columns: js.Array[DataSourceColumn] = null,
+    cube: java.lang.String = null,
+    data: js.Any = null,
+    enableAdvancedFilter: js.UndefOr[scala.Boolean] = js.undefined,
+    filters: js.Array[DataSourceFilter] = null,
+    pagerOptions: DataSourcePagerOptions = null,
+    providerName: java.lang.String = null,
+    reportName: java.lang.String = null,
+    rows: js.Array[DataSourceRow] = null,
+    sourceInfo: java.lang.String = null,
+    values: js.Array[DataSourceValue] = null
+  ): DataSource = {
+    val __obj = js.Dynamic.literal()
+    if (catalog != null) __obj.updateDynamic("catalog")(catalog)
+    if (columns != null) __obj.updateDynamic("columns")(columns)
+    if (cube != null) __obj.updateDynamic("cube")(cube)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (!js.isUndefined(enableAdvancedFilter)) __obj.updateDynamic("enableAdvancedFilter")(enableAdvancedFilter)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (pagerOptions != null) __obj.updateDynamic("pagerOptions")(pagerOptions)
+    if (providerName != null) __obj.updateDynamic("providerName")(providerName)
+    if (reportName != null) __obj.updateDynamic("reportName")(reportName)
+    if (rows != null) __obj.updateDynamic("rows")(rows)
+    if (sourceInfo != null) __obj.updateDynamic("sourceInfo")(sourceInfo)
+    if (values != null) __obj.updateDynamic("values")(values)
+    __obj.asInstanceOf[DataSource]
+  }
+}
+

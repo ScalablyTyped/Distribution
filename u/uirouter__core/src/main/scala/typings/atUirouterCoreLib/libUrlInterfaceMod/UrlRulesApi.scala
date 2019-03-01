@@ -29,3 +29,40 @@ trait UrlRulesApi extends js.Object {
   ]
 }
 
+object UrlRulesApi {
+  @scala.inline
+  def apply(
+    initial: js.Function1[
+      /* handler */ java.lang.String | UrlRuleHandlerFn | atUirouterCoreLib.libStateMod.TargetState | atUirouterCoreLib.libStateInterfaceMod.TargetStateDef, 
+      scala.Unit
+    ],
+    otherwise: js.Function1[
+      /* handler */ java.lang.String | UrlRuleHandlerFn | atUirouterCoreLib.libStateMod.TargetState | atUirouterCoreLib.libStateInterfaceMod.TargetStateDef, 
+      scala.Unit
+    ],
+    removeRule: js.Function1[/* rule */ js.Any, scala.Unit],
+    rule: js.Function1[/* rule */ UrlRule, js.Function],
+    rules: js.Function0[js.Array[UrlRule]],
+    sort: js.Function1[
+      /* compareFn */ js.UndefOr[js.Function2[/* a */ UrlRule, /* b */ UrlRule, scala.Double]], 
+      scala.Unit
+    ],
+    when: js.Function3[
+      /* matcher */ stdLib.RegExp | atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher | java.lang.String, 
+      /* handler */ java.lang.String | UrlRuleHandlerFn, 
+      /* options */ js.UndefOr[atUirouterCoreLib.Anon_Priority], 
+      UrlRule
+    ]
+  ): UrlRulesApi = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("initial")(initial)
+    __obj.updateDynamic("otherwise")(otherwise)
+    __obj.updateDynamic("removeRule")(removeRule)
+    __obj.updateDynamic("rule")(rule)
+    __obj.updateDynamic("rules")(rules)
+    __obj.updateDynamic("sort")(sort)
+    __obj.updateDynamic("when")(when)
+    __obj.asInstanceOf[UrlRulesApi]
+  }
+}
+

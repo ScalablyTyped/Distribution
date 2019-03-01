@@ -22,3 +22,22 @@ trait Decimal extends js.Object {
   var Sign: scala.Double
 }
 
+object Decimal {
+  @scala.inline
+  def apply(
+    HighValue: scala.Double,
+    LowValue: scala.Double,
+    MiddleValue: scala.Double,
+    Scale: scala.Double,
+    Sign: scala.Double
+  ): Decimal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("HighValue")(HighValue)
+    __obj.updateDynamic("LowValue")(LowValue)
+    __obj.updateDynamic("MiddleValue")(MiddleValue)
+    __obj.updateDynamic("Scale")(Scale)
+    __obj.updateDynamic("Sign")(Sign)
+    __obj.asInstanceOf[Decimal]
+  }
+}
+

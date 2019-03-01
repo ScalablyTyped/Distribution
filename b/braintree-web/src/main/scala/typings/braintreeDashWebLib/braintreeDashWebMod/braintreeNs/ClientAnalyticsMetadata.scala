@@ -21,3 +21,14 @@ trait ClientAnalyticsMetadata extends js.Object {
   var sessionId: java.lang.String
 }
 
+object ClientAnalyticsMetadata {
+  @scala.inline
+  def apply(merchantAppId: java.lang.String, sdkVersion: java.lang.String, sessionId: java.lang.String): ClientAnalyticsMetadata = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("merchantAppId")(merchantAppId)
+    __obj.updateDynamic("sdkVersion")(sdkVersion)
+    __obj.updateDynamic("sessionId")(sessionId)
+    __obj.asInstanceOf[ClientAnalyticsMetadata]
+  }
+}
+

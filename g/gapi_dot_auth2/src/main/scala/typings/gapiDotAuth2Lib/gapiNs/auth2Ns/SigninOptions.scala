@@ -43,3 +43,24 @@ trait SigninOptions extends js.Object {
   ] = js.undefined
 }
 
+object SigninOptions {
+  @scala.inline
+  def apply(
+    app_package_name: java.lang.String = null,
+    fetch_basic_profile: js.UndefOr[scala.Boolean] = js.undefined,
+    prompt: java.lang.String = null,
+    redirect_uri: java.lang.String = null,
+    scope: java.lang.String = null,
+    ux_mode: gapiDotAuth2Lib.gapiDotAuth2LibStrings.popup | gapiDotAuth2Lib.gapiDotAuth2LibStrings.redirect = null
+  ): SigninOptions = {
+    val __obj = js.Dynamic.literal()
+    if (app_package_name != null) __obj.updateDynamic("app_package_name")(app_package_name)
+    if (!js.isUndefined(fetch_basic_profile)) __obj.updateDynamic("fetch_basic_profile")(fetch_basic_profile)
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    if (ux_mode != null) __obj.updateDynamic("ux_mode")(ux_mode.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SigninOptions]
+  }
+}
+

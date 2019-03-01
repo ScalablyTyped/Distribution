@@ -13,3 +13,20 @@ trait RevealDependency extends js.Object {
   var src: java.lang.String
 }
 
+object RevealDependency {
+  @scala.inline
+  def apply(
+    src: java.lang.String,
+    async: js.UndefOr[scala.Boolean] = js.undefined,
+    callback: js.Function0[scala.Unit] = null,
+    condition: js.Function0[scala.Boolean] = null
+  ): RevealDependency = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("src")(src)
+    if (!js.isUndefined(async)) __obj.updateDynamic("async")(async)
+    if (callback != null) __obj.updateDynamic("callback")(callback)
+    if (condition != null) __obj.updateDynamic("condition")(condition)
+    __obj.asInstanceOf[RevealDependency]
+  }
+}
+

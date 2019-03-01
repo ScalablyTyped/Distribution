@@ -14,3 +14,24 @@ trait Anon_CommentsLocParamsRest extends js.Object {
   var typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind | scala.Null
 }
 
+object Anon_CommentsLocParamsRest {
+  @scala.inline
+  def apply(
+    params: js.Array[astDashTypesLib.genKindsMod.FunctionTypeParamKind],
+    returnType: astDashTypesLib.genKindsMod.FlowTypeKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    rest: astDashTypesLib.genKindsMod.FunctionTypeParamKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterDeclarationKind = null
+  ): Anon_CommentsLocParamsRest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("params")(params)
+    __obj.updateDynamic("returnType")(returnType)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (rest != null) __obj.updateDynamic("rest")(rest)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[Anon_CommentsLocParamsRest]
+  }
+}
+

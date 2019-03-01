@@ -14,3 +14,12 @@ trait FeatureSettings extends js.Object {
   var splitHealthChecks: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object FeatureSettings {
+  @scala.inline
+  def apply(splitHealthChecks: js.UndefOr[scala.Boolean] = js.undefined): FeatureSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(splitHealthChecks)) __obj.updateDynamic("splitHealthChecks")(splitHealthChecks)
+    __obj.asInstanceOf[FeatureSettings]
+  }
+}
+

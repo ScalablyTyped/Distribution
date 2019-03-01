@@ -32,3 +32,25 @@ trait IgVideoPlayerCommercialsAdMessage
   var hideDelay: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IgVideoPlayerCommercialsAdMessage {
+  @scala.inline
+  def apply(
+    StringDictionary: /**
+  	 * Option for IgVideoPlayerCommercialsAdMessage
+  	 */
+  /* optionName */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    animate: js.UndefOr[scala.Boolean] = js.undefined,
+    animationDuration: scala.Int | scala.Double = null,
+    autoHide: js.UndefOr[scala.Boolean] = js.undefined,
+    hideDelay: scala.Int | scala.Double = null
+  ): IgVideoPlayerCommercialsAdMessage = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (!js.isUndefined(animate)) __obj.updateDynamic("animate")(animate)
+    if (animationDuration != null) __obj.updateDynamic("animationDuration")(animationDuration.asInstanceOf[js.Any])
+    if (!js.isUndefined(autoHide)) __obj.updateDynamic("autoHide")(autoHide)
+    if (hideDelay != null) __obj.updateDynamic("hideDelay")(hideDelay.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IgVideoPlayerCommercialsAdMessage]
+  }
+}
+

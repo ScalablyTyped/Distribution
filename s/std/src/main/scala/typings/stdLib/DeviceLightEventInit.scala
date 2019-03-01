@@ -9,3 +9,20 @@ trait DeviceLightEventInit extends EventInit {
   var value: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DeviceLightEventInit {
+  @scala.inline
+  def apply(
+    bubbles: js.UndefOr[scala.Boolean] = js.undefined,
+    cancelable: js.UndefOr[scala.Boolean] = js.undefined,
+    composed: js.UndefOr[scala.Boolean] = js.undefined,
+    value: scala.Int | scala.Double = null
+  ): DeviceLightEventInit = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(bubbles)) __obj.updateDynamic("bubbles")(bubbles)
+    if (!js.isUndefined(cancelable)) __obj.updateDynamic("cancelable")(cancelable)
+    if (!js.isUndefined(composed)) __obj.updateDynamic("composed")(composed)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DeviceLightEventInit]
+  }
+}
+

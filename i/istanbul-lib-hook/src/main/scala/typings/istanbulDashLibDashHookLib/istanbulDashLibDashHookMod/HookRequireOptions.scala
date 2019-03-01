@@ -10,3 +10,18 @@ trait HookRequireOptions extends Options {
   def postLoadHook(filename: java.lang.String): scala.Unit
 }
 
+object HookRequireOptions {
+  @scala.inline
+  def apply(
+    extensions: js.Array[java.lang.String],
+    postLoadHook: js.Function1[java.lang.String, scala.Unit],
+    verbose: scala.Boolean
+  ): HookRequireOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extensions")(extensions)
+    __obj.updateDynamic("postLoadHook")(postLoadHook)
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[HookRequireOptions]
+  }
+}
+

@@ -108,3 +108,52 @@ trait SpotFleetRequestState extends js.Object {
   val waitForFulfillment: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
 }
 
+object SpotFleetRequestState {
+  @scala.inline
+  def apply(
+    allocationStrategy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    clientToken: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    excessCapacityTerminationPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    fleetType: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    iamFleetRole: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instanceInterruptionBehaviour: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    instancePoolsToUseCount: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    launchSpecifications: atPulumiPulumiLib.outputMod.Input[
+      js.Array[
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AmiAssociatePublicIpAddress]
+      ]
+    ] = null,
+    loadBalancers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    replaceUnhealthyInstances: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    spotPrice: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    spotRequestState: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    targetCapacity: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    targetGroupArns: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]] = null,
+    terminateInstancesWithExpiration: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null,
+    validFrom: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    validUntil: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    waitForFulfillment: atPulumiPulumiLib.outputMod.Input[scala.Boolean] = null
+  ): SpotFleetRequestState = {
+    val __obj = js.Dynamic.literal()
+    if (allocationStrategy != null) __obj.updateDynamic("allocationStrategy")(allocationStrategy.asInstanceOf[js.Any])
+    if (clientToken != null) __obj.updateDynamic("clientToken")(clientToken.asInstanceOf[js.Any])
+    if (excessCapacityTerminationPolicy != null) __obj.updateDynamic("excessCapacityTerminationPolicy")(excessCapacityTerminationPolicy.asInstanceOf[js.Any])
+    if (fleetType != null) __obj.updateDynamic("fleetType")(fleetType.asInstanceOf[js.Any])
+    if (iamFleetRole != null) __obj.updateDynamic("iamFleetRole")(iamFleetRole.asInstanceOf[js.Any])
+    if (instanceInterruptionBehaviour != null) __obj.updateDynamic("instanceInterruptionBehaviour")(instanceInterruptionBehaviour.asInstanceOf[js.Any])
+    if (instancePoolsToUseCount != null) __obj.updateDynamic("instancePoolsToUseCount")(instancePoolsToUseCount.asInstanceOf[js.Any])
+    if (launchSpecifications != null) __obj.updateDynamic("launchSpecifications")(launchSpecifications.asInstanceOf[js.Any])
+    if (loadBalancers != null) __obj.updateDynamic("loadBalancers")(loadBalancers.asInstanceOf[js.Any])
+    if (replaceUnhealthyInstances != null) __obj.updateDynamic("replaceUnhealthyInstances")(replaceUnhealthyInstances.asInstanceOf[js.Any])
+    if (spotPrice != null) __obj.updateDynamic("spotPrice")(spotPrice.asInstanceOf[js.Any])
+    if (spotRequestState != null) __obj.updateDynamic("spotRequestState")(spotRequestState.asInstanceOf[js.Any])
+    if (targetCapacity != null) __obj.updateDynamic("targetCapacity")(targetCapacity.asInstanceOf[js.Any])
+    if (targetGroupArns != null) __obj.updateDynamic("targetGroupArns")(targetGroupArns.asInstanceOf[js.Any])
+    if (terminateInstancesWithExpiration != null) __obj.updateDynamic("terminateInstancesWithExpiration")(terminateInstancesWithExpiration.asInstanceOf[js.Any])
+    if (validFrom != null) __obj.updateDynamic("validFrom")(validFrom.asInstanceOf[js.Any])
+    if (validUntil != null) __obj.updateDynamic("validUntil")(validUntil.asInstanceOf[js.Any])
+    if (waitForFulfillment != null) __obj.updateDynamic("waitForFulfillment")(waitForFulfillment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SpotFleetRequestState]
+  }
+}
+

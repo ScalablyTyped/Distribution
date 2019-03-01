@@ -11,3 +11,18 @@ trait IIdentifyOptions extends js.Object {
   var srcData: nodeLib.Buffer
 }
 
+object IIdentifyOptions {
+  @scala.inline
+  def apply(
+    srcData: nodeLib.Buffer,
+    debug: js.UndefOr[scala.Boolean] = js.undefined,
+    ignoreWarnings: js.UndefOr[scala.Boolean] = js.undefined
+  ): IIdentifyOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("srcData")(srcData)
+    if (!js.isUndefined(debug)) __obj.updateDynamic("debug")(debug)
+    if (!js.isUndefined(ignoreWarnings)) __obj.updateDynamic("ignoreWarnings")(ignoreWarnings)
+    __obj.asInstanceOf[IIdentifyOptions]
+  }
+}
+

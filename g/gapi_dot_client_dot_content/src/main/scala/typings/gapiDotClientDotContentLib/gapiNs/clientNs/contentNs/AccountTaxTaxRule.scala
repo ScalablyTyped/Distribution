@@ -18,3 +18,22 @@ trait AccountTaxTaxRule extends js.Object {
   var useGlobalRate: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AccountTaxTaxRule {
+  @scala.inline
+  def apply(
+    country: java.lang.String = null,
+    locationId: java.lang.String = null,
+    ratePercent: java.lang.String = null,
+    shippingTaxed: js.UndefOr[scala.Boolean] = js.undefined,
+    useGlobalRate: js.UndefOr[scala.Boolean] = js.undefined
+  ): AccountTaxTaxRule = {
+    val __obj = js.Dynamic.literal()
+    if (country != null) __obj.updateDynamic("country")(country)
+    if (locationId != null) __obj.updateDynamic("locationId")(locationId)
+    if (ratePercent != null) __obj.updateDynamic("ratePercent")(ratePercent)
+    if (!js.isUndefined(shippingTaxed)) __obj.updateDynamic("shippingTaxed")(shippingTaxed)
+    if (!js.isUndefined(useGlobalRate)) __obj.updateDynamic("useGlobalRate")(useGlobalRate)
+    __obj.asInstanceOf[AccountTaxTaxRule]
+  }
+}
+

@@ -15,3 +15,12 @@ trait RectContext extends js.Object {
   def rect(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): scala.Unit
 }
 
+object RectContext {
+  @scala.inline
+  def apply(rect: js.Function4[scala.Double, scala.Double, scala.Double, scala.Double, scala.Unit]): RectContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("rect")(rect)
+    __obj.asInstanceOf[RectContext]
+  }
+}
+

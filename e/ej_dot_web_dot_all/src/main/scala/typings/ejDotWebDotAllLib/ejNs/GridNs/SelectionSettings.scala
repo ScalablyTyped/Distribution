@@ -24,3 +24,20 @@ trait SelectionSettings extends js.Object {
   var selectionMode: js.UndefOr[js.Array[_]] = js.undefined
 }
 
+object SelectionSettings {
+  @scala.inline
+  def apply(
+    allowDragSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    cellSelectionMode: CellSelectionMode | java.lang.String = null,
+    enableToggle: js.UndefOr[scala.Boolean] = js.undefined,
+    selectionMode: js.Array[_] = null
+  ): SelectionSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDragSelection)) __obj.updateDynamic("allowDragSelection")(allowDragSelection)
+    if (cellSelectionMode != null) __obj.updateDynamic("cellSelectionMode")(cellSelectionMode.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableToggle)) __obj.updateDynamic("enableToggle")(enableToggle)
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode)
+    __obj.asInstanceOf[SelectionSettings]
+  }
+}
+

@@ -17,3 +17,16 @@ trait IColumnDef extends js.Object {
   var exporterSuppressExport: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IColumnDef {
+  @scala.inline
+  def apply(
+    exporterPdfAlign: java.lang.String = null,
+    exporterSuppressExport: js.UndefOr[scala.Boolean] = js.undefined
+  ): IColumnDef = {
+    val __obj = js.Dynamic.literal()
+    if (exporterPdfAlign != null) __obj.updateDynamic("exporterPdfAlign")(exporterPdfAlign)
+    if (!js.isUndefined(exporterSuppressExport)) __obj.updateDynamic("exporterSuppressExport")(exporterSuppressExport)
+    __obj.asInstanceOf[IColumnDef]
+  }
+}
+

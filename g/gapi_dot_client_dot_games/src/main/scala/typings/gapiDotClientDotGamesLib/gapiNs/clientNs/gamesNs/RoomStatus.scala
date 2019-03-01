@@ -28,3 +28,24 @@ trait RoomStatus extends js.Object {
   var statusVersion: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RoomStatus {
+  @scala.inline
+  def apply(
+    autoMatchingStatus: RoomAutoMatchStatus = null,
+    kind: java.lang.String = null,
+    participants: js.Array[RoomParticipant] = null,
+    roomId: java.lang.String = null,
+    status: java.lang.String = null,
+    statusVersion: scala.Int | scala.Double = null
+  ): RoomStatus = {
+    val __obj = js.Dynamic.literal()
+    if (autoMatchingStatus != null) __obj.updateDynamic("autoMatchingStatus")(autoMatchingStatus)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (participants != null) __obj.updateDynamic("participants")(participants)
+    if (roomId != null) __obj.updateDynamic("roomId")(roomId)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (statusVersion != null) __obj.updateDynamic("statusVersion")(statusVersion.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RoomStatus]
+  }
+}
+

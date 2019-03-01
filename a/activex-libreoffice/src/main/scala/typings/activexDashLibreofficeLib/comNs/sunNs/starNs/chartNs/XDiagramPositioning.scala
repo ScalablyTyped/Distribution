@@ -41,3 +41,36 @@ trait XDiagramPositioning
   def setDiagramPositionIncludingAxesAndAxisTitles(PositionRect: activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle): scala.Unit
 }
 
+object XDiagramPositioning {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    calculateDiagramPositionExcludingAxes: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    calculateDiagramPositionIncludingAxes: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    calculateDiagramPositionIncludingAxesAndAxisTitles: js.Function0[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle],
+    isAutomaticDiagramPositioning: js.Function0[scala.Boolean],
+    isExcludingDiagramPositioning: js.Function0[scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    setAutomaticDiagramPositioning: js.Function0[scala.Unit],
+    setDiagramPositionExcludingAxes: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit],
+    setDiagramPositionIncludingAxes: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit],
+    setDiagramPositionIncludingAxesAndAxisTitles: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, scala.Unit]
+  ): XDiagramPositioning = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("calculateDiagramPositionExcludingAxes")(calculateDiagramPositionExcludingAxes)
+    __obj.updateDynamic("calculateDiagramPositionIncludingAxes")(calculateDiagramPositionIncludingAxes)
+    __obj.updateDynamic("calculateDiagramPositionIncludingAxesAndAxisTitles")(calculateDiagramPositionIncludingAxesAndAxisTitles)
+    __obj.updateDynamic("isAutomaticDiagramPositioning")(isAutomaticDiagramPositioning)
+    __obj.updateDynamic("isExcludingDiagramPositioning")(isExcludingDiagramPositioning)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("setAutomaticDiagramPositioning")(setAutomaticDiagramPositioning)
+    __obj.updateDynamic("setDiagramPositionExcludingAxes")(setDiagramPositionExcludingAxes)
+    __obj.updateDynamic("setDiagramPositionIncludingAxes")(setDiagramPositionIncludingAxes)
+    __obj.updateDynamic("setDiagramPositionIncludingAxesAndAxisTitles")(setDiagramPositionIncludingAxesAndAxisTitles)
+    __obj.asInstanceOf[XDiagramPositioning]
+  }
+}
+

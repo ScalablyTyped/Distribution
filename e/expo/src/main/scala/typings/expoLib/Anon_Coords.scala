@@ -14,3 +14,20 @@ trait Anon_Coords extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_Coords {
+  @scala.inline
+  def apply(
+    coords: Anon_Latitude = null,
+    proximity: java.lang.String = null,
+    radius: scala.Int | scala.Double = null,
+    title: java.lang.String = null
+  ): Anon_Coords = {
+    val __obj = js.Dynamic.literal()
+    if (coords != null) __obj.updateDynamic("coords")(coords)
+    if (proximity != null) __obj.updateDynamic("proximity")(proximity)
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[Anon_Coords]
+  }
+}
+

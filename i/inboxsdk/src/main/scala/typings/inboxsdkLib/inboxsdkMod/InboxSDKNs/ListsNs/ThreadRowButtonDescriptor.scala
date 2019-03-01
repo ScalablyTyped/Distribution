@@ -13,3 +13,22 @@ trait ThreadRowButtonDescriptor extends js.Object {
   def onClick(event: ThreadRowButtonClickEvent): scala.Unit
 }
 
+object ThreadRowButtonDescriptor {
+  @scala.inline
+  def apply(
+    iconUrl: java.lang.String,
+    onClick: js.Function1[ThreadRowButtonClickEvent, scala.Unit],
+    title: java.lang.String,
+    hasDropdown: js.UndefOr[scala.Boolean] = js.undefined,
+    iconClass: java.lang.String = null
+  ): ThreadRowButtonDescriptor = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("iconUrl")(iconUrl)
+    __obj.updateDynamic("onClick")(onClick)
+    __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(hasDropdown)) __obj.updateDynamic("hasDropdown")(hasDropdown)
+    if (iconClass != null) __obj.updateDynamic("iconClass")(iconClass)
+    __obj.asInstanceOf[ThreadRowButtonDescriptor]
+  }
+}
+

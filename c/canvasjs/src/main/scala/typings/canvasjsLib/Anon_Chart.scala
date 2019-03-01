@@ -12,3 +12,20 @@ trait Anon_Chart extends js.Object {
   var legend: this.type
 }
 
+object Anon_Chart {
+  @scala.inline
+  def apply(
+    chart: canvasjsLib.canvasjsMod.CanvasJSNs.Chart,
+    dataPoint: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataPoint,
+    dataSeries: canvasjsLib.canvasjsMod.CanvasJSNs.ChartDataSeriesOptions,
+    legend: Anon_Chart
+  ): Anon_Chart = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("dataPoint")(dataPoint)
+    __obj.updateDynamic("dataSeries")(dataSeries)
+    __obj.updateDynamic("legend")(legend)
+    __obj.asInstanceOf[Anon_Chart]
+  }
+}
+

@@ -36,3 +36,26 @@ trait LiveTile extends js.Object {
   var updateInterval: js.UndefOr[scala.Double] = js.undefined
 }
 
+object LiveTile {
+  @scala.inline
+  def apply(
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    imageClass: js.Array[_] = null,
+    imageTemplateId: js.Array[_] = null,
+    imageUrl: js.Array[_] = null,
+    text: js.Array[_] = null,
+    `type`: liveTileType | java.lang.String = null,
+    updateInterval: scala.Int | scala.Double = null
+  ): LiveTile = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (imageClass != null) __obj.updateDynamic("imageClass")(imageClass)
+    if (imageTemplateId != null) __obj.updateDynamic("imageTemplateId")(imageTemplateId)
+    if (imageUrl != null) __obj.updateDynamic("imageUrl")(imageUrl)
+    if (text != null) __obj.updateDynamic("text")(text)
+    if (`type` != null) __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    if (updateInterval != null) __obj.updateDynamic("updateInterval")(updateInterval.asInstanceOf[js.Any])
+    __obj.asInstanceOf[LiveTile]
+  }
+}
+

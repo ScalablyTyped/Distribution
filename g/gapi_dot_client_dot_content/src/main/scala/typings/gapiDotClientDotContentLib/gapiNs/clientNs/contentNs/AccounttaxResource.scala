@@ -28,3 +28,37 @@ trait AccounttaxResource extends js.Object {
   def update(request: gapiDotClientDotContentLib.Anon_AccountIdAltDryRun): gapiDotClientLib.gapiNs.clientNs.Request[AccountTax]
 }
 
+object AccounttaxResource {
+  @scala.inline
+  def apply(
+    custombatch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccounttaxCustomBatchResponse]
+    ],
+    get: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountTax]
+    ],
+    list: js.Function1[
+      gapiDotClientDotContentLib.Anon_AltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccounttaxListResponse]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountTax]
+    ],
+    update: js.Function1[
+      gapiDotClientDotContentLib.Anon_AccountIdAltDryRun, 
+      gapiDotClientLib.gapiNs.clientNs.Request[AccountTax]
+    ]
+  ): AccounttaxResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("custombatch")(custombatch)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[AccounttaxResource]
+  }
+}
+

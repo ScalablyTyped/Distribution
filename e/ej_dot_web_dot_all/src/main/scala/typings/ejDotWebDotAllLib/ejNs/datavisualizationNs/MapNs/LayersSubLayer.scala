@@ -89,3 +89,58 @@ trait LayersSubLayer extends js.Object {
   var urlTemplate: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object LayersSubLayer {
+  @scala.inline
+  def apply(
+    bingMapType: BingMapType | java.lang.String = null,
+    bubbleSettings: LayersSubLayersBubbleSettings = null,
+    dataSource: js.Any = null,
+    enableMouseHover: js.UndefOr[scala.Boolean] = js.undefined,
+    enableSelection: js.UndefOr[scala.Boolean] = js.undefined,
+    geometryType: GeometryType | java.lang.String = null,
+    key: java.lang.String = null,
+    labelSettings: LayersSubLayersLabelSettings = null,
+    layerType: LayerType | java.lang.String = null,
+    legendSettings: LayersSubLayersLegendSettings = null,
+    mapItemsTemplate: java.lang.String = null,
+    markerTemplate: java.lang.String = null,
+    markers: js.Array[_] = null,
+    selectedMapShapes: js.Array[_] = null,
+    selectionMode: SelectionMode | java.lang.String = null,
+    shapeData: js.Any = null,
+    shapeDataPath: java.lang.String = null,
+    shapePropertyPath: java.lang.String = null,
+    shapeSettings: LayersSubLayersShapeSettings = null,
+    showMapItems: js.UndefOr[scala.Boolean] = js.undefined,
+    showTooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltipTemplate: java.lang.String = null,
+    urlTemplate: java.lang.String = null
+  ): LayersSubLayer = {
+    val __obj = js.Dynamic.literal()
+    if (bingMapType != null) __obj.updateDynamic("bingMapType")(bingMapType.asInstanceOf[js.Any])
+    if (bubbleSettings != null) __obj.updateDynamic("bubbleSettings")(bubbleSettings)
+    if (dataSource != null) __obj.updateDynamic("dataSource")(dataSource)
+    if (!js.isUndefined(enableMouseHover)) __obj.updateDynamic("enableMouseHover")(enableMouseHover)
+    if (!js.isUndefined(enableSelection)) __obj.updateDynamic("enableSelection")(enableSelection)
+    if (geometryType != null) __obj.updateDynamic("geometryType")(geometryType.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (labelSettings != null) __obj.updateDynamic("labelSettings")(labelSettings)
+    if (layerType != null) __obj.updateDynamic("layerType")(layerType.asInstanceOf[js.Any])
+    if (legendSettings != null) __obj.updateDynamic("legendSettings")(legendSettings)
+    if (mapItemsTemplate != null) __obj.updateDynamic("mapItemsTemplate")(mapItemsTemplate)
+    if (markerTemplate != null) __obj.updateDynamic("markerTemplate")(markerTemplate)
+    if (markers != null) __obj.updateDynamic("markers")(markers)
+    if (selectedMapShapes != null) __obj.updateDynamic("selectedMapShapes")(selectedMapShapes)
+    if (selectionMode != null) __obj.updateDynamic("selectionMode")(selectionMode.asInstanceOf[js.Any])
+    if (shapeData != null) __obj.updateDynamic("shapeData")(shapeData)
+    if (shapeDataPath != null) __obj.updateDynamic("shapeDataPath")(shapeDataPath)
+    if (shapePropertyPath != null) __obj.updateDynamic("shapePropertyPath")(shapePropertyPath)
+    if (shapeSettings != null) __obj.updateDynamic("shapeSettings")(shapeSettings)
+    if (!js.isUndefined(showMapItems)) __obj.updateDynamic("showMapItems")(showMapItems)
+    if (!js.isUndefined(showTooltip)) __obj.updateDynamic("showTooltip")(showTooltip)
+    if (tooltipTemplate != null) __obj.updateDynamic("tooltipTemplate")(tooltipTemplate)
+    if (urlTemplate != null) __obj.updateDynamic("urlTemplate")(urlTemplate)
+    __obj.asInstanceOf[LayersSubLayer]
+  }
+}
+

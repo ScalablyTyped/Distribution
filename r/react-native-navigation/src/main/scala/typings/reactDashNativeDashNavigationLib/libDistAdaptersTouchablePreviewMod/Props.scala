@@ -18,3 +18,24 @@ trait Props extends js.Object {
   ] = js.undefined
 }
 
+object Props {
+  @scala.inline
+  def apply(
+    children: reactLib.reactMod.ReactNs.ReactNode,
+    onPeekIn: js.Function0[scala.Unit] = null,
+    onPeekOut: js.Function0[scala.Unit] = null,
+    onPress: js.Function0[scala.Unit] = null,
+    onPressIn: js.Function1[/* payload */ reactDashNativeDashNavigationLib.Anon_ReactTag, scala.Unit] = null,
+    touchableComponent: reactDashNativeLib.reactDashNativeMod.TouchableHighlight | reactDashNativeLib.reactDashNativeMod.TouchableOpacity | reactDashNativeLib.reactDashNativeMod.TouchableNativeFeedback | reactDashNativeLib.reactDashNativeMod.TouchableWithoutFeedback | reactLib.reactMod.ReactNs.ReactNode = null
+  ): Props = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (onPeekIn != null) __obj.updateDynamic("onPeekIn")(onPeekIn)
+    if (onPeekOut != null) __obj.updateDynamic("onPeekOut")(onPeekOut)
+    if (onPress != null) __obj.updateDynamic("onPress")(onPress)
+    if (onPressIn != null) __obj.updateDynamic("onPressIn")(onPressIn)
+    if (touchableComponent != null) __obj.updateDynamic("touchableComponent")(touchableComponent.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Props]
+  }
+}
+

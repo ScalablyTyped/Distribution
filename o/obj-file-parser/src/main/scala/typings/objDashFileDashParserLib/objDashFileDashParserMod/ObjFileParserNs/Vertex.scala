@@ -11,3 +11,14 @@ trait Vertex extends js.Object {
   var z: scala.Double
 }
 
+object Vertex {
+  @scala.inline
+  def apply(x: scala.Double, y: scala.Double, z: scala.Double): Vertex = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("x")(x)
+    __obj.updateDynamic("y")(y)
+    __obj.updateDynamic("z")(z)
+    __obj.asInstanceOf[Vertex]
+  }
+}
+

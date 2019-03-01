@@ -7,52 +7,68 @@ import scala.scalajs.js.annotation._
 
 object gapiDotPeopleLibStrings {
   @js.native
-  sealed trait ACCOUNT extends js.Object
+  sealed trait ACCOUNT
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.SourceType
   
   @js.native
-  sealed trait CONTACT extends js.Object
+  sealed trait CONTACT
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.SourceType
   
   @js.native
-  sealed trait DEFAULT extends js.Object
+  sealed trait DEFAULT
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.NicknameType
   
   @js.native
-  sealed trait DOMAIN_PROFILE extends js.Object
+  sealed trait DOMAIN_PROFILE
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.SourceType
   
   @js.native
-  sealed trait FIRST_NAME_ASCENDING extends js.Object
+  sealed trait FIRST_NAME_ASCENDING
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.peopleNs.connectionsNs.SortOrder
   
   @js.native
-  sealed trait GPLUS extends js.Object
+  sealed trait GPLUS
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.NicknameType
   
   @js.native
-  sealed trait INITIALS extends js.Object
+  sealed trait INITIALS
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.NicknameType
   
   @js.native
-  sealed trait LAST_MODIFIED_ASCENDING extends js.Object
+  sealed trait LAST_MODIFIED_ASCENDING
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.peopleNs.connectionsNs.SortOrder
   
   @js.native
-  sealed trait LAST_NAME_ASCENDING extends js.Object
+  sealed trait LAST_NAME_ASCENDING
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.peopleNs.connectionsNs.SortOrder
   
   @js.native
-  sealed trait MAIDEN_NAME extends js.Object
+  sealed trait MAIDEN_NAME
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.NicknameType
   
   @js.native
-  sealed trait OBJECT_TYPE_UNSPECIFIED extends js.Object
+  sealed trait OBJECT_TYPE_UNSPECIFIED
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.ObjectType
   
   @js.native
-  sealed trait OTHER_NAME extends js.Object
+  sealed trait OTHER_NAME
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.NicknameType
   
   @js.native
-  sealed trait PAGE extends js.Object
+  sealed trait PAGE
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.ObjectType
   
   @js.native
-  sealed trait PERSON extends js.Object
+  sealed trait PERSON
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.ObjectType
   
   @js.native
-  sealed trait PROFILE extends js.Object
+  sealed trait PROFILE
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.SourceType
   
   @js.native
-  sealed trait SOURCE_TYPE_UNSPECIFIED extends js.Object
+  sealed trait SOURCE_TYPE_UNSPECIFIED
+    extends gapiDotPeopleLib.gapiNs.clientNs.peopleNs.SourceType
   
   @scala.inline
   def ACCOUNT: ACCOUNT = "ACCOUNT".asInstanceOf[ACCOUNT]

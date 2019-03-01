@@ -18,3 +18,28 @@ trait CommonOptions extends js.Object {
   var truncate: java.lang.String
 }
 
+object CommonOptions {
+  @scala.inline
+  def apply(
+    colAligns: js.Array[
+      adoneLib.adoneLibStrings.left | adoneLib.adoneLibStrings.center | adoneLib.adoneLibStrings.right
+    ],
+    colWidths: js.Array[scala.Double],
+    head: js.Array[java.lang.String],
+    rowAligns: js.Array[
+      adoneLib.adoneLibStrings.top | adoneLib.adoneLibStrings.center | adoneLib.adoneLibStrings.bottom
+    ],
+    rowHeights: js.Array[scala.Double],
+    truncate: java.lang.String
+  ): CommonOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("colAligns")(colAligns)
+    __obj.updateDynamic("colWidths")(colWidths)
+    __obj.updateDynamic("head")(head)
+    __obj.updateDynamic("rowAligns")(rowAligns)
+    __obj.updateDynamic("rowHeights")(rowHeights)
+    __obj.updateDynamic("truncate")(truncate)
+    __obj.asInstanceOf[CommonOptions]
+  }
+}
+

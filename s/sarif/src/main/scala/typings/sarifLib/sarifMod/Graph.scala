@@ -28,3 +28,22 @@ trait Graph extends js.Object {
   var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 
+object Graph {
+  @scala.inline
+  def apply(
+    id: java.lang.String,
+    description: Message = null,
+    edges: js.Array[Edge] = null,
+    nodes: js.Array[Node] = null,
+    properties: PropertyBag = null
+  ): Graph = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (edges != null) __obj.updateDynamic("edges")(edges)
+    if (nodes != null) __obj.updateDynamic("nodes")(nodes)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    __obj.asInstanceOf[Graph]
+  }
+}
+

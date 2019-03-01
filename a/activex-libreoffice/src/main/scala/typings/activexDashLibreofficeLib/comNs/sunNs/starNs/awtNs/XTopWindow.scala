@@ -20,3 +20,28 @@ trait XTopWindow
   def toFront(): scala.Unit
 }
 
+object XTopWindow {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    addTopWindowListener: js.Function1[XTopWindowListener, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeTopWindowListener: js.Function1[XTopWindowListener, scala.Unit],
+    setMenuBar: js.Function1[XMenuBar, scala.Unit],
+    toBack: js.Function0[scala.Unit],
+    toFront: js.Function0[scala.Unit]
+  ): XTopWindow = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addTopWindowListener")(addTopWindowListener)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeTopWindowListener")(removeTopWindowListener)
+    __obj.updateDynamic("setMenuBar")(setMenuBar)
+    __obj.updateDynamic("toBack")(toBack)
+    __obj.updateDynamic("toFront")(toFront)
+    __obj.asInstanceOf[XTopWindow]
+  }
+}
+

@@ -13,3 +13,22 @@ trait Anon_Idlength extends js.Object {
   var types: java.lang.String
 }
 
+object Anon_Idlength {
+  @scala.inline
+  def apply(
+    idlength: js.Array[java.lang.String],
+    length: scala.Double,
+    limit: js.Array[java.lang.String],
+    modes: org.scalablytyped.runtime.StringDictionary[java.lang.String],
+    types: java.lang.String
+  ): Anon_Idlength = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("idlength")(idlength)
+    __obj.updateDynamic("length")(length)
+    __obj.updateDynamic("limit")(limit)
+    __obj.updateDynamic("modes")(modes)
+    __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[Anon_Idlength]
+  }
+}
+

@@ -21,3 +21,22 @@ trait TurnBasedMatchCreateRequest extends js.Object {
   var variant: js.UndefOr[scala.Double] = js.undefined
 }
 
+object TurnBasedMatchCreateRequest {
+  @scala.inline
+  def apply(
+    autoMatchingCriteria: TurnBasedAutoMatchingCriteria = null,
+    invitedPlayerIds: js.Array[java.lang.String] = null,
+    kind: java.lang.String = null,
+    requestId: java.lang.String = null,
+    variant: scala.Int | scala.Double = null
+  ): TurnBasedMatchCreateRequest = {
+    val __obj = js.Dynamic.literal()
+    if (autoMatchingCriteria != null) __obj.updateDynamic("autoMatchingCriteria")(autoMatchingCriteria)
+    if (invitedPlayerIds != null) __obj.updateDynamic("invitedPlayerIds")(invitedPlayerIds)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (requestId != null) __obj.updateDynamic("requestId")(requestId)
+    if (variant != null) __obj.updateDynamic("variant")(variant.asInstanceOf[js.Any])
+    __obj.asInstanceOf[TurnBasedMatchCreateRequest]
+  }
+}
+

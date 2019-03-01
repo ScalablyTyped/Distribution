@@ -34,3 +34,26 @@ trait ConnectorsTargetDecorator extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object ConnectorsTargetDecorator {
+  @scala.inline
+  def apply(
+    borderColor: java.lang.String = null,
+    cssClass: java.lang.String = null,
+    fillColor: java.lang.String = null,
+    height: scala.Int | scala.Double = null,
+    pathData: java.lang.String = null,
+    shape: DecoratorShapes | java.lang.String = null,
+    width: scala.Int | scala.Double = null
+  ): ConnectorsTargetDecorator = {
+    val __obj = js.Dynamic.literal()
+    if (borderColor != null) __obj.updateDynamic("borderColor")(borderColor)
+    if (cssClass != null) __obj.updateDynamic("cssClass")(cssClass)
+    if (fillColor != null) __obj.updateDynamic("fillColor")(fillColor)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (pathData != null) __obj.updateDynamic("pathData")(pathData)
+    if (shape != null) __obj.updateDynamic("shape")(shape.asInstanceOf[js.Any])
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ConnectorsTargetDecorator]
+  }
+}
+

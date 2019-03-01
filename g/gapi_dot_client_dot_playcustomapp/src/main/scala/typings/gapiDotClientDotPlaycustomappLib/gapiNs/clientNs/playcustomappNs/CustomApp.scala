@@ -12,3 +12,13 @@ trait CustomApp extends js.Object {
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CustomApp {
+  @scala.inline
+  def apply(languageCode: java.lang.String = null, title: java.lang.String = null): CustomApp = {
+    val __obj = js.Dynamic.literal()
+    if (languageCode != null) __obj.updateDynamic("languageCode")(languageCode)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[CustomApp]
+  }
+}
+

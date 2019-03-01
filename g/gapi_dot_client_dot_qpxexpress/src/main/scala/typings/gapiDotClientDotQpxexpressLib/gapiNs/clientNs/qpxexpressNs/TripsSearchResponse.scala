@@ -12,3 +12,13 @@ trait TripsSearchResponse extends js.Object {
   var trips: js.UndefOr[TripOptionsResponse] = js.undefined
 }
 
+object TripsSearchResponse {
+  @scala.inline
+  def apply(kind: java.lang.String = null, trips: TripOptionsResponse = null): TripsSearchResponse = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (trips != null) __obj.updateDynamic("trips")(trips)
+    __obj.asInstanceOf[TripsSearchResponse]
+  }
+}
+

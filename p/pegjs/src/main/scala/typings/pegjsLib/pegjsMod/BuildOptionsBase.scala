@@ -18,3 +18,22 @@ trait BuildOptionsBase extends js.Object {
   var trace: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object BuildOptionsBase {
+  @scala.inline
+  def apply(
+    allowedStartRules: js.Array[java.lang.String] = null,
+    cache: js.UndefOr[scala.Boolean] = js.undefined,
+    optimize: pegjsLib.pegjsLibStrings.speed | pegjsLib.pegjsLibStrings.size = null,
+    plugins: js.Array[_] = null,
+    trace: js.UndefOr[scala.Boolean] = js.undefined
+  ): BuildOptionsBase = {
+    val __obj = js.Dynamic.literal()
+    if (allowedStartRules != null) __obj.updateDynamic("allowedStartRules")(allowedStartRules)
+    if (!js.isUndefined(cache)) __obj.updateDynamic("cache")(cache)
+    if (optimize != null) __obj.updateDynamic("optimize")(optimize.asInstanceOf[js.Any])
+    if (plugins != null) __obj.updateDynamic("plugins")(plugins)
+    if (!js.isUndefined(trace)) __obj.updateDynamic("trace")(trace)
+    __obj.asInstanceOf[BuildOptionsBase]
+  }
+}
+

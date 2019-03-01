@@ -64,3 +64,40 @@ trait FileContainer extends js.Object {
   var size: scala.Double
 }
 
+object FileContainer {
+  @scala.inline
+  def apply(
+    artifactUri: java.lang.String,
+    contentLocation: java.lang.String,
+    createdBy: java.lang.String,
+    dateCreated: stdLib.Date,
+    description: java.lang.String,
+    id: scala.Double,
+    itemLocation: java.lang.String,
+    locatorPath: java.lang.String,
+    name: java.lang.String,
+    options: ContainerOptions,
+    scopeIdentifier: java.lang.String,
+    securityToken: java.lang.String,
+    signingKeyId: java.lang.String,
+    size: scala.Double
+  ): FileContainer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("artifactUri")(artifactUri)
+    __obj.updateDynamic("contentLocation")(contentLocation)
+    __obj.updateDynamic("createdBy")(createdBy)
+    __obj.updateDynamic("dateCreated")(dateCreated)
+    __obj.updateDynamic("description")(description)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("itemLocation")(itemLocation)
+    __obj.updateDynamic("locatorPath")(locatorPath)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("options")(options)
+    __obj.updateDynamic("scopeIdentifier")(scopeIdentifier)
+    __obj.updateDynamic("securityToken")(securityToken)
+    __obj.updateDynamic("signingKeyId")(signingKeyId)
+    __obj.updateDynamic("size")(size)
+    __obj.asInstanceOf[FileContainer]
+  }
+}
+

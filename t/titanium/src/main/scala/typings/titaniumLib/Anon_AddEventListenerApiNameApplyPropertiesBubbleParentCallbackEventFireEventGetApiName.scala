@@ -66,3 +66,40 @@ trait Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEv
   def setBubbleParent(bubbleParent: scala.Boolean): scala.Unit
 }
 
+object Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName {
+  @scala.inline
+  def apply(
+    addEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    apiName: java.lang.String,
+    applyProperties: js.Function1[js.Any, scala.Unit],
+    bubbleParent: scala.Boolean,
+    fireEvent: js.Function2[java.lang.String, js.Any, scala.Unit],
+    getApiName: js.Function0[java.lang.String],
+    getBubbleParent: js.Function0[scala.Boolean],
+    getDeliveredNotifications: js.Function1[js.Function1[/* param0 */ UserNotificationCallbackResponse, _], scala.Unit],
+    getPendingNotifications: js.Function1[js.Function1[/* param0 */ UserNotificationCallbackResponse, _], scala.Unit],
+    removeDeliveredNotifications: js.Function0[scala.Unit],
+    removeEventListener: js.Function2[java.lang.String, js.Function1[/* param0 */ js.Any, _], scala.Unit],
+    removePendingNotifications: js.Function1[js.Array[titaniumLib.TitaniumNs.AppNs.iOSNs.LocalNotification], scala.Unit],
+    requestUserNotificationSettings: js.Function1[js.Function1[/* param0 */ GetUserNotificationSettings, _], scala.Unit],
+    setBubbleParent: js.Function1[scala.Boolean, scala.Unit]
+  ): Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("apiName")(apiName)
+    __obj.updateDynamic("applyProperties")(applyProperties)
+    __obj.updateDynamic("bubbleParent")(bubbleParent)
+    __obj.updateDynamic("fireEvent")(fireEvent)
+    __obj.updateDynamic("getApiName")(getApiName)
+    __obj.updateDynamic("getBubbleParent")(getBubbleParent)
+    __obj.updateDynamic("getDeliveredNotifications")(getDeliveredNotifications)
+    __obj.updateDynamic("getPendingNotifications")(getPendingNotifications)
+    __obj.updateDynamic("removeDeliveredNotifications")(removeDeliveredNotifications)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removePendingNotifications")(removePendingNotifications)
+    __obj.updateDynamic("requestUserNotificationSettings")(requestUserNotificationSettings)
+    __obj.updateDynamic("setBubbleParent")(setBubbleParent)
+    __obj.asInstanceOf[Anon_AddEventListenerApiNameApplyPropertiesBubbleParentCallbackEventFireEventGetApiName]
+  }
+}
+

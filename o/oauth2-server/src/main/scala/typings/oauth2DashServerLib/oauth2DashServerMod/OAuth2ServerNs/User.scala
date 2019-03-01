@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 trait User
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 
+object User {
+  @scala.inline
+  def apply(StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null): User = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[User]
+  }
+}
+

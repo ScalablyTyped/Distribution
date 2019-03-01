@@ -84,3 +84,74 @@ trait Anon_ActiveAdvertiserId extends js.Object {
   var userIp: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ActiveAdvertiserId {
+  @scala.inline
+  def apply(
+    profileId: java.lang.String,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    advertiserId: java.lang.String = null,
+    alt: java.lang.String = null,
+    archived: js.UndefOr[scala.Boolean] = js.undefined,
+    audienceSegmentIds: java.lang.String = null,
+    campaignIds: java.lang.String = null,
+    compatibility: java.lang.String = null,
+    creativeIds: java.lang.String = null,
+    creativeOptimizationConfigurationIds: java.lang.String = null,
+    dynamicClickTracker: js.UndefOr[scala.Boolean] = js.undefined,
+    fields: java.lang.String = null,
+    ids: java.lang.String = null,
+    key: java.lang.String = null,
+    landingPageIds: java.lang.String = null,
+    maxResults: scala.Int | scala.Double = null,
+    oauth_token: java.lang.String = null,
+    overriddenEventTagId: java.lang.String = null,
+    pageToken: java.lang.String = null,
+    placementIds: java.lang.String = null,
+    prettyPrint: js.UndefOr[scala.Boolean] = js.undefined,
+    quotaUser: java.lang.String = null,
+    remarketingListIds: java.lang.String = null,
+    searchString: java.lang.String = null,
+    sizeIds: java.lang.String = null,
+    sortField: java.lang.String = null,
+    sortOrder: java.lang.String = null,
+    sslCompliant: js.UndefOr[scala.Boolean] = js.undefined,
+    sslRequired: js.UndefOr[scala.Boolean] = js.undefined,
+    `type`: java.lang.String = null,
+    userIp: java.lang.String = null
+  ): Anon_ActiveAdvertiserId = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("profileId")(profileId)
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (advertiserId != null) __obj.updateDynamic("advertiserId")(advertiserId)
+    if (alt != null) __obj.updateDynamic("alt")(alt)
+    if (!js.isUndefined(archived)) __obj.updateDynamic("archived")(archived)
+    if (audienceSegmentIds != null) __obj.updateDynamic("audienceSegmentIds")(audienceSegmentIds)
+    if (campaignIds != null) __obj.updateDynamic("campaignIds")(campaignIds)
+    if (compatibility != null) __obj.updateDynamic("compatibility")(compatibility)
+    if (creativeIds != null) __obj.updateDynamic("creativeIds")(creativeIds)
+    if (creativeOptimizationConfigurationIds != null) __obj.updateDynamic("creativeOptimizationConfigurationIds")(creativeOptimizationConfigurationIds)
+    if (!js.isUndefined(dynamicClickTracker)) __obj.updateDynamic("dynamicClickTracker")(dynamicClickTracker)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (ids != null) __obj.updateDynamic("ids")(ids)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (landingPageIds != null) __obj.updateDynamic("landingPageIds")(landingPageIds)
+    if (maxResults != null) __obj.updateDynamic("maxResults")(maxResults.asInstanceOf[js.Any])
+    if (oauth_token != null) __obj.updateDynamic("oauth_token")(oauth_token)
+    if (overriddenEventTagId != null) __obj.updateDynamic("overriddenEventTagId")(overriddenEventTagId)
+    if (pageToken != null) __obj.updateDynamic("pageToken")(pageToken)
+    if (placementIds != null) __obj.updateDynamic("placementIds")(placementIds)
+    if (!js.isUndefined(prettyPrint)) __obj.updateDynamic("prettyPrint")(prettyPrint)
+    if (quotaUser != null) __obj.updateDynamic("quotaUser")(quotaUser)
+    if (remarketingListIds != null) __obj.updateDynamic("remarketingListIds")(remarketingListIds)
+    if (searchString != null) __obj.updateDynamic("searchString")(searchString)
+    if (sizeIds != null) __obj.updateDynamic("sizeIds")(sizeIds)
+    if (sortField != null) __obj.updateDynamic("sortField")(sortField)
+    if (sortOrder != null) __obj.updateDynamic("sortOrder")(sortOrder)
+    if (!js.isUndefined(sslCompliant)) __obj.updateDynamic("sslCompliant")(sslCompliant)
+    if (!js.isUndefined(sslRequired)) __obj.updateDynamic("sslRequired")(sslRequired)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (userIp != null) __obj.updateDynamic("userIp")(userIp)
+    __obj.asInstanceOf[Anon_ActiveAdvertiserId]
+  }
+}
+

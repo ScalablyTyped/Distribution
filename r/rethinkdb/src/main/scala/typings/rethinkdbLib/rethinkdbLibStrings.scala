@@ -58,13 +58,16 @@ object rethinkdbLibStrings {
   sealed trait raw extends js.Object
   
   @js.native
-  sealed trait ready_for_outdated_reads extends js.Object
+  sealed trait ready_for_outdated_reads
+    extends rethinkdbLib.rethinkdbMod.waitFor
   
   @js.native
-  sealed trait ready_for_reads extends js.Object
+  sealed trait ready_for_reads
+    extends rethinkdbLib.rethinkdbMod.waitFor
   
   @js.native
-  sealed trait ready_for_writes extends js.Object
+  sealed trait ready_for_writes
+    extends rethinkdbLib.rethinkdbMod.waitFor
   
   @js.native
   sealed trait replace extends js.Object

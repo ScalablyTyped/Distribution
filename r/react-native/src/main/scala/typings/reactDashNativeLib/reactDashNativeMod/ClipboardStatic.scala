@@ -10,3 +10,16 @@ trait ClipboardStatic extends js.Object {
   def setString(content: java.lang.String): scala.Unit
 }
 
+object ClipboardStatic {
+  @scala.inline
+  def apply(
+    getString: js.Function0[js.Promise[java.lang.String]],
+    setString: js.Function1[java.lang.String, scala.Unit]
+  ): ClipboardStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getString")(getString)
+    __obj.updateDynamic("setString")(setString)
+    __obj.asInstanceOf[ClipboardStatic]
+  }
+}
+

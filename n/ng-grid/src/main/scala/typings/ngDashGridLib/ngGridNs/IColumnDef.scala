@@ -52,3 +52,52 @@ trait IColumnDef extends js.Object {
   var width: js.UndefOr[js.Any] = js.undefined
 }
 
+object IColumnDef {
+  @scala.inline
+  def apply(
+    aggLabelFilter: java.lang.String = null,
+    cellClass: java.lang.String = null,
+    cellEditableCondition: java.lang.String = null,
+    cellFilter: java.lang.String = null,
+    cellTemplate: java.lang.String = null,
+    displayName: java.lang.String = null,
+    editableCellTemplate: java.lang.String = null,
+    enableCellEdit: js.UndefOr[scala.Boolean] = js.undefined,
+    field: java.lang.String = null,
+    groupable: js.UndefOr[scala.Boolean] = js.undefined,
+    headerCellTemplate: java.lang.String = null,
+    headerClass: java.lang.String = null,
+    minWidth: js.Any = null,
+    pinnable: js.UndefOr[scala.Boolean] = js.undefined,
+    pinned: js.UndefOr[scala.Boolean] = js.undefined,
+    resizable: js.UndefOr[scala.Boolean] = js.undefined,
+    sortFn: js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = null,
+    sortable: js.UndefOr[scala.Boolean] = js.undefined,
+    visible: js.UndefOr[scala.Boolean] = js.undefined,
+    width: js.Any = null
+  ): IColumnDef = {
+    val __obj = js.Dynamic.literal()
+    if (aggLabelFilter != null) __obj.updateDynamic("aggLabelFilter")(aggLabelFilter)
+    if (cellClass != null) __obj.updateDynamic("cellClass")(cellClass)
+    if (cellEditableCondition != null) __obj.updateDynamic("cellEditableCondition")(cellEditableCondition)
+    if (cellFilter != null) __obj.updateDynamic("cellFilter")(cellFilter)
+    if (cellTemplate != null) __obj.updateDynamic("cellTemplate")(cellTemplate)
+    if (displayName != null) __obj.updateDynamic("displayName")(displayName)
+    if (editableCellTemplate != null) __obj.updateDynamic("editableCellTemplate")(editableCellTemplate)
+    if (!js.isUndefined(enableCellEdit)) __obj.updateDynamic("enableCellEdit")(enableCellEdit)
+    if (field != null) __obj.updateDynamic("field")(field)
+    if (!js.isUndefined(groupable)) __obj.updateDynamic("groupable")(groupable)
+    if (headerCellTemplate != null) __obj.updateDynamic("headerCellTemplate")(headerCellTemplate)
+    if (headerClass != null) __obj.updateDynamic("headerClass")(headerClass)
+    if (minWidth != null) __obj.updateDynamic("minWidth")(minWidth)
+    if (!js.isUndefined(pinnable)) __obj.updateDynamic("pinnable")(pinnable)
+    if (!js.isUndefined(pinned)) __obj.updateDynamic("pinned")(pinned)
+    if (!js.isUndefined(resizable)) __obj.updateDynamic("resizable")(resizable)
+    if (sortFn != null) __obj.updateDynamic("sortFn")(sortFn)
+    if (!js.isUndefined(sortable)) __obj.updateDynamic("sortable")(sortable)
+    if (!js.isUndefined(visible)) __obj.updateDynamic("visible")(visible)
+    if (width != null) __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[IColumnDef]
+  }
+}
+

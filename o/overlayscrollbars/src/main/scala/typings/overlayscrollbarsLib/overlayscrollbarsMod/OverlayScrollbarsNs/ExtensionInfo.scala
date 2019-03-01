@@ -16,3 +16,24 @@ trait ExtensionInfo extends js.Object {
   ): Extension
 }
 
+object ExtensionInfo {
+  @scala.inline
+  def apply(
+    extensionFactory: js.Function4[
+      overlayscrollbarsLib.overlayscrollbarsMod.OverlayScrollbars, 
+      js.Object, 
+      Compatibility, 
+      js.Any, 
+      Extension
+    ],
+    name: java.lang.String,
+    defaultOptions: js.Object = null
+  ): ExtensionInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extensionFactory")(extensionFactory)
+    __obj.updateDynamic("name")(name)
+    if (defaultOptions != null) __obj.updateDynamic("defaultOptions")(defaultOptions)
+    __obj.asInstanceOf[ExtensionInfo]
+  }
+}
+

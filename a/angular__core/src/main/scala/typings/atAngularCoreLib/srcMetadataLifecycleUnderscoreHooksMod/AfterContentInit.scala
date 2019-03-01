@@ -15,3 +15,12 @@ trait AfterContentInit extends js.Object {
   def ngAfterContentInit(): scala.Unit
 }
 
+object AfterContentInit {
+  @scala.inline
+  def apply(ngAfterContentInit: js.Function0[scala.Unit]): AfterContentInit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ngAfterContentInit")(ngAfterContentInit)
+    __obj.asInstanceOf[AfterContentInit]
+  }
+}
+

@@ -29,3 +29,28 @@ trait Display extends js.Object {
   var workAreaSize: Size
 }
 
+object Display {
+  @scala.inline
+  def apply(
+    bounds: Rectangle,
+    id: scala.Double,
+    rotation: scala.Double,
+    scaleFactor: scala.Double,
+    size: Size,
+    touchSupport: electronLib.electronLibStrings.available | electronLib.electronLibStrings.unavailable | electronLib.electronLibStrings.unknown,
+    workArea: Rectangle,
+    workAreaSize: Size
+  ): Display = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bounds")(bounds)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("rotation")(rotation)
+    __obj.updateDynamic("scaleFactor")(scaleFactor)
+    __obj.updateDynamic("size")(size)
+    __obj.updateDynamic("touchSupport")(touchSupport.asInstanceOf[js.Any])
+    __obj.updateDynamic("workArea")(workArea)
+    __obj.updateDynamic("workAreaSize")(workAreaSize)
+    __obj.asInstanceOf[Display]
+  }
+}
+

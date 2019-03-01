@@ -99,3 +99,42 @@ trait XMultiLayerStratum
   def listLayerIds(aComponent: java.lang.String, aEntity: java.lang.String): activexDashInteropLib.SafeArray[java.lang.String]
 }
 
+object XMultiLayerStratum {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    getLayer: js.Function2[java.lang.String, java.lang.String, XLayer],
+    getLayers: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[XLayer]
+    ],
+    getMultipleLayers: js.Function2[
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String], 
+      activexDashInteropLib.SafeArray[XLayer]
+    ],
+    getUpdatableLayer: js.Function1[java.lang.String, XUpdatableLayer],
+    getUpdateLayerId: js.Function2[java.lang.String, java.lang.String, java.lang.String],
+    listLayerIds: js.Function2[
+      java.lang.String, 
+      java.lang.String, 
+      activexDashInteropLib.SafeArray[java.lang.String]
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XMultiLayerStratum = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getLayer")(getLayer)
+    __obj.updateDynamic("getLayers")(getLayers)
+    __obj.updateDynamic("getMultipleLayers")(getMultipleLayers)
+    __obj.updateDynamic("getUpdatableLayer")(getUpdatableLayer)
+    __obj.updateDynamic("getUpdateLayerId")(getUpdateLayerId)
+    __obj.updateDynamic("listLayerIds")(listLayerIds)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XMultiLayerStratum]
+  }
+}
+

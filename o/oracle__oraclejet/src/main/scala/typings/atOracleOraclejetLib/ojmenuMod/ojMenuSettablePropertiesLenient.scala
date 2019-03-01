@@ -9,3 +9,12 @@ import scala.scalajs.js.annotation._
 - Dropped {[ P in keyof @oracle/oraclejet.@oracle/oraclejet/ojmenu.ojMenuSettableProperties ]:? @oracle/oraclejet.@oracle/oraclejet/ojmenu.ojMenuSettableProperties[P]} */ trait ojMenuSettablePropertiesLenient
   extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 
+object ojMenuSettablePropertiesLenient {
+  @scala.inline
+  def apply(StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null): ojMenuSettablePropertiesLenient = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[ojMenuSettablePropertiesLenient]
+  }
+}
+

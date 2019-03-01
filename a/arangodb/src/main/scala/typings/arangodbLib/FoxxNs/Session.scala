@@ -11,3 +11,14 @@ trait Session extends js.Object {
   var uid: java.lang.String | scala.Null
 }
 
+object Session {
+  @scala.inline
+  def apply(created: scala.Double, data: js.Any, uid: java.lang.String = null): Session = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("created")(created)
+    __obj.updateDynamic("data")(data)
+    if (uid != null) __obj.updateDynamic("uid")(uid)
+    __obj.asInstanceOf[Session]
+  }
+}
+

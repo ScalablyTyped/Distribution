@@ -21,3 +21,13 @@ trait TabsSettings extends js.Object {
   var tabs: js.Array[TabSettings]
 }
 
+object TabsSettings {
+  @scala.inline
+  def apply(defaultTabStop: scala.Double, tabs: js.Array[TabSettings]): TabsSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("defaultTabStop")(defaultTabStop)
+    __obj.updateDynamic("tabs")(tabs)
+    __obj.asInstanceOf[TabsSettings]
+  }
+}
+

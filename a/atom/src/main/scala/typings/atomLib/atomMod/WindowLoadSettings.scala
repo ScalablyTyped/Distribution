@@ -15,3 +15,26 @@ trait WindowLoadSettings extends js.Object {
   val safeMode: scala.Boolean
 }
 
+object WindowLoadSettings {
+  @scala.inline
+  def apply(
+    appVersion: java.lang.String,
+    atomHome: java.lang.String,
+    devMode: scala.Boolean,
+    resourcePath: java.lang.String,
+    safeMode: scala.Boolean,
+    env: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]] = null,
+    profileStartup: js.UndefOr[scala.Boolean] = js.undefined
+  ): WindowLoadSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("appVersion")(appVersion)
+    __obj.updateDynamic("atomHome")(atomHome)
+    __obj.updateDynamic("devMode")(devMode)
+    __obj.updateDynamic("resourcePath")(resourcePath)
+    __obj.updateDynamic("safeMode")(safeMode)
+    if (env != null) __obj.updateDynamic("env")(env)
+    if (!js.isUndefined(profileStartup)) __obj.updateDynamic("profileStartup")(profileStartup)
+    __obj.asInstanceOf[WindowLoadSettings]
+  }
+}
+

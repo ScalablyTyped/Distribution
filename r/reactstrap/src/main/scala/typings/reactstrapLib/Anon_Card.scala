@@ -19,3 +19,34 @@ trait Anon_Card extends js.Object {
   var vertical: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object Anon_Card {
+  @scala.inline
+  def apply(
+    card: js.UndefOr[scala.Boolean] = js.undefined,
+    className: java.lang.String = null,
+    cssModule: reactstrapLib.reactstrapMod.CSSModule = null,
+    fill: js.UndefOr[scala.Boolean] = js.undefined,
+    horizontal: java.lang.String = null,
+    justified: js.UndefOr[scala.Boolean] = js.undefined,
+    navbar: js.UndefOr[scala.Boolean] = js.undefined,
+    pills: js.UndefOr[scala.Boolean] = js.undefined,
+    tabs: js.UndefOr[scala.Boolean] = js.undefined,
+    tag: reactLib.reactMod.ReactNs.ReactType[_] = null,
+    vertical: scala.Boolean | java.lang.String = null
+  ): Anon_Card = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(card)) __obj.updateDynamic("card")(card)
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (cssModule != null) __obj.updateDynamic("cssModule")(cssModule)
+    if (!js.isUndefined(fill)) __obj.updateDynamic("fill")(fill)
+    if (horizontal != null) __obj.updateDynamic("horizontal")(horizontal)
+    if (!js.isUndefined(justified)) __obj.updateDynamic("justified")(justified)
+    if (!js.isUndefined(navbar)) __obj.updateDynamic("navbar")(navbar)
+    if (!js.isUndefined(pills)) __obj.updateDynamic("pills")(pills)
+    if (!js.isUndefined(tabs)) __obj.updateDynamic("tabs")(tabs)
+    if (tag != null) __obj.updateDynamic("tag")(tag.asInstanceOf[js.Any])
+    if (vertical != null) __obj.updateDynamic("vertical")(vertical.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Card]
+  }
+}
+

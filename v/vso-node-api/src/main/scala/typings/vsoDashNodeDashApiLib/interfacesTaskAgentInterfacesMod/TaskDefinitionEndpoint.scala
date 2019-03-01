@@ -32,3 +32,24 @@ trait TaskDefinitionEndpoint extends js.Object {
   var url: java.lang.String
 }
 
+object TaskDefinitionEndpoint {
+  @scala.inline
+  def apply(
+    connectionId: java.lang.String,
+    keySelector: java.lang.String,
+    scope: java.lang.String,
+    selector: java.lang.String,
+    taskId: java.lang.String,
+    url: java.lang.String
+  ): TaskDefinitionEndpoint = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connectionId")(connectionId)
+    __obj.updateDynamic("keySelector")(keySelector)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("selector")(selector)
+    __obj.updateDynamic("taskId")(taskId)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[TaskDefinitionEndpoint]
+  }
+}
+

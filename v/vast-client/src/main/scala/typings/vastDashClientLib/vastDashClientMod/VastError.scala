@@ -20,3 +20,20 @@ trait VastError extends js.Object {
   var system: js.UndefOr[VastSystem | java.lang.String | scala.Null] = js.undefined
 }
 
+object VastError {
+  @scala.inline
+  def apply(
+    ERRORCODE: java.lang.String | scala.Double,
+    ERRORMESSAGE: java.lang.String = null,
+    extensions: js.Array[VastAdExtension] = null,
+    system: VastSystem | java.lang.String = null
+  ): VastError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ERRORCODE")(ERRORCODE.asInstanceOf[js.Any])
+    if (ERRORMESSAGE != null) __obj.updateDynamic("ERRORMESSAGE")(ERRORMESSAGE)
+    if (extensions != null) __obj.updateDynamic("extensions")(extensions)
+    if (system != null) __obj.updateDynamic("system")(system.asInstanceOf[js.Any])
+    __obj.asInstanceOf[VastError]
+  }
+}
+

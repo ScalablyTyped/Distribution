@@ -10,3 +10,24 @@ trait DiffOptions
   var returnPartialData: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object DiffOptions {
+  @scala.inline
+  def apply(
+    optimistic: scala.Boolean,
+    query: graphqlLib.languageAstMod.DocumentNode,
+    previousResult: js.Any = null,
+    returnPartialData: js.UndefOr[scala.Boolean] = js.undefined,
+    rootId: java.lang.String = null,
+    variables: js.Any = null
+  ): DiffOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("optimistic")(optimistic)
+    __obj.updateDynamic("query")(query)
+    if (previousResult != null) __obj.updateDynamic("previousResult")(previousResult)
+    if (!js.isUndefined(returnPartialData)) __obj.updateDynamic("returnPartialData")(returnPartialData)
+    if (rootId != null) __obj.updateDynamic("rootId")(rootId)
+    if (variables != null) __obj.updateDynamic("variables")(variables)
+    __obj.asInstanceOf[DiffOptions]
+  }
+}
+

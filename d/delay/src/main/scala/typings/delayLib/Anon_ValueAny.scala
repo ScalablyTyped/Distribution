@@ -10,3 +10,12 @@ trait Anon_ValueAny extends js.Object {
   var value: js.UndefOr[js.Any] = js.undefined
 }
 
+object Anon_ValueAny {
+  @scala.inline
+  def apply(value: js.Any = null): Anon_ValueAny = {
+    val __obj = js.Dynamic.literal()
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_ValueAny]
+  }
+}
+

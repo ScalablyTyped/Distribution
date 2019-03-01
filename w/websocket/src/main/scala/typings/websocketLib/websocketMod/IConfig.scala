@@ -41,3 +41,24 @@ trait IConfig extends js.Object {
   var maxReceivedMessageSize: js.UndefOr[scala.Double] = js.undefined
 }
 
+object IConfig {
+  @scala.inline
+  def apply(
+    assembleFragments: js.UndefOr[scala.Boolean] = js.undefined,
+    closeTimeout: scala.Int | scala.Double = null,
+    fragmentOutgoingMessages: js.UndefOr[scala.Boolean] = js.undefined,
+    fragmentationThreshold: scala.Int | scala.Double = null,
+    maxReceivedFrameSize: scala.Int | scala.Double = null,
+    maxReceivedMessageSize: scala.Int | scala.Double = null
+  ): IConfig = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(assembleFragments)) __obj.updateDynamic("assembleFragments")(assembleFragments)
+    if (closeTimeout != null) __obj.updateDynamic("closeTimeout")(closeTimeout.asInstanceOf[js.Any])
+    if (!js.isUndefined(fragmentOutgoingMessages)) __obj.updateDynamic("fragmentOutgoingMessages")(fragmentOutgoingMessages)
+    if (fragmentationThreshold != null) __obj.updateDynamic("fragmentationThreshold")(fragmentationThreshold.asInstanceOf[js.Any])
+    if (maxReceivedFrameSize != null) __obj.updateDynamic("maxReceivedFrameSize")(maxReceivedFrameSize.asInstanceOf[js.Any])
+    if (maxReceivedMessageSize != null) __obj.updateDynamic("maxReceivedMessageSize")(maxReceivedMessageSize.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IConfig]
+  }
+}
+

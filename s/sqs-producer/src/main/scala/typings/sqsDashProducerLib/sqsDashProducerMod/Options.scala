@@ -12,3 +12,20 @@ trait Options extends js.Object {
   var sqs: js.UndefOr[awsDashSdkLib.awsDashSdkMod.SQS] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    queueUrl: java.lang.String,
+    batchSize: scala.Int | scala.Double = null,
+    region: java.lang.String = null,
+    sqs: awsDashSdkLib.awsDashSdkMod.SQS = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("queueUrl")(queueUrl)
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (sqs != null) __obj.updateDynamic("sqs")(sqs)
+    __obj.asInstanceOf[Options]
+  }
+}
+

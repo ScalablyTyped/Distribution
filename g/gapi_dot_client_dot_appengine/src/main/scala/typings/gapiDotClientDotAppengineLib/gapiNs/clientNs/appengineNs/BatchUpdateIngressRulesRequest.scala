@@ -10,3 +10,12 @@ trait BatchUpdateIngressRulesRequest extends js.Object {
   var ingressRules: js.UndefOr[js.Array[FirewallRule]] = js.undefined
 }
 
+object BatchUpdateIngressRulesRequest {
+  @scala.inline
+  def apply(ingressRules: js.Array[FirewallRule] = null): BatchUpdateIngressRulesRequest = {
+    val __obj = js.Dynamic.literal()
+    if (ingressRules != null) __obj.updateDynamic("ingressRules")(ingressRules)
+    __obj.asInstanceOf[BatchUpdateIngressRulesRequest]
+  }
+}
+

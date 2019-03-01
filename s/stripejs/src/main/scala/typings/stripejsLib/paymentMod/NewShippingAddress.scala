@@ -17,3 +17,16 @@ trait NewShippingAddress extends js.Object {
   def updateWith(dataToUpdate: UpdateOptions): scala.Unit
 }
 
+object NewShippingAddress {
+  @scala.inline
+  def apply(
+    shippingAddress: stripejsLib.shippingMod.ShippingAddress,
+    updateWith: js.Function1[UpdateOptions, scala.Unit]
+  ): NewShippingAddress = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("shippingAddress")(shippingAddress)
+    __obj.updateDynamic("updateWith")(updateWith)
+    __obj.asInstanceOf[NewShippingAddress]
+  }
+}
+

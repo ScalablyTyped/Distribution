@@ -20,3 +20,18 @@ trait SizeOptions extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SizeOptions {
+  @scala.inline
+  def apply(
+    maxSize: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): SizeOptions = {
+    val __obj = js.Dynamic.literal()
+    if (maxSize != null) __obj.updateDynamic("maxSize")(maxSize.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[SizeOptions]
+  }
+}
+

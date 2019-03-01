@@ -61,3 +61,57 @@ trait FunctionCallArgs[E, R1, R2, R3] extends js.Object {
   ): this.type
 }
 
+object FunctionCallArgs {
+  @scala.inline
+  def apply[E, R1, R2, R3](
+    addListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    emit_callback: js.Function2[backoffLib.backoffLibStrings.callback, js.Tuple4[E, R1, R2, R3], scala.Boolean],
+    getLastResult: js.Function0[js.Tuple4[E, R1, R2, R3]],
+    listeners_callback: js.Function1[
+      backoffLib.backoffLibStrings.callback, 
+      js.Array[js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit]]
+    ],
+    on_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    once_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    prependListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    prependOnceListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ],
+    removeListener_callback: js.Function2[
+      backoffLib.backoffLibStrings.callback, 
+      js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], scala.Unit], 
+      FunctionCallArgs[E, R1, R2, R3]
+    ]
+  ): FunctionCallArgs[E, R1, R2, R3] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addListener")(addListener_callback)
+    __obj.updateDynamic("emit")(emit_callback)
+    __obj.updateDynamic("getLastResult")(getLastResult)
+    __obj.updateDynamic("listeners")(listeners_callback)
+    __obj.updateDynamic("on")(on_callback)
+    __obj.updateDynamic("once")(once_callback)
+    __obj.updateDynamic("prependListener")(prependListener_callback)
+    __obj.updateDynamic("prependOnceListener")(prependOnceListener_callback)
+    __obj.updateDynamic("removeListener")(removeListener_callback)
+    __obj.asInstanceOf[FunctionCallArgs[E, R1, R2, R3]]
+  }
+}
+

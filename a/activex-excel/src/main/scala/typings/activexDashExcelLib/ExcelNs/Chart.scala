@@ -5,9 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("Excel.Chart")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- activexDashExcelLib.ExcelNs.AddSheetResult because Already inherited */ @JSGlobal("Excel.Chart")
 @js.native
-class Chart protected () extends js.Object {
+class Chart protected () extends Sheet {
   val Application: Application = js.native
   val Area3DGroup: ChartGroup = js.native
   var AutoScaling: scala.Boolean = js.native

@@ -36,3 +36,22 @@ trait Input extends js.Object {
   def origin(line: scala.Double, column: scala.Double): InputOrigin
 }
 
+object Input {
+  @scala.inline
+  def apply(
+    file: java.lang.String,
+    from: java.lang.String,
+    id: java.lang.String,
+    map: PreviousMap,
+    origin: js.Function2[scala.Double, scala.Double, InputOrigin]
+  ): Input = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("from")(from)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("map")(map)
+    __obj.updateDynamic("origin")(origin)
+    __obj.asInstanceOf[Input]
+  }
+}
+

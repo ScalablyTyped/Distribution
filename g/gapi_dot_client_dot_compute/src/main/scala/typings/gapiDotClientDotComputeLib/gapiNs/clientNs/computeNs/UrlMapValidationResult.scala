@@ -14,3 +14,20 @@ trait UrlMapValidationResult extends js.Object {
   var testPassed: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object UrlMapValidationResult {
+  @scala.inline
+  def apply(
+    loadErrors: js.Array[java.lang.String] = null,
+    loadSucceeded: js.UndefOr[scala.Boolean] = js.undefined,
+    testFailures: js.Array[TestFailure] = null,
+    testPassed: js.UndefOr[scala.Boolean] = js.undefined
+  ): UrlMapValidationResult = {
+    val __obj = js.Dynamic.literal()
+    if (loadErrors != null) __obj.updateDynamic("loadErrors")(loadErrors)
+    if (!js.isUndefined(loadSucceeded)) __obj.updateDynamic("loadSucceeded")(loadSucceeded)
+    if (testFailures != null) __obj.updateDynamic("testFailures")(testFailures)
+    if (!js.isUndefined(testPassed)) __obj.updateDynamic("testPassed")(testPassed)
+    __obj.asInstanceOf[UrlMapValidationResult]
+  }
+}
+

@@ -24,3 +24,24 @@ trait Anon_AddressResolution extends js.Object {
   ] = js.undefined
 }
 
+object Anon_AddressResolution {
+  @scala.inline
+  def apply(
+    addressResolution: cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.addressResolutionNs.AddressTranslator = null,
+    loadBalancing: cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.loadBalancingNs.LoadBalancingPolicy = null,
+    reconnection: cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.reconnectionNs.ReconnectionPolicy = null,
+    retry: cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.retryNs.RetryPolicy = null,
+    speculativeExecution: cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.speculativeExecutionNs.SpeculativeExecutionPolicy = null,
+    timestampGeneration: cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.timestampGenerationNs.TimestampGenerator = null
+  ): Anon_AddressResolution = {
+    val __obj = js.Dynamic.literal()
+    if (addressResolution != null) __obj.updateDynamic("addressResolution")(addressResolution)
+    if (loadBalancing != null) __obj.updateDynamic("loadBalancing")(loadBalancing)
+    if (reconnection != null) __obj.updateDynamic("reconnection")(reconnection)
+    if (retry != null) __obj.updateDynamic("retry")(retry)
+    if (speculativeExecution != null) __obj.updateDynamic("speculativeExecution")(speculativeExecution)
+    if (timestampGeneration != null) __obj.updateDynamic("timestampGeneration")(timestampGeneration)
+    __obj.asInstanceOf[Anon_AddressResolution]
+  }
+}
+

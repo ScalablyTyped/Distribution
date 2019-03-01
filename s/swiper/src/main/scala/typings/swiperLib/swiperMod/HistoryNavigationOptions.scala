@@ -21,3 +21,13 @@ trait HistoryNavigationOptions extends js.Object {
   var replaceState: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object HistoryNavigationOptions {
+  @scala.inline
+  def apply(key: java.lang.String = null, replaceState: js.UndefOr[scala.Boolean] = js.undefined): HistoryNavigationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (!js.isUndefined(replaceState)) __obj.updateDynamic("replaceState")(replaceState)
+    __obj.asInstanceOf[HistoryNavigationOptions]
+  }
+}
+

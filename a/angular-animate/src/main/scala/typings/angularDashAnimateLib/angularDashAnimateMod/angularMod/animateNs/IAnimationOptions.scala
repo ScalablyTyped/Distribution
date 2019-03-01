@@ -82,3 +82,40 @@ trait IAnimationOptions extends js.Object {
   var transitionStyle: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IAnimationOptions {
+  @scala.inline
+  def apply(
+    addClass: java.lang.String = null,
+    cleanupStyles: js.UndefOr[scala.Boolean] = js.undefined,
+    delay: scala.Int | scala.Double = null,
+    duration: scala.Int | scala.Double = null,
+    easing: java.lang.String = null,
+    event: java.lang.String = null,
+    from: js.Object = null,
+    keyframeStyle: java.lang.String = null,
+    removeClass: java.lang.String = null,
+    stagger: scala.Int | scala.Double = null,
+    staggerIndex: scala.Int | scala.Double = null,
+    structural: js.UndefOr[scala.Boolean] = js.undefined,
+    to: js.Object = null,
+    transitionStyle: java.lang.String = null
+  ): IAnimationOptions = {
+    val __obj = js.Dynamic.literal()
+    if (addClass != null) __obj.updateDynamic("addClass")(addClass)
+    if (!js.isUndefined(cleanupStyles)) __obj.updateDynamic("cleanupStyles")(cleanupStyles)
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (easing != null) __obj.updateDynamic("easing")(easing)
+    if (event != null) __obj.updateDynamic("event")(event)
+    if (from != null) __obj.updateDynamic("from")(from)
+    if (keyframeStyle != null) __obj.updateDynamic("keyframeStyle")(keyframeStyle)
+    if (removeClass != null) __obj.updateDynamic("removeClass")(removeClass)
+    if (stagger != null) __obj.updateDynamic("stagger")(stagger.asInstanceOf[js.Any])
+    if (staggerIndex != null) __obj.updateDynamic("staggerIndex")(staggerIndex.asInstanceOf[js.Any])
+    if (!js.isUndefined(structural)) __obj.updateDynamic("structural")(structural)
+    if (to != null) __obj.updateDynamic("to")(to)
+    if (transitionStyle != null) __obj.updateDynamic("transitionStyle")(transitionStyle)
+    __obj.asInstanceOf[IAnimationOptions]
+  }
+}
+

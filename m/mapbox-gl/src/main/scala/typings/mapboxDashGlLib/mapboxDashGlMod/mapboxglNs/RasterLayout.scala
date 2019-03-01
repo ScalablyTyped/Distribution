@@ -11,3 +11,14 @@ trait RasterLayout extends js.Object {
   ] = js.undefined
 }
 
+object RasterLayout {
+  @scala.inline
+  def apply(
+    visibility: mapboxDashGlLib.mapboxDashGlLibStrings.visible | mapboxDashGlLib.mapboxDashGlLibStrings.none = null
+  ): RasterLayout = {
+    val __obj = js.Dynamic.literal()
+    if (visibility != null) __obj.updateDynamic("visibility")(visibility.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RasterLayout]
+  }
+}
+

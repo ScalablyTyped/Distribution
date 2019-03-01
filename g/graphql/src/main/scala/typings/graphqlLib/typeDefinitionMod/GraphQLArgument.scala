@@ -15,3 +15,21 @@ trait GraphQLArgument extends js.Object {
   var `type`: GraphQLInputType
 }
 
+object GraphQLArgument {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    `type`: GraphQLInputType,
+    astNode: graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.languageAstMod.InputValueDefinitionNode] = null,
+    defaultValue: js.Any = null,
+    description: graphqlLib.tsutilsMaybeMod.Maybe[java.lang.String] = null
+  ): GraphQLArgument = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("name")(name)
+    if (astNode != null) __obj.updateDynamic("astNode")(astNode.asInstanceOf[js.Any])
+    if (defaultValue != null) __obj.updateDynamic("defaultValue")(defaultValue)
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    __obj.asInstanceOf[GraphQLArgument]
+  }
+}
+

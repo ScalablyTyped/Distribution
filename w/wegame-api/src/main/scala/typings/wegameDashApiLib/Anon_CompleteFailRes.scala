@@ -15,3 +15,20 @@ trait Anon_CompleteFailRes extends js.Object {
   var todayPlayedTime: scala.Double
 }
 
+object Anon_CompleteFailRes {
+  @scala.inline
+  def apply(
+    todayPlayedTime: scala.Double,
+    complete: js.Function0[scala.Unit] = null,
+    fail: js.Function0[scala.Unit] = null,
+    success: js.Function1[/* res */ Anon_Result, scala.Unit] = null
+  ): Anon_CompleteFailRes = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("todayPlayedTime")(todayPlayedTime)
+    if (complete != null) __obj.updateDynamic("complete")(complete)
+    if (fail != null) __obj.updateDynamic("fail")(fail)
+    if (success != null) __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Anon_CompleteFailRes]
+  }
+}
+

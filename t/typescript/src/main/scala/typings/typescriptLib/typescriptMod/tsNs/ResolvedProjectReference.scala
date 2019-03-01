@@ -11,3 +11,18 @@ trait ResolvedProjectReference extends js.Object {
   var sourceFile: SourceFile
 }
 
+object ResolvedProjectReference {
+  @scala.inline
+  def apply(
+    commandLine: ParsedCommandLine,
+    sourceFile: SourceFile,
+    references: js.Array[js.UndefOr[ResolvedProjectReference]] = null
+  ): ResolvedProjectReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commandLine")(commandLine)
+    __obj.updateDynamic("sourceFile")(sourceFile)
+    if (references != null) __obj.updateDynamic("references")(references)
+    __obj.asInstanceOf[ResolvedProjectReference]
+  }
+}
+

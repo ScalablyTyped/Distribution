@@ -20,3 +20,18 @@ trait BatchWriteItemOutput extends js.Object {
   var UnprocessedItems: js.UndefOr[BatchWriteItemRequestMap] = js.undefined
 }
 
+object BatchWriteItemOutput {
+  @scala.inline
+  def apply(
+    ConsumedCapacity: ConsumedCapacityMultiple = null,
+    ItemCollectionMetrics: ItemCollectionMetricsPerTable = null,
+    UnprocessedItems: BatchWriteItemRequestMap = null
+  ): BatchWriteItemOutput = {
+    val __obj = js.Dynamic.literal()
+    if (ConsumedCapacity != null) __obj.updateDynamic("ConsumedCapacity")(ConsumedCapacity)
+    if (ItemCollectionMetrics != null) __obj.updateDynamic("ItemCollectionMetrics")(ItemCollectionMetrics)
+    if (UnprocessedItems != null) __obj.updateDynamic("UnprocessedItems")(UnprocessedItems)
+    __obj.asInstanceOf[BatchWriteItemOutput]
+  }
+}
+

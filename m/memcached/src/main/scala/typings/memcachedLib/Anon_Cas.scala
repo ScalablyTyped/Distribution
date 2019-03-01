@@ -10,3 +10,16 @@ trait Anon_Cas
   var cas: java.lang.String
 }
 
+object Anon_Cas {
+  @scala.inline
+  def apply(
+    cas: java.lang.String,
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): Anon_Cas = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cas")(cas)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Anon_Cas]
+  }
+}
+

@@ -10,3 +10,12 @@ trait JSONSchemaRefType extends js.Object {
   var $ref: java.lang.String
 }
 
+object JSONSchemaRefType {
+  @scala.inline
+  def apply($ref: java.lang.String): JSONSchemaRefType = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$ref")($ref)
+    __obj.asInstanceOf[JSONSchemaRefType]
+  }
+}
+

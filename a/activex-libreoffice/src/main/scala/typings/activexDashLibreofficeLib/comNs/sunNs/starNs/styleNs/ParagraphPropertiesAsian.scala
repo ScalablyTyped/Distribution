@@ -15,3 +15,18 @@ trait ParagraphPropertiesAsian extends js.Object {
   var ParaIsHangingPunctuation: scala.Boolean
 }
 
+object ParagraphPropertiesAsian {
+  @scala.inline
+  def apply(
+    ParaIsCharacterDistance: scala.Boolean,
+    ParaIsForbiddenRules: scala.Boolean,
+    ParaIsHangingPunctuation: scala.Boolean
+  ): ParagraphPropertiesAsian = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("ParaIsCharacterDistance")(ParaIsCharacterDistance)
+    __obj.updateDynamic("ParaIsForbiddenRules")(ParaIsForbiddenRules)
+    __obj.updateDynamic("ParaIsHangingPunctuation")(ParaIsHangingPunctuation)
+    __obj.asInstanceOf[ParagraphPropertiesAsian]
+  }
+}
+

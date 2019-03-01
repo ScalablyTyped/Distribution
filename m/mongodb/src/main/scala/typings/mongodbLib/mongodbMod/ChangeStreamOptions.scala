@@ -14,3 +14,24 @@ trait ChangeStreamOptions extends js.Object {
   var resumeAfter: js.UndefOr[js.Object] = js.undefined
 }
 
+object ChangeStreamOptions {
+  @scala.inline
+  def apply(
+    batchSize: scala.Int | scala.Double = null,
+    collation: CollationDocument = null,
+    fullDocument: java.lang.String = null,
+    maxAwaitTimeMS: scala.Int | scala.Double = null,
+    readPreference: ReadPreference = null,
+    resumeAfter: js.Object = null
+  ): ChangeStreamOptions = {
+    val __obj = js.Dynamic.literal()
+    if (batchSize != null) __obj.updateDynamic("batchSize")(batchSize.asInstanceOf[js.Any])
+    if (collation != null) __obj.updateDynamic("collation")(collation)
+    if (fullDocument != null) __obj.updateDynamic("fullDocument")(fullDocument)
+    if (maxAwaitTimeMS != null) __obj.updateDynamic("maxAwaitTimeMS")(maxAwaitTimeMS.asInstanceOf[js.Any])
+    if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference)
+    if (resumeAfter != null) __obj.updateDynamic("resumeAfter")(resumeAfter)
+    __obj.asInstanceOf[ChangeStreamOptions]
+  }
+}
+

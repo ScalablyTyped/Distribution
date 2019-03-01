@@ -154,3 +154,80 @@ trait TreeProps extends js.Object {
   var showLine: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object TreeProps {
+  @scala.inline
+  def apply(
+    autoExpandParent: js.UndefOr[scala.Boolean] = js.undefined,
+    checkStrictly: js.UndefOr[scala.Boolean] = js.undefined,
+    checkable: scala.Boolean | reactLib.reactMod.Global.JSXNs.Element = null,
+    checkedKeys: js.Array[java.lang.String] | rcDashTreeLib.Anon_Checked = null,
+    className: java.lang.String = null,
+    defaultCheckedKeys: js.Array[java.lang.String] = null,
+    defaultExpandAll: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultExpandParent: js.UndefOr[scala.Boolean] = js.undefined,
+    defaultExpandedKeys: js.Array[java.lang.String] = null,
+    defaultSelectedKeys: js.Array[java.lang.String] = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    draggable: js.UndefOr[scala.Boolean] = js.undefined,
+    expandedKeys: js.Array[java.lang.String] = null,
+    filterTreeNode: js.Function1[/* node */ InternalTreeNode, scala.Boolean] = null,
+    icon: reactLib.reactMod.Global.JSXNs.Element | (js.Function1[/* props */ InternalTreeNodeProps, reactLib.reactMod.Global.JSXNs.Element]) = null,
+    loadData: js.Function1[/* node */ InternalTreeNode, js.Promise[_]] = null,
+    multiple: js.UndefOr[scala.Boolean] = js.undefined,
+    onCheck: js.Function2[/* checkedKeys */ js.Array[java.lang.String], /* e */ CheckData, scala.Unit] = null,
+    onDragEnd: js.Function1[/* props */ OnDragEndData, scala.Unit] = null,
+    onDragEnter: js.Function1[/* props */ OnDragEnterData, scala.Unit] = null,
+    onDragLeave: js.Function1[/* props */ OnDragLeaveData, scala.Unit] = null,
+    onDragOver: js.Function1[/* props */ OnDragOverData, scala.Unit] = null,
+    onDragStart: js.Function1[/* props */ OnDragStartData, scala.Unit] = null,
+    onDrop: js.Function1[/* props */ OnDropData, scala.Unit] = null,
+    onExpand: js.Function2[/* expandedKeys */ js.Array[java.lang.String], /* e */ ExpandData, scala.Unit] = null,
+    onMouseEnter: js.Function1[/* props */ OnMouseEnterData, scala.Unit] = null,
+    onMouseLeave: js.Function1[/* props */ OnMouseLeaveData, scala.Unit] = null,
+    onRightClick: js.Function1[/* props */ OnRightClickData, scala.Unit] = null,
+    onSelect: js.Function2[/* selectedKeys */ js.Array[java.lang.String], /* e */ SelectData, scala.Unit] = null,
+    prefixCls: java.lang.String = null,
+    selectable: js.UndefOr[scala.Boolean] = js.undefined,
+    selectedKeys: js.Array[java.lang.String] = null,
+    showIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    showLine: js.UndefOr[scala.Boolean] = js.undefined
+  ): TreeProps = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(autoExpandParent)) __obj.updateDynamic("autoExpandParent")(autoExpandParent)
+    if (!js.isUndefined(checkStrictly)) __obj.updateDynamic("checkStrictly")(checkStrictly)
+    if (checkable != null) __obj.updateDynamic("checkable")(checkable.asInstanceOf[js.Any])
+    if (checkedKeys != null) __obj.updateDynamic("checkedKeys")(checkedKeys.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (defaultCheckedKeys != null) __obj.updateDynamic("defaultCheckedKeys")(defaultCheckedKeys)
+    if (!js.isUndefined(defaultExpandAll)) __obj.updateDynamic("defaultExpandAll")(defaultExpandAll)
+    if (!js.isUndefined(defaultExpandParent)) __obj.updateDynamic("defaultExpandParent")(defaultExpandParent)
+    if (defaultExpandedKeys != null) __obj.updateDynamic("defaultExpandedKeys")(defaultExpandedKeys)
+    if (defaultSelectedKeys != null) __obj.updateDynamic("defaultSelectedKeys")(defaultSelectedKeys)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (!js.isUndefined(draggable)) __obj.updateDynamic("draggable")(draggable)
+    if (expandedKeys != null) __obj.updateDynamic("expandedKeys")(expandedKeys)
+    if (filterTreeNode != null) __obj.updateDynamic("filterTreeNode")(filterTreeNode)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (loadData != null) __obj.updateDynamic("loadData")(loadData)
+    if (!js.isUndefined(multiple)) __obj.updateDynamic("multiple")(multiple)
+    if (onCheck != null) __obj.updateDynamic("onCheck")(onCheck)
+    if (onDragEnd != null) __obj.updateDynamic("onDragEnd")(onDragEnd)
+    if (onDragEnter != null) __obj.updateDynamic("onDragEnter")(onDragEnter)
+    if (onDragLeave != null) __obj.updateDynamic("onDragLeave")(onDragLeave)
+    if (onDragOver != null) __obj.updateDynamic("onDragOver")(onDragOver)
+    if (onDragStart != null) __obj.updateDynamic("onDragStart")(onDragStart)
+    if (onDrop != null) __obj.updateDynamic("onDrop")(onDrop)
+    if (onExpand != null) __obj.updateDynamic("onExpand")(onExpand)
+    if (onMouseEnter != null) __obj.updateDynamic("onMouseEnter")(onMouseEnter)
+    if (onMouseLeave != null) __obj.updateDynamic("onMouseLeave")(onMouseLeave)
+    if (onRightClick != null) __obj.updateDynamic("onRightClick")(onRightClick)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (prefixCls != null) __obj.updateDynamic("prefixCls")(prefixCls)
+    if (!js.isUndefined(selectable)) __obj.updateDynamic("selectable")(selectable)
+    if (selectedKeys != null) __obj.updateDynamic("selectedKeys")(selectedKeys)
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon)
+    if (!js.isUndefined(showLine)) __obj.updateDynamic("showLine")(showLine)
+    __obj.asInstanceOf[TreeProps]
+  }
+}
+

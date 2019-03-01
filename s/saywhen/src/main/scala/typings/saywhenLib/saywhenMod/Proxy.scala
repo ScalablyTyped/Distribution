@@ -11,3 +11,17 @@ trait Proxy[T /* <: saywhenLib.Func */] extends js.Object {
   def thenThrow(err: stdLib.Error): Proxy[T]
 }
 
+object Proxy {
+  @scala.inline
+  def apply[T /* <: saywhenLib.Func */](
+    `then`: js.Function1[T, Proxy[T]],
+    thenReturn: js.Function1[js.Any, Proxy[T]],
+    thenThrow: js.Function1[stdLib.Error, Proxy[T]]
+  ): Proxy[T] = {
+    val __obj = js.Dynamic.literal(`then` = `then`)
+    __obj.updateDynamic("thenReturn")(thenReturn)
+    __obj.updateDynamic("thenThrow")(thenThrow)
+    __obj.asInstanceOf[Proxy[T]]
+  }
+}
+

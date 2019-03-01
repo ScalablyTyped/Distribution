@@ -9,3 +9,12 @@ trait RevokeParams extends js.Object {
   var refreshToken: java.lang.String
 }
 
+object RevokeParams {
+  @scala.inline
+  def apply(refreshToken: java.lang.String): RevokeParams = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("refreshToken")(refreshToken)
+    __obj.asInstanceOf[RevokeParams]
+  }
+}
+

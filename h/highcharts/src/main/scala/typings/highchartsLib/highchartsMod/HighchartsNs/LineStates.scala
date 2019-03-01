@@ -40,3 +40,24 @@ trait LineStates extends js.Object {
   var marker: js.UndefOr[Marker] = js.undefined
 }
 
+object LineStates {
+  @scala.inline
+  def apply(
+    animation: scala.Boolean | Animation = null,
+    enabled: js.UndefOr[scala.Boolean] = js.undefined,
+    halo: scala.Boolean | Halo = null,
+    lineWidth: scala.Int | scala.Double = null,
+    lineWidthPlus: scala.Int | scala.Double = null,
+    marker: Marker = null
+  ): LineStates = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation.asInstanceOf[js.Any])
+    if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
+    if (halo != null) __obj.updateDynamic("halo")(halo.asInstanceOf[js.Any])
+    if (lineWidth != null) __obj.updateDynamic("lineWidth")(lineWidth.asInstanceOf[js.Any])
+    if (lineWidthPlus != null) __obj.updateDynamic("lineWidthPlus")(lineWidthPlus.asInstanceOf[js.Any])
+    if (marker != null) __obj.updateDynamic("marker")(marker)
+    __obj.asInstanceOf[LineStates]
+  }
+}
+

@@ -146,3 +146,68 @@ trait _Impl extends js.Object {
   def onVisible(`this`: semanticDashUiDashSidebarLib.JQuery): scala.Unit
 }
 
+object _Impl {
+  @scala.inline
+  def apply(
+    className: semanticDashUiDashSidebarLib.SemanticUINs.SidebarNs.ClassNameSettings,
+    closable: scala.Boolean,
+    context: java.lang.String | semanticDashUiDashSidebarLib.JQuery,
+    debug: scala.Boolean,
+    defaultTransition: semanticDashUiDashSidebarLib.SemanticUINs.SidebarNs.DefaultTransitionSettings,
+    delaySetup: scala.Boolean,
+    dimPage: scala.Boolean,
+    duration: scala.Double,
+    easing: java.lang.String,
+    error: semanticDashUiDashSidebarLib.SemanticUINs.SidebarNs.ErrorSettings,
+    exclusive: scala.Boolean,
+    mobileTransition: java.lang.String,
+    name: java.lang.String,
+    namespace: java.lang.String,
+    onChange: js.Function1[semanticDashUiDashSidebarLib.JQuery, scala.Unit],
+    onHidden: js.Function1[semanticDashUiDashSidebarLib.JQuery, scala.Unit],
+    onHide: js.Function1[semanticDashUiDashSidebarLib.JQuery, scala.Unit],
+    onShow: js.Function1[semanticDashUiDashSidebarLib.JQuery, scala.Unit],
+    onVisible: js.Function1[semanticDashUiDashSidebarLib.JQuery, scala.Unit],
+    performance: scala.Boolean,
+    regExp: semanticDashUiDashSidebarLib.SemanticUINs.SidebarNs.RegExpSettings,
+    returnScroll: scala.Boolean,
+    scrollLock: scala.Boolean,
+    selector: semanticDashUiDashSidebarLib.SemanticUINs.SidebarNs.SelectorSettings,
+    silent: scala.Boolean,
+    transition: java.lang.String,
+    useLegacy: semanticDashUiDashSidebarLib.semanticDashUiDashSidebarLibStrings.auto | scala.Boolean,
+    verbose: scala.Boolean
+  ): _Impl = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("className")(className.asInstanceOf[js.Any])
+    __obj.updateDynamic("closable")(closable)
+    __obj.updateDynamic("context")(context.asInstanceOf[js.Any])
+    __obj.updateDynamic("debug")(debug)
+    __obj.updateDynamic("defaultTransition")(defaultTransition.asInstanceOf[js.Any])
+    __obj.updateDynamic("delaySetup")(delaySetup)
+    __obj.updateDynamic("dimPage")(dimPage)
+    __obj.updateDynamic("duration")(duration)
+    __obj.updateDynamic("easing")(easing)
+    __obj.updateDynamic("error")(error.asInstanceOf[js.Any])
+    __obj.updateDynamic("exclusive")(exclusive)
+    __obj.updateDynamic("mobileTransition")(mobileTransition)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("namespace")(namespace)
+    __obj.updateDynamic("onChange")(onChange)
+    __obj.updateDynamic("onHidden")(onHidden)
+    __obj.updateDynamic("onHide")(onHide)
+    __obj.updateDynamic("onShow")(onShow)
+    __obj.updateDynamic("onVisible")(onVisible)
+    __obj.updateDynamic("performance")(performance)
+    __obj.updateDynamic("regExp")(regExp.asInstanceOf[js.Any])
+    __obj.updateDynamic("returnScroll")(returnScroll)
+    __obj.updateDynamic("scrollLock")(scrollLock)
+    __obj.updateDynamic("selector")(selector.asInstanceOf[js.Any])
+    __obj.updateDynamic("silent")(silent)
+    __obj.updateDynamic("transition")(transition)
+    __obj.updateDynamic("useLegacy")(useLegacy.asInstanceOf[js.Any])
+    __obj.updateDynamic("verbose")(verbose)
+    __obj.asInstanceOf[_Impl]
+  }
+}
+

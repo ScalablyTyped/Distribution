@@ -13,3 +13,13 @@ trait FolderList extends js.Object {
   var List: activexDashInteropLib.SafeArray[FolderListEntry]
 }
 
+object FolderList {
+  @scala.inline
+  def apply(Command: FolderListCommand, List: activexDashInteropLib.SafeArray[FolderListEntry]): FolderList = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Command")(Command)
+    __obj.updateDynamic("List")(List)
+    __obj.asInstanceOf[FolderList]
+  }
+}
+

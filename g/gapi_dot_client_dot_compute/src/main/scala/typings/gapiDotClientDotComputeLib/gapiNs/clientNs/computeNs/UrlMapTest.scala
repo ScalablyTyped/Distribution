@@ -16,3 +16,20 @@ trait UrlMapTest extends js.Object {
   var service: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object UrlMapTest {
+  @scala.inline
+  def apply(
+    description: java.lang.String = null,
+    host: java.lang.String = null,
+    path: java.lang.String = null,
+    service: java.lang.String = null
+  ): UrlMapTest = {
+    val __obj = js.Dynamic.literal()
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (path != null) __obj.updateDynamic("path")(path)
+    if (service != null) __obj.updateDynamic("service")(service)
+    __obj.asInstanceOf[UrlMapTest]
+  }
+}
+

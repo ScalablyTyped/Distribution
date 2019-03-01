@@ -123,3 +123,36 @@ trait DistanceMatrixRequest extends js.Object {
   var units: js.UndefOr[UnitSystem] = js.undefined
 }
 
+object DistanceMatrixRequest {
+  @scala.inline
+  def apply(
+    destinations: js.Array[LatLng],
+    origins: js.Array[LatLng],
+    arrival_time: stdLib.Date | scala.Double = null,
+    avoid: js.Array[TravelRestriction] = null,
+    departure_time: stdLib.Date | scala.Double = null,
+    language: java.lang.String = null,
+    mode: TravelMode = null,
+    region: java.lang.String = null,
+    traffic_model: TrafficModel = null,
+    transit_mode: js.Array[TransitMode] = null,
+    transit_routing_preference: TransitRoutingPreference = null,
+    units: UnitSystem = null
+  ): DistanceMatrixRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinations")(destinations)
+    __obj.updateDynamic("origins")(origins)
+    if (arrival_time != null) __obj.updateDynamic("arrival_time")(arrival_time.asInstanceOf[js.Any])
+    if (avoid != null) __obj.updateDynamic("avoid")(avoid)
+    if (departure_time != null) __obj.updateDynamic("departure_time")(departure_time.asInstanceOf[js.Any])
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (mode != null) __obj.updateDynamic("mode")(mode)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (traffic_model != null) __obj.updateDynamic("traffic_model")(traffic_model)
+    if (transit_mode != null) __obj.updateDynamic("transit_mode")(transit_mode)
+    if (transit_routing_preference != null) __obj.updateDynamic("transit_routing_preference")(transit_routing_preference)
+    if (units != null) __obj.updateDynamic("units")(units)
+    __obj.asInstanceOf[DistanceMatrixRequest]
+  }
+}
+

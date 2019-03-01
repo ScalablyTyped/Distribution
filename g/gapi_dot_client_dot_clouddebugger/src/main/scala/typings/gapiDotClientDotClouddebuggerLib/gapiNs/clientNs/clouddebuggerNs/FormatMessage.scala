@@ -22,3 +22,13 @@ trait FormatMessage extends js.Object {
   var parameters: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 
+object FormatMessage {
+  @scala.inline
+  def apply(format: java.lang.String = null, parameters: js.Array[java.lang.String] = null): FormatMessage = {
+    val __obj = js.Dynamic.literal()
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (parameters != null) __obj.updateDynamic("parameters")(parameters)
+    __obj.asInstanceOf[FormatMessage]
+  }
+}
+

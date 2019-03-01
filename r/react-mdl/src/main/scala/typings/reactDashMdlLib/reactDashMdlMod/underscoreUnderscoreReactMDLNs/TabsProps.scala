@@ -16,3 +16,28 @@ trait TabsProps
   var title: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TabsProps {
+  @scala.inline
+  def apply(
+    MDLDOMAttributes: MDLDOMAttributes[Tabs] = null,
+    MDLHTMLAttributes: MDLHTMLAttributes = null,
+    activeTab: scala.Int | scala.Double = null,
+    name: java.lang.String = null,
+    onChange: js.Function1[/* tabId */ scala.Double, _] = null,
+    onClick: reactLib.reactMod.ReactNs.MouseEventHandler[Tabs] = null,
+    tabBarProps: TabBarProps = null,
+    title: java.lang.String = null
+  ): TabsProps = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, MDLDOMAttributes)
+    js.Dynamic.global.Object.assign(__obj, MDLHTMLAttributes)
+    if (activeTab != null) __obj.updateDynamic("activeTab")(activeTab.asInstanceOf[js.Any])
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (onChange != null) __obj.updateDynamic("onChange")(onChange)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (tabBarProps != null) __obj.updateDynamic("tabBarProps")(tabBarProps)
+    if (title != null) __obj.updateDynamic("title")(title)
+    __obj.asInstanceOf[TabsProps]
+  }
+}
+

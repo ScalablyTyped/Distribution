@@ -16,3 +16,13 @@ trait RenderDates extends js.Object {
   var start: js.UndefOr[js.Any] = js.undefined
 }
 
+object RenderDates {
+  @scala.inline
+  def apply(end: js.Any = null, start: js.Any = null): RenderDates = {
+    val __obj = js.Dynamic.literal()
+    if (end != null) __obj.updateDynamic("end")(end)
+    if (start != null) __obj.updateDynamic("start")(start)
+    __obj.asInstanceOf[RenderDates]
+  }
+}
+

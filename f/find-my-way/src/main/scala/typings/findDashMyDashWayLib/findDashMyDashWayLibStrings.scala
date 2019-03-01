@@ -7,106 +7,140 @@ import scala.scalajs.js.annotation._
 
 object findDashMyDashWayLibStrings {
   @js.native
-  sealed trait ACL extends js.Object
+  sealed trait ACL
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait BIND extends js.Object
+  sealed trait BIND
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait CHECKOUT extends js.Object
+  sealed trait CHECKOUT
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait CONNECT extends js.Object
+  sealed trait CONNECT
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait COPY extends js.Object
+  sealed trait COPY
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait DELETE extends js.Object
+  sealed trait DELETE
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait GET extends js.Object
+  sealed trait GET
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait HEAD extends js.Object
+  sealed trait HEAD
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait LINK extends js.Object
+  sealed trait LINK
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait LOCK extends js.Object
+  sealed trait LOCK
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait `M-SEARCH` extends js.Object
+  sealed trait `M-SEARCH`
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait MERGE extends js.Object
+  sealed trait MERGE
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait MKACTIVITY extends js.Object
+  sealed trait MKACTIVITY
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait MKCALENDAR extends js.Object
+  sealed trait MKCALENDAR
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait MKCOL extends js.Object
+  sealed trait MKCOL
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait MOVE extends js.Object
+  sealed trait MOVE
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait NOTIFY extends js.Object
+  sealed trait NOTIFY
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait OPTIONS extends js.Object
+  sealed trait OPTIONS
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait PATCH extends js.Object
+  sealed trait PATCH
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait POST extends js.Object
+  sealed trait POST
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait PROPFIND extends js.Object
+  sealed trait PROPFIND
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait PROPPATCH extends js.Object
+  sealed trait PROPPATCH
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait PURGE extends js.Object
+  sealed trait PURGE
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait PUT extends js.Object
+  sealed trait PUT
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait REBIND extends js.Object
+  sealed trait REBIND
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait REPORT extends js.Object
+  sealed trait REPORT
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait SEARCH extends js.Object
+  sealed trait SEARCH
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait SOURCE extends js.Object
+  sealed trait SOURCE
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait SUBSCRIBE extends js.Object
+  sealed trait SUBSCRIBE
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait TRACE extends js.Object
+  sealed trait TRACE
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait UNBIND extends js.Object
+  sealed trait UNBIND
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait UNLINK extends js.Object
+  sealed trait UNLINK
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait UNLOCK extends js.Object
+  sealed trait UNLOCK
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @js.native
-  sealed trait UNSUBSCRIBE extends js.Object
+  sealed trait UNSUBSCRIBE
+    extends findDashMyDashWayLib.findDashMyDashWayMod.RouterNs.HTTPMethod
   
   @scala.inline
   def ACL: ACL = "ACL".asInstanceOf[ACL]

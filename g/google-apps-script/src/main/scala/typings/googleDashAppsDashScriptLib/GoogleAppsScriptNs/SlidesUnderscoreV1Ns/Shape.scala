@@ -31,3 +31,20 @@ trait Shape extends js.Object {
   var text: TextContent
 }
 
+object Shape {
+  @scala.inline
+  def apply(
+    placeholder: Placeholder,
+    shape_properties: ShapeProperties,
+    shape_type: ShapeType,
+    text: TextContent
+  ): Shape = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("placeholder")(placeholder)
+    __obj.updateDynamic("shape_properties")(shape_properties)
+    __obj.updateDynamic("shape_type")(shape_type)
+    __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[Shape]
+  }
+}
+

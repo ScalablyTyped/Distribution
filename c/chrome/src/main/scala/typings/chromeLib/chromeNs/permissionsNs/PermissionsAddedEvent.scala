@@ -14,3 +14,12 @@ trait PermissionsAddedEvent extends js.Object {
   def addListener(callback: js.Function1[/* permissions */ Permissions, scala.Unit]): scala.Unit
 }
 
+object PermissionsAddedEvent {
+  @scala.inline
+  def apply(addListener: js.Function1[js.Function1[/* permissions */ Permissions, scala.Unit], scala.Unit]): PermissionsAddedEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("addListener")(addListener)
+    __obj.asInstanceOf[PermissionsAddedEvent]
+  }
+}
+

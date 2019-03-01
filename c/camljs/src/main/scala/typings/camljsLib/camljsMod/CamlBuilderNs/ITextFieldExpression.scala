@@ -22,3 +22,26 @@ trait ITextFieldExpression extends js.Object {
   def NotEqualTo(value: java.lang.String): IExpression
 }
 
+object ITextFieldExpression {
+  @scala.inline
+  def apply(
+    BeginsWith: js.Function1[java.lang.String, IExpression],
+    Contains: js.Function1[java.lang.String, IExpression],
+    EqualTo: js.Function1[java.lang.String, IExpression],
+    In: js.Function1[js.Array[java.lang.String], IExpression],
+    IsNotNull: js.Function0[IExpression],
+    IsNull: js.Function0[IExpression],
+    NotEqualTo: js.Function1[java.lang.String, IExpression]
+  ): ITextFieldExpression = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BeginsWith")(BeginsWith)
+    __obj.updateDynamic("Contains")(Contains)
+    __obj.updateDynamic("EqualTo")(EqualTo)
+    __obj.updateDynamic("In")(In)
+    __obj.updateDynamic("IsNotNull")(IsNotNull)
+    __obj.updateDynamic("IsNull")(IsNull)
+    __obj.updateDynamic("NotEqualTo")(NotEqualTo)
+    __obj.asInstanceOf[ITextFieldExpression]
+  }
+}
+

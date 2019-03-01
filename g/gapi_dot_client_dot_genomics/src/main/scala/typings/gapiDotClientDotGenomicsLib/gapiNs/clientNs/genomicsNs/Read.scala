@@ -107,3 +107,46 @@ trait Read extends js.Object {
   var supplementaryAlignment: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Read {
+  @scala.inline
+  def apply(
+    alignedQuality: js.Array[scala.Double] = null,
+    alignedSequence: java.lang.String = null,
+    alignment: LinearAlignment = null,
+    duplicateFragment: js.UndefOr[scala.Boolean] = js.undefined,
+    failedVendorQualityChecks: js.UndefOr[scala.Boolean] = js.undefined,
+    fragmentLength: scala.Int | scala.Double = null,
+    fragmentName: java.lang.String = null,
+    id: java.lang.String = null,
+    info: stdLib.Record[java.lang.String, js.Array[_]] = null,
+    nextMatePosition: Position = null,
+    numberReads: scala.Int | scala.Double = null,
+    properPlacement: js.UndefOr[scala.Boolean] = js.undefined,
+    readGroupId: java.lang.String = null,
+    readGroupSetId: java.lang.String = null,
+    readNumber: scala.Int | scala.Double = null,
+    secondaryAlignment: js.UndefOr[scala.Boolean] = js.undefined,
+    supplementaryAlignment: js.UndefOr[scala.Boolean] = js.undefined
+  ): Read = {
+    val __obj = js.Dynamic.literal()
+    if (alignedQuality != null) __obj.updateDynamic("alignedQuality")(alignedQuality)
+    if (alignedSequence != null) __obj.updateDynamic("alignedSequence")(alignedSequence)
+    if (alignment != null) __obj.updateDynamic("alignment")(alignment)
+    if (!js.isUndefined(duplicateFragment)) __obj.updateDynamic("duplicateFragment")(duplicateFragment)
+    if (!js.isUndefined(failedVendorQualityChecks)) __obj.updateDynamic("failedVendorQualityChecks")(failedVendorQualityChecks)
+    if (fragmentLength != null) __obj.updateDynamic("fragmentLength")(fragmentLength.asInstanceOf[js.Any])
+    if (fragmentName != null) __obj.updateDynamic("fragmentName")(fragmentName)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (info != null) __obj.updateDynamic("info")(info)
+    if (nextMatePosition != null) __obj.updateDynamic("nextMatePosition")(nextMatePosition)
+    if (numberReads != null) __obj.updateDynamic("numberReads")(numberReads.asInstanceOf[js.Any])
+    if (!js.isUndefined(properPlacement)) __obj.updateDynamic("properPlacement")(properPlacement)
+    if (readGroupId != null) __obj.updateDynamic("readGroupId")(readGroupId)
+    if (readGroupSetId != null) __obj.updateDynamic("readGroupSetId")(readGroupSetId)
+    if (readNumber != null) __obj.updateDynamic("readNumber")(readNumber.asInstanceOf[js.Any])
+    if (!js.isUndefined(secondaryAlignment)) __obj.updateDynamic("secondaryAlignment")(secondaryAlignment)
+    if (!js.isUndefined(supplementaryAlignment)) __obj.updateDynamic("supplementaryAlignment")(supplementaryAlignment)
+    __obj.asInstanceOf[Read]
+  }
+}
+

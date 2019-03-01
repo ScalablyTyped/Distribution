@@ -10,3 +10,13 @@ trait WindowSizeProps extends js.Object {
   var width: scala.Double
 }
 
+object WindowSizeProps {
+  @scala.inline
+  def apply(height: scala.Double, width: scala.Double): WindowSizeProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[WindowSizeProps]
+  }
+}
+

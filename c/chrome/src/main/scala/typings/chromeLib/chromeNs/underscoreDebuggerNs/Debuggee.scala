@@ -22,3 +22,18 @@ trait Debuggee extends js.Object {
   var targetId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Debuggee {
+  @scala.inline
+  def apply(
+    extensionId: java.lang.String = null,
+    tabId: scala.Int | scala.Double = null,
+    targetId: java.lang.String = null
+  ): Debuggee = {
+    val __obj = js.Dynamic.literal()
+    if (extensionId != null) __obj.updateDynamic("extensionId")(extensionId)
+    if (tabId != null) __obj.updateDynamic("tabId")(tabId.asInstanceOf[js.Any])
+    if (targetId != null) __obj.updateDynamic("targetId")(targetId)
+    __obj.asInstanceOf[Debuggee]
+  }
+}
+

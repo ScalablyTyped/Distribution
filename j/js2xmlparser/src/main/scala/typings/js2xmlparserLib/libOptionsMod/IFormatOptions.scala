@@ -29,3 +29,20 @@ trait IFormatOptions extends js.Object {
   var pretty: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object IFormatOptions {
+  @scala.inline
+  def apply(
+    doubleQuotes: js.UndefOr[scala.Boolean] = js.undefined,
+    indent: java.lang.String = null,
+    newline: java.lang.String = null,
+    pretty: js.UndefOr[scala.Boolean] = js.undefined
+  ): IFormatOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(doubleQuotes)) __obj.updateDynamic("doubleQuotes")(doubleQuotes)
+    if (indent != null) __obj.updateDynamic("indent")(indent)
+    if (newline != null) __obj.updateDynamic("newline")(newline)
+    if (!js.isUndefined(pretty)) __obj.updateDynamic("pretty")(pretty)
+    __obj.asInstanceOf[IFormatOptions]
+  }
+}
+

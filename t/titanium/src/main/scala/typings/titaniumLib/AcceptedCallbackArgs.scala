@@ -20,3 +20,16 @@ trait AcceptedCallbackArgs extends js.Object {
   var socket: js.UndefOr[titaniumLib.TitaniumNs.NetworkNs.SocketNs.TCP] = js.undefined
 }
 
+object AcceptedCallbackArgs {
+  @scala.inline
+  def apply(
+    inbound: titaniumLib.TitaniumNs.NetworkNs.SocketNs.TCP = null,
+    socket: titaniumLib.TitaniumNs.NetworkNs.SocketNs.TCP = null
+  ): AcceptedCallbackArgs = {
+    val __obj = js.Dynamic.literal()
+    if (inbound != null) __obj.updateDynamic("inbound")(inbound)
+    if (socket != null) __obj.updateDynamic("socket")(socket)
+    __obj.asInstanceOf[AcceptedCallbackArgs]
+  }
+}
+

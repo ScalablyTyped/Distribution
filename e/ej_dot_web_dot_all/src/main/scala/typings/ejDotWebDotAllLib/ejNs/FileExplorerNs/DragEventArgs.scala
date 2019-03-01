@@ -26,3 +26,24 @@ trait DragEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DragEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    target: js.Any = null,
+    targetElementName: java.lang.String = null,
+    targetPath: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): DragEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (targetElementName != null) __obj.updateDynamic("targetElementName")(targetElementName)
+    if (targetPath != null) __obj.updateDynamic("targetPath")(targetPath)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[DragEventArgs]
+  }
+}
+

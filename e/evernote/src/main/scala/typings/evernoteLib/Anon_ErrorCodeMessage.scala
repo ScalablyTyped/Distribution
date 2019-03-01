@@ -11,3 +11,18 @@ trait Anon_ErrorCodeMessage extends js.Object {
   var rateLimitDuration: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_ErrorCodeMessage {
+  @scala.inline
+  def apply(
+    errorCode: evernoteLib.evernoteMod.EvernoteNs.EDAMErrorCode,
+    message: java.lang.String = null,
+    rateLimitDuration: scala.Int | scala.Double = null
+  ): Anon_ErrorCodeMessage = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("errorCode")(errorCode)
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (rateLimitDuration != null) __obj.updateDynamic("rateLimitDuration")(rateLimitDuration.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ErrorCodeMessage]
+  }
+}
+

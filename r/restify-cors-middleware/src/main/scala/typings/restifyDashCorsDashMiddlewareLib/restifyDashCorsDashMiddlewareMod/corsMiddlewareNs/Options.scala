@@ -23,3 +23,24 @@ trait Options extends js.Object {
   var preflightStrategy: js.UndefOr[js.Any] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    allowHeaders: js.Array[java.lang.String],
+    exposeHeaders: js.Array[java.lang.String],
+    origins: js.Array[java.lang.String | stdLib.RegExp],
+    credentials: js.UndefOr[scala.Boolean] = js.undefined,
+    preflightMaxAge: scala.Int | scala.Double = null,
+    preflightStrategy: js.Any = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("allowHeaders")(allowHeaders)
+    __obj.updateDynamic("exposeHeaders")(exposeHeaders)
+    __obj.updateDynamic("origins")(origins)
+    if (!js.isUndefined(credentials)) __obj.updateDynamic("credentials")(credentials)
+    if (preflightMaxAge != null) __obj.updateDynamic("preflightMaxAge")(preflightMaxAge.asInstanceOf[js.Any])
+    if (preflightStrategy != null) __obj.updateDynamic("preflightStrategy")(preflightStrategy)
+    __obj.asInstanceOf[Options]
+  }
+}
+

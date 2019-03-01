@@ -9,3 +9,12 @@ trait Translation extends js.Object {
   var transform: java.lang.String
 }
 
+object Translation {
+  @scala.inline
+  def apply(transform: java.lang.String): Translation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[Translation]
+  }
+}
+

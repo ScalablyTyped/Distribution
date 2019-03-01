@@ -47,3 +47,56 @@ trait Colorer
   def yellow(): Cursor
 }
 
+object Colorer {
+  @scala.inline
+  def apply(
+    _setColorCode: js.Function1[java.lang.String, Colorer],
+    black: js.Function0[Cursor],
+    blue: js.Function0[Cursor],
+    brightBlack: js.Function0[Cursor],
+    brightBlue: js.Function0[Cursor],
+    brightCyan: js.Function0[Cursor],
+    brightGreen: js.Function0[Cursor],
+    brightMagenta: js.Function0[Cursor],
+    brightRed: js.Function0[Cursor],
+    brightWhite: js.Function0[Cursor],
+    brightYellow: js.Function0[Cursor],
+    cyan: js.Function0[Cursor],
+    green: js.Function0[Cursor],
+    grey: js.Function0[Cursor],
+    hex: js.Function1[java.lang.String, Cursor],
+    magenta: js.Function0[Cursor],
+    red: js.Function0[Cursor],
+    reset: js.Function0[Cursor],
+    rgb: js.Function3[scala.Double, scala.Double, scala.Double, Cursor],
+    white: js.Function0[Cursor],
+    yellow: js.Function0[Cursor],
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Function1[/* repeated */ js.Any, Cursor | Colorer]] = null
+  ): Colorer = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_setColorCode")(_setColorCode)
+    __obj.updateDynamic("black")(black)
+    __obj.updateDynamic("blue")(blue)
+    __obj.updateDynamic("brightBlack")(brightBlack)
+    __obj.updateDynamic("brightBlue")(brightBlue)
+    __obj.updateDynamic("brightCyan")(brightCyan)
+    __obj.updateDynamic("brightGreen")(brightGreen)
+    __obj.updateDynamic("brightMagenta")(brightMagenta)
+    __obj.updateDynamic("brightRed")(brightRed)
+    __obj.updateDynamic("brightWhite")(brightWhite)
+    __obj.updateDynamic("brightYellow")(brightYellow)
+    __obj.updateDynamic("cyan")(cyan)
+    __obj.updateDynamic("green")(green)
+    __obj.updateDynamic("grey")(grey)
+    __obj.updateDynamic("hex")(hex)
+    __obj.updateDynamic("magenta")(magenta)
+    __obj.updateDynamic("red")(red)
+    __obj.updateDynamic("reset")(reset)
+    __obj.updateDynamic("rgb")(rgb)
+    __obj.updateDynamic("white")(white)
+    __obj.updateDynamic("yellow")(yellow)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[Colorer]
+  }
+}
+

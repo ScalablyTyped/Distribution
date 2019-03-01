@@ -18,3 +18,32 @@ trait Anon_BackUVsDepthFaceColors extends js.Object {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_BackUVsDepthFaceColors {
+  @scala.inline
+  def apply(
+    backUVs: babylonjsLib.BABYLONNs.Vector4 = null,
+    depth: scala.Int | scala.Double = null,
+    faceColors: js.Array[babylonjsLib.BABYLONNs.Color4] = null,
+    faceUV: js.Array[babylonjsLib.BABYLONNs.Vector4] = null,
+    frontUVs: babylonjsLib.BABYLONNs.Vector4 = null,
+    height: scala.Int | scala.Double = null,
+    sideOrientation: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null,
+    updatable: js.UndefOr[scala.Boolean] = js.undefined,
+    width: scala.Int | scala.Double = null
+  ): Anon_BackUVsDepthFaceColors = {
+    val __obj = js.Dynamic.literal()
+    if (backUVs != null) __obj.updateDynamic("backUVs")(backUVs)
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (faceColors != null) __obj.updateDynamic("faceColors")(faceColors)
+    if (faceUV != null) __obj.updateDynamic("faceUV")(faceUV)
+    if (frontUVs != null) __obj.updateDynamic("frontUVs")(frontUVs)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (sideOrientation != null) __obj.updateDynamic("sideOrientation")(sideOrientation.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (!js.isUndefined(updatable)) __obj.updateDynamic("updatable")(updatable)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_BackUVsDepthFaceColors]
+  }
+}
+

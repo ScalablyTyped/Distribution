@@ -19,3 +19,13 @@ trait CreateInstanceRequest extends js.Object {
   var instanceId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CreateInstanceRequest {
+  @scala.inline
+  def apply(instance: Instance = null, instanceId: java.lang.String = null): CreateInstanceRequest = {
+    val __obj = js.Dynamic.literal()
+    if (instance != null) __obj.updateDynamic("instance")(instance)
+    if (instanceId != null) __obj.updateDynamic("instanceId")(instanceId)
+    __obj.asInstanceOf[CreateInstanceRequest]
+  }
+}
+

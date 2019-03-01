@@ -17,7 +17,6 @@ package object rotDashJsMod {
     /* visibility */ scala.Double, 
     js.Any
   ]
-  type FeatureOptions = RoomOptions | CorridorOptions
   type IsWallCallback = js.Function2[/* x */ scala.Double, /* y */ scala.Double, scala.Boolean]
   type LightPassesCallback = js.Function2[/* x */ scala.Double, /* y */ scala.Double, scala.Boolean]
   type LightingCallback = js.Function3[

@@ -16,3 +16,13 @@ trait TextToken extends js.Object {
   var text: java.lang.String
 }
 
+object TextToken {
+  @scala.inline
+  def apply(text: java.lang.String, sourceCodeLocation: parse5Lib.parse5Mod.Location = null): TextToken = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text)
+    if (sourceCodeLocation != null) __obj.updateDynamic("sourceCodeLocation")(sourceCodeLocation)
+    __obj.asInstanceOf[TextToken]
+  }
+}
+

@@ -48,3 +48,30 @@ trait Anon_Dimensions extends js.Object {
   var `start-index`: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Dimensions {
+  @scala.inline
+  def apply(
+    `end-date`: java.lang.String,
+    ids: java.lang.String,
+    metrics: java.lang.String,
+    `start-date`: java.lang.String,
+    dimensions: java.lang.String = null,
+    fields: java.lang.String = null,
+    filters: java.lang.String = null,
+    `max-results`: scala.Int | scala.Double = null,
+    sort: java.lang.String = null,
+    `start-index`: scala.Int | scala.Double = null
+  ): Anon_Dimensions = {
+    val __obj = js.Dynamic.literal(`end-date` = `end-date`, `start-date` = `start-date`)
+    __obj.updateDynamic("ids")(ids)
+    __obj.updateDynamic("metrics")(metrics)
+    if (dimensions != null) __obj.updateDynamic("dimensions")(dimensions)
+    if (fields != null) __obj.updateDynamic("fields")(fields)
+    if (filters != null) __obj.updateDynamic("filters")(filters)
+    if (`max-results` != null) __obj.updateDynamic("max-results")(`max-results`.asInstanceOf[js.Any])
+    if (sort != null) __obj.updateDynamic("sort")(sort)
+    if (`start-index` != null) __obj.updateDynamic("start-index")(`start-index`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Dimensions]
+  }
+}
+

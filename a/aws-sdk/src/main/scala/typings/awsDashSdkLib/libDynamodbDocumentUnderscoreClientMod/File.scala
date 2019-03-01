@@ -5,5 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait File extends js.Object
+trait File
+  extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.DocumentClientNs._binaryType
+     with awsDashSdkLib.libDynamodbDocumentUnderscoreClientMod.DocumentClientNs._binaryType
 

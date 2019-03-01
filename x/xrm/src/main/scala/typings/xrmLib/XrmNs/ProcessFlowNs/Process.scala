@@ -33,3 +33,20 @@ trait Process extends js.Object {
   def isRendered(): scala.Boolean
 }
 
+object Process {
+  @scala.inline
+  def apply(
+    getId: js.Function0[java.lang.String],
+    getName: js.Function0[java.lang.String],
+    getStages: js.Function0[xrmLib.XrmNs.CollectionNs.ItemCollection[Stage]],
+    isRendered: js.Function0[scala.Boolean]
+  ): Process = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getName")(getName)
+    __obj.updateDynamic("getStages")(getStages)
+    __obj.updateDynamic("isRendered")(isRendered)
+    __obj.asInstanceOf[Process]
+  }
+}
+

@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 trait UiFocusable
   extends xrmLib.XrmNs.ControlsNs.UiFocusable
 
+object UiFocusable {
+  @scala.inline
+  def apply(setFocus: js.Function0[scala.Unit]): UiFocusable = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("setFocus")(setFocus)
+    __obj.asInstanceOf[UiFocusable]
+  }
+}
+

@@ -27,3 +27,20 @@ trait SecurityManagerProtocol extends js.Object {
   def willHandleURL(url: js.Any): scala.Boolean
 }
 
+object SecurityManagerProtocol {
+  @scala.inline
+  def apply(
+    connectionDelegateForUrl: js.Function1[js.Any, APSConnectionDelegate],
+    getKeyManagers: js.Function1[js.Any, js.Array[_]],
+    getTrustManagers: js.Function1[js.Any, js.Array[_]],
+    willHandleURL: js.Function1[js.Any, scala.Boolean]
+  ): SecurityManagerProtocol = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connectionDelegateForUrl")(connectionDelegateForUrl)
+    __obj.updateDynamic("getKeyManagers")(getKeyManagers)
+    __obj.updateDynamic("getTrustManagers")(getTrustManagers)
+    __obj.updateDynamic("willHandleURL")(willHandleURL)
+    __obj.asInstanceOf[SecurityManagerProtocol]
+  }
+}
+

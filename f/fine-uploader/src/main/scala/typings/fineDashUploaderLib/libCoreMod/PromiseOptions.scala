@@ -47,3 +47,19 @@ trait PromiseOptions extends js.Object {
   def `then`(successCallback: js.Function, failureCallback: js.Function): PromiseOptions
 }
 
+object PromiseOptions {
+  @scala.inline
+  def apply(
+    done: js.Function1[js.Function, PromiseOptions],
+    failure: js.Function1[js.Any, PromiseOptions],
+    success: js.Function1[js.Any, PromiseOptions],
+    `then`: js.Function2[js.Function, js.Function, PromiseOptions]
+  ): PromiseOptions = {
+    val __obj = js.Dynamic.literal(`then` = `then`)
+    __obj.updateDynamic("done")(done)
+    __obj.updateDynamic("failure")(failure)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[PromiseOptions]
+  }
+}
+

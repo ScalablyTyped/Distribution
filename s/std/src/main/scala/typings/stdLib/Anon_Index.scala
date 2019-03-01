@@ -9,3 +9,12 @@ trait Anon_Index[T] extends js.Object {
   def Item(index: js.Any): T
 }
 
+object Anon_Index {
+  @scala.inline
+  def apply[T](Item: js.Function1[js.Any, T]): Anon_Index[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Item")(Item)
+    __obj.asInstanceOf[Anon_Index[T]]
+  }
+}
+

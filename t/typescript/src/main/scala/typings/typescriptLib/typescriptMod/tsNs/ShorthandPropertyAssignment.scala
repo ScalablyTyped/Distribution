@@ -8,7 +8,11 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ShorthandPropertyAssignment
   extends ObjectLiteralElement
-     with JSDocContainer {
+     with JSDocContainer
+     with ObjectLiteralElementLike
+     with VariableLikeDeclaration
+     with _BindingOrAssignmentElement
+     with _HasJSDoc {
   var equalsToken: js.UndefOr[Token[SyntaxKind]] = js.native
   var exclamationToken: js.UndefOr[ExclamationToken] = js.native
   @JSName("name")

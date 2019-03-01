@@ -18,3 +18,28 @@ trait ConnectMiddleware extends Middleware {
   ): scala.Unit
 }
 
+object ConnectMiddleware {
+  @scala.inline
+  def apply(
+    middleware: js.Function0[
+      js.Function3[
+        /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Request, 
+        /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Response, 
+        /* next */ expressLib.expressMod.eNs.NextFunction, 
+        scala.Unit
+      ]
+    ],
+    register: js.Function1[
+      expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Global.ExpressNs.Application, 
+      scala.Unit
+    ],
+    runner: Runner
+  ): ConnectMiddleware = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("middleware")(middleware)
+    __obj.updateDynamic("register")(register)
+    __obj.updateDynamic("runner")(runner)
+    __obj.asInstanceOf[ConnectMiddleware]
+  }
+}
+

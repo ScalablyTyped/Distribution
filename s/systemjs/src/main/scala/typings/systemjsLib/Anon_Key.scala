@@ -16,3 +16,16 @@ trait Anon_Key
   var tsconfig: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
 }
 
+object Anon_Key {
+  @scala.inline
+  def apply(
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    tsconfig: scala.Boolean | java.lang.String = null
+  ): Anon_Key = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    if (tsconfig != null) __obj.updateDynamic("tsconfig")(tsconfig.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Key]
+  }
+}
+

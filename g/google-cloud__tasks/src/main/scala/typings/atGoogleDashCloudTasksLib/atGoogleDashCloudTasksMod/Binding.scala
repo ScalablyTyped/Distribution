@@ -11,3 +11,14 @@ trait Binding extends js.Object {
   var role: java.lang.String
 }
 
+object Binding {
+  @scala.inline
+  def apply(condition: Expr, members: js.Array[java.lang.String], role: java.lang.String): Binding = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("condition")(condition)
+    __obj.updateDynamic("members")(members)
+    __obj.updateDynamic("role")(role)
+    __obj.asInstanceOf[Binding]
+  }
+}
+

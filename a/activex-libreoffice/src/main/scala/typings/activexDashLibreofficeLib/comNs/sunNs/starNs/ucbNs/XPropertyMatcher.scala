@@ -20,3 +20,20 @@ trait XPropertyMatcher
   def matches(Properties: XCommandProcessor, Environment: XCommandEnvironment): scala.Boolean
 }
 
+object XPropertyMatcher {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    matches: js.Function2[XCommandProcessor, XCommandEnvironment, scala.Boolean],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XPropertyMatcher = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("matches")(matches)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XPropertyMatcher]
+  }
+}
+

@@ -22,3 +22,16 @@ trait IgnoreRulesParams extends js.Object {
   var lowerPriorityThan: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
 }
 
+object IgnoreRulesParams {
+  @scala.inline
+  def apply(
+    hasTag: java.lang.String = null,
+    lowerPriorityThan: js.UndefOr[chromeDashAppsLib.chromeNs.integer] = js.undefined
+  ): IgnoreRulesParams = {
+    val __obj = js.Dynamic.literal()
+    if (hasTag != null) __obj.updateDynamic("hasTag")(hasTag)
+    if (!js.isUndefined(lowerPriorityThan)) __obj.updateDynamic("lowerPriorityThan")(lowerPriorityThan)
+    __obj.asInstanceOf[IgnoreRulesParams]
+  }
+}
+

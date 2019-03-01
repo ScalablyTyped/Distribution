@@ -24,3 +24,18 @@ trait Options extends js.Object {
   var moveToParents: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    entryChunkMultiplicator: scala.Int | scala.Double = null,
+    minSizeReduce: scala.Int | scala.Double = null,
+    moveToParents: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (entryChunkMultiplicator != null) __obj.updateDynamic("entryChunkMultiplicator")(entryChunkMultiplicator.asInstanceOf[js.Any])
+    if (minSizeReduce != null) __obj.updateDynamic("minSizeReduce")(minSizeReduce.asInstanceOf[js.Any])
+    if (!js.isUndefined(moveToParents)) __obj.updateDynamic("moveToParents")(moveToParents)
+    __obj.asInstanceOf[Options]
+  }
+}
+

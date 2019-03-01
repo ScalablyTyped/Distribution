@@ -16,3 +16,12 @@ trait BootstrapClientAccordionGroupEventArgs extends ASPxClientEventArgs {
   var group: BootstrapClientAccordionGroup
 }
 
+object BootstrapClientAccordionGroupEventArgs {
+  @scala.inline
+  def apply(group: BootstrapClientAccordionGroup): BootstrapClientAccordionGroupEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("group")(group)
+    __obj.asInstanceOf[BootstrapClientAccordionGroupEventArgs]
+  }
+}
+

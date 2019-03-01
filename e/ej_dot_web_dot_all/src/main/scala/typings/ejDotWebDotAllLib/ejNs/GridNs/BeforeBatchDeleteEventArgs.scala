@@ -26,3 +26,24 @@ trait BeforeBatchDeleteEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforeBatchDeleteEventArgs {
+  @scala.inline
+  def apply(
+    model: js.Any = null,
+    primaryKey: js.Any = null,
+    row: js.Any = null,
+    rowData: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): BeforeBatchDeleteEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (primaryKey != null) __obj.updateDynamic("primaryKey")(primaryKey)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowData != null) __obj.updateDynamic("rowData")(rowData)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforeBatchDeleteEventArgs]
+  }
+}
+

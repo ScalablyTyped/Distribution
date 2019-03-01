@@ -12,3 +12,21 @@ trait ExtendedFeature[GeometryType /* <: GeoGeometryObjects | scala.Null */, Pro
   var properties: Properties
 }
 
+object ExtendedFeature {
+  @scala.inline
+  def apply[GeometryType /* <: GeoGeometryObjects | scala.Null */, Properties /* <: geojsonLib.geojsonMod.GeoJsonProperties */](
+    geometry: GeometryType,
+    properties: Properties,
+    `type`: geojsonLib.geojsonMod.GeoJsonTypes,
+    bbox: geojsonLib.geojsonMod.BBox = null,
+    id: java.lang.String | scala.Double = null
+  ): ExtendedFeature[GeometryType, Properties] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("geometry")(geometry.asInstanceOf[js.Any])
+    __obj.updateDynamic("properties")(properties.asInstanceOf[js.Any])
+    if (bbox != null) __obj.updateDynamic("bbox")(bbox.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ExtendedFeature[GeometryType, Properties]]
+  }
+}
+

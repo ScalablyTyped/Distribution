@@ -20,3 +20,16 @@ trait SetOptions extends js.Object {
   val mergeFields: js.UndefOr[coreDashJsLib.Array[java.lang.String | FieldPath]] = js.undefined
 }
 
+object SetOptions {
+  @scala.inline
+  def apply(
+    merge: js.UndefOr[scala.Boolean] = js.undefined,
+    mergeFields: coreDashJsLib.Array[java.lang.String | FieldPath] = null
+  ): SetOptions = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(merge)) __obj.updateDynamic("merge")(merge)
+    if (mergeFields != null) __obj.updateDynamic("mergeFields")(mergeFields)
+    __obj.asInstanceOf[SetOptions]
+  }
+}
+

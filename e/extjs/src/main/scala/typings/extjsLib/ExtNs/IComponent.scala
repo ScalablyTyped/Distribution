@@ -349,3 +349,201 @@ import scala.scalajs.js.annotation._
   var zIndexParent: js.UndefOr[IContainer] = js.undefined
 }
 
+object IComponent {
+  @scala.inline
+  def apply(
+    IAbstractComponent: IAbstractComponent = null,
+    IFloating: extjsLib.ExtNs.utilNs.IFloating = null,
+    afterComponentLayout: js.Function0[scala.Unit] = null,
+    afterHide: js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterRender: js.Function0[scala.Unit] = null,
+    afterSetPosition: js.Function2[/* ax */ js.UndefOr[js.Any], /* ay */ js.UndefOr[js.Any], scala.Unit] = null,
+    afterShow: js.Function3[
+      /* animateTarget */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    autoScroll: js.UndefOr[scala.Boolean] = js.undefined,
+    beforeLayout: js.Function0[scala.Unit] = null,
+    beforeShow: js.Function0[scala.Unit] = null,
+    bubble: js.Function3[
+      /* fn */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      /* args */ js.UndefOr[Array], 
+      IComponent
+    ] = null,
+    cancelFocus: js.Function0[scala.Unit] = null,
+    center: js.Function0[IComponent] = null,
+    cloneConfig: js.Function1[/* overrides */ js.UndefOr[js.Any], IComponent] = null,
+    columnWidth: js.Any = null,
+    constrainTo: js.Any = null,
+    constraintInsets: js.Any = null,
+    defaultAlign: java.lang.String = null,
+    doConstrain: js.Function1[/* constrainTo */ js.UndefOr[js.Any], scala.Unit] = null,
+    findParentBy: js.Function1[/* fn */ js.UndefOr[js.Any], extjsLib.ExtNs.containerNs.IContainer] = null,
+    findParentByType: js.Function1[/* xtype */ js.UndefOr[js.Any], extjsLib.ExtNs.containerNs.IContainer] = null,
+    floatParent: IContainer = null,
+    floating: js.UndefOr[scala.Boolean] = js.undefined,
+    focus: js.Function4[
+      /* selectText */ js.UndefOr[scala.Boolean], 
+      /* delay */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      IComponent
+    ] = null,
+    formBind: js.UndefOr[scala.Boolean] = js.undefined,
+    getEl: js.Function0[extjsLib.ExtNs.domNs.IElement] = null,
+    getId: js.Function0[java.lang.String] = null,
+    getPosition: js.Function1[/* local */ js.UndefOr[scala.Boolean], Array] = null,
+    getXType: js.Function0[java.lang.String] = null,
+    hide: js.Function3[
+      /* animateTarget */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      IComponent
+    ] = null,
+    initComponent: js.Function0[scala.Unit] = null,
+    onAdded: js.Function0[scala.Unit] = null,
+    onDestroy: js.Function0[scala.Unit] = null,
+    onHide: js.Function3[
+      /* animateTarget */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    onShow: js.Function3[
+      /* animateTarget */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    onShowComplete: js.Function2[/* callback */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], scala.Unit] = null,
+    overflowX: java.lang.String = null,
+    overflowY: java.lang.String = null,
+    region: js.Any = null,
+    resizable: js.Any = null,
+    resizeHandles: java.lang.String = null,
+    scrollBy: js.Function3[
+      /* deltaX */ js.UndefOr[js.Any], 
+      /* deltaY */ js.UndefOr[js.Any], 
+      /* animate */ js.UndefOr[js.Any], 
+      scala.Unit
+    ] = null,
+    scrollFlags: js.Any = null,
+    setActive: js.Function2[
+      /* active */ js.UndefOr[scala.Boolean], 
+      /* newActive */ js.UndefOr[IComponent], 
+      scala.Unit
+    ] = null,
+    setAutoScroll: js.Function1[/* scroll */ js.UndefOr[scala.Boolean], IComponent] = null,
+    setBorderRegion: js.Function1[/* region */ js.UndefOr[java.lang.String], java.lang.String] = null,
+    setLoading: js.Function2[/* load */ js.UndefOr[js.Any], /* targetEl */ js.UndefOr[scala.Boolean], ILoadMask] = null,
+    setOverflowXY: js.Function2[
+      /* overflowX */ js.UndefOr[java.lang.String], 
+      /* overflowY */ js.UndefOr[java.lang.String], 
+      IComponent
+    ] = null,
+    setPagePosition: js.Function3[
+      /* x */ js.UndefOr[js.Any], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* animate */ js.UndefOr[js.Any], 
+      IComponent
+    ] = null,
+    setPosition: js.Function3[
+      /* x */ js.UndefOr[js.Any], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* animate */ js.UndefOr[js.Any], 
+      IComponent
+    ] = null,
+    setRegionWeight: js.Function1[/* weight */ js.UndefOr[scala.Double], scala.Double] = null,
+    show: js.Function3[
+      /* animateTarget */ js.UndefOr[js.Any], 
+      /* callback */ js.UndefOr[js.Any], 
+      /* scope */ js.UndefOr[js.Any], 
+      IComponent
+    ] = null,
+    showAt: js.Function3[
+      /* x */ js.UndefOr[js.Any], 
+      /* y */ js.UndefOr[scala.Double], 
+      /* animate */ js.UndefOr[js.Any], 
+      IComponent
+    ] = null,
+    showBy: js.Function3[
+      /* component */ js.UndefOr[js.Any], 
+      /* position */ js.UndefOr[java.lang.String], 
+      /* offsets */ js.UndefOr[Array], 
+      IComponent
+    ] = null,
+    toBack: js.Function0[IComponent] = null,
+    toFront: js.Function1[/* preventFocus */ js.UndefOr[scala.Boolean], IComponent] = null,
+    toFrontOnShow: js.UndefOr[scala.Boolean] = js.undefined,
+    updateBox: js.Function1[/* box */ js.UndefOr[js.Any], IComponent] = null,
+    zIndexManager: IZIndexManager = null,
+    zIndexParent: IContainer = null
+  ): IComponent = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, IAbstractComponent)
+    js.Dynamic.global.Object.assign(__obj, IFloating)
+    if (afterComponentLayout != null) __obj.updateDynamic("afterComponentLayout")(afterComponentLayout)
+    if (afterHide != null) __obj.updateDynamic("afterHide")(afterHide)
+    if (afterRender != null) __obj.updateDynamic("afterRender")(afterRender)
+    if (afterSetPosition != null) __obj.updateDynamic("afterSetPosition")(afterSetPosition)
+    if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow)
+    if (!js.isUndefined(autoScroll)) __obj.updateDynamic("autoScroll")(autoScroll)
+    if (beforeLayout != null) __obj.updateDynamic("beforeLayout")(beforeLayout)
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (bubble != null) __obj.updateDynamic("bubble")(bubble)
+    if (cancelFocus != null) __obj.updateDynamic("cancelFocus")(cancelFocus)
+    if (center != null) __obj.updateDynamic("center")(center)
+    if (cloneConfig != null) __obj.updateDynamic("cloneConfig")(cloneConfig)
+    if (columnWidth != null) __obj.updateDynamic("columnWidth")(columnWidth)
+    if (constrainTo != null) __obj.updateDynamic("constrainTo")(constrainTo)
+    if (constraintInsets != null) __obj.updateDynamic("constraintInsets")(constraintInsets)
+    if (defaultAlign != null) __obj.updateDynamic("defaultAlign")(defaultAlign)
+    if (doConstrain != null) __obj.updateDynamic("doConstrain")(doConstrain)
+    if (findParentBy != null) __obj.updateDynamic("findParentBy")(findParentBy)
+    if (findParentByType != null) __obj.updateDynamic("findParentByType")(findParentByType)
+    if (floatParent != null) __obj.updateDynamic("floatParent")(floatParent)
+    if (!js.isUndefined(floating)) __obj.updateDynamic("floating")(floating)
+    if (focus != null) __obj.updateDynamic("focus")(focus)
+    if (!js.isUndefined(formBind)) __obj.updateDynamic("formBind")(formBind)
+    if (getEl != null) __obj.updateDynamic("getEl")(getEl)
+    if (getId != null) __obj.updateDynamic("getId")(getId)
+    if (getPosition != null) __obj.updateDynamic("getPosition")(getPosition)
+    if (getXType != null) __obj.updateDynamic("getXType")(getXType)
+    if (hide != null) __obj.updateDynamic("hide")(hide)
+    if (initComponent != null) __obj.updateDynamic("initComponent")(initComponent)
+    if (onAdded != null) __obj.updateDynamic("onAdded")(onAdded)
+    if (onDestroy != null) __obj.updateDynamic("onDestroy")(onDestroy)
+    if (onHide != null) __obj.updateDynamic("onHide")(onHide)
+    if (onShow != null) __obj.updateDynamic("onShow")(onShow)
+    if (onShowComplete != null) __obj.updateDynamic("onShowComplete")(onShowComplete)
+    if (overflowX != null) __obj.updateDynamic("overflowX")(overflowX)
+    if (overflowY != null) __obj.updateDynamic("overflowY")(overflowY)
+    if (region != null) __obj.updateDynamic("region")(region)
+    if (resizable != null) __obj.updateDynamic("resizable")(resizable)
+    if (resizeHandles != null) __obj.updateDynamic("resizeHandles")(resizeHandles)
+    if (scrollBy != null) __obj.updateDynamic("scrollBy")(scrollBy)
+    if (scrollFlags != null) __obj.updateDynamic("scrollFlags")(scrollFlags)
+    if (setActive != null) __obj.updateDynamic("setActive")(setActive)
+    if (setAutoScroll != null) __obj.updateDynamic("setAutoScroll")(setAutoScroll)
+    if (setBorderRegion != null) __obj.updateDynamic("setBorderRegion")(setBorderRegion)
+    if (setLoading != null) __obj.updateDynamic("setLoading")(setLoading)
+    if (setOverflowXY != null) __obj.updateDynamic("setOverflowXY")(setOverflowXY)
+    if (setPagePosition != null) __obj.updateDynamic("setPagePosition")(setPagePosition)
+    if (setPosition != null) __obj.updateDynamic("setPosition")(setPosition)
+    if (setRegionWeight != null) __obj.updateDynamic("setRegionWeight")(setRegionWeight)
+    if (show != null) __obj.updateDynamic("show")(show)
+    if (showAt != null) __obj.updateDynamic("showAt")(showAt)
+    if (showBy != null) __obj.updateDynamic("showBy")(showBy)
+    if (toBack != null) __obj.updateDynamic("toBack")(toBack)
+    if (toFront != null) __obj.updateDynamic("toFront")(toFront)
+    if (!js.isUndefined(toFrontOnShow)) __obj.updateDynamic("toFrontOnShow")(toFrontOnShow)
+    if (updateBox != null) __obj.updateDynamic("updateBox")(updateBox)
+    if (zIndexManager != null) __obj.updateDynamic("zIndexManager")(zIndexManager)
+    if (zIndexParent != null) __obj.updateDynamic("zIndexParent")(zIndexParent)
+    __obj.asInstanceOf[IComponent]
+  }
+}
+

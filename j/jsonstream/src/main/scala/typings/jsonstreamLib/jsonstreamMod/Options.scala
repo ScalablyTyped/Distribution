@@ -9,3 +9,12 @@ trait Options extends js.Object {
   var recurse: scala.Boolean
 }
 
+object Options {
+  @scala.inline
+  def apply(recurse: scala.Boolean): Options = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("recurse")(recurse)
+    __obj.asInstanceOf[Options]
+  }
+}
+

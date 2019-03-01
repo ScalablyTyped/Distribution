@@ -13,3 +13,22 @@ trait Data extends js.Object {
   var success: geetestLib.Success
 }
 
+object Data {
+  @scala.inline
+  def apply(
+    challenge: java.lang.String,
+    geetest_id: java.lang.String,
+    gt: java.lang.String,
+    new_captcha: java.lang.String,
+    success: geetestLib.Success
+  ): Data = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("challenge")(challenge)
+    __obj.updateDynamic("geetest_id")(geetest_id)
+    __obj.updateDynamic("gt")(gt)
+    __obj.updateDynamic("new_captcha")(new_captcha)
+    __obj.updateDynamic("success")(success)
+    __obj.asInstanceOf[Data]
+  }
+}
+

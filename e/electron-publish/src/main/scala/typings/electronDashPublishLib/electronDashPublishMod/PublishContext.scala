@@ -10,3 +10,16 @@ trait PublishContext extends js.Object {
   val progress: electronDashPublishLib.outMultiProgressMod.MultiProgress | scala.Null
 }
 
+object PublishContext {
+  @scala.inline
+  def apply(
+    cancellationToken: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeMod.CancellationToken,
+    progress: electronDashPublishLib.outMultiProgressMod.MultiProgress = null
+  ): PublishContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancellationToken")(cancellationToken)
+    if (progress != null) __obj.updateDynamic("progress")(progress)
+    __obj.asInstanceOf[PublishContext]
+  }
+}
+

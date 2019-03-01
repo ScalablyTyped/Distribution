@@ -12,3 +12,22 @@ trait SearchCampaignAudienceBuilder[SearchCampaignAudience] extends AdWordsBuild
   def withBidModifier(modifier: scala.Double): SearchCampaignAudienceBuilder[SearchCampaignAudience]
 }
 
+object SearchCampaignAudienceBuilder {
+  @scala.inline
+  def apply[SearchCampaignAudience](
+    build: js.Function0[AdWordsOperation[SearchCampaignAudience]],
+    exclude: js.Function0[AdWordsOperation[SearchCampaignAudience]],
+    withAudience: js.Function1[UserList, SearchCampaignAudienceBuilder[SearchCampaignAudience]],
+    withAudienceId: js.Function1[scala.Double, SearchCampaignAudienceBuilder[SearchCampaignAudience]],
+    withBidModifier: js.Function1[scala.Double, SearchCampaignAudienceBuilder[SearchCampaignAudience]]
+  ): SearchCampaignAudienceBuilder[SearchCampaignAudience] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("build")(build)
+    __obj.updateDynamic("exclude")(exclude)
+    __obj.updateDynamic("withAudience")(withAudience)
+    __obj.updateDynamic("withAudienceId")(withAudienceId)
+    __obj.updateDynamic("withBidModifier")(withBidModifier)
+    __obj.asInstanceOf[SearchCampaignAudienceBuilder[SearchCampaignAudience]]
+  }
+}
+

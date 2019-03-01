@@ -75,3 +75,54 @@ trait Company extends js.Object {
   var websiteUrl: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Company {
+  @scala.inline
+  def apply(
+    additionalWebsites: js.Array[java.lang.String] = null,
+    autoApprovalEmailDomains: js.Array[java.lang.String] = null,
+    badgeTier: java.lang.String = null,
+    certificationStatuses: js.Array[CertificationStatus] = null,
+    companyTypes: js.Array[java.lang.String] = null,
+    convertedMinMonthlyBudget: Money = null,
+    id: java.lang.String = null,
+    industries: js.Array[java.lang.String] = null,
+    localizedInfos: js.Array[LocalizedCompanyInfo] = null,
+    locations: js.Array[Location] = null,
+    name: java.lang.String = null,
+    originalMinMonthlyBudget: Money = null,
+    primaryAdwordsManagerAccountId: java.lang.String = null,
+    primaryLanguageCode: java.lang.String = null,
+    primaryLocation: Location = null,
+    profileStatus: java.lang.String = null,
+    publicProfile: PublicProfile = null,
+    ranks: js.Array[Rank] = null,
+    services: js.Array[java.lang.String] = null,
+    specializationStatus: js.Array[SpecializationStatus] = null,
+    websiteUrl: java.lang.String = null
+  ): Company = {
+    val __obj = js.Dynamic.literal()
+    if (additionalWebsites != null) __obj.updateDynamic("additionalWebsites")(additionalWebsites)
+    if (autoApprovalEmailDomains != null) __obj.updateDynamic("autoApprovalEmailDomains")(autoApprovalEmailDomains)
+    if (badgeTier != null) __obj.updateDynamic("badgeTier")(badgeTier)
+    if (certificationStatuses != null) __obj.updateDynamic("certificationStatuses")(certificationStatuses)
+    if (companyTypes != null) __obj.updateDynamic("companyTypes")(companyTypes)
+    if (convertedMinMonthlyBudget != null) __obj.updateDynamic("convertedMinMonthlyBudget")(convertedMinMonthlyBudget)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (industries != null) __obj.updateDynamic("industries")(industries)
+    if (localizedInfos != null) __obj.updateDynamic("localizedInfos")(localizedInfos)
+    if (locations != null) __obj.updateDynamic("locations")(locations)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (originalMinMonthlyBudget != null) __obj.updateDynamic("originalMinMonthlyBudget")(originalMinMonthlyBudget)
+    if (primaryAdwordsManagerAccountId != null) __obj.updateDynamic("primaryAdwordsManagerAccountId")(primaryAdwordsManagerAccountId)
+    if (primaryLanguageCode != null) __obj.updateDynamic("primaryLanguageCode")(primaryLanguageCode)
+    if (primaryLocation != null) __obj.updateDynamic("primaryLocation")(primaryLocation)
+    if (profileStatus != null) __obj.updateDynamic("profileStatus")(profileStatus)
+    if (publicProfile != null) __obj.updateDynamic("publicProfile")(publicProfile)
+    if (ranks != null) __obj.updateDynamic("ranks")(ranks)
+    if (services != null) __obj.updateDynamic("services")(services)
+    if (specializationStatus != null) __obj.updateDynamic("specializationStatus")(specializationStatus)
+    if (websiteUrl != null) __obj.updateDynamic("websiteUrl")(websiteUrl)
+    __obj.asInstanceOf[Company]
+  }
+}
+

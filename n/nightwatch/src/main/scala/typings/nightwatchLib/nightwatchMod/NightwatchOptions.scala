@@ -63,3 +63,38 @@ trait NightwatchOptions extends js.Object {
   var test_workers: js.UndefOr[scala.Boolean | NightwatchTestWorker] = js.undefined
 }
 
+object NightwatchOptions {
+  @scala.inline
+  def apply(
+    src_folders: java.lang.String | js.Array[java.lang.String],
+    test_settings: NightwatchTestSettings,
+    custom_assertions_path: java.lang.String | js.Array[java.lang.String] = null,
+    custom_commands_path: java.lang.String | js.Array[java.lang.String] = null,
+    disable_color: js.UndefOr[scala.Boolean] = js.undefined,
+    globals_path: java.lang.String = null,
+    live_output: js.UndefOr[scala.Boolean] = js.undefined,
+    output_folder: java.lang.String = null,
+    page_object_path: java.lang.String | js.Array[java.lang.String] = null,
+    parallel_process_delay: scala.Int | scala.Double = null,
+    selenium: NightwatchSeleniumOptions = null,
+    test_runner: java.lang.String | NightwatchTestRunner = null,
+    test_workers: scala.Boolean | NightwatchTestWorker = null
+  ): NightwatchOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("src_folders")(src_folders.asInstanceOf[js.Any])
+    __obj.updateDynamic("test_settings")(test_settings)
+    if (custom_assertions_path != null) __obj.updateDynamic("custom_assertions_path")(custom_assertions_path.asInstanceOf[js.Any])
+    if (custom_commands_path != null) __obj.updateDynamic("custom_commands_path")(custom_commands_path.asInstanceOf[js.Any])
+    if (!js.isUndefined(disable_color)) __obj.updateDynamic("disable_color")(disable_color)
+    if (globals_path != null) __obj.updateDynamic("globals_path")(globals_path)
+    if (!js.isUndefined(live_output)) __obj.updateDynamic("live_output")(live_output)
+    if (output_folder != null) __obj.updateDynamic("output_folder")(output_folder)
+    if (page_object_path != null) __obj.updateDynamic("page_object_path")(page_object_path.asInstanceOf[js.Any])
+    if (parallel_process_delay != null) __obj.updateDynamic("parallel_process_delay")(parallel_process_delay.asInstanceOf[js.Any])
+    if (selenium != null) __obj.updateDynamic("selenium")(selenium)
+    if (test_runner != null) __obj.updateDynamic("test_runner")(test_runner.asInstanceOf[js.Any])
+    if (test_workers != null) __obj.updateDynamic("test_workers")(test_workers.asInstanceOf[js.Any])
+    __obj.asInstanceOf[NightwatchOptions]
+  }
+}
+

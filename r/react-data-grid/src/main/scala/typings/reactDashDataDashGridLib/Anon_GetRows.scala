@@ -10,3 +10,16 @@ trait Anon_GetRows extends js.Object {
   def getSelectedRowsByKey(state: js.Object): js.Array[js.Object]
 }
 
+object Anon_GetRows {
+  @scala.inline
+  def apply(
+    getRows: js.Function1[js.Object, js.Array[js.Object]],
+    getSelectedRowsByKey: js.Function1[js.Object, js.Array[js.Object]]
+  ): Anon_GetRows = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getRows")(getRows)
+    __obj.updateDynamic("getSelectedRowsByKey")(getSelectedRowsByKey)
+    __obj.asInstanceOf[Anon_GetRows]
+  }
+}
+

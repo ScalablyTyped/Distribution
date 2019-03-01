@@ -21,3 +21,22 @@ trait IMenuState extends js.Object {
   var showMenuDialog: scala.Boolean
 }
 
+object IMenuState {
+  @scala.inline
+  def apply(
+    currentNode: js.Any,
+    dialogTitle: java.lang.String,
+    menuActions: js.Any,
+    showMenu: scala.Boolean,
+    showMenuDialog: scala.Boolean
+  ): IMenuState = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("currentNode")(currentNode)
+    __obj.updateDynamic("dialogTitle")(dialogTitle)
+    __obj.updateDynamic("menuActions")(menuActions)
+    __obj.updateDynamic("showMenu")(showMenu)
+    __obj.updateDynamic("showMenuDialog")(showMenuDialog)
+    __obj.asInstanceOf[IMenuState]
+  }
+}
+

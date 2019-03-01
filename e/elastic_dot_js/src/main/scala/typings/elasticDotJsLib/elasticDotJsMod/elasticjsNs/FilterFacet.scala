@@ -48,3 +48,30 @@ trait FilterFacet extends Facet {
   def toJSON(): js.Any
 }
 
+object FilterFacet {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    cacheFilter: js.Function1[scala.Boolean, FilterFacet],
+    facetFilter: js.Function1[js.Object, FilterFacet],
+    filter: js.Function1[js.Object, FilterFacet],
+    global: js.Function1[scala.Boolean, FilterFacet],
+    mode: js.Function1[java.lang.String, FilterFacet],
+    nested: js.Function1[java.lang.String, FilterFacet],
+    scope: js.Function1[java.lang.String, FilterFacet],
+    toJSON: js.Function0[js.Any]
+  ): FilterFacet = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("cacheFilter")(cacheFilter)
+    __obj.updateDynamic("facetFilter")(facetFilter)
+    __obj.updateDynamic("filter")(filter)
+    __obj.updateDynamic("global")(global)
+    __obj.updateDynamic("mode")(mode)
+    __obj.updateDynamic("nested")(nested)
+    __obj.updateDynamic("scope")(scope)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[FilterFacet]
+  }
+}
+

@@ -26,3 +26,24 @@ trait ChangeEventArgs extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ChangeEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    endDate: js.Any = null,
+    model: Model = null,
+    startDate: js.Any = null,
+    `type`: java.lang.String = null,
+    value: java.lang.String = null
+  ): ChangeEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (endDate != null) __obj.updateDynamic("endDate")(endDate)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (startDate != null) __obj.updateDynamic("startDate")(startDate)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[ChangeEventArgs]
+  }
+}
+

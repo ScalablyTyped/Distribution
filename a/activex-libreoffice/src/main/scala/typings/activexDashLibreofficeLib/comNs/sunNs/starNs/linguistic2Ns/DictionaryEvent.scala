@@ -32,3 +32,18 @@ trait DictionaryEvent
   var xDictionaryEntry: XDictionaryEntry
 }
 
+object DictionaryEvent {
+  @scala.inline
+  def apply(
+    Source: activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface,
+    nEvent: scala.Double,
+    xDictionaryEntry: XDictionaryEntry
+  ): DictionaryEvent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Source")(Source)
+    __obj.updateDynamic("nEvent")(nEvent)
+    __obj.updateDynamic("xDictionaryEntry")(xDictionaryEntry)
+    __obj.asInstanceOf[DictionaryEvent]
+  }
+}
+

@@ -49,3 +49,34 @@ trait Response[TRelay, TBridge] extends js.Object {
   var version: java.lang.String
 }
 
+object Response {
+  @scala.inline
+  def apply[TRelay, TBridge](
+    bridges: js.Array[TBridge],
+    bridges_published: java.lang.String,
+    relays: js.Array[TRelay],
+    relays_published: java.lang.String,
+    version: java.lang.String,
+    bridges_skipped: scala.Int | scala.Double = null,
+    bridges_truncated: scala.Int | scala.Double = null,
+    build_revision: java.lang.String = null,
+    next_major_version_scheduled: java.lang.String = null,
+    relays_skipped: scala.Int | scala.Double = null,
+    relays_truncated: scala.Int | scala.Double = null
+  ): Response[TRelay, TBridge] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bridges")(bridges)
+    __obj.updateDynamic("bridges_published")(bridges_published)
+    __obj.updateDynamic("relays")(relays)
+    __obj.updateDynamic("relays_published")(relays_published)
+    __obj.updateDynamic("version")(version)
+    if (bridges_skipped != null) __obj.updateDynamic("bridges_skipped")(bridges_skipped.asInstanceOf[js.Any])
+    if (bridges_truncated != null) __obj.updateDynamic("bridges_truncated")(bridges_truncated.asInstanceOf[js.Any])
+    if (build_revision != null) __obj.updateDynamic("build_revision")(build_revision)
+    if (next_major_version_scheduled != null) __obj.updateDynamic("next_major_version_scheduled")(next_major_version_scheduled)
+    if (relays_skipped != null) __obj.updateDynamic("relays_skipped")(relays_skipped.asInstanceOf[js.Any])
+    if (relays_truncated != null) __obj.updateDynamic("relays_truncated")(relays_truncated.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Response[TRelay, TBridge]]
+  }
+}
+

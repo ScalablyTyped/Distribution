@@ -10,3 +10,13 @@ trait Context extends js.Object {
   var story: java.lang.String
 }
 
+object Context {
+  @scala.inline
+  def apply(kind: java.lang.String, story: java.lang.String): Context = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("kind")(kind)
+    __obj.updateDynamic("story")(story)
+    __obj.asInstanceOf[Context]
+  }
+}
+

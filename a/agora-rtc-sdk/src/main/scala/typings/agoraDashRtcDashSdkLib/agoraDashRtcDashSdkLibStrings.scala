@@ -7,148 +7,243 @@ import scala.scalajs.js.annotation._
 
 object agoraDashRtcDashSdkLibStrings {
   @js.native
-  sealed trait `1080p` extends js.Object
+  sealed trait `1080p`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `1080p_1` extends js.Object
+  sealed trait `1080p_1`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ScreenSharingProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `1080p_2` extends js.Object
+  sealed trait `1080p_2`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ScreenSharingProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `1080p_3` extends js.Object
+  sealed trait `1080p_3`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `1080p_5` extends js.Object
+  sealed trait `1080p_5`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `120p` extends js.Object
+  sealed trait `120p`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `120p_1` extends js.Object
+  sealed trait `120p_1`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `120p_3` extends js.Object
+  sealed trait `120p_3`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `1440p` extends js.Object
+  sealed trait `1440p`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `1440p_1` extends js.Object
+  sealed trait `1440p_1`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `1440p_2` extends js.Object
+  sealed trait `1440p_2`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `180p` extends js.Object
+  sealed trait `180p`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `180p_1` extends js.Object
+  sealed trait `180p_1`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `180p_3` extends js.Object
+  sealed trait `180p_3`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `180p_4` extends js.Object
+  sealed trait `180p_4`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `240p` extends js.Object
+  sealed trait `240p`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `240p_1` extends js.Object
+  sealed trait `240p_1`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `240p_3` extends js.Object
+  sealed trait `240p_3`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `240p_4` extends js.Object
+  sealed trait `240p_4`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p` extends js.Object
+  sealed trait `360p`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p_1` extends js.Object
+  sealed trait `360p_1`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p_10` extends js.Object
+  sealed trait `360p_10`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p_11` extends js.Object
+  sealed trait `360p_11`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p_3` extends js.Object
+  sealed trait `360p_3`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p_4` extends js.Object
+  sealed trait `360p_4`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p_6` extends js.Object
+  sealed trait `360p_6`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p_7` extends js.Object
+  sealed trait `360p_7`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p_8` extends js.Object
+  sealed trait `360p_8`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `360p_9` extends js.Object
+  sealed trait `360p_9`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `480p` extends js.Object
+  sealed trait `480p`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `480p_1` extends js.Object
+  sealed trait `480p_1`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ScreenSharingProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `480p_10` extends js.Object
+  sealed trait `480p_10`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `480p_2` extends js.Object
+  sealed trait `480p_2`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ScreenSharingProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `480p_3` extends js.Object
+  sealed trait `480p_3`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `480p_4` extends js.Object
+  sealed trait `480p_4`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `480p_6` extends js.Object
+  sealed trait `480p_6`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `480p_8` extends js.Object
+  sealed trait `480p_8`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `480p_9` extends js.Object
+  sealed trait `480p_9`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `4K` extends js.Object
+  sealed trait `4K`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `4K_1` extends js.Object
+  sealed trait `4K_1`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `4K_3` extends js.Object
+  sealed trait `4K_3`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `720p` extends js.Object
+  sealed trait `720p`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `720p_1` extends js.Object
+  sealed trait `720p_1`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ScreenSharingProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `720p_2` extends js.Object
+  sealed trait `720p_2`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ScreenSharingProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `720p_3` extends js.Object
+  sealed trait `720p_3`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `720p_5` extends js.Object
+  sealed trait `720p_5`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `720p_6` extends js.Object
+  sealed trait `720p_6`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.FirefoxVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.SafariVideoProfile
+       with agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.VideoProfile
   
   @js.native
-  sealed trait `active-speaker` extends js.Object
+  sealed trait `active-speaker`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
   sealed trait `aes-128-ecb` extends js.Object
@@ -163,10 +258,12 @@ object agoraDashRtcDashSdkLibStrings {
   sealed trait application extends js.Object
   
   @js.native
-  sealed trait `client-banned` extends js.Object
+  sealed trait `client-banned`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
   sealed trait h264 extends js.Object
@@ -175,13 +272,16 @@ object agoraDashRtcDashSdkLibStrings {
   sealed trait live extends js.Object
   
   @js.native
-  sealed trait `mute-audio` extends js.Object
+  sealed trait `mute-audio`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
-  sealed trait `mute-video` extends js.Object
+  sealed trait `mute-video`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
-  sealed trait `peer-leave` extends js.Object
+  sealed trait `peer-leave`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
   sealed trait rtc extends js.Object
@@ -190,22 +290,28 @@ object agoraDashRtcDashSdkLibStrings {
   sealed trait screen extends js.Object
   
   @js.native
-  sealed trait `stream-added` extends js.Object
+  sealed trait `stream-added`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
-  sealed trait `stream-published` extends js.Object
+  sealed trait `stream-published`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
-  sealed trait `stream-removed` extends js.Object
+  sealed trait `stream-removed`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
-  sealed trait `stream-subscribed` extends js.Object
+  sealed trait `stream-subscribed`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
-  sealed trait `unmute-audio` extends js.Object
+  sealed trait `unmute-audio`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
-  sealed trait `unmute-video` extends js.Object
+  sealed trait `unmute-video`
+    extends agoraDashRtcDashSdkLib.agoraDashRtcDashSdkMod.ClientEvent
   
   @js.native
   sealed trait vp8 extends js.Object

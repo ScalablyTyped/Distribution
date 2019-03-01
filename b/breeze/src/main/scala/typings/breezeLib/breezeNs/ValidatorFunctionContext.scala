@@ -13,3 +13,22 @@ trait ValidatorFunctionContext extends js.Object {
   var value: js.Any
 }
 
+object ValidatorFunctionContext {
+  @scala.inline
+  def apply(
+    displayName: java.lang.String,
+    messageTemplate: java.lang.String,
+    validatorName: java.lang.String,
+    value: js.Any,
+    message: java.lang.String = null
+  ): ValidatorFunctionContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("displayName")(displayName)
+    __obj.updateDynamic("messageTemplate")(messageTemplate)
+    __obj.updateDynamic("validatorName")(validatorName)
+    __obj.updateDynamic("value")(value)
+    if (message != null) __obj.updateDynamic("message")(message)
+    __obj.asInstanceOf[ValidatorFunctionContext]
+  }
+}
+

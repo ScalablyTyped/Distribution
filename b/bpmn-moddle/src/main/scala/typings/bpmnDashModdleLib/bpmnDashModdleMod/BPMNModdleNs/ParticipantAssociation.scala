@@ -10,3 +10,28 @@ trait ParticipantAssociation extends BaseElement {
   var outerParticipantRef: Participant
 }
 
+object ParticipantAssociation {
+  @scala.inline
+  def apply(
+    $type: ElementType,
+    id: java.lang.String,
+    innerParticipantRef: Participant,
+    outerParticipantRef: Participant,
+    $attrs: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    documentation: js.Array[Documentation] = null,
+    extensionDefinitions: js.Array[ExtensionDefinition] = null,
+    extensionElements: ExtensionElements = null
+  ): ParticipantAssociation = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("$type")($type)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("innerParticipantRef")(innerParticipantRef)
+    __obj.updateDynamic("outerParticipantRef")(outerParticipantRef)
+    if ($attrs != null) __obj.updateDynamic("$attrs")($attrs)
+    if (documentation != null) __obj.updateDynamic("documentation")(documentation)
+    if (extensionDefinitions != null) __obj.updateDynamic("extensionDefinitions")(extensionDefinitions)
+    if (extensionElements != null) __obj.updateDynamic("extensionElements")(extensionElements)
+    __obj.asInstanceOf[ParticipantAssociation]
+  }
+}
+

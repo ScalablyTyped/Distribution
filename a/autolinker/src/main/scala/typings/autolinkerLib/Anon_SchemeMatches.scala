@@ -11,3 +11,14 @@ trait Anon_SchemeMatches extends js.Object {
   var wwwMatches: scala.Boolean
 }
 
+object Anon_SchemeMatches {
+  @scala.inline
+  def apply(schemeMatches: scala.Boolean, tldMatches: scala.Boolean, wwwMatches: scala.Boolean): Anon_SchemeMatches = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("schemeMatches")(schemeMatches)
+    __obj.updateDynamic("tldMatches")(tldMatches)
+    __obj.updateDynamic("wwwMatches")(wwwMatches)
+    __obj.asInstanceOf[Anon_SchemeMatches]
+  }
+}
+

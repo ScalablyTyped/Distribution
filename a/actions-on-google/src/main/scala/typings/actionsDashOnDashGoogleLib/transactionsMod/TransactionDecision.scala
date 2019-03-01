@@ -17,3 +17,20 @@ trait TransactionDecision extends js.Object {
   var userDecision: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
 }
 
+object TransactionDecision {
+  @scala.inline
+  def apply(
+    checkResult: actionsDashOnDashGoogleLib.Anon_ResultType,
+    deliveryAddress: Location,
+    order: actionsDashOnDashGoogleLib.Anon_ActionOrderId,
+    userDecision: actionsDashOnDashGoogleLib.transactionsMod.TransactionValuesNs.TransactionUserDecision
+  ): TransactionDecision = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkResult")(checkResult)
+    __obj.updateDynamic("deliveryAddress")(deliveryAddress)
+    __obj.updateDynamic("order")(order)
+    __obj.updateDynamic("userDecision")(userDecision)
+    __obj.asInstanceOf[TransactionDecision]
+  }
+}
+

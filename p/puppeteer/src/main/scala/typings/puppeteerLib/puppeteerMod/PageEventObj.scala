@@ -59,3 +59,48 @@ trait PageEventObj extends js.Object {
   var workerdestroyed: Worker
 }
 
+object PageEventObj {
+  @scala.inline
+  def apply(
+    console: ConsoleMessage,
+    dialog: Dialog,
+    domcontentloaded: scala.Nothing,
+    error: nodeLib.Error,
+    frameattached: Frame,
+    framedetached: Frame,
+    framenavigated: Frame,
+    metrics: puppeteerLib.Anon_Metrics,
+    pageerror: nodeLib.Error,
+    popup: Page,
+    request: Request,
+    requestfailed: Request,
+    requestfinished: Request,
+    response: Response,
+    workercreated: Worker,
+    workerdestroyed: Worker,
+    close: js.UndefOr[scala.Nothing] = js.undefined,
+    load: js.UndefOr[scala.Nothing] = js.undefined
+  ): PageEventObj = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("console")(console)
+    __obj.updateDynamic("dialog")(dialog)
+    __obj.updateDynamic("domcontentloaded")(domcontentloaded)
+    __obj.updateDynamic("error")(error)
+    __obj.updateDynamic("frameattached")(frameattached)
+    __obj.updateDynamic("framedetached")(framedetached)
+    __obj.updateDynamic("framenavigated")(framenavigated)
+    __obj.updateDynamic("metrics")(metrics)
+    __obj.updateDynamic("pageerror")(pageerror)
+    __obj.updateDynamic("popup")(popup)
+    __obj.updateDynamic("request")(request)
+    __obj.updateDynamic("requestfailed")(requestfailed)
+    __obj.updateDynamic("requestfinished")(requestfinished)
+    __obj.updateDynamic("response")(response)
+    __obj.updateDynamic("workercreated")(workercreated)
+    __obj.updateDynamic("workerdestroyed")(workerdestroyed)
+    if (!js.isUndefined(close)) __obj.updateDynamic("close")(close)
+    if (!js.isUndefined(load)) __obj.updateDynamic("load")(load)
+    __obj.asInstanceOf[PageEventObj]
+  }
+}
+

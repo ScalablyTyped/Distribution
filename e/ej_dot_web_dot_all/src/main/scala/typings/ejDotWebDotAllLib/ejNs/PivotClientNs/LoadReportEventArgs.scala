@@ -14,3 +14,13 @@ trait LoadReportEventArgs extends js.Object {
   var targetControl: js.UndefOr[js.Any] = js.undefined
 }
 
+object LoadReportEventArgs {
+  @scala.inline
+  def apply(loadReportSetting: js.Any = null, targetControl: js.Any = null): LoadReportEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (loadReportSetting != null) __obj.updateDynamic("loadReportSetting")(loadReportSetting)
+    if (targetControl != null) __obj.updateDynamic("targetControl")(targetControl)
+    __obj.asInstanceOf[LoadReportEventArgs]
+  }
+}
+

@@ -28,3 +28,36 @@ trait XMutableTreeDataModel extends XTreeDataModel {
   def setRoot(RootNode: XMutableTreeNode): scala.Unit
 }
 
+object XMutableTreeDataModel {
+  @scala.inline
+  def apply(
+    Root: XTreeNode,
+    acquire: js.Function0[scala.Unit],
+    addEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    addTreeDataModelListener: js.Function1[XTreeDataModelListener, scala.Unit],
+    createNode: js.Function2[js.Any, scala.Boolean, XMutableTreeNode],
+    dispose: js.Function0[scala.Unit],
+    getRoot: js.Function0[XTreeNode],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeEventListener: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XEventListener, scala.Unit],
+    removeTreeDataModelListener: js.Function1[XTreeDataModelListener, scala.Unit],
+    setRoot: js.Function1[XMutableTreeNode, scala.Unit]
+  ): XMutableTreeDataModel = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Root")(Root)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addEventListener")(addEventListener)
+    __obj.updateDynamic("addTreeDataModelListener")(addTreeDataModelListener)
+    __obj.updateDynamic("createNode")(createNode)
+    __obj.updateDynamic("dispose")(dispose)
+    __obj.updateDynamic("getRoot")(getRoot)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeEventListener")(removeEventListener)
+    __obj.updateDynamic("removeTreeDataModelListener")(removeTreeDataModelListener)
+    __obj.updateDynamic("setRoot")(setRoot)
+    __obj.asInstanceOf[XMutableTreeDataModel]
+  }
+}
+

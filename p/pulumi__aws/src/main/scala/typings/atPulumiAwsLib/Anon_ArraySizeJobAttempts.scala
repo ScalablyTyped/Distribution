@@ -12,3 +12,20 @@ trait Anon_ArraySizeJobAttempts extends js.Object {
   var jobName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object Anon_ArraySizeJobAttempts {
+  @scala.inline
+  def apply(
+    jobDefinition: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    jobName: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    arraySize: atPulumiPulumiLib.outputMod.Input[scala.Double] = null,
+    jobAttempts: atPulumiPulumiLib.outputMod.Input[scala.Double] = null
+  ): Anon_ArraySizeJobAttempts = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("jobDefinition")(jobDefinition.asInstanceOf[js.Any])
+    __obj.updateDynamic("jobName")(jobName.asInstanceOf[js.Any])
+    if (arraySize != null) __obj.updateDynamic("arraySize")(arraySize.asInstanceOf[js.Any])
+    if (jobAttempts != null) __obj.updateDynamic("jobAttempts")(jobAttempts.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_ArraySizeJobAttempts]
+  }
+}
+

@@ -16,3 +16,28 @@ trait DateInputMessages extends js.Object {
   var year: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object DateInputMessages {
+  @scala.inline
+  def apply(
+    day: java.lang.String = null,
+    dayperiod: java.lang.String = null,
+    hour: java.lang.String = null,
+    minute: java.lang.String = null,
+    month: java.lang.String = null,
+    second: java.lang.String = null,
+    weekday: java.lang.String = null,
+    year: java.lang.String = null
+  ): DateInputMessages = {
+    val __obj = js.Dynamic.literal()
+    if (day != null) __obj.updateDynamic("day")(day)
+    if (dayperiod != null) __obj.updateDynamic("dayperiod")(dayperiod)
+    if (hour != null) __obj.updateDynamic("hour")(hour)
+    if (minute != null) __obj.updateDynamic("minute")(minute)
+    if (month != null) __obj.updateDynamic("month")(month)
+    if (second != null) __obj.updateDynamic("second")(second)
+    if (weekday != null) __obj.updateDynamic("weekday")(weekday)
+    if (year != null) __obj.updateDynamic("year")(year)
+    __obj.asInstanceOf[DateInputMessages]
+  }
+}
+

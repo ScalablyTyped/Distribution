@@ -10,3 +10,16 @@ trait Anon_GlParent extends js.Object {
   var glSurface: glDashReactLib.glDashReactMod.Surface[_]
 }
 
+object Anon_GlParent {
+  @scala.inline
+  def apply(
+    glParent: glDashReactLib.glDashReactMod.Surface[_] | glDashReactLib.glDashReactMod.Node,
+    glSurface: glDashReactLib.glDashReactMod.Surface[_]
+  ): Anon_GlParent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("glParent")(glParent.asInstanceOf[js.Any])
+    __obj.updateDynamic("glSurface")(glSurface)
+    __obj.asInstanceOf[Anon_GlParent]
+  }
+}
+

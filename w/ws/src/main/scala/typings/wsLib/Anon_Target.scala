@@ -9,3 +9,12 @@ trait Anon_Target extends js.Object {
   var target: wsLib.wsMod.WebSocket
 }
 
+object Anon_Target {
+  @scala.inline
+  def apply(target: wsLib.wsMod.WebSocket): Anon_Target = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("target")(target)
+    __obj.asInstanceOf[Anon_Target]
+  }
+}
+

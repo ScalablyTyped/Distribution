@@ -10,3 +10,13 @@ trait Anon_Card extends js.Object {
   var hostedFields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFields
 }
 
+object Anon_Card {
+  @scala.inline
+  def apply(card: js.Any, hostedFields: braintreeDashWebLib.braintreeDashWebMod.braintreeNs.HostedFields): Anon_Card = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("card")(card)
+    __obj.updateDynamic("hostedFields")(hostedFields)
+    __obj.asInstanceOf[Anon_Card]
+  }
+}
+

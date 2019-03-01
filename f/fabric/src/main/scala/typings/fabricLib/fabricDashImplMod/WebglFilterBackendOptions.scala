@@ -9,3 +9,12 @@ trait WebglFilterBackendOptions extends js.Object {
   var tileSize: scala.Double
 }
 
+object WebglFilterBackendOptions {
+  @scala.inline
+  def apply(tileSize: scala.Double): WebglFilterBackendOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tileSize")(tileSize)
+    __obj.asInstanceOf[WebglFilterBackendOptions]
+  }
+}
+

@@ -15,3 +15,24 @@ trait BackoffSettings extends js.Object {
   var totalTimeoutMillis: scala.Double
 }
 
+object BackoffSettings {
+  @scala.inline
+  def apply(
+    initialRetryDelayMillis: scala.Double,
+    initialRpcTimeoutMillis: scala.Double,
+    maxRetryDelayMillis: scala.Double,
+    maxRpcTimeoutMillis: scala.Double,
+    retryDelayMultiplier: scala.Double,
+    totalTimeoutMillis: scala.Double
+  ): BackoffSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("initialRetryDelayMillis")(initialRetryDelayMillis)
+    __obj.updateDynamic("initialRpcTimeoutMillis")(initialRpcTimeoutMillis)
+    __obj.updateDynamic("maxRetryDelayMillis")(maxRetryDelayMillis)
+    __obj.updateDynamic("maxRpcTimeoutMillis")(maxRpcTimeoutMillis)
+    __obj.updateDynamic("retryDelayMultiplier")(retryDelayMultiplier)
+    __obj.updateDynamic("totalTimeoutMillis")(totalTimeoutMillis)
+    __obj.asInstanceOf[BackoffSettings]
+  }
+}
+

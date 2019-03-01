@@ -14,3 +14,18 @@ trait ListJobMessagesResponse extends js.Object {
   var nextPageToken: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListJobMessagesResponse {
+  @scala.inline
+  def apply(
+    autoscalingEvents: js.Array[AutoscalingEvent] = null,
+    jobMessages: js.Array[JobMessage] = null,
+    nextPageToken: java.lang.String = null
+  ): ListJobMessagesResponse = {
+    val __obj = js.Dynamic.literal()
+    if (autoscalingEvents != null) __obj.updateDynamic("autoscalingEvents")(autoscalingEvents)
+    if (jobMessages != null) __obj.updateDynamic("jobMessages")(jobMessages)
+    if (nextPageToken != null) __obj.updateDynamic("nextPageToken")(nextPageToken)
+    __obj.asInstanceOf[ListJobMessagesResponse]
+  }
+}
+

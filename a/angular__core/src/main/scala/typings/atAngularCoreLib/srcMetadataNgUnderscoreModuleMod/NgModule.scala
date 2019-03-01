@@ -191,3 +191,32 @@ trait NgModule extends js.Object {
   var schemas: js.UndefOr[js.Array[SchemaMetadata | js.Array[_]]] = js.undefined
 }
 
+object NgModule {
+  @scala.inline
+  def apply(
+    bootstrap: js.Array[atAngularCoreLib.srcTypeMod.Type[_] | js.Array[_]] = null,
+    declarations: js.Array[atAngularCoreLib.srcTypeMod.Type[_] | js.Array[_]] = null,
+    entryComponents: js.Array[atAngularCoreLib.srcTypeMod.Type[_] | js.Array[_]] = null,
+    exports: js.Array[atAngularCoreLib.srcTypeMod.Type[_] | js.Array[_]] = null,
+    id: java.lang.String = null,
+    imports: js.Array[
+      atAngularCoreLib.srcTypeMod.Type[_] | ModuleWithProviders[js.Object] | js.Array[_]
+    ] = null,
+    jit: atAngularCoreLib.atAngularCoreLibNumbers.`true` = null,
+    providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider] = null,
+    schemas: js.Array[SchemaMetadata | js.Array[_]] = null
+  ): NgModule = {
+    val __obj = js.Dynamic.literal()
+    if (bootstrap != null) __obj.updateDynamic("bootstrap")(bootstrap)
+    if (declarations != null) __obj.updateDynamic("declarations")(declarations)
+    if (entryComponents != null) __obj.updateDynamic("entryComponents")(entryComponents)
+    if (exports != null) __obj.updateDynamic("exports")(exports)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (imports != null) __obj.updateDynamic("imports")(imports)
+    if (jit != null) __obj.updateDynamic("jit")(jit)
+    if (providers != null) __obj.updateDynamic("providers")(providers)
+    if (schemas != null) __obj.updateDynamic("schemas")(schemas)
+    __obj.asInstanceOf[NgModule]
+  }
+}
+

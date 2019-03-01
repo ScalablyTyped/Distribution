@@ -35,3 +35,26 @@ trait SassException
   var status: scala.Double
 }
 
+object SassException {
+  @scala.inline
+  def apply(
+    column: scala.Double,
+    file: java.lang.String,
+    formatted: java.lang.String,
+    line: scala.Double,
+    message: java.lang.String,
+    status: scala.Double,
+    stack: java.lang.String = null
+  ): SassException = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("column")(column)
+    __obj.updateDynamic("file")(file)
+    __obj.updateDynamic("formatted")(formatted)
+    __obj.updateDynamic("line")(line)
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("status")(status)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[SassException]
+  }
+}
+

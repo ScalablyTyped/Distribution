@@ -25,3 +25,23 @@ trait SignOptions extends js.Object {
   ] = js.undefined
 }
 
+object SignOptions {
+  @scala.inline
+  def apply(
+    data: nodeLib.Buffer = null,
+    noncefn: js.Function5[
+      /* message */ nodeLib.Buffer, 
+      /* privateKey */ nodeLib.Buffer, 
+      /* algo */ nodeLib.Buffer | scala.Null, 
+      /* data */ nodeLib.Buffer | scala.Null, 
+      /* attempt */ scala.Double, 
+      nodeLib.Buffer
+    ] = null
+  ): SignOptions = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (noncefn != null) __obj.updateDynamic("noncefn")(noncefn)
+    __obj.asInstanceOf[SignOptions]
+  }
+}
+

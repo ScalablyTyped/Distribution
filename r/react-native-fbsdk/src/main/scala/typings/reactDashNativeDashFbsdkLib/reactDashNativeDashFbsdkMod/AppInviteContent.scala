@@ -29,3 +29,20 @@ trait AppInviteContent extends js.Object {
   var promotionText: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object AppInviteContent {
+  @scala.inline
+  def apply(
+    applinkUrl: java.lang.String,
+    previewImageUrl: java.lang.String = null,
+    promotionCode: java.lang.String = null,
+    promotionText: java.lang.String = null
+  ): AppInviteContent = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("applinkUrl")(applinkUrl)
+    if (previewImageUrl != null) __obj.updateDynamic("previewImageUrl")(previewImageUrl)
+    if (promotionCode != null) __obj.updateDynamic("promotionCode")(promotionCode)
+    if (promotionText != null) __obj.updateDynamic("promotionText")(promotionText)
+    __obj.asInstanceOf[AppInviteContent]
+  }
+}
+

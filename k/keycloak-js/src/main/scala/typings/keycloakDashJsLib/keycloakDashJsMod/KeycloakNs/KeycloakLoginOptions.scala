@@ -64,3 +64,32 @@ trait KeycloakLoginOptions extends js.Object {
   var scope: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object KeycloakLoginOptions {
+  @scala.inline
+  def apply(
+    action: keycloakDashJsLib.keycloakDashJsLibStrings.register = null,
+    cordovaOptions: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,
+    idpHint: java.lang.String = null,
+    kcLocale: java.lang.String = null,
+    locale: java.lang.String = null,
+    loginHint: java.lang.String = null,
+    maxAge: scala.Int | scala.Double = null,
+    prompt: keycloakDashJsLib.keycloakDashJsLibStrings.none | keycloakDashJsLib.keycloakDashJsLibStrings.login = null,
+    redirectUri: java.lang.String = null,
+    scope: java.lang.String = null
+  ): KeycloakLoginOptions = {
+    val __obj = js.Dynamic.literal()
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (cordovaOptions != null) __obj.updateDynamic("cordovaOptions")(cordovaOptions)
+    if (idpHint != null) __obj.updateDynamic("idpHint")(idpHint)
+    if (kcLocale != null) __obj.updateDynamic("kcLocale")(kcLocale)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (loginHint != null) __obj.updateDynamic("loginHint")(loginHint)
+    if (maxAge != null) __obj.updateDynamic("maxAge")(maxAge.asInstanceOf[js.Any])
+    if (prompt != null) __obj.updateDynamic("prompt")(prompt.asInstanceOf[js.Any])
+    if (redirectUri != null) __obj.updateDynamic("redirectUri")(redirectUri)
+    if (scope != null) __obj.updateDynamic("scope")(scope)
+    __obj.asInstanceOf[KeycloakLoginOptions]
+  }
+}
+

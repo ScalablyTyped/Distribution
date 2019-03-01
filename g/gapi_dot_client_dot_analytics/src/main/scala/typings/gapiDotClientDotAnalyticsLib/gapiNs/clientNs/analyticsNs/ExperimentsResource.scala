@@ -20,3 +20,42 @@ trait ExperimentsResource extends js.Object {
   def update(request: gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId): gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
 }
 
+object ExperimentsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[scala.Unit]
+    ],
+    get: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyOauthtokenPrettyPrint, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltFieldsKeyMaxresultsOauthtoken, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Experiments]
+    ],
+    patch: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
+    ],
+    update: js.Function1[
+      gapiDotClientDotAnalyticsLib.Anon_AccountIdAltExperimentId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[Experiment]
+    ]
+  ): ExperimentsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("get")(get)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.updateDynamic("patch")(patch)
+    __obj.updateDynamic("update")(update)
+    __obj.asInstanceOf[ExperimentsResource]
+  }
+}
+

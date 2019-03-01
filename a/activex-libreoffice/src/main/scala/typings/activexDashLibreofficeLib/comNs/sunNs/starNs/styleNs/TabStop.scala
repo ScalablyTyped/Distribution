@@ -17,3 +17,20 @@ trait TabStop extends js.Object {
   var Position: scala.Double
 }
 
+object TabStop {
+  @scala.inline
+  def apply(
+    Alignment: TabAlign,
+    DecimalChar: java.lang.String,
+    FillChar: java.lang.String,
+    Position: scala.Double
+  ): TabStop = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Alignment")(Alignment)
+    __obj.updateDynamic("DecimalChar")(DecimalChar)
+    __obj.updateDynamic("FillChar")(FillChar)
+    __obj.updateDynamic("Position")(Position)
+    __obj.asInstanceOf[TabStop]
+  }
+}
+

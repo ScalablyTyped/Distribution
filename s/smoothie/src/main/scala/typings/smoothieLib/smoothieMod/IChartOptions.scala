@@ -66,3 +66,64 @@ trait IChartOptions extends js.Object {
   var yRangeFunction: js.UndefOr[js.Function1[/* range */ IRange, IRange]] = js.undefined
 }
 
+object IChartOptions {
+  @scala.inline
+  def apply(
+    displayDataFromPercentile: scala.Int | scala.Double = null,
+    enableDpiScaling: js.UndefOr[scala.Boolean] = js.undefined,
+    grid: IGridOptions = null,
+    horizontalLines: js.Array[IHorizontalLine] = null,
+    interpolation: smoothieLib.smoothieLibStrings.linear | smoothieLib.smoothieLibStrings.step | smoothieLib.smoothieLibStrings.bezier = null,
+    labels: ILabelOptions = null,
+    limitFPS: scala.Int | scala.Double = null,
+    maxDataSetLength: scala.Int | scala.Double = null,
+    maxValue: scala.Int | scala.Double = null,
+    maxValueScale: scala.Int | scala.Double = null,
+    millisPerPixel: scala.Int | scala.Double = null,
+    minValue: scala.Int | scala.Double = null,
+    minValueScale: scala.Int | scala.Double = null,
+    nonRealtimeData: js.UndefOr[scala.Boolean] = js.undefined,
+    responsive: js.UndefOr[scala.Boolean] = js.undefined,
+    scaleSmoothing: scala.Int | scala.Double = null,
+    timestampFormatter: js.Function1[/* date */ stdLib.Date, java.lang.String] = null,
+    tooltip: js.UndefOr[scala.Boolean] = js.undefined,
+    tooltipFormatter: js.Function2[
+      /* timestamp */ scala.Double, 
+      /* data */ js.Array[smoothieLib.Anon_Index], 
+      java.lang.String
+    ] = null,
+    tooltipLine: smoothieLib.Anon_LineWidth = null,
+    yIntermediateFormatter: js.Function2[/* intermediate */ scala.Double, /* precision */ scala.Double, java.lang.String] = null,
+    yMaxFormatter: js.Function2[/* max */ scala.Double, /* precision */ scala.Double, java.lang.String] = null,
+    yMinFormatter: js.Function2[/* min */ scala.Double, /* precision */ scala.Double, java.lang.String] = null,
+    yRangeFunction: js.Function1[/* range */ IRange, IRange] = null
+  ): IChartOptions = {
+    val __obj = js.Dynamic.literal()
+    if (displayDataFromPercentile != null) __obj.updateDynamic("displayDataFromPercentile")(displayDataFromPercentile.asInstanceOf[js.Any])
+    if (!js.isUndefined(enableDpiScaling)) __obj.updateDynamic("enableDpiScaling")(enableDpiScaling)
+    if (grid != null) __obj.updateDynamic("grid")(grid)
+    if (horizontalLines != null) __obj.updateDynamic("horizontalLines")(horizontalLines)
+    if (interpolation != null) __obj.updateDynamic("interpolation")(interpolation.asInstanceOf[js.Any])
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (limitFPS != null) __obj.updateDynamic("limitFPS")(limitFPS.asInstanceOf[js.Any])
+    if (maxDataSetLength != null) __obj.updateDynamic("maxDataSetLength")(maxDataSetLength.asInstanceOf[js.Any])
+    if (maxValue != null) __obj.updateDynamic("maxValue")(maxValue.asInstanceOf[js.Any])
+    if (maxValueScale != null) __obj.updateDynamic("maxValueScale")(maxValueScale.asInstanceOf[js.Any])
+    if (millisPerPixel != null) __obj.updateDynamic("millisPerPixel")(millisPerPixel.asInstanceOf[js.Any])
+    if (minValue != null) __obj.updateDynamic("minValue")(minValue.asInstanceOf[js.Any])
+    if (minValueScale != null) __obj.updateDynamic("minValueScale")(minValueScale.asInstanceOf[js.Any])
+    if (!js.isUndefined(nonRealtimeData)) __obj.updateDynamic("nonRealtimeData")(nonRealtimeData)
+    if (!js.isUndefined(responsive)) __obj.updateDynamic("responsive")(responsive)
+    if (scaleSmoothing != null) __obj.updateDynamic("scaleSmoothing")(scaleSmoothing.asInstanceOf[js.Any])
+    if (timestampFormatter != null) __obj.updateDynamic("timestampFormatter")(timestampFormatter)
+    if (!js.isUndefined(tooltip)) __obj.updateDynamic("tooltip")(tooltip)
+    if (tooltipFormatter != null) __obj.updateDynamic("tooltipFormatter")(tooltipFormatter)
+    if (tooltipLine != null) __obj.updateDynamic("tooltipLine")(tooltipLine)
+    if (yIntermediateFormatter != null) __obj.updateDynamic("yIntermediateFormatter")(yIntermediateFormatter)
+    if (yMaxFormatter != null) __obj.updateDynamic("yMaxFormatter")(yMaxFormatter)
+    if (yMinFormatter != null) __obj.updateDynamic("yMinFormatter")(yMinFormatter)
+    if (yRangeFunction != null) __obj.updateDynamic("yRangeFunction")(yRangeFunction)
+    __obj.asInstanceOf[IChartOptions]
+  }
+}
+

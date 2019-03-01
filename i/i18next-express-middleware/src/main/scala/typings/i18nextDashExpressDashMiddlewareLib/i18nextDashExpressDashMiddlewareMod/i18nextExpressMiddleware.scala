@@ -10,3 +10,16 @@ trait i18nextExpressMiddleware extends js.Object {
   def missingKeyHandler(): expressLib.expressMod.eNs.Handler
 }
 
+object i18nextExpressMiddleware {
+  @scala.inline
+  def apply(
+    LanguageDetector: js.Function0[expressLib.expressMod.eNs.Handler],
+    missingKeyHandler: js.Function0[expressLib.expressMod.eNs.Handler]
+  ): i18nextExpressMiddleware = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("LanguageDetector")(LanguageDetector)
+    __obj.updateDynamic("missingKeyHandler")(missingKeyHandler)
+    __obj.asInstanceOf[i18nextExpressMiddleware]
+  }
+}
+

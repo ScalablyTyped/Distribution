@@ -78,3 +78,32 @@ trait StickyOptions extends js.Object {
   var top: js.UndefOr[scala.Double] = js.undefined
 }
 
+object StickyOptions {
+  @scala.inline
+  def apply(
+    animation: java.lang.String = null,
+    boundary: scala.Boolean | java.lang.String = null,
+    clsactive: java.lang.String = null,
+    clsinactive: java.lang.String = null,
+    clsinit: java.lang.String = null,
+    getWidthFrom: java.lang.String = null,
+    media: scala.Double | java.lang.String = null,
+    showup: js.UndefOr[scala.Boolean] = js.undefined,
+    target: js.UndefOr[scala.Boolean] = js.undefined,
+    top: scala.Int | scala.Double = null
+  ): StickyOptions = {
+    val __obj = js.Dynamic.literal()
+    if (animation != null) __obj.updateDynamic("animation")(animation)
+    if (boundary != null) __obj.updateDynamic("boundary")(boundary.asInstanceOf[js.Any])
+    if (clsactive != null) __obj.updateDynamic("clsactive")(clsactive)
+    if (clsinactive != null) __obj.updateDynamic("clsinactive")(clsinactive)
+    if (clsinit != null) __obj.updateDynamic("clsinit")(clsinit)
+    if (getWidthFrom != null) __obj.updateDynamic("getWidthFrom")(getWidthFrom)
+    if (media != null) __obj.updateDynamic("media")(media.asInstanceOf[js.Any])
+    if (!js.isUndefined(showup)) __obj.updateDynamic("showup")(showup)
+    if (!js.isUndefined(target)) __obj.updateDynamic("target")(target)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    __obj.asInstanceOf[StickyOptions]
+  }
+}
+

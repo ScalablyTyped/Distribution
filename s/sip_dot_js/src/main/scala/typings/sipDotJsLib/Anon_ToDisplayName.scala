@@ -10,3 +10,13 @@ trait Anon_ToDisplayName extends js.Object {
   var toUri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Anon_ToDisplayName {
+  @scala.inline
+  def apply(toDisplayName: java.lang.String, toUri: java.lang.String = null): Anon_ToDisplayName = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("toDisplayName")(toDisplayName)
+    if (toUri != null) __obj.updateDynamic("toUri")(toUri)
+    __obj.asInstanceOf[Anon_ToDisplayName]
+  }
+}
+

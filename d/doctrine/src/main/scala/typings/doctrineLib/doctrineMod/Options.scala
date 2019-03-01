@@ -44,3 +44,26 @@ trait Options extends js.Object {
   var unwrap: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    lineNumbers: js.UndefOr[scala.Boolean] = js.undefined,
+    preserveWhitespace: js.UndefOr[scala.Boolean] = js.undefined,
+    recoverable: js.UndefOr[scala.Boolean] = js.undefined,
+    sloppy: js.UndefOr[scala.Boolean] = js.undefined,
+    strict: js.UndefOr[scala.Boolean] = js.undefined,
+    tags: js.Array[java.lang.String] = null,
+    unwrap: js.UndefOr[scala.Boolean] = js.undefined
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(lineNumbers)) __obj.updateDynamic("lineNumbers")(lineNumbers)
+    if (!js.isUndefined(preserveWhitespace)) __obj.updateDynamic("preserveWhitespace")(preserveWhitespace)
+    if (!js.isUndefined(recoverable)) __obj.updateDynamic("recoverable")(recoverable)
+    if (!js.isUndefined(sloppy)) __obj.updateDynamic("sloppy")(sloppy)
+    if (!js.isUndefined(strict)) __obj.updateDynamic("strict")(strict)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (!js.isUndefined(unwrap)) __obj.updateDynamic("unwrap")(unwrap)
+    __obj.asInstanceOf[Options]
+  }
+}
+

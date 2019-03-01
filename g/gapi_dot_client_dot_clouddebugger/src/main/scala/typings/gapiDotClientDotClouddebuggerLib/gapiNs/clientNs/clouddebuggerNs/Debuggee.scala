@@ -69,3 +69,34 @@ trait Debuggee extends js.Object {
   var uniquifier: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Debuggee {
+  @scala.inline
+  def apply(
+    agentVersion: java.lang.String = null,
+    description: java.lang.String = null,
+    extSourceContexts: js.Array[ExtendedSourceContext] = null,
+    id: java.lang.String = null,
+    isDisabled: js.UndefOr[scala.Boolean] = js.undefined,
+    isInactive: js.UndefOr[scala.Boolean] = js.undefined,
+    labels: stdLib.Record[java.lang.String, java.lang.String] = null,
+    project: java.lang.String = null,
+    sourceContexts: js.Array[SourceContext] = null,
+    status: StatusMessage = null,
+    uniquifier: java.lang.String = null
+  ): Debuggee = {
+    val __obj = js.Dynamic.literal()
+    if (agentVersion != null) __obj.updateDynamic("agentVersion")(agentVersion)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (extSourceContexts != null) __obj.updateDynamic("extSourceContexts")(extSourceContexts)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (!js.isUndefined(isDisabled)) __obj.updateDynamic("isDisabled")(isDisabled)
+    if (!js.isUndefined(isInactive)) __obj.updateDynamic("isInactive")(isInactive)
+    if (labels != null) __obj.updateDynamic("labels")(labels)
+    if (project != null) __obj.updateDynamic("project")(project)
+    if (sourceContexts != null) __obj.updateDynamic("sourceContexts")(sourceContexts)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (uniquifier != null) __obj.updateDynamic("uniquifier")(uniquifier)
+    __obj.asInstanceOf[Debuggee]
+  }
+}
+

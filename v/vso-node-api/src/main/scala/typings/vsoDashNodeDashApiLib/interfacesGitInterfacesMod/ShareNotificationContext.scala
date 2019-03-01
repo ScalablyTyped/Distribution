@@ -16,3 +16,16 @@ trait ShareNotificationContext extends js.Object {
   var receivers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
 }
 
+object ShareNotificationContext {
+  @scala.inline
+  def apply(
+    message: java.lang.String,
+    receivers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVSSInterfacesMod.IdentityRef]
+  ): ShareNotificationContext = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("message")(message)
+    __obj.updateDynamic("receivers")(receivers)
+    __obj.asInstanceOf[ShareNotificationContext]
+  }
+}
+

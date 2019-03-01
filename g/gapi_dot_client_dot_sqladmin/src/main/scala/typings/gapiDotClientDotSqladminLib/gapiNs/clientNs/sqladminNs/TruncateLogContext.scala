@@ -12,3 +12,13 @@ trait TruncateLogContext extends js.Object {
   var logType: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TruncateLogContext {
+  @scala.inline
+  def apply(kind: java.lang.String = null, logType: java.lang.String = null): TruncateLogContext = {
+    val __obj = js.Dynamic.literal()
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (logType != null) __obj.updateDynamic("logType")(logType)
+    __obj.asInstanceOf[TruncateLogContext]
+  }
+}
+

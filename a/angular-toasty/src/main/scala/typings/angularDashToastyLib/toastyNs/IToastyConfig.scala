@@ -69,3 +69,38 @@ trait IToastyConfig extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object IToastyConfig {
+  @scala.inline
+  def apply(
+    title: java.lang.String,
+    clickToClose: js.UndefOr[scala.Boolean] = js.undefined,
+    html: js.UndefOr[scala.Boolean] = js.undefined,
+    msg: java.lang.String = null,
+    onAdd: angularLib.angularMod.Global.Function = null,
+    onClick: angularLib.angularMod.Global.Function = null,
+    onRemove: angularLib.angularMod.Global.Function = null,
+    shake: js.UndefOr[scala.Boolean] = js.undefined,
+    showClose: js.UndefOr[scala.Boolean] = js.undefined,
+    sound: js.UndefOr[scala.Boolean] = js.undefined,
+    theme: java.lang.String = null,
+    timeout: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): IToastyConfig = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("title")(title)
+    if (!js.isUndefined(clickToClose)) __obj.updateDynamic("clickToClose")(clickToClose)
+    if (!js.isUndefined(html)) __obj.updateDynamic("html")(html)
+    if (msg != null) __obj.updateDynamic("msg")(msg)
+    if (onAdd != null) __obj.updateDynamic("onAdd")(onAdd)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (onRemove != null) __obj.updateDynamic("onRemove")(onRemove)
+    if (!js.isUndefined(shake)) __obj.updateDynamic("shake")(shake)
+    if (!js.isUndefined(showClose)) __obj.updateDynamic("showClose")(showClose)
+    if (!js.isUndefined(sound)) __obj.updateDynamic("sound")(sound)
+    if (theme != null) __obj.updateDynamic("theme")(theme)
+    if (timeout != null) __obj.updateDynamic("timeout")(timeout.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[IToastyConfig]
+  }
+}
+

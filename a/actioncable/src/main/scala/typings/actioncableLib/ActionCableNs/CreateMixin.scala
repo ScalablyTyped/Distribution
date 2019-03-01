@@ -12,3 +12,20 @@ trait CreateMixin
   def received(obj: js.Any): scala.Unit
 }
 
+object CreateMixin {
+  @scala.inline
+  def apply(
+    connected: js.Function0[scala.Unit],
+    disconnected: js.Function0[scala.Unit],
+    received: js.Function1[js.Any, scala.Unit],
+    StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Function] = null
+  ): CreateMixin = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("connected")(connected)
+    __obj.updateDynamic("disconnected")(disconnected)
+    __obj.updateDynamic("received")(received)
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[CreateMixin]
+  }
+}
+

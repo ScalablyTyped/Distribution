@@ -28,3 +28,22 @@ trait Anon_KEYSYSTEMERROR extends js.Object {
   var OTHER_ERROR: K_OTHER_ERROR
 }
 
+object Anon_KEYSYSTEMERROR {
+  @scala.inline
+  def apply(
+    KEY_SYSTEM_ERROR: K_KEY_SYSTEM_ERROR,
+    MEDIA_ERROR: K_MEDIA_ERROR,
+    MUX_ERROR: K_MUX_ERROR,
+    NETWORK_ERROR: K_NETWORK_ERROR,
+    OTHER_ERROR: K_OTHER_ERROR
+  ): Anon_KEYSYSTEMERROR = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("KEY_SYSTEM_ERROR")(KEY_SYSTEM_ERROR)
+    __obj.updateDynamic("MEDIA_ERROR")(MEDIA_ERROR)
+    __obj.updateDynamic("MUX_ERROR")(MUX_ERROR)
+    __obj.updateDynamic("NETWORK_ERROR")(NETWORK_ERROR)
+    __obj.updateDynamic("OTHER_ERROR")(OTHER_ERROR)
+    __obj.asInstanceOf[Anon_KEYSYSTEMERROR]
+  }
+}
+

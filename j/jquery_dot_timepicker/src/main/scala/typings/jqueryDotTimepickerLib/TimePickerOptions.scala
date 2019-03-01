@@ -96,3 +96,82 @@ trait TimePickerOptions extends js.Object {
   var timeSeparator: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object TimePickerOptions {
+  @scala.inline
+  def apply(
+    altField: java.lang.String = null,
+    amPmText: js.Tuple2[java.lang.String, java.lang.String] = null,
+    appendText: java.lang.String = null,
+    atPosition: java.lang.String = null,
+    beforeShow: js.Function0[_] = null,
+    button: java.lang.String = null,
+    closeButtonText: java.lang.String = null,
+    defaultTime: java.lang.String = null,
+    deselectButtonText: java.lang.String = null,
+    hourText: java.lang.String = null,
+    hours: TimePickerHour = null,
+    minuteText: java.lang.String = null,
+    minutes: TimePickerMinutes = null,
+    myPosition: java.lang.String = null,
+    nowButtonText: java.lang.String = null,
+    onClose: js.Function2[/* timeText */ java.lang.String, /* inst */ js.Any, _] = null,
+    onHourShow: js.Function0[_] = null,
+    onMinuteShow: js.Function0[_] = null,
+    onSelect: js.Function2[/* timeText */ java.lang.String, /* inst */ js.Any, _] = null,
+    optionalMinutes: js.UndefOr[scala.Boolean] = js.undefined,
+    periodSeparator: java.lang.String = null,
+    rows: scala.Int | scala.Double = null,
+    showAnim: java.lang.String = null,
+    showCloseButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showDeselectButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showHours: js.UndefOr[scala.Boolean] = js.undefined,
+    showLeadingZero: js.UndefOr[scala.Boolean] = js.undefined,
+    showMinutes: js.UndefOr[scala.Boolean] = js.undefined,
+    showMinutesLeadingZero: js.UndefOr[scala.Boolean] = js.undefined,
+    showNowButton: js.UndefOr[scala.Boolean] = js.undefined,
+    showOn: java.lang.String = null,
+    showOptions: js.Any = null,
+    showPeriod: js.UndefOr[scala.Boolean] = js.undefined,
+    showPeriodLabels: js.UndefOr[scala.Boolean] = js.undefined,
+    timeSeparator: java.lang.String = null
+  ): TimePickerOptions = {
+    val __obj = js.Dynamic.literal()
+    if (altField != null) __obj.updateDynamic("altField")(altField)
+    if (amPmText != null) __obj.updateDynamic("amPmText")(amPmText)
+    if (appendText != null) __obj.updateDynamic("appendText")(appendText)
+    if (atPosition != null) __obj.updateDynamic("atPosition")(atPosition)
+    if (beforeShow != null) __obj.updateDynamic("beforeShow")(beforeShow)
+    if (button != null) __obj.updateDynamic("button")(button)
+    if (closeButtonText != null) __obj.updateDynamic("closeButtonText")(closeButtonText)
+    if (defaultTime != null) __obj.updateDynamic("defaultTime")(defaultTime)
+    if (deselectButtonText != null) __obj.updateDynamic("deselectButtonText")(deselectButtonText)
+    if (hourText != null) __obj.updateDynamic("hourText")(hourText)
+    if (hours != null) __obj.updateDynamic("hours")(hours)
+    if (minuteText != null) __obj.updateDynamic("minuteText")(minuteText)
+    if (minutes != null) __obj.updateDynamic("minutes")(minutes)
+    if (myPosition != null) __obj.updateDynamic("myPosition")(myPosition)
+    if (nowButtonText != null) __obj.updateDynamic("nowButtonText")(nowButtonText)
+    if (onClose != null) __obj.updateDynamic("onClose")(onClose)
+    if (onHourShow != null) __obj.updateDynamic("onHourShow")(onHourShow)
+    if (onMinuteShow != null) __obj.updateDynamic("onMinuteShow")(onMinuteShow)
+    if (onSelect != null) __obj.updateDynamic("onSelect")(onSelect)
+    if (!js.isUndefined(optionalMinutes)) __obj.updateDynamic("optionalMinutes")(optionalMinutes)
+    if (periodSeparator != null) __obj.updateDynamic("periodSeparator")(periodSeparator)
+    if (rows != null) __obj.updateDynamic("rows")(rows.asInstanceOf[js.Any])
+    if (showAnim != null) __obj.updateDynamic("showAnim")(showAnim)
+    if (!js.isUndefined(showCloseButton)) __obj.updateDynamic("showCloseButton")(showCloseButton)
+    if (!js.isUndefined(showDeselectButton)) __obj.updateDynamic("showDeselectButton")(showDeselectButton)
+    if (!js.isUndefined(showHours)) __obj.updateDynamic("showHours")(showHours)
+    if (!js.isUndefined(showLeadingZero)) __obj.updateDynamic("showLeadingZero")(showLeadingZero)
+    if (!js.isUndefined(showMinutes)) __obj.updateDynamic("showMinutes")(showMinutes)
+    if (!js.isUndefined(showMinutesLeadingZero)) __obj.updateDynamic("showMinutesLeadingZero")(showMinutesLeadingZero)
+    if (!js.isUndefined(showNowButton)) __obj.updateDynamic("showNowButton")(showNowButton)
+    if (showOn != null) __obj.updateDynamic("showOn")(showOn)
+    if (showOptions != null) __obj.updateDynamic("showOptions")(showOptions)
+    if (!js.isUndefined(showPeriod)) __obj.updateDynamic("showPeriod")(showPeriod)
+    if (!js.isUndefined(showPeriodLabels)) __obj.updateDynamic("showPeriodLabels")(showPeriodLabels)
+    if (timeSeparator != null) __obj.updateDynamic("timeSeparator")(timeSeparator)
+    __obj.asInstanceOf[TimePickerOptions]
+  }
+}
+

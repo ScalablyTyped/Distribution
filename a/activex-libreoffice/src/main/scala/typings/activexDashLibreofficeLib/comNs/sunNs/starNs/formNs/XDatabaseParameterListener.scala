@@ -17,3 +17,22 @@ trait XDatabaseParameterListener
   def approveParameter(aEvent: DatabaseParameterEvent): scala.Boolean
 }
 
+object XDatabaseParameterListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    approveParameter: js.Function1[DatabaseParameterEvent, scala.Boolean],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XDatabaseParameterListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("approveParameter")(approveParameter)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XDatabaseParameterListener]
+  }
+}
+

@@ -13,43 +13,56 @@ object atOracleOraclejetLibStrings {
   sealed trait `@firstInvalidShown` extends js.Object
   
   @js.native
-  sealed trait DOLLARand extends js.Object
+  sealed trait DOLLARand
+    extends atOracleOraclejetLib.ojdataproviderMod.CompoundFilterOperatorNs.CompoundOperator
   
   @js.native
-  sealed trait DOLLARco extends js.Object
+  sealed trait DOLLARco
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLAReq extends js.Object
+  sealed trait DOLLAReq
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLARew extends js.Object
+  sealed trait DOLLARew
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLARge extends js.Object
+  sealed trait DOLLARge
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLARgt extends js.Object
+  sealed trait DOLLARgt
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLARle extends js.Object
+  sealed trait DOLLARle
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLARlt extends js.Object
+  sealed trait DOLLARlt
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLARne extends js.Object
+  sealed trait DOLLARne
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLARor extends js.Object
+  sealed trait DOLLARor
+    extends atOracleOraclejetLib.ojdataproviderMod.CompoundFilterOperatorNs.CompoundOperator
   
   @js.native
-  sealed trait DOLLARpr extends js.Object
+  sealed trait DOLLARpr
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLARregex extends js.Object
+  sealed trait DOLLARregex
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
-  sealed trait DOLLARsw extends js.Object
+  sealed trait DOLLARsw
+    extends atOracleOraclejetLib.ojdataproviderMod.AttributeFilterOperatorNs.AttributeOperator
   
   @js.native
   sealed trait Empty extends js.Object
@@ -67,10 +80,12 @@ object atOracleOraclejetLibStrings {
   sealed trait abbreviated extends js.Object
   
   @js.native
-  sealed trait abort extends js.Object
+  sealed trait abort
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType
   
   @js.native
-  sealed trait aborted extends js.Object
+  sealed trait aborted
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.Status
   
   @js.native
   sealed trait aboveMarker extends js.Object
@@ -499,7 +514,8 @@ object atOracleOraclejetLibStrings {
   sealed trait codeUnit extends js.Object
   
   @js.native
-  sealed trait collapse extends js.Object
+  sealed trait collapse
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
   
   @js.native
   sealed trait collapsible extends js.Object
@@ -577,7 +593,8 @@ object atOracleOraclejetLibStrings {
   sealed trait configChanged extends js.Object
   
   @js.native
-  sealed trait confirmation extends js.Object
+  sealed trait confirmation
+    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
   
   @js.native
   sealed trait connected extends js.Object
@@ -619,10 +636,12 @@ object atOracleOraclejetLibStrings {
   sealed trait counts extends js.Object
   
   @js.native
-  sealed trait coverStart extends js.Object
+  sealed trait coverStart
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
-  sealed trait coverUp extends js.Object
+  sealed trait coverUp
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
   sealed trait cuechange extends js.Object
@@ -934,16 +953,20 @@ object atOracleOraclejetLibStrings {
   sealed trait ended extends js.Object
   
   @js.native
-  sealed trait error extends js.Object
+  sealed trait error
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType
+       with atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
   
   @js.native
-  sealed trait errored extends js.Object
+  sealed trait errored
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.Status
   
   @js.native
   sealed trait escape extends js.Object
   
   @js.native
-  sealed trait expand extends js.Object
+  sealed trait expand
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
   
   @js.native
   sealed trait expandArea extends js.Object
@@ -964,16 +987,20 @@ object atOracleOraclejetLibStrings {
   sealed trait external extends js.Object
   
   @js.native
-  sealed trait fade extends js.Object
+  sealed trait fade
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
-  sealed trait fadeIn extends js.Object
+  sealed trait fadeIn
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
   
   @js.native
-  sealed trait fadeOut extends js.Object
+  sealed trait fadeOut
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
   
   @js.native
-  sealed trait fatal extends js.Object
+  sealed trait fatal
+    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
   
   @js.native
   sealed trait filterOnOpen extends js.Object
@@ -1021,10 +1048,12 @@ object atOracleOraclejetLibStrings {
   sealed trait flip extends js.Object
   
   @js.native
-  sealed trait flipIn extends js.Object
+  sealed trait flipIn
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
   
   @js.native
-  sealed trait flipOut extends js.Object
+  sealed trait flipOut
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
   
   @js.native
   sealed trait flipcenter extends js.Object
@@ -1219,7 +1248,8 @@ object atOracleOraclejetLibStrings {
   sealed trait high extends js.Object
   
   @js.native
-  sealed trait `high-resolution` extends js.Object
+  sealed trait `high-resolution`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
   sealed trait highChanged extends js.Object
@@ -1339,7 +1369,8 @@ object atOracleOraclejetLibStrings {
   sealed trait indicatorSizeChanged extends js.Object
   
   @js.native
-  sealed trait info extends js.Object
+  sealed trait info
+    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
   
   @js.native
   sealed trait inherit extends js.Object
@@ -1600,16 +1631,20 @@ object atOracleOraclejetLibStrings {
   sealed trait length extends js.Object
   
   @js.native
-  sealed trait lg extends js.Object
+  sealed trait lg
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.SCREEN_RANGE
   
   @js.native
-  sealed trait `lg-down` extends js.Object
+  sealed trait `lg-down`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
-  sealed trait `lg-only` extends js.Object
+  sealed trait `lg-only`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
-  sealed trait `lg-up` extends js.Object
+  sealed trait `lg-up`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
   sealed trait line extends js.Object
@@ -1672,13 +1707,15 @@ object atOracleOraclejetLibStrings {
   sealed trait liveScrollOnly extends js.Object
   
   @js.native
-  sealed trait load extends js.Object
+  sealed trait load
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType
   
   @js.native
   sealed trait loadMoreOnScroll extends js.Object
   
   @js.native
-  sealed trait loaded extends js.Object
+  sealed trait loaded
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.Status
   
   @js.native
   sealed trait loadeddata extends js.Object
@@ -1687,13 +1724,16 @@ object atOracleOraclejetLibStrings {
   sealed trait loadedmetadata extends js.Object
   
   @js.native
-  sealed trait loadend extends js.Object
+  sealed trait loadend
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType
   
   @js.native
-  sealed trait loadstart extends js.Object
+  sealed trait loadstart
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType
   
   @js.native
-  sealed trait loadstarted extends js.Object
+  sealed trait loadstarted
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.Status
   
   @js.native
   sealed trait local extends js.Object
@@ -1837,16 +1877,20 @@ object atOracleOraclejetLibStrings {
   sealed trait maximizedRowChanged extends js.Object
   
   @js.native
-  sealed trait md extends js.Object
+  sealed trait md
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.SCREEN_RANGE
   
   @js.native
-  sealed trait `md-down` extends js.Object
+  sealed trait `md-down`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
-  sealed trait `md-only` extends js.Object
+  sealed trait `md-only`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
-  sealed trait `md-up` extends js.Object
+  sealed trait `md-up`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
   sealed trait medium extends js.Object
@@ -1978,16 +2022,20 @@ object atOracleOraclejetLibStrings {
   sealed trait native extends js.Object
   
   @js.native
-  sealed trait navChild extends js.Object
+  sealed trait navChild
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
-  sealed trait navParent extends js.Object
+  sealed trait navParent
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
-  sealed trait navSiblingEarlier extends js.Object
+  sealed trait navSiblingEarlier
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
-  sealed trait navSiblingLater extends js.Object
+  sealed trait navSiblingLater
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
   sealed trait navigation extends js.Object
@@ -2500,7 +2548,8 @@ object atOracleOraclejetLibStrings {
   sealed trait preserveAspectRatioChanged extends js.Object
   
   @js.native
-  sealed trait progress extends js.Object
+  sealed trait progress
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType
   
   @js.native
   sealed trait progressChanged extends js.Object
@@ -2518,10 +2567,12 @@ object atOracleOraclejetLibStrings {
   sealed trait push extends js.Object
   
   @js.native
-  sealed trait pushEnd extends js.Object
+  sealed trait pushEnd
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
-  sealed trait pushStart extends js.Object
+  sealed trait pushStart
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
   sealed trait pyramid extends js.Object
@@ -2551,7 +2602,8 @@ object atOracleOraclejetLibStrings {
   sealed trait quarters extends js.Object
   
   @js.native
-  sealed trait queued extends js.Object
+  sealed trait queued
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.Status
   
   @js.native
   sealed trait radius extends js.Object
@@ -2659,10 +2711,12 @@ object atOracleOraclejetLibStrings {
   sealed trait resizeBehaviorChanged extends js.Object
   
   @js.native
-  sealed trait revealDown extends js.Object
+  sealed trait revealDown
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
-  sealed trait revealEnd extends js.Object
+  sealed trait revealEnd
+    extends atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
   sealed trait rgb extends js.Object
@@ -2671,7 +2725,8 @@ object atOracleOraclejetLibStrings {
   sealed trait right extends js.Object
   
   @js.native
-  sealed trait ripple extends js.Object
+  sealed trait ripple
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
   
   @js.native
   sealed trait role extends js.Object
@@ -2959,10 +3014,12 @@ object atOracleOraclejetLibStrings {
   sealed trait sliceAndDiceVertical extends js.Object
   
   @js.native
-  sealed trait slideIn extends js.Object
+  sealed trait slideIn
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
   
   @js.native
-  sealed trait slideOut extends js.Object
+  sealed trait slideOut
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
   
   @js.native
   sealed trait slideToLeft extends js.Object
@@ -2974,13 +3031,16 @@ object atOracleOraclejetLibStrings {
   sealed trait sliding extends js.Object
   
   @js.native
-  sealed trait sm extends js.Object
+  sealed trait sm
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.SCREEN_RANGE
   
   @js.native
-  sealed trait `sm-only` extends js.Object
+  sealed trait `sm-only`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
-  sealed trait `sm-up` extends js.Object
+  sealed trait `sm-up`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
   sealed trait smallChecker extends js.Object
@@ -3304,10 +3364,12 @@ object atOracleOraclejetLibStrings {
   sealed trait timePickerChanged extends js.Object
   
   @js.native
-  sealed trait timedout extends js.Object
+  sealed trait timedout
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.Status
   
   @js.native
-  sealed trait timeout extends js.Object
+  sealed trait timeout
+    extends atOracleOraclejetLib.ojprogresslistMod.ProgressItemNs.EventType
   
   @js.native
   sealed trait timeupdate extends js.Object
@@ -3535,7 +3597,8 @@ object atOracleOraclejetLibStrings {
   sealed trait waiting extends js.Object
   
   @js.native
-  sealed trait warning extends js.Object
+  sealed trait warning
+    extends atOracleOraclejetLib.ojmessagingMod.MessageNs.SEVERITY_TYPE
   
   @js.native
   sealed trait weeks extends js.Object
@@ -3586,25 +3649,31 @@ object atOracleOraclejetLibStrings {
   sealed trait xPercentageChanged extends js.Object
   
   @js.native
-  sealed trait xl extends js.Object
+  sealed trait xl
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.SCREEN_RANGE
   
   @js.native
-  sealed trait `xl-down` extends js.Object
+  sealed trait `xl-down`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
-  sealed trait `xl-only` extends js.Object
+  sealed trait `xl-only`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
-  sealed trait `xl-up` extends js.Object
+  sealed trait `xl-up`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
   sealed trait xs extends js.Object
   
   @js.native
-  sealed trait xxl extends js.Object
+  sealed trait xxl
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.SCREEN_RANGE
   
   @js.native
-  sealed trait `xxl-up` extends js.Object
+  sealed trait `xxl-up`
+    extends atOracleOraclejetLib.ojresponsiveutilsMod.FRAMEWORK_QUERY_KEY
   
   @js.native
   sealed trait xxs extends js.Object
@@ -3664,10 +3733,14 @@ object atOracleOraclejetLibStrings {
   sealed trait zoomDirectionChanged extends js.Object
   
   @js.native
-  sealed trait zoomIn extends js.Object
+  sealed trait zoomIn
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
+       with atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
-  sealed trait zoomOut extends js.Object
+  sealed trait zoomOut
+    extends atOracleOraclejetLib.ojanimationMod.AnimationMethods
+       with atOracleOraclejetLib.ojmoduleanimationsMod.Animations
   
   @js.native
   sealed trait zoomRenderer extends js.Object

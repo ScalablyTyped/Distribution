@@ -10,3 +10,16 @@ trait Anon_Columns extends js.Object {
   var rows: Anon_DataTypesDragEnterDragLeaveDragOverDropParam0
 }
 
+object Anon_Columns {
+  @scala.inline
+  def apply(
+    columns: Anon_DataTypesDragEnterDragLeaveDragOverDrop,
+    rows: Anon_DataTypesDragEnterDragLeaveDragOverDropParam0
+  ): Anon_Columns = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("columns")(columns)
+    __obj.updateDynamic("rows")(rows)
+    __obj.asInstanceOf[Anon_Columns]
+  }
+}
+

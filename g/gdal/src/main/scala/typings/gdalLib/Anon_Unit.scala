@@ -10,3 +10,13 @@ trait Anon_Unit extends js.Object {
   var value: js.Any
 }
 
+object Anon_Unit {
+  @scala.inline
+  def apply(unit: js.Any, value: js.Any): Anon_Unit = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("unit")(unit)
+    __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Anon_Unit]
+  }
+}
+

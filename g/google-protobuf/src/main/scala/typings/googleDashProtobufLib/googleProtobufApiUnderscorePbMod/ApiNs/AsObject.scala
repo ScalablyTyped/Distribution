@@ -17,3 +17,26 @@ trait AsObject extends js.Object {
   var version: java.lang.String
 }
 
+object AsObject {
+  @scala.inline
+  def apply(
+    methodsList: js.Array[googleDashProtobufLib.googleProtobufApiUnderscorePbMod.MethodNs.AsObject],
+    mixinsList: js.Array[googleDashProtobufLib.googleProtobufApiUnderscorePbMod.MixinNs.AsObject],
+    name: java.lang.String,
+    optionsList: js.Array[googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.OptionNs.AsObject],
+    syntax: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Syntax,
+    version: java.lang.String,
+    sourceContext: googleDashProtobufLib.googleProtobufSourceUnderscoreContextUnderscorePbMod.SourceContextNs.AsObject = null
+  ): AsObject = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("methodsList")(methodsList)
+    __obj.updateDynamic("mixinsList")(mixinsList)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("optionsList")(optionsList)
+    __obj.updateDynamic("syntax")(syntax)
+    __obj.updateDynamic("version")(version)
+    if (sourceContext != null) __obj.updateDynamic("sourceContext")(sourceContext)
+    __obj.asInstanceOf[AsObject]
+  }
+}
+

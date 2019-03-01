@@ -1295,21 +1295,47 @@ object ServiceDiscoveryNs extends js.Object {
     var OperationId: js.UndefOr[OperationId] = js.undefined
   }
   
+  trait _CustomHealthStatus extends js.Object
+  
+  trait _FilterCondition extends js.Object
+  
+  trait _HealthCheckType extends js.Object
+  
+  trait _HealthStatus extends js.Object
+  
+  trait _HealthStatusFilter extends js.Object
+  
+  trait _NamespaceType extends js.Object
+  
+  trait _OperationFilterName extends js.Object
+  
+  trait _OperationStatus extends js.Object
+  
+  trait _OperationTargetType extends js.Object
+  
+  trait _OperationType extends js.Object
+  
+  trait _RecordType extends js.Object
+  
+  trait _RoutingPolicy extends js.Object
+  
+  trait _apiVersion extends js.Object
+  
   val TypesNs: this.type = js.native
   type Arn = java.lang.String
   type AttrKey = java.lang.String
   type AttrValue = java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type Code = java.lang.String
-  type CustomHealthStatus = awsDashSdkLib.awsDashSdkLibStrings.HEALTHY | awsDashSdkLib.awsDashSdkLibStrings.UNHEALTHY | java.lang.String
+  type CustomHealthStatus = _CustomHealthStatus | java.lang.String
   type DnsRecordList = js.Array[DnsRecord]
   type FailureThreshold = scala.Double
-  type FilterCondition = awsDashSdkLib.awsDashSdkLibStrings.EQ | awsDashSdkLib.awsDashSdkLibStrings.IN | awsDashSdkLib.awsDashSdkLibStrings.BETWEEN | java.lang.String
+  type FilterCondition = _FilterCondition | java.lang.String
   type FilterValue = java.lang.String
   type FilterValues = js.Array[FilterValue]
-  type HealthCheckType = awsDashSdkLib.awsDashSdkLibStrings.HTTP | awsDashSdkLib.awsDashSdkLibStrings.HTTPS | awsDashSdkLib.awsDashSdkLibStrings.TCP | java.lang.String
-  type HealthStatus = awsDashSdkLib.awsDashSdkLibStrings.HEALTHY | awsDashSdkLib.awsDashSdkLibStrings.UNHEALTHY | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | java.lang.String
-  type HealthStatusFilter = awsDashSdkLib.awsDashSdkLibStrings.HEALTHY | awsDashSdkLib.awsDashSdkLibStrings.UNHEALTHY | awsDashSdkLib.awsDashSdkLibStrings.ALL | java.lang.String
+  type HealthCheckType = _HealthCheckType | java.lang.String
+  type HealthStatus = _HealthStatus | java.lang.String
+  type HealthStatusFilter = _HealthStatusFilter | java.lang.String
   type HttpInstanceSummaryList = js.Array[HttpInstanceSummary]
   type InstanceIdList = js.Array[ResourceId]
   type InstanceSummaryList = js.Array[InstanceSummary]
@@ -1319,27 +1345,27 @@ object ServiceDiscoveryNs extends js.Object {
   type NamespaceFilters = js.Array[NamespaceFilter]
   type NamespaceName = java.lang.String
   type NamespaceSummariesList = js.Array[NamespaceSummary]
-  type NamespaceType = awsDashSdkLib.awsDashSdkLibStrings.DNS_PUBLIC | awsDashSdkLib.awsDashSdkLibStrings.DNS_PRIVATE | awsDashSdkLib.awsDashSdkLibStrings.HTTP | java.lang.String
+  type NamespaceType = _NamespaceType | java.lang.String
   type NextToken = java.lang.String
-  type OperationFilterName = awsDashSdkLib.awsDashSdkLibStrings.NAMESPACE_ID | awsDashSdkLib.awsDashSdkLibStrings.SERVICE_ID | awsDashSdkLib.awsDashSdkLibStrings.STATUS | awsDashSdkLib.awsDashSdkLibStrings.TYPE | awsDashSdkLib.awsDashSdkLibStrings.UPDATE_DATE | java.lang.String
+  type OperationFilterName = _OperationFilterName | java.lang.String
   type OperationFilters = js.Array[OperationFilter]
   type OperationId = java.lang.String
-  type OperationStatus = awsDashSdkLib.awsDashSdkLibStrings.SUBMITTED | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.SUCCESS | awsDashSdkLib.awsDashSdkLibStrings.FAIL | java.lang.String
+  type OperationStatus = _OperationStatus | java.lang.String
   type OperationSummaryList = js.Array[OperationSummary]
-  type OperationTargetType = awsDashSdkLib.awsDashSdkLibStrings.NAMESPACE | awsDashSdkLib.awsDashSdkLibStrings.SERVICE | awsDashSdkLib.awsDashSdkLibStrings.INSTANCE | java.lang.String
-  type OperationType = awsDashSdkLib.awsDashSdkLibStrings.CREATE_NAMESPACE | awsDashSdkLib.awsDashSdkLibStrings.DELETE_NAMESPACE | awsDashSdkLib.awsDashSdkLibStrings.UPDATE_SERVICE | awsDashSdkLib.awsDashSdkLibStrings.REGISTER_INSTANCE | awsDashSdkLib.awsDashSdkLibStrings.DEREGISTER_INSTANCE | java.lang.String
+  type OperationTargetType = _OperationTargetType | java.lang.String
+  type OperationType = _OperationType | java.lang.String
   type RecordTTL = scala.Double
-  type RecordType = awsDashSdkLib.awsDashSdkLibStrings.SRV | awsDashSdkLib.awsDashSdkLibStrings.A | awsDashSdkLib.awsDashSdkLibStrings.AAAA | awsDashSdkLib.awsDashSdkLibStrings.CNAME | java.lang.String
+  type RecordType = _RecordType | java.lang.String
   type ResourceCount = scala.Double
   type ResourceDescription = java.lang.String
   type ResourceId = java.lang.String
   type ResourcePath = java.lang.String
-  type RoutingPolicy = awsDashSdkLib.awsDashSdkLibStrings.MULTIVALUE | awsDashSdkLib.awsDashSdkLibStrings.WEIGHTED | java.lang.String
+  type RoutingPolicy = _RoutingPolicy | java.lang.String
   type ServiceFilterName = awsDashSdkLib.awsDashSdkLibStrings.NAMESPACE_ID | java.lang.String
   type ServiceFilters = js.Array[ServiceFilter]
   type ServiceName = java.lang.String
   type ServiceSummariesList = js.Array[ServiceSummary]
   type Timestamp = stdLib.Date
-  type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-03-14` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
+  type apiVersion = _apiVersion | java.lang.String
 }
 

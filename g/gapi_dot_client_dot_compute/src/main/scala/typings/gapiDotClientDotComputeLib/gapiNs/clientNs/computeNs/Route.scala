@@ -55,3 +55,46 @@ trait Route extends js.Object {
   var warnings: js.UndefOr[js.Array[gapiDotClientDotComputeLib.Anon_Code]] = js.undefined
 }
 
+object Route {
+  @scala.inline
+  def apply(
+    creationTimestamp: java.lang.String = null,
+    description: java.lang.String = null,
+    destRange: java.lang.String = null,
+    id: java.lang.String = null,
+    kind: java.lang.String = null,
+    name: java.lang.String = null,
+    network: java.lang.String = null,
+    nextHopGateway: java.lang.String = null,
+    nextHopInstance: java.lang.String = null,
+    nextHopIp: java.lang.String = null,
+    nextHopNetwork: java.lang.String = null,
+    nextHopPeering: java.lang.String = null,
+    nextHopVpnTunnel: java.lang.String = null,
+    priority: scala.Int | scala.Double = null,
+    selfLink: java.lang.String = null,
+    tags: js.Array[java.lang.String] = null,
+    warnings: js.Array[gapiDotClientDotComputeLib.Anon_Code] = null
+  ): Route = {
+    val __obj = js.Dynamic.literal()
+    if (creationTimestamp != null) __obj.updateDynamic("creationTimestamp")(creationTimestamp)
+    if (description != null) __obj.updateDynamic("description")(description)
+    if (destRange != null) __obj.updateDynamic("destRange")(destRange)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (kind != null) __obj.updateDynamic("kind")(kind)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (network != null) __obj.updateDynamic("network")(network)
+    if (nextHopGateway != null) __obj.updateDynamic("nextHopGateway")(nextHopGateway)
+    if (nextHopInstance != null) __obj.updateDynamic("nextHopInstance")(nextHopInstance)
+    if (nextHopIp != null) __obj.updateDynamic("nextHopIp")(nextHopIp)
+    if (nextHopNetwork != null) __obj.updateDynamic("nextHopNetwork")(nextHopNetwork)
+    if (nextHopPeering != null) __obj.updateDynamic("nextHopPeering")(nextHopPeering)
+    if (nextHopVpnTunnel != null) __obj.updateDynamic("nextHopVpnTunnel")(nextHopVpnTunnel)
+    if (priority != null) __obj.updateDynamic("priority")(priority.asInstanceOf[js.Any])
+    if (selfLink != null) __obj.updateDynamic("selfLink")(selfLink)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (warnings != null) __obj.updateDynamic("warnings")(warnings)
+    __obj.asInstanceOf[Route]
+  }
+}
+

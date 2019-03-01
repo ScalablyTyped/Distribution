@@ -10,3 +10,12 @@ trait FileHashes extends js.Object {
   var fileHash: js.UndefOr[js.Array[Hash]] = js.undefined
 }
 
+object FileHashes {
+  @scala.inline
+  def apply(fileHash: js.Array[Hash] = null): FileHashes = {
+    val __obj = js.Dynamic.literal()
+    if (fileHash != null) __obj.updateDynamic("fileHash")(fileHash)
+    __obj.asInstanceOf[FileHashes]
+  }
+}
+

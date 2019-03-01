@@ -11,3 +11,18 @@ trait Response extends js.Object {
   var processingTimeMS: scala.Double
 }
 
+object Response {
+  @scala.inline
+  def apply(
+    exhaustiveFacetsCount: scala.Boolean,
+    facetHits: js.Array[algoliasearchLib.Anon_Count],
+    processingTimeMS: scala.Double
+  ): Response = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("exhaustiveFacetsCount")(exhaustiveFacetsCount)
+    __obj.updateDynamic("facetHits")(facetHits)
+    __obj.updateDynamic("processingTimeMS")(processingTimeMS)
+    __obj.asInstanceOf[Response]
+  }
+}
+

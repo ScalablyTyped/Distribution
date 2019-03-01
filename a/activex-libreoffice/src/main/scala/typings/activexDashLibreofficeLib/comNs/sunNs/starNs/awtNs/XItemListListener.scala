@@ -28,3 +28,30 @@ trait XItemListListener
   def listItemRemoved(Event: ItemListEvent): scala.Unit
 }
 
+object XItemListListener {
+  @scala.inline
+  def apply(
+    acquire: js.Function0[scala.Unit],
+    allItemsRemoved: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    disposing: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    itemListChanged: js.Function1[activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.EventObject, scala.Unit],
+    listItemInserted: js.Function1[ItemListEvent, scala.Unit],
+    listItemModified: js.Function1[ItemListEvent, scala.Unit],
+    listItemRemoved: js.Function1[ItemListEvent, scala.Unit],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): XItemListListener = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("allItemsRemoved")(allItemsRemoved)
+    __obj.updateDynamic("disposing")(disposing)
+    __obj.updateDynamic("itemListChanged")(itemListChanged)
+    __obj.updateDynamic("listItemInserted")(listItemInserted)
+    __obj.updateDynamic("listItemModified")(listItemModified)
+    __obj.updateDynamic("listItemRemoved")(listItemRemoved)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[XItemListListener]
+  }
+}
+

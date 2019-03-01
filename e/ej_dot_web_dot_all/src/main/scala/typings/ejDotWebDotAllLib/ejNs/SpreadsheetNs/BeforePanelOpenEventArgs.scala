@@ -26,3 +26,24 @@ trait BeforePanelOpenEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object BeforePanelOpenEventArgs {
+  @scala.inline
+  def apply(
+    activationPanel: js.Any = null,
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    model: Model = null,
+    range: js.Any = null,
+    sheetIdx: scala.Int | scala.Double = null,
+    `type`: java.lang.String = null
+  ): BeforePanelOpenEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (activationPanel != null) __obj.updateDynamic("activationPanel")(activationPanel)
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (sheetIdx != null) __obj.updateDynamic("sheetIdx")(sheetIdx.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[BeforePanelOpenEventArgs]
+  }
+}
+

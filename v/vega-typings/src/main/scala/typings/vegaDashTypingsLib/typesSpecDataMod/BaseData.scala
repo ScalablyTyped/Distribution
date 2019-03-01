@@ -12,3 +12,20 @@ trait BaseData extends js.Object {
   var transform: js.UndefOr[js.Array[vegaDashTypingsLib.typesSpecTransformMod.Transforms]] = js.undefined
 }
 
+object BaseData {
+  @scala.inline
+  def apply(
+    name: java.lang.String,
+    format: Format | vegaDashTypingsLib.typesSpecSignalMod.SignalRef = null,
+    on: js.Array[vegaDashTypingsLib.typesSpecOnDashTriggerMod.OnTrigger] = null,
+    transform: js.Array[vegaDashTypingsLib.typesSpecTransformMod.Transforms] = null
+  ): BaseData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("name")(name)
+    if (format != null) __obj.updateDynamic("format")(format.asInstanceOf[js.Any])
+    if (on != null) __obj.updateDynamic("on")(on)
+    if (transform != null) __obj.updateDynamic("transform")(transform)
+    __obj.asInstanceOf[BaseData]
+  }
+}
+

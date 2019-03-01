@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait VNode extends js.Object {
+trait VNode extends VTree {
   var children: js.Array[VTree]
   var count: scala.Double
   var descendantHooks: js.Array[_]
@@ -18,5 +18,37 @@ trait VNode extends js.Object {
   var tagName: java.lang.String
   var `type`: java.lang.String
   var version: java.lang.String
+}
+
+object VNode {
+  @scala.inline
+  def apply(
+    children: js.Array[VTree],
+    count: scala.Double,
+    descendantHooks: js.Array[_],
+    hasThunks: scala.Boolean,
+    hasWidgets: scala.Boolean,
+    hooks: js.Array[_],
+    properties: VProperties,
+    tagName: java.lang.String,
+    `type`: java.lang.String,
+    version: java.lang.String,
+    key: java.lang.String = null,
+    namespace: java.lang.String = null
+  ): VNode = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("children")(children)
+    __obj.updateDynamic("count")(count)
+    __obj.updateDynamic("descendantHooks")(descendantHooks)
+    __obj.updateDynamic("hasThunks")(hasThunks)
+    __obj.updateDynamic("hasWidgets")(hasWidgets)
+    __obj.updateDynamic("hooks")(hooks)
+    __obj.updateDynamic("properties")(properties)
+    __obj.updateDynamic("tagName")(tagName)
+    __obj.updateDynamic("version")(version)
+    if (key != null) __obj.updateDynamic("key")(key)
+    if (namespace != null) __obj.updateDynamic("namespace")(namespace)
+    __obj.asInstanceOf[VNode]
+  }
 }
 

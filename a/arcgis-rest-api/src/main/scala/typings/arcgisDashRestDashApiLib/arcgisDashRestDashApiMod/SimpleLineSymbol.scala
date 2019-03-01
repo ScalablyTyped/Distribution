@@ -14,3 +14,19 @@ trait SimpleLineSymbol extends Symbol {
   var width: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SimpleLineSymbol {
+  @scala.inline
+  def apply(
+    `type`: arcgisDashRestDashApiLib.arcgisDashRestDashApiLibStrings.esriSLS,
+    color: Color = null,
+    style: SimpleLineSymbolStyle = null,
+    width: scala.Int | scala.Double = null
+  ): SimpleLineSymbol = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    if (color != null) __obj.updateDynamic("color")(color)
+    if (style != null) __obj.updateDynamic("style")(style)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SimpleLineSymbol]
+  }
+}
+

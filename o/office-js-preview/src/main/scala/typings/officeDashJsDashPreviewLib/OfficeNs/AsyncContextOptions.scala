@@ -15,3 +15,12 @@ trait AsyncContextOptions extends js.Object {
   var asyncContext: js.UndefOr[js.Any] = js.undefined
 }
 
+object AsyncContextOptions {
+  @scala.inline
+  def apply(asyncContext: js.Any = null): AsyncContextOptions = {
+    val __obj = js.Dynamic.literal()
+    if (asyncContext != null) __obj.updateDynamic("asyncContext")(asyncContext)
+    __obj.asInstanceOf[AsyncContextOptions]
+  }
+}
+

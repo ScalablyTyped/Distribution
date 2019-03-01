@@ -10,3 +10,13 @@ trait DateTime extends js.Object {
   var time: actionsDashOnDashGoogleLib.Anon_Hours
 }
 
+object DateTime {
+  @scala.inline
+  def apply(date: actionsDashOnDashGoogleLib.Anon_Day, time: actionsDashOnDashGoogleLib.Anon_Hours): DateTime = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("date")(date)
+    __obj.updateDynamic("time")(time)
+    __obj.asInstanceOf[DateTime]
+  }
+}
+

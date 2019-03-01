@@ -24,3 +24,20 @@ trait ApiKeyState extends js.Object {
   val key: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 
+object ApiKeyState {
+  @scala.inline
+  def apply(
+    apiId: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    description: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    expires: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null,
+    key: atPulumiPulumiLib.outputMod.Input[java.lang.String] = null
+  ): ApiKeyState = {
+    val __obj = js.Dynamic.literal()
+    if (apiId != null) __obj.updateDynamic("apiId")(apiId.asInstanceOf[js.Any])
+    if (description != null) __obj.updateDynamic("description")(description.asInstanceOf[js.Any])
+    if (expires != null) __obj.updateDynamic("expires")(expires.asInstanceOf[js.Any])
+    if (key != null) __obj.updateDynamic("key")(key.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ApiKeyState]
+  }
+}
+

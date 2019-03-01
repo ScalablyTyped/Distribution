@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   */
 @JSGlobal("KiiCloud.KiiUser")
 @js.native
-class KiiUser () extends js.Object {
+class KiiUser () extends KiiACLSubject {
   /**
     * Creates a reference to a bucket for this user
     *

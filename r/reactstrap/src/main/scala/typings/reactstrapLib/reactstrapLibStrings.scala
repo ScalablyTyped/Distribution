@@ -10,61 +10,78 @@ object reactstrapLibStrings {
   sealed trait append extends js.Object
   
   @js.native
-  sealed trait button extends js.Object
+  sealed trait button
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
   sealed trait carousel extends js.Object
   
   @js.native
-  sealed trait checkbox extends js.Object
+  sealed trait checkbox
+    extends reactstrapLib.libCustomInputMod.CustomInputType
+       with reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait color extends js.Object
+  sealed trait color
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait date extends js.Object
+  sealed trait date
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait datetime extends js.Object
+  sealed trait datetime
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait `datetime-local` extends js.Object
+  sealed trait `datetime-local`
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait down extends js.Object
+  sealed trait down
+    extends reactstrapLib.libDropdownMod.Direction
   
   @js.native
-  sealed trait email extends js.Object
+  sealed trait email
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait file extends js.Object
+  sealed trait file
+    extends reactstrapLib.libCustomInputMod.CustomInputType
+       with reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait hidden extends js.Object
+  sealed trait hidden
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
   sealed trait hover extends js.Object
   
   @js.native
-  sealed trait image extends js.Object
+  sealed trait image
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait left extends js.Object
+  sealed trait left
+    extends reactstrapLib.libDropdownMod.Direction
   
   @js.native
   sealed trait lg extends js.Object
   
   @js.native
-  sealed trait month extends js.Object
+  sealed trait month
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
   sealed trait next extends js.Object
   
   @js.native
-  sealed trait number extends js.Object
+  sealed trait number
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait password extends js.Object
+  sealed trait password
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
   sealed trait prepend extends js.Object
@@ -73,22 +90,30 @@ object reactstrapLibStrings {
   sealed trait prev extends js.Object
   
   @js.native
-  sealed trait radio extends js.Object
+  sealed trait radio
+    extends reactstrapLib.libCustomInputMod.CustomInputType
+       with reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait range extends js.Object
+  sealed trait range
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait reset extends js.Object
+  sealed trait reset
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait right extends js.Object
+  sealed trait right
+    extends reactstrapLib.libDropdownMod.Direction
   
   @js.native
-  sealed trait search extends js.Object
+  sealed trait search
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait select extends js.Object
+  sealed trait select
+    extends reactstrapLib.libCustomInputMod.CustomInputType
+       with reactstrapLib.libInputMod.InputType
   
   @js.native
   sealed trait sm extends js.Object
@@ -97,31 +122,40 @@ object reactstrapLibStrings {
   sealed trait static extends js.Object
   
   @js.native
-  sealed trait submit extends js.Object
+  sealed trait submit
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait switch extends js.Object
+  sealed trait switch
+    extends reactstrapLib.libCustomInputMod.CustomInputType
   
   @js.native
-  sealed trait tel extends js.Object
+  sealed trait tel
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait text extends js.Object
+  sealed trait text
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait textarea extends js.Object
+  sealed trait textarea
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait time extends js.Object
+  sealed trait time
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait up extends js.Object
+  sealed trait up
+    extends reactstrapLib.libDropdownMod.Direction
   
   @js.native
-  sealed trait url extends js.Object
+  sealed trait url
+    extends reactstrapLib.libInputMod.InputType
   
   @js.native
-  sealed trait week extends js.Object
+  sealed trait week
+    extends reactstrapLib.libInputMod.InputType
   
   @scala.inline
   def append: append = "append".asInstanceOf[append]

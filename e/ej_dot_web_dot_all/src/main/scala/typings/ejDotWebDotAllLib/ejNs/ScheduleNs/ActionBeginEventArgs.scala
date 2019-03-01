@@ -29,3 +29,26 @@ trait ActionBeginEventArgs extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ActionBeginEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    currentAction: java.lang.String = null,
+    data: js.Any = null,
+    id: java.lang.String = null,
+    model: Model = null,
+    requestType: java.lang.String = null,
+    `type`: java.lang.String = null
+  ): ActionBeginEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (currentAction != null) __obj.updateDynamic("currentAction")(currentAction)
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (model != null) __obj.updateDynamic("model")(model)
+    if (requestType != null) __obj.updateDynamic("requestType")(requestType)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[ActionBeginEventArgs]
+  }
+}
+

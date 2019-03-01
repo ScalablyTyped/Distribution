@@ -20,3 +20,18 @@ trait RouteArgs extends js.Object {
   val transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
+object RouteArgs {
+  @scala.inline
+  def apply(
+    destinationCidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String],
+    transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  ): RouteArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("destinationCidrBlock")(destinationCidrBlock.asInstanceOf[js.Any])
+    __obj.updateDynamic("transitGatewayAttachmentId")(transitGatewayAttachmentId.asInstanceOf[js.Any])
+    __obj.updateDynamic("transitGatewayRouteTableId")(transitGatewayRouteTableId.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RouteArgs]
+  }
+}
+

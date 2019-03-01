@@ -23,3 +23,20 @@ trait GetTokenOptions extends js.Object {
   var redirect_uri: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetTokenOptions {
+  @scala.inline
+  def apply(
+    code: java.lang.String,
+    client_id: java.lang.String = null,
+    codeVerifier: java.lang.String = null,
+    redirect_uri: java.lang.String = null
+  ): GetTokenOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("code")(code)
+    if (client_id != null) __obj.updateDynamic("client_id")(client_id)
+    if (codeVerifier != null) __obj.updateDynamic("codeVerifier")(codeVerifier)
+    if (redirect_uri != null) __obj.updateDynamic("redirect_uri")(redirect_uri)
+    __obj.asInstanceOf[GetTokenOptions]
+  }
+}
+

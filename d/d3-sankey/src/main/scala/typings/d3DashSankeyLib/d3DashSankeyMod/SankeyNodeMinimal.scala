@@ -51,3 +51,32 @@ trait SankeyNodeMinimal[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraPro
   var y1: js.UndefOr[scala.Double] = js.undefined
 }
 
+object SankeyNodeMinimal {
+  @scala.inline
+  def apply[N /* <: SankeyExtraProperties */, L /* <: SankeyExtraProperties */](
+    depth: scala.Int | scala.Double = null,
+    height: scala.Int | scala.Double = null,
+    index: scala.Int | scala.Double = null,
+    sourceLinks: js.Array[SankeyLink[N, L]] = null,
+    targetLinks: js.Array[SankeyLink[N, L]] = null,
+    value: scala.Int | scala.Double = null,
+    x0: scala.Int | scala.Double = null,
+    x1: scala.Int | scala.Double = null,
+    y0: scala.Int | scala.Double = null,
+    y1: scala.Int | scala.Double = null
+  ): SankeyNodeMinimal[N, L] = {
+    val __obj = js.Dynamic.literal()
+    if (depth != null) __obj.updateDynamic("depth")(depth.asInstanceOf[js.Any])
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (index != null) __obj.updateDynamic("index")(index.asInstanceOf[js.Any])
+    if (sourceLinks != null) __obj.updateDynamic("sourceLinks")(sourceLinks)
+    if (targetLinks != null) __obj.updateDynamic("targetLinks")(targetLinks)
+    if (value != null) __obj.updateDynamic("value")(value.asInstanceOf[js.Any])
+    if (x0 != null) __obj.updateDynamic("x0")(x0.asInstanceOf[js.Any])
+    if (x1 != null) __obj.updateDynamic("x1")(x1.asInstanceOf[js.Any])
+    if (y0 != null) __obj.updateDynamic("y0")(y0.asInstanceOf[js.Any])
+    if (y1 != null) __obj.updateDynamic("y1")(y1.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SankeyNodeMinimal[N, L]]
+  }
+}
+

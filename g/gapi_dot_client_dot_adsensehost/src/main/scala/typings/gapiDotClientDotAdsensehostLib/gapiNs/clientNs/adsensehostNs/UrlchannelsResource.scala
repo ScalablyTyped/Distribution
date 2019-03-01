@@ -14,3 +14,27 @@ trait UrlchannelsResource extends js.Object {
   def list(request: gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFields): gapiDotClientLib.gapiNs.clientNs.Request[UrlChannels]
 }
 
+object UrlchannelsResource {
+  @scala.inline
+  def apply(
+    delete: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFieldsKey, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UrlChannel]
+    ],
+    insert: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AdClientId, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UrlChannel]
+    ],
+    list: js.Function1[
+      gapiDotClientDotAdsensehostLib.Anon_AdClientIdAltFields, 
+      gapiDotClientLib.gapiNs.clientNs.Request[UrlChannels]
+    ]
+  ): UrlchannelsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("delete")(delete)
+    __obj.updateDynamic("insert")(insert)
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[UrlchannelsResource]
+  }
+}
+

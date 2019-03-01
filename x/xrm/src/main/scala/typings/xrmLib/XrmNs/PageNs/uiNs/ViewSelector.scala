@@ -13,3 +13,18 @@ import scala.scalajs.js.annotation._
 trait ViewSelector
   extends xrmLib.XrmNs.ControlsNs.ViewSelector
 
+object ViewSelector {
+  @scala.inline
+  def apply(
+    getCurrentView: js.Function0[xrmLib.XrmNs.ControlsNs.ViewSelectorItem],
+    isVisible: js.Function0[scala.Boolean],
+    setCurrentView: js.Function1[xrmLib.XrmNs.ControlsNs.ViewSelectorItem, scala.Unit]
+  ): ViewSelector = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getCurrentView")(getCurrentView)
+    __obj.updateDynamic("isVisible")(isVisible)
+    __obj.updateDynamic("setCurrentView")(setCurrentView)
+    __obj.asInstanceOf[ViewSelector]
+  }
+}
+

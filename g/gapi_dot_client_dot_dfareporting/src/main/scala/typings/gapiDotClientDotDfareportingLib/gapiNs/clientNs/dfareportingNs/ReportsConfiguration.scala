@@ -34,3 +34,18 @@ trait ReportsConfiguration extends js.Object {
   var reportGenerationTimeZoneId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ReportsConfiguration {
+  @scala.inline
+  def apply(
+    exposureToConversionEnabled: js.UndefOr[scala.Boolean] = js.undefined,
+    lookbackConfiguration: LookbackConfiguration = null,
+    reportGenerationTimeZoneId: java.lang.String = null
+  ): ReportsConfiguration = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(exposureToConversionEnabled)) __obj.updateDynamic("exposureToConversionEnabled")(exposureToConversionEnabled)
+    if (lookbackConfiguration != null) __obj.updateDynamic("lookbackConfiguration")(lookbackConfiguration)
+    if (reportGenerationTimeZoneId != null) __obj.updateDynamic("reportGenerationTimeZoneId")(reportGenerationTimeZoneId)
+    __obj.asInstanceOf[ReportsConfiguration]
+  }
+}
+

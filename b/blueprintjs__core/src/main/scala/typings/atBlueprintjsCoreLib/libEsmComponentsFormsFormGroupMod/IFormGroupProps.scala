@@ -41,3 +41,32 @@ trait IFormGroupProps
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
 }
 
+object IFormGroupProps {
+  @scala.inline
+  def apply(
+    className: java.lang.String = null,
+    contentClassName: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    helperText: reactLib.reactMod.ReactNs.ReactNode = null,
+    `inline`: js.UndefOr[scala.Boolean] = js.undefined,
+    intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    label: reactLib.reactMod.ReactNs.ReactNode = null,
+    labelFor: java.lang.String = null,
+    labelInfo: reactLib.reactMod.ReactNs.ReactNode = null,
+    style: reactLib.reactMod.ReactNs.CSSProperties = null
+  ): IFormGroupProps = {
+    val __obj = js.Dynamic.literal()
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (contentClassName != null) __obj.updateDynamic("contentClassName")(contentClassName)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (helperText != null) __obj.updateDynamic("helperText")(helperText.asInstanceOf[js.Any])
+    if (!js.isUndefined(`inline`)) __obj.updateDynamic("inline")(`inline`)
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (label != null) __obj.updateDynamic("label")(label.asInstanceOf[js.Any])
+    if (labelFor != null) __obj.updateDynamic("labelFor")(labelFor)
+    if (labelInfo != null) __obj.updateDynamic("labelInfo")(labelInfo.asInstanceOf[js.Any])
+    if (style != null) __obj.updateDynamic("style")(style)
+    __obj.asInstanceOf[IFormGroupProps]
+  }
+}
+

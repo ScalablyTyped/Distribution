@@ -12,3 +12,19 @@ trait FluxStandardAction[T /* <: StringType */, P, M] extends js.Object {
   var `type`: T
 }
 
+object FluxStandardAction {
+  @scala.inline
+  def apply[T /* <: StringType */, P, M](
+    meta: M,
+    payload: P,
+    `type`: T,
+    error: typesafeDashActionsLib.typesafeDashActionsLibNumbers.`true` = null
+  ): FluxStandardAction[T, P, M] = {
+    val __obj = js.Dynamic.literal(`type` = `type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("meta")(meta.asInstanceOf[js.Any])
+    __obj.updateDynamic("payload")(payload.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
+    __obj.asInstanceOf[FluxStandardAction[T, P, M]]
+  }
+}
+

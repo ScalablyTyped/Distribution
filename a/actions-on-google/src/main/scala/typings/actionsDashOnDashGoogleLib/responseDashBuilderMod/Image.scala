@@ -16,3 +16,20 @@ trait Image extends js.Object {
   var width: scala.Double
 }
 
+object Image {
+  @scala.inline
+  def apply(
+    accessibilityText: java.lang.String,
+    height: scala.Double,
+    url: java.lang.String,
+    width: scala.Double
+  ): Image = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessibilityText")(accessibilityText)
+    __obj.updateDynamic("height")(height)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("width")(width)
+    __obj.asInstanceOf[Image]
+  }
+}
+

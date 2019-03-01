@@ -16,3 +16,24 @@ trait XMimeTypeInfo
   def supportsMimeType(MimeTypeName: java.lang.String): scala.Boolean
 }
 
+object XMimeTypeInfo {
+  @scala.inline
+  def apply(
+    SupportedMimeTypeNames: activexDashInteropLib.SafeArray[java.lang.String],
+    acquire: js.Function0[scala.Unit],
+    getSupportedMimeTypeNames: js.Function0[activexDashInteropLib.SafeArray[java.lang.String]],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    supportsMimeType: js.Function1[java.lang.String, scala.Boolean]
+  ): XMimeTypeInfo = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("SupportedMimeTypeNames")(SupportedMimeTypeNames)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("getSupportedMimeTypeNames")(getSupportedMimeTypeNames)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("supportsMimeType")(supportsMimeType)
+    __obj.asInstanceOf[XMimeTypeInfo]
+  }
+}
+

@@ -17,3 +17,24 @@ trait Compactable[F] extends js.Object {
   def separate[A, B](fa: fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libEitherMod.Either[A, B]]): Separated[fpDashTsLib.libHKTMod.HKT[F, A], fpDashTsLib.libHKTMod.HKT[F, B]]
 }
 
+object Compactable {
+  @scala.inline
+  def apply[F](
+    URI: F,
+    compact: js.Function1[
+      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libOptionMod.Option[js.Any]], 
+      fpDashTsLib.libHKTMod.HKT[F, js.Any]
+    ],
+    separate: js.Function1[
+      fpDashTsLib.libHKTMod.HKT[F, fpDashTsLib.libEitherMod.Either[js.Any, js.Any]], 
+      Separated[fpDashTsLib.libHKTMod.HKT[F, js.Any], fpDashTsLib.libHKTMod.HKT[F, js.Any]]
+    ]
+  ): Compactable[F] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("URI")(URI.asInstanceOf[js.Any])
+    __obj.updateDynamic("compact")(compact)
+    __obj.updateDynamic("separate")(separate)
+    __obj.asInstanceOf[Compactable[F]]
+  }
+}
+

@@ -45,3 +45,78 @@ trait DatePickerProps extends js.Object {
   var timeZoneOffsetInMinutes: js.UndefOr[scala.Double] = js.undefined
 }
 
+object DatePickerProps {
+  @scala.inline
+  def apply(
+    TouchableComponent: reactLib.reactMod.Component[js.Object, js.Object, _] = null,
+    allowFontScaling: js.UndefOr[scala.Boolean] = js.undefined,
+    androidMode: reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.default | reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.calendar | reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.spinner = null,
+    cancelBtnTestID: java.lang.String = null,
+    cancelBtnText: java.lang.String = null,
+    confirmBtnTestID: java.lang.String = null,
+    confirmBtnText: java.lang.String = null,
+    customStyles: DatePickerCustomStylesProps = null,
+    date: java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    duration: scala.Int | scala.Double = null,
+    format: java.lang.String = null,
+    getDateStr: js.Function1[/* date */ stdLib.Date, java.lang.String] = null,
+    height: scala.Int | scala.Double = null,
+    hideText: js.UndefOr[scala.Boolean] = js.undefined,
+    iconComponent: reactLib.reactMod.Global.JSXNs.Element = null,
+    iconSource: reactDashNativeLib.reactDashNativeMod.ImageURISource = null,
+    is24Hour: js.UndefOr[scala.Boolean] = js.undefined,
+    locale: java.lang.String = null,
+    maxDate: java.lang.String | stdLib.Date = null,
+    minDate: java.lang.String | stdLib.Date = null,
+    minuteInterval: scala.Int | scala.Double = null,
+    modalOnResponderTerminationRequest: js.Function1[/* e */ js.Any, scala.Boolean] = null,
+    mode: reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.date | reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.datetime | reactDashNativeDashDatepickerLib.reactDashNativeDashDatepickerLibStrings.time = null,
+    onCloseModal: js.Function0[scala.Unit] = null,
+    onDateChange: js.Function2[/* dateStr */ java.lang.String, /* date */ stdLib.Date, scala.Unit] = null,
+    onOpenModal: js.Function0[scala.Unit] = null,
+    onPressMask: js.Function0[scala.Unit] = null,
+    placeholder: java.lang.String = null,
+    showIcon: js.UndefOr[scala.Boolean] = js.undefined,
+    style: reactDashNativeLib.reactDashNativeMod.StyleProp[_] = null,
+    testID: java.lang.String = null,
+    timeZoneOffsetInMinutes: scala.Int | scala.Double = null
+  ): DatePickerProps = {
+    val __obj = js.Dynamic.literal()
+    if (TouchableComponent != null) __obj.updateDynamic("TouchableComponent")(TouchableComponent)
+    if (!js.isUndefined(allowFontScaling)) __obj.updateDynamic("allowFontScaling")(allowFontScaling)
+    if (androidMode != null) __obj.updateDynamic("androidMode")(androidMode.asInstanceOf[js.Any])
+    if (cancelBtnTestID != null) __obj.updateDynamic("cancelBtnTestID")(cancelBtnTestID)
+    if (cancelBtnText != null) __obj.updateDynamic("cancelBtnText")(cancelBtnText)
+    if (confirmBtnTestID != null) __obj.updateDynamic("confirmBtnTestID")(confirmBtnTestID)
+    if (confirmBtnText != null) __obj.updateDynamic("confirmBtnText")(confirmBtnText)
+    if (customStyles != null) __obj.updateDynamic("customStyles")(customStyles)
+    if (date != null) __obj.updateDynamic("date")(date.asInstanceOf[js.Any])
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (duration != null) __obj.updateDynamic("duration")(duration.asInstanceOf[js.Any])
+    if (format != null) __obj.updateDynamic("format")(format)
+    if (getDateStr != null) __obj.updateDynamic("getDateStr")(getDateStr)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (!js.isUndefined(hideText)) __obj.updateDynamic("hideText")(hideText)
+    if (iconComponent != null) __obj.updateDynamic("iconComponent")(iconComponent)
+    if (iconSource != null) __obj.updateDynamic("iconSource")(iconSource)
+    if (!js.isUndefined(is24Hour)) __obj.updateDynamic("is24Hour")(is24Hour)
+    if (locale != null) __obj.updateDynamic("locale")(locale)
+    if (maxDate != null) __obj.updateDynamic("maxDate")(maxDate.asInstanceOf[js.Any])
+    if (minDate != null) __obj.updateDynamic("minDate")(minDate.asInstanceOf[js.Any])
+    if (minuteInterval != null) __obj.updateDynamic("minuteInterval")(minuteInterval.asInstanceOf[js.Any])
+    if (modalOnResponderTerminationRequest != null) __obj.updateDynamic("modalOnResponderTerminationRequest")(modalOnResponderTerminationRequest)
+    if (mode != null) __obj.updateDynamic("mode")(mode.asInstanceOf[js.Any])
+    if (onCloseModal != null) __obj.updateDynamic("onCloseModal")(onCloseModal)
+    if (onDateChange != null) __obj.updateDynamic("onDateChange")(onDateChange)
+    if (onOpenModal != null) __obj.updateDynamic("onOpenModal")(onOpenModal)
+    if (onPressMask != null) __obj.updateDynamic("onPressMask")(onPressMask)
+    if (placeholder != null) __obj.updateDynamic("placeholder")(placeholder)
+    if (!js.isUndefined(showIcon)) __obj.updateDynamic("showIcon")(showIcon)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    if (testID != null) __obj.updateDynamic("testID")(testID)
+    if (timeZoneOffsetInMinutes != null) __obj.updateDynamic("timeZoneOffsetInMinutes")(timeZoneOffsetInMinutes.asInstanceOf[js.Any])
+    __obj.asInstanceOf[DatePickerProps]
+  }
+}
+

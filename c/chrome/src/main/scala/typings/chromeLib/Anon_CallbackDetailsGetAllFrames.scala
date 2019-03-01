@@ -31,3 +31,48 @@ trait Anon_CallbackDetailsGetAllFrames extends js.Object {
   ): scala.Unit
 }
 
+object Anon_CallbackDetailsGetAllFrames {
+  @scala.inline
+  def apply(
+    getAllFrames: js.Function2[
+      chromeLib.chromeNs.webNavigationNs.GetAllFrameDetails, 
+      js.Function1[
+        /* details */ js.Array[chromeLib.chromeNs.webNavigationNs.GetAllFrameResultDetails] | scala.Null, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    getFrame: js.Function2[
+      chromeLib.chromeNs.webNavigationNs.GetFrameDetails, 
+      js.Function1[
+        /* details */ chromeLib.chromeNs.webNavigationNs.GetFrameResultDetails | scala.Null, 
+        scala.Unit
+      ], 
+      scala.Unit
+    ],
+    onBeforeNavigate: chromeLib.chromeNs.webNavigationNs.WebNavigationParentedEvent,
+    onCommitted: chromeLib.chromeNs.webNavigationNs.WebNavigationTransitionalEvent,
+    onCompleted: chromeLib.chromeNs.webNavigationNs.WebNavigationFramedEvent,
+    onCreatedNavigationTarget: chromeLib.chromeNs.webNavigationNs.WebNavigationSourceEvent,
+    onDOMContentLoaded: chromeLib.chromeNs.webNavigationNs.WebNavigationFramedEvent,
+    onErrorOccurred: chromeLib.chromeNs.webNavigationNs.WebNavigationFramedErrorEvent,
+    onHistoryStateUpdated: chromeLib.chromeNs.webNavigationNs.WebNavigationTransitionalEvent,
+    onReferenceFragmentUpdated: chromeLib.chromeNs.webNavigationNs.WebNavigationTransitionalEvent,
+    onTabReplaced: chromeLib.chromeNs.webNavigationNs.WebNavigationReplacementEvent
+  ): Anon_CallbackDetailsGetAllFrames = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("getAllFrames")(getAllFrames)
+    __obj.updateDynamic("getFrame")(getFrame)
+    __obj.updateDynamic("onBeforeNavigate")(onBeforeNavigate)
+    __obj.updateDynamic("onCommitted")(onCommitted)
+    __obj.updateDynamic("onCompleted")(onCompleted)
+    __obj.updateDynamic("onCreatedNavigationTarget")(onCreatedNavigationTarget)
+    __obj.updateDynamic("onDOMContentLoaded")(onDOMContentLoaded)
+    __obj.updateDynamic("onErrorOccurred")(onErrorOccurred)
+    __obj.updateDynamic("onHistoryStateUpdated")(onHistoryStateUpdated)
+    __obj.updateDynamic("onReferenceFragmentUpdated")(onReferenceFragmentUpdated)
+    __obj.updateDynamic("onTabReplaced")(onTabReplaced)
+    __obj.asInstanceOf[Anon_CallbackDetailsGetAllFrames]
+  }
+}
+

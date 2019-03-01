@@ -40,3 +40,46 @@ trait Options extends js.Object {
   var verbosity: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Options {
+  @scala.inline
+  def apply(
+    architecture: java.lang.String = null,
+    configuration: java.lang.String = null,
+    consoleLoggerParameters: java.lang.String = null,
+    emitEndEvent: js.UndefOr[scala.Boolean] = js.undefined,
+    errorOnFail: js.UndefOr[scala.Boolean] = js.undefined,
+    fileLoggerParameters: java.lang.String = null,
+    logCommand: js.UndefOr[scala.Boolean] = js.undefined,
+    loggerParameters: java.lang.String = null,
+    maxcpucount: scala.Int | scala.Double = null,
+    nodeReuse: js.UndefOr[scala.Boolean] = js.undefined,
+    nologo: js.UndefOr[scala.Boolean] = js.undefined,
+    properties: js.Any = null,
+    stderr: js.UndefOr[scala.Boolean] = js.undefined,
+    stdout: js.UndefOr[scala.Boolean] = js.undefined,
+    targets: js.Array[java.lang.String] = null,
+    toolsVersion: scala.Int | scala.Double = null,
+    verbosity: java.lang.String = null
+  ): Options = {
+    val __obj = js.Dynamic.literal()
+    if (architecture != null) __obj.updateDynamic("architecture")(architecture)
+    if (configuration != null) __obj.updateDynamic("configuration")(configuration)
+    if (consoleLoggerParameters != null) __obj.updateDynamic("consoleLoggerParameters")(consoleLoggerParameters)
+    if (!js.isUndefined(emitEndEvent)) __obj.updateDynamic("emitEndEvent")(emitEndEvent)
+    if (!js.isUndefined(errorOnFail)) __obj.updateDynamic("errorOnFail")(errorOnFail)
+    if (fileLoggerParameters != null) __obj.updateDynamic("fileLoggerParameters")(fileLoggerParameters)
+    if (!js.isUndefined(logCommand)) __obj.updateDynamic("logCommand")(logCommand)
+    if (loggerParameters != null) __obj.updateDynamic("loggerParameters")(loggerParameters)
+    if (maxcpucount != null) __obj.updateDynamic("maxcpucount")(maxcpucount.asInstanceOf[js.Any])
+    if (!js.isUndefined(nodeReuse)) __obj.updateDynamic("nodeReuse")(nodeReuse)
+    if (!js.isUndefined(nologo)) __obj.updateDynamic("nologo")(nologo)
+    if (properties != null) __obj.updateDynamic("properties")(properties)
+    if (!js.isUndefined(stderr)) __obj.updateDynamic("stderr")(stderr)
+    if (!js.isUndefined(stdout)) __obj.updateDynamic("stdout")(stdout)
+    if (targets != null) __obj.updateDynamic("targets")(targets)
+    if (toolsVersion != null) __obj.updateDynamic("toolsVersion")(toolsVersion.asInstanceOf[js.Any])
+    if (verbosity != null) __obj.updateDynamic("verbosity")(verbosity)
+    __obj.asInstanceOf[Options]
+  }
+}
+

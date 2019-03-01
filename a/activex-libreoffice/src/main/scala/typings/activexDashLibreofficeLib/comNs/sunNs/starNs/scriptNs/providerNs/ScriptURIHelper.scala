@@ -16,3 +16,28 @@ trait ScriptURIHelper extends XScriptURIHelper {
   def create(language: java.lang.String, location: java.lang.String): scala.Unit
 }
 
+object ScriptURIHelper {
+  @scala.inline
+  def apply(
+    RootStorageURI: java.lang.String,
+    acquire: js.Function0[scala.Unit],
+    create: js.Function2[java.lang.String, java.lang.String, scala.Unit],
+    getRootStorageURI: js.Function0[java.lang.String],
+    getScriptURI: js.Function1[java.lang.String, java.lang.String],
+    getStorageURI: js.Function1[java.lang.String, java.lang.String],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit]
+  ): ScriptURIHelper = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("RootStorageURI")(RootStorageURI)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("create")(create)
+    __obj.updateDynamic("getRootStorageURI")(getRootStorageURI)
+    __obj.updateDynamic("getScriptURI")(getScriptURI)
+    __obj.updateDynamic("getStorageURI")(getStorageURI)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.asInstanceOf[ScriptURIHelper]
+  }
+}
+

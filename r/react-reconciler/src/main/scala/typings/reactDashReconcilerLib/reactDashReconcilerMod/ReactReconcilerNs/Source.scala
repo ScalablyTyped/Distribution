@@ -11,3 +11,13 @@ trait Source extends js.Object {
   var lineNumber: scala.Double
 }
 
+object Source {
+  @scala.inline
+  def apply(fileName: java.lang.String, lineNumber: scala.Double): Source = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fileName")(fileName)
+    __obj.updateDynamic("lineNumber")(lineNumber)
+    __obj.asInstanceOf[Source]
+  }
+}
+

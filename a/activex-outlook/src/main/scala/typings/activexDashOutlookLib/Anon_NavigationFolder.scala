@@ -9,3 +9,12 @@ trait Anon_NavigationFolder extends js.Object {
   val NavigationFolder: activexDashOutlookLib.OutlookNs.NavigationFolder
 }
 
+object Anon_NavigationFolder {
+  @scala.inline
+  def apply(NavigationFolder: activexDashOutlookLib.OutlookNs.NavigationFolder): Anon_NavigationFolder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NavigationFolder")(NavigationFolder)
+    __obj.asInstanceOf[Anon_NavigationFolder]
+  }
+}
+

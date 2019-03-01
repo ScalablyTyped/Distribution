@@ -68,3 +68,36 @@ trait FileUploaderOptions extends js.Object {
   var withCredentials: scala.Boolean
 }
 
+object FileUploaderOptions {
+  @scala.inline
+  def apply(
+    alias: java.lang.String,
+    autoUpload: scala.Boolean,
+    disableMultipart: scala.Boolean,
+    filters: js.Array[Filter],
+    formData: js.Array[stdLib.FormData],
+    headers: stdLib.Headers,
+    method: java.lang.String,
+    queue: js.Array[FileItem],
+    queueLimit: scala.Double,
+    removeAfterUpload: scala.Boolean,
+    url: java.lang.String,
+    withCredentials: scala.Boolean
+  ): FileUploaderOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alias")(alias)
+    __obj.updateDynamic("autoUpload")(autoUpload)
+    __obj.updateDynamic("disableMultipart")(disableMultipart)
+    __obj.updateDynamic("filters")(filters)
+    __obj.updateDynamic("formData")(formData)
+    __obj.updateDynamic("headers")(headers)
+    __obj.updateDynamic("method")(method)
+    __obj.updateDynamic("queue")(queue)
+    __obj.updateDynamic("queueLimit")(queueLimit)
+    __obj.updateDynamic("removeAfterUpload")(removeAfterUpload)
+    __obj.updateDynamic("url")(url)
+    __obj.updateDynamic("withCredentials")(withCredentials)
+    __obj.asInstanceOf[FileUploaderOptions]
+  }
+}
+

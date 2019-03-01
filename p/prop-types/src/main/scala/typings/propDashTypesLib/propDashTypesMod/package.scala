@@ -11,7 +11,6 @@ package object propDashTypesMod {
   {[ K in keyof V ]: -? prop-types.prop-types.InferType<V[K]>}
     */ propDashTypesLib.propDashTypesLibStrings.InferPropsInner with V
   type InferType[V] = js.Any
-  type IsOptional[T] = propDashTypesLib.propDashTypesLibNumbers.`false` | propDashTypesLib.propDashTypesLibNumbers.`true`
   type OptionalKeys[V] = stdLib.Exclude[java.lang.String, RequiredKeys[V]]
   type ReactComponentLike = java.lang.String | (js.Function2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], js.Any]) | (org.scalablytyped.runtime.Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[/* context */ js.Any], js.Any])
   type ReactNodeLike = js.UndefOr[

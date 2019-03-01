@@ -233,6 +233,10 @@ object geomNs extends js.Object {
     def translate(deltaX: scala.Double, deltaY: scala.Double): scala.Unit = js.native
   }
   
+  trait GeometryLayout extends js.Object
+  
+  trait GeometryType extends js.Object
+  
   /**
     * @classdesc
     * Linestring geometry.
@@ -853,17 +857,5 @@ object geomNs extends js.Object {
     def fromExtent(extent: openlayersLib.openlayersMod.Extent): openlayersLib.openlayersMod.geomNs.Polygon = js.native
   }
   
-  /**
-    * The coordinate layout for geometries, indicating whether a 3rd or 4th z ('Z')
-    * or measure ('M') coordinate is available. Supported values are `'XY'`,
-    * `'XYZ'`, `'XYM'`, `'XYZM'`.
-    */
-  type GeometryLayout = openlayersLib.openlayersLibStrings.XY | openlayersLib.openlayersLibStrings.XYZ | openlayersLib.openlayersLibStrings.XYM | openlayersLib.openlayersLibStrings.XYZM
-  /**
-    * The geometry type. One of `'Point'`, `'LineString'`, `'LinearRing'`,
-    * `'Polygon'`, `'MultiPoint'`, `'MultiLineString'`, `'MultiPolygon'`,
-    * `'GeometryCollection'`, `'Circle'`.
-    */
-  type GeometryType = openlayersLib.openlayersLibStrings.Point | openlayersLib.openlayersLibStrings.LineString | openlayersLib.openlayersLibStrings.LinearRing | openlayersLib.openlayersLibStrings.Polygon | openlayersLib.openlayersLibStrings.MultiPoint | openlayersLib.openlayersLibStrings.MultiLineString | openlayersLib.openlayersLibStrings.MultiPolygon | openlayersLib.openlayersLibStrings.GeometryCollection | openlayersLib.openlayersLibStrings.Circle
 }
 

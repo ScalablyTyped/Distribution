@@ -13,3 +13,18 @@ trait SignedMessage extends js.Object {
   var signature: js.UndefOr[java.lang.String | stdLib.ReadableStream[_] | Signature] = js.undefined
 }
 
+object SignedMessage {
+  @scala.inline
+  def apply(
+    data: java.lang.String | stdLib.ReadableStream[_] = null,
+    message: openpgpLib.openpgpMod.messageNs.Message = null,
+    signature: java.lang.String | stdLib.ReadableStream[_] | Signature = null
+  ): SignedMessage = {
+    val __obj = js.Dynamic.literal()
+    if (data != null) __obj.updateDynamic("data")(data.asInstanceOf[js.Any])
+    if (message != null) __obj.updateDynamic("message")(message)
+    if (signature != null) __obj.updateDynamic("signature")(signature.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SignedMessage]
+  }
+}
+

@@ -9,3 +9,12 @@ trait NotificationTracingSetParameters extends js.Object {
   var enabled: scala.Boolean
 }
 
+object NotificationTracingSetParameters {
+  @scala.inline
+  def apply(enabled: scala.Boolean): NotificationTracingSetParameters = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enabled")(enabled)
+    __obj.asInstanceOf[NotificationTracingSetParameters]
+  }
+}
+

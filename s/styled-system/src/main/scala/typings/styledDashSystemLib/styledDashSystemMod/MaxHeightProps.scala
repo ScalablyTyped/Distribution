@@ -15,3 +15,12 @@ trait MaxHeightProps[TLength] extends js.Object {
   var maxHeight: js.UndefOr[ResponsiveValue[csstypeLib.csstypeMod.MaxHeightProperty[TLength]]] = js.undefined
 }
 
+object MaxHeightProps {
+  @scala.inline
+  def apply[TLength](maxHeight: ResponsiveValue[csstypeLib.csstypeMod.MaxHeightProperty[TLength]] = null): MaxHeightProps[TLength] = {
+    val __obj = js.Dynamic.literal()
+    if (maxHeight != null) __obj.updateDynamic("maxHeight")(maxHeight.asInstanceOf[js.Any])
+    __obj.asInstanceOf[MaxHeightProps[TLength]]
+  }
+}
+

@@ -62,3 +62,30 @@ trait PlaceAutocompleteRequest extends js.Object {
   var types: js.UndefOr[PlaceAutocompleteType] = js.undefined
 }
 
+object PlaceAutocompleteRequest {
+  @scala.inline
+  def apply(
+    input: java.lang.String,
+    sessiontoken: java.lang.String,
+    components: js.Array[java.lang.String] = null,
+    language: java.lang.String = null,
+    location: LatLng = null,
+    offset: scala.Int | scala.Double = null,
+    radius: scala.Int | scala.Double = null,
+    strictbounds: js.UndefOr[scala.Boolean] = js.undefined,
+    types: PlaceAutocompleteType = null
+  ): PlaceAutocompleteRequest = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("input")(input)
+    __obj.updateDynamic("sessiontoken")(sessiontoken)
+    if (components != null) __obj.updateDynamic("components")(components)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (location != null) __obj.updateDynamic("location")(location.asInstanceOf[js.Any])
+    if (offset != null) __obj.updateDynamic("offset")(offset.asInstanceOf[js.Any])
+    if (radius != null) __obj.updateDynamic("radius")(radius.asInstanceOf[js.Any])
+    if (!js.isUndefined(strictbounds)) __obj.updateDynamic("strictbounds")(strictbounds)
+    if (types != null) __obj.updateDynamic("types")(types)
+    __obj.asInstanceOf[PlaceAutocompleteRequest]
+  }
+}
+

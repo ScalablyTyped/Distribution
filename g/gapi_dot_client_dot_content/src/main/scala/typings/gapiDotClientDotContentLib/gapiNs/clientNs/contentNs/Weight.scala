@@ -12,3 +12,13 @@ trait Weight extends js.Object {
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Weight {
+  @scala.inline
+  def apply(unit: java.lang.String = null, value: java.lang.String = null): Weight = {
+    val __obj = js.Dynamic.literal()
+    if (unit != null) __obj.updateDynamic("unit")(unit)
+    if (value != null) __obj.updateDynamic("value")(value)
+    __obj.asInstanceOf[Weight]
+  }
+}
+

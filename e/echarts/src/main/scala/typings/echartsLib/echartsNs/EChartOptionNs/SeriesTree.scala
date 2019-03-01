@@ -27,7 +27,7 @@ import scala.scalajs.js.annotation._
   *
   * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree
   */
-trait SeriesTree extends js.Object {
+trait SeriesTree extends Series {
   /**
     * Distance between tree component and the bottom side of the container.
     *
@@ -412,5 +412,70 @@ trait SeriesTree extends js.Object {
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#series-tree.zlevel
     */
   var zlevel: js.UndefOr[scala.Double] = js.undefined
+}
+
+object SeriesTree {
+  @scala.inline
+  def apply(
+    bottom: scala.Double | java.lang.String = null,
+    data: js.Array[echartsLib.echartsNs.EChartOptionNs.SeriesTreeNs.DataObject] = null,
+    emphasis: echartsLib.Anon_ItemStyleLabelLineStyleAnonAlignBackgroundColorBorderColor = null,
+    expandAndCollapse: js.UndefOr[scala.Boolean] = js.undefined,
+    height: scala.Double | java.lang.String = null,
+    id: java.lang.String = null,
+    initialTreeDepth: scala.Int | scala.Double = null,
+    itemStyle: echartsLib.Anon_BorderColorBorderTypeBorderWidth = null,
+    label: echartsLib.Anon_AlignBackgroundColorBorderColorBorderRadiusBorderWidthColorDistanceFontFamily = null,
+    layout: java.lang.String = null,
+    leaves: echartsLib.Anon_EmphasisItemStyleLabel = null,
+    left: scala.Double | java.lang.String = null,
+    lineStyle: echartsLib.Anon_ColorCurvenessShadowBlur = null,
+    name: java.lang.String = null,
+    orient: java.lang.String = null,
+    right: scala.Double | java.lang.String = null,
+    roam: scala.Boolean | java.lang.String = null,
+    symbol: java.lang.String = null,
+    symbolKeepAspect: js.UndefOr[scala.Boolean] = js.undefined,
+    symbolOffset: js.Array[_] = null,
+    symbolRotate: scala.Int | scala.Double = null,
+    symbolSize: js.Array[_] | js.Function | scala.Double = null,
+    tooltip: echartsLib.Anon_BackgroundColorBorderColor = null,
+    top: scala.Double | java.lang.String = null,
+    `type`: java.lang.String = null,
+    width: scala.Double | java.lang.String = null,
+    z: scala.Int | scala.Double = null,
+    zlevel: scala.Int | scala.Double = null
+  ): SeriesTree = {
+    val __obj = js.Dynamic.literal()
+    if (bottom != null) __obj.updateDynamic("bottom")(bottom.asInstanceOf[js.Any])
+    if (data != null) __obj.updateDynamic("data")(data)
+    if (emphasis != null) __obj.updateDynamic("emphasis")(emphasis)
+    if (!js.isUndefined(expandAndCollapse)) __obj.updateDynamic("expandAndCollapse")(expandAndCollapse)
+    if (height != null) __obj.updateDynamic("height")(height.asInstanceOf[js.Any])
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (initialTreeDepth != null) __obj.updateDynamic("initialTreeDepth")(initialTreeDepth.asInstanceOf[js.Any])
+    if (itemStyle != null) __obj.updateDynamic("itemStyle")(itemStyle)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (layout != null) __obj.updateDynamic("layout")(layout)
+    if (leaves != null) __obj.updateDynamic("leaves")(leaves)
+    if (left != null) __obj.updateDynamic("left")(left.asInstanceOf[js.Any])
+    if (lineStyle != null) __obj.updateDynamic("lineStyle")(lineStyle)
+    if (name != null) __obj.updateDynamic("name")(name)
+    if (orient != null) __obj.updateDynamic("orient")(orient)
+    if (right != null) __obj.updateDynamic("right")(right.asInstanceOf[js.Any])
+    if (roam != null) __obj.updateDynamic("roam")(roam.asInstanceOf[js.Any])
+    if (symbol != null) __obj.updateDynamic("symbol")(symbol)
+    if (!js.isUndefined(symbolKeepAspect)) __obj.updateDynamic("symbolKeepAspect")(symbolKeepAspect)
+    if (symbolOffset != null) __obj.updateDynamic("symbolOffset")(symbolOffset)
+    if (symbolRotate != null) __obj.updateDynamic("symbolRotate")(symbolRotate.asInstanceOf[js.Any])
+    if (symbolSize != null) __obj.updateDynamic("symbolSize")(symbolSize.asInstanceOf[js.Any])
+    if (tooltip != null) __obj.updateDynamic("tooltip")(tooltip)
+    if (top != null) __obj.updateDynamic("top")(top.asInstanceOf[js.Any])
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    if (width != null) __obj.updateDynamic("width")(width.asInstanceOf[js.Any])
+    if (z != null) __obj.updateDynamic("z")(z.asInstanceOf[js.Any])
+    if (zlevel != null) __obj.updateDynamic("zlevel")(zlevel.asInstanceOf[js.Any])
+    __obj.asInstanceOf[SeriesTree]
+  }
 }
 

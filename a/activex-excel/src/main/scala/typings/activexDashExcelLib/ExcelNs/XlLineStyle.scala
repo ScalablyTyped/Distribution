@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-sealed trait XlLineStyle extends js.Object
+sealed trait XlLineStyle extends LineStyle
 
 @JSGlobal("Excel.XlLineStyle")
 @js.native

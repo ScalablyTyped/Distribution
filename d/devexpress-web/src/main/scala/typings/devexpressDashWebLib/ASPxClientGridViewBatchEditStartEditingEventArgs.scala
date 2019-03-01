@@ -26,3 +26,20 @@ trait ASPxClientGridViewBatchEditStartEditingEventArgs extends ASPxClientCancelE
   var visibleIndex: scala.Double
 }
 
+object ASPxClientGridViewBatchEditStartEditingEventArgs {
+  @scala.inline
+  def apply(
+    cancel: scala.Boolean,
+    focusedColumn: ASPxClientGridViewColumn,
+    rowValues: js.Object,
+    visibleIndex: scala.Double
+  ): ASPxClientGridViewBatchEditStartEditingEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cancel")(cancel)
+    __obj.updateDynamic("focusedColumn")(focusedColumn)
+    __obj.updateDynamic("rowValues")(rowValues)
+    __obj.updateDynamic("visibleIndex")(visibleIndex)
+    __obj.asInstanceOf[ASPxClientGridViewBatchEditStartEditingEventArgs]
+  }
+}
+

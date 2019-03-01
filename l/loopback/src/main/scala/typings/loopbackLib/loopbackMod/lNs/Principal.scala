@@ -23,3 +23,12 @@ trait Principal extends js.Object {
   def equals(p: js.Any): scala.Unit
 }
 
+object Principal {
+  @scala.inline
+  def apply(equals: js.Function1[js.Any, scala.Unit]): Principal = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("equals")(equals)
+    __obj.asInstanceOf[Principal]
+  }
+}
+

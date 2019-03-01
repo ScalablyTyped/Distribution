@@ -13,3 +13,12 @@ trait Control extends js.Object {
   var environment: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object Control {
+  @scala.inline
+  def apply(environment: java.lang.String = null): Control = {
+    val __obj = js.Dynamic.literal()
+    if (environment != null) __obj.updateDynamic("environment")(environment)
+    __obj.asInstanceOf[Control]
+  }
+}
+

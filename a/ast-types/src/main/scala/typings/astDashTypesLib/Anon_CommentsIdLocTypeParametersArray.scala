@@ -12,3 +12,20 @@ trait Anon_CommentsIdLocTypeParametersArray extends js.Object {
   var typeParameters: js.UndefOr[astDashTypesLib.genKindsMod.TypeParameterInstantiationKind | scala.Null] = js.undefined
 }
 
+object Anon_CommentsIdLocTypeParametersArray {
+  @scala.inline
+  def apply(
+    id: astDashTypesLib.genKindsMod.IdentifierKind,
+    comments: js.Array[astDashTypesLib.genKindsMod.CommentKind] = null,
+    loc: astDashTypesLib.genKindsMod.SourceLocationKind = null,
+    typeParameters: astDashTypesLib.genKindsMod.TypeParameterInstantiationKind = null
+  ): Anon_CommentsIdLocTypeParametersArray = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("id")(id)
+    if (comments != null) __obj.updateDynamic("comments")(comments)
+    if (loc != null) __obj.updateDynamic("loc")(loc)
+    if (typeParameters != null) __obj.updateDynamic("typeParameters")(typeParameters)
+    __obj.asInstanceOf[Anon_CommentsIdLocTypeParametersArray]
+  }
+}
+

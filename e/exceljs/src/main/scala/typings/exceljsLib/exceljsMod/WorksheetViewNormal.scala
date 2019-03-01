@@ -18,3 +18,16 @@ trait WorksheetViewNormal extends js.Object {
   ] = js.undefined
 }
 
+object WorksheetViewNormal {
+  @scala.inline
+  def apply(
+    state: exceljsLib.exceljsLibStrings.normal = null,
+    style: exceljsLib.exceljsLibStrings.pageBreakPreview | exceljsLib.exceljsLibStrings.pageLayout = null
+  ): WorksheetViewNormal = {
+    val __obj = js.Dynamic.literal()
+    if (state != null) __obj.updateDynamic("state")(state)
+    if (style != null) __obj.updateDynamic("style")(style.asInstanceOf[js.Any])
+    __obj.asInstanceOf[WorksheetViewNormal]
+  }
+}
+

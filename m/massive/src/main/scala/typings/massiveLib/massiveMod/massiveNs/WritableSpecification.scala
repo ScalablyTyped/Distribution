@@ -16,3 +16,15 @@ trait WritableSpecification extends js.Object {
   var schema: java.lang.String
 }
 
+object WritableSpecification {
+  @scala.inline
+  def apply(db: Database, name: java.lang.String, pk: java.lang.String, schema: java.lang.String): WritableSpecification = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("db")(db)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("pk")(pk)
+    __obj.updateDynamic("schema")(schema)
+    __obj.asInstanceOf[WritableSpecification]
+  }
+}
+

@@ -12,3 +12,22 @@ trait BootstrapButtonEventMap extends ControlEventMap {
   var lostFocus: EventArgs
 }
 
+object BootstrapButtonEventMap {
+  @scala.inline
+  def apply(
+    checkedChanged: ProcessingModeEventArgs,
+    click: ButtonClickEventArgs,
+    gotFocus: EventArgs,
+    init: EventArgs,
+    lostFocus: EventArgs
+  ): BootstrapButtonEventMap = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("checkedChanged")(checkedChanged)
+    __obj.updateDynamic("click")(click)
+    __obj.updateDynamic("gotFocus")(gotFocus)
+    __obj.updateDynamic("init")(init)
+    __obj.updateDynamic("lostFocus")(lostFocus)
+    __obj.asInstanceOf[BootstrapButtonEventMap]
+  }
+}
+

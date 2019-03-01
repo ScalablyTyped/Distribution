@@ -22,3 +22,22 @@ trait GetBucketObjectArgs extends js.Object {
   val versionId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object GetBucketObjectArgs {
+  @scala.inline
+  def apply(
+    bucket: java.lang.String,
+    key: java.lang.String,
+    range: java.lang.String = null,
+    tags: org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    versionId: java.lang.String = null
+  ): GetBucketObjectArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("bucket")(bucket)
+    __obj.updateDynamic("key")(key)
+    if (range != null) __obj.updateDynamic("range")(range)
+    if (tags != null) __obj.updateDynamic("tags")(tags)
+    if (versionId != null) __obj.updateDynamic("versionId")(versionId)
+    __obj.asInstanceOf[GetBucketObjectArgs]
+  }
+}
+

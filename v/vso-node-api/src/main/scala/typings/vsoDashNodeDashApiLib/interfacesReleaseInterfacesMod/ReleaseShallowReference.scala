@@ -24,3 +24,15 @@ trait ReleaseShallowReference extends js.Object {
   var url: java.lang.String
 }
 
+object ReleaseShallowReference {
+  @scala.inline
+  def apply(_links: js.Any, id: scala.Double, name: java.lang.String, url: java.lang.String): ReleaseShallowReference = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[ReleaseShallowReference]
+  }
+}
+

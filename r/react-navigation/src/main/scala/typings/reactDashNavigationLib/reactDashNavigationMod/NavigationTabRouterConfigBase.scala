@@ -18,3 +18,22 @@ trait NavigationTabRouterConfigBase extends js.Object {
   var paths: js.UndefOr[NavigationPathsConfig] = js.undefined
 }
 
+object NavigationTabRouterConfigBase {
+  @scala.inline
+  def apply(
+    backBehavior: reactDashNavigationLib.reactDashNavigationLibStrings.none | reactDashNavigationLib.reactDashNavigationLibStrings.initialRoute = null,
+    initialRouteName: java.lang.String = null,
+    initialRouteParams: NavigationParams = null,
+    order: js.Array[java.lang.String] = null,
+    paths: NavigationPathsConfig = null
+  ): NavigationTabRouterConfigBase = {
+    val __obj = js.Dynamic.literal()
+    if (backBehavior != null) __obj.updateDynamic("backBehavior")(backBehavior.asInstanceOf[js.Any])
+    if (initialRouteName != null) __obj.updateDynamic("initialRouteName")(initialRouteName)
+    if (initialRouteParams != null) __obj.updateDynamic("initialRouteParams")(initialRouteParams)
+    if (order != null) __obj.updateDynamic("order")(order)
+    if (paths != null) __obj.updateDynamic("paths")(paths)
+    __obj.asInstanceOf[NavigationTabRouterConfigBase]
+  }
+}
+

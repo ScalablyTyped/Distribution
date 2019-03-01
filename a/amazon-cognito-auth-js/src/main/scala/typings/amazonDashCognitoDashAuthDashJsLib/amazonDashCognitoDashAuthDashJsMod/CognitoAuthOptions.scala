@@ -40,3 +40,28 @@ trait CognitoAuthOptions extends js.Object {
   var UserPoolId: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object CognitoAuthOptions {
+  @scala.inline
+  def apply(
+    AppWebDomain: java.lang.String,
+    ClientId: java.lang.String,
+    RedirectUriSignIn: java.lang.String,
+    RedirectUriSignOut: java.lang.String,
+    AdvancedSecurityDataCollectionFlag: js.UndefOr[scala.Boolean] = js.undefined,
+    IdentityProvider: java.lang.String = null,
+    TokenScopesArray: js.Array[java.lang.String] = null,
+    UserPoolId: java.lang.String = null
+  ): CognitoAuthOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("AppWebDomain")(AppWebDomain)
+    __obj.updateDynamic("ClientId")(ClientId)
+    __obj.updateDynamic("RedirectUriSignIn")(RedirectUriSignIn)
+    __obj.updateDynamic("RedirectUriSignOut")(RedirectUriSignOut)
+    if (!js.isUndefined(AdvancedSecurityDataCollectionFlag)) __obj.updateDynamic("AdvancedSecurityDataCollectionFlag")(AdvancedSecurityDataCollectionFlag)
+    if (IdentityProvider != null) __obj.updateDynamic("IdentityProvider")(IdentityProvider)
+    if (TokenScopesArray != null) __obj.updateDynamic("TokenScopesArray")(TokenScopesArray)
+    if (UserPoolId != null) __obj.updateDynamic("UserPoolId")(UserPoolId)
+    __obj.asInstanceOf[CognitoAuthOptions]
+  }
+}
+

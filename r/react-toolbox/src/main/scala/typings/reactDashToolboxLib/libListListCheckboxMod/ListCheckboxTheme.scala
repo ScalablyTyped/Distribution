@@ -24,3 +24,20 @@ trait ListCheckboxTheme extends js.Object {
   var item: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object ListCheckboxTheme {
+  @scala.inline
+  def apply(
+    checkbox: java.lang.String = null,
+    checkboxItem: java.lang.String = null,
+    disabled: java.lang.String = null,
+    item: java.lang.String = null
+  ): ListCheckboxTheme = {
+    val __obj = js.Dynamic.literal()
+    if (checkbox != null) __obj.updateDynamic("checkbox")(checkbox)
+    if (checkboxItem != null) __obj.updateDynamic("checkboxItem")(checkboxItem)
+    if (disabled != null) __obj.updateDynamic("disabled")(disabled)
+    if (item != null) __obj.updateDynamic("item")(item)
+    __obj.asInstanceOf[ListCheckboxTheme]
+  }
+}
+

@@ -24,3 +24,32 @@ trait PieChartProps extends js.Object {
   ] = js.undefined
 }
 
+object PieChartProps {
+  @scala.inline
+  def apply(
+    data: js.Array[reactDashEasyDashChartLib.Anon_Color],
+    clickHandler: js.Function2[/* data */ PieData, /* mouseEvent */ reactLib.MouseEvent, _] = null,
+    innerHoleSize: scala.Int | scala.Double = null,
+    labels: js.UndefOr[scala.Boolean] = js.undefined,
+    mouseMoveHandler: js.Function2[/* data */ PieData, /* mouseEvent */ reactLib.MouseEvent, _] = null,
+    mouseOutHandler: js.Function2[/* data */ PieData, /* mouseEvent */ reactLib.MouseEvent, _] = null,
+    mouseOverHandler: js.Function2[/* data */ PieData, /* mouseEvent */ reactLib.MouseEvent, _] = null,
+    padding: scala.Int | scala.Double = null,
+    size: scala.Int | scala.Double = null,
+    styles: org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.CSSProperties] = null
+  ): PieChartProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("data")(data)
+    if (clickHandler != null) __obj.updateDynamic("clickHandler")(clickHandler)
+    if (innerHoleSize != null) __obj.updateDynamic("innerHoleSize")(innerHoleSize.asInstanceOf[js.Any])
+    if (!js.isUndefined(labels)) __obj.updateDynamic("labels")(labels)
+    if (mouseMoveHandler != null) __obj.updateDynamic("mouseMoveHandler")(mouseMoveHandler)
+    if (mouseOutHandler != null) __obj.updateDynamic("mouseOutHandler")(mouseOutHandler)
+    if (mouseOverHandler != null) __obj.updateDynamic("mouseOverHandler")(mouseOverHandler)
+    if (padding != null) __obj.updateDynamic("padding")(padding.asInstanceOf[js.Any])
+    if (size != null) __obj.updateDynamic("size")(size.asInstanceOf[js.Any])
+    if (styles != null) __obj.updateDynamic("styles")(styles)
+    __obj.asInstanceOf[PieChartProps]
+  }
+}
+

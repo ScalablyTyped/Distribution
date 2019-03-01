@@ -15,3 +15,12 @@ trait TrackSearchResponse extends js.Object {
   var tracks: PagingObject[TrackObjectFull]
 }
 
+object TrackSearchResponse {
+  @scala.inline
+  def apply(tracks: PagingObject[TrackObjectFull]): TrackSearchResponse = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("tracks")(tracks)
+    __obj.asInstanceOf[TrackSearchResponse]
+  }
+}
+

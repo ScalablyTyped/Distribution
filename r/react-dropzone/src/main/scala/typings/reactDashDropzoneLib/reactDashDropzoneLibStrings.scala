@@ -7,31 +7,31 @@ import scala.scalajs.js.annotation._
 
 object reactDashDropzoneLibStrings {
   @js.native
-  sealed trait className extends js.Object
+  sealed trait className extends PickedAttributes
   
   @js.native
-  sealed trait multiple extends js.Object
+  sealed trait multiple extends PickedAttributes
   
   @js.native
-  sealed trait name extends js.Object
+  sealed trait name extends PickedAttributes
   
   @js.native
-  sealed trait onClick extends js.Object
+  sealed trait onClick extends PickedAttributes
   
   @js.native
-  sealed trait onDragEnter extends js.Object
+  sealed trait onDragEnter extends PickedAttributes
   
   @js.native
-  sealed trait onDragLeave extends js.Object
+  sealed trait onDragLeave extends PickedAttributes
   
   @js.native
-  sealed trait onDragOver extends js.Object
+  sealed trait onDragOver extends PickedAttributes
   
   @js.native
-  sealed trait onDragStart extends js.Object
+  sealed trait onDragStart extends PickedAttributes
   
   @js.native
-  sealed trait style extends js.Object
+  sealed trait style extends PickedAttributes
   
   @scala.inline
   def className: className = "className".asInstanceOf[className]

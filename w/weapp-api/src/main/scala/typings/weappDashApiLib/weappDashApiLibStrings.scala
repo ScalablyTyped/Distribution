@@ -19,40 +19,55 @@ object weappDashApiLibStrings {
   sealed trait MD5 extends js.Object
   
   @js.native
-  sealed trait address extends js.Object
+  sealed trait address
+    extends weappDashApiLib.weappDashApiMod.wxNs.Scope
   
   @js.native
-  sealed trait album extends js.Object
+  sealed trait album
+    extends weappDashApiLib.weappDashApiMod.wxNs.ImageSourceType
+       with weappDashApiLib.weappDashApiMod.wxNs.VideoSourceType
   
   @js.native
-  sealed trait back extends js.Object
+  sealed trait back
+    extends weappDashApiLib.weappDashApiMod.wxNs.CameraDevice
   
   @js.native
-  sealed trait bevel extends js.Object
+  sealed trait bevel
+    extends weappDashApiLib.weappDashApiMod.wxNs.LineJoinType
   
   @js.native
-  sealed trait butt extends js.Object
+  sealed trait butt
+    extends weappDashApiLib.weappDashApiMod.wxNs.LineCapType
   
   @js.native
-  sealed trait camera extends js.Object
+  sealed trait camera
+    extends weappDashApiLib.weappDashApiMod.wxNs.ImageSourceType
+       with weappDashApiLib.weappDashApiMod.wxNs.Scope
+       with weappDashApiLib.weappDashApiMod.wxNs.VideoSourceType
   
   @js.native
-  sealed trait compressed extends js.Object
+  sealed trait compressed
+    extends weappDashApiLib.weappDashApiMod.wxNs.ImageSizeType
   
   @js.native
-  sealed trait develop extends js.Object
+  sealed trait develop
+    extends weappDashApiLib.weappDashApiMod.wxNs.envVersion
   
   @js.native
-  sealed trait ease extends js.Object
+  sealed trait ease
+    extends weappDashApiLib.weappDashApiMod.wxNs.TimingFunction
   
   @js.native
-  sealed trait `ease-in` extends js.Object
+  sealed trait `ease-in`
+    extends weappDashApiLib.weappDashApiMod.wxNs.TimingFunction
   
   @js.native
-  sealed trait `ease-in-out` extends js.Object
+  sealed trait `ease-in-out`
+    extends weappDashApiLib.weappDashApiMod.wxNs.TimingFunction
   
   @js.native
-  sealed trait `ease-out` extends js.Object
+  sealed trait `ease-out`
+    extends weappDashApiLib.weappDashApiMod.wxNs.TimingFunction
   
   @js.native
   sealed trait easeIn extends js.Object
@@ -64,64 +79,84 @@ object weappDashApiLibStrings {
   sealed trait easeOut extends js.Object
   
   @js.native
-  sealed trait front extends js.Object
+  sealed trait front
+    extends weappDashApiLib.weappDashApiMod.wxNs.CameraDevice
   
   @js.native
   sealed trait gcj02 extends js.Object
   
   @js.native
-  sealed trait invoice extends js.Object
+  sealed trait invoice
+    extends weappDashApiLib.weappDashApiMod.wxNs.Scope
   
   @js.native
-  sealed trait invoiceTitle extends js.Object
+  sealed trait invoiceTitle
+    extends weappDashApiLib.weappDashApiMod.wxNs.Scope
   
   @js.native
-  sealed trait linear extends js.Object
+  sealed trait linear
+    extends weappDashApiLib.weappDashApiMod.wxNs.TimingFunction
   
   @js.native
-  sealed trait loading extends js.Object
+  sealed trait loading
+    extends weappDashApiLib.weappDashApiMod.wxNs.icon
   
   @js.native
-  sealed trait miter extends js.Object
+  sealed trait miter
+    extends weappDashApiLib.weappDashApiMod.wxNs.LineJoinType
   
   @js.native
-  sealed trait none extends js.Object
+  sealed trait none
+    extends weappDashApiLib.weappDashApiMod.wxNs.icon
   
   @js.native
-  sealed trait original extends js.Object
+  sealed trait original
+    extends weappDashApiLib.weappDashApiMod.wxNs.ImageSizeType
   
   @js.native
-  sealed trait record extends js.Object
+  sealed trait record
+    extends weappDashApiLib.weappDashApiMod.wxNs.Scope
   
   @js.native
-  sealed trait release extends js.Object
+  sealed trait release
+    extends weappDashApiLib.weappDashApiMod.wxNs.envVersion
   
   @js.native
-  sealed trait round extends js.Object
+  sealed trait round
+    extends weappDashApiLib.weappDashApiMod.wxNs.LineCapType
+       with weappDashApiLib.weappDashApiMod.wxNs.LineJoinType
   
   @js.native
-  sealed trait square extends js.Object
+  sealed trait square
+    extends weappDashApiLib.weappDashApiMod.wxNs.LineCapType
   
   @js.native
-  sealed trait `step-end` extends js.Object
+  sealed trait `step-end`
+    extends weappDashApiLib.weappDashApiMod.wxNs.TimingFunction
   
   @js.native
-  sealed trait `step-start` extends js.Object
+  sealed trait `step-start`
+    extends weappDashApiLib.weappDashApiMod.wxNs.TimingFunction
   
   @js.native
-  sealed trait success extends js.Object
+  sealed trait success
+    extends weappDashApiLib.weappDashApiMod.wxNs.icon
   
   @js.native
-  sealed trait trial extends js.Object
+  sealed trait trial
+    extends weappDashApiLib.weappDashApiMod.wxNs.envVersion
   
   @js.native
-  sealed trait userInfo extends js.Object
+  sealed trait userInfo
+    extends weappDashApiLib.weappDashApiMod.wxNs.Scope
   
   @js.native
-  sealed trait userLocation extends js.Object
+  sealed trait userLocation
+    extends weappDashApiLib.weappDashApiMod.wxNs.Scope
   
   @js.native
-  sealed trait werun extends js.Object
+  sealed trait werun
+    extends weappDashApiLib.weappDashApiMod.wxNs.Scope
   
   @js.native
   sealed trait wgs84 extends js.Object
@@ -130,7 +165,8 @@ object weappDashApiLibStrings {
   sealed trait wifi extends js.Object
   
   @js.native
-  sealed trait writePhotosAlbum extends js.Object
+  sealed trait writePhotosAlbum
+    extends weappDashApiLib.weappDashApiMod.wxNs.Scope
   
   @scala.inline
   def `2g`: `2g` = "2g".asInstanceOf[`2g`]

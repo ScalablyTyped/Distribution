@@ -9,3 +9,13 @@ trait ViewDocument[D] extends IdentifiedDocument {
   var views: org.scalablytyped.runtime.StringDictionary[View[D]]
 }
 
+object ViewDocument {
+  @scala.inline
+  def apply[D](_id: java.lang.String, views: org.scalablytyped.runtime.StringDictionary[View[D]]): ViewDocument[D] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_id")(_id)
+    __obj.updateDynamic("views")(views)
+    __obj.asInstanceOf[ViewDocument[D]]
+  }
+}
+

@@ -15,3 +15,13 @@ trait SourceSplitOptions extends js.Object {
   var desiredShardSizeBytes: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object SourceSplitOptions {
+  @scala.inline
+  def apply(desiredBundleSizeBytes: java.lang.String = null, desiredShardSizeBytes: java.lang.String = null): SourceSplitOptions = {
+    val __obj = js.Dynamic.literal()
+    if (desiredBundleSizeBytes != null) __obj.updateDynamic("desiredBundleSizeBytes")(desiredBundleSizeBytes)
+    if (desiredShardSizeBytes != null) __obj.updateDynamic("desiredShardSizeBytes")(desiredShardSizeBytes)
+    __obj.asInstanceOf[SourceSplitOptions]
+  }
+}
+

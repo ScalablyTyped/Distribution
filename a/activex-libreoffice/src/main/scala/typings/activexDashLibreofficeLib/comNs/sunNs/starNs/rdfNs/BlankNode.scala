@@ -23,3 +23,13 @@ trait BlankNode extends XNode {
   def create(NodeID: java.lang.String): scala.Unit
 }
 
+object BlankNode {
+  @scala.inline
+  def apply(StringValue: java.lang.String, create: js.Function1[java.lang.String, scala.Unit]): BlankNode = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("StringValue")(StringValue)
+    __obj.updateDynamic("create")(create)
+    __obj.asInstanceOf[BlankNode]
+  }
+}
+

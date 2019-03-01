@@ -21,3 +21,13 @@ trait ASPxClientHtmlEditorCommandEventArgs extends ASPxClientEventArgs {
   var parameter: js.Object
 }
 
+object ASPxClientHtmlEditorCommandEventArgs {
+  @scala.inline
+  def apply(commandName: java.lang.String, parameter: js.Object): ASPxClientHtmlEditorCommandEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("commandName")(commandName)
+    __obj.updateDynamic("parameter")(parameter)
+    __obj.asInstanceOf[ASPxClientHtmlEditorCommandEventArgs]
+  }
+}
+

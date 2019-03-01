@@ -95,3 +95,50 @@ trait AreasSettings extends js.Object {
   var unlistedAreasOutlineColor: java.lang.String
 }
 
+object AreasSettings {
+  @scala.inline
+  def apply(
+    alpha: scala.Double,
+    autoZoom: scala.Boolean,
+    balloonText: java.lang.String,
+    color: java.lang.String,
+    colorSolid: java.lang.String,
+    descriptionWindowHeight: scala.Double,
+    descriptionWindowWidth: scala.Double,
+    descriptionWindowX: scala.Double,
+    descriptionWindowY: scala.Double,
+    outlineAlpha: scala.Double,
+    outlineColor: java.lang.String,
+    outlineThickness: scala.Double,
+    rollOverColor: java.lang.String,
+    rollOverOutlineColor: java.lang.String,
+    selectedColor: java.lang.String,
+    unlistedAreasAlpha: scala.Double,
+    unlistedAreasColor: java.lang.String,
+    unlistedAreasOutlineAlpha: scala.Double,
+    unlistedAreasOutlineColor: java.lang.String
+  ): AreasSettings = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("alpha")(alpha)
+    __obj.updateDynamic("autoZoom")(autoZoom)
+    __obj.updateDynamic("balloonText")(balloonText)
+    __obj.updateDynamic("color")(color)
+    __obj.updateDynamic("colorSolid")(colorSolid)
+    __obj.updateDynamic("descriptionWindowHeight")(descriptionWindowHeight)
+    __obj.updateDynamic("descriptionWindowWidth")(descriptionWindowWidth)
+    __obj.updateDynamic("descriptionWindowX")(descriptionWindowX)
+    __obj.updateDynamic("descriptionWindowY")(descriptionWindowY)
+    __obj.updateDynamic("outlineAlpha")(outlineAlpha)
+    __obj.updateDynamic("outlineColor")(outlineColor)
+    __obj.updateDynamic("outlineThickness")(outlineThickness)
+    __obj.updateDynamic("rollOverColor")(rollOverColor)
+    __obj.updateDynamic("rollOverOutlineColor")(rollOverOutlineColor)
+    __obj.updateDynamic("selectedColor")(selectedColor)
+    __obj.updateDynamic("unlistedAreasAlpha")(unlistedAreasAlpha)
+    __obj.updateDynamic("unlistedAreasColor")(unlistedAreasColor)
+    __obj.updateDynamic("unlistedAreasOutlineAlpha")(unlistedAreasOutlineAlpha)
+    __obj.updateDynamic("unlistedAreasOutlineColor")(unlistedAreasOutlineColor)
+    __obj.asInstanceOf[AreasSettings]
+  }
+}
+

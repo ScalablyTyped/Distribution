@@ -21,3 +21,13 @@ trait ASPxClientTreeListCustomDataCallbackEventArgs extends ASPxClientEventArgs 
   var result: js.Object
 }
 
+object ASPxClientTreeListCustomDataCallbackEventArgs {
+  @scala.inline
+  def apply(arg: java.lang.String, result: js.Object): ASPxClientTreeListCustomDataCallbackEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("arg")(arg)
+    __obj.updateDynamic("result")(result)
+    __obj.asInstanceOf[ASPxClientTreeListCustomDataCallbackEventArgs]
+  }
+}
+

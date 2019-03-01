@@ -26,3 +26,27 @@ trait Anon_Focusable[K, D] extends js.Object {
   ] = js.undefined
 }
 
+object Anon_Focusable {
+  @scala.inline
+  def apply[K, D](
+    focusable: (js.Function1[
+      /* param0 */ atOracleOraclejetLib.ojlistviewMod.ojListViewNs.ItemContext[K, D], 
+      scala.Boolean
+    ]) | scala.Boolean = null,
+    renderer: js.Function1[
+      /* param0 */ atOracleOraclejetLib.ojlistviewMod.ojListViewNs.ItemContext[K, D], 
+      js.UndefOr[Anon_Insert]
+    ] = null,
+    selectable: (js.Function1[
+      /* param0 */ atOracleOraclejetLib.ojlistviewMod.ojListViewNs.ItemContext[K, D], 
+      scala.Boolean
+    ]) | scala.Boolean = null
+  ): Anon_Focusable[K, D] = {
+    val __obj = js.Dynamic.literal()
+    if (focusable != null) __obj.updateDynamic("focusable")(focusable.asInstanceOf[js.Any])
+    if (renderer != null) __obj.updateDynamic("renderer")(renderer)
+    if (selectable != null) __obj.updateDynamic("selectable")(selectable.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Focusable[K, D]]
+  }
+}
+

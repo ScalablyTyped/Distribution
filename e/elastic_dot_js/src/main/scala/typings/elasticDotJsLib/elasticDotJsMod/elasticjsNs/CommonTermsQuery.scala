@@ -68,3 +68,38 @@ trait CommonTermsQuery extends Query {
   def toJSON(): js.Any
 }
 
+object CommonTermsQuery {
+  @scala.inline
+  def apply(
+    _type: js.Function0[java.lang.String],
+    analyzer: js.Function1[java.lang.String, CommonTermsQuery],
+    boost: js.Function1[stdLib.Number, CommonTermsQuery],
+    cutoffFrequency: js.Function1[stdLib.Number, CommonTermsQuery],
+    disableCoord: js.Function1[java.lang.String, CommonTermsQuery],
+    field: js.Function1[java.lang.String, CommonTermsQuery],
+    highFreqOperator: js.Function1[java.lang.String, CommonTermsQuery],
+    lowFreqOperator: js.Function1[java.lang.String, CommonTermsQuery],
+    minimumShouldMatch: js.Function1[scala.Double, CommonTermsQuery],
+    minimumShouldMatchHighFreq: js.Function1[scala.Double, CommonTermsQuery],
+    minimumShouldMatchLowFreq: js.Function1[scala.Double, CommonTermsQuery],
+    query: js.Function1[java.lang.String, CommonTermsQuery],
+    toJSON: js.Function0[js.Any]
+  ): CommonTermsQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("_type")(_type)
+    __obj.updateDynamic("analyzer")(analyzer)
+    __obj.updateDynamic("boost")(boost)
+    __obj.updateDynamic("cutoffFrequency")(cutoffFrequency)
+    __obj.updateDynamic("disableCoord")(disableCoord)
+    __obj.updateDynamic("field")(field)
+    __obj.updateDynamic("highFreqOperator")(highFreqOperator)
+    __obj.updateDynamic("lowFreqOperator")(lowFreqOperator)
+    __obj.updateDynamic("minimumShouldMatch")(minimumShouldMatch)
+    __obj.updateDynamic("minimumShouldMatchHighFreq")(minimumShouldMatchHighFreq)
+    __obj.updateDynamic("minimumShouldMatchLowFreq")(minimumShouldMatchLowFreq)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("toJSON")(toJSON)
+    __obj.asInstanceOf[CommonTermsQuery]
+  }
+}
+

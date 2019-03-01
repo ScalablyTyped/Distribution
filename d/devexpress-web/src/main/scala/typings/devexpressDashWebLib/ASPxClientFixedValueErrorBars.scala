@@ -21,3 +21,22 @@ trait ASPxClientFixedValueErrorBars extends ASPxClientIndicator {
   var positiveError: scala.Double
 }
 
+object ASPxClientFixedValueErrorBars {
+  @scala.inline
+  def apply(
+    chart: ASPxClientWebChart,
+    name: java.lang.String,
+    negativeError: scala.Double,
+    positiveError: scala.Double,
+    series: ASPxClientSeries
+  ): ASPxClientFixedValueErrorBars = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("negativeError")(negativeError)
+    __obj.updateDynamic("positiveError")(positiveError)
+    __obj.updateDynamic("series")(series)
+    __obj.asInstanceOf[ASPxClientFixedValueErrorBars]
+  }
+}
+

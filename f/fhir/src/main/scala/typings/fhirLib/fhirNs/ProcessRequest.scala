@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * Request to perform some action on or in regards to an existing resource
   */
-trait ProcessRequest extends DomainResource {
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- fhirLib.fhirNs.Resource because Already inherited */ trait ProcessRequest extends DomainResource {
   /**
     * Contains extended information for property 'action'.
     */
@@ -97,5 +98,84 @@ trait ProcessRequest extends DomainResource {
     * Party which is the target of the request
     */
   var target: js.UndefOr[Reference] = js.undefined
+}
+
+object ProcessRequest {
+  @scala.inline
+  def apply(
+    _action: Element = null,
+    _created: Element = null,
+    _exclude: js.Array[Element] = null,
+    _id: Element = null,
+    _implicitRules: Element = null,
+    _include: js.Array[Element] = null,
+    _language: Element = null,
+    _nullify: Element = null,
+    _reference: Element = null,
+    _resourceType: Element = null,
+    _status: Element = null,
+    action: code = null,
+    contained: js.Array[Resource] = null,
+    created: dateTime = null,
+    exclude: js.Array[java.lang.String] = null,
+    extension: js.Array[Extension] = null,
+    id: id = null,
+    identifier: js.Array[Identifier] = null,
+    implicitRules: uri = null,
+    include: js.Array[java.lang.String] = null,
+    item: js.Array[ProcessRequestItem] = null,
+    language: code = null,
+    meta: Meta = null,
+    modifierExtension: js.Array[Extension] = null,
+    nullify: js.UndefOr[scala.Boolean] = js.undefined,
+    organization: Reference = null,
+    period: Period = null,
+    provider: Reference = null,
+    reference: java.lang.String = null,
+    request: Reference = null,
+    resourceType: code = null,
+    response: Reference = null,
+    status: code = null,
+    target: Reference = null,
+    text: Narrative = null
+  ): ProcessRequest = {
+    val __obj = js.Dynamic.literal()
+    if (_action != null) __obj.updateDynamic("_action")(_action)
+    if (_created != null) __obj.updateDynamic("_created")(_created)
+    if (_exclude != null) __obj.updateDynamic("_exclude")(_exclude)
+    if (_id != null) __obj.updateDynamic("_id")(_id)
+    if (_implicitRules != null) __obj.updateDynamic("_implicitRules")(_implicitRules)
+    if (_include != null) __obj.updateDynamic("_include")(_include)
+    if (_language != null) __obj.updateDynamic("_language")(_language)
+    if (_nullify != null) __obj.updateDynamic("_nullify")(_nullify)
+    if (_reference != null) __obj.updateDynamic("_reference")(_reference)
+    if (_resourceType != null) __obj.updateDynamic("_resourceType")(_resourceType)
+    if (_status != null) __obj.updateDynamic("_status")(_status)
+    if (action != null) __obj.updateDynamic("action")(action)
+    if (contained != null) __obj.updateDynamic("contained")(contained)
+    if (created != null) __obj.updateDynamic("created")(created)
+    if (exclude != null) __obj.updateDynamic("exclude")(exclude)
+    if (extension != null) __obj.updateDynamic("extension")(extension)
+    if (id != null) __obj.updateDynamic("id")(id)
+    if (identifier != null) __obj.updateDynamic("identifier")(identifier)
+    if (implicitRules != null) __obj.updateDynamic("implicitRules")(implicitRules)
+    if (include != null) __obj.updateDynamic("include")(include)
+    if (item != null) __obj.updateDynamic("item")(item)
+    if (language != null) __obj.updateDynamic("language")(language)
+    if (meta != null) __obj.updateDynamic("meta")(meta)
+    if (modifierExtension != null) __obj.updateDynamic("modifierExtension")(modifierExtension)
+    if (!js.isUndefined(nullify)) __obj.updateDynamic("nullify")(nullify)
+    if (organization != null) __obj.updateDynamic("organization")(organization)
+    if (period != null) __obj.updateDynamic("period")(period)
+    if (provider != null) __obj.updateDynamic("provider")(provider)
+    if (reference != null) __obj.updateDynamic("reference")(reference)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (resourceType != null) __obj.updateDynamic("resourceType")(resourceType)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (status != null) __obj.updateDynamic("status")(status)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (text != null) __obj.updateDynamic("text")(text)
+    __obj.asInstanceOf[ProcessRequest]
+  }
 }
 

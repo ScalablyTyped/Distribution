@@ -49,3 +49,28 @@ trait ASPxClientLayoutItem extends js.Object {
   def SetVisible(value: scala.Boolean): scala.Unit
 }
 
+object ASPxClientLayoutItem {
+  @scala.inline
+  def apply(
+    GetCaption: js.Function0[java.lang.String],
+    GetItemByName: js.Function1[java.lang.String, ASPxClientLayoutItem],
+    GetVisible: js.Function0[scala.Boolean],
+    SetCaption: js.Function1[java.lang.String, scala.Unit],
+    SetVisible: js.Function1[scala.Boolean, scala.Unit],
+    formLayout: ASPxClientFormLayout,
+    name: java.lang.String,
+    parent: ASPxClientLayoutItem
+  ): ASPxClientLayoutItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("GetCaption")(GetCaption)
+    __obj.updateDynamic("GetItemByName")(GetItemByName)
+    __obj.updateDynamic("GetVisible")(GetVisible)
+    __obj.updateDynamic("SetCaption")(SetCaption)
+    __obj.updateDynamic("SetVisible")(SetVisible)
+    __obj.updateDynamic("formLayout")(formLayout)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("parent")(parent)
+    __obj.asInstanceOf[ASPxClientLayoutItem]
+  }
+}
+

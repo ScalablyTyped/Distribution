@@ -18,3 +18,31 @@ trait Codec extends js.Object {
   var weirdFrameTruncation: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object Codec {
+  @scala.inline
+  def apply(
+    canDecode: scala.Boolean,
+    canEncode: scala.Boolean,
+    description: java.lang.String,
+    `type`: java.lang.String,
+    directRendering: js.UndefOr[scala.Boolean] = js.undefined,
+    drawHorizBand: js.UndefOr[scala.Boolean] = js.undefined,
+    intraFrameOnly: js.UndefOr[scala.Boolean] = js.undefined,
+    isLossless: js.UndefOr[scala.Boolean] = js.undefined,
+    isLossy: js.UndefOr[scala.Boolean] = js.undefined,
+    weirdFrameTruncation: js.UndefOr[scala.Boolean] = js.undefined
+  ): Codec = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("canDecode")(canDecode)
+    __obj.updateDynamic("canEncode")(canEncode)
+    __obj.updateDynamic("description")(description)
+    if (!js.isUndefined(directRendering)) __obj.updateDynamic("directRendering")(directRendering)
+    if (!js.isUndefined(drawHorizBand)) __obj.updateDynamic("drawHorizBand")(drawHorizBand)
+    if (!js.isUndefined(intraFrameOnly)) __obj.updateDynamic("intraFrameOnly")(intraFrameOnly)
+    if (!js.isUndefined(isLossless)) __obj.updateDynamic("isLossless")(isLossless)
+    if (!js.isUndefined(isLossy)) __obj.updateDynamic("isLossy")(isLossy)
+    if (!js.isUndefined(weirdFrameTruncation)) __obj.updateDynamic("weirdFrameTruncation")(weirdFrameTruncation)
+    __obj.asInstanceOf[Codec]
+  }
+}
+

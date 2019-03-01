@@ -13,3 +13,22 @@ trait IFolderContentItem extends js.Object {
   val View: IView
 }
 
+object IFolderContentItem {
+  @scala.inline
+  def apply(
+    FolderContentItemType: mfilesLib.MFilesNs.MFFolderContentItemType,
+    ObjectVersion: IObjectVersion,
+    PropertyFolder: ITypedValue,
+    TraditionalFolder: ILookup,
+    View: IView
+  ): IFolderContentItem = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("FolderContentItemType")(FolderContentItemType)
+    __obj.updateDynamic("ObjectVersion")(ObjectVersion)
+    __obj.updateDynamic("PropertyFolder")(PropertyFolder)
+    __obj.updateDynamic("TraditionalFolder")(TraditionalFolder)
+    __obj.updateDynamic("View")(View)
+    __obj.asInstanceOf[IFolderContentItem]
+  }
+}
+

@@ -11,3 +11,14 @@ trait Anon_Condition extends js.Object {
   var timeoutMS: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Condition {
+  @scala.inline
+  def apply(condition: js.Function, exec: js.Function = null, timeoutMS: scala.Int | scala.Double = null): Anon_Condition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("condition")(condition)
+    if (exec != null) __obj.updateDynamic("exec")(exec)
+    if (timeoutMS != null) __obj.updateDynamic("timeoutMS")(timeoutMS.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Condition]
+  }
+}
+

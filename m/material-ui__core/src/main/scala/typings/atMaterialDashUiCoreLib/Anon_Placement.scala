@@ -10,3 +10,16 @@ trait Anon_Placement extends js.Object {
   var placement: atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType
 }
 
+object Anon_Placement {
+  @scala.inline
+  def apply(
+    placement: atMaterialDashUiCoreLib.popperPopperMod.PopperPlacementType,
+    TransitionProps: atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps = null
+  ): Anon_Placement = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("placement")(placement)
+    if (TransitionProps != null) __obj.updateDynamic("TransitionProps")(TransitionProps)
+    __obj.asInstanceOf[Anon_Placement]
+  }
+}
+

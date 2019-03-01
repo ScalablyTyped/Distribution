@@ -12,3 +12,20 @@ trait Anon_Anchor extends js.Object {
   var y: js.UndefOr[scala.Double] = js.undefined
 }
 
+object Anon_Anchor {
+  @scala.inline
+  def apply(
+    anchor: java.lang.String = null,
+    step: scala.Int | scala.Double = null,
+    x: scala.Int | scala.Double = null,
+    y: scala.Int | scala.Double = null
+  ): Anon_Anchor = {
+    val __obj = js.Dynamic.literal()
+    if (anchor != null) __obj.updateDynamic("anchor")(anchor)
+    if (step != null) __obj.updateDynamic("step")(step.asInstanceOf[js.Any])
+    if (x != null) __obj.updateDynamic("x")(x.asInstanceOf[js.Any])
+    if (y != null) __obj.updateDynamic("y")(y.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Anon_Anchor]
+  }
+}
+

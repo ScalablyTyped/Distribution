@@ -56,7 +56,7 @@ trait IMenuItemProps
     * @default "a"
     */
   var tagName: js.UndefOr[
-    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ java.lang.String
+    /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any
   ] = js.undefined
   /**
     * A space-delimited list of class names to pass along to the text wrapper element.
@@ -65,5 +65,53 @@ trait IMenuItemProps
   /** Item text, required for usability. */
   @JSName("text")
   var text_IMenuItemProps: reactLib.reactMod.ReactNs.ReactNode
+}
+
+object IMenuItemProps {
+  @scala.inline
+  def apply(
+    text: reactLib.reactMod.ReactNs.ReactNode,
+    active: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
+    className: java.lang.String = null,
+    disabled: js.UndefOr[scala.Boolean] = js.undefined,
+    href: java.lang.String = null,
+    icon: atBlueprintjsIconsLib.libEsmIconNameMod.IconName | atBlueprintjsCoreLib.libEsmCommonPropsMod.MaybeElement = null,
+    intent: atBlueprintjsCoreLib.libEsmCommonIntentMod.Intent = null,
+    label: java.lang.String = null,
+    labelClassName: java.lang.String = null,
+    labelElement: reactLib.reactMod.ReactNs.ReactNode = null,
+    multiline: js.UndefOr[scala.Boolean] = js.undefined,
+    onClick: js.Function1[
+      /* event */ reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent], 
+      scala.Unit
+    ] = null,
+    popoverProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.IPopoverProps] = null,
+    shouldDismissPopover: js.UndefOr[scala.Boolean] = js.undefined,
+    tagName: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 172 */ js.Any = null,
+    target: java.lang.String = null,
+    textClassName: java.lang.String = null
+  ): IMenuItemProps = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("text")(text.asInstanceOf[js.Any])
+    if (!js.isUndefined(active)) __obj.updateDynamic("active")(active)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
+    if (className != null) __obj.updateDynamic("className")(className)
+    if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
+    if (href != null) __obj.updateDynamic("href")(href)
+    if (icon != null) __obj.updateDynamic("icon")(icon.asInstanceOf[js.Any])
+    if (intent != null) __obj.updateDynamic("intent")(intent)
+    if (label != null) __obj.updateDynamic("label")(label)
+    if (labelClassName != null) __obj.updateDynamic("labelClassName")(labelClassName)
+    if (labelElement != null) __obj.updateDynamic("labelElement")(labelElement.asInstanceOf[js.Any])
+    if (!js.isUndefined(multiline)) __obj.updateDynamic("multiline")(multiline)
+    if (onClick != null) __obj.updateDynamic("onClick")(onClick)
+    if (popoverProps != null) __obj.updateDynamic("popoverProps")(popoverProps)
+    if (!js.isUndefined(shouldDismissPopover)) __obj.updateDynamic("shouldDismissPopover")(shouldDismissPopover)
+    if (tagName != null) __obj.updateDynamic("tagName")(tagName)
+    if (target != null) __obj.updateDynamic("target")(target)
+    if (textClassName != null) __obj.updateDynamic("textClassName")(textClassName)
+    __obj.asInstanceOf[IMenuItemProps]
+  }
 }
 

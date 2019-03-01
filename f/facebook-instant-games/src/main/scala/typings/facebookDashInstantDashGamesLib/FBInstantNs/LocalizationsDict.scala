@@ -12,3 +12,12 @@ import scala.scalajs.js.annotation._
 trait LocalizationsDict
   extends /* x */ org.scalablytyped.runtime.StringDictionary[java.lang.String]
 
+object LocalizationsDict {
+  @scala.inline
+  def apply(StringDictionary: /* x */ org.scalablytyped.runtime.StringDictionary[java.lang.String] = null): LocalizationsDict = {
+    val __obj = js.Dynamic.literal()
+    js.Dynamic.global.Object.assign(__obj, StringDictionary)
+    __obj.asInstanceOf[LocalizationsDict]
+  }
+}
+

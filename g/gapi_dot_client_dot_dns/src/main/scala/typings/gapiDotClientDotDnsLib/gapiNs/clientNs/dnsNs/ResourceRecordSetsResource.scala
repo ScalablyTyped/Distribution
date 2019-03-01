@@ -10,3 +10,17 @@ trait ResourceRecordSetsResource extends js.Object {
   def list(request: gapiDotClientDotDnsLib.Anon_AltFieldsKeyManagedZone): gapiDotClientLib.gapiNs.clientNs.Request[ResourceRecordSetsListResponse]
 }
 
+object ResourceRecordSetsResource {
+  @scala.inline
+  def apply(
+    list: js.Function1[
+      gapiDotClientDotDnsLib.Anon_AltFieldsKeyManagedZone, 
+      gapiDotClientLib.gapiNs.clientNs.Request[ResourceRecordSetsListResponse]
+    ]
+  ): ResourceRecordSetsResource = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("list")(list)
+    __obj.asInstanceOf[ResourceRecordSetsResource]
+  }
+}
+

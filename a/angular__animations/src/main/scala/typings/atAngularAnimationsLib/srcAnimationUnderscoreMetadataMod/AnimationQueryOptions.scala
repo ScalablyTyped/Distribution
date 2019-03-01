@@ -21,3 +21,20 @@ trait AnimationQueryOptions extends AnimationOptions {
   var optional: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object AnimationQueryOptions {
+  @scala.inline
+  def apply(
+    delay: scala.Double | java.lang.String = null,
+    limit: scala.Int | scala.Double = null,
+    optional: js.UndefOr[scala.Boolean] = js.undefined,
+    params: org.scalablytyped.runtime.StringDictionary[js.Any] = null
+  ): AnimationQueryOptions = {
+    val __obj = js.Dynamic.literal()
+    if (delay != null) __obj.updateDynamic("delay")(delay.asInstanceOf[js.Any])
+    if (limit != null) __obj.updateDynamic("limit")(limit.asInstanceOf[js.Any])
+    if (!js.isUndefined(optional)) __obj.updateDynamic("optional")(optional)
+    if (params != null) __obj.updateDynamic("params")(params)
+    __obj.asInstanceOf[AnimationQueryOptions]
+  }
+}
+

@@ -32,3 +32,24 @@ trait ASPxClientGridExportFormatStatic extends js.Object {
   var Xlsx: java.lang.String
 }
 
+object ASPxClientGridExportFormatStatic {
+  @scala.inline
+  def apply(
+    Csv: java.lang.String,
+    Docx: java.lang.String,
+    Pdf: java.lang.String,
+    Rtf: java.lang.String,
+    Xls: java.lang.String,
+    Xlsx: java.lang.String
+  ): ASPxClientGridExportFormatStatic = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Csv")(Csv)
+    __obj.updateDynamic("Docx")(Docx)
+    __obj.updateDynamic("Pdf")(Pdf)
+    __obj.updateDynamic("Rtf")(Rtf)
+    __obj.updateDynamic("Xls")(Xls)
+    __obj.updateDynamic("Xlsx")(Xlsx)
+    __obj.asInstanceOf[ASPxClientGridExportFormatStatic]
+  }
+}
+

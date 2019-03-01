@@ -25,3 +25,20 @@ trait PageTiming extends js.Object {
   var onLoad: js.UndefOr[scala.Double] = js.undefined
 }
 
+object PageTiming {
+  @scala.inline
+  def apply(
+    _startRender: scala.Int | scala.Double = null,
+    comment: java.lang.String = null,
+    onContentLoad: scala.Int | scala.Double = null,
+    onLoad: scala.Int | scala.Double = null
+  ): PageTiming = {
+    val __obj = js.Dynamic.literal()
+    if (_startRender != null) __obj.updateDynamic("_startRender")(_startRender.asInstanceOf[js.Any])
+    if (comment != null) __obj.updateDynamic("comment")(comment)
+    if (onContentLoad != null) __obj.updateDynamic("onContentLoad")(onContentLoad.asInstanceOf[js.Any])
+    if (onLoad != null) __obj.updateDynamic("onLoad")(onLoad.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PageTiming]
+  }
+}
+

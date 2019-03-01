@@ -10,3 +10,13 @@ trait ScrollPosition extends js.Object {
   var scrollTop: scala.Double
 }
 
+object ScrollPosition {
+  @scala.inline
+  def apply(scrollLeft: scala.Double, scrollTop: scala.Double): ScrollPosition = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("scrollLeft")(scrollLeft)
+    __obj.updateDynamic("scrollTop")(scrollTop)
+    __obj.asInstanceOf[ScrollPosition]
+  }
+}
+

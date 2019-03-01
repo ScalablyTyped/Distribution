@@ -16,3 +16,20 @@ trait ASPxClientFileManagerItemRenamedEventArgs extends ASPxClientFileManagerAct
   var oldName: java.lang.String
 }
 
+object ASPxClientFileManagerItemRenamedEventArgs {
+  @scala.inline
+  def apply(
+    fullName: java.lang.String,
+    isFolder: scala.Boolean,
+    name: java.lang.String,
+    oldName: java.lang.String
+  ): ASPxClientFileManagerItemRenamedEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("fullName")(fullName)
+    __obj.updateDynamic("isFolder")(isFolder)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("oldName")(oldName)
+    __obj.asInstanceOf[ASPxClientFileManagerItemRenamedEventArgs]
+  }
+}
+

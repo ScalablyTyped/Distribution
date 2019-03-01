@@ -13,3 +13,22 @@ trait AxiosError
   var response: js.UndefOr[AxiosResponse[_]] = js.undefined
 }
 
+object AxiosError {
+  @scala.inline
+  def apply(
+    config: AxiosRequestConfig,
+    code: java.lang.String = null,
+    request: js.Any = null,
+    response: AxiosResponse[_] = null,
+    stack: java.lang.String = null
+  ): AxiosError = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("config")(config)
+    if (code != null) __obj.updateDynamic("code")(code)
+    if (request != null) __obj.updateDynamic("request")(request)
+    if (response != null) __obj.updateDynamic("response")(response)
+    if (stack != null) __obj.updateDynamic("stack")(stack)
+    __obj.asInstanceOf[AxiosError]
+  }
+}
+

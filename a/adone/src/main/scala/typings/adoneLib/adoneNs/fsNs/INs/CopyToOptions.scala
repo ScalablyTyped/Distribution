@@ -16,3 +16,13 @@ trait CopyToOptions extends js.Object {
   var ignoreExisting: js.UndefOr[scala.Boolean] = js.undefined
 }
 
+object CopyToOptions {
+  @scala.inline
+  def apply(cwd: java.lang.String = null, ignoreExisting: js.UndefOr[scala.Boolean] = js.undefined): CopyToOptions = {
+    val __obj = js.Dynamic.literal()
+    if (cwd != null) __obj.updateDynamic("cwd")(cwd)
+    if (!js.isUndefined(ignoreExisting)) __obj.updateDynamic("ignoreExisting")(ignoreExisting)
+    __obj.asInstanceOf[CopyToOptions]
+  }
+}
+

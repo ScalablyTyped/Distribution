@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait GithubOptions extends PublishConfiguration {
+trait GithubOptions
+  extends PublishConfiguration
+     with _AllPublishOptions {
   /**
     * The host (including the port if need).
     * @default github.com
@@ -53,5 +55,38 @@ trait GithubOptions extends PublishConfiguration {
     * @default true
     */
   val vPrefixedTagName: js.UndefOr[scala.Boolean] = js.undefined
+}
+
+object GithubOptions {
+  @scala.inline
+  def apply(
+    provider: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.github,
+    host: java.lang.String = null,
+    owner: java.lang.String = null,
+    `private`: js.UndefOr[scala.Boolean] = js.undefined,
+    protocol: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.https | builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.http = null,
+    publishAutoUpdate: js.UndefOr[scala.Boolean] = js.undefined,
+    publisherName: js.Array[java.lang.String] = null,
+    releaseType: builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.draft | builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.prerelease | builderDashUtilDashRuntimeLib.builderDashUtilDashRuntimeLibStrings.release = null,
+    repo: java.lang.String = null,
+    token: java.lang.String = null,
+    updaterCacheDirName: java.lang.String = null,
+    vPrefixedTagName: js.UndefOr[scala.Boolean] = js.undefined
+  ): GithubOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("provider")(provider)
+    if (host != null) __obj.updateDynamic("host")(host)
+    if (owner != null) __obj.updateDynamic("owner")(owner)
+    if (!js.isUndefined(`private`)) __obj.updateDynamic("private")(`private`)
+    if (protocol != null) __obj.updateDynamic("protocol")(protocol.asInstanceOf[js.Any])
+    if (!js.isUndefined(publishAutoUpdate)) __obj.updateDynamic("publishAutoUpdate")(publishAutoUpdate)
+    if (publisherName != null) __obj.updateDynamic("publisherName")(publisherName)
+    if (releaseType != null) __obj.updateDynamic("releaseType")(releaseType.asInstanceOf[js.Any])
+    if (repo != null) __obj.updateDynamic("repo")(repo)
+    if (token != null) __obj.updateDynamic("token")(token)
+    if (updaterCacheDirName != null) __obj.updateDynamic("updaterCacheDirName")(updaterCacheDirName)
+    if (!js.isUndefined(vPrefixedTagName)) __obj.updateDynamic("vPrefixedTagName")(vPrefixedTagName)
+    __obj.asInstanceOf[GithubOptions]
+  }
 }
 

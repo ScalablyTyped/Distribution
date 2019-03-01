@@ -22,3 +22,20 @@ trait IGeoDataPrimitive extends js.Object {
   var SourceID: java.lang.String
 }
 
+object IGeoDataPrimitive {
+  @scala.inline
+  def apply(
+    NumPoints: java.lang.String,
+    PrimitiveID: java.lang.String,
+    Shape: java.lang.String,
+    SourceID: java.lang.String
+  ): IGeoDataPrimitive = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("NumPoints")(NumPoints)
+    __obj.updateDynamic("PrimitiveID")(PrimitiveID)
+    __obj.updateDynamic("Shape")(Shape)
+    __obj.updateDynamic("SourceID")(SourceID)
+    __obj.asInstanceOf[IGeoDataPrimitive]
+  }
+}
+

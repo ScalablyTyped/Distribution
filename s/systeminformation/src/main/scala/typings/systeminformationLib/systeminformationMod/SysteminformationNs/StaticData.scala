@@ -17,3 +17,30 @@ trait StaticData extends js.Object {
   var versions: VersionData
 }
 
+object StaticData {
+  @scala.inline
+  def apply(
+    cpu: CpuData,
+    diskLayout: js.Array[DiskLayoutData],
+    graphics: GraphicsData,
+    memLayout: js.Array[MemLayoutData],
+    net: js.Array[NetInterfacesData],
+    os: OsData,
+    system: SystemData,
+    version: java.lang.String,
+    versions: VersionData
+  ): StaticData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("cpu")(cpu)
+    __obj.updateDynamic("diskLayout")(diskLayout)
+    __obj.updateDynamic("graphics")(graphics)
+    __obj.updateDynamic("memLayout")(memLayout)
+    __obj.updateDynamic("net")(net)
+    __obj.updateDynamic("os")(os)
+    __obj.updateDynamic("system")(system)
+    __obj.updateDynamic("version")(version)
+    __obj.updateDynamic("versions")(versions)
+    __obj.asInstanceOf[StaticData]
+  }
+}
+

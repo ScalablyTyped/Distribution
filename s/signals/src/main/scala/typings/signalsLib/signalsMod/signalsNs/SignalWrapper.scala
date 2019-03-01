@@ -9,3 +9,12 @@ trait SignalWrapper[T] extends js.Object {
   var Signal: Signal[T]
 }
 
+object SignalWrapper {
+  @scala.inline
+  def apply[T](Signal: Signal[T]): SignalWrapper[T] = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Signal")(Signal)
+    __obj.asInstanceOf[SignalWrapper[T]]
+  }
+}
+

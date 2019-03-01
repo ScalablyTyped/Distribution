@@ -16,3 +16,12 @@ trait ASPxClientDashboardEndUpdateEventArgs extends ASPxClientEventArgs {
   var DashboardId: java.lang.String
 }
 
+object ASPxClientDashboardEndUpdateEventArgs {
+  @scala.inline
+  def apply(DashboardId: java.lang.String): ASPxClientDashboardEndUpdateEventArgs = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("DashboardId")(DashboardId)
+    __obj.asInstanceOf[ASPxClientDashboardEndUpdateEventArgs]
+  }
+}
+

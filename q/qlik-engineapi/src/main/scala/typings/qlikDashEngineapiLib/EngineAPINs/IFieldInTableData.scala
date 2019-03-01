@@ -82,3 +82,46 @@ trait IFieldInTableData extends js.Object {
   var qnTotalDistinctValues: scala.Double
 }
 
+object IFieldInTableData {
+  @scala.inline
+  def apply(
+    qComment: java.lang.String,
+    qDerivedFields: IDerivedFieldsInTableData,
+    qHasDuplicates: scala.Boolean,
+    qHasNull: scala.Boolean,
+    qHasWild: scala.Boolean,
+    qInformationDensity: scala.Double,
+    qIsSynthetic: scala.Boolean,
+    qKeyType: TableRecordKeyType,
+    qName: java.lang.String,
+    qOriginalFields: js.Array[java.lang.String],
+    qPresent: scala.Boolean,
+    qSubsetRatio: scala.Double,
+    qTags: js.Array[java.lang.String],
+    qnNonNulls: scala.Double,
+    qnPresentDistinctValues: scala.Double,
+    qnRows: scala.Double,
+    qnTotalDistinctValues: scala.Double
+  ): IFieldInTableData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("qComment")(qComment)
+    __obj.updateDynamic("qDerivedFields")(qDerivedFields)
+    __obj.updateDynamic("qHasDuplicates")(qHasDuplicates)
+    __obj.updateDynamic("qHasNull")(qHasNull)
+    __obj.updateDynamic("qHasWild")(qHasWild)
+    __obj.updateDynamic("qInformationDensity")(qInformationDensity)
+    __obj.updateDynamic("qIsSynthetic")(qIsSynthetic)
+    __obj.updateDynamic("qKeyType")(qKeyType)
+    __obj.updateDynamic("qName")(qName)
+    __obj.updateDynamic("qOriginalFields")(qOriginalFields)
+    __obj.updateDynamic("qPresent")(qPresent)
+    __obj.updateDynamic("qSubsetRatio")(qSubsetRatio)
+    __obj.updateDynamic("qTags")(qTags)
+    __obj.updateDynamic("qnNonNulls")(qnNonNulls)
+    __obj.updateDynamic("qnPresentDistinctValues")(qnPresentDistinctValues)
+    __obj.updateDynamic("qnRows")(qnRows)
+    __obj.updateDynamic("qnTotalDistinctValues")(qnTotalDistinctValues)
+    __obj.asInstanceOf[IFieldInTableData]
+  }
+}
+

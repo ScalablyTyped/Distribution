@@ -31,3 +31,31 @@ trait XControllerBorder
   def removeBorderResizeListener(xListener: XBorderResizeListener): scala.Unit
 }
 
+object XControllerBorder {
+  @scala.inline
+  def apply(
+    Border: BorderWidths,
+    acquire: js.Function0[scala.Unit],
+    addBorderResizeListener: js.Function1[XBorderResizeListener, scala.Unit],
+    getBorder: js.Function0[BorderWidths],
+    queryBorderedArea: js.Function1[
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle, 
+      activexDashLibreofficeLib.comNs.sunNs.starNs.awtNs.Rectangle
+    ],
+    queryInterface: js.Function1[activexDashLibreofficeLib.`type`, js.Any],
+    release: js.Function0[scala.Unit],
+    removeBorderResizeListener: js.Function1[XBorderResizeListener, scala.Unit]
+  ): XControllerBorder = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("Border")(Border)
+    __obj.updateDynamic("acquire")(acquire)
+    __obj.updateDynamic("addBorderResizeListener")(addBorderResizeListener)
+    __obj.updateDynamic("getBorder")(getBorder)
+    __obj.updateDynamic("queryBorderedArea")(queryBorderedArea)
+    __obj.updateDynamic("queryInterface")(queryInterface)
+    __obj.updateDynamic("release")(release)
+    __obj.updateDynamic("removeBorderResizeListener")(removeBorderResizeListener)
+    __obj.asInstanceOf[XControllerBorder]
+  }
+}
+

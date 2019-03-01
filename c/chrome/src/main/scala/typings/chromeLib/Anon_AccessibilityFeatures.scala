@@ -478,3 +478,132 @@ trait Anon_AccessibilityFeatures extends js.Object {
   val windowsNs: Anon_CallbackCreateCreateData
 }
 
+object Anon_AccessibilityFeatures {
+  @scala.inline
+  def apply(
+    accessibilityFeaturesNs: Anon_AnimationPolicy,
+    alarmsNs: Anon_Alarm,
+    bookmarksNs: Anon_Bookmark,
+    browserActionNs: Anon_CallbackDetails,
+    browserNs: Anon_Callback,
+    browsingDataNs: Anon_CallbackDataToRemove,
+    castNs: Anon_AddReceiverActionListener,
+    commandsNs: Anon_CallbackCommands,
+    contentSettingsNs: Anon_AutomaticDownloads,
+    contextMenusNs: Anon_ACTIONMENUTOPLEVELLIMIT,
+    cookiesNs: Anon_CallbackCookie,
+    declarativeContentNs: Anon_OnPageChanged,
+    declarativeWebRequestNs: Anon_OnRequest,
+    desktopCaptureNs: Anon_CallbackCancelChooseDesktopMedia,
+    devtoolsNs: Anon_InspectedWindow,
+    documentScanNs: Anon_CallbackOptions,
+    downloadsNs: Anon_AcceptDanger,
+    enterpriseNs: Anon_DeviceAttributes,
+    eventsNs: js.Any,
+    extensionNs: Anon_CallbackData,
+    fileBrowserHandlerNs: Anon_CallbackOnExecute,
+    fileSystemProviderNs: Anon_CallbackFileSystem,
+    fontSettingsNs: Anon_CallbackClearDefaultFixedFontSize,
+    gcmNs: Anon_CallbackMAXMESSAGESIZE,
+    historyNs: Anon_AddUrl,
+    i18nNs: Anon_CallbackDetectLanguage,
+    identityNs: Anon_Accounts,
+    idleNs: Anon_CallbackDetectionIntervalInSeconds,
+    inputNs: Anon_Ime,
+    managementNs: Anon_CallbackCreateAppShortcut,
+    networkingNs: Anon_Config,
+    notificationsNs: Anon_CallbackClear,
+    omniboxNs: Anon_OnDeleteSuggestion,
+    pageActionNs: Anon_CallbackDetailsGetPopup,
+    pageCaptureNs: Anon_CallbackDetailsMhtmlData,
+    permissionsNs: Anon_CallbackContains,
+    platformKeysNs: Anon_CallbackCertificateDetails,
+    powerNs: Anon_Level,
+    printerProviderNs: Anon_OnGetCapabilityRequested,
+    privacyNs: Anon_Network,
+    proxyNs: Anon_OnProxyError,
+    runtimeNs: Anon_Application,
+    scriptBadgeNs: Anon_CallbackDetailsGetAttention,
+    sessionsNs: Anon_CallbackDevices,
+    socketNs: Anon_Accept,
+    storageNs: Anon_Local,
+    systemNs: Anon_Cpu,
+    tabCaptureNs: Anon_CallbackCapture,
+    tabsNs: Anon_1,
+    topSitesNs: Anon_CallbackDataGet,
+    ttsEngineNs: Anon_OnPause,
+    ttsNs: Anon_CallbackGetVoices,
+    typesNs: js.Any,
+    underscoreDebuggerNs: Anon_Attach,
+    vpnProviderNs: Anon_CallbackCreateConfig,
+    wallpaperNs: Anon_CallbackDetailsSetWallpaper,
+    webNavigationNs: Anon_CallbackDetailsGetAllFrames,
+    webRequestNs: Anon_CallbackHandlerBehaviorChanged,
+    webstoreNs: Anon_Error,
+    windowsNs: Anon_CallbackCreateCreateData
+  ): Anon_AccessibilityFeatures = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("accessibilityFeaturesNs")(accessibilityFeaturesNs)
+    __obj.updateDynamic("alarmsNs")(alarmsNs)
+    __obj.updateDynamic("bookmarksNs")(bookmarksNs)
+    __obj.updateDynamic("browserActionNs")(browserActionNs)
+    __obj.updateDynamic("browserNs")(browserNs)
+    __obj.updateDynamic("browsingDataNs")(browsingDataNs)
+    __obj.updateDynamic("castNs")(castNs)
+    __obj.updateDynamic("commandsNs")(commandsNs)
+    __obj.updateDynamic("contentSettingsNs")(contentSettingsNs)
+    __obj.updateDynamic("contextMenusNs")(contextMenusNs)
+    __obj.updateDynamic("cookiesNs")(cookiesNs)
+    __obj.updateDynamic("declarativeContentNs")(declarativeContentNs)
+    __obj.updateDynamic("declarativeWebRequestNs")(declarativeWebRequestNs)
+    __obj.updateDynamic("desktopCaptureNs")(desktopCaptureNs)
+    __obj.updateDynamic("devtoolsNs")(devtoolsNs)
+    __obj.updateDynamic("documentScanNs")(documentScanNs)
+    __obj.updateDynamic("downloadsNs")(downloadsNs)
+    __obj.updateDynamic("enterpriseNs")(enterpriseNs)
+    __obj.updateDynamic("eventsNs")(eventsNs)
+    __obj.updateDynamic("extensionNs")(extensionNs)
+    __obj.updateDynamic("fileBrowserHandlerNs")(fileBrowserHandlerNs)
+    __obj.updateDynamic("fileSystemProviderNs")(fileSystemProviderNs)
+    __obj.updateDynamic("fontSettingsNs")(fontSettingsNs)
+    __obj.updateDynamic("gcmNs")(gcmNs)
+    __obj.updateDynamic("historyNs")(historyNs)
+    __obj.updateDynamic("i18nNs")(i18nNs)
+    __obj.updateDynamic("identityNs")(identityNs)
+    __obj.updateDynamic("idleNs")(idleNs)
+    __obj.updateDynamic("inputNs")(inputNs)
+    __obj.updateDynamic("managementNs")(managementNs)
+    __obj.updateDynamic("networkingNs")(networkingNs)
+    __obj.updateDynamic("notificationsNs")(notificationsNs)
+    __obj.updateDynamic("omniboxNs")(omniboxNs)
+    __obj.updateDynamic("pageActionNs")(pageActionNs)
+    __obj.updateDynamic("pageCaptureNs")(pageCaptureNs)
+    __obj.updateDynamic("permissionsNs")(permissionsNs)
+    __obj.updateDynamic("platformKeysNs")(platformKeysNs)
+    __obj.updateDynamic("powerNs")(powerNs)
+    __obj.updateDynamic("printerProviderNs")(printerProviderNs)
+    __obj.updateDynamic("privacyNs")(privacyNs)
+    __obj.updateDynamic("proxyNs")(proxyNs)
+    __obj.updateDynamic("runtimeNs")(runtimeNs)
+    __obj.updateDynamic("scriptBadgeNs")(scriptBadgeNs)
+    __obj.updateDynamic("sessionsNs")(sessionsNs)
+    __obj.updateDynamic("socketNs")(socketNs)
+    __obj.updateDynamic("storageNs")(storageNs)
+    __obj.updateDynamic("systemNs")(systemNs)
+    __obj.updateDynamic("tabCaptureNs")(tabCaptureNs)
+    __obj.updateDynamic("tabsNs")(tabsNs)
+    __obj.updateDynamic("topSitesNs")(topSitesNs)
+    __obj.updateDynamic("ttsEngineNs")(ttsEngineNs)
+    __obj.updateDynamic("ttsNs")(ttsNs)
+    __obj.updateDynamic("typesNs")(typesNs)
+    __obj.updateDynamic("underscoreDebuggerNs")(underscoreDebuggerNs)
+    __obj.updateDynamic("vpnProviderNs")(vpnProviderNs)
+    __obj.updateDynamic("wallpaperNs")(wallpaperNs)
+    __obj.updateDynamic("webNavigationNs")(webNavigationNs)
+    __obj.updateDynamic("webRequestNs")(webRequestNs)
+    __obj.updateDynamic("webstoreNs")(webstoreNs)
+    __obj.updateDynamic("windowsNs")(windowsNs)
+    __obj.asInstanceOf[Anon_AccessibilityFeatures]
+  }
+}
+

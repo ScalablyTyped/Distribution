@@ -16,3 +16,12 @@ trait Phrase extends js.Object {
   var sequence: js.Array[_]
 }
 
+object Phrase {
+  @scala.inline
+  def apply(sequence: js.Array[_]): Phrase = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("sequence")(sequence)
+    __obj.asInstanceOf[Phrase]
+  }
+}
+

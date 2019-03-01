@@ -28,3 +28,22 @@ trait SwimlaneSettings extends js.Object {
   var unassignedGroup: js.UndefOr[SwimlaneSettingsUnassignedGroup] = js.undefined
 }
 
+object SwimlaneSettings {
+  @scala.inline
+  def apply(
+    allowDragAndDrop: js.UndefOr[scala.Boolean] = js.undefined,
+    headers: js.Array[SwimlaneSettingsHeader] = null,
+    showCount: js.UndefOr[scala.Boolean] = js.undefined,
+    showEmptySwimlane: js.UndefOr[scala.Boolean] = js.undefined,
+    unassignedGroup: SwimlaneSettingsUnassignedGroup = null
+  ): SwimlaneSettings = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(allowDragAndDrop)) __obj.updateDynamic("allowDragAndDrop")(allowDragAndDrop)
+    if (headers != null) __obj.updateDynamic("headers")(headers)
+    if (!js.isUndefined(showCount)) __obj.updateDynamic("showCount")(showCount)
+    if (!js.isUndefined(showEmptySwimlane)) __obj.updateDynamic("showEmptySwimlane")(showEmptySwimlane)
+    if (unassignedGroup != null) __obj.updateDynamic("unassignedGroup")(unassignedGroup)
+    __obj.asInstanceOf[SwimlaneSettings]
+  }
+}
+

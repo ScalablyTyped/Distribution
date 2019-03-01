@@ -32,3 +32,20 @@ trait JsonNode extends js.Object {
   var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 
+object JsonNode {
+  @scala.inline
+  def apply(
+    parent: JsonContainer = null,
+    raws: NodeRaws = null,
+    source: NodeSource = null,
+    `type`: java.lang.String = null
+  ): JsonNode = {
+    val __obj = js.Dynamic.literal()
+    if (parent != null) __obj.updateDynamic("parent")(parent)
+    if (raws != null) __obj.updateDynamic("raws")(raws)
+    if (source != null) __obj.updateDynamic("source")(source)
+    if (`type` != null) __obj.updateDynamic("type")(`type`)
+    __obj.asInstanceOf[JsonNode]
+  }
+}
+

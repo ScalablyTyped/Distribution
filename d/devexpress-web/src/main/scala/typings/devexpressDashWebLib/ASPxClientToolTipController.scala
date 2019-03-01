@@ -31,3 +31,22 @@ trait ASPxClientToolTipController extends ASPxClientWebChartElement {
   var showText: scala.Boolean
 }
 
+object ASPxClientToolTipController {
+  @scala.inline
+  def apply(
+    chart: ASPxClientWebChart,
+    imagePosition: java.lang.String,
+    openMode: java.lang.String,
+    showImage: scala.Boolean,
+    showText: scala.Boolean
+  ): ASPxClientToolTipController = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("chart")(chart)
+    __obj.updateDynamic("imagePosition")(imagePosition)
+    __obj.updateDynamic("openMode")(openMode)
+    __obj.updateDynamic("showImage")(showImage)
+    __obj.updateDynamic("showText")(showText)
+    __obj.asInstanceOf[ASPxClientToolTipController]
+  }
+}
+

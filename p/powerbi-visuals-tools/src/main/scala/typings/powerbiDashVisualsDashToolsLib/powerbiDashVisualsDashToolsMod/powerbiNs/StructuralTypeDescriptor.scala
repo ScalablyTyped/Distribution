@@ -18,3 +18,30 @@ trait StructuralTypeDescriptor extends js.Object {
   var queryTransform: js.UndefOr[js.Object] = js.undefined
 }
 
+object StructuralTypeDescriptor {
+  @scala.inline
+  def apply(
+    dataBars: js.Object = null,
+    expression: DefaultValueTypeDescriptor = null,
+    fill: FillTypeDescriptor = null,
+    fillRule: js.Object = null,
+    filter: FilterTypeDescriptor = null,
+    geoJson: js.Object = null,
+    image: js.Object = null,
+    paragraphs: js.Object = null,
+    queryTransform: js.Object = null
+  ): StructuralTypeDescriptor = {
+    val __obj = js.Dynamic.literal()
+    if (dataBars != null) __obj.updateDynamic("dataBars")(dataBars)
+    if (expression != null) __obj.updateDynamic("expression")(expression)
+    if (fill != null) __obj.updateDynamic("fill")(fill)
+    if (fillRule != null) __obj.updateDynamic("fillRule")(fillRule)
+    if (filter != null) __obj.updateDynamic("filter")(filter)
+    if (geoJson != null) __obj.updateDynamic("geoJson")(geoJson)
+    if (image != null) __obj.updateDynamic("image")(image)
+    if (paragraphs != null) __obj.updateDynamic("paragraphs")(paragraphs)
+    if (queryTransform != null) __obj.updateDynamic("queryTransform")(queryTransform)
+    __obj.asInstanceOf[StructuralTypeDescriptor]
+  }
+}
+

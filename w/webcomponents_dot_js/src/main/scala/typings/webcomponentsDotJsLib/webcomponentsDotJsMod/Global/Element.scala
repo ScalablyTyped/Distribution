@@ -10,3 +10,13 @@ trait Element extends js.Object {
   def createShadowRoot(): ShadowRoot
 }
 
+object Element {
+  @scala.inline
+  def apply(createShadowRoot: js.Function0[ShadowRoot], shadowRoot: ShadowRoot = null): Element = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("createShadowRoot")(createShadowRoot)
+    if (shadowRoot != null) __obj.updateDynamic("shadowRoot")(shadowRoot)
+    __obj.asInstanceOf[Element]
+  }
+}
+

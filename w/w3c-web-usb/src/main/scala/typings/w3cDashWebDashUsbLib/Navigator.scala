@@ -9,3 +9,12 @@ trait Navigator extends js.Object {
   val usb: USB
 }
 
+object Navigator {
+  @scala.inline
+  def apply(usb: USB): Navigator = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("usb")(usb)
+    __obj.asInstanceOf[Navigator]
+  }
+}
+

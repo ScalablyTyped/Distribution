@@ -10,3 +10,13 @@ trait Anon_Method extends js.Object {
   var timeout: scala.Double
 }
 
+object Anon_Method {
+  @scala.inline
+  def apply(timeout: scala.Double, method: java.lang.String = null): Anon_Method = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("timeout")(timeout)
+    if (method != null) __obj.updateDynamic("method")(method)
+    __obj.asInstanceOf[Anon_Method]
+  }
+}
+

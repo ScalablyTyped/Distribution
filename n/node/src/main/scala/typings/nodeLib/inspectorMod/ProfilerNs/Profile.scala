@@ -32,3 +32,22 @@ trait Profile extends js.Object {
   var timeDeltas: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 
+object Profile {
+  @scala.inline
+  def apply(
+    endTime: scala.Double,
+    nodes: js.Array[ProfileNode],
+    startTime: scala.Double,
+    samples: js.Array[scala.Double] = null,
+    timeDeltas: js.Array[scala.Double] = null
+  ): Profile = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("endTime")(endTime)
+    __obj.updateDynamic("nodes")(nodes)
+    __obj.updateDynamic("startTime")(startTime)
+    if (samples != null) __obj.updateDynamic("samples")(samples)
+    if (timeDeltas != null) __obj.updateDynamic("timeDeltas")(timeDeltas)
+    __obj.asInstanceOf[Profile]
+  }
+}
+

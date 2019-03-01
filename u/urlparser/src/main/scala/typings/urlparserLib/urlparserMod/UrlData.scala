@@ -11,3 +11,20 @@ trait UrlData extends js.Object {
   var query: urlparserLib.Anon_Params
 }
 
+object UrlData {
+  @scala.inline
+  def apply(
+    host: urlparserLib.Anon_Hostname,
+    path: urlparserLib.Anon_Base,
+    query: urlparserLib.Anon_Params,
+    toString: js.Function0[java.lang.String]
+  ): UrlData = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("host")(host)
+    __obj.updateDynamic("path")(path)
+    __obj.updateDynamic("query")(query)
+    __obj.updateDynamic("toString")(toString)
+    __obj.asInstanceOf[UrlData]
+  }
+}
+

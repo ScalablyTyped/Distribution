@@ -14,3 +14,24 @@ trait Anon_Precision extends js.Object {
   var zmin: scala.Double
 }
 
+object Anon_Precision {
+  @scala.inline
+  def apply(
+    xmax: scala.Double,
+    xmin: scala.Double,
+    zmax: scala.Double,
+    zmin: scala.Double,
+    precision: Anon_H = null,
+    subdivisions: Anon_H = null
+  ): Anon_Precision = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("xmax")(xmax)
+    __obj.updateDynamic("xmin")(xmin)
+    __obj.updateDynamic("zmax")(zmax)
+    __obj.updateDynamic("zmin")(zmin)
+    if (precision != null) __obj.updateDynamic("precision")(precision)
+    if (subdivisions != null) __obj.updateDynamic("subdivisions")(subdivisions)
+    __obj.asInstanceOf[Anon_Precision]
+  }
+}
+

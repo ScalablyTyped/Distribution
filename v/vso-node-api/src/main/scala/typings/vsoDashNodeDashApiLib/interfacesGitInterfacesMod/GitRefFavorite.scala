@@ -15,3 +15,25 @@ trait GitRefFavorite extends js.Object {
   var url: java.lang.String
 }
 
+object GitRefFavorite {
+  @scala.inline
+  def apply(
+    _links: js.Any,
+    id: scala.Double,
+    identityId: java.lang.String,
+    name: java.lang.String,
+    repositoryId: java.lang.String,
+    `type`: RefFavoriteType,
+    url: java.lang.String
+  ): GitRefFavorite = {
+    val __obj = js.Dynamic.literal(`type` = `type`)
+    __obj.updateDynamic("_links")(_links)
+    __obj.updateDynamic("id")(id)
+    __obj.updateDynamic("identityId")(identityId)
+    __obj.updateDynamic("name")(name)
+    __obj.updateDynamic("repositoryId")(repositoryId)
+    __obj.updateDynamic("url")(url)
+    __obj.asInstanceOf[GitRefFavorite]
+  }
+}
+

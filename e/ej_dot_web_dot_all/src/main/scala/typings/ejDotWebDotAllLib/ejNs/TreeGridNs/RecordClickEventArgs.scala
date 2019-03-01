@@ -29,3 +29,26 @@ trait RecordClickEventArgs extends js.Object {
   var rowIndex: js.UndefOr[scala.Double] = js.undefined
 }
 
+object RecordClickEventArgs {
+  @scala.inline
+  def apply(
+    cancel: js.UndefOr[scala.Boolean] = js.undefined,
+    cell: js.Any = null,
+    cellIndex: scala.Int | scala.Double = null,
+    cellValue: js.Any = null,
+    columnName: java.lang.String = null,
+    row: js.Any = null,
+    rowIndex: scala.Int | scala.Double = null
+  ): RecordClickEventArgs = {
+    val __obj = js.Dynamic.literal()
+    if (!js.isUndefined(cancel)) __obj.updateDynamic("cancel")(cancel)
+    if (cell != null) __obj.updateDynamic("cell")(cell)
+    if (cellIndex != null) __obj.updateDynamic("cellIndex")(cellIndex.asInstanceOf[js.Any])
+    if (cellValue != null) __obj.updateDynamic("cellValue")(cellValue)
+    if (columnName != null) __obj.updateDynamic("columnName")(columnName)
+    if (row != null) __obj.updateDynamic("row")(row)
+    if (rowIndex != null) __obj.updateDynamic("rowIndex")(rowIndex.asInstanceOf[js.Any])
+    __obj.asInstanceOf[RecordClickEventArgs]
+  }
+}
+

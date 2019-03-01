@@ -15,7 +15,8 @@ import scala.scalajs.js.annotation._
   * @param high The high (signed) 32 bits of the long
   * @param unsigned Whether unsigned or not, defaults to false for signed
   */
-class Long () extends js.Object {
+class Long ()
+  extends adoneLib.adoneNs.mathNs.INs._Longable {
   def this(low: scala.Double) = this()
   def this(low: scala.Double, high: scala.Double) = this()
   def this(low: scala.Double, high: scala.Double, unsigned: scala.Boolean) = this()

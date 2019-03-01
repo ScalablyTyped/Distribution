@@ -16,3 +16,16 @@ trait GitPullRequestQuery extends js.Object {
   var results: js.Array[org.scalablytyped.runtime.StringDictionary[js.Array[GitPullRequest]]]
 }
 
+object GitPullRequestQuery {
+  @scala.inline
+  def apply(
+    queries: js.Array[GitPullRequestQueryInput],
+    results: js.Array[org.scalablytyped.runtime.StringDictionary[js.Array[GitPullRequest]]]
+  ): GitPullRequestQuery = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("queries")(queries)
+    __obj.updateDynamic("results")(results)
+    __obj.asInstanceOf[GitPullRequestQuery]
+  }
+}
+
