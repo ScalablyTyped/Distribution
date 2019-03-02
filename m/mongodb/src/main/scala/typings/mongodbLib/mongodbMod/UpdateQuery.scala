@@ -7,7 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait UpdateQuery[T] extends js.Object {
   @JSName("$addToSet")
-  var $addToSet: js.UndefOr[stdLib.Partial[T] | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
+  var $addToSet: js.UndefOr[
+    (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? any}
+    */ mongodbLib.mongodbLibStrings.UpdateQuery with js.Any) | org.scalablytyped.runtime.StringDictionary[js.Any]
+  ] = js.undefined
   @JSName("$bit")
   var $bit: js.UndefOr[
     (/* import warning: ImportType.apply c Unsupported type mapping: 
@@ -54,7 +58,9 @@ trait UpdateQuery[T] extends js.Object {
   ] = js.undefined
   @JSName("$pull")
   var $pull: js.UndefOr[
-    stdLib.Partial[T] | (org.scalablytyped.runtime.StringDictionary[Condition[T, java.lang.String]])
+    (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? any}
+    */ mongodbLib.mongodbLibStrings.UpdateQuery with js.Any) | org.scalablytyped.runtime.StringDictionary[js.Any]
   ] = js.undefined
   @JSName("$push")
   var $push: js.UndefOr[stdLib.Partial[T] | org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
@@ -77,7 +83,9 @@ trait UpdateQuery[T] extends js.Object {
 object UpdateQuery {
   @scala.inline
   def apply[T](
-    $addToSet: stdLib.Partial[T] | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
+    $addToSet: (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? any}
+    */ mongodbLib.mongodbLibStrings.UpdateQuery with js.Any) | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     $bit: (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? any}
     */ mongodbLib.mongodbLibStrings.UpdateQuery with js.Any) | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
@@ -100,7 +108,9 @@ object UpdateQuery {
     $pop: (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? -1 | 1}
     */ mongodbLib.mongodbLibStrings.UpdateQuery with js.Any) | (org.scalablytyped.runtime.StringDictionary[mongodbLib.mongodbLibNumbers.`-1` | mongodbLib.mongodbLibNumbers.`1`]) = null,
-    $pull: stdLib.Partial[T] | (org.scalablytyped.runtime.StringDictionary[Condition[T, java.lang.String]]) = null,
+    $pull: (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? any}
+    */ mongodbLib.mongodbLibStrings.UpdateQuery with js.Any) | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     $push: stdLib.Partial[T] | org.scalablytyped.runtime.StringDictionary[js.Any] = null,
     $pushAll: stdLib.Partial[T] | org.scalablytyped.runtime.StringDictionary[js.Array[_]] = null,
     $rename: org.scalablytyped.runtime.StringDictionary[java.lang.String] = null,

@@ -134,13 +134,13 @@ class Http2ServerResponse protected ()
     callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
   ): scala.Boolean = js.native
   def writeContinue(): scala.Unit = js.native
-  def writeHead(statusCode: scala.Double): scala.Unit = js.native
-  def writeHead(statusCode: scala.Double, headers: nodeLib.httpMod.OutgoingHttpHeaders): scala.Unit = js.native
-  def writeHead(statusCode: scala.Double, statusMessage: java.lang.String): scala.Unit = js.native
+  def writeHead(statusCode: scala.Double): this.type = js.native
+  def writeHead(statusCode: scala.Double, headers: nodeLib.httpMod.OutgoingHttpHeaders): this.type = js.native
+  def writeHead(statusCode: scala.Double, statusMessage: java.lang.String): this.type = js.native
   def writeHead(
     statusCode: scala.Double,
     statusMessage: java.lang.String,
     headers: nodeLib.httpMod.OutgoingHttpHeaders
-  ): scala.Unit = js.native
+  ): this.type = js.native
 }
 

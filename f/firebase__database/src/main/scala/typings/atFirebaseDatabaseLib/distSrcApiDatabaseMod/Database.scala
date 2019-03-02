@@ -18,12 +18,12 @@ class Database protected ()
   var INTERNAL_Database: DatabaseInternals = js.native
   /* CompleteClass */
   override var app: atFirebaseAppDashTypesLib.atFirebaseAppDashTypesMod.FirebaseApp = js.native
-  var `repo_`: js.Any = js.native
-  var `root_`: js.Any = js.native
   /**
     * @param {string} apiName
     */
-  /* private */ def `checkDeleted_`(apiName: js.Any): js.Any = js.native
+  var `checkDeleted_`: js.Any = js.native
+  var `repo_`: js.Any = js.native
+  var `root_`: js.Any = js.native
   def goOffline(): scala.Unit = js.native
   def goOnline(): scala.Unit = js.native
   /**

@@ -8,6 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams")
 @js.native
 class QueryParams () extends js.Object {
+  /**
+    * @return {!QueryParams}
+    * @private
+    */
+  var `copy_`: js.Any = js.native
   var `endNameSet_`: js.Any = js.native
   var `endSet_`: js.Any = js.native
   var `indexEndName_`: js.Any = js.native
@@ -20,11 +25,6 @@ class QueryParams () extends js.Object {
   var `startNameSet_`: js.Any = js.native
   var `startSet_`: js.Any = js.native
   var `viewFrom_`: js.Any = js.native
-  /**
-    * @return {!QueryParams}
-    * @private
-    */
-  /* private */ def `copy_`(): js.Any = js.native
   /**
     * @param {*} indexValue
     * @param {?string=} key

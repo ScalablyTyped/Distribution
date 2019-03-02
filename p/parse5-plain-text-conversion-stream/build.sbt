@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "parse5-plain-text-conversion-stream"
-version := "5.0-dt-20180606Z-833659"
+version := "5.0-dt-20180606Z-b9a966"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
   "org.scalablytyped" %%% "parse5" % "5.0-dt-20180611Z-162288",
-  "org.scalablytyped" %%% "parse5-parser-stream" % "5.0-dt-20180606Z-1b4721",
+  "org.scalablytyped" %%% "parse5-parser-stream" % "5.0-dt-20180606Z-0f79f1",
   "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

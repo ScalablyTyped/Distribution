@@ -15,6 +15,8 @@ object perfUnderscoreHooksNs extends js.Object {
   }
   
   val performance: nodeLib.perfUnderscoreHooksMod.Performance = js.native
+  def monitorEventLoopDelay(): nodeLib.perfUnderscoreHooksMod.EventLoopDelayMonitor = js.native
+  def monitorEventLoopDelay(options: nodeLib.perfUnderscoreHooksMod.EventLoopMonitorOptions): nodeLib.perfUnderscoreHooksMod.EventLoopDelayMonitor = js.native
   @JSName("constants")
   @js.native
   object constantsNs extends js.Object {

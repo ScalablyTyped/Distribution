@@ -78,8 +78,8 @@ class Db protected ()
   def executeDbAdminCommand(command: js.Object): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#executeDbAdminCommand */
   def executeDbAdminCommand(command: js.Object, callback: MongoCallback[_]): scala.Unit = js.native
-  def executeDbAdminCommand(command: js.Object, options: mongodbLib.Anon_MaxTimeMS): js.Promise[_] = js.native
-  def executeDbAdminCommand(command: js.Object, options: mongodbLib.Anon_MaxTimeMS, callback: MongoCallback[_]): scala.Unit = js.native
+  def executeDbAdminCommand(command: js.Object, options: mongodbLib.Anon_ReadPreferenceSession): js.Promise[_] = js.native
+  def executeDbAdminCommand(command: js.Object, options: mongodbLib.Anon_ReadPreferenceSession, callback: MongoCallback[_]): scala.Unit = js.native
   def indexInformation(name: java.lang.String): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Db.html#indexInformation */
   def indexInformation(name: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native

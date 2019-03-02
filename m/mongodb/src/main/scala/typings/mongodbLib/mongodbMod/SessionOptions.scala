@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SessionOptions extends js.Object {
   /**
     * Whether causal consistency should be enabled on this session
-    * @type {boolean} default true
+    * @default true
     */
   var causalConsistency: js.UndefOr[scala.Boolean] = js.undefined
   /**

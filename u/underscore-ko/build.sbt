@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "underscore-ko"
-version := "1.4-dt-20180214Z-c56ae1"
+version := "1.4-dt-20180214Z-e2c148"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190218Z-442480",
   "org.scalablytyped" %%% "std" % "3.3-6e4388",
-  "org.scalablytyped" %%% "underscore" % "1.8-dt-20190228Z-af9105")
+  "org.scalablytyped" %%% "underscore" % "1.8-dt-20190301Z-4402ce")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

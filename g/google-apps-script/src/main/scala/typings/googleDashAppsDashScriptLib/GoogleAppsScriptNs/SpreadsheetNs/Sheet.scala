@@ -61,6 +61,7 @@ trait Sheet extends js.Object {
   def getConditionalFormatRules(): js.Array[ConditionalFormatRule] = js.native
   def getCurrentCell(): Range = js.native
   def getDataRange(): Range = js.native
+  def getDataSourceTables(): js.Array[DataSourceTable] = js.native
   def getDeveloperMetadata(): js.Array[DeveloperMetadata] = js.native
   def getFilter(): Filter = js.native
   def getFormUrl(): java.lang.String = js.native

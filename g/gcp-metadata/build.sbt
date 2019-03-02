@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gcp-metadata"
-version := "0.9.3-a1faba"
+version := "0.9.3-718736"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,9 +9,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "abort-controller" % "2.0.2-9b5c01",
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-1e70dd",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-e0af3f",
-  "org.scalablytyped" %%% "gaxios" % "1.8.0-d761db",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-1e1851",
+  "org.scalablytyped" %%% "gaxios" % "1.8.0-9b91bd",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-da59e9",
   "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

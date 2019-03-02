@@ -9,5 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val performance: nodeLib.perfUnderscoreHooksMod.Performance = js.native
+  def monitorEventLoopDelay(): nodeLib.perfUnderscoreHooksMod.EventLoopDelayMonitor = js.native
+  def monitorEventLoopDelay(options: nodeLib.perfUnderscoreHooksMod.EventLoopMonitorOptions): nodeLib.perfUnderscoreHooksMod.EventLoopDelayMonitor = js.native
 }
 

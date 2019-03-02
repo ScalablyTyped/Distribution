@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "image-type"
-version := "3.0-dt-20181016Z-975e09"
+version := "3.0-dt-20181016Z-1df49a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "file-type" % "10.6-dt-20181213Z-9d1142",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "file-type" % "10.6-dt-20181213Z-980d71",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
   "org.scalablytyped" %%% "std" % "3.3-6e4388")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

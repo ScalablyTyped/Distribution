@@ -18,9 +18,9 @@ class ServerResponse protected () extends OutgoingMessage {
   // no args in writeContinue callback
   def writeContinue(): scala.Unit = js.native
   def writeContinue(callback: js.Function0[scala.Unit]): scala.Unit = js.native
-  def writeHead(statusCode: scala.Double): scala.Unit = js.native
-  def writeHead(statusCode: scala.Double, headers: OutgoingHttpHeaders): scala.Unit = js.native
-  def writeHead(statusCode: scala.Double, reasonPhrase: java.lang.String): scala.Unit = js.native
-  def writeHead(statusCode: scala.Double, reasonPhrase: java.lang.String, headers: OutgoingHttpHeaders): scala.Unit = js.native
+  def writeHead(statusCode: scala.Double): this.type = js.native
+  def writeHead(statusCode: scala.Double, headers: OutgoingHttpHeaders): this.type = js.native
+  def writeHead(statusCode: scala.Double, reasonPhrase: java.lang.String): this.type = js.native
+  def writeHead(statusCode: scala.Double, reasonPhrase: java.lang.String, headers: OutgoingHttpHeaders): this.type = js.native
 }
 

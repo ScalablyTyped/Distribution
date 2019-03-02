@@ -67,6 +67,7 @@ object ^ extends js.Object {
   def tap[T](fn: wuLib.wuMod.wuNs.Consumer[T], iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def tee[T](iter: stdLib.Iterable[T]): js.Array[wuLib.wuMod.wuNs.WuIterable[T]] = js.native
   def tee[T](n: scala.Double, iter: stdLib.Iterable[T]): js.Array[wuLib.wuMod.wuNs.WuIterable[T]] = js.native
+  def toArray[T](iter: stdLib.Iterable[T]): js.Array[T] = js.native
   def unique[T](iter: stdLib.Iterable[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def values[T](obj: org.scalablytyped.runtime.StringDictionary[T]): wuLib.wuMod.wuNs.WuIterable[T] = js.native
   def zip[T, U](iter2: stdLib.Iterable[T], iter: stdLib.Iterable[U]): wuLib.wuMod.wuNs.WuIterable[js.Tuple2[T, U]] = js.native

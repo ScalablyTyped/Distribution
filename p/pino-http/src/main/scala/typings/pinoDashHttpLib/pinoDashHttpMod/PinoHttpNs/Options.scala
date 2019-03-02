@@ -7,6 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Options
   extends pinoLib.pinoMod.PNs.LoggerOptions {
+  var customLogLevel: js.UndefOr[
+    js.Function2[
+      /* res */ nodeLib.httpMod.ServerResponse, 
+      /* error */ nodeLib.Error, 
+      pinoLib.pinoMod.PNs.Level
+    ]
+  ] = js.undefined
   var genReqId: js.UndefOr[GenReqId] = js.undefined
   var logger: js.UndefOr[pinoLib.pinoMod.PNs.Logger] = js.undefined
   var stream: js.UndefOr[pinoLib.pinoMod.PNs.DestinationStream] = js.undefined
@@ -20,6 +27,11 @@ object Options {
     browser: pinoLib.Anon_AsObject = null,
     changeLevelName: java.lang.String = null,
     customLevels: org.scalablytyped.runtime.StringDictionary[scala.Double] = null,
+    customLogLevel: js.Function2[
+      /* res */ nodeLib.httpMod.ServerResponse, 
+      /* error */ nodeLib.Error, 
+      pinoLib.pinoMod.PNs.Level
+    ] = null,
     enabled: js.UndefOr[scala.Boolean] = js.undefined,
     genReqId: GenReqId = null,
     level: pinoLib.pinoMod.PNs.LevelWithSilent | java.lang.String = null,
@@ -43,6 +55,7 @@ object Options {
     if (browser != null) __obj.updateDynamic("browser")(browser)
     if (changeLevelName != null) __obj.updateDynamic("changeLevelName")(changeLevelName)
     if (customLevels != null) __obj.updateDynamic("customLevels")(customLevels)
+    if (customLogLevel != null) __obj.updateDynamic("customLogLevel")(customLogLevel)
     if (!js.isUndefined(enabled)) __obj.updateDynamic("enabled")(enabled)
     if (genReqId != null) __obj.updateDynamic("genReqId")(genReqId)
     if (level != null) __obj.updateDynamic("level")(level.asInstanceOf[js.Any])

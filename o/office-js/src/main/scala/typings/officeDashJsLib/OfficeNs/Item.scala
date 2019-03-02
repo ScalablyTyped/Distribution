@@ -291,10 +291,10 @@ trait Item extends js.Object {
     eventType: EventType,
     callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
-  def removeHandlerAsync(eventType: EventType, options: js.Any): scala.Unit = js.native
+  def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): scala.Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
-    options: js.Any,
+    options: AsyncContextOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
 }

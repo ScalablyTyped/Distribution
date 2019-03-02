@@ -16,7 +16,7 @@ trait GridFSBucketWriteStreamOptions extends js.Object {
   var disableMD5: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Custom file id for the GridFS file.
-    **/
+    */
   var id: js.UndefOr[mongodbLib.GridFSBucketWriteStreamId] = js.undefined
   /**
     * The journal write concern

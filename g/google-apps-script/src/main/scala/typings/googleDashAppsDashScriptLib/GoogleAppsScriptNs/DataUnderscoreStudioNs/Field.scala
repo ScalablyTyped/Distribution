@@ -11,6 +11,7 @@ trait Field extends js.Object {
   def getFormula(): java.lang.String
   def getGroup(): java.lang.String
   def getId(): java.lang.String
+  def getIsReaggregatable(): scala.Boolean
   def getName(): java.lang.String
   def getType(): FieldType
   def isDefault(): scala.Boolean
@@ -23,6 +24,7 @@ trait Field extends js.Object {
   def setGroup(group: java.lang.String): Field
   def setId(id: java.lang.String): Field
   def setIsHidden(isHidden: scala.Boolean): Field
+  def setIsReaggregatable(isReaggregatable: scala.Boolean): Field
   def setName(name: java.lang.String): Field
   def setType(`type`: FieldType): Field
 }
@@ -35,6 +37,7 @@ object Field {
     getFormula: js.Function0[java.lang.String],
     getGroup: js.Function0[java.lang.String],
     getId: js.Function0[java.lang.String],
+    getIsReaggregatable: js.Function0[scala.Boolean],
     getName: js.Function0[java.lang.String],
     getType: js.Function0[FieldType],
     isDefault: js.Function0[scala.Boolean],
@@ -47,6 +50,7 @@ object Field {
     setGroup: js.Function1[java.lang.String, Field],
     setId: js.Function1[java.lang.String, Field],
     setIsHidden: js.Function1[scala.Boolean, Field],
+    setIsReaggregatable: js.Function1[scala.Boolean, Field],
     setName: js.Function1[java.lang.String, Field],
     setType: js.Function1[FieldType, Field]
   ): Field = {
@@ -56,6 +60,7 @@ object Field {
     __obj.updateDynamic("getFormula")(getFormula)
     __obj.updateDynamic("getGroup")(getGroup)
     __obj.updateDynamic("getId")(getId)
+    __obj.updateDynamic("getIsReaggregatable")(getIsReaggregatable)
     __obj.updateDynamic("getName")(getName)
     __obj.updateDynamic("getType")(getType)
     __obj.updateDynamic("isDefault")(isDefault)
@@ -68,6 +73,7 @@ object Field {
     __obj.updateDynamic("setGroup")(setGroup)
     __obj.updateDynamic("setId")(setId)
     __obj.updateDynamic("setIsHidden")(setIsHidden)
+    __obj.updateDynamic("setIsReaggregatable")(setIsReaggregatable)
     __obj.updateDynamic("setName")(setName)
     __obj.updateDynamic("setType")(setType)
     __obj.asInstanceOf[Field]

@@ -13,7 +13,15 @@ object functionsNs extends js.Object {
   @js.native
   class Functions protected () extends js.Object {
     def httpsCallable(name: java.lang.String): firebaseLib.firebaseMod.firebaseNs.functionsNs.HttpsCallable = js.native
+    def httpsCallable(
+      name: java.lang.String,
+      options: firebaseLib.firebaseMod.firebaseNs.functionsNs.HttpsCallableOptions
+    ): firebaseLib.firebaseMod.firebaseNs.functionsNs.HttpsCallable = js.native
     def useFunctionsEmulator(url: java.lang.String): scala.Unit = js.native
+  }
+  
+  trait HttpsCallableOptions extends js.Object {
+    var timeout: js.UndefOr[scala.Double] = js.undefined
   }
   
   trait HttpsCallableResult extends js.Object {

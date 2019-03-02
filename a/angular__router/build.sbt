@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "angular__router"
-version := "7.2.7-ebcf2b"
+version := "7.2.7-ce7716"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular__common" % "7.2.7-aaa2df",
-  "org.scalablytyped" %%% "angular__core" % "7.2.7-cf80ac",
-  "org.scalablytyped" %%% "angular__platform-browser" % "7.2.7-f84b9a",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "angular__common" % "7.2.7-ab84fd",
+  "org.scalablytyped" %%% "angular__core" % "7.2.7-ac557d",
+  "org.scalablytyped" %%% "angular__platform-browser" % "7.2.7-202e84",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
   "org.scalablytyped" %%% "rxjs" % "6.4.0-167391",
   "org.scalablytyped" %%% "std" % "3.3-6e4388",
   "org.scalablytyped" %%% "tslib" % "1.9.3-9355d3",

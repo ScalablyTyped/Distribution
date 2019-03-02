@@ -20,11 +20,41 @@ class Repo protected () extends js.Object {
   var dataUpdateCount: scala.Double = js.native
   val database: atFirebaseDatabaseLib.distSrcApiDatabaseMod.Database = js.native
   var `eventQueue_`: js.Any = js.native
+  /**
+    * @return {!number}
+    * @private
+    */
+  var `getNextWriteId_`: js.Any = js.native
   var `infoData_`: js.Any = js.native
   var `infoSyncTree_`: js.Any = js.native
   var `interceptServerDataCallback_`: js.Any = js.native
+  /**
+    * @param {...*} var_args
+    * @private
+    */
+  var `log_`: js.Any = js.native
   var `nextWriteId_`: js.Any = js.native
+  /**
+    * @param {!boolean} connectStatus
+    * @private
+    */
+  var `onConnectStatus_`: js.Any = js.native
+  /**
+    * Called by realtime when we get new messages from the server.
+    *
+    * @private
+    * @param {string} pathString
+    * @param {*} data
+    * @param {boolean} isMerge
+    * @param {?number} tag
+    */
+  var `onDataUpdate_`: js.Any = js.native
   var `onDisconnect_`: js.Any = js.native
+  /**
+    * @param {!Object} updates
+    * @private
+    */
+  var `onServerInfoUpdate_`: js.Any = js.native
   /**
     * TODO: This should be @private but it's used by test_access.js and internal.js
     * @type {?PersistentConnection}
@@ -32,12 +62,24 @@ class Repo protected () extends js.Object {
   var `persistentConnection_`: atFirebaseDatabaseLib.distSrcCorePersistentConnectionMod.PersistentConnection | scala.Null = js.native
   var `repoInfo_`: atFirebaseDatabaseLib.distSrcCoreRepoInfoMod.RepoInfo = js.native
   var `rerunTransactions_`: js.Any = js.native
+  /**
+    * Applies all of the changes stored up in the onDisconnect_ tree.
+    * @private
+    */
+  var `runOnDisconnectEvents_`: js.Any = js.native
   var `serverSyncTree_`: js.Any = js.native
   var `server_`: js.Any = js.native
   var `statsListener_`: js.Any = js.native
   var `statsReporter_`: js.Any = js.native
   var `stats_`: js.Any = js.native
   var `transactions_init_`: js.Any = js.native
+  /**
+    *
+    * @param {!string} pathString
+    * @param {*} value
+    * @private
+    */
+  var `updateInfo_`: js.Any = js.native
   /**
     * @param {!Query} query
     * @param {!EventRegistration} eventRegistration
@@ -75,11 +117,6 @@ class Repo protected () extends js.Object {
     * @return {!Object}
     */
   def generateServerValues(): js.Object = js.native
-  /**
-    * @return {!number}
-    * @private
-    */
-  /* private */ def `getNextWriteId_`(): js.Any = js.native
   def `interceptServerData_`(): scala.Unit = js.native
   /**
     * TODO: This should be @private but it's used by test_access.js and internal.js
@@ -89,31 +126,9 @@ class Repo protected () extends js.Object {
   def `interceptServerData_`(callback: js.Function2[/* a */ java.lang.String, /* b */ js.Any, _]): scala.Unit = js.native
   def interrupt(): scala.Unit = js.native
   /**
-    * @param {...*} var_args
-    * @private
-    */
-  /* private */ def `log_`(
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param var_args because its type <none> is not an array type */ var_args: js.Any
-  ): js.Any = js.native
-  /**
     * @return {!string} The namespace represented by the repo.
     */
   def name(): java.lang.String = js.native
-  /**
-    * @param {!boolean} connectStatus
-    * @private
-    */
-  /* private */ def `onConnectStatus_`(connectStatus: js.Any): js.Any = js.native
-  /**
-    * Called by realtime when we get new messages from the server.
-    *
-    * @private
-    * @param {string} pathString
-    * @param {*} data
-    * @param {boolean} isMerge
-    * @param {?number} tag
-    */
-  /* private */ def `onDataUpdate_`(pathString: js.Any, data: js.Any, isMerge: js.Any, tag: js.Any): js.Any = js.native
   def onDisconnectCancel(path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path): scala.Unit = js.native
   /**
     * @param {!Path} path
@@ -178,11 +193,6 @@ class Repo protected () extends js.Object {
     ]
   ): scala.Unit = js.native
   /**
-    * @param {!Object} updates
-    * @private
-    */
-  /* private */ def `onServerInfoUpdate_`(updates: js.Any): js.Any = js.native
-  /**
     * @param {!Query} query
     * @param {?EventRegistration} eventRegistration
     */
@@ -191,11 +201,6 @@ class Repo protected () extends js.Object {
     eventRegistration: atFirebaseDatabaseLib.distSrcCoreViewEventRegistrationMod.EventRegistration
   ): scala.Unit = js.native
   def resume(): scala.Unit = js.native
-  /**
-    * Applies all of the changes stored up in the onDisconnect_ tree.
-    * @private
-    */
-  /* private */ def `runOnDisconnectEvents_`(): js.Any = js.native
   /**
     * @return {!number} The time in milliseconds, taking the server offset into account if we have one.
     */
@@ -264,12 +269,5 @@ class Repo protected () extends js.Object {
       scala.Unit
     ]
   ): scala.Unit = js.native
-  /**
-    *
-    * @param {!string} pathString
-    * @param {*} value
-    * @private
-    */
-  /* private */ def `updateInfo_`(pathString: js.Any, value: js.Any): js.Any = js.native
 }
 

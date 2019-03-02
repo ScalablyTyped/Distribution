@@ -280,13 +280,6 @@ trait MessageRead extends Message {
     * </table>
     */
   var to: js.Array[EmailAddressDetails] = js.native
-  def addHandlerAsync(eventType: EventType, handler: js.Any, options: js.Any): scala.Unit = js.native
-  def addHandlerAsync(
-    eventType: EventType,
-    handler: js.Any,
-    options: js.Any,
-    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
-  ): scala.Unit = js.native
   /**
     * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
     * selected appointment.

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grpc__proto-loader"
-version := "0.4.0-1a850c"
+version := "0.4.0-42c68b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-f3a537",
   "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20190212Z-230f3e",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-9f7187",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-0a9f1a",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-439a87",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-11ba80",
   "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-194d25",
   "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-fcd7c0",

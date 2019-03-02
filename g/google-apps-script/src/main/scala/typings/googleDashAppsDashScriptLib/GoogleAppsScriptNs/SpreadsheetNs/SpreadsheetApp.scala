@@ -12,6 +12,10 @@ trait SpreadsheetApp extends js.Object {
   var BooleanCriteria: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BooleanCriteria */ js.Any = js.native
   var BorderStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderStyle */ js.Any = js.native
   var CopyPasteType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CopyPasteType */ js.Any = js.native
+  var DataExecutionErrorCode: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataExecutionErrorCode */ js.Any = js.native
+  var DataExecutionState: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataExecutionState */ js.Any = js.native
+  var DataSourceParameterType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataSourceParameterType */ js.Any = js.native
+  var DataSourceType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataSourceType */ js.Any = js.native
   var DataValidationCriteria: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DataValidationCriteria */ js.Any = js.native
   var DeveloperMetadataLocationType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DeveloperMetadataLocationType */ js.Any = js.native
   var DeveloperMetadataVisibility: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof DeveloperMetadataVisibility */ js.Any = js.native
@@ -32,6 +36,8 @@ trait SpreadsheetApp extends js.Object {
     rows: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     columns: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): Spreadsheet = js.native
+  def enableAllDataSourcesExecution(): scala.Unit = js.native
+  def enableBigQueryExecution(): scala.Unit = js.native
   def flush(): scala.Unit = js.native
   def getActive(): Spreadsheet = js.native
   def getActiveRange(): Range = js.native
@@ -42,6 +48,7 @@ trait SpreadsheetApp extends js.Object {
   def getSelection(): Selection = js.native
   def getUi(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.Ui = js.native
   def newConditionalFormatRule(): ConditionalFormatRuleBuilder = js.native
+  def newDataSourceSpec(): DataSourceSpecBuilder = js.native
   def newDataValidation(): DataValidationBuilder = js.native
   def newFilterCriteria(): FilterCriteriaBuilder = js.native
   def newRichTextValue(): RichTextValueBuilder = js.native

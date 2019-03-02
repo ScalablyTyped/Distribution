@@ -22,7 +22,11 @@ object MongosOptions {
   @scala.inline
   def apply(
     acceptableLatencyMS: scala.Int | scala.Double = null,
-    checkServerIdentity: scala.Boolean | js.Function = null,
+    checkServerIdentity: scala.Boolean | (js.Function2[
+      /* host */ java.lang.String, 
+      /* cert */ nodeLib.tlsMod.PeerCertificate, 
+      js.UndefOr[nodeLib.Error]
+    ]) = null,
     ciphers: java.lang.String = null,
     domainsEnabled: js.UndefOr[scala.Boolean] = js.undefined,
     ecdhCurve: java.lang.String = null,

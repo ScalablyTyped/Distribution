@@ -34,28 +34,63 @@ class LLRBNode[K, V] protected () extends js.Object {
   def this(key: K, value: V, color: scala.Null, left: LLRBNode[K, V], right: LLRBNode[K, V]) = this()
   def this(key: K, value: V, color: scala.Null, left: scala.Null, right: LLRBEmptyNode[K, V]) = this()
   def this(key: K, value: V, color: scala.Null, left: scala.Null, right: LLRBNode[K, V]) = this()
-  var color: scala.Boolean = js.native
-  var key: K = js.native
-  var left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
-  var right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
-  var value: V = js.native
   /**
     * For testing.
     *
     * @private
     * @return {boolean} True if all is well.
     */
-  /* private */ def `checkMaxDepth_`(): js.Any = js.native
+  var `checkMaxDepth_`: js.Any = js.native
+  var color: scala.Boolean = js.native
+  /**
+    * @private
+    * @return {!LLRBNode} New tree, after colorFlip.
+    */
+  var `colorFlip_`: js.Any = js.native
+  /**
+    * @private
+    * @return {!LLRBNode} New tree after performing any needed rotations.
+    */
+  var `fixUp_`: js.Any = js.native
+  var key: K = js.native
+  var left: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
+  /**
+    * @return {!Object} The minimum node in the tree.
+    * @private
+    */
+  var `min_`: js.Any = js.native
+  /**
+    * @private
+    * @return {!LLRBNode} New tree, after moveRedLeft.
+    */
+  var `moveRedLeft_`: js.Any = js.native
+  /**
+    * @private
+    * @return {!LLRBNode} New tree, after moveRedRight.
+    */
+  var `moveRedRight_`: js.Any = js.native
+  /**
+    * @private
+    * @return {!LLRBNode|LLRBEmptyNode} New tree, with the minimum key removed.
+    */
+  var `removeMin_`: js.Any = js.native
+  var right: (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
+  /**
+    * @private
+    * @return {!LLRBNode} New tree, after rotateLeft.
+    */
+  var `rotateLeft_`: js.Any = js.native
+  /**
+    * @private
+    * @return {!LLRBNode} New tree, after rotateRight.
+    */
+  var `rotateRight_`: js.Any = js.native
+  var value: V = js.native
   /**
     * @private
     * @return {number} Not sure what this returns exactly. :-).
     */
   def `check_`(): scala.Double = js.native
-  /**
-    * @private
-    * @return {!LLRBNode} New tree, after colorFlip.
-    */
-  /* private */ def `colorFlip_`(): js.Any = js.native
   /**
     * Returns a copy of the current node, optionally replacing pieces of it.
     *
@@ -82,11 +117,6 @@ class LLRBNode[K, V] protected () extends js.Object {
     * @return {number} The total number of nodes in the tree.
     */
   def count(): scala.Double = js.native
-  /**
-    * @private
-    * @return {!LLRBNode} New tree after performing any needed rotations.
-    */
-  /* private */ def `fixUp_`(): js.Any = js.native
   /**
     * Traverses the tree in key order and calls the specified action function
     * for each node.
@@ -123,31 +153,11 @@ class LLRBNode[K, V] protected () extends js.Object {
     */
   def minKey(): K = js.native
   /**
-    * @return {!Object} The minimum node in the tree.
-    * @private
-    */
-  /* private */ def `min_`(): js.Any = js.native
-  /**
-    * @private
-    * @return {!LLRBNode} New tree, after moveRedLeft.
-    */
-  /* private */ def `moveRedLeft_`(): js.Any = js.native
-  /**
-    * @private
-    * @return {!LLRBNode} New tree, after moveRedRight.
-    */
-  /* private */ def `moveRedRight_`(): js.Any = js.native
-  /**
     * @param {!Object} key The key of the item to remove.
     * @param {Comparator} comparator Comparator.
     * @return {!LLRBNode|LLRBEmptyNode} New tree, with the specified item removed.
     */
   def remove(key: K, comparator: Comparator[K]): (LLRBNode[K, V]) | (LLRBEmptyNode[K, V]) = js.native
-  /**
-    * @private
-    * @return {!LLRBNode|LLRBEmptyNode} New tree, with the minimum key removed.
-    */
-  /* private */ def `removeMin_`(): js.Any = js.native
   /**
     * Traverses the tree in reverse key order and calls the specified action function
     * for each node.
@@ -157,16 +167,6 @@ class LLRBNode[K, V] protected () extends js.Object {
     * @return {*} True if traversal was aborted.
     */
   def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, scala.Unit]): scala.Boolean = js.native
-  /**
-    * @private
-    * @return {!LLRBNode} New tree, after rotateLeft.
-    */
-  /* private */ def `rotateLeft_`(): js.Any = js.native
-  /**
-    * @private
-    * @return {!LLRBNode} New tree, after rotateRight.
-    */
-  /* private */ def `rotateRight_`(): js.Any = js.native
 }
 
 /* static members */

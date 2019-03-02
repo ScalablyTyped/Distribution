@@ -187,6 +187,18 @@ trait REPLServer
     listener: js.Function1[/* context */ nodeLib.vmMod.Context, scala.Unit]
   ): this.type = js.native
   /**
+    * Initializes a history log file for the REPL instance. When executing the
+    * Node.js binary and using the command line REPL, a history file is initialized
+    * by default. However, this is not the case when creating a REPL
+    * programmatically. Use this method to initialize a history log file when working
+    * with REPL instances programmatically.
+    * @param path The path to the history file
+    */
+  def setupHistory(
+    path: java.lang.String,
+    cb: js.Function2[/* err */ nodeLib.Error | scala.Null, /* repl */ this.type, scala.Unit]
+  ): scala.Unit = js.native
+  /**
     * Specified in the REPL options, this is the function to invoke to format the output of
     * each command before writing to `outputStream`. If not specified in the REPL options,
     * this will be a wrapper for `util.inspect`.

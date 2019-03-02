@@ -6,8 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_NODEADMIN extends js.Object {
+  /**
+    * @define {boolean} Whether this is the Admin Node.js SDK.
+    */
   var NODE_ADMIN: scala.Boolean
+  /**
+    * @define {boolean} Whether this is the client Node.js SDK.
+    */
   var NODE_CLIENT: scala.Boolean
+  /**
+    * Firebase SDK Version
+    */
   var SDK_VERSION: java.lang.String
 }
 

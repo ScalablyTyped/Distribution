@@ -75,6 +75,7 @@ trait Range extends js.Object {
     column: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer
   ): Range = js.native
   def getColumn(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
+  def getDataSourceTables(): js.Array[DataSourceTable] = js.native
   def getDataSourceUrl(): java.lang.String = js.native
   def getDataTable(): googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.DataTable = js.native
   def getDataTable(firstRowIsHeader: scala.Boolean): googleDashAppsDashScriptLib.GoogleAppsScriptNs.ChartsNs.DataTable = js.native

@@ -12,7 +12,7 @@ class IndexMap protected () extends js.Object {
       (atFirebaseDatabaseLib.distSrcCoreUtilSortedMapMod.SortedMap[
         atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.NamedNode, 
         atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node
-      ]) | js.Object
+      ]) | (/*FallbackType*/ js.Object)
     ], `indexSet_`: org.scalablytyped.runtime.StringDictionary[atFirebaseDatabaseLib.distSrcCoreSnapIndexesIndexMod.Index]) = this()
   var `indexSet_`: js.Any = js.native
   var `indexes_`: js.Any = js.native

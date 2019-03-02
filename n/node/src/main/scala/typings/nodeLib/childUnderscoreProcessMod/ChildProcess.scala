@@ -8,13 +8,20 @@ import scala.scalajs.js.annotation._
 @js.native
 trait ChildProcess
   extends nodeLib.eventsMod.EventEmitter {
-  var connected: scala.Boolean = js.native
-  var killed: scala.Boolean = js.native
-  var pid: scala.Double = js.native
-  var stderr: nodeLib.streamMod.Readable = js.native
-  var stdin: nodeLib.streamMod.Writable = js.native
-  var stdio: js.Tuple3[nodeLib.streamMod.Writable, nodeLib.streamMod.Readable, nodeLib.streamMod.Readable] = js.native
-  var stdout: nodeLib.streamMod.Readable = js.native
+  val channel: js.UndefOr[nodeLib.streamMod.internalNs.Pipe | scala.Null] = js.native
+  val connected: scala.Boolean = js.native
+  val killed: scala.Boolean = js.native
+  val pid: scala.Double = js.native
+  var stderr: nodeLib.streamMod.Readable | scala.Null = js.native
+  var stdin: nodeLib.streamMod.Writable | scala.Null = js.native
+  val stdio: js.Tuple5[
+    nodeLib.streamMod.Writable | scala.Null, 
+    nodeLib.streamMod.Readable | scala.Null, 
+    nodeLib.streamMod.Readable | scala.Null, 
+    js.UndefOr[nodeLib.streamMod.Readable | nodeLib.streamMod.Writable | scala.Null], 
+    js.UndefOr[nodeLib.streamMod.Readable | nodeLib.streamMod.Writable | scala.Null]
+  ] = js.native
+  var stdout: nodeLib.streamMod.Readable | scala.Null = js.native
   @JSName("addListener")
   def addListener_close(
     event: nodeLib.nodeLibStrings.close,

@@ -33,11 +33,18 @@ object ^ extends js.Object {
     password: nodeLib.cryptoMod.BinaryLike,
     options: nodeLib.cryptoMod.CipherGCMOptions
   ): nodeLib.cryptoMod.CipherGCM = js.native
+  def createCipheriv(algorithm: java.lang.String, key: nodeLib.cryptoMod.CipherKey): nodeLib.cryptoMod.Cipher = js.native
   def createCipheriv(algorithm: java.lang.String, key: nodeLib.cryptoMod.CipherKey, iv: nodeLib.cryptoMod.BinaryLike): nodeLib.cryptoMod.Cipher = js.native
   def createCipheriv(
     algorithm: java.lang.String,
     key: nodeLib.cryptoMod.CipherKey,
     iv: nodeLib.cryptoMod.BinaryLike,
+    options: nodeLib.streamMod.internalNs.TransformOptions
+  ): nodeLib.cryptoMod.Cipher = js.native
+  def createCipheriv(
+    algorithm: java.lang.String,
+    key: nodeLib.cryptoMod.CipherKey,
+    iv: scala.Null,
     options: nodeLib.streamMod.internalNs.TransformOptions
   ): nodeLib.cryptoMod.Cipher = js.native
   def createCipheriv(
@@ -47,6 +54,13 @@ object ^ extends js.Object {
     options: nodeLib.cryptoMod.CipherCCMOptions
   ): nodeLib.cryptoMod.CipherCCM = js.native
   def createCipheriv(
+    algorithm: nodeLib.cryptoMod.CipherCCMTypes,
+    key: nodeLib.cryptoMod.CipherKey,
+    iv: scala.Null,
+    options: nodeLib.cryptoMod.CipherCCMOptions
+  ): nodeLib.cryptoMod.CipherCCM = js.native
+  def createCipheriv(algorithm: nodeLib.cryptoMod.CipherGCMTypes, key: nodeLib.cryptoMod.CipherKey): nodeLib.cryptoMod.CipherGCM = js.native
+  def createCipheriv(
     algorithm: nodeLib.cryptoMod.CipherGCMTypes,
     key: nodeLib.cryptoMod.CipherKey,
     iv: nodeLib.cryptoMod.BinaryLike
@@ -55,6 +69,12 @@ object ^ extends js.Object {
     algorithm: nodeLib.cryptoMod.CipherGCMTypes,
     key: nodeLib.cryptoMod.CipherKey,
     iv: nodeLib.cryptoMod.BinaryLike,
+    options: nodeLib.cryptoMod.CipherGCMOptions
+  ): nodeLib.cryptoMod.CipherGCM = js.native
+  def createCipheriv(
+    algorithm: nodeLib.cryptoMod.CipherGCMTypes,
+    key: nodeLib.cryptoMod.CipherKey,
+    iv: scala.Null,
     options: nodeLib.cryptoMod.CipherGCMOptions
   ): nodeLib.cryptoMod.CipherGCM = js.native
   /** @deprecated since v10.0.0 use createCipheriv() */
@@ -77,11 +97,18 @@ object ^ extends js.Object {
     password: nodeLib.cryptoMod.BinaryLike,
     options: nodeLib.cryptoMod.CipherGCMOptions
   ): nodeLib.cryptoMod.DecipherGCM = js.native
+  def createDecipheriv(algorithm: java.lang.String, key: nodeLib.cryptoMod.BinaryLike): nodeLib.cryptoMod.Decipher = js.native
   def createDecipheriv(algorithm: java.lang.String, key: nodeLib.cryptoMod.BinaryLike, iv: nodeLib.cryptoMod.BinaryLike): nodeLib.cryptoMod.Decipher = js.native
   def createDecipheriv(
     algorithm: java.lang.String,
     key: nodeLib.cryptoMod.BinaryLike,
     iv: nodeLib.cryptoMod.BinaryLike,
+    options: nodeLib.streamMod.internalNs.TransformOptions
+  ): nodeLib.cryptoMod.Decipher = js.native
+  def createDecipheriv(
+    algorithm: java.lang.String,
+    key: nodeLib.cryptoMod.BinaryLike,
+    iv: scala.Null,
     options: nodeLib.streamMod.internalNs.TransformOptions
   ): nodeLib.cryptoMod.Decipher = js.native
   def createDecipheriv(
@@ -91,6 +118,13 @@ object ^ extends js.Object {
     options: nodeLib.cryptoMod.CipherCCMOptions
   ): nodeLib.cryptoMod.DecipherCCM = js.native
   def createDecipheriv(
+    algorithm: nodeLib.cryptoMod.CipherCCMTypes,
+    key: nodeLib.cryptoMod.BinaryLike,
+    iv: scala.Null,
+    options: nodeLib.cryptoMod.CipherCCMOptions
+  ): nodeLib.cryptoMod.DecipherCCM = js.native
+  def createDecipheriv(algorithm: nodeLib.cryptoMod.CipherGCMTypes, key: nodeLib.cryptoMod.BinaryLike): nodeLib.cryptoMod.DecipherGCM = js.native
+  def createDecipheriv(
     algorithm: nodeLib.cryptoMod.CipherGCMTypes,
     key: nodeLib.cryptoMod.BinaryLike,
     iv: nodeLib.cryptoMod.BinaryLike
@@ -99,6 +133,12 @@ object ^ extends js.Object {
     algorithm: nodeLib.cryptoMod.CipherGCMTypes,
     key: nodeLib.cryptoMod.BinaryLike,
     iv: nodeLib.cryptoMod.BinaryLike,
+    options: nodeLib.cryptoMod.CipherGCMOptions
+  ): nodeLib.cryptoMod.DecipherGCM = js.native
+  def createDecipheriv(
+    algorithm: nodeLib.cryptoMod.CipherGCMTypes,
+    key: nodeLib.cryptoMod.BinaryLike,
+    iv: scala.Null,
     options: nodeLib.cryptoMod.CipherGCMOptions
   ): nodeLib.cryptoMod.DecipherGCM = js.native
   def createDiffieHellman(prime_length: scala.Double): nodeLib.cryptoMod.DiffieHellman = js.native
@@ -202,6 +242,45 @@ object ^ extends js.Object {
       mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem
     ]
   ): nodeLib.cryptoMod.KeyPairSyncResult[java.lang.String, java.lang.String] = js.native
+  @JSName("generateKeyPairSync")
+  def generateKeyPairSync_dsa(`type`: mzLib.mzLibStrings.dsa, options: nodeLib.cryptoMod.DSAKeyPairKeyObjectOptions): nodeLib.cryptoMod.KeyPairKeyObjectResult = js.native
+  @JSName("generateKeyPairSync")
+  def generateKeyPairSync_ec(`type`: mzLib.mzLibStrings.ec, options: nodeLib.cryptoMod.ECKeyPairKeyObjectOptions): nodeLib.cryptoMod.KeyPairKeyObjectResult = js.native
+  @JSName("generateKeyPairSync")
+  def generateKeyPairSync_rsa(`type`: mzLib.mzLibStrings.rsa, options: nodeLib.cryptoMod.RSAKeyPairKeyObjectOptions): nodeLib.cryptoMod.KeyPairKeyObjectResult = js.native
+  @JSName("generateKeyPair")
+  def generateKeyPair_dsa(
+    `type`: mzLib.mzLibStrings.dsa,
+    options: nodeLib.cryptoMod.DSAKeyPairKeyObjectOptions,
+    callback: js.Function3[
+      /* err */ nodeLib.Error | scala.Null, 
+      /* publicKey */ nodeLib.cryptoMod.KeyObject, 
+      /* privateKey */ nodeLib.cryptoMod.KeyObject, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  @JSName("generateKeyPair")
+  def generateKeyPair_ec(
+    `type`: mzLib.mzLibStrings.ec,
+    options: nodeLib.cryptoMod.ECKeyPairKeyObjectOptions,
+    callback: js.Function3[
+      /* err */ nodeLib.Error | scala.Null, 
+      /* publicKey */ nodeLib.cryptoMod.KeyObject, 
+      /* privateKey */ nodeLib.cryptoMod.KeyObject, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  @JSName("generateKeyPair")
+  def generateKeyPair_rsa(
+    `type`: mzLib.mzLibStrings.rsa,
+    options: nodeLib.cryptoMod.RSAKeyPairKeyObjectOptions,
+    callback: js.Function3[
+      /* err */ nodeLib.Error | scala.Null, 
+      /* publicKey */ nodeLib.cryptoMod.KeyObject, 
+      /* privateKey */ nodeLib.cryptoMod.KeyObject, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   def getCiphers(): js.Array[java.lang.String] = js.native
   def getCurves(): js.Array[java.lang.String] = js.native
   def getDiffieHellman(group_name: java.lang.String): nodeLib.cryptoMod.DiffieHellman = js.native

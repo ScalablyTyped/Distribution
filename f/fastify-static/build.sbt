@@ -1,32 +1,32 @@
 organization := "org.scalablytyped"
 name := "fastify-static"
-version := "2.3.4-300c07"
+version := "2.3.4-616b9c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ajv" % "6.9.2-824407",
-  "org.scalablytyped" %%% "avvio" % "6.1.0-a597c4",
+  "org.scalablytyped" %%% "avvio" % "6.1.0-3a0eb2",
   "org.scalablytyped" %%% "debug" % "4.1-dt-20190214Z-779d70",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-598466",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f61f0c",
-  "org.scalablytyped" %%% "fastify" % "2.0.0-55c455",
-  "org.scalablytyped" %%% "fastify-plugin" % "1.5.0-f48473",
+  "org.scalablytyped" %%% "fastify" % "2.0.0-e266a1",
+  "org.scalablytyped" %%% "fastify-plugin" % "1.5.0-385f8c",
   "org.scalablytyped" %%% "fastq" % "1.6.0-025475",
-  "org.scalablytyped" %%% "find-my-way" % "2.0.1-4d385e",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-eb36a4",
+  "org.scalablytyped" %%% "find-my-way" % "2.0.1-cd1ad0",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-105e95",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-1dd39e",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-8c05a2",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
-  "org.scalablytyped" %%% "pino" % "5.8-dt-20190212Z-9410dc",
-  "org.scalablytyped" %%% "proxy-addr" % "2.0-dt-20180214Z-7272f2",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
+  "org.scalablytyped" %%% "pino" % "5.8-dt-20190212Z-05dbe7",
+  "org.scalablytyped" %%% "proxy-addr" % "2.0-dt-20180214Z-550fe6",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-2503b8",
-  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20190227Z-c1b943",
-  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-216e1b",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20190227Z-0e0473",
+  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-a4554d",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-703481",
-  "org.scalablytyped" %%% "send" % "v0.14.1-dt-20180214Z-1ca95f",
-  "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-92275d",
+  "org.scalablytyped" %%% "send" % "v0.14.1-dt-20180214Z-d346b0",
+  "org.scalablytyped" %%% "sonic-boom" % "0.6-dt-20190212Z-153037",
   "org.scalablytyped" %%% "std" % "3.3-6e4388",
   "org.scalablytyped" %%% "uri-js" % "4.2.2-4b6ee3")
 publishArtifact in packageDoc := false

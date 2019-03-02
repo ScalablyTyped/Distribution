@@ -11,6 +11,10 @@ trait StringSchema
   def email(): StringSchema = js.native
   def email(message: TestOptionsMessage): StringSchema = js.native
   def ensure(): StringSchema = js.native
+  def length(limit: scala.Double): StringSchema = js.native
+  def length(limit: scala.Double, message: TestOptionsMessage): StringSchema = js.native
+  def length(limit: Ref): StringSchema = js.native
+  def length(limit: Ref, message: TestOptionsMessage): StringSchema = js.native
   def lowercase(): StringSchema = js.native
   def lowercase(message: TestOptionsMessage): StringSchema = js.native
   def matches(regex: stdLib.RegExp): StringSchema = js.native

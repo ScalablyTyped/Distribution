@@ -10,15 +10,15 @@ trait Anon_Brotli extends js.Object {
   /**
     * Brotli compressor (br)
     */
-  val brotliNs: Anon_BufCompressCompressStreamCompressSync
+  val brotliNs: Anon_BufCompressCompressStream
   /**
     * Deflate compressor
     */
-  val deflateNs: Anon_BufCompressCompressStream
+  val deflateNs: Anon_BufCompress
   /**
     * GZIP compressor
     */
-  val gzNs: Anon_BufCompress
+  val gzNs: Anon_Buf
   /**
     * lzma compressor + common lzma functionality
     */
@@ -37,9 +37,9 @@ object Anon_Brotli {
   @scala.inline
   def apply(
     INs: Anon_Lzma,
-    brotliNs: Anon_BufCompressCompressStreamCompressSync,
-    deflateNs: Anon_BufCompressCompressStream,
-    gzNs: Anon_BufCompress,
+    brotliNs: Anon_BufCompressCompressStream,
+    deflateNs: Anon_BufCompress,
+    gzNs: Anon_Buf,
     lzmaNs: Anon_AloneDecoder,
     snappyNs: Anon_BufCompressCompressSync,
     xzNs: Anon_AloneDecoderAloneEncoder

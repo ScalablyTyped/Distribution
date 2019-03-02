@@ -206,11 +206,6 @@ trait Collection[TSchema] extends js.Object {
   def geoHaystackSearch(x: scala.Double, y: scala.Double, callback: MongoCallback[_]): scala.Unit = js.native
   def geoHaystackSearch(x: scala.Double, y: scala.Double, options: GeoHaystackSearchOptions): js.Promise[_] = js.native
   def geoHaystackSearch(x: scala.Double, y: scala.Double, options: GeoHaystackSearchOptions, callback: MongoCallback[_]): scala.Unit = js.native
-  def geoNear(x: scala.Double, y: scala.Double): js.Promise[_] = js.native
-  /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#geoNear */
-  def geoNear(x: scala.Double, y: scala.Double, callback: MongoCallback[_]): scala.Unit = js.native
-  def geoNear(x: scala.Double, y: scala.Double, options: GeoNearOptions): js.Promise[_] = js.native
-  def geoNear(x: scala.Double, y: scala.Double, options: GeoNearOptions, callback: MongoCallback[_]): scala.Unit = js.native
   def group(
     keys: js.Array[_],
     condition: js.Object,
@@ -235,7 +230,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Array[_],
@@ -244,7 +239,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -271,7 +266,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Array[_],
@@ -280,7 +275,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -307,7 +302,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Array[_],
@@ -316,7 +311,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -343,7 +338,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Array[_],
@@ -352,7 +347,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -379,7 +374,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Function,
@@ -388,7 +383,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -415,7 +410,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Function,
@@ -424,7 +419,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -451,7 +446,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Function,
@@ -460,7 +455,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -487,7 +482,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Function,
@@ -496,9 +491,10 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
+  /** @deprecated MongoDB 3.6 or higher no longer supports the group command. We recommend rewriting using the aggregation framework. */
   def group(
     keys: js.Object,
     condition: js.Object,
@@ -508,6 +504,7 @@ trait Collection[TSchema] extends js.Object {
     command: scala.Boolean
   ): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#group */
+  /** @deprecated MongoDB 3.6 or higher no longer supports the group command. We recommend rewriting using the aggregation framework. */
   def group(
     keys: js.Object,
     condition: js.Object,
@@ -524,8 +521,9 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
+  /** @deprecated MongoDB 3.6 or higher no longer supports the group command. We recommend rewriting using the aggregation framework. */
   def group(
     keys: js.Object,
     condition: js.Object,
@@ -533,7 +531,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -560,7 +558,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Object,
@@ -569,7 +567,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -596,7 +594,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Object,
@@ -605,7 +603,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -632,7 +630,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: js.Object,
@@ -641,7 +639,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -668,7 +666,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: Code,
@@ -677,7 +675,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -704,7 +702,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: Code,
@@ -713,7 +711,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: js.Function,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -740,7 +738,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: Code,
@@ -749,7 +747,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: js.Function,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def group(
@@ -776,7 +774,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString
+    options: mongodbLib.Anon_ReadPreferenceSession
   ): js.Promise[_] = js.native
   def group(
     keys: Code,
@@ -785,7 +783,7 @@ trait Collection[TSchema] extends js.Object {
     reduce: Code,
     finalize: Code,
     command: scala.Boolean,
-    options: mongodbLib.Anon_ReadPreferenceString,
+    options: mongodbLib.Anon_ReadPreferenceSession,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
   def indexExists(indexes: java.lang.String): js.Promise[scala.Boolean] = js.native
@@ -868,19 +866,34 @@ trait Collection[TSchema] extends js.Object {
     options: MapReduceOptions,
     callback: MongoCallback[_]
   ): scala.Unit = js.native
-  def mapReduce(map: java.lang.String, reduce: js.Function): js.Promise[_] = js.native
-  def mapReduce(map: java.lang.String, reduce: js.Function, callback: MongoCallback[_]): scala.Unit = js.native
-  def mapReduce(map: java.lang.String, reduce: js.Function, options: MapReduceOptions): js.Promise[_] = js.native
-  def mapReduce(map: java.lang.String, reduce: js.Function, options: MapReduceOptions, callback: MongoCallback[_]): scala.Unit = js.native
-  def mapReduce(map: js.Function, reduce: java.lang.String): js.Promise[_] = js.native
-  def mapReduce(map: js.Function, reduce: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
-  def mapReduce(map: js.Function, reduce: java.lang.String, options: MapReduceOptions): js.Promise[_] = js.native
-  def mapReduce(map: js.Function, reduce: java.lang.String, options: MapReduceOptions, callback: MongoCallback[_]): scala.Unit = js.native
-  def mapReduce(map: js.Function, reduce: js.Function): js.Promise[_] = js.native
+  def mapReduce(map: java.lang.String, reduce: CollectionReduceFunction): js.Promise[_] = js.native
+  def mapReduce(map: java.lang.String, reduce: CollectionReduceFunction, callback: MongoCallback[_]): scala.Unit = js.native
+  def mapReduce(map: java.lang.String, reduce: CollectionReduceFunction, options: MapReduceOptions): js.Promise[_] = js.native
+  def mapReduce(
+    map: java.lang.String,
+    reduce: CollectionReduceFunction,
+    options: MapReduceOptions,
+    callback: MongoCallback[_]
+  ): scala.Unit = js.native
+  def mapReduce(map: CollectionMapFunction, reduce: java.lang.String): js.Promise[_] = js.native
+  def mapReduce(map: CollectionMapFunction, reduce: java.lang.String, callback: MongoCallback[_]): scala.Unit = js.native
+  def mapReduce(map: CollectionMapFunction, reduce: java.lang.String, options: MapReduceOptions): js.Promise[_] = js.native
+  def mapReduce(
+    map: CollectionMapFunction,
+    reduce: java.lang.String,
+    options: MapReduceOptions,
+    callback: MongoCallback[_]
+  ): scala.Unit = js.native
+  def mapReduce(map: CollectionMapFunction, reduce: CollectionReduceFunction): js.Promise[_] = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#mapReduce */
-  def mapReduce(map: js.Function, reduce: js.Function, callback: MongoCallback[_]): scala.Unit = js.native
-  def mapReduce(map: js.Function, reduce: js.Function, options: MapReduceOptions): js.Promise[_] = js.native
-  def mapReduce(map: js.Function, reduce: js.Function, options: MapReduceOptions, callback: MongoCallback[_]): scala.Unit = js.native
+  def mapReduce(map: CollectionMapFunction, reduce: CollectionReduceFunction, callback: MongoCallback[_]): scala.Unit = js.native
+  def mapReduce(map: CollectionMapFunction, reduce: CollectionReduceFunction, options: MapReduceOptions): js.Promise[_] = js.native
+  def mapReduce(
+    map: CollectionMapFunction,
+    reduce: CollectionReduceFunction,
+    options: MapReduceOptions,
+    callback: MongoCallback[_]
+  ): scala.Unit = js.native
   /** http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#options */
   def options(): js.Promise[_] = js.native
   def options(callback: MongoCallback[_]): scala.Unit = js.native

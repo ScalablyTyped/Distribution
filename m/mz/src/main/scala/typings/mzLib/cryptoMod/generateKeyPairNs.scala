@@ -29,5 +29,11 @@ object generateKeyPairNs extends js.Object {
       mzLib.mzLibStrings.der | mzLib.mzLibStrings.pem
     ]
   ): js.Promise[nodeLib.Anon_PrivateKey] = js.native
+  @JSName("__promisify__")
+  def __promisify___dsa(`type`: mzLib.mzLibStrings.dsa, options: nodeLib.cryptoMod.DSAKeyPairKeyObjectOptions): js.Promise[nodeLib.cryptoMod.KeyPairKeyObjectResult] = js.native
+  @JSName("__promisify__")
+  def __promisify___ec(`type`: mzLib.mzLibStrings.ec, options: nodeLib.cryptoMod.ECKeyPairKeyObjectOptions): js.Promise[nodeLib.cryptoMod.KeyPairKeyObjectResult] = js.native
+  @JSName("__promisify__")
+  def __promisify___rsa(`type`: mzLib.mzLibStrings.rsa, options: nodeLib.cryptoMod.RSAKeyPairKeyObjectOptions): js.Promise[nodeLib.cryptoMod.KeyPairKeyObjectResult] = js.native
 }
 

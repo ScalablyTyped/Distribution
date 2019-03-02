@@ -46,7 +46,7 @@ class ChildEventRegistration () extends EventRegistration {
   def this(`callbacks_`: scala.Null, `cancelCallback_`: scala.Null, `context_`: js.Object) = this()
   var `callbacks_`: js.Any = js.native
   var `cancelCallback_`: js.Any = js.native
-  var `context_`: js.Any = js.native
+  var `context_`: js.UndefOr[js.Any] = js.native
   /**
     * @param {!Error} error
     * @param {!Path} path

@@ -44,7 +44,7 @@ trait Anon_Assert extends js.Object {
   val utilNs: Anon_Arg1 = js.native
   val v8Ns: Anon_FlagsGetHeapSpaceStatistics = js.native
   val vmNs: Anon_Code = js.native
-  val zlibNs: Anon_Buf = js.native
+  val zlibNs: Anon_BrotliCompress = js.native
   def assert(value: js.Any): scala.Unit = js.native
   def assert(value: js.Any, message: java.lang.String): scala.Unit = js.native
 }

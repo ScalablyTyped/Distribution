@@ -28,7 +28,7 @@ class JSDOM () extends js.Object {
     * Behind the scenes, a jsdom Window is indeed a VM context.
     * To get access to this ability, use the runVMScript() method.
     */
-  def runVMScript(script: nodeLib.vmMod.Script): scala.Unit = js.native
+  def runVMScript(script: nodeLib.vmMod.Script): js.Any = js.native
   /**
     * The serialize() method will return the HTML serialization of the document, including the doctype.
     */

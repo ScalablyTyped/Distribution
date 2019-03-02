@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "redux-saga"
-version := "1.0.2-71b05a"
+version := "1.0.2-f24cc0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
   "org.scalablytyped" %%% "redux" % "4.0.1-c1f77c",
-  "org.scalablytyped" %%% "redux-saga__core" % "1.0.2-33cbad",
+  "org.scalablytyped" %%% "redux-saga__core" % "1.0.2-7b0d28",
   "org.scalablytyped" %%% "redux-saga__deferred" % "1.0.1-b94680",
   "org.scalablytyped" %%% "redux-saga__delay-p" % "1.0.1-0d8f53",
-  "org.scalablytyped" %%% "redux-saga__is" % "1.0.2-18ca66",
+  "org.scalablytyped" %%% "redux-saga__is" % "1.0.2-6ec63a",
   "org.scalablytyped" %%% "redux-saga__symbols" % "1.0.1-4c5f6c",
   "org.scalablytyped" %%% "redux-saga__types" % "1.0.2-969f0c",
   "org.scalablytyped" %%% "std" % "3.3-6e4388",

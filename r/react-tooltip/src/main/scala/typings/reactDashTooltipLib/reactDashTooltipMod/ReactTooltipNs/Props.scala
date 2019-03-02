@@ -9,6 +9,7 @@ trait Props extends js.Object {
   var afterHide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var afterShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var border: js.UndefOr[scala.Boolean] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var `class`: js.UndefOr[java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var delayHide: js.UndefOr[scala.Double] = js.undefined
@@ -43,6 +44,7 @@ object Props {
     afterHide: js.Function0[scala.Unit] = null,
     afterShow: js.Function0[scala.Unit] = null,
     border: js.UndefOr[scala.Boolean] = js.undefined,
+    children: reactLib.reactMod.ReactNs.ReactNode = null,
     `class`: java.lang.String = null,
     className: java.lang.String = null,
     delayHide: scala.Int | scala.Double = null,
@@ -72,6 +74,7 @@ object Props {
     if (afterHide != null) __obj.updateDynamic("afterHide")(afterHide)
     if (afterShow != null) __obj.updateDynamic("afterShow")(afterShow)
     if (!js.isUndefined(border)) __obj.updateDynamic("border")(border)
+    if (children != null) __obj.updateDynamic("children")(children.asInstanceOf[js.Any])
     if (`class` != null) __obj.updateDynamic("class")(`class`)
     if (className != null) __obj.updateDynamic("className")(className)
     if (delayHide != null) __obj.updateDynamic("delayHide")(delayHide.asInstanceOf[js.Any])

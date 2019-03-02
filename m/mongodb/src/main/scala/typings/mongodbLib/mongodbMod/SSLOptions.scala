@@ -9,7 +9,13 @@ trait SSLOptions extends js.Object {
   /**
     * Default: true; Server identity checking during SSL
     */
-  var checkServerIdentity: js.UndefOr[scala.Boolean | js.Function] = js.undefined
+  var checkServerIdentity: js.UndefOr[
+    scala.Boolean | (js.Function2[
+      /* host */ java.lang.String, 
+      /* cert */ nodeLib.tlsMod.PeerCertificate, 
+      js.UndefOr[nodeLib.Error]
+    ])
+  ] = js.undefined
   /**
     * Passed directly through to tls.createSecureContext. See https://nodejs.org/dist/latest-v9.x/docs/api/tls.html#tls_tls_createsecurecontext_options for more info.
     */
@@ -63,7 +69,11 @@ trait SSLOptions extends js.Object {
 object SSLOptions {
   @scala.inline
   def apply(
-    checkServerIdentity: scala.Boolean | js.Function = null,
+    checkServerIdentity: scala.Boolean | (js.Function2[
+      /* host */ java.lang.String, 
+      /* cert */ nodeLib.tlsMod.PeerCertificate, 
+      js.UndefOr[nodeLib.Error]
+    ]) = null,
     ciphers: java.lang.String = null,
     ecdhCurve: java.lang.String = null,
     minSize: scala.Int | scala.Double = null,

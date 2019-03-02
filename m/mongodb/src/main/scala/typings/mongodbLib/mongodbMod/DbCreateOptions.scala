@@ -46,14 +46,14 @@ trait DbCreateOptions extends CommonOptions {
   /**
     * Default: true; Promotes BSON values to native types where possible, set to false to only receive wrapper types.
     */
-  var promoteValues: js.UndefOr[js.Object] = js.undefined
+  var promoteValues: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Return document results as raw BSON buffers.
     */
   var raw: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * https://docs.mongodb.com/manual/reference/read-concern/#read-concern
-    **/
+    */
   var readConcern: js.UndefOr[ReadConcern] = js.undefined
   /**
     * the prefered read preference. use 'ReadPreference' class.
@@ -78,7 +78,7 @@ object DbCreateOptions {
     promiseLibrary: js.Object = null,
     promoteBuffers: js.UndefOr[scala.Boolean] = js.undefined,
     promoteLongs: js.UndefOr[scala.Boolean] = js.undefined,
-    promoteValues: js.Object = null,
+    promoteValues: js.UndefOr[scala.Boolean] = js.undefined,
     raw: js.UndefOr[scala.Boolean] = js.undefined,
     readConcern: ReadConcern = null,
     readPreference: ReadPreference | java.lang.String = null,
@@ -98,7 +98,7 @@ object DbCreateOptions {
     if (promiseLibrary != null) __obj.updateDynamic("promiseLibrary")(promiseLibrary)
     if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers)
     if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
-    if (promoteValues != null) __obj.updateDynamic("promoteValues")(promoteValues)
+    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
     if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern)
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])

@@ -7,16 +7,13 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_Buf extends js.Object {
-  val Z_ASCII: scala.Double = js.native
   val Z_BEST_COMPRESSION: scala.Double = js.native
   val Z_BEST_SPEED: scala.Double = js.native
-  val Z_BINARY: scala.Double = js.native
   val Z_BLOCK: scala.Double = js.native
   val Z_BUF_ERROR: scala.Double = js.native
   val Z_DATA_ERROR: scala.Double = js.native
   val Z_DEFAULT_COMPRESSION: scala.Double = js.native
   val Z_DEFAULT_STRATEGY: scala.Double = js.native
-  val Z_DEFLATED: scala.Double = js.native
   val Z_ERRNO: scala.Double = js.native
   val Z_FILTERED: scala.Double = js.native
   val Z_FINISH: scala.Double = js.native
@@ -26,7 +23,6 @@ trait Anon_Buf extends js.Object {
   val Z_MEM_ERROR: scala.Double = js.native
   val Z_NEED_DICT: scala.Double = js.native
   val Z_NO_COMPRESSION: scala.Double = js.native
-  // Constants
   val Z_NO_FLUSH: scala.Double = js.native
   val Z_OK: scala.Double = js.native
   val Z_PARTIAL_FLUSH: scala.Double = js.native
@@ -34,101 +30,89 @@ trait Anon_Buf extends js.Object {
   val Z_STREAM_END: scala.Double = js.native
   val Z_STREAM_ERROR: scala.Double = js.native
   val Z_SYNC_FLUSH: scala.Double = js.native
-  val Z_TEXT: scala.Double = js.native
   val Z_TREES: scala.Double = js.native
-  val Z_UNKNOWN: scala.Double = js.native
   val Z_VERSION_ERROR: scala.Double = js.native
-  val constantsNs: Anon_ZBESTCOMPRESSION = js.native
-  def createDeflate(): nodeLib.zlibMod.Deflate = js.native
-  def createDeflate(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Deflate = js.native
-  def createDeflateRaw(): nodeLib.zlibMod.DeflateRaw = js.native
-  def createDeflateRaw(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.DeflateRaw = js.native
-  def createGunzip(): nodeLib.zlibMod.Gunzip = js.native
-  def createGunzip(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Gunzip = js.native
-  def createGzip(): nodeLib.zlibMod.Gzip = js.native
-  def createGzip(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Gzip = js.native
-  def createInflate(): nodeLib.zlibMod.Inflate = js.native
-  def createInflate(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Inflate = js.native
-  def createInflateRaw(): nodeLib.zlibMod.InflateRaw = js.native
-  def createInflateRaw(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.InflateRaw = js.native
-  def createUnzip(): nodeLib.zlibMod.Unzip = js.native
-  def createUnzip(options: nodeLib.zlibMod.ZlibOptions): nodeLib.zlibMod.Unzip = js.native
-  def deflate(
-    buf: nodeLib.zlibMod.InputType,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def deflate(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def deflateRaw(
-    buf: nodeLib.zlibMod.InputType,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def deflateRaw(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def deflateRawSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def deflateRawSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def deflateSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def deflateSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def gunzip(
-    buf: nodeLib.zlibMod.InputType,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def gunzip(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def gunzipSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def gunzipSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def gzip(
-    buf: nodeLib.zlibMod.InputType,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def gzip(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def gzipSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def gzipSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def inflate(
-    buf: nodeLib.zlibMod.InputType,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def inflate(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def inflateRaw(
-    buf: nodeLib.zlibMod.InputType,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def inflateRaw(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def inflateRawSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def inflateRawSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def inflateSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def inflateSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
-  def unzip(
-    buf: nodeLib.zlibMod.InputType,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def unzip(
-    buf: nodeLib.zlibMod.InputType,
-    options: nodeLib.zlibMod.ZlibOptions,
-    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* result */ nodeLib.Buffer, scala.Unit]
-  ): scala.Unit = js.native
-  def unzipSync(buf: nodeLib.zlibMod.InputType): nodeLib.Buffer = js.native
-  def unzipSync(buf: nodeLib.zlibMod.InputType, options: nodeLib.zlibMod.ZlibOptions): nodeLib.Buffer = js.native
+  /**
+    * Compresses the given string or buffer
+    */
+  def compress(buf: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
+  /**
+    * Compresses the given string or buffer
+    */
+  def compress(
+    buf: java.lang.String,
+    options: (adoneLib.adoneNs.compressorNs.INs.zlibNs.CompressOptions with Anon_Info) | adoneLib.adoneNs.compressorNs.INs.zlibNs.CompressOptions
+  ): js.Promise[adoneLib.adoneNs.compressorNs.INs.zlibNs.GzipInfo] = js.native
+  def compress(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
+  def compress(
+    buf: nodeLib.Buffer,
+    options: (adoneLib.adoneNs.compressorNs.INs.zlibNs.CompressOptions with Anon_Info) | adoneLib.adoneNs.compressorNs.INs.zlibNs.CompressOptions
+  ): js.Promise[adoneLib.adoneNs.compressorNs.INs.zlibNs.GzipInfo] = js.native
+  /**
+    * Creates a compress stream
+    */
+  def compressStream(): nodeLib.zlibMod.Gzip = js.native
+  def compressStream(options: adoneLib.adoneNs.compressorNs.INs.zlibNs.CompressStreamOptions): nodeLib.zlibMod.Gzip = js.native
+  /**
+    * Synchronously compreses the given string or buffer
+    */
+  def compressSync(buf: java.lang.String): nodeLib.Buffer = js.native
+  def compressSync(buf: java.lang.String, options: adoneLib.adoneNs.compressorNs.INs.zlibNs.CompressOptions): nodeLib.Buffer = js.native
+  def compressSync(buf: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def compressSync(buf: nodeLib.Buffer, options: adoneLib.adoneNs.compressorNs.INs.zlibNs.CompressOptions): nodeLib.Buffer = js.native
+  /**
+    * Synchronously compreses the given string or buffer
+    */
+  @JSName("compressSync")
+  def compressSync_GzipInfo(
+    buf: java.lang.String,
+    options: adoneLib.adoneNs.compressorNs.INs.zlibNs.CompressOptions with Anon_Info
+  ): adoneLib.adoneNs.compressorNs.INs.zlibNs.GzipInfo = js.native
+  @JSName("compressSync")
+  def compressSync_GzipInfo(
+    buf: nodeLib.Buffer,
+    options: adoneLib.adoneNs.compressorNs.INs.zlibNs.CompressOptions with Anon_Info
+  ): adoneLib.adoneNs.compressorNs.INs.zlibNs.GzipInfo = js.native
+  /**
+    * Decompresses the given string or buffer
+    */
+  def decompress(buf: java.lang.String): js.Promise[nodeLib.Buffer] = js.native
+  /**
+    * Decompresses the given string or buffer
+    */
+  def decompress(
+    buf: java.lang.String,
+    options: (adoneLib.adoneNs.compressorNs.INs.zlibNs.DecompressOptions with Anon_Info) | adoneLib.adoneNs.compressorNs.INs.zlibNs.DecompressOptions
+  ): js.Promise[adoneLib.adoneNs.compressorNs.INs.zlibNs.GunzipInfo] = js.native
+  def decompress(buf: nodeLib.Buffer): js.Promise[nodeLib.Buffer] = js.native
+  def decompress(
+    buf: nodeLib.Buffer,
+    options: (adoneLib.adoneNs.compressorNs.INs.zlibNs.DecompressOptions with Anon_Info) | adoneLib.adoneNs.compressorNs.INs.zlibNs.DecompressOptions
+  ): js.Promise[adoneLib.adoneNs.compressorNs.INs.zlibNs.GunzipInfo] = js.native
+  /**
+    * Creates a decompress stream
+    */
+  def decompressStream(): nodeLib.zlibMod.Gunzip = js.native
+  def decompressStream(options: adoneLib.adoneNs.compressorNs.INs.zlibNs.DecompressStreamOptions): nodeLib.zlibMod.Gunzip = js.native
+  /**
+    * Synchronously decompresses the given string or buffer
+    */
+  def decompressSync(buf: java.lang.String): nodeLib.Buffer = js.native
+  /**
+    * Synchronously decompresses the given string or buffer
+    */
+  def decompressSync(
+    buf: java.lang.String,
+    options: adoneLib.adoneNs.compressorNs.INs.zlibNs.DecompressOptions with Anon_Info
+  ): adoneLib.adoneNs.compressorNs.INs.zlibNs.GunzipInfo = js.native
+  def decompressSync(buf: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def decompressSync(
+    buf: nodeLib.Buffer,
+    options: adoneLib.adoneNs.compressorNs.INs.zlibNs.DecompressOptions with Anon_Info
+  ): adoneLib.adoneNs.compressorNs.INs.zlibNs.GunzipInfo = js.native
+  @JSName("decompressSync")
+  def decompressSync_Buffer(buf: java.lang.String, options: adoneLib.adoneNs.compressorNs.INs.zlibNs.DecompressOptions): nodeLib.Buffer = js.native
+  @JSName("decompressSync")
+  def decompressSync_Buffer(buf: nodeLib.Buffer, options: adoneLib.adoneNs.compressorNs.INs.zlibNs.DecompressOptions): nodeLib.Buffer = js.native
 }
 

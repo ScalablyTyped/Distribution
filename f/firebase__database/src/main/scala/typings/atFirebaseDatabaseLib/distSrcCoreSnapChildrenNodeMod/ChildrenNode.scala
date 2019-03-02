@@ -23,6 +23,15 @@ class ChildrenNode protected ()
   var `lazyHash_`: js.Any = js.native
   val `priorityNode_`: js.Any = js.native
   /**
+    * Returns a SortedMap ordered by index, or null if the default (by-key) ordering can be used
+    * instead.
+    *
+    * @private
+    * @param {!Index} indexDefinition
+    * @return {?SortedMap.<NamedNode, Node>}
+    */
+  var `resolveIndex_`: js.Any = js.native
+  /**
     * @inheritDoc
     */
   def compareTo(other: ChildrenNode): scala.Double = js.native
@@ -92,15 +101,6 @@ class ChildrenNode protected ()
     atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node, 
     atFirebaseDatabaseLib.distSrcCoreSnapChildrenNodeMod.distSrcCoreSnapNodeMod.NamedNode
   ] = js.native
-  /**
-    * Returns a SortedMap ordered by index, or null if the default (by-key) ordering can be used
-    * instead.
-    *
-    * @private
-    * @param {!Index} indexDefinition
-    * @return {?SortedMap.<NamedNode, Node>}
-    */
-  /* private */ def `resolveIndex_`(indexDefinition: js.Any): js.Any = js.native
 }
 
 /* static members */

@@ -9,7 +9,7 @@ trait IStringifyOptions extends js.Object {
   var addQueryPrefix: js.UndefOr[scala.Boolean] = js.undefined
   var allowDots: js.UndefOr[scala.Boolean] = js.undefined
   var arrayFormat: js.UndefOr[
-    qsLib.qsLibStrings.indices | qsLib.qsLibStrings.brackets | qsLib.qsLibStrings.repeat
+    qsLib.qsLibStrings.indices | qsLib.qsLibStrings.brackets | qsLib.qsLibStrings.repeat | qsLib.qsLibStrings.comma
   ] = js.undefined
   var delimiter: js.UndefOr[java.lang.String] = js.undefined
   var encode: js.UndefOr[scala.Boolean] = js.undefined
@@ -31,7 +31,7 @@ object IStringifyOptions {
   def apply(
     addQueryPrefix: js.UndefOr[scala.Boolean] = js.undefined,
     allowDots: js.UndefOr[scala.Boolean] = js.undefined,
-    arrayFormat: qsLib.qsLibStrings.indices | qsLib.qsLibStrings.brackets | qsLib.qsLibStrings.repeat = null,
+    arrayFormat: qsLib.qsLibStrings.indices | qsLib.qsLibStrings.brackets | qsLib.qsLibStrings.repeat | qsLib.qsLibStrings.comma = null,
     delimiter: java.lang.String = null,
     encode: js.UndefOr[scala.Boolean] = js.undefined,
     encodeValuesOnly: js.UndefOr[scala.Boolean] = js.undefined,

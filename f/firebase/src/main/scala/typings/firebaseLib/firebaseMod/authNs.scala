@@ -200,7 +200,7 @@ object authNs extends js.Object {
   object FacebookAuthProvider extends js.Object {
     var FACEBOOK_SIGN_IN_METHOD: java.lang.String = js.native
     var PROVIDER_ID: java.lang.String = js.native
-    def credential(token: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
+    def credential(token: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
   }
   
   /* static members */
@@ -208,7 +208,7 @@ object authNs extends js.Object {
   object GithubAuthProvider extends js.Object {
     var GITHUB_SIGN_IN_METHOD: java.lang.String = js.native
     var PROVIDER_ID: java.lang.String = js.native
-    def credential(token: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
+    def credential(token: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
   }
   
   /* static members */
@@ -216,10 +216,10 @@ object authNs extends js.Object {
   object GoogleAuthProvider extends js.Object {
     var GOOGLE_SIGN_IN_METHOD: java.lang.String = js.native
     var PROVIDER_ID: java.lang.String = js.native
-    def credential(): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
-    def credential(idToken: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
-    def credential(idToken: java.lang.String, accessToken: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
-    def credential(idToken: scala.Null, accessToken: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
+    def credential(): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
+    def credential(idToken: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
+    def credential(idToken: java.lang.String, accessToken: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
+    def credential(idToken: scala.Null, accessToken: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
   }
   
   /* static members */
@@ -235,7 +235,7 @@ object authNs extends js.Object {
   object TwitterAuthProvider extends js.Object {
     var PROVIDER_ID: java.lang.String = js.native
     var TWITTER_SIGN_IN_METHOD: java.lang.String = js.native
-    def credential(token: java.lang.String, secret: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
+    def credential(token: java.lang.String, secret: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.OAuthCredential = js.native
   }
   
 }

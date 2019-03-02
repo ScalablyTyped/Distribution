@@ -10930,7 +10930,7 @@ object yamlNs extends js.Object {
   }
   
   trait ConfigOpts extends js.Object {
-    /** JavaScript objects represeting Kubernetes resources. */
+    /** JavaScript objects representing Kubernetes resources. */
     var objs: js.Array[_]
     /**
       * A set of transformations to apply to Kubernetes resource definitions before registering

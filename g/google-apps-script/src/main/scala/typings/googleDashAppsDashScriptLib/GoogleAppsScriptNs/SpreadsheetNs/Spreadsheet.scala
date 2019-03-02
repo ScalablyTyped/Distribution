@@ -45,6 +45,7 @@ trait Spreadsheet extends js.Object {
   def getColumnWidth(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer = js.native
   def getCurrentCell(): Range = js.native
   def getDataRange(): Range = js.native
+  def getDataSourceTables(): js.Array[DataSourceTable] = js.native
   def getDeveloperMetadata(): js.Array[DeveloperMetadata] = js.native
   def getEditors(): js.Array[googleDashAppsDashScriptLib.GoogleAppsScriptNs.BaseNs.User] = js.native
   def getFormUrl(): java.lang.String = js.native
@@ -137,6 +138,7 @@ trait Spreadsheet extends js.Object {
     sheetIndex: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer,
     options: js.Object
   ): Sheet = js.native
+  def insertSheetWithDataSourceTable(spec: DataSourceSpec): Sheet = js.native
   def isAnonymousView(): scala.Boolean = js.native
   def isAnonymousWrite(): scala.Boolean = js.native
   def isColumnHiddenByUser(columnPosition: googleDashAppsDashScriptLib.GoogleAppsScriptNs.Integer): scala.Boolean = js.native

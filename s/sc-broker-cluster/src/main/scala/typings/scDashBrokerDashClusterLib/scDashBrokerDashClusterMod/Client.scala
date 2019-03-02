@@ -34,25 +34,27 @@ class Client protected ()
     event: scDashBrokerDashClusterLib.scDashBrokerDashClusterLibStrings.warning,
     listener: js.Function1[/* warning */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): this.type = js.native
-  def setSCServer(scServer: socketclusterDashServerLib.socketclusterDashServerMod.SCServer): scala.Unit = js.native
+  def setSCServer(
+    scServer: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServer */ js.Any
+  ): scala.Unit = js.native
   def subscribe(channel: java.lang.String, callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]): scala.Unit = js.native
   def subscribeSocket(
-    socket: socketclusterDashServerLib.socketclusterDashServerMod.SCServerSocket,
+    socket: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
     channel: java.lang.String
   ): scala.Unit = js.native
   def subscribeSocket(
-    socket: socketclusterDashServerLib.socketclusterDashServerMod.SCServerSocket,
+    socket: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
     channel: java.lang.String,
     callback: js.Function1[/* err */ js.UndefOr[nodeLib.Error], scala.Unit]
   ): scala.Unit = js.native
   def unsubscribe(channel: java.lang.String, callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def unsubscribeAll(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def unsubscribeSocket(
-    socket: socketclusterDashServerLib.socketclusterDashServerMod.SCServerSocket,
+    socket: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
     channel: java.lang.String
   ): scala.Unit = js.native
   def unsubscribeSocket(
-    socket: socketclusterDashServerLib.socketclusterDashServerMod.SCServerSocket,
+    socket: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCServerSocket */ js.Any,
     channel: java.lang.String,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native

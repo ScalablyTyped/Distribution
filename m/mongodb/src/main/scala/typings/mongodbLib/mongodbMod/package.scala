@@ -6,9 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mongodbMod {
-  type AggregationCursorResult = js.Any | scala.Unit
-  type CommandCursorResult = js.Any | scala.Unit
-  type CursorResult = js.Any | scala.Unit | scala.Boolean
+  type AggregationCursorResult = js.Object | scala.Null
+  type CollectionMapFunction = js.Function0[scala.Unit]
+  type CollectionReduceFunction = js.Function2[/* key */ java.lang.String, /* values */ js.Any, js.Any]
+  type CommandCursorResult = js.Object | scala.Null
+  type CursorResult = js.Object | scala.Null | scala.Boolean
   type EndCallback = js.Function1[/* error */ MongoError, scala.Unit]
   type FilterQuery[T] = (/* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] | mongodb.mongodb.Condition<T, P>}

@@ -2922,6 +2922,7 @@ trait UnderscoreStatic extends js.Object {
     * @return Copy of `object` with only the `keys` properties.
     **/
   def pick(`object`: js.Any, keys: js.Any*): js.Any = js.native
+  def pluck(list: List[_], propertyName: java.lang.String): js.Array[_] = js.native
   /**
     * A convenient version of what is perhaps the most common use-case for map: extracting a list of
     * property values.
@@ -2929,7 +2930,7 @@ trait UnderscoreStatic extends js.Object {
     * @param propertyName The property to look for on each element within `list`.
     * @return The list of elements within `list` that have the property `propertyName`.
     **/
-  def pluck[T /* <: js.Object */](list: List[T], propertyName: java.lang.String): js.Array[_] = js.native
+  def pluck[T /* <: js.Object */, K /* <: java.lang.String */](list: List[T], propertyName: K): js.Array[/* import warning: ImportType.apply Failed type conversion: T[K] */ js.Any] = js.native
   /**
     * Returns a function that will itself return the key property of any passed-in object.
     * @param key Property of the object.

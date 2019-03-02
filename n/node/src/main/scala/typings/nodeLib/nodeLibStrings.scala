@@ -597,6 +597,7 @@ object nodeLibStrings {
   @js.native
   sealed trait ascii
     extends BufferEncoding
+       with nodeLib.bufferMod.TranscodeEncoding
        with nodeLib.cryptoMod.Utf8AsciiBinaryEncoding
        with nodeLib.cryptoMod.Utf8AsciiLatin1Encoding
   
@@ -616,6 +617,7 @@ object nodeLibStrings {
   sealed trait binary
     extends BufferEncoding
        with nodeLib.cryptoMod.HexBase64BinaryEncoding
+       with nodeLib.bufferMod.TranscodeEncoding
        with nodeLib.cryptoMod.Utf8AsciiBinaryEncoding
   
   @js.native
@@ -740,6 +742,7 @@ object nodeLibStrings {
   sealed trait latin1
     extends BufferEncoding
        with nodeLib.cryptoMod.HexBase64Latin1Encoding
+       with nodeLib.bufferMod.TranscodeEncoding
        with nodeLib.cryptoMod.Utf8AsciiLatin1Encoding
   
   @js.native
@@ -867,6 +870,9 @@ object nodeLibStrings {
   sealed trait secureConnection extends js.Object
   
   @js.native
+  sealed trait session extends js.Object
+  
+  @js.native
   sealed trait sessionError extends js.Object
   
   @js.native
@@ -898,7 +904,9 @@ object nodeLibStrings {
   sealed trait trailers extends js.Object
   
   @js.native
-  sealed trait ucs2 extends BufferEncoding
+  sealed trait ucs2
+    extends BufferEncoding
+       with nodeLib.bufferMod.TranscodeEncoding
   
   @js.native
   sealed trait udp4
@@ -925,11 +933,14 @@ object nodeLibStrings {
   sealed trait unpipe extends js.Object
   
   @js.native
-  sealed trait utf16le extends BufferEncoding
+  sealed trait utf16le
+    extends BufferEncoding
+       with nodeLib.bufferMod.TranscodeEncoding
   
   @js.native
   sealed trait utf8
     extends BufferEncoding
+       with nodeLib.bufferMod.TranscodeEncoding
        with nodeLib.cryptoMod.Utf8AsciiBinaryEncoding
        with nodeLib.cryptoMod.Utf8AsciiLatin1Encoding
   
@@ -1459,6 +1470,8 @@ object nodeLibStrings {
   def secureConnect: secureConnect = "secureConnect".asInstanceOf[secureConnect]
   @scala.inline
   def secureConnection: secureConnection = "secureConnection".asInstanceOf[secureConnection]
+  @scala.inline
+  def session: session = "session".asInstanceOf[session]
   @scala.inline
   def sessionError: sessionError = "sessionError".asInstanceOf[sessionError]
   @scala.inline

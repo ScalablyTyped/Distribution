@@ -58,6 +58,7 @@ trait WuIterable[T]
   def tap(fn: Consumer[T]): WuIterable[T] = js.native
   def tee(): js.Array[WuIterable[T]] = js.native
   def tee(n: scala.Double): js.Array[WuIterable[T]] = js.native
+  def toArray(): js.Array[T] = js.native
   def unique(): WuIterable[T] = js.native
   // TODO: this makes no sense, where did the second entry come from?
   // tslint:disable-next-line no-unnecessary-generics

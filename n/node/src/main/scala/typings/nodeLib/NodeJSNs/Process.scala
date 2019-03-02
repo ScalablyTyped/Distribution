@@ -24,6 +24,9 @@ trait Process extends EventEmitter {
   var execArgv: js.Array[java.lang.String] = js.native
   var execPath: java.lang.String = js.native
   var exitCode: scala.Double = js.native
+  var features: nodeLib.Anon_Debug = js.native
+  @JSName("hrtime")
+  var hrtime_Original: HRTime = js.native
   var mainModule: js.UndefOr[nodeLib.NodeModule] = js.native
   var pid: scala.Double = js.native
   var platform: Platform = js.native

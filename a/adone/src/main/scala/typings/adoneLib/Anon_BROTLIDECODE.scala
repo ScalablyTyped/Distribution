@@ -1,0 +1,340 @@
+package typings
+package adoneLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_BROTLIDECODE extends js.Object {
+  val BROTLI_DECODE: scala.Double
+  val BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES: scala.Double
+  val BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MAP: scala.Double
+  val BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MODES: scala.Double
+  val BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_1: scala.Double
+  val BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_2: scala.Double
+  val BROTLI_DECODER_ERROR_ALLOC_TREE_GROUPS: scala.Double
+  val BROTLI_DECODER_ERROR_DICTIONARY_NOT_SET: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_1: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_2: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_CL_SPACE: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_CONTEXT_MAP_REPEAT: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_DICTIONARY: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_DISTANCE: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_META_NIBBLE: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_NIBBLE: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_HUFFMAN_SPACE: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_PADDING_1: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_PADDING_2: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_RESERVED: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_ALPHABET: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_SAME: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_TRANSFORM: scala.Double
+  val BROTLI_DECODER_ERROR_FORMAT_WINDOW_BITS: scala.Double
+  val BROTLI_DECODER_ERROR_INVALID_ARGUMENTS: scala.Double
+  val BROTLI_DECODER_ERROR_UNREACHABLE: scala.Double
+  val BROTLI_DECODER_NEEDS_MORE_INPUT: scala.Double
+  val BROTLI_DECODER_NEEDS_MORE_OUTPUT: scala.Double
+  val BROTLI_DECODER_NO_ERROR: scala.Double
+  val BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION: scala.Double
+  val BROTLI_DECODER_PARAM_LARGE_WINDOW: scala.Double
+  val BROTLI_DECODER_RESULT_ERROR: scala.Double
+  val BROTLI_DECODER_RESULT_NEEDS_MORE_INPUT: scala.Double
+  val BROTLI_DECODER_RESULT_NEEDS_MORE_OUTPUT: scala.Double
+  val BROTLI_DECODER_RESULT_SUCCESS: scala.Double
+  val BROTLI_DECODER_SUCCESS: scala.Double
+  val BROTLI_DEFAULT_MODE: scala.Double
+  val BROTLI_DEFAULT_QUALITY: scala.Double
+  val BROTLI_DEFAULT_WINDOW: scala.Double
+  val BROTLI_ENCODE: scala.Double
+  val BROTLI_LARGE_MAX_WINDOW_BITS: scala.Double
+  val BROTLI_MAX_INPUT_BLOCK_BITS: scala.Double
+  val BROTLI_MAX_QUALITY: scala.Double
+  val BROTLI_MAX_WINDOW_BITS: scala.Double
+  val BROTLI_MIN_INPUT_BLOCK_BITS: scala.Double
+  val BROTLI_MIN_QUALITY: scala.Double
+  val BROTLI_MIN_WINDOW_BITS: scala.Double
+  val BROTLI_MODE_FONT: scala.Double
+  val BROTLI_MODE_GENERIC: scala.Double
+  val BROTLI_MODE_TEXT: scala.Double
+  val BROTLI_OPERATION_EMIT_METADATA: scala.Double
+  val BROTLI_OPERATION_FINISH: scala.Double
+  val BROTLI_OPERATION_FLUSH: scala.Double
+  val BROTLI_OPERATION_PROCESS: scala.Double
+  val BROTLI_PARAM_DISABLE_LITERAL_CONTEXT_MODELING: scala.Double
+  val BROTLI_PARAM_LARGE_WINDOW: scala.Double
+  val BROTLI_PARAM_LGBLOCK: scala.Double
+  val BROTLI_PARAM_LGWIN: scala.Double
+  val BROTLI_PARAM_MODE: scala.Double
+  val BROTLI_PARAM_NDIRECT: scala.Double
+  val BROTLI_PARAM_NPOSTFIX: scala.Double
+  val BROTLI_PARAM_QUALITY: scala.Double
+  val BROTLI_PARAM_SIZE_HINT: scala.Double
+  val DEFLATE: scala.Double
+  val DEFLATERAW: scala.Double
+  val GUNZIP: scala.Double
+  val GZIP: scala.Double
+  val INFLATE: scala.Double
+  val INFLATERAW: scala.Double
+  val UNZIP: scala.Double
+  val ZLIB_VERNUM: scala.Double
+  val Z_BEST_COMPRESSION: scala.Double
+  val Z_BEST_SPEED: scala.Double
+  val Z_BLOCK: scala.Double
+  val Z_BUF_ERROR: scala.Double
+  val Z_DATA_ERROR: scala.Double
+  val Z_DEFAULT_CHUNK: scala.Double
+  val Z_DEFAULT_COMPRESSION: scala.Double
+  val Z_DEFAULT_LEVEL: scala.Double
+  val Z_DEFAULT_MEMLEVEL: scala.Double
+  val Z_DEFAULT_STRATEGY: scala.Double
+  val Z_DEFAULT_WINDOWBITS: scala.Double
+  val Z_ERRNO: scala.Double
+  val Z_FILTERED: scala.Double
+  val Z_FINISH: scala.Double
+  val Z_FIXED: scala.Double
+  val Z_FULL_FLUSH: scala.Double
+  val Z_HUFFMAN_ONLY: scala.Double
+  val Z_MAX_CHUNK: scala.Double
+  val Z_MAX_LEVEL: scala.Double
+  val Z_MAX_MEMLEVEL: scala.Double
+  val Z_MAX_WINDOWBITS: scala.Double
+  val Z_MEM_ERROR: scala.Double
+  val Z_MIN_CHUNK: scala.Double
+  val Z_MIN_LEVEL: scala.Double
+  val Z_MIN_MEMLEVEL: scala.Double
+  val Z_MIN_WINDOWBITS: scala.Double
+  val Z_NEED_DICT: scala.Double
+  val Z_NO_COMPRESSION: scala.Double
+  val Z_NO_FLUSH: scala.Double
+  val Z_OK: scala.Double
+  val Z_PARTIAL_FLUSH: scala.Double
+  val Z_RLE: scala.Double
+  val Z_STREAM_END: scala.Double
+  val Z_STREAM_ERROR: scala.Double
+  val Z_SYNC_FLUSH: scala.Double
+  val Z_VERSION_ERROR: scala.Double
+}
+
+object Anon_BROTLIDECODE {
+  @scala.inline
+  def apply(
+    BROTLI_DECODE: scala.Double,
+    BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES: scala.Double,
+    BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MAP: scala.Double,
+    BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MODES: scala.Double,
+    BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_1: scala.Double,
+    BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_2: scala.Double,
+    BROTLI_DECODER_ERROR_ALLOC_TREE_GROUPS: scala.Double,
+    BROTLI_DECODER_ERROR_DICTIONARY_NOT_SET: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_1: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_2: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_CL_SPACE: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_CONTEXT_MAP_REPEAT: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_DICTIONARY: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_DISTANCE: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_META_NIBBLE: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_NIBBLE: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_HUFFMAN_SPACE: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_PADDING_1: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_PADDING_2: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_RESERVED: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_ALPHABET: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_SAME: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_TRANSFORM: scala.Double,
+    BROTLI_DECODER_ERROR_FORMAT_WINDOW_BITS: scala.Double,
+    BROTLI_DECODER_ERROR_INVALID_ARGUMENTS: scala.Double,
+    BROTLI_DECODER_ERROR_UNREACHABLE: scala.Double,
+    BROTLI_DECODER_NEEDS_MORE_INPUT: scala.Double,
+    BROTLI_DECODER_NEEDS_MORE_OUTPUT: scala.Double,
+    BROTLI_DECODER_NO_ERROR: scala.Double,
+    BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION: scala.Double,
+    BROTLI_DECODER_PARAM_LARGE_WINDOW: scala.Double,
+    BROTLI_DECODER_RESULT_ERROR: scala.Double,
+    BROTLI_DECODER_RESULT_NEEDS_MORE_INPUT: scala.Double,
+    BROTLI_DECODER_RESULT_NEEDS_MORE_OUTPUT: scala.Double,
+    BROTLI_DECODER_RESULT_SUCCESS: scala.Double,
+    BROTLI_DECODER_SUCCESS: scala.Double,
+    BROTLI_DEFAULT_MODE: scala.Double,
+    BROTLI_DEFAULT_QUALITY: scala.Double,
+    BROTLI_DEFAULT_WINDOW: scala.Double,
+    BROTLI_ENCODE: scala.Double,
+    BROTLI_LARGE_MAX_WINDOW_BITS: scala.Double,
+    BROTLI_MAX_INPUT_BLOCK_BITS: scala.Double,
+    BROTLI_MAX_QUALITY: scala.Double,
+    BROTLI_MAX_WINDOW_BITS: scala.Double,
+    BROTLI_MIN_INPUT_BLOCK_BITS: scala.Double,
+    BROTLI_MIN_QUALITY: scala.Double,
+    BROTLI_MIN_WINDOW_BITS: scala.Double,
+    BROTLI_MODE_FONT: scala.Double,
+    BROTLI_MODE_GENERIC: scala.Double,
+    BROTLI_MODE_TEXT: scala.Double,
+    BROTLI_OPERATION_EMIT_METADATA: scala.Double,
+    BROTLI_OPERATION_FINISH: scala.Double,
+    BROTLI_OPERATION_FLUSH: scala.Double,
+    BROTLI_OPERATION_PROCESS: scala.Double,
+    BROTLI_PARAM_DISABLE_LITERAL_CONTEXT_MODELING: scala.Double,
+    BROTLI_PARAM_LARGE_WINDOW: scala.Double,
+    BROTLI_PARAM_LGBLOCK: scala.Double,
+    BROTLI_PARAM_LGWIN: scala.Double,
+    BROTLI_PARAM_MODE: scala.Double,
+    BROTLI_PARAM_NDIRECT: scala.Double,
+    BROTLI_PARAM_NPOSTFIX: scala.Double,
+    BROTLI_PARAM_QUALITY: scala.Double,
+    BROTLI_PARAM_SIZE_HINT: scala.Double,
+    DEFLATE: scala.Double,
+    DEFLATERAW: scala.Double,
+    GUNZIP: scala.Double,
+    GZIP: scala.Double,
+    INFLATE: scala.Double,
+    INFLATERAW: scala.Double,
+    UNZIP: scala.Double,
+    ZLIB_VERNUM: scala.Double,
+    Z_BEST_COMPRESSION: scala.Double,
+    Z_BEST_SPEED: scala.Double,
+    Z_BLOCK: scala.Double,
+    Z_BUF_ERROR: scala.Double,
+    Z_DATA_ERROR: scala.Double,
+    Z_DEFAULT_CHUNK: scala.Double,
+    Z_DEFAULT_COMPRESSION: scala.Double,
+    Z_DEFAULT_LEVEL: scala.Double,
+    Z_DEFAULT_MEMLEVEL: scala.Double,
+    Z_DEFAULT_STRATEGY: scala.Double,
+    Z_DEFAULT_WINDOWBITS: scala.Double,
+    Z_ERRNO: scala.Double,
+    Z_FILTERED: scala.Double,
+    Z_FINISH: scala.Double,
+    Z_FIXED: scala.Double,
+    Z_FULL_FLUSH: scala.Double,
+    Z_HUFFMAN_ONLY: scala.Double,
+    Z_MAX_CHUNK: scala.Double,
+    Z_MAX_LEVEL: scala.Double,
+    Z_MAX_MEMLEVEL: scala.Double,
+    Z_MAX_WINDOWBITS: scala.Double,
+    Z_MEM_ERROR: scala.Double,
+    Z_MIN_CHUNK: scala.Double,
+    Z_MIN_LEVEL: scala.Double,
+    Z_MIN_MEMLEVEL: scala.Double,
+    Z_MIN_WINDOWBITS: scala.Double,
+    Z_NEED_DICT: scala.Double,
+    Z_NO_COMPRESSION: scala.Double,
+    Z_NO_FLUSH: scala.Double,
+    Z_OK: scala.Double,
+    Z_PARTIAL_FLUSH: scala.Double,
+    Z_RLE: scala.Double,
+    Z_STREAM_END: scala.Double,
+    Z_STREAM_ERROR: scala.Double,
+    Z_SYNC_FLUSH: scala.Double,
+    Z_VERSION_ERROR: scala.Double
+  ): Anon_BROTLIDECODE = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("BROTLI_DECODE")(BROTLI_DECODE)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES")(BROTLI_DECODER_ERROR_ALLOC_BLOCK_TYPE_TREES)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MAP")(BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MAP)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MODES")(BROTLI_DECODER_ERROR_ALLOC_CONTEXT_MODES)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_1")(BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_1)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_2")(BROTLI_DECODER_ERROR_ALLOC_RING_BUFFER_2)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_ALLOC_TREE_GROUPS")(BROTLI_DECODER_ERROR_ALLOC_TREE_GROUPS)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_DICTIONARY_NOT_SET")(BROTLI_DECODER_ERROR_DICTIONARY_NOT_SET)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_1")(BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_1)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_2")(BROTLI_DECODER_ERROR_FORMAT_BLOCK_LENGTH_2)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_CL_SPACE")(BROTLI_DECODER_ERROR_FORMAT_CL_SPACE)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_CONTEXT_MAP_REPEAT")(BROTLI_DECODER_ERROR_FORMAT_CONTEXT_MAP_REPEAT)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_DICTIONARY")(BROTLI_DECODER_ERROR_FORMAT_DICTIONARY)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_DISTANCE")(BROTLI_DECODER_ERROR_FORMAT_DISTANCE)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_META_NIBBLE")(BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_META_NIBBLE)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_NIBBLE")(BROTLI_DECODER_ERROR_FORMAT_EXUBERANT_NIBBLE)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_HUFFMAN_SPACE")(BROTLI_DECODER_ERROR_FORMAT_HUFFMAN_SPACE)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_PADDING_1")(BROTLI_DECODER_ERROR_FORMAT_PADDING_1)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_PADDING_2")(BROTLI_DECODER_ERROR_FORMAT_PADDING_2)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_RESERVED")(BROTLI_DECODER_ERROR_FORMAT_RESERVED)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_ALPHABET")(BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_ALPHABET)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_SAME")(BROTLI_DECODER_ERROR_FORMAT_SIMPLE_HUFFMAN_SAME)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_TRANSFORM")(BROTLI_DECODER_ERROR_FORMAT_TRANSFORM)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_FORMAT_WINDOW_BITS")(BROTLI_DECODER_ERROR_FORMAT_WINDOW_BITS)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_INVALID_ARGUMENTS")(BROTLI_DECODER_ERROR_INVALID_ARGUMENTS)
+    __obj.updateDynamic("BROTLI_DECODER_ERROR_UNREACHABLE")(BROTLI_DECODER_ERROR_UNREACHABLE)
+    __obj.updateDynamic("BROTLI_DECODER_NEEDS_MORE_INPUT")(BROTLI_DECODER_NEEDS_MORE_INPUT)
+    __obj.updateDynamic("BROTLI_DECODER_NEEDS_MORE_OUTPUT")(BROTLI_DECODER_NEEDS_MORE_OUTPUT)
+    __obj.updateDynamic("BROTLI_DECODER_NO_ERROR")(BROTLI_DECODER_NO_ERROR)
+    __obj.updateDynamic("BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION")(BROTLI_DECODER_PARAM_DISABLE_RING_BUFFER_REALLOCATION)
+    __obj.updateDynamic("BROTLI_DECODER_PARAM_LARGE_WINDOW")(BROTLI_DECODER_PARAM_LARGE_WINDOW)
+    __obj.updateDynamic("BROTLI_DECODER_RESULT_ERROR")(BROTLI_DECODER_RESULT_ERROR)
+    __obj.updateDynamic("BROTLI_DECODER_RESULT_NEEDS_MORE_INPUT")(BROTLI_DECODER_RESULT_NEEDS_MORE_INPUT)
+    __obj.updateDynamic("BROTLI_DECODER_RESULT_NEEDS_MORE_OUTPUT")(BROTLI_DECODER_RESULT_NEEDS_MORE_OUTPUT)
+    __obj.updateDynamic("BROTLI_DECODER_RESULT_SUCCESS")(BROTLI_DECODER_RESULT_SUCCESS)
+    __obj.updateDynamic("BROTLI_DECODER_SUCCESS")(BROTLI_DECODER_SUCCESS)
+    __obj.updateDynamic("BROTLI_DEFAULT_MODE")(BROTLI_DEFAULT_MODE)
+    __obj.updateDynamic("BROTLI_DEFAULT_QUALITY")(BROTLI_DEFAULT_QUALITY)
+    __obj.updateDynamic("BROTLI_DEFAULT_WINDOW")(BROTLI_DEFAULT_WINDOW)
+    __obj.updateDynamic("BROTLI_ENCODE")(BROTLI_ENCODE)
+    __obj.updateDynamic("BROTLI_LARGE_MAX_WINDOW_BITS")(BROTLI_LARGE_MAX_WINDOW_BITS)
+    __obj.updateDynamic("BROTLI_MAX_INPUT_BLOCK_BITS")(BROTLI_MAX_INPUT_BLOCK_BITS)
+    __obj.updateDynamic("BROTLI_MAX_QUALITY")(BROTLI_MAX_QUALITY)
+    __obj.updateDynamic("BROTLI_MAX_WINDOW_BITS")(BROTLI_MAX_WINDOW_BITS)
+    __obj.updateDynamic("BROTLI_MIN_INPUT_BLOCK_BITS")(BROTLI_MIN_INPUT_BLOCK_BITS)
+    __obj.updateDynamic("BROTLI_MIN_QUALITY")(BROTLI_MIN_QUALITY)
+    __obj.updateDynamic("BROTLI_MIN_WINDOW_BITS")(BROTLI_MIN_WINDOW_BITS)
+    __obj.updateDynamic("BROTLI_MODE_FONT")(BROTLI_MODE_FONT)
+    __obj.updateDynamic("BROTLI_MODE_GENERIC")(BROTLI_MODE_GENERIC)
+    __obj.updateDynamic("BROTLI_MODE_TEXT")(BROTLI_MODE_TEXT)
+    __obj.updateDynamic("BROTLI_OPERATION_EMIT_METADATA")(BROTLI_OPERATION_EMIT_METADATA)
+    __obj.updateDynamic("BROTLI_OPERATION_FINISH")(BROTLI_OPERATION_FINISH)
+    __obj.updateDynamic("BROTLI_OPERATION_FLUSH")(BROTLI_OPERATION_FLUSH)
+    __obj.updateDynamic("BROTLI_OPERATION_PROCESS")(BROTLI_OPERATION_PROCESS)
+    __obj.updateDynamic("BROTLI_PARAM_DISABLE_LITERAL_CONTEXT_MODELING")(BROTLI_PARAM_DISABLE_LITERAL_CONTEXT_MODELING)
+    __obj.updateDynamic("BROTLI_PARAM_LARGE_WINDOW")(BROTLI_PARAM_LARGE_WINDOW)
+    __obj.updateDynamic("BROTLI_PARAM_LGBLOCK")(BROTLI_PARAM_LGBLOCK)
+    __obj.updateDynamic("BROTLI_PARAM_LGWIN")(BROTLI_PARAM_LGWIN)
+    __obj.updateDynamic("BROTLI_PARAM_MODE")(BROTLI_PARAM_MODE)
+    __obj.updateDynamic("BROTLI_PARAM_NDIRECT")(BROTLI_PARAM_NDIRECT)
+    __obj.updateDynamic("BROTLI_PARAM_NPOSTFIX")(BROTLI_PARAM_NPOSTFIX)
+    __obj.updateDynamic("BROTLI_PARAM_QUALITY")(BROTLI_PARAM_QUALITY)
+    __obj.updateDynamic("BROTLI_PARAM_SIZE_HINT")(BROTLI_PARAM_SIZE_HINT)
+    __obj.updateDynamic("DEFLATE")(DEFLATE)
+    __obj.updateDynamic("DEFLATERAW")(DEFLATERAW)
+    __obj.updateDynamic("GUNZIP")(GUNZIP)
+    __obj.updateDynamic("GZIP")(GZIP)
+    __obj.updateDynamic("INFLATE")(INFLATE)
+    __obj.updateDynamic("INFLATERAW")(INFLATERAW)
+    __obj.updateDynamic("UNZIP")(UNZIP)
+    __obj.updateDynamic("ZLIB_VERNUM")(ZLIB_VERNUM)
+    __obj.updateDynamic("Z_BEST_COMPRESSION")(Z_BEST_COMPRESSION)
+    __obj.updateDynamic("Z_BEST_SPEED")(Z_BEST_SPEED)
+    __obj.updateDynamic("Z_BLOCK")(Z_BLOCK)
+    __obj.updateDynamic("Z_BUF_ERROR")(Z_BUF_ERROR)
+    __obj.updateDynamic("Z_DATA_ERROR")(Z_DATA_ERROR)
+    __obj.updateDynamic("Z_DEFAULT_CHUNK")(Z_DEFAULT_CHUNK)
+    __obj.updateDynamic("Z_DEFAULT_COMPRESSION")(Z_DEFAULT_COMPRESSION)
+    __obj.updateDynamic("Z_DEFAULT_LEVEL")(Z_DEFAULT_LEVEL)
+    __obj.updateDynamic("Z_DEFAULT_MEMLEVEL")(Z_DEFAULT_MEMLEVEL)
+    __obj.updateDynamic("Z_DEFAULT_STRATEGY")(Z_DEFAULT_STRATEGY)
+    __obj.updateDynamic("Z_DEFAULT_WINDOWBITS")(Z_DEFAULT_WINDOWBITS)
+    __obj.updateDynamic("Z_ERRNO")(Z_ERRNO)
+    __obj.updateDynamic("Z_FILTERED")(Z_FILTERED)
+    __obj.updateDynamic("Z_FINISH")(Z_FINISH)
+    __obj.updateDynamic("Z_FIXED")(Z_FIXED)
+    __obj.updateDynamic("Z_FULL_FLUSH")(Z_FULL_FLUSH)
+    __obj.updateDynamic("Z_HUFFMAN_ONLY")(Z_HUFFMAN_ONLY)
+    __obj.updateDynamic("Z_MAX_CHUNK")(Z_MAX_CHUNK)
+    __obj.updateDynamic("Z_MAX_LEVEL")(Z_MAX_LEVEL)
+    __obj.updateDynamic("Z_MAX_MEMLEVEL")(Z_MAX_MEMLEVEL)
+    __obj.updateDynamic("Z_MAX_WINDOWBITS")(Z_MAX_WINDOWBITS)
+    __obj.updateDynamic("Z_MEM_ERROR")(Z_MEM_ERROR)
+    __obj.updateDynamic("Z_MIN_CHUNK")(Z_MIN_CHUNK)
+    __obj.updateDynamic("Z_MIN_LEVEL")(Z_MIN_LEVEL)
+    __obj.updateDynamic("Z_MIN_MEMLEVEL")(Z_MIN_MEMLEVEL)
+    __obj.updateDynamic("Z_MIN_WINDOWBITS")(Z_MIN_WINDOWBITS)
+    __obj.updateDynamic("Z_NEED_DICT")(Z_NEED_DICT)
+    __obj.updateDynamic("Z_NO_COMPRESSION")(Z_NO_COMPRESSION)
+    __obj.updateDynamic("Z_NO_FLUSH")(Z_NO_FLUSH)
+    __obj.updateDynamic("Z_OK")(Z_OK)
+    __obj.updateDynamic("Z_PARTIAL_FLUSH")(Z_PARTIAL_FLUSH)
+    __obj.updateDynamic("Z_RLE")(Z_RLE)
+    __obj.updateDynamic("Z_STREAM_END")(Z_STREAM_END)
+    __obj.updateDynamic("Z_STREAM_ERROR")(Z_STREAM_ERROR)
+    __obj.updateDynamic("Z_SYNC_FLUSH")(Z_SYNC_FLUSH)
+    __obj.updateDynamic("Z_VERSION_ERROR")(Z_VERSION_ERROR)
+    __obj.asInstanceOf[Anon_BROTLIDECODE]
+  }
+}
+

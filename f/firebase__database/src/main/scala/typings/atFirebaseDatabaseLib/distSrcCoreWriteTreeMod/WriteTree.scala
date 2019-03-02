@@ -19,6 +19,18 @@ class WriteTree () extends js.Object {
   var `allWrites_`: js.Any = js.native
   var `lastWriteId_`: js.Any = js.native
   /**
+    * @param {!WriteRecord} writeRecord
+    * @param {!Path} path
+    * @return {boolean}
+    * @private
+    */
+  var `recordContainsPath_`: js.Any = js.native
+  /**
+    * Re-layer the writes and merges into a tree so we can efficiently calculate event snapshots
+    * @private
+    */
+  var `resetTree_`: js.Any = js.native
+  /**
     * A tree tracking the result of applying all visible writes.  This does not include transactions with
     * applyLocally=false or writes that are completely shadowed by other writes.
     *
@@ -211,13 +223,6 @@ class WriteTree () extends js.Object {
     */
   def getWrite(writeId: scala.Double): WriteRecord | scala.Null = js.native
   /**
-    * @param {!WriteRecord} writeRecord
-    * @param {!Path} path
-    * @return {boolean}
-    * @private
-    */
-  /* private */ def `recordContainsPath_`(writeRecord: js.Any, path: js.Any): js.Any = js.native
-  /**
     * Remove a write (either an overwrite or merge) that has been successfully acknowledge by the server. Recalculates
     * the tree if necessary.  We return true if it may have been visible, meaning views need to reevaluate.
     *
@@ -226,11 +231,6 @@ class WriteTree () extends js.Object {
     * events as a result).
     */
   def removeWrite(writeId: scala.Double): scala.Boolean = js.native
-  /**
-    * Re-layer the writes and merges into a tree so we can efficiently calculate event snapshots
-    * @private
-    */
-  /* private */ def `resetTree_`(): js.Any = js.native
   /**
     * Returns a node if there is a complete overwrite for this path. More specifically, if there is a write at
     * a higher path, this will return the child of that write relative to the write and this path.
@@ -253,7 +253,7 @@ object WriteTree extends js.Object {
     * @return {boolean}
     * @private
     */
-  /* private */ def `DefaultFilter_`(write: js.Any): js.Any = js.native
+  var `DefaultFilter_`: js.Any = js.native
   /**
     * Static method. Given an array of WriteRecords, a filter for which ones to include, and a path, construct the tree of
     * event data at that path.
@@ -264,6 +264,6 @@ object WriteTree extends js.Object {
     * @return {!CompoundWrite}
     * @private
     */
-  /* private */ def `layerTree_`(writes: js.Any, filter: js.Any, treeRoot: js.Any): js.Any = js.native
+  var `layerTree_`: js.Any = js.native
 }
 

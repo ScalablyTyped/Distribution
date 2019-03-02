@@ -16,6 +16,7 @@ class FirebaseFunctions protected () extends js.Object {
     * @return The `HttpsCallable` instance.
     */
   def httpsCallable(name: java.lang.String): HttpsCallable = js.native
+  def httpsCallable(name: java.lang.String, options: HttpsCallableOptions): HttpsCallable = js.native
   /**
     * Changes this instance to point to a Cloud Functions emulator running
     * locally. See https://firebase.google.com/docs/functions/local-emulator

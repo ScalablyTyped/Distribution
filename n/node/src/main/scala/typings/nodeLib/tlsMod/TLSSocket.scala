@@ -40,10 +40,17 @@ class TLSSocket protected ()
   ): this.type = js.native
   @JSName("addListener")
   def addListener_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("addListener")
+  def addListener_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
   @JSName("emit")
   def emit_OCSPResponse(event: nodeLib.nodeLibStrings.OCSPResponse, response: nodeLib.Buffer): scala.Boolean = js.native
   @JSName("emit")
   def emit_secureConnect(event: nodeLib.nodeLibStrings.secureConnect): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_session(event: nodeLib.nodeLibStrings.session, session: nodeLib.Buffer): scala.Boolean = js.native
   /**
     * Returns an object representing the cipher name and the SSL/TLS protocol version of the current connection.
     * @returns Returns an object representing the cipher name
@@ -91,6 +98,11 @@ class TLSSocket protected ()
   ): this.type = js.native
   @JSName("on")
   def on_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("on")
+  def on_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
   @JSName("once")
   def once_OCSPResponse(
     event: nodeLib.nodeLibStrings.OCSPResponse,
@@ -98,6 +110,11 @@ class TLSSocket protected ()
   ): this.type = js.native
   @JSName("once")
   def once_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("once")
+  def once_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
   @JSName("prependListener")
   def prependListener_OCSPResponse(
     event: nodeLib.nodeLibStrings.OCSPResponse,
@@ -105,6 +122,11 @@ class TLSSocket protected ()
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("prependListener")
+  def prependListener_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_OCSPResponse(
     event: nodeLib.nodeLibStrings.OCSPResponse,
@@ -112,6 +134,11 @@ class TLSSocket protected ()
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_secureConnect(event: nodeLib.nodeLibStrings.secureConnect, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("prependOnceListener")
+  def prependOnceListener_session(
+    event: nodeLib.nodeLibStrings.session,
+    listener: js.Function1[/* session */ nodeLib.Buffer, scala.Unit]
+  ): this.type = js.native
   /**
     * Initiate TLS renegotiation process.
     *

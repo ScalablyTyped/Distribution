@@ -10,6 +10,10 @@ package object NodeJSNs {
   type DisconnectListener = js.Function0[scala.Unit]
   type Events = EventEmitter
   type ExitListener = js.Function1[/* code */ scala.Double, scala.Unit]
+  type HRTime = js.Function1[
+    /* time */ js.UndefOr[js.Tuple2[scala.Double, scala.Double]], 
+    js.Tuple2[scala.Double, scala.Double]
+  ]
   type MessageListener = js.Function2[/* message */ js.Any, /* sendHandle */ js.Any, scala.Unit]
   type MultipleResolveListener = js.Function3[
     /* type */ MultipleResolveType, 
@@ -31,6 +35,10 @@ package object NodeJSNs {
   type SignalsListener = js.Function1[/* signal */ Signals, scala.Unit]
   type TypedArray = stdLib.Uint8Array | stdLib.Uint8ClampedArray | stdLib.Uint16Array | stdLib.Uint32Array | stdLib.Int8Array | stdLib.Int16Array | stdLib.Int32Array | stdLib.Float32Array | stdLib.Float64Array
   type UncaughtExceptionListener = js.Function1[/* error */ nodeLib.Error, scala.Unit]
-  type UnhandledRejectionListener = js.Function2[/* reason */ js.Any, /* promise */ js.Promise[js.Any], scala.Unit]
+  type UnhandledRejectionListener = js.Function2[
+    /* reason */ js.UndefOr[js.Object | scala.Null], 
+    /* promise */ js.Promise[js.Any], 
+    scala.Unit
+  ]
   type WarningListener = js.Function1[/* warning */ nodeLib.Error, scala.Unit]
 }

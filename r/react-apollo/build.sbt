@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-apollo"
-version := "2.5.1-a78c41"
+version := "2.5.1-484a24"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,10 +17,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-8c5ec1",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-f3a537",
   "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190212Z-e98b5d",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
   "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-66c044",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190226Z-9e9d73",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-dfd109",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-4ff3b1",
   "org.scalablytyped" %%% "std" % "3.3-6e4388",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-3596cc",
   "org.scalablytyped" %%% "ts-invariant" % "0.2.1-9c7de5",

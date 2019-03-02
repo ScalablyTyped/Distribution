@@ -26,7 +26,7 @@ class DataEvent protected () extends Event {
   def this(eventType: atFirebaseDatabaseLib.atFirebaseDatabaseLibStrings.value, eventRegistration: atFirebaseDatabaseLib.distSrcCoreViewEventRegistrationMod.EventRegistration, snapshot: atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot, prevName: java.lang.String) = this()
   var eventRegistration: atFirebaseDatabaseLib.distSrcCoreViewEventRegistrationMod.EventRegistration = js.native
   var eventType: atFirebaseDatabaseLib.atFirebaseDatabaseLibStrings.value | (atFirebaseDatabaseLib.atFirebaseDatabaseLibStrings.` child_added`) | (atFirebaseDatabaseLib.atFirebaseDatabaseLibStrings.` child_changed`) | (atFirebaseDatabaseLib.atFirebaseDatabaseLibStrings.` child_moved`) | (atFirebaseDatabaseLib.atFirebaseDatabaseLibStrings.` child_removed`) = js.native
-  var prevName: java.lang.String | scala.Null = js.native
+  var prevName: js.UndefOr[java.lang.String | scala.Null] = js.native
   var snapshot: atFirebaseDatabaseLib.distSrcApiDataSnapshotMod.DataSnapshot = js.native
   /**
     * @return {!function()}

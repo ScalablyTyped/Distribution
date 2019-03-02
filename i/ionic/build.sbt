@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ionic"
-version := "4.10.3-38ef5b"
+version := "4.10.3-e7a4b0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,22 +14,22 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "diff" % "4.0-dt-20190129Z-499eae",
   "org.scalablytyped" %%% "elementtree" % "0.1-dt-20180830Z-3d5b35",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-ccd3b7",
-  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-881432",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-eb36a4",
-  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20190221Z-6b0e30",
-  "org.scalablytyped" %%% "ionic__cli-framework" % "1.6.1-bf7e77",
-  "org.scalablytyped" %%% "ionic__discover" % "1.0.13-3aed5e",
-  "org.scalablytyped" %%% "ionic__utils-fs" % "1.1.0-232a85",
-  "org.scalablytyped" %%% "ionic__utils-network" % "0.0.7-42ccf2",
+  "org.scalablytyped" %%% "fs-extra" % "5.0-dt-20190212Z-cb3aae",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-105e95",
+  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20190221Z-8705ae",
+  "org.scalablytyped" %%% "ionic__cli-framework" % "1.6.1-1777ce",
+  "org.scalablytyped" %%% "ionic__discover" % "1.0.13-d54c44",
+  "org.scalablytyped" %%% "ionic__utils-fs" % "1.1.0-b6fa81",
+  "org.scalablytyped" %%% "ionic__utils-network" % "0.0.7-4639d4",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-f3a537",
-  "org.scalablytyped" %%% "log-update" % "2.0-dt-20180214Z-352ba9",
+  "org.scalablytyped" %%% "log-update" % "2.0-dt-20180214Z-19c3b7",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-8c05a2",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-e2a650",
   "org.scalablytyped" %%% "netmask" % "1.0.5-dt-20180214Z-43d86b",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
-  "org.scalablytyped" %%% "opn" % "5.1-dt-20180214Z-f2ee18",
-  "org.scalablytyped" %%% "os-name" % "2.0-dt-20180214Z-6e7dd5",
-  "org.scalablytyped" %%% "rimraf" % "2.0-dt-20180214Z-e45d34",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
+  "org.scalablytyped" %%% "opn" % "5.1-dt-20180214Z-d6ee0b",
+  "org.scalablytyped" %%% "os-name" % "2.0-dt-20180214Z-6eb2a0",
+  "org.scalablytyped" %%% "rimraf" % "2.0-dt-20180214Z-e659a3",
   "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-6bffa3",
   "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-b40c6d",
   "org.scalablytyped" %%% "rx-core-binding" % "4.0-dt-20180214Z-2a0c96",
@@ -45,23 +45,23 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180214Z-a5b4e8",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-703481",
   "org.scalablytyped" %%% "slice-ansi" % "2.0-dt-20181119Z-8a6935",
-  "org.scalablytyped" %%% "split2" % "2.1.0-dt-20180214Z-7d91e4",
+  "org.scalablytyped" %%% "split2" % "2.1.0-dt-20180214Z-6bed81",
   "org.scalablytyped" %%% "std" % "3.3-6e4388",
-  "org.scalablytyped" %%% "string-width" % "2.0-dt-20180530Z-301d71",
+  "org.scalablytyped" %%% "string-width" % "2.0-dt-20180530Z-beae41",
   "org.scalablytyped" %%% "strip-ansi" % "3.0-dt-20180214Z-1f99d1",
-  "org.scalablytyped" %%% "superagent" % "3.8-dt-20190226Z-8943d6",
+  "org.scalablytyped" %%% "superagent" % "3.8-dt-20190226Z-63041e",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-cc56f3",
-  "org.scalablytyped" %%% "tar" % "4.0-dt-20180214Z-99c350",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-8c0ddb",
-  "org.scalablytyped" %%% "through2" % "2.0-dt-20180906Z-0a84d3",
+  "org.scalablytyped" %%% "tar" % "4.0-dt-20180214Z-77f55f",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-45704c",
+  "org.scalablytyped" %%% "through2" % "2.0-dt-20180906Z-8224ec",
   "org.scalablytyped" %%% "tree-kill" % "1.2.1-144988",
   "org.scalablytyped" %%% "tslib" % "1.9.3-9355d3",
   "org.scalablytyped" %%% "untildify" % "3.0-dt-20180214Z-ade489",
   "org.scalablytyped" %%% "update-notifier" % "2.5-dt-20181023Z-298117",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-ca1b2b",
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-c29a23",
   "org.scalablytyped" %%% "wrap-ansi" % "v3.0.0-dt-20180323Z-dc0284",
-  "org.scalablytyped" %%% "write-file-atomic" % "2.1-dt-20180214Z-fbccc3",
-  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-cace4b")
+  "org.scalablytyped" %%% "write-file-atomic" % "2.1-dt-20180214Z-976197",
+  "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-b50e41")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

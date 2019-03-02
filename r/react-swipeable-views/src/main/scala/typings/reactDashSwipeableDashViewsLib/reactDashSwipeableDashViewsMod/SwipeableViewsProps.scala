@@ -11,6 +11,10 @@ trait SwipeableViewsProps
   var animateTransitions: js.UndefOr[scala.Boolean] = js.undefined
   var axis: js.UndefOr[AxisType] = js.undefined
   var containerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  /*
+    * This is the config used to disable lazy loading, if true it will render all the views in first rendering.
+    */
+  var disableLazyLoading: js.UndefOr[scala.Boolean] = js.undefined
   var enableMouseEvents: js.UndefOr[scala.Boolean] = js.undefined
   var hysteresis: js.UndefOr[scala.Double] = js.undefined
   var ignoreNativeScroll: js.UndefOr[scala.Boolean] = js.undefined
@@ -34,6 +38,7 @@ object SwipeableViewsProps {
     animateTransitions: js.UndefOr[scala.Boolean] = js.undefined,
     axis: AxisType = null,
     containerStyle: reactLib.reactMod.ReactNs.CSSProperties = null,
+    disableLazyLoading: js.UndefOr[scala.Boolean] = js.undefined,
     disabled: js.UndefOr[scala.Boolean] = js.undefined,
     enableMouseEvents: js.UndefOr[scala.Boolean] = js.undefined,
     hysteresis: scala.Int | scala.Double = null,
@@ -55,6 +60,7 @@ object SwipeableViewsProps {
     if (!js.isUndefined(animateTransitions)) __obj.updateDynamic("animateTransitions")(animateTransitions)
     if (axis != null) __obj.updateDynamic("axis")(axis)
     if (containerStyle != null) __obj.updateDynamic("containerStyle")(containerStyle)
+    if (!js.isUndefined(disableLazyLoading)) __obj.updateDynamic("disableLazyLoading")(disableLazyLoading)
     if (!js.isUndefined(disabled)) __obj.updateDynamic("disabled")(disabled)
     if (!js.isUndefined(enableMouseEvents)) __obj.updateDynamic("enableMouseEvents")(enableMouseEvents)
     if (hysteresis != null) __obj.updateDynamic("hysteresis")(hysteresis.asInstanceOf[js.Any])

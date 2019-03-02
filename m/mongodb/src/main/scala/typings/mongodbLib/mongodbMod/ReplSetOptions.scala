@@ -27,7 +27,11 @@ trait ReplSetOptions
 object ReplSetOptions {
   @scala.inline
   def apply(
-    checkServerIdentity: scala.Boolean | js.Function = null,
+    checkServerIdentity: scala.Boolean | (js.Function2[
+      /* host */ java.lang.String, 
+      /* cert */ nodeLib.tlsMod.PeerCertificate, 
+      js.UndefOr[nodeLib.Error]
+    ]) = null,
     ciphers: java.lang.String = null,
     connectWithNoPrimary: js.UndefOr[scala.Boolean] = js.undefined,
     domainsEnabled: js.UndefOr[scala.Boolean] = js.undefined,

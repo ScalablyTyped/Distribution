@@ -263,13 +263,6 @@ trait MessageCompose extends Message {
     options: AsyncContextOptions with officeDashJsLib.Anon_IsInline,
     callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
-  def addHandlerAsync(eventType: EventType, handler: js.Any, options: js.Any): scala.Unit = js.native
-  def addHandlerAsync(
-    eventType: EventType,
-    handler: js.Any,
-    options: js.Any,
-    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
-  ): scala.Unit = js.native
   /**
     * Adds an Exchange item, such as a message, as an attachment to the message or appointment.
     *

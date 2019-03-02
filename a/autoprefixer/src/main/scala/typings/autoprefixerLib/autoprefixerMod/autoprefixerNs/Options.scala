@@ -11,7 +11,9 @@ trait Options extends js.Object {
   var cascade: js.UndefOr[scala.Boolean] = js.undefined
   var env: js.UndefOr[java.lang.String] = js.undefined
   var flexbox: js.UndefOr[scala.Boolean | autoprefixerLib.autoprefixerLibStrings.`no-2009`] = js.undefined
-  var grid: js.UndefOr[scala.Boolean] = js.undefined
+  var grid: js.UndefOr[
+    scala.Boolean | autoprefixerLib.autoprefixerLibStrings.autoplace | autoprefixerLib.autoprefixerLibStrings.`no-autoplace`
+  ] = js.undefined
   var ignoreUnknownVersions: js.UndefOr[scala.Boolean] = js.undefined
   var remove: js.UndefOr[scala.Boolean] = js.undefined
   var stats: js.UndefOr[js.Any] = js.undefined
@@ -26,7 +28,7 @@ object Options {
     cascade: js.UndefOr[scala.Boolean] = js.undefined,
     env: java.lang.String = null,
     flexbox: scala.Boolean | autoprefixerLib.autoprefixerLibStrings.`no-2009` = null,
-    grid: js.UndefOr[scala.Boolean] = js.undefined,
+    grid: scala.Boolean | autoprefixerLib.autoprefixerLibStrings.autoplace | autoprefixerLib.autoprefixerLibStrings.`no-autoplace` = null,
     ignoreUnknownVersions: js.UndefOr[scala.Boolean] = js.undefined,
     remove: js.UndefOr[scala.Boolean] = js.undefined,
     stats: js.Any = null,
@@ -38,7 +40,7 @@ object Options {
     if (!js.isUndefined(cascade)) __obj.updateDynamic("cascade")(cascade)
     if (env != null) __obj.updateDynamic("env")(env)
     if (flexbox != null) __obj.updateDynamic("flexbox")(flexbox.asInstanceOf[js.Any])
-    if (!js.isUndefined(grid)) __obj.updateDynamic("grid")(grid)
+    if (grid != null) __obj.updateDynamic("grid")(grid.asInstanceOf[js.Any])
     if (!js.isUndefined(ignoreUnknownVersions)) __obj.updateDynamic("ignoreUnknownVersions")(ignoreUnknownVersions)
     if (!js.isUndefined(remove)) __obj.updateDynamic("remove")(remove)
     if (stats != null) __obj.updateDynamic("stats")(stats)

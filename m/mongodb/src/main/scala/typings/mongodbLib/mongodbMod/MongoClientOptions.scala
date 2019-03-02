@@ -70,7 +70,11 @@ object MongoClientOptions {
     authSource: java.lang.String = null,
     autoReconnect: js.UndefOr[scala.Boolean] = js.undefined,
     bufferMaxEntries: scala.Int | scala.Double = null,
-    checkServerIdentity: scala.Boolean | js.Function = null,
+    checkServerIdentity: scala.Boolean | (js.Function2[
+      /* host */ java.lang.String, 
+      /* cert */ nodeLib.tlsMod.PeerCertificate, 
+      js.UndefOr[nodeLib.Error]
+    ]) = null,
     ciphers: java.lang.String = null,
     connectTimeoutMS: scala.Int | scala.Double = null,
     connectWithNoPrimary: js.UndefOr[scala.Boolean] = js.undefined,
@@ -96,7 +100,7 @@ object MongoClientOptions {
     promiseLibrary: js.Object = null,
     promoteBuffers: js.UndefOr[scala.Boolean] = js.undefined,
     promoteLongs: js.UndefOr[scala.Boolean] = js.undefined,
-    promoteValues: js.Object = null,
+    promoteValues: js.UndefOr[scala.Boolean] = js.undefined,
     raw: js.UndefOr[scala.Boolean] = js.undefined,
     readConcern: ReadConcern = null,
     readPreference: ReadPreference | java.lang.String = null,
@@ -155,7 +159,7 @@ object MongoClientOptions {
     if (promiseLibrary != null) __obj.updateDynamic("promiseLibrary")(promiseLibrary)
     if (!js.isUndefined(promoteBuffers)) __obj.updateDynamic("promoteBuffers")(promoteBuffers)
     if (!js.isUndefined(promoteLongs)) __obj.updateDynamic("promoteLongs")(promoteLongs)
-    if (promoteValues != null) __obj.updateDynamic("promoteValues")(promoteValues)
+    if (!js.isUndefined(promoteValues)) __obj.updateDynamic("promoteValues")(promoteValues)
     if (!js.isUndefined(raw)) __obj.updateDynamic("raw")(raw)
     if (readConcern != null) __obj.updateDynamic("readConcern")(readConcern)
     if (readPreference != null) __obj.updateDynamic("readPreference")(readPreference.asInstanceOf[js.Any])

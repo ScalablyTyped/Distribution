@@ -190,9 +190,10 @@ class Text protected () extends Object {
   /**
   	 * measure a text line measuring all characters.
   	 * @param {Number} lineIndex line number
-  	 * @return {Number} Line width
+    * @return {Object} object.width total width of characters
+    * @return {Object} object.numOfSpaces length of chars that match this._reSpacesAndTabs
   	 */
-  def measureLine(lineIndex: scala.Double): scala.Double = js.native
+  def measureLine(lineIndex: scala.Double): fabricLib.Anon_NumOfSpaces = js.native
   /**
   	 * Remove a style property or properties from all individual character styles
   	 * in a text object.  Deletes the character style object if it contains no other style

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SpawnSyncReturns[T] extends js.Object {
-  var error: nodeLib.Error
+  var error: js.UndefOr[nodeLib.Error] = js.undefined
   var output: js.Array[java.lang.String]
   var pid: scala.Double
   var signal: java.lang.String
@@ -18,22 +18,22 @@ trait SpawnSyncReturns[T] extends js.Object {
 object SpawnSyncReturns {
   @scala.inline
   def apply[T](
-    error: nodeLib.Error,
     output: js.Array[java.lang.String],
     pid: scala.Double,
     signal: java.lang.String,
     status: scala.Double,
     stderr: T,
-    stdout: T
+    stdout: T,
+    error: nodeLib.Error = null
   ): SpawnSyncReturns[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("error")(error)
     __obj.updateDynamic("output")(output)
     __obj.updateDynamic("pid")(pid)
     __obj.updateDynamic("signal")(signal)
     __obj.updateDynamic("status")(status)
     __obj.updateDynamic("stderr")(stderr.asInstanceOf[js.Any])
     __obj.updateDynamic("stdout")(stdout.asInstanceOf[js.Any])
+    if (error != null) __obj.updateDynamic("error")(error)
     __obj.asInstanceOf[SpawnSyncReturns[T]]
   }
 }

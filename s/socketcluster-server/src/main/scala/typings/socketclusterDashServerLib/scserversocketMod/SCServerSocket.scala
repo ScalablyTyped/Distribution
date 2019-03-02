@@ -15,7 +15,7 @@ trait SCServerSocket
   val UNAUTHENTICATED: socketclusterDashServerLib.socketclusterDashServerLibStrings.unauthenticated = js.native
   var authState: socketclusterDashServerLib.socketclusterDashServerLibStrings.authenticated | socketclusterDashServerLib.socketclusterDashServerLibStrings.unauthenticated = js.native
   var authToken: js.UndefOr[socketclusterDashServerLib.scserverMod.SCServerNs.AuthToken] = js.native
-  var exchange: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCExchange */ js.Any = js.native
+  var exchange: scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.SCExchange = js.native
   var id: java.lang.String = js.native
   var remoteAddress: java.lang.String = js.native
   var remoteFamily: java.lang.String = js.native

@@ -1,14 +1,14 @@
 organization := "org.scalablytyped"
 name := "apollo-engine-reporting-protobuf"
-version := "0.2.1-308b7e"
+version := "0.2.1-9d7ec9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-9f7187",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-0a9f1a",
+  "org.scalablytyped" %%% "node" % "11.10-dt-20190228Z-bb7734",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-439a87",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-11ba80",
   "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-194d25",
   "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-fcd7c0",

@@ -16,6 +16,9 @@ object qsLibStrings {
   sealed trait brackets extends js.Object
   
   @js.native
+  sealed trait comma extends js.Object
+  
+  @js.native
   sealed trait indices extends js.Object
   
   @js.native
@@ -27,6 +30,8 @@ object qsLibStrings {
   def RFC3986: RFC3986 = "RFC3986".asInstanceOf[RFC3986]
   @scala.inline
   def brackets: brackets = "brackets".asInstanceOf[brackets]
+  @scala.inline
+  def comma: comma = "comma".asInstanceOf[comma]
   @scala.inline
   def indices: indices = "indices".asInstanceOf[indices]
   @scala.inline

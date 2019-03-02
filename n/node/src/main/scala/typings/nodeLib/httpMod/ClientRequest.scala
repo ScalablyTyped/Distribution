@@ -16,6 +16,7 @@ class ClientRequest protected () extends OutgoingMessage {
   def this(url: ClientRequestArgs, cb: js.Function1[/* res */ IncomingMessage, scala.Unit]) = this()
   def this(url: nodeLib.urlMod.URL, cb: js.Function1[/* res */ IncomingMessage, scala.Unit]) = this()
   var aborted: scala.Double = js.native
+  val path: java.lang.String = js.native
   var socket: nodeLib.netMod.Socket = js.native
   def abort(): scala.Unit = js.native
   def onSocket(socket: nodeLib.netMod.Socket): scala.Unit = js.native

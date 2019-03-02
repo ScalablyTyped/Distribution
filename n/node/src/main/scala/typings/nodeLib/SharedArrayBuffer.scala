@@ -5,10 +5,10 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSGlobal("SharedArrayBuffer")
+// even this is just a forward declaration some properties are added otherwise
+// it would be allowed to pass anything to e.g. Buffer.from()
 @js.native
-class SharedArrayBuffer protected () extends js.Object {
-  def this(byteSize: scala.Double) = this()
+trait SharedArrayBuffer extends js.Object {
   val byteLength: scala.Double = js.native
   def slice(): SharedArrayBuffer = js.native
   def slice(begin: scala.Double): SharedArrayBuffer = js.native
