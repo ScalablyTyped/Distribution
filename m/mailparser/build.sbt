@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mailparser"
-version := "v2.0.0-dt-20180214Z-add265"
+version := "2.4-dt-20190302Z-748170"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

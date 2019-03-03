@@ -5,15 +5,15 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait NameSpace
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[NameSpaceType]
+trait Indexable
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any]
 
-object NameSpace {
+object Indexable {
   @scala.inline
-  def apply(StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[NameSpaceType] = null): NameSpace = {
+  def apply(StringDictionary: /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] = null): Indexable = {
     val __obj = js.Dynamic.literal()
     js.Dynamic.global.Object.assign(__obj, StringDictionary)
-    __obj.asInstanceOf[NameSpace]
+    __obj.asInstanceOf[Indexable]
   }
 }
 

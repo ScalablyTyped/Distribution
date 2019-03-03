@@ -29,7 +29,8 @@ import scala.scalajs.js.annotation._
       vegaDashTypingsLib.typesSpecValuesMod.SymbolShapeValue, 
       vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
       vegaDashTypingsLib.typesSpecValuesMod.OrientValue, 
-      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
+      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue, 
+      LegendLayout
     ]
   ] = js.undefined
   var range: js.UndefOr[vegaDashTypingsLib.Anon_Category] = js.undefined
@@ -58,7 +59,8 @@ object Config {
       vegaDashTypingsLib.typesSpecValuesMod.SymbolShapeValue, 
       vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
       vegaDashTypingsLib.typesSpecValuesMod.OrientValue, 
-      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
+      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue, 
+      LegendLayout
     ] = null,
     range: vegaDashTypingsLib.Anon_Category = null,
     style: js.Any = null,

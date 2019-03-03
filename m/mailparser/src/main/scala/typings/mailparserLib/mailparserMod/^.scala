@@ -13,5 +13,14 @@ object ^ extends js.Object {
     source: mailparserLib.mailparserMod.Source,
     callback: js.Function2[/* err */ js.Any, /* mail */ mailparserLib.mailparserMod.ParsedMail, scala.Unit]
   ): scala.Unit = js.native
+  def simpleParser(
+    source: mailparserLib.mailparserMod.Source,
+    options: mailparserLib.mailparserMod.SimpleParserOptions
+  ): js.Promise[mailparserLib.mailparserMod.ParsedMail] = js.native
+  def simpleParser(
+    source: mailparserLib.mailparserMod.Source,
+    options: mailparserLib.mailparserMod.SimpleParserOptions,
+    callback: js.Function2[/* err */ js.Any, /* mail */ mailparserLib.mailparserMod.ParsedMail, scala.Unit]
+  ): scala.Unit = js.native
 }
 
